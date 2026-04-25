@@ -1,10 +1,12 @@
 # turbo-ea-capabilities
 
-Reference Business Capability catalogue for [Turbo EA](https://turbo-ea.org).
+An **open-source Business Capability Reference Catalogue**. It is intentionally tool-agnostic and can be used in any Enterprise Architecture management solution — well beyond [Turbo EA](https://www.turbo-ea.org). This site exists to help enterprise architects get started with the implementation of an EA function, by providing a curated, opinionated baseline that teams can adopt, adapt, and extend.
 
+- **Browse online:** [`capabilities.turbo-ea.org`](https://capabilities.turbo-ea.org/) — searchable web catalogue.
 - **Source of truth:** YAML files in [`catalogue/`](catalogue/).
-- **Public site + JSON API:** [`business-capabilities.turbo-ea.org`](https://business-capabilities.turbo-ea.org) (Cloudflare Pages).
+- **Public site + JSON API:** [`capabilities.turbo-ea.org`](https://capabilities.turbo-ea.org/) (Cloudflare Pages).
 - **Python package:** [`turbo-ea-capabilities`](https://pypi.org/project/turbo-ea-capabilities/) on PyPI — embeds the catalogue as bundled JSON for offline / airgapped consumers.
+- **Blog & EA resources:** [`turbo-ea.org/blog`](https://www.turbo-ea.org/blog/).
 
 The naming convention, decomposition rules, and identifier scheme are defined in [`business-capability-governance-model.md`](business-capability-governance-model.md). The operational PR/CI workflow is in [`governance.md`](governance.md).
 
@@ -58,7 +60,7 @@ All editing rules — what's a capability, how to name it, when to deprecate —
 
 ## Static API
 
-After `npm run build`, the following endpoints are available under `dist/api/` (and at `business-capabilities.turbo-ea.org/api/`):
+After `npm run build`, the following endpoints are available under `dist/api/` (and at `capabilities.turbo-ea.org/api/`):
 
 | Path | Returns |
 | --- | --- |
@@ -69,6 +71,12 @@ After `npm run build`, the following endpoints are available under `dist/api/` (
 | `GET /api/capability/<id>.json` | One node + its direct children |
 
 All responses are static, immutable per build, and cacheable by Cloudflare's edge.
+
+## Author
+
+**Vincent Verdet**
+
+This reference catalogue has been developed by Vincent Verdet, a Strategic Technology Leader and Enterprise Architect with extensive experience enabling business objectives with technology.
 
 ## Licence
 
