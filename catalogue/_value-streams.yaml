@@ -1,0 +1,358 @@
+# Value Streams (orthogonal artefact, not part of the capability hierarchy).
+# Each entry links a capability to one stage of an end-to-end flow.
+value_streams:
+  - name: Hire-to-Retire
+    stages:
+      - stage_order: 1
+        stage_name: Workforce Planning
+        capability_id: BC-300.50
+        notes: Demand planning
+      - stage_order: 2
+        stage_name: "Sourcing & Attraction"
+        capability_id: BC-300.10
+        notes: Sourcing
+      - stage_order: 2
+        stage_name: "Sourcing & Attraction"
+        capability_id: BC-400.20
+        notes: Employer brand
+      - stage_order: 3
+        stage_name: "Selection & Hire"
+        capability_id: BC-1810.10
+        industry_variant: Defense
+        notes: Clearance verification
+      - stage_order: 3
+        stage_name: "Selection & Hire"
+        capability_id: BC-300.10
+        notes: Selection
+      - stage_order: 4
+        stage_name: Onboarding
+        capability_id: BC-300.10
+        notes: Onboarding programme
+      - stage_order: 4
+        stage_name: Onboarding
+        capability_id: BC-300.70
+        notes: "Records, payroll setup"
+      - stage_order: 5
+        stage_name: "Performance & Development"
+        capability_id: BC-1290
+        industry_variant: ATC
+        notes: ATCO licensing track
+      - stage_order: 5
+        stage_name: "Performance & Development"
+        capability_id: BC-1560
+        industry_variant: Pharma
+        notes: GxP training records
+      - stage_order: 5
+        stage_name: "Performance & Development"
+        capability_id: BC-300.20
+        notes: Performance reviews
+      - stage_order: 5
+        stage_name: "Performance & Development"
+        capability_id: BC-300.40
+        notes: Training
+      - stage_order: 6
+        stage_name: "Compensation & Benefits Administration"
+        capability_id: BC-300.30
+        notes: Pay design
+      - stage_order: 6
+        stage_name: "Compensation & Benefits Administration"
+        capability_id: BC-300.70
+        notes: Payroll execution
+      - stage_order: 7
+        stage_name: "Employee Experience & Engagement"
+        capability_id: BC-300.60
+        notes: Engagement
+      - stage_order: 7
+        stage_name: "Employee Experience & Engagement"
+        capability_id: BC-300.80
+        notes: "Grievances, works councils"
+      - stage_order: 8
+        stage_name: "Internal Mobility & Career"
+        capability_id: BC-300.10
+        notes: Internal moves
+      - stage_order: 8
+        stage_name: "Internal Mobility & Career"
+        capability_id: BC-300.20
+        notes: Succession
+      - stage_order: 9
+        stage_name: "Offboarding & Alumni"
+        capability_id: BC-300.70
+        notes: Separation processing
+  - name: Issue-to-Resolution
+    stages:
+      - stage_order: 1
+        stage_name: Issue Capture (Aviation Safety)
+        capability_id: BC-1280.30
+        industry_variant: ATC
+      - stage_order: 1
+        stage_name: Issue Capture (Audit)
+        capability_id: BC-140.20
+      - stage_order: 1
+        stage_name: Issue Capture (Banking Fin Crime)
+        capability_id: BC-1400.10
+        industry_variant: Banking
+      - stage_order: 1
+        stage_name: Issue Capture (Pharma Reg)
+        capability_id: BC-1530.50
+        industry_variant: Pharma
+      - stage_order: 1
+        stage_name: Issue Capture (Pharmacovigilance)
+        capability_id: BC-1540.10
+        industry_variant: Pharma
+      - stage_order: 1
+        stage_name: Issue Capture (Defense Security)
+        capability_id: BC-1810.40
+        industry_variant: Defense
+      - stage_order: 1
+        stage_name: Issue Capture (Customer)
+        capability_id: BC-430.20
+      - stage_order: 1
+        stage_name: Issue Capture (IT/Security)
+        capability_id: BC-600.30
+      - stage_order: 1
+        stage_name: Issue Capture (IT/Security)
+        capability_id: BC-620.30
+      - stage_order: 1
+        stage_name: Issue Capture (Quality)
+        capability_id: BC-720.40
+      - stage_order: 1
+        stage_name: Issue Capture (HSE)
+        capability_id: BC-730.40
+      - stage_order: 3
+        stage_name: Investigation (Aviation Safety)
+        capability_id: BC-1280.40
+        industry_variant: ATC
+      - stage_order: 3
+        stage_name: Investigation (Audit)
+        capability_id: BC-140.20
+      - stage_order: 3
+        stage_name: Investigation (Banking Fin Crime)
+        capability_id: BC-1400.30
+        industry_variant: Banking
+      - stage_order: 3
+        stage_name: Investigation (Pharmacovigilance)
+        capability_id: BC-1540.20
+        industry_variant: Pharma
+      - stage_order: 3
+        stage_name: Investigation (Pharma Reg)
+        capability_id: BC-1560.40
+        industry_variant: Pharma
+      - stage_order: 3
+        stage_name: Investigation (Defense Security)
+        capability_id: BC-1810.60
+        industry_variant: Defense
+      - stage_order: 3
+        stage_name: Investigation (Customer)
+        capability_id: BC-430.20
+      - stage_order: 3
+        stage_name: Investigation (IT/Security)
+        capability_id: BC-620.30
+      - stage_order: 3
+        stage_name: Investigation (Quality)
+        capability_id: BC-720.40
+        notes: CAPA
+      - stage_order: 3
+        stage_name: Investigation (HSE)
+        capability_id: BC-730.40
+      - stage_order: 4
+        stage_name: Resolution (Aviation Safety)
+        capability_id: BC-1280.20
+        industry_variant: ATC
+      - stage_order: 4
+        stage_name: Resolution (Audit)
+        capability_id: BC-140.30
+      - stage_order: 4
+        stage_name: Resolution (Banking Fin Crime)
+        capability_id: BC-1400.40
+        industry_variant: Banking
+      - stage_order: 4
+        stage_name: Resolution (Pharmacovigilance)
+        capability_id: BC-1540.40
+        industry_variant: Pharma
+      - stage_order: 4
+        stage_name: Resolution (Pharma Reg)
+        capability_id: BC-1560.50
+        industry_variant: Pharma
+      - stage_order: 4
+        stage_name: Resolution (Customer)
+        capability_id: BC-720.50
+      - stage_order: 4
+        stage_name: Resolution (Quality)
+        capability_id: BC-720.50
+      - stage_order: 4
+        stage_name: Resolution (Customer)
+        capability_id: BC-910
+      - stage_order: 6
+        stage_name: Lessons Learned (Aviation Safety)
+        capability_id: BC-1280.60
+        industry_variant: ATC
+      - stage_order: 6
+        stage_name: Lessons Learned (Pharma Reg)
+        capability_id: BC-1560.10
+        industry_variant: Pharma
+      - stage_order: 6
+        stage_name: Lessons Learned (Generic)
+        capability_id: BC-830.10
+      - stage_order: 6
+        stage_name: Lessons Learned (Quality)
+        capability_id: BC-830.40
+  - name: Order-to-Cash
+    stages:
+      - stage_order: 1
+        stage_name: "Lead Capture & Qualification"
+        capability_id: BC-410.30
+        notes: "Lead intake, qualification"
+      - stage_order: 1
+        stage_name: "Lead Capture & Qualification"
+        capability_id: BC-420.10
+        notes: Customer record creation
+      - stage_order: 2
+        stage_name: "Quote & Configuration"
+        capability_id: BC-410.40
+        notes: CPQ
+      - stage_order: 2
+        stage_name: "Quote & Configuration"
+        capability_id: BC-440.30
+        notes: Pricing application
+      - stage_order: 3
+        stage_name: "Contract & Order Capture"
+        capability_id: BC-150.10
+        notes: "Master agreement, T&Cs"
+      - stage_order: 3
+        stage_name: "Contract & Order Capture"
+        capability_id: BC-410.30
+        notes: Order entry
+      - stage_order: 4
+        stage_name: "Order Promising & Allocation"
+        capability_id: BC-520.40
+        notes: "ATP/CTP, allocation"
+      - stage_order: 4
+        stage_name: "Order Promising & Allocation"
+        capability_id: BC-530.30
+        notes: Stock reservation
+      - stage_order: 5
+        stage_name: Production / Service Delivery
+        capability_id: BC-1000.40
+        industry_variant: Manufacturing
+      - stage_order: 5
+        stage_name: Production / Service Delivery
+        capability_id: BC-1050
+        industry_variant: Manufacturing
+      - stage_order: 5
+        stage_name: Production / Service Delivery
+        capability_id: BC-1110.20
+        industry_variant: Engineering Services
+      - stage_order: 5
+        stage_name: Production / Service Delivery
+        capability_id: BC-1550
+        industry_variant: Pharma
+      - stage_order: 6
+        stage_name: Outbound Logistics
+        capability_id: BC-1570
+        industry_variant: Pharma
+        notes: Cold-chain variant
+      - stage_order: 6
+        stage_name: Outbound Logistics
+        capability_id: BC-520.50
+        notes: Shipping
+      - stage_order: 7
+        stage_name: Customer Invoicing
+        capability_id: BC-200.30
+        notes: Invoice generation
+      - stage_order: 8
+        stage_name: "Cash Collection & Application"
+        capability_id: BC-200.30
+        notes: Collections
+      - stage_order: 8
+        stage_name: "Cash Collection & Application"
+        capability_id: BC-210.10
+        notes: Cash positioning
+      - stage_order: 9
+        stage_name: Revenue Recognition
+        capability_id: BC-200.10
+        notes: Revenue posting
+      - stage_order: 9
+        stage_name: Revenue Recognition
+        capability_id: BC-200.60
+        notes: Reporting
+  - name: Procure-to-Pay
+    stages:
+      - stage_order: 1
+        stage_name: "Need Identification & Requisition"
+        capability_id: BC-500.40
+        notes: Requisition intake
+      - stage_order: 2
+        stage_name: Sourcing
+        capability_id: BC-500.10
+        notes: "RFx, sourcing events"
+      - stage_order: 2
+        stage_name: Sourcing
+        capability_id: BC-500.50
+        notes: Category strategy
+      - stage_order: 3
+        stage_name: "Supplier Selection & Onboarding"
+        capability_id: BC-1560.60
+        industry_variant: Pharma
+        notes: GxP supplier qualification
+      - stage_order: 3
+        stage_name: "Supplier Selection & Onboarding"
+        capability_id: BC-1810.10
+        industry_variant: Defense
+        notes: Cleared subcontractors
+      - stage_order: 3
+        stage_name: "Supplier Selection & Onboarding"
+        capability_id: BC-510.10
+        notes: Qualification
+      - stage_order: 3
+        stage_name: "Supplier Selection & Onboarding"
+        capability_id: BC-510.30
+        notes: Pre-award risk check
+      - stage_order: 4
+        stage_name: "Contract & Purchase Order"
+        capability_id: BC-1790.20
+        industry_variant: Defense
+        notes: ITAR/EAR screening
+      - stage_order: 4
+        stage_name: "Contract & Purchase Order"
+        capability_id: BC-500.20
+        notes: Contracting
+      - stage_order: 4
+        stage_name: "Contract & Purchase Order"
+        capability_id: BC-500.30
+        notes: PO issuance
+      - stage_order: 5
+        stage_name: Goods/Services Receipt
+        capability_id: BC-1010.50
+        industry_variant: Manufacturing
+      - stage_order: 5
+        stage_name: Goods/Services Receipt
+        capability_id: BC-500.40
+        notes: GR/SR
+      - stage_order: 6
+        stage_name: "Invoice Receipt & Verification"
+        capability_id: BC-200.20
+        notes: 3-way match
+      - stage_order: 7
+        stage_name: Payment Execution
+        capability_id: BC-200.20
+        notes: Payment run
+      - stage_order: 7
+        stage_name: Payment Execution
+        capability_id: BC-210.10
+        notes: Payment funding
+      - stage_order: 8
+        stage_name: Reconciliation
+        capability_id: BC-200.10
+        notes: GL posting
+      - stage_order: 8
+        stage_name: Reconciliation
+        capability_id: BC-200.20
+        notes: Vendor account
+      - stage_order: 9
+        stage_name: Supplier Performance Monitoring
+        capability_id: BC-510.20
+        notes: Post-transaction loop
+      - stage_order: 9
+        stage_name: Supplier Performance Monitoring
+        capability_id: BC-510.50
+        notes: Strategic suppliers

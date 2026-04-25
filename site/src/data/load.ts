@@ -9,6 +9,7 @@ import type { FlatCapability } from "../../../scripts/lib/load.ts";
 import flatJson from "@catalogue-data/capabilities.json" with { type: "json" };
 import treeJson from "@catalogue-data/tree.json" with { type: "json" };
 import versionJson from "@catalogue-data/version.json" with { type: "json" };
+import valueStreamsJson from "@catalogue-data/value-streams.json" with { type: "json" };
 
 export interface NestedCapability extends Omit<FlatCapability, "children"> {
   children: NestedCapability[];
@@ -22,9 +23,24 @@ export interface VersionMeta {
   commit?: string;
 }
 
+export interface ValueStreamStage {
+  stage_order: number;
+  stage_name: string;
+  capability_id: string;
+  industry_variant?: string;
+  notes?: string;
+}
+
+export interface ValueStream {
+  name: string;
+  stages: ValueStreamStage[];
+}
+
 export const flat: FlatCapability[] = flatJson as unknown as FlatCapability[];
 export const tree: NestedCapability[] = treeJson as unknown as NestedCapability[];
 export const version: VersionMeta = versionJson as unknown as VersionMeta;
+export const valueStreams: ValueStream[] =
+  valueStreamsJson as unknown as ValueStream[];
 
 const byId = new Map<string, FlatCapability>();
 for (const c of flat) byId.set(c.id, c);

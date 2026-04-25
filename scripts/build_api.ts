@@ -15,6 +15,7 @@ import {
   flatten,
   l1Slug,
   loadAllL1Files,
+  loadValueStreams,
   type FlatCapability,
   type RawCapability,
 } from "./lib/load.ts";
@@ -147,6 +148,22 @@ mkdir(join(DIST_API, "capability"));
 writeJson(join(DIST_API, "version.json"), version);
 writeJson(join(DIST_API, "capabilities.json"), flatSorted);
 writeJson(join(DIST_API, "tree.json"), treeAll);
+
+// Value streams: orthogonal artefact, NOT merged into capability records so
+// the capabilities export stays clean. The site joins them client-side for
+// the value-stream filter.
+const valueStreams = loadValueStreams();
+const knownIds = new Set(flatSorted.map((c) => c.id));
+for (const stream of valueStreams) {
+  for (const stage of stream.stages) {
+    if (!knownIds.has(stage.capability_id)) {
+      throw new Error(
+        `Value stream '${stream.name}' references unknown capability ${stage.capability_id}`
+      );
+    }
+  }
+}
+writeJson(join(DIST_API, "value-streams.json"), valueStreams);
 
 for (const { tree } of files) {
   const slug = l1Slug(tree);

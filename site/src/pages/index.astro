@@ -2,7 +2,7 @@
 import Base from "../layouts/Base.astro";
 import HeroTessellation from "../components/HeroTessellation.astro";
 import CatalogueBrowser from "../components/CatalogueBrowser.tsx";
-import { flat, version } from "../data/load.ts";
+import { flat, valueStreams, version } from "../data/load.ts";
 ---
 
 <Base
@@ -17,6 +17,6 @@ import { flat, version } from "../data/load.ts";
   />
 
   <main class="main">
-    <CatalogueBrowser data={flat} client:load />
+    <CatalogueBrowser data={flat} valueStreams={valueStreams} client:load />
   </main>
 </Base>

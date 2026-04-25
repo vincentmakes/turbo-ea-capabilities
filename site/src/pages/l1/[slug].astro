@@ -1,7 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import CatalogueBrowser from "../../components/CatalogueBrowser.tsx";
-import { l1List, flat } from "../../data/load.ts";
+import { l1List, flat, valueStreams } from "../../data/load.ts";
 import type { FlatCapability } from "../../../../scripts/lib/load.ts";
 
 export function getStaticPaths() {
@@ -42,6 +42,6 @@ const subset = descendants(rootId);
     <p class="search-results-info" style="margin-bottom: 24px;">
       Subtree of <span class="cap-id">{rootId}</span> · {subset.length} capabilities
     </p>
-    <CatalogueBrowser data={subset} client:load />
+    <CatalogueBrowser data={subset} valueStreams={valueStreams} client:load />
   </main>
 </Base>

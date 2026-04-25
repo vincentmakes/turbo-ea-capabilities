@@ -46,8 +46,10 @@ export function readIndex(): IndexFile {
 }
 
 export function listYamlFiles(): string[] {
+  // Underscore-prefixed files (e.g. _index.yaml, _value-streams.yaml) are
+  // meta artefacts, not L1 capability files.
   return readdirSync(CATALOGUE_DIR)
-    .filter((f) => f.endsWith(".yaml") && f !== "_index.yaml")
+    .filter((f) => f.endsWith(".yaml") && !f.startsWith("_"))
     .sort();
 }
 
@@ -61,6 +63,28 @@ export function loadL1File(name: string): { source: string; tree: RawCapability 
 export function loadAllL1Files(): { name: string; tree: RawCapability }[] {
   const index = readIndex();
   return index.files.map((f) => ({ name: f, tree: loadL1File(f).tree }));
+}
+
+export interface ValueStreamStage {
+  stage_order: number;
+  stage_name: string;
+  capability_id: string;
+  industry_variant?: string;
+  notes?: string;
+}
+
+export interface ValueStream {
+  name: string;
+  stages: ValueStreamStage[];
+}
+
+export function loadValueStreams(): ValueStream[] {
+  const path = join(CATALOGUE_DIR, "_value-streams.yaml");
+  if (!existsSync(path)) return [];
+  const parsed = YAML.parse(readFileSync(path, "utf8")) as
+    | { value_streams?: ValueStream[] }
+    | undefined;
+  return parsed?.value_streams ?? [];
 }
 
 /** BFS-walk a tree, yielding nodes parent-before-child, with parent_id wired up. */
