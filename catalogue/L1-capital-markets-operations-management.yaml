@@ -12,53 +12,249 @@ children:
     industry: "Banking & Capital Markets"
     description: |
       Trade capture, booking, confirmation, allegement.
-    children: []
+    children:
+      - id: BC-1380.10.10
+        name: Trade Capture and Booking
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Capture and booking of trades into front and middle office systems.
+        children: []
+      - id: BC-1380.10.20
+        name: Trade Confirmation Matching
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Matching and affirmation of trade confirmations.
+        children: []
+      - id: BC-1380.10.30
+        name: Trade Allegement Handling
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Handling of allegements and unmatched trades.
+        children: []
   - id: BC-1380.20
     name: Clearing Management
     level: 2
     industry: "Banking & Capital Markets"
     description: |
       Central clearing, CCP, clearing membership.
-    children: []
+    children:
+      - id: BC-1380.20.10
+        name: CCP Trade Submission
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Submission of cleared trades to central counterparties.
+        children: []
+      - id: BC-1380.20.20
+        name: Clearing Margin Management
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Initial and variation margin management with CCPs.
+        children: []
+      - id: BC-1380.20.30
+        name: Clearing Member Operations
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Operation of direct and client clearing member services.
+        children: []
   - id: BC-1380.30
     name: Settlement Management
     level: 2
     industry: "Banking & Capital Markets"
     description: |
       DvP settlement, T+1/T+2 cycles, fails management.
-    children: []
+    children:
+      - id: BC-1380.30.10
+        name: Trade Settlement Instruction Generation
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Generation of settlement instructions for trades.
+        children: []
+      - id: BC-1380.30.20
+        name: Securities Settlement Operations
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          DvP settlement operations across CSDs and ICSDs.
+        children: []
+      - id: BC-1380.30.30
+        name: Settlement Fails Management
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Identification and resolution of settlement fails (CSDR).
+        children: []
   - id: BC-1380.40
     name: Custody Management
     level: 2
     industry: "Banking & Capital Markets"
     description: |
       Securities safekeeping, sub-custody networks.
-    children: []
+    children:
+      - id: BC-1380.40.10
+        name: Securities Safekeeping
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Safekeeping of securities for clients and proprietary accounts.
+        children: []
+      - id: BC-1380.40.20
+        name: Sub-Custody Network Management
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Sub-custody network and agent bank management.
+        children: []
+      - id: BC-1380.40.30
+        name: Custody Tax Services
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Custody-related tax reclaim and withholding services.
+        children: []
   - id: BC-1380.50
     name: Collateral Management
     level: 2
     industry: "Banking & Capital Markets"
     description: |
       Collateral, margining, optimisation.
-    children: []
+    children:
+      - id: BC-1380.50.10
+        name: Margin Call Management
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Issuance and response to margin calls under bilateral and CCP regimes.
+        children: []
+      - id: BC-1380.50.20
+        name: Collateral Movement Operations
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Operational movement of collateral across counterparties.
+        children: []
+      - id: BC-1380.50.30
+        name: Collateral Optimisation
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Optimisation of collateral usage and substitution.
+        children: []
+      - id: BC-1380.50.40
+        name: Collateral Eligibility Management
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Collateral eligibility rules and haircut application.
+        children: []
   - id: BC-1380.60
     name: Corporate Actions Management
     level: 2
     industry: "Banking & Capital Markets"
     description: |
       Mandatory and voluntary corporate actions processing.
-    children: []
+    children:
+      - id: BC-1380.60.10
+        name: Corporate Action Notification
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Capture and notification of corporate actions to clients.
+        children: []
+      - id: BC-1380.60.20
+        name: Mandatory Corporate Action Processing
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Processing of dividends, interest, and mandatory events.
+        children: []
+      - id: BC-1380.60.30
+        name: Voluntary Corporate Action Processing
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Processing of voluntary actions including elections.
+        children: []
+      - id: BC-1380.60.40
+        name: Proxy Voting Operations
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Proxy voting collection and submission.
+        children: []
   - id: BC-1380.70
     name: Reconciliation Management
     level: 2
     industry: "Banking & Capital Markets"
     description: |
       Nostro/vostro, position, cash reconciliation.
-    children: []
+    children:
+      - id: BC-1380.70.10
+        name: Cash Reconciliation
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Reconciliation of cash accounts including nostro/vostro.
+        children: []
+      - id: BC-1380.70.20
+        name: Securities Position Reconciliation
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Reconciliation of securities positions across systems and custodians.
+        children: []
+      - id: BC-1380.70.30
+        name: Trade and Front-Back Reconciliation
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Front-to-back trade reconciliation across systems.
+        children: []
+      - id: BC-1380.70.40
+        name: Reconciliation Break Investigation
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Investigation and resolution of reconciliation breaks.
+        children: []
   - id: BC-1380.80
     name: Securities Lending Management
     level: 2
     industry: "Banking & Capital Markets"
     description: |
       Securities lending, borrowing, collateral management.
-    children: []
+    children:
+      - id: BC-1380.80.10
+        name: Securities Lending Origination
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Origination of securities lending and borrowing trades.
+        children: []
+      - id: BC-1380.80.20
+        name: Securities Lending Collateral Operations
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Collateral operations supporting securities lending.
+        children: []
+      - id: BC-1380.80.30
+        name: Securities Lending Fee and Rebate Calculation
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Calculation and settlement of fees and rebates.
+        children: []
+      - id: BC-1380.80.40
+        name: Securities Lending Recall Management
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Recall of loaned securities and substitution operations.
+        children: []
