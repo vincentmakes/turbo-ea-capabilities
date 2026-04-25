@@ -29,7 +29,7 @@ const githubUrl = `https://github.com/vincentmakes/turbo-ea-capabilities/tree/ma
 >
   <main class="main">
     <nav class="detail-breadcrumb">
-      <a href="/">Catalogue</a>
+      <a href="/">Catalog</a>
       {ancestors.map((a) => (
         <>
           <span class="sep">/</span>
@@ -64,12 +64,6 @@ const githubUrl = `https://github.com/vincentmakes/turbo-ea-capabilities/tree/ma
       )}
 
       <div class="detail-meta-grid">
-        {node.owner && (
-          <div>
-            <div class="meta-key">Owner</div>
-            <div class="meta-val">{node.owner}</div>
-          </div>
-        )}
         {node.industry && (
           <div>
             <div class="meta-key">Industry</div>
@@ -80,16 +74,6 @@ const githubUrl = `https://github.com/vincentmakes/turbo-ea-capabilities/tree/ma
           <div>
             <div class="meta-key">Aliases</div>
             <div class="meta-val">{node.aliases.join(", ")}</div>
-          </div>
-        )}
-        {node.tags && node.tags.length > 0 && (
-          <div>
-            <div class="meta-key">Tags</div>
-            <div class="meta-val">
-              <div class="tag-list">
-                {node.tags.map((t) => <span class="tag-pill">{t}</span>)}
-              </div>
-            </div>
           </div>
         )}
         {node.references && node.references.length > 0 && (
@@ -122,19 +106,15 @@ const githubUrl = `https://github.com/vincentmakes/turbo-ea-capabilities/tree/ma
         <div class="section-header">
           <h2>Children ({directChildren.length})</h2>
         </div>
-        <div class="cap-tree">
-          <ul>
-            {directChildren.map((c) => (
-              <li class="cap-node">
-                <div class="cap-leaf">
-                  <span class="cap-id">{c.id}</span>
-                  <a class="cap-name" href={`/capability/${c.id}`}>{c.name}</a>
-                  <span class="cap-level">L{c.level}</span>
-                  {c.deprecated && <span class="cap-deprecated-badge">Deprecated</span>}
-                </div>
-              </li>
-            ))}
-          </ul>
+        <div class="cap-list">
+          {directChildren.map((c) => (
+            <a class="cap-list-row" href={`/capability/${c.id}`}>
+              <span class="cap-id">{c.id}</span>
+              <span class="cap-name">{c.name}</span>
+              <span class="cap-level">L{c.level}</span>
+              {c.deprecated && <span class="cap-deprecated-badge">Deprecated</span>}
+            </a>
+          ))}
         </div>
       </section>
     )}

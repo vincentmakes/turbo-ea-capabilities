@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 export interface FlatCap {
   id: string;
@@ -7,8 +7,6 @@ export interface FlatCap {
   parent_id: string | null;
   description?: string;
   aliases?: string[];
-  owner?: string;
-  tags?: string[];
   industry?: string;
   references?: string[];
   deprecated?: boolean;
@@ -20,8 +18,6 @@ export interface FlatCap {
 interface Props {
   data: FlatCap[];
 }
-
-type ViewMode = "tree" | "table";
 
 function compareIds(a: string, b: string): number {
   const sa = a.replace(/^BC-/, "").split(".").map(Number);
@@ -41,9 +37,7 @@ function toCsv(rows: FlatCap[]): string {
     "name",
     "level",
     "parent_id",
-    "owner",
     "industry",
-    "tags",
     "deprecated",
     "successor_id",
     "description",
@@ -61,9 +55,7 @@ function toCsv(rows: FlatCap[]): string {
         r.name,
         r.level,
         r.parent_id ?? "",
-        r.owner ?? "",
         r.industry ?? "",
-        r.tags ?? [],
         r.deprecated ?? false,
         r.successor_id ?? "",
         r.description ?? "",
@@ -88,34 +80,63 @@ function download(filename: string, content: string, mime: string) {
 }
 
 export default function CatalogueBrowser({ data }: Props) {
-  const allOwners = useMemo(() => {
+  const allIndustries = useMemo(() => {
     const s = new Set<string>();
-    for (const c of data) if (c.owner) s.add(c.owner);
+    for (const c of data) if (c.industry) s.add(c.industry);
     return Array.from(s).sort();
   }, [data]);
 
-  const allTags = useMemo(() => {
-    const s = new Set<string>();
-    for (const c of data) for (const t of c.tags ?? []) s.add(t);
-    return Array.from(s).sort();
+  const byId = useMemo(() => {
+    const m = new Map<string, FlatCap>();
+    for (const c of data) m.set(c.id, c);
+    return m;
   }, [data]);
 
-  const [view, setView] = useState<ViewMode>("tree");
+  const byParent = useMemo(() => {
+    const map = new Map<string | null, FlatCap[]>();
+    for (const c of data) {
+      const list = map.get(c.parent_id) ?? [];
+      list.push(c);
+      map.set(c.parent_id, list);
+    }
+    for (const list of map.values()) list.sort((a, b) => compareIds(a.id, b.id));
+    return map;
+  }, [data]);
+
+  const descendantsOf = useMemo(() => {
+    const cache = new Map<string, string[]>();
+    function walk(id: string): string[] {
+      if (cache.has(id)) return cache.get(id)!;
+      const out: string[] = [];
+      const stack = [...(byParent.get(id) ?? [])];
+      while (stack.length > 0) {
+        const n = stack.pop()!;
+        out.push(n.id);
+        for (const k of byParent.get(n.id) ?? []) stack.push(k);
+      }
+      cache.set(id, out);
+      return out;
+    }
+    for (const c of data) walk(c.id);
+    return cache;
+  }, [data, byParent]);
+
   const [query, setQuery] = useState("");
   const [levels, setLevels] = useState<Set<number>>(new Set([1, 2, 3, 4]));
-  const [owners, setOwners] = useState<Set<string>>(new Set());
-  const [tags, setTags] = useState<Set<string>>(new Set());
+  const [industries, setIndustries] = useState<Set<string>>(new Set());
   const [showDeprecated, setShowDeprecated] = useState(false);
+  const [selected, setSelected] = useState<Set<string>>(new Set());
+  const [expanded, setExpanded] = useState<Set<string>>(() => {
+    const s = new Set<string>();
+    for (const c of data) if (c.level === 1) s.add(c.id);
+    return s;
+  });
 
   const visible = useMemo(() => {
     const q = query.trim().toLowerCase();
     return data.filter((c) => {
       if (!levels.has(c.level)) return false;
-      if (owners.size > 0 && (!c.owner || !owners.has(c.owner))) return false;
-      if (tags.size > 0) {
-        const hit = (c.tags ?? []).some((t) => tags.has(t));
-        if (!hit) return false;
-      }
+      if (industries.size > 0 && (!c.industry || !industries.has(c.industry))) return false;
       if (!showDeprecated && c.deprecated) return false;
       if (q) {
         const haystack = [
@@ -123,7 +144,6 @@ export default function CatalogueBrowser({ data }: Props) {
           c.name,
           c.description ?? "",
           (c.aliases ?? []).join(" "),
-          (c.tags ?? []).join(" "),
         ]
           .join(" ")
           .toLowerCase();
@@ -131,13 +151,11 @@ export default function CatalogueBrowser({ data }: Props) {
       }
       return true;
     });
-  }, [data, levels, owners, tags, showDeprecated, query]);
+  }, [data, levels, industries, showDeprecated, query]);
 
-  // For tree view: always show ancestors of any matching node so the
-  // tree remains navigable.
+  // Always show ancestors of any visible node so the card tree stays navigable.
   const visibleSet = useMemo(() => {
     const ids = new Set(visible.map((c) => c.id));
-    const byId = new Map(data.map((c) => [c.id, c]));
     for (const c of visible) {
       let cursor = c.parent_id;
       while (cursor) {
@@ -147,20 +165,67 @@ export default function CatalogueBrowser({ data }: Props) {
       }
     }
     return ids;
-  }, [data, visible]);
+  }, [visible, byId]);
 
-  const exportFiltered = (kind: "csv" | "json") => {
-    const rows = [...visible].sort((a, b) => compareIds(a.id, b.id));
+  const toggleExpand = (id: string) => {
+    setExpanded((prev) => {
+      const next = new Set(prev);
+      next.has(id) ? next.delete(id) : next.add(id);
+      return next;
+    });
+  };
+
+  const expandAll = () => {
+    const s = new Set<string>();
+    for (const c of data) s.add(c.id);
+    setExpanded(s);
+  };
+
+  const collapseAll = () => setExpanded(new Set());
+
+  const toggleSelect = (id: string) => {
+    setSelected((prev) => {
+      const next = new Set(prev);
+      const subtree = [id, ...(descendantsOf.get(id) ?? [])];
+      const allSelected = subtree.every((s) => next.has(s));
+      if (allSelected) {
+        for (const s of subtree) next.delete(s);
+      } else {
+        for (const s of subtree) next.add(s);
+      }
+      return next;
+    });
+  };
+
+  const selectAllVisible = () => {
+    setSelected((prev) => {
+      const next = new Set(prev);
+      for (const id of visibleSet) next.add(id);
+      return next;
+    });
+  };
+
+  const clearSelection = () => setSelected(new Set());
+
+  const exportSelection = (kind: "csv" | "json") => {
+    const rows = data
+      .filter((c) => selected.has(c.id))
+      .sort((a, b) => compareIds(a.id, b.id));
+    if (rows.length === 0) return;
+    const stamp = rows.length;
     if (kind === "json") {
       download(
-        "capabilities-filtered.json",
+        `capabilities-selection-${stamp}.json`,
         JSON.stringify(rows, null, 2),
         "application/json"
       );
     } else {
-      download("capabilities-filtered.csv", toCsv(rows), "text/csv");
+      download(`capabilities-selection-${stamp}.csv`, toCsv(rows), "text/csv");
     }
   };
+
+  const roots = (byParent.get(null) ?? []).filter((r) => visibleSet.has(r.id));
+  const selectionCount = selected.size;
 
   return (
     <div class="catalogue-layout">
@@ -196,45 +261,23 @@ export default function CatalogueBrowser({ data }: Props) {
           ))}
         </div>
 
-        {allOwners.length > 0 && (
+        {allIndustries.length > 0 && (
           <div class="filter-group">
-            <h3>Owner</h3>
-            {allOwners.map((o) => (
-              <label key={o}>
+            <h3>Industry</h3>
+            {allIndustries.map((ind) => (
+              <label key={ind}>
                 <input
                   type="checkbox"
-                  checked={owners.has(o)}
+                  checked={industries.has(ind)}
                   onChange={() => {
-                    setOwners((prev) => {
+                    setIndustries((prev) => {
                       const next = new Set(prev);
-                      next.has(o) ? next.delete(o) : next.add(o);
+                      next.has(ind) ? next.delete(ind) : next.add(ind);
                       return next;
                     });
                   }}
                 />
-                {o}
-              </label>
-            ))}
-          </div>
-        )}
-
-        {allTags.length > 0 && (
-          <div class="filter-group">
-            <h3>Tag</h3>
-            {allTags.map((t) => (
-              <label key={t}>
-                <input
-                  type="checkbox"
-                  checked={tags.has(t)}
-                  onChange={() => {
-                    setTags((prev) => {
-                      const next = new Set(prev);
-                      next.has(t) ? next.delete(t) : next.add(t);
-                      return next;
-                    });
-                  }}
-                />
-                {t}
+                {ind}
               </label>
             ))}
           </div>
@@ -259,8 +302,7 @@ export default function CatalogueBrowser({ data }: Props) {
             onClick={() => {
               setQuery("");
               setLevels(new Set([1, 2, 3, 4]));
-              setOwners(new Set());
-              setTags(new Set());
+              setIndustries(new Set());
               setShowDeprecated(false);
             }}
           >
@@ -279,187 +321,181 @@ export default function CatalogueBrowser({ data }: Props) {
                 · <strong>{data.length}</strong> total
               </>
             )}
+            {selectionCount > 0 && (
+              <>
+                {" "}
+                · <strong>{selectionCount}</strong> selected
+              </>
+            )}
           </div>
           <div class="toolbar-actions">
-            <div class="view-toggle">
-              <button
-                class={view === "tree" ? "active" : ""}
-                onClick={() => setView("tree")}
-                type="button"
-              >
-                Tree
-              </button>
-              <button
-                class={view === "table" ? "active" : ""}
-                onClick={() => setView("table")}
-                type="button"
-              >
-                Table
-              </button>
-            </div>
-            <button class="btn" type="button" onClick={() => exportFiltered("csv")}>
-              Export CSV
+            <button class="btn btn-ghost" type="button" onClick={expandAll}>
+              Expand all
+            </button>
+            <button class="btn btn-ghost" type="button" onClick={collapseAll}>
+              Collapse all
+            </button>
+            <button class="btn btn-ghost" type="button" onClick={selectAllVisible}>
+              Select visible
+            </button>
+            <button
+              class="btn btn-ghost"
+              type="button"
+              onClick={clearSelection}
+              disabled={selectionCount === 0}
+            >
+              Clear selection
+            </button>
+            <button
+              class="btn"
+              type="button"
+              onClick={() => exportSelection("csv")}
+              disabled={selectionCount === 0}
+            >
+              Export CSV{selectionCount > 0 && ` (${selectionCount})`}
             </button>
             <button
               class="btn btn-magenta"
               type="button"
-              onClick={() => exportFiltered("json")}
+              onClick={() => exportSelection("json")}
+              disabled={selectionCount === 0}
             >
-              Export JSON
+              Export JSON{selectionCount > 0 && ` (${selectionCount})`}
             </button>
           </div>
         </div>
 
-        {visible.length === 0 ? (
+        {roots.length === 0 ? (
           <div class="no-results">
             <h3>No matches</h3>
             <p>Adjust your filters or search query.</p>
           </div>
-        ) : view === "tree" ? (
-          <TreeView data={data} visible={visibleSet} />
         ) : (
-          <TableView rows={visible} />
+          <div class="card-tree">
+            {roots.map((r) => (
+              <CapabilityCard
+                key={r.id}
+                node={r}
+                byParent={byParent}
+                visible={visibleSet}
+                expanded={expanded}
+                selected={selected}
+                descendantsOf={descendantsOf}
+                onToggleExpand={toggleExpand}
+                onToggleSelect={toggleSelect}
+                depth={0}
+              />
+            ))}
+          </div>
         )}
       </div>
     </div>
   );
 }
 
-function TreeView({ data, visible }: { data: FlatCap[]; visible: Set<string> }) {
-  const byParent = useMemo(() => {
-    const map = new Map<string | null, FlatCap[]>();
-    for (const c of data) {
-      const list = map.get(c.parent_id) ?? [];
-      list.push(c);
-      map.set(c.parent_id, list);
-    }
-    for (const list of map.values()) list.sort((a, b) => compareIds(a.id, b.id));
-    return map;
-  }, [data]);
-
-  const roots = byParent.get(null) ?? [];
-
-  return (
-    <div class="cap-tree">
-      <ul>
-        {roots
-          .filter((r) => visible.has(r.id))
-          .map((r) => (
-            <Node key={r.id} node={r} byParent={byParent} visible={visible} depth={0} />
-          ))}
-      </ul>
-    </div>
-  );
-}
-
-function Node({
-  node,
-  byParent,
-  visible,
-  depth,
-}: {
+interface CardProps {
   node: FlatCap;
   byParent: Map<string | null, FlatCap[]>;
   visible: Set<string>;
+  expanded: Set<string>;
+  selected: Set<string>;
+  descendantsOf: Map<string, string[]>;
+  onToggleExpand: (id: string) => void;
+  onToggleSelect: (id: string) => void;
   depth: number;
-}) {
-  const kids = (byParent.get(node.id) ?? []).filter((c) => visible.has(c.id));
-  const url = `/capability/${encodeURIComponent(node.id)}`;
-  if (kids.length === 0) {
-    return (
-      <li class="cap-node">
-        <div class="cap-leaf">
-          <span class="cap-id">{node.id}</span>
-          <a class="cap-name" href={url}>
-            {node.name}
-          </a>
-          <span class="cap-level">L{node.level}</span>
-          {node.deprecated && <span class="cap-deprecated-badge">Deprecated</span>}
-        </div>
-      </li>
-    );
-  }
-  return (
-    <li class="cap-node">
-      <details open={depth < 1}>
-        <summary>
-          <span class="cap-id">{node.id}</span>
-          <a class="cap-name" href={url} onClick={(e) => e.stopPropagation()}>
-            {node.name}
-          </a>
-          <span class="cap-level">L{node.level}</span>
-          {node.deprecated && <span class="cap-deprecated-badge">Deprecated</span>}
-        </summary>
-        <ul>
-          {kids.map((k) => (
-            <Node
-              key={k.id}
-              node={k}
-              byParent={byParent}
-              visible={visible}
-              depth={depth + 1}
-            />
-          ))}
-        </ul>
-      </details>
-    </li>
-  );
 }
 
-function TableView({ rows }: { rows: FlatCap[] }) {
-  const sorted = useMemo(() => [...rows].sort((a, b) => compareIds(a.id, b.id)), [rows]);
+function CapabilityCard({
+  node,
+  byParent,
+  visible,
+  expanded,
+  selected,
+  descendantsOf,
+  onToggleExpand,
+  onToggleSelect,
+  depth,
+}: CardProps) {
+  const kids = (byParent.get(node.id) ?? []).filter((c) => visible.has(c.id));
+  const isOpen = expanded.has(node.id);
+  const hasKids = kids.length > 0;
+  const url = `/capability/${encodeURIComponent(node.id)}`;
+
+  const subtree = descendantsOf.get(node.id) ?? [];
+  const selectedInSubtree = subtree.filter((s) => selected.has(s)).length;
+  const selfSelected = selected.has(node.id);
+  const totalForState = subtree.length + 1;
+  const selectedTotal = selectedInSubtree + (selfSelected ? 1 : 0);
+
+  let checkState: "unchecked" | "checked" | "indeterminate" = "unchecked";
+  if (selectedTotal === totalForState) checkState = "checked";
+  else if (selectedTotal > 0) checkState = "indeterminate";
+
+  const checkboxRef = useRef<HTMLInputElement>(null);
+  useEffect(() => {
+    if (checkboxRef.current) {
+      checkboxRef.current.indeterminate = checkState === "indeterminate";
+    }
+  }, [checkState]);
+
   return (
-    <table class="cap-table">
-      <thead>
-        <tr>
-          <th>Id</th>
-          <th>Level</th>
-          <th>Name</th>
-          <th>Owner</th>
-          <th>Tags</th>
-          <th>Status</th>
-        </tr>
-      </thead>
-      <tbody>
-        {sorted.map((r) => (
-          <tr key={r.id}>
-            <td>
-              <span class="cap-id">{r.id}</span>
-            </td>
-            <td>
-              <span class="cap-level">L{r.level}</span>
-            </td>
-            <td>
-              <a class="cap-name" href={`/capability/${encodeURIComponent(r.id)}`}>
-                {r.name}
-              </a>
-            </td>
-            <td>{r.owner ?? "—"}</td>
-            <td>
-              {r.tags && r.tags.length > 0 ? (
-                <div class="tag-list">
-                  {r.tags.map((t) => (
-                    <span key={t} class="tag-pill">
-                      {t}
-                    </span>
-                  ))}
-                </div>
-              ) : (
-                "—"
-              )}
-            </td>
-            <td>
-              {r.deprecated ? (
-                <span class="cap-deprecated-badge">Deprecated</span>
-              ) : (
-                <span style={{ color: "var(--color-success)", fontSize: 12, fontWeight: 600 }}>
-                  Active
-                </span>
-              )}
-            </td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
+    <div
+      class={`cap-card${selfSelected ? " is-selected" : ""}`}
+      data-depth={depth}
+      data-level={node.level}
+    >
+      <div class="cap-card-header">
+        <label class="cap-check" onClick={(e) => e.stopPropagation()}>
+          <input
+            ref={checkboxRef}
+            type="checkbox"
+            checked={checkState === "checked"}
+            onChange={() => onToggleSelect(node.id)}
+            aria-label={`Select ${node.id} ${node.name}`}
+          />
+        </label>
+        <button
+          type="button"
+          class={`cap-chevron${hasKids ? "" : " is-empty"}`}
+          onClick={() => hasKids && onToggleExpand(node.id)}
+          aria-expanded={isOpen}
+          aria-label={hasKids ? (isOpen ? "Collapse" : "Expand") : ""}
+          tabIndex={hasKids ? 0 : -1}
+        >
+          {hasKids ? (isOpen ? "▾" : "▸") : ""}
+        </button>
+        <span class="cap-id">{node.id}</span>
+        <a class="cap-name" href={url}>
+          {node.name}
+        </a>
+        <span class="cap-level">L{node.level}</span>
+        {node.industry && <span class="cap-industry">{node.industry}</span>}
+        {node.deprecated && <span class="cap-deprecated-badge">Deprecated</span>}
+        {hasKids && <span class="cap-count">{kids.length}</span>}
+      </div>
+      {isOpen && (
+        <div class="cap-card-body">
+          {node.description && <p class="cap-card-desc">{node.description}</p>}
+          {hasKids && (
+            <div class="cap-card-children">
+              {kids.map((k) => (
+                <CapabilityCard
+                  key={k.id}
+                  node={k}
+                  byParent={byParent}
+                  visible={visible}
+                  expanded={expanded}
+                  selected={selected}
+                  descendantsOf={descendantsOf}
+                  onToggleExpand={onToggleExpand}
+                  onToggleSelect={onToggleSelect}
+                  depth={depth + 1}
+                />
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+    </div>
   );
 }

@@ -9,8 +9,6 @@ export interface CliRawCapability {
   level: number;
   description?: string;
   aliases?: string[];
-  owner?: string;
-  tags?: string[];
   industry?: string;
   references?: string[];
   in_scope?: string[];

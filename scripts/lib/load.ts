@@ -8,8 +8,6 @@ export interface RawCapability {
   level: number;
   description?: string;
   aliases?: string[];
-  owner?: string;
-  tags?: string[];
   industry?: string;
   references?: string[];
   in_scope?: string[];
@@ -68,15 +66,15 @@ export function loadAllL1Files(): { name: string; tree: RawCapability }[] {
 /** BFS-walk a tree, yielding nodes parent-before-child, with parent_id wired up. */
 export function flatten(
   root: RawCapability,
-  inheritedOwner?: string
+  inheritedIndustry?: string
 ): FlatCapability[] {
   const out: FlatCapability[] = [];
-  const queue: { node: RawCapability; parentId: string | null; owner?: string }[] = [
-    { node: root, parentId: null, owner: inheritedOwner ?? root.owner },
+  const queue: { node: RawCapability; parentId: string | null; industry?: string }[] = [
+    { node: root, parentId: null, industry: inheritedIndustry ?? root.industry },
   ];
   while (queue.length > 0) {
-    const { node, parentId, owner } = queue.shift()!;
-    const effectiveOwner = node.owner ?? owner;
+    const { node, parentId, industry } = queue.shift()!;
+    const effectiveIndustry = node.industry ?? industry;
     const flat: FlatCapability = {
       id: node.id,
       name: node.name,
@@ -84,9 +82,7 @@ export function flatten(
       parent_id: parentId,
       ...(node.description !== undefined && { description: node.description }),
       ...(node.aliases !== undefined && { aliases: node.aliases }),
-      ...(effectiveOwner !== undefined && { owner: effectiveOwner }),
-      ...(node.tags !== undefined && { tags: node.tags }),
-      ...(node.industry !== undefined && { industry: node.industry }),
+      ...(effectiveIndustry !== undefined && { industry: effectiveIndustry }),
       ...(node.references !== undefined && { references: node.references }),
       ...(node.in_scope !== undefined && { in_scope: node.in_scope }),
       ...(node.out_of_scope !== undefined && { out_of_scope: node.out_of_scope }),
@@ -100,7 +96,7 @@ export function flatten(
     };
     out.push(flat);
     for (const child of node.children ?? []) {
-      queue.push({ node: child, parentId: node.id, owner: effectiveOwner });
+      queue.push({ node: child, parentId: node.id, industry: effectiveIndustry });
     }
   }
   return out;

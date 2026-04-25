@@ -1,4 +1,4 @@
-/* Catalogue-specific UI built on top of global.css (turbo-ea.org tokens). */
+/* Catalog-specific UI built on top of global.css design tokens. */
 
 .catalogue-layout {
   display: grid;
@@ -108,28 +108,23 @@
   color: var(--color-white);
 }
 
-/* View toggle (Tree / Table) */
-.view-toggle {
-  display: inline-flex;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background: var(--color-white);
-  overflow: hidden;
-}
-
-.view-toggle button {
-  border: none;
+.btn-ghost {
   background: transparent;
-  padding: 6px 14px;
-  font-size: 13px;
-  font-weight: 600;
+  border-color: transparent;
   color: var(--color-muted);
-  cursor: pointer;
 }
 
-.view-toggle button.active {
-  background: var(--color-accent);
-  color: var(--color-white);
+.btn-ghost:hover {
+  background: var(--color-pale-blue);
+  border-color: transparent;
+  color: var(--color-secondary);
+}
+
+.btn[disabled],
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .toolbar {
@@ -143,67 +138,157 @@
 
 .toolbar-actions {
   display: flex;
+  flex-wrap: wrap;
   gap: var(--space-xs);
 }
 
-/* Tree view */
-.cap-tree {
+/* Card tree */
+.card-tree {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.cap-card {
   background: var(--color-white);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
-  padding: var(--space-sm) var(--space-md);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
-.cap-tree ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
+.cap-card[data-depth="0"] {
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
 }
 
-.cap-tree li.cap-node {
-  position: relative;
-  padding: 4px 0 4px 0;
+.cap-card[data-depth="1"] {
+  background: #fbfcfe;
 }
 
-.cap-tree li.cap-node ul {
-  margin-left: 22px;
-  border-left: 1px dashed var(--color-border);
-  padding-left: 12px;
+.cap-card[data-depth="2"] {
+  background: #f7f9fd;
 }
 
-.cap-tree summary {
+.cap-card[data-depth="3"] {
+  background: #f3f6fb;
+}
+
+.cap-card.is-selected {
+  border-color: var(--color-magenta);
+  box-shadow: 0 0 0 1px var(--color-magenta);
+}
+
+.cap-card-header {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: var(--space-xs);
+  padding: 10px 14px;
+}
+
+.cap-check {
+  display: inline-flex;
+  align-items: center;
   cursor: pointer;
-  list-style: none;
-  padding: 4px 0;
+  margin-right: 2px;
+}
+
+.cap-check input[type="checkbox"] {
+  accent-color: var(--color-magenta);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.cap-chevron {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border: none;
+  background: transparent;
   border-radius: 4px;
-}
-
-.cap-tree summary::-webkit-details-marker {
-  display: none;
-}
-
-.cap-tree summary::before {
-  content: "▸";
-  display: inline-block;
-  width: 14px;
-  font-size: 11px;
+  cursor: pointer;
+  font-size: 12px;
   color: var(--color-muted);
-  transition: transform 0.15s ease;
+  transition: background 0.15s ease, color 0.15s ease;
 }
 
-.cap-tree details[open] > summary::before {
-  transform: rotate(90deg);
-}
-
-.cap-tree summary:hover {
+.cap-chevron:hover:not(.is-empty) {
   background: var(--color-pale-blue);
+  color: var(--color-secondary);
 }
 
-.cap-tree .cap-leaf {
-  padding-left: 18px;
+.cap-chevron.is-empty {
+  cursor: default;
+  visibility: hidden;
+}
+
+.cap-card-body {
+  padding: 0 14px 14px 44px;
+}
+
+.cap-card-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.cap-card-children {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.cap-industry {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-secondary);
+  background: var(--color-pale-blue);
+  border: 1px solid var(--color-light-blue);
+  padding: 1px 8px;
+  border-radius: 3px;
+  margin-left: var(--space-xs);
+}
+
+.cap-count {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-muted);
+  background: var(--color-pale-blue);
+  border-radius: 999px;
+  padding: 1px 8px;
+  margin-left: auto;
+}
+
+@media (max-width: 600px) {
+  .cap-card-body {
+    padding-left: 28px;
+  }
+}
+
+/* Minimal flat list (used on About + detail page child list) */
+.cap-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cap-list-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  padding: 8px 12px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+}
+
+.cap-list-row:hover {
+  border-color: var(--color-accent);
 }
 
 .cap-id {
@@ -249,44 +334,6 @@
   padding: 1px 8px;
   border-radius: 3px;
   margin-left: var(--space-xs);
-}
-
-/* Table view */
-.cap-table {
-  width: 100%;
-  background: var(--color-white);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  overflow: hidden;
-  border-collapse: collapse;
-}
-
-.cap-table th,
-.cap-table td {
-  padding: 10px 14px;
-  text-align: left;
-  font-size: 14px;
-  border-bottom: 1px solid var(--color-border);
-}
-
-.cap-table thead {
-  background: var(--color-pale-blue);
-}
-
-.cap-table th {
-  color: var(--color-secondary);
-  font-weight: 700;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.6px;
-}
-
-.cap-table tbody tr:hover {
-  background: var(--color-pale-blue);
-}
-
-.cap-table tbody tr:last-child td {
-  border-bottom: none;
 }
 
 /* Detail page */

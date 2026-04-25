@@ -24,7 +24,7 @@ const DIST_API = join(REPO_ROOT, "dist", "api");
 const SCHEMA_VERSION = 1;
 
 function getCatalogueVersion(): string {
-  // Prefer an exact tag if HEAD matches one; otherwise <last-tag>+<sha> or 0.0.0+<sha>.
+  // Prefer an exact tag at HEAD; otherwise calver YYYY.MM.DD from build time.
   try {
     const exact = execSync("git describe --tags --exact-match HEAD 2>/dev/null", {
       encoding: "utf8",
@@ -33,22 +33,22 @@ function getCatalogueVersion(): string {
   } catch {
     /* no exact tag */
   }
-  let lastTag = "0.0.0";
+  const d = new Date();
+  const yyyy = d.getUTCFullYear();
+  const mm = String(d.getUTCMonth() + 1).padStart(2, "0");
+  const dd = String(d.getUTCDate()).padStart(2, "0");
+  return `${yyyy}.${mm}.${dd}`;
+}
+
+function getCatalogueCommit(): string | undefined {
   try {
-    lastTag =
-      execSync("git describe --tags --abbrev=0 2>/dev/null", { encoding: "utf8" })
-        .trim()
-        .replace(/^v/, "") || "0.0.0";
+    const sha = execSync("git rev-parse --short HEAD 2>/dev/null", {
+      encoding: "utf8",
+    }).trim();
+    return sha || undefined;
   } catch {
-    /* no tags */
+    return undefined;
   }
-  let sha = "unknown";
-  try {
-    sha = execSync("git rev-parse --short HEAD 2>/dev/null", { encoding: "utf8" }).trim();
-  } catch {
-    /* not a git repo */
-  }
-  return `${lastTag}+${sha}`;
 }
 
 function deterministicSort<T extends { id: string }>(arr: T[]): T[] {
@@ -80,8 +80,8 @@ interface NestedCapability extends Omit<FlatCapability, "children" | "parent_id"
   children: NestedCapability[];
 }
 
-function nest(root: RawCapability, inheritedOwner?: string): NestedCapability {
-  const flat = flatten(root, inheritedOwner);
+function nest(root: RawCapability, inheritedIndustry?: string): NestedCapability {
+  const flat = flatten(root, inheritedIndustry);
   const byId = new Map<string, NestedCapability>();
   for (const f of flat) {
     const node: NestedCapability = { ...f, children: [] };
@@ -131,11 +131,13 @@ for (const f of flatSorted) {
 }
 
 // version.json
+const commit = getCatalogueCommit();
 const version = {
   catalogue_version: getCatalogueVersion(),
   schema_version: SCHEMA_VERSION,
   generated_at: new Date().toISOString(),
   node_count: flatSorted.length,
+  ...(commit && { commit }),
 };
 
 mkdir(DIST_API);

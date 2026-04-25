@@ -19,6 +19,7 @@ export interface VersionMeta {
   schema_version: number;
   generated_at: string;
   node_count: number;
+  commit?: string;
 }
 
 export const flat: FlatCapability[] = flatJson as unknown as FlatCapability[];
