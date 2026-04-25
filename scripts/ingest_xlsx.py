@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 """
-One-shot ingestion of business-capability-catalogue.xlsx into the YAML
-source-of-truth under catalogue/. Run from repo root:
+ARCHIVED — historical one-shot bootstrap.
 
-    python3 scripts/ingest_xlsx.py
+This script seeded the YAML catalogue from the original
+business-capability-catalogue.xlsx spreadsheet. The seed has been
+committed; the spreadsheet is no longer in the repository and is no
+longer a source of truth. Re-running this script is not part of the
+governance workflow.
 
-Writes:
-  catalogue/L1-<slug>.yaml       (one per L1 capability)
-  catalogue/_value-streams.yaml  (orthogonal value-stream → capability links)
-  catalogue/_index.yaml          (registers the L1 files)
-
-The XLSX has L1 + L2 only (no L3/L4). Industry can be a `; `-separated
-multi-value string, which the UI splits at filter time.
+Per governance.md, all new capabilities and metadata changes are
+introduced as YAML edits under catalogue/, gated by `npm run lint`
+and reviewed via pull request. Do not use this script to import new
+data.
 """
 from __future__ import annotations
 

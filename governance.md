@@ -2,16 +2,25 @@
 
 The full governance and naming conventions live in [`business-capability-governance-model.md`](business-capability-governance-model.md). This file describes the **operational** rules of working in this repository — how to propose, review, and ship a change.
 
+## Source of truth
+
+The catalogue is **YAML in `catalogue/`**, full stop. Every node, every field, every value lives there.
+
+- The schema in [`schema/capability.schema.json`](schema/capability.schema.json) is authoritative. Lint rejects anything that does not validate against it.
+- `dist/api/*.json` and the bundled Python package data are **build artefacts** — never edited by hand and never a source of truth.
+- The original `business-capability-catalogue.xlsx` was a one-time seed and has been removed from the repo. It is not part of the workflow. Re-importing from a spreadsheet is not supported. The historical bootstrap script (`scripts/ingest_xlsx.py`) is kept for archaeology only and must not be used to introduce new records.
+- Any new capability, value-stream stage, or metadata change **must** be introduced as a YAML edit in a pull request that passes `npm run lint`. There is no other path.
+
 ## How to propose a change
 
 1. Branch off `main`.
-2. Edit the relevant `catalogue/L1-*.yaml`, or use the helper CLIs:
+2. Edit the relevant `catalogue/L1-*.yaml` (or `catalogue/_value-streams.yaml` for value-stream links), or use the helper CLIs:
    ```bash
-   npm run cap:add        -- --parent BC-2.1 --name "Forecast Reconciliation"
-   npm run cap:mv         -- --id BC-3.1.2 --new-parent BC-2.1
-   npm run cap:deprecate  -- --id BC-3.1.2 --successor BC-3.1.1 --reason "Merged"
+   npm run cap:add        -- --parent BC-100.10 --name "Forecast Reconciliation"
+   npm run cap:mv         -- --id BC-300.10 --new-parent BC-100.10
+   npm run cap:deprecate  -- --id BC-300.10 --successor BC-100.10 --reason "Merged"
    ```
-3. Run `npm run lint` locally; CI runs the same checks on every PR.
+3. Run `npm run lint` locally; CI runs the same checks on every PR. Lint enforces the schema and every rule in the table below — a failing lint is a hard block on merge.
 4. Open the PR. `CODEOWNERS` for the L1 file you touched is auto-requested for review.
 5. On merge to `main`, the Cloudflare Pages site redeploys.
 6. On a `v*` git tag, the Python package publishes to PyPI.
@@ -61,3 +70,10 @@ The two are independent: `catalogue_version` 1.4.2 and 1.5.0 can both have `sche
 - **Operational rules (this file)** → `governance.md`.
 - **Schema definition** → `schema/capability.schema.json`.
 - **Lint implementation** → `scripts/lint.ts`.
+- **Value streams (orthogonal artefact)** → `catalogue/_value-streams.yaml`. Stages must reference an existing capability id; `build_api` fails the build otherwise.
+
+## What does *not* drive governance
+
+- **Spreadsheets / XLSX / CSV.** Not a source. Ingest scripts produce YAML; YAML produces JSON; nothing flows the other way.
+- **Hand-edited JSON in `dist/api/`.** Generated artefacts. Edits are wiped by the next build.
+- **Edits made directly to the bundled Python package data.** Same — overwritten by `npm run build:pkg`.
