@@ -72,12 +72,6 @@ After `npm run build`, the following endpoints are available under `dist/api/` (
 
 All responses are static, immutable per build, and cacheable by Cloudflare's edge.
 
-## Author
-
-**Vincent Verdet**
-
-This reference catalogue has been developed by Vincent Verdet, a Strategic Technology Leader and Enterprise Architect with extensive experience enabling business objectives with technology.
-
 ## Licence
 
 [MIT](LICENSE).
