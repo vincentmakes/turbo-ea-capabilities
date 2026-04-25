@@ -2,6 +2,15 @@ from __future__ import annotations
 
 import turbo_ea_capabilities as cat
 
+# Stable fixture ids drawn from the canonical dataset.
+# BC-100 (Strategic Management) and BC-200 (Financial Management) are the
+# first two L1 capabilities in the Strategy/Finance clusters; both have
+# multiple L2 children and are very unlikely to be renamed.
+ROOT_ID = "BC-100"
+ROOT_NAME = "Strategic Management"
+SECOND_ROOT_ID = "BC-200"
+CHILD_ID = "BC-100.10"  # Strategic Planning (L2 under BC-100)
+
 
 def test_version_constants_present():
     assert cat.VERSION
@@ -13,47 +22,48 @@ def test_load_all_returns_every_node():
     nodes = cat.load_all()
     assert len(nodes) == cat.NODE_COUNT
     ids = {n.id for n in nodes}
-    assert "BC-2" in ids
-    assert "BC-3" in ids
+    assert ROOT_ID in ids
+    assert SECOND_ROOT_ID in ids
 
 
 def test_load_tree_returns_l1_nodes_with_children():
     tree = cat.load_tree()
-    assert any(t.id == "BC-2" for t in tree)
-    bc2 = next(t for t in tree if t.id == "BC-2")
-    assert len(bc2.children) >= 1
+    assert any(t.id == ROOT_ID for t in tree)
+    root = next(t for t in tree if t.id == ROOT_ID)
+    assert len(root.children) >= 1
 
 
 def test_get_by_id():
-    bc2 = cat.get_by_id("BC-2")
-    assert bc2 is not None
-    assert bc2.name == "Production Management"
+    root = cat.get_by_id(ROOT_ID)
+    assert root is not None
+    assert root.name == ROOT_NAME
     assert cat.get_by_id("DOES-NOT-EXIST") is None
 
 
 def test_get_children_direct_only():
-    kids = cat.get_children("BC-2")
+    kids = cat.get_children(ROOT_ID)
     ids = [k.id for k in kids]
-    assert "BC-2.1" in ids
-    # Grandchild must not appear
-    assert "BC-2.1.1" not in ids
+    assert CHILD_ID in ids
+    # Children's parent_id must point back at the root
+    for k in kids:
+        assert k.parent_id == ROOT_ID
 
 
 def test_get_subtree_recursively_populates_children():
-    sub = cat.get_subtree("BC-2.1")
+    sub = cat.get_subtree(ROOT_ID)
     assert sub is not None
-    assert sub.id == "BC-2.1"
+    assert sub.id == ROOT_ID
     nested_ids = {c.id for c in sub.children}
-    assert "BC-2.1.1" in nested_ids
+    assert CHILD_ID in nested_ids
 
 
 def test_get_ancestors_returns_root_to_parent():
-    chain = cat.get_ancestors("BC-2.1.1")
-    assert [a.id for a in chain] == ["BC-2", "BC-2.1"]
+    chain = cat.get_ancestors(CHILD_ID)
+    assert [a.id for a in chain] == [ROOT_ID]
 
 
 def test_get_ancestors_for_root_is_empty():
-    assert cat.get_ancestors("BC-2") == []
+    assert cat.get_ancestors(ROOT_ID) == []
 
 
 def test_get_ancestors_for_unknown_is_empty():
@@ -61,11 +71,12 @@ def test_get_ancestors_for_unknown_is_empty():
 
 
 def test_iter_subtree_bfs():
-    seen = [c.id for c in cat.iter_subtree("BC-2")]
-    assert seen[0] == "BC-2"
-    # All descendants present
-    assert "BC-2.1" in seen
-    assert "BC-2.1.1" in seen
+    seen = [c.id for c in cat.iter_subtree(ROOT_ID)]
+    assert seen[0] == ROOT_ID
+    assert CHILD_ID in seen
+    # All ids in the iteration must belong to the subtree (root or descendant)
+    for cid in seen:
+        assert cid == ROOT_ID or cid.startswith(ROOT_ID + ".")
 
 
 def test_every_node_has_resolvable_parent_or_is_root():
