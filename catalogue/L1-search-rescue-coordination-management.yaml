@@ -12,25 +12,102 @@ children:
     industry: Air Traffic Control
     description: |
       Alert phases - uncertainty, alert, distress.
-    children: []
+    children:
+      - id: BC-1260.10.10
+        name: Uncertainty Phase Handling
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Detection and handling of INCERFA uncertainty phase.
+        children: []
+      - id: BC-1260.10.20
+        name: Alert Phase Handling
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          ALERFA alert phase handling and escalation.
+        children: []
+      - id: BC-1260.10.30
+        name: Distress Phase Handling
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          DETRESFA distress phase handling and SAR initiation.
+        children: []
   - id: BC-1260.20
     name: SAR Coordination Management
     level: 2
     industry: Air Traffic Control
     description: |
       Coordination with rescue coordination centres (RCCs).
-    children: []
+    children:
+      - id: BC-1260.20.10
+        name: RCC Liaison
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Liaison with national and regional rescue coordination centres.
+        children: []
+      - id: BC-1260.20.20
+        name: SAR Mission Coordination
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Coordination of SAR mission resources and assets.
+        children: []
+      - id: BC-1260.20.30
+        name: Cross-Border SAR Coordination
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Cross-border coordination of SAR operations.
+        children: []
   - id: BC-1260.30
     name: SAR Communication Management
     level: 2
     industry: Air Traffic Control
     description: |
       SAR communication networks, coordination channels.
-    children: []
+    children:
+      - id: BC-1260.30.10
+        name: SAR Voice Communication Operations
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Operation of SAR voice channels and frequencies.
+        children: []
+      - id: BC-1260.30.20
+        name: SAR Data Communication Operations
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Operation of SAR data networks and messaging.
+        children: []
   - id: BC-1260.40
     name: Emergency Locator Beacon Management
     level: 2
     industry: Air Traffic Control
     description: |
       ELT/EPIRB/PLB activation handling, COSPAS-SARSAT interface.
-    children: []
+    children:
+      - id: BC-1260.40.10
+        name: ELT Activation Handling
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Detection and handling of ELT activations.
+        children: []
+      - id: BC-1260.40.20
+        name: COSPAS-SARSAT Interface Operations
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Interface with COSPAS-SARSAT mission control centres.
+        children: []
+      - id: BC-1260.40.30
+        name: Beacon Registration Coordination
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Coordination with national beacon registries.
+        children: []
