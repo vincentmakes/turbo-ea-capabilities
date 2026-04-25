@@ -223,7 +223,7 @@ Rules:
 - A multi-industry tag is appropriate only when the **same capability scope** is used in each named industry. If the scope differs (e.g. generic Quality Management vs pharma's GMP-specific Pharmaceutical Quality Management), keep them as separate capabilities under their respective industry blocks.
 - An L2 capability inherits its parent L1's industry tag unless explicitly overridden. If the L2 has different applicability than its L1, document the override in the description.
 - Cross-Industry is **not** an alternative to multi-industry tagging. Cross-Industry means *all*; multi-industry means *some specific subset*. Use multi-industry tagging when only a defined subset of industries shares the capability.
-- Tools that filter on Industry should treat the field as a list (split on `;`). Excel COUNTIF formulas use wildcard matching (`"*Industry Name*"`) to count across single- and multi-industry rows.
+- Tools that filter on Industry must treat the field as a list (split on `;`). The browse UI and the static JSON API both do this; consumers building their own filters should match the same way.
 
 ---
 
@@ -277,8 +277,10 @@ Adding, renaming, splitting, merging, or retiring a capability follows a lightwe
 1. **Proposal** — submitted by any architect or capability owner, including rationale, impact on existing artefacts (applications, projects, KPIs), and proposed effective date.
 2. **Review** — Architecture Review Board reviews against this governance model.
 3. **Decision** — Approve / Reject / Defer, with documented rationale.
-4. **Implementation** — EA Repository Steward applies the change; affected owners are notified.
+4. **Implementation** — EA Repository Steward applies the change as a YAML pull request against this repository; affected owners are notified.
 5. **Communication** — material changes are published in the EA change log.
+
+> **Source of truth.** The catalogue is the YAML under `catalogue/`. Approved changes land as PRs that pass `scripts/lint.ts` (which enforces the schema in `schema/capability.schema.json` and every rule in §3-§7). Spreadsheets, exported CSVs, and direct edits to generated JSON artefacts are *not* a governance channel — they cannot be reviewed, diffed, or rolled back. See [`governance.md`](governance.md) for the operational PR workflow.
 
 ### 9.3 Versioning
 
