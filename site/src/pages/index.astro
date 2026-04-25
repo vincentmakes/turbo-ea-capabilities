@@ -2,22 +2,20 @@
 import Base from "../layouts/Base.astro";
 import HeroTessellation from "../components/HeroTessellation.astro";
 import CatalogueBrowser from "../components/CatalogueBrowser.tsx";
-import { flat, version } from "../data/load.ts";
+import { flat, valueStreams, version } from "../data/load.ts";
 ---
 
 <Base
-  title="Browse"
-  description="Browse the canonical Turbo EA Business Capability catalogue."
+  title=""
+  description="Browse, filter, and export an open Business Capability Reference Catalog."
   navTransparent={true}
 >
   <HeroTessellation
-    badge="REFERENCE CATALOGUE"
-    title="Business Capability Catalogue"
-    tagline="The reference Business Capability hierarchy for Turbo EA"
-    description={`${version.node_count} capabilities · catalogue ${version.catalogue_version} · schema v${version.schema_version}`}
+    title="Business Capability Reference Catalog"
+    description={`${version.node_count} capabilities · catalog ${version.catalogue_version} · schema v${version.schema_version}`}
   />
 
   <main class="main">
-    <CatalogueBrowser data={flat} client:load />
+    <CatalogueBrowser data={flat} valueStreams={valueStreams} client:load />
   </main>
 </Base>

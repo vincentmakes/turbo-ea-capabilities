@@ -10,11 +10,14 @@ interface Props {
 }
 
 const { title, description, navTransparent = false } = Astro.props;
-const pageTitle = `${title} · Business Capability Catalogue`;
+const pageTitle = title
+  ? `${title} · Business Capability Reference Catalog`
+  : "Business Capability Reference Catalog";
 const pageDescription =
   description ??
-  "Reference Business Capability catalogue for Turbo EA. Browse, search, and export the canonical capability hierarchy.";
+  "An open Business Capability Reference Catalog. Browse, search, and export a canonical, industry-aware capability hierarchy.";
 const navClass = navTransparent ? "nav nav-transparent" : "nav";
+const generatedDate = version.generated_at.slice(0, 10);
 ---
 
 <!doctype html>
@@ -39,9 +42,9 @@ const navClass = navTransparent ? "nav nav-transparent" : "nav";
     <nav class={navClass}>
       <div class="nav-inner">
         <a href="/" class="nav-brand">
-          <span class="nav-brand-text">turbo-ea</span>
-          <span class="nav-brand-sep">/</span>
-          <span class="nav-brand-text" style="color:#f0f0f5">capabilities</span>
+          <span class="nav-brand-text">Business Capability</span>
+          <span class="nav-brand-sep"> </span>
+          <span class="nav-brand-text" style="color:#f0f0f5">Reference Catalog</span>
         </a>
         <div class="nav-links">
           <a href="/">Browse</a>
@@ -62,9 +65,8 @@ const navClass = navTransparent ? "nav nav-transparent" : "nav";
     <footer class="footer">
       <div class="footer-inner">
         <div class="footer-brand">
-          <span class="footer-brand-text">turbo-ea</span>
-          <span class="footer-brand-sep">/</span>
-          <span class="footer-brand-sub">capabilities</span>
+          <span class="footer-brand-text">Business Capability</span>
+          <span class="footer-brand-sub">Reference Catalog</span>
         </div>
         <div class="footer-links">
           <a href="/api/capabilities.json">JSON API</a>
@@ -81,8 +83,8 @@ const navClass = navTransparent ? "nav nav-transparent" : "nav";
           >
         </div>
         <div class="footer-copy">
-          Catalogue {version.catalogue_version} · schema v{version.schema_version} ·
-          {version.node_count} capabilities · generated {version.generated_at}
+          Catalog {version.catalogue_version} · schema v{version.schema_version} ·
+          {version.node_count} capabilities · generated {generatedDate}
         </div>
       </div>
     </footer>

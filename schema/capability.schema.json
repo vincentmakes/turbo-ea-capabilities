@@ -32,18 +32,9 @@
       "items": { "type": "string", "minLength": 1 },
       "uniqueItems": true
     },
-    "owner": {
-      "type": "string",
-      "description": "Capability owner role. Inherited from L1 if absent."
-    },
-    "tags": {
-      "type": "array",
-      "items": { "type": "string", "minLength": 1 },
-      "uniqueItems": true
-    },
     "industry": {
       "type": "string",
-      "description": "Industry classification. 'Cross-Industry', a single industry, or semicolon-separated list."
+      "description": "Industry classification. 'Cross-Industry', a single industry, or semicolon-separated list. Inherited from L1 if absent."
     },
     "references": {
       "type": "array",
