@@ -12,25 +12,123 @@ children:
     industry: Air Traffic Control
     description: |
       Airspace structure, classes, route network design, sector boundaries.
-    children: []
+    children:
+      - id: BC-1200.10.10
+        name: Airspace Structure Design
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Definition of FIR, UIR, control areas, and airspace classes per ICAO Annex 11.
+        children: []
+      - id: BC-1200.10.20
+        name: ATS Route Network Design
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Design of conventional and PBN ATS route networks.
+        children: []
+      - id: BC-1200.10.30
+        name: Sector Boundary Design
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Definition of sector boundaries and elementary sectors.
+        children: []
+      - id: BC-1200.10.40
+        name: Free Route Airspace Design
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Free route airspace design and implementation.
+        children: []
   - id: BC-1200.20
     name: Airspace Sectorisation Management
     level: 2
     industry: Air Traffic Control
     description: |
       Sector definitions, opening schemes, controller workload alignment.
-    children: []
+    children:
+      - id: BC-1200.20.10
+        name: Sector Configuration Management
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Definition and maintenance of sector configurations.
+        children: []
+      - id: BC-1200.20.20
+        name: Sector Opening Scheme Planning
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Planning of sector opening schemes by traffic forecast.
+        children: []
+      - id: BC-1200.20.30
+        name: Workload-Based Sectorisation
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Sectorisation aligned with controller workload assessment.
+        children: []
   - id: BC-1200.30
     name: Restricted Airspace Management
     level: 2
     industry: Air Traffic Control
     description: |
       Danger areas, restricted areas, prohibited areas, military zones.
-    children: []
+    children:
+      - id: BC-1200.30.10
+        name: Restricted Area Definition
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Definition of restricted, prohibited, and danger areas.
+        children: []
+      - id: BC-1200.30.20
+        name: Temporary Reserved Area Management
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Management of temporary reserved and segregated areas.
+        children: []
+      - id: BC-1200.30.30
+        name: Activation and Release Coordination
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Activation, release, and notification of restricted airspace.
+        children: []
   - id: BC-1200.40
     name: Airspace Coordination Management
     level: 2
     industry: Air Traffic Control
     description: |
       Civil-military coordination, cross-border airspace coordination, FAB cooperation.
-    children: []
+    children:
+      - id: BC-1200.40.10
+        name: Civil-Military Airspace Coordination
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Civil-military coordination and Flexible Use of Airspace.
+        children: []
+      - id: BC-1200.40.20
+        name: Cross-Border Airspace Coordination
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Coordination of airspace usage across FIR boundaries.
+        children: []
+      - id: BC-1200.40.30
+        name: Functional Airspace Block Cooperation
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Cooperation in functional airspace blocks (FAB).
+        children: []
+      - id: BC-1200.40.40
+        name: Airspace User Consultation
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Consultation with airspace users on design changes.
+        children: []

@@ -12,32 +12,151 @@ children:
     industry: Air Traffic Control
     description: |
       AIP, AIRAC cycle, amendments, supplements.
-    children: []
+    children:
+      - id: BC-1230.10.10
+        name: AIP Production
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Production of the Aeronautical Information Publication.
+        children: []
+      - id: BC-1230.10.20
+        name: AIRAC Cycle Management
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Management of the AIRAC cycle and effective dates.
+        children: []
+      - id: BC-1230.10.30
+        name: AIP Amendment and Supplement Issuance
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Issuance of AIP amendments and supplements.
+        children: []
   - id: BC-1230.20
     name: NOTAM Management
     level: 2
     industry: Air Traffic Control
     description: |
       NOTAM origination, publication, dissemination, expiry.
-    children: []
+    children:
+      - id: BC-1230.20.10
+        name: NOTAM Origination
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Origination and drafting of NOTAMs.
+        children: []
+      - id: BC-1230.20.20
+        name: NOTAM Publication and Dissemination
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Publication and dissemination via AFTN/AMHS.
+        children: []
+      - id: BC-1230.20.30
+        name: NOTAM Lifecycle Management
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Lifecycle management including replacement and cancellation.
+        children: []
   - id: BC-1230.30
     name: Aeronautical Database Management
     level: 2
     industry: Air Traffic Control
     description: |
       Aeronautical data integrity, traceability, AIRAC compliance, data quality.
-    children: []
+    children:
+      - id: BC-1230.30.10
+        name: Aeronautical Data Origination
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Origination and capture of aeronautical data per ICAO Annex 15.
+        children: []
+      - id: BC-1230.30.20
+        name: Aeronautical Data Quality Management
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Data quality controls, accuracy, integrity, and resolution.
+        children: []
+      - id: BC-1230.30.30
+        name: Aeronautical Data Distribution
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Distribution of aeronautical data to users and tools.
+        children: []
+      - id: BC-1230.30.40
+        name: Data Traceability and Audit
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Traceability of aeronautical data lineage and audit.
+        children: []
   - id: BC-1230.40
     name: "Charting & Procedure Design Management"
     level: 2
     industry: Air Traffic Control
     description: |
       Aeronautical charts, instrument flight procedures, PBN procedure design.
-    children: []
+    children:
+      - id: BC-1230.40.10
+        name: Aeronautical Chart Production
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Production of en-route, terminal, and aerodrome charts.
+        children: []
+      - id: BC-1230.40.20
+        name: Instrument Flight Procedure Design
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Design of SIDs, STARs, and instrument approach procedures.
+        children: []
+      - id: BC-1230.40.30
+        name: Performance-Based Navigation Procedure Design
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          PBN procedure design including RNP and RNAV.
+        children: []
+      - id: BC-1230.40.40
+        name: Procedure Validation and Approval
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Procedure validation, flight check, and regulatory approval.
+        children: []
   - id: BC-1230.50
     name: Digital AIM Services Management
     level: 2
     industry: Air Traffic Control
     description: |
       Digital data products, SWIM services, machine-readable AIM.
-    children: []
+    children:
+      - id: BC-1230.50.10
+        name: Digital Data Product Management
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Management of digital AIM data products (AIXM-based).
+        children: []
+      - id: BC-1230.50.20
+        name: SWIM Service Provision
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Provision of System Wide Information Management (SWIM) services.
+        children: []
+      - id: BC-1230.50.30
+        name: Machine-Readable AIM Distribution
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Distribution of machine-readable AIM to subscribers.
+        children: []
