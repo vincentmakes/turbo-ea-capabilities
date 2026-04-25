@@ -12,46 +12,235 @@ children:
     industry: "Banking & Capital Markets"
     description: |
       Payment instruction capture, validation, authorisation.
-    children: []
+    children:
+      - id: BC-1340.10.10
+        name: Payment Instruction Capture
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Capture of payment instructions across channels.
+        children: []
+      - id: BC-1340.10.20
+        name: Payment Validation
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Validation of payment instructions and beneficiary details.
+        children: []
+      - id: BC-1340.10.30
+        name: Payment Authorisation
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Authorisation, authentication, and SCA application.
+        children: []
+      - id: BC-1340.10.40
+        name: Payment Pre-Notification
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Pre-notification of payments and confirmation of payee.
+        children: []
   - id: BC-1340.20
     name: Payment Processing Management
     level: 2
     industry: "Banking & Capital Markets"
     description: |
       Payment processing, routing, formatting, ISO 20022.
-    children: []
+    children:
+      - id: BC-1340.20.10
+        name: Payment Enrichment and Formatting
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Enrichment and ISO 20022 formatting of payment messages.
+        children: []
+      - id: BC-1340.20.20
+        name: Payment Routing
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Routing of payments to appropriate rails and correspondents.
+        children: []
+      - id: BC-1340.20.30
+        name: Payment Sanctions Screening
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Sanctions and restricted party screening of payments.
+        children: []
+      - id: BC-1340.20.40
+        name: Payment Investigations
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Investigation of failed, returned, and queried payments.
+        children: []
   - id: BC-1340.30
     name: "Clearing & Settlement Management"
     level: 2
     industry: "Banking & Capital Markets"
     description: |
       Domestic clearing - ACH, BACS, SEPA, FPS - and settlement.
-    children: []
+    children:
+      - id: BC-1340.30.10
+        name: ACH and Bulk Clearing
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Operation of ACH, BACS, and bulk clearing schemes.
+        children: []
+      - id: BC-1340.30.20
+        name: SEPA Clearing Operations
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          SEPA Credit Transfer and Direct Debit operations.
+        children: []
+      - id: BC-1340.30.30
+        name: RTGS and Net Settlement
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          RTGS settlement and deferred net settlement operations.
+        children: []
+      - id: BC-1340.30.40
+        name: Nostro and Vostro Reconciliation
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Nostro/vostro account reconciliation and break management.
+        children: []
   - id: BC-1340.40
     name: Cross-Border Payment Management
     level: 2
     industry: "Banking & Capital Markets"
     description: |
       International payments, correspondent banking, FX.
-    children: []
+    children:
+      - id: BC-1340.40.10
+        name: Correspondent Banking Management
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Correspondent banking relationships and RMA management.
+        children: []
+      - id: BC-1340.40.20
+        name: Cross-Border Payment Routing
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Routing of cross-border payments via SWIFT and alternative rails.
+        children: []
+      - id: BC-1340.40.30
+        name: FX Conversion for Payments
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          FX conversion, rate sourcing, and pricing for payments.
+        children: []
+      - id: BC-1340.40.40
+        name: SWIFT GPI Tracking
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          SWIFT GPI status tracking and customer transparency.
+        children: []
   - id: BC-1340.50
     name: Real-Time Payment Management
     level: 2
     industry: "Banking & Capital Markets"
     description: |
       Real-time / instant payment rails.
-    children: []
+    children:
+      - id: BC-1340.50.10
+        name: Instant Payment Scheme Operations
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Operation of FPS, SCT Inst, and other instant payment schemes.
+        children: []
+      - id: BC-1340.50.20
+        name: Request to Pay Operations
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Request-to-pay messaging and lifecycle management.
+        children: []
+      - id: BC-1340.50.30
+        name: Real-Time Payment Liquidity
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Liquidity management for 24/7 instant payment rails.
+        children: []
   - id: BC-1340.60
     name: Card Issuance Management
     level: 2
     industry: "Banking & Capital Markets"
     description: |
       Card production, personalisation, dispatch, activation.
-    children: []
+    children:
+      - id: BC-1340.60.10
+        name: Card Production and Personalisation
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Card production, embossing, and personalisation operations.
+        children: []
+      - id: BC-1340.60.20
+        name: Card Dispatch and Delivery
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Dispatch of plastic cards and PIN delivery.
+        children: []
+      - id: BC-1340.60.30
+        name: Card Activation
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Card activation and PIN management workflows.
+        children: []
+      - id: BC-1340.60.40
+        name: Digital Card and Wallet Provisioning
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Digital card issuance and wallet provisioning (tokenisation).
+        children: []
   - id: BC-1340.70
     name: Card Transaction Processing Management
     level: 2
     industry: "Banking & Capital Markets"
     description: |
       Switching, authorisation, fraud screening, chargebacks.
-    children: []
+    children:
+      - id: BC-1340.70.10
+        name: Card Authorisation Switching
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Real-time authorisation switching and routing.
+        children: []
+      - id: BC-1340.70.20
+        name: Card Fraud Screening
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Real-time fraud screening of card transactions.
+        children: []
+      - id: BC-1340.70.30
+        name: Card Settlement and Interchange
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Settlement, interchange, and clearing with schemes.
+        children: []
+      - id: BC-1340.70.40
+        name: Chargeback and Dispute Management
+        level: 3
+        industry: "Banking & Capital Markets"
+        description: |
+          Chargeback handling and scheme dispute resolution.
+        children: []
