@@ -12,39 +12,235 @@ children:
     industry: Cross-Industry
     description: |
       Security strategy, policies, frameworks, GRC.
-    children: []
+    children:
+      - id: BC-620.10.10
+        name: Security Strategy Development
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Multi-year cybersecurity strategy aligned with business risk.
+        children: []
+      - id: BC-620.10.20
+        name: Security Policy and Standards
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Security policies and standards aligned with NIST CSF and ISO 27001.
+        children: []
+      - id: BC-620.10.30
+        name: Security Risk Management
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Cyber risk identification, assessment, and treatment.
+        children: []
+      - id: BC-620.10.40
+        name: Security Compliance Management
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Compliance with cyber regulations (DORA, NIS2, sector-specific).
+        children: []
+      - id: BC-620.10.50
+        name: Security Metrics and Reporting
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Security KPIs, dashboards, and board reporting.
+        children: []
   - id: BC-620.20
     name: "Identity & Access Management"
     level: 2
     industry: Cross-Industry
     description: |
       IAM, PAM, federation, joiners-movers-leavers.
-    children: []
+    children:
+      - id: BC-620.20.10
+        name: Identity Lifecycle Management
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Joiner, mover, leaver processes and identity provisioning.
+        children: []
+      - id: BC-620.20.20
+        name: Access Management and Authentication
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Authentication, MFA, single sign-on, and federation.
+        children: []
+      - id: BC-620.20.30
+        name: Privileged Access Management
+        level: 3
+        industry: Cross-Industry
+        description: |
+          PAM, just-in-time access, and privileged session monitoring.
+        children: []
+      - id: BC-620.20.40
+        name: Access Governance and Recertification
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Access reviews, segregation of duties, and recertification.
+        children: []
+      - id: BC-620.20.50
+        name: Customer Identity Management
+        level: 3
+        industry: Cross-Industry
+        description: |
+          CIAM for external customers, partners, and consumers.
+        children: []
   - id: BC-620.30
     name: "Threat Detection & Response Management"
     level: 2
     industry: Cross-Industry
     description: |
       SOC, SIEM, incident response.
-    children: []
+    children:
+      - id: BC-620.30.10
+        name: Security Monitoring and SIEM Operations
+        level: 3
+        industry: Cross-Industry
+        description: |
+          SIEM, SOAR, and security telemetry monitoring.
+        children: []
+      - id: BC-620.30.20
+        name: Threat Hunting
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Proactive hypothesis-driven threat hunting.
+        children: []
+      - id: BC-620.30.30
+        name: Cyber Threat Intelligence
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Collection, analysis, and dissemination of cyber threat intelligence.
+        children: []
+      - id: BC-620.30.40
+        name: Cyber Incident Response
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Detection, containment, eradication, and recovery from cyber incidents.
+        children: []
+      - id: BC-620.30.50
+        name: Digital Forensics
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Forensic acquisition and analysis in support of incidents and litigation.
+        children: []
   - id: BC-620.40
     name: Vulnerability Management
     level: 2
     industry: Cross-Industry
     description: |
       Vulnerability scanning, patching, remediation.
-    children: []
+    children:
+      - id: BC-620.40.10
+        name: Vulnerability Scanning
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Authenticated and unauthenticated scanning across the estate.
+        children: []
+      - id: BC-620.40.20
+        name: Vulnerability Triage and Prioritisation
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Risk-based prioritisation of vulnerabilities for remediation.
+        children: []
+      - id: BC-620.40.30
+        name: Patch and Remediation Management
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Coordination of patching and remediation across owners.
+        children: []
+      - id: BC-620.40.40
+        name: Penetration Testing and Red Teaming
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Penetration tests, red team exercises, and adversary simulation.
+        children: []
   - id: BC-620.50
     name: Security Architecture Management
     level: 2
     industry: Cross-Industry
     description: |
       Secure design, security patterns, zero trust.
-    children: []
+    children:
+      - id: BC-620.50.10
+        name: Security Architecture Patterns
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Reference security patterns and reusable controls.
+        children: []
+      - id: BC-620.50.20
+        name: Zero Trust Architecture
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Zero Trust principles, micro-segmentation, and policy enforcement.
+        children: []
+      - id: BC-620.50.30
+        name: Application Security Engineering
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Secure-by-design practices, SAST, DAST, and threat modelling.
+        children: []
+      - id: BC-620.50.40
+        name: Cloud Security Architecture
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Cloud security baselines, CSPM, and cloud-native control design.
+        children: []
+      - id: BC-620.50.50
+        name: Cryptography and Key Management
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Cryptographic standards, key management, and PKI operations.
+        children: []
   - id: BC-620.60
     name: Security Awareness Management
     level: 2
     industry: Cross-Industry
     description: |
       Awareness training, phishing simulations, culture.
-    children: []
+    children:
+      - id: BC-620.60.10
+        name: Security Awareness Training
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Annual and role-based security awareness training.
+        children: []
+      - id: BC-620.60.20
+        name: Phishing Simulation
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Phishing simulations and follow-up coaching.
+        children: []
+      - id: BC-620.60.30
+        name: Security Culture Programme
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Cultural change programmes and security champions networks.
+        children: []
+      - id: BC-620.60.40
+        name: Security Communications
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Security alerts, advisories, and stakeholder communications.
+        children: []

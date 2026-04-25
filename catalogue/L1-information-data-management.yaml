@@ -12,39 +12,228 @@ children:
     industry: Cross-Industry
     description: |
       Data ownership, stewardship, policies, standards.
-    children: []
+    children:
+      - id: BC-610.10.10
+        name: Data Ownership and Stewardship
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Assignment and operation of data owner and steward roles.
+        children: []
+      - id: BC-610.10.20
+        name: Data Policy and Standards
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Definition of data policies, standards, and reference frameworks.
+        children: []
+      - id: BC-610.10.30
+        name: Data Cataloguing and Lineage
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Data catalogue, glossary, and end-to-end data lineage.
+        children: []
+      - id: BC-610.10.40
+        name: Data Privacy and Classification
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Classification of data and enforcement of privacy controls.
+        children: []
+      - id: BC-610.10.50
+        name: Data Risk and Compliance Monitoring
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Monitoring of data risk and regulatory compliance (e.g. BCBS 239, GDPR).
+        children: []
   - id: BC-610.20
     name: Master Data Management
     level: 2
     industry: Cross-Industry
     description: |
       MDM for customer, product, supplier, employee, etc.
-    children: []
+    children:
+      - id: BC-610.20.10
+        name: Customer Master Data
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Mastering and governance of customer master data.
+        children: []
+      - id: BC-610.20.20
+        name: Product Master Data
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Mastering and governance of product and material master data.
+        children: []
+      - id: BC-610.20.30
+        name: Supplier Master Data
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Mastering and governance of supplier master data.
+        children: []
+      - id: BC-610.20.40
+        name: Employee Master Data
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Mastering and governance of employee master data.
+        children: []
+      - id: BC-610.20.50
+        name: Reference Data Management
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Reference data sets, code lists, and hierarchies.
+        children: []
   - id: BC-610.30
     name: Data Quality Management
     level: 2
     industry: Cross-Industry
     description: |
       Data quality monitoring, profiling, remediation.
-    children: []
+    children:
+      - id: BC-610.30.10
+        name: Data Quality Profiling
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Profiling, baselining, and assessment of data quality.
+        children: []
+      - id: BC-610.30.20
+        name: Data Quality Rule Management
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Definition, deployment, and monitoring of data quality rules.
+        children: []
+      - id: BC-610.30.30
+        name: Data Quality Issue Resolution
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Triage, remediation, and root cause analysis of DQ issues.
+        children: []
+      - id: BC-610.30.40
+        name: Data Quality Reporting
+        level: 3
+        industry: Cross-Industry
+        description: |
+          DQ scorecards and reporting to data owners and executives.
+        children: []
   - id: BC-610.40
     name: Data Architecture Management
     level: 2
     industry: Cross-Industry
     description: |
       Logical and physical data architecture.
-    children: []
+    children:
+      - id: BC-610.40.10
+        name: Conceptual and Logical Data Modelling
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Enterprise conceptual and logical data models.
+        children: []
+      - id: BC-610.40.20
+        name: Data Platform Architecture
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Architecture of data lakes, warehouses, lakehouses, and mesh.
+        children: []
+      - id: BC-610.40.30
+        name: Data Integration Architecture
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Patterns for batch, streaming, and CDC data integration.
+        children: []
+      - id: BC-610.40.40
+        name: Data Storage and Retention Design
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Storage design including retention, archiving, and tiering.
+        children: []
   - id: BC-610.50
     name: "Analytics & BI Management"
     level: 2
     industry: Cross-Industry
     description: |
       Reporting, analytics, business intelligence delivery.
-    children: []
+    children:
+      - id: BC-610.50.10
+        name: Reporting and Dashboard Delivery
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Delivery of operational and management reports and dashboards.
+        children: []
+      - id: BC-610.50.20
+        name: Self-Service Analytics
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Enablement of business self-service analytics and data products.
+        children: []
+      - id: BC-610.50.30
+        name: Advanced Analytics and Data Science
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Advanced analytics, data science models, and experimentation.
+        children: []
+      - id: BC-610.50.40
+        name: Analytics Platform Operations
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Operation of BI and analytics platforms and content libraries.
+        children: []
   - id: BC-610.60
     name: Artificial Intelligence Management
     level: 2
     industry: Cross-Industry
     description: |
       AI/ML model lifecycle, MLOps, responsible AI.
-    children: []
+    children:
+      - id: BC-610.60.10
+        name: AI Use Case Identification
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Identification and prioritisation of AI/ML use cases.
+        children: []
+      - id: BC-610.60.20
+        name: ML Model Development
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Feature engineering, training, and validation of ML models.
+        children: []
+      - id: BC-610.60.30
+        name: MLOps and Model Deployment
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Model deployment, monitoring, and lifecycle management (MLOps).
+        children: []
+      - id: BC-610.60.40
+        name: Responsible AI Governance
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Responsible AI principles, risk assessment, and bias monitoring.
+        children: []
+      - id: BC-610.60.50
+        name: Generative AI Management
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Generative AI use cases, foundation model selection, and guardrails.
+        children: []
