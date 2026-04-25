@@ -12,32 +12,144 @@ children:
     industry: Air Traffic Control
     description: |
       Sector and aerodrome capacity assessment, declared capacity setting.
-    children: []
+    children:
+      - id: BC-1220.10.10
+        name: Sector Capacity Assessment
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Assessment of sector capacity through workload measurement.
+        children: []
+      - id: BC-1220.10.20
+        name: Aerodrome Capacity Declaration
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Declaration of aerodrome runway and apron capacity.
+        children: []
+      - id: BC-1220.10.30
+        name: Strategic Capacity Planning
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Multi-year strategic ATC capacity planning.
+        children: []
   - id: BC-1220.20
     name: Flow Regulation Management
     level: 2
     industry: Air Traffic Control
     description: |
       Traffic flow measures, regulations, rerouteings.
-    children: []
+    children:
+      - id: BC-1220.20.10
+        name: Flow Measure Definition
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Definition of ATFCM measures by sector and aerodrome.
+        children: []
+      - id: BC-1220.20.20
+        name: Reroute Proposal Management
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Proposal and implementation of reroutings and scenarios.
+        children: []
+      - id: BC-1220.20.30
+        name: Tactical Flow Adjustment
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Tactical flow measure adjustment in real time.
+        children: []
   - id: BC-1220.30
     name: Slot Allocation Management
     level: 2
     industry: Air Traffic Control
     description: |
       Calculated take-off times (CTOT), slot management, slot swapping.
-    children: []
+    children:
+      - id: BC-1220.30.10
+        name: Calculated Take-Off Time Issuance
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Computation and issuance of CTOTs to airspace users.
+        children: []
+      - id: BC-1220.30.20
+        name: Slot Swap and Improvement
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Slot swapping, slot improvement, and target time updates.
+        children: []
+      - id: BC-1220.30.30
+        name: Departure Slot Compliance
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Monitoring of slot adherence and exemptions.
+        children: []
   - id: BC-1220.40
     name: Network Performance Management
     level: 2
     industry: Air Traffic Control
     description: |
       Network performance monitoring, KPI reporting.
-    children: []
+    children:
+      - id: BC-1220.40.10
+        name: Network KPI Monitoring
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Monitoring of network KPIs (delay, capacity, predictability).
+        children: []
+      - id: BC-1220.40.20
+        name: Performance Reporting
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Performance reporting to network and SES regulators.
+        children: []
+      - id: BC-1220.40.30
+        name: Post-Operations Analysis
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Post-operations analysis of flows and bottlenecks.
+        children: []
   - id: BC-1220.50
     name: Demand-Capacity Balancing Management
     level: 2
     industry: Air Traffic Control
     description: |
       Pre-tactical and tactical demand-capacity balancing.
-    children: []
+    children:
+      - id: BC-1220.50.10
+        name: Strategic Demand-Capacity Balancing
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Long-term demand-capacity balancing across the network.
+        children: []
+      - id: BC-1220.50.20
+        name: Pre-Tactical Demand-Capacity Balancing
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Pre-tactical (D-1) demand-capacity balancing.
+        children: []
+      - id: BC-1220.50.30
+        name: Tactical Demand-Capacity Balancing
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Real-time tactical demand-capacity balancing.
+        children: []
+      - id: BC-1220.50.40
+        name: Collaborative Decision Making
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Collaborative Decision Making with airspace users and airports.
+        children: []

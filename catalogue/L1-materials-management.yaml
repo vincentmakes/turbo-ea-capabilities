@@ -12,32 +12,144 @@ children:
     industry: "Manufacturing & Industrial"
     description: |
       BOM structure, engineering and manufacturing BOMs.
-    children: []
+    children:
+      - id: BC-1070.10.10
+        name: Engineering BOM Management
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Engineering BOMs aligned with product design and revisions.
+        children: []
+      - id: BC-1070.10.20
+        name: Manufacturing BOM Management
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Manufacturing BOMs reflecting plant-specific build sequences.
+        children: []
+      - id: BC-1070.10.30
+        name: BOM Change and Effectivity Management
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          BOM change control, revision, and effectivity dating.
+        children: []
+      - id: BC-1070.10.40
+        name: BOM Variant Management
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Configurable and variant BOMs for product options.
+        children: []
   - id: BC-1070.20
     name: Raw Material Management
     level: 2
     industry: "Manufacturing & Industrial"
     description: |
       Raw material stock, quality, traceability.
-    children: []
+    children:
+      - id: BC-1070.20.10
+        name: Raw Material Stock Control
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Tracking of raw material stock at plant and storage locations.
+        children: []
+      - id: BC-1070.20.20
+        name: Raw Material Quality Inspection
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Incoming inspection, sampling, and release of raw materials.
+        children: []
+      - id: BC-1070.20.30
+        name: Raw Material Traceability
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Lot, batch, and serial traceability for raw materials.
+        children: []
   - id: BC-1070.30
     name: Work-in-Process Management
     level: 2
     industry: "Manufacturing & Industrial"
     description: |
       WIP tracking, valuation, control.
-    children: []
+    children:
+      - id: BC-1070.30.10
+        name: WIP Tracking
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Tracking of work-in-process through manufacturing operations.
+        children: []
+      - id: BC-1070.30.20
+        name: WIP Valuation
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Cost accumulation and valuation of WIP positions.
+        children: []
+      - id: BC-1070.30.30
+        name: WIP Control and Aging
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Aging and control of stranded or stalled WIP.
+        children: []
   - id: BC-1070.40
     name: Finished Goods Management
     level: 2
     industry: "Manufacturing & Industrial"
     description: |
       Finished goods stock at plant level.
-    children: []
+    children:
+      - id: BC-1070.40.10
+        name: Finished Goods Receipting
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Receipt of finished goods from production into plant inventory.
+        children: []
+      - id: BC-1070.40.20
+        name: Finished Goods Storage
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Storage and handling of finished goods at plant warehouses.
+        children: []
+      - id: BC-1070.40.30
+        name: Finished Goods Dispatch
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Dispatch and shipment of finished goods to downstream nodes.
+        children: []
   - id: BC-1070.50
     name: Material Planning Management
     level: 2
     industry: "Manufacturing & Industrial"
     description: |
       MRP, material requirements, plant-level supply planning.
-    children: []
+    children:
+      - id: BC-1070.50.10
+        name: Material Requirements Planning
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          MRP runs to derive net material requirements from demand and BOM.
+        children: []
+      - id: BC-1070.50.20
+        name: Material Coverage Analysis
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Coverage analysis, exception messages, and order proposals.
+        children: []
+      - id: BC-1070.50.30
+        name: Plant-Level Supply Plan Execution
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Conversion of material plans into purchase and production orders.
+        children: []

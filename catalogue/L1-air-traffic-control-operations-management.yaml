@@ -12,39 +12,193 @@ children:
     industry: Air Traffic Control
     description: |
       High-altitude en-route ATC services.
-    children: []
+    children:
+      - id: BC-1210.10.10
+        name: En-Route Separation Provision
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Provision of horizontal and vertical separation in en-route airspace.
+        children: []
+      - id: BC-1210.10.20
+        name: En-Route Conflict Detection and Resolution
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Detection and resolution of conflicts between en-route flights.
+        children: []
+      - id: BC-1210.10.30
+        name: En-Route Coordination
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Inter-sector and inter-centre coordination of en-route traffic.
+        children: []
+      - id: BC-1210.10.40
+        name: Flight Plan Processing
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Flight plan processing, activation, and updates.
+        children: []
   - id: BC-1210.20
     name: Approach Control Operations Management
     level: 2
     industry: Air Traffic Control
     description: |
       Terminal area approach and departure control.
-    children: []
+    children:
+      - id: BC-1210.20.10
+        name: Arrival Sequencing and Metering
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Arrival sequencing, AMAN, and metering operations.
+        children: []
+      - id: BC-1210.20.20
+        name: Departure Management
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Departure management, DMAN, and SID adherence.
+        children: []
+      - id: BC-1210.20.30
+        name: Approach Vectoring and Spacing
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Vectoring and spacing for final approach.
+        children: []
+      - id: BC-1210.20.40
+        name: Terminal Area Coordination
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Coordination between approach and adjacent units.
+        children: []
   - id: BC-1210.30
     name: Aerodrome Tower Operations Management
     level: 2
     industry: Air Traffic Control
     description: |
       Tower control at aerodromes, including ground movement.
-    children: []
+    children:
+      - id: BC-1210.30.10
+        name: Runway Control
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Runway control including take-off and landing clearances.
+        children: []
+      - id: BC-1210.30.20
+        name: Ground Movement Control
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Surface movement control of aircraft and vehicles.
+        children: []
+      - id: BC-1210.30.30
+        name: Clearance Delivery
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Issue of departure clearances and pre-departure information.
+        children: []
+      - id: BC-1210.30.40
+        name: Aerodrome Coordination
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Coordination with airport operations and emergency services.
+        children: []
   - id: BC-1210.40
     name: Oceanic Control Operations Management
     level: 2
     industry: Air Traffic Control
     description: |
       Procedural and oceanic ATC services.
-    children: []
+    children:
+      - id: BC-1210.40.10
+        name: Procedural Separation Provision
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Procedural separation in non-radar oceanic airspace.
+        children: []
+      - id: BC-1210.40.20
+        name: Oceanic Clearance Management
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Issuance of oceanic clearances and re-clearances.
+        children: []
+      - id: BC-1210.40.30
+        name: CPDLC and ADS-C Operations
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Datalink-based oceanic operations using CPDLC and ADS-C.
+        children: []
   - id: BC-1210.50
     name: "ATC Watch & Shift Management"
     level: 2
     industry: Air Traffic Control
     description: |
       Watch supervision, shift handovers, position rostering.
-    children: []
+    children:
+      - id: BC-1210.50.10
+        name: Watch Supervision
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Operational supervision of the watch and shift performance.
+        children: []
+      - id: BC-1210.50.20
+        name: Shift Handover Management
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Structured shift handover briefings and documentation.
+        children: []
+      - id: BC-1210.50.30
+        name: Position Rostering
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Position rostering and fatigue management for controllers.
+        children: []
   - id: BC-1210.60
     name: Contingency Operations Management
     level: 2
     industry: Air Traffic Control
     description: |
       Degraded mode operations, system failure response, fallback procedures.
-    children: []
+    children:
+      - id: BC-1210.60.10
+        name: Degraded Mode Operations
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Operations in degraded mode with reduced system support.
+        children: []
+      - id: BC-1210.60.20
+        name: System Failure Response
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Procedures for response to ATC system failures.
+        children: []
+      - id: BC-1210.60.30
+        name: Fallback to Backup Systems
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Fallback to backup ATC systems and contingency facilities.
+        children: []
+      - id: BC-1210.60.40
+        name: Contingency Plan Maintenance
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Maintenance and exercise of operational contingency plans.
+        children: []

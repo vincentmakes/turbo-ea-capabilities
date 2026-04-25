@@ -12,46 +12,221 @@ children:
     industry: "Manufacturing & Industrial"
     description: |
       Work order creation, release, tracking, closure.
-    children: []
+    children:
+      - id: BC-1010.10.10
+        name: Work Order Creation
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Creation of work orders from production orders and BOM/routing.
+        children: []
+      - id: BC-1010.10.20
+        name: Work Order Release
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Release of work orders to the shop floor with material checks.
+        children: []
+      - id: BC-1010.10.30
+        name: Work Order Confirmation
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Confirmation of activities, quantities, and times against work orders.
+        children: []
+      - id: BC-1010.10.40
+        name: Work Order Closure
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Final closure and settlement of work orders.
+        children: []
   - id: BC-1010.20
     name: Shop Floor Execution Management
     level: 2
     industry: "Manufacturing & Industrial"
     description: |
       Shop floor control, MES execution.
-    children: []
+    children:
+      - id: BC-1010.20.10
+        name: Production Definition Management
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          ISA-95 production definition for products and processes.
+        children: []
+      - id: BC-1010.20.20
+        name: Production Resource Management
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Management of production resource availability and capability.
+        children: []
+      - id: BC-1010.20.30
+        name: Production Execution Coordination
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Real-time coordination of execution across work centres.
+        children: []
+      - id: BC-1010.20.40
+        name: Production Tracking and Genealogy
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Lot, batch, and serial genealogy and as-built records.
+        children: []
   - id: BC-1010.30
     name: Machine Operations Management
     level: 2
     industry: "Manufacturing & Industrial"
     description: |
       Machine setup, run, changeover, monitoring.
-    children: []
+    children:
+      - id: BC-1010.30.10
+        name: Machine Setup and Changeover
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Machine setup, SMED-based changeover, and qualification.
+        children: []
+      - id: BC-1010.30.20
+        name: Machine Run Operations
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Machine running, parameter control, and process supervision.
+        children: []
+      - id: BC-1010.30.30
+        name: Machine Monitoring
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Real-time machine monitoring and condition tracking.
+        children: []
   - id: BC-1010.40
     name: Operator Guidance Management
     level: 2
     industry: "Manufacturing & Industrial"
     description: |
       Work instructions, digital andon, operator support.
-    children: []
+    children:
+      - id: BC-1010.40.10
+        name: Digital Work Instruction Delivery
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Delivery of digital work instructions at the workstation.
+        children: []
+      - id: BC-1010.40.20
+        name: Andon and Escalation Management
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Andon signals, escalation, and operator support.
+        children: []
+      - id: BC-1010.40.30
+        name: Operator Skill and Authorisation
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Operator certification and authorisation for tasks.
+        children: []
   - id: BC-1010.50
     name: Material Handling Operations Management
     level: 2
     industry: "Manufacturing & Industrial"
     description: |
       Internal material movement, kitting, line feeding.
-    children: []
+    children:
+      - id: BC-1010.50.10
+        name: Line-Side Replenishment
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Just-in-time line-side replenishment and milk runs.
+        children: []
+      - id: BC-1010.50.20
+        name: Material Kitting
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Kitting and pre-assembly of components for production lines.
+        children: []
+      - id: BC-1010.50.30
+        name: Internal Material Movement
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Internal logistics and conveyance between operations.
+        children: []
   - id: BC-1010.60
     name: Manufacturing Data Acquisition Management
     level: 2
     industry: "Manufacturing & Industrial"
     description: |
       Sensor data, machine data, OT-IT integration.
-    children: []
+    children:
+      - id: BC-1010.60.10
+        name: Machine Data Collection
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Collection of machine signals and process data.
+        children: []
+      - id: BC-1010.60.20
+        name: Sensor and IoT Integration
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Integration of sensors and IIoT devices on the shop floor.
+        children: []
+      - id: BC-1010.60.30
+        name: OT-IT Data Integration
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Integration of OT data with IT systems aligned with ISA-95.
+        children: []
+      - id: BC-1010.60.40
+        name: Manufacturing Data Historian Operations
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Historian-based time-series data capture and access.
+        children: []
   - id: BC-1010.70
     name: Manufacturing Performance Management
     level: 2
     industry: "Manufacturing & Industrial"
     description: |
       Real-time performance, downtime, micro-stoppage analysis.
-    children: []
+    children:
+      - id: BC-1010.70.10
+        name: Real-Time Performance Monitoring
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Real-time monitoring of OEE and shop floor KPIs.
+        children: []
+      - id: BC-1010.70.20
+        name: Micro-Stoppage Analysis
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Analysis of micro-stoppages and recurring losses.
+        children: []
+      - id: BC-1010.70.30
+        name: Shift Handover Reporting
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Structured shift handover reports and digital boards.
+        children: []
+      - id: BC-1010.70.40
+        name: Production Anomaly Detection
+        level: 3
+        industry: "Manufacturing & Industrial"
+        description: |
+          Anomaly detection and alerting on production data.
+        children: []

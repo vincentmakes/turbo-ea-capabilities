@@ -12,32 +12,137 @@ children:
     industry: Air Traffic Control
     description: |
       Charging zone definitions, billing rules, unit rate setting.
-    children: []
+    children:
+      - id: BC-1270.10.10
+        name: Charging Zone Definition
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Definition of en-route and terminal charging zones.
+        children: []
+      - id: BC-1270.10.20
+        name: Unit Rate Calculation
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Calculation and approval of unit rates per charging zone.
+        children: []
+      - id: BC-1270.10.30
+        name: Charging Rule Management
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Maintenance of charging formula and exemption rules.
+        children: []
   - id: BC-1270.20
     name: Route Charge Calculation Management
     level: 2
     industry: Air Traffic Control
     description: |
       Flight-based route charge calculation.
-    children: []
+    children:
+      - id: BC-1270.20.10
+        name: Flight Data Capture for Charging
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Capture of flight data inputs to the charging engine.
+        children: []
+      - id: BC-1270.20.20
+        name: Distance and Weight Computation
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Computation of chargeable distance and weight factors.
+        children: []
+      - id: BC-1270.20.30
+        name: Charge Computation
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Application of unit rate to derive route charges per flight.
+        children: []
   - id: BC-1270.30
     name: Charges Collection Management
     level: 2
     industry: Air Traffic Control
     description: |
       Invoicing, collection, payment processing, dunning.
-    children: []
+    children:
+      - id: BC-1270.30.10
+        name: Charges Invoicing
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Generation of monthly route charges invoices.
+        children: []
+      - id: BC-1270.30.20
+        name: Payment Processing
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Receipt and processing of airspace user payments.
+        children: []
+      - id: BC-1270.30.30
+        name: Dunning and Collections
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Dunning, collections, and enforcement on overdue charges.
+        children: []
   - id: BC-1270.40
     name: Airline Account Management
     level: 2
     industry: Air Traffic Control
     description: |
       Airspace user accounts, statements, dispute handling.
-    children: []
+    children:
+      - id: BC-1270.40.10
+        name: Airspace User Account Maintenance
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Maintenance of airspace user account master data.
+        children: []
+      - id: BC-1270.40.20
+        name: Statement and Reporting Provision
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Provision of statements and account reports to users.
+        children: []
+      - id: BC-1270.40.30
+        name: Charge Dispute Handling
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Handling of disputes and adjustment claims.
+        children: []
   - id: BC-1270.50
     name: "Charges Reporting & Reconciliation Management"
     level: 2
     industry: Air Traffic Control
     description: |
       Reporting to regulators, Eurocontrol-style reconciliations.
-    children: []
+    children:
+      - id: BC-1270.50.10
+        name: Regulator and Network Manager Reporting
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Reporting to regulators and Eurocontrol-equivalent network managers.
+        children: []
+      - id: BC-1270.50.20
+        name: Charges Reconciliation
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Reconciliation between flight data and charge calculations.
+        children: []
+      - id: BC-1270.50.30
+        name: Cost Recovery Monitoring
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Monitoring of cost recovery against approved cost base.
+        children: []

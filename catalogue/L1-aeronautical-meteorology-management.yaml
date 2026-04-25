@@ -12,25 +12,109 @@ children:
     industry: Air Traffic Control
     description: |
       METAR, automated observations, sensor networks, surface observations.
-    children: []
+    children:
+      - id: BC-1250.10.10
+        name: Surface Weather Observation
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Manual and automated surface weather observation at aerodromes.
+        children: []
+      - id: BC-1250.10.20
+        name: METAR and SPECI Production
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Production and dissemination of METAR and SPECI reports.
+        children: []
+      - id: BC-1250.10.30
+        name: MET Sensor Network Management
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Operation of automated weather observing systems and sensors.
+        children: []
   - id: BC-1250.20
     name: MET Forecasting Management
     level: 2
     industry: Air Traffic Control
     description: |
       TAFs, area forecasts, SIGMET, AIRMET, GAMET.
-    children: []
+    children:
+      - id: BC-1250.20.10
+        name: Aerodrome Forecast Production
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Production of TAFs and trend forecasts for aerodromes.
+        children: []
+      - id: BC-1250.20.20
+        name: Area Forecast Production
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Production of area, GAMET, and significant weather forecasts.
+        children: []
+      - id: BC-1250.20.30
+        name: SIGMET and AIRMET Issuance
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Issuance of SIGMET and AIRMET advisories.
+        children: []
   - id: BC-1250.30
     name: "MET Briefing & Advisory Management"
     level: 2
     industry: Air Traffic Control
     description: |
       Pre-flight briefings, advisory services to ATS units, in-flight advisories.
-    children: []
+    children:
+      - id: BC-1250.30.10
+        name: Pre-Flight Briefing Service
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Provision of self-briefing and assisted briefing services.
+        children: []
+      - id: BC-1250.30.20
+        name: ATS Unit MET Advisory
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Provision of MET advisories to ATS units and supervisors.
+        children: []
+      - id: BC-1250.30.30
+        name: In-Flight MET Advisory
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          In-flight MET advisory services to airspace users.
+        children: []
   - id: BC-1250.40
     name: Hazardous Weather Management
     level: 2
     industry: Air Traffic Control
     description: |
       Volcanic ash advisories, severe weather, space weather.
-    children: []
+    children:
+      - id: BC-1250.40.10
+        name: Volcanic Ash Advisory Service
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Coordination with VAACs and dissemination of volcanic ash advisories.
+        children: []
+      - id: BC-1250.40.20
+        name: Severe Weather Warning Service
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Issuance of severe weather warnings (CB, turbulence, icing).
+        children: []
+      - id: BC-1250.40.30
+        name: Space Weather Advisory Service
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Space weather advisories aligned with ICAO requirements.
+        children: []

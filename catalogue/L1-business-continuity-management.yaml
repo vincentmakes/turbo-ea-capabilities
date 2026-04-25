@@ -12,25 +12,137 @@ children:
     industry: Cross-Industry
     description: |
       BIA, plan development, continuity strategies.
-    children: []
+    children:
+      - id: BC-160.10.10
+        name: Business Impact Analysis
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Identification of critical processes, RTO, RPO, and dependencies.
+        children: []
+      - id: BC-160.10.20
+        name: Continuity Strategy Definition
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Selection of continuity strategies and recovery options.
+        children: []
+      - id: BC-160.10.30
+        name: Continuity Plan Development
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Documentation of business continuity plans aligned with ISO 22301.
+        children: []
+      - id: BC-160.10.40
+        name: Plan Maintenance and Currency
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Periodic review and update of continuity plans.
+        children: []
   - id: BC-160.20
     name: Disaster Recovery Management
     level: 2
     industry: Cross-Industry
     description: |
       IT and operational disaster recovery.
-    children: []
+    children:
+      - id: BC-160.20.10
+        name: IT Service Recovery Planning
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Recovery plans for critical IT services and infrastructure.
+        children: []
+      - id: BC-160.20.20
+        name: Backup and Restore Management
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Backup strategies, immutability, and restore validation.
+        children: []
+      - id: BC-160.20.30
+        name: Failover and Site Recovery Operations
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Failover, alternate site activation, and operational recovery.
+        children: []
+      - id: BC-160.20.40
+        name: Operational Recovery Coordination
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Coordination of business operations during recovery activation.
+        children: []
   - id: BC-160.30
     name: Crisis Management
     level: 2
     industry: Cross-Industry
     description: |
       Crisis response, command structure, escalation.
-    children: []
+    children:
+      - id: BC-160.30.10
+        name: Crisis Command Structure
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Crisis management team, roles, and command-and-control structure.
+        children: []
+      - id: BC-160.30.20
+        name: Crisis Communications
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Internal and external crisis communications and stakeholder management.
+        children: []
+      - id: BC-160.30.30
+        name: Incident Escalation and Activation
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Severity classification, escalation paths, and plan activation.
+        children: []
+      - id: BC-160.30.40
+        name: Post-Crisis Review
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Lessons learned and improvement actions following crises.
+        children: []
   - id: BC-160.40
     name: "Resilience Testing & Exercises"
     level: 2
     industry: Cross-Industry
     description: |
       Exercises, drills, plan validation.
-    children: []
+    children:
+      - id: BC-160.40.10
+        name: Tabletop and Simulation Exercises
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Tabletop, walkthrough, and simulation-based exercises.
+        children: []
+      - id: BC-160.40.20
+        name: Live Failover Testing
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Live failover and recovery tests against RTO and RPO targets.
+        children: []
+      - id: BC-160.40.30
+        name: Exercise Programme Management
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Annual exercise calendar, scope, and stakeholder coverage.
+        children: []
+      - id: BC-160.40.40
+        name: Test Results and Improvement Tracking
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Capture of exercise results and tracking of improvement actions.
+        children: []

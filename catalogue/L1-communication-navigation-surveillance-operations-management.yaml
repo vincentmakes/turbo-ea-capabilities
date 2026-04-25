@@ -12,39 +12,193 @@ children:
     industry: Air Traffic Control
     description: |
       Air-ground voice, controller-pilot voice systems, ground-ground voice.
-    children: []
+    children:
+      - id: BC-1240.10.10
+        name: Air-Ground Voice Operations
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Operation of air-ground voice radio communications.
+        children: []
+      - id: BC-1240.10.20
+        name: Ground-Ground Voice Operations
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Operation of inter-centre and inter-sector voice circuits.
+        children: []
+      - id: BC-1240.10.30
+        name: Voice Recording and Playback
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Recording and playback of operational voice for safety and audit.
+        children: []
   - id: BC-1240.20
     name: Data Link Communication Management
     level: 2
     industry: Air Traffic Control
     description: |
       CPDLC, ADS-C, FANS, ATN data links.
-    children: []
+    children:
+      - id: BC-1240.20.10
+        name: CPDLC Operations
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Operation of Controller-Pilot Data Link Communications.
+        children: []
+      - id: BC-1240.20.20
+        name: ADS-C Operations
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Operation of Automatic Dependent Surveillance Contract.
+        children: []
+      - id: BC-1240.20.30
+        name: ATN and FANS Network Operations
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          ATN and FANS data link network operations.
+        children: []
   - id: BC-1240.30
     name: Navigation Aids Management
     level: 2
     industry: Air Traffic Control
     description: |
       VOR, DME, ILS, GNSS-based navigation services.
-    children: []
+    children:
+      - id: BC-1240.30.10
+        name: VOR and DME Operations
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Operation and maintenance of VOR and DME beacons.
+        children: []
+      - id: BC-1240.30.20
+        name: ILS Operations
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Operation and maintenance of ILS approach systems.
+        children: []
+      - id: BC-1240.30.30
+        name: GNSS-Based Navigation Service
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          GNSS, SBAS, and GBAS navigation service provision.
+        children: []
+      - id: BC-1240.30.40
+        name: Flight Inspection
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Periodic flight inspection of navigation aids.
+        children: []
   - id: BC-1240.40
     name: Surveillance Systems Management
     level: 2
     industry: Air Traffic Control
     description: |
       Primary radar, secondary radar, ADS-B, multilateration.
-    children: []
+    children:
+      - id: BC-1240.40.10
+        name: Primary Surveillance Radar Operations
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Operation of primary surveillance radar systems.
+        children: []
+      - id: BC-1240.40.20
+        name: Secondary Surveillance Radar Operations
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Operation of SSR Mode S and conventional Mode A/C systems.
+        children: []
+      - id: BC-1240.40.30
+        name: ADS-B Surveillance Operations
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Operation of ADS-B ground stations and processing.
+        children: []
+      - id: BC-1240.40.40
+        name: Multilateration Operations
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Operation of WAM/MLAT surveillance.
+        children: []
+      - id: BC-1240.40.50
+        name: Surveillance Data Fusion
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Fusion of surveillance sources for ATC display.
+        children: []
   - id: BC-1240.50
     name: CNS Infrastructure Maintenance Management
     level: 2
     industry: Air Traffic Control
     description: |
       Field maintenance of CNS equipment, calibration, flight inspection.
-    children: []
+    children:
+      - id: BC-1240.50.10
+        name: CNS Preventive Maintenance
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Scheduled preventive maintenance of CNS equipment.
+        children: []
+      - id: BC-1240.50.20
+        name: CNS Corrective Maintenance
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Corrective maintenance and fault response for CNS equipment.
+        children: []
+      - id: BC-1240.50.30
+        name: CNS Equipment Calibration
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Calibration and alignment of CNS equipment.
+        children: []
+      - id: BC-1240.50.40
+        name: CNS Spare Parts Management
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Stock and supply of CNS spare parts and consumables.
+        children: []
   - id: BC-1240.60
     name: "Spectrum & Frequency Management"
     level: 2
     industry: Air Traffic Control
     description: |
       Aeronautical frequency allocation, coordination, interference management.
-    children: []
+    children:
+      - id: BC-1240.60.10
+        name: Frequency Allocation
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Allocation of aeronautical frequencies to services.
+        children: []
+      - id: BC-1240.60.20
+        name: Frequency Coordination
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Cross-border and inter-service frequency coordination.
+        children: []
+      - id: BC-1240.60.30
+        name: Interference Detection and Resolution
+        level: 3
+        industry: Air Traffic Control
+        description: |
+          Detection and resolution of frequency interference incidents.
+        children: []

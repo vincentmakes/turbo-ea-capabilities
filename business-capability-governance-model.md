@@ -298,15 +298,97 @@ The capability model is versioned using semantic versioning: `MAJOR.MINOR.PATCH`
 
 ### 9.5 Reference frameworks
 
-Where an industry reference framework exists, anchor the upper levels (L1 / L2) to it, and diverge below that — where the enterprise's differentiation lives. Recommended anchors include:
+Where an industry reference framework exists, anchor the upper levels (L1 / L2) to it, and diverge below that — where the enterprise's differentiation lives. The catalogue in this repository was built using the references below.
 
-- **APQC Process Classification Framework** (cross-industry).
-- **BIAN** (banking).
-- **eTOM** (telecommunications).
-- **ACORD** (insurance).
-- **ISA-95** (manufacturing operations).
+**Cross-industry — process and management**
 
-These references describe *what* organisations in a given industry typically do — useful as a starting point, but they must still be adapted to the enterprise's own context and re-expressed in conformant noun-phrase form where necessary.
+- **APQC Process Classification Framework** — cross-industry process taxonomy.
+- **TOGAF** — enterprise architecture method and content metamodel.
+- **DAMA-DMBOK** — data management body of knowledge.
+- **ITIL** — IT service management.
+- **TBM** — Technology Business Management for IT financial transparency.
+- **PRINCE2 / PMI PMBOK** — project and programme management.
+- **ADKAR / Prosci** — organisational change management.
+- **Three Horizons / stage-gate** — innovation portfolio governance.
+- **TRL (Technology Readiness Levels)** — R&D maturation.
+
+**Cross-industry — risk, security, quality, sustainability**
+
+- **NIST Cybersecurity Framework, ISO 27001** — cybersecurity management.
+- **ISO 9001** — quality management.
+- **ISO 14001 / ISO 45001** — environmental and occupational H&S management.
+- **ISO 22301** — business continuity.
+- **ISO 55000** — asset management.
+- **GHG Protocol, TCFD, ESRS / CSRD, IFRS S1-S2, GRI** — sustainability and climate disclosure.
+- **OECD Transfer Pricing Guidelines, BEPS** — tax.
+- **IFRS 16 / ASC 842** — lease accounting.
+- **FCPA, UK Bribery Act** — anti-bribery and corruption.
+- **GDPR** and equivalents — privacy and data protection.
+
+**Manufacturing & engineering services**
+
+- **ISA-95** — manufacturing operations and OT/IT integration.
+- **RCM, FMEA, FTA** — reliability and maintenance engineering.
+- **Lean / Six Sigma / Kaizen** — continuous improvement.
+- **AACE International cost estimation classes** — engineering cost estimation.
+- **ISO 19650** — BIM information management.
+- **IEC 61511** — safety instrumented systems.
+- **HAZOP / HAZID** — process hazard reviews.
+
+**Air Traffic Control**
+
+- **ICAO Annexes 3, 10, 11, 12, 13, 15, 19** — meteorology, aeronautical telecoms, ATS, SAR, accident investigation, AIM, safety management.
+- **EUROCONTROL ATFCM, AIRAC, SES/PRB performance scheme** — flow management, AIM cycle, performance.
+- **PBN (RNAV/RNP), SWIM, AIXM** — performance-based navigation, system-wide information management, AIM data.
+- **COSPAS-SARSAT** — emergency beacon coordination.
+
+**Banking & capital markets**
+
+- **BIAN service domains** — banking capability anchor.
+- **Basel III** — capital, LCR, NSFR, IRRBB, FRTB.
+- **IFRS 9** — expected credit loss.
+- **SR 11-7 / TRIM** — model risk management.
+- **ISO 20022, SWIFT GPI** — payment messaging.
+- **UCP 600, ISP98, URC 522** — trade finance rules.
+- **MiFID II / MiFIR, EMIR, CSDR, SFTR** — market structure, derivatives, settlement, securities financing.
+- **FATF recommendations** — AML/CFT.
+
+**Pharmaceuticals & life sciences**
+
+- **ICH guidelines** — E2 (PV), E6 (GCP), E8/E9 (clinical), Q1-Q12 (CMC and quality).
+- **ICH eCTD** — regulatory submissions.
+- **EU GVP modules, FDA REMS** — pharmacovigilance and risk management.
+- **GLP, GCP, GMP, GDP** — non-clinical, clinical, manufacturing, distribution practice.
+- **EU GMP Annex 1 (sterile), Annex 16 (QP release)** — sterile manufacturing and batch release.
+- **GAMP 5, 21 CFR Part 11** — computerised system validation and electronic records.
+- **CDISC SDTM / ADaM** — clinical data standards.
+- **DSCSA, EU FMD** — pharmaceutical serialisation and verification.
+- **Sunshine Act, EFPIA Disclosure Code** — HCP transparency.
+- **GPP3, ICMJE** — publication practice.
+- **HTA bodies (NICE, IQWiG, HAS, CADTH)** — health technology assessment.
+
+**Defense & aerospace**
+
+- **DoD 5000 series** — defense acquisition lifecycle.
+- **EIA-748** — earned value management systems.
+- **FAR / DFARS / CAS** — federal acquisition, defense supplement, cost accounting standards.
+- **DoDAF / MoDAF / NAF** — defense architecture frameworks.
+- **MIL-HDBK-61** — configuration management.
+- **MIL-HDBK-502** — logistic support analysis.
+- **S1000D** — technical publication standard.
+- **DMSMS** — diminishing manufacturing sources management.
+- **ITAR (22 CFR 120-130), EAR (15 CFR 730-774)** — export control of defense and dual-use items.
+- **NISPOM (32 CFR 117), CMMC** — industrial security and supply-chain cybersecurity.
+- **EKMS / KMI** — cryptographic key management.
+- **E.O. 13587, ICD 203** — insider threat and analytic tradecraft standards.
+- **Shipley capture management** — bid/proposal practice.
+
+**Other industry anchors not yet exercised in the catalogue but recommended for adoption**
+
+- **eTOM** — telecommunications.
+- **ACORD** — insurance.
+
+These references describe *what* organisations in a given industry typically do — useful as a starting point, but they must still be adapted to the enterprise's own context and re-expressed in conformant noun-phrase form where necessary. Citing a framework does not exempt a node from §5 (naming) or §4 (decomposition) — frameworks inform the *shape* of the model, not the *form* of its names.
 
 ---
 

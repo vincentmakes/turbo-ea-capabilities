@@ -12,32 +12,144 @@ children:
     industry: Cross-Industry
     description: |
       Target stock levels, safety stock, reorder points.
-    children: []
+    children:
+      - id: BC-530.10.10
+        name: Target Stock and Safety Stock Setting
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Setting of target stock levels and safety stock by SKU and location.
+        children: []
+      - id: BC-530.10.20
+        name: Reorder Point and Min/Max Management
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Reorder points, minimum, and maximum stock policies.
+        children: []
+      - id: BC-530.10.30
+        name: Service Level Optimisation
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Trade-off optimisation between service level and inventory cost.
+        children: []
+      - id: BC-530.10.40
+        name: Inventory Segmentation and ABC Analysis
+        level: 3
+        industry: Cross-Industry
+        description: |
+          ABC/XYZ segmentation to differentiate inventory policy.
+        children: []
   - id: BC-530.20
     name: Replenishment Management
     level: 2
     industry: Cross-Industry
     description: |
       Replenishment policies, automated replenishment.
-    children: []
+    children:
+      - id: BC-530.20.10
+        name: Replenishment Policy Definition
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Definition of replenishment policies (push, pull, kanban).
+        children: []
+      - id: BC-530.20.20
+        name: Automated Replenishment Execution
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Execution of automated replenishment orders to supply nodes.
+        children: []
+      - id: BC-530.20.30
+        name: Vendor-Managed Inventory Operations
+        level: 3
+        industry: Cross-Industry
+        description: |
+          VMI and consignment stock arrangements with suppliers.
+        children: []
   - id: BC-530.30
     name: Inventory Allocation Management
     level: 2
     industry: Cross-Industry
     description: |
       Allocation across the network, reservations.
-    children: []
+    children:
+      - id: BC-530.30.10
+        name: Cross-Network Allocation
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Allocation of available inventory across DCs, stores, and channels.
+        children: []
+      - id: BC-530.30.20
+        name: Customer and Order Reservations
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Reservation of inventory against customer orders or accounts.
+        children: []
+      - id: BC-530.30.30
+        name: Inventory Rebalancing
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Rebalancing of stock between locations to match demand.
+        children: []
   - id: BC-530.40
     name: Inventory Accuracy Management
     level: 2
     industry: Cross-Industry
     description: |
       Cycle counts, physical inventory, discrepancy resolution.
-    children: []
+    children:
+      - id: BC-530.40.10
+        name: Cycle Counting
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Cycle counting programmes by frequency and ABC classification.
+        children: []
+      - id: BC-530.40.20
+        name: Physical Inventory Counting
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Annual or periodic full physical inventory count programmes.
+        children: []
+      - id: BC-530.40.30
+        name: Discrepancy Investigation and Adjustment
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Investigation, root cause, and adjustment of inventory discrepancies.
+        children: []
   - id: BC-530.50
     name: "Slow-Moving & Obsolete Stock Management"
     level: 2
     industry: Cross-Industry
     description: |
       SLOB identification, write-off, disposition.
-    children: []
+    children:
+      - id: BC-530.50.10
+        name: Slow-Moving Stock Identification
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Identification and ageing of slow-moving and obsolete stock.
+        children: []
+      - id: BC-530.50.20
+        name: Stock Provisioning and Write-Off
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Provisioning, impairment, and write-off of obsolete stock.
+        children: []
+      - id: BC-530.50.30
+        name: Inventory Disposition
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Disposition of obsolete stock through liquidation or scrap.
+        children: []
