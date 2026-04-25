@@ -1,0 +1,184 @@
+---
+interface Props {
+  badge?: string;
+  title: string;
+  tagline?: string;
+  description?: string;
+}
+const { badge, title, tagline, description } = Astro.props;
+---
+
+<section class="hero" id="hero">
+  <div class="hero-tessellation" id="hero-tessellation"></div>
+  <div class="hero-inner">
+    {badge && (
+      <div class="hero-badge"><span>{badge}</span></div>
+    )}
+    <h1>{title}</h1>
+    {tagline && <p class="hero-tagline">{tagline}</p>}
+    {description && <p class="hero-description">{description}</p>}
+  </div>
+</section>
+
+<script is:inline>
+  (function () {
+    const COLS = 24;
+    const ROWS = 10;
+    const JITTER = 0.6;
+    const SEED = 77;
+    const MAX_HIGHLIGHT_DIST = 80;
+
+    function seededRandom(seed) {
+      let s = seed;
+      return function () {
+        s = (s * 9301 + 49297) % 233280;
+        return s / 233280;
+      };
+    }
+
+    function generateTriangles(width, height) {
+      const random = seededRandom(SEED);
+      const triangles = [];
+      const points = [];
+      const cellWidth = width / COLS;
+      const cellHeight = height / ROWS;
+
+      for (let row = 0; row <= ROWS; row++) {
+        points[row] = [];
+        for (let col = 0; col <= COLS; col++) {
+          let x = col * cellWidth;
+          let y = row * cellHeight;
+          if (row > 0 && row < ROWS && col > 0 && col < COLS) {
+            x += (random() - 0.5) * cellWidth * JITTER;
+            y += (random() - 0.5) * cellHeight * JITTER;
+          }
+          points[row][col] = { x: x, y: y };
+        }
+      }
+
+      let id = 0;
+      for (let row = 0; row < ROWS; row++) {
+        for (let col = 0; col < COLS; col++) {
+          const tl = points[row][col];
+          const tr = points[row][col + 1];
+          const bl = points[row + 1][col];
+          const br = points[row + 1][col + 1];
+          if (random() > 0.5) {
+            triangles.push({
+              id: id++,
+              points: tl.x + "," + tl.y + " " + tr.x + "," + tr.y + " " + br.x + "," + br.y,
+              cx: (tl.x + tr.x + br.x) / 3,
+              cy: (tl.y + tr.y + br.y) / 3,
+            });
+            triangles.push({
+              id: id++,
+              points: tl.x + "," + tl.y + " " + br.x + "," + br.y + " " + bl.x + "," + bl.y,
+              cx: (tl.x + br.x + bl.x) / 3,
+              cy: (tl.y + br.y + bl.y) / 3,
+            });
+          } else {
+            triangles.push({
+              id: id++,
+              points: tl.x + "," + tl.y + " " + tr.x + "," + tr.y + " " + bl.x + "," + bl.y,
+              cx: (tl.x + tr.x + bl.x) / 3,
+              cy: (tl.y + tr.y + bl.y) / 3,
+            });
+            triangles.push({
+              id: id++,
+              points: tr.x + "," + tr.y + " " + br.x + "," + br.y + " " + bl.x + "," + bl.y,
+              cx: (tr.x + br.x + bl.x) / 3,
+              cy: (tr.y + br.y + bl.y) / 3,
+            });
+          }
+        }
+      }
+      return triangles;
+    }
+
+    function getDistance(x1, y1, x2, y2) {
+      return Math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2);
+    }
+
+    function initTessellation() {
+      const container = document.getElementById("hero-tessellation");
+      const hero = document.getElementById("hero");
+      if (!container || !hero) return;
+
+      const width = 800;
+      const height = 300;
+      const triangles = generateTriangles(width, height);
+
+      const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      svg.setAttribute("viewBox", "0 0 " + width + " " + height);
+      svg.setAttribute("preserveAspectRatio", "xMidYMid slice");
+      svg.style.width = "100%";
+      svg.style.height = "100%";
+
+      const polygons = {};
+      triangles.forEach(function (tri) {
+        const polygon = document.createElementNS("http://www.w3.org/2000/svg", "polygon");
+        polygon.setAttribute("points", tri.points);
+        polygon.setAttribute("fill", "rgba(255,255,255,0.015)");
+        polygon.setAttribute("stroke", "rgba(255,255,255,0.05)");
+        polygon.setAttribute("stroke-width", "0.5");
+        polygon.style.transition = "fill 0.1s ease";
+        polygon.style.cursor = "pointer";
+        polygon.dataset.id = tri.id;
+        polygon.dataset.cx = tri.cx;
+        polygon.dataset.cy = tri.cy;
+        polygons[tri.id] = polygon;
+        svg.appendChild(polygon);
+      });
+
+      container.appendChild(svg);
+
+      let hoveredId = null;
+      function updateHighlights() {
+        triangles.forEach(function (tri) {
+          const polygon = polygons[tri.id];
+          if (hoveredId === null) {
+            polygon.setAttribute("fill", "rgba(255,255,255,0.015)");
+            return;
+          }
+          if (tri.id === hoveredId) {
+            polygon.setAttribute("fill", "rgba(214,51,132,0.6)");
+            return;
+          }
+          const hoveredTri = triangles.find(function (t) {
+            return t.id === hoveredId;
+          });
+          if (!hoveredTri) {
+            polygon.setAttribute("fill", "rgba(255,255,255,0.015)");
+            return;
+          }
+          const dist = getDistance(tri.cx, tri.cy, hoveredTri.cx, hoveredTri.cy);
+          if (dist < MAX_HIGHLIGHT_DIST) {
+            const intensity = 1 - dist / MAX_HIGHLIGHT_DIST;
+            polygon.setAttribute("fill", "rgba(214,51,132," + intensity * 0.45 + ")");
+          } else {
+            polygon.setAttribute("fill", "rgba(255,255,255,0.015)");
+          }
+        });
+      }
+
+      svg.addEventListener("mouseover", function (e) {
+        if (e.target.tagName === "polygon") {
+          hoveredId = parseInt(e.target.dataset.id);
+          updateHighlights();
+        }
+      });
+      svg.addEventListener("mouseout", function (e) {
+        if (e.target.tagName === "polygon") {
+          hoveredId = null;
+          updateHighlights();
+        }
+      });
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initTessellation);
+    } else {
+      initTessellation();
+    }
+  })();
+</script>

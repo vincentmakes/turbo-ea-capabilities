@@ -1,0 +1,378 @@
+/* Catalogue-specific UI built on top of global.css (turbo-ea.org tokens). */
+
+.catalogue-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .catalogue-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.filter-panel {
+  position: sticky;
+  top: 88px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-md);
+}
+
+.filter-panel h3 {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: var(--space-xs);
+}
+
+.filter-panel + .filter-panel,
+.filter-group + .filter-group {
+  margin-top: var(--space-md);
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filter-group label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: 14px;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.filter-group input[type="checkbox"] {
+  accent-color: var(--color-accent);
+  width: 14px;
+  height: 14px;
+}
+
+.filter-actions {
+  margin-top: var(--space-md);
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 8px 14px;
+  font-family: var(--font-primary);
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+  color: var(--color-text);
+  transition: all 0.15s ease;
+  text-decoration: none;
+}
+
+.btn:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.btn-primary {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background: var(--color-secondary);
+  border-color: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.btn-magenta {
+  background: var(--color-magenta);
+  border-color: var(--color-magenta);
+  color: var(--color-white);
+}
+
+.btn-magenta:hover {
+  filter: brightness(1.05);
+  color: var(--color-white);
+}
+
+/* View toggle (Tree / Table) */
+.view-toggle {
+  display: inline-flex;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-white);
+  overflow: hidden;
+}
+
+.view-toggle button {
+  border: none;
+  background: transparent;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-muted);
+  cursor: pointer;
+}
+
+.view-toggle button.active {
+  background: var(--color-accent);
+  color: var(--color-white);
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-md);
+}
+
+.toolbar-actions {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+/* Tree view */
+.cap-tree {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-sm) var(--space-md);
+}
+
+.cap-tree ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.cap-tree li.cap-node {
+  position: relative;
+  padding: 4px 0 4px 0;
+}
+
+.cap-tree li.cap-node ul {
+  margin-left: 22px;
+  border-left: 1px dashed var(--color-border);
+  padding-left: 12px;
+}
+
+.cap-tree summary {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  cursor: pointer;
+  list-style: none;
+  padding: 4px 0;
+  border-radius: 4px;
+}
+
+.cap-tree summary::-webkit-details-marker {
+  display: none;
+}
+
+.cap-tree summary::before {
+  content: "▸";
+  display: inline-block;
+  width: 14px;
+  font-size: 11px;
+  color: var(--color-muted);
+  transition: transform 0.15s ease;
+}
+
+.cap-tree details[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.cap-tree summary:hover {
+  background: var(--color-pale-blue);
+}
+
+.cap-tree .cap-leaf {
+  padding-left: 18px;
+}
+
+.cap-id {
+  display: inline-block;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 12px;
+  color: var(--color-muted);
+  background: var(--color-pale-blue);
+  border: 1px solid var(--color-light-blue);
+  padding: 1px 6px;
+  border-radius: 4px;
+  margin-right: var(--space-xs);
+}
+
+.cap-name {
+  color: var(--color-text);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.cap-name:hover {
+  color: var(--color-accent);
+}
+
+.cap-level {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-secondary);
+  background: var(--color-light-blue);
+  padding: 1px 6px;
+  border-radius: 3px;
+  margin-left: var(--space-xs);
+}
+
+.cap-deprecated-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: var(--color-warning);
+  color: var(--color-white);
+  padding: 1px 8px;
+  border-radius: 3px;
+  margin-left: var(--space-xs);
+}
+
+/* Table view */
+.cap-table {
+  width: 100%;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border-collapse: collapse;
+}
+
+.cap-table th,
+.cap-table td {
+  padding: 10px 14px;
+  text-align: left;
+  font-size: 14px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.cap-table thead {
+  background: var(--color-pale-blue);
+}
+
+.cap-table th {
+  color: var(--color-secondary);
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.cap-table tbody tr:hover {
+  background: var(--color-pale-blue);
+}
+
+.cap-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Detail page */
+.detail-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--color-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.detail-breadcrumb a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.detail-breadcrumb a:hover {
+  color: var(--color-magenta);
+}
+
+.detail-breadcrumb .sep {
+  color: var(--color-border);
+}
+
+.detail-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+.detail-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.detail-meta-grid .meta-key {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-bottom: 4px;
+}
+
+.detail-meta-grid .meta-val {
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag-pill {
+  font-size: 12px;
+  background: var(--color-pale-blue);
+  color: var(--color-secondary);
+  padding: 2px 8px;
+  border-radius: 3px;
+  border: 1px solid var(--color-light-blue);
+}
+
+.deprecation-banner {
+  background: #fdf2f8;
+  border: 1px solid #fbcfe8;
+  border-left: 4px solid var(--color-warning);
+  padding: var(--space-md);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-md);
+}
+
+.deprecation-banner strong {
+  color: var(--color-warning);
+}
+
+.permalink-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-top: var(--space-md);
+}

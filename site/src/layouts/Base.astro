@@ -1,0 +1,106 @@
+---
+import "../styles/global.css";
+import "../styles/catalogue.css";
+import { version } from "../data/load.ts";
+
+interface Props {
+  title: string;
+  description?: string;
+  navTransparent?: boolean;
+}
+
+const { title, description, navTransparent = false } = Astro.props;
+const pageTitle = `${title} · Business Capability Catalogue`;
+const pageDescription =
+  description ??
+  "Reference Business Capability catalogue for Turbo EA. Browse, search, and export the canonical capability hierarchy.";
+const navClass = navTransparent ? "nav nav-transparent" : "nav";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={pageDescription} />
+    <title>{pageTitle}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <nav class={navClass}>
+      <div class="nav-inner">
+        <a href="/" class="nav-brand">
+          <span class="nav-brand-text">turbo-ea</span>
+          <span class="nav-brand-sep">/</span>
+          <span class="nav-brand-text" style="color:#f0f0f5">capabilities</span>
+        </a>
+        <div class="nav-links">
+          <a href="/">Browse</a>
+          <a href="/search">Search</a>
+          <a href="/api/capabilities.json">API</a>
+          <a href="/about">About</a>
+          <a
+            href="https://github.com/vincentmakes/turbo-ea-capabilities"
+            target="_blank"
+            rel="noopener">GitHub</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <slot />
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-brand-text">turbo-ea</span>
+          <span class="footer-brand-sep">/</span>
+          <span class="footer-brand-sub">capabilities</span>
+        </div>
+        <div class="footer-links">
+          <a href="/api/capabilities.json">JSON API</a>
+          <a href="/about">About</a>
+          <a
+            href="https://github.com/vincentmakes/turbo-ea-capabilities"
+            target="_blank"
+            rel="noopener">GitHub</a
+          >
+          <a
+            href="https://pypi.org/project/turbo-ea-capabilities/"
+            target="_blank"
+            rel="noopener">PyPI</a
+          >
+        </div>
+        <div class="footer-copy">
+          Catalogue {version.catalogue_version} · schema v{version.schema_version} ·
+          {version.node_count} capabilities · generated {version.generated_at}
+        </div>
+      </div>
+    </footer>
+
+    {navTransparent && (
+      <script is:inline>
+        // Add `.scrolled` to a transparent nav once the user scrolls past the hero.
+        (function () {
+          const nav = document.querySelector(".nav.nav-transparent");
+          if (!nav) return;
+          const onScroll = () => {
+            if (window.scrollY > 80) nav.classList.add("scrolled");
+            else nav.classList.remove("scrolled");
+          };
+          onScroll();
+          window.addEventListener("scroll", onScroll, { passive: true });
+        })();
+      </script>
+    )}
+  </body>
+</html>

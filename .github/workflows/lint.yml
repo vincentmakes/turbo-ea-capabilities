@@ -1,0 +1,44 @@
+name: lint
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0           # build_api.ts uses git describe for the version
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Lint catalogue
+        run: npm run lint
+
+      - name: Build JSON API artefacts
+        run: npm run build:api
+
+      - name: Populate Python package data
+        run: npm run build:pkg
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Test Python package
+        working-directory: packages/py
+        run: |
+          pip install -e ".[dev]"
+          pytest -q
+
+      - name: Build Astro site
+        run: npm run build:site

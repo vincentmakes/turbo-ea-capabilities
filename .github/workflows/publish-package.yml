@@ -1,0 +1,45 @@
+name: publish-package
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write       # for PyPI Trusted Publisher
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Lint + build JSON artefacts
+        run: |
+          npm run lint
+          npm run build:api
+          npm run build:pkg
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Build wheel + sdist
+        working-directory: packages/py
+        run: |
+          python -m pip install --upgrade build
+          python -m build --wheel --sdist
+
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          packages-dir: packages/py/dist

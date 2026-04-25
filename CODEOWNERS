@@ -1,0 +1,18 @@
+# Per-file ownership for catalogue PR reviews. Replace placeholder team handles
+# (e.g. @vincentmakes/...) with real GitHub teams once the repo is set up.
+
+# Schema and lint rules - guarded by EA leads
+schema/                                  @vincentmakes/ea-leads
+scripts/                                 @vincentmakes/ea-leads
+governance.md                            @vincentmakes/ea-leads
+business-capability-governance-model.md  @vincentmakes/ea-leads
+
+# Catalogue files - one owning team per L1
+catalogue/_index.yaml                    @vincentmakes/ea-leads
+catalogue/L1-customer-management.yaml    @vincentmakes/customer-architects
+catalogue/L1-production-management.yaml  @vincentmakes/operations-architects
+
+# CI and packaging
+.github/                                 @vincentmakes/ea-leads
+packages/py/                             @vincentmakes/ea-leads
+site/                                    @vincentmakes/ea-leads

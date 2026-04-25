@@ -1,0 +1,47 @@
+---
+import Base from "../../layouts/Base.astro";
+import CatalogueBrowser from "../../components/CatalogueBrowser.tsx";
+import { l1List, flat } from "../../data/load.ts";
+import type { FlatCapability } from "../../../../scripts/lib/load.ts";
+
+export function getStaticPaths() {
+  return l1List().map(({ slug, root }) => ({
+    params: { slug },
+    props: { rootId: root.id, rootName: root.name },
+  }));
+}
+
+interface Props {
+  rootId: string;
+  rootName: string;
+}
+const { rootId, rootName } = Astro.props as Props;
+
+// Restrict the dataset to the root and its descendants.
+function descendants(id: string): FlatCapability[] {
+  const out: FlatCapability[] = [];
+  const stack = [id];
+  while (stack.length > 0) {
+    const cur = stack.pop()!;
+    const node = flat.find((c) => c.id === cur);
+    if (node) {
+      out.push(node);
+      stack.push(...(node.children ?? []));
+    }
+  }
+  return out;
+}
+const subset = descendants(rootId);
+---
+
+<Base title={rootName}>
+  <main class="main">
+    <div class="section-header">
+      <h2>{rootName}</h2>
+    </div>
+    <p class="search-results-info" style="margin-bottom: 24px;">
+      Subtree of <span class="cap-id">{rootId}</span> · {subset.length} capabilities
+    </p>
+    <CatalogueBrowser data={subset} client:load />
+  </main>
+</Base>

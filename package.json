@@ -1,0 +1,35 @@
+{
+  "name": "turbo-ea-capabilities",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Reference Business Capability catalogue for Turbo EA - YAML source of truth, JSON build artifacts, Astro site, and Python package.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "workspaces": [
+    "site"
+  ],
+  "scripts": {
+    "lint": "tsx scripts/lint.ts",
+    "build:api": "tsx scripts/build_api.ts",
+    "build:pkg": "tsx scripts/build_pkg.ts",
+    "build:site": "npm --workspace site run build",
+    "build": "npm run lint && npm run build:api && npm run build:pkg && npm run build:site",
+    "preview": "npm --workspace site run preview",
+    "dev": "npm --workspace site run dev",
+    "cap:add": "tsx scripts/cli/add.ts",
+    "cap:mv": "tsx scripts/cli/mv.ts",
+    "cap:deprecate": "tsx scripts/cli/deprecate.ts",
+    "test": "tsx scripts/test_lint.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.0",
+    "yaml": "^2.6.1"
+  }
+}
