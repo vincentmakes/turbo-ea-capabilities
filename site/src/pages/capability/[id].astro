@@ -1,0 +1,142 @@
+---
+import Base from "../../layouts/Base.astro";
+import { flat, getById, getAncestors } from "../../data/load.ts";
+
+export function getStaticPaths() {
+  return flat.map((c) => ({
+    params: { id: c.id },
+    props: { id: c.id },
+  }));
+}
+
+interface Props {
+  id: string;
+}
+const { id } = Astro.props as Props;
+const node = getById(id);
+if (!node) {
+  throw new Error(`Capability ${id} not found at build time`);
+}
+const ancestors = getAncestors(id);
+const directChildren = flat.filter((c) => c.parent_id === id);
+const successor = node.successor_id ? getById(node.successor_id) : null;
+const githubUrl = `https://github.com/vincentmakes/turbo-ea-capabilities/tree/main/catalogue`;
+---
+
+<Base
+  title={`${node.id} · ${node.name}`}
+  description={node.description ?? `Business Capability ${node.id} - ${node.name}.`}
+>
+  <main class="main">
+    <nav class="detail-breadcrumb">
+      <a href="/">Catalogue</a>
+      {ancestors.map((a) => (
+        <>
+          <span class="sep">/</span>
+          <a href={`/capability/${a.id}`}>{a.name}</a>
+        </>
+      ))}
+      <span class="sep">/</span>
+      <span>{node.name}</span>
+    </nav>
+
+    <article class="detail-card">
+      <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+        <span class="cap-id" style="font-size: 14px; padding: 4px 10px;">{node.id}</span>
+        <span class="cap-level">L{node.level}</span>
+        {node.deprecated && <span class="cap-deprecated-badge">Deprecated</span>}
+      </div>
+      <h1 style="font-size: 32px; margin-top: 8px;">{node.name}</h1>
+
+      {node.deprecated && (
+        <div class="deprecation-banner">
+          <strong>Deprecated.</strong> {node.deprecation_reason}
+          {successor && (
+            <>
+              {" "}Successor: <a href={`/capability/${successor.id}`}>{successor.id} {successor.name}</a>.
+            </>
+          )}
+        </div>
+      )}
+
+      {node.description && (
+        <p style="margin-top: 16px; font-size: 16px; line-height: 1.7;">{node.description}</p>
+      )}
+
+      <div class="detail-meta-grid">
+        {node.owner && (
+          <div>
+            <div class="meta-key">Owner</div>
+            <div class="meta-val">{node.owner}</div>
+          </div>
+        )}
+        {node.industry && (
+          <div>
+            <div class="meta-key">Industry</div>
+            <div class="meta-val">{node.industry}</div>
+          </div>
+        )}
+        {node.aliases && node.aliases.length > 0 && (
+          <div>
+            <div class="meta-key">Aliases</div>
+            <div class="meta-val">{node.aliases.join(", ")}</div>
+          </div>
+        )}
+        {node.tags && node.tags.length > 0 && (
+          <div>
+            <div class="meta-key">Tags</div>
+            <div class="meta-val">
+              <div class="tag-list">
+                {node.tags.map((t) => <span class="tag-pill">{t}</span>)}
+              </div>
+            </div>
+          </div>
+        )}
+        {node.references && node.references.length > 0 && (
+          <div>
+            <div class="meta-key">References</div>
+            <div class="meta-val">
+              {node.references.map((r) => (
+                <div><a href={r} target="_blank" rel="noopener">{r}</a></div>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+
+      <div class="permalink-row">
+        <a class="btn" href={`/api/capability/${node.id}.json`}>Raw JSON</a>
+        <a class="btn" href={githubUrl} target="_blank" rel="noopener">View on GitHub</a>
+        <button
+          class="btn btn-magenta"
+          type="button"
+          onclick={`navigator.clipboard.writeText('${node.id}')`}
+        >
+          Copy ID
+        </button>
+      </div>
+    </article>
+
+    {directChildren.length > 0 && (
+      <section>
+        <div class="section-header">
+          <h2>Children ({directChildren.length})</h2>
+        </div>
+        <div class="cap-tree">
+          <ul>
+            {directChildren.map((c) => (
+              <li class="cap-node">
+                <div class="cap-leaf">
+                  <span class="cap-id">{c.id}</span>
+                  <a class="cap-name" href={`/capability/${c.id}`}>{c.name}</a>
+                  <span class="cap-level">L{c.level}</span>
+                  {c.deprecated && <span class="cap-deprecated-badge">Deprecated</span>}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    )}
+  </main>
+</Base>

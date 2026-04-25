@@ -1,0 +1,98 @@
+# Production Management
+# Reference example from the governance model. Use as a template for new L1 files.
+id: BC-2
+name: Production Management
+level: 1
+owner: chief-operating-officer
+industry: Manufacturing & Industrial
+description: |
+  Ability to plan, execute, and assure the manufacture of goods, from
+  production planning through shop-floor execution and quality assurance.
+tags: [public, core]
+references:
+  - https://www.isa.org/standards-and-publications/isa-standards/isa-standards-committees/isa95
+children:
+  - id: BC-2.1
+    name: Production Planning
+    level: 2
+    description: |
+      Ability to determine what, when, and how much to produce in order to
+      meet demand within capacity and material constraints.
+    children:
+      - id: BC-2.1.1
+        name: Demand-Driven Planning
+        level: 3
+        description: |
+          Ability to derive a production plan from forecast and actual demand
+          signals.
+        children: []
+      - id: BC-2.1.2
+        name: Capacity Planning
+        level: 3
+        description: |
+          Ability to assess and balance production capacity against the
+          production plan over time.
+        children: []
+      - id: BC-2.1.3
+        name: Material Requirements Planning
+        level: 3
+        description: |
+          Ability to translate the production plan into time-phased material
+          and component requirements.
+        children: []
+  - id: BC-2.2
+    name: Shop Floor Operations
+    level: 2
+    description: |
+      Ability to execute the production plan on the manufacturing floor and
+      collect operational data from machines and operators.
+    children:
+      - id: BC-2.2.1
+        name: Work Order Management
+        level: 3
+        description: |
+          Ability to release, track, and close work orders that direct
+          production execution.
+        children: []
+      - id: BC-2.2.2
+        name: Machine Data Acquisition
+        level: 3
+        description: |
+          Ability to collect runtime, status, and event data from production
+          equipment.
+        children: []
+      - id: BC-2.2.3
+        name: Operator Guidance
+        level: 3
+        description: |
+          Ability to deliver work instructions, drawings, and procedures to
+          shop-floor operators.
+        children: []
+  - id: BC-2.3
+    name: Quality Management
+    level: 2
+    description: |
+      Ability to assure that produced goods meet specification at every
+      stage of the production lifecycle.
+    children:
+      - id: BC-2.3.1
+        name: Incoming Inspection
+        level: 3
+        description: |
+          Ability to verify that purchased materials conform to specification
+          before consumption.
+        children: []
+      - id: BC-2.3.2
+        name: In-Process Quality Control
+        level: 3
+        description: |
+          Ability to monitor product conformance during production and react
+          to deviations.
+        children: []
+      - id: BC-2.3.3
+        name: Non-Conformance Management
+        level: 3
+        description: |
+          Ability to record, disposition, and resolve non-conforming material
+          and product.
+        children: []

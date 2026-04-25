@@ -1,0 +1,82 @@
+---
+import Base from "../layouts/Base.astro";
+import { version, l1List } from "../data/load.ts";
+---
+
+<Base title="About">
+  <main class="main">
+    <div class="section-header">
+      <h2>About this catalogue</h2>
+    </div>
+
+    <div class="detail-card">
+      <p>
+        This is the reference Business Capability catalogue for
+        <a href="https://turbo-ea.org" target="_blank" rel="noopener">Turbo EA</a>.
+        The naming convention, decomposition rules, and identifier scheme
+        come from the <a
+          href="https://github.com/vincentmakes/turbo-ea-capabilities/blob/main/business-capability-governance-model.md"
+          target="_blank"
+          rel="noopener">Business Capability Governance Model</a>.
+      </p>
+
+      <div class="detail-meta-grid">
+        <div>
+          <div class="meta-key">Catalogue version</div>
+          <div class="meta-val">{version.catalogue_version}</div>
+        </div>
+        <div>
+          <div class="meta-key">Schema version</div>
+          <div class="meta-val">v{version.schema_version}</div>
+        </div>
+        <div>
+          <div class="meta-key">Generated</div>
+          <div class="meta-val">{version.generated_at}</div>
+        </div>
+        <div>
+          <div class="meta-key">Node count</div>
+          <div class="meta-val">{version.node_count}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="detail-card">
+      <h3 style="margin-top:0;">L1 capabilities</h3>
+      <div class="cap-tree" style="border:none; padding:0;">
+        <ul>
+          {l1List().map(({ slug, root }) => (
+            <li class="cap-node">
+              <div class="cap-leaf">
+                <span class="cap-id">{root.id}</span>
+                <a class="cap-name" href={`/l1/${slug}`}>{root.name}</a>
+                <span class="cap-level">L1</span>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+
+    <div class="detail-card">
+      <h3 style="margin-top:0;">JSON API</h3>
+      <p>All endpoints are static, immutable per build, and edge-cached:</p>
+      <ul style="margin-left: 24px; margin-top: 12px;">
+        <li><a href="/api/version.json"><code>/api/version.json</code></a> — catalogue + schema version</li>
+        <li><a href="/api/capabilities.json"><code>/api/capabilities.json</code></a> — flat array</li>
+        <li><a href="/api/tree.json"><code>/api/tree.json</code></a> — nested tree</li>
+        <li><code>/api/by-l1/&lt;slug&gt;.json</code> — single L1 subtree</li>
+        <li><code>/api/capability/&lt;id&gt;.json</code> — single node + direct children</li>
+      </ul>
+    </div>
+
+    <div class="detail-card">
+      <h3 style="margin-top:0;">Native consumption</h3>
+      <p>For offline / airgapped Turbo EA deployments:</p>
+      <pre style="background: var(--color-pale-blue); padding: 16px; border-radius: 8px; margin-top: 12px;">pip install turbo-ea-capabilities</pre>
+      <p style="margin-top: 12px;">
+        See the package on
+        <a href="https://pypi.org/project/turbo-ea-capabilities/" target="_blank" rel="noopener">PyPI</a>.
+      </p>
+    </div>
+  </main>
+</Base>

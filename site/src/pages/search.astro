@@ -1,0 +1,17 @@
+---
+import Base from "../layouts/Base.astro";
+import CatalogueBrowser from "../components/CatalogueBrowser.tsx";
+import { flat } from "../data/load.ts";
+---
+
+<Base title="Search">
+  <main class="main">
+    <div class="section-header">
+      <h2>Search</h2>
+    </div>
+    <p class="search-results-info" style="margin-bottom: 24px;">
+      Full catalogue full-text search across id, name, description, aliases, and tags.
+    </p>
+    <CatalogueBrowser data={flat} client:load />
+  </main>
+</Base>

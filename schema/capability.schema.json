@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://business-capabilities.turbo-ea.org/schema/capability.schema.json",
+  "title": "BusinessCapability",
+  "description": "Reference schema for a Business Capability node. Source files are YAML; this schema validates the parsed structure for a single L1 file (a tree rooted at one L1 capability).",
+  "type": "object",
+  "required": ["id", "name", "level", "children"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable identifier. BC-<L1>[.<L2>[.<L3>[.<L4>]]] per governance.",
+      "pattern": "^BC-\\d+(\\.\\d+){0,3}$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Display name. Noun phrase, Title Case, no verbs."
+    },
+    "level": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 4,
+      "description": "Decomposition depth. Must equal depth in the tree (root=1)."
+    },
+    "description": {
+      "type": "string",
+      "description": "Outcome-oriented definition (1-3 sentences)."
+    },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "owner": {
+      "type": "string",
+      "description": "Capability owner role. Inherited from L1 if absent."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "industry": {
+      "type": "string",
+      "description": "Industry classification. 'Cross-Industry', a single industry, or semicolon-separated list."
+    },
+    "references": {
+      "type": "array",
+      "items": { "type": "string", "format": "uri" },
+      "uniqueItems": true
+    },
+    "in_scope": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Concrete in-scope outcomes."
+    },
+    "out_of_scope": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Concrete out-of-scope outcomes (clarifies MECE)."
+    },
+    "deprecated": { "type": "boolean", "default": false },
+    "deprecation_reason": { "type": "string" },
+    "successor_id": {
+      "type": "string",
+      "pattern": "^BC-\\d+(\\.\\d+){0,3}$"
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Escape hatch for governance fields not yet promoted to first-class.",
+      "additionalProperties": true
+    },
+    "children": {
+      "type": "array",
+      "items": { "$ref": "#" }
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "deprecated": { "const": true } }, "required": ["deprecated"] },
+      "then": { "required": ["deprecation_reason"] }
+    }
+  ]
+}
