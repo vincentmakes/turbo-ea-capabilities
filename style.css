@@ -1,0 +1,2092 @@
+/* ============================================
+   Architecting Tomorrow - Unified Stylesheet
+   https://www.turbo-ea.org/blog
+   ============================================ */
+
+/* ============================================
+   1. CSS VARIABLES
+   ============================================ */
+:root {
+  /* Deep blue palette */
+  --color-primary: #0a1628;
+  --color-secondary: #1e3a8a;
+  --color-accent: #1d4ed8;
+  --color-highlight: #3b82f6;
+  --color-sky: #0284c7;
+  --color-cyan: #0891b2;
+  --color-light-blue: #dbeafe;
+  --color-pale-blue: #eff6ff;
+  
+  /* Magenta accent (for featured badges and hero elements) */
+  --color-magenta: #D63384;
+  --color-magenta-light: #f472b6;
+  
+  /* Neutrals */
+  --color-white: #FFFFFF;
+  --color-light: #f8fafc;
+  --color-border: #e2e8f0;
+  --color-muted: #64748b;
+  --color-text: #334155;
+  --color-dark: #0f172a;
+  
+  /* Extended palette (shared with marketing site) */
+  --color-purple: #8b5cf6;
+  --color-teal: #06b6a4;
+
+  /* Status */
+  --color-success: #10b981;
+  --color-warning: #D63384;
+
+  /* Gradients (shared with marketing site) */
+  --gradient-primary: linear-gradient(135deg, #0d93d9, #8b5cf6);
+  --gradient-hero: linear-gradient(135deg, #0d93d9 0%, #8b5cf6 50%, #e04e8a 100%);
+
+  /* Typography */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Spacing (8px grid) */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-2xl: 64px;
+
+  /* Border radius (aligned with marketing site) */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+
+  /* Transitions (shared with marketing site) */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.3s ease;
+}
+
+/* ============================================
+   2. RESET & BASE STYLES
+   ============================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--color-text);
+  background: var(--color-light);
+  min-height: 100vh;
+}
+
+/* ============================================
+   3. LANDING PAGE NAVIGATION (.nav)
+   ============================================ */
+.nav {
+  background: #0a0a0f;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Landing page: frosted nav floating over hero */
+.nav.nav-transparent {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: rgba(10, 10, 15, 0.2);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-bottom-color: rgba(255, 255, 255, 0.04);
+  transition: background 0.8s ease, border-bottom-color 0.8s ease;
+}
+
+.nav.nav-transparent.scrolled {
+  background: #0a0a0f;
+  border-bottom-color: rgba(255, 255, 255, 0.06);
+}
+
+.nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--space-sm) var(--space-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-brand:hover .nav-brand-text {
+  color: #f0f0f5;
+}
+
+.nav-brand-logo {
+  height: 32px;
+  width: auto;
+}
+
+.nav-brand-sep {
+  color: rgba(255, 255, 255, 0.2);
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.nav-brand-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: #9a9ab0;
+  transition: color 0.15s ease;
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+}
+
+.nav-links a {
+  color: #9a9ab0;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.15s ease;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(135deg, #0d93d9, #8b5cf6);
+  border-radius: 1px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f0f0f5;
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
+}
+
+
+/* ============================================
+   4. ARTICLE NAVIGATION (.site-nav)
+   ============================================ */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #0a0a0f;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.site-nav-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-sm) var(--space-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #9a9ab0;
+  transition: color 0.15s ease;
+}
+
+.site-nav-brand:hover {
+  color: #f0f0f5;
+}
+
+.site-nav-logo {
+  height: 26px;
+  width: auto;
+}
+
+.site-nav-sep {
+  color: rgba(255, 255, 255, 0.2);
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.site-nav-links {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.site-nav-links a {
+  color: #9a9ab0;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  transition: color 0.15s ease;
+  position: relative;
+}
+
+.site-nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(135deg, #0d93d9, #8b5cf6);
+  border-radius: 1px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.site-nav-links a:hover {
+  color: #f0f0f5;
+}
+
+.site-nav-links a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Hamburger toggle — hidden on desktop */
+.site-nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  z-index: 101;
+}
+
+.site-nav-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #9a9ab0;
+  border-radius: 1px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.site-nav-toggle:hover span {
+  background: #f0f0f5;
+}
+
+.site-nav-toggle.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.site-nav-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.site-nav-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ============================================
+   5. LANDING PAGE HERO WITH TESSELLATION
+   ============================================ */
+.hero {
+  background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+  color: var(--color-white);
+  padding: 120px var(--space-md) var(--space-2xl);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-tessellation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.hero-tessellation svg {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-tessellation polygon {
+  transition: fill 0.15s ease;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  pointer-events: none;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+  line-height: 1.1;
+}
+
+.hero-tagline {
+  font-size: 20px;
+  opacity: 0.9;
+  margin-bottom: var(--space-md);
+  font-weight: 400;
+}
+
+.hero-description {
+  font-size: 16px;
+  opacity: 0.8;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Hero badge - uses magenta */
+.hero-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  background: rgba(214, 51, 132, 0.15);
+  border: 1px solid rgba(214, 51, 132, 0.3);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-md);
+  pointer-events: auto;
+}
+
+.hero-badge span {
+  color: var(--color-magenta-light);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* ============================================
+   6. MAIN CONTENT AREA
+   ============================================ */
+.main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-md);
+}
+
+/* ============================================
+   7. SECTION HEADERS
+   ============================================ */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.section-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+.section-header::before {
+  content: "";
+  width: 4px;
+  height: 28px;
+  background: var(--color-accent);
+  border-radius: 2px;
+}
+
+/* ============================================
+   8. ARTICLE CARDS (Landing Page)
+   ============================================ */
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: var(--space-md);
+}
+
+.article-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+  display: flex;
+  flex-direction: column;
+}
+
+.article-card:hover {
+  box-shadow: 0 8px 30px rgba(13, 147, 217, 0.15), 0 4px 12px rgba(15, 23, 42, 0.08);
+  transform: translateY(-2px);
+}
+
+.article-card-header {
+  background: var(--color-secondary);
+  padding: var(--space-md);
+  color: var(--color-white);
+}
+
+.article-card-tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 10px;
+  border-radius: 2px;
+}
+
+.article-card-header h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.article-card-header h3 a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.article-card-header h3 a:hover {
+  text-decoration: underline;
+}
+
+.article-card-body {
+  padding: var(--space-md);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-card-excerpt {
+  font-size: 14px;
+  color: var(--color-text);
+  line-height: 1.6;
+  flex: 1;
+  margin-bottom: var(--space-sm);
+}
+
+.article-card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--color-border);
+  font-size: 12px;
+  color: var(--color-muted);
+}
+
+.article-card-date {
+  font-weight: 500;
+}
+
+.article-card-reading {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-accent);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: var(--space-sm);
+  transition: color 0.2s;
+}
+
+.read-more:hover {
+  color: var(--color-magenta);
+  text-decoration: none;
+}
+
+.read-more svg,
+.read-more .material-symbols-outlined {
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  transition: transform 0.2s;
+}
+
+.read-more:hover svg,
+.read-more:hover .material-symbols-outlined {
+  transform: translateX(3px);
+}
+
+/* ============================================
+   9. ABOUT SECTION (Landing Page)
+   ============================================ */
+.about-section {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+.about-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  border: 3px solid var(--color-light-blue);
+}
+
+.about-text p {
+  margin-bottom: var(--space-sm);
+  font-size: 15px;
+}
+
+.about-focus {
+  background: var(--color-pale-blue);
+  padding: var(--space-md);
+  border-radius: var(--radius-sm);
+}
+
+.about-focus h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-secondary);
+  margin-bottom: var(--space-sm);
+}
+
+.focus-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.focus-tag {
+  background: var(--color-white);
+  border: 1px solid var(--color-light-blue);
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-secondary);
+  border-radius: 2px;
+}
+
+.connect-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-top: var(--space-md);
+  padding: 10px 20px;
+  background: var(--color-accent);
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  transition: background 0.2s;
+}
+
+.connect-link:hover {
+  background: var(--color-secondary);
+}
+
+.connect-link svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* ============================================
+   10. LANDING PAGE FOOTER (.footer)
+   ============================================ */
+.footer {
+  background: #0f0f18;
+  color: var(--color-white);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 40px var(--space-md);
+  margin-top: var(--space-2xl);
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-brand-text {
+  font-weight: 800;
+  font-size: 1.3rem;
+  background: var(--gradient-hero);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.footer-brand-sep {
+  color: rgba(255, 255, 255, 0.2);
+  font-weight: 300;
+}
+
+.footer-brand-sub {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+}
+
+.footer-links {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+  color: var(--color-white);
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.35);
+  margin-top: var(--space-md);
+  text-align: center;
+  width: 100%;
+}
+
+/* ============================================
+   11. ARTICLE DOCUMENT CONTAINER
+   ============================================ */
+.document {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media screen {
+  .document {
+    background: var(--color-white);
+    box-shadow: 0 4px 40px rgba(15, 23, 42, 0.08);
+    margin: var(--space-lg) auto;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+  }
+}
+
+/* ============================================
+   12. ARTICLE HEADER (.doc-header)
+   ============================================ */
+.doc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-sm) var(--space-lg);
+  background: var(--color-white);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.doc-info {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-accent);
+}
+
+.doc-meta {
+  text-align: right;
+  font-size: 12px;
+  color: var(--color-muted);
+}
+
+.doc-meta strong {
+  color: var(--color-text);
+}
+
+/* ============================================
+   13. ARTICLE TITLE SECTION
+   ============================================ */
+.title-section {
+  text-align: center;
+  padding: var(--space-2xl) var(--space-lg);
+  background: var(--color-secondary);
+  color: var(--color-white);
+  position: relative;
+}
+
+.title-section h1 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+  line-height: 1.2;
+}
+
+.title-section .subtitle {
+  font-size: 19px;
+  font-weight: 400;
+  opacity: 0.95;
+}
+
+.reading-time {
+  display: inline-block;
+  margin-top: var(--space-md);
+  padding: 8px 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* ============================================
+   14. ARTICLE SECTIONS
+   ============================================ */
+.document article {
+  padding: var(--space-xl) var(--space-lg);
+}
+
+.section {
+  margin-bottom: var(--space-xl);
+}
+
+.section h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 2px solid var(--color-light-blue);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.section h2::before {
+  content: "";
+  width: 4px;
+  height: 28px;
+  background: var(--color-accent);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.section h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--color-secondary);
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-sm);
+}
+
+.section p {
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+/* ============================================
+   15. KEY TAKEAWAY
+   ============================================ */
+.key-takeaway {
+  background: var(--color-pale-blue);
+  border: 1px solid var(--color-light-blue);
+  border-radius: var(--radius-sm);
+  padding: var(--space-md);
+  margin: var(--space-md) 0;
+}
+
+.key-takeaway-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-secondary);
+  margin-bottom: var(--space-xs);
+}
+
+.key-takeaway p {
+  margin: 0;
+  font-size: 15px;
+  color: var(--color-dark);
+  font-weight: 500;
+}
+
+/* ============================================
+   16. INTRO BOX
+   ============================================ */
+.intro-box {
+  background: var(--color-pale-blue);
+  border-left: 4px solid var(--color-accent);
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+  border-radius: 0 4px 4px 0;
+}
+
+.intro-box p {
+  margin: 0;
+  font-size: 16px;
+  color: var(--color-secondary);
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+/* ============================================
+   17. QUOTE BLOCK
+   ============================================ */
+.quote-block {
+  border-left: 4px solid var(--color-accent);
+  padding: var(--space-md);
+  margin: var(--space-md) 0;
+  background: var(--color-pale-blue);
+  font-style: italic;
+  font-size: 17px;
+  color: var(--color-secondary);
+}
+
+.quote-block cite {
+  display: block;
+  font-style: normal;
+  font-size: 13px;
+  color: var(--color-muted);
+  margin-top: var(--space-xs);
+}
+
+/* ============================================
+   18. HIGHLIGHT BOX
+   ============================================ */
+.highlight-box {
+  background: var(--color-pale-blue);
+  border: 1px solid var(--color-light-blue);
+  border-radius: var(--radius-sm);
+  padding: var(--space-md);
+  margin: var(--space-sm) 0;
+}
+
+.highlight-box.warning {
+  background: #fdf2f8;
+  border-color: #fbcfe8;
+  border-left: 4px solid var(--color-warning);
+}
+
+.highlight-box.success {
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+  border-left: 4px solid var(--color-success);
+}
+
+.highlight-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-muted);
+  margin-bottom: var(--space-xs);
+}
+
+.highlight-box p {
+  margin: 0;
+}
+
+/* ============================================
+   19. LEVEL CARDS
+   ============================================ */
+.level-cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.level-card {
+  display: flex;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.level-badge {
+  width: 54px;
+  height: 54px;
+  min-width: 54px;
+  background: var(--color-accent);
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 22px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.level-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.level-name {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--color-dark);
+  margin-bottom: 4px;
+}
+
+.level-desc {
+  font-size: 14px;
+  color: var(--color-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ============================================
+   20. BENEFIT BLOCKS
+   ============================================ */
+.benefit-block {
+  background: var(--color-light);
+  border-radius: var(--radius-sm);
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+  border: 1px solid var(--color-border);
+}
+
+.benefit-block h3 {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: 0;
+  margin-bottom: var(--space-sm);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.benefit-block h3 .level-badge-small {
+  width: 38px;
+  height: 38px;
+  background: var(--color-accent);
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-sm);
+}
+
+.benefit-item {
+  padding: var(--space-sm);
+  background: var(--color-white);
+  border-radius: 2px;
+  border-left: 3px solid var(--color-accent);
+}
+
+.benefit-item.tradeoffs {
+  border-left-color: var(--color-warning);
+}
+
+.benefit-item.suitable {
+  border-left-color: var(--color-success);
+}
+
+.benefit-item-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-accent);
+  margin-bottom: 4px;
+}
+
+.benefit-item.tradeoffs .benefit-item-label {
+  color: var(--color-warning);
+}
+
+.benefit-item.suitable .benefit-item-label {
+  color: var(--color-success);
+}
+
+.benefit-item p {
+  font-size: 13px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ============================================
+   21. IMPACT CARDS
+   ============================================ */
+.impact-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.impact-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-md);
+  text-align: center;
+  overflow: hidden;
+}
+
+.impact-card-header {
+  background: var(--color-accent);
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  display: inline-block;
+  margin-bottom: var(--space-sm);
+}
+
+.impact-card-content {
+  padding: var(--space-sm);
+}
+
+.impact-card h4 {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+  margin-top: var(--space-sm);
+}
+
+.impact-card p {
+  font-size: 13px;
+  margin: 0;
+  color: var(--color-text);
+}
+
+/* ============================================
+   22. FACTORS GRID
+   ============================================ */
+.factors-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.factor-item {
+  padding: var(--space-md);
+  background: var(--color-pale-blue);
+  border-radius: var(--radius-sm);
+}
+
+.factor-item h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-secondary);
+  margin-bottom: var(--space-xs);
+}
+
+.factor-item p {
+  font-size: 13px;
+  margin: 0;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+/* ============================================
+   23. NUMBERED LIST
+   ============================================ */
+.numbered-list {
+  list-style: none;
+  counter-reset: item;
+  margin: var(--space-sm) 0;
+}
+
+.numbered-list li {
+  position: relative;
+  padding-left: 48px;
+  margin-bottom: var(--space-sm);
+  font-size: 14px;
+}
+
+.numbered-list li::before {
+  counter-increment: item;
+  content: counter(item);
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 30px;
+  height: 30px;
+  background: var(--color-accent);
+  color: var(--color-white);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.numbered-list li strong {
+  color: var(--color-dark);
+}
+
+/* ============================================
+   24. TIMELINE BADGE
+   ============================================ */
+.timeline-badge {
+  display: inline-block;
+  background: var(--color-accent);
+  color: var(--color-white);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: var(--radius-sm);
+  margin-left: var(--space-xs);
+  vertical-align: middle;
+}
+
+/* ============================================
+   25. TARGET BOX
+   ============================================ */
+.target-box {
+  padding: var(--space-md);
+  background: var(--color-secondary);
+  color: var(--color-white);
+  margin-top: var(--space-lg);
+  border-radius: var(--radius-sm);
+}
+
+.target-box h3 {
+  color: var(--color-white);
+  margin: 0 0 var(--space-xs);
+  font-size: 17px;
+}
+
+.target-box p {
+  color: rgba(255, 255, 255, 0.92);
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ============================================
+   26. SECTION DIVIDER
+   ============================================ */
+.section-divider {
+  height: 1px;
+  background: var(--color-border);
+  margin: var(--space-xl) 0;
+}
+
+/* ============================================
+   27. ARTICLE FOOTER (.doc-footer)
+   ============================================ */
+.doc-footer {
+  text-align: center;
+  padding: var(--space-lg);
+  background: var(--color-light);
+  color: var(--color-muted);
+  font-size: 13px;
+}
+
+.doc-footer a {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.doc-footer a:hover {
+  color: var(--color-magenta);
+}
+
+/* ============================================
+   28. COMMENTS SECTION
+   ============================================ */
+.comments-section {
+  padding: var(--space-xl) var(--space-lg);
+  border-top: 1px solid var(--color-border);
+}
+
+.comments-section h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-bottom: var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.comments-section h2::before {
+  content: "";
+  width: 4px;
+  height: 24px;
+  background: var(--color-accent);
+  border-radius: 2px;
+}
+
+.giscus {
+  margin-top: var(--space-md);
+}
+
+/* ============================================
+   29. RESPONSIVE STYLES
+   ============================================ */
+@media (max-width: 768px) {
+  /* Hide tessellation on mobile */
+  .hero-tessellation {
+    display: none;
+  }
+
+  /* Compact nav brand on mobile */
+  .nav-brand-sep,
+  .nav-brand-text {
+    display: none;
+  }
+
+  .site-nav-sep {
+    display: none;
+  }
+
+  /* Landing page responsive */
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero-tagline {
+    font-size: 17px;
+  }
+
+  .articles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .about-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-focus {
+    width: 100%;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: var(--space-md);
+    text-align: center;
+  }
+
+  .nav-inner {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  /* Article responsive */
+  .document {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .title-section h1 {
+    font-size: 28px;
+  }
+
+  .impact-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .factors-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .doc-header {
+    flex-direction: column;
+    gap: var(--space-xs);
+    text-align: center;
+  }
+
+  .doc-meta {
+    text-align: center;
+  }
+}
+
+/* Article nav hamburger on phones */
+@media (max-width: 480px) {
+  .site-nav-toggle {
+    display: flex;
+  }
+
+  .site-nav-links {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0a0a0f;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    z-index: 100;
+  }
+
+  .site-nav-links.open {
+    display: flex;
+  }
+
+  .site-nav-links a {
+    font-size: 1.2rem;
+  }
+
+  .site-nav-toggle {
+    z-index: 101;
+  }
+}
+
+/* ============================================
+   30. PRINT STYLES
+   ============================================ */
+@media print {
+  /* Hide navigation, footer, comments, and tessellation */
+  .nav,
+  .footer,
+  .site-nav,
+  .comments-section,
+  .hero-tessellation,
+  .hero-badge {
+    display: none !important;
+  }
+
+  /* Page setup with 80% scaling */
+  @page {
+    size: A4;
+    margin: 9mm 5mm;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  html {
+    font-size: 80%;
+  }
+
+  body {
+    background: white !important;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #334155;
+  }
+
+  /* Landing page print */
+  .hero {
+    background: var(--color-secondary) !important;
+    padding: var(--space-lg);
+  }
+
+  .article-card {
+    page-break-inside: avoid;
+  }
+
+  /* Article print */
+  .document {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: none !important;
+    border-radius: 0;
+    overflow: visible;
+  }
+
+  .doc-header {
+    padding: 8px 16px;
+    border-bottom: 1px solid #e2e8f0;
+    background: white !important;
+  }
+
+  .title-section {
+    padding: 32px 24px;
+    background: #1e3a8a !important;
+    color: white !important;
+    border-radius: 0;
+  }
+
+  .title-section h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  .title-section .subtitle {
+    font-size: 16px;
+  }
+
+  .reading-time {
+    padding: 6px 14px;
+    font-size: 11px;
+    background: rgba(255, 255, 255, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .document article {
+    padding: 24px 20px;
+  }
+
+  .section {
+    margin-bottom: 24px;
+    page-break-inside: avoid;
+  }
+
+  .section h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    page-break-after: avoid;
+  }
+
+  .section h2::before {
+    width: 3px;
+    height: 22px;
+    background: #1d4ed8 !important;
+  }
+
+  .section h3 {
+    font-size: 14px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    page-break-after: avoid;
+  }
+
+  .section p {
+    font-size: 12px;
+    margin-bottom: 8px;
+    orphans: 3;
+    widows: 3;
+  }
+
+  .key-takeaway {
+    padding: 12px;
+    margin: 12px 0;
+    background: #eff6ff !important;
+    border: 1px solid #dbeafe;
+    page-break-inside: avoid;
+  }
+
+  .key-takeaway p {
+    font-size: 12px;
+  }
+
+  .intro-box {
+    padding: 12px;
+    margin-bottom: 12px;
+    background: #eff6ff !important;
+    border-left: 3px solid #1d4ed8;
+    page-break-inside: avoid;
+  }
+
+  .intro-box p {
+    font-size: 13px;
+  }
+
+  .level-cards {
+    gap: 8px;
+  }
+
+  .level-card {
+    padding: 10px;
+    gap: 12px;
+    page-break-inside: avoid;
+    border: 1px solid #e2e8f0;
+  }
+
+  .level-badge {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    background: #1d4ed8 !important;
+    color: white !important;
+  }
+
+  .level-name {
+    font-size: 14px;
+  }
+
+  .level-desc {
+    font-size: 11px;
+  }
+
+  .benefit-block {
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #f8fafc !important;
+    border: 1px solid #e2e8f0;
+    page-break-inside: avoid;
+  }
+
+  .benefit-block h3 {
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+  }
+
+  .benefit-block h3 .level-badge-small {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+    background: #1d4ed8 !important;
+    color: white !important;
+  }
+
+  .benefit-grid {
+    gap: 8px;
+  }
+
+  .benefit-item {
+    padding: 8px;
+    background: white !important;
+    border-left: 2px solid #1d4ed8;
+  }
+
+  .benefit-item.tradeoffs {
+    border-left-color: #D63384;
+  }
+
+  .benefit-item.suitable {
+    border-left-color: #10b981;
+  }
+
+  .benefit-item-label {
+    font-size: 9px;
+  }
+
+  .benefit-item p {
+    font-size: 11px;
+  }
+
+  .impact-cards {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .impact-card {
+    padding: 10px;
+    border: 1px solid #e2e8f0;
+    page-break-inside: avoid;
+  }
+
+  .impact-card-header {
+    padding: 5px 10px;
+    font-size: 11px;
+    background: #1d4ed8 !important;
+    color: white !important;
+  }
+
+  .impact-card h4 {
+    font-size: 9px;
+    margin-top: 8px;
+  }
+
+  .impact-card p {
+    font-size: 11px;
+  }
+
+  .factors-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .factor-item {
+    padding: 10px;
+    background: #eff6ff !important;
+    page-break-inside: avoid;
+  }
+
+  .factor-item h4 {
+    font-size: 12px;
+  }
+
+  .factor-item p {
+    font-size: 11px;
+  }
+
+  .numbered-list {
+    margin: 8px 0;
+  }
+
+  .numbered-list li {
+    padding-left: 36px;
+    margin-bottom: 12px;
+    font-size: 11px;
+    page-break-inside: avoid;
+  }
+
+  .numbered-list li::before {
+    width: 24px;
+    height: 24px;
+    font-size: 11px;
+    background: #1d4ed8 !important;
+    color: white !important;
+  }
+
+  .timeline-badge {
+    padding: 4px 10px;
+    font-size: 9px;
+    background: #1d4ed8 !important;
+    color: white !important;
+  }
+
+  .target-box {
+    padding: 12px;
+    margin-top: 16px;
+    background: #1e3a8a !important;
+    color: white !important;
+    page-break-inside: avoid;
+  }
+
+  .target-box h3 {
+    font-size: 14px;
+  }
+
+  .target-box p {
+    font-size: 11px;
+  }
+
+  .section-divider {
+    display: none;
+  }
+
+  .doc-footer {
+    padding: 16px;
+    font-size: 11px;
+    background: #f8fafc !important;
+  }
+
+  .doc-footer a {
+    display: none;
+  }
+
+  .doc-footer p::after {
+    content: "Architecting Tomorrow - https://www.turbo-ea.org/blog";
+  }
+
+  /* Force page breaks before major sections */
+  #benefits-impacts {
+    page-break-before: always;
+  }
+
+  #strategic-implications {
+    page-break-before: always;
+  }
+
+  #implementation {
+    page-break-before: always;
+  }
+}
+
+/* ============================================
+   31. SPLIT HERO (Article Header with Image)
+   ============================================ */
+.split-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 350px;
+}
+
+.split-hero-content {
+  background: var(--color-secondary);
+  color: var(--color-white);
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.split-hero-content h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+  line-height: 1.2;
+}
+
+.split-hero-content .subtitle {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: var(--space-md);
+}
+
+.split-hero-content .reading-time {
+  display: inline-block;
+  padding: 6px 16px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  width: fit-content;
+}
+
+.split-hero-image {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 250px;
+}
+
+/* ============================================
+   32. SPLIT HERO - RESPONSIVE (Hide image on mobile)
+   ============================================ */
+@media (max-width: 768px) {
+  .split-hero {
+    grid-template-columns: 1fr;
+  }
+  
+  .split-hero-image {
+    display: none;
+  }
+  
+  .split-hero-content {
+    padding: var(--space-lg);
+    text-align: center;
+  }
+  
+  .split-hero-content h1 {
+    font-size: 28px;
+  }
+  
+  .split-hero-content .reading-time {
+    margin: 0 auto;
+  }
+}
+
+/* ============================================
+   33. SPLIT HERO - PRINT (Hide image, full width title)
+   ============================================ */
+@media print {
+  .split-hero {
+    display: block !important;
+    min-height: auto;
+  }
+  
+  .split-hero-image {
+    display: none !important;
+  }
+  
+  .split-hero-content {
+    padding: 32px 24px;
+    background: #1e3a8a !important;
+    color: white !important;
+    text-align: center;
+  }
+  
+  .split-hero-content h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+  
+  .split-hero-content .subtitle {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .split-hero-content .reading-time {
+    padding: 6px 14px;
+    font-size: 11px;
+    background: rgba(255, 255, 255, 0.2) !important;
+  }
+}
+
+/* ============================================
+   34. SEARCH & FILTER (Landing Page)
+   ============================================ */
+.search-container {
+  margin-bottom: var(--space-md);
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  max-width: 500px;
+}
+
+.search-input-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 16px 12px 44px;
+  font-family: var(--font-primary);
+  font-size: 15px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-white);
+  color: var(--color-text);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--color-magenta);
+  box-shadow: 0 0 0 3px rgba(214, 51, 132, 0.1);
+}
+
+.search-input::placeholder {
+  color: var(--color-muted);
+}
+
+.search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  color: var(--color-muted);
+  pointer-events: none;
+}
+
+.search-clear {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: var(--color-border);
+  color: var(--color-muted);
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1;
+  transition: background 0.2s, color 0.2s;
+}
+
+.search-clear:hover {
+  background: var(--color-muted);
+  color: var(--color-white);
+}
+
+.search-clear.visible {
+  display: flex;
+}
+
+.search-results-info {
+  font-size: 14px;
+  color: var(--color-muted);
+  margin-top: var(--space-sm);
+}
+
+.search-results-info strong {
+  color: var(--color-text);
+}
+
+/* Category filter pills */
+.filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-top: var(--space-sm);
+}
+
+.filter-pill {
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-white);
+  color: var(--color-muted);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-pill:hover {
+  border-color: var(--color-magenta);
+  color: var(--color-magenta);
+}
+
+.filter-pill.active {
+  background: var(--color-magenta);
+  border-color: var(--color-magenta);
+  color: var(--color-white);
+}
+
+/* Search match preview in article cards */
+.article-card-match {
+  font-size: 12px;
+  color: var(--color-muted);
+  background: var(--color-pale-blue);
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  margin-top: var(--space-xs);
+  border-left: 3px solid var(--color-magenta);
+}
+
+.article-card-match strong {
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
+/* No results state */
+.no-results {
+  text-align: center;
+  padding: var(--space-xl) var(--space-md);
+  color: var(--color-muted);
+}
+
+.no-results-icon {
+  width: 48px;
+  height: 48px;
+  font-size: 48px;
+  display: block;
+  margin: 0 auto var(--space-sm);
+  color: var(--color-border);
+}
+
+.no-results h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--space-xs);
+}
+
+.no-results p {
+  font-size: 14px;
+}
+
+/* Search responsive */
+@media (max-width: 768px) {
+  .search-box {
+    max-width: none;
+  }
+}
+
+/* ============================================
+   35. FEATURED BADGE & SHOW ALL BUTTON
+   ============================================ */
+
+/* Tags container for category + featured badge */
+.article-card-tags {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: var(--space-sm);
+}
+
+/* Featured badge - uses magenta (replaces orange) */
+.article-card-featured {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: var(--color-magenta);
+  color: var(--color-white);
+  padding: 3px 8px;
+  border-radius: 2px;
+}
+
+/* Optional: subtle highlight for featured cards */
+.article-card.is-featured {
+  border-color: rgba(214, 51, 132, 0.3);
+}
+
+/* Show all container */
+.show-all-container {
+  text-align: center;
+  margin-top: var(--space-lg);
+}
+
+/* Show all button */
+.show-all-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 12px 24px;
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-accent);
+  background: var(--color-white);
+  border: 2px solid var(--color-accent);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.show-all-btn:hover {
+  background: var(--color-magenta);
+  border-color: var(--color-magenta);
+  color: var(--color-white);
+}
+
+.show-all-btn svg,
+.show-all-btn .material-symbols-outlined {
+  transition: transform 0.2s;
+}
+
+.show-all-btn:hover svg,
+.show-all-btn:hover .material-symbols-outlined {
+  transform: translateY(2px);
+}
