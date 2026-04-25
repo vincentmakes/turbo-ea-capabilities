@@ -170,7 +170,6 @@ export default function CatalogueBrowser({ data, valueStreams }: Props) {
   const [levels, setLevels] = useState<Set<number>>(() => new Set(allLevels));
   const [industries, setIndustries] = useState<Set<string>>(new Set());
   const [streams, setStreams] = useState<Set<string>>(new Set());
-  const [showDeprecated, setShowDeprecated] = useState(false);
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [expanded, setExpanded] = useState<Set<string>>(() => {
     // L1s expanded by default
@@ -195,7 +194,6 @@ export default function CatalogueBrowser({ data, valueStreams }: Props) {
         for (const s of streams) if (cs.has(s)) { hit = true; break; }
         if (!hit) return false;
       }
-      if (!showDeprecated && c.deprecated) return false;
       if (q) {
         const haystack = [c.id, c.name, c.description ?? "", (c.aliases ?? []).join(" ")]
           .join(" ")
@@ -204,7 +202,7 @@ export default function CatalogueBrowser({ data, valueStreams }: Props) {
       }
       return true;
     });
-  }, [data, levels, industries, streams, showDeprecated, query, valueStreamsByCapability]);
+  }, [data, levels, industries, streams, query, valueStreamsByCapability]);
 
   // Always include ancestors of any visible node so each L1 column shows.
   const visibleSet = useMemo(() => {
@@ -284,7 +282,6 @@ export default function CatalogueBrowser({ data, valueStreams }: Props) {
     setLevels(new Set(allLevels));
     setIndustries(new Set());
     setStreams(new Set());
-    setShowDeprecated(false);
   };
 
   const roots = (byParent.get(null) ?? []).filter((r) => visibleSet.has(r.id));
@@ -305,8 +302,6 @@ export default function CatalogueBrowser({ data, valueStreams }: Props) {
         valueStreamNames={valueStreamNames}
         streams={streams}
         onStreams={setStreams}
-        showDeprecated={showDeprecated}
-        onShowDeprecated={setShowDeprecated}
         onReset={resetFilters}
       />
 
@@ -413,8 +408,6 @@ interface FilterBarProps {
   valueStreamNames: string[];
   streams: Set<string>;
   onStreams: (s: Set<string>) => void;
-  showDeprecated: boolean;
-  onShowDeprecated: (v: boolean) => void;
   onReset: () => void;
 }
 
@@ -430,8 +423,6 @@ function FilterBar({
   valueStreamNames,
   streams,
   onStreams,
-  showDeprecated,
-  onShowDeprecated,
   onReset,
 }: FilterBarProps) {
   return (
@@ -481,15 +472,6 @@ function FilterBar({
           onChange={onStreams}
         />
       )}
-
-      <label class="dep-toggle">
-        <input
-          type="checkbox"
-          checked={showDeprecated}
-          onChange={() => onShowDeprecated(!showDeprecated)}
-        />
-        <span>Deprecated</span>
-      </label>
 
       <button class="btn btn-ghost" type="button" onClick={onReset}>
         Reset
@@ -651,7 +633,6 @@ function L1Card({
         >
           {hasKids ? (isOpen ? "▾" : "▸") : ""}
         </button>
-        <span class="cap-id">{node.id}</span>
         <button
           type="button"
           class="l1-name"
@@ -754,7 +735,6 @@ function ChildRow({
         >
           {hasKids ? (isOpen ? "▾" : "▸") : ""}
         </button>
-        <span class="cap-id cap-id-sm">{node.id}</span>
         <button
           type="button"
           class="l2-name"
@@ -826,7 +806,6 @@ function DetailPanel({ node, valueStreams, onClose }: DetailPanelProps) {
       <aside class="detail-panel" role="dialog" aria-label={`${node.id} ${node.name}`}>
         <header class="detail-panel-header">
           <div class="detail-panel-meta">
-            <span class="cap-id">{node.id}</span>
             <span class="cap-level">L{node.level}</span>
             {node.deprecated && (
               <span class="cap-deprecated-badge">Deprecated</span>

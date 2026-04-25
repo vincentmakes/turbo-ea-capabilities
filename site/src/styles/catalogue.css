@@ -263,12 +263,38 @@
   gap: var(--space-xs);
 }
 
-/* L1 grid (multi-column responsive) */
+/* Pages that host the catalogue browser go (almost) edge-to-edge so the
+   4-column L1 grid has room to breathe. */
+.main:has(.catalogue-page) {
+  max-width: none;
+  padding-left: var(--space-md);
+  padding-right: var(--space-md);
+}
+
+/* L1 grid: 4 columns at desktop, scaling down responsively. */
 .l1-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: var(--space-sm);
   align-items: start;
+}
+
+@media (max-width: 1280px) {
+  .l1-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 960px) {
+  .l1-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .l1-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 .l1-card {
