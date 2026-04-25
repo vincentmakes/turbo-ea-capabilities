@@ -12,46 +12,263 @@ children:
     industry: Cross-Industry
     description: |
       Chart of accounts, journals, period close.
-    children: []
+    children:
+      - id: BC-200.10.10
+        name: Chart of Accounts Management
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Definition and governance of the chart of accounts and account hierarchies.
+        children: []
+      - id: BC-200.10.20
+        name: Journal Entry Processing
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Manual and automated journal entries with approval workflow.
+        children: []
+      - id: BC-200.10.30
+        name: Intercompany Accounting
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Intercompany transactions, eliminations, and reconciliations.
+        children: []
+      - id: BC-200.10.40
+        name: Period-End Close
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Period close calendar, accruals, and close certifications.
+        children: []
+      - id: BC-200.10.50
+        name: Account Reconciliation
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Balance sheet account reconciliations and substantiation.
+        children: []
   - id: BC-200.20
     name: Accounts Payable Management
     level: 2
     industry: Cross-Industry
     description: |
       Invoice processing, payments, vendor accounting.
-    children: []
+    children:
+      - id: BC-200.20.10
+        name: Vendor Invoice Capture and Validation
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Receipt, capture, and three-way matching of vendor invoices.
+        children: []
+      - id: BC-200.20.20
+        name: Payment Run Execution
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Scheduling and execution of supplier payment runs.
+        children: []
+      - id: BC-200.20.30
+        name: Vendor Master Accounting Data Management
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Vendor financial master data, banking details, and tax attributes.
+        children: []
+      - id: BC-200.20.40
+        name: Travel and Expense Processing
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Employee expense capture, approval, and reimbursement.
+        children: []
+      - id: BC-200.20.50
+        name: AP Ledger Reconciliation
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Vendor statement and AP sub-ledger reconciliation.
+        children: []
   - id: BC-200.30
     name: Accounts Receivable Management
     level: 2
     industry: Cross-Industry
     description: |
       Customer invoicing, collections, cash application.
-    children: []
+    children:
+      - id: BC-200.30.10
+        name: Customer Invoicing
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Generation and issuance of customer invoices and credit notes.
+        children: []
+      - id: BC-200.30.20
+        name: Cash Application
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Matching of incoming customer payments to open receivables.
+        children: []
+      - id: BC-200.30.30
+        name: Collections Management
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Dunning, collections strategy, and customer payment follow-up.
+        children: []
+      - id: BC-200.30.40
+        name: Credit Risk and Customer Limits
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Customer credit assessment, limit setting, and credit holds.
+        children: []
+      - id: BC-200.30.50
+        name: Disputes and Deductions Management
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Investigation and resolution of invoice disputes and deductions.
+        children: []
   - id: BC-200.40
     name: Fixed Asset Accounting
     level: 2
     industry: Cross-Industry
     description: |
       Asset registers, depreciation, impairment.
-    children: []
+    children:
+      - id: BC-200.40.10
+        name: Fixed Asset Register Maintenance
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Capitalisation, classification, and tracking of fixed assets.
+        children: []
+      - id: BC-200.40.20
+        name: Depreciation and Amortisation
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Depreciation methods, schedules, and posting.
+        children: []
+      - id: BC-200.40.30
+        name: Asset Impairment and Revaluation
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Impairment testing and revaluation of assets under IFRS or local GAAP.
+        children: []
+      - id: BC-200.40.40
+        name: Asset Disposal Accounting
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Accounting for retirements, sales, and write-offs of fixed assets.
+        children: []
   - id: BC-200.50
     name: Cost Accounting Management
     level: 2
     industry: Cross-Industry
     description: |
       Cost objects, cost allocations, standard costing.
-    children: []
+    children:
+      - id: BC-200.50.10
+        name: Cost Object and Cost Centre Management
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Definition of cost centres, internal orders, and project cost objects.
+        children: []
+      - id: BC-200.50.20
+        name: Standard Costing
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Standard cost setting, variance analysis, and revaluation.
+        children: []
+      - id: BC-200.50.30
+        name: Cost Allocation and Absorption
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Allocation cycles, drivers, and overhead absorption.
+        children: []
+      - id: BC-200.50.40
+        name: Product and Service Costing
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Costing of products, services, and customer engagements.
+        children: []
   - id: BC-200.60
     name: Financial Reporting Management
     level: 2
     industry: Cross-Industry
     description: |
       Internal financial reporting and consolidation.
-    children: []
+    children:
+      - id: BC-200.60.10
+        name: Financial Consolidation
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Consolidation of legal entities including eliminations and FX translation.
+        children: []
+      - id: BC-200.60.20
+        name: Internal Financial Reporting
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Production of internal P&L, balance sheet, and cash flow reports.
+        children: []
+      - id: BC-200.60.30
+        name: Segment and Management Reporting
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Segment reporting and reporting by management view.
+        children: []
+      - id: BC-200.60.40
+        name: Financial Disclosure Drafting
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Drafting of notes and disclosures supporting financial reports.
+        children: []
   - id: BC-200.70
     name: "Statutory & Regulatory Reporting"
     level: 2
     industry: Cross-Industry
     description: |
       Statutory accounts, regulatory financial submissions.
-    children: []
+    children:
+      - id: BC-200.70.10
+        name: Statutory Accounts Preparation
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Preparation of legal entity statutory financial statements.
+        children: []
+      - id: BC-200.70.20
+        name: Regulatory Financial Submissions
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Sector regulatory financial returns and prudential submissions.
+        children: []
+      - id: BC-200.70.30
+        name: External Audit Coordination
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Liaison with external auditors and audit deliverable management.
+        children: []
+      - id: BC-200.70.40
+        name: Sustainability and Non-Financial Reporting
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Non-financial and sustainability disclosures (e.g. CSRD, IFRS S1/S2).
+        children: []
