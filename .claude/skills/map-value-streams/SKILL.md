@@ -43,11 +43,35 @@ Stages reference the **L1 only**. The lint rule (`scripts/lint.ts` `L1_ID_REGEX`
 2. Read **`business-capability-governance-model.md`** §2 (capabilities ≠ value streams) and §9.4 (lint rules).
 3. For each target L1 (resolved from the user's name), read its YAML file under `catalogue/L1-*.yaml` to understand its scope. The value-stream stage references the L1 itself; the site auto-expands to descendants when filtering, so sub-scope detail belongs in `notes`, not in a deeper `capability_id`.
 
+## Stream shape
+
+Every entry under `value_streams:` carries three top-level fields:
+
+```yaml
+- name: <Hyphenated-Stream-Name>
+  industries: [<one or more industries>]
+  stages: [...]
+```
+
+`industries` is **required, lint-enforced, and drawn from the canonical L1 industry vocabulary** (full names — never the short forms used in `industry_variant`):
+
+- `Cross-Industry` — applies to every industry. **Must be the only entry** when present (no `[Cross-Industry, Banking & Capital Markets]`).
+- `Air Traffic Control`
+- `Banking & Capital Markets`
+- `Defense & Aerospace`
+- `Electrical Components & Equipment`
+- `Engineering Services`
+- `HVAC & Building Automation Systems`
+- `Manufacturing & Industrial`
+- `Pharmaceuticals & Life Sciences`
+
+A stream that genuinely spans multiple named industries (e.g. *Maintenance-Request-to-Closure* across Manufacturing, HVAC, and Electrical) lists each one. The site groups streams by industry on the filter dropdown and on `/value-streams`, so the array is the user-visible categorisation — keep it accurate, not aspirational. If unsure between Cross-Industry and a single named industry, prefer the named industry; if unsure across two named industries, list both.
+
 ## Step 2 — Identify candidate streams
 
-Authoritative list lives in `catalogue/_value-streams.yaml`; read it at runtime for the source of truth. The tables below summarise the current 24 streams to help you spot fits quickly. Reuse these names exactly — never invent a near-synonym.
+Authoritative list lives in `catalogue/_value-streams.yaml`; read it at runtime for the source of truth (the `industries` array on each stream is the canonical industry assignment). The tables below summarise the current 24 streams to help you spot fits quickly. Reuse these names exactly — never invent a near-synonym.
 
-Cross-industry streams:
+Cross-industry streams (`industries: [Cross-Industry]`):
 
 | Stream | Typical L1 anchors |
 | --- | --- |
@@ -65,21 +89,21 @@ Cross-industry streams:
 | **Threat-to-Mitigation** | BC-620 Cybersecurity, BC-160 Business Continuity, BC-830 Knowledge |
 | **Prospect-to-Customer** | BC-400 Marketing, BC-410 Sales, BC-420 CRM, BC-430 Customer Service, BC-850 Corporate Communications |
 | **Opportunity-to-Order** | BC-410 Sales, BC-420 CRM, BC-440 Pricing, BC-150 Legal |
-| **Maintenance-Request-to-Closure** | BC-1030 Plant Maintenance, BC-1050 Field Service, BC-720 Quality, BC-200 Finance |
 | **Crisis-to-Recovery** | BC-160 Business Continuity, BC-620 Cybersecurity, BC-600 IT, BC-850 Corporate Communications, BC-830 Knowledge, BC-120 Enterprise Risk |
 | **ESG-to-Disclosure** | BC-740 Sustainability, BC-510 Supplier (ratings), BC-610 Information & Data, BC-140 Audit, BC-200 Finance, BC-240 Investor Relations |
-| **Concept-to-Manufacture** | BC-1120 Design, BC-1100 Engineering Discipline, BC-1020 Manufacturing Engineering, BC-820 PLM, BC-1000 Production, BC-1010 Mfg Operations, BC-720 Quality, BC-1130 Engineering Document |
 
-Industry-specific streams (use first when the L1 is industry-specific; canonical streams come second):
+Industry-specific streams (use first when the L1 is industry-specific; canonical streams come second). The `industries` column is what each stream declares in `_value-streams.yaml`:
 
-| Industry | Stream | Typical L1 anchors |
-| --- | --- | --- |
-| Banking | **Application-to-Funding** | BC-1320 Credit & Lending, BC-1300 Banking Customer, BC-1400 Financial Crime, BC-1310 Banking Product, BC-1340 Payments, BC-1410 Banking Risk |
-| Pharma | **Discovery-to-Approval** | BC-1500 Drug Discovery, BC-1510 Drug Development, BC-1520 Clinical Trials, BC-1530 Regulatory Affairs, BC-1580 Medical Affairs, BC-1590 Pharma Commercial, BC-1600 Market Access |
-| Pharma | **Adverse-Event-to-Action** | BC-1540 Pharmacovigilance, BC-1580 Medical Affairs, BC-1530 Regulatory Affairs, BC-850 Corporate Comms |
-| Defense | **Capture-to-Contract** | BC-1750 Defense Capture & Bid, BC-1730 Intelligence Ops, BC-1810 Classified Info Sec, BC-1140 Engineering Tendering, BC-1790 Export Control, BC-150 Legal, BC-1760 Defense Programme |
-| Defense | **Sustain-to-Disposition** | BC-1780 Defense Sustainment, BC-1720 Defense Logistics, BC-1060 Spare Parts, BC-1770 Defense Systems Engineering, BC-1800 Defense T&E, BC-1040 Physical Asset, BC-1810 Classified Info Sec |
-| ATC | **Flight-to-Settle** | BC-1230 Aeronautical Information, BC-1210 ATC Ops, BC-1220 ATC Flow, BC-1270 Route Charges, BC-200 Finance |
+| Industry | Stream | `industries` field | Typical L1 anchors |
+| --- | --- | --- | --- |
+| Banking | **Application-to-Funding** | `[Banking & Capital Markets]` | BC-1320 Credit & Lending, BC-1300 Banking Customer, BC-1400 Financial Crime, BC-1310 Banking Product, BC-1340 Payments, BC-1410 Banking Risk |
+| Pharma | **Discovery-to-Approval** | `[Pharmaceuticals & Life Sciences]` | BC-1500 Drug Discovery, BC-1510 Drug Development, BC-1520 Clinical Trials, BC-1530 Regulatory Affairs, BC-1580 Medical Affairs, BC-1590 Pharma Commercial, BC-1600 Market Access |
+| Pharma | **Adverse-Event-to-Action** | `[Pharmaceuticals & Life Sciences]` | BC-1540 Pharmacovigilance, BC-1580 Medical Affairs, BC-1530 Regulatory Affairs, BC-850 Corporate Comms |
+| Defense | **Capture-to-Contract** | `[Defense & Aerospace]` | BC-1750 Defense Capture & Bid, BC-1730 Intelligence Ops, BC-1810 Classified Info Sec, BC-1140 Engineering Tendering, BC-1790 Export Control, BC-150 Legal, BC-1760 Defense Programme |
+| Defense | **Sustain-to-Disposition** | `[Defense & Aerospace]` | BC-1780 Defense Sustainment, BC-1720 Defense Logistics, BC-1060 Spare Parts, BC-1770 Defense Systems Engineering, BC-1800 Defense T&E, BC-1040 Physical Asset, BC-1810 Classified Info Sec |
+| ATC | **Flight-to-Settle** | `[Air Traffic Control]` | BC-1230 Aeronautical Information, BC-1210 ATC Ops, BC-1220 ATC Flow, BC-1270 Route Charges, BC-200 Finance |
+| Mfg / HVAC / Electrical | **Maintenance-Request-to-Closure** | `[Manufacturing & Industrial, HVAC & Building Automation Systems, Electrical Components & Equipment]` | BC-1030 Plant Maintenance, BC-1050 Field Service, BC-720 Quality, BC-200 Finance |
+| Mfg / Eng Svcs / Electrical / HVAC / Defense | **Concept-to-Manufacture** | `[Manufacturing & Industrial, Engineering Services, Electrical Components & Equipment, HVAC & Building Automation Systems, Defense & Aerospace]` | BC-1120 Design, BC-1100 Engineering Discipline, BC-1020 Manufacturing Engineering, BC-820 PLM, BC-1000 Production, BC-1010 Mfg Operations, BC-720 Quality, BC-1130 Engineering Document |
 
 ### Coverage-gap detection
 
@@ -89,11 +113,18 @@ If a target L1's role is not represented by any of the streams above, do **not**
 Coverage gap: <L1 name> (<BC-id>)
   No existing stream covers this capability's primary role of <one-sentence summary>.
   Suggested new streams:
-    - <Suggested-Name-1> — <one-line rationale: what end-to-end flow it captures>
-    - <Suggested-Name-2> — <alternative framing>
+    - <Suggested-Name-1> — industries: [<from canonical vocabulary>] —
+      <one-line rationale: what end-to-end flow it captures>
+    - <Suggested-Name-2> — industries: [<…>] — <alternative framing>
   Continuing with the streams that do fit. Add a new stream as a follow-up
   (manual edit to _value-streams.yaml) if the suggestion is right.
 ```
+
+Always propose the `industries` array alongside the stream name so the user can approve the full shape in one step. Default heuristics for `industries`:
+
+- The new stream applies to every industry → `[Cross-Industry]`.
+- The triggering L1 is industry-specific (e.g. defined only in one L1 file with a single named industry) → list **only** that industry. Do not pre-emptively widen.
+- Two or more named industries genuinely share the flow → list each one, full names, no `Cross-Industry`.
 
 Continue with whatever streams *do* fit (often there will be a partial fit even when no stream is the primary one). The user can author the new stream manually or via a follow-up `/map-value-streams` invocation once defined.
 
@@ -150,7 +181,31 @@ Do **not** loop through stages asking for individual confirmation.
 
 - **Preserve YAML formatting and comments.** Use the same `yaml` Document approach as `scripts/cli/_shared.ts` if writing programmatically. For interactive edits, use the `Edit` tool to insert stages without reflowing the rest of the file.
 - Insert stages within the existing `stages:` array of the matching `value_streams` entry, **maintaining `stage_order` ascending**. If multiple entries share the same `stage_order`, group them together.
-- For a brand-new stream, append a new entry under `value_streams:` with at least `name` and `stages:`.
+- For a brand-new stream, append a new entry under `value_streams:` with **all three top-level fields**: `name`, `industries`, `stages`. The `industries` array is required and lint-enforced — see *Stream shape* above for the vocabulary and the `Cross-Industry`-stands-alone rule.
+
+  Inline form for a single industry:
+
+  ```yaml
+  - name: <New-Stream-Name>
+    industries: [<Industry Full Name>]
+    stages:
+      - stage_order: 1
+        stage_name: <…>
+        capability_id: BC-<L1>
+        notes: <…>
+  ```
+
+  Block form when multiple industries apply:
+
+  ```yaml
+  - name: <New-Stream-Name>
+    industries:
+      - <Industry A>
+      - <Industry B>
+      - <Industry C>
+    stages:
+      - …
+  ```
 
 ## Step 6 — Validate
 
@@ -163,6 +218,9 @@ If lint fails:
 
 - **Non-L1 capability_id** → the rule (`scripts/lint.ts` `L1_ID_REGEX`) requires L1 only. Truncate to the L1 prefix (e.g. `BC-300.10` → `BC-300`) and move the sub-scope into `notes`.
 - **Unresolved capability_id** → the ID does not exist in the catalogue. Verify against `catalogue/L1-*.yaml`. Do not invent IDs.
+- **Missing `industries` array** → every stream must declare `industries` as a non-empty array. Add it using the canonical L1 vocabulary (see *Stream shape*).
+- **Industry not in catalogue vocabulary** → check spelling and use the full name (e.g. `Pharmaceuticals & Life Sciences`, not `Pharma`; `Banking & Capital Markets`, not `Banking`).
+- **`Cross-Industry` mixed with named industries** → `Cross-Industry` must stand alone. Either drop it or drop the named industries.
 - **YAML parse error** → check indentation and quoting (use `"..."` for names containing `&` or `:`).
 
 ## What this skill must not do
@@ -170,6 +228,8 @@ If lint fails:
 - Add value-stream names *inside* the capability hierarchy. Value streams live only in `_value-streams.yaml` (§2, §5.3 of the governance model).
 - Reference a `capability_id` that doesn't exist — create the capability first via `/generate-capability`, then map it.
 - Edit `dist/api/value-streams.json` directly (build artefact, regenerated by `npm run build:api`).
+- Create a stream without an `industries` array, or with industries outside the canonical L1 vocabulary, or with `Cross-Industry` mixed alongside a named industry. Lint will reject it.
+- Use short forms (`Pharma`, `Banking`, `ATC`) in the stream-level `industries` array — those belong only in the per-stage `industry_variant` field. The stream-level vocabulary is full names.
 - Add an `industry_variant` purely to tag industry — it should reflect a real divergence in stage logic.
 - Bulk-rewrite existing stages without explicit user authorisation.
 
