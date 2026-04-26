@@ -1,0 +1,216 @@
+# Actuarial Management
+id: BC-2180
+name: Actuarial Management
+level: 1
+industry: Insurance
+description: |
+  Pricing models, reserving, experience studies, capital and solvency
+  modelling, IFRS 17 actuarial reporting support, and catastrophe modelling.
+references:
+  - https://www.acord.org/standards/reference-architecture
+  - https://www.eiopa.europa.eu/regulation-supervision/insurance/solvency-ii_en
+  - https://www.ifrs.org/issued-standards/list-of-standards/ifrs-17-insurance-contracts/
+children:
+  - id: BC-2180.10
+    name: Pricing Actuarial Management
+    level: 2
+    industry: Insurance
+    description: |
+      Loss-cost modelling, pricing adequacy analysis, rate indication, and filed-rate documentation support.
+    children:
+      - id: BC-2180.10.10
+        name: Loss Cost Modelling
+        level: 3
+        industry: Insurance
+        description: |
+          Modelling of loss costs by segment, peril, and coverage.
+        children: []
+      - id: BC-2180.10.20
+        name: Pricing Adequacy Analysis
+        level: 3
+        industry: Insurance
+        description: |
+          Analysis of pricing adequacy against expected losses and expense loads.
+        children: []
+      - id: BC-2180.10.30
+        name: Rate Indication Production
+        level: 3
+        industry: Insurance
+        description: |
+          Production of rate indications for product and pricing committees.
+        children: []
+      - id: BC-2180.10.40
+        name: Filed Rate Documentation Support
+        level: 3
+        industry: Insurance
+        description: |
+          Production of actuarial memoranda and exhibits supporting rate filings.
+        children: []
+  - id: BC-2180.20
+    name: Reserving Actuarial Management
+    level: 2
+    industry: Insurance
+    description: |
+      Loss triangulation, IBNR estimation, ULAE and ALAE reserving, and reserving sign-off documentation.
+    children:
+      - id: BC-2180.20.10
+        name: Loss Triangulation and Development
+        level: 3
+        industry: Insurance
+        description: |
+          Loss triangle construction and development factor selection.
+        children: []
+      - id: BC-2180.20.20
+        name: IBNR Estimation
+        level: 3
+        industry: Insurance
+        description: |
+          Estimation of incurred-but-not-reported reserves across portfolios.
+        children: []
+      - id: BC-2180.20.30
+        name: ULAE and ALAE Reserving
+        level: 3
+        industry: Insurance
+        description: |
+          Reserving for unallocated and allocated loss adjustment expenses.
+        children: []
+      - id: BC-2180.20.40
+        name: Reserving Sign-Off Documentation
+        level: 3
+        industry: Insurance
+        description: |
+          Production of reserving committee documentation and statements of opinion.
+        children: []
+  - id: BC-2180.30
+    name: Capital and Solvency Modelling
+    level: 2
+    industry: Insurance
+    description: |
+      Internal capital model development, standard formula calculation, capital allocation, and ORSA support.
+    children:
+      - id: BC-2180.30.10
+        name: Internal Capital Model Development
+        level: 3
+        industry: Insurance
+        description: |
+          Development and maintenance of internal capital models for solvency and rating.
+        children: []
+      - id: BC-2180.30.20
+        name: Standard Formula Calculation
+        level: 3
+        industry: Insurance
+        description: |
+          Calculation of Solvency II standard formula and equivalent regulatory capital metrics.
+        children: []
+      - id: BC-2180.30.30
+        name: Capital Allocation
+        level: 3
+        industry: Insurance
+        description: |
+          Allocation of required capital to lines of business and segments.
+        children: []
+      - id: BC-2180.30.40
+        name: ORSA Modelling Support
+        level: 3
+        industry: Insurance
+        description: |
+          Modelling support for Own Risk and Solvency Assessment exercises.
+        children: []
+  - id: BC-2180.40
+    name: "Experience Studies & Assumption Management"
+    level: 2
+    industry: Insurance
+    description: |
+      Mortality, longevity, lapse, persistency, and morbidity studies, and assumption governance.
+    children:
+      - id: BC-2180.40.10
+        name: Mortality and Longevity Studies
+        level: 3
+        industry: Insurance
+        description: |
+          Mortality and longevity experience studies for life and pension portfolios.
+        children: []
+      - id: BC-2180.40.20
+        name: Lapse and Persistency Studies
+        level: 3
+        industry: Insurance
+        description: |
+          Lapse and persistency experience studies across product cohorts.
+        children: []
+      - id: BC-2180.40.30
+        name: Morbidity and Claim Frequency Studies
+        level: 3
+        industry: Insurance
+        description: |
+          Morbidity and claim-frequency experience studies for health and protection lines.
+        children: []
+      - id: BC-2180.40.40
+        name: Assumption Governance and Sign-Off
+        level: 3
+        industry: Insurance
+        description: |
+          Governance and sign-off of actuarial assumptions used in pricing, reserving, and reporting.
+        children: []
+  - id: BC-2180.50
+    name: IFRS 17 Actuarial Reporting Support
+    level: 2
+    industry: Insurance
+    description: |
+      Contractual service margin, risk adjustment, cohort construction, and IFRS 17 disclosure production.
+    children:
+      - id: BC-2180.50.10
+        name: CSM and Risk Adjustment Calculation
+        level: 3
+        industry: Insurance
+        description: |
+          Calculation of contractual service margin and risk adjustment for IFRS 17.
+        children: []
+      - id: BC-2180.50.20
+        name: Cohort and Group Construction
+        level: 3
+        industry: Insurance
+        description: |
+          Construction of insurance contract groups and annual cohorts.
+        children: []
+      - id: BC-2180.50.30
+        name: IFRS 17 Disclosure Production
+        level: 3
+        industry: Insurance
+        description: |
+          Production of actuarial inputs for IFRS 17 disclosures and reconciliations.
+        children: []
+  - id: BC-2180.60
+    name: Catastrophe Modelling
+    level: 2
+    industry: Insurance
+    description: |
+      CAT model vendor management, exposure data preparation, PML and AAL calculation, and model validation.
+    children:
+      - id: BC-2180.60.10
+        name: CAT Model Vendor Management
+        level: 3
+        industry: Insurance
+        description: |
+          Selection and management of CAT model vendors and licence portfolios.
+        children: []
+      - id: BC-2180.60.20
+        name: Exposure Data Preparation
+        level: 3
+        industry: Insurance
+        description: |
+          Preparation and conditioning of exposure data for CAT model runs.
+        children: []
+      - id: BC-2180.60.30
+        name: PML and AAL Calculation
+        level: 3
+        industry: Insurance
+        description: |
+          Calculation of probable maximum loss and average annual loss metrics.
+        children: []
+      - id: BC-2180.60.40
+        name: CAT Model Validation and Adjustment
+        level: 3
+        industry: Insurance
+        description: |
+          Validation and view-of-risk adjustment of CAT model outputs.
+        children: []

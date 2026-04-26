@@ -280,6 +280,11 @@ value_streams:
         stage_name: Customer Invoicing
         capability_id: BC-200
         notes: Invoice generation
+      - stage_order: 7
+        stage_name: Customer Invoicing
+        capability_id: BC-2150
+        industry_variant: Insurance
+        notes: Premium invoicing
       - stage_order: 8
         stage_name: Cash Collection & Application
         capability_id: BC-200
@@ -288,10 +293,20 @@ value_streams:
         stage_name: Cash Collection & Application
         capability_id: BC-210
         notes: Cash positioning
+      - stage_order: 8
+        stage_name: Cash Collection & Application
+        capability_id: BC-2150
+        industry_variant: Insurance
+        notes: Premium collection
       - stage_order: 9
         stage_name: Revenue Recognition
         capability_id: BC-200
         notes: Revenue posting; Reporting
+      - stage_order: 9
+        stage_name: Revenue Recognition
+        capability_id: BC-2150
+        industry_variant: Insurance
+        notes: Earned-premium recognition
   - name: Procure-to-Pay
     stages:
       - stage_order: 1
@@ -446,6 +461,11 @@ value_streams:
         capability_id: BC-2010
         industry_variant: HVAC & Building Automation Systems
         notes: BAS product NPD
+      - stage_order: 5
+        stage_name: Design & Development
+        capability_id: BC-2100
+        industry_variant: Insurance
+        notes: Insurance product design & wording
       - stage_order: 6
         stage_name: IP Protection
         capability_id: BC-840
@@ -463,6 +483,11 @@ value_streams:
         capability_id: BC-1940
         industry_variant: Electrical Components & Equipment
         notes: Saleable catalogue activation
+      - stage_order: 7
+        stage_name: Launch Readiness
+        capability_id: BC-2100
+        industry_variant: Insurance
+        notes: Filing & channel readiness
       - stage_order: 8
         stage_name: Market Introduction
         capability_id: BC-1530
@@ -482,6 +507,11 @@ value_streams:
         capability_id: BC-2030
         industry_variant: HVAC & Building Automation Systems
         notes: Performance & safety mark issuance for HVAC equipment
+      - stage_order: 8
+        stage_name: Market Introduction
+        capability_id: BC-2100
+        industry_variant: Insurance
+        notes: Regulatory rate filing & approval
       - stage_order: 9
         stage_name: Post-Launch Performance
         capability_id: BC-820
@@ -491,6 +521,11 @@ value_streams:
         capability_id: BC-1940
         industry_variant: Electrical Components & Equipment
         notes: Phase-in / phase-out, last-buy windows
+      - stage_order: 9
+        stage_name: Post-Launch Performance
+        capability_id: BC-2100
+        industry_variant: Insurance
+        notes: Product performance review
   - name: Plan-to-Inventory
     stages:
       - stage_order: 1
@@ -554,6 +589,11 @@ value_streams:
         stage_name: Sub-Ledger Close
         capability_id: BC-200
         notes: AP cut-off; AR cut-off; Fixed asset depreciation run
+      - stage_order: 2
+        stage_name: Sub-Ledger Close
+        capability_id: BC-2150
+        industry_variant: Insurance
+        notes: Premium earnings & DAC close
       - stage_order: 3
         stage_name: Reconciliation & Adjustments
         capability_id: BC-200
@@ -586,6 +626,11 @@ value_streams:
         stage_name: Statutory & Regulatory Reporting
         capability_id: BC-240
         notes: Investor relations disclosures
+      - stage_order: 6
+        stage_name: Statutory & Regulatory Reporting
+        capability_id: BC-2180
+        industry_variant: Insurance
+        notes: IFRS 17 & Solvency II reporting
       - stage_order: 7
         stage_name: Audit & Sign-Off
         capability_id: BC-130
@@ -752,6 +797,11 @@ value_streams:
         stage_name: Risk Identification
         capability_id: BC-520
         notes: Supply chain risk feed
+      - stage_order: 2
+        stage_name: Risk Identification
+        capability_id: BC-2190
+        industry_variant: Insurance
+        notes: Insurance risk taxonomy
       - stage_order: 3
         stage_name: Risk Assessment
         capability_id: BC-120
@@ -766,10 +816,20 @@ value_streams:
         capability_id: BC-1970
         industry_variant: Electrical Components & Equipment
         notes: Functional-safety risk assessment for products
+      - stage_order: 3
+        stage_name: Risk Assessment
+        capability_id: BC-2180
+        industry_variant: Insurance
+        notes: Capital & solvency modelling
       - stage_order: 4
         stage_name: Treatment & Control Design
         capability_id: BC-120
         notes: Controls & mitigations; Insurance transfer
+      - stage_order: 4
+        stage_name: Treatment & Control Design
+        capability_id: BC-2170
+        industry_variant: Insurance
+        notes: Reinsurance as risk transfer
       - stage_order: 5
         stage_name: Monitoring
         capability_id: BC-120
@@ -779,6 +839,11 @@ value_streams:
         capability_id: BC-1320
         industry_variant: Banking
         notes: Credit risk modelling
+      - stage_order: 5
+        stage_name: Monitoring
+        capability_id: BC-2190
+        industry_variant: Insurance
+        notes: ORSA monitoring
       - stage_order: 6
         stage_name: Reporting & Escalation
         capability_id: BC-120
@@ -921,6 +986,11 @@ value_streams:
         stage_name: Lead Capture & Nurture
         capability_id: BC-410
         notes: Pipeline handoff
+      - stage_order: 4
+        stage_name: Lead Capture & Nurture
+        capability_id: BC-2110
+        industry_variant: Insurance
+        notes: Quote / submission intake via producers
       - stage_order: 5
         stage_name: Conversion
         capability_id: BC-1300
@@ -930,6 +1000,11 @@ value_streams:
         stage_name: Conversion
         capability_id: BC-410
         notes: Quote / CPQ
+      - stage_order: 5
+        stage_name: Conversion
+        capability_id: BC-2120
+        industry_variant: Insurance
+        notes: Policyholder conversion
       - stage_order: 6
         stage_name: Customer Onboarding
         capability_id: BC-1300
@@ -939,6 +1014,11 @@ value_streams:
         stage_name: Customer Onboarding
         capability_id: BC-420
         notes: Customer lifecycle activation
+      - stage_order: 6
+        stage_name: Customer Onboarding
+        capability_id: BC-2120
+        industry_variant: Insurance
+        notes: Policyholder onboarding & KYC
       - stage_order: 7
         stage_name: Retention & Advocacy
         capability_id: BC-420
@@ -947,6 +1027,11 @@ value_streams:
         stage_name: Retention & Advocacy
         capability_id: BC-430
         notes: Customer feedback loop
+      - stage_order: 7
+        stage_name: Retention & Advocacy
+        capability_id: BC-2120
+        industry_variant: Insurance
+        notes: Policyholder retention
   - name: Application-to-Funding
     stages:
       - stage_order: 1
@@ -1470,6 +1555,11 @@ value_streams:
         capability_id: BC-2070
         industry_variant: HVAC & Building Automation Systems
         notes: Building energy & operational carbon telemetry
+      - stage_order: 2
+        stage_name: Data Collection
+        capability_id: BC-2200
+        industry_variant: Insurance
+        notes: Investment portfolio climate data
       - stage_order: 3
         stage_name: Data Quality & Assurance
         capability_id: BC-140

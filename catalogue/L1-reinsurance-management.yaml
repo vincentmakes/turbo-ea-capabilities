@@ -1,0 +1,210 @@
+# Reinsurance Management
+id: BC-2170
+name: Reinsurance Management
+level: 1
+industry: Insurance
+description: |
+  Ceded and assumed reinsurance - treaty design, facultative placements,
+  bordereau, claim recoveries, accounting, and reinsurance counterparty
+  exposure management.
+references:
+  - https://www.acord.org/standards/reference-architecture
+  - https://www.iaisweb.org/icp-online-tool/
+  - https://www.lloyds.com/conducting-business/delegated-authorities
+children:
+  - id: BC-2170.10
+    name: Ceded Reinsurance Programme Design
+    level: 2
+    industry: Insurance
+    description: |
+      Reinsurance need analysis, programme structuring, and reinsurance broker coordination.
+    children:
+      - id: BC-2170.10.10
+        name: Reinsurance Need Analysis
+        level: 3
+        industry: Insurance
+        description: |
+          Analysis of reinsurance needs based on portfolio, risk appetite, and capital constraints.
+        children: []
+      - id: BC-2170.10.20
+        name: Treaty and Facultative Strategy
+        level: 3
+        industry: Insurance
+        description: |
+          Strategy on treaty vs facultative cessions and proportional vs non-proportional structures.
+        children: []
+      - id: BC-2170.10.30
+        name: Programme Structuring
+        level: 3
+        industry: Insurance
+        description: |
+          Structuring of reinsurance programmes, layers, and retentions.
+        children: []
+      - id: BC-2170.10.40
+        name: Reinsurance Broker Coordination
+        level: 3
+        industry: Insurance
+        description: |
+          Coordination with reinsurance brokers on placement and renewal.
+        children: []
+  - id: BC-2170.20
+    name: Treaty Reinsurance Administration
+    level: 2
+    industry: Insurance
+    description: |
+      Treaty onboarding, premium cession, bordereau production, and treaty claims recovery.
+    children:
+      - id: BC-2170.20.10
+        name: Treaty Onboarding and Renewal
+        level: 3
+        industry: Insurance
+        description: |
+          Onboarding and renewal of reinsurance treaties and slip placement.
+        children: []
+      - id: BC-2170.20.20
+        name: Treaty Premium Calculation and Cession
+        level: 3
+        industry: Insurance
+        description: |
+          Calculation of treaty premiums and cession to participating reinsurers.
+        children: []
+      - id: BC-2170.20.30
+        name: Treaty Bordereau Production
+        level: 3
+        industry: Insurance
+        description: |
+          Production of treaty premium and claim bordereaux per market practice.
+        children: []
+      - id: BC-2170.20.40
+        name: Treaty Claims Recovery
+        level: 3
+        industry: Insurance
+        description: |
+          Recovery of treaty claim payments from reinsurers.
+        children: []
+  - id: BC-2170.30
+    name: Facultative Reinsurance Administration
+    level: 2
+    industry: Insurance
+    description: |
+      Facultative submission, placement tracking, and premium and claim settlement.
+    children:
+      - id: BC-2170.30.10
+        name: Facultative Risk Submission
+        level: 3
+        industry: Insurance
+        description: |
+          Submission of individual risks for facultative placement.
+        children: []
+      - id: BC-2170.30.20
+        name: Facultative Placement Tracking
+        level: 3
+        industry: Insurance
+        description: |
+          Tracking of facultative placement signings and shares across reinsurers.
+        children: []
+      - id: BC-2170.30.30
+        name: Facultative Premium and Claim Settlement
+        level: 3
+        industry: Insurance
+        description: |
+          Settlement of facultative premium and claim recoveries.
+        children: []
+  - id: BC-2170.40
+    name: Assumed Reinsurance Management
+    level: 2
+    industry: Insurance
+    description: |
+      Inwards underwriting, premium booking, claims adjudication, and retrocession coordination.
+    children:
+      - id: BC-2170.40.10
+        name: Inwards Submission Underwriting
+        level: 3
+        industry: Insurance
+        description: |
+          Underwriting of inwards reinsurance submissions and risk acceptance.
+        children: []
+      - id: BC-2170.40.20
+        name: Inwards Premium Booking
+        level: 3
+        industry: Insurance
+        description: |
+          Booking of inwards reinsurance premium and adjustments.
+        children: []
+      - id: BC-2170.40.30
+        name: Inwards Claims Adjudication
+        level: 3
+        industry: Insurance
+        description: |
+          Adjudication of inwards reinsurance claims and recoveries.
+        children: []
+      - id: BC-2170.40.40
+        name: Retrocession Coordination
+        level: 3
+        industry: Insurance
+        description: |
+          Coordination of retrocession to second-tier reinsurers.
+        children: []
+  - id: BC-2170.50
+    name: "Reinsurance Accounting & Settlement"
+    level: 2
+    industry: Insurance
+    description: |
+      Cession accounting, recoverable tracking, statement reconciliation, and counterparty collateral.
+    children:
+      - id: BC-2170.50.10
+        name: Cession and Premium Accounting
+        level: 3
+        industry: Insurance
+        description: |
+          Accounting for ceded premium, commissions, and adjustments.
+        children: []
+      - id: BC-2170.50.20
+        name: Reinsurance Recoverable Tracking
+        level: 3
+        industry: Insurance
+        description: |
+          Tracking of reinsurance recoverables on paid and outstanding claims.
+        children: []
+      - id: BC-2170.50.30
+        name: Reinsurer Statement Reconciliation
+        level: 3
+        industry: Insurance
+        description: |
+          Reconciliation of reinsurer statements and resolution of disputes.
+        children: []
+      - id: BC-2170.50.40
+        name: Counterparty Collateral Management
+        level: 3
+        industry: Insurance
+        description: |
+          Management of letters of credit, trust funds, and collateral from reinsurers.
+        children: []
+  - id: BC-2170.60
+    name: Reinsurance Counterparty Risk Management
+    level: 2
+    industry: Insurance
+    description: |
+      Reinsurer credit assessment, counterparty limit monitoring, and default mitigation.
+    children:
+      - id: BC-2170.60.10
+        name: Reinsurer Credit Assessment
+        level: 3
+        industry: Insurance
+        description: |
+          Credit and financial-strength assessment of reinsurance counterparties.
+        children: []
+      - id: BC-2170.60.20
+        name: Concentration and Counterparty Limit Monitoring
+        level: 3
+        industry: Insurance
+        description: |
+          Monitoring of concentration and counterparty exposure limits.
+        children: []
+      - id: BC-2170.60.30
+        name: Reinsurer Default Mitigation
+        level: 3
+        industry: Insurance
+        description: |
+          Mitigation actions on reinsurer downgrade or default scenarios.
+        children: []

@@ -1,0 +1,195 @@
+# Policy Administration Management
+id: BC-2140
+name: Policy Administration Management
+level: 1
+industry: Insurance
+description: |
+  Issuance, endorsements, mid-term adjustments, renewals, cancellations,
+  lapses, reinstatements, document management, and group / master-policy
+  administration of in-force insurance contracts.
+references:
+  - https://www.acord.org/standards/reference-architecture
+  - https://www.iaisweb.org/icp-online-tool/
+children:
+  - id: BC-2140.10
+    name: Policy Issuance Management
+    level: 2
+    industry: Insurance
+    description: |
+      Generation, assembly, and activation of new policy contracts and supporting documents.
+    children:
+      - id: BC-2140.10.10
+        name: Policy Document Generation
+        level: 3
+        industry: Insurance
+        description: |
+          Generation of policy documents from product templates and bound terms.
+        children: []
+      - id: BC-2140.10.20
+        name: Policy Schedule and Wording Assembly
+        level: 3
+        industry: Insurance
+        description: |
+          Assembly of policy schedules, wordings, and endorsements into the contract.
+        children: []
+      - id: BC-2140.10.30
+        name: Policy Activation
+        level: 3
+        industry: Insurance
+        description: |
+          Activation of new policies and notification to downstream systems.
+        children: []
+  - id: BC-2140.20
+    name: "Policy Endorsement & Mid-Term Adjustment"
+    level: 2
+    industry: Insurance
+    description: |
+      Capture, pricing, approval, and issuance of endorsements and mid-term adjustments.
+    children:
+      - id: BC-2140.20.10
+        name: Endorsement Request Capture
+        level: 3
+        industry: Insurance
+        description: |
+          Capture of endorsement requests from policyholders and producers.
+        children: []
+      - id: BC-2140.20.20
+        name: Endorsement Pricing and Approval
+        level: 3
+        industry: Insurance
+        description: |
+          Pricing of endorsements and underwriting approval where required.
+        children: []
+      - id: BC-2140.20.30
+        name: Endorsement Issuance and Communication
+        level: 3
+        industry: Insurance
+        description: |
+          Issuance of endorsement documents and communication to policyholder.
+        children: []
+  - id: BC-2140.30
+    name: Policy Renewal Management
+    level: 2
+    industry: Insurance
+    description: |
+      Renewal eligibility, repricing, offer generation, and non-renewal handling.
+    children:
+      - id: BC-2140.30.10
+        name: Renewal Eligibility Assessment
+        level: 3
+        industry: Insurance
+        description: |
+          Assessment of renewal eligibility based on loss experience and underwriting rules.
+        children: []
+      - id: BC-2140.30.20
+        name: Renewal Repricing
+        level: 3
+        industry: Insurance
+        description: |
+          Repricing of renewing policies under current rate filings and experience.
+        children: []
+      - id: BC-2140.30.30
+        name: Renewal Offer Generation
+        level: 3
+        industry: Insurance
+        description: |
+          Generation and despatch of renewal offers to policyholders.
+        children: []
+      - id: BC-2140.30.40
+        name: Non-Renewal Handling
+        level: 3
+        industry: Insurance
+        description: |
+          Handling of non-renewals, including notice periods and regulatory communications.
+        children: []
+  - id: BC-2140.40
+    name: "Policy Cancellation & Lapse Management"
+    level: 2
+    industry: Insurance
+    description: |
+      Cancellation processing, premium adjustment, lapse, and reinstatement.
+    children:
+      - id: BC-2140.40.10
+        name: Cancellation Request Processing
+        level: 3
+        industry: Insurance
+        description: |
+          Processing of cancellation requests from policyholders, producers, or carrier.
+        children: []
+      - id: BC-2140.40.20
+        name: Pro-Rata and Short-Rate Calculation
+        level: 3
+        industry: Insurance
+        description: |
+          Calculation of pro-rata and short-rate premium adjustments on cancellation.
+        children: []
+      - id: BC-2140.40.30
+        name: Lapse Handling
+        level: 3
+        industry: Insurance
+        description: |
+          Lapse processing for non-payment and notification to policyholder.
+        children: []
+      - id: BC-2140.40.40
+        name: Reinstatement Processing
+        level: 3
+        industry: Insurance
+        description: |
+          Reinstatement of lapsed or cancelled policies subject to underwriting checks.
+        children: []
+  - id: BC-2140.50
+    name: "Policy Document & Records Management"
+    level: 2
+    industry: Insurance
+    description: |
+      Repository of policy documents, regulatory records retention, and policy audit trails.
+    children:
+      - id: BC-2140.50.10
+        name: Policy Document Repository
+        level: 3
+        industry: Insurance
+        description: |
+          Repository of policy documents and supporting correspondence.
+        children: []
+      - id: BC-2140.50.20
+        name: Regulatory Records Retention
+        level: 3
+        industry: Insurance
+        description: |
+          Retention of policy records per insurance regulatory requirements.
+        children: []
+      - id: BC-2140.50.30
+        name: Policy Audit Trail Maintenance
+        level: 3
+        industry: Insurance
+        description: |
+          Maintenance of immutable audit trails on policy changes and decisions.
+        children: []
+  - id: BC-2140.60
+    name: "Group & Master Policy Administration"
+    level: 2
+    industry: Insurance
+    description: |
+      Group policy setup, certificate maintenance, and group renewal cycles.
+    children:
+      - id: BC-2140.60.10
+        name: Group Policy Setup
+        level: 3
+        industry: Insurance
+        description: |
+          Setup of group and master-policy contracts for employer and affinity schemes.
+        children: []
+      - id: BC-2140.60.20
+        name: Member and Certificate Maintenance
+        level: 3
+        industry: Insurance
+        description: |
+          Maintenance of group members, certificates, and dependents.
+        children: []
+      - id: BC-2140.60.30
+        name: Group Renewal Cycle Management
+        level: 3
+        industry: Insurance
+        description: |
+          Management of group renewal cycles, repricing, and member re-enrolment.
+        children: []

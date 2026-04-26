@@ -1,0 +1,231 @@
+# Insurance Distribution Management
+id: BC-2110
+name: Insurance Distribution Management
+level: 1
+industry: Insurance
+description: |
+  Producer, broker, agent, MGA, and direct channel relationships,
+  including appointments, commissions, licensing, delegated authorities,
+  and quote and submission flow into underwriting.
+references:
+  - https://www.acord.org/standards/reference-architecture
+  - https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016L0097
+  - https://www.lloyds.com/conducting-business/delegated-authorities
+children:
+  - id: BC-2110.10
+    name: "Producer & Intermediary Management"
+    level: 2
+    industry: Insurance
+    description: |
+      Onboarding, hierarchy, performance tracking, and offboarding of producers and intermediaries.
+    children:
+      - id: BC-2110.10.10
+        name: Producer Onboarding
+        level: 3
+        industry: Insurance
+        description: |
+          Onboarding of producers, intermediaries, brokers, and MGAs.
+        children: []
+      - id: BC-2110.10.20
+        name: Producer Hierarchy and Account Maintenance
+        level: 3
+        industry: Insurance
+        description: |
+          Maintenance of producer hierarchy, account structures, and contact data.
+        children: []
+      - id: BC-2110.10.30
+        name: Producer Performance Tracking
+        level: 3
+        industry: Insurance
+        description: |
+          Tracking of producer production, loss ratio, and profitability.
+        children: []
+      - id: BC-2110.10.40
+        name: Producer Offboarding
+        level: 3
+        industry: Insurance
+        description: |
+          Offboarding of producers, run-off of in-force books, and final settlement.
+        children: []
+  - id: BC-2110.20
+    name: "Producer Licensing & Appointment Management"
+    level: 2
+    industry: Insurance
+    description: |
+      Licence verification, jurisdictional appointments, continuing education, and producer compliance.
+    children:
+      - id: BC-2110.20.10
+        name: Licence Verification
+        level: 3
+        industry: Insurance
+        description: |
+          Verification of producer licences against state and jurisdictional registries.
+        children: []
+      - id: BC-2110.20.20
+        name: Jurisdiction Appointment Management
+        level: 3
+        industry: Insurance
+        description: |
+          Management of state and jurisdictional appointments, terminations, and renewals.
+        children: []
+      - id: BC-2110.20.30
+        name: Continuing Education Tracking
+        level: 3
+        industry: Insurance
+        description: |
+          Tracking of producer continuing-education credits and renewal eligibility.
+        children: []
+      - id: BC-2110.20.40
+        name: Producer Compliance Monitoring
+        level: 3
+        industry: Insurance
+        description: |
+          Monitoring of producer conduct, complaints, and disciplinary actions.
+        children: []
+  - id: BC-2110.30
+    name: "Commission & Incentive Management"
+    level: 2
+    industry: Insurance
+    description: |
+      Commission schedule configuration, calculation, override and bonus, and statement generation.
+    children:
+      - id: BC-2110.30.10
+        name: Commission Schedule Configuration
+        level: 3
+        industry: Insurance
+        description: |
+          Configuration of commission schedules and rates by product and producer.
+        children: []
+      - id: BC-2110.30.20
+        name: Commission Calculation
+        level: 3
+        industry: Insurance
+        description: |
+          Calculation of commissions on premium events, including reversals on cancellation.
+        children: []
+      - id: BC-2110.30.30
+        name: Override and Bonus Calculation
+        level: 3
+        industry: Insurance
+        description: |
+          Calculation of overrides, profit-sharing, and incentive bonuses.
+        children: []
+      - id: BC-2110.30.40
+        name: Commission Statement Generation
+        level: 3
+        industry: Insurance
+        description: |
+          Generation and distribution of producer commission statements.
+        children: []
+  - id: BC-2110.40
+    name: Distribution Channel Management
+    level: 2
+    industry: Insurance
+    description: |
+      Operation of agent, broker, direct digital, bancassurance, affinity, and aggregator channels.
+    children:
+      - id: BC-2110.40.10
+        name: Agent Channel Operations
+        level: 3
+        industry: Insurance
+        description: |
+          Operation of tied and independent agent channels.
+        children: []
+      - id: BC-2110.40.20
+        name: Broker Channel Operations
+        level: 3
+        industry: Insurance
+        description: |
+          Operation of broker and wholesale broker channels.
+        children: []
+      - id: BC-2110.40.30
+        name: Direct Digital Channel Operations
+        level: 3
+        industry: Insurance
+        description: |
+          Operation of direct-to-customer digital insurance channels.
+        children: []
+      - id: BC-2110.40.40
+        name: Bancassurance and Affinity Channel Operations
+        level: 3
+        industry: Insurance
+        description: |
+          Operation of bancassurance partnerships and affinity-group channels.
+        children: []
+      - id: BC-2110.40.50
+        name: Aggregator and Comparison Channel Operations
+        level: 3
+        industry: Insurance
+        description: |
+          Operation of aggregator and price-comparison website channels.
+        children: []
+  - id: BC-2110.50
+    name: Delegated Authority Management
+    level: 2
+    industry: Insurance
+    description: |
+      Coverholder authority setup, performance monitoring, bordereau intake, and authority audit.
+    children:
+      - id: BC-2110.50.10
+        name: Delegated Authority Setup
+        level: 3
+        industry: Insurance
+        description: |
+          Setup of binding authorities and delegated underwriting agreements.
+        children: []
+      - id: BC-2110.50.20
+        name: Coverholder Performance Monitoring
+        level: 3
+        industry: Insurance
+        description: |
+          Monitoring of coverholder underwriting performance and adherence to authority.
+        children: []
+      - id: BC-2110.50.30
+        name: Bordereau Receipt and Reconciliation
+        level: 3
+        industry: Insurance
+        description: |
+          Receipt, ingestion, and reconciliation of premium and claim bordereaux.
+        children: []
+      - id: BC-2110.50.40
+        name: Authority Audit and Withdrawal
+        level: 3
+        industry: Insurance
+        description: |
+          Audit of coverholder operations and withdrawal of binding authority where required.
+        children: []
+  - id: BC-2110.60
+    name: "Quote & Submission Management"
+    level: 2
+    industry: Insurance
+    description: |
+      Submission intake, quote generation, comparison, and quote-to-bind conversion tracking.
+    children:
+      - id: BC-2110.60.10
+        name: Submission Intake
+        level: 3
+        industry: Insurance
+        description: |
+          Intake of insurance submissions across channels and broker portals.
+        children: []
+      - id: BC-2110.60.20
+        name: Quote Generation
+        level: 3
+        industry: Insurance
+        description: |
+          Generation of insurance quotes from product and rating configuration.
+        children: []
+      - id: BC-2110.60.30
+        name: Quote Comparison and Counter-Quote
+        level: 3
+        industry: Insurance
+        description: |
+          Multi-carrier quote comparison and counter-quote handling.
+        children: []
+      - id: BC-2110.60.40
+        name: Quote to Bind Conversion Tracking
+        level: 3
+        industry: Insurance
+        description: |
+          Tracking of quote-to-bind conversion rates and reasons for non-conversion.
+        children: []
