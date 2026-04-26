@@ -8,7 +8,7 @@ An **open-source Business Capability Reference Catalogue**. It is intentionally 
 - **Python package:** [`turbo-ea-capabilities`](https://pypi.org/project/turbo-ea-capabilities/) on PyPI — embeds the catalogue as bundled JSON for offline / airgapped consumers.
 - **Blog & EA resources:** [`turbo-ea.org/blog`](https://www.turbo-ea.org/blog/).
 
-The naming convention, decomposition rules, and identifier scheme are defined in [`business-capability-governance-model.md`](business-capability-governance-model.md). The operational PR/CI workflow is in [`governance.md`](governance.md).
+All governance lives in [`business-capability-governance-model.md`](business-capability-governance-model.md): **Part A** covers the reference model (definition, levels, naming, identifiers, metadata); **Part B** covers operational governance (PR workflow, lint rules, versioning, promotion).
 
 ## Layout
 
