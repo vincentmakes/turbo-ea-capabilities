@@ -1,0 +1,203 @@
+# Food Safety & Traceability Management
+id: BC-2380
+name: "Food Safety & Traceability Management"
+level: 1
+industry: Retail & Consumer Goods
+description: |
+  Food-safety programmes, lot and batch traceability, recall coordination,
+  perishables shelf-life management, and cold-chain compliance for grocery
+  and food-manufacturing operations.
+references:
+  - https://www.fssc.com/scheme/fssc-22000/
+  - https://www.brcgs.com/our-standards/food-safety/
+  - https://www.gs1.org/standards/epcis
+children:
+  - id: BC-2380.10
+    name: Food Safety Programme Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Food-safety policy, HACCP, and certification programmes (BRCGS, SQF,
+      FSSC 22000, IFS Food, ISO 22000) governing food handling and supply.
+    in_scope:
+      - HACCP and food-safety policy
+      - Third-party certification (BRCGS, SQF, FSSC 22000, IFS Food)
+      - Food-safety incident management
+    out_of_scope:
+      - Generic quality management (BC-720)
+    children:
+      - id: BC-2380.10.10
+        name: Food Safety Policy Management
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Food-safety policy authoring and stewardship across the network.
+        children: []
+      - id: BC-2380.10.20
+        name: HACCP Plan Management
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          HACCP plan development, hazard analysis, and critical-control-point monitoring.
+        children: []
+      - id: BC-2380.10.30
+        name: Food Safety Certification Management
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Certification against BRCGS, SQF, FSSC 22000, IFS Food, and ISO 22000.
+        children: []
+      - id: BC-2380.10.40
+        name: Food Safety Incident Management
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Incident handling for food-safety events including pathogen detections.
+        children: []
+  - id: BC-2380.20
+    name: "Lot & Batch Traceability Management"
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      One-up / one-down lot and batch traceability across the supply chain
+      using GS1 EPCIS event capture and trading-partner data exchange.
+    children:
+      - id: BC-2380.20.10
+        name: Lot and Batch Coding
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Lot and batch code generation and printing per GS1 standards.
+        children: []
+      - id: BC-2380.20.20
+        name: EPCIS Event Capture
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Capture of EPCIS events (commission, ship, receive) across the supply chain.
+        children: []
+      - id: BC-2380.20.30
+        name: One-Up One-Down Trace
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          One-up / one-down trace of inputs and outputs at each handling node.
+        children: []
+      - id: BC-2380.20.40
+        name: Trading Partner Trace Data Exchange
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Exchange of trace data with suppliers and downstream trading partners.
+        children: []
+  - id: BC-2380.30
+    name: "Recall & Withdrawal Coordination Management"
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Coordination of food and consumer-goods recalls and withdrawals,
+      including regulator notification and consumer communication.
+    in_scope:
+      - Recall classification and decision-making
+      - Regulator notification and reporting
+      - Consumer and trading-partner communication
+    children:
+      - id: BC-2380.30.10
+        name: Recall Decision and Classification
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Decision and classification of recall scope and severity.
+        children: []
+      - id: BC-2380.30.20
+        name: Regulator Notification
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Notification of food-safety regulators per jurisdictional rules.
+        children: []
+      - id: BC-2380.30.30
+        name: Consumer and Trading Partner Communication
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Communication to consumers and trading partners about recall actions.
+        children: []
+      - id: BC-2380.30.40
+        name: Recall Effectiveness Verification
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Verification of recall effectiveness and recovery rates.
+        children: []
+  - id: BC-2380.40
+    name: "Perishables & Shelf-Life Management"
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Shelf-life monitoring, FEFO rotation, dating discipline, and waste
+      reduction across perishables categories.
+    children:
+      - id: BC-2380.40.10
+        name: Shelf Life and Date Coding
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Definition and printing of shelf-life and date codes per market rules.
+        children: []
+      - id: BC-2380.40.20
+        name: First-Expire-First-Out Rotation
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          FEFO rotation in stores and distribution centres.
+        children: []
+      - id: BC-2380.40.30
+        name: Perishables Markdown Coordination
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Coordination of perishables markdowns ahead of expiry to reduce waste.
+        children: []
+      - id: BC-2380.40.40
+        name: Food Waste Reduction Programmes
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Programmes for food-waste reduction, donation, and circular routing.
+        children: []
+  - id: BC-2380.50
+    name: Cold Chain Compliance Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Cold-chain integrity for chilled and frozen food including temperature
+      monitoring, excursion handling, and disposition decisions.
+    in_scope:
+      - Cold-chain temperature monitoring across nodes
+      - Excursion investigation and disposition
+      - Cold-chain SOPs and audits
+    out_of_scope:
+      - Pharmaceutical cold chain (BC-1570.10)
+    children:
+      - id: BC-2380.50.10
+        name: Cold Chain Temperature Monitoring
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          End-to-end temperature monitoring across the food cold chain.
+        children: []
+      - id: BC-2380.50.20
+        name: Cold Chain Excursion Disposition
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Investigation and disposition of cold-chain temperature excursions.
+        children: []
+      - id: BC-2380.50.30
+        name: Cold Chain Audit and Verification
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Audit and verification of cold-chain practices across the network.
+        children: []

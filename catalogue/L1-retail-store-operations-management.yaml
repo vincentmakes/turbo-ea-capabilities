@@ -1,0 +1,212 @@
+# Retail Store Operations Management
+id: BC-2310
+name: Retail Store Operations Management
+level: 1
+industry: Retail & Consumer Goods
+description: |
+  Day-to-day operation of physical retail stores - opening and closing
+  routines, in-store execution, store-level workforce, audits, fixture
+  care, and the consistent delivery of the store-format experience.
+references:
+  - https://nrf.com/resources/retail-technology-standards
+children:
+  - id: BC-2310.10
+    name: "Store Opening & Closing Operations"
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Daily store opening and closing routines including cash drawer
+      preparation, end-of-day reconciliation, and shift handover.
+    children:
+      - id: BC-2310.10.10
+        name: Store Opening Routine Execution
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Execution of store opening procedures including readiness checks.
+        children: []
+      - id: BC-2310.10.20
+        name: Store Closing Routine Execution
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          End-of-day closing routines including reconciliation and securing.
+        children: []
+      - id: BC-2310.10.30
+        name: Shift Handover Management
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Shift handover between teams with task and incident pass-through.
+        children: []
+  - id: BC-2310.20
+    name: In-Store Execution Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Execution of merchandising, promotion, signage, and replenishment
+      tasks at store level so the store reflects the head-office plan.
+    in_scope:
+      - Task management for store associates
+      - Planogram and signage execution
+      - In-store replenishment from back-of-house stock
+    out_of_scope:
+      - Planogram design (BC-2300.30.10)
+    children:
+      - id: BC-2310.20.10
+        name: Store Task Management
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Distribution and tracking of operational tasks to store teams.
+        children: []
+      - id: BC-2310.20.20
+        name: Planogram and Signage Execution
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          In-store execution of planograms, signage, and promotional set-up.
+        children: []
+      - id: BC-2310.20.30
+        name: In-Store Replenishment
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Replenishment of shelves from back-of-house and stockroom inventory.
+        children: []
+      - id: BC-2310.20.40
+        name: Stockroom and Backroom Operations
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Receiving, organisation, and management of stockroom and backroom inventory.
+        children: []
+  - id: BC-2310.30
+    name: Store Workforce Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Store-level labour scheduling, headcount-by-hour planning, and
+      associate performance management.
+    in_scope:
+      - Hourly labour forecasts driven by traffic and sales
+      - Shift scheduling and time-and-attendance
+      - Associate performance and coaching at store level
+    out_of_scope:
+      - Enterprise human capital management (BC-300)
+    children:
+      - id: BC-2310.30.10
+        name: Labour Demand Forecasting
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Forecasting of hourly labour demand by store and department.
+        children: []
+      - id: BC-2310.30.20
+        name: Store Shift Scheduling
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Scheduling of store shifts respecting fairness and labour rules.
+        children: []
+      - id: BC-2310.30.30
+        name: Time and Attendance Management
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Capture of clock-in, clock-out, and exception management.
+        children: []
+      - id: BC-2310.30.40
+        name: Associate Performance Coaching
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Coaching, recognition, and performance management of store associates.
+        children: []
+  - id: BC-2310.40
+    name: "Store Audit & Compliance Management"
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Operational audits, compliance walks, mystery shopping, and store
+      conformance to brand and operating standards.
+    children:
+      - id: BC-2310.40.10
+        name: Operational Audit Programme
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Programme of operational audits and walks against store standards.
+        children: []
+      - id: BC-2310.40.20
+        name: Mystery Shopping Programme
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Mystery-shopper programme to evaluate the customer experience.
+        children: []
+      - id: BC-2310.40.30
+        name: Store Standards Conformance
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Conformance to brand, safety, and operating standards by store.
+        children: []
+  - id: BC-2310.50
+    name: Store Asset Care Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Store-level care of fixtures, equipment, refrigeration, and
+      cleanliness to keep the store sales-ready.
+    children:
+      - id: BC-2310.50.10
+        name: Fixture and Equipment Maintenance
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Maintenance of in-store fixtures, racks, and equipment.
+        children: []
+      - id: BC-2310.50.20
+        name: Refrigeration Uptime Management
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Monitoring and uptime management of refrigeration in food retail.
+        children: []
+      - id: BC-2310.50.30
+        name: Store Housekeeping and Hygiene
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Cleanliness, housekeeping, and hygiene routines for the sales floor.
+        children: []
+  - id: BC-2310.60
+    name: "Store Format & Experience Management"
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Definition and stewardship of store-format experience standards
+      including service model, look-and-feel, and customer journey.
+    children:
+      - id: BC-2310.60.10
+        name: Store Format Standards
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Standards for each store format covering layout, service, and ambience.
+        children: []
+      - id: BC-2310.60.20
+        name: In-Store Customer Experience Design
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Design of the in-store customer journey and service interactions.
+        children: []
+      - id: BC-2310.60.30
+        name: Store Concept Refresh Planning
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Planning of store concept refreshes and pilot rollouts.
+        children: []

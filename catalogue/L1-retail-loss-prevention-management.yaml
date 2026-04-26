@@ -1,0 +1,172 @@
+# Retail Loss Prevention Management
+id: BC-2340
+name: Retail Loss Prevention Management
+level: 1
+industry: Retail & Consumer Goods
+description: |
+  Prevention, detection, investigation, and reduction of stock loss and
+  fraud across the retail estate - from shoplifting and organised retail
+  crime to internal theft and POS-level abuse.
+references:
+  - https://nrf.com/research-insights/loss-prevention
+children:
+  - id: BC-2340.10
+    name: Shrinkage Analysis Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Measurement, root-cause analysis, and reporting of stock shrinkage
+      across stores, channels, and categories.
+    in_scope:
+      - Stock-loss measurement against book inventory
+      - Shrink reporting by store, category, and cause
+      - Root-cause analysis of unknown loss
+    children:
+      - id: BC-2340.10.10
+        name: Shrink Measurement
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Measurement of shrink against book inventory and physical counts.
+        children: []
+      - id: BC-2340.10.20
+        name: Shrink Root-Cause Analysis
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Root-cause analysis of shrink across known and unknown loss.
+        children: []
+      - id: BC-2340.10.30
+        name: Shrink Reporting and Targets
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Shrink reporting and reduction-target setting by store and category.
+        children: []
+  - id: BC-2340.20
+    name: Internal Theft Investigation Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Detection, investigation, and resolution of dishonesty by employees
+      including disciplinary and recovery actions.
+    children:
+      - id: BC-2340.20.10
+        name: Employee Dishonesty Detection
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Detection of employee dishonesty via tip lines, analytics, and audits.
+        children: []
+      - id: BC-2340.20.20
+        name: Internal Investigation Casework
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Casework for internal investigations including evidence handling.
+        children: []
+      - id: BC-2340.20.30
+        name: Recovery and Disciplinary Coordination
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Coordination of recovery, disciplinary, and HR follow-through.
+        children: []
+  - id: BC-2340.30
+    name: External Theft and ORC Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Prevention and investigation of shoplifting and organised retail
+      crime including law-enforcement and industry-association liaison.
+    children:
+      - id: BC-2340.30.10
+        name: Shoplifting Prevention
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Prevention of shoplifting through deterrence, layout, and intervention.
+        children: []
+      - id: BC-2340.30.20
+        name: Organised Retail Crime Investigation
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Investigation of organised retail crime networks and patterns.
+        children: []
+      - id: BC-2340.30.30
+        name: Law Enforcement Liaison
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Liaison with police and industry forums on retail-crime cases.
+        children: []
+  - id: BC-2340.40
+    name: POS Fraud Prevention Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Detection and prevention of fraud at the point of sale including
+      refund fraud, sweethearting, and exception-based reporting.
+    in_scope:
+      - Refund and exchange fraud detection
+      - Sweethearting and discount-abuse detection
+      - POS exception-based reporting
+    children:
+      - id: BC-2340.40.10
+        name: Refund and Exchange Fraud Detection
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Detection of refund and exchange-based fraud patterns.
+        children: []
+      - id: BC-2340.40.20
+        name: Sweethearting and Discount Abuse Detection
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Detection of sweethearting and unauthorised discount application.
+        children: []
+      - id: BC-2340.40.30
+        name: POS Exception-Based Reporting
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Exception-based reporting on POS transactions to surface anomalies.
+        children: []
+  - id: BC-2340.50
+    name: "Physical Security & Surveillance Management"
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Store-level physical security including CCTV, EAS, access controls,
+      and guarding services.
+    children:
+      - id: BC-2340.50.10
+        name: Store CCTV Operations
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Operation, monitoring, and evidence management of in-store CCTV.
+        children: []
+      - id: BC-2340.50.20
+        name: Electronic Article Surveillance Operations
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Operation of EAS gates and tagging, including alarm response.
+        children: []
+      - id: BC-2340.50.30
+        name: Store Access Control
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Physical access control to stockrooms, cash offices, and back-of-house.
+        children: []
+      - id: BC-2340.50.40
+        name: Guard Service Management
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Deployment and management of in-store and contracted guard services.
+        children: []

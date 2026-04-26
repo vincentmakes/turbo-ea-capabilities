@@ -1,0 +1,243 @@
+# Point of Sale Operations Management
+id: BC-2320
+name: Point of Sale Operations Management
+level: 1
+industry: Retail & Consumer Goods
+description: |
+  Customer-facing transaction layer of retail - sales rings, tender and
+  payment acceptance, returns and refunds, cash handling, POS configuration,
+  and continuity of selling during system outages.
+references:
+  - https://nrf.com/resources/retail-technology-standards
+  - https://www.pcisecuritystandards.org/
+children:
+  - id: BC-2320.10
+    name: Sales Transaction Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Capture of consumer sales transactions including basket build,
+      scanning, promotion application, tax handling, and digital receipts.
+    in_scope:
+      - Basket build and item scanning
+      - Promotion and loyalty application at the till
+      - Tax calculation and digital or paper receipts
+    out_of_scope:
+      - Promotion design (BC-440.30)
+      - E-commerce checkout (BC-2330)
+    children:
+      - id: BC-2320.10.10
+        name: Item Scanning and Basket Build
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Scanning of items and basket assembly at the till including weight items.
+        children: []
+      - id: BC-2320.10.20
+        name: Promotion and Loyalty Application
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Application of promotions, coupons, and loyalty redemptions during the sale.
+        children: []
+      - id: BC-2320.10.30
+        name: Sales Tax and VAT Handling
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Calculation of sales tax, VAT, and jurisdiction-specific rules at the till.
+        children: []
+      - id: BC-2320.10.40
+        name: Receipt and Digital Receipt Issuance
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Issuance of paper and digital receipts including consumer linking.
+        children: []
+  - id: BC-2320.20
+    name: Tender and Payment Acceptance Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Acceptance of payment tenders at the till including EMV, contactless,
+      mobile wallets, gift cards, and alternative payment methods, with
+      PCI-DSS compliance.
+    children:
+      - id: BC-2320.20.10
+        name: Card and Contactless Payment Acceptance
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          EMV, contactless, and mobile-wallet payment acceptance at retail tills.
+        children: []
+      - id: BC-2320.20.20
+        name: Cash and Cheque Acceptance
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Cash, coin, and cheque acceptance including denomination handling.
+        children: []
+      - id: BC-2320.20.30
+        name: Gift Card and Stored Value Acceptance
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Acceptance and issuance of gift cards and stored-value instruments.
+        children: []
+      - id: BC-2320.20.40
+        name: Alternative Payment Method Acceptance
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Acceptance of buy-now-pay-later, QR, and other alternative tenders.
+        children: []
+      - id: BC-2320.20.50
+        name: PCI-DSS Compliance Operations
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          PCI-DSS-compliant handling of cardholder data at the point of sale.
+        children: []
+  - id: BC-2320.30
+    name: "Returns, Refunds & Exchange Management"
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      In-store processing of consumer returns, refunds, and exchanges
+      including original-tender, store-credit, and cross-channel cases.
+    in_scope:
+      - In-store consumer returns and refunds
+      - Store-credit and exchange handling
+      - Cross-channel returns of online orders to store
+    out_of_scope:
+      - Reverse logistics back to DC (BC-520.40.40)
+    children:
+      - id: BC-2320.30.10
+        name: Consumer Return Acceptance
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Acceptance of consumer returns at the till against return policy.
+        children: []
+      - id: BC-2320.30.20
+        name: Refund and Store Credit Issuance
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Issuance of refunds to original tender or store-credit instruments.
+        children: []
+      - id: BC-2320.30.30
+        name: Exchange Transaction Handling
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Even and uneven exchange transactions including price reconciliation.
+        children: []
+      - id: BC-2320.30.40
+        name: Cross-Channel Return Processing
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Acceptance of online and other-channel orders for return at the store.
+        children: []
+  - id: BC-2320.40
+    name: POS Cash and Tender Handling
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Cash drawer, safe, deposit, and end-of-day tender reconciliation
+      processes that protect till takings.
+    children:
+      - id: BC-2320.40.10
+        name: Cash Drawer Management
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Opening, monitoring, and reconciliation of till cash drawers.
+        children: []
+      - id: BC-2320.40.20
+        name: Store Safe and Pickup Operations
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Safe management, mid-day pickups, and CIT preparation.
+        children: []
+      - id: BC-2320.40.30
+        name: End-of-Day Tender Reconciliation
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Reconciliation of all tenders against POS sales records at end of day.
+        children: []
+      - id: BC-2320.40.40
+        name: Bank Deposit Preparation
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Preparation of bank deposits and cash-in-transit handover.
+        children: []
+  - id: BC-2320.50
+    name: POS Configuration Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Configuration of tender types, tax rules, promotion logic, peripherals,
+      and till behaviour across the store estate.
+    children:
+      - id: BC-2320.50.10
+        name: Tender and Payment Configuration
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Configuration of accepted tenders, limits, and routing per store.
+        children: []
+      - id: BC-2320.50.20
+        name: Tax Rule Configuration
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Configuration of tax rules and jurisdictional overrides per store.
+        children: []
+      - id: BC-2320.50.30
+        name: Promotion Engine Configuration
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Configuration of POS promotion engine and offer prioritisation rules.
+        children: []
+      - id: BC-2320.50.40
+        name: POS Peripheral Configuration
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Configuration of scales, scanners, printers, and PIN pads at the till.
+        children: []
+  - id: BC-2320.60
+    name: "POS Resilience & Offline Operations"
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Continuity of selling during connectivity or system outage including
+      offline POS, store-and-forward, and queue management.
+    children:
+      - id: BC-2320.60.10
+        name: Offline POS Operation
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Continued operation of the POS during connectivity loss.
+        children: []
+      - id: BC-2320.60.20
+        name: Store-and-Forward Transaction Handling
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Storage and forwarding of offline transactions on reconnection.
+        children: []
+      - id: BC-2320.60.30
+        name: Outage Queue Management
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Customer queue management during checkout-system outage events.
+        children: []
