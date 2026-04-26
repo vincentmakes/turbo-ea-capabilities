@@ -25,6 +25,7 @@ export interface ValueStreamStage {
 
 export interface ValueStream {
   name: string;
+  industries: string[];
   stages: ValueStreamStage[];
 }
 
@@ -151,6 +152,25 @@ export default function CatalogueBrowser({ data, valueStreams }: Props) {
     () => valueStreams.map((v) => v.name).sort(),
     [valueStreams]
   );
+
+  /**
+   * Industry → sorted list of stream names. Each stream lands under every
+   * industry it lists (multi-industry streams appear in each). Cross-Industry
+   * streams form their own bucket; they apply everywhere but are not
+   * duplicated under each named industry.
+   */
+  const valueStreamsByIndustry = useMemo(() => {
+    const map = new Map<string, string[]>();
+    for (const stream of valueStreams) {
+      for (const ind of stream.industries ?? []) {
+        const list = map.get(ind) ?? [];
+        list.push(stream.name);
+        map.set(ind, list);
+      }
+    }
+    for (const list of map.values()) list.sort();
+    return map;
+  }, [valueStreams]);
 
   /**
    * capabilityId → set of value-stream names containing it.
@@ -428,6 +448,27 @@ export default function CatalogueBrowser({ data, valueStreams }: Props) {
   const selectionCount = selected.size;
   const detail = detailId ? byId.get(detailId) ?? null : null;
 
+  /**
+   * Stream-filter dropdown groups, narrowed to the active industry filter.
+   * Cross-Industry streams always appear (they apply everywhere). When the
+   * Industry filter has selections, named-industry groups are limited to
+   * those selections; otherwise every industry that has streams is shown.
+   */
+  const valueStreamGroups = useMemo(() => {
+    const groups: { label: string; options: string[] }[] = [];
+    const cross = valueStreamsByIndustry.get("Cross-Industry") ?? [];
+    if (cross.length > 0) groups.push({ label: "Cross-Industry", options: cross });
+    const namedIndustries = Array.from(valueStreamsByIndustry.keys())
+      .filter((k) => k !== "Cross-Industry")
+      .filter((k) => industries.size === 0 || industries.has(k))
+      .sort();
+    for (const ind of namedIndustries) {
+      const opts = valueStreamsByIndustry.get(ind) ?? [];
+      if (opts.length > 0) groups.push({ label: ind, options: opts });
+    }
+    return groups;
+  }, [valueStreamsByIndustry, industries]);
+
   return (
     <div class="catalogue-page">
       <FilterBar
@@ -440,6 +481,7 @@ export default function CatalogueBrowser({ data, valueStreams }: Props) {
         industries={industries}
         onIndustries={setIndustries}
         valueStreamNames={valueStreamNames}
+        valueStreamGroups={valueStreamGroups}
         streams={streams}
         onStreams={setStreams}
         onReset={resetFilters}
@@ -581,6 +623,7 @@ interface FilterBarProps {
   industries: Set<string>;
   onIndustries: (s: Set<string>) => void;
   valueStreamNames: string[];
+  valueStreamGroups: { label: string; options: string[] }[];
   streams: Set<string>;
   onStreams: (s: Set<string>) => void;
   onReset: () => void;
@@ -596,6 +639,7 @@ function FilterBar({
   industries,
   onIndustries,
   valueStreamNames,
+  valueStreamGroups,
   streams,
   onStreams,
   onReset,
@@ -643,6 +687,7 @@ function FilterBar({
         <MultiSelect
           label="Value stream"
           options={valueStreamNames}
+          groups={valueStreamGroups}
           selected={streams}
           onChange={onStreams}
         />
@@ -661,11 +706,14 @@ function FilterBar({
 interface MultiSelectProps {
   label: string;
   options: string[];
+  /** When provided, options are rendered under industry-style group headers.
+   *  The flat `options` prop is still used for the trigger summary count. */
+  groups?: { label: string; options: string[] }[];
   selected: Set<string>;
   onChange: (next: Set<string>) => void;
 }
 
-function MultiSelect({ label, options, selected, onChange }: MultiSelectProps) {
+function MultiSelect({ label, options, groups, selected, onChange }: MultiSelectProps) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -724,16 +772,32 @@ function MultiSelect({ label, options, selected, onChange }: MultiSelectProps) {
               Clear ({selected.size})
             </button>
           )}
-          {options.map((opt) => (
-            <label key={opt} class="multi-select-option">
-              <input
-                type="checkbox"
-                checked={selected.has(opt)}
-                onChange={() => toggle(opt)}
-              />
-              <span>{opt}</span>
-            </label>
-          ))}
+          {groups && groups.length > 0
+            ? groups.map((g) => (
+                <div key={g.label} class="multi-select-group">
+                  <div class="multi-select-group-label">{g.label}</div>
+                  {g.options.map((opt) => (
+                    <label key={`${g.label}::${opt}`} class="multi-select-option">
+                      <input
+                        type="checkbox"
+                        checked={selected.has(opt)}
+                        onChange={() => toggle(opt)}
+                      />
+                      <span>{opt}</span>
+                    </label>
+                  ))}
+                </div>
+              ))
+            : options.map((opt) => (
+                <label key={opt} class="multi-select-option">
+                  <input
+                    type="checkbox"
+                    checked={selected.has(opt)}
+                    onChange={() => toggle(opt)}
+                  />
+                  <span>{opt}</span>
+                </label>
+              ))}
         </div>
       )}
     </div>

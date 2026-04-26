@@ -1,8 +1,12 @@
 # Value Streams (orthogonal artefact, not part of the capability hierarchy).
 # Each stage links to an L1 capability; the site auto-expands to descendants
 # when filtering. Use 'notes' to capture sub-scope detail (e.g. "AR sub-capability").
+#
+# Each stream declares an `industries` array using the canonical L1 industry
+# vocabulary. `Cross-Industry`, when present, must be the only entry.
 value_streams:
   - name: Hire-to-Retire
+    industries: [Cross-Industry]
     stages:
       - stage_order: 1
         stage_name: Workforce Planning
@@ -60,6 +64,7 @@ value_streams:
         capability_id: BC-300
         notes: Separation processing
   - name: Issue-to-Resolution
+    industries: [Cross-Industry]
     stages:
       - stage_order: 1
         stage_name: Issue Capture (Audit)
@@ -208,6 +213,7 @@ value_streams:
         stage_name: Lessons Learned (Quality)
         capability_id: BC-830
   - name: Order-to-Cash
+    industries: [Cross-Industry]
     stages:
       - stage_order: 1
         stage_name: Lead Capture & Qualification
@@ -293,6 +299,7 @@ value_streams:
         capability_id: BC-200
         notes: Revenue posting; Reporting
   - name: Procure-to-Pay
+    industries: [Cross-Industry]
     stages:
       - stage_order: 1
         stage_name: Need Identification & Requisition
@@ -374,6 +381,7 @@ value_streams:
         industry_variant: Electrical Components & Equipment
         notes: Distributor performance, PCN/EOL handling
   - name: Idea-to-Market
+    industries: [Cross-Industry]
     stages:
       - stage_order: 1
         stage_name: Idea Capture
@@ -492,6 +500,7 @@ value_streams:
         industry_variant: Electrical Components & Equipment
         notes: Phase-in / phase-out, last-buy windows
   - name: Plan-to-Inventory
+    industries: [Cross-Industry]
     stages:
       - stage_order: 1
         stage_name: Demand Planning
@@ -545,6 +554,7 @@ value_streams:
         industry_variant: Electrical Components & Equipment
         notes: Component lifecycle & obsolescence risk
   - name: Record-to-Report
+    industries: [Cross-Industry]
     stages:
       - stage_order: 1
         stage_name: Transaction Capture
@@ -595,6 +605,7 @@ value_streams:
         capability_id: BC-140
         notes: Internal audit review
   - name: Acquire-to-Retire
+    industries: [Cross-Industry]
     stages:
       - stage_order: 1
         stage_name: Asset Need & Justification
@@ -696,6 +707,7 @@ value_streams:
         industry_variant: Electrical Components & Equipment
         notes: WEEE take-back, remanufacture, reuse
   - name: Strategy-to-Execution
+    industries: [Cross-Industry]
     stages:
       - stage_order: 1
         stage_name: Strategy Formulation
@@ -734,6 +746,7 @@ value_streams:
         capability_id: BC-920
         notes: Benefits tracking
   - name: Risk-to-Mitigation
+    industries: [Cross-Industry]
     stages:
       - stage_order: 1
         stage_name: Risk Appetite & Framework
@@ -788,6 +801,7 @@ value_streams:
         capability_id: BC-130
         notes: Regulatory disclosure where required
   - name: Audit-to-Action
+    industries: [Cross-Industry]
     stages:
       - stage_order: 1
         stage_name: Audit Universe & Plan
@@ -819,6 +833,7 @@ value_streams:
         capability_id: BC-140
         notes: QA review & maturation
   - name: Threat-to-Mitigation
+    industries: [Cross-Industry]
     stages:
       - stage_order: 1
         stage_name: Security Posture Definition
@@ -892,6 +907,7 @@ value_streams:
         capability_id: BC-830
         notes: Best-practice capture
   - name: Prospect-to-Customer
+    industries: [Cross-Industry]
     stages:
       - stage_order: 1
         stage_name: Market & Segment Strategy
@@ -948,6 +964,7 @@ value_streams:
         capability_id: BC-430
         notes: Customer feedback loop
   - name: Application-to-Funding
+    industries: [Banking & Capital Markets]
     stages:
       - stage_order: 1
         stage_name: Application Capture
@@ -1013,6 +1030,7 @@ value_streams:
         industry_variant: Banking
         notes: Banking risk overview
   - name: Discovery-to-Approval
+    industries: [Pharmaceuticals & Life Sciences]
     stages:
       - stage_order: 1
         stage_name: Target Discovery
@@ -1085,6 +1103,7 @@ value_streams:
         industry_variant: Pharma
         notes: Lifecycle maintenance
   - name: Adverse-Event-to-Action
+    industries: [Pharmaceuticals & Life Sciences]
     stages:
       - stage_order: 1
         stage_name: Case Intake
@@ -1136,6 +1155,7 @@ value_streams:
         industry_variant: Pharma
         notes: PV audit
   - name: Capture-to-Contract
+    industries: [Defense & Aerospace]
     stages:
       - stage_order: 1
         stage_name: Customer Intelligence
@@ -1195,6 +1215,7 @@ value_streams:
         industry_variant: Defense
         notes: Programme handover
   - name: Sustain-to-Disposition
+    industries: [Defense & Aerospace]
     stages:
       - stage_order: 1
         stage_name: Sustainment Planning
@@ -1250,6 +1271,7 @@ value_streams:
         industry_variant: Defense
         notes: Classified material destruction
   - name: Flight-to-Settle
+    industries: [Air Traffic Control]
     stages:
       - stage_order: 1
         stage_name: Flight Plan Filing
@@ -1295,6 +1317,10 @@ value_streams:
         capability_id: BC-200
         notes: GL posting
   - name: Maintenance-Request-to-Closure
+    industries:
+      - Manufacturing & Industrial
+      - HVAC & Building Automation Systems
+      - Electrical Components & Equipment
     stages:
       - stage_order: 1
         stage_name: Notification / Request
@@ -1390,6 +1416,7 @@ value_streams:
         industry_variant: HVAC & Building Automation Systems
         notes: Service KPIs, SLA reporting
   - name: Crisis-to-Recovery
+    industries: [Cross-Industry]
     stages:
       - stage_order: 1
         stage_name: Continuity Planning
@@ -1442,6 +1469,7 @@ value_streams:
         capability_id: BC-830
         notes: Lessons learned
   - name: ESG-to-Disclosure
+    industries: [Cross-Industry]
     stages:
       - stage_order: 1
         stage_name: ESG Strategy & Materiality
@@ -1514,6 +1542,12 @@ value_streams:
         capability_id: BC-100
         notes: Strategy execution feedback
   - name: Concept-to-Manufacture
+    industries:
+      - Manufacturing & Industrial
+      - Engineering Services
+      - Electrical Components & Equipment
+      - HVAC & Building Automation Systems
+      - Defense & Aerospace
     stages:
       - stage_order: 1
         stage_name: Concept Design
@@ -1678,6 +1712,7 @@ value_streams:
         industry_variant: Electrical Components & Equipment
         notes: Saleable variant baseline
   - name: Opportunity-to-Order
+    industries: [Cross-Industry]
     stages:
       - stage_order: 1
         stage_name: Opportunity Qualification
