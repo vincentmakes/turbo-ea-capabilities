@@ -356,3 +356,1176 @@ value_streams:
         stage_name: Supplier Performance Monitoring
         capability_id: BC-510.50
         notes: Strategic suppliers
+  - name: Idea-to-Market
+    stages:
+      - stage_order: 1
+        stage_name: Idea Capture
+        capability_id: BC-800.10
+        notes: Idea & opportunity intake
+      - stage_order: 1
+        stage_name: Idea Capture
+        capability_id: BC-800.50
+        notes: Open innovation / external sourcing
+      - stage_order: 2
+        stage_name: Concept & Feasibility
+        capability_id: BC-800.30
+        notes: Incubation / acceleration
+      - stage_order: 2
+        stage_name: Concept & Feasibility
+        capability_id: BC-820.10
+        notes: Product concept definition
+      - stage_order: 2
+        stage_name: Concept & Feasibility
+        capability_id: BC-230.50
+        notes: Business case
+      - stage_order: 3
+        stage_name: Research & Prototyping
+        capability_id: BC-810.10
+        notes: Research
+      - stage_order: 3
+        stage_name: Research & Prototyping
+        capability_id: BC-810.30
+        notes: Experimentation & prototyping
+      - stage_order: 3
+        stage_name: Research & Prototyping
+        capability_id: BC-1500.20
+        industry_variant: Pharma
+        notes: Hit discovery
+      - stage_order: 4
+        stage_name: Portfolio Selection
+        capability_id: BC-800.20
+        notes: Innovation portfolio
+      - stage_order: 4
+        stage_name: Portfolio Selection
+        capability_id: BC-810.40
+        notes: R&D portfolio
+      - stage_order: 5
+        stage_name: Design & Development
+        capability_id: BC-820.20
+        notes: Product design
+      - stage_order: 5
+        stage_name: Design & Development
+        capability_id: BC-810.20
+        notes: Applied development
+      - stage_order: 5
+        stage_name: Design & Development
+        capability_id: BC-1510
+        industry_variant: Pharma
+        notes: Drug development phases
+      - stage_order: 6
+        stage_name: IP Protection
+        capability_id: BC-840
+        notes: Patents, trademarks
+      - stage_order: 7
+        stage_name: Launch Readiness
+        capability_id: BC-820.50
+        notes: Release & launch
+      - stage_order: 7
+        stage_name: Launch Readiness
+        capability_id: BC-400.40
+        notes: Demand generation
+      - stage_order: 8
+        stage_name: Market Introduction
+        capability_id: BC-410.10
+        notes: Sales strategy / GTM
+      - stage_order: 8
+        stage_name: Market Introduction
+        capability_id: BC-1530.20
+        industry_variant: Pharma
+        notes: Regulatory submission & approval
+      - stage_order: 9
+        stage_name: Post-Launch Performance
+        capability_id: BC-820.60
+        notes: Performance & feedback
+      - stage_order: 9
+        stage_name: Post-Launch Performance
+        capability_id: BC-820.70
+        notes: End-of-life planning
+  - name: Plan-to-Inventory
+    stages:
+      - stage_order: 1
+        stage_name: Demand Planning
+        capability_id: BC-520.10
+        notes: Statistical forecast + consensus
+      - stage_order: 1
+        stage_name: Demand Planning
+        capability_id: BC-400.30
+        notes: Market intelligence input
+      - stage_order: 2
+        stage_name: Supply Planning
+        capability_id: BC-520.20
+        notes: Capacity / material plan
+      - stage_order: 2
+        stage_name: Supply Planning
+        capability_id: BC-1000.20
+        industry_variant: Manufacturing
+        notes: Production planning
+      - stage_order: 3
+        stage_name: S&OP Reconciliation
+        capability_id: BC-520.30
+        notes: Executive S&OP cycle
+      - stage_order: 3
+        stage_name: S&OP Reconciliation
+        capability_id: BC-230.20
+        notes: Financial forecast alignment
+      - stage_order: 4
+        stage_name: Inventory Positioning
+        capability_id: BC-530.10
+        notes: Stock level targets
+      - stage_order: 4
+        stage_name: Inventory Positioning
+        capability_id: BC-530.30
+        notes: Allocation across nodes
+      - stage_order: 5
+        stage_name: Replenishment Execution
+        capability_id: BC-530.20
+        notes: Auto-replenishment triggers
+      - stage_order: 6
+        stage_name: Inventory Health Monitoring
+        capability_id: BC-530.40
+        notes: Accuracy / cycle counting
+      - stage_order: 6
+        stage_name: Inventory Health Monitoring
+        capability_id: BC-530.50
+        notes: Slow-moving / obsolete review
+      - stage_order: 6
+        stage_name: Inventory Health Monitoring
+        capability_id: BC-520.60
+        notes: Supply chain risk
+  - name: Record-to-Report
+    stages:
+      - stage_order: 1
+        stage_name: Transaction Capture
+        capability_id: BC-200.10
+        notes: GL posting from sub-ledgers
+      - stage_order: 1
+        stage_name: Transaction Capture
+        capability_id: BC-200.50
+        notes: Cost accounting allocations
+      - stage_order: 2
+        stage_name: Sub-Ledger Close
+        capability_id: BC-200.20
+        notes: AP cut-off
+      - stage_order: 2
+        stage_name: Sub-Ledger Close
+        capability_id: BC-200.30
+        notes: AR cut-off
+      - stage_order: 2
+        stage_name: Sub-Ledger Close
+        capability_id: BC-200.40
+        notes: Fixed asset depreciation run
+      - stage_order: 3
+        stage_name: Reconciliation & Adjustments
+        capability_id: BC-200.10
+        notes: Account reconciliations
+      - stage_order: 3
+        stage_name: Reconciliation & Adjustments
+        capability_id: BC-210.10
+        notes: Bank reconciliation
+      - stage_order: 4
+        stage_name: Consolidation
+        capability_id: BC-200.60
+        notes: Group consolidation
+      - stage_order: 4
+        stage_name: Consolidation
+        capability_id: BC-220.30
+        notes: Transfer pricing adjustments
+      - stage_order: 5
+        stage_name: Management Reporting
+        capability_id: BC-230.30
+        notes: Internal management pack
+      - stage_order: 5
+        stage_name: Management Reporting
+        capability_id: BC-230.40
+        notes: Variance / performance analysis
+      - stage_order: 6
+        stage_name: Statutory & Regulatory Reporting
+        capability_id: BC-200.70
+        notes: Statutory filings
+      - stage_order: 6
+        stage_name: Statutory & Regulatory Reporting
+        capability_id: BC-220.40
+        notes: Tax filings
+      - stage_order: 6
+        stage_name: Statutory & Regulatory Reporting
+        capability_id: BC-240
+        notes: Investor relations disclosures
+      - stage_order: 7
+        stage_name: Audit & Sign-Off
+        capability_id: BC-140.20
+        notes: Internal audit review
+      - stage_order: 7
+        stage_name: Audit & Sign-Off
+        capability_id: BC-130.10
+        notes: Regulatory compliance sign-off
+  - name: Acquire-to-Retire
+    stages:
+      - stage_order: 1
+        stage_name: Asset Need & Justification
+        capability_id: BC-1040.10
+        notes: Asset strategy / lifecycle plan
+      - stage_order: 1
+        stage_name: Asset Need & Justification
+        capability_id: BC-230.50
+        notes: CAPEX business case
+      - stage_order: 2
+        stage_name: Acquisition
+        capability_id: BC-500.20
+        notes: Capital procurement
+      - stage_order: 2
+        stage_name: Acquisition
+        capability_id: BC-1110
+        industry_variant: Engineering Services
+        notes: Project engineering for build assets
+      - stage_order: 3
+        stage_name: Commissioning & Capitalisation
+        capability_id: BC-1160
+        industry_variant: Engineering Services
+        notes: Commissioning & handover
+      - stage_order: 3
+        stage_name: Commissioning & Capitalisation
+        capability_id: BC-200.40
+        notes: Capitalisation / fixed asset register
+      - stage_order: 4
+        stage_name: Operate & Maintain
+        capability_id: BC-1030.20
+        notes: Preventive maintenance
+      - stage_order: 4
+        stage_name: Operate & Maintain
+        capability_id: BC-1030.40
+        notes: Predictive maintenance
+      - stage_order: 4
+        stage_name: Operate & Maintain
+        capability_id: BC-1040.20
+        notes: Asset performance monitoring
+      - stage_order: 5
+        stage_name: Risk & Reliability
+        capability_id: BC-1040.30
+        notes: Criticality / risk
+      - stage_order: 5
+        stage_name: Risk & Reliability
+        capability_id: BC-1030.70
+        notes: Reliability engineering
+      - stage_order: 5
+        stage_name: Risk & Reliability
+        capability_id: BC-1780.30
+        industry_variant: Defense
+        notes: RAM engineering
+      - stage_order: 6
+        stage_name: Asset Information Maintenance
+        capability_id: BC-1040.40
+        notes: Asset master data
+      - stage_order: 7
+        stage_name: Decommissioning & Disposal
+        capability_id: BC-1040.50
+        notes: Decommissioning / disposal
+      - stage_order: 7
+        stage_name: Decommissioning & Disposal
+        capability_id: BC-740.30
+        notes: Circular economy / recycling
+  - name: Strategy-to-Execution
+    stages:
+      - stage_order: 1
+        stage_name: Strategy Formulation
+        capability_id: BC-100.10
+        notes: Strategic planning
+      - stage_order: 1
+        stage_name: Strategy Formulation
+        capability_id: BC-100.50
+        notes: Business model design
+      - stage_order: 2
+        stage_name: Portfolio Definition
+        capability_id: BC-100.40
+        notes: Strategic portfolio
+      - stage_order: 2
+        stage_name: Portfolio Definition
+        capability_id: BC-900.10
+        notes: Project portfolio prioritisation
+      - stage_order: 3
+        stage_name: Programme & Project Setup
+        capability_id: BC-900.20
+        notes: Programme establishment
+      - stage_order: 3
+        stage_name: Programme & Project Setup
+        capability_id: BC-900.30
+        notes: Project initiation
+      - stage_order: 4
+        stage_name: Delivery & Governance
+        capability_id: BC-900.40
+        notes: Project governance
+      - stage_order: 4
+        stage_name: Delivery & Governance
+        capability_id: BC-900.50
+        notes: PMO operations
+      - stage_order: 4
+        stage_name: Delivery & Governance
+        capability_id: BC-920.10
+        notes: Transformation programme execution
+      - stage_order: 5
+        stage_name: Change Adoption
+        capability_id: BC-910.20
+        notes: Stakeholder engagement
+      - stage_order: 5
+        stage_name: Change Adoption
+        capability_id: BC-910.30
+        notes: Communications & training
+      - stage_order: 5
+        stage_name: Change Adoption
+        capability_id: BC-910.40
+        notes: Adoption & reinforcement
+      - stage_order: 6
+        stage_name: Benefits Realisation
+        capability_id: BC-920.30
+        notes: Benefits tracking
+      - stage_order: 6
+        stage_name: Benefits Realisation
+        capability_id: BC-100.20
+        notes: Strategy execution review
+  - name: Risk-to-Mitigation
+    stages:
+      - stage_order: 1
+        stage_name: Risk Appetite & Framework
+        capability_id: BC-120.10
+        notes: Appetite statements
+      - stage_order: 2
+        stage_name: Risk Identification
+        capability_id: BC-120.20
+        notes: Top-down + bottom-up scan
+      - stage_order: 2
+        stage_name: Risk Identification
+        capability_id: BC-520.60
+        notes: Supply chain risk feed
+      - stage_order: 2
+        stage_name: Risk Identification
+        capability_id: BC-1410
+        industry_variant: Banking
+        notes: Banking risk taxonomy
+      - stage_order: 3
+        stage_name: Risk Assessment
+        capability_id: BC-120.20
+        notes: Likelihood / impact scoring
+      - stage_order: 3
+        stage_name: Risk Assessment
+        capability_id: BC-1280.20
+        industry_variant: ATC
+        notes: Aviation safety risk assessment
+      - stage_order: 4
+        stage_name: Treatment & Control Design
+        capability_id: BC-120.30
+        notes: Controls & mitigations
+      - stage_order: 4
+        stage_name: Treatment & Control Design
+        capability_id: BC-120.50
+        notes: Insurance transfer
+      - stage_order: 5
+        stage_name: Monitoring
+        capability_id: BC-120.40
+        notes: KRIs / dashboards
+      - stage_order: 5
+        stage_name: Monitoring
+        capability_id: BC-1320.60
+        industry_variant: Banking
+        notes: Credit risk modelling
+      - stage_order: 6
+        stage_name: Reporting & Escalation
+        capability_id: BC-120.40
+        notes: Risk reporting to board
+      - stage_order: 6
+        stage_name: Reporting & Escalation
+        capability_id: BC-130.10
+        notes: Regulatory disclosure where required
+  - name: Audit-to-Action
+    stages:
+      - stage_order: 1
+        stage_name: Audit Universe & Plan
+        capability_id: BC-140.10
+        notes: Risk-based annual plan
+      - stage_order: 2
+        stage_name: Engagement Scoping
+        capability_id: BC-140.10
+        notes: Scope, criteria, resources
+      - stage_order: 3
+        stage_name: Fieldwork
+        capability_id: BC-140.20
+        notes: Testing & evidence
+      - stage_order: 3
+        stage_name: Fieldwork
+        capability_id: BC-1540.50
+        industry_variant: Pharma
+        notes: GxP audit & inspection readiness
+      - stage_order: 4
+        stage_name: Findings & Reporting
+        capability_id: BC-140.30
+        notes: Findings, ratings, report
+      - stage_order: 5
+        stage_name: Remediation Tracking
+        capability_id: BC-140.30
+        notes: Action plan follow-up
+      - stage_order: 6
+        stage_name: Audit Quality Assurance
+        capability_id: BC-140.40
+        notes: QA review & maturation
+  - name: Threat-to-Mitigation
+    stages:
+      - stage_order: 1
+        stage_name: Security Posture Definition
+        capability_id: BC-620.10
+        notes: Strategy & governance
+      - stage_order: 1
+        stage_name: Security Posture Definition
+        capability_id: BC-620.50
+        notes: Reference architecture
+      - stage_order: 2
+        stage_name: Threat Intelligence
+        capability_id: BC-620.30
+        notes: Threat feeds & intel
+      - stage_order: 2
+        stage_name: Threat Intelligence
+        capability_id: BC-1740
+        industry_variant: Defense
+        notes: Cyber operations intel
+      - stage_order: 3
+        stage_name: Vulnerability Discovery
+        capability_id: BC-620.40
+        notes: Scanning, pen test, bug bounty
+      - stage_order: 4
+        stage_name: Detection
+        capability_id: BC-620.30
+        notes: SIEM / SOC monitoring
+      - stage_order: 5
+        stage_name: Incident Response
+        capability_id: BC-620.30
+        notes: Containment & eradication
+      - stage_order: 5
+        stage_name: Incident Response
+        capability_id: BC-160.20
+        notes: Disaster recovery activation
+      - stage_order: 6
+        stage_name: Identity & Access Hardening
+        capability_id: BC-620.20
+        notes: IAM tightening
+      - stage_order: 7
+        stage_name: Awareness & Lessons Learned
+        capability_id: BC-620.60
+        notes: Awareness campaigns
+      - stage_order: 7
+        stage_name: Awareness & Lessons Learned
+        capability_id: BC-830.40
+        notes: Best-practice capture
+  - name: Prospect-to-Customer
+    stages:
+      - stage_order: 1
+        stage_name: Market & Segment Strategy
+        capability_id: BC-400.10
+        notes: Marketing strategy
+      - stage_order: 1
+        stage_name: Market & Segment Strategy
+        capability_id: BC-420.20
+        notes: Customer segmentation
+      - stage_order: 2
+        stage_name: Brand & Positioning
+        capability_id: BC-400.20
+        notes: Brand management
+      - stage_order: 2
+        stage_name: Brand & Positioning
+        capability_id: BC-850
+        notes: Corporate communications
+      - stage_order: 3
+        stage_name: Demand Generation
+        capability_id: BC-400.40
+        notes: Campaigns, content syndication
+      - stage_order: 3
+        stage_name: Demand Generation
+        capability_id: BC-400.60
+        notes: Digital marketing
+      - stage_order: 3
+        stage_name: Demand Generation
+        capability_id: BC-400.70
+        notes: Content marketing
+      - stage_order: 4
+        stage_name: Lead Capture & Nurture
+        capability_id: BC-400.50
+        notes: Marketing operations / MarOps
+      - stage_order: 4
+        stage_name: Lead Capture & Nurture
+        capability_id: BC-410.30
+        notes: Pipeline handoff
+      - stage_order: 5
+        stage_name: Conversion
+        capability_id: BC-410.40
+        notes: Quote / CPQ
+      - stage_order: 5
+        stage_name: Conversion
+        capability_id: BC-1300.10
+        industry_variant: Banking
+        notes: Customer onboarding
+      - stage_order: 6
+        stage_name: Customer Onboarding
+        capability_id: BC-420.30
+        notes: Customer lifecycle activation
+      - stage_order: 6
+        stage_name: Customer Onboarding
+        capability_id: BC-1300.20
+        industry_variant: Banking
+        notes: KYC & due diligence
+      - stage_order: 7
+        stage_name: Retention & Advocacy
+        capability_id: BC-420.40
+        notes: Loyalty & retention
+      - stage_order: 7
+        stage_name: Retention & Advocacy
+        capability_id: BC-430.50
+        notes: Customer feedback loop
+  - name: Application-to-Funding
+    stages:
+      - stage_order: 1
+        stage_name: Application Capture
+        capability_id: BC-1320.10
+        industry_variant: Banking
+        notes: Origination intake
+      - stage_order: 1
+        stage_name: Application Capture
+        capability_id: BC-1300.50
+        industry_variant: Banking
+        notes: Channel intake (digital, branch)
+      - stage_order: 2
+        stage_name: KYC & Due Diligence
+        capability_id: BC-1300.20
+        industry_variant: Banking
+        notes: KYC / CDD
+      - stage_order: 2
+        stage_name: KYC & Due Diligence
+        capability_id: BC-1400.20
+        industry_variant: Banking
+        notes: Sanctions screening
+      - stage_order: 3
+        stage_name: Underwriting & Decisioning
+        capability_id: BC-1320.20
+        industry_variant: Banking
+        notes: Credit decisioning
+      - stage_order: 3
+        stage_name: Underwriting & Decisioning
+        capability_id: BC-1320.60
+        industry_variant: Banking
+        notes: Credit risk model scoring
+      - stage_order: 4
+        stage_name: Pricing & Offer
+        capability_id: BC-1310
+        industry_variant: Banking
+        notes: Banking product configuration
+      - stage_order: 4
+        stage_name: Pricing & Offer
+        capability_id: BC-440.30
+        notes: Discount / promotional pricing
+      - stage_order: 5
+        stage_name: Documentation & Booking
+        capability_id: BC-150.10
+        notes: Loan agreement drafting
+      - stage_order: 5
+        stage_name: Documentation & Booking
+        capability_id: BC-1320.30
+        industry_variant: Banking
+        notes: Loan booking
+      - stage_order: 6
+        stage_name: Disbursement
+        capability_id: BC-1340.10
+        industry_variant: Banking
+        notes: Payment initiation
+      - stage_order: 6
+        stage_name: Disbursement
+        capability_id: BC-1340.20
+        industry_variant: Banking
+        notes: Payment processing
+      - stage_order: 7
+        stage_name: Servicing & Collections
+        capability_id: BC-1320.30
+        industry_variant: Banking
+        notes: Loan servicing
+      - stage_order: 7
+        stage_name: Servicing & Collections
+        capability_id: BC-1320.40
+        industry_variant: Banking
+        notes: Collections & recoveries
+      - stage_order: 8
+        stage_name: Portfolio Monitoring
+        capability_id: BC-1320.50
+        industry_variant: Banking
+        notes: Loan portfolio health
+      - stage_order: 8
+        stage_name: Portfolio Monitoring
+        capability_id: BC-1410
+        industry_variant: Banking
+        notes: Banking risk overview
+  - name: Discovery-to-Approval
+    stages:
+      - stage_order: 1
+        stage_name: Target Discovery
+        capability_id: BC-1500.10
+        industry_variant: Pharma
+        notes: Target identification & validation
+      - stage_order: 2
+        stage_name: Hit & Lead Discovery
+        capability_id: BC-1500.20
+        industry_variant: Pharma
+        notes: Hit discovery
+      - stage_order: 2
+        stage_name: Hit & Lead Discovery
+        capability_id: BC-1500.30
+        industry_variant: Pharma
+        notes: Lead optimisation
+      - stage_order: 3
+        stage_name: Pre-Clinical Development
+        capability_id: BC-1500.40
+        industry_variant: Pharma
+        notes: Candidate selection
+      - stage_order: 3
+        stage_name: Pre-Clinical Development
+        capability_id: BC-1510.10
+        industry_variant: Pharma
+        notes: Pre-clinical studies
+      - stage_order: 3
+        stage_name: Pre-Clinical Development
+        capability_id: BC-1510.60
+        industry_variant: Pharma
+        notes: CMC development
+      - stage_order: 4
+        stage_name: Clinical Trial Design
+        capability_id: BC-1520.10
+        industry_variant: Pharma
+        notes: Protocol design
+      - stage_order: 4
+        stage_name: Clinical Trial Design
+        capability_id: BC-1530.10
+        industry_variant: Pharma
+        notes: Regulatory strategy
+      - stage_order: 5
+        stage_name: Clinical Trials Execution
+        capability_id: BC-1520.20
+        industry_variant: Pharma
+        notes: Site management
+      - stage_order: 5
+        stage_name: Clinical Trials Execution
+        capability_id: BC-1520.30
+        industry_variant: Pharma
+        notes: Subject management
+      - stage_order: 5
+        stage_name: Clinical Trials Execution
+        capability_id: BC-1520.40
+        industry_variant: Pharma
+        notes: Clinical data management
+      - stage_order: 5
+        stage_name: Clinical Trials Execution
+        capability_id: BC-1520.60
+        industry_variant: Pharma
+        notes: Trial supply
+      - stage_order: 6
+        stage_name: Phase Progression
+        capability_id: BC-1510.20
+        industry_variant: Pharma
+        notes: Phase I
+      - stage_order: 6
+        stage_name: Phase Progression
+        capability_id: BC-1510.30
+        industry_variant: Pharma
+        notes: Phase II
+      - stage_order: 6
+        stage_name: Phase Progression
+        capability_id: BC-1510.40
+        industry_variant: Pharma
+        notes: Phase III
+      - stage_order: 7
+        stage_name: Regulatory Submission
+        capability_id: BC-1530.20
+        industry_variant: Pharma
+        notes: NDA / MAA submission
+      - stage_order: 7
+        stage_name: Regulatory Submission
+        capability_id: BC-1530.50
+        industry_variant: Pharma
+        notes: Agency interaction
+      - stage_order: 7
+        stage_name: Regulatory Submission
+        capability_id: BC-1530.60
+        industry_variant: Pharma
+        notes: Labelling
+      - stage_order: 8
+        stage_name: Approval & Launch Readiness
+        capability_id: BC-1600
+        industry_variant: Pharma
+        notes: Market access & reimbursement
+      - stage_order: 8
+        stage_name: Approval & Launch Readiness
+        capability_id: BC-1580
+        industry_variant: Pharma
+        notes: Medical affairs preparation
+      - stage_order: 8
+        stage_name: Approval & Launch Readiness
+        capability_id: BC-1590
+        industry_variant: Pharma
+        notes: Commercial readiness
+      - stage_order: 9
+        stage_name: Post-Marketing Surveillance
+        capability_id: BC-1510.50
+        industry_variant: Pharma
+        notes: Phase IV
+      - stage_order: 9
+        stage_name: Post-Marketing Surveillance
+        capability_id: BC-1530.40
+        industry_variant: Pharma
+        notes: Lifecycle maintenance
+  - name: Adverse-Event-to-Action
+    stages:
+      - stage_order: 1
+        stage_name: Case Intake
+        capability_id: BC-1540.10
+        industry_variant: Pharma
+        notes: Adverse event capture
+      - stage_order: 2
+        stage_name: Case Triage & Coding
+        capability_id: BC-1540.10
+        industry_variant: Pharma
+        notes: MedDRA coding, seriousness assessment
+      - stage_order: 3
+        stage_name: Causality & Medical Review
+        capability_id: BC-1580
+        industry_variant: Pharma
+        notes: Medical affairs review
+      - stage_order: 4
+        stage_name: Signal Detection
+        capability_id: BC-1540.20
+        industry_variant: Pharma
+        notes: Signal detection & evaluation
+      - stage_order: 5
+        stage_name: Risk Assessment & RMP Update
+        capability_id: BC-1540.40
+        industry_variant: Pharma
+        notes: Risk management plan
+      - stage_order: 6
+        stage_name: Regulatory Reporting
+        capability_id: BC-1540.30
+        industry_variant: Pharma
+        notes: Periodic safety reports
+      - stage_order: 6
+        stage_name: Regulatory Reporting
+        capability_id: BC-1530.50
+        industry_variant: Pharma
+        notes: Agency notification
+      - stage_order: 7
+        stage_name: Label & Communication Updates
+        capability_id: BC-1530.60
+        industry_variant: Pharma
+        notes: Labelling change
+      - stage_order: 7
+        stage_name: Label & Communication Updates
+        capability_id: BC-850
+        notes: Stakeholder communications
+      - stage_order: 8
+        stage_name: Audit & Inspection Readiness
+        capability_id: BC-1540.50
+        industry_variant: Pharma
+        notes: PV audit
+  - name: Capture-to-Contract
+    stages:
+      - stage_order: 1
+        stage_name: Customer Intelligence
+        capability_id: BC-1750.20
+        industry_variant: Defense
+        notes: Defense customer intel
+      - stage_order: 1
+        stage_name: Customer Intelligence
+        capability_id: BC-1730
+        industry_variant: Defense
+        notes: Intelligence operations input
+      - stage_order: 2
+        stage_name: Capture Strategy
+        capability_id: BC-1750.10
+        industry_variant: Defense
+        notes: Capture management
+      - stage_order: 3
+        stage_name: Teaming & Subcontracting
+        capability_id: BC-1750.50
+        industry_variant: Defense
+        notes: Teaming strategy
+      - stage_order: 3
+        stage_name: Teaming & Subcontracting
+        capability_id: BC-1810
+        industry_variant: Defense
+        notes: Cleared subcontractor vetting
+      - stage_order: 4
+        stage_name: Bid & Proposal
+        capability_id: BC-1750.30
+        industry_variant: Defense
+        notes: Bid management
+      - stage_order: 4
+        stage_name: Bid & Proposal
+        capability_id: BC-1750.40
+        industry_variant: Defense
+        notes: Proposal development
+      - stage_order: 5
+        stage_name: Pricing & Cost Estimation
+        capability_id: BC-1140
+        industry_variant: Defense
+        notes: Tendering & estimation
+      - stage_order: 5
+        stage_name: Pricing & Cost Estimation
+        capability_id: BC-440.10
+        notes: Pricing strategy
+      - stage_order: 6
+        stage_name: Compliance & Export Review
+        capability_id: BC-1790
+        industry_variant: Defense
+        notes: ITAR / EAR / export control
+      - stage_order: 6
+        stage_name: Compliance & Export Review
+        capability_id: BC-130.10
+        notes: Regulatory compliance
+      - stage_order: 7
+        stage_name: Contract Negotiation & Award
+        capability_id: BC-150.10
+        notes: Contract negotiation
+      - stage_order: 7
+        stage_name: Contract Negotiation & Award
+        capability_id: BC-1760
+        industry_variant: Defense
+        notes: Programme handover
+  - name: Sustain-to-Disposition
+    stages:
+      - stage_order: 1
+        stage_name: Sustainment Planning
+        capability_id: BC-1780.10
+        industry_variant: Defense
+        notes: In-service support plan
+      - stage_order: 1
+        stage_name: Sustainment Planning
+        capability_id: BC-1780.30
+        industry_variant: Defense
+        notes: RAM engineering
+      - stage_order: 2
+        stage_name: Operate & Maintain
+        capability_id: BC-1780.20
+        industry_variant: Defense
+        notes: Depot maintenance
+      - stage_order: 2
+        stage_name: Operate & Maintain
+        capability_id: BC-1720
+        industry_variant: Defense
+        notes: Defense logistics
+      - stage_order: 3
+        stage_name: Spares & Repairs
+        capability_id: BC-1780.40
+        industry_variant: Defense
+        notes: Spares & repair pipeline
+      - stage_order: 3
+        stage_name: Spares & Repairs
+        capability_id: BC-1060
+        notes: Aftermarket parts
+      - stage_order: 4
+        stage_name: Technical Documentation
+        capability_id: BC-1780.50
+        industry_variant: Defense
+        notes: Technical publications
+      - stage_order: 5
+        stage_name: Obsolescence Management
+        capability_id: BC-1780.60
+        industry_variant: Defense
+        notes: DMSMS / obsolescence
+      - stage_order: 6
+        stage_name: Capability Upgrades
+        capability_id: BC-1770.50
+        industry_variant: Defense
+        notes: Configuration management
+      - stage_order: 6
+        stage_name: Capability Upgrades
+        capability_id: BC-1800
+        industry_variant: Defense
+        notes: Test & evaluation
+      - stage_order: 7
+        stage_name: Disposal & Disposition
+        capability_id: BC-1040.50
+        notes: Decommissioning
+      - stage_order: 7
+        stage_name: Disposal & Disposition
+        capability_id: BC-1810
+        industry_variant: Defense
+        notes: Classified material destruction
+  - name: Flight-to-Settle
+    stages:
+      - stage_order: 1
+        stage_name: Flight Plan Filing
+        capability_id: BC-1230
+        industry_variant: ATC
+        notes: Aeronautical information / flight plan
+      - stage_order: 2
+        stage_name: Flight Operations
+        capability_id: BC-1210.10
+        industry_variant: ATC
+        notes: En-route control
+      - stage_order: 2
+        stage_name: Flight Operations
+        capability_id: BC-1220
+        industry_variant: ATC
+        notes: Flow management
+      - stage_order: 3
+        stage_name: Charge Determination
+        capability_id: BC-1270.10
+        industry_variant: ATC
+        notes: Charging zone resolution
+      - stage_order: 3
+        stage_name: Charge Determination
+        capability_id: BC-1270.20
+        industry_variant: ATC
+        notes: Route charge calculation
+      - stage_order: 4
+        stage_name: Invoicing
+        capability_id: BC-1270.40
+        industry_variant: ATC
+        notes: Airline billing
+      - stage_order: 4
+        stage_name: Invoicing
+        capability_id: BC-200.30
+        notes: AR processing
+      - stage_order: 5
+        stage_name: Collection
+        capability_id: BC-1270.30
+        industry_variant: ATC
+        notes: Charges collection
+      - stage_order: 6
+        stage_name: Reconciliation & Reporting
+        capability_id: BC-1270.50
+        industry_variant: ATC
+        notes: Charges reporting
+      - stage_order: 6
+        stage_name: Reconciliation & Reporting
+        capability_id: BC-200.10
+        notes: GL posting
+  - name: Maintenance-Request-to-Closure
+    stages:
+      - stage_order: 1
+        stage_name: Notification / Request
+        capability_id: BC-1030.30
+        industry_variant: Manufacturing
+        notes: Corrective maintenance notification
+      - stage_order: 1
+        stage_name: Notification / Request
+        capability_id: BC-1050.10
+        notes: Service request (field)
+      - stage_order: 2
+        stage_name: Triage & Planning
+        capability_id: BC-1030.50
+        industry_variant: Manufacturing
+        notes: Maintenance work order planning
+      - stage_order: 2
+        stage_name: Triage & Planning
+        capability_id: BC-1050.20
+        notes: Dispatch & scheduling
+      - stage_order: 3
+        stage_name: Execution
+        capability_id: BC-1030.30
+        industry_variant: Manufacturing
+        notes: Corrective maintenance execution
+      - stage_order: 3
+        stage_name: Execution
+        capability_id: BC-1050.30
+        notes: Field service execution
+      - stage_order: 4
+        stage_name: Parts & Logistics
+        capability_id: BC-1030.60
+        industry_variant: Manufacturing
+        notes: Maintenance spares
+      - stage_order: 4
+        stage_name: Parts & Logistics
+        capability_id: BC-1050.40
+        notes: Service parts
+      - stage_order: 5
+        stage_name: Verification & Closure
+        capability_id: BC-720.30
+        notes: Quality control sign-off
+      - stage_order: 5
+        stage_name: Verification & Closure
+        capability_id: BC-1030.70
+        industry_variant: Manufacturing
+        notes: Reliability data update
+      - stage_order: 6
+        stage_name: Performance & Cost Analysis
+        capability_id: BC-1050.60
+        notes: Field service KPIs
+      - stage_order: 6
+        stage_name: Performance & Cost Analysis
+        capability_id: BC-200.50
+        notes: Maintenance cost posting
+  - name: Crisis-to-Recovery
+    stages:
+      - stage_order: 1
+        stage_name: Continuity Planning
+        capability_id: BC-160.10
+        notes: BIA & continuity plans
+      - stage_order: 2
+        stage_name: Resilience Testing
+        capability_id: BC-160.40
+        notes: Exercises & drills
+      - stage_order: 2
+        stage_name: Resilience Testing
+        capability_id: BC-1280.50
+        industry_variant: ATC
+        notes: Aviation safety performance drills
+      - stage_order: 3
+        stage_name: Detection & Activation
+        capability_id: BC-160.30
+        notes: Crisis declaration
+      - stage_order: 3
+        stage_name: Detection & Activation
+        capability_id: BC-620.30
+        notes: Cyber incident trigger
+      - stage_order: 4
+        stage_name: Crisis Response
+        capability_id: BC-160.30
+        notes: Crisis management cell
+      - stage_order: 4
+        stage_name: Crisis Response
+        capability_id: BC-850
+        notes: Crisis communications
+      - stage_order: 5
+        stage_name: Disaster Recovery
+        capability_id: BC-160.20
+        notes: IT/site DR
+      - stage_order: 5
+        stage_name: Disaster Recovery
+        capability_id: BC-600.40
+        notes: IT operations failover
+      - stage_order: 6
+        stage_name: Restoration
+        capability_id: BC-1030.30
+        industry_variant: Manufacturing
+        notes: Asset / line restart
+      - stage_order: 7
+        stage_name: Post-Crisis Review
+        capability_id: BC-830.40
+        notes: Lessons learned
+      - stage_order: 7
+        stage_name: Post-Crisis Review
+        capability_id: BC-120.20
+        notes: Risk reassessment
+  - name: ESG-to-Disclosure
+    stages:
+      - stage_order: 1
+        stage_name: ESG Strategy & Materiality
+        capability_id: BC-740.10
+        notes: ESG strategy & materiality
+      - stage_order: 2
+        stage_name: Data Collection
+        capability_id: BC-740.20
+        notes: Emissions / energy data
+      - stage_order: 2
+        stage_name: Data Collection
+        capability_id: BC-740.30
+        notes: Circular economy metrics
+      - stage_order: 2
+        stage_name: Data Collection
+        capability_id: BC-740.40
+        notes: Sustainable sourcing data
+      - stage_order: 2
+        stage_name: Data Collection
+        capability_id: BC-510.20
+        notes: Supplier sustainability ratings
+      - stage_order: 3
+        stage_name: Data Quality & Assurance
+        capability_id: BC-610.30
+        notes: Data quality controls
+      - stage_order: 3
+        stage_name: Data Quality & Assurance
+        capability_id: BC-140.20
+        notes: Internal assurance
+      - stage_order: 4
+        stage_name: Reporting & Disclosure
+        capability_id: BC-740.10
+        notes: Sustainability report
+      - stage_order: 4
+        stage_name: Reporting & Disclosure
+        capability_id: BC-200.70
+        notes: Statutory ESG filings
+      - stage_order: 5
+        stage_name: Stakeholder Engagement
+        capability_id: BC-740.50
+        notes: Investor / NGO engagement
+      - stage_order: 5
+        stage_name: Stakeholder Engagement
+        capability_id: BC-240
+        notes: Investor relations briefings
+      - stage_order: 6
+        stage_name: Improvement Targets
+        capability_id: BC-100.20
+        notes: Strategy execution feedback
+  - name: Concept-to-Manufacture
+    stages:
+      - stage_order: 1
+        stage_name: Concept Design
+        capability_id: BC-1120.10
+        industry_variant: Engineering Services
+        notes: Conceptual design
+      - stage_order: 2
+        stage_name: FEED & Specification
+        capability_id: BC-1120.20
+        industry_variant: Engineering Services
+        notes: Front-end engineering design
+      - stage_order: 2
+        stage_name: FEED & Specification
+        capability_id: BC-820.30
+        notes: Product specification
+      - stage_order: 3
+        stage_name: Detailed Design
+        capability_id: BC-1120.30
+        industry_variant: Engineering Services
+        notes: Detailed design
+      - stage_order: 3
+        stage_name: Detailed Design
+        capability_id: BC-1100
+        industry_variant: Engineering Services
+        notes: Multi-discipline engineering
+      - stage_order: 4
+        stage_name: Design Review
+        capability_id: BC-1120.40
+        industry_variant: Engineering Services
+        notes: Verification & validation
+      - stage_order: 4
+        stage_name: Design Review
+        capability_id: BC-1770.40
+        industry_variant: Defense
+        notes: Defense V&V
+      - stage_order: 5
+        stage_name: Manufacturing Engineering
+        capability_id: BC-1020
+        industry_variant: Manufacturing
+        notes: Process design / industrialisation
+      - stage_order: 5
+        stage_name: Manufacturing Engineering
+        capability_id: BC-820.40
+        notes: Configuration / variants
+      - stage_order: 6
+        stage_name: Production Ramp-Up
+        capability_id: BC-1000.20
+        industry_variant: Manufacturing
+        notes: Production planning
+      - stage_order: 6
+        stage_name: Production Ramp-Up
+        capability_id: BC-1010.20
+        industry_variant: Manufacturing
+        notes: Shop floor execution
+      - stage_order: 7
+        stage_name: Quality & Yield Stabilisation
+        capability_id: BC-720.30
+        notes: QC ramp-up
+      - stage_order: 7
+        stage_name: Quality & Yield Stabilisation
+        capability_id: BC-1000.50
+        industry_variant: Manufacturing
+        notes: Production performance
+      - stage_order: 8
+        stage_name: Configuration Baseline
+        capability_id: BC-1130
+        industry_variant: Engineering Services
+        notes: Engineering document control
+      - stage_order: 8
+        stage_name: Configuration Baseline
+        capability_id: BC-1770.50
+        industry_variant: Defense
+        notes: Configuration management
