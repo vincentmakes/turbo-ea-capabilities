@@ -1,0 +1,220 @@
+# Telecom Service Assurance Management
+id: BC-2630
+name: Telecom Service Assurance Management
+level: 1
+industry: Telecommunications
+description: |
+  Service-level performance, quality, incident, and customer-experience
+  management against committed targets — anchored on eTOM Service Assurance,
+  ITU-T E.800 quality of service, and the TM Forum SLA Open API.
+references:
+  - https://www.itu.int/rec/T-REC-E.800
+  - https://www.tmforum.org/oda/business/process-framework-etom/
+  - https://www.tmforum.org/oda/open-apis/
+children:
+  - id: BC-2630.10
+    name: Service Level Management
+    level: 2
+    industry: Telecommunications
+    description: |
+      Definition, monitoring, reporting, and breach handling of service-level
+      agreements with customers and partners.
+    children:
+      - id: BC-2630.10.10
+        name: Service Level Definition
+        level: 3
+        industry: Telecommunications
+        description: |
+          Definition of SLA targets, metrics, and measurement methods per
+          service offer.
+        children: []
+      - id: BC-2630.10.20
+        name: Service Level Monitoring
+        level: 3
+        industry: Telecommunications
+        description: |
+          Monitoring of measured service performance against SLA commitments.
+        children: []
+      - id: BC-2630.10.30
+        name: Service Level Reporting
+        level: 3
+        industry: Telecommunications
+        description: |
+          Reporting of SLA outcomes to customers, partners, and internal
+          stakeholders.
+        children: []
+      - id: BC-2630.10.40
+        name: Service Level Breach Management
+        level: 3
+        industry: Telecommunications
+        description: |
+          Handling of SLA breaches including credit calculation and customer
+          remediation.
+        children: []
+  - id: BC-2630.20
+    name: Service Performance Monitoring
+    level: 2
+    industry: Telecommunications
+    description: |
+      Continuous monitoring of end-to-end service KPIs and customer-experience
+      indicators to detect degradation.
+    children:
+      - id: BC-2630.20.10
+        name: End-to-End Service KPI Monitoring
+        level: 3
+        industry: Telecommunications
+        description: |
+          Monitoring of end-to-end service KPIs aggregated across underlying
+          network domains.
+        children: []
+      - id: BC-2630.20.20
+        name: Customer Experience Indicator Monitoring
+        level: 3
+        industry: Telecommunications
+        description: |
+          Monitoring of QoE-style indicators that reflect the customer's
+          perceived service quality.
+        children: []
+      - id: BC-2630.20.30
+        name: Service Degradation Detection
+        level: 3
+        industry: Telecommunications
+        description: |
+          Early detection of service degradation patterns ahead of customer
+          impact.
+        children: []
+  - id: BC-2630.30
+    name: Customer-Impacting Incident Management
+    level: 2
+    industry: Telecommunications
+    description: |
+      End-to-end management of incidents that affect customers — detection,
+      notification, escalation, and review.
+    children:
+      - id: BC-2630.30.10
+        name: Customer Incident Detection
+        level: 3
+        industry: Telecommunications
+        description: |
+          Detection of incidents impacting one or more customers, drawing on
+          network and customer signals.
+        children: []
+      - id: BC-2630.30.20
+        name: Customer Incident Notification
+        level: 3
+        industry: Telecommunications
+        description: |
+          Notification of impacted customers and channels with status, ETA, and
+          workaround information.
+        children: []
+      - id: BC-2630.30.30
+        name: Incident Escalation
+        level: 3
+        industry: Telecommunications
+        description: |
+          Escalation of customer-impacting incidents according to severity and
+          duration policies.
+        children: []
+      - id: BC-2630.30.40
+        name: Post-Incident Review
+        level: 3
+        industry: Telecommunications
+        description: |
+          Structured review of significant customer-impacting incidents to
+          drive corrective action.
+        children: []
+  - id: BC-2630.40
+    name: Service Quality Management
+    level: 2
+    industry: Telecommunications
+    description: |
+      Measurement, modelling, and reporting of service quality and customer
+      experience, including regulator-facing reporting.
+    children:
+      - id: BC-2630.40.10
+        name: Quality of Service Measurement
+        level: 3
+        industry: Telecommunications
+        description: |
+          Measurement of QoS parameters such as latency, loss, jitter, and
+          throughput per service.
+        children: []
+      - id: BC-2630.40.20
+        name: Quality of Experience Modelling
+        level: 3
+        industry: Telecommunications
+        description: |
+          Modelling of customer-perceived quality of experience from network
+          and behavioural signals.
+        children: []
+      - id: BC-2630.40.30
+        name: Service Quality Reporting
+        level: 3
+        industry: Telecommunications
+        description: |
+          Reporting of service-quality metrics to internal stakeholders and
+          regulators.
+        children: []
+  - id: BC-2630.50
+    name: Service Restoration Coordination
+    level: 2
+    industry: Telecommunications
+    description: |
+      Coordination of restoration activities, workarounds, and recovery
+      validation for impaired services.
+    children:
+      - id: BC-2630.50.10
+        name: Service Restoration Workflow
+        level: 3
+        industry: Telecommunications
+        description: |
+          Orchestration of restoration tasks across network and field teams.
+        children: []
+      - id: BC-2630.50.20
+        name: Workaround Coordination
+        level: 3
+        industry: Telecommunications
+        description: |
+          Coordination of temporary workarounds and bypass routes during
+          extended impairments.
+        children: []
+      - id: BC-2630.50.30
+        name: Service Recovery Validation
+        level: 3
+        industry: Telecommunications
+        description: |
+          Validation that service has been restored to baseline and customers
+          are no longer impacted.
+        children: []
+  - id: BC-2630.60
+    name: Customer Experience Management
+    level: 2
+    industry: Telecommunications
+    description: |
+      Measurement of customer experience around service events and proactive
+      outreach to mitigate dissatisfaction.
+    children:
+      - id: BC-2630.60.10
+        name: Service-Event NPS Measurement
+        level: 3
+        industry: Telecommunications
+        description: |
+          Measurement of customer satisfaction and NPS in the context of
+          service-impacting events.
+        children: []
+      - id: BC-2630.60.20
+        name: Churn-Risk Signalling
+        level: 3
+        industry: Telecommunications
+        description: |
+          Identification of customers at elevated churn risk following service
+          incidents.
+        children: []
+      - id: BC-2630.60.30
+        name: Proactive Customer Outreach
+        level: 3
+        industry: Telecommunications
+        description: |
+          Proactive outreach to impacted customers with apologies, credits, and
+          retention offers.
+        children: []

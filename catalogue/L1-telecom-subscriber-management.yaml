@@ -1,0 +1,203 @@
+# Telecom Subscriber Management
+id: BC-2640
+name: Telecom Subscriber Management
+level: 1
+industry: Telecommunications
+description: |
+  Subscriber identity, SIM and eSIM lifecycle, numbering, portability, device
+  identity, and authentication and authorisation across mobile and fixed
+  networks.
+references:
+  - https://www.gsma.com/esim/
+  - https://www.3gpp.org/specifications-technologies
+  - https://www.itu.int/rec/T-REC-E.164
+children:
+  - id: BC-2640.10
+    name: Subscriber Identity Management
+    level: 2
+    industry: Telecommunications
+    description: |
+      Lifecycle management of subscriber identifiers and profiles in the
+      subscriber data layer.
+    children:
+      - id: BC-2640.10.10
+        name: IMSI Provisioning
+        level: 3
+        industry: Telecommunications
+        description: |
+          Allocation and provisioning of IMSI and equivalent identifiers in
+          subscriber data stores.
+        children: []
+      - id: BC-2640.10.20
+        name: Subscriber Profile Management
+        level: 3
+        industry: Telecommunications
+        description: |
+          Management of subscriber profile records in HLR, HSS, UDM, and
+          equivalent systems.
+        children: []
+      - id: BC-2640.10.30
+        name: Subscriber Identity Revocation
+        level: 3
+        industry: Telecommunications
+        description: |
+          Revocation of subscriber identities on cancellation, fraud, or
+          regulator request.
+        children: []
+  - id: BC-2640.20
+    name: "SIM & eSIM Lifecycle Management"
+    level: 2
+    industry: Telecommunications
+    description: |
+      Lifecycle management of physical SIM cards and eSIM profiles including
+      personalisation, distribution, swap, and replacement.
+    children:
+      - id: BC-2640.20.10
+        name: Physical SIM Provisioning
+        level: 3
+        industry: Telecommunications
+        description: |
+          Personalisation and distribution of physical SIM cards.
+        children: []
+      - id: BC-2640.20.20
+        name: eSIM Profile Management
+        level: 3
+        industry: Telecommunications
+        description: |
+          Management of eSIM profiles via SM-DP+, SM-SR, and equivalent
+          platforms.
+        children: []
+      - id: BC-2640.20.30
+        name: "Profile Swap & Replacement"
+        level: 3
+        industry: Telecommunications
+        description: |
+          Swap and replacement of subscriber SIM and eSIM profiles, including
+          fraud-aware flows.
+        children: []
+  - id: BC-2640.30
+    name: Numbering Resource Management
+    level: 2
+    industry: Telecommunications
+    description: |
+      Stewardship of telephone numbering resources granted by regulators and
+      their assignment to services.
+    children:
+      - id: BC-2640.30.10
+        name: Number Block Allocation
+        level: 3
+        industry: Telecommunications
+        description: |
+          Acquisition and allocation of number blocks from the regulator into
+          internal inventory.
+        children: []
+      - id: BC-2640.30.20
+        name: Number Inventory Management
+        level: 3
+        industry: Telecommunications
+        description: |
+          Management of available, reserved, assigned, and quarantined number
+          inventory.
+        children: []
+      - id: BC-2640.30.30
+        name: "Number Reservation & Return"
+        level: 3
+        industry: Telecommunications
+        description: |
+          Reservation of numbers for orders and return of unused numbers to the
+          pool or regulator.
+        children: []
+  - id: BC-2640.40
+    name: Number Portability Management
+    level: 2
+    industry: Telecommunications
+    description: |
+      Inbound and outbound mobile and fixed number portability and maintenance
+      of routing reference data.
+    children:
+      - id: BC-2640.40.10
+        name: Port-In Management
+        level: 3
+        industry: Telecommunications
+        description: |
+          Handling of inbound number portability requests from other operators.
+        children: []
+      - id: BC-2640.40.20
+        name: Port-Out Management
+        level: 3
+        industry: Telecommunications
+        description: |
+          Handling of outbound number portability requests to other operators.
+        children: []
+      - id: BC-2640.40.30
+        name: Portability Routing Reference Maintenance
+        level: 3
+        industry: Telecommunications
+        description: |
+          Maintenance of portability routing data including ENUM and central
+          reference databases.
+        children: []
+  - id: BC-2640.50
+    name: Device Identity Management
+    level: 2
+    industry: Telecommunications
+    description: |
+      Registration and control of device identifiers for service eligibility
+      and stolen-device blacklisting.
+    children:
+      - id: BC-2640.50.10
+        name: IMEI Registration
+        level: 3
+        industry: Telecommunications
+        description: |
+          Registration of device IMEIs against subscribers and service
+          eligibility checks.
+        children: []
+      - id: BC-2640.50.20
+        name: Equipment Identity Register Maintenance
+        level: 3
+        industry: Telecommunications
+        description: |
+          Maintenance of EIR data for whitelisted, greylisted, and blacklisted
+          devices.
+        children: []
+      - id: BC-2640.50.30
+        name: Stolen Device Blacklisting
+        level: 3
+        industry: Telecommunications
+        description: |
+          Blacklisting of stolen and lost devices in cooperation with industry
+          and law enforcement registries.
+        children: []
+  - id: BC-2640.60
+    name: "Subscriber Authentication & Authorisation"
+    level: 2
+    industry: Telecommunications
+    description: |
+      Authentication, authorisation, and accounting of subscribers and devices
+      across access technologies.
+    children:
+      - id: BC-2640.60.10
+        name: Subscriber Authentication
+        level: 3
+        industry: Telecommunications
+        description: |
+          Authentication of subscribers across mobile, fixed, and Wi-Fi access
+          using AAA protocols.
+        children: []
+      - id: BC-2640.60.20
+        name: Authorisation Policy Management
+        level: 3
+        industry: Telecommunications
+        description: |
+          Management of service authorisation and policy rules per subscriber
+          and device.
+        children: []
+      - id: BC-2640.60.30
+        name: Accounting Record Management
+        level: 3
+        industry: Telecommunications
+        description: |
+          Generation and management of AAA accounting records for downstream
+          charging and analytics.
+        children: []

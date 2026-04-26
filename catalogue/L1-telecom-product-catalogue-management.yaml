@@ -1,0 +1,173 @@
+# Telecom Product Catalogue Management
+id: BC-2650
+name: Telecom Product Catalogue Management
+level: 1
+industry: Telecommunications
+description: |
+  Design, configuration, lifecycle, and channel publication of telecom
+  products, tariffs, plans, bundles, and promotions across consumer,
+  enterprise, and wholesale.
+references:
+  - https://www.tmforum.org/oda/business/process-framework-etom/
+  - https://www.tmforum.org/oda/open-apis/
+children:
+  - id: BC-2650.10
+    name: Product Offer Design
+    level: 2
+    industry: Telecommunications
+    description: |
+      Design of new commercial offers including features, eligibility, and
+      pricing structures.
+    children:
+      - id: BC-2650.10.10
+        name: Offer Specification
+        level: 3
+        industry: Telecommunications
+        description: |
+          Specification of offer composition, features, and customer-facing
+          terms.
+        children: []
+      - id: BC-2650.10.20
+        name: Technical Product Feasibility
+        level: 3
+        industry: Telecommunications
+        description: |
+          Validation that the proposed offer is technically deliverable across
+          targeted networks and platforms.
+        children: []
+      - id: BC-2650.10.30
+        name: Pricing-Tier Design
+        level: 3
+        industry: Telecommunications
+        description: |
+          Design of pricing tiers, eligibility rules, and contract structures
+          for the offer.
+        children: []
+  - id: BC-2650.20
+    name: "Tariff & Plan Management"
+    level: 2
+    industry: Telecommunications
+    description: |
+      Definition and lifecycle of tariffs, recurring charges, and fair-use
+      policies underpinning offers.
+    children:
+      - id: BC-2650.20.10
+        name: Usage Tariff Definition
+        level: 3
+        industry: Telecommunications
+        description: |
+          Definition of per-event and per-unit usage tariffs by service type and
+          jurisdiction.
+        children: []
+      - id: BC-2650.20.20
+        name: Recurring Charge Definition
+        level: 3
+        industry: Telecommunications
+        description: |
+          Definition of recurring charges, monthly fees, and contract-related
+          charges.
+        children: []
+      - id: BC-2650.20.30
+        name: Fair-Use Policy Management
+        level: 3
+        industry: Telecommunications
+        description: |
+          Definition and lifecycle of fair-use and acceptable-use policies on
+          unlimited and high-usage plans.
+        children: []
+  - id: BC-2650.30
+    name: "Bundle & Promotion Management"
+    level: 2
+    industry: Telecommunications
+    description: |
+      Composition and rules of multi-product bundles and time-bound
+      promotions.
+    children:
+      - id: BC-2650.30.10
+        name: Bundle Composition
+        level: 3
+        industry: Telecommunications
+        description: |
+          Composition of multi-service bundles spanning mobile, fixed, content,
+          and device.
+        children: []
+      - id: BC-2650.30.20
+        name: Promotion Eligibility Rules
+        level: 3
+        industry: Telecommunications
+        description: |
+          Definition of customer- and offer-level eligibility rules for
+          promotions.
+        children: []
+      - id: BC-2650.30.30
+        name: Discount Stacking Rules
+        level: 3
+        industry: Telecommunications
+        description: |
+          Rules governing how multiple discounts and promotions combine on a
+          single account.
+        children: []
+  - id: BC-2650.40
+    name: Product Catalogue Publication
+    level: 2
+    industry: Telecommunications
+    description: |
+      Publication of catalogue versions to channels and partners with version
+      control and regional variants.
+    children:
+      - id: BC-2650.40.10
+        name: Multi-Channel Catalogue Publication
+        level: 3
+        industry: Telecommunications
+        description: |
+          Publication of catalogue content to retail, digital, contact-centre,
+          and partner channels.
+        children: []
+      - id: BC-2650.40.20
+        name: Catalogue Version Control
+        level: 3
+        industry: Telecommunications
+        description: |
+          Version control of catalogue content including effective dates and
+          rollback.
+        children: []
+      - id: BC-2650.40.30
+        name: Regional Catalogue Variant Management
+        level: 3
+        industry: Telecommunications
+        description: |
+          Management of regional and brand-level catalogue variants from a
+          shared master.
+        children: []
+  - id: BC-2650.50
+    name: Telecom Product Lifecycle Management
+    level: 2
+    industry: Telecommunications
+    description: |
+      Lifecycle management of offers from launch through modification, sunset,
+      and grandfathering.
+    children:
+      - id: BC-2650.50.10
+        name: Offer Launch
+        level: 3
+        industry: Telecommunications
+        description: |
+          Coordination of new-offer launches across systems, channels, and
+          regions.
+        children: []
+      - id: BC-2650.50.20
+        name: Offer Modification
+        level: 3
+        industry: Telecommunications
+        description: |
+          Controlled modification of in-market offers and migration of existing
+          subscribers where applicable.
+        children: []
+      - id: BC-2650.50.30
+        name: "Offer Retirement & Grandfathering"
+        level: 3
+        industry: Telecommunications
+        description: |
+          Retirement of offers from sale and grandfathering of existing
+          subscribers under legacy terms.
+        children: []

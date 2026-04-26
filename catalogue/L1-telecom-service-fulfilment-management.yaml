@@ -1,0 +1,219 @@
+# Telecom Service Fulfilment Management
+id: BC-2620
+name: Telecom Service Fulfilment Management
+level: 1
+industry: Telecommunications
+description: |
+  Service order capture, decomposition, provisioning, activation, acceptance,
+  and customer-premises installation across consumer, enterprise, and wholesale
+  services — anchored on eTOM Service Fulfilment and TM Forum Open APIs.
+references:
+  - https://www.tmforum.org/oda/business/process-framework-etom/
+  - https://www.tmforum.org/oda/open-apis/
+  - https://www.etsi.org/technologies/nfv
+children:
+  - id: BC-2620.10
+    name: Service Order Capture
+    level: 2
+    industry: Telecommunications
+    description: |
+      Multi-channel capture of service orders with feasibility and credit
+      checks prior to submission.
+    children:
+      - id: BC-2620.10.10
+        name: Omnichannel Order Capture
+        level: 3
+        industry: Telecommunications
+        description: |
+          Capture of service orders across retail, digital, contact-centre, and
+          partner channels.
+        children: []
+      - id: BC-2620.10.20
+        name: Service Feasibility Check
+        level: 3
+        industry: Telecommunications
+        description: |
+          Address-, coverage-, and resource-level feasibility checks against
+          requested services.
+        children: []
+      - id: BC-2620.10.30
+        name: "Credit & Risk Gating"
+        level: 3
+        industry: Telecommunications
+        description: |
+          Credit assessment and fraud-risk gating before order acceptance.
+        children: []
+      - id: BC-2620.10.40
+        name: Order Submission
+        level: 3
+        industry: Telecommunications
+        description: |
+          Validation, persistence, and downstream submission of accepted
+          service orders.
+        children: []
+  - id: BC-2620.20
+    name: Service Order Decomposition
+    level: 2
+    industry: Telecommunications
+    description: |
+      Decomposition of customer-facing orders into resource-facing work and
+      sequencing of dependencies.
+    children:
+      - id: BC-2620.20.10
+        name: Service-to-Resource Decomposition
+        level: 3
+        industry: Telecommunications
+        description: |
+          Decomposition of customer-facing services into resource-facing
+          services and elements.
+        children: []
+      - id: BC-2620.20.20
+        name: Work Order Generation
+        level: 3
+        industry: Telecommunications
+        description: |
+          Generation of network and field work orders from decomposed service
+          orders.
+        children: []
+      - id: BC-2620.20.30
+        name: Dependency Sequencing
+        level: 3
+        industry: Telecommunications
+        description: |
+          Sequencing of dependent work across network domains to deliver an
+          end-to-end service.
+        children: []
+  - id: BC-2620.30
+    name: Service Provisioning
+    level: 2
+    industry: Telecommunications
+    description: |
+      Allocation of network resources and orchestration of configuration
+      changes to instantiate services.
+    children:
+      - id: BC-2620.30.10
+        name: Network Resource Allocation
+        level: 3
+        industry: Telecommunications
+        description: |
+          Allocation of bandwidth, ports, IP addresses, and other resources to
+          a specific service instance.
+        children: []
+      - id: BC-2620.30.20
+        name: Service Orchestration
+        level: 3
+        industry: Telecommunications
+        description: |
+          Orchestrated execution of provisioning steps across physical and
+          virtualised network functions.
+        children: []
+      - id: BC-2620.30.30
+        name: Configuration Push
+        level: 3
+        industry: Telecommunications
+        description: |
+          Application of service-specific configuration to target network
+          elements.
+        children: []
+  - id: BC-2620.40
+    name: Service Activation
+    level: 2
+    industry: Telecommunications
+    description: |
+      Final turn-up of provisioned services and notification of customer and
+      downstream systems.
+    children:
+      - id: BC-2620.40.10
+        name: Service Turn-Up
+        level: 3
+        industry: Telecommunications
+        description: |
+          Switching of provisioned services into the live state.
+        children: []
+      - id: BC-2620.40.20
+        name: Subscriber Enrolment
+        level: 3
+        industry: Telecommunications
+        description: |
+          Enrolment of subscribers into authentication, authorisation, and
+          policy systems for the new service.
+        children: []
+      - id: BC-2620.40.30
+        name: Billing Activation
+        level: 3
+        industry: Telecommunications
+        description: |
+          Communication of activation events to billing for charge start and
+          contract clock initiation.
+        children: []
+      - id: BC-2620.40.40
+        name: Customer Activation Notification
+        level: 3
+        industry: Telecommunications
+        description: |
+          Notification of customers and channels that the service is live and
+          ready for use.
+        children: []
+  - id: BC-2620.50
+    name: Service Acceptance Testing
+    level: 2
+    industry: Telecommunications
+    description: |
+      End-to-end testing and baseline capture before formal handover of new
+      services.
+    children:
+      - id: BC-2620.50.10
+        name: End-to-End Service Testing
+        level: 3
+        industry: Telecommunications
+        description: |
+          Execution of end-to-end functional and performance tests on newly
+          provisioned services.
+        children: []
+      - id: BC-2620.50.20
+        name: Service Baseline Capture
+        level: 3
+        industry: Telecommunications
+        description: |
+          Capture of service performance baselines for downstream SLA
+          monitoring.
+        children: []
+      - id: BC-2620.50.30
+        name: Acceptance Sign-Off
+        level: 3
+        industry: Telecommunications
+        description: |
+          Formal acceptance and handover of services to operations and the
+          customer.
+        children: []
+  - id: BC-2620.60
+    name: Customer Premises Installation Coordination
+    level: 2
+    industry: Telecommunications
+    description: |
+      Coordination of on-site installation of customer-premises equipment and
+      associated activities.
+    children:
+      - id: BC-2620.60.10
+        name: Installation Appointment Scheduling
+        level: 3
+        industry: Telecommunications
+        description: |
+          Scheduling of customer appointments for on-site installations.
+        children: []
+      - id: BC-2620.60.20
+        name: On-Site Installation Coordination
+        level: 3
+        industry: Telecommunications
+        description: |
+          Coordination of installer activities, materials, and access at
+          customer premises.
+        children: []
+      - id: BC-2620.60.30
+        name: Customer Equipment Registration
+        level: 3
+        industry: Telecommunications
+        description: |
+          Registration of installed customer-premises equipment and association
+          with the service instance.
+        children: []

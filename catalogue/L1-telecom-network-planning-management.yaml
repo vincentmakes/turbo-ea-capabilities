@@ -1,0 +1,221 @@
+# Telecom Network Planning Management
+id: BC-2610
+name: Telecom Network Planning Management
+level: 1
+industry: Telecommunications
+description: |
+  Long-range design and dimensioning of fixed, mobile, and IP networks —
+  forecasting demand, planning coverage and capacity, defining technology
+  evolution, scheduling site rollout, and coordinating end-of-life of legacy
+  networks.
+references:
+  - https://www.tmforum.org/oda/business/process-framework-etom/
+  - https://www.3gpp.org/specifications-technologies
+  - https://www.itu.int/rec/T-REC-E.800
+children:
+  - id: BC-2610.10
+    name: Network Demand Forecasting
+    level: 2
+    industry: Telecommunications
+    description: |
+      Forecasting of long-term subscriber, traffic, and service demand to drive
+      coverage and capacity decisions.
+    children:
+      - id: BC-2610.10.10
+        name: Subscriber Growth Forecasting
+        level: 3
+        industry: Telecommunications
+        description: |
+          Forecasting of subscriber population by segment, technology, and
+          geography.
+        children: []
+      - id: BC-2610.10.20
+        name: Traffic Demand Forecasting
+        level: 3
+        industry: Telecommunications
+        description: |
+          Forecasting of voice, data, video, and signalling traffic volumes per
+          domain and cell.
+        children: []
+      - id: BC-2610.10.30
+        name: Service Demand Modelling
+        level: 3
+        industry: Telecommunications
+        description: |
+          Modelling of demand for new and evolving services to anchor capacity
+          and feature roadmaps.
+        children: []
+  - id: BC-2610.20
+    name: Network Coverage Planning
+    level: 2
+    industry: Telecommunications
+    description: |
+      Planning of geographic coverage targets and resilience for radio, fibre,
+      and transport networks.
+    children:
+      - id: BC-2610.20.10
+        name: Radio Coverage Planning
+        level: 3
+        industry: Telecommunications
+        description: |
+          Definition of radio coverage objectives and propagation modelling per
+          band and technology.
+        children: []
+      - id: BC-2610.20.20
+        name: Fibre Coverage Planning
+        level: 3
+        industry: Telecommunications
+        description: |
+          Planning of fibre footprint, homes-passed, and access node placement.
+        children: []
+      - id: BC-2610.20.30
+        name: "Redundancy & Resilience Planning"
+        level: 3
+        industry: Telecommunications
+        description: |
+          Design of route diversity, geographic redundancy, and resilience
+          targets.
+        children: []
+  - id: BC-2610.30
+    name: Network Capacity Planning
+    level: 2
+    industry: Telecommunications
+    description: |
+      Capacity sizing across radio access, core, and transport domains to meet
+      forecast demand within performance targets.
+    children:
+      - id: BC-2610.30.10
+        name: Radio Access Capacity Planning
+        level: 3
+        industry: Telecommunications
+        description: |
+          Capacity dimensioning of cells, sectors, and carriers in the radio
+          access network.
+        children: []
+      - id: BC-2610.30.20
+        name: Core Capacity Planning
+        level: 3
+        industry: Telecommunications
+        description: |
+          Capacity dimensioning of mobile and fixed core network functions and
+          subscriber data stores.
+        children: []
+      - id: BC-2610.30.30
+        name: Transport Capacity Planning
+        level: 3
+        industry: Telecommunications
+        description: |
+          Capacity dimensioning of fronthaul, backhaul, metro, and aggregation
+          transport.
+        children: []
+      - id: BC-2610.30.40
+        name: IP Backbone Capacity Planning
+        level: 3
+        industry: Telecommunications
+        description: |
+          Capacity dimensioning of the IP backbone, peering, and transit links.
+        children: []
+  - id: BC-2610.40
+    name: Network Technology Evolution Planning
+    level: 2
+    industry: Telecommunications
+    description: |
+      Definition of multi-year network technology roadmap and architecture
+      evolution.
+    children:
+      - id: BC-2610.40.10
+        name: Technology Roadmap Definition
+        level: 3
+        industry: Telecommunications
+        description: |
+          Definition of multi-year evolution roadmap across radio, transport,
+          and core technologies.
+        children: []
+      - id: BC-2610.40.20
+        name: Network Architecture Evolution
+        level: 3
+        industry: Telecommunications
+        description: |
+          Architectural transformation toward target reference architectures
+          such as cloud-native core and Open RAN.
+        children: []
+      - id: BC-2610.40.30
+        name: Vendor Technology Selection
+        level: 3
+        industry: Telecommunications
+        description: |
+          Evaluation and selection of vendor technologies for new network
+          domains and refresh cycles.
+        children: []
+  - id: BC-2610.50
+    name: Network Site Planning
+    level: 2
+    industry: Telecommunications
+    description: |
+      Identification, surveying, approval, and rollout scheduling of new network
+      sites.
+    children:
+      - id: BC-2610.50.10
+        name: Site Identification
+        level: 3
+        industry: Telecommunications
+        description: |
+          Identification of candidate sites against coverage, capacity, and
+          backhaul criteria.
+        children: []
+      - id: BC-2610.50.20
+        name: Radio Frequency Site Survey
+        level: 3
+        industry: Telecommunications
+        description: |
+          Survey of candidate sites for RF performance, structural feasibility,
+          and interference.
+        children: []
+      - id: BC-2610.50.30
+        name: Build Approval Coordination
+        level: 3
+        industry: Telecommunications
+        description: |
+          Coordination of internal approvals, planning permissions, and zoning
+          for new sites.
+        children: []
+      - id: BC-2610.50.40
+        name: Rollout Scheduling
+        level: 3
+        industry: Telecommunications
+        description: |
+          Scheduling and sequencing of site builds against capex, supplier, and
+          coverage commitments.
+        children: []
+  - id: BC-2610.60
+    name: Network End-of-Life Planning
+    level: 2
+    industry: Telecommunications
+    description: |
+      Planning of legacy network sunset, customer migration, and asset
+      decommissioning.
+    children:
+      - id: BC-2610.60.10
+        name: Legacy Network Decommissioning Planning
+        level: 3
+        industry: Telecommunications
+        description: |
+          Planning of orderly decommissioning of legacy network elements and
+          associated assets.
+        children: []
+      - id: BC-2610.60.20
+        name: Customer Migration Planning
+        level: 3
+        industry: Telecommunications
+        description: |
+          Planning of customer migration off retiring technologies onto target
+          platforms.
+        children: []
+      - id: BC-2610.60.30
+        name: Technology Sunset Planning
+        level: 3
+        industry: Telecommunications
+        description: |
+          Definition of technology sunset milestones, regulatory notifications,
+          and final shut-down events.
+        children: []

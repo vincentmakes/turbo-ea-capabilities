@@ -508,6 +508,23 @@ Where an industry reference framework exists, anchor the upper levels (L1 / L2) 
 - **BRCGS, SQF, FSSC 22000, IFS Food, ISO 22000** — food-safety management systems and certification standards.
 - **OECD Due Diligence Guidance for the Garment & Footwear Sector, WRAP, SA8000** — ethical-sourcing and labour standards relevant to consumer-goods supply chains.
 
+**Telecommunications**
+
+- **TM Forum Frameworx (eTOM, SID, TAM, ODA)** — telecom enterprise process, information, application, and Open Digital Architecture reference.
+- **TM Forum Open APIs** — standardised REST APIs for telecom service exposure and partner integration.
+- **3GPP technical specifications (Release 15+, 5G/4G core, RAN, IMS)** — mobile network architecture and protocols.
+- **ETSI NFV / MANO and ETSI ZSM** — network function virtualisation, orchestration, and zero-touch service management.
+- **ITU-T E.800 series** — quality-of-service framework.
+- **ITU-T M.3400 (TMN — FCAPS)** — telecommunications management network model.
+- **ITU Radio Regulations and national spectrum frameworks (FCC, Ofcom, BNetzA, ACMA)** — spectrum allocation and licensing.
+- **GSMA standards (eSIM SGP.21/22, RCS Universal Profile, BA.40 roaming, TS.32 fraud)** — mobile operator interoperability, roaming, and fraud reporting.
+- **MEF LSO (Lifecycle Service Orchestration), MEF 3.0** — carrier Ethernet and inter-provider service standards.
+- **IETF RFCs (BGP, MPLS, IP, SIP, ENUM RFC 6116)** — internet routing, signalling, and number-to-URI mapping.
+- **3GPP TS 33.106 / 33.107 / 33.108 and ETSI TS 102 232 / TS 101 671** — lawful interception requirements and handover interfaces.
+- **CALEA (US 47 USC 1001-1010), EU Data Retention frameworks, UK IPA 2016** — national LI and data retention obligations.
+- **Universal Service Obligation regimes and emergency-call standards (E911, eCall, 112)** — universal access and emergency services.
+- **CTIA, FCC Part 15, RED 2014/53/EU** — device certification and emissions for end-user equipment.
+
 **Transportation & Logistics**
 
 - **SCOR (Supply Chain Operations Reference) — APICS/ASCM** — cross-modal supply-chain process taxonomy used as a process anchor by carriers, forwarders, and 3PLs.
@@ -535,7 +552,7 @@ Where an industry reference framework exists, anchor the upper levels (L1 / L2) 
 
 **Other industry anchors not yet exercised in the catalogue but recommended for adoption**
 
-- **eTOM** — telecommunications.
+*(All previously listed industries have been promoted to dedicated subsections above.)*
 
 These references describe *what* organisations in a given industry typically do — useful as a starting point, but they must still be adapted to the enterprise's own context and re-expressed in conformant noun-phrase form where necessary. Citing a framework does not exempt a node from §5 (naming) or §4 (decomposition) — frameworks inform the *shape* of the model, not the *form* of its names.
 

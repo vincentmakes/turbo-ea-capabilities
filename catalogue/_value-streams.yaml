@@ -149,6 +149,16 @@ value_streams:
         capability_id: BC-2490
         industry_variant: Transportation & Logistics
         notes: Dangerous-goods incident, spill, and release intake
+      - stage_order: 1
+        stage_name: Issue Capture (Telecom Service)
+        capability_id: BC-2630
+        industry_variant: Telecommunications
+        notes: Customer-impacting service incident intake
+      - stage_order: 1
+        stage_name: Issue Capture (Telecom Fraud)
+        capability_id: BC-2690
+        industry_variant: Telecommunications
+        notes: Fraud alert and customer-reported fraud intake
       - stage_order: 3
         stage_name: Investigation (Audit)
         capability_id: BC-140
@@ -215,6 +225,16 @@ value_streams:
         capability_id: BC-2490
         industry_variant: Transportation & Logistics
         notes: DG incident investigation and authority notification
+      - stage_order: 3
+        stage_name: Investigation (Telecom Service)
+        capability_id: BC-2630
+        industry_variant: Telecommunications
+        notes: Root cause analysis and customer-incident investigation
+      - stage_order: 3
+        stage_name: Investigation (Telecom Fraud)
+        capability_id: BC-2690
+        industry_variant: Telecommunications
+        notes: Telecom fraud case investigation
       - stage_order: 4
         stage_name: Resolution (Audit)
         capability_id: BC-140
@@ -268,6 +288,16 @@ value_streams:
         capability_id: BC-2530
         industry_variant: Transportation & Logistics
         notes: Claim settlement, recourse, and subrogation
+      - stage_order: 4
+        stage_name: Resolution (Telecom Service)
+        capability_id: BC-2630
+        industry_variant: Telecommunications
+        notes: Service restoration and customer remediation
+      - stage_order: 4
+        stage_name: Resolution (Telecom Fraud)
+        capability_id: BC-2690
+        industry_variant: Telecommunications
+        notes: Fraudulent-charge recovery and account remediation
       - stage_order: 6
         stage_name: Lessons Learned (Aviation Safety)
         capability_id: BC-1280
@@ -334,6 +364,11 @@ value_streams:
         capability_id: BC-2400
         industry_variant: Transportation & Logistics
         notes: Booking acceptance against capacity
+      - stage_order: 3
+        stage_name: Contract & Order Capture
+        capability_id: BC-2620
+        industry_variant: Telecommunications
+        notes: Service order capture, feasibility, and credit gating
       - stage_order: 4
         stage_name: Order Promising & Allocation
         capability_id: BC-520
@@ -352,6 +387,11 @@ value_streams:
         capability_id: BC-2400
         industry_variant: Transportation & Logistics
         notes: Capacity allocation and ATP for cargo
+      - stage_order: 4
+        stage_name: Order Promising & Allocation
+        capability_id: BC-2620
+        industry_variant: Telecommunications
+        notes: Network resource allocation against orders
       - stage_order: 5
         stage_name: Production / Service Delivery
         capability_id: BC-1000
@@ -398,6 +438,11 @@ value_streams:
         capability_id: BC-2460
         industry_variant: Transportation & Logistics
         notes: 3PL fulfilment as the service product
+      - stage_order: 5
+        stage_name: Production / Service Delivery
+        capability_id: BC-2620
+        industry_variant: Telecommunications
+        notes: Service provisioning, activation, and acceptance testing
       - stage_order: 6
         stage_name: Outbound Logistics
         capability_id: BC-1570
@@ -451,6 +496,11 @@ value_streams:
         capability_id: BC-2530
         industry_variant: Transportation & Logistics
         notes: Freight and accessorial invoice issuance
+      - stage_order: 7
+        stage_name: Customer Invoicing
+        capability_id: BC-2660
+        industry_variant: Telecommunications
+        notes: Telecom bill cycle, calculation, and presentment
       - stage_order: 8
         stage_name: Cash Collection & Application
         capability_id: BC-200
@@ -474,6 +524,11 @@ value_streams:
         capability_id: BC-2530
         industry_variant: Transportation & Logistics
         notes: Freight collection
+      - stage_order: 8
+        stage_name: Cash Collection & Application
+        capability_id: BC-2660
+        industry_variant: Telecommunications
+        notes: Telecom dunning, suspension, and disconnection
       - stage_order: 9
         stage_name: Revenue Recognition
         capability_id: BC-200
@@ -488,6 +543,11 @@ value_streams:
         capability_id: BC-2530
         industry_variant: Transportation & Logistics
         notes: Freight revenue recognition
+      - stage_order: 9
+        stage_name: Revenue Recognition
+        capability_id: BC-2660
+        industry_variant: Telecommunications
+        notes: Usage-based revenue recognition and revenue assurance
   - name: Procure-to-Pay
     industries: [Cross-Industry]
     stages:
@@ -654,6 +714,11 @@ value_streams:
         capability_id: BC-2300
         industry_variant: Retail & Consumer Goods
         notes: Private-label NPD specification
+      - stage_order: 5
+        stage_name: Design & Development
+        capability_id: BC-2650
+        industry_variant: Telecommunications
+        notes: Tariff, plan, and bundle design
       - stage_order: 6
         stage_name: IP Protection
         capability_id: BC-840
@@ -681,6 +746,11 @@ value_streams:
         capability_id: BC-2370
         industry_variant: Retail & Consumer Goods
         notes: Channel content readiness
+      - stage_order: 7
+        stage_name: Launch Readiness
+        capability_id: BC-2650
+        industry_variant: Telecommunications
+        notes: Multi-channel catalogue publication
       - stage_order: 8
         stage_name: Market Introduction
         capability_id: BC-1530
@@ -710,6 +780,11 @@ value_streams:
         capability_id: BC-2360
         industry_variant: Retail & Consumer Goods
         notes: Trade-event launch activation
+      - stage_order: 8
+        stage_name: Market Introduction
+        capability_id: BC-2650
+        industry_variant: Telecommunications
+        notes: Telecom offer launch and channel activation
       - stage_order: 9
         stage_name: Post-Launch Performance
         capability_id: BC-820
@@ -724,6 +799,11 @@ value_streams:
         capability_id: BC-2100
         industry_variant: Insurance
         notes: Product performance review
+      - stage_order: 9
+        stage_name: Post-Launch Performance
+        capability_id: BC-2650
+        industry_variant: Telecommunications
+        notes: Offer modification, retirement, and grandfathering
   - name: Plan-to-Inventory
     industries: [Cross-Industry]
     stages:
@@ -740,6 +820,11 @@ value_streams:
         capability_id: BC-2300
         industry_variant: Retail & Consumer Goods
         notes: Cluster assortment & range demand
+      - stage_order: 1
+        stage_name: Demand Planning
+        capability_id: BC-2610
+        industry_variant: Telecommunications
+        notes: Subscriber growth and traffic demand forecasting
       - stage_order: 2
         stage_name: Supply Planning
         capability_id: BC-1000
@@ -776,6 +861,11 @@ value_streams:
         capability_id: BC-2460
         industry_variant: Transportation & Logistics
         notes: 3PL inventory positioning across nodes
+      - stage_order: 4
+        stage_name: Inventory Positioning
+        capability_id: BC-2600
+        industry_variant: Telecommunications
+        notes: Logical and physical network inventory
       - stage_order: 5
         stage_name: Replenishment Execution
         capability_id: BC-530
@@ -803,6 +893,11 @@ value_streams:
         capability_id: BC-2460
         industry_variant: Transportation & Logistics
         notes: Cycle counting and accuracy in 3PL warehouses
+      - stage_order: 6
+        stage_name: Inventory Health Monitoring
+        capability_id: BC-2600
+        industry_variant: Telecommunications
+        notes: Inventory reconciliation and network discovery
   - name: Record-to-Report
     industries: [Cross-Industry]
     stages:
@@ -810,6 +905,11 @@ value_streams:
         stage_name: Transaction Capture
         capability_id: BC-200
         notes: GL posting from sub-ledgers; Cost accounting allocations
+      - stage_order: 1
+        stage_name: Transaction Capture
+        capability_id: BC-2660
+        industry_variant: Telecommunications
+        notes: Telecom billing and usage transactions feeding GL
       - stage_order: 2
         stage_name: Sub-Ledger Close
         capability_id: BC-200
@@ -885,6 +985,11 @@ value_streams:
         capability_id: BC-2430
         industry_variant: Transportation & Logistics
         notes: Fleet specification and renewal plan
+      - stage_order: 1
+        stage_name: Asset Need & Justification
+        capability_id: BC-2610
+        industry_variant: Telecommunications
+        notes: Site identification and rollout business case
       - stage_order: 2
         stage_name: Acquisition
         capability_id: BC-1110
@@ -904,6 +1009,11 @@ value_streams:
         capability_id: BC-2430
         industry_variant: Transportation & Logistics
         notes: Fleet procurement, lease, and charter
+      - stage_order: 2
+        stage_name: Acquisition
+        capability_id: BC-2610
+        industry_variant: Telecommunications
+        notes: Site acquisition, build approval, and rollout scheduling
       - stage_order: 3
         stage_name: Commissioning & Capitalisation
         capability_id: BC-1160
@@ -951,6 +1061,11 @@ value_streams:
         capability_id: BC-2430
         industry_variant: Transportation & Logistics
         notes: Fleet utilisation, telematics, and maintenance
+      - stage_order: 4
+        stage_name: Operate & Maintain
+        capability_id: BC-2600
+        industry_variant: Telecommunications
+        notes: Network fault, change, performance, and optimisation
       - stage_order: 5
         stage_name: Risk & Reliability
         capability_id: BC-1030
@@ -996,6 +1111,11 @@ value_streams:
         capability_id: BC-2430
         industry_variant: Transportation & Logistics
         notes: Fleet end-of-life disposal and resale
+      - stage_order: 7
+        stage_name: Decommissioning & Disposal
+        capability_id: BC-2610
+        industry_variant: Telecommunications
+        notes: Legacy network decommissioning and technology sunset
   - name: Strategy-to-Execution
     industries: [Cross-Industry]
     stages:
@@ -1060,6 +1180,11 @@ value_streams:
         capability_id: BC-2190
         industry_variant: Insurance
         notes: Insurance risk taxonomy
+      - stage_order: 2
+        stage_name: Risk Identification
+        capability_id: BC-2700
+        industry_variant: Telecommunications
+        notes: Telecom regulatory and licence-conditions risk taxonomy
       - stage_order: 3
         stage_name: Risk Assessment
         capability_id: BC-120
@@ -1110,6 +1235,11 @@ value_streams:
         stage_name: Reporting & Escalation
         capability_id: BC-130
         notes: Regulatory disclosure where required
+      - stage_order: 6
+        stage_name: Reporting & Escalation
+        capability_id: BC-2700
+        industry_variant: Telecommunications
+        notes: Telecom regulator filings and licence-conditions reporting
   - name: Audit-to-Action
     industries: [Cross-Industry]
     stages:
@@ -1191,6 +1321,11 @@ value_streams:
         capability_id: BC-2060
         industry_variant: HVAC & Building Automation Systems
         notes: Connected-service anomaly detection on BAS
+      - stage_order: 4
+        stage_name: Detection
+        capability_id: BC-2600
+        industry_variant: Telecommunications
+        notes: Signalling, transport, and core network threat monitoring
       - stage_order: 5
         stage_name: Incident Response
         capability_id: BC-160
@@ -1209,6 +1344,11 @@ value_streams:
         capability_id: BC-2060
         industry_variant: HVAC & Building Automation Systems
         notes: OTA patching of BAS controllers
+      - stage_order: 5
+        stage_name: Incident Response
+        capability_id: BC-2600
+        industry_variant: Telecommunications
+        notes: Network security incident response and DDoS mitigation
       - stage_order: 6
         stage_name: Identity & Access Hardening
         capability_id: BC-620
@@ -1276,6 +1416,11 @@ value_streams:
         capability_id: BC-2120
         industry_variant: Insurance
         notes: Policyholder conversion
+      - stage_order: 5
+        stage_name: Conversion
+        capability_id: BC-2640
+        industry_variant: Telecommunications
+        notes: Subscriber identity creation and SIM/eSIM activation
       - stage_order: 6
         stage_name: Customer Onboarding
         capability_id: BC-1300
@@ -1290,6 +1435,11 @@ value_streams:
         capability_id: BC-2120
         industry_variant: Insurance
         notes: Policyholder onboarding & KYC
+      - stage_order: 6
+        stage_name: Customer Onboarding
+        capability_id: BC-2640
+        industry_variant: Telecommunications
+        notes: Subscriber enrolment, AAA, and device binding
       - stage_order: 7
         stage_name: Retention & Advocacy
         capability_id: BC-420
@@ -1303,6 +1453,11 @@ value_streams:
         capability_id: BC-2120
         industry_variant: Insurance
         notes: Policyholder retention
+      - stage_order: 7
+        stage_name: Retention & Advocacy
+        capability_id: BC-2630
+        industry_variant: Telecommunications
+        notes: Customer experience following service events
   - name: Application-to-Funding
     industries: [Banking & Capital Markets]
     stages:
@@ -1805,6 +1960,11 @@ value_streams:
         stage_name: Detection & Activation
         capability_id: BC-620
         notes: Cyber incident trigger
+      - stage_order: 3
+        stage_name: Detection & Activation
+        capability_id: BC-2630
+        industry_variant: Telecommunications
+        notes: Major service outage declaration
       - stage_order: 4
         stage_name: Crisis Response
         capability_id: BC-160
@@ -1818,6 +1978,11 @@ value_streams:
         capability_id: BC-2380
         industry_variant: Retail & Consumer Goods
         notes: Major food recall response
+      - stage_order: 4
+        stage_name: Crisis Response
+        capability_id: BC-2700
+        industry_variant: Telecommunications
+        notes: Emergency call routing and public-warning broadcast
       - stage_order: 5
         stage_name: Disaster Recovery
         capability_id: BC-160
@@ -1831,6 +1996,11 @@ value_streams:
         capability_id: BC-1030
         industry_variant: Manufacturing
         notes: Asset / line restart
+      - stage_order: 6
+        stage_name: Restoration
+        capability_id: BC-2600
+        industry_variant: Telecommunications
+        notes: Network restoration coordination
       - stage_order: 7
         stage_name: Post-Crisis Review
         capability_id: BC-120
@@ -2122,6 +2292,11 @@ value_streams:
         capability_id: BC-2020
         industry_variant: HVAC & Building Automation Systems
         notes: Project-level HVAC/BAS solution scoping
+      - stage_order: 2
+        stage_name: Solution Scoping
+        capability_id: BC-2680
+        industry_variant: Telecommunications
+        notes: Wholesale solution scoping for carrier and MVNO orders
       - stage_order: 3
         stage_name: Quote & Configuration
         capability_id: BC-410
@@ -2135,6 +2310,11 @@ value_streams:
         capability_id: BC-1940
         industry_variant: Electrical Components & Equipment
         notes: Variant configurator for engineered orders
+      - stage_order: 3
+        stage_name: Quote & Configuration
+        capability_id: BC-2650
+        industry_variant: Telecommunications
+        notes: Catalogue-driven enterprise CPQ
       - stage_order: 4
         stage_name: Pricing & Approvals
         capability_id: BC-440
@@ -2161,6 +2341,11 @@ value_streams:
         stage_name: Negotiation
         capability_id: BC-410
         notes: Executive negotiation
+      - stage_order: 6
+        stage_name: Negotiation
+        capability_id: BC-2680
+        industry_variant: Telecommunications
+        notes: Wholesale, interconnect, and roaming agreement negotiation
       - stage_order: 7
         stage_name: Contract & Order Booking
         capability_id: BC-150
