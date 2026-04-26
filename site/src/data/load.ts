@@ -33,6 +33,7 @@ export interface ValueStreamStage {
 
 export interface ValueStream {
   name: string;
+  industries: string[];
   stages: ValueStreamStage[];
 }
 

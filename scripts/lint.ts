@@ -192,11 +192,45 @@ for (const { file, node } of allFlat) {
 // 11. Value streams: stage capability_id must be L1, must resolve.
 // Sub-scope detail belongs in the 'notes' field; the site auto-expands an L1
 // to its descendants when filtering.
+//
+// Each stream must declare an `industries` array drawn from the catalogue's
+// L1 industry vocabulary (or `Cross-Industry`, which must stand alone).
 // ---------------------------------------------------------------------------
 const l1Set = new Set(
   allFlat.filter(({ node }) => node.level === 1).map(({ node }) => node.id)
 );
+const industryVocab = new Set<string>();
+for (const { node } of allFlat) {
+  if (node.level !== 1 || !node.industry) continue;
+  for (const part of node.industry.split(";").map((s) => s.trim()).filter(Boolean)) {
+    if (part !== "Cross-Industry") industryVocab.add(part);
+  }
+}
 for (const stream of loadValueStreams()) {
+  if (!Array.isArray(stream.industries) || stream.industries.length === 0) {
+    err(
+      "_value-streams.yaml",
+      `Stream '${stream.name}': missing required 'industries' array (use [Cross-Industry] for cross-industry streams)`
+    );
+  } else {
+    const inds = stream.industries.map((i) => i.trim());
+    if (inds.includes("Cross-Industry") && inds.length > 1) {
+      err(
+        "_value-streams.yaml",
+        `Stream '${stream.name}': 'Cross-Industry' must be the only entry in industries when present`
+      );
+    }
+    for (const ind of inds) {
+      if (ind === "Cross-Industry") continue;
+      if (!industryVocab.has(ind)) {
+        const valid = ["Cross-Industry", ...Array.from(industryVocab).sort()].join(", ");
+        err(
+          "_value-streams.yaml",
+          `Stream '${stream.name}': industry '${ind}' not in catalogue vocabulary; valid values: ${valid}`
+        );
+      }
+    }
+  }
   for (const stage of stream.stages) {
     const id = stage.capability_id;
     if (!L1_ID_REGEX.test(id)) {
