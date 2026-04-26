@@ -461,7 +461,7 @@ export default function CatalogueBrowser({ data, valueStreams }: Props) {
               aria-label="Collapse one level"
               title="Collapse one level"
             >
-              −
+              <span class="material-symbols-outlined" aria-hidden="true">remove</span>
             </button>
             <span class="level-stepper-label" aria-live="polite">
               <span class="level-stepper-label-full">Level </span>
@@ -477,7 +477,7 @@ export default function CatalogueBrowser({ data, valueStreams }: Props) {
               aria-label="Expand one level"
               title="Expand one level"
             >
-              +
+              <span class="material-symbols-outlined" aria-hidden="true">add</span>
             </button>
           </div>
           <button class="btn btn-ghost" type="button" onClick={expandAll}>
@@ -812,7 +812,7 @@ function L1Card({
             title="Collapse branch one level"
             tabIndex={hasKids ? 0 : -1}
           >
-            −
+            <span class="material-symbols-outlined" aria-hidden="true">remove</span>
           </button>
           <button
             type="button"
@@ -824,7 +824,7 @@ function L1Card({
             aria-expanded={isOpen}
             tabIndex={hasKids ? 0 : -1}
           >
-            +
+            <span class="material-symbols-outlined" aria-hidden="true">add</span>
           </button>
         </div>
         <button
@@ -913,13 +913,17 @@ function ChildRow({
   const toggle = (
     <button
       type="button"
-      class={`cap-chevron${hasKids ? "" : " is-empty"}`}
+      class={`cap-chevron${hasKids ? "" : " is-empty"}${isOpen ? " is-open" : ""}`}
       onClick={() => hasKids && onToggleExpand(node.id)}
       aria-expanded={isOpen}
       aria-label={hasKids ? (isOpen ? "Collapse" : "Expand") : ""}
       tabIndex={hasKids ? 0 : -1}
     >
-      {hasKids ? (isOpen ? "▾" : "▸") : ""}
+      {hasKids && (
+        <span class="material-symbols-outlined cap-chevron-icon" aria-hidden="true">
+          chevron_right
+        </span>
+      )}
     </button>
   );
 
@@ -1133,7 +1137,7 @@ function DetailModal({
             onClick={onClose}
             aria-label="Close"
           >
-            ×
+            <span class="material-symbols-outlined" aria-hidden="true">close</span>
           </button>
         </header>
 

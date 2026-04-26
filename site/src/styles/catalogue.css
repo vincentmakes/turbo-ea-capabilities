@@ -1,5 +1,26 @@
 /* Catalog-specific UI built on top of global.css design tokens. */
 
+/* Material Symbols (icon font) — matches the Material UI convention */
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga";
+  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24;
+}
+
 .catalogue-page {
   display: flex;
   flex-direction: column;
@@ -285,13 +306,13 @@
   padding: 0 8px;
   border: none;
   background: transparent;
-  font-family: var(--font-primary);
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1;
   color: var(--color-secondary);
   cursor: pointer;
   transition: background 0.15s ease, color 0.15s ease;
+}
+
+.level-stepper-btn .material-symbols-outlined {
+  font-size: 20px;
 }
 
 .level-stepper-btn:hover:not(:disabled) {
@@ -413,28 +434,39 @@
   flex-shrink: 0;
 }
 
-/* Subtle chevron used for individual L2/L3/L4 row toggles */
+/* Chevron used for individual L2/L3/L4 row toggles — sized for comfortable click */
 .cap-chevron {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 20px;
-  border: none;
+  width: 28px;
+  height: 28px;
+  border: 1px solid transparent;
   background: transparent;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 11px;
-  color: var(--color-muted);
-  transition: background 0.15s ease, color 0.15s ease;
+  color: var(--color-secondary);
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
   flex-shrink: 0;
   padding: 0;
-  font-family: var(--font-primary);
+}
+
+.cap-chevron-icon {
+  display: block;
+  font-size: 20px;
+  line-height: 1;
+  transition: transform 0.18s ease;
+  transform-origin: 50% 50%;
+}
+
+.cap-chevron.is-open .cap-chevron-icon {
+  transform: rotate(90deg);
 }
 
 .cap-chevron:hover:not(.is-empty) {
   background: var(--color-white);
-  color: var(--color-secondary);
+  border-color: var(--color-border);
+  color: var(--color-accent);
 }
 
 .cap-chevron:focus-visible {
@@ -456,7 +488,7 @@
   background: var(--color-white);
   overflow: hidden;
   flex-shrink: 0;
-  height: 24px;
+  height: 28px;
 }
 
 .l1-stepper.is-empty {
@@ -467,14 +499,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 26px;
+  width: 28px;
   height: 100%;
   border: none;
   background: transparent;
-  font-family: var(--font-primary);
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1;
   color: var(--color-secondary);
   cursor: pointer;
   transition: background 0.15s ease, color 0.15s ease;
@@ -498,6 +526,10 @@
 .l1-stepper-btn:disabled {
   opacity: 0.3;
   cursor: not-allowed;
+}
+
+.l1-stepper-btn .material-symbols-outlined {
+  font-size: 18px;
 }
 
 .l1-name {
@@ -634,15 +666,17 @@
     padding: 6px 8px;
   }
   .cap-chevron {
-    width: 26px;
-    height: 26px;
-    font-size: 13px;
+    width: 32px;
+    height: 32px;
+  }
+  .cap-chevron-icon {
+    font-size: 22px;
   }
   .l1-stepper {
-    height: 28px;
+    height: 32px;
   }
   .l1-stepper-btn {
-    width: 30px;
+    width: 32px;
   }
 }
 
@@ -794,15 +828,20 @@
 
 .detail-modal-close {
   flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: transparent;
   border: none;
-  font-size: 28px;
-  line-height: 1;
   cursor: pointer;
   color: var(--color-muted);
   width: 36px;
   height: 36px;
   border-radius: 4px;
+}
+
+.detail-modal-close .material-symbols-outlined {
+  font-size: 22px;
 }
 
 .detail-modal-close:hover {
