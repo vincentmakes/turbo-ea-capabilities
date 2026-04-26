@@ -1,0 +1,231 @@
+# Refrigerant Lifecycle Management
+id: BC-2040
+name: Refrigerant Lifecycle Management
+level: 1
+industry: "HVAC & Building Automation Systems"
+description: |
+  Operational lifecycle of refrigerants across the installed base — procurement and inventory,
+  charge accounting, recovery and reclaim, leak management, regulatory reporting under
+  F-Gas / EPA Section 608 / Kigali Amendment, technician certification, phase-out transitions,
+  and end-of-life disposition.
+in_scope:
+  - Procurement, allocation, and storage of refrigerants
+  - Asset-level charge accounting and mass-balance reconciliation
+  - Field recovery, reclaim, and recycled-refrigerant quality control
+  - Leak detection, repair, and regulatory rate reporting
+  - Technician handling certification and competency tracking
+  - Refrigerant transition and phase-out roadmaps
+  - End-of-life destruction and certified disposal
+out_of_scope:
+  - Product-level refrigerant approvals during certification (BC-2030)
+  - Refrigerant cycle and selection during equipment design (BC-2000)
+  - General environmental compliance not specific to refrigerants (BC-740)
+children:
+  - id: BC-2040.10
+    name: "Refrigerant Procurement & Inventory Management"
+    level: 2
+    description: |
+      Sourcing, allocation, storage, and reconciliation of refrigerant stocks across operations.
+    children:
+      - id: BC-2040.10.10
+        name: Refrigerant Sourcing
+        level: 3
+        description: Sourcing of refrigerants from approved suppliers.
+        children: []
+      - id: BC-2040.10.20
+        name: Quota Allocation Management
+        level: 3
+        description: Allocation of regulatory quotas across business units and markets.
+        children: []
+      - id: BC-2040.10.30
+        name: "Refrigerant Storage & Handling"
+        level: 3
+        description: Storage and handling of refrigerant cylinders against safety and environmental rules.
+        children: []
+      - id: BC-2040.10.40
+        name: Refrigerant Inventory Reconciliation
+        level: 3
+        description: Periodic reconciliation of refrigerant inventory across sites and field stocks.
+        children: []
+  - id: BC-2040.20
+    name: Refrigerant Charge Accounting
+    level: 2
+    description: |
+      Asset-level accounting of refrigerant charge, top-ups, and audit balance.
+    children:
+      - id: BC-2040.20.10
+        name: Charge Records by Asset
+        level: 3
+        description: Records of installed refrigerant charge by equipment asset.
+        children: []
+      - id: BC-2040.20.20
+        name: "Top-Up & Recharge Recording"
+        level: 3
+        description: Recording of top-ups and recharges against equipment service events.
+        children: []
+      - id: BC-2040.20.30
+        name: Charge Accuracy Audit
+        level: 3
+        description: Audit of charge-accounting accuracy across the installed base.
+        children: []
+      - id: BC-2040.20.40
+        name: Mass-Balance Reconciliation
+        level: 3
+        description: Mass-balance reconciliation of refrigerant procured, used, recovered, and disposed.
+        children: []
+  - id: BC-2040.30
+    name: "Refrigerant Recovery & Reclaim Operations"
+    level: 2
+    description: |
+      Field recovery and downstream reclamation of recovered refrigerant for reuse.
+    children:
+      - id: BC-2040.30.10
+        name: Field Recovery Operations
+        level: 3
+        description: On-site recovery of refrigerant from equipment under service.
+        children: []
+      - id: BC-2040.30.20
+        name: Refrigerant Reclamation
+        level: 3
+        description: Reclamation processing of recovered refrigerant to virgin specifications.
+        children: []
+      - id: BC-2040.30.30
+        name: Recycled Refrigerant Quality Verification
+        level: 3
+        description: Verification of recycled-refrigerant quality before reuse.
+        children: []
+      - id: BC-2040.30.40
+        name: Recovered Refrigerant Bank Management
+        level: 3
+        description: Management of refrigerant banks holding reclaimed product for reuse.
+        children: []
+  - id: BC-2040.40
+    name: Refrigerant Leak Management
+    level: 2
+    description: |
+      Detection, repair, and reporting of refrigerant leaks across the installed base.
+    children:
+      - id: BC-2040.40.10
+        name: Leak Detection Monitoring
+        level: 3
+        description: Continuous and periodic leak-detection monitoring across equipment.
+        children: []
+      - id: BC-2040.40.20
+        name: Leak Repair Workflow
+        level: 3
+        description: Workflow for diagnosing and repairing identified leaks.
+        children: []
+      - id: BC-2040.40.30
+        name: Leak Rate Reporting
+        level: 3
+        description: Reporting of leak rates against regulatory thresholds.
+        children: []
+      - id: BC-2040.40.40
+        name: Leak Hot-Spot Analysis
+        level: 3
+        description: Analysis of recurring leak hot-spots to drive equipment or process change.
+        children: []
+  - id: BC-2040.50
+    name: Refrigerant Regulatory Reporting
+    level: 2
+    description: |
+      Regulatory reporting of refrigerant use, leaks, recovery, and substance disclosures.
+    children:
+      - id: BC-2040.50.10
+        name: F-Gas Annual Reporting
+        level: 3
+        description: Annual reporting under EU F-Gas regulations.
+        children: []
+      - id: BC-2040.50.20
+        name: National Refrigerant Reporting
+        level: 3
+        description: Reporting under national refrigerant programmes (e.g. EPA reporting in the US).
+        children: []
+      - id: BC-2040.50.30
+        name: "Kigali & Montreal Reporting"
+        level: 3
+        description: Reporting under Kigali Amendment and Montreal Protocol obligations.
+        children: []
+      - id: BC-2040.50.40
+        name: Substance Inventory Disclosure
+        level: 3
+        description: Substance inventory disclosure to regulators and stakeholders.
+        children: []
+  - id: BC-2040.60
+    name: Technician Refrigerant Certification Management
+    level: 2
+    description: |
+      Management of technician certifications, licences, and competency for refrigerant handling.
+    children:
+      - id: BC-2040.60.10
+        name: Technician Certification Records
+        level: 3
+        description: Records of technician refrigerant certifications.
+        children: []
+      - id: BC-2040.60.20
+        name: Certification Renewal Tracking
+        level: 3
+        description: Tracking of upcoming certification renewals.
+        children: []
+      - id: BC-2040.60.30
+        name: National Refrigerant Handling Licences
+        level: 3
+        description: Management of national refrigerant-handling licences (EPA Section 608, F-Gas categories).
+        children: []
+      - id: BC-2040.60.40
+        name: Competency Verification
+        level: 3
+        description: Periodic competency verification for technicians handling refrigerants.
+        children: []
+  - id: BC-2040.70
+    name: "Refrigerant Phase-Out & Transition Management"
+    level: 2
+    description: |
+      Strategic management of refrigerant phase-outs and customer transition roadmaps.
+    children:
+      - id: BC-2040.70.10
+        name: Refrigerant Substitution Roadmap
+        level: 3
+        description: Roadmap for substituting phased-down refrigerants with lower-GWP alternatives.
+        children: []
+      - id: BC-2040.70.20
+        name: Retrofit Conversion Planning
+        level: 3
+        description: Planning of retrofit conversions to alternative refrigerants in the installed base.
+        children: []
+      - id: BC-2040.70.30
+        name: Customer Transition Communications
+        level: 3
+        description: Communications to customers regarding refrigerant transitions and timelines.
+        children: []
+      - id: BC-2040.70.40
+        name: Phase-Out Risk Management
+        level: 3
+        description: Management of supply, regulatory, and reputational risks across phase-out windows.
+        children: []
+  - id: BC-2040.80
+    name: "Refrigerant End-of-Life & Disposal"
+    level: 2
+    description: |
+      End-of-life destruction and certified disposal of refrigerants no longer fit for reuse.
+    children:
+      - id: BC-2040.80.10
+        name: Destruction Coordination
+        level: 3
+        description: Coordination with approved destruction facilities.
+        children: []
+      - id: BC-2040.80.20
+        name: Certified Disposal Audit Trail
+        level: 3
+        description: Maintenance of audit trail evidencing certified disposal.
+        children: []
+      - id: BC-2040.80.30
+        name: End-of-Life Asset Reclaim
+        level: 3
+        description: Reclaim of refrigerant from end-of-life assets prior to disposal.
+        children: []
+      - id: BC-2040.80.40
+        name: Disposal Vendor Management
+        level: 3
+        description: Management of approved disposal vendors and audit programme.
+        children: []

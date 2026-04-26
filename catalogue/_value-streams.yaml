@@ -104,6 +104,11 @@ value_streams:
         capability_id: BC-1910
         industry_variant: Electrical Components & Equipment
         notes: Field non-compliance reports
+      - stage_order: 1
+        stage_name: Issue Capture (HVAC Product Compliance)
+        capability_id: BC-2030
+        industry_variant: HVAC & Building Automation Systems
+        notes: Field safety / non-compliance intake
       - stage_order: 3
         stage_name: Investigation (Audit)
         capability_id: BC-140
@@ -145,6 +150,11 @@ value_streams:
         capability_id: BC-1910
         industry_variant: Electrical Components & Equipment
         notes: Root-cause investigation, certifier liaison
+      - stage_order: 3
+        stage_name: Investigation (HVAC Product Compliance)
+        capability_id: BC-2030
+        industry_variant: HVAC & Building Automation Systems
+        notes: Certifier liaison & root cause for HVAC equipment
       - stage_order: 4
         stage_name: Resolution (Audit)
         capability_id: BC-140
@@ -178,6 +188,11 @@ value_streams:
         capability_id: BC-1910
         industry_variant: Electrical Components & Equipment
         notes: Recall / stop-ship coordination
+      - stage_order: 4
+        stage_name: Resolution (HVAC Product Compliance)
+        capability_id: BC-2030
+        industry_variant: HVAC & Building Automation Systems
+        notes: Field modification, recall, mark withdrawal
       - stage_order: 6
         stage_name: Lessons Learned (Aviation Safety)
         capability_id: BC-1280
@@ -283,10 +298,20 @@ value_streams:
         stage_name: Need Identification & Requisition
         capability_id: BC-500
         notes: Requisition intake
+      - stage_order: 1
+        stage_name: Need Identification & Requisition
+        capability_id: BC-2040
+        industry_variant: HVAC & Building Automation Systems
+        notes: Refrigerant requisition by region/quota
       - stage_order: 2
         stage_name: Sourcing
         capability_id: BC-500
         notes: RFx, sourcing events; Category strategy
+      - stage_order: 2
+        stage_name: Sourcing
+        capability_id: BC-2040
+        industry_variant: HVAC & Building Automation Systems
+        notes: Refrigerant sourcing & quota management
       - stage_order: 3
         stage_name: Supplier Selection & Onboarding
         capability_id: BC-1560
@@ -411,6 +436,16 @@ value_streams:
         capability_id: BC-1970
         industry_variant: Electrical Components & Equipment
         notes: Functional-safety & reliability analysis
+      - stage_order: 5
+        stage_name: Design & Development
+        capability_id: BC-2000
+        industry_variant: HVAC & Building Automation Systems
+        notes: HVAC equipment NPD
+      - stage_order: 5
+        stage_name: Design & Development
+        capability_id: BC-2010
+        industry_variant: HVAC & Building Automation Systems
+        notes: BAS product NPD
       - stage_order: 6
         stage_name: IP Protection
         capability_id: BC-840
@@ -442,6 +477,11 @@ value_streams:
         capability_id: BC-1910
         industry_variant: Electrical Components & Equipment
         notes: Type approval & agency mark issuance
+      - stage_order: 8
+        stage_name: Market Introduction
+        capability_id: BC-2030
+        industry_variant: HVAC & Building Automation Systems
+        notes: Performance & safety mark issuance for HVAC equipment
       - stage_order: 9
         stage_name: Post-Launch Performance
         capability_id: BC-820
@@ -573,6 +613,11 @@ value_streams:
         stage_name: Acquisition
         capability_id: BC-500
         notes: Capital procurement
+      - stage_order: 2
+        stage_name: Acquisition
+        capability_id: BC-2020
+        industry_variant: HVAC & Building Automation Systems
+        notes: Project-level HVAC integration during build
       - stage_order: 3
         stage_name: Commissioning & Capitalisation
         capability_id: BC-1160
@@ -587,6 +632,11 @@ value_streams:
         capability_id: BC-1960
         industry_variant: Electrical Components & Equipment
         notes: OEM-led FAT / SAT / energisation
+      - stage_order: 3
+        stage_name: Commissioning & Capitalisation
+        capability_id: BC-2050
+        industry_variant: HVAC & Building Automation Systems
+        notes: HVAC/BAS Cx, retro-Cx, MBCx
       - stage_order: 4
         stage_name: Operate & Maintain
         capability_id: BC-1030
@@ -600,6 +650,16 @@ value_streams:
         capability_id: BC-1960
         industry_variant: Electrical Components & Equipment
         notes: Remote condition monitoring services
+      - stage_order: 4
+        stage_name: Operate & Maintain
+        capability_id: BC-2060
+        industry_variant: HVAC & Building Automation Systems
+        notes: OEM/contractor service on installed HVAC + BAS
+      - stage_order: 4
+        stage_name: Operate & Maintain
+        capability_id: BC-2070
+        industry_variant: HVAC & Building Automation Systems
+        notes: Continuous M&V, FDD, performance improvement
       - stage_order: 5
         stage_name: Risk & Reliability
         capability_id: BC-1030
@@ -787,10 +847,20 @@ value_streams:
         capability_id: BC-1950
         industry_variant: Electrical Components & Equipment
         notes: Coordinated product vulnerability disclosure
+      - stage_order: 3
+        stage_name: Vulnerability Discovery
+        capability_id: BC-2010
+        industry_variant: HVAC & Building Automation Systems
+        notes: BAS product vulnerability disclosure
       - stage_order: 4
         stage_name: Detection
         capability_id: BC-620
         notes: SIEM / SOC monitoring
+      - stage_order: 4
+        stage_name: Detection
+        capability_id: BC-2060
+        industry_variant: HVAC & Building Automation Systems
+        notes: Connected-service anomaly detection on BAS
       - stage_order: 5
         stage_name: Incident Response
         capability_id: BC-160
@@ -804,6 +874,11 @@ value_streams:
         capability_id: BC-1950
         industry_variant: Electrical Components & Equipment
         notes: OTA patch deployment for product CVEs
+      - stage_order: 5
+        stage_name: Incident Response
+        capability_id: BC-2060
+        industry_variant: HVAC & Building Automation Systems
+        notes: OTA patching of BAS controllers
       - stage_order: 6
         stage_name: Identity & Access Hardening
         capability_id: BC-620
@@ -1230,6 +1305,11 @@ value_streams:
         stage_name: Notification / Request
         capability_id: BC-1050
         notes: Service request (field)
+      - stage_order: 1
+        stage_name: Notification / Request
+        capability_id: BC-2060
+        industry_variant: HVAC & Building Automation Systems
+        notes: HVAC service request intake
       - stage_order: 2
         stage_name: Triage & Planning
         capability_id: BC-1030
@@ -1244,6 +1324,11 @@ value_streams:
         capability_id: BC-1960
         industry_variant: Electrical Components & Equipment
         notes: Retrofit & service contract planning
+      - stage_order: 2
+        stage_name: Triage & Planning
+        capability_id: BC-2060
+        industry_variant: HVAC & Building Automation Systems
+        notes: Reactive triage; remote diagnostic triage
       - stage_order: 3
         stage_name: Execution
         capability_id: BC-1030
@@ -1258,6 +1343,11 @@ value_streams:
         capability_id: BC-1960
         industry_variant: Electrical Components & Equipment
         notes: OEM service execution on installed base
+      - stage_order: 3
+        stage_name: Execution
+        capability_id: BC-2060
+        industry_variant: HVAC & Building Automation Systems
+        notes: On-site HVAC repair; BAS reprogramming
       - stage_order: 4
         stage_name: Parts & Logistics
         capability_id: BC-1030
@@ -1267,6 +1357,11 @@ value_streams:
         stage_name: Parts & Logistics
         capability_id: BC-1050
         notes: Service parts
+      - stage_order: 4
+        stage_name: Parts & Logistics
+        capability_id: BC-2060
+        industry_variant: HVAC & Building Automation Systems
+        notes: Refrigerant, filters, sensors, replacement parts
       - stage_order: 5
         stage_name: Verification & Closure
         capability_id: BC-1030
@@ -1276,6 +1371,11 @@ value_streams:
         stage_name: Verification & Closure
         capability_id: BC-720
         notes: Quality control sign-off
+      - stage_order: 5
+        stage_name: Verification & Closure
+        capability_id: BC-2060
+        industry_variant: HVAC & Building Automation Systems
+        notes: Retrofit validation, post-service tests
       - stage_order: 6
         stage_name: Performance & Cost Analysis
         capability_id: BC-1050
@@ -1284,6 +1384,11 @@ value_streams:
         stage_name: Performance & Cost Analysis
         capability_id: BC-200
         notes: Maintenance cost posting
+      - stage_order: 6
+        stage_name: Performance & Cost Analysis
+        capability_id: BC-2060
+        industry_variant: HVAC & Building Automation Systems
+        notes: Service KPIs, SLA reporting
   - name: Crisis-to-Recovery
     stages:
       - stage_order: 1
@@ -1355,6 +1460,16 @@ value_streams:
         capability_id: BC-1980
         industry_variant: Electrical Components & Equipment
         notes: Substance & product footprint data
+      - stage_order: 2
+        stage_name: Data Collection
+        capability_id: BC-2040
+        industry_variant: HVAC & Building Automation Systems
+        notes: Refrigerant leak rate & charge accounting data
+      - stage_order: 2
+        stage_name: Data Collection
+        capability_id: BC-2070
+        industry_variant: HVAC & Building Automation Systems
+        notes: Building energy & operational carbon telemetry
       - stage_order: 3
         stage_name: Data Quality & Assurance
         capability_id: BC-140
@@ -1376,6 +1491,16 @@ value_streams:
         capability_id: BC-1980
         industry_variant: Electrical Components & Equipment
         notes: Environmental product declarations & digital product passport
+      - stage_order: 4
+        stage_name: Reporting & Disclosure
+        capability_id: BC-2040
+        industry_variant: HVAC & Building Automation Systems
+        notes: F-Gas / EPA / Kigali refrigerant disclosures
+      - stage_order: 4
+        stage_name: Reporting & Disclosure
+        capability_id: BC-2070
+        industry_variant: HVAC & Building Automation Systems
+        notes: Mandatory benchmarking & green certification reporting
       - stage_order: 5
         stage_name: Stakeholder Engagement
         capability_id: BC-240
@@ -1400,6 +1525,16 @@ value_streams:
         capability_id: BC-1900
         industry_variant: Electrical Components & Equipment
         notes: Concept-stage circuit & topology design
+      - stage_order: 1
+        stage_name: Concept Design
+        capability_id: BC-2000
+        industry_variant: HVAC & Building Automation Systems
+        notes: HVAC equipment concept-stage cycle & topology
+      - stage_order: 1
+        stage_name: Concept Design
+        capability_id: BC-2010
+        industry_variant: HVAC & Building Automation Systems
+        notes: BAS controller & supervisor concept
       - stage_order: 2
         stage_name: FEED & Specification
         capability_id: BC-1120
@@ -1414,6 +1549,16 @@ value_streams:
         capability_id: BC-1900
         industry_variant: Electrical Components & Equipment
         notes: Front-end electrical engineering
+      - stage_order: 2
+        stage_name: FEED & Specification
+        capability_id: BC-2000
+        industry_variant: HVAC & Building Automation Systems
+        notes: HVAC equipment FEED
+      - stage_order: 2
+        stage_name: FEED & Specification
+        capability_id: BC-2020
+        industry_variant: HVAC & Building Automation Systems
+        notes: Project-level HVAC system spec & sizing
       - stage_order: 3
         stage_name: Detailed Design
         capability_id: BC-1100
@@ -1429,6 +1574,21 @@ value_streams:
         capability_id: BC-1900
         industry_variant: Electrical Components & Equipment
         notes: Detailed electrical/electronic design
+      - stage_order: 3
+        stage_name: Detailed Design
+        capability_id: BC-2000
+        industry_variant: HVAC & Building Automation Systems
+        notes: Detailed HVAC equipment engineering
+      - stage_order: 3
+        stage_name: Detailed Design
+        capability_id: BC-2010
+        industry_variant: HVAC & Building Automation Systems
+        notes: Detailed BAS product engineering
+      - stage_order: 3
+        stage_name: Detailed Design
+        capability_id: BC-2020
+        industry_variant: HVAC & Building Automation Systems
+        notes: Project-level integration design
       - stage_order: 4
         stage_name: Design Review
         capability_id: BC-1120
@@ -1454,6 +1614,21 @@ value_streams:
         capability_id: BC-1970
         industry_variant: Electrical Components & Equipment
         notes: Safety case & FMEA review
+      - stage_order: 4
+        stage_name: Design Review
+        capability_id: BC-2000
+        industry_variant: HVAC & Building Automation Systems
+        notes: HVAC equipment design verification
+      - stage_order: 4
+        stage_name: Design Review
+        capability_id: BC-2010
+        industry_variant: HVAC & Building Automation Systems
+        notes: BAS conformance & interoperability review
+      - stage_order: 4
+        stage_name: Design Review
+        capability_id: BC-2030
+        industry_variant: HVAC & Building Automation Systems
+        notes: Performance & safety listing readiness
       - stage_order: 5
         stage_name: Manufacturing Engineering
         capability_id: BC-1020
@@ -1531,6 +1706,11 @@ value_streams:
         stage_name: Solution Scoping
         capability_id: BC-410
         notes: Solution design within opportunity
+      - stage_order: 2
+        stage_name: Solution Scoping
+        capability_id: BC-2020
+        industry_variant: HVAC & Building Automation Systems
+        notes: Project-level HVAC/BAS solution scoping
       - stage_order: 3
         stage_name: Quote & Configuration
         capability_id: BC-410

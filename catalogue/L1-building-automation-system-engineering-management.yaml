@@ -1,0 +1,242 @@
+# Building Automation System Engineering Management
+id: BC-2010
+name: Building Automation System Engineering Management
+level: 1
+industry: "HVAC & Building Automation Systems"
+description: |
+  Product engineering of BAS controllers, field devices, supervisor software,
+  reusable control sequence libraries, communication protocol stacks, semantic
+  data models, and BAS cybersecurity — anchored on ISO 16484 / ASHRAE 135 (BACnet)
+  and ASHRAE Guideline 36.
+in_scope:
+  - Application-specific BAS controller and field-device product engineering
+  - Supervisor server, alarm, and trend-historian software engineering
+  - Reusable sequence-of-operation libraries (Guideline 36 and advanced control)
+  - BACnet, KNX, LonWorks, Modbus, DALI, OPC UA, MQTT protocol stacks
+  - Brick / Haystack semantic data modelling
+  - Secure-by-design BAS controllers and BAS-network cybersecurity
+out_of_scope:
+  - Generic electronic product engineering covered by BC-1900
+  - Project-level points lists and sequence customisation (BC-2020)
+  - HVAC mechanical equipment engineering (BC-2000)
+  - Site commissioning and service operations (BC-2050, BC-2060)
+children:
+  - id: BC-2010.10
+    name: BAS Controller Product Engineering
+    level: 2
+    description: |
+      Engineering of application-specific building-controller products — zone, AHU, plant,
+      programmable controllers, and edge gateways.
+    children:
+      - id: BC-2010.10.10
+        name: Zone Controller Engineering
+        level: 3
+        description: Engineering of zone-level controllers for VAV, fan-coil, and unitary control.
+        children: []
+      - id: BC-2010.10.20
+        name: AHU Controller Engineering
+        level: 3
+        description: Engineering of air-handling-unit controllers with built-in sequence support.
+        children: []
+      - id: BC-2010.10.30
+        name: Plant Controller Engineering
+        level: 3
+        description: Engineering of central-plant controllers for chiller and boiler plants.
+        children: []
+      - id: BC-2010.10.40
+        name: Programmable Controller Engineering
+        level: 3
+        description: Engineering of freely programmable BAS controllers.
+        children: []
+      - id: BC-2010.10.50
+        name: Edge Gateway Engineering
+        level: 3
+        description: Engineering of edge gateways translating between BAS and IoT/cloud platforms.
+        children: []
+  - id: BC-2010.20
+    name: BAS Field Device Engineering
+    level: 2
+    description: |
+      Engineering of sensors, valves, dampers, and wireless field devices that report into BAS.
+    children:
+      - id: BC-2010.20.10
+        name: Sensor Product Engineering
+        level: 3
+        description: Engineering of temperature, humidity, pressure, CO2, and IAQ sensors as BAS devices.
+        children: []
+      - id: BC-2010.20.20
+        name: Valve & Actuator Engineering
+        level: 3
+        description: Engineering of control valves and valve actuators for hydronic systems.
+        children: []
+      - id: BC-2010.20.30
+        name: Damper Actuator Engineering
+        level: 3
+        description: Engineering of damper actuators for air-side BAS control.
+        children: []
+      - id: BC-2010.20.40
+        name: Wireless Field Device Engineering
+        level: 3
+        description: Engineering of wireless sensors and actuators for retrofit and IoT applications.
+        children: []
+  - id: BC-2010.30
+    name: BAS Supervisor Software Engineering
+    level: 2
+    description: |
+      Engineering of supervisor servers, operator interfaces, alarm engines, and historians.
+    children:
+      - id: BC-2010.30.10
+        name: Supervisor Server Engineering
+        level: 3
+        description: Engineering of head-end supervisor servers managing controller networks.
+        children: []
+      - id: BC-2010.30.20
+        name: Operator Interface Engineering
+        level: 3
+        description: Engineering of graphical operator interfaces and dashboards.
+        children: []
+      - id: BC-2010.30.30
+        name: Alarm & Event Engine Engineering
+        level: 3
+        description: Engineering of alarm processing, prioritisation, and notification engines.
+        children: []
+      - id: BC-2010.30.40
+        name: Trend & Historian Engineering
+        level: 3
+        description: Engineering of trend logging and time-series historian subsystems.
+        children: []
+  - id: BC-2010.40
+    name: Control Sequence Library Engineering
+    level: 2
+    description: |
+      Engineering of reusable, vendor-agnostic sequence-of-operation libraries for HVAC subsystems.
+    children:
+      - id: BC-2010.40.10
+        name: VAV Sequence Library
+        level: 3
+        description: Reusable sequences for variable-air-volume zone control.
+        children: []
+      - id: BC-2010.40.20
+        name: AHU Sequence Library
+        level: 3
+        description: Reusable sequences for air-handling-unit control.
+        children: []
+      - id: BC-2010.40.30
+        name: Central Plant Sequence Library
+        level: 3
+        description: Reusable sequences for chiller and boiler plant control.
+        children: []
+      - id: BC-2010.40.40
+        name: Advanced Control Sequence Library
+        level: 3
+        description: Reusable sequences for model-predictive and optimisation-based control.
+        children: []
+  - id: BC-2010.50
+    name: BAS Communication Protocol Engineering
+    level: 2
+    description: |
+      Engineering of building-automation communication protocol stacks and drivers.
+    children:
+      - id: BC-2010.50.10
+        name: BACnet Stack Engineering
+        level: 3
+        description: Engineering of BACnet/IP and BACnet/MSTP protocol stacks.
+        children: []
+      - id: BC-2010.50.20
+        name: KNX & LonWorks Stack Engineering
+        level: 3
+        description: Engineering of KNX and LonWorks protocol stacks.
+        children: []
+      - id: BC-2010.50.30
+        name: Modbus & DALI Driver Engineering
+        level: 3
+        description: Engineering of Modbus and DALI drivers for HVAC and lighting integration.
+        children: []
+      - id: BC-2010.50.40
+        name: OPC UA Server Engineering
+        level: 3
+        description: Engineering of OPC UA servers for industrial-grade BAS interoperability.
+        children: []
+      - id: BC-2010.50.50
+        name: MQTT & IoT Messaging Engineering
+        level: 3
+        description: Engineering of MQTT and IoT messaging interfaces for cloud connectivity.
+        children: []
+  - id: BC-2010.60
+    name: Building Semantic Data Model Engineering
+    level: 2
+    description: |
+      Engineering of semantic models, ontologies, and naming conventions used to make BAS data machine-interpretable.
+    children:
+      - id: BC-2010.60.10
+        name: Brick Schema Modelling
+        level: 3
+        description: Engineering of Brick Schema models describing building topology and equipment.
+        children: []
+      - id: BC-2010.60.20
+        name: Haystack Tag Library Engineering
+        level: 3
+        description: Engineering of Haystack tag libraries and tagging conventions.
+        children: []
+      - id: BC-2010.60.30
+        name: Points & Naming Convention Library
+        level: 3
+        description: Maintenance of point-name and tag-naming convention libraries.
+        children: []
+      - id: BC-2010.60.40
+        name: Asset Ontology Engineering
+        level: 3
+        description: Engineering of asset ontologies linking BAS data to equipment and locations.
+        children: []
+  - id: BC-2010.70
+    name: BAS Cybersecurity Engineering
+    level: 2
+    description: |
+      Secure-by-design engineering of BAS products, networks, and identity controls.
+    children:
+      - id: BC-2010.70.10
+        name: Secure Controller Architecture
+        level: 3
+        description: Secure boot, secure update, and hardened controller architecture.
+        children: []
+      - id: BC-2010.70.20
+        name: BAS Network Segmentation Design
+        level: 3
+        description: Segmentation patterns and zoning of BAS networks.
+        children: []
+      - id: BC-2010.70.30
+        name: Authentication & Identity Engineering
+        level: 3
+        description: Engineering of device, user, and service identity for BAS.
+        children: []
+      - id: BC-2010.70.40
+        name: BAS Vulnerability Management Engineering
+        level: 3
+        description: Engineering of product vulnerability triage, patching, and disclosure for BAS products.
+        children: []
+  - id: BC-2010.80
+    name: BAS Product Verification & Conformance
+    level: 2
+    description: |
+      Verification of BAS products for protocol conformance, interoperability, and listing readiness.
+    children:
+      - id: BC-2010.80.10
+        name: Protocol Conformance Testing
+        level: 3
+        description: Testing of products against BACnet, LonMark, KNX, and other protocol conformance suites.
+        children: []
+      - id: BC-2010.80.20
+        name: Interoperability Lab Testing
+        level: 3
+        description: Multi-vendor interoperability testing in dedicated labs.
+        children: []
+      - id: BC-2010.80.30
+        name: Protocol Regression Testing
+        level: 3
+        description: Regression testing of protocol stacks across firmware revisions.
+        children: []
+      - id: BC-2010.80.40
+        name: Conformance Documentation
+        level: 3
+        description: Authoring of PICS, BIBB, and equivalent conformance documentation.
+        children: []

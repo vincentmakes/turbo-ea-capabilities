@@ -1,0 +1,232 @@
+# Building Performance Management
+id: BC-2070
+name: Building Performance Management
+level: 1
+industry: "HVAC & Building Automation Systems"
+description: |
+  Continuous, data-driven optimisation of building performance — energy measurement and
+  verification (IPMVP / ASHRAE Guideline 14), fault detection and diagnostics, energy and
+  IAQ analytics, demand-response and grid interaction, carbon and sustainability tracking,
+  and ongoing performance reporting to building owners.
+in_scope:
+  - Energy M&V baselining, savings calculation, and adjustment
+  - FDD rule libraries and ongoing fault triage
+  - Building energy benchmarking, attribution, anomaly detection, and forecasting
+  - Indoor environmental quality analytics for thermal, air, acoustic, and lighting outcomes
+  - Demand response and grid-interactive operations
+  - Operational carbon, renewable allocation, and ESG building-level metrics
+  - Owner-facing dashboards, periodic reporting, and stakeholder briefings
+out_of_scope:
+  - Cx and FPT during project commissioning (BC-2050)
+  - Field service execution (BC-2060)
+  - Enterprise sustainability strategy and reporting (BC-740)
+  - HVAC equipment design (BC-2000) and BAS product engineering (BC-2010)
+children:
+  - id: BC-2070.10
+    name: "Energy Measurement & Verification"
+    level: 2
+    description: |
+      Baselining, savings calculation, and adjustment of energy performance per IPMVP / ASHRAE Guideline 14.
+    children:
+      - id: BC-2070.10.10
+        name: Baseline Modelling
+        level: 3
+        description: Modelling of energy baselines against which savings are measured.
+        children: []
+      - id: BC-2070.10.20
+        name: M&V Plan Authoring
+        level: 3
+        description: Authoring of measurement and verification plans aligned to recognised protocols.
+        children: []
+      - id: BC-2070.10.30
+        name: Savings Calculation
+        level: 3
+        description: Calculation of energy savings against the baseline.
+        children: []
+      - id: BC-2070.10.40
+        name: "Adjustment & Normalisation"
+        level: 3
+        description: Adjustment and normalisation of M&V outputs for weather and occupancy.
+        children: []
+  - id: BC-2070.20
+    name: Fault Detection & Diagnostics Operations
+    level: 2
+    description: |
+      Operation of FDD rule libraries and ongoing triage of detected faults.
+    children:
+      - id: BC-2070.20.10
+        name: FDD Rule Library Management
+        level: 3
+        description: Maintenance of fault-detection-and-diagnostics rule libraries.
+        children: []
+      - id: BC-2070.20.20
+        name: "Fault Triage & Prioritisation"
+        level: 3
+        description: Triage and prioritisation of detected faults by impact.
+        children: []
+      - id: BC-2070.20.30
+        name: Root-Cause Diagnostic Analysis
+        level: 3
+        description: Diagnostic analysis to identify root causes behind detected faults.
+        children: []
+      - id: BC-2070.20.40
+        name: FDD False-Positive Tuning
+        level: 3
+        description: Tuning of FDD rules to reduce false-positive alarm rates.
+        children: []
+  - id: BC-2070.30
+    name: Energy Performance Analytics
+    level: 2
+    description: |
+      Analytics on energy use across the building portfolio.
+    children:
+      - id: BC-2070.30.10
+        name: "Benchmarking & Peer Comparison"
+        level: 3
+        description: Benchmarking of building energy performance against peers.
+        children: []
+      - id: BC-2070.30.20
+        name: Energy Use Attribution
+        level: 3
+        description: Attribution of energy use across systems, zones, and loads.
+        children: []
+      - id: BC-2070.30.30
+        name: Energy Anomaly Detection
+        level: 3
+        description: Detection of anomalies in energy use patterns.
+        children: []
+      - id: BC-2070.30.40
+        name: "Forecasting & Targeting"
+        level: 3
+        description: Forecasting of future energy use and targeting against improvement goals.
+        children: []
+  - id: BC-2070.40
+    name: Indoor Environmental Quality Analytics
+    level: 2
+    description: |
+      Analytics on indoor environmental quality outcomes, including comfort, air, acoustic, and lighting metrics.
+    children:
+      - id: BC-2070.40.10
+        name: Thermal Comfort Analytics
+        level: 3
+        description: Analytics on thermal comfort against ASHRAE 55 and equivalent criteria.
+        children: []
+      - id: BC-2070.40.20
+        name: Air Quality Analytics
+        level: 3
+        description: Analytics on indoor air quality against ASHRAE 62.1 and equivalent criteria.
+        children: []
+      - id: BC-2070.40.30
+        name: "Acoustic & Lighting Analytics"
+        level: 3
+        description: Analytics on acoustic and lighting performance for occupant outcomes.
+        children: []
+      - id: BC-2070.40.40
+        name: Occupant Feedback Correlation
+        level: 3
+        description: Correlation of occupant feedback with measured environmental data.
+        children: []
+  - id: BC-2070.50
+    name: "Demand Response & Grid Interaction Management"
+    level: 2
+    description: |
+      Operation of grid-interactive building behaviour and participation in demand-response programmes.
+    children:
+      - id: BC-2070.50.10
+        name: Demand Response Programme Enrolment
+        level: 3
+        description: Enrolment of buildings in demand-response programmes.
+        children: []
+      - id: BC-2070.50.20
+        name: Load Curtailment Execution
+        level: 3
+        description: Execution of load-curtailment events against contracted obligations.
+        children: []
+      - id: BC-2070.50.30
+        name: Grid-Interactive Building Operations
+        level: 3
+        description: Operations of grid-interactive efficient buildings.
+        children: []
+      - id: BC-2070.50.40
+        name: "Tariff & Pricing Response"
+        level: 3
+        description: Response of building operations to time-of-use and dynamic tariffs.
+        children: []
+  - id: BC-2070.60
+    name: "Carbon & Sustainability Performance Tracking"
+    level: 2
+    description: |
+      Building-level operational carbon accounting and sustainability outcome tracking.
+    children:
+      - id: BC-2070.60.10
+        name: Operational Carbon Accounting
+        level: 3
+        description: Accounting of operational carbon emissions at building level.
+        children: []
+      - id: BC-2070.60.20
+        name: Renewable Energy Allocation
+        level: 3
+        description: Allocation of on-site and contracted renewable energy to buildings.
+        children: []
+      - id: BC-2070.60.30
+        name: ESG Building-Level Metrics
+        level: 3
+        description: Calculation of ESG metrics at building level for portfolio reporting.
+        children: []
+      - id: BC-2070.60.40
+        name: Sustainability Certification Performance Tracking
+        level: 3
+        description: Tracking of performance against green-building certification criteria.
+        children: []
+  - id: BC-2070.70
+    name: Performance Improvement Recommendation Management
+    level: 2
+    description: |
+      Identification and management of performance improvement opportunities and savings cases.
+    children:
+      - id: BC-2070.70.10
+        name: Opportunity Identification
+        level: 3
+        description: Identification of performance improvement opportunities from analytics.
+        children: []
+      - id: BC-2070.70.20
+        name: Savings Business Case
+        level: 3
+        description: Development of business cases supporting recommended improvements.
+        children: []
+      - id: BC-2070.70.30
+        name: Recommendation Prioritisation
+        level: 3
+        description: Prioritisation of recommendations across the portfolio.
+        children: []
+      - id: BC-2070.70.40
+        name: Implementation Tracking
+        level: 3
+        description: Tracking of implementation of accepted recommendations.
+        children: []
+  - id: BC-2070.80
+    name: Performance Reporting & Dashboard Operations
+    level: 2
+    description: |
+      Owner-facing dashboards, periodic reports, and regulatory performance reporting.
+    children:
+      - id: BC-2070.80.10
+        name: Owner Dashboard Operations
+        level: 3
+        description: Operation of owner-facing performance dashboards.
+        children: []
+      - id: BC-2070.80.20
+        name: Periodic Performance Reporting
+        level: 3
+        description: Production of periodic performance reports for customers.
+        children: []
+      - id: BC-2070.80.30
+        name: Regulatory Performance Reporting
+        level: 3
+        description: Reporting of building performance to regulatory programmes (e.g. mandatory benchmarking).
+        children: []
+      - id: BC-2070.80.40
+        name: Stakeholder Performance Briefings
+        level: 3
+        description: Briefings to occupants, investors, and stakeholders on building performance.
+        children: []

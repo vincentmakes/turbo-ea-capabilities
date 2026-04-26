@@ -1,0 +1,255 @@
+# HVAC Equipment Engineering Management
+id: BC-2000
+name: HVAC Equipment Engineering Management
+level: 1
+industry: "HVAC & Building Automation Systems"
+description: |
+  Mechanical, refrigeration, and thermo-fluid product engineering of HVAC equipment —
+  chillers, heat pumps, AHUs, RTUs, VRF, fan coils, terminal units — through to
+  performance verification and AHRI/Eurovent rating-test readiness.
+in_scope:
+  - Refrigeration cycle and heat-pump cycle design
+  - Heat exchanger and coil engineering
+  - Air-moving and hydronic equipment engineering
+  - Compressor, drive, and onboard control engineering
+  - Acoustic, vibration, and equipment-level performance verification
+out_of_scope:
+  - Project-level system selection and integration (BC-2020)
+  - BAS controller product engineering (BC-2010)
+  - Type-certification submissions and mark licensing (BC-2030)
+  - Operational refrigerant accounting (BC-2040)
+children:
+  - id: BC-2000.10
+    name: Refrigeration Cycle Engineering
+    level: 2
+    description: |
+      Engineering of vapour-compression, absorption, and heat-pump cycles for HVAC equipment.
+    children:
+      - id: BC-2000.10.10
+        name: Vapor Compression Cycle Design
+        level: 3
+        description: Design of vapour-compression refrigeration cycles for cooling and heating equipment.
+        children: []
+      - id: BC-2000.10.20
+        name: Absorption Cycle Design
+        level: 3
+        description: Design of absorption-cycle chillers and heat pumps.
+        children: []
+      - id: BC-2000.10.30
+        name: Heat Pump Cycle Design
+        level: 3
+        description: Design of reversible heat-pump cycles across air-source, water-source, and ground-source variants.
+        children: []
+      - id: BC-2000.10.40
+        name: Refrigerant Selection Engineering
+        level: 3
+        description: Selection of refrigerants against thermodynamic, regulatory, GWP, and flammability targets.
+        children: []
+      - id: BC-2000.10.50
+        name: Cycle Performance Optimization
+        level: 3
+        description: Optimisation of cycle performance across rating points and part-load conditions.
+        children: []
+  - id: BC-2000.20
+    name: Heat Transfer & Coil Engineering
+    level: 2
+    description: |
+      Engineering of evaporators, condensers, recovery wheels, and brazed/shell-and-tube
+      heat exchangers used in HVAC equipment.
+    children:
+      - id: BC-2000.20.10
+        name: Evaporator Coil Design
+        level: 3
+        description: Design of finned-tube and microchannel evaporator coils.
+        children: []
+      - id: BC-2000.20.20
+        name: Condenser Coil Design
+        level: 3
+        description: Design of air-cooled and water-cooled condenser coils.
+        children: []
+      - id: BC-2000.20.30
+        name: Air-to-Air Heat Recovery Design
+        level: 3
+        description: Design of energy-recovery wheels, plate exchangers, and run-around loops.
+        children: []
+      - id: BC-2000.20.40
+        name: Brazed Plate & Shell-and-Tube Design
+        level: 3
+        description: Design of brazed-plate and shell-and-tube heat exchangers for hydronic and refrigerant duty.
+        children: []
+      - id: BC-2000.20.50
+        name: Coil Material & Coating Engineering
+        level: 3
+        description: Selection of coil metallurgy and protective coatings for environmental durability.
+        children: []
+  - id: BC-2000.30
+    name: Air-Moving Equipment Engineering
+    level: 2
+    description: |
+      Engineering of fans, blowers, air handling units, dampers, and filtration assemblies.
+    children:
+      - id: BC-2000.30.10
+        name: Centrifugal Fan Design
+        level: 3
+        description: Aerodynamic and mechanical design of centrifugal fans.
+        children: []
+      - id: BC-2000.30.20
+        name: Axial & Plug Fan Design
+        level: 3
+        description: Aerodynamic and mechanical design of axial and plug fans.
+        children: []
+      - id: BC-2000.30.30
+        name: Air Handling Unit Engineering
+        level: 3
+        description: Modular AHU section, casing, and airflow engineering.
+        children: []
+      - id: BC-2000.30.40
+        name: Damper & Louver Engineering
+        level: 3
+        description: Engineering of control dampers, fire/smoke dampers, and weather louvers.
+        children: []
+      - id: BC-2000.30.50
+        name: Filtration System Engineering
+        level: 3
+        description: Engineering of particulate, gas-phase, and HEPA filtration sections.
+        children: []
+  - id: BC-2000.40
+    name: Hydronic & Fluid Systems Engineering
+    level: 2
+    description: |
+      Engineering of pumps, piping, hydronic loops, and supporting accessories within HVAC equipment.
+    children:
+      - id: BC-2000.40.10
+        name: Pump Engineering
+        level: 3
+        description: Selection and integration of circulator and end-suction pumps in equipment skids.
+        children: []
+      - id: BC-2000.40.20
+        name: Piping & Header Design
+        level: 3
+        description: Design of internal piping, headers, and manifolds within packaged equipment.
+        children: []
+      - id: BC-2000.40.30
+        name: Chilled & Hot Water Loop Engineering
+        level: 3
+        description: Engineering of integrated chilled-water and hot-water loops at equipment level.
+        children: []
+      - id: BC-2000.40.40
+        name: Hydronic Accessory Engineering
+        level: 3
+        description: Engineering of expansion tanks, air separators, and strainers as packaged accessories.
+        children: []
+  - id: BC-2000.50
+    name: Compressor & Drive Engineering
+    level: 2
+    description: |
+      Engineering of compressor families and the drives that power them.
+    children:
+      - id: BC-2000.50.10
+        name: Scroll Compressor Engineering
+        level: 3
+        description: Engineering of scroll compressors used in light-commercial equipment.
+        children: []
+      - id: BC-2000.50.20
+        name: Screw Compressor Engineering
+        level: 3
+        description: Engineering of screw compressors used in commercial and industrial chillers.
+        children: []
+      - id: BC-2000.50.30
+        name: Centrifugal Compressor Engineering
+        level: 3
+        description: Engineering of centrifugal compressors used in large-tonnage chillers.
+        children: []
+      - id: BC-2000.50.40
+        name: Reciprocating Compressor Engineering
+        level: 3
+        description: Engineering of reciprocating compressors used in heat pumps and refrigeration.
+        children: []
+      - id: BC-2000.50.50
+        name: Variable Speed Drive Integration
+        level: 3
+        description: Integration of variable-speed drives with HVAC compressors and fans.
+        children: []
+  - id: BC-2000.60
+    name: HVAC Acoustic & Vibration Engineering
+    level: 2
+    description: |
+      Acoustic, vibration, and noise engineering at equipment level.
+    children:
+      - id: BC-2000.60.10
+        name: Sound Power Modelling
+        level: 3
+        description: Sound-power and sound-pressure modelling of HVAC equipment.
+        children: []
+      - id: BC-2000.60.20
+        name: Vibration Isolation Design
+        level: 3
+        description: Design of vibration isolation for compressors, fans, and pumps.
+        children: []
+      - id: BC-2000.60.30
+        name: Acoustic Enclosure Engineering
+        level: 3
+        description: Engineering of acoustic enclosures and attenuators integrated with equipment.
+        children: []
+      - id: BC-2000.60.40
+        name: Psychoacoustic Performance Tuning
+        level: 3
+        description: Tuning of perceived sound quality beyond aggregate sound-power metrics.
+        children: []
+  - id: BC-2000.70
+    name: Equipment Control & Embedded Engineering
+    level: 2
+    description: |
+      Engineering of onboard equipment controllers, firmware, and connectivity stacks resident in HVAC equipment.
+    children:
+      - id: BC-2000.70.10
+        name: Onboard Controller Engineering
+        level: 3
+        description: Engineering of equipment-resident controllers and unit controllers.
+        children: []
+      - id: BC-2000.70.20
+        name: Equipment Firmware Engineering
+        level: 3
+        description: Firmware development for HVAC equipment, including unit controllers and drives.
+        children: []
+      - id: BC-2000.70.30
+        name: Smart Equipment Communication Engineering
+        level: 3
+        description: Engineering of equipment-side BAS communication, including BACnet and Modbus.
+        children: []
+      - id: BC-2000.70.40
+        name: Equipment Diagnostic Logic Engineering
+        level: 3
+        description: Engineering of on-equipment diagnostic, alarm, and fault-code logic.
+        children: []
+  - id: BC-2000.80
+    name: HVAC Equipment Verification & Test
+    level: 2
+    description: |
+      Equipment-level performance verification, AHRI/Eurovent rating-test execution, and durability testing.
+    children:
+      - id: BC-2000.80.10
+        name: Psychrometric Chamber Testing
+        level: 3
+        description: Testing of HVAC equipment in psychrometric chambers under controlled conditions.
+        children: []
+      - id: BC-2000.80.20
+        name: Performance Rating Test Execution
+        level: 3
+        description: Execution of standardised performance rating tests on HVAC equipment.
+        children: []
+      - id: BC-2000.80.30
+        name: Thermal Performance Verification
+        level: 3
+        description: Verification of capacity, COP, IPLV, and other thermal performance metrics.
+        children: []
+      - id: BC-2000.80.40
+        name: Endurance & Reliability Testing
+        level: 3
+        description: Endurance, accelerated life, and reliability testing of HVAC equipment.
+        children: []
+      - id: BC-2000.80.50
+        name: Equipment Test Plan Authoring
+        level: 3
+        description: Authoring of equipment-level verification and qualification test plans.
+        children: []
