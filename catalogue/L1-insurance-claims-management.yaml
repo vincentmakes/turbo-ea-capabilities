@@ -1,0 +1,287 @@
+# Insurance Claims Management
+id: BC-2160
+name: Insurance Claims Management
+level: 1
+industry: Insurance
+description: |
+  First notice of loss, triage, investigation, reserving, adjustment,
+  settlement, recovery and subrogation, litigation, fraud / SIU, and
+  catastrophe response across all insurance lines.
+references:
+  - https://www.acord.org/standards/reference-architecture
+  - https://www.iaisweb.org/icp-online-tool/
+  - https://www.lloyds.com/conducting-business/claims
+children:
+  - id: BC-2160.10
+    name: First Notice of Loss Management
+    level: 2
+    industry: Insurance
+    description: |
+      Multi-channel FNOL intake, coverage verification, registration, and acknowledgement.
+    children:
+      - id: BC-2160.10.10
+        name: FNOL Multi-Channel Intake
+        level: 3
+        industry: Insurance
+        description: |
+          Intake of first notice of loss across phone, digital, broker, and IoT channels.
+        children: []
+      - id: BC-2160.10.20
+        name: Initial Coverage Verification
+        level: 3
+        industry: Insurance
+        description: |
+          Verification that the loss falls within the coverage at the date of loss.
+        children: []
+      - id: BC-2160.10.30
+        name: Claim Registration
+        level: 3
+        industry: Insurance
+        description: |
+          Registration of new claims and assignment of claim identifiers.
+        children: []
+      - id: BC-2160.10.40
+        name: Acknowledgement and Communication
+        level: 3
+        industry: Insurance
+        description: |
+          Initial acknowledgement to claimant and ongoing claim status communication.
+        children: []
+  - id: BC-2160.20
+    name: "Claims Triage & Segmentation"
+    level: 2
+    industry: Insurance
+    description: |
+      Severity scoring, straight-through routing, adjuster assignment, and specialist routing.
+    children:
+      - id: BC-2160.20.10
+        name: Severity and Complexity Scoring
+        level: 3
+        industry: Insurance
+        description: |
+          Scoring of claim severity and complexity for routing decisions.
+        children: []
+      - id: BC-2160.20.20
+        name: Straight-Through Processing Routing
+        level: 3
+        industry: Insurance
+        description: |
+          Routing of low-severity claims through straight-through processing.
+        children: []
+      - id: BC-2160.20.30
+        name: Adjuster Assignment
+        level: 3
+        industry: Insurance
+        description: |
+          Assignment of claims to adjusters based on skill, capacity, and geography.
+        children: []
+      - id: BC-2160.20.40
+        name: Specialist and Litigation Routing
+        level: 3
+        industry: Insurance
+        description: |
+          Routing of complex, specialist, and litigated claims to dedicated teams.
+        children: []
+  - id: BC-2160.30
+    name: "Claims Investigation & Adjustment"
+    level: 2
+    industry: Insurance
+    description: |
+      Field and desk adjustment, damage assessment, liability determination, and SME consultation.
+    children:
+      - id: BC-2160.30.10
+        name: Field and Desk Adjustment
+        level: 3
+        industry: Insurance
+        description: |
+          Field and desk adjustment of claims, including site inspections.
+        children: []
+      - id: BC-2160.30.20
+        name: Damage and Loss Assessment
+        level: 3
+        industry: Insurance
+        description: |
+          Assessment of damage, loss quantum, and repair / replacement scope.
+        children: []
+      - id: BC-2160.30.30
+        name: Liability Determination
+        level: 3
+        industry: Insurance
+        description: |
+          Determination of liability and policy response on third-party claims.
+        children: []
+      - id: BC-2160.30.40
+        name: Subject-Matter Expert Consultation
+        level: 3
+        industry: Insurance
+        description: |
+          Consultation with surveyors, engineers, medical experts, and forensic accountants.
+        children: []
+  - id: BC-2160.40
+    name: Claims Reserving Management
+    level: 2
+    industry: Insurance
+    description: |
+      Initial case reserve setting, re-estimation, and IBNR coordination.
+    children:
+      - id: BC-2160.40.10
+        name: Initial Case Reserve Setting
+        level: 3
+        industry: Insurance
+        description: |
+          Setting of initial case reserves on registered claims.
+        children: []
+      - id: BC-2160.40.20
+        name: Reserve Re-Estimation
+        level: 3
+        industry: Insurance
+        description: |
+          Periodic re-estimation of case reserves as new information emerges.
+        children: []
+      - id: BC-2160.40.30
+        name: IBNR Coordination with Actuarial
+        level: 3
+        industry: Insurance
+        description: |
+          Coordination with actuarial on IBNR provisions for portfolio-level reserving.
+        children: []
+  - id: BC-2160.50
+    name: "Claims Settlement & Payment"
+    level: 2
+    industry: Insurance
+    description: |
+      Settlement negotiation, indemnity and expense payments, salvage, and recovery / subrogation.
+    children:
+      - id: BC-2160.50.10
+        name: Settlement Negotiation
+        level: 3
+        industry: Insurance
+        description: |
+          Negotiation of settlement amounts with claimants and third parties.
+        children: []
+      - id: BC-2160.50.20
+        name: Indemnity Payment Issuance
+        level: 3
+        industry: Insurance
+        description: |
+          Issuance of indemnity payments to insureds and third parties.
+        children: []
+      - id: BC-2160.50.30
+        name: Expense Payment Issuance
+        level: 3
+        industry: Insurance
+        description: |
+          Issuance of allocated and unallocated loss adjustment expense payments.
+        children: []
+      - id: BC-2160.50.40
+        name: Salvage Disposition
+        level: 3
+        industry: Insurance
+        description: |
+          Disposition and recovery of salvage on settled claims.
+        children: []
+      - id: BC-2160.50.50
+        name: Recovery and Subrogation
+        level: 3
+        industry: Insurance
+        description: |
+          Recovery and subrogation against third parties and other insurers.
+        children: []
+  - id: BC-2160.60
+    name: Claims Litigation Management
+    level: 2
+    industry: Insurance
+    description: |
+      Litigation strategy, defence counsel coordination, and litigation cost tracking.
+    children:
+      - id: BC-2160.60.10
+        name: Litigation Strategy
+        level: 3
+        industry: Insurance
+        description: |
+          Strategy setting on litigated claims and settlement vs trial decisions.
+        children: []
+      - id: BC-2160.60.20
+        name: Defence Counsel Coordination
+        level: 3
+        industry: Insurance
+        description: |
+          Coordination of panel and instructed defence counsel.
+        children: []
+      - id: BC-2160.60.30
+        name: Litigation Cost Tracking
+        level: 3
+        industry: Insurance
+        description: |
+          Tracking of litigation costs against panel rates and budgets.
+        children: []
+  - id: BC-2160.70
+    name: "Claims Fraud & SIU Management"
+    level: 2
+    industry: Insurance
+    description: |
+      Suspicious-claim detection, SIU investigation, fraud referral, and anti-fraud analytics.
+    children:
+      - id: BC-2160.70.10
+        name: Suspicious Claim Detection
+        level: 3
+        industry: Insurance
+        description: |
+          Detection of suspicious claims using rules, models, and red-flag indicators.
+        children: []
+      - id: BC-2160.70.20
+        name: SIU Investigation
+        level: 3
+        industry: Insurance
+        description: |
+          Special investigation unit casework on suspected fraudulent claims.
+        children: []
+      - id: BC-2160.70.30
+        name: Fraud Referral and Prosecution
+        level: 3
+        industry: Insurance
+        description: |
+          Referral of fraud cases to law enforcement and industry registries.
+        children: []
+      - id: BC-2160.70.40
+        name: Anti-Fraud Analytics
+        level: 3
+        industry: Insurance
+        description: |
+          Anti-fraud analytics on claim portfolios and network analysis.
+        children: []
+  - id: BC-2160.80
+    name: Catastrophe Claims Management
+    level: 2
+    industry: Insurance
+    description: |
+      CAT event activation, surge capacity, CAT claims tracking, and CAT recovery coordination.
+    children:
+      - id: BC-2160.80.10
+        name: CAT Event Activation
+        level: 3
+        industry: Insurance
+        description: |
+          Activation of catastrophe response procedures on declared events.
+        children: []
+      - id: BC-2160.80.20
+        name: Surge Capacity Mobilisation
+        level: 3
+        industry: Insurance
+        description: |
+          Mobilisation of surge adjusters, contractors, and call centre capacity.
+        children: []
+      - id: BC-2160.80.30
+        name: CAT Claims Triage and Tracking
+        level: 3
+        industry: Insurance
+        description: |
+          Triage and tracking of CAT-coded claims through to settlement.
+        children: []
+      - id: BC-2160.80.40
+        name: CAT Recovery Coordination
+        level: 3
+        industry: Insurance
+        description: |
+          Coordination of reinsurance and pool recoveries on CAT events.
+        children: []

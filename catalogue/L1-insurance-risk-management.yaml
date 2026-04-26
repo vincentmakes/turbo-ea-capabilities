@@ -1,0 +1,240 @@
+# Insurance Risk Management
+id: BC-2190
+name: Insurance Risk Management
+level: 1
+industry: Insurance
+description: |
+  Insurance-specific risk types - underwriting, catastrophe and accumulation,
+  reserve, solvency and capital, reinsurance counterparty, life and longevity,
+  lapse, and insurance operational and conduct risk - distinct from generic
+  enterprise risk.
+references:
+  - https://www.iaisweb.org/icp-online-tool/
+  - https://www.eiopa.europa.eu/regulation-supervision/insurance/solvency-ii_en
+  - https://www.iso.org/iso-31000-risk-management.html
+  - https://content.naic.org/cipr-topics/risk-based-capital
+children:
+  - id: BC-2190.10
+    name: Underwriting Risk Management
+    level: 2
+    industry: Insurance
+    description: |
+      Underwriting risk appetite, limit monitoring, and adverse-selection surveillance.
+    children:
+      - id: BC-2190.10.10
+        name: Underwriting Risk Appetite
+        level: 3
+        industry: Insurance
+        description: |
+          Definition and articulation of underwriting risk appetite.
+        children: []
+      - id: BC-2190.10.20
+        name: Underwriting Limit Monitoring
+        level: 3
+        industry: Insurance
+        description: |
+          Monitoring of underwriting authority and aggregation limits.
+        children: []
+      - id: BC-2190.10.30
+        name: Adverse Selection Surveillance
+        level: 3
+        industry: Insurance
+        description: |
+          Surveillance for adverse selection and anti-selection patterns.
+        children: []
+  - id: BC-2190.20
+    name: "Catastrophe & Accumulation Risk Management"
+    level: 2
+    industry: Insurance
+    description: |
+      Exposure aggregation monitoring, PML and realistic disaster scenario management, and CAT mitigation planning.
+    children:
+      - id: BC-2190.20.10
+        name: Exposure Aggregation Monitoring
+        level: 3
+        industry: Insurance
+        description: |
+          Monitoring of exposure aggregation by peril, geography, and occupancy.
+        children: []
+      - id: BC-2190.20.20
+        name: PML and Realistic Disaster Scenario Management
+        level: 3
+        industry: Insurance
+        description: |
+          Management of PML and realistic disaster scenarios.
+        children: []
+      - id: BC-2190.20.30
+        name: CAT Risk Mitigation Planning
+        level: 3
+        industry: Insurance
+        description: |
+          Planning of mitigation actions including reinsurance and risk transfer.
+        children: []
+  - id: BC-2190.30
+    name: "Insurance Reserve & Reserving Risk Management"
+    level: 2
+    industry: Insurance
+    description: |
+      Reserve adequacy monitoring, reserve volatility analysis, and reserve risk stress testing.
+    children:
+      - id: BC-2190.30.10
+        name: Reserve Adequacy Monitoring
+        level: 3
+        industry: Insurance
+        description: |
+          Monitoring of reserve adequacy against best-estimate and external benchmarks.
+        children: []
+      - id: BC-2190.30.20
+        name: Reserve Volatility Analysis
+        level: 3
+        industry: Insurance
+        description: |
+          Analysis of reserve volatility and one-year reserve risk.
+        children: []
+      - id: BC-2190.30.30
+        name: Reserve Risk Stress Testing
+        level: 3
+        industry: Insurance
+        description: |
+          Stress and scenario testing of reserve adequacy.
+        children: []
+  - id: BC-2190.40
+    name: "Solvency & Capital Risk Management"
+    level: 2
+    industry: Insurance
+    description: |
+      Capital adequacy monitoring, ORSA operations, solvency stress testing, and recovery and resolution planning.
+    children:
+      - id: BC-2190.40.10
+        name: Capital Adequacy Monitoring
+        level: 3
+        industry: Insurance
+        description: |
+          Monitoring of solvency capital ratios and capital triggers.
+        children: []
+      - id: BC-2190.40.20
+        name: ORSA Operations
+        level: 3
+        industry: Insurance
+        description: |
+          Operation of the Own Risk and Solvency Assessment cycle.
+        children: []
+      - id: BC-2190.40.30
+        name: Solvency Stress and Scenario Testing
+        level: 3
+        industry: Insurance
+        description: |
+          Stress and reverse-stress testing of solvency positions.
+        children: []
+      - id: BC-2190.40.40
+        name: Recovery and Resolution Planning
+        level: 3
+        industry: Insurance
+        description: |
+          Recovery and resolution planning for insurer wind-down scenarios.
+        children: []
+  - id: BC-2190.50
+    name: "Reinsurance Counterparty & Credit Risk Management"
+    level: 2
+    industry: Insurance
+    description: |
+      Reinsurer counterparty monitoring, collateral adequacy, and counterparty default stress testing.
+    children:
+      - id: BC-2190.50.10
+        name: Reinsurer Counterparty Monitoring
+        level: 3
+        industry: Insurance
+        description: |
+          Monitoring of reinsurer financial strength and exposure concentration.
+        children: []
+      - id: BC-2190.50.20
+        name: Collateral and LoC Adequacy Monitoring
+        level: 3
+        industry: Insurance
+        description: |
+          Monitoring of collateral and letter-of-credit adequacy from reinsurers.
+        children: []
+      - id: BC-2190.50.30
+        name: Counterparty Default Stress Testing
+        level: 3
+        industry: Insurance
+        description: |
+          Stress testing of reinsurer default impacts on solvency.
+        children: []
+  - id: BC-2190.60
+    name: "Life & Longevity Risk Management"
+    level: 2
+    industry: Insurance
+    description: |
+      Mortality risk monitoring, longevity hedging oversight, and pandemic risk management.
+    children:
+      - id: BC-2190.60.10
+        name: Mortality Risk Monitoring
+        level: 3
+        industry: Insurance
+        description: |
+          Monitoring of mortality risk on life and protection portfolios.
+        children: []
+      - id: BC-2190.60.20
+        name: Longevity Risk Hedging Oversight
+        level: 3
+        industry: Insurance
+        description: |
+          Oversight of longevity hedging instruments and counterparty exposure.
+        children: []
+      - id: BC-2190.60.30
+        name: Pandemic Risk Management
+        level: 3
+        industry: Insurance
+        description: |
+          Management of pandemic and epidemic mortality and morbidity risk.
+        children: []
+  - id: BC-2190.70
+    name: "Lapse & Persistency Risk Management"
+    level: 2
+    industry: Insurance
+    description: |
+      Lapse risk monitoring and persistency stress testing.
+    children:
+      - id: BC-2190.70.10
+        name: Lapse Risk Monitoring
+        level: 3
+        industry: Insurance
+        description: |
+          Monitoring of lapse rates and lapse-driven losses on life and savings products.
+        children: []
+      - id: BC-2190.70.20
+        name: Persistency Stress Testing
+        level: 3
+        industry: Insurance
+        description: |
+          Stress testing of persistency assumptions and dynamic lapse behaviour.
+        children: []
+  - id: BC-2190.80
+    name: "Insurance Operational & Conduct Risk Management"
+    level: 2
+    industry: Insurance
+    description: |
+      Insurance conduct risk, claims-handling risk, and distribution risk monitoring.
+    children:
+      - id: BC-2190.80.10
+        name: Insurance Conduct Risk Monitoring
+        level: 3
+        industry: Insurance
+        description: |
+          Monitoring of conduct risk indicators across product, distribution, and claims.
+        children: []
+      - id: BC-2190.80.20
+        name: Claims Handling Risk Oversight
+        level: 3
+        industry: Insurance
+        description: |
+          Oversight of claims-handling risk and policyholder fairness outcomes.
+        children: []
+      - id: BC-2190.80.30
+        name: Distribution Risk Monitoring
+        level: 3
+        industry: Insurance
+        description: |
+          Monitoring of distribution risk including mis-selling and intermediary conduct.
+        children: []

@@ -1,0 +1,187 @@
+# Insurance Customer Management
+id: BC-2120
+name: Insurance Customer Management
+level: 1
+industry: Insurance
+description: |
+  Policyholder identity, household and group aggregation, KYC, consents,
+  and lifecycle servicing of insurance customers across all channels.
+references:
+  - https://www.acord.org/standards/reference-architecture
+  - https://www.iaisweb.org/icp-online-tool/
+children:
+  - id: BC-2120.10
+    name: Policyholder Onboarding Management
+    level: 2
+    industry: Insurance
+    description: |
+      Application capture, identity verification, activation, and onboarding communications.
+    children:
+      - id: BC-2120.10.10
+        name: Application Capture
+        level: 3
+        industry: Insurance
+        description: |
+          Capture of new policyholder applications across channels.
+        children: []
+      - id: BC-2120.10.20
+        name: Identity and Beneficial Ownership Verification
+        level: 3
+        industry: Insurance
+        description: |
+          Identity verification and beneficial-ownership identification for individual and corporate policyholders.
+        children: []
+      - id: BC-2120.10.30
+        name: Policyholder Activation
+        level: 3
+        industry: Insurance
+        description: |
+          Activation of policyholder records, accounts, and channel access.
+        children: []
+      - id: BC-2120.10.40
+        name: Onboarding Communication
+        level: 3
+        industry: Insurance
+        description: |
+          Communication of onboarding status, welcome packs, and next steps.
+        children: []
+  - id: BC-2120.20
+    name: "Insurance KYC & Sanctions Management"
+    level: 2
+    industry: Insurance
+    description: |
+      Customer risk rating, KYC documentation, sanctions and PEP screening, and periodic refresh.
+    children:
+      - id: BC-2120.20.10
+        name: Customer Risk Rating
+        level: 3
+        industry: Insurance
+        description: |
+          Risk rating of insurance customers based on AML and conduct risk factors.
+        children: []
+      - id: BC-2120.20.20
+        name: KYC Document Collection
+        level: 3
+        industry: Insurance
+        description: |
+          Collection and validation of KYC documentation for insurance customers.
+        children: []
+      - id: BC-2120.20.30
+        name: Sanctions and PEP Screening
+        level: 3
+        industry: Insurance
+        description: |
+          Sanctions, PEP, and adverse-media screening of policyholders and beneficiaries.
+        children: []
+      - id: BC-2120.20.40
+        name: Periodic KYC Refresh
+        level: 3
+        industry: Insurance
+        description: |
+          Periodic refresh of KYC information and risk re-rating.
+        children: []
+  - id: BC-2120.30
+    name: Policyholder Servicing Management
+    level: 2
+    industry: Insurance
+    description: |
+      Self-service maintenance, inbound service requests, document provision, and beneficiary maintenance.
+    children:
+      - id: BC-2120.30.10
+        name: Self-Service Account Maintenance
+        level: 3
+        industry: Insurance
+        description: |
+          Self-service updates to address, contact, and preference data.
+        children: []
+      - id: BC-2120.30.20
+        name: Inbound Service Request Handling
+        level: 3
+        industry: Insurance
+        description: |
+          Handling of inbound policyholder service requests across channels.
+        children: []
+      - id: BC-2120.30.30
+        name: Document and Statement Provision
+        level: 3
+        industry: Insurance
+        description: |
+          Provision of policy documents, statements, and certificates of insurance.
+        children: []
+      - id: BC-2120.30.40
+        name: Beneficiary and Nominee Maintenance
+        level: 3
+        industry: Insurance
+        description: |
+          Capture and maintenance of beneficiaries and nominees on life and pension contracts.
+        children: []
+  - id: BC-2120.40
+    name: "Customer Information & Consent Management"
+    level: 2
+    industry: Insurance
+    description: |
+      Profile, household and group aggregation, consent management, and golden record.
+    children:
+      - id: BC-2120.40.10
+        name: Policyholder Profile Maintenance
+        level: 3
+        industry: Insurance
+        description: |
+          Maintenance of policyholder profile and demographic data.
+        children: []
+      - id: BC-2120.40.20
+        name: Household and Group Aggregation
+        level: 3
+        industry: Insurance
+        description: |
+          Aggregation of policyholders into households, groups, and corporate parents.
+        children: []
+      - id: BC-2120.40.30
+        name: Marketing and Data Sharing Consent
+        level: 3
+        industry: Insurance
+        description: |
+          Capture and enforcement of marketing and data-sharing consents.
+        children: []
+      - id: BC-2120.40.40
+        name: Customer Golden Record Management
+        level: 3
+        industry: Insurance
+        description: |
+          Maintenance of the policyholder golden record across systems.
+        children: []
+  - id: BC-2120.50
+    name: "Customer Experience & Retention Management"
+    level: 2
+    industry: Insurance
+    description: |
+      Feedback capture, loyalty programmes, complaint handling, and churn prediction.
+    children:
+      - id: BC-2120.50.10
+        name: Customer Feedback Capture
+        level: 3
+        industry: Insurance
+        description: |
+          Capture of customer feedback, NPS, and CSAT signals.
+        children: []
+      - id: BC-2120.50.20
+        name: Loyalty and Retention Programme Operations
+        level: 3
+        industry: Insurance
+        description: |
+          Operation of loyalty, retention, and tenure-based reward programmes.
+        children: []
+      - id: BC-2120.50.30
+        name: Complaint and Escalation Handling
+        level: 3
+        industry: Insurance
+        description: |
+          Handling of policyholder complaints, escalations, and ombudsman cases.
+        children: []
+      - id: BC-2120.50.40
+        name: Churn and Lapse Prediction
+        level: 3
+        industry: Insurance
+        description: |
+          Predictive analytics on churn and lapse risk for retention intervention.
+        children: []

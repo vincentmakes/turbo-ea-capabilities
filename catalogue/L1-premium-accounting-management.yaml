@@ -1,0 +1,202 @@
+# Premium Accounting Management
+id: BC-2150
+name: Premium Accounting Management
+level: 1
+industry: Insurance
+description: |
+  Premium billing, cash collection, broker and commission account
+  settlement, premium reserve and earnings mechanics, dunning, and
+  insurance premium tax accounting.
+references:
+  - https://www.acord.org/standards/reference-architecture
+  - https://www.ifrs.org/issued-standards/list-of-standards/ifrs-17-insurance-contracts/
+children:
+  - id: BC-2150.10
+    name: Premium Billing Management
+    level: 2
+    industry: Insurance
+    description: |
+      Invoice generation, instalment scheduling, billing routing, and adjustments.
+    children:
+      - id: BC-2150.10.10
+        name: Premium Invoice Generation
+        level: 3
+        industry: Insurance
+        description: |
+          Generation of premium invoices and statements per billing cycle.
+        children: []
+      - id: BC-2150.10.20
+        name: Instalment Schedule Configuration
+        level: 3
+        industry: Insurance
+        description: |
+          Configuration of premium instalment schedules and finance charges.
+        children: []
+      - id: BC-2150.10.30
+        name: Direct-Bill and Agency-Bill Routing
+        level: 3
+        industry: Insurance
+        description: |
+          Routing of billing between direct-bill and agency-bill arrangements.
+        children: []
+      - id: BC-2150.10.40
+        name: Billing Adjustment and Credit Note
+        level: 3
+        industry: Insurance
+        description: |
+          Issuance of billing adjustments and credit notes following endorsements and cancellations.
+        children: []
+  - id: BC-2150.20
+    name: Premium Collection Management
+    level: 2
+    industry: Insurance
+    description: |
+      Receipt and application of payments, recurring payment operations, refunds, and lockbox.
+    children:
+      - id: BC-2150.20.10
+        name: Payment Receipt and Application
+        level: 3
+        industry: Insurance
+        description: |
+          Receipt of premium payments and application to policy accounts.
+        children: []
+      - id: BC-2150.20.20
+        name: Direct Debit and Recurring Payment Operations
+        level: 3
+        industry: Insurance
+        description: |
+          Operation of direct debit, recurring card, and standing-order schemes.
+        children: []
+      - id: BC-2150.20.30
+        name: Premium Refund Processing
+        level: 3
+        industry: Insurance
+        description: |
+          Processing of premium refunds following endorsements and cancellations.
+        children: []
+      - id: BC-2150.20.40
+        name: Lockbox and Cash Allocation
+        level: 3
+        industry: Insurance
+        description: |
+          Lockbox receipt, cash allocation, and exception handling.
+        children: []
+  - id: BC-2150.30
+    name: "Broker & Producer Account Settlement"
+    level: 2
+    industry: Insurance
+    description: |
+      Producer statements, premium-less-commission settlement, and trust-account reconciliation.
+    children:
+      - id: BC-2150.30.10
+        name: Producer Statement Generation
+        level: 3
+        industry: Insurance
+        description: |
+          Generation of premium and commission statements for producers.
+        children: []
+      - id: BC-2150.30.20
+        name: Premium-Less-Commission Settlement
+        level: 3
+        industry: Insurance
+        description: |
+          Settlement of premium net of commission to and from producers.
+        children: []
+      - id: BC-2150.30.30
+        name: Producer Trust Account Reconciliation
+        level: 3
+        industry: Insurance
+        description: |
+          Reconciliation of producer trust accounts and IBA balances.
+        children: []
+  - id: BC-2150.40
+    name: "Premium Reserve & Earnings Management"
+    level: 2
+    industry: Insurance
+    description: |
+      Unearned premium calculation, earned premium recognition, and deferred acquisition cost tracking.
+    children:
+      - id: BC-2150.40.10
+        name: Unearned Premium Calculation
+        level: 3
+        industry: Insurance
+        description: |
+          Calculation of unearned premium reserves on in-force policies.
+        children: []
+      - id: BC-2150.40.20
+        name: Earned Premium Recognition
+        level: 3
+        industry: Insurance
+        description: |
+          Recognition of earned premium per accounting period.
+        children: []
+      - id: BC-2150.40.30
+        name: Deferred Acquisition Cost Tracking
+        level: 3
+        industry: Insurance
+        description: |
+          Tracking of deferred acquisition costs (DAC) across product cohorts.
+        children: []
+  - id: BC-2150.50
+    name: "Collections & Dunning Management"
+    level: 2
+    industry: Insurance
+    description: |
+      Aged-receivable monitoring, dunning operations, cancellation for non-payment, and bad-debt write-off.
+    children:
+      - id: BC-2150.50.10
+        name: Aged Receivable Monitoring
+        level: 3
+        industry: Insurance
+        description: |
+          Monitoring of aged premium receivables across policyholders and producers.
+        children: []
+      - id: BC-2150.50.20
+        name: Dunning and Reminder Operations
+        level: 3
+        industry: Insurance
+        description: |
+          Dunning notices, reminders, and arrears communications.
+        children: []
+      - id: BC-2150.50.30
+        name: Cancellation for Non-Payment Handling
+        level: 3
+        industry: Insurance
+        description: |
+          Triggering of cancellation processes for unpaid premium.
+        children: []
+      - id: BC-2150.50.40
+        name: Bad Debt Write-Off
+        level: 3
+        industry: Insurance
+        description: |
+          Approval and posting of bad-debt write-offs on uncollectable premium.
+        children: []
+  - id: BC-2150.60
+    name: "Tax & Levy Accounting"
+    level: 2
+    industry: Insurance
+    description: |
+      Insurance premium tax calculation, stamp duty and levy collection, and premium tax filing support.
+    children:
+      - id: BC-2150.60.10
+        name: Insurance Premium Tax Calculation
+        level: 3
+        industry: Insurance
+        description: |
+          Calculation of insurance premium tax across jurisdictions and product types.
+        children: []
+      - id: BC-2150.60.20
+        name: Stamp Duty and Levy Collection
+        level: 3
+        industry: Insurance
+        description: |
+          Collection and remittance of stamp duties and statutory levies.
+        children: []
+      - id: BC-2150.60.30
+        name: Premium Tax Filing Support
+        level: 3
+        industry: Insurance
+        description: |
+          Production of underlying data and reconciliations for premium tax filings.
+        children: []

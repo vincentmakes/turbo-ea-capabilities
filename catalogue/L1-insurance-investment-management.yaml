@@ -1,0 +1,189 @@
+# Insurance Investment Management
+id: BC-2200
+name: Insurance Investment Management
+level: 1
+industry: Insurance
+description: |
+  Asset-side management of insurance liabilities by an insurer-as-asset-owner -
+  investment policy, ALM, strategic and tactical asset allocation, manager
+  oversight, investment risk and compliance, and investment reporting.
+references:
+  - https://www.iaisweb.org/icp-online-tool/
+  - https://www.eiopa.europa.eu/regulation-supervision/insurance/solvency-ii_en
+  - https://www.acord.org/standards/reference-architecture
+children:
+  - id: BC-2200.10
+    name: "Investment Policy & Strategy Management"
+    level: 2
+    industry: Insurance
+    description: |
+      Investment policy statement, mandate definition, and ESG investment policy integration.
+    children:
+      - id: BC-2200.10.10
+        name: Investment Policy Statement Maintenance
+        level: 3
+        industry: Insurance
+        description: |
+          Maintenance of the investment policy statement and prudent person principle alignment.
+        children: []
+      - id: BC-2200.10.20
+        name: Investment Mandate Definition
+        level: 3
+        industry: Insurance
+        description: |
+          Definition of investment mandates by portfolio, line of business, and risk profile.
+        children: []
+      - id: BC-2200.10.30
+        name: ESG Investment Policy Integration
+        level: 3
+        industry: Insurance
+        description: |
+          Integration of ESG and stewardship policies into investment mandates.
+        children: []
+  - id: BC-2200.20
+    name: Asset Liability Management
+    level: 2
+    industry: Insurance
+    description: |
+      ALM modelling and cashflow matching, duration and convexity monitoring, and liquidity buffer sizing.
+    children:
+      - id: BC-2200.20.10
+        name: ALM Modelling and Cashflow Matching
+        level: 3
+        industry: Insurance
+        description: |
+          ALM modelling and cashflow matching of assets to insurance liabilities.
+        children: []
+      - id: BC-2200.20.20
+        name: Duration and Convexity Monitoring
+        level: 3
+        industry: Insurance
+        description: |
+          Monitoring of duration and convexity gaps between assets and liabilities.
+        children: []
+      - id: BC-2200.20.30
+        name: Liquidity Buffer Sizing
+        level: 3
+        industry: Insurance
+        description: |
+          Sizing of liquidity buffers to meet expected and stressed claim outflows.
+        children: []
+  - id: BC-2200.30
+    name: "Strategic & Tactical Asset Allocation"
+    level: 2
+    industry: Insurance
+    description: |
+      Strategic and tactical asset allocation decisions and rebalancing.
+    children:
+      - id: BC-2200.30.10
+        name: Strategic Asset Allocation Setting
+        level: 3
+        industry: Insurance
+        description: |
+          Setting of long-horizon strategic asset allocations across asset classes.
+        children: []
+      - id: BC-2200.30.20
+        name: Tactical Asset Allocation Decisioning
+        level: 3
+        industry: Insurance
+        description: |
+          Tactical allocation decisions within strategic ranges.
+        children: []
+      - id: BC-2200.30.30
+        name: Allocation Rebalancing
+        level: 3
+        industry: Insurance
+        description: |
+          Periodic and event-driven rebalancing back to target allocations.
+        children: []
+  - id: BC-2200.40
+    name: "Investment Mandate & Manager Oversight"
+    level: 2
+    industry: Insurance
+    description: |
+      External manager selection, mandate compliance, performance review, and manager fee oversight.
+    children:
+      - id: BC-2200.40.10
+        name: External Manager Selection
+        level: 3
+        industry: Insurance
+        description: |
+          Selection and onboarding of external investment managers.
+        children: []
+      - id: BC-2200.40.20
+        name: Mandate Compliance Monitoring
+        level: 3
+        industry: Insurance
+        description: |
+          Monitoring of mandate compliance and breach handling.
+        children: []
+      - id: BC-2200.40.30
+        name: Manager Performance Review
+        level: 3
+        industry: Insurance
+        description: |
+          Periodic performance review of external investment managers.
+        children: []
+      - id: BC-2200.40.40
+        name: Manager Fee Oversight
+        level: 3
+        industry: Insurance
+        description: |
+          Oversight of manager fees and value-for-money assessments.
+        children: []
+  - id: BC-2200.50
+    name: "Investment Risk & Compliance Monitoring"
+    level: 2
+    industry: Insurance
+    description: |
+      Investment limit monitoring, counterparty and issuer limits, and Solvency II asset eligibility.
+    children:
+      - id: BC-2200.50.10
+        name: Investment Limit Monitoring
+        level: 3
+        industry: Insurance
+        description: |
+          Monitoring of investment limits across asset classes and risk factors.
+        children: []
+      - id: BC-2200.50.20
+        name: Counterparty and Issuer Limit Monitoring
+        level: 3
+        industry: Insurance
+        description: |
+          Monitoring of counterparty and issuer concentration and limits.
+        children: []
+      - id: BC-2200.50.30
+        name: Solvency II Asset Eligibility Monitoring
+        level: 3
+        industry: Insurance
+        description: |
+          Monitoring of asset eligibility against Solvency II and equivalent rules.
+        children: []
+  - id: BC-2200.60
+    name: "Investment Performance & Reporting"
+    level: 2
+    industry: Insurance
+    description: |
+      Performance measurement, attribution, and investment reporting to board and regulator.
+    children:
+      - id: BC-2200.60.10
+        name: Portfolio Performance Measurement
+        level: 3
+        industry: Insurance
+        description: |
+          Measurement of portfolio performance against benchmarks and liabilities.
+        children: []
+      - id: BC-2200.60.20
+        name: Attribution Analysis
+        level: 3
+        industry: Insurance
+        description: |
+          Performance attribution by allocation, selection, and currency.
+        children: []
+      - id: BC-2200.60.30
+        name: Investment Reporting to Board and Regulator
+        level: 3
+        industry: Insurance
+        description: |
+          Production of investment reporting for board, ALCO, and regulator.
+        children: []

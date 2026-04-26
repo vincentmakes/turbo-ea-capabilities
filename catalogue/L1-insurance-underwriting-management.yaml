@@ -1,0 +1,210 @@
+# Insurance Underwriting Management
+id: BC-2130
+name: Insurance Underwriting Management
+level: 1
+industry: Insurance
+description: |
+  Risk evaluation, pricing, acceptance, declination, and binding of
+  insurance applications across personal, commercial, and specialty lines,
+  including underwriting authority enforcement and portfolio steering.
+references:
+  - https://www.acord.org/standards/reference-architecture
+  - https://www.iaisweb.org/icp-online-tool/
+  - https://www.lloyds.com/conducting-business/underwriting
+children:
+  - id: BC-2130.10
+    name: Underwriting Risk Intake
+    level: 2
+    industry: Insurance
+    description: |
+      Submission triage, risk data collection, loss-history retrieval, and third-party data enrichment.
+    children:
+      - id: BC-2130.10.10
+        name: Submission Triage
+        level: 3
+        industry: Insurance
+        description: |
+          Triage of underwriting submissions and routing to underwriting teams.
+        children: []
+      - id: BC-2130.10.20
+        name: Risk Data Collection
+        level: 3
+        industry: Insurance
+        description: |
+          Collection of risk-relevant data from applicant, broker, and survey sources.
+        children: []
+      - id: BC-2130.10.30
+        name: Loss History Retrieval
+        level: 3
+        industry: Insurance
+        description: |
+          Retrieval of loss histories from bureaux, prior carriers, and shared registries.
+        children: []
+      - id: BC-2130.10.40
+        name: Third-Party Data Enrichment
+        level: 3
+        industry: Insurance
+        description: |
+          Enrichment of submissions with third-party, telematics, and IoT data.
+        children: []
+  - id: BC-2130.20
+    name: "Risk Assessment & Selection"
+    level: 2
+    industry: Insurance
+    description: |
+      Risk scoring, exposure aggregation, loss-control surveys, and underwriting referrals.
+    children:
+      - id: BC-2130.20.10
+        name: Risk Scoring and Modelling
+        level: 3
+        industry: Insurance
+        description: |
+          Application of underwriting models, scorecards, and machine-learning risk scores.
+        children: []
+      - id: BC-2130.20.20
+        name: Exposure Aggregation Assessment
+        level: 3
+        industry: Insurance
+        description: |
+          Assessment of exposure aggregation against in-force portfolio.
+        children: []
+      - id: BC-2130.20.30
+        name: Loss Control Survey Coordination
+        level: 3
+        industry: Insurance
+        description: |
+          Coordination of loss-control surveys and risk engineering reports.
+        children: []
+      - id: BC-2130.20.40
+        name: Underwriting Referral Handling
+        level: 3
+        industry: Insurance
+        description: |
+          Handling of referrals to senior underwriters, line authorities, and reinsurers.
+        children: []
+  - id: BC-2130.30
+    name: Underwriting Pricing Management
+    level: 2
+    industry: Insurance
+    description: |
+      Manual rating, schedule rating credits, experience rating, and bespoke specialty pricing.
+    children:
+      - id: BC-2130.30.10
+        name: Manual Rating Application
+        level: 3
+        industry: Insurance
+        description: |
+          Application of manual rates from filed product configuration.
+        children: []
+      - id: BC-2130.30.20
+        name: Schedule Rating and Credit Application
+        level: 3
+        industry: Insurance
+        description: |
+          Application of schedule rating credits and debits.
+        children: []
+      - id: BC-2130.30.30
+        name: Experience Rating
+        level: 3
+        industry: Insurance
+        description: |
+          Experience-rated pricing using policyholder loss history.
+        children: []
+      - id: BC-2130.30.40
+        name: Specialty and Bespoke Pricing
+        level: 3
+        industry: Insurance
+        description: |
+          Bespoke pricing for specialty, large account, and complex risks.
+        children: []
+  - id: BC-2130.40
+    name: "Underwriting Decision & Authority Management"
+    level: 2
+    industry: Insurance
+    description: |
+      Acceptance and decline decisioning, term and condition setting, authority enforcement, and binding.
+    children:
+      - id: BC-2130.40.10
+        name: Acceptance and Decline Decisioning
+        level: 3
+        industry: Insurance
+        description: |
+          Decisioning on acceptance, decline, or counter-offer of submissions.
+        children: []
+      - id: BC-2130.40.20
+        name: Coverage Term and Condition Setting
+        level: 3
+        industry: Insurance
+        description: |
+          Setting of coverage terms, conditions, exclusions, and warranties.
+        children: []
+      - id: BC-2130.40.30
+        name: Underwriting Authority Enforcement
+        level: 3
+        industry: Insurance
+        description: |
+          Enforcement of underwriting authority limits and referral thresholds.
+        children: []
+      - id: BC-2130.40.40
+        name: Quote Issuance and Binding
+        level: 3
+        industry: Insurance
+        description: |
+          Issuance of binding quotes and confirmation of cover.
+        children: []
+  - id: BC-2130.50
+    name: Underwriting Portfolio Management
+    level: 2
+    industry: Insurance
+    description: |
+      Portfolio mix and limit monitoring, profitability analysis, and underwriting action planning.
+    children:
+      - id: BC-2130.50.10
+        name: Portfolio Mix and Limit Monitoring
+        level: 3
+        industry: Insurance
+        description: |
+          Monitoring of portfolio mix against appetite and concentration limits.
+        children: []
+      - id: BC-2130.50.20
+        name: Underwriting Profitability Analysis
+        level: 3
+        industry: Insurance
+        description: |
+          Analysis of underwriting profitability by segment, product, and producer.
+        children: []
+      - id: BC-2130.50.30
+        name: Underwriting Action Planning
+        level: 3
+        industry: Insurance
+        description: |
+          Planning of underwriting actions, remediation, and segment exits.
+        children: []
+  - id: BC-2130.60
+    name: "Underwriting Fraud & Misrepresentation Management"
+    level: 2
+    industry: Insurance
+    description: |
+      Application fraud screening, material misrepresentation investigation, and underwriting fraud reporting.
+    children:
+      - id: BC-2130.60.10
+        name: Application Fraud Screening
+        level: 3
+        industry: Insurance
+        description: |
+          Screening of insurance applications for fraud indicators.
+        children: []
+      - id: BC-2130.60.20
+        name: Material Misrepresentation Investigation
+        level: 3
+        industry: Insurance
+        description: |
+          Investigation of suspected material misrepresentation on applications.
+        children: []
+      - id: BC-2130.60.30
+        name: Underwriting Fraud Reporting
+        level: 3
+        industry: Insurance
+        description: |
+          Reporting of confirmed underwriting fraud to industry registries and regulators.
+        children: []

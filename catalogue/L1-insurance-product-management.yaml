@@ -1,0 +1,211 @@
+# Insurance Product Management
+id: BC-2100
+name: Insurance Product Management
+level: 1
+industry: Insurance
+description: |
+  Insurance product factory - coverage definitions, terms, rating tables,
+  bundles, and lifecycle for life, P&C, health, and specialty lines,
+  including the programme and coverholder product structures used in
+  delegated-authority markets.
+references:
+  - https://www.acord.org/standards/reference-architecture
+  - https://www.iaisweb.org/icp-online-tool/
+children:
+  - id: BC-2100.10
+    name: Insurance Product Catalogue Management
+    level: 2
+    industry: Insurance
+    description: |
+      Insurance product catalogue, master data, coverage and form library,
+      disclosure documentation, and catalogue publication.
+    children:
+      - id: BC-2100.10.10
+        name: Product Master Data Management
+        level: 3
+        industry: Insurance
+        description: |
+          Maintenance of insurance product master data and product hierarchies.
+        children: []
+      - id: BC-2100.10.20
+        name: Coverage and Form Library
+        level: 3
+        industry: Insurance
+        description: |
+          Maintenance of standardised coverage definitions, policy forms, and endorsement library.
+        children: []
+      - id: BC-2100.10.30
+        name: Product Disclosure Documentation
+        level: 3
+        industry: Insurance
+        description: |
+          Production and maintenance of product disclosure documents and key facts statements.
+        children: []
+      - id: BC-2100.10.40
+        name: Product Catalogue Publication
+        level: 3
+        industry: Insurance
+        description: |
+          Publication of the insurance product catalogue across channels and partners.
+        children: []
+  - id: BC-2100.20
+    name: "Product Rating & Pricing Configuration"
+    level: 2
+    industry: Insurance
+    description: |
+      Configuration of rating algorithms, factors, filed rates, discounts, and surcharges.
+    children:
+      - id: BC-2100.20.10
+        name: Rating Algorithm Configuration
+        level: 3
+        industry: Insurance
+        description: |
+          Configuration of rating algorithms and pricing models for insurance products.
+        children: []
+      - id: BC-2100.20.20
+        name: Rating Factor and Variable Maintenance
+        level: 3
+        industry: Insurance
+        description: |
+          Maintenance of rating factors, tables, and rating variables.
+        children: []
+      - id: BC-2100.20.30
+        name: Filed Rate Management
+        level: 3
+        industry: Insurance
+        description: |
+          Management of filed rates, deviations, and approvals across jurisdictions.
+        children: []
+      - id: BC-2100.20.40
+        name: Discount and Surcharge Configuration
+        level: 3
+        industry: Insurance
+        description: |
+          Configuration of premium discounts, surcharges, and credit programmes.
+        children: []
+  - id: BC-2100.30
+    name: "Product Eligibility & Underwriting Rule Configuration"
+    level: 2
+    industry: Insurance
+    description: |
+      Configuration of eligibility, underwriting guidelines, and referral and decline rules embedded in product.
+    children:
+      - id: BC-2100.30.10
+        name: Eligibility Rule Configuration
+        level: 3
+        industry: Insurance
+        description: |
+          Configuration of customer and risk eligibility rules per product.
+        children: []
+      - id: BC-2100.30.20
+        name: Underwriting Guideline Encoding
+        level: 3
+        industry: Insurance
+        description: |
+          Encoding of underwriting guidelines into product configuration.
+        children: []
+      - id: BC-2100.30.30
+        name: Referral and Decline Rule Configuration
+        level: 3
+        industry: Insurance
+        description: |
+          Configuration of automated referral and decline rules per product.
+        children: []
+  - id: BC-2100.40
+    name: Insurance Product Lifecycle Management
+    level: 2
+    industry: Insurance
+    description: |
+      New product introduction, regulatory filing, launch readiness, performance review, and withdrawal.
+    children:
+      - id: BC-2100.40.10
+        name: New Product Concept
+        level: 3
+        industry: Insurance
+        description: |
+          Concept definition for new insurance products and product committee governance.
+        children: []
+      - id: BC-2100.40.20
+        name: Product Filing and Approval
+        level: 3
+        industry: Insurance
+        description: |
+          Regulatory filing of insurance products and approval tracking across jurisdictions.
+        children: []
+      - id: BC-2100.40.30
+        name: Product Launch Readiness
+        level: 3
+        industry: Insurance
+        description: |
+          Operational and channel readiness for launch of insurance products.
+        children: []
+      - id: BC-2100.40.40
+        name: Product Performance Review
+        level: 3
+        industry: Insurance
+        description: |
+          Periodic performance and value-for-money reviews of insurance products.
+        children: []
+      - id: BC-2100.40.50
+        name: Product Withdrawal and Replacement
+        level: 3
+        industry: Insurance
+        description: |
+          Withdrawal, replacement, and policyholder migration to successor products.
+        children: []
+  - id: BC-2100.50
+    name: Insurance Product Bundling Management
+    level: 2
+    industry: Insurance
+    description: |
+      Multi-line bundles, package products, and bundle performance tracking.
+    children:
+      - id: BC-2100.50.10
+        name: Multi-Line Bundle Definition
+        level: 3
+        industry: Insurance
+        description: |
+          Definition of multi-line product bundles and packaging rules.
+        children: []
+      - id: BC-2100.50.20
+        name: Bundle Eligibility Rule Configuration
+        level: 3
+        industry: Insurance
+        description: |
+          Eligibility and qualification rules for insurance product bundles.
+        children: []
+      - id: BC-2100.50.30
+        name: Bundle Performance Tracking
+        level: 3
+        industry: Insurance
+        description: |
+          Tracking of bundle uptake, retention, and economics.
+        children: []
+  - id: BC-2100.60
+    name: "Specialty & Programme Product Management"
+    level: 2
+    industry: Insurance
+    description: |
+      Programme business definition, coverholder product authority, and specialty wording library.
+    children:
+      - id: BC-2100.60.10
+        name: Programme Definition
+        level: 3
+        industry: Insurance
+        description: |
+          Definition of programme business and binding-authority product structures.
+        children: []
+      - id: BC-2100.60.20
+        name: Coverholder Product Authority
+        level: 3
+        industry: Insurance
+        description: |
+          Definition of product scope and authority granted to coverholders.
+        children: []
+      - id: BC-2100.60.30
+        name: Specialty Wording and Endorsement Library
+        level: 3
+        industry: Insurance
+        description: |
+          Library of specialty wordings, manuscript endorsements, and market clauses.
+        children: []
