@@ -1,0 +1,168 @@
+# Freight Billing & Settlement Management
+id: BC-2530
+name: "Freight Billing & Settlement Management"
+level: 1
+industry: "Transportation & Logistics"
+description: |
+  Issuance of freight invoices, audit and payment of carrier invoices,
+  interline and pool settlement, cargo claims, and freight revenue accounting.
+children:
+  - id: BC-2530.10
+    name: Freight Invoicing Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Generation and distribution of freight, accessorial, and self-billing
+      invoices to customers.
+    in_scope:
+      - Freight invoice generation
+      - Customer self-billing reconciliation
+    out_of_scope:
+      - Generic accounts-receivable processes (BC-200)
+      - Customer pricing strategy (BC-440)
+    children:
+      - id: BC-2530.10.10
+        name: Freight Invoice Generation
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Generation of freight invoices from completed movements.
+        children: []
+      - id: BC-2530.10.20
+        name: Accessorial Invoice Generation
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Generation of accessorial and surcharge invoices.
+        children: []
+      - id: BC-2530.10.30
+        name: Customer Self-Billing Coordination
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Reconciliation of customer self-billing statements against shipments.
+        children: []
+  - id: BC-2530.20
+    name: Freight Audit and Payment Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Audit of carrier invoices and execution of carrier payments by shippers
+      and forwarders.
+    children:
+      - id: BC-2530.20.10
+        name: Carrier Invoice Audit
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Audit of carrier invoices against contracts, tariffs, and shipments.
+        children: []
+      - id: BC-2530.20.20
+        name: Pre-Audit and Post-Audit Reconciliation
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Pre-audit and post-audit reconciliation of carrier invoices.
+        children: []
+      - id: BC-2530.20.30
+        name: Carrier Payment Execution
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Execution of carrier payments and remittance reporting.
+        children: []
+  - id: BC-2530.30
+    name: Interline and Multi-Carrier Settlement Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Settlement of revenue and cost across interline partners, alliances, and
+      forwarder offices.
+    children:
+      - id: BC-2530.30.10
+        name: Interline Pro-Rata Calculation
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Calculation of interline revenue pro-rata across partners.
+        children: []
+      - id: BC-2530.30.20
+        name: IATA CASS Settlement Operations
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Operation of IATA CASS settlement for air cargo.
+        children: []
+      - id: BC-2530.30.30
+        name: Inter-Office Settlement
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Inter-office settlement of forwarder revenue and cost.
+        children: []
+  - id: BC-2530.40
+    name: Cargo Claims Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Intake, assessment, and settlement of cargo claims under transport
+      liability conventions.
+    children:
+      - id: BC-2530.40.10
+        name: Claim Intake and Acknowledgement
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Intake and acknowledgement of cargo loss and damage claims.
+        children: []
+      - id: BC-2530.40.20
+        name: Liability Assessment
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Assessment of carrier liability under Hague-Visby, Montreal, CMR,
+          and COTIF.
+        children: []
+      - id: BC-2530.40.30
+        name: Claim Settlement and Recovery
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Settlement of accepted claims and customer payment.
+        children: []
+      - id: BC-2530.40.40
+        name: Claim Recourse and Subrogation
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Recourse against underlying carriers and subrogation against insurers.
+        children: []
+  - id: BC-2530.50
+    name: Freight Revenue Accounting Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Recognition, tracking, and reporting of freight revenue including
+      unbilled and deferred positions.
+    children:
+      - id: BC-2530.50.10
+        name: Freight Revenue Recognition
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Recognition of freight revenue per applicable accounting standards.
+        children: []
+      - id: BC-2530.50.20
+        name: Unbilled Revenue Tracking
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Tracking of unbilled and accrued freight revenue.
+        children: []
+      - id: BC-2530.50.30
+        name: Freight Revenue Reporting
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Reporting of freight revenue to finance and commercial functions.
+        children: []

@@ -1,0 +1,161 @@
+# Transport Network Planning Management
+id: BC-2410
+name: Transport Network Planning Management
+level: 1
+industry: "Transportation & Logistics"
+description: |
+  Design of transport networks, lanes, hubs, schedules, and modal mix that
+  determine the carrier or 3PL service portfolio.
+children:
+  - id: BC-2410.10
+    name: Network Design Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Long-horizon design of hubs, gateways, lanes, and modal mix supporting
+      the service portfolio.
+    in_scope:
+      - Hub-and-spoke and point-to-point structure decisions
+      - Modal-mix design across road, rail, ocean, and air
+    out_of_scope:
+      - Demand-side network design by shippers (BC-520)
+    children:
+      - id: BC-2410.10.10
+        name: Hub and Gateway Design
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Selection and sizing of hubs, gateways, and consolidation points.
+        children: []
+      - id: BC-2410.10.20
+        name: Lane and Service Design
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Definition of origin-destination lanes and the services running on them.
+        children: []
+      - id: BC-2410.10.30
+        name: Modal Mix Design
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Choice of mode and intermodal mix for each lane and service tier.
+        children: []
+  - id: BC-2410.20
+    name: Schedule Planning Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Construction of master schedules, slots, and service windows for sailings,
+      flights, train paths, and truck departures.
+    children:
+      - id: BC-2410.20.10
+        name: Master Schedule Design
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Design of recurring sailing, flight, train, and truck schedules.
+        children: []
+      - id: BC-2410.20.20
+        name: Slot and Window Planning
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Allocation of berth, runway, and gate windows to scheduled services.
+        children: []
+      - id: BC-2410.20.30
+        name: Schedule Publication
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Publication of schedules to customers, partners, and booking channels.
+        children: []
+  - id: BC-2410.30
+    name: Service Pattern Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Definition of service products, transit-time tiers, and the catalogue of
+      services offered to customers.
+    children:
+      - id: BC-2410.30.10
+        name: Service-Level Definition
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Definition of express, standard, deferred, and intermodal service
+          tiers with their commitments.
+        children: []
+      - id: BC-2410.30.20
+        name: Transit-Time Engineering
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Engineering of end-to-end transit times across legs and connections.
+        children: []
+      - id: BC-2410.30.30
+        name: Service Catalogue Management
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Maintenance of the published catalogue of transport services.
+        children: []
+  - id: BC-2410.40
+    name: Capacity-Demand Balancing Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Reconciliation of planned capacity with forecast demand including empty
+      equipment repositioning.
+    children:
+      - id: BC-2410.40.10
+        name: Demand Forecast Integration
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Integration of customer and market demand forecasts into network plans.
+        children: []
+      - id: BC-2410.40.20
+        name: Capacity Plan Reconciliation
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Reconciliation of planned capacity against demand and constraints.
+        children: []
+      - id: BC-2410.40.30
+        name: Empty Equipment Repositioning Planning
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Planning of empty container, trailer, and ULD repositioning.
+        children: []
+  - id: BC-2410.50
+    name: Network Optimisation and Simulation
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Modelling, simulation, and benchmarking of network options and disruption
+      scenarios.
+    children:
+      - id: BC-2410.50.10
+        name: Network Modelling
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Construction of analytical models of the transport network.
+        children: []
+      - id: BC-2410.50.20
+        name: Scenario Simulation
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Simulation of demand, disruption, and design alternatives.
+        children: []
+      - id: BC-2410.50.30
+        name: Network Performance Benchmarking
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Benchmarking of network cost and service against competitors and prior
+          configurations.
+        children: []

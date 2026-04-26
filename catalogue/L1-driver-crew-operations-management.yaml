@@ -1,0 +1,164 @@
+# Driver & Crew Operations Management
+id: BC-2440
+name: "Driver & Crew Operations Management"
+level: 1
+industry: "Transportation & Logistics"
+description: |
+  Qualification, rostering, hours-of-service compliance, fatigue management,
+  and performance of drivers and operating crews across road, rail, ocean,
+  and air modes.
+children:
+  - id: BC-2440.10
+    name: Driver and Crew Qualification Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Maintenance of licences, endorsements, ratings, and medical fitness
+      records for drivers and crews.
+    in_scope:
+      - CDL, STCW, ATPL and equivalent professional qualifications
+      - Medical and psychological fitness records
+    out_of_scope:
+      - Generic HR records and payroll (BC-300)
+      - Air traffic controller competency (BC-1290)
+    children:
+      - id: BC-2440.10.10
+        name: Licence and Endorsement Tracking
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Tracking of professional licences, endorsements, and expiry dates.
+        children: []
+      - id: BC-2440.10.20
+        name: Mode-Specific Rating Management
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Management of mode-specific ratings such as STCW endorsements and
+          aircraft type ratings.
+        children: []
+      - id: BC-2440.10.30
+        name: Medical and Fitness Certification
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Periodic medical and fitness certifications for operating personnel.
+        children: []
+  - id: BC-2440.20
+    name: Rostering and Scheduling Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Construction of duty rosters, watch systems, and crew pairings against
+      service and regulatory constraints.
+    children:
+      - id: BC-2440.20.10
+        name: Duty Roster Planning
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Planning of duty rosters by base, depot, and service.
+        children: []
+      - id: BC-2440.20.20
+        name: Crew Pairing and Rotation
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Pairing and rotation of crews across multi-day or multi-leg trips.
+        children: []
+      - id: BC-2440.20.30
+        name: Standby and Reserve Management
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Standby, reserve, and on-call cover arrangements.
+        children: []
+  - id: BC-2440.30
+    name: Hours-of-Service and Fatigue Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Compliance with hours-of-service rules and operation of fatigue risk
+      management systems.
+    children:
+      - id: BC-2440.30.10
+        name: Hours-of-Service Compliance
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Recording and enforcement of HOS limits via tachograph, ELD, and
+          equivalents.
+        children: []
+      - id: BC-2440.30.20
+        name: Fatigue Risk Management
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Operation of fatigue risk management systems and bio-mathematical
+          modelling.
+        children: []
+      - id: BC-2440.30.30
+        name: Rest-Period Enforcement
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Enforcement of mandatory rest periods, layovers, and weekly limits.
+        children: []
+  - id: BC-2440.40
+    name: Driver and Crew Performance Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Performance scoring, coaching, and infraction handling for drivers and
+      crews.
+    children:
+      - id: BC-2440.40.10
+        name: Driver and Crew Performance Scoring
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Scoring of operating personnel against safety, fuel, and service KPIs.
+        children: []
+      - id: BC-2440.40.20
+        name: Coaching and Recurrent Training
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Coaching, refresher courses, and remedial training.
+        children: []
+      - id: BC-2440.40.30
+        name: Incident and Infraction Management
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Tracking and resolution of operating incidents and rule infractions.
+        children: []
+  - id: BC-2440.50
+    name: Crew Travel and Accommodation Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Crew travel, accommodation, and crew-change logistics for ocean, air,
+      and rail rotations.
+    children:
+      - id: BC-2440.50.10
+        name: Crew Travel Booking
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Booking of positioning travel for crew rotations.
+        children: []
+      - id: BC-2440.50.20
+        name: Crew Accommodation Management
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Hotel and accommodation management for layover and rotation.
+        children: []
+      - id: BC-2440.50.30
+        name: Crew Change Coordination
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Coordination of crew changes at ports, airports, and depots.
+        children: []

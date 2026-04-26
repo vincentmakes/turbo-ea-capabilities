@@ -1,0 +1,211 @@
+# Fleet & Mobile Asset Management
+id: BC-2430
+name: "Fleet & Mobile Asset Management"
+level: 1
+industry: "Transportation & Logistics"
+description: |
+  Provisioning, maintenance, utilisation, and disposal of vehicles, vessels,
+  aircraft, rolling stock, and pooled equipment such as containers, trailers,
+  and ULDs.
+children:
+  - id: BC-2430.10
+    name: Fleet Acquisition and Disposal Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Specification, acquisition, leasing, chartering, and end-of-life disposal
+      of mobile assets.
+    in_scope:
+      - Vehicle, vessel, aircraft, and rolling-stock procurement
+      - Wet, dry, and bareboat charter arrangements
+      - End-of-life and resale decisions
+    out_of_scope:
+      - Generic procurement of indirect goods (BC-500)
+      - Fixed asset accounting (BC-200)
+    children:
+      - id: BC-2430.10.10
+        name: Fleet Specification and Procurement
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Specification and procurement of new fleet assets.
+        children: []
+      - id: BC-2430.10.20
+        name: Lease and Charter Management
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Operating leases, finance leases, and charter agreements for fleet
+          assets.
+        children: []
+      - id: BC-2430.10.30
+        name: End-of-Life Disposal
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Resale, scrapping, and recycling of retired fleet assets.
+        children: []
+  - id: BC-2430.20
+    name: Fleet Maintenance Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Preventive, corrective, and heavy maintenance of vehicles, vessels,
+      aircraft, and rolling stock.
+    children:
+      - id: BC-2430.20.10
+        name: Preventive Maintenance Scheduling
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Time- and condition-based preventive maintenance scheduling.
+        children: []
+      - id: BC-2430.20.20
+        name: Corrective Maintenance Execution
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Repair of breakdowns and corrective work on mobile assets.
+        children: []
+      - id: BC-2430.20.30
+        name: Mandatory Inspection Compliance
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Compliance with statutory inspections and airworthiness or
+          seaworthiness directives.
+        children: []
+      - id: BC-2430.20.40
+        name: Heavy Maintenance and Overhaul
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Major overhaul, dry-docking, and heavy-check events.
+        children: []
+  - id: BC-2430.30
+    name: Equipment Pool Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Management of pooled containers, trailers, chassis, and ULDs across
+      depots, customers, and partners.
+    children:
+      - id: BC-2430.30.10
+        name: Container Pool Management
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Tracking and balancing of container fleets across depots.
+        children: []
+      - id: BC-2430.30.20
+        name: Trailer and Chassis Pool Management
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Pool management of trailers and chassis including grey-pool sharing.
+        children: []
+      - id: BC-2430.30.30
+        name: ULD Pool Management
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Tracking, repair, and balancing of ULDs across stations.
+        children: []
+      - id: BC-2430.30.40
+        name: Empty Equipment Repositioning Operations
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Execution of empty repositioning moves between surplus and deficit
+          depots.
+        children: []
+  - id: BC-2430.40
+    name: Fleet Telematics and Monitoring
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Continuous monitoring of asset position, condition, and operator
+      behaviour to inform maintenance and operations.
+    children:
+      - id: BC-2430.40.10
+        name: Fleet Telematics Operations
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Operation of telematics platforms ingesting position and engine data.
+        children: []
+      - id: BC-2430.40.20
+        name: Asset Condition Monitoring
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Condition monitoring of mobile assets including reefer and cargo
+          status.
+        children: []
+      - id: BC-2430.40.30
+        name: Driver Behaviour Monitoring
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Monitoring of driver behaviour signals such as harsh-braking and
+          speeding.
+        children: []
+  - id: BC-2430.50
+    name: Fleet Compliance and Certification Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Registration, certification, and emissions compliance of fleet assets
+      with regulators and class societies.
+    children:
+      - id: BC-2430.50.10
+        name: Vehicle, Vessel, and Aircraft Registration
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Initial and continuing registration with national and international
+          authorities.
+        children: []
+      - id: BC-2430.50.20
+        name: Statutory Inspection and Certification
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Class, airworthiness, and roadworthiness certificates and audits.
+        children: []
+      - id: BC-2430.50.30
+        name: Emissions and Environmental Compliance
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Compliance with vehicle, vessel, and aircraft emissions regimes.
+        children: []
+  - id: BC-2430.60
+    name: Fleet Utilisation and Performance Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Measurement of asset utilisation, turn-times, and total cost of ownership
+      to drive fleet decisions.
+    children:
+      - id: BC-2430.60.10
+        name: Asset Utilisation Reporting
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Reporting of utilisation by asset type, lane, and depot.
+        children: []
+      - id: BC-2430.60.20
+        name: Equipment Turn-Time Analysis
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Analysis of container, trailer, and ULD turn-times.
+        children: []
+      - id: BC-2430.60.30
+        name: Total-Cost-of-Ownership Analysis
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Total cost of ownership analysis across fleet types and vendors.
+        children: []

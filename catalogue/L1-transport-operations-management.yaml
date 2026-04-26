@@ -1,0 +1,204 @@
+# Transport Operations Management
+id: BC-2420
+name: Transport Operations Management
+level: 1
+industry: "Transportation & Logistics"
+description: |
+  Multimodal execution of transport movements from pickup through line-haul,
+  drayage, and last-mile delivery, including operational disruption response.
+children:
+  - id: BC-2420.10
+    name: Dispatch Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Assignment of loads, drivers, crews, and equipment to scheduled and ad-hoc
+      transport moves.
+    in_scope:
+      - Load-to-driver and load-to-vehicle assignment
+      - Equipment positioning instructions
+    out_of_scope:
+      - Driver rostering ahead of dispatch (BC-2440)
+      - Capacity allocation by contract (BC-2400.20)
+    children:
+      - id: BC-2420.10.10
+        name: Load Assignment
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Assignment of loads to vehicles, vessels, flights, or train paths.
+        children: []
+      - id: BC-2420.10.20
+        name: Driver and Crew Dispatch
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Dispatch of qualified drivers and crews against assigned loads.
+        children: []
+      - id: BC-2420.10.30
+        name: Equipment Dispatch
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Positioning of containers, trailers, and ULDs for assigned moves.
+        children: []
+  - id: BC-2420.20
+    name: Line-Haul Operations Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Long-distance movement of cargo between hubs, terminals, and gateways
+      across modes.
+    children:
+      - id: BC-2420.20.10
+        name: Road Line-Haul Operations
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Long-distance trucking between hubs and terminals.
+        children: []
+      - id: BC-2420.20.20
+        name: Rail Line-Haul Operations
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Operation of freight trains and block-train services.
+        children: []
+      - id: BC-2420.20.30
+        name: Ocean Line-Haul Operations
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Sailing operations between ports including transhipment legs.
+        children: []
+      - id: BC-2420.20.40
+        name: Air Line-Haul Operations
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Operation of cargo flights and freighter services between airports.
+        children: []
+  - id: BC-2420.30
+    name: Pickup and Drayage Operations Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      First-mile pickups from shippers and short-haul drayage between terminals,
+      yards, and inland points.
+    children:
+      - id: BC-2420.30.10
+        name: Pickup Operations
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Collection of cargo from shippers and consolidators.
+        children: []
+      - id: BC-2420.30.20
+        name: Container Drayage Operations
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Container drayage between port terminals, rail ramps, and inland
+          depots.
+        children: []
+      - id: BC-2420.30.30
+        name: Empty Equipment Movement
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Movement of empty containers, trailers, and ULDs between depots.
+        children: []
+  - id: BC-2420.40
+    name: Last-Mile Delivery Operations Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Final-leg delivery to consignees including routing, execution, and
+      proof-of-delivery.
+    children:
+      - id: BC-2420.40.10
+        name: Final-Mile Routing
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Routing and sequencing of delivery stops and time windows.
+        children: []
+      - id: BC-2420.40.20
+        name: Customer Delivery Execution
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          On-site delivery, signature capture, and handover to consignees.
+        children: []
+      - id: BC-2420.40.30
+        name: Proof of Delivery
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Capture and storage of proof-of-delivery records.
+        children: []
+      - id: BC-2420.40.40
+        name: Delivery Exception Handling
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Handling of refusals, missed deliveries, and re-attempts.
+        children: []
+  - id: BC-2420.50
+    name: Operational Disruption Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Detection of in-flight operational disruptions and orchestration of
+      recovery actions.
+    children:
+      - id: BC-2420.50.10
+        name: Operational Incident Detection
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Detection of breakdowns, weather, port delays, and other disruptions.
+        children: []
+      - id: BC-2420.50.20
+        name: Reroute and Recovery
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Rerouting of cargo and recovery of disrupted services.
+        children: []
+      - id: BC-2420.50.30
+        name: Service Restoration
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Restoration of normal schedules and customer commitments.
+        children: []
+  - id: BC-2420.60
+    name: Operational Performance Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Operational measurement of on-time performance, transit times, and
+      service-level adherence.
+    children:
+      - id: BC-2420.60.10
+        name: On-Time Performance Tracking
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Tracking of on-time pickup, departure, arrival, and delivery.
+        children: []
+      - id: BC-2420.60.20
+        name: Transit Time Monitoring
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Monitoring of actual vs committed transit times.
+        children: []
+      - id: BC-2420.60.30
+        name: Operational KPI Reporting
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Reporting of operational KPIs to internal and external stakeholders.
+        children: []

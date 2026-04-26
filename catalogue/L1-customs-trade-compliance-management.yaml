@@ -1,0 +1,188 @@
+# Customs & Trade Compliance Management
+id: BC-2480
+name: "Customs & Trade Compliance Management"
+level: 1
+industry: "Transportation & Logistics"
+description: |
+  Compliance with customs, sanctions, origin, and trusted-trader regimes for
+  cross-border movements, including duty and indirect-tax determination.
+children:
+  - id: BC-2480.10
+    name: Tariff Classification Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Determination and maintenance of HS classifications for traded goods.
+    in_scope:
+      - HS code determination per item and shipment
+      - Binding tariff information rulings
+    out_of_scope:
+      - Sanctions and party screening (BC-2480.40)
+    children:
+      - id: BC-2480.10.10
+        name: HS Code Determination
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Determination of HS codes per item and shipment.
+        children: []
+      - id: BC-2480.10.20
+        name: Classification Rulings Management
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Application for and management of binding tariff rulings.
+        children: []
+      - id: BC-2480.10.30
+        name: Classification Database Maintenance
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Maintenance of master classification databases for traded items.
+        children: []
+  - id: BC-2480.20
+    name: Customs Declaration Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Filing of import, export, and transit declarations with customs
+      authorities.
+    children:
+      - id: BC-2480.20.10
+        name: Import Declaration Filing
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Preparation and filing of import declarations.
+        children: []
+      - id: BC-2480.20.20
+        name: Export Declaration Filing
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Preparation and filing of export declarations.
+        children: []
+      - id: BC-2480.20.30
+        name: Transit Declaration Management
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Filing and discharge of transit declarations including TIR and NCTS.
+        children: []
+  - id: BC-2480.30
+    name: Origin and Free Trade Agreement Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Determination and certification of preferential origin under free-trade
+      agreements.
+    children:
+      - id: BC-2480.30.10
+        name: Origin Determination
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Determination of preferential and non-preferential origin.
+        children: []
+      - id: BC-2480.30.20
+        name: FTA Qualification Documentation
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Issuance and management of FTA certificates of origin.
+        children: []
+      - id: BC-2480.30.30
+        name: Origin Audit Trail
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Maintenance of supporting evidence for origin audits.
+        children: []
+  - id: BC-2480.40
+    name: Sanctions and Denied-Party Screening Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Screening of parties, vessels, and goods against sanctions and
+      denied-party lists.
+    children:
+      - id: BC-2480.40.10
+        name: Party and Vessel Screening
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Screening of customers, consignees, and conveyances against sanctions
+          lists.
+        children: []
+      - id: BC-2480.40.20
+        name: Sanctions List Management
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Maintenance of consolidated sanctions and denied-party lists.
+        children: []
+      - id: BC-2480.40.30
+        name: Hold and Release Processing
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Processing of screening hits, holds, and authorised releases.
+        children: []
+  - id: BC-2480.50
+    name: Trusted Trader Programme Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Application, maintenance, and audit of trusted-trader programmes such
+      as AEO and C-TPAT.
+    children:
+      - id: BC-2480.50.10
+        name: AEO Application and Maintenance
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          AEO application and ongoing programme maintenance.
+        children: []
+      - id: BC-2480.50.20
+        name: C-TPAT Programme Management
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          C-TPAT enrolment and minimum-security-criteria compliance.
+        children: []
+      - id: BC-2480.50.30
+        name: Customs Audit Coordination
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Coordination of customs and trusted-trader audits.
+        children: []
+  - id: BC-2480.60
+    name: Duty and Indirect Tax Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Determination, payment, and recovery of duties, indirect taxes, and
+      drawbacks on cross-border movements.
+    children:
+      - id: BC-2480.60.10
+        name: Duty Calculation
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Calculation of duties payable on imports and exports.
+        children: []
+      - id: BC-2480.60.20
+        name: Indirect Tax Determination
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Determination of VAT, GST, and excise on cross-border flows.
+        children: []
+      - id: BC-2480.60.30
+        name: Duty Drawback and Refund
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Recovery of duties through drawback, suspension, and refund regimes.
+        children: []
