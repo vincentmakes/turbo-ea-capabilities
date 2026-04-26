@@ -699,8 +699,8 @@ function MultiSelect({ label, options, selected, onChange }: MultiSelectProps) {
       >
         <span class="filter-label">{label}</span>
         <span class="multi-select-summary">{summary}</span>
-        <span class="multi-select-caret" aria-hidden="true">
-          ▾
+        <span class="material-symbols-outlined multi-select-caret" aria-hidden="true">
+          expand_more
         </span>
       </button>
       {open && (
