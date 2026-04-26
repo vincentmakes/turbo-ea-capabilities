@@ -1080,6 +1080,17 @@ function DetailModal({
     cursor = a.parent_id;
   }
 
+  // The L1 root of the branch — used to locate the source YAML on GitHub.
+  // Each L1 has its own catalogue/L1-<slug>.yaml file containing the whole
+  // subtree, so L1/L2/L3 all link to the same file.
+  const l1 = ancestors[0] ?? node;
+  const l1Slug = l1.name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+  const githubYamlUrl =
+    `https://github.com/vincentmakes/turbo-ea-capabilities/blob/main/catalogue/L1-${l1Slug}.yaml`;
+
   const directChildren = byParent.get(node.id) ?? [];
 
   // Count of all descendants (direct + nested) for the section header.
@@ -1224,12 +1235,35 @@ function DetailModal({
         </div>
 
         <footer class="detail-modal-footer">
-          <a class="btn" href={`/capability/${encodeURIComponent(node.id)}`}>
-            Open detail page
+          <a
+            class="btn"
+            href={githubYamlUrl}
+            target="_blank"
+            rel="noopener"
+          >
+            View on GitHub
           </a>
-          <a class="btn btn-ghost" href={`/api/capability/${node.id}.json`}>
-            Raw JSON
-          </a>
+          <button
+            type="button"
+            class="btn"
+            onClick={() => {
+              const rows: FlatCap[] = [node];
+              const stack = [...directChildren];
+              while (stack.length > 0) {
+                const c = stack.pop()!;
+                rows.push(c);
+                for (const k of byParent.get(c.id) ?? []) stack.push(k);
+              }
+              rows.sort((a, b) => compareIds(a.id, b.id));
+              download(
+                `${node.id}-subtree-${rows.length}.csv`,
+                toCsv(rows),
+                "text/csv"
+              );
+            }}
+          >
+            Export CSV ({descendantCount + 1})
+          </button>
         </footer>
       </aside>
     </div>
