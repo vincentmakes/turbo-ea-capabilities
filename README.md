@@ -78,7 +78,7 @@ No additional configuration is needed.
 
 ### Scenario 1 — Generate a complete L1 layer for a new industry *(generic — preferred for greenfield)*
 
-Stand up a whole industry's capability layer in one go. **You name only the industry** — the skill proposes the full L1 set, anchored to the industry's reference framework (BIAN, ICH, ISA-95, ICAO, ACORD, eTOM, …).
+Stand up a whole industry's capability layer in one go. **You name only the industry** — the skill proposes the full L1 set, anchored to the industry's reference framework (BIAN, ICH, ISA-95, ICAO, ACORD, eTOM, …). If the industry's frameworks aren't yet documented in the governance doc, the skill researches them and **adds them to §9.8 in the same flow** so future work has a stable anchor.
 
 ```
 /generate-capability --industry Insurance
@@ -87,12 +87,13 @@ Stand up a whole industry's capability layer in one go. **You name only the indu
 The skill will:
 
 1. Read the governance model, schema, and any existing L1s in the closest industries for naming/depth tone.
-2. Propose a **complete L1 list** for the industry (typically 8–14 L1s — matching the existing distribution: Banking 11, Pharma 10, Defense 8, ATC 7) with one-line descriptions. **You don't name them — the skill does.**
-3. Skip L1s that already exist as Cross-Industry capabilities (Financial, HR, IT, Procurement, etc.).
-4. After you approve the L1 list, draft 5–9 L2s + 3–7 L3s per L2 for every L1, in one batched proposal.
-5. Allocate sparse `BC-…` IDs automatically (a free hundreds-block per industry) and show the assignment table as a single confirmation.
-6. Write each `catalogue/L1-<kebab-case-name>.yaml` with the full L1→L2→L3 tree inline, and register them all in `catalogue/_index.yaml`.
-7. Run `npm run lint && npm run build:api`.
+2. **Audit `business-capability-governance-model.md` §9.8** for the target industry's reference frameworks. If the industry is missing or only listed under "Other industry anchors not yet exercised", research the canonical standards (capability/process anchor, regulatory regime, quality/safety, reporting, data interchange) and propose them. Examples — Insurance: ACORD + Solvency II + IFRS 17 + ISO 31000 + IAIS ICPs; Mining: ICMM + JORC/SAMREC + GISTM + ISO 14001/45001; Telco: eTOM + TM Forum SID + 3GPP + ETSI.
+3. Propose a **complete L1 list** for the industry (typically 8–14 L1s — matching the existing distribution: Banking 11, Pharma 10, Defense 8, ATC 7) with one-line descriptions. **You don't name them — the skill does.**
+4. Skip L1s that already exist as Cross-Industry capabilities (Financial, HR, IT, Procurement, etc.).
+5. Show the §9.8 update + the L1 list + the proposed BC-id allocations together as **one combined approval**.
+6. After approval, edit `business-capability-governance-model.md` §9.8 (promote the industry to its own subsection or add it from scratch), then draft 5–9 L2s + 3–7 L3s per L2 for every L1.
+7. Write each `catalogue/L1-<kebab-case-name>.yaml` with the full L1→L2→L3 tree inline, citing the new §9.8 entries in `references`, and register them all in `catalogue/_index.yaml`.
+8. Run `npm run lint && npm run build:api`.
 
 ### Scenario 2 — Create one new L1
 

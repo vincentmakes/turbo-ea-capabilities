@@ -28,7 +28,7 @@ If a name is ambiguous (substring match against multiple L1s, or a typo), show t
 
 ## Step 1 — Establish context
 
-1. Read **`business-capability-governance-model.md`** §3–§7 (levels, decomposition, naming, identifiers, metadata) and §9.4 (lint rules).
+1. Read **`business-capability-governance-model.md`** §3–§7 (levels, decomposition, naming, identifiers, metadata), §9.4 (lint rules), and §9.8 (reference frameworks — you will both *consult* and possibly *update* this section).
 2. Read **`schema/capability.schema.json`** to confirm the exact YAML shape and required fields.
 3. Read **`catalogue/_index.yaml`** to see all registered L1s.
 4. Identify the target industry. Read **2–3 peer L1s in the same industry** to absorb the local naming style, depth, and description tone. Examples:
@@ -38,6 +38,64 @@ If a name is ambiguous (substring match against multiple L1s, or a typo), show t
    - ATC → `L1-air-traffic-control-operations-management.yaml`
    - Defense → `L1-mission-management.yaml`, `L1-weapon-systems-management.yaml`
    - Cross-Industry → `L1-financial-management.yaml`, `L1-human-capital-management.yaml`
+
+## Step 1.5 — Industry framework audit (Industry mode and New L1 mode only)
+
+Before drafting any capability, audit `business-capability-governance-model.md` §9.8 for the target industry's reference frameworks. The catalogue's posture is to *anchor* L1/L2 to industry frameworks where they exist (§9.8 closing paragraph), so before you propose L1s you need to know what to anchor against — and if that anchor is missing from §9.8, you add it.
+
+Workflow:
+
+1. **Look up** the target industry in §9.8. Three outcomes:
+   - **Already a fully-fledged subsection** (e.g. *Banking & capital markets*, *Pharmaceuticals & life sciences*) — proceed; no §9.8 edit needed.
+   - **Listed only under "Other industry anchors not yet exercised in the catalogue but recommended for adoption"** (currently: eTOM for Telco, ACORD for Insurance) — you must promote it to its own subsection and expand the standards list before drafting L1s.
+   - **Absent entirely** — you must add a new subsection.
+2. **Identify the canonical standards** for the industry. Use the reference cheat sheet below as a starting point; supplement from the user's domain knowledge or web research as needed. Cover, where applicable:
+   - **Capability/process anchor** — the industry's process or service-domain framework (e.g. BIAN for Banking, eTOM for Telco, ACORD for Insurance, ICH/GxP for Pharma).
+   - **Regulatory regime** — the principal supervisory or licensing regime (e.g. Basel III, Solvency II, MiFID, FAA/EASA/ICAO, FDA/EMA).
+   - **Quality / safety standards** — ISO standards or industry-specific equivalents (e.g. ISO 9001/14001/45001, GMP, GxP, ISA-95, AS9100).
+   - **Reporting / disclosure standards** — financial and non-financial (e.g. IFRS 17 for Insurance, JORC/SAMREC for Mining, IPIECA for Oil & Gas).
+   - **Data / interchange standards** — messaging, taxonomy, master data (e.g. ISO 20022, FpML, SWIFT, ACORD XML, HL7/FHIR, ARTS).
+
+   Cheat sheet for industries **not yet exercised** in the current catalogue (use as a research starting point, not as gospel — verify currency before citing):
+
+   | Industry | Likely anchors |
+   | --- | --- |
+   | Insurance | ACORD (data), Solvency II / NAIC RBC (regulatory), IFRS 17 (reporting), ISO 31000 (risk), Lloyd's market practices, IAIS ICPs |
+   | Telecommunications | eTOM / Frameworx (TM Forum), TM Forum SID (information), 3GPP, ETSI, ITU-T E.800 (QoS), GSMA |
+   | Mining & Metals | ICMM Mining Principles, JORC / SAMREC / NI 43-101 / CRIRSCO (resource reporting), GISTM (tailings), GMG Group, ICMM Tailings |
+   | Oil & Gas | API standards, IOGP, IPIECA, OGCI, IADC (drilling), SPE petroleum reserves, ISO 29001 |
+   | Utilities (Power) | NERC CIP, IEC 61850, IEC 61968/61970 (CIM), CIGRE, ENTSO-E, FERC orders |
+   | Utilities (Water) | ISO 24500-series, AWWA, WHO Water Safety Plans, EU Drinking Water Directive |
+   | Healthcare Provider | HL7 / FHIR, SNOMED CT, ICD-10/11, IHE profiles, JCI accreditation, HITRUST |
+   | Retail & Consumer Goods | ARTS / NRF data model, GS1 (barcodes, GTIN), GDSN, EDI 850/810, PCI DSS |
+   | Logistics & Transportation | UN/CEFACT, GS1 Global Logistics, IATA Resolutions (air), IMO (maritime), AAR (rail) |
+   | Public Sector / Government | TOGAF Government Reference Model, FEAF, NIST SP 800-53, OMB Circulars, eGovernment Frameworks |
+   | Education | IMS Global, 1EdTech (LTI, QTI, OneRoster), CEDS (US), ISCED (UNESCO) |
+   | Real Estate | OSCRE, RESO Data Dictionary, IPMS (measurement), RICS standards |
+   | Agriculture | AgGateway, GS1 GLN/GTIN for food, GLOBALG.A.P., FAO codes, ISO 11783 (ISOBUS) |
+
+3. **Show the proposed §9.8 change** to the user as part of the same scope-confirmation step (Step 2). Format:
+
+   ```
+   §9.8 will be updated:
+   - Move "Insurance" from "Other industry anchors not yet exercised" into its own subsection
+   - New "Insurance" subsection contents:
+     - ACORD — insurance data standards
+     - Solvency II / NAIC RBC — capital regulation
+     - IFRS 17 — insurance contracts accounting
+     - ISO 31000 — risk management
+     - IAIS ICPs — international supervisory principles
+   ```
+
+   Get one combined approval (industry framework update + L1 proposal) — don't loop back for separate confirmation.
+
+4. **After the user approves**, edit `business-capability-governance-model.md` §9.8:
+   - If promoting from "not yet exercised", remove the line there.
+   - Insert the new subsection in alphabetical order among existing industry subsections, using the same `**<Industry>**` heading + bulleted list format as the existing subsections.
+   - Each bullet: `**<Standard>** — <one-line scope>.`
+5. **Reference these standards in the new L1 YAML's `references` field** (Step 5) — this is the whole point of capturing them in §9.8. The link goes both ways: §9.8 is the catalogue of frameworks; YAML `references` cite them.
+
+Skip this step in **Extend mode** — extending an existing L1 does not introduce a new industry. If the extension reveals a gap in §9.8 anyway, mention it to the user but treat fixing it as a separate follow-up rather than blocking the extension.
 
 ## Step 2 — Confirm scope with the user
 
@@ -89,25 +147,20 @@ For every node (especially L2 per §7), provide:
 - **`description`** — 1–3 sentences, outcome-oriented, business language. No "how", no vendors.
 - **`in_scope`** — short list of concrete outcomes covered (helps reviewers).
 - **`out_of_scope`** — short list of outcomes *not* covered (clarifies MECE boundaries).
-- **`references`** — where applicable, cite an industry framework. Cheat sheet:
+- **`references`** — where applicable, cite an industry framework. **The authoritative list is `business-capability-governance-model.md` §9.8** — read it at runtime and pick from there. If you discovered or added new frameworks during Step 1.5, cite those (you've already added them to §9.8). Citing a framework does **not** exempt a node from §5 (naming) or §4 (decomposition).
 
-  | Industry | Anchors |
+  Quick orientation (refer to §9.8 for the full list and any new entries you've added):
+
+  | Industry | Anchors documented in §9.8 |
   | --- | --- |
-  | Cross-Industry — process | APQC PCF, TOGAF, ITIL, TBM |
-  | Cross-Industry — data | DAMA-DMBOK |
-  | Cross-Industry — risk/security | NIST CSF, ISO 27001, ISO 22301 |
-  | Cross-Industry — quality/HSE | ISO 9001, ISO 14001, ISO 45001, ISO 55000 |
-  | Cross-Industry — sustainability | GHG Protocol, TCFD, ESRS/CSRD, IFRS S1-S2, GRI |
-  | Manufacturing & Industrial | ISA-95, RCM, FMEA, FTA, Lean/Six Sigma |
-  | Engineering Services | AACE cost classes, ISO 19650 (BIM), IEC 61511, HAZOP/HAZID |
+  | Cross-Industry — process | APQC PCF, TOGAF, ITIL, TBM, DAMA-DMBOK |
+  | Cross-Industry — risk/quality/sustainability | NIST CSF, ISO 27001/22301/9001/14001/45001/55000, GHG Protocol, TCFD, ESRS/CSRD, IFRS S1-S2, GRI |
+  | Manufacturing & Engineering Services | ISA-95, RCM, FMEA, FTA, Lean/Six Sigma, AACE classes, ISO 19650, IEC 61511, HAZOP/HAZID |
   | Banking & Capital Markets | BIAN, Basel III, IFRS 9, ISO 20022, MiFID II/MiFIR, EMIR, FATF |
   | Pharmaceuticals & Life Sciences | ICH (E2/E6/E8/E9/Q1-Q12), GLP/GCP/GMP/GDP, GAMP 5, 21 CFR Part 11, CDISC |
   | Defense & Aerospace | DoD 5000, EIA-748, FAR/DFARS, DoDAF, MIL-HDBK-61/502, S1000D, ITAR/EAR, NISPOM/CMMC |
   | Air Traffic Control | ICAO Annexes 3/10/11/12/13/15/19, EUROCONTROL ATFCM/AIRAC, PBN, SWIM, AIXM, COSPAS-SARSAT |
-  | Insurance | ACORD |
-  | Telecommunications | eTOM |
-
-  Citing a framework does **not** exempt a node from §5 (naming) or §4 (decomposition).
+  | *Other industries* | Audit and add to §9.8 in Step 1.5 — see that step's research cheat sheet. |
 
 ## Step 6 — Write to the catalogue
 
@@ -178,6 +231,11 @@ If lint fails, fix the YAML — do **not** loosen the schema or lint rules. Comm
 - **Sort order** → siblings must be ascending by ID; `cap:add` handles this. If you hand-edited, re-sort.
 - **Unique slug** → `name` slug across L1 files must not collide with an existing L1.
 - **Index** → every L1 file must appear in `catalogue/_index.yaml`.
+
+Also confirm:
+
+- If Step 1.5 added a §9.8 entry, the new subsection is in alphabetical order, uses the existing format (`**<Standard>** — <one-line scope>.`), and is no longer listed under "Other industry anchors not yet exercised in the catalogue".
+- The new YAML's `references` field cites at least one anchor from the §9.8 entry you just added (otherwise the §9.8 update is dead weight).
 
 ## Step 8 — Hand off
 
