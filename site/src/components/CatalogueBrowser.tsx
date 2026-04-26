@@ -248,6 +248,136 @@ export default function CatalogueBrowser({ data, valueStreams }: Props) {
   };
   const collapseAll = () => setExpanded(new Set());
 
+  // Level-stepper ----------------------------------------------------------
+  // Nodes whose level is < maxLevel can have children; expanding one of them
+  // reveals its level+1 children. So the deepest meaningful "expansion level"
+  // is maxLevel - 1 (e.g. for L1/L2/L3 data, max stepper level is 2 = all L2
+  // expanded, showing L3).
+  const maxLevel = useMemo(() => {
+    let m = 1;
+    for (const c of data) if (c.level > m) m = c.level;
+    return m;
+  }, [data]);
+
+  /** Group expandable nodes (those with children) by their level. */
+  const expandablesByLevel = useMemo(() => {
+    const m = new Map<number, string[]>();
+    for (const c of data) {
+      if ((byParent.get(c.id) ?? []).length === 0) continue;
+      const list = m.get(c.level) ?? [];
+      list.push(c.id);
+      m.set(c.level, list);
+    }
+    return m;
+  }, [data, byParent]);
+
+  /** Deepest level L such that every expandable node with level <= L is open.
+   *  0 means nothing expanded; L1 expanded → 1; L1+L2 expanded → 2; etc. */
+  const currentLevel = useMemo(() => {
+    let depth = 0;
+    for (let lvl = 1; lvl <= maxLevel - 1; lvl++) {
+      const ids = expandablesByLevel.get(lvl) ?? [];
+      if (ids.length === 0) continue;
+      if (ids.every((id) => expanded.has(id))) depth = lvl;
+      else break;
+    }
+    return depth;
+  }, [expanded, expandablesByLevel, maxLevel]);
+
+  const expandOneLevel = () => {
+    const target = Math.min(currentLevel + 1, Math.max(maxLevel - 1, 0));
+    if (target === currentLevel) return;
+    setExpanded((prev) => {
+      const next = new Set(prev);
+      for (let lvl = 1; lvl <= target; lvl++) {
+        for (const id of expandablesByLevel.get(lvl) ?? []) next.add(id);
+      }
+      return next;
+    });
+  };
+
+  const collapseOneLevel = () => {
+    const target = Math.max(currentLevel - 1, 0);
+    if (target === currentLevel) return;
+    setExpanded(() => {
+      const next = new Set<string>();
+      for (let lvl = 1; lvl <= target; lvl++) {
+        for (const id of expandablesByLevel.get(lvl) ?? []) next.add(id);
+      }
+      return next;
+    });
+  };
+
+  const stepperMax = Math.max(maxLevel - 1, 0);
+
+  // Per-L1 stepper state ---------------------------------------------------
+  // For each L1 we precompute its expandable descendants grouped by level,
+  // so the L1 card's +/− pill can step that branch one level at a time.
+  const expandablesByLevelByL1 = useMemo(() => {
+    const out = new Map<string, Map<number, string[]>>();
+    const l1s = byParent.get(null) ?? [];
+    for (const l1 of l1s) {
+      const m = new Map<number, string[]>();
+      if ((byParent.get(l1.id) ?? []).length > 0) m.set(1, [l1.id]);
+      for (const dId of descendantsOf.get(l1.id) ?? []) {
+        if ((byParent.get(dId) ?? []).length === 0) continue;
+        const d = byId.get(dId);
+        if (!d) continue;
+        const list = m.get(d.level) ?? [];
+        list.push(dId);
+        m.set(d.level, list);
+      }
+      out.set(l1.id, m);
+    }
+    return out;
+  }, [byParent, byId, descendantsOf]);
+
+  /** Map of L1 id → its current branch expansion level (0 = collapsed). */
+  const l1CurrentLevels = useMemo(() => {
+    const out = new Map<string, number>();
+    for (const [l1Id, levels] of expandablesByLevelByL1.entries()) {
+      let depth = 0;
+      for (let lvl = 1; lvl <= maxLevel - 1; lvl++) {
+        const ids = levels.get(lvl) ?? [];
+        if (ids.length === 0) continue;
+        if (ids.every((id) => expanded.has(id))) depth = lvl;
+        else break;
+      }
+      out.set(l1Id, depth);
+    }
+    return out;
+  }, [expandablesByLevelByL1, expanded, maxLevel]);
+
+  const expandL1Branch = (l1Id: string) => {
+    const m = expandablesByLevelByL1.get(l1Id);
+    if (!m) return;
+    const cur = l1CurrentLevels.get(l1Id) ?? 0;
+    const target = Math.min(cur + 1, stepperMax);
+    if (target === cur) return;
+    setExpanded((prev) => {
+      const next = new Set(prev);
+      for (let lvl = 1; lvl <= target; lvl++) {
+        for (const id of m.get(lvl) ?? []) next.add(id);
+      }
+      return next;
+    });
+  };
+
+  const collapseL1Branch = (l1Id: string) => {
+    const m = expandablesByLevelByL1.get(l1Id);
+    if (!m) return;
+    const cur = l1CurrentLevels.get(l1Id) ?? 0;
+    const target = Math.max(cur - 1, 0);
+    if (target === cur) return;
+    setExpanded((prev) => {
+      const next = new Set(prev);
+      for (let lvl = target + 1; lvl <= stepperMax; lvl++) {
+        for (const id of m.get(lvl) ?? []) next.delete(id);
+      }
+      return next;
+    });
+  };
+
   const selectAllVisible = () => {
     setSelected((prev) => {
       const next = new Set(prev);
@@ -322,6 +452,34 @@ export default function CatalogueBrowser({ data, valueStreams }: Props) {
           )}
         </div>
         <div class="action-bar-buttons">
+          <div class="level-stepper" role="group" aria-label="Expand by level">
+            <button
+              type="button"
+              class="level-stepper-btn"
+              onClick={collapseOneLevel}
+              disabled={currentLevel <= 0}
+              aria-label="Collapse one level"
+              title="Collapse one level"
+            >
+              <span class="material-symbols-outlined" aria-hidden="true">remove</span>
+            </button>
+            <span class="level-stepper-label" aria-live="polite">
+              <span class="level-stepper-label-full">Level </span>
+              {currentLevel}
+              <span class="level-stepper-label-sep"> / </span>
+              {stepperMax}
+            </span>
+            <button
+              type="button"
+              class="level-stepper-btn"
+              onClick={expandOneLevel}
+              disabled={currentLevel >= stepperMax}
+              aria-label="Expand one level"
+              title="Expand one level"
+            >
+              <span class="material-symbols-outlined" aria-hidden="true">add</span>
+            </button>
+          </div>
           <button class="btn btn-ghost" type="button" onClick={expandAll}>
             Expand all
           </button>
@@ -374,18 +532,25 @@ export default function CatalogueBrowser({ data, valueStreams }: Props) {
               expanded={expanded}
               selected={selected}
               descendantsOf={descendantsOf}
+              branchLevel={l1CurrentLevels.get(r.id) ?? 0}
+              branchMax={stepperMax}
               onToggleExpand={toggleExpand}
               onToggleSelect={toggleSelect}
               onOpenDetail={setDetailId}
+              onExpandBranch={expandL1Branch}
+              onCollapseBranch={collapseL1Branch}
             />
           ))}
         </div>
       )}
 
       {detail && (
-        <DetailPanel
+        <DetailModal
           node={detail}
+          byId={byId}
+          byParent={byParent}
           valueStreams={valueStreams}
+          onOpen={setDetailId}
           onClose={() => setDetailId(null)}
         />
       )}
@@ -534,8 +699,8 @@ function MultiSelect({ label, options, selected, onChange }: MultiSelectProps) {
       >
         <span class="filter-label">{label}</span>
         <span class="multi-select-summary">{summary}</span>
-        <span class="multi-select-caret" aria-hidden="true">
-          ▾
+        <span class="material-symbols-outlined multi-select-caret" aria-hidden="true">
+          expand_more
         </span>
       </button>
       {open && (
@@ -575,9 +740,13 @@ interface L1CardProps {
   expanded: Set<string>;
   selected: Set<string>;
   descendantsOf: Map<string, string[]>;
+  branchLevel: number;
+  branchMax: number;
   onToggleExpand: (id: string) => void;
   onToggleSelect: (id: string) => void;
   onOpenDetail: (id: string) => void;
+  onExpandBranch: (id: string) => void;
+  onCollapseBranch: (id: string) => void;
 }
 
 function L1Card({
@@ -587,13 +756,19 @@ function L1Card({
   expanded,
   selected,
   descendantsOf,
+  branchLevel,
+  branchMax,
   onToggleExpand,
   onToggleSelect,
   onOpenDetail,
+  onExpandBranch,
+  onCollapseBranch,
 }: L1CardProps) {
   const kids = (byParent.get(node.id) ?? []).filter((c) => visible.has(c.id));
   const isOpen = expanded.has(node.id);
   const hasKids = kids.length > 0;
+  const canExpand = hasKids && branchLevel < branchMax;
+  const canCollapse = branchLevel > 0;
 
   const subtree = descendantsOf.get(node.id) ?? [];
   const totalForState = subtree.length + 1;
@@ -623,16 +798,35 @@ function L1Card({
           onChange={() => onToggleSelect(node.id)}
           aria-label={`Select ${node.id} ${node.name}`}
         />
-        <button
-          type="button"
-          class={`cap-chevron${hasKids ? "" : " is-empty"}`}
-          onClick={() => hasKids && onToggleExpand(node.id)}
-          aria-expanded={isOpen}
-          aria-label={hasKids ? (isOpen ? "Collapse" : "Expand") : ""}
-          tabIndex={hasKids ? 0 : -1}
+        <div
+          class={`l1-stepper${hasKids ? "" : " is-empty"}`}
+          role="group"
+          aria-label={`Expand branch by level (currently ${branchLevel} of ${branchMax})`}
         >
-          {hasKids ? (isOpen ? "▾" : "▸") : ""}
-        </button>
+          <button
+            type="button"
+            class="l1-stepper-btn"
+            onClick={() => canCollapse && onCollapseBranch(node.id)}
+            disabled={!canCollapse}
+            aria-label="Collapse this branch one level"
+            title="Collapse branch one level"
+            tabIndex={hasKids ? 0 : -1}
+          >
+            <span class="material-symbols-outlined" aria-hidden="true">remove</span>
+          </button>
+          <button
+            type="button"
+            class="l1-stepper-btn"
+            onClick={() => canExpand && onExpandBranch(node.id)}
+            disabled={!canExpand}
+            aria-label="Expand this branch one level"
+            title="Expand branch one level"
+            aria-expanded={isOpen}
+            tabIndex={hasKids ? 0 : -1}
+          >
+            <span class="material-symbols-outlined" aria-hidden="true">add</span>
+          </button>
+        </div>
         <button
           type="button"
           class="l1-name"
@@ -640,7 +834,7 @@ function L1Card({
         >
           {node.name}
         </button>
-        {hasKids && <span class="cap-count">{kids.length}</span>}
+        {hasKids && <span class="cap-count" title={`${kids.length} children`}>{kids.length}</span>}
       </header>
       {isOpen && hasKids && (
         <ul class="l2-list">
@@ -714,37 +908,72 @@ function ChildRow({
     }
   }, [checkState]);
 
+  const isL2 = depth === 1;
+
+  const toggle = (
+    <button
+      type="button"
+      class={`cap-chevron${hasKids ? "" : " is-empty"}${isOpen ? " is-open" : ""}`}
+      onClick={() => hasKids && onToggleExpand(node.id)}
+      aria-expanded={isOpen}
+      aria-label={hasKids ? (isOpen ? "Collapse" : "Expand") : ""}
+      tabIndex={hasKids ? 0 : -1}
+    >
+      {hasKids && (
+        <span class="material-symbols-outlined cap-chevron-icon" aria-hidden="true">
+          chevron_right
+        </span>
+      )}
+    </button>
+  );
+
+  const checkbox = (
+    <input
+      ref={checkboxRef}
+      type="checkbox"
+      class="l2-check"
+      checked={checkState === "checked"}
+      onChange={() => onToggleSelect(node.id)}
+      aria-label={`Select ${node.id} ${node.name}`}
+    />
+  );
+
   return (
     <li class={`l2-row${selfSelected ? " is-selected" : ""}`} data-depth={depth}>
-      <div class="l2-row-line">
-        <input
-          ref={checkboxRef}
-          type="checkbox"
-          class="l2-check"
-          checked={checkState === "checked"}
-          onChange={() => onToggleSelect(node.id)}
-          aria-label={`Select ${node.id} ${node.name}`}
-        />
-        <button
-          type="button"
-          class={`cap-chevron${hasKids ? "" : " is-empty"}`}
-          onClick={() => hasKids && onToggleExpand(node.id)}
-          aria-expanded={isOpen}
-          aria-label={hasKids ? (isOpen ? "Collapse" : "Expand") : ""}
-          tabIndex={hasKids ? 0 : -1}
-        >
-          {hasKids ? (isOpen ? "▾" : "▸") : ""}
-        </button>
-        <button
-          type="button"
-          class="l2-name"
-          onClick={() => onOpenDetail(node.id)}
-          title={node.description}
-        >
-          {node.name}
-        </button>
-        {node.deprecated && <span class="cap-deprecated-badge">Dep.</span>}
-      </div>
+      {isL2 ? (
+        <div class="l2-card">
+          {checkbox}
+          {toggle}
+          <button
+            type="button"
+            class="l2-card-name"
+            onClick={() => onOpenDetail(node.id)}
+            title={node.description}
+          >
+            {node.name}
+          </button>
+          {hasKids && (
+            <span class="l2-card-count" title={`${kids.length} L${node.level + 1} children`}>
+              {kids.length}
+            </span>
+          )}
+          {node.deprecated && <span class="cap-deprecated-badge">Dep.</span>}
+        </div>
+      ) : (
+        <div class="l2-row-line">
+          {checkbox}
+          {toggle}
+          <button
+            type="button"
+            class="l2-name"
+            onClick={() => onOpenDetail(node.id)}
+            title={node.description}
+          >
+            {node.name}
+          </button>
+          {node.deprecated && <span class="cap-deprecated-badge">Dep.</span>}
+        </div>
+      )}
       {isOpen && hasKids && (
         <ul class="l2-children">
           {kids.map((k) => (
@@ -769,26 +998,112 @@ function ChildRow({
 }
 
 // ---------------------------------------------------------------------------
-// DetailPanel — slide-in overlay on the right
+// ModalTreeNode — fully-expanded nested subtree inside the detail modal.
+// All levels are rendered up-front (no click-to-deeper) so users see the
+// whole branch with descriptions in one place.
 // ---------------------------------------------------------------------------
-interface DetailPanelProps {
+interface ModalTreeNodeProps {
   node: FlatCap;
+  byParent: Map<string | null, FlatCap[]>;
+}
+
+function ModalTreeNode({ node, byParent }: ModalTreeNodeProps) {
+  const kids = byParent.get(node.id) ?? [];
+  return (
+    <div class="modal-tree-node" data-level={node.level}>
+      <div class="modal-tree-card">
+        <div class="modal-tree-card-head">
+          <span class="cap-id">{node.id}</span>
+          <span class="cap-level">L{node.level}</span>
+          {node.deprecated && <span class="cap-deprecated-badge">Dep.</span>}
+          <span class="modal-tree-card-name">{node.name}</span>
+          {kids.length > 0 && (
+            <span class="cap-count" title={`${kids.length} L${node.level + 1} children`}>
+              {kids.length}
+            </span>
+          )}
+        </div>
+        {node.description && (
+          <p class="modal-tree-card-desc">{node.description}</p>
+        )}
+      </div>
+      {kids.length > 0 && (
+        <div class="modal-tree-children">
+          {kids.map((k) => (
+            <ModalTreeNode key={k.id} node={k} byParent={byParent} />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ---------------------------------------------------------------------------
+// DetailModal — wider card-based overlay (breadcrumb · hero · meta · subtree)
+// ---------------------------------------------------------------------------
+interface DetailModalProps {
+  node: FlatCap;
+  byId: Map<string, FlatCap>;
+  byParent: Map<string | null, FlatCap[]>;
   valueStreams: ValueStream[];
+  onOpen: (id: string) => void;
   onClose: () => void;
 }
 
-function DetailPanel({ node, valueStreams, onClose }: DetailPanelProps) {
+function DetailModal({
+  node,
+  byId,
+  byParent,
+  valueStreams,
+  onOpen,
+  onClose,
+}: DetailModalProps) {
   useEffect(() => {
     const onEsc = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
     };
     document.addEventListener("keydown", onEsc);
+    const prevOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     return () => {
       document.removeEventListener("keydown", onEsc);
-      document.body.style.overflow = "";
+      document.body.style.overflow = prevOverflow;
     };
   }, [onClose]);
+
+  const ancestors: FlatCap[] = [];
+  let cursor = node.parent_id;
+  while (cursor) {
+    const a = byId.get(cursor);
+    if (!a) break;
+    ancestors.unshift(a);
+    cursor = a.parent_id;
+  }
+
+  // The L1 root of the branch — used to locate the source YAML on GitHub.
+  // Each L1 has its own catalogue/L1-<slug>.yaml file containing the whole
+  // subtree, so L1/L2/L3 all link to the same file.
+  const l1 = ancestors[0] ?? node;
+  const l1Slug = l1.name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+  const githubYamlUrl =
+    `https://github.com/vincentmakes/turbo-ea-capabilities/blob/main/catalogue/L1-${l1Slug}.yaml`;
+
+  const directChildren = byParent.get(node.id) ?? [];
+
+  // Count of all descendants (direct + nested) for the section header.
+  const descendantCount = (() => {
+    let total = 0;
+    const stack = [...directChildren];
+    while (stack.length > 0) {
+      const c = stack.pop()!;
+      total++;
+      for (const k of byParent.get(c.id) ?? []) stack.push(k);
+    }
+    return total;
+  })();
 
   const inStreams: { stream: string; stage: ValueStreamStage }[] = [];
   for (const s of valueStreams) {
@@ -801,83 +1116,154 @@ function DetailPanel({ node, valueStreams, onClose }: DetailPanelProps) {
   const industries = splitIndustry(node.industry);
 
   return (
-    <div class="detail-panel-root">
-      <div class="detail-panel-backdrop" onClick={onClose} />
-      <aside class="detail-panel" role="dialog" aria-label={`${node.id} ${node.name}`}>
-        <header class="detail-panel-header">
-          <div class="detail-panel-meta">
-            <span class="cap-level">L{node.level}</span>
-            {node.deprecated && (
-              <span class="cap-deprecated-badge">Deprecated</span>
-            )}
-          </div>
+    <div class="detail-modal-root">
+      <div class="detail-modal-backdrop" onClick={onClose} />
+      <aside
+        class="detail-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-label={`${node.id} ${node.name}`}
+      >
+        <header class="detail-modal-header">
+          <nav class="detail-modal-breadcrumb" aria-label="Capability path">
+            <a class="detail-modal-crumb" href="/">Catalog</a>
+            {ancestors.map((a) => (
+              <span key={a.id} class="detail-modal-crumb-wrap">
+                <span class="detail-modal-crumb-sep" aria-hidden="true">/</span>
+                <button
+                  type="button"
+                  class="detail-modal-crumb"
+                  onClick={() => onOpen(a.id)}
+                >
+                  {a.name}
+                </button>
+              </span>
+            ))}
+            <span class="detail-modal-crumb-sep" aria-hidden="true">/</span>
+            <span class="detail-modal-crumb is-current" aria-current="page">{node.name}</span>
+          </nav>
           <button
             type="button"
-            class="detail-panel-close"
+            class="detail-modal-close"
             onClick={onClose}
             aria-label="Close"
           >
-            ×
+            <span class="material-symbols-outlined" aria-hidden="true">close</span>
           </button>
         </header>
-        <div class="detail-panel-body">
-          <h2 class="detail-panel-title">{node.name}</h2>
-          {industries.length > 0 && (
-            <div class="detail-panel-row">
-              <div class="meta-key">Industry</div>
-              <div class="meta-val">
-                {industries.map((i) => (
-                  <span key={i} class="cap-industry">
-                    {i}
-                  </span>
+
+        <div class="detail-modal-body">
+          <section class="detail-modal-hero">
+            <div class="detail-modal-hero-meta">
+              <span class="cap-id">{node.id}</span>
+              <span class="cap-level">L{node.level}</span>
+              {node.deprecated && <span class="cap-deprecated-badge">Deprecated</span>}
+            </div>
+            <h2 class="detail-modal-title">{node.name}</h2>
+            {node.deprecated && node.deprecation_reason && (
+              <div class="deprecation-banner">
+                <strong>Deprecated.</strong> {node.deprecation_reason}
+              </div>
+            )}
+            {node.description && (
+              <p class="detail-modal-desc">{node.description}</p>
+            )}
+          </section>
+
+          <section class="detail-meta-grid">
+            {industries.length > 0 && (
+              <div>
+                <div class="meta-key">Industry</div>
+                <div class="meta-val tag-list">
+                  {industries.map((i) => (
+                    <span key={i} class="cap-industry">{i}</span>
+                  ))}
+                </div>
+              </div>
+            )}
+            {node.aliases && node.aliases.length > 0 && (
+              <div>
+                <div class="meta-key">Aliases</div>
+                <div class="meta-val">{node.aliases.join(", ")}</div>
+              </div>
+            )}
+            {node.references && node.references.length > 0 && (
+              <div>
+                <div class="meta-key">References</div>
+                <div class="meta-val detail-modal-refs">
+                  {node.references.map((r) => (
+                    <a key={r} href={r} target="_blank" rel="noopener">{r}</a>
+                  ))}
+                </div>
+              </div>
+            )}
+            {inStreams.length > 0 && (
+              <div class="detail-modal-streams-cell">
+                <div class="meta-key">Value streams</div>
+                <ul class="meta-val detail-modal-streams">
+                  {inStreams.map(({ stream, stage }, idx) => (
+                    <li key={`${stream}-${stage.stage_order}-${idx}`}>
+                      <strong>{stream}</strong>
+                      {" · stage "}
+                      {stage.stage_order} ({stage.stage_name})
+                      {stage.industry_variant && stage.industry_variant !== "All" && (
+                        <> · {stage.industry_variant}</>
+                      )}
+                      {stage.notes && <em> — {stage.notes}</em>}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </section>
+
+          {directChildren.length > 0 && (
+            <section class="detail-modal-children">
+              <h3 class="detail-modal-section-title">
+                Subtree
+                <span class="detail-modal-section-count">
+                  {descendantCount} {descendantCount === 1 ? "descendant" : "descendants"}
+                </span>
+              </h3>
+              <div class="modal-tree">
+                {directChildren.map((c) => (
+                  <ModalTreeNode key={c.id} node={c} byParent={byParent} />
                 ))}
               </div>
-            </div>
-          )}
-          {node.description && (
-            <div class="detail-panel-row">
-              <div class="meta-key">Description</div>
-              <p class="meta-val detail-panel-desc">{node.description}</p>
-            </div>
-          )}
-          {node.aliases && node.aliases.length > 0 && (
-            <div class="detail-panel-row">
-              <div class="meta-key">Aliases</div>
-              <div class="meta-val">{node.aliases.join(", ")}</div>
-            </div>
-          )}
-          {inStreams.length > 0 && (
-            <div class="detail-panel-row">
-              <div class="meta-key">Value streams</div>
-              <ul class="meta-val detail-panel-streams">
-                {inStreams.map(({ stream, stage }, idx) => (
-                  <li key={`${stream}-${stage.stage_order}-${idx}`}>
-                    <strong>{stream}</strong>
-                    {" · stage "}
-                    {stage.stage_order} ({stage.stage_name})
-                    {stage.industry_variant && stage.industry_variant !== "All" && (
-                      <> · {stage.industry_variant}</>
-                    )}
-                    {stage.notes && <em> — {stage.notes}</em>}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-          {node.deprecated && node.deprecation_reason && (
-            <div class="detail-panel-row">
-              <div class="meta-key">Deprecation reason</div>
-              <p class="meta-val">{node.deprecation_reason}</p>
-            </div>
+            </section>
           )}
         </div>
-        <footer class="detail-panel-footer">
-          <a class="btn" href={`/capability/${encodeURIComponent(node.id)}`}>
-            Open detail page
+
+        <footer class="detail-modal-footer">
+          <a
+            class="btn"
+            href={githubYamlUrl}
+            target="_blank"
+            rel="noopener"
+          >
+            View on GitHub
           </a>
-          <a class="btn btn-ghost" href={`/api/capability/${node.id}.json`}>
-            Raw JSON
-          </a>
+          <button
+            type="button"
+            class="btn"
+            onClick={() => {
+              const rows: FlatCap[] = [node];
+              const stack = [...directChildren];
+              while (stack.length > 0) {
+                const c = stack.pop()!;
+                rows.push(c);
+                for (const k of byParent.get(c.id) ?? []) stack.push(k);
+              }
+              rows.sort((a, b) => compareIds(a.id, b.id));
+              download(
+                `${node.id}-subtree-${rows.length}.csv`,
+                toCsv(rows),
+                "text/csv"
+              );
+            }}
+          >
+            Export CSV ({descendantCount + 1})
+          </button>
         </footer>
       </aside>
     </div>
