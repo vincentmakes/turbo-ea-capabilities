@@ -1,16 +1,30 @@
 ---
 name: generate-capability
-description: Draft a new L1 (or extend an existing L1) with MECE L2/L3 children for a target industry. Use when the user asks to add capabilities, fill out a sparse industry, propose a new L1, or extend a branch. Drives the existing scripts/cli/add.ts so IDs and sort order match the linter.
+description: Draft governance-conformant L1/L2/L3 capabilities for a target industry. Three modes — Industry (user names ONLY an industry; skill proposes the full L1 set), New L1 (user names one new L1), Extend (user names an existing L1 to add children to). The user always speaks in NAMES; the skill resolves names to IDs internally and drives scripts/cli/add.ts.
 ---
 
 # generate-capability
 
-Generate governance-conformant Business Capabilities for new or existing industries. Two modes:
+Generate governance-conformant Business Capabilities. Three modes:
 
-- **Extend mode** — user gives an existing L1 ID (e.g. `BC-1010`) or L2 ID; you add new children under it.
-- **New L1 mode** — user names a new top-level capability (e.g. "Insurance Underwriting Management"); you create a fresh `L1-*.yaml` and register it in `_index.yaml`.
+- **Industry mode** *(generic — preferred for greenfield)* — user names *only* an industry (e.g. *"Insurance"*, *"Telecommunications"*, *"Mining"*) and asks for a complete capability layer. You propose the full **set of L1s** for that industry, then L2s and L3s under each, anchored to the relevant industry framework (BIAN, ICH, ISA-95, ICAO, ACORD, eTOM, …). The user does *not* name individual L1s.
+- **New L1 mode** — user names a single new top-level capability (e.g. *"Insurance Underwriting Management"*); you create one fresh `L1-*.yaml` and register it.
+- **Extend mode** — user names an existing L1 (e.g. *"Manufacturing Operations Management"*); you add new L2/L3 children under it.
+
+**The user surface is names, not IDs.** Never ask the user to type or remember an `BC-…` identifier. Resolve names to IDs yourself (see *Resolving names to IDs* below) and only show IDs back to the user as confirmation.
 
 You **must** comply with `business-capability-governance-model.md` Part A (definition, levels, decomposition, naming, identifiers, metadata) and Part B (lint rules). Read those sections at runtime; do not paraphrase from memory.
+
+## Resolving names to IDs
+
+The user references capabilities by name. Internally you need IDs to drive `cap:add --parent <ID>` and to write YAML. Resolve as follows:
+
+1. **For an L1 name** — read `catalogue/_index.yaml`, then read each listed `L1-*.yaml` and match against its top-level `name:` field. L1 names are globally unique (lint enforces L1 slug uniqueness). Exact match wins; if nothing matches exactly, list the closest 3–5 candidates and ask the user to pick.
+2. **For an L2 name under a confirmed L1** — read that L1 file, walk `children:`, match by `name:`. L2 names are unique within their parent.
+3. **For an L3 name** — same recursion under the confirmed L2.
+4. **Show the resolved ID once** as confirmation (e.g. *"Resolved 'Manufacturing Operations Management' → BC-1010 — confirm?"*) but never require the user to type it.
+
+If a name is ambiguous (substring match against multiple L1s, or a typo), show the candidates and ask — do not guess.
 
 ## Step 1 — Establish context
 
@@ -27,28 +41,46 @@ You **must** comply with `business-capability-governance-model.md` Part A (defin
 
 ## Step 2 — Confirm scope with the user
 
-Ask the user to confirm before drafting:
+Detect the mode from the user's request and confirm before drafting:
 
-1. **Mode** — Extend an existing L1/L2 (give the parent ID) or create a new L1?
-2. **Target name** — proposed L1/L2 name (apply naming rules from §5: noun phrase, Title Case, 2–5 words, no verbs/vendors/value-stream names).
-3. **Industry tag** — `Cross-Industry`, single industry, or `;`-separated list. New industry? Add it consistently with peers.
-4. **Depth** — how far to decompose (L2 only, L2+L3, etc.). Default: L2 with L3 children where governance value is clear.
+1. **Industry mode** — user mentions only an industry (e.g. *"Generate capabilities for Insurance"*, *"Build out Telecommunications"*). Confirm: industry name, expected L1 count (default 8–14 per industry — match the existing distribution: Banking has 11, Pharma 10, Defense 8, ATC 7), depth (L1+L2+L3 vs L1+L2 only). Do **not** ask the user to name the L1s — propose them yourself in Step 3.
+2. **New L1 mode** — user names exactly one new L1. Confirm name passes §5 naming tests, industry tag, depth.
+3. **Extend mode** — user names an existing L1. Resolve via *Resolving names to IDs*. Ask which L2 to extend (list existing L2 children by name) or whether to add new L2s.
 
-## Step 3 — Draft and review L2s
+In all three modes, never ask the user to type or pick a `BC-…` ID.
 
-- Aim for **5–9 L2 children** under an L1 (per §3 typical counts adapted to L1 size).
+## Step 3 — Draft the structure
+
+### Industry mode — propose the full L1 set first
+
+Before any L2/L3 work, draft the **complete L1 list** for the industry. Anchor on the industry's reference framework (see the cheat sheet in Step 5) but re-express every name in conformant noun-phrase form. Examples to illustrate the shape — not a prescription:
+
+- **Insurance** (anchor: ACORD): *Insurance Product Management, Underwriting Management, Policy Administration Management, Claims Management, Reinsurance Management, Insurance Distribution Management, Actuarial Management, Insurance Risk Management, Insurance Customer Management*.
+- **Telecommunications** (anchor: eTOM): *Network Operations Management, Service Assurance Management, Service Fulfilment Management, Subscriber Management, Telecom Product Catalogue Management, Telecom Billing Management, Spectrum & Frequency Management, Network Capacity Management, Roaming & Interconnect Management*.
+- **Mining**: *Mineral Resource Management, Mine Planning Management, Mine Operations Management, Mineral Processing Management, Mine Safety Management, Mine Closure & Rehabilitation Management, Tailings Management*.
+
+Apply MECE at the L1 level too: each L1 must be a distinct *ability* the enterprise needs. Do **not** invent L1s that duplicate the Cross-Industry catalogue (Financial Management, HR, IT, Procurement, etc. already exist) — only propose L1s that are genuinely industry-specific or genuinely shared across a defined subset.
+
+Show the proposed L1 list with one-line descriptions and proposed industry tags. **One review checkpoint here**, not per-L1.
+
+### Then for every L1 — draft L2s, then L3s
+
+- Aim for **5–9 L2 children** under each L1 (per §3 typical counts adapted to L1 size).
 - Each L2 must be MECE relative to its parent (§4.1).
 - Name = noun phrase. Run the three §5.4 tests in your head: noun test, independence test, stability test.
-- Show the user the L2 list with one-line descriptions before drafting L3s. Iterate until confirmed.
+- Then draft 3–7 L3s per L2.
+- In Industry mode, present the **full L1 → L2 → L3 tree** in one batched proposal for review (one approval, not per-L1). In New L1 / Extend mode, the smaller scope is shown in one go too.
 
-## Step 4 — Draft L3s (when needed)
+## Step 4 — Decomposition rules reminder
+
+When drafting L3s (in any mode):
 
 - Aim for **3–7 L3 children per L2**, sparser is fine — symmetry is not required (§4.5).
 - Stop decomposing when (§4.4):
   - the next breakdown would describe *how* (process / activity);
   - it duplicates another branch;
   - no distinct owner / application footprint / decision lives at that level.
-- Show the user the full L1 → L2 → L3 tree before writing files.
+- Maximum depth is **L4** (§4.6) — almost always L3 is enough.
 
 ## Step 5 — Enrich metadata
 
@@ -81,21 +113,26 @@ For every node (especially L2 per §7), provide:
 
 ### Extend mode (preferred — reuses existing tooling)
 
-For each new node, drive the helper CLI so IDs and sort order are computed by the existing TypeScript code (`scripts/cli/add.ts`):
+You already resolved the parent name to an ID in Step 2. Drive the helper CLI for each new node so IDs and sort order are computed by the existing TypeScript code (`scripts/cli/add.ts`):
 
 ```bash
+# parent ID was resolved from the user's name "Manufacturing Operations Management"
 npm run cap:add -- --parent BC-1010 --name "Plant Energy Management"
+
+# resolved from "Manufacturing Operations Management" / "Plant Energy Management"
 npm run cap:add -- --parent BC-1010.80 --name "Energy Demand Forecasting"
 ```
 
 After each `cap:add`, look up the new node's ID in the YAML and patch `description`, `industry` (if overriding parent), `in_scope`, `out_of_scope` via direct YAML edits — only on the freshly created node, never reformat the rest of the file.
 
-### New L1 mode (file write — there is no `cap:add` for L1)
+When reporting progress to the user, refer to nodes by name. Show the assigned ID once at the end as a reference (e.g. *"Added 'Plant Energy Management' as BC-1010.80"*) so they have something to cite in a PR description.
 
-1. Choose the next available L1 ID. Inspect existing IDs in `catalogue/` (BC-100, BC-200, …). Use a sparse value (e.g. next free hundreds-block) and confirm with the user.
-2. Write `catalogue/L1-<kebab-case-name>.yaml` following the shape of a peer L1 file. Required top-level fields per `schema/capability.schema.json`: `id`, `name`, `level: 1`, `children`. Recommended: `industry`, `description`.
-3. Register the new file in `catalogue/_index.yaml` (append under `files:`). Lint enforces this.
-4. Add L2/L3 children either inline in the new file or by running `cap:add` against the new L1 ID.
+### New L1 mode and Industry mode (file write — there is no `cap:add` for L1)
+
+1. Choose sparse L1 IDs. Inspect existing IDs in `catalogue/` (BC-100, BC-200, …, the industry blocks like BC-1000-1099 manufacturing, BC-1300-1399 banking, etc.). Pick a free hundreds-block for the industry; in Industry mode allocate sequential sparse IDs within that block (e.g. BC-2100, BC-2110, BC-2120, …). Show the assignment table once as a confirmation alongside names — not as separate per-L1 questions.
+2. For each new L1, write `catalogue/L1-<kebab-case-name>.yaml` with the full L1 → L2 → L3 tree inline. Required top-level fields per `schema/capability.schema.json`: `id`, `name`, `level: 1`, `children`. Recommended: `industry`, `description`.
+3. Register every new file in `catalogue/_index.yaml` (append under `files:`). Lint enforces this.
+4. In Industry mode, batch-write all the new L1 files in one pass before running lint, so a single lint run validates the whole industry.
 
 Sample shape (do not commit verbatim — adapt names, IDs, descriptions):
 
@@ -144,9 +181,10 @@ If lint fails, fix the YAML — do **not** loosen the schema or lint rules. Comm
 
 ## Step 8 — Hand off
 
-After lint passes, suggest the next step:
+After lint passes, suggest the next step using *names* (not IDs):
 
-> "L1 / L2 / L3 in place. Run `/map-value-streams BC-<new-id>` to wire this capability into value streams in `catalogue/_value-streams.yaml`."
+- **Industry mode** — *"<N> L1s, <M> L2s, <K> L3s in place for <Industry>. Run `/map-value-streams --industry \"<Industry>\"` to wire all of them into value streams autonomously."*
+- **New L1 / Extend mode** — *"L1 / L2 / L3 in place. Run `/map-value-streams \"<L1 name>\"` to wire this capability into value streams."*
 
 ## Anti-patterns to refuse
 
