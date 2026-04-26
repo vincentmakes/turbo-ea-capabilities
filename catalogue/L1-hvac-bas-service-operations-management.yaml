@@ -1,0 +1,237 @@
+# HVAC & BAS Service Operations Management
+id: BC-2060
+name: "HVAC & BAS Service Operations Management"
+level: 1
+industry: "HVAC & Building Automation Systems"
+description: |
+  OEM-led and contractor-led service on installed HVAC equipment and BAS — installed-base
+  configuration management, preventive and reactive maintenance, BAS reprogramming and
+  software service, equipment retrofit and modernisation, performance-based service
+  contracts, and remote connected service.
+in_scope:
+  - Installed-base equipment and BAS configuration registry
+  - Preventive maintenance contract delivery and reactive/emergency service
+  - BAS reprogramming, firmware upgrades, and backup/restore operations
+  - Retrofit and modernisation execution on installed HVAC equipment
+  - Performance-based and outcome-based service contracts
+  - Remote connected service and diagnostic-centre operations
+  - Service-level agreement and customer satisfaction management
+out_of_scope:
+  - Cross-industry generic field service (BC-1050) and spare parts (BC-1060)
+  - Project commissioning and Cx delivery (BC-2050)
+  - Refrigerant procurement and reporting (BC-2040)
+  - HVAC equipment product engineering (BC-2000)
+children:
+  - id: BC-2060.10
+    name: Installed Base Configuration Management
+    level: 2
+    description: |
+      Maintenance of as-installed and as-maintained configuration data for the global installed base.
+    children:
+      - id: BC-2060.10.10
+        name: Equipment Asset Registry
+        level: 3
+        description: Registry of installed HVAC equipment by serial number, site, and customer.
+        children: []
+      - id: BC-2060.10.20
+        name: BAS Configuration Registry
+        level: 3
+        description: Registry of BAS configurations, controllers, points, and sequences in service.
+        children: []
+      - id: BC-2060.10.30
+        name: As-Maintained Records
+        level: 3
+        description: Records of as-maintained configuration following each service event.
+        children: []
+      - id: BC-2060.10.40
+        name: Installed Base Modification Records
+        level: 3
+        description: Records of post-handover modifications to installed equipment and BAS.
+        children: []
+  - id: BC-2060.20
+    name: Preventive Maintenance Service Operations
+    level: 2
+    description: |
+      Delivery of scheduled preventive maintenance under contract.
+    children:
+      - id: BC-2060.20.10
+        name: Maintenance Contract Execution
+        level: 3
+        description: Execution of preventive maintenance against contracted scope.
+        children: []
+      - id: BC-2060.20.20
+        name: Scheduled Visit Routing
+        level: 3
+        description: Routing and dispatch of scheduled service visits.
+        children: []
+      - id: BC-2060.20.30
+        name: "Filter & Belt Service"
+        level: 3
+        description: Routine filter, belt, and consumable replacement service.
+        children: []
+      - id: BC-2060.20.40
+        name: "Refrigerant & Coil Service"
+        level: 3
+        description: Routine refrigerant top-up and coil cleaning service.
+        children: []
+      - id: BC-2060.20.50
+        name: Maintenance Compliance Reporting
+        level: 3
+        description: Reporting of preventive maintenance compliance to customers.
+        children: []
+  - id: BC-2060.30
+    name: "Reactive & Emergency Service Operations"
+    level: 2
+    description: |
+      Reactive and after-hours emergency service on installed equipment.
+    children:
+      - id: BC-2060.30.10
+        name: Service Request Triage
+        level: 3
+        description: Triage of inbound service requests by urgency and capability.
+        children: []
+      - id: BC-2060.30.20
+        name: Emergency Response Dispatch
+        level: 3
+        description: Dispatch of emergency responders for critical equipment failures.
+        children: []
+      - id: BC-2060.30.30
+        name: On-Site Repair Execution
+        level: 3
+        description: On-site repair execution by service technicians.
+        children: []
+      - id: BC-2060.30.40
+        name: Refrigerant Leak Emergency Response
+        level: 3
+        description: Emergency response to refrigerant releases and major leaks.
+        children: []
+  - id: BC-2060.40
+    name: "BAS Reprogramming & Software Service"
+    level: 2
+    description: |
+      Software-side service on installed BAS — sequence updates, firmware upgrades, and configuration changes.
+    children:
+      - id: BC-2060.40.10
+        name: Sequence Update Deployment
+        level: 3
+        description: Deployment of updated sequences of operation to installed controllers.
+        children: []
+      - id: BC-2060.40.20
+        name: Controller Firmware Upgrade
+        level: 3
+        description: Firmware upgrade of installed BAS controllers.
+        children: []
+      - id: BC-2060.40.30
+        name: "Points & Schedule Modification"
+        level: 3
+        description: Field modification of BAS points, schedules, and trends.
+        children: []
+      - id: BC-2060.40.40
+        name: "BAS Backup & Recovery Operations"
+        level: 3
+        description: Backup of BAS configuration and recovery on failure events.
+        children: []
+  - id: BC-2060.50
+    name: "HVAC Equipment Retrofit & Modernisation Service"
+    level: 2
+    description: |
+      Retrofit, replacement, and modernisation services delivered on the installed HVAC base.
+    children:
+      - id: BC-2060.50.10
+        name: On-Site Retrofit Engineering
+        level: 3
+        description: On-site engineering of retrofit packages tailored to the installation.
+        children: []
+      - id: BC-2060.50.20
+        name: Equipment Replacement Execution
+        level: 3
+        description: On-site execution of equipment replacement scopes.
+        children: []
+      - id: BC-2060.50.30
+        name: Refrigerant Conversion Service
+        level: 3
+        description: Conversion of installed equipment to alternative refrigerants.
+        children: []
+      - id: BC-2060.50.40
+        name: Retrofit Validation Testing
+        level: 3
+        description: Validation testing following retrofit or modernisation work.
+        children: []
+  - id: BC-2060.60
+    name: Performance Service Contract Operations
+    level: 2
+    description: |
+      Operation of performance-based and outcome-based service contracts.
+    children:
+      - id: BC-2060.60.10
+        name: Performance Contract Execution
+        level: 3
+        description: Execution of performance-based service obligations.
+        children: []
+      - id: BC-2060.60.20
+        name: Guaranteed Savings Tracking
+        level: 3
+        description: Tracking of guaranteed-savings outcomes against baseline.
+        children: []
+      - id: BC-2060.60.30
+        name: Risk-Sharing Mechanism Operations
+        level: 3
+        description: Operation of bonus and penalty risk-sharing mechanisms.
+        children: []
+      - id: BC-2060.60.40
+        name: Outcome Reporting
+        level: 3
+        description: Reporting of contracted outcomes and service-level metrics.
+        children: []
+  - id: BC-2060.70
+    name: Remote Connected Service Operations
+    level: 2
+    description: |
+      Remote-service centre operations leveraging connected HVAC and BAS data.
+    children:
+      - id: BC-2060.70.10
+        name: Remote Diagnostic Centre Operations
+        level: 3
+        description: Operations of the remote diagnostic centre for connected equipment.
+        children: []
+      - id: BC-2060.70.20
+        name: Remote Issue Triage
+        level: 3
+        description: Triage of issues identified through remote telemetry.
+        children: []
+      - id: BC-2060.70.30
+        name: Remote Resolution Execution
+        level: 3
+        description: Execution of remote-only resolutions where the issue does not require a site visit.
+        children: []
+      - id: BC-2060.70.40
+        name: Connected Service Customer Onboarding
+        level: 3
+        description: Onboarding of customers onto connected service offerings.
+        children: []
+  - id: BC-2060.80
+    name: "Service Quality & SLA Management"
+    level: 2
+    description: |
+      Management of service quality, service-level agreements, and customer satisfaction.
+    children:
+      - id: BC-2060.80.10
+        name: Service Level Agreement Tracking
+        level: 3
+        description: Tracking of service-level agreement performance.
+        children: []
+      - id: BC-2060.80.20
+        name: Customer Satisfaction Capture
+        level: 3
+        description: Capture of customer satisfaction across service interactions.
+        children: []
+      - id: BC-2060.80.30
+        name: Service Escalation Management
+        level: 3
+        description: Management of service escalations and recovery actions.
+        children: []
+      - id: BC-2060.80.40
+        name: Service Performance Reporting
+        level: 3
+        description: Periodic reporting of service performance to customers and management.
+        children: []

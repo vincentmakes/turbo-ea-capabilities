@@ -466,6 +466,24 @@ Where an industry reference framework exists, anchor the upper levels (L1 / L2) 
 - **IATF 16949, ISO 26262** — automotive QMS and functional safety for electronic systems supplying automotive OEMs.
 - **RoHS 2011/65/EU, REACH, WEEE 2012/19/EU, EU Battery Regulation 2023/1542, Dodd-Frank §1502 / EU Conflict Minerals 2017/821** — substance restrictions, end-of-life, and responsible sourcing.
 
+**HVAC & Building Automation Systems**
+
+- **ASHRAE 90.1 / 62.1 / 62.2 / 55 / 188** — energy, ventilation/IAQ, thermal comfort, building water systems risk management.
+- **ASHRAE Guideline 36** — high-performance sequences of operation for HVAC systems.
+- **ASHRAE 135 (BACnet) / ISO 16484-5** — building automation data communication.
+- **ISO 16484 series** — building automation and control systems (BACS).
+- **EN 15232** — energy performance of buildings — impact of building automation, control, and building management.
+- **ISO 50001** — energy management systems.
+- **AHRI / Eurovent certification programmes** — HVAC equipment performance certification (e.g. AHRI 210/240, AHRI 550/590).
+- **AMCA, SMACNA, NFPA 90A/90B** — fan and damper performance, ductwork construction, and HVAC installation safety.
+- **IEC 60335-2-40 / UL 60335-2-40** — safety of electric heat pumps, air conditioners, and dehumidifiers.
+- **F-Gas Regulation (EU 517/2014), Kigali Amendment / Montreal Protocol, EPA Section 608** — fluorinated greenhouse gas regulation and technician handling certification.
+- **KNX (ISO/IEC 14543-3), LonWorks (ISO/IEC 14908), Modbus, DALI (IEC 62386), OPC UA** — building control protocols.
+- **Project Haystack, Brick Schema** — semantic data tagging for buildings.
+- **ASHRAE Guideline 0 / 1.1** — total building commissioning process.
+- **IPMVP / ASHRAE Guideline 14** — measurement & verification of energy savings.
+- **EU EPBD, LEED, BREEAM, WELL, CIBSE Guides** — building energy regulation, green and wellness certifications, and services engineering guidance.
+
 **Other industry anchors not yet exercised in the catalogue but recommended for adoption**
 
 - **eTOM** — telecommunications.

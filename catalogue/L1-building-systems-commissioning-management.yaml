@@ -1,0 +1,229 @@
+# Building Systems Commissioning Management
+id: BC-2050
+name: Building Systems Commissioning Management
+level: 1
+industry: "HVAC & Building Automation Systems"
+description: |
+  Commissioning of HVAC and BAS systems as a deliverable service — initial commissioning,
+  retrocommissioning, recommissioning, and monitoring-based commissioning. Anchored on
+  ASHRAE Guideline 0 / Guideline 1.1 total building commissioning process.
+in_scope:
+  - Owner's project requirements and basis-of-design review
+  - Pre-functional installation verification and start-up inspection
+  - Functional performance testing of HVAC and BAS systems
+  - Sequence-of-operation verification and integrated systems testing
+  - Retrocommissioning, recommissioning, and monitoring-based commissioning
+  - Cx documentation, systems manuals, and owner training delivery
+out_of_scope:
+  - Project-level engineering integration design (BC-2020)
+  - Ongoing service operations after handover (BC-2060)
+  - Generic engineering-project commissioning of capital plant (BC-1160)
+children:
+  - id: BC-2050.10
+    name: "Commissioning Planning & Scoping"
+    level: 2
+    description: |
+      Establishment of the commissioning programme, scope, and acceptance basis for the project.
+    children:
+      - id: BC-2050.10.10
+        name: Owner's Project Requirements Review
+        level: 3
+        description: Review of the Owner's Project Requirements as the commissioning baseline.
+        children: []
+      - id: BC-2050.10.20
+        name: Basis of Design Review
+        level: 3
+        description: Review of the Basis of Design against the Owner's Project Requirements.
+        children: []
+      - id: BC-2050.10.30
+        name: Commissioning Plan Authoring
+        level: 3
+        description: Authoring of the commissioning plan defining scope, roles, and acceptance.
+        children: []
+      - id: BC-2050.10.40
+        name: Commissioning Risk Register
+        level: 3
+        description: Maintenance of the commissioning risk register through delivery.
+        children: []
+  - id: BC-2050.20
+    name: Pre-Functional Inspection Management
+    level: 2
+    description: |
+      Verification of installation completeness and start-up readiness ahead of functional testing.
+    children:
+      - id: BC-2050.20.10
+        name: Installation Verification Checklists
+        level: 3
+        description: Execution of installation verification checklists.
+        children: []
+      - id: BC-2050.20.20
+        name: Start-Up Inspection
+        level: 3
+        description: Inspection of equipment start-up against manufacturer requirements.
+        children: []
+      - id: BC-2050.20.30
+        name: Pre-Functional Issue Logging
+        level: 3
+        description: Logging of pre-functional issues into the commissioning issue log.
+        children: []
+      - id: BC-2050.20.40
+        name: Pre-Functional Sign-Off
+        level: 3
+        description: Sign-off that pre-functional readiness has been achieved.
+        children: []
+  - id: BC-2050.30
+    name: Functional Performance Testing
+    level: 2
+    description: |
+      Functional performance testing of HVAC and BAS subsystems against documented criteria.
+    children:
+      - id: BC-2050.30.10
+        name: Test Script Authoring
+        level: 3
+        description: Authoring of functional test scripts against design intent.
+        children: []
+      - id: BC-2050.30.20
+        name: "Test Execution & Witness"
+        level: 3
+        description: Execution and witness of functional tests on HVAC and BAS systems.
+        children: []
+      - id: BC-2050.30.30
+        name: Test Issue Resolution
+        level: 3
+        description: Resolution of issues identified during functional testing.
+        children: []
+      - id: BC-2050.30.40
+        name: Test Result Approval
+        level: 3
+        description: Approval of test results and closeout of test cases.
+        children: []
+  - id: BC-2050.40
+    name: Sequence-of-Operation Verification
+    level: 2
+    description: |
+      Verification of programmed control sequences against the design sequences-of-operation.
+    children:
+      - id: BC-2050.40.10
+        name: Control Logic Walkthrough
+        level: 3
+        description: Walkthrough of control logic against authored sequences.
+        children: []
+      - id: BC-2050.40.20
+        name: "Setpoint & Mode Verification"
+        level: 3
+        description: Verification of setpoints and operating modes across schedules.
+        children: []
+      - id: BC-2050.40.30
+        name: "Override & Failure-Mode Testing"
+        level: 3
+        description: Testing of override paths and failure-mode behaviours.
+        children: []
+      - id: BC-2050.40.40
+        name: Trend-Based Verification
+        level: 3
+        description: Use of trend data to verify sequence performance over time.
+        children: []
+  - id: BC-2050.50
+    name: Integrated Systems Testing
+    level: 2
+    description: |
+      Testing of integrated cross-system behaviours involving HVAC, life-safety, and electrical systems.
+    children:
+      - id: BC-2050.50.10
+        name: "Fire & Life-Safety Integration Test"
+        level: 3
+        description: Integration tests covering HVAC interaction with fire and life-safety systems.
+        children: []
+      - id: BC-2050.50.20
+        name: "Smoke Control & Pressurisation Test"
+        level: 3
+        description: Tests of smoke-control and pressurisation sequences.
+        children: []
+      - id: BC-2050.50.30
+        name: "Power Failure & Load-Shed Test"
+        level: 3
+        description: Tests of HVAC behaviour during power failure and load-shedding events.
+        children: []
+      - id: BC-2050.50.40
+        name: Building Network Integration Test
+        level: 3
+        description: Integration tests across BAS and adjacent building IT networks.
+        children: []
+  - id: BC-2050.60
+    name: "Retrocommissioning & Recommissioning"
+    level: 2
+    description: |
+      Commissioning service applied to existing buildings and as periodic recommissioning cycles.
+    children:
+      - id: BC-2050.60.10
+        name: Existing-Building Investigation
+        level: 3
+        description: Investigation of existing-building performance against current intent.
+        children: []
+      - id: BC-2050.60.20
+        name: Performance Gap Analysis
+        level: 3
+        description: Analysis of performance gaps and root causes in existing buildings.
+        children: []
+      - id: BC-2050.60.30
+        name: Retrocommissioning Measure Implementation
+        level: 3
+        description: Implementation of retrocommissioning measures across existing systems.
+        children: []
+      - id: BC-2050.60.40
+        name: Recommissioning Cycle Execution
+        level: 3
+        description: Execution of periodic recommissioning cycles for sustained performance.
+        children: []
+  - id: BC-2050.70
+    name: Monitoring-Based Commissioning
+    level: 2
+    description: |
+      Continuous, data-driven commissioning leveraging instrumentation and telemetry.
+    children:
+      - id: BC-2050.70.10
+        name: "Monitoring Plan & Instrumentation"
+        level: 3
+        description: Authoring of monitoring plans and selection of supporting instrumentation.
+        children: []
+      - id: BC-2050.70.20
+        name: Continuous Performance Trending
+        level: 3
+        description: Continuous trending of building performance for commissioning insight.
+        children: []
+      - id: BC-2050.70.30
+        name: Anomaly Investigation
+        level: 3
+        description: Investigation of detected anomalies arising from continuous trends.
+        children: []
+      - id: BC-2050.70.40
+        name: Persistence Verification
+        level: 3
+        description: Verification that commissioned performance persists over time.
+        children: []
+  - id: BC-2050.80
+    name: "Commissioning Documentation & Closeout"
+    level: 2
+    description: |
+      Production of commissioning deliverables and formal closeout of the commissioning scope.
+    children:
+      - id: BC-2050.80.10
+        name: Commissioning Report Authoring
+        level: 3
+        description: Authoring of the final commissioning report.
+        children: []
+      - id: BC-2050.80.20
+        name: Systems Manual Compilation
+        level: 3
+        description: Compilation of the systems manual for owner operation.
+        children: []
+      - id: BC-2050.80.30
+        name: Owner Training Delivery
+        level: 3
+        description: Delivery of owner training on commissioned systems.
+        children: []
+      - id: BC-2050.80.40
+        name: Final Handover Sign-Off
+        level: 3
+        description: Final commissioning sign-off and handover to operations.
+        children: []

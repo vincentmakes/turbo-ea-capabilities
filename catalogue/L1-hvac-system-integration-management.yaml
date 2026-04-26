@@ -1,0 +1,230 @@
+# HVAC System Integration Management
+id: BC-2020
+name: HVAC System Integration Management
+level: 1
+industry: "HVAC & Building Automation Systems"
+description: |
+  Project-level engineering of integrated HVAC and BAS solutions for a specific building —
+  load calculation, equipment selection, schematic design, BAS points list and architecture,
+  sequence-of-operation authoring, BIM/MEP coordination, project specifications, submittal
+  management, and field engineering support.
+in_scope:
+  - Building-specific load calculations and equipment selection
+  - Mechanical, hydronic, and refrigerant schematic design at project scale
+  - BAS points lists, network topology, and panel layout for projects
+  - Project-specific sequence-of-operation authoring
+  - BIM coordination, project specifications, and submittal management
+out_of_scope:
+  - Equipment product engineering (BC-2000) and BAS product engineering (BC-2010)
+  - Cross-discipline MEP discipline practice (BC-1100)
+  - Commissioning service delivery (BC-2050)
+  - Generic engineering project management (BC-1110)
+children:
+  - id: BC-2020.10
+    name: "Building HVAC Sizing & Selection"
+    level: 2
+    description: |
+      Project-specific sizing of loads and selection of HVAC equipment to meet design intent.
+    children:
+      - id: BC-2020.10.10
+        name: "Cooling & Heating Load Calculation"
+        level: 3
+        description: Calculation of building cooling and heating loads.
+        children: []
+      - id: BC-2020.10.20
+        name: "Equipment Selection & Schedule"
+        level: 3
+        description: Selection of equipment models against calculated loads and schedules.
+        children: []
+      - id: BC-2020.10.30
+        name: Hydronic Loop Sizing
+        level: 3
+        description: Sizing of hydronic loops, pumps, and pipe diameters.
+        children: []
+      - id: BC-2020.10.40
+        name: "Duct Sizing & Pressure-Drop Analysis"
+        level: 3
+        description: Sizing of ducts and analysis of system pressure drop.
+        children: []
+      - id: BC-2020.10.50
+        name: Energy Modelling for Selection
+        level: 3
+        description: Energy simulation supporting equipment selection trade-offs.
+        children: []
+  - id: BC-2020.20
+    name: HVAC System Schematic Design
+    level: 2
+    description: |
+      Schematic design of the integrated mechanical, hydronic, and refrigerant systems.
+    children:
+      - id: BC-2020.20.10
+        name: Mechanical Schematic Design
+        level: 3
+        description: Schematic-level design of mechanical air-side systems.
+        children: []
+      - id: BC-2020.20.20
+        name: Hydronic Schematic Design
+        level: 3
+        description: Schematic-level design of chilled-water, hot-water, and condenser-water loops.
+        children: []
+      - id: BC-2020.20.30
+        name: Refrigerant Piping Schematic Design
+        level: 3
+        description: Schematic-level design of refrigerant piping for VRF and split systems.
+        children: []
+      - id: BC-2020.20.40
+        name: Single-Line Control Schematic Design
+        level: 3
+        description: Single-line schematics depicting the BAS-control overlay on mechanical systems.
+        children: []
+  - id: BC-2020.30
+    name: "BAS Points List & Architecture Design"
+    level: 2
+    description: |
+      Project-specific points lists, BAS network topology, and panel allocation.
+    children:
+      - id: BC-2020.30.10
+        name: Points List Authoring
+        level: 3
+        description: Authoring of project-specific BAS points lists.
+        children: []
+      - id: BC-2020.30.20
+        name: BAS Network Topology Design
+        level: 3
+        description: Design of BAS network topology and segmentation for the project.
+        children: []
+      - id: BC-2020.30.30
+        name: "Controller Allocation & Panel Layout"
+        level: 3
+        description: Allocation of controllers and design of control panels for the project.
+        children: []
+      - id: BC-2020.30.40
+        name: "Tag & Naming Convention Application"
+        level: 3
+        description: Application of tag and naming conventions to project points and assets.
+        children: []
+  - id: BC-2020.40
+    name: Sequence-of-Operation Authoring
+    level: 2
+    description: |
+      Project-specific authoring of sequences of operation for HVAC systems.
+    children:
+      - id: BC-2020.40.10
+        name: Zone Sequence Authoring
+        level: 3
+        description: Authoring of project zone-level control sequences.
+        children: []
+      - id: BC-2020.40.20
+        name: Central Plant Sequence Authoring
+        level: 3
+        description: Authoring of project central-plant control sequences.
+        children: []
+      - id: BC-2020.40.30
+        name: Energy-Saving Strategy Authoring
+        level: 3
+        description: Authoring of project-level energy-saving control strategies.
+        children: []
+      - id: BC-2020.40.40
+        name: "Alarm & Override Sequence Authoring"
+        level: 3
+        description: Authoring of project-level alarm logic and operator override sequences.
+        children: []
+  - id: BC-2020.50
+    name: "BIM & MEP Coordination"
+    level: 2
+    description: |
+      BIM modelling and multi-discipline coordination of HVAC scope inside the project.
+    children:
+      - id: BC-2020.50.10
+        name: HVAC BIM Modelling
+        level: 3
+        description: BIM modelling of HVAC scope for the project.
+        children: []
+      - id: BC-2020.50.20
+        name: MEP Clash Detection
+        level: 3
+        description: Coordination clash detection across MEP disciplines.
+        children: []
+      - id: BC-2020.50.30
+        name: Model Exchange Coordination
+        level: 3
+        description: Coordination of BIM model exchange formats and deliverables.
+        children: []
+      - id: BC-2020.50.40
+        name: Coordination Model Issuance
+        level: 3
+        description: Issuance of coordinated BIM models to project stakeholders.
+        children: []
+  - id: BC-2020.60
+    name: HVAC Project Specification Authoring
+    level: 2
+    description: |
+      Authoring of project specifications for HVAC and controls scope.
+    children:
+      - id: BC-2020.60.10
+        name: Mechanical Specification Authoring
+        level: 3
+        description: Authoring of mechanical specifications for the project.
+        children: []
+      - id: BC-2020.60.20
+        name: Controls Specification Authoring
+        level: 3
+        description: Authoring of BAS and controls specifications for the project.
+        children: []
+      - id: BC-2020.60.30
+        name: "Performance & Acceptance Criteria Authoring"
+        level: 3
+        description: Authoring of performance criteria and acceptance tests for the project.
+        children: []
+  - id: BC-2020.70
+    name: System Integration Submittal Management
+    level: 2
+    description: |
+      Management of submittals, shop drawings, and RFIs during the project execution phase.
+    children:
+      - id: BC-2020.70.10
+        name: Submittal Package Preparation
+        level: 3
+        description: Preparation of submittal packages for owner and engineer review.
+        children: []
+      - id: BC-2020.70.20
+        name: Shop Drawing Coordination
+        level: 3
+        description: Coordination of shop drawings with the design intent.
+        children: []
+      - id: BC-2020.70.30
+        name: RFI Response Management
+        level: 3
+        description: Management of design RFIs from the contractor and integrator.
+        children: []
+      - id: BC-2020.70.40
+        name: Substitution Review
+        level: 3
+        description: Review of equipment and material substitution requests.
+        children: []
+  - id: BC-2020.80
+    name: Site Engineering Support
+    level: 2
+    description: |
+      Engineering support during construction and installation, including field resolutions and as-installed records.
+    children:
+      - id: BC-2020.80.10
+        name: Field Engineering Resolution
+        level: 3
+        description: Resolution of field engineering issues during installation.
+        children: []
+      - id: BC-2020.80.20
+        name: Change Order Engineering
+        level: 3
+        description: Engineering work supporting change orders during construction.
+        children: []
+      - id: BC-2020.80.30
+        name: As-Installed Drawing Updates
+        level: 3
+        description: Update of drawings to reflect as-installed conditions.
+        children: []
+      - id: BC-2020.80.40
+        name: Installation Witness Inspection
+        level: 3
+        description: Witnessing of installation milestones for engineering acceptance.
+        children: []
