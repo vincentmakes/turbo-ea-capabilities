@@ -1,6 +1,6 @@
 ---
 name: map-value-streams
-description: Autonomously propose stages in catalogue/_value-streams.yaml linking L1 capabilities (or all L1s of an industry) to end-to-end value streams. The skill decides which streams apply, picks the anchor L2/L3 for each stage, and presents ONE batched proposal — no per-stage interrogation. The user always speaks in NAMES; the skill resolves names to IDs internally.
+description: Autonomously propose stages in catalogue/_value-streams.yaml linking L1 capabilities (or all L1s of an industry) to end-to-end value streams. Stages map at L1 only; the skill decides which streams apply, flags coverage gaps when no stream fits, and presents ONE batched proposal — no per-stage interrogation. The user always speaks in NAMES; the skill resolves names to IDs internally.
 ---
 
 # map-value-streams
@@ -31,45 +31,71 @@ Only ask the user when:
 The user references capabilities by name; `_value-streams.yaml` stores `capability_id`. Resolve before writing:
 
 1. **L1 names** — read `catalogue/_index.yaml`, then each `L1-*.yaml`, and match the user's input against the top-level `name:` field. L1 names are globally unique.
-2. **L2 / L3 names** — when the user says *"map the KYC capability under Banking Customer Management to Onboard-to-Activate"*, resolve `Banking Customer Management` → its L1 file, then walk `children:` to find an L2 (or L3) named *"KYC & Customer Due Diligence Management"*. Anchor stages at L2 or L3, not L1, because L1s are usually too broad to be a single stage.
-3. **Industry filter** — when given `--industry "<name>"`, scan all L1 files where `industry:` matches (treat the field as `;`-separated) and process each in turn.
-4. If a name is ambiguous, list the closest 3–5 matches and ask the user to pick — do not guess.
-5. Show the resolved name → ID mapping once at the start of Step 4 as confirmation, then refer to capabilities by name everywhere else in the conversation.
+2. **Industry filter** — when given `--industry "<name>"`, scan all L1 files where `industry:` matches (treat the field as `;`-separated) and process each in turn.
+3. If a name is ambiguous, list the closest 3–5 matches and ask the user to pick — do not guess.
+4. Show the resolved name → ID mapping once at the start of Step 4 as confirmation, then refer to capabilities by name everywhere else in the conversation.
+
+Stages reference the **L1 only**. The lint rule (`scripts/lint.ts` `L1_ID_REGEX`) rejects any deeper `capability_id`. Sub-scope (e.g. *AR vs GL within Financial Management*) belongs in the stage's `notes` field, not in a more specific ID.
 
 ## Step 1 — Establish context
 
 1. Read **`catalogue/_value-streams.yaml`** in full to enumerate existing streams and the stages already mapped.
 2. Read **`business-capability-governance-model.md`** §2 (capabilities ≠ value streams) and §9.4 (lint rules).
-3. For each target L1 (resolved from the user's name), read its YAML file under `catalogue/L1-*.yaml` to understand its L2 children — the natural "anchor points" for a stage are usually L2 or L3, not L1 itself.
+3. For each target L1 (resolved from the user's name), read its YAML file under `catalogue/L1-*.yaml` to understand its scope. The value-stream stage references the L1 itself; the site auto-expands to descendants when filtering, so sub-scope detail belongs in `notes`, not in a deeper `capability_id`.
 
 ## Step 2 — Identify candidate streams
 
-Canonical end-to-end streams (use existing names where possible to avoid duplication):
+Authoritative list lives in `catalogue/_value-streams.yaml`; read it at runtime for the source of truth. The tables below summarise the current 24 streams to help you spot fits quickly. Reuse these names exactly — never invent a near-synonym.
 
-| Stream | Typical capabilities exercised |
+Cross-industry streams:
+
+| Stream | Typical L1 anchors |
 | --- | --- |
-| **Hire-to-Retire** | Workforce planning, sourcing, selection, onboarding, performance, exit |
-| **Order-to-Cash** | Demand capture, order management, fulfilment, invoicing, collections |
-| **Procure-to-Pay** | Sourcing, contracting, requisition, receipt, AP, payment |
-| **Plan-to-Produce** *(manufacturing)* | Demand plan, MPS, MRP, work order, shop floor, finished goods |
-| **Idea-to-Market** | Ideation, R&D, design, validation, launch |
-| **Issue-to-Resolution** | Case capture, triage, resolution, knowledge update |
-| **Quote-to-Cash** | Lead, quote, contract, order, invoice, payment |
-| **Record-to-Report** | GL, intercompany, close, consolidation, statutory reporting |
-| **Acquire-to-Retire** *(asset)* | Asset acquisition, deployment, maintenance, disposal |
-| **Forecast-to-Stock** *(supply)* | Demand forecast, replenishment, inventory, fulfilment |
+| **Hire-to-Retire** | BC-300 Human Capital Management; BC-400 Marketing (employer brand only) |
+| **Order-to-Cash** | BC-410 Sales, BC-420 CRM, BC-440 Pricing, BC-200 Financial Management, BC-520 Supply Chain, BC-150 Legal |
+| **Procure-to-Pay** | BC-500 Procurement, BC-510 Supplier Management, BC-200 Financial Management |
+| **Issue-to-Resolution** | BC-140 Audit, BC-430 Customer Service, BC-720 Quality, BC-730 HSE, BC-620 Cybersecurity, BC-830 Knowledge |
+| **Idea-to-Market** | BC-800 Innovation, BC-810 R&D, BC-820 Product Lifecycle, BC-840 IP, BC-400 Marketing, BC-410 Sales |
+| **Plan-to-Inventory** | BC-520 Supply Chain, BC-530 Inventory, BC-1000 Production, BC-230 FP&A |
+| **Record-to-Report** | BC-200 Finance, BC-210 Treasury, BC-220 Tax, BC-230 FP&A, BC-240 Investor Relations, BC-140 Audit, BC-130 Compliance |
+| **Acquire-to-Retire** | BC-1040 Physical Asset, BC-1030 Plant Maintenance, BC-1110 Project Engineering, BC-1160 Commissioning, BC-200 Finance, BC-740 Sustainability |
+| **Strategy-to-Execution** | BC-100 Strategic Management, BC-900 Project Portfolio, BC-910 Change, BC-920 Transformation |
+| **Risk-to-Mitigation** | BC-120 Enterprise Risk, BC-130 Compliance, BC-520 Supply Chain (risk feed) |
+| **Audit-to-Action** | BC-140 Internal Audit |
+| **Threat-to-Mitigation** | BC-620 Cybersecurity, BC-160 Business Continuity, BC-830 Knowledge |
+| **Prospect-to-Customer** | BC-400 Marketing, BC-410 Sales, BC-420 CRM, BC-430 Customer Service, BC-850 Corporate Communications |
+| **Opportunity-to-Order** | BC-410 Sales, BC-420 CRM, BC-440 Pricing, BC-150 Legal |
+| **Maintenance-Request-to-Closure** | BC-1030 Plant Maintenance, BC-1050 Field Service, BC-720 Quality, BC-200 Finance |
+| **Crisis-to-Recovery** | BC-160 Business Continuity, BC-620 Cybersecurity, BC-600 IT, BC-850 Corporate Communications, BC-830 Knowledge, BC-120 Enterprise Risk |
+| **ESG-to-Disclosure** | BC-740 Sustainability, BC-510 Supplier (ratings), BC-610 Information & Data, BC-140 Audit, BC-200 Finance, BC-240 Investor Relations |
+| **Concept-to-Manufacture** | BC-1120 Design, BC-1100 Engineering Discipline, BC-1020 Manufacturing Engineering, BC-820 PLM, BC-1000 Production, BC-1010 Mfg Operations, BC-720 Quality, BC-1130 Engineering Document |
 
-Industry-specific streams (used only when the flow diverges materially from a canonical stream):
+Industry-specific streams (use first when the L1 is industry-specific; canonical streams come second):
 
-| Industry | Streams |
-| --- | --- |
-| Banking | *Apply-to-Fund* (lending), *Trade-to-Settle* (capital markets), *Onboard-to-Activate* (KYC) |
-| Pharma | *Discover-to-Approve* (drug development), *Trial-to-Submission* (clinical), *Adverse-Event-to-Action* (PV) |
-| Defense | *Capture-to-Award* (bid), *Programme-Start-to-Sustainment*, *Mission-Plan-to-Debrief* |
-| ATC | *Flight-Plan-to-Landing*, *Strip-to-Strip*, *Alert-to-Recovery* (SAR) |
-| Engineering Services | *Tender-to-Handover*, *Design-to-Construction* |
+| Industry | Stream | Typical L1 anchors |
+| --- | --- | --- |
+| Banking | **Application-to-Funding** | BC-1320 Credit & Lending, BC-1300 Banking Customer, BC-1400 Financial Crime, BC-1310 Banking Product, BC-1340 Payments, BC-1410 Banking Risk |
+| Pharma | **Discovery-to-Approval** | BC-1500 Drug Discovery, BC-1510 Drug Development, BC-1520 Clinical Trials, BC-1530 Regulatory Affairs, BC-1580 Medical Affairs, BC-1590 Pharma Commercial, BC-1600 Market Access |
+| Pharma | **Adverse-Event-to-Action** | BC-1540 Pharmacovigilance, BC-1580 Medical Affairs, BC-1530 Regulatory Affairs, BC-850 Corporate Comms |
+| Defense | **Capture-to-Contract** | BC-1750 Defense Capture & Bid, BC-1730 Intelligence Ops, BC-1810 Classified Info Sec, BC-1140 Engineering Tendering, BC-1790 Export Control, BC-150 Legal, BC-1760 Defense Programme |
+| Defense | **Sustain-to-Disposition** | BC-1780 Defense Sustainment, BC-1720 Defense Logistics, BC-1060 Spare Parts, BC-1770 Defense Systems Engineering, BC-1800 Defense T&E, BC-1040 Physical Asset, BC-1810 Classified Info Sec |
+| ATC | **Flight-to-Settle** | BC-1230 Aeronautical Information, BC-1210 ATC Ops, BC-1220 ATC Flow, BC-1270 Route Charges, BC-200 Finance |
 
-If no existing or canonical stream fits, propose a new one **with rationale** and confirm with the user before writing.
+### Coverage-gap detection
+
+If a target L1's role is not represented by any of the streams above, do **not** force a fit and do **not** silently invent a new stream. Instead, emit a Coverage-gap notice in this format:
+
+```
+Coverage gap: <L1 name> (<BC-id>)
+  No existing stream covers this capability's primary role of <one-sentence summary>.
+  Suggested new streams:
+    - <Suggested-Name-1> — <one-line rationale: what end-to-end flow it captures>
+    - <Suggested-Name-2> — <alternative framing>
+  Continuing with the streams that do fit. Add a new stream as a follow-up
+  (manual edit to _value-streams.yaml) if the suggestion is right.
+```
+
+Continue with whatever streams *do* fit (often there will be a partial fit even when no stream is the primary one). The user can author the new stream manually or via a follow-up `/map-value-streams` invocation once defined.
 
 ## Step 3 — Decide stages autonomously
 
@@ -77,8 +103,8 @@ For every target L1 (or every L1 in the industry), decide on your own which stre
 
 Heuristics — apply silently, don't ask:
 
-- **Anchor at L2 or L3.** A stream stage is one step. L1s are too broad. Pick the L2 (or L3) child whose scope matches the stage. If multiple children of the same L1 collaborate at a stage, emit multiple entries with the same `stage_order` (this is the documented pattern in existing Hire-to-Retire stages 2/3).
-- **Reuse existing streams** before inventing new ones. Only invent a new stream when no canonical or industry-specific stream in the tables above fits — and then emit it with a one-line rationale alongside the proposal.
+- **Anchor at L1.** Lint enforces L1-only `capability_id`s; sub-scope (e.g. AR vs GL within Financial Management) goes in `notes`. If multiple aspects of the same L1 collaborate at a stage, still emit a single L1 entry and merge the rationale in `notes` with `;` separators (e.g. `"Pay design; Payroll execution"`).
+- **Reuse existing streams** before flagging a gap. Use the Coverage-gap pattern from Step 2 when no stream fits — never invent a new stream silently.
 - **Cross-Industry L1s usually map to canonical streams** (Hire-to-Retire for HR, Order-to-Cash for Sales, Procure-to-Pay for Procurement, Record-to-Report for Financial Management). Don't ask — apply.
 - **Industry-specific L1s map first to industry-specific streams, then to canonical ones if relevant** (Banking Customer Management → Onboard-to-Activate primarily, Issue-to-Resolution secondarily).
 - **`industry_variant` rule** — set it only when the same `stream` / `stage_order` / `stage_name` already has (or will have) a non-variant entry, *and* the capability you're anchoring is industry-specific in a way that diverges from the generic stage. Otherwise skip the field. Never use it just to tag industry.
@@ -99,16 +125,16 @@ Present the **complete proposal in one go**, grouped by stream. Use the capabili
 
 ```
 Stream: Hire-to-Retire
-  stage_order  stage_name             capability                                   industry_variant  notes
-  1            Workforce Planning     Workforce Planning (BC-300.50)                                 Demand planning
-  2            Sourcing & Attraction  Talent Acquisition (BC-300.10)                                 Sourcing
-  3            Selection & Hire       Personnel Security Vetting (BC-1810.10)      Defense           Clearance verification
+  stage_order  stage_name             capability                                  industry_variant  notes
+  1            Workforce Planning     Human Capital Management (BC-300)                             Demand planning
+  2            Sourcing & Attraction  Human Capital Management (BC-300)                             Sourcing
+  3            Selection & Hire       Classified Information Security (BC-1810)   Defense           Clearance verification
   ...
 
-Stream: Onboard-to-Activate (Banking)
-  stage_order  stage_name             capability                                   industry_variant  notes
-  1            Application Capture    Application Capture (BC-1300.10.10)                            Initial intake
-  2            Identity Verification  Identity Verification (BC-1300.10.20)                          KYC docs
+Stream: Application-to-Funding (Banking)
+  stage_order  stage_name             capability                                  industry_variant  notes
+  1            Application Capture    Credit & Lending Management (BC-1320)       Banking           Origination intake
+  2            KYC & Due Diligence    Banking Customer Management (BC-1300)       Banking           KYC / CDD
   ...
 ```
 
@@ -135,6 +161,7 @@ npm run build:api     # rebuilds dist/api/value-streams.json; fails if any refer
 
 If lint fails:
 
+- **Non-L1 capability_id** → the rule (`scripts/lint.ts` `L1_ID_REGEX`) requires L1 only. Truncate to the L1 prefix (e.g. `BC-300.10` → `BC-300`) and move the sub-scope into `notes`.
 - **Unresolved capability_id** → the ID does not exist in the catalogue. Verify against `catalogue/L1-*.yaml`. Do not invent IDs.
 - **YAML parse error** → check indentation and quoting (use `"..."` for names containing `&` or `:`).
 
