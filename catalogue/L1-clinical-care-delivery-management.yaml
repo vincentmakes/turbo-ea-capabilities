@@ -1,0 +1,302 @@
+# Clinical Care Delivery Management
+id: BC-2810
+name: Clinical Care Delivery Management
+level: 1
+industry: Healthcare Providers
+description: |
+  Provision of direct clinical care across inpatient, outpatient, emergency,
+  surgical, maternal, behavioural, rehabilitation, and home care settings.
+references:
+  - https://www.who.int/health-topics/integrated-people-centred-care
+  - https://www.jointcommission.org/
+  - https://www.cms.gov/medicare/quality-initiatives-patient-assessment-instruments
+  - https://www.ihi.org/
+children:
+  - id: BC-2810.10
+    name: Inpatient Care Delivery
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Delivery of acute, intermediate, and critical inpatient care including
+      assessment, rounding, bedside care, and intensive-care operations.
+    children:
+      - id: BC-2810.10.10
+        name: Admission Assessment
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          History and physical, nursing assessment, and risk screening on admission.
+        children: []
+      - id: BC-2810.10.20
+        name: Clinical Rounds
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Multidisciplinary clinical rounds and care planning at the bedside.
+        children: []
+      - id: BC-2810.10.30
+        name: Bedside Care
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Direct nursing and clinical bedside care including activities of daily living support.
+        children: []
+      - id: BC-2810.10.40
+        name: Critical Care Operations
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Intensive care operations including ventilator, haemodynamic, and continuous-monitoring care.
+        children: []
+  - id: BC-2810.20
+    name: Outpatient Care Delivery
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Delivery of ambulatory, telehealth, and outpatient procedural and
+      treatment services in clinic and day-hospital settings.
+    children:
+      - id: BC-2810.20.10
+        name: Ambulatory Visit Conduct
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Conduct of office and clinic visits including primary and specialty consultations.
+        children: []
+      - id: BC-2810.20.20
+        name: Outpatient Procedure Delivery
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Delivery of same-day and ambulatory procedures including minor surgery and infusions.
+        children: []
+      - id: BC-2810.20.30
+        name: Telehealth Encounter Delivery
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Delivery of synchronous and asynchronous telehealth encounters.
+        children: []
+      - id: BC-2810.20.40
+        name: Outpatient Treatment Administration
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Administration of outpatient treatments such as chemotherapy, dialysis, and infusions.
+        children: []
+  - id: BC-2810.30
+    name: Emergency Care Delivery
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Delivery of emergency department triage, stabilisation, trauma response,
+      and disposition decisions for unscheduled care.
+    children:
+      - id: BC-2810.30.10
+        name: Emergency Department Triage
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Triage and acuity assignment for patients presenting to the emergency department.
+        children: []
+      - id: BC-2810.30.20
+        name: Emergency Stabilisation
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Initial assessment, resuscitation, and stabilisation of acutely ill or injured patients.
+        children: []
+      - id: BC-2810.30.30
+        name: Trauma Response
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Trauma activation, team response, and damage-control care for major trauma cases.
+        children: []
+      - id: BC-2810.30.40
+        name: Emergency Department Disposition
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Disposition decisions including admission, transfer, observation, and discharge from the emergency department.
+        children: []
+  - id: BC-2810.40
+    name: "Surgical & Procedural Care Delivery"
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Pre-, intra-, and post-operative care for surgical and interventional
+      procedures across operating rooms and procedural suites.
+    children:
+      - id: BC-2810.40.10
+        name: Pre-Operative Care
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Pre-operative assessment, optimisation, and holding-area care.
+        children: []
+      - id: BC-2810.40.20
+        name: Intra-Operative Management
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Intra-operative surgical, anaesthesia, and circulating-team care.
+        children: []
+      - id: BC-2810.40.30
+        name: Post-Anaesthesia Care
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Post-anaesthesia care unit recovery and discharge readiness assessment.
+        children: []
+      - id: BC-2810.40.40
+        name: "Endoscopy & Interventional Procedures"
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Delivery of endoscopic, interventional radiology, and interventional cardiology procedures.
+        children: []
+  - id: BC-2810.50
+    name: "Maternal & Newborn Care Delivery"
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Antepartum, intrapartum, postpartum, and newborn care delivery across
+      maternity and neonatal services.
+    children:
+      - id: BC-2810.50.10
+        name: Antepartum Care
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Prenatal assessment, screening, and antepartum admissions.
+        children: []
+      - id: BC-2810.50.20
+        name: Intrapartum Care
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Labour and delivery management including caesarean and operative delivery.
+        children: []
+      - id: BC-2810.50.30
+        name: Postpartum Care
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Postpartum maternal recovery, lactation support, and postpartum education.
+        children: []
+      - id: BC-2810.50.40
+        name: Newborn Care
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Healthy newborn nursery care, screening, and neonatal intensive care delivery.
+        children: []
+  - id: BC-2810.60
+    name: Behavioural Health Care Delivery
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Behavioural health care across psychiatric assessment, inpatient
+      behavioural units, outpatient therapy, and substance use treatment.
+    children:
+      - id: BC-2810.60.10
+        name: Psychiatric Assessment
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Psychiatric and psychological assessment and crisis intervention.
+        children: []
+      - id: BC-2810.60.20
+        name: Inpatient Behavioural Care
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Inpatient psychiatric care including milieu therapy and pharmacological treatment.
+        children: []
+      - id: BC-2810.60.30
+        name: Outpatient Behavioural Therapy
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Outpatient psychotherapy, group therapy, and partial hospitalisation programmes.
+        children: []
+      - id: BC-2810.60.40
+        name: Substance Use Care
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Detoxification, medication-assisted treatment, and substance use rehabilitation services.
+        children: []
+  - id: BC-2810.70
+    name: "Rehabilitation & Therapy Services"
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Physical, occupational, speech-language, and cardiopulmonary
+      rehabilitation services across inpatient and outpatient settings.
+    children:
+      - id: BC-2810.70.10
+        name: Physical Therapy
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Physical therapy assessment and treatment across inpatient and outpatient settings.
+        children: []
+      - id: BC-2810.70.20
+        name: Occupational Therapy
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Occupational therapy assessment and treatment focused on functional independence.
+        children: []
+      - id: BC-2810.70.30
+        name: Speech-Language Therapy
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Speech, language, and swallowing therapy services.
+        children: []
+      - id: BC-2810.70.40
+        name: "Cardiac & Pulmonary Rehabilitation"
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Cardiac and pulmonary rehabilitation programme delivery.
+        children: []
+  - id: BC-2810.80
+    name: "Home & Community Care Delivery"
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Care delivered in the patient's home or community setting including
+      home health visits, hospice, and remote monitoring.
+    children:
+      - id: BC-2810.80.10
+        name: Home Health Visits
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Skilled home health visits including nursing and therapy in the home.
+        children: []
+      - id: BC-2810.80.20
+        name: "Hospice & Palliative Home Care"
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          End-of-life and palliative care delivered in the home.
+        children: []
+      - id: BC-2810.80.30
+        name: Community Health Visits
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Community-based health worker visits and outreach programmes.
+        children: []
+      - id: BC-2810.80.40
+        name: Remote Monitoring Care
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Remote patient monitoring services for chronic and post-acute populations.
+        children: []

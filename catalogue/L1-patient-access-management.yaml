@@ -1,0 +1,231 @@
+# Patient Access Management
+id: BC-2800
+name: Patient Access Management
+level: 1
+industry: Healthcare Providers
+description: |
+  Pre-encounter intake, scheduling, registration, eligibility verification,
+  financial counselling, admissions, transfers and discharges across inpatient,
+  outpatient, ambulatory, and emergency settings.
+references:
+  - https://www.hl7.org/fhir/
+  - https://x12.org/
+  - https://www.himss.org/
+  - https://www.cms.gov/
+children:
+  - id: BC-2800.10
+    name: "Scheduling & Appointment Management"
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Provider and resource scheduling, appointment booking, waitlist
+      management, and proactive reminders to optimise capacity utilisation.
+    children:
+      - id: BC-2800.10.10
+        name: Provider Schedule Optimisation
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Optimisation of provider, room, and equipment schedules across templates and overlays.
+        children: []
+      - id: BC-2800.10.20
+        name: Appointment Booking
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Patient and referrer-initiated booking of appointments across channels.
+        children: []
+      - id: BC-2800.10.30
+        name: Waitlist Management
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Maintenance and prioritisation of waitlists for appointments and procedures.
+        children: []
+      - id: BC-2800.10.40
+        name: "Appointment Reminders & No-Show Mitigation"
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Multi-channel reminders, confirmation, and no-show mitigation interventions.
+        children: []
+  - id: BC-2800.20
+    name: Patient Registration Management
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Capture and stewardship of demographic, identity, and consent data
+      required to register a patient for an encounter.
+    children:
+      - id: BC-2800.20.10
+        name: Demographic Data Capture
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Capture of patient demographic data at registration.
+        children: []
+      - id: BC-2800.20.20
+        name: Patient Identity Verification
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Verification of patient identity using documentation and biometric checks.
+        children: []
+      - id: BC-2800.20.30
+        name: "Consent & Authorisation Capture"
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Capture of treatment, financial, and information-sharing consents and authorisations.
+        children: []
+      - id: BC-2800.20.40
+        name: Patient Identifier Management
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Issuance and maintenance of medical record numbers and enterprise patient identifiers.
+        children: []
+  - id: BC-2800.30
+    name: "Eligibility & Benefits Verification"
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Verification of insurance coverage, benefits, and authorisation
+      requirements before service delivery.
+    children:
+      - id: BC-2800.30.10
+        name: Insurance Coverage Verification
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Verification of active insurance coverage and plan details.
+        children: []
+      - id: BC-2800.30.20
+        name: Benefits Determination
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Determination of patient benefits, deductibles, copays, and coverage limits.
+        children: []
+      - id: BC-2800.30.30
+        name: Prior Authorisation Management
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Submission, tracking, and follow-up of prior authorisation requests with payers.
+        children: []
+      - id: BC-2800.30.40
+        name: Real-Time Eligibility Inquiry
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Real-time electronic eligibility and benefits inquiry against payer systems.
+        children: []
+  - id: BC-2800.40
+    name: "Financial Counselling & Estimation"
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Patient-facing financial counselling, out-of-pocket estimation, and
+      enrolment in financial assistance or self-pay arrangements.
+    children:
+      - id: BC-2800.40.10
+        name: Patient Financial Assessment
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Assessment of patient financial capacity and payment options.
+        children: []
+      - id: BC-2800.40.20
+        name: Cost Estimation
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Generation of out-of-pocket and total cost estimates for planned services.
+        children: []
+      - id: BC-2800.40.30
+        name: "Charity Care & Financial Assistance"
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Eligibility determination and enrolment in charity care and financial assistance programmes.
+        children: []
+      - id: BC-2800.40.40
+        name: Self-Pay Setup
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Setup of self-pay arrangements, prepayments, and instalment plans.
+        children: []
+  - id: BC-2800.50
+    name: "Admissions, Transfers & Discharges Management"
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Operational management of inpatient admissions, inter-facility
+      transfers, bed assignment, and discharge disposition capture.
+    children:
+      - id: BC-2800.50.10
+        name: Inpatient Admission
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Admission of patients to inpatient services from scheduled and unscheduled sources.
+        children: []
+      - id: BC-2800.50.20
+        name: Inter-Facility Transfer
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Coordination of patient transfers between facilities and levels of care.
+        children: []
+      - id: BC-2800.50.30
+        name: Bed Assignment
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Assignment and reassignment of inpatient beds based on acuity, isolation, and capacity.
+        children: []
+      - id: BC-2800.50.40
+        name: Discharge Disposition Capture
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Capture of discharge disposition, post-acute placement, and transfer-out destination.
+        children: []
+  - id: BC-2800.60
+    name: Pre-Service Readiness Management
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Pre-procedure clearance, documentation verification, and patient
+      preparation activities completed before service delivery.
+    children:
+      - id: BC-2800.60.10
+        name: Pre-Procedure Clearance
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Clinical and anaesthesia clearance for scheduled procedures.
+        children: []
+      - id: BC-2800.60.20
+        name: Required Documentation Verification
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Verification that orders, consents, and history-and-physical documentation are complete.
+        children: []
+      - id: BC-2800.60.30
+        name: Pre-Visit Outreach
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Pre-visit patient outreach for forms, history, and pre-registration.
+        children: []
+      - id: BC-2800.60.40
+        name: Patient Preparation Instructions
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Delivery of pre-procedure and pre-visit preparation instructions to patients.
+        children: []

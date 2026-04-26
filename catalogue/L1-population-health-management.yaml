@@ -1,0 +1,230 @@
+# Population Health Management
+id: BC-2880
+name: Population Health Management
+level: 1
+industry: Healthcare Providers
+description: |
+  Risk stratification, preventive care, chronic disease management,
+  value-based care operations, panel and empanelment management, and
+  population analytics for attributed and at-risk populations.
+references:
+  - https://www.cms.gov/medicare/quality/value-based-programs
+  - https://www.ncqa.org/hedis/
+  - https://www.ahrq.gov/cpi/
+  - https://www.cdc.gov/chronicdisease/
+children:
+  - id: BC-2880.10
+    name: "Risk Stratification & Identification"
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Predictive modelling and identification of rising-risk and care-gap
+      populations.
+    children:
+      - id: BC-2880.10.10
+        name: Predictive Risk Modelling
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Development and operation of predictive risk models for cost and clinical outcomes.
+        children: []
+      - id: BC-2880.10.20
+        name: Rising-Risk Identification
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Identification of rising-risk patients for early intervention.
+        children: []
+      - id: BC-2880.10.30
+        name: Cohort Definition
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Definition and maintenance of clinical cohorts for population programmes.
+        children: []
+      - id: BC-2880.10.40
+        name: Care Gap Identification
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Identification of evidence-based care gaps across populations.
+        children: []
+  - id: BC-2880.20
+    name: "Preventive Care & Wellness"
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Screening, immunisation, health risk assessment, and wellness coaching
+      programmes.
+    children:
+      - id: BC-2880.20.10
+        name: Screening Outreach
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Outreach for evidence-based preventive screenings.
+        children: []
+      - id: BC-2880.20.20
+        name: Immunisation Programmes
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Adult and paediatric immunisation programme delivery.
+        children: []
+      - id: BC-2880.20.30
+        name: Health Risk Assessment
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Health risk assessment delivery and follow-up.
+        children: []
+      - id: BC-2880.20.40
+        name: Wellness Coaching
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Lifestyle and wellness coaching programme delivery.
+        children: []
+  - id: BC-2880.30
+    name: Chronic Disease Management
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Disease-specific management programmes for major chronic conditions.
+    children:
+      - id: BC-2880.30.10
+        name: Diabetes Care Programmes
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Diabetes management programmes including education and remote monitoring.
+        children: []
+      - id: BC-2880.30.20
+        name: Cardiovascular Disease Programmes
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Cardiovascular disease and hypertension management programmes.
+        children: []
+      - id: BC-2880.30.30
+        name: Behavioural Health Integration
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Integration of behavioural health into primary and chronic care management.
+        children: []
+      - id: BC-2880.30.40
+        name: Respiratory Disease Programmes
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Asthma, chronic obstructive pulmonary disease, and respiratory disease programmes.
+        children: []
+  - id: BC-2880.40
+    name: Value-Based Care Operations
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Operations supporting accountable care, bundled payment, and value-
+      based contractual programmes.
+    children:
+      - id: BC-2880.40.10
+        name: Accountable Care Operations
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Operations of accountable care organisations and shared-savings programmes.
+        children: []
+      - id: BC-2880.40.20
+        name: Bundled Payment Operations
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Operations supporting episode-based bundled payment programmes.
+        children: []
+      - id: BC-2880.40.30
+        name: Quality Performance Tracking
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Tracking of quality performance against value-based programme requirements.
+        children: []
+      - id: BC-2880.40.40
+        name: Shared-Savings Reconciliation
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Reconciliation of shared-savings and risk-share settlements with payers.
+        children: []
+  - id: BC-2880.50
+    name: "Panel & Empanelment Management"
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Patient empanelment to providers, panel sizing, continuity tracking,
+      and attribution reconciliation.
+    children:
+      - id: BC-2880.50.10
+        name: Patient-Provider Empanelment
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Assignment of patients to primary care providers and care teams.
+        children: []
+      - id: BC-2880.50.20
+        name: Panel Size Management
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Panel size, composition, and capacity management.
+        children: []
+      - id: BC-2880.50.30
+        name: Continuity of Care Tracking
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Tracking of continuity-of-care metrics across panels.
+        children: []
+      - id: BC-2880.50.40
+        name: Attribution Reconciliation
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Reconciliation of payer attribution lists against internal panel data.
+        children: []
+  - id: BC-2880.60
+    name: "Population Analytics & Reporting"
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Population-level analytics covering equity, quality programme
+      performance, cost, utilisation, and outcomes benchmarking.
+    children:
+      - id: BC-2880.60.10
+        name: Health Equity Analytics
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Analytics on disparities, social determinants, and equity outcomes.
+        children: []
+      - id: BC-2880.60.20
+        name: Quality Programme Reporting
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Reporting against quality programmes such as star ratings and quality measures.
+        children: []
+      - id: BC-2880.60.30
+        name: "Cost & Utilisation Analytics"
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Analytics on cost, utilisation, and avoidable spend.
+        children: []
+      - id: BC-2880.60.40
+        name: Outcomes Benchmarking
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Benchmarking of clinical outcomes against peer and national datasets.
+        children: []

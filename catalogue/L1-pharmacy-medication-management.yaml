@@ -1,0 +1,233 @@
+# Pharmacy & Medication Management
+id: BC-2850
+name: "Pharmacy & Medication Management"
+level: 1
+industry: Healthcare Providers
+description: |
+  Provider-side pharmacy operations including formulary, inpatient and
+  outpatient dispensing, medication administration and reconciliation,
+  controlled-substance stewardship, and pharmacy clinical services.
+references:
+  - https://www.ashp.org/
+  - https://www.ncpdp.org/
+  - https://www.usp.org/healthcare-quality-safety
+  - https://www.deadiversion.usdoj.gov/
+  - https://www.fda.gov/drugs
+children:
+  - id: BC-2850.10
+    name: Formulary Management
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Management of the medication formulary, therapeutic interchange, and
+      drug-shortage response.
+    children:
+      - id: BC-2850.10.10
+        name: Formulary Decision Making
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Evidence-based formulary inclusion, exclusion, and tier decisions.
+        children: []
+      - id: BC-2850.10.20
+        name: Therapeutic Interchange
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Therapeutic interchange protocol management and execution.
+        children: []
+      - id: BC-2850.10.30
+        name: "Pharmacy & Therapeutics Committee Support"
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Operational support for the Pharmacy and Therapeutics Committee.
+        children: []
+      - id: BC-2850.10.40
+        name: Drug Shortage Management
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Identification, mitigation, and substitution planning for drug shortages.
+        children: []
+  - id: BC-2850.20
+    name: Inpatient Pharmacy Operations
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Order verification, sterile and non-sterile compounding, dispensing,
+      and intravenous admixture for inpatient services.
+    children:
+      - id: BC-2850.20.10
+        name: Order Verification
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Pharmacist verification of medication orders for safety and appropriateness.
+        children: []
+      - id: BC-2850.20.20
+        name: Sterile Compounding
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Sterile compounding operations including hazardous drug compounding.
+        children: []
+      - id: BC-2850.20.30
+        name: Unit-Dose Dispensing
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Unit-dose preparation and dispensing for inpatient administration.
+        children: []
+      - id: BC-2850.20.40
+        name: Intravenous Admixture Preparation
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Preparation of intravenous admixtures, infusions, and parenteral nutrition.
+        children: []
+  - id: BC-2850.30
+    name: "Outpatient & Specialty Pharmacy Operations"
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Retail, specialty, and mail-order pharmacy operations including
+      discount drug programme operations.
+    children:
+      - id: BC-2850.30.10
+        name: Retail Dispensing
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Retail prescription dispensing at outpatient pharmacies.
+        children: []
+      - id: BC-2850.30.20
+        name: Specialty Drug Management
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Specialty pharmacy operations for high-cost and limited-distribution drugs.
+        children: []
+      - id: BC-2850.30.30
+        name: Mail-Order Fulfilment
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Mail-order prescription fulfilment and delivery operations.
+        children: []
+      - id: BC-2850.30.40
+        name: Discount Drug Programme Operations
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Operations for statutory drug discount programmes and qualifying-entity compliance.
+        children: []
+  - id: BC-2850.40
+    name: "Medication Administration & Reconciliation"
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Bedside medication administration, reconciliation across transitions,
+      and management of patient-supplied medications.
+    children:
+      - id: BC-2850.40.10
+        name: Bedside Medication Administration
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Bar-code-verified bedside medication administration by nursing.
+        children: []
+      - id: BC-2850.40.20
+        name: Medication Reconciliation
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Reconciliation of home and prescribed medications at admission, transfer, and discharge.
+        children: []
+      - id: BC-2850.40.30
+        name: Medication Administration Record Operations
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Operation of the electronic medication administration record.
+        children: []
+      - id: BC-2850.40.40
+        name: Patient-Owned Medication Handling
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Identification, storage, and authorised administration of patient-owned medications.
+        children: []
+  - id: BC-2850.50
+    name: Controlled-Substance Stewardship
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Compliance, diversion monitoring, inventory, and disposal of
+      controlled drugs.
+    children:
+      - id: BC-2850.50.10
+        name: Controlled-Substance Regulatory Compliance
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Compliance with controlled-substance regulations including registration and recordkeeping.
+        children: []
+      - id: BC-2850.50.20
+        name: Diversion Monitoring
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Surveillance and investigation of suspected drug diversion.
+        children: []
+      - id: BC-2850.50.30
+        name: Controlled-Drug Inventory
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Perpetual inventory and reconciliation of controlled drug stocks.
+        children: []
+      - id: BC-2850.50.40
+        name: "Controlled-Drug Disposal & Destruction"
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Disposal, witnessed destruction, and reverse-distribution of controlled drugs.
+        children: []
+  - id: BC-2850.60
+    name: Pharmacy Clinical Services
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Clinical pharmacy services including anticoagulation, antimicrobial
+      stewardship, medication therapy management, and therapeutic drug
+      monitoring.
+    children:
+      - id: BC-2850.60.10
+        name: Anticoagulation Management
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Pharmacist-led anticoagulation dosing and monitoring services.
+        children: []
+      - id: BC-2850.60.20
+        name: Antimicrobial Stewardship Pharmacy
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Pharmacy contribution to antimicrobial stewardship programmes.
+        children: []
+      - id: BC-2850.60.30
+        name: Medication Therapy Management
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Pharmacist-delivered medication therapy management consultations.
+        children: []
+      - id: BC-2850.60.40
+        name: Therapeutic Drug Monitoring
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Therapeutic drug monitoring and dose individualisation services.
+        children: []
