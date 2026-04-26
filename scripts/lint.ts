@@ -18,10 +18,13 @@ import {
   l1Slug,
   listYamlFiles,
   loadL1File,
+  loadValueStreams,
   readIndex,
   type FlatCapability,
   type RawCapability,
 } from "./lib/load.ts";
+
+const L1_ID_REGEX = /^BC-\d+$/;
 
 interface LintError {
   file: string;
@@ -182,6 +185,32 @@ for (const { file, node } of allFlat) {
       file,
       `id ${node.id}: successor_id '${node.successor_id}' does not resolve to any catalogue node`
     );
+  }
+}
+
+// ---------------------------------------------------------------------------
+// 11. Value streams: stage capability_id must be L1, must resolve.
+// Sub-scope detail belongs in the 'notes' field; the site auto-expands an L1
+// to its descendants when filtering.
+// ---------------------------------------------------------------------------
+const l1Set = new Set(
+  allFlat.filter(({ node }) => node.level === 1).map(({ node }) => node.id)
+);
+for (const stream of loadValueStreams()) {
+  for (const stage of stream.stages) {
+    const id = stage.capability_id;
+    if (!L1_ID_REGEX.test(id)) {
+      err(
+        "_value-streams.yaml",
+        `Stream '${stream.name}' / stage '${stage.stage_name}': capability_id ${id} is not L1. ` +
+          `Use the L1 (e.g. ${id.split(".")[0]}) and put sub-scope in 'notes'.`
+      );
+    } else if (!l1Set.has(id)) {
+      err(
+        "_value-streams.yaml",
+        `Stream '${stream.name}' / stage '${stage.stage_name}': L1 ${id} not found in catalogue`
+      );
+    }
   }
 }
 

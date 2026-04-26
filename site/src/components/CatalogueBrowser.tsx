@@ -152,18 +152,28 @@ export default function CatalogueBrowser({ data, valueStreams }: Props) {
     [valueStreams]
   );
 
-  /** capabilityId → set of value-stream names containing it. */
+  /**
+   * capabilityId → set of value-stream names containing it.
+   * Stages map to L1 capability_ids; this index expands each stage to the
+   * full subtree so any descendant is matched by the stream filter.
+   */
   const valueStreamsByCapability = useMemo(() => {
     const map = new Map<string, Set<string>>();
+    const add = (id: string, name: string) => {
+      const set = map.get(id) ?? new Set<string>();
+      set.add(name);
+      map.set(id, set);
+    };
     for (const stream of valueStreams) {
       for (const stage of stream.stages) {
-        const set = map.get(stage.capability_id) ?? new Set<string>();
-        set.add(stream.name);
-        map.set(stage.capability_id, set);
+        add(stage.capability_id, stream.name);
+        for (const d of descendantsOf.get(stage.capability_id) ?? []) {
+          add(d, stream.name);
+        }
       }
     }
     return map;
-  }, [valueStreams]);
+  }, [valueStreams, descendantsOf]);
 
   // Filters / state --------------------------------------------------------
   const [query, setQuery] = useState("");
@@ -1108,8 +1118,12 @@ function DetailModal({
   const inStreams: { stream: string; stage: ValueStreamStage }[] = [];
   for (const s of valueStreams) {
     for (const stage of s.stages) {
-      if (stage.capability_id === node.id)
+      if (
+        stage.capability_id === node.id ||
+        node.id.startsWith(stage.capability_id + ".")
+      ) {
         inStreams.push({ stream: s.name, stage });
+      }
     }
   }
 

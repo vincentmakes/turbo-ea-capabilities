@@ -31,7 +31,8 @@ If a name is ambiguous (substring match against multiple L1s, or a typo), show t
 1. Read **`business-capability-governance-model.md`** §3–§7 (levels, decomposition, naming, identifiers, metadata), §9.4 (lint rules), and §9.8 (reference frameworks — you will both *consult* and possibly *update* this section).
 2. Read **`schema/capability.schema.json`** to confirm the exact YAML shape and required fields.
 3. Read **`catalogue/_index.yaml`** to see all registered L1s.
-4. Identify the target industry. Read **2–3 peer L1s in the same industry** to absorb the local naming style, depth, and description tone. Examples:
+4. Read **`catalogue/_value-streams.yaml`** so you have the existing 24 streams in context for Step 7.5 (value-stream mapping). Skim the canonical + industry-specific stream tables in `.claude/skills/map-value-streams/SKILL.md` Step 2 — they're the cheatsheet you'll use to score fit.
+5. Identify the target industry. Read **2–3 peer L1s in the same industry** to absorb the local naming style, depth, and description tone. Examples:
    - Banking → `L1-banking-customer-management.yaml`, `L1-banking-credit-and-lending-management.yaml`
    - Pharma → `L1-pharmaceutical-manufacturing-management.yaml`, `L1-clinical-trials-management.yaml`
    - Manufacturing → `L1-manufacturing-operations-management.yaml`, `L1-production-planning-management.yaml`
@@ -237,12 +238,40 @@ Also confirm:
 - If Step 1.5 added a §9.8 entry, the new subsection is in alphabetical order, uses the existing format (`**<Standard>** — <one-line scope>.`), and is no longer listed under "Other industry anchors not yet exercised in the catalogue".
 - The new YAML's `references` field cites at least one anchor from the §9.8 entry you just added (otherwise the §9.8 update is dead weight).
 
+## Step 7.5 — Map to existing value streams (skip in Extend mode)
+
+After lint passes, every new L1 should be evaluated against the catalogue's value streams so coverage stays in sync with the capability set. Extending an existing L1 (Extend mode) doesn't change its stream membership, so skip this step.
+
+For each newly written L1:
+
+1. **Score fit against every stream in `catalogue/_value-streams.yaml`.** Use the canonical and industry-specific tables in `.claude/skills/map-value-streams/SKILL.md` Step 2 as the cheatsheet — do not duplicate them here. Apply the same heuristics as `map-value-streams` Step 3 (cross-industry L1s → canonical streams; industry-specific L1s → industry stream first, then canonical).
+2. **Decide stage placement.** For each fitting stream, choose `stage_order` and `stage_name` from the stream's existing stages. If the new L1 fits at a stage that doesn't yet exist, propose a new `stage_name` with the next sensible `stage_order`. Set `industry_variant` only when the L1 is industry-specific *and* the same stage already has a generic equivalent. Write a one-line `notes` per stage entry.
+3. **Flag coverage gaps.** When no existing stream covers the new L1's primary role, emit a Coverage-gap notice (same format used by `map-value-streams`):
+
+   ```
+   Coverage gap: <new L1 name> (<BC-id>)
+     No existing stream covers this capability's primary role of <one-sentence summary>.
+     Suggested new streams:
+       - <Suggested-Name-1> — <one-line rationale>
+       - <Suggested-Name-2> — <alternative framing>
+     Add via /map-value-streams or defer; the L1 is fully usable without a stream mapping.
+   ```
+
+   Limit suggestions to 1–2 names. **Do not draft stages for the suggested streams** — that's a separate, deliberate decision.
+4. **Present one batched proposal**, grouped by stream, in the same table format as `map-value-streams` Step 4. Include any Coverage-gap notices alongside. Ask once for approval; acceptable responses: *approve*, *approve except X*, *redo with Y different*, *skip mapping*.
+5. **On approval**, append the approved stages to `catalogue/_value-streams.yaml` (one entry per fit, dedupe within `stream + stage_order + stage_name + industry_variant`, merge notes with `;` if collapsing). Re-run `npm run lint` to confirm the L1-only rule and reference resolution still pass.
+6. **On skip / decline**, leave `_value-streams.yaml` untouched. Carry any Coverage gaps forward to the Step 8 hand-off so the user has a record.
+
+In **Industry mode**, batch all the new L1s into one proposal table (group by stream, then by L1 within each stream). The user gets one approval covering the whole industry's value-stream wiring.
+
 ## Step 8 — Hand off
 
-After lint passes, suggest the next step using *names* (not IDs):
+After lint passes (and Step 7.5 completed or was skipped), summarise using *names* (not IDs):
 
-- **Industry mode** — *"<N> L1s, <M> L2s, <K> L3s in place for <Industry>. Run `/map-value-streams --industry \"<Industry>\"` to wire all of them into value streams autonomously."*
-- **New L1 / Extend mode** — *"L1 / L2 / L3 in place. Run `/map-value-streams \"<L1 name>\"` to wire this capability into value streams."*
+- **Mappings written** — *"L1 / L2 / L3 in place for `<L1 name>`; mapped to `<N>` stream(s): `<comma-separated names>`. Open a PR; CODEOWNERS for `catalogue/` will be auto-requested."*
+- **Coverage gap logged** — repeat the gap notice from Step 7.5 and recommend either (a) adding a new stream now via a manual edit to `_value-streams.yaml` followed by `/map-value-streams "<L1 name>"`, or (b) merging the L1 first and revisiting the stream gap as a follow-up. Do not block on this.
+- **Mapping skipped** — *"L1 / L2 / L3 in place for `<L1 name>`; value-stream mapping skipped. Run `/map-value-streams \"<L1 name>\"` later when ready."*
+- **Extend mode** — *"L2 / L3 added under `<parent L1 name>`. Validation passed. Existing stream mappings on the parent are unchanged."*
 
 ## Anti-patterns to refuse
 
