@@ -1,0 +1,247 @@
+# Connected Product & Firmware Management
+id: BC-1950
+name: "Connected Product & Firmware Management"
+level: 1
+industry: "Electrical Components & Equipment"
+description: |
+  Operational lifecycle of connected electrical products in the field — device identity,
+  firmware build and release, OTA updates, telemetry, product cybersecurity, IIoT platform ops.
+children:
+  - id: BC-1950.10
+    name: "Device Identity & Provisioning Management"
+    level: 2
+    industry: "Electrical Components & Equipment"
+    description: |
+      Issuance and lifecycle of device identities and cryptographic credentials.
+    children:
+      - id: BC-1950.10.10
+        name: Device Identity Issuance
+        level: 3
+        industry: "Electrical Components & Equipment"
+        description: |
+          Issuance of unique device identities at manufacture.
+        children: []
+      - id: BC-1950.10.20
+        name: Cryptographic Key Provisioning
+        level: 3
+        industry: "Electrical Components & Equipment"
+        description: |
+          Provisioning of cryptographic keys to devices.
+        children: []
+      - id: BC-1950.10.30
+        name: Device Onboarding to Platform
+        level: 3
+        industry: "Electrical Components & Equipment"
+        description: |
+          Onboarding of devices to the connected-product platform.
+        children: []
+      - id: BC-1950.10.40
+        name: Device Decommissioning
+        level: 3
+        industry: "Electrical Components & Equipment"
+        description: |
+          Decommissioning and credential revocation for retired devices.
+        children: []
+  - id: BC-1950.20
+    name: "Firmware Build & Release Management"
+    level: 2
+    industry: "Electrical Components & Equipment"
+    description: |
+      Build pipelines, release approval, signing, and version inventory for production firmware.
+    children:
+      - id: BC-1950.20.10
+        name: Firmware Build Pipeline Management
+        level: 3
+        industry: "Electrical Components & Equipment"
+        description: |
+          Operation of firmware build and continuous integration pipelines.
+        children: []
+      - id: BC-1950.20.20
+        name: Firmware Release Approval
+        level: 3
+        industry: "Electrical Components & Equipment"
+        description: |
+          Stage-gate approval of firmware releases for deployment.
+        children: []
+      - id: BC-1950.20.30
+        name: "Firmware Signing & Integrity Management"
+        level: 3
+        industry: "Electrical Components & Equipment"
+        description: |
+          Code signing and integrity protection of firmware artefacts.
+        children: []
+      - id: BC-1950.20.40
+        name: Firmware Version Inventory
+        level: 3
+        industry: "Electrical Components & Equipment"
+        description: |
+          Inventory of firmware versions deployed across the installed base.
+        children: []
+  - id: BC-1950.30
+    name: Over-the-Air Update Management
+    level: 2
+    industry: "Electrical Components & Equipment"
+    description: |
+      Planning, execution, and rollback of over-the-air firmware updates.
+    children:
+      - id: BC-1950.30.10
+        name: OTA Campaign Planning
+        level: 3
+        industry: "Electrical Components & Equipment"
+        description: |
+          Planning of OTA campaigns and rollout cohorts.
+        children: []
+      - id: BC-1950.30.20
+        name: OTA Rollout Execution
+        level: 3
+        industry: "Electrical Components & Equipment"
+        description: |
+          Execution of OTA rollouts and progress tracking.
+        children: []
+      - id: BC-1950.30.30
+        name: OTA Rollback Management
+        level: 3
+        industry: "Electrical Components & Equipment"
+        description: |
+          Rollback of failed OTA updates to known-good versions.
+        children: []
+      - id: BC-1950.30.40
+        name: OTA Compatibility Verification
+        level: 3
+        industry: "Electrical Components & Equipment"
+        description: |
+          Verification of firmware compatibility before OTA release.
+        children: []
+  - id: BC-1950.40
+    name: "Device Telemetry & Connectivity Management"
+    level: 2
+    industry: "Electrical Components & Equipment"
+    description: |
+      Telemetry ingestion, connectivity state, routing, and carrier or SIM management.
+    children:
+      - id: BC-1950.40.10
+        name: Telemetry Ingestion Operations
+        level: 3
+        industry: "Electrical Components & Equipment"
+        description: |
+          Ingestion of device telemetry into platform stores.
+        children: []
+      - id: BC-1950.40.20
+        name: Connectivity State Monitoring
+        level: 3
+        industry: "Electrical Components & Equipment"
+        description: |
+          Monitoring of device connectivity state and reachability.
+        children: []
+      - id: BC-1950.40.30
+        name: Telemetry Data Routing
+        level: 3
+        industry: "Electrical Components & Equipment"
+        description: |
+          Routing of telemetry to downstream consumers and analytics.
+        children: []
+      - id: BC-1950.40.40
+        name: "Network Carrier & SIM Management"
+        level: 3
+        industry: "Electrical Components & Equipment"
+        description: |
+          Management of cellular carrier relationships and SIM inventory.
+        children: []
+  - id: BC-1950.50
+    name: Connected Product Cybersecurity Management
+    level: 2
+    industry: "Electrical Components & Equipment"
+    description: |
+      Product-side cybersecurity covering threats, vulnerabilities, secure boot, and conformance.
+    children:
+      - id: BC-1950.50.10
+        name: Product Threat Modelling
+        level: 3
+        industry: "Electrical Components & Equipment"
+        description: |
+          Threat modelling for connected product designs.
+        children: []
+      - id: BC-1950.50.20
+        name: "Vulnerability Disclosure & Response"
+        level: 3
+        industry: "Electrical Components & Equipment"
+        description: |
+          Coordinated disclosure and response to product vulnerabilities.
+        children: []
+      - id: BC-1950.50.30
+        name: "Secure Boot & Attestation"
+        level: 3
+        industry: "Electrical Components & Equipment"
+        description: |
+          Secure boot and attestation mechanisms on devices.
+        children: []
+      - id: BC-1950.50.40
+        name: Product Cybersecurity Conformance
+        level: 3
+        industry: "Electrical Components & Equipment"
+        description: |
+          Conformance of connected products to IEC 62443 and equivalent regimes.
+        children: []
+  - id: BC-1950.60
+    name: Connected Product Platform Operations
+    level: 2
+    industry: "Electrical Components & Equipment"
+    description: |
+      Operation of the IIoT platform underlying connected products.
+    children:
+      - id: BC-1950.60.10
+        name: IIoT Platform Tenant Management
+        level: 3
+        industry: "Electrical Components & Equipment"
+        description: |
+          Tenant onboarding and isolation on the IIoT platform.
+        children: []
+      - id: BC-1950.60.20
+        name: "Platform Capacity & Performance"
+        level: 3
+        industry: "Electrical Components & Equipment"
+        description: |
+          Capacity planning and performance management of the platform.
+        children: []
+      - id: BC-1950.60.30
+        name: Platform Integration Services
+        level: 3
+        industry: "Electrical Components & Equipment"
+        description: |
+          Integration of the platform with enterprise and customer systems.
+        children: []
+      - id: BC-1950.60.40
+        name: Platform API Lifecycle
+        level: 3
+        industry: "Electrical Components & Equipment"
+        description: |
+          Lifecycle of platform-exposed APIs and SDKs.
+        children: []
+  - id: BC-1950.70
+    name: "Edge & Gateway Operations Management"
+    level: 2
+    industry: "Electrical Components & Equipment"
+    description: |
+      Operation of edge applications and gateway devices in the field.
+    children:
+      - id: BC-1950.70.10
+        name: Edge Application Deployment
+        level: 3
+        industry: "Electrical Components & Equipment"
+        description: |
+          Deployment of edge applications to gateways and controllers.
+        children: []
+      - id: BC-1950.70.20
+        name: Gateway Configuration Management
+        level: 3
+        industry: "Electrical Components & Equipment"
+        description: |
+          Configuration management of field gateway devices.
+        children: []
+      - id: BC-1950.70.30
+        name: Edge Health Monitoring
+        level: 3
+        industry: "Electrical Components & Equipment"
+        description: |
+          Health monitoring of edge devices and applications.
+        children: []

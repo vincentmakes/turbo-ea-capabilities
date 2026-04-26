@@ -450,6 +450,22 @@ Where an industry reference framework exists, anchor the upper levels (L1 / L2) 
 - **E.O. 13587, ICD 203** — insider threat and analytic tradecraft standards.
 - **Shipley capture management** — bid/proposal practice.
 
+**Electrical components & equipment**
+
+- **IEC standards portfolio (60034 rotating machinery, 60076 transformers, 60204 machinery electrical, 60364 LV installations, 61439 LV assemblies, 60947 LV switchgear, 61000 EMC, 61508/61511 functional safety)** — international electrotechnical equipment standards.
+- **UL standards (UL 489, UL 508A, UL 60947, UL 1741, UL 9540)** — North American product safety certification.
+- **CSA Group standards** — Canadian product certification.
+- **CE marking framework (Low Voltage Directive 2014/35/EU, EMC Directive 2014/30/EU, ErP / Ecodesign, Machinery Regulation 2023/1230)** — EU placing-on-market regime.
+- **CB Scheme (IECEE)** — multilateral product safety certification recognition.
+- **IEEE standards (519 harmonics, C57 transformers, 1547 interconnection, 1584 arc flash)** — power systems and grid interface.
+- **NEMA standards / NEC (NFPA 70)** — North American electrical equipment ratings and installation code.
+- **IECEx / ATEX (Directive 2014/34/EU)** — equipment for explosive atmospheres.
+- **IPC standards (IPC-A-610, IPC J-STD-001)** — electronic assembly workmanship and qualification.
+- **JEDEC, AEC-Q100 / AEC-Q200** — semiconductor and automotive electronic component qualification.
+- **IEC 62443** — industrial automation and control system cybersecurity.
+- **IATF 16949, ISO 26262** — automotive QMS and functional safety for electronic systems supplying automotive OEMs.
+- **RoHS 2011/65/EU, REACH, WEEE 2012/19/EU, EU Battery Regulation 2023/1542, Dodd-Frank §1502 / EU Conflict Minerals 2017/821** — substance restrictions, end-of-life, and responsible sourcing.
+
 **Other industry anchors not yet exercised in the catalogue but recommended for adoption**
 
 - **eTOM** — telecommunications.
