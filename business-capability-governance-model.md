@@ -508,6 +508,31 @@ Where an industry reference framework exists, anchor the upper levels (L1 / L2) 
 - **BRCGS, SQF, FSSC 22000, IFS Food, ISO 22000** — food-safety management systems and certification standards.
 - **OECD Due Diligence Guidance for the Garment & Footwear Sector, WRAP, SA8000** — ethical-sourcing and labour standards relevant to consumer-goods supply chains.
 
+**Transportation & Logistics**
+
+- **SCOR (Supply Chain Operations Reference) — APICS/ASCM** — cross-modal supply-chain process taxonomy used as a process anchor by carriers, forwarders, and 3PLs.
+- **GS1 Global Logistics standards (SSCC, GLN, GTIN, EPCIS)** — identification of logistic units, parties, products, and event-based traceability.
+- **UN/CEFACT (UN Layout Key, UN/EDIFACT, MMT Reference Data Model)** — international trade and transport messaging.
+- **EDI standards (ANSI X12 — 204, 214, 856, 990, 997; EDIFACT IFTMIN / IFTSTA / IFTMBF)** — trading-partner transport messaging.
+- **IATA Cargo Resolutions (618, 619, 670, 672), Cargo-XML, ONE Record, e-AWB, CASS** — air cargo data, settlement, and message standards.
+- **ICAO Annex 18 / IATA DGR** — air dangerous goods.
+- **IMO Conventions (SOLAS, MARPOL, STCW, ISPS, MLC)** — maritime safety, pollution prevention, training, security, and labour.
+- **IMO IMDG Code** — maritime dangerous goods.
+- **DCSA (Digital Container Shipping Association)** — container shipping data and process interoperability.
+- **BIMCO, FIATA, FONASBA forms** — chartering, freight forwarding, and agency standard contracts.
+- **ISO 6346** — container identification and marking.
+- **AAR Interchange Rules, UIC leaflets, OTIF / COTIF, CIM / SMGS** — rail interchange and international rail consignment.
+- **CMR Convention** — international carriage of goods by road.
+- **ADR / RID** — European agreements for road and rail dangerous goods.
+- **FMCSA Hours-of-Service / ELD Mandate, EU Mobility Package (Reg 561/2006)** — driver safety and rest-time regulation.
+- **WCO SAFE Framework, AEO** — supply-chain security accreditation.
+- **WCO Harmonized System, Single Window Reference Data Model** — tariff classification and customs data.
+- **C-TPAT, EU UCC, ICS2, CBP ACE** — customs trusted-trader and electronic-filing regimes.
+- **TAPA FSR / TSR / PSR** — freight security requirements for facility, trucking, and parking.
+- **GLEC Framework / ISO 14083** — logistics greenhouse-gas emissions accounting.
+- **ISO 39001** — road traffic safety management systems.
+- **Hague-Visby Rules, Hamburg Rules, Rotterdam Rules, Montreal Convention, Warsaw Convention** — carrier liability conventions.
+
 **Other industry anchors not yet exercised in the catalogue but recommended for adoption**
 
 - **eTOM** — telecommunications.

@@ -1,0 +1,158 @@
+# Shipment Visibility & Tracking Management
+id: BC-2510
+name: "Shipment Visibility & Tracking Management"
+level: 1
+industry: "Transportation & Logistics"
+description: |
+  End-to-end visibility of shipments through event capture, status resolution,
+  ETA prediction, exception alerting, and control-tower operations.
+children:
+  - id: BC-2510.10
+    name: Event Capture and Status Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Capture of shipment events from carriers, IoT, and operational systems
+      and translation into canonical statuses.
+    in_scope:
+      - EDI 214, IFTSTA, and EPCIS event ingestion
+      - IoT and telematics event capture
+    out_of_scope:
+      - Telematics for asset condition (BC-2430.40)
+    children:
+      - id: BC-2510.10.10
+        name: Carrier Event Ingestion
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Ingestion of carrier-side milestone events via EDI and APIs.
+        children: []
+      - id: BC-2510.10.20
+        name: IoT and Telematics Event Capture
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Capture of cargo-level IoT and telematics events.
+        children: []
+      - id: BC-2510.10.30
+        name: Manual Status Update Capture
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Capture of manual status updates from drivers, agents, and partners.
+        children: []
+  - id: BC-2510.20
+    name: Shipment Tracking Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Resolution of shipment status across legs, modes, and partners and
+      delivery to internal and customer-facing tracking surfaces.
+    children:
+      - id: BC-2510.20.10
+        name: Shipment Status Resolution
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Resolution of canonical shipment status from raw events.
+        children: []
+      - id: BC-2510.20.20
+        name: Multi-Leg Tracking Stitching
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Stitching of multi-leg, multi-carrier journeys into a single track.
+        children: []
+      - id: BC-2510.20.30
+        name: Public Tracking Portal Operations
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Operation of public tracking portals and customer APIs.
+        children: []
+  - id: BC-2510.30
+    name: ETA Prediction Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Calculation and continuous refinement of estimated time of arrival.
+    children:
+      - id: BC-2510.30.10
+        name: ETA Calculation
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Deterministic ETA calculation from schedules and milestones.
+        children: []
+      - id: BC-2510.30.20
+        name: Predictive ETA Modelling
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Predictive ETA modelling using historical and contextual data.
+        children: []
+      - id: BC-2510.30.30
+        name: ETA Variance Alerting
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Alerting on material ETA variances against commitment.
+        children: []
+  - id: BC-2510.40
+    name: Exception and Alert Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Detection of operational exceptions, notification of stakeholders, and
+      tracking of exception resolution.
+    children:
+      - id: BC-2510.40.10
+        name: Exception Detection
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Rule- and model-based detection of operational exceptions.
+        children: []
+      - id: BC-2510.40.20
+        name: Stakeholder Notification
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Notification of customers, operations teams, and partners.
+        children: []
+      - id: BC-2510.40.30
+        name: Exception Resolution Tracking
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Tracking of exception triage, ownership, and closure.
+        children: []
+  - id: BC-2510.50
+    name: Control Tower Operations Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      End-to-end visibility, performance monitoring, and proactive
+      intervention coordination across carriers and partners.
+    children:
+      - id: BC-2510.50.10
+        name: End-to-End Visibility Dashboarding
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Operation of end-to-end visibility dashboards across the network.
+        children: []
+      - id: BC-2510.50.20
+        name: Cross-Carrier Performance Monitoring
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Monitoring of performance across carriers and partners.
+        children: []
+      - id: BC-2510.50.30
+        name: Proactive Intervention Coordination
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Coordination of proactive interventions to protect commitments.
+        children: []

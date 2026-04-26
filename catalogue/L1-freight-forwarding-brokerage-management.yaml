@@ -1,0 +1,160 @@
+# Freight Forwarding & Brokerage Management
+id: BC-2450
+name: "Freight Forwarding & Brokerage Management"
+level: 1
+industry: "Transportation & Logistics"
+description: |
+  Arrangement of transport on behalf of shippers as freight forwarder, NVOCC,
+  freight broker, or customs broker, including multimodal coordination and
+  partner network operations.
+children:
+  - id: BC-2450.10
+    name: Shipper Quotation Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Receipt of shipper requests for quotation and issuance of forwarder rates
+      across modes and carriers.
+    in_scope:
+      - Multi-carrier rate sourcing for shipper enquiries
+      - Quote validity and confirmation tracking
+    out_of_scope:
+      - Carrier-side rate-card and tariff management (BC-2520)
+    children:
+      - id: BC-2450.10.10
+        name: Quote Request Capture
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Capture of shipper quote requests across channels.
+        children: []
+      - id: BC-2450.10.20
+        name: Multi-Carrier Rate Search
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Search and comparison of rates across underlying carriers.
+        children: []
+      - id: BC-2450.10.30
+        name: Quote Issuance and Validity
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Issuance of binding and indicative quotes and tracking validity.
+        children: []
+  - id: BC-2450.20
+    name: Carrier Procurement and Allocation Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Booking of capacity with underlying carriers and management of carrier
+      allocations and spend.
+    children:
+      - id: BC-2450.20.10
+        name: Carrier Selection
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Selection of underlying carriers per shipment.
+        children: []
+      - id: BC-2450.20.20
+        name: Carrier Booking Execution
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Booking of capacity with selected carriers.
+        children: []
+      - id: BC-2450.20.30
+        name: Allocation Spend Optimisation
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Optimisation of forwarder spend across carrier allocations.
+        children: []
+  - id: BC-2450.30
+    name: Multimodal Forwarding Coordination
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Coordination of multi-leg, multi-modal moves including consolidation,
+      deconsolidation, and house bills.
+    children:
+      - id: BC-2450.30.10
+        name: House Bill of Lading Issuance
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Issuance of forwarder house bills of lading for shippers.
+        children: []
+      - id: BC-2450.30.20
+        name: Multi-Leg Movement Coordination
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Coordination of multi-leg moves across carriers and modes.
+        children: []
+      - id: BC-2450.30.30
+        name: Consolidation and Deconsolidation
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Cargo consolidation at origin and deconsolidation at destination.
+        children: []
+  - id: BC-2450.40
+    name: Customs Brokerage Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Provision of customs brokerage services on behalf of importers and
+      exporters.
+    children:
+      - id: BC-2450.40.10
+        name: Customs Entry Preparation
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Preparation of customs entries on behalf of clients.
+        children: []
+      - id: BC-2450.40.20
+        name: Duty and Tax Calculation
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Calculation and disbursement of duties and indirect taxes for clients.
+        children: []
+      - id: BC-2450.40.30
+        name: Brokerage Status Tracking
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Tracking of brokerage progress and exception resolution.
+        children: []
+  - id: BC-2450.50
+    name: Forwarder Network Coordination
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Coordination with origin, destination, and partner agents in a forwarder
+      network including inter-office settlement.
+    children:
+      - id: BC-2450.50.10
+        name: Origin and Destination Agent Coordination
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Coordination of activities with origin and destination agents.
+        children: []
+      - id: BC-2450.50.20
+        name: Inter-Office Settlement
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Inter-office and inter-agent settlement of forwarding revenue and cost.
+        children: []
+      - id: BC-2450.50.30
+        name: Partner Agent Performance Management
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Management of partner-agent service quality and compliance.
+        children: []

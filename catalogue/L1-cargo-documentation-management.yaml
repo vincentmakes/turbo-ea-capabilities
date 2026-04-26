@@ -1,0 +1,160 @@
+# Cargo Documentation Management
+id: BC-2500
+name: Cargo Documentation Management
+level: 1
+industry: "Transportation & Logistics"
+description: |
+  Issuance, exchange, and lifecycle management of cargo documents including
+  bills of lading, air waybills, road and rail consignment notes, manifests,
+  and their electronic equivalents.
+children:
+  - id: BC-2500.10
+    name: Bill of Lading Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Issuance, surrender, and management of ocean and inland-water bills of
+      lading in negotiable and non-negotiable forms.
+    in_scope:
+      - Master and house bills of lading
+      - Negotiable, straight, and seaway bill variants
+    out_of_scope:
+      - Letter-of-credit handling under trade finance (BC-1360)
+    children:
+      - id: BC-2500.10.10
+        name: Bill of Lading Issuance
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Issuance of master and house bills of lading.
+        children: []
+      - id: BC-2500.10.20
+        name: Bill of Lading Surrender and Release
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Telex release, surrender, and cargo release against bills of lading.
+        children: []
+      - id: BC-2500.10.30
+        name: Negotiable and Straight BL Variants
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Issuance of negotiable, straight, and seaway-bill variants.
+        children: []
+  - id: BC-2500.20
+    name: Air Waybill Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Issuance and management of master and house air waybills including e-AWB.
+    children:
+      - id: BC-2500.20.10
+        name: Master Air Waybill Issuance
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Issuance of master air waybills by air carriers.
+        children: []
+      - id: BC-2500.20.20
+        name: House Air Waybill Issuance
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Issuance of house air waybills by forwarders and consolidators.
+        children: []
+      - id: BC-2500.20.30
+        name: e-AWB Conversion and Maintenance
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Conversion of paper AWBs to e-AWB and lifecycle maintenance.
+        children: []
+  - id: BC-2500.30
+    name: Road and Rail Consignment Note Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Issuance and management of road and rail consignment notes under CMR
+      and CIM/SMGS regimes.
+    children:
+      - id: BC-2500.30.10
+        name: CMR Consignment Note Issuance
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Issuance of CMR consignment notes for international road carriage.
+        children: []
+      - id: BC-2500.30.20
+        name: CIM and SMGS Consignment Note Issuance
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Issuance of CIM and SMGS consignment notes for international rail.
+        children: []
+      - id: BC-2500.30.30
+        name: National Domestic Waybill Issuance
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Issuance of national domestic waybills and delivery notes.
+        children: []
+  - id: BC-2500.40
+    name: Manifest and Cargo Declaration Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Filing of cargo manifests and pre-arrival cargo declarations to customs,
+      terminals, and partner carriers.
+    children:
+      - id: BC-2500.40.10
+        name: Inbound Manifest Filing
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Filing of inbound manifests with terminals and customs.
+        children: []
+      - id: BC-2500.40.20
+        name: Outbound Manifest Filing
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Filing of outbound manifests with terminals and customs.
+        children: []
+      - id: BC-2500.40.30
+        name: Pre-Arrival Cargo Reporting
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Pre-arrival reporting under regimes such as ICS2 and CBP ACE.
+        children: []
+  - id: BC-2500.50
+    name: Electronic Documentation Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Operation of electronic transport-document platforms including eBL and
+      ONE Record exchanges.
+    children:
+      - id: BC-2500.50.10
+        name: Electronic Bill of Lading Operations
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Operation of electronic bill-of-lading platforms.
+        children: []
+      - id: BC-2500.50.20
+        name: e-AWB and ONE Record Operations
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Operation of e-AWB and ONE Record data exchanges.
+        children: []
+      - id: BC-2500.50.30
+        name: Document Exchange and Verification
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Inter-party document exchange and verification of electronic
+          signatures and seals.
+        children: []

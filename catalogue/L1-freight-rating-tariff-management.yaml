@@ -1,0 +1,162 @@
+# Freight Rating & Tariff Management
+id: BC-2520
+name: "Freight Rating & Tariff Management"
+level: 1
+industry: "Transportation & Logistics"
+description: |
+  Definition and operation of freight rates, tariffs, contract pricing, spot
+  pricing, accessorials, and the rating engine that prices freight movements.
+children:
+  - id: BC-2520.10
+    name: Tariff and Rate Card Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Definition, publication, and versioning of public tariffs and base rate
+      cards.
+    in_scope:
+      - Base rate card definition by lane and unit
+      - Public tariff filing where required
+    out_of_scope:
+      - Customer-facing quoting in forwarding context (BC-2450.10)
+      - Generic enterprise pricing methods (BC-440)
+    children:
+      - id: BC-2520.10.10
+        name: Base Rate Definition
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Definition of base freight rates by lane, unit, and service tier.
+        children: []
+      - id: BC-2520.10.20
+        name: Public Tariff Filing
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Filing of public tariffs with regulators and conferences where
+          required.
+        children: []
+      - id: BC-2520.10.30
+        name: Rate Card Versioning
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Version control and effective-date management of rate cards.
+        children: []
+  - id: BC-2520.20
+    name: Contract Rate Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Setup and maintenance of negotiated contract rates with named customers
+      and volume commitments.
+    children:
+      - id: BC-2520.20.10
+        name: Contract Rate Setup
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Setup of negotiated rates against named customer contracts.
+        children: []
+      - id: BC-2520.20.20
+        name: Volume Commitment Tracking
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Tracking of customer volume commitments and minimum-quantity targets.
+        children: []
+      - id: BC-2520.20.30
+        name: Contract Rate Renewal
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Renewal and renegotiation of expiring contract rates.
+        children: []
+  - id: BC-2520.30
+    name: Spot Rate Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Pricing, acceptance, and benchmarking of spot-market freight rates.
+    children:
+      - id: BC-2520.30.10
+        name: Spot Rate Quotation
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Quotation of spot-market rates per shipment.
+        children: []
+      - id: BC-2520.30.20
+        name: Spot Rate Acceptance
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Acceptance and confirmation of spot-rate bookings.
+        children: []
+      - id: BC-2520.30.30
+        name: Spot Rate Index Benchmarking
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Benchmarking spot rates against market indices.
+        children: []
+  - id: BC-2520.40
+    name: Accessorial and Surcharge Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Definition and application of accessorials, surcharges, demurrage, and
+      detention tariffs.
+    children:
+      - id: BC-2520.40.10
+        name: Fuel Surcharge Management
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Definition and application of fuel and bunker surcharges.
+        children: []
+      - id: BC-2520.40.20
+        name: Accessorial Charge Definition
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Definition of accessorial charges for waiting, special handling, and
+          equipment.
+        children: []
+      - id: BC-2520.40.30
+        name: Demurrage and Detention Tariffs
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Definition of demurrage and detention tariffs for equipment and
+          terminal use.
+        children: []
+  - id: BC-2520.50
+    name: Rating Engine Operations Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Operation of the rating engine that calculates and validates freight
+      charges across orders and shipments.
+    children:
+      - id: BC-2520.50.10
+        name: Rate Calculation Execution
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Execution of rate calculations across orders and shipments.
+        children: []
+      - id: BC-2520.50.20
+        name: Rate Sheet Distribution
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Distribution of rate sheets to customers, partners, and channels.
+        children: []
+      - id: BC-2520.50.30
+        name: Rate Audit and Validation
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Validation of applied rates against contract and tariff baselines.
+        children: []

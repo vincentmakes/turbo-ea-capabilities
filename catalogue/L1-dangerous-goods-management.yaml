@@ -1,0 +1,163 @@
+# Dangerous Goods Management
+id: BC-2490
+name: Dangerous Goods Management
+level: 1
+industry: "Transportation & Logistics"
+description: |
+  Acceptance, documentation, handling, training, and incident response for
+  dangerous goods movements across road, rail, ocean, and air modes under
+  IMDG, IATA DGR, ADR, and RID regimes.
+children:
+  - id: BC-2490.10
+    name: Dangerous Goods Acceptance Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Pre-acceptance review of dangerous-goods shipments against modal rules
+      and acceptance decision.
+    in_scope:
+      - Shipper declaration review
+      - Compatibility, segregation, and quantity checks
+    out_of_scope:
+      - Customs hazardous-substance restrictions (BC-2480)
+      - Cargo claims for damaged DG (BC-2530.40)
+    children:
+      - id: BC-2490.10.10
+        name: Shipper Declaration Review
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Review of shipper's dangerous-goods declarations and supporting
+          documentation.
+        children: []
+      - id: BC-2490.10.20
+        name: Compatibility and Segregation Check
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Compatibility, segregation, and quantity checks per modal regulations.
+        children: []
+      - id: BC-2490.10.30
+        name: Acceptance Decision and Endorsement
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Acceptance decision, endorsement, or refusal of DG consignments.
+        children: []
+  - id: BC-2490.20
+    name: Dangerous Goods Documentation Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Issuance and maintenance of dangerous-goods declarations, NOTOC, and
+      multimodal hazardous documentation.
+    children:
+      - id: BC-2490.20.10
+        name: Dangerous Goods Declaration Issuance
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Issuance of DG declarations per IMDG, DGR, ADR, and RID.
+        children: []
+      - id: BC-2490.20.20
+        name: NOTOC and Manifest Preparation
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Notification-to-captain and hazardous-cargo manifest preparation.
+        children: []
+      - id: BC-2490.20.30
+        name: Multimodal Documentation Reconciliation
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Reconciliation of DG documents across modal hand-offs.
+        children: []
+  - id: BC-2490.30
+    name: Dangerous Goods Handling and Stowage Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Compliance of physical handling and stowage with dangerous-goods
+      requirements.
+    children:
+      - id: BC-2490.30.10
+        name: Segregation and Stowage Compliance
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          On-board, on-deck, and warehouse segregation and stowage compliance.
+        children: []
+      - id: BC-2490.30.20
+        name: Restricted-Area Storage
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Storage of DG in restricted, ventilated, and bunded areas.
+        children: []
+      - id: BC-2490.30.30
+        name: Specialist Handling Equipment Use
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Use of specialist DG handling equipment and personal protective
+          equipment.
+        children: []
+  - id: BC-2490.40
+    name: Dangerous Goods Training and Competency Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Initial and recurrent training, competency assessment, and records for
+      DG-handling personnel.
+    children:
+      - id: BC-2490.40.10
+        name: DG Initial Training
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Initial dangerous-goods training per modal authority.
+        children: []
+      - id: BC-2490.40.20
+        name: DG Recurrent Training
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Recurrent and refresher dangerous-goods training.
+        children: []
+      - id: BC-2490.40.30
+        name: Competency Records Management
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Maintenance of DG competency records and audit evidence.
+        children: []
+  - id: BC-2490.50
+    name: Dangerous Goods Incident Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Detection, response, notification, and reporting for dangerous-goods
+      incidents and spills.
+    children:
+      - id: BC-2490.50.10
+        name: DG Incident Detection
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Detection of DG incidents during handling and transport.
+        children: []
+      - id: BC-2490.50.20
+        name: DG Spill and Release Response
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Spill containment, release response, and decontamination.
+        children: []
+      - id: BC-2490.50.30
+        name: Authority Notification and Reporting
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Notification and reporting of DG incidents to competent authorities.
+        children: []

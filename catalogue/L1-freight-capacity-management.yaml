@@ -1,0 +1,180 @@
+# Freight Capacity Management
+id: BC-2400
+name: Freight Capacity Management
+level: 1
+industry: "Transportation & Logistics"
+description: |
+  Sale, allocation, and yield management of transport capacity across vessel
+  sailings, flights, truck and rail lanes, and equipment pools.
+children:
+  - id: BC-2400.10
+    name: Capacity Inventory Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Maintenance of available transport capacity by mode, lane, schedule, and
+      equipment type as the source for allocation and booking.
+    in_scope:
+      - Vessel, flight, vehicle, and rolling-stock capacity records
+      - Equipment pool capacity (containers, trailers, ULDs)
+      - Schedule-linked lane capacity
+    out_of_scope:
+      - Long-term network and schedule design (BC-2410)
+      - Booking and reservation acceptance (BC-2400.40)
+    children:
+      - id: BC-2400.10.10
+        name: Vessel and Conveyance Capacity Inventory
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Recording of payload, deck-space, and cabin-space capacity by vessel,
+          aircraft, train, or vehicle.
+        children: []
+      - id: BC-2400.10.20
+        name: Equipment Capacity Inventory
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Inventory of available containers, trailers, chassis, and ULDs by
+          location and condition.
+        children: []
+      - id: BC-2400.10.30
+        name: Lane and Schedule Capacity
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Capacity per scheduled service on a lane, including connecting legs.
+        children: []
+      - id: BC-2400.10.40
+        name: Capacity Pooling and Slot Exchange
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Pooled capacity across alliances and slot-exchange arrangements with
+          partner carriers.
+        children: []
+  - id: BC-2400.20
+    name: Capacity Allocation Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Allocation of available capacity across customer contracts, market
+      segments, and spot demand.
+    children:
+      - id: BC-2400.20.10
+        name: Contract Capacity Allocation
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Allocation of capacity to customers covered by minimum-quantity
+          commitments and named-account agreements.
+        children: []
+      - id: BC-2400.20.20
+        name: Spot-Market Capacity Allocation
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Allocation of capacity released to spot-market booking channels.
+        children: []
+      - id: BC-2400.20.30
+        name: Capacity Reallocation and Recovery
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Reallocation of unused or recovered capacity ahead of cut-off.
+        children: []
+  - id: BC-2400.30
+    name: Yield and Revenue Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Optimisation of revenue per unit of capacity through pricing, mix, and
+      overbooking decisions.
+    children:
+      - id: BC-2400.30.10
+        name: Capacity Demand Forecasting
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Forecasting of bookings, no-shows, and offload risk per service.
+        children: []
+      - id: BC-2400.30.20
+        name: Yield Optimisation
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Optimisation of fare class and rate-class mix to maximise yield per
+          tonne, slot, or TEU.
+        children: []
+      - id: BC-2400.30.30
+        name: Overbooking Management
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Setting and monitoring of overbooking limits and offload exposure.
+        children: []
+      - id: BC-2400.30.40
+        name: Revenue Mix Management
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Management of revenue mix between contract, spot, and ancillary lines.
+        children: []
+  - id: BC-2400.40
+    name: Booking and Reservation Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Acceptance, modification, and cancellation of capacity bookings against
+      published schedules and quotes.
+    children:
+      - id: BC-2400.40.10
+        name: Capacity Booking
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Booking acceptance against available capacity and rate validity.
+        children: []
+      - id: BC-2400.40.20
+        name: Booking Modification and Cancellation
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Booking changes, rolls, and cancellations including no-show fees.
+        children: []
+      - id: BC-2400.40.30
+        name: Stand-By and Wait-List Management
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Management of stand-by and wait-listed cargo for confirmed capacity.
+        children: []
+  - id: BC-2400.50
+    name: Capacity Performance Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Monitoring of load factor, fill, and utilisation to drive capacity-mix
+      decisions and network changes.
+    children:
+      - id: BC-2400.50.10
+        name: Load Factor Analysis
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Analysis of load factor by service, lane, and segment.
+        children: []
+      - id: BC-2400.50.20
+        name: Capacity Utilisation Reporting
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Reporting of capacity utilisation to commercial and operations teams.
+        children: []
+      - id: BC-2400.50.30
+        name: Capacity Performance Improvement
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Initiatives to improve revenue per slot and reduce empty repositioning.
+        children: []

@@ -1,0 +1,189 @@
+# Terminal & Yard Operations Management
+id: BC-2470
+name: "Terminal & Yard Operations Management"
+level: 1
+industry: "Transportation & Logistics"
+description: |
+  Operation of port, intermodal, rail, and air-cargo terminals including vessel
+  and aircraft handling, yard management, gate, and terminal-equipment
+  operations.
+children:
+  - id: BC-2470.10
+    name: Vessel and Aircraft Handling Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Berthing, ramp handling, and cargo loading or unloading of vessels and
+      aircraft at terminals.
+    in_scope:
+      - Quayside and ramp-side cargo operations
+      - Stowage planning at the terminal interface
+    out_of_scope:
+      - On-board operations during line-haul (BC-2420.20)
+    children:
+      - id: BC-2470.10.10
+        name: Vessel Berthing and Stowage
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Berthing, mooring, and stowage planning for vessels at port.
+        children: []
+      - id: BC-2470.10.20
+        name: Aircraft Ramp Handling
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Ramp handling and cargo loading or unloading of aircraft.
+        children: []
+      - id: BC-2470.10.30
+        name: Cargo Loading and Unloading Operations
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Loading and unloading of containers, ULDs, and break-bulk cargo.
+        children: []
+  - id: BC-2470.20
+    name: Yard and Stack Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Allocation and movement of containers, trailers, and railcars within
+      terminal yards and stacks.
+    children:
+      - id: BC-2470.20.10
+        name: Yard Slot Allocation
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Allocation of yard slots to inbound and outbound units.
+        children: []
+      - id: BC-2470.20.20
+        name: Container Stack Planning
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Stack planning to optimise rehandling and load preparation.
+        children: []
+      - id: BC-2470.20.30
+        name: Reefer and Hazardous Stack Management
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Specialist stack management for reefer plug-ins and hazardous units.
+        children: []
+  - id: BC-2470.30
+    name: Gate Operations Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Truck and rail gate operations including pre-gate appointment, gate-in,
+      and gate-out flows.
+    children:
+      - id: BC-2470.30.10
+        name: Gate-In Operations
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Reception of inbound trucks and railcars at the terminal gate.
+        children: []
+      - id: BC-2470.30.20
+        name: Gate-Out Operations
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Release of outbound trucks and railcars from the terminal gate.
+        children: []
+      - id: BC-2470.30.30
+        name: Pre-Gate and Appointment Management
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Pre-gate identity, document, and appointment-window management.
+        children: []
+  - id: BC-2470.40
+    name: Terminal Equipment Operations Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Operation and maintenance of terminal-handling equipment such as cranes,
+      RTGs, reach stackers, and ground-service equipment.
+    children:
+      - id: BC-2470.40.10
+        name: Crane and RTG Operations
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Operation of ship-to-shore cranes, RTGs, and gantry cranes.
+        children: []
+      - id: BC-2470.40.20
+        name: Ground Service Equipment Operations
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Operation of GSE such as tugs, dollies, and loaders.
+        children: []
+      - id: BC-2470.40.30
+        name: Terminal Equipment Maintenance
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Maintenance and overhaul of terminal-handling equipment.
+        children: []
+  - id: BC-2470.50
+    name: Intermodal Transfer Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Transfer of cargo and units between modes at intermodal points such as
+      rail-road yards and air-cargo interlining stations.
+    children:
+      - id: BC-2470.50.10
+        name: Rail Yard Interchange
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Interchange of railcars and intermodal units between rail operators.
+        children: []
+      - id: BC-2470.50.20
+        name: Truck-Rail Transfer Operations
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Transfer of containers and trailers between truck and rail.
+        children: []
+      - id: BC-2470.50.30
+        name: Air Cargo Interlining
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Interlining of cargo between air carriers at hub airports.
+        children: []
+  - id: BC-2470.60
+    name: Terminal Capacity and Performance Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Measurement and improvement of terminal productivity, dwell, and
+      throughput.
+    children:
+      - id: BC-2470.60.10
+        name: Berth and Stand Productivity
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Productivity measurement at vessel berths and aircraft stands.
+        children: []
+      - id: BC-2470.60.20
+        name: Container Dwell Management
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Management of container dwell times and demurrage exposure.
+        children: []
+      - id: BC-2470.60.30
+        name: Terminal Throughput Reporting
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Reporting of terminal throughput by mode and unit type.
+        children: []

@@ -1,0 +1,223 @@
+# Warehousing Operations Management
+id: BC-2460
+name: Warehousing Operations Management
+level: 1
+industry: "Transportation & Logistics"
+description: |
+  Operation of third-party warehouses and distribution centres including
+  inbound, storage, outbound, value-added services, and reverse logistics.
+children:
+  - id: BC-2460.10
+    name: Inbound Operations Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Receipt, inspection, and putaway of goods entering the warehouse.
+    in_scope:
+      - Pre-receipt advice and ASN handling
+      - Goods-in inspection and putaway
+    out_of_scope:
+      - Outbound dispatch (BC-2460.30)
+      - Inventory ownership at the shipper level (BC-530)
+    children:
+      - id: BC-2460.10.10
+        name: Pre-Receipt Planning
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          ASN ingestion, dock scheduling, and resource planning for receipts.
+        children: []
+      - id: BC-2460.10.20
+        name: Goods Receipt and Inspection
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Physical receipt and inspection of inbound goods.
+        children: []
+      - id: BC-2460.10.30
+        name: Putaway and Storage Allocation
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Putaway of received goods and allocation to storage locations.
+        children: []
+  - id: BC-2460.20
+    name: Storage and Inventory Operations Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      In-house storage operations including slotting, cycle counts, and
+      conditioned storage.
+    children:
+      - id: BC-2460.20.10
+        name: Slotting and Location Management
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Slotting decisions and storage-location maintenance.
+        children: []
+      - id: BC-2460.20.20
+        name: Cycle Counting and Reconciliation
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Cycle counts, stock reconciliation, and inventory adjustment.
+        children: []
+      - id: BC-2460.20.30
+        name: Lot, Serial, and Batch Tracking
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Tracking of lot, serial, and batch attributes for stored goods.
+        children: []
+      - id: BC-2460.20.40
+        name: Cold-Chain and Conditioned Storage
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Operation of temperature-controlled, hazardous, and bonded storage.
+        children: []
+  - id: BC-2460.30
+    name: Outbound Operations Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Picking, packing, labelling, and dispatch of outbound shipments.
+    children:
+      - id: BC-2460.30.10
+        name: Picking Operations
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Order picking using batch, wave, and zone strategies.
+        children: []
+      - id: BC-2460.30.20
+        name: Packing and Labelling
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Packing, labelling, and shipment-document preparation.
+        children: []
+      - id: BC-2460.30.30
+        name: Dispatch and Loading
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Loading of outbound vehicles and dispatch confirmation.
+        children: []
+  - id: BC-2460.40
+    name: Value-Added Services Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      In-warehouse value-added services such as kitting, co-packing, labelling,
+      and configuration.
+    children:
+      - id: BC-2460.40.10
+        name: Kitting and Assembly Services
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Kitting, sub-assembly, and bundle assembly within the warehouse.
+        children: []
+      - id: BC-2460.40.20
+        name: Co-Packing and Re-Labelling
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Co-packing, re-packing, and re-labelling services.
+        children: []
+      - id: BC-2460.40.30
+        name: Postponement and Configuration
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Late-stage product configuration and postponement.
+        children: []
+  - id: BC-2460.50
+    name: Returns and Reverse Operations Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Receipt, triage, and disposition of returned goods and reverse-logistics
+      flows.
+    children:
+      - id: BC-2460.50.10
+        name: Return Receipt and Triage
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Receipt and triage of returned goods.
+        children: []
+      - id: BC-2460.50.20
+        name: Refurbishment and Disposition
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Refurbishment, repackaging, and disposition decisions.
+        children: []
+      - id: BC-2460.50.30
+        name: Reverse-Logistics Disposal
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Disposal, recycling, and destruction of unsalvageable returns.
+        children: []
+  - id: BC-2460.60
+    name: Warehouse Resource Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Management of labour, materials handling equipment, and dock and slot
+      capacity within the warehouse.
+    children:
+      - id: BC-2460.60.10
+        name: Labour Planning and Productivity
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Shift planning, task assignment, and productivity tracking.
+        children: []
+      - id: BC-2460.60.20
+        name: Materials Handling Equipment Operations
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Operation, allocation, and maintenance of forklifts, conveyors, and
+          AGVs.
+        children: []
+      - id: BC-2460.60.30
+        name: Dock and Slot Scheduling
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Scheduling of inbound and outbound dock slots.
+        children: []
+  - id: BC-2460.70
+    name: Warehouse Performance Management
+    level: 2
+    industry: "Transportation & Logistics"
+    description: |
+      Measurement of warehouse service, accuracy, and throughput KPIs.
+    children:
+      - id: BC-2460.70.10
+        name: Order-Cycle KPI Tracking
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Tracking of order-cycle, fill-rate, and accuracy KPIs.
+        children: []
+      - id: BC-2460.70.20
+        name: Inventory Accuracy Reporting
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Reporting of inventory accuracy and shrinkage.
+        children: []
+      - id: BC-2460.70.30
+        name: Throughput and Productivity Reporting
+        level: 3
+        industry: "Transportation & Logistics"
+        description: |
+          Reporting of throughput, units-per-hour, and productivity benchmarks.
+        children: []
