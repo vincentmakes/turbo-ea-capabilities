@@ -310,6 +310,74 @@ export default function CatalogueBrowser({ data, valueStreams }: Props) {
 
   const stepperMax = Math.max(maxLevel - 1, 0);
 
+  // Per-L1 stepper state ---------------------------------------------------
+  // For each L1 we precompute its expandable descendants grouped by level,
+  // so the L1 card's +/− pill can step that branch one level at a time.
+  const expandablesByLevelByL1 = useMemo(() => {
+    const out = new Map<string, Map<number, string[]>>();
+    const l1s = byParent.get(null) ?? [];
+    for (const l1 of l1s) {
+      const m = new Map<number, string[]>();
+      if ((byParent.get(l1.id) ?? []).length > 0) m.set(1, [l1.id]);
+      for (const dId of descendantsOf.get(l1.id) ?? []) {
+        if ((byParent.get(dId) ?? []).length === 0) continue;
+        const d = byId.get(dId);
+        if (!d) continue;
+        const list = m.get(d.level) ?? [];
+        list.push(dId);
+        m.set(d.level, list);
+      }
+      out.set(l1.id, m);
+    }
+    return out;
+  }, [byParent, byId, descendantsOf]);
+
+  /** Map of L1 id → its current branch expansion level (0 = collapsed). */
+  const l1CurrentLevels = useMemo(() => {
+    const out = new Map<string, number>();
+    for (const [l1Id, levels] of expandablesByLevelByL1.entries()) {
+      let depth = 0;
+      for (let lvl = 1; lvl <= maxLevel - 1; lvl++) {
+        const ids = levels.get(lvl) ?? [];
+        if (ids.length === 0) continue;
+        if (ids.every((id) => expanded.has(id))) depth = lvl;
+        else break;
+      }
+      out.set(l1Id, depth);
+    }
+    return out;
+  }, [expandablesByLevelByL1, expanded, maxLevel]);
+
+  const expandL1Branch = (l1Id: string) => {
+    const m = expandablesByLevelByL1.get(l1Id);
+    if (!m) return;
+    const cur = l1CurrentLevels.get(l1Id) ?? 0;
+    const target = Math.min(cur + 1, stepperMax);
+    if (target === cur) return;
+    setExpanded((prev) => {
+      const next = new Set(prev);
+      for (let lvl = 1; lvl <= target; lvl++) {
+        for (const id of m.get(lvl) ?? []) next.add(id);
+      }
+      return next;
+    });
+  };
+
+  const collapseL1Branch = (l1Id: string) => {
+    const m = expandablesByLevelByL1.get(l1Id);
+    if (!m) return;
+    const cur = l1CurrentLevels.get(l1Id) ?? 0;
+    const target = Math.max(cur - 1, 0);
+    if (target === cur) return;
+    setExpanded((prev) => {
+      const next = new Set(prev);
+      for (let lvl = target + 1; lvl <= stepperMax; lvl++) {
+        for (const id of m.get(lvl) ?? []) next.delete(id);
+      }
+      return next;
+    });
+  };
+
   const selectAllVisible = () => {
     setSelected((prev) => {
       const next = new Set(prev);
@@ -464,9 +532,13 @@ export default function CatalogueBrowser({ data, valueStreams }: Props) {
               expanded={expanded}
               selected={selected}
               descendantsOf={descendantsOf}
+              branchLevel={l1CurrentLevels.get(r.id) ?? 0}
+              branchMax={stepperMax}
               onToggleExpand={toggleExpand}
               onToggleSelect={toggleSelect}
               onOpenDetail={setDetailId}
+              onExpandBranch={expandL1Branch}
+              onCollapseBranch={collapseL1Branch}
             />
           ))}
         </div>
@@ -668,9 +740,13 @@ interface L1CardProps {
   expanded: Set<string>;
   selected: Set<string>;
   descendantsOf: Map<string, string[]>;
+  branchLevel: number;
+  branchMax: number;
   onToggleExpand: (id: string) => void;
   onToggleSelect: (id: string) => void;
   onOpenDetail: (id: string) => void;
+  onExpandBranch: (id: string) => void;
+  onCollapseBranch: (id: string) => void;
 }
 
 function L1Card({
@@ -680,13 +756,19 @@ function L1Card({
   expanded,
   selected,
   descendantsOf,
+  branchLevel,
+  branchMax,
   onToggleExpand,
   onToggleSelect,
   onOpenDetail,
+  onExpandBranch,
+  onCollapseBranch,
 }: L1CardProps) {
   const kids = (byParent.get(node.id) ?? []).filter((c) => visible.has(c.id));
   const isOpen = expanded.has(node.id);
   const hasKids = kids.length > 0;
+  const canExpand = hasKids && branchLevel < branchMax;
+  const canCollapse = branchLevel > 0;
 
   const subtree = descendantsOf.get(node.id) ?? [];
   const totalForState = subtree.length + 1;
@@ -716,16 +798,35 @@ function L1Card({
           onChange={() => onToggleSelect(node.id)}
           aria-label={`Select ${node.id} ${node.name}`}
         />
-        <button
-          type="button"
-          class={`cap-toggle${hasKids ? "" : " is-empty"}`}
-          onClick={() => hasKids && onToggleExpand(node.id)}
-          aria-expanded={isOpen}
-          aria-label={hasKids ? (isOpen ? "Collapse" : "Expand") : ""}
-          tabIndex={hasKids ? 0 : -1}
+        <div
+          class={`l1-stepper${hasKids ? "" : " is-empty"}`}
+          role="group"
+          aria-label={`Expand branch by level (currently ${branchLevel} of ${branchMax})`}
         >
-          {hasKids ? (isOpen ? "−" : "+") : ""}
-        </button>
+          <button
+            type="button"
+            class="l1-stepper-btn"
+            onClick={() => canCollapse && onCollapseBranch(node.id)}
+            disabled={!canCollapse}
+            aria-label="Collapse this branch one level"
+            title="Collapse branch one level"
+            tabIndex={hasKids ? 0 : -1}
+          >
+            −
+          </button>
+          <button
+            type="button"
+            class="l1-stepper-btn"
+            onClick={() => canExpand && onExpandBranch(node.id)}
+            disabled={!canExpand}
+            aria-label="Expand this branch one level"
+            title="Expand branch one level"
+            aria-expanded={isOpen}
+            tabIndex={hasKids ? 0 : -1}
+          >
+            +
+          </button>
+        </div>
         <button
           type="button"
           class="l1-name"
@@ -812,13 +913,13 @@ function ChildRow({
   const toggle = (
     <button
       type="button"
-      class={`cap-toggle${hasKids ? "" : " is-empty"}`}
+      class={`cap-chevron${hasKids ? "" : " is-empty"}`}
       onClick={() => hasKids && onToggleExpand(node.id)}
       aria-expanded={isOpen}
       aria-label={hasKids ? (isOpen ? "Collapse" : "Expand") : ""}
       tabIndex={hasKids ? 0 : -1}
     >
-      {hasKids ? (isOpen ? "−" : "+") : ""}
+      {hasKids ? (isOpen ? "▾" : "▸") : ""}
     </button>
   );
 
@@ -893,7 +994,48 @@ function ChildRow({
 }
 
 // ---------------------------------------------------------------------------
-// DetailModal — wider card-based overlay (breadcrumb · hero · meta · children)
+// ModalTreeNode — fully-expanded nested subtree inside the detail modal.
+// All levels are rendered up-front (no click-to-deeper) so users see the
+// whole branch with descriptions in one place.
+// ---------------------------------------------------------------------------
+interface ModalTreeNodeProps {
+  node: FlatCap;
+  byParent: Map<string | null, FlatCap[]>;
+}
+
+function ModalTreeNode({ node, byParent }: ModalTreeNodeProps) {
+  const kids = byParent.get(node.id) ?? [];
+  return (
+    <div class="modal-tree-node" data-level={node.level}>
+      <div class="modal-tree-card">
+        <div class="modal-tree-card-head">
+          <span class="cap-id">{node.id}</span>
+          <span class="cap-level">L{node.level}</span>
+          {node.deprecated && <span class="cap-deprecated-badge">Dep.</span>}
+          <span class="modal-tree-card-name">{node.name}</span>
+          {kids.length > 0 && (
+            <span class="cap-count" title={`${kids.length} L${node.level + 1} children`}>
+              {kids.length}
+            </span>
+          )}
+        </div>
+        {node.description && (
+          <p class="modal-tree-card-desc">{node.description}</p>
+        )}
+      </div>
+      {kids.length > 0 && (
+        <div class="modal-tree-children">
+          {kids.map((k) => (
+            <ModalTreeNode key={k.id} node={k} byParent={byParent} />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ---------------------------------------------------------------------------
+// DetailModal — wider card-based overlay (breadcrumb · hero · meta · subtree)
 // ---------------------------------------------------------------------------
 interface DetailModalProps {
   node: FlatCap;
@@ -936,6 +1078,18 @@ function DetailModal({
 
   const directChildren = byParent.get(node.id) ?? [];
 
+  // Count of all descendants (direct + nested) for the section header.
+  const descendantCount = (() => {
+    let total = 0;
+    const stack = [...directChildren];
+    while (stack.length > 0) {
+      const c = stack.pop()!;
+      total++;
+      for (const k of byParent.get(c.id) ?? []) stack.push(k);
+    }
+    return total;
+  })();
+
   const inStreams: { stream: string; stage: ValueStreamStage }[] = [];
   for (const s of valueStreams) {
     for (const stage of s.stages) {
@@ -945,7 +1099,6 @@ function DetailModal({
   }
 
   const industries = splitIndustry(node.industry);
-  const childCountFor = (id: string) => (byParent.get(id) ?? []).length;
 
   return (
     <div class="detail-modal-root">
@@ -1052,33 +1205,15 @@ function DetailModal({
           {directChildren.length > 0 && (
             <section class="detail-modal-children">
               <h3 class="detail-modal-section-title">
-                Children <span class="detail-modal-section-count">{directChildren.length}</span>
+                Subtree
+                <span class="detail-modal-section-count">
+                  {descendantCount} {descendantCount === 1 ? "descendant" : "descendants"}
+                </span>
               </h3>
-              <div class="detail-children-grid">
-                {directChildren.map((c) => {
-                  const grandKids = childCountFor(c.id);
-                  return (
-                    <button
-                      key={c.id}
-                      type="button"
-                      class="detail-child-card"
-                      onClick={() => onOpen(c.id)}
-                      title={c.description}
-                    >
-                      <div class="detail-child-card-head">
-                        <span class="cap-id">{c.id}</span>
-                        <span class="cap-level">L{c.level}</span>
-                        {c.deprecated && <span class="cap-deprecated-badge">Dep.</span>}
-                      </div>
-                      <div class="detail-child-card-name">{c.name}</div>
-                      {grandKids > 0 && (
-                        <div class="detail-child-card-foot">
-                          {grandKids} L{c.level + 1} {grandKids === 1 ? "child" : "children"}
-                        </div>
-                      )}
-                    </button>
-                  );
-                })}
+              <div class="modal-tree">
+                {directChildren.map((c) => (
+                  <ModalTreeNode key={c.id} node={c} byParent={byParent} />
+                ))}
               </div>
             </section>
           )}

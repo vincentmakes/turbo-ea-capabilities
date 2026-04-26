@@ -413,40 +413,91 @@
   flex-shrink: 0;
 }
 
-.cap-toggle {
+/* Subtle chevron used for individual L2/L3/L4 row toggles */
+.cap-chevron {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 22px;
-  height: 22px;
-  border: 1px solid var(--color-border);
-  background: var(--color-white);
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: transparent;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1;
-  color: var(--color-secondary);
-  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  font-size: 11px;
+  color: var(--color-muted);
+  transition: background 0.15s ease, color 0.15s ease;
   flex-shrink: 0;
-  font-family: var(--font-primary);
   padding: 0;
+  font-family: var(--font-primary);
 }
 
-.cap-toggle:hover:not(.is-empty) {
-  background: var(--color-pale-blue);
-  border-color: var(--color-accent);
-  color: var(--color-accent);
+.cap-chevron:hover:not(.is-empty) {
+  background: var(--color-white);
+  color: var(--color-secondary);
 }
 
-.cap-toggle:focus-visible {
+.cap-chevron:focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 1px;
 }
 
-.cap-toggle.is-empty {
+.cap-chevron.is-empty {
   cursor: default;
   visibility: hidden;
+}
+
+/* Per-L1 +/− pill — steps the L1's branch one level at a time */
+.l1-stepper {
+  display: inline-flex;
+  align-items: stretch;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: var(--color-white);
+  overflow: hidden;
+  flex-shrink: 0;
+  height: 24px;
+}
+
+.l1-stepper.is-empty {
+  visibility: hidden;
+}
+
+.l1-stepper-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 100%;
+  border: none;
+  background: transparent;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-secondary);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+  padding: 0;
+}
+
+.l1-stepper-btn + .l1-stepper-btn {
+  border-left: 1px solid var(--color-border);
+}
+
+.l1-stepper-btn:hover:not(:disabled) {
+  background: var(--color-pale-blue);
+  color: var(--color-accent);
+}
+
+.l1-stepper-btn:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: -2px;
+}
+
+.l1-stepper-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
 }
 
 .l1-name {
@@ -537,7 +588,7 @@
   background: var(--color-white);
 }
 
-.l2-card .cap-toggle {
+.l2-card .cap-chevron {
   margin-top: 1px;
 }
 
@@ -582,10 +633,16 @@
     margin: 4px 6px;
     padding: 6px 8px;
   }
-  .cap-toggle {
+  .cap-chevron {
     width: 26px;
     height: 26px;
-    font-size: 18px;
+    font-size: 13px;
+  }
+  .l1-stepper {
+    height: 28px;
+  }
+  .l1-stepper-btn {
+    width: 30px;
   }
 }
 
@@ -836,43 +893,44 @@
   letter-spacing: 0;
 }
 
-.detail-children-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 10px;
+/* Fully-expanded nested subtree inside the detail modal */
+.modal-tree {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.detail-child-card {
+.modal-tree-node {
+  display: block;
+  min-width: 0;
+}
+
+.modal-tree-card {
   display: flex;
   flex-direction: column;
   gap: 6px;
   padding: 10px 12px;
-  background: var(--color-white);
+  background: var(--color-light);
   border: 1px solid var(--color-border);
   border-radius: 6px;
-  cursor: pointer;
-  text-align: left;
-  font: inherit;
-  color: inherit;
   min-width: 0;
-  transition: border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
 }
 
-.detail-child-card:hover {
-  border-color: var(--color-accent);
-  background: var(--color-pale-blue);
-  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.06);
-}
+.modal-tree-node[data-level="2"] > .modal-tree-card { background: var(--color-white); }
+.modal-tree-node[data-level="3"] > .modal-tree-card { background: var(--color-light); }
+.modal-tree-node[data-level="4"] > .modal-tree-card { background: var(--color-white); }
 
-.detail-child-card-head {
+.modal-tree-card-head {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 6px;
 }
 
-.detail-child-card-name {
-  font-size: 13px;
+.modal-tree-card-name {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: 14px;
   font-weight: 600;
   color: var(--color-text);
   line-height: 1.35;
@@ -880,10 +938,21 @@
   word-break: break-word;
 }
 
-.detail-child-card-foot {
-  font-size: 11px;
-  color: var(--color-muted);
-  font-weight: 600;
+.modal-tree-card-desc {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--color-text);
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.modal-tree-children {
+  margin: 6px 0 0 18px;
+  padding-left: 12px;
+  border-left: 2px solid var(--color-light-blue);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .detail-modal-footer {
@@ -922,8 +991,9 @@
     border: none;
     animation: fadeIn 0.18s ease;
   }
-  .detail-children-grid {
-    grid-template-columns: 1fr;
+  .modal-tree-children {
+    margin-left: 10px;
+    padding-left: 8px;
   }
 }
 
