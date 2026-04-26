@@ -10,6 +10,8 @@
 
 ## Table of Contents
 
+**Part A — Reference Model** *(what a capability is and how the model is shaped)*
+
 1. [Definition](#1-definition)
 2. [What a Business Capability Is Not](#2-what-a-business-capability-is-not)
 3. [Capability Levels](#3-capability-levels)
@@ -18,10 +20,25 @@
 6. [Identifier Convention](#6-identifier-convention)
 7. [Mandatory Metadata](#7-mandatory-metadata)
 8. [Worked Example](#8-worked-example)
-9. [Governance Process](#9-governance-process)
+
+**Part B — Operational Governance** *(how changes are proposed, reviewed, and shipped in this repository)*
+
+9. [Operational Governance](#9-operational-governance)
+   - 9.1 [Source of Truth](#91-source-of-truth)
+   - 9.2 [Roles](#92-roles)
+   - 9.3 [How to Propose a Change](#93-how-to-propose-a-change)
+   - 9.4 [Lint Rules](#94-lint-rules)
+   - 9.5 [Versioning](#95-versioning)
+   - 9.6 [Promotion Path](#96-promotion-path)
+   - 9.7 [Review Cadence](#97-review-cadence)
+   - 9.8 [Reference Frameworks](#98-reference-frameworks)
+   - 9.9 [What Does Not Drive Governance](#99-what-does-not-drive-governance)
+
 10. [Glossary](#10-glossary)
 
 ---
+
+## Part A — Reference Model
 
 ## 1. Definition
 
@@ -259,9 +276,22 @@ BC-2  Production Management                              (L1 Business Capability
 
 ---
 
-## 9. Governance Process
+## Part B — Operational Governance
 
-### 9.1 Roles
+## 9. Operational Governance
+
+Part A defines *what* a Business Capability is and *how* the model is shaped. Part B defines *how* changes to this catalogue are proposed, reviewed, validated, versioned, and shipped. Every rule below is enforced either by code (lint, CI) or by repository workflow (CODEOWNERS, branch protection).
+
+### 9.1 Source of Truth
+
+The catalogue is **YAML in `catalogue/`**, full stop. Every node, every field, every value lives there.
+
+- The schema in [`schema/capability.schema.json`](schema/capability.schema.json) is authoritative. Lint rejects anything that does not validate against it.
+- `dist/api/*.json` and the bundled Python package data are **build artefacts** — never edited by hand and never a source of truth.
+- The original `business-capability-catalogue.xlsx` was a one-time seed and has been removed from the repo. It is not part of the workflow. Re-importing from a spreadsheet is not supported. The historical bootstrap script (`scripts/ingest_xlsx.py`) is kept for archaeology only and must not be used to introduce new records.
+- Any new capability, value-stream stage, or metadata change **must** be introduced as a YAML edit in a pull request that passes `npm run lint`. There is no other path.
+
+### 9.2 Roles
 
 | Role | Responsibility |
 |---|---|
@@ -270,33 +300,70 @@ BC-2  Production Management                              (L1 Business Capability
 | **Architecture Review Board (ARB)** | Approves changes to the capability model. |
 | **EA Repository Steward** | Maintains the capability model in the tool of record. |
 
-### 9.2 Change control
+### 9.3 How to Propose a Change
 
-Adding, renaming, splitting, merging, or retiring a capability follows a lightweight RFC process:
+Adding, renaming, splitting, merging, or retiring a capability follows a lightweight RFC process backed by a YAML pull request:
 
 1. **Proposal** — submitted by any architect or capability owner, including rationale, impact on existing artefacts (applications, projects, KPIs), and proposed effective date.
 2. **Review** — Architecture Review Board reviews against this governance model.
 3. **Decision** — Approve / Reject / Defer, with documented rationale.
-4. **Implementation** — EA Repository Steward applies the change as a YAML pull request against this repository; affected owners are notified.
-5. **Communication** — material changes are published in the EA change log.
+4. **Implementation** — branch off `main`, edit the relevant `catalogue/L1-*.yaml` (or `catalogue/_value-streams.yaml` for value-stream links), or use the helper CLIs:
+   ```bash
+   npm run cap:add        -- --parent BC-100.10 --name "Forecast Reconciliation"
+   npm run cap:mv         -- --id BC-300.10 --new-parent BC-100.10
+   npm run cap:deprecate  -- --id BC-300.10 --successor BC-100.10 --reason "Merged"
+   ```
+   Run `npm run lint` locally; CI runs the same checks on every PR. Lint enforces the schema and every rule in §9.4 — a failing lint is a hard block on merge.
+5. **Review & merge** — open the PR. `CODEOWNERS` for the L1 file you touched is auto-requested for review. On merge to `main`, the Cloudflare Pages site redeploys.
+6. **Release** — on a `v*` git tag, the Python package publishes to PyPI.
+7. **Communication** — material changes are published in the EA change log.
 
-> **Source of truth.** The catalogue is the YAML under `catalogue/`. Approved changes land as PRs that pass `scripts/lint.ts` (which enforces the schema in `schema/capability.schema.json` and every rule in §3-§7). Spreadsheets, exported CSVs, and direct edits to generated JSON artefacts are *not* a governance channel — they cannot be reviewed, diffed, or rolled back. See [`governance.md`](governance.md) for the operational PR workflow.
+### 9.4 Lint Rules
 
-### 9.3 Versioning
+The catalogue is the source of truth and must remain machine-checkable. `scripts/lint.ts` enforces:
 
-The capability model is versioned using semantic versioning: `MAJOR.MINOR.PATCH`.
+| Check | Rule |
+| --- | --- |
+| YAML | All files parse as YAML 1.2 strict. |
+| Schema | Every node validates against `schema/capability.schema.json`. |
+| Id pattern | `^BC-\d+(\.\d+){0,3}$` — matches §6. |
+| Levels | `level` equals tree depth (root = 1). |
+| Hierarchy | Each child id extends its parent id (`BC-2.1` under `BC-2`, `BC-2.1.3` under `BC-2.1`). |
+| Sort order | Siblings sorted ascending by id (deterministic diffs). |
+| Uniqueness | No id appears in more than one place. |
+| Successors | `successor_id` resolves to an existing node. |
+| Deprecation | `deprecated: true` requires a `deprecation_reason`. |
+| Index | Every catalogue file is registered in `catalogue/_index.yaml`. |
+| L1 slugs | `name` slugs across L1 files do not collide. |
 
-- **MAJOR** — structural changes (L1 reshuffle, level definition changes).
-- **MINOR** — additions of new capabilities.
-- **PATCH** — renames, definition refinements, metadata updates.
+### 9.5 Versioning
 
-### 9.4 Review cadence
+Two independent version numbers ship in `version.json`:
+
+- **`catalogue_version`** — semver tag on `main`. Bump:
+  - **MAJOR** for structural changes (L1 reshuffle, breaking renames, level-definition changes).
+  - **MINOR** for additions of new capabilities.
+  - **PATCH** for description tweaks, typo fixes, metadata refinements.
+
+- **`schema_version`** — integer that bumps **only** when the field set or value semantics change in a non-additive way. Pinned in the Python package as `SCHEMA_VERSION`.
+
+The two are independent: `catalogue_version` 1.4.2 and 1.5.0 can both have `schema_version` 1. Consumers pin the schema, not the catalogue version.
+
+### 9.6 Promotion Path
+
+| Branch | Effect |
+| --- | --- |
+| Feature branch / PR | CI lint runs; CF Pages preview URL deploys. |
+| Merge to `main` | CF Pages production redeploys. |
+| Tag `vX.Y.Z` on `main` | Python package builds and publishes to PyPI. |
+
+### 9.7 Review Cadence
 
 - Each **L2 capability** is reviewed at least **annually** by its owner.
 - The **full model** is reviewed every **2 to 3 years** to avoid drift.
 - Reviews are tracked via the *Last reviewed* and *Next review* metadata fields.
 
-### 9.5 Reference frameworks
+### 9.8 Reference Frameworks
 
 Where an industry reference framework exists, anchor the upper levels (L1 / L2) to it, and diverge below that — where the enterprise's differentiation lives. The catalogue in this repository was built using the references below.
 
@@ -389,6 +456,14 @@ Where an industry reference framework exists, anchor the upper levels (L1 / L2) 
 - **ACORD** — insurance.
 
 These references describe *what* organisations in a given industry typically do — useful as a starting point, but they must still be adapted to the enterprise's own context and re-expressed in conformant noun-phrase form where necessary. Citing a framework does not exempt a node from §5 (naming) or §4 (decomposition) — frameworks inform the *shape* of the model, not the *form* of its names.
+
+### 9.9 What Does Not Drive Governance
+
+- **Spreadsheets / XLSX / CSV.** Not a source. Ingest scripts produce YAML; YAML produces JSON; nothing flows the other way.
+- **Hand-edited JSON in `dist/api/`.** Generated artefacts. Edits are wiped by the next build.
+- **Edits made directly to the bundled Python package data.** Same — overwritten by `npm run build:pkg`.
+- **The schema definition** lives in `schema/capability.schema.json`; the **lint implementation** in `scripts/lint.ts`. Both are code-of-record. Changes to either require an ARB-approved PR.
+- **Value streams** are an orthogonal artefact stored in `catalogue/_value-streams.yaml`. Stages must reference an existing capability id; `build_api` fails the build otherwise. Value streams do not appear inside the capability hierarchy.
 
 ---
 
