@@ -17,6 +17,15 @@ An open-source Business Capability Reference Catalogue. YAML files in `catalogue
 - **Deprecation:** `deprecated: true` requires `deprecation_reason` and (when applicable) `successor_id`.
 - **Industry tag:** `Cross-Industry`, a single industry name, or `;`-separated list. L2+ inherits from L1 unless overridden.
 
+## Translations — sidecar invariants
+
+- **Source = English; translations = sidecars.** `catalogue/L1-*.yaml` is the canonical English source of truth. Translations live at `catalogue/i18n/<bcp47>/L1-<same-slug>.yaml` and are validated against `schema/i18n.schema.json`.
+- **Translatable fields whitelist:** `name`, `description`, `aliases`, `in_scope`, `out_of_scope`. **Never** translate `id`, `level`, `industry`, `references`, `deprecated`, `successor_id`, or `metadata` — those stay in the English source and are inherited by every locale.
+- **One sidecar per (locale, L1).** Filename mirrors the source slug so per-L1 CODEOWNERS apply transitively.
+- **No orphans.** Every entry id in a sidecar must resolve to a node in the source L1 tree. After a `cap:mv` or `cap:deprecate` the corresponding sidecar entries must be updated or removed in the same PR — lint blocks otherwise.
+- **Locale tag = directory name.** `catalogue/i18n/fr-CA/...` files must declare `locale: fr-CA`. BCP-47 only.
+- **Bundle layout is additive.** `dist/api/capabilities.json`, `tree.json`, etc. stay English. Locale data ships separately under `dist/api/i18n/<locale>.json` and `dist/api/locales.json` — old consumers are unaffected.
+
 ## Use the existing helpers — don't reinvent
 
 ```bash
@@ -40,6 +49,7 @@ npm run build          # generates dist/api/, site/, package data
 
 - `/generate-capability` — draft new L1s or extend existing ones with MECE L2/L3 trees, industry-aware references, and metadata. Drives `cap:add` for ID safety.
 - `/map-value-streams` — propose stages in `catalogue/_value-streams.yaml` for one or more L1s, with optional industry variants.
+- `/translate-language` — generate or refresh sidecar translations under `catalogue/i18n/<locale>/`. Whole-Language mode covers every L1; Single-L1 mode covers one. Writes sidecar YAML directly and re-runs `npm run lint`.
 
 ## Canonical docs
 
@@ -47,3 +57,4 @@ npm run build          # generates dist/api/, site/, package data
 - [`schema/capability.schema.json`](schema/capability.schema.json) — authoritative JSON Schema for catalogue YAML.
 - [`catalogue/_index.yaml`](catalogue/_index.yaml) — registry of all L1 files; lint enforces every L1 file is indexed.
 - [`catalogue/_value-streams.yaml`](catalogue/_value-streams.yaml) — orthogonal value-stream artefact; stages reference capability IDs.
+- [`schema/i18n.schema.json`](schema/i18n.schema.json) — JSON Schema for translation sidecar files under `catalogue/i18n/<locale>/`.

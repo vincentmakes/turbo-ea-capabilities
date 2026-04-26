@@ -10,7 +10,7 @@ from functools import lru_cache
 from importlib.resources import as_file, files
 from typing import Iterable, Optional
 
-from ._models import Capability
+from ._models import Capability, LocalizedFields
 
 _PACKAGE = "turbo_ea_capabilities"
 
@@ -19,6 +19,22 @@ def _read_json(name: str) -> object:
     res = files(_PACKAGE) / "data" / name
     with as_file(res) as path:
         return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _read_optional_json(name: str) -> Optional[object]:
+    """Read a bundled JSON file or return None if absent.
+
+    Used for optional artefacts (locales.json, i18n/<lang>.json) so older
+    builds without translation data still load cleanly.
+    """
+    res = files(_PACKAGE) / "data" / name
+    try:
+        with as_file(res) as path:
+            if not path.is_file():
+                return None
+            return json.loads(path.read_text(encoding="utf-8"))
+    except (FileNotFoundError, ModuleNotFoundError):
+        return None
 
 
 @lru_cache(maxsize=1)
@@ -140,6 +156,92 @@ def iter_subtree(capability_id: str) -> Iterable[Capability]:
         cur = queue.pop(0)
         yield cur
         queue.extend(children_index.get(cur.id, ()))
+
+
+# ---------------------------------------------------------------------------
+# Localization
+# ---------------------------------------------------------------------------
+@lru_cache(maxsize=1)
+def _locales_manifest() -> dict:
+    """Read locales.json or synthesize an English-only manifest."""
+    raw = _read_optional_json("locales.json")
+    if isinstance(raw, dict):
+        return raw
+    return {"default": "en", "locales": ["en"], "coverage": {}}
+
+
+@lru_cache(maxsize=8)
+def _locale_table(lang: str) -> dict[str, LocalizedFields]:
+    """Map id -> LocalizedFields for `lang`. Empty dict if locale not bundled.
+
+    `data/i18n/<lang>.json` is a flat object: {"BC-...": {name, description, ...}}.
+    """
+    if lang == "en":
+        return {}
+    raw = _read_optional_json(f"i18n/{lang}.json")
+    if not isinstance(raw, dict):
+        return {}
+    out: dict[str, LocalizedFields] = {}
+    for cap_id, fields in raw.items():
+        if not isinstance(fields, dict):
+            continue
+        out[cap_id] = LocalizedFields.model_validate(fields)
+    return out
+
+
+def available_locales() -> tuple[str, ...]:
+    """All bundled locales including 'en'. Sorted, en first.
+
+    Use this to feature-detect which languages this wheel ships, e.g.::
+
+        if user_lang in available_locales():
+            cap = cap.localized(user_lang)
+    """
+    locales = list(_locales_manifest().get("locales", ["en"]))
+    if "en" not in locales:
+        locales.insert(0, "en")
+    rest = sorted(loc for loc in locales if loc != "en")
+    return ("en", *rest)
+
+
+def locale_coverage(lang: str) -> Optional[dict]:
+    """Return coverage stats for `lang` (total, translated, l1_files), or None.
+
+    Convenience for CI / observability - call sites don't need this for
+    runtime translation.
+    """
+    cov = _locales_manifest().get("coverage", {})
+    if not isinstance(cov, dict):
+        return None
+    entry = cov.get(lang)
+    return entry if isinstance(entry, dict) else None
+
+
+def _localize(node: Capability, lang: str, fallback: str = "en") -> Capability:
+    """Return a copy of `node` with translatable fields swapped to `lang`.
+
+    Recurses into `children`. Missing per-field translations fall back to
+    the source (English) value. `lang == "en"` is a no-op.
+    """
+    if lang == "en":
+        return node
+    table = _locale_table(lang)
+    fields = table.get(node.id)
+    update: dict[str, object] = {}
+    if fields is not None:
+        if fields.name is not None:
+            update["name"] = fields.name
+        if fields.description is not None:
+            update["description"] = fields.description
+        if fields.aliases:
+            update["aliases"] = fields.aliases
+        if fields.in_scope:
+            update["in_scope"] = fields.in_scope
+        if fields.out_of_scope:
+            update["out_of_scope"] = fields.out_of_scope
+    if node.children:
+        update["children"] = tuple(_localize(c, lang, fallback) for c in node.children)
+    return node.model_copy(update=update) if update else node
 
 
 # Module-level constants

@@ -7,6 +7,7 @@ from ._loader import (
     NODE_COUNT,
     SCHEMA_VERSION,
     VERSION,
+    available_locales,
     get_ancestors,
     get_by_id,
     get_children,
@@ -14,15 +15,18 @@ from ._loader import (
     iter_subtree,
     load_all,
     load_tree,
+    locale_coverage,
 )
-from ._models import Capability
+from ._models import Capability, LocalizedFields
 
 __all__ = [
     "Capability",
     "GENERATED_AT",
+    "LocalizedFields",
     "NODE_COUNT",
     "SCHEMA_VERSION",
     "VERSION",
+    "available_locales",
     "get_ancestors",
     "get_by_id",
     "get_children",
@@ -30,4 +34,5 @@ __all__ = [
     "iter_subtree",
     "load_all",
     "load_tree",
+    "locale_coverage",
 ]

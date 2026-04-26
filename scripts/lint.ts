@@ -11,12 +11,15 @@ import { join } from "node:path";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 import {
+  BCP47_REGEX,
   CATALOGUE_DIR,
+  I18N_SCHEMA_PATH,
   ID_REGEX,
   SCHEMA_PATH,
   flatten,
   l1Slug,
   listYamlFiles,
+  loadAllSidecars,
   loadL1File,
   loadValueStreams,
   readIndex,
@@ -249,6 +252,59 @@ for (const stream of loadValueStreams()) {
 }
 
 // ---------------------------------------------------------------------------
+// 12. Translation sidecars: schema, locale-tag/dir match, source resolution,
+//     orphaned entry ids. Sidecars are optional; if catalogue/i18n/ does not
+//     exist, this section is a no-op.
+// ---------------------------------------------------------------------------
+const i18nSchema = JSON.parse(readFileSync(I18N_SCHEMA_PATH, "utf8"));
+const validateI18n = ajv.compile(i18nSchema);
+const indexedFileSet = new Set(index.files);
+const allKnownIds = idIndex; // id -> source file (built earlier)
+let sidecarCount = 0;
+
+for (const { locale, file, data } of loadAllSidecars()) {
+  const tag = `i18n/${locale}/${file}`;
+  sidecarCount++;
+  if (!validateI18n(data)) {
+    for (const e of validateI18n.errors ?? []) {
+      err(tag, `schema: ${e.instancePath || "/"} ${e.message}`);
+    }
+    continue;
+  }
+  if (!BCP47_REGEX.test(locale)) {
+    err(tag, `directory '${locale}' is not a valid BCP-47 tag`);
+  }
+  if (data.locale !== locale) {
+    err(tag, `locale field '${data.locale}' must equal directory name '${locale}'`);
+  }
+  if (!indexedFileSet.has(data.source)) {
+    err(tag, `source '${data.source}' is not registered in catalogue/_index.yaml`);
+  }
+  // Orphan / scope check: every entry id must (a) exist in the catalogue,
+  // (b) belong to the source L1 declared in `source:`. The second check
+  // protects against an entry leaking across L1 boundaries.
+  let sourceTreeIds: Set<string> | null = null;
+  if (indexedFileSet.has(data.source)) {
+    const sourceTree = trees.find(({ name }) => name === data.source);
+    if (sourceTree) {
+      sourceTreeIds = new Set(flatten(sourceTree.tree).map((n) => n.id));
+    }
+  }
+  for (const id of Object.keys(data.entries)) {
+    if (!allKnownIds.has(id)) {
+      err(tag, `entry '${id}' does not resolve to any catalogue node`);
+      continue;
+    }
+    if (sourceTreeIds && !sourceTreeIds.has(id)) {
+      err(
+        tag,
+        `entry '${id}' is not part of source '${data.source}' (cross-L1 entry — move to the correct sidecar)`
+      );
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
 // Report
 // ---------------------------------------------------------------------------
 if (errors.length > 0) {
@@ -259,4 +315,6 @@ if (errors.length > 0) {
   console.error("");
   process.exit(1);
 }
-console.log(`✔ Lint passed: ${trees.length} file(s), ${allFlat.length} node(s).`);
+console.log(
+  `✔ Lint passed: ${trees.length} file(s), ${allFlat.length} node(s), ${sidecarCount} sidecar(s).`
+);
