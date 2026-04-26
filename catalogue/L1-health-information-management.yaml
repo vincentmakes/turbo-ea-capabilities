@@ -1,0 +1,230 @@
+# Health Information Management
+id: BC-2900
+name: Health Information Management
+level: 1
+industry: Healthcare Providers
+description: |
+  Master patient index, coding operations, release of information, health
+  record lifecycle, clinical registry submissions, and healthcare
+  interoperability operations for the provider organisation.
+references:
+  - https://www.ahima.org/
+  - https://www.healthit.gov/
+  - https://www.hl7.org/fhir/
+  - https://www.ihe.net/
+children:
+  - id: BC-2900.10
+    name: Master Patient Index Management
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Stewardship of the master patient index and resolution of duplicate
+      and overlay records.
+    children:
+      - id: BC-2900.10.10
+        name: Master Patient Index Stewardship
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Day-to-day stewardship of the enterprise master patient index.
+        children: []
+      - id: BC-2900.10.20
+        name: Duplicate Resolution
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Identification and resolution of duplicate and overlay patient records.
+        children: []
+      - id: BC-2900.10.30
+        name: Patient Matching Algorithms
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Configuration and tuning of patient matching algorithms.
+        children: []
+      - id: BC-2900.10.40
+        name: Identity Cross-Reference
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Cross-reference of patient identities across affiliated organisations and exchanges.
+        children: []
+  - id: BC-2900.20
+    name: Coding Operations
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Production coding operations for inpatient and outpatient encounters
+      including audit and backlog management.
+    children:
+      - id: BC-2900.20.10
+        name: Inpatient Coding Production
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Production-side inpatient coding workflow and assignment.
+        children: []
+      - id: BC-2900.20.20
+        name: Outpatient Coding Production
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Production-side outpatient and ambulatory coding workflow.
+        children: []
+      - id: BC-2900.20.30
+        name: Coding Backlog Management
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Management of discharged-not-final-billed and coding backlogs.
+        children: []
+      - id: BC-2900.20.40
+        name: Coder Auditing
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Internal auditing of coder accuracy and feedback to coders.
+        children: []
+  - id: BC-2900.30
+    name: Release of Information
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Receipt, validation, and fulfilment of requests for protected health
+      information.
+    children:
+      - id: BC-2900.30.10
+        name: Information Request Intake
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Intake of patient, payer, legal, and provider requests for health information.
+        children: []
+      - id: BC-2900.30.20
+        name: Authorisation Validation
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Validation of authorisations and permitted disclosures under privacy regulations.
+        children: []
+      - id: BC-2900.30.30
+        name: Disclosure Tracking
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Tracking of disclosures of protected health information for accounting purposes.
+        children: []
+      - id: BC-2900.30.40
+        name: "Subpoena & Legal Requests"
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Handling of subpoenas, court orders, and legal record requests.
+        children: []
+  - id: BC-2900.40
+    name: Health Record Lifecycle
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Lifecycle management of health records from creation through retention
+      and destruction.
+    children:
+      - id: BC-2900.40.10
+        name: Encounter Closure
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Verification and tracking of encounter closure prerequisites.
+        children: []
+      - id: BC-2900.40.20
+        name: Chart Completion Tracking
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Tracking of delinquent chart completion and provider follow-up.
+        children: []
+      - id: BC-2900.40.30
+        name: Record Retention Scheduling
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Retention scheduling for medical records per regulatory requirements.
+        children: []
+      - id: BC-2900.40.40
+        name: Record Destruction
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Authorised destruction of medical records at end of retention.
+        children: []
+  - id: BC-2900.50
+    name: "Clinical Registries & Submissions"
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Submission to disease, cancer, trauma, and quality registries.
+    children:
+      - id: BC-2900.50.10
+        name: Disease Registry Submission
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Submission to public health and disease registries.
+        children: []
+      - id: BC-2900.50.20
+        name: Cancer Registry Operations
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Cancer registry abstraction and submission operations.
+        children: []
+      - id: BC-2900.50.30
+        name: Trauma Registry Operations
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Trauma registry abstraction and submission operations.
+        children: []
+      - id: BC-2900.50.40
+        name: Quality Registry Submission
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Submission to specialty quality registries supporting clinical research and benchmarking.
+        children: []
+  - id: BC-2900.60
+    name: Healthcare Interoperability Operations
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Operation of health information exchange connections, FHIR endpoints,
+      patient-initiated data sharing, and provider directory.
+    children:
+      - id: BC-2900.60.10
+        name: Health Information Exchange Operations
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Operations of inbound and outbound health information exchange connections.
+        children: []
+      - id: BC-2900.60.20
+        name: FHIR Endpoint Management
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Management of FHIR endpoints for app and partner integration.
+        children: []
+      - id: BC-2900.60.30
+        name: Patient-Initiated Data Sharing
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Patient-directed sharing of health information with third-party applications.
+        children: []
+      - id: BC-2900.60.40
+        name: Provider Directory Maintenance
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Maintenance of provider directory data for internal and external consumers.
+        children: []

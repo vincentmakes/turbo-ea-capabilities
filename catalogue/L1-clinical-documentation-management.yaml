@@ -1,0 +1,231 @@
+# Clinical Documentation Management
+id: BC-2830
+name: Clinical Documentation Management
+level: 1
+industry: Healthcare Providers
+description: |
+  Clinician documentation, computerised order entry, results review,
+  decision support, documentation improvement, and EHR-mediated workflow
+  underpinning the active record of patient care.
+references:
+  - https://www.hl7.org/fhir/
+  - https://www.healthit.gov/
+  - https://acdis.org/
+  - https://www.himss.org/
+children:
+  - id: BC-2830.10
+    name: Clinical Note Documentation
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Authoring of clinical notes across encounter types using narrative,
+      structured, voice, and ambient capture modalities.
+    children:
+      - id: BC-2830.10.10
+        name: Progress Note Authoring
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Authoring of inpatient and outpatient progress notes.
+        children: []
+      - id: BC-2830.10.20
+        name: Procedure Note Authoring
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Authoring of operative and procedure notes.
+        children: []
+      - id: BC-2830.10.30
+        name: Discharge Summary Authoring
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Authoring of discharge and transfer summaries.
+        children: []
+      - id: BC-2830.10.40
+        name: "Voice & Ambient Documentation"
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Voice dictation and ambient-capture documentation workflows.
+        children: []
+  - id: BC-2830.20
+    name: Computerised Provider Order Entry
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Provider order entry for medications, diagnostics, and procedures
+      including order sets and clinical protocols.
+    children:
+      - id: BC-2830.20.10
+        name: Medication Order Entry
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Provider entry of medication orders with dose, route, and frequency.
+        children: []
+      - id: BC-2830.20.20
+        name: Diagnostic Order Entry
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Provider entry of laboratory, imaging, and other diagnostic orders.
+        children: []
+      - id: BC-2830.20.30
+        name: Procedure Order Entry
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Provider entry of procedure and consultation orders.
+        children: []
+      - id: BC-2830.20.40
+        name: "Order Set & Protocol Use"
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Use of standardised order sets, power plans, and clinical protocols.
+        children: []
+  - id: BC-2830.30
+    name: "Results Review & Endorsement"
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Routing, review, and endorsement of diagnostic results and management
+      of critical-value notification.
+    children:
+      - id: BC-2830.30.10
+        name: "Result Notification & Routing"
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Routing of results to ordering and covering providers.
+        children: []
+      - id: BC-2830.30.20
+        name: Result Acknowledgement
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Provider acknowledgement and endorsement of received results.
+        children: []
+      - id: BC-2830.30.30
+        name: Critical Result Communication
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Time-bound communication of critical and panic-value results.
+        children: []
+      - id: BC-2830.30.40
+        name: Result Trend Review
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Review of result trends and longitudinal data within the chart.
+        children: []
+  - id: BC-2830.40
+    name: Clinical Decision Support
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Real-time clinical decision support including alerts, pathways,
+      risk-score surfacing, and best-practice advisories.
+    children:
+      - id: BC-2830.40.10
+        name: Drug Interaction Alerting
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Drug-drug, drug-allergy, and drug-disease interaction alerting.
+        children: []
+      - id: BC-2830.40.20
+        name: Clinical Pathway Guidance
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Pathway and guideline-based decision support at the point of care.
+        children: []
+      - id: BC-2830.40.30
+        name: Risk Score Surfacing
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Surfacing of clinical risk scores such as deterioration and sepsis predictors.
+        children: []
+      - id: BC-2830.40.40
+        name: Best-Practice Advisory Management
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Authoring, tuning, and governance of best-practice advisories.
+        children: []
+  - id: BC-2830.50
+    name: Clinical Documentation Improvement
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Concurrent and retrospective review, query, and education programmes
+      to improve documentation completeness and specificity.
+    children:
+      - id: BC-2830.50.10
+        name: Concurrent Documentation Review
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Concurrent review of inpatient documentation for clinical accuracy and specificity.
+        children: []
+      - id: BC-2830.50.20
+        name: Provider Query Management
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Generation and tracking of compliant clinical documentation queries.
+        children: []
+      - id: BC-2830.50.30
+        name: Documentation Quality Audit
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Audit of clinical documentation quality and case-mix index impact.
+        children: []
+      - id: BC-2830.50.40
+        name: Provider Documentation Education
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Provider education on documentation standards and improvement opportunities.
+        children: []
+  - id: BC-2830.60
+    name: EHR Workflow Management
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Clinician-facing electronic health record workflow including inbox,
+      task, encounter closure, and handoff management.
+    children:
+      - id: BC-2830.60.10
+        name: "Inbox & Task Management"
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Management of clinician inbox messages, tasks, and to-do queues.
+        children: []
+      - id: BC-2830.60.20
+        name: Encounter Closure
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Encounter closure including coding, billing, and documentation completion.
+        children: []
+      - id: BC-2830.60.30
+        name: Cross-Coverage Documentation
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Cross-coverage and on-call documentation workflows.
+        children: []
+      - id: BC-2830.60.40
+        name: "Patient List & Handoff Management"
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Management of patient lists and structured handoff documentation between shifts.
+        children: []

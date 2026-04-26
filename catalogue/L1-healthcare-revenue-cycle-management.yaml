@@ -1,0 +1,266 @@
+# Healthcare Revenue Cycle Management
+id: BC-2870
+name: Healthcare Revenue Cycle Management
+level: 1
+industry: Healthcare Providers
+description: |
+  Charge capture and chargemaster, medical coding, claim production and
+  submission, denials and appeals, cash posting, patient financial services,
+  and payer contract management for provider organisations.
+references:
+  - https://www.cms.gov/medicare/billing
+  - https://www.ahima.org/
+  - https://www.aapc.com/
+  - https://x12.org/
+  - https://www.hfma.org/
+children:
+  - id: BC-2870.10
+    name: "Charge Capture & Chargemaster Management"
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Capture of clinical charges and stewardship of the chargemaster across
+      service lines.
+    children:
+      - id: BC-2870.10.10
+        name: Charge Capture
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Capture of charges from clinical documentation and ancillary systems.
+        children: []
+      - id: BC-2870.10.20
+        name: Chargemaster Maintenance
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Maintenance of chargemaster items, codes, and pricing.
+        children: []
+      - id: BC-2870.10.30
+        name: Charge Reconciliation
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Reconciliation of expected versus captured charges by service area.
+        children: []
+      - id: BC-2870.10.40
+        name: Charge Audit
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Internal and external audit of charge accuracy and completeness.
+        children: []
+  - id: BC-2870.20
+    name: Medical Coding Management
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Inpatient, outpatient, and professional fee coding production and
+      compliance auditing.
+    children:
+      - id: BC-2870.20.10
+        name: Inpatient Coding
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Coding of inpatient encounters using diagnosis-related-group methodology.
+        children: []
+      - id: BC-2870.20.20
+        name: Outpatient Coding
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Coding of outpatient encounters using ambulatory payment classification methodology.
+        children: []
+      - id: BC-2870.20.30
+        name: Professional Fee Coding
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Coding of professional fee services using procedural and evaluation-and-management codes.
+        children: []
+      - id: BC-2870.20.40
+        name: "Coding Audit & Compliance"
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Coding audit, compliance, and education programmes.
+        children: []
+  - id: BC-2870.30
+    name: "Claim Production & Submission"
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Production, scrubbing, submission, and status tracking of claims to
+      payers.
+    children:
+      - id: BC-2870.30.10
+        name: "Claim Edit & Scrubbing"
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Application of pre-submission edits and claim scrubbing rules.
+        children: []
+      - id: BC-2870.30.20
+        name: Claim Submission
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Electronic submission of claims to payers and clearinghouses.
+        children: []
+      - id: BC-2870.30.30
+        name: Claim Status Inquiry
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Electronic and manual claim status inquiry and follow-up.
+        children: []
+      - id: BC-2870.30.40
+        name: Coordination of Benefits Sequencing
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Sequencing of primary, secondary, and tertiary claims across payers.
+        children: []
+  - id: BC-2870.40
+    name: "Denials & Appeals Management"
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Triage, appeal, and prevention of payer denials and underpayments.
+    children:
+      - id: BC-2870.40.10
+        name: Denial Triage
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Triage and routing of denied claims by reason and recovery probability.
+        children: []
+      - id: BC-2870.40.20
+        name: "Appeal Drafting & Submission"
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Drafting and submission of clinical and technical appeals.
+        children: []
+      - id: BC-2870.40.30
+        name: Underpayment Analysis
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Identification and recovery of payer underpayments against contracted rates.
+        children: []
+      - id: BC-2870.40.40
+        name: Denial Prevention Analytics
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Root-cause analytics to prevent recurring denials.
+        children: []
+  - id: BC-2870.50
+    name: "Cash Posting & Payer Reconciliation"
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Posting of payer remittances and patient payments and reconciliation
+      against expected reimbursement.
+    children:
+      - id: BC-2870.50.10
+        name: Remittance Posting
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Electronic remittance advice posting and reconciliation.
+        children: []
+      - id: BC-2870.50.20
+        name: Patient Payment Posting
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Posting of patient payments across channels.
+        children: []
+      - id: BC-2870.50.30
+        name: Contractual Adjustment Application
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Application of contractual adjustments based on payer agreements.
+        children: []
+      - id: BC-2870.50.40
+        name: Unapplied Cash Resolution
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Resolution and application of unidentified and unapplied cash.
+        children: []
+  - id: BC-2870.60
+    name: Patient Financial Services
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Patient billing, collections, payment plans, and bad-debt placement.
+    children:
+      - id: BC-2870.60.10
+        name: Patient Statement Generation
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Generation of patient statements across paper and digital channels.
+        children: []
+      - id: BC-2870.60.20
+        name: Patient Collections
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Self-pay patient collections operations and outreach.
+        children: []
+      - id: BC-2870.60.30
+        name: Payment Plan Management
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Setup and management of patient payment plans.
+        children: []
+      - id: BC-2870.60.40
+        name: Bad Debt Placement
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Placement and management of accounts with external collection agencies.
+        children: []
+  - id: BC-2870.70
+    name: Payer Contract Management
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Modelling, negotiation support, variance analysis, and performance
+      monitoring of payer contracts.
+    children:
+      - id: BC-2870.70.10
+        name: Contract Modelling
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Modelling of payer contract terms and reimbursement methodologies.
+        children: []
+      - id: BC-2870.70.20
+        name: Reimbursement Variance Analysis
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Variance analysis between contracted and actual reimbursement.
+        children: []
+      - id: BC-2870.70.30
+        name: Contract Negotiation Support
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Analytic and operational support for payer contract negotiations.
+        children: []
+      - id: BC-2870.70.40
+        name: Payer Performance Monitoring
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Ongoing monitoring of payer performance against contractual SLAs.
+        children: []

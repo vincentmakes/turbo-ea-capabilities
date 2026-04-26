@@ -1,0 +1,231 @@
+# Care Coordination Management
+id: BC-2820
+name: Care Coordination Management
+level: 1
+industry: Healthcare Providers
+description: |
+  Coordination of care across providers, settings, and time including
+  referrals, case management, transitions of care, discharge planning,
+  utilisation management, and social-determinant linkage.
+references:
+  - https://www.cms.gov/medicare/quality/value-based-programs
+  - https://www.ncqa.org/programs/health-care-providers-practices/patient-centered-medical-home-pcmh/
+  - https://www.acmaweb.org/
+  - https://www.ihi.org/Topics/Transitions-of-Care
+children:
+  - id: BC-2820.10
+    name: Referral Management
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      End-to-end management of patient referrals from order capture through
+      specialist match, tracking, and closure.
+    children:
+      - id: BC-2820.10.10
+        name: Referral Order Capture
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Capture of referral orders from referring providers with required clinical context.
+        children: []
+      - id: BC-2820.10.20
+        name: Specialist Matching
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Matching of referrals to specialists based on clinical need, network, and access.
+        children: []
+      - id: BC-2820.10.30
+        name: Referral Tracking
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Tracking of referral status, scheduling, and completion across the network.
+        children: []
+      - id: BC-2820.10.40
+        name: Referral Closure
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Closure of referrals with consultant report-back to the referring provider.
+        children: []
+  - id: BC-2820.20
+    name: "Case & Care Management"
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Identification, planning, and execution of case-management interventions
+      for high-risk and complex patients.
+    children:
+      - id: BC-2820.20.10
+        name: Case Stratification
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Stratification of patients into case-management tiers based on clinical and social risk.
+        children: []
+      - id: BC-2820.20.20
+        name: Care Plan Development
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Development of individualised care plans with patient-centred goals.
+        children: []
+      - id: BC-2820.20.30
+        name: Care Plan Execution
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Execution and ongoing reassessment of care-plan interventions.
+        children: []
+      - id: BC-2820.20.40
+        name: Care Manager Assignment
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Assignment and caseload management of care managers and navigators.
+        children: []
+  - id: BC-2820.30
+    name: Discharge Planning
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Planning for safe discharge from inpatient care including needs
+      assessment, post-acute placement, and patient education.
+    children:
+      - id: BC-2820.30.10
+        name: Discharge Needs Assessment
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Multidisciplinary assessment of post-discharge clinical and social needs.
+        children: []
+      - id: BC-2820.30.20
+        name: Discharge Plan Development
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Development of discharge plans including services, equipment, and follow-up.
+        children: []
+      - id: BC-2820.30.30
+        name: Post-Acute Placement
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Placement of patients into skilled nursing, rehabilitation, and home health services.
+        children: []
+      - id: BC-2820.30.40
+        name: Discharge Education
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Patient and caregiver education on discharge instructions, medications, and warning signs.
+        children: []
+  - id: BC-2820.40
+    name: Transitions of Care
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Coordination of patient transitions between providers and settings to
+      ensure continuity, safety, and outcome accountability.
+    children:
+      - id: BC-2820.40.10
+        name: Care Hand-Off Communication
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Structured hand-off communication between providers and care teams at transitions.
+        children: []
+      - id: BC-2820.40.20
+        name: Transitional Medication Reconciliation
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Reconciliation of medications across transitions of care.
+        children: []
+      - id: BC-2820.40.30
+        name: Follow-Up Appointment Scheduling
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Scheduling of post-discharge and post-encounter follow-up appointments.
+        children: []
+      - id: BC-2820.40.40
+        name: Transition Outcome Tracking
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Tracking of readmission, complication, and outcome metrics across transitions.
+        children: []
+  - id: BC-2820.50
+    name: Utilisation Management
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Review and oversight of admissions, continued stays, and length of stay
+      against medical necessity and utilisation criteria.
+    children:
+      - id: BC-2820.50.10
+        name: Admission Review
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Review of admission medical necessity and inpatient versus observation status.
+        children: []
+      - id: BC-2820.50.20
+        name: Continued Stay Review
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Periodic review of continued inpatient stay against criteria.
+        children: []
+      - id: BC-2820.50.30
+        name: Length-of-Stay Optimisation
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Optimisation of length of stay through barrier identification and resolution.
+        children: []
+      - id: BC-2820.50.40
+        name: Avoidable Day Tracking
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Capture and analysis of avoidable inpatient days and root causes.
+        children: []
+  - id: BC-2820.60
+    name: "Social Determinants & Community Linkage"
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Identification of social determinants of health and linkage to
+      community resources to support clinical outcomes.
+    children:
+      - id: BC-2820.60.10
+        name: Social Needs Screening
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Screening for housing, food, transport, and other social needs.
+        children: []
+      - id: BC-2820.60.20
+        name: Community Resource Referral
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Referral to community resources addressing identified social needs.
+        children: []
+      - id: BC-2820.60.30
+        name: Social Determinant Documentation
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Structured documentation of social determinants in the health record.
+        children: []
+      - id: BC-2820.60.40
+        name: Closed-Loop Referral Tracking
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Closed-loop tracking of community referrals to outcome and resolution.
+        children: []

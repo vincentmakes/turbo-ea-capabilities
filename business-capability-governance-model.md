@@ -466,6 +466,23 @@ Where an industry reference framework exists, anchor the upper levels (L1 / L2) 
 - **IATF 16949, ISO 26262** — automotive QMS and functional safety for electronic systems supplying automotive OEMs.
 - **RoHS 2011/65/EU, REACH, WEEE 2012/19/EU, EU Battery Regulation 2023/1542, Dodd-Frank §1502 / EU Conflict Minerals 2017/821** — substance restrictions, end-of-life, and responsible sourcing.
 
+**Healthcare Providers**
+
+- **HL7 v2 and HL7 FHIR (R4, R5)** — clinical and administrative healthcare data exchange.
+- **SNOMED CT, ICD-10-CM/PCS, ICD-11, LOINC, RxNorm, CPT, HCPCS** — clinical terminologies and procedure / diagnosis coding.
+- **IHE profiles (XDS, XCA, PIX/PDQ, ATNA, BPPC)** — interoperability profiles for cross-enterprise document and identity exchange.
+- **DICOM** — medical imaging information exchange and storage.
+- **The Joint Commission, Joint Commission International, DNV GL NIAHO, HFAP, CARF** — hospital and post-acute accreditation standards.
+- **CMS Conditions of Participation (42 CFR 482), Medicare Promoting Interoperability** — US federal participation and meaningful-use requirements.
+- **HIPAA Privacy / Security / Breach Notification (45 CFR 160-164), HITECH** — protected health information privacy and security.
+- **HITRUST CSF** — common security control framework for healthcare.
+- **CMS Star Ratings, MIPS / MACRA, HEDIS (NCQA)** — quality measurement and value-based payment programmes.
+- **AHRQ PSIs, CDC NHSN, NDNQI, Leapfrog** — patient safety, infection surveillance, and nursing-sensitive indicators.
+- **HIMSS EMRAM / INFRAM / AMAM** — digital and analytics maturity models.
+- **ANSI X12N (837 claims, 835 remit, 270/271 eligibility, 276/277 status, 278 authorisation), NCPDP SCRIPT / Telecom** — US healthcare administrative and pharmacy EDI.
+- **IEC 80001, FDA QSR (21 CFR 820), MDR (EU 2017/745)** — medical device data integration and provider-side device safety obligations.
+- **WHO ICF, ICPC-2** — functional and primary-care classification.
+
 **HVAC & Building Automation Systems**
 
 - **ASHRAE 90.1 / 62.1 / 62.2 / 55 / 188** — energy, ventilation/IAQ, thermal comfort, building water systems risk management.

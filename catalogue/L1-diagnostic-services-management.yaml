@@ -1,0 +1,232 @@
+# Diagnostic Services Management
+id: BC-2860
+name: Diagnostic Services Management
+level: 1
+industry: Healthcare Providers
+description: |
+  Laboratory, anatomical pathology, diagnostic imaging, cardiopulmonary
+  diagnostics, point-of-care testing, and end-to-end diagnostic results
+  management.
+references:
+  - https://www.cap.org/
+  - https://www.acr.org/
+  - https://www.dicomstandard.org/
+  - https://loinc.org/
+  - https://www.cms.gov/medicare/quality/clinical-laboratory-improvement-amendments
+children:
+  - id: BC-2860.10
+    name: Laboratory Services Management
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Specimen collection, clinical chemistry, haematology, microbiology,
+      molecular testing, and laboratory information system operations.
+    children:
+      - id: BC-2860.10.10
+        name: "Specimen Collection & Transport"
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Phlebotomy, specimen collection, and transport logistics.
+        children: []
+      - id: BC-2860.10.20
+        name: "Clinical Chemistry & Haematology"
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Clinical chemistry, haematology, and coagulation testing operations.
+        children: []
+      - id: BC-2860.10.30
+        name: "Microbiology & Molecular Testing"
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Microbiology, virology, and molecular diagnostic testing.
+        children: []
+      - id: BC-2860.10.40
+        name: Laboratory Information System Operations
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Operation of the laboratory information system and instrument interfaces.
+        children: []
+  - id: BC-2860.20
+    name: Anatomical Pathology Services
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Histology, cytology, surgical pathology, and digital pathology
+      operations.
+    children:
+      - id: BC-2860.20.10
+        name: Histology Processing
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Tissue processing, embedding, sectioning, and staining for histology.
+        children: []
+      - id: BC-2860.20.20
+        name: Cytology Services
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Cytology specimen preparation, screening, and reporting.
+        children: []
+      - id: BC-2860.20.30
+        name: Surgical Pathology Reporting
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Pathologist interpretation and reporting of surgical pathology cases.
+        children: []
+      - id: BC-2860.20.40
+        name: Digital Pathology Operations
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Whole-slide imaging acquisition, storage, and digital pathology workflow.
+        children: []
+  - id: BC-2860.30
+    name: Diagnostic Imaging Services
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Acquisition, reading, archival, and dose management for diagnostic
+      imaging modalities.
+    children:
+      - id: BC-2860.30.10
+        name: Imaging Acquisition
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Acquisition of imaging studies across radiography, CT, MRI, ultrasound, and nuclear medicine.
+        children: []
+      - id: BC-2860.30.20
+        name: "Image Reading & Reporting"
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Radiologist reading and structured reporting of imaging studies.
+        children: []
+      - id: BC-2860.30.30
+        name: Picture Archiving Operations
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Operation of imaging archives and inter-facility image exchange.
+        children: []
+      - id: BC-2860.30.40
+        name: Radiation Dose Management
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Radiation dose tracking, optimisation, and patient dose reporting.
+        children: []
+  - id: BC-2860.40
+    name: "Cardiology & Cardiopulmonary Diagnostics"
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Electrocardiography, echocardiography, cardiac catheterisation, and
+      pulmonary function testing services.
+    children:
+      - id: BC-2860.40.10
+        name: "Electrocardiography & Telemetry"
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Electrocardiogram acquisition, telemetry monitoring, and arrhythmia interpretation.
+        children: []
+      - id: BC-2860.40.20
+        name: Echocardiography
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Transthoracic, transoesophageal, and stress echocardiography services.
+        children: []
+      - id: BC-2860.40.30
+        name: Cardiac Catheterisation
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Diagnostic cardiac catheterisation and electrophysiology study services.
+        children: []
+      - id: BC-2860.40.40
+        name: Pulmonary Function Testing
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Spirometry, lung-volume, diffusion, and exercise pulmonary function testing.
+        children: []
+  - id: BC-2860.50
+    name: Point-of-Care Testing
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Governance, quality control, operator competency, and result
+      integration for point-of-care testing across the enterprise.
+    children:
+      - id: BC-2860.50.10
+        name: Point-of-Care Device Management
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Inventory and lifecycle management of point-of-care testing devices.
+        children: []
+      - id: BC-2860.50.20
+        name: Point-of-Care Quality Control
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Quality control and proficiency testing for point-of-care devices.
+        children: []
+      - id: BC-2860.50.30
+        name: Operator Competency Management
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Operator certification and competency assessment for point-of-care testing.
+        children: []
+      - id: BC-2860.50.40
+        name: Point-of-Care Result Integration
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Integration of point-of-care results into the laboratory record and chart.
+        children: []
+  - id: BC-2860.60
+    name: Diagnostic Results Management
+    level: 2
+    industry: Healthcare Providers
+    description: |
+      Validation, distribution, and reflex-rule management for diagnostic
+      results across modalities.
+    children:
+      - id: BC-2860.60.10
+        name: Result Validation
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Technical and clinical validation of diagnostic results.
+        children: []
+      - id: BC-2860.60.20
+        name: Critical Value Notification
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Time-bound notification of critical values to ordering providers.
+        children: []
+      - id: BC-2860.60.30
+        name: Result Distribution
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Distribution of results to ordering providers, patients, and external systems.
+        children: []
+      - id: BC-2860.60.40
+        name: Reflex Testing Rules
+        level: 3
+        industry: Healthcare Providers
+        description: |
+          Authoring and operation of reflex testing rules and add-on logic.
+        children: []
