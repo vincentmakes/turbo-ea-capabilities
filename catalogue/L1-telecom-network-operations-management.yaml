@@ -1,0 +1,327 @@
+# Telecom Network Operations Management
+id: BC-2600
+name: Telecom Network Operations Management
+level: 1
+industry: Telecommunications
+description: |
+  Day-to-day operation of fixed, mobile, and IP networks across radio access,
+  core, transport, and edge — covering fault, configuration, performance,
+  inventory, change, security operations, and field coordination, anchored on
+  TMN FCAPS and eTOM Resource Management & Operations.
+references:
+  - https://www.itu.int/rec/T-REC-M.3400
+  - https://www.tmforum.org/oda/business/process-framework-etom/
+  - https://www.3gpp.org/specifications-technologies
+  - https://www.etsi.org/technologies/zero-touch-network-service-management
+children:
+  - id: BC-2600.10
+    name: Network Fault Management
+    level: 2
+    industry: Telecommunications
+    description: |
+      Detection, correlation, ticketing, restoration, and root-cause analysis of
+      network faults across access, core, and transport domains.
+    children:
+      - id: BC-2600.10.10
+        name: Alarm Correlation
+        level: 3
+        industry: Telecommunications
+        description: |
+          Real-time correlation and de-duplication of network alarms into
+          actionable events.
+        children: []
+      - id: BC-2600.10.20
+        name: Trouble Ticket Management
+        level: 3
+        industry: Telecommunications
+        description: |
+          Lifecycle management of network trouble tickets from creation to
+          closure.
+        children: []
+      - id: BC-2600.10.30
+        name: Network Outage Management
+        level: 3
+        industry: Telecommunications
+        description: |
+          Coordination of major network outage response, communications, and
+          recovery actions.
+        children: []
+      - id: BC-2600.10.40
+        name: Root Cause Analysis
+        level: 3
+        industry: Telecommunications
+        description: |
+          Structured investigation of recurring or major faults to identify and
+          eliminate underlying causes.
+        children: []
+  - id: BC-2600.20
+    name: Network Configuration Management
+    level: 2
+    industry: Telecommunications
+    description: |
+      Definition and enforcement of network element configuration standards and
+      controlled deployment of configuration changes.
+    children:
+      - id: BC-2600.20.10
+        name: Golden Configuration Management
+        level: 3
+        industry: Telecommunications
+        description: |
+          Definition and maintenance of approved baseline configurations per
+          network element type and role.
+        children: []
+      - id: BC-2600.20.20
+        name: Network Parameter Management
+        level: 3
+        industry: Telecommunications
+        description: |
+          Lifecycle management of tunable network parameters and their authorised
+          ranges.
+        children: []
+      - id: BC-2600.20.30
+        name: Software Image Management
+        level: 3
+        industry: Telecommunications
+        description: |
+          Custody and approved-version control of network element software
+          images and firmware.
+        children: []
+      - id: BC-2600.20.40
+        name: Automated Configuration Deployment
+        level: 3
+        industry: Telecommunications
+        description: |
+          Tooling-driven deployment of approved configuration changes at scale
+          with verification and rollback.
+        children: []
+  - id: BC-2600.30
+    name: Network Performance Management
+    level: 2
+    industry: Telecommunications
+    description: |
+      Continuous capture and analysis of network performance counters and KPIs
+      to detect and pre-empt degradation.
+    children:
+      - id: BC-2600.30.10
+        name: Network KPI Capture
+        level: 3
+        industry: Telecommunications
+        description: |
+          Collection and storage of element- and network-level performance
+          counters and KPIs.
+        children: []
+      - id: BC-2600.30.20
+        name: Threshold Monitoring
+        level: 3
+        industry: Telecommunications
+        description: |
+          Monitoring of performance KPIs against engineering and SLA thresholds.
+        children: []
+      - id: BC-2600.30.30
+        name: Capacity Utilisation Monitoring
+        level: 3
+        industry: Telecommunications
+        description: |
+          Tracking of resource utilisation versus engineered capacity to flag
+          near-saturation conditions.
+        children: []
+      - id: BC-2600.30.40
+        name: Customer-Impact Correlation
+        level: 3
+        industry: Telecommunications
+        description: |
+          Correlation of network performance signals with customer-experience
+          indicators to identify service-impacting conditions.
+        children: []
+  - id: BC-2600.40
+    name: Network Inventory Management
+    level: 2
+    industry: Telecommunications
+    description: |
+      Authoritative record of logical and physical network resources and their
+      relationships, kept in sync with reality through reconciliation.
+    children:
+      - id: BC-2600.40.10
+        name: Logical Network Inventory
+        level: 3
+        industry: Telecommunications
+        description: |
+          Authoritative record of logical resources such as services, circuits,
+          IP/VLAN assignments, and bearer paths.
+        children: []
+      - id: BC-2600.40.20
+        name: Physical Network Inventory
+        level: 3
+        industry: Telecommunications
+        description: |
+          Authoritative record of physical assets such as nodes, cards, ports,
+          fibre, ducts, and antennas.
+        children: []
+      - id: BC-2600.40.30
+        name: Inventory Reconciliation
+        level: 3
+        industry: Telecommunications
+        description: |
+          Reconciliation of inventory records against discovery, design, and
+          field surveys.
+        children: []
+      - id: BC-2600.40.40
+        name: Network Resource Discovery
+        level: 3
+        industry: Telecommunications
+        description: |
+          Automated discovery of deployed network elements and their state.
+        children: []
+  - id: BC-2600.50
+    name: "Network Change & Release Management"
+    level: 2
+    industry: Telecommunications
+    description: |
+      Planning, approval, execution, verification, and rollback of changes to
+      live network elements and services.
+    children:
+      - id: BC-2600.50.10
+        name: Network Change Planning
+        level: 3
+        industry: Telecommunications
+        description: |
+          Planning and risk assessment of network changes, including impact
+          windows.
+        children: []
+      - id: BC-2600.50.20
+        name: Network Change Implementation
+        level: 3
+        industry: Telecommunications
+        description: |
+          Controlled execution of approved network changes against planned
+          windows.
+        children: []
+      - id: BC-2600.50.30
+        name: Change Verification
+        level: 3
+        industry: Telecommunications
+        description: |
+          Post-change verification that the network is in the expected state and
+          performing within tolerance.
+        children: []
+      - id: BC-2600.50.40
+        name: Change Rollback
+        level: 3
+        industry: Telecommunications
+        description: |
+          Reversion of changes that fail verification or trigger unacceptable
+          impact.
+        children: []
+  - id: BC-2600.60
+    name: Network Security Operations
+    level: 2
+    industry: Telecommunications
+    description: |
+      Telecom-network-specific security monitoring and response covering
+      signalling, transport, and core network domains, complementing enterprise
+      cybersecurity.
+    children:
+      - id: BC-2600.60.10
+        name: Network Threat Monitoring
+        level: 3
+        industry: Telecommunications
+        description: |
+          Monitoring of signalling, transport, and core networks for anomalous
+          and malicious activity.
+        children: []
+      - id: BC-2600.60.20
+        name: DDoS Protection
+        level: 3
+        industry: Telecommunications
+        description: |
+          Detection and mitigation of volumetric and protocol-based denial-of-
+          service attacks against network and customer endpoints.
+        children: []
+      - id: BC-2600.60.30
+        name: Network Access Control
+        level: 3
+        industry: Telecommunications
+        description: |
+          Enforcement of administrative and machine access controls to network
+          elements.
+        children: []
+      - id: BC-2600.60.40
+        name: Network Security Incident Response
+        level: 3
+        industry: Telecommunications
+        description: |
+          Containment, eradication, and recovery from confirmed network security
+          incidents.
+        children: []
+  - id: BC-2600.70
+    name: Field Operations Coordination
+    level: 2
+    industry: Telecommunications
+    description: |
+      Dispatch, execution control, and site access coordination for network
+      field activities.
+    children:
+      - id: BC-2600.70.10
+        name: Field Work Order Dispatch
+        level: 3
+        industry: Telecommunications
+        description: |
+          Assignment of network work orders to internal and contractor field
+          crews.
+        children: []
+      - id: BC-2600.70.20
+        name: Method of Procedure Execution
+        level: 3
+        industry: Telecommunications
+        description: |
+          Execution control of approved methods of procedure on live network
+          elements.
+        children: []
+      - id: BC-2600.70.30
+        name: Site Access Coordination
+        level: 3
+        industry: Telecommunications
+        description: |
+          Coordination of physical access to network sites including escort,
+          permits, and safety controls.
+        children: []
+  - id: BC-2600.80
+    name: Network Optimisation Management
+    level: 2
+    industry: Telecommunications
+    description: |
+      Continuous tuning of network elements and traffic paths to maximise
+      performance, capacity, and customer experience.
+    children:
+      - id: BC-2600.80.10
+        name: Radio Access Optimisation
+        level: 3
+        industry: Telecommunications
+        description: |
+          Tuning of radio access parameters, neighbour relations, and antenna
+          configuration.
+        children: []
+      - id: BC-2600.80.20
+        name: Transport Optimisation
+        level: 3
+        industry: Telecommunications
+        description: |
+          Tuning of transport network paths, capacity allocation, and quality of
+          service.
+        children: []
+      - id: BC-2600.80.30
+        name: Traffic Engineering
+        level: 3
+        industry: Telecommunications
+        description: |
+          Steering of IP and transport traffic across the network for
+          performance, cost, and resilience objectives.
+        children: []
+      - id: BC-2600.80.40
+        name: Closed-Loop Automation
+        level: 3
+        industry: Telecommunications
+        description: |
+          Automated detect-decide-act loops that continuously optimise the
+          network without manual intervention.
+        children: []

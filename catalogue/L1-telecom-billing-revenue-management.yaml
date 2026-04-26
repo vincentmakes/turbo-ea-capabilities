@@ -1,0 +1,254 @@
+# Telecom Billing & Revenue Management
+id: BC-2660
+name: "Telecom Billing & Revenue Management"
+level: 1
+industry: Telecommunications
+description: |
+  Mediation, charging, rating, billing, presentment, collections, revenue
+  assurance, and telecom-specific tax and surcharge processing across
+  prepaid, postpaid, and convergent services.
+references:
+  - https://www.tmforum.org/oda/business/process-framework-etom/
+  - https://www.3gpp.org/specifications-technologies
+children:
+  - id: BC-2660.10
+    name: Usage Mediation Management
+    level: 2
+    industry: Telecommunications
+    description: |
+      Collection, normalisation, and routing of usage records from network
+      elements to charging and billing systems.
+    children:
+      - id: BC-2660.10.10
+        name: CDR Collection
+        level: 3
+        industry: Telecommunications
+        description: |
+          Collection of call, session, and event detail records from network
+          elements and IPDR sources.
+        children: []
+      - id: BC-2660.10.20
+        name: CDR Enrichment
+        level: 3
+        industry: Telecommunications
+        description: |
+          Enrichment of CDRs with subscriber, tariff, and reference data needed
+          downstream.
+        children: []
+      - id: BC-2660.10.30
+        name: CDR Deduplication
+        level: 3
+        industry: Telecommunications
+        description: |
+          Detection and removal of duplicate usage records.
+        children: []
+      - id: BC-2660.10.40
+        name: CDR Format Conversion
+        level: 3
+        industry: Telecommunications
+        description: |
+          Conversion of CDR formats between collection sources and downstream
+          consumers.
+        children: []
+  - id: BC-2660.20
+    name: "Charging & Rating Management"
+    level: 2
+    industry: Telecommunications
+    description: |
+      Online and offline charging, rating, balance management, and recharge
+      across prepaid and postpaid models.
+    children:
+      - id: BC-2660.20.10
+        name: Online Charging Management
+        level: 3
+        industry: Telecommunications
+        description: |
+          Real-time charging of sessions and events against subscriber balance
+          and policy.
+        children: []
+      - id: BC-2660.20.20
+        name: Offline Charging Management
+        level: 3
+        industry: Telecommunications
+        description: |
+          Offline rating of usage and event records for postpaid billing.
+        children: []
+      - id: BC-2660.20.30
+        name: Balance Management
+        level: 3
+        industry: Telecommunications
+        description: |
+          Management of subscriber main and dedicated balances, accumulators,
+          and quotas.
+        children: []
+      - id: BC-2660.20.40
+        name: "Voucher & Recharge Management"
+        level: 3
+        industry: Telecommunications
+        description: |
+          Issuance, distribution, and redemption of vouchers and electronic
+          recharges.
+        children: []
+  - id: BC-2660.30
+    name: Billing Operations Management
+    level: 2
+    industry: Telecommunications
+    description: |
+      Execution of billing cycles, calculation of bills, and management of
+      adjustments and corrections.
+    children:
+      - id: BC-2660.30.10
+        name: Bill Cycle Execution
+        level: 3
+        industry: Telecommunications
+        description: |
+          Execution of scheduled billing cycles and ad-hoc bill runs.
+        children: []
+      - id: BC-2660.30.20
+        name: Bill Calculation
+        level: 3
+        industry: Telecommunications
+        description: |
+          Calculation of charges, taxes, and adjustments across all account
+          components.
+        children: []
+      - id: BC-2660.30.30
+        name: Bill Adjustment
+        level: 3
+        industry: Telecommunications
+        description: |
+          Application of approved adjustments to bills, including credits and
+          waivers.
+        children: []
+      - id: BC-2660.30.40
+        name: Bill Correction
+        level: 3
+        industry: Telecommunications
+        description: |
+          Correction of incorrect bills via re-bill or compensating adjustments.
+        children: []
+  - id: BC-2660.40
+    name: "Bill Presentment & Inquiry Management"
+    level: 2
+    industry: Telecommunications
+    description: |
+      Multi-format presentation of bills and resolution of customer inquiries
+      and disputes.
+    children:
+      - id: BC-2660.40.10
+        name: Bill Presentment
+        level: 3
+        industry: Telecommunications
+        description: |
+          Production and distribution of bills in paper, PDF, and digital
+          formats.
+        children: []
+      - id: BC-2660.40.20
+        name: Itemised Bill Inquiry
+        level: 3
+        industry: Telecommunications
+        description: |
+          Handling of itemised inquiries and dispute initiation by customers.
+        children: []
+      - id: BC-2660.40.30
+        name: Bill Explanation
+        level: 3
+        industry: Telecommunications
+        description: |
+          Explanation and visualisation of bill components for customers and
+          care agents.
+        children: []
+  - id: BC-2660.50
+    name: Telecom Collections Management
+    level: 2
+    industry: Telecommunications
+    description: |
+      Telecom-specific dunning, suspension, disconnection, and debt collection
+      flows.
+    children:
+      - id: BC-2660.50.10
+        name: Dunning Workflow
+        level: 3
+        industry: Telecommunications
+        description: |
+          Multi-step dunning workflow for overdue postpaid accounts.
+        children: []
+      - id: BC-2660.50.20
+        name: "Service Suspension & Disconnection"
+        level: 3
+        industry: Telecommunications
+        description: |
+          Soft suspension, hard disconnection, and reactivation of services for
+          unpaid balances.
+        children: []
+      - id: BC-2660.50.30
+        name: Debt Collection Coordination
+        level: 3
+        industry: Telecommunications
+        description: |
+          Coordination with internal and third-party debt collection agencies.
+        children: []
+  - id: BC-2660.60
+    name: Revenue Assurance Management
+    level: 2
+    industry: Telecommunications
+    description: |
+      Detection, quantification, and remediation of revenue leakage across the
+      revenue chain.
+    children:
+      - id: BC-2660.60.10
+        name: Revenue Leakage Detection
+        level: 3
+        industry: Telecommunications
+        description: |
+          Detection of leakage between network usage, mediation, charging,
+          billing, and accounting.
+        children: []
+      - id: BC-2660.60.20
+        name: Billing Accuracy Verification
+        level: 3
+        industry: Telecommunications
+        description: |
+          Sample- and exhaustive-level verification of bill accuracy against
+          source events.
+        children: []
+      - id: BC-2660.60.30
+        name: Network-to-Billing Reconciliation
+        level: 3
+        industry: Telecommunications
+        description: |
+          End-to-end reconciliation of network-recorded events with billed
+          revenue.
+        children: []
+  - id: BC-2660.70
+    name: "Telecom Tax & Surcharge Management"
+    level: 2
+    industry: Telecommunications
+    description: |
+      Calculation and remittance of telecom-specific taxes, surcharges, and
+      regulatory fees.
+    children:
+      - id: BC-2660.70.10
+        name: Universal Service Fund Surcharge
+        level: 3
+        industry: Telecommunications
+        description: |
+          Calculation, billing, and remittance of universal service fund
+          contributions.
+        children: []
+      - id: BC-2660.70.20
+        name: Telecom Excise Tax
+        level: 3
+        industry: Telecommunications
+        description: |
+          Calculation and remittance of telecom excise and communications-
+          specific taxes.
+        children: []
+      - id: BC-2660.70.30
+        name: Regulatory Fee Accrual
+        level: 3
+        industry: Telecommunications
+        description: |
+          Accrual and remittance of recurring regulatory fees tied to
+          subscriber and revenue counts.
+        children: []

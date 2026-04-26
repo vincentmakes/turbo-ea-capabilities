@@ -1,0 +1,235 @@
+# Telecom Regulatory Compliance Management
+id: BC-2700
+name: Telecom Regulatory Compliance Management
+level: 1
+industry: Telecommunications
+description: |
+  Telecom-specific regulatory obligations — universal service, lawful
+  interception, data retention, emergency services, accessibility, net
+  neutrality, and licence-condition reporting — anchored on national telecom
+  regulators and ETSI / 3GPP LI standards.
+references:
+  - https://www.etsi.org/committee/lawful-interception
+  - https://www.3gpp.org/specifications-technologies
+  - https://www.itu.int/rec/T-REC-E.164
+children:
+  - id: BC-2700.10
+    name: Universal Service Obligation Management
+    level: 2
+    industry: Telecommunications
+    description: |
+      Delivery and reporting against universal service obligations and
+      associated subsidies.
+    children:
+      - id: BC-2700.10.10
+        name: USO Area Planning
+        level: 3
+        industry: Telecommunications
+        description: |
+          Planning of universal service coverage and quality commitments by
+          area.
+        children: []
+      - id: BC-2700.10.20
+        name: USO Subsidy Reporting
+        level: 3
+        industry: Telecommunications
+        description: |
+          Reporting of subsidised customer counts and service delivery to USO
+          funds.
+        children: []
+      - id: BC-2700.10.30
+        name: USO Service Delivery
+        level: 3
+        industry: Telecommunications
+        description: |
+          Delivery of mandated USO services including subsidised tariffs and
+          minimum service levels.
+        children: []
+  - id: BC-2700.20
+    name: Lawful Interception Management
+    level: 2
+    industry: Telecommunications
+    description: |
+      Provisioning and delivery of lawful-interception capability under
+      authorised warrants.
+    children:
+      - id: BC-2700.20.10
+        name: Lawful Interception Provisioning
+        level: 3
+        industry: Telecommunications
+        description: |
+          Provisioning of LI targets in network elements under authorised
+          warrants.
+        children: []
+      - id: BC-2700.20.20
+        name: Lawful Interception Handover Delivery
+        level: 3
+        industry: Telecommunications
+        description: |
+          Delivery of intercepted content and metadata to law-enforcement
+          monitoring facilities.
+        children: []
+      - id: BC-2700.20.30
+        name: "Lawful Interception Audit & Access Control"
+        level: 3
+        industry: Telecommunications
+        description: |
+          Access control and audit of LI activity to prevent unauthorised use.
+        children: []
+  - id: BC-2700.30
+    name: Telecommunications Data Retention Management
+    level: 2
+    industry: Telecommunications
+    description: |
+      Capture, secure storage, and authorised release of retained
+      communications data per national data-retention frameworks.
+    children:
+      - id: BC-2700.30.10
+        name: Retained Data Capture
+        level: 3
+        industry: Telecommunications
+        description: |
+          Capture of communications data subject to retention obligations.
+        children: []
+      - id: BC-2700.30.20
+        name: Retained Data Access Workflow
+        level: 3
+        industry: Telecommunications
+        description: |
+          Authorised-request workflow for access to retained data by competent
+          authorities.
+        children: []
+      - id: BC-2700.30.30
+        name: Retained Data Purge
+        level: 3
+        industry: Telecommunications
+        description: |
+          Purge of retained data on expiry of retention periods.
+        children: []
+  - id: BC-2700.40
+    name: Emergency Services Management
+    level: 2
+    industry: Telecommunications
+    description: |
+      Emergency-call routing, location delivery, and public-warning
+      capabilities mandated by regulators.
+    children:
+      - id: BC-2700.40.10
+        name: Emergency Call Routing
+        level: 3
+        industry: Telecommunications
+        description: |
+          Routing of emergency calls to appropriate public-safety answering
+          points.
+        children: []
+      - id: BC-2700.40.20
+        name: Caller Location Delivery
+        level: 3
+        industry: Telecommunications
+        description: |
+          Delivery of caller-location information to emergency services per
+          E911, eCall, and AML standards.
+        children: []
+      - id: BC-2700.40.30
+        name: Public Warning Broadcast
+        level: 3
+        industry: Telecommunications
+        description: |
+          Broadcast of cell-broadcast and SMS-based public-warning messages on
+          authorised activation.
+        children: []
+  - id: BC-2700.50
+    name: Telecom Accessibility Management
+    level: 2
+    industry: Telecommunications
+    description: |
+      Delivery of accessibility features and resolution of accessibility-
+      related complaints under telecom-specific obligations.
+    children:
+      - id: BC-2700.50.10
+        name: "Real-Time Text & TTY Support"
+        level: 3
+        industry: Telecommunications
+        description: |
+          Support of real-time text and TTY services for deaf and hard-of-
+          hearing users.
+        children: []
+      - id: BC-2700.50.20
+        name: Accessibility Feature Delivery
+        level: 3
+        industry: Telecommunications
+        description: |
+          Delivery of telecom-specific accessibility features such as relay
+          services and accessible bills.
+        children: []
+      - id: BC-2700.50.30
+        name: Accessibility Complaints Handling
+        level: 3
+        industry: Telecommunications
+        description: |
+          Handling of accessibility-related complaints and regulator-required
+          reporting.
+        children: []
+  - id: BC-2700.60
+    name: "Net Neutrality & Traffic Management Disclosure"
+    level: 2
+    industry: Telecommunications
+    description: |
+      Disclosure of traffic-management practices and compliance with net-
+      neutrality regimes.
+    children:
+      - id: BC-2700.60.10
+        name: Traffic Management Policy Disclosure
+        level: 3
+        industry: Telecommunications
+        description: |
+          Disclosure of traffic-management practices to customers and
+          regulators.
+        children: []
+      - id: BC-2700.60.20
+        name: Throttling Transparency
+        level: 3
+        industry: Telecommunications
+        description: |
+          Transparent reporting of throttling, prioritisation, and zero-rating
+          practices.
+        children: []
+      - id: BC-2700.60.30
+        name: Net Neutrality Regulator Filing
+        level: 3
+        industry: Telecommunications
+        description: |
+          Filings to regulators on net-neutrality practices and complaints.
+        children: []
+  - id: BC-2700.70
+    name: Telecom Regulatory Reporting
+    level: 2
+    industry: Telecommunications
+    description: |
+      Recurring submissions of KPIs, market data, and licence-conditions
+      compliance to telecom regulators.
+    children:
+      - id: BC-2700.70.10
+        name: Telecom KPI Submissions
+        level: 3
+        industry: Telecommunications
+        description: |
+          Submission of mandatory KPIs on coverage, quality, and service
+          performance.
+        children: []
+      - id: BC-2700.70.20
+        name: Telecom Market Data Filings
+        level: 3
+        industry: Telecommunications
+        description: |
+          Submission of market-data filings on subscribers, revenue, and
+          traffic.
+        children: []
+      - id: BC-2700.70.30
+        name: Licence Conditions Reporting
+        level: 3
+        industry: Telecommunications
+        description: |
+          Reporting against operating licence conditions including coverage,
+          rollout, and quality obligations.
+        children: []
