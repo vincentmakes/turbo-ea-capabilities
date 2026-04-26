@@ -54,21 +54,36 @@ function splitIndustry(s: string | undefined): string[] {
     .filter(Boolean);
 }
 
-function toCsv(rows: FlatCap[]): string {
+function toCsv(rows: FlatCap[], byId: Map<string, FlatCap>): string {
   const headers = [
     "id",
     "name",
     "level",
-    "parent_id",
+    "path",
+    "parent",
+    "children",
     "industry",
     "deprecated",
-    "successor_id",
+    "successor",
     "description",
   ];
   const escape = (v: unknown) => {
     if (v === undefined || v === null) return "";
     const s = Array.isArray(v) ? v.join(";") : String(v);
     return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
+  };
+  const nameOf = (id: string | null | undefined) =>
+    id ? byId.get(id)?.name ?? id : "";
+  const pathOf = (cap: FlatCap) => {
+    const parts: string[] = [];
+    let cursor: FlatCap | undefined = cap;
+    const seen = new Set<string>();
+    while (cursor && !seen.has(cursor.id)) {
+      seen.add(cursor.id);
+      parts.unshift(cursor.name);
+      cursor = cursor.parent_id ? byId.get(cursor.parent_id) : undefined;
+    }
+    return parts.join(" / ");
   };
   const lines = [headers.join(",")];
   for (const r of rows) {
@@ -77,10 +92,12 @@ function toCsv(rows: FlatCap[]): string {
         r.id,
         r.name,
         r.level,
-        r.parent_id ?? "",
+        pathOf(r),
+        nameOf(r.parent_id),
+        r.children.map((id) => nameOf(id)).filter(Boolean).join(";"),
         r.industry ?? "",
         r.deprecated ?? false,
-        r.successor_id ?? "",
+        nameOf(r.successor_id),
         r.description ?? "",
       ]
         .map(escape)
@@ -431,7 +448,7 @@ export default function CatalogueBrowser({ data, valueStreams }: Props) {
     } else {
       download(
         `capabilities-selection-${rows.length}.csv`,
-        toCsv(rows),
+        toCsv(rows, byId),
         "text/csv"
       );
     }
@@ -1335,7 +1352,7 @@ function DetailModal({
               rows.sort((a, b) => compareIds(a.id, b.id));
               download(
                 `${node.id}-subtree-${rows.length}.csv`,
-                toCsv(rows),
+                toCsv(rows, byId),
                 "text/csv"
               );
             }}
