@@ -99,6 +99,11 @@ value_streams:
       - stage_order: 1
         stage_name: Issue Capture (Quality)
         capability_id: BC-720
+      - stage_order: 1
+        stage_name: Issue Capture (Product Compliance)
+        capability_id: BC-1910
+        industry_variant: Electrical Components & Equipment
+        notes: Field non-compliance reports
       - stage_order: 3
         stage_name: Investigation (Audit)
         capability_id: BC-140
@@ -135,6 +140,11 @@ value_streams:
         stage_name: Investigation (Quality)
         capability_id: BC-720
         notes: CAPA
+      - stage_order: 3
+        stage_name: Investigation (Product Compliance)
+        capability_id: BC-1910
+        industry_variant: Electrical Components & Equipment
+        notes: Root-cause investigation, certifier liaison
       - stage_order: 4
         stage_name: Resolution (Audit)
         capability_id: BC-140
@@ -163,6 +173,11 @@ value_streams:
       - stage_order: 4
         stage_name: Resolution (Quality)
         capability_id: BC-720
+      - stage_order: 4
+        stage_name: Resolution (Product Compliance)
+        capability_id: BC-1910
+        industry_variant: Electrical Components & Equipment
+        notes: Recall / stop-ship coordination
       - stage_order: 6
         stage_name: Lessons Learned (Aviation Safety)
         capability_id: BC-1280
@@ -195,6 +210,11 @@ value_streams:
         stage_name: Quote & Configuration
         capability_id: BC-440
         notes: Pricing application
+      - stage_order: 2
+        stage_name: Quote & Configuration
+        capability_id: BC-1940
+        industry_variant: Electrical Components & Equipment
+        notes: Configurator-driven CPQ for electrical variants
       - stage_order: 3
         stage_name: Contract & Order Capture
         capability_id: BC-150
@@ -227,6 +247,11 @@ value_streams:
         stage_name: Production / Service Delivery
         capability_id: BC-1550
         industry_variant: Pharma
+      - stage_order: 5
+        stage_name: Production / Service Delivery
+        capability_id: BC-1960
+        industry_variant: Electrical Components & Equipment
+        notes: OEM commissioning & energisation
       - stage_order: 6
         stage_name: Outbound Logistics
         capability_id: BC-1570
@@ -276,6 +301,11 @@ value_streams:
         stage_name: Supplier Selection & Onboarding
         capability_id: BC-510
         notes: Qualification; Pre-award risk check
+      - stage_order: 3
+        stage_name: Supplier Selection & Onboarding
+        capability_id: BC-1930
+        industry_variant: Electrical Components & Equipment
+        notes: Distributor & broker onboarding; component qualification
       - stage_order: 4
         stage_name: Contract & Purchase Order
         capability_id: BC-1790
@@ -313,6 +343,11 @@ value_streams:
         stage_name: Supplier Performance Monitoring
         capability_id: BC-510
         notes: Post-transaction loop; Strategic suppliers
+      - stage_order: 9
+        stage_name: Supplier Performance Monitoring
+        capability_id: BC-1930
+        industry_variant: Electrical Components & Equipment
+        notes: Distributor performance, PCN/EOL handling
   - name: Idea-to-Market
     stages:
       - stage_order: 1
@@ -361,6 +396,21 @@ value_streams:
         stage_name: Design & Development
         capability_id: BC-820
         notes: Product design
+      - stage_order: 5
+        stage_name: Design & Development
+        capability_id: BC-1900
+        industry_variant: Electrical Components & Equipment
+        notes: Electrical/electronic product design
+      - stage_order: 5
+        stage_name: Design & Development
+        capability_id: BC-1920
+        industry_variant: Electrical Components & Equipment
+        notes: Type-test & qualification on prototypes
+      - stage_order: 5
+        stage_name: Design & Development
+        capability_id: BC-1970
+        industry_variant: Electrical Components & Equipment
+        notes: Functional-safety & reliability analysis
       - stage_order: 6
         stage_name: IP Protection
         capability_id: BC-840
@@ -373,6 +423,11 @@ value_streams:
         stage_name: Launch Readiness
         capability_id: BC-820
         notes: Release & launch
+      - stage_order: 7
+        stage_name: Launch Readiness
+        capability_id: BC-1940
+        industry_variant: Electrical Components & Equipment
+        notes: Saleable catalogue activation
       - stage_order: 8
         stage_name: Market Introduction
         capability_id: BC-1530
@@ -382,10 +437,20 @@ value_streams:
         stage_name: Market Introduction
         capability_id: BC-410
         notes: Sales strategy / GTM
+      - stage_order: 8
+        stage_name: Market Introduction
+        capability_id: BC-1910
+        industry_variant: Electrical Components & Equipment
+        notes: Type approval & agency mark issuance
       - stage_order: 9
         stage_name: Post-Launch Performance
         capability_id: BC-820
         notes: Performance & feedback; End-of-life planning
+      - stage_order: 9
+        stage_name: Post-Launch Performance
+        capability_id: BC-1940
+        industry_variant: Electrical Components & Equipment
+        notes: Phase-in / phase-out, last-buy windows
   - name: Plan-to-Inventory
     stages:
       - stage_order: 1
@@ -405,6 +470,11 @@ value_streams:
         stage_name: Supply Planning
         capability_id: BC-520
         notes: Capacity / material plan
+      - stage_order: 2
+        stage_name: Supply Planning
+        capability_id: BC-1930
+        industry_variant: Electrical Components & Equipment
+        notes: Semiconductor allocation forecasting
       - stage_order: 3
         stage_name: S&OP Reconciliation
         capability_id: BC-230
@@ -429,6 +499,11 @@ value_streams:
         stage_name: Inventory Health Monitoring
         capability_id: BC-530
         notes: Accuracy / cycle counting; Slow-moving / obsolete review
+      - stage_order: 6
+        stage_name: Inventory Health Monitoring
+        capability_id: BC-1930
+        industry_variant: Electrical Components & Equipment
+        notes: Component lifecycle & obsolescence risk
   - name: Record-to-Report
     stages:
       - stage_order: 1
@@ -507,6 +582,11 @@ value_streams:
         stage_name: Commissioning & Capitalisation
         capability_id: BC-200
         notes: Capitalisation / fixed asset register
+      - stage_order: 3
+        stage_name: Commissioning & Capitalisation
+        capability_id: BC-1960
+        industry_variant: Electrical Components & Equipment
+        notes: OEM-led FAT / SAT / energisation
       - stage_order: 4
         stage_name: Operate & Maintain
         capability_id: BC-1030
@@ -515,6 +595,11 @@ value_streams:
         stage_name: Operate & Maintain
         capability_id: BC-1040
         notes: Asset performance monitoring
+      - stage_order: 4
+        stage_name: Operate & Maintain
+        capability_id: BC-1960
+        industry_variant: Electrical Components & Equipment
+        notes: Remote condition monitoring services
       - stage_order: 5
         stage_name: Risk & Reliability
         capability_id: BC-1030
@@ -528,6 +613,11 @@ value_streams:
         capability_id: BC-1780
         industry_variant: Defense
         notes: RAM engineering
+      - stage_order: 5
+        stage_name: Risk & Reliability
+        capability_id: BC-1970
+        industry_variant: Electrical Components & Equipment
+        notes: Reliability & MTBF on installed base
       - stage_order: 6
         stage_name: Asset Information Maintenance
         capability_id: BC-1040
@@ -540,6 +630,11 @@ value_streams:
         stage_name: Decommissioning & Disposal
         capability_id: BC-740
         notes: Circular economy / recycling
+      - stage_order: 7
+        stage_name: Decommissioning & Disposal
+        capability_id: BC-1980
+        industry_variant: Electrical Components & Equipment
+        notes: WEEE take-back, remanufacture, reuse
   - name: Strategy-to-Execution
     stages:
       - stage_order: 1
@@ -606,6 +701,11 @@ value_streams:
         capability_id: BC-1280
         industry_variant: ATC
         notes: Aviation safety risk assessment
+      - stage_order: 3
+        stage_name: Risk Assessment
+        capability_id: BC-1970
+        industry_variant: Electrical Components & Equipment
+        notes: Functional-safety risk assessment for products
       - stage_order: 4
         stage_name: Treatment & Control Design
         capability_id: BC-120
@@ -673,10 +773,20 @@ value_streams:
         stage_name: Threat Intelligence
         capability_id: BC-620
         notes: Threat feeds & intel
+      - stage_order: 2
+        stage_name: Threat Intelligence
+        capability_id: BC-1950
+        industry_variant: Electrical Components & Equipment
+        notes: Product CVE feeds & supplier advisories
       - stage_order: 3
         stage_name: Vulnerability Discovery
         capability_id: BC-620
         notes: Scanning, pen test, bug bounty
+      - stage_order: 3
+        stage_name: Vulnerability Discovery
+        capability_id: BC-1950
+        industry_variant: Electrical Components & Equipment
+        notes: Coordinated product vulnerability disclosure
       - stage_order: 4
         stage_name: Detection
         capability_id: BC-620
@@ -689,6 +799,11 @@ value_streams:
         stage_name: Incident Response
         capability_id: BC-620
         notes: Containment & eradication
+      - stage_order: 5
+        stage_name: Incident Response
+        capability_id: BC-1950
+        industry_variant: Electrical Components & Equipment
+        notes: OTA patch deployment for product CVEs
       - stage_order: 6
         stage_name: Identity & Access Hardening
         capability_id: BC-620
@@ -1124,6 +1239,11 @@ value_streams:
         stage_name: Triage & Planning
         capability_id: BC-1050
         notes: Dispatch & scheduling
+      - stage_order: 2
+        stage_name: Triage & Planning
+        capability_id: BC-1960
+        industry_variant: Electrical Components & Equipment
+        notes: Retrofit & service contract planning
       - stage_order: 3
         stage_name: Execution
         capability_id: BC-1030
@@ -1133,6 +1253,11 @@ value_streams:
         stage_name: Execution
         capability_id: BC-1050
         notes: Field service execution
+      - stage_order: 3
+        stage_name: Execution
+        capability_id: BC-1960
+        industry_variant: Electrical Components & Equipment
+        notes: OEM service execution on installed base
       - stage_order: 4
         stage_name: Parts & Logistics
         capability_id: BC-1030
@@ -1225,6 +1350,11 @@ value_streams:
         stage_name: Data Collection
         capability_id: BC-740
         notes: Emissions / energy data; Circular economy metrics; Sustainable sourcing data
+      - stage_order: 2
+        stage_name: Data Collection
+        capability_id: BC-1980
+        industry_variant: Electrical Components & Equipment
+        notes: Substance & product footprint data
       - stage_order: 3
         stage_name: Data Quality & Assurance
         capability_id: BC-140
@@ -1241,6 +1371,11 @@ value_streams:
         stage_name: Reporting & Disclosure
         capability_id: BC-740
         notes: Sustainability report
+      - stage_order: 4
+        stage_name: Reporting & Disclosure
+        capability_id: BC-1980
+        industry_variant: Electrical Components & Equipment
+        notes: Environmental product declarations & digital product passport
       - stage_order: 5
         stage_name: Stakeholder Engagement
         capability_id: BC-240
@@ -1260,6 +1395,11 @@ value_streams:
         capability_id: BC-1120
         industry_variant: Engineering Services
         notes: Conceptual design
+      - stage_order: 1
+        stage_name: Concept Design
+        capability_id: BC-1900
+        industry_variant: Electrical Components & Equipment
+        notes: Concept-stage circuit & topology design
       - stage_order: 2
         stage_name: FEED & Specification
         capability_id: BC-1120
@@ -1269,6 +1409,11 @@ value_streams:
         stage_name: FEED & Specification
         capability_id: BC-820
         notes: Product specification
+      - stage_order: 2
+        stage_name: FEED & Specification
+        capability_id: BC-1900
+        industry_variant: Electrical Components & Equipment
+        notes: Front-end electrical engineering
       - stage_order: 3
         stage_name: Detailed Design
         capability_id: BC-1100
@@ -1279,6 +1424,11 @@ value_streams:
         capability_id: BC-1120
         industry_variant: Engineering Services
         notes: Detailed design
+      - stage_order: 3
+        stage_name: Detailed Design
+        capability_id: BC-1900
+        industry_variant: Electrical Components & Equipment
+        notes: Detailed electrical/electronic design
       - stage_order: 4
         stage_name: Design Review
         capability_id: BC-1120
@@ -1289,6 +1439,21 @@ value_streams:
         capability_id: BC-1770
         industry_variant: Defense
         notes: Defense V&V
+      - stage_order: 4
+        stage_name: Design Review
+        capability_id: BC-1910
+        industry_variant: Electrical Components & Equipment
+        notes: Certification readiness review
+      - stage_order: 4
+        stage_name: Design Review
+        capability_id: BC-1920
+        industry_variant: Electrical Components & Equipment
+        notes: Type-test sign-off on first articles
+      - stage_order: 4
+        stage_name: Design Review
+        capability_id: BC-1970
+        industry_variant: Electrical Components & Equipment
+        notes: Safety case & FMEA review
       - stage_order: 5
         stage_name: Manufacturing Engineering
         capability_id: BC-1020
@@ -1298,6 +1463,11 @@ value_streams:
         stage_name: Manufacturing Engineering
         capability_id: BC-820
         notes: Configuration / variants
+      - stage_order: 5
+        stage_name: Manufacturing Engineering
+        capability_id: BC-1930
+        industry_variant: Electrical Components & Equipment
+        notes: Preferred parts feed manufacturing engineering
       - stage_order: 6
         stage_name: Production Ramp-Up
         capability_id: BC-1000
@@ -1327,6 +1497,11 @@ value_streams:
         capability_id: BC-1770
         industry_variant: Defense
         notes: Configuration management
+      - stage_order: 8
+        stage_name: Configuration Baseline
+        capability_id: BC-1940
+        industry_variant: Electrical Components & Equipment
+        notes: Saleable variant baseline
   - name: Opportunity-to-Order
     stages:
       - stage_order: 1
@@ -1364,6 +1539,11 @@ value_streams:
         stage_name: Quote & Configuration
         capability_id: BC-440
         notes: Price list application
+      - stage_order: 3
+        stage_name: Quote & Configuration
+        capability_id: BC-1940
+        industry_variant: Electrical Components & Equipment
+        notes: Variant configurator for engineered orders
       - stage_order: 4
         stage_name: Pricing & Approvals
         capability_id: BC-440
