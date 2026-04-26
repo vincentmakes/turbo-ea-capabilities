@@ -1,0 +1,182 @@
+# Trade Promotion Management
+id: BC-2360
+name: Trade Promotion Management
+level: 1
+industry: Retail & Consumer Goods
+description: |
+  Consumer-goods discipline of trade investment with retail customers -
+  joint business plans, trade-spend budgeting, in-store event execution,
+  deduction handling, and post-event lift measurement.
+references:
+  - https://www.theconsumergoodsforum.com/
+  - https://www.gs1.org/standards/edi
+children:
+  - id: BC-2360.10
+    name: "Trade Promotion Strategy & Planning"
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Annual trade-promotion strategy, customer-level investment planning,
+      and joint business plans negotiated with retail customers.
+    in_scope:
+      - Annual trade-promotion calendar
+      - Customer-level joint business plans
+      - Slotting and listing-fee strategy
+    children:
+      - id: BC-2360.10.10
+        name: Annual Trade Plan Development
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Development of the annual trade-promotion plan and event calendar.
+        children: []
+      - id: BC-2360.10.20
+        name: Joint Business Planning with Customers
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Joint business planning with strategic retail customers.
+        children: []
+      - id: BC-2360.10.30
+        name: Slotting and Listing Fee Strategy
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Strategy and negotiation of slotting and listing fees for new items.
+        children: []
+  - id: BC-2360.20
+    name: Trade Spend Budget Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Trade-spend budgeting, accruals, allocation across customers, and
+      financial control of trade investments.
+    children:
+      - id: BC-2360.20.10
+        name: Trade Spend Budgeting
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Budgeting of trade spend by customer, brand, and event.
+        children: []
+      - id: BC-2360.20.20
+        name: Trade Spend Accrual Management
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Accrual of trade-spend liabilities by customer and event.
+        children: []
+      - id: BC-2360.20.30
+        name: Trade Spend Allocation
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Allocation of trade-spend pots across customers, regions, and events.
+        children: []
+      - id: BC-2360.20.40
+        name: Trade Spend Financial Control
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Financial control over trade spend including approval thresholds.
+        children: []
+  - id: BC-2360.30
+    name: Promotional Event Execution Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Execution of in-store and online promotional events including
+      perfect-store audits and field-team activation.
+    children:
+      - id: BC-2360.30.10
+        name: Event Setup with Customer
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Setup of promotional events with retail customer including artwork and forecasts.
+        children: []
+      - id: BC-2360.30.20
+        name: In-Store Activation and Display
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Activation of in-store displays, gondolas, and secondary placements.
+        children: []
+      - id: BC-2360.30.30
+        name: Perfect Store Audit Execution
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Field execution of perfect-store audits and image-recognition checks.
+        children: []
+      - id: BC-2360.30.40
+        name: Field Sales Team Activation
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Activation of field sales teams to drive event execution.
+        children: []
+  - id: BC-2360.40
+    name: "Deduction & Claim Management"
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Validation, dispute, and resolution of customer deductions and
+      promotional claims taken against invoices.
+    in_scope:
+      - Deduction intake and matching to events
+      - Validation against agreed terms
+      - Dispute resolution and recovery
+    out_of_scope:
+      - Generic AR collections (BC-200)
+    children:
+      - id: BC-2360.40.10
+        name: Deduction Intake and Matching
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Intake of customer deductions and matching to promotional events.
+        children: []
+      - id: BC-2360.40.20
+        name: Deduction Validation
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Validation of deductions against agreed terms, volumes, and prices.
+        children: []
+      - id: BC-2360.40.30
+        name: Dispute Resolution and Recovery
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Dispute resolution with customer and recovery of invalid deductions.
+        children: []
+  - id: BC-2360.50
+    name: Trade Promotion Effectiveness Measurement
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Post-event measurement of promotional lift, baseline-vs-incremental
+      analysis, and ROI by event, customer, and brand.
+    children:
+      - id: BC-2360.50.10
+        name: Baseline and Lift Measurement
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Measurement of baseline sales and incremental lift from promotional events.
+        children: []
+      - id: BC-2360.50.20
+        name: Promotion ROI Analysis
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          ROI analysis of trade promotions by event, customer, and brand.
+        children: []
+      - id: BC-2360.50.30
+        name: Cannibalisation and Pull-Forward Analysis
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Analysis of cannibalisation and demand pull-forward effects.
+        children: []

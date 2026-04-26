@@ -495,6 +495,19 @@ Where an industry reference framework exists, anchor the upper levels (L1 / L2) 
 - **IDD (EU Directive 2016/97), NAIC Model Laws, and US state insurance regulations** — distribution and conduct.
 - **GDPR and HIPAA (where applicable)** — privacy and personal-data protection across underwriting and claims.
 
+**Retail & Consumer Goods**
+
+- **ARTS / NRF Reference Model** — retail data and process taxonomy.
+- **GS1 standards (GTIN, GLN, SSCC, GDTI)** — global identification of products, parties, and logistic units.
+- **GDSN (Global Data Synchronisation Network) and GS1 GPC** — product master-data exchange and classification.
+- **GS1 EPCIS** — event-based traceability for supply-chain visibility.
+- **EDI standards (EDIFACT, ANSI X12 — 850 PO, 810 invoice, 856 ASN, 832 catalogue)** — trading-partner messaging.
+- **PCI DSS** — payment-card data security at point of sale.
+- **VICS CPFR** — collaborative planning, forecasting, and replenishment with trading partners.
+- **Consumer Goods Forum (CGF)** — industry collaboration on traceability, safety, and sustainability.
+- **BRCGS, SQF, FSSC 22000, IFS Food, ISO 22000** — food-safety management systems and certification standards.
+- **OECD Due Diligence Guidance for the Garment & Footwear Sector, WRAP, SA8000** — ethical-sourcing and labour standards relevant to consumer-goods supply chains.
+
 **Other industry anchors not yet exercised in the catalogue but recommended for adoption**
 
 - **eTOM** — telecommunications.

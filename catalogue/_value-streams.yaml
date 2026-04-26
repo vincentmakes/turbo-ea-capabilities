@@ -114,6 +114,16 @@ value_streams:
         capability_id: BC-2030
         industry_variant: HVAC & Building Automation Systems
         notes: Field safety / non-compliance intake
+      - stage_order: 1
+        stage_name: Issue Capture (Retail Loss Prevention)
+        capability_id: BC-2340
+        industry_variant: Retail & Consumer Goods
+        notes: Shrink, theft, POS fraud intake
+      - stage_order: 1
+        stage_name: Issue Capture (Food Safety)
+        capability_id: BC-2380
+        industry_variant: Retail & Consumer Goods
+        notes: Food-safety incident intake
       - stage_order: 3
         stage_name: Investigation (Audit)
         capability_id: BC-140
@@ -160,6 +170,16 @@ value_streams:
         capability_id: BC-2030
         industry_variant: HVAC & Building Automation Systems
         notes: Certifier liaison & root cause for HVAC equipment
+      - stage_order: 3
+        stage_name: Investigation (Retail Loss Prevention)
+        capability_id: BC-2340
+        industry_variant: Retail & Consumer Goods
+        notes: LP casework, ORC investigation
+      - stage_order: 3
+        stage_name: Investigation (Food Safety)
+        capability_id: BC-2380
+        industry_variant: Retail & Consumer Goods
+        notes: Lot trace and root-cause analysis
       - stage_order: 4
         stage_name: Resolution (Audit)
         capability_id: BC-140
@@ -198,6 +218,16 @@ value_streams:
         capability_id: BC-2030
         industry_variant: HVAC & Building Automation Systems
         notes: Field modification, recall, mark withdrawal
+      - stage_order: 4
+        stage_name: Resolution (Retail Loss Prevention)
+        capability_id: BC-2340
+        industry_variant: Retail & Consumer Goods
+        notes: Recovery and disciplinary follow-through
+      - stage_order: 4
+        stage_name: Resolution (Food Safety)
+        capability_id: BC-2380
+        industry_variant: Retail & Consumer Goods
+        notes: Recall execution and effectiveness verification
       - stage_order: 6
         stage_name: Lessons Learned (Aviation Safety)
         capability_id: BC-1280
@@ -244,6 +274,11 @@ value_streams:
         stage_name: Contract & Order Capture
         capability_id: BC-410
         notes: Order entry
+      - stage_order: 3
+        stage_name: Contract & Order Capture
+        capability_id: BC-2320
+        industry_variant: Retail & Consumer Goods
+        notes: POS basket capture
       - stage_order: 4
         stage_name: Order Promising & Allocation
         capability_id: BC-520
@@ -252,6 +287,11 @@ value_streams:
         stage_name: Order Promising & Allocation
         capability_id: BC-530
         notes: Stock reservation
+      - stage_order: 4
+        stage_name: Order Promising & Allocation
+        capability_id: BC-2330
+        industry_variant: Retail & Consumer Goods
+        notes: Cross-channel order routing
       - stage_order: 5
         stage_name: Production / Service Delivery
         capability_id: BC-1000
@@ -273,6 +313,16 @@ value_streams:
         capability_id: BC-1960
         industry_variant: Electrical Components & Equipment
         notes: OEM commissioning & energisation
+      - stage_order: 5
+        stage_name: Production / Service Delivery
+        capability_id: BC-2310
+        industry_variant: Retail & Consumer Goods
+        notes: In-store sale delivery
+      - stage_order: 5
+        stage_name: Production / Service Delivery
+        capability_id: BC-2330
+        industry_variant: Retail & Consumer Goods
+        notes: Omnichannel fulfilment
       - stage_order: 6
         stage_name: Outbound Logistics
         capability_id: BC-1570
@@ -282,6 +332,11 @@ value_streams:
         stage_name: Outbound Logistics
         capability_id: BC-520
         notes: Shipping
+      - stage_order: 6
+        stage_name: Outbound Logistics
+        capability_id: BC-2330
+        industry_variant: Retail & Consumer Goods
+        notes: BOPIS, kerbside, ship-from-store, last-mile slots
       - stage_order: 7
         stage_name: Customer Invoicing
         capability_id: BC-200
@@ -291,6 +346,11 @@ value_streams:
         capability_id: BC-2150
         industry_variant: Insurance
         notes: Premium invoicing
+      - stage_order: 7
+        stage_name: Customer Invoicing
+        capability_id: BC-2320
+        industry_variant: Retail & Consumer Goods
+        notes: POS receipt issuance
       - stage_order: 8
         stage_name: Cash Collection & Application
         capability_id: BC-200
@@ -304,6 +364,11 @@ value_streams:
         capability_id: BC-2150
         industry_variant: Insurance
         notes: Premium collection
+      - stage_order: 8
+        stage_name: Cash Collection & Application
+        capability_id: BC-2320
+        industry_variant: Retail & Consumer Goods
+        notes: Tender acceptance & end-of-day reconciliation
       - stage_order: 9
         stage_name: Revenue Recognition
         capability_id: BC-200
@@ -474,6 +539,11 @@ value_streams:
         capability_id: BC-2100
         industry_variant: Insurance
         notes: Insurance product design & wording
+      - stage_order: 5
+        stage_name: Design & Development
+        capability_id: BC-2300
+        industry_variant: Retail & Consumer Goods
+        notes: Private-label NPD specification
       - stage_order: 6
         stage_name: IP Protection
         capability_id: BC-840
@@ -496,6 +566,11 @@ value_streams:
         capability_id: BC-2100
         industry_variant: Insurance
         notes: Filing & channel readiness
+      - stage_order: 7
+        stage_name: Launch Readiness
+        capability_id: BC-2370
+        industry_variant: Retail & Consumer Goods
+        notes: Channel content readiness
       - stage_order: 8
         stage_name: Market Introduction
         capability_id: BC-1530
@@ -520,6 +595,11 @@ value_streams:
         capability_id: BC-2100
         industry_variant: Insurance
         notes: Regulatory rate filing & approval
+      - stage_order: 8
+        stage_name: Market Introduction
+        capability_id: BC-2360
+        industry_variant: Retail & Consumer Goods
+        notes: Trade-event launch activation
       - stage_order: 9
         stage_name: Post-Launch Performance
         capability_id: BC-820
@@ -545,6 +625,11 @@ value_streams:
         stage_name: Demand Planning
         capability_id: BC-520
         notes: Statistical forecast + consensus
+      - stage_order: 1
+        stage_name: Demand Planning
+        capability_id: BC-2300
+        industry_variant: Retail & Consumer Goods
+        notes: Cluster assortment & range demand
       - stage_order: 2
         stage_name: Supply Planning
         capability_id: BC-1000
@@ -571,6 +656,11 @@ value_streams:
         stage_name: Inventory Positioning
         capability_id: BC-530
         notes: Stock level targets; Allocation across nodes
+      - stage_order: 4
+        stage_name: Inventory Positioning
+        capability_id: BC-2300
+        industry_variant: Retail & Consumer Goods
+        notes: Allocation across store clusters
       - stage_order: 5
         stage_name: Replenishment Execution
         capability_id: BC-530
@@ -660,6 +750,11 @@ value_streams:
         stage_name: Asset Need & Justification
         capability_id: BC-230
         notes: CAPEX business case
+      - stage_order: 1
+        stage_name: Asset Need & Justification
+        capability_id: BC-2350
+        industry_variant: Retail & Consumer Goods
+        notes: Catchment, format, and network business case
       - stage_order: 2
         stage_name: Acquisition
         capability_id: BC-1110
@@ -885,6 +980,11 @@ value_streams:
         capability_id: BC-1540
         industry_variant: Pharma
         notes: GxP audit & inspection readiness
+      - stage_order: 3
+        stage_name: Fieldwork
+        capability_id: BC-2380
+        industry_variant: Retail & Consumer Goods
+        notes: Food-safety audit & inspection readiness
       - stage_order: 4
         stage_name: Findings & Reporting
         capability_id: BC-140
@@ -994,6 +1094,11 @@ value_streams:
         stage_name: Demand Generation
         capability_id: BC-400
         notes: Campaigns, content syndication; Digital marketing; Content marketing
+      - stage_order: 3
+        stage_name: Demand Generation
+        capability_id: BC-2360
+        industry_variant: Retail & Consumer Goods
+        notes: Trade-event-driven sell-through
       - stage_order: 4
         stage_name: Lead Capture & Nurture
         capability_id: BC-400
@@ -1532,6 +1637,11 @@ value_streams:
         stage_name: Crisis Response
         capability_id: BC-850
         notes: Crisis communications
+      - stage_order: 4
+        stage_name: Crisis Response
+        capability_id: BC-2380
+        industry_variant: Retail & Consumer Goods
+        notes: Major food recall response
       - stage_order: 5
         stage_name: Disaster Recovery
         capability_id: BC-160

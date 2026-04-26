@@ -1,0 +1,178 @@
+# Product Information Management
+id: BC-2370
+name: Product Information Management
+level: 1
+industry: Retail & Consumer Goods
+description: |
+  Authoritative item attributes, marketing content, and channel-ready
+  product data - from item creation through GS1/GDSN synchronisation to
+  multi-channel syndication and content readiness.
+references:
+  - https://www.gs1.org/standards/gdsn
+  - https://www.gs1.org/standards/gpc
+children:
+  - id: BC-2370.10
+    name: Item Master Data Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Item master attributes, GTINs, hierarchies, and taxonomy that form
+      the canonical product record across the enterprise.
+    in_scope:
+      - Item creation and attribute maintenance
+      - GTIN, GLN, and packaging-level identification
+      - Product taxonomy and classification (e.g. GS1 GPC)
+    out_of_scope:
+      - Generic master-data governance (BC-610)
+    children:
+      - id: BC-2370.10.10
+        name: Item Creation and Attribution
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Creation of item records and authoring of attribute values.
+        children: []
+      - id: BC-2370.10.20
+        name: GTIN and Identifier Allocation
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Allocation of GTINs and packaging-level identifiers per GS1 rules.
+        children: []
+      - id: BC-2370.10.30
+        name: Product Hierarchy and Taxonomy
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Maintenance of product hierarchy and taxonomy (e.g. GS1 GPC).
+        children: []
+      - id: BC-2370.10.40
+        name: Item Status and Lifecycle State
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Tracking of item lifecycle states from concept to discontinued.
+        children: []
+  - id: BC-2370.20
+    name: Product Content Authoring Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Authoring of marketing copy, photography, video, and rich media
+      that turn an item record into a sellable consumer-facing product.
+    children:
+      - id: BC-2370.20.10
+        name: Marketing Copy Authoring
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Authoring of titles, descriptions, and selling copy per channel.
+        children: []
+      - id: BC-2370.20.20
+        name: Product Photography and Video Production
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Production of product photography, lifestyle imagery, and video.
+        children: []
+      - id: BC-2370.20.30
+        name: Rich Media and 3D Asset Production
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Production of 360-degree, AR, and 3D product assets.
+        children: []
+      - id: BC-2370.20.40
+        name: Translation and Localisation
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Translation and localisation of product content for target markets.
+        children: []
+  - id: BC-2370.30
+    name: Channel Syndication Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Publication of product content to owned channels, retailer feeds,
+      marketplaces, and trading partners with channel-specific adaptation.
+    children:
+      - id: BC-2370.30.10
+        name: Owned Channel Publishing
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Publishing of content to owned web, mobile, and store channels.
+        children: []
+      - id: BC-2370.30.20
+        name: Marketplace Feed Syndication
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Syndication of feeds to third-party marketplaces and aggregators.
+        children: []
+      - id: BC-2370.30.30
+        name: Retailer Feed and EDI 832 Catalogue
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Provision of EDI 832 product catalogues to retail trading partners.
+        children: []
+  - id: BC-2370.40
+    name: "GS1 / GDSN Synchronisation Management"
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Synchronisation of product master data with trading partners through
+      GDSN data pools, party registration, and recipient subscriptions.
+    children:
+      - id: BC-2370.40.10
+        name: GDSN Data Pool Operations
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Operation of the GDSN data pool relationship and submissions.
+        children: []
+      - id: BC-2370.40.20
+        name: Party and Recipient Registration
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Registration of parties and recipient subscriptions in the GDSN.
+        children: []
+      - id: BC-2370.40.30
+        name: GDSN Synchronisation Exception Management
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Management of GDSN sync exceptions and trading-partner mismatches.
+        children: []
+  - id: BC-2370.50
+    name: Product Content Quality Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Content readiness scoring, completeness measurement, and validation
+      against channel-specific quality standards.
+    children:
+      - id: BC-2370.50.10
+        name: Content Completeness Scoring
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Scoring of content completeness against channel readiness requirements.
+        children: []
+      - id: BC-2370.50.20
+        name: Content Validation and Compliance
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Validation of content against regulatory and channel rules.
+        children: []
+      - id: BC-2370.50.30
+        name: Content Quality Remediation
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Remediation workflow for items failing content quality checks.
+        children: []

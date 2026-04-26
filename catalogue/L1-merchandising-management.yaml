@@ -1,0 +1,253 @@
+# Merchandising Management
+id: BC-2300
+name: Merchandising Management
+level: 1
+industry: Retail & Consumer Goods
+description: |
+  Range, category, space, buying, private-label, and markdown decisions
+  that shape what products are sold to consumers, where, and at what depth
+  of choice.
+references:
+  - https://nrf.com/resources/retail-technology-standards
+  - https://www.gs1.org/standards/gpc
+children:
+  - id: BC-2300.10
+    name: "Assortment & Range Planning"
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Range architecture, choice counts, and store-cluster assortment plans
+      that translate strategy into the SKUs each location carries.
+    in_scope:
+      - Range architecture and good-better-best structure
+      - Cluster and channel assortment plans
+      - New-item introduction and discontinuation slots
+    out_of_scope:
+      - Generic product lifecycle management (BC-820)
+      - Demand forecasting (BC-520.10)
+    children:
+      - id: BC-2300.10.10
+        name: Range Architecture Definition
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Definition of range architecture, tiering, and good-better-best structure across categories.
+        children: []
+      - id: BC-2300.10.20
+        name: Store Cluster Assortment Planning
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Assortment plans tailored to store clusters by trade area and shopper mission.
+        children: []
+      - id: BC-2300.10.30
+        name: Choice Count Optimisation
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Optimisation of SKU count per category to balance variety, complexity, and margin.
+        children: []
+      - id: BC-2300.10.40
+        name: New Item Introduction Planning
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Slotting and ranging of new items including introduction cadence and replacement decisions.
+        children: []
+      - id: BC-2300.10.50
+        name: Discontinuation Planning
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Range exit decisions, replacement choices, and disposition of discontinued items.
+        children: []
+  - id: BC-2300.20
+    name: Category Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Category strategy, role definition, and performance management treating
+      each category as a business unit per CGF / ECR practice.
+    in_scope:
+      - Category strategy and role definition
+      - Category performance and scorecards
+      - Category-captain collaboration with suppliers
+    children:
+      - id: BC-2300.20.10
+        name: Category Strategy Definition
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Definition of category strategy, target shopper, and competitive positioning.
+        children: []
+      - id: BC-2300.20.20
+        name: Category Role Assignment
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Assignment of category roles such as destination, routine, convenience, or seasonal.
+        children: []
+      - id: BC-2300.20.30
+        name: Category Performance Analysis
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Category scorecards, share, growth, and margin analysis.
+        children: []
+      - id: BC-2300.20.40
+        name: Category Captain Engagement
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Engagement of supplier category captains with information-firewall controls.
+        children: []
+  - id: BC-2300.30
+    name: "Space & Planogram Management"
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Floor and shelf-space allocation, planograms, and fixture layouts that
+      translate the assortment plan into a physical or digital shelf.
+    children:
+      - id: BC-2300.30.10
+        name: Planogram Design
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Design of planograms by category, store cluster, and fixture type.
+        children: []
+      - id: BC-2300.30.20
+        name: Shelf Space Allocation
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Allocation of shelf space across categories and brands by performance.
+        children: []
+      - id: BC-2300.30.30
+        name: Fixture and Floor Layout
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Floor layout and fixture placement to support adjacencies and shopper flow.
+        children: []
+      - id: BC-2300.30.40
+        name: Planogram Compliance Tracking
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Tracking of planogram compliance via store audits and image-recognition feeds.
+        children: []
+  - id: BC-2300.40
+    name: "Buying & Open-to-Buy Management"
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Open-to-buy planning, buying-plan execution, and store allocation that
+      convert assortment plans into vendor purchase commitments.
+    in_scope:
+      - Open-to-buy budgets by department and season
+      - Buying plan execution with vendors
+      - Allocation of received goods across stores
+    out_of_scope:
+      - Generic procurement (BC-500)
+    children:
+      - id: BC-2300.40.10
+        name: Open-to-Buy Planning
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Open-to-buy budgeting by department, class, and season.
+        children: []
+      - id: BC-2300.40.20
+        name: Buying Plan Execution
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Execution of buying plans with vendors including style and SKU selection.
+        children: []
+      - id: BC-2300.40.30
+        name: Store and Channel Allocation
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Allocation of received goods to stores and channels by attribute and performance.
+        children: []
+      - id: BC-2300.40.40
+        name: Replenishment Buy Management
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Replenishment-buy decisions for staple and never-out-of-stock items.
+        children: []
+  - id: BC-2300.50
+    name: Private Label Development Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Strategy, specification, sourcing, and brand stewardship of own-brand
+      and private-label product lines.
+    children:
+      - id: BC-2300.50.10
+        name: Private Label Strategy
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Private-label portfolio strategy and tiering across own brands.
+        children: []
+      - id: BC-2300.50.20
+        name: Private Label Specification
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Product specifications, packaging briefs, and quality standards for own brands.
+        children: []
+      - id: BC-2300.50.30
+        name: Private Label Sourcing
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Sourcing of contract manufacturers and co-packers for own-brand production.
+        children: []
+      - id: BC-2300.50.40
+        name: Private Label Brand Stewardship
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Stewardship of own-brand identity, packaging governance, and equity.
+        children: []
+  - id: BC-2300.60
+    name: "Markdown & Stock Disposition Management"
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Markdown cadence, clearance, and disposition decisions that retire
+      excess and end-of-life retail stock.
+    in_scope:
+      - Markdown cadence and depth decisions
+      - End-of-season clearance plans
+      - Liquidation, outlet, donation, and destruction disposition
+    out_of_scope:
+      - Day-to-day price changes (BC-440.20.20)
+      - Promotional discounting (BC-440.30)
+    children:
+      - id: BC-2300.60.10
+        name: Markdown Strategy
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Strategy for markdown depth, cadence, and timing across categories.
+        children: []
+      - id: BC-2300.60.20
+        name: End-of-Season Clearance Planning
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          End-of-season clearance plans and exit-price management.
+        children: []
+      - id: BC-2300.60.30
+        name: Stock Disposition Routing
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Routing of residual stock to outlet, liquidation, donation, or destruction.
+        children: []

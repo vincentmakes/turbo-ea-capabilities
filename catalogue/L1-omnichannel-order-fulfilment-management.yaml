@@ -1,0 +1,175 @@
+# Omnichannel Order & Fulfilment Management
+id: BC-2330
+name: "Omnichannel Order & Fulfilment Management"
+level: 1
+industry: Retail & Consumer Goods
+description: |
+  Cross-channel orchestration of consumer orders - capture in any channel,
+  promise from any node, and fulfilment via store, distribution centre,
+  marketplace, vendor drop-ship, or last-mile partner.
+references:
+  - https://nrf.com/resources/retail-technology-standards
+  - https://www.gs1.org/standards/edi
+children:
+  - id: BC-2330.10
+    name: Channel Orchestration Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Single view of consumer orders across channels, channel-mix routing,
+      and consistent status across digital, store, and marketplace.
+    in_scope:
+      - Channel-routing rules and node selection
+      - Single order view across channels
+      - Channel-mix economics and fulfilment cost trade-offs
+    out_of_scope:
+      - Generic order fulfilment (BC-520.40)
+    children:
+      - id: BC-2330.10.10
+        name: Channel Routing Rule Management
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Definition of routing rules selecting fulfilment node by cost and service.
+        children: []
+      - id: BC-2330.10.20
+        name: Cross-Channel Order View
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Unified view of orders, status, and history across channels.
+        children: []
+      - id: BC-2330.10.30
+        name: Channel Mix Economics
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Analysis of unit economics by channel and fulfilment route.
+        children: []
+  - id: BC-2330.20
+    name: Click-and-Collect Operations Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Buy-online-pick-up-in-store, kerbside, and locker collection operations
+      that bridge digital orders to physical pickup points.
+    children:
+      - id: BC-2330.20.10
+        name: Pick-and-Pack-in-Store Operations
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Picking and packing of online orders by store associates.
+        children: []
+      - id: BC-2330.20.20
+        name: Customer Pickup Handover
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Customer-pickup hand-off including identity check and exception handling.
+        children: []
+      - id: BC-2330.20.30
+        name: Kerbside and Locker Collection
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Kerbside hand-off and locker-based collection operations.
+        children: []
+  - id: BC-2330.30
+    name: Distributed Order Fulfilment Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Ship-from-store, dark-store, and vendor drop-ship fulfilment from a
+      distributed inventory pool to consumer destinations.
+    in_scope:
+      - Ship-from-store operations
+      - Dark-store and micro-fulfilment-centre operations
+      - Vendor drop-ship orchestration
+    children:
+      - id: BC-2330.30.10
+        name: Ship-from-Store Operations
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Picking, packing, and shipping of online orders from physical stores.
+        children: []
+      - id: BC-2330.30.20
+        name: Dark Store and Micro-Fulfilment Operations
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Operations of dark stores and micro-fulfilment centres for digital orders.
+        children: []
+      - id: BC-2330.30.30
+        name: Vendor Drop-Ship Orchestration
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Orchestration of vendor drop-ship including PO routing and tracking.
+        children: []
+  - id: BC-2330.40
+    name: Marketplace Seller Operations Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Operating retailer-as-seller listings on third-party marketplaces and
+      managing third-party sellers on a host marketplace.
+    children:
+      - id: BC-2330.40.10
+        name: Marketplace Listing Management
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Listing of items on third-party marketplaces including content adaptation.
+        children: []
+      - id: BC-2330.40.20
+        name: Marketplace Order Capture
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Capture and translation of marketplace orders into the host order pipeline.
+        children: []
+      - id: BC-2330.40.30
+        name: Third-Party Seller Onboarding
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Onboarding of third-party sellers onto the retailer's own marketplace.
+        children: []
+      - id: BC-2330.40.40
+        name: Third-Party Seller Performance Management
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Management of third-party seller performance and policy compliance.
+        children: []
+  - id: BC-2330.50
+    name: Consumer Delivery Slot Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Consumer-facing delivery slot booking, time-window pricing, and
+      courier dispatch coordination for home delivery.
+    children:
+      - id: BC-2330.50.10
+        name: Delivery Slot Booking
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Consumer booking of delivery slots with availability and capacity logic.
+        children: []
+      - id: BC-2330.50.20
+        name: Time Window Pricing
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Dynamic pricing of delivery time windows by demand and route density.
+        children: []
+      - id: BC-2330.50.30
+        name: Courier Dispatch Coordination
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Dispatch coordination with own and third-party last-mile couriers.
+        children: []

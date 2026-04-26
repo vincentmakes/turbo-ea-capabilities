@@ -1,0 +1,169 @@
+# Retail Site & Network Planning Management
+id: BC-2350
+name: "Retail Site & Network Planning Management"
+level: 1
+industry: Retail & Consumer Goods
+description: |
+  Selection, sizing, and lifecycle of the physical retail network -
+  catchment analysis, format choice, white-space identification, and
+  store-by-store performance lifecycle decisions.
+references:
+  - https://nrf.com/research-insights
+children:
+  - id: BC-2350.10
+    name: "Trade Area & Catchment Analysis"
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Catchment definition, footfall and demographic micro-analysis, and
+      competitive density assessment for prospective and existing sites.
+    children:
+      - id: BC-2350.10.10
+        name: Catchment Definition
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Definition of catchment areas using drive time, density, and barriers.
+        children: []
+      - id: BC-2350.10.20
+        name: Demographic Micro-Analysis
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Micro-level demographic and lifestyle analysis of catchments.
+        children: []
+      - id: BC-2350.10.30
+        name: Footfall and Mobility Analysis
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Analysis of footfall patterns, mobility data, and pedestrian flow.
+        children: []
+      - id: BC-2350.10.40
+        name: Competitive Density Analysis
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Analysis of competitor density and trade-area share.
+        children: []
+  - id: BC-2350.20
+    name: Store Format Selection Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Selection of the appropriate store format - hyper, super, convenience,
+      specialty, dark store - for a given catchment and strategy.
+    in_scope:
+      - Format choice per catchment and shopper mission
+      - Format-mix portfolio across the network
+      - Sizing and footprint sizing per format
+    out_of_scope:
+      - Detailed store interior design (BC-2310.60)
+    children:
+      - id: BC-2350.20.10
+        name: Format Choice per Catchment
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Selection of store format per catchment based on shopper mission.
+        children: []
+      - id: BC-2350.20.20
+        name: Format Sizing and Footprint
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Sizing of selling floor, back-of-house, and overall footprint per format.
+        children: []
+      - id: BC-2350.20.30
+        name: Format Mix Portfolio Planning
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Planning of the network's format mix and migration between formats.
+        children: []
+  - id: BC-2350.30
+    name: Network Footprint Optimisation
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Optimisation of the network footprint across white-space identification,
+      cannibalisation, and overall coverage.
+    children:
+      - id: BC-2350.30.10
+        name: White-Space Identification
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Identification of underserved trade areas and white-space opportunity.
+        children: []
+      - id: BC-2350.30.20
+        name: Cannibalisation Modelling
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Modelling of new-store cannibalisation impact on existing stores.
+        children: []
+      - id: BC-2350.30.30
+        name: Coverage and Reach Optimisation
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Optimisation of coverage and reach across the target market.
+        children: []
+  - id: BC-2350.40
+    name: Store Performance Lifecycle Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Lifecycle decisions for each store - relocation, refurbishment,
+      down-format, or closure based on performance and trade-area shifts.
+    children:
+      - id: BC-2350.40.10
+        name: Store Performance Diagnostic
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Diagnostic of underperforming stores including catchment shifts.
+        children: []
+      - id: BC-2350.40.20
+        name: Store Relocation and Refurbishment Decisions
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Decisions on relocating or refurbishing stores against alternatives.
+        children: []
+      - id: BC-2350.40.30
+        name: Store Closure Decisioning
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Decisioning on store closure including stakeholder and stock impact.
+        children: []
+  - id: BC-2350.50
+    name: Retail Real Estate Brief Management
+    level: 2
+    industry: Retail & Consumer Goods
+    description: |
+      Retail-specific real-estate briefs handed off to corporate real-estate
+      teams for site acquisition, lease negotiation, and exits.
+    in_scope:
+      - Retail-specific site briefs
+      - Hand-off to corporate real-estate acquisition (BC-710.20)
+      - Retail-specific exit briefs (e.g. trade restrictions)
+    out_of_scope:
+      - Lease negotiation and administration (BC-710.20, BC-710.30)
+    children:
+      - id: BC-2350.50.10
+        name: Retail Site Brief Authoring
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Authoring retail-specific site briefs including format and adjacency requirements.
+        children: []
+      - id: BC-2350.50.20
+        name: Retail Exit Brief Authoring
+        level: 3
+        industry: Retail & Consumer Goods
+        description: |
+          Authoring retail-specific exit briefs including trade-restriction stance.
+        children: []
