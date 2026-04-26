@@ -6,6 +6,8 @@
  *   dist/api/tree.json
  *   dist/api/by-l1/<slug>.json
  *   dist/api/capability/<id>.json
+ *   dist/api/locales.json
+ *   dist/api/i18n/<locale>.json
  */
 import { execSync } from "node:child_process";
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
@@ -14,9 +16,13 @@ import {
   REPO_ROOT,
   flatten,
   l1Slug,
+  listLocales,
+  listSidecarFiles,
   loadAllL1Files,
+  loadSidecar,
   loadValueStreams,
   type FlatCapability,
+  type LocalizedFields,
   type RawCapability,
 } from "./lib/load.ts";
 
@@ -174,6 +180,59 @@ for (const node of flatSorted) {
   writeJson(join(DIST_API, "capability", `${node.id}.json`), node);
 }
 
+// ---------------------------------------------------------------------------
+// Translation sidecars: emit one merged flat map per locale plus a summary.
+// English source data files are unchanged; translations are an additive
+// overlay so older consumers keep working untouched.
+// ---------------------------------------------------------------------------
+const I18N_DIST = join(DIST_API, "i18n");
+mkdir(I18N_DIST);
+
+const localeSummaries: Array<{
+  locale: string;
+  total: number;
+  translated: number;
+  l1_files: number;
+}> = [];
+const totalNodes = flatSorted.length;
+
+for (const locale of listLocales()) {
+  const merged: Record<string, LocalizedFields> = {};
+  let l1Count = 0;
+  for (const file of listSidecarFiles(locale)) {
+    const { data } = loadSidecar(locale, file);
+    l1Count++;
+    for (const [id, fields] of Object.entries(data.entries)) {
+      // Schema validation in lint guarantees no cross-L1 collisions, but if a
+      // user has bypassed lint, last-write-wins. Lint will catch it next run.
+      merged[id] = fields;
+    }
+  }
+  // Sort keys deterministically by capability id for stable diffs.
+  const sortedIds = Object.keys(merged).sort(compareIds);
+  const orderedMerged: Record<string, LocalizedFields> = {};
+  for (const id of sortedIds) orderedMerged[id] = merged[id];
+  writeJson(join(I18N_DIST, `${locale}.json`), orderedMerged);
+  const translated = sortedIds.filter((id) => merged[id].name).length;
+  localeSummaries.push({ locale, total: totalNodes, translated, l1_files: l1Count });
+}
+
+// English is implicit and always 100% — list it for client convenience.
+const localesManifest = {
+  default: "en",
+  locales: ["en", ...localeSummaries.map((s) => s.locale)],
+  coverage: {
+    en: { total: totalNodes, translated: totalNodes, l1_files: files.length },
+    ...Object.fromEntries(
+      localeSummaries.map((s) => [
+        s.locale,
+        { total: s.total, translated: s.translated, l1_files: s.l1_files },
+      ])
+    ),
+  },
+};
+writeJson(join(DIST_API, "locales.json"), localesManifest);
+
 // pretty summary
 console.log(
   `✔ build_api: ${flatSorted.length} node(s), ${files.length} L1 file(s) → dist/api/`
@@ -181,6 +240,13 @@ console.log(
 console.log(
   `  catalogue_version=${version.catalogue_version} schema_version=${version.schema_version}`
 );
+if (localeSummaries.length) {
+  console.log(
+    `  locales: ${localeSummaries
+      .map((s) => `${s.locale} (${s.translated}/${s.total})`)
+      .join(", ")}`
+  );
+}
 
 // Re-export the version object so build_pkg.ts can pick it up without
 // re-deriving it from git.

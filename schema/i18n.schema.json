@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://business-capabilities.turbo-ea.org/schema/i18n.schema.json",
+  "title": "CapabilityTranslations",
+  "description": "Sidecar translation file. One file per (locale, L1) under `catalogue/i18n/<locale>/L1-*.yaml`. Mirrors the source L1 filename so per-L1 CODEOWNERS still apply. Only translatable display fields appear here; identifiers, levels, industry tags, references, and lifecycle metadata stay locale-neutral in `catalogue/L1-*.yaml`.",
+  "type": "object",
+  "required": ["locale", "source", "entries"],
+  "additionalProperties": false,
+  "properties": {
+    "locale": {
+      "type": "string",
+      "description": "BCP-47 language tag (e.g. 'fr', 'fr-CA', 'zh-Hans', 'pt-BR'). Must equal the parent directory name under catalogue/i18n/.",
+      "pattern": "^[a-z]{2,3}(-[A-Z][a-z]{3})?(-([A-Z]{2}|[0-9]{3}))?$"
+    },
+    "source": {
+      "type": "string",
+      "description": "Filename of the source L1 file this translates (e.g. 'L1-actuarial-management.yaml'). Lint enforces existence.",
+      "pattern": "^L1-[a-z0-9-]+\\.yaml$"
+    },
+    "entries": {
+      "type": "object",
+      "description": "Map of capability id -> translated display fields. Every key must resolve to a node in the source L1 tree.",
+      "minProperties": 1,
+      "additionalProperties": false,
+      "patternProperties": {
+        "^BC-\\d+(\\.\\d+){0,3}$": { "$ref": "#/$defs/LocalizedFields" }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Translator credits, review status, completion notes. Not consumed by build.",
+      "additionalProperties": true
+    }
+  },
+  "$defs": {
+    "LocalizedFields": {
+      "type": "object",
+      "description": "Translatable fields for one capability node. All optional — omit a field to fall back to the source language for that field only.",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Localised display name. Same noun-phrase, Title Case rules as the source name (per business-capability-governance-model.md §5)."
+        },
+        "description": {
+          "type": "string",
+          "description": "Localised outcome-oriented definition (1-3 sentences)."
+        },
+        "aliases": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true,
+          "description": "Localised aliases. Independent from the source `aliases` list."
+        },
+        "in_scope": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "description": "Localised in-scope outcomes."
+        },
+        "out_of_scope": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "description": "Localised out-of-scope outcomes."
+        }
+      }
+    }
+  }
+}

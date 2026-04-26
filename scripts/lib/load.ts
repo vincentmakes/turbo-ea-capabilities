@@ -1,4 +1,4 @@
-import { readFileSync, readdirSync, existsSync } from "node:fs";
+import { readFileSync, readdirSync, existsSync, statSync } from "node:fs";
 import { join } from "node:path";
 import YAML from "yaml";
 
@@ -30,8 +30,11 @@ export interface IndexFile {
 
 export const REPO_ROOT = join(import.meta.dirname, "..", "..");
 export const CATALOGUE_DIR = join(REPO_ROOT, "catalogue");
+export const I18N_DIR = join(CATALOGUE_DIR, "i18n");
 export const SCHEMA_PATH = join(REPO_ROOT, "schema", "capability.schema.json");
+export const I18N_SCHEMA_PATH = join(REPO_ROOT, "schema", "i18n.schema.json");
 export const ID_REGEX = /^BC-\d+(\.\d+){0,3}$/;
+export const BCP47_REGEX = /^[a-z]{2,3}(-[A-Z][a-z]{3})?(-([A-Z]{2}|[0-9]{3}))?$/;
 
 export function readIndex(): IndexFile {
   const indexPath = join(CATALOGUE_DIR, "_index.yaml");
@@ -133,4 +136,66 @@ export function l1Slug(root: RawCapability): string {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "");
+}
+
+// ---------------------------------------------------------------------------
+// Translation sidecars
+// ---------------------------------------------------------------------------
+
+export interface LocalizedFields {
+  name?: string;
+  description?: string;
+  aliases?: string[];
+  in_scope?: string[];
+  out_of_scope?: string[];
+}
+
+export interface Sidecar {
+  locale: string;
+  source: string;
+  entries: Record<string, LocalizedFields>;
+  metadata?: Record<string, unknown>;
+}
+
+export interface SidecarFile {
+  locale: string;
+  file: string; // L1-<slug>.yaml within catalogue/i18n/<locale>/
+  path: string; // absolute path
+  data: Sidecar;
+}
+
+/** List BCP-47 locale directories under catalogue/i18n/ (sorted). */
+export function listLocales(): string[] {
+  if (!existsSync(I18N_DIR)) return [];
+  return readdirSync(I18N_DIR)
+    .filter((name) => {
+      const p = join(I18N_DIR, name);
+      return statSync(p).isDirectory() && BCP47_REGEX.test(name);
+    })
+    .sort();
+}
+
+/** List sidecar yaml files within a locale directory. */
+export function listSidecarFiles(locale: string): string[] {
+  const dir = join(I18N_DIR, locale);
+  if (!existsSync(dir)) return [];
+  return readdirSync(dir)
+    .filter((f) => f.endsWith(".yaml") && !f.startsWith("_"))
+    .sort();
+}
+
+export function loadSidecar(locale: string, file: string): SidecarFile {
+  const path = join(I18N_DIR, locale, file);
+  const data = YAML.parse(readFileSync(path, "utf8"), { strict: true }) as Sidecar;
+  return { locale, file, path, data };
+}
+
+export function loadAllSidecars(): SidecarFile[] {
+  const out: SidecarFile[] = [];
+  for (const locale of listLocales()) {
+    for (const f of listSidecarFiles(locale)) {
+      out.push(loadSidecar(locale, f));
+    }
+  }
+  return out;
 }
