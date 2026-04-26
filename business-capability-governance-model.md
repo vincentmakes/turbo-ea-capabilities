@@ -484,10 +484,20 @@ Where an industry reference framework exists, anchor the upper levels (L1 / L2) 
 - **IPMVP / ASHRAE Guideline 14** — measurement & verification of energy savings.
 - **EU EPBD, LEED, BREEAM, WELL, CIBSE Guides** — building energy regulation, green and wellness certifications, and services engineering guidance.
 
+**Insurance**
+
+- **ACORD (Reference Architecture, ACORD XML, ACORD AL3)** — insurance data and messaging standards.
+- **Solvency II (EU Directive 2009/138/EC) and NAIC RBC** — insurance capital adequacy and risk-based supervision.
+- **IFRS 17 / IFRS 9 (insurance contracts and financial instruments)** — insurance accounting and disclosure.
+- **IAIS Insurance Core Principles (ICPs) and ComFrame** — international supervisory and IAIG standards.
+- **ISO 31000** — risk management.
+- **Lloyd's Market Standards (ECF, Coverholder Atlas, Delegated Authority)** — London market practice.
+- **IDD (EU Directive 2016/97), NAIC Model Laws, and US state insurance regulations** — distribution and conduct.
+- **GDPR and HIPAA (where applicable)** — privacy and personal-data protection across underwriting and claims.
+
 **Other industry anchors not yet exercised in the catalogue but recommended for adoption**
 
 - **eTOM** — telecommunications.
-- **ACORD** — insurance.
 
 These references describe *what* organisations in a given industry typically do — useful as a starting point, but they must still be adapted to the enterprise's own context and re-expressed in conformant noun-phrase form where necessary. Citing a framework does not exempt a node from §5 (naming) or §4 (decomposition) — frameworks inform the *shape* of the model, not the *form* of its names.
 
