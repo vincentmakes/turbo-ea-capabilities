@@ -402,6 +402,28 @@ Where an industry reference framework exists, anchor the upper levels (L1 / L2) 
 - **IEC 61511** — safety instrumented systems.
 - **HAZOP / HAZID** — process hazard reviews.
 
+**Agriculture & Food Production**
+
+- **GLOBALG.A.P. (IFA, Aquaculture, Livestock, Chain of Custody)** — farm-level good agricultural practice and chain-of-custody certification.
+- **HACCP, Codex Alimentarius, ISO 22000, FSSC 22000, BRCGS, SQF, IFS Food** — food-safety management systems used across farm-to-fork operations.
+- **AgGateway (ADAPT, SPADE, MAGIE)** — agricultural data and electronic-business interchange standards.
+- **GS1 standards (GTIN, GLN, SSCC, EPCIS)** — global identification and event-based traceability for agri-food products.
+- **ISO 11783 (ISOBUS) and AEF (Agricultural Industry Electronics Foundation)** — agricultural machinery, implement, and farm-management-system data interchange.
+- **USDA NOP (7 CFR 205), EU Organic Regulation 2018/848, JAS Organic** — organic production certification regimes.
+- **FAO/WHO Codex Alimentarius MRLs, EU Regulation 1107/2009, US EPA FIFRA** — pesticide authorisation and maximum-residue-limit regimes.
+- **UPOV Convention, OECD Seed Schemes, ISTA Rules** — plant breeders' rights, international certified seed schemes, and seed testing.
+- **WOAH (OIE) Terrestrial and Aquatic Animal Health Codes** — international animal-health, zoonosis, and disease-reporting standards.
+- **ICAR (International Committee for Animal Recording)** — livestock identification and performance-recording standards.
+- **EU Bovine Identification Regulation 1760/2000, USDA Animal Disease Traceability (9 CFR 86), EU TRACES NT** — livestock identification, movement, and cross-border health certification.
+- **ASC, BAP, MSC, FAO Code of Conduct for Responsible Fisheries** — aquaculture and fisheries responsibility and certification.
+- **4R Nutrient Stewardship (IFA / IPNI), FAO IPM Guidelines** — fertilizer and integrated-pest-management practices.
+- **SAI Platform FSA, LEAF Marque, Regenagri, Cool Farm Tool, FAO LEAP** — sustainable agriculture, regenerative-farming, and environmental-footprint frameworks.
+- **Verra VM0042 / VM0017, Gold Standard SDG Impact, ISO 14064-2** — agricultural and soil-carbon greenhouse-gas quantification programmes.
+- **GAFTA, FOSFA, NGFA standard forms; ICE / CME / Euronext softs contracts** — international grains, oilseeds, and softs trade contracts and futures references.
+- **EU Common Agricultural Policy (CAP) Strategic Plans; USDA Farm Bill conservation programmes (NRCS EQIP, CSP, ACEP)** — agricultural policy, farm payments, and conservation programmes.
+- **EU Council Directive 98/58/EC and species-specific welfare directives, FARM Animal Welfare Audit, RSPCA Assured, WOAH animal-welfare standards** — farm-animal-welfare regulation and assurance.
+- **FSIS HIMP / NHIS, EU Regulation 853/2004 (Annex III)** — meat and poultry inspection at slaughter and primary processing.
+
 **Air Traffic Control**
 
 - **ICAO Annexes 3, 10, 11, 12, 13, 15, 19** — meteorology, aeronautical telecoms, ATS, SAR, accident investigation, AIM, safety management.

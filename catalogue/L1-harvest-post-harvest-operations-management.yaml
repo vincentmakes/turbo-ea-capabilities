@@ -1,0 +1,187 @@
+# Harvest & Post-Harvest Operations Management
+id: BC-3560
+name: "Harvest & Post-Harvest Operations Management"
+level: 1
+industry: Agriculture & Food Production
+description: |
+  Harvest scheduling and execution, in-field and post-harvest conditioning,
+  on-farm storage, grading and packing, and inbound receival to the next
+  point in the agri-food chain.
+references:
+  - https://www.fao.org/3/t1838e/T1838E00.htm
+  - https://www.gs1.org/standards/epcis
+  - https://www.globalgap.org/uk_en/for-producers/globalg.a.p./
+children:
+  - id: BC-3560.10
+    name: Harvest Planning and Scheduling
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Harvest window planning, crew and equipment scheduling, and harvest
+      logistics coordination across fields and crops.
+    children:
+      - id: BC-3560.10.10
+        name: Harvest Window Planning
+        level: 3
+        description: |
+          Field-by-field harvest window planning against maturity and weather.
+        children: []
+      - id: BC-3560.10.20
+        name: Harvest Crew and Equipment Scheduling
+        level: 3
+        description: |
+          Scheduling of harvest crews, contractors, and machinery.
+        children: []
+      - id: BC-3560.10.30
+        name: Harvest Logistics Coordination
+        level: 3
+        description: |
+          Coordination of trucks, bins, and trailers across active harvest fronts.
+        children: []
+  - id: BC-3560.20
+    name: Field Harvest Operations
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Mechanical and manual harvest operations including in-field sorting
+      and field-side transfer.
+    children:
+      - id: BC-3560.20.10
+        name: Mechanical Harvesting
+        level: 3
+        description: |
+          Combine, mower-conditioner, and specialty mechanical harvesting.
+        children: []
+      - id: BC-3560.20.20
+        name: Manual Harvesting
+        level: 3
+        description: |
+          Hand-pick and selective manual harvest of horticultural crops.
+        children: []
+      - id: BC-3560.20.30
+        name: In-Field Sorting
+        level: 3
+        description: |
+          In-field sorting and trim of harvested produce.
+        children: []
+  - id: BC-3560.30
+    name: Post-Harvest Conditioning
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Drying, cooling, curing, and decontamination of harvested produce
+      to stabilise it for storage or downstream use.
+    in_scope:
+      - Grain and seed drying
+      - Pre-cooling of horticultural produce
+      - Curing of root and bulb crops
+      - Field cleaning and decontamination
+    children:
+      - id: BC-3560.30.10
+        name: Drying Operations
+        level: 3
+        description: |
+          Drying of grain, seed, and forage to safe moisture levels.
+        children: []
+      - id: BC-3560.30.20
+        name: Cooling and Pre-Cooling Operations
+        level: 3
+        description: |
+          Hydro, vacuum, and forced-air pre-cooling of horticultural produce.
+        children: []
+      - id: BC-3560.30.30
+        name: Curing Operations
+        level: 3
+        description: |
+          Curing of potatoes, onions, sweet potatoes, and similar crops.
+        children: []
+      - id: BC-3560.30.40
+        name: Cleaning and Decontamination
+        level: 3
+        description: |
+          Cleaning and decontamination of harvested produce prior to storage.
+        children: []
+  - id: BC-3560.40
+    name: On-Farm Storage Operations
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Operation of on-farm bins, silos, and cold stores including aeration
+      and stored-pest management.
+    children:
+      - id: BC-3560.40.10
+        name: Bin and Silo Management
+        level: 3
+        description: |
+          Loading, monitoring, and unloading of grain bins and silos.
+        children: []
+      - id: BC-3560.40.20
+        name: Cold Storage Operations
+        level: 3
+        description: |
+          Operation of on-farm chilled and controlled-atmosphere stores.
+        children: []
+      - id: BC-3560.40.30
+        name: Stored Grain Aeration
+        level: 3
+        description: |
+          Aeration management of stored grain to maintain temperature and moisture.
+        children: []
+      - id: BC-3560.40.40
+        name: Stored Pest Management
+        level: 3
+        description: |
+          Monitoring and treatment of insect and rodent pressure in stores.
+        children: []
+  - id: BC-3560.50
+    name: Produce Grading and Packing
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Grading, pack-house, and lot-labelling operations preparing produce
+      for downstream movement.
+    children:
+      - id: BC-3560.50.10
+        name: Quality Grading Operations
+        level: 3
+        description: |
+          Grading of produce against size, colour, and defect specifications.
+        children: []
+      - id: BC-3560.50.20
+        name: Pack House Operations
+        level: 3
+        description: |
+          Pack-house line operations including washing, waxing, and packing.
+        children: []
+      - id: BC-3560.50.30
+        name: Lot Identification and Labelling
+        level: 3
+        description: |
+          Lot, batch, and GS1 identifier assignment and label printing.
+        children: []
+  - id: BC-3560.60
+    name: Inbound Receival to Processor
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Coordination of inbound receival from farm or aggregator into
+      processor or buyer sites.
+    children:
+      - id: BC-3560.60.10
+        name: Truck Scheduling and Receival
+        level: 3
+        description: |
+          Scheduling and receival of inbound trucks at processor gates.
+        children: []
+      - id: BC-3560.60.20
+        name: Receival Sampling
+        level: 3
+        description: |
+          Inbound sampling of grain, livestock, milk, and produce loads.
+        children: []
+      - id: BC-3560.60.30
+        name: Receival Quality Testing
+        level: 3
+        description: |
+          Quality testing of inbound loads supporting acceptance and pricing.
+        children: []
