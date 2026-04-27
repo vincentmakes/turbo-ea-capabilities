@@ -5,7 +5,7 @@
  *   dist/api/capabilities.json
  *   dist/api/tree.json
  *   dist/api/by-l1/<slug>.json
- *   dist/api/capability/<id>.json
+ *   dist/api/capability/<id>.json    (nested subtree rooted at <id>)
  *   dist/api/locales.json
  *   dist/api/i18n/<locale>.json
  */
@@ -176,8 +176,17 @@ for (const { tree } of files) {
   writeJson(join(DIST_API, "by-l1", `${slug}.json`), nest(tree));
 }
 
+const subtreeById = new Map<string, NestedCapability>();
+function indexSubtrees(node: NestedCapability) {
+  subtreeById.set(node.id, node);
+  for (const child of node.children) indexSubtrees(child);
+}
+for (const root of treeAll) indexSubtrees(root);
+
 for (const node of flatSorted) {
-  writeJson(join(DIST_API, "capability", `${node.id}.json`), node);
+  const subtree = subtreeById.get(node.id);
+  if (!subtree) throw new Error(`Build invariant: missing subtree for ${node.id}`);
+  writeJson(join(DIST_API, "capability", `${node.id}.json`), subtree);
 }
 
 // ---------------------------------------------------------------------------

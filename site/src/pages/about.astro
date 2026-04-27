@@ -99,10 +99,10 @@ import { version } from "../data/load.ts";
       <p>All endpoints are static, immutable per build, and edge-cached:</p>
       <ul style="margin-left: 24px; margin-top: 12px;">
         <li><a href="/api/version.json"><code>/api/version.json</code></a> — catalog + schema version</li>
-        <li><a href="/api/capabilities.json"><code>/api/capabilities.json</code></a> — flat array</li>
-        <li><a href="/api/tree.json"><code>/api/tree.json</code></a> — nested tree</li>
-        <li><code>/api/by-l1/&lt;slug&gt;.json</code> — single L1 subtree</li>
-        <li><code>/api/capability/&lt;id&gt;.json</code> — single node + direct children</li>
+        <li><a href="/api/tree.json"><code>/api/tree.json</code></a> — full nested tree (default)</li>
+        <li><code>/api/by-l1/&lt;slug&gt;.json</code> — nested subtree for one L1</li>
+        <li><code>/api/capability/&lt;id&gt;.json</code> — nested subtree rooted at <code>&lt;id&gt;</code></li>
+        <li><a href="/api/capabilities.json"><code>/api/capabilities.json</code></a> — flat array (legacy / alternative)</li>
       </ul>
     </div>
 
