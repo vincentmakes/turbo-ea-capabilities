@@ -420,6 +420,30 @@ Where an industry reference framework exists, anchor the upper levels (L1 / L2) 
 - **MiFID II / MiFIR, EMIR, CSDR, SFTR** — market structure, derivatives, settlement, securities financing.
 - **FATF recommendations** — AML/CFT.
 
+**Oil & Gas**
+
+- **API standards (American Petroleum Institute — Spec 5L line pipe, Spec 6A wellhead, Std 510 pressure-vessel inspection, Std 570 piping inspection, Std 653 tank inspection, RP 14C SAFE, RP 754 process-safety KPIs)** — equipment, well-architecture, pipeline, refining, and process-safety standards.
+- **IOGP Reports (e.g. 510 process safety fundamentals, 423 asset integrity, 459 life-saving rules)** — global E&P operator practices.
+- **IPIECA / IPIECA-API-IOGP Sustainability Reporting Guidance** — oil & gas sustainability and environmental reporting.
+- **OGCI (Oil & Gas Climate Initiative)** — methane and carbon-intensity targets.
+- **ISO 29001** — petroleum, petrochemical and natural gas industry-specific QMS.
+- **ISO 14224** — equipment reliability and maintenance data collection for petroleum installations.
+- **ISO 17776** — major-accident hazards on offshore production installations.
+- **IADC standards / IADC Drilling Manual** — drilling contractor practices and well-control.
+- **IWCF / IADC WellCAP** — well-control certification.
+- **SPE-PRMS (Petroleum Resources Management System) and SEC Reg S-K Subpart 1200** — reserves and resources classification and disclosure.
+- **ASME B31.4 / B31.8 / B31G** — liquid and gas pipeline transportation systems and integrity assessment.
+- **OSHA PSM (29 CFR 1910.119), EPA RMP (40 CFR 68), Seveso III Directive (2012/18/EU)** — process safety management of highly hazardous chemicals.
+- **IEC 61508 / 61511** — functional safety and safety instrumented systems for the process industries.
+- **HAZOP / HAZID / LOPA / Bow-Tie** — process hazard review and barrier analysis methods.
+- **NORSOK standards** — Norwegian Continental Shelf petroleum standards.
+- **DNV-OS / DNV-RP series** — offshore unit and pipeline class rules.
+- **MARPOL (IMO), OPA 90, OPRC Convention** — marine pollution prevention and oil-spill preparedness.
+- **Energistics standards (WITSML drilling, PRODML production, RESQML reservoir/earth-model)** — upstream data interchange.
+- **OSDU (Open Subsurface Data Universe — The Open Group)** — open subsurface data platform.
+- **PPDM (Professional Petroleum Data Management Association)** — petroleum data model.
+- **JOA model forms (AIPN International JOA, OGUK / OEUK JOA)** — joint operating agreement standard forms.
+
 **Pharmaceuticals & life sciences**
 
 - **ICH guidelines** — E2 (PV), E6 (GCP), E8/E9 (clinical), Q1-Q12 (CMC and quality).

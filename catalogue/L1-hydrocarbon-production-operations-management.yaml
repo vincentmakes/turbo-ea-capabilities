@@ -1,0 +1,241 @@
+# Hydrocarbon Production Operations Management
+id: BC-3030
+name: Hydrocarbon Production Operations Management
+level: 1
+industry: "Oil & Gas"
+description: |
+  Wellhead-to-export operation of upstream surface facilities -
+  separation, treating, artificial lift, flow assurance, production
+  surveillance, and reservoir pressure maintenance.
+references:
+  - https://www.iogp.org/
+  - https://www.api.org/products-and-services/standards
+  - https://www.iso.org/standard/64076.html
+children:
+  - id: BC-3030.10
+    name: Wellhead Operations Management
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Day-to-day operation of wellhead equipment, choke management, and well testing.
+    children:
+      - id: BC-3030.10.10
+        name: Wellhead Surveillance
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Continuous surveillance of wellhead pressure, temperature, and flow parameters.
+        children: []
+      - id: BC-3030.10.20
+        name: Wellhead Choke Management
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Adjustment of surface chokes to manage well rate and drawdown.
+        children: []
+      - id: BC-3030.10.30
+        name: Well Test Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Routine and surveillance well tests for allocation and reservoir input.
+        children: []
+  - id: BC-3030.20
+    name: "Surface Separation & Treatment Operations"
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Operation of surface facilities for oil-water-gas separation,
+      crude stabilisation, produced water treatment, and gas conditioning.
+    children:
+      - id: BC-3030.20.10
+        name: "Oil, Water & Gas Separation"
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Three-phase separation of produced fluids in upstream facilities.
+        children: []
+      - id: BC-3030.20.20
+        name: Crude Stabilisation
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Stabilisation of produced crude to export specifications.
+        children: []
+      - id: BC-3030.20.30
+        name: Produced Water Treatment
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Treatment of produced water for re-injection or discharge.
+        children: []
+      - id: BC-3030.20.40
+        name: "Gas Dehydration & Sweetening"
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Field dehydration and sweetening of associated gas streams.
+        children: []
+  - id: BC-3030.30
+    name: Artificial Lift Management
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Selection, operation, and optimisation of artificial lift systems.
+    children:
+      - id: BC-3030.30.10
+        name: Gas Lift Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Continuous and intermittent gas lift operations and surveillance.
+        children: []
+      - id: BC-3030.30.20
+        name: Electric Submersible Pump Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operation, surveillance, and run-life management of ESP installations.
+        children: []
+      - id: BC-3030.30.30
+        name: Sucker-Rod Pump Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operation and dynamometer surveillance of sucker-rod pumps.
+        children: []
+      - id: BC-3030.30.40
+        name: Artificial Lift Optimisation
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Cross-method optimisation of artificial lift selection and parameters.
+        children: []
+  - id: BC-3030.40
+    name: "Production Optimisation & Surveillance"
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Real-time surveillance and optimisation of production rates,
+      bottlenecks, and well performance against forecast.
+    children:
+      - id: BC-3030.40.10
+        name: Real-Time Production Surveillance
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Real-time surveillance of well and field production from operations centres.
+        children: []
+      - id: BC-3030.40.20
+        name: Well Performance Diagnostics
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Diagnostic analysis of underperforming wells and remedial recommendations.
+        children: []
+      - id: BC-3030.40.30
+        name: Production Loss Accounting
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Categorisation and reporting of production losses against potential.
+        children: []
+      - id: BC-3030.40.40
+        name: Bottleneck Identification
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Identification of system bottlenecks across reservoir, well, and facility.
+        children: []
+  - id: BC-3030.50
+    name: Flow Assurance Management
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Prevention and management of flow assurance issues such as hydrates,
+      wax, asphaltenes, and erosion-corrosion in producing systems.
+    children:
+      - id: BC-3030.50.10
+        name: Hydrate Management
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Hydrate prevention and remediation in flowlines and risers.
+        children: []
+      - id: BC-3030.50.20
+        name: "Wax & Asphaltene Management"
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Wax and asphaltene deposition prevention and remediation.
+        children: []
+      - id: BC-3030.50.30
+        name: "Erosion & Corrosion Monitoring"
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Monitoring of erosion and corrosion in producing flowlines and equipment.
+        children: []
+      - id: BC-3030.50.40
+        name: Pigging Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operational pigging of flowlines for cleaning and inspection.
+        children: []
+  - id: BC-3030.60
+    name: Production Chemicals Management
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Selection, dosing, and effectiveness monitoring of production chemicals.
+    children:
+      - id: BC-3030.60.10
+        name: "Chemical Selection & Dosing"
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Selection and dosing strategy for production chemicals at well and facility level.
+        children: []
+      - id: BC-3030.60.20
+        name: Corrosion Inhibitor Management
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Application and monitoring of corrosion inhibitor programmes.
+        children: []
+      - id: BC-3030.60.30
+        name: Scale Inhibitor Management
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Scale inhibitor squeeze and continuous treatment management.
+        children: []
+  - id: BC-3030.70
+    name: Reservoir Pressure Maintenance Operations
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Operation of water and gas injection systems and tracking of voidage replacement.
+    children:
+      - id: BC-3030.70.10
+        name: Water Injection Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operation of injection water treatment and injection wells.
+        children: []
+      - id: BC-3030.70.20
+        name: Gas Injection Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operation of gas injection compression and gas injection wells.
+        children: []
+      - id: BC-3030.70.30
+        name: Voidage Replacement Tracking
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Tracking of voidage replacement ratios across producing assets.
+        children: []

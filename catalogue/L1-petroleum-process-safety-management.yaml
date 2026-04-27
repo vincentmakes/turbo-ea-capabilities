@@ -1,0 +1,254 @@
+# Petroleum Process Safety Management
+id: BC-3050
+name: Petroleum Process Safety Management
+level: 1
+industry: "Oil & Gas"
+description: |
+  Prevention of major-accident hazards in hydrocarbon-handling
+  installations - process hazard analysis, mechanical integrity of
+  pressure systems, safety-critical element assurance, operating
+  procedures, performance reporting, and emergency response. Distinct
+  from cross-industry HSE management (BC-730), which retains
+  occupational health, environment, and personal-safety scope.
+references:
+  - https://www.osha.gov/process-safety-management
+  - https://www.api.org/oil-and-natural-gas/health-and-safety/process-safety
+  - https://www.iogp.org/
+  - https://www.iso.org/standard/61788.html
+children:
+  - id: BC-3050.10
+    name: Process Hazard Analysis
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Structured identification and analysis of major-accident hazards
+      across the asset life cycle.
+    in_scope:
+      - HAZID, HAZOP, LOPA, and bow-tie analysis
+      - Quantitative risk assessment
+    out_of_scope:
+      - Personal safety risk assessment (BC-730)
+    children:
+      - id: BC-3050.10.10
+        name: HAZOP Studies
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Hazard and Operability studies on new and modified facilities.
+        children: []
+      - id: BC-3050.10.20
+        name: HAZID Studies
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Hazard Identification studies during early concept and design phases.
+        children: []
+      - id: BC-3050.10.30
+        name: LOPA Studies
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Layer-of-Protection Analysis to define safety integrity levels.
+        children: []
+      - id: BC-3050.10.40
+        name: Bow-Tie Analysis
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Bow-tie analysis to map barriers against major accident scenarios.
+        children: []
+  - id: BC-3050.20
+    name: Mechanical Integrity Management
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Inspection and integrity management of pressure-containing
+      equipment and safety-relief devices.
+    children:
+      - id: BC-3050.20.10
+        name: Pressure Vessel Inspection
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Risk-based inspection of pressure vessels per API 510.
+        children: []
+      - id: BC-3050.20.20
+        name: "Piping & Pipeline Integrity Inspection"
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Inspection of process piping and pipelines per API 570 and ASME B31G.
+        children: []
+      - id: BC-3050.20.30
+        name: Storage Tank Inspection
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Atmospheric and pressurised storage tank inspection per API 653.
+        children: []
+      - id: BC-3050.20.40
+        name: Pressure Relief Device Management
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Sizing, testing, and lifecycle management of relief valves and rupture discs.
+        children: []
+  - id: BC-3050.30
+    name: Safety Critical Element Management
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Identification and performance assurance of safety-critical
+      elements and maintenance of the safety case.
+    children:
+      - id: BC-3050.30.10
+        name: Safety Critical Element Identification
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Identification of SCEs from major-accident hazard analysis.
+        children: []
+      - id: BC-3050.30.20
+        name: Performance Standard Definition
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Definition of performance standards for each SCE.
+        children: []
+      - id: BC-3050.30.30
+        name: Safety Critical Element Performance Verification
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Verification of SCE performance against defined standards.
+        children: []
+      - id: BC-3050.30.40
+        name: Safety Case Maintenance
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Maintenance of installation safety cases and submission to regulators.
+        children: []
+  - id: BC-3050.40
+    name: Process Safety Operating Procedures
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Authoring, review, and operating-envelope definition for
+      process-safety-critical procedures.
+    children:
+      - id: BC-3050.40.10
+        name: Operating Procedure Authoring
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Authoring of process-safety-critical operating procedures.
+        children: []
+      - id: BC-3050.40.20
+        name: "Procedure Review & Update"
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Periodic review and update of process safety procedures.
+        children: []
+      - id: BC-3050.40.30
+        name: Operating Envelope Definition
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Definition of safe operating envelopes for process units.
+        children: []
+  - id: BC-3050.50
+    name: Process Safety Management of Change
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Process-safety governance over plant, procedural, and personnel
+      changes including pre-startup safety review.
+    children:
+      - id: BC-3050.50.10
+        name: PSM Change Request Review
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Review of PSM-impacting change requests against hazard standards.
+        children: []
+      - id: BC-3050.50.20
+        name: Pre-Startup Safety Review
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Pre-startup safety reviews for new and modified facilities.
+        children: []
+      - id: BC-3050.50.30
+        name: Temporary Change Management
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Management of temporary process changes within their authorised window.
+        children: []
+  - id: BC-3050.60
+    name: Process Safety Performance Management
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Tracking and reporting of leading and lagging process-safety
+      indicators per API RP 754 and equivalent frameworks.
+    children:
+      - id: BC-3050.60.10
+        name: Tier 1 and 2 Process Safety Event Reporting
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Capture and reporting of Tier 1 and Tier 2 process safety events.
+        children: []
+      - id: BC-3050.60.20
+        name: Leading Indicator Monitoring
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Monitoring of Tier 3 and Tier 4 leading process safety indicators.
+        children: []
+      - id: BC-3050.60.30
+        name: Process Safety KPI Reporting
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          External and internal reporting of process safety KPI performance.
+        children: []
+  - id: BC-3050.70
+    name: "Emergency Preparedness & Response"
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Emergency response planning, drill execution, and spill-response
+      coordination for major-accident scenarios.
+    children:
+      - id: BC-3050.70.10
+        name: Emergency Response Planning
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Maintenance of installation and corporate emergency response plans.
+        children: []
+      - id: BC-3050.70.20
+        name: "Drill & Exercise Coordination"
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Coordination of emergency drills and major-incident exercises.
+        children: []
+      - id: BC-3050.70.30
+        name: Spill Response Coordination
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Coordination of oil and chemical spill response operations.
+        children: []
+      - id: BC-3050.70.40
+        name: Mutual Aid Coordination
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Coordination of mutual aid with industry response cooperatives.
+        children: []

@@ -1,0 +1,169 @@
+# Hydrocarbon Logistics Management
+id: BC-3100
+name: Hydrocarbon Logistics Management
+level: 1
+industry: "Oil & Gas"
+description: |
+  Marine cargo, terminal, and bulk-storage operations for crude,
+  refined products, and LNG, plus lifting coordination and bunker fuel
+  management. Distinct from cross-industry transport (BC-2400 series),
+  which covers freight networks, fleet management, and intermodal
+  carriage.
+references:
+  - https://www.imo.org/en/About/Conventions/Pages/International-Convention-for-the-Prevention-of-Pollution-from-Ships-(MARPOL).aspx
+  - https://www.iso.org/standard/64346.html
+  - https://www.api.org/products-and-services/standards
+children:
+  - id: BC-3100.10
+    name: Marine Cargo Operations
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Operation of crude tankers, product tankers, LNG carriers, and ship-to-ship transfers in petroleum service.
+    in_scope:
+      - Tanker and gas-carrier operational coordination
+      - Ship-to-ship lightering and reverse-lightering
+    out_of_scope:
+      - Generic shipping fleet management (BC-2430)
+      - Liner-shipping cargo bookings (BC-2400)
+    children:
+      - id: BC-3100.10.10
+        name: Crude Tanker Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operational coordination of crude tankers under voyage and time charter.
+        children: []
+      - id: BC-3100.10.20
+        name: Product Tanker Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operational coordination of refined products tankers including parcel cargoes.
+        children: []
+      - id: BC-3100.10.30
+        name: LNG Carrier Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operational coordination of LNG carriers including cool-down and tank pressure management.
+        children: []
+      - id: BC-3100.10.40
+        name: Ship-to-Ship Transfer Coordination
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Coordination of STS transfers for crude, products, and LNG.
+        children: []
+  - id: BC-3100.20
+    name: Terminal Operations
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Operation of import, export, and intermediate petroleum terminals - jetties, loading arms, and tank receipts.
+    children:
+      - id: BC-3100.20.10
+        name: "Loading Arm & Jetty Operations"
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operation of jetty equipment and marine loading arms.
+        children: []
+      - id: BC-3100.20.20
+        name: Tank Receipt Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Receipt and gauging of cargoes into terminal storage.
+        children: []
+      - id: BC-3100.20.30
+        name: Tank Loading Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Loading from terminal storage into vessels and pipelines.
+        children: []
+      - id: BC-3100.20.40
+        name: Berth Scheduling
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Berth allocation and scheduling for vessel arrivals.
+        children: []
+  - id: BC-3100.30
+    name: Bulk Storage Management
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Tankage allocation, movement tracking, and tank calibration for crude, products, and NGLs.
+    children:
+      - id: BC-3100.30.10
+        name: Tankage Allocation
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Allocation of tank capacity to grades, owners, and pools.
+        children: []
+      - id: BC-3100.30.20
+        name: Tank-to-Tank Movement Tracking
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Tracking of internal terminal movements and inventory positions.
+        children: []
+      - id: BC-3100.30.30
+        name: "Tank Strapping & Calibration"
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Tank strapping and calibration table maintenance for fiscal accuracy.
+        children: []
+  - id: BC-3100.40
+    name: "Cargo Scheduling & Lifting Coordination"
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Lifting nominations, vessel stem confirmation, and demurrage tracking for petroleum cargoes.
+    children:
+      - id: BC-3100.40.10
+        name: Lifting Nomination Management
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Receipt and confirmation of customer and equity lifting nominations.
+        children: []
+      - id: BC-3100.40.20
+        name: Vessel Stem Confirmation
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Stem and parcel confirmation against contractual obligations.
+        children: []
+      - id: BC-3100.40.30
+        name: Operational Demurrage Tracking
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operational tracking of demurrage events at loading and discharge ports.
+        children: []
+  - id: BC-3100.50
+    name: "Bunker & Marine Fuel Management"
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Bunker procurement and quality assurance for the operated and chartered fleet.
+    children:
+      - id: BC-3100.50.10
+        name: Bunker Procurement
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Spot and term procurement of marine fuels for the fleet.
+        children: []
+      - id: BC-3100.50.20
+        name: Bunker Quality Assurance
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Sampling, testing, and dispute management of supplied bunkers.
+        children: []

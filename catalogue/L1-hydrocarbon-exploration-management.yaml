@@ -1,0 +1,239 @@
+# Hydrocarbon Exploration Management
+id: BC-3000
+name: Hydrocarbon Exploration Management
+level: 1
+industry: "Oil & Gas"
+description: |
+  Identification and acquisition of new hydrocarbon resources through
+  geophysical surveying, basin and prospect evaluation, license and
+  concession acquisition, and exploration drilling decisions.
+references:
+  - https://www.iogp.org/
+  - https://www.spe.org/en/industry/petroleum-resources-management-system-2018/
+  - https://www.energistics.org/
+children:
+  - id: BC-3000.10
+    name: Geophysical Survey Management
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Acquisition, processing, and interpretation of seismic and non-seismic
+      geophysical data to image the subsurface.
+    in_scope:
+      - 2D and 3D seismic acquisition campaigns
+      - Seismic processing and reprocessing
+      - Seismic interpretation for prospect generation
+    out_of_scope:
+      - Reservoir-scale geomodelling for development assets (BC-3010)
+    children:
+      - id: BC-3000.10.10
+        name: 3D Seismic Acquisition
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Marine, land, and ocean-bottom 3D seismic acquisition operations.
+        children: []
+      - id: BC-3000.10.20
+        name: 2D Seismic Acquisition
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Reconnaissance-scale 2D seismic acquisition operations.
+        children: []
+      - id: BC-3000.10.30
+        name: Non-Seismic Geophysical Acquisition
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Gravity, magnetics, electromagnetics, and other non-seismic surveys.
+        children: []
+      - id: BC-3000.10.40
+        name: Seismic Data Processing
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Pre-stack and post-stack processing, depth migration, and re-processing of seismic data.
+        children: []
+      - id: BC-3000.10.50
+        name: Seismic Data Interpretation
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Structural and stratigraphic interpretation of seismic volumes for prospect generation.
+        children: []
+  - id: BC-3000.20
+    name: Basin and Prospect Evaluation
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Petroleum systems analysis, play fairway mapping, and risk-and-volume
+      assessment of exploration prospects.
+    in_scope:
+      - Petroleum systems modelling
+      - Prospect inventory and ranking
+      - Risked volumetric estimation
+    out_of_scope:
+      - Reserves classification of discovered volumes (BC-3010.30)
+    children:
+      - id: BC-3000.20.10
+        name: Petroleum Systems Analysis
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Source, reservoir, seal, trap, and timing analysis to qualify petroleum systems.
+        children: []
+      - id: BC-3000.20.20
+        name: Play Fairway Mapping
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Mapping of regional plays and common-risk segments across acreage.
+        children: []
+      - id: BC-3000.20.30
+        name: Prospect Inventory Management
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Maintenance of the ranked prospect and lead inventory and its maturation.
+        children: []
+      - id: BC-3000.20.40
+        name: Prospect Risking
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Probabilistic geological chance-of-success assessment for prospects.
+        children: []
+      - id: BC-3000.20.50
+        name: Volumetric Estimation
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Pre-drill probabilistic in-place and recoverable volumes estimation.
+        children: []
+  - id: BC-3000.30
+    name: License and Concession Acquisition
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Acquisition of exploration acreage through license rounds, direct
+      negotiation, and farm-in transactions.
+    in_scope:
+      - Bid round screening and entry
+      - Concession and PSC bidding
+      - Farm-in and farm-out negotiation
+    out_of_scope:
+      - Ongoing license obligation tracking (BC-3110.40)
+    children:
+      - id: BC-3000.30.10
+        name: License Round Screening
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Screening of host-government license rounds for entry decisions.
+        children: []
+      - id: BC-3000.30.20
+        name: Concession Bidding
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Preparation and submission of competitive bids for concessions and production sharing contracts.
+        children: []
+      - id: BC-3000.30.30
+        name: Farm-In and Farm-Out Negotiation
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Negotiation of farm-in, farm-out, and acreage swap transactions.
+        children: []
+      - id: BC-3000.30.40
+        name: Acreage Portfolio Management
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Maintenance of the exploration acreage portfolio and rationalisation decisions.
+        children: []
+  - id: BC-3000.40
+    name: Exploration Drilling Programme Management
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Definition, approval, and post-well evaluation of wildcat and appraisal drilling programmes.
+    children:
+      - id: BC-3000.40.10
+        name: Exploration Well Programme Definition
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Definition of wildcat and appraisal well objectives and sequencing.
+        children: []
+      - id: BC-3000.40.20
+        name: Wildcat Well Approval
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Internal and partner approval governance for wildcat exploration wells.
+        children: []
+      - id: BC-3000.40.30
+        name: Appraisal Well Programme Management
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Management of appraisal well programmes following discovery.
+        children: []
+      - id: BC-3000.40.40
+        name: Post-Well Evaluation
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Post-well subsurface evaluation and learning capture for the prospect inventory.
+        children: []
+  - id: BC-3000.50
+    name: Exploration Portfolio Steering
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Strategic steering of the exploration portfolio across geographies, plays, and risk classes.
+    children:
+      - id: BC-3000.50.10
+        name: Exploration Strategy Definition
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Definition of exploration strategy across basins, plays, and risk classes.
+        children: []
+      - id: BC-3000.50.20
+        name: Exploration Investment Allocation
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Allocation of exploration capital across geographies and play types.
+        children: []
+      - id: BC-3000.50.30
+        name: Exploration Performance Tracking
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Tracking of exploration finding cost, success ratios, and resource adds.
+        children: []
+  - id: BC-3000.60
+    name: Subsurface Discovery Reporting
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Notification of discoveries to host governments, partners, and capital
+      markets, and tracking of resource maturation through to development sanction.
+    children:
+      - id: BC-3000.60.10
+        name: Discovery Notification
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Discovery notification to host governments, partners, and disclosures to capital markets.
+        children: []
+      - id: BC-3000.60.20
+        name: Resource Maturation Tracking
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Tracking of contingent resources from discovery to development sanction.
+        children: []
