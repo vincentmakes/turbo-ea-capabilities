@@ -1,0 +1,281 @@
+# Vehicle Homologation & Type Approval Management
+id: BC-3420
+name: "Vehicle Homologation & Type Approval Management"
+level: 1
+industry: "Automotive & Mobility"
+description: |
+  Regulatory certification of vehicles and major components across markets —
+  UNECE WP.29 type approval, FMVSS self-certification, regional approvals
+  (CCC, KS, MLIT), emissions and energy homologation, crash and consumer
+  rating programmes, and conformity-of-production audits.
+references:
+  - https://unece.org/transport/vehicle-regulations
+  - https://eur-lex.europa.eu/eli/reg/2018/858/oj
+  - https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571
+  - https://www.euroncap.com/en
+  - https://www.iihs.org/
+children:
+  - id: BC-3420.10
+    name: Type Approval Strategy and Planning
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Cross-market homologation strategy and planning including approval
+      authority engagement and homologation-plan execution.
+    children:
+      - id: BC-3420.10.10
+        name: Market Approval Strategy
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Strategy for type approval and certification across target markets
+          and regulatory regimes.
+        children: []
+      - id: BC-3420.10.20
+        name: Homologation Plan Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Management of programme-level homologation plans, deliverables,
+          and milestones.
+        children: []
+      - id: BC-3420.10.30
+        name: Approval Authority Engagement
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Engagement with approval authorities and technical services across
+          jurisdictions.
+        children: []
+  - id: BC-3420.20
+    name: Vehicle Type Approval Submissions
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Preparation and submission of type approval and self-certification
+      dossiers across UNECE, FMVSS, and regional regimes.
+    children:
+      - id: BC-3420.20.10
+        name: UNECE Type Approval Dossier Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Preparation, submission, and maintenance of UNECE WP.29 whole-vehicle
+          type-approval dossiers.
+        children: []
+      - id: BC-3420.20.20
+        name: FMVSS Self-Certification Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Self-certification evidence management for FMVSS / 49 CFR 571 in the
+          United States.
+        children: []
+      - id: BC-3420.20.30
+        name: Regional Submission Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Submission management for CCC, KS, MLIT, GCC, and other regional
+          motor-vehicle approval regimes.
+        children: []
+      - id: BC-3420.20.40
+        name: Approval Variation and Extension Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Management of approval variations, extensions, and revisions across
+          the vehicle lifecycle.
+        children: []
+  - id: BC-3420.30
+    name: Emissions and Energy Homologation
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Homologation of vehicle emissions, energy consumption, and EV range
+      against WLTP, RDE, EPA, CARB, China and equivalent regimes.
+    children:
+      - id: BC-3420.30.10
+        name: Emissions Test Cycle Execution
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Execution of WLTP, FTP-75, China and other regulatory emissions and
+          fuel-economy test cycles.
+        children: []
+      - id: BC-3420.30.20
+        name: Real-Driving Emissions Compliance
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Real-driving emissions test campaigns and compliance demonstration
+          for in-service conformity.
+        children: []
+      - id: BC-3420.30.30
+        name: CO2 and Fuel Economy Reporting
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Regulatory CO2 and fuel-economy reporting under EU CO2 fleet rules,
+          CAFE, and equivalents.
+        children: []
+      - id: BC-3420.30.40
+        name: EV Range and Efficiency Homologation
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Homologation of electric vehicle range, energy consumption, and
+          charging metrics across markets.
+        children: []
+  - id: BC-3420.40
+    name: Crash and Occupant Safety Homologation
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Regulatory crash, occupant protection, and pedestrian-protection
+      homologation alongside consumer-rating programmes.
+    children:
+      - id: BC-3420.40.10
+        name: Crash Test Programme Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Planning and execution of regulatory and homologation crash test
+          campaigns.
+        children: []
+      - id: BC-3420.40.20
+        name: Restraint System Approval
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Approval of seatbelts, airbags, and child-restraint anchorages
+          across regulatory regimes.
+        children: []
+      - id: BC-3420.40.30
+        name: Pedestrian Protection Approval
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Pedestrian and vulnerable-road-user protection homologation under
+          UNECE GTR 9 and equivalents.
+        children: []
+      - id: BC-3420.40.40
+        name: NCAP Programme Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Management of consumer crash-rating programmes including Euro NCAP,
+          IIHS, NHTSA NCAP, and regional NCAPs.
+        children: []
+  - id: BC-3420.50
+    name: Functional and Cyber Approval
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Type approval activities specific to UN R155 cybersecurity, UN R156
+      software updates, and UN R157 ALKS / ADS, complementing the engineering
+      activities under Vehicle Engineering Management.
+    in_scope:
+      - CSMS audits and type approval
+      - SUMS audits and type approval
+      - ALKS / ADS regulatory submissions
+    out_of_scope:
+      - Cybersecurity engineering activities (BC-3400.80)
+      - Vehicle SOC operations (BC-3460.60)
+    children:
+      - id: BC-3420.50.10
+        name: CSMS Type Approval Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Type approval of the cybersecurity management system per UN R155
+          including audit preparation and surveillance.
+        children: []
+      - id: BC-3420.50.20
+        name: SUMS Type Approval Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Type approval of the software-update management system per UN R156
+          including audit preparation and surveillance.
+        children: []
+      - id: BC-3420.50.30
+        name: ALKS and ADS Approval Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Approval submissions for automated lane-keeping and broader
+          automated-driving systems under UN R157 and emerging regulations.
+        children: []
+  - id: BC-3420.60
+    name: Component and System Type Approval
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Component-level type approvals for systems such as lighting, EMC,
+      tyres, and braking required to support the whole-vehicle approval.
+    children:
+      - id: BC-3420.60.10
+        name: Lighting and Signalling Approval
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Approval of headlamps, signalling devices, and adaptive lighting
+          systems.
+        children: []
+      - id: BC-3420.60.20
+        name: EMC Approval
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Electromagnetic compatibility approval for vehicle and electronic
+          subassemblies under UN R10.
+        children: []
+      - id: BC-3420.60.30
+        name: Tyre and Wheel Approval
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Tyre and wheel approval and labelling under UNECE and regional
+          regimes.
+        children: []
+      - id: BC-3420.60.40
+        name: Brake and Steering Component Approval
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Approval of braking and steering components under UN R13/R13H,
+          R79, and equivalents.
+        children: []
+  - id: BC-3420.70
+    name: Conformity of Production Management
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Conformity-of-production audits and on-going production-sample
+      verification against approved specifications.
+    children:
+      - id: BC-3420.70.10
+        name: CoP Audit Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Management of conformity-of-production audits by approval
+          authorities and technical services.
+        children: []
+      - id: BC-3420.70.20
+        name: Production-Sample Verification
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Verification of production samples against type-approved
+          specifications and tolerances.
+        children: []
+      - id: BC-3420.70.30
+        name: In-Service Conformity Surveillance
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          In-service conformity testing and surveillance to confirm continued
+          compliance after launch.
+        children: []

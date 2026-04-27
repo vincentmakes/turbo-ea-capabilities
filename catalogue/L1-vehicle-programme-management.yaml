@@ -1,0 +1,269 @@
+# Vehicle Programme Management
+id: BC-3410
+name: Vehicle Programme Management
+level: 1
+industry: "Automotive & Mobility"
+description: |
+  Multi-year vehicle programme governance covering concept, stage-gate
+  milestones, platform and variant strategy, and programme-level cost,
+  weight, and timing through start-of-production and end-of-production.
+references:
+  - https://www.aiag.org/quality
+  - https://www.iatfglobaloversight.org/iatf-169492016/
+  - https://vda-qmc.de/en/
+children:
+  - id: BC-3410.10
+    name: Programme Definition and Initiation
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Concept definition, business case, programme charter, and approval to
+      proceed for new vehicle and derivative programmes.
+    in_scope:
+      - Programme charter and business-case approval
+      - Vehicle concept and positioning definition
+      - Platform and carry-over strategy alignment
+    out_of_scope:
+      - Detailed engineering of vehicle subsystems (BC-3400)
+      - Enterprise project portfolio governance (BC-900)
+    children:
+      - id: BC-3410.10.10
+        name: Programme Charter and Business Case
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Approval-grade programme charter, financial business case, and
+          investment authorisation.
+        children: []
+      - id: BC-3410.10.20
+        name: Vehicle Concept Definition
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Vehicle concept, positioning, customer-pack definition, and
+          high-level attribute targets.
+        children: []
+      - id: BC-3410.10.30
+        name: Platform Strategy Alignment
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Alignment of programmes with platform roadmaps, carry-over decisions,
+          and shared-module strategies.
+        children: []
+      - id: BC-3410.10.40
+        name: Programme Approval Gating
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Initial programme approval gates including budget, timing, and
+          resource commitments.
+        children: []
+  - id: BC-3410.20
+    name: Programme Stage-Gate Governance
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Operation of the vehicle programme stage-gate model with milestone
+      reviews, deliverable assurance, and risk and issue control.
+    children:
+      - id: BC-3410.20.10
+        name: Milestone Planning
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Planning of programme milestones from PT and PVS through SOP and
+          end-of-production.
+        children: []
+      - id: BC-3410.20.20
+        name: Gate Review Execution
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Execution of stage-gate reviews including deliverable assessment
+          and pass / hold decisions.
+        children: []
+      - id: BC-3410.20.30
+        name: Programme Risk and Issue Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Identification, escalation, and mitigation of programme risks and
+          critical issues.
+        children: []
+      - id: BC-3410.20.40
+        name: Programme Maturity Assessment
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Assessment of programme maturity against engineering, manufacturing,
+          and supplier readiness criteria.
+        children: []
+  - id: BC-3410.30
+    name: Programme Cost Management
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Setting and tracking of programme cost targets across bill-of-material,
+      tooling, investment, and warranty provisions.
+    children:
+      - id: BC-3410.30.10
+        name: Programme Cost Target Setting
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Setting of programme cost targets including BoM, conversion, and
+          investment envelopes.
+        children: []
+      - id: BC-3410.30.20
+        name: Bill-of-Material Cost Tracking
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Tracking of vehicle BoM cost, supplier quotations, and content
+          decisions.
+        children: []
+      - id: BC-3410.30.30
+        name: Variable and Fixed Cost Forecasting
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Forecasting of programme variable and fixed costs across launch and
+          steady-state phases.
+        children: []
+      - id: BC-3410.30.40
+        name: Cost-Reduction Workout Tracking
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Tracking of cost-reduction initiatives, value engineering, and
+          their realisation against targets.
+        children: []
+  - id: BC-3410.40
+    name: Programme Weight and Attribute Tracking
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Tracking of vehicle weight, performance, and other attributes against
+      programme targets and trade-off resolution at programme level.
+    children:
+      - id: BC-3410.40.10
+        name: Vehicle Weight Tracking
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Tracking of mass build-up by system and reservation against
+          programme weight targets.
+        children: []
+      - id: BC-3410.40.20
+        name: Attribute Performance Tracking
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Tracking of programme-level attribute performance and reserves
+          against targets.
+        children: []
+      - id: BC-3410.40.30
+        name: Target Conformance Reporting
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Reporting of target conformance status to programme leadership and
+          steering committees.
+        children: []
+  - id: BC-3410.50
+    name: Variant and Derivative Planning
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Planning of trim, equipment, regional, and special-edition variants
+      across the programme lifecycle.
+    children:
+      - id: BC-3410.50.10
+        name: Trim and Equipment Variant Planning
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Planning of trim levels, options, and standard-equipment content per
+          market and segment.
+        children: []
+      - id: BC-3410.50.20
+        name: Regional Derivative Planning
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Planning of regional derivatives including market-specific bodies,
+          drivetrains, and feature content.
+        children: []
+      - id: BC-3410.50.30
+        name: Special Edition and Limited Series Planning
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Planning of special editions, limited series, and motorsport-derived
+          derivatives.
+        children: []
+  - id: BC-3410.60
+    name: Start-of-Production and End-of-Production Coordination
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Coordination of SOP readiness, production ramp, and end-of-production
+      phase-out across plants and supplier networks.
+    children:
+      - id: BC-3410.60.10
+        name: SOP Readiness Coordination
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Coordination of engineering, supplier, plant, and aftersales SOP
+          readiness criteria.
+        children: []
+      - id: BC-3410.60.20
+        name: Production Ramp Planning
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Planning of production ramp curves, build-out of pre-series, and
+          early-launch volume cadence.
+        children: []
+      - id: BC-3410.60.30
+        name: EOP Phase-Out Coordination
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Coordination of end-of-production timing, last-time buys, and
+          run-out plans.
+        children: []
+  - id: BC-3410.70
+    name: Programme Performance Reporting
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Reporting of programme status, decisions, and post-launch performance
+      to steering committees and executive leadership.
+    children:
+      - id: BC-3410.70.10
+        name: Programme Status Reporting
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Periodic programme status reporting on cost, timing, quality, and
+          risk.
+        children: []
+      - id: BC-3410.70.20
+        name: Programme Steering Committee Support
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Preparation and support of programme steering committees and
+          executive reviews.
+        children: []
+      - id: BC-3410.70.30
+        name: Post-Launch Programme Review
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Post-launch reviews capturing lessons learned and feeding subsequent
+          programme initiation.
+        children: []

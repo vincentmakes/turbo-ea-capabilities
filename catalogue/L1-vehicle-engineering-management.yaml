@@ -1,0 +1,409 @@
+# Vehicle Engineering Management
+id: BC-3400
+name: Vehicle Engineering Management
+level: 1
+industry: "Automotive & Mobility"
+description: |
+  Whole-vehicle engineering across body, chassis, powertrain (ICE, electric,
+  fuel cell), electrical / electronic architecture, embedded software,
+  functional safety, cybersecurity, and SOTIF, anchored on IATF 16949,
+  ISO 26262, ISO/SAE 21434, ISO 21448, Automotive SPICE, and AUTOSAR.
+references:
+  - https://www.iatfglobaloversight.org/iatf-169492016/
+  - https://www.iso.org/standard/68383.html
+  - https://www.iso.org/standard/70918.html
+  - https://www.iso.org/standard/77490.html
+  - https://www.autosar.org/
+  - https://vda-qmc.de/en/automotive-spice/
+children:
+  - id: BC-3400.10
+    name: Vehicle Architecture Management
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Whole-vehicle architecture, packaging, attribute target setting, and
+      platform / variant decomposition that frame all downstream engineering.
+    in_scope:
+      - Vehicle attribute targets and trade-off resolution
+      - Vehicle packaging, layout, and zonal definition
+      - Platform and module architecture choices
+    out_of_scope:
+      - Programme stage-gate governance (BC-3410)
+      - Detailed component-level engineering (covered under discipline-specific L2s)
+    children:
+      - id: BC-3400.10.10
+        name: Vehicle Attribute Target Setting
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Definition of vehicle-level performance, comfort, safety, efficiency,
+          and brand-attribute targets and their trade-off resolution.
+        children: []
+      - id: BC-3400.10.20
+        name: Vehicle Packaging and Layout
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Whole-vehicle packaging, occupant and luggage layout, hard-point
+          definition, and zonal allocation.
+        children: []
+      - id: BC-3400.10.30
+        name: Platform Architecture Definition
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Definition of shared vehicle platforms, common modules, and
+          carry-over strategies across programmes.
+        children: []
+      - id: BC-3400.10.40
+        name: Module and Variant Architecture
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Modular and variant strategy enabling derivative bodies, drivetrains,
+          and trim levels off a common architecture.
+        children: []
+  - id: BC-3400.20
+    name: Powertrain Engineering
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Engineering of internal-combustion, electric, and fuel-cell propulsion
+      systems including transmissions, driveline, and energy-storage systems.
+    children:
+      - id: BC-3400.20.10
+        name: Internal Combustion Powertrain Engineering
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Engineering of ICE engines, fuel systems, exhaust aftertreatment, and
+          related calibration.
+        children: []
+      - id: BC-3400.20.20
+        name: Electric Powertrain Engineering
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Engineering of electric drive units, inverters, charging electronics,
+          and integration with the high-voltage system.
+        children: []
+      - id: BC-3400.20.30
+        name: Battery System Engineering
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Engineering of traction battery cells, modules, packs, BMS, and
+          thermal-management subsystems.
+        children: []
+      - id: BC-3400.20.40
+        name: Fuel Cell System Engineering
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Engineering of hydrogen storage, fuel-cell stack, balance-of-plant,
+          and integration into the vehicle.
+        children: []
+      - id: BC-3400.20.50
+        name: Transmission and Driveline Engineering
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Engineering of transmissions, axles, driveshafts, and torque-vectoring
+          driveline components.
+        children: []
+  - id: BC-3400.30
+    name: Chassis and Vehicle Dynamics Engineering
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Engineering of suspension, steering, braking, wheel, and tyre systems
+      and their integrated dynamic behaviour.
+    children:
+      - id: BC-3400.30.10
+        name: Suspension and Steering Engineering
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Engineering of suspension geometry, dampers, springs, and steering
+          systems including steer-by-wire.
+        children: []
+      - id: BC-3400.30.20
+        name: Brake System Engineering
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Engineering of foundation brakes, regenerative blending, and brake
+          control systems.
+        children: []
+      - id: BC-3400.30.30
+        name: Vehicle Dynamics Tuning
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Tuning of ride, handling, stability, and traction control to deliver
+          target dynamic attributes.
+        children: []
+      - id: BC-3400.30.40
+        name: Wheel and Tyre Engineering
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Engineering and selection of wheels and tyres including TPMS and
+          performance / efficiency trade-offs.
+        children: []
+  - id: BC-3400.40
+    name: Body and Exterior Engineering
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Engineering of body-in-white, closures, glazing, exterior trim, lighting,
+      and aerodynamic surfaces.
+    children:
+      - id: BC-3400.40.10
+        name: Body-in-White Engineering
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Engineering of the structural body shell, joining strategy, and
+          crashworthiness load paths.
+        children: []
+      - id: BC-3400.40.20
+        name: Closures and Glazing Engineering
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Engineering of doors, hoods, lift-gates, sliding closures, and
+          glazing systems.
+        children: []
+      - id: BC-3400.40.30
+        name: Exterior Trim and Lighting Engineering
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Engineering of exterior trim, badges, and exterior lighting systems
+          including headlamp and signal architectures.
+        children: []
+      - id: BC-3400.40.40
+        name: Aerodynamics Engineering
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Aerodynamic shape development, drag and lift balancing, and
+          underbody flow management.
+        children: []
+  - id: BC-3400.50
+    name: Interior and Comfort Engineering
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Engineering of seating, restraints, interior trim, HMI surfaces, climate
+      control, and acoustic / NVH performance.
+    children:
+      - id: BC-3400.50.10
+        name: Seat and Restraint Engineering
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Engineering of seats, seatbelts, airbags, and other occupant
+          restraint systems.
+        children: []
+      - id: BC-3400.50.20
+        name: Interior Trim and HMI Engineering
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Engineering of instrument panel, console, headliner, and physical
+          / digital HMI surfaces.
+        children: []
+      - id: BC-3400.50.30
+        name: Climate Control Engineering
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Engineering of HVAC, refrigerant, heat-pump, and battery / cabin
+          thermal-management systems.
+        children: []
+      - id: BC-3400.50.40
+        name: Acoustic and NVH Engineering
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Acoustic, vibration, and harshness engineering and tuning across the
+          vehicle.
+        children: []
+  - id: BC-3400.60
+    name: Electrical and Electronic Architecture Engineering
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Engineering of the vehicle electrical / electronic topology, in-vehicle
+      networks, power distribution, and ECU hardware.
+    children:
+      - id: BC-3400.60.10
+        name: E/E Topology Definition
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Definition of vehicle E/E topology including domain, zonal, and
+          centralised computing architectures.
+        children: []
+      - id: BC-3400.60.20
+        name: In-Vehicle Network Engineering
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Engineering of CAN, CAN-FD, LIN, FlexRay, Automotive Ethernet, and
+          related in-vehicle communication networks.
+        children: []
+      - id: BC-3400.60.30
+        name: Wiring and Power Distribution Engineering
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Engineering of wiring harnesses, connectors, and high- and
+          low-voltage power distribution.
+        children: []
+      - id: BC-3400.60.40
+        name: ECU Hardware Engineering
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Engineering of electronic control unit hardware, semiconductors, and
+          PCB designs to AEC-Q standards.
+        children: []
+  - id: BC-3400.70
+    name: Vehicle Software Engineering
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Engineering of embedded software, automotive software platforms, and
+      vehicle operating systems aligned with AUTOSAR and Automotive SPICE.
+    children:
+      - id: BC-3400.70.10
+        name: Embedded Software Engineering
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Engineering of ECU-level embedded software including device drivers
+          and basic software components.
+        children: []
+      - id: BC-3400.70.20
+        name: AUTOSAR Platform Engineering
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Engineering of AUTOSAR Classic and Adaptive platform configurations
+          and integration.
+        children: []
+      - id: BC-3400.70.30
+        name: Vehicle Operating System Engineering
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Engineering of high-performance vehicle operating systems, hypervisors,
+          and middleware for software-defined vehicles.
+        children: []
+      - id: BC-3400.70.40
+        name: Software Integration and Build Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Vehicle software integration, build, and release-train management
+          across ECUs and domains.
+        children: []
+  - id: BC-3400.80
+    name: Functional Safety and Cybersecurity Engineering
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Engineering disciplines that secure safety-critical and connected
+      vehicle behaviour, anchored on ISO 26262, ISO/SAE 21434, and ISO 21448.
+    in_scope:
+      - Functional safety case authoring (ISO 26262)
+      - Cybersecurity engineering (ISO/SAE 21434)
+      - SOTIF analysis and validation (ISO 21448)
+      - HARA, FMEA-MSR, and TARA
+    out_of_scope:
+      - Operational vehicle SOC and incident response (BC-3460.60)
+      - Type approval submissions for UN R155 / R156 (BC-3420.50)
+    children:
+      - id: BC-3400.80.10
+        name: Functional Safety Case Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Authoring and maintenance of ISO 26262 safety cases, ASIL allocation,
+          and safety argument evidence.
+        children: []
+      - id: BC-3400.80.20
+        name: Automotive Cybersecurity Engineering
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Cybersecurity engineering activities aligned with ISO/SAE 21434,
+          including TARA, secure design, and secure development lifecycle.
+        children: []
+      - id: BC-3400.80.30
+        name: SOTIF Engineering
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Analysis and validation of safety of the intended functionality for
+          ADAS and automated-driving features per ISO 21448.
+        children: []
+      - id: BC-3400.80.40
+        name: Hazard and Risk Analysis
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          HARA, FMEA-MSR, and other systematic hazard analyses driving safety
+          and security requirements.
+        children: []
+  - id: BC-3400.90
+    name: Vehicle Verification and Validation Management
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Verification and validation of vehicle, subsystem, and component
+      designs through virtual, bench, and physical testing campaigns.
+    children:
+      - id: BC-3400.90.10
+        name: Virtual Validation
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          CAE, MIL / SIL / HIL, and digital-twin based virtual verification of
+          vehicle and subsystem behaviour.
+        children: []
+      - id: BC-3400.90.20
+        name: Component and Subsystem Testing
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Bench and rig testing of components and subsystems against
+          engineering specifications.
+        children: []
+      - id: BC-3400.90.30
+        name: Vehicle Integration Testing
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Whole-vehicle integration testing on proving grounds and public
+          roads under controlled conditions.
+        children: []
+      - id: BC-3400.90.40
+        name: Durability and Reliability Testing
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Accelerated and customer-correlated durability and reliability
+          testing across components and the whole vehicle.
+        children: []
+      - id: BC-3400.90.50
+        name: Crash and Occupant Protection Testing
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Engineering crash and occupant-protection tests in support of
+          regulatory and consumer-rating requirements.
+        children: []
