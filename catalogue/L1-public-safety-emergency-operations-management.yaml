@@ -1,0 +1,265 @@
+# Public Safety & Emergency Operations Management
+id: BC-3310
+name: "Public Safety & Emergency Operations Management"
+level: 1
+industry: Public Sector & Government
+description: |
+  Public safety and emergency operations including emergency communications
+  and dispatch, police, fire, EMS field response, NIMS-aligned incident
+  command, disaster preparedness and recovery, public-safety investigations,
+  and mutual aid coordination.
+references:
+  - https://www.fema.gov/emergency-managers/nims
+  - https://www.iso.org/standard/76426.html
+  - https://www.undrr.org/implementing-sendai-framework
+children:
+  - id: BC-3310.10
+    name: Emergency Communications and Dispatch
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Receipt of emergency calls, computer-aided dispatch, and field
+      communications for police, fire, and EMS responders.
+    in_scope:
+      - 911/112/999 call taking
+      - Computer-aided dispatch
+      - Public-safety radio operations
+    out_of_scope:
+      - Telecom universal service obligation regimes (covered by Telecom Regulatory Compliance Management)
+    children:
+      - id: BC-3310.10.10
+        name: Emergency Call Taking
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Receipt and triage of emergency calls and text-to-emergency messages.
+        children: []
+      - id: BC-3310.10.20
+        name: Computer-Aided Dispatch
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          CAD-based dispatch of police, fire, and EMS units to incidents.
+        children: []
+      - id: BC-3310.10.30
+        name: Public Safety Radio Operations
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Operation of public-safety land mobile radio and FirstNet-equivalent broadband.
+        children: []
+      - id: BC-3310.10.40
+        name: Public Alert and Warning
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Issuance of public alerts via WEA, Cell Broadcast, EAS, sirens, and other channels.
+        children: []
+  - id: BC-3310.20
+    name: Field Response Operations
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Day-to-day field operations of police, fire, and EMS first responders.
+    children:
+      - id: BC-3310.20.10
+        name: Law Enforcement Patrol
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Routine and proactive law enforcement patrol and response.
+        children: []
+      - id: BC-3310.20.20
+        name: Fire Suppression and Rescue
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Fire suppression, rescue operations, and hazardous-materials response.
+        children: []
+      - id: BC-3310.20.30
+        name: Emergency Medical Services Response
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Pre-hospital emergency medical assessment, treatment, and transport.
+        children: []
+      - id: BC-3310.20.40
+        name: Specialist Tactical Response
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Specialist tactical, bomb disposal, and hazmat response operations.
+        children: []
+  - id: BC-3310.30
+    name: Incident Command and Coordination
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      NIMS / ICS-aligned incident command, multi-agency coordination, and
+      emergency operations centre operations.
+    children:
+      - id: BC-3310.30.10
+        name: Incident Command Establishment
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Establishment of incident command, unified command, and ICS structures.
+        children: []
+      - id: BC-3310.30.20
+        name: Multi-Agency Coordination
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Coordination across responding agencies and jurisdictions during incidents.
+        children: []
+      - id: BC-3310.30.30
+        name: Emergency Operations Centre Operations
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Operation of EOCs at local, state, and national levels during emergencies.
+        children: []
+      - id: BC-3310.30.40
+        name: Common Operating Picture Maintenance
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Maintenance of a shared common operating picture across agencies.
+        children: []
+  - id: BC-3310.40
+    name: Disaster Preparedness and Mitigation
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Hazard analysis, planning, exercise, training, and mitigation activity
+      to prepare for disasters under the Sendai Framework.
+    children:
+      - id: BC-3310.40.10
+        name: Hazard and Risk Analysis
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Identification and assessment of natural and human-caused hazards and risks.
+        children: []
+      - id: BC-3310.40.20
+        name: Emergency Planning
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Preparation of emergency operations plans, hazard-specific plans, and continuity arrangements.
+        children: []
+      - id: BC-3310.40.30
+        name: Exercise and Training
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Tabletop, functional, and full-scale exercises and responder training programmes.
+        children: []
+      - id: BC-3310.40.40
+        name: Mitigation Programme Administration
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Administration of structural and non-structural disaster mitigation programmes.
+        children: []
+  - id: BC-3310.50
+    name: Disaster Response and Recovery
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Disaster declaration, response operations, individual and public
+      assistance, and long-term recovery coordination.
+    children:
+      - id: BC-3310.50.10
+        name: Disaster Declaration and Activation
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Declaration of states of emergency and activation of response authorities.
+        children: []
+      - id: BC-3310.50.20
+        name: Individual Assistance Administration
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Administration of disaster assistance to affected individuals and households.
+        children: []
+      - id: BC-3310.50.30
+        name: Public Assistance Administration
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Administration of public assistance grants for debris removal, infrastructure, and emergency works.
+        children: []
+      - id: BC-3310.50.40
+        name: Long-Term Recovery Coordination
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Coordination of long-term recovery and build-back-better activity.
+        children: []
+  - id: BC-3310.60
+    name: Public Safety Investigations
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Criminal and public-safety investigations including evidence
+      management, intelligence, and case preparation.
+    children:
+      - id: BC-3310.60.10
+        name: Crime Scene Investigation
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Crime-scene examination and forensic-evidence collection.
+        children: []
+      - id: BC-3310.60.20
+        name: Investigative Case Management
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Investigative case management, suspect tracking, and case preparation for prosecution.
+        children: []
+      - id: BC-3310.60.30
+        name: Police Intelligence Operations
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Collection, analysis, and dissemination of police intelligence under intelligence-led policing.
+        children: []
+      - id: BC-3310.60.40
+        name: Evidence and Property Management
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Custody, chain-of-custody, and disposition of seized evidence and property.
+        children: []
+  - id: BC-3310.70
+    name: Emergency Resource and Mutual Aid Management
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Emergency-resource typing, deployment, and mutual aid agreements
+      across jurisdictions.
+    children:
+      - id: BC-3310.70.10
+        name: Resource Typing and Inventory
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          NIMS-aligned resource typing and inventory of emergency resources.
+        children: []
+      - id: BC-3310.70.20
+        name: Mutual Aid Agreement Administration
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Administration of intra- and inter-jurisdictional mutual aid agreements.
+        children: []
+      - id: BC-3310.70.30
+        name: Resource Deployment and Demobilisation
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Deployment, tracking, and demobilisation of emergency resources to incidents.
+        children: []

@@ -1,0 +1,243 @@
+# Tax & Revenue Administration Management
+id: BC-3250
+name: "Tax & Revenue Administration Management"
+level: 1
+industry: Public Sector & Government
+description: |
+  Government-side administration of tax and non-tax revenues including
+  taxpayer registration, return processing, assessment, collection, audit,
+  enforcement, and refund administration.
+references:
+  - https://www.oecd.org/tax/forum-on-tax-administration/
+  - https://www.imf.org/en/Topics/fiscal-policies/revenue-administration
+  - https://www.intosai.org/
+children:
+  - id: BC-3250.10
+    name: "Taxpayer Registration & Identity"
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Registration of taxpayers, taxpayer identity management, and
+      maintenance of taxpayer master data.
+    in_scope:
+      - Taxpayer registration and TIN issuance
+      - Taxpayer profile maintenance
+      - Beneficial ownership records
+    out_of_scope:
+      - Civil identity registration (covered by Civil Records & Identity Registration Management)
+    children:
+      - id: BC-3250.10.10
+        name: Taxpayer Registration
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Registration of individual and entity taxpayers and issuance of taxpayer identification numbers.
+        children: []
+      - id: BC-3250.10.20
+        name: Taxpayer Profile Maintenance
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Maintenance of taxpayer master data, contact details, and tax obligations register.
+        children: []
+      - id: BC-3250.10.30
+        name: Beneficial Ownership Recording
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Capture of beneficial ownership and group structures for entities.
+        children: []
+  - id: BC-3250.20
+    name: "Return Processing & Assessment"
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Receipt, validation, and assessment of tax returns and declarations
+      across direct, indirect, and withholding taxes.
+    children:
+      - id: BC-3250.20.10
+        name: Return Lodgement
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Receipt and lodgement of tax returns and information declarations across channels.
+        children: []
+      - id: BC-3250.20.20
+        name: Return Validation
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Automated and manual validation of returns including arithmetic, completeness, and consistency.
+        children: []
+      - id: BC-3250.20.30
+        name: Self-Assessment Processing
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Processing of self-assessed returns and recording of declared liabilities.
+        children: []
+      - id: BC-3250.20.40
+        name: Default Assessment Issuance
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Issuance of default and best-judgement assessments for non-filers.
+        children: []
+  - id: BC-3250.30
+    name: Revenue Collection Operations
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Collection of voluntary tax payments through electronic, withholding,
+      instalment, and counter channels.
+    children:
+      - id: BC-3250.30.10
+        name: Payment Channel Operations
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Operation of payment channels including bank transfer, card, e-wallet, and counter.
+        children: []
+      - id: BC-3250.30.20
+        name: Withholding and Source Deduction
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Administration of withholding taxes and source-deduction schemes by paying agents.
+        children: []
+      - id: BC-3250.30.30
+        name: Instalment Plan Administration
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Setup and tracking of taxpayer instalment plans and time-to-pay arrangements.
+        children: []
+      - id: BC-3250.30.40
+        name: Receipts Reconciliation
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Reconciliation of revenue receipts to taxpayer accounts and treasury.
+        children: []
+  - id: BC-3250.40
+    name: "Tax Audit & Examination"
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Risk-based audit, examination, and reassessment of taxpayer
+      compliance.
+    children:
+      - id: BC-3250.40.10
+        name: Audit Case Selection
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Risk-based selection of audit cases using analytics and intelligence.
+        children: []
+      - id: BC-3250.40.20
+        name: Audit Fieldwork
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Conduct of audit fieldwork, document examination, and taxpayer interviews.
+        children: []
+      - id: BC-3250.40.30
+        name: Reassessment Issuance
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Issuance of reassessments, adjustments, and audit decision letters.
+        children: []
+      - id: BC-3250.40.40
+        name: Transfer Pricing Examination
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Examination of cross-border related-party pricing under OECD transfer pricing principles.
+        children: []
+  - id: BC-3250.50
+    name: "Tax Debt & Enforcement Management"
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Recovery of tax debts through statutory enforcement powers including
+      garnishment, liens, distraint, and prosecution referral.
+    children:
+      - id: BC-3250.50.10
+        name: Tax Debt Portfolio Management
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Segmentation, ageing, and prioritisation of the tax debt portfolio.
+        children: []
+      - id: BC-3250.50.20
+        name: Statutory Enforcement Action
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Execution of statutory enforcement powers including garnishment, liens, and distraint.
+        children: []
+      - id: BC-3250.50.30
+        name: Tax Crime Referral
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Investigation and referral of suspected tax evasion and tax crime to prosecutors.
+        children: []
+  - id: BC-3250.60
+    name: "Refund & Credit Administration"
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Processing of tax refunds, credit offsets, and disputed-amount holds.
+    children:
+      - id: BC-3250.60.10
+        name: Refund Validation
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Validation of refund claims against returns, payments, and risk profiles.
+        children: []
+      - id: BC-3250.60.20
+        name: Refund Issuance
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Issuance of refunds and offset against outstanding liabilities.
+        children: []
+      - id: BC-3250.60.30
+        name: Refund Fraud Screening
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Screening of refund claims for identity theft and refund fraud indicators.
+        children: []
+  - id: BC-3250.70
+    name: Non-Tax Revenue Administration
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Administration of non-tax government revenues including fees, fines,
+      royalties, and levies.
+    children:
+      - id: BC-3250.70.10
+        name: Fee and Charge Administration
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Administration of statutory fees, charges, and user payments to government.
+        children: []
+      - id: BC-3250.70.20
+        name: Fine and Penalty Collection
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Collection of judicial and administrative fines and penalties.
+        children: []
+      - id: BC-3250.70.30
+        name: Royalty and Levy Administration
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Administration of natural-resource royalties, environmental levies, and earmarked charges.
+        children: []

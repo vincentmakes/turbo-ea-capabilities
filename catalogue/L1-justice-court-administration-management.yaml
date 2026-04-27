@@ -1,0 +1,265 @@
+# Justice & Court Administration Management
+id: BC-3320
+name: "Justice & Court Administration Management"
+level: 1
+industry: Public Sector & Government
+description: |
+  Court administration including case filing, docket and scheduling, hearing
+  and trial operations, sentencing and order enforcement, corrections and
+  custody, probation and parole, and court records access.
+references:
+  - https://www.ncsc.org/
+  - https://www.unodc.org/unodc/en/justice-and-prison-reform/index.html
+  - https://www.coe.int/en/web/cepej
+children:
+  - id: BC-3320.10
+    name: Case Filing and Initiation
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Filing of civil, criminal, family, and administrative cases including
+      e-filing, fee assessment, and initial case classification.
+    in_scope:
+      - Civil and criminal case filing
+      - E-filing and document intake
+      - Filing fee assessment
+    out_of_scope:
+      - Bid-protest adjudication for procurement (covered by Public Procurement & Contracting Management)
+    children:
+      - id: BC-3320.10.10
+        name: Case Initiation
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Receipt of complaints, charges, and originating documents to initiate cases.
+        children: []
+      - id: BC-3320.10.20
+        name: Court E-Filing
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Electronic filing of court documents by parties and counsel.
+        children: []
+      - id: BC-3320.10.30
+        name: Case Classification and Numbering
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Classification of cases by type, division, and assignment of case numbers.
+        children: []
+      - id: BC-3320.10.40
+        name: Court Fee Assessment
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Assessment, collection, and waiver of court filing and motion fees.
+        children: []
+  - id: BC-3320.20
+    name: Court Docket and Scheduling Management
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Maintenance of court dockets, calendaring, and judicial assignment of
+      cases, hearings, and trials.
+    children:
+      - id: BC-3320.20.10
+        name: Docket Maintenance
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Maintenance of master and division dockets and case-event chronology.
+        children: []
+      - id: BC-3320.20.20
+        name: Hearing and Trial Scheduling
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Scheduling of hearings, trials, and motion calendars across courtrooms and judges.
+        children: []
+      - id: BC-3320.20.30
+        name: Judicial Assignment
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Assignment of cases to judges and rotation across divisions.
+        children: []
+      - id: BC-3320.20.40
+        name: Continuance and Postponement Handling
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Handling of continuance and postponement requests and rescheduling.
+        children: []
+  - id: BC-3320.30
+    name: Hearing and Trial Operations
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Operational support of hearings and trials including jury management,
+      courtroom logistics, and interpretation.
+    children:
+      - id: BC-3320.30.10
+        name: Jury Management
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Jury summoning, qualification, selection, and service administration.
+        children: []
+      - id: BC-3320.30.20
+        name: Courtroom Operations
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Courtroom logistics, security coordination, and audio-video recording.
+        children: []
+      - id: BC-3320.30.30
+        name: Court Interpreter Services
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Provision of court interpreter and translation services.
+        children: []
+      - id: BC-3320.30.40
+        name: Witness and Victim Support
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Witness and victim support services and special-measures coordination.
+        children: []
+  - id: BC-3320.40
+    name: Sentencing and Order Enforcement
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Recording of judgments and sentences, fines and restitution, and
+      enforcement of court orders.
+    children:
+      - id: BC-3320.40.10
+        name: Judgment and Sentence Recording
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Recording of judgments, sentences, and dispositional orders.
+        children: []
+      - id: BC-3320.40.20
+        name: Fine and Restitution Administration
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Administration of fines, restitution orders, and victim compensation.
+        children: []
+      - id: BC-3320.40.30
+        name: Civil Judgment Enforcement
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Enforcement of civil judgments through writs, garnishments, and seizures.
+        children: []
+      - id: BC-3320.40.40
+        name: Court Warrant Issuance
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Issuance of arrest, bench, and search warrants on judicial authority.
+        children: []
+  - id: BC-3320.50
+    name: Corrections and Custody Administration
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Custody administration of pre-trial detainees and sentenced prisoners
+      in jails and prisons.
+    children:
+      - id: BC-3320.50.10
+        name: Inmate Intake and Booking
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Intake, booking, and risk classification of inmates entering custody.
+        children: []
+      - id: BC-3320.50.20
+        name: Custody Operations
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Day-to-day custody operations including population management and movements.
+        children: []
+      - id: BC-3320.50.30
+        name: Inmate Healthcare Coordination
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Coordination of inmate healthcare, mental-health, and addiction services.
+        children: []
+      - id: BC-3320.50.40
+        name: Inmate Programmes and Rehabilitation
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Education, vocational, and rehabilitation programme administration in custody.
+        children: []
+  - id: BC-3320.60
+    name: Probation and Parole Management
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Community supervision of offenders on probation, parole, and
+      conditional release.
+    children:
+      - id: BC-3320.60.10
+        name: Pre-Sentence Investigation
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Pre-sentence investigation reports and risk-needs assessments for the court.
+        children: []
+      - id: BC-3320.60.20
+        name: Community Supervision
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Day-to-day supervision of offenders in the community.
+        children: []
+      - id: BC-3320.60.30
+        name: Parole Hearing Administration
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Administration of parole board hearings and conditional release decisions.
+        children: []
+      - id: BC-3320.60.40
+        name: Violation and Revocation Handling
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Handling of supervision violations and revocation proceedings.
+        children: []
+  - id: BC-3320.70
+    name: Court Records and Public Access
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Maintenance of court records and provision of public access subject to
+      sealing, redaction, and statutory restrictions.
+    children:
+      - id: BC-3320.70.10
+        name: Court Record Maintenance
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Maintenance of authoritative court records and case files.
+        children: []
+      - id: BC-3320.70.20
+        name: Public Access and PACER-Equivalent Services
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Provision of public access to court records via PACER-equivalent services.
+        children: []
+      - id: BC-3320.70.30
+        name: Sealing and Expungement
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Processing of sealing, expungement, and record-suppression orders.
+        children: []

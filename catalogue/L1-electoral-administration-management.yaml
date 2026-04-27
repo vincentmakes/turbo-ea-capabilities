@@ -1,0 +1,246 @@
+# Electoral Administration Management
+id: BC-3330
+name: Electoral Administration Management
+level: 1
+industry: Public Sector & Government
+description: |
+  Administration of elections including voter registration, electoral
+  boundary management, candidate and party registration, ballot design and
+  production, polling operations, vote counting and results tabulation, and
+  campaign-finance disclosure.
+references:
+  - https://www.eac.gov/voting-equipment/voluntary-voting-system-guidelines
+  - https://www.idea.int/
+  - https://www.venice.coe.int/webforms/documents/?pdf=CDL-AD(2002)023rev2-e
+children:
+  - id: BC-3330.10
+    name: Voter Registration Management
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Maintenance of authoritative voter rolls including registration,
+      address change, and list-maintenance activity.
+    in_scope:
+      - Voter enrolment and re-registration
+      - Voter list maintenance
+      - Eligibility verification
+    out_of_scope:
+      - Civil identity registration (covered by Civil Records & Identity Registration Management)
+    children:
+      - id: BC-3330.10.10
+        name: Voter Enrolment
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Enrolment of eligible voters onto the electoral roll across channels.
+        children: []
+      - id: BC-3330.10.20
+        name: Voter List Maintenance
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          List maintenance including address updates, deceased removal, and duplicate handling.
+        children: []
+      - id: BC-3330.10.30
+        name: Voter Eligibility Verification
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Verification of voter eligibility against citizenship, age, and residency criteria.
+        children: []
+      - id: BC-3330.10.40
+        name: Voter Information Provision
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Provision of voter cards, polling-place lookups, and voter education information.
+        children: []
+  - id: BC-3330.20
+    name: Electoral Boundary and District Management
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Maintenance of electoral districts, polling-place geographies, and
+      redistricting cycles.
+    children:
+      - id: BC-3330.20.10
+        name: Electoral District Maintenance
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Maintenance of electoral district and constituency boundaries.
+        children: []
+      - id: BC-3330.20.20
+        name: Polling Place Designation
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Designation, accessibility assessment, and publication of polling places.
+        children: []
+      - id: BC-3330.20.30
+        name: Redistricting Coordination
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Coordination of statutory redistricting and boundary-commission cycles.
+        children: []
+  - id: BC-3330.30
+    name: Candidate and Party Registration
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Registration of political parties, candidates, nomination filings, and
+      ballot access.
+    children:
+      - id: BC-3330.30.10
+        name: Political Party Registration
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Registration and recognition of political parties and party identifiers.
+        children: []
+      - id: BC-3330.30.20
+        name: Candidate Nomination Filing
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Receipt and verification of candidate nominations and statutory declarations.
+        children: []
+      - id: BC-3330.30.30
+        name: Ballot Access Determination
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Determination of ballot access including signature requirements and qualifying thresholds.
+        children: []
+  - id: BC-3330.40
+    name: Ballot Design and Production
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Design, layout, accessibility, translation, and production of ballots
+      across paper and electronic formats.
+    children:
+      - id: BC-3330.40.10
+        name: Ballot Layout Design
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Design and layout of ballots for clarity, accessibility, and language coverage.
+        children: []
+      - id: BC-3330.40.20
+        name: Ballot Translation and Accessibility
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Provision of translated ballots and accessible formats for voters with disabilities.
+        children: []
+      - id: BC-3330.40.30
+        name: Ballot Production and Distribution
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Printing, programming, and secure distribution of paper and electronic ballots.
+        children: []
+  - id: BC-3330.50
+    name: Polling Operations
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Operation of polling places on election day including poll-worker
+      management, voter check-in, and ballot casting under VVSG-aligned
+      controls.
+    children:
+      - id: BC-3330.50.10
+        name: Poll Worker Management
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Recruitment, training, and deployment of poll workers and election officials.
+        children: []
+      - id: BC-3330.50.20
+        name: Voter Check-In
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Voter check-in, identity verification, and ballot issuance at the polling place.
+        children: []
+      - id: BC-3330.50.30
+        name: In-Person Ballot Casting
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          In-person ballot casting on paper or VVSG-certified voting equipment.
+        children: []
+      - id: BC-3330.50.40
+        name: Absentee and Mail-In Voting Operations
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Operations supporting absentee, postal, and overseas voting.
+        children: []
+  - id: BC-3330.60
+    name: Vote Counting and Results Tabulation
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Counting of ballots, tabulation of results, audits, and certification
+      of election outcomes.
+    children:
+      - id: BC-3330.60.10
+        name: Ballot Counting
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Counting of paper and electronic ballots in accordance with statutory procedure.
+        children: []
+      - id: BC-3330.60.20
+        name: Results Tabulation and Reporting
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Aggregation of results across precincts and reporting to the public.
+        children: []
+      - id: BC-3330.60.30
+        name: Post-Election Audit
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Risk-limiting and post-election audits of vote tallies and equipment.
+        children: []
+      - id: BC-3330.60.40
+        name: Election Certification
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Statutory certification of election results and declaration of elected officials.
+        children: []
+  - id: BC-3330.70
+    name: Campaign Finance Disclosure
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Registration of political committees, donation and expenditure
+      disclosure, and enforcement of campaign-finance limits.
+    children:
+      - id: BC-3330.70.10
+        name: Political Committee Registration
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Registration of political committees, parties, and PAC-equivalent entities.
+        children: []
+      - id: BC-3330.70.20
+        name: Donation and Expenditure Reporting
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Receipt, validation, and publication of donation and expenditure disclosures.
+        children: []
+      - id: BC-3330.70.30
+        name: Campaign Finance Enforcement
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Investigation and enforcement of campaign-finance limit and disclosure breaches.
+        children: []

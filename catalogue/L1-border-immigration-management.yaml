@@ -1,0 +1,229 @@
+# Border & Immigration Management
+id: BC-3300
+name: "Border & Immigration Management"
+level: 1
+industry: Public Sector & Government
+description: |
+  People-side border control, visa and travel authorisation, asylum and
+  refugee status determination, immigration status and residence
+  administration, naturalisation, and removal operations.
+references:
+  - https://www.unhcr.org/standards-guidelines.html
+  - https://www.iom.int/
+  - https://www.icao.int/Security/FAL/TRIP/Pages/default.aspx
+children:
+  - id: BC-3300.10
+    name: Visa and Travel Authorisation Management
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Application processing, decisioning, and issuance of visas and travel
+      authorisations including ETA-style pre-clearance.
+    in_scope:
+      - Visa application processing and decisioning
+      - Electronic travel authorisation
+      - Visa fraud screening
+    out_of_scope:
+      - Goods customs and trade compliance (covered by Customs & Trade Compliance Management)
+    children:
+      - id: BC-3300.10.10
+        name: Visa Application Processing
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Receipt, validation, and processing of visa applications across categories.
+        children: []
+      - id: BC-3300.10.20
+        name: Visa Decisioning
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Decisioning on visa applications including refusal and conditions.
+        children: []
+      - id: BC-3300.10.30
+        name: Electronic Travel Authorisation
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Pre-travel ETA-style authorisation issuance and revocation.
+        children: []
+      - id: BC-3300.10.40
+        name: Visa Fraud Screening
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Screening of applications for fraud, document tampering, and identity-document anomalies.
+        children: []
+  - id: BC-3300.20
+    name: Border Inspection and Admission
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Inspection and admission of travellers at ports of entry including
+      primary and secondary inspection.
+    children:
+      - id: BC-3300.20.10
+        name: Advance Passenger Information Processing
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Processing of API and PNR data prior to traveller arrival.
+        children: []
+      - id: BC-3300.20.20
+        name: Primary Inspection
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Primary-line inspection at ports of entry including biometric verification.
+        children: []
+      - id: BC-3300.20.30
+        name: Secondary Inspection
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Secondary inspection of travellers requiring further examination.
+        children: []
+      - id: BC-3300.20.40
+        name: Admission and Refusal Decision
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Decisioning on admission, refusal, and conditions of entry.
+        children: []
+  - id: BC-3300.30
+    name: Asylum and Refugee Status Determination
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Receipt, examination, and determination of asylum claims under the
+      1951 Refugee Convention and national protection regimes.
+    children:
+      - id: BC-3300.30.10
+        name: Asylum Claim Intake
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Intake and registration of asylum claims at borders and in-country.
+        children: []
+      - id: BC-3300.30.20
+        name: Refugee Status Determination
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Adjudication of refugee status under the 1951 Convention and complementary protection.
+        children: []
+      - id: BC-3300.30.30
+        name: Asylum Reception and Support Coordination
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Coordination of reception, accommodation, and basic support for asylum seekers.
+        children: []
+      - id: BC-3300.30.40
+        name: Resettlement and Humanitarian Pathways
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Operation of resettlement and humanitarian admission programmes.
+        children: []
+  - id: BC-3300.40
+    name: Immigration Status and Residence Management
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Administration of in-country immigration status including residence
+      permits, work authorisations, and family-reunification cases.
+    children:
+      - id: BC-3300.40.10
+        name: Residence Permit Administration
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Issuance and renewal of residence permits and biometric residence cards.
+        children: []
+      - id: BC-3300.40.20
+        name: Work Authorisation Administration
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Administration of work permits, sponsorship licences, and labour-market tests.
+        children: []
+      - id: BC-3300.40.30
+        name: Family Reunification Processing
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Processing of family reunification and dependent applications.
+        children: []
+      - id: BC-3300.40.40
+        name: Status Compliance Monitoring
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Monitoring of compliance with immigration conditions and status changes.
+        children: []
+  - id: BC-3300.50
+    name: Naturalisation and Citizenship Management
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Adjudication of naturalisation applications, citizenship by descent or
+      registration, and citizenship-deprivation cases.
+    children:
+      - id: BC-3300.50.10
+        name: Naturalisation Application Processing
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Processing of naturalisation applications and good-character assessments.
+        children: []
+      - id: BC-3300.50.20
+        name: Citizenship by Descent and Registration
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Determination of citizenship by descent, registration, and adoption.
+        children: []
+      - id: BC-3300.50.30
+        name: Citizenship Ceremony and Oath Administration
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Administration of citizenship ceremonies and oaths of allegiance.
+        children: []
+      - id: BC-3300.50.40
+        name: Citizenship Deprivation Handling
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Adjudication of citizenship deprivation, renunciation, and revocation cases.
+        children: []
+  - id: BC-3300.60
+    name: Removal and Detention Management
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Detention, removal, and voluntary-return operations for persons
+      without immigration status.
+    children:
+      - id: BC-3300.60.10
+        name: Immigration Detention Operations
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Operation of immigration detention facilities and welfare standards.
+        children: []
+      - id: BC-3300.60.20
+        name: Removal Order Execution
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Execution of removal and deportation orders including escorted removals.
+        children: []
+      - id: BC-3300.60.30
+        name: Voluntary Return Programme Operations
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Coordination of assisted voluntary return and reintegration programmes.
+        children: []
