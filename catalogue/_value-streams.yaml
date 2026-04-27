@@ -452,6 +452,31 @@ value_streams:
         capability_id: BC-3910
         industry_variant: Utilities
         notes: Bill exception, dispute, and complaint intake
+      - stage_order: 1
+        stage_name: Issue Capture (Guest Service)
+        capability_id: BC-4040
+        industry_variant: Travel & Hospitality
+        notes: Guest service incident and complaint logging
+      - stage_order: 1
+        stage_name: Issue Capture (Travel F&B Safety)
+        capability_id: BC-4070
+        industry_variant: Travel & Hospitality
+        notes: Food-borne illness and allergen incidents
+      - stage_order: 1
+        stage_name: Issue Capture (Aviation Safety - Carrier)
+        capability_id: BC-4080
+        industry_variant: Travel & Hospitality
+        notes: Air safety reports captured by carrier operations
+      - stage_order: 1
+        stage_name: Issue Capture (Cruise Health)
+        capability_id: BC-4090
+        industry_variant: Travel & Hospitality
+        notes: Onboard outbreak detection and reporting
+      - stage_order: 4
+        stage_name: Resolution (Property Service Recovery)
+        capability_id: BC-4060
+        industry_variant: Travel & Hospitality
+        notes: Service-recovery actions, compensation, and follow-up
   - name: Order-to-Cash
     industries: [Cross-Industry]
     stages:
@@ -2288,6 +2313,16 @@ value_streams:
         capability_id: BC-3750
         industry_variant: Media & Entertainment
         notes: Engagement and win-back programmes
+      - stage_order: 6
+        stage_name: Customer Onboarding
+        capability_id: BC-4040
+        industry_variant: Travel & Hospitality
+        notes: Guest profile creation, preference capture, and consent at first interaction
+      - stage_order: 6
+        stage_name: Customer Onboarding
+        capability_id: BC-4050
+        industry_variant: Travel & Hospitality
+        notes: Loyalty enrolment and welcome programme activation
   - name: Application-to-Funding
     industries: [Banking & Capital Markets]
     stages:
@@ -4099,3 +4134,203 @@ value_streams:
         capability_id: BC-3850
         industry_variant: Utilities
         notes: Trade confirmation, settlement, and REMIT / EMIR / Dodd-Frank reporting
+  - name: Shop-to-Stay
+    industries: [Travel & Hospitality]
+    stages:
+      - stage_order: 1
+        stage_name: Inspire & Discover
+        capability_id: BC-4010
+        notes: Channel exposure across direct, OTA, and metasearch
+      - stage_order: 1
+        stage_name: Inspire & Discover
+        capability_id: BC-4030
+        notes: Promotion and offer surfacing
+      - stage_order: 2
+        stage_name: Shop & Compare
+        capability_id: BC-4000
+        notes: Product content, taxonomy, and merchandising
+      - stage_order: 2
+        stage_name: Shop & Compare
+        capability_id: BC-4030
+        notes: Live pricing and dynamic offer
+      - stage_order: 2
+        stage_name: Shop & Compare
+        capability_id: BC-4010
+        notes: Channel-specific shopping and parity
+      - stage_order: 3
+        stage_name: Book & Confirm
+        capability_id: BC-4020
+        notes: Reservation capture, confirmation, and payment
+      - stage_order: 3
+        stage_name: Book & Confirm
+        capability_id: BC-4040
+        notes: Profile creation; consent and travel-document capture at booking
+      - stage_order: 4
+        stage_name: Pre-Arrival
+        capability_id: BC-4040
+        notes: Pre-arrival recognition cueing
+      - stage_order: 4
+        stage_name: Pre-Arrival
+        capability_id: BC-4060
+        notes: Pre-arrival room and amenity preparation
+      - stage_order: 5
+        stage_name: Travel & Stay
+        capability_id: BC-4060
+        industry_variant: Lodging
+        notes: Front office, housekeeping, and concierge during the stay
+      - stage_order: 5
+        stage_name: Travel & Stay
+        capability_id: BC-4070
+        notes: Restaurant, in-room dining, and bar service
+      - stage_order: 5
+        stage_name: Travel & Stay
+        capability_id: BC-4080
+        industry_variant: Airline
+        notes: On-the-day flight operations including IROPS
+      - stage_order: 5
+        stage_name: Travel & Stay
+        capability_id: BC-4090
+        industry_variant: Cruise
+        notes: Onboard cruise operations during voyage
+      - stage_order: 5
+        stage_name: Travel & Stay
+        capability_id: BC-4100
+        industry_variant: Tour
+        notes: In-destination tour delivery
+      - stage_order: 5
+        stage_name: Travel & Stay
+        capability_id: BC-4020
+        notes: In-stay rebook and IROPS reaccommodation
+      - stage_order: 6
+        stage_name: Settle & Recognise
+        capability_id: BC-4020
+        notes: Booking settlement and final charge capture
+      - stage_order: 6
+        stage_name: Settle & Recognise
+        capability_id: BC-4060
+        notes: Folio settlement at check-out
+      - stage_order: 6
+        stage_name: Settle & Recognise
+        capability_id: BC-4050
+        notes: Earn engine accrual on completed activity
+      - stage_order: 7
+        stage_name: Post-Stay & Retain
+        capability_id: BC-4040
+        notes: Feedback capture, segmentation, and lifetime-value update
+      - stage_order: 7
+        stage_name: Post-Stay & Retain
+        capability_id: BC-4050
+        notes: Recognition delivery and member communications
+      - stage_order: 7
+        stage_name: Post-Stay & Retain
+        capability_id: BC-4030
+        notes: Revenue performance analysis and forecast tuning
+  - name: Lead-to-Event
+    industries: [Travel & Hospitality]
+    stages:
+      - stage_order: 1
+        stage_name: Lead Qualification
+        capability_id: BC-4110
+        notes: Inbound group lead qualification
+      - stage_order: 2
+        stage_name: Proposal & Contract
+        capability_id: BC-4110
+        notes: Group proposal authoring and contract execution
+      - stage_order: 2
+        stage_name: Proposal & Contract
+        capability_id: BC-4030
+        notes: Group pricing and concession against revenue guidance
+      - stage_order: 3
+        stage_name: Block & Event Setup
+        capability_id: BC-4110
+        notes: BEO authoring and function-space allocation
+      - stage_order: 3
+        stage_name: Block & Event Setup
+        capability_id: BC-4020
+        notes: Group room block contract and rooming list
+      - stage_order: 4
+        stage_name: Event Execution
+        capability_id: BC-4110
+        notes: Setup, service, AV, and group servicing
+      - stage_order: 4
+        stage_name: Event Execution
+        capability_id: BC-4070
+        notes: Banquet and catering service
+      - stage_order: 4
+        stage_name: Event Execution
+        capability_id: BC-4060
+        notes: Property security, engineering, and concierge support to event
+      - stage_order: 5
+        stage_name: Settlement
+        capability_id: BC-4110
+        notes: Master account settlement and reconciliation
+      - stage_order: 6
+        stage_name: Post-Event
+        capability_id: BC-4110
+        notes: Block-vs-pickup, financial, attendee feedback, and renewal tracking
+  - name: Disruption-to-Recovery
+    industries: [Travel & Hospitality]
+    stages:
+      - stage_order: 1
+        stage_name: Disruption Detection
+        capability_id: BC-4080
+        industry_variant: Airline
+        notes: OCC detection of weather, mechanical, and ATC events
+      - stage_order: 1
+        stage_name: Disruption Detection
+        capability_id: BC-4090
+        industry_variant: Cruise
+        notes: Voyage-level detection of weather, medical, and port events
+      - stage_order: 1
+        stage_name: Disruption Detection
+        capability_id: BC-4100
+        industry_variant: Tour
+        notes: In-destination disruption detection by escort and operator
+      - stage_order: 2
+        stage_name: Operational Decision
+        capability_id: BC-4080
+        industry_variant: Airline
+        notes: Diversion, cancellation, and fleet and crew recovery decisions
+      - stage_order: 2
+        stage_name: Operational Decision
+        capability_id: BC-4090
+        industry_variant: Cruise
+        notes: Itinerary substitution and port-call change decisions
+      - stage_order: 2
+        stage_name: Operational Decision
+        capability_id: BC-4100
+        industry_variant: Tour
+        notes: Force-majeure itinerary recovery decisions
+      - stage_order: 3
+        stage_name: Traveller Reaccommodation
+        capability_id: BC-4020
+        notes: Schedule-change and mass-disruption reaccommodation
+      - stage_order: 4
+        stage_name: Communications
+        capability_id: BC-4040
+        notes: Outbound disruption communications using traveller record and consent
+      - stage_order: 4
+        stage_name: Communications
+        capability_id: BC-4020
+        notes: Booking-level reaccommodation communications
+      - stage_order: 5
+        stage_name: Care of Passengers
+        capability_id: BC-4060
+        notes: Hotel rooming and care services for stranded travellers
+      - stage_order: 5
+        stage_name: Care of Passengers
+        capability_id: BC-4070
+        notes: Meal vouchers and traveller catering during disruption
+      - stage_order: 6
+        stage_name: Compensation Closure
+        capability_id: BC-4020
+        notes: Compensation eligibility determination and refund or voucher issuance
+      - stage_order: 7
+        stage_name: Post-Event Review
+        capability_id: BC-4080
+        industry_variant: Airline
+        notes: Operational safety investigation support and lessons
+      - stage_order: 7
+        stage_name: Post-Event Review
+        capability_id: BC-4030
+        notes: Revenue impact analysis and forecast adjustment

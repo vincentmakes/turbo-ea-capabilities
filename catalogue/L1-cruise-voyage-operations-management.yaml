@@ -1,0 +1,303 @@
+# Cruise Voyage Operations Management
+id: BC-4090
+name: Cruise Voyage Operations Management
+level: 1
+industry: "Travel & Hospitality"
+description: |
+  Operation of cruise voyages — itinerary planning, port and shore
+  excursion operations, onboard cabin and guest programmes, marine and
+  bridge operations, embarkation, and shipboard health and sanitation —
+  delivered against international maritime safety regulation.
+references:
+  - https://cruising.org/
+  - https://www.imo.org/
+  - https://www.cdc.gov/nceh/vsp/
+in_scope:
+  - Voyage itinerary design and deployment
+  - Port turn, tendering, and shore excursion sales and delivery
+  - Onboard cabin, programme, and guest service operations
+  - Marine, bridge, and engine-room operations
+  - Embarkation and disembarkation operations
+  - Onboard health and sanitation operations
+out_of_scope:
+  - Cruise sales and distribution (BC-4010, BC-4020)
+  - Property-based hotel operations (BC-4060)
+children:
+  - id: BC-4090.10
+    name: Voyage Itinerary Planning
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Planning of voyage itineraries, deployment, repositioning, and
+      itinerary substitution decisions.
+    children:
+      - id: BC-4090.10.10
+        name: "Itinerary Design & Deployment"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Design of cruise itineraries and assignment of vessels to
+          deployment seasons.
+        children: []
+      - id: BC-4090.10.20
+        name: "Repositioning & Charter Voyage Planning"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Planning of repositioning voyages and charter deployments
+          between seasons.
+        children: []
+      - id: BC-4090.10.30
+        name: Port Call Sequencing
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Sequencing of port calls within an itinerary against tide,
+          turnaround time, and partner agreements.
+        children: []
+      - id: BC-4090.10.40
+        name: "Itinerary Change & Substitution"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Live change and substitution of itineraries due to weather,
+          medical, or geopolitical events.
+        children: []
+  - id: BC-4090.20
+    name: "Port & Shore Excursion Operations"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Operations at port calls including turnaround, tendering, and
+      shore excursion catalogue, sales, and delivery.
+    children:
+      - id: BC-4090.20.10
+        name: Port Turn Operations
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Coordination of port turn operations including provisioning,
+          waste, and crew change.
+        children: []
+      - id: BC-4090.20.20
+        name: Tendering Operations
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operation of tender services to and from anchorage ports.
+        children: []
+      - id: BC-4090.20.30
+        name: "Shore Excursion Catalogue & Sales"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Catalogue and sales of shore excursions to guests across
+          pre-cruise and onboard channels.
+        children: []
+      - id: BC-4090.20.40
+        name: Shore Excursion Delivery Coordination
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Coordination of shore excursion delivery including local
+          operator handoff and guest reconciliation.
+        children: []
+  - id: BC-4090.30
+    name: "Onboard Cabin & Stateroom Operations"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Onboard cabin and stateroom operations including turnover,
+      assignment, mid-cruise upsell, and specialty-suite service.
+    children:
+      - id: BC-4090.30.10
+        name: Stateroom Turnover Operations
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operation of stateroom turnover during embarkation and
+          guest-change days.
+        children: []
+      - id: BC-4090.30.20
+        name: "Cabin Assignment & Upsell"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Assignment of cabins and execution of upsell decisions before
+          and during the voyage.
+        children: []
+      - id: BC-4090.30.30
+        name: Cabin Maintenance Operations
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Maintenance of cabin systems and finishings during the
+          voyage.
+        children: []
+      - id: BC-4090.30.40
+        name: Specialty Suite Service Operations
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Service operations for specialty-suite and butler-serviced
+          cabins.
+        children: []
+  - id: BC-4090.40
+    name: Onboard Guest Programme Operations
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Onboard entertainment, activities, kids' clubs, and specialty
+      venue operations across the voyage.
+    children:
+      - id: BC-4090.40.10
+        name: Entertainment Programme Operations
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operation of theatre, lounge, and headliner entertainment
+          programmes onboard.
+        children: []
+      - id: BC-4090.40.20
+        name: "Activities & Enrichment Operations"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operation of activity and enrichment programmes including
+          lectures, classes, and sports.
+        children: []
+      - id: BC-4090.40.30
+        name: "Kids & Youth Programme Operations"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operation of kids' and youth programmes including
+          age-appropriate activities and supervision.
+        children: []
+      - id: BC-4090.40.40
+        name: Specialty Venue Reservations
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Onboard reservations for specialty restaurants, spa, and
+          ticketed events.
+        children: []
+  - id: BC-4090.50
+    name: "Marine & Bridge Operations"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Marine and bridge operations covering navigation, propulsion, port
+      documentation, and provisioning coordination.
+    children:
+      - id: BC-4090.50.10
+        name: "Bridge & Navigation Operations"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Bridge watch-keeping and navigation operations across the
+          voyage.
+        children: []
+      - id: BC-4090.50.20
+        name: "Engine Room & Propulsion Operations"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Engine room watch-keeping and propulsion operations.
+        children: []
+      - id: BC-4090.50.30
+        name: "Port Documentation & Clearance"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Preparation of port documentation and management of port
+          state and customs clearance.
+        children: []
+      - id: BC-4090.50.40
+        name: "Bunkering & Provisioning Coordination"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Coordination of bunkering and provisioning at port calls.
+        children: []
+  - id: BC-4090.60
+    name: "Onboard Embarkation & Disembarkation"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Embarkation and disembarkation operations including pre-boarding
+      verification, customs clearance, and onboard baggage flow.
+    children:
+      - id: BC-4090.60.10
+        name: Pre-Boarding Document Verification
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Verification of guest travel documents and health attestations
+          ahead of boarding.
+        children: []
+      - id: BC-4090.60.20
+        name: Embarkation Flow Operations
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operation of embarkation flows from terminal to ship across
+          batched arrival windows.
+        children: []
+      - id: BC-4090.60.30
+        name: "Disembarkation & Customs Clearance"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operation of disembarkation flows including customs and
+          immigration clearance at port.
+        children: []
+      - id: BC-4090.60.40
+        name: Onboard Baggage Operations
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operation of baggage flow at embarkation, in-cabin delivery,
+          and disembarkation.
+        children: []
+  - id: BC-4090.70
+    name: Cruise Health & Sanitation Operations
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Onboard health and sanitation operations including inspection
+      readiness, outbreak detection and response, and water and pool
+      sanitation.
+    children:
+      - id: BC-4090.70.10
+        name: Sanitation Inspection Readiness
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Maintenance of inspection readiness against VSP, USPH, and
+          equivalent regimes.
+        children: []
+      - id: BC-4090.70.20
+        name: Onboard Outbreak Detection
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Detection of gastrointestinal and respiratory outbreaks
+          through onboard surveillance.
+        children: []
+      - id: BC-4090.70.30
+        name: Outbreak Response Operations
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Response operations during outbreaks including containment
+          and reporting.
+        children: []
+      - id: BC-4090.70.40
+        name: "Potable Water & Pool Sanitation"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Sanitation operations for potable water and recreational
+          water systems onboard.
+        children: []

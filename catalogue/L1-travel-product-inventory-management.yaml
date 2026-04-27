@@ -1,0 +1,307 @@
+# Travel Product & Inventory Management
+id: BC-4000
+name: "Travel Product & Inventory Management"
+level: 1
+industry: "Travel & Hospitality"
+description: |
+  Master definition, structure, and inventory control of bookable travel
+  products — rooms, fares, packages, ancillaries, attractions, and the
+  taxonomy and content that describe them — independent of the channels
+  through which they are sold.
+references:
+  - https://opentravel.org/
+  - https://htng.org/
+  - https://www.iata.org/en/programs/airline-distribution/ndc/
+  - https://hedna.org/
+  - https://www.iso.org/standard/31812.html
+in_scope:
+  - Lodging room types, rate plans, and package codes
+  - Air fare families, branded fares, and fare rules
+  - Packaged itineraries (static and dynamic) and ancillary catalogues
+  - Inventory pools, allotments, and over-booking buffers
+  - Product master data, content, and imagery
+out_of_scope:
+  - Channel-specific distribution wiring (BC-4010)
+  - Reservation lifecycle and bookings (BC-4020)
+  - Pricing strategy and yield decisions (BC-4030)
+children:
+  - id: BC-4000.10
+    name: Lodging Product Management
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Definition of accommodation products including room types, rate plans,
+      package codes, and lodging taxonomy used across the enterprise.
+    children:
+      - id: BC-4000.10.10
+        name: "Room Type & Inventory Class Definition"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Definition of room types, suite categories, and inventory classes
+          that form the lodging product backbone.
+        children: []
+      - id: BC-4000.10.20
+        name: "Rate Plan & Rate Code Definition"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Definition of rate plans, rate codes, and rate-plan attributes
+          covering refundability, prepayment, and inclusion rules.
+        children: []
+      - id: BC-4000.10.30
+        name: Lodging Product Lifecycle Status
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Lifecycle status management for lodging products from proposed
+          to active, suspended, and retired.
+        children: []
+      - id: BC-4000.10.40
+        name: Lodging Product Bundling
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Construction of lodging bundles combining accommodation with
+          breakfast, parking, and other inclusions.
+        children: []
+  - id: BC-4000.20
+    name: Air Product Management
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Definition of airline fare families, branded-fare attributes, fare
+      rules, and codeshare/interline product mappings.
+    children:
+      - id: BC-4000.20.10
+        name: Fare Family Definition
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Definition of fare families, cabins, and fare buckets used for
+          shopping and inventory control.
+        children: []
+      - id: BC-4000.20.20
+        name: Branded Fare Attribute Management
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Management of branded-fare attributes such as bag allowance,
+          seat selection, and lounge access.
+        children: []
+      - id: BC-4000.20.30
+        name: Fare Rule Authoring
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Authoring of fare rules covering advance purchase, minimum stay,
+          combinability, and change penalties.
+        children: []
+      - id: BC-4000.20.40
+        name: "Codeshare & Interline Product Mapping"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Mapping of partner-carrier products to own fare families for
+          codeshare and interline distribution.
+        children: []
+  - id: BC-4000.30
+    name: "Tour & Package Product Management"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Definition of packaged itineraries, multi-leg travel products, and
+      dynamic-packaging component mappings.
+    children:
+      - id: BC-4000.30.10
+        name: Static Package Product Definition
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Definition of fixed packages combining fixed components into a
+          single sellable product.
+        children: []
+      - id: BC-4000.30.20
+        name: Dynamic Package Component Mapping
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Mapping of components for dynamic packaging where the traveller
+          assembles flight, hotel, and ancillaries at shopping time.
+        children: []
+      - id: BC-4000.30.30
+        name: Package Product Versioning
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Versioning of package products across seasons, brochure cycles,
+          and feature releases.
+        children: []
+      - id: BC-4000.30.40
+        name: Package Departure Calendar
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Definition of package departure calendars, blackout dates, and
+          season windows.
+        children: []
+  - id: BC-4000.40
+    name: "Ancillary & Add-On Product Management"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Definition of ancillary and add-on products such as meals, baggage,
+      transfers, attractions, spa, and ground services.
+    children:
+      - id: BC-4000.40.10
+        name: Ancillary Catalogue Definition
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Definition of the ancillary catalogue including categories,
+          variants, and applicability conditions.
+        children: []
+      - id: BC-4000.40.20
+        name: Ancillary Bundling Rules
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Rules for bundling ancillaries with primary travel products and
+          with other ancillaries.
+        children: []
+      - id: BC-4000.40.30
+        name: "Cross-Sell Eligibility Rules"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Eligibility rules governing which ancillaries may be cross-sold
+          with which primary products in which channels.
+        children: []
+      - id: BC-4000.40.40
+        name: Ancillary Lifecycle Management
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Lifecycle management of ancillaries from launch to retirement,
+          including limited-time offers.
+        children: []
+  - id: BC-4000.50
+    name: Travel Inventory Allocation
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Definition and control of inventory pools, blocks, allotments, and
+      hold-back rules across travel products.
+    children:
+      - id: BC-4000.50.10
+        name: Inventory Pool Definition
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Definition of inventory pools at property, fleet, or product
+          level used as the basis for allocation.
+        children: []
+      - id: BC-4000.50.20
+        name: "Allotment & Block Allocation"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Allocation of allotments and blocks to channels, partners, and
+          tour operators.
+        children: []
+      - id: BC-4000.50.30
+        name: "Hold-Back & Protect-Class Rules"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Rules to protect inventory for specific segments, channels, or
+          loyalty members.
+        children: []
+      - id: BC-4000.50.40
+        name: Overbooking Buffer Configuration
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Configuration of overbooking buffers reflecting expected no-show
+          and cancellation rates.
+        children: []
+  - id: BC-4000.60
+    name: Travel Product Master Data Governance
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Stewardship of product taxonomy, classifications, attribute standards,
+      and identifier integrity across the travel product master.
+    children:
+      - id: BC-4000.60.10
+        name: Product Attribute Standards
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Standards for product attributes ensuring consistent semantics
+          across systems and channels.
+        children: []
+      - id: BC-4000.60.20
+        name: "Product Classification & Tagging"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Classification and tagging of products against taxonomies used
+          for search, merchandising, and reporting.
+        children: []
+      - id: BC-4000.60.30
+        name: Product Master Lifecycle Status
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Master lifecycle status for products spanning sub-product types
+          and aligning child status changes.
+        children: []
+      - id: BC-4000.60.40
+        name: Product Identifier Stewardship
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Stewardship of canonical product identifiers and resolution of
+          identifier collisions and duplicates.
+        children: []
+  - id: BC-4000.70
+    name: "Travel Content & Imagery Management"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Authoring and management of descriptive content, imagery, multimedia
+      assets, and rating/certification records that describe travel products.
+    children:
+      - id: BC-4000.70.10
+        name: Descriptive Content Authoring
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Authoring of long-form and short-form descriptive content for
+          travel products.
+        children: []
+      - id: BC-4000.70.20
+        name: "Imagery & Multimedia Asset Management"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Management of photo, video, and 360-degree multimedia assets
+          tied to travel products.
+        children: []
+      - id: BC-4000.70.30
+        name: "Star Rating & Certification Records"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Maintenance of star ratings, third-party certifications, and
+          quality marks attached to travel products.
+        children: []
+      - id: BC-4000.70.40
+        name: Content Localisation
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Localisation of product content into supported markets and
+          languages.
+        children: []

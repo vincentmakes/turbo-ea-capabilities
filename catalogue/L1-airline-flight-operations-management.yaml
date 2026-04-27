@@ -1,0 +1,312 @@
+# Airline Flight Operations Management
+id: BC-4080
+name: Airline Flight Operations Management
+level: 1
+industry: "Travel & Hospitality"
+description: |
+  Schedule planning, aircraft routing, crew planning, dispatch, gate and
+  turnaround coordination, IROPS recovery, and flight performance and
+  safety reporting for airline carriers.
+references:
+  - https://www.iata.org/
+  - https://www.icao.int/
+  - https://www.eurocontrol.int/
+in_scope:
+  - Flight schedule planning, slot coordination, and connection banks
+  - Aircraft routing, tail assignment, and MEL tracking
+  - Crew pairing, rostering, and FTL compliance
+  - Flight dispatch and operations control
+  - Gate allocation and turnaround coordination
+  - Operational disruption (IROPS) decisions on aircraft and crew
+  - Flight performance and safety-event reporting
+out_of_scope:
+  - Air traffic control by ANSPs (BC-1700)
+  - Passenger reaccommodation flow at booking level (BC-4020.70)
+  - Cargo flight handling (BC-3270)
+children:
+  - id: BC-4080.10
+    name: Flight Schedule Planning
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Construction and publication of the airline flight schedule
+      covering network, slots, and connection banks.
+    children:
+      - id: BC-4080.10.10
+        name: "Network & Route Plan Definition"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Definition of the network and route plan against demand and
+          fleet plans.
+        children: []
+      - id: BC-4080.10.20
+        name: "Slot & Airport Coordination"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Coordination of airport slots and constraints including
+          IATA WSG-aligned scheduling.
+        children: []
+      - id: BC-4080.10.30
+        name: "Schedule Build & Publication"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Construction of the published schedule and SSIM file
+          publication to distribution partners.
+        children: []
+      - id: BC-4080.10.40
+        name: Connection Bank Optimisation
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Optimisation of hub connection banks and minimum-connect
+          times.
+        children: []
+  - id: BC-4080.20
+    name: "Aircraft Routing & Tail Assignment"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Construction of aircraft rotations, tail assignments, swap
+      operations, maintenance-slot coordination, and MEL tracking.
+    children:
+      - id: BC-4080.20.10
+        name: Fleet Rotation Planning
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Planning of fleet rotations across the network covering
+          flying-hour and cycle balance.
+        children: []
+      - id: BC-4080.20.20
+        name: "Tail Assignment & Swap Operations"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Assignment of specific tails to flights and execution of
+          tactical swaps.
+        children: []
+      - id: BC-4080.20.30
+        name: Aircraft Maintenance Slot Coordination
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Coordination of maintenance slots and ferry flights against
+          the schedule.
+        children: []
+      - id: BC-4080.20.40
+        name: Minimum Equipment List Tracking
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Tracking of MEL deferrals against expiry and operational
+          impact.
+        children: []
+  - id: BC-4080.30
+    name: "Crew Planning & Rostering"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Planning of cockpit and cabin crew including pairing construction,
+      bidding, qualification tracking, and FTL compliance.
+    children:
+      - id: BC-4080.30.10
+        name: Crew Pairing Construction
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Construction of crew pairings across the schedule respecting
+          legality rules.
+        children: []
+      - id: BC-4080.30.20
+        name: "Crew Bidding & Roster Build"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operation of bidding processes and roster construction for
+          cockpit and cabin crew.
+        children: []
+      - id: BC-4080.30.30
+        name: "Crew Qualification & Currency Tracking"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Tracking of qualification, recency, and currency for crew
+          members.
+        children: []
+      - id: BC-4080.30.40
+        name: "Flight & Duty Time Limit Compliance"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Compliance with FTL and duty-time rules at planning and
+          execution time.
+        children: []
+  - id: BC-4080.40
+    name: "Flight Dispatch & Operational Control"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Generation of operational flight plans, fuel decisions, weather
+      and NOTAM briefing, and operations-control decision-making.
+    children:
+      - id: BC-4080.40.10
+        name: Flight Plan Generation
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Generation of operational flight plans including route, level,
+          and time-on-route.
+        children: []
+      - id: BC-4080.40.20
+        name: Operational Fuel Calculation
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Calculation of operational fuel including reserves, contingency,
+          and discretionary uplift.
+        children: []
+      - id: BC-4080.40.30
+        name: "Weather & NOTAM Briefing"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Compilation and delivery of weather and NOTAM briefings to
+          crew and dispatch.
+        children: []
+      - id: BC-4080.40.40
+        name: Operations Control Centre Decision-Making
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          OCC decision-making across delays, diversions, and recovery
+          options.
+        children: []
+  - id: BC-4080.50
+    name: "Gate & Turnaround Operations"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Gate planning and live turnaround coordination at airports
+      including pushback and tarmac-delay handling.
+    children:
+      - id: BC-4080.50.10
+        name: "Gate Allocation & Sequencing"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Allocation of gates and stand sequencing across the day-of-
+          operations.
+        children: []
+      - id: BC-4080.50.20
+        name: Turnaround Coordination
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Live coordination of turnaround activities including catering,
+          fueling, and boarding.
+        children: []
+      - id: BC-4080.50.30
+        name: "Pushback & Block-Out Operations"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Pushback, block-out, and taxi-out coordination at the stand.
+        children: []
+      - id: BC-4080.50.40
+        name: Tarmac Delay Management
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Management of tarmac delays consistent with regulatory time
+          limits and passenger-care obligations.
+        children: []
+  - id: BC-4080.60
+    name: "Flight Disruption & IROPS Management"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Operational decisions during disruption events covering
+      diversions, mass cancellations, and crew recovery, plus
+      coordination with passenger-side rebook flows.
+    in_scope:
+      - Diversion and cancellation decisioning
+      - Crew disruption recovery and standby assignment
+      - Coordination handoff to passenger reaccommodation (BC-4020.70)
+    out_of_scope:
+      - Passenger-level rebooking and compensation determination (BC-4020.70)
+    children:
+      - id: BC-4080.60.10
+        name: Diversion Decision Operations
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operations to decide and execute en-route and pre-departure
+          diversions.
+        children: []
+      - id: BC-4080.60.20
+        name: Mass Cancellation Recovery Operations
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Recovery operations during mass cancellations covering
+          aircraft, crew, and slot recovery.
+        children: []
+      - id: BC-4080.60.30
+        name: Crew Disruption Recovery
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Recovery of crew rosters during disruption including
+          standby and reserve assignment.
+        children: []
+      - id: BC-4080.60.40
+        name: Passenger Rebook Coordination
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Coordination with passenger reaccommodation teams on
+          recovery options and prioritisation.
+        children: []
+  - id: BC-4080.70
+    name: "Flight Performance & Safety Reporting"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Reporting of flight performance, on-time KPIs, air-safety
+      reports, and operational safety data feeds.
+    children:
+      - id: BC-4080.70.10
+        name: On-Time Performance Reporting
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Reporting on on-time performance and delay codes across the
+          network.
+        children: []
+      - id: BC-4080.70.20
+        name: Air Safety Report Capture
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Capture and triage of air-safety reports from crew and
+          operational staff.
+        children: []
+      - id: BC-4080.70.30
+        name: Operational Safety Investigation Support
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Support of operational safety investigations including data
+          gathering and follow-up actions.
+        children: []
+      - id: BC-4080.70.40
+        name: Flight Data Analytics Feeds
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Feeds of flight data analytics to safety and operations
+          analysis programmes.
+        children: []

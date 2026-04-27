@@ -1,0 +1,303 @@
+# Travel Distribution & Channel Management
+id: BC-4010
+name: "Travel Distribution & Channel Management"
+level: 1
+industry: "Travel & Hospitality"
+description: |
+  Management of how travel products are distributed and merchandised across
+  direct, GDS, OTA, wholesaler, and metasearch channels — including channel
+  connectivity, content syndication, and rate-and-availability parity.
+references:
+  - https://opentravel.org/
+  - https://hedna.org/
+  - https://www.iata.org/en/programs/airline-distribution/ndc/
+  - https://htng.org/
+in_scope:
+  - Direct, GDS, OTA, wholesaler, and metasearch channel operations
+  - Channel-manager hub operations and content syndication
+  - Rate and availability parity policy and enforcement
+out_of_scope:
+  - Product master and inventory pool definition (BC-4000)
+  - Reservation lifecycle (BC-4020)
+  - Pricing and yield decisions (BC-4030)
+children:
+  - id: BC-4010.10
+    name: Direct Channel Distribution Management
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Distribution of travel products through enterprise-owned direct
+      channels including web, mobile, voice, and self-service kiosks.
+    children:
+      - id: BC-4010.10.10
+        name: Brand Website Distribution Management
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operation of the brand website as a direct shopping and booking
+          surface for travel products.
+        children: []
+      - id: BC-4010.10.20
+        name: Mobile App Distribution Management
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operation of native mobile applications as a direct distribution
+          and servicing surface.
+        children: []
+      - id: BC-4010.10.30
+        name: "Voice & Call-Centre Distribution"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Voice and call-centre distribution including agent-assisted
+          shopping and booking.
+        children: []
+      - id: BC-4010.10.40
+        name: "Kiosk & Self-Service Distribution"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Self-service distribution through kiosks at airports, hotels,
+          and partner venues.
+        children: []
+  - id: BC-4010.20
+    name: GDS Distribution Management
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Distribution through global distribution systems including content
+      synchronisation, booking-class mapping, and cost management.
+    children:
+      - id: BC-4010.20.10
+        name: GDS Connectivity Operations
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operation of connectivity to GDS providers across shopping,
+          booking, and ticketing flows.
+        children: []
+      - id: BC-4010.20.20
+        name: "GDS Content Push & Synchronisation"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Push and synchronisation of content, rates, and availability to
+          GDS providers.
+        children: []
+      - id: BC-4010.20.30
+        name: GDS Booking Class Mapping
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Mapping of internal product classes to GDS booking classes and
+          rate codes.
+        children: []
+      - id: BC-4010.20.40
+        name: "GDS Cost & Surcharge Management"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Management of GDS booking fees, surcharges, and cost-of-sale
+          allocation.
+        children: []
+  - id: BC-4010.30
+    name: "OTA & Wholesaler Distribution Management"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Distribution through online travel agencies, bedbanks, and B2B
+      wholesalers including commercial-terms and content overrides.
+    children:
+      - id: BC-4010.30.10
+        name: OTA Connectivity Operations
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operation of connectivity to OTAs covering shopping, booking,
+          and post-booking events.
+        children: []
+      - id: BC-4010.30.20
+        name: "Wholesaler & Bedbank Connectivity"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operation of connectivity to wholesalers and bedbanks for B2B
+          redistribution.
+        children: []
+      - id: BC-4010.30.30
+        name: OTA Commercial Terms Management
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Management of OTA commercial terms including commission, mark-up,
+          and net-rate models.
+        children: []
+      - id: BC-4010.30.40
+        name: OTA Content Override Management
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Management of channel-specific content overrides for OTAs while
+          maintaining brand consistency.
+        children: []
+  - id: BC-4010.40
+    name: Metasearch Distribution Management
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Distribution and bidding on metasearch platforms including feed
+      operations and conversion tracking.
+    children:
+      - id: BC-4010.40.10
+        name: Metasearch Feed Operations
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operation of price and availability feeds to metasearch
+          providers.
+        children: []
+      - id: BC-4010.40.20
+        name: Metasearch Bidding Operations
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operation of bidding strategies on metasearch placements across
+          markets and devices.
+        children: []
+      - id: BC-4010.40.30
+        name: Metasearch Conversion Tracking
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Tracking of conversion attribution and bid effectiveness on
+          metasearch traffic.
+        children: []
+      - id: BC-4010.40.40
+        name: "Brand-Bid Conflict Management"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Management of bid conflicts between own-brand and OTA bids on
+          metasearch and paid search.
+        children: []
+  - id: BC-4010.50
+    name: Channel Manager Operations
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Operation of the channel-manager hub that synchronises inventory,
+      rates, and restrictions across distribution channels.
+    children:
+      - id: BC-4010.50.10
+        name: Channel Mapping Configuration
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Configuration of mappings between internal products and
+          channel-specific catalogues.
+        children: []
+      - id: BC-4010.50.20
+        name: Inventory Push Operations
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operation of inventory updates pushed from the central pool to
+          all connected channels.
+        children: []
+      - id: BC-4010.50.30
+        name: Rate Push Operations
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operation of rate updates pushed from pricing engines to all
+          connected channels.
+        children: []
+      - id: BC-4010.50.40
+        name: Restriction Push Operations
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operation of restriction updates such as minimum stay,
+          closed-to-arrival, and stop-sell across channels.
+        children: []
+  - id: BC-4010.60
+    name: "Rate & Availability Parity Management"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Definition, monitoring, and enforcement of rate and availability
+      parity across direct and indirect channels.
+    children:
+      - id: BC-4010.60.10
+        name: Parity Policy Definition
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Definition of rate-and-availability parity policy across
+          channel types and partner segments.
+        children: []
+      - id: BC-4010.60.20
+        name: "Parity Monitoring & Audit"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Monitoring of channels for parity breaches and routine audit
+          across the channel mix.
+        children: []
+      - id: BC-4010.60.30
+        name: Parity Breach Resolution
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Resolution of identified parity breaches with channels and
+          partners.
+        children: []
+      - id: BC-4010.60.40
+        name: "Last-Room-Availability Management"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Management of last-room-availability commitments to corporate
+          and channel partners.
+        children: []
+  - id: BC-4010.70
+    name: Distribution Content Syndication
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Syndication of product content to distribution partners with
+      controls for format, freshness, and fallback.
+    children:
+      - id: BC-4010.70.10
+        name: Content Feed Format Management
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Management of channel-specific content feed formats and
+          schemas.
+        children: []
+      - id: BC-4010.70.20
+        name: Content Freshness Monitoring
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Monitoring of content freshness on distribution partner
+          surfaces against publication SLAs.
+        children: []
+      - id: BC-4010.70.30
+        name: Channel Content Fallback Rules
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Fallback rules used when partner-specific content is missing
+          or stale.
+        children: []
+      - id: BC-4010.70.40
+        name: Content Override Reconciliation
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Reconciliation of partner content overrides against the master
+          content record.
+        children: []

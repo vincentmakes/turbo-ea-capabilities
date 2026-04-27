@@ -1,0 +1,271 @@
+# Guest & Traveller Management
+id: BC-4040
+name: "Guest & Traveller Management"
+level: 1
+industry: "Travel & Hospitality"
+description: |
+  Stewardship of the single guest and traveller record across the
+  enterprise — identity, preferences, consent, recognition, segmentation,
+  and travel-document/compliance data — independent of any single channel
+  or property.
+references:
+  - https://opentravel.org/
+  - https://htng.org/
+  - https://www.iata.org/en/programs/passenger/passenger-data/
+in_scope:
+  - Single guest and traveller profile and identity
+  - Preferences, dietary, and accessibility requirements
+  - Consent, marketing permission, and data subject rights
+  - Recognition signalling and tier-status delivery
+  - Guest segmentation and lifetime-value insight
+  - Travel document, APIS, and watchlist screening data
+out_of_scope:
+  - Loyalty earn / burn engines (BC-4050)
+  - Front office check-in execution (BC-4060.10)
+  - Generic cross-industry CRM operations (BC-400)
+children:
+  - id: BC-4040.10
+    name: "Guest Profile & Identity Management"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Creation, deduplication, and identity verification of the single
+      guest profile across booking and operational systems.
+    children:
+      - id: BC-4040.10.10
+        name: Guest Profile Creation
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Creation of guest profiles from any originating channel or
+          touchpoint.
+        children: []
+      - id: BC-4040.10.20
+        name: Guest Profile Deduplication
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Deduplication of guest profiles using deterministic and
+          probabilistic matching.
+        children: []
+      - id: BC-4040.10.30
+        name: Guest Identity Verification
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Verification of guest identity for high-value or regulated
+          interactions.
+        children: []
+      - id: BC-4040.10.40
+        name: "Profile Merge & Survivorship"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Merging of duplicate profiles and resolution of attribute
+          survivorship.
+        children: []
+  - id: BC-4040.20
+    name: "Guest Preference & Personalisation Management"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Capture and stewardship of guest preferences covering stay,
+      dietary, and accessibility requirements, plus personalisation rules.
+    children:
+      - id: BC-4040.20.10
+        name: Stay Preference Capture
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Capture of stay preferences such as bed type, floor, and
+          arrival-time preferences.
+        children: []
+      - id: BC-4040.20.20
+        name: "Dietary & Allergen Preference Management"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Management of dietary, religious, and allergen preferences for
+          F&B and inflight service.
+        children: []
+      - id: BC-4040.20.30
+        name: Accessibility Requirement Management
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Management of accessibility requirements and special-assistance
+          needs across travel touchpoints.
+        children: []
+      - id: BC-4040.20.40
+        name: Personalisation Rule Definition
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Definition of personalisation rules that apply preferences to
+          servicing and merchandising interactions.
+        children: []
+  - id: BC-4040.30
+    name: "Guest Consent & Privacy Management"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Management of guest consent, marketing permission, data subject
+      rights, and cross-border transfer compliance across travel data.
+    children:
+      - id: BC-4040.30.10
+        name: "Consent Capture & Management"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Capture and ongoing management of consent records across
+          purposes and channels.
+        children: []
+      - id: BC-4040.30.20
+        name: Marketing Permission Management
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Management of marketing permissions including channel-specific
+          opt-in and opt-out states.
+        children: []
+      - id: BC-4040.30.30
+        name: Data Subject Request Handling
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Handling of data subject access, portability, correction, and
+          erasure requests.
+        children: []
+      - id: BC-4040.30.40
+        name: "Cross-Border Transfer Compliance"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Compliance with cross-border transfer requirements applicable
+          to traveller and guest data.
+        children: []
+  - id: BC-4040.40
+    name: "Guest Recognition & Tier Status Delivery"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Delivery of recognition signals and tier status to operational
+      teams so guests are recognised consistently across touchpoints.
+    in_scope:
+      - Recognition cueing pre-arrival and on-property
+      - Recognition delivery logging and closure
+    out_of_scope:
+      - Loyalty programme design and earn/burn (BC-4050)
+    children:
+      - id: BC-4040.40.10
+        name: Pre-Arrival Recognition Cueing
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Cueing of recognition expectations to operational teams ahead
+          of guest arrival.
+        children: []
+      - id: BC-4040.40.20
+        name: On-Property Recognition Delivery
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Delivery of recognition by front office, F&B, and concierge
+          teams during the guest stay.
+        children: []
+      - id: BC-4040.40.30
+        name: Recognition Service Logging
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Logging of recognition delivery events for service auditing
+          and feedback loops.
+        children: []
+      - id: BC-4040.40.40
+        name: Recognition Closure Reporting
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Reporting on recognition closure rates against pre-arrival
+          recognition cues.
+        children: []
+  - id: BC-4040.50
+    name: "Guest Segmentation & Insight Management"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Definition of guest segments, modelling of lifetime value and
+      churn, and generation of cohort and behavioural insight.
+    children:
+      - id: BC-4040.50.10
+        name: Guest Segmentation Definition
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Definition and maintenance of guest segments used in
+          marketing and merchandising.
+        children: []
+      - id: BC-4040.50.20
+        name: Lifetime Value Modelling
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Modelling of guest lifetime value as input to investment and
+          recognition decisions.
+        children: []
+      - id: BC-4040.50.30
+        name: "Guest Churn & Retention Analysis"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Analysis of guest churn drivers and retention opportunities
+          across segments.
+        children: []
+      - id: BC-4040.50.40
+        name: "Cohort & Behavioural Insight"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Generation of cohort and behavioural insight from booking,
+          stay, and engagement events.
+        children: []
+  - id: BC-4040.60
+    name: "Traveller Document & Compliance Data Management"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Management of travel-document, APIS, visa, and watchlist data
+      required to satisfy carriage and border-control obligations.
+    children:
+      - id: BC-4040.60.10
+        name: Travel Document Capture
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Capture of passport, ID, and visa data for travel
+          eligibility and document checks.
+        children: []
+      - id: BC-4040.60.20
+        name: "APIS & Advance Passenger Information Submission"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Submission of APIS and advance passenger information to
+          border-control authorities.
+        children: []
+      - id: BC-4040.60.30
+        name: "Visa & ESTA Eligibility Reference"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Reference checks against visa, ESTA, and equivalent
+          eligibility regimes.
+        children: []
+      - id: BC-4040.60.40
+        name: "Secure Flight & No-Fly Watchlist Screening"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Screening of travellers against Secure Flight and equivalent
+          no-fly and watchlist programmes.
+        children: []

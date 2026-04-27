@@ -1,0 +1,319 @@
+# Reservation & Booking Management
+id: BC-4020
+name: "Reservation & Booking Management"
+level: 1
+industry: "Travel & Hospitality"
+description: |
+  Lifecycle of the reservation, PNR, and hotel folio — capture, modification,
+  cancellation, group blocks, confirmations, payments, and disruption-driven
+  rebooking — independent of which channel originated the booking.
+references:
+  - https://opentravel.org/
+  - https://www.iata.org/en/programs/airline-distribution/ndc/
+  - https://www.iata.org/en/services/finance/bsp/
+in_scope:
+  - Reservation capture across single, multi-passenger, and multi-component itineraries
+  - Booking changes, cancellations, and refund eligibility
+  - Group blocks, rooming lists, cut-off, and pickup
+  - Confirmation, voucher, and e-ticket issuance
+  - Booking-level payment and BSP / ARC settlement
+  - Schedule-change and IROPS reaccommodation
+out_of_scope:
+  - Channel and parity management (BC-4010)
+  - Pricing engines and yield decisions (BC-4030)
+  - Operational disruption decisions on aircraft and crew (BC-4080.60)
+children:
+  - id: BC-4020.10
+    name: Reservation Capture
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Capture of reservations across simple and complex travel itineraries
+      from any originating channel or agent.
+    children:
+      - id: BC-4020.10.10
+        name: Single-Itinerary Reservation Capture
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Capture of single-itinerary reservations such as a one-property
+          stay or one-flight booking.
+        children: []
+      - id: BC-4020.10.20
+        name: Multi-Passenger Reservation Capture
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Capture of multi-passenger or multi-guest reservations sharing
+          common itinerary segments.
+        children: []
+      - id: BC-4020.10.30
+        name: Multi-Component Reservation Capture
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Capture of multi-component reservations combining flights,
+          hotels, ancillaries, and ground services.
+        children: []
+      - id: BC-4020.10.40
+        name: Travel Agent Booking Capture
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Capture of bookings made by retail and corporate travel agents
+          on behalf of travellers.
+        children: []
+  - id: BC-4020.20
+    name: "Booking Modification & Cancellation"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Voluntary modification and cancellation of bookings, including
+      change fees, refund eligibility, and reissue operations.
+    children:
+      - id: BC-4020.20.10
+        name: Booking Change Management
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Management of voluntary booking changes covering dates, products,
+          and traveller details.
+        children: []
+      - id: BC-4020.20.20
+        name: Booking Cancellation Management
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Management of voluntary cancellations and inventory release back
+          to the pool.
+        children: []
+      - id: BC-4020.20.30
+        name: "Refund Eligibility & Calculation"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Determination of refund eligibility and calculation of refundable
+          amounts including penalties.
+        children: []
+      - id: BC-4020.20.40
+        name: Voluntary Reissue Operations
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operation of voluntary reissue including fare-difference
+          collection and document reissue.
+        children: []
+  - id: BC-4020.30
+    name: Group Block Management
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Management of group blocks against contracted inventory — block
+      creation, rooming lists, cut-off, and pickup tracking.
+    in_scope:
+      - Group block lifecycle from contract to wash and final pickup
+      - Rooming list capture and update
+    out_of_scope:
+      - Group sales contracting (BC-4110.10)
+      - Banquet event order execution (BC-4110.30)
+    children:
+      - id: BC-4020.30.10
+        name: Group Block Creation
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Creation of group blocks reflecting contracted inventory and
+          rate commitments.
+        children: []
+      - id: BC-4020.30.20
+        name: Rooming List Management
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Management of rooming lists associating individual travellers
+          with block inventory.
+        children: []
+      - id: BC-4020.30.30
+        name: Group Cut-Off Management
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Management of group cut-off dates and the release of unused
+          block inventory back to general sale.
+        children: []
+      - id: BC-4020.30.40
+        name: Group Pickup Tracking
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Tracking of group pickup against contract for revenue
+          recognition and forecasting.
+        children: []
+  - id: BC-4020.40
+    name: "Reservation Confirmation & Documentation"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Issuance of booking confirmations, vouchers, e-tickets, and
+      itinerary documents to travellers and agents.
+    children:
+      - id: BC-4020.40.10
+        name: Booking Confirmation Generation
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Generation and dispatch of booking confirmations across
+          notification channels.
+        children: []
+      - id: BC-4020.40.20
+        name: "Voucher & Document Issuance"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Issuance of vouchers and service documents for hotel, tour,
+          and activity components.
+        children: []
+      - id: BC-4020.40.30
+        name: "E-Ticket Issuance & Reissuance"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Issuance and reissuance of airline e-tickets including coupon
+          status updates.
+        children: []
+      - id: BC-4020.40.40
+        name: Booking Itinerary Distribution
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Distribution of itinerary documents to travellers, travel
+          agents, and integrated traveller-management systems.
+        children: []
+  - id: BC-4020.50
+    name: "Reservation Hold & Waitlist Management"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Management of provisional holds, waitlists, and conversions when
+      live availability is constrained or terms require time-to-pay.
+    children:
+      - id: BC-4020.50.10
+        name: Provisional Hold Management
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Management of provisional holds with controlled time-to-pay
+          windows.
+        children: []
+      - id: BC-4020.50.20
+        name: "Waitlist Capture & Prioritisation"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Capture of waitlist requests and prioritisation rules for when
+          inventory becomes available.
+        children: []
+      - id: BC-4020.50.30
+        name: Waitlist Conversion Operations
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operations to convert waitlist requests into confirmed
+          bookings as inventory frees.
+        children: []
+      - id: BC-4020.50.40
+        name: Hold Expiration Management
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Management of hold expirations and automatic release of held
+          inventory.
+        children: []
+  - id: BC-4020.60
+    name: "Booking Payment & Settlement"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Booking-level payment, deposit, charge capture, and partner
+      settlement including BSP and ARC.
+    children:
+      - id: BC-4020.60.10
+        name: "Booking Deposit & Pre-Authorisation"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Capture of booking deposits and card pre-authorisations against
+          deposit and guarantee policies.
+        children: []
+      - id: BC-4020.60.20
+        name: Booking Charge Capture
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Capture of charges against booking-level payment instruments at
+          eligibility points.
+        children: []
+      - id: BC-4020.60.30
+        name: "BSP & ARC Settlement Operations"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operations to settle agent-issued bookings via BSP, ARC, and
+          equivalent settlement plans.
+        children: []
+      - id: BC-4020.60.40
+        name: "Commission Calculation & Payout"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Calculation and payout of commissions to travel agents and
+          distribution partners.
+        children: []
+  - id: BC-4020.70
+    name: "Booking Disruption & Rebooking Operations"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Reaccommodation of bookings affected by schedule changes,
+      cancellations, and mass disruptions, including communications and
+      compensation eligibility.
+    in_scope:
+      - Schedule-change reaccommodation
+      - Mass disruption rebooking (IROPS, weather, force majeure)
+      - Compensation eligibility against carrier and consumer rules
+    out_of_scope:
+      - Operational decisions on aircraft, crew, and dispatch (BC-4080.60)
+      - Tour-side itinerary recovery (BC-4100.60)
+    children:
+      - id: BC-4020.70.10
+        name: Schedule-Change Reaccommodation
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Reaccommodation of bookings impacted by published schedule
+          changes including options offered to travellers.
+        children: []
+      - id: BC-4020.70.20
+        name: Mass Disruption Reaccommodation
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Reaccommodation of large numbers of bookings during weather,
+          IROPS, or force-majeure events.
+        children: []
+      - id: BC-4020.70.30
+        name: Compensation Eligibility Determination
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Determination of compensation eligibility under carrier policy
+          and applicable passenger-rights rules.
+        children: []
+      - id: BC-4020.70.40
+        name: Reaccommodation Communications
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Outbound communications to affected travellers and agents
+          throughout reaccommodation events.
+        children: []
