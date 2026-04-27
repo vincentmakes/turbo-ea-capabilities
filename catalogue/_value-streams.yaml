@@ -387,6 +387,16 @@ value_streams:
         capability_id: BC-3220
         industry_variant: Public Sector
         notes: Case resolution, ombudsman determination, appeals outcome
+      - stage_order: 1
+        stage_name: Issue Capture (Agri-Food Compliance)
+        capability_id: BC-3590
+        industry_variant: Agriculture
+        notes: Farm assurance, organic, welfare, MRL non-conformance intake
+      - stage_order: 3
+        stage_name: Investigation (Agri-Food Compliance)
+        capability_id: BC-3590
+        industry_variant: Agriculture
+        notes: Compliance and certification non-conformance investigation
   - name: Order-to-Cash
     industries: [Cross-Industry]
     stages:
@@ -703,6 +713,31 @@ value_streams:
         capability_id: BC-2660
         industry_variant: Telecommunications
         notes: Usage-based revenue recognition and revenue assurance
+      - stage_order: 2
+        stage_name: Quote & Configuration
+        capability_id: BC-3570
+        industry_variant: Agriculture
+        notes: Cash and basis quotes with hedge-aligned pricing
+      - stage_order: 3
+        stage_name: Contract & Order Capture
+        capability_id: BC-3570
+        industry_variant: Agriculture
+        notes: Forward and production contract capture
+      - stage_order: 5
+        stage_name: Production / Service Delivery
+        capability_id: BC-3580
+        industry_variant: Agriculture
+        notes: Food and beverage manufacturing as the service product
+      - stage_order: 7
+        stage_name: Customer Invoicing
+        capability_id: BC-3570
+        industry_variant: Agriculture
+        notes: Settlement statement with grade-based discounts
+      - stage_order: 8
+        stage_name: Cash Collection & Application
+        capability_id: BC-3570
+        industry_variant: Agriculture
+        notes: Settlement collection and counterparty position
   - name: Procure-to-Pay
     industries: [Cross-Industry]
     stages:
@@ -815,6 +850,26 @@ value_streams:
         capability_id: BC-3270
         industry_variant: Public Sector
         notes: Past performance recording; suspension and debarment
+      - stage_order: 1
+        stage_name: Need Identification & Requisition
+        capability_id: BC-3550
+        industry_variant: Agriculture
+        notes: Seed, fertilizer, crop-protection, and vet-medicine requisition
+      - stage_order: 2
+        stage_name: Sourcing
+        capability_id: BC-3550
+        industry_variant: Agriculture
+        notes: Sourcing through licensed agri-input channels
+      - stage_order: 3
+        stage_name: Supplier Selection & Onboarding
+        capability_id: BC-3550
+        industry_variant: Agriculture
+        notes: Agri-input supplier qualification with stewardship checks
+      - stage_order: 5
+        stage_name: Goods/Services Receipt
+        capability_id: BC-3550
+        industry_variant: Agriculture
+        notes: Input receival with batch and stewardship recording
   - name: Idea-to-Market
     industries: [Cross-Industry]
     stages:
@@ -1123,6 +1178,31 @@ value_streams:
         capability_id: BC-2600
         industry_variant: Telecommunications
         notes: Inventory reconciliation and network discovery
+      - stage_order: 2
+        stage_name: Supply Planning
+        capability_id: BC-3500
+        industry_variant: Agriculture
+        notes: Crop production planning
+      - stage_order: 2
+        stage_name: Supply Planning
+        capability_id: BC-3510
+        industry_variant: Agriculture
+        notes: Livestock production planning
+      - stage_order: 2
+        stage_name: Supply Planning
+        capability_id: BC-3520
+        industry_variant: Agriculture
+        notes: Aquaculture production planning
+      - stage_order: 2
+        stage_name: Supply Planning
+        capability_id: BC-3580
+        industry_variant: Agriculture
+        notes: Food and beverage manufacturing planning
+      - stage_order: 4
+        stage_name: Inventory Positioning
+        capability_id: BC-3560
+        industry_variant: Agriculture
+        notes: On-farm storage and processor receival positioning
   - name: Record-to-Report
     industries: [Cross-Industry]
     stages:
@@ -1431,6 +1511,31 @@ value_streams:
         capability_id: BC-3120
         industry_variant: Oil & Gas
         notes: Well plug and abandonment, facility removal
+      - stage_order: 1
+        stage_name: Asset Need & Justification
+        capability_id: BC-3540
+        industry_variant: Agriculture
+        notes: Land acquisition or lease and equipment fleet planning
+      - stage_order: 2
+        stage_name: Acquisition
+        capability_id: BC-3540
+        industry_variant: Agriculture
+        notes: Land lease, equipment purchase, and irrigation infrastructure build
+      - stage_order: 4
+        stage_name: Operate & Maintain
+        capability_id: BC-3540
+        industry_variant: Agriculture
+        notes: Day-to-day operation of farm assets and ISOBUS telemetry
+      - stage_order: 6
+        stage_name: Asset Information Maintenance
+        capability_id: BC-3540
+        industry_variant: Agriculture
+        notes: Field, parcel, and equipment master data
+      - stage_order: 7
+        stage_name: Decommissioning & Disposal
+        capability_id: BC-3540
+        industry_variant: Agriculture
+        notes: Equipment disposal and lease end-of-term
   - name: Strategy-to-Execution
     industries: [Cross-Industry]
     stages:
@@ -1585,6 +1690,16 @@ value_streams:
         capability_id: BC-2700
         industry_variant: Telecommunications
         notes: Telecom regulator filings and licence-conditions reporting
+      - stage_order: 2
+        stage_name: Risk Identification
+        capability_id: BC-3590
+        industry_variant: Agriculture
+        notes: Agri-food compliance risk taxonomy (zoonosis, MRL, welfare)
+      - stage_order: 3
+        stage_name: Risk Assessment
+        capability_id: BC-3590
+        industry_variant: Agriculture
+        notes: Compliance and food-safety risk assessment
   - name: Audit-to-Action
     industries: [Cross-Industry]
     stages:
@@ -1627,6 +1742,11 @@ value_streams:
         stage_name: Audit Quality Assurance
         capability_id: BC-140
         notes: QA review & maturation
+      - stage_order: 3
+        stage_name: Fieldwork
+        capability_id: BC-3590
+        industry_variant: Agriculture
+        notes: Farm assurance and certification audit readiness
   - name: Threat-to-Mitigation
     industries: [Cross-Industry]
     stages:
@@ -2508,6 +2628,21 @@ value_streams:
         stage_name: Improvement Targets
         capability_id: BC-100
         notes: Strategy execution feedback
+      - stage_order: 2
+        stage_name: Data Collection
+        capability_id: BC-3600
+        industry_variant: Agriculture
+        notes: Soil carbon, water, biodiversity, and farm GHG data
+      - stage_order: 2
+        stage_name: Data Collection
+        capability_id: BC-3590
+        industry_variant: Agriculture
+        notes: Animal welfare and provenance indicator data
+      - stage_order: 4
+        stage_name: Reporting & Disclosure
+        capability_id: BC-3600
+        industry_variant: Agriculture
+        notes: Agri-environmental scheme reporting and soil-carbon credit issuance
   - name: Concept-to-Manufacture
     industries:
       - Manufacturing & Industrial
