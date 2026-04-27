@@ -679,6 +679,29 @@ Where an industry reference framework exists, anchor the upper levels (L1 / L2) 
 - **VVSG (Voluntary Voting System Guidelines — US EAC), Council of Europe / Venice Commission Code of Good Practice in Electoral Matters** — election technology and electoral administration.
 - **UNHCR Refugee Status Determination Guidelines, ICAO Doc 9303 (machine-readable travel documents), IOM standards** — asylum processing and travel-document standards.
 
+**Utilities — Power & Water**
+
+- **IEC 61850** — substation automation, protection, and IED communications.
+- **IEC 61968 / 61970 (Common Information Model — CIM)** — utility information model for EMS, DMS, and inter-utility data exchange.
+- **IEC 62351** — power-system data and communication security.
+- **NERC CIP (CIP-002 to CIP-014)** — North American bulk-electric-system cybersecurity and physical-security standards.
+- **NERC Reliability Standards (BAL, FAC, IRO, TOP, PRC, EOP, MOD)** — bulk-electric-system reliability operations, planning, protection, and emergency preparedness.
+- **FERC Orders (e.g. 841 storage, 845 generator interconnection, 2222 DER market participation)** — US wholesale electricity market and interconnection rules.
+- **ENTSO-E Network Codes (System Operation, RfG/DCC, Emergency & Restoration, CACM, Balancing)** — pan-European TSO operational and market rules.
+- **CIGRE Technical Brochures** — international transmission and distribution engineering reference.
+- **IEEE 1547** — DER interconnection with electric power systems.
+- **IEEE 519, IEEE C57, IEEE 1584** — harmonics, transformers, and arc-flash standards used in utility primary plant.
+- **ISO/IEC 27019** — information-security controls for the energy utility industry.
+- **ISO 24510 / 24511 / 24512 / 24516 / 24518** — drinking-water and wastewater service activities, asset management, and crisis management.
+- **AWWA Standards** — American Water Works Association drinking-water source, treatment, and distribution standards.
+- **WHO Drinking-Water Quality Guidelines, WHO Water Safety Plans** — international drinking-water quality and risk-management framework.
+- **EU Drinking Water Directive 2020/2184** — quality of water intended for human consumption.
+- **EU Urban Wastewater Treatment Directive 91/271/EEC (and 2024 recast)** — collection and treatment of urban wastewater.
+- **US Safe Drinking Water Act (42 USC 300f), Clean Water Act (33 USC 1251)** — US federal drinking-water and surface-water regulation.
+- **IWA Performance Indicators for Water Supply Services and Wastewater Services** — water-utility benchmarking.
+- **ISO 50001** — energy management systems.
+- **ISO 55000 series** — asset management for long-life utility infrastructure.
+
 **Other industry anchors not yet exercised in the catalogue but recommended for adoption**
 
 *(All previously listed industries have been promoted to dedicated subsections above.)*

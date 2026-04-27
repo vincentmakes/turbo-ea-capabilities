@@ -1,0 +1,270 @@
+# Power Generation Operations Management
+id: BC-3800
+name: Power Generation Operations Management
+level: 1
+industry: Power & Water Utilities
+description: |
+  Operation of the generation fleet across thermal, nuclear, hydro,
+  wind, solar, and storage assets — covering dispatch and scheduling,
+  plant operation by technology, fuel and emissions handling, and
+  fleet-level performance management.
+references:
+  - https://www.iaea.org/topics/operating-experience
+  - https://www.cigre.org/
+  - https://www.iso.org/standard/69426.html
+  - https://www.epri.com/
+children:
+  - id: BC-3800.10
+    name: Generation Dispatch & Scheduling
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Unit commitment, dispatch instructions, and short-term schedules
+      for the generation fleet against system operator nominations and
+      market positions.
+    children:
+      - id: BC-3800.10.10
+        name: Unit Commitment
+        level: 3
+        description: |
+          Day-ahead and intraday selection of generating units for service.
+        children: []
+      - id: BC-3800.10.20
+        name: Economic Dispatch
+        level: 3
+        description: |
+          Real-time merit-order dispatch of committed units against load.
+        children: []
+      - id: BC-3800.10.30
+        name: Outage Coordination
+        level: 3
+        description: |
+          Coordination of planned and forced unit outages with system operator and market schedules.
+        children: []
+  - id: BC-3800.20
+    name: Thermal Plant Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Day-to-day operation of coal, gas, and oil-fired generating
+      stations including combined-cycle and cogeneration plants.
+    in_scope:
+      - Boiler and turbine operation
+      - Heat-rate and efficiency surveillance
+      - Combustion control
+    out_of_scope:
+      - Nuclear plant operation (BC-3800.40)
+      - Renewable plant operation (BC-3800.50)
+    children:
+      - id: BC-3800.20.10
+        name: Boiler Operations
+        level: 3
+        description: |
+          Operation of steam-raising plant and combustion control.
+        children: []
+      - id: BC-3800.20.20
+        name: Steam Turbine Operations
+        level: 3
+        description: |
+          Operation of steam turbines and condensate-feedwater systems.
+        children: []
+      - id: BC-3800.20.30
+        name: Gas Turbine Operations
+        level: 3
+        description: |
+          Operation of open-cycle and combined-cycle gas turbines.
+        children: []
+      - id: BC-3800.20.40
+        name: Combined Heat & Power Operations
+        level: 3
+        description: |
+          Operation of cogeneration plants delivering electricity and process or district heat.
+        children: []
+  - id: BC-3800.30
+    name: Hydroelectric Plant Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Operation of conventional, pumped-storage, and run-of-river
+      hydroelectric stations including dam and water-passage management.
+    children:
+      - id: BC-3800.30.10
+        name: Hydro Unit Operations
+        level: 3
+        description: |
+          Start-stop, governing, and load control of hydro generating units.
+        children: []
+      - id: BC-3800.30.20
+        name: Reservoir Level Management
+        level: 3
+        description: |
+          Reservoir level scheduling against energy, flood, and environmental constraints.
+        children: []
+      - id: BC-3800.30.30
+        name: Pumped Storage Cycling Operations
+        level: 3
+        description: |
+          Pumping and generation cycling of pumped-storage hydro plants.
+        children: []
+      - id: BC-3800.30.40
+        name: Dam Safety Surveillance
+        level: 3
+        description: |
+          Surveillance of dam structural and seepage behaviour against safety criteria.
+        children: []
+  - id: BC-3800.40
+    name: Nuclear Plant Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Operation of nuclear power stations — reactor control, refuelling
+      outages, and radiological safety surveillance under nuclear
+      regulator licence conditions.
+    children:
+      - id: BC-3800.40.10
+        name: Reactor Operations
+        level: 3
+        description: |
+          Reactor control, reactivity management, and load-following operations.
+        children: []
+      - id: BC-3800.40.20
+        name: Refuelling Outage Operations
+        level: 3
+        description: |
+          Planning and execution of refuelling and major maintenance outages.
+        children: []
+      - id: BC-3800.40.30
+        name: Radiological Surveillance
+        level: 3
+        description: |
+          Surveillance of radiological release and worker dose against limits.
+        children: []
+      - id: BC-3800.40.40
+        name: Spent Fuel Pool Operations
+        level: 3
+        description: |
+          Operation and surveillance of spent fuel pool cooling and inventory.
+        children: []
+  - id: BC-3800.50
+    name: Renewable Generation Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Operation of wind, solar PV, and other variable-renewable
+      generation assets including curtailment and forecasting feed.
+    children:
+      - id: BC-3800.50.10
+        name: Wind Farm Operations
+        level: 3
+        description: |
+          Onshore and offshore wind farm operation and turbine availability management.
+        children: []
+      - id: BC-3800.50.20
+        name: Solar PV Plant Operations
+        level: 3
+        description: |
+          Utility-scale solar PV plant operation and string monitoring.
+        children: []
+      - id: BC-3800.50.30
+        name: Renewable Curtailment Operations
+        level: 3
+        description: |
+          Execution of curtailment instructions from system operators on variable renewables.
+        children: []
+      - id: BC-3800.50.40
+        name: Renewable Generation Forecasting
+        level: 3
+        description: |
+          Short-term forecasting of wind and solar output for dispatch and trading inputs.
+        children: []
+  - id: BC-3800.60
+    name: Energy Storage Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Operation of grid-scale battery and other energy storage assets,
+      including state-of-charge management and cycling against market
+      and ancillary-service positions.
+    children:
+      - id: BC-3800.60.10
+        name: Battery Storage Operations
+        level: 3
+        description: |
+          Operation and state-of-charge management of grid-scale battery installations.
+        children: []
+      - id: BC-3800.60.20
+        name: Storage Cycling Optimisation
+        level: 3
+        description: |
+          Optimisation of charge-discharge cycling against energy and ancillary value stacks.
+        children: []
+      - id: BC-3800.60.30
+        name: Storage Degradation Tracking
+        level: 3
+        description: |
+          Tracking of round-trip efficiency and capacity fade for battery assets.
+        children: []
+  - id: BC-3800.70
+    name: Generation Performance Management
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Fleet-level surveillance of availability, heat rate, capacity
+      factor, and forced-outage rate across generation technologies.
+    children:
+      - id: BC-3800.70.10
+        name: Availability & Reliability Reporting
+        level: 3
+        description: |
+          GADS-aligned reporting of equivalent availability and forced-outage statistics.
+        children: []
+      - id: BC-3800.70.20
+        name: Heat Rate & Efficiency Tracking
+        level: 3
+        description: |
+          Tracking of heat rate and thermal efficiency against design and contract targets.
+        children: []
+      - id: BC-3800.70.30
+        name: Capacity Performance Tracking
+        level: 3
+        description: |
+          Tracking of capacity factor and dependable-capacity ratings.
+        children: []
+  - id: BC-3800.80
+    name: Fuel & Emissions Management
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Fuel supply, stock, and combustion-by-product management for the
+      generation fleet, including air-emissions and CO2 surveillance.
+    children:
+      - id: BC-3800.80.10
+        name: Fuel Stock Operations
+        level: 3
+        description: |
+          Coal, oil, and biomass yard operations and stock-control.
+        children: []
+      - id: BC-3800.80.20
+        name: Gas Supply Nominations
+        level: 3
+        description: |
+          Pipeline gas nominations and balancing for gas-fired generation.
+        children: []
+      - id: BC-3800.80.30
+        name: Air Emissions Monitoring
+        level: 3
+        description: |
+          Continuous emissions monitoring of NOx, SOx, particulates, and reporting.
+        children: []
+      - id: BC-3800.80.40
+        name: CO2 & Allowance Reconciliation
+        level: 3
+        description: |
+          Reconciliation of CO2 emissions to surrendered allowances under cap-and-trade schemes.
+        children: []
+      - id: BC-3800.80.50
+        name: Ash & Combustion Residual Operations
+        level: 3
+        description: |
+          Handling and disposal of fly ash, bottom ash, and FGD residuals.
+        children: []

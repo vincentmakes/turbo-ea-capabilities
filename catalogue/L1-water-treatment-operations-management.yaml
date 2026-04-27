@@ -1,0 +1,193 @@
+# Water Treatment Operations Management
+id: BC-3870
+name: Water Treatment Operations Management
+level: 1
+industry: Power & Water Utilities
+description: |
+  Production of potable water at treatment works — process operation,
+  drinking-water quality assurance, treatment-chemical management,
+  treated-water storage, and management of treatment residuals against
+  drinking-water regulations and WHO Water Safety Plan principles.
+references:
+  - https://www.iso.org/standard/37251.html
+  - https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health/water-safety-and-quality/drinking-water-quality-guidelines
+  - https://www.awwa.org/Publications/Standards
+  - https://eur-lex.europa.eu/eli/dir/2020/2184/oj
+children:
+  - id: BC-3870.10
+    name: Treatment Plant Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Day-to-day operation of drinking-water treatment works
+      delivering output to specification and to demand.
+    children:
+      - id: BC-3870.10.10
+        name: Treatment Works Shift Operations
+        level: 3
+        description: |
+          Shift operation of conventional and membrane treatment works.
+        children: []
+      - id: BC-3870.10.20
+        name: Treatment Output Scheduling
+        level: 3
+        description: |
+          Scheduling of treatment output against distribution demand and storage state.
+        children: []
+      - id: BC-3870.10.30
+        name: Treatment Plant Performance Reporting
+        level: 3
+        description: |
+          Reporting of treatment-works output, energy use, and performance metrics.
+        children: []
+  - id: BC-3870.20
+    name: Treatment Process Control
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Process control of unit treatment operations — coagulation,
+      filtration, disinfection, and advanced treatment — against
+      online quality monitoring.
+    children:
+      - id: BC-3870.20.10
+        name: Coagulation & Clarification Control
+        level: 3
+        description: |
+          Control of coagulant dosing, flocculation, and clarifier performance.
+        children: []
+      - id: BC-3870.20.20
+        name: Filtration Process Control
+        level: 3
+        description: |
+          Control of rapid-gravity, slow-sand, and membrane filtration steps.
+        children: []
+      - id: BC-3870.20.30
+        name: Disinfection Process Control
+        level: 3
+        description: |
+          Control of chlorination, UV, ozone, and advanced disinfection processes.
+        children: []
+      - id: BC-3870.20.40
+        name: Advanced Treatment Process Control
+        level: 3
+        description: |
+          Control of GAC, ion-exchange, and advanced oxidation steps.
+        children: []
+  - id: BC-3870.30
+    name: Drinking Water Quality Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Sampling, laboratory analysis, online surveillance, and
+      regulatory reporting of drinking-water quality compliance.
+    in_scope:
+      - Statutory drinking-water sampling
+      - Laboratory analysis of microbiological and chemical parameters
+      - Drinking-water quality incident response
+    out_of_scope:
+      - Distribution-network water quality (BC-3880.50)
+      - Wastewater effluent quality (BC-3890.70)
+    children:
+      - id: BC-3870.30.10
+        name: Statutory Sampling Programme
+        level: 3
+        description: |
+          Operation of statutory drinking-water sampling programmes at treatment works and supply points.
+        children: []
+      - id: BC-3870.30.20
+        name: Treated Water Online Monitoring
+        level: 3
+        description: |
+          Online monitoring of treated-water turbidity, chlorine residual, and other parameters.
+        children: []
+      - id: BC-3870.30.30
+        name: Drinking Water Incident Response
+        level: 3
+        description: |
+          Investigation and remediation of drinking-water quality incidents and exceedances.
+        children: []
+      - id: BC-3870.30.40
+        name: Drinking Water Quality Reporting
+        level: 3
+        description: |
+          Statutory reporting to drinking-water regulators (DWI, EPA, equivalents).
+        children: []
+  - id: BC-3870.40
+    name: Treatment Chemical Management
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Procurement-aware operational management of treatment chemicals
+      including stocks, dosing, and chemical-handling safety.
+    children:
+      - id: BC-3870.40.10
+        name: Chemical Stock Operations
+        level: 3
+        description: |
+          Stock-level management of treatment chemicals at works.
+        children: []
+      - id: BC-3870.40.20
+        name: Chemical Dosing Operations
+        level: 3
+        description: |
+          Operation and calibration of dosing systems for treatment chemicals.
+        children: []
+      - id: BC-3870.40.30
+        name: Chemical Handling Safety
+        level: 3
+        description: |
+          Safe handling, COSHH, and DSEAR controls for treatment chemicals on site.
+        children: []
+  - id: BC-3870.50
+    name: Treated Water Storage Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Operation of service reservoirs, contact tanks, and water towers
+      delivering treated water into the distribution network.
+    children:
+      - id: BC-3870.50.10
+        name: Service Reservoir Operations
+        level: 3
+        description: |
+          Operation, level control, and turnover management of service reservoirs.
+        children: []
+      - id: BC-3870.50.20
+        name: Contact Tank Operations
+        level: 3
+        description: |
+          Operation of disinfection contact tanks for required CT values.
+        children: []
+      - id: BC-3870.50.30
+        name: Service Reservoir Inspection
+        level: 3
+        description: |
+          Internal inspection and cleaning of treated-water storage assets.
+        children: []
+  - id: BC-3870.60
+    name: Treatment Residuals Management
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Operation of waste streams arising from treatment — clarifier
+      sludges, filter backwash, and spent media — and their disposal
+      route.
+    children:
+      - id: BC-3870.60.10
+        name: Clarifier Sludge Operations
+        level: 3
+        description: |
+          Operation of sludge thickening and dewatering at water treatment works.
+        children: []
+      - id: BC-3870.60.20
+        name: Filter Backwash Recovery
+        level: 3
+        description: |
+          Recovery and recycle or disposal of filter backwash water.
+        children: []
+      - id: BC-3870.60.30
+        name: Spent Media Disposal
+        level: 3
+        description: |
+          Replacement and disposal of spent filter media and ion-exchange resins.
+        children: []

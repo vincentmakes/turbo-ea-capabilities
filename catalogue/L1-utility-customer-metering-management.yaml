@@ -1,0 +1,208 @@
+# Utility Customer & Metering Management
+id: BC-3910
+name: Utility Customer & Metering Management
+level: 1
+industry: Power & Water Utilities
+description: |
+  Utility-specific customer and metering operations from the supply
+  point to billing inputs — utility customer accounts, meter
+  inventory, AMI / smart-meter data acquisition, meter reading and
+  validation, meter-to-cash inputs, service connection and
+  disconnection, and protection of vulnerable customers.
+references:
+  - https://webstore.iec.ch/publication/6204
+  - https://standards.ieee.org/ieee/2030.5/5897/
+  - https://www.naruc.org/
+  - https://www.ofgem.gov.uk/
+children:
+  - id: BC-3910.10
+    name: Utility Customer Account Management
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Utility-specific customer account lifecycle covering supply-point
+      identifiers, occupancy changes, and tariff assignment.
+    children:
+      - id: BC-3910.10.10
+        name: Supply Point Registration
+        level: 3
+        description: |
+          Registration and maintenance of supply-point identifiers (MPAN, MPRN, SPID).
+        children: []
+      - id: BC-3910.10.20
+        name: Occupancy Change Operations
+        level: 3
+        description: |
+          Move-in, move-out, and change-of-tenancy processing for utility supply points.
+        children: []
+      - id: BC-3910.10.30
+        name: Customer Tariff Assignment
+        level: 3
+        description: |
+          Assignment of customers to applicable tariff schedules and product options.
+        children: []
+  - id: BC-3910.20
+    name: Meter Asset Management
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Lifecycle management of physical meter and communication assets
+      including stock, install, exchange, and recovery.
+    children:
+      - id: BC-3910.20.10
+        name: Meter Stock Operations
+        level: 3
+        description: |
+          Stock management, commissioning, and decommissioning of meter assets.
+        children: []
+      - id: BC-3910.20.20
+        name: Meter Installation Operations
+        level: 3
+        description: |
+          Field installation of new and exchange meters.
+        children: []
+      - id: BC-3910.20.30
+        name: Meter Recovery & Disposal
+        level: 3
+        description: |
+          Recovery, refurbishment, and end-of-life disposal of meter assets.
+        children: []
+  - id: BC-3910.30
+    name: AMI Data Acquisition Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Acquisition of advanced metering infrastructure data via head-end
+      systems, communication networks, and meter data management.
+    in_scope:
+      - Smart-meter head-end operation
+      - Communication network and concentrator monitoring
+      - Meter data management ingestion
+    out_of_scope:
+      - Meter physical installation (BC-3910.20.20)
+      - Trading-side aggregated demand (BC-3850.30.10)
+    children:
+      - id: BC-3910.30.10
+        name: Head-End System Operations
+        level: 3
+        description: |
+          Operation of smart-meter head-end systems and meter command issuance.
+        children: []
+      - id: BC-3910.30.20
+        name: AMI Communication Network Operations
+        level: 3
+        description: |
+          Operation of RF, PLC, and cellular AMI communication networks and concentrators.
+        children: []
+      - id: BC-3910.30.30
+        name: Meter Data Management Ingestion
+        level: 3
+        description: |
+          Ingestion of interval and register reads into the meter data management system.
+        children: []
+  - id: BC-3910.40
+    name: Meter Reading & Validation
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Cyclic and event-driven reading of meters and validation,
+      estimation, and editing of consumption data.
+    children:
+      - id: BC-3910.40.10
+        name: Manual & Drive-By Reading Operations
+        level: 3
+        description: |
+          Walk-route, drive-by, and AMR reading operations for non-AMI meters.
+        children: []
+      - id: BC-3910.40.20
+        name: Validation, Estimation & Editing
+        level: 3
+        description: |
+          VEE processing of register and interval reads to produce billing-quality data.
+        children: []
+      - id: BC-3910.40.30
+        name: Consumption Aggregation
+        level: 3
+        description: |
+          Aggregation of consumption to billing periods and to settlement profiles.
+        children: []
+  - id: BC-3910.50
+    name: Meter-to-Cash Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Utility-specific operations preparing usage data for billing and
+      revenue protection, including bill exception handling and
+      revenue-leakage detection.
+    children:
+      - id: BC-3910.50.10
+        name: Bill Determinant Preparation
+        level: 3
+        description: |
+          Preparation of bill determinants — usage, demand, and reactive — for billing systems.
+        children: []
+      - id: BC-3910.50.20
+        name: Bill Exception Handling
+        level: 3
+        description: |
+          Investigation and resolution of bill exceptions and meter-data anomalies.
+        children: []
+      - id: BC-3910.50.30
+        name: Revenue Protection Operations
+        level: 3
+        description: |
+          Detection and field investigation of meter tampering and energy or water theft.
+        children: []
+  - id: BC-3910.60
+    name: Service Connection & Disconnection Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Activation, deactivation, and prepayment-mode operation of
+      utility supplies at the customer interface.
+    children:
+      - id: BC-3910.60.10
+        name: Supply Activation Operations
+        level: 3
+        description: |
+          Activation of new and reactivated supplies including remote energisation.
+        children: []
+      - id: BC-3910.60.20
+        name: Disconnection for Non-Payment
+        level: 3
+        description: |
+          Disconnection processes against statutory and regulatory protections.
+        children: []
+      - id: BC-3910.60.30
+        name: Prepayment Mode Operations
+        level: 3
+        description: |
+          Operation of prepayment meters and top-up channels.
+        children: []
+  - id: BC-3910.70
+    name: Vulnerable Customer Management
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Identification and protection of customers in vulnerable
+      circumstances including priority-services registers and
+      affordability schemes.
+    children:
+      - id: BC-3910.70.10
+        name: Priority Services Register Operations
+        level: 3
+        description: |
+          Maintenance of the priority-services register and tailored support flags.
+        children: []
+      - id: BC-3910.70.20
+        name: Hardship & Affordability Scheme Operations
+        level: 3
+        description: |
+          Administration of social-tariff and hardship-fund schemes for utility customers.
+        children: []
+      - id: BC-3910.70.30
+        name: Medical Equipment Customer Management
+        level: 3
+        description: |
+          Management of customers reliant on medical or dialysis equipment for outage planning.
+        children: []

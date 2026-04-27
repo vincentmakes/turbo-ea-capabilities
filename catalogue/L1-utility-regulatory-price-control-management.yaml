@@ -1,0 +1,210 @@
+# Utility Regulatory & Price Control Management
+id: BC-3920
+name: Utility Regulatory & Price Control Management
+level: 1
+industry: Power & Water Utilities
+description: |
+  Engagement with utility-sector regulators and administration of
+  price-control regimes — regulator interactions, price-control
+  submissions, tariff structure design, regulatory reporting, service
+  performance commitments, regulatory cost allocation, and universal-
+  service and affordability obligations.
+references:
+  - https://www.ofgem.gov.uk/
+  - https://www.ofwat.gov.uk/
+  - https://www.naruc.org/
+  - https://www.ferc.gov/
+children:
+  - id: BC-3920.10
+    name: Utility Regulator Engagement
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Day-to-day relationship and information-flow management with
+      sector regulators and consumer-protection bodies.
+    children:
+      - id: BC-3920.10.10
+        name: Regulator Correspondence Management
+        level: 3
+        description: |
+          Inbound and outbound correspondence and information-request handling with regulators.
+        children: []
+      - id: BC-3920.10.20
+        name: Regulatory Consultation Response
+        level: 3
+        description: |
+          Preparation and submission of responses to regulatory consultations.
+        children: []
+      - id: BC-3920.10.30
+        name: Regulatory Hearing Participation
+        level: 3
+        description: |
+          Participation in regulatory hearings, technical conferences, and stakeholder forums.
+        children: []
+  - id: BC-3920.20
+    name: Price Control Submission Management
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      End-to-end preparation, submission, and negotiation of multi-
+      year price-control or rate-case business plans.
+    in_scope:
+      - Business plan compilation (RIIO, PR, rate-case)
+      - Cost benchmarking and totex modelling
+      - Negotiation of allowed revenue and outputs
+    out_of_scope:
+      - Internal investment planning (BC-3900.40)
+      - Wholesale market participation (BC-3850)
+    children:
+      - id: BC-3920.20.10
+        name: Business Plan Preparation
+        level: 3
+        description: |
+          Preparation of price-control business plans (RIIO, PR, rate-case equivalents).
+        children: []
+      - id: BC-3920.20.20
+        name: Cost Benchmarking & Totex Modelling
+        level: 3
+        description: |
+          Cost benchmarking and totex modelling against regulator and peer datasets.
+        children: []
+      - id: BC-3920.20.30
+        name: Allowed Revenue Negotiation
+        level: 3
+        description: |
+          Negotiation of allowed revenue, outputs, and incentive parameters with regulator.
+        children: []
+  - id: BC-3920.30
+    name: Tariff Structure Design
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Design of regulated tariff structures — energy charges, network
+      charges, and standing charges — for residential, commercial, and
+      industrial customers.
+    children:
+      - id: BC-3920.30.10
+        name: Network Use-of-System Tariff Design
+        level: 3
+        description: |
+          Design of distribution and transmission use-of-system tariffs.
+        children: []
+      - id: BC-3920.30.20
+        name: Retail Tariff Schedule Design
+        level: 3
+        description: |
+          Design of retail tariff schedules including time-of-use and seasonal structures.
+        children: []
+      - id: BC-3920.30.30
+        name: Connection Charging Methodology
+        level: 3
+        description: |
+          Connection charging methodology and contestable / non-contestable boundary management.
+        children: []
+  - id: BC-3920.40
+    name: Regulatory Reporting Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Periodic statutory reporting to utility regulators including
+      annual performance reports, regulatory accounts, and interim
+      submissions.
+    children:
+      - id: BC-3920.40.10
+        name: Annual Performance Reporting
+        level: 3
+        description: |
+          Compilation and submission of annual performance reports to regulators.
+        children: []
+      - id: BC-3920.40.20
+        name: Regulatory Accounts Preparation
+        level: 3
+        description: |
+          Preparation of regulatory accounts under regulator-defined accounting guidelines.
+        children: []
+      - id: BC-3920.40.30
+        name: Ad Hoc Regulatory Submissions
+        level: 3
+        description: |
+          Ad hoc data submissions to regulator portals and information requests.
+        children: []
+  - id: BC-3920.50
+    name: Service Performance Commitments Management
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Tracking and incentive administration of regulator-defined
+      output-delivery incentives and service-level commitments.
+    children:
+      - id: BC-3920.50.10
+        name: Output Delivery Incentive Tracking
+        level: 3
+        description: |
+          Tracking of ODIs, performance commitments, and incentive earnings.
+        children: []
+      - id: BC-3920.50.20
+        name: Guaranteed Standards Administration
+        level: 3
+        description: |
+          Administration of guaranteed-standards-of-service payments to customers.
+        children: []
+      - id: BC-3920.50.30
+        name: Performance Penalty Calculation
+        level: 3
+        description: |
+          Calculation of regulatory performance penalties and rewards.
+        children: []
+  - id: BC-3920.60
+    name: Regulatory Cost Allocation
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Allocation of costs between regulated and non-regulated business
+      units and across price-control categories under cost-allocation
+      methodology.
+    children:
+      - id: BC-3920.60.10
+        name: Cost Allocation Methodology Maintenance
+        level: 3
+        description: |
+          Maintenance of regulator-approved cost allocation methodologies.
+        children: []
+      - id: BC-3920.60.20
+        name: Regulated vs Non-Regulated Cost Splits
+        level: 3
+        description: |
+          Periodic application of cost splits between regulated and unregulated activities.
+        children: []
+      - id: BC-3920.60.30
+        name: Capex / Opex Classification
+        level: 3
+        description: |
+          Classification of expenditure between capex and opex per regulator definitions.
+        children: []
+  - id: BC-3920.70
+    name: Universal Service & Affordability Management
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Programme delivery for universal-service obligations and
+      regulator-mandated affordability and energy/water-poverty
+      schemes.
+    children:
+      - id: BC-3920.70.10
+        name: Universal Service Obligation Delivery
+        level: 3
+        description: |
+          Delivery of universal-service-obligation requirements to retail customers.
+        children: []
+      - id: BC-3920.70.20
+        name: Energy & Water Poverty Programme Operations
+        level: 3
+        description: |
+          Operation of energy- and water-poverty alleviation programmes.
+        children: []
+      - id: BC-3920.70.30
+        name: Affordability Scheme Reporting
+        level: 3
+        description: |
+          Reporting of affordability scheme delivery to regulator and government.
+        children: []

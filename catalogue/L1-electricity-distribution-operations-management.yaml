@@ -1,0 +1,236 @@
+# Electricity Distribution Operations Management
+id: BC-3820
+name: Electricity Distribution Operations Management
+level: 1
+industry: Power & Water Utilities
+description: |
+  Operation of medium- and low-voltage distribution networks —
+  control-room dispatch, fault response and restoration, switching,
+  primary- and secondary-substation operations, and field crew
+  coordination delivering power to end customers.
+references:
+  - https://webstore.iec.ch/publication/6193
+  - https://standards.ieee.org/ieee/1366/4998/
+  - https://www.cigre.org/
+children:
+  - id: BC-3820.10
+    name: Distribution Control Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      24/7 control-centre operation of the distribution network using
+      DMS / OMS / ADMS, situational awareness, and load-flow analysis.
+    children:
+      - id: BC-3820.10.10
+        name: ADMS Operations
+        level: 3
+        description: |
+          Operation of advanced distribution management systems for monitoring and control.
+        children: []
+      - id: BC-3820.10.20
+        name: Distribution SCADA Operations
+        level: 3
+        description: |
+          Real-time SCADA acquisition and control of distribution feeders and switches.
+        children: []
+      - id: BC-3820.10.30
+        name: Network Topology Management
+        level: 3
+        description: |
+          Maintenance of as-operated network topology in the control system.
+        children: []
+  - id: BC-3820.20
+    name: Switching & Restoration Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Network reconfiguration and supply restoration after planned and
+      unplanned outages including FLISR-driven self-healing.
+    children:
+      - id: BC-3820.20.10
+        name: Switching Programme Execution
+        level: 3
+        description: |
+          Authorised execution of distribution switching programmes.
+        children: []
+      - id: BC-3820.20.20
+        name: Fault Location, Isolation & Service Restoration
+        level: 3
+        description: |
+          FLISR-based detection, isolation, and supply restoration on faulted feeders.
+        children: []
+      - id: BC-3820.20.30
+        name: Backfeed & Islanding Coordination
+        level: 3
+        description: |
+          Coordination of feeder backfeed and intentional islanding for restoration.
+        children: []
+  - id: BC-3820.30
+    name: Fault Response Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      End-to-end response to faults on the distribution network from
+      detection through field repair and customer communication.
+    in_scope:
+      - Fault detection and patrol
+      - Crew assignment to fault jobs
+      - Outage notification to customers
+    out_of_scope:
+      - DER-related outage handling (BC-3840)
+      - Wholesale generation outages (BC-3800.10)
+    children:
+      - id: BC-3820.30.10
+        name: Fault Triage
+        level: 3
+        description: |
+          Triage of fault reports from field, customer, and telemetry sources.
+        children: []
+      - id: BC-3820.30.20
+        name: Field Fault Patrol
+        level: 3
+        description: |
+          Field patrols to locate and confirm faults on overhead and underground assets.
+        children: []
+      - id: BC-3820.30.30
+        name: Outage Restoration Tracking
+        level: 3
+        description: |
+          Tracking of outage restoration progress and customer-minutes-lost statistics.
+        children: []
+      - id: BC-3820.30.40
+        name: Major Event Response
+        level: 3
+        description: |
+          Storm and major-event distribution response including mutual-assistance crews.
+        children: []
+  - id: BC-3820.40
+    name: Field Crew Dispatch Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Dispatch, routing, and field-execution support for distribution
+      field crews handling faults, planned work, and customer jobs.
+    children:
+      - id: BC-3820.40.10
+        name: Crew Scheduling
+        level: 3
+        description: |
+          Daily scheduling of crew rosters and on-call rotations.
+        children: []
+      - id: BC-3820.40.20
+        name: Job Dispatch & Routing
+        level: 3
+        description: |
+          Dispatch and routing of jobs to field crews from work-management systems.
+        children: []
+      - id: BC-3820.40.30
+        name: Field Job Closeout
+        level: 3
+        description: |
+          Capture of as-built changes, materials used, and time at job closeout.
+        children: []
+  - id: BC-3820.50
+    name: Distribution Asset Inspection Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Routine and condition-driven inspection of overhead lines,
+      poles, underground cables, and distribution substations.
+    children:
+      - id: BC-3820.50.10
+        name: Pole & Overhead Line Inspection
+        level: 3
+        description: |
+          Cyclical pole and overhead-line inspection including thermographic surveys.
+        children: []
+      - id: BC-3820.50.20
+        name: Underground Network Inspection
+        level: 3
+        description: |
+          Inspection and condition surveys of underground feeders, link-boxes, and joints.
+        children: []
+      - id: BC-3820.50.30
+        name: Distribution Substation Inspection
+        level: 3
+        description: |
+          Routine inspection of primary, secondary, and customer substations.
+        children: []
+  - id: BC-3820.60
+    name: Vegetation & Right-of-Way Management
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Vegetation clearance and right-of-way upkeep on distribution
+      circuits to manage outage risk and statutory clearance.
+    children:
+      - id: BC-3820.60.10
+        name: Vegetation Cycle Planning
+        level: 3
+        description: |
+          Cyclical and risk-based scheduling of vegetation work on distribution circuits.
+        children: []
+      - id: BC-3820.60.20
+        name: Vegetation Field Operations
+        level: 3
+        description: |
+          Field execution of trimming, removal, and herbicide application.
+        children: []
+      - id: BC-3820.60.30
+        name: Wildfire Risk Mitigation Operations
+        level: 3
+        description: |
+          PSPS, fast-trip, and circuit-hardening operations in wildfire-risk areas.
+        children: []
+  - id: BC-3820.70
+    name: New Connection Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Delivery of new and modified electrical connections for
+      domestic, commercial, and industrial customers and developers.
+    children:
+      - id: BC-3820.70.10
+        name: Connection Application Assessment
+        level: 3
+        description: |
+          Technical assessment of new-connection applications and capacity availability.
+        children: []
+      - id: BC-3820.70.20
+        name: Connection Design
+        level: 3
+        description: |
+          Detailed connection design, point-of-connection, and reinforcement requirements.
+        children: []
+      - id: BC-3820.70.30
+        name: Connection Commissioning
+        level: 3
+        description: |
+          Commissioning of new connections and energisation acceptance.
+        children: []
+  - id: BC-3820.80
+    name: Power Quality Management
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Surveillance and remediation of distribution voltage levels,
+      flicker, harmonics, and customer power-quality complaints.
+    children:
+      - id: BC-3820.80.10
+        name: Voltage Surveillance
+        level: 3
+        description: |
+          Surveillance of feeder voltage profiles against statutory limits.
+        children: []
+      - id: BC-3820.80.20
+        name: Harmonics & Flicker Monitoring
+        level: 3
+        description: |
+          Network monitoring of harmonic distortion and voltage flicker.
+        children: []
+      - id: BC-3820.80.30
+        name: Customer Power Quality Investigation
+        level: 3
+        description: |
+          Investigation and remediation of customer-reported power quality issues.
+        children: []

@@ -1,0 +1,208 @@
+# Utility Network Asset Management
+id: BC-3900
+name: Utility Network Asset Management
+level: 1
+industry: Power & Water Utilities
+description: |
+  Whole-life management of long-life utility network infrastructure —
+  electricity, gas, water, and wastewater assets — covering asset
+  register integrity, condition and health surveillance, risk and
+  criticality scoring, regulated-asset-base-aware investment planning,
+  renewal programmes, performance reporting, and geospatial network
+  records.
+references:
+  - https://www.iso.org/standard/55088.html
+  - https://www.iso.org/standard/72436.html
+  - https://www.cigre.org/
+  - https://www.iam-uk.org/
+children:
+  - id: BC-3900.10
+    name: Asset Register Management
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Maintenance of the utility asset register as the single source
+      of truth for network assets and their hierarchical relationships.
+    children:
+      - id: BC-3900.10.10
+        name: Asset Master Data Stewardship
+        level: 3
+        description: |
+          Stewardship of asset master data attributes and classification.
+        children: []
+      - id: BC-3900.10.20
+        name: Asset Hierarchy Maintenance
+        level: 3
+        description: |
+          Maintenance of functional and physical asset hierarchies for network assets.
+        children: []
+      - id: BC-3900.10.30
+        name: Asset Register Reconciliation
+        level: 3
+        description: |
+          Reconciliation between asset register, GIS, and operational systems.
+        children: []
+  - id: BC-3900.20
+    name: Asset Condition & Health Monitoring
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Inspection, testing, and online surveillance of asset condition
+      feeding asset-health scoring and prioritisation.
+    children:
+      - id: BC-3900.20.10
+        name: Inspection Programme Operations
+        level: 3
+        description: |
+          Cyclical inspection programmes for primary plant and network assets.
+        children: []
+      - id: BC-3900.20.20
+        name: Online Condition Monitoring
+        level: 3
+        description: |
+          Online condition monitoring of transformers, cables, and rotating plant.
+        children: []
+      - id: BC-3900.20.30
+        name: Asset Health Scoring
+        level: 3
+        description: |
+          Calculation of asset health indices from inspection, testing, and operating data.
+        children: []
+  - id: BC-3900.30
+    name: Asset Risk & Criticality Assessment
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Quantified asset-risk assessment combining likelihood,
+      consequence, and criticality to prioritise interventions.
+    children:
+      - id: BC-3900.30.10
+        name: Asset Criticality Scoring
+        level: 3
+        description: |
+          Network and societal-impact criticality scoring of utility assets.
+        children: []
+      - id: BC-3900.30.20
+        name: Failure Likelihood Modelling
+        level: 3
+        description: |
+          Statistical and condition-based failure-likelihood modelling.
+        children: []
+      - id: BC-3900.30.30
+        name: Monetised Risk Calculation
+        level: 3
+        description: |
+          Monetised risk calculation aligned with regulatory CBA frameworks.
+        children: []
+  - id: BC-3900.40
+    name: Asset Investment Planning
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Long-term and price-control-aligned investment planning across
+      network categories for regulated and non-regulated programmes.
+    in_scope:
+      - Multi-year capital and totex plan development
+      - Cost-benefit appraisal of network interventions
+      - Investment portfolio prioritisation
+    out_of_scope:
+      - Cross-industry project portfolio governance (BC-900)
+      - Tariff-side revenue planning (BC-3920.30)
+    children:
+      - id: BC-3900.40.10
+        name: Capital Investment Planning
+        level: 3
+        description: |
+          Multi-year network capital programme planning by asset class.
+        children: []
+      - id: BC-3900.40.20
+        name: Cost-Benefit Appraisal
+        level: 3
+        description: |
+          Cost-benefit appraisal of investment options against regulatory test rules.
+        children: []
+      - id: BC-3900.40.30
+        name: Investment Portfolio Prioritisation
+        level: 3
+        description: |
+          Cross-category portfolio prioritisation under capital and resource constraints.
+        children: []
+  - id: BC-3900.50
+    name: Asset Renewal & Replacement Planning
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Programme planning for asset renewals, replacements, and end-of-life
+      decommissioning across the network estate.
+    children:
+      - id: BC-3900.50.10
+        name: End-of-Life Forecasting
+        level: 3
+        description: |
+          Forecasting of asset end-of-life by class and cohort.
+        children: []
+      - id: BC-3900.50.20
+        name: Renewal Programme Design
+        level: 3
+        description: |
+          Design of multi-year renewal programmes by asset category and geography.
+        children: []
+      - id: BC-3900.50.30
+        name: Network Decommissioning Planning
+        level: 3
+        description: |
+          Planning of decommissioning, abandonment, and reinstatement work.
+        children: []
+  - id: BC-3900.60
+    name: Asset Performance Reporting
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Reporting of asset performance and totex use against regulatory
+      and internal performance commitments.
+    children:
+      - id: BC-3900.60.10
+        name: Network Performance KPI Reporting
+        level: 3
+        description: |
+          Reporting of SAIDI, SAIFI, leakage, and equivalent network KPIs.
+        children: []
+      - id: BC-3900.60.20
+        name: Totex Performance Reporting
+        level: 3
+        description: |
+          Reporting of totex spend versus allowance under price-control regimes.
+        children: []
+      - id: BC-3900.60.30
+        name: Asset Failure Trend Analysis
+        level: 3
+        description: |
+          Trend analysis of asset failures and intervention effectiveness.
+        children: []
+  - id: BC-3900.70
+    name: GIS & Network Records Management
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Geospatial records of network assets — circuits, mains, sewers,
+      and connection points — and their integration with operational
+      systems.
+    children:
+      - id: BC-3900.70.10
+        name: GIS Network Records Maintenance
+        level: 3
+        description: |
+          Maintenance of GIS records of network connectivity and asset locations.
+        children: []
+      - id: BC-3900.70.20
+        name: As-Built Records Capture
+        level: 3
+        description: |
+          Capture of as-built changes from construction and renewal projects into GIS.
+        children: []
+      - id: BC-3900.70.30
+        name: Underground Asset Search Operations
+        level: 3
+        description: |
+          Underground utility-records search responses to third-party excavators.
+        children: []
