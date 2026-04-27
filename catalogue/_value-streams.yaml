@@ -174,6 +174,11 @@ value_streams:
         capability_id: BC-2840
         industry_variant: Healthcare Providers
         notes: Patient safety and adverse-event intake
+      - stage_order: 1
+        stage_name: Issue Capture (Process Safety)
+        capability_id: BC-3050
+        industry_variant: Oil & Gas
+        notes: Tier 1/2 process safety event capture
       - stage_order: 3
         stage_name: Investigation (Audit)
         capability_id: BC-140
@@ -255,6 +260,11 @@ value_streams:
         capability_id: BC-2840
         industry_variant: Healthcare Providers
         notes: Root-cause analysis and just-culture review
+      - stage_order: 3
+        stage_name: Investigation (Process Safety)
+        capability_id: BC-3050
+        industry_variant: Oil & Gas
+        notes: Root-cause investigation of major-hazard events
       - stage_order: 4
         stage_name: Resolution (Audit)
         capability_id: BC-140
@@ -323,6 +333,11 @@ value_streams:
         capability_id: BC-2840
         industry_variant: Healthcare Providers
         notes: Corrective action and clinical risk mitigation
+      - stage_order: 4
+        stage_name: Resolution (Process Safety)
+        capability_id: BC-3050
+        industry_variant: Oil & Gas
+        notes: Corrective actions and barrier rebuild
       - stage_order: 6
         stage_name: Lessons Learned (Aviation Safety)
         capability_id: BC-1280
@@ -342,6 +357,11 @@ value_streams:
         capability_id: BC-2840
         industry_variant: Healthcare Providers
         notes: High-reliability organisational learning
+      - stage_order: 6
+        stage_name: Lessons Learned (Process Safety)
+        capability_id: BC-3050
+        industry_variant: Oil & Gas
+        notes: Industry-wide lessons-learned sharing
   - name: Order-to-Cash
     industries: [Cross-Industry]
     stages:
@@ -376,6 +396,11 @@ value_streams:
         capability_id: BC-2450
         industry_variant: Transportation & Logistics
         notes: Forwarder quote to shipper
+      - stage_order: 2
+        stage_name: Quote & Configuration
+        capability_id: BC-3090
+        industry_variant: Oil & Gas
+        notes: Trade quote and term-contract pricing
       - stage_order: 3
         stage_name: Contract & Order Capture
         capability_id: BC-150
@@ -399,6 +424,11 @@ value_streams:
         capability_id: BC-2620
         industry_variant: Telecommunications
         notes: Service order capture, feasibility, and credit gating
+      - stage_order: 3
+        stage_name: Contract & Order Capture
+        capability_id: BC-3090
+        industry_variant: Oil & Gas
+        notes: Trade capture into ETRM
       - stage_order: 4
         stage_name: Order Promising & Allocation
         capability_id: BC-520
@@ -507,6 +537,11 @@ value_streams:
         capability_id: BC-2510
         industry_variant: Transportation & Logistics
         notes: Track-and-trace and ETA in transit
+      - stage_order: 6
+        stage_name: Outbound Logistics
+        capability_id: BC-3100
+        industry_variant: Oil & Gas
+        notes: Marine cargo lifting and terminal load-out
       - stage_order: 7
         stage_name: Customer Invoicing
         capability_id: BC-200
@@ -531,6 +566,16 @@ value_streams:
         capability_id: BC-2660
         industry_variant: Telecommunications
         notes: Telecom bill cycle, calculation, and presentment
+      - stage_order: 7
+        stage_name: Customer Invoicing
+        capability_id: BC-3040
+        industry_variant: Oil & Gas
+        notes: Fiscal-meter-based invoice volumes
+      - stage_order: 7
+        stage_name: Customer Invoicing
+        capability_id: BC-3060
+        industry_variant: Oil & Gas
+        notes: Pipeline shipper billing
       - stage_order: 8
         stage_name: Cash Collection & Application
         capability_id: BC-200
@@ -1025,6 +1070,16 @@ value_streams:
         capability_id: BC-2610
         industry_variant: Telecommunications
         notes: Site identification and rollout business case
+      - stage_order: 1
+        stage_name: Asset Need & Justification
+        capability_id: BC-3000
+        industry_variant: Oil & Gas
+        notes: License and seismic acquisition decision
+      - stage_order: 1
+        stage_name: Asset Need & Justification
+        capability_id: BC-3010
+        industry_variant: Oil & Gas
+        notes: Field development plan and FID
       - stage_order: 2
         stage_name: Acquisition
         capability_id: BC-1110
@@ -1049,6 +1104,11 @@ value_streams:
         capability_id: BC-2610
         industry_variant: Telecommunications
         notes: Site acquisition, build approval, and rollout scheduling
+      - stage_order: 2
+        stage_name: Acquisition
+        capability_id: BC-3020
+        industry_variant: Oil & Gas
+        notes: Capex execution to drill and complete wells
       - stage_order: 3
         stage_name: Commissioning & Capitalisation
         capability_id: BC-1160
@@ -1068,6 +1128,11 @@ value_streams:
         capability_id: BC-2050
         industry_variant: HVAC & Building Automation Systems
         notes: HVAC/BAS Cx, retro-Cx, MBCx
+      - stage_order: 3
+        stage_name: Commissioning & Capitalisation
+        capability_id: BC-3030
+        industry_variant: Oil & Gas
+        notes: Field/facility startup and first oil/gas
       - stage_order: 4
         stage_name: Operate & Maintain
         capability_id: BC-1030
@@ -1101,6 +1166,26 @@ value_streams:
         capability_id: BC-2600
         industry_variant: Telecommunications
         notes: Network fault, change, performance, and optimisation
+      - stage_order: 4
+        stage_name: Operate & Maintain
+        capability_id: BC-3030
+        industry_variant: Oil & Gas
+        notes: Producing-asset operations
+      - stage_order: 4
+        stage_name: Operate & Maintain
+        capability_id: BC-3060
+        industry_variant: Oil & Gas
+        notes: Pipeline operations and integrity
+      - stage_order: 4
+        stage_name: Operate & Maintain
+        capability_id: BC-3070
+        industry_variant: Oil & Gas
+        notes: Gas plant and LNG operations
+      - stage_order: 4
+        stage_name: Operate & Maintain
+        capability_id: BC-3080
+        industry_variant: Oil & Gas
+        notes: Refinery operations
       - stage_order: 5
         stage_name: Risk & Reliability
         capability_id: BC-1030
@@ -1124,6 +1209,11 @@ value_streams:
         capability_id: BC-2430
         industry_variant: Transportation & Logistics
         notes: Mandatory inspection and airworthiness or seaworthiness
+      - stage_order: 5
+        stage_name: Risk & Reliability
+        capability_id: BC-3050
+        industry_variant: Oil & Gas
+        notes: SCE assurance and mechanical integrity
       - stage_order: 6
         stage_name: Asset Information Maintenance
         capability_id: BC-1040
@@ -1151,6 +1241,11 @@ value_streams:
         capability_id: BC-2610
         industry_variant: Telecommunications
         notes: Legacy network decommissioning and technology sunset
+      - stage_order: 7
+        stage_name: Decommissioning & Disposal
+        capability_id: BC-3120
+        industry_variant: Oil & Gas
+        notes: Well plug and abandonment, facility removal
   - name: Strategy-to-Execution
     industries: [Cross-Industry]
     stages:
@@ -1872,6 +1967,7 @@ value_streams:
       - HVAC & Building Automation Systems
       - Electrical Components & Equipment
       - Transportation & Logistics
+      - Oil & Gas
     stages:
       - stage_order: 1
         stage_name: Notification / Request
@@ -2043,6 +2139,11 @@ value_streams:
         capability_id: BC-2810
         industry_variant: Healthcare Providers
         notes: Mass-casualty and surge response activation
+      - stage_order: 4
+        stage_name: Crisis Response
+        capability_id: BC-3050
+        industry_variant: Oil & Gas
+        notes: Major-accident response (loss of containment, blowout, fire)
       - stage_order: 5
         stage_name: Disaster Recovery
         capability_id: BC-160
@@ -2104,6 +2205,11 @@ value_streams:
         capability_id: BC-2200
         industry_variant: Insurance
         notes: Investment portfolio climate data
+      - stage_order: 2
+        stage_name: Data Collection
+        capability_id: BC-3030
+        industry_variant: Oil & Gas
+        notes: Methane and flare emissions data capture
       - stage_order: 3
         stage_name: Data Quality & Assurance
         capability_id: BC-140
@@ -2135,6 +2241,11 @@ value_streams:
         capability_id: BC-2070
         industry_variant: HVAC & Building Automation Systems
         notes: Mandatory benchmarking & green certification reporting
+      - stage_order: 4
+        stage_name: Reporting & Disclosure
+        capability_id: BC-3120
+        industry_variant: Oil & Gas
+        notes: Decommissioning provisions and post-closure disclosures
       - stage_order: 5
         stage_name: Stakeholder Engagement
         capability_id: BC-240
