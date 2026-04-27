@@ -437,6 +437,21 @@ value_streams:
         capability_id: BC-3780
         industry_variant: Media & Entertainment
         notes: Content review and complaint investigation
+      - stage_order: 1
+        stage_name: Issue Capture (Drinking Water Quality)
+        capability_id: BC-3870
+        industry_variant: Utilities
+        notes: Drinking-water quality incident and exceedance intake
+      - stage_order: 1
+        stage_name: Issue Capture (Wastewater Pollution)
+        capability_id: BC-3890
+        industry_variant: Utilities
+        notes: Pollution incident and discharge non-compliance intake
+      - stage_order: 1
+        stage_name: Issue Capture (Utility Billing)
+        capability_id: BC-3910
+        industry_variant: Utilities
+        notes: Bill exception, dispute, and complaint intake
   - name: Order-to-Cash
     industries: [Cross-Industry]
     stages:
@@ -843,6 +858,36 @@ value_streams:
         capability_id: BC-3750
         industry_variant: Media & Entertainment
         notes: Viewer dunning and suspension
+      - stage_order: 1
+        stage_name: Lead Capture & Qualification
+        capability_id: BC-3910
+        industry_variant: Utilities
+        notes: Supply-point registration and customer onboarding
+      - stage_order: 5
+        stage_name: Production / Service Delivery
+        capability_id: BC-3820
+        industry_variant: Utilities
+        notes: Electricity supply at customer point of use
+      - stage_order: 5
+        stage_name: Production / Service Delivery
+        capability_id: BC-3880
+        industry_variant: Utilities
+        notes: Treated water supply at customer point of use
+      - stage_order: 7
+        stage_name: Customer Invoicing
+        capability_id: BC-3910
+        industry_variant: Utilities
+        notes: Utility bill calculation, presentment, and prepayment top-up
+      - stage_order: 8
+        stage_name: Cash Collection & Application
+        capability_id: BC-3910
+        industry_variant: Utilities
+        notes: Utility collections, dunning, and disconnection-for-non-payment
+      - stage_order: 9
+        stage_name: Revenue Recognition
+        capability_id: BC-3910
+        industry_variant: Utilities
+        notes: Usage-based and standing-charge revenue recognition
       - stage_order: 8
         stage_name: Cash Collection & Application
         capability_id: BC-3760
@@ -1454,6 +1499,16 @@ value_streams:
         capability_id: BC-3280
         industry_variant: Public Sector
         notes: IPSAS financial statements; GFSM and COFOG statistical reporting
+      - stage_order: 1
+        stage_name: Transaction Capture
+        capability_id: BC-3910
+        industry_variant: Utilities
+        notes: Meter-to-cash usage transactions feeding the GL
+      - stage_order: 6
+        stage_name: Statutory & Regulatory Reporting
+        capability_id: BC-3920
+        industry_variant: Utilities
+        notes: Utility regulatory accounts and price-control performance reporting
   - name: Acquire-to-Retire
     industries: [Cross-Industry]
     stages:
@@ -1711,6 +1766,61 @@ value_streams:
         capability_id: BC-3710
         industry_variant: Media & Entertainment
         notes: Archive sunset, master deletion, and rights-driven take-down
+      - stage_order: 1
+        stage_name: Asset Need & Justification
+        capability_id: BC-3900
+        industry_variant: Utilities
+        notes: RAB-aligned network investment plan and CBA
+      - stage_order: 2
+        stage_name: Acquisition
+        capability_id: BC-3900
+        industry_variant: Utilities
+        notes: Network capital procurement and project execution
+      - stage_order: 4
+        stage_name: Operate & Maintain
+        capability_id: BC-3800
+        industry_variant: Utilities
+        notes: Generation fleet operations and surveillance
+      - stage_order: 4
+        stage_name: Operate & Maintain
+        capability_id: BC-3810
+        industry_variant: Utilities
+        notes: Transmission grid operation, switching, and substation surveillance
+      - stage_order: 4
+        stage_name: Operate & Maintain
+        capability_id: BC-3820
+        industry_variant: Utilities
+        notes: Distribution network operation, vegetation, and inspection
+      - stage_order: 4
+        stage_name: Operate & Maintain
+        capability_id: BC-3870
+        industry_variant: Utilities
+        notes: Water treatment plant operation and process control
+      - stage_order: 4
+        stage_name: Operate & Maintain
+        capability_id: BC-3880
+        industry_variant: Utilities
+        notes: Water distribution network operation and mains repair
+      - stage_order: 4
+        stage_name: Operate & Maintain
+        capability_id: BC-3890
+        industry_variant: Utilities
+        notes: Sewer network and wastewater treatment plant operation
+      - stage_order: 5
+        stage_name: Risk & Reliability
+        capability_id: BC-3900
+        industry_variant: Utilities
+        notes: Asset health scoring, criticality, and monetised risk
+      - stage_order: 6
+        stage_name: Asset Information Maintenance
+        capability_id: BC-3900
+        industry_variant: Utilities
+        notes: Network asset register, GIS, and as-built records
+      - stage_order: 7
+        stage_name: Decommissioning & Disposal
+        capability_id: BC-3900
+        industry_variant: Utilities
+        notes: Network decommissioning, abandonment, and reinstatement planning
   - name: Strategy-to-Execution
     industries: [Cross-Industry]
     stages:
@@ -1890,6 +2000,21 @@ value_streams:
         capability_id: BC-3590
         industry_variant: Agriculture
         notes: Compliance and food-safety risk assessment
+      - stage_order: 2
+        stage_name: Risk Identification
+        capability_id: BC-3850
+        industry_variant: Utilities
+        notes: Energy market, credit, and operational risk taxonomy for trading
+      - stage_order: 3
+        stage_name: Risk Assessment
+        capability_id: BC-3850
+        industry_variant: Utilities
+        notes: VaR, earnings-at-risk, and stress-test analysis
+      - stage_order: 5
+        stage_name: Monitoring
+        capability_id: BC-3850
+        industry_variant: Utilities
+        notes: Position, exposure, and limit-utilisation monitoring
   - name: Audit-to-Action
     industries: [Cross-Industry]
     stages:
@@ -2036,6 +2161,16 @@ value_streams:
         stage_name: Awareness & Lessons Learned
         capability_id: BC-830
         notes: Best-practice capture
+      - stage_order: 4
+        stage_name: Detection
+        capability_id: BC-3810
+        industry_variant: Utilities
+        notes: NERC CIP and OT-network threat detection on bulk-electric system
+      - stage_order: 5
+        stage_name: Incident Response
+        capability_id: BC-3810
+        industry_variant: Utilities
+        notes: Bulk-electric-system cyber incident response and CIP-008 reporting
   - name: Prospect-to-Customer
     industries: [Cross-Industry]
     stages:
@@ -2750,6 +2885,31 @@ value_streams:
         capability_id: BC-3310
         industry_variant: Public Sector
         notes: After-action review and lessons learned
+      - stage_order: 1
+        stage_name: Continuity Planning
+        capability_id: BC-3830
+        industry_variant: Utilities
+        notes: Black-start contracts and system restoration plans
+      - stage_order: 3
+        stage_name: Detection & Activation
+        capability_id: BC-3820
+        industry_variant: Utilities
+        notes: Major distribution event activation and storm protocol
+      - stage_order: 4
+        stage_name: Crisis Response
+        capability_id: BC-3820
+        industry_variant: Utilities
+        notes: Storm and major-event distribution response with mutual assistance
+      - stage_order: 4
+        stage_name: Crisis Response
+        capability_id: BC-3890
+        industry_variant: Utilities
+        notes: Sewage pollution incident containment and remediation
+      - stage_order: 6
+        stage_name: Restoration
+        capability_id: BC-3830
+        industry_variant: Utilities
+        notes: Black start and bulk-system restoration coordination
   - name: ESG-to-Disclosure
     industries: [Cross-Industry]
     stages:
@@ -2863,6 +3023,21 @@ value_streams:
         capability_id: BC-3780
         industry_variant: Media & Entertainment
         notes: DSA transparency and accessibility compliance reporting
+      - stage_order: 2
+        stage_name: Data Collection
+        capability_id: BC-3800
+        industry_variant: Utilities
+        notes: Generation emissions, CO2, and renewables share data
+      - stage_order: 2
+        stage_name: Data Collection
+        capability_id: BC-3890
+        industry_variant: Utilities
+        notes: Storm-overflow event-duration monitoring data
+      - stage_order: 4
+        stage_name: Reporting & Disclosure
+        capability_id: BC-3920
+        industry_variant: Utilities
+        notes: Utility regulator ESG, performance, and price-control disclosures
   - name: Concept-to-Manufacture
     industries:
       - Manufacturing & Industrial
