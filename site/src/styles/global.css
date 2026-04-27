@@ -360,7 +360,8 @@ body {
 }
 
 .kofi-button,
-.github-button {
+.github-button,
+.linkedin-button {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -378,7 +379,8 @@ body {
 }
 
 .kofi-button:hover,
-.github-button:hover {
+.github-button:hover,
+.linkedin-button:hover {
   color: #fff;
   transform: translateY(-1px);
 }
@@ -395,15 +397,23 @@ body {
   box-shadow: 0 4px 12px rgba(18, 110, 248, 0.35);
 }
 
+.linkedin-button { background: #0a66c2; }
+.linkedin-button:hover {
+  background: #084e96;
+  box-shadow: 0 4px 12px rgba(10, 102, 194, 0.35);
+}
+
 .kofi-button svg,
-.github-button svg {
+.github-button svg,
+.linkedin-button svg {
   display: block;
   flex-shrink: 0;
 }
 
 /* Compact pill buttons inside the top nav */
 .nav-links .kofi-button,
-.nav-links .github-button {
+.nav-links .github-button,
+.nav-links .linkedin-button {
   padding: 6px 12px;
   gap: 6px;
   font-size: 13px;
@@ -411,14 +421,16 @@ body {
 }
 
 .nav-links .kofi-button svg,
-.nav-links .github-button svg {
+.nav-links .github-button svg,
+.nav-links .linkedin-button svg {
   width: 14px;
   height: 14px;
 }
 
 /* Suppress nav underline indicator on pill buttons */
 .nav-links .kofi-button::after,
-.nav-links .github-button::after {
+.nav-links .github-button::after,
+.nav-links .linkedin-button::after {
   display: none;
 }
 
