@@ -1,0 +1,199 @@
+# Distributed Energy Resource Management
+id: BC-3840
+name: Distributed Energy Resource Management
+level: 1
+industry: Power & Water Utilities
+description: |
+  Onboarding, aggregation, and operational coordination of
+  distributed energy resources connected to the distribution grid —
+  rooftop solar, behind-the-meter storage, demand response, EV
+  charging, and microgrids — and their participation in wholesale and
+  flexibility markets.
+references:
+  - https://standards.ieee.org/ieee/1547/5915/
+  - https://www.ferc.gov/news-events/news/explainer-fercs-final-rule-distributed-energy-resources-order-no-2222
+  - https://www.iso.org/standard/79504.html
+children:
+  - id: BC-3840.10
+    name: DER Registration & Onboarding
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Registration of distributed energy resources, technical
+      qualification, and connection acceptance under IEEE 1547 / EU
+      Requirements for Generators rules.
+    children:
+      - id: BC-3840.10.10
+        name: DER Application Assessment
+        level: 3
+        description: |
+          Assessment of DER connection applications against hosting capacity.
+        children: []
+      - id: BC-3840.10.20
+        name: DER Technical Qualification
+        level: 3
+        description: |
+          Type-test and on-site verification of DER capability and protections.
+        children: []
+      - id: BC-3840.10.30
+        name: DER Registry Maintenance
+        level: 3
+        description: |
+          Maintenance of the registry of connected DER assets and capabilities.
+        children: []
+  - id: BC-3840.20
+    name: Virtual Power Plant Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Aggregation and dispatch of distributed resources as a single
+      operating entity into wholesale and balancing markets.
+    children:
+      - id: BC-3840.20.10
+        name: VPP Portfolio Management
+        level: 3
+        description: |
+          Composition and rebalancing of the VPP portfolio across asset classes.
+        children: []
+      - id: BC-3840.20.20
+        name: VPP Dispatch Operations
+        level: 3
+        description: |
+          Real-time dispatch instructions across aggregated DER assets.
+        children: []
+      - id: BC-3840.20.30
+        name: VPP Performance Settlement
+        level: 3
+        description: |
+          Settlement of VPP performance against market and bilateral commitments.
+        children: []
+  - id: BC-3840.30
+    name: Demand Response Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Recruitment, dispatch, and settlement of demand-side response
+      programmes for residential, commercial, and industrial customers.
+    children:
+      - id: BC-3840.30.10
+        name: DR Programme Enrolment
+        level: 3
+        description: |
+          Customer enrolment and consent management for demand-response programmes.
+        children: []
+      - id: BC-3840.30.20
+        name: DR Event Dispatch
+        level: 3
+        description: |
+          Dispatch of DR events and curtailment instructions to participating customers.
+        children: []
+      - id: BC-3840.30.30
+        name: DR Performance Verification
+        level: 3
+        description: |
+          Verification of DR delivery against customer baselines.
+        children: []
+  - id: BC-3840.40
+    name: EV Grid Integration Management
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Management of electric-vehicle charging interaction with the
+      grid including managed charging, V2G, and EV-specific tariffs.
+    children:
+      - id: BC-3840.40.10
+        name: Managed Charging Operations
+        level: 3
+        description: |
+          Operation of managed and smart-charging schemes for EV fleets and homes.
+        children: []
+      - id: BC-3840.40.20
+        name: Vehicle-to-Grid Coordination
+        level: 3
+        description: |
+          Coordination of bidirectional V2G discharge into the grid or behind-the-meter.
+        children: []
+      - id: BC-3840.40.30
+        name: EV Hosting Capacity Analysis
+        level: 3
+        description: |
+          Feeder-level hosting-capacity analysis for EV charging penetration.
+        children: []
+  - id: BC-3840.50
+    name: Behind-the-Meter Storage Coordination
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Coordination of behind-the-meter battery storage participation
+      in utility programmes and grid services.
+    children:
+      - id: BC-3840.50.10
+        name: BTM Battery Enrolment
+        level: 3
+        description: |
+          Enrolment and consent for behind-the-meter battery participation.
+        children: []
+      - id: BC-3840.50.20
+        name: BTM Storage Dispatch
+        level: 3
+        description: |
+          Dispatch instructions to behind-the-meter storage assets.
+        children: []
+      - id: BC-3840.50.30
+        name: BTM Storage Performance Tracking
+        level: 3
+        description: |
+          Tracking of BTM battery delivery against utility commitments.
+        children: []
+  - id: BC-3840.60
+    name: DER Forecasting
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Short-term forecasting of distributed generation and flexible
+      load contributing to system-operator and market schedules.
+    children:
+      - id: BC-3840.60.10
+        name: Behind-the-Meter Solar Forecasting
+        level: 3
+        description: |
+          Forecasting of behind-the-meter PV generation at feeder and zonal level.
+        children: []
+      - id: BC-3840.60.20
+        name: Flexible Load Forecasting
+        level: 3
+        description: |
+          Forecasting of EV charging and flexible-load profiles.
+        children: []
+      - id: BC-3840.60.30
+        name: DER Forecast Performance Monitoring
+        level: 3
+        description: |
+          Monitoring of forecast bias and skill against actuals.
+        children: []
+  - id: BC-3840.70
+    name: Microgrid Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Operation of utility and customer microgrids including grid-tied
+      and islanded modes and seamless transition control.
+    children:
+      - id: BC-3840.70.10
+        name: Microgrid Controller Operations
+        level: 3
+        description: |
+          Operation of microgrid controllers and dispatch of internal resources.
+        children: []
+      - id: BC-3840.70.20
+        name: Island-Mode Transition Operations
+        level: 3
+        description: |
+          Planned and emergency transitions between grid-tied and islanded operation.
+        children: []
+      - id: BC-3840.70.30
+        name: Microgrid Resilience Drills
+        level: 3
+        description: |
+          Resilience exercises and seamless-transition drills for critical-load microgrids.
+        children: []

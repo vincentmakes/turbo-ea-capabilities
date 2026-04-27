@@ -1,0 +1,214 @@
+# Energy Trading & Settlement Management
+id: BC-3850
+name: Energy Trading & Settlement Management
+level: 1
+industry: Power & Water Utilities
+description: |
+  Wholesale trading of power, gas, and environmental commodities —
+  market participation across day-ahead, intraday, and balancing
+  timeframes, energy risk management, scheduling and nominations,
+  capacity-market participation, and back-office settlement and
+  regulatory reporting under REMIT / EMIR / Dodd-Frank regimes.
+references:
+  - https://www.acer.europa.eu/remit
+  - https://www.ferc.gov/industries-data/electric/electric-power-markets
+  - https://www.entsoe.eu/network_codes/cacm/
+  - https://www.iso.org/standard/64976.html
+children:
+  - id: BC-3850.10
+    name: Wholesale Power Trading
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Front-office trading of physical and financial power across
+      day-ahead, intraday, and forward markets.
+    children:
+      - id: BC-3850.10.10
+        name: Day-Ahead Market Trading
+        level: 3
+        description: |
+          Submission and management of day-ahead market bids and offers.
+        children: []
+      - id: BC-3850.10.20
+        name: Intraday Market Trading
+        level: 3
+        description: |
+          Continuous and auction-based intraday trading against position changes.
+        children: []
+      - id: BC-3850.10.30
+        name: Forward & Bilateral Trading
+        level: 3
+        description: |
+          Forward physical and bilateral OTC trading for hedging and origination.
+        children: []
+      - id: BC-3850.10.40
+        name: Cross-Border Capacity Trading
+        level: 3
+        description: |
+          Trading of cross-border interconnector capacity products.
+        children: []
+  - id: BC-3850.20
+    name: Energy Risk Management
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Market, credit, and operational risk surveillance of the trading
+      portfolio with limit administration and stress testing.
+    in_scope:
+      - VaR and earnings-at-risk calculation
+      - Counterparty credit limit management
+      - Hedge effectiveness testing
+    out_of_scope:
+      - Enterprise risk management (BC-120)
+      - Credit risk on retail customers (BC-3910)
+    children:
+      - id: BC-3850.20.10
+        name: Market Risk Surveillance
+        level: 3
+        description: |
+          VaR, earnings-at-risk, and exposure surveillance of the trading book.
+        children: []
+      - id: BC-3850.20.20
+        name: Counterparty Credit Risk Management
+        level: 3
+        description: |
+          Counterparty credit limits, collateral, and exposure monitoring.
+        children: []
+      - id: BC-3850.20.30
+        name: Hedge Programme Management
+        level: 3
+        description: |
+          Design and execution of hedging programmes against fuel and power exposure.
+        children: []
+  - id: BC-3850.30
+    name: Position Management & Scheduling
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Aggregation of trading and physical positions and submission of
+      schedules and nominations to system operators and pipeline
+      operators.
+    children:
+      - id: BC-3850.30.10
+        name: Trade Position Aggregation
+        level: 3
+        description: |
+          Aggregation of positions across products, books, and counterparties.
+        children: []
+      - id: BC-3850.30.20
+        name: Power Schedule Submission
+        level: 3
+        description: |
+          Submission of physical power schedules to TSOs and balancing-responsible parties.
+        children: []
+      - id: BC-3850.30.30
+        name: Gas Nomination Submission
+        level: 3
+        description: |
+          Submission of gas nominations and rebalancing on transmission pipelines.
+        children: []
+  - id: BC-3850.40
+    name: Capacity Market Participation
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Participation in capacity-market and security-of-supply
+      mechanisms including auction strategy, qualification, and
+      delivery monitoring.
+    children:
+      - id: BC-3850.40.10
+        name: Capacity Auction Strategy
+        level: 3
+        description: |
+          Strategy and bid preparation for capacity-market auctions.
+        children: []
+      - id: BC-3850.40.20
+        name: Capacity Provider Qualification
+        level: 3
+        description: |
+          Asset qualification and de-rating-factor management for capacity products.
+        children: []
+      - id: BC-3850.40.30
+        name: Capacity Delivery Monitoring
+        level: 3
+        description: |
+          Monitoring of capacity delivery during stress events and penalty exposure.
+        children: []
+  - id: BC-3850.50
+    name: Environmental Commodity Trading
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Trading and surrender of carbon allowances, renewable
+      certificates, guarantees of origin, and white certificates.
+    children:
+      - id: BC-3850.50.10
+        name: Carbon Allowance Trading
+        level: 3
+        description: |
+          Trading of EUA, CCA, and other compliance carbon allowances.
+        children: []
+      - id: BC-3850.50.20
+        name: Renewable Certificate Trading
+        level: 3
+        description: |
+          Trading of RECs, ROCs, and Guarantees of Origin.
+        children: []
+      - id: BC-3850.50.30
+        name: White Certificate Operations
+        level: 3
+        description: |
+          Trading and surrender of energy-efficiency white certificates.
+        children: []
+  - id: BC-3850.60
+    name: Trade Settlement Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Back-office confirmation, settlement calculation, invoicing, and
+      cash management of wholesale energy trades.
+    children:
+      - id: BC-3850.60.10
+        name: Trade Confirmation
+        level: 3
+        description: |
+          Outbound and inbound trade confirmations and discrepancy resolution.
+        children: []
+      - id: BC-3850.60.20
+        name: Settlement Calculation
+        level: 3
+        description: |
+          Calculation of physical and financial settlement amounts per contract.
+        children: []
+      - id: BC-3850.60.30
+        name: Trade Invoicing & Cash Management
+        level: 3
+        description: |
+          Invoicing, payment, and reconciliation of wholesale trade cashflows.
+        children: []
+  - id: BC-3850.70
+    name: Trade Regulatory Reporting
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Regulatory reporting of wholesale energy transactions under
+      REMIT, EMIR, MiFID II, and Dodd-Frank regimes.
+    children:
+      - id: BC-3850.70.10
+        name: REMIT Transaction Reporting
+        level: 3
+        description: |
+          Tables 1 and 2 reporting of wholesale energy transactions to ACER.
+        children: []
+      - id: BC-3850.70.20
+        name: EMIR & Dodd-Frank Reporting
+        level: 3
+        description: |
+          Reporting of derivative trades to trade repositories under EMIR and Dodd-Frank.
+        children: []
+      - id: BC-3850.70.30
+        name: Inside Information Disclosure
+        level: 3
+        description: |
+          Disclosure of inside information per REMIT Article 4.
+        children: []

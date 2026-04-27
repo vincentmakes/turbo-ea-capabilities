@@ -1,0 +1,199 @@
+# Grid Control & Balancing Management
+id: BC-3830
+name: Grid Control & Balancing Management
+level: 1
+industry: Power & Water Utilities
+description: |
+  System-operator function for the bulk power system — real-time
+  balancing of generation and demand, frequency and voltage control,
+  reserves and ancillary services, operational planning, cross-border
+  coordination, and black-start preparedness.
+references:
+  - https://www.entsoe.eu/network_codes/sys-ops/
+  - https://www.nerc.com/pa/Stand/Pages/Default.aspx
+  - https://www.nerc.com/pa/RAPA/Pages/default.aspx
+  - https://www.cigre.org/
+children:
+  - id: BC-3830.10
+    name: Real-Time System Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Continuous real-time supervision and control of system
+      generation, demand, and interchange to maintain secure operation.
+    children:
+      - id: BC-3830.10.10
+        name: System Situational Awareness
+        level: 3
+        description: |
+          Continuous awareness of generation, load, and contingency margins from the control centre.
+        children: []
+      - id: BC-3830.10.20
+        name: Real-Time Contingency Analysis
+        level: 3
+        description: |
+          Real-time N-1 and N-1-1 contingency analysis and remedial action triggering.
+        children: []
+      - id: BC-3830.10.30
+        name: Operating Instruction Issuance
+        level: 3
+        description: |
+          Issuance of operational instructions to balancing-responsible parties and TSOs.
+        children: []
+  - id: BC-3830.20
+    name: Frequency & Voltage Control
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Active frequency and voltage regulation through automatic
+      generation control and reactive-power dispatch.
+    children:
+      - id: BC-3830.20.10
+        name: Automatic Generation Control
+        level: 3
+        description: |
+          AGC dispatch and area-control-error management for frequency regulation.
+        children: []
+      - id: BC-3830.20.20
+        name: Reactive Power Dispatch
+        level: 3
+        description: |
+          Dispatch of reactive resources to maintain voltage profile across the grid.
+        children: []
+      - id: BC-3830.20.30
+        name: Inertia & Frequency Response Management
+        level: 3
+        description: |
+          Management of inertia, fast frequency response, and droop services.
+        children: []
+  - id: BC-3830.30
+    name: Operational Planning
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Day-ahead and intraday system security analysis, outage
+      assessment, and operating-margin planning.
+    children:
+      - id: BC-3830.30.10
+        name: Day-Ahead Security Analysis
+        level: 3
+        industry: Power & Water Utilities
+        description: |
+          Security-constrained unit commitment and contingency analysis for the operating day.
+        children: []
+      - id: BC-3830.30.20
+        name: Intraday Re-Dispatch
+        level: 3
+        description: |
+          Intraday re-dispatch of generation and demand against forecast updates.
+        children: []
+      - id: BC-3830.30.30
+        name: Seasonal Operating Margin Assessment
+        level: 3
+        description: |
+          Seasonal capacity margin and adequacy assessment.
+        children: []
+  - id: BC-3830.40
+    name: Reserves & Ancillary Services
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Procurement and activation of operating reserves and ancillary
+      services including frequency, voltage, and inertia products.
+    children:
+      - id: BC-3830.40.10
+        name: Reserve Procurement
+        level: 3
+        description: |
+          Procurement of primary, secondary, and tertiary reserve products.
+        children: []
+      - id: BC-3830.40.20
+        name: Ancillary Service Activation
+        level: 3
+        description: |
+          Activation and dispatch of contracted ancillary service providers.
+        children: []
+      - id: BC-3830.40.30
+        name: Reserve Performance Monitoring
+        level: 3
+        description: |
+          Monitoring of reserve provider performance and availability.
+        children: []
+  - id: BC-3830.50
+    name: Imbalance Settlement Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      System-operator-side calculation and notification of imbalance
+      volumes and prices for balancing-responsible parties.
+    children:
+      - id: BC-3830.50.10
+        name: Metered Volume Aggregation
+        level: 3
+        description: |
+          Aggregation of metered volumes by balancing-responsible party.
+        children: []
+      - id: BC-3830.50.20
+        name: Imbalance Price Calculation
+        level: 3
+        description: |
+          Calculation of system imbalance prices per market rules.
+        children: []
+      - id: BC-3830.50.30
+        name: BRP Settlement Notification
+        level: 3
+        description: |
+          Notification of imbalance volumes and charges to balancing-responsible parties.
+        children: []
+  - id: BC-3830.60
+    name: Cross-Border Coordination
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Coordination of interconnector flows, redispatch, and security
+      with neighbouring TSOs and regional security coordinators.
+    children:
+      - id: BC-3830.60.10
+        name: Interconnector Scheduling
+        level: 3
+        description: |
+          Scheduling of physical and commercial flows on interconnectors.
+        children: []
+      - id: BC-3830.60.20
+        name: Coordinated Capacity Calculation
+        level: 3
+        description: |
+          Coordinated capacity calculation across bidding zones with neighbours.
+        children: []
+      - id: BC-3830.60.30
+        name: Cross-Border Redispatch & Countertrading
+        level: 3
+        description: |
+          Cross-border redispatch and countertrading to relieve congestion.
+        children: []
+  - id: BC-3830.70
+    name: Black Start & Restoration Planning
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Maintenance of black-start contracts, restoration plans, and
+      restoration drills for total or partial system collapse scenarios.
+    children:
+      - id: BC-3830.70.10
+        name: Black Start Contract Management
+        level: 3
+        description: |
+          Procurement and surveillance of black-start service contracts.
+        children: []
+      - id: BC-3830.70.20
+        name: System Restoration Plan Maintenance
+        level: 3
+        description: |
+          Maintenance of restoration sequences and islanding plans.
+        children: []
+      - id: BC-3830.70.30
+        name: Restoration Drills & Exercises
+        level: 3
+        description: |
+          Operator and inter-utility restoration drills and after-action reviews.
+        children: []

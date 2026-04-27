@@ -1,0 +1,217 @@
+# Wastewater Operations Management
+id: BC-3890
+name: Wastewater Operations Management
+level: 1
+industry: Power & Water Utilities
+description: |
+  Collection, treatment, and disposal of municipal and trade
+  wastewater — sewer-network operation, wastewater-treatment-plant
+  process operation, blockage and flooding response, sludge and
+  biosolids management, storm-overflow operations, and final-effluent
+  quality compliance.
+references:
+  - https://www.iso.org/standard/37246.html
+  - https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A01991L0271-20140101
+  - https://www.epa.gov/npdes
+  - https://www.iwa-network.org/
+children:
+  - id: BC-3890.10
+    name: Sewer Network Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Operation of foul, surface, and combined sewer networks
+      including pumping stations and rising mains.
+    children:
+      - id: BC-3890.10.10
+        name: Sewer Pumping Station Operations
+        level: 3
+        description: |
+          Operation and surveillance of sewer pumping stations and rising mains.
+        children: []
+      - id: BC-3890.10.20
+        name: Sewer Network Surveillance
+        level: 3
+        description: |
+          Telemetry-based surveillance of sewer levels and pumping-station alarms.
+        children: []
+      - id: BC-3890.10.30
+        name: Sewer Network Cleansing
+        level: 3
+        description: |
+          Planned and reactive cleansing, jetting, and de-silting of sewers.
+        children: []
+  - id: BC-3890.20
+    name: Wastewater Treatment Plant Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Day-to-day operation of wastewater treatment works including
+      preliminary, primary, secondary, and tertiary processes.
+    children:
+      - id: BC-3890.20.10
+        name: Preliminary & Primary Treatment Operations
+        level: 3
+        description: |
+          Operation of screening, grit removal, and primary settlement steps.
+        children: []
+      - id: BC-3890.20.20
+        name: Secondary Biological Treatment Operations
+        level: 3
+        description: |
+          Operation of activated-sludge, trickling-filter, and MBR secondary processes.
+        children: []
+      - id: BC-3890.20.30
+        name: Tertiary Treatment Operations
+        level: 3
+        description: |
+          Operation of nutrient-removal, filtration, and disinfection tertiary steps.
+        children: []
+      - id: BC-3890.20.40
+        name: Process Control & Optimisation
+        level: 3
+        description: |
+          Process control and energy optimisation of biological and aeration steps.
+        children: []
+  - id: BC-3890.30
+    name: Sewer Blockage & Flooding Response
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Reactive response to sewer blockages, internal and external
+      sewer flooding, and pollution incidents.
+    children:
+      - id: BC-3890.30.10
+        name: Blockage Response Operations
+        level: 3
+        description: |
+          Field response to sewer blockages with jetting and clearance.
+        children: []
+      - id: BC-3890.30.20
+        name: Internal Sewer Flooding Response
+        level: 3
+        description: |
+          Customer-facing response to internal sewer flooding incidents.
+        children: []
+      - id: BC-3890.30.30
+        name: External Sewer Flooding Response
+        level: 3
+        description: |
+          Response to external sewer flooding and highway impact events.
+        children: []
+      - id: BC-3890.30.40
+        name: Pollution Incident Containment
+        level: 3
+        description: |
+          Containment and remediation of sewage pollution incidents to watercourses.
+        children: []
+  - id: BC-3890.40
+    name: Trade Effluent Management
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Authorisation, monitoring, and charging of industrial trade-
+      effluent discharges to public sewer.
+    children:
+      - id: BC-3890.40.10
+        name: Trade Effluent Consent Administration
+        level: 3
+        description: |
+          Issue and variation of trade-effluent consents to industrial dischargers.
+        children: []
+      - id: BC-3890.40.20
+        name: Trade Effluent Sampling Operations
+        level: 3
+        description: |
+          Sampling and analysis of trade-effluent discharges against consent conditions.
+        children: []
+      - id: BC-3890.40.30
+        name: Trade Effluent Charging
+        level: 3
+        description: |
+          Calculation of trade-effluent charges using Mogden or equivalent formulae.
+        children: []
+  - id: BC-3890.50
+    name: Sludge & Biosolids Management
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Treatment, beneficial use, and disposal of wastewater sludge
+      including anaerobic digestion and biosolids recycling to land.
+    children:
+      - id: BC-3890.50.10
+        name: Sludge Thickening & Dewatering Operations
+        level: 3
+        description: |
+          Operation of sludge thickening, dewatering, and centrifuge systems.
+        children: []
+      - id: BC-3890.50.20
+        name: Anaerobic Digestion Operations
+        level: 3
+        description: |
+          Operation of mesophilic and thermophilic anaerobic digesters and biogas systems.
+        children: []
+      - id: BC-3890.50.30
+        name: Biosolids Recycling to Land
+        level: 3
+        description: |
+          Application of biosolids to agricultural land under safe-sludge regimes.
+        children: []
+      - id: BC-3890.50.40
+        name: Sludge Incineration & Disposal Operations
+        level: 3
+        description: |
+          Operation of sludge incineration and alternative-disposal routes.
+        children: []
+  - id: BC-3890.60
+    name: Storm Overflow Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Operation, monitoring, and reporting of combined-sewer overflows
+      and emergency overflows including event-duration monitoring.
+    children:
+      - id: BC-3890.60.10
+        name: Event Duration Monitoring
+        level: 3
+        description: |
+          Operation of EDM telemetry on storm and emergency overflows.
+        children: []
+      - id: BC-3890.60.20
+        name: Storm Overflow Spill Reporting
+        level: 3
+        description: |
+          Reporting of overflow spill volumes and durations to regulators and the public.
+        children: []
+      - id: BC-3890.60.30
+        name: Storm Tank Operations
+        level: 3
+        description: |
+          Operation of storm tanks and balancing facilities at WWTW inlets.
+        children: []
+  - id: BC-3890.70
+    name: Final Effluent Quality Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Sampling, analysis, and regulatory reporting of final-effluent
+      quality against discharge-permit consents.
+    children:
+      - id: BC-3890.70.10
+        name: Discharge Permit Compliance Sampling
+        level: 3
+        description: |
+          Operator self-monitoring sampling against numeric discharge consents.
+        children: []
+      - id: BC-3890.70.20
+        name: Effluent Quality Surveillance
+        level: 3
+        description: |
+          Online and laboratory surveillance of final effluent BOD, ammonia, and nutrient parameters.
+        children: []
+      - id: BC-3890.70.30
+        name: Discharge Permit Reporting
+        level: 3
+        description: |
+          Statutory reporting of discharge compliance to environmental regulators.
+        children: []

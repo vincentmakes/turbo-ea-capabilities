@@ -1,0 +1,210 @@
+# Water Distribution Network Operations Management
+id: BC-3880
+name: Water Distribution Network Operations Management
+level: 1
+industry: Power & Water Utilities
+description: |
+  Operation of trunk and distribution mains delivering treated water
+  to customers — hydraulic and pressure management, leakage control,
+  in-network water quality, mains repair and renewal, and customer
+  connection delivery.
+references:
+  - https://www.iso.org/standard/37246.html
+  - https://www.iwa-network.org/publications/water-loss-performance-indicators-for-water-supply-services/
+  - https://www.awwa.org/Publications/Standards
+children:
+  - id: BC-3880.10
+    name: Distribution Network Control
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      24/7 control-room operation of the water distribution system
+      using telemetry, hydraulic models, and SCADA.
+    children:
+      - id: BC-3880.10.10
+        name: Distribution SCADA Operations
+        level: 3
+        description: |
+          Real-time supervisory control of pumping and pressure assets across the network.
+        children: []
+      - id: BC-3880.10.20
+        name: Hydraulic Model Operations
+        level: 3
+        description: |
+          Operation of online and offline hydraulic models for network decisions.
+        children: []
+      - id: BC-3880.10.30
+        name: Network Telemetry Surveillance
+        level: 3
+        description: |
+          Surveillance of telemetry across DMAs, valves, and pressure points.
+        children: []
+  - id: BC-3880.20
+    name: Trunk Main & Pumping Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Operation of trunk mains, pumping stations, and inter-zonal
+      transfers including booster pumping and surge management.
+    children:
+      - id: BC-3880.20.10
+        name: Pumping Station Operations
+        level: 3
+        description: |
+          Operation and energy optimisation of distribution pumping stations.
+        children: []
+      - id: BC-3880.20.20
+        name: Trunk Main Operations
+        level: 3
+        description: |
+          Operation, valving, and surge management on trunk transmission mains.
+        children: []
+      - id: BC-3880.20.30
+        name: Inter-Zonal Transfer Operations
+        level: 3
+        description: |
+          Operation of inter-zone transfers and bulk supply links between resource zones.
+        children: []
+  - id: BC-3880.30
+    name: Leakage Management
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Active and passive leakage control across district metered areas
+      using inflow analysis, acoustic detection, and field-find work.
+    in_scope:
+      - DMA inflow and minimum-night-flow analysis
+      - Acoustic leak detection sweeps
+      - Find-and-fix leak operations
+    out_of_scope:
+      - Mains renewal capital programmes (BC-3900.50)
+      - Customer-side supply pipe leaks (BC-3910.60)
+    children:
+      - id: BC-3880.30.10
+        name: District Metered Area Analysis
+        level: 3
+        description: |
+          Analysis of DMA inflow and minimum-night-flow data to localise leakage.
+        children: []
+      - id: BC-3880.30.20
+        name: Acoustic Leak Detection
+        level: 3
+        description: |
+          Acoustic sounding, correlation, and noise-logger sweeps for leak localisation.
+        children: []
+      - id: BC-3880.30.30
+        name: Find & Fix Leak Operations
+        level: 3
+        description: |
+          Field find-and-fix operations on detected leaks against repair-time targets.
+        children: []
+      - id: BC-3880.30.40
+        name: Leakage Performance Reporting
+        level: 3
+        description: |
+          Reporting of leakage performance against regulatory and IWA water-balance metrics.
+        children: []
+  - id: BC-3880.40
+    name: Pressure Management
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Optimisation of distribution pressure across pressure-managed
+      zones for leakage reduction and burst-rate control.
+    children:
+      - id: BC-3880.40.10
+        name: Pressure Zone Configuration
+        level: 3
+        description: |
+          Configuration of pressure-managed areas and PRV setpoints.
+        children: []
+      - id: BC-3880.40.20
+        name: Advanced Pressure Control
+        level: 3
+        description: |
+          Operation of remotely controlled and time-modulated pressure-reducing valves.
+        children: []
+      - id: BC-3880.40.30
+        name: Transient Pressure Management
+        level: 3
+        description: |
+          Surge analysis and transient mitigation across distribution networks.
+        children: []
+  - id: BC-3880.50
+    name: Network Water Quality Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      In-network water-quality surveillance — chlorine residual,
+      discoloured water, taste-and-odour — and remediation operations.
+    children:
+      - id: BC-3880.50.10
+        name: In-Network Chlorine Residual Surveillance
+        level: 3
+        description: |
+          Surveillance of chlorine residuals across the network and re-chlorination dosing.
+        children: []
+      - id: BC-3880.50.20
+        name: Discolouration & Sediment Control
+        level: 3
+        description: |
+          Flushing and ice-pigging operations to manage discoloured water complaints.
+        children: []
+      - id: BC-3880.50.30
+        name: Network Sampling Operations
+        level: 3
+        description: |
+          Statutory sampling at customers' taps and supply points.
+        children: []
+  - id: BC-3880.60
+    name: Mains Repair & Renewal Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Reactive repair of bursts and joint failures, and operational
+      delivery of mains-renewal programmes.
+    children:
+      - id: BC-3880.60.10
+        name: Burst Mains Response
+        level: 3
+        description: |
+          Response, isolation, and repair of mains bursts against customer-minutes-lost targets.
+        children: []
+      - id: BC-3880.60.20
+        name: Service Pipe Repair Operations
+        level: 3
+        description: |
+          Repair of communication and supply pipes between main and stop-tap.
+        children: []
+      - id: BC-3880.60.30
+        name: Mains Renewal Field Operations
+        level: 3
+        description: |
+          Field execution of mains-renewal and rehabilitation programmes including no-dig methods.
+        children: []
+  - id: BC-3880.70
+    name: New Water Connection Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Delivery of new water-supply connections for domestic, commercial,
+      and developer customers.
+    children:
+      - id: BC-3880.70.10
+        name: New Connection Application Assessment
+        level: 3
+        description: |
+          Technical assessment of new-water-connection applications and developer service provision.
+        children: []
+      - id: BC-3880.70.20
+        name: Connection Installation Operations
+        level: 3
+        description: |
+          Installation of communication pipes, ferrules, and customer meters.
+        children: []
+      - id: BC-3880.70.30
+        name: Connection Commissioning
+        level: 3
+        description: |
+          Commissioning, swabbing, and disinfection of new connections before use.
+        children: []

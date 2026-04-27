@@ -1,0 +1,199 @@
+# Water Resource Management
+id: BC-3860
+name: Water Resource Management
+level: 1
+industry: Power & Water Utilities
+description: |
+  Sustainable stewardship of raw water sources — catchment and source
+  protection, raw-water abstraction and storage, long-term resource
+  planning, drought and restriction management, abstraction-licence
+  compliance, and surface- and ground-water monitoring networks.
+references:
+  - https://www.iso.org/standard/72436.html
+  - https://www.iwa-network.org/
+  - https://www.who.int/water_sanitation_health/dwq/wsp/en/
+  - https://environment.ec.europa.eu/topics/water/water-framework-directive_en
+children:
+  - id: BC-3860.10
+    name: Catchment & Source Protection
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Protection of source-water catchments through stakeholder
+      engagement, land-use measures, and source-water risk assessment.
+    children:
+      - id: BC-3860.10.10
+        name: Catchment Risk Assessment
+        level: 3
+        description: |
+          Catchment risk assessment for drinking-water sources under WHO Water Safety Plan principles.
+        children: []
+      - id: BC-3860.10.20
+        name: Source Protection Zone Management
+        level: 3
+        description: |
+          Designation and management of groundwater and surface-water source protection zones.
+        children: []
+      - id: BC-3860.10.30
+        name: Catchment Stakeholder Engagement
+        level: 3
+        description: |
+          Engagement with land owners, regulators, and farmers on catchment measures.
+        children: []
+  - id: BC-3860.20
+    name: Raw Water Abstraction Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Day-to-day operation of intakes, river offtakes, and groundwater
+      boreholes feeding the treatment fleet.
+    children:
+      - id: BC-3860.20.10
+        name: Surface Water Intake Operations
+        level: 3
+        description: |
+          Operation of river and reservoir intakes including screening and pumping.
+        children: []
+      - id: BC-3860.20.20
+        name: Groundwater Borehole Operations
+        level: 3
+        description: |
+          Operation and yield management of groundwater boreholes and well-fields.
+        children: []
+      - id: BC-3860.20.30
+        name: Raw Water Pumping Operations
+        level: 3
+        description: |
+          Pumping of raw water to treatment works and aqueduct systems.
+        children: []
+  - id: BC-3860.30
+    name: Raw Water Storage Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Operation of impounding and balancing reservoirs, dams, and
+      pre-treatment storage including dam safety surveillance.
+    children:
+      - id: BC-3860.30.10
+        name: Reservoir Level Operations
+        level: 3
+        description: |
+          Operating-curve management of impounding and balancing reservoirs.
+        children: []
+      - id: BC-3860.30.20
+        name: Dam Safety Surveillance
+        level: 3
+        description: |
+          Surveillance and inspection of dams against statutory dam-safety regimes.
+        children: []
+      - id: BC-3860.30.30
+        name: Reservoir Water Quality Operations
+        level: 3
+        description: |
+          Surveillance and management of raw-water quality including algal blooms.
+        children: []
+  - id: BC-3860.40
+    name: Water Resource Planning
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Long-term water resource and demand planning including supply-
+      demand balance, climate-change adjustment, and option appraisal.
+    children:
+      - id: BC-3860.40.10
+        name: Supply-Demand Balance Forecasting
+        level: 3
+        description: |
+          Long-term forecasting of supply and demand by resource zone.
+        children: []
+      - id: BC-3860.40.20
+        name: Resource Option Appraisal
+        level: 3
+        description: |
+          Option appraisal of new sources, transfers, and demand-management measures.
+        children: []
+      - id: BC-3860.40.30
+        name: Climate Change Resource Adjustment
+        level: 3
+        description: |
+          Adjustment of resource yields and demand for climate-change scenarios.
+        children: []
+  - id: BC-3860.50
+    name: Drought & Restriction Management
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Activation of drought plans and supply restrictions through
+      drought triggers, customer-facing restrictions, and emergency
+      drought-permit applications.
+    children:
+      - id: BC-3860.50.10
+        name: Drought Trigger Monitoring
+        level: 3
+        description: |
+          Monitoring of reservoir, river, and groundwater drought triggers.
+        children: []
+      - id: BC-3860.50.20
+        name: Drought Restriction Operations
+        level: 3
+        description: |
+          Implementation and rescission of customer water-use restrictions.
+        children: []
+      - id: BC-3860.50.30
+        name: Drought Permit & Order Management
+        level: 3
+        description: |
+          Application and operation of drought permits and orders authorised by regulators.
+        children: []
+  - id: BC-3860.60
+    name: Abstraction Licence Compliance
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Administration of abstraction licences and compliance reporting
+      against quantity, timing, and environmental conditions.
+    children:
+      - id: BC-3860.60.10
+        name: Abstraction Licence Administration
+        level: 3
+        description: |
+          Maintenance of the abstraction licence portfolio and condition register.
+        children: []
+      - id: BC-3860.60.20
+        name: Abstraction Volume Reporting
+        level: 3
+        description: |
+          Reporting of abstracted volumes and adherence to licence conditions.
+        children: []
+      - id: BC-3860.60.30
+        name: Hands-Off Flow Compliance
+        level: 3
+        description: |
+          Monitoring of hands-off flow and ecological-flow conditions on abstractions.
+        children: []
+  - id: BC-3860.70
+    name: Hydrometric Monitoring
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Operation of surface- and ground-water monitoring networks
+      providing inputs to resource planning and operational decisions.
+    children:
+      - id: BC-3860.70.10
+        name: Surface Water Monitoring
+        level: 3
+        description: |
+          Operation of river-flow, level, and rainfall monitoring networks.
+        children: []
+      - id: BC-3860.70.20
+        name: Groundwater Level Monitoring
+        level: 3
+        description: |
+          Operation of groundwater observation borehole networks.
+        children: []
+      - id: BC-3860.70.30
+        name: Hydrometric Data Quality Management
+        level: 3
+        description: |
+          Quality control and rating-curve management for hydrometric data.
+        children: []

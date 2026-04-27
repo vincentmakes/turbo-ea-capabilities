@@ -1,0 +1,218 @@
+# Electricity Transmission Operations Management
+id: BC-3810
+name: Electricity Transmission Operations Management
+level: 1
+industry: Power & Water Utilities
+description: |
+  Operation of the high-voltage transmission grid — control-room
+  dispatch, switching, line and substation operations, outage
+  coordination, protection, and physical and cyber security of the
+  bulk-electric system.
+references:
+  - https://www.nerc.com/pa/Stand/Pages/CIPStandards.aspx
+  - https://www.nerc.com/pa/Stand/Pages/ReliabilityStandardsUnitedStates.aspx
+  - https://www.entsoe.eu/network_codes/
+  - https://webstore.iec.ch/publication/6028
+children:
+  - id: BC-3810.10
+    name: Transmission Control Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      24/7 control-room operation of the transmission network using
+      EMS / SCADA, situational awareness, and contingency analysis.
+    children:
+      - id: BC-3810.10.10
+        name: EMS Operations
+        level: 3
+        description: |
+          Operation of the energy management system, state estimator, and contingency analysis tools.
+        children: []
+      - id: BC-3810.10.20
+        name: Transmission SCADA Operations
+        level: 3
+        description: |
+          Real-time SCADA acquisition and supervisory control of transmission assets.
+        children: []
+      - id: BC-3810.10.30
+        name: Transmission Operator Logbook Management
+        level: 3
+        description: |
+          Maintenance of operator logbooks, shift handovers, and operating-event records.
+        children: []
+  - id: BC-3810.20
+    name: Transmission Switching & Isolation
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Planning and execution of switching, isolation, and live-line
+      access operations on the transmission system.
+    children:
+      - id: BC-3810.20.10
+        name: Switching Programme Preparation
+        level: 3
+        description: |
+          Preparation and verification of switching programmes for planned work.
+        children: []
+      - id: BC-3810.20.20
+        name: Permit-to-Work Issuance
+        level: 3
+        description: |
+          Issuance and control of permits-to-work and sanctions-for-test on transmission plant.
+        children: []
+      - id: BC-3810.20.30
+        name: Live-Line & Live-Working Operations
+        level: 3
+        description: |
+          Coordination of live-line and live-working access on energised circuits.
+        children: []
+  - id: BC-3810.30
+    name: Transmission Line Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Operation, inspection, and live work of overhead lines, towers,
+      and underground transmission cables.
+    children:
+      - id: BC-3810.30.10
+        name: Overhead Line Inspection
+        level: 3
+        description: |
+          Routine, climbing, and aerial inspections of overhead transmission lines.
+        children: []
+      - id: BC-3810.30.20
+        name: Underground Cable Operations
+        level: 3
+        description: |
+          Operation, partial-discharge surveillance, and joint-bay management of HV cables.
+        children: []
+      - id: BC-3810.30.30
+        name: Right-of-Way & Vegetation Clearance
+        level: 3
+        description: |
+          Vegetation clearance and right-of-way maintenance to NERC FAC-003 / equivalent standards.
+        children: []
+      - id: BC-3810.30.40
+        name: Transmission Tower Maintenance
+        level: 3
+        description: |
+          Painting, foundation, and structural integrity work on transmission towers.
+        children: []
+  - id: BC-3810.40
+    name: Substation Operations
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Operation and surveillance of HV substations, transformers,
+      switchgear, and reactive-compensation plant.
+    children:
+      - id: BC-3810.40.10
+        name: Power Transformer Operations
+        level: 3
+        description: |
+          Surveillance, dissolved-gas analysis, and tap-change operation of HV transformers.
+        children: []
+      - id: BC-3810.40.20
+        name: Switchgear Operations
+        level: 3
+        description: |
+          Operation and condition surveillance of HV circuit breakers and disconnectors.
+        children: []
+      - id: BC-3810.40.30
+        name: Reactive Compensation Operations
+        level: 3
+        description: |
+          Operation of capacitor banks, reactors, SVCs, and STATCOMs for reactive support.
+        children: []
+      - id: BC-3810.40.40
+        name: HVDC Converter Station Operations
+        level: 3
+        description: |
+          Operation of HVDC converter stations and DC interconnector control.
+        children: []
+  - id: BC-3810.50
+    name: Transmission Outage Coordination
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Planning, scheduling, and approval of planned and emergent
+      outages on transmission elements with system operator and
+      market-impact assessment.
+    children:
+      - id: BC-3810.50.10
+        name: Outage Plan Submission
+        level: 3
+        description: |
+          Submission and revision of transmission outage plans to the system operator.
+        children: []
+      - id: BC-3810.50.20
+        name: Outage Risk Assessment
+        level: 3
+        description: |
+          Assessment of system-security and market impact of proposed outages.
+        children: []
+      - id: BC-3810.50.30
+        name: Forced Outage Reporting
+        level: 3
+        description: |
+          Reporting of forced outages and unavailability to operator and regulator.
+        children: []
+  - id: BC-3810.60
+    name: Transmission Protection & Control
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Setting, surveillance, and post-event analysis of transmission
+      protection and special protection schemes.
+    children:
+      - id: BC-3810.60.10
+        name: Protection Setting Management
+        level: 3
+        description: |
+          Calculation, approval, and issue of protection-relay settings.
+        children: []
+      - id: BC-3810.60.20
+        name: Special Protection Scheme Operations
+        level: 3
+        description: |
+          Operation and surveillance of remedial action and special protection schemes.
+        children: []
+      - id: BC-3810.60.30
+        name: Disturbance Event Analysis
+        level: 3
+        description: |
+          Analysis of disturbance recordings and protection performance after grid events.
+        children: []
+  - id: BC-3810.70
+    name: Transmission System Security Management
+    level: 2
+    industry: Power & Water Utilities
+    description: |
+      Cyber and physical security of the bulk-electric system,
+      including NERC CIP control implementation, perimeter security,
+      and BES-impact-rated asset registration.
+    children:
+      - id: BC-3810.70.10
+        name: BES Cyber Asset Identification
+        level: 3
+        description: |
+          Identification and rating of BES Cyber Systems per NERC CIP-002.
+        children: []
+      - id: BC-3810.70.20
+        name: Electronic Security Perimeter Operations
+        level: 3
+        description: |
+          Operation of electronic security perimeters and interactive remote-access controls.
+        children: []
+      - id: BC-3810.70.30
+        name: Physical Security Perimeter Operations
+        level: 3
+        description: |
+          Physical-security controls for control centres and critical substations (NERC CIP-014).
+        children: []
+      - id: BC-3810.70.40
+        name: NERC CIP Compliance Evidence Management
+        level: 3
+        description: |
+          Evidence collection, attestation, and audit response for NERC CIP standards.
+        children: []
