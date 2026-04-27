@@ -367,6 +367,21 @@ value_streams:
         capability_id: BC-3220
         industry_variant: Public Sector
         notes: Citizen complaint, FOI request, and ombudsman intake
+      - stage_order: 1
+        stage_name: Issue Capture (Vehicle Aftersales)
+        capability_id: BC-3450
+        industry_variant: Automotive
+        notes: Warranty claim and field-quality intake
+      - stage_order: 1
+        stage_name: Issue Capture (ADS Incident)
+        capability_id: BC-3470
+        industry_variant: Automotive
+        notes: ADS disengagement and incident intake
+      - stage_order: 1
+        stage_name: Issue Capture (Mobility Trust & Safety)
+        capability_id: BC-3490
+        industry_variant: Automotive
+        notes: Rider and driver safety incident intake
       - stage_order: 4
         stage_name: Resolution (Citizen Service)
         capability_id: BC-3220
@@ -411,6 +426,11 @@ value_streams:
         capability_id: BC-3090
         industry_variant: Oil & Gas
         notes: Trade quote and term-contract pricing
+      - stage_order: 2
+        stage_name: Quote & Configuration
+        capability_id: BC-3440
+        industry_variant: Automotive
+        notes: Vehicle CPQ and configurator
       - stage_order: 3
         stage_name: Contract & Order Capture
         capability_id: BC-150
@@ -439,6 +459,11 @@ value_streams:
         capability_id: BC-3090
         industry_variant: Oil & Gas
         notes: Trade capture into ETRM
+      - stage_order: 3
+        stage_name: Contract & Order Capture
+        capability_id: BC-3440
+        industry_variant: Automotive
+        notes: Customer and dealer vehicle order capture
       - stage_order: 4
         stage_name: Order Promising & Allocation
         capability_id: BC-520
@@ -462,6 +487,11 @@ value_streams:
         capability_id: BC-2620
         industry_variant: Telecommunications
         notes: Network resource allocation against orders
+      - stage_order: 4
+        stage_name: Order Promising & Allocation
+        capability_id: BC-3440
+        industry_variant: Automotive
+        notes: Build-slot allocation and ATP
       - stage_order: 5
         stage_name: Production / Service Delivery
         capability_id: BC-1000
@@ -513,6 +543,21 @@ value_streams:
         capability_id: BC-2620
         industry_variant: Telecommunications
         notes: Service provisioning, activation, and acceptance testing
+      - stage_order: 5
+        stage_name: Production / Service Delivery
+        capability_id: BC-3440
+        industry_variant: Automotive
+        notes: Build-to-order coordination
+      - stage_order: 5
+        stage_name: Production / Service Delivery
+        capability_id: BC-3460
+        industry_variant: Automotive
+        notes: Connected service activation at delivery
+      - stage_order: 5
+        stage_name: Production / Service Delivery
+        capability_id: BC-3490
+        industry_variant: Automotive
+        notes: Trip dispatch and ride delivery
       - stage_order: 6
         stage_name: Outbound Logistics
         capability_id: BC-1570
@@ -552,6 +597,11 @@ value_streams:
         capability_id: BC-3100
         industry_variant: Oil & Gas
         notes: Marine cargo lifting and terminal load-out
+      - stage_order: 6
+        stage_name: Outbound Logistics
+        capability_id: BC-3440
+        industry_variant: Automotive
+        notes: Vehicle distribution to dealer or customer
       - stage_order: 7
         stage_name: Customer Invoicing
         capability_id: BC-200
@@ -586,6 +636,16 @@ value_streams:
         capability_id: BC-3060
         industry_variant: Oil & Gas
         notes: Pipeline shipper billing
+      - stage_order: 7
+        stage_name: Customer Invoicing
+        capability_id: BC-3480
+        industry_variant: Automotive
+        notes: Charge-session rating and invoicing
+      - stage_order: 7
+        stage_name: Customer Invoicing
+        capability_id: BC-3490
+        industry_variant: Automotive
+        notes: Trip fare invoicing and receipt
       - stage_order: 8
         stage_name: Cash Collection & Application
         capability_id: BC-200
@@ -614,6 +674,16 @@ value_streams:
         capability_id: BC-2660
         industry_variant: Telecommunications
         notes: Telecom dunning, suspension, and disconnection
+      - stage_order: 8
+        stage_name: Cash Collection & Application
+        capability_id: BC-3480
+        industry_variant: Automotive
+        notes: Charging payment capture and roaming settlement
+      - stage_order: 8
+        stage_name: Cash Collection & Application
+        capability_id: BC-3490
+        industry_variant: Automotive
+        notes: Rider payment capture and driver payout
       - stage_order: 9
         stage_name: Revenue Recognition
         capability_id: BC-200
@@ -834,6 +904,11 @@ value_streams:
         capability_id: BC-2650
         industry_variant: Telecommunications
         notes: Tariff, plan, and bundle design
+      - stage_order: 5
+        stage_name: Design & Development
+        capability_id: BC-3400
+        industry_variant: Automotive
+        notes: Vehicle product design and development
       - stage_order: 6
         stage_name: IP Protection
         capability_id: BC-840
@@ -866,6 +941,11 @@ value_streams:
         capability_id: BC-2650
         industry_variant: Telecommunications
         notes: Multi-channel catalogue publication
+      - stage_order: 7
+        stage_name: Launch Readiness
+        capability_id: BC-3410
+        industry_variant: Automotive
+        notes: Vehicle programme launch readiness gating
       - stage_order: 8
         stage_name: Market Introduction
         capability_id: BC-1530
@@ -900,6 +980,11 @@ value_streams:
         capability_id: BC-2650
         industry_variant: Telecommunications
         notes: Telecom offer launch and channel activation
+      - stage_order: 8
+        stage_name: Market Introduction
+        capability_id: BC-3420
+        industry_variant: Automotive
+        notes: Type approval as market-entry gate
       - stage_order: 9
         stage_name: Post-Launch Performance
         capability_id: BC-820
@@ -919,6 +1004,11 @@ value_streams:
         capability_id: BC-2650
         industry_variant: Telecommunications
         notes: Offer modification, retirement, and grandfathering
+      - stage_order: 9
+        stage_name: Post-Launch Performance
+        capability_id: BC-3450
+        industry_variant: Automotive
+        notes: Field-quality feedback into product
   - name: Plan-to-Inventory
     industries: [Cross-Industry]
     stages:
@@ -940,6 +1030,11 @@ value_streams:
         capability_id: BC-2610
         industry_variant: Telecommunications
         notes: Subscriber growth and traffic demand forecasting
+      - stage_order: 1
+        stage_name: Demand Planning
+        capability_id: BC-3440
+        industry_variant: Automotive
+        notes: Wholesale vehicle volume planning
       - stage_order: 2
         stage_name: Supply Planning
         capability_id: BC-1000
@@ -954,6 +1049,11 @@ value_streams:
         capability_id: BC-1930
         industry_variant: Electrical Components & Equipment
         notes: Semiconductor allocation forecasting
+      - stage_order: 2
+        stage_name: Supply Planning
+        capability_id: BC-3410
+        industry_variant: Automotive
+        notes: Programme volume cadence into supply plan
       - stage_order: 3
         stage_name: S&OP Reconciliation
         capability_id: BC-230
@@ -986,6 +1086,11 @@ value_streams:
         capability_id: BC-2850
         industry_variant: Healthcare Providers
         notes: Drug inventory positioning across pharmacies and automated dispensing cabinets
+      - stage_order: 4
+        stage_name: Inventory Positioning
+        capability_id: BC-3440
+        industry_variant: Automotive
+        notes: Dealer stock and CPO inventory positioning
       - stage_order: 5
         stage_name: Replenishment Execution
         capability_id: BC-530
@@ -1140,6 +1245,11 @@ value_streams:
         capability_id: BC-3010
         industry_variant: Oil & Gas
         notes: Field development plan and FID
+      - stage_order: 1
+        stage_name: Asset Need & Justification
+        capability_id: BC-3480
+        industry_variant: Automotive
+        notes: Charging site selection and business case
       - stage_order: 2
         stage_name: Acquisition
         capability_id: BC-1110
@@ -1169,6 +1279,11 @@ value_streams:
         capability_id: BC-3020
         industry_variant: Oil & Gas
         notes: Capex execution to drill and complete wells
+      - stage_order: 2
+        stage_name: Acquisition
+        capability_id: BC-3480
+        industry_variant: Automotive
+        notes: Charger installation and grid connection
       - stage_order: 3
         stage_name: Commissioning & Capitalisation
         capability_id: BC-1160
@@ -1246,6 +1361,11 @@ value_streams:
         capability_id: BC-3080
         industry_variant: Oil & Gas
         notes: Refinery operations
+      - stage_order: 4
+        stage_name: Operate & Maintain
+        capability_id: BC-3480
+        industry_variant: Automotive
+        notes: Charge-point operations and uptime
       - stage_order: 5
         stage_name: Risk & Reliability
         capability_id: BC-1030
@@ -1274,6 +1394,11 @@ value_streams:
         capability_id: BC-3050
         industry_variant: Oil & Gas
         notes: SCE assurance and mechanical integrity
+      - stage_order: 5
+        stage_name: Risk & Reliability
+        capability_id: BC-3480
+        industry_variant: Automotive
+        notes: Charger reliability and uptime engineering
       - stage_order: 6
         stage_name: Asset Information Maintenance
         capability_id: BC-1040
@@ -1523,6 +1648,11 @@ value_streams:
         capability_id: BC-1950
         industry_variant: Electrical Components & Equipment
         notes: Product CVE feeds & supplier advisories
+      - stage_order: 2
+        stage_name: Threat Intelligence
+        capability_id: BC-3460
+        industry_variant: Automotive
+        notes: Vehicle threat intelligence feeds
       - stage_order: 3
         stage_name: Vulnerability Discovery
         capability_id: BC-620
@@ -1551,6 +1681,11 @@ value_streams:
         capability_id: BC-2600
         industry_variant: Telecommunications
         notes: Signalling, transport, and core network threat monitoring
+      - stage_order: 4
+        stage_name: Detection
+        capability_id: BC-3460
+        industry_variant: Automotive
+        notes: Vehicle SOC fleet-wide threat detection
       - stage_order: 5
         stage_name: Incident Response
         capability_id: BC-160
@@ -1574,6 +1709,11 @@ value_streams:
         capability_id: BC-2600
         industry_variant: Telecommunications
         notes: Network security incident response and DDoS mitigation
+      - stage_order: 5
+        stage_name: Incident Response
+        capability_id: BC-3460
+        industry_variant: Automotive
+        notes: Vehicle incident response and OTA remediation
       - stage_order: 6
         stage_name: Identity & Access Hardening
         capability_id: BC-620
@@ -2375,6 +2515,7 @@ value_streams:
       - Electrical Components & Equipment
       - HVAC & Building Automation Systems
       - Defense & Aerospace
+      - Automotive & Mobility
     stages:
       - stage_order: 1
         stage_name: Concept Design
@@ -2396,6 +2537,11 @@ value_streams:
         capability_id: BC-2010
         industry_variant: HVAC & Building Automation Systems
         notes: BAS controller & supervisor concept
+      - stage_order: 1
+        stage_name: Concept Design
+        capability_id: BC-3400
+        industry_variant: Automotive
+        notes: Vehicle concept and architecture
       - stage_order: 2
         stage_name: FEED & Specification
         capability_id: BC-1120
@@ -2420,6 +2566,11 @@ value_streams:
         capability_id: BC-2020
         industry_variant: HVAC & Building Automation Systems
         notes: Project-level HVAC system spec & sizing
+      - stage_order: 2
+        stage_name: FEED & Specification
+        capability_id: BC-3400
+        industry_variant: Automotive
+        notes: Vehicle attribute and subsystem specification
       - stage_order: 3
         stage_name: Detailed Design
         capability_id: BC-1100
@@ -2450,6 +2601,11 @@ value_streams:
         capability_id: BC-2020
         industry_variant: HVAC & Building Automation Systems
         notes: Project-level integration design
+      - stage_order: 3
+        stage_name: Detailed Design
+        capability_id: BC-3400
+        industry_variant: Automotive
+        notes: Multi-domain vehicle engineering
       - stage_order: 4
         stage_name: Design Review
         capability_id: BC-1120
@@ -2490,6 +2646,16 @@ value_streams:
         capability_id: BC-2030
         industry_variant: HVAC & Building Automation Systems
         notes: Performance & safety listing readiness
+      - stage_order: 4
+        stage_name: Design Review
+        capability_id: BC-3400
+        industry_variant: Automotive
+        notes: ISO 26262 / 21434 / 21448 reviews
+      - stage_order: 4
+        stage_name: Design Review
+        capability_id: BC-3420
+        industry_variant: Automotive
+        notes: Type-approval readiness review
       - stage_order: 5
         stage_name: Manufacturing Engineering
         capability_id: BC-1020
@@ -2504,6 +2670,11 @@ value_streams:
         capability_id: BC-1930
         industry_variant: Electrical Components & Equipment
         notes: Preferred parts feed manufacturing engineering
+      - stage_order: 5
+        stage_name: Manufacturing Engineering
+        capability_id: BC-3410
+        industry_variant: Automotive
+        notes: Programme governance over industrialisation
       - stage_order: 6
         stage_name: Production Ramp-Up
         capability_id: BC-1000
@@ -2514,6 +2685,11 @@ value_streams:
         capability_id: BC-1010
         industry_variant: Manufacturing
         notes: Shop floor execution
+      - stage_order: 6
+        stage_name: Production Ramp-Up
+        capability_id: BC-3410
+        industry_variant: Automotive
+        notes: SOP readiness and ramp coordination
       - stage_order: 7
         stage_name: Quality & Yield Stabilisation
         capability_id: BC-1000
@@ -2538,6 +2714,16 @@ value_streams:
         capability_id: BC-1940
         industry_variant: Electrical Components & Equipment
         notes: Saleable variant baseline
+      - stage_order: 8
+        stage_name: Configuration Baseline
+        capability_id: BC-3410
+        industry_variant: Automotive
+        notes: Vehicle programme configuration baseline at SOP
+      - stage_order: 8
+        stage_name: Configuration Baseline
+        capability_id: BC-3420
+        industry_variant: Automotive
+        notes: Type-approved configuration baseline
   - name: Opportunity-to-Order
     industries: [Cross-Industry]
     stages:
@@ -2549,6 +2735,11 @@ value_streams:
         stage_name: Opportunity Qualification
         capability_id: BC-420
         notes: Customer record lookup
+      - stage_order: 1
+        stage_name: Opportunity Qualification
+        capability_id: BC-3440
+        industry_variant: Automotive
+        notes: Fleet and B2B opportunity qualification
       - stage_order: 2
         stage_name: Solution Scoping
         capability_id: BC-1110
@@ -2578,6 +2769,11 @@ value_streams:
         capability_id: BC-2680
         industry_variant: Telecommunications
         notes: Wholesale solution scoping for carrier and MVNO orders
+      - stage_order: 2
+        stage_name: Solution Scoping
+        capability_id: BC-3440
+        industry_variant: Automotive
+        notes: Fleet vehicle specification scoping
       - stage_order: 3
         stage_name: Quote & Configuration
         capability_id: BC-410
@@ -3001,3 +3197,88 @@ value_streams:
         stage_name: Campaign Finance Disclosure
         capability_id: BC-3330
         notes: Political-committee registration, donation reporting, and enforcement
+  - name: Appoint-to-Operate
+    industries: [Automotive & Mobility]
+    stages:
+      - stage_order: 1
+        stage_name: Network Strategy & Coverage
+        capability_id: BC-3430
+        industry_variant: Automotive
+        notes: Market coverage planning and footprint optimisation
+      - stage_order: 2
+        stage_name: Application & Vetting
+        capability_id: BC-3430
+        industry_variant: Automotive
+        notes: Dealer application, financial and operational due diligence
+      - stage_order: 3
+        stage_name: Agreement Execution
+        capability_id: BC-3430
+        industry_variant: Automotive
+        notes: Dealer agreement drafting and territory rights
+      - stage_order: 3
+        stage_name: Agreement Execution
+        capability_id: BC-150
+        notes: Legal terms and competition-law review
+      - stage_order: 4
+        stage_name: Onboarding & Certification
+        capability_id: BC-3430
+        industry_variant: Automotive
+        notes: Dealer training, certification, and DMS integration
+      - stage_order: 5
+        stage_name: Standards Compliance
+        capability_id: BC-3430
+        industry_variant: Automotive
+        notes: Brand and facility standards auditing and corrective action
+      - stage_order: 6
+        stage_name: Performance Management
+        capability_id: BC-3430
+        industry_variant: Automotive
+        notes: Scorecard, performance reviews, and incentive programmes
+      - stage_order: 7
+        stage_name: Termination & Transition
+        capability_id: BC-3430
+        industry_variant: Automotive
+        notes: Dealer termination, run-out, and territory reassignment
+  - name: Validate-to-Authorise
+    industries: [Automotive & Mobility]
+    stages:
+      - stage_order: 1
+        stage_name: ODD Definition
+        capability_id: BC-3470
+        industry_variant: Automotive
+        notes: Operational design domain definition
+      - stage_order: 2
+        stage_name: Scenario Coverage Build
+        capability_id: BC-3470
+        industry_variant: Automotive
+        notes: Scenario library curation and edge-case capture
+      - stage_order: 3
+        stage_name: Validation Execution
+        capability_id: BC-3470
+        industry_variant: Automotive
+        notes: Simulation, closed-course, and public-road validation
+      - stage_order: 4
+        stage_name: Safety Case Authoring
+        capability_id: BC-3470
+        industry_variant: Automotive
+        notes: Authoring and assurance of the ADS safety case
+      - stage_order: 5
+        stage_name: Regulatory Authorisation
+        capability_id: BC-3420
+        industry_variant: Automotive
+        notes: ALKS / ADS approval submission under UN R157
+      - stage_order: 5
+        stage_name: Regulatory Authorisation
+        capability_id: BC-3470
+        industry_variant: Automotive
+        notes: ADS permit and authorisation management
+      - stage_order: 6
+        stage_name: Deployment Monitoring
+        capability_id: BC-3470
+        industry_variant: Automotive
+        notes: ODD conformance monitoring and SPI tracking
+      - stage_order: 7
+        stage_name: Incident Reporting & Iteration
+        capability_id: BC-3470
+        industry_variant: Automotive
+        notes: Incident reporting to regulators and feedback into safety case
