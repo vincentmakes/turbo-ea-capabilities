@@ -1,0 +1,231 @@
+# Refining Operations Management
+id: BC-3080
+name: Refining Operations Management
+level: 1
+industry: "Oil & Gas"
+description: |
+  Operation of crude oil refineries - distillation, conversion,
+  treating, blending, refinery economics, catalyst management, and
+  turnaround coordination.
+references:
+  - https://www.api.org/products-and-services/standards
+  - https://www.iso.org/standard/67773.html
+  - https://www.osha.gov/process-safety-management
+children:
+  - id: BC-3080.10
+    name: Crude Distillation Operations
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Operation of atmospheric and vacuum crude distillation units and crude slate transitions.
+    children:
+      - id: BC-3080.10.10
+        name: Atmospheric Distillation Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operation of crude atmospheric distillation columns and pre-flash trains.
+        children: []
+      - id: BC-3080.10.20
+        name: Vacuum Distillation Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operation of vacuum distillation columns and overhead systems.
+        children: []
+      - id: BC-3080.10.30
+        name: Crude Slate Switching
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operational management of crude diet changes and slate transitions.
+        children: []
+  - id: BC-3080.20
+    name: Conversion Unit Operations
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Operation of catalytic cracking, hydrocracking, coking, and reforming conversion units.
+    children:
+      - id: BC-3080.20.10
+        name: Fluid Catalytic Cracking Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operation of fluid catalytic cracking units and regenerators.
+        children: []
+      - id: BC-3080.20.20
+        name: Hydrocracking Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operation of single-stage and two-stage hydrocrackers.
+        children: []
+      - id: BC-3080.20.30
+        name: Coking Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operation of delayed coker, fluid coker, and flexicoker units.
+        children: []
+      - id: BC-3080.20.40
+        name: Reforming Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operation of catalytic reformers for octane and aromatics production.
+        children: []
+  - id: BC-3080.30
+    name: "Treating & Hydroprocessing Operations"
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Operation of hydrotreaters, sulphur recovery, and product sweetening units.
+    children:
+      - id: BC-3080.30.10
+        name: Hydrotreating Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operation of naphtha, distillate, and gas-oil hydrotreaters.
+        children: []
+      - id: BC-3080.30.20
+        name: "Sulphur Recovery & Tail-Gas Operations"
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operation of sulphur recovery units and tail-gas treating.
+        children: []
+      - id: BC-3080.30.30
+        name: Sweetening Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operation of caustic-based and adsorbent-based product sweetening.
+        children: []
+  - id: BC-3080.40
+    name: Product Blending Operations
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      In-line and tank blending of finished products to specification.
+    children:
+      - id: BC-3080.40.10
+        name: Gasoline Blending
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Multi-component gasoline blending to grade specifications.
+        children: []
+      - id: BC-3080.40.20
+        name: Distillate Blending
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Diesel and kerosene blending including biofuel inclusion.
+        children: []
+      - id: BC-3080.40.30
+        name: Bunker Fuel Blending
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Marine bunker fuel blending to ISO 8217 specifications.
+        children: []
+      - id: BC-3080.40.40
+        name: Spec-Compliance Blending
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Real-time spec optimisation and certificate-of-quality issuance.
+        children: []
+  - id: BC-3080.50
+    name: "Refinery Planning & Economics"
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Linear programme based crude selection, margin optimisation, and refinery yield reporting.
+    children:
+      - id: BC-3080.50.10
+        name: Linear Programme Modelling
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Maintenance and run of refinery LP models for plan and economics.
+        children: []
+      - id: BC-3080.50.20
+        name: Crude Selection Economics
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Economic evaluation of candidate crude purchases and slate options.
+        children: []
+      - id: BC-3080.50.30
+        name: Margin Optimisation
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Short-term operating margin optimisation and re-planning.
+        children: []
+      - id: BC-3080.50.40
+        name: Refinery Yield Reporting
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Reporting of actual yields against plan and benchmark.
+        children: []
+  - id: BC-3080.60
+    name: "Catalyst & Refinery Chemicals Management"
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Lifecycle management of process catalysts and refinery chemical inventory.
+    children:
+      - id: BC-3080.60.10
+        name: Catalyst Lifecycle Management
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Catalyst load planning, in-service surveillance, and replacement.
+        children: []
+      - id: BC-3080.60.20
+        name: Catalyst Regeneration Coordination
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Coordination of in-situ and ex-situ catalyst regeneration campaigns.
+        children: []
+      - id: BC-3080.60.30
+        name: Refinery Chemicals Inventory Management
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Inventory and consumption management of process chemicals.
+        children: []
+  - id: BC-3080.70
+    name: "Turnaround & Major Maintenance Coordination"
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Scope, schedule, and execution coordination for major refinery turnarounds.
+    children:
+      - id: BC-3080.70.10
+        name: Turnaround Scope Management
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Definition and freeze of turnaround scope including challenge process.
+        children: []
+      - id: BC-3080.70.20
+        name: Turnaround Schedule Management
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Detailed turnaround scheduling and progress control.
+        children: []
+      - id: BC-3080.70.30
+        name: Shutdown and Restart Coordination
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Sequenced unit shutdown, decontamination, and restart coordination.
+        children: []

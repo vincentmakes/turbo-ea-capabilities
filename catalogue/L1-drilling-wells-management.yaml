@@ -1,0 +1,264 @@
+# Drilling & Wells Management
+id: BC-3020
+name: "Drilling & Wells Management"
+level: 1
+industry: "Oil & Gas"
+description: |
+  Engineering, execution, and through-life integrity of wells - from
+  well design and drilling operations to completions, intervention,
+  workover, and well control.
+references:
+  - https://www.iadc.org/
+  - https://www.iogp.org/
+  - https://www.energistics.org/
+children:
+  - id: BC-3020.10
+    name: "Well Engineering & Design"
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Design of well architecture, casing, tubing, drilling fluids, and
+      cost estimates for drilling programmes.
+    children:
+      - id: BC-3020.10.10
+        name: Well Architecture Design
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Trajectory, hole-section, and overall well architecture design.
+        children: []
+      - id: BC-3020.10.20
+        name: "Casing & Tubing Design"
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Casing, liner, and tubing string design including stress and burst-collapse checks.
+        children: []
+      - id: BC-3020.10.30
+        name: Drilling Fluid Design
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Mud system selection and rheology design for drilling sections.
+        children: []
+      - id: BC-3020.10.40
+        name: Well Cost Estimation
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Authority-for-expenditure cost estimation for drilling and completion programmes.
+        children: []
+  - id: BC-3020.20
+    name: Drilling Operations Management
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Execution of drilling operations including rig coordination,
+      real-time monitoring, directional drilling, and cementing.
+    in_scope:
+      - On-rig drilling supervision
+      - Real-time drilling data monitoring
+      - Directional and managed-pressure drilling
+      - Cementing and casing-running operations
+    out_of_scope:
+      - Well completion installation (BC-3020.30)
+      - Process safety on drilling installations (BC-3050)
+    children:
+      - id: BC-3020.20.10
+        name: Rig Operations Coordination
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Day-to-day coordination of rig operations and contractor activities.
+        children: []
+      - id: BC-3020.20.20
+        name: Real-Time Drilling Monitoring
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Real-time drilling data monitoring from operations support centres.
+        children: []
+      - id: BC-3020.20.30
+        name: Directional Drilling Execution
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Execution of directional, horizontal, and extended-reach drilling.
+        children: []
+      - id: BC-3020.20.40
+        name: Drilling Fluids Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Mud engineering, treatment, and solids control during drilling.
+        children: []
+      - id: BC-3020.20.50
+        name: Cementing Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Primary and remedial cementing operations.
+        children: []
+  - id: BC-3020.30
+    name: Well Completions Management
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Design and installation of completions including perforating and stimulation operations.
+    children:
+      - id: BC-3020.30.10
+        name: Completion Design
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Design of upper and lower completions including sand control where applicable.
+        children: []
+      - id: BC-3020.30.20
+        name: Completion Installation
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Running and installation of completion strings and accessories.
+        children: []
+      - id: BC-3020.30.30
+        name: Perforating Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Perforating gun selection and execution to establish flow paths.
+        children: []
+      - id: BC-3020.30.40
+        name: Stimulation Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Hydraulic fracturing, acidising, and other stimulation treatments.
+        children: []
+  - id: BC-3020.40
+    name: "Well Intervention & Workover Management"
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Through-life well interventions ranging from wireline operations to full workovers.
+    children:
+      - id: BC-3020.40.10
+        name: Coiled Tubing Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Coiled tubing intervention operations.
+        children: []
+      - id: BC-3020.40.20
+        name: "Wireline & Slickline Operations"
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Wireline and slickline data acquisition and intervention operations.
+        children: []
+      - id: BC-3020.40.30
+        name: Workover Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Major workover operations on producing and injecting wells.
+        children: []
+      - id: BC-3020.40.40
+        name: Through-Tubing Intervention
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Through-tubing remedial and stimulation interventions.
+        children: []
+  - id: BC-3020.50
+    name: Well Integrity Management
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Verification and surveillance of well barriers across the well life,
+      including annulus pressure and sustained casing pressure management.
+    children:
+      - id: BC-3020.50.10
+        name: Well Barrier Verification
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Verification of primary and secondary well barriers per integrity standards.
+        children: []
+      - id: BC-3020.50.20
+        name: Annulus Pressure Monitoring
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Continuous and periodic monitoring of well annulus pressures.
+        children: []
+      - id: BC-3020.50.30
+        name: Well Integrity Risk Assessment
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Risk assessment of well integrity status across the well portfolio.
+        children: []
+      - id: BC-3020.50.40
+        name: Sustained Casing Pressure Management
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Diagnosis and management of sustained casing pressure events.
+        children: []
+  - id: BC-3020.60
+    name: Well Control Management
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Prevention and response to well control events including kick
+      detection, blowout preventer operations, and well-control competency.
+    children:
+      - id: BC-3020.60.10
+        name: "Kick Detection & Response"
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Kick detection methodologies and well-control response procedures.
+        children: []
+      - id: BC-3020.60.20
+        name: Blowout Preventer Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operation, function-testing, and maintenance of blowout preventer stacks.
+        children: []
+      - id: BC-3020.60.30
+        name: Well Control Competency Assurance
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Coordination of IWCF and IADC WellCAP competency programmes.
+        children: []
+  - id: BC-3020.70
+    name: Drilling Contractor Management
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Assurance, performance management, and contractual oversight of drilling rig and service contractors.
+    children:
+      - id: BC-3020.70.10
+        name: "Rig Assurance & Audit"
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Pre-acceptance and in-service audit of drilling rigs and contractors.
+        children: []
+      - id: BC-3020.70.20
+        name: Drilling Contractor Performance Management
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Performance management against rig contracts and service KPIs.
+        children: []
+      - id: BC-3020.70.30
+        name: Drilling Service Contract Management
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Management of drilling service line contracts (mud, cementing, directional, etc.).
+        children: []

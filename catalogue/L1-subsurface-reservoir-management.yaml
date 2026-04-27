@@ -1,0 +1,227 @@
+# Subsurface & Reservoir Management
+id: BC-3010
+name: "Subsurface & Reservoir Management"
+level: 1
+industry: "Oil & Gas"
+description: |
+  Geoscience and reservoir engineering across the producing-asset life
+  cycle - characterisation, simulation, reserves and resources
+  classification, depletion strategy, and improved-recovery design.
+references:
+  - https://www.spe.org/en/industry/petroleum-resources-management-system-2018/
+  - https://www.energistics.org/
+  - https://osduforum.org/
+children:
+  - id: BC-3010.10
+    name: Subsurface Geoscience Management
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Static subsurface description through geological modelling,
+      petrophysics, and structural interpretation across producing assets.
+    children:
+      - id: BC-3010.10.10
+        name: Geological Modelling
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Construction and update of static geological and facies models.
+        children: []
+      - id: BC-3010.10.20
+        name: Petrophysical Analysis
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Log analysis, core integration, and petrophysical evaluation of reservoirs.
+        children: []
+      - id: BC-3010.10.30
+        name: Structural Interpretation
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Structural and fault network interpretation for producing assets.
+        children: []
+      - id: BC-3010.10.40
+        name: Geomodel Update
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Update of geomodels with new well, seismic, and production data.
+        children: []
+  - id: BC-3010.20
+    name: Reservoir Engineering
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Dynamic reservoir behaviour analysis through simulation, PVT, material balance, and pressure transient methods.
+    in_scope:
+      - Reservoir simulation and history matching
+      - PVT and fluid property analysis
+      - Pressure transient and well-test analysis
+    out_of_scope:
+      - Decline curve and production forecasting (BC-3010.50)
+    children:
+      - id: BC-3010.20.10
+        name: Reservoir Characterisation
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Integrated static and dynamic characterisation of reservoirs.
+        children: []
+      - id: BC-3010.20.20
+        name: Reservoir Simulation
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Numerical reservoir simulation, history matching, and forecast generation.
+        children: []
+      - id: BC-3010.20.30
+        name: PVT and Fluid Analysis
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          PVT sampling, laboratory analysis, and fluid property modelling.
+        children: []
+      - id: BC-3010.20.40
+        name: Material Balance Analysis
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Material balance analysis to estimate in-place volumes and drive mechanisms.
+        children: []
+      - id: BC-3010.20.50
+        name: Pressure Transient Analysis
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Well-test analysis and pressure transient interpretation.
+        children: []
+  - id: BC-3010.30
+    name: "Reserves & Resources Management"
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Estimation, classification, and external booking of petroleum
+      reserves and contingent resources per SPE-PRMS and SEC requirements.
+    children:
+      - id: BC-3010.30.10
+        name: Reserves Estimation
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Deterministic and probabilistic estimation of petroleum reserves.
+        children: []
+      - id: BC-3010.30.20
+        name: Reserves Classification
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Classification of reserves and resources per SPE-PRMS categories.
+        children: []
+      - id: BC-3010.30.30
+        name: Reserves Booking
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Year-end reserves booking for SEC and equivalent regulatory disclosures.
+        children: []
+      - id: BC-3010.30.40
+        name: Reserves Audit Coordination
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Coordination of internal and third-party reserves audits.
+        children: []
+  - id: BC-3010.40
+    name: Field Development Planning
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Concept selection, depletion strategy, and field development plan
+      authoring from discovery through to development sanction.
+    children:
+      - id: BC-3010.40.10
+        name: Concept Selection
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Subsurface-led concept selection and screening for new field developments.
+        children: []
+      - id: BC-3010.40.20
+        name: Field Development Plan Authoring
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Authoring of field development plans for regulatory and partner approval.
+        children: []
+      - id: BC-3010.40.30
+        name: Depletion Strategy Definition
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Definition of reservoir depletion strategy including drainage and well count.
+        children: []
+      - id: BC-3010.40.40
+        name: Subsurface Risk Assessment
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Assessment of subsurface uncertainty and its commercial impact on development decisions.
+        children: []
+  - id: BC-3010.50
+    name: Production Forecasting
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Generation and reconciliation of production forecasts for asset, business, and reserves planning.
+    children:
+      - id: BC-3010.50.10
+        name: Decline Curve Analysis
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Decline curve analysis to forecast well and field production.
+        children: []
+      - id: BC-3010.50.20
+        name: Production Forecast Generation
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Generation of production forecasts integrating well, reservoir, and facility constraints.
+        children: []
+      - id: BC-3010.50.30
+        name: Forecast Reconciliation
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Reconciliation of subsurface forecasts with production accounting actuals.
+        children: []
+  - id: BC-3010.60
+    name: "Improved & Enhanced Recovery Management"
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Design and surveillance of secondary and tertiary recovery schemes
+      including water and gas injection and EOR processes.
+    children:
+      - id: BC-3010.60.10
+        name: Secondary Recovery Design
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Design of waterflood and gas injection secondary recovery schemes.
+        children: []
+      - id: BC-3010.60.20
+        name: Tertiary Recovery Design
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Design of chemical, thermal, and miscible enhanced oil recovery schemes.
+        children: []
+      - id: BC-3010.60.30
+        name: Injection Strategy Surveillance
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Surveillance and optimisation of injection patterns and voidage replacement.
+        children: []

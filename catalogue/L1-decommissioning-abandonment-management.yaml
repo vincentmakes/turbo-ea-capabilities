@@ -1,0 +1,183 @@
+# Decommissioning & Abandonment Management
+id: BC-3120
+name: "Decommissioning & Abandonment Management"
+level: 1
+industry: "Oil & Gas"
+description: |
+  Late-life management of petroleum assets - well plug and abandonment,
+  facility decommissioning, pipeline decommissioning, site restoration,
+  decommissioning liability provisioning, and post-closure monitoring.
+references:
+  - https://www.iogp.org/
+  - https://www.api.org/products-and-services/standards
+  - https://www.iso.org/standard/61788.html
+children:
+  - id: BC-3120.10
+    name: "Well Plug & Abandonment Operations"
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Design and execution of permanent well plug and abandonment campaigns.
+    in_scope:
+      - P&A design and barrier verification
+      - Plug-and-abandon execution operations
+      - Wellhead and conductor severance and recovery
+    out_of_scope:
+      - Producing-well integrity surveillance (BC-3020.50)
+    children:
+      - id: BC-3120.10.10
+        name: "Plug & Abandonment Design"
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Design of permanent barrier configurations for well abandonment.
+        children: []
+      - id: BC-3120.10.20
+        name: "Plug & Abandonment Execution"
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Execution of cementing, plug placement, and barrier verification operations.
+        children: []
+      - id: BC-3120.10.30
+        name: "Wellhead Severance & Recovery"
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Severance and recovery of wellheads, conductors, and casing strings.
+        children: []
+  - id: BC-3120.20
+    name: Surface Facility Decommissioning
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Decommissioning, removal, and recovery of upstream and midstream
+      surface and subsea facilities.
+    children:
+      - id: BC-3120.20.10
+        name: Topsides Removal Planning
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Engineering of topsides removal and reverse-installation methodology.
+        children: []
+      - id: BC-3120.20.20
+        name: Topsides Removal Execution
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Execution of single-lift, modular, or piece-small topsides removal.
+        children: []
+      - id: BC-3120.20.30
+        name: Subsea Equipment Recovery
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Recovery of subsea trees, manifolds, jumpers, and umbilicals.
+        children: []
+  - id: BC-3120.30
+    name: Pipeline Decommissioning
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Decommissioning, removal, or in-situ leave decisions for redundant pipelines.
+    children:
+      - id: BC-3120.30.10
+        name: "Pipeline Flush & Cleaning"
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Flushing, cleaning, and inerting of pipelines prior to decommissioning.
+        children: []
+      - id: BC-3120.30.20
+        name: Pipeline Decommissioning Decision
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Comparative assessment of pipeline removal versus in-situ decommissioning.
+        children: []
+      - id: BC-3120.30.30
+        name: Pipeline Decommissioning Execution
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Execution of pipeline removal, cut-and-lift, or in-situ leave operations.
+        children: []
+  - id: BC-3120.40
+    name: "Site Restoration & Remediation"
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Onshore and subsea site restoration, soil and sediment remediation,
+      and seabed clearance verification.
+    children:
+      - id: BC-3120.40.10
+        name: "Soil & Sediment Remediation"
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Remediation of contaminated soils and sediments at decommissioned sites.
+        children: []
+      - id: BC-3120.40.20
+        name: Vegetative Restoration
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Re-vegetation and contouring of onshore decommissioned sites.
+        children: []
+      - id: BC-3120.40.30
+        name: Subsea Site Clearance
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Subsea seabed clearance verification and dropped-object recovery.
+        children: []
+  - id: BC-3120.50
+    name: Decommissioning Liability Management
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Cost estimation, provisioning, and security posting for decommissioning obligations.
+    children:
+      - id: BC-3120.50.10
+        name: Abandonment Cost Estimation
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Probabilistic cost estimation for decommissioning and abandonment.
+        children: []
+      - id: BC-3120.50.20
+        name: Decommissioning Provisioning
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Maintenance of decommissioning provisions in line with accounting standards.
+        children: []
+      - id: BC-3120.50.30
+        name: Decommissioning Security Posting
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Posting and renewal of decommissioning security to host governments.
+        children: []
+  - id: BC-3120.60
+    name: Post-Closure Monitoring
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Long-term environmental monitoring and residual liability tracking after closure.
+    children:
+      - id: BC-3120.60.10
+        name: Long-Term Environmental Monitoring
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Long-term groundwater, soil, and marine environmental monitoring.
+        children: []
+      - id: BC-3120.60.20
+        name: Residual Liability Tracking
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Tracking of residual liabilities and indemnities post-closure.
+        children: []

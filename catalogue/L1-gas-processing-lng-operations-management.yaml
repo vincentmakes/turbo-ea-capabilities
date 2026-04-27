@@ -1,0 +1,191 @@
+# Gas Processing & LNG Operations Management
+id: BC-3070
+name: "Gas Processing & LNG Operations Management"
+level: 1
+industry: "Oil & Gas"
+description: |
+  Operation of gas treatment, NGL fractionation, LNG liquefaction,
+  loading and send-out, regasification, and gas quality assurance
+  across midstream gas value chains.
+references:
+  - https://www.api.org/products-and-services/standards
+  - https://www.iso.org/standard/43797.html
+  - https://giignl.org/
+children:
+  - id: BC-3070.10
+    name: Gas Plant Operations
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Operation of inlet receipt, treating, dehydration, and sulphur-recovery facilities at gas processing plants.
+    children:
+      - id: BC-3070.10.10
+        name: "Gas Receipt & Inlet Management"
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Receipt, slug catching, and inlet conditioning of feed gas.
+        children: []
+      - id: BC-3070.10.20
+        name: Acid Gas Treating Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Amine and physical solvent acid gas treating operations.
+        children: []
+      - id: BC-3070.10.30
+        name: Gas Dehydration Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Glycol and molecular sieve dehydration of natural gas.
+        children: []
+      - id: BC-3070.10.40
+        name: Sulphur Recovery Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Claus and tail-gas treating operations for sulphur recovery.
+        children: []
+  - id: BC-3070.20
+    name: NGL Fractionation Operations
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Operation of demethanisers, deethanisers, and downstream fractionation
+      towers producing ethane, propane, butane, and natural gasoline.
+    children:
+      - id: BC-3070.20.10
+        name: Demethaniser Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operation of cryogenic demethaniser columns for ethane recovery.
+        children: []
+      - id: BC-3070.20.20
+        name: "Deethaniser & Depropaniser Operations"
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operation of deethaniser, depropaniser, and debutaniser columns.
+        children: []
+      - id: BC-3070.20.30
+        name: NGL Storage Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operation of pressurised and refrigerated NGL storage.
+        children: []
+  - id: BC-3070.30
+    name: LNG Liquefaction Operations
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Operation of liquefaction trains, refrigeration cycles, and LNG storage tanks.
+    children:
+      - id: BC-3070.30.10
+        name: Refrigeration Cycle Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operation of mixed-refrigerant and cascade refrigeration loops.
+        children: []
+      - id: BC-3070.30.20
+        name: LNG Train Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operation of LNG liquefaction trains end-to-end.
+        children: []
+      - id: BC-3070.30.30
+        name: LNG Storage Tank Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operation of cryogenic LNG storage tanks including roll-over prevention.
+        children: []
+  - id: BC-3070.40
+    name: "LNG Loading & Send-Out Operations"
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Ship loading, cargo cool-down, and pipeline send-out vaporisation at liquefaction terminals.
+    children:
+      - id: BC-3070.40.10
+        name: LNG Ship Loading
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Ship-loading operations at LNG export jetties.
+        children: []
+      - id: BC-3070.40.20
+        name: Send-Out Vaporisation
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Send-out vaporisation and pipeline export from liquefaction sites.
+        children: []
+      - id: BC-3070.40.30
+        name: Cargo Cool-Down Coordination
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Cool-down coordination of LNG carriers prior to loading.
+        children: []
+  - id: BC-3070.50
+    name: LNG Regasification Operations
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Operation of import LNG terminals - vaporisation, send-out
+      pressure control, and boil-off gas handling.
+    children:
+      - id: BC-3070.50.10
+        name: Vaporiser Operations
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Operation of open-rack, submerged-combustion, and shell-and-tube vaporisers.
+        children: []
+      - id: BC-3070.50.20
+        name: Send-Out Pressure Control
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Send-out pressure control and grid injection from import terminals.
+        children: []
+      - id: BC-3070.50.30
+        name: Boil-Off Gas Handling
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Re-liquefaction or send-out of boil-off gas from storage tanks.
+        children: []
+  - id: BC-3070.60
+    name: Gas Quality Management
+    level: 2
+    industry: "Oil & Gas"
+    description: |
+      Compliance with pipeline and LNG gas-quality specifications and handling of off-spec streams.
+    children:
+      - id: BC-3070.60.10
+        name: Specification Compliance Monitoring
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Continuous monitoring of pipeline-quality and LNG-quality specifications.
+        children: []
+      - id: BC-3070.60.20
+        name: "Gas Sampling & Analysis"
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Routine gas sampling, chromatography, and certificate generation.
+        children: []
+      - id: BC-3070.60.30
+        name: Off-Spec Gas Handling
+        level: 3
+        industry: "Oil & Gas"
+        description: |
+          Routing, blending, and reprocessing of off-specification gas streams.
+        children: []
