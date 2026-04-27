@@ -1,0 +1,246 @@
+# Autonomous Driving Operations Management
+id: BC-3470
+name: Autonomous Driving Operations Management
+level: 1
+industry: "Automotive & Mobility"
+description: |
+  Operational running of automated-driving fleets — operational design domain
+  governance, scenario libraries, ADS safety case, simulation and on-road
+  validation, teleoperation, and engagement with regulators on permits and
+  incident reporting, anchored on ISO 21448, SAE J3016, and UN R157.
+references:
+  - https://www.sae.org/standards/content/j3016_202104/
+  - https://unece.org/transport/documents/2021/03/standards/un-regulation-no-157-automated-lane-keeping-systems-alks
+  - https://www.iso.org/standard/77490.html
+children:
+  - id: BC-3470.10
+    name: Operational Design Domain Governance
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Definition, conformance monitoring, and lifecycle management of the
+      operational design domain for each automated-driving feature.
+    children:
+      - id: BC-3470.10.10
+        name: ODD Definition Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Definition of the operational design domain including geographic,
+          environmental, and behavioural boundaries.
+        children: []
+      - id: BC-3470.10.20
+        name: ODD Conformance Monitoring
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Monitoring of in-service ODD conformance and detection of operation
+          outside the defined domain.
+        children: []
+      - id: BC-3470.10.30
+        name: ODD Boundary Update Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Management of ODD expansions and restrictions over the lifecycle
+          including approval and deployment.
+        children: []
+  - id: BC-3470.20
+    name: Driving Scenario and Test Catalogue Management
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Curation of the driving scenario library and test catalogue used for
+      design, simulation, and validation of automated-driving systems.
+    children:
+      - id: BC-3470.20.10
+        name: Scenario Library Curation
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Curation of structured scenario libraries used for ADS design and
+          validation.
+        children: []
+      - id: BC-3470.20.20
+        name: Edge-Case Capture and Triage
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Capture, triage, and prioritisation of edge cases observed in
+          simulation, on test fleets, and in service.
+        children: []
+      - id: BC-3470.20.30
+        name: Scenario Coverage Reporting
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Reporting of scenario coverage and residual gaps against ODD
+          requirements.
+        children: []
+  - id: BC-3470.30
+    name: Autonomous Fleet Operations
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Day-to-day operations of test, pilot, and commercial automated-driving
+      fleets including dispatch, health, and turnaround.
+    in_scope:
+      - Autonomous vehicle dispatch and routing
+      - Fleet health monitoring and ground-truth telemetry
+      - Charging, cleaning, and turnaround coordination
+    out_of_scope:
+      - Rider-facing booking and pricing for shared-mobility services (BC-3490)
+      - Vehicle engineering and software development (BC-3400)
+    children:
+      - id: BC-3470.30.10
+        name: Autonomous Vehicle Dispatch Operations
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Dispatch and routing of autonomous vehicles for test, pilot, and
+          commercial missions.
+        children: []
+      - id: BC-3470.30.20
+        name: Autonomous Fleet Health Monitoring
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Real-time health monitoring of autonomous fleets including sensor
+          calibration and software status.
+        children: []
+      - id: BC-3470.30.30
+        name: Autonomous Vehicle Charging and Cleaning Coordination
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Coordination of charging, cleaning, and turnaround activities for
+          autonomous fleets at depots.
+        children: []
+  - id: BC-3470.40
+    name: Remote Operations and Teleassistance
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Operation of teleassistance centres providing remote support and
+      authorised intervention for automated-driving fleets.
+    children:
+      - id: BC-3470.40.10
+        name: Teleassistance Centre Operations
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Operation of remote teleassistance centres including shift
+          management and escalation paths.
+        children: []
+      - id: BC-3470.40.20
+        name: Remote Intervention Decision Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Decision frameworks and authorisation for remote interventions
+          ranging from advisory to direct vehicle control.
+        children: []
+      - id: BC-3470.40.30
+        name: Teleoperator Workforce Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Recruitment, training, certification, and performance management of
+          the teleoperator workforce.
+        children: []
+  - id: BC-3470.50
+    name: Safety Case and Assurance Management
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Maintenance of the operational ADS safety case and the indicators that
+      monitor its continued validity.
+    children:
+      - id: BC-3470.50.10
+        name: Safety Case Authoring
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Authoring of the structured ADS safety case including claims,
+          arguments, and evidence.
+        children: []
+      - id: BC-3470.50.20
+        name: Safety Argument Maintenance
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Maintenance of safety arguments as the system, ODD, and operational
+          context evolve.
+        children: []
+      - id: BC-3470.50.30
+        name: Safety Performance Indicator Tracking
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Definition and tracking of leading and lagging safety-performance
+          indicators for the deployed fleet.
+        children: []
+  - id: BC-3470.60
+    name: Autonomous Driving Validation Operations
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Operational running of the validation campaigns — simulation, closed
+      course, and public road — that supply evidence for the safety case.
+    children:
+      - id: BC-3470.60.10
+        name: Simulation-Based Validation Operations
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Operation of large-scale simulation farms and scenario regression
+          for ADS validation.
+        children: []
+      - id: BC-3470.60.20
+        name: Closed-Course Validation Operations
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Operation of closed-course test programmes and proving-ground
+          campaigns for ADS validation.
+        children: []
+      - id: BC-3470.60.30
+        name: Public-Road Trial Operations
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Operation of supervised public-road trials including safety-driver
+          discipline and incident management.
+        children: []
+  - id: BC-3470.70
+    name: ADS Regulatory Engagement
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Engagement with regulators and the public on automated-driving
+      authorisations, incident reporting, and trust building.
+    children:
+      - id: BC-3470.70.10
+        name: ADS Permit and Authorisation Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Management of permits, exemptions, and authorisations for ADS
+          deployment in each jurisdiction.
+        children: []
+      - id: BC-3470.70.20
+        name: Incident Reporting to Regulators
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Reporting of ADS incidents and disengagements to regulators and
+          coordination with investigations.
+        children: []
+      - id: BC-3470.70.30
+        name: Public and Stakeholder Engagement
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Engagement with cities, communities, and stakeholders on ADS
+          deployment, safety, and benefits.
+        children: []

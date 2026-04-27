@@ -409,6 +409,34 @@ Where an industry reference framework exists, anchor the upper levels (L1 / L2) 
 - **PBN (RNAV/RNP), SWIM, AIXM** — performance-based navigation, system-wide information management, AIM data.
 - **COSPAS-SARSAT** — emergency beacon coordination.
 
+**Automotive & Mobility**
+
+- **IATF 16949 (with ISO 9001)** — automotive QMS for OEMs and tier suppliers.
+- **VDA 6.x series, VDA QMC, MMOG/LE** — German automotive process audit, quality management standards, and logistics assessment.
+- **AIAG core tools (APQP, PPAP, FMEA, MSA, SPC, 8D), AIAG CQI assessments** — North American automotive quality core tools and special-process audits.
+- **ISO 26262** — functional safety for road vehicles.
+- **ISO/SAE 21434** — automotive cybersecurity engineering.
+- **ISO 21448 (SOTIF)** — safety of the intended functionality for ADAS / automated driving.
+- **Automotive SPICE (A-SPICE)** — automotive software development process assessment.
+- **AUTOSAR (Classic, Adaptive)** — automotive software architecture standard.
+- **UNECE WP.29 1958 / 1998 Agreements (UN Regulations and GTRs — including UN R10 EMC, UN R13/R13H braking, UN R155 cybersecurity, UN R156 software updates, UN R157 ALKS)** — international vehicle regulation harmonisation.
+- **EU Type-Approval Framework (Reg (EU) 2018/858), FMVSS (49 CFR 571), CCC (China), KS (Korea), MLIT-Japan** — regional vehicle type-approval and motor-vehicle safety standards.
+- **WLTP / WLTC, RDE, EPA Tier 3 / CARB LEV-IV, China 6, Euro 6/7** — vehicle emissions and fuel-economy test cycles.
+- **CAFE / EU CO2 fleet standards** — corporate fleet fuel-economy and CO2 obligations.
+- **Euro NCAP, IIHS, NHTSA NCAP, ANCAP, C-NCAP, JNCAP, Latin NCAP** — consumer crash-safety rating programmes.
+- **SAE J3016 (driving automation levels), SAE J1939 (heavy-duty CAN), SAE J2735 / J2945 (V2X), SAE J1772 (AC charging), SAE J3400 (NACS)** — automotive engineering and connectivity standards.
+- **ISO 15118 (V2G communication), ISO 11898 (CAN), ISO 14229 (UDS diagnostics)** — vehicle communication standards.
+- **CCS, CHAdeMO, GB/T, Tesla NACS** — EV charging connector standards.
+- **OCPP, OCPI, OpenADR** — EV charging operator, roaming, and demand-response protocols.
+- **IMDS / GADSL** — automotive material data system and global automotive declarable substance list.
+- **ELV Directive 2000/53/EC, EU Battery Regulation 2023/1542, REACH, RoHS** — substance, battery, and end-of-life regulation.
+- **Catena-X (CDX)** — automotive supply-chain data ecosystem.
+- **TISAX (ENX)** — automotive supply-chain information security assessment exchange.
+- **GTFS / GTFS-Realtime / GBFS, MaaS Alliance specifications, MDS (Mobility Data Specification)** — public-mobility and shared-mobility data interchange.
+- **EU Motor Vehicle Block Exemption (Reg 461/2010 and successor), NADA / VDIK retail standards** — franchised dealer network and aftersales rules.
+- **Magnuson-Moss Warranty Act, EU Consumer Sales Directive 2019/771** — vehicle warranty and consumer rights.
+- **NHTSA recall regulations (49 CFR 573 / 577), Reg (EU) 2018/858 Chapter XI, KMVSS recall regime** — vehicle safety recall regimes.
+
 **Banking & capital markets**
 
 - **BIAN service domains** — banking capability anchor.

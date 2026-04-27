@@ -1,0 +1,275 @@
+# EV Charging Network Operations Management
+id: BC-3480
+name: EV Charging Network Operations Management
+level: 1
+industry: "Automotive & Mobility"
+description: |
+  Operations of EV charging networks for charge-point operators and
+  e-mobility service providers — site planning, charge-point operations,
+  energy and tariff management, customer and roaming operations, billing
+  and settlement, charger maintenance, and grid-service participation.
+references:
+  - https://www.openchargealliance.org/protocols/ocpp/
+  - https://evroaming.org/ocpi/
+  - https://www.iso.org/standard/77845.html
+children:
+  - id: BC-3480.10
+    name: Charging Site Planning and Deployment
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Site selection, permitting, grid connection, and physical deployment
+      of charging infrastructure.
+    children:
+      - id: BC-3480.10.10
+        name: Charging Site Selection
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Identification and qualification of charging sites against demand,
+          land, and grid criteria.
+        children: []
+      - id: BC-3480.10.20
+        name: Site Permitting and Grid Connection
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Permitting, planning approval, and grid-connection coordination
+          for charging sites.
+        children: []
+      - id: BC-3480.10.30
+        name: Charger Installation Coordination
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Coordination of charger installation, civils, commissioning, and
+          handover to operations.
+        children: []
+  - id: BC-3480.20
+    name: Charge Point Operations
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Day-to-day operation of charge points including monitoring, session
+      lifecycle, and firmware control over OCPP.
+    children:
+      - id: BC-3480.20.10
+        name: Charge Point Monitoring
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Real-time monitoring of charge-point health, availability, and
+          alarm states.
+        children: []
+      - id: BC-3480.20.20
+        name: Charge Session Lifecycle Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Management of the charge-session lifecycle from authorisation
+          through energy delivery and termination.
+        children: []
+      - id: BC-3480.20.30
+        name: Charger Firmware and Configuration Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Management of charger firmware versions, configuration profiles,
+          and remote updates.
+        children: []
+  - id: BC-3480.30
+    name: Charging Energy and Tariff Management
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Management of energy procurement coordination, charging tariffs, and
+      time-of-use optimisation across the charging network.
+    children:
+      - id: BC-3480.30.10
+        name: Wholesale Energy Procurement Coordination
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Coordination with energy procurement on volumes, hedging, and PPAs
+          supporting charging operations.
+        children: []
+      - id: BC-3480.30.20
+        name: Charging Tariff Definition
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Definition of public, member, and roaming charging tariffs across
+          markets.
+        children: []
+      - id: BC-3480.30.30
+        name: Demand-Charge and Time-of-Use Optimisation
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Optimisation of charging operations against demand-charge and
+          time-of-use energy structures.
+        children: []
+  - id: BC-3480.40
+    name: Charging Customer and Subscription Management
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Customer onboarding, subscription plans, and authentication for charging
+      services.
+    children:
+      - id: BC-3480.40.10
+        name: Charging Account Onboarding
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Onboarding of charging customers including identity, payment, and
+          plan selection.
+        children: []
+      - id: BC-3480.40.20
+        name: Charging Subscription Plan Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Management of subscription, membership, and prepaid plans for
+          charging customers.
+        children: []
+      - id: BC-3480.40.30
+        name: Charging Authentication and Authorisation
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Authentication and authorisation of charging sessions via RFID,
+          app, or Plug-and-Charge.
+        children: []
+  - id: BC-3480.50
+    name: Charging Billing and Settlement
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Billing of charge sessions, settlement with roaming partners, and
+      receipt management for charging customers.
+    children:
+      - id: BC-3480.50.10
+        name: Charge Session Billing
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Rating and billing of charge sessions across direct and roaming
+          customers.
+        children: []
+      - id: BC-3480.50.20
+        name: Roaming Settlement
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Settlement of roaming sessions with partner CPOs and EMSPs over
+          OCPI and equivalent protocols.
+        children: []
+      - id: BC-3480.50.30
+        name: Reimbursement and Receipts Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Issuing receipts, expense reimbursement support, and tax
+          documentation for charging customers.
+        children: []
+  - id: BC-3480.60
+    name: Charging Network Interoperability
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Interoperability with roaming partners and conformance to charging
+      standards across connectors and protocols.
+    children:
+      - id: BC-3480.60.10
+        name: Roaming Partner Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Onboarding and management of roaming partners and hubs.
+        children: []
+      - id: BC-3480.60.20
+        name: Plug-and-Charge Operations
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Operation of ISO 15118 Plug-and-Charge contract certificates and
+          authentication flows.
+        children: []
+      - id: BC-3480.60.30
+        name: Charger Connector Compatibility Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Management of CCS, NACS, CHAdeMO, and GB/T connector compatibility
+          and adapter strategies.
+        children: []
+  - id: BC-3480.70
+    name: Charging Field Service and Maintenance
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Field service and maintenance of charging assets including dispatch,
+      preventive maintenance, and spare parts.
+    children:
+      - id: BC-3480.70.10
+        name: Charger Fault Dispatching
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Dispatch of field technicians in response to charger faults and
+          customer-reported issues.
+        children: []
+      - id: BC-3480.70.20
+        name: Preventive Charger Maintenance
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Planned preventive maintenance and inspection of charging assets.
+        children: []
+      - id: BC-3480.70.30
+        name: Charger Spare Parts Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Management of charger spare parts inventory, repair pools, and
+          obsolescence.
+        children: []
+  - id: BC-3480.80
+    name: Grid and Energy Service Participation
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Participation of charging assets in grid and energy markets including
+      demand response, V2G, and smart charging.
+    in_scope:
+      - V2G energy export and capacity services
+      - Demand-response programme participation
+      - Smart-charging schedule optimisation
+    out_of_scope:
+      - Generation-asset operations and wholesale energy trading
+    children:
+      - id: BC-3480.80.10
+        name: Vehicle-to-Grid Service Operations
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Operation of V2G services delivering energy and capacity products
+          to grid and balancing markets.
+        children: []
+      - id: BC-3480.80.20
+        name: Demand-Response Programme Participation
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Participation in demand-response programmes including dispatch
+          response and settlement.
+        children: []
+      - id: BC-3480.80.30
+        name: Smart-Charging Schedule Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Schedule-based smart-charging across sites and vehicles to
+          optimise cost and grid impact.
+        children: []

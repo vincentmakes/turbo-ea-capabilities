@@ -1,0 +1,275 @@
+# Mobility Services Operations Management
+id: BC-3490
+name: Mobility Services Operations Management
+level: 1
+industry: "Automotive & Mobility"
+description: |
+  Operations of shared and on-demand mobility services — ride-hailing, car
+  and micromobility sharing, and Mobility-as-a-Service aggregation —
+  including service catalogue, trip operations, fleet rebalancing, driver
+  and rider operations, dynamic pricing, partner integration, and city /
+  regulator engagement.
+references:
+  - https://gtfs.org/
+  - https://gbfs.mobilitydata.org/
+  - https://maas-alliance.eu/
+children:
+  - id: BC-3490.10
+    name: Mobility Service Catalogue Management
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Definition of mobility service types, pricing plans, and geographic
+      coverage zones.
+    children:
+      - id: BC-3490.10.10
+        name: Service Type Definition
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Definition of service types such as point-to-point, free-floating,
+          station-based, and pooled rides.
+        children: []
+      - id: BC-3490.10.20
+        name: Service Pricing Plan Configuration
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Configuration of base fares, time and distance pricing, and
+          membership plans.
+        children: []
+      - id: BC-3490.10.30
+        name: Service Geofence and Coverage Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Management of operational geofences, no-go zones, and coverage
+          areas.
+        children: []
+  - id: BC-3490.20
+    name: Trip and Booking Operations
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Capture, matching, dispatch, and lifecycle management of mobility
+      bookings and trips.
+    children:
+      - id: BC-3490.20.10
+        name: Trip Booking Capture
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Capture of trip bookings across app, web, and partner channels.
+        children: []
+      - id: BC-3490.20.20
+        name: Trip Matching and Dispatch
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Matching of riders to vehicles or drivers and dispatch of
+          confirmed trips.
+        children: []
+      - id: BC-3490.20.30
+        name: Trip Lifecycle Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Lifecycle management of in-progress trips including cancellation,
+          re-route, and completion.
+        children: []
+  - id: BC-3490.30
+    name: Shared Fleet Operations
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Operational handling of the shared fleet including rebalancing, on-site
+      servicing, and damage control.
+    in_scope:
+      - Vehicle rebalancing across zones and stations
+      - On-street cleaning, charging, and refuelling
+      - Damage and loss management for shared vehicles
+    out_of_scope:
+      - Generic corporate fleet asset accounting (BC-2430)
+      - EV charging-station operations (BC-3480)
+    children:
+      - id: BC-3490.30.10
+        name: Vehicle Rebalancing Operations
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Rebalancing of shared vehicles across zones, stations, and demand
+          hot-spots.
+        children: []
+      - id: BC-3490.30.20
+        name: Vehicle Cleaning and Charging Coordination
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Coordination of in-field vehicle cleaning, charging, and refuelling
+          activities.
+        children: []
+      - id: BC-3490.30.30
+        name: Vehicle Damage and Loss Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Management of damage assessment, repair routing, and loss recovery
+          for shared vehicles.
+        children: []
+  - id: BC-3490.40
+    name: Driver and Provider Operations
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Onboarding, compliance, settlement, and performance management of
+      drivers and other service providers.
+    children:
+      - id: BC-3490.40.10
+        name: Driver Onboarding and Compliance
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Onboarding of drivers including licence checks, background screening,
+          and ongoing compliance.
+        children: []
+      - id: BC-3490.40.20
+        name: Driver Earnings and Settlement
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Calculation and payment of driver earnings, tips, and incentives.
+        children: []
+      - id: BC-3490.40.30
+        name: Driver Performance Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Performance management of drivers including ratings, coaching, and
+          deactivation.
+        children: []
+  - id: BC-3490.50
+    name: Rider Operations
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Onboarding, support, and trust-and-safety operations for riders and
+      end customers of mobility services.
+    children:
+      - id: BC-3490.50.10
+        name: Rider Onboarding and Identity
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Onboarding of riders including identity verification, payment
+          method, and consent.
+        children: []
+      - id: BC-3490.50.20
+        name: Rider Support Operations
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Support for riders across pre-trip, in-trip, and post-trip issues.
+        children: []
+      - id: BC-3490.50.30
+        name: Rider Safety and Trust Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Trust-and-safety operations including incident handling, abuse
+          prevention, and safety features.
+        children: []
+  - id: BC-3490.60
+    name: Dynamic Pricing and Demand Management
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Demand forecasting and operation of dynamic pricing, surge, and
+      promotion engines for mobility services.
+    children:
+      - id: BC-3490.60.10
+        name: Demand Forecasting
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Short-horizon demand forecasting by zone, time, and service type.
+        children: []
+      - id: BC-3490.60.20
+        name: Dynamic Pricing Engine Operations
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Operation of dynamic-pricing and surge engines including price
+          guard-rails and audit.
+        children: []
+      - id: BC-3490.60.30
+        name: Promotion and Incentive Operations
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Operation of rider and driver promotions and incentives across
+          campaigns.
+        children: []
+  - id: BC-3490.70
+    name: Multimodal Aggregation and Partner Operations
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      MaaS partner aggregation, multimodal trip composition, and inter-operator
+      settlement across mobility partners.
+    children:
+      - id: BC-3490.70.10
+        name: MaaS Partner Onboarding
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Onboarding of public-transport, ride-hail, and micromobility
+          partners onto the MaaS platform.
+        children: []
+      - id: BC-3490.70.20
+        name: Multimodal Trip Composition
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Composition of multimodal trips combining public transport and
+          on-demand mobility.
+        children: []
+      - id: BC-3490.70.30
+        name: Inter-Operator Settlement
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Settlement of revenue and fees between MaaS aggregators and
+          underlying mobility operators.
+        children: []
+  - id: BC-3490.80
+    name: Mobility Regulatory and City Operations
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Engagement with cities and regulators on permits, data sharing, and
+      curb / parking operations.
+    children:
+      - id: BC-3490.80.10
+        name: City Permit and Authorisation Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Management of city operating permits, vehicle caps, and
+          authorisations across jurisdictions.
+        children: []
+      - id: BC-3490.80.20
+        name: Operational Data Sharing with Cities
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Sharing of operational data with cities under MDS, GBFS, and
+          equivalent specifications.
+        children: []
+      - id: BC-3490.80.30
+        name: Curb and Parking Coordination
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Coordination of curb access, parking, and staging zones with city
+          authorities.
+        children: []

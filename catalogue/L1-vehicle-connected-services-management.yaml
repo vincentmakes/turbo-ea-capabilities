@@ -1,0 +1,246 @@
+# Vehicle Connected Services Management
+id: BC-3460
+name: Vehicle Connected Services Management
+level: 1
+industry: "Automotive & Mobility"
+description: |
+  Operation of connected vehicle services — vehicle connectivity platform,
+  over-the-air software updates, in-vehicle apps and subscriptions, vehicle
+  data platform, V2X services, vehicle security operations, and connected
+  service customer support.
+references:
+  - https://unece.org/transport/documents/2021/03/standards/un-regulation-no-156-software-update-and-software-update
+  - https://www.iso.org/standard/70918.html
+  - https://www.sae.org/standards/content/j2735_202007/
+children:
+  - id: BC-3460.10
+    name: Vehicle Connectivity Platform Operations
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Operation of in-vehicle connectivity, SIM provisioning, and the
+      vehicle-to-cloud telemetry platform.
+    children:
+      - id: BC-3460.10.10
+        name: Vehicle SIM and Connectivity Provisioning
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Provisioning of embedded SIM connectivity and carrier roaming for
+          connected vehicles.
+        children: []
+      - id: BC-3460.10.20
+        name: Connectivity Network Operations
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Operation of the connectivity backbone supporting vehicle services
+          including failover and quality of service.
+        children: []
+      - id: BC-3460.10.30
+        name: Vehicle-to-Cloud Telemetry Operations
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Operation of vehicle telemetry pipelines from in-vehicle agents to
+          cloud platforms.
+        children: []
+  - id: BC-3460.20
+    name: Over-the-Air Software Update Operations
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Operation of OTA software-update campaigns aligned with UN R156 and
+      the software-update management system.
+    children:
+      - id: BC-3460.20.10
+        name: OTA Campaign Planning
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Planning of OTA software-update campaigns including scope,
+          eligibility, and rollout strategy.
+        children: []
+      - id: BC-3460.20.20
+        name: OTA Package Distribution
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Distribution of signed OTA packages to vehicles and orchestration
+          of installation across ECUs.
+        children: []
+      - id: BC-3460.20.30
+        name: OTA Rollback and Recovery Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Management of OTA rollback, recovery, and field-incident response
+          when updates fail.
+        children: []
+  - id: BC-3460.30
+    name: In-Vehicle App and Subscription Management
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Operation of the in-vehicle app store, subscription lifecycle, and
+      in-vehicle payment services.
+    children:
+      - id: BC-3460.30.10
+        name: Connected Service Catalogue Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Maintenance of the catalogue of connected services and in-vehicle
+          apps offered to customers.
+        children: []
+      - id: BC-3460.30.20
+        name: Subscription Lifecycle Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Lifecycle management of customer subscriptions to connected and
+          feature-on-demand services.
+        children: []
+      - id: BC-3460.30.30
+        name: In-Vehicle Payment Operations
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Operation of in-vehicle payment, tokenisation, and transaction
+          settlement.
+        children: []
+  - id: BC-3460.40
+    name: Vehicle Data Platform Operations
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Operation of the vehicle data platform — ingestion, storage, sharing,
+      and consent management — supporting first- and third-party use cases.
+    in_scope:
+      - Vehicle data ingestion and storage
+      - Vehicle data sharing APIs to internal and partner consumers
+      - Privacy and consent management for vehicle data
+    out_of_scope:
+      - Generic enterprise data management (covered under enterprise data and IT)
+      - Functional safety case authoring (BC-3400.80)
+    children:
+      - id: BC-3460.40.10
+        name: Vehicle Data Ingestion and Storage
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Ingestion, normalisation, and storage of vehicle telemetry and
+          event data at fleet scale.
+        children: []
+      - id: BC-3460.40.20
+        name: Vehicle Data Sharing and API Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Provision of vehicle data APIs to internal teams, dealers, and
+          external partners under data-sharing agreements.
+        children: []
+      - id: BC-3460.40.30
+        name: Vehicle Data Privacy and Consent Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Management of customer consent, preferences, and privacy controls
+          for vehicle-generated data.
+        children: []
+  - id: BC-3460.50
+    name: V2X and Cooperative Mobility Services
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Operation of V2X message services and cooperative mobility services
+      with infrastructure and other vehicles.
+    children:
+      - id: BC-3460.50.10
+        name: V2I Service Operations
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Operation of vehicle-to-infrastructure services such as signal
+          phase and timing, road-works warning, and tolling.
+        children: []
+      - id: BC-3460.50.20
+        name: V2V Message Operations
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Operation of vehicle-to-vehicle message services and broadcast
+          channels per SAE J2735 and equivalents.
+        children: []
+      - id: BC-3460.50.30
+        name: Cooperative Awareness Service Operations
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Operation of cooperative awareness, hazard-warning, and platooning
+          services across mixed fleets.
+        children: []
+  - id: BC-3460.60
+    name: Vehicle Security Operations
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Operational security monitoring of the connected vehicle fleet and
+      response to vehicle cyber incidents.
+    children:
+      - id: BC-3460.60.10
+        name: Vehicle Threat Detection
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Detection of cyber threats and anomalous behaviour across the
+          connected vehicle fleet.
+        children: []
+      - id: BC-3460.60.20
+        name: Vehicle Security Incident Response
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Response to vehicle cyber-security incidents including containment,
+          remediation, and customer notification.
+        children: []
+      - id: BC-3460.60.30
+        name: Vehicle SOC Operations
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Operation of the vehicle security operations centre and supporting
+          telemetry pipelines.
+        children: []
+  - id: BC-3460.70
+    name: Connected Service Customer Operations
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Customer-facing operations for connected services, including activation
+      support, issue resolution, and account management.
+    children:
+      - id: BC-3460.70.10
+        name: Connected Service Activation Support
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Support for customer activation, transfer, and deactivation of
+          connected services.
+        children: []
+      - id: BC-3460.70.20
+        name: Connected Service Issue Resolution
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Resolution of customer-reported connected-service issues across
+          contact-centre, dealer, and self-service channels.
+        children: []
+      - id: BC-3460.70.30
+        name: Connected Service Account Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Management of connected-service customer accounts, identity, and
+          entitlement linking to vehicles.
+        children: []

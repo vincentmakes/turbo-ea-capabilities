@@ -1,0 +1,258 @@
+# Vehicle Sales & Distribution Management
+id: BC-3440
+name: "Vehicle Sales & Distribution Management"
+level: 1
+industry: "Automotive & Mobility"
+description: |
+  Operational sales and distribution of new vehicles — wholesale planning,
+  factory-build allocation, order banks, demonstrator and certified pre-owned
+  inventory, fleet and B2B sales, and the handover-and-registration interface
+  to retail customers.
+references:
+  - https://www.iatfglobaloversight.org/iatf-169492016/
+  - https://www.aiag.org/quality
+children:
+  - id: BC-3440.10
+    name: Vehicle Sales Planning and Allocation
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Planning of wholesale vehicle volumes by market and dealer and
+      allocation of factory build slots accordingly.
+    children:
+      - id: BC-3440.10.10
+        name: Wholesale Volume Planning
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Periodic planning of wholesale vehicle volumes by market, model,
+          and segment.
+        children: []
+      - id: BC-3440.10.20
+        name: Production-to-Market Allocation
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Allocation of finite plant capacity to markets and channels in line
+          with demand and strategic priorities.
+        children: []
+      - id: BC-3440.10.30
+        name: Build Slot Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Allocation, swap, and release of factory build slots to dealers and
+          fleet customers.
+        children: []
+  - id: BC-3440.20
+    name: Vehicle Order Bank Management
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Capture, configuration validation, and lifecycle management of stock
+      and customer vehicle orders.
+    children:
+      - id: BC-3440.20.10
+        name: Stock Order Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Management of dealer stock orders against allocations and stock
+          targets.
+        children: []
+      - id: BC-3440.20.20
+        name: Customer Order Capture
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Capture of retail and fleet customer vehicle orders including
+          configuration and pricing.
+        children: []
+      - id: BC-3440.20.30
+        name: Order Configuration Validation
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Validation of order configurations against feasibility, regulatory,
+          and pricing rules.
+        children: []
+      - id: BC-3440.20.40
+        name: Order Status Tracking
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          End-to-end tracking of order status from receipt through build,
+          ship, and dealer arrival.
+        children: []
+  - id: BC-3440.30
+    name: Factory Build and Distribution Operations
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Coordination of build-to-order execution and outbound vehicle logistics
+      from plant to dealer.
+    children:
+      - id: BC-3440.30.10
+        name: Build-to-Order Coordination
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Coordination of build-to-order execution with manufacturing
+          operations and supplier callouts.
+        children: []
+      - id: BC-3440.30.20
+        name: Vehicle Logistics Coordination
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Coordination of outbound vehicle logistics by truck, rail, ship,
+          and inland yard moves.
+        children: []
+      - id: BC-3440.30.30
+        name: Port-of-Entry and Yard Operations Coordination
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Coordination of port-of-entry, processing centre, and yard
+          operations including pre-delivery accessorisation.
+        children: []
+  - id: BC-3440.40
+    name: Vehicle Inventory and Demonstrator Management
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Management of dealer stock, demonstrator, press, and loaner vehicle
+      inventories.
+    children:
+      - id: BC-3440.40.10
+        name: Dealer Stock Inventory Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Visibility and management of vehicle inventory at dealers and in
+          transit.
+        children: []
+      - id: BC-3440.40.20
+        name: Demonstrator Vehicle Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Management of demonstrator vehicle pools used by dealers and OEM
+          field sales.
+        children: []
+      - id: BC-3440.40.30
+        name: Press and Loaner Fleet Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Management of press, marketing, and loaner fleets including
+          configurations and rotation.
+        children: []
+  - id: BC-3440.50
+    name: Certified Pre-Owned Programme Management
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Management of OEM certified pre-owned vehicle programmes covering
+      inspection, eligibility, branding, and warranty.
+    in_scope:
+      - CPO inspection and eligibility criteria
+      - CPO inventory and pricing
+      - CPO-specific warranty programmes
+    out_of_scope:
+      - Used-vehicle remarketing of off-lease inventory beyond the CPO programme
+    children:
+      - id: BC-3440.50.10
+        name: CPO Vehicle Eligibility and Inspection
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Definition and execution of CPO eligibility criteria and
+          inspection standards.
+        children: []
+      - id: BC-3440.50.20
+        name: CPO Inventory Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Management of CPO inventory across dealers and central pools.
+        children: []
+      - id: BC-3440.50.30
+        name: CPO Warranty and Branding
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Branded CPO warranty programme design and merchandising.
+        children: []
+  - id: BC-3440.60
+    name: Fleet and Business-to-Business Sales Management
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Sales operations for fleet, leasing, rental, and other B2B vehicle
+      buyers including tender and bid handling.
+    children:
+      - id: BC-3440.60.10
+        name: Fleet Account Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Management of large fleet accounts and corporate customer
+          relationships.
+        children: []
+      - id: BC-3440.60.20
+        name: Fleet Tender and Bid Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Response to fleet tenders, RFPs, and structured bid processes for
+          large vehicle deals.
+        children: []
+      - id: BC-3440.60.30
+        name: Fleet Vehicle Specification Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Management of fleet-specific vehicle specifications, options, and
+          conversions.
+        children: []
+      - id: BC-3440.60.40
+        name: Rental and Leasing Channel Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Management of OEM relationships with rental and leasing companies
+          including buy-back arrangements.
+        children: []
+  - id: BC-3440.70
+    name: Vehicle Handover and Registration Support
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Support to dealers for vehicle handover, registration, and entry to the
+      customer-experience phase.
+    children:
+      - id: BC-3440.70.10
+        name: Pre-Delivery Inspection Coordination
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Coordination of pre-delivery inspection standards and sign-offs
+          across dealers and processing centres.
+        children: []
+      - id: BC-3440.70.20
+        name: Vehicle Registration Liaison
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Liaison with vehicle registration authorities and provision of
+          first-registration data.
+        children: []
+      - id: BC-3440.70.30
+        name: Customer Handover Experience
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Definition and assurance of the customer handover experience at
+          delivery.
+        children: []

@@ -1,0 +1,271 @@
+# Vehicle Aftersales & Warranty Management
+id: BC-3450
+name: "Vehicle Aftersales & Warranty Management"
+level: 1
+industry: "Automotive & Mobility"
+description: |
+  OEM-side aftersales — warranty operations and adjudication, recall and
+  service-campaign management, technical service information, customer
+  assistance, and the engineering feedback loop, anchored on Magnuson-Moss,
+  EU consumer-sales rules, and NHTSA / EU recall regimes.
+references:
+  - https://www.law.cornell.edu/uscode/text/15/chapter-50
+  - https://www.nhtsa.gov/recalls
+  - https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-573
+  - https://eur-lex.europa.eu/eli/dir/2019/771/oj
+children:
+  - id: BC-3450.10
+    name: Warranty Policy and Claims Management
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Definition of warranty policies and adjudication of dealer warranty
+      claims including supplier recovery.
+    children:
+      - id: BC-3450.10.10
+        name: Warranty Policy Definition
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Definition of warranty terms, durations, coverages, and exclusions
+          across markets and product lines.
+        children: []
+      - id: BC-3450.10.20
+        name: Warranty Claim Adjudication
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Adjudication of dealer warranty claims including labour-time
+          standards and parts validation.
+        children: []
+      - id: BC-3450.10.30
+        name: Goodwill and Concession Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Management of goodwill repairs, concessions, and customer-loyalty
+          warranty extensions.
+        children: []
+      - id: BC-3450.10.40
+        name: Supplier Recovery Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Recovery of warranty cost from responsible suppliers under
+          warranty cost-sharing agreements.
+        children: []
+  - id: BC-3450.20
+    name: Service Campaign and Recall Management
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      End-to-end management of safety recalls and non-safety service
+      campaigns including notification and completion tracking.
+    children:
+      - id: BC-3450.20.10
+        name: Recall Decision and Notification
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Decision making and statutory notification of safety recalls to
+          authorities and owners.
+        children: []
+      - id: BC-3450.20.20
+        name: Service Campaign Planning
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Planning of service campaigns including remedy definition, parts
+          provisioning, and dealer instructions.
+        children: []
+      - id: BC-3450.20.30
+        name: Owner Notification Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Identification and notification of affected vehicle owners by post,
+          email, and in-vehicle channels.
+        children: []
+      - id: BC-3450.20.40
+        name: Campaign Completion Tracking
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Tracking of recall and campaign completion rates and regulatory
+          reporting obligations.
+        children: []
+  - id: BC-3450.30
+    name: Technical Service Information Management
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Authoring and distribution of repair procedures, technical bulletins,
+      and diagnostic information for the dealer service network.
+    children:
+      - id: BC-3450.30.10
+        name: Repair Procedure Authoring
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Authoring of vehicle repair procedures, exploded views, and
+          torque / clamping data.
+        children: []
+      - id: BC-3450.30.20
+        name: Technical Service Bulletin Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Authoring, release, and lifecycle management of technical service
+          bulletins.
+        children: []
+      - id: BC-3450.30.30
+        name: Diagnostic Trouble Code Library Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Maintenance of DTC libraries, diagnostic trees, and related
+          guided-diagnostic content.
+        children: []
+      - id: BC-3450.30.40
+        name: Service Tooling Specification
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Specification of special tools and dealer service equipment for
+          vehicle service operations.
+        children: []
+  - id: BC-3450.40
+    name: Vehicle Diagnostic and Telematics Service Operations
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      OEM operations supporting connected diagnostics, remote diagnostic data,
+      and dealer diagnostic-tool ecosystems.
+    children:
+      - id: BC-3450.40.10
+        name: Remote Vehicle Diagnostics Operations
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Operation of remote vehicle health and diagnostic services in
+          support of dealer service.
+        children: []
+      - id: BC-3450.40.20
+        name: Diagnostic Tool Update Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Management of dealer diagnostic-tool software, calibration data,
+          and security access.
+        children: []
+      - id: BC-3450.40.30
+        name: Service Data Aggregation
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Aggregation and analysis of service event data from dealers and
+          connected vehicles.
+        children: []
+  - id: BC-3450.50
+    name: Customer Assistance and Roadside Operations
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      OEM-branded customer assistance services including roadside, mobility
+      replacement, and vehicle repatriation.
+    children:
+      - id: BC-3450.50.10
+        name: Roadside Assistance Operations
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Operation of OEM-branded roadside assistance for breakdown and
+          incident response.
+        children: []
+      - id: BC-3450.50.20
+        name: Mobility Replacement Coordination
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Coordination of replacement transport for customers during repair
+          or breakdown.
+        children: []
+      - id: BC-3450.50.30
+        name: Vehicle Repatriation Coordination
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Coordination of vehicle repatriation following incidents abroad or
+          long-distance breakdown.
+        children: []
+  - id: BC-3450.60
+    name: Aftersales Parts Logistics Coordination
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Coordination with the aftermarket parts supply chain to support dealer
+      service demand and recall remedies.
+    in_scope:
+      - Parts demand and supply coordination with dealers
+      - Critical parts expedite for vehicle-off-road events
+      - Recall parts allocation across dealer networks
+    out_of_scope:
+      - Spare parts catalogue and pricing (BC-1060 Spare Parts & Aftermarket Management)
+      - Parts warehousing and physical distribution operations (BC-1060)
+    children:
+      - id: BC-3450.60.10
+        name: Parts Demand Coordination with Dealers
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Coordination of dealer parts demand visibility and replenishment
+          signals to the parts supply chain.
+        children: []
+      - id: BC-3450.60.20
+        name: Critical Parts Expedite Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Expediting of critical parts for vehicle-off-road and high-severity
+          customer cases.
+        children: []
+      - id: BC-3450.60.30
+        name: Recall Parts Allocation
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Allocation of constrained recall parts to dealers and markets based
+          on affected-population priorities.
+        children: []
+  - id: BC-3450.70
+    name: Aftersales Performance and Quality Feedback
+    level: 2
+    industry: "Automotive & Mobility"
+    description: |
+      Analysis of field-failure trends and customer feedback and routing of
+      issues back into engineering and production.
+    children:
+      - id: BC-3450.70.10
+        name: Field Failure Trend Analysis
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Analysis of warranty and service-event data to identify field
+          failure trends and emerging issues.
+        children: []
+      - id: BC-3450.70.20
+        name: Aftersales Customer Voice Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Capture and analysis of aftersales customer voice including surveys
+          and dealer-recorded feedback.
+        children: []
+      - id: BC-3450.70.30
+        name: Engineering Feedback Loop Management
+        level: 3
+        industry: "Automotive & Mobility"
+        description: |
+          Routing of field-quality issues into engineering for containment,
+          fix, and lessons-learned.
+        children: []
