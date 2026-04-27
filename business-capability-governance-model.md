@@ -591,6 +591,23 @@ Where an industry reference framework exists, anchor the upper levels (L1 / L2) 
 - **ISO 39001** — road traffic safety management systems.
 - **Hague-Visby Rules, Hamburg Rules, Rotterdam Rules, Montreal Convention, Warsaw Convention** — carrier liability conventions.
 
+**Public Sector & Government**
+
+- **TOGAF Government Reference Model and FEAF / FEA Performance Reference Model** — government enterprise architecture reference models.
+- **OECD Digital Government Principles, OECD Recommendations on Public Service Leadership and Capability** — international good-practice frameworks for public administration and digital government.
+- **OMB Circulars (A-11 budget preparation, A-123 internal controls, A-130 information management)** — US federal management policy.
+- **EU Public Procurement Directives (2014/24/EU classical, 2014/25/EU utilities, 2014/23/EU concessions); FAR / DFARS** — public-sector procurement and contracting regimes.
+- **IPSAS (International Public Sector Accounting Standards), IMF GFSM 2014, COFOG (Classification of the Functions of Government)** — public-sector financial reporting and statistics.
+- **INTOSAI ISSAI standards** — supreme-audit-institution professional standards.
+- **NIST SP 800-53, NIST SP 800-37 Risk Management Framework, FISMA, FedRAMP** — federal information-security and authorisation regimes.
+- **NIST SP 800-63 (Digital Identity Guidelines), eIDAS Regulation (EU 910/2014, eIDAS 2.0)** — government digital identity and trust services.
+- **WCAG 2.x, Section 508 (29 USC 794d), EU Web Accessibility Directive 2016/2102** — public service digital accessibility.
+- **NIEM (National Information Exchange Model), DCAT-AP, ISA² Core Vocabularies** — government data interchange and open-data semantics.
+- **FEMA NIMS / ICS, ISO 22320, Sendai Framework for Disaster Risk Reduction 2015-2030** — emergency management and disaster risk reduction.
+- **Open Government Partnership commitments, UN Convention against Corruption (UNCAC), Aarhus Convention** — transparency, integrity, and information rights.
+- **VVSG (Voluntary Voting System Guidelines — US EAC), Council of Europe / Venice Commission Code of Good Practice in Electoral Matters** — election technology and electoral administration.
+- **UNHCR Refugee Status Determination Guidelines, ICAO Doc 9303 (machine-readable travel documents), IOM standards** — asylum processing and travel-document standards.
+
 **Other industry anchors not yet exercised in the catalogue but recommended for adoption**
 
 *(All previously listed industries have been promoted to dedicated subsections above.)*
