@@ -637,6 +637,21 @@ Where an industry reference framework exists, anchor the upper levels (L1 / L2) 
 - **Universal Service Obligation regimes and emergency-call standards (E911, eCall, 112)** — universal access and emergency services.
 - **CTIA, FCC Part 15, RED 2014/53/EU** — device certification and emissions for end-user equipment.
 
+**Travel & Hospitality**
+
+- **OpenTravel Alliance (OTA messaging schemas)** — XML messaging for hotel, air, car, rail, package, and rental shopping/booking transactions.
+- **HTNG (Hospitality Technology Next Generation)** — hospitality systems integration standards covering PMS, POS, distribution, and guest-facing technology.
+- **AHLA USALI (Uniform System of Accounts for the Lodging Industry)** — lodging financial reporting and operating-statistics standard.
+- **HEDNA (Hotel Electronic Distribution Network Association)** — hotel electronic distribution practices and rate-content standards.
+- **IATA Resolutions and Recommended Practices (NDC, ONE Order, BSP/ARC settlement, Resolution 753 baggage tracking, Timatic)** — airline distribution, settlement, baggage, and travel-document data.
+- **GDS standards (Amadeus / Sabre / Travelport — EDIFACT and modern API specifications)** — global distribution system shopping, booking, and ticketing protocols.
+- **ISO 18513 and ISO/TC 228 deliverables** — terminology and quality criteria for tourism services and accommodation.
+- **WTTC Safe Travels and Hotel Sustainability Basics; Green Key, EarthCheck, GSTC Industry Criteria** — travel and hospitality safety and sustainability assurance.
+- **CLIA (Cruise Lines International Association) Cruise Industry Operational Safety Review; IMO SOLAS Chapters II / III / V** — cruise operational safety and passenger-ship regulation.
+- **EU Regulation 261/2004, US DOT 14 CFR Part 259, Montreal Convention 1999, EU Package Travel Directive 2015/2302** — passenger rights, irregular-operations compensation, carrier liability, and packaged-travel consumer protection.
+- **PCI DSS, GDPR, APEC CBPR** — card-not-present payment data security and traveller-personal-data protection as acutely applied across travel & hospitality.
+- **AAA Diamond, Forbes Travel Guide, Michelin Guide rating systems** — third-party hospitality service-rating frameworks.
+
 **Transportation & Logistics**
 
 - **SCOR (Supply Chain Operations Reference) — APICS/ASCM** — cross-modal supply-chain process taxonomy used as a process anchor by carriers, forwarders, and 3PLs.

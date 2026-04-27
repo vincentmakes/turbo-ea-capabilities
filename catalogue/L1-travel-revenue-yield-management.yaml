@@ -1,0 +1,263 @@
+# Travel Revenue & Yield Management
+id: BC-4030
+name: "Travel Revenue & Yield Management"
+level: 1
+industry: "Travel & Hospitality"
+description: |
+  Demand forecasting, dynamic pricing, inventory controls, and yield
+  decisions that maximise revenue across travel products — distinct from
+  product master, distribution wiring, and reservation lifecycle.
+references:
+  - https://www.ahla.com/usali
+  - https://hedna.org/
+  - https://opentravel.org/
+in_scope:
+  - Unconstrained demand and pickup-pace forecasting
+  - Pricing and rate-strategy management (BAR, fare class, season)
+  - Booking limits, length-of-stay restrictions, overbooking, nesting
+  - Competitive rate intelligence and market positioning
+  - Promotion and discount mechanics
+  - Revenue performance reporting (RevPAR, RevPAX, ADR, yield)
+out_of_scope:
+  - Product master definition (BC-4000)
+  - Channel-specific bidding on metasearch (BC-4010.40.20)
+  - Group sales contracting (BC-4110.10)
+children:
+  - id: BC-4030.10
+    name: Travel Demand Forecasting
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Forecasting of unconstrained demand, booking pace, group demand,
+      and no-show or cancellation behaviour for travel products.
+    children:
+      - id: BC-4030.10.10
+        name: Unconstrained Demand Forecasting
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Forecasting of demand absent capacity and price constraints.
+        children: []
+      - id: BC-4030.10.20
+        name: "Booking Pace & Pickup Forecasting"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Forecasting of pace and pickup curves against historical and
+          on-the-books patterns.
+        children: []
+      - id: BC-4030.10.30
+        name: Group Demand Forecasting
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Forecasting of group demand including displacement effects on
+          transient inventory.
+        children: []
+      - id: BC-4030.10.40
+        name: "No-Show & Cancellation Forecasting"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Forecasting of no-show and cancellation behaviour as inputs to
+          overbooking and inventory controls.
+        children: []
+  - id: BC-4030.20
+    name: "Pricing & Rate Strategy Management"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Definition and adjustment of rate strategy across BAR levels, fare
+      classes, season windows, and package pricing.
+    children:
+      - id: BC-4030.20.10
+        name: Best Available Rate Setting
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Setting of best-available-rate ladders by date and segment.
+        children: []
+      - id: BC-4030.20.20
+        name: "Fare Class & Bucket Strategy"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Strategy for fare classes and inventory buckets including
+          opens, closes, and re-leveling.
+        children: []
+      - id: BC-4030.20.30
+        name: "Seasonal & Day-Type Pricing"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Pricing variation across seasons, day-of-week patterns, and
+          event windows.
+        children: []
+      - id: BC-4030.20.40
+        name: "Package & Bundle Pricing"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Pricing for packaged products and bundles including component
+          allocation.
+        children: []
+  - id: BC-4030.30
+    name: "Inventory & Capacity Controls"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Inventory controls including booking limits, length-of-stay
+      restrictions, overbooking strategy, and bid-price nesting.
+    children:
+      - id: BC-4030.30.10
+        name: "Booking Limit & Authorisation Setting"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Setting of booking limits and authorisation levels by class,
+          channel, and segment.
+        children: []
+      - id: BC-4030.30.20
+        name: Length-of-Stay Restriction Management
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Management of length-of-stay restrictions including minimums,
+          maximums, and arrival-day rules.
+        children: []
+      - id: BC-4030.30.30
+        name: Overbooking Strategy Management
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Strategic management of overbooking levels by date and
+          segment, calibrated against denied-service costs.
+        children: []
+      - id: BC-4030.30.40
+        name: "Nesting & Bid-Price Management"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Management of inventory nesting and bid-price thresholds in
+          revenue-optimisation models.
+        children: []
+  - id: BC-4030.40
+    name: Competitive Rate Intelligence
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Competitive rate shopping, market-share analysis, and rate
+      positioning recommendations.
+    children:
+      - id: BC-4030.40.10
+        name: Competitive Rate Shopping
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Routine shopping of competitor rates across selected channels
+          and arrival dates.
+        children: []
+      - id: BC-4030.40.20
+        name: "Market Share & Penetration Analysis"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Analysis of market share, occupancy index, and rate index
+          against competitive set.
+        children: []
+      - id: BC-4030.40.30
+        name: Rate Position Recommendations
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Generation of rate-position recommendations against the
+          competitive set and demand state.
+        children: []
+      - id: BC-4030.40.40
+        name: "Compset Definition & Maintenance"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Definition and ongoing maintenance of competitive sets used
+          for benchmarking.
+        children: []
+  - id: BC-4030.50
+    name: "Promotion & Discount Management"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Definition and operation of promotions, discount codes, opaque
+      and closed-user-group pricing across travel products.
+    children:
+      - id: BC-4030.50.10
+        name: Promotion Calendar Management
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Calendar management of promotions across seasons and key
+          booking windows.
+        children: []
+      - id: BC-4030.50.20
+        name: Promotion Eligibility Rules
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Eligibility rules governing promotion redemption by segment,
+          channel, and stay window.
+        children: []
+      - id: BC-4030.50.30
+        name: "Discount Code & Voucher Management"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Management of discount codes, vouchers, and gift-card-style
+          tokens for promotional use.
+        children: []
+      - id: BC-4030.50.40
+        name: "Opaque & Closed-User-Group Pricing"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operation of opaque-channel and closed-user-group pricing
+          mechanisms that protect public-rate visibility.
+        children: []
+  - id: BC-4030.60
+    name: Revenue Performance Analysis
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Reporting and analysis of revenue performance including RevPAR,
+      RevPAX, ADR, yield, and forecast variance.
+    children:
+      - id: BC-4030.60.10
+        name: Revenue KPI Reporting
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Reporting of headline revenue KPIs against budget and prior
+          period.
+        children: []
+      - id: BC-4030.60.20
+        name: Yield Variance Analysis
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Analysis of yield variance attributing change to mix, rate,
+          and occupancy effects.
+        children: []
+      - id: BC-4030.60.30
+        name: Channel Revenue Contribution Analysis
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Analysis of revenue contribution by channel, segment, and
+          rate code.
+        children: []
+      - id: BC-4030.60.40
+        name: Revenue Forecast vs Actual Analysis
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Analysis of forecast versus actual revenue with attribution to
+          forecast-error sources.
+        children: []

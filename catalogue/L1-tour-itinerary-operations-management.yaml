@@ -1,0 +1,308 @@
+# Tour & Itinerary Operations Management
+id: BC-4100
+name: "Tour & Itinerary Operations Management"
+level: 1
+industry: "Travel & Hospitality"
+description: |
+  Operation of tour operator and destination-management activities —
+  product assembly and supplier contracting, departure decisioning,
+  guide and escort delivery, in-destination logistics, supplier
+  coordination, itinerary recovery, and traveller documentation.
+references:
+  - https://opentravel.org/
+  - https://www.gstcouncil.org/
+  - https://eur-lex.europa.eu/eli/dir/2015/2302/oj
+in_scope:
+  - Tour product assembly and supplier contracting
+  - Departure threshold and go/no-go decisions
+  - Guide assignment, briefing, and on-tour performance
+  - In-destination transfers and day-tour delivery
+  - Live itinerary modification and force-majeure recovery
+  - Tour customer documentation and voucher issuance
+out_of_scope:
+  - Tour product master and inventory pool definition (BC-4000.30)
+  - Reservation and booking lifecycle (BC-4020)
+  - Cruise voyage operations (BC-4090)
+children:
+  - id: BC-4100.10
+    name: "Tour Product Assembly & Contracting"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Assembly of tour products, supplier contracting, costing, routing,
+      and product lifecycle status across tour brands.
+    children:
+      - id: BC-4100.10.10
+        name: "Supplier Contracting & Allotment Negotiation"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Contracting of accommodation, transport, and activity
+          suppliers including allotment negotiation.
+        children: []
+      - id: BC-4100.10.20
+        name: "Tour Costing & Margin Build"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Costing of tour products and construction of margin against
+          target sell prices.
+        children: []
+      - id: BC-4100.10.30
+        name: "Itinerary Composition & Routing"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Composition of itineraries and routing across destinations
+          and supplier components.
+        children: []
+      - id: BC-4100.10.40
+        name: Tour Product Lifecycle Status
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Lifecycle status of tour products from concept and pilot to
+          retired.
+        children: []
+  - id: BC-4100.20
+    name: Tour Departure Management
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Decisioning on tour departures covering minimum-pax thresholds,
+      allocation, brand consolidation, and cancellation or substitution.
+    children:
+      - id: BC-4100.20.10
+        name: "Departure Threshold & Go/No-Go Decisioning"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Decisioning on whether scheduled departures will operate
+          against minimum-pax thresholds.
+        children: []
+      - id: BC-4100.20.20
+        name: "Departure Allocation & Inventory Release"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Allocation of seats and inventory release decisions across
+          departures.
+        children: []
+      - id: BC-4100.20.30
+        name: Departure Consolidation Across Brands
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Consolidation of marginal departures across sister brands or
+          partner operators.
+        children: []
+      - id: BC-4100.20.40
+        name: "Departure Cancellation & Substitution"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Cancellation of unviable departures and substitution onto
+          alternative departure dates.
+        children: []
+  - id: BC-4100.30
+    name: "Tour Guide & Escort Operations"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Assignment, briefing, performance management, and local-guide
+      coordination for tour delivery.
+    children:
+      - id: BC-4100.30.10
+        name: "Guide & Tour Director Assignment"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Assignment of guides and tour directors to departures
+          against language and itinerary requirements.
+        children: []
+      - id: BC-4100.30.20
+        name: "Pre-Tour Briefing & Script Management"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Pre-tour briefing of escort teams and management of itinerary
+          scripts and content.
+        children: []
+      - id: BC-4100.30.30
+        name: On-Tour Guide Performance Monitoring
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Monitoring of guide performance during tour delivery using
+          guest feedback and escort reports.
+        children: []
+      - id: BC-4100.30.40
+        name: Local Guide Coordination
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Coordination of local guides at destinations against city
+          and site-specific requirements.
+        children: []
+  - id: BC-4100.40
+    name: "In-Destination Logistics & Transfers"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      In-destination logistics covering coach and vehicle services,
+      airport and hotel transfers, day-tour execution, and activity
+      ticketing.
+    children:
+      - id: BC-4100.40.10
+        name: "Coach & Vehicle Logistics"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Logistics for coach and vehicle services across the
+          itinerary.
+        children: []
+      - id: BC-4100.40.20
+        name: "Airport & Hotel Transfers"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operation of airport and hotel transfers for tour travellers.
+        children: []
+      - id: BC-4100.40.30
+        name: Day-Tour Execution Operations
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Execution of day tours and excursions within multi-day
+          itineraries.
+        children: []
+      - id: BC-4100.40.40
+        name: "Activity & Attraction Ticketing Operations"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operations for activity and attraction ticketing including
+          time-slot allocation.
+        children: []
+  - id: BC-4100.50
+    name: Tour Supplier Coordination
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Coordination with destination management companies, accommodation,
+      and activity suppliers across operational delivery.
+    children:
+      - id: BC-4100.50.10
+        name: "DMC & Local Operator Coordination"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Coordination with destination management companies and local
+          operators delivering tour services.
+        children: []
+      - id: BC-4100.50.20
+        name: Accommodation Supplier Coordination
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Coordination with accommodation suppliers across rooming,
+          arrival times, and special requests.
+        children: []
+      - id: BC-4100.50.30
+        name: "Attraction & Activity Supplier Coordination"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Coordination with attraction and activity suppliers covering
+          access, capacity, and special arrangements.
+        children: []
+      - id: BC-4100.50.40
+        name: Supplier Performance Operations
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operational performance management of tour suppliers based on
+          escort feedback and traveller experience.
+        children: []
+  - id: BC-4100.60
+    name: "Itinerary Modification & Recovery"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Live modification of tour itineraries and recovery from
+      disruption events including force majeure and traveller-initiated
+      change.
+    children:
+      - id: BC-4100.60.10
+        name: Live Itinerary Modification Operations
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Live modification of itineraries while a tour is in progress
+          due to operational triggers.
+        children: []
+      - id: BC-4100.60.20
+        name: Force-Majeure Itinerary Recovery
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Recovery of itineraries during force-majeure events such as
+          weather, strikes, and political unrest.
+        children: []
+      - id: BC-4100.60.30
+        name: Traveller-Initiated Itinerary Change
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Handling of traveller-initiated changes that affect
+          downstream supplier bookings.
+        children: []
+      - id: BC-4100.60.40
+        name: Recovery Compensation Determination
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Determination of compensation following itinerary
+          modifications including refund and goodwill.
+        children: []
+  - id: BC-4100.70
+    name: Tour Customer Documentation
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Issuance and reissue of final travel documents, vouchers,
+      pre-departure information, and tour-specific traveller
+      communications.
+    children:
+      - id: BC-4100.70.10
+        name: Final Travel Document Issuance
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Issuance of final travel documents including final
+          itinerary and emergency contacts.
+        children: []
+      - id: BC-4100.70.20
+        name: "Voucher & Service Document Issuance"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Issuance of vouchers and service documents to be presented at
+          tour suppliers.
+        children: []
+      - id: BC-4100.70.30
+        name: Pre-Departure Information Pack
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Compilation of pre-departure information packs including
+          health, visa, and packing guidance.
+        children: []
+      - id: BC-4100.70.40
+        name: Travel Document Reissue Operations
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Reissue of documents after itinerary modifications and
+          traveller-data changes.
+        children: []

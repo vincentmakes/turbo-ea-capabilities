@@ -1,0 +1,263 @@
+# Travel Loyalty Programme Management
+id: BC-4050
+name: Travel Loyalty Programme Management
+level: 1
+industry: "Travel & Hospitality"
+description: |
+  Design and operation of traveller loyalty programmes — tier
+  architecture, earn and burn engines, partner accruals, status
+  management, and member communications — independent of the underlying
+  guest record and channel platforms.
+references:
+  - https://htng.org/
+  - https://opentravel.org/
+  - https://www.iata.org/
+in_scope:
+  - Programme tier architecture and benefit catalogue
+  - Earn and burn engines, including partner accrual
+  - Tier qualification, retention, and soft-landing
+  - Member communications and milestone recognition operations
+out_of_scope:
+  - Guest profile and identity (BC-4040)
+  - On-property recognition delivery (BC-4040.40)
+  - Marketing channel execution (BC-410)
+children:
+  - id: BC-4050.10
+    name: Loyalty Programme Design
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Design of programme architecture including tier structure, benefit
+      catalogue, earn-rate parameters, and programme rules.
+    children:
+      - id: BC-4050.10.10
+        name: Programme Tier Architecture
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Architecture of loyalty tiers including thresholds, benefits,
+          and progression rules.
+        children: []
+      - id: BC-4050.10.20
+        name: Member Benefit Catalogue
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Catalogue of member benefits across product and partner
+          surfaces.
+        children: []
+      - id: BC-4050.10.30
+        name: "Earn Rate & Multiplier Definition"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Definition of base earn rates and tier and product multipliers.
+        children: []
+      - id: BC-4050.10.40
+        name: "Programme Terms & Conditions Management"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Management of programme terms and conditions including
+          jurisdictional variants.
+        children: []
+  - id: BC-4050.20
+    name: Loyalty Earn Engine Operations
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Operation of the earn engine across stay, flight, partner spend,
+      promotional bonuses, and missing-activity claims.
+    children:
+      - id: BC-4050.20.10
+        name: "Stay & Flight Accrual Processing"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Processing of accrual events from stays, flights, and tour
+          completions.
+        children: []
+      - id: BC-4050.20.20
+        name: Partner Spend Accrual Processing
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Processing of accrual events from co-branded card and partner
+          retail spend.
+        children: []
+      - id: BC-4050.20.30
+        name: Promotional Bonus Accrual
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Accrual of promotional bonuses tied to campaign rules.
+        children: []
+      - id: BC-4050.20.40
+        name: Missing-Activity Claim Handling
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Handling of missing-activity claims and retroactive accrual
+          adjustments.
+        children: []
+  - id: BC-4050.30
+    name: "Loyalty Burn & Redemption Operations"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Operation of redemption flows including award availability, mixed
+      cash-and-points, and inventory settlement.
+    children:
+      - id: BC-4050.30.10
+        name: Award Availability Calculation
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Calculation of award availability against revenue inventory
+          and protect rules.
+        children: []
+      - id: BC-4050.30.20
+        name: Award Redemption Booking
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Booking of award redemptions across own-brand and partner
+          inventory.
+        children: []
+      - id: BC-4050.30.30
+        name: "Mixed-Cash-and-Points Redemption"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Redemption flows that combine cash and points payment for the
+          same booking.
+        children: []
+      - id: BC-4050.30.40
+        name: Redemption Inventory Settlement
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Settlement of redemption inventory consumption between brand
+          and partner ledgers.
+        children: []
+  - id: BC-4050.40
+    name: Tier Status Management
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Operation of tier qualification, promotion, demotion, status-match
+      programmes, and soft-landing rules.
+    children:
+      - id: BC-4050.40.10
+        name: Tier Qualification Tracking
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Tracking of qualifying activity against tier thresholds across
+          the programme year.
+        children: []
+      - id: BC-4050.40.20
+        name: "Tier Promotion & Demotion Operations"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operations to promote, demote, and re-qualify members at
+          period boundaries.
+        children: []
+      - id: BC-4050.40.30
+        name: "Status-Match & Challenge Programmes"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operation of status-match and tier-challenge programmes for
+          targeted acquisition.
+        children: []
+      - id: BC-4050.40.40
+        name: Soft-Landing Retention Rules
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Retention rules that soften tier loss for high-value members
+          across qualifying periods.
+        children: []
+  - id: BC-4050.50
+    name: Loyalty Partner Programme Management
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Management of loyalty partners including credit-card, retail, and
+      airline-hotel partners across onboarding, configuration, and
+      settlement.
+    children:
+      - id: BC-4050.50.10
+        name: "Partner Onboarding & Contracting"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Onboarding and contracting of new loyalty partners including
+          due diligence and integration.
+        children: []
+      - id: BC-4050.50.20
+        name: Partner Earning Rate Configuration
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Configuration of earning rates and bonus structures for each
+          loyalty partner.
+        children: []
+      - id: BC-4050.50.30
+        name: "Partner Settlement & Reconciliation"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Settlement and reconciliation of partner-issued points and
+          accrual fees.
+        children: []
+      - id: BC-4050.50.40
+        name: Partner Performance Management
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Performance management of loyalty partners against contractual
+          KPIs.
+        children: []
+  - id: BC-4050.60
+    name: "Loyalty Communication & Recognition Operations"
+    level: 2
+    industry: "Travel & Hospitality"
+    description: |
+      Operation of member communications, milestone recognition, and
+      surprise-and-delight gestures across the loyalty lifecycle.
+    children:
+      - id: BC-4050.60.10
+        name: Member Lifecycle Communications
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Lifecycle communications to members across onboarding, active,
+          and reactivation phases.
+        children: []
+      - id: BC-4050.60.20
+        name: "Milestone & Anniversary Recognition"
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Recognition of member milestones, tenure anniversaries, and
+          tier promotions.
+        children: []
+      - id: BC-4050.60.30
+        name: Surprise-and-Delight Operations
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Operation of surprise-and-delight gestures triggered by
+          member behaviour or service events.
+        children: []
+      - id: BC-4050.60.40
+        name: Member Statement Generation
+        level: 3
+        industry: "Travel & Hospitality"
+        description: |
+          Generation of member statements covering balance, activity,
+          and tier progression.
+        children: []
