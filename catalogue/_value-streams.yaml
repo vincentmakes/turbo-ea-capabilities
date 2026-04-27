@@ -2533,3 +2533,62 @@ value_streams:
         stage_name: Handover to Fulfilment
         capability_id: BC-420
         notes: Customer lifecycle activation
+  - name: Lease-to-Production
+    industries: [Oil & Gas]
+    stages:
+      - stage_order: 1
+        stage_name: Acreage Acquisition
+        capability_id: BC-3000
+        notes: License round entry, concession bidding, farm-in
+      - stage_order: 1
+        stage_name: Acreage Acquisition
+        capability_id: BC-3110
+        notes: JOA negotiation and AFE setup at entry
+      - stage_order: 2
+        stage_name: Prospect Maturation
+        capability_id: BC-3000
+        notes: Seismic acquisition, prospect evaluation and risking
+      - stage_order: 3
+        stage_name: Exploration Drilling
+        capability_id: BC-3020
+        notes: Wildcat and appraisal drilling execution
+      - stage_order: 3
+        stage_name: Exploration Drilling
+        capability_id: BC-3000
+        notes: Post-well evaluation and prospect inventory update
+      - stage_order: 4
+        stage_name: Reserves Maturation
+        capability_id: BC-3010
+        notes: Reservoir characterisation and SPE-PRMS classification
+      - stage_order: 5
+        stage_name: Field Development Sanction
+        capability_id: BC-3010
+        notes: Concept selection and field development plan authoring
+      - stage_order: 5
+        stage_name: Field Development Sanction
+        capability_id: BC-3110
+        notes: Partner approvals via OPCOM and host-government FDP submission
+      - stage_order: 6
+        stage_name: Development Execution
+        capability_id: BC-3020
+        notes: Development drilling and completions
+      - stage_order: 6
+        stage_name: Development Execution
+        capability_id: BC-1110
+        notes: Project engineering for surface facility EPC
+      - stage_order: 7
+        stage_name: First Production
+        capability_id: BC-3030
+        notes: Startup, ramp-up, and first oil/gas
+      - stage_order: 7
+        stage_name: First Production
+        capability_id: BC-1160
+        notes: Facility commissioning and handover
+      - stage_order: 8
+        stage_name: Operations Handover
+        capability_id: BC-3030
+        notes: Handover to steady-state operate phase
+      - stage_order: 8
+        stage_name: Operations Handover
+        capability_id: BC-3010
+        notes: Production forecasting handover and reservoir surveillance
