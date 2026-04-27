@@ -152,7 +152,7 @@ body {
 }
 
 .nav-links a {
-  color: #9a9ab0;
+  color: #fff;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -399,6 +399,21 @@ body {
 .github-button svg {
   display: block;
   flex-shrink: 0;
+}
+
+/* Compact pill buttons inside the top nav */
+.nav-links .kofi-button,
+.nav-links .github-button {
+  padding: 6px 12px;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.nav-links .kofi-button svg,
+.nav-links .github-button svg {
+  width: 14px;
+  height: 14px;
 }
 
 /* Suppress nav underline indicator on pill buttons */
