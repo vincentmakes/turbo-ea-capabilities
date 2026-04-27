@@ -152,7 +152,7 @@ body {
 }
 
 .nav-links a {
-  color: #9a9ab0;
+  color: #fff;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -345,6 +345,7 @@ body {
 .footer-links {
   display: flex;
   gap: var(--space-md);
+  align-items: center;
 }
 
 .footer-links a {
@@ -356,6 +357,69 @@ body {
 
 .footer-links a:hover {
   color: var(--color-white);
+}
+
+.kofi-button,
+.github-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  line-height: 1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  transition: background var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.kofi-button:hover,
+.github-button:hover {
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.kofi-button { background: #d6336c; }
+.kofi-button:hover {
+  background: #b8255a;
+  box-shadow: 0 4px 12px rgba(214, 51, 108, 0.35);
+}
+
+.github-button { background: #126EF8; }
+.github-button:hover {
+  background: #0a55c4;
+  box-shadow: 0 4px 12px rgba(18, 110, 248, 0.35);
+}
+
+.kofi-button svg,
+.github-button svg {
+  display: block;
+  flex-shrink: 0;
+}
+
+/* Compact pill buttons inside the top nav */
+.nav-links .kofi-button,
+.nav-links .github-button {
+  padding: 6px 12px;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.nav-links .kofi-button svg,
+.nav-links .github-button svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Suppress nav underline indicator on pill buttons */
+.nav-links .kofi-button::after,
+.nav-links .github-button::after {
+  display: none;
 }
 
 .footer-copy {
