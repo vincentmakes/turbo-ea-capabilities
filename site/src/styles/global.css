@@ -345,6 +345,7 @@ body {
 .footer-links {
   display: flex;
   gap: var(--space-md);
+  align-items: center;
 }
 
 .footer-links a {
@@ -356,6 +357,22 @@ body {
 
 .footer-links a:hover {
   color: var(--color-white);
+}
+
+.footer-kofi {
+  display: inline-flex;
+  align-items: center;
+  transition: transform var(--transition-fast);
+}
+
+.footer-kofi:hover {
+  transform: translateY(-1px);
+}
+
+.footer-kofi img {
+  display: block;
+  border: 0;
+  height: 32px;
 }
 
 .footer-copy {

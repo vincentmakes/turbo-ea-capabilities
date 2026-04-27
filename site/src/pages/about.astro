@@ -89,6 +89,27 @@ import { version } from "../data/load.ts";
         </div>
       </div>
     </div>
+
+    <div class="detail-card">
+      <h3 style="margin-top:0;">Support this project</h3>
+      <p>
+        This catalogue is free and open-source. If it's useful to you or your
+        team, you can support continued development with a small contribution.
+      </p>
+      <a
+        href="https://ko-fi.com/vincentmakes"
+        target="_blank"
+        rel="noopener"
+        class="kofi-button"
+        aria-label="Support Vincent on Ko-fi"
+      >
+        <img
+          src="https://storage.ko-fi.com/cdn/kofi2.png?v=6"
+          alt="Buy me a coffee on Ko-fi"
+          height="40"
+        />
+      </a>
+    </div>
   </main>
 </Base>
 
@@ -122,5 +143,17 @@ import { version } from "../data/load.ts";
       align-items: center;
       text-align: center;
     }
+  }
+  .kofi-button {
+    display: inline-block;
+    margin-top: 12px;
+    transition: transform 0.15s ease;
+  }
+  .kofi-button:hover {
+    transform: translateY(-1px);
+  }
+  .kofi-button img {
+    display: block;
+    border: 0;
   }
 </style>
