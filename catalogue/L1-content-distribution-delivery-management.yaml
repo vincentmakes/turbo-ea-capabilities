@@ -1,0 +1,209 @@
+# Content Distribution & Delivery Management
+id: BC-3740
+name: "Content Distribution & Delivery Management"
+level: 1
+industry: "Media, Entertainment & Telecom Content"
+description: |
+  Linear broadcast, OTT and streaming delivery, content delivery network
+  operations, IPTV and multicast, content protection, and syndication and
+  affiliate distribution of content to consumer-facing surfaces and partners.
+references:
+  - https://dashif.org/
+  - https://www.atsc.org/atsc-standards/
+  - https://www.dvb.org/standards
+  - https://hbbtv.org/
+  - https://www.smpte.org/standards
+  - https://www.3gpp.org/specifications-technologies
+children:
+  - id: BC-3740.10
+    name: Linear Broadcast Distribution
+    level: 2
+    industry: "Media, Entertainment & Telecom Content"
+    description: |
+      Operation of linear broadcast distribution across digital terrestrial,
+      satellite, and cable carriage paths.
+    children:
+      - id: BC-3740.10.10
+        name: Terrestrial Broadcast Operations
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Operation of digital terrestrial transmission chains and multiplex
+          carriage.
+        children: []
+      - id: BC-3740.10.20
+        name: Satellite Uplink Operations
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Operation of satellite uplink chains for direct-to-home and
+          contribution distribution.
+        children: []
+      - id: BC-3740.10.30
+        name: Cable Headend Operations
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Operation of cable carriage and headend integration with operator
+          platforms.
+        children: []
+  - id: BC-3740.20
+    name: "OTT & Streaming Delivery"
+    level: 2
+    industry: "Media, Entertainment & Telecom Content"
+    description: |
+      Operation of streaming origin, packaging, and live streaming for
+      direct-to-consumer and partner OTT services.
+    children:
+      - id: BC-3740.20.10
+        name: Origin Service Operations
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Operation of streaming origin services serving on-demand and live
+          content to delivery surfaces.
+        children: []
+      - id: BC-3740.20.20
+        name: Adaptive Streaming Packaging
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Just-in-time and pre-packaged adaptive streaming for HLS, MPEG-DASH,
+          and CMAF.
+        children: []
+      - id: BC-3740.20.30
+        name: Live Streaming Operations
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Operation of live streaming pipelines for events, channels, and
+          fast services.
+        children: []
+  - id: BC-3740.30
+    name: Content Delivery Network Operations
+    level: 2
+    industry: "Media, Entertainment & Telecom Content"
+    description: |
+      Capacity, caching, and cost-performance management of content delivery
+      networks for content distribution.
+    children:
+      - id: BC-3740.30.10
+        name: CDN Capacity Planning
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Forecasting and provisioning of CDN capacity across regions, peering,
+          and peak events.
+        children: []
+      - id: BC-3740.30.20
+        name: Edge Cache Management
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Management of edge cache footprint, fill behaviour, and offload to
+          partner caches.
+        children: []
+      - id: BC-3740.30.30
+        name: "CDN Cost & Performance Optimisation"
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Multi-CDN steering and cost-performance optimisation across delivery
+          partners.
+        children: []
+  - id: BC-3740.40
+    name: "IPTV & Multicast Delivery Management"
+    level: 2
+    industry: "Media, Entertainment & Telecom Content"
+    description: |
+      Operation of telco-grade IPTV headends, multicast streams, and
+      set-top box service activation.
+    children:
+      - id: BC-3740.40.10
+        name: IPTV Headend Operations
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Operation of IPTV headends including signal acquisition, encoding,
+          and conditional access integration.
+        children: []
+      - id: BC-3740.40.20
+        name: Multicast Stream Management
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Management of multicast stream provisioning across IP and 3GPP
+          broadcast bearers.
+        children: []
+      - id: BC-3740.40.30
+        name: Set-Top Box Service Activation
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Activation of set-top boxes and managed devices on the IPTV service
+          including channel line-up provisioning.
+        children: []
+  - id: BC-3740.50
+    name: "Content Protection & DRM Management"
+    level: 2
+    industry: "Media, Entertainment & Telecom Content"
+    description: |
+      Operation of content protection systems including key and licence
+      management, watermarking, and concurrent stream control.
+    children:
+      - id: BC-3740.50.10
+        name: "License & Key Management"
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Issuance and management of DRM licences and content keys across
+          devices and platforms.
+        children: []
+      - id: BC-3740.50.20
+        name: "Watermarking & Forensic Tracing"
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Application of session and forensic watermarks for piracy detection
+          and source tracing.
+        children: []
+      - id: BC-3740.50.30
+        name: Concurrent Stream Control
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Enforcement of concurrent stream limits and account-sharing policy
+          across viewers and devices.
+        children: []
+  - id: BC-3740.60
+    name: "Syndication & Affiliate Distribution"
+    level: 2
+    industry: "Media, Entertainment & Telecom Content"
+    description: |
+      Distribution of programming and feeds to syndicated affiliates and
+      third-party platforms with delivery accounting.
+    children:
+      - id: BC-3740.60.10
+        name: Syndication Order Management
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Capture and fulfilment of syndication orders against held rights and
+          delivery slots.
+        children: []
+      - id: BC-3740.60.20
+        name: Affiliate Feed Distribution
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Distribution of network and channel feeds to broadcast affiliates
+          with localisation hand-offs.
+        children: []
+      - id: BC-3740.60.30
+        name: Programme Delivery Tracking
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Tracking of programme deliveries to platforms and partners including
+          delivery proof and exception handling.
+        children: []

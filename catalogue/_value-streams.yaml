@@ -20,6 +20,11 @@ value_streams:
         stage_name: Sourcing & Attraction
         capability_id: BC-400
         notes: Employer brand
+      - stage_order: 2
+        stage_name: Sourcing & Attraction
+        capability_id: BC-3790
+        industry_variant: Media & Entertainment
+        notes: Talent search and casting briefs
       - stage_order: 3
         stage_name: Selection & Hire
         capability_id: BC-1810
@@ -39,6 +44,11 @@ value_streams:
         capability_id: BC-2890
         industry_variant: Healthcare Providers
         notes: Practitioner credentialing and initial privileging
+      - stage_order: 3
+        stage_name: Selection & Hire
+        capability_id: BC-3790
+        industry_variant: Media & Entertainment
+        notes: Casting decision, talent contracting, loan-out structures
       - stage_order: 4
         stage_name: Onboarding
         capability_id: BC-300
@@ -71,6 +81,11 @@ value_streams:
         stage_name: Compensation & Benefits Administration
         capability_id: BC-300
         notes: Pay design; Payroll execution
+      - stage_order: 6
+        stage_name: Compensation & Benefits Administration
+        capability_id: BC-3790
+        industry_variant: Media & Entertainment
+        notes: Residuals, royalty distribution, guild pension and health contributions
       - stage_order: 7
         stage_name: Employee Experience & Engagement
         capability_id: BC-300
@@ -387,16 +402,41 @@ value_streams:
         capability_id: BC-3220
         industry_variant: Public Sector
         notes: Case resolution, ombudsman determination, appeals outcome
+      - stage_order: 4
+        stage_name: Resolution (Viewer Service)
+        capability_id: BC-3750
+        industry_variant: Media & Entertainment
+        notes: Entitlement, billing, and playback remediation
+      - stage_order: 4
+        stage_name: Resolution (Content Compliance)
+        capability_id: BC-3780
+        industry_variant: Media & Entertainment
+        notes: Edits, takedowns, on-air corrections, counter-notice handling
       - stage_order: 1
         stage_name: Issue Capture (Agri-Food Compliance)
         capability_id: BC-3590
         industry_variant: Agriculture
         notes: Farm assurance, organic, welfare, MRL non-conformance intake
+      - stage_order: 1
+        stage_name: Issue Capture (Viewer Service)
+        capability_id: BC-3750
+        industry_variant: Media & Entertainment
+        notes: Viewer-reported playback, billing, and entitlement issues
+      - stage_order: 1
+        stage_name: Issue Capture (Content Compliance)
+        capability_id: BC-3780
+        industry_variant: Media & Entertainment
+        notes: Editorial complaints, takedown notices, classification challenges
       - stage_order: 3
         stage_name: Investigation (Agri-Food Compliance)
         capability_id: BC-3590
         industry_variant: Agriculture
         notes: Compliance and certification non-conformance investigation
+      - stage_order: 3
+        stage_name: Investigation (Content Compliance)
+        capability_id: BC-3780
+        industry_variant: Media & Entertainment
+        notes: Content review and complaint investigation
   - name: Order-to-Cash
     industries: [Cross-Industry]
     stages:
@@ -408,6 +448,11 @@ value_streams:
         stage_name: Lead Capture & Qualification
         capability_id: BC-420
         notes: Customer record creation
+      - stage_order: 1
+        stage_name: Lead Capture & Qualification
+        capability_id: BC-3760
+        industry_variant: Media & Entertainment
+        notes: Advertiser lead capture
       - stage_order: 2
         stage_name: Quote & Configuration
         capability_id: BC-410
@@ -713,31 +758,96 @@ value_streams:
         capability_id: BC-2660
         industry_variant: Telecommunications
         notes: Usage-based revenue recognition and revenue assurance
+      - stage_order: 9
+        stage_name: Revenue Recognition
+        capability_id: BC-3720
+        industry_variant: Media & Entertainment
+        notes: Licensing revenue recognition
+      - stage_order: 9
+        stage_name: Revenue Recognition
+        capability_id: BC-3760
+        industry_variant: Media & Entertainment
+        notes: Ad delivery-based revenue recognition
       - stage_order: 2
         stage_name: Quote & Configuration
         capability_id: BC-3570
         industry_variant: Agriculture
         notes: Cash and basis quotes with hedge-aligned pricing
+      - stage_order: 2
+        stage_name: Quote & Configuration
+        capability_id: BC-3760
+        industry_variant: Media & Entertainment
+        notes: Campaign quote and avail planning
       - stage_order: 3
         stage_name: Contract & Order Capture
         capability_id: BC-3570
         industry_variant: Agriculture
         notes: Forward and production contract capture
+      - stage_order: 3
+        stage_name: Contract & Order Capture
+        capability_id: BC-3720
+        industry_variant: Media & Entertainment
+        notes: Outbound licence deal capture
+      - stage_order: 3
+        stage_name: Contract & Order Capture
+        capability_id: BC-3750
+        industry_variant: Media & Entertainment
+        notes: Subscription enrolment and entitlement grant
+      - stage_order: 3
+        stage_name: Contract & Order Capture
+        capability_id: BC-3760
+        industry_variant: Media & Entertainment
+        notes: IO and linear spot order capture
       - stage_order: 5
         stage_name: Production / Service Delivery
         capability_id: BC-3580
         industry_variant: Agriculture
         notes: Food and beverage manufacturing as the service product
+      - stage_order: 5
+        stage_name: Production / Service Delivery
+        capability_id: BC-3740
+        industry_variant: Media & Entertainment
+        notes: Syndication, licensee delivery, and OTT playback delivery
+      - stage_order: 5
+        stage_name: Production / Service Delivery
+        capability_id: BC-3760
+        industry_variant: Media & Entertainment
+        notes: Ad decisioning, trafficking, and insertion
       - stage_order: 7
         stage_name: Customer Invoicing
         capability_id: BC-3570
         industry_variant: Agriculture
         notes: Settlement statement with grade-based discounts
+      - stage_order: 7
+        stage_name: Customer Invoicing
+        capability_id: BC-3720
+        industry_variant: Media & Entertainment
+        notes: Licensee invoicing
+      - stage_order: 7
+        stage_name: Customer Invoicing
+        capability_id: BC-3750
+        industry_variant: Media & Entertainment
+        notes: Viewer subscription billing
+      - stage_order: 7
+        stage_name: Customer Invoicing
+        capability_id: BC-3760
+        industry_variant: Media & Entertainment
+        notes: Advertiser and agency billing
       - stage_order: 8
         stage_name: Cash Collection & Application
         capability_id: BC-3570
         industry_variant: Agriculture
         notes: Settlement collection and counterparty position
+      - stage_order: 8
+        stage_name: Cash Collection & Application
+        capability_id: BC-3750
+        industry_variant: Media & Entertainment
+        notes: Viewer dunning and suspension
+      - stage_order: 8
+        stage_name: Cash Collection & Application
+        capability_id: BC-3760
+        industry_variant: Media & Entertainment
+        notes: Advertiser collections and make-goods
   - name: Procure-to-Pay
     industries: [Cross-Industry]
     stages:
@@ -799,6 +909,11 @@ value_streams:
         stage_name: Invoice Receipt & Verification
         capability_id: BC-200
         notes: 3-way match
+      - stage_order: 6
+        stage_name: Invoice Receipt & Verification
+        capability_id: BC-3720
+        industry_variant: Media & Entertainment
+        notes: Inbound royalty statement reconciliation
       - stage_order: 7
         stage_name: Payment Execution
         capability_id: BC-200
@@ -840,6 +955,11 @@ value_streams:
         capability_id: BC-3270
         industry_variant: Public Sector
         notes: Award, debriefing, contract formation, obligation of funds
+      - stage_order: 4
+        stage_name: Contract & Purchase Order
+        capability_id: BC-3720
+        industry_variant: Media & Entertainment
+        notes: Rights acquisition contracting
       - stage_order: 5
         stage_name: Goods/Services Receipt
         capability_id: BC-3270
@@ -860,6 +980,11 @@ value_streams:
         capability_id: BC-3550
         industry_variant: Agriculture
         notes: Sourcing through licensed agri-input channels
+      - stage_order: 2
+        stage_name: Sourcing
+        capability_id: BC-3720
+        industry_variant: Media & Entertainment
+        notes: Rights and content sourcing
       - stage_order: 3
         stage_name: Supplier Selection & Onboarding
         capability_id: BC-3550
@@ -877,6 +1002,11 @@ value_streams:
         stage_name: Idea Capture
         capability_id: BC-800
         notes: Idea & opportunity intake; Open innovation / external sourcing
+      - stage_order: 1
+        stage_name: Idea Capture
+        capability_id: BC-3700
+        industry_variant: Media & Entertainment
+        notes: Concept and pitch intake
       - stage_order: 2
         stage_name: Concept & Feasibility
         capability_id: BC-230
@@ -889,6 +1019,11 @@ value_streams:
         stage_name: Concept & Feasibility
         capability_id: BC-820
         notes: Product concept definition
+      - stage_order: 2
+        stage_name: Concept & Feasibility
+        capability_id: BC-3700
+        industry_variant: Media & Entertainment
+        notes: Greenlight evaluation
       - stage_order: 3
         stage_name: Research & Prototyping
         capability_id: BC-1500
@@ -964,10 +1099,25 @@ value_streams:
         capability_id: BC-3400
         industry_variant: Automotive
         notes: Vehicle product design and development
+      - stage_order: 5
+        stage_name: Design & Development
+        capability_id: BC-3710
+        industry_variant: Media & Entertainment
+        notes: Mezzanine and master generation
+      - stage_order: 5
+        stage_name: Design & Development
+        capability_id: BC-3700
+        industry_variant: Media & Entertainment
+        notes: Pre-production, production, post-production
       - stage_order: 6
         stage_name: IP Protection
         capability_id: BC-840
         notes: Patents, trademarks
+      - stage_order: 6
+        stage_name: IP Protection
+        capability_id: BC-3720
+        industry_variant: Media & Entertainment
+        notes: Chain-of-title and rights documentation
       - stage_order: 7
         stage_name: Launch Readiness
         capability_id: BC-400
@@ -1001,6 +1151,11 @@ value_streams:
         capability_id: BC-3410
         industry_variant: Automotive
         notes: Vehicle programme launch readiness gating
+      - stage_order: 7
+        stage_name: Launch Readiness
+        capability_id: BC-3730
+        industry_variant: Media & Entertainment
+        notes: Schedule slot and EPG readiness
       - stage_order: 8
         stage_name: Market Introduction
         capability_id: BC-1530
@@ -1040,6 +1195,11 @@ value_streams:
         capability_id: BC-3420
         industry_variant: Automotive
         notes: Type approval as market-entry gate
+      - stage_order: 8
+        stage_name: Market Introduction
+        capability_id: BC-3740
+        industry_variant: Media & Entertainment
+        notes: First-window release
       - stage_order: 9
         stage_name: Post-Launch Performance
         capability_id: BC-820
@@ -1064,6 +1224,11 @@ value_streams:
         capability_id: BC-3450
         industry_variant: Automotive
         notes: Field-quality feedback into product
+      - stage_order: 9
+        stage_name: Post-Launch Performance
+        capability_id: BC-3770
+        industry_variant: Media & Entertainment
+        notes: Title performance feedback to commissioning
   - name: Plan-to-Inventory
     industries: [Cross-Industry]
     stages:
@@ -1531,11 +1696,21 @@ value_streams:
         capability_id: BC-3540
         industry_variant: Agriculture
         notes: Field, parcel, and equipment master data
+      - stage_order: 6
+        stage_name: Asset Information Maintenance
+        capability_id: BC-3710
+        industry_variant: Media & Entertainment
+        notes: Metadata, identifier, and version lineage stewardship
       - stage_order: 7
         stage_name: Decommissioning & Disposal
         capability_id: BC-3540
         industry_variant: Agriculture
         notes: Equipment disposal and lease end-of-term
+      - stage_order: 7
+        stage_name: Decommissioning & Disposal
+        capability_id: BC-3710
+        industry_variant: Media & Entertainment
+        notes: Archive sunset, master deletion, and rights-driven take-down
   - name: Strategy-to-Execution
     industries: [Cross-Industry]
     stages:
@@ -1663,6 +1838,11 @@ value_streams:
         capability_id: BC-2840
         industry_variant: Healthcare Providers
         notes: Clinical risk mitigation planning
+      - stage_order: 4
+        stage_name: Treatment & Control Design
+        capability_id: BC-3780
+        industry_variant: Media & Entertainment
+        notes: Editorial guidelines and pre-transmission compliance review controls
       - stage_order: 5
         stage_name: Monitoring
         capability_id: BC-120
@@ -1677,6 +1857,11 @@ value_streams:
         capability_id: BC-2190
         industry_variant: Insurance
         notes: ORSA monitoring
+      - stage_order: 5
+        stage_name: Monitoring
+        capability_id: BC-3780
+        industry_variant: Media & Entertainment
+        notes: Ongoing content compliance monitoring
       - stage_order: 6
         stage_name: Reporting & Escalation
         capability_id: BC-120
@@ -1695,6 +1880,11 @@ value_streams:
         capability_id: BC-3590
         industry_variant: Agriculture
         notes: Agri-food compliance risk taxonomy (zoonosis, MRL, welfare)
+      - stage_order: 2
+        stage_name: Risk Identification
+        capability_id: BC-3780
+        industry_variant: Media & Entertainment
+        notes: Content risk identification across editorial, legal, and reputational
       - stage_order: 3
         stage_name: Risk Assessment
         capability_id: BC-3590
@@ -1887,6 +2077,11 @@ value_streams:
         capability_id: BC-2110
         industry_variant: Insurance
         notes: Quote / submission intake via producers
+      - stage_order: 4
+        stage_name: Lead Capture & Nurture
+        capability_id: BC-3750
+        industry_variant: Media & Entertainment
+        notes: Free-trial and prospect viewer capture
       - stage_order: 5
         stage_name: Conversion
         capability_id: BC-1300
@@ -1906,6 +2101,11 @@ value_streams:
         capability_id: BC-2640
         industry_variant: Telecommunications
         notes: Subscriber identity creation and SIM/eSIM activation
+      - stage_order: 5
+        stage_name: Conversion
+        capability_id: BC-3750
+        industry_variant: Media & Entertainment
+        notes: Subscription conversion
       - stage_order: 6
         stage_name: Customer Onboarding
         capability_id: BC-1300
@@ -1925,6 +2125,11 @@ value_streams:
         capability_id: BC-2640
         industry_variant: Telecommunications
         notes: Subscriber enrolment, AAA, and device binding
+      - stage_order: 6
+        stage_name: Customer Onboarding
+        capability_id: BC-3750
+        industry_variant: Media & Entertainment
+        notes: Viewer activation and onboarding journeys
       - stage_order: 7
         stage_name: Retention & Advocacy
         capability_id: BC-420
@@ -1943,6 +2148,11 @@ value_streams:
         capability_id: BC-2630
         industry_variant: Telecommunications
         notes: Customer experience following service events
+      - stage_order: 7
+        stage_name: Retention & Advocacy
+        capability_id: BC-3750
+        industry_variant: Media & Entertainment
+        notes: Engagement and win-back programmes
   - name: Application-to-Funding
     industries: [Banking & Capital Markets]
     stages:
@@ -2638,11 +2848,21 @@ value_streams:
         capability_id: BC-3590
         industry_variant: Agriculture
         notes: Animal welfare and provenance indicator data
+      - stage_order: 2
+        stage_name: Data Collection
+        capability_id: BC-3780
+        industry_variant: Media & Entertainment
+        notes: Accessibility coverage and content-moderation transparency data
       - stage_order: 4
         stage_name: Reporting & Disclosure
         capability_id: BC-3600
         industry_variant: Agriculture
         notes: Agri-environmental scheme reporting and soil-carbon credit issuance
+      - stage_order: 4
+        stage_name: Reporting & Disclosure
+        capability_id: BC-3780
+        industry_variant: Media & Entertainment
+        notes: DSA transparency and accessibility compliance reporting
   - name: Concept-to-Manufacture
     industries:
       - Manufacturing & Industrial
@@ -2875,6 +3095,16 @@ value_streams:
         capability_id: BC-3440
         industry_variant: Automotive
         notes: Fleet and B2B opportunity qualification
+      - stage_order: 1
+        stage_name: Opportunity Qualification
+        capability_id: BC-3720
+        industry_variant: Media & Entertainment
+        notes: Outbound licence opportunity qualification
+      - stage_order: 1
+        stage_name: Opportunity Qualification
+        capability_id: BC-3760
+        industry_variant: Media & Entertainment
+        notes: Advertiser opportunity qualification
       - stage_order: 2
         stage_name: Solution Scoping
         capability_id: BC-1110
@@ -2940,6 +3170,11 @@ value_streams:
         stage_name: Proposal Development
         capability_id: BC-410
         notes: Proposal authoring
+      - stage_order: 5
+        stage_name: Proposal Development
+        capability_id: BC-3760
+        industry_variant: Media & Entertainment
+        notes: Media plan and proposal development
       - stage_order: 6
         stage_name: Negotiation
         capability_id: BC-150
@@ -2958,6 +3193,11 @@ value_streams:
         capability_id: BC-2680
         industry_variant: Telecommunications
         notes: Wholesale, interconnect, and roaming agreement negotiation
+      - stage_order: 6
+        stage_name: Negotiation
+        capability_id: BC-3760
+        industry_variant: Media & Entertainment
+        notes: Upfront and scatter negotiation
       - stage_order: 7
         stage_name: Contract & Order Booking
         capability_id: BC-150
@@ -2966,6 +3206,16 @@ value_streams:
         stage_name: Contract & Order Booking
         capability_id: BC-410
         notes: Order entry
+      - stage_order: 7
+        stage_name: Contract & Order Booking
+        capability_id: BC-3720
+        industry_variant: Media & Entertainment
+        notes: Outbound licence deal booking
+      - stage_order: 7
+        stage_name: Contract & Order Booking
+        capability_id: BC-3760
+        industry_variant: Media & Entertainment
+        notes: IO booking against avail plan
       - stage_order: 8
         stage_name: Handover to Fulfilment
         capability_id: BC-410
@@ -3417,3 +3667,149 @@ value_streams:
         capability_id: BC-3470
         industry_variant: Automotive
         notes: Incident reporting to regulators and feedback into safety case
+  - name: Greenlight-to-Premiere
+    industries: ["Media, Entertainment & Telecom Content"]
+    stages:
+      - stage_order: 1
+        stage_name: Concept & Pitch Intake
+        capability_id: BC-3700
+        industry_variant: Media & Entertainment
+        notes: Concept evaluation, slate planning, and incoming pitch triage
+      - stage_order: 2
+        stage_name: Greenlight Decision
+        capability_id: BC-3700
+        industry_variant: Media & Entertainment
+        notes: Greenlight authority, commissioning brief, budget and creative envelope
+      - stage_order: 3
+        stage_name: Pre-Production
+        capability_id: BC-3700
+        industry_variant: Media & Entertainment
+        notes: Script development, production budgeting, scheduling, and location planning
+      - stage_order: 3
+        stage_name: Pre-Production
+        capability_id: BC-3790
+        industry_variant: Media & Entertainment
+        notes: Casting and talent contracting
+      - stage_order: 3
+        stage_name: Pre-Production
+        capability_id: BC-3720
+        industry_variant: Media & Entertainment
+        notes: Inbound rights and underlying material clearance for production
+      - stage_order: 4
+        stage_name: Production
+        capability_id: BC-3700
+        industry_variant: Media & Entertainment
+        notes: Principal photography, studio production, live and news production
+      - stage_order: 4
+        stage_name: Production
+        capability_id: BC-3710
+        industry_variant: Media & Entertainment
+        notes: On-set ingest of source material into the asset platform
+      - stage_order: 5
+        stage_name: Post-Production & Mastering
+        capability_id: BC-3700
+        industry_variant: Media & Entertainment
+        notes: Picture edit, audio post, colour, conform, and master delivery
+      - stage_order: 5
+        stage_name: Post-Production & Mastering
+        capability_id: BC-3710
+        industry_variant: Media & Entertainment
+        notes: Mezzanine generation, distribution renditions, and identifier assignment
+      - stage_order: 6
+        stage_name: Rights & Compliance Clearance
+        capability_id: BC-3720
+        industry_variant: Media & Entertainment
+        notes: Chain-of-title verification and clearance against territorial rights
+      - stage_order: 6
+        stage_name: Rights & Compliance Clearance
+        capability_id: BC-3780
+        industry_variant: Media & Entertainment
+        notes: Classification submission, editorial review, and accessibility compliance
+      - stage_order: 7
+        stage_name: Schedule & Catalogue Placement
+        capability_id: BC-3730
+        industry_variant: Media & Entertainment
+        notes: Schedule slot, EPG publication, and on-demand catalogue exposure
+      - stage_order: 8
+        stage_name: Distribution & Premiere
+        capability_id: BC-3740
+        industry_variant: Media & Entertainment
+        notes: Linear, OTT, IPTV, and syndication delivery for first-window release
+      - stage_order: 8
+        stage_name: Distribution & Premiere
+        capability_id: BC-3750
+        industry_variant: Media & Entertainment
+        notes: Viewer activation and entitlement at premiere
+      - stage_order: 8
+        stage_name: Distribution & Premiere
+        capability_id: BC-3760
+        industry_variant: Media & Entertainment
+        notes: Promotional inventory and sponsorship activation around the launch
+      - stage_order: 9
+        stage_name: Performance Feedback
+        capability_id: BC-3770
+        industry_variant: Media & Entertainment
+        notes: Title performance, engagement funnel, and recommendation feedback to commissioning
+  - name: Brief-to-Campaign
+    industries: ["Media, Entertainment & Telecom Content"]
+    stages:
+      - stage_order: 1
+        stage_name: Brief Intake
+        capability_id: BC-3760
+        industry_variant: Media & Entertainment
+        notes: Advertiser and agency brief capture and qualification
+      - stage_order: 2
+        stage_name: Audience & Avail Planning
+        capability_id: BC-3760
+        industry_variant: Media & Entertainment
+        notes: Avail forecasting and inventory shaping against the brief
+      - stage_order: 2
+        stage_name: Audience & Avail Planning
+        capability_id: BC-3770
+        industry_variant: Media & Entertainment
+        notes: Audience definition and reach modelling informing the plan
+      - stage_order: 3
+        stage_name: Media Plan Development
+        capability_id: BC-3760
+        industry_variant: Media & Entertainment
+        notes: Multi-surface media plan, packaging, and pricing development
+      - stage_order: 4
+        stage_name: Booking & Insertion Order
+        capability_id: BC-3760
+        industry_variant: Media & Entertainment
+        notes: Insertion-order capture, deal-ID provisioning, and inventory reservation
+      - stage_order: 5
+        stage_name: Creative Onboarding & Trafficking
+        capability_id: BC-3760
+        industry_variant: Media & Entertainment
+        notes: Creative ingest, technical QC, decisioning rules, and trafficking
+      - stage_order: 5
+        stage_name: Creative Onboarding & Trafficking
+        capability_id: BC-3780
+        industry_variant: Media & Entertainment
+        notes: Advertising-code review and creative-classification compliance
+      - stage_order: 6
+        stage_name: Campaign Delivery
+        capability_id: BC-3760
+        industry_variant: Media & Entertainment
+        notes: Spot scheduling, ad insertion, pacing, and brand-safety enforcement
+      - stage_order: 6
+        stage_name: Campaign Delivery
+        capability_id: BC-3740
+        industry_variant: Media & Entertainment
+        notes: Server-side and client-side ad delivery on linear, OTT, and IPTV surfaces
+      - stage_order: 7
+        stage_name: Measurement & Reconciliation
+        capability_id: BC-3760
+        industry_variant: Media & Entertainment
+        notes: Delivery reporting, make-good and credit-memo handling
+      - stage_order: 7
+        stage_name: Measurement & Reconciliation
+        capability_id: BC-3770
+        industry_variant: Media & Entertainment
+        notes: Currency-grade audience measurement and post-campaign analytics
+      - stage_order: 8
+        stage_name: Billing & Settlement
+        capability_id: BC-3760
+        industry_variant: Media & Entertainment
+        notes: Advertiser and agency billing, agency-discount and commission settlement

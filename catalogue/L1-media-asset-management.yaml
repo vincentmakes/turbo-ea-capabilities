@@ -1,0 +1,216 @@
+# Media Asset Management
+id: BC-3710
+name: Media Asset Management
+level: 1
+industry: "Media, Entertainment & Telecom Content"
+description: |
+  Ingest, cataloguing, storage, transformation, archival preservation, and
+  identifier management of media assets across the content lifecycle from
+  production through distribution.
+references:
+  - https://www.smpte.org/standards
+  - https://www.eidr.org/
+  - https://www.iso.org/standard/64605.html
+  - https://www.iso.org/standard/63840.html
+  - https://tech.ebu.ch/MetadataEbuCore
+children:
+  - id: BC-3710.10
+    name: "Asset Ingest & Quality Control"
+    level: 2
+    industry: "Media, Entertainment & Telecom Content"
+    description: |
+      Onboarding of source material into the asset platform with technical
+      and editorial quality control before further use.
+    children:
+      - id: BC-3710.10.10
+        name: Source Asset Ingest
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Ingest of source files and tape-to-file or feed-to-file capture into
+          the asset platform.
+        children: []
+      - id: BC-3710.10.20
+        name: Quality Control Inspection
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Automated and operator-led QC inspection for picture, audio, and
+          metadata defects.
+        children: []
+      - id: BC-3710.10.30
+        name: Technical Conformance Validation
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Validation against delivery specifications including format, frame
+          rate, loudness, and signal compliance.
+        children: []
+  - id: BC-3710.20
+    name: Metadata Cataloguing
+    level: 2
+    industry: "Media, Entertainment & Telecom Content"
+    description: |
+      Authoring and curation of descriptive, technical, and rights metadata
+      that makes assets discoverable and usable.
+    children:
+      - id: BC-3710.20.10
+        name: Descriptive Metadata Authoring
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Cataloguing of titles, synopses, contributors, and editorial
+          attributes against a controlled schema.
+        children: []
+      - id: BC-3710.20.20
+        name: Technical Metadata Capture
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Extraction and storage of essence, container, and signal-level
+          technical metadata.
+        children: []
+      - id: BC-3710.20.30
+        name: Rights Metadata Linking
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Linkage of asset records to rights records covering territory, window,
+          and platform restrictions.
+        children: []
+      - id: BC-3710.20.40
+        name: "Taxonomy & Controlled Vocabulary Management"
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Stewardship of taxonomies, genres, and controlled vocabularies used
+          across the catalogue.
+        children: []
+  - id: BC-3710.30
+    name: "Asset Storage & Tiering"
+    level: 2
+    industry: "Media, Entertainment & Telecom Content"
+    description: |
+      Tiered storage of media assets across online, nearline, and archive
+      tiers to balance access latency and cost.
+    children:
+      - id: BC-3710.30.10
+        name: Online Asset Storage
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          High-performance storage for assets in active production and
+          distribution use.
+        children: []
+      - id: BC-3710.30.20
+        name: "Nearline & Archive Tier Management"
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Lifecycle movement of assets to nearline and archive tiers with
+          recall service levels.
+        children: []
+      - id: BC-3710.30.30
+        name: Storage Cost Optimisation
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Optimisation of storage tier policy, deduplication, and footprint
+          reduction across the asset estate.
+        children: []
+  - id: BC-3710.40
+    name: "Transcoding & Format Conversion"
+    level: 2
+    industry: "Media, Entertainment & Telecom Content"
+    description: |
+      Production of intermediate and distribution renditions through
+      transcoding and packaging pipelines.
+    children:
+      - id: BC-3710.40.10
+        name: Mezzanine Generation
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Production of high-quality mezzanine masters as intermediates for
+          downstream distribution encodes.
+        children: []
+      - id: BC-3710.40.20
+        name: Distribution Format Encoding
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Encoding of distribution renditions for broadcast, OTT, and partner
+          delivery specifications.
+        children: []
+      - id: BC-3710.40.30
+        name: Adaptive Bitrate Packaging
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Packaging of adaptive bitrate ladders for HLS, MPEG-DASH, and CMAF
+          streaming delivery.
+        children: []
+  - id: BC-3710.50
+    name: "Long-Term Archive & Preservation"
+    level: 2
+    industry: "Media, Entertainment & Telecom Content"
+    description: |
+      Long-horizon preservation of master and historical assets including
+      restoration of legacy material.
+    children:
+      - id: BC-3710.50.10
+        name: Archive Cataloguing
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Cataloguing of long-term archive holdings including legacy carrier
+          and physical-element records.
+        children: []
+      - id: BC-3710.50.20
+        name: Preservation Migration
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Periodic migration of archived material across storage generations
+          to mitigate format and media obsolescence.
+        children: []
+      - id: BC-3710.50.30
+        name: "Restoration & Remastering"
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Picture and audio restoration and remastering of legacy material to
+          modern delivery standards.
+        children: []
+  - id: BC-3710.60
+    name: "Content Identifier & Versioning Management"
+    level: 2
+    industry: "Media, Entertainment & Telecom Content"
+    description: |
+      Assignment and lineage of content identifiers and version records that
+      uniquely describe each edit and rendition.
+    children:
+      - id: BC-3710.60.10
+        name: Content Identifier Assignment
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Assignment of internal and registry identifiers (EIDR, ISAN, ISRC,
+          ISWC) to works and renditions.
+        children: []
+      - id: BC-3710.60.20
+        name: "Version & Edit Lineage Management"
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Tracking of edit, language, regulatory, and platform version lineage
+          against parent master records.
+        children: []
+      - id: BC-3710.60.30
+        name: External Identifier Cross-Reference Mapping
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Cross-reference mapping between internal identifiers and partner,
+          retailer, and registry identifiers.
+        children: []
