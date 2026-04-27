@@ -586,6 +586,27 @@ Where an industry reference framework exists, anchor the upper levels (L1 / L2) 
 - **IDD (EU Directive 2016/97), NAIC Model Laws, and US state insurance regulations** — distribution and conduct.
 - **GDPR and HIPAA (where applicable)** — privacy and personal-data protection across underwriting and claims.
 
+**Media, Entertainment & Telecom Content**
+
+- **SMPTE standards (e.g. ST 2067 IMF, ST 377 MXF, ST 2110 IP-based studio, ST 2042 VC-2, RDD 9 AS-02)** — production, mastering, and broadcast media formats and packaging.
+- **EBU Technical Recommendations (R 128 loudness, EBU-TT subtitling, EBU Core metadata)** — European broadcast technical standards.
+- **DPP (Digital Production Partnership) — AS-11 delivery, DPP Common Metadata** — programme-as-a-package broadcast delivery.
+- **ATSC 3.0, DVB, DVB-I, HbbTV** — terrestrial, satellite, cable, hybrid broadcast-broadband, and IPTV broadcast standards.
+- **DASH-IF (MPEG-DASH), HLS (RFC 8216), CMAF (ISO/IEC 23000-19), W3C MSE/EME, CENC (ISO/IEC 23001-7)** — adaptive streaming, packaging, and common encryption for OTT delivery.
+- **DRM systems (Widevine, FairPlay Streaming, PlayReady)** — content protection on streaming clients and devices.
+- **MovieLabs Common Security Architecture for Production (CSAP), MovieLabs 2030 Vision** — production security and software-defined production reference.
+- **EIDR (Entertainment Identifier Registry), ISAN (ISO 15706), ISRC (ISO 3901), ISWC (ISO 15707), ISMN (ISO 10957)** — global identifiers for audiovisual works, recordings, musical works, and printed music.
+- **DDEX standards (ERN, MWN, MLC, RIN, DSR)** — music supply-chain and royalty messaging.
+- **CISAC, BIEM, IFPI, MPA reciprocal agreements** — collective rights management and inter-society reporting.
+- **IAB Tech Lab standards (OpenRTB, VAST, VMAP, VPAID, Open Measurement SDK, ads.txt / app-ads.txt, sellers.json, SupplyChain Object, Global Privacy Platform)** — programmatic and digital advertising protocols.
+- **TAG (Trustworthy Accountability Group), MRC (Media Rating Council)** — ad fraud, brand safety, and audience-measurement accreditation.
+- **Nielsen ONE, BARB, Médiamétrie, Kantar Media currency standards** — cross-platform audience measurement.
+- **W3C TTML / TTML2, WebVTT, EBU-TT, IMSC** — timed text and subtitling interchange standards.
+- **BBFC, PEGI, ESRB, MPA / CARA, FSK, Eirin classification regimes** — age and content classification.
+- **AVMSD (Directive (EU) 2018/1808), Ofcom Broadcasting Code, FCC Title 47 (Parts 73, 76, 79), CRTC Broadcasting Regulations** — broadcast and on-demand audiovisual regulation.
+- **EU Digital Services Act (Reg (EU) 2022/2065), NetzDG, COPPA (15 USC 6501-6506), GDPR (where applicable to viewer data)** — platform, online-content, and viewer-privacy regulation.
+- **3GPP MBMS / 5G Broadcast (TS 23.246, TS 26.346), MEF Carrier Ethernet for content delivery** — telco-side content multicast and transport reference.
+
 **Retail & Consumer Goods**
 
 - **ARTS / NRF Reference Model** — retail data and process taxonomy.

@@ -1,0 +1,173 @@
+# Audience & Viewer Management
+id: BC-3750
+name: "Audience & Viewer Management"
+level: 1
+industry: "Media, Entertainment & Telecom Content"
+description: |
+  Viewer identity, subscription and entitlement, multi-device authentication,
+  engagement and retention, and parental controls for direct-to-consumer
+  content services across OTT, IPTV, and pay-TV platforms.
+references:
+  - https://www.iab.com/standards/
+  - https://hbbtv.org/
+  - https://gpp-sdk.web.iabtechlab.com/
+children:
+  - id: BC-3750.10
+    name: Viewer Identity Management
+    level: 2
+    industry: "Media, Entertainment & Telecom Content"
+    description: |
+      Provisioning and stewardship of viewer accounts, household constructs,
+      and federated identity across services.
+    children:
+      - id: BC-3750.10.10
+        name: Viewer Account Provisioning
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Creation and lifecycle of viewer accounts including account merge
+          and split operations.
+        children: []
+      - id: BC-3750.10.20
+        name: "Household & Profile Management"
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Management of household constructs and per-viewer profiles within
+          shared accounts.
+        children: []
+      - id: BC-3750.10.30
+        name: Identity Federation
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Federation of viewer identity with operator, retailer, and
+          third-party identity providers.
+        children: []
+  - id: BC-3750.20
+    name: "Subscription & Entitlement Management"
+    level: 2
+    industry: "Media, Entertainment & Telecom Content"
+    description: |
+      Lifecycle of viewer subscriptions and the entitlement records that
+      govern access to content services and tiers.
+    children:
+      - id: BC-3750.20.10
+        name: Subscription Plan Enrolment
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Enrolment of viewers into subscription, transactional, and
+          ad-supported plans.
+        children: []
+      - id: BC-3750.20.20
+        name: "Entitlement Grant & Revocation"
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Grant and revocation of content entitlements driven by subscriptions,
+          purchases, and partner bundles.
+        children: []
+      - id: BC-3750.20.30
+        name: Concurrent Stream Entitlement
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Entitlement-driven control of concurrent streams and device counts
+          per account.
+        children: []
+  - id: BC-3750.30
+    name: Multi-Device Authentication
+    level: 2
+    industry: "Media, Entertainment & Telecom Content"
+    description: |
+      Authentication of viewers across the device estate including
+      TV-Everywhere flows with operator identity providers.
+    children:
+      - id: BC-3750.30.10
+        name: Device Registration
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Registration and deregistration of devices against viewer accounts.
+        children: []
+      - id: BC-3750.30.20
+        name: Authenticated Session Management
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Management of authenticated playback sessions and token lifecycle
+          across devices.
+        children: []
+      - id: BC-3750.30.30
+        name: TV-Everywhere Authentication
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Authentication of pay-TV subscribers against operator identity
+          providers for over-the-top entitlement.
+        children: []
+  - id: BC-3750.40
+    name: "Viewer Engagement & Retention Management"
+    level: 2
+    industry: "Media, Entertainment & Telecom Content"
+    description: |
+      Modelling, journey design, and intervention to grow content engagement
+      and reduce churn on direct-to-consumer services.
+    children:
+      - id: BC-3750.40.10
+        name: Viewing Habit Modelling
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Modelling of viewer habits, watch states, and content affinity to
+          drive engagement decisions.
+        children: []
+      - id: BC-3750.40.20
+        name: "Win-Back & Retention Programme Management"
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Design and execution of save, win-back, and retention programmes for
+          at-risk and lapsed viewers.
+        children: []
+      - id: BC-3750.40.30
+        name: "Onboarding & Activation Journey Management"
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Journeys that onboard new viewers and drive first-meaningful-watch
+          activation.
+        children: []
+  - id: BC-3750.50
+    name: "Parental Controls & Profile Restrictions Management"
+    level: 2
+    industry: "Media, Entertainment & Telecom Content"
+    description: |
+      Configuration and enforcement of profile-level content restrictions,
+      PIN locks, and watch-time limits.
+    children:
+      - id: BC-3750.50.10
+        name: Profile-Level Content Restriction
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Per-profile restriction of content by age rating, category, and
+          custom block lists.
+        children: []
+      - id: BC-3750.50.20
+        name: "PIN & Lock Management"
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          PIN, profile lock, and purchase lock management across devices and
+          surfaces.
+        children: []
+      - id: BC-3750.50.30
+        name: Watch-Limit Configuration
+        level: 3
+        industry: "Media, Entertainment & Telecom Content"
+        description: |
+          Configuration of watch-time limits, daypart restrictions, and screen
+          time controls.
+        children: []
