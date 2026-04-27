@@ -362,6 +362,16 @@ value_streams:
         capability_id: BC-3050
         industry_variant: Oil & Gas
         notes: Industry-wide lessons-learned sharing
+      - stage_order: 1
+        stage_name: Issue Capture (Citizen Service)
+        capability_id: BC-3220
+        industry_variant: Public Sector
+        notes: Citizen complaint, FOI request, and ombudsman intake
+      - stage_order: 4
+        stage_name: Resolution (Citizen Service)
+        capability_id: BC-3220
+        industry_variant: Public Sector
+        notes: Case resolution, ombudsman determination, appeals outcome
   - name: Order-to-Cash
     industries: [Cross-Industry]
     stages:
@@ -705,6 +715,36 @@ value_streams:
         capability_id: BC-1930
         industry_variant: Electrical Components & Equipment
         notes: Distributor performance, PCN/EOL handling
+      - stage_order: 1
+        stage_name: Need Identification & Requisition
+        capability_id: BC-3270
+        industry_variant: Public Sector
+        notes: Acquisition planning; market research; independent government cost estimate
+      - stage_order: 2
+        stage_name: Sourcing
+        capability_id: BC-3270
+        industry_variant: Public Sector
+        notes: Solicitation drafting and publication under FAR / EU procurement directives
+      - stage_order: 3
+        stage_name: Supplier Selection & Onboarding
+        capability_id: BC-3270
+        industry_variant: Public Sector
+        notes: Source selection, responsibility determination, set-aside compliance
+      - stage_order: 4
+        stage_name: Contract & Purchase Order
+        capability_id: BC-3270
+        industry_variant: Public Sector
+        notes: Award, debriefing, contract formation, obligation of funds
+      - stage_order: 5
+        stage_name: Goods/Services Receipt
+        capability_id: BC-3270
+        industry_variant: Public Sector
+        notes: Deliverable acceptance and contract administration
+      - stage_order: 9
+        stage_name: Supplier Performance Monitoring
+        capability_id: BC-3270
+        industry_variant: Public Sector
+        notes: Past performance recording; suspension and debarment
   - name: Idea-to-Market
     industries: [Cross-Industry]
     stages:
@@ -1044,6 +1084,26 @@ value_streams:
         stage_name: Audit & Sign-Off
         capability_id: BC-140
         notes: Internal audit review
+      - stage_order: 1
+        stage_name: Transaction Capture
+        capability_id: BC-3280
+        industry_variant: Public Sector
+        notes: Appropriations execution; commitment, obligation, and outlay posting
+      - stage_order: 2
+        stage_name: Sub-Ledger Close
+        capability_id: BC-3280
+        industry_variant: Public Sector
+        notes: Government fund accounting close
+      - stage_order: 4
+        stage_name: Consolidation
+        capability_id: BC-3280
+        industry_variant: Public Sector
+        notes: Whole-of-government consolidation
+      - stage_order: 6
+        stage_name: Statutory & Regulatory Reporting
+        capability_id: BC-3280
+        industry_variant: Public Sector
+        notes: IPSAS financial statements; GFSM and COFOG statistical reporting
   - name: Acquire-to-Retire
     industries: [Cross-Industry]
     stages:
@@ -1285,6 +1345,21 @@ value_streams:
         stage_name: Benefits Realisation
         capability_id: BC-920
         notes: Benefits tracking
+      - stage_order: 1
+        stage_name: Strategy Formulation
+        capability_id: BC-3200
+        industry_variant: Public Sector
+        notes: Policy options analysis and decision support
+      - stage_order: 4
+        stage_name: Delivery & Governance
+        capability_id: BC-3200
+        industry_variant: Public Sector
+        notes: Cross-agency policy implementation coordination
+      - stage_order: 6
+        stage_name: Benefits Realisation
+        capability_id: BC-3200
+        industry_variant: Public Sector
+        notes: Policy evaluation and ex-post review
   - name: Risk-to-Mitigation
     industries: [Cross-Industry]
     stages:
@@ -2170,6 +2245,41 @@ value_streams:
         stage_name: Post-Crisis Review
         capability_id: BC-830
         notes: Lessons learned
+      - stage_order: 1
+        stage_name: Continuity Planning
+        capability_id: BC-3310
+        industry_variant: Public Sector
+        notes: Hazard analysis and emergency planning under Sendai Framework
+      - stage_order: 2
+        stage_name: Resilience Testing
+        capability_id: BC-3310
+        industry_variant: Public Sector
+        notes: Tabletop, functional, and full-scale exercises
+      - stage_order: 3
+        stage_name: Detection & Activation
+        capability_id: BC-3310
+        industry_variant: Public Sector
+        notes: 911/112 emergency call taking; disaster declaration
+      - stage_order: 4
+        stage_name: Crisis Response
+        capability_id: BC-3310
+        industry_variant: Public Sector
+        notes: NIMS / ICS incident command; police, fire, EMS field response
+      - stage_order: 5
+        stage_name: Disaster Recovery
+        capability_id: BC-3310
+        industry_variant: Public Sector
+        notes: Individual and public assistance administration
+      - stage_order: 6
+        stage_name: Restoration
+        capability_id: BC-3310
+        industry_variant: Public Sector
+        notes: Long-term recovery coordination
+      - stage_order: 7
+        stage_name: Post-Crisis Review
+        capability_id: BC-3310
+        industry_variant: Public Sector
+        notes: After-action review and lessons learned
   - name: ESG-to-Disclosure
     industries: [Cross-Industry]
     stages:
@@ -2592,3 +2702,302 @@ value_streams:
         stage_name: Operations Handover
         capability_id: BC-3010
         notes: Production forecasting handover and reservoir surveillance
+  - name: Bill-to-Statute
+    industries: [Public Sector & Government]
+    stages:
+      - stage_order: 1
+        stage_name: Drafting Instruction
+        capability_id: BC-3200
+        notes: Policy decision converted into drafting instructions
+      - stage_order: 1
+        stage_name: Drafting Instruction
+        capability_id: BC-3210
+        notes: Receipt and clarification of drafting instructions by parliamentary counsel
+      - stage_order: 2
+        stage_name: Drafting
+        capability_id: BC-3210
+        notes: Drafting of bills, regulations, and statutory instruments
+      - stage_order: 3
+        stage_name: Legal Vetting
+        capability_id: BC-3210
+        notes: Constitutional, human-rights, and international-law review
+      - stage_order: 3
+        stage_name: Legal Vetting
+        capability_id: BC-150
+        notes: Government legal services advisory review
+      - stage_order: 4
+        stage_name: Impact Assessment
+        capability_id: BC-3210
+        notes: Regulatory impact assessment and small-business test
+      - stage_order: 5
+        stage_name: Legislative Passage
+        capability_id: BC-3210
+        notes: Parliamentary liaison, committee evidence, amendment tracking
+      - stage_order: 6
+        stage_name: Promulgation
+        capability_id: BC-3210
+        notes: Royal assent or executive signature and effective-date setting
+      - stage_order: 7
+        stage_name: Codification & Publication
+        capability_id: BC-3210
+        notes: Official gazette publication and statutory codification
+  - name: Application-to-Benefit
+    industries: [Public Sector & Government]
+    stages:
+      - stage_order: 1
+        stage_name: Programme Configuration
+        capability_id: BC-3230
+        notes: Eligibility rules, benefit formulae, and indexation parameters
+      - stage_order: 2
+        stage_name: Application Intake
+        capability_id: BC-3230
+        notes: Receipt of benefit applications across channels
+      - stage_order: 2
+        stage_name: Application Intake
+        capability_id: BC-3220
+        notes: Citizen-service channels supporting assisted application
+      - stage_order: 3
+        stage_name: Eligibility Determination
+        capability_id: BC-3230
+        notes: Means testing, categorical eligibility, decision and notification
+      - stage_order: 4
+        stage_name: Award Calculation
+        capability_id: BC-3230
+        notes: Contribution-record assessment, award calculation, and issuance
+      - stage_order: 5
+        stage_name: Disbursement
+        capability_id: BC-3230
+        notes: Payment runs across bank, prepaid card, and in-kind channels
+      - stage_order: 6
+        stage_name: Continuing Eligibility
+        capability_id: BC-3230
+        notes: Change of circumstances, periodic redetermination, conditionality
+      - stage_order: 7
+        stage_name: Overpayment & Recovery
+        capability_id: BC-3230
+        notes: Overpayment detection, recovery plans, and debt collection
+      - stage_order: 8
+        stage_name: Fraud Investigation
+        capability_id: BC-3230
+        notes: Fraud detection, investigation, and sanction
+  - name: Application-to-Licence
+    industries: [Public Sector & Government]
+    stages:
+      - stage_order: 1
+        stage_name: Application Intake
+        capability_id: BC-3240
+        notes: Submission, completeness check, and fee assessment
+      - stage_order: 1
+        stage_name: Application Intake
+        capability_id: BC-3220
+        notes: Citizen-service channels for licence applications
+      - stage_order: 2
+        stage_name: Eligibility & Qualification Assessment
+        capability_id: BC-3240
+        notes: Fit and proper, qualification, and background checks
+      - stage_order: 3
+        stage_name: Licensing Decision
+        capability_id: BC-3240
+        notes: Decisioning on grant, refusal, or conditional grant
+      - stage_order: 4
+        stage_name: Credential Issuance
+        capability_id: BC-3240
+        notes: Production and issuance of physical and digital credentials
+      - stage_order: 5
+        stage_name: Inspection & Compliance Monitoring
+        capability_id: BC-3240
+        notes: Risk-based inspection and compliance reporting review
+      - stage_order: 6
+        stage_name: Enforcement & Sanction
+        capability_id: BC-3240
+        notes: Suspension, revocation, civil penalties, and sanctions
+      - stage_order: 7
+        stage_name: Renewal
+        capability_id: BC-3240
+        notes: Renewal processing and continuing-eligibility checks
+      - stage_order: 8
+        stage_name: Register Disclosure
+        capability_id: BC-3240
+        notes: Public register search and credential verification services
+  - name: Return-to-Collection
+    industries: [Public Sector & Government]
+    stages:
+      - stage_order: 1
+        stage_name: Taxpayer Registration
+        capability_id: BC-3250
+        notes: Registration and TIN issuance; taxpayer master data
+      - stage_order: 2
+        stage_name: Return Lodgement
+        capability_id: BC-3250
+        notes: Receipt and validation of tax returns
+      - stage_order: 3
+        stage_name: Assessment
+        capability_id: BC-3250
+        notes: Self-assessment processing and default assessments
+      - stage_order: 4
+        stage_name: Payment Collection
+        capability_id: BC-3250
+        notes: Payment channel operations, withholding, instalment plans
+      - stage_order: 5
+        stage_name: Refund & Credit
+        capability_id: BC-3250
+        notes: Refund validation, issuance, and fraud screening
+      - stage_order: 6
+        stage_name: Audit & Examination
+        capability_id: BC-3250
+        notes: Risk-based audit, fieldwork, and reassessment issuance
+      - stage_order: 7
+        stage_name: Debt Enforcement
+        capability_id: BC-3250
+        notes: Tax debt portfolio management, statutory enforcement, prosecution referral
+  - name: Solicitation-to-Closeout
+    industries: [Public Sector & Government]
+    stages:
+      - stage_order: 1
+        stage_name: Programme Design
+        capability_id: BC-3260
+        notes: Objectives, allocation modelling, evaluation criteria
+      - stage_order: 2
+        stage_name: Solicitation Publication
+        capability_id: BC-3260
+        notes: Funding opportunity publication and applicant outreach
+      - stage_order: 3
+        stage_name: Application Review
+        capability_id: BC-3260
+        notes: Eligibility screening and merit review with conflict-of-interest controls
+      - stage_order: 4
+        stage_name: Award & Agreement
+        capability_id: BC-3260
+        notes: Award selection, grant agreement issuance, and obligation
+      - stage_order: 5
+        stage_name: Recipient Monitoring
+        capability_id: BC-3260
+        notes: Performance, financial, and site monitoring of recipients
+      - stage_order: 6
+        stage_name: Closeout & Audit Resolution
+        capability_id: BC-3260
+        notes: Final reporting, single-audit resolution, and disallowed-cost recovery
+  - name: Event-to-Record
+    industries: [Public Sector & Government]
+    stages:
+      - stage_order: 1
+        stage_name: Event Notification
+        capability_id: BC-3290
+        notes: Notification of births, deaths, marriages, business events, and land transactions
+      - stage_order: 2
+        stage_name: Registration
+        capability_id: BC-3290
+        notes: Authoritative registration and identifier assignment
+      - stage_order: 3
+        stage_name: Certification & Issuance
+        capability_id: BC-3290
+        notes: Issuance of certificates, credentials, and registry extracts
+      - stage_order: 4
+        stage_name: Authentication
+        capability_id: BC-3290
+        notes: Document authentication and apostille issuance under the Hague Convention
+      - stage_order: 5
+        stage_name: Disclosure & Search
+        capability_id: BC-3290
+        notes: Public-facing search services and certified-copy provision
+      - stage_order: 6
+        stage_name: Record Maintenance & Privacy
+        capability_id: BC-3290
+        notes: Ongoing maintenance, restricted disclosure, and privacy controls
+  - name: Visa-to-Admission
+    industries: [Public Sector & Government]
+    stages:
+      - stage_order: 1
+        stage_name: Visa Application
+        capability_id: BC-3300
+        notes: Receipt and validation of visa applications across categories
+      - stage_order: 2
+        stage_name: Visa Decisioning
+        capability_id: BC-3300
+        notes: Adjudication of visa applications and fraud screening
+      - stage_order: 3
+        stage_name: Pre-Travel Authorisation
+        capability_id: BC-3300
+        notes: ETA-style pre-travel authorisation and API/PNR processing
+      - stage_order: 4
+        stage_name: Border Inspection
+        capability_id: BC-3300
+        notes: Primary and secondary inspection at ports of entry
+      - stage_order: 5
+        stage_name: Admission Decision
+        capability_id: BC-3300
+        notes: Decisioning on admission, refusal, and conditions of entry
+      - stage_order: 6
+        stage_name: Status Maintenance
+        capability_id: BC-3300
+        notes: Residence permits, work authorisations, and naturalisation administration
+      - stage_order: 7
+        stage_name: Removal & Return
+        capability_id: BC-3300
+        notes: Detention, removal-order execution, and voluntary return
+  - name: Filing-to-Disposition
+    industries: [Public Sector & Government]
+    stages:
+      - stage_order: 1
+        stage_name: Case Filing
+        capability_id: BC-3320
+        notes: Case initiation, e-filing, classification, and fee assessment
+      - stage_order: 2
+        stage_name: Docket & Scheduling
+        capability_id: BC-3320
+        notes: Docket maintenance, hearing scheduling, and judicial assignment
+      - stage_order: 3
+        stage_name: Hearing & Trial
+        capability_id: BC-3320
+        notes: Jury management, courtroom operations, and witness support
+      - stage_order: 4
+        stage_name: Judgment & Sentencing
+        capability_id: BC-3320
+        notes: Recording of judgments, sentences, and dispositional orders
+      - stage_order: 5
+        stage_name: Order Enforcement
+        capability_id: BC-3320
+        notes: Fines, restitution, civil judgment enforcement, and warrants
+      - stage_order: 6
+        stage_name: Custody & Supervision
+        capability_id: BC-3320
+        notes: Corrections custody, probation, and parole supervision
+      - stage_order: 7
+        stage_name: Records & Public Access
+        capability_id: BC-3320
+        notes: Court records maintenance, public access, sealing, and expungement
+  - name: Registration-to-Certification
+    industries: [Public Sector & Government]
+    stages:
+      - stage_order: 1
+        stage_name: Voter Registration
+        capability_id: BC-3330
+        notes: Voter enrolment, list maintenance, and eligibility verification
+      - stage_order: 2
+        stage_name: Boundary & Polling Place Setup
+        capability_id: BC-3330
+        notes: Electoral district maintenance and polling-place designation
+      - stage_order: 3
+        stage_name: Candidate Nomination
+        capability_id: BC-3330
+        notes: Party registration, candidate filing, and ballot access determination
+      - stage_order: 4
+        stage_name: Ballot Production
+        capability_id: BC-3330
+        notes: Ballot design, translation, accessibility, and secure distribution
+      - stage_order: 5
+        stage_name: Polling
+        capability_id: BC-3330
+        notes: Poll-worker management, voter check-in, and absentee voting
+      - stage_order: 6
+        stage_name: Counting & Tabulation
+        capability_id: BC-3330
+        notes: Ballot counting, results aggregation, and post-election audit
+      - stage_order: 7
+        stage_name: Certification
+        capability_id: BC-3330
+        notes: Statutory certification of election results
+      - stage_order: 8
+        stage_name: Campaign Finance Disclosure
+        capability_id: BC-3330
+        notes: Political-committee registration, donation reporting, and enforcement

@@ -1,0 +1,236 @@
+# Public Benefits & Entitlements Management
+id: BC-3230
+name: "Public Benefits & Entitlements Management"
+level: 1
+industry: Public Sector & Government
+description: |
+  Design, eligibility determination, calculation, disbursement, monitoring,
+  and recovery of social-protection benefits and statutory entitlements
+  including pensions, unemployment, disability, family, and food assistance.
+references:
+  - https://www.ssa.gov/
+  - https://www.issa.int/
+  - https://www.ilo.org/secsoc/
+children:
+  - id: BC-3230.10
+    name: "Benefit Programme Design & Configuration"
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Configuration of statutory benefit programmes including eligibility
+      rules, benefit formulae, and operational parameters.
+    in_scope:
+      - Eligibility rules configuration
+      - Benefit formula and rate setting
+      - Programme parameter and indexation management
+    out_of_scope:
+      - Drafting of enabling legislation (covered by Legislative & Regulatory Drafting Management)
+    children:
+      - id: BC-3230.10.10
+        name: Eligibility Rules Configuration
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Codification of statutory eligibility rules into machine-executable form.
+        children: []
+      - id: BC-3230.10.20
+        name: Benefit Formula and Rate Configuration
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Configuration of benefit calculation formulae, rates, and ceilings.
+        children: []
+      - id: BC-3230.10.30
+        name: Programme Parameter Indexation
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Periodic indexation and adjustment of programme parameters to inflation or wage changes.
+        children: []
+  - id: BC-3230.20
+    name: Eligibility Determination
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Determination of applicant eligibility for benefits including means
+      testing, categorical eligibility, and household composition.
+    children:
+      - id: BC-3230.20.10
+        name: Application Intake
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Intake of benefit applications across channels including digital, in-person, and assisted.
+        children: []
+      - id: BC-3230.20.20
+        name: Means Testing
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Income, asset, and household-circumstances testing against programme thresholds.
+        children: []
+      - id: BC-3230.20.30
+        name: Categorical Eligibility Verification
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Verification of categorical eligibility such as age, disability, or family status.
+        children: []
+      - id: BC-3230.20.40
+        name: Eligibility Decision and Notification
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Decision recording and applicant notification of eligibility outcomes.
+        children: []
+  - id: BC-3230.30
+    name: "Benefit Calculation & Award"
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Calculation of award amounts, contribution-record assessment, and
+      issuance of benefit awards.
+    children:
+      - id: BC-3230.30.10
+        name: Contribution Record Assessment
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Assessment of contribution records for contributory benefits such as pensions and unemployment.
+        children: []
+      - id: BC-3230.30.20
+        name: Award Calculation
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Calculation of award amounts including supplements, deductions, and tapers.
+        children: []
+      - id: BC-3230.30.30
+        name: Award Issuance
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Issuance and recording of benefit awards and award letters.
+        children: []
+  - id: BC-3230.40
+    name: Benefit Disbursement Operations
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Periodic disbursement of benefit payments across payment channels and
+      reconciliation against awards.
+    children:
+      - id: BC-3230.40.10
+        name: Payment Schedule Management
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Maintenance of payment schedules, frequencies, and run calendars.
+        children: []
+      - id: BC-3230.40.20
+        name: Payment Execution
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Execution of payment runs across bank, prepaid card, cheque, and in-kind channels.
+        children: []
+      - id: BC-3230.40.30
+        name: Payment Reconciliation
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Reconciliation of disbursements against awards and bank confirmations.
+        children: []
+      - id: BC-3230.40.40
+        name: In-Kind Benefit Distribution
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Distribution of in-kind benefits such as food assistance vouchers and electronic benefit transfer.
+        children: []
+  - id: BC-3230.50
+    name: Recipient Monitoring and Continuing Eligibility
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Ongoing monitoring of recipient circumstances and periodic
+      redetermination of continuing eligibility.
+    children:
+      - id: BC-3230.50.10
+        name: Change of Circumstances Capture
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Capture and processing of recipient-reported and detected changes of circumstances.
+        children: []
+      - id: BC-3230.50.20
+        name: Periodic Redetermination
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Periodic redetermination of eligibility and award level.
+        children: []
+      - id: BC-3230.50.30
+        name: Conditionality and Compliance Monitoring
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Monitoring of recipient compliance with conditionality such as job-search or training requirements.
+        children: []
+  - id: BC-3230.60
+    name: "Overpayment & Recovery Management"
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Detection, calculation, and recovery of benefit overpayments and
+      ineligible payments.
+    children:
+      - id: BC-3230.60.10
+        name: Overpayment Detection
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Detection of overpayments through reconciliation, data matching, and reviews.
+        children: []
+      - id: BC-3230.60.20
+        name: Recovery Plan Setup
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Setup of recovery plans including instalments, deductions, and write-offs.
+        children: []
+      - id: BC-3230.60.30
+        name: Debt Collection Operations
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Collection of recoverable debts through deductions, civil action, and offsets.
+        children: []
+  - id: BC-3230.70
+    name: Benefit Fraud Investigation
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Detection, investigation, and disposition of benefit fraud cases.
+    children:
+      - id: BC-3230.70.10
+        name: Fraud Risk Detection
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Risk-based detection of suspected fraud through analytics and intelligence.
+        children: []
+      - id: BC-3230.70.20
+        name: Fraud Case Investigation
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Investigation of suspected fraud cases including evidence gathering and interviews.
+        children: []
+      - id: BC-3230.70.30
+        name: Fraud Sanction and Referral
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Sanctioning of confirmed fraud and referral for prosecution where applicable.
+        children: []

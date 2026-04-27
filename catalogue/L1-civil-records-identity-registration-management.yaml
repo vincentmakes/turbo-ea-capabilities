@@ -1,0 +1,216 @@
+# Civil Records & Identity Registration Management
+id: BC-3290
+name: "Civil Records & Identity Registration Management"
+level: 1
+industry: Public Sector & Government
+description: |
+  Authoritative registration and stewardship of civil and statutory records
+  including vital events, national identity, business and entity registries,
+  and land cadastre, together with authentication, disclosure, and privacy
+  controls.
+references:
+  - https://unstats.un.org/unsd/demographic-social/crvs/
+  - https://pages.nist.gov/800-63-3/
+  - https://www.eid.as/
+children:
+  - id: BC-3290.10
+    name: Vital Records Management
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Registration of vital events including births, deaths, marriages, civil
+      partnerships, and divorces.
+    in_scope:
+      - Birth, death, marriage, and divorce registration
+      - Vital events certification
+      - Vital statistics extraction
+    out_of_scope:
+      - National identity number issuance (covered under National Identity Registration)
+    children:
+      - id: BC-3290.10.10
+        name: Birth Registration
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Registration of births and issuance of birth certificates.
+        children: []
+      - id: BC-3290.10.20
+        name: Death Registration
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Registration of deaths and issuance of death certificates.
+        children: []
+      - id: BC-3290.10.30
+        name: Marriage and Civil Partnership Registration
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Registration of marriages and civil partnerships and certificate issuance.
+        children: []
+      - id: BC-3290.10.40
+        name: Divorce and Annulment Registration
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Registration of divorces, annulments, and decree absolutes.
+        children: []
+  - id: BC-3290.20
+    name: National Identity Registration
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Establishment, maintenance, and authentication of foundational national
+      identity records and credentials.
+    children:
+      - id: BC-3290.20.10
+        name: Identity Enrolment
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Enrolment of citizens and residents into the national identity system.
+        children: []
+      - id: BC-3290.20.20
+        name: Biometric Capture and Deduplication
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Capture, deduplication, and matching of biometric identifiers.
+        children: []
+      - id: BC-3290.20.30
+        name: Identity Credential Issuance
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Production and issuance of national identity cards and digital credentials.
+        children: []
+      - id: BC-3290.20.40
+        name: Identity Update and Lifecycle
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Update of identity attributes, lifecycle events, and credential reissuance.
+        children: []
+  - id: BC-3290.30
+    name: Business and Entity Registry Management
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Registration of companies, partnerships, charities, and other legal
+      entities and maintenance of authoritative entity records.
+    children:
+      - id: BC-3290.30.10
+        name: Entity Registration
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Registration of companies, partnerships, charities, and other entities.
+        children: []
+      - id: BC-3290.30.20
+        name: Annual Filing Processing
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Receipt and processing of annual returns, accounts, and director filings.
+        children: []
+      - id: BC-3290.30.30
+        name: Beneficial Ownership Register Management
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Maintenance of beneficial ownership and control disclosures.
+        children: []
+      - id: BC-3290.30.40
+        name: Entity Dissolution and Strike-Off
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Strike-off, dissolution, and restoration of legal entities.
+        children: []
+  - id: BC-3290.40
+    name: Land and Cadastre Registry Management
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Registration of land titles, easements, charges, and cadastral parcels
+      and maintenance of authoritative land records.
+    children:
+      - id: BC-3290.40.10
+        name: Title Registration
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Registration of land titles, transfers, and proprietary interests.
+        children: []
+      - id: BC-3290.40.20
+        name: Encumbrance and Charge Recording
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Recording of mortgages, easements, and other encumbrances.
+        children: []
+      - id: BC-3290.40.30
+        name: Cadastral Survey Maintenance
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Maintenance of cadastral parcel boundaries and survey records.
+        children: []
+  - id: BC-3290.50
+    name: Records Authentication and Apostille
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Authentication of public documents for domestic and international use
+      including apostille services under the Hague Convention.
+    children:
+      - id: BC-3290.50.10
+        name: Document Authentication
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Authentication of public documents for legal and administrative use.
+        children: []
+      - id: BC-3290.50.20
+        name: Apostille Issuance
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Issuance of apostille certifications under the 1961 Hague Convention.
+        children: []
+      - id: BC-3290.50.30
+        name: Notarial Service Coordination
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Coordination of notarial services where provided by government.
+        children: []
+  - id: BC-3290.60
+    name: Records Disclosure and Privacy
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Controlled disclosure, redaction, and privacy management of civil and
+      statutory records.
+    children:
+      - id: BC-3290.60.10
+        name: Public Search Services
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Provision of public-facing search and certificate services on civil registers.
+        children: []
+      - id: BC-3290.60.20
+        name: Restricted Disclosure Handling
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Handling of restricted disclosures including adoption, witness protection, and security caveats.
+        children: []
+      - id: BC-3290.60.30
+        name: Records Privacy and Redaction
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Application of privacy controls and redaction to civil records before disclosure.
+        children: []

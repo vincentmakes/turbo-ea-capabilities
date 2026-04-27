@@ -1,0 +1,217 @@
+# Citizen & Constituent Service Management
+id: BC-3220
+name: "Citizen & Constituent Service Management"
+level: 1
+industry: Public Sector & Government
+description: |
+  Multi-channel delivery of government services to citizens, residents, and
+  constituents, including identity authentication, case management, inquiries,
+  appeals, and engagement.
+references:
+  - https://pages.nist.gov/800-63-3/
+  - https://www.eid.as/
+  - https://www.w3.org/WAI/standards-guidelines/wcag/
+  - https://www.section508.gov/
+children:
+  - id: BC-3220.10
+    name: Service Channel Operations
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Operation of in-person, telephone, postal, digital, and mobile channels
+      through which citizens access government services.
+    in_scope:
+      - One-stop shop and walk-in service centres
+      - Contact centre and telephony channels
+      - Digital portals and mobile apps
+      - Postal and form-based channels
+    out_of_scope:
+      - Citizen identity verification (covered under Citizen Identity & Authentication)
+    children:
+      - id: BC-3220.10.10
+        name: One-Stop Shop Operations
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Operation of in-person service centres and one-stop counters across agencies.
+        children: []
+      - id: BC-3220.10.20
+        name: Contact Centre Operations
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Operation of multi-agency telephone and chat contact centres.
+        children: []
+      - id: BC-3220.10.30
+        name: Digital Service Portal Operations
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Operation of citizen-facing digital portals and mobile service apps.
+        children: []
+      - id: BC-3220.10.40
+        name: Service Accessibility Assurance
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          WCAG and Section 508 accessibility assurance across service channels and assistive technology support.
+        children: []
+  - id: BC-3220.20
+    name: "Citizen Identity & Authentication"
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Establishment and verification of citizen digital identities, credentials,
+      and assurance levels for government service access.
+    children:
+      - id: BC-3220.20.10
+        name: Identity Proofing
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Identity proofing aligned with NIST 800-63 IAL or eIDAS assurance levels.
+        children: []
+      - id: BC-3220.20.20
+        name: Credential Issuance
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Issuance of authenticators and credentials for government access.
+        children: []
+      - id: BC-3220.20.30
+        name: Authentication Operations
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Day-to-day authentication of citizens against government services.
+        children: []
+      - id: BC-3220.20.40
+        name: Federation and Cross-Border Trust
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Federation of identity across agencies and cross-border trust under eIDAS or equivalent.
+        children: []
+  - id: BC-3220.30
+    name: Citizen Case Management
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      End-to-end case lifecycle management of citizen interactions across
+      agencies and programmes.
+    children:
+      - id: BC-3220.30.10
+        name: Case Intake and Triage
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Intake, classification, and triage of citizen cases.
+        children: []
+      - id: BC-3220.30.20
+        name: Case Routing and Assignment
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Routing of cases to caseworkers and agencies based on jurisdiction and rules.
+        children: []
+      - id: BC-3220.30.30
+        name: Case Progression and Resolution
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Progression of cases through service workflows to resolution.
+        children: []
+      - id: BC-3220.30.40
+        name: Case Closure and Quality Review
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Closure, quality review, and rework of completed cases.
+        children: []
+  - id: BC-3220.40
+    name: Service Request and Inquiry Handling
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Handling of inquiries, requests, complaints, and freedom-of-information
+      submissions across channels.
+    children:
+      - id: BC-3220.40.10
+        name: General Inquiry Handling
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Handling of general inquiries and information requests.
+        children: []
+      - id: BC-3220.40.20
+        name: Complaint Handling
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Receipt, investigation, and resolution of citizen complaints.
+        children: []
+      - id: BC-3220.40.30
+        name: Freedom of Information Request Handling
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Processing of freedom-of-information and access-to-records requests.
+        children: []
+  - id: BC-3220.50
+    name: "Appeals & Ombudsman Management"
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Independent administrative review of agency decisions including appeals,
+      tribunals, and ombudsman investigations.
+    children:
+      - id: BC-3220.50.10
+        name: Administrative Appeal Intake
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Intake and validation of administrative appeals against agency decisions.
+        children: []
+      - id: BC-3220.50.20
+        name: Appeal Hearing and Determination
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Hearing of appeals and determination of outcomes by reviewing authorities.
+        children: []
+      - id: BC-3220.50.30
+        name: Ombudsman Investigation
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Independent ombudsman investigation of maladministration complaints.
+        children: []
+  - id: BC-3220.60
+    name: Citizen Engagement and Participation
+    level: 2
+    industry: Public Sector & Government
+    description: |
+      Two-way engagement with citizens through participation platforms,
+      petitions, and feedback channels.
+    children:
+      - id: BC-3220.60.10
+        name: Petition and Citizen Initiative Handling
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Receipt, validation, and response to petitions and citizen-initiated proposals.
+        children: []
+      - id: BC-3220.60.20
+        name: Participatory Platform Operations
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Operation of participatory budgeting, deliberation, and co-creation platforms.
+        children: []
+      - id: BC-3220.60.30
+        name: Citizen Satisfaction Measurement
+        level: 3
+        industry: Public Sector & Government
+        description: |
+          Measurement of citizen satisfaction, trust, and service experience.
+        children: []
