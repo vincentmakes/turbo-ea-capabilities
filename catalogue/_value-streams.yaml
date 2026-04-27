@@ -3988,3 +3988,114 @@ value_streams:
         capability_id: BC-3760
         industry_variant: Media & Entertainment
         notes: Advertiser and agency billing, agency-discount and commission settlement
+  - name: Source-to-Tap
+    industries: [Power & Water Utilities]
+    stages:
+      - stage_order: 1
+        stage_name: Resource Planning & Authorisation
+        capability_id: BC-3860
+        industry_variant: Utilities
+        notes: Supply-demand balance, drought planning, abstraction licence administration
+      - stage_order: 2
+        stage_name: Catchment Stewardship
+        capability_id: BC-3860
+        industry_variant: Utilities
+        notes: Catchment risk assessment, source protection zones, stakeholder engagement
+      - stage_order: 3
+        stage_name: Raw Water Abstraction
+        capability_id: BC-3860
+        industry_variant: Utilities
+        notes: Surface intake, groundwater borehole, and raw-water pumping operations
+      - stage_order: 4
+        stage_name: Treatment
+        capability_id: BC-3870
+        industry_variant: Utilities
+        notes: Treatment-works shift operations and unit-process control
+      - stage_order: 5
+        stage_name: Drinking Water Quality Assurance
+        capability_id: BC-3870
+        industry_variant: Utilities
+        notes: Statutory sampling, online monitoring, incident response, and DWI/EPA reporting
+      - stage_order: 6
+        stage_name: Bulk Storage & Transmission
+        capability_id: BC-3870
+        industry_variant: Utilities
+        notes: Service reservoir and contact-tank operations
+      - stage_order: 6
+        stage_name: Bulk Storage & Transmission
+        capability_id: BC-3880
+        industry_variant: Utilities
+        notes: Trunk-main and pumping-station operations between zones
+      - stage_order: 7
+        stage_name: Distribution
+        capability_id: BC-3880
+        industry_variant: Utilities
+        notes: Distribution control, leakage, pressure, network quality, and mains repair
+      - stage_order: 8
+        stage_name: Customer Supply & Metering
+        capability_id: BC-3880
+        industry_variant: Utilities
+        notes: New service connection installation and commissioning
+      - stage_order: 8
+        stage_name: Customer Supply & Metering
+        capability_id: BC-3910
+        industry_variant: Utilities
+        notes: Customer account, AMI data acquisition, meter reading, and M2C inputs
+  - name: Generate-to-Settle
+    industries: [Power & Water Utilities]
+    stages:
+      - stage_order: 1
+        stage_name: Generation Scheduling
+        capability_id: BC-3800
+        industry_variant: Utilities
+        notes: Unit commitment and economic dispatch against forecast load
+      - stage_order: 1
+        stage_name: Generation Scheduling
+        capability_id: BC-3850
+        industry_variant: Utilities
+        notes: Forward and bilateral position pre-scheduling
+      - stage_order: 2
+        stage_name: Wholesale Trading & Position Management
+        capability_id: BC-3850
+        industry_variant: Utilities
+        notes: Day-ahead, intraday, capacity, and environmental commodity trading
+      - stage_order: 3
+        stage_name: Generation Operations
+        capability_id: BC-3800
+        industry_variant: Utilities
+        notes: Thermal, hydro, nuclear, renewable, and storage plant operations
+      - stage_order: 4
+        stage_name: System Balancing & Dispatch
+        capability_id: BC-3830
+        industry_variant: Utilities
+        notes: Real-time system ops, frequency, reserves, and ancillary services
+      - stage_order: 5
+        stage_name: Distributed Energy Coordination
+        capability_id: BC-3840
+        industry_variant: Utilities
+        notes: VPP, demand response, EV grid integration, and microgrid dispatch
+      - stage_order: 6
+        stage_name: Physical Delivery
+        capability_id: BC-3810
+        industry_variant: Utilities
+        notes: Transmission grid operation and inter-area flow
+      - stage_order: 6
+        stage_name: Physical Delivery
+        capability_id: BC-3820
+        industry_variant: Utilities
+        notes: Distribution-network delivery to point of use
+      - stage_order: 7
+        stage_name: Metering & Imbalance Calculation
+        capability_id: BC-3910
+        industry_variant: Utilities
+        notes: AMI data acquisition, validation, and aggregation by BRP
+      - stage_order: 7
+        stage_name: Metering & Imbalance Calculation
+        capability_id: BC-3830
+        industry_variant: Utilities
+        notes: Imbalance volume, price calculation, and BRP notification
+      - stage_order: 8
+        stage_name: Trade Settlement & Reporting
+        capability_id: BC-3850
+        industry_variant: Utilities
+        notes: Trade confirmation, settlement, and REMIT / EMIR / Dodd-Frank reporting
