@@ -1,0 +1,177 @@
+# Agronomy & Farm Advisory Management
+id: BC-3530
+name: "Agronomy & Farm Advisory Management"
+level: 1
+industry: Agriculture & Food Production
+description: |
+  Soil testing, nutrient and crop-protection planning, integrated pest
+  management, variety recommendation, advisory services, and field-trial
+  management that turn agronomic science into field-level decisions.
+references:
+  - https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/
+  - https://www.ipni.net/4r
+  - https://www.ista.ch/
+children:
+  - id: BC-3530.10
+    name: Soil Testing and Analysis
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Sampling, laboratory analysis, and interpretation of soil tests
+      feeding nutrition and amendment decisions.
+    children:
+      - id: BC-3530.10.10
+        name: Soil Sampling Operations
+        level: 3
+        description: |
+          Field soil sampling using grid, zone, and composite methods.
+        children: []
+      - id: BC-3530.10.20
+        name: Soil Test Result Interpretation
+        level: 3
+        description: |
+          Interpretation of soil test results against crop requirements.
+        children: []
+      - id: BC-3530.10.30
+        name: Soil Health Indicator Tracking
+        level: 3
+        description: |
+          Tracking of soil health indicators over time across fields.
+        children: []
+  - id: BC-3530.20
+    name: Nutrient Management Planning
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Calculation of crop nutrient requirements and generation of variable-
+      rate prescriptions aligned with 4R nutrient stewardship.
+    in_scope:
+      - Nutrient requirement calculation
+      - Variable-rate prescription generation
+      - 4R compliance recording
+    out_of_scope:
+      - Fertilizer application execution (BC-3500.40)
+      - Soil-carbon programmes (BC-3600.50)
+    children:
+      - id: BC-3530.20.10
+        name: Nutrient Requirement Calculation
+        level: 3
+        description: |
+          Calculation of nutrient requirements per crop, yield target, and field.
+        children: []
+      - id: BC-3530.20.20
+        name: Variable Rate Prescription Generation
+        level: 3
+        description: |
+          Generation of variable-rate prescription maps for fertilizer and amendments.
+        children: []
+      - id: BC-3530.20.30
+        name: 4R Compliance Recording
+        level: 3
+        description: |
+          Recording of right source, rate, time, and place against 4R stewardship.
+        children: []
+  - id: BC-3530.30
+    name: Crop Protection Planning
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Risk assessment, integrated pest management planning, spray
+      programme design, and resistance management strategy.
+    children:
+      - id: BC-3530.30.10
+        name: Pest and Disease Risk Assessment
+        level: 3
+        description: |
+          Pest and disease risk assessment using forecasts and field intelligence.
+        children: []
+      - id: BC-3530.30.20
+        name: Integrated Pest Management Planning
+        level: 3
+        description: |
+          IPM planning combining cultural, biological, and chemical measures.
+        children: []
+      - id: BC-3530.30.30
+        name: Spray Programme Design
+        level: 3
+        description: |
+          Season-long spray programme design balancing efficacy, residue, and cost.
+        children: []
+      - id: BC-3530.30.40
+        name: Resistance Management Planning
+        level: 3
+        description: |
+          Pesticide-resistance management planning across modes of action.
+        children: []
+  - id: BC-3530.40
+    name: Variety and Hybrid Recommendation
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Analysis of variety trial data and issuance of locally-tuned variety
+      and hybrid recommendations to growers.
+    children:
+      - id: BC-3530.40.10
+        name: Variety Trial Result Analysis
+        level: 3
+        description: |
+          Statistical analysis of variety trial results across sites and seasons.
+        children: []
+      - id: BC-3530.40.20
+        name: Local Variety Recommendation
+        level: 3
+        description: |
+          Issuance of variety and hybrid recommendations by zone and end-use.
+        children: []
+  - id: BC-3530.50
+    name: Agronomic Advisory Services
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Field advisory visits, decision-support recommendations, and grower
+      training delivered by agronomy professionals.
+    children:
+      - id: BC-3530.50.10
+        name: Field Advisory Visit Delivery
+        level: 3
+        description: |
+          On-farm advisory visits and recommendation delivery.
+        children: []
+      - id: BC-3530.50.20
+        name: Decision Support Recommendation
+        level: 3
+        description: |
+          Use of decision-support tools to issue agronomic recommendations.
+        children: []
+      - id: BC-3530.50.30
+        name: Grower Training Delivery
+        level: 3
+        description: |
+          Delivery of grower training events and field days.
+        children: []
+  - id: BC-3530.60
+    name: Field Trial Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Design, execution, and analysis of replicated field trials supporting
+      agronomy, variety, and product evaluation.
+    children:
+      - id: BC-3530.60.10
+        name: Trial Design
+        level: 3
+        description: |
+          Statistical design of replicated and demonstration trials.
+        children: []
+      - id: BC-3530.60.20
+        name: Trial Execution and Data Capture
+        level: 3
+        description: |
+          On-site trial execution and standardised data capture.
+        children: []
+      - id: BC-3530.60.30
+        name: Trial Result Analysis
+        level: 3
+        description: |
+          Statistical analysis of trial results and reporting to sponsors.
+        children: []

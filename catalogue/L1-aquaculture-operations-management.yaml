@@ -1,0 +1,206 @@
+# Aquaculture Operations Management
+id: BC-3520
+name: Aquaculture Operations Management
+level: 1
+industry: Agriculture & Food Production
+description: |
+  Farmed-aquatic-species production - hatchery and stocking, feeding, water
+  quality, animal health, pen and pond operations, harvest, and
+  environmental compliance for finfish, shellfish, and aquatic plants.
+references:
+  - https://asc-aqua.org/
+  - https://www.bapcertification.org/
+  - https://www.fao.org/fishery/en/code
+children:
+  - id: BC-3520.10
+    name: Stock Procurement and Stocking Operations
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Broodstock sourcing, hatchery operations, and juvenile stocking into
+      grow-out systems.
+    children:
+      - id: BC-3520.10.10
+        name: Broodstock Sourcing
+        level: 3
+        description: |
+          Sourcing and quarantine of broodstock for hatchery production.
+        children: []
+      - id: BC-3520.10.20
+        name: Hatchery Operations
+        level: 3
+        description: |
+          Egg incubation, larval rearing, and juvenile production in hatcheries.
+        children: []
+      - id: BC-3520.10.30
+        name: Juvenile Stocking Operations
+        level: 3
+        description: |
+          Stocking of juveniles into grow-out pens, ponds, and tanks.
+        children: []
+  - id: BC-3520.20
+    name: Aquaculture Feeding Operations
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Feed planning, distribution, and feed-conversion monitoring for
+      farmed aquatic species.
+    children:
+      - id: BC-3520.20.10
+        name: Feed Ration Planning
+        level: 3
+        description: |
+          Feed ration planning by species, life stage, and water temperature.
+        children: []
+      - id: BC-3520.20.20
+        name: Feed Distribution Operations
+        level: 3
+        description: |
+          Manual, mechanical, and automated feed distribution to pens and ponds.
+        children: []
+      - id: BC-3520.20.30
+        name: Feed Conversion Monitoring
+        level: 3
+        description: |
+          Feed-conversion-ratio monitoring against feeding plans.
+        children: []
+  - id: BC-3520.30
+    name: Water Quality Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Continuous water-quality monitoring, oxygenation, and treatment in
+      flow-through and recirculating aquaculture systems.
+    in_scope:
+      - Dissolved oxygen and temperature monitoring
+      - Aeration and oxygenation operations
+      - Water treatment and recirculation
+    children:
+      - id: BC-3520.30.10
+        name: Water Quality Monitoring
+        level: 3
+        description: |
+          Real-time monitoring of dissolved oxygen, temperature, salinity, and pH.
+        children: []
+      - id: BC-3520.30.20
+        name: Aeration and Oxygenation Operations
+        level: 3
+        description: |
+          Operation of aeration and oxygen-injection systems.
+        children: []
+      - id: BC-3520.30.30
+        name: Water Treatment and Recirculation
+        level: 3
+        description: |
+          Mechanical, biological, and UV water treatment in recirculating systems.
+        children: []
+  - id: BC-3520.40
+    name: Aquatic Animal Health Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Disease surveillance, treatment, biosecurity, and mortality recording
+      for farmed aquatic species.
+    children:
+      - id: BC-3520.40.10
+        name: Aquatic Disease Surveillance
+        level: 3
+        description: |
+          Surveillance of pathogens, parasites, and notifiable aquatic diseases.
+        children: []
+      - id: BC-3520.40.20
+        name: Aquaculture Treatment Operations
+        level: 3
+        description: |
+          In-water and bath treatment operations including sea-lice control.
+        children: []
+      - id: BC-3520.40.30
+        name: Aquaculture Biosecurity Operations
+        level: 3
+        description: |
+          Site biosecurity, equipment disinfection, and movement controls.
+        children: []
+      - id: BC-3520.40.40
+        name: Mortality Recording
+        level: 3
+        description: |
+          Daily mortality recording, classification, and disposal management.
+        children: []
+  - id: BC-3520.50
+    name: Pen and Pond Operations
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Day-to-day operation and integrity of grow-out pens, cages, and ponds
+      including predator control and antifouling.
+    children:
+      - id: BC-3520.50.10
+        name: Net and Cage Inspection
+        level: 3
+        description: |
+          Routine inspection of nets, cages, and moorings for integrity.
+        children: []
+      - id: BC-3520.50.20
+        name: Predator and Escape Prevention
+        level: 3
+        description: |
+          Predator deterrence and escape-prevention operations.
+        children: []
+      - id: BC-3520.50.30
+        name: Antifouling Operations
+        level: 3
+        description: |
+          Net cleaning and antifouling operations on submerged infrastructure.
+        children: []
+  - id: BC-3520.60
+    name: Aquaculture Harvest Operations
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Pre-harvest sampling, harvest execution, and live holding for
+      processing or live-market dispatch.
+    children:
+      - id: BC-3520.60.10
+        name: Pre-Harvest Sampling
+        level: 3
+        description: |
+          Pre-harvest size, quality, and residue sampling.
+        children: []
+      - id: BC-3520.60.20
+        name: Harvest Execution
+        level: 3
+        description: |
+          Crowding, pumping, stunning, and harvest execution.
+        children: []
+      - id: BC-3520.60.30
+        name: Live Holding and Transfer
+        level: 3
+        description: |
+          Live holding and well-boat or tanker transfer to processor or market.
+        children: []
+  - id: BC-3520.70
+    name: Aquaculture Environmental Compliance
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Site-level environmental monitoring and reporting required by
+      aquaculture licences and certification schemes.
+    children:
+      - id: BC-3520.70.10
+        name: Site Environmental Monitoring
+        level: 3
+        description: |
+          Site-level environmental monitoring against licence conditions.
+        children: []
+      - id: BC-3520.70.20
+        name: Effluent Reporting
+        level: 3
+        description: |
+          Reporting of nutrient and effluent discharges to regulators.
+        children: []
+      - id: BC-3520.70.30
+        name: Benthic Impact Assessment
+        level: 3
+        description: |
+          Benthic-impact surveys and remediation tracking under cage sites.
+        children: []

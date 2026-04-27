@@ -1,0 +1,250 @@
+# Crop Production Management
+id: BC-3500
+name: Crop Production Management
+level: 1
+industry: Agriculture & Food Production
+description: |
+  On-farm cropping operations - cropping system planning, soil preparation,
+  planting, nutrition, crop protection, irrigation, monitoring, and yield
+  forecasting for arable, horticultural, and specialty crops.
+references:
+  - https://www.globalgap.org/uk_en/for-producers/globalg.a.p./integrated-farm-assurance-ifa/
+  - https://www.aef-online.org/
+  - https://www.fao.org/agriculture/crops/en/
+children:
+  - id: BC-3500.10
+    name: Cropping System Planning
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Multi-season planning of crop rotations, field allocations, planting
+      windows, and variety selection across the farm portfolio.
+    in_scope:
+      - Crop rotation design
+      - Field-by-field crop allocation
+      - Planting window planning
+      - Variety and hybrid selection
+    out_of_scope:
+      - Variety trial execution (BC-3530.60)
+      - Agronomic prescriptions (BC-3530.20)
+    children:
+      - id: BC-3500.10.10
+        name: Crop Rotation Planning
+        level: 3
+        description: |
+          Multi-year crop rotation design balancing soil health, market demand, and pest cycles.
+        children: []
+      - id: BC-3500.10.20
+        name: Field Allocation Planning
+        level: 3
+        description: |
+          Allocation of crops to specific fields and parcels for the planting season.
+        children: []
+      - id: BC-3500.10.30
+        name: Planting Window Planning
+        level: 3
+        description: |
+          Planning of optimal planting windows by crop, variety, and agro-climatic zone.
+        children: []
+      - id: BC-3500.10.40
+        name: Variety Selection Decisions
+        level: 3
+        description: |
+          Selection of varieties and hybrids for the planting season based on agronomic and market criteria.
+        children: []
+  - id: BC-3500.20
+    name: Soil Preparation Operations
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Tillage, bed preparation, and pre-plant soil amendment operations
+      to establish a viable seed bed.
+    children:
+      - id: BC-3500.20.10
+        name: Tillage Operations
+        level: 3
+        description: |
+          Conventional, reduced, and no-till field preparation operations.
+        children: []
+      - id: BC-3500.20.20
+        name: Bed Preparation Operations
+        level: 3
+        description: |
+          Bed forming, ridging, and mulching for horticultural and row-crop production.
+        children: []
+      - id: BC-3500.20.30
+        name: Pre-Plant Soil Amendment Application
+        level: 3
+        description: |
+          Application of pre-plant amendments such as lime, gypsum, and organic matter.
+        children: []
+  - id: BC-3500.30
+    name: Planting and Sowing Operations
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Seed and transplant placement, including replant decisions and plant
+      stand establishment.
+    children:
+      - id: BC-3500.30.10
+        name: Seed Bed Finalisation
+        level: 3
+        description: |
+          Final seed-bed preparation immediately ahead of planting.
+        children: []
+      - id: BC-3500.30.20
+        name: Seed and Transplant Placement
+        level: 3
+        description: |
+          Mechanical and manual placement of seed and transplants in field.
+        children: []
+      - id: BC-3500.30.30
+        name: Replant and Gap-Fill Operations
+        level: 3
+        description: |
+          Replanting and gap-filling where initial stand establishment fails.
+        children: []
+  - id: BC-3500.40
+    name: Crop Nutrition Operations
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      In-season nutrient delivery via solid, liquid, foliar, and fertigation
+      application methods.
+    children:
+      - id: BC-3500.40.10
+        name: Solid Fertilizer Application
+        level: 3
+        description: |
+          Broadcast, banded, and variable-rate solid fertilizer application.
+        children: []
+      - id: BC-3500.40.20
+        name: Foliar Nutrition Application
+        level: 3
+        description: |
+          Foliar application of macro- and micro-nutrients during the growing season.
+        children: []
+      - id: BC-3500.40.30
+        name: Fertigation Operations
+        level: 3
+        description: |
+          Nutrient delivery via irrigation systems including injection and dosing control.
+        children: []
+  - id: BC-3500.50
+    name: Crop Protection Operations
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Application of chemical, biological, and mechanical crop-protection
+      interventions and the records that support them.
+    in_scope:
+      - Pesticide and herbicide application
+      - Biological control product application
+      - Mechanical and thermal weed control
+      - Spray and application records
+    out_of_scope:
+      - IPM planning (BC-3530.30)
+      - MRL conformance monitoring (BC-3590.50)
+    children:
+      - id: BC-3500.50.10
+        name: Pesticide Application Operations
+        level: 3
+        description: |
+          Ground and aerial pesticide application including spray-drift management.
+        children: []
+      - id: BC-3500.50.20
+        name: Biological Control Application
+        level: 3
+        description: |
+          Release of biological control agents and biopesticide products.
+        children: []
+      - id: BC-3500.50.30
+        name: Mechanical and Thermal Weed Control
+        level: 3
+        description: |
+          Mechanical and thermal weed control including cultivation and flame weeding.
+        children: []
+      - id: BC-3500.50.40
+        name: Spray Application Recording
+        level: 3
+        description: |
+          Field-level spray records covering product, rate, weather, and operator.
+        children: []
+  - id: BC-3500.60
+    name: Irrigation Operations
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Day-to-day irrigation scheduling, application, and drainage decisions
+      that govern crop water status.
+    children:
+      - id: BC-3500.60.10
+        name: Irrigation Scheduling
+        level: 3
+        description: |
+          Soil-moisture and crop-demand-based irrigation scheduling.
+        children: []
+      - id: BC-3500.60.20
+        name: Irrigation Application Operations
+        level: 3
+        description: |
+          Application of irrigation water via overhead, micro, and surface systems.
+        children: []
+      - id: BC-3500.60.30
+        name: Field Drainage Operations
+        level: 3
+        description: |
+          Surface and sub-surface drainage operations and water-table control.
+        children: []
+  - id: BC-3500.70
+    name: Crop Monitoring and Scouting
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Field-level monitoring of crop health, pest pressure, and phenology
+      using scouting, sensor, and remote-sensing methods.
+    children:
+      - id: BC-3500.70.10
+        name: Field Scouting Operations
+        level: 3
+        description: |
+          Manual scouting walks for pest, disease, and crop-condition assessment.
+        children: []
+      - id: BC-3500.70.20
+        name: Pest and Disease Surveillance
+        level: 3
+        description: |
+          Trap-based and sensor-based surveillance of pest and disease pressure.
+        children: []
+      - id: BC-3500.70.30
+        name: Crop Phenology Tracking
+        level: 3
+        description: |
+          Tracking of growth stages, heat units, and phenological milestones.
+        children: []
+      - id: BC-3500.70.40
+        name: Remote Sensing Crop Monitoring
+        level: 3
+        description: |
+          Satellite, drone, and proximal-sensor-based crop status monitoring.
+        children: []
+  - id: BC-3500.80
+    name: Crop Yield Forecasting
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      In-season and pre-harvest yield estimation feeding origination,
+      logistics, and commercial planning.
+    children:
+      - id: BC-3500.80.10
+        name: In-Season Yield Estimation
+        level: 3
+        description: |
+          Mid-season yield estimates from crop indices and field measurements.
+        children: []
+      - id: BC-3500.80.20
+        name: Pre-Harvest Yield Forecasting
+        level: 3
+        description: |
+          Pre-harvest yield forecasts feeding harvest, storage, and origination plans.
+        children: []

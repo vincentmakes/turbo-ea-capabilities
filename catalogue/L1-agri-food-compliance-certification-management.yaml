@@ -1,0 +1,210 @@
+# Agri-Food Compliance & Certification Management
+id: BC-3590
+name: "Agri-Food Compliance & Certification Management"
+level: 1
+industry: Agriculture & Food Production
+description: |
+  Industry-specific compliance and certification programmes - farm
+  assurance, organic, animal welfare, geographical indications, MRL
+  conformance, livestock identification, and pre-farm-gate traceability
+  records distinct from generic compliance and quality management.
+references:
+  - https://www.globalgap.org/uk_en/
+  - https://www.woah.org/en/what-we-do/standards/codes-and-manuals/
+  - https://www.aphis.usda.gov/aphis/ourfocus/animalhealth/traceability
+children:
+  - id: BC-3590.10
+    name: Farm Assurance Certification Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Management of farm-assurance certification programmes including
+      GLOBALG.A.P., LEAF Marque, and equivalent national schemes.
+    in_scope:
+      - GLOBALG.A.P. and equivalent farm assurance
+      - LEAF Marque participation
+      - Audit coordination and corrective actions
+    out_of_scope:
+      - Generic quality management (BC-720)
+      - Retail-side food safety programmes (BC-2380.10)
+    children:
+      - id: BC-3590.10.10
+        name: GLOBALG.A.P. Certification Programmes
+        level: 3
+        description: |
+          Management of GLOBALG.A.P. IFA, Aquaculture, and Livestock certification.
+        children: []
+      - id: BC-3590.10.20
+        name: LEAF Marque and Equivalent Programmes
+        level: 3
+        description: |
+          Participation in LEAF Marque and equivalent national assurance schemes.
+        children: []
+      - id: BC-3590.10.30
+        name: Farm Assurance Audit Coordination
+        level: 3
+        description: |
+          Coordination of farm-assurance audits and corrective-action tracking.
+        children: []
+  - id: BC-3590.20
+    name: Organic Certification Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Management of organic certification under USDA NOP, EU Organic
+      Regulation, JAS Organic, and equivalent regimes.
+    children:
+      - id: BC-3590.20.10
+        name: Organic Standard Conformance Records
+        level: 3
+        description: |
+          Records of conformance to the applicable organic standard.
+        children: []
+      - id: BC-3590.20.20
+        name: Organic Inspection Coordination
+        level: 3
+        description: |
+          Coordination of organic certification inspections and audits.
+        children: []
+      - id: BC-3590.20.30
+        name: Organic Input Authorisation
+        level: 3
+        description: |
+          Verification that inputs are authorised under the applicable organic standard.
+        children: []
+  - id: BC-3590.30
+    name: Animal Welfare Certification Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Animal-welfare audit programmes, welfare-outcome recording, and
+      conformance with industry and assurance welfare standards.
+    children:
+      - id: BC-3590.30.10
+        name: Animal Welfare Audit Programmes
+        level: 3
+        description: |
+          Internal and third-party animal-welfare audit programmes.
+        children: []
+      - id: BC-3590.30.20
+        name: Welfare Outcome Recording
+        level: 3
+        description: |
+          Recording of welfare-outcome measures across livestock units.
+        children: []
+      - id: BC-3590.30.30
+        name: Welfare Standard Conformance
+        level: 3
+        description: |
+          Conformance evidence against industry and assurance welfare standards.
+        children: []
+  - id: BC-3590.40
+    name: Geographical Indication and Provenance Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Records and verification supporting protected designation of origin,
+      geographical indication, and provenance claims.
+    children:
+      - id: BC-3590.40.10
+        name: Provenance Claim Records
+        level: 3
+        description: |
+          Records substantiating origin, breed, and provenance claims.
+        children: []
+      - id: BC-3590.40.20
+        name: Geographical Indication Conformance
+        level: 3
+        description: |
+          Conformance with PDO, PGI, and equivalent geographical indications.
+        children: []
+      - id: BC-3590.40.30
+        name: Origin Verification
+        level: 3
+        description: |
+          Origin verification using documentary, isotopic, and DNA methods.
+        children: []
+  - id: BC-3590.50
+    name: Pesticide Residue and MRL Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Residue sampling, MRL conformance, and withdrawal-interval compliance
+      across destination markets.
+    children:
+      - id: BC-3590.50.10
+        name: Residue Sampling Programmes
+        level: 3
+        description: |
+          Pesticide residue sampling programmes across crops and lots.
+        children: []
+      - id: BC-3590.50.20
+        name: MRL Conformance Monitoring
+        level: 3
+        description: |
+          Conformance monitoring against destination-market MRL schedules.
+        children: []
+      - id: BC-3590.50.30
+        name: Withdrawal Interval Compliance
+        level: 3
+        description: |
+          Compliance with pre-harvest and milk-withdrawal intervals.
+        children: []
+  - id: BC-3590.60
+    name: Livestock Identification and Movement Compliance
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Animal identification tagging, movement permits, and cross-border
+      health certification for livestock and aquaculture stocks.
+    in_scope:
+      - Statutory animal identification
+      - Movement permit recording
+      - Cross-border health certification
+    out_of_scope:
+      - Generic compliance management (BC-130)
+    children:
+      - id: BC-3590.60.10
+        name: Animal Identification Tagging
+        level: 3
+        description: |
+          Statutory animal identification tagging including EID and ear tags.
+        children: []
+      - id: BC-3590.60.20
+        name: Movement Permit Recording
+        level: 3
+        description: |
+          Recording of statutory movement permits and on-farm movement registers.
+        children: []
+      - id: BC-3590.60.30
+        name: Cross-Border Health Certification
+        level: 3
+        description: |
+          Cross-border health certification including TRACES NT lodgements.
+        children: []
+  - id: BC-3590.70
+    name: Pre-Farm-Gate Traceability Records
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Field-to-lot, animal-to-carcass, and input-to-output traceability
+      records anchoring downstream EPCIS and chain-of-custody traces.
+    children:
+      - id: BC-3590.70.10
+        name: Field to Lot Traceability
+        level: 3
+        description: |
+          Traceability linking field operations to harvested lots.
+        children: []
+      - id: BC-3590.70.20
+        name: Animal to Carcass Traceability
+        level: 3
+        description: |
+          Traceability linking individual animals to carcasses and primal cuts.
+        children: []
+      - id: BC-3590.70.30
+        name: Input to Output Trace Recording
+        level: 3
+        description: |
+          Recording linking inputs applied to the resulting output lots.
+        children: []

@@ -1,0 +1,242 @@
+# Food & Beverage Processing Operations Management
+id: BC-3580
+name: "Food & Beverage Processing Operations Management"
+level: 1
+industry: Agriculture & Food Production
+description: |
+  Industrial food-and-beverage manufacturing operations - raw material
+  receival, primary and secondary processing, packaging, cold-chain
+  manufacturing, sanitation, animal-feed manufacturing, and by-product
+  recovery across meat, dairy, milling, brewing, baking, and fresh-cut.
+references:
+  - https://www.fssc.com/scheme/fssc-22000/
+  - https://www.iso.org/standard/65464.html
+  - https://www.fao.org/fao-who-codexalimentarius/en/
+children:
+  - id: BC-3580.10
+    name: Raw Material Receival and Inspection
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Receival, sensory and laboratory testing, and lot acceptance of raw
+      agricultural inputs into processing plants.
+    children:
+      - id: BC-3580.10.10
+        name: Raw Material Receival
+        level: 3
+        description: |
+          Receival of livestock, milk, grain, fruit, and vegetable inputs.
+        children: []
+      - id: BC-3580.10.20
+        name: Raw Material Sensory and Quality Testing
+        level: 3
+        description: |
+          Sensory and laboratory testing of incoming raw materials.
+        children: []
+      - id: BC-3580.10.30
+        name: Raw Material Lot Acceptance
+        level: 3
+        description: |
+          Lot acceptance, rejection, and reclassification decisions.
+        children: []
+  - id: BC-3580.20
+    name: Primary Processing Operations
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      First-stage transformation of raw agricultural inputs - slaughter
+      and dressing, milk separation, milling, and produce preparation.
+    in_scope:
+      - Slaughter and carcass dressing
+      - Milk receival and separation
+      - Grain milling and oilseed crushing
+      - Fruit and vegetable preparation
+    out_of_scope:
+      - Generic manufacturing operations (BC-1010)
+    children:
+      - id: BC-3580.20.10
+        name: Slaughter and Carcass Dressing
+        level: 3
+        description: |
+          Slaughter, dressing, and chilling of livestock and poultry carcasses.
+        children: []
+      - id: BC-3580.20.20
+        name: Milk Receival and Separation
+        level: 3
+        description: |
+          Milk receival, standardisation, and cream separation operations.
+        children: []
+      - id: BC-3580.20.30
+        name: Grain Milling and Oilseed Crushing
+        level: 3
+        description: |
+          Grain milling and oilseed crushing including expeller and solvent extraction.
+        children: []
+      - id: BC-3580.20.40
+        name: Fruit and Vegetable Preparation
+        level: 3
+        description: |
+          Washing, peeling, cutting, and blanching of fruit and vegetables.
+        children: []
+  - id: BC-3580.30
+    name: Secondary Processing Operations
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Mixing, cooking, fermentation, and concentration operations producing
+      finished food and beverage products.
+    children:
+      - id: BC-3580.30.10
+        name: Mixing and Blending Operations
+        level: 3
+        description: |
+          Mixing and blending of formulated food and beverage recipes.
+        children: []
+      - id: BC-3580.30.20
+        name: Cooking and Thermal Processing
+        level: 3
+        description: |
+          Cooking, pasteurisation, and sterilisation operations.
+        children: []
+      - id: BC-3580.30.30
+        name: Fermentation and Brewing Operations
+        level: 3
+        description: |
+          Fermentation, brewing, and maturation of beverages and cultured products.
+        children: []
+      - id: BC-3580.30.40
+        name: Drying and Concentration Operations
+        level: 3
+        description: |
+          Spray drying, evaporation, and concentration of liquid products.
+        children: []
+  - id: BC-3580.40
+    name: Packaging and Filling Operations
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Filling, sealing, labelling, and palletisation of finished food
+      and beverage products.
+    children:
+      - id: BC-3580.40.10
+        name: Filling and Sealing Operations
+        level: 3
+        description: |
+          Filling and sealing of bottles, cans, pouches, and rigid containers.
+        children: []
+      - id: BC-3580.40.20
+        name: Labelling Operations
+        level: 3
+        description: |
+          Labelling, date coding, and tamper-evident application.
+        children: []
+      - id: BC-3580.40.30
+        name: Case Packing and Palletisation
+        level: 3
+        description: |
+          Case packing, shrink-wrap, and palletisation of finished goods.
+        children: []
+  - id: BC-3580.50
+    name: Cold Chain Manufacturing Operations
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      In-plant refrigeration, freezing, and cold-chain monitoring across
+      processing and packing lines.
+    children:
+      - id: BC-3580.50.10
+        name: Refrigeration and Freezing Operations
+        level: 3
+        description: |
+          Operation of in-plant chillers, blast freezers, and freezing tunnels.
+        children: []
+      - id: BC-3580.50.20
+        name: In-Plant Cold Chain Monitoring
+        level: 3
+        description: |
+          Cold-chain monitoring across in-plant zones and storage rooms.
+        children: []
+  - id: BC-3580.60
+    name: Sanitation and Allergen Control Operations
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Cleaning-in-place, allergen changeover control, and environmental
+      monitoring programmes safeguarding product safety.
+    in_scope:
+      - Cleaning-in-place programmes
+      - Allergen changeover validation
+      - Environmental pathogen monitoring
+    out_of_scope:
+      - Retail-side food safety programmes (BC-2380.10)
+    children:
+      - id: BC-3580.60.10
+        name: Clean-in-Place Operations
+        level: 3
+        description: |
+          Cleaning-in-place execution and validation across product changeovers.
+        children: []
+      - id: BC-3580.60.20
+        name: Allergen Changeover Control
+        level: 3
+        description: |
+          Allergen changeover controls and verification swabbing.
+        children: []
+      - id: BC-3580.60.30
+        name: Environmental Monitoring Programmes
+        level: 3
+        description: |
+          Environmental pathogen monitoring across plant zones.
+        children: []
+  - id: BC-3580.70
+    name: Animal Feed Manufacturing Operations
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Compound feed manufacturing including ingredient receival, mixing,
+      pelleting, and medicated feed production for downstream livestock use.
+    children:
+      - id: BC-3580.70.10
+        name: Feed Ingredient Receival
+        level: 3
+        description: |
+          Receival of cereals, protein meals, and additives at feed mills.
+        children: []
+      - id: BC-3580.70.20
+        name: Feed Mixing and Pelleting
+        level: 3
+        description: |
+          Mixing and pelleting of compound feed against ration formulations.
+        children: []
+      - id: BC-3580.70.30
+        name: Medicated Feed Production
+        level: 3
+        description: |
+          Production of medicated feed under prescription with carryover controls.
+        children: []
+  - id: BC-3580.80
+    name: By-Product and Co-Product Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Recovery and routing of process by-products and co-products such as
+      rendering, whey, and spent grain to downstream uses.
+    children:
+      - id: BC-3580.80.10
+        name: Rendering Operations
+        level: 3
+        description: |
+          Rendering of meat-processing by-products to tallow and meal.
+        children: []
+      - id: BC-3580.80.20
+        name: Whey and Permeate Recovery
+        level: 3
+        description: |
+          Recovery of whey and permeate streams from dairy processing.
+        children: []
+      - id: BC-3580.80.30
+        name: Spent Grain Recovery
+        level: 3
+        description: |
+          Recovery and routing of brewers' and distillers' spent grain.
+        children: []

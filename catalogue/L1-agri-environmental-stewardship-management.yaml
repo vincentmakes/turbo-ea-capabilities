@@ -1,0 +1,204 @@
+# Agri-Environmental Stewardship Management
+id: BC-3600
+name: Agri-Environmental Stewardship Management
+level: 1
+industry: Agriculture & Food Production
+description: |
+  On-farm environmental stewardship - soil health, water stewardship,
+  biodiversity, agricultural greenhouse-gas management, soil-carbon
+  programmes, regenerative practices, and participation in agri-
+  environmental schemes that complement corporate sustainability.
+references:
+  - https://saiplatform.org/fsa/
+  - https://verra.org/methodology/vm0042-improved-agricultural-land-management/
+  - https://www.fao.org/in-action/leap/en/
+children:
+  - id: BC-3600.10
+    name: Soil Health Stewardship
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Stewardship of soil organic matter, cover cropping, and erosion
+      control on cropping land.
+    children:
+      - id: BC-3600.10.10
+        name: Soil Organic Carbon Monitoring
+        level: 3
+        description: |
+          Periodic monitoring of soil organic carbon across fields.
+        children: []
+      - id: BC-3600.10.20
+        name: Cover Cropping Programmes
+        level: 3
+        description: |
+          Cover-cropping programmes to maintain soil cover and biology.
+        children: []
+      - id: BC-3600.10.30
+        name: Soil Erosion Control Programmes
+        level: 3
+        description: |
+          Erosion-control programmes including contour, terrace, and buffer practices.
+        children: []
+  - id: BC-3600.20
+    name: On-Farm Water Stewardship
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Water-use efficiency, riparian protection, and drainage water-quality
+      management at the farm level.
+    in_scope:
+      - Water use efficiency monitoring
+      - Riparian and waterway protection
+      - Drainage quality management
+    out_of_scope:
+      - Corporate water disclosure (BC-740)
+      - Irrigation scheduling (BC-3500.60.10)
+    children:
+      - id: BC-3600.20.10
+        name: Water Use Efficiency Monitoring
+        level: 3
+        description: |
+          Monitoring of water-use efficiency per crop and field.
+        children: []
+      - id: BC-3600.20.20
+        name: Riparian and Waterway Protection
+        level: 3
+        description: |
+          Protection of riparian zones and on-farm waterways.
+        children: []
+      - id: BC-3600.20.30
+        name: Drainage Quality Management
+        level: 3
+        description: |
+          Management of drainage water quality and nutrient losses.
+        children: []
+  - id: BC-3600.30
+    name: Biodiversity and Habitat Stewardship
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      On-farm biodiversity management including habitat recording,
+      pollinator stewardship, and field-margin buffers.
+    children:
+      - id: BC-3600.30.10
+        name: On-Farm Habitat Recording
+        level: 3
+        description: |
+          Recording of on-farm habitats and biodiversity features.
+        children: []
+      - id: BC-3600.30.20
+        name: Pollinator Stewardship
+        level: 3
+        description: |
+          Pollinator-friendly practices including flower strips and IPM thresholds.
+        children: []
+      - id: BC-3600.30.30
+        name: Buffer Zone Management
+        level: 3
+        description: |
+          Management of field-margin and waterway buffer zones.
+        children: []
+  - id: BC-3600.40
+    name: Agricultural Greenhouse Gas Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Quantification and mitigation of farm greenhouse gases including
+      enteric methane, nitrous oxide, and on-farm CO2.
+    children:
+      - id: BC-3600.40.10
+        name: Enteric Methane Mitigation Programmes
+        level: 3
+        description: |
+          Mitigation programmes for enteric methane in ruminant livestock.
+        children: []
+      - id: BC-3600.40.20
+        name: Nitrous Oxide Mitigation Programmes
+        level: 3
+        description: |
+          Nitrous-oxide mitigation through nitrogen-use efficiency and timing.
+        children: []
+      - id: BC-3600.40.30
+        name: Farm Emissions Inventory
+        level: 3
+        description: |
+          Farm-level greenhouse-gas emissions inventory feeding disclosures.
+        children: []
+  - id: BC-3600.50
+    name: Soil Carbon and Carbon Credit Programmes
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Soil-carbon baseline measurement, carbon-credit project design, and
+      issuance records under recognised methodologies.
+    children:
+      - id: BC-3600.50.10
+        name: Soil Carbon Baseline Measurement
+        level: 3
+        description: |
+          Baseline soil-carbon measurement campaigns at project enrolment.
+        children: []
+      - id: BC-3600.50.20
+        name: Carbon Credit Project Design
+        level: 3
+        description: |
+          Project design under Verra, Gold Standard, and equivalent methodologies.
+        children: []
+      - id: BC-3600.50.30
+        name: Carbon Credit Issuance Records
+        level: 3
+        description: |
+          Records of credit issuance, retirement, and beneficiary allocation.
+        children: []
+  - id: BC-3600.60
+    name: Regenerative Practice Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Adoption and recording of regenerative practices including reduced
+      tillage, integration, and agroforestry.
+    children:
+      - id: BC-3600.60.10
+        name: No-Till and Reduced Tillage Programmes
+        level: 3
+        description: |
+          Adoption and tracking of no-till and reduced-tillage programmes.
+        children: []
+      - id: BC-3600.60.20
+        name: Integrated Crop-Livestock Operations
+        level: 3
+        description: |
+          Integration of cropping and livestock operations for nutrient cycling.
+        children: []
+      - id: BC-3600.60.30
+        name: Agroforestry Practice Records
+        level: 3
+        description: |
+          Records of agroforestry plantings and silvopastoral systems.
+        children: []
+  - id: BC-3600.70
+    name: Agri-Environmental Scheme Participation
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Participation in CAP eco-schemes, NRCS conservation programmes, and
+      equivalent agri-environmental payment schemes.
+    children:
+      - id: BC-3600.70.10
+        name: CAP Eco-Scheme Participation
+        level: 3
+        description: |
+          Participation in EU CAP eco-schemes and conditionality requirements.
+        children: []
+      - id: BC-3600.70.20
+        name: Conservation Programme Participation
+        level: 3
+        description: |
+          Participation in USDA NRCS EQIP, CSP, and equivalent programmes.
+        children: []
+      - id: BC-3600.70.30
+        name: Agri-Environment Payment Reconciliation
+        level: 3
+        description: |
+          Reconciliation of agri-environment payments against scheme commitments.
+        children: []

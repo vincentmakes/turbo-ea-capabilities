@@ -1,0 +1,182 @@
+# Farm Land & Asset Management
+id: BC-3540
+name: "Farm Land & Asset Management"
+level: 1
+industry: Agriculture & Food Production
+description: |
+  Land tenure and lease records, field and parcel management, on-farm
+  equipment and machinery telemetry, irrigation infrastructure, farm
+  buildings, and on-farm energy assets.
+references:
+  - https://www.iso.org/standard/57556.html
+  - https://www.aef-online.org/about-us/isobus.html
+  - https://www.fao.org/tenure/voluntary-guidelines/en/
+children:
+  - id: BC-3540.10
+    name: Land Tenure and Lease Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Records of land title, tenure, leases, and easements supporting
+      operating rights across the farm portfolio.
+    in_scope:
+      - Title and tenure records
+      - Lease agreement administration
+      - Easement and access right records
+    out_of_scope:
+      - Corporate real estate (BC-1410)
+    children:
+      - id: BC-3540.10.10
+        name: Land Title and Tenure Records
+        level: 3
+        description: |
+          Records of freehold, leasehold, and customary tenure across the farm portfolio.
+        children: []
+      - id: BC-3540.10.20
+        name: Lease Agreement Administration
+        level: 3
+        description: |
+          Administration of farm lease agreements and renewals.
+        children: []
+      - id: BC-3540.10.30
+        name: Land Easement Management
+        level: 3
+        description: |
+          Management of access easements, rights of way, and conservation easements.
+        children: []
+  - id: BC-3540.20
+    name: Field and Parcel Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Field boundary records, field history, and productivity zoning at
+      field and parcel level.
+    children:
+      - id: BC-3540.20.10
+        name: Field Boundary Recording
+        level: 3
+        description: |
+          Field boundary capture and maintenance in farm GIS systems.
+        children: []
+      - id: BC-3540.20.20
+        name: Field History Records
+        level: 3
+        description: |
+          Multi-year field history records of crops, inputs, and yields.
+        children: []
+      - id: BC-3540.20.30
+        name: Field Productivity Zoning
+        level: 3
+        description: |
+          Productivity zoning and management-zone delineation within fields.
+        children: []
+  - id: BC-3540.30
+    name: Farm Equipment Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      On-farm equipment inventory, machinery operations, ISOBUS telemetry,
+      and equipment-sharing arrangements.
+    children:
+      - id: BC-3540.30.10
+        name: Farm Equipment Inventory
+        level: 3
+        description: |
+          Inventory of tractors, implements, and self-propelled equipment.
+        children: []
+      - id: BC-3540.30.20
+        name: In-Field Machinery Operations
+        level: 3
+        description: |
+          Day-to-day in-field machinery deployment and operator allocation.
+        children: []
+      - id: BC-3540.30.30
+        name: ISOBUS Telemetry Integration
+        level: 3
+        description: |
+          Integration of ISOBUS-compliant machinery telemetry with farm management systems.
+        children: []
+      - id: BC-3540.30.40
+        name: Equipment Sharing and Contracting
+        level: 3
+        description: |
+          Equipment-sharing, contractor, and custom-operator arrangements.
+        children: []
+  - id: BC-3540.40
+    name: Irrigation Infrastructure Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Lifecycle management of irrigation systems, water allocations, and
+      irrigation infrastructure maintenance.
+    children:
+      - id: BC-3540.40.10
+        name: Irrigation System Design
+        level: 3
+        description: |
+          Design and capacity sizing of farm irrigation systems.
+        children: []
+      - id: BC-3540.40.20
+        name: Water Allocation Compliance
+        level: 3
+        description: |
+          Compliance with surface and groundwater allocations and metering.
+        children: []
+      - id: BC-3540.40.30
+        name: Irrigation Infrastructure Maintenance
+        level: 3
+        description: |
+          Maintenance of pumps, mainlines, laterals, and emitters.
+        children: []
+  - id: BC-3540.50
+    name: Farm Building and Yard Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Operation and upkeep of on-farm storage buildings, livestock housing,
+      yards, and laneways.
+    children:
+      - id: BC-3540.50.10
+        name: Storage Building Operations
+        level: 3
+        description: |
+          Operation of grain, hay, and chemical storage buildings.
+        children: []
+      - id: BC-3540.50.20
+        name: Livestock Housing Operations
+        level: 3
+        description: |
+          Operation and bedding management of livestock housing.
+        children: []
+      - id: BC-3540.50.30
+        name: Yard and Laneway Maintenance
+        level: 3
+        description: |
+          Maintenance of farm yards, laneways, and stock-handling facilities.
+        children: []
+  - id: BC-3540.60
+    name: On-Farm Energy Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      On-farm energy generation, fuel and energy procurement coordination,
+      and energy-use recording.
+    children:
+      - id: BC-3540.60.10
+        name: On-Farm Energy Generation
+        level: 3
+        description: |
+          On-farm solar, wind, and biogas energy generation.
+        children: []
+      - id: BC-3540.60.20
+        name: Fuel and Energy Procurement Coordination
+        level: 3
+        description: |
+          Coordination of farm fuel, electricity, and gas procurement.
+        children: []
+      - id: BC-3540.60.30
+        name: Energy Use Recording
+        level: 3
+        description: |
+          Recording of farm energy use by activity and asset.
+        children: []

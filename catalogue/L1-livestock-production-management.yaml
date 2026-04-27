@@ -1,0 +1,266 @@
+# Livestock Production Management
+id: BC-3510
+name: Livestock Production Management
+level: 1
+industry: Agriculture & Food Production
+description: |
+  On-farm production of terrestrial livestock - herd and flock planning,
+  breeding, nutrition, animal health, welfare, parturition, growth
+  recording, and slaughter readiness for cattle, sheep, pigs, and poultry.
+references:
+  - https://www.woah.org/en/what-we-do/standards/codes-and-manuals/
+  - https://www.icar.org/
+  - https://www.globalgap.org/uk_en/for-producers/livestock/
+children:
+  - id: BC-3510.10
+    name: Herd and Flock Planning
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Stocking, replacement, and production-cycle planning across livestock
+      enterprises.
+    children:
+      - id: BC-3510.10.10
+        name: Stocking Rate Planning
+        level: 3
+        description: |
+          Stocking-rate decisions matched to forage availability and carrying capacity.
+        children: []
+      - id: BC-3510.10.20
+        name: Replacement Animal Planning
+        level: 3
+        description: |
+          Replacement-rate planning for breeding stock and laying flocks.
+        children: []
+      - id: BC-3510.10.30
+        name: Production Cycle Planning
+        level: 3
+        description: |
+          Calendar planning of production cycles including batch farrowing and seasonal calving.
+        children: []
+  - id: BC-3510.20
+    name: Animal Breeding Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Genetic selection, mating, insemination, pedigree recording, and
+      breeding-performance tracking.
+    in_scope:
+      - Genetic and trait selection decisions
+      - Natural mating and artificial insemination
+      - Pedigree and parentage recording
+      - Breeding-value evaluation
+    children:
+      - id: BC-3510.20.10
+        name: Genetic Selection Decisions
+        level: 3
+        description: |
+          Selection of breeding stock against estimated breeding values and trait targets.
+        children: []
+      - id: BC-3510.20.20
+        name: Mating and Insemination Operations
+        level: 3
+        description: |
+          Natural mating, artificial insemination, and embryo transfer operations.
+        children: []
+      - id: BC-3510.20.30
+        name: Pedigree and Parentage Recording
+        level: 3
+        description: |
+          Recording of pedigree, parentage, and herd-book registrations.
+        children: []
+      - id: BC-3510.20.40
+        name: Breeding Performance Evaluation
+        level: 3
+        description: |
+          Evaluation of breeding performance and breeding-value updates.
+        children: []
+  - id: BC-3510.30
+    name: Animal Nutrition Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Ration formulation, feed delivery, pasture grazing, and feed-conversion
+      tracking across livestock classes.
+    children:
+      - id: BC-3510.30.10
+        name: Ration Formulation
+        level: 3
+        description: |
+          Least-cost ration formulation against species and stage requirements.
+        children: []
+      - id: BC-3510.30.20
+        name: Feed Issue and Delivery
+        level: 3
+        industry: Agriculture & Food Production
+        description: |
+          Daily feed issue, mixing, and delivery to pens, sheds, and paddocks.
+        children: []
+      - id: BC-3510.30.30
+        name: Pasture Grazing Management
+        level: 3
+        description: |
+          Rotational and continuous grazing management and pasture-residual monitoring.
+        children: []
+      - id: BC-3510.30.40
+        name: Feed Conversion Tracking
+        level: 3
+        description: |
+          Tracking of feed-conversion and average-daily-gain metrics.
+        children: []
+  - id: BC-3510.40
+    name: Animal Health Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Veterinary treatment, vaccination, parasite control, disease
+      surveillance, and withdrawal-period management.
+    in_scope:
+      - Veterinary treatment records
+      - Vaccination and parasite-control programmes
+      - Notifiable-disease surveillance
+      - Medicine withdrawal-period tracking
+    out_of_scope:
+      - Animal-welfare audits (BC-3510.50)
+      - MRL residue monitoring (BC-3590.50)
+    children:
+      - id: BC-3510.40.10
+        name: Veterinary Treatment Records
+        level: 3
+        description: |
+          Recording of veterinary treatments, prescriptions, and outcomes.
+        children: []
+      - id: BC-3510.40.20
+        name: Vaccination Programme Execution
+        level: 3
+        description: |
+          Execution of herd and flock vaccination programmes.
+        children: []
+      - id: BC-3510.40.30
+        name: Parasite Control Programmes
+        level: 3
+        description: |
+          Internal and external parasite control programmes and resistance management.
+        children: []
+      - id: BC-3510.40.40
+        name: Disease Surveillance and Reporting
+        level: 3
+        description: |
+          Surveillance and statutory reporting of notifiable and zoonotic diseases.
+        children: []
+      - id: BC-3510.40.50
+        name: Withdrawal Period Management
+        level: 3
+        description: |
+          Tracking of withdrawal periods for veterinary medicines and feed additives.
+        children: []
+  - id: BC-3510.50
+    name: Animal Welfare Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Day-to-day welfare practices covering housing, handling, and welfare
+      monitoring against assurance standards.
+    children:
+      - id: BC-3510.50.10
+        name: Housing and Stocking Conditions
+        level: 3
+        description: |
+          Housing, ventilation, and stocking-density management for livestock classes.
+        children: []
+      - id: BC-3510.50.20
+        name: Handling Practice Standards
+        level: 3
+        description: |
+          Low-stress handling and stockmanship practice standards.
+        children: []
+      - id: BC-3510.50.30
+        name: Welfare Outcome Monitoring
+        level: 3
+        description: |
+          Welfare-outcome measurement and on-farm welfare reviews.
+        children: []
+  - id: BC-3510.60
+    name: Reproduction and Parturition Operations
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Heat detection, parturition, and neonatal-care operations across
+      cattle, sheep, swine, and poultry.
+    children:
+      - id: BC-3510.60.10
+        name: Heat Detection Operations
+        level: 3
+        description: |
+          Heat detection via observation, sensors, and synchronisation programmes.
+        children: []
+      - id: BC-3510.60.20
+        name: Parturition Operations
+        level: 3
+        description: |
+          Calving, lambing, farrowing, and hatching operations and assistance.
+        children: []
+      - id: BC-3510.60.30
+        name: Neonatal Care Operations
+        level: 3
+        description: |
+          Neonatal nutrition, colostrum management, and early-life care.
+        children: []
+  - id: BC-3510.70
+    name: Growth and Performance Recording
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Recording of growth, milk, egg, and carcass performance for production
+      and breeding decisions.
+    children:
+      - id: BC-3510.70.10
+        name: Weight Gain Recording
+        level: 3
+        description: |
+          Periodic weighing and average-daily-gain recording.
+        children: []
+      - id: BC-3510.70.20
+        name: Milk Yield Recording
+        level: 3
+        description: |
+          Per-cow and bulk-tank milk yield and composition recording.
+        children: []
+      - id: BC-3510.70.30
+        name: Egg Production Recording
+        level: 3
+        description: |
+          Daily egg-production recording per house and flock.
+        children: []
+      - id: BC-3510.70.40
+        name: Carcass Performance Tracking
+        level: 3
+        description: |
+          Tracking of carcass yield, grading, and primal-cut performance.
+        children: []
+  - id: BC-3510.80
+    name: Slaughter Readiness and Dispatch
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Selection of finished animals and dispatch coordination to abattoirs
+      including movement documentation.
+    children:
+      - id: BC-3510.80.10
+        name: Pre-Slaughter Selection
+        level: 3
+        description: |
+          Selection of finished animals against weight, fat, and contract specifications.
+        children: []
+      - id: BC-3510.80.20
+        name: Animal Movement Documentation
+        level: 3
+        description: |
+          Movement documentation and food-chain information transfers.
+        children: []
+      - id: BC-3510.80.30
+        name: Abattoir Dispatch Coordination
+        level: 3
+        description: |
+          Dispatch and transport coordination from farm to abattoir.
+        children: []

@@ -1,0 +1,203 @@
+# Commodity Origination & Merchandising Management
+id: BC-3570
+name: "Commodity Origination & Merchandising Management"
+level: 1
+industry: Agriculture & Food Production
+description: |
+  Origination programmes with growers, commodity contracting, weighbridge
+  and sampling, physical inventory positions, cash and basis trading,
+  hedging, and settlement for grains, oilseeds, softs, livestock, and
+  dairy commodities.
+references:
+  - https://www.gafta.com/
+  - https://www.fosfa.org/
+  - https://www.ngfa.org/
+children:
+  - id: BC-3570.10
+    name: Origination Programme Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Grower contracting, producer relationship management, and origination
+      forecasting feeding the supply book.
+    children:
+      - id: BC-3570.10.10
+        name: Grower Contracting Programmes
+        level: 3
+        description: |
+          Design and execution of grower contracting programmes by region.
+        children: []
+      - id: BC-3570.10.20
+        name: Producer Relationship Management
+        level: 3
+        description: |
+          Producer relationship management distinct from generic CRM.
+        children: []
+      - id: BC-3570.10.30
+        name: Origination Forecasting
+        level: 3
+        description: |
+          Forecasting of expected origination volumes by region and crop.
+        children: []
+  - id: BC-3570.20
+    name: Commodity Contract Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Issuance and performance tracking of forward, production, and
+      deferred-pricing commodity contracts.
+    in_scope:
+      - Forward contracts with growers and counterparties
+      - Production contracts with quality specifications
+      - Contract performance tracking
+    out_of_scope:
+      - Generic legal contract management (BC-150)
+    children:
+      - id: BC-3570.20.10
+        name: Forward Contract Issuance
+        level: 3
+        description: |
+          Issuance of fixed-price and basis forward contracts.
+        children: []
+      - id: BC-3570.20.20
+        name: Production Contract Management
+        level: 3
+        description: |
+          Management of production contracts with quality and delivery specifications.
+        children: []
+      - id: BC-3570.20.30
+        name: Contract Performance Tracking
+        level: 3
+        description: |
+          Tracking of delivered tonnes against contract performance.
+        children: []
+  - id: BC-3570.30
+    name: Inbound Weighbridge and Sampling
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Weighbridge operations, quality sampling and grading, and receival
+      settlement calculation at the point of receival.
+    children:
+      - id: BC-3570.30.10
+        name: Weighbridge Operations
+        level: 3
+        description: |
+          Inbound and outbound weighbridge operations and ticketing.
+        children: []
+      - id: BC-3570.30.20
+        name: Quality Sampling and Grading
+        level: 3
+        description: |
+          Receival sampling and grading against trade specifications.
+        children: []
+      - id: BC-3570.30.30
+        name: Receival Settlement Calculation
+        level: 3
+        description: |
+          Calculation of grade-based discounts and premiums at receival.
+        children: []
+  - id: BC-3570.40
+    name: Commodity Inventory Position Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Tracking of physical commodity positions, blending decisions, and
+      in-transit positions across the network.
+    children:
+      - id: BC-3570.40.10
+        name: Physical Position Tracking
+        level: 3
+        description: |
+          Tracking of long and short physical positions by site and grade.
+        children: []
+      - id: BC-3570.40.20
+        name: Quality Blending Decisions
+        level: 3
+        description: |
+          Blending decisions to meet contract quality specifications.
+        children: []
+      - id: BC-3570.40.30
+        name: In-Transit Position Tracking
+        level: 3
+        description: |
+          Tracking of vessel, rail, and truck in-transit positions.
+        children: []
+  - id: BC-3570.50
+    name: Commodity Trading Operations
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Cash and basis trading, spot sale execution, and cross-commodity
+      spread management on physical commodity books.
+    children:
+      - id: BC-3570.50.10
+        name: Cash and Basis Trading
+        level: 3
+        description: |
+          Trading of cash and basis positions in physical commodities.
+        children: []
+      - id: BC-3570.50.20
+        name: Spot Sale Execution
+        level: 3
+        description: |
+          Execution of spot sales to processors and exporters.
+        children: []
+      - id: BC-3570.50.30
+        name: Cross-Commodity Spread Management
+        level: 3
+        description: |
+          Management of cross-commodity spreads such as crush and crack margins.
+        children: []
+  - id: BC-3570.60
+    name: Hedging and Risk Position Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Execution and reconciliation of futures and options hedges against
+      physical commodity positions.
+    children:
+      - id: BC-3570.60.10
+        name: Futures Hedge Execution
+        level: 3
+        description: |
+          Execution of futures hedges on regulated exchanges.
+        children: []
+      - id: BC-3570.60.20
+        name: Options Hedge Execution
+        level: 3
+        description: |
+          Execution of options hedges to manage price-tail risk.
+        children: []
+      - id: BC-3570.60.30
+        name: Hedge Position Reconciliation
+        level: 3
+        description: |
+          Reconciliation of hedge positions against underlying physical exposures.
+        children: []
+  - id: BC-3570.70
+    name: Commodity Settlement and Pricing
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Final pricing, settlement statement issuance, and resolution of
+      quality claims with counterparties.
+    children:
+      - id: BC-3570.70.10
+        name: Final Pricing and Discount Calculation
+        level: 3
+        description: |
+          Final pricing including grade-based discount and premium application.
+        children: []
+      - id: BC-3570.70.20
+        name: Settlement Statement Issuance
+        level: 3
+        description: |
+          Issuance of settlement statements to growers and counterparties.
+        children: []
+      - id: BC-3570.70.30
+        name: Quality Claim Resolution
+        level: 3
+        description: |
+          Resolution of quality claims with growers, buyers, and arbitration bodies.
+        children: []

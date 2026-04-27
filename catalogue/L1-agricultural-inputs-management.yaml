@@ -1,0 +1,192 @@
+# Agricultural Inputs Management
+id: BC-3550
+name: Agricultural Inputs Management
+level: 1
+industry: Agriculture & Food Production
+description: |
+  Lifecycle management of agricultural inputs - seed and genetics,
+  fertilizer, crop protection, animal nutrition, veterinary medicines,
+  and biologicals - including industry-specific traceability, stewardship,
+  and storage requirements distinct from generic procurement.
+references:
+  - https://www.upov.int/portal/index.html.en
+  - https://www.oecd.org/en/topics/sub-issues/seed-schemes.html
+  - https://aggateway.org/
+children:
+  - id: BC-3550.10
+    name: Seed and Genetic Material Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Sourcing of certified seed, seed treatment, pedigree and trait
+      tracking, and seed inventory across the planting cycle.
+    in_scope:
+      - Certified seed sourcing
+      - Seed treatment application
+      - Pedigree and trait tracking
+      - Seed inventory at farm and depot
+    out_of_scope:
+      - Plant breeding R&D (BC-810)
+      - Variety recommendation (BC-3530.40)
+    children:
+      - id: BC-3550.10.10
+        name: Seed Sourcing and Certification
+        level: 3
+        description: |
+          Sourcing of certified seed against OECD seed schemes and ISTA testing.
+        children: []
+      - id: BC-3550.10.20
+        name: Seed Treatment Application
+        level: 3
+        description: |
+          Application of seed treatments and dressings prior to sowing.
+        children: []
+      - id: BC-3550.10.30
+        name: Seed Pedigree and Trait Tracking
+        level: 3
+        description: |
+          Tracking of seed pedigree, trait stack, and stewardship obligations.
+        children: []
+      - id: BC-3550.10.40
+        name: Seed Inventory Management
+        level: 3
+        description: |
+          Seed inventory management across depots and on-farm storage.
+        children: []
+  - id: BC-3550.20
+    name: Fertilizer Inputs Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Sourcing, storage, handling, and application records for solid and
+      liquid fertilizers.
+    children:
+      - id: BC-3550.20.10
+        name: Fertilizer Sourcing
+        level: 3
+        description: |
+          Sourcing of straight and blended fertilizers from suppliers and importers.
+        children: []
+      - id: BC-3550.20.20
+        name: Fertilizer Storage and Handling
+        level: 3
+        industry: Agriculture & Food Production
+        description: |
+          On-farm and depot storage and handling of fertilizers including bunding.
+        children: []
+      - id: BC-3550.20.30
+        name: Fertilizer Application Records
+        level: 3
+        description: |
+          Records of fertilizer application by field, product, and rate.
+        children: []
+  - id: BC-3550.30
+    name: Crop Protection Inputs Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Sourcing, storage, application records, and empty-container
+      stewardship for crop protection products.
+    children:
+      - id: BC-3550.30.10
+        name: Crop Protection Product Sourcing
+        level: 3
+        description: |
+          Sourcing of authorised crop protection products from licensed channels.
+        children: []
+      - id: BC-3550.30.20
+        name: Pesticide Storage and Handling
+        level: 3
+        description: |
+          Pesticide storage, segregation, and operator-handling controls.
+        children: []
+      - id: BC-3550.30.30
+        name: Pesticide Application Records
+        level: 3
+        description: |
+          Pesticide application records meeting regulator and assurance requirements.
+        children: []
+      - id: BC-3550.30.40
+        name: Empty Container Stewardship
+        level: 3
+        description: |
+          Triple-rinse, return, and recycling of empty pesticide containers.
+        children: []
+  - id: BC-3550.40
+    name: Animal Nutrition Inputs Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Sourcing, storage, and use tracking of feed ingredients, premixes,
+      and feed additives for livestock operations.
+    children:
+      - id: BC-3550.40.10
+        name: Feed Ingredient Sourcing
+        level: 3
+        description: |
+          Sourcing of cereals, protein meals, and forage ingredients.
+        children: []
+      - id: BC-3550.40.20
+        name: Premix and Additive Management
+        level: 3
+        description: |
+          Premix, mineral, and feed-additive procurement and inventory.
+        children: []
+      - id: BC-3550.40.30
+        name: Feed Inventory and Ration Tracking
+        level: 3
+        description: |
+          On-farm feed inventory and ration-use tracking.
+        children: []
+  - id: BC-3550.50
+    name: Veterinary Medicine Inputs Management
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Sourcing, cold-chain storage, and use recording for veterinary
+      medicines and biologicals on farm.
+    children:
+      - id: BC-3550.50.10
+        name: Veterinary Medicine Sourcing
+        level: 3
+        description: |
+          Prescription-based sourcing of veterinary medicines and biologicals.
+        children: []
+      - id: BC-3550.50.20
+        name: Cold Chain Storage of Veterinary Medicines
+        level: 3
+        description: |
+          On-farm cold-chain storage and excursion management for veterinary medicines.
+        children: []
+      - id: BC-3550.50.30
+        name: Veterinary Medicine Use Recording
+        level: 3
+        description: |
+          Use recording with batch, dose, animal, and operator details.
+        children: []
+  - id: BC-3550.60
+    name: Biological and Soil Amendment Inputs
+    level: 2
+    industry: Agriculture & Food Production
+    description: |
+      Sourcing of biological inputs, manure and compost handling, and lime
+      and soil-amendment supply.
+    children:
+      - id: BC-3550.60.10
+        name: Biological Inputs Sourcing
+        level: 3
+        description: |
+          Sourcing of biostimulants, biofertilizers, and microbial inoculants.
+        children: []
+      - id: BC-3550.60.20
+        name: Manure and Compost Management
+        level: 3
+        description: |
+          On-farm manure storage, composting, and nutrient-recovery operations.
+        children: []
+      - id: BC-3550.60.30
+        name: Lime and Soil Amendment Sourcing
+        level: 3
+        description: |
+          Sourcing of lime, gypsum, and other soil amendments.
+        children: []
