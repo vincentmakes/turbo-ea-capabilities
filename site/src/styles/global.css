@@ -359,11 +359,11 @@ body {
   color: var(--color-white);
 }
 
-.kofi-button {
+.kofi-button,
+.github-button {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #d6336c;
   color: #fff;
   padding: 10px 18px;
   border-radius: 999px;
@@ -377,16 +377,34 @@ body {
     box-shadow var(--transition-fast);
 }
 
-.kofi-button:hover {
-  background: #b8255a;
+.kofi-button:hover,
+.github-button:hover {
   color: #fff;
   transform: translateY(-1px);
+}
+
+.kofi-button { background: #d6336c; }
+.kofi-button:hover {
+  background: #b8255a;
   box-shadow: 0 4px 12px rgba(214, 51, 108, 0.35);
 }
 
-.kofi-button svg {
+.github-button { background: #126EF8; }
+.github-button:hover {
+  background: #0a55c4;
+  box-shadow: 0 4px 12px rgba(18, 110, 248, 0.35);
+}
+
+.kofi-button svg,
+.github-button svg {
   display: block;
   flex-shrink: 0;
+}
+
+/* Suppress nav underline indicator on pill buttons */
+.nav-links .kofi-button::after,
+.nav-links .github-button::after {
+  display: none;
 }
 
 .footer-copy {
