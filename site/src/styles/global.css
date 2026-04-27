@@ -359,20 +359,40 @@ body {
   color: var(--color-white);
 }
 
-.footer-kofi {
+.kofi-button {
   display: inline-flex;
   align-items: center;
-  transition: transform var(--transition-fast);
+  gap: 8px;
+  background: #d6336c;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  line-height: 1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  transition: background var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
 }
 
-.footer-kofi:hover {
+.kofi-button:hover {
+  background: #b8255a;
+  color: #fff;
   transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(214, 51, 108, 0.35);
 }
 
-.footer-kofi img {
+.kofi-button svg {
   display: block;
-  border: 0;
-  height: 32px;
+  flex-shrink: 0;
+}
+
+.kofi-button-sm {
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 
 .footer-copy {
