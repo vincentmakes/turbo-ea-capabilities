@@ -1,0 +1,226 @@
+# Mining Tenement & Royalty Management
+id: BC-4490
+name: "Mining Tenement & Royalty Management"
+level: 1
+industry: "Mining & Metals"
+description: |
+  Acquisition, compliance, and portfolio management of exploration permits
+  and mining leases together with calculation, reporting, and disclosure of
+  government, private, and indigenous royalty obligations.
+references:
+  - https://eiti.org/
+  - https://www.icmm.com/en-gb/our-principles/mining-principles
+  - https://www.crirsco.com/
+children:
+  - id: BC-4490.10
+    name: Tenement Acquisition
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Application, tender, and acquisition due diligence for exploration
+      permits, mining leases, and other mineral tenements.
+    in_scope:
+      - Greenfield exploration permit applications
+      - Mining lease applications and renewals
+      - Tenement acquisition due diligence
+    out_of_scope:
+      - Discovery-stage prospect maturation (BC-4400.20)
+    children:
+      - id: BC-4490.10.10
+        name: Exploration Permit Application
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Preparation and lodgement of greenfield and brownfield
+          exploration permit applications.
+        children: []
+      - id: BC-4490.10.20
+        name: Mining Lease Application
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Preparation and lodgement of mining lease applications and
+          conversions from exploration tenure.
+        children: []
+      - id: BC-4490.10.30
+        name: Tenement Tender Participation
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Participation in competitive tenement tenders and auctions.
+        children: []
+      - id: BC-4490.10.40
+        name: Tenement Acquisition Due Diligence
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Title, encumbrance, and obligation due diligence on tenement
+          acquisitions.
+        children: []
+  - id: BC-4490.20
+    name: "Tenement Compliance & Maintenance"
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Compliance with annual expenditure, work programme, rent, and
+      renewal obligations attached to mineral tenements.
+    children:
+      - id: BC-4490.20.10
+        name: Annual Expenditure Reporting
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Reporting of annual exploration and development expenditure
+          against tenement commitments.
+        children: []
+      - id: BC-4490.20.20
+        name: Work Programme Compliance
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Demonstration of compliance with committed work programmes on
+          exploration and mining tenements.
+        children: []
+      - id: BC-4490.20.30
+        name: "Rent & Statutory Fee Payment"
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Payment of annual rents, statutory fees, and security deposits
+          on tenements.
+        children: []
+      - id: BC-4490.20.40
+        name: Tenement Renewal Management
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Management of tenement renewal applications and condition
+          variations.
+        children: []
+  - id: BC-4490.30
+    name: Tenement Portfolio Management
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Maintenance of the tenement register, boundary mapping, and
+      relinquishment decisions across the portfolio.
+    children:
+      - id: BC-4490.30.10
+        name: Tenement Register Management
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Maintenance of the corporate tenement register and source-of-truth
+          attributes.
+        children: []
+      - id: BC-4490.30.20
+        name: Tenement Boundary Mapping
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Spatial mapping and reconciliation of tenement boundaries against
+          government registers.
+        children: []
+      - id: BC-4490.30.30
+        name: Tenement Relinquishment Decisions
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Decisions on partial and full tenement relinquishment to
+          rationalise the portfolio.
+        children: []
+  - id: BC-4490.40
+    name: Government Royalty Management
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Calculation, lodgement, and audit response for production-based and
+      ad valorem royalties payable to host governments.
+    children:
+      - id: BC-4490.40.10
+        name: Production Royalty Calculation
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Calculation of production-based and ad valorem royalties on
+          mineral output.
+        children: []
+      - id: BC-4490.40.20
+        name: Royalty Return Lodgement
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Lodgement of periodic royalty returns with host-government
+          revenue authorities.
+        children: []
+      - id: BC-4490.40.30
+        name: Royalty Audit Response
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Response to government royalty audits and assessments.
+        children: []
+  - id: BC-4490.50
+    name: "Private & Indigenous Royalty Management"
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Administration of private royalty streams and indigenous
+      benefit-sharing royalty obligations.
+    children:
+      - id: BC-4490.50.10
+        name: Private Royalty Stream Administration
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Administration of vendor, financier, and streaming-company
+          royalty entitlements.
+        children: []
+      - id: BC-4490.50.20
+        name: Indigenous Benefit-Sharing Royalty Administration
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Administration of royalty payments and benefit-sharing
+          arrangements with indigenous and traditional-owner groups.
+        children: []
+      - id: BC-4490.50.30
+        name: Royalty Disclosure Reporting
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Disclosure of royalty payments to investors, regulators, and
+          affected communities.
+        children: []
+  - id: BC-4490.60
+    name: Extractive Transparency Reporting
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Payments-to-governments, EITI, and beneficial-ownership reporting
+      under extractive transparency regimes.
+    children:
+      - id: BC-4490.60.10
+        name: Payments-to-Governments Reporting
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Mandatory payments-to-governments reporting under EU and
+          equivalent regimes.
+        children: []
+      - id: BC-4490.60.20
+        name: Extractive Transparency Disclosure
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          EITI and equivalent voluntary transparency reporting on revenue
+          flows.
+        children: []
+      - id: BC-4490.60.30
+        name: Beneficial Ownership Disclosure
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Disclosure of beneficial ownership of operating entities under
+          EITI and equivalent rules.
+        children: []

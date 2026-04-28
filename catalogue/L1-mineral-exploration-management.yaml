@@ -1,0 +1,288 @@
+# Mineral Exploration Management
+id: BC-4400
+name: Mineral Exploration Management
+level: 1
+industry: "Mining & Metals"
+description: |
+  Discovery of new mineralisation and qualification of exploration prospects
+  through geological, geochemical, and geophysical surveying, exploration
+  drilling, and drill-sample assay, culminating in discovery reporting and
+  prospect maturation decisions.
+references:
+  - https://www.crirsco.com/
+  - https://www.jorc.org/
+  - https://www.icmm.com/en-gb/our-principles/mining-principles
+  - https://www.ausimm.com/
+children:
+  - id: BC-4400.10
+    name: Geoscientific Survey Management
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Acquisition, processing, and interpretation of airborne and ground
+      geophysical, geochemical, and geological survey data over exploration
+      tenements.
+    in_scope:
+      - Airborne magnetic and electromagnetic surveys
+      - Ground gravity, IP, and seismic surveys
+      - Soil, stream-sediment, and rock-chip geochemistry
+      - 1:50k and project-scale geological mapping
+    out_of_scope:
+      - Resource-grade drillhole geological logging (BC-4400.30)
+      - Production-stage geological reconciliation (BC-4410.60)
+    children:
+      - id: BC-4400.10.10
+        name: Airborne Geophysical Survey
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Airborne magnetic, electromagnetic, radiometric, and gravity survey
+          acquisition over exploration acreage.
+        children: []
+      - id: BC-4400.10.20
+        name: Ground Geophysical Survey
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Ground gravity, induced-polarisation, electromagnetic, and seismic
+          survey acquisition at prospect scale.
+        children: []
+      - id: BC-4400.10.30
+        name: Geochemical Sampling
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Soil, stream-sediment, biogeochemical, and rock-chip sampling
+          programmes for geochemical anomaly delineation.
+        children: []
+      - id: BC-4400.10.40
+        name: Geological Mapping
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Outcrop and prospect-scale geological mapping to define lithology,
+          structure, and alteration.
+        children: []
+      - id: BC-4400.10.50
+        name: Survey Data Interpretation
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Integrated interpretation of geophysical and geochemical datasets
+          for target generation.
+        children: []
+  - id: BC-4400.20
+    name: Exploration Target Generation
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Conversion of regional and prospect data into ranked drill targets
+      through mineral system analysis and prospectivity modelling.
+    in_scope:
+      - Mineral system and ore-deposit model application
+      - Data-driven prospectivity modelling
+      - Lead and target ranking
+    out_of_scope:
+      - Resource estimation on discovered mineralisation (BC-4410.20)
+    children:
+      - id: BC-4400.20.10
+        name: Mineral System Analysis
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Application of source, transport, trap, and preservation criteria
+          to define mineralised systems.
+        children: []
+      - id: BC-4400.20.20
+        name: Prospectivity Modelling
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Knowledge-driven and data-driven prospectivity mapping to predict
+          target locations.
+        children: []
+      - id: BC-4400.20.30
+        name: Target Ranking
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Probabilistic ranking of generated targets by chance of discovery
+          and potential tonnage.
+        children: []
+      - id: BC-4400.20.40
+        name: Exploration Lead Inventory Management
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Maintenance of the ranked exploration lead and target inventory
+          and its maturation pathway.
+        children: []
+  - id: BC-4400.30
+    name: Exploration Drilling Operations
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Execution of reverse-circulation, diamond-core, and other exploration
+      drilling programmes including hole survey, sample logging, and
+      drilling-contractor oversight.
+    in_scope:
+      - Reverse-circulation and aircore drilling
+      - Diamond-core drilling
+      - Drillhole deviation surveying
+    out_of_scope:
+      - Production drilling for blasthole charging (BC-4430.10)
+      - Geotechnical drilling for slope design (BC-4420.50)
+    children:
+      - id: BC-4400.30.10
+        name: Reverse Circulation Drilling
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Reverse-circulation and aircore drilling for exploration sample
+          recovery.
+        children: []
+      - id: BC-4400.30.20
+        name: Diamond Core Drilling
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Diamond-core drilling for oriented and continuous lithological
+          sample recovery.
+        children: []
+      - id: BC-4400.30.30
+        name: Drill Sample Logging
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Geological, geotechnical, and structural logging of drill chips
+          and core.
+        children: []
+      - id: BC-4400.30.40
+        name: Drillhole Survey Management
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Downhole deviation surveying and collar-position survey control.
+        children: []
+      - id: BC-4400.30.50
+        name: Drilling Contractor Management
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Engagement, mobilisation, and performance management of drilling
+          contractors.
+        children: []
+  - id: BC-4400.40
+    name: Sample & Assay Management
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Custody, preparation, and assay coordination of exploration samples
+      under documented quality-assurance regimes that satisfy public
+      reporting standards.
+    in_scope:
+      - Sample chain of custody
+      - Laboratory selection and turnaround management
+      - Quality-control insertion and monitoring
+    out_of_scope:
+      - Process plant assays (BC-4440.60)
+      - Smelter settlement assays (BC-4450.70)
+    children:
+      - id: BC-4400.40.10
+        name: Sample Preparation
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Crushing, splitting, and pulverising of exploration samples for
+          analytical assay.
+        children: []
+      - id: BC-4400.40.20
+        name: Laboratory Assay Coordination
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Selection, dispatch, and turnaround management of analytical
+          laboratory work.
+        children: []
+      - id: BC-4400.40.30
+        name: Quality Assurance Programme Management
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Insertion and monitoring of standards, blanks, and duplicates to
+          support reportable assay quality.
+        children: []
+      - id: BC-4400.40.40
+        name: Reference Material Management
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Procurement, characterisation, and distribution of certified
+          reference materials.
+        children: []
+  - id: BC-4400.50
+    name: Exploration Programme Steering
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Strategic direction of the exploration portfolio across commodities,
+      jurisdictions, and risk classes, including investment allocation and
+      discovery performance tracking.
+    children:
+      - id: BC-4400.50.10
+        name: Exploration Strategy Definition
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Definition of exploration strategy by commodity, jurisdiction, and
+          deposit class.
+        children: []
+      - id: BC-4400.50.20
+        name: Exploration Investment Allocation
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Allocation of exploration capital across regional and prospect
+          programmes.
+        children: []
+      - id: BC-4400.50.30
+        name: Discovery Performance Tracking
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Tracking of discovery cost, resource adds, and conversion to
+          reserves.
+        children: []
+  - id: BC-4400.60
+    name: Discovery Reporting
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Internal and external communication of exploration results, including
+      partner and capital-market disclosures aligned with public reporting
+      codes.
+    children:
+      - id: BC-4400.60.10
+        name: Internal Discovery Reporting
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Internal communication of exploration results, intercepts, and
+          target maturation status.
+        children: []
+      - id: BC-4400.60.20
+        name: Public Exploration Results Disclosure
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Disclosure of exploration intercepts and results under JORC,
+          NI 43-101, SAMREC, and equivalent codes.
+        children: []
+      - id: BC-4400.60.30
+        name: Exploration Joint Venture Reporting
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Reporting of exploration progress, expenditure, and results to
+          joint-venture partners and operators.
+        children: []

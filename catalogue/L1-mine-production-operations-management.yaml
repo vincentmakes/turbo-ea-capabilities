@@ -1,0 +1,283 @@
+# Mine Production Operations Management
+id: BC-4430
+name: Mine Production Operations Management
+level: 1
+industry: "Mining & Metals"
+description: |
+  Execution of mine production through drill-blast-load-haul cycles,
+  underground stoping, grade control, ground control, mine ventilation, and
+  dewatering across open-pit and underground operations.
+references:
+  - https://www.icmm.com/en-gb/our-principles/mining-principles
+  - https://www.msha.gov/
+  - https://www.iso.org/standard/64939.html
+  - https://gmggroup.org/
+children:
+  - id: BC-4430.10
+    name: "Drill & Blast Operations"
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Production drilling, charging, initiation, and post-blast performance
+      analysis for open-pit and underground operations.
+    in_scope:
+      - Production blasthole drilling
+      - Charging and initiation
+      - Post-blast fragmentation and movement analysis
+    out_of_scope:
+      - Exploration drilling (BC-4400.30)
+      - Drill and blast pattern design (BC-4420.40.30)
+    children:
+      - id: BC-4430.10.10
+        name: Production Drilling
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Drilling of production blastholes per blast pattern design.
+        children: []
+      - id: BC-4430.10.20
+        name: Blast Charging
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Loading of explosives and accessories into blastholes.
+        children: []
+      - id: BC-4430.10.30
+        name: "Blast Initiation & Clearance"
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Tie-in, clearance, initiation, and post-blast clearance of
+          production blasts.
+        children: []
+      - id: BC-4430.10.40
+        name: Blast Performance Analysis
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Fragmentation, movement, and vibration analysis of executed
+          blasts.
+        children: []
+  - id: BC-4430.20
+    name: "Load & Haul Operations"
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Loading, hauling, and dispatch of broken rock from face to processing
+      plant or waste dump.
+    children:
+      - id: BC-4430.20.10
+        name: "Shovel & Excavator Operations"
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of cable shovels, hydraulic excavators, and front-end
+          loaders.
+        children: []
+      - id: BC-4430.20.20
+        name: Truck Haulage Operations
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of off-highway haul trucks and trolley-assist hauling.
+        children: []
+      - id: BC-4430.20.30
+        name: "Fleet Dispatch & Telematics"
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Real-time fleet dispatch, assignment, and telematics-based
+          productivity management.
+        children: []
+      - id: BC-4430.20.40
+        name: Material Movement Reconciliation
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Reconciliation of moved tonnes against survey, dispatch, and
+          stockpile balances.
+        children: []
+  - id: BC-4430.30
+    name: Underground Production Operations
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Stope development, production, backfill, and underground materials
+      handling specific to underground mining methods.
+    children:
+      - id: BC-4430.30.10
+        name: Stope Development
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Development of underground access, drives, and stope
+          infrastructure.
+        children: []
+      - id: BC-4430.30.20
+        name: Stope Production
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Production blasting and mucking from underground stopes.
+        children: []
+      - id: BC-4430.30.30
+        name: Backfill Placement
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Placement of cemented or rock backfill in mined-out stopes.
+        children: []
+      - id: BC-4430.30.40
+        name: Underground Materials Handling
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of underground conveyors, ore passes, and shaft
+          hoisting.
+        children: []
+  - id: BC-4430.40
+    name: Grade Control Operations
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Operational ore-waste discrimination through sampling, ore-block
+      definition, and routing decisions at the mining face.
+    children:
+      - id: BC-4430.40.10
+        name: Grade Control Sampling
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Production-stage sampling of broken rock and faces for grade
+          determination.
+        children: []
+      - id: BC-4430.40.20
+        name: Ore Block Definition
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Definition of mineable ore blocks for short-term execution.
+        children: []
+      - id: BC-4430.40.30
+        name: Ore-Waste Boundary Marking
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Field marking of ore-waste boundaries for shovel and loader
+          operators.
+        children: []
+      - id: BC-4430.40.40
+        name: Run-of-Mine Stockpile Allocation
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Allocation of mined material to run-of-mine and grade stockpiles.
+        children: []
+  - id: BC-4430.50
+    name: "Ground Control & Geotechnical Monitoring"
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Operational ground control through monitoring and trigger-action
+      response across pit slopes and underground excavations.
+    children:
+      - id: BC-4430.50.10
+        name: Slope Monitoring
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Real-time monitoring of pit slopes using radar, prisms, and
+          inclinometers.
+        children: []
+      - id: BC-4430.50.20
+        name: Ground Support Installation
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Installation of bolting, mesh, shotcrete, and cable support
+          underground.
+        children: []
+      - id: BC-4430.50.30
+        name: Underground Seismic Monitoring
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Microseismic monitoring of underground excavations for rockburst
+          and stress management.
+        children: []
+      - id: BC-4430.50.40
+        name: Geotechnical Trigger Action Response
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Execution of trigger action response plans when monitoring
+          thresholds are exceeded.
+        children: []
+  - id: BC-4430.60
+    name: "Mine Ventilation & Atmosphere Management"
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Operation of primary and auxiliary ventilation systems and monitoring
+      of mine atmosphere quality.
+    children:
+      - id: BC-4430.60.10
+        name: Primary Ventilation Operations
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of primary surface and underground ventilation fans and
+          airways.
+        children: []
+      - id: BC-4430.60.20
+        name: Auxiliary Ventilation Operations
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of auxiliary fans and ducting at the working face.
+        children: []
+      - id: BC-4430.60.30
+        name: Mine Atmosphere Monitoring
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Real-time and routine monitoring of dust, gas, and oxygen levels
+          in the mine atmosphere.
+        children: []
+      - id: BC-4430.60.40
+        name: Diesel Particulate Management
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Management of diesel particulate matter exposure in underground
+          workings.
+        children: []
+  - id: BC-4430.70
+    name: Mine Dewatering Operations
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Operation of pit and underground dewatering systems and pump-station
+      infrastructure.
+    children:
+      - id: BC-4430.70.10
+        name: Open-Pit Dewatering Operations
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of in-pit pumping and perimeter dewatering bores.
+        children: []
+      - id: BC-4430.70.20
+        name: Underground Dewatering Operations
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of underground sumps, pumps, and dewatering reticulation.
+        children: []
+      - id: BC-4430.70.30
+        name: Pump Station Management
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation and maintenance of fixed pump stations and rising mains.
+        children: []
