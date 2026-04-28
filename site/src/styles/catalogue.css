@@ -303,6 +303,15 @@
   padding-bottom: 12px;
 }
 
+/* On mobile, sticky bars eat too much vertical space — let them scroll away. */
+@media (max-width: 768px) {
+  .sticky-controls {
+    position: static;
+    top: auto;
+    z-index: auto;
+  }
+}
+
 /* Action bar (counts + bulk + export) */
 .action-bar {
   display: flex;
