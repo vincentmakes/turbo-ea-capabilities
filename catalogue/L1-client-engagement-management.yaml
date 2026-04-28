@@ -1,0 +1,311 @@
+# Client Engagement Management
+id: BC-4300
+name: Client Engagement Management
+level: 1
+industry: Professional Services
+description: |
+  Lifecycle of client and engagement intake, scoping, mobilisation, change
+  control, closure, and ongoing client stewardship across legal matters,
+  advisory engagements, and audit and assurance engagements.
+references:
+  - https://www.ifac.org/who-we-are/our-purpose/iesba-code-ethics
+  - https://www.iaasb.org/standards-pronouncements
+  - https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html
+children:
+  - id: BC-4300.10
+    name: Client Acceptance Management
+    level: 2
+    industry: Professional Services
+    description: |
+      Take-on of new client relationships, including KYC, AML screening,
+      sanctions and PEP checks, and beneficial ownership verification before
+      any engagement is accepted.
+    in_scope:
+      - New client KYC and AML clearance
+      - Sanctions and PEP screening on prospective clients
+      - Beneficial ownership and source-of-funds checks
+      - Periodic refresh of client KYC files
+    out_of_scope:
+      - Independence and conflicts assessment (BC-4350)
+      - Engagement-specific risk acceptance (BC-4300.20)
+    children:
+      - id: BC-4300.10.10
+        name: Client KYC Capture
+        level: 3
+        industry: Professional Services
+        description: |
+          Capture of identification, beneficial ownership, and source-of-funds
+          information for prospective and existing clients.
+        children: []
+      - id: BC-4300.10.20
+        name: Client Sanctions and PEP Screening
+        level: 3
+        industry: Professional Services
+        description: |
+          Screening of clients and beneficial owners against sanctions, PEP,
+          and adverse-media lists.
+        children: []
+      - id: BC-4300.10.30
+        name: Client Risk Rating
+        level: 3
+        industry: Professional Services
+        description: |
+          Risk rating of the client relationship to drive due diligence depth
+          and review cadence.
+        children: []
+      - id: BC-4300.10.40
+        name: Periodic Client Due Diligence Refresh
+        level: 3
+        industry: Professional Services
+        description: |
+          Refresh of client KYC, ownership, and risk ratings on a defined cycle.
+        children: []
+  - id: BC-4300.20
+    name: Engagement Acceptance Management
+    level: 2
+    industry: Professional Services
+    description: |
+      Decision workflow to accept or decline a specific engagement, drawing
+      on independence and conflicts clearance, capacity assessment, fee
+      feasibility, and engagement-specific risk evaluation.
+    in_scope:
+      - Engagement risk assessment
+      - Capacity and capability check
+      - Engagement go/no-go decisioning
+    out_of_scope:
+      - Independence and conflicts substantive checks (BC-4350)
+      - Pursuit and proposal activity (BC-4360)
+    children:
+      - id: BC-4300.20.10
+        name: Engagement Risk Assessment
+        level: 3
+        industry: Professional Services
+        description: |
+          Assessment of engagement-specific risk including subject-matter
+          complexity, client integrity, and fee recoverability.
+        children: []
+      - id: BC-4300.20.20
+        name: Capacity and Capability Check
+        level: 3
+        industry: Professional Services
+        description: |
+          Confirmation that the firm has the technical capability and
+          resourcing capacity to deliver the engagement.
+        children: []
+      - id: BC-4300.20.30
+        name: Engagement Go-No-Go Decisioning
+        level: 3
+        industry: Professional Services
+        description: |
+          Partner-level go/no-go decision integrating risk, conflicts,
+          independence, capacity, and commercial inputs.
+        children: []
+  - id: BC-4300.30
+    name: Engagement Scoping and Terms Management
+    level: 2
+    industry: Professional Services
+    description: |
+      Definition of engagement scope, deliverables, assumptions, fee terms,
+      and engagement letter or retainer agreement.
+    in_scope:
+      - Scope of services definition
+      - Fee structure and terms drafting
+      - Engagement letter or retainer agreement issuance
+    out_of_scope:
+      - Pricing strategy at the firm level (BC-4360.50)
+      - Pursuit-stage proposal (BC-4360.30)
+    children:
+      - id: BC-4300.30.10
+        name: Engagement Scope Definition
+        level: 3
+        industry: Professional Services
+        description: |
+          Definition of services, deliverables, assumptions, exclusions, and
+          dependencies for the engagement.
+        children: []
+      - id: BC-4300.30.20
+        name: Engagement Letter Drafting
+        level: 3
+        industry: Professional Services
+        description: |
+          Drafting of engagement letters and retainer agreements aligned to
+          firm templates and applicable professional standards.
+        children: []
+      - id: BC-4300.30.30
+        name: Engagement Terms Negotiation
+        level: 3
+        industry: Professional Services
+        description: |
+          Negotiation of engagement terms with the client, including
+          liability caps, governing law, and dispute resolution clauses.
+        children: []
+      - id: BC-4300.30.40
+        name: Engagement Letter Execution
+        level: 3
+        industry: Professional Services
+        description: |
+          Signature, countersignature, and storage of executed engagement
+          letters as a precondition for engagement mobilisation.
+        children: []
+  - id: BC-4300.40
+    name: Engagement Mobilisation Management
+    level: 2
+    industry: Professional Services
+    description: |
+      Operational stand-up of an accepted engagement including team
+      formation, kickoff, secure data access, and engagement infrastructure
+      setup.
+    children:
+      - id: BC-4300.40.10
+        name: Engagement Team Formation
+        level: 3
+        industry: Professional Services
+        description: |
+          Identification and confirmation of partner, manager, and staff
+          roles on the engagement team.
+        children: []
+      - id: BC-4300.40.20
+        name: Engagement Kickoff Management
+        level: 3
+        industry: Professional Services
+        description: |
+          Internal and client-facing kickoff meetings, briefing materials,
+          and confirmation of objectives and ways of working.
+        children: []
+      - id: BC-4300.40.30
+        name: Engagement Data Access Setup
+        level: 3
+        industry: Professional Services
+        description: |
+          Provisioning of secure data rooms, client portals, and access
+          credentials specific to the engagement.
+        children: []
+      - id: BC-4300.40.40
+        name: Engagement Infrastructure Setup
+        level: 3
+        industry: Professional Services
+        description: |
+          Setup of engagement codes, billing structures, and matter
+          numbering in the firm's practice systems.
+        children: []
+  - id: BC-4300.50
+    name: Engagement Change Management
+    level: 2
+    industry: Professional Services
+    description: |
+      Control of changes to engagement scope, fees, timelines, or team
+      composition after engagement letter execution.
+    children:
+      - id: BC-4300.50.10
+        name: Scope Change Request Handling
+        level: 3
+        industry: Professional Services
+        description: |
+          Capture, evaluation, and disposition of scope change requests
+          from client or engagement team.
+        children: []
+      - id: BC-4300.50.20
+        name: Fee Variation Approval
+        level: 3
+        industry: Professional Services
+        description: |
+          Approval workflow for fee adjustments, additional retainers, and
+          out-of-scope work authorisations.
+        children: []
+      - id: BC-4300.50.30
+        name: Engagement Letter Amendment
+        level: 3
+        industry: Professional Services
+        description: |
+          Issuance and execution of amendments and side letters reflecting
+          approved engagement changes.
+        children: []
+  - id: BC-4300.60
+    name: Engagement Closure Management
+    level: 2
+    industry: Professional Services
+    description: |
+      Wrap-up of completed engagements including deliverable handover,
+      working-paper retention, final billing trigger, and post-engagement
+      debrief.
+    children:
+      - id: BC-4300.60.10
+        name: Deliverable Handover Management
+        level: 3
+        industry: Professional Services
+        description: |
+          Final delivery of reports, opinions, and working products to the
+          client with associated transmittal.
+        children: []
+      - id: BC-4300.60.20
+        name: Engagement File Retention Setup
+        level: 3
+        industry: Professional Services
+        description: |
+          Closing of the engagement file and configuration of retention,
+          retrieval, and destruction policies.
+        children: []
+      - id: BC-4300.60.30
+        name: Engagement Debrief and Lessons Learned
+        level: 3
+        industry: Professional Services
+        description: |
+          Post-engagement review with the engagement team to capture
+          lessons learned and improvement actions.
+        children: []
+      - id: BC-4300.60.40
+        name: Client Closure Communication
+        level: 3
+        industry: Professional Services
+        description: |
+          Closing communication to the client including final report,
+          satisfaction survey, and follow-up scheduling.
+        children: []
+  - id: BC-4300.70
+    name: Client Stewardship Management
+    level: 2
+    industry: Professional Services
+    description: |
+      Ongoing stewardship of strategic client relationships, including
+      relationship partner accountability, client account planning, and
+      cross-practice coordination.
+    in_scope:
+      - Relationship partner assignment
+      - Client account planning across multiple engagements
+      - Client satisfaction tracking
+    out_of_scope:
+      - Pursuit and proposal activity (BC-4360)
+      - Generic CRM (BC-3060)
+    children:
+      - id: BC-4300.70.10
+        name: Relationship Partner Assignment
+        level: 3
+        industry: Professional Services
+        description: |
+          Assignment and rotation of the lead relationship partner for each
+          strategic client.
+        children: []
+      - id: BC-4300.70.20
+        name: Client Account Planning
+        level: 3
+        industry: Professional Services
+        description: |
+          Account-level planning across the portfolio of engagements with a
+          single client, including share-of-wallet and relationship goals.
+        children: []
+      - id: BC-4300.70.30
+        name: Client Satisfaction Tracking
+        level: 3
+        industry: Professional Services
+        description: |
+          Capture of client feedback, NPS or equivalent measures, and
+          escalation of dissatisfaction signals.
+        children: []
+      - id: BC-4300.70.40
+        name: Cross-Practice Client Coordination
+        level: 3
+        industry: Professional Services
+        description: |
+          Coordination across practice groups and geographies serving a
+          shared client.
+        children: []

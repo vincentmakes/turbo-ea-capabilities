@@ -1,0 +1,264 @@
+# Professional Services Delivery Management
+id: BC-4310
+name: Professional Services Delivery Management
+level: 1
+industry: Professional Services
+description: |
+  Execution of advisory, legal, audit, and consulting engagements — work
+  planning, fieldwork, deliverable production, internal review, and
+  engagement reporting against the agreed engagement scope.
+references:
+  - https://www.iaasb.org/standards-pronouncements
+  - https://www.iso.org/standard/63501.html
+  - https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/
+children:
+  - id: BC-4310.10
+    name: Engagement Planning Management
+    level: 2
+    industry: Professional Services
+    description: |
+      Detailed planning of engagement work, milestones, deliverable
+      structure, and risk-tailored procedures consistent with applicable
+      professional standards.
+    children:
+      - id: BC-4310.10.10
+        name: Engagement Work Plan Definition
+        level: 3
+        industry: Professional Services
+        description: |
+          Definition of work breakdown, milestones, and dependencies for
+          the engagement.
+        children: []
+      - id: BC-4310.10.20
+        name: Engagement Risk-Based Procedure Tailoring
+        level: 3
+        industry: Professional Services
+        description: |
+          Tailoring of audit procedures, advisory analyses, or legal steps
+          to engagement-specific risk and materiality.
+        children: []
+      - id: BC-4310.10.30
+        name: Engagement Deliverable Plan Definition
+        level: 3
+        industry: Professional Services
+        description: |
+          Definition of deliverable structure, format, and review checkpoints.
+        children: []
+      - id: BC-4310.10.40
+        name: Engagement Schedule Management
+        level: 3
+        industry: Professional Services
+        description: |
+          Day-to-day scheduling of engagement activities and resource
+          availability against the work plan.
+        children: []
+  - id: BC-4310.20
+    name: Engagement Execution Management
+    level: 2
+    industry: Professional Services
+    description: |
+      Day-to-day delivery of engagement work — fieldwork, advisory analysis,
+      audit testing, drafting, and client interaction.
+    children:
+      - id: BC-4310.20.10
+        name: Audit Procedure Execution
+        level: 3
+        industry: Professional Services
+        description: |
+          Performance of audit and assurance procedures including
+          substantive tests, controls testing, and analytical procedures.
+        children: []
+      - id: BC-4310.20.20
+        name: Advisory Analysis Execution
+        level: 3
+        industry: Professional Services
+        description: |
+          Performance of consulting analyses, modelling, benchmarking, and
+          recommendation development.
+        children: []
+      - id: BC-4310.20.30
+        name: Legal Matter Execution
+        level: 3
+        industry: Professional Services
+        description: |
+          Substantive legal work including drafting, opinions, court
+          submissions, transactional execution, and counsel.
+        children: []
+      - id: BC-4310.20.40
+        name: Client Interaction Management
+        level: 3
+        industry: Professional Services
+        description: |
+          Day-to-day client interaction during execution — interviews,
+          information requests, status calls, and stakeholder workshops.
+        children: []
+  - id: BC-4310.30
+    name: Engagement Deliverable Management
+    level: 2
+    industry: Professional Services
+    description: |
+      Drafting, version control, and finalisation of engagement deliverables
+      such as audit reports, opinions, advisory reports, and transactional
+      documentation.
+    children:
+      - id: BC-4310.30.10
+        name: Deliverable Drafting
+        level: 3
+        industry: Professional Services
+        description: |
+          Production of deliverable drafts using firm templates, methodology,
+          and engagement findings.
+        children: []
+      - id: BC-4310.30.20
+        name: Deliverable Version Control
+        level: 3
+        industry: Professional Services
+        description: |
+          Versioning, branching, and audit trail across deliverable drafts
+          through review cycles.
+        children: []
+      - id: BC-4310.30.30
+        name: Deliverable Finalisation
+        level: 3
+        industry: Professional Services
+        description: |
+          Final formatting, signature blocks, and release packaging of
+          completed deliverables.
+        children: []
+  - id: BC-4310.40
+    name: Engagement Working Paper Management
+    level: 2
+    industry: Professional Services
+    description: |
+      Capture, organisation, and retention of engagement working papers
+      and evidence supporting deliverables and conclusions.
+    in_scope:
+      - Engagement file working papers
+      - Evidence indexing and cross-referencing
+      - File assembly and lock-down
+    out_of_scope:
+      - Reusable methodology and precedent assets (BC-4370)
+    children:
+      - id: BC-4310.40.10
+        name: Working Paper Capture
+        level: 3
+        industry: Professional Services
+        description: |
+          Capture of evidence, analyses, and notes into the engagement
+          working-paper file.
+        children: []
+      - id: BC-4310.40.20
+        name: Working Paper Indexing and Cross-Referencing
+        level: 3
+        industry: Professional Services
+        description: |
+          Indexing and cross-referencing of working papers to deliverable
+          assertions and procedure steps.
+        children: []
+      - id: BC-4310.40.30
+        name: Engagement File Assembly and Lock-Down
+        level: 3
+        industry: Professional Services
+        description: |
+          Assembly of the final engagement file and lock-down to prevent
+          post-issuance changes outside permitted controls.
+        children: []
+  - id: BC-4310.50
+    name: Engagement Internal Review Management
+    level: 2
+    industry: Professional Services
+    description: |
+      Within-engagement review cycles by reviewers, managers, and partners
+      prior to deliverable release; distinct from firm-level quality
+      monitoring.
+    out_of_scope:
+      - Firm-level quality monitoring and EQR (BC-4340)
+    children:
+      - id: BC-4310.50.10
+        name: Manager Review of Working Papers
+        level: 3
+        industry: Professional Services
+        description: |
+          Manager-level review of working papers and conclusions before
+          partner sign-off.
+        children: []
+      - id: BC-4310.50.20
+        name: Partner Review and Sign-Off
+        level: 3
+        industry: Professional Services
+        description: |
+          Engagement partner review and sign-off on deliverables and
+          opinions.
+        children: []
+      - id: BC-4310.50.30
+        name: Specialist Technical Review
+        level: 3
+        industry: Professional Services
+        description: |
+          Review by technical specialists (tax, valuation, IT, actuarial)
+          on areas requiring specialist input.
+        children: []
+  - id: BC-4310.60
+    name: External Specialist Engagement Management
+    level: 2
+    industry: Professional Services
+    description: |
+      Engagement of co-counsel, expert witnesses, sub-contractors, and
+      third-party specialists within an engagement.
+    children:
+      - id: BC-4310.60.10
+        name: Co-Counsel and Sub-Contractor Engagement
+        level: 3
+        industry: Professional Services
+        description: |
+          Selection and engagement of co-counsel, local counsel, or
+          consulting sub-contractors.
+        children: []
+      - id: BC-4310.60.20
+        name: Expert Witness Engagement
+        level: 3
+        industry: Professional Services
+        description: |
+          Identification, engagement, and management of expert witnesses
+          and external experts.
+        children: []
+      - id: BC-4310.60.30
+        name: External Specialist Quality Oversight
+        level: 3
+        industry: Professional Services
+        description: |
+          Oversight of external specialists' work product and reliance
+          assessment for engagement conclusions.
+        children: []
+  - id: BC-4310.70
+    name: Engagement Reporting and Communication
+    level: 2
+    industry: Professional Services
+    description: |
+      Status reporting, interim communications, and final reporting to the
+      client and to engagement leadership during execution.
+    children:
+      - id: BC-4310.70.10
+        name: Engagement Status Reporting
+        level: 3
+        industry: Professional Services
+        description: |
+          Periodic status updates to engagement leadership and the client,
+          including progress, risks, and issues.
+        children: []
+      - id: BC-4310.70.20
+        name: Interim Findings Communication
+        level: 3
+        industry: Professional Services
+        description: |
+          Interim communication of preliminary findings, observations, and
+          significant issues to the client during execution.
+        children: []
+      - id: BC-4310.70.30
+        name: Final Engagement Reporting
+        level: 3
+        industry: Professional Services
+        description: |
+          Issuance of final reports, opinions, and management letters as
+          part of engagement closure.
+        children: []

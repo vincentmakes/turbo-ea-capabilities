@@ -508,6 +508,22 @@ Where an industry reference framework exists, anchor the upper levels (L1 / L2) 
 - **GPP3, ICMJE** — publication practice.
 - **HTA bodies (NICE, IQWiG, HAS, CADTH)** — health technology assessment.
 
+**Professional Services (Legal, Consulting, Accounting & Audit)**
+
+- **IFAC IESBA Code of Ethics for Professional Accountants** — ethics, independence, and conflict-of-interest framework for accountants and auditors.
+- **IAASB International Standards — ISA (auditing), ISQM 1 & 2 (firm and engagement quality management), ISRE, ISAE** — international audit, review, and other assurance engagement standards.
+- **AICPA Code of Professional Conduct, AICPA Statements on Auditing Standards (SAS), AICPA SSARS** — US accounting and assurance professional standards.
+- **PCAOB Auditing Standards and Sarbanes-Oxley Title II** — US public-company audit and auditor independence.
+- **EU Audit Regulation 537/2014 and Directive 2014/56/EU** — public-interest entity audit reform, mandatory firm rotation, prohibited non-audit services.
+- **ABA Model Rules of Professional Conduct, IBA International Principles on Conduct for the Legal Profession** — US and international legal professional conduct.
+- **SRA Standards and Regulations, Legal Services Act 2007** — UK solicitors and alternative business structure regulation.
+- **ISO 20700** — guidelines for management consultancy services.
+- **ISO/IEC 17024, ISO/IEC 17021** — competence of personnel certification bodies and management-system audit bodies.
+- **MCA Code of Practice (Management Consultancies Association), AMCF Standards of Practice** — management consulting professional practice.
+- **FATF Recommendations and EU AMLD (designated non-financial businesses and professions)** — AML obligations on legal, accounting, and consulting firms.
+- **OECD Model Tax Convention and OECD Transfer Pricing Guidelines** — tax advisory technical anchors used by tax practices.
+- **SPI Research Professional Services Maturity Benchmark** — professional services operational maturity reference.
+
 **Defense & aerospace**
 
 - **DoD 5000 series** — defense acquisition lifecycle.

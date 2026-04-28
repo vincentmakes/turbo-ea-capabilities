@@ -98,6 +98,16 @@ value_streams:
         stage_name: Offboarding & Alumni
         capability_id: BC-300
         notes: Separation processing
+      - stage_order: 3
+        stage_name: Selection & Hire
+        capability_id: BC-4380
+        industry_variant: Professional Services
+        notes: Practising-certificate and bar-admission verification at hire
+      - stage_order: 5
+        stage_name: Performance & Development
+        capability_id: BC-4380
+        industry_variant: Professional Services
+        notes: CPD / CPE tracking and shortfall remediation
   - name: Issue-to-Resolution
     industries: [Cross-Industry]
     stages:
@@ -492,6 +502,16 @@ value_streams:
         capability_id: BC-4220
         industry_variant: Software & Technology
         notes: Reliability action tracking to closure
+      - stage_order: 1
+        stage_name: Issue Capture (Engagement Quality)
+        capability_id: BC-4340
+        industry_variant: Professional Services
+        notes: Quality deficiencies from EQR, hot review, and cold review
+      - stage_order: 1
+        stage_name: Issue Capture (Professional Conduct)
+        capability_id: BC-4380
+        industry_variant: Professional Services
+        notes: Professional conduct breach intake
   - name: Order-to-Cash
     industries: [Cross-Industry]
     stages:
@@ -953,6 +973,31 @@ value_streams:
         stage_name: Revenue Recognition
         capability_id: BC-4250
         notes: Subscription revenue recognition under ASC 606 / IFRS 15
+      - stage_order: 3
+        stage_name: Contract & Order Capture
+        capability_id: BC-4300
+        industry_variant: Professional Services
+        notes: Engagement acceptance and engagement-letter execution
+      - stage_order: 4
+        stage_name: Order Promising & Allocation
+        capability_id: BC-4320
+        industry_variant: Professional Services
+        notes: Engagement staffing and leverage allocation
+      - stage_order: 5
+        stage_name: Production / Service Delivery
+        capability_id: BC-4310
+        industry_variant: Professional Services
+        notes: Engagement execution against work plan
+      - stage_order: 7
+        stage_name: Customer Invoicing
+        capability_id: BC-4330
+        industry_variant: Professional Services
+        notes: Pro-forma, narrative, and e-billing-compliant invoicing
+      - stage_order: 8
+        stage_name: Cash Collection & Application
+        capability_id: BC-4330
+        industry_variant: Professional Services
+        notes: Realisation, write-off, and trust-account application
   - name: Procure-to-Pay
     industries: [Cross-Industry]
     stages:
@@ -2112,6 +2157,21 @@ value_streams:
         capability_id: BC-3850
         industry_variant: Utilities
         notes: Position, exposure, and limit-utilisation monitoring
+      - stage_order: 1
+        stage_name: Risk Appetite & Framework
+        capability_id: BC-4350
+        industry_variant: Professional Services
+        notes: Independence policy and conflicts framework
+      - stage_order: 2
+        stage_name: Risk Identification
+        capability_id: BC-4350
+        industry_variant: Professional Services
+        notes: Conflict and independence threat identification
+      - stage_order: 4
+        stage_name: Treatment & Control Design
+        capability_id: BC-4350
+        industry_variant: Professional Services
+        notes: Information-barrier design and prohibited-service controls
   - name: Audit-to-Action
     industries: [Cross-Industry]
     stages:
@@ -2169,6 +2229,16 @@ value_streams:
         capability_id: BC-4290
         industry_variant: Software & Technology
         notes: Remediation of attestation findings
+      - stage_order: 3
+        stage_name: Fieldwork
+        capability_id: BC-4340
+        industry_variant: Professional Services
+        notes: External practice-inspection fieldwork response (PCAOB / FRC / ICAEW)
+      - stage_order: 5
+        stage_name: Remediation Tracking
+        capability_id: BC-4340
+        industry_variant: Professional Services
+        notes: Remediation of inspection findings and deficiency closure
   - name: Threat-to-Mitigation
     industries: [Cross-Industry]
     stages:
@@ -3544,6 +3614,26 @@ value_streams:
         stage_name: Handover to Fulfilment
         capability_id: BC-4230
         notes: Tenant provisioning handover
+      - stage_order: 1
+        stage_name: Opportunity Qualification
+        capability_id: BC-4360
+        industry_variant: Professional Services
+        notes: Pursuit qualification and pre-clearance
+      - stage_order: 1
+        stage_name: Opportunity Qualification
+        capability_id: BC-4350
+        industry_variant: Professional Services
+        notes: Independence and conflicts pre-clearance during pursuit
+      - stage_order: 5
+        stage_name: Proposal Development
+        capability_id: BC-4360
+        industry_variant: Professional Services
+        notes: Proposal and pitch authoring
+      - stage_order: 6
+        stage_name: Negotiation
+        capability_id: BC-4360
+        industry_variant: Professional Services
+        notes: Engagement-letter and fee negotiation
   - name: Lease-to-Production
     industries: [Oil & Gas]
     stages:
@@ -4499,3 +4589,97 @@ value_streams:
         stage_name: Churn or Wind-Down
         capability_id: BC-4240
         notes: Cancellation processing and service wind-down coordination
+  - name: Engagement-to-Realisation
+    industries: [Professional Services]
+    stages:
+      - stage_order: 1
+        stage_name: Engagement Acceptance
+        capability_id: BC-4300
+        notes: Client and engagement acceptance, scoping, and engagement-letter execution
+      - stage_order: 1
+        stage_name: Engagement Acceptance
+        capability_id: BC-4350
+        notes: Independence, conflicts, and integrity clearance feeding acceptance
+      - stage_order: 2
+        stage_name: Mobilisation
+        capability_id: BC-4300
+        notes: Engagement team formation, kickoff, and data-access setup
+      - stage_order: 2
+        stage_name: Mobilisation
+        capability_id: BC-4320
+        notes: Engagement staffing and leverage allocation
+      - stage_order: 3
+        stage_name: Delivery
+        capability_id: BC-4310
+        notes: Fieldwork, advisory analysis, drafting, and working-paper capture
+      - stage_order: 3
+        stage_name: Delivery
+        capability_id: BC-4320
+        notes: Utilisation tracking and bench redeployment during delivery
+      - stage_order: 3
+        stage_name: Delivery
+        capability_id: BC-4330
+        notes: Timekeeping and disbursement capture against the engagement
+      - stage_order: 4
+        stage_name: Quality Review
+        capability_id: BC-4340
+        notes: EQR, file review, and technical consultation before issuance
+      - stage_order: 5
+        stage_name: Issuance
+        capability_id: BC-4310
+        notes: Final report, opinion, or deliverable issuance to the client
+      - stage_order: 5
+        stage_name: Issuance
+        capability_id: BC-4300
+        notes: Engagement closure communication and post-issuance handover
+      - stage_order: 6
+        stage_name: Billing & Realisation
+        capability_id: BC-4330
+        notes: Invoicing, WIP write-up/down, realisation tracking, and write-off control
+      - stage_order: 7
+        stage_name: File Lock-Down & Retention
+        capability_id: BC-4310
+        notes: Engagement file assembly and post-issuance lock-down
+      - stage_order: 7
+        stage_name: File Lock-Down & Retention
+        capability_id: BC-4300
+        notes: Retention configuration and engagement-file archival
+  - name: Insight-to-Reuse
+    industries: [Professional Services]
+    stages:
+      - stage_order: 1
+        stage_name: Asset Identification
+        capability_id: BC-4310
+        notes: Engagement deliverables and working papers identified as candidate assets
+      - stage_order: 1
+        stage_name: Asset Identification
+        capability_id: BC-4370
+        notes: Reusable asset selection from completed engagements
+      - stage_order: 2
+        stage_name: Sanitisation & Redaction
+        capability_id: BC-4370
+        notes: Removal of client-confidential content before reuse
+      - stage_order: 2
+        stage_name: Sanitisation & Redaction
+        capability_id: BC-4350
+        notes: Information-barrier and confidentiality compliance during redaction
+      - stage_order: 3
+        stage_name: Curation & Versioning
+        capability_id: BC-4370
+        notes: Precedent curation and methodology versioning
+      - stage_order: 4
+        stage_name: Cataloguing
+        capability_id: BC-4370
+        notes: Asset tagging, metadata enrichment, and library catalogue placement
+      - stage_order: 4
+        stage_name: Cataloguing
+        capability_id: BC-720
+        notes: Enterprise knowledge taxonomy and search alignment
+      - stage_order: 5
+        stage_name: Distribution & Community
+        capability_id: BC-4370
+        notes: Practice-group, community-of-practice, and knowledge-champion distribution
+      - stage_order: 6
+        stage_name: Reuse & Analytics
+        capability_id: BC-4370
+        notes: Library usage analytics and reuse-impact tracking
