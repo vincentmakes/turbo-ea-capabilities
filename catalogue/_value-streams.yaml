@@ -512,6 +512,31 @@ value_streams:
         capability_id: BC-4380
         industry_variant: Professional Services
         notes: Professional conduct breach intake
+      - stage_order: 1
+        stage_name: Issue Capture (Mine Safety)
+        capability_id: BC-4430
+        industry_variant: Mining & Metals
+        notes: Geotechnical TARP, ground-control, and mine atmosphere alarms
+      - stage_order: 1
+        stage_name: Issue Capture (Tailings)
+        capability_id: BC-4460
+        industry_variant: Mining & Metals
+        notes: TSF instrumentation alarm, dam-safety, and water-exceedance events
+      - stage_order: 1
+        stage_name: Issue Capture (Process Safety)
+        capability_id: BC-4440
+        industry_variant: Mining & Metals
+        notes: Cyanide release, reagent leak, and process plant safety events
+      - stage_order: 1
+        stage_name: Issue Capture (Process Safety)
+        capability_id: BC-4450
+        industry_variant: Mining & Metals
+        notes: Smelter and refinery process safety events
+      - stage_order: 1
+        stage_name: Issue Capture (Community Grievance)
+        capability_id: BC-4500
+        industry_variant: Mining & Metals
+        notes: Operational community grievance mechanism intake
   - name: Order-to-Cash
     industries: [Cross-Industry]
     stages:
@@ -998,6 +1023,26 @@ value_streams:
         capability_id: BC-4330
         industry_variant: Professional Services
         notes: Realisation, write-off, and trust-account application
+      - stage_order: 3
+        stage_name: Contract & Order Capture
+        capability_id: BC-4480
+        industry_variant: Mining & Metals
+        notes: Spot and term concentrate and metal sales contracting
+      - stage_order: 6
+        stage_name: Outbound Logistics
+        capability_id: BC-4480
+        industry_variant: Mining & Metals
+        notes: Bulk shipment nomination and IMSBC Code compliance
+      - stage_order: 7
+        stage_name: Customer Invoicing
+        capability_id: BC-4480
+        industry_variant: Mining & Metals
+        notes: Provisional invoicing under quotational-period terms
+      - stage_order: 9
+        stage_name: Revenue Recognition
+        capability_id: BC-4480
+        industry_variant: Mining & Metals
+        notes: Final settlement after umpire assay and quotational-period pricing
   - name: Procure-to-Pay
     industries: [Cross-Industry]
     stages:
@@ -1550,6 +1595,36 @@ value_streams:
         capability_id: BC-3560
         industry_variant: Agriculture
         notes: On-farm storage and processor receival positioning
+      - stage_order: 2
+        stage_name: Supply Planning
+        capability_id: BC-4420
+        industry_variant: Mining & Metals
+        notes: Short-term mine schedule defining plant feed supply
+      - stage_order: 2
+        stage_name: Supply Planning
+        capability_id: BC-4430
+        industry_variant: Mining & Metals
+        notes: Mine production execution against schedule
+      - stage_order: 2
+        stage_name: Supply Planning
+        capability_id: BC-4440
+        industry_variant: Mining & Metals
+        notes: Concentrator throughput and recovery planning
+      - stage_order: 2
+        stage_name: Supply Planning
+        capability_id: BC-4450
+        industry_variant: Mining & Metals
+        notes: Smelter and refinery throughput planning
+      - stage_order: 4
+        stage_name: Inventory Positioning
+        capability_id: BC-4480
+        industry_variant: Mining & Metals
+        notes: Concentrate stockpile and exchange-warrant positioning
+      - stage_order: 6
+        stage_name: Inventory Health Monitoring
+        capability_id: BC-4480
+        industry_variant: Mining & Metals
+        notes: Warehouse warrant and finished metal stock health monitoring
   - name: Record-to-Report
     industries: [Cross-Industry]
     stages:
@@ -1963,6 +2038,11 @@ value_streams:
         capability_id: BC-3900
         industry_variant: Utilities
         notes: Network decommissioning, abandonment, and reinstatement planning
+      - stage_order: 7
+        stage_name: Decommissioning & Disposal
+        capability_id: BC-4470
+        industry_variant: Mining & Metals
+        notes: Mine site dismantling, asset disposal, clean-up, and post-closure stewardship
   - name: Strategy-to-Execution
     industries: [Cross-Industry]
     stages:
@@ -2172,6 +2252,21 @@ value_streams:
         capability_id: BC-4350
         industry_variant: Professional Services
         notes: Information-barrier design and prohibited-service controls
+      - stage_order: 2
+        stage_name: Risk Identification
+        capability_id: BC-4460
+        industry_variant: Mining & Metals
+        notes: Tailings and dam-safety risk identification under GISTM
+      - stage_order: 2
+        stage_name: Risk Identification
+        capability_id: BC-4500
+        industry_variant: Mining & Metals
+        notes: Human-rights and social risk identification
+      - stage_order: 5
+        stage_name: Monitoring
+        capability_id: BC-4480
+        industry_variant: Mining & Metals
+        notes: Trading book price and counterparty risk monitoring
   - name: Audit-to-Action
     industries: [Cross-Industry]
     stages:
@@ -3113,6 +3208,21 @@ value_streams:
         stage_name: Disaster Recovery
         capability_id: BC-4220
         notes: Failover orchestration and backup restoration for the SaaS service
+      - stage_order: 1
+        stage_name: Continuity Planning
+        capability_id: BC-4460
+        industry_variant: Mining & Metals
+        notes: Tailings emergency preparedness plans
+      - stage_order: 3
+        stage_name: Detection & Activation
+        capability_id: BC-4460
+        industry_variant: Mining & Metals
+        notes: Tailings facility instrumentation triggers
+      - stage_order: 4
+        stage_name: Crisis Response
+        capability_id: BC-4460
+        industry_variant: Mining & Metals
+        notes: Dam-safety emergency response coordination
   - name: ESG-to-Disclosure
     industries: [Cross-Industry]
     stages:
@@ -3241,6 +3351,61 @@ value_streams:
         capability_id: BC-3920
         industry_variant: Utilities
         notes: Utility regulator ESG, performance, and price-control disclosures
+      - stage_order: 1
+        stage_name: ESG Strategy & Materiality
+        capability_id: BC-4500
+        industry_variant: Mining & Metals
+        notes: Social materiality input to mining ESG strategy
+      - stage_order: 2
+        stage_name: Data Collection
+        capability_id: BC-4460
+        industry_variant: Mining & Metals
+        notes: Water, tailings, and mine-waste indicator data
+      - stage_order: 2
+        stage_name: Data Collection
+        capability_id: BC-4450
+        industry_variant: Mining & Metals
+        notes: Smelter SO2, particulate, and acid-plant emissions data
+      - stage_order: 2
+        stage_name: Data Collection
+        capability_id: BC-4500
+        industry_variant: Mining & Metals
+        notes: Community investment, local content, and social KPI data
+      - stage_order: 4
+        stage_name: Reporting & Disclosure
+        capability_id: BC-4400
+        industry_variant: Mining & Metals
+        notes: Public exploration results disclosure under JORC, NI 43-101, and SAMREC
+      - stage_order: 4
+        stage_name: Reporting & Disclosure
+        capability_id: BC-4410
+        industry_variant: Mining & Metals
+        notes: Annual public mineral resources and ore reserves statement
+      - stage_order: 4
+        stage_name: Reporting & Disclosure
+        capability_id: BC-4460
+        industry_variant: Mining & Metals
+        notes: GISTM conformance disclosure
+      - stage_order: 4
+        stage_name: Reporting & Disclosure
+        capability_id: BC-4470
+        industry_variant: Mining & Metals
+        notes: Closure provisions and post-closure stewardship disclosure
+      - stage_order: 4
+        stage_name: Reporting & Disclosure
+        capability_id: BC-4490
+        industry_variant: Mining & Metals
+        notes: Payments-to-governments and EITI disclosure
+      - stage_order: 4
+        stage_name: Reporting & Disclosure
+        capability_id: BC-4500
+        industry_variant: Mining & Metals
+        notes: Social performance, community, and human-rights disclosure
+      - stage_order: 5
+        stage_name: Stakeholder Engagement
+        capability_id: BC-4500
+        industry_variant: Mining & Metals
+        notes: Investor and community engagement on social performance
   - name: Concept-to-Manufacture
     industries:
       - Manufacturing & Industrial
@@ -3635,7 +3800,7 @@ value_streams:
         industry_variant: Professional Services
         notes: Engagement-letter and fee negotiation
   - name: Lease-to-Production
-    industries: [Oil & Gas]
+    industries: [Oil & Gas, Mining & Metals]
     stages:
       - stage_order: 1
         stage_name: Acreage Acquisition
@@ -3693,6 +3858,46 @@ value_streams:
         stage_name: Operations Handover
         capability_id: BC-3010
         notes: Production forecasting handover and reservoir surveillance
+      - stage_order: 1
+        stage_name: Acreage Acquisition
+        capability_id: BC-4490
+        industry_variant: Mining & Metals
+        notes: Mineral tenement application, lease, and acquisition due diligence
+      - stage_order: 2
+        stage_name: Prospect Maturation
+        capability_id: BC-4400
+        industry_variant: Mining & Metals
+        notes: Geoscientific surveys, target generation, and prospect ranking
+      - stage_order: 3
+        stage_name: Exploration Drilling
+        capability_id: BC-4400
+        industry_variant: Mining & Metals
+        notes: Reverse-circulation and diamond core drilling, sample assay, discovery reporting
+      - stage_order: 4
+        stage_name: Reserves Maturation
+        capability_id: BC-4410
+        industry_variant: Mining & Metals
+        notes: Geological modelling, resource estimation, reserve classification
+      - stage_order: 5
+        stage_name: Field Development Sanction
+        capability_id: BC-4420
+        industry_variant: Mining & Metals
+        notes: Mine design, life-of-mine planning, and capital project sequencing
+      - stage_order: 7
+        stage_name: First Production
+        capability_id: BC-4430
+        industry_variant: Mining & Metals
+        notes: Production ramp-up across open-pit and underground operations
+      - stage_order: 8
+        stage_name: Operations Handover
+        capability_id: BC-4430
+        industry_variant: Mining & Metals
+        notes: Handover to steady-state mining operations
+      - stage_order: 8
+        stage_name: Operations Handover
+        capability_id: BC-4410
+        industry_variant: Mining & Metals
+        notes: Resource and reserve reconciliation handover
   - name: Bill-to-Statute
     industries: [Public Sector & Government]
     stages:
