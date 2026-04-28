@@ -468,6 +468,20 @@ export default function CatalogueBrowser({ data, valueStreams }: Props) {
   const selectionCount = selected.size;
   const detail = detailId ? byId.get(detailId) ?? null : null;
 
+  // Group root L1s by their primary industry for grid section headers.
+  const groupedRoots = new Map<string, FlatCap[]>();
+  for (const root of roots) {
+    const primaryIndustry = splitIndustry(root.industry)[0] ?? "Other";
+    const bucket = groupedRoots.get(primaryIndustry) ?? [];
+    bucket.push(root);
+    groupedRoots.set(primaryIndustry, bucket);
+  }
+  const groupIndustryKeys = Array.from(groupedRoots.keys());
+  const orderedGroupIndustries = [
+    ...groupIndustryKeys.filter((n) => n === "Cross-Industry"),
+    ...groupIndustryKeys.filter((n) => n !== "Cross-Industry").sort(),
+  ];
+
   /**
    * Stream-filter dropdown groups, narrowed to the active industry filter.
    * Cross-Industry streams always appear (they apply everywhere). When the
@@ -491,100 +505,102 @@ export default function CatalogueBrowser({ data, valueStreams }: Props) {
 
   return (
     <div class="catalogue-page">
-      <FilterBar
-        query={query}
-        onQuery={setQuery}
-        allLevels={allLevels}
-        levels={levels}
-        onLevels={setLevels}
-        allIndustries={allIndustries}
-        industries={industries}
-        onIndustries={setIndustries}
-        valueStreamNames={valueStreamNames}
-        valueStreamGroups={valueStreamGroups}
-        streams={streams}
-        onStreams={setStreams}
-        onReset={resetFilters}
-      />
+      <div class="sticky-controls">
+        <FilterBar
+          query={query}
+          onQuery={setQuery}
+          allLevels={allLevels}
+          levels={levels}
+          onLevels={setLevels}
+          allIndustries={allIndustries}
+          industries={industries}
+          onIndustries={setIndustries}
+          valueStreamNames={valueStreamNames}
+          valueStreamGroups={valueStreamGroups}
+          streams={streams}
+          onStreams={setStreams}
+          onReset={resetFilters}
+        />
 
-      <div class="action-bar">
-        <div class="action-bar-info">
-          <strong>{visible.length}</strong> match
-          {visible.length !== data.length && (
-            <>
-              {" · "}
-              <strong>{data.length}</strong> total
-            </>
-          )}
-          {selectionCount > 0 && (
-            <>
-              {" · "}
-              <strong>{selectionCount}</strong> selected
-            </>
-          )}
-        </div>
-        <div class="action-bar-buttons">
-          <div class="level-stepper" role="group" aria-label="Expand by level">
-            <button
-              type="button"
-              class="level-stepper-btn"
-              onClick={collapseOneLevel}
-              disabled={currentLevel <= 0}
-              aria-label="Collapse one level"
-              title="Collapse one level"
-            >
-              <span class="material-symbols-outlined" aria-hidden="true">remove</span>
+        <div class="action-bar">
+          <div class="action-bar-info">
+            <strong>{visible.length}</strong> match
+            {visible.length !== data.length && (
+              <>
+                {" · "}
+                <strong>{data.length}</strong> total
+              </>
+            )}
+            {selectionCount > 0 && (
+              <>
+                {" · "}
+                <strong>{selectionCount}</strong> selected
+              </>
+            )}
+          </div>
+          <div class="action-bar-buttons">
+            <div class="level-stepper" role="group" aria-label="Expand by level">
+              <button
+                type="button"
+                class="level-stepper-btn"
+                onClick={collapseOneLevel}
+                disabled={currentLevel <= 0}
+                aria-label="Collapse one level"
+                title="Collapse one level"
+              >
+                <span class="material-symbols-outlined" aria-hidden="true">remove</span>
+              </button>
+              <span class="level-stepper-label" aria-live="polite">
+                <span class="level-stepper-label-full">Level </span>
+                {currentLevel}
+                <span class="level-stepper-label-sep"> / </span>
+                {stepperMax}
+              </span>
+              <button
+                type="button"
+                class="level-stepper-btn"
+                onClick={expandOneLevel}
+                disabled={currentLevel >= stepperMax}
+                aria-label="Expand one level"
+                title="Expand one level"
+              >
+                <span class="material-symbols-outlined" aria-hidden="true">add</span>
+              </button>
+            </div>
+            <button class="btn btn-ghost" type="button" onClick={expandAll}>
+              Expand all
             </button>
-            <span class="level-stepper-label" aria-live="polite">
-              <span class="level-stepper-label-full">Level </span>
-              {currentLevel}
-              <span class="level-stepper-label-sep"> / </span>
-              {stepperMax}
-            </span>
+            <button class="btn btn-ghost" type="button" onClick={collapseAll}>
+              Collapse all
+            </button>
+            <button class="btn btn-ghost" type="button" onClick={selectAllVisible}>
+              Select visible
+            </button>
             <button
+              class="btn btn-ghost"
               type="button"
-              class="level-stepper-btn"
-              onClick={expandOneLevel}
-              disabled={currentLevel >= stepperMax}
-              aria-label="Expand one level"
-              title="Expand one level"
+              onClick={clearSelection}
+              disabled={selectionCount === 0}
             >
-              <span class="material-symbols-outlined" aria-hidden="true">add</span>
+              Clear selection
+            </button>
+            <button
+              class="btn"
+              type="button"
+              onClick={() => exportSelection("csv")}
+              disabled={selectionCount === 0}
+            >
+              Export CSV{selectionCount > 0 && ` (${selectionCount})`}
+            </button>
+            <button
+              class="btn btn-magenta"
+              type="button"
+              onClick={() => exportSelection("json")}
+              disabled={selectionCount === 0}
+            >
+              Export JSON{selectionCount > 0 && ` (${selectionCount})`}
             </button>
           </div>
-          <button class="btn btn-ghost" type="button" onClick={expandAll}>
-            Expand all
-          </button>
-          <button class="btn btn-ghost" type="button" onClick={collapseAll}>
-            Collapse all
-          </button>
-          <button class="btn btn-ghost" type="button" onClick={selectAllVisible}>
-            Select visible
-          </button>
-          <button
-            class="btn btn-ghost"
-            type="button"
-            onClick={clearSelection}
-            disabled={selectionCount === 0}
-          >
-            Clear selection
-          </button>
-          <button
-            class="btn"
-            type="button"
-            onClick={() => exportSelection("csv")}
-            disabled={selectionCount === 0}
-          >
-            Export CSV{selectionCount > 0 && ` (${selectionCount})`}
-          </button>
-          <button
-            class="btn btn-magenta"
-            type="button"
-            onClick={() => exportSelection("json")}
-            disabled={selectionCount === 0}
-          >
-            Export JSON{selectionCount > 0 && ` (${selectionCount})`}
-          </button>
         </div>
       </div>
 
@@ -594,26 +610,33 @@ export default function CatalogueBrowser({ data, valueStreams }: Props) {
           <p>Adjust your filters or search query.</p>
         </div>
       ) : (
-        <div class="l1-grid">
-          {roots.map((r) => (
-            <L1Card
-              key={r.id}
-              node={r}
-              byParent={byParent}
-              visible={visibleSet}
-              expanded={expanded}
-              selected={selected}
-              descendantsOf={descendantsOf}
-              branchLevel={l1CurrentLevels.get(r.id) ?? 0}
-              branchMax={stepperMax}
-              onToggleExpand={toggleExpand}
-              onToggleSelect={toggleSelect}
-              onOpenDetail={setDetailId}
-              onExpandBranch={expandL1Branch}
-              onCollapseBranch={collapseL1Branch}
-            />
+        <>
+          {orderedGroupIndustries.map((industry) => (
+            <section class="industry-group" key={industry}>
+              <h2 class="industry-group-title">{industry}</h2>
+              <div class="l1-grid">
+                {(groupedRoots.get(industry) ?? []).map((r) => (
+                  <L1Card
+                    key={r.id}
+                    node={r}
+                    byParent={byParent}
+                    visible={visibleSet}
+                    expanded={expanded}
+                    selected={selected}
+                    descendantsOf={descendantsOf}
+                    branchLevel={l1CurrentLevels.get(r.id) ?? 0}
+                    branchMax={stepperMax}
+                    onToggleExpand={toggleExpand}
+                    onToggleSelect={toggleSelect}
+                    onOpenDetail={setDetailId}
+                    onExpandBranch={expandL1Branch}
+                    onCollapseBranch={collapseL1Branch}
+                  />
+                ))}
+              </div>
+            </section>
           ))}
-        </div>
+        </>
       )}
 
       {detail && (

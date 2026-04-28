@@ -20,8 +20,13 @@ turbo-ea-capabilities/
 ├── catalogue/              # YAML source of truth (one file per L1)
 │   ├── _index.yaml
 │   ├── _value-streams.yaml
-│   └── L1-*.yaml
+│   ├── L1-*.yaml
+│   └── i18n/               # Translation sidecars (one per locale × L1)
+│       └── <bcp47>/
+│           └── L1-*.yaml
 ├── schema/                 # JSON Schema 2020-12 for the YAML shape
+│   ├── capability.schema.json
+│   └── i18n.schema.json    # Schema for translation sidecar files
 ├── scripts/                # lint, build_api, build_pkg, cli helpers
 ├── packages/py/            # Python package (turbo_ea_capabilities)
 ├── site/                   # Astro static site for browse UI + JSON API
@@ -66,7 +71,7 @@ All editing rules — what's a capability, how to name it, when to deprecate —
 
 ## AI-assisted authoring with Claude Code
 
-Two skills under [`.claude/skills/`](.claude/skills/) help you draft governance-conformant capabilities and value-stream mappings without writing YAML by hand. Both skills enforce the rules in [`business-capability-governance-model.md`](business-capability-governance-model.md) and validate the result with `npm run lint` before suggesting a commit.
+Three skills under [`.claude/skills/`](.claude/skills/) help you draft governance-conformant capabilities, value-stream mappings, and translations without writing YAML by hand. All skills enforce the rules in [`business-capability-governance-model.md`](business-capability-governance-model.md) and validate the result with `npm run lint` before suggesting a commit.
 
 > **Names, not IDs.** You always refer to capabilities by their **name** (e.g. *"Manufacturing Operations Management"*, *"Human Capital Management"*). The skills resolve names to `BC-…` identifiers internally and only show the ID back as a confirmation. You never need to look up or type an ID.
 
@@ -163,6 +168,33 @@ The skill will:
 7. Wait for **a single approval of the whole batch** — accept "approve", "approve except <X>", or "redo with <change>".
 8. Edit `_value-streams.yaml` preserving formatting and `stage_order`; run `npm run lint`.
 
+### Scenario 5 — Translate the catalogue into another language
+
+Generate or refresh sidecar translation files under `catalogue/i18n/<locale>/`. The English source files (`catalogue/L1-*.yaml`) are never modified — translations are purely additive. Locale-neutral fields (`id`, `level`, `industry`, `references`, `deprecated`, `successor_id`, `metadata`) are never duplicated in sidecars; they are inherited from the source at build time.
+
+**Whole-Language mode** — translates every L1 in the catalogue in one go:
+
+```
+/translate-language French
+/translate-language "Brazilian Portuguese"
+/translate-language German
+```
+
+**Single-L1 mode** — translates or refreshes exactly one L1:
+
+```
+/translate-language "Human Capital Management" --language French
+```
+
+The skill will:
+
+1. Resolve the language name to a BCP-47 tag (French → `fr`, Brazilian Portuguese → `pt-BR`, Simplified Chinese → `zh-Hans`, …) and display it once for confirmation.
+2. Scan `catalogue/i18n/` for existing sidecars — defaulting to **skip-existing** strategy so prior manual edits are preserved; supports `--fill-gaps` and `--overwrite` modes.
+3. Translate only the whitelisted fields: `name`, `description`, `aliases`, `in_scope`, `out_of_scope`. All other fields stay in the English source.
+4. Maintain a consistent cross-L1 glossary so the same source term always maps to the same target-language equivalent throughout the catalogue.
+5. Write sidecar YAML to `catalogue/i18n/<locale>/L1-<slug>.yaml`, mirroring the English source filename exactly so per-L1 CODEOWNERS apply transitively.
+6. Run `npm run lint` to validate all sidecars against [`schema/i18n.schema.json`](schema/i18n.schema.json).
+
 ### After the skill runs
 
 The skills do not commit or push for you. After lint passes:
@@ -191,8 +223,10 @@ After `npm run build`, the following endpoints are available under `dist/api/` (
 | `GET /api/tree.json` | Nested tree (one entry per L1) |
 | `GET /api/by-l1/<slug>.json` | Single L1 nested subtree |
 | `GET /api/capability/<id>.json` | One node + its direct children |
+| `GET /api/locales.json` | List of available translation locales |
+| `GET /api/i18n/<locale>.json` | All translated strings for a locale |
 
-All responses are static, immutable per build, and cacheable by Cloudflare's edge.
+All responses are static, immutable per build, and cacheable by Cloudflare's edge. The English endpoints (`capabilities.json`, `tree.json`, etc.) are unaffected by translations — locale data is additive and ships separately under `/api/i18n/`.
 
 ## Licence
 
