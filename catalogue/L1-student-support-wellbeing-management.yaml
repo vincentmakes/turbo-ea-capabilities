@@ -1,0 +1,226 @@
+# Student Support & Wellbeing Management
+id: BC-4770
+name: "Student Support & Wellbeing Management"
+level: 1
+industry: Education
+description: |
+  Non-instructional services that support student success and wellbeing,
+  including academic advising, counselling, accessibility and special-
+  education accommodations, career services, and pastoral care.
+references:
+  - https://sites.ed.gov/idea/
+  - https://www.w3.org/WAI/standards-guidelines/wcag/
+  - https://www2.ed.gov/about/offices/list/ocr/index.html
+children:
+  - id: BC-4770.10
+    name: Academic Advising
+    level: 2
+    industry: Education
+    description: |
+      Advising of students on programme planning, course selection, and
+      academic progression including support for at-risk learners.
+    in_scope:
+      - Programme planning advising
+      - At-risk student advising
+      - Academic probation support
+    out_of_scope:
+      - Career advising (covered under Career Services & Placement)
+      - Mental-health counselling (covered under Counselling & Mental Health Services)
+    children:
+      - id: BC-4770.10.10
+        name: Programme Planning Advising
+        level: 3
+        industry: Education
+        description: |
+          Advising on programme structure, course selection, and graduation pathways.
+        children: []
+      - id: BC-4770.10.20
+        name: At-Risk Student Advising
+        level: 3
+        industry: Education
+        description: |
+          Targeted advising for students flagged as at-risk academically.
+        children: []
+      - id: BC-4770.10.30
+        name: Academic Probation Support
+        level: 3
+        industry: Education
+        description: |
+          Structured support for students on academic probation.
+        children: []
+  - id: BC-4770.20
+    name: "Counselling & Mental Health Services"
+    level: 2
+    industry: Education
+    description: |
+      Provision of mental-health assessment, counselling, and crisis-response
+      services to students.
+    in_scope:
+      - Mental-health assessment and triage
+      - Counselling session delivery
+      - Crisis response coordination
+    out_of_scope:
+      - Clinical medical care beyond counselling (covered under Healthcare Provider capabilities or referrals)
+    children:
+      - id: BC-4770.20.10
+        name: "Mental Health Assessment & Triage"
+        level: 3
+        industry: Education
+        description: |
+          Initial assessment and triage of student mental-health needs.
+        children: []
+      - id: BC-4770.20.20
+        name: Counselling Session Delivery
+        level: 3
+        industry: Education
+        description: |
+          Delivery of individual and group counselling sessions.
+        children: []
+      - id: BC-4770.20.30
+        name: Crisis Response Coordination
+        level: 3
+        industry: Education
+        description: |
+          Coordination of crisis response and external referrals.
+        children: []
+  - id: BC-4770.30
+    name: "Disability & Accommodation Services"
+    level: 2
+    industry: Education
+    description: |
+      Determination and delivery of reasonable accommodations for students
+      with disabilities and provision of assistive technology.
+    in_scope:
+      - Disability documentation review
+      - Reasonable accommodation provision
+      - Assistive technology support
+    out_of_scope:
+      - Special-education statutory programmes for K-12 (covered under Special Education Services)
+      - Civil-rights compliance reporting (covered under Education Compliance & Regulatory Reporting Management)
+    children:
+      - id: BC-4770.30.10
+        name: Disability Documentation Review
+        level: 3
+        industry: Education
+        description: |
+          Review of disability documentation supporting accommodation requests.
+        children: []
+      - id: BC-4770.30.20
+        name: Reasonable Accommodation Provision
+        level: 3
+        industry: Education
+        description: |
+          Provision of academic and assessment accommodations.
+        children: []
+      - id: BC-4770.30.30
+        name: Assistive Technology Support
+        level: 3
+        industry: Education
+        description: |
+          Provision and support of assistive technology to students.
+        children: []
+  - id: BC-4770.40
+    name: Special Education Services
+    level: 2
+    industry: Education
+    description: |
+      Statutory special-education services delivered primarily in K-12
+      contexts, including individualised education plans and related services.
+    in_scope:
+      - Individualised education programme (IEP) development
+      - Specialised instruction delivery
+      - Related services coordination (e.g. speech, OT, PT)
+    out_of_scope:
+      - Higher-education accommodations (covered under Disability & Accommodation Services)
+    children:
+      - id: BC-4770.40.10
+        name: Individualised Education Programme Development
+        level: 3
+        industry: Education
+        description: |
+          Development of IEPs and equivalent individualised plans.
+        children: []
+      - id: BC-4770.40.20
+        name: Specialised Instruction Delivery
+        level: 3
+        industry: Education
+        description: |
+          Delivery of specialised instruction to students with identified needs.
+        children: []
+      - id: BC-4770.40.30
+        name: Related Services Coordination
+        level: 3
+        industry: Education
+        description: |
+          Coordination of related services such as speech, occupational, and physical therapy.
+        children: []
+  - id: BC-4770.50
+    name: "Career Services & Placement"
+    level: 2
+    industry: Education
+    description: |
+      Career advising, internship and placement brokerage, and employer
+      relationship management supporting student transitions to work.
+    in_scope:
+      - Career counselling
+      - Internship and placement brokerage
+      - Employer relationships and on-campus recruiting
+    out_of_scope:
+      - Academic-credit-bearing placement supervision (covered under Teaching & Learning Operations Management)
+    children:
+      - id: BC-4770.50.10
+        name: Career Counselling
+        level: 3
+        industry: Education
+        description: |
+          Career counselling and planning for students and recent graduates.
+        children: []
+      - id: BC-4770.50.20
+        name: "Internship & Placement Brokerage"
+        level: 3
+        industry: Education
+        description: |
+          Brokerage of internships and work-experience opportunities.
+        children: []
+      - id: BC-4770.50.30
+        name: "Employer Relationship & On-Campus Recruiting"
+        level: 3
+        industry: Education
+        description: |
+          Management of employer relationships and on-campus recruiting events.
+        children: []
+  - id: BC-4770.60
+    name: "Student Wellbeing & Pastoral Care"
+    level: 2
+    industry: Education
+    description: |
+      Pastoral care, mentoring, conduct support, and wellbeing programmes
+      operated by the institution.
+    in_scope:
+      - Pastoral care and mentoring
+      - Student conduct and discipline support
+      - Wellbeing programme operations
+    out_of_scope:
+      - Civil-rights enforcement actions (covered under Education Compliance & Regulatory Reporting Management)
+    children:
+      - id: BC-4770.60.10
+        name: "Pastoral Care & Mentoring"
+        level: 3
+        industry: Education
+        description: |
+          Pastoral care and mentoring of students by tutors and dedicated staff.
+        children: []
+      - id: BC-4770.60.20
+        name: "Student Conduct & Discipline Support"
+        level: 3
+        industry: Education
+        description: |
+          Support for student conduct and disciplinary processes.
+        children: []
+      - id: BC-4770.60.30
+        name: Wellbeing Programme Operations
+        level: 3
+        industry: Education
+        description: |
+          Operation of institutional wellbeing programmes and campaigns.
+        children: []

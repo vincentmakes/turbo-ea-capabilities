@@ -1,0 +1,224 @@
+# Assessment & Examinations Management
+id: BC-4740
+name: "Assessment & Examinations Management"
+level: 1
+industry: Education
+description: |
+  Design, administration, marking, moderation, and awarding of assessments
+  and examinations that evidence student learning, including academic
+  integrity oversight.
+references:
+  - https://www.imsglobal.org/spec/qti
+  - https://www.imsglobal.org/spec/case
+  - https://www.imsglobal.org/spec/caliper
+children:
+  - id: BC-4740.10
+    name: "Assessment Design & Item Banking"
+    level: 2
+    industry: Education
+    description: |
+      Design of assessment instruments and maintenance of calibrated item
+      banks underpinning consistent, reliable assessment.
+    in_scope:
+      - Assessment blueprint definition
+      - Item authoring and calibration
+      - Item-bank maintenance
+    out_of_scope:
+      - Course-level syllabus design (covered under Curriculum & Programme Management)
+    children:
+      - id: BC-4740.10.10
+        name: Assessment Blueprint Definition
+        level: 3
+        industry: Education
+        description: |
+          Definition of assessment blueprints and weighting against learning outcomes.
+        children: []
+      - id: BC-4740.10.20
+        name: "Item Authoring & Calibration"
+        level: 3
+        industry: Education
+        description: |
+          Authoring and statistical calibration of assessment items.
+        children: []
+      - id: BC-4740.10.30
+        name: Item Bank Maintenance
+        level: 3
+        industry: Education
+        description: |
+          Maintenance of secure item banks across versions and exposure cycles.
+        children: []
+  - id: BC-4740.20
+    name: Examination Operations
+    level: 2
+    industry: Education
+    description: |
+      Operational delivery of in-person and online examinations, including
+      scheduling, invigilation, and remote-proctoring services.
+    in_scope:
+      - Examination scheduling
+      - Examination venue and invigilation
+      - Online and remote proctoring
+    out_of_scope:
+      - Day-to-day classroom assessment (covered under Teaching & Learning Operations Management)
+    children:
+      - id: BC-4740.20.10
+        name: Examination Scheduling
+        level: 3
+        industry: Education
+        description: |
+          Scheduling of examinations across cohorts, venues, and modalities.
+        children: []
+      - id: BC-4740.20.20
+        name: "Examination Venue & Invigilation"
+        level: 3
+        industry: Education
+        description: |
+          Venue arrangement and invigilation of in-person examinations.
+        children: []
+      - id: BC-4740.20.30
+        name: "Online & Remote Proctoring"
+        level: 3
+        industry: Education
+        description: |
+          Operation of online and remote proctoring for online examinations.
+        children: []
+  - id: BC-4740.30
+    name: "Marking & Grading Operations"
+    level: 2
+    industry: Education
+    description: |
+      Marking of student work and computation of grades, including double and
+      anonymous marking, and grade-aggregation rules.
+    in_scope:
+      - Marking-scheme application
+      - Double and anonymous marking
+      - Grade aggregation and calculation
+    out_of_scope:
+      - Authoritative grade-record maintenance (covered under Student Enrolment & Records Management)
+    children:
+      - id: BC-4740.30.10
+        name: Marking Scheme Application
+        level: 3
+        industry: Education
+        description: |
+          Application of marking schemes and rubrics to student work.
+        children: []
+      - id: BC-4740.30.20
+        name: "Double & Anonymous Marking"
+        level: 3
+        industry: Education
+        description: |
+          Operation of double-marked and anonymous marking workflows.
+        children: []
+      - id: BC-4740.30.30
+        name: "Grade Aggregation & Calculation"
+        level: 3
+        industry: Education
+        description: |
+          Aggregation and calculation of component marks into final grades.
+        children: []
+  - id: BC-4740.40
+    name: "Moderation & Examination Boards"
+    level: 2
+    industry: Education
+    description: |
+      Internal moderation, external examiner involvement, and decision-making
+      by examination boards on awards and progression.
+    in_scope:
+      - Internal moderation
+      - External examiner coordination
+      - Examination board decision-making
+    out_of_scope:
+      - Programme-level review (covered under Academic Quality & Accreditation Management)
+    children:
+      - id: BC-4740.40.10
+        name: Internal Moderation
+        level: 3
+        industry: Education
+        description: |
+          Internal moderation of marking decisions across markers and cohorts.
+        children: []
+      - id: BC-4740.40.20
+        name: External Examiner Coordination
+        level: 3
+        industry: Education
+        description: |
+          Coordination of external examiners and their reporting cycles.
+        children: []
+      - id: BC-4740.40.30
+        name: Examination Board Decision-Making
+        level: 3
+        industry: Education
+        description: |
+          Decision-making by examination boards on results, progression, and awards.
+        children: []
+  - id: BC-4740.50
+    name: "Award & Qualification Issuance"
+    level: 2
+    industry: Education
+    description: |
+      Publication of results and issuance of awards and qualifications,
+      including handling of result appeals.
+    in_scope:
+      - Result publication
+      - Certificate and diploma issuance
+      - Result appeals handling
+    out_of_scope:
+      - Verifiable digital credentials (covered under Student Enrolment & Records Management)
+    children:
+      - id: BC-4740.50.10
+        name: Result Publication
+        level: 3
+        industry: Education
+        description: |
+          Publication of provisional and ratified results to students.
+        children: []
+      - id: BC-4740.50.20
+        name: "Certificate & Diploma Issuance"
+        level: 3
+        industry: Education
+        description: |
+          Issuance of certificates and diplomas evidencing awards.
+        children: []
+      - id: BC-4740.50.30
+        name: Result Appeals Handling
+        level: 3
+        industry: Education
+        description: |
+          Handling of student appeals against assessment outcomes.
+        children: []
+  - id: BC-4740.60
+    name: Academic Integrity Management
+    level: 2
+    industry: Education
+    description: |
+      Detection, investigation, and remediation of academic misconduct,
+      including plagiarism and contract cheating.
+    in_scope:
+      - Plagiarism detection
+      - Misconduct investigation
+      - Sanction and remediation
+    out_of_scope:
+      - Research misconduct (covered under Research & Scholarship Management)
+    children:
+      - id: BC-4740.60.10
+        name: Plagiarism Detection
+        level: 3
+        industry: Education
+        description: |
+          Detection of plagiarism and contract cheating in submitted work.
+        children: []
+      - id: BC-4740.60.20
+        name: Misconduct Investigation
+        level: 3
+        industry: Education
+        description: |
+          Investigation of suspected academic-misconduct cases.
+        children: []
+      - id: BC-4740.60.30
+        name: "Sanction & Remediation"
+        level: 3
+        industry: Education
+        description: |
+          Application of sanctions and remediation outcomes for confirmed misconduct.
+        children: []

@@ -1,0 +1,225 @@
+# Educational Content & Learning Resource Management
+id: BC-4790
+name: "Educational Content & Learning Resource Management"
+level: 1
+industry: Education
+description: |
+  Authoring, cataloguing, licensing, and delivery of educational content and
+  learning resources used in teaching, including courseware, digital learning
+  objects, open educational resources, library collections, and textbooks.
+references:
+  - https://www.imsglobal.org/spec/ccs
+  - https://adlnet.gov/projects/scorm/
+  - https://creativecommons.org/about/cclicenses/
+  - https://www.imsglobal.org/spec/case
+children:
+  - id: BC-4790.10
+    name: "Courseware Authoring & Production"
+    level: 2
+    industry: Education
+    description: |
+      Instructional design and production of courseware, including multimedia
+      content and course-pack compilation.
+    in_scope:
+      - Instructional design
+      - Multimedia content production
+      - Course-pack compilation
+    out_of_scope:
+      - Teaching delivery (covered under Teaching & Learning Operations Management)
+    children:
+      - id: BC-4790.10.10
+        name: Instructional Design
+        level: 3
+        industry: Education
+        description: |
+          Instructional design of courses, modules, and learning experiences.
+        children: []
+      - id: BC-4790.10.20
+        name: Multimedia Content Production
+        level: 3
+        industry: Education
+        description: |
+          Production of video, audio, and interactive multimedia learning content.
+        children: []
+      - id: BC-4790.10.30
+        name: Course Pack Compilation
+        level: 3
+        industry: Education
+        description: |
+          Compilation of course packs and learning bundles for delivery.
+        children: []
+  - id: BC-4790.20
+    name: Digital Learning Object Catalogue
+    level: 2
+    industry: Education
+    description: |
+      Cataloguing, versioning, and reuse of digital learning objects across
+      programmes and modalities.
+    in_scope:
+      - Learning object cataloguing and metadata
+      - Learning object versioning
+      - Reusable object discovery and reuse
+    out_of_scope:
+      - LMS operational delivery (covered under Teaching & Learning Operations Management)
+    children:
+      - id: BC-4790.20.10
+        name: "Learning Object Cataloguing & Metadata"
+        level: 3
+        industry: Education
+        description: |
+          Cataloguing of learning objects and metadata against interoperability standards.
+        children: []
+      - id: BC-4790.20.20
+        name: Learning Object Versioning
+        level: 3
+        industry: Education
+        description: |
+          Versioning and lifecycle management of learning objects.
+        children: []
+      - id: BC-4790.20.30
+        name: "Reusable Object Discovery & Reuse"
+        level: 3
+        industry: Education
+        description: |
+          Discovery and reuse of learning objects across courses and disciplines.
+        children: []
+  - id: BC-4790.30
+    name: Open Educational Resource Management
+    level: 2
+    industry: Education
+    description: |
+      Sourcing, licensing, and contribution of open educational resources
+      (OER) used in teaching.
+    in_scope:
+      - OER sourcing and curation
+      - OER licensing compliance
+      - OER contribution and sharing
+    out_of_scope:
+      - Commercial textbook procurement (covered under Textbook & Course Material Procurement)
+    children:
+      - id: BC-4790.30.10
+        name: OER Sourcing and Curation
+        level: 3
+        industry: Education
+        description: |
+          Sourcing and curation of open educational resources for institutional use.
+        children: []
+      - id: BC-4790.30.20
+        name: OER Licensing Compliance
+        level: 3
+        industry: Education
+        description: |
+          Compliance with OER licences (e.g. Creative Commons) on use and reuse.
+        children: []
+      - id: BC-4790.30.30
+        name: "OER Contribution & Sharing"
+        level: 3
+        industry: Education
+        description: |
+          Contribution of institution-authored content back to the OER ecosystem.
+        children: []
+  - id: BC-4790.40
+    name: "Library & Information Resource Operations"
+    level: 2
+    industry: Education
+    description: |
+      Library collection development, reading-list management, and
+      information-literacy support of teaching and research.
+    in_scope:
+      - Collection development
+      - Reading-list and reserve management
+      - Information-literacy support
+    out_of_scope:
+      - Public library operations not part of educational delivery
+    children:
+      - id: BC-4790.40.10
+        name: Collection Development
+        level: 3
+        industry: Education
+        description: |
+          Development of library print and electronic collections.
+        children: []
+      - id: BC-4790.40.20
+        name: "Reading List & Reserve Management"
+        level: 3
+        industry: Education
+        description: |
+          Management of course reading lists and reserve collections.
+        children: []
+      - id: BC-4790.40.30
+        name: Information Literacy Support
+        level: 3
+        industry: Education
+        description: |
+          Support and instruction in information literacy and research skills.
+        children: []
+  - id: BC-4790.50
+    name: "Content Licensing & Rights Management"
+    level: 2
+    industry: Education
+    description: |
+      Licensing, copyright clearance, and educational-exception management
+      for use of third-party content in teaching.
+    in_scope:
+      - Educational content licensing
+      - Copyright clearance
+      - Fair use and educational-exception management
+    out_of_scope:
+      - Institutional intellectual property (covered under Cross-Industry Intellectual Property Management)
+    children:
+      - id: BC-4790.50.10
+        name: Educational Content Licensing
+        level: 3
+        industry: Education
+        description: |
+          Licensing of third-party content for educational use.
+        children: []
+      - id: BC-4790.50.20
+        name: Copyright Clearance
+        level: 3
+        industry: Education
+        description: |
+          Clearance of copyright for content used in teaching and assessment.
+        children: []
+      - id: BC-4790.50.30
+        name: Fair Use and Educational Exception Management
+        level: 3
+        industry: Education
+        description: |
+          Management of fair-use, fair-dealing, and educational copyright exceptions.
+        children: []
+  - id: BC-4790.60
+    name: "Textbook & Course Material Procurement"
+    level: 2
+    industry: Education
+    description: |
+      Specification and procurement of textbooks and course materials,
+      including affordable-materials programmes.
+    in_scope:
+      - Required reading specification
+      - Textbook procurement
+      - Affordable materials programmes (e.g. inclusive access)
+    out_of_scope:
+      - Generic procurement (covered under Cross-Industry Procurement Management)
+    children:
+      - id: BC-4790.60.10
+        name: Required Reading Specification
+        level: 3
+        industry: Education
+        description: |
+          Specification of required and recommended reading for courses.
+        children: []
+      - id: BC-4790.60.20
+        name: Textbook Procurement
+        level: 3
+        industry: Education
+        description: |
+          Procurement of textbooks and course materials.
+        children: []
+      - id: BC-4790.60.30
+        name: Affordable Materials Programme
+        level: 3
+        industry: Education
+        description: |
+          Operation of affordable-materials and inclusive-access programmes.
+        children: []

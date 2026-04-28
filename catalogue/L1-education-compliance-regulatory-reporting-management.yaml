@@ -1,0 +1,230 @@
+# Education Compliance & Regulatory Reporting Management
+id: BC-4810
+name: "Education Compliance & Regulatory Reporting Management"
+level: 1
+industry: Education
+description: |
+  Education-sector-specific regulatory compliance and statutory reporting,
+  including student-data privacy, civil-rights regimes, special-education
+  statutory obligations, international-student visa compliance, and public-
+  funding compliance. Sits alongside Cross-Industry Compliance Management
+  for general regulatory obligations.
+references:
+  - https://www2.ed.gov/policy/gen/guid/fpco/ferpa/index.html
+  - https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa
+  - https://nces.ed.gov/ipeds/
+  - https://www.hesa.ac.uk/
+  - https://sites.ed.gov/idea/
+  - https://www2.ed.gov/about/offices/list/ocr/index.html
+  - https://www.ice.gov/sevis
+children:
+  - id: BC-4810.10
+    name: Student Data Privacy Compliance
+    level: 2
+    industry: Education
+    description: |
+      Compliance with sector-specific student-data privacy regimes including
+      FERPA, COPPA, and equivalent regimes.
+    in_scope:
+      - FERPA compliance operations
+      - COPPA compliance operations
+      - Student data sharing agreement management
+    out_of_scope:
+      - General data protection (covered under Cross-Industry Information & Data Management)
+    children:
+      - id: BC-4810.10.10
+        name: FERPA Compliance Operations
+        level: 3
+        industry: Education
+        description: |
+          Day-to-day FERPA compliance, consents, and disclosures.
+        children: []
+      - id: BC-4810.10.20
+        name: COPPA Compliance Operations
+        level: 3
+        industry: Education
+        description: |
+          COPPA compliance for services aimed at children under 13.
+        children: []
+      - id: BC-4810.10.30
+        name: Student Data Sharing Agreement Management
+        level: 3
+        industry: Education
+        description: |
+          Negotiation and management of student-data sharing agreements with vendors.
+        children: []
+  - id: BC-4810.20
+    name: Statutory Education Reporting
+    level: 2
+    industry: Education
+    description: |
+      Submission of statutory education statistics and performance returns
+      to national, state, and local authorities.
+    in_scope:
+      - National statistics submission (e.g. IPEDS, HESA)
+      - State and local education authority returns
+      - Funding and performance disclosure
+    out_of_scope:
+      - Internal performance reporting (covered under Academic Quality & Accreditation Management)
+    children:
+      - id: BC-4810.20.10
+        name: National Statistics Submission
+        level: 3
+        industry: Education
+        description: |
+          Submission of returns to national education statistics agencies.
+        children: []
+      - id: BC-4810.20.20
+        name: "State & Local Education Authority Returns"
+        level: 3
+        industry: Education
+        description: |
+          Returns to state, provincial, and local education authorities.
+        children: []
+      - id: BC-4810.20.30
+        name: "Funding & Performance Disclosure"
+        level: 3
+        industry: Education
+        description: |
+          Public disclosure of funding use and education performance metrics.
+        children: []
+  - id: BC-4810.30
+    name: Civil Rights Compliance
+    level: 2
+    industry: Education
+    description: |
+      Compliance with education-specific civil-rights regimes including
+      Title IX, Section 504, and ADA in the academic context.
+    in_scope:
+      - Title IX investigation and reporting
+      - Section 504 / ADA compliance
+      - Non-discrimination policy enforcement
+    out_of_scope:
+      - Day-to-day accommodations (covered under Student Support & Wellbeing Management)
+    children:
+      - id: BC-4810.30.10
+        name: "Title IX Investigation & Reporting"
+        level: 3
+        industry: Education
+        description: |
+          Title IX intake, investigation, hearing, and statutory reporting.
+        children: []
+      - id: BC-4810.30.20
+        name: "Section 504 / ADA Compliance"
+        level: 3
+        industry: Education
+        description: |
+          Section 504 and ADA compliance in the academic and admissions context.
+        children: []
+      - id: BC-4810.30.30
+        name: Non-Discrimination Policy Enforcement
+        level: 3
+        industry: Education
+        description: |
+          Enforcement of education non-discrimination policies and complaints handling.
+        children: []
+  - id: BC-4810.40
+    name: Special Education Compliance
+    level: 2
+    industry: Education
+    description: |
+      Compliance with statutory special-education regimes covering school-age
+      and early-intervention populations.
+    in_scope:
+      - IDEA Part B compliance
+      - IDEA Part C / early-intervention compliance
+      - Equivalent SEN/ALN statutory compliance
+    out_of_scope:
+      - Delivery of special-education services (covered under Student Support & Wellbeing Management)
+    children:
+      - id: BC-4810.40.10
+        name: IDEA Part B Compliance
+        level: 3
+        industry: Education
+        description: |
+          IDEA Part B statutory compliance for school-age special-education.
+        children: []
+      - id: BC-4810.40.20
+        name: "IDEA Part C / Early-Intervention Compliance"
+        level: 3
+        industry: Education
+        description: |
+          IDEA Part C compliance for early-intervention services.
+        children: []
+      - id: BC-4810.40.30
+        name: Equivalent SEN ALN Statutory Compliance
+        level: 3
+        industry: Education
+        description: |
+          Equivalent SEN, ALN, and inclusive-education statutory compliance outside the US.
+        children: []
+  - id: BC-4810.50
+    name: International Student Compliance
+    level: 2
+    industry: Education
+    description: |
+      Visa-sponsorship compliance and statutory tracking of international
+      students under regimes such as SEVIS and the UK Student Route.
+    in_scope:
+      - SEVIS / I-20 compliance operations
+      - Student visa reporting (UK Student Route, equivalents)
+      - International student tracking and reporting
+    out_of_scope:
+      - Initial visa-sponsorship documentation issuance (covered under Student Recruitment & Admissions Management)
+    children:
+      - id: BC-4810.50.10
+        name: "SEVIS / I-20 Compliance Operations"
+        level: 3
+        industry: Education
+        description: |
+          Day-to-day SEVIS and I-20 compliance for US sponsored students.
+        children: []
+      - id: BC-4810.50.20
+        name: Student Visa Reporting
+        level: 3
+        industry: Education
+        description: |
+          Statutory reporting on sponsored students under non-US visa regimes.
+        children: []
+      - id: BC-4810.50.30
+        name: International Student Tracking
+        level: 3
+        industry: Education
+        description: |
+          Tracking of international student status, attendance, and address as required by sponsorship duties.
+        children: []
+  - id: BC-4810.60
+    name: "Title IV / Public Funding Compliance"
+    level: 2
+    industry: Education
+    description: |
+      Compliance with public student-aid and education-funding regimes,
+      including Title IV in the US and equivalent regimes elsewhere.
+    in_scope:
+      - Title IV eligibility and disbursement compliance
+      - Return of funds and aid reconciliation
+      - Public funding audit response
+    out_of_scope:
+      - Award of financial aid offers (covered under Student Recruitment & Admissions Management)
+    children:
+      - id: BC-4810.60.10
+        name: "Title IV Eligibility & Disbursement Compliance"
+        level: 3
+        industry: Education
+        description: |
+          Title IV institutional eligibility and student-aid disbursement compliance.
+        children: []
+      - id: BC-4810.60.20
+        name: "Return of Funds & Aid Reconciliation"
+        level: 3
+        industry: Education
+        description: |
+          Reconciliation and return of unearned aid as required by funding regimes.
+        children: []
+      - id: BC-4810.60.30
+        name: Public Funding Audit Response
+        level: 3
+        industry: Education
+        description: |
+          Response to audits and reviews of public student-aid and education funding.
+        children: []
