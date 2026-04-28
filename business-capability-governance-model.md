@@ -620,6 +620,24 @@ Where an industry reference framework exists, anchor the upper levels (L1 / L2) 
 - **BRCGS, SQF, FSSC 22000, IFS Food, ISO 22000** — food-safety management systems and certification standards.
 - **OECD Due Diligence Guidance for the Garment & Footwear Sector, WRAP, SA8000** — ethical-sourcing and labour standards relevant to consumer-goods supply chains.
 
+**Software & Technology (SaaS)**
+
+- **SOC 2 (AICPA Trust Services Criteria) and SSAE 18** — service organisation controls and attestations for service providers.
+- **ISO/IEC 27001, 27017 (cloud), 27018 (PII in public clouds), 27701 (PIMS)** — information-security and privacy management systems for cloud services.
+- **CSA STAR / Cloud Controls Matrix (CCM)** — cloud security assurance and self- or third-party assessment.
+- **FedRAMP, NIST SP 800-53, NIST SP 800-171** — US federal cloud authorisation and controlled-information protection.
+- **ENISA EUCS, BSI C5 (Germany), IRAP (Australia), MTCS (Singapore), ISMAP (Japan)** — regional cloud security and authorisation regimes.
+- **NIST SSDF (SP 800-218), OWASP ASVS / SAMM, BSIMM, SLSA, SBOM standards (SPDX, CycloneDX), CVSS / CWE / CVE / NVD** — secure software development lifecycle and software supply-chain.
+- **OpenAPI Specification, AsyncAPI, GraphQL, gRPC, JSON Schema** — API and event interface standards.
+- **OAuth 2.0 / 2.1, OpenID Connect, SAML 2.0, SCIM 2.0, FIDO2 / WebAuthn** — identity, authentication, and federation standards.
+- **Twelve-Factor App methodology, CNCF reference projects (Kubernetes, OCI, OpenTelemetry), Cloud Native Maturity Model** — cloud-native architecture and operations.
+- **DORA Four Keys metrics, SPACE framework, Accelerate / State of DevOps research** — software delivery performance measurement.
+- **ASC 606 / IFRS 15** — revenue recognition for subscription contracts.
+- **EU Digital Operational Resilience Act (Reg 2022/2554), EU NIS2 Directive (Reg 2022/2555), EU Data Act, EU AI Act** — operational resilience, cybersecurity, data, and AI obligations applicable to SaaS providers.
+- **GDPR, UK GDPR, CCPA / CPRA, LGPD, APPI** — privacy regimes routinely covered by SaaS data-processing addenda and sub-processor disclosures.
+- **HIPAA, PCI DSS** — sectoral regimes triggered when SaaS handles protected health information or payment-card data.
+- **OpenID Shared Signals (CAEP / RISC), GAIA-X** — selected ecosystem standards relevant to enterprise-grade SaaS.
+
 **Telecommunications**
 
 - **TM Forum Frameworx (eTOM, SID, TAM, ODA)** — telecom enterprise process, information, application, and Open Digital Architecture reference.

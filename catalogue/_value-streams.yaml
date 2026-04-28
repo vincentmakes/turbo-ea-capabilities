@@ -477,6 +477,21 @@ value_streams:
         capability_id: BC-4060
         industry_variant: Travel & Hospitality
         notes: Service-recovery actions, compensation, and follow-up
+      - stage_order: 1
+        stage_name: Issue Capture (SaaS Service)
+        capability_id: BC-4220
+        industry_variant: Software & Technology
+        notes: Production incident detection from telemetry and customer reports
+      - stage_order: 3
+        stage_name: Investigation (SaaS Service)
+        capability_id: BC-4220
+        industry_variant: Software & Technology
+        notes: Incident coordination and blameless postmortem authoring
+      - stage_order: 4
+        stage_name: Resolution (SaaS Service)
+        capability_id: BC-4220
+        industry_variant: Software & Technology
+        notes: Reliability action tracking to closure
   - name: Order-to-Cash
     industries: [Cross-Industry]
     stages:
@@ -918,6 +933,26 @@ value_streams:
         capability_id: BC-3760
         industry_variant: Media & Entertainment
         notes: Advertiser collections and make-goods
+      - stage_order: 3
+        stage_name: Contract & Order Capture
+        capability_id: BC-4240
+        notes: Subscription contracting and order forms
+      - stage_order: 5
+        stage_name: Production / Service Delivery
+        capability_id: BC-4230
+        notes: Tenant provisioning as service-delivery fulfilment
+      - stage_order: 7
+        stage_name: Customer Invoicing
+        capability_id: BC-4250
+        notes: Subscription invoicing
+      - stage_order: 8
+        stage_name: Cash Collection & Application
+        capability_id: BC-4250
+        notes: Payment collection, dunning, and involuntary churn recovery
+      - stage_order: 9
+        stage_name: Revenue Recognition
+        capability_id: BC-4250
+        notes: Subscription revenue recognition under ASC 606 / IFRS 15
   - name: Procure-to-Pay
     industries: [Cross-Industry]
     stages:
@@ -1094,6 +1129,10 @@ value_streams:
         capability_id: BC-3700
         industry_variant: Media & Entertainment
         notes: Greenlight evaluation
+      - stage_order: 2
+        stage_name: Concept & Feasibility
+        capability_id: BC-4200
+        notes: Software product discovery and feasibility
       - stage_order: 3
         stage_name: Research & Prototyping
         capability_id: BC-1500
@@ -1103,6 +1142,10 @@ value_streams:
         stage_name: Research & Prototyping
         capability_id: BC-810
         notes: Research; Experimentation & prototyping
+      - stage_order: 3
+        stage_name: Research & Prototyping
+        capability_id: BC-4200
+        notes: Software prototyping and validation
       - stage_order: 4
         stage_name: Portfolio Selection
         capability_id: BC-800
@@ -1179,6 +1222,10 @@ value_streams:
         capability_id: BC-3700
         industry_variant: Media & Entertainment
         notes: Pre-production, production, post-production
+      - stage_order: 5
+        stage_name: Design & Development
+        capability_id: BC-4200
+        notes: Software product engineering
       - stage_order: 6
         stage_name: IP Protection
         capability_id: BC-840
@@ -1226,6 +1273,14 @@ value_streams:
         capability_id: BC-3730
         industry_variant: Media & Entertainment
         notes: Schedule slot and EPG readiness
+      - stage_order: 7
+        stage_name: Launch Readiness
+        capability_id: BC-4210
+        notes: Release engineering and environment readiness
+      - stage_order: 7
+        stage_name: Launch Readiness
+        capability_id: BC-4270
+        notes: Public API and SDK release readiness
       - stage_order: 8
         stage_name: Market Introduction
         capability_id: BC-1530
@@ -1270,6 +1325,10 @@ value_streams:
         capability_id: BC-3740
         industry_variant: Media & Entertainment
         notes: First-window release
+      - stage_order: 8
+        stage_name: Market Introduction
+        capability_id: BC-4210
+        notes: Progressive production rollout
       - stage_order: 9
         stage_name: Post-Launch Performance
         capability_id: BC-820
@@ -1299,6 +1358,14 @@ value_streams:
         capability_id: BC-3770
         industry_variant: Media & Entertainment
         notes: Title performance feedback to commissioning
+      - stage_order: 9
+        stage_name: Post-Launch Performance
+        capability_id: BC-4280
+        notes: Telemetry, A/B tests, and feature engagement reporting
+      - stage_order: 9
+        stage_name: Post-Launch Performance
+        capability_id: BC-4220
+        notes: Reliability and performance of the launched service
   - name: Plan-to-Inventory
     industries: [Cross-Industry]
     stages:
@@ -1534,6 +1601,11 @@ value_streams:
         capability_id: BC-3920
         industry_variant: Utilities
         notes: Utility regulatory accounts and price-control performance reporting
+      - stage_order: 5
+        stage_name: Management Reporting
+        capability_id: BC-4250
+        industry_variant: Software & Technology
+        notes: ARR, MRR, NRR, GRR, and cohort recurring-revenue reporting
   - name: Acquire-to-Retire
     industries: [Cross-Industry]
     stages:
@@ -2087,6 +2159,16 @@ value_streams:
         capability_id: BC-3590
         industry_variant: Agriculture
         notes: Farm assurance and certification audit readiness
+      - stage_order: 3
+        stage_name: Fieldwork
+        capability_id: BC-4290
+        industry_variant: Software & Technology
+        notes: External service-attestation audits (SOC 2, ISO 27001)
+      - stage_order: 5
+        stage_name: Remediation Tracking
+        capability_id: BC-4290
+        industry_variant: Software & Technology
+        notes: Remediation of attestation findings
   - name: Threat-to-Mitigation
     industries: [Cross-Industry]
     stages:
@@ -2323,6 +2405,14 @@ value_streams:
         capability_id: BC-4050
         industry_variant: Travel & Hospitality
         notes: Loyalty enrolment and welcome programme activation
+      - stage_order: 6
+        stage_name: Customer Onboarding
+        capability_id: BC-4260
+        notes: Customer onboarding and activation
+      - stage_order: 7
+        stage_name: Retention & Advocacy
+        capability_id: BC-4260
+        notes: Retention, NPS, references, and expansion advocacy
   - name: Application-to-Funding
     industries: [Banking & Capital Markets]
     stages:
@@ -2945,6 +3035,14 @@ value_streams:
         capability_id: BC-3830
         industry_variant: Utilities
         notes: Black start and bulk-system restoration coordination
+      - stage_order: 2
+        stage_name: Resilience Testing
+        capability_id: BC-4220
+        notes: Disaster-recovery exercises and game-days for the SaaS service
+      - stage_order: 5
+        stage_name: Disaster Recovery
+        capability_id: BC-4220
+        notes: Failover orchestration and backup restoration for the SaaS service
   - name: ESG-to-Disclosure
     industries: [Cross-Industry]
     stages:
@@ -3434,6 +3532,18 @@ value_streams:
         stage_name: Handover to Fulfilment
         capability_id: BC-420
         notes: Customer lifecycle activation
+      - stage_order: 3
+        stage_name: Quote & Configuration
+        capability_id: BC-4240
+        notes: Subscription quote management
+      - stage_order: 7
+        stage_name: Contract & Order Booking
+        capability_id: BC-4240
+        notes: Order form generation and subscription contract capture
+      - stage_order: 8
+        stage_name: Handover to Fulfilment
+        capability_id: BC-4230
+        notes: Tenant provisioning handover
   - name: Lease-to-Production
     industries: [Oil & Gas]
     stages:
@@ -4334,3 +4444,58 @@ value_streams:
         stage_name: Post-Event Review
         capability_id: BC-4030
         notes: Revenue impact analysis and forecast adjustment
+  - name: Trial-to-Renewal
+    industries: [Software & Technology]
+    stages:
+      - stage_order: 1
+        stage_name: Trial Initiation
+        capability_id: BC-4240
+        notes: Trial sign-up and trial subscription provisioning
+      - stage_order: 1
+        stage_name: Trial Initiation
+        capability_id: BC-4230
+        notes: Tenant provisioning for trial accounts
+      - stage_order: 2
+        stage_name: Trial Activation
+        capability_id: BC-4260
+        notes: Onboarding and activation milestone tracking during trial
+      - stage_order: 3
+        stage_name: Conversion to Paid
+        capability_id: BC-4240
+        notes: Trial-to-paid subscription conversion
+      - stage_order: 3
+        stage_name: Conversion to Paid
+        capability_id: BC-4250
+        notes: Initial invoicing and payment authorisation on conversion
+      - stage_order: 4
+        stage_name: Adoption
+        capability_id: BC-4260
+        notes: Adoption programmes, power-user enablement
+      - stage_order: 4
+        stage_name: Adoption
+        capability_id: BC-4280
+        notes: Product telemetry and feature engagement reporting that drive adoption
+      - stage_order: 5
+        stage_name: Health & Risk Monitoring
+        capability_id: BC-4260
+        notes: Customer health scoring and at-risk account intervention
+      - stage_order: 6
+        stage_name: Renewal
+        capability_id: BC-4240
+        notes: Auto-renewal processing and renewal negotiation
+      - stage_order: 6
+        stage_name: Renewal
+        capability_id: BC-4260
+        notes: Renewal advocacy, save motions, renewal forecasting
+      - stage_order: 7
+        stage_name: Expansion
+        capability_id: BC-4260
+        notes: Expansion opportunity identification and upsell qualification
+      - stage_order: 7
+        stage_name: Expansion
+        capability_id: BC-4240
+        notes: Plan upgrade, seat adjustment, and add-on activation
+      - stage_order: 8
+        stage_name: Churn or Wind-Down
+        capability_id: BC-4240
+        notes: Cancellation processing and service wind-down coordination

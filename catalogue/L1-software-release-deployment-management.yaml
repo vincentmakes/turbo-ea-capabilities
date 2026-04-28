@@ -1,0 +1,238 @@
+# Software Release & Deployment Management
+id: BC-4210
+name: "Software Release & Deployment Management"
+level: 1
+industry: Software & Technology
+description: |
+  Continuous integration, environment management, release engineering,
+  feature flagging, and progressive deployment of SaaS products to
+  production.
+references:
+  - https://12factor.net/
+  - https://www.cncf.io/
+  - https://dora.dev/
+children:
+  - id: BC-4210.10
+    name: Continuous Integration Management
+    level: 2
+    industry: Software & Technology
+    description: |
+      Build pipelines, artefact production, and pipeline policy enforcement
+      that keep the integrated product continuously buildable.
+    children:
+      - id: BC-4210.10.10
+        name: Build Pipeline Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Definition and operation of automated build pipelines for product
+          components.
+        children: []
+      - id: BC-4210.10.20
+        name: Artefact Repository Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Storage, retention, and access of build artefacts and dependency
+          packages.
+        children: []
+      - id: BC-4210.10.30
+        name: Pipeline Policy Enforcement
+        level: 3
+        industry: Software & Technology
+        description: |
+          Enforcement of required quality, security, and provenance gates
+          across pipelines.
+        children: []
+  - id: BC-4210.20
+    name: Environment Management
+    level: 2
+    industry: Software & Technology
+    description: |
+      Provisioning and stewardship of non-production environments used for
+      development, integration, and pre-production validation.
+    children:
+      - id: BC-4210.20.10
+        name: Environment Provisioning
+        level: 3
+        industry: Software & Technology
+        description: |
+          Provisioning of non-production environments aligned to engineering
+          and validation needs.
+        children: []
+      - id: BC-4210.20.20
+        name: Environment Configuration
+        level: 3
+        industry: Software & Technology
+        description: |
+          Configuration of non-production environments to maintain parity
+          with production where required.
+        children: []
+      - id: BC-4210.20.30
+        name: Environment Data Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Provision, masking, and refresh of data in non-production
+          environments.
+        children: []
+  - id: BC-4210.30
+    name: Release Engineering Management
+    level: 2
+    industry: Software & Technology
+    description: |
+      Cadence, versioning, branching, and release-note discipline for
+      software releases.
+    children:
+      - id: BC-4210.30.10
+        name: Release Cadence Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Definition and stewardship of release cadence across product
+          areas.
+        children: []
+      - id: BC-4210.30.20
+        name: "Versioning & Branching"
+        level: 3
+        industry: Software & Technology
+        description: |
+          Versioning scheme and branching strategy applied to product
+          releases.
+        children: []
+      - id: BC-4210.30.30
+        name: Release Notes Authoring
+        level: 3
+        industry: Software & Technology
+        description: |
+          Authoring of customer- and operator-facing release notes for each
+          release.
+        children: []
+  - id: BC-4210.40
+    name: Deployment Orchestration
+    level: 2
+    industry: Software & Technology
+    description: |
+      Strategies for delivering software changes to production safely and
+      with controlled blast radius.
+    children:
+      - id: BC-4210.40.10
+        name: Progressive Rollout
+        level: 3
+        industry: Software & Technology
+        description: |
+          Gradual roll-out of releases to expanding cohorts of tenants or
+          users.
+        children: []
+      - id: BC-4210.40.20
+        name: Canary Deployment
+        level: 3
+        industry: Software & Technology
+        description: |
+          Deployment of releases to a small canary population with automated
+          health evaluation.
+        children: []
+      - id: BC-4210.40.30
+        name: Blue-Green Deployment
+        level: 3
+        industry: Software & Technology
+        description: |
+          Parallel-environment deployment with traffic cut-over for
+          near-zero-downtime change.
+        children: []
+      - id: BC-4210.40.40
+        name: Rollback Coordination
+        level: 3
+        industry: Software & Technology
+        description: |
+          Coordinated rollback of releases on adverse signals.
+        children: []
+  - id: BC-4210.50
+    name: Feature Flag Management
+    level: 2
+    industry: Software & Technology
+    description: |
+      Lifecycle and runtime control of feature flags used to decouple
+      deploy from release and target features to cohorts.
+    in_scope:
+      - Feature flag creation, retirement, and audit
+      - Targeting rules
+    out_of_scope:
+      - Experimentation methodology and adjudication (covered by Product Telemetry & Experimentation Management)
+    children:
+      - id: BC-4210.50.10
+        name: Feature Flag Lifecycle
+        level: 3
+        industry: Software & Technology
+        description: |
+          Lifecycle of feature flags from creation to retirement.
+        children: []
+      - id: BC-4210.50.20
+        name: Targeting Rule Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Definition of targeting rules that determine which subjects
+          receive a flag variant.
+        children: []
+      - id: BC-4210.50.30
+        name: Flag Hygiene Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Hygiene practice that retires obsolete flags and prevents
+          accumulation of dead conditional code.
+        children: []
+  - id: BC-4210.60
+    name: "Configuration & Secrets Management"
+    level: 2
+    industry: Software & Technology
+    description: |
+      Management of runtime configuration values and secrets consumed by
+      product services.
+    children:
+      - id: BC-4210.60.10
+        name: Runtime Configuration Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Storage, distribution, and audit of runtime configuration values.
+        children: []
+      - id: BC-4210.60.20
+        name: Secret Lifecycle Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Issuance, rotation, and revocation of secrets used by product
+          services.
+        children: []
+  - id: BC-4210.70
+    name: Production Change Authorisation
+    level: 2
+    industry: Software & Technology
+    description: |
+      Pre-deployment review, deployment-window governance, and authorisation
+      of human access to production.
+    children:
+      - id: BC-4210.70.10
+        name: Pre-Deployment Review
+        level: 3
+        industry: Software & Technology
+        description: |
+          Review and approval of changes prior to production deployment.
+        children: []
+      - id: BC-4210.70.20
+        name: Deployment Window Governance
+        level: 3
+        industry: Software & Technology
+        description: |
+          Governance of permissible deployment windows and freezes.
+        children: []
+      - id: BC-4210.70.30
+        name: Production Access Authorisation
+        level: 3
+        industry: Software & Technology
+        description: |
+          Authorisation, just-in-time grant, and audit of human access to
+          production systems.
+        children: []

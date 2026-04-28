@@ -1,0 +1,219 @@
+# SaaS Platform Operations Management
+id: BC-4220
+name: SaaS Platform Operations Management
+level: 1
+industry: Software & Technology
+description: |
+  Site reliability, observability, on-call response, capacity, performance,
+  and disaster-recovery operations of the multi-tenant SaaS service.
+references:
+  - https://opentelemetry.io/
+  - https://sre.google/books/
+  - https://www.iso.org/standard/75106.html
+children:
+  - id: BC-4220.10
+    name: Service Reliability Engineering
+    level: 2
+    industry: Software & Technology
+    description: |
+      Definition and stewardship of service-level indicators, objectives,
+      and error budgets for the SaaS service.
+    in_scope:
+      - SLI / SLO / error-budget discipline for the running product
+    out_of_scope:
+      - Customer-facing SLA commitments (covered by SaaS Trust & Service Compliance Management)
+      - Internal IT service levels (covered by Information Technology Management)
+    children:
+      - id: BC-4220.10.10
+        name: Service Level Indicator Definition
+        level: 3
+        industry: Software & Technology
+        description: |
+          Definition of service-level indicators that measure the customer
+          experience of running services.
+        children: []
+      - id: BC-4220.10.20
+        name: Service Level Objective Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Setting, review, and revision of service-level objectives across
+          services.
+        children: []
+      - id: BC-4220.10.30
+        name: Error Budget Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Management of error budgets and the policy that governs their
+          consumption.
+        children: []
+  - id: BC-4220.20
+    name: Observability Management
+    level: 2
+    industry: Software & Technology
+    description: |
+      Logs, metrics, traces, and synthetic monitoring that make the running
+      service understandable in production.
+    children:
+      - id: BC-4220.20.10
+        name: Application Logging Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Stewardship of application logging conventions, pipelines, and
+          retention.
+        children: []
+      - id: BC-4220.20.20
+        name: Metrics Pipeline Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Operation of metrics ingestion, storage, and query pipelines.
+        children: []
+      - id: BC-4220.20.30
+        name: Distributed Tracing
+        level: 3
+        industry: Software & Technology
+        description: |
+          End-to-end distributed tracing across services for production
+          investigation.
+        children: []
+      - id: BC-4220.20.40
+        name: Synthetic Monitoring
+        level: 3
+        industry: Software & Technology
+        description: |
+          Synthetic probes that exercise critical user journeys from
+          outside the service.
+        children: []
+  - id: BC-4220.30
+    name: Incident Response Management
+    level: 2
+    industry: Software & Technology
+    description: |
+      On-call response, incident detection, coordination, and customer
+      communication during production incidents.
+    children:
+      - id: BC-4220.30.10
+        name: On-Call Rotation Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Definition and operation of on-call rotations across product
+          teams.
+        children: []
+      - id: BC-4220.30.20
+        name: Incident Detection
+        level: 3
+        industry: Software & Technology
+        description: |
+          Detection of production incidents from telemetry and external
+          signals.
+        children: []
+      - id: BC-4220.30.30
+        name: Incident Coordination
+        level: 3
+        industry: Software & Technology
+        description: |
+          Coordination of incident response including roles, communications,
+          and decisions during the incident.
+        children: []
+      - id: BC-4220.30.40
+        name: Customer Incident Communication
+        level: 3
+        industry: Software & Technology
+        description: |
+          Communication to affected customers during and after incidents.
+        children: []
+  - id: BC-4220.40
+    name: "Postmortem & Reliability Improvement"
+    level: 2
+    industry: Software & Technology
+    description: |
+      Postmortem authoring and tracking of reliability action items so that
+      lessons compound over time.
+    children:
+      - id: BC-4220.40.10
+        name: Postmortem Authoring
+        level: 3
+        industry: Software & Technology
+        description: |
+          Blameless postmortem authoring after incidents and significant
+          near-misses.
+        children: []
+      - id: BC-4220.40.20
+        name: Reliability Action Tracking
+        level: 3
+        industry: Software & Technology
+        description: |
+          Tracking of reliability action items to closure across teams.
+        children: []
+      - id: BC-4220.40.30
+        name: Reliability Trend Analysis
+        level: 3
+        industry: Software & Technology
+        description: |
+          Analysis of reliability trends across services and time horizons.
+        children: []
+  - id: BC-4220.50
+    name: "Capacity & Performance Management"
+    level: 2
+    industry: Software & Technology
+    description: |
+      Capacity forecasting, auto-scaling policies, and performance testing
+      of the SaaS service.
+    children:
+      - id: BC-4220.50.10
+        name: Capacity Forecasting
+        level: 3
+        industry: Software & Technology
+        description: |
+          Forecasting of capacity demand across services and regions.
+        children: []
+      - id: BC-4220.50.20
+        name: Auto-Scaling Policy Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Definition and tuning of auto-scaling policies for product
+          services.
+        children: []
+      - id: BC-4220.50.30
+        name: Performance Testing
+        level: 3
+        industry: Software & Technology
+        description: |
+          Load, stress, and soak testing of the running service.
+        children: []
+  - id: BC-4220.60
+    name: "Disaster Recovery & Resilience"
+    level: 2
+    industry: Software & Technology
+    description: |
+      Backup and restore, failover orchestration, and disaster-recovery
+      exercises for the SaaS service.
+    children:
+      - id: BC-4220.60.10
+        name: "Backup & Restore Management"
+        level: 3
+        industry: Software & Technology
+        description: |
+          Backup policy, execution, and restore validation for service
+          datastores.
+        children: []
+      - id: BC-4220.60.20
+        name: Failover Orchestration
+        level: 3
+        industry: Software & Technology
+        description: |
+          Orchestration of failover between availability zones and regions.
+        children: []
+      - id: BC-4220.60.30
+        name: Disaster Recovery Exercise Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Planning and execution of disaster-recovery exercises and
+          game-days.
+        children: []

@@ -1,0 +1,239 @@
+# Subscription Lifecycle Management
+id: BC-4240
+name: Subscription Lifecycle Management
+level: 1
+industry: Software & Technology
+description: |
+  Plan and entitlement design, subscription contracting, provisioning,
+  modification, renewal, cancellation, and runtime entitlement enforcement
+  across the SaaS commercial lifecycle.
+children:
+  - id: BC-4240.10
+    name: "Plan & Entitlement Design"
+    level: 2
+    industry: Software & Technology
+    description: |
+      Definition of plans, feature entitlements, and the rules governing
+      which customers are eligible for which plan.
+    in_scope:
+      - Plan catalogue and feature gating
+      - Plan eligibility rules
+    out_of_scope:
+      - Pricing strategy and price-list governance (covered by Pricing Management)
+    children:
+      - id: BC-4240.10.10
+        name: Plan Catalogue Definition
+        level: 3
+        industry: Software & Technology
+        description: |
+          Definition of the plan catalogue, including plan tiers and
+          contents.
+        children: []
+      - id: BC-4240.10.20
+        name: Feature Entitlement Definition
+        level: 3
+        industry: Software & Technology
+        description: |
+          Definition of feature entitlements attached to plans, add-ons, and
+          custom contracts.
+        children: []
+      - id: BC-4240.10.30
+        name: Plan Eligibility Rules
+        level: 3
+        industry: Software & Technology
+        description: |
+          Rules that determine which customers and use-cases are eligible
+          for each plan.
+        children: []
+  - id: BC-4240.20
+    name: Subscription Contracting
+    level: 2
+    industry: Software & Technology
+    description: |
+      Quote management, order-form generation, and capture of subscription
+      contract artefacts.
+    children:
+      - id: BC-4240.20.10
+        name: Subscription Quote Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Generation and stewardship of subscription quotes through the
+          sales motion.
+        children: []
+      - id: BC-4240.20.20
+        name: Order Form Generation
+        level: 3
+        industry: Software & Technology
+        description: |
+          Generation of order forms reflecting agreed terms for new and
+          existing customers.
+        children: []
+      - id: BC-4240.20.30
+        name: Subscription Contract Capture
+        level: 3
+        industry: Software & Technology
+        description: |
+          Capture and storage of executed subscription contract artefacts
+          and key terms.
+        children: []
+  - id: BC-4240.30
+    name: Subscription Provisioning
+    level: 2
+    industry: Software & Technology
+    description: |
+      Activation of service for new subscriptions, including trial-to-paid
+      conversion and bulk seat provisioning.
+    children:
+      - id: BC-4240.30.10
+        name: Initial Provisioning
+        level: 3
+        industry: Software & Technology
+        description: |
+          Initial provisioning of service entitlements at start of
+          subscription.
+        children: []
+      - id: BC-4240.30.20
+        name: Trial Conversion
+        level: 3
+        industry: Software & Technology
+        description: |
+          Conversion of trial accounts to paid subscriptions.
+        children: []
+      - id: BC-4240.30.30
+        name: Bulk Seat Provisioning
+        level: 3
+        industry: Software & Technology
+        description: |
+          Bulk provisioning of seats for enterprise subscriptions.
+        children: []
+  - id: BC-4240.40
+    name: Subscription Modification
+    level: 2
+    industry: Software & Technology
+    description: |
+      In-life changes to active subscriptions including upgrades,
+      downgrades, seat adjustments, and add-on activation.
+    children:
+      - id: BC-4240.40.10
+        name: Plan Upgrade Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Handling of customer-initiated and system-initiated plan upgrades.
+        children: []
+      - id: BC-4240.40.20
+        name: Plan Downgrade Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Handling of plan downgrades including effect on entitlements and
+          data.
+        children: []
+      - id: BC-4240.40.30
+        name: Seat Adjustment
+        level: 3
+        industry: Software & Technology
+        description: |
+          Adjustment of seat counts on active subscriptions.
+        children: []
+      - id: BC-4240.40.40
+        name: Add-On Activation
+        level: 3
+        industry: Software & Technology
+        description: |
+          Activation of optional add-on entitlements on active
+          subscriptions.
+        children: []
+  - id: BC-4240.50
+    name: Renewal Management
+    level: 2
+    industry: Software & Technology
+    description: |
+      Forecasting, processing, and negotiation of subscription renewals
+      whether automatic or manual.
+    children:
+      - id: BC-4240.50.10
+        name: Renewal Forecasting
+        level: 3
+        industry: Software & Technology
+        description: |
+          Forecasting of upcoming renewals and expected outcomes.
+        children: []
+      - id: BC-4240.50.20
+        name: Auto-Renewal Processing
+        level: 3
+        industry: Software & Technology
+        description: |
+          Processing of automatic subscription renewals per contract terms.
+        children: []
+      - id: BC-4240.50.30
+        name: Renewal Negotiation Support
+        level: 3
+        industry: Software & Technology
+        description: |
+          Support for renewal negotiations including data, pricing, and
+          term-change packages.
+        children: []
+  - id: BC-4240.60
+    name: "Cancellation & Termination"
+    level: 2
+    industry: Software & Technology
+    description: |
+      Voluntary cancellation, involuntary termination, and the wind-down of
+      service for departing customers.
+    children:
+      - id: BC-4240.60.10
+        name: Cancellation Processing
+        level: 3
+        industry: Software & Technology
+        description: |
+          Processing of customer-initiated cancellations.
+        children: []
+      - id: BC-4240.60.20
+        name: Involuntary Termination
+        level: 3
+        industry: Software & Technology
+        description: |
+          Termination of service for non-payment, breach, or contractual
+          end.
+        children: []
+      - id: BC-4240.60.30
+        name: Service Wind-Down Coordination
+        level: 3
+        industry: Software & Technology
+        description: |
+          Coordinated wind-down of service including data export and
+          deletion handover.
+        children: []
+  - id: BC-4240.70
+    name: Entitlement Enforcement
+    level: 2
+    industry: Software & Technology
+    description: |
+      Resolution and runtime enforcement of subscription entitlements with
+      audit trail of access decisions.
+    children:
+      - id: BC-4240.70.10
+        name: Entitlement Resolution
+        level: 3
+        industry: Software & Technology
+        description: |
+          Resolution of effective entitlements per subscription, account,
+          and user.
+        children: []
+      - id: BC-4240.70.20
+        name: Entitlement Gate Enforcement
+        level: 3
+        industry: Software & Technology
+        description: |
+          Runtime gating of features and quotas against resolved
+          entitlements.
+        children: []
+      - id: BC-4240.70.30
+        name: Entitlement Audit Trail
+        level: 3
+        industry: Software & Technology
+        description: |
+          Audit-grade record of entitlement changes and gate decisions.
+        children: []

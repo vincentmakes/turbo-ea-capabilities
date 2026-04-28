@@ -1,0 +1,207 @@
+# SaaS Trust & Service Compliance Management
+id: BC-4290
+name: "SaaS Trust & Service Compliance Management"
+level: 1
+industry: Software & Technology
+description: |
+  Service-level attestations, customer security questionnaires, public
+  trust disclosures, sub-processor management, service-privacy
+  commitments, and customer-facing service-resilience commitments for
+  the SaaS offering.
+references:
+  - https://www.aicpa-cima.com/topic/audit-assurance/audit-and-assurance-greater-than-soc-2
+  - https://www.iso.org/standard/27001
+  - https://cloudsecurityalliance.org/star/
+  - https://www.fedramp.gov/
+children:
+  - id: BC-4290.10
+    name: Service Attestation Management
+    level: 2
+    industry: Software & Technology
+    description: |
+      Coordination of service-level attestations such as SOC 2, ISO 27001,
+      and FedRAMP for the SaaS offering.
+    in_scope:
+      - Audit readiness for the service
+      - Auditor engagement and report production
+    out_of_scope:
+      - Enterprise-wide compliance programme (covered by Compliance Management)
+    children:
+      - id: BC-4290.10.10
+        name: Audit Readiness Coordination
+        level: 3
+        industry: Software & Technology
+        description: |
+          Coordination of audit readiness across control owners for the
+          service.
+        children: []
+      - id: BC-4290.10.20
+        name: Auditor Engagement
+        level: 3
+        industry: Software & Technology
+        description: |
+          Engagement of external auditors and management of audit
+          fieldwork.
+        children: []
+      - id: BC-4290.10.30
+        name: Attestation Renewal Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Management of attestation renewal cycles and continuous-audit
+          arrangements.
+        children: []
+  - id: BC-4290.20
+    name: Customer Security Questionnaire Management
+    level: 2
+    industry: Software & Technology
+    description: |
+      Stewardship of the questionnaire repository, response authoring, and
+      knowledge base used to answer customer vendor-risk assessments.
+    children:
+      - id: BC-4290.20.10
+        name: Questionnaire Repository Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Maintenance of the inbound questionnaire repository and routing.
+        children: []
+      - id: BC-4290.20.20
+        name: Questionnaire Response Authoring
+        level: 3
+        industry: Software & Technology
+        description: |
+          Authoring of responses to customer security questionnaires.
+        children: []
+      - id: BC-4290.20.30
+        name: Questionnaire Knowledge Base Maintenance
+        level: 3
+        industry: Software & Technology
+        description: |
+          Maintenance of a curated knowledge base of approved answers and
+          evidence.
+        children: []
+  - id: BC-4290.30
+    name: "Trust Portal & Public Disclosure"
+    level: 2
+    industry: Software & Technology
+    description: |
+      Operation of the customer trust portal, public status disclosures,
+      and document distribution workflows.
+    children:
+      - id: BC-4290.30.10
+        name: Trust Portal Content Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Curation of content published on the customer trust portal.
+        children: []
+      - id: BC-4290.30.20
+        name: Public Status Disclosure
+        level: 3
+        industry: Software & Technology
+        description: |
+          Public disclosure of incident status and historical service
+          status.
+        children: []
+      - id: BC-4290.30.30
+        name: Document Distribution Workflow
+        level: 3
+        industry: Software & Technology
+        description: |
+          Controlled distribution of audit reports and trust documents to
+          customers.
+        children: []
+  - id: BC-4290.40
+    name: Sub-Processor Management
+    level: 2
+    industry: Software & Technology
+    description: |
+      Inventory, disclosure, and change-notification of sub-processors
+      that handle customer data.
+    children:
+      - id: BC-4290.40.10
+        name: Sub-Processor Inventory
+        level: 3
+        industry: Software & Technology
+        description: |
+          Inventory of sub-processors and the categories of customer data
+          they handle.
+        children: []
+      - id: BC-4290.40.20
+        name: Sub-Processor Disclosure
+        level: 3
+        industry: Software & Technology
+        description: |
+          Customer-facing disclosure of the current sub-processor list.
+        children: []
+      - id: BC-4290.40.30
+        name: Sub-Processor Change Notification
+        level: 3
+        industry: Software & Technology
+        description: |
+          Advance notification of sub-processor additions and removals
+          per contract.
+        children: []
+  - id: BC-4290.50
+    name: Service Privacy Commitment Management
+    level: 2
+    industry: Software & Technology
+    description: |
+      Stewardship of data-processing addenda, customer data-flow
+      disclosures, and routing of data-subject requests.
+    children:
+      - id: BC-4290.50.10
+        name: Data Processing Addendum Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Maintenance and execution of data-processing addenda with
+          customers.
+        children: []
+      - id: BC-4290.50.20
+        name: Customer Data Flow Mapping
+        level: 3
+        industry: Software & Technology
+        description: |
+          Mapping of customer data flows for disclosure and assessment.
+        children: []
+      - id: BC-4290.50.30
+        name: Data Subject Request Routing
+        level: 3
+        industry: Software & Technology
+        description: |
+          Routing of data-subject requests received via customers to the
+          appropriate handlers.
+        children: []
+  - id: BC-4290.60
+    name: Service Resilience Commitment Management
+    level: 2
+    industry: Software & Technology
+    description: |
+      Customer-facing service-level commitments, uptime disclosure, and
+      service-credit administration.
+    children:
+      - id: BC-4290.60.10
+        name: Service Level Commitment Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Definition and stewardship of customer-facing service-level
+          commitments.
+        children: []
+      - id: BC-4290.60.20
+        name: Uptime Disclosure
+        level: 3
+        industry: Software & Technology
+        description: |
+          Disclosure of historical uptime against committed levels.
+        children: []
+      - id: BC-4290.60.30
+        name: Service Credit Administration
+        level: 3
+        industry: Software & Technology
+        description: |
+          Administration of service credits arising from missed
+          commitments.
+        children: []
