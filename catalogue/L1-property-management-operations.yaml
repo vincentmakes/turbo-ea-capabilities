@@ -1,0 +1,346 @@
+# Property Management Operations
+id: BC-4940
+name: Property Management Operations
+level: 1
+industry: Real Estate
+description: |
+  Landlord and property-manager-side operation of commercial, retail,
+  and multi-family residential buildings — building services, vendor
+  and contract management, work orders, tenant services during
+  occupancy, security and life safety, energy / sustainability, and
+  property accounting including CAM reconciliation. Distinct from
+  hotel property operations (BC-4060) and corporate-occupier facilities
+  (BC-700).
+references:
+  - https://www.iso.org/standard/68021.html
+  - https://www.irem.org/
+  - https://www.bomi.org/
+  - https://www.bomainternational.org/
+in_scope:
+  - Day-to-day building operations including BMS and common areas
+  - Preventive, reactive, and statutory maintenance
+  - Vendor and service contract management (janitorial, security, landscaping)
+  - Tenant move-in / move-out and fit-out coordination
+  - Property security, fire / life safety, and incident response
+  - Property energy, water, waste, and indoor environment
+  - Property accounting, tenant billing, and operating reporting
+  - CAM and service-charge reconciliation
+out_of_scope:
+  - Hotel and resort property operations (BC-4060)
+  - Corporate occupier facilities for own use (BC-700)
+  - Standing-asset business plans and capex strategy (BC-4920)
+  - Tenant acquisition and lease execution (BC-4950)
+children:
+  - id: BC-4940.10
+    name: Building Operations Management
+    level: 2
+    industry: Real Estate
+    description: |
+      Day-to-day operation of building services, building management
+      systems, common areas, reception, and operating-hour schedules
+      across commercial, retail, and multi-family assets.
+    children:
+      - id: BC-4940.10.10
+        name: Common Area Operations
+        level: 3
+        industry: Real Estate
+        description: |
+          Operation of common areas including lobbies, corridors, and
+          shared amenities.
+        children: []
+      - id: BC-4940.10.20
+        name: Building Management System Operations
+        level: 3
+        industry: Real Estate
+        description: |
+          Operation of building management systems including HVAC,
+          lighting, and access controls.
+        children: []
+      - id: BC-4940.10.30
+        name: Property Reception & Access Operations
+        level: 3
+        industry: Real Estate
+        description: |
+          Reception, concierge, and access operations for tenants and
+          visitors at the property.
+        children: []
+      - id: BC-4940.10.40
+        name: Operational Hours & Schedule Management
+        level: 3
+        industry: Real Estate
+        description: |
+          Management of operating hours, after-hours requests, and
+          holiday schedules.
+        children: []
+  - id: BC-4940.20
+    name: "Property Maintenance & Work Order Management"
+    level: 2
+    industry: Real Estate
+    description: |
+      Preventive, reactive, and statutory maintenance of building
+      systems and tenant-facing assets through work-order workflows.
+    children:
+      - id: BC-4940.20.10
+        name: Preventive Maintenance Operations
+        level: 3
+        industry: Real Estate
+        description: |
+          Operation of preventive maintenance against schedule and
+          asset condition data.
+        children: []
+      - id: BC-4940.20.20
+        name: "Reactive Maintenance & Work Orders"
+        level: 3
+        industry: Real Estate
+        description: |
+          Handling of reactive maintenance triggered by tenant requests
+          and inspection findings.
+        children: []
+      - id: BC-4940.20.30
+        name: "Statutory & Compliance Inspections"
+        level: 3
+        industry: Real Estate
+        description: |
+          Statutory and compliance inspections covering lifts, fire
+          systems, gas, and pressure systems.
+        children: []
+      - id: BC-4940.20.40
+        name: Maintenance Reporting
+        level: 3
+        industry: Real Estate
+        description: |
+          Reporting of maintenance activity, backlog, and SLA
+          performance to owners and tenants.
+        children: []
+  - id: BC-4940.30
+    name: "Property Vendor & Service Contract Management"
+    level: 2
+    industry: Real Estate
+    description: |
+      Onboarding and management of property-level service vendors and
+      contracts for cleaning, security, landscaping, and utility
+      supply.
+    children:
+      - id: BC-4940.30.10
+        name: Service Contract Onboarding
+        level: 3
+        industry: Real Estate
+        description: |
+          Onboarding of property-level service contracts and vendors.
+        children: []
+      - id: BC-4940.30.20
+        name: Vendor Performance Management
+        level: 3
+        industry: Real Estate
+        description: |
+          Performance management of property vendors against SLAs and
+          KPIs.
+        children: []
+      - id: BC-4940.30.30
+        name: "Service Specification & SLA Definition"
+        level: 3
+        industry: Real Estate
+        description: |
+          Definition of service specifications, scopes, and SLAs for
+          contracted property services.
+        children: []
+  - id: BC-4940.40
+    name: "Tenant Services & Move Coordination"
+    level: 2
+    industry: Real Estate
+    description: |
+      Coordination of tenant onboarding, move-in / move-out, fit-out,
+      and ongoing tenant service request handling on the property.
+    children:
+      - id: BC-4940.40.10
+        name: Tenant Move-In Coordination
+        level: 3
+        industry: Real Estate
+        description: |
+          Coordination of tenant move-in including access, signage, and
+          orientation.
+        children: []
+      - id: BC-4940.40.20
+        name: Tenant Fit-Out Coordination
+        level: 3
+        industry: Real Estate
+        description: |
+          Coordination of tenant fit-out works, contractor access, and
+          landlord approvals.
+        children: []
+      - id: BC-4940.40.30
+        name: "Tenant Move-Out & Reinstatement"
+        level: 3
+        industry: Real Estate
+        description: |
+          Coordination of tenant move-out and reinstatement of demised
+          areas.
+        children: []
+      - id: BC-4940.40.40
+        name: Tenant Service Request Handling
+        level: 3
+        industry: Real Estate
+        description: |
+          Handling of tenant service requests during occupancy across
+          channels.
+        children: []
+  - id: BC-4940.50
+    name: "Property Security & Life Safety Operations"
+    level: 2
+    industry: Real Estate
+    description: |
+      Operations of surveillance, fire and life-safety systems, incident
+      response, and emergency evacuation at the property.
+    children:
+      - id: BC-4940.50.10
+        name: Property Surveillance Operations
+        level: 3
+        industry: Real Estate
+        description: |
+          Operation of CCTV and surveillance across common and
+          back-of-house areas.
+        children: []
+      - id: BC-4940.50.20
+        name: "Fire & Life Safety System Operations"
+        level: 3
+        industry: Real Estate
+        description: |
+          Operation of fire detection, suppression, and life-safety
+          systems including drills.
+        children: []
+      - id: BC-4940.50.30
+        name: Property Incident Response
+        level: 3
+        industry: Real Estate
+        description: |
+          Property-level incident response covering safety, theft, and
+          security events.
+        children: []
+      - id: BC-4940.50.40
+        name: Emergency Evacuation Operations
+        level: 3
+        industry: Real Estate
+        description: |
+          Execution of emergency evacuation plans and incident command
+          on property.
+        children: []
+  - id: BC-4940.60
+    name: Property Energy & Sustainability Operations
+    level: 2
+    industry: Real Estate
+    description: |
+      Property-level operation of energy, water, waste, indoor
+      environment, and tenant sub-metering programmes.
+    children:
+      - id: BC-4940.60.10
+        name: Property Energy Operations
+        level: 3
+        industry: Real Estate
+        description: |
+          Operation of property energy systems and consumption
+          monitoring against targets.
+        children: []
+      - id: BC-4940.60.20
+        name: "Water & Waste Operations"
+        level: 3
+        industry: Real Estate
+        description: |
+          Operation of property water, wastewater, and waste-segregation
+          programmes.
+        children: []
+      - id: BC-4940.60.30
+        name: Indoor Environmental Quality Operations
+        level: 3
+        industry: Real Estate
+        description: |
+          Operation of indoor air quality, lighting, and acoustic
+          comfort programmes.
+        children: []
+      - id: BC-4940.60.40
+        name: "Sub-Metering & Tenant Allocation"
+        level: 3
+        industry: Real Estate
+        description: |
+          Operation of sub-metering and tenant utility-consumption
+          allocation.
+        children: []
+  - id: BC-4940.70
+    name: "Property Accounting & Operating Reporting"
+    level: 2
+    industry: Real Estate
+    description: |
+      Property-level general ledger, tenant billing and receivables,
+      payables, and owner reporting.
+    children:
+      - id: BC-4940.70.10
+        name: Property General Ledger Operations
+        level: 3
+        industry: Real Estate
+        description: |
+          Operation of property-level general ledger and trial balance.
+        children: []
+      - id: BC-4940.70.20
+        name: "Tenant Billing & Receivables"
+        level: 3
+        industry: Real Estate
+        description: |
+          Billing of rent, recoveries, and ancillary charges and
+          collection of receivables.
+        children: []
+      - id: BC-4940.70.30
+        name: Property Payables Operations
+        level: 3
+        industry: Real Estate
+        description: |
+          Property-level accounts payable for utilities, vendors, and
+          contractors.
+        children: []
+      - id: BC-4940.70.40
+        name: Owner Reporting Pack
+        level: 3
+        industry: Real Estate
+        description: |
+          Periodic owner reporting packs covering operating performance
+          and variance.
+        children: []
+  - id: BC-4940.80
+    name: Common Area Maintenance Reconciliation
+    level: 2
+    industry: Real Estate
+    description: |
+      Specific landlord-tenant accounting cycle covering CAM and
+      service-charge budgeting, capture, reconciliation, and tenant
+      audit response.
+    children:
+      - id: BC-4940.80.10
+        name: "CAM Budget & Estimate Setting"
+        level: 3
+        industry: Real Estate
+        description: |
+          Setting of CAM and service-charge budgets and tenant
+          estimates for the year.
+        children: []
+      - id: BC-4940.80.20
+        name: CAM Actual Expense Capture
+        level: 3
+        industry: Real Estate
+        description: |
+          Capture of actual reimbursable expenses in scope of CAM and
+          service-charge categories.
+        children: []
+      - id: BC-4940.80.30
+        name: "CAM Reconciliation & Settlement"
+        level: 3
+        industry: Real Estate
+        description: |
+          Reconciliation of CAM actuals against estimates and
+          settlement of true-up amounts with tenants.
+        children: []
+      - id: BC-4940.80.40
+        name: Tenant CAM Audit Response
+        level: 3
+        industry: Real Estate
+        description: |
+          Response to tenant audit and inspection requests on CAM and
+          service-charge entitlements.
+        children: []

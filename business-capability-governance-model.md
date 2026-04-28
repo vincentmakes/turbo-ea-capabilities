@@ -681,6 +681,32 @@ Where an industry reference framework exists, anchor the upper levels (L1 / L2) 
 - **IMO International Maritime Solid Bulk Cargoes (IMSBC) Code** — bulk-mineral and concentrate maritime carriage.
 - **ASTM A/B-series and EN metal grade standards** — metallurgical product specifications.
 
+**Real Estate**
+
+- **OSCRE International (REIM-XML, oREIM Standards)** — open data standards for commercial real estate transactions, leasing, and operations.
+- **RESO (Real Estate Standards Organization) — Data Dictionary, Web API, OUID** — North American residential MLS, brokerage, and listing-data standards.
+- **RICS Standards — Red Book Global (Valuation), Black Book (Construction), New Rules of Measurement** — surveying, valuation, and construction professional standards.
+- **IPMS (International Property Measurement Standards)** — international building-area measurement.
+- **IFRS 16 / IAS 40 / ASC 842 / ASC 970** — lease accounting and investment-property / real-estate development accounting.
+- **INREV Guidelines, NCREIF / NCREIF-PREA NFI-ODCE Reporting Standards, EPRA BPR / sBPR** — institutional non-listed and listed real-estate investor reporting and indices.
+- **NAREIT, EPRA, GPR / FTSE EPRA Nareit indices** — listed real-estate index methodologies and disclosure conventions.
+- **GRESB (Real Estate Assessment, Development Benchmark)** — ESG benchmarking for real-estate funds, portfolios, and development projects.
+- **CRREM (Carbon Risk Real Estate Monitor), SBTi Buildings Sector Guidance** — pathway-aligned decarbonisation for real-estate portfolios.
+- **LEED, BREEAM, WELL, Fitwel, NABERS, Energy Star Portfolio Manager** — green-building, wellness, and operational-performance certifications for real-estate assets.
+- **WiredScore, SmartScore** — building digital connectivity and smart-building rating schemes.
+- **buildingSMART openBIM and ISO 16739 (IFC), COBie, ISO 19650** — built-asset data interchange and BIM information management.
+- **OmniClass, Uniformat, MasterFormat (CSI)** — construction information classification systems.
+- **ISO 41001 / ISO 41011** — facility management management systems and vocabulary.
+- **CREFC IRP (CRE Finance Council Investor Reporting Package), CREFC PRP, CMBS pooling and servicing standards** — commercial real-estate debt investor reporting.
+- **AIFMD (EU 2011/61/EU), ELTIF Regulation, US Investment Advisers Act** — real-estate fund and adviser regulatory regimes.
+- **RESPA (12 USC 2601), TILA-RESPA Integrated Disclosure (TRID), Dodd-Frank Title XIV** — US residential settlement and mortgage-disclosure regimes.
+- **Fair Housing Act (42 USC 3601), Equality Act 2010 (UK), Equal Credit Opportunity Act (15 USC 1691)** — fair-housing and anti-discrimination obligations.
+- **FinCEN Real Estate GTOs and the FinCEN Residential Real Estate Rule, EU AMLD-5/6, UK Economic Crime (Transparency and Enforcement) Act** — AML/KYC obligations on real-estate transactions and intermediaries.
+- **NAR Code of Ethics, NAR MLS Policy, ARELLO, IREM AMO/CPM standards** — North American brokerage and property-management professional standards.
+- **USPAP (Uniform Standards of Professional Appraisal Practice), IVS (International Valuation Standards)** — appraisal and valuation professional standards.
+- **EPC (EU EPBD, UK MEES Regulations 2015)** — building energy performance certification and minimum energy efficiency standards.
+- **International Building Code (ICC IBC, IRC, IEBC), Eurocodes, NBCC (Canada)** — building code anchor references.
+
 **Retail & Consumer Goods**
 
 - **ARTS / NRF Reference Model** — retail data and process taxonomy.

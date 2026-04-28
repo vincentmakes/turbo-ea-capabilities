@@ -1,0 +1,295 @@
+# Real Estate Capital Markets Management
+id: BC-4980
+name: Real Estate Capital Markets Management
+level: 1
+industry: Real Estate
+description: |
+  Real-estate-specific debt and equity capital markets discipline —
+  origination of senior, mezz, construction, and bridge debt; loan
+  servicing and asset management; CMBS and CRE CLO structuring; JV
+  equity programmes; REIT public capital raising; refinancing and
+  recapitalisation; and CRE loan portfolio risk management. Distinct
+  from generic banking credit (BC-1320) and corporate treasury
+  (BC-210) — anchored on RE collateral conventions, IRP reporting,
+  and DSCR / LTV covenants.
+references:
+  - https://www.crefc.org/cre/content/standards/investor_reporting_package__irp__9_3_overview.aspx
+  - https://www.reit.com/
+  - https://www.epra.com/
+  - https://www.alta.org/
+in_scope:
+  - Senior, mezzanine, construction, and bridge loan origination
+  - Loan boarding, covenant monitoring, modification, and special servicing
+  - CMBS and CRE CLO pooling, structuring, and IRP reporting
+  - JV equity sourcing, promote and waterfall structuring, partner reporting
+  - REIT public / private equity, debt, ATM programmes, and dividend policy
+  - Refinancing and recapitalisation execution
+  - CRE loan portfolio concentration, stress testing, and reserving
+out_of_scope:
+  - Generic banking credit and lending (BC-1320)
+  - Generic capital markets trading (BC-1370)
+  - Fund formation and LP capital raising (BC-4910)
+  - Acquisition transaction execution (BC-4930)
+children:
+  - id: BC-4980.10
+    name: Real Estate Debt Origination
+    level: 2
+    industry: Real Estate
+    description: |
+      Origination of senior, mezzanine, construction, and bridge real
+      estate debt against asset and sponsor underwriting.
+    children:
+      - id: BC-4980.10.10
+        name: Senior Mortgage Origination
+        level: 3
+        industry: Real Estate
+        description: |
+          Origination of senior mortgage loans on standing assets.
+        children: []
+      - id: BC-4980.10.20
+        name: "Construction & Bridge Loan Origination"
+        level: 3
+        industry: Real Estate
+        description: |
+          Origination of construction and bridge loans for development
+          and transitional assets.
+        children: []
+      - id: BC-4980.10.30
+        name: "Mezzanine & Preferred Equity Origination"
+        level: 3
+        industry: Real Estate
+        description: |
+          Origination of mezzanine debt and preferred equity in the
+          capital stack.
+        children: []
+      - id: BC-4980.10.40
+        name: "Term Sheet & Commitment Negotiation"
+        level: 3
+        industry: Real Estate
+        description: |
+          Negotiation of term sheets and commitment letters with
+          borrowers and sponsors.
+        children: []
+  - id: BC-4980.20
+    name: "Real Estate Debt Servicing & Asset Management"
+    level: 2
+    industry: Real Estate
+    description: |
+      Boarding and servicing of CRE loans and proactive monitoring,
+      modification, and workout where required.
+    children:
+      - id: BC-4980.20.10
+        name: "Loan Boarding & Servicing Setup"
+        level: 3
+        industry: Real Estate
+        description: |
+          Boarding of new CRE loans into servicing platform and setup
+          of payment and reporting flows.
+        children: []
+      - id: BC-4980.20.20
+        name: "Covenant & DSCR Monitoring"
+        level: 3
+        industry: Real Estate
+        description: |
+          Ongoing monitoring of loan covenants, DSCR, and LTV against
+          loan agreement triggers.
+        children: []
+      - id: BC-4980.20.30
+        name: "Loan Modification & Workout"
+        level: 3
+        industry: Real Estate
+        description: |
+          Negotiation of loan modifications and workouts on stressed
+          assets.
+        children: []
+      - id: BC-4980.20.40
+        name: Special Servicing Coordination
+        level: 3
+        industry: Real Estate
+        description: |
+          Coordination with special servicers on defaulted and
+          near-default loans in securitisations.
+        children: []
+  - id: BC-4980.30
+    name: "CMBS & Securitisation Management"
+    level: 2
+    industry: Real Estate
+    description: |
+      Aggregation of loan pools, structuring of CMBS and CRE CLO
+      transactions, and ongoing IRP reporting to investors.
+    children:
+      - id: BC-4980.30.10
+        name: Loan Pool Aggregation
+        level: 3
+        industry: Real Estate
+        description: |
+          Aggregation of loan pools eligible for securitisation.
+        children: []
+      - id: BC-4980.30.20
+        name: Securitisation Structuring
+        level: 3
+        industry: Real Estate
+        description: |
+          Structuring of CMBS and CRE CLO transactions including
+          tranching and ratings.
+        children: []
+      - id: BC-4980.30.30
+        name: IRP Investor Reporting
+        level: 3
+        industry: Real Estate
+        description: |
+          Investor reporting under the CREFC Investor Reporting Package.
+        children: []
+      - id: BC-4980.30.40
+        name: "Trustee & Servicer Coordination"
+        level: 3
+        industry: Real Estate
+        description: |
+          Coordination with trustees, master servicers, and rating
+          agencies on outstanding deals.
+        children: []
+  - id: BC-4980.40
+    name: "Joint Venture & Equity Partner Management"
+    level: 2
+    industry: Real Estate
+    description: |
+      Sourcing of JV equity, structuring of promote and waterfall
+      arrangements, and ongoing reporting and distributions to
+      partners.
+    children:
+      - id: BC-4980.40.10
+        name: JV Equity Sourcing
+        level: 3
+        industry: Real Estate
+        description: |
+          Sourcing of joint-venture equity from institutional and HNW
+          partners.
+        children: []
+      - id: BC-4980.40.20
+        name: "Promote & Waterfall Structuring"
+        level: 3
+        industry: Real Estate
+        description: |
+          Structuring of promote, hurdles, and waterfalls in JV
+          partnership agreements.
+        children: []
+      - id: BC-4980.40.30
+        name: "JV Partner Reporting & Distributions"
+        level: 3
+        industry: Real Estate
+        description: |
+          Reporting to JV partners and execution of contractual
+          distributions.
+        children: []
+  - id: BC-4980.50
+    name: REIT Capital Markets Management
+    level: 2
+    industry: Real Estate
+    description: |
+      Public and private REIT equity and debt issuance, ATM
+      programmes, and dividend policy management.
+    children:
+      - id: BC-4980.50.10
+        name: Public REIT Equity Issuance
+        level: 3
+        industry: Real Estate
+        description: |
+          Issuance of REIT equity through follow-on offerings and
+          private placements.
+        children: []
+      - id: BC-4980.50.20
+        name: "REIT Debt & Bond Issuance"
+        level: 3
+        industry: Real Estate
+        description: |
+          Issuance of REIT unsecured debt, bonds, and exchangeable
+          notes.
+        children: []
+      - id: BC-4980.50.30
+        name: ATM Programme Management
+        level: 3
+        industry: Real Estate
+        description: |
+          Management of at-the-market equity programmes including
+          pacing and disclosure.
+        children: []
+      - id: BC-4980.50.40
+        name: Dividend Policy Management
+        level: 3
+        industry: Real Estate
+        description: |
+          Management of REIT dividend policy aligned with REIT
+          distribution requirements and AFFO.
+        children: []
+  - id: BC-4980.60
+    name: "Refinancing & Recapitalisation Management"
+    level: 2
+    industry: Real Estate
+    description: |
+      Proactive refinancing and recapitalisation of standing-asset
+      capital stacks across the hold period.
+    children:
+      - id: BC-4980.60.10
+        name: "Refinancing Strategy & Pacing"
+        level: 3
+        industry: Real Estate
+        description: |
+          Definition of refinancing strategy and maturity pacing across
+          the portfolio.
+        children: []
+      - id: BC-4980.60.20
+        name: Refinancing Execution
+        level: 3
+        industry: Real Estate
+        description: |
+          Execution of refinancing transactions on individual assets
+          and pools.
+        children: []
+      - id: BC-4980.60.30
+        name: Recapitalisation Restructuring
+        level: 3
+        industry: Real Estate
+        description: |
+          Restructuring of capital stacks through partner recap or
+          equity injections.
+        children: []
+  - id: BC-4980.70
+    name: Real Estate Loan Portfolio Risk Management
+    level: 2
+    industry: Real Estate
+    description: |
+      Concentration monitoring, stress testing, loss reserving, and
+      watchlist management for CRE loan portfolios.
+    children:
+      - id: BC-4980.70.10
+        name: "LTV / DSCR Concentration Monitoring"
+        level: 3
+        industry: Real Estate
+        description: |
+          Monitoring of LTV and DSCR concentration across the CRE loan
+          portfolio.
+        children: []
+      - id: BC-4980.70.20
+        name: CRE Loan Stress Testing
+        level: 3
+        industry: Real Estate
+        description: |
+          Stress testing of CRE loan portfolio against rate, vacancy,
+          and value shocks.
+        children: []
+      - id: BC-4980.70.30
+        name: "CECL / IFRS 9 Loss Reserving (CRE)"
+        level: 3
+        industry: Real Estate
+        description: |
+          Loss reserving for CRE portfolio under CECL and IFRS 9
+          expected-credit-loss frameworks.
+        children: []
+      - id: BC-4980.70.40
+        name: "Watchlist & Default Tracking"
+        level: 3
+        industry: Real Estate
+        description: |
+          Maintenance of watchlist and tracking of defaulted loans
+          across the portfolio.
+        children: []

@@ -1,0 +1,285 @@
+# Real Estate Acquisition & Disposition Management
+id: BC-4930
+name: "Real Estate Acquisition & Disposition Management"
+level: 1
+industry: Real Estate
+description: |
+  Transaction discipline covering sourcing, underwriting, due diligence,
+  structuring, negotiation, closing, and post-closing onboarding for
+  real-estate acquisitions and dispositions across direct, portfolio,
+  and entity-level deals.
+references:
+  - https://www.oscre.org/standards
+  - https://www.alta.org/
+  - https://www.astm.org/standards/e1527
+  - https://www.rics.org/profession-standards
+in_scope:
+  - Acquisition lead sourcing and broker management
+  - Underwriting (DCF, comparables, sensitivity, scenario)
+  - Physical, environmental, title, lease, and financial due diligence
+  - Bid strategy, LOI, PSA, and tax / vehicle structuring
+  - Escrow, closing, settlement statement, and recording
+  - Disposition strategy, sales marketing, buyer selection
+  - Post-acquisition data and contract onboarding
+out_of_scope:
+  - Investment committee governance and fund mandates (BC-4910)
+  - Standing-asset business plans (BC-4920)
+  - Construction draws and lender covenant monitoring (BC-4980)
+  - Brokerage as a service line (BC-4960)
+children:
+  - id: BC-4930.10
+    name: "Acquisition Sourcing & Screening"
+    level: 2
+    industry: Real Estate
+    description: |
+      Sourcing of acquisition opportunities through brokers, principals,
+      and proprietary channels and initial screening against criteria.
+    children:
+      - id: BC-4930.10.10
+        name: Acquisition Lead Sourcing
+        level: 3
+        industry: Real Estate
+        description: |
+          Sourcing of acquisition leads across direct, broker, and
+          off-market channels.
+        children: []
+      - id: BC-4930.10.20
+        name: "Broker & Intermediary Management"
+        level: 3
+        industry: Real Estate
+        description: |
+          Management of broker and intermediary relationships supplying
+          acquisition opportunities.
+        children: []
+      - id: BC-4930.10.30
+        name: "Initial Screening & Bid Decisions"
+        level: 3
+        industry: Real Estate
+        description: |
+          Initial screening of opportunities and decisions to bid or
+          pass.
+        children: []
+  - id: BC-4930.20
+    name: Acquisition Underwriting
+    level: 2
+    industry: Real Estate
+    description: |
+      Financial, market, and risk underwriting of target assets to
+      derive bid pricing and return expectations.
+    children:
+      - id: BC-4930.20.10
+        name: "Cash Flow & DCF Underwriting"
+        level: 3
+        industry: Real Estate
+        description: |
+          Construction of asset cash flow and discounted-cash-flow
+          underwriting models.
+        children: []
+      - id: BC-4930.20.20
+        name: "Comparable Sales & Cap Rate Analysis"
+        level: 3
+        industry: Real Estate
+        description: |
+          Analysis of comparable sales and prevailing cap rates to
+          calibrate value.
+        children: []
+      - id: BC-4930.20.30
+        name: "Sensitivity & Scenario Modelling"
+        level: 3
+        industry: Real Estate
+        description: |
+          Sensitivity and scenario modelling of returns under varying
+          rent, vacancy, and exit assumptions.
+        children: []
+  - id: BC-4930.30
+    name: Due Diligence Management
+    level: 2
+    industry: Real Estate
+    description: |
+      Coordination and execution of multi-disciplinary due diligence on
+      target acquisitions including physical, environmental, legal,
+      lease, and financial workstreams.
+    children:
+      - id: BC-4930.30.10
+        name: "Physical & Engineering Due Diligence"
+        level: 3
+        industry: Real Estate
+        description: |
+          Physical condition assessments and engineering due diligence
+          on target assets.
+        children: []
+      - id: BC-4930.30.20
+        name: "Environmental Due Diligence (Phase I / II)"
+        level: 3
+        industry: Real Estate
+        description: |
+          Environmental due diligence including ASTM Phase I and Phase
+          II assessments.
+        children: []
+      - id: BC-4930.30.30
+        name: "Title, Survey & Zoning Diligence"
+        level: 3
+        industry: Real Estate
+        description: |
+          Diligence on title, survey, easements, and zoning compliance.
+        children: []
+      - id: BC-4930.30.40
+        name: "Lease & Tenancy Diligence"
+        level: 3
+        industry: Real Estate
+        description: |
+          Lease abstract review, estoppel certificate collection, and
+          tenant interviews.
+        children: []
+      - id: BC-4930.30.50
+        name: "Financial & Tax Diligence"
+        level: 3
+        industry: Real Estate
+        description: |
+          Financial and tax diligence on operating statements, OpEx,
+          and historical tax assessments.
+        children: []
+  - id: BC-4930.40
+    name: "Transaction Structuring & Negotiation"
+    level: 2
+    industry: Real Estate
+    description: |
+      Bid strategy, deal structuring, and negotiation of binding
+      transaction documents.
+    children:
+      - id: BC-4930.40.10
+        name: "Bid & Offer Strategy"
+        level: 3
+        industry: Real Estate
+        description: |
+          Definition of bid and offer strategy including pricing and
+          deal terms positioning.
+        children: []
+      - id: BC-4930.40.20
+        name: Letter of Intent Negotiation
+        level: 3
+        industry: Real Estate
+        description: |
+          Negotiation of letters of intent and exclusivity periods.
+        children: []
+      - id: BC-4930.40.30
+        name: Purchase & Sale Agreement Negotiation
+        level: 3
+        industry: Real Estate
+        description: |
+          Negotiation and execution of purchase and sale agreements
+          including representations and warranties.
+        children: []
+      - id: BC-4930.40.40
+        name: "Tax & Vehicle Structuring"
+        level: 3
+        industry: Real Estate
+        description: |
+          Structuring of acquisition vehicles for tax efficiency
+          including 1031 exchanges and entity wrappers.
+        children: []
+  - id: BC-4930.50
+    name: "Closing & Settlement Management"
+    level: 2
+    industry: Real Estate
+    description: |
+      Management of escrow, closing conditions, settlement funding, and
+      recording for closed transactions.
+    children:
+      - id: BC-4930.50.10
+        name: "Escrow & Closing Conditions"
+        level: 3
+        industry: Real Estate
+        description: |
+          Management of escrow accounts and tracking of closing
+          conditions to satisfaction.
+        children: []
+      - id: BC-4930.50.20
+        name: "Closing Funds & Settlement Statement"
+        level: 3
+        industry: Real Estate
+        description: |
+          Coordination of closing funds and reconciliation against the
+          settlement statement.
+        children: []
+      - id: BC-4930.50.30
+        name: "Title Insurance & Recording"
+        level: 3
+        industry: Real Estate
+        description: |
+          Issuance of title insurance and recording of deeds and
+          mortgages.
+        children: []
+  - id: BC-4930.60
+    name: "Disposition & Exit Management"
+    level: 2
+    industry: Real Estate
+    description: |
+      Sale-side discipline covering disposition pricing, marketing,
+      buyer selection, and post-closing obligations.
+    children:
+      - id: BC-4930.60.10
+        name: "Disposition Strategy & Pricing"
+        level: 3
+        industry: Real Estate
+        description: |
+          Definition of disposition strategy, pricing, and target buyer
+          pools.
+        children: []
+      - id: BC-4930.60.20
+        name: "Sales Marketing & Buyer Tour"
+        level: 3
+        industry: Real Estate
+        description: |
+          Sales-side marketing including offering memorandum, data room,
+          and buyer tours.
+        children: []
+      - id: BC-4930.60.30
+        name: "Buyer Selection & Bid Process"
+        level: 3
+        industry: Real Estate
+        description: |
+          Selection of buyer through call-for-offer, best-and-final, or
+          structured auction processes.
+        children: []
+      - id: BC-4930.60.40
+        name: Post-Closing Obligations
+        level: 3
+        industry: Real Estate
+        description: |
+          Tracking of post-closing obligations including holdbacks,
+          earnouts, and indemnity claims.
+        children: []
+  - id: BC-4930.70
+    name: Post-Acquisition Onboarding
+    level: 2
+    industry: Real Estate
+    description: |
+      Handover of newly acquired assets from the transaction team to
+      asset and property management, including data and contract
+      onboarding.
+    children:
+      - id: BC-4930.70.10
+        name: Asset Data Migration
+        level: 3
+        industry: Real Estate
+        description: |
+          Migration of asset data, drawings, and operating records into
+          owner systems.
+        children: []
+      - id: BC-4930.70.20
+        name: "Lease & Tenant Data Onboarding"
+        level: 3
+        industry: Real Estate
+        description: |
+          Onboarding of lease abstracts and tenant data into landlord
+          systems.
+        children: []
+      - id: BC-4930.70.30
+        name: Vendor Contract Novation
+        level: 3
+        industry: Real Estate
+        description: |
+          Novation or replacement of in-place vendor and service
+          contracts to the new owner.
+        children: []

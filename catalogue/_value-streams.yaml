@@ -128,6 +128,16 @@ value_streams:
         capability_id: BC-4760
         industry_variant: Education
         notes: Tenure track and academic promotion
+      - stage_order: 3
+        stage_name: Selection & Hire
+        capability_id: BC-4960
+        industry_variant: Real Estate
+        notes: Agent licence and brokerage sponsorship verification at hire
+      - stage_order: 5
+        stage_name: Performance & Development
+        capability_id: BC-4990
+        industry_variant: Real Estate
+        notes: Agent continuing education tracking
   - name: Issue-to-Resolution
     industries: [Cross-Industry]
     stages:
@@ -617,6 +627,14 @@ value_streams:
         stage_name: Resolution (Title IX)
         capability_id: BC-4810
         notes: Sanctioning and statutory closure
+      - stage_order: 1
+        stage_name: Issue Capture (Property Tenant Service)
+        capability_id: BC-4940
+        notes: Tenant service request and complaint capture on commercial and residential properties
+      - stage_order: 4
+        stage_name: Resolution (Property Tenant Service)
+        capability_id: BC-4940
+        notes: Tenant service recovery and incident closure on commercial and residential properties
   - name: Order-to-Cash
     industries: [Cross-Industry]
     stages:
@@ -1143,6 +1161,18 @@ value_streams:
         capability_id: BC-4680
         industry_variant: Chemicals
         notes: Bulk and hazmat outbound chemical logistics
+      - stage_order: 7
+        stage_name: Customer Invoicing
+        capability_id: BC-4940
+        notes: Tenant rent and recoveries billing
+      - stage_order: 8
+        stage_name: Cash Collection & Application
+        capability_id: BC-4940
+        notes: Tenant rent collection and application against AR
+      - stage_order: 9
+        stage_name: Revenue Recognition
+        capability_id: BC-4940
+        notes: Lease revenue recognition under IFRS 16 / ASC 842
   - name: Procure-to-Pay
     industries: [Cross-Industry]
     stages:
@@ -1305,6 +1335,14 @@ value_streams:
         capability_id: BC-4670
         industry_variant: Chemicals
         notes: Chemical raw material and toller supplier qualification
+      - stage_order: 5
+        stage_name: Goods/Services Receipt
+        capability_id: BC-4940
+        notes: Property vendor service receipt and verification
+      - stage_order: 7
+        stage_name: Payment Execution
+        capability_id: BC-4940
+        notes: Property vendor payment execution
   - name: Idea-to-Market
     industries: [Cross-Industry]
     stages:
@@ -1906,6 +1944,30 @@ value_streams:
         capability_id: BC-4810
         industry_variant: Education
         notes: IPEDS, HESA, and equivalent statutory education returns
+      - stage_order: 1
+        stage_name: Transaction Capture
+        capability_id: BC-4940
+        notes: Property-level GL transaction capture
+      - stage_order: 4
+        stage_name: Consolidation
+        capability_id: BC-4910
+        notes: Fund NAV consolidation across vehicles
+      - stage_order: 5
+        stage_name: Management Reporting
+        capability_id: BC-4910
+        notes: LP and investor reporting
+      - stage_order: 5
+        stage_name: Management Reporting
+        capability_id: BC-4940
+        notes: Owner reporting pack
+      - stage_order: 6
+        stage_name: Statutory & Regulatory Reporting
+        capability_id: BC-4910
+        notes: INREV, NCREIF, and EPRA index submission
+      - stage_order: 6
+        stage_name: Statutory & Regulatory Reporting
+        capability_id: BC-4980
+        notes: CREFC IRP investor reporting on CMBS pools
   - name: Acquire-to-Retire
     industries: [Cross-Industry]
     stages:
@@ -2292,6 +2354,22 @@ value_streams:
         capability_id: BC-3200
         industry_variant: Public Sector
         notes: Policy evaluation and ex-post review
+      - stage_order: 1
+        stage_name: Strategy Formulation
+        capability_id: BC-4910
+        notes: Real-estate fund mandate and investment strategy formulation
+      - stage_order: 2
+        stage_name: Portfolio Definition
+        capability_id: BC-4910
+        notes: Real-estate portfolio construction, pacing, and allocation
+      - stage_order: 4
+        stage_name: Delivery & Governance
+        capability_id: BC-4920
+        notes: Asset business plan delivery and governance
+      - stage_order: 6
+        stage_name: Benefits Realisation
+        capability_id: BC-4920
+        notes: Realisation against asset value-creation thesis
   - name: Risk-to-Mitigation
     industries: [Cross-Industry]
     stages:
@@ -2462,6 +2540,18 @@ value_streams:
         capability_id: BC-4480
         industry_variant: Mining & Metals
         notes: Trading book price and counterparty risk monitoring
+      - stage_order: 3
+        stage_name: Risk Assessment
+        capability_id: BC-4920
+        notes: Asset physical, climate, market, and tenant credit risk assessment
+      - stage_order: 4
+        stage_name: Treatment & Control Design
+        capability_id: BC-4990
+        notes: Real-estate compliance controls including fair housing, AML, RESPA, and MEES
+      - stage_order: 5
+        stage_name: Monitoring
+        capability_id: BC-4980
+        notes: CRE loan portfolio LTV / DSCR concentration and stress-test monitoring
   - name: Audit-to-Action
     industries: [Cross-Industry]
     stages:
@@ -2549,6 +2639,14 @@ value_streams:
         capability_id: BC-4750
         industry_variant: Education
         notes: Quality improvement action tracking
+      - stage_order: 3
+        stage_name: Fieldwork
+        capability_id: BC-4970
+        notes: Valuation QA sampling and peer review fieldwork
+      - stage_order: 5
+        stage_name: Remediation Tracking
+        capability_id: BC-4990
+        notes: Remediation tracking of RESPA, AML, and fair-housing audit findings
   - name: Threat-to-Mitigation
     industries: [Cross-Industry]
     stages:
@@ -2818,8 +2916,36 @@ value_streams:
         capability_id: BC-4800
         industry_variant: Education
         notes: Alumni engagement and giving programmes
+      - stage_order: 3
+        stage_name: Demand Generation
+        capability_id: BC-4950
+        notes: Vacancy listing and marketing for landlord-side leasing
+      - stage_order: 4
+        stage_name: Lead Capture & Nurture
+        capability_id: BC-4950
+        notes: Tenant prospect inquiry capture and qualification
+      - stage_order: 5
+        stage_name: Conversion
+        capability_id: BC-4950
+        notes: Tenant application screening and lease execution
+      - stage_order: 7
+        stage_name: Retention & Advocacy
+        capability_id: BC-4950
+        notes: Renewal pipeline and retention programmes
+      - stage_order: 3
+        stage_name: Demand Generation
+        capability_id: BC-4960
+        notes: Listing marketing across MLS, portals, and syndication
+      - stage_order: 4
+        stage_name: Lead Capture & Nurture
+        capability_id: BC-4960
+        notes: Buyer and tenant engagement on representation mandates
+      - stage_order: 5
+        stage_name: Conversion
+        capability_id: BC-4960
+        notes: Offer, negotiation, and brokered closing
   - name: Application-to-Funding
-    industries: [Banking & Capital Markets]
+    industries: [Banking & Capital Markets, Real Estate]
     stages:
       - stage_order: 1
         stage_name: Application Capture
@@ -2884,6 +3010,31 @@ value_streams:
         capability_id: BC-1410
         industry_variant: Banking
         notes: Banking risk overview
+      - stage_order: 1
+        stage_name: Application Capture
+        capability_id: BC-4980
+        industry_variant: Real Estate
+        notes: CRE debt origination intake — senior, mezz, construction, and bridge loans
+      - stage_order: 3
+        stage_name: Underwriting & Decisioning
+        capability_id: BC-4980
+        industry_variant: Real Estate
+        notes: CRE loan underwriting against asset and sponsor
+      - stage_order: 5
+        stage_name: Documentation & Booking
+        capability_id: BC-4980
+        industry_variant: Real Estate
+        notes: CRE loan boarding and servicing setup
+      - stage_order: 7
+        stage_name: Servicing & Collections
+        capability_id: BC-4980
+        industry_variant: Real Estate
+        notes: CRE loan servicing and special-servicing coordination
+      - stage_order: 8
+        stage_name: Portfolio Monitoring
+        capability_id: BC-4980
+        industry_variant: Real Estate
+        notes: Covenant, DSCR, and LTV monitoring across CRE loan portfolio
   - name: Discovery-to-Approval
     industries: [Pharmaceuticals & Life Sciences]
     stages:
@@ -3178,6 +3329,7 @@ value_streams:
       - Electrical Components & Equipment
       - Transportation & Logistics
       - Oil & Gas
+      - Real Estate
     stages:
       - stage_order: 1
         stage_name: Notification / Request
@@ -3297,6 +3449,26 @@ value_streams:
         capability_id: BC-2060
         industry_variant: HVAC & Building Automation Systems
         notes: Service KPIs, SLA reporting
+      - stage_order: 1
+        stage_name: Notification / Request
+        capability_id: BC-4940
+        industry_variant: Real Estate
+        notes: Tenant work-order intake on commercial and residential properties
+      - stage_order: 2
+        stage_name: Triage & Planning
+        capability_id: BC-4940
+        industry_variant: Real Estate
+        notes: Preventive and reactive maintenance triage
+      - stage_order: 3
+        stage_name: Execution
+        capability_id: BC-4940
+        industry_variant: Real Estate
+        notes: Maintenance execution including statutory and compliance inspections
+      - stage_order: 5
+        stage_name: Verification & Closure
+        capability_id: BC-4940
+        industry_variant: Real Estate
+        notes: Work-order verification and closure with tenant
   - name: Crisis-to-Recovery
     industries: [Cross-Industry]
     stages:
@@ -3656,6 +3828,18 @@ value_streams:
         capability_id: BC-4650
         industry_variant: Chemicals
         notes: Hazard, SVHC, and product carbon footprint data collection
+      - stage_order: 2
+        stage_name: Data Collection
+        capability_id: BC-4920
+        notes: Asset-level energy, water, waste, and carbon intensity data collection
+      - stage_order: 4
+        stage_name: Reporting & Disclosure
+        capability_id: BC-4920
+        notes: GRESB asset and entity submission
+      - stage_order: 4
+        stage_name: Reporting & Disclosure
+        capability_id: BC-4990
+        notes: EPC, MEES, LL97, and EPBD building energy disclosure
   - name: Concept-to-Manufacture
     industries:
       - Manufacturing & Industrial
@@ -5045,7 +5229,7 @@ value_streams:
         capability_id: BC-4240
         notes: Cancellation processing and service wind-down coordination
   - name: Engagement-to-Realisation
-    industries: [Professional Services]
+    industries: [Professional Services, Real Estate]
     stages:
       - stage_order: 1
         stage_name: Engagement Acceptance
@@ -5099,6 +5283,26 @@ value_streams:
         stage_name: File Lock-Down & Retention
         capability_id: BC-4300
         notes: Retention configuration and engagement-file archival
+      - stage_order: 1
+        stage_name: Engagement Acceptance
+        capability_id: BC-4970
+        industry_variant: Real Estate
+        notes: Valuation engagement intake, scoping, conflict and independence checks
+      - stage_order: 3
+        stage_name: Delivery
+        capability_id: BC-4970
+        industry_variant: Real Estate
+        notes: Valuation approach application and report drafting
+      - stage_order: 4
+        stage_name: Quality Review
+        capability_id: BC-4970
+        industry_variant: Real Estate
+        notes: Reviewer sign-off and quality control
+      - stage_order: 5
+        stage_name: Issuance
+        capability_id: BC-4970
+        industry_variant: Real Estate
+        notes: Valuation report issuance to client and lender
   - name: Insight-to-Reuse
     industries: [Professional Services]
     stages:
@@ -5204,3 +5408,139 @@ value_streams:
         stage_name: Impact Assessment
         capability_id: BC-4780
         notes: Bibliometric, altmetric, and case-study impact assessment
+  - name: Site-to-Stabilisation
+    industries: [Real Estate]
+    stages:
+      - stage_order: 1
+        stage_name: Site Sourcing & Origination
+        capability_id: BC-4900
+        notes: Site identification, off-market origination, and pipeline tracking
+      - stage_order: 2
+        stage_name: Feasibility & Underwriting
+        capability_id: BC-4900
+        notes: Highest & best use, programme studies, pro forma, and land underwriting
+      - stage_order: 3
+        stage_name: Entitlement & Permitting
+        capability_id: BC-4900
+        notes: Zoning, planning consent, environmental review, and building permits
+      - stage_order: 4
+        stage_name: Development Capitalisation
+        capability_id: BC-4900
+        notes: Equity, construction loans, JV, and public incentives sourcing
+      - stage_order: 4
+        stage_name: Development Capitalisation
+        capability_id: BC-4980
+        notes: Construction and bridge loan origination
+      - stage_order: 5
+        stage_name: Design & Construction Execution
+        capability_id: BC-4900
+        notes: Design oversight and owner-side construction monitoring
+      - stage_order: 5
+        stage_name: Design & Construction Execution
+        capability_id: BC-1150
+        notes: Construction execution by GC and trades
+      - stage_order: 6
+        stage_name: Lease-Up & Stabilisation
+        capability_id: BC-4900
+        notes: Pre-leasing, opening, and ramp to stabilised performance
+      - stage_order: 6
+        stage_name: Lease-Up & Stabilisation
+        capability_id: BC-4950
+        notes: Pre-leasing campaigns and initial lease execution
+      - stage_order: 7
+        stage_name: Operational Handover
+        capability_id: BC-4940
+        notes: Handover into ongoing property management operations
+  - name: Sourcing-to-Onboarding
+    industries: [Real Estate]
+    stages:
+      - stage_order: 1
+        stage_name: Deal Sourcing
+        capability_id: BC-4930
+        notes: Acquisition lead sourcing across direct, broker, and off-market channels
+      - stage_order: 2
+        stage_name: Underwriting
+        capability_id: BC-4930
+        notes: Cash flow, comparables, sensitivity, and scenario underwriting
+      - stage_order: 3
+        stage_name: Due Diligence
+        capability_id: BC-4930
+        notes: Physical, environmental, title, lease, and financial diligence
+      - stage_order: 4
+        stage_name: Structuring & Negotiation
+        capability_id: BC-4930
+        notes: Bid strategy, LOI, PSA, and tax / vehicle structuring
+      - stage_order: 5
+        stage_name: Closing & Settlement
+        capability_id: BC-4930
+        notes: Escrow, settlement statement, and recording
+      - stage_order: 6
+        stage_name: Operational Onboarding
+        capability_id: BC-4930
+        notes: Asset and lease data migration and vendor contract novation
+      - stage_order: 7
+        stage_name: Asset Management Handover
+        capability_id: BC-4920
+        notes: Handover to ongoing asset stewardship and business plan execution
+  - name: Mandate-to-Distribution
+    industries: [Real Estate]
+    stages:
+      - stage_order: 1
+        stage_name: Mandate & Strategy Definition
+        capability_id: BC-4910
+        notes: Fund / mandate definition and investment strategy
+      - stage_order: 2
+        stage_name: Vehicle Formation
+        capability_id: BC-4910
+        notes: Fund structuring, vehicle setup, and tax-efficient holding
+      - stage_order: 3
+        stage_name: Capital Raising
+        capability_id: BC-4910
+        notes: Investor targeting, subscription, and fund closing
+      - stage_order: 4
+        stage_name: Capital Deployment
+        capability_id: BC-4910
+        notes: Pipeline pacing, allocation across vehicles, and capital calls
+      - stage_order: 5
+        stage_name: NAV & Performance Management
+        capability_id: BC-4910
+        notes: NAV computation, attribution, and fee / waterfall calculation
+      - stage_order: 6
+        stage_name: LP Reporting
+        capability_id: BC-4910
+        notes: LP reporting and INREV / NCREIF / EPRA index submission
+      - stage_order: 7
+        stage_name: Distribution & Wind-Down
+        capability_id: BC-4910
+        notes: Periodic distributions and end-of-life fund wind-down
+  - name: Listing-to-Closing
+    industries: [Real Estate]
+    stages:
+      - stage_order: 1
+        stage_name: Listing Pursuit & Win
+        capability_id: BC-4960
+        notes: Listing pitch, CMA, and win of the listing mandate
+      - stage_order: 2
+        stage_name: Listing Setup & Marketing
+        capability_id: BC-4960
+        notes: Listing agreement, MLS capture, media production, and syndication
+      - stage_order: 3
+        stage_name: Showing & Engagement
+        capability_id: BC-4960
+        notes: Showings, open houses, and prospect engagement
+      - stage_order: 4
+        stage_name: Offer & Negotiation
+        capability_id: BC-4960
+        notes: Offer drafting, counter-offers, and multiple-offer handling
+      - stage_order: 5
+        stage_name: Contingency & Closing Coordination
+        capability_id: BC-4960
+        notes: Contingency tracking and coordination with escrow / conveyancing
+      - stage_order: 6
+        stage_name: Closing Execution
+        capability_id: BC-4960
+        notes: Closing-day coordination and key handover
+      - stage_order: 7
+        stage_name: Commission Settlement
+        capability_id: BC-4960
+        notes: Cooperating-broker settlement, commission disbursement, and referral fees
