@@ -162,7 +162,10 @@ export default function CatalogueBrowser({ data, valueStreams }: Props) {
   const allIndustries = useMemo(() => {
     const s = new Set<string>();
     for (const c of data) for (const ind of splitIndustry(c.industry)) s.add(ind);
-    return Array.from(s).sort();
+    const sorted = Array.from(s).sort();
+    const cross = sorted.filter((i) => i === "Cross-Industry");
+    const rest = sorted.filter((i) => i !== "Cross-Industry");
+    return [...cross, ...rest];
   }, [data]);
 
   const valueStreamNames = useMemo(
@@ -697,6 +700,7 @@ function FilterBar({
           options={allIndustries}
           selected={industries}
           onChange={onIndustries}
+          highlight="Cross-Industry"
         />
       )}
 
@@ -728,9 +732,11 @@ interface MultiSelectProps {
   groups?: { label: string; options: string[] }[];
   selected: Set<string>;
   onChange: (next: Set<string>) => void;
+  /** When set, the option matching this string gets the `is-highlight` class. */
+  highlight?: string;
 }
 
-function MultiSelect({ label, options, groups, selected, onChange }: MultiSelectProps) {
+function MultiSelect({ label, options, groups, selected, onChange, highlight }: MultiSelectProps) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -794,7 +800,10 @@ function MultiSelect({ label, options, groups, selected, onChange }: MultiSelect
                 <div key={g.label} class="multi-select-group">
                   <div class="multi-select-group-label">{g.label}</div>
                   {g.options.map((opt) => (
-                    <label key={`${g.label}::${opt}`} class="multi-select-option">
+                    <label
+                      key={`${g.label}::${opt}`}
+                      class={`multi-select-option${opt === highlight ? " is-highlight" : ""}`}
+                    >
                       <input
                         type="checkbox"
                         checked={selected.has(opt)}
@@ -806,7 +815,10 @@ function MultiSelect({ label, options, groups, selected, onChange }: MultiSelect
                 </div>
               ))
             : options.map((opt) => (
-                <label key={opt} class="multi-select-option">
+                <label
+                  key={opt}
+                  class={`multi-select-option${opt === highlight ? " is-highlight" : ""}`}
+                >
                   <input
                     type="checkbox"
                     checked={selected.has(opt)}
