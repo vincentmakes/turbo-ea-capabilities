@@ -470,6 +470,29 @@ Where an industry reference framework exists, anchor the upper levels (L1 / L2) 
 - **MiFID II / MiFIR, EMIR, CSDR, SFTR** — market structure, derivatives, settlement, securities financing.
 - **FATF recommendations** — AML/CFT.
 
+**Chemicals**
+
+- **REACH (EC 1907/2006)** — EU registration, evaluation, authorisation, and restriction of chemicals.
+- **CLP Regulation (EC 1272/2008)** — EU classification, labelling, and packaging of substances and mixtures.
+- **TSCA (15 USC 2601), TSCA Inventory, EPA Significant New Use Rules (SNUR)** — US toxic substances control and inventory management.
+- **UN GHS (Globally Harmonised System of Classification and Labelling of Chemicals)** — international hazard classification and labelling.
+- **K-REACH, China MEE Order 12 (new chemical substance notification), Turkey KKDIK, UK REACH** — national chemical inventory and notification regimes.
+- **Stockholm Convention on POPs, Rotterdam Convention (PIC), Minamata Convention on Mercury** — international chemicals treaties.
+- **Chemical Weapons Convention (CWC) and OPCW Schedules 1-3** — chemical weapons treaty and dual-use precursor controls.
+- **Responsible Care (ICCA Global Charter)** — chemical industry health, safety, environment, and security self-regulation framework.
+- **CCPS Risk-Based Process Safety (RBPS) — AIChE Center for Chemical Process Safety** — process safety management framework for chemical and petrochemical operations.
+- **OSHA PSM (29 CFR 1910.119), EPA RMP (40 CFR 68), Seveso III Directive (2012/18/EU)** — process safety and major-accident hazard regulation.
+- **IEC 61508 / IEC 61511** — functional safety and safety instrumented systems for the process industries.
+- **NFPA 30, NFPA 70, NFPA 654, NFPA 704** — flammable liquids, electrical, combustible dust, and hazard-identification standards.
+- **ASME Section VIII, ASME B31.3, API 510 / 570 / 653** — pressure vessel, process piping, and storage tank inspection standards.
+- **HAZOP, HAZID, LOPA, Bow-Tie analysis** — process hazard review and barrier-analysis methods.
+- **Cefic SQAS, Together for Sustainability (TfS)** — chemical industry supplier HSES and sustainability self-assessment programmes.
+- **EFfCI GMP (cosmetic ingredients), IPEC GMP (pharmaceutical excipients), FSSC 22000 Cat I (food-contact chemicals)** — sector-specific GMP regimes for chemicals supplied into regulated downstream markets.
+- **CAS Registry Numbers, EC / EINECS Numbers, UN Numbers, IUCLID 6 (ECHA dossier format)** — chemical substance identification and dossier interchange.
+- **CIDX / Chem eStandards, GS1 EPCIS for chemical traceability** — chemical industry data interchange and event-based traceability.
+- **ADR / RID / IMDG Code / IATA DGR / 49 CFR 100-185** — dangerous goods transport regulation.
+- **GHG Protocol, ISCC PLUS (mass balance), ISO 14067 (product carbon footprint), TfS PCF Guideline** — GHG accounting and chemicals-specific product carbon footprint.
+
 **Oil & Gas**
 
 - **API standards (American Petroleum Institute — Spec 5L line pipe, Spec 6A wellhead, Std 510 pressure-vessel inspection, Std 570 piping inspection, Std 653 tank inspection, RP 14C SAFE, RP 754 process-safety KPIs)** — equipment, well-architecture, pipeline, refining, and process-safety standards.

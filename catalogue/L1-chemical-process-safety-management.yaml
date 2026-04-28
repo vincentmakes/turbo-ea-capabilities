@@ -1,0 +1,304 @@
+# Chemical Process Safety Management
+id: BC-4440
+name: Chemical Process Safety Management
+level: 1
+industry: Chemicals
+description: |
+  Prevention of major-accident hazards in reactive, flammable, and toxic
+  chemical processes - process hazard analysis, mechanical integrity,
+  safety instrumented systems, reactive and combustible hazards,
+  performance reporting, and emergency response. Distinct from
+  cross-industry HSE management (BC-730), which retains occupational
+  health, environment, and personal-safety scope.
+references:
+  - https://www.osha.gov/process-safety-management
+  - https://www.aiche.org/ccps
+  - https://environment.ec.europa.eu/topics/industrial-emissions-and-safety/major-accident-hazards-seveso_en
+  - https://webstore.iec.ch/publication/61289
+children:
+  - id: BC-4440.10
+    name: Process Hazard Analysis
+    level: 2
+    industry: Chemicals
+    description: |
+      Structured identification and analysis of major-accident hazards
+      across the asset life cycle.
+    in_scope:
+      - HAZID, HAZOP, LOPA, and bow-tie analysis
+      - Quantitative risk assessment
+    out_of_scope:
+      - Personal safety risk assessment (BC-730)
+    children:
+      - id: BC-4440.10.10
+        name: HAZOP Studies
+        level: 3
+        industry: Chemicals
+        description: |
+          Hazard and Operability studies on new and modified facilities.
+        children: []
+      - id: BC-4440.10.20
+        name: HAZID Studies
+        level: 3
+        industry: Chemicals
+        description: |
+          Hazard Identification studies during early concept and design phases.
+        children: []
+      - id: BC-4440.10.30
+        name: LOPA Studies
+        level: 3
+        industry: Chemicals
+        description: |
+          Layer-of-Protection Analysis to define safety integrity levels.
+        children: []
+      - id: BC-4440.10.40
+        name: Bow-Tie Analysis
+        level: 3
+        industry: Chemicals
+        description: |
+          Bow-tie analysis to map barriers against major accident scenarios.
+        children: []
+      - id: BC-4440.10.50
+        name: Quantitative Risk Assessment
+        level: 3
+        industry: Chemicals
+        description: |
+          Quantitative risk assessment of major-accident hazard scenarios.
+        children: []
+  - id: BC-4440.20
+    name: Mechanical Integrity Management
+    level: 2
+    industry: Chemicals
+    description: |
+      Inspection and integrity management of pressure-containing
+      equipment and safety-relief devices.
+    children:
+      - id: BC-4440.20.10
+        name: Pressure Vessel Inspection
+        level: 3
+        industry: Chemicals
+        description: |
+          Risk-based inspection of pressure vessels per API 510.
+        children: []
+      - id: BC-4440.20.20
+        name: Process Piping Integrity Inspection
+        level: 3
+        industry: Chemicals
+        description: |
+          Inspection of process piping per API 570 and ASME B31.3.
+        children: []
+      - id: BC-4440.20.30
+        name: Storage Tank Inspection
+        level: 3
+        industry: Chemicals
+        description: |
+          Atmospheric and pressurised storage tank inspection per API 653.
+        children: []
+      - id: BC-4440.20.40
+        name: Pressure Relief Device Management
+        level: 3
+        industry: Chemicals
+        description: |
+          Sizing, testing, and lifecycle management of relief valves and rupture discs.
+        children: []
+      - id: BC-4440.20.50
+        name: "Atmospheric Vent & Flare Integrity"
+        level: 3
+        industry: Chemicals
+        description: |
+          Integrity assurance of atmospheric vents, scrubbers, and flares.
+        children: []
+  - id: BC-4440.30
+    name: Safety Instrumented System Management
+    level: 2
+    industry: Chemicals
+    description: |
+      Functional-safety lifecycle management of safety instrumented
+      systems per IEC 61511.
+    children:
+      - id: BC-4440.30.10
+        name: SIL Determination
+        level: 3
+        industry: Chemicals
+        description: |
+          Determination of Safety Integrity Levels for protective functions.
+        children: []
+      - id: BC-4440.30.20
+        name: Safety Function Verification
+        level: 3
+        industry: Chemicals
+        description: |
+          Verification that designed SIFs meet the required SIL.
+        children: []
+      - id: BC-4440.30.30
+        name: SIS Proof Testing
+        level: 3
+        industry: Chemicals
+        description: |
+          Periodic proof testing of safety instrumented systems.
+        children: []
+      - id: BC-4440.30.40
+        name: Functional Safety Assessment
+        level: 3
+        industry: Chemicals
+        description: |
+          Functional Safety Assessments at the lifecycle stage gates.
+        children: []
+  - id: BC-4440.40
+    name: "Reactive & Combustible Hazard Management"
+    level: 2
+    industry: Chemicals
+    description: |
+      Identification and control of reactive chemistry, runaway,
+      combustible dust, and ignition hazards.
+    children:
+      - id: BC-4440.40.10
+        name: Reactive Chemistry Risk Assessment
+        level: 3
+        industry: Chemicals
+        description: |
+          Assessment of reactive chemistry risks including incompatibilities.
+        children: []
+      - id: BC-4440.40.20
+        name: Runaway Reaction Prevention
+        level: 3
+        industry: Chemicals
+        description: |
+          Prevention and mitigation of runaway exothermic reactions.
+        children: []
+      - id: BC-4440.40.30
+        name: Combustible Dust Hazard Control
+        level: 3
+        industry: Chemicals
+        description: |
+          Control of combustible dust hazards per NFPA 654.
+        children: []
+      - id: BC-4440.40.40
+        name: "Static Electricity & Ignition Control"
+        level: 3
+        industry: Chemicals
+        description: |
+          Control of electrostatic and other ignition sources in process areas.
+        children: []
+  - id: BC-4440.50
+    name: Process Safety Management of Change
+    level: 2
+    industry: Chemicals
+    description: |
+      Process-safety governance over plant, procedural, and personnel
+      changes including pre-startup safety review.
+    children:
+      - id: BC-4440.50.10
+        name: PSM Change Request Review
+        level: 3
+        industry: Chemicals
+        description: |
+          Review of PSM-impacting change requests against hazard standards.
+        children: []
+      - id: BC-4440.50.20
+        name: Pre-Startup Safety Review
+        level: 3
+        industry: Chemicals
+        description: |
+          Pre-startup safety reviews for new and modified facilities.
+        children: []
+      - id: BC-4440.50.30
+        name: Temporary Change Management
+        level: 3
+        industry: Chemicals
+        description: |
+          Management of temporary process changes within their authorised window.
+        children: []
+  - id: BC-4440.60
+    name: Process Safety Performance Management
+    level: 2
+    industry: Chemicals
+    description: |
+      Tracking and reporting of leading and lagging process-safety
+      indicators per CCPS RBPS and equivalent frameworks.
+    children:
+      - id: BC-4440.60.10
+        name: "Tier 1 & 2 Process Safety Event Reporting"
+        level: 3
+        industry: Chemicals
+        description: |
+          Capture and reporting of Tier 1 and Tier 2 process safety events.
+        children: []
+      - id: BC-4440.60.20
+        name: Leading Indicator Monitoring
+        level: 3
+        industry: Chemicals
+        description: |
+          Monitoring of Tier 3 and Tier 4 leading process safety indicators.
+        children: []
+      - id: BC-4440.60.30
+        name: Process Safety KPI Reporting
+        level: 3
+        industry: Chemicals
+        description: |
+          External and internal reporting of process safety KPI performance.
+        children: []
+  - id: BC-4440.70
+    name: "Emergency Preparedness & Response"
+    level: 2
+    industry: Chemicals
+    description: |
+      Emergency response planning, drill execution, and toxic-release
+      response coordination for major-accident scenarios.
+    children:
+      - id: BC-4440.70.10
+        name: Emergency Response Planning
+        level: 3
+        industry: Chemicals
+        description: |
+          Maintenance of installation and corporate emergency response plans.
+        children: []
+      - id: BC-4440.70.20
+        name: "Drill & Exercise Coordination"
+        level: 3
+        industry: Chemicals
+        description: |
+          Coordination of emergency drills and major-incident exercises.
+        children: []
+      - id: BC-4440.70.30
+        name: Toxic Release Response Coordination
+        level: 3
+        industry: Chemicals
+        description: |
+          Coordination of toxic and flammable release response operations.
+        children: []
+      - id: BC-4440.70.40
+        name: Mutual Aid Coordination
+        level: 3
+        industry: Chemicals
+        description: |
+          Coordination of mutual aid with industry response cooperatives.
+        children: []
+  - id: BC-4440.80
+    name: Process Safety Operating Procedures
+    level: 2
+    industry: Chemicals
+    description: |
+      Authoring, review, and operating-envelope definition for
+      process-safety-critical procedures.
+    children:
+      - id: BC-4440.80.10
+        name: Safety Critical Procedure Authoring
+        level: 3
+        industry: Chemicals
+        description: |
+          Authoring of process-safety-critical operating procedures.
+        children: []
+      - id: BC-4440.80.20
+        name: Operating Envelope Definition
+        level: 3
+        industry: Chemicals
+        description: |
+          Definition of safe operating envelopes for process units.
+        children: []
+      - id: BC-4440.80.30
+        name: Procedure Periodic Review
+        level: 3
+        industry: Chemicals
+        description: |
+          Periodic review and update of process safety procedures.
+        children: []

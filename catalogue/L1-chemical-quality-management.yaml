@@ -1,0 +1,233 @@
+# Chemical Quality Management
+id: BC-4470
+name: Chemical Quality Management
+level: 1
+industry: Chemicals
+description: |
+  Chemical-specific specification setting, analytical laboratory
+  operations, batch release, complaint and certificate-of-analysis
+  dispute handling, reference standards, and sector-specific GMP
+  compliance. Distinct from cross-industry Quality Management (BC-720),
+  which covers enterprise QMS.
+references:
+  - https://www.iso.org/standard/62085.html
+  - https://www.iso.org/iso-9001-quality-management.html
+  - https://ipecamericas.org/
+children:
+  - id: BC-4470.10
+    name: Chemical Specification Management
+    level: 2
+    industry: Chemicals
+    description: |
+      Setting and lifecycle management of raw material, intermediate, and
+      finished product specifications.
+    children:
+      - id: BC-4470.10.10
+        name: Raw Material Specification Setting
+        level: 3
+        industry: Chemicals
+        description: |
+          Setting and revision of incoming raw material specifications.
+        children: []
+      - id: BC-4470.10.20
+        name: Intermediate Specification Setting
+        level: 3
+        industry: Chemicals
+        description: |
+          Setting of intermediate specifications across the production chain.
+        children: []
+      - id: BC-4470.10.30
+        name: Finished Product Specification Setting
+        level: 3
+        industry: Chemicals
+        description: |
+          Setting of finished product specifications and release criteria.
+        children: []
+      - id: BC-4470.10.40
+        name: Specification Lifecycle Management
+        level: 3
+        industry: Chemicals
+        description: |
+          Lifecycle management of approved specifications and changes.
+        children: []
+  - id: BC-4470.20
+    name: Analytical Laboratory Operations
+    level: 2
+    industry: Chemicals
+    description: |
+      Operation of QC laboratories performing wet chemistry,
+      chromatography, spectroscopy, and physical property testing.
+    children:
+      - id: BC-4470.20.10
+        name: Wet Chemistry Laboratory Operations
+        level: 3
+        industry: Chemicals
+        description: |
+          Operation of wet chemistry analytical workflows.
+        children: []
+      - id: BC-4470.20.20
+        name: Chromatography Operations
+        level: 3
+        industry: Chemicals
+        description: |
+          Operation of HPLC, GC, and ion chromatography platforms.
+        children: []
+      - id: BC-4470.20.30
+        name: Spectroscopy Operations
+        level: 3
+        industry: Chemicals
+        description: |
+          Operation of FTIR, NMR, ICP, and mass spectrometry platforms.
+        children: []
+      - id: BC-4470.20.40
+        name: Physical Property Testing
+        level: 3
+        industry: Chemicals
+        description: |
+          Testing of physical properties such as viscosity, density, and particle size.
+        children: []
+  - id: BC-4470.30
+    name: Batch Release Management
+    level: 2
+    industry: Chemicals
+    description: |
+      Disposition decisions, certificate-of-analysis issuance, and
+      out-of-specification handling for chemical batches.
+    children:
+      - id: BC-4470.30.10
+        name: Batch Disposition Decision
+        level: 3
+        industry: Chemicals
+        description: |
+          Disposition decision on manufactured batches against specification.
+        children: []
+      - id: BC-4470.30.20
+        name: Certificate of Analysis Issuance
+        level: 3
+        industry: Chemicals
+        description: |
+          Issuance of certificates of analysis to customers.
+        children: []
+      - id: BC-4470.30.30
+        name: Out-of-Specification Investigation
+        level: 3
+        industry: Chemicals
+        description: |
+          Investigation of out-of-specification analytical results.
+        children: []
+  - id: BC-4470.40
+    name: "Customer Complaint & COA Dispute Management"
+    level: 2
+    industry: Chemicals
+    description: |
+      Capture and resolution of customer complaints and
+      certificate-of-analysis disputes.
+    children:
+      - id: BC-4470.40.10
+        name: Customer Complaint Capture
+        level: 3
+        industry: Chemicals
+        description: |
+          Capture and triage of customer complaints on chemical products.
+        children: []
+      - id: BC-4470.40.20
+        name: COA Dispute Investigation
+        level: 3
+        industry: Chemicals
+        description: |
+          Investigation of disputes over certificate-of-analysis values.
+        children: []
+      - id: BC-4470.40.30
+        name: Customer Sample Re-Testing
+        level: 3
+        industry: Chemicals
+        description: |
+          Re-testing of retained and customer-supplied samples.
+        children: []
+  - id: BC-4470.50
+    name: "Reference Material & Standards Management"
+    level: 2
+    industry: Chemicals
+    description: |
+      Sourcing, qualification, and stability monitoring of reference
+      standards and materials.
+    children:
+      - id: BC-4470.50.10
+        name: Reference Standard Sourcing
+        level: 3
+        industry: Chemicals
+        description: |
+          Sourcing of certified reference materials from accredited providers.
+        children: []
+      - id: BC-4470.50.20
+        name: In-House Reference Standard Qualification
+        level: 3
+        industry: Chemicals
+        description: |
+          Qualification of in-house working reference standards.
+        children: []
+      - id: BC-4470.50.30
+        name: Reference Standard Stability Monitoring
+        level: 3
+        industry: Chemicals
+        description: |
+          Stability monitoring of in-use reference standards.
+        children: []
+  - id: BC-4470.60
+    name: "Method Development & Validation"
+    level: 2
+    industry: Chemicals
+    description: |
+      Development, validation, and transfer of analytical methods across
+      laboratories.
+    children:
+      - id: BC-4470.60.10
+        name: Analytical Method Development
+        level: 3
+        industry: Chemicals
+        description: |
+          Development of new analytical methods to support specifications.
+        children: []
+      - id: BC-4470.60.20
+        name: Method Validation
+        level: 3
+        industry: Chemicals
+        description: |
+          Validation of analytical methods for accuracy, precision, and robustness.
+        children: []
+      - id: BC-4470.60.30
+        name: Method Transfer
+        level: 3
+        industry: Chemicals
+        description: |
+          Transfer of validated methods between laboratories.
+        children: []
+  - id: BC-4470.70
+    name: Sector-Specific GMP Compliance
+    level: 2
+    industry: Chemicals
+    description: |
+      Compliance with sector-specific GMP regimes for chemicals supplied
+      into regulated downstream markets.
+    children:
+      - id: BC-4470.70.10
+        name: EFfCI GMP Compliance
+        level: 3
+        industry: Chemicals
+        description: |
+          Compliance with EFfCI GMP for cosmetic ingredients.
+        children: []
+      - id: BC-4470.70.20
+        name: IPEC GMP Compliance
+        level: 3
+        industry: Chemicals
+        description: |
+          Compliance with IPEC GMP for pharmaceutical excipients.
+        children: []
+      - id: BC-4470.70.30
+        name: Food-Contact Compliance
+        level: 3
+        industry: Chemicals
+        description: |
+          Compliance with food-contact regulations for chemicals supplied to food packaging.
+        children: []
