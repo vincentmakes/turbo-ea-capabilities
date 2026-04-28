@@ -1,0 +1,360 @@
+# Real Estate Compliance & Regulatory Management
+id: BC-4990
+name: "Real Estate Compliance & Regulatory Management"
+level: 1
+industry: Real Estate
+description: |
+  Compliance discipline for the real-estate-specific regulatory regimes
+  that overlay generic enterprise compliance — broker / agent
+  licensing, fair-housing and anti-discrimination, real-estate AML and
+  beneficial ownership, settlement and mortgage disclosure (RESPA /
+  TRID), building energy performance, tenancy and rent regulation,
+  condo / HOA / strata regulation, and fund / adviser regulation.
+references:
+  - https://www.nar.realtor/about-nar/governing-documents/code-of-ethics
+  - https://www.fincen.gov/news/news-releases/fincen-issues-final-rule-combating-illicit-finance-residential-real-estate
+  - https://www.consumerfinance.gov/rules-policy/regulations/1024/
+  - https://www.hud.gov/program_offices/fair_housing_equal_opp/fair_housing_act_overview
+  - https://www.gov.uk/guidance/domestic-private-rented-property-minimum-energy-efficiency-standard-landlord-guidance
+in_scope:
+  - Brokerage firm and agent licensing maintenance
+  - Fair Housing Act, Equality Act, ECOA conformance
+  - Real-estate AML, beneficial ownership, sanctions, and SAR reporting
+  - RESPA, TRID, and Section 8 affiliated business disclosure
+  - Building energy performance disclosure and MEES compliance
+  - Rent stabilisation, eviction notice, deposit handling, STR registration
+  - Condo / HOA / strata sponsor and reserve disclosures
+  - AIFMD, ELTIF, and Investment Advisers Act fund / adviser compliance
+out_of_scope:
+  - Enterprise compliance management (BC-130)
+  - Cybersecurity and privacy regimes (BC-620)
+  - Generic financial-crime AML across non-RE businesses (BC-1400)
+  - Tax administration (BC-220)
+children:
+  - id: BC-4990.10
+    name: "Broker & Agent Licensing Compliance"
+    level: 2
+    industry: Real Estate
+    description: |
+      Compliance with broker and agent licensing regimes including
+      firm licence maintenance, continuing education, and designated
+      broker oversight.
+    children:
+      - id: BC-4990.10.10
+        name: Firm Licensing Maintenance
+        level: 3
+        industry: Real Estate
+        description: |
+          Maintenance of brokerage firm licences across regions of
+          operation.
+        children: []
+      - id: BC-4990.10.20
+        name: "Agent Licensing & Continuing Education"
+        level: 3
+        industry: Real Estate
+        description: |
+          Tracking of individual agent licences and continuing
+          education requirements.
+        children: []
+      - id: BC-4990.10.30
+        name: Designated Broker Oversight
+        level: 3
+        industry: Real Estate
+        description: |
+          Designated-broker oversight of regulated activity in the
+          firm.
+        children: []
+      - id: BC-4990.10.40
+        name: "Licence Renewal & Audit Response"
+        level: 3
+        industry: Real Estate
+        description: |
+          Renewal of licences and response to regulator audits and
+          examinations.
+        children: []
+  - id: BC-4990.20
+    name: "Fair Housing & Anti-Discrimination Compliance"
+    level: 2
+    industry: Real Estate
+    description: |
+      Conformance with Fair Housing Act, Equality Act, ECOA, and
+      equivalent anti-discrimination regimes across leasing, sales,
+      and lending touchpoints.
+    children:
+      - id: BC-4990.20.10
+        name: Fair Housing Policy Maintenance
+        level: 3
+        industry: Real Estate
+        description: |
+          Maintenance of fair-housing policies and standard operating
+          procedures.
+        children: []
+      - id: BC-4990.20.20
+        name: "Advertising & Source-of-Funds Screening"
+        level: 3
+        industry: Real Estate
+        description: |
+          Screening of advertising content and source-of-funds rules
+          for compliance with protected-class restrictions.
+        children: []
+      - id: BC-4990.20.30
+        name: Discrimination Complaint Handling
+        level: 3
+        industry: Real Estate
+        description: |
+          Handling of housing discrimination complaints and regulator
+          inquiries.
+        children: []
+      - id: BC-4990.20.40
+        name: "Fair Housing Training & Attestation"
+        level: 3
+        industry: Real Estate
+        description: |
+          Training and attestation of agents and staff on fair-housing
+          obligations.
+        children: []
+  - id: BC-4990.30
+    name: "Real Estate AML & Sanctions Compliance"
+    level: 2
+    industry: Real Estate
+    description: |
+      Compliance with real-estate-specific AML rules including FinCEN
+      GTOs, the FinCEN Residential Real Estate Rule, AMLD 5/6
+      designated-non-financial-business obligations, and beneficial-
+      ownership reporting.
+    children:
+      - id: BC-4990.30.10
+        name: Beneficial Ownership Capture
+        level: 3
+        industry: Real Estate
+        description: |
+          Capture and verification of beneficial ownership for property
+          transaction parties.
+        children: []
+      - id: BC-4990.30.20
+        name: "Sanctions & PEP Screening (Real Estate)"
+        level: 3
+        industry: Real Estate
+        description: |
+          Screening of transaction parties against sanctions, PEP, and
+          adverse media lists.
+        children: []
+      - id: BC-4990.30.30
+        name: "Suspicious Activity Reporting (RE)"
+        level: 3
+        industry: Real Estate
+        description: |
+          Filing of suspicious activity reports for in-scope real
+          estate transactions.
+        children: []
+      - id: BC-4990.30.40
+        name: "AML Audit & Regulatory Examination"
+        level: 3
+        industry: Real Estate
+        description: |
+          Response to AML audits and regulator examinations on
+          real-estate AML programmes.
+        children: []
+  - id: BC-4990.40
+    name: "Settlement & Mortgage Disclosure Compliance"
+    level: 2
+    industry: Real Estate
+    description: |
+      Compliance with US RESPA and TRID settlement and mortgage
+      disclosure rules and equivalent regional regimes.
+    children:
+      - id: BC-4990.40.10
+        name: Loan Estimate & Closing Disclosure Production
+        level: 3
+        industry: Real Estate
+        description: |
+          Production of TRID Loan Estimate and Closing Disclosure
+          documents within timing rules.
+        children: []
+      - id: BC-4990.40.20
+        name: Affiliated Business Arrangement Disclosure
+        level: 3
+        industry: Real Estate
+        description: |
+          Disclosure of affiliated business arrangements at the
+          required points in the transaction.
+        children: []
+      - id: BC-4990.40.30
+        name: Settlement Service Provider Compliance
+        level: 3
+        industry: Real Estate
+        description: |
+          Compliance with rules on settlement service provider
+          referrals and Section 8 prohibitions.
+        children: []
+      - id: BC-4990.40.40
+        name: RESPA Audit Response
+        level: 3
+        industry: Real Estate
+        description: |
+          Response to CFPB and state regulator examinations on RESPA
+          compliance.
+        children: []
+  - id: BC-4990.50
+    name: Building Energy Performance Compliance
+    level: 2
+    industry: Real Estate
+    description: |
+      Compliance with EPC, MEES, building performance standards, and
+      benchmarking laws (e.g. Local Law 97, EPBD recasts).
+    children:
+      - id: BC-4990.50.10
+        name: "EPC / Building Energy Rating Compliance"
+        level: 3
+        industry: Real Estate
+        description: |
+          Procurement and lodging of energy performance certificates
+          and equivalents.
+        children: []
+      - id: BC-4990.50.20
+        name: "Minimum Energy Efficiency Compliance (MEES)"
+        level: 3
+        industry: Real Estate
+        description: |
+          Compliance with minimum energy efficiency standards on
+          rented and sold properties.
+        children: []
+      - id: BC-4990.50.30
+        name: "Energy Benchmarking Disclosure (LL97 / BPS)"
+        level: 3
+        industry: Real Estate
+        description: |
+          Disclosure under city energy benchmarking ordinances and
+          building performance standards.
+        children: []
+      - id: BC-4990.50.40
+        name: EU EPBD Reporting Compliance
+        level: 3
+        industry: Real Estate
+        description: |
+          Compliance with the EU Energy Performance of Buildings
+          Directive reporting and certification.
+        children: []
+  - id: BC-4990.60
+    name: "Tenancy & Rent Regulation Compliance"
+    level: 2
+    industry: Real Estate
+    description: |
+      Compliance with rent-control / stabilisation, eviction notice,
+      statutory security-deposit handling, and short-term let
+      registration regimes.
+    children:
+      - id: BC-4990.60.10
+        name: "Rent Control & Stabilisation Compliance"
+        level: 3
+        industry: Real Estate
+        description: |
+          Compliance with rent-control and rent-stabilisation regimes
+          on regulated units.
+        children: []
+      - id: BC-4990.60.20
+        name: "Eviction Notice & Process Compliance"
+        level: 3
+        industry: Real Estate
+        description: |
+          Compliance with statutory eviction notice and process
+          requirements.
+        children: []
+      - id: BC-4990.60.30
+        name: Security Deposit Statutory Handling
+        level: 3
+        industry: Real Estate
+        description: |
+          Statutory handling of security deposits including escrow,
+          interest, and return rules.
+        children: []
+      - id: BC-4990.60.40
+        name: "Short-Term Let / STR Registration Compliance"
+        level: 3
+        industry: Real Estate
+        description: |
+          Compliance with short-term let registration and operating
+          rules in regulated cities.
+        children: []
+  - id: BC-4990.70
+    name: "Condominium, HOA & Strata Regulation Compliance"
+    level: 2
+    industry: Real Estate
+    description: |
+      Compliance with condominium, HOA, body-corporate, and strata
+      regulatory regimes including sponsor disclosures and reserve
+      fund rules.
+    children:
+      - id: BC-4990.70.10
+        name: "Condo / Strata Sponsor Disclosure"
+        level: 3
+        industry: Real Estate
+        description: |
+          Sponsor disclosure obligations under condo and strata
+          regulation.
+        children: []
+      - id: BC-4990.70.20
+        name: "HOA / Body Corporate Registration"
+        level: 3
+        industry: Real Estate
+        description: |
+          Registration and ongoing filings for HOA and body corporate
+          entities.
+        children: []
+      - id: BC-4990.70.30
+        name: Reserve Fund Disclosure Compliance
+        level: 3
+        industry: Real Estate
+        description: |
+          Compliance with reserve fund study and disclosure
+          requirements.
+        children: []
+      - id: BC-4990.70.40
+        name: Resale Certificate Compliance
+        level: 3
+        industry: Real Estate
+        description: |
+          Issuance of resale certificates and related disclosures on
+          condo and HOA unit sales.
+        children: []
+  - id: BC-4990.80
+    name: "Real Estate Fund & Adviser Compliance"
+    level: 2
+    industry: Real Estate
+    description: |
+      Compliance with AIFMD, ELTIF, US Investment Advisers Act, and
+      equivalent fund and adviser regimes that govern real-estate
+      fund managers.
+    children:
+      - id: BC-4990.80.10
+        name: Fund Adviser Registration
+        level: 3
+        industry: Real Estate
+        description: |
+          Maintenance of fund adviser and manager registrations and
+          authorisations.
+        children: []
+      - id: BC-4990.80.20
+        name: "AIFMD / ELTIF Reporting Compliance"
+        level: 3
+        industry: Real Estate
+        description: |
+          Compliance with AIFMD Annex IV and ELTIF reporting
+          obligations.
+        children: []
+      - id: BC-4990.80.30
+        name: "Marketing & Cross-Border Notification"
+        level: 3
+        industry: Real Estate
+        description: |
+          Compliance with cross-border marketing notification regimes
+          for funds.
+        children: []
+      - id: BC-4990.80.40
+        name: Fund Audit & Examination Response
+        level: 3
+        industry: Real Estate
+        description: |
+          Response to fund regulator audits and examinations across
+          jurisdictions.
+        children: []

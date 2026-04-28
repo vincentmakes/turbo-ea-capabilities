@@ -1,0 +1,295 @@
+# Real Estate Asset Management
+id: BC-4920
+name: Real Estate Asset Management
+level: 1
+industry: Real Estate
+description: |
+  Owner-side stewardship of standing real-estate assets across the hold
+  period — business plan execution, performance monitoring, capex
+  prioritisation, repositioning, sustainability pathway, asset risk, and
+  property tax / OpEx optimisation. Bridges the investor view (BC-4910)
+  with on-the-ground property operations (BC-4940).
+references:
+  - https://www.gresb.com/
+  - https://www.crrem.eu/
+  - https://www.bomi.org/
+  - https://www.ncreif.org/
+in_scope:
+  - Per-asset business plan and hold/sell decisions
+  - Asset financial, leasing, and operational performance monitoring
+  - Capex programme planning, prioritisation, and execution oversight
+  - Repositioning, conversion, and value-add execution
+  - Asset-level decarbonisation pathway and ESG certification
+  - Asset risk monitoring (physical, climate, market, tenant credit)
+  - Property tax appeals, OpEx review, and CAM recovery audit
+out_of_scope:
+  - Fund / investor portfolio construction (BC-4910)
+  - Day-to-day property operations and work orders (BC-4940)
+  - Acquisition or disposition transactions (BC-4930)
+  - Lease abstracting and rent escalation (BC-4950)
+children:
+  - id: BC-4920.10
+    name: Asset Business Plan Management
+    level: 2
+    industry: Real Estate
+    description: |
+      Definition and refresh of per-asset business plans aligned with
+      fund mandate, hold horizon, and value-creation thesis.
+    children:
+      - id: BC-4920.10.10
+        name: Asset Business Plan Definition
+        level: 3
+        industry: Real Estate
+        description: |
+          Definition of per-asset business plans covering thesis, value
+          drivers, and hold horizon.
+        children: []
+      - id: BC-4920.10.20
+        name: "Hold / Sell Analysis"
+        level: 3
+        industry: Real Estate
+        description: |
+          Analysis of hold-versus-sell economics and recommendation to
+          investment committee.
+        children: []
+      - id: BC-4920.10.30
+        name: Annual Plan Refresh
+        level: 3
+        industry: Real Estate
+        description: |
+          Annual refresh of asset business plans against actuals and
+          revised market outlook.
+        children: []
+  - id: BC-4920.20
+    name: Asset Performance Monitoring
+    level: 2
+    industry: Real Estate
+    description: |
+      Monitoring of financial, leasing, and operational performance at
+      the asset level against the business plan.
+    children:
+      - id: BC-4920.20.10
+        name: Asset Financial Performance Tracking
+        level: 3
+        industry: Real Estate
+        description: |
+          Tracking of NOI, cash flow, and yield against budget and
+          business plan.
+        children: []
+      - id: BC-4920.20.20
+        name: "Leasing & Occupancy Performance Tracking"
+        level: 3
+        industry: Real Estate
+        description: |
+          Tracking of occupancy, leased percentage, weighted average
+          lease term, and rent versus market.
+        children: []
+      - id: BC-4920.20.30
+        name: Operational KPI Tracking
+        level: 3
+        industry: Real Estate
+        description: |
+          Tracking of operational KPIs covering uptime, complaints,
+          energy intensity, and visitor counts.
+        children: []
+      - id: BC-4920.20.40
+        name: "Variance Analysis & Forecast Refresh"
+        level: 3
+        industry: Real Estate
+        description: |
+          Variance analysis of actuals to plan and refresh of forecast
+          and exit assumptions.
+        children: []
+  - id: BC-4920.30
+    name: Capital Expenditure Programme Management
+    level: 2
+    industry: Real Estate
+    description: |
+      Planning, prioritisation, and execution oversight of asset and
+      portfolio capex programmes.
+    children:
+      - id: BC-4920.30.10
+        name: Capex Programme Planning
+        level: 3
+        industry: Real Estate
+        description: |
+          Multi-year capex programme planning by asset and portfolio.
+        children: []
+      - id: BC-4920.30.20
+        name: "Capex Prioritisation & Approval"
+        level: 3
+        industry: Real Estate
+        description: |
+          Prioritisation and approval of capex projects against
+          ROI and risk criteria.
+        children: []
+      - id: BC-4920.30.30
+        name: Capex Execution Oversight
+        level: 3
+        industry: Real Estate
+        description: |
+          Oversight of capex project execution including draws and
+          milestone delivery.
+        children: []
+      - id: BC-4920.30.40
+        name: Capex Performance Reconciliation
+        level: 3
+        industry: Real Estate
+        description: |
+          Reconciliation of capex performance to underwritten value
+          uplift and NOI improvement.
+        children: []
+  - id: BC-4920.40
+    name: "Asset Repositioning & Value-Add Management"
+    level: 2
+    industry: Real Estate
+    description: |
+      Definition and execution of repositioning, conversion, and
+      tenant-mix strategies that change an asset's use or income
+      profile.
+    children:
+      - id: BC-4920.40.10
+        name: Repositioning Strategy Definition
+        level: 3
+        industry: Real Estate
+        description: |
+          Definition of repositioning strategy including target market
+          and proposition.
+        children: []
+      - id: BC-4920.40.20
+        name: "Conversion & Repurposing Programmes"
+        level: 3
+        industry: Real Estate
+        description: |
+          Programmes converting assets across uses (office to resi,
+          retail to mixed-use).
+        children: []
+      - id: BC-4920.40.30
+        name: "Tenant Mix & Merchandising Strategy"
+        level: 3
+        industry: Real Estate
+        description: |
+          Definition and execution of tenant mix and merchandising
+          strategy for retail and mixed-use assets.
+        children: []
+  - id: BC-4920.50
+    name: "Asset-Level Sustainability & ESG Management"
+    level: 2
+    industry: Real Estate
+    description: |
+      Asset-level decarbonisation pathway, energy intensity management,
+      certifications, and GRESB submission.
+    children:
+      - id: BC-4920.50.10
+        name: Asset Decarbonisation Pathway
+        level: 3
+        industry: Real Estate
+        description: |
+          Definition of asset decarbonisation pathway aligned with CRREM
+          and SBTi buildings guidance.
+        children: []
+      - id: BC-4920.50.20
+        name: "Energy & Water Intensity Management"
+        level: 3
+        industry: Real Estate
+        description: |
+          Management of asset energy and water intensity against
+          targets.
+        children: []
+      - id: BC-4920.50.30
+        name: "Asset ESG Certification (LEED / BREEAM / WELL)"
+        level: 3
+        industry: Real Estate
+        description: |
+          Pursuit and maintenance of asset-level certifications
+          including LEED, BREEAM, WELL, and Fitwel.
+        children: []
+      - id: BC-4920.50.40
+        name: GRESB Asset Submission
+        level: 3
+        industry: Real Estate
+        description: |
+          Preparation and submission of asset-level data to the GRESB
+          assessment.
+        children: []
+  - id: BC-4920.60
+    name: Asset Risk Management
+    level: 2
+    industry: Real Estate
+    description: |
+      Asset-level monitoring of physical, climate, market, and tenant
+      credit risks and insurance adequacy.
+    children:
+      - id: BC-4920.60.10
+        name: "Physical & Climate Risk Assessment"
+        level: 3
+        industry: Real Estate
+        description: |
+          Assessment of physical and climate risks at the asset
+          including flood, wildfire, and heat exposure.
+        children: []
+      - id: BC-4920.60.20
+        name: Tenant Credit Risk Monitoring
+        level: 3
+        industry: Real Estate
+        description: |
+          Monitoring of tenant credit and rent-collection risk by asset
+          and portfolio.
+        children: []
+      - id: BC-4920.60.30
+        name: Market Risk Monitoring
+        level: 3
+        industry: Real Estate
+        description: |
+          Monitoring of market risk drivers including cap-rate moves,
+          supply pipeline, and rent trends.
+        children: []
+      - id: BC-4920.60.40
+        name: Insurance Adequacy Review
+        level: 3
+        industry: Real Estate
+        description: |
+          Periodic review of property and liability insurance adequacy
+          against asset value and exposure.
+        children: []
+  - id: BC-4920.70
+    name: "Property Tax & Operating Expense Optimisation"
+    level: 2
+    industry: Real Estate
+    description: |
+      Management of property tax assessments, operating-expense reviews,
+      CAM recovery audits, and utility tariff optimisation specific to
+      real-estate assets.
+    children:
+      - id: BC-4920.70.10
+        name: "Property Tax Assessment & Appeal"
+        level: 3
+        industry: Real Estate
+        description: |
+          Review and appeal of property tax assessments against
+          comparable evidence.
+        children: []
+      - id: BC-4920.70.20
+        name: Operating Expense Review
+        level: 3
+        industry: Real Estate
+        description: |
+          Periodic review of operating expenses for benchmarking and
+          savings opportunities.
+        children: []
+      - id: BC-4920.70.30
+        name: CAM Recovery Audit
+        level: 3
+        industry: Real Estate
+        description: |
+          Audit of CAM and service-charge recovery from tenants against
+          lease entitlements.
+        children: []
+      - id: BC-4920.70.40
+        name: Utility Tariff Optimisation
+        level: 3
+        industry: Real Estate
+        description: |
+          Optimisation of utility procurement, tariffs, and demand
+          charges across the portfolio.
+        children: []

@@ -1,0 +1,316 @@
+# Real Estate Leasing Management
+id: BC-4950
+name: Real Estate Leasing Management
+level: 1
+industry: Real Estate
+description: |
+  Landlord-side leasing of commercial, retail, and residential space
+  across the lease lifecycle — pricing, marketing, prospect handling,
+  application screening, negotiation and execution, lease administration,
+  renewal and retention, and end-of-tenancy. Distinct from corporate
+  occupier leasing (BC-710) and brokerage as a service line (BC-4960).
+references:
+  - https://www.reso.org/data-dictionary/
+  - https://www.oscre.org/standards
+  - https://www.iso.org/standard/68021.html
+in_scope:
+  - Asking rent and concession strategy
+  - Vacancy marketing, listings, and showings
+  - Inbound prospect handling and qualification
+  - Tenant application capture, screening, and fair-housing-compliant adverse action
+  - Lease term-sheet, drafting, signature, and security deposit handling
+  - Landlord-side lease abstracting, indexation, and option tracking
+  - Renewal pursuits and retention programmes
+  - Move-out, dilapidations, and end-of-tenancy accounting
+out_of_scope:
+  - Corporate occupier lease administration on the tenant side (BC-710)
+  - Brokerage representation as a service line (BC-4960)
+  - Property operations during occupancy (BC-4940)
+  - Rent regulation and tenancy compliance posture (BC-4990)
+children:
+  - id: BC-4950.10
+    name: "Leasing Strategy & Pricing"
+    level: 2
+    industry: Real Estate
+    description: |
+      Definition of asking-rent strategy, concession packages, target
+      tenant mix, and benchmark of asset rent against market.
+    children:
+      - id: BC-4950.10.10
+        name: "Asking Rent & Concession Strategy"
+        level: 3
+        industry: Real Estate
+        description: |
+          Definition of asking rent levels and concession packages by
+          asset and unit type.
+        children: []
+      - id: BC-4950.10.20
+        name: Target Tenant Mix Strategy
+        level: 3
+        industry: Real Estate
+        description: |
+          Definition of target tenant mix and credit quality for the
+          asset.
+        children: []
+      - id: BC-4950.10.30
+        name: Market Rent Benchmarking
+        level: 3
+        industry: Real Estate
+        description: |
+          Periodic benchmarking of in-place and asking rents against
+          market evidence.
+        children: []
+  - id: BC-4950.20
+    name: "Vacancy Marketing & Listing"
+    level: 2
+    industry: Real Estate
+    description: |
+      Marketing of available space through listing content, channel
+      syndication, and on-site tours.
+    children:
+      - id: BC-4950.20.10
+        name: Listing Content Production
+        level: 3
+        industry: Real Estate
+        description: |
+          Production of listing content including photography, floor
+          plans, and virtual tours.
+        children: []
+      - id: BC-4950.20.20
+        name: "Listing Channel & Syndication Management"
+        level: 3
+        industry: Real Estate
+        description: |
+          Management of listing distribution to portals, MLSs, and
+          partner channels.
+        children: []
+      - id: BC-4950.20.30
+        name: Vacancy Tour & Showing Operations
+        level: 3
+        industry: Real Estate
+        description: |
+          Operation of vacant-unit tours and self-showings on the
+          property.
+        children: []
+  - id: BC-4950.30
+    name: "Prospect & Inquiry Management"
+    level: 2
+    industry: Real Estate
+    description: |
+      Capture, qualification, and follow-up of inbound leasing inquiries
+      and prospects.
+    children:
+      - id: BC-4950.30.10
+        name: "Inquiry Capture & Routing"
+        level: 3
+        industry: Real Estate
+        description: |
+          Capture of leasing inquiries across channels and routing to
+          the right asset team.
+        children: []
+      - id: BC-4950.30.20
+        name: Prospect Qualification
+        level: 3
+        industry: Real Estate
+        description: |
+          Qualification of prospects against target use, credit, and
+          unit fit.
+        children: []
+      - id: BC-4950.30.30
+        name: "Viewing Scheduling & Follow-Up"
+        level: 3
+        industry: Real Estate
+        description: |
+          Scheduling of viewings and post-viewing follow-up with
+          prospects.
+        children: []
+  - id: BC-4950.40
+    name: "Tenant Application & Screening"
+    level: 2
+    industry: Real Estate
+    description: |
+      Capture of tenant applications and execution of credit, identity,
+      and reference checks compliant with fair housing rules.
+    children:
+      - id: BC-4950.40.10
+        name: Application Capture
+        level: 3
+        industry: Real Estate
+        description: |
+          Capture of tenant applications and supporting documentation.
+        children: []
+      - id: BC-4950.40.20
+        name: "Credit & Reference Checks"
+        level: 3
+        industry: Real Estate
+        description: |
+          Execution of credit checks and landlord / employer references
+          on applicants.
+        children: []
+      - id: BC-4950.40.30
+        name: "Identity & Right-to-Rent Verification"
+        level: 3
+        industry: Real Estate
+        description: |
+          Verification of identity and right to rent / occupy as
+          required by jurisdiction.
+        children: []
+      - id: BC-4950.40.40
+        name: Fair Housing Adverse Action Handling
+        level: 3
+        industry: Real Estate
+        description: |
+          Handling of adverse application decisions in compliance with
+          fair-housing and adverse-action notice rules.
+        children: []
+  - id: BC-4950.50
+    name: "Lease Negotiation & Execution"
+    level: 2
+    industry: Real Estate
+    description: |
+      Negotiation of lease term sheets, drafting, redline management,
+      execution, and capture of security deposits and guarantees.
+    children:
+      - id: BC-4950.50.10
+        name: Term Sheet Negotiation
+        level: 3
+        industry: Real Estate
+        description: |
+          Negotiation of lease term sheets covering rent, term, options,
+          and incentives.
+        children: []
+      - id: BC-4950.50.20
+        name: "Lease Drafting & Redline Management"
+        level: 3
+        industry: Real Estate
+        description: |
+          Drafting of lease documents and management of redline cycles
+          with tenant counsel.
+        children: []
+      - id: BC-4950.50.30
+        name: "Lease Signature & Execution"
+        level: 3
+        industry: Real Estate
+        description: |
+          Signature and execution of lease and ancillary documents.
+        children: []
+      - id: BC-4950.50.40
+        name: "Security Deposit & Guarantee Capture"
+        level: 3
+        industry: Real Estate
+        description: |
+          Capture of security deposits, letters of credit, and personal
+          or corporate guarantees.
+        children: []
+  - id: BC-4950.60
+    name: "Lease Administration (Landlord-Side)"
+    level: 2
+    industry: Real Estate
+    description: |
+      Landlord-side administration of lease abstracts, rent indexation,
+      option tracking, and lease compliance monitoring during the term.
+    children:
+      - id: BC-4950.60.10
+        name: Lease Abstracting
+        level: 3
+        industry: Real Estate
+        description: |
+          Abstracting of executed leases into structured key-term
+          records.
+        children: []
+      - id: BC-4950.60.20
+        name: "Rent Indexation & Escalation Tracking"
+        level: 3
+        industry: Real Estate
+        description: |
+          Tracking and triggering of rent escalations including index
+          and stepped clauses.
+        children: []
+      - id: BC-4950.60.30
+        name: "Option, Break, & Renewal Tracking"
+        level: 3
+        industry: Real Estate
+        description: |
+          Tracking of tenant and landlord options, break dates, and
+          renewal windows.
+        children: []
+      - id: BC-4950.60.40
+        name: Lease Compliance Monitoring
+        level: 3
+        industry: Real Estate
+        description: |
+          Monitoring of tenant compliance with lease covenants
+          including use, alterations, and reporting.
+        children: []
+  - id: BC-4950.70
+    name: "Renewal & Retention Management"
+    level: 2
+    industry: Real Estate
+    description: |
+      Proactive management of renewal pipeline, term negotiation, and
+      retention programmes targeting in-place tenants.
+    children:
+      - id: BC-4950.70.10
+        name: Renewal Pipeline Management
+        level: 3
+        industry: Real Estate
+        description: |
+          Management of renewal pipeline against expiry calendar and
+          retention targets.
+        children: []
+      - id: BC-4950.70.20
+        name: Renewal Term Negotiation
+        level: 3
+        industry: Real Estate
+        description: |
+          Negotiation of renewal terms including rent, length, and
+          incentives.
+        children: []
+      - id: BC-4950.70.30
+        name: Retention Programme Operations
+        level: 3
+        industry: Real Estate
+        description: |
+          Operation of retention programmes including tenant outreach
+          and incentive offerings.
+        children: []
+  - id: BC-4950.80
+    name: "Move-Out & Lease Termination Management"
+    level: 2
+    industry: Real Estate
+    description: |
+      Management of tenant notice, surrender, dilapidations,
+      reinstatement, deposit return, and final accounting at end of
+      tenancy.
+    children:
+      - id: BC-4950.80.10
+        name: "Notice & Surrender Processing"
+        level: 3
+        industry: Real Estate
+        description: |
+          Processing of termination notices and surrender of premises.
+        children: []
+      - id: BC-4950.80.20
+        name: "Dilapidations & Reinstatement Assessment"
+        level: 3
+        industry: Real Estate
+        description: |
+          Assessment of dilapidations and tenant reinstatement
+          obligations against the lease.
+        children: []
+      - id: BC-4950.80.30
+        name: Security Deposit Return
+        level: 3
+        industry: Real Estate
+        description: |
+          Return of security deposits subject to deductions in
+          accordance with statute and lease.
+        children: []
+      - id: BC-4950.80.40
+        name: End-of-Tenancy Final Accounting
+        level: 3
+        industry: Real Estate
+        description: |
+          Final accounting of rent, recoveries, and credits at end of
+          tenancy.
+        children: []

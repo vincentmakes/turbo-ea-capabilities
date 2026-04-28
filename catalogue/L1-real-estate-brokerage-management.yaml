@@ -1,0 +1,337 @@
+# Real Estate Brokerage Management
+id: BC-4960
+name: Real Estate Brokerage Management
+level: 1
+industry: Real Estate
+description: |
+  Brokerage and agency intermediation as a service line for
+  commercial and residential real estate — listing acquisition,
+  buyer / tenant representation, MLS data management, comparable
+  analysis, showing operations, offer negotiation, transaction
+  closing coordination, commission and cooperating-broker settlement,
+  and agent productivity / roster management.
+references:
+  - https://www.reso.org/data-dictionary/
+  - https://www.nar.realtor/about-nar/governing-documents/code-of-ethics
+  - https://www.arello.org/
+  - https://www.rics.org/profession-standards
+in_scope:
+  - Seller / landlord listing acquisition and representation
+  - Buyer / tenant engagement and representation
+  - MLS listing capture, syndication, and compliance
+  - Comparable market analysis and broker opinion of value
+  - Showing, open house, and lockbox / digital access operations
+  - Offer drafting, counter-offer, and multiple-offer handling
+  - Closing coordination and contingency tracking
+  - Commission, cooperating broker, and referral fee settlement
+  - Agent licensing, sponsorship, performance, and commission plans
+out_of_scope:
+  - Landlord-side leasing operations on owned assets (BC-4950)
+  - Acquisition / disposition execution by principals (BC-4930)
+  - Property valuation engagements (BC-4970)
+  - Broker / agent licensing regulatory posture (BC-4990)
+children:
+  - id: BC-4960.10
+    name: "Listing Acquisition & Representation"
+    level: 2
+    industry: Real Estate
+    description: |
+      Pursuit and conversion of seller / landlord listing mandates and
+      execution of the marketing plan committed to in the listing
+      agreement.
+    children:
+      - id: BC-4960.10.10
+        name: "Listing Pitch & Win"
+        level: 3
+        industry: Real Estate
+        description: |
+          Pitching for listing mandates including CMA, marketing
+          proposal, and presentation.
+        children: []
+      - id: BC-4960.10.20
+        name: Listing Agreement Management
+        level: 3
+        industry: Real Estate
+        description: |
+          Management of listing agreements including exclusivity, term,
+          and commission terms.
+        children: []
+      - id: BC-4960.10.30
+        name: Listing Marketing Plan
+        level: 3
+        industry: Real Estate
+        description: |
+          Definition and execution of the marketing plan committed in
+          the listing agreement.
+        children: []
+  - id: BC-4960.20
+    name: "Buyer & Tenant Representation"
+    level: 2
+    industry: Real Estate
+    description: |
+      Engagement and execution on buy-side and tenant-side
+      representation mandates including search and shortlisting.
+    children:
+      - id: BC-4960.20.10
+        name: "Buyer / Tenant Engagement"
+        level: 3
+        industry: Real Estate
+        description: |
+          Engagement of buyer and tenant clients including agency
+          agreements and disclosures.
+        children: []
+      - id: BC-4960.20.20
+        name: "Requirement Definition & Brief"
+        level: 3
+        industry: Real Estate
+        description: |
+          Definition of client requirements brief covering use, size,
+          location, and budget.
+        children: []
+      - id: BC-4960.20.30
+        name: "Property Search & Shortlisting"
+        level: 3
+        industry: Real Estate
+        description: |
+          Search, shortlisting, and presentation of candidate
+          properties to client.
+        children: []
+  - id: BC-4960.30
+    name: "Listing Data & MLS Management"
+    level: 2
+    industry: Real Estate
+    description: |
+      Management of MLS and portal listing data including capture,
+      media, syndication, and compliance with RESO data standards.
+    children:
+      - id: BC-4960.30.10
+        name: MLS Listing Capture
+        level: 3
+        industry: Real Estate
+        description: |
+          Capture of MLS listings against RESO data dictionary fields
+          and rules.
+        children: []
+      - id: BC-4960.30.20
+        name: "Listing Media & Photography"
+        level: 3
+        industry: Real Estate
+        description: |
+          Production and management of listing media including
+          photography, video, and 3D tours.
+        children: []
+      - id: BC-4960.30.30
+        name: "Syndication & Portal Distribution"
+        level: 3
+        industry: Real Estate
+        description: |
+          Distribution of listings to portals, partner sites, and
+          aggregators.
+        children: []
+      - id: BC-4960.30.40
+        name: "Listing Compliance & Withdrawal"
+        level: 3
+        industry: Real Estate
+        description: |
+          Compliance management of listing accuracy, status changes,
+          and withdrawals.
+        children: []
+  - id: BC-4960.40
+    name: Comparable Market Analysis
+    level: 2
+    industry: Real Estate
+    description: |
+      Production of comparable market analyses, broker opinions of
+      value, and pricing positioning for listing and buyer engagements.
+    children:
+      - id: BC-4960.40.10
+        name: Comparable Sales Curation
+        level: 3
+        industry: Real Estate
+        description: |
+          Curation of comparable sales evidence from MLS and public
+          records.
+        children: []
+      - id: BC-4960.40.20
+        name: CMA Report Production
+        level: 3
+        industry: Real Estate
+        description: |
+          Production of comparable market analysis reports for client
+          presentation.
+        children: []
+      - id: BC-4960.40.30
+        name: Broker Opinion of Value
+        level: 3
+        industry: Real Estate
+        description: |
+          Issuance of broker opinions of value for clients and
+          institutional principals.
+        children: []
+  - id: BC-4960.50
+    name: "Showing & Open House Operations"
+    level: 2
+    industry: Real Estate
+    description: |
+      Operation of showing appointments, open houses, and physical and
+      digital access for prospects and cooperating agents.
+    children:
+      - id: BC-4960.50.10
+        name: Showing Appointment Management
+        level: 3
+        industry: Real Estate
+        description: |
+          Management of showing appointments and access requests from
+          cooperating agents.
+        children: []
+      - id: BC-4960.50.20
+        name: Open House Operations
+        level: 3
+        industry: Real Estate
+        description: |
+          Operation of open house events including registration and
+          follow-up.
+        children: []
+      - id: BC-4960.50.30
+        name: "Lockbox & Access Control"
+        level: 3
+        industry: Real Estate
+        description: |
+          Management of lockbox and digital access credentials for
+          listed properties.
+        children: []
+  - id: BC-4960.60
+    name: "Offer & Negotiation Management"
+    level: 2
+    industry: Real Estate
+    description: |
+      Drafting and negotiation of offers, counter-offers, and
+      multiple-offer scenarios on behalf of the represented party.
+    children:
+      - id: BC-4960.60.10
+        name: Offer Drafting
+        level: 3
+        industry: Real Estate
+        description: |
+          Drafting of offers and supporting addenda on behalf of the
+          represented party.
+        children: []
+      - id: BC-4960.60.20
+        name: "Counter-Offer & Multiple-Offer Management"
+        level: 3
+        industry: Real Estate
+        description: |
+          Management of counter-offers and multiple-offer processes
+          including best-and-final calls.
+        children: []
+      - id: BC-4960.60.30
+        name: "Acceptance & Binding Confirmation"
+        level: 3
+        industry: Real Estate
+        description: |
+          Confirmation of offer acceptance and binding contract
+          formation.
+        children: []
+  - id: BC-4960.70
+    name: Brokerage Transaction Closing Coordination
+    level: 2
+    industry: Real Estate
+    description: |
+      Coordination of contingencies, escrow, and conveyancing through
+      to closing for brokered transactions.
+    children:
+      - id: BC-4960.70.10
+        name: Contingency Tracking
+        level: 3
+        industry: Real Estate
+        description: |
+          Tracking of inspection, financing, and other contingencies
+          through to satisfaction or waiver.
+        children: []
+      - id: BC-4960.70.20
+        name: "Escrow / Conveyancing Coordination"
+        level: 3
+        industry: Real Estate
+        description: |
+          Coordination with escrow and conveyancing parties on closing
+          documents and funds.
+        children: []
+      - id: BC-4960.70.30
+        name: Closing Day Coordination
+        level: 3
+        industry: Real Estate
+        description: |
+          Coordination of signing, key handover, and closing-day
+          logistics.
+        children: []
+  - id: BC-4960.80
+    name: "Commission & Cooperating-Broker Management"
+    level: 2
+    industry: Real Estate
+    description: |
+      Capture of commission terms and settlement of cooperating broker
+      commissions and referral fees.
+    children:
+      - id: BC-4960.80.10
+        name: Commission Agreement Capture
+        level: 3
+        industry: Real Estate
+        description: |
+          Capture of commission agreements including splits and
+          conditions.
+        children: []
+      - id: BC-4960.80.20
+        name: Cooperating Broker Settlement
+        level: 3
+        industry: Real Estate
+        description: |
+          Settlement of commissions due to cooperating brokers on
+          closed transactions.
+        children: []
+      - id: BC-4960.80.30
+        name: Commission Disbursement
+        level: 3
+        industry: Real Estate
+        description: |
+          Disbursement of commissions to brokerage and agents net of
+          deductions.
+        children: []
+      - id: BC-4960.80.40
+        name: Referral Fee Management
+        level: 3
+        industry: Real Estate
+        description: |
+          Management of referral fee agreements with referring brokers
+          and partners.
+        children: []
+  - id: BC-4960.90
+    name: "Agent Productivity & Roster Management"
+    level: 2
+    industry: Real Estate
+    description: |
+      Management of agent licensing sponsorship, performance, and
+      commission plan administration across the brokerage roster.
+    children:
+      - id: BC-4960.90.10
+        name: "Agent Licensing & Sponsorship Tracking"
+        level: 3
+        industry: Real Estate
+        description: |
+          Tracking of agent licensing status and brokerage sponsorship
+          arrangements.
+        children: []
+      - id: BC-4960.90.20
+        name: Agent Performance Management
+        level: 3
+        industry: Real Estate
+        description: |
+          Performance management of agents against production targets
+          and standards.
+        children: []
+      - id: BC-4960.90.30
+        name: Agent Commission Plan Administration
+        level: 3
+        industry: Real Estate
+        description: |
+          Administration of agent commission plans, splits, and caps.
+        children: []
