@@ -1,0 +1,226 @@
+# Student Enrolment & Records Management
+id: BC-4720
+name: "Student Enrolment & Records Management"
+level: 1
+industry: Education
+description: |
+  Administration of the active student lifecycle from enrolment and
+  registration through academic records, transcripts, credit transfer, and
+  graduation, plus underlying student-identifier records management.
+references:
+  - https://www.imsglobal.org/spec/oneroster
+  - https://www.pesc.org/
+  - https://www.w3.org/TR/vc-data-model/
+  - https://www.imsglobal.org/spec/clr
+  - https://ceds.ed.gov/
+children:
+  - id: BC-4720.10
+    name: "Enrolment & Registration"
+    level: 2
+    industry: Education
+    description: |
+      Term-by-term enrolment and course registration of accepted students,
+      including schedule adjustments and continuation between terms.
+    in_scope:
+      - Course registration
+      - Add/drop and schedule adjustment
+      - Re-enrolment and continuation
+    out_of_scope:
+      - Initial admission decisions (covered under Student Recruitment & Admissions Management)
+    children:
+      - id: BC-4720.10.10
+        name: Course Registration
+        level: 3
+        industry: Education
+        description: |
+          Registration of students into courses, sections, and learning units.
+        children: []
+      - id: BC-4720.10.20
+        name: "Add/Drop & Schedule Adjustment"
+        level: 3
+        industry: Education
+        description: |
+          Add/drop processing and schedule adjustment within published windows.
+        children: []
+      - id: BC-4720.10.30
+        name: "Re-Enrolment & Continuation"
+        level: 3
+        industry: Education
+        description: |
+          Re-enrolment and continuation across academic terms and years.
+        children: []
+  - id: BC-4720.20
+    name: Academic Record Management
+    level: 2
+    industry: Education
+    description: |
+      Maintenance of authoritative student academic records, including grades,
+      transcripts, and academic-standing determinations.
+    in_scope:
+      - Grade and mark recording
+      - Transcript production
+      - Academic standing determination
+    out_of_scope:
+      - Marking workflow itself (covered under Assessment & Examinations Management)
+    children:
+      - id: BC-4720.20.10
+        name: "Grade & Mark Recording"
+        level: 3
+        industry: Education
+        description: |
+          Authoritative recording of grades and marks against student records.
+        children: []
+      - id: BC-4720.20.20
+        name: Transcript Production
+        level: 3
+        industry: Education
+        description: |
+          Production and issuance of official and unofficial transcripts.
+        children: []
+      - id: BC-4720.20.30
+        name: Academic Standing Determination
+        level: 3
+        industry: Education
+        description: |
+          Determination of academic standing, honours, probation, and dismissal.
+        children: []
+  - id: BC-4720.30
+    name: "Course Scheduling & Timetabling Records"
+    level: 2
+    industry: Education
+    description: |
+      Authoritative records of course-section timetables, room allocation,
+      and conflict-resolution decisions used downstream by enrolment.
+    in_scope:
+      - Section and cohort timetable records
+      - Room and facility allocation records
+      - Schedule conflict resolution records
+    out_of_scope:
+      - Day-to-day classroom delivery (covered under Teaching & Learning Operations Management)
+    children:
+      - id: BC-4720.30.10
+        name: "Section & Cohort Timetable Records"
+        level: 3
+        industry: Education
+        description: |
+          Authoritative timetable records by section and cohort.
+        children: []
+      - id: BC-4720.30.20
+        name: "Room & Facility Allocation Records"
+        level: 3
+        industry: Education
+        description: |
+          Records of teaching-room and facility allocation against timetabled sessions.
+        children: []
+      - id: BC-4720.30.30
+        name: Schedule Conflict Resolution Records
+        level: 3
+        industry: Education
+        description: |
+          Records of timetable conflicts identified and resolved.
+        children: []
+  - id: BC-4720.40
+    name: "Credit Transfer & Recognition"
+    level: 2
+    industry: Education
+    description: |
+      Evaluation and recording of credits transferred from other institutions,
+      recognition of prior learning, and articulation-agreement application.
+    in_scope:
+      - Transfer credit evaluation
+      - Recognition of prior learning (RPL)
+      - Articulation-agreement application
+    out_of_scope:
+      - International credential evaluation at admission (covered under Student Recruitment & Admissions Management)
+    children:
+      - id: BC-4720.40.10
+        name: Transfer Credit Evaluation
+        level: 3
+        industry: Education
+        description: |
+          Evaluation of credits earned at other institutions against home programmes.
+        children: []
+      - id: BC-4720.40.20
+        name: Recognition of Prior Learning
+        level: 3
+        industry: Education
+        description: |
+          Recognition of prior experiential and informal learning toward credit.
+        children: []
+      - id: BC-4720.40.30
+        name: Articulation Agreement Application
+        level: 3
+        industry: Education
+        description: |
+          Application of inter-institutional articulation agreements to student records.
+        children: []
+  - id: BC-4720.50
+    name: "Graduation & Credentialing"
+    level: 2
+    industry: Education
+    description: |
+      Graduation eligibility audit, conferral of awards, and issuance of
+      verifiable credentials, diplomas, and certificates.
+    in_scope:
+      - Graduation eligibility audit
+      - Award conferral
+      - Credential issuance and downstream verification
+    out_of_scope:
+      - Examination results processing (covered under Assessment & Examinations Management)
+    children:
+      - id: BC-4720.50.10
+        name: Graduation Eligibility Audit
+        level: 3
+        industry: Education
+        description: |
+          Audit of student records against graduation requirements.
+        children: []
+      - id: BC-4720.50.20
+        name: Award Conferral
+        level: 3
+        industry: Education
+        description: |
+          Formal conferral of degrees and qualifications.
+        children: []
+      - id: BC-4720.50.30
+        name: "Credential Issuance & Verification"
+        level: 3
+        industry: Education
+        description: |
+          Issuance and verification of paper and digital credentials, including verifiable credentials.
+        children: []
+  - id: BC-4720.60
+    name: "Student Identifier & Lifecycle Records"
+    level: 2
+    industry: Education
+    description: |
+      Maintenance of student identifiers, enrolment-status flags, and
+      withdrawal/leave records that anchor downstream administrative actions.
+    in_scope:
+      - Student identifier lifecycle management
+      - Enrolment status maintenance
+      - Withdrawal and leave-of-absence records
+    out_of_scope:
+      - Identity authentication and access (covered under Cross-Industry Cybersecurity Management)
+    children:
+      - id: BC-4720.60.10
+        name: Student Identity Lifecycle
+        level: 3
+        industry: Education
+        description: |
+          Lifecycle of unique student identifiers from issuance to closure.
+        children: []
+      - id: BC-4720.60.20
+        name: Enrolment Status Maintenance
+        level: 3
+        industry: Education
+        description: |
+          Maintenance of authoritative enrolment-status flags (active, leave, withdrawn).
+        children: []
+      - id: BC-4720.60.30
+        name: "Withdrawal & Leave-of-Absence Records"
+        level: 3
+        industry: Education
+        description: |
+          Records of student withdrawals, leaves, and re-admissions.
+        children: []

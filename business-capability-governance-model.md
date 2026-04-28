@@ -563,6 +563,22 @@ Where an industry reference framework exists, anchor the upper levels (L1 / L2) 
 - **E.O. 13587, ICD 203** — insider threat and analytic tradecraft standards.
 - **Shipley capture management** — bid/proposal practice.
 
+**Education**
+
+- **1EdTech (formerly IMS Global) — LTI, QTI, OneRoster, Caliper Analytics, Common Cartridge, Open Badges, CASE** — interoperability standards for learning platforms, assessment, rostering, learning analytics, content packaging, digital credentialing, and academic-standards/competency exchange.
+- **SCORM, IEEE xAPI, cmi5** — eLearning content packaging and learning-record interoperability.
+- **Ed-Fi Data Standard** — K-12 student information system data interoperability.
+- **CEDS (Common Education Data Standards)** — US cross-sector education data dictionary and reference model.
+- **PESC (Postsecondary Electronic Standards Council)** — US higher-education transcript and admissions data interchange.
+- **ISCED (UNESCO International Standard Classification of Education)** — international classification of education programmes and qualifications.
+- **EQF (European Qualifications Framework), ECTS, Bologna Process / Diploma Supplement** — European qualification framework, credit accumulation, and degree-recognition framework.
+- **W3C Verifiable Credentials Data Model, Open Badges 3.0, Comprehensive Learner Record (CLR)** — digital and verifiable credentialing standards.
+- **CHEA, US regional accreditors (HLC, MSCHE, NECHE, NWCCU, SACSCOC, WSCUC), QAA (UK), TEQSA / ASQA (Australia), ENQA / ESG / EQAR (Europe)** — institutional and post-secondary accreditation and external quality assurance.
+- **AACSB, EQUIS, AMBA, ABET** — programmatic accreditation for business, management, and engineering / technology programmes.
+- **FERPA (20 USC 1232g), COPPA (15 USC 6501-6506), Student Privacy Pledge, GDPR (where applicable)** — student-data privacy regulation.
+- **Title IX (20 USC 1681), IDEA (20 USC 1400), Section 504 (29 USC 794), ADA, WCAG 2.x / Section 508** — US student-rights, special-education, and accessibility regimes.
+- **IPEDS (US NCES), HESA / JISC (UK), UCAS (UK admissions), Common App (US admissions)** — sector statistics, reporting, and admissions infrastructure.
+
 **Electrical components & equipment**
 
 - **IEC standards portfolio (60034 rotating machinery, 60076 transformers, 60204 machinery electrical, 60364 LV installations, 61439 LV assemblies, 60947 LV switchgear, 61000 EMC, 61508/61511 functional safety)** — international electrotechnical equipment standards.

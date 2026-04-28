@@ -1,0 +1,224 @@
+# Student Recruitment & Admissions Management
+id: BC-4710
+name: "Student Recruitment & Admissions Management"
+level: 1
+industry: Education
+description: |
+  End-to-end attraction, application, decisioning, and conversion of
+  prospective students into enrolled learners, including financial aid offers
+  and international admissions handling.
+references:
+  - https://www.pesc.org/
+  - https://nces.ed.gov/ipeds/
+  - https://www.imsglobal.org/spec/oneroster
+children:
+  - id: BC-4710.10
+    name: "Prospect Outreach & Recruitment"
+    level: 2
+    industry: Education
+    description: |
+      Outbound recruitment of prospective students through campaigns, events,
+      and lead-generation activity.
+    in_scope:
+      - Recruitment campaigns and inbound enquiry handling
+      - Open days, fairs, and campus visits
+      - Prospect lead capture and nurture
+    out_of_scope:
+      - General institutional brand marketing (covered under Cross-Industry Marketing Management)
+    children:
+      - id: BC-4710.10.10
+        name: Recruitment Campaign Operations
+        level: 3
+        industry: Education
+        description: |
+          Planning and execution of student-recruitment campaigns across channels.
+        children: []
+      - id: BC-4710.10.20
+        name: "Open Day & Campus Visit Operations"
+        level: 3
+        industry: Education
+        description: |
+          Operation of open days, taster sessions, and prospective-student visits.
+        children: []
+      - id: BC-4710.10.30
+        name: Prospect Lead Management
+        level: 3
+        industry: Education
+        description: |
+          Capture, nurture, and qualification of prospective-student leads.
+        children: []
+  - id: BC-4710.20
+    name: Application Management
+    level: 2
+    industry: Education
+    description: |
+      Receipt and processing of applications from prospective students,
+      including supporting evidence and applicant communications.
+    in_scope:
+      - Application receipt and validation
+      - Document and reference verification
+      - Applicant status communication
+    out_of_scope:
+      - Admissions decision (covered under Admissions Decisioning)
+    children:
+      - id: BC-4710.20.10
+        name: "Application Receipt & Validation"
+        level: 3
+        industry: Education
+        description: |
+          Receipt and completeness validation of applications across channels.
+        children: []
+      - id: BC-4710.20.20
+        name: Supporting Document Verification
+        level: 3
+        industry: Education
+        description: |
+          Verification of transcripts, references, and supporting documents.
+        children: []
+      - id: BC-4710.20.30
+        name: Application Status Communication
+        level: 3
+        industry: Education
+        description: |
+          Communication of application progress to applicants.
+        children: []
+  - id: BC-4710.30
+    name: Admissions Decisioning
+    level: 2
+    industry: Education
+    description: |
+      Assessment, scoring, committee review, and issuance of admissions
+      decisions against published entry criteria.
+    in_scope:
+      - Admissions assessment and scoring
+      - Admissions committee review
+      - Issuance of admissions decisions
+    out_of_scope:
+      - Financial aid awards (covered under Financial Aid & Scholarship Management)
+    children:
+      - id: BC-4710.30.10
+        name: "Admissions Assessment & Scoring"
+        level: 3
+        industry: Education
+        description: |
+          Assessment and scoring of applicants against entry criteria.
+        children: []
+      - id: BC-4710.30.20
+        name: Admissions Committee Review
+        level: 3
+        industry: Education
+        description: |
+          Committee or panel review of borderline and competitive applications.
+        children: []
+      - id: BC-4710.30.30
+        name: Decision Issuance
+        level: 3
+        industry: Education
+        description: |
+          Issuance of offers, conditional offers, waitlists, and rejections.
+        children: []
+  - id: BC-4710.40
+    name: "Financial Aid & Scholarship Management"
+    level: 2
+    industry: Education
+    description: |
+      Determination, award, and disbursement of financial aid, scholarships,
+      bursaries, and grants supporting access and affordability.
+    in_scope:
+      - Financial aid eligibility assessment
+      - Scholarship award administration
+      - Bursary and grant disbursement
+    out_of_scope:
+      - Title IV / public-funding compliance (covered under Education Compliance & Regulatory Reporting Management)
+    children:
+      - id: BC-4710.40.10
+        name: Financial Aid Eligibility Assessment
+        level: 3
+        industry: Education
+        description: |
+          Assessment of need-based and merit-based financial-aid eligibility.
+        children: []
+      - id: BC-4710.40.20
+        name: Scholarship Award Administration
+        level: 3
+        industry: Education
+        description: |
+          Administration of scholarship awards from internal and external sources.
+        children: []
+      - id: BC-4710.40.30
+        name: "Bursary & Grant Disbursement"
+        level: 3
+        industry: Education
+        description: |
+          Disbursement of bursaries, grants, and tuition-support payments.
+        children: []
+  - id: BC-4710.50
+    name: "Offer & Enrolment Conversion"
+    level: 2
+    industry: Education
+    description: |
+      Conversion of admissions offers into confirmed enrolments, including
+      acceptance handling, pre-enrolment onboarding, and conversion analytics.
+    in_scope:
+      - Offer acceptance tracking
+      - Pre-enrolment onboarding activity
+      - Yield and conversion analytics
+    out_of_scope:
+      - Active enrolment and registration (covered under Student Enrolment & Records Management)
+    children:
+      - id: BC-4710.50.10
+        name: "Offer Issuance & Acceptance Tracking"
+        level: 3
+        industry: Education
+        description: |
+          Issuance of offers and tracking of acceptance, decline, and deferral.
+        children: []
+      - id: BC-4710.50.20
+        name: Pre-Enrolment Onboarding
+        level: 3
+        industry: Education
+        description: |
+          Onboarding tasks completed by accepted students before formal enrolment.
+        children: []
+      - id: BC-4710.50.30
+        name: "Yield Management & Conversion Analytics"
+        level: 3
+        industry: Education
+        description: |
+          Analytics on offer yield, melt, and conversion performance.
+        children: []
+  - id: BC-4710.60
+    name: International Admissions Management
+    level: 2
+    industry: Education
+    description: |
+      Specialist handling of international applicants including credential
+      evaluation, language proficiency, and visa-sponsorship documentation.
+    in_scope:
+      - International credential evaluation
+      - English-language proficiency assessment
+      - Visa-sponsorship documentation generation
+    out_of_scope:
+      - Ongoing visa compliance for enrolled students (covered under Education Compliance & Regulatory Reporting Management)
+    children:
+      - id: BC-4710.60.10
+        name: International Credential Evaluation
+        level: 3
+        industry: Education
+        description: |
+          Evaluation of foreign academic credentials against domestic equivalence.
+        children: []
+      - id: BC-4710.60.20
+        name: English-Language Proficiency Assessment
+        level: 3
+        industry: Education
+        description: |
+          Assessment of English-language proficiency for non-native applicants.
+        children: []
+      - id: BC-4710.60.30
+        name: Visa Sponsorship Documentation
+        level: 3
+        industry: Education
+        description: |
+          Issuance of visa-sponsorship documents (e.g. I-20, CAS) to admitted students.
+        children: []

@@ -1,0 +1,225 @@
+# Teaching & Learning Operations Management
+id: BC-4730
+name: "Teaching & Learning Operations Management"
+level: 1
+industry: Education
+description: |
+  Day-to-day delivery of teaching and learning, covering classroom and online
+  instruction, learning-environment platforms, practicum and placement
+  operations, supplemental instruction, and engagement tracking.
+references:
+  - https://www.imsglobal.org/spec/lti
+  - https://www.imsglobal.org/spec/caliper
+  - https://xapi.com/
+  - https://adlnet.gov/projects/scorm/
+children:
+  - id: BC-4730.10
+    name: "Class & Lesson Delivery"
+    level: 2
+    industry: Education
+    description: |
+      In-person delivery of teaching across lecture, seminar, laboratory,
+      studio, workshop, and tutorial formats.
+    in_scope:
+      - Lecture and seminar delivery
+      - Laboratory and studio delivery
+      - Workshop and tutorial delivery
+    out_of_scope:
+      - Online and distance delivery (covered under Online & Distance Learning Operations)
+    children:
+      - id: BC-4730.10.10
+        name: "Lecture & Seminar Delivery"
+        level: 3
+        industry: Education
+        description: |
+          Delivery of large-group lectures and seminar-style teaching.
+        children: []
+      - id: BC-4730.10.20
+        name: "Laboratory & Studio Delivery"
+        level: 3
+        industry: Education
+        description: |
+          Delivery of laboratory- and studio-based teaching with hands-on activity.
+        children: []
+      - id: BC-4730.10.30
+        name: "Workshop & Tutorial Delivery"
+        level: 3
+        industry: Education
+        description: |
+          Delivery of small-group workshops and tutorials.
+        children: []
+  - id: BC-4730.20
+    name: "Online & Distance Learning Operations"
+    level: 2
+    industry: Education
+    description: |
+      Synchronous, asynchronous, and blended delivery of teaching through
+      online and distance modes.
+    in_scope:
+      - Synchronous online class delivery
+      - Asynchronous course delivery
+      - Blended-learning operations
+    out_of_scope:
+      - Authoring of online learning materials (covered under Educational Content & Learning Resource Management)
+    children:
+      - id: BC-4730.20.10
+        name: Synchronous Online Class Delivery
+        level: 3
+        industry: Education
+        description: |
+          Live, instructor-led online classes and tutorials.
+        children: []
+      - id: BC-4730.20.20
+        name: Asynchronous Course Delivery
+        level: 3
+        industry: Education
+        description: |
+          Self-paced asynchronous course delivery with structured progression.
+        children: []
+      - id: BC-4730.20.30
+        name: Blended Learning Operations
+        level: 3
+        industry: Education
+        description: |
+          Delivery of courses combining face-to-face and online modes.
+        children: []
+  - id: BC-4730.30
+    name: Learning Environment Management
+    level: 2
+    industry: Education
+    description: |
+      Operation of learning-management systems, virtual classroom platforms,
+      and integration with downstream learning tools and analytics.
+    in_scope:
+      - Learning Management System (LMS) operations
+      - Virtual classroom platform operations
+      - LTI and learning-tool integration
+    out_of_scope:
+      - General IT infrastructure (covered under Cross-Industry Information Technology Management)
+    children:
+      - id: BC-4730.30.10
+        name: Learning Management System Operations
+        level: 3
+        industry: Education
+        description: |
+          Operations of the institutional Learning Management System.
+        children: []
+      - id: BC-4730.30.20
+        name: Virtual Classroom Platform Operations
+        level: 3
+        industry: Education
+        description: |
+          Operations of virtual-classroom and conferencing platforms used for teaching.
+        children: []
+      - id: BC-4730.30.30
+        name: Learning Tool Integration
+        level: 3
+        industry: Education
+        description: |
+          Integration of third-party learning tools through LTI and equivalent standards.
+        children: []
+  - id: BC-4730.40
+    name: "Practicum, Clinical & Field Placement Operations"
+    level: 2
+    industry: Education
+    description: |
+      Operation of work-integrated learning, including placement coordination,
+      supervision, and tracking of required practicum hours.
+    in_scope:
+      - Placement site coordination
+      - Clinical and internship supervision
+      - Placement hours and logbook tracking
+    out_of_scope:
+      - Career placement post-graduation (covered under Student Support & Wellbeing Management)
+    children:
+      - id: BC-4730.40.10
+        name: Placement Site Coordination
+        level: 3
+        industry: Education
+        description: |
+          Coordination with external placement sites and host organisations.
+        children: []
+      - id: BC-4730.40.20
+        name: "Clinical & Internship Supervision"
+        level: 3
+        industry: Education
+        description: |
+          Supervision of students during clinical, professional, and internship placements.
+        children: []
+      - id: BC-4730.40.30
+        name: "Placement Hours & Logbook Tracking"
+        level: 3
+        industry: Education
+        description: |
+          Tracking of placement hours, competencies, and logbook entries.
+        children: []
+  - id: BC-4730.50
+    name: "Tutorial & Supplemental Instruction"
+    level: 2
+    industry: Education
+    description: |
+      Tutoring, peer learning, and supplemental academic-skills instruction
+      that complements primary teaching.
+    in_scope:
+      - Peer tutoring operations
+      - Academic skills workshop delivery
+      - Subject-specific tutoring operations
+    out_of_scope:
+      - Academic advising on programme planning (covered under Student Support & Wellbeing Management)
+    children:
+      - id: BC-4730.50.10
+        name: Peer Tutoring Operations
+        level: 3
+        industry: Education
+        description: |
+          Operation of peer-led tutoring and learning-support schemes.
+        children: []
+      - id: BC-4730.50.20
+        name: Academic Skills Workshop Delivery
+        level: 3
+        industry: Education
+        description: |
+          Delivery of cross-disciplinary academic-skills workshops.
+        children: []
+      - id: BC-4730.50.30
+        name: Subject-Specific Tutoring Operations
+        level: 3
+        industry: Education
+        description: |
+          Subject-specific tutoring offered by faculty, departments, or specialist services.
+        children: []
+  - id: BC-4730.60
+    name: "Attendance & Engagement Tracking"
+    level: 2
+    industry: Education
+    description: |
+      Capture and monitoring of student attendance and learner engagement
+      with intervention triggers for at-risk learners.
+    in_scope:
+      - Attendance capture
+      - Learner engagement monitoring
+      - Early-alert and intervention triggering
+    out_of_scope:
+      - Pastoral and counselling intervention (covered under Student Support & Wellbeing Management)
+    children:
+      - id: BC-4730.60.10
+        name: Attendance Capture
+        level: 3
+        industry: Education
+        description: |
+          Capture of student attendance across teaching activities.
+        children: []
+      - id: BC-4730.60.20
+        name: Learner Engagement Monitoring
+        level: 3
+        industry: Education
+        description: |
+          Monitoring of digital and behavioural engagement signals.
+        children: []
+      - id: BC-4730.60.30
+        name: "Early Alert & Intervention"
+        level: 3
+        industry: Education
+        description: |
+          Triggering of early-alert flags and routing to support services.
+        children: []
