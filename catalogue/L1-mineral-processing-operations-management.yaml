@@ -1,0 +1,265 @@
+# Mineral Processing Operations Management
+id: BC-4440
+name: Mineral Processing Operations Management
+level: 1
+industry: "Mining & Metals"
+description: |
+  Concentrator and hydrometallurgical operations that convert run-of-mine
+  ore into saleable concentrates or intermediate products through
+  comminution, beneficiation, leaching, and concentrate handling.
+references:
+  - https://www.icmm.com/en-gb/our-principles/mining-principles
+  - https://cyanidecode.org/
+  - https://gmggroup.org/
+  - https://www.ausimm.com/
+children:
+  - id: BC-4440.10
+    name: Run-of-Mine Stockpile Management
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Management of run-of-mine stockpiles between mine and processing
+      plant including reclaim, blending, and inventory reconciliation.
+    in_scope:
+      - ROM stockpile reclaim and blending
+      - Stockpile inventory reconciliation
+    out_of_scope:
+      - In-pit ore-block allocation (BC-4430.40.40)
+      - Concentrate stockpiling (BC-4440.50.30)
+    children:
+      - id: BC-4440.10.10
+        name: Run-of-Mine Stockpile Reclaim
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Reclaim of run-of-mine stockpiles to plant feed via apron feeders
+          or front-end loaders.
+        children: []
+      - id: BC-4440.10.20
+        name: Ore Blending
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Blending of stockpile material to achieve target grade and
+          metallurgical characteristics.
+        children: []
+      - id: BC-4440.10.30
+        name: Stockpile Inventory Reconciliation
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Reconciliation of survey, dispatch, and reclaim data into
+          stockpile inventory balances.
+        children: []
+  - id: BC-4440.20
+    name: Comminution Operations
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Crushing, grinding, and circuit-optimisation operations that reduce
+      ore to liberation size.
+    children:
+      - id: BC-4440.20.10
+        name: Crushing Operations
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of primary, secondary, and tertiary crushing stations.
+        children: []
+      - id: BC-4440.20.20
+        name: Grinding Mill Operations
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of SAG, AG, ball, and rod mills with associated
+          classification.
+        children: []
+      - id: BC-4440.20.30
+        name: Comminution Circuit Optimisation
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Process optimisation of comminution circuits for throughput, P80,
+          and energy intensity.
+        children: []
+  - id: BC-4440.30
+    name: Beneficiation Operations
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Physical concentration of valuable minerals through flotation,
+      gravity, magnetic, and dense-medium separation.
+    children:
+      - id: BC-4440.30.10
+        name: Flotation Circuit Operations
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of rougher, scavenger, and cleaner flotation circuits
+          with reagent dosing.
+        children: []
+      - id: BC-4440.30.20
+        name: Gravity Concentration
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of jigs, spirals, and centrifugal concentrators for
+          gravity-amenable minerals.
+        children: []
+      - id: BC-4440.30.30
+        name: Magnetic Separation
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Low- and high-intensity magnetic separation for ferromagnetic and
+          paramagnetic minerals.
+        children: []
+      - id: BC-4440.30.40
+        name: Dense Medium Separation
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of dense-medium cyclones and drums for pre-concentration.
+        children: []
+  - id: BC-4440.40
+    name: Hydrometallurgical Operations
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Aqueous extraction of metals through heap, tank, and vat leaching,
+      solvent extraction, and adsorption circuits.
+    children:
+      - id: BC-4440.40.10
+        name: Heap Leach Operations
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of heap leach pads including stacking, irrigation, and
+          pregnant solution collection.
+        children: []
+      - id: BC-4440.40.20
+        name: "Tank & Vat Leach Operations"
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of tank and vat leaching circuits for ore and
+          concentrate.
+        children: []
+      - id: BC-4440.40.30
+        name: Solvent Extraction Operations
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of solvent extraction circuits for selective metal
+          transfer to electrolyte.
+        children: []
+      - id: BC-4440.40.40
+        name: Carbon Adsorption Operations
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of carbon-in-pulp, carbon-in-leach, and carbon-in-column
+          adsorption-elution-recovery circuits.
+        children: []
+  - id: BC-4440.50
+    name: "Concentrate Handling & Filtration"
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Thickening, filtration, and stockpiling of concentrates for despatch
+      to smelter or sale.
+    children:
+      - id: BC-4440.50.10
+        name: Thickening Operations
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of high-rate and paste thickeners for concentrate and
+          tailings dewatering.
+        children: []
+      - id: BC-4440.50.20
+        name: "Filtration & Dewatering"
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of pressure, vacuum, and belt filters for concentrate
+          dewatering.
+        children: []
+      - id: BC-4440.50.30
+        name: Concentrate Stockpiling
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Indoor and outdoor stockpiling of dewatered concentrate ahead of
+          despatch.
+        children: []
+  - id: BC-4440.60
+    name: Process Plant Metallurgical Accounting
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Sampling, assay, and metal balance reconciliation of plant feed,
+      products, and tailings.
+    children:
+      - id: BC-4440.60.10
+        name: "Plant Sampling & Assay"
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Cross-stream sampling and assay of plant feed, concentrate, and
+          tailings.
+        children: []
+      - id: BC-4440.60.20
+        name: Metallurgical Balance
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Period metal balance reconciliation across the plant flowsheet.
+        children: []
+      - id: BC-4440.60.30
+        name: Recovery Reporting
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Reporting of metal recovery against plan and design.
+        children: []
+      - id: BC-4440.60.40
+        name: Concentrate Quality Reporting
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Reporting of concentrate grade, deleterious elements, and
+          moisture against specification.
+        children: []
+  - id: BC-4440.70
+    name: "Process Reagent & Consumable Management"
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Management of process reagents and consumables including dosing
+      control, inventory, and stewardship of hazardous reagents.
+    children:
+      - id: BC-4440.70.10
+        name: Reagent Dosing Control
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Real-time control of reagent dosing across flotation and
+          hydrometallurgical circuits.
+        children: []
+      - id: BC-4440.70.20
+        name: Reagent Inventory Management
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Inventory and consumption management of bulk reagents and
+          grinding media.
+        children: []
+      - id: BC-4440.70.30
+        name: Cyanide Stewardship
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Stewardship of cyanide and other hazardous reagents in line with
+          the International Cyanide Management Code.
+        children: []

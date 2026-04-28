@@ -1,0 +1,249 @@
+# Mineral Resource & Reserve Management
+id: BC-4410
+name: "Mineral Resource & Reserve Management"
+level: 1
+industry: "Mining & Metals"
+description: |
+  Geological modelling, geostatistical estimation, classification, competent-
+  person governance, and public reporting of mineral resources and ore
+  reserves under CRIRSCO-aligned codes.
+references:
+  - https://www.crirsco.com/
+  - https://www.jorc.org/
+  - https://www.samcode.co.za/
+  - https://mrmr.cim.org/en/standards/canadian-mineral-resource-and-mineral-reserve-definitions-and-guidelines/
+  - https://unece.org/sustainable-energy/unfc-and-sustainable-resource-management
+children:
+  - id: BC-4410.10
+    name: Geological Modelling
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Construction of three-dimensional geological models of lithology,
+      structure, alteration, and mineralisation domains as the input to
+      resource estimation.
+    in_scope:
+      - Lithological and stratigraphic modelling
+      - Structural and fault modelling
+      - Mineralisation domain wireframing
+    out_of_scope:
+      - Pit-design and stope-design wireframes (BC-4420.40)
+    children:
+      - id: BC-4410.10.10
+        name: Lithological Modelling
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Three-dimensional modelling of lithological and stratigraphic units
+          from drillhole logging.
+        children: []
+      - id: BC-4410.10.20
+        name: Structural Modelling
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Modelling of faults, folds, and shear zones controlling
+          mineralisation geometry.
+        children: []
+      - id: BC-4410.10.30
+        name: Mineralisation Domain Modelling
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Wireframing of mineralisation envelopes and grade domains used as
+          estimation boundaries.
+        children: []
+      - id: BC-4410.10.40
+        name: Implicit Modelling Workflows
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Implicit and rapid-update geological modelling workflows for
+          iterative model refinement.
+        children: []
+  - id: BC-4410.20
+    name: Resource Estimation
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Geostatistical estimation of grade and tonnage into block models and
+      classification of estimated material as Inferred, Indicated, or
+      Measured under public reporting codes.
+    children:
+      - id: BC-4410.20.10
+        name: Geostatistical Estimation
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Variography and kriging or simulation-based estimation of grade
+          into block models.
+        children: []
+      - id: BC-4410.20.20
+        name: Block Model Construction
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Construction and population of regularised block models for
+          downstream planning.
+        children: []
+      - id: BC-4410.20.30
+        name: Estimation Validation
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Statistical and visual validation of estimated grades against
+          composite data.
+        children: []
+      - id: BC-4410.20.40
+        name: Resource Classification
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Classification of estimated mineralisation into Inferred,
+          Indicated, and Measured categories.
+        children: []
+  - id: BC-4410.30
+    name: Reserve Estimation
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Application of mining, metallurgical, economic, and other modifying
+      factors to convert Indicated and Measured Resources into Probable and
+      Proved Ore Reserves.
+    children:
+      - id: BC-4410.30.10
+        name: Modifying Factor Application
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Application of mining, metallurgical, infrastructure, and economic
+          modifying factors to resources.
+        children: []
+      - id: BC-4410.30.20
+        name: Cut-Off Grade Determination
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Calculation of cut-off grades supporting reserve definition under
+          assumed pricing and cost.
+        children: []
+      - id: BC-4410.30.30
+        name: Mining Recovery & Dilution Modelling
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Modelling of mining recovery, dilution, and edge effects applied
+          to in-situ resources.
+        children: []
+      - id: BC-4410.30.40
+        name: Ore Reserve Classification
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Classification of ore reserves into Probable and Proved
+          categories.
+        children: []
+  - id: BC-4410.40
+    name: Competent Person Governance
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Governance of competent and qualified persons taking responsibility
+      for resource and reserve statements under public reporting codes.
+    children:
+      - id: BC-4410.40.10
+        name: Competent Person Sign-Off
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Competent or qualified person review and sign-off of resource and
+          reserve statements.
+        children: []
+      - id: BC-4410.40.20
+        name: Internal Resource Review
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Internal peer and technical-committee review of resource and
+          reserve estimates.
+        children: []
+      - id: BC-4410.40.30
+        name: External Resource Audit Coordination
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Coordination of independent third-party resource and reserve
+          audits.
+        children: []
+  - id: BC-4410.50
+    name: "Public Resource & Reserve Reporting"
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Preparation and disclosure of public statements of mineral resources
+      and ore reserves required by securities regulators and listing rules.
+    children:
+      - id: BC-4410.50.10
+        name: Resource Statement Preparation
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Preparation of public mineral resource statements aligned with
+          CRIRSCO-family codes.
+        children: []
+      - id: BC-4410.50.20
+        name: Reserve Statement Preparation
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Preparation of public ore reserve statements aligned with
+          CRIRSCO-family codes.
+        children: []
+      - id: BC-4410.50.30
+        name: Annual Reserves Statement Update
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Annual update of resource and reserve statements reflecting
+          depletion and new estimates.
+        children: []
+      - id: BC-4410.50.40
+        name: Independent Technical Report Coordination
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Coordination of qualified-person technical reports for capital
+          markets, transactions, and disclosure events.
+        children: []
+  - id: BC-4410.60
+    name: Resource Reconciliation
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Reconciliation of estimated resources and reserves against grade-
+      control, plant feed, and metal production to inform model performance.
+    children:
+      - id: BC-4410.60.10
+        name: Mine-to-Mill Reconciliation
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Reconciliation of mined tonnes and grade against plant feed and
+          metal recovered.
+        children: []
+      - id: BC-4410.60.20
+        name: Resource Depletion Tracking
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Tracking of resource and reserve depletion arising from mining
+          activity.
+        children: []
+      - id: BC-4410.60.30
+        name: Model Performance Analysis
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Analysis of resource model performance against actuals to inform
+          future estimation.
+        children: []
