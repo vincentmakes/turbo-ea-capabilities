@@ -1,0 +1,253 @@
+# Subscription Billing & Revenue Management
+id: BC-4250
+name: "Subscription Billing & Revenue Management"
+level: 1
+industry: Software & Technology
+description: |
+  Usage metering, rating, invoicing, dunning, subscription revenue
+  recognition, subscription tax handling, and recurring-revenue analytics
+  for the SaaS commercial model.
+references:
+  - https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/
+  - https://asc.fasb.org/topic&trid=2160963
+children:
+  - id: BC-4250.10
+    name: Usage Metering
+    level: 2
+    industry: Software & Technology
+    description: |
+      Ingestion and aggregation of usage events that feed downstream rating
+      and analytics.
+    children:
+      - id: BC-4250.10.10
+        name: Usage Event Ingestion
+        level: 3
+        industry: Software & Technology
+        description: |
+          Ingestion of usage events from product services into the
+          metering pipeline.
+        children: []
+      - id: BC-4250.10.20
+        name: Usage Aggregation
+        level: 3
+        industry: Software & Technology
+        description: |
+          Aggregation of usage events into billable quantities by tenant
+          and meter.
+        children: []
+      - id: BC-4250.10.30
+        name: Metered Quantity Reconciliation
+        level: 3
+        industry: Software & Technology
+        description: |
+          Reconciliation of metered quantities against source of truth and
+          customer-visible counters.
+        children: []
+  - id: BC-4250.20
+    name: "Rating & Charging"
+    level: 2
+    industry: Software & Technology
+    description: |
+      Application of subscription tariffs, usage tariffs, prorations, and
+      discounts to compute charges.
+    children:
+      - id: BC-4250.20.10
+        name: Subscription Rating
+        level: 3
+        industry: Software & Technology
+        description: |
+          Computation of recurring subscription charges per cycle.
+        children: []
+      - id: BC-4250.20.20
+        name: Usage Rating
+        level: 3
+        industry: Software & Technology
+        description: |
+          Computation of usage charges from rated quantities and tariffs.
+        children: []
+      - id: BC-4250.20.30
+        name: Proration Calculation
+        level: 3
+        industry: Software & Technology
+        description: |
+          Calculation of prorated charges arising from mid-cycle changes.
+        children: []
+      - id: BC-4250.20.40
+        name: Discount Application
+        level: 3
+        industry: Software & Technology
+        description: |
+          Application of negotiated discounts and credits to computed
+          charges.
+        children: []
+  - id: BC-4250.30
+    name: "Invoicing & Statement Management"
+    level: 2
+    industry: Software & Technology
+    description: |
+      Generation, delivery, and adjustment of invoices and customer
+      billing dispute handling.
+    children:
+      - id: BC-4250.30.10
+        name: Invoice Generation
+        level: 3
+        industry: Software & Technology
+        description: |
+          Generation of invoices from rated charges and contract terms.
+        children: []
+      - id: BC-4250.30.20
+        name: Invoice Delivery
+        level: 3
+        industry: Software & Technology
+        description: |
+          Delivery of invoices to customers via portal, email, and
+          partner channels.
+        children: []
+      - id: BC-4250.30.30
+        name: Invoice Adjustment
+        level: 3
+        industry: Software & Technology
+        description: |
+          Adjustment of invoices for credits, errors, and contractual
+          variances.
+        children: []
+      - id: BC-4250.30.40
+        name: Customer Billing Dispute Handling
+        level: 3
+        industry: Software & Technology
+        description: |
+          Triage and resolution of customer billing disputes.
+        children: []
+  - id: BC-4250.40
+    name: "Payment Collection & Dunning"
+    level: 2
+    industry: Software & Technology
+    description: |
+      Payment-method management, payment authorisation, dunning, and
+      involuntary churn recovery.
+    children:
+      - id: BC-4250.40.10
+        name: Payment Method Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Capture and stewardship of customer payment methods and tokens.
+        children: []
+      - id: BC-4250.40.20
+        name: Payment Authorisation
+        level: 3
+        industry: Software & Technology
+        description: |
+          Authorisation and capture of recurring payments through payment
+          processors.
+        children: []
+      - id: BC-4250.40.30
+        name: Dunning Workflow
+        level: 3
+        industry: Software & Technology
+        description: |
+          Automated dunning sequences for failed payments and ageing
+          balances.
+        children: []
+      - id: BC-4250.40.40
+        name: Involuntary Churn Recovery
+        level: 3
+        industry: Software & Technology
+        description: |
+          Recovery of subscriptions lost due to expired cards, hard
+          declines, and similar payment failures.
+        children: []
+  - id: BC-4250.50
+    name: Subscription Revenue Recognition
+    level: 2
+    industry: Software & Technology
+    description: |
+      Identification of performance obligations and management of revenue
+      schedules in line with ASC 606 / IFRS 15.
+    children:
+      - id: BC-4250.50.10
+        name: Performance Obligation Identification
+        level: 3
+        industry: Software & Technology
+        description: |
+          Identification of distinct performance obligations from
+          subscription contracts.
+        children: []
+      - id: BC-4250.50.20
+        name: Revenue Schedule Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Generation and maintenance of revenue recognition schedules
+          across contract life.
+        children: []
+      - id: BC-4250.50.30
+        name: Deferred Revenue Reconciliation
+        level: 3
+        industry: Software & Technology
+        description: |
+          Reconciliation of deferred revenue balances to billed and
+          recognised amounts.
+        children: []
+  - id: BC-4250.60
+    name: Subscription Tax Management
+    level: 2
+    industry: Software & Technology
+    description: |
+      Tax-jurisdiction determination, calculation, and exemption handling
+      across recurring and usage-based charges.
+    children:
+      - id: BC-4250.60.10
+        name: Tax Jurisdiction Determination
+        level: 3
+        industry: Software & Technology
+        description: |
+          Determination of applicable tax jurisdictions per customer and
+          charge.
+        children: []
+      - id: BC-4250.60.20
+        name: Subscription Tax Calculation
+        level: 3
+        industry: Software & Technology
+        description: |
+          Calculation of indirect tax on subscription and usage charges.
+        children: []
+      - id: BC-4250.60.30
+        name: Tax Exemption Handling
+        level: 3
+        industry: Software & Technology
+        description: |
+          Capture and application of customer tax-exemption certificates.
+        children: []
+  - id: BC-4250.70
+    name: Subscription Revenue Analytics
+    level: 2
+    industry: Software & Technology
+    description: |
+      Computation and analysis of recurring-revenue health metrics
+      including ARR, MRR, NRR, GRR, and cohort views.
+    children:
+      - id: BC-4250.70.10
+        name: "ARR & MRR Computation"
+        level: 3
+        industry: Software & Technology
+        description: |
+          Computation of annual and monthly recurring revenue from
+          subscription state.
+        children: []
+      - id: BC-4250.70.20
+        name: "Net & Gross Retention Analysis"
+        level: 3
+        industry: Software & Technology
+        description: |
+          Analysis of net and gross revenue retention across customer
+          cohorts.
+        children: []
+      - id: BC-4250.70.30
+        name: Cohort Revenue Analysis
+        level: 3
+        industry: Software & Technology
+        description: |
+          Cohort-based analysis of revenue evolution and retention
+          dynamics.
+        children: []

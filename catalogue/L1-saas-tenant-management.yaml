@@ -1,0 +1,206 @@
+# SaaS Tenant Management
+id: BC-4230
+name: SaaS Tenant Management
+level: 1
+industry: Software & Technology
+description: |
+  Provisioning, configuration, isolation, region placement, identity
+  federation, and per-tenant data export of tenants in the multi-tenant
+  service.
+references:
+  - https://datatracker.ietf.org/doc/html/rfc7644
+  - https://openid.net/specs/openid-connect-core-1_0.html
+children:
+  - id: BC-4230.10
+    name: "Tenant Provisioning & Lifecycle"
+    level: 2
+    industry: Software & Technology
+    description: |
+      Creation, suspension, decommissioning, and migration of tenants in
+      the multi-tenant fleet.
+    children:
+      - id: BC-4230.10.10
+        name: Tenant Provisioning
+        level: 3
+        industry: Software & Technology
+        description: |
+          Creation of new tenants and allocation of associated resources.
+        children: []
+      - id: BC-4230.10.20
+        name: Tenant Suspension
+        level: 3
+        industry: Software & Technology
+        description: |
+          Suspension of tenants for non-payment, abuse, or contractual
+          reasons.
+        children: []
+      - id: BC-4230.10.30
+        name: Tenant Decommissioning
+        level: 3
+        industry: Software & Technology
+        description: |
+          Decommissioning of tenants including data deletion or hand-back
+          per contract.
+        children: []
+      - id: BC-4230.10.40
+        name: Tenant Migration
+        level: 3
+        industry: Software & Technology
+        description: |
+          Migration of tenants between clusters, shards, or regions.
+        children: []
+  - id: BC-4230.20
+    name: Tenant Configuration Management
+    level: 2
+    industry: Software & Technology
+    description: |
+      Per-tenant feature configuration, branding, and limits applied above
+      the shared product baseline.
+    children:
+      - id: BC-4230.20.10
+        name: Per-Tenant Feature Configuration
+        level: 3
+        industry: Software & Technology
+        description: |
+          Configuration of feature options at the tenant level.
+        children: []
+      - id: BC-4230.20.20
+        name: Tenant Branding Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Tenant-level branding such as logos, colours, and custom domains.
+        children: []
+      - id: BC-4230.20.30
+        name: Tenant Limit Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Configuration of tenant-level limits such as quotas and rate
+          ceilings.
+        children: []
+  - id: BC-4230.30
+    name: Tenant Isolation Management
+    level: 2
+    industry: Software & Technology
+    description: |
+      Mechanisms that maintain logical and physical isolation between
+      tenants across data, compute, and access paths.
+    children:
+      - id: BC-4230.30.10
+        name: Tenant Data Isolation
+        level: 3
+        industry: Software & Technology
+        description: |
+          Isolation of tenant data through partitioning, encryption, and
+          access scoping.
+        children: []
+      - id: BC-4230.30.20
+        name: Tenant Compute Isolation
+        level: 3
+        industry: Software & Technology
+        description: |
+          Isolation of tenant workloads through dedicated or constrained
+          compute boundaries.
+        children: []
+      - id: BC-4230.30.30
+        name: Cross-Tenant Access Prevention
+        level: 3
+        industry: Software & Technology
+        description: |
+          Controls and monitoring that prevent cross-tenant data and
+          identity bleed.
+        children: []
+  - id: BC-4230.40
+    name: "Data Residency & Region Placement"
+    level: 2
+    industry: Software & Technology
+    description: |
+      Assignment of tenants to regions, enforcement of data-residency
+      commitments, and management of cross-region replication policy.
+    children:
+      - id: BC-4230.40.10
+        name: Tenant Region Assignment
+        level: 3
+        industry: Software & Technology
+        description: |
+          Assignment of tenants to regions consistent with contract and
+          regulation.
+        children: []
+      - id: BC-4230.40.20
+        name: Data Residency Enforcement
+        level: 3
+        industry: Software & Technology
+        description: |
+          Enforcement of data-residency boundaries at runtime.
+        children: []
+      - id: BC-4230.40.30
+        name: Cross-Region Replication Policy
+        level: 3
+        industry: Software & Technology
+        description: |
+          Policy governing cross-region replication for resilience and
+          access.
+        children: []
+  - id: BC-4230.50
+    name: Tenant Identity Federation
+    level: 2
+    industry: Software & Technology
+    description: |
+      Federation of tenant identity providers and lifecycle of tenant user
+      accounts via single sign-on and SCIM.
+    children:
+      - id: BC-4230.50.10
+        name: Tenant SSO Configuration
+        level: 3
+        industry: Software & Technology
+        description: |
+          Configuration of single sign-on between tenant identity providers
+          and the service.
+        children: []
+      - id: BC-4230.50.20
+        name: SCIM-Based User Provisioning
+        level: 3
+        industry: Software & Technology
+        description: |
+          Lifecycle of tenant user accounts driven by SCIM or equivalent
+          provisioning protocols.
+        children: []
+      - id: BC-4230.50.30
+        name: Tenant Identity Provider Onboarding
+        level: 3
+        industry: Software & Technology
+        description: |
+          Onboarding and validation of tenant identity providers.
+        children: []
+  - id: BC-4230.60
+    name: "Tenant Backup & Export Management"
+    level: 2
+    industry: Software & Technology
+    description: |
+      Per-tenant data export, deletion, and restore capabilities exposed to
+      tenants and administrators.
+    children:
+      - id: BC-4230.60.10
+        name: Tenant Data Export
+        level: 3
+        industry: Software & Technology
+        description: |
+          Export of tenant data in machine-readable form on request or by
+          contract.
+        children: []
+      - id: BC-4230.60.20
+        name: Tenant Data Deletion
+        level: 3
+        industry: Software & Technology
+        description: |
+          Verifiable deletion of tenant data on cancellation or request.
+        children: []
+      - id: BC-4230.60.30
+        name: Tenant Backup Restoration
+        level: 3
+        industry: Software & Technology
+        description: |
+          Restoration of tenant data from backup on tenant or operator
+          request.
+        children: []

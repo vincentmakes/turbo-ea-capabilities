@@ -1,0 +1,278 @@
+# Software Product Engineering Management
+id: BC-4200
+name: Software Product Engineering Management
+level: 1
+industry: Software & Technology
+description: |
+  Discovery, specification, design, implementation, code review, and quality
+  engineering of SaaS products from idea through release-ready build.
+references:
+  - https://owasp.org/www-project-application-security-verification-standard/
+  - https://csrc.nist.gov/publications/detail/sp/800-218/final
+  - https://slsa.dev/
+  - https://spdx.dev/
+  - https://cyclonedx.org/
+children:
+  - id: BC-4200.10
+    name: "Product Discovery & Backlog Management"
+    level: 2
+    industry: Software & Technology
+    description: |
+      Opportunity research, ideation, validation, and backlog stewardship that
+      translate market and customer signals into a prioritised body of work.
+    in_scope:
+      - User and market research
+      - Backlog grooming and prioritisation
+      - Roadmap definition and refresh
+    out_of_scope:
+      - Quantitative product analytics (covered by Product Telemetry & Experimentation Management)
+      - Marketing demand generation
+    children:
+      - id: BC-4200.10.10
+        name: User Research
+        level: 3
+        industry: Software & Technology
+        description: |
+          Generative and evaluative research with users to surface needs,
+          friction, and willingness to pay.
+        children: []
+      - id: BC-4200.10.20
+        name: Backlog Refinement
+        level: 3
+        industry: Software & Technology
+        description: |
+          Continuous refinement of the product backlog including sizing,
+          decomposition, and re-prioritisation.
+        children: []
+      - id: BC-4200.10.30
+        name: Roadmap Definition
+        level: 3
+        industry: Software & Technology
+        description: |
+          Definition and periodic refresh of the product roadmap and themed
+          investment areas.
+        children: []
+      - id: BC-4200.10.40
+        name: Customer Feedback Synthesis
+        level: 3
+        industry: Software & Technology
+        description: |
+          Synthesis of inbound feedback from support, success, sales, and
+          community into actionable product signals.
+        children: []
+  - id: BC-4200.20
+    name: Product Specification Management
+    level: 2
+    industry: Software & Technology
+    description: |
+      Capture of intended behaviour, constraints, and acceptance criteria so
+      that engineering work can be executed predictably.
+    in_scope:
+      - Functional and non-functional specifications
+      - Acceptance criteria
+    out_of_scope:
+      - Visual and interaction design (covered by Software Design Management)
+    children:
+      - id: BC-4200.20.10
+        name: Functional Specification
+        level: 3
+        industry: Software & Technology
+        description: |
+          Specification of intended behaviour and user-visible outcomes for
+          features and capabilities.
+        children: []
+      - id: BC-4200.20.20
+        name: Non-Functional Specification
+        level: 3
+        industry: Software & Technology
+        description: |
+          Specification of non-functional requirements such as availability,
+          latency, throughput, and security posture.
+        children: []
+      - id: BC-4200.20.30
+        name: Acceptance Criteria Definition
+        level: 3
+        industry: Software & Technology
+        description: |
+          Definition of testable acceptance criteria that anchor "done" for
+          features and stories.
+        children: []
+  - id: BC-4200.30
+    name: Software Design Management
+    level: 2
+    industry: Software & Technology
+    description: |
+      User experience, system, and accessibility design for software products,
+      anchored in shared design systems.
+    children:
+      - id: BC-4200.30.10
+        name: User Experience Design
+        level: 3
+        industry: Software & Technology
+        description: |
+          Interaction, information architecture, and visual design of product
+          surfaces.
+        children: []
+      - id: BC-4200.30.20
+        name: System Design
+        level: 3
+        industry: Software & Technology
+        description: |
+          Architectural design of software components, services, data flows,
+          and external interfaces.
+        children: []
+      - id: BC-4200.30.30
+        name: Design System Stewardship
+        level: 3
+        industry: Software & Technology
+        description: |
+          Stewardship of the shared design system including components,
+          tokens, and usage guidance.
+        children: []
+      - id: BC-4200.30.40
+        name: Accessibility Design
+        level: 3
+        industry: Software & Technology
+        description: |
+          Design conformance to accessibility standards across product
+          surfaces.
+        children: []
+  - id: BC-4200.40
+    name: Software Construction Management
+    level: 2
+    industry: Software & Technology
+    description: |
+      Implementation practice including source control, code review, and
+      collaborative coding disciplines.
+    children:
+      - id: BC-4200.40.10
+        name: Source Code Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Stewardship of source repositories, branching policy, and code
+          ownership.
+        children: []
+      - id: BC-4200.40.20
+        name: Code Review Practice
+        level: 3
+        industry: Software & Technology
+        description: |
+          Peer review of code changes against engineering and security
+          standards.
+        children: []
+      - id: BC-4200.40.30
+        name: "Pair & Mob Programming Practice"
+        level: 3
+        industry: Software & Technology
+        description: |
+          Collaborative coding practices used to share knowledge and lift
+          quality on selected work.
+        children: []
+  - id: BC-4200.50
+    name: Software Quality Engineering
+    level: 2
+    industry: Software & Technology
+    description: |
+      Test strategy, automated test suite stewardship, and defect management
+      for software products.
+    in_scope:
+      - Automated unit, integration, end-to-end testing of the product
+      - Defect triage and resolution
+    out_of_scope:
+      - Enterprise-wide quality management system (covered by Quality Management)
+      - Performance and resilience testing of the running service (covered by SaaS Platform Operations Management)
+    children:
+      - id: BC-4200.50.10
+        name: Test Strategy Definition
+        level: 3
+        industry: Software & Technology
+        description: |
+          Definition of test strategy across unit, integration, end-to-end,
+          and exploratory layers.
+        children: []
+      - id: BC-4200.50.20
+        name: Automated Test Suite Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Stewardship of automated test suites including coverage,
+          flakiness, and runtime.
+        children: []
+      - id: BC-4200.50.30
+        name: "Defect Triage & Resolution"
+        level: 3
+        industry: Software & Technology
+        description: |
+          Triage and resolution of defects raised against the product.
+        children: []
+      - id: BC-4200.50.40
+        name: Regression Coverage Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Management of regression coverage as the product surface evolves.
+        children: []
+  - id: BC-4200.60
+    name: Open Source Stewardship
+    level: 2
+    industry: Software & Technology
+    description: |
+      Inbound use, outbound contribution, and supply-chain artefacts for
+      open-source software embedded in the product.
+    children:
+      - id: BC-4200.60.10
+        name: Inbound Open Source Compliance
+        level: 3
+        industry: Software & Technology
+        description: |
+          Compliance with inbound open-source licences and notice obligations.
+        children: []
+      - id: BC-4200.60.20
+        name: Outbound Open Source Contribution
+        level: 3
+        industry: Software & Technology
+        description: |
+          Governance of outbound contributions to and stewardship of
+          open-source projects.
+        children: []
+      - id: BC-4200.60.30
+        name: Software Bill of Materials Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Generation, distribution, and maintenance of software bills of
+          materials in standard formats.
+        children: []
+  - id: BC-4200.70
+    name: Engineering Productivity Management
+    level: 2
+    industry: Software & Technology
+    description: |
+      Internal developer platforms, tooling, and engineering performance
+      measurement that lift sustained delivery throughput.
+    children:
+      - id: BC-4200.70.10
+        name: Developer Toolchain Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Selection and stewardship of developer toolchains across the
+          engineering organisation.
+        children: []
+      - id: BC-4200.70.20
+        name: Internal Developer Platform Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Operation of internal platforms that abstract infrastructure and
+          paved-path workflows for engineers.
+        children: []
+      - id: BC-4200.70.30
+        name: Engineering Performance Metrics
+        level: 3
+        industry: Software & Technology
+        description: |
+          Measurement of engineering performance using delivery and developer
+          experience metrics.
+        children: []

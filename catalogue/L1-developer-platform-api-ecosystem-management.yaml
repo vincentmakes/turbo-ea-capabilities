@@ -1,0 +1,262 @@
+# Developer Platform & API Ecosystem Management
+id: BC-4270
+name: "Developer Platform & API Ecosystem Management"
+level: 1
+industry: Software & Technology
+description: |
+  Public APIs, SDKs, developer portal, developer identity, API consumption
+  governance, partner apps, software-marketplace listings, and outbound
+  webhook subscriptions for the SaaS ecosystem.
+references:
+  - https://spec.openapis.org/
+  - https://www.asyncapi.com/
+  - https://datatracker.ietf.org/doc/html/rfc6749
+children:
+  - id: BC-4270.10
+    name: Public API Lifecycle Management
+    level: 2
+    industry: Software & Technology
+    description: |
+      Specification, versioning, and deprecation of public APIs exposed to
+      external developers.
+    children:
+      - id: BC-4270.10.10
+        name: API Specification Authoring
+        level: 3
+        industry: Software & Technology
+        description: |
+          Authoring and review of public API specifications in machine-
+          readable form.
+        children: []
+      - id: BC-4270.10.20
+        name: API Versioning
+        level: 3
+        industry: Software & Technology
+        description: |
+          Versioning of public APIs with documented compatibility
+          guarantees.
+        children: []
+      - id: BC-4270.10.30
+        name: API Deprecation Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Communication and execution of API deprecations with adequate
+          notice.
+        children: []
+  - id: BC-4270.20
+    name: "SDK & Client Library Management"
+    level: 2
+    industry: Software & Technology
+    description: |
+      Generation, language coverage, and sample maintenance of SDKs and
+      client libraries that wrap public APIs.
+    children:
+      - id: BC-4270.20.10
+        name: "SDK Generation & Release"
+        level: 3
+        industry: Software & Technology
+        description: |
+          Generation and release of SDKs aligned with API versions.
+        children: []
+      - id: BC-4270.20.20
+        name: SDK Language Coverage Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Selection and stewardship of supported SDK languages and
+          runtimes.
+        children: []
+      - id: BC-4270.20.30
+        name: SDK Sample Maintenance
+        level: 3
+        industry: Software & Technology
+        description: |
+          Maintenance of SDK code samples and starter projects.
+        children: []
+  - id: BC-4270.30
+    name: Developer Portal Management
+    level: 2
+    industry: Software & Technology
+    description: |
+      Documentation, interactive references, and onboarding flows that
+      help developers integrate with the platform.
+    children:
+      - id: BC-4270.30.10
+        name: Developer Documentation Authoring
+        level: 3
+        industry: Software & Technology
+        description: |
+          Authoring of conceptual, task, and reference documentation for
+          developers.
+        children: []
+      - id: BC-4270.30.20
+        name: Interactive API Reference
+        level: 3
+        industry: Software & Technology
+        description: |
+          Operation of interactive API reference and try-it-now experiences.
+        children: []
+      - id: BC-4270.30.30
+        name: Developer Onboarding
+        level: 3
+        industry: Software & Technology
+        description: |
+          Onboarding flows that move developers from sign-up to first
+          successful API call.
+        children: []
+  - id: BC-4270.40
+    name: "Developer Identity & Credential Management"
+    level: 2
+    industry: Software & Technology
+    description: |
+      Issuance and stewardship of developer credentials, OAuth clients,
+      and federated developer identity.
+    children:
+      - id: BC-4270.40.10
+        name: API Key Issuance
+        level: 3
+        industry: Software & Technology
+        description: |
+          Issuance, rotation, and revocation of developer API keys.
+        children: []
+      - id: BC-4270.40.20
+        name: OAuth Client Registration
+        level: 3
+        industry: Software & Technology
+        description: |
+          Registration and stewardship of OAuth client applications.
+        children: []
+      - id: BC-4270.40.30
+        name: Developer Identity Federation
+        level: 3
+        industry: Software & Technology
+        description: |
+          Federation of developer identity from external identity
+          providers.
+        children: []
+  - id: BC-4270.50
+    name: API Consumption Governance
+    level: 2
+    industry: Software & Technology
+    description: |
+      Quotas, rate limits, usage analytics, and mapping of API consumption
+      to commercial plan tiers.
+    children:
+      - id: BC-4270.50.10
+        name: "API Quota & Rate Limit Management"
+        level: 3
+        industry: Software & Technology
+        description: |
+          Definition and enforcement of API quotas and rate limits per
+          consumer.
+        children: []
+      - id: BC-4270.50.20
+        name: API Usage Analytics
+        level: 3
+        industry: Software & Technology
+        description: |
+          Analytics of API consumption patterns by endpoint, consumer, and
+          plan.
+        children: []
+      - id: BC-4270.50.30
+        name: API Tier Plan Mapping
+        level: 3
+        industry: Software & Technology
+        description: |
+          Mapping of API access tiers to subscription plans and
+          entitlements.
+        children: []
+  - id: BC-4270.60
+    name: Partner App Programme Management
+    level: 2
+    industry: Software & Technology
+    description: |
+      Stewardship of third-party partner applications including listing,
+      certification, and revenue sharing.
+    children:
+      - id: BC-4270.60.10
+        name: Partner App Listing Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Listing of partner applications in the platform's app directory.
+        children: []
+      - id: BC-4270.60.20
+        name: Partner App Certification
+        level: 3
+        industry: Software & Technology
+        description: |
+          Certification of partner applications against security and
+          quality bars.
+        children: []
+      - id: BC-4270.60.30
+        name: Partner App Revenue Sharing
+        level: 3
+        industry: Software & Technology
+        description: |
+          Revenue-sharing arrangements with partner application developers.
+        children: []
+  - id: BC-4270.70
+    name: Software Marketplace Listing Management
+    level: 2
+    industry: Software & Technology
+    description: |
+      Listing and stewardship of the SaaS offering on third-party software
+      marketplaces and cloud marketplaces.
+    children:
+      - id: BC-4270.70.10
+        name: Marketplace Listing Authoring
+        level: 3
+        industry: Software & Technology
+        description: |
+          Authoring of marketplace listings including metadata, pricing,
+          and assets.
+        children: []
+      - id: BC-4270.70.20
+        name: Marketplace Listing Maintenance
+        level: 3
+        industry: Software & Technology
+        description: |
+          Ongoing maintenance of marketplace listings as the offering
+          evolves.
+        children: []
+      - id: BC-4270.70.30
+        name: Marketplace Co-Sell Coordination
+        level: 3
+        industry: Software & Technology
+        description: |
+          Coordination of co-sell motions with marketplace operators.
+        children: []
+  - id: BC-4270.80
+    name: "Webhook & Event Subscription Management"
+    level: 2
+    industry: Software & Technology
+    description: |
+      Lifecycle of outbound webhook subscriptions, event schemas, and
+      delivery reliability.
+    children:
+      - id: BC-4270.80.10
+        name: Webhook Subscription Lifecycle
+        level: 3
+        industry: Software & Technology
+        description: |
+          Lifecycle of outbound webhook subscriptions from registration to
+          retirement.
+        children: []
+      - id: BC-4270.80.20
+        name: Event Schema Catalogue
+        level: 3
+        industry: Software & Technology
+        description: |
+          Catalogue of outbound event schemas and their compatibility
+          guarantees.
+        children: []
+      - id: BC-4270.80.30
+        name: Webhook Delivery Reliability Management
+        level: 3
+        industry: Software & Technology
+        description: |
+          Retry, backoff, and dead-letter handling for outbound webhook
+          delivery.
+        children: []
