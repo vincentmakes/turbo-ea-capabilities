@@ -1,0 +1,241 @@
+# Chemical Regulatory Compliance Management
+id: BC-4660
+name: Chemical Regulatory Compliance Management
+level: 1
+industry: Chemicals
+description: |
+  Substance registration, dossiers, authorisations, restrictions,
+  inventory listings, and import/export controls under REACH, TSCA,
+  K-REACH, CWC, and equivalent regimes. Distinct from cross-industry
+  Compliance Management (BC-130), which covers enterprise policy
+  compliance.
+references:
+  - https://echa.europa.eu/regulations/reach/understanding-reach
+  - https://www.epa.gov/laws-regulations/summary-toxic-substances-control-act
+  - https://iuclid6.echa.europa.eu/
+  - https://www.opcw.org/chemical-weapons-convention
+children:
+  - id: BC-4660.10
+    name: Substance Registration Management
+    level: 2
+    industry: Chemicals
+    description: |
+      Registration of substances under the principal global chemical
+      inventory regimes.
+    children:
+      - id: BC-4660.10.10
+        name: REACH Registration Management
+        level: 3
+        industry: Chemicals
+        description: |
+          Management of REACH registrations including SIEF and joint submission.
+        children: []
+      - id: BC-4660.10.20
+        name: "TSCA PMN & Inventory Notification"
+        level: 3
+        industry: Chemicals
+        description: |
+          Pre-manufacture notification and TSCA inventory notification.
+        children: []
+      - id: BC-4660.10.30
+        name: "K-REACH & Asia-Pacific Notification"
+        level: 3
+        industry: Chemicals
+        description: |
+          Notification under K-REACH, China, Japan, and other Asia-Pacific regimes.
+        children: []
+      - id: BC-4660.10.40
+        name: Polymer Notification Management
+        level: 3
+        industry: Chemicals
+        description: |
+          Notification and exemption management for polymer substances.
+        children: []
+  - id: BC-4660.20
+    name: "Authorisation & Restriction Management"
+    level: 2
+    industry: Chemicals
+    description: |
+      Compliance with authorisation, restriction, and emerging substance
+      controls.
+    children:
+      - id: BC-4660.20.10
+        name: REACH Authorisation Application
+        level: 3
+        industry: Chemicals
+        description: |
+          Preparation and submission of REACH Annex XIV authorisation applications.
+        children: []
+      - id: BC-4660.20.20
+        name: REACH Restriction Compliance
+        level: 3
+        industry: Chemicals
+        description: |
+          Compliance with REACH Annex XVII restriction entries.
+        children: []
+      - id: BC-4660.20.30
+        name: SVHC Candidate List Tracking
+        level: 3
+        industry: Chemicals
+        description: |
+          Tracking of SVHC candidate list updates and impact analysis.
+        children: []
+      - id: BC-4660.20.40
+        name: "PFAS & Emerging Restriction Management"
+        level: 3
+        industry: Chemicals
+        description: |
+          Management of PFAS, microplastics, and other emerging restrictions.
+        children: []
+  - id: BC-4660.30
+    name: Regulatory Dossier Management
+    level: 2
+    industry: Chemicals
+    description: |
+      Authoring and maintenance of regulatory dossiers in IUCLID and
+      equivalent formats.
+    children:
+      - id: BC-4660.30.10
+        name: IUCLID Dossier Management
+        level: 3
+        industry: Chemicals
+        description: |
+          Authoring and maintenance of IUCLID 6 dossiers.
+        children: []
+      - id: BC-4660.30.20
+        name: Chemical Safety Report Preparation
+        level: 3
+        industry: Chemicals
+        description: |
+          Preparation of Chemical Safety Reports per REACH Annex I.
+        children: []
+      - id: BC-4660.30.30
+        name: Substance Identity Profile Maintenance
+        level: 3
+        industry: Chemicals
+        description: |
+          Maintenance of substance identity profiles and analytical evidence.
+        children: []
+  - id: BC-4660.40
+    name: Inventory Listing Management
+    level: 2
+    industry: Chemicals
+    description: |
+      Management of substance presence on EINECS, EC, and country-level
+      chemical inventories.
+    children:
+      - id: BC-4660.40.10
+        name: "EINECS & EC Number Management"
+        level: 3
+        industry: Chemicals
+        description: |
+          Management of EINECS and EC number assignments and updates.
+        children: []
+      - id: BC-4660.40.20
+        name: New Substance Inventory Notification
+        level: 3
+        industry: Chemicals
+        description: |
+          Notification of new substances to country-level inventories.
+        children: []
+      - id: BC-4660.40.30
+        name: Country Inventory Reconciliation
+        level: 3
+        industry: Chemicals
+        description: |
+          Reconciliation of portfolio against country-level chemical inventories.
+        children: []
+  - id: BC-4660.50
+    name: "Chemical Import & Export Control"
+    level: 2
+    industry: Chemicals
+    description: |
+      Compliance with international chemical trade controls including
+      CWC, drug precursors, dual-use, and PIC.
+    children:
+      - id: BC-4660.50.10
+        name: CWC Schedule Compliance
+        level: 3
+        industry: Chemicals
+        description: |
+          Compliance with OPCW Schedule 1, 2, and 3 declaration and licensing.
+        children: []
+      - id: BC-4660.50.20
+        name: Drug Precursor Control
+        level: 3
+        industry: Chemicals
+        description: |
+          Compliance with INCB and national drug-precursor control regimes.
+        children: []
+      - id: BC-4660.50.30
+        name: Dual-Use Export Licensing
+        level: 3
+        industry: Chemicals
+        description: |
+          Licensing and end-use compliance for dual-use chemical exports.
+        children: []
+      - id: BC-4660.50.40
+        name: Prior Informed Consent Compliance
+        level: 3
+        industry: Chemicals
+        description: |
+          Compliance with the Rotterdam Convention prior-informed-consent regime.
+        children: []
+  - id: BC-4660.60
+    name: "Regulatory Surveillance & Intelligence"
+    level: 2
+    industry: Chemicals
+    description: |
+      Monitoring and impact assessment of evolving chemical regulations
+      across markets.
+    children:
+      - id: BC-4660.60.10
+        name: Regulatory Horizon Scanning
+        level: 3
+        industry: Chemicals
+        description: |
+          Horizon scanning of pending and emerging chemical regulations.
+        children: []
+      - id: BC-4660.60.20
+        name: Impact Assessment of Regulatory Change
+        level: 3
+        industry: Chemicals
+        description: |
+          Assessment of regulatory change impact on portfolio and operations.
+        children: []
+      - id: BC-4660.60.30
+        name: Industry Association Liaison
+        level: 3
+        industry: Chemicals
+        description: |
+          Liaison with Cefic, ACC, and equivalent industry associations.
+        children: []
+  - id: BC-4660.70
+    name: "Authority Engagement & Submission"
+    level: 2
+    industry: Chemicals
+    description: |
+      Engagement with regulatory authorities including submissions,
+      queries, and inspections.
+    children:
+      - id: BC-4660.70.10
+        name: Authority Submission Preparation
+        level: 3
+        industry: Chemicals
+        description: |
+          Preparation of submissions to ECHA, EPA, and equivalent authorities.
+        children: []
+      - id: BC-4660.70.20
+        name: Authority Query Response
+        level: 3
+        industry: Chemicals
+        description: |
+          Response to authority queries on dossiers and registrations.
+        children: []
+      - id: BC-4660.70.30
+        name: Inspection Readiness
+        level: 3
+        industry: Chemicals
+        description: |
+          Maintenance of readiness for regulator inspections and audits.
+        children: []

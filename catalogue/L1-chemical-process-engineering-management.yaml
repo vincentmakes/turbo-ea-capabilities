@@ -1,0 +1,261 @@
+# Chemical Process Engineering Management
+id: BC-4610
+name: Chemical Process Engineering Management
+level: 1
+industry: Chemicals
+description: |
+  Process design, mass and energy balance engineering, simulation,
+  equipment specification, and front-end engineering for chemical plants
+  and revamps. Distinct from cross-industry Engineering Discipline
+  Management (BC-1100), which retains generic engineering disciplines.
+references:
+  - https://www.asme.org/codes-standards/find-codes-standards/bpvc-section-viii-rules-construction-pressure-vessels-division-1
+  - https://www.asme.org/codes-standards/find-codes-standards/b31-3-process-piping
+  - https://webstore.iec.ch/publication/61289
+children:
+  - id: BC-4610.10
+    name: Process Flowsheet Design
+    level: 2
+    industry: Chemicals
+    description: |
+      Development of block flow, process flow, and piping and
+      instrumentation diagrams for chemical processes.
+    children:
+      - id: BC-4610.10.10
+        name: Block Flow Diagram Development
+        level: 3
+        industry: Chemicals
+        description: |
+          Authoring of block flow diagrams for early process definition.
+        children: []
+      - id: BC-4610.10.20
+        name: Process Flow Diagram Development
+        level: 3
+        industry: Chemicals
+        description: |
+          Authoring of process flow diagrams with stream conditions and properties.
+        children: []
+      - id: BC-4610.10.30
+        name: "Piping & Instrumentation Diagram Development"
+        level: 3
+        industry: Chemicals
+        description: |
+          Authoring and revision of P&IDs for chemical process units.
+        children: []
+      - id: BC-4610.10.40
+        name: Utility Flow Diagram Development
+        level: 3
+        industry: Chemicals
+        description: |
+          Authoring of utility flow diagrams covering steam, cooling water, and inert gas.
+        children: []
+  - id: BC-4610.20
+    name: "Reactor & Separation Sizing"
+    level: 2
+    industry: Chemicals
+    description: |
+      Sizing of reactors and separation equipment based on kinetics,
+      thermodynamics, and unit-operation principles.
+    children:
+      - id: BC-4610.20.10
+        name: Reactor Design
+        level: 3
+        industry: Chemicals
+        description: |
+          Sizing and configuration of CSTR, PFR, and fixed-bed reactors.
+        children: []
+      - id: BC-4610.20.20
+        name: Distillation Column Design
+        level: 3
+        industry: Chemicals
+        description: |
+          Design of trayed and packed distillation columns including internals.
+        children: []
+      - id: BC-4610.20.30
+        name: Heat Exchanger Network Design
+        level: 3
+        industry: Chemicals
+        description: |
+          Pinch and exchanger network design for energy integration.
+        children: []
+      - id: BC-4610.20.40
+        name: "Crystalliser & Filter Sizing"
+        level: 3
+        industry: Chemicals
+        description: |
+          Sizing of crystallisers, centrifuges, and filtration equipment.
+        children: []
+  - id: BC-4610.30
+    name: "Mass & Energy Balance Engineering"
+    level: 2
+    industry: Chemicals
+    description: |
+      Closure of overall and unit-level mass and energy balances and
+      utility demand estimation.
+    children:
+      - id: BC-4610.30.10
+        name: Mass Balance Calculation
+        level: 3
+        industry: Chemicals
+        description: |
+          Calculation and reconciliation of plant and unit mass balances.
+        children: []
+      - id: BC-4610.30.20
+        name: Energy Balance Calculation
+        level: 3
+        industry: Chemicals
+        description: |
+          Calculation of energy balances across reactors, exchangers, and utilities.
+        children: []
+      - id: BC-4610.30.30
+        name: Utility Demand Estimation
+        level: 3
+        industry: Chemicals
+        description: |
+          Estimation of steam, power, cooling water, and inert gas demand.
+        children: []
+  - id: BC-4610.40
+    name: Process Simulation Management
+    level: 2
+    industry: Chemicals
+    description: |
+      Build and maintenance of steady-state and dynamic process
+      simulations supporting design and operations.
+    children:
+      - id: BC-4610.40.10
+        name: Steady-State Process Simulation
+        level: 3
+        industry: Chemicals
+        description: |
+          Build and run of steady-state simulators for design and analysis.
+        children: []
+      - id: BC-4610.40.20
+        name: Dynamic Process Simulation
+        level: 3
+        industry: Chemicals
+        description: |
+          Build and run of dynamic simulators for control and safety studies.
+        children: []
+      - id: BC-4610.40.30
+        name: Simulation Model Validation
+        level: 3
+        industry: Chemicals
+        description: |
+          Validation of simulation models against plant or pilot data.
+        children: []
+  - id: BC-4610.50
+    name: Equipment Specification Management
+    level: 2
+    industry: Chemicals
+    description: |
+      Authoring and lifecycle management of equipment datasheets and
+      vendor drawings.
+    children:
+      - id: BC-4610.50.10
+        name: Equipment Datasheet Authoring
+        level: 3
+        industry: Chemicals
+        description: |
+          Authoring of mechanical, electrical, and instrument datasheets.
+        children: []
+      - id: BC-4610.50.20
+        name: Equipment Specification Maintenance
+        level: 3
+        industry: Chemicals
+        description: |
+          Configuration management of approved equipment specifications.
+        children: []
+      - id: BC-4610.50.30
+        name: Vendor Drawing Review
+        level: 3
+        industry: Chemicals
+        description: |
+          Review of vendor drawings against datasheets and process requirements.
+        children: []
+  - id: BC-4610.60
+    name: "Plant Layout & Plot Plan Engineering"
+    level: 2
+    industry: Chemicals
+    description: |
+      Definition of plot plans, equipment spacing, and hazardous area
+      classification for chemical facilities.
+    children:
+      - id: BC-4610.60.10
+        name: Plot Plan Development
+        level: 3
+        industry: Chemicals
+        description: |
+          Development of unit and overall site plot plans.
+        children: []
+      - id: BC-4610.60.20
+        name: Equipment Spacing Determination
+        level: 3
+        industry: Chemicals
+        description: |
+          Determination of equipment spacing per process safety and constructability.
+        children: []
+      - id: BC-4610.60.30
+        name: Hazardous Area Classification
+        level: 3
+        industry: Chemicals
+        description: |
+          Classification of hazardous areas for ignition source control.
+        children: []
+  - id: BC-4610.70
+    name: Process Control Philosophy Development
+    level: 2
+    industry: Chemicals
+    description: |
+      Definition of process control strategies, advanced control, and
+      operating-procedure basis for new and modified plants.
+    children:
+      - id: BC-4610.70.10
+        name: Control Loop Definition
+        level: 3
+        industry: Chemicals
+        description: |
+          Definition of regulatory control loops and tuning intent.
+        children: []
+      - id: BC-4610.70.20
+        name: Advanced Process Control Strategy
+        level: 3
+        industry: Chemicals
+        description: |
+          Definition of model-predictive and advanced control strategies.
+        children: []
+      - id: BC-4610.70.30
+        name: Operating Procedure Basis Development
+        level: 3
+        industry: Chemicals
+        description: |
+          Development of the operating-procedure basis for new and modified plants.
+        children: []
+  - id: BC-4610.80
+    name: Front-End Engineering Design Coordination
+    level: 2
+    industry: Chemicals
+    description: |
+      Coordination of conceptual, basic, and front-end engineering design
+      packages for chemical projects.
+    children:
+      - id: BC-4610.80.10
+        name: Conceptual Engineering Coordination
+        level: 3
+        industry: Chemicals
+        description: |
+          Coordination of conceptual engineering studies and option screening.
+        children: []
+      - id: BC-4610.80.20
+        name: Basic Engineering Package Production
+        level: 3
+        industry: Chemicals
+        description: |
+          Production of basic engineering packages handed to detail design.
+        children: []
+      - id: BC-4610.80.30
+        name: FEED Verification
+        level: 3
+        industry: Chemicals
+        description: |
+          Verification of FEED deliverables against process and project requirements.
+        children: []
