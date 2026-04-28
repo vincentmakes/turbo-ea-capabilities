@@ -1,0 +1,251 @@
+# Smelting & Refining Operations Management
+id: BC-4450
+name: "Smelting & Refining Operations Management"
+level: 1
+industry: "Mining & Metals"
+description: |
+  Pyrometallurgical and electrochemical refining of concentrates and
+  intermediates into LME-deliverable or specification metal, including
+  by-product recovery, off-gas treatment, and metallurgical accounting.
+references:
+  - https://www.lme.com/en/About/Responsibility/Responsible-sourcing
+  - https://www.icmm.com/en-gb/our-principles/mining-principles
+  - https://www.astm.org/
+  - https://www.ausimm.com/
+children:
+  - id: BC-4450.10
+    name: "Concentrate Receipt & Blending"
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Receipt sampling, feed blending, and inventory management of
+      concentrates entering the smelter complex.
+    in_scope:
+      - Receipt sampling and assay
+      - Smelter feed blending
+      - Concentrate yard inventory
+    out_of_scope:
+      - Concentrate sales settlement (BC-4480.40)
+    children:
+      - id: BC-4450.10.10
+        name: Concentrate Sampling on Receipt
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Sampling and assay of concentrates received from third-party and
+          captive mines.
+        children: []
+      - id: BC-4450.10.20
+        name: Smelter Feed Blending
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Blending of concentrates to meet smelter feed grade and impurity
+          targets.
+        children: []
+      - id: BC-4450.10.30
+        name: Concentrate Inventory Management
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Yard, shed, and silo inventory management of concentrate stocks.
+        children: []
+  - id: BC-4450.20
+    name: Pyrometallurgical Operations
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Roasting, smelting, converting, and slag handling of sulphide and
+      oxide concentrates.
+    children:
+      - id: BC-4450.20.10
+        name: Roasting Operations
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of fluid-bed and multiple-hearth roasters for sulphide
+          oxidation.
+        children: []
+      - id: BC-4450.20.20
+        name: Smelting Furnace Operations
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of flash, electric, and bath smelting furnaces.
+        children: []
+      - id: BC-4450.20.30
+        name: Converter Operations
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of Peirce-Smith, top-blown rotary, and continuous
+          converters.
+        children: []
+      - id: BC-4450.20.40
+        name: Slag Handling
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Tapping, granulation, cleaning, and disposition of furnace and
+          converter slag.
+        children: []
+  - id: BC-4450.30
+    name: Electrolytic Refining Operations
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Electrowinning and electrorefining tankhouse operations producing
+      cathode metal.
+    children:
+      - id: BC-4450.30.10
+        name: Electrowinning Operations
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of electrowinning cells producing cathode from leach
+          electrolyte.
+        children: []
+      - id: BC-4450.30.20
+        name: Electrorefining Tankhouse Operations
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of electrorefining cells producing high-purity cathode
+          from anodes.
+        children: []
+      - id: BC-4450.30.30
+        name: "Cathode Stripping & Handling"
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Stripping, washing, weighing, and bundling of cathode for sale or
+          downstream casting.
+        children: []
+  - id: BC-4450.40
+    name: By-Product Metals Recovery
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Recovery of precious and minor metals from anode slimes, dusts, and
+      by-product streams.
+    children:
+      - id: BC-4450.40.10
+        name: Anode Slime Treatment
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Treatment of electrorefining anode slimes to recover precious
+          metals.
+        children: []
+      - id: BC-4450.40.20
+        name: Precious Metals Refining
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Refining of gold, silver, and platinum-group metals to bullion or
+          sponge.
+        children: []
+      - id: BC-4450.40.30
+        name: By-Product Stream Recovery
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Recovery of selenium, tellurium, sulphuric acid, and other
+          by-product streams.
+        children: []
+  - id: BC-4450.50
+    name: "Cast House & Product Finishing"
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Casting, marking, and quality inspection of finished metal products
+      to commercial specification.
+    children:
+      - id: BC-4450.50.10
+        name: Casting Operations
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Casting of bars, ingots, billets, slabs, and shapes from molten
+          metal.
+        children: []
+      - id: BC-4450.50.20
+        name: "Product Marking & Branding"
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Marking, stamping, and brand application on cast products for
+          traceability and exchange acceptance.
+        children: []
+      - id: BC-4450.50.30
+        name: Finished Metal Quality Inspection
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Inspection and certification of finished metal against
+          specification and exchange registration requirements.
+        children: []
+  - id: BC-4450.60
+    name: "Smelter Off-Gas & Acid Plant Operations"
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Cleaning of smelter off-gas, sulphuric acid plant operations, and
+      stack emissions monitoring.
+    children:
+      - id: BC-4450.60.10
+        name: Off-Gas Cleaning
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of electrostatic precipitators, scrubbers, and cooling
+          for smelter off-gas.
+        children: []
+      - id: BC-4450.60.20
+        name: Sulphuric Acid Plant Operations
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of double-contact double-absorption sulphuric acid
+          plants on smelter off-gas.
+        children: []
+      - id: BC-4450.60.30
+        name: Stack Emissions Monitoring
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Continuous stack monitoring of sulphur dioxide, particulate, and
+          metal emissions.
+        children: []
+  - id: BC-4450.70
+    name: Smelter Metallurgical Accounting
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Metal balance, settlement assay, and toll-treatment accounting across
+      the smelter complex.
+    children:
+      - id: BC-4450.70.10
+        name: "Metal Balance & Settlement Assays"
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Period metal balance reconciliation and settlement-grade assays
+          for shipped products.
+        children: []
+      - id: BC-4450.70.20
+        name: "Recovery & Loss Reporting"
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Reporting of metallurgical recovery and stream losses across the
+          smelter and refinery.
+        children: []
+      - id: BC-4450.70.30
+        name: Toll Treatment Accounting
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Accounting for toll-treated third-party concentrates and
+          customer-owned metal.
+        children: []

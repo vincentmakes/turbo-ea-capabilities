@@ -623,6 +623,25 @@ Where an industry reference framework exists, anchor the upper levels (L1 / L2) 
 - **EU Digital Services Act (Reg (EU) 2022/2065), NetzDG, COPPA (15 USC 6501-6506), GDPR (where applicable to viewer data)** — platform, online-content, and viewer-privacy regulation.
 - **3GPP MBMS / 5G Broadcast (TS 23.246, TS 26.346), MEF Carrier Ethernet for content delivery** — telco-side content multicast and transport reference.
 
+**Mining & Metals**
+
+- **ICMM Mining Principles and Performance Expectations** — global mining sustainability framework adopted by major operators.
+- **CRIRSCO international template — JORC (Australasia), SAMREC (South Africa), NI 43-101 (Canada), PERC (Europe), SME (US), CIM Definition Standards, RIC (Russia)** — public reporting of exploration results, mineral resources, and ore reserves.
+- **UN Framework Classification for Resources (UNFC)** — international harmonisation of resource and reserve classification.
+- **Global Industry Standard on Tailings Management (GISTM) and ICMM Tailings Conformance Protocols** — tailings storage facility safety, lifecycle stewardship, and disclosure.
+- **MAC Towards Sustainable Mining (TSM), Copper Mark, IRMA Standard for Responsible Mining, Responsible Jewellery Council Code of Practices, World Gold Council Responsible Gold Mining Principles** — third-party responsible-mining and metals assurance schemes.
+- **EITI (Extractive Industries Transparency Initiative)** — payments-to-governments and beneficial-ownership disclosure.
+- **OECD Due Diligence Guidance for Responsible Supply Chains of Minerals from Conflict-Affected and High-Risk Areas, Dodd-Frank §1502, EU Conflict Minerals Regulation 2017/821** — minerals supply-chain due diligence.
+- **LBMA Responsible Sourcing Programme, RMI Responsible Minerals Assurance Process (RMAP), LME Responsible Sourcing requirements** — exchange and downstream responsible-sourcing programmes.
+- **International Cyanide Management Code (ICMI)** — cyanide stewardship for gold and silver mining.
+- **EU Mining Waste Directive 2006/21/EC, EU Critical Raw Materials Act (Reg 2024/1252)** — mining-waste and critical-raw-materials regulation.
+- **MSHA (30 CFR), Mine Health and Safety Act (South Africa), DGMS rules (India), Australian WHS Mining Regulations** — national mine-safety regulatory regimes.
+- **ISO 19434** — mining accident classification.
+- **GMG (Global Mining Guidelines Group)** — interoperability and digital-mining technical guidelines.
+- **LME, COMEX, SHFE, DCE futures contracts; Platts / Argus / Fastmarkets / Asian Metal price assessments** — metals exchange contracts and reference pricing.
+- **IMO International Maritime Solid Bulk Cargoes (IMSBC) Code** — bulk-mineral and concentrate maritime carriage.
+- **ASTM A/B-series and EN metal grade standards** — metallurgical product specifications.
+
 **Retail & Consumer Goods**
 
 - **ARTS / NRF Reference Model** — retail data and process taxonomy.

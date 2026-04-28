@@ -1,0 +1,254 @@
+# Mine Planning & Engineering Management
+id: BC-4420
+name: "Mine Planning & Engineering Management"
+level: 1
+industry: "Mining & Metals"
+description: |
+  Strategic, long-term, and short-term mine planning together with the
+  underlying mine, geotechnical, and hydrogeology engineering disciplines
+  that translate the resource into executable production plans.
+references:
+  - https://www.icmm.com/en-gb/our-principles/mining-principles
+  - https://www.ausimm.com/
+  - https://gmggroup.org/
+  - https://www.crirsco.com/
+children:
+  - id: BC-4420.10
+    name: Strategic Mine Planning
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Definition of life-of-mine extraction strategy, mining method
+      selection, pit limits, and capital project sequencing.
+    in_scope:
+      - Life-of-mine plan and pit shells
+      - Underground mining method selection
+      - Capital project sequencing and approvals
+    out_of_scope:
+      - Annual budgeted production scheduling (BC-4420.20)
+    children:
+      - id: BC-4420.10.10
+        name: Life-of-Mine Planning
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Definition of the life-of-mine extraction strategy, sequencing,
+          and capital envelope.
+        children: []
+      - id: BC-4420.10.20
+        name: Pit Optimisation
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Lerchs-Grossmann and equivalent pit-shell optimisation against
+          economic and geotechnical inputs.
+        children: []
+      - id: BC-4420.10.30
+        name: Underground Mining Method Selection
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Selection of underground mining methods such as block caving,
+          sub-level caving, or stoping for given orebody geometry.
+        children: []
+      - id: BC-4420.10.40
+        name: Capital Project Sequencing
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Sequencing of major capital projects across the life-of-mine
+          horizon.
+        children: []
+  - id: BC-4420.20
+    name: Long-Term Mine Planning
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Annual and multi-year production planning, stockpile strategy, and
+      capital equipment planning.
+    children:
+      - id: BC-4420.20.10
+        name: Annual Production Plan Definition
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Definition of the annual mine production plan and budget.
+        children: []
+      - id: BC-4420.20.20
+        name: Stockpile Strategy Planning
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Multi-year stockpile build, draw, and rehandle strategy planning.
+        children: []
+      - id: BC-4420.20.30
+        name: Cut-Off Grade Strategy
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Time-varying cut-off grade strategy across the life of mine.
+        children: []
+      - id: BC-4420.20.40
+        name: Capital Equipment Planning
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Long-range planning of mining fleet replacement and capital
+          equipment additions.
+        children: []
+  - id: BC-4420.30
+    name: Short-Term Mine Planning
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Quarterly, weekly, and daily mine scheduling that drives production
+      execution and grade control.
+    children:
+      - id: BC-4420.30.10
+        name: Quarterly Production Scheduling
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Quarterly production schedule preparation aligned to the annual
+          plan.
+        children: []
+      - id: BC-4420.30.20
+        name: Weekly Mine Schedule Definition
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Weekly mining schedule definition by bench, stope, and equipment.
+        children: []
+      - id: BC-4420.30.30
+        name: Daily Dispatch Planning
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Daily and shift-level dispatch planning of mining fleet
+          assignments.
+        children: []
+      - id: BC-4420.30.40
+        name: Grade Control Planning
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Planning of grade control sampling and ore-block routing for
+          short-term execution.
+        children: []
+  - id: BC-4420.40
+    name: Mine Design Engineering
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Engineering design of pits, underground excavations, drill and blast
+      patterns, haul roads, and mine ventilation infrastructure.
+    children:
+      - id: BC-4420.40.10
+        name: Open-Pit Design
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Bench, ramp, and pit-shell engineering design for open-pit
+          operations.
+        children: []
+      - id: BC-4420.40.20
+        name: Underground Mine Design
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Drift, decline, shaft, and stope engineering design for
+          underground operations.
+        children: []
+      - id: BC-4420.40.30
+        name: "Drill & Blast Design"
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Pattern, charge, and timing design for production drill-and-blast.
+        children: []
+      - id: BC-4420.40.40
+        name: Haul Road Design
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Geometric and structural design of mine haul road networks.
+        children: []
+      - id: BC-4420.40.50
+        name: "Ventilation & Services Design"
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Engineering design of ventilation, dewatering, power, and
+          compressed-air services for underground mines.
+        children: []
+  - id: BC-4420.50
+    name: Geotechnical Engineering
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Geotechnical engineering for slope stability, ground support, and
+      geohazard management in open-pit and underground mines.
+    children:
+      - id: BC-4420.50.10
+        name: Slope Stability Engineering
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Slope stability analysis and pit-wall design for open-pit
+          operations.
+        children: []
+      - id: BC-4420.50.20
+        name: Underground Ground Support Design
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Engineering design of bolting, mesh, shotcrete, and cable support
+          for underground excavations.
+        children: []
+      - id: BC-4420.50.30
+        name: Geotechnical Monitoring Programme Definition
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Definition of geotechnical monitoring programmes covering
+          instrumentation density, thresholds, and review cycles.
+        children: []
+      - id: BC-4420.50.40
+        name: Geohazard Risk Assessment
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Assessment of rockfall, seismic, and subsidence hazards across
+          mining operations.
+        children: []
+  - id: BC-4420.60
+    name: Mine Hydrogeology Engineering
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Hydrogeological engineering covering groundwater modelling, mine
+      dewatering design, and site water balance.
+    children:
+      - id: BC-4420.60.10
+        name: Groundwater Modelling
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Numerical modelling of groundwater behaviour around the mine
+          footprint.
+        children: []
+      - id: BC-4420.60.20
+        name: Mine Dewatering Design
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Engineering design of pit and underground dewatering systems.
+        children: []
+      - id: BC-4420.60.30
+        name: Water Balance Modelling
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Site-wide water balance modelling for operational and closure
+          planning.
+        children: []

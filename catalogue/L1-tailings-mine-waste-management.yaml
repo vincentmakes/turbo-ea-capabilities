@@ -1,0 +1,236 @@
+# Tailings & Mine Waste Management
+id: BC-4460
+name: "Tailings & Mine Waste Management"
+level: 1
+industry: "Mining & Metals"
+description: |
+  Lifecycle stewardship of tailings storage facilities, waste rock dumps,
+  mine water, and hazardous mine waste under the Global Industry Standard
+  on Tailings Management and equivalent regulatory regimes.
+references:
+  - https://globaltailingsreview.org/global-industry-standard/
+  - https://www.icmm.com/tailings-management
+  - https://www.icmm.com/en-gb/our-principles/mining-principles
+  - https://environment.ec.europa.eu/topics/waste-and-recycling/mining-waste_en
+children:
+  - id: BC-4460.10
+    name: Tailings Storage Facility Engineering
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Engineering design and lifecycle planning of tailings storage
+      facilities including site selection, dam construction, and
+      closure-aligned design.
+    in_scope:
+      - Site selection and conceptual design
+      - Dam raise and construction engineering
+      - Deposition planning and beach modelling
+    out_of_scope:
+      - Operational tailings deposition (BC-4460.20)
+      - Tailings instrumentation monitoring (BC-4460.30)
+    children:
+      - id: BC-4460.10.10
+        name: Tailings Storage Facility Site Selection
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Multi-criteria site selection and alternatives analysis for new
+          and expanded tailings facilities.
+        children: []
+      - id: BC-4460.10.20
+        name: Dam Construction Engineering
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Engineering design and construction quality assurance of
+          tailings dam embankments.
+        children: []
+      - id: BC-4460.10.30
+        name: Tailings Deposition Planning
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Planning of deposition sequences, beach development, and pond
+          location.
+        children: []
+      - id: BC-4460.10.40
+        name: Closure-Aligned Facility Design
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Design of tailings facilities aligned to long-term closure and
+          safe final landform.
+        children: []
+  - id: BC-4460.20
+    name: Tailings Operations
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Operational placement of tailings into storage facilities, including
+      slurry, paste, and filtered tailings handling and water recovery.
+    children:
+      - id: BC-4460.20.10
+        name: Tailings Slurry Transport
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of tailings pipelines, pump stations, and distribution
+          systems.
+        children: []
+      - id: BC-4460.20.20
+        name: Tailings Deposition Operations
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operational deposition of tailings into the storage facility per
+          deposition plan.
+        children: []
+      - id: BC-4460.20.30
+        name: Tailings Water Recovery
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Recovery of decant and seepage water from tailings facilities for
+          reuse.
+        children: []
+      - id: BC-4460.20.40
+        name: "Filtered & Dry-Stack Tailings Operations"
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of filtered tailings plants and dry-stack placement.
+        children: []
+  - id: BC-4460.30
+    name: "Tailings Surveillance & Dam Safety"
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Surveillance, governance, and emergency preparedness of tailings
+      facilities under GISTM and equivalent dam-safety regimes.
+    children:
+      - id: BC-4460.30.10
+        name: Geotechnical Instrumentation Monitoring
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Monitoring of piezometers, inclinometers, and survey prisms on
+          tailings facilities.
+        children: []
+      - id: BC-4460.30.20
+        name: Independent Tailings Review Coordination
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Engagement and coordination of independent tailings review boards
+          and engineers of record.
+        children: []
+      - id: BC-4460.30.30
+        name: Tailings Emergency Preparedness
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Emergency preparedness and response planning for tailings dam
+          breach scenarios.
+        children: []
+      - id: BC-4460.30.40
+        name: Tailings Standard Conformance Reporting
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Conformance reporting against the Global Industry Standard on
+          Tailings Management and equivalent regulators.
+        children: []
+  - id: BC-4460.40
+    name: Waste Rock Management
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Characterisation and operational management of waste rock dumps,
+      including acid and metalliferous drainage controls.
+    children:
+      - id: BC-4460.40.10
+        name: Waste Rock Characterisation
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Geochemical characterisation of waste rock for acid and
+          metalliferous drainage potential.
+        children: []
+      - id: BC-4460.40.20
+        name: Waste Rock Dump Operations
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operational placement of waste rock into engineered dumps and
+          backfill areas.
+        children: []
+      - id: BC-4460.40.30
+        name: "Acid & Metalliferous Drainage Management"
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Prevention, capture, and treatment of acid and metalliferous
+          drainage from waste rock and ore stockpiles.
+        children: []
+  - id: BC-4460.50
+    name: Mine Water Management
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Site-wide mine water balance, treatment, and discharge compliance.
+    children:
+      - id: BC-4460.50.10
+        name: Mine Water Balance Operations
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operational management of site water balances across pit,
+          underground, and process water systems.
+        children: []
+      - id: BC-4460.50.20
+        name: Mine Water Treatment
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Operation of lime, reverse-osmosis, and biological mine water
+          treatment plants.
+        children: []
+      - id: BC-4460.50.30
+        name: Water Discharge Compliance Monitoring
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Monitoring and reporting of water discharge against environmental
+          licence conditions.
+        children: []
+  - id: BC-4460.60
+    name: Hazardous Mine Waste Management
+    level: 2
+    industry: "Mining & Metals"
+    description: |
+      Management of process reagent waste, cyanide-bearing waste, and
+      heavy-metal-bearing residues.
+    children:
+      - id: BC-4460.60.10
+        name: Reagent Waste Disposal
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Disposal of spent process reagents and contaminated containers.
+        children: []
+      - id: BC-4460.60.20
+        name: Cyanide Waste Management
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Detoxification and management of cyanide-bearing tailings and
+          process residues.
+        children: []
+      - id: BC-4460.60.30
+        name: "Mercury & Heavy-Metals Waste Management"
+        level: 3
+        industry: "Mining & Metals"
+        description: |
+          Management of mercury, arsenic, and other heavy-metal-bearing
+          residues from processing and refining.
+        children: []
