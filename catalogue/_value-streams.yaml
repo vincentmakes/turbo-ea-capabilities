@@ -512,6 +512,46 @@ value_streams:
         capability_id: BC-4380
         industry_variant: Professional Services
         notes: Professional conduct breach intake
+      - stage_order: 1
+        stage_name: Issue Capture (Process Safety)
+        capability_id: BC-4440
+        industry_variant: Chemicals
+        notes: Tier 1 / 2 chemical process safety event capture
+      - stage_order: 1
+        stage_name: Issue Capture (Chemical Reg)
+        capability_id: BC-4460
+        industry_variant: Chemicals
+        notes: Restriction triggers and substance non-compliance intake
+      - stage_order: 3
+        stage_name: Investigation (Process Safety)
+        capability_id: BC-4440
+        industry_variant: Chemicals
+        notes: Root-cause investigation of major chemical incidents
+      - stage_order: 3
+        stage_name: Investigation (Chemical Reg)
+        capability_id: BC-4460
+        industry_variant: Chemicals
+        notes: Regulatory non-compliance investigation
+      - stage_order: 4
+        stage_name: Resolution (Process Safety)
+        capability_id: BC-4440
+        industry_variant: Chemicals
+        notes: Corrective actions and barrier rebuild
+      - stage_order: 4
+        stage_name: Resolution (Chemical Reg)
+        capability_id: BC-4460
+        industry_variant: Chemicals
+        notes: Remediation submissions and authority response
+      - stage_order: 6
+        stage_name: Lessons Learned (Process Safety)
+        capability_id: BC-4440
+        industry_variant: Chemicals
+        notes: Industry-wide chemical process-safety lessons sharing
+      - stage_order: 6
+        stage_name: Lessons Learned (Chemical Reg)
+        capability_id: BC-4460
+        industry_variant: Chemicals
+        notes: Surveillance loop into regulatory horizon scanning
   - name: Order-to-Cash
     industries: [Cross-Industry]
     stages:
@@ -998,6 +1038,26 @@ value_streams:
         capability_id: BC-4330
         industry_variant: Professional Services
         notes: Realisation, write-off, and trust-account application
+      - stage_order: 3
+        stage_name: Contract & Order Capture
+        capability_id: BC-4490
+        industry_variant: Chemicals
+        notes: Bulk offtake and index-linked chemical contract capture
+      - stage_order: 5
+        stage_name: Production / Service Delivery
+        capability_id: BC-4420
+        industry_variant: Chemicals
+        notes: Bulk chemical production execution
+      - stage_order: 5
+        stage_name: Production / Service Delivery
+        capability_id: BC-4430
+        industry_variant: Chemicals
+        notes: Specialty formulation and finishing
+      - stage_order: 6
+        stage_name: Outbound Logistics
+        capability_id: BC-4480
+        industry_variant: Chemicals
+        notes: Bulk and hazmat outbound chemical logistics
   - name: Procure-to-Pay
     industries: [Cross-Industry]
     stages:
@@ -1145,6 +1205,21 @@ value_streams:
         capability_id: BC-3550
         industry_variant: Agriculture
         notes: Input receival with batch and stewardship recording
+      - stage_order: 1
+        stage_name: Need Identification & Requisition
+        capability_id: BC-4490
+        industry_variant: Chemicals
+        notes: Feedstock and chemical raw material need identification
+      - stage_order: 2
+        stage_name: Sourcing
+        capability_id: BC-4490
+        industry_variant: Chemicals
+        notes: Feedstock, aromatic, and bio-feedstock sourcing
+      - stage_order: 3
+        stage_name: Supplier Selection & Onboarding
+        capability_id: BC-4470
+        industry_variant: Chemicals
+        notes: Chemical raw material and toller supplier qualification
   - name: Idea-to-Market
     industries: [Cross-Industry]
     stages:
@@ -1411,6 +1486,26 @@ value_streams:
         stage_name: Post-Launch Performance
         capability_id: BC-4220
         notes: Reliability and performance of the launched service
+      - stage_order: 3
+        stage_name: Research & Prototyping
+        capability_id: BC-4400
+        industry_variant: Chemicals
+        notes: Chemical R&D, kinetics, and synthesis route screening
+      - stage_order: 5
+        stage_name: Design & Development
+        capability_id: BC-4400
+        industry_variant: Chemicals
+        notes: Pilot scale-up to commercial process definition
+      - stage_order: 7
+        stage_name: Launch Readiness
+        capability_id: BC-4450
+        industry_variant: Chemicals
+        notes: SDS, GHS labels, and exposure scenarios pre-launch
+      - stage_order: 7
+        stage_name: Launch Readiness
+        capability_id: BC-4460
+        industry_variant: Chemicals
+        notes: Substance registration ahead of placement on market
   - name: Plan-to-Inventory
     industries: [Cross-Industry]
     stages:
@@ -1550,6 +1645,16 @@ value_streams:
         capability_id: BC-3560
         industry_variant: Agriculture
         notes: On-farm storage and processor receival positioning
+      - stage_order: 2
+        stage_name: Supply Planning
+        capability_id: BC-4420
+        industry_variant: Chemicals
+        notes: Campaign and continuous-mode chemical supply planning
+      - stage_order: 4
+        stage_name: Inventory Positioning
+        capability_id: BC-4480
+        industry_variant: Chemicals
+        notes: Tank-farm and hazmat warehouse positioning
   - name: Record-to-Report
     industries: [Cross-Industry]
     stages:
@@ -1963,6 +2068,21 @@ value_streams:
         capability_id: BC-3900
         industry_variant: Utilities
         notes: Network decommissioning, abandonment, and reinstatement planning
+      - stage_order: 2
+        stage_name: Acquisition
+        capability_id: BC-4410
+        industry_variant: Chemicals
+        notes: Chemical plant FEED and basic engineering
+      - stage_order: 4
+        stage_name: Operate & Maintain
+        capability_id: BC-4420
+        industry_variant: Chemicals
+        notes: Day-to-day chemical plant operation
+      - stage_order: 5
+        stage_name: Risk & Reliability
+        capability_id: BC-4440
+        industry_variant: Chemicals
+        notes: Mechanical integrity and SIS reliability assurance
   - name: Strategy-to-Execution
     industries: [Cross-Industry]
     stages:
@@ -3241,6 +3361,11 @@ value_streams:
         capability_id: BC-3920
         industry_variant: Utilities
         notes: Utility regulator ESG, performance, and price-control disclosures
+      - stage_order: 3
+        stage_name: Data Collection
+        capability_id: BC-4450
+        industry_variant: Chemicals
+        notes: Hazard, SVHC, and product carbon footprint data collection
   - name: Concept-to-Manufacture
     industries:
       - Manufacturing & Industrial
