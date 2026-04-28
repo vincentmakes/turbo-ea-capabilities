@@ -108,6 +108,26 @@ value_streams:
         capability_id: BC-4380
         industry_variant: Professional Services
         notes: CPD / CPE tracking and shortfall remediation
+      - stage_order: 1
+        stage_name: Workforce Planning
+        capability_id: BC-4760
+        industry_variant: Education
+        notes: Faculty workforce and teaching-load planning
+      - stage_order: 3
+        stage_name: Selection & Hire
+        capability_id: BC-4760
+        industry_variant: Education
+        notes: Academic search and credentialed appointment
+      - stage_order: 5
+        stage_name: Performance & Development
+        capability_id: BC-4760
+        industry_variant: Education
+        notes: Pedagogy development and teaching peer review
+      - stage_order: 8
+        stage_name: Internal Mobility & Career
+        capability_id: BC-4760
+        industry_variant: Education
+        notes: Tenure track and academic promotion
   - name: Issue-to-Resolution
     industries: [Cross-Industry]
     stages:
@@ -577,6 +597,26 @@ value_streams:
         capability_id: BC-4660
         industry_variant: Chemicals
         notes: Surveillance loop into regulatory horizon scanning
+      - stage_order: 1
+        stage_name: Issue Capture (Student Wellbeing)
+        capability_id: BC-4770
+        notes: Pastoral, conduct, and grievance intake
+      - stage_order: 4
+        stage_name: Resolution (Student Wellbeing)
+        capability_id: BC-4770
+        notes: Wellbeing case resolution and remediation
+      - stage_order: 1
+        stage_name: Issue Capture (Title IX)
+        capability_id: BC-4810
+        notes: Title IX and education civil-rights complaint intake
+      - stage_order: 3
+        stage_name: Investigation (Title IX)
+        capability_id: BC-4810
+        notes: Statutory civil-rights investigation
+      - stage_order: 4
+        stage_name: Resolution (Title IX)
+        capability_id: BC-4810
+        notes: Sanctioning and statutory closure
   - name: Order-to-Cash
     industries: [Cross-Industry]
     stages:
@@ -1551,6 +1591,36 @@ value_streams:
         capability_id: BC-4660
         industry_variant: Chemicals
         notes: Substance registration ahead of placement on market
+      - stage_order: 1
+        stage_name: Idea Capture
+        capability_id: BC-4700
+        industry_variant: Education
+        notes: Programme idea intake
+      - stage_order: 5
+        stage_name: Design & Development
+        capability_id: BC-4700
+        industry_variant: Education
+        notes: Programme structure and curriculum design
+      - stage_order: 5
+        stage_name: Design & Development
+        capability_id: BC-4790
+        industry_variant: Education
+        notes: Courseware and learning-resource authoring
+      - stage_order: 7
+        stage_name: Launch Readiness
+        capability_id: BC-4700
+        industry_variant: Education
+        notes: Programme catalogue publication and approval
+      - stage_order: 8
+        stage_name: Market Introduction
+        capability_id: BC-4700
+        industry_variant: Education
+        notes: Programme launch into student recruitment
+      - stage_order: 9
+        stage_name: Post-Launch Performance
+        capability_id: BC-4700
+        industry_variant: Education
+        notes: Periodic curriculum review and improvement
   - name: Plan-to-Inventory
     industries: [Cross-Industry]
     stages:
@@ -1831,6 +1901,11 @@ value_streams:
         capability_id: BC-4250
         industry_variant: Software & Technology
         notes: ARR, MRR, NRR, GRR, and cohort recurring-revenue reporting
+      - stage_order: 6
+        stage_name: Statutory & Regulatory Reporting
+        capability_id: BC-4810
+        industry_variant: Education
+        notes: IPEDS, HESA, and equivalent statutory education returns
   - name: Acquire-to-Retire
     industries: [Cross-Industry]
     stages:
@@ -2454,6 +2529,26 @@ value_streams:
         capability_id: BC-4340
         industry_variant: Professional Services
         notes: Remediation of inspection findings and deficiency closure
+      - stage_order: 1
+        stage_name: Audit Universe & Plan
+        capability_id: BC-4750
+        industry_variant: Education
+        notes: Programme review and accreditation cycle planning
+      - stage_order: 3
+        stage_name: Fieldwork
+        capability_id: BC-4750
+        industry_variant: Education
+        notes: Accreditation site visits and inspection
+      - stage_order: 4
+        stage_name: Findings & Reporting
+        capability_id: BC-4750
+        industry_variant: Education
+        notes: Accreditation outcome and conditions
+      - stage_order: 5
+        stage_name: Remediation Tracking
+        capability_id: BC-4750
+        industry_variant: Education
+        notes: Quality improvement action tracking
   - name: Threat-to-Mitigation
     industries: [Cross-Industry]
     stages:
@@ -2698,6 +2793,31 @@ value_streams:
         stage_name: Retention & Advocacy
         capability_id: BC-4260
         notes: Retention, NPS, references, and expansion advocacy
+      - stage_order: 3
+        stage_name: Demand Generation
+        capability_id: BC-4710
+        industry_variant: Education
+        notes: Student recruitment campaigns and outreach
+      - stage_order: 4
+        stage_name: Lead Capture & Nurture
+        capability_id: BC-4710
+        industry_variant: Education
+        notes: Prospect lead management for education applicants
+      - stage_order: 5
+        stage_name: Conversion
+        capability_id: BC-4710
+        industry_variant: Education
+        notes: Admissions decisioning and offer acceptance
+      - stage_order: 6
+        stage_name: Customer Onboarding
+        capability_id: BC-4710
+        industry_variant: Education
+        notes: Pre-enrolment onboarding of admitted students
+      - stage_order: 7
+        stage_name: Retention & Advocacy
+        capability_id: BC-4800
+        industry_variant: Education
+        notes: Alumni engagement and giving programmes
   - name: Application-to-Funding
     industries: [Banking & Capital Markets]
     stages:
@@ -3343,6 +3463,11 @@ value_streams:
         capability_id: BC-4460
         industry_variant: Mining & Metals
         notes: Dam-safety emergency response coordination
+      - stage_order: 4
+        stage_name: Crisis Response
+        capability_id: BC-4770
+        industry_variant: Education
+        notes: Student mental-health crisis response coordination
   - name: ESG-to-Disclosure
     industries: [Cross-Industry]
     stages:
@@ -5013,3 +5138,69 @@ value_streams:
         stage_name: Reuse & Analytics
         capability_id: BC-4370
         notes: Library usage analytics and reuse-impact tracking
+  - name: Apply-to-Graduate
+    industries: [Education]
+    stages:
+      - stage_order: 1
+        stage_name: Outreach & Recruitment
+        capability_id: BC-4710
+        notes: Prospect outreach and recruitment campaigns
+      - stage_order: 2
+        stage_name: Application & Admissions
+        capability_id: BC-4710
+        notes: Application processing and admissions decisioning
+      - stage_order: 3
+        stage_name: Enrolment & Registration
+        capability_id: BC-4720
+        notes: Enrolment, registration, and course allocation
+      - stage_order: 4
+        stage_name: Teaching & Learning Delivery
+        capability_id: BC-4730
+        notes: Delivery of teaching across in-person, online, and blended modes
+      - stage_order: 4
+        stage_name: Teaching & Learning Delivery
+        capability_id: BC-4790
+        notes: Educational content and learning resources delivered to students
+      - stage_order: 5
+        stage_name: Student Support
+        capability_id: BC-4770
+        notes: Academic advising, accommodations, and pastoral support during study
+      - stage_order: 6
+        stage_name: Assessment & Examination
+        capability_id: BC-4740
+        notes: Assessment design, examination delivery, and marking
+      - stage_order: 7
+        stage_name: Award & Credentialing
+        capability_id: BC-4720
+        notes: Graduation eligibility audit, award conferral, and credential issuance
+  - name: Proposal-to-Impact
+    industries: [Education]
+    stages:
+      - stage_order: 1
+        stage_name: Opportunity Identification
+        capability_id: BC-4780
+        notes: Grant and funding opportunity scanning and identification
+      - stage_order: 2
+        stage_name: Proposal Development
+        capability_id: BC-4780
+        notes: Pre-award proposal authoring, costing, and submission
+      - stage_order: 3
+        stage_name: Award & Setup
+        capability_id: BC-4780
+        notes: Post-award setup, account creation, and compliance onboarding
+      - stage_order: 4
+        stage_name: Research Conduct
+        capability_id: BC-4780
+        notes: Research execution against the funded plan
+      - stage_order: 4
+        stage_name: Ethics & Integrity Oversight
+        capability_id: BC-4780
+        notes: Independent ethics review and integrity oversight during conduct
+      - stage_order: 5
+        stage_name: Output & Dissemination
+        capability_id: BC-4780
+        notes: Publication, open-access, and persistent identifier management
+      - stage_order: 6
+        stage_name: Impact Assessment
+        capability_id: BC-4780
+        notes: Bibliometric, altmetric, and case-study impact assessment
