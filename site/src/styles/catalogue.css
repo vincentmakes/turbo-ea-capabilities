@@ -286,6 +286,23 @@
   pointer-events: none;
 }
 
+/* Sticky wrapper: filter bar + action bar stay pinned below the nav */
+.sticky-controls {
+  position: sticky;
+  top: var(--nav-h, 57px);
+  z-index: 90;
+  background: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  /* Bleed the background edge-to-edge so scrolling cards don't show through */
+  margin-left: calc(-1 * var(--space-md));
+  margin-right: calc(-1 * var(--space-md));
+  padding-left: var(--space-md);
+  padding-right: var(--space-md);
+  padding-bottom: 12px;
+}
+
 /* Action bar (counts + bulk + export) */
 .action-bar {
   display: flex;
@@ -393,6 +410,24 @@
   max-width: none;
   padding-left: var(--space-md);
   padding-right: var(--space-md);
+}
+
+/* Industry group (wraps a heading + its L1 grid) */
+.industry-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.industry-group-title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--color-muted);
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--color-border);
+  margin: 0;
 }
 
 /* L1 grid: 4 columns at desktop, scaling down responsively. */
@@ -1218,4 +1253,57 @@
   flex-wrap: wrap;
   gap: var(--space-xs);
   margin-top: var(--space-md);
+}
+
+/* Floating back-to-top button */
+.back-to-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: var(--color-white);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 95;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.2s ease, transform 0.2s ease, background 0.15s ease, box-shadow 0.15s ease;
+  pointer-events: none;
+  box-shadow: 0 4px 12px rgba(29, 78, 216, 0.3);
+}
+
+.back-to-top.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.back-to-top.is-visible:hover {
+  background: var(--color-secondary);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(29, 78, 216, 0.4);
+}
+
+.back-to-top:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+.back-to-top .material-symbols-outlined {
+  font-size: 22px;
+}
+
+@media (max-width: 640px) {
+  .back-to-top {
+    bottom: 20px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+  }
 }
