@@ -1,0 +1,125 @@
+locale: es
+source: L1-commodity-origination-merchandising-management.yaml
+entries:
+  BC-3570:
+    name: Gestión de originación y comercialización de materias primas
+    description: |
+      Programas de originación con productores, contratación de materias primas, báscula y muestreo, posiciones de inventario físico, operaciones de contado y base, cobertura y liquidación de granos, oleaginosas, productos blandos, ganado y materias primas lácteas.
+  BC-3570.10:
+    name: Gestión del programa de originación
+    description: |
+      Contratación de productores, gestión de relaciones con productores y previsión de originación que alimenta el libro de suministro.
+  BC-3570.10.10:
+    name: Programas de contratación de productores
+    description: |
+      Diseño y ejecución de programas de contratación de productores por región.
+  BC-3570.10.20:
+    name: Gestión de relaciones con productores
+    description: |
+      Gestión de relaciones con productores diferenciada de la gestión genérica de clientes.
+  BC-3570.10.30:
+    name: Previsión de originación
+    description: |
+      Previsión de los volúmenes de originación esperados por región y cultivo.
+  BC-3570.20:
+    name: Gestión de contratos de materias primas
+    description: |
+      Emisión y seguimiento del cumplimiento de contratos a término, de producción y de precio diferido para materias primas.
+    in_scope:
+      - Contratos a término con productores y contrapartes
+      - Contratos de producción con especificaciones de calidad
+      - Seguimiento del cumplimiento del contrato
+    out_of_scope:
+      - Gestión genérica de contratos legales (BC-150)
+  BC-3570.20.10:
+    name: Emisión de contratos a término
+    description: |
+      Emisión de contratos a término a precio fijo y de base.
+  BC-3570.20.20:
+    name: Gestión de contratos de producción
+    description: |
+      Gestión de contratos de producción con especificaciones de calidad y entrega.
+  BC-3570.20.30:
+    name: Seguimiento del cumplimiento del contrato
+    description: |
+      Seguimiento de las toneladas entregadas frente al cumplimiento del contrato.
+  BC-3570.30:
+    name: Báscula entrante y muestreo
+    description: |
+      Operaciones de báscula, muestreo y clasificación de calidad, y cálculo de la liquidación de recepción en el punto de recepción.
+  BC-3570.30.10:
+    name: Operaciones de báscula
+    description: |
+      Operaciones de báscula de entrada y salida y emisión de tickets.
+  BC-3570.30.20:
+    name: Muestreo y clasificación de calidad
+    description: |
+      Muestreo y clasificación en recepción conforme a las especificaciones comerciales.
+  BC-3570.30.30:
+    name: Cálculo de la liquidación de recepción
+    description: |
+      Cálculo de descuentos y primas basados en la calidad en el momento de la recepción.
+  BC-3570.40:
+    name: Gestión de posición del inventario de materias primas
+    description: |
+      Seguimiento de las posiciones físicas de materias primas, decisiones de mezcla y posiciones en tránsito en toda la red.
+  BC-3570.40.10:
+    name: Seguimiento de posición física
+    description: |
+      Seguimiento de posiciones físicas largas y cortas por sitio y grado.
+  BC-3570.40.20:
+    name: Decisiones de mezcla de calidad
+    description: |
+      Decisiones de mezcla para cumplir las especificaciones de calidad del contrato.
+  BC-3570.40.30:
+    name: Seguimiento de posición en tránsito
+    description: |
+      Seguimiento de posiciones en tránsito por barco, tren y camión.
+  BC-3570.50:
+    name: Operaciones de negociación de materias primas
+    description: |
+      Negociación de contado y base, ejecución de ventas al contado y gestión de diferenciales entre materias primas en los libros físicos.
+  BC-3570.50.10:
+    name: Negociación de contado y base
+    description: |
+      Negociación de posiciones de contado y base en materias primas físicas.
+  BC-3570.50.20:
+    name: Ejecución de ventas al contado
+    description: |
+      Ejecución de ventas al contado a procesadores y exportadores.
+  BC-3570.50.30:
+    name: Gestión de diferenciales entre materias primas
+    description: |
+      Gestión de diferenciales entre materias primas como los márgenes de crushing y cracking.
+  BC-3570.60:
+    name: Gestión de coberturas y posición de riesgo
+    description: |
+      Ejecución y reconciliación de coberturas con futuros y opciones frente a las posiciones físicas de materias primas.
+  BC-3570.60.10:
+    name: Ejecución de coberturas con futuros
+    description: |
+      Ejecución de coberturas con futuros en mercados regulados.
+  BC-3570.60.20:
+    name: Ejecución de coberturas con opciones
+    description: |
+      Ejecución de coberturas con opciones para gestionar el riesgo de cola de precio.
+  BC-3570.60.30:
+    name: Reconciliación de la posición de cobertura
+    description: |
+      Reconciliación de las posiciones de cobertura frente a las exposiciones físicas subyacentes.
+  BC-3570.70:
+    name: Liquidación y fijación de precios de materias primas
+    description: |
+      Fijación final de precios, emisión de estados de liquidación y resolución de reclamaciones de calidad con las contrapartes.
+  BC-3570.70.10:
+    name: Fijación de precios final y cálculo de descuentos
+    description: |
+      Fijación final de precios incluyendo la aplicación de descuentos y primas basados en el grado.
+  BC-3570.70.20:
+    name: Emisión de estados de liquidación
+    description: |
+      Emisión de estados de liquidación a productores y contrapartes.
+  BC-3570.70.30:
+    name: Resolución de reclamaciones de calidad
+    description: |
+      Resolución de reclamaciones de calidad con productores, compradores y organismos de arbitraje.
