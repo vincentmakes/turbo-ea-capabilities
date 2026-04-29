@@ -1,0 +1,143 @@
+locale: fr
+source: L1-omnichannel-order-fulfilment-management.yaml
+entries:
+  BC-2330:
+    name: Gestion omnicanal des commandes et de l'exécution
+    description: |
+      Orchestration des commandes consommateurs sur tous les canaux — capture dans
+      n'importe quel canal, promesse depuis n'importe quel nœud et exécution via
+      le magasin, le centre de distribution, la marketplace, la livraison directe
+      fournisseur ou le transporteur du dernier kilomètre.
+
+  BC-2330.10:
+    name: Gestion de l'orchestration des canaux
+    description: |
+      Vue unique des commandes consommateurs sur tous les canaux, règles
+      d'acheminement par canal et statut cohérent entre le numérique, le magasin
+      et la marketplace.
+    in_scope:
+      - Règles d'acheminement et sélection du nœud d'exécution
+      - Vue unique des commandes sur tous les canaux
+      - Économie du mix canal et arbitrages sur les coûts d'exécution
+    out_of_scope:
+      - Exécution des commandes générique (BC-520.40)
+
+  BC-2330.10.10:
+    name: Gestion des règles d'acheminement par canal
+    description: |
+      Définition des règles d'acheminement sélectionnant le nœud d'exécution selon
+      le coût et le niveau de service.
+
+  BC-2330.10.20:
+    name: Vue unifiée des commandes multicanales
+    description: |
+      Vue unifiée des commandes, de leur statut et de leur historique sur tous les
+      canaux.
+
+  BC-2330.10.30:
+    name: Économie du mix canal
+    description: |
+      Analyse des coûts unitaires par canal et par mode d'exécution.
+
+  BC-2330.20:
+    name: Gestion des opérations de retrait en magasin
+    description: |
+      Opérations d'achat en ligne et retrait en magasin, en mode kerbside et en
+      consigne qui relient les commandes numériques aux points de retrait physiques.
+
+  BC-2330.20.10:
+    name: Opérations de préparation et conditionnement en magasin
+    description: |
+      Préparation et conditionnement des commandes en ligne par les employés en
+      magasin.
+
+  BC-2330.20.20:
+    name: Remise au client lors du retrait
+    description: |
+      Remise au client lors du retrait incluant la vérification d'identité et la
+      gestion des exceptions.
+
+  BC-2330.20.30:
+    name: Retrait en mode kerbside et en consigne
+    description: |
+      Opérations de remise en mode kerbside et de retrait en consigne automatique.
+
+  BC-2330.30:
+    name: Gestion de l'exécution des commandes distribuées
+    description: |
+      Expédition depuis le magasin, dark store et livraison directe fournisseur
+      depuis un pool d'inventaire distribué vers les destinations consommateurs.
+    in_scope:
+      - Opérations d'expédition depuis le magasin
+      - Opérations de dark store et de micro-centre d'exécution
+      - Orchestration de la livraison directe fournisseur
+
+  BC-2330.30.10:
+    name: Opérations d'expédition depuis le magasin
+    description: |
+      Préparation, conditionnement et expédition des commandes en ligne depuis les
+      magasins physiques.
+
+  BC-2330.30.20:
+    name: Opérations de dark store et micro-centre d'exécution
+    description: |
+      Exploitation des dark stores et des micro-centres d'exécution pour les
+      commandes numériques.
+
+  BC-2330.30.30:
+    name: Orchestration de la livraison directe fournisseur
+    description: |
+      Orchestration de la livraison directe fournisseur incluant le routage des
+      bons de commande et le suivi.
+
+  BC-2330.40:
+    name: Gestion des opérations de vendeur sur marketplace
+    description: |
+      Exploitation du détaillant en tant que vendeur sur des marketplaces tierces
+      et gestion des vendeurs tiers sur une marketplace hébergée.
+
+  BC-2330.40.10:
+    name: Gestion des annonces sur marketplace
+    description: |
+      Mise en ligne des articles sur des marketplaces tierces incluant l'adaptation
+      des contenus.
+
+  BC-2330.40.20:
+    name: Capture des commandes marketplace
+    description: |
+      Capture et intégration des commandes marketplace dans le pipeline de commandes
+      de l'hébergeur.
+
+  BC-2330.40.30:
+    name: Intégration des vendeurs tiers
+    description: |
+      Intégration des vendeurs tiers sur la marketplace propre du détaillant.
+
+  BC-2330.40.40:
+    name: Gestion de la performance des vendeurs tiers
+    description: |
+      Gestion de la performance des vendeurs tiers et conformité à la politique.
+
+  BC-2330.50:
+    name: Gestion des créneaux de livraison consommateurs
+    description: |
+      Réservation des créneaux de livraison orientée client, tarification des plages
+      horaires et coordination de l'envoi des coursiers pour la livraison à domicile.
+
+  BC-2330.50.10:
+    name: Réservation des créneaux de livraison
+    description: |
+      Réservation par le consommateur des créneaux de livraison avec logique de
+      disponibilité et de capacité.
+
+  BC-2330.50.20:
+    name: Tarification des plages horaires
+    description: |
+      Tarification dynamique des plages de livraison selon la demande et la densité
+      des tournées.
+
+  BC-2330.50.30:
+    name: Coordination de l'envoi des coursiers
+    description: |
+      Coordination de l'envoi avec les coursiers du dernier kilomètre propres et
+      tiers.

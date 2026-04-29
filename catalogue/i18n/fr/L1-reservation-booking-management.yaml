@@ -1,0 +1,171 @@
+locale: fr
+source: L1-reservation-booking-management.yaml
+entries:
+  BC-4020:
+    name: Gestion des réservations
+    description: |
+      Cycle de vie de la réservation, du PNR et du folio hôtelier — saisie, modification, annulation, blocs groupes, confirmations, paiements et remise en réservation suite à une perturbation — indépendamment du canal d'origine.
+    in_scope:
+      - Saisie des réservations individuelles, multi-passagers et multi-composants
+      - Modifications, annulations et éligibilité au remboursement
+      - Blocs groupes, listes de chambres, date limite et pickup
+      - Émission des confirmations, bons et billets électroniques
+      - Paiement au niveau de la réservation et règlement BSP / ARC
+      - Réaffectation suite à des changements d'horaire et à des IROPS
+    out_of_scope:
+      - Gestion des canaux et de la parité (BC-4010)
+      - Moteurs de tarification et décisions de yield (BC-4030)
+      - Décisions opérationnelles sur les aéronefs et l'équipage (BC-4080.60)
+  BC-4020.10:
+    name: Saisie des réservations
+    description: |
+      Saisie des réservations couvrant des itinéraires simples et complexes, quel que soit le canal ou l'agent d'origine.
+  BC-4020.10.10:
+    name: Saisie des réservations à itinéraire unique
+    description: |
+      Saisie des réservations à itinéraire unique, comme un séjour dans un seul établissement ou un vol unique.
+  BC-4020.10.20:
+    name: Saisie des réservations multi-passagers
+    description: |
+      Saisie des réservations multi-passagers ou multi-hôtes partageant des segments d'itinéraire communs.
+  BC-4020.10.30:
+    name: Saisie des réservations multi-composants
+    description: |
+      Saisie des réservations multi-composants combinant vols, hôtels, services annexes et services terrestres.
+  BC-4020.10.40:
+    name: Saisie des réservations d'agences de voyage
+    description: |
+      Saisie des réservations effectuées par des agences de voyage de détail et d'affaires pour le compte de voyageurs.
+  BC-4020.20:
+    name: Modification et annulation de réservations
+    description: |
+      Modification et annulation volontaires des réservations, incluant les frais de modification, l'éligibilité au remboursement et les opérations de réémission.
+  BC-4020.20.10:
+    name: Gestion des modifications de réservation
+    description: |
+      Gestion des modifications volontaires portant sur les dates, les produits et les données du voyageur.
+  BC-4020.20.20:
+    name: Gestion des annulations de réservation
+    description: |
+      Gestion des annulations volontaires et libération de l'inventaire vers le pool.
+  BC-4020.20.30:
+    name: Éligibilité au remboursement et calcul
+    description: |
+      Détermination de l'éligibilité au remboursement et calcul des montants remboursables, pénalités comprises.
+  BC-4020.20.40:
+    name: Opérations de réémission volontaire
+    description: |
+      Opérations de réémission volontaire incluant la collecte de la différence tarifaire et la réémission des documents.
+  BC-4020.30:
+    name: Gestion des blocs groupes
+    description: |
+      Gestion des blocs groupes sur l'inventaire sous contrat — création, listes de chambres, date limite et suivi du pickup.
+    in_scope:
+      - Cycle de vie du bloc groupe du contrat au wash et au pickup final
+      - Saisie et mise à jour des listes de chambres
+    out_of_scope:
+      - Contractualisation des ventes groupes (BC-4110.10)
+      - Exécution des bons de commande banquet (BC-4110.30)
+  BC-4020.30.10:
+    name: Création de blocs groupes
+    description: |
+      Création des blocs groupes reflétant les engagements d'inventaire et de tarifs contractuels.
+  BC-4020.30.20:
+    name: Gestion des listes de chambres
+    description: |
+      Gestion des listes de chambres associant les voyageurs individuels à l'inventaire du bloc.
+  BC-4020.30.30:
+    name: Gestion de la date limite de groupe
+    description: |
+      Gestion des dates limites de groupe et libération de l'inventaire non utilisé vers la vente générale.
+  BC-4020.30.40:
+    name: Suivi du pickup groupe
+    description: |
+      Suivi du pickup groupe par rapport au contrat aux fins de la reconnaissance des revenus et des prévisions.
+  BC-4020.40:
+    name: Confirmation et documentation des réservations
+    description: |
+      Émission des confirmations de réservation, bons, billets électroniques et documents d'itinéraire aux voyageurs et aux agences.
+  BC-4020.40.10:
+    name: Génération des confirmations de réservation
+    description: |
+      Génération et envoi des confirmations de réservation sur l'ensemble des canaux de notification.
+  BC-4020.40.20:
+    name: Émission de bons et de documents de service
+    description: |
+      Émission de bons et documents de service pour les composants hôtel, circuit et activité.
+  BC-4020.40.30:
+    name: Émission et réémission des billets électroniques
+    description: |
+      Émission et réémission des billets électroniques aériens, incluant les mises à jour du statut des coupons.
+  BC-4020.40.40:
+    name: Distribution des itinéraires de réservation
+    description: |
+      Distribution des documents d'itinéraire aux voyageurs, agences de voyage et systèmes de gestion des déplacements.
+  BC-4020.50:
+    name: Gestion des options et des listes d'attente
+    description: |
+      Gestion des options provisoires, listes d'attente et conversions lorsque la disponibilité est contrainte ou que les conditions imposent un délai de paiement.
+  BC-4020.50.10:
+    name: Gestion des options provisoires
+    description: |
+      Gestion des options provisoires avec des délais de paiement contrôlés.
+  BC-4020.50.20:
+    name: Saisie et priorisation des listes d'attente
+    description: |
+      Saisie des demandes en liste d'attente et règles de priorisation lors de la libération de l'inventaire.
+  BC-4020.50.30:
+    name: Opérations de conversion des listes d'attente
+    description: |
+      Opérations de conversion des demandes en liste d'attente en réservations confirmées à mesure que l'inventaire se libère.
+  BC-4020.50.40:
+    name: Gestion de l'expiration des options
+    description: |
+      Gestion de l'expiration des options et libération automatique de l'inventaire réservé.
+  BC-4020.60:
+    name: Paiement et règlement des réservations
+    description: |
+      Paiement, acompte, encaissement et règlement partenaire au niveau de la réservation, incluant BSP et ARC.
+  BC-4020.60.10:
+    name: Acompte et pré-autorisation de réservation
+    description: |
+      Encaissement des acomptes et pré-autorisations de carte bancaire selon les politiques de dépôt et de garantie.
+  BC-4020.60.20:
+    name: Encaissement des débits de réservation
+    description: |
+      Encaissement des débits sur les instruments de paiement de la réservation aux points d'éligibilité.
+  BC-4020.60.30:
+    name: Opérations de règlement BSP et ARC
+    description: |
+      Opérations de règlement des réservations émises par les agences via BSP, ARC et plans de règlement équivalents.
+  BC-4020.60.40:
+    name: Calcul et versement des commissions
+    description: |
+      Calcul et versement des commissions aux agences de voyage et partenaires de distribution.
+  BC-4020.70:
+    name: Gestion des perturbations et des remises en réservation
+    description: |
+      Réaffectation des réservations impactées par des changements d'horaire, des annulations et des perturbations massives, incluant les communications et l'éligibilité aux compensations.
+    in_scope:
+      - Réaffectation suite à des changements d'horaire
+      - Remise en réservation lors de perturbations massives (IROPS, météo, force majeure)
+      - Éligibilité aux compensations selon les règles des transporteurs et des consommateurs
+    out_of_scope:
+      - Décisions opérationnelles sur les aéronefs, l'équipage et le dispatch (BC-4080.60)
+      - Récupération côté circuit (BC-4100.60)
+  BC-4020.70.10:
+    name: Réaffectation suite à des changements d'horaire
+    description: |
+      Réaffectation des réservations impactées par des changements d'horaire publiés, avec présentation d'options aux voyageurs.
+  BC-4020.70.20:
+    name: Réaffectation lors de perturbations massives
+    description: |
+      Réaffectation d'un grand nombre de réservations lors d'événements météorologiques, d'IROPS ou de force majeure.
+  BC-4020.70.30:
+    name: Détermination de l'éligibilité aux compensations
+    description: |
+      Détermination de l'éligibilité aux compensations selon la politique du transporteur et les règles applicables de droits des passagers.
+  BC-4020.70.40:
+    name: Communications lors des réaffectations
+    description: |
+      Communications sortantes aux voyageurs et agences affectés tout au long des événements de réaffectation.

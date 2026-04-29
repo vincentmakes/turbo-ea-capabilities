@@ -1,0 +1,113 @@
+locale: fr
+source: L1-farm-land-asset-management.yaml
+entries:
+  BC-3540:
+    name: Gestion du foncier agricole et des actifs d'exploitation
+    description: |
+      Titres fonciers et enregistrements des baux, gestion des champs et parcelles, télémétrie des équipements et machines agricoles, infrastructure d'irrigation, bâtiments agricoles et actifs énergétiques en exploitation.
+  BC-3540.10:
+    name: Gestion du foncier et des baux agricoles
+    description: |
+      Enregistrements des titres fonciers, baux et servitudes soutenant les droits d'exploitation sur l'ensemble du portefeuille de l'exploitation.
+    in_scope:
+      - Enregistrements des titres et du mode d'occupation
+      - Administration des contrats de bail
+      - Enregistrements des servitudes et des droits d'accès
+    out_of_scope:
+      - Immobilier d'entreprise (BC-1410)
+  BC-3540.10.10:
+    name: Enregistrements des titres fonciers et du mode d'occupation
+    description: |
+      Enregistrements de la pleine propriété, de la location et du mode d'occupation coutumier sur l'ensemble du portefeuille de l'exploitation.
+  BC-3540.10.20:
+    name: Administration des contrats de bail agricole
+    description: |
+      Administration des contrats de bail agricole et de leurs renouvellements.
+  BC-3540.10.30:
+    name: Gestion des servitudes foncières
+    description: |
+      Gestion des servitudes d'accès, des droits de passage et des servitudes de conservation.
+  BC-3540.20:
+    name: Gestion des champs et des parcelles
+    description: |
+      Enregistrements des limites parcellaires, historique des champs et zonage de la productivité à l'échelle du champ et de la parcelle.
+  BC-3540.20.10:
+    name: Enregistrement des limites parcellaires
+    description: |
+      Capture et mise à jour des limites parcellaires dans les systèmes SIG agricoles.
+  BC-3540.20.20:
+    name: Enregistrements de l'historique des champs
+    description: |
+      Enregistrements pluriannuels de l'historique des champs en cultures, intrants et rendements.
+  BC-3540.20.30:
+    name: Zonage de la productivité des champs
+    description: |
+      Zonage de la productivité et délimitation des zones de gestion à l'intérieur des champs.
+  BC-3540.30:
+    name: Gestion du parc de matériels agricoles
+    description: |
+      Inventaire des équipements agricoles, opérations des machines, télémétrie ISOBUS et arrangements de partage des équipements.
+  BC-3540.30.10:
+    name: Inventaire du matériel agricole
+    description: |
+      Inventaire des tracteurs, outils et équipements automoteurs.
+  BC-3540.30.20:
+    name: Opérations de machines en champ
+    description: |
+      Déploiement quotidien des machines en champ et affectation des opérateurs.
+  BC-3540.30.30:
+    name: Intégration de la télémétrie ISOBUS
+    description: |
+      Intégration de la télémétrie des machines conformes ISOBUS avec les systèmes de gestion agricole.
+  BC-3540.30.40:
+    name: Partage et prestation de services mécaniques
+    description: |
+      Arrangements de partage des équipements, de prestation et d'opérateurs sous contrat.
+  BC-3540.40:
+    name: Gestion de l'infrastructure d'irrigation
+    description: |
+      Gestion du cycle de vie des systèmes d'irrigation, des dotations en eau et de la maintenance de l'infrastructure d'irrigation.
+  BC-3540.40.10:
+    name: Conception du système d'irrigation
+    description: |
+      Conception et dimensionnement des systèmes d'irrigation de l'exploitation.
+  BC-3540.40.20:
+    name: Conformité aux dotations en eau
+    description: |
+      Conformité aux dotations en eau de surface et souterraine et métrologie.
+  BC-3540.40.30:
+    name: Maintenance de l'infrastructure d'irrigation
+    description: |
+      Maintenance des pompes, conduites principales, rampes et goutteurs.
+  BC-3540.50:
+    name: Gestion des bâtiments et des cours d'exploitation
+    description: |
+      Exploitation et entretien des bâtiments de stockage, des logements pour animaux, des cours et des voies de circulation de l'exploitation.
+  BC-3540.50.10:
+    name: Opérations des bâtiments de stockage
+    description: |
+      Exploitation des bâtiments de stockage de céréales, foin et produits chimiques.
+  BC-3540.50.20:
+    name: Opérations des logements pour animaux
+    description: |
+      Exploitation et gestion de la litière des logements pour animaux.
+  BC-3540.50.30:
+    name: Maintenance des cours et voies de circulation
+    description: |
+      Maintenance des cours d'exploitation, des voies de circulation et des installations de manipulation des animaux.
+  BC-3540.60:
+    name: Gestion de l'énergie en exploitation
+    description: |
+      Production d'énergie en exploitation, coordination des achats de carburant et d'énergie, et enregistrement de la consommation énergétique.
+  BC-3540.60.10:
+    name: Production d'énergie en exploitation
+    description: |
+      Production d'énergie solaire, éolienne et biogaz en exploitation.
+  BC-3540.60.20:
+    name: Coordination des achats de carburant et d'énergie
+    description: |
+      Coordination des achats de carburant, d'électricité et de gaz de l'exploitation.
+  BC-3540.60.30:
+    name: Enregistrement de la consommation énergétique
+    description: |
+      Enregistrement de la consommation d'énergie de l'exploitation par activité et actif.

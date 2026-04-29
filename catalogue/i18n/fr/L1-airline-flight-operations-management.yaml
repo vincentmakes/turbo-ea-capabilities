@@ -1,0 +1,165 @@
+locale: fr
+source: L1-airline-flight-operations-management.yaml
+entries:
+  BC-4080:
+    name: Gestion des opérations aériennes
+    description: |
+      Planification des rotations, affectation des aéronefs, planification des équipages, dispatch, coordination des portes et des rotations, récupération lors des IROPS, et reporting des performances et de la sécurité des vols pour les compagnies aériennes.
+    in_scope:
+      - Planification du programme de vols, coordination des créneaux et banques de correspondances
+      - Rotations des aéronefs, affectation des immatriculations et suivi de la MEL
+      - Pairage des équipages, planification et conformité FTL
+      - Dispatch et contrôle des opérations de vol
+      - Attribution des portes et coordination des rotations
+      - Décisions opérationnelles lors des IROPS sur les aéronefs et les équipages
+      - Reporting des performances de vol et des événements de sécurité
+    out_of_scope:
+      - Contrôle du trafic aérien par les ANSP (BC-1700)
+      - Flux de réaffectation des passagers au niveau réservation (BC-4020.70)
+      - Traitement du fret aérien (BC-3270)
+  BC-4080.10:
+    name: Planification du programme de vols
+    description: |
+      Construction et publication du programme de vols de la compagnie aérienne couvrant le réseau, les créneaux et les banques de correspondances.
+  BC-4080.10.10:
+    name: Définition du plan de réseau et de routes
+    description: |
+      Définition du plan de réseau et de routes en fonction des prévisions de demande et des plans de flotte.
+  BC-4080.10.20:
+    name: Coordination des créneaux et des aéroports
+    description: |
+      Coordination des créneaux aéroportuaires et des contraintes, incluant la planification selon les WSG IATA.
+  BC-4080.10.30:
+    name: Construction et publication du programme
+    description: |
+      Construction du programme publié et publication des fichiers SSIM aux partenaires de distribution.
+  BC-4080.10.40:
+    name: Optimisation des banques de correspondances
+    description: |
+      Optimisation des banques de correspondances hub et des temps de connexion minimum.
+  BC-4080.20:
+    name: Rotations et affectation des aéronefs
+    description: |
+      Construction des rotations d'aéronefs, affectation des immatriculations, opérations d'échange, coordination des créneaux de maintenance et suivi de la MEL.
+  BC-4080.20.10:
+    name: Planification des rotations de flotte
+    description: |
+      Planification des rotations de flotte sur le réseau en équilibrant les heures de vol et les cycles.
+  BC-4080.20.20:
+    name: Affectation des immatriculations et opérations d'échange
+    description: |
+      Affectation d'immatriculations spécifiques aux vols et exécution des échanges tactiques.
+  BC-4080.20.30:
+    name: Coordination des créneaux de maintenance aéronef
+    description: |
+      Coordination des créneaux de maintenance et des vols de convoyage par rapport au programme.
+  BC-4080.20.40:
+    name: Suivi de la liste d'équipements minimaux
+    description: |
+      Suivi des reports de MEL par rapport aux délais d'expiration et aux impacts opérationnels.
+  BC-4080.30:
+    name: Planification et affectation des équipages
+    description: |
+      Planification des équipages cockpit et cabine incluant la construction des pairages, les enchères, le suivi des qualifications et la conformité FTL.
+  BC-4080.30.10:
+    name: Construction des pairages d'équipage
+    description: |
+      Construction des pairages d'équipage sur le programme dans le respect des règles de légalité.
+  BC-4080.30.20:
+    name: Enchères d'équipage et construction des roulements
+    description: |
+      Exploitation des processus d'enchères et construction des roulements pour les équipages cockpit et cabine.
+  BC-4080.30.30:
+    name: Suivi des qualifications et de la pratique récente des équipages
+    description: |
+      Suivi des qualifications, de la récence et de la pratique récente des membres d'équipage.
+  BC-4080.30.40:
+    name: Conformité aux limites de temps de vol et de service
+    description: |
+      Conformité aux règles FTL et de temps de service à la planification et à l'exécution.
+  BC-4080.40:
+    name: Dispatch et contrôle opérationnel des vols
+    description: |
+      Génération des plans de vol opérationnels, décisions de carburant, briefing météo et NOTAM, et prise de décision au Centre de Contrôle des Opérations.
+  BC-4080.40.10:
+    name: Génération des plans de vol
+    description: |
+      Génération des plans de vol opérationnels incluant la route, le niveau et le temps de route.
+  BC-4080.40.20:
+    name: Calcul du carburant opérationnel
+    description: |
+      Calcul du carburant opérationnel incluant les réserves, le contingent et l'emport discrétionnaire.
+  BC-4080.40.30:
+    name: Briefing météo et NOTAM
+    description: |
+      Élaboration et délivrance des briefings météo et NOTAM aux équipages et au dispatch.
+  BC-4080.40.40:
+    name: Prise de décision au Centre de Contrôle des Opérations
+    description: |
+      Prise de décision au CCO concernant les retards, les déroutements et les options de récupération.
+  BC-4080.50:
+    name: Opérations de portes et de rotation
+    description: |
+      Planification des portes et coordination en direct des rotations en escale incluant la gestion des refoulements et des retards sur tarmac.
+  BC-4080.50.10:
+    name: Attribution et séquençage des portes
+    description: |
+      Attribution des portes et séquençage des postes de stationnement sur l'ensemble des opérations du jour.
+  BC-4080.50.20:
+    name: Coordination des rotations
+    description: |
+      Coordination en direct des opérations de rotation incluant le catering, l'avitaillement et l'embarquement.
+  BC-4080.50.30:
+    name: Opérations de refoulement et de départ
+    description: |
+      Coordination du refoulement, du départ du poste de stationnement et du roulage.
+  BC-4080.50.40:
+    name: Gestion des retards sur tarmac
+    description: |
+      Gestion des retards sur tarmac dans le respect des délais réglementaires et des obligations de prise en charge des passagers.
+  BC-4080.60:
+    name: Gestion des perturbations de vol et des IROPS
+    description: |
+      Décisions opérationnelles lors des événements perturbateurs couvrant les déroutements, les annulations en masse et la récupération des équipages, ainsi que la coordination avec les flux de réaffectation des passagers.
+    in_scope:
+      - Prise de décision de déroutement et d'annulation
+      - Récupération des équipages lors des perturbations et affectation en réserve
+      - Passation de coordination à la réaffectation des passagers (BC-4020.70)
+    out_of_scope:
+      - Réaffectation des passagers et détermination des compensations (BC-4020.70)
+  BC-4080.60.10:
+    name: Opérations de décision de déroutement
+    description: |
+      Opérations de décision et d'exécution des déroutements en route et avant le départ.
+  BC-4080.60.20:
+    name: Opérations de récupération lors d'annulations en masse
+    description: |
+      Opérations de récupération lors d'annulations en masse couvrant la récupération des aéronefs, des équipages et des créneaux.
+  BC-4080.60.30:
+    name: Récupération des équipages lors des perturbations
+    description: |
+      Récupération des roulements d'équipage lors des perturbations incluant l'affectation en attente et en réserve.
+  BC-4080.60.40:
+    name: Coordination de la remise en réservation des passagers
+    description: |
+      Coordination avec les équipes de réaffectation des passagers sur les options de récupération et la priorisation.
+  BC-4080.70:
+    name: Reporting des performances de vol et de sécurité
+    description: |
+      Reporting des performances de vol, des KPI de ponctualité, des rapports de sécurité aérienne et des flux de données opérationnelles de sécurité.
+  BC-4080.70.10:
+    name: Reporting des performances de ponctualité
+    description: |
+      Reporting des performances de ponctualité et des codes de retard sur le réseau.
+  BC-4080.70.20:
+    name: Saisie des rapports de sécurité aérienne
+    description: |
+      Saisie et triage des rapports de sécurité aérienne en provenance des équipages et du personnel opérationnel.
+  BC-4080.70.30:
+    name: Soutien aux enquêtes de sécurité opérationnelle
+    description: |
+      Soutien aux enquêtes de sécurité opérationnelle incluant la collecte de données et les actions de suivi.
+  BC-4080.70.40:
+    name: Flux analytiques des données de vol
+    description: |
+      Flux d'analytique des données de vol vers les programmes d'analyse de sécurité et d'opérations.

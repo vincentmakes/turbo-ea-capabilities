@@ -1,0 +1,171 @@
+locale: fr
+source: L1-food-safety-traceability-management.yaml
+entries:
+  BC-2380:
+    name: Gestion de la sécurité alimentaire et de la traçabilité
+    description: |
+      Programmes de sécurité alimentaire, traçabilité des lots et des fournées,
+      coordination des rappels, gestion de la durée de vie des produits frais et
+      conformité de la chaîne du froid pour les activités de distribution alimentaire
+      et de fabrication de denrées alimentaires.
+
+  BC-2380.10:
+    name: Gestion du programme de sécurité alimentaire
+    description: |
+      Politique de sécurité alimentaire, HACCP et programmes de certification
+      (BRCGS, SQF, FSSC 22000, IFS Food, ISO 22000) régissant la manipulation et
+      l'approvisionnement alimentaires.
+    in_scope:
+      - HACCP et politique de sécurité alimentaire
+      - Certification tierce (BRCGS, SQF, FSSC 22000, IFS Food)
+      - Gestion des incidents de sécurité alimentaire
+    out_of_scope:
+      - Gestion générique de la qualité (BC-720)
+
+  BC-2380.10.10:
+    name: Gestion de la politique de sécurité alimentaire
+    description: |
+      Rédaction et intendance de la politique de sécurité alimentaire sur l'ensemble
+      du réseau.
+
+  BC-2380.10.20:
+    name: Gestion du plan HACCP
+    description: |
+      Élaboration du plan HACCP, analyse des dangers et surveillance des points
+      critiques de contrôle.
+
+  BC-2380.10.30:
+    name: Gestion de la certification sécurité alimentaire
+    description: |
+      Certification selon les référentiels BRCGS, SQF, FSSC 22000, IFS Food et
+      ISO 22000.
+
+  BC-2380.10.40:
+    name: Gestion des incidents de sécurité alimentaire
+    description: |
+      Gestion des incidents de sécurité alimentaire incluant les détections
+      d'agents pathogènes.
+
+  BC-2380.20:
+    name: Gestion de la traçabilité des lots et des fournées
+    description: |
+      Traçabilité amont/aval des lots et fournées sur l'ensemble de la chaîne
+      d'approvisionnement via la capture d'événements GS1 EPCIS et l'échange de
+      données avec les partenaires commerciaux.
+
+  BC-2380.20.10:
+    name: Codage des lots et des fournées
+    description: |
+      Génération et impression des codes de lot et de fournée selon les standards
+      GS1.
+
+  BC-2380.20.20:
+    name: Capture des événements EPCIS
+    description: |
+      Capture des événements EPCIS (commissioning, expédition, réception) sur
+      l'ensemble de la chaîne d'approvisionnement.
+
+  BC-2380.20.30:
+    name: Traçabilité amont et aval
+    description: |
+      Traçabilité amont et aval des intrants et des extrants à chaque nœud de
+      manipulation.
+
+  BC-2380.20.40:
+    name: Échange de données de traçabilité avec les partenaires commerciaux
+    description: |
+      Échange de données de traçabilité avec les fournisseurs et les partenaires
+      commerciaux en aval.
+
+  BC-2380.30:
+    name: Gestion de la coordination des rappels et des retraits
+    description: |
+      Coordination des rappels et retraits de produits alimentaires et de grande
+      consommation, incluant la notification des autorités et la communication
+      aux consommateurs.
+    in_scope:
+      - Classification et prise de décision des rappels
+      - Notification et reporting aux autorités
+      - Communication aux consommateurs et aux partenaires commerciaux
+
+  BC-2380.30.10:
+    name: Décision et classification du rappel
+    description: |
+      Décision et classification du périmètre et de la gravité du rappel.
+
+  BC-2380.30.20:
+    name: Notification aux autorités
+    description: |
+      Notification des autorités de sécurité alimentaire selon les règles
+      juridictionnelles.
+
+  BC-2380.30.30:
+    name: Communication aux consommateurs et partenaires commerciaux
+    description: |
+      Communication aux consommateurs et aux partenaires commerciaux concernant
+      les mesures de rappel.
+
+  BC-2380.30.40:
+    name: Vérification de l'efficacité du rappel
+    description: |
+      Vérification de l'efficacité du rappel et des taux de récupération.
+
+  BC-2380.40:
+    name: Gestion des produits frais et de la durée de vie
+    description: |
+      Surveillance de la durée de vie, rotation FEFO, discipline de datage et
+      réduction des déchets sur les catégories de produits frais.
+
+  BC-2380.40.10:
+    name: Durée de vie et codage des dates
+    description: |
+      Définition et impression des durées de vie et codes de date selon les règles
+      des marchés.
+
+  BC-2380.40.20:
+    name: Rotation premier expiré, premier sorti
+    description: |
+      Rotation FEFO en magasins et dans les centres de distribution.
+
+  BC-2380.40.30:
+    name: Coordination des dépréciations des produits frais
+    description: |
+      Coordination des dépréciations des produits frais avant expiration afin de
+      réduire les déchets.
+
+  BC-2380.40.40:
+    name: Programmes de réduction des déchets alimentaires
+    description: |
+      Programmes de réduction des déchets alimentaires, de dons et de valorisation
+      circulaire.
+
+  BC-2380.50:
+    name: Gestion de la conformité de la chaîne du froid
+    description: |
+      Intégrité de la chaîne du froid pour les aliments réfrigérés et surgelés
+      incluant la surveillance de la température, la gestion des excursions et les
+      décisions de disposition.
+    in_scope:
+      - Surveillance de la température de la chaîne du froid sur tous les nœuds
+      - Investigation des excursions et décisions de disposition
+      - Procédures opérationnelles et audits de la chaîne du froid
+    out_of_scope:
+      - Chaîne du froid pharmaceutique (BC-1570.10)
+
+  BC-2380.50.10:
+    name: Surveillance de la température de la chaîne du froid
+    description: |
+      Surveillance de la température de bout en bout sur la chaîne du froid
+      alimentaire.
+
+  BC-2380.50.20:
+    name: Gestion des excursions de la chaîne du froid
+    description: |
+      Investigation et disposition des excursions de température dans la chaîne
+      du froid.
+
+  BC-2380.50.30:
+    name: Audit et vérification de la chaîne du froid
+    description: |
+      Audit et vérification des pratiques de chaîne du froid sur l'ensemble du
+      réseau.

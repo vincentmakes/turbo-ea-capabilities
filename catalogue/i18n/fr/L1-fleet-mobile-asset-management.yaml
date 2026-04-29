@@ -1,0 +1,164 @@
+locale: fr
+source: L1-fleet-mobile-asset-management.yaml
+entries:
+  BC-2430:
+    name: Gestion de la flotte et des actifs mobiles
+    description: |
+      Provisionnement, maintenance, utilisation et cession des véhicules, navires,
+      aéronefs, matériel roulant et équipements mutualisés tels que les conteneurs,
+      remorques et ULD.
+
+  BC-2430.10:
+    name: Gestion de l'acquisition et de la cession de la flotte
+    description: |
+      Spécification, acquisition, location, affrètement et cession en fin de vie
+      des actifs mobiles.
+    in_scope:
+      - Approvisionnement en véhicules, navires, aéronefs et matériel roulant
+      - Affrètements avec équipage, sans équipage et coque nue
+      - Décisions de fin de vie et de revente
+    out_of_scope:
+      - Approvisionnement générique en biens indirects (BC-500)
+      - Comptabilisation des immobilisations (BC-200)
+
+  BC-2430.10.10:
+    name: Spécification et approvisionnement de la flotte
+    description: |
+      Spécification et approvisionnement de nouveaux actifs de flotte.
+
+  BC-2430.10.20:
+    name: Gestion des locations et affrètements
+    description: |
+      Locations opérationnelles, locations financières et contrats d'affrètement
+      pour les actifs de flotte.
+
+  BC-2430.10.30:
+    name: Cession en fin de vie
+    description: |
+      Revente, mise à la ferraille et recyclage des actifs de flotte retirés du
+      service.
+
+  BC-2430.20:
+    name: Gestion de la maintenance de la flotte
+    description: |
+      Maintenance préventive, corrective et lourde des véhicules, navires, aéronefs
+      et matériel roulant.
+
+  BC-2430.20.10:
+    name: Planification de la maintenance préventive
+    description: |
+      Planification de la maintenance préventive basée sur le temps et la condition.
+
+  BC-2430.20.20:
+    name: Exécution de la maintenance corrective
+    description: |
+      Réparation des pannes et travaux correctifs sur les actifs mobiles.
+
+  BC-2430.20.30:
+    name: Conformité aux inspections obligatoires
+    description: |
+      Conformité aux inspections réglementaires et aux directives de navigabilité
+      aérienne ou maritime.
+
+  BC-2430.20.40:
+    name: Maintenance lourde et révision générale
+    description: |
+      Révisions générales majeures, mises en cale sèche et opérations de maintenance
+      lourde.
+
+  BC-2430.30:
+    name: Gestion du parc d'équipements
+    description: |
+      Gestion des conteneurs, remorques, châssis et ULD mutualisés entre dépôts,
+      clients et partenaires.
+
+  BC-2430.30.10:
+    name: Gestion du parc de conteneurs
+    description: |
+      Suivi et équilibrage des parcs de conteneurs entre les dépôts.
+
+  BC-2430.30.20:
+    name: Gestion du parc de remorques et châssis
+    description: |
+      Gestion du parc de remorques et châssis incluant la mutualisation en pool
+      gris.
+
+  BC-2430.30.30:
+    name: Gestion du parc ULD
+    description: |
+      Suivi, réparation et équilibrage des ULD entre les stations.
+
+  BC-2430.30.40:
+    name: Opérations de repositionnement des équipements vides
+    description: |
+      Exécution des mouvements de repositionnement des équipements vides entre
+      dépôts en excédent et en déficit.
+
+  BC-2430.40:
+    name: Télématique et surveillance de la flotte
+    description: |
+      Surveillance en continu de la position, de l'état et du comportement des
+      opérateurs des actifs pour alimenter la maintenance et les opérations.
+
+  BC-2430.40.10:
+    name: Opérations de télématique de flotte
+    description: |
+      Exploitation des plateformes de télématique recueillant les données de
+      position et de motorisation.
+
+  BC-2430.40.20:
+    name: Surveillance de l'état des actifs
+    description: |
+      Surveillance de l'état des actifs mobiles incluant le statut des
+      conteneurs frigorifiques et du fret.
+
+  BC-2430.40.30:
+    name: Surveillance du comportement des conducteurs
+    description: |
+      Surveillance des signaux de comportement des conducteurs tels que les freinages
+      brusques et les excès de vitesse.
+
+  BC-2430.50:
+    name: Gestion de la conformité et de la certification de la flotte
+    description: |
+      Immatriculation, certification et conformité aux émissions des actifs de flotte
+      auprès des autorités et des sociétés de classification.
+
+  BC-2430.50.10:
+    name: Immatriculation des véhicules, navires et aéronefs
+    description: |
+      Immatriculation initiale et continue auprès des autorités nationales et
+      internationales.
+
+  BC-2430.50.20:
+    name: Inspection réglementaire et certification
+    description: |
+      Certificats et audits de classification, de navigabilité aérienne et
+      d'aptitude à la route.
+
+  BC-2430.50.30:
+    name: Conformité aux émissions et à l'environnement
+    description: |
+      Conformité aux régimes d'émissions applicables aux véhicules, navires et
+      aéronefs.
+
+  BC-2430.60:
+    name: Gestion de l'utilisation et de la performance de la flotte
+    description: |
+      Mesure de l'utilisation des actifs, des délais de rotation et du coût total
+      de possession pour guider les décisions de flotte.
+
+  BC-2430.60.10:
+    name: Reporting de l'utilisation des actifs
+    description: |
+      Reporting de l'utilisation par type d'actif, ligne et dépôt.
+
+  BC-2430.60.20:
+    name: Analyse des délais de rotation des équipements
+    description: |
+      Analyse des délais de rotation des conteneurs, remorques et ULD.
+
+  BC-2430.60.30:
+    name: Analyse du coût total de possession
+    description: |
+      Analyse du coût total de possession par type de flotte et par fournisseur.

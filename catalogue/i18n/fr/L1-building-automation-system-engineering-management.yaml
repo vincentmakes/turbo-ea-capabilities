@@ -1,0 +1,191 @@
+locale: fr
+source: L1-building-automation-system-engineering-management.yaml
+entries:
+  BC-2010:
+    name: Gestion de l'ingénierie des systèmes de gestion technique du bâtiment
+    description: |
+      Ingénierie des produits des contrôleurs GTB, des équipements de terrain, des logiciels
+      superviseurs, des bibliothèques de séquences de régulation réutilisables, des piles de
+      protocoles de communication, des modèles de données sémantiques et de la cybersécurité GTB
+      — ancrée sur ISO 16484 / ASHRAE 135 (BACnet) et ASHRAE Guideline 36.
+    in_scope:
+      - Ingénierie des produits contrôleurs GTB et équipements de terrain spécifiques aux applications
+      - Ingénierie des logiciels serveur superviseur, alarmes et historien de tendances
+      - Bibliothèques de séquences d'opération réutilisables (Guideline 36 et régulation avancée)
+      - Piles de protocoles BACnet, KNX, LonWorks, Modbus, DALI, OPC UA, MQTT
+      - Modélisation de données sémantiques Brick / Haystack
+      - Contrôleurs GTB sécurisés dès la conception et cybersécurité des réseaux GTB
+    out_of_scope:
+      - Ingénierie des produits électroniques génériques couverte par BC-1900
+      - Listes de points et personnalisation des séquences au niveau projet (BC-2020)
+      - Ingénierie des équipements mécaniques HVAC (BC-2000)
+      - Mise en service sur site et opérations de service (BC-2050, BC-2060)
+  BC-2010.10:
+    name: Ingénierie des produits contrôleurs GTB
+    description: |
+      Ingénierie des produits contrôleurs de bâtiment spécifiques aux applications — contrôleurs
+      de zone, CTA, centrale, programmables et passerelles de périphérie.
+  BC-2010.10.10:
+    name: Ingénierie des contrôleurs de zone
+    description: |
+      Ingénierie des contrôleurs de zone pour le contrôle VAV, ventilo-convecteur et unitaire.
+  BC-2010.10.20:
+    name: Ingénierie des contrôleurs de CTA
+    description: |
+      Ingénierie des contrôleurs de centrale de traitement d'air avec support de séquence intégré.
+  BC-2010.10.30:
+    name: Ingénierie des contrôleurs de centrale
+    description: |
+      Ingénierie des contrôleurs de centrale pour les installations de refroidisseurs et chaudières.
+  BC-2010.10.40:
+    name: Ingénierie des contrôleurs programmables
+    description: |
+      Ingénierie des contrôleurs GTB librement programmables.
+  BC-2010.10.50:
+    name: Ingénierie des passerelles de périphérie
+    description: |
+      Ingénierie des passerelles de périphérie assurant la traduction entre GTB et plateformes IoT/cloud.
+  BC-2010.20:
+    name: Ingénierie des équipements de terrain GTB
+    description: |
+      Ingénierie des capteurs, vannes, volets et équipements de terrain sans fil qui remontent dans le GTB.
+  BC-2010.20.10:
+    name: Ingénierie des produits capteurs
+    description: |
+      Ingénierie des capteurs de température, humidité, pression, CO2 et qualité d'air intérieur comme équipements GTB.
+  BC-2010.20.20:
+    name: Ingénierie des vannes et actionneurs
+    description: |
+      Ingénierie des vannes de régulation et actionneurs de vannes pour les systèmes hydroniques.
+  BC-2010.20.30:
+    name: Ingénierie des actionneurs de volets
+    description: |
+      Ingénierie des actionneurs de volets pour le contrôle côté air du GTB.
+  BC-2010.20.40:
+    name: Ingénierie des équipements de terrain sans fil
+    description: |
+      Ingénierie des capteurs et actionneurs sans fil pour les applications de rénovation et IoT.
+  BC-2010.30:
+    name: Ingénierie des logiciels superviseurs GTB
+    description: |
+      Ingénierie des serveurs superviseurs, interfaces opérateur, moteurs d'alarme et historiens.
+  BC-2010.30.10:
+    name: Ingénierie des serveurs superviseurs
+    description: |
+      Ingénierie des serveurs superviseurs de tête gérant les réseaux de contrôleurs.
+  BC-2010.30.20:
+    name: Ingénierie des interfaces opérateur
+    description: |
+      Ingénierie des interfaces opérateur graphiques et des tableaux de bord.
+  BC-2010.30.30:
+    name: Ingénierie du moteur d'alarmes et d'événements
+    description: |
+      Ingénierie du traitement des alarmes, de leur hiérarchisation et des moteurs de notification.
+  BC-2010.30.40:
+    name: Ingénierie des tendances et de l'historien
+    description: |
+      Ingénierie des sous-systèmes d'enregistrement des tendances et d'historien de séries temporelles.
+  BC-2010.40:
+    name: Ingénierie des bibliothèques de séquences de régulation
+    description: |
+      Ingénierie des bibliothèques de séquences d'opération réutilisables et indépendantes du fournisseur pour les sous-systèmes HVAC.
+  BC-2010.40.10:
+    name: Bibliothèque de séquences VAV
+    description: |
+      Séquences réutilisables pour le contrôle des zones à débit d'air variable.
+  BC-2010.40.20:
+    name: Bibliothèque de séquences CTA
+    description: |
+      Séquences réutilisables pour le contrôle des centrales de traitement d'air.
+  BC-2010.40.30:
+    name: Bibliothèque de séquences centrale
+    description: |
+      Séquences réutilisables pour le contrôle des installations de refroidisseurs et chaudières.
+  BC-2010.40.40:
+    name: Bibliothèque de séquences de régulation avancée
+    description: |
+      Séquences réutilisables pour la régulation prédictive et basée sur l'optimisation.
+  BC-2010.50:
+    name: Ingénierie des protocoles de communication GTB
+    description: |
+      Ingénierie des piles de protocoles de communication pour l'automatisation des bâtiments et des pilotes.
+  BC-2010.50.10:
+    name: Ingénierie de la pile BACnet
+    description: |
+      Ingénierie des piles de protocoles BACnet/IP et BACnet/MSTP.
+  BC-2010.50.20:
+    name: Ingénierie des piles KNX et LonWorks
+    description: |
+      Ingénierie des piles de protocoles KNX et LonWorks.
+  BC-2010.50.30:
+    name: Ingénierie des pilotes Modbus et DALI
+    description: |
+      Ingénierie des pilotes Modbus et DALI pour l'intégration HVAC et éclairage.
+  BC-2010.50.40:
+    name: Ingénierie du serveur OPC UA
+    description: |
+      Ingénierie des serveurs OPC UA pour l'interopérabilité GTB de grade industriel.
+  BC-2010.50.50:
+    name: Ingénierie de la messagerie MQTT et IoT
+    description: |
+      Ingénierie des interfaces de messagerie MQTT et IoT pour la connectivité cloud.
+  BC-2010.60:
+    name: Ingénierie du modèle de données sémantique du bâtiment
+    description: |
+      Ingénierie des modèles sémantiques, ontologies et conventions de nommage rendant les données GTB interprétables par les machines.
+  BC-2010.60.10:
+    name: Modélisation par le schéma Brick
+    description: |
+      Ingénierie des modèles Brick Schema décrivant la topologie du bâtiment et des équipements.
+  BC-2010.60.20:
+    name: Ingénierie de la bibliothèque de tags Haystack
+    description: |
+      Ingénierie des bibliothèques de tags Haystack et des conventions de taguage.
+  BC-2010.60.30:
+    name: Bibliothèque de conventions de nommage des points
+    description: |
+      Maintenance des bibliothèques de conventions de nommage des points et des tags.
+  BC-2010.60.40:
+    name: Ingénierie de l'ontologie des actifs
+    description: |
+      Ingénierie des ontologies d'actifs reliant les données GTB aux équipements et aux localisations.
+  BC-2010.70:
+    name: Ingénierie de la cybersécurité GTB
+    description: |
+      Ingénierie sécurisée dès la conception des produits GTB, des réseaux et des contrôles d'identité.
+  BC-2010.70.10:
+    name: Architecture des contrôleurs sécurisés
+    description: |
+      Démarrage sécurisé, mise à jour sécurisée et architecture de contrôleur durcie.
+  BC-2010.70.20:
+    name: Conception de la segmentation du réseau GTB
+    description: |
+      Schémas de segmentation et zonage des réseaux GTB.
+  BC-2010.70.30:
+    name: Ingénierie de l'authentification et de l'identité
+    description: |
+      Ingénierie de l'identité des appareils, des utilisateurs et des services pour le GTB.
+  BC-2010.70.40:
+    name: Ingénierie de la gestion des vulnérabilités GTB
+    description: |
+      Ingénierie du triage des vulnérabilités produit, des correctifs et de la divulgation pour les produits GTB.
+  BC-2010.80:
+    name: Vérification et conformité des produits GTB
+    description: |
+      Vérification des produits GTB pour la conformité aux protocoles, l'interopérabilité et la préparation à l'homologation.
+  BC-2010.80.10:
+    name: Tests de conformité aux protocoles
+    description: |
+      Tests des produits par rapport aux suites de conformité BACnet, LonMark, KNX et autres protocoles.
+  BC-2010.80.20:
+    name: Tests d'interopérabilité en laboratoire
+    description: |
+      Tests d'interopérabilité multi-fournisseurs dans des laboratoires dédiés.
+  BC-2010.80.30:
+    name: Tests de régression des protocoles
+    description: |
+      Tests de régression des piles de protocoles sur les révisions de firmware.
+  BC-2010.80.40:
+    name: Documentation de conformité
+    description: |
+      Rédaction des PICS, BIBB et documents de conformité équivalents.

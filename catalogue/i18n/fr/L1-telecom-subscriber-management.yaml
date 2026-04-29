@@ -1,0 +1,128 @@
+locale: fr
+source: L1-telecom-subscriber-management.yaml
+entries:
+  BC-2640:
+    name: Gestion des abonnés télécom
+    description: |
+      Identité de l'abonné, cycle de vie de la SIM et eSIM, numérotation,
+      portabilité, identité des terminaux et authentification et autorisation
+      sur les réseaux mobiles et fixes.
+  BC-2640.10:
+    name: Gestion de l'identité des abonnés
+    description: |
+      Gestion du cycle de vie des identifiants et profils abonnés dans la couche
+      de données abonnés.
+  BC-2640.10.10:
+    name: Provisionnement de l'IMSI
+    description: |
+      Allocation et provisionnement de l'IMSI et des identifiants équivalents
+      dans les magasins de données abonnés.
+  BC-2640.10.20:
+    name: Gestion du profil abonné
+    description: |
+      Gestion des enregistrements de profil abonné dans le HLR, HSS, UDM et
+      systèmes équivalents.
+  BC-2640.10.30:
+    name: Révocation de l'identité abonné
+    description: |
+      Révocation des identités abonnés lors de la résiliation, de la fraude ou
+      à la demande du régulateur.
+  BC-2640.20:
+    name: Gestion du cycle de vie de la SIM et eSIM
+    description: |
+      Gestion du cycle de vie des cartes SIM physiques et des profils eSIM,
+      incluant la personnalisation, la distribution, le remplacement et
+      l'échange.
+  BC-2640.20.10:
+    name: Provisionnement des SIM physiques
+    description: |
+      Personnalisation et distribution des cartes SIM physiques.
+  BC-2640.20.20:
+    name: Gestion des profils eSIM
+    description: |
+      Gestion des profils eSIM via SM-DP+, SM-SR et plateformes équivalentes.
+  BC-2640.20.30:
+    name: Échange et remplacement de profils
+    description: |
+      Échange et remplacement des profils SIM et eSIM abonnés, incluant les
+      flux de protection contre la fraude.
+  BC-2640.30:
+    name: Gestion des ressources de numérotation
+    description: |
+      Gestion des ressources de numérotation téléphonique attribuées par les
+      régulateurs et leur affectation aux services.
+  BC-2640.30.10:
+    name: Allocation des blocs de numéros
+    description: |
+      Acquisition et allocation des blocs de numéros auprès du régulateur dans
+      l'inventaire interne.
+  BC-2640.30.20:
+    name: Gestion de l'inventaire de numéros
+    description: |
+      Gestion de l'inventaire de numéros disponibles, réservés, attribués et
+      mis en quarantaine.
+  BC-2640.30.30:
+    name: Réservation et restitution de numéros
+    description: |
+      Réservation de numéros pour les commandes et restitution des numéros
+      non utilisés au pool ou au régulateur.
+  BC-2640.40:
+    name: Gestion de la portabilité des numéros
+    description: |
+      Portabilité entrante et sortante des numéros mobiles et fixes et
+      maintenance des données de référence de routage.
+  BC-2640.40.10:
+    name: Gestion de la portabilité entrante
+    description: |
+      Traitement des demandes de portabilité de numéros entrantes en provenance
+      d'autres opérateurs.
+  BC-2640.40.20:
+    name: Gestion de la portabilité sortante
+    description: |
+      Traitement des demandes de portabilité de numéros sortantes vers d'autres
+      opérateurs.
+  BC-2640.40.30:
+    name: Maintenance des données de référence de routage de portabilité
+    description: |
+      Maintenance des données de routage de portabilité incluant ENUM et les
+      bases de données de référence centrales.
+  BC-2640.50:
+    name: Gestion de l'identité des terminaux
+    description: |
+      Enregistrement et contrôle des identifiants de terminaux pour l'éligibilité
+      au service et la mise en liste noire des terminaux volés.
+  BC-2640.50.10:
+    name: Enregistrement des IMEI
+    description: |
+      Enregistrement des IMEI des terminaux par rapport aux abonnés et vérifications
+      d'éligibilité au service.
+  BC-2640.50.20:
+    name: Maintenance du registre d'identité des équipements
+    description: |
+      Maintenance des données EIR pour les terminaux en liste blanche, liste
+      grise et liste noire.
+  BC-2640.50.30:
+    name: Mise en liste noire des terminaux volés
+    description: |
+      Mise en liste noire des terminaux volés et perdus en coopération avec les
+      registres industriels et les forces de l'ordre.
+  BC-2640.60:
+    name: Authentification et autorisation des abonnés
+    description: |
+      Authentification, autorisation et comptabilisation des abonnés et terminaux
+      sur les technologies d'accès.
+  BC-2640.60.10:
+    name: Authentification des abonnés
+    description: |
+      Authentification des abonnés sur les accès mobiles, fixes et Wi-Fi via
+      les protocoles AAA.
+  BC-2640.60.20:
+    name: Gestion des politiques d'autorisation
+    description: |
+      Gestion des règles d'autorisation de service et de politique par abonné
+      et terminal.
+  BC-2640.60.30:
+    name: Gestion des enregistrements de comptabilisation
+    description: |
+      Génération et gestion des enregistrements de comptabilisation AAA pour
+      la facturation et l'analytique en aval.

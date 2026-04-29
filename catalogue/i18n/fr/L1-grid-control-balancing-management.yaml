@@ -1,0 +1,146 @@
+locale: fr
+source: L1-grid-control-balancing-management.yaml
+entries:
+  BC-3830:
+    name: Gestion du contrôle du réseau et de l'équilibrage
+    description: |
+      Fonction d'opérateur de réseau pour le système électrique de base —
+      équilibrage en temps réel de la production et de la consommation, contrôle
+      de la fréquence et de la tension, réserves et services système, planification
+      opérationnelle, coordination transfrontalière et préparation au démarrage
+      noir.
+  BC-3830.10:
+    name: Opérations en temps réel du système
+    description: |
+      Supervision et contrôle en temps réel continus de la production, de la
+      consommation et des échanges du système pour maintenir une exploitation
+      sûre.
+  BC-3830.10.10:
+    name: Connaissance de situation du système
+    description: |
+      Surveillance continue de la production, de la charge et des marges de
+      contingence depuis le centre de conduite.
+  BC-3830.10.20:
+    name: Analyse de contingences en temps réel
+    description: |
+      Analyse de contingences N-1 et N-1-1 en temps réel et déclenchement des
+      actions correctives.
+  BC-3830.10.30:
+    name: Émission des instructions d'exploitation
+    description: |
+      Émission des instructions opérationnelles aux responsables d'équilibre et
+      aux GRT.
+  BC-3830.20:
+    name: Contrôle de la fréquence et de la tension
+    description: |
+      Régulation active de la fréquence et de la tension par le réglage
+      automatique de la production et le déclenchement réactif.
+  BC-3830.20.10:
+    name: Réglage automatique de la production
+    description: |
+      Déclenchement AGC et gestion de l'écart de réglage pour la régulation de
+      fréquence.
+  BC-3830.20.20:
+    name: Déclenchement de la puissance réactive
+    description: |
+      Déclenchement des ressources réactives pour maintenir le profil de tension
+      sur le réseau.
+  BC-3830.20.30:
+    name: Gestion de l'inertie et de la réponse en fréquence
+    description: |
+      Gestion de l'inertie, de la réponse rapide en fréquence et des services
+      de statisme.
+  BC-3830.30:
+    name: Planification opérationnelle
+    description: |
+      Analyse de la sécurité du système en J-1 et infrajournalière, évaluation
+      des arrêts et planification de la marge d'exploitation.
+  BC-3830.30.10:
+    name: Analyse de sécurité en J-1
+    description: |
+      Engagement des groupes contraint par la sécurité et analyse de
+      contingences pour la journée d'exploitation.
+  BC-3830.30.20:
+    name: Réenvoi infrajournalier
+    description: |
+      Réenvoi infrajournalier de la production et de la consommation en
+      fonction des mises à jour de prévisions.
+  BC-3830.30.30:
+    name: Évaluation saisonnière de la marge d'exploitation
+    description: |
+      Évaluation de la marge de capacité saisonnière et de l'adéquation.
+  BC-3830.40:
+    name: Réserves et services système
+    description: |
+      Acquisition et activation des réserves d'exploitation et des services
+      système, incluant les produits de fréquence, tension et inertie.
+  BC-3830.40.10:
+    name: Acquisition des réserves
+    description: |
+      Acquisition des produits de réserve primaire, secondaire et tertiaire.
+  BC-3830.40.20:
+    name: Activation des services système
+    description: |
+      Activation et déclenchement des fournisseurs de services système
+      contractés.
+  BC-3830.40.30:
+    name: Surveillance de la performance des réserves
+    description: |
+      Surveillance de la performance et de la disponibilité des fournisseurs de
+      réserve.
+  BC-3830.50:
+    name: Opérations de règlement des écarts
+    description: |
+      Calcul et notification côté opérateur de réseau des volumes et prix des
+      écarts pour les responsables d'équilibre.
+  BC-3830.50.10:
+    name: Agrégation des volumes mesurés
+    description: |
+      Agrégation des volumes mesurés par responsable d'équilibre.
+  BC-3830.50.20:
+    name: Calcul du prix d'écart
+    description: |
+      Calcul du prix d'écart système selon les règles de marché.
+  BC-3830.50.30:
+    name: Notification de règlement aux responsables d'équilibre
+    description: |
+      Notification des volumes d'écart et des charges aux responsables
+      d'équilibre.
+  BC-3830.60:
+    name: Coordination transfrontalière
+    description: |
+      Coordination des flux sur les interconnexions, du réenvoi et de la
+      sécurité avec les GRT voisins et les coordinateurs régionaux de sécurité.
+  BC-3830.60.10:
+    name: Planification des interconnexions
+    description: |
+      Planification des flux physiques et commerciaux sur les interconnexions.
+  BC-3830.60.20:
+    name: Calcul de capacité coordonné
+    description: |
+      Calcul de capacité coordonné entre zones de dépôt des offres avec les
+      voisins.
+  BC-3830.60.30:
+    name: Réenvoi transfrontalier et contre-échange
+    description: |
+      Réenvoi transfrontalier et contre-échange pour soulager les congestions.
+  BC-3830.70:
+    name: Planification du démarrage noir et de la restauration
+    description: |
+      Maintien des contrats de démarrage noir, des plans de restauration et
+      des exercices de restauration pour les scénarios d'effondrement total ou
+      partiel du système.
+  BC-3830.70.10:
+    name: Gestion des contrats de démarrage noir
+    description: |
+      Acquisition et surveillance des contrats de service de démarrage noir.
+  BC-3830.70.20:
+    name: Maintenance des plans de restauration du système
+    description: |
+      Maintenance des séquences de restauration et des plans de fonctionnement
+      en îlot.
+  BC-3830.70.30:
+    name: Exercices de restauration
+    description: |
+      Exercices de restauration opérateurs et inter-entreprises et retours
+      d'expérience.

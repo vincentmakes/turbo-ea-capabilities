@@ -1,0 +1,157 @@
+locale: fr
+source: L1-subscription-billing-revenue-management.yaml
+entries:
+  BC-4250:
+    name: Gestion de la facturation et des revenus d'abonnement
+    description: |
+      Mesure de l'utilisation, tarification, facturation, relances, reconnaissance
+      des revenus d'abonnement, gestion fiscale et analyse des revenus récurrents
+      pour le modèle commercial SaaS.
+  BC-4250.10:
+    name: Mesure de l'utilisation
+    description: |
+      Ingestion et agrégation des événements d'utilisation alimentant la tarification
+      et l'analytique en aval.
+  BC-4250.10.10:
+    name: Ingestion des événements d'utilisation
+    description: |
+      Ingestion des événements d'utilisation depuis les services produit
+      vers le pipeline de mesure.
+  BC-4250.10.20:
+    name: Agrégation de l'utilisation
+    description: |
+      Agrégation des événements d'utilisation en quantités facturables par
+      locataire et par compteur.
+  BC-4250.10.30:
+    name: Réconciliation des quantités mesurées
+    description: |
+      Réconciliation des quantités mesurées avec la source de référence et
+      les compteurs visibles par le client.
+  BC-4250.20:
+    name: Tarification et calcul des charges
+    description: |
+      Application des tarifs d'abonnement, des tarifs d'utilisation, des
+      prorations et des remises pour calculer les charges.
+  BC-4250.20.10:
+    name: Tarification des abonnements
+    description: |
+      Calcul des charges récurrentes d'abonnement par cycle de facturation.
+  BC-4250.20.20:
+    name: Tarification à l'utilisation
+    description: |
+      Calcul des charges d'utilisation à partir des quantités tarifées et
+      des grilles tarifaires.
+  BC-4250.20.30:
+    name: Calcul des prorations
+    description: |
+      Calcul des charges au prorata résultant des modifications en cours de cycle.
+  BC-4250.20.40:
+    name: Application des remises
+    description: |
+      Application des remises négociées et des avoirs aux charges calculées.
+  BC-4250.30:
+    name: Gestion de la facturation et des relevés
+    description: |
+      Génération, transmission et ajustement des factures, et traitement des
+      litiges de facturation clients.
+  BC-4250.30.10:
+    name: Génération des factures
+    description: |
+      Génération des factures à partir des charges tarifées et des conditions
+      contractuelles.
+  BC-4250.30.20:
+    name: Transmission des factures
+    description: |
+      Transmission des factures aux clients via le portail, l'e-mail et
+      les canaux partenaires.
+  BC-4250.30.30:
+    name: Ajustement des factures
+    description: |
+      Ajustement des factures pour les avoirs, les erreurs et les écarts
+      contractuels.
+  BC-4250.30.40:
+    name: Traitement des litiges de facturation clients
+    description: |
+      Qualification et résolution des litiges de facturation clients.
+  BC-4250.40:
+    name: Recouvrement des paiements et relances
+    description: |
+      Gestion des moyens de paiement, autorisation des paiements, relances
+      et récupération des pertes d'abonnement involontaires.
+  BC-4250.40.10:
+    name: Gestion des moyens de paiement
+    description: |
+      Enregistrement et gestion des moyens de paiement et tokens des clients.
+  BC-4250.40.20:
+    name: Autorisation des paiements
+    description: |
+      Autorisation et capture des paiements récurrents via les processeurs
+      de paiement.
+  BC-4250.40.30:
+    name: Workflow de relances
+    description: |
+      Séquences de relances automatisées pour les paiements échoués et
+      les soldes en souffrance.
+  BC-4250.40.40:
+    name: Récupération des pertes d'abonnement involontaires
+    description: |
+      Récupération des abonnements perdus suite à des cartes expirées,
+      refus définitifs et autres échecs de paiement similaires.
+  BC-4250.50:
+    name: Reconnaissance des revenus d'abonnement
+    description: |
+      Identification des obligations de performance et gestion des plannings
+      de reconnaissance des revenus conformément aux normes ASC 606 / IFRS 15.
+  BC-4250.50.10:
+    name: Identification des obligations de performance
+    description: |
+      Identification des obligations de performance distinctes issues
+      des contrats d'abonnement.
+  BC-4250.50.20:
+    name: Gestion des plannings de revenus
+    description: |
+      Génération et maintenance des plannings de reconnaissance des revenus
+      sur toute la durée du contrat.
+  BC-4250.50.30:
+    name: Réconciliation des revenus différés
+    description: |
+      Réconciliation des soldes de revenus différés avec les montants facturés
+      et reconnus.
+  BC-4250.60:
+    name: Gestion fiscale des abonnements
+    description: |
+      Détermination des juridictions fiscales, calcul des taxes et gestion
+      des exonérations sur les charges récurrentes et à l'utilisation.
+  BC-4250.60.10:
+    name: Détermination des juridictions fiscales
+    description: |
+      Détermination des juridictions fiscales applicables par client et
+      par charge.
+  BC-4250.60.20:
+    name: Calcul des taxes sur abonnements
+    description: |
+      Calcul de la taxe indirecte sur les charges d'abonnement et d'utilisation.
+  BC-4250.60.30:
+    name: Gestion des exonérations fiscales
+    description: |
+      Enregistrement et application des certificats d'exonération fiscale
+      des clients.
+  BC-4250.70:
+    name: Analytique des revenus d'abonnement
+    description: |
+      Calcul et analyse des indicateurs de santé des revenus récurrents,
+      notamment ARR, MRR, NRR, GRR et les vues par cohorte.
+  BC-4250.70.10:
+    name: Calcul de l'ARR et du MRR
+    description: |
+      Calcul du revenu récurrent annuel et mensuel à partir de l'état
+      des abonnements.
+  BC-4250.70.20:
+    name: Analyse de la rétention nette et brute
+    description: |
+      Analyse de la rétention des revenus nette et brute par cohortes clients.
+  BC-4250.70.30:
+    name: Analyse des revenus par cohorte
+    description: |
+      Analyse par cohorte de l'évolution des revenus et des dynamiques
+      de rétention.

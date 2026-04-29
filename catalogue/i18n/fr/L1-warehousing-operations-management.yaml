@@ -1,0 +1,144 @@
+locale: fr
+source: L1-warehousing-operations-management.yaml
+entries:
+  BC-2460:
+    name: Gestion des opérations d'entreposage
+    description: |
+      Exploitation des entrepôts tiers et centres de distribution, incluant les
+      opérations entrantes, le stockage, les opérations sortantes, les services
+      à valeur ajoutée et la logistique inverse.
+  BC-2460.10:
+    name: Gestion des opérations entrantes
+    description: |
+      Réception, inspection et rangement des marchandises entrant dans l'entrepôt.
+    in_scope:
+      - Avis préalables à la réception et traitement des ASN
+      - Inspection des marchandises à réception et rangement
+    out_of_scope:
+      - Expéditions sortantes (BC-2460.30)
+      - Propriété des stocks au niveau du chargeur (BC-530)
+  BC-2460.10.10:
+    name: Planification préalable à la réception
+    description: |
+      Ingestion des ASN, planification des quais et planification des ressources
+      pour les réceptions.
+  BC-2460.10.20:
+    name: Réception et inspection des marchandises
+    description: |
+      Réception physique et inspection des marchandises entrantes.
+  BC-2460.10.30:
+    name: Rangement et allocation aux emplacements de stockage
+    description: |
+      Rangement des marchandises reçues et allocation aux emplacements de
+      stockage.
+  BC-2460.20:
+    name: Gestion des opérations de stockage et d'inventaire
+    description: |
+      Opérations de stockage en entrepôt incluant le slotting, les inventaires
+      tournants et le stockage conditionné.
+  BC-2460.20.10:
+    name: Slotting et gestion des emplacements
+    description: |
+      Décisions de slotting et maintenance des emplacements de stockage.
+  BC-2460.20.20:
+    name: Inventaire tournant et réconciliation
+    description: |
+      Inventaires tournants, réconciliation des stocks et ajustement des
+      inventaires.
+  BC-2460.20.30:
+    name: Suivi des lots, numéros de série et batches
+    description: |
+      Suivi des attributs de lot, numéro de série et batch pour les marchandises
+      stockées.
+  BC-2460.20.40:
+    name: Stockage en froid et conditionné
+    description: |
+      Exploitation du stockage à température contrôlée, des marchandises
+      dangereuses et du stockage sous douane.
+  BC-2460.30:
+    name: Gestion des opérations sortantes
+    description: |
+      Préparation de commandes, emballage, étiquetage et expédition des
+      envois sortants.
+  BC-2460.30.10:
+    name: Opérations de préparation de commandes
+    description: |
+      Préparation de commandes par stratégies de vague, batch et zone.
+  BC-2460.30.20:
+    name: Emballage et étiquetage
+    description: |
+      Emballage, étiquetage et préparation des documents d'expédition.
+  BC-2460.30.30:
+    name: Expédition et chargement
+    description: |
+      Chargement des véhicules sortants et confirmation d'expédition.
+  BC-2460.40:
+    name: Gestion des services à valeur ajoutée
+    description: |
+      Services à valeur ajoutée en entrepôt tels que le kitting, le co-packing,
+      l'étiquetage et la configuration.
+  BC-2460.40.10:
+    name: Services de kitting et d'assemblage
+    description: |
+      Kitting, sous-assemblage et assemblage de kits au sein de l'entrepôt.
+  BC-2460.40.20:
+    name: Co-packing et ré-étiquetage
+    description: |
+      Services de co-packing, reconditionnement et ré-étiquetage.
+  BC-2460.40.30:
+    name: Personnalisation et différenciation retardée
+    description: |
+      Configuration produit en phase finale et différenciation retardée.
+  BC-2460.50:
+    name: Gestion des retours et des opérations inverses
+    description: |
+      Réception, tri et traitement des marchandises retournées et des flux de
+      logistique inverse.
+  BC-2460.50.10:
+    name: Réception et tri des retours
+    description: |
+      Réception et tri des marchandises retournées.
+  BC-2460.50.20:
+    name: Remise en état et décision de traitement
+    description: |
+      Remise en état, reconditionnement et décisions de traitement des retours.
+  BC-2460.50.30:
+    name: Élimination en logistique inverse
+    description: |
+      Mise au rebut, recyclage et destruction des retours non récupérables.
+  BC-2460.60:
+    name: Gestion des ressources de l'entrepôt
+    description: |
+      Gestion de la main-d'œuvre, des équipements de manutention et de la
+      capacité des quais et créneaux au sein de l'entrepôt.
+  BC-2460.60.10:
+    name: Planification de la main-d'œuvre et productivité
+    description: |
+      Planification des équipes, affectation des tâches et suivi de la
+      productivité.
+  BC-2460.60.20:
+    name: Opérations des équipements de manutention
+    description: |
+      Exploitation, allocation et maintenance des chariots élévateurs, convoyeurs
+      et AGV.
+  BC-2460.60.30:
+    name: Planification des créneaux de quai
+    description: |
+      Planification des créneaux de quai entrants et sortants.
+  BC-2460.70:
+    name: Gestion des performances de l'entrepôt
+    description: |
+      Mesure des KPI de service, d'exactitude et de débit de l'entrepôt.
+  BC-2460.70.10:
+    name: Suivi des KPI du cycle de commande
+    description: |
+      Suivi des KPI de cycle de commande, de taux de service et d'exactitude.
+  BC-2460.70.20:
+    name: Rapports sur l'exactitude des stocks
+    description: |
+      Rapports sur l'exactitude des stocks et les manques.
+  BC-2460.70.30:
+    name: Rapports sur le débit et la productivité
+    description: |
+      Rapports sur le débit, les unités par heure et les benchmarks de
+      productivité.

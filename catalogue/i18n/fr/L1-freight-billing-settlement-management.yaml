@@ -1,0 +1,110 @@
+locale: fr
+source: L1-freight-billing-settlement-management.yaml
+entries:
+  BC-2530:
+    name: Gestion de la facturation et du règlement du fret
+    description: |
+      Émission des factures de fret, audit et paiement des factures transporteurs,
+      règlement intercompagnie et en pool, réclamations de fret et comptabilisation
+      des revenus de fret.
+  BC-2530.10:
+    name: Gestion de la facturation du fret
+    description: |
+      Génération et distribution des factures de fret, d'accessoires et
+      d'auto-facturation aux clients.
+    in_scope:
+      - Génération des factures de fret
+      - Réconciliation de l'auto-facturation client
+    out_of_scope:
+      - Processus génériques de comptes clients (BC-200)
+      - Stratégie de tarification client (BC-440)
+  BC-2530.10.10:
+    name: Génération des factures de fret
+    description: |
+      Génération des factures de fret à partir des acheminements réalisés.
+  BC-2530.10.20:
+    name: Génération des factures d'accessoires
+    description: |
+      Génération des factures d'accessoires et de surcharges.
+  BC-2530.10.30:
+    name: Coordination de l'auto-facturation client
+    description: |
+      Réconciliation des relevés d'auto-facturation des clients par rapport
+      aux expéditions.
+  BC-2530.20:
+    name: Gestion de l'audit et du paiement du fret
+    description: |
+      Audit des factures transporteurs et exécution des paiements aux transporteurs
+      par les chargeurs et commissionnaires.
+  BC-2530.20.10:
+    name: Audit des factures transporteurs
+    description: |
+      Audit des factures transporteurs par rapport aux contrats, tarifs et
+      expéditions.
+  BC-2530.20.20:
+    name: Réconciliation avant et après audit
+    description: |
+      Réconciliation des factures transporteurs avant et après audit.
+  BC-2530.20.30:
+    name: Exécution des paiements transporteurs
+    description: |
+      Exécution des paiements aux transporteurs et rapports de remise.
+  BC-2530.30:
+    name: Gestion du règlement intercompagnie et multi-transporteurs
+    description: |
+      Règlement des revenus et coûts entre partenaires interlignes, alliances
+      et bureaux de commissionnaires.
+  BC-2530.30.10:
+    name: Calcul du prorata interligne
+    description: |
+      Calcul du prorata de revenus interlignes entre partenaires.
+  BC-2530.30.20:
+    name: Opérations de règlement IATA CASS
+    description: |
+      Exploitation du règlement IATA CASS pour le fret aérien.
+  BC-2530.30.30:
+    name: Règlement inter-bureaux
+    description: |
+      Règlement inter-bureaux des revenus et coûts des commissionnaires.
+  BC-2530.40:
+    name: Gestion des réclamations de fret
+    description: |
+      Saisie, évaluation et règlement des réclamations de fret dans le cadre des
+      conventions de responsabilité du transport.
+  BC-2530.40.10:
+    name: Saisie et accusé de réception des réclamations
+    description: |
+      Saisie et accusé de réception des réclamations pour perte et dommage de
+      fret.
+  BC-2530.40.20:
+    name: Évaluation de la responsabilité
+    description: |
+      Évaluation de la responsabilité du transporteur au titre des conventions
+      de La Haye-Visby, de Montréal, CMR et COTIF.
+  BC-2530.40.30:
+    name: Règlement et recouvrement des réclamations
+    description: |
+      Règlement des réclamations acceptées et paiement aux clients.
+  BC-2530.40.40:
+    name: Recours et subrogation
+    description: |
+      Recours contre les transporteurs sous-jacents et subrogation contre les
+      assureurs.
+  BC-2530.50:
+    name: Gestion de la comptabilisation des revenus de fret
+    description: |
+      Comptabilisation, suivi et reporting des revenus de fret, y compris les
+      positions non facturées et différées.
+  BC-2530.50.10:
+    name: Comptabilisation des revenus de fret
+    description: |
+      Comptabilisation des revenus de fret conformément aux normes comptables
+      applicables.
+  BC-2530.50.20:
+    name: Suivi des revenus non facturés
+    description: |
+      Suivi des revenus de fret non facturés et courus.
+  BC-2530.50.30:
+    name: Reporting des revenus de fret
+    description: |
+      Reporting des revenus de fret aux fonctions finance et commerciale.

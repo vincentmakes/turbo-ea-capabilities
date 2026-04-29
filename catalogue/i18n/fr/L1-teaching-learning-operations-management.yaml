@@ -1,0 +1,163 @@
+locale: fr
+source: L1-teaching-learning-operations-management.yaml
+entries:
+  BC-4730:
+    name: Gestion des opérations d'enseignement et d'apprentissage
+    description: |
+      Dispensation quotidienne de l'enseignement et de l'apprentissage, couvrant
+      l'instruction en salle de classe et en ligne, les plateformes d'environnement
+      d'apprentissage, les opérations de stages et de placement, l'enseignement
+      complémentaire et le suivi de l'engagement.
+  BC-4730.10:
+    name: Dispensation des cours et leçons
+    description: |
+      Dispensation en présentiel de l'enseignement sous forme de cours
+      magistraux, séminaires, laboratoires, ateliers de création, ateliers
+      pratiques et tutoriaux.
+    in_scope:
+      - Dispensation des cours magistraux et séminaires
+      - Dispensation en laboratoire et atelier de création
+      - Dispensation des ateliers pratiques et tutoriaux
+    out_of_scope:
+      - Dispensation en ligne et à distance (couvert sous Opérations d'apprentissage en ligne et à distance)
+  BC-4730.10.10:
+    name: Dispensation des cours magistraux et séminaires
+    description: |
+      Dispensation de cours magistraux en grand groupe et d'enseignement en
+      mode séminaire.
+  BC-4730.10.20:
+    name: Dispensation en laboratoire et atelier de création
+    description: |
+      Dispensation de l'enseignement en laboratoire et atelier de création avec
+      activités pratiques.
+  BC-4730.10.30:
+    name: Dispensation des ateliers pratiques et tutoriaux
+    description: |
+      Dispensation des ateliers en petit groupe et tutoriaux.
+  BC-4730.20:
+    name: Opérations d'apprentissage en ligne et à distance
+    description: |
+      Dispensation synchrone, asynchrone et mixte de l'enseignement par les
+      modes en ligne et à distance.
+    in_scope:
+      - Dispensation de cours en ligne synchrone
+      - Dispensation de cours asynchrone
+      - Opérations d'apprentissage mixte
+    out_of_scope:
+      - Rédaction des supports d'apprentissage en ligne (couvert sous Gestion des contenus pédagogiques et ressources d'apprentissage)
+  BC-4730.20.10:
+    name: Dispensation de cours en ligne synchrone
+    description: |
+      Cours et tutoriaux en ligne en direct animés par un formateur.
+  BC-4730.20.20:
+    name: Dispensation de cours asynchrone
+    description: |
+      Dispensation de cours asynchrone à rythme libre avec progression
+      structurée.
+  BC-4730.20.30:
+    name: Opérations d'apprentissage mixte
+    description: |
+      Dispensation de cours combinant les modes présentiel et en ligne.
+  BC-4730.30:
+    name: Gestion de l'environnement d'apprentissage
+    description: |
+      Exploitation des systèmes de gestion de l'apprentissage, des plateformes
+      de classe virtuelle et de l'intégration avec les outils et analyses
+      d'apprentissage en aval.
+    in_scope:
+      - Opérations du système de gestion de l'apprentissage (LMS)
+      - Opérations de la plateforme de classe virtuelle
+      - Intégration LTI et outils d'apprentissage
+    out_of_scope:
+      - Infrastructure informatique générale (couvert sous Gestion des technologies de l'information transversale)
+  BC-4730.30.10:
+    name: Opérations du système de gestion de l'apprentissage
+    description: |
+      Opérations du système de gestion de l'apprentissage (LMS) institutionnel.
+  BC-4730.30.20:
+    name: Opérations de la plateforme de classe virtuelle
+    description: |
+      Opérations des plateformes de classe virtuelle et de vidéoconférence
+      utilisées pour l'enseignement.
+  BC-4730.30.30:
+    name: Intégration des outils d'apprentissage
+    description: |
+      Intégration des outils d'apprentissage tiers via LTI et les normes
+      équivalentes.
+  BC-4730.40:
+    name: Opérations de stage, clinique et placement sur le terrain
+    description: |
+      Exploitation de l'apprentissage intégré au travail, incluant la
+      coordination des placements, la supervision et le suivi des heures de
+      stage requises.
+    in_scope:
+      - Coordination des sites de placement
+      - Supervision clinique et de stage
+      - Suivi des heures de placement et du journal de bord
+    out_of_scope:
+      - Placement en emploi après diplomation (couvert sous Gestion du soutien et du bien-être des étudiants)
+  BC-4730.40.10:
+    name: Coordination des sites de placement
+    description: |
+      Coordination avec les sites de placement externes et les organisations
+      d'accueil.
+  BC-4730.40.20:
+    name: Supervision clinique et de stage
+    description: |
+      Supervision des étudiants pendant les placements cliniques, professionnels
+      et en stage.
+  BC-4730.40.30:
+    name: Suivi des heures de placement et du journal de bord
+    description: |
+      Suivi des heures de placement, des compétences et des entrées du journal
+      de bord.
+  BC-4730.50:
+    name: Tutorat et instruction complémentaire
+    description: |
+      Tutorat, apprentissage entre pairs et instruction complémentaire en
+      compétences académiques qui complète l'enseignement principal.
+    in_scope:
+      - Opérations de tutorat entre pairs
+      - Dispensation d'ateliers de compétences académiques
+      - Opérations de tutorat spécifique à la matière
+    out_of_scope:
+      - Conseil académique sur la planification du programme (couvert sous Gestion du soutien et du bien-être des étudiants)
+  BC-4730.50.10:
+    name: Opérations de tutorat entre pairs
+    description: |
+      Exploitation des dispositifs de tutorat et de soutien à l'apprentissage
+      animés par les pairs.
+  BC-4730.50.20:
+    name: Dispensation d'ateliers de compétences académiques
+    description: |
+      Dispensation d'ateliers transversaux de compétences académiques.
+  BC-4730.50.30:
+    name: Opérations de tutorat spécifique à la matière
+    description: |
+      Tutorat spécifique à la matière proposé par les enseignants, les
+      départements ou les services spécialisés.
+  BC-4730.60:
+    name: Suivi de la présence et de l'engagement
+    description: |
+      Capture et suivi de la présence des étudiants et de l'engagement des
+      apprenants avec des déclencheurs d'intervention pour les apprenants à
+      risque.
+    in_scope:
+      - Capture des présences
+      - Suivi de l'engagement des apprenants
+      - Déclenchement des alertes précoces et des interventions
+    out_of_scope:
+      - Intervention d'accompagnement et de conseil (couvert sous Gestion du soutien et du bien-être des étudiants)
+  BC-4730.60.10:
+    name: Capture des présences
+    description: |
+      Capture de la présence des étudiants dans les activités d'enseignement.
+  BC-4730.60.20:
+    name: Suivi de l'engagement des apprenants
+    description: |
+      Suivi des signaux d'engagement numériques et comportementaux.
+  BC-4730.60.30:
+    name: Alerte précoce et intervention
+    description: |
+      Déclenchement des alertes précoces et orientation vers les services de
+      soutien.

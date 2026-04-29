@@ -1,0 +1,152 @@
+locale: fr
+source: L1-food-beverage-processing-operations-management.yaml
+entries:
+  BC-3580:
+    name: Gestion des opérations de transformation alimentaire et boissons
+    description: |
+      Opérations de fabrication industrielle agroalimentaire — réception des matières premières, transformation primaire et secondaire, conditionnement, fabrication en chaîne du froid, assainissement, fabrication d'aliments pour animaux et valorisation des sous-produits dans les secteurs viande, laitier, meunerie, brasserie, boulangerie et produits frais découpés.
+  BC-3580.10:
+    name: Réception et inspection des matières premières
+    description: |
+      Réception, tests organoleptiques et en laboratoire, et acceptation des lots de matières premières agricoles dans les usines de transformation.
+  BC-3580.10.10:
+    name: Réception des matières premières
+    description: |
+      Réception des animaux, du lait, des céréales, des fruits et légumes en entrée.
+  BC-3580.10.20:
+    name: Tests organoleptiques et qualité des matières premières
+    description: |
+      Tests organoleptiques et en laboratoire des matières premières entrant en usine.
+  BC-3580.10.30:
+    name: Acceptation des lots de matières premières
+    description: |
+      Décisions d'acceptation, de rejet et de reclassification des lots.
+  BC-3580.20:
+    name: Opérations de transformation primaire
+    description: |
+      Première étape de transformation des intrants agricoles bruts — abattage et habillage, séparation du lait, meunerie et préparation des productions végétales.
+    in_scope:
+      - Abattage et habillage des carcasses
+      - Réception et séparation du lait
+      - Mouture des céréales et trituration des oléagineux
+      - Préparation des fruits et légumes
+    out_of_scope:
+      - Opérations de fabrication génériques (BC-1010)
+  BC-3580.20.10:
+    name: Abattage et habillage des carcasses
+    description: |
+      Abattage, habillage et réfrigération des carcasses de bétail et de volailles.
+  BC-3580.20.20:
+    name: Réception et séparation du lait
+    description: |
+      Réception, standardisation et opérations de séparation de la crème du lait.
+  BC-3580.20.30:
+    name: Mouture des céréales et trituration des oléagineux
+    description: |
+      Mouture des céréales et trituration des oléagineux incluant l'extraction par presse et par solvant.
+  BC-3580.20.40:
+    name: Préparation des fruits et légumes
+    description: |
+      Lavage, épluchage, découpe et blanchiment des fruits et légumes.
+  BC-3580.30:
+    name: Opérations de transformation secondaire
+    description: |
+      Opérations de mélange, cuisson, fermentation et concentration produisant des produits alimentaires et boissons finis.
+  BC-3580.30.10:
+    name: Opérations de mélange et assemblage
+    description: |
+      Mélange et assemblage de recettes d'aliments et boissons formulés.
+  BC-3580.30.20:
+    name: Cuisson et traitement thermique
+    description: |
+      Opérations de cuisson, de pasteurisation et de stérilisation.
+  BC-3580.30.30:
+    name: Opérations de fermentation et de brassage
+    description: |
+      Fermentation, brassage et maturation des boissons et produits fermentés.
+  BC-3580.30.40:
+    name: Opérations de séchage et de concentration
+    description: |
+      Séchage par atomisation, évaporation et concentration des produits liquides.
+  BC-3580.40:
+    name: Opérations de conditionnement et de remplissage
+    description: |
+      Remplissage, scellage, étiquetage et palettisation des produits alimentaires et boissons finis.
+  BC-3580.40.10:
+    name: Opérations de remplissage et de scellage
+    description: |
+      Remplissage et scellage des bouteilles, boîtes, sachets et contenants rigides.
+  BC-3580.40.20:
+    name: Opérations d'étiquetage
+    description: |
+      Étiquetage, marquage de la date et application des dispositifs inviolables.
+  BC-3580.40.30:
+    name: Encaissage et palettisation
+    description: |
+      Encaissage, enveloppement rétractable et palettisation des produits finis.
+  BC-3580.50:
+    name: Opérations de fabrication en chaîne du froid
+    description: |
+      Réfrigération, congélation et surveillance de la chaîne du froid en usine sur les lignes de transformation et de conditionnement.
+  BC-3580.50.10:
+    name: Opérations de réfrigération et de congélation
+    description: |
+      Exploitation des chambres froides, tunnels de surgélation et congélateurs rapides en usine.
+  BC-3580.50.20:
+    name: Surveillance de la chaîne du froid en usine
+    description: |
+      Surveillance de la chaîne du froid dans les zones et salles de stockage en usine.
+  BC-3580.60:
+    name: Opérations d'assainissement et de maîtrise des allergènes
+    description: |
+      Nettoyage en place, maîtrise des changements de production allergènes et programmes de surveillance environnementale garantissant la sécurité des produits.
+    in_scope:
+      - Programmes de nettoyage en place
+      - Validation des changements de production allergènes
+      - Surveillance environnementale des pathogènes
+    out_of_scope:
+      - Programmes de sécurité alimentaire côté distribution (BC-2380.10)
+  BC-3580.60.10:
+    name: Opérations de nettoyage en place
+    description: |
+      Exécution et validation du nettoyage en place lors des changements de production.
+  BC-3580.60.20:
+    name: Maîtrise des changements de production allergènes
+    description: |
+      Contrôles et frottis de vérification lors des changements de production allergènes.
+  BC-3580.60.30:
+    name: Programmes de surveillance environnementale
+    description: |
+      Surveillance des pathogènes environnementaux dans les zones de l'usine.
+  BC-3580.70:
+    name: Opérations de fabrication d'aliments pour animaux
+    description: |
+      Fabrication d'aliments composés incluant la réception des ingrédients, le mélange, la granulation et la production d'aliments médicamenteux pour l'élevage en aval.
+  BC-3580.70.10:
+    name: Réception des ingrédients alimentaires
+    description: |
+      Réception des céréales, tourteaux protéinés et additifs dans les usines de fabrication d'aliments.
+  BC-3580.70.20:
+    name: Mélange et granulation des aliments
+    description: |
+      Mélange et granulation des aliments composés selon les formulations de rations.
+  BC-3580.70.30:
+    name: Production d'aliments médicamenteux
+    description: |
+      Production d'aliments médicamenteux sur ordonnance avec contrôles de contamination croisée.
+  BC-3580.80:
+    name: Gestion des sous-produits et coproduits
+    description: |
+      Valorisation et orientation des sous-produits et coproduits de transformation tels que les farines et graisses animales, le lactosérum et les drêches vers des usages en aval.
+  BC-3580.80.10:
+    name: Opérations d'équarrissage
+    description: |
+      Traitement des sous-produits de l'abattage en graisses et farines animales.
+  BC-3580.80.20:
+    name: Valorisation du lactosérum et des perméats
+    description: |
+      Valorisation des flux de lactosérum et de perméats issus de la transformation laitière.
+  BC-3580.80.30:
+    name: Valorisation des drêches
+    description: |
+      Valorisation et orientation des drêches de brasserie et de distillerie.

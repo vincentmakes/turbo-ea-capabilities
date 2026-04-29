@@ -1,0 +1,162 @@
+locale: fr
+source: L1-water-distribution-network-operations-management.yaml
+entries:
+  BC-3880:
+    name: Gestion des opérations du réseau de distribution d'eau
+    description: |
+      Exploitation des conduites maîtresses et de distribution fournissant
+      l'eau traitée aux clients — gestion hydraulique et de pression, contrôle
+      des pertes, qualité de l'eau dans le réseau, réparation et renouvellement
+      des conduites, et raccordements clients.
+  BC-3880.10:
+    name: Conduite du réseau de distribution
+    description: |
+      Exploitation 24h/24 7j/7 du système de distribution d'eau en centre de
+      conduite à l'aide de la télémesure, des modèles hydrauliques et du SCADA.
+  BC-3880.10.10:
+    name: Opérations SCADA de distribution
+    description: |
+      Commande supervisée en temps réel des actifs de pompage et de pression sur
+      le réseau.
+  BC-3880.10.20:
+    name: Opérations des modèles hydrauliques
+    description: |
+      Exploitation des modèles hydrauliques en ligne et hors ligne pour les
+      décisions réseau.
+  BC-3880.10.30:
+    name: Surveillance de la télémesure réseau
+    description: |
+      Surveillance de la télémesure sur les DMA, vannes et points de pression.
+  BC-3880.20:
+    name: Opérations des conduites maîtresses et des stations de pompage
+    description: |
+      Exploitation des conduites maîtresses, stations de pompage et transferts
+      interzonaux, incluant le surpressage et la gestion des coups de bélier.
+  BC-3880.20.10:
+    name: Opérations des stations de pompage
+    description: |
+      Exploitation et optimisation énergétique des stations de pompage de
+      distribution.
+  BC-3880.20.20:
+    name: Opérations des conduites maîtresses
+    description: |
+      Exploitation, manœuvres et gestion des coups de bélier sur les conduites
+      maîtresses de transport.
+  BC-3880.20.30:
+    name: Opérations de transfert interzonal
+    description: |
+      Exploitation des transferts interzonaux et des liens d'alimentation en
+      gros entre zones ressources.
+  BC-3880.30:
+    name: Gestion des pertes d'eau
+    description: |
+      Contrôle actif et passif des pertes dans les zones de comptage distinctes
+      à l'aide de l'analyse des débits entrants, de la détection acoustique et
+      des interventions de localisation.
+    in_scope:
+      - Analyse des débits entrants et des débits nocturnes minimaux des DMA
+      - Campagnes de détection acoustique des fuites
+      - Opérations de localisation et réparation des fuites
+    out_of_scope:
+      - Programmes de renouvellement des conduites (BC-3900.50)
+      - Fuites sur les branchements côté client (BC-3910.60)
+  BC-3880.30.10:
+    name: Analyse des zones de comptage distinctes
+    description: |
+      Analyse des débits entrants et des débits nocturnes minimaux des DMA pour
+      localiser les pertes.
+  BC-3880.30.20:
+    name: Détection acoustique des fuites
+    description: |
+      Sondage acoustique, corrélation et campagnes de sonomètres pour la
+      localisation des fuites.
+  BC-3880.30.30:
+    name: Opérations de localisation et réparation des fuites
+    description: |
+      Opérations terrain de localisation et réparation des fuites détectées
+      dans les délais cibles de réparation.
+  BC-3880.30.40:
+    name: Reporting de performance des pertes
+    description: |
+      Reporting de la performance des pertes par rapport aux indicateurs
+      réglementaires et au bilan hydrique IWA.
+  BC-3880.40:
+    name: Gestion de la pression
+    description: |
+      Optimisation de la pression de distribution dans les zones de gestion de
+      la pression pour réduire les pertes et contrôler le taux de ruptures.
+  BC-3880.40.10:
+    name: Configuration des zones de pression
+    description: |
+      Configuration des zones de régulation de pression et des points de
+      consigne des réducteurs de pression.
+  BC-3880.40.20:
+    name: Contrôle avancé de la pression
+    description: |
+      Exploitation des réducteurs de pression à commande à distance et à
+      modulation temporelle.
+  BC-3880.40.30:
+    name: Gestion des pressions transitoires
+    description: |
+      Analyse des coups de bélier et atténuation des phénomènes transitoires
+      sur les réseaux de distribution.
+  BC-3880.50:
+    name: Opérations de qualité de l'eau dans le réseau
+    description: |
+      Surveillance de la qualité de l'eau dans le réseau — chlore résiduel, eau
+      colorée, goût et odeur — et opérations de remédiation.
+  BC-3880.50.10:
+    name: Surveillance du chlore résiduel dans le réseau
+    description: |
+      Surveillance des teneurs en chlore résiduel dans le réseau et dosage de
+      rechloration.
+  BC-3880.50.20:
+    name: Contrôle de la décoloration et des sédiments
+    description: |
+      Opérations de rinçage et de débouchage par bouchon de glace pour gérer
+      les réclamations pour eau colorée.
+  BC-3880.50.30:
+    name: Opérations de prélèvement dans le réseau
+    description: |
+      Prélèvements réglementaires au robinet des clients et aux points
+      d'alimentation.
+  BC-3880.60:
+    name: Opérations de réparation et de renouvellement des conduites
+    description: |
+      Réparation réactive des ruptures et défaillances de joints, et livraison
+      opérationnelle des programmes de renouvellement des conduites.
+  BC-3880.60.10:
+    name: Réponse aux ruptures de conduites
+    description: |
+      Réponse, isolement et réparation des ruptures de conduites selon les
+      objectifs de minutes clients perdues.
+  BC-3880.60.20:
+    name: Opérations de réparation des branchements
+    description: |
+      Réparation des conduites de communication et d'alimentation entre la
+      conduite principale et le robinet d'arrêt.
+  BC-3880.60.30:
+    name: Opérations terrain de renouvellement des conduites
+    description: |
+      Exécution terrain des programmes de renouvellement et de réhabilitation
+      des conduites, incluant les méthodes sans tranchée.
+  BC-3880.70:
+    name: Opérations de raccordement de nouveaux clients à l'eau
+    description: |
+      Réalisation des raccordements d'eau nouveaux pour les clients
+      domestiques, commerciaux et les promoteurs.
+  BC-3880.70.10:
+    name: Évaluation des demandes de raccordement eau
+    description: |
+      Évaluation technique des demandes de raccordement eau et fourniture de
+      services aux promoteurs.
+  BC-3880.70.20:
+    name: Opérations d'installation des raccordements
+    description: |
+      Pose des conduites de communication, robinets de prise en charge et
+      compteurs clients.
+  BC-3880.70.30:
+    name: Mise en service des raccordements
+    description: |
+      Mise en service, désinfection et rinçage des nouveaux raccordements avant
+      utilisation.

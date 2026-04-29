@@ -1,0 +1,141 @@
+locale: fr
+source: L1-ev-charging-network-operations-management.yaml
+entries:
+  BC-3480:
+    name: Gestion des opérations du réseau de recharge des véhicules électriques
+    description: |
+      Opérations des réseaux de recharge pour les opérateurs de points de recharge et les fournisseurs de services de mobilité électrique — planification de sites, opérations des bornes, gestion de l'énergie et des tarifs, opérations client et d'itinérance, facturation et règlement, maintenance des bornes et participation aux services réseau.
+  BC-3480.10:
+    name: Planification et déploiement des sites de recharge
+    description: |
+      Sélection de sites, obtention des permis, raccordement au réseau électrique et déploiement physique de l'infrastructure de recharge.
+  BC-3480.10.10:
+    name: Sélection des sites de recharge
+    description: |
+      Identification et qualification des sites de recharge selon les critères de demande, fonciers et de réseau électrique.
+  BC-3480.10.20:
+    name: Obtention des permis et raccordement au réseau
+    description: |
+      Obtention des permis, approbations d'urbanisme et coordination du raccordement au réseau électrique pour les sites de recharge.
+  BC-3480.10.30:
+    name: Coordination de l'installation des bornes
+    description: |
+      Coordination de l'installation des bornes, des travaux de génie civil, de la mise en service et de la remise aux opérations.
+  BC-3480.20:
+    name: Opérations des points de recharge
+    description: |
+      Exploitation quotidienne des points de recharge incluant la surveillance, le cycle de vie des sessions et le contrôle du firmware via OCPP.
+  BC-3480.20.10:
+    name: Surveillance des points de recharge
+    description: |
+      Surveillance en temps réel de la santé, de la disponibilité et des états d'alarme des points de recharge.
+  BC-3480.20.20:
+    name: Gestion du cycle de vie des sessions de recharge
+    description: |
+      Gestion du cycle de vie des sessions de recharge de l'autorisation à la fourniture d'énergie et à la fin de session.
+  BC-3480.20.30:
+    name: Gestion du firmware et de la configuration des bornes
+    description: |
+      Gestion des versions de firmware des bornes, des profils de configuration et des mises à jour à distance.
+  BC-3480.30:
+    name: Gestion de l'énergie et des tarifs de recharge
+    description: |
+      Gestion de la coordination des achats d'énergie, des tarifs de recharge et de l'optimisation de l'usage en heure creuse dans l'ensemble du réseau de recharge.
+  BC-3480.30.10:
+    name: Coordination des achats d'énergie en gros
+    description: |
+      Coordination avec les achats d'énergie sur les volumes, la couverture et les contrats PPA supportant les opérations de recharge.
+  BC-3480.30.20:
+    name: Définition des tarifs de recharge
+    description: |
+      Définition des tarifs de recharge publics, membres et d'itinérance sur l'ensemble des marchés.
+  BC-3480.30.30:
+    name: Optimisation des pics de puissance et des heures creuses
+    description: |
+      Optimisation des opérations de recharge par rapport aux structures tarifaires de pointe et d'heures creuses.
+  BC-3480.40:
+    name: Gestion des clients et des abonnements de recharge
+    description: |
+      Intégration des clients, plans d'abonnement et authentification pour les services de recharge.
+  BC-3480.40.10:
+    name: Intégration des comptes de recharge
+    description: |
+      Intégration des clients de recharge incluant l'identité, le paiement et la sélection du plan.
+  BC-3480.40.20:
+    name: Gestion des plans d'abonnement de recharge
+    description: |
+      Gestion des plans d'abonnement, d'adhésion et prépayés pour les clients de recharge.
+  BC-3480.40.30:
+    name: Authentification et autorisation de recharge
+    description: |
+      Authentification et autorisation des sessions de recharge via RFID, application ou Plug-and-Charge.
+  BC-3480.50:
+    name: Facturation et règlement de la recharge
+    description: |
+      Facturation des sessions de recharge, règlement avec les partenaires d'itinérance et gestion des reçus pour les clients de recharge.
+  BC-3480.50.10:
+    name: Facturation des sessions de recharge
+    description: |
+      Valorisation et facturation des sessions de recharge pour les clients directs et en itinérance.
+  BC-3480.50.20:
+    name: Règlement de l'itinérance
+    description: |
+      Règlement des sessions d'itinérance avec les CPO et EMSP partenaires via OCPI et protocoles équivalents.
+  BC-3480.50.30:
+    name: Gestion des remboursements et des reçus
+    description: |
+      Émission de reçus, support au remboursement de frais et documentation fiscale pour les clients de recharge.
+  BC-3480.60:
+    name: Interopérabilité du réseau de recharge
+    description: |
+      Interopérabilité avec les partenaires d'itinérance et conformité aux normes de recharge sur les connecteurs et protocoles.
+  BC-3480.60.10:
+    name: Gestion des partenaires d'itinérance
+    description: |
+      Intégration et gestion des partenaires et hubs d'itinérance.
+  BC-3480.60.20:
+    name: Opérations Plug-and-Charge
+    description: |
+      Exploitation des certificats de contrat ISO 15118 Plug-and-Charge et des flux d'authentification.
+  BC-3480.60.30:
+    name: Gestion de la compatibilité des connecteurs de borne
+    description: |
+      Gestion de la compatibilité des connecteurs CCS, NACS, CHAdeMO et GB/T et des stratégies d'adaptateurs.
+  BC-3480.70:
+    name: Service terrain et maintenance des bornes de recharge
+    description: |
+      Service terrain et maintenance des actifs de recharge incluant le dispatch, la maintenance préventive et les pièces de rechange.
+  BC-3480.70.10:
+    name: Dispatch pour pannes de bornes
+    description: |
+      Dispatch des techniciens terrain en réponse aux pannes de bornes et aux problèmes signalés par les clients.
+  BC-3480.70.20:
+    name: Maintenance préventive des bornes
+    description: |
+      Maintenance préventive planifiée et inspection des actifs de recharge.
+  BC-3480.70.30:
+    name: Gestion des pièces de rechange des bornes
+    description: |
+      Gestion des stocks de pièces de rechange des bornes, des pools de réparation et de l'obsolescence.
+  BC-3480.80:
+    name: Participation aux services réseau et énergie
+    description: |
+      Participation des actifs de recharge aux marchés de l'énergie et du réseau incluant l'effacement, le V2G et la recharge intelligente.
+    in_scope:
+      - Services d'export d'énergie et de capacité V2G
+      - Participation aux programmes d'effacement
+      - Optimisation des programmes de recharge intelligente
+    out_of_scope:
+      - Opérations d'actifs de production et trading d'énergie en gros
+  BC-3480.80.10:
+    name: Opérations des services véhicule-vers-réseau
+    description: |
+      Exploitation des services V2G fournissant des produits d'énergie et de capacité aux marchés du réseau et d'équilibrage.
+  BC-3480.80.20:
+    name: Participation aux programmes d'effacement
+    description: |
+      Participation aux programmes d'effacement incluant la réponse au dispatch et le règlement.
+  BC-3480.80.30:
+    name: Gestion des programmes de recharge intelligente
+    description: |
+      Recharge intelligente basée sur des plannings sur les sites et les véhicules pour optimiser le coût et l'impact réseau.

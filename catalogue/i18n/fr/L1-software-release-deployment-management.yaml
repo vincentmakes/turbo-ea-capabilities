@@ -1,0 +1,124 @@
+locale: fr
+source: L1-software-release-deployment-management.yaml
+entries:
+  BC-4210:
+    name: Gestion des versions et du déploiement logiciel
+    description: |
+      Intégration continue, gestion des environnements, ingénierie des versions, gestion des feature flags et déploiement progressif des produits SaaS en production.
+  BC-4210.10:
+    name: Gestion de l'intégration continue
+    description: |
+      Pipelines de build, production d'artefacts et application des politiques de pipeline garantissant que le produit intégré reste en permanence buildable.
+  BC-4210.10.10:
+    name: Gestion des pipelines de build
+    description: |
+      Définition et exploitation des pipelines de build automatisés pour les composants du produit.
+  BC-4210.10.20:
+    name: Gestion du dépôt d'artefacts
+    description: |
+      Stockage, rétention et accès aux artefacts de build et aux packages de dépendances.
+  BC-4210.10.30:
+    name: Application des politiques de pipeline
+    description: |
+      Application des contrôles qualité, sécurité et provenance requis sur les pipelines.
+  BC-4210.20:
+    name: Gestion des environnements
+    description: |
+      Provisionnement et gestion des environnements hors production utilisés pour le développement, l'intégration et la validation pré-production.
+  BC-4210.20.10:
+    name: Provisionnement des environnements
+    description: |
+      Provisionnement des environnements hors production adaptés aux besoins d'ingénierie et de validation.
+  BC-4210.20.20:
+    name: Configuration des environnements
+    description: |
+      Configuration des environnements hors production pour maintenir la parité avec la production lorsque nécessaire.
+  BC-4210.20.30:
+    name: Gestion des données des environnements
+    description: |
+      Provisionnement, masquage et actualisation des données dans les environnements hors production.
+  BC-4210.30:
+    name: Gestion de l'ingénierie des versions
+    description: |
+      Cadence, versionnage, branches et discipline des notes de version pour les livraisons logicielles.
+  BC-4210.30.10:
+    name: Gestion de la cadence des versions
+    description: |
+      Définition et gestion de la cadence des versions sur l'ensemble des domaines produit.
+  BC-4210.30.20:
+    name: Versionnage et branches
+    description: |
+      Schéma de versionnage et stratégie de branches appliqués aux versions du produit.
+  BC-4210.30.30:
+    name: Rédaction des notes de version
+    description: |
+      Rédaction des notes de version à destination des clients et des équipes opérationnelles pour chaque livraison.
+  BC-4210.40:
+    name: Orchestration du déploiement
+    description: |
+      Stratégies de livraison des modifications logicielles en production en toute sécurité et avec un rayon d'impact maîtrisé.
+  BC-4210.40.10:
+    name: Déploiement progressif
+    description: |
+      Déploiement progressif des versions vers des cohortes croissantes de tenants ou d'utilisateurs.
+  BC-4210.40.20:
+    name: Déploiement canary
+    description: |
+      Déploiement des versions sur une population canary restreinte avec évaluation automatisée de la santé.
+  BC-4210.40.30:
+    name: Déploiement blue-green
+    description: |
+      Déploiement en environnements parallèles avec bascule du trafic pour des changements à quasi-zéro interruption.
+  BC-4210.40.40:
+    name: Coordination du rollback
+    description: |
+      Rollback coordonné des versions sur signaux défavorables.
+  BC-4210.50:
+    name: Gestion des feature flags
+    description: |
+      Cycle de vie et contrôle à l'exécution des feature flags utilisés pour découpler le déploiement de la mise en disponibilité et cibler des fonctionnalités sur des cohortes.
+    in_scope:
+      - Création, retrait et audit des feature flags
+      - Règles de ciblage
+    out_of_scope:
+      - Méthodologie et arbitrage des expérimentations (couvert par la gestion de la télémétrie et de l'expérimentation)
+  BC-4210.50.10:
+    name: Cycle de vie des feature flags
+    description: |
+      Cycle de vie des feature flags de la création au retrait.
+  BC-4210.50.20:
+    name: Gestion des règles de ciblage
+    description: |
+      Définition des règles de ciblage déterminant quels sujets reçoivent une variante de flag.
+  BC-4210.50.30:
+    name: Gestion de l'hygiène des flags
+    description: |
+      Pratique d'hygiène retirant les flags obsolètes et prévenant l'accumulation de code conditionnel mort.
+  BC-4210.60:
+    name: Gestion de la configuration et des secrets
+    description: |
+      Gestion des valeurs de configuration à l'exécution et des secrets consommés par les services du produit.
+  BC-4210.60.10:
+    name: Gestion de la configuration à l'exécution
+    description: |
+      Stockage, distribution et audit des valeurs de configuration à l'exécution.
+  BC-4210.60.20:
+    name: Gestion du cycle de vie des secrets
+    description: |
+      Émission, rotation et révocation des secrets utilisés par les services du produit.
+  BC-4210.70:
+    name: Autorisation des changements en production
+    description: |
+      Revue pré-déploiement, gouvernance des fenêtres de déploiement et autorisation des accès humains à la production.
+  BC-4210.70.10:
+    name: Revue pré-déploiement
+    description: |
+      Revue et approbation des modifications avant le déploiement en production.
+  BC-4210.70.20:
+    name: Gouvernance des fenêtres de déploiement
+    description: |
+      Gouvernance des fenêtres de déploiement autorisées et des périodes de gel.
+  BC-4210.70.30:
+    name: Autorisation des accès à la production
+    description: |
+      Autorisation, octroi juste-à-temps et audit des accès humains aux systèmes de production.

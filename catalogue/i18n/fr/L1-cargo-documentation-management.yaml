@@ -1,0 +1,105 @@
+locale: fr
+source: L1-cargo-documentation-management.yaml
+entries:
+  BC-2500:
+    name: Gestion de la documentation de fret
+    description: |
+      Émission, échange et gestion du cycle de vie des documents de fret,
+      notamment les connaissements, lettres de transport aérien, lettres de
+      voiture routières et ferroviaires, manifestes et leurs équivalents
+      électroniques.
+  BC-2500.10:
+    name: Gestion des connaissements
+    description: |
+      Émission, remise et gestion des connaissements maritimes et fluviaux sous
+      forme négociable et non négociable.
+    in_scope:
+      - Connaissements maîtres et connaissements maison
+      - Variantes négociables, nominatives et sea waybill
+    out_of_scope:
+      - Traitement des lettres de crédit dans le cadre du financement du commerce (BC-1360)
+  BC-2500.10.10:
+    name: Émission des connaissements
+    description: |
+      Émission des connaissements maîtres et maison.
+  BC-2500.10.20:
+    name: Remise et mainlevée des connaissements
+    description: |
+      Remise télex, remise physique et mainlevée du fret contre connaissement.
+  BC-2500.10.30:
+    name: Variantes de connaissements négociables et nominatifs
+    description: |
+      Émission de variantes négociables, nominatives et sea waybill.
+  BC-2500.20:
+    name: Gestion des lettres de transport aérien
+    description: |
+      Émission et gestion des lettres de transport aérien maîtres et maison,
+      y compris la e-LTA.
+  BC-2500.20.10:
+    name: Émission de la lettre de transport aérien maître
+    description: |
+      Émission des lettres de transport aérien maîtres par les compagnies
+      aériennes.
+  BC-2500.20.20:
+    name: Émission de la lettre de transport aérien maison
+    description: |
+      Émission des lettres de transport aérien maison par les commissionnaires
+      et groupeurs.
+  BC-2500.20.30:
+    name: Conversion et maintenance de la e-LTA
+    description: |
+      Conversion des LTA papier en e-LTA et maintenance du cycle de vie.
+  BC-2500.30:
+    name: Gestion des lettres de voiture routières et ferroviaires
+    description: |
+      Émission et gestion des lettres de voiture routières et ferroviaires dans
+      le cadre des régimes CMR et CIM/SMGS.
+  BC-2500.30.10:
+    name: Émission des lettres de voiture CMR
+    description: |
+      Émission des lettres de voiture CMR pour le transport routier international.
+  BC-2500.30.20:
+    name: Émission des lettres de voiture CIM et SMGS
+    description: |
+      Émission des lettres de voiture CIM et SMGS pour le transport ferroviaire
+      international.
+  BC-2500.30.30:
+    name: Émission des lettres de transport domestiques
+    description: |
+      Émission des lettres de transport nationaux et bons de livraison.
+  BC-2500.40:
+    name: Gestion des manifestes et des déclarations de fret
+    description: |
+      Dépôt des manifestes de fret et des déclarations préalables à l'arrivée
+      auprès des douanes, des terminaux et des transporteurs partenaires.
+  BC-2500.40.10:
+    name: Dépôt des manifestes d'arrivée
+    description: |
+      Dépôt des manifestes d'arrivée auprès des terminaux et des douanes.
+  BC-2500.40.20:
+    name: Dépôt des manifestes de départ
+    description: |
+      Dépôt des manifestes de départ auprès des terminaux et des douanes.
+  BC-2500.40.30:
+    name: Déclaration préalable à l'arrivée du fret
+    description: |
+      Déclaration préalable à l'arrivée dans le cadre de régimes tels que
+      ICS2 et CBP ACE.
+  BC-2500.50:
+    name: Gestion de la documentation électronique
+    description: |
+      Exploitation des plateformes de documents de transport électroniques,
+      y compris les échanges eBL et ONE Record.
+  BC-2500.50.10:
+    name: Opérations de connaissement électronique
+    description: |
+      Exploitation des plateformes de connaissement électronique.
+  BC-2500.50.20:
+    name: Opérations e-LTA et ONE Record
+    description: |
+      Exploitation des échanges de données e-LTA et ONE Record.
+  BC-2500.50.30:
+    name: Échange et vérification de documents
+    description: |
+      Échange inter-parties de documents et vérification des signatures et
+      cachets électroniques.

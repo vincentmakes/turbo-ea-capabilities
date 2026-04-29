@@ -1,0 +1,145 @@
+locale: fr
+source: L1-connected-product-firmware-management.yaml
+entries:
+  BC-1950:
+    name: Gestion des produits connectés et du firmware
+    description: |
+      Cycle de vie opérationnel des produits électriques connectés sur le terrain — identité des
+      appareils, construction et publication du firmware, mises à jour OTA, télémétrie,
+      cybersécurité des produits, opérations de plateforme IIoT.
+  BC-1950.10:
+    name: Gestion de l'identité et de l'approvisionnement des appareils
+    description: |
+      Émission et cycle de vie des identités d'appareils et des accréditations cryptographiques.
+  BC-1950.10.10:
+    name: Émission de l'identité de l'appareil
+    description: |
+      Émission d'identités uniques aux appareils à la fabrication.
+  BC-1950.10.20:
+    name: Approvisionnement en clés cryptographiques
+    description: |
+      Approvisionnement en clés cryptographiques sur les appareils.
+  BC-1950.10.30:
+    name: Intégration des appareils à la plateforme
+    description: |
+      Intégration des appareils à la plateforme de produits connectés.
+  BC-1950.10.40:
+    name: Mise hors service des appareils
+    description: |
+      Mise hors service et révocation des accréditations pour les appareils retirés.
+  BC-1950.20:
+    name: Gestion de la construction et de la publication du firmware
+    description: |
+      Pipelines de construction, approbation de publication, signature et inventaire des versions du firmware de production.
+  BC-1950.20.10:
+    name: Gestion du pipeline de construction du firmware
+    description: |
+      Exploitation des pipelines de construction du firmware et d'intégration continue.
+  BC-1950.20.20:
+    name: Approbation de publication du firmware
+    description: |
+      Approbation par jalons des publications de firmware pour déploiement.
+  BC-1950.20.30:
+    name: Gestion de la signature et de l'intégrité du firmware
+    description: |
+      Signature de code et protection de l'intégrité des artefacts de firmware.
+  BC-1950.20.40:
+    name: Inventaire des versions de firmware
+    description: |
+      Inventaire des versions de firmware déployées sur le parc installé.
+  BC-1950.30:
+    name: Gestion des mises à jour OTA
+    description: |
+      Planification, exécution et retour arrière des mises à jour OTA du firmware.
+  BC-1950.30.10:
+    name: Planification des campagnes OTA
+    description: |
+      Planification des campagnes OTA et des cohortes de déploiement.
+  BC-1950.30.20:
+    name: Exécution du déploiement OTA
+    description: |
+      Exécution des déploiements OTA et suivi de l'avancement.
+  BC-1950.30.30:
+    name: Gestion du retour arrière OTA
+    description: |
+      Retour arrière des mises à jour OTA échouées vers des versions fonctionnelles connues.
+  BC-1950.30.40:
+    name: Vérification de la compatibilité OTA
+    description: |
+      Vérification de la compatibilité du firmware avant la publication OTA.
+  BC-1950.40:
+    name: Gestion de la télémétrie et de la connectivité des appareils
+    description: |
+      Ingestion de télémétrie, état de connectivité, routage et gestion des opérateurs ou cartes SIM.
+  BC-1950.40.10:
+    name: Opérations d'ingestion de télémétrie
+    description: |
+      Ingestion de la télémétrie des appareils dans les entrepôts de la plateforme.
+  BC-1950.40.20:
+    name: Surveillance de l'état de connectivité
+    description: |
+      Surveillance de l'état de connectivité et de l'accessibilité des appareils.
+  BC-1950.40.30:
+    name: Routage des données de télémétrie
+    description: |
+      Routage de la télémétrie vers les consommateurs en aval et les analyses.
+  BC-1950.40.40:
+    name: Gestion des opérateurs de réseau et des cartes SIM
+    description: |
+      Gestion des relations avec les opérateurs cellulaires et de l'inventaire des cartes SIM.
+  BC-1950.50:
+    name: Gestion de la cybersécurité des produits connectés
+    description: |
+      Cybersécurité côté produit couvrant les menaces, les vulnérabilités, le démarrage sécurisé et la conformité.
+  BC-1950.50.10:
+    name: Modélisation des menaces produit
+    description: |
+      Modélisation des menaces pour les conceptions de produits connectés.
+  BC-1950.50.20:
+    name: Divulgation et réponse aux vulnérabilités
+    description: |
+      Divulgation coordonnée et réponse aux vulnérabilités des produits.
+  BC-1950.50.30:
+    name: Démarrage sécurisé et attestation
+    description: |
+      Mécanismes de démarrage sécurisé et d'attestation sur les appareils.
+  BC-1950.50.40:
+    name: Conformité en cybersécurité des produits
+    description: |
+      Conformité des produits connectés à IEC 62443 et aux régimes équivalents.
+  BC-1950.60:
+    name: Opérations de la plateforme de produits connectés
+    description: |
+      Exploitation de la plateforme IIoT sous-jacente aux produits connectés.
+  BC-1950.60.10:
+    name: Gestion des locataires de la plateforme IIoT
+    description: |
+      Intégration des locataires et isolation sur la plateforme IIoT.
+  BC-1950.60.20:
+    name: Capacité et performance de la plateforme
+    description: |
+      Planification de la capacité et gestion des performances de la plateforme.
+  BC-1950.60.30:
+    name: Services d'intégration de la plateforme
+    description: |
+      Intégration de la plateforme avec les systèmes d'entreprise et les systèmes clients.
+  BC-1950.60.40:
+    name: Cycle de vie de l'API de la plateforme
+    description: |
+      Cycle de vie des API et SDK exposés par la plateforme.
+  BC-1950.70:
+    name: Gestion des opérations des équipements de périphérie et des passerelles
+    description: |
+      Exploitation des applications de périphérie et des équipements de passerelle sur le terrain.
+  BC-1950.70.10:
+    name: Déploiement des applications de périphérie
+    description: |
+      Déploiement des applications de périphérie sur les passerelles et les contrôleurs.
+  BC-1950.70.20:
+    name: Gestion de la configuration des passerelles
+    description: |
+      Gestion de la configuration des équipements de passerelle sur le terrain.
+  BC-1950.70.30:
+    name: Surveillance de la santé des équipements de périphérie
+    description: |
+      Surveillance de la santé des équipements de périphérie et des applications.

@@ -1,0 +1,106 @@
+locale: fr
+source: L1-freight-rating-tariff-management.yaml
+entries:
+  BC-2520:
+    name: Gestion de la tarification et des barèmes de fret
+    description: |
+      Définition et exploitation des tarifs de fret, barèmes tarifaires, prix
+      contractuels, prix au comptant, accessoires et du moteur de tarification
+      qui calcule le prix des acheminements.
+  BC-2520.10:
+    name: Gestion des tarifs et barèmes de base
+    description: |
+      Définition, publication et gestion des versions des tarifs publics et
+      barèmes de base.
+    in_scope:
+      - Définition du barème de base par corridor et unité
+      - Dépôt de tarifs publics lorsque requis
+    out_of_scope:
+      - Devis orientés client dans le contexte du transit (BC-2450.10)
+      - Méthodes de tarification d'entreprise génériques (BC-440)
+  BC-2520.10.10:
+    name: Définition des tarifs de base
+    description: |
+      Définition des tarifs de fret de base par corridor, unité et niveau
+      de service.
+  BC-2520.10.20:
+    name: Dépôt des tarifs publics
+    description: |
+      Dépôt des tarifs publics auprès des régulateurs et conférences lorsque
+      requis.
+  BC-2520.10.30:
+    name: Gestion des versions des barèmes
+    description: |
+      Contrôle des versions et gestion des dates d'effet des barèmes tarifaires.
+  BC-2520.20:
+    name: Gestion des tarifs contractuels
+    description: |
+      Paramétrage et maintenance des tarifs négociés avec les clients nommés et
+      les engagements de volume.
+  BC-2520.20.10:
+    name: Paramétrage des tarifs contractuels
+    description: |
+      Paramétrage des tarifs négociés dans le cadre de contrats clients nommés.
+  BC-2520.20.20:
+    name: Suivi des engagements de volume
+    description: |
+      Suivi des engagements de volume des clients et des objectifs de quantité
+      minimale.
+  BC-2520.20.30:
+    name: Renouvellement des tarifs contractuels
+    description: |
+      Renouvellement et renégociation des tarifs contractuels arrivant à
+      expiration.
+  BC-2520.30:
+    name: Gestion des tarifs au comptant
+    description: |
+      Tarification, acceptation et comparaison des tarifs de fret au comptant.
+  BC-2520.30.10:
+    name: Devis de tarifs au comptant
+    description: |
+      Établissement de devis de tarifs au comptant par expédition.
+  BC-2520.30.20:
+    name: Acceptation des tarifs au comptant
+    description: |
+      Acceptation et confirmation des réservations à tarif comptant.
+  BC-2520.30.30:
+    name: Comparaison aux indices de tarifs au comptant
+    description: |
+      Comparaison des tarifs au comptant aux indices du marché.
+  BC-2520.40:
+    name: Gestion des accessoires et surcharges
+    description: |
+      Définition et application des accessoires, surcharges, surestaries et
+      tarifs d'immobilisation.
+  BC-2520.40.10:
+    name: Gestion des surcharges carburant
+    description: |
+      Définition et application des surcharges carburant et bunkering.
+  BC-2520.40.20:
+    name: Définition des frais accessoires
+    description: |
+      Définition des frais accessoires pour l'attente, la manutention spéciale
+      et l'équipement.
+  BC-2520.40.30:
+    name: Tarifs de surestaries et d'immobilisation
+    description: |
+      Définition des tarifs de surestaries et d'immobilisation pour l'utilisation
+      des équipements et du terminal.
+  BC-2520.50:
+    name: Gestion des opérations du moteur de tarification
+    description: |
+      Exploitation du moteur de tarification qui calcule et valide les frais de
+      fret sur les commandes et expéditions.
+  BC-2520.50.10:
+    name: Exécution des calculs tarifaires
+    description: |
+      Exécution des calculs tarifaires sur les commandes et expéditions.
+  BC-2520.50.20:
+    name: Distribution des barèmes tarifaires
+    description: |
+      Distribution des barèmes tarifaires aux clients, partenaires et canaux.
+  BC-2520.50.30:
+    name: Audit et validation des tarifs
+    description: |
+      Validation des tarifs appliqués par rapport aux contrats et barèmes de
+      référence.

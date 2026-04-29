@@ -1,0 +1,126 @@
+locale: fr
+source: L1-utility-network-asset-management.yaml
+entries:
+  BC-3900:
+    name: Gestion des actifs de réseau de distribution
+    description: |
+      Gestion sur l'ensemble du cycle de vie des infrastructures de réseau de distribution — électricité, gaz, eau et eaux usées — couvrant l'intégrité du registre des actifs, la surveillance de l'état et de la santé, la cotation des risques et de la criticité, la planification des investissements en lien avec la base d'actifs réglementée, les programmes de renouvellement, le suivi des performances et les enregistrements géospatiaux du réseau.
+  BC-3900.10:
+    name: Gestion du registre des actifs
+    description: |
+      Tenue du registre des actifs de distribution comme source unique de vérité pour les actifs de réseau et leurs relations hiérarchiques.
+  BC-3900.10.10:
+    name: Gestion des données de référence des actifs
+    description: |
+      Gestion des attributs et de la classification des données de référence des actifs.
+  BC-3900.10.20:
+    name: Maintenance de la hiérarchie des actifs
+    description: |
+      Maintenance des hiérarchies fonctionnelles et physiques des actifs de réseau.
+  BC-3900.10.30:
+    name: Réconciliation du registre des actifs
+    description: |
+      Réconciliation entre le registre des actifs, le SIG et les systèmes opérationnels.
+  BC-3900.20:
+    name: Surveillance de l'état et de la santé des actifs
+    description: |
+      Inspection, essais et surveillance en ligne de l'état des actifs alimentant la cotation de la santé et la priorisation.
+  BC-3900.20.10:
+    name: Conduite des programmes d'inspection
+    description: |
+      Programmes d'inspection cycliques des équipements principaux et des actifs de réseau.
+  BC-3900.20.20:
+    name: Surveillance en ligne de l'état des actifs
+    description: |
+      Surveillance en ligne de l'état des transformateurs, câbles et machines tournantes.
+  BC-3900.20.30:
+    name: Cotation de la santé des actifs
+    description: |
+      Calcul des indices de santé des actifs à partir des données d'inspection, d'essais et d'exploitation.
+  BC-3900.30:
+    name: Évaluation des risques et de la criticité des actifs
+    description: |
+      Évaluation quantifiée des risques des actifs combinant probabilité, conséquence et criticité pour prioriser les interventions.
+  BC-3900.30.10:
+    name: Cotation de la criticité des actifs
+    description: |
+      Cotation de la criticité réseau et sociétale des actifs de distribution.
+  BC-3900.30.20:
+    name: Modélisation de la probabilité de défaillance
+    description: |
+      Modélisation statistique et basée sur l'état de la probabilité de défaillance.
+  BC-3900.30.30:
+    name: Calcul du risque monétarisé
+    description: |
+      Calcul du risque monétarisé aligné sur les cadres d'analyse coûts-avantages réglementaires.
+  BC-3900.40:
+    name: Planification des investissements en actifs
+    description: |
+      Planification des investissements à long terme, en cohérence avec les périodes de contrôle tarifaire, sur l'ensemble des catégories réseau pour les programmes réglementés et non réglementés.
+    in_scope:
+      - Élaboration de plans pluriannuels en capital et en totex
+      - Analyse coûts-avantages des interventions sur le réseau
+      - Priorisation du portefeuille d'investissements
+    out_of_scope:
+      - Gouvernance transversale du portefeuille de projets (BC-900)
+      - Planification des recettes tarifaires (BC-3920.30)
+  BC-3900.40.10:
+    name: Planification des investissements en capital
+    description: |
+      Planification pluriannuelle du programme d'investissement réseau par catégorie d'actifs.
+  BC-3900.40.20:
+    name: Analyse coûts-avantages
+    description: |
+      Analyse coûts-avantages des options d'investissement selon les règles de test réglementaires.
+  BC-3900.40.30:
+    name: Priorisation du portefeuille d'investissements
+    description: |
+      Priorisation du portefeuille multi-catégories sous contraintes de capital et de ressources.
+  BC-3900.50:
+    name: Planification du renouvellement et du remplacement des actifs
+    description: |
+      Planification de programmes de renouvellement, de remplacement et de mise hors service en fin de vie sur l'ensemble du parc réseau.
+  BC-3900.50.10:
+    name: Prévision de fin de vie
+    description: |
+      Prévision de la fin de vie des actifs par classe et cohorte.
+  BC-3900.50.20:
+    name: Conception des programmes de renouvellement
+    description: |
+      Conception de programmes pluriannuels de renouvellement par catégorie d'actifs et zone géographique.
+  BC-3900.50.30:
+    name: Planification de la mise hors service du réseau
+    description: |
+      Planification des travaux de mise hors service, d'abandon et de remise en état.
+  BC-3900.60:
+    name: Suivi des performances des actifs
+    description: |
+      Suivi des performances des actifs et de l'utilisation du totex par rapport aux engagements réglementaires et internes.
+  BC-3900.60.10:
+    name: Reporting des KPI de performance réseau
+    description: |
+      Reporting des indicateurs SAIDI, SAIFI, pertes par fuites et équivalents de réseau.
+  BC-3900.60.20:
+    name: Reporting des performances totex
+    description: |
+      Reporting des dépenses totex par rapport aux dotations dans le cadre des régimes de contrôle tarifaire.
+  BC-3900.60.30:
+    name: Analyse des tendances de défaillance des actifs
+    description: |
+      Analyse des tendances de défaillance et de l'efficacité des interventions.
+  BC-3900.70:
+    name: Gestion du SIG et des enregistrements réseau
+    description: |
+      Enregistrements géospatiaux des actifs de réseau — circuits, canalisations, égouts et points de raccordement — et leur intégration avec les systèmes opérationnels.
+  BC-3900.70.10:
+    name: Maintenance des enregistrements SIG du réseau
+    description: |
+      Maintenance des enregistrements SIG de la connectivité du réseau et de la localisation des actifs.
+  BC-3900.70.20:
+    name: Saisie des dossiers de récolement
+    description: |
+      Saisie dans le SIG des modifications issues des projets de construction et de renouvellement.
+  BC-3900.70.30:
+    name: Réponses aux demandes de recherche d'actifs souterrains
+    description: |
+      Réponses aux demandes de recherche d'enregistrements de réseaux souterrains de la part de tiers réalisant des fouilles.

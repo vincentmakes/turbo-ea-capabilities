@@ -1,0 +1,140 @@
+locale: fr
+source: L1-retail-site-network-planning-management.yaml
+entries:
+  BC-2350:
+    name: Gestion de la planification du réseau d'implantations
+    description: |
+      Sélection, dimensionnement et cycle de vie du réseau d'implantations physiques
+      — analyse de la zone de chalandise, choix du format, identification des zones
+      blanches et décisions de cycle de vie magasin par magasin.
+
+  BC-2350.10:
+    name: Analyse de la zone de chalandise et de l'attractivité
+    description: |
+      Délimitation des zones de chalandise, micro-analyse de la fréquentation et
+      de la démographie, et évaluation de la densité concurrentielle pour les sites
+      prospectifs et existants.
+
+  BC-2350.10.10:
+    name: Délimitation de la zone de chalandise
+    description: |
+      Délimitation des zones de chalandise selon le temps de trajet, la densité et
+      les barrières géographiques.
+
+  BC-2350.10.20:
+    name: Micro-analyse démographique
+    description: |
+      Analyse démographique et de style de vie à l'échelle micro de la zone de
+      chalandise.
+
+  BC-2350.10.30:
+    name: Analyse de la fréquentation et de la mobilité
+    description: |
+      Analyse des flux de fréquentation, des données de mobilité et des flux
+      piétonniers.
+
+  BC-2350.10.40:
+    name: Analyse de la densité concurrentielle
+    description: |
+      Analyse de la densité de la concurrence et des parts de zone de chalandise.
+
+  BC-2350.20:
+    name: Gestion du choix du format de magasin
+    description: |
+      Sélection du format de magasin approprié — hypermarché, supermarché, proximité,
+      spécialiste, dark store — pour une zone de chalandise et une stratégie données.
+    in_scope:
+      - Choix du format par zone de chalandise et mission d'achat
+      - Portefeuille de mix de formats sur le réseau
+      - Dimensionnement et superficie par format
+    out_of_scope:
+      - Conception détaillée de l'intérieur du magasin (BC-2310.60)
+
+  BC-2350.20.10:
+    name: Choix du format par zone de chalandise
+    description: |
+      Sélection du format de magasin par zone de chalandise en fonction de la
+      mission d'achat.
+
+  BC-2350.20.20:
+    name: Dimensionnement et superficie du format
+    description: |
+      Dimensionnement de la surface de vente, de l'arrière-boutique et de la
+      superficie totale par format.
+
+  BC-2350.20.30:
+    name: Planification du mix de formats du réseau
+    description: |
+      Planification du mix de formats du réseau et des migrations entre formats.
+
+  BC-2350.30:
+    name: Optimisation de l'empreinte du réseau
+    description: |
+      Optimisation de l'empreinte du réseau via l'identification des zones blanches,
+      l'analyse de la cannibalisation et la couverture globale.
+
+  BC-2350.30.10:
+    name: Identification des zones blanches
+    description: |
+      Identification des zones de chalandise sous-desservies et des opportunités de
+      zones blanches.
+
+  BC-2350.30.20:
+    name: Modélisation de la cannibalisation
+    description: |
+      Modélisation de l'impact de la cannibalisation d'un nouveau magasin sur les
+      magasins existants.
+
+  BC-2350.30.30:
+    name: Optimisation de la couverture et de la portée
+    description: |
+      Optimisation de la couverture et de la portée sur le marché cible.
+
+  BC-2350.40:
+    name: Gestion du cycle de vie de la performance des magasins
+    description: |
+      Décisions de cycle de vie pour chaque magasin — relocalisation, rénovation,
+      déclassement de format ou fermeture en fonction de la performance et de
+      l'évolution de la zone de chalandise.
+
+  BC-2350.40.10:
+    name: Diagnostic de la performance des magasins
+    description: |
+      Diagnostic des magasins sous-performants incluant les évolutions de la zone
+      de chalandise.
+
+  BC-2350.40.20:
+    name: Décisions de relocalisation et de rénovation
+    description: |
+      Décisions de relocalisation ou de rénovation des magasins par rapport aux
+      alternatives.
+
+  BC-2350.40.30:
+    name: Décision de fermeture de magasin
+    description: |
+      Décision de fermeture de magasin incluant l'impact sur les parties prenantes
+      et les stocks.
+
+  BC-2350.50:
+    name: Gestion des dossiers immobiliers commerce
+    description: |
+      Dossiers immobiliers spécifiques au commerce remis aux équipes immobilières
+      d'entreprise pour l'acquisition de sites, la négociation de baux et les sorties.
+    in_scope:
+      - Dossiers de sites spécifiques au commerce
+      - Remise aux équipes d'acquisition immobilière d'entreprise (BC-710.20)
+      - Dossiers de sortie spécifiques au commerce (ex. restrictions commerciales)
+    out_of_scope:
+      - Négociation et administration des baux (BC-710.20, BC-710.30)
+
+  BC-2350.50.10:
+    name: Rédaction des dossiers de site commerce
+    description: |
+      Rédaction des dossiers de site spécifiques au commerce incluant les exigences
+      de format et d'adjacences.
+
+  BC-2350.50.20:
+    name: Rédaction des dossiers de sortie commerce
+    description: |
+      Rédaction des dossiers de sortie spécifiques au commerce incluant la position
+      sur les restrictions commerciales.

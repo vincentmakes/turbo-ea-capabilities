@@ -1,0 +1,101 @@
+locale: fr
+source: L1-freight-forwarding-brokerage-management.yaml
+entries:
+  BC-2450:
+    name: Gestion du transit et du courtage de fret
+    description: |
+      Organisation du transport pour le compte des chargeurs en tant que
+      commissionnaire de transport, NVOCC, courtier en fret ou courtier en douane,
+      incluant la coordination multimodale et les opérations du réseau de partenaires.
+  BC-2450.10:
+    name: Gestion des devis chargeurs
+    description: |
+      Réception des demandes de devis des chargeurs et émission des tarifs du
+      commissionnaire sur les différents modes et transporteurs.
+    in_scope:
+      - Sourcing de tarifs multi-transporteurs pour les demandes de chargeurs
+      - Suivi de la validité et de la confirmation des devis
+    out_of_scope:
+      - Gestion des barèmes tarifaires côté transporteur (BC-2520)
+  BC-2450.10.10:
+    name: Saisie des demandes de devis
+    description: |
+      Saisie des demandes de devis des chargeurs sur tous les canaux.
+  BC-2450.10.20:
+    name: Recherche de tarifs multi-transporteurs
+    description: |
+      Recherche et comparaison des tarifs auprès des transporteurs sous-jacents.
+  BC-2450.10.30:
+    name: Émission et validité des devis
+    description: |
+      Émission de devis fermes et indicatifs et suivi de leur validité.
+  BC-2450.20:
+    name: Gestion des achats et allocations transporteurs
+    description: |
+      Réservation de capacité auprès des transporteurs sous-jacents et gestion
+      des allocations et des dépenses transporteurs.
+  BC-2450.20.10:
+    name: Sélection du transporteur
+    description: |
+      Sélection des transporteurs sous-jacents par expédition.
+  BC-2450.20.20:
+    name: Exécution des réservations transporteurs
+    description: |
+      Réservation de capacité auprès des transporteurs sélectionnés.
+  BC-2450.20.30:
+    name: Optimisation des dépenses d'allocation
+    description: |
+      Optimisation des dépenses du commissionnaire sur les allocations
+      transporteurs.
+  BC-2450.30:
+    name: Coordination du transit multimodal
+    description: |
+      Coordination des acheminements multi-tronçons et multimodaux, incluant
+      le groupage, le dégroupage et les connaissements maison.
+  BC-2450.30.10:
+    name: Émission du connaissement maison
+    description: |
+      Émission des connaissements maison du commissionnaire pour les chargeurs.
+  BC-2450.30.20:
+    name: Coordination des acheminements multi-tronçons
+    description: |
+      Coordination des acheminements multi-tronçons entre transporteurs et modes.
+  BC-2450.30.30:
+    name: Groupage et dégroupage
+    description: |
+      Groupage de marchandises à l'origine et dégroupage à destination.
+  BC-2450.40:
+    name: Gestion du courtage en douane
+    description: |
+      Prestation de services de courtage en douane pour le compte des importateurs
+      et exportateurs.
+  BC-2450.40.10:
+    name: Préparation des déclarations douanières
+    description: |
+      Préparation des déclarations douanières pour le compte des clients.
+  BC-2450.40.20:
+    name: Calcul des droits et taxes
+    description: |
+      Calcul et décaissement des droits et taxes indirectes pour les clients.
+  BC-2450.40.30:
+    name: Suivi de l'avancement du courtage
+    description: |
+      Suivi de l'avancement des opérations de courtage et résolution des
+      exceptions.
+  BC-2450.50:
+    name: Coordination du réseau de commissionnaires
+    description: |
+      Coordination avec les agents d'origine, de destination et partenaires du
+      réseau de commissionnaires, y compris le règlement inter-bureaux.
+  BC-2450.50.10:
+    name: Coordination avec les agents d'origine et de destination
+    description: |
+      Coordination des activités avec les agents d'origine et de destination.
+  BC-2450.50.20:
+    name: Règlement inter-bureaux
+    description: |
+      Règlement inter-bureaux et inter-agents des revenus et coûts de transit.
+  BC-2450.50.30:
+    name: Gestion des performances des agents partenaires
+    description: |
+      Gestion de la qualité de service et de la conformité des agents partenaires.

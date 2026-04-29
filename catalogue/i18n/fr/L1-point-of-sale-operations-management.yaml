@@ -1,0 +1,200 @@
+locale: fr
+source: L1-point-of-sale-operations-management.yaml
+entries:
+  BC-2320:
+    name: Gestion des opérations en point de vente
+    description: |
+      Couche transactionnelle orientée client de la distribution — enregistrement
+      des ventes, acceptation des moyens de paiement, retours et remboursements,
+      gestion des espèces, configuration du PDV et continuité des ventes lors
+      d'interruptions système.
+
+  BC-2320.10:
+    name: Gestion des transactions de vente
+    description: |
+      Saisie des transactions de vente incluant la constitution du panier,
+      la lecture en caisse, l'application des promotions, le traitement de la taxe
+      et les tickets dématérialisés.
+    in_scope:
+      - Constitution du panier et lecture des articles en caisse
+      - Application des promotions et de la fidélité à la caisse
+      - Calcul de la taxe et émission de tickets papier ou dématérialisés
+    out_of_scope:
+      - Conception des promotions (BC-440.30)
+      - Paiement en ligne (BC-2330)
+
+  BC-2320.10.10:
+    name: Lecture des articles et constitution du panier
+    description: |
+      Lecture des articles et constitution du panier à la caisse, incluant les
+      articles au poids.
+
+  BC-2320.10.20:
+    name: Application des promotions et de la fidélité
+    description: |
+      Application des promotions, coupons et utilisations de points de fidélité lors
+      de la vente.
+
+  BC-2320.10.30:
+    name: Traitement de la taxe sur les ventes et de la TVA
+    description: |
+      Calcul de la taxe sur les ventes, de la TVA et des règles spécifiques aux
+      juridictions à la caisse.
+
+  BC-2320.10.40:
+    name: Émission du ticket et du ticket dématérialisé
+    description: |
+      Émission des tickets papier et dématérialisés incluant le rattachement au
+      compte client.
+
+  BC-2320.20:
+    name: Gestion de l'acceptation des moyens de paiement
+    description: |
+      Acceptation des moyens de paiement à la caisse incluant EMV, sans contact,
+      portefeuilles mobiles, cartes cadeaux et méthodes de paiement alternatives,
+      dans le respect de la norme PCI-DSS.
+
+  BC-2320.20.10:
+    name: Acceptation des paiements par carte et sans contact
+    description: |
+      Acceptation des paiements EMV, sans contact et par portefeuille mobile aux
+      caisses.
+
+  BC-2320.20.20:
+    name: Acceptation des espèces et chèques
+    description: |
+      Acceptation des espèces, monnaie et chèques incluant la gestion des
+      coupures.
+
+  BC-2320.20.30:
+    name: Acceptation des cartes cadeaux et valeurs stockées
+    description: |
+      Acceptation et émission de cartes cadeaux et d'instruments à valeur stockée.
+
+  BC-2320.20.40:
+    name: Acceptation des moyens de paiement alternatifs
+    description: |
+      Acceptation des solutions acheter-maintenant-payer-plus-tard, QR et autres
+      modes de paiement alternatifs.
+
+  BC-2320.20.50:
+    name: Opérations de conformité PCI-DSS
+    description: |
+      Traitement conforme à la norme PCI-DSS des données des porteurs de cartes au
+      point de vente.
+
+  BC-2320.30:
+    name: Gestion des retours, remboursements et échanges
+    description: |
+      Traitement en magasin des retours, remboursements et échanges consommateurs
+      incluant le remboursement sur le moyen de paiement d'origine, l'avoir en magasin
+      et les cas multicanaux.
+    in_scope:
+      - Retours et remboursements consommateurs en magasin
+      - Gestion des avoirs en magasin et des échanges
+      - Retours en magasin des commandes passées en ligne
+    out_of_scope:
+      - Logistique inverse vers le centre de distribution (BC-520.40.40)
+
+  BC-2320.30.10:
+    name: Acceptation des retours consommateurs
+    description: |
+      Acceptation des retours consommateurs à la caisse conformément à la politique
+      de retour.
+
+  BC-2320.30.20:
+    name: Émission des remboursements et avoirs en magasin
+    description: |
+      Émission des remboursements sur le moyen de paiement d'origine ou sous forme
+      d'avoir en magasin.
+
+  BC-2320.30.30:
+    name: Traitement des transactions d'échange
+    description: |
+      Transactions d'échange à valeur identique ou différente incluant la
+      réconciliation des écarts de prix.
+
+  BC-2320.30.40:
+    name: Traitement des retours multicanaux
+    description: |
+      Acceptation en magasin des commandes passées sur d'autres canaux pour retour.
+
+  BC-2320.40:
+    name: Gestion des espèces et des moyens de paiement au PDV
+    description: |
+      Procédures de gestion du tiroir-caisse, du coffre, des dépôts et de la
+      réconciliation des encaissements en fin de journée pour protéger les recettes.
+
+  BC-2320.40.10:
+    name: Gestion du tiroir-caisse
+    description: |
+      Ouverture, surveillance et réconciliation des tiroirs-caisses.
+
+  BC-2320.40.20:
+    name: Opérations de coffre et de prélèvement en magasin
+    description: |
+      Gestion du coffre, prélèvements en cours de journée et préparation des
+      transferts sécurisés.
+
+  BC-2320.40.30:
+    name: Réconciliation des encaissements en fin de journée
+    description: |
+      Réconciliation de tous les moyens de paiement par rapport aux enregistrements
+      PDV en fin de journée.
+
+  BC-2320.40.40:
+    name: Préparation des remises bancaires
+    description: |
+      Préparation des remises bancaires et remise aux convoyeurs de fonds.
+
+  BC-2320.50:
+    name: Gestion de la configuration du PDV
+    description: |
+      Configuration des moyens de paiement, des règles fiscales, de la logique
+      promotionnelle, des périphériques et du comportement des caisses dans
+      l'ensemble des magasins.
+
+  BC-2320.50.10:
+    name: Configuration des moyens de paiement
+    description: |
+      Configuration des moyens de paiement acceptés, des limites et de
+      l'acheminement par magasin.
+
+  BC-2320.50.20:
+    name: Configuration des règles fiscales
+    description: |
+      Configuration des règles fiscales et des dérogations juridictionnelles par
+      magasin.
+
+  BC-2320.50.30:
+    name: Configuration du moteur promotionnel
+    description: |
+      Configuration du moteur promotionnel PDV et des règles de priorisation des
+      offres.
+
+  BC-2320.50.40:
+    name: Configuration des périphériques PDV
+    description: |
+      Configuration des balances, scanners, imprimantes et claviers PIN à la caisse.
+
+  BC-2320.60:
+    name: Résilience et opérations hors ligne du PDV
+    description: |
+      Continuité des ventes lors de ruptures de connectivité ou d'interruptions
+      système, incluant le PDV hors ligne, le mode store-and-forward et la gestion
+      des files d'attente.
+
+  BC-2320.60.10:
+    name: Opération du PDV en mode hors ligne
+    description: |
+      Poursuite du fonctionnement du PDV en cas de perte de connectivité.
+
+  BC-2320.60.20:
+    name: Traitement des transactions en mode store-and-forward
+    description: |
+      Stockage et transfert des transactions hors ligne à la reconnexion.
+
+  BC-2320.60.30:
+    name: Gestion des files d'attente en cas d'interruption
+    description: |
+      Gestion des files d'attente clients lors d'interruptions du système de caisse.

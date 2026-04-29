@@ -1,0 +1,132 @@
+locale: fr
+source: L1-saas-trust-service-compliance-management.yaml
+entries:
+  BC-4290:
+    name: Gestion de la conformité de confiance et de service SaaS
+    description: |
+      Attestations de niveau de service, questionnaires de sécurité clients,
+      divulgations publiques de confiance, gestion des sous-traitants,
+      engagements de confidentialité du service et engagements de résilience
+      du service pour l'offre SaaS.
+  BC-4290.10:
+    name: Gestion des attestations de service
+    description: |
+      Coordination des attestations de niveau de service telles que SOC 2,
+      ISO 27001 et FedRAMP pour l'offre SaaS.
+    in_scope:
+      - Préparation aux audits du service
+      - Engagement des auditeurs et production des rapports
+    out_of_scope:
+      - Programme de conformité à l'échelle de l'entreprise (couvert par la gestion de la conformité)
+  BC-4290.10.10:
+    name: Coordination de la préparation aux audits
+    description: |
+      Coordination de la préparation aux audits auprès des responsables de
+      contrôle pour le service.
+  BC-4290.10.20:
+    name: Engagement des auditeurs
+    description: |
+      Engagement des auditeurs externes et gestion des travaux d'audit.
+  BC-4290.10.30:
+    name: Gestion du renouvellement des attestations
+    description: |
+      Gestion des cycles de renouvellement des attestations et des arrangements
+      d'audit en continu.
+  BC-4290.20:
+    name: Gestion des questionnaires de sécurité clients
+    description: |
+      Gestion du référentiel de questionnaires, rédaction des réponses et
+      base de connaissances utilisée pour répondre aux évaluations des risques
+      fournisseurs clients.
+  BC-4290.20.10:
+    name: Gestion du référentiel de questionnaires
+    description: |
+      Maintenance du référentiel de questionnaires entrants et acheminement
+      des réponses.
+  BC-4290.20.20:
+    name: Rédaction des réponses aux questionnaires
+    description: |
+      Rédaction des réponses aux questionnaires de sécurité clients.
+  BC-4290.20.30:
+    name: Maintenance de la base de connaissances des questionnaires
+    description: |
+      Maintenance d'une base de connaissances organisée de réponses approuvées
+      et d'éléments de preuve.
+  BC-4290.30:
+    name: Portail de confiance et divulgation publique
+    description: |
+      Exploitation du portail de confiance client, des divulgations publiques
+      de statut et des workflows de distribution de documents.
+  BC-4290.30.10:
+    name: Gestion du contenu du portail de confiance
+    description: |
+      Curation du contenu publié sur le portail de confiance client.
+  BC-4290.30.20:
+    name: Divulgation publique du statut
+    description: |
+      Divulgation publique du statut des incidents et de l'historique de
+      disponibilité du service.
+  BC-4290.30.30:
+    name: Workflow de distribution des documents
+    description: |
+      Distribution contrôlée des rapports d'audit et des documents de confiance
+      aux clients.
+  BC-4290.40:
+    name: Gestion des sous-traitants
+    description: |
+      Inventaire, divulgation et notification des modifications des sous-traitants
+      traitant les données clients.
+  BC-4290.40.10:
+    name: Inventaire des sous-traitants
+    description: |
+      Inventaire des sous-traitants et des catégories de données clients
+      qu'ils traitent.
+  BC-4290.40.20:
+    name: Divulgation des sous-traitants
+    description: |
+      Divulgation aux clients de la liste actuelle des sous-traitants.
+  BC-4290.40.30:
+    name: Notification des changements de sous-traitants
+    description: |
+      Notification préalable des ajouts et suppressions de sous-traitants
+      conformément aux contrats.
+  BC-4290.50:
+    name: Gestion des engagements de confidentialité du service
+    description: |
+      Gestion des avenants de traitement des données, des divulgations des flux
+      de données clients et de l'acheminement des demandes des personnes concernées.
+  BC-4290.50.10:
+    name: Gestion des avenants de traitement des données
+    description: |
+      Maintenance et exécution des avenants de traitement des données
+      avec les clients.
+  BC-4290.50.20:
+    name: Cartographie des flux de données clients
+    description: |
+      Cartographie des flux de données clients à des fins de divulgation
+      et d'évaluation.
+  BC-4290.50.30:
+    name: Acheminement des demandes des personnes concernées
+    description: |
+      Acheminement des demandes des personnes concernées reçues via les clients
+      vers les gestionnaires appropriés.
+  BC-4290.60:
+    name: Gestion des engagements de résilience du service
+    description: |
+      Engagements de niveau de service orientés clients, divulgation de la
+      disponibilité et administration des crédits de service.
+  BC-4290.60.10:
+    name: Gestion des engagements de niveau de service
+    description: |
+      Définition et gestion des engagements de niveau de service orientés
+      clients.
+  BC-4290.60.20:
+    name: Divulgation de la disponibilité
+    description: |
+      Divulgation de la disponibilité historique par rapport aux niveaux
+      d'engagement.
+  BC-4290.60.30:
+    name: Administration des crédits de service
+    description: |
+      Administration des crédits de service découlant du non-respect
+      des engagements.

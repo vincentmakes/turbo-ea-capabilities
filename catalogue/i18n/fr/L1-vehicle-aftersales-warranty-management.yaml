@@ -1,0 +1,138 @@
+locale: fr
+source: L1-vehicle-aftersales-warranty-management.yaml
+entries:
+  BC-3450:
+    name: Gestion de l'après-vente et de la garantie véhicule
+    description: |
+      Après-vente côté constructeur — opérations et adjudication de garantie, gestion des rappels et campagnes de service, informations techniques de service, assistance client et boucle de retour vers l'ingénierie, fondées sur le Magnuson-Moss, les règles UE sur la vente aux consommateurs et les régimes de rappel NHTSA/UE.
+  BC-3450.10:
+    name: Gestion de la politique de garantie et des réclamations
+    description: |
+      Définition des politiques de garantie et adjudication des réclamations de garantie des concessionnaires, incluant la récupération auprès des fournisseurs.
+  BC-3450.10.10:
+    name: Définition de la politique de garantie
+    description: |
+      Définition des conditions, durées, couvertures et exclusions de garantie sur les marchés et les lignes de produits.
+  BC-3450.10.20:
+    name: Adjudication des réclamations de garantie
+    description: |
+      Adjudication des réclamations de garantie des concessionnaires incluant les barèmes de temps de main-d'œuvre et la validation des pièces.
+  BC-3450.10.30:
+    name: Gestion des gestes commerciaux et concessions
+    description: |
+      Gestion des réparations de geste commercial, des concessions et des extensions de garantie fidélité client.
+  BC-3450.10.40:
+    name: Gestion de la récupération fournisseur
+    description: |
+      Récupération des coûts de garantie auprès des fournisseurs responsables dans le cadre des accords de partage des coûts de garantie.
+  BC-3450.20:
+    name: Gestion des campagnes de service et des rappels
+    description: |
+      Gestion de bout en bout des rappels de sécurité et des campagnes de service non liées à la sécurité, incluant la notification et le suivi des taux de réalisation.
+  BC-3450.20.10:
+    name: Décision et notification de rappel
+    description: |
+      Prise de décision et notification légale des rappels de sécurité aux autorités et aux propriétaires.
+  BC-3450.20.20:
+    name: Planification des campagnes de service
+    description: |
+      Planification des campagnes de service incluant la définition du remède, l'approvisionnement en pièces et les instructions aux concessionnaires.
+  BC-3450.20.30:
+    name: Gestion de la notification des propriétaires
+    description: |
+      Identification et notification des propriétaires de véhicules concernés par courrier, e-mail et canaux embarqués.
+  BC-3450.20.40:
+    name: Suivi du taux de réalisation des campagnes
+    description: |
+      Suivi des taux de réalisation des rappels et campagnes et obligations de reporting réglementaire.
+  BC-3450.30:
+    name: Gestion des informations techniques de service
+    description: |
+      Rédaction et diffusion des procédures de réparation, bulletins techniques et informations de diagnostic pour le réseau de service des concessionnaires.
+  BC-3450.30.10:
+    name: Rédaction des procédures de réparation
+    description: |
+      Rédaction des procédures de réparation véhicule, vues éclatées et données de couple/serrage.
+  BC-3450.30.20:
+    name: Gestion des bulletins de service technique
+    description: |
+      Rédaction, diffusion et gestion du cycle de vie des bulletins de service technique.
+  BC-3450.30.30:
+    name: Gestion de la bibliothèque de codes de défaut
+    description: |
+      Maintenance des bibliothèques de DTC, des arbres de diagnostic et du contenu de diagnostic guidé associé.
+  BC-3450.30.40:
+    name: Spécification des outillages de service
+    description: |
+      Spécification des outils spéciaux et des équipements de service des concessionnaires pour les opérations de service véhicule.
+  BC-3450.40:
+    name: Opérations de diagnostic et de service télématique véhicule
+    description: |
+      Opérations du constructeur supportant le diagnostic connecté, les données de diagnostic à distance et les écosystèmes d'outillage de diagnostic des concessionnaires.
+  BC-3450.40.10:
+    name: Opérations de diagnostic véhicule à distance
+    description: |
+      Exploitation des services de santé et de diagnostic véhicule à distance en support au service des concessionnaires.
+  BC-3450.40.20:
+    name: Gestion des mises à jour des outils de diagnostic
+    description: |
+      Gestion des logiciels d'outillage de diagnostic des concessionnaires, des données de calibration et des accès sécurisés.
+  BC-3450.40.30:
+    name: Agrégation des données de service
+    description: |
+      Agrégation et analyse des données d'événements de service provenant des concessionnaires et des véhicules connectés.
+  BC-3450.50:
+    name: Assistance client et opérations d'assistance routière
+    description: |
+      Services d'assistance client sous marque constructeur incluant l'assistance routière, la mobilité de remplacement et le rapatriement de véhicule.
+  BC-3450.50.10:
+    name: Opérations d'assistance routière
+    description: |
+      Exploitation de l'assistance routière sous marque constructeur pour les pannes et les interventions sur incident.
+  BC-3450.50.20:
+    name: Coordination de la mobilité de remplacement
+    description: |
+      Coordination du transport de remplacement pour les clients pendant les réparations ou les pannes.
+  BC-3450.50.30:
+    name: Coordination du rapatriement de véhicule
+    description: |
+      Coordination du rapatriement des véhicules suite à des incidents à l'étranger ou des pannes à longue distance.
+  BC-3450.60:
+    name: Coordination de la logistique des pièces après-vente
+    description: |
+      Coordination avec la chaîne d'approvisionnement en pièces détachées pour répondre à la demande de service des concessionnaires et aux remèdes de rappel.
+    in_scope:
+      - Coordination de la demande et de l'offre en pièces avec les concessionnaires
+      - Accélération des pièces critiques pour les véhicules immobilisés
+      - Allocation des pièces de rappel dans les réseaux de concessionnaires
+    out_of_scope:
+      - Catalogue de pièces détachées et tarification (BC-1060 Gestion des pièces et de l'après-marché)
+      - Opérations d'entreposage et de distribution physique des pièces (BC-1060)
+  BC-3450.60.10:
+    name: Coordination de la demande en pièces avec les concessionnaires
+    description: |
+      Coordination de la visibilité de la demande en pièces des concessionnaires et des signaux de réapprovisionnement vers la chaîne d'approvisionnement.
+  BC-3450.60.20:
+    name: Gestion de l'accélération des pièces critiques
+    description: |
+      Accélération des pièces critiques pour les véhicules immobilisés et les cas clients de haute gravité.
+  BC-3450.60.30:
+    name: Allocation des pièces de rappel
+    description: |
+      Allocation des pièces de rappel en tension aux concessionnaires et marchés selon les priorités de la population concernée.
+  BC-3450.70:
+    name: Performance après-vente et retour qualité
+    description: |
+      Analyse des tendances de défaillance terrain et des retours clients, et orientation des problèmes vers l'ingénierie et la production.
+  BC-3450.70.10:
+    name: Analyse des tendances de défaillance terrain
+    description: |
+      Analyse des données de garantie et d'événements de service pour identifier les tendances de défaillance terrain et les problèmes émergents.
+  BC-3450.70.20:
+    name: Gestion de la voix du client après-vente
+    description: |
+      Capture et analyse de la voix du client après-vente incluant les enquêtes et les retours enregistrés par les concessionnaires.
+  BC-3450.70.30:
+    name: Gestion de la boucle de retour vers l'ingénierie
+    description: |
+      Orientation des problèmes de qualité terrain vers l'ingénierie pour confinement, correction et retour d'expérience.

@@ -1,0 +1,156 @@
+locale: fr
+source: L1-energy-trading-settlement-management.yaml
+entries:
+  BC-3850:
+    name: Gestion du trading d'énergie et du règlement
+    description: |
+      Trading de gros d'électricité, de gaz et de matières premières
+      environnementales — participation aux marchés en J-1, infrajournalier et
+      d'équilibrage, gestion des risques énergétiques, planification et
+      nominations, participation au marché de capacité, et règlement back-office
+      et reporting réglementaire dans le cadre des régimes REMIT / EMIR /
+      Dodd-Frank.
+  BC-3850.10:
+    name: Trading de gros d'électricité
+    description: |
+      Trading front-office d'électricité physique et financière sur les marchés
+      en J-1, infrajournalier et à terme.
+  BC-3850.10.10:
+    name: Trading sur le marché en J-1
+    description: |
+      Soumission et gestion des offres d'achat et de vente sur le marché en J-1.
+  BC-3850.10.20:
+    name: Trading infrajournalier
+    description: |
+      Trading infrajournalier en continu et aux enchères en réponse aux
+      évolutions de position.
+  BC-3850.10.30:
+    name: Trading à terme et bilatéral
+    description: |
+      Trading physique à terme et bilatéral OTC pour la couverture et
+      l'origination.
+  BC-3850.10.40:
+    name: Trading de capacité transfrontalière
+    description: |
+      Trading des produits de capacité d'interconnexion transfrontalière.
+  BC-3850.20:
+    name: Gestion des risques énergétiques
+    description: |
+      Surveillance des risques de marché, de contrepartie et opérationnels du
+      portefeuille de trading avec administration des limites et tests de stress.
+    in_scope:
+      - Calcul de la VaR et des résultats à risque
+      - Gestion des limites de crédit contrepartie
+      - Tests d'efficacité des couvertures
+    out_of_scope:
+      - Gestion des risques d'entreprise (BC-120)
+      - Risque de crédit clients détail (BC-3910)
+  BC-3850.20.10:
+    name: Surveillance du risque de marché
+    description: |
+      Surveillance de la VaR, des résultats à risque et des expositions du
+      portefeuille de trading.
+  BC-3850.20.20:
+    name: Gestion du risque de crédit contrepartie
+    description: |
+      Limites de crédit contrepartie, collatéral et surveillance des expositions.
+  BC-3850.20.30:
+    name: Gestion du programme de couverture
+    description: |
+      Conception et exécution des programmes de couverture des expositions
+      combustible et électricité.
+  BC-3850.30:
+    name: Gestion des positions et planification
+    description: |
+      Agrégation des positions de trading et physiques et soumission des
+      programmes et nominations aux opérateurs de réseau et de pipeline.
+  BC-3850.30.10:
+    name: Agrégation des positions de trading
+    description: |
+      Agrégation des positions sur les produits, portefeuilles et contreparties.
+  BC-3850.30.20:
+    name: Soumission des programmes d'électricité
+    description: |
+      Soumission des programmes d'électricité physique aux GRT et responsables
+      d'équilibre.
+  BC-3850.30.30:
+    name: Soumission des nominations de gaz
+    description: |
+      Soumission des nominations de gaz et rééquilibrage sur les pipelines de
+      transport.
+  BC-3850.40:
+    name: Participation au marché de capacité
+    description: |
+      Participation aux mécanismes de marché de capacité et de sécurité
+      d'approvisionnement, incluant la stratégie d'enchères, la qualification et
+      le suivi de livraison.
+  BC-3850.40.10:
+    name: Stratégie d'enchères de capacité
+    description: |
+      Stratégie et préparation des offres pour les enchères de marché de
+      capacité.
+  BC-3850.40.20:
+    name: Qualification des fournisseurs de capacité
+    description: |
+      Qualification des actifs et gestion des facteurs de déclassement pour
+      les produits de capacité.
+  BC-3850.40.30:
+    name: Surveillance de la livraison de capacité
+    description: |
+      Surveillance de la livraison de capacité lors des événements de stress et
+      exposition aux pénalités.
+  BC-3850.50:
+    name: Trading de matières premières environnementales
+    description: |
+      Trading et restitution de quotas de carbone, certificats d'énergie
+      renouvelable, garanties d'origine et certificats blancs.
+  BC-3850.50.10:
+    name: Trading de quotas de carbone
+    description: |
+      Trading d'EUA, CCA et autres quotas de carbone de conformité.
+  BC-3850.50.20:
+    name: Trading de certificats d'énergie renouvelable
+    description: |
+      Trading de REC, ROC et garanties d'origine.
+  BC-3850.50.30:
+    name: Opérations sur certificats blancs
+    description: |
+      Trading et restitution de certificats blancs d'efficacité énergétique.
+  BC-3850.60:
+    name: Opérations de règlement des transactions
+    description: |
+      Confirmation back-office, calcul du règlement, facturation et gestion de
+      trésorerie des transactions d'énergie en gros.
+  BC-3850.60.10:
+    name: Confirmation des transactions
+    description: |
+      Confirmations de transactions sortantes et entrantes et résolution des
+      écarts.
+  BC-3850.60.20:
+    name: Calcul du règlement
+    description: |
+      Calcul des montants de règlement physiques et financiers par contrat.
+  BC-3850.60.30:
+    name: Facturation et gestion de trésorerie des transactions
+    description: |
+      Facturation, paiement et rapprochement des flux de trésorerie des
+      transactions de gros.
+  BC-3850.70:
+    name: Reporting réglementaire des transactions
+    description: |
+      Reporting réglementaire des transactions d'énergie en gros dans le cadre
+      des régimes REMIT, EMIR, MiFID II et Dodd-Frank.
+  BC-3850.70.10:
+    name: Reporting des transactions REMIT
+    description: |
+      Reporting des transactions d'énergie en gros tableaux 1 et 2 à l'ACER.
+  BC-3850.70.20:
+    name: Reporting EMIR et Dodd-Frank
+    description: |
+      Déclaration des transactions dérivées aux référentiels centraux selon
+      EMIR et Dodd-Frank.
+  BC-3850.70.30:
+    name: Divulgation des informations privilégiées
+    description: |
+      Divulgation des informations privilégiées conformément à l'article 4 du
+      REMIT.

@@ -1,0 +1,159 @@
+locale: fr
+source: L1-telecom-billing-revenue-management.yaml
+entries:
+  BC-2660:
+    name: Gestion de la facturation et des revenus télécom
+    description: |
+      Médiation, facturation, tarification, présentation des factures,
+      recouvrement, assurance des revenus et traitement des taxes et surcharges
+      spécifiques aux télécoms sur les services prépayés, postpayés et convergents.
+  BC-2660.10:
+    name: Gestion de la médiation des usages
+    description: |
+      Collecte, normalisation et routage des enregistrements d'utilisation depuis
+      les éléments réseau vers les systèmes de facturation et de tarification.
+  BC-2660.10.10:
+    name: Collecte des CDR
+    description: |
+      Collecte des enregistrements détaillés d'appels, sessions et événements
+      depuis les éléments réseau et sources IPDR.
+  BC-2660.10.20:
+    name: Enrichissement des CDR
+    description: |
+      Enrichissement des CDR avec les données abonné, tarifaires et de référence
+      nécessaires en aval.
+  BC-2660.10.30:
+    name: Déduplication des CDR
+    description: |
+      Détection et suppression des enregistrements d'utilisation en double.
+  BC-2660.10.40:
+    name: Conversion du format des CDR
+    description: |
+      Conversion des formats de CDR entre les sources de collecte et les
+      consommateurs en aval.
+  BC-2660.20:
+    name: Gestion de la tarification et de la taxation
+    description: |
+      Facturation en ligne et hors ligne, tarification, gestion des soldes et
+      rechargement sur les modèles prépayés et postpayés.
+  BC-2660.20.10:
+    name: Gestion de la facturation en ligne
+    description: |
+      Facturation en temps réel des sessions et événements par rapport au solde
+      et à la politique de l'abonné.
+  BC-2660.20.20:
+    name: Gestion de la facturation hors ligne
+    description: |
+      Tarification hors ligne des enregistrements d'utilisation et d'événements
+      pour la facturation postpayée.
+  BC-2660.20.30:
+    name: Gestion des soldes
+    description: |
+      Gestion des soldes principaux et dédiés, des accumulateurs et des quotas
+      des abonnés.
+  BC-2660.20.40:
+    name: Gestion des bons et rechargements
+    description: |
+      Émission, distribution et remboursement de bons et de rechargements
+      électroniques.
+  BC-2660.30:
+    name: Gestion des opérations de facturation
+    description: |
+      Exécution des cycles de facturation, calcul des factures et gestion des
+      ajustements et corrections.
+  BC-2660.30.10:
+    name: Exécution des cycles de facturation
+    description: |
+      Exécution des cycles de facturation planifiés et des cycles ad hoc.
+  BC-2660.30.20:
+    name: Calcul des factures
+    description: |
+      Calcul des frais, taxes et ajustements sur tous les composants du compte.
+  BC-2660.30.30:
+    name: Ajustement des factures
+    description: |
+      Application des ajustements approuvés aux factures, incluant les crédits
+      et renonciations.
+  BC-2660.30.40:
+    name: Correction des factures
+    description: |
+      Correction des factures incorrectes par re-facturation ou ajustements
+      compensatoires.
+  BC-2660.40:
+    name: Gestion de la présentation et des demandes de facturation
+    description: |
+      Présentation des factures en plusieurs formats et résolution des demandes
+      et litiges des clients.
+  BC-2660.40.10:
+    name: Présentation des factures
+    description: |
+      Production et distribution des factures en formats papier, PDF et
+      numérique.
+  BC-2660.40.20:
+    name: Demandes de factures détaillées
+    description: |
+      Traitement des demandes de détail et initiation des litiges par les clients.
+  BC-2660.40.30:
+    name: Explication des factures
+    description: |
+      Explication et visualisation des composants de facture pour les clients
+      et les agents de service.
+  BC-2660.50:
+    name: Gestion des recouvrements télécom
+    description: |
+      Flux de relance, suspension, déconnexion et recouvrement de créances
+      spécifiques aux télécoms.
+  BC-2660.50.10:
+    name: Flux de relance
+    description: |
+      Flux de relance multi-étapes pour les comptes postpayés en retard de
+      paiement.
+  BC-2660.50.20:
+    name: Suspension et déconnexion des services
+    description: |
+      Suspension partielle, déconnexion totale et réactivation des services
+      pour soldes impayés.
+  BC-2660.50.30:
+    name: Coordination du recouvrement de créances
+    description: |
+      Coordination avec les agences de recouvrement internes et tierces.
+  BC-2660.60:
+    name: Gestion de l'assurance des revenus
+    description: |
+      Détection, quantification et remédiation des fuites de revenus sur
+      l'ensemble de la chaîne de revenus.
+  BC-2660.60.10:
+    name: Détection des fuites de revenus
+    description: |
+      Détection des fuites entre l'utilisation réseau, la médiation, la
+      facturation, la taxation et la comptabilité.
+  BC-2660.60.20:
+    name: Vérification de l'exactitude de la facturation
+    description: |
+      Vérification par échantillonnage et exhaustive de l'exactitude des
+      factures par rapport aux événements source.
+  BC-2660.60.30:
+    name: Réconciliation réseau-facturation
+    description: |
+      Réconciliation de bout en bout des événements enregistrés réseau avec
+      les revenus facturés.
+  BC-2660.70:
+    name: Gestion des taxes et surcharges télécom
+    description: |
+      Calcul et versement des taxes, surcharges et redevances réglementaires
+      spécifiques aux télécoms.
+  BC-2660.70.10:
+    name: Surcharge pour le service universel
+    description: |
+      Calcul, facturation et versement des contributions au fonds pour le service
+      universel.
+  BC-2660.70.20:
+    name: Taxe d'accise télécom
+    description: |
+      Calcul et versement des taxes d'accise et taxes spécifiques aux
+      communications.
+  BC-2660.70.30:
+    name: Provisionnement des redevances réglementaires
+    description: |
+      Provisionnement et versement des redevances réglementaires récurrentes
+      liées aux comptages d'abonnés et de revenus.

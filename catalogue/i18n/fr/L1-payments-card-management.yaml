@@ -1,0 +1,143 @@
+locale: fr
+source: L1-payments-card-management.yaml
+entries:
+  BC-1340:
+    name: Gestion des paiements et des cartes
+    description: |
+      Initiation, traitement et compensation/règlement des paiements, émission de cartes et traitement des transactions.
+  BC-1340.10:
+    name: Gestion de l'initiation des paiements
+    description: |
+      Collecte, validation et autorisation des instructions de paiement.
+  BC-1340.10.10:
+    name: Collecte des instructions de paiement
+    description: |
+      Collecte des instructions de paiement sur l'ensemble des canaux.
+  BC-1340.10.20:
+    name: Validation des paiements
+    description: |
+      Validation des instructions de paiement et des coordonnées des bénéficiaires.
+  BC-1340.10.30:
+    name: Autorisation des paiements
+    description: |
+      Autorisation, authentification et application de l'authentification forte (SCA).
+  BC-1340.10.40:
+    name: Prénotification des paiements
+    description: |
+      Prénotification des paiements et confirmation du bénéficiaire.
+  BC-1340.20:
+    name: Gestion du traitement des paiements
+    description: |
+      Traitement, routage, formatage et norme ISO 20022 des paiements.
+  BC-1340.20.10:
+    name: Enrichissement et formatage des paiements
+    description: |
+      Enrichissement et formatage ISO 20022 des messages de paiement.
+  BC-1340.20.20:
+    name: Routage des paiements
+    description: |
+      Routage des paiements vers les rails et correspondants appropriés.
+  BC-1340.20.30:
+    name: Criblage sanctions des paiements
+    description: |
+      Criblage sanctions et parties restreintes pour les paiements.
+  BC-1340.20.40:
+    name: Enquêtes sur les paiements
+    description: |
+      Traitement des paiements en échec, retournés et contestés.
+  BC-1340.30:
+    name: Gestion de la compensation et du règlement
+    description: |
+      Compensation domestique — ACH, BACS, SEPA, FPS — et règlement.
+  BC-1340.30.10:
+    name: Compensation ACH et groupée
+    description: |
+      Exploitation des systèmes de compensation ACH, BACS et groupés.
+  BC-1340.30.20:
+    name: Opérations de compensation SEPA
+    description: |
+      Opérations de virement SEPA et de prélèvement SEPA.
+  BC-1340.30.30:
+    name: Règlement RTGS et net
+    description: |
+      Règlement RTGS et opérations de règlement net différé.
+  BC-1340.30.40:
+    name: Réconciliation nostro et vostro
+    description: |
+      Réconciliation des comptes nostro/vostro et gestion des écarts.
+  BC-1340.40:
+    name: Gestion des paiements transfrontaliers
+    description: |
+      Paiements internationaux, banques correspondantes et change.
+  BC-1340.40.10:
+    name: Gestion des banques correspondantes
+    description: |
+      Relations de banque correspondante et gestion des RMA.
+  BC-1340.40.20:
+    name: Routage des paiements transfrontaliers
+    description: |
+      Routage des paiements transfrontaliers via SWIFT et les rails alternatifs.
+  BC-1340.40.30:
+    name: Conversion de change pour les paiements
+    description: |
+      Conversion de change, sourcing de cours et tarification pour les paiements.
+  BC-1340.40.40:
+    name: Suivi SWIFT GPI
+    description: |
+      Suivi du statut SWIFT GPI et transparence vis-à-vis du client.
+  BC-1340.50:
+    name: Gestion des paiements en temps réel
+    description: |
+      Rails de paiements en temps réel et instantanés.
+  BC-1340.50.10:
+    name: Opérations des systèmes de paiement instantané
+    description: |
+      Exploitation des systèmes FPS, SCT Inst et autres paiements instantanés.
+  BC-1340.50.20:
+    name: Opérations de demande de paiement
+    description: |
+      Messagerie de demande de paiement et gestion du cycle de vie.
+  BC-1340.50.30:
+    name: Liquidité des paiements en temps réel
+    description: |
+      Gestion de la liquidité pour les rails de paiement instantané 24/7.
+  BC-1340.60:
+    name: Gestion de l'émission de cartes
+    description: |
+      Production, personnalisation, expédition et activation des cartes.
+  BC-1340.60.10:
+    name: Production et personnalisation des cartes
+    description: |
+      Opérations de production, d'embossage et de personnalisation des cartes.
+  BC-1340.60.20:
+    name: Expédition et livraison des cartes
+    description: |
+      Expédition des cartes plastiques et envoi des codes PIN.
+  BC-1340.60.30:
+    name: Activation des cartes
+    description: |
+      Processus d'activation des cartes et de gestion des codes PIN.
+  BC-1340.60.40:
+    name: Délivrance des cartes numériques et provisionnement des portefeuilles
+    description: |
+      Émission de cartes numériques et provisionnement des portefeuilles (tokenisation).
+  BC-1340.70:
+    name: Gestion du traitement des transactions par carte
+    description: |
+      Aiguillage, autorisation, criblage fraude et rejets de débit.
+  BC-1340.70.10:
+    name: Aiguillage des autorisations carte
+    description: |
+      Aiguillage et routage des autorisations en temps réel.
+  BC-1340.70.20:
+    name: Criblage fraude carte
+    description: |
+      Détection de la fraude sur les transactions par carte en temps réel.
+  BC-1340.70.30:
+    name: Règlement et interchange des cartes
+    description: |
+      Règlement, interchange et compensation avec les réseaux cartes.
+  BC-1340.70.40:
+    name: Gestion des rejets de débit et des litiges
+    description: |
+      Traitement des rejets de débit et résolution des litiges auprès des réseaux.
