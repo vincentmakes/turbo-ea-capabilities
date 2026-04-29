@@ -1,0 +1,182 @@
+locale: de
+source: L1-power-generation-operations-management.yaml
+entries:
+  BC-3800:
+    name: Stromerzeugungsbetrieb Management
+    description: |
+      Betrieb des Erzeugungsparks über thermische, nukleare, Wasser-, Wind-,
+      Solar- und Speicheranlagen – einschließlich Dispatch und Scheduling,
+      technologiespezifischen Anlagenbetrieb, Brennstoff- und Emissionshandling
+      sowie flottenweitem Leistungsmanagement.
+  BC-3800.10:
+    name: Erzeugungsdispatch und Scheduling
+    description: |
+      Kraftwerkseinsatz, Dispatchanweisungen und kurzfristige Fahrpläne
+      für den Erzeugungspark gemäß Netzbetreibernominierungen und
+      Marktpositionen.
+  BC-3800.10.10:
+    name: Kraftwerkseinsatzplanung
+    description: |
+      Day-ahead- und Intraday-Auswahl von Erzeugungseinheiten für den Betrieb.
+  BC-3800.10.20:
+    name: Wirtschaftlicher Dispatch
+    description: |
+      Echtzeit-Merit-Order-Dispatch eingesetzter Einheiten gegen die Last.
+  BC-3800.10.30:
+    name: Stillstandskoordination
+    description: |
+      Koordination geplanter und erzwungener Anlagenstillstände mit Netzbetreiber und Marktfahrplänen.
+  BC-3800.20:
+    name: Thermischer Anlagenbetrieb
+    description: |
+      Täglicher Betrieb von Kohle-, Gas- und Ölkraftwerken
+      einschließlich GuD- und KWK-Anlagen.
+    in_scope:
+      - Kessel- und Turbinenbetrieb
+      - Wärmerate- und Effizienzüberwachung
+      - Verbrennungsregelung
+    out_of_scope:
+      - Kernkraftwerksbetrieb (BC-3800.40)
+      - Erneuerbarer Anlagenbetrieb (BC-3800.50)
+  BC-3800.20.10:
+    name: Kesselbetrieb
+    description: |
+      Betrieb der Dampferzeugungsanlage und Verbrennungsregelung.
+  BC-3800.20.20:
+    name: Dampfturbinenbetrieb
+    description: |
+      Betrieb von Dampfturbinen und Kondensatspeisewassersystemen.
+  BC-3800.20.30:
+    name: Gasturbinenbetrieb
+    description: |
+      Betrieb von Gasturbinen in offener und kombinierter Zyklusausführung.
+  BC-3800.20.40:
+    name: Kraft-Wärme-Kopplungsbetrieb
+    description: |
+      Betrieb von KWK-Anlagen zur Lieferung von Strom und Prozess- bzw. Fernwärme.
+  BC-3800.30:
+    name: Wasserkraftanlagenbetrieb
+    description: |
+      Betrieb konventioneller, Pumpspeicher- und Laufwasserkraftwerke
+      einschließlich Staudamm- und Wasserwegemanagement.
+  BC-3800.30.10:
+    name: Hydro-Einheitenbetrieb
+    description: |
+      An-/Abfahrt, Regelung und Laststeuerung von Wasserkrafterzeugungseinheiten.
+  BC-3800.30.20:
+    name: Stauseepegelmanagement
+    description: |
+      Staupegel-Scheduling gegen Energie-, Hochwasser- und Umweltrestriktionen.
+  BC-3800.30.30:
+    name: Pumpspeicher-Zyklenbetrieb
+    description: |
+      Pump- und Erzeugungszyklen von Pumpspeicherkraftwerken.
+  BC-3800.30.40:
+    name: Dammüberwachung
+    description: |
+      Überwachung des strukturellen Verhaltens und der Sickerwassersituation von Staudämmen.
+  BC-3800.40:
+    name: Kernkraftanlagenbetrieb
+    description: |
+      Betrieb von Kernkraftwerken – Reaktorsteuerung, Brennstoffwechselstillstände
+      und radiologische Sicherheitsüberwachung unter Lizenzbedingungen des Nuklearregulators.
+  BC-3800.40.10:
+    name: Reaktorbetrieb
+    description: |
+      Reaktorsteuerung, Reaktivitätsmanagement und Lastfolgebetrieb.
+  BC-3800.40.20:
+    name: Brennstoffwechselstillstandsbetrieb
+    description: |
+      Planung und Durchführung von Brennstoffwechsel- und Großwartungsstillständen.
+  BC-3800.40.30:
+    name: Radiologische Überwachung
+    description: |
+      Überwachung radiologischer Freisetzungen und Personendosen gegen Grenzwerte.
+  BC-3800.40.40:
+    name: Abklingbeckenbetrieb
+    description: |
+      Betrieb und Überwachung der Abklingbeckenkühlung und des Inventars.
+  BC-3800.50:
+    name: Erneuerbare Erzeugungsbetrieb
+    description: |
+      Betrieb von Wind-, Solar-PV- und anderen variablen Erzeugungsanlagen
+      einschließlich Abregelung und Prognosedateneingabe.
+  BC-3800.50.10:
+    name: Windparkbetrieb
+    description: |
+      Onshore- und Offshore-Windparkbetrieb sowie Turbinenverfügbarkeitsmanagement.
+  BC-3800.50.20:
+    name: Solar-PV-Anlagenbetrieb
+    description: |
+      Betrieb von Utility-Scale-Solar-PV-Anlagen und String-Monitoring.
+  BC-3800.50.30:
+    name: Erneuerbare Abregelungsbetrieb
+    description: |
+      Ausführung von Abregelungsanweisungen des Netzbetreibers für variable Erneuerbare.
+  BC-3800.50.40:
+    name: Erneuerbare Erzeugungsprognose
+    description: |
+      Kurzfristprognose von Wind- und Solarerträgen als Dispatch- und Handelseingang.
+  BC-3800.60:
+    name: Energiespeicherbetrieb
+    description: |
+      Betrieb netzgekoppelter Batterie- und anderer Energiespeicheranlagen,
+      einschließlich Ladestandsmanagement und Zyklussteuerung gegen Markt-
+      und Systemdienstleistungspositionen.
+  BC-3800.60.10:
+    name: Batteriespeicherbetrieb
+    description: |
+      Betrieb und Ladestandsmanagement netzgekoppelter Batterieanlagen.
+  BC-3800.60.20:
+    name: Speicherzyklusoptimierung
+    description: |
+      Optimierung der Lade-/Entladezyklen gegen Energie- und Systemdienstleistungswertschöpfung.
+  BC-3800.60.30:
+    name: Speicherdegradationsverfolgung
+    description: |
+      Verfolgung von Rundwirkungsgrad und Kapazitätsverlust bei Batterieanlagen.
+  BC-3800.70:
+    name: Erzeugungsleistungsmanagement
+    description: |
+      Flottenweite Überwachung von Verfügbarkeit, Wärmerate, Kapazitätsfaktor
+      und Zwangsstillstandsrate über Erzeugungstechnologien hinweg.
+  BC-3800.70.10:
+    name: Verfügbarkeits- und Zuverlässigkeitsberichterstattung
+    description: |
+      GADS-konforme Berichterstattung über äquivalente Verfügbarkeit und Zwangsstillstandsstatistiken.
+  BC-3800.70.20:
+    name: Wärmerate- und Effizienzverfolgung
+    description: |
+      Verfolgung von Wärmerate und Wirkungsgrad gegen Design- und Vertragsvorgaben.
+  BC-3800.70.30:
+    name: Kapazitätsleistungsverfolgung
+    description: |
+      Verfolgung von Kapazitätsfaktor und gesicherter Leistungsbewertung.
+  BC-3800.80:
+    name: Brennstoff- und Emissionsmanagement
+    description: |
+      Brennstoffversorgung, -vorrats- und Verbrennungsnebenproduktmanagement
+      für den Erzeugungspark einschließlich Luftemissions- und CO2-Überwachung.
+  BC-3800.80.10:
+    name: Brennstoffvorratsbetrieb
+    description: |
+      Kohle-, Öl- und Biomassehof-Betrieb und Bestandskontrolle.
+  BC-3800.80.20:
+    name: Gasnominierungen
+    description: |
+      Pipeline-Gasnominierungen und -ausgleich für gasbefeuerte Erzeugung.
+  BC-3800.80.30:
+    name: Luftemissionsüberwachung
+    description: |
+      Kontinuierliche Emissionsüberwachung von NOx, SOx, Partikeln und Berichterstattung.
+  BC-3800.80.40:
+    name: CO2- und Zertifikateabrechnung
+    description: |
+      Abstimmung von CO2-Emissionen mit abgegebenen Zertifikaten im Rahmen von Cap-and-Trade-Systemen.
+  BC-3800.80.50:
+    name: Asche- und Verbrennungsrückstandsbetrieb
+    description: |
+      Handhabung und Entsorgung von Flugasche, Kesselasche und REA-Rückständen.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

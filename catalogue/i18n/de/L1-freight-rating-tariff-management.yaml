@@ -1,0 +1,99 @@
+locale: de
+source: L1-freight-rating-tariff-management.yaml
+entries:
+  BC-2520:
+    name: Frachtpreisfestsetzung und Tarif-Management
+    description: |
+      Definition und Betrieb von Frachtpreisen, Tarifen, Vertragspreisen, Spotpreisen,
+      Nebenentgelten und der Preisberechnungs-Engine für Frachttransporte.
+  BC-2520.10:
+    name: Tarif- und Ratenkarten-Management
+    description: |
+      Definition, Veröffentlichung und Versionierung öffentlicher Tarife und Basis-Ratenkarten.
+    in_scope:
+      - Basisratenkartendefinition nach Strecke und Einheit
+      - Öffentliche Tarifeinreichung wo erforderlich
+    out_of_scope:
+      - Kundenseitiges Angebot im Speditionskontext (BC-2450.10)
+      - Allgemeine Unternehmenspreismethoden (BC-440)
+  BC-2520.10.10:
+    name: Basisratendefinition
+    description: |
+      Definition von Frachtbasisraten nach Strecke, Einheit und Servicestufe.
+  BC-2520.10.20:
+    name: Öffentliche Tarifeinreichung
+    description: |
+      Einreichung öffentlicher Tarife bei Behörden und Konferenzen wo erforderlich.
+  BC-2520.10.30:
+    name: Ratenkarten-Versionsverwaltung
+    description: |
+      Versionskontrolle und Gültigkeitsdatenverwaltung von Ratenkarten.
+  BC-2520.20:
+    name: Vertragsraten-Management
+    description: |
+      Einrichtung und Pflege ausgehandelter Vertragspreise mit benannten Kunden
+      und Volumenverpflichtungen.
+  BC-2520.20.10:
+    name: Vertragsraten-Einrichtung
+    description: |
+      Einrichtung ausgehandelter Raten gegenüber benannten Kundenverträgen.
+  BC-2520.20.20:
+    name: Volumenverpflichtungs-Verfolgung
+    description: |
+      Verfolgung von Kunden-Volumenverpflichtungen und Mindestmengenzielen.
+  BC-2520.20.30:
+    name: Vertragsraten-Erneuerung
+    description: |
+      Erneuerung und Neuverhandlung ablaufender Vertragsraten.
+  BC-2520.30:
+    name: Spotpreis-Management
+    description: |
+      Preisgestaltung, Annahme und Benchmarking von Spotmarkt-Frachtpreisen.
+  BC-2520.30.10:
+    name: Spotpreis-Angebot
+    description: |
+      Angebotserteilung von Spotmarktpreisen je Sendung.
+  BC-2520.30.20:
+    name: Spotpreis-Annahme
+    description: |
+      Annahme und Bestätigung von Spotpreis-Buchungen.
+  BC-2520.30.30:
+    name: Spotpreis-Index-Benchmarking
+    description: |
+      Benchmarking von Spotpreisen gegen Marktindizes.
+  BC-2520.40:
+    name: Nebenentgelte und Zuschläge-Management
+    description: |
+      Definition und Anwendung von Nebenentgelten, Zuschlägen, Liegegeldern und Detentions-Tarifen.
+  BC-2520.40.10:
+    name: Kraftstoffzuschlag-Management
+    description: |
+      Definition und Anwendung von Kraftstoff- und Bunker-Zuschlägen.
+  BC-2520.40.20:
+    name: Nebenentgelt-Definition
+    description: |
+      Definition von Nebenentgelten für Wartezeiten, Sonderbehandlung und Ausrüstung.
+  BC-2520.40.30:
+    name: Liegegelds- und Detentions-Tarife
+    description: |
+      Definition von Liegegelds- und Detentions-Tarifen für Ausrüstung und Terminalnutzung.
+  BC-2520.50:
+    name: Preisberechnungs-Engine-Betrieb
+    description: |
+      Betrieb der Preisberechnungs-Engine zur Berechnung und Validierung von Frachtentgelten
+      über Aufträge und Sendungen.
+  BC-2520.50.10:
+    name: Ratenberechnungs-Durchführung
+    description: |
+      Durchführung von Ratenberechnungen über Aufträge und Sendungen.
+  BC-2520.50.20:
+    name: Ratenblatt-Verteilung
+    description: |
+      Verteilung von Ratenblättern an Kunden, Partner und Kanäle.
+  BC-2520.50.30:
+    name: Raten-Audit und Validierung
+    description: |
+      Validierung angewendeter Raten gegen Vertrags- und Tarifgrundlagen.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

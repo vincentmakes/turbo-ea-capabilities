@@ -1,0 +1,273 @@
+locale: de
+source: L1-vehicle-engineering-management.yaml
+entries:
+  BC-3400:
+    name: Fahrzeugtechnik-Management
+    description: |
+      Gesamtfahrzeug-Engineering in den Bereichen Karosserie, Fahrwerk,
+      Antrieb (Verbrennungsmotor, Elektro, Brennstoffzelle), Elektrik-/
+      Elektronik-Architektur, eingebettete Software, funktionale Sicherheit,
+      Cybersicherheit und SOTIF – verankert in IATF 16949, ISO 26262,
+      ISO/SAE 21434, ISO 21448, Automotive SPICE und AUTOSAR.
+  BC-3400.10:
+    name: Fahrzeugarchitektur-Management
+    description: |
+      Gesamtfahrzeug-Architektur, Packaging, Attributziele und
+      Plattform-/Variantenzerlegung als Rahmen für alle nachgelagerten
+      Engineering-Tätigkeiten.
+    in_scope:
+      - Fahrzeugattributziele und Trade-off-Auflösung
+      - Fahrzeug-Packaging, Layout und Zonenverteilung
+      - Plattform- und Modularchitektur-Entscheidungen
+    out_of_scope:
+      - Stage-Gate-Governance des Programms (BC-3410)
+      - Detailliertes Engineering auf Komponentenebene (abgedeckt durch fachspezifische L2-Ebenen)
+  BC-3400.10.10:
+    name: Fahrzeugattribut-Zielsetzung
+    description: |
+      Definition von Fahrzeugleistungs-, Komfort-, Sicherheits-,
+      Effizienz- und Markenattributzielen sowie deren Trade-off-Auflösung.
+  BC-3400.10.20:
+    name: Fahrzeug-Packaging und Layout
+    description: |
+      Gesamtfahrzeug-Packaging, Insassen- und Gepäcklayout,
+      Festpunktdefinition und Zonenzuweisung.
+  BC-3400.10.30:
+    name: Plattformarchitektur-Definition
+    description: |
+      Definition gemeinsamer Fahrzeugplattformen, gemeinsamer Module und
+      Carry-over-Strategien über Programm hinweg.
+  BC-3400.10.40:
+    name: Modul- und Variantenarchitektur
+    description: |
+      Modulare und variantenbasierte Strategie zur Ableitung von
+      Karosserieversionen, Antrieben und Ausstattungslinien von einer
+      gemeinsamen Architektur.
+  BC-3400.20:
+    name: Antriebstechnik
+    description: |
+      Engineering von Verbrennungsmotor-, Elektro- und
+      Brennstoffzellen-Antriebssystemen einschließlich Getriebe,
+      Antriebsstrang und Energiespeichersystemen.
+  BC-3400.20.10:
+    name: Verbrennungsmotor-Antriebstechnik
+    description: |
+      Engineering von Verbrennungsmotoren, Kraftstoffsystemen,
+      Abgasnachbehandlung und zugehöriger Kalibrierung.
+  BC-3400.20.20:
+    name: Elektroantrieb-Engineering
+    description: |
+      Engineering von Elektro-Antriebseinheiten, Wechselrichtern,
+      Ladeelektronik und Integration in das Hochvoltbordnetz.
+  BC-3400.20.30:
+    name: Batteriesystem-Engineering
+    description: |
+      Engineering von Traktionsbatteriezellen, Modulen, Packs,
+      Batteriemanagementsystemen und Thermomanagementsystemen.
+  BC-3400.20.40:
+    name: Brennstoffzellen-Engineering
+    description: |
+      Engineering von Wasserstoffspeichern, Brennstoffzellenstacks,
+      Balance-of-Plant und Fahrzeugintegration.
+  BC-3400.20.50:
+    name: Getriebe- und Antriebsstrang-Engineering
+    description: |
+      Engineering von Getrieben, Achsen, Antriebswellen und
+      Torque-Vectoring-Antriebsstrangkomponenten.
+  BC-3400.30:
+    name: Fahrwerk- und Fahrdynamik-Engineering
+    description: |
+      Engineering von Fahrwerk, Lenkung, Bremsen, Rädern und Reifen
+      sowie deren integriertes Dynamikverhalten.
+  BC-3400.30.10:
+    name: Fahrwerk- und Lenkungs-Engineering
+    description: |
+      Engineering von Fahrwerksgeometrie, Dämpfern, Federn und
+      Lenksystemen einschließlich Steer-by-Wire.
+  BC-3400.30.20:
+    name: Bremssystem-Engineering
+    description: |
+      Engineering von Betriebsbremsen, regenerativer Bremskraftmischung
+      und Bremssteuersystemen.
+  BC-3400.30.30:
+    name: Fahrdynamik-Abstimmung
+    description: |
+      Abstimmung von Fahrkomfort, Handling, Stabilität und
+      Traktionskontrolle zur Erreichung der Zielfahrattribute.
+  BC-3400.30.40:
+    name: Rad- und Reifen-Engineering
+    description: |
+      Engineering und Auswahl von Rädern und Reifen einschließlich
+      RDKS sowie Leistungs-/Effizienz-Trade-offs.
+  BC-3400.40:
+    name: Karosserie- und Exterieur-Engineering
+    description: |
+      Engineering von Rohkarosserie, Anbauteilen, Verglasung,
+      Außenanbauteilen, Beleuchtung und aerodynamischen Oberflächen.
+  BC-3400.40.10:
+    name: Rohkarosserie-Engineering
+    description: |
+      Engineering der Strukturkarosserie, Fügestrategie und
+      Crashlastpfade.
+  BC-3400.40.20:
+    name: Anbauteil- und Verglasungs-Engineering
+    description: |
+      Engineering von Türen, Hauben, Heckklappen, Schiebeteilen und
+      Verglasungssystemen.
+  BC-3400.40.30:
+    name: Exterieur-Anbauteile und Beleuchtungs-Engineering
+    description: |
+      Engineering von Außenanbauteilen, Emblemen und
+      Außenbeleuchtungssystemen einschließlich Scheinwerfer- und
+      Signalarchitekturen.
+  BC-3400.40.40:
+    name: Aerodynamik-Engineering
+    description: |
+      Aerodynamische Formgebung, Widerstands- und Auftriebsbalancierung
+      sowie Unterbodenströmungsmanagement.
+  BC-3400.50:
+    name: Interieur- und Komfort-Engineering
+    description: |
+      Engineering von Sitzen, Rückhaltesystemen, Innenverkleidung,
+      HMI-Oberflächen, Klimatisierung sowie Akustik- und
+      NVH-Eigenschaften.
+  BC-3400.50.10:
+    name: Sitz- und Rückhaltesystem-Engineering
+    description: |
+      Engineering von Sitzen, Sicherheitsgurten, Airbags und sonstigen
+      Insassen-Rückhaltesystemen.
+  BC-3400.50.20:
+    name: Innenverkleidung und HMI-Engineering
+    description: |
+      Engineering von Instrumententafel, Mittelkonsole, Dachhimmel
+      sowie physischen und digitalen HMI-Oberflächen.
+  BC-3400.50.30:
+    name: Klimatisierungs-Engineering
+    description: |
+      Engineering von HVAC, Kältemittelsystemen, Wärmepumpen sowie
+      Batterie- und Innenraum-Thermomanagementsystemen.
+  BC-3400.50.40:
+    name: Akustik- und NVH-Engineering
+    description: |
+      Akustik-, Schwingungs- und Rauheitstechnik sowie Abstimmung über
+      das gesamte Fahrzeug.
+  BC-3400.60:
+    name: Elektrik-/Elektronik-Architektur-Engineering
+    description: |
+      Engineering der fahrzeugseitigen E/E-Topologie, fahrzeuginternen
+      Netzwerke, Stromverteilung und Steuergerätehardware.
+  BC-3400.60.10:
+    name: E/E-Topologie-Definition
+    description: |
+      Definition der Fahrzeug-E/E-Topologie einschließlich domänen-,
+      zonal- und zentralisierter Rechenarchitekturen.
+  BC-3400.60.20:
+    name: Fahrzeugnetz-Engineering
+    description: |
+      Engineering von CAN, CAN-FD, LIN, FlexRay, Automotive Ethernet
+      und verwandten Fahrzeugkommunikationsnetzen.
+  BC-3400.60.30:
+    name: Leitungssatz- und Stromverteiler-Engineering
+    description: |
+      Engineering von Kabelbäumen, Steckverbindern sowie Hoch- und
+      Niedervolt-Stromverteilung.
+  BC-3400.60.40:
+    name: Steuergeräte-Hardware-Engineering
+    description: |
+      Engineering von Steuergerätehardware, Halbleitern und
+      Leiterplattendesigns nach AEC-Q-Standards.
+  BC-3400.70:
+    name: Fahrzeugsoftware-Engineering
+    description: |
+      Engineering von eingebetteter Software, automobilen
+      Softwareplattformen und Fahrzeugbetriebssystemen nach AUTOSAR
+      und Automotive SPICE.
+  BC-3400.70.10:
+    name: Embedded-Software-Engineering
+    description: |
+      Engineering von eingebetteter Software auf Steuergeräteebene
+      einschließlich Gerätetreibern und Basissoftwarekomponenten.
+  BC-3400.70.20:
+    name: AUTOSAR-Plattform-Engineering
+    description: |
+      Engineering von AUTOSAR Classic- und Adaptive-Plattform-
+      Konfigurationen und deren Integration.
+  BC-3400.70.30:
+    name: Fahrzeugbetriebssystem-Engineering
+    description: |
+      Engineering von Hochleistungs-Fahrzeugbetriebssystemen,
+      Hypervisoren und Middleware für software-definierte Fahrzeuge.
+  BC-3400.70.40:
+    name: Software-Integration und Build-Management
+    description: |
+      Fahrzeugsoftware-Integration, Build- und Release-Train-Management
+      über Steuergeräte und Domänen hinweg.
+  BC-3400.80:
+    name: Funktionale Sicherheit und Cybersicherheit
+    description: |
+      Engineering-Disziplinen zur Absicherung sicherheitskritischen
+      und vernetzten Fahrzeugverhaltens – verankert in ISO 26262,
+      ISO/SAE 21434 und ISO 21448.
+    in_scope:
+      - Safety-Case-Erstellung (ISO 26262)
+      - Cybersicherheits-Engineering (ISO/SAE 21434)
+      - SOTIF-Analyse und Validierung (ISO 21448)
+      - HARA, FMEA-MSR und TARA
+    out_of_scope:
+      - Operativer Fahrzeug-SOC und Incident-Response (BC-3460.60)
+      - Typzulassungseinreichungen für UN R155/R156 (BC-3420.50)
+  BC-3400.80.10:
+    name: Funktionaler Sicherheitsnachweis
+    description: |
+      Erstellung und Pflege von ISO-26262-Sicherheitsnachweisen,
+      ASIL-Zuweisung und Sicherheitsargumentationsbelegen.
+  BC-3400.80.20:
+    name: Automobil-Cybersicherheits-Engineering
+    description: |
+      Cybersicherheits-Engineering-Aktivitäten nach ISO/SAE 21434
+      einschließlich TARA, sicheres Design und sicherer Entwicklungslebenszyklus.
+  BC-3400.80.30:
+    name: SOTIF-Engineering
+    description: |
+      Analyse und Validierung der Sicherheit der beabsichtigten
+      Funktionalität für ADAS- und automatisierte Fahrfunktionen
+      gemäß ISO 21448.
+  BC-3400.80.40:
+    name: Gefährdungs- und Risikoanalyse
+    description: |
+      HARA, FMEA-MSR und weitere systematische Gefährdungsanalysen
+      zur Ableitung von Sicherheits- und Schutzanforderungen.
+  BC-3400.90:
+    name: Fahrzeug-Verifikations- und Validierungsmanagement
+    description: |
+      Verifikation und Validierung von Fahrzeug-, Subsystem- und
+      Komponentendesigns durch virtuelle, Prüfstands- und physische
+      Testkampagnen.
+  BC-3400.90.10:
+    name: Virtuelle Validierung
+    description: |
+      CAE-, MIL-/SIL-/HIL- und Digital-Twin-basierte virtuelle
+      Verifikation von Fahrzeug- und Subsystemverhalten.
+  BC-3400.90.20:
+    name: Komponenten- und Subsystem-Prüfung
+    description: |
+      Prüfstands- und Rigtestprüfung von Komponenten und Subsystemen
+      gegen Engineeringspezifikationen.
+  BC-3400.90.30:
+    name: Fahrzeug-Integrationstests
+    description: |
+      Gesamtfahrzeug-Integrationstests auf Prüfgeländen und öffentlichen
+      Straßen unter kontrollierten Bedingungen.
+  BC-3400.90.40:
+    name: Dauerhaltbarkeits- und Zuverlässigkeitstests
+    description: |
+      Beschleunigte und kundenbezogene Dauerhaltbarkeits- und
+      Zuverlässigkeitstests an Komponenten und am Gesamtfahrzeug.
+  BC-3400.90.50:
+    name: Crash- und Insassenschutztests
+    description: |
+      Engineering von Crash- und Insassenschutztests zur Erfüllung
+      regulatorischer Anforderungen und Verbraucherbewertungen.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

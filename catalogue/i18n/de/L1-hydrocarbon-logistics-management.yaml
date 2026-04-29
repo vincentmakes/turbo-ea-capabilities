@@ -1,0 +1,103 @@
+locale: de
+source: L1-hydrocarbon-logistics-management.yaml
+entries:
+  BC-3100:
+    name: Kohlenwasserstoff-Logistik
+    description: |
+      Marine-Frachtoperationen, Terminal- und Massenlager-Betrieb für Rohöl,
+      Raffinerieprodukte und LNG, plus Abnahmekoordination und Bunkerkraftstoff-
+      Management. Abgegrenzt von branchenübergreifendem Transport (BC-2400-Serie),
+      der Frachtnetze, Flottenmanagement und intermodale Transporte umfasst.
+  BC-3100.10:
+    name: Marine-Frachtbetrieb
+    description: |
+      Betrieb von Rohöltankern, Produktentankern, LNG-Schiffen und Schiff-zu-Schiff-Transfers in Petroleum-Diensten.
+    in_scope:
+      - Tanker- und Gas-Carrier-Betriebskoordination
+      - Schiff-zu-Schiff-Leichtern und Rückleichtern
+    out_of_scope:
+      - Generisches Schifffahrtsflottenmanagement (BC-2430)
+      - Liner-Schifffahrts-Frachtbuchungen (BC-2400)
+  BC-3100.10.10:
+    name: Rohöltanker-Betrieb
+    description: |
+      Betriebskoordination von Rohöltankern unter Reise- und Zeitcharter.
+  BC-3100.10.20:
+    name: Produktentanker-Betrieb
+    description: |
+      Betriebskoordination von Raffinerieprodukten-Tankern einschließlich Parzel-Ladungen.
+  BC-3100.10.30:
+    name: LNG-Carrier-Betrieb
+    description: |
+      Betriebskoordination von LNG-Schiffen einschließlich Abkühlung und Tank-Druckmanagement.
+  BC-3100.10.40:
+    name: Schiff-zu-Schiff-Transfer-Koordination
+    description: |
+      Koordination von STS-Transfers für Rohöl, Produkte und LNG.
+  BC-3100.20:
+    name: Terminal-Betrieb
+    description: |
+      Betrieb von Import-, Export- und Zwischen-Petroleum-Terminals - Anlegeplätze, Verladearme und Tankempfang.
+  BC-3100.20.10:
+    name: Verladearm und Anleger-Betrieb
+    description: |
+      Betrieb von Anlegerausrüstung und marinen Verladearmen.
+  BC-3100.20.20:
+    name: Tankempfangs-Betrieb
+    description: |
+      Empfang und Peilung von Frachten in Terminal-Lagertanks.
+  BC-3100.20.30:
+    name: Tank-Beladungsbetrieb
+    description: |
+      Beladung aus Terminal-Lager in Schiffe und Pipelines.
+  BC-3100.20.40:
+    name: Liegeplatz-Zeitplanung
+    description: |
+      Liegeplatz-Zuweisung und Zeitplanung für Schiffsankünfte.
+  BC-3100.30:
+    name: Massenlager-Management
+    description: |
+      Tankzuweisung, Bewegungs-Tracking und Tankkalibrierung für Rohöl, Produkte und NGLs.
+  BC-3100.30.10:
+    name: Tankzuweisung
+    description: |
+      Zuweisung von Tankkapazität zu Qualitäten, Eigentümern und Pools.
+  BC-3100.30.20:
+    name: Tank-zu-Tank-Bewegungs-Tracking
+    description: |
+      Tracking interner Terminal-Bewegungen und Inventarpositionen.
+  BC-3100.30.30:
+    name: Tank-Kalibrierung und Eichung
+    description: |
+      Tank-Eichtabellen-Kalibrierung und Pflege für Fiskalgenauigkeit.
+  BC-3100.40:
+    name: Frachtplanung und Abnahmekoordination
+    description: |
+      Abnahmenominierungen, Schiffsbestätigung und Liegegeld-Tracking für Petroleum-Frachten.
+  BC-3100.40.10:
+    name: Abnahmenominierungs-Management
+    description: |
+      Eingang und Bestätigung von Kunden- und Eigenkapital-Abnahmenominierungen.
+  BC-3100.40.20:
+    name: Schiffsbestätigung
+    description: |
+      Parzellen- und Frachtbestätigung gegenüber vertraglichen Verpflichtungen.
+  BC-3100.40.30:
+    name: Betriebliches Liegegeld-Tracking
+    description: |
+      Betriebliches Tracking von Liegegeldereignissen an Lade- und Löschhäfen.
+  BC-3100.50:
+    name: Bunker- und Marine-Kraftstoff-Management
+    description: |
+      Bunkerbeschaffung und Qualitätssicherung für die betriebene und gecharterte Flotte.
+  BC-3100.50.10:
+    name: Bunkerbeschaffung
+    description: |
+      Spot- und Terminbeschaffung von Schiffstreibstoffen für die Flotte.
+  BC-3100.50.20:
+    name: Bunker-Qualitätssicherung
+    description: |
+      Probenahme, Prüfung und Streitbeilegung für gelieferte Bunker.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

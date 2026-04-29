@@ -1,0 +1,141 @@
+locale: de
+source: L1-water-distribution-network-operations-management.yaml
+entries:
+  BC-3880:
+    name: Wasserverteilungsnetz-Betrieb Management
+    description: |
+      Betrieb von Haupt- und Verteilungsleitungen zur Lieferung von Reinwasser
+      an Kunden – hydraulisches Management und Drucksteuerung, Leckagebekämpfung,
+      Netzwasserqualität, Leitungsreparatur und -erneuerung sowie Kundenanschlusserbringung.
+  BC-3880.10:
+    name: Verteilungsnetzkontrolle
+    description: |
+      24/7-Leitstellenbetrieb des Wasserverteilungssystems
+      mittels Telemetrie, hydraulischen Modellen und SCADA.
+  BC-3880.10.10:
+    name: Verteiler-SCADA-Betrieb
+    description: |
+      Echtzeit-Fernwirken von Pump- und Druckanlagen im Netz.
+  BC-3880.10.20:
+    name: Hydraulisches Modellbetrieb
+    description: |
+      Betrieb von Online- und Offline-hydraulischen Modellen für Netzentscheidungen.
+  BC-3880.10.30:
+    name: Netztelemetrieüberwachung
+    description: |
+      Überwachung der Telemetrie über DMAs, Ventile und Druckpunkte.
+  BC-3880.20:
+    name: Hauptleitungs- und Pumpbetrieb
+    description: |
+      Betrieb von Hauptleitungen, Pumpstationen und Interzonen-Transfers
+      einschließlich Druckerhöhung und Druckstoßmanagement.
+  BC-3880.20.10:
+    name: Pumpstationsbetrieb
+    description: |
+      Betrieb und Energieoptimierung von Verteilungspumpstationen.
+  BC-3880.20.20:
+    name: Hauptleitungsbetrieb
+    description: |
+      Betrieb, Ventilsteuerung und Druckstoßmanagement auf Übertragungshauptleitungen.
+  BC-3880.20.30:
+    name: Interzonentransferbetrieb
+    description: |
+      Betrieb von Interzonentransfers und Massenbulkversorgungsverbindungen zwischen Ressourcenzonen.
+  BC-3880.30:
+    name: Leckagemanagement
+    description: |
+      Aktive und passive Leckagebekämpfung in Zählergebieten
+      mittels Zulaufanalyse, akustischer Detektion und Feldreparatur.
+    in_scope:
+      - DMA-Zufluss- und Mindestnachtflussanalyse
+      - Akustische Leckageortung
+      - Such- und Reparaturoperationen
+    out_of_scope:
+      - Leitungserneuerungsinvestitionsprogramme (BC-3900.50)
+      - Kundenseitige Hausanschlussleckagen (BC-3910.60)
+  BC-3880.30.10:
+    name: Zählergebietanalyse
+    description: |
+      Analyse von DMA-Zufluss und Mindestnachtflussdaten zur Lecklokalisierung.
+  BC-3880.30.20:
+    name: Akustische Leckageortung
+    description: |
+      Akustische Sondierung, Korrelation und Geräuschpegelmessungen zur Lecklokalisierung.
+  BC-3880.30.30:
+    name: Such- und Reparaturbetrieb
+    description: |
+      Feldarbeit zum Aufsuchen und Reparieren erkannter Lecks gegen Reparaturzeitziele.
+  BC-3880.30.40:
+    name: Leckagenleistungsberichterstattung
+    description: |
+      Berichterstattung über Leckagenleistung gegen regulatorische und IWA-Wasserbilanz-Kennzahlen.
+  BC-3880.40:
+    name: Druckmanagement
+    description: |
+      Optimierung des Verteilungsdrucks in druckverwalteten Zonen
+      zur Leckagereduzierung und Rohrbruchratenkontrolle.
+  BC-3880.40.10:
+    name: Druckzonenkonfiguration
+    description: |
+      Konfiguration druckverwalteter Gebiete und Druckminderventil-Sollwerte.
+  BC-3880.40.20:
+    name: Weitergehende Druckregelung
+    description: |
+      Betrieb ferngesteuerter und zeitmodulierter Druckminderventile.
+  BC-3880.40.30:
+    name: Druckstoßmanagement
+    description: |
+      Druckstoßanalyse und Transientenmitigation in Verteilungsnetzen.
+  BC-3880.50:
+    name: Netzwasserqualitätsbetrieb
+    description: |
+      Netzinterne Wasserqualitätsüberwachung – Chlorresidual,
+      Verfärbungen, Geschmacks- und Geruchsprobleme – sowie Sanierungsmaßnahmen.
+  BC-3880.50.10:
+    name: Netz-Chlorresidualüberwachung
+    description: |
+      Überwachung von Chlorresidualen im Netz und Nachcalorierung.
+  BC-3880.50.20:
+    name: Verfärbungs- und Sedimentkontrolle
+    description: |
+      Spülungs- und Ice-Pigging-Betrieb zur Beherrschung von Verfärbungsbeschwerden.
+  BC-3880.50.30:
+    name: Netzprobenahmebetrieb
+    description: |
+      Gesetzliche Probenahme an Kundenentnahmestellen und Versorgungspunkten.
+  BC-3880.60:
+    name: Leitungsreparatur- und Erneuerungsbetrieb
+    description: |
+      Reaktive Reparatur von Rohrbrüchen und Muffentsagen sowie operative
+      Erbringung von Leitungserneuerungsprogrammen.
+  BC-3880.60.10:
+    name: Rohrbruchreaktion
+    description: |
+      Reaktion, Isolierung und Reparatur von Rohrbrüchen gegen Kundenminnuten-Verlustziele.
+  BC-3880.60.20:
+    name: Hausanschlussreparaturbetrieb
+    description: |
+      Reparatur von Verbindungs- und Versorgungsleitungen zwischen Hauptleitung und Absperrhahn.
+  BC-3880.60.30:
+    name: Leitungserneuerungsfeldbetrieb
+    description: |
+      Felddurchführung von Leitungserneuerungs- und Sanierungsprogrammen einschließlich grabenlosen Verfahren.
+  BC-3880.70:
+    name: Neuanschluss Wasserversorgung Betrieb
+    description: |
+      Herstellung neuer Wasserversorgungsanschlüsse für Haus-, Gewerbe- und Projektentwicklerkunden.
+  BC-3880.70.10:
+    name: Neuantragsbeurteilung Wasseranschluss
+    description: |
+      Technische Beurteilung von Neuantragsanträgen und Entwicklerdienstleistungen.
+  BC-3880.70.20:
+    name: Anschlussinstallationsbetrieb
+    description: |
+      Installation von Verbindungsleitungen, Anbohrschellen und Kundenwasserzählern.
+  BC-3880.70.30:
+    name: Anschlussinbetriebnahme
+    description: |
+      Inbetriebnahme, Spülung und Desinfektion neuer Anschlüsse vor Inbetriebnahme.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

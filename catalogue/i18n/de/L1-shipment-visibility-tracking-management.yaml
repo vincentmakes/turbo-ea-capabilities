@@ -1,0 +1,100 @@
+locale: de
+source: L1-shipment-visibility-tracking-management.yaml
+entries:
+  BC-2510:
+    name: Sendungsverfolgung
+    description: |
+      Durchgängige Sendungssichtbarkeit durch Ereigniserfassung, Statusauflösung,
+      ETA-Prognose, Ausnahmebenachrichtigung und Control-Tower-Betrieb.
+  BC-2510.10:
+    name: Ereigniserfassung und Status-Management
+    description: |
+      Erfassung von Sendungsereignissen von Carriern, IoT und Betriebssystemen
+      und Übersetzung in kanonische Status.
+    in_scope:
+      - EDI-214-, IFTSTA- und EPCIS-Ereignisverarbeitung
+      - IoT- und Telematik-Ereigniserfassung
+    out_of_scope:
+      - Telematik für den Asset-Zustand (BC-2430.40)
+  BC-2510.10.10:
+    name: Carrier-Ereignisverarbeitung
+    description: |
+      Verarbeitung von carrierseitigen Meilensteinereignissen über EDI und APIs.
+  BC-2510.10.20:
+    name: IoT- und Telematik-Ereigniserfassung
+    description: |
+      Erfassung von Fracht-IoT- und Telematikereignissen.
+  BC-2510.10.30:
+    name: Manuelle Status-Aktualisierungserfassung
+    description: |
+      Erfassung manueller Status-Aktualisierungen von Fahrern, Agenten und Partnern.
+  BC-2510.20:
+    name: Sendungs-Tracking-Management
+    description: |
+      Auflösung des Sendungsstatus über Strecken, Verkehrsträger und Partner und
+      Bereitstellung auf internen und kundenseitigen Tracking-Oberflächen.
+  BC-2510.20.10:
+    name: Sendungsstatus-Auflösung
+    description: |
+      Auflösung des kanonischen Sendungsstatus aus Rohereignissen.
+  BC-2510.20.20:
+    name: Mehrstufige Tracking-Verknüpfung
+    description: |
+      Verknüpfung mehrstufiger, multi-carrier-Reisen zu einem einheitlichen Track.
+  BC-2510.20.30:
+    name: Öffentliches Tracking-Portal-Betrieb
+    description: |
+      Betrieb öffentlicher Tracking-Portale und Kunden-APIs.
+  BC-2510.30:
+    name: ETA-Prognose-Management
+    description: |
+      Berechnung und kontinuierliche Verfeinerung der voraussichtlichen Ankunftszeit.
+  BC-2510.30.10:
+    name: ETA-Berechnung
+    description: |
+      Deterministische ETA-Berechnung aus Fahrplänen und Meilensteinen.
+  BC-2510.30.20:
+    name: Prädiktive ETA-Modellierung
+    description: |
+      Prädiktive ETA-Modellierung unter Verwendung historischer und kontextueller Daten.
+  BC-2510.30.30:
+    name: ETA-Abweichungsbenachrichtigung
+    description: |
+      Benachrichtigung bei wesentlichen ETA-Abweichungen gegenüber Zusagen.
+  BC-2510.40:
+    name: Ausnahme- und Alarm-Management
+    description: |
+      Erkennung betrieblicher Ausnahmen, Benachrichtigung von Stakeholdern und
+      Verfolgung der Ausnahmelösung.
+  BC-2510.40.10:
+    name: Ausnahmeerkennung
+    description: |
+      Regel- und modellbasierte Erkennung betrieblicher Ausnahmen.
+  BC-2510.40.20:
+    name: Stakeholder-Benachrichtigung
+    description: |
+      Benachrichtigung von Kunden, Betriebsteams und Partnern.
+  BC-2510.40.30:
+    name: Ausnahmelösungs-Verfolgung
+    description: |
+      Verfolgung von Ausnahme-Triage, Verantwortung und Abschluss.
+  BC-2510.50:
+    name: Control-Tower-Betriebsmanagement
+    description: |
+      Durchgängige Sichtbarkeit, Leistungsüberwachung und proaktive
+      Interventionskoordination über Carrier und Partner.
+  BC-2510.50.10:
+    name: Durchgängige Sichtbarkeits-Dashboards
+    description: |
+      Betrieb durchgängiger Sichtbarkeits-Dashboards über das Netzwerk.
+  BC-2510.50.20:
+    name: Carrier-übergreifende Leistungsüberwachung
+    description: |
+      Überwachung der Leistung über Carrier und Partner.
+  BC-2510.50.30:
+    name: Proaktive Interventionskoordination
+    description: |
+      Koordination proaktiver Interventionen zum Schutz von Zusagen.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

@@ -1,0 +1,182 @@
+locale: de
+source: L1-mobility-services-operations-management.yaml
+entries:
+  BC-3490:
+    name: Mobilitätsdienste-Betrieb
+    description: |
+      Betrieb geteilter und bedarfsgerechter Mobilitätsdienste –
+      Ride-Hailing, Carsharing und Mikromobilität sowie
+      Mobility-as-a-Service-Aggregation – einschließlich
+      Dienstekatalog, Fahrtbetrieb, Flottenrebalancierung, Fahrer-
+      und Nutzeroperationen, dynamische Preisgestaltung,
+      Partnerintegration sowie Stadt-/Regulierungsengagement.
+  BC-3490.10:
+    name: Mobilitätsdienste-Katalog-Management
+    description: |
+      Definition von Mobilitätsdiensttypen, Preisplänen und
+      geografischen Abdeckungszonen.
+  BC-3490.10.10:
+    name: Diensttyp-Definition
+    description: |
+      Definition von Diensttypen wie Point-to-Point, Free-Floating,
+      Stationsbasiert und Poolfahrten.
+  BC-3490.10.20:
+    name: Dienstpreisplan-Konfiguration
+    description: |
+      Konfiguration von Grundpreisen, Zeit- und Streckenpreisen
+      sowie Mitgliedschaftsplänen.
+  BC-3490.10.30:
+    name: Dienst-Geofence- und Abdeckungsmanagement
+    description: |
+      Management von Betriebsgeofences, Sperrgebieten und
+      Abdeckungsbereichen.
+  BC-3490.20:
+    name: Fahrten- und Buchungsbetrieb
+    description: |
+      Erfassung, Matching, Disposition und Lebenszyklusmanagement
+      von Mobilitätsbuchungen und -fahrten.
+  BC-3490.20.10:
+    name: Fahrtbuchungs-Erfassung
+    description: |
+      Erfassung von Fahrtbuchungen über App-, Web- und
+      Partnerkanäle.
+  BC-3490.20.20:
+    name: Fahrt-Matching und -Disposition
+    description: |
+      Matching von Fahrgästen zu Fahrzeugen oder Fahrern und
+      Disposition bestätigter Fahrten.
+  BC-3490.20.30:
+    name: Fahrten-Lebenszyklusmanagement
+    description: |
+      Lebenszyklusmanagement laufender Fahrten einschließlich
+      Stornierung, Umleitung und Abschluss.
+  BC-3490.30:
+    name: Geteilter Flottenbetrieb
+    description: |
+      Operativer Betrieb der Sharing-Flotte einschließlich
+      Rebalancierung, Vor-Ort-Service und Schadenssteuerung.
+    in_scope:
+      - Fahrzeug-Rebalancierung über Zonen und Stationen
+      - Straßenreinigung, Laden und Betankung
+      - Schadens- und Verlustmanagement für Sharing-Fahrzeuge
+    out_of_scope:
+      - Generelles Unternehmens-Flottenanlage-Accounting (BC-2430)
+      - EV-Ladestation-Betrieb (BC-3480)
+  BC-3490.30.10:
+    name: Fahrzeug-Rebalancierungsbetrieb
+    description: |
+      Rebalancierung von Sharing-Fahrzeugen über Zonen, Stationen
+      und Nachfrage-Hotspots.
+  BC-3490.30.20:
+    name: Fahrzeugreinigung und Ladekoordination
+    description: |
+      Koordination von Fahrzeugreinigung, Laden und Betankung
+      im Außendienst.
+  BC-3490.30.30:
+    name: Fahrzeugschaden- und Verlustmanagement
+    description: |
+      Management von Schadensbeurteilung, Reparaturweiterleitung
+      und Verlustregress für Sharing-Fahrzeuge.
+  BC-3490.40:
+    name: Fahrer- und Anbieter-Betrieb
+    description: |
+      Onboarding, Compliance, Abwicklung und Leistungsmanagement
+      von Fahrern und sonstigen Dienstleistern.
+  BC-3490.40.10:
+    name: Fahrer-Onboarding und Compliance
+    description: |
+      Onboarding von Fahrern einschließlich Führerscheinprüfung,
+      Hintergrundüberprüfung und laufende Compliance.
+  BC-3490.40.20:
+    name: Fahrer-Verdienst und -Abwicklung
+    description: |
+      Berechnung und Auszahlung von Fahrerverdiensten, Trinkgeldern
+      und Anreizen.
+  BC-3490.40.30:
+    name: Fahrer-Leistungsmanagement
+    description: |
+      Leistungsmanagement von Fahrern einschließlich Bewertungen,
+      Coaching und Deaktivierung.
+  BC-3490.50:
+    name: Fahrgast-Betrieb
+    description: |
+      Onboarding, Support und Trust-and-Safety-Operationen für
+      Fahrgäste und Endkunden von Mobilitätsdiensten.
+  BC-3490.50.10:
+    name: Fahrgast-Onboarding und Identität
+    description: |
+      Onboarding von Fahrgästen einschließlich Identitätsverifikation,
+      Zahlungsmethode und Einwilligung.
+  BC-3490.50.20:
+    name: Fahrgast-Support-Betrieb
+    description: |
+      Unterstützung für Fahrgäste bei Vor-, Während- und
+      Nach-Fahrten-Problemen.
+  BC-3490.50.30:
+    name: Fahrgastsicherheit und Trust-Management
+    description: |
+      Trust-and-Safety-Operationen einschließlich Vorfallbehandlung,
+      Missbrauchsprävention und Sicherheitsfunktionen.
+  BC-3490.60:
+    name: Dynamische Preisgestaltung und Nachfragemanagement
+    description: |
+      Nachfrageprognose und Betrieb von dynamischer Preisgestaltung,
+      Surge- und Promotional-Engines für Mobilitätsdienste.
+  BC-3490.60.10:
+    name: Nachfrage-Prognose
+    description: |
+      Kurzfristige Nachfrageprognose nach Zone, Zeit und Diensttyp.
+  BC-3490.60.20:
+    name: Dynamische Preisgestaltungs-Engine-Betrieb
+    description: |
+      Betrieb von dynamischen Preis- und Surge-Engines einschließlich
+      Preisbegrenzungen und Auditierung.
+  BC-3490.60.30:
+    name: Promotions- und Anreiz-Betrieb
+    description: |
+      Betrieb von Fahrgast- und Fahrer-Promotions und Anreizen
+      über Kampagnen.
+  BC-3490.70:
+    name: Multimodal-Aggregation und Partnerbetrieb
+    description: |
+      MaaS-Partneraggregation, multimodale Fahrt-Komposition und
+      Inter-Operator-Abwicklung über Mobilitätspartner hinweg.
+  BC-3490.70.10:
+    name: MaaS-Partner-Onboarding
+    description: |
+      Onboarding von ÖPNV-, Ride-Hail- und Mikromobilitätspartnern
+      auf die MaaS-Plattform.
+  BC-3490.70.20:
+    name: Multimodale Fahrt-Komposition
+    description: |
+      Komposition multimodaler Fahrten aus ÖPNV und
+      On-Demand-Mobilität.
+  BC-3490.70.30:
+    name: Inter-Operator-Abwicklung
+    description: |
+      Abwicklung von Erlösen und Gebühren zwischen MaaS-Aggregatoren
+      und zugrundeliegenden Mobilitätsbetreibern.
+  BC-3490.80:
+    name: Mobilitäts-Regulierungs- und Stadtbetrieb
+    description: |
+      Engagement mit Städten und Regulatoren zu Genehmigungen,
+      Datenteilung und Bordstein-/Parkbetrieb.
+  BC-3490.80.10:
+    name: Stadtgenehmigung und Autorisierungs-Management
+    description: |
+      Management von städtischen Betriebsgenehmigungen,
+      Fahrzeugkontingenten und Autorisierungen in verschiedenen
+      Rechtsgebieten.
+  BC-3490.80.20:
+    name: Betriebsdaten-Sharing mit Städten
+    description: |
+      Teilen von Betriebsdaten mit Städten nach MDS, GBFS und
+      gleichwertigen Spezifikationen.
+  BC-3490.80.30:
+    name: Bordstein- und Parkkoordination
+    description: |
+      Koordination von Bordsteinzugang, Parkplätzen und
+      Wartezonen mit Stadtbehörden.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

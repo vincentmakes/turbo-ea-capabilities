@@ -1,0 +1,161 @@
+locale: de
+source: L1-vehicle-connected-services-management.yaml
+entries:
+  BC-3460:
+    name: Vernetzte Fahrzeugdienste
+    description: |
+      Betrieb vernetzter Fahrzeugdienste – Fahrzeugkonnektivitätsplattform,
+      Over-the-Air-Software-Updates, In-Car-Apps und Abonnements,
+      Fahrzeugdatenplattform, V2X-Dienste, Fahrzeugsicherheitsbetrieb
+      und Kundensupport für vernetzte Dienste.
+  BC-3460.10:
+    name: Fahrzeugkonnektivitätsplattform-Betrieb
+    description: |
+      Betrieb der In-Car-Konnektivität, SIM-Bereitstellung und der
+      Fahrzeug-zu-Cloud-Telemetrieplattform.
+  BC-3460.10.10:
+    name: Fahrzeug-SIM- und Konnektivitäts-Bereitstellung
+    description: |
+      Bereitstellung von eingebetteter SIM-Konnektivität und
+      Carrier-Roaming für vernetzte Fahrzeuge.
+  BC-3460.10.20:
+    name: Konnektivitätsnetz-Betrieb
+    description: |
+      Betrieb des Konnektivitäts-Backbones zur Unterstützung von
+      Fahrzeugdiensten einschließlich Failover und Dienstgüte.
+  BC-3460.10.30:
+    name: Fahrzeug-zu-Cloud-Telemetrie-Betrieb
+    description: |
+      Betrieb von Fahrzeugtelemetrie-Pipelines von In-Car-Agenten
+      zu Cloud-Plattformen.
+  BC-3460.20:
+    name: Over-the-Air-Software-Update-Betrieb
+    description: |
+      Betrieb von OTA-Software-Update-Kampagnen nach UN R156 und
+      dem Software-Update-Managementsystem.
+  BC-3460.20.10:
+    name: OTA-Kampagnenplanung
+    description: |
+      Planung von OTA-Software-Update-Kampagnen einschließlich
+      Umfang, Berechtigung und Rollout-Strategie.
+  BC-3460.20.20:
+    name: OTA-Paket-Distribution
+    description: |
+      Verteilung signierter OTA-Pakete an Fahrzeuge und Orchestrierung
+      der Installation über Steuergeräte.
+  BC-3460.20.30:
+    name: OTA-Rollback- und Wiederherstellungsmanagement
+    description: |
+      Management von OTA-Rollback, Wiederherstellung und
+      Feldvorfall-Reaktion bei fehlgeschlagenen Updates.
+  BC-3460.30:
+    name: In-Car-App- und Abonnement-Management
+    description: |
+      Betrieb des In-Car-App-Stores, Abonnements-Lebenszyklus
+      und In-Car-Zahlungsdienste.
+  BC-3460.30.10:
+    name: Vernetzter-Dienste-Katalog-Management
+    description: |
+      Pflege des Katalogs vernetzter Dienste und In-Car-Apps
+      für Kunden.
+  BC-3460.30.20:
+    name: Abonnements-Lebenszyklusmanagement
+    description: |
+      Lebenszyklusmanagement von Kunden-Abonnements für vernetzte
+      und Feature-on-Demand-Dienste.
+  BC-3460.30.30:
+    name: In-Car-Zahlungsbetrieb
+    description: |
+      Betrieb von In-Car-Zahlung, Tokenisierung und
+      Transaktionsabwicklung.
+  BC-3460.40:
+    name: Fahrzeugdatenplattform-Betrieb
+    description: |
+      Betrieb der Fahrzeugdatenplattform – Aufnahme, Speicherung,
+      Teilen und Einwilligungsmanagement – zur Unterstützung von
+      Erst- und Drittanbieter-Anwendungsfällen.
+    in_scope:
+      - Fahrzeugdaten-Aufnahme und -Speicherung
+      - Fahrzeugdaten-Sharing-APIs für interne und Partnernutzer
+      - Datenschutz- und Einwilligungsmanagement für Fahrzeugdaten
+    out_of_scope:
+      - Generisches Enterprise-Datenmanagement (unter Enterprise-Daten und IT abgedeckt)
+      - Funktionaler Sicherheitsnachweis (BC-3400.80)
+  BC-3460.40.10:
+    name: Fahrzeugdaten-Aufnahme und -Speicherung
+    description: |
+      Aufnahme, Normalisierung und Speicherung von Fahrzeugtelemetrie-
+      und Ereignisdaten im Flottenmaßstab.
+  BC-3460.40.20:
+    name: Fahrzeugdaten-Sharing und API-Management
+    description: |
+      Bereitstellung von Fahrzeugdaten-APIs für interne Teams, Händler
+      und externe Partner im Rahmen von Datenteilungsvereinbarungen.
+  BC-3460.40.30:
+    name: Fahrzeugdaten-Datenschutz und Einwilligungsmanagement
+    description: |
+      Management von Kunden-Einwilligung, -Präferenzen und
+      Datenschutzeinstellungen für fahrzeugerzeugte Daten.
+  BC-3460.50:
+    name: V2X- und Kooperative Mobilitätsdienste
+    description: |
+      Betrieb von V2X-Nachrichtendiensten und kooperativen
+      Mobilitätsdiensten mit Infrastruktur und anderen Fahrzeugen.
+  BC-3460.50.10:
+    name: V2I-Dienst-Betrieb
+    description: |
+      Betrieb von Fahrzeug-zu-Infrastruktur-Diensten wie
+      Ampelphasen-Timing, Baustellen-Warnung und Mauterhebung.
+  BC-3460.50.20:
+    name: V2V-Nachrichten-Betrieb
+    description: |
+      Betrieb von Fahrzeug-zu-Fahrzeug-Nachrichtendiensten und
+      Broadcast-Kanälen nach SAE J2735 und gleichwertigen Standards.
+  BC-3460.50.30:
+    name: Kooperativer-Awareness-Dienst-Betrieb
+    description: |
+      Betrieb kooperativer Awareness-, Gefahrenwarndienste und
+      Platooning-Dienste für gemischte Flotten.
+  BC-3460.60:
+    name: Fahrzeugsicherheits-Betrieb
+    description: |
+      Operativer Sicherheitsüberwachung der vernetzten Fahrzeugflotte
+      und Reaktion auf Fahrzeug-Cyber-Vorfälle.
+  BC-3460.60.10:
+    name: Fahrzeugbedrohungs-Erkennung
+    description: |
+      Erkennung von Cyberbedrohungen und anomalem Verhalten in der
+      vernetzten Fahrzeugflotte.
+  BC-3460.60.20:
+    name: Fahrzeug-Sicherheitsvorfall-Reaktion
+    description: |
+      Reaktion auf Fahrzeug-Cybersicherheitsvorfälle einschließlich
+      Eindämmung, Behebung und Kundenbenachrichtigung.
+  BC-3460.60.30:
+    name: Fahrzeug-SOC-Betrieb
+    description: |
+      Betrieb des Fahrzeug-Sicherheitsoperationszentrums und
+      unterstützender Telemetrie-Pipelines.
+  BC-3460.70:
+    name: Vernetzter-Dienste-Kundenbetrieb
+    description: |
+      Kundenorientierter Betrieb für vernetzte Dienste, einschließlich
+      Aktivierungsunterstützung, Problemlösung und Kontoverwaltung.
+  BC-3460.70.10:
+    name: Vernetzter-Dienste-Aktivierungsunterstützung
+    description: |
+      Unterstützung für Kunden-Aktivierung, -Übertragung und
+      -Deaktivierung vernetzter Dienste.
+  BC-3460.70.20:
+    name: Vernetzter-Dienste-Problemlösung
+    description: |
+      Lösung von Kunden-gemeldeten Problemen mit vernetzten Diensten
+      über Kontaktzentrum-, Händler- und Self-Service-Kanäle.
+  BC-3460.70.30:
+    name: Vernetzter-Dienste-Kontoverwaltung
+    description: |
+      Verwaltung von Kunden-Konten, Identitäten und Berechtigungen
+      für vernetzte Dienste mit Fahrzeugverknüpfung.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

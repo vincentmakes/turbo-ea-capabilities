@@ -1,0 +1,135 @@
+locale: de
+source: L1-warehousing-operations-management.yaml
+entries:
+  BC-2460:
+    name: Lagerbetrieb-Management
+    description: |
+      Betrieb von Drittanbieter-Lagern und Distributionszentren einschließlich
+      Wareneingang, Lagerung, Warenausgang, Mehrwertleistungen und Retouren-Logistik.
+  BC-2460.10:
+    name: Wareneingangs-Betriebsmanagement
+    description: |
+      Empfang, Inspektion und Einlagerung von Waren, die das Lager betreten.
+    in_scope:
+      - Voranmeldung und ASN-Verarbeitung
+      - Wareneingangsinspektion und Einlagerung
+    out_of_scope:
+      - Warenausgangsdisposition (BC-2460.30)
+      - Inventareigentum auf Versenderebene (BC-530)
+  BC-2460.10.10:
+    name: Voranmeldeplanung
+    description: |
+      ASN-Verarbeitung, Dockplanung und Ressourcenplanung für Wareneingänge.
+  BC-2460.10.20:
+    name: Wareneingang und Inspektion
+    description: |
+      Physischer Empfang und Inspektion eingehender Waren.
+  BC-2460.10.30:
+    name: Einlagerung und Lagerplatzzuweisung
+    description: |
+      Einlagerung empfangener Waren und Zuweisung von Lagerplätzen.
+  BC-2460.20:
+    name: Lager- und Inventarbetrieb-Management
+    description: |
+      Innerbetriebliche Lagervorgänge einschließlich Slotting, Stichprobeninventuren
+      und konditionierter Lagerung.
+  BC-2460.20.10:
+    name: Slotting und Lagerplatzverwaltung
+    description: |
+      Slotting-Entscheidungen und Lagerplatzverwaltung.
+  BC-2460.20.20:
+    name: Stichprobeninventur und Abstimmung
+    description: |
+      Stichprobeninventuren, Bestandsabstimmung und Bestandsanpassung.
+  BC-2460.20.30:
+    name: Chargen-, Serien- und Batch-Verfolgung
+    description: |
+      Verfolgung von Chargen-, Serien- und Batch-Attributen für gelagerte Waren.
+  BC-2460.20.40:
+    name: Kühlketten- und Konditioniertlagerung
+    description: |
+      Betrieb temperaturgesteuerter, gefährlicher und Zolllager.
+  BC-2460.30:
+    name: Warenausgangs-Betriebsmanagement
+    description: |
+      Kommissionierung, Verpackung, Etikettierung und Versand ausgehender Sendungen.
+  BC-2460.30.10:
+    name: Kommissionierungsbetrieb
+    description: |
+      Auftragskommissionierung mit Batch-, Wellen- und Zonen-Strategien.
+  BC-2460.30.20:
+    name: Verpackung und Etikettierung
+    description: |
+      Verpackung, Etikettierung und Versanddokumentenvorbereitung.
+  BC-2460.30.30:
+    name: Versand und Verladung
+    description: |
+      Beladung ausgehender Fahrzeuge und Versandbestätigung.
+  BC-2460.40:
+    name: Mehrwertleistungs-Management
+    description: |
+      Innerhalb des Lagers erbrachte Mehrwertleistungen wie Kitting, Co-Packing,
+      Etikettierung und Konfiguration.
+  BC-2460.40.10:
+    name: Kitting- und Montageleistungen
+    description: |
+      Kitting, Untermontage und Bündelzusammenstellung im Lager.
+  BC-2460.40.20:
+    name: Co-Packing und Umetikettierung
+    description: |
+      Co-Packing-, Umverpackungs- und Umetikettierungsleistungen.
+  BC-2460.40.30:
+    name: Postponement und Konfiguration
+    description: |
+      Spätphasen-Produktkonfiguration und Postponement.
+  BC-2460.50:
+    name: Retouren- und Reverse-Logistics-Management
+    description: |
+      Empfang, Triage und Disposition zurückgesandter Waren und Rückwärtslogistikflüsse.
+  BC-2460.50.10:
+    name: Retourenempfang und Triage
+    description: |
+      Empfang und Triage zurückgesandter Waren.
+  BC-2460.50.20:
+    name: Aufbereitung und Disposition
+    description: |
+      Aufbereitung, Umverpackung und Dispositionsentscheidungen.
+  BC-2460.50.30:
+    name: Reverse-Logistics-Entsorgung
+    description: |
+      Entsorgung, Recycling und Vernichtung nicht wiederverwendbarer Retouren.
+  BC-2460.60:
+    name: Lagerressourcen-Management
+    description: |
+      Verwaltung von Arbeitskräften, Fördertechnik und Dock- und Slot-Kapazität im Lager.
+  BC-2460.60.10:
+    name: Arbeitsplanung und Produktivität
+    description: |
+      Schichtplanung, Aufgabenzuweisung und Produktivitätsverfolgung.
+  BC-2460.60.20:
+    name: Fördertechnik-Betrieb
+    description: |
+      Betrieb, Zuweisung und Instandhaltung von Gabelstaplern, Förderbändern und AGVs.
+  BC-2460.60.30:
+    name: Dock- und Slot-Planung
+    description: |
+      Planung von Ein- und Ausgangs-Dock-Slots.
+  BC-2460.70:
+    name: Lagerleistungs-Management
+    description: |
+      Messung von Lagerservice, Genauigkeits- und Durchsatz-KPIs.
+  BC-2460.70.10:
+    name: Auftragszyklen-KPI-Verfolgung
+    description: |
+      Verfolgung von Auftragszyklen, Lieferquoten und Genauigkeits-KPIs.
+  BC-2460.70.20:
+    name: Bestandsgenauigkeits-Berichterstattung
+    description: |
+      Berichterstattung über Bestandsgenauigkeit und Schwund.
+  BC-2460.70.30:
+    name: Durchsatz- und Produktivitäts-Berichterstattung
+    description: |
+      Berichterstattung über Durchsatz, Einheiten pro Stunde und Produktivitäts-Benchmarks.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

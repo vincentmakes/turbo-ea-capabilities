@@ -1,0 +1,167 @@
+locale: de
+source: L1-autonomous-driving-operations-management.yaml
+entries:
+  BC-3470:
+    name: Autonomer Fahrbetrieb
+    description: |
+      Operativer Betrieb von automatisierten Fahrflotten –
+      Betriebsbereichs-Governance, Szenariobibliotheken,
+      ADS-Sicherheitsnachweis, Simulations- und Straßenvalidierung,
+      Teleoperation und Regulierungsengagement für Genehmigungen
+      und Vorfallmeldungen – verankert in ISO 21448, SAE J3016
+      und UN R157.
+  BC-3470.10:
+    name: Betriebsbereichs-Governance
+    description: |
+      Definition, Konformitätsüberwachung und Lebenszyklusmanagement
+      des Betriebsbereichs (ODD) für jede automatisierte Fahrfunktion.
+  BC-3470.10.10:
+    name: ODD-Definitions-Management
+    description: |
+      Definition des Betriebsbereichs einschließlich geografischer,
+      umgebungsbezogener und verhaltensbezogener Grenzen.
+  BC-3470.10.20:
+    name: ODD-Konformitätsüberwachung
+    description: |
+      Überwachung der In-Service-ODD-Konformität und Erkennung von
+      Betrieb außerhalb des definierten Bereichs.
+  BC-3470.10.30:
+    name: ODD-Grenz-Update-Management
+    description: |
+      Management von ODD-Erweiterungen und -Einschränkungen über
+      den Lebenszyklus einschließlich Genehmigung und Deployment.
+  BC-3470.20:
+    name: Fahrszenarien- und Testkatalog-Management
+    description: |
+      Kuratierung der Fahrszenarien-Bibliothek und des Testkatalogs
+      für Design, Simulation und Validierung automatisierter
+      Fahrsysteme.
+  BC-3470.20.10:
+    name: Szenariobibliotheks-Kuratierung
+    description: |
+      Kuratierung strukturierter Szenarien-Bibliotheken für ADS-Design
+      und -Validierung.
+  BC-3470.20.20:
+    name: Grenzfall-Erfassung und -Triage
+    description: |
+      Erfassung, Triage und Priorisierung von Grenzfällen aus
+      Simulation, Testflotten und Serienfahrzeugen.
+  BC-3470.20.30:
+    name: Szenarioabdeckungs-Berichterstattung
+    description: |
+      Berichterstattung zur Szenarioabdeckung und verbleibenden
+      Lücken gegenüber ODD-Anforderungen.
+  BC-3470.30:
+    name: Autonomer Flottenbetrieb
+    description: |
+      Täglicher Betrieb von Test-, Pilot- und kommerziellen
+      automatisierten Fahrflotten einschließlich Disposition,
+      Gesundheitszustand und Umrüstung.
+    in_scope:
+      - Disposition und Routenplanung autonomer Fahrzeuge
+      - Flottengesundheitsüberwachung und Grundwahrheits-Telemetrie
+      - Koordination von Laden, Reinigung und Umrüstung
+    out_of_scope:
+      - Fahrgastbuchung und -Preisgestaltung für Mobilitätsdienste (BC-3490)
+      - Fahrzeug-Engineering und Softwareentwicklung (BC-3400)
+  BC-3470.30.10:
+    name: Autonome Fahrzeug-Dispositionsbetrieb
+    description: |
+      Disposition und Routenplanung autonomer Fahrzeuge für Test-,
+      Pilot- und kommerzielle Einsätze.
+  BC-3470.30.20:
+    name: Autonome Flottengesundheitsüberwachung
+    description: |
+      Echtzeitüberwachung autonomer Flotten einschließlich
+      Sensorkalibrierung und Softwarestatus.
+  BC-3470.30.30:
+    name: Lade- und Reinigungskoordination für autonome Fahrzeuge
+    description: |
+      Koordination von Lade-, Reinigungs- und Umrüstungsaktivitäten
+      für autonome Flotten an Depots.
+  BC-3470.40:
+    name: Fernbetrieb und Teleassistenz
+    description: |
+      Betrieb von Teleassistenz-Zentren mit Fernunterstützung und
+      genehmigten Eingriffen für automatisierte Fahrflotten.
+  BC-3470.40.10:
+    name: Teleassistenz-Zentrum-Betrieb
+    description: |
+      Betrieb von Remote-Teleassistenz-Zentren einschließlich
+      Schichtmanagement und Eskalationswegen.
+  BC-3470.40.20:
+    name: Ferneingriff-Entscheidungsmanagement
+    description: |
+      Entscheidungsrahmen und Autorisierung für Ferneingriffe von
+      beratend bis zur direkten Fahrzeugsteuerung.
+  BC-3470.40.30:
+    name: Teleoperator-Personalmanagement
+    description: |
+      Rekrutierung, Schulung, Zertifizierung und Leistungsmanagement
+      des Teleoperator-Personals.
+  BC-3470.50:
+    name: Sicherheitsnachweis- und Assurance-Management
+    description: |
+      Pflege des operativen ADS-Sicherheitsnachweises und der
+      Indikatoren zur Überwachung seiner anhaltenden Gültigkeit.
+  BC-3470.50.10:
+    name: Sicherheitsnachweis-Erstellung
+    description: |
+      Erstellung des strukturierten ADS-Sicherheitsnachweises
+      einschließlich Behauptungen, Argumenten und Nachweisen.
+  BC-3470.50.20:
+    name: Sicherheitsargument-Pflege
+    description: |
+      Pflege von Sicherheitsargumenten bei Weiterentwicklung des
+      Systems, ODD und Betriebskontexts.
+  BC-3470.50.30:
+    name: Sicherheitsleistungsindikator-Verfolgung
+    description: |
+      Definition und Verfolgung führender und nachlaufender
+      Sicherheitsleistungsindikatoren für die eingesetzte Flotte.
+  BC-3470.60:
+    name: Autonomer Fahrt-Validierungsbetrieb
+    description: |
+      Operativer Betrieb der Validierungskampagnen – Simulation,
+      Versuchsgelände und öffentliche Straße – zur Bereitstellung
+      von Belegen für den Sicherheitsnachweis.
+  BC-3470.60.10:
+    name: Simulationsbasierter Validierungsbetrieb
+    description: |
+      Betrieb großangelegter Simulationsfarmen und
+      Szenario-Regression für ADS-Validierung.
+  BC-3470.60.20:
+    name: Geschlossener-Kurs-Validierungsbetrieb
+    description: |
+      Betrieb von geschlossenen Kursprüfprogrammen und
+      Versuchsgelände-Kampagnen für ADS-Validierung.
+  BC-3470.60.30:
+    name: Öffentlicher-Straßen-Erprobungsbetrieb
+    description: |
+      Betrieb überwachter Erprobungen auf öffentlichen Straßen
+      einschließlich Sicherheitsfahrer-Disziplin und
+      Vorfall-Management.
+  BC-3470.70:
+    name: ADS-Regulierungsengagement
+    description: |
+      Engagement mit Regulatoren und der Öffentlichkeit zu
+      automatisierten Fahrfreigaben, Vorfallmeldungen und
+      Vertrauensaufbau.
+  BC-3470.70.10:
+    name: ADS-Genehmigungen und Autorisierungs-Management
+    description: |
+      Management von Genehmigungen, Ausnahmen und Autorisierungen
+      für den ADS-Einsatz in den jeweiligen Rechtsgebieten.
+  BC-3470.70.20:
+    name: Vorfallmeldung an Regulatoren
+    description: |
+      Meldung von ADS-Vorfällen und Deaktivierungen an Regulatoren
+      sowie Koordination bei Untersuchungen.
+  BC-3470.70.30:
+    name: Öffentlichkeits- und Stakeholder-Engagement
+    description: |
+      Engagement mit Städten, Gemeinschaften und Stakeholdern
+      zum ADS-Einsatz, zur Sicherheit und zu Vorteilen.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

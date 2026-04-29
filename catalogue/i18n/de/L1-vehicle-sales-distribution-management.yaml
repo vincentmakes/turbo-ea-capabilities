@@ -1,0 +1,170 @@
+locale: de
+source: L1-vehicle-sales-distribution-management.yaml
+entries:
+  BC-3440:
+    name: Fahrzeugvertrieb-Management
+    description: |
+      Operativer Verkauf und Vertrieb von Neufahrzeugen –
+      Großhandelsplanung, Werkskapazitätszuweisung, Auftragsbanken,
+      Vorführ- und zertifizierte Gebrauchtfahrzeugbestände, Flotten-
+      und B2B-Verkauf sowie die Übergabe- und Zulassungsschnittstelle
+      zum Endkunden.
+  BC-3440.10:
+    name: Fahrzeugverkaufsplanung und -Zuteilung
+    description: |
+      Planung von Großhandelsvolumina nach Markt und Händler sowie
+      Zuteilung von Werksfertigungskapazitäten.
+  BC-3440.10.10:
+    name: Großhandelsvolumen-Planung
+    description: |
+      Periodische Planung von Großhandelsfahrzeugvolumina nach Markt,
+      Modell und Segment.
+  BC-3440.10.20:
+    name: Produktions-Markt-Zuteilung
+    description: |
+      Zuteilung begrenzter Werkskapazitäten auf Märkte und Kanäle
+      gemäß Nachfrage und strategischen Prioritäten.
+  BC-3440.10.30:
+    name: Produktionsslot-Management
+    description: |
+      Zuteilung, Tausch und Freigabe von Werksfertigungsslots an
+      Händler und Flottenkundschaft.
+  BC-3440.20:
+    name: Fahrzeugauftragsbank-Management
+    description: |
+      Erfassung, Konfigurationsvalidierung und Lebenszyklusmanagement
+      von Lager- und Kundenfahrzeugaufträgen.
+  BC-3440.20.10:
+    name: Lagerauftrags-Management
+    description: |
+      Management von Händlerlageraufträgen gegen Zuteilungen und
+      Lagerziele.
+  BC-3440.20.20:
+    name: Kundenauftrags-Erfassung
+    description: |
+      Erfassung von Einzelhandels- und Flottenkundenfahrzeugaufträgen
+      einschließlich Konfiguration und Preisgestaltung.
+  BC-3440.20.30:
+    name: Auftrags-Konfigurationsvalidierung
+    description: |
+      Validierung von Auftragskonfigurationen gegen Machbarkeits-,
+      Regulierungs- und Preisregeln.
+  BC-3440.20.40:
+    name: Auftrags-Statusverfolgung
+    description: |
+      End-to-End-Verfolgung des Auftragsstatus von Eingang über
+      Produktion, Versand bis zum Händlereingang.
+  BC-3440.30:
+    name: Werksauftrags- und Distributionsbetrieb
+    description: |
+      Koordination der Build-to-Order-Ausführung und der ausgehenden
+      Fahrzeuglogistik vom Werk zum Händler.
+  BC-3440.30.10:
+    name: Build-to-Order-Koordination
+    description: |
+      Koordination der Build-to-Order-Ausführung mit Fertigungsbetrieb
+      und Lieferantenabrufen.
+  BC-3440.30.20:
+    name: Fahrzeuglogistik-Koordination
+    description: |
+      Koordination der ausgehenden Fahrzeuglogistik per LKW, Bahn,
+      Schiff und interne Hofumläufe.
+  BC-3440.30.30:
+    name: Eingangshafen- und Hofbetriebs-Koordination
+    description: |
+      Koordination von Eingangshafen-, Bearbeitungszentrum- und
+      Hofbetrieb einschließlich Vorlieferungs-Zubehörinstallation.
+  BC-3440.40:
+    name: Fahrzeugbestand und Vorführwagen-Management
+    description: |
+      Management von Händlerlager-, Vorführ-, Presse- und
+      Leihfahrzeugbeständen.
+  BC-3440.40.10:
+    name: Händlerlagerbestand-Management
+    description: |
+      Transparenz und Management von Fahrzeugbeständen bei Händlern
+      und unterwegs.
+  BC-3440.40.20:
+    name: Vorführwagen-Management
+    description: |
+      Management von Vorführwagenpools bei Händlern und im
+      OEM-Außendienst.
+  BC-3440.40.30:
+    name: Presse- und Leihrfahrzeug-Management
+    description: |
+      Management von Presse-, Marketing- und Leihwagenflotten
+      einschließlich Konfigurationen und Rotation.
+  BC-3440.50:
+    name: Zertifiziertes-Gebrauchtfahrzeug-Programm-Management
+    description: |
+      Management von OEM-Programmen für zertifizierte Gebrauchtfahrzeuge
+      mit Inspektion, Berechtigung, Markenführung und Garantie.
+    in_scope:
+      - CPO-Inspektion und Berechtigungskriterien
+      - CPO-Bestand und Preisgestaltung
+      - CPO-spezifische Garantieprogramme
+    out_of_scope:
+      - Gebrauchtfahrzeug-Vermarktung von Leasingrückläufern außerhalb des CPO-Programms
+  BC-3440.50.10:
+    name: CPO-Fahrzeugberechtigung und -Inspektion
+    description: |
+      Definition und Durchführung von CPO-Berechtigungskriterien und
+      Inspektionsstandards.
+  BC-3440.50.20:
+    name: CPO-Bestandsmanagement
+    description: |
+      Management von CPO-Beständen bei Händlern und in
+      zentralen Pools.
+  BC-3440.50.30:
+    name: CPO-Garantie und Markenführung
+    description: |
+      Design und Vermarktung des Marken-CPO-Garantieprogramms.
+  BC-3440.60:
+    name: Flotten- und B2B-Verkaufsmanagement
+    description: |
+      Vertriebsbetrieb für Flotten-, Leasing-, Vermiet- und sonstige
+      B2B-Fahrzeugkäufer einschließlich Ausschreibungs- und
+      Angebotsbearbeitung.
+  BC-3440.60.10:
+    name: Flottenkonten-Management
+    description: |
+      Management von Großflottenkonten und
+      Firmenkunden-Geschäftsbeziehungen.
+  BC-3440.60.20:
+    name: Flottenausschreibungs- und Angebotsmanagement
+    description: |
+      Beantwortung von Flottenausschreibungen, RFPs und strukturierten
+      Angebotsprozessen für große Fahrzeuggeschäfte.
+  BC-3440.60.30:
+    name: Flottenfahrzeug-Spezifikationsmanagement
+    description: |
+      Management von flottenspezifischen Fahrzeugspezifikationen,
+      Optionen und Umbauten.
+  BC-3440.60.40:
+    name: Vermiet- und Leasing-Kanalmanagement
+    description: |
+      Management von OEM-Beziehungen zu Vermiet- und
+      Leasingunternehmen einschließlich Rückkaufvereinbarungen.
+  BC-3440.70:
+    name: Fahrzeugübergabe und Zulassungsunterstützung
+    description: |
+      Unterstützung für Händler bei Fahrzeugübergabe, Zulassung und
+      Eintritt in die Kundenerlebnisphase.
+  BC-3440.70.10:
+    name: Vorlieferungsinspektions-Koordination
+    description: |
+      Koordination von Vorlieferungsinspektionsstandards und
+      Abnahmen bei Händlern und Bearbeitungszentren.
+  BC-3440.70.20:
+    name: Fahrzeugzulassungs-Liaison
+    description: |
+      Kontakt zu Fahrzeugzulassungsbehörden und Bereitstellung von
+      Erstzulassungsdaten.
+  BC-3440.70.30:
+    name: Kunden-Übergabeerlebnis
+    description: |
+      Definition und Sicherung des Kunden-Übergabeerlebnisses bei
+      der Auslieferung.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"
