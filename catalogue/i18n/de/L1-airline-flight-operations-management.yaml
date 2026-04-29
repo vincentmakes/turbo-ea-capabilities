@@ -1,0 +1,177 @@
+locale: de
+source: L1-airline-flight-operations-management.yaml
+entries:
+  BC-4080:
+    name: Flugbetrieb Management
+    description: |
+      Flugplanplanung, Flugzeugrouting, Crewplanung, Dispatch, Gate- und
+      Turnaround-Koordination, IROPS-Wiederherstellung sowie Flugbetriebs-
+      und Sicherheitsberichterstattung für Fluggesellschaften.
+    in_scope:
+      - Flugplanplanung, Slotkoordination und Verbindungsbanken
+      - Flugzeugrouting, Schwanzkennnummernzuweisung und MEL-Verfolgung
+      - Crew-Pairing, -Einsatzplan und FTL-Konformität
+      - Flug-Dispatch und Betriebssteuerung
+      - Gate-Zuteilung und Turnaround-Koordination
+      - Operative Störungsentscheidungen (IROPS) für Flugzeug und Besatzung
+      - Flugbetriebs- und Sicherheitsereignisberichterstattung
+    out_of_scope:
+      - Flugsicherung durch ANSPs (BC-1700)
+      - Passagier-Umbuchungsfluss auf Buchungsebene (BC-4020.70)
+      - Frachtflughandling (BC-3270)
+  BC-4080.10:
+    name: Flugplanplanung
+    description: |
+      Erstellung und Veröffentlichung des Airline-Flugplans
+      einschließlich Netzwerk, Slots und Verbindungsbanken.
+  BC-4080.10.10:
+    name: Netzwerk- und Routenplangestaltung
+    description: |
+      Gestaltung des Netzwerks und Routenplans gegen Nachfrage- und Flottenpläne.
+  BC-4080.10.20:
+    name: Slot- und Flughafenkoordination
+    description: |
+      Koordination von Flughafenslots und -beschränkungen einschließlich IATA-WSG-konformem Scheduling.
+  BC-4080.10.30:
+    name: Flugplanerstellung und Veröffentlichung
+    description: |
+      Erstellung des veröffentlichten Flugplans und SSIM-Datei-Veröffentlichung an Vertriebspartner.
+  BC-4080.10.40:
+    name: Verbindungsbank-Optimierung
+    description: |
+      Optimierung von Hub-Verbindungsbanken und Mindestumsteigezeiten.
+  BC-4080.20:
+    name: Flugzeugrouting und Schwanzkennnummernzuweisung
+    description: |
+      Erstellung von Flugzeugrotationen, Schwanzkennnummernzuweisungen,
+      Tauschoperationen, Wartungsslotkoordination und MEL-Verfolgung.
+  BC-4080.20.10:
+    name: Flottenrotationsplanung
+    description: |
+      Planung von Flottenrotationen über das Netzwerk unter Berücksichtigung von Flugstunden- und Zyklusausgleich.
+  BC-4080.20.20:
+    name: Schwanzkennnummernzuweisung und Tauschoperationen
+    description: |
+      Zuweisung konkreter Schwanzkennnummern zu Flügen und Ausführung taktischer Tausche.
+  BC-4080.20.30:
+    name: Flugzeugwartungsslotkoordination
+    description: |
+      Koordination von Wartungsslots und Überführungsflügen gegen den Flugplan.
+  BC-4080.20.40:
+    name: Minimum-Equipment-List-Verfolgung
+    description: |
+      Verfolgung von MEL-Aufschüben gegen Ablauf und operative Auswirkungen.
+  BC-4080.30:
+    name: Crewplanung und Einsatzplan
+    description: |
+      Planung von Cockpit- und Kabinenbesatzung einschließlich Pairing-Erstellung,
+      Gebotsverfahren, Qualifikationsverfolgung und FTL-Konformität.
+  BC-4080.30.10:
+    name: Crew-Pairing-Erstellung
+    description: |
+      Erstellung von Crew-Pairings über den Flugplan unter Beachtung von Rechtsregeln.
+  BC-4080.30.20:
+    name: Crew-Gebotsverfahren und Einsatzplanerstellung
+    description: |
+      Betrieb von Gebotsverfahren und Einsatzplanerstellung für Cockpit- und Kabinenbesatzung.
+  BC-4080.30.30:
+    name: Crew-Qualifikations- und Aktualitätsverfolgung
+    description: |
+      Verfolgung von Qualifikation, Aktualität und Berechtigung für Besatzungsmitglieder.
+  BC-4080.30.40:
+    name: Flug- und Dienstzeiten-Konformität
+    description: |
+      Konformität mit FTL- und Dienstzeitregeln bei Planung und Ausführung.
+  BC-4080.40:
+    name: Flug-Dispatch und Betriebssteuerung
+    description: |
+      Generierung operativer Flugpläne, Kraftstoffentscheidungen, Wetter-
+      und NOTAM-Briefing sowie Betriebssteuerungs-Entscheidungsprozess.
+  BC-4080.40.10:
+    name: Flugplangenerierung
+    description: |
+      Generierung operativer Flugpläne einschließlich Route, Flugfläche und Flugzeit.
+  BC-4080.40.20:
+    name: Operative Kraftstoffberechnung
+    description: |
+      Berechnung des operativen Kraftstoffs einschließlich Reserve, Kontingenz und Ermessensbetankung.
+  BC-4080.40.30:
+    name: Wetter- und NOTAM-Briefing
+    description: |
+      Zusammenstellung und Weitergabe von Wetter- und NOTAM-Briefings an Crew und Dispatch.
+  BC-4080.40.40:
+    name: Operations-Control-Centre-Entscheidungsfindung
+    description: |
+      OCC-Entscheidungsfindung bei Verzögerungen, Umweglandungen und Wiederherstellungsoptionen.
+  BC-4080.50:
+    name: Gate- und Turnaround-Betrieb
+    description: |
+      Gate-Planung und Live-Turnaround-Koordination an Flughäfen
+      einschließlich Pushback- und Verspätungsmanagement auf dem Vorfeld.
+  BC-4080.50.10:
+    name: Gate-Zuteilung und Sequenzierung
+    description: |
+      Zuteilung von Gates und Stand-Sequenzierung im Tageslaufbetrieb.
+  BC-4080.50.20:
+    name: Turnaround-Koordination
+    description: |
+      Live-Koordination der Turnaround-Aktivitäten einschließlich Catering, Betankung und Boarding.
+  BC-4080.50.30:
+    name: Pushback- und Block-out-Betrieb
+    description: |
+      Pushback-, Block-out- und Rollout-Koordination am Stand.
+  BC-4080.50.40:
+    name: Vorfeld-Verspätungsmanagement
+    description: |
+      Management von Vorfeld-Verspätungen gemäß regulatorischen Zeitlimiten und Fahrgastversorgungspflichten.
+  BC-4080.60:
+    name: Flugstörungs- und IROPS-Management
+    description: |
+      Operative Entscheidungen bei Störungsereignissen einschließlich
+      Umweglandungen, Massenstornierungen und Crew-Wiederherstellung.
+    in_scope:
+      - Umweglandungs- und Stornierungsentscheidungen
+      - Crew-Störungswiederherstellung und Bereitschaftszuweisung
+      - Koordinationsübergabe an Passagier-Umbuchung (BC-4020.70)
+    out_of_scope:
+      - Passagierseitige Umbuchung und Entschädigungsfeststellung (BC-4020.70)
+  BC-4080.60.10:
+    name: Umweglandungs-Entscheidungsbetrieb
+    description: |
+      Betrieb zur Entscheidung und Durchführung von En-Route- und Vor-Abflug-Umweglandungen.
+  BC-4080.60.20:
+    name: Massenrückstellungs-Wiederherstellungsbetrieb
+    description: |
+      Wiederherstellungsbetrieb bei Massenstornierungen für Flugzeug, Crew und Slot.
+  BC-4080.60.30:
+    name: Crew-Störungswiederherstellung
+    description: |
+      Wiederherstellung von Crew-Einsatzplänen bei Störungen einschließlich Bereitschaftszuweisung.
+  BC-4080.60.40:
+    name: Passagier-Umbuchungskoordination
+    description: |
+      Koordination mit Passagier-Umbuchungsteams zu Wiederherstellungsoptionen und Priorisierung.
+  BC-4080.70:
+    name: Flugbetriebs- und Sicherheitsberichterstattung
+    description: |
+      Berichterstattung über Flugbetriebsleistung, Pünktlichkeits-KPIs,
+      Luftsicherheitsberichte und operative Sicherheitsdaten.
+  BC-4080.70.10:
+    name: Pünktlichkeitsberichterstattung
+    description: |
+      Berichterstattung über Pünktlichkeit und Verspätungscodes über das Netzwerk.
+  BC-4080.70.20:
+    name: Luftsicherheitsberichtserfassung
+    description: |
+      Erfassung und Priorisierung von Luftsicherheitsberichten von Crew und Betriebspersonal.
+  BC-4080.70.30:
+    name: Operative Sicherheitsuntersuchungsunterstützung
+    description: |
+      Unterstützung operativer Sicherheitsuntersuchungen einschließlich Datenerhebung und Nachverfolgung.
+  BC-4080.70.40:
+    name: Flugdatenanalyse-Feeds
+    description: |
+      Feeds von Flugdatenanalysen an Sicherheits- und Betriebsanalyseprogramme.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"
