@@ -1,0 +1,207 @@
+locale: es
+source: L1-guest-traveller-management.yaml
+entries:
+  BC-4040:
+    name: Gestión de huésped y viajero
+    description: |
+      Administración del registro único de huésped y viajero en la empresa — identidad,
+      preferencias, consentimiento, reconocimiento, segmentación y datos de documentos de
+      viaje y cumplimiento — con independencia de cualquier canal o establecimiento concreto.
+    in_scope:
+      - Perfil e identidad únicos del huésped y viajero
+      - Preferencias, requisitos dietéticos y de accesibilidad
+      - Consentimiento, permisos de marketing y derechos de los interesados
+      - Señalización de reconocimiento y entrega del estado de nivel
+      - Segmentación de huéspedes e información sobre el valor del ciclo de vida
+      - Documento de viaje, APIS y datos de control de listas de vigilancia
+    out_of_scope:
+      - Motores de acumulación y canje de fidelización (BC-4050)
+      - Ejecución del registro en recepción (BC-4060.10)
+      - Operaciones CRM transversales genéricas (BC-400)
+
+  BC-4040.10:
+    name: Gestión del perfil e identidad del huésped
+    description: |
+      Creación, deduplicación y verificación de identidad del perfil único del huésped
+      en los sistemas de reservas y operaciones.
+
+  BC-4040.10.10:
+    name: Creación del perfil del huésped
+    description: |
+      Creación de perfiles de huésped desde cualquier canal o punto de contacto
+      originador.
+
+  BC-4040.10.20:
+    name: Deduplicación del perfil del huésped
+    description: |
+      Deduplicación de perfiles de huésped mediante coincidencia determinista y
+      probabilística.
+
+  BC-4040.10.30:
+    name: Verificación de identidad del huésped
+    description: |
+      Verificación de la identidad del huésped en interacciones de alto valor o
+      reguladas.
+
+  BC-4040.10.40:
+    name: Fusión de perfiles y resolución de atributos
+    description: |
+      Fusión de perfiles duplicados y resolución de la supervivencia de atributos.
+
+  BC-4040.20:
+    name: Gestión de preferencias y personalización del huésped
+    description: |
+      Captura y administración de las preferencias del huésped en relación con la
+      estancia, los requisitos dietéticos y de accesibilidad, además de las reglas
+      de personalización.
+
+  BC-4040.20.10:
+    name: Captura de preferencias de estancia
+    description: |
+      Captura de preferencias de estancia como tipo de cama, piso y hora de llegada
+      preferida.
+
+  BC-4040.20.20:
+    name: Gestión de preferencias dietéticas y alérgenos
+    description: |
+      Gestión de las preferencias dietéticas, religiosas y de alérgenos para el
+      servicio de A&B y a bordo.
+
+  BC-4040.20.30:
+    name: Gestión de requisitos de accesibilidad
+    description: |
+      Gestión de los requisitos de accesibilidad y las necesidades de asistencia
+      especial en los puntos de contacto del viaje.
+
+  BC-4040.20.40:
+    name: Definición de reglas de personalización
+    description: |
+      Definición de las reglas de personalización que aplican las preferencias en
+      las interacciones de servicio y comercialización.
+
+  BC-4040.30:
+    name: Gestión del consentimiento y privacidad del huésped
+    description: |
+      Gestión del consentimiento del huésped, los permisos de marketing, los derechos
+      de los interesados y el cumplimiento de las transferencias transfronterizas de
+      datos de viaje.
+
+  BC-4040.30.10:
+    name: Captura y gestión del consentimiento
+    description: |
+      Captura y gestión continua de los registros de consentimiento por finalidad
+      y canal.
+
+  BC-4040.30.20:
+    name: Gestión de permisos de marketing
+    description: |
+      Gestión de los permisos de marketing, incluyendo los estados de suscripción
+      y baja por canal.
+
+  BC-4040.30.30:
+    name: Tramitación de solicitudes de los interesados
+    description: |
+      Tramitación de solicitudes de acceso, portabilidad, rectificación y supresión
+      de los interesados.
+
+  BC-4040.30.40:
+    name: Cumplimiento de transferencias transfronterizas
+    description: |
+      Cumplimiento de los requisitos de transferencia transfronteriza aplicables a
+      los datos del viajero y del huésped.
+
+  BC-4040.40:
+    name: Reconocimiento del huésped y entrega del estado de nivel
+    description: |
+      Entrega de señales de reconocimiento y estado de nivel a los equipos operativos
+      para que los huéspedes sean reconocidos de forma coherente en todos los puntos
+      de contacto.
+    in_scope:
+      - Señalización del reconocimiento antes de la llegada y en el establecimiento
+      - Registro y cierre de la entrega del reconocimiento
+    out_of_scope:
+      - Diseño del programa de fidelización y acumulación/canje (BC-4050)
+
+  BC-4040.40.10:
+    name: Señalización del reconocimiento previo a la llegada
+    description: |
+      Señalización de las expectativas de reconocimiento a los equipos operativos
+      antes de la llegada del huésped.
+
+  BC-4040.40.20:
+    name: Entrega del reconocimiento en el establecimiento
+    description: |
+      Entrega del reconocimiento por parte de los equipos de recepción, A&B y
+      conserjería durante la estancia del huésped.
+
+  BC-4040.40.30:
+    name: Registro del servicio de reconocimiento
+    description: |
+      Registro de los eventos de entrega de reconocimiento para la auditoría del
+      servicio y los circuitos de retroalimentación.
+
+  BC-4040.40.40:
+    name: Reporting de cierre del reconocimiento
+    description: |
+      Reporting de las tasas de cierre del reconocimiento frente a las señales de
+      reconocimiento previo a la llegada.
+
+  BC-4040.50:
+    name: Gestión de segmentación e información sobre el huésped
+    description: |
+      Definición de segmentos de huésped, modelado del valor del ciclo de vida y la
+      pérdida de clientes, y generación de información sobre cohortes y comportamiento.
+
+  BC-4040.50.10:
+    name: Definición de segmentación del huésped
+    description: |
+      Definición y mantenimiento de los segmentos de huésped utilizados en marketing
+      y comercialización.
+
+  BC-4040.50.20:
+    name: Modelado del valor del ciclo de vida
+    description: |
+      Modelado del valor del ciclo de vida del huésped como dato de entrada para las
+      decisiones de inversión y reconocimiento.
+
+  BC-4040.50.30:
+    name: Análisis de pérdida de clientes y retención
+    description: |
+      Análisis de los factores de pérdida de clientes y las oportunidades de retención
+      entre segmentos.
+
+  BC-4040.50.40:
+    name: Información sobre cohortes y comportamiento
+    description: |
+      Generación de información sobre cohortes y comportamiento a partir de eventos
+      de reserva, estancia e interacción.
+
+  BC-4040.60:
+    name: Gestión de documentos de viaje y datos de cumplimiento del viajero
+    description: |
+      Gestión de datos de documentos de viaje, APIS, visado y listas de vigilancia
+      necesarios para satisfacer las obligaciones de transporte y control fronterizo.
+
+  BC-4040.60.10:
+    name: Captura de documentos de viaje
+    description: |
+      Captura de datos de pasaporte, identificación y visado para la verificación
+      de elegibilidad de viaje y documentación.
+
+  BC-4040.60.20:
+    name: Envío de APIS e información anticipada sobre pasajeros
+    description: |
+      Envío de APIS e información anticipada sobre pasajeros a las autoridades de
+      control fronterizo.
+
+  BC-4040.60.30:
+    name: Referencia de elegibilidad para visado y ESTA
+    description: |
+      Comprobaciones de referencia frente a los regímenes de elegibilidad de visado,
+      ESTA y equivalentes.
+
+  BC-4040.60.40:
+    name: Cribado de Secure Flight y listas de vigilancia
+    description: |
+      Cribado de viajeros frente a Secure Flight y programas equivalentes de listas
+      de no vuelo y vigilancia.
