@@ -1,0 +1,262 @@
+locale: es
+source: L1-vehicle-engineering-management.yaml
+entries:
+  BC-3400:
+    name: Gestión de ingeniería de vehículos
+    description: |
+      Ingeniería de vehículo completo en carrocería, chasis, tren motriz (ICE, eléctrico,
+      pila de combustible), arquitectura eléctrica/electrónica, software embebido,
+      seguridad funcional, ciberseguridad y SOTIF, anclada en IATF 16949,
+      ISO 26262, ISO/SAE 21434, ISO 21448, Automotive SPICE y AUTOSAR.
+  BC-3400.10:
+    name: Gestión de arquitectura del vehículo
+    description: |
+      Arquitectura del vehículo completo, empaquetamiento, establecimiento de objetivos
+      de atributos y descomposición de plataforma/variante que enmarca toda la
+      ingeniería posterior.
+    in_scope:
+      - Objetivos de atributos del vehículo y resolución de compromisos
+      - Empaquetamiento, disposición y definición zonal del vehículo
+      - Elecciones de arquitectura de plataforma y módulo
+    out_of_scope:
+      - Gobierno de hitos de fase del programa (BC-3410)
+      - Ingeniería detallada a nivel de componente (cubierta en L2s específicos por disciplina)
+  BC-3400.10.10:
+    name: Establecimiento de objetivos de atributos del vehículo
+    description: |
+      Definición de objetivos de rendimiento, confort, seguridad, eficiencia y atributos
+      de marca a nivel de vehículo, y resolución de compromisos entre ellos.
+  BC-3400.10.20:
+    name: Empaquetamiento y disposición del vehículo
+    description: |
+      Empaquetamiento del vehículo completo, disposición de ocupantes y equipaje,
+      definición de puntos fijos y asignación zonal.
+  BC-3400.10.30:
+    name: Definición de arquitectura de plataforma
+    description: |
+      Definición de plataformas de vehículos compartidas, módulos comunes y
+      estrategias de transferencia entre programas.
+  BC-3400.10.40:
+    name: Arquitectura de módulos y variantes
+    description: |
+      Estrategia modular y de variantes que permite carrocerías derivadas, trenes
+      motrices y niveles de equipamiento sobre una arquitectura común.
+  BC-3400.20:
+    name: Ingeniería de tren motriz
+    description: |
+      Ingeniería de sistemas de propulsión de combustión interna, eléctricos y de pila
+      de combustible, incluidas transmisiones, línea de transmisión y sistemas de
+      almacenamiento de energía.
+  BC-3400.20.10:
+    name: Ingeniería de tren motriz de combustión interna
+    description: |
+      Ingeniería de motores ICE, sistemas de combustible, tratamiento de gases de
+      escape y calibración relacionada.
+  BC-3400.20.20:
+    name: Ingeniería de tren motriz eléctrico
+    description: |
+      Ingeniería de unidades de tracción eléctrica, inversores, electrónica de carga
+      e integración con el sistema de alta tensión.
+  BC-3400.20.30:
+    name: Ingeniería de sistemas de batería
+    description: |
+      Ingeniería de celdas, módulos, paquetes de batería de tracción, BMS y
+      subsistemas de gestión térmica.
+  BC-3400.20.40:
+    name: Ingeniería de sistemas de pila de combustible
+    description: |
+      Ingeniería del almacenamiento de hidrógeno, el stack de pila de combustible,
+      el balance de planta y su integración en el vehículo.
+  BC-3400.20.50:
+    name: Ingeniería de transmisión y línea de transmisión
+    description: |
+      Ingeniería de transmisiones, ejes, semiejes y componentes de línea de
+      transmisión con vectorización de par.
+  BC-3400.30:
+    name: Ingeniería de chasis y dinámica del vehículo
+    description: |
+      Ingeniería de sistemas de suspensión, dirección, frenado, ruedas y neumáticos,
+      y su comportamiento dinámico integrado.
+  BC-3400.30.10:
+    name: Ingeniería de suspensión y dirección
+    description: |
+      Ingeniería de geometría de suspensión, amortiguadores, muelles y sistemas de
+      dirección, incluida la dirección por cable.
+  BC-3400.30.20:
+    name: Ingeniería de sistemas de frenos
+    description: |
+      Ingeniería de frenos de base, mezcla regenerativa y sistemas de control
+      de frenado.
+  BC-3400.30.30:
+    name: Puesta a punto de la dinámica del vehículo
+    description: |
+      Puesta a punto del confort de marcha, maniobrabilidad, estabilidad y control
+      de tracción para conseguir los atributos dinámicos objetivo.
+  BC-3400.30.40:
+    name: Ingeniería de ruedas y neumáticos
+    description: |
+      Ingeniería y selección de ruedas y neumáticos, incluido el TPMS y los
+      compromisos entre rendimiento y eficiencia.
+  BC-3400.40:
+    name: Ingeniería de carrocería y exterior
+    description: |
+      Ingeniería de la carrocería en blanco, puertas y tapas, acristalamiento,
+      molduras exteriores, iluminación y superficies aerodinámicas.
+  BC-3400.40.10:
+    name: Ingeniería de carrocería en blanco
+    description: |
+      Ingeniería del armazón estructural de la carrocería, estrategia de unión y
+      rutas de carga para la resistencia a impactos.
+  BC-3400.40.20:
+    name: Ingeniería de cierres y acristalamiento
+    description: |
+      Ingeniería de puertas, capós, portones, cierres deslizantes y sistemas de
+      acristalamiento.
+  BC-3400.40.30:
+    name: Ingeniería de molduras exteriores e iluminación
+    description: |
+      Ingeniería de molduras exteriores, emblemas y sistemas de iluminación exterior,
+      incluidas arquitecturas de faros y señalización.
+  BC-3400.40.40:
+    name: Ingeniería aerodinámica
+    description: |
+      Desarrollo de la forma aerodinámica, equilibrio de resistencia y sustentación,
+      y gestión del flujo bajo el vehículo.
+  BC-3400.50:
+    name: Ingeniería de habitáculo y confort
+    description: |
+      Ingeniería de asientos, sistemas de retención, tapizado interior, superficies
+      HMI, climatización y rendimiento acústico/NVH.
+  BC-3400.50.10:
+    name: Ingeniería de asientos y sistemas de retención
+    description: |
+      Ingeniería de asientos, cinturones de seguridad, airbags y otros sistemas de
+      retención de ocupantes.
+  BC-3400.50.20:
+    name: Ingeniería de tapizado interior e HMI
+    description: |
+      Ingeniería del panel de instrumentos, consola central, techo interior y
+      superficies HMI físicas y digitales.
+  BC-3400.50.30:
+    name: Ingeniería de climatización
+    description: |
+      Ingeniería de sistemas HVAC, refrigerante, bomba de calor y gestión térmica
+      de batería y habitáculo.
+  BC-3400.50.40:
+    name: Ingeniería acústica y NVH
+    description: |
+      Ingeniería y puesta a punto del ruido, vibración y aspereza en todo el vehículo.
+  BC-3400.60:
+    name: Ingeniería de arquitectura eléctrica y electrónica
+    description: |
+      Ingeniería de la topología eléctrica/electrónica del vehículo, redes internas,
+      distribución de energía y hardware de ECU.
+  BC-3400.60.10:
+    name: Definición de topología E/E
+    description: |
+      Definición de la topología E/E del vehículo, incluidas arquitecturas de
+      computación por dominios, zonas y centralizadas.
+  BC-3400.60.20:
+    name: Ingeniería de red de comunicación interna del vehículo
+    description: |
+      Ingeniería de redes de comunicación internas CAN, CAN-FD, LIN, FlexRay,
+      Ethernet Automotriz y afines.
+  BC-3400.60.30:
+    name: Ingeniería de cableado y distribución de energía
+    description: |
+      Ingeniería de mazos de cables, conectores y distribución de energía de alta
+      y baja tensión.
+  BC-3400.60.40:
+    name: Ingeniería de hardware de ECU
+    description: |
+      Ingeniería de hardware de unidades de control electrónico, semiconductores
+      y diseños de PCB según estándares AEC-Q.
+  BC-3400.70:
+    name: Ingeniería de software del vehículo
+    description: |
+      Ingeniería de software embebido, plataformas de software automotriz y sistemas
+      operativos del vehículo alineados con AUTOSAR y Automotive SPICE.
+  BC-3400.70.10:
+    name: Ingeniería de software embebido
+    description: |
+      Ingeniería de software embebido a nivel de ECU, incluidos controladores de
+      dispositivo y componentes de software básico.
+  BC-3400.70.20:
+    name: Ingeniería de plataforma AUTOSAR
+    description: |
+      Ingeniería de configuraciones e integración de plataformas AUTOSAR Classic
+      y Adaptive.
+  BC-3400.70.30:
+    name: Ingeniería del sistema operativo del vehículo
+    description: |
+      Ingeniería de sistemas operativos de alto rendimiento, hipervisores y
+      middleware para vehículos definidos por software.
+  BC-3400.70.40:
+    name: Gestión de integración y compilación de software
+    description: |
+      Integración, compilación y gestión del tren de versiones del software del
+      vehículo en ECUs y dominios.
+  BC-3400.80:
+    name: Ingeniería de seguridad funcional y ciberseguridad
+    description: |
+      Disciplinas de ingeniería que garantizan el comportamiento seguro del vehículo
+      conectado y de seguridad crítica, ancladas en ISO 26262, ISO/SAE 21434
+      e ISO 21448.
+    in_scope:
+      - Elaboración del caso de seguridad funcional (ISO 26262)
+      - Ingeniería de ciberseguridad (ISO/SAE 21434)
+      - Análisis y validación SOTIF (ISO 21448)
+      - HARA, FMEA-MSR y TARA
+    out_of_scope:
+      - SOC del vehículo operacional y respuesta a incidentes (BC-3460.60)
+      - Presentaciones de homologación para UN R155/R156 (BC-3420.50)
+  BC-3400.80.10:
+    name: Gestión del caso de seguridad funcional
+    description: |
+      Elaboración y mantenimiento de casos de seguridad ISO 26262, asignación de
+      ASIL y evidencia de argumentación de seguridad.
+  BC-3400.80.20:
+    name: Ingeniería de ciberseguridad automotriz
+    description: |
+      Actividades de ingeniería de ciberseguridad alineadas con ISO/SAE 21434,
+      incluidos TARA, diseño seguro y ciclo de vida de desarrollo seguro.
+  BC-3400.80.30:
+    name: Ingeniería SOTIF
+    description: |
+      Análisis y validación de la seguridad de la funcionalidad prevista para
+      características ADAS y de conducción automatizada según ISO 21448.
+  BC-3400.80.40:
+    name: Análisis de peligros y riesgos
+    description: |
+      HARA, FMEA-MSR y otros análisis sistemáticos de peligros que originan
+      requisitos de seguridad funcional y ciberseguridad.
+  BC-3400.90:
+    name: Gestión de verificación y validación del vehículo
+    description: |
+      Verificación y validación de diseños de vehículo, subsistema y componente
+      mediante campañas virtuales, de banco y físicas.
+  BC-3400.90.10:
+    name: Validación virtual
+    description: |
+      Verificación virtual de comportamiento del vehículo y subsistemas basada en
+      CAE, MIL/SIL/HIL y gemelos digitales.
+  BC-3400.90.20:
+    name: Ensayos de componentes y subsistemas
+    description: |
+      Ensayos en banco y en útiles de componentes y subsistemas frente a
+      especificaciones de ingeniería.
+  BC-3400.90.30:
+    name: Ensayos de integración del vehículo
+    description: |
+      Ensayos de integración del vehículo completo en polígonos de pruebas y
+      vías públicas bajo condiciones controladas.
+  BC-3400.90.40:
+    name: Ensayos de durabilidad y fiabilidad
+    description: |
+      Ensayos acelerados y correlacionados con el cliente para la durabilidad
+      y fiabilidad de componentes y del vehículo completo.
+  BC-3400.90.50:
+    name: Ensayos de choque y protección de ocupantes
+    description: |
+      Ensayos de ingeniería de choque y protección de ocupantes en apoyo de
+      requisitos normativos y de valoración de consumidores.

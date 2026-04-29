@@ -1,0 +1,132 @@
+locale: es
+source: L1-transport-operations-management.yaml
+entries:
+  BC-2420:
+    name: Gestión de operaciones de transporte
+    description: |
+      Ejecución multimodal de movimientos de transporte desde la recogida hasta
+      el transporte de larga distancia, el drayage y la entrega de última milla,
+      incluida la respuesta a perturbaciones operativas.
+  BC-2420.10:
+    name: Gestión del despacho
+    description: |
+      Asignación de cargas, conductores, tripulaciones y equipos a movimientos de
+      transporte programados y ad hoc.
+    in_scope:
+      - Asignación de carga a conductor y carga a vehículo
+      - Instrucciones de posicionamiento de equipos
+    out_of_scope:
+      - Programación de conductores previa al despacho (BC-2440)
+      - Asignación de capacidad por contrato (BC-2400.20)
+  BC-2420.10.10:
+    name: Asignación de cargas
+    description: |
+      Asignación de cargas a vehículos, buques, vuelos o rutas de tren.
+  BC-2420.10.20:
+    name: Despacho de conductores y tripulaciones
+    description: |
+      Despacho de conductores y tripulaciones cualificados para las cargas
+      asignadas.
+  BC-2420.10.30:
+    name: Despacho de equipos
+    description: |
+      Posicionamiento de contenedores, remolques y ULDs para los movimientos
+      asignados.
+  BC-2420.20:
+    name: Gestión de operaciones de larga distancia
+    description: |
+      Movimiento de carga a larga distancia entre centros, terminales y puertas
+      de enlace a través de varios modos.
+  BC-2420.20.10:
+    name: Operaciones de larga distancia por carretera
+    description: |
+      Transporte de larga distancia en camión entre centros y terminales.
+  BC-2420.20.20:
+    name: Operaciones de larga distancia por ferrocarril
+    description: |
+      Operación de trenes de mercancías y servicios de tren bloque.
+  BC-2420.20.30:
+    name: Operaciones de larga distancia por océano
+    description: |
+      Operaciones de travesía entre puertos, incluidos los tramos de
+      transbordo.
+  BC-2420.20.40:
+    name: Operaciones de larga distancia por aire
+    description: |
+      Operación de vuelos de carga y servicios de avión de carga entre
+      aeropuertos.
+  BC-2420.30:
+    name: Gestión de operaciones de recogida y drayage
+    description: |
+      Recogidas en primera milla de los expedidores y drayage de corta distancia
+      entre terminales, patios y puntos interiores.
+  BC-2420.30.10:
+    name: Operaciones de recogida
+    description: |
+      Recogida de carga de expedidores y consolidadores.
+  BC-2420.30.20:
+    name: Operaciones de drayage de contenedores
+    description: |
+      Drayage de contenedores entre terminales portuarias, rampas ferroviarias y
+      depósitos interiores.
+  BC-2420.30.30:
+    name: Movimiento de equipos vacíos
+    description: |
+      Movimiento de contenedores, remolques y ULDs vacíos entre depósitos.
+  BC-2420.40:
+    name: Gestión de operaciones de entrega de última milla
+    description: |
+      Entrega en el tramo final a los destinatarios, incluidos el enrutamiento,
+      la ejecución y la prueba de entrega.
+  BC-2420.40.10:
+    name: Enrutamiento de última milla
+    description: |
+      Enrutamiento y secuenciación de paradas de entrega y ventanas horarias.
+  BC-2420.40.20:
+    name: Ejecución de entregas a clientes
+    description: |
+      Entrega en el lugar, captura de firma y transferencia a los destinatarios.
+  BC-2420.40.30:
+    name: Prueba de entrega
+    description: |
+      Captura y almacenamiento de registros de prueba de entrega.
+  BC-2420.40.40:
+    name: Gestión de excepciones de entrega
+    description: |
+      Gestión de rechazos, entregas fallidas y nuevos intentos.
+  BC-2420.50:
+    name: Gestión de perturbaciones operativas
+    description: |
+      Detección de perturbaciones operativas en curso y coordinación de acciones
+      de recuperación.
+  BC-2420.50.10:
+    name: Detección de incidentes operativos
+    description: |
+      Detección de averías, clima adverso, retrasos portuarios y otras
+      perturbaciones.
+  BC-2420.50.20:
+    name: Desvío y recuperación
+    description: |
+      Desvío de la carga y recuperación de los servicios perturbados.
+  BC-2420.50.30:
+    name: Restablecimiento del servicio
+    description: |
+      Restablecimiento de los horarios normales y los compromisos con los
+      clientes.
+  BC-2420.60:
+    name: Gestión del rendimiento operativo
+    description: |
+      Medición operativa del cumplimiento de horarios, tiempos de tránsito y
+      adherencia a los niveles de servicio.
+  BC-2420.60.10:
+    name: Seguimiento del cumplimiento de horarios
+    description: |
+      Seguimiento de la puntualidad en recogida, salida, llegada y entrega.
+  BC-2420.60.20:
+    name: Monitorización del tiempo de tránsito
+    description: |
+      Monitorización del tiempo de tránsito real frente al comprometido.
+  BC-2420.60.30:
+    name: Informe de KPIs operativos
+    description: |
+      Reporte de KPIs operativos a las partes interesadas internas y externas.

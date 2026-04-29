@@ -1,0 +1,147 @@
+locale: es
+source: L1-connected-product-firmware-management.yaml
+entries:
+  BC-1950:
+    name: Gestión de firmware de productos conectados
+    description: |
+      Ciclo de vida operativo de los productos eléctricos conectados en campo — identidad del
+      dispositivo, compilación y publicación de firmware, actualizaciones OTA, telemetría,
+      ciberseguridad del producto y operaciones de plataforma IIoT.
+  BC-1950.10:
+    name: Gestión de identidad y aprovisionamiento de dispositivos
+    description: |
+      Emisión y ciclo de vida de identidades de dispositivo y credenciales criptográficas.
+  BC-1950.10.10:
+    name: Emisión de identidad de dispositivo
+    description: |
+      Emisión de identidades únicas de dispositivo en el momento de fabricación.
+  BC-1950.10.20:
+    name: Aprovisionamiento de claves criptográficas
+    description: |
+      Aprovisionamiento de claves criptográficas en los dispositivos.
+  BC-1950.10.30:
+    name: Incorporación del dispositivo a la plataforma
+    description: |
+      Incorporación de dispositivos a la plataforma de productos conectados.
+  BC-1950.10.40:
+    name: Descomisionamiento de dispositivos
+    description: |
+      Descomisionamiento y revocación de credenciales para dispositivos retirados.
+  BC-1950.20:
+    name: Gestión de compilación y publicación de firmware
+    description: |
+      Pipelines de compilación, aprobación de versiones, firma e inventario de versiones para
+      firmware de producción.
+  BC-1950.20.10:
+    name: Gestión del pipeline de compilación de firmware
+    description: |
+      Operación de pipelines de compilación e integración continua de firmware.
+  BC-1950.20.20:
+    name: Aprobación de publicación de firmware
+    description: |
+      Aprobación por etapas de las publicaciones de firmware para su despliegue.
+  BC-1950.20.30:
+    name: Firma e integridad del firmware
+    description: |
+      Firma de código y protección de integridad de los artefactos de firmware.
+  BC-1950.20.40:
+    name: Inventario de versiones de firmware
+    description: |
+      Inventario de versiones de firmware desplegadas en la base instalada.
+  BC-1950.30:
+    name: Gestión de actualizaciones inalámbricas
+    description: |
+      Planificación, ejecución y reversión de actualizaciones de firmware OTA.
+  BC-1950.30.10:
+    name: Planificación de campañas OTA
+    description: |
+      Planificación de campañas OTA y cohortes de despliegue.
+  BC-1950.30.20:
+    name: Ejecución del despliegue OTA
+    description: |
+      Ejecución de despliegues OTA y seguimiento del progreso.
+  BC-1950.30.30:
+    name: Gestión de reversión OTA
+    description: |
+      Reversión de actualizaciones OTA fallidas a versiones conocidas como correctas.
+  BC-1950.30.40:
+    name: Verificación de compatibilidad OTA
+    description: |
+      Verificación de la compatibilidad del firmware antes de la publicación OTA.
+  BC-1950.40:
+    name: Gestión de telemetría y conectividad del dispositivo
+    description: |
+      Ingesta de telemetría, estado de conectividad, enrutamiento y gestión de operadores o SIM.
+  BC-1950.40.10:
+    name: Operaciones de ingesta de telemetría
+    description: |
+      Ingesta de telemetría del dispositivo en los almacenes de la plataforma.
+  BC-1950.40.20:
+    name: Monitoreo del estado de conectividad
+    description: |
+      Monitoreo del estado de conectividad y accesibilidad del dispositivo.
+  BC-1950.40.30:
+    name: Enrutamiento de datos de telemetría
+    description: |
+      Enrutamiento de telemetría hacia consumidores y analíticas aguas abajo.
+  BC-1950.40.40:
+    name: Gestión de operador de red y SIM
+    description: |
+      Gestión de relaciones con operadores celulares e inventario de SIM.
+  BC-1950.50:
+    name: Gestión de ciberseguridad de productos conectados
+    description: |
+      Ciberseguridad en el lado del producto que abarca amenazas, vulnerabilidades, arranque
+      seguro y conformidad.
+  BC-1950.50.10:
+    name: Modelado de amenazas del producto
+    description: |
+      Modelado de amenazas para diseños de productos conectados.
+  BC-1950.50.20:
+    name: Divulgación y respuesta ante vulnerabilidades
+    description: |
+      Divulgación coordinada y respuesta ante vulnerabilidades del producto.
+  BC-1950.50.30:
+    name: Arranque seguro y atestación
+    description: |
+      Mecanismos de arranque seguro y atestación en los dispositivos.
+  BC-1950.50.40:
+    name: Conformidad de ciberseguridad del producto
+    description: |
+      Conformidad de los productos conectados con IEC 62443 y regímenes equivalentes.
+  BC-1950.60:
+    name: Operaciones de plataforma de productos conectados
+    description: |
+      Operación de la plataforma IIoT subyacente a los productos conectados.
+  BC-1950.60.10:
+    name: Gestión de inquilinos de la plataforma IIoT
+    description: |
+      Incorporación de inquilinos e isolamiento en la plataforma IIoT.
+  BC-1950.60.20:
+    name: Capacidad y rendimiento de la plataforma
+    description: |
+      Planificación de capacidad y gestión del rendimiento de la plataforma.
+  BC-1950.60.30:
+    name: Servicios de integración de la plataforma
+    description: |
+      Integración de la plataforma con sistemas empresariales y de clientes.
+  BC-1950.60.40:
+    name: Ciclo de vida de la API de la plataforma
+    description: |
+      Ciclo de vida de las API y SDK expuestos por la plataforma.
+  BC-1950.70:
+    name: Gestión de operaciones de edge y pasarelas
+    description: |
+      Operación de aplicaciones edge y dispositivos de pasarela en campo.
+  BC-1950.70.10:
+    name: Despliegue de aplicaciones edge
+    description: |
+      Despliegue de aplicaciones edge en pasarelas y controladores.
+  BC-1950.70.20:
+    name: Gestión de configuración de pasarelas
+    description: |
+      Gestión de la configuración de dispositivos de pasarela en campo.
+  BC-1950.70.30:
+    name: Monitoreo de salud del edge
+    description: |
+      Monitoreo de la salud de dispositivos y aplicaciones edge.

@@ -1,0 +1,107 @@
+locale: es
+source: L1-transport-network-planning-management.yaml
+entries:
+  BC-2410:
+    name: Gestión de la planificación de la red de transporte
+    description: |
+      Diseño de redes de transporte, carriles, centros, horarios y combinación
+      modal que determinan la cartera de servicios del transportista o 3PL.
+  BC-2410.10:
+    name: Gestión del diseño de la red
+    description: |
+      Diseño a largo plazo de centros, puertas de enlace, carriles y combinación
+      modal que sustenta la cartera de servicios.
+    in_scope:
+      - Decisiones de estructura hub-and-spoke y punto a punto
+      - Diseño de la combinación modal entre carretera, ferrocarril, océano y aire
+    out_of_scope:
+      - Diseño de red del lado de la demanda por parte de los expedidores (BC-520)
+  BC-2410.10.10:
+    name: Diseño de centros y puertas de enlace
+    description: |
+      Selección y dimensionamiento de centros, puertas de enlace y puntos de
+      consolidación.
+  BC-2410.10.20:
+    name: Diseño de carriles y servicios
+    description: |
+      Definición de carriles origen-destino y los servicios que operan en ellos.
+  BC-2410.10.30:
+    name: Diseño de la combinación modal
+    description: |
+      Elección del modo y la combinación intermodal para cada carril y nivel de
+      servicio.
+  BC-2410.20:
+    name: Gestión de la planificación de horarios
+    description: |
+      Construcción de horarios maestros, espacios y ventanas de servicio para
+      travesías, vuelos, rutas de tren y salidas de camiones.
+  BC-2410.20.10:
+    name: Diseño del horario maestro
+    description: |
+      Diseño de horarios recurrentes de travesías, vuelos, trenes y camiones.
+  BC-2410.20.20:
+    name: Planificación de espacios y ventanas
+    description: |
+      Asignación de ventanas de atraque, pista y puerta a los servicios
+      programados.
+  BC-2410.20.30:
+    name: Publicación de horarios
+    description: |
+      Publicación de horarios a clientes, socios y canales de reserva.
+  BC-2410.30:
+    name: Gestión de patrones de servicio
+    description: |
+      Definición de productos de servicio, niveles de tiempo de tránsito y el
+      catálogo de servicios ofrecidos a los clientes.
+  BC-2410.30.10:
+    name: Definición del nivel de servicio
+    description: |
+      Definición de niveles de servicio exprés, estándar, diferido e intermodal
+      con sus compromisos.
+  BC-2410.30.20:
+    name: Ingeniería de tiempos de tránsito
+    description: |
+      Ingeniería de los tiempos de tránsito de extremo a extremo a lo largo de
+      tramos y conexiones.
+  BC-2410.30.30:
+    name: Gestión del catálogo de servicios
+    description: |
+      Mantenimiento del catálogo publicado de servicios de transporte.
+  BC-2410.40:
+    name: Gestión del equilibrio capacidad-demanda
+    description: |
+      Conciliación de la capacidad planificada con la demanda prevista, incluido
+      el reposicionamiento de equipos vacíos.
+  BC-2410.40.10:
+    name: Integración de la previsión de demanda
+    description: |
+      Integración de las previsiones de demanda de clientes y mercado en los
+      planes de red.
+  BC-2410.40.20:
+    name: Conciliación del plan de capacidad
+    description: |
+      Conciliación de la capacidad planificada frente a la demanda y las
+      restricciones.
+  BC-2410.40.30:
+    name: Planificación del reposicionamiento de equipos vacíos
+    description: |
+      Planificación del reposicionamiento de contenedores, remolques y ULDs
+      vacíos.
+  BC-2410.50:
+    name: Optimización y simulación de la red
+    description: |
+      Modelización, simulación y evaluación comparativa de opciones de red y
+      escenarios de perturbación.
+  BC-2410.50.10:
+    name: Modelización de la red
+    description: |
+      Construcción de modelos analíticos de la red de transporte.
+  BC-2410.50.20:
+    name: Simulación de escenarios
+    description: |
+      Simulación de alternativas de demanda, perturbación y diseño.
+  BC-2410.50.30:
+    name: Evaluación comparativa del rendimiento de la red
+    description: |
+      Evaluación comparativa del costo y servicio de la red frente a competidores
+      y configuraciones anteriores.

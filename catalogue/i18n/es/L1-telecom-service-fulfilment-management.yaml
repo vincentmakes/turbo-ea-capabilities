@@ -1,0 +1,137 @@
+locale: es
+source: L1-telecom-service-fulfilment-management.yaml
+entries:
+  BC-2620:
+    name: Cumplimiento de servicios de telecomunicaciones
+    description: |
+      Captura, descomposición, aprovisionamiento, activación, aceptación e instalación
+      en las instalaciones del cliente de pedidos de servicio para clientes residenciales,
+      empresariales y mayoristas, siguiendo los marcos eTOM de cumplimiento de servicios
+      y las Open APIs de TM Forum.
+  BC-2620.10:
+    name: Captura de pedidos de servicio
+    description: |
+      Captura multicanal de pedidos de servicio con verificaciones de viabilidad y
+      crédito previas a su aceptación.
+  BC-2620.10.10:
+    name: Captura de pedidos omnicanal
+    description: |
+      Captura de pedidos de servicio a través de canales minoristas, digitales, de
+      atención al cliente y de socios.
+  BC-2620.10.20:
+    name: Verificación de viabilidad del servicio
+    description: |
+      Comprobaciones de viabilidad a nivel de dirección, cobertura y recursos frente a
+      los servicios solicitados.
+  BC-2620.10.30:
+    name: Control de crédito y riesgo
+    description: |
+      Evaluación de crédito y control del riesgo de fraude antes de la aceptación del
+      pedido.
+  BC-2620.10.40:
+    name: Envío de pedido
+    description: |
+      Validación, persistencia y envío a sistemas aguas abajo de los pedidos de servicio
+      aceptados.
+  BC-2620.20:
+    name: Descomposición de pedidos de servicio
+    description: |
+      Descomposición de pedidos orientados al cliente en trabajo orientado a recursos y
+      secuenciación de dependencias.
+  BC-2620.20.10:
+    name: Descomposición servicio-recurso
+    description: |
+      Descomposición de servicios orientados al cliente en servicios y elementos
+      orientados a recursos.
+  BC-2620.20.20:
+    name: Generación de órdenes de trabajo
+    description: |
+      Generación de órdenes de trabajo de red y de campo a partir de los pedidos de
+      servicio descompuestos.
+  BC-2620.20.30:
+    name: Secuenciación de dependencias
+    description: |
+      Secuenciación del trabajo dependiente entre dominios de red para entregar un
+      servicio extremo a extremo.
+  BC-2620.30:
+    name: Aprovisionamiento de servicios
+    description: |
+      Asignación de recursos de red y orquestación de cambios de configuración para
+      instanciar servicios.
+  BC-2620.30.10:
+    name: Asignación de recursos de red
+    description: |
+      Asignación de ancho de banda, puertos, direcciones IP y otros recursos a una
+      instancia de servicio específica.
+  BC-2620.30.20:
+    name: Orquestación de servicios
+    description: |
+      Ejecución orquestada de los pasos de aprovisionamiento en funciones de red físicas
+      y virtualizadas.
+  BC-2620.30.30:
+    name: Aplicación de configuración
+    description: |
+      Aplicación de la configuración específica del servicio a los elementos de red
+      destino.
+  BC-2620.40:
+    name: Activación de servicios
+    description: |
+      Puesta en marcha definitiva de los servicios aprovisionados y notificación al
+      cliente y a los sistemas aguas abajo.
+  BC-2620.40.10:
+    name: Puesta en marcha del servicio
+    description: |
+      Paso de los servicios aprovisionados al estado activo.
+  BC-2620.40.20:
+    name: Alta de suscriptores
+    description: |
+      Alta de suscriptores en los sistemas de autenticación, autorización y políticas
+      para el nuevo servicio.
+  BC-2620.40.30:
+    name: Activación de facturación
+    description: |
+      Comunicación de eventos de activación a facturación para el inicio del cobro y
+      del reloj contractual.
+  BC-2620.40.40:
+    name: Notificación de activación al cliente
+    description: |
+      Notificación a clientes y canales de que el servicio está activo y disponible para
+      su uso.
+  BC-2620.50:
+    name: Pruebas de aceptación del servicio
+    description: |
+      Pruebas extremo a extremo y captura de línea base antes de la entrega formal de
+      nuevos servicios.
+  BC-2620.50.10:
+    name: Pruebas del servicio extremo a extremo
+    description: |
+      Ejecución de pruebas funcionales y de rendimiento extremo a extremo sobre
+      servicios recién aprovisionados.
+  BC-2620.50.20:
+    name: Captura de línea base del servicio
+    description: |
+      Captura de líneas base de rendimiento del servicio para la monitorización
+      posterior de SLA.
+  BC-2620.50.30:
+    name: Firma de aceptación
+    description: |
+      Aceptación formal y entrega de servicios a operaciones y al cliente.
+  BC-2620.60:
+    name: Coordinación de instalación en instalaciones del cliente
+    description: |
+      Coordinación de la instalación in situ de equipos en las instalaciones del cliente
+      y actividades relacionadas.
+  BC-2620.60.10:
+    name: Programación de citas de instalación
+    description: |
+      Programación de citas de clientes para instalaciones in situ.
+  BC-2620.60.20:
+    name: Coordinación de instalación in situ
+    description: |
+      Coordinación de las actividades del instalador, materiales y acceso en las
+      instalaciones del cliente.
+  BC-2620.60.30:
+    name: Registro de equipos del cliente
+    description: |
+      Registro de los equipos instalados en las instalaciones del cliente y su
+      asociación con la instancia de servicio.
