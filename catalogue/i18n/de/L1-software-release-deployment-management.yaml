@@ -1,0 +1,156 @@
+locale: de
+source: L1-software-release-deployment-management.yaml
+entries:
+  BC-4210:
+    name: Software-Release- und -Bereitstellungs-Management
+    description: |
+      Kontinuierliche Integration, Umgebungsverwaltung, Release-Engineering,
+      Feature-Flags und progressive Bereitstellung von SaaS-Produkten
+      in die Produktion.
+  BC-4210.10:
+    name: Kontinuierliche Integrations-Verwaltung
+    description: |
+      Build-Pipelines, Artefaktproduktion und Pipeline-Policy-Durchsetzung,
+      die das integrierte Produkt kontinuierlich baubar halten.
+  BC-4210.10.10:
+    name: Build-Pipeline-Management
+    description: |
+      Definition und Betrieb automatisierter Build-Pipelines für
+      Produktkomponenten.
+  BC-4210.10.20:
+    name: Artefakt-Repository-Management
+    description: |
+      Speicherung, Aufbewahrung und Zugriff auf Build-Artefakte und
+      Abhängigkeitspakete.
+  BC-4210.10.30:
+    name: Pipeline-Policy-Durchsetzung
+    description: |
+      Durchsetzung erforderlicher Qualitäts-, Sicherheits- und
+      Herkunftsgates über Pipelines hinweg.
+  BC-4210.20:
+    name: Umgebungs-Management
+    description: |
+      Bereitstellung und Pflege von Nicht-Produktionsumgebungen für
+      Entwicklung, Integration und Vorproduktions-Validierung.
+  BC-4210.20.10:
+    name: Umgebungsbereitstellung
+    description: |
+      Bereitstellung von Nicht-Produktionsumgebungen entsprechend
+      Entwicklungs- und Validierungsanforderungen.
+  BC-4210.20.20:
+    name: Umgebungskonfiguration
+    description: |
+      Konfiguration von Nicht-Produktionsumgebungen zur Aufrechterhaltung
+      der Produktionsparität, wo erforderlich.
+  BC-4210.20.30:
+    name: Umgebungsdaten-Management
+    description: |
+      Bereitstellung, Maskierung und Aktualisierung von Daten in
+      Nicht-Produktionsumgebungen.
+  BC-4210.30:
+    name: Release-Engineering-Management
+    description: |
+      Kadenz, Versionierung, Branching und Release-Notes-Disziplin
+      für Software-Releases.
+  BC-4210.30.10:
+    name: Release-Kadenz-Management
+    description: |
+      Definition und Pflege der Release-Kadenz über
+      Produktbereiche hinweg.
+  BC-4210.30.20:
+    name: Versionierung und Branching
+    description: |
+      Versionierungsschema und Branching-Strategie für
+      Produkt-Releases.
+  BC-4210.30.30:
+    name: Release-Notes-Erstellung
+    description: |
+      Erstellung kunden- und betreiberseitiger Release-Notes für
+      jeden Release.
+  BC-4210.40:
+    name: Deployment-Orchestrierung
+    description: |
+      Strategien zur sicheren Bereitstellung von Softwareänderungen
+      in die Produktion mit kontrolliertem Ausbreitungsradius.
+  BC-4210.40.10:
+    name: Schrittweise Einführung
+    description: |
+      Schrittweise Einführung von Releases auf wachsende Kohorten
+      von Mandanten oder Nutzern.
+  BC-4210.40.20:
+    name: Canary-Deployment
+    description: |
+      Bereitstellung von Releases an eine kleine Canary-Population
+      mit automatisierter Zustandsbewertung.
+  BC-4210.40.30:
+    name: Blue-Green-Deployment
+    description: |
+      Parallele Umgebungsbereitstellung mit Traffic-Umschaltung für
+      nahezu ausfallsfreie Änderungen.
+  BC-4210.40.40:
+    name: Rollback-Koordination
+    description: |
+      Koordinierter Rollback von Releases bei negativen Signalen.
+  BC-4210.50:
+    name: Feature-Flag-Management
+    description: |
+      Lebenszyklus und Laufzeitsteuerung von Feature-Flags zur Entkopplung
+      von Deployment und Release sowie zur Ausrichtung auf Kohorten.
+    in_scope:
+      - Feature-Flag-Erstellung, -Deaktivierung und -Prüfung
+      - Zielgruppenregeln
+    out_of_scope:
+      - Experimentierungsmethodik und -beurteilung (abgedeckt durch Produkttelemetrie- und Experimentierungsmanagement)
+  BC-4210.50.10:
+    name: Feature-Flag-Lebenszyklus
+    description: |
+      Lebenszyklus von Feature-Flags von der Erstellung bis zur
+      Deaktivierung.
+  BC-4210.50.20:
+    name: Zielgruppenregel-Management
+    description: |
+      Definition von Zielgruppenregeln, die bestimmen, welche Subjekte
+      eine Flag-Variante erhalten.
+  BC-4210.50.30:
+    name: Flag-Hygiene-Management
+    description: |
+      Hygienepraktiken zur Deaktivierung veralteter Flags und Vermeidung
+      der Anhäufung toter Bedingungscode.
+  BC-4210.60:
+    name: Konfigurations- und Secrets-Management
+    description: |
+      Verwaltung von Laufzeitkonfigurationswerten und Secrets, die von
+      Produktdiensten verwendet werden.
+  BC-4210.60.10:
+    name: Laufzeitkonfigurations-Management
+    description: |
+      Speicherung, Verteilung und Prüfung von
+      Laufzeitkonfigurationswerten.
+  BC-4210.60.20:
+    name: Secret-Lebenszyklus-Management
+    description: |
+      Ausstellung, Rotation und Widerruf von Secrets, die von
+      Produktdiensten verwendet werden.
+  BC-4210.70:
+    name: Produktionsänderungs-Autorisierung
+    description: |
+      Vorab-Review von Deployments, Deployment-Fenster-Governance und
+      Autorisierung menschlicher Produktionszugriffe.
+  BC-4210.70.10:
+    name: Vor-Deployment-Review
+    description: |
+      Review und Genehmigung von Änderungen vor der
+      Produktionsbereitstellung.
+  BC-4210.70.20:
+    name: Deployment-Fenster-Governance
+    description: |
+      Governance zulässiger Deployment-Fenster und
+      Einfrierperioden.
+  BC-4210.70.30:
+    name: Produktionszugriffs-Autorisierung
+    description: |
+      Autorisierung, Just-in-Time-Gewährung und Prüfung menschlicher
+      Zugänge zu Produktionssystemen.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"
