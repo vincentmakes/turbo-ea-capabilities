@@ -1,0 +1,116 @@
+locale: pt
+source: L1-hydrocarbon-logistics-management.yaml
+entries:
+  BC-3100:
+    name: Gestão de logística de hidrocarbonetos
+    description: |
+      Operações marítimas de carga, terminais e armazenamento a granel para crude,
+      produtos refinados e GNL, mais coordenação de levantamentos e gestão de
+      combustível para navios. Distinto do transporte transversal à indústria
+      (série BC-2400), que abrange redes de frete, gestão de frotas e transporte
+      intermodal.
+  BC-3100.10:
+    name: Operações de carga marítima
+    description: |
+      Operação de petroleiros de crude, petroleiros de produtos, transportadores de
+      GNL e transferências navio-a-navio em serviço petrolífero.
+    in_scope:
+      - Coordenação operacional de petroleiros e transportadores de gás
+      - Aliviamento e aliviamento inverso navio-a-navio
+    out_of_scope:
+      - Gestão genérica de frotas de navegação (BC-2430)
+      - Reservas de carga de linha regular (BC-2400)
+  BC-3100.10.10:
+    name: Operações de petroleiros de crude
+    description: |
+      Coordenação operacional de petroleiros de crude em fretamento por viagem e a
+      prazo.
+  BC-3100.10.20:
+    name: Operações de petroleiros de produtos
+    description: |
+      Coordenação operacional de petroleiros de produtos refinados, incluindo
+      cargas parciais.
+  BC-3100.10.30:
+    name: Operações de transportadores de GNL
+    description: |
+      Coordenação operacional de transportadores de GNL, incluindo arrefecimento e
+      gestão de pressão de tanques.
+  BC-3100.10.40:
+    name: Coordenação de transferência navio-a-navio
+    description: |
+      Coordenação de transferências STS para crude, produtos e GNL.
+  BC-3100.20:
+    name: Operações de terminais
+    description: |
+      Operação de terminais petrolíferos de importação, exportação e intermédios —
+      cais, braços de carregamento e recepção em tanques.
+  BC-3100.20.10:
+    name: Operações de braços de carregamento e cais
+    description: |
+      Operação de equipamento de cais e braços de carregamento marítimo.
+  BC-3100.20.20:
+    name: Operações de recepção em tanques
+    description: |
+      Recepção e medição de cargas em armazenamento de terminal.
+  BC-3100.20.30:
+    name: Operações de carregamento de tanques
+    description: |
+      Carregamento de armazenamento de terminal para navios e gasodutos.
+  BC-3100.20.40:
+    name: Agendamento de berços
+    description: |
+      Alocação e agendamento de berços para chegadas de navios.
+  BC-3100.30:
+    name: Gestão de armazenamento a granel
+    description: |
+      Alocação de capacidade de tanques, acompanhamento de movimentos e calibração
+      de tanques para crude, produtos e NGLs.
+  BC-3100.30.10:
+    name: Alocação de capacidade de tanques
+    description: |
+      Alocação de capacidade de tanques a qualidades, proprietários e pools.
+  BC-3100.30.20:
+    name: Acompanhamento de movimentos tanque-a-tanque
+    description: |
+      Acompanhamento de movimentos internos de terminal e posições de inventário.
+  BC-3100.30.30:
+    name: Calibração de tanques
+    description: |
+      Manutenção de tabelas de cordeamento e calibração de tanques para exactidão
+      fiscal.
+  BC-3100.40:
+    name: Agendamento de cargas e coordenação de levantamentos
+    description: |
+      Nomeações de levantamentos, confirmação de stems de navios e acompanhamento
+      de sobre-estadia para cargas de petróleo.
+  BC-3100.40.10:
+    name: Gestão de nomeações de levantamentos
+    description: |
+      Recepção e confirmação de nomeações de levantamentos de clientes e de
+      participação accionista.
+  BC-3100.40.20:
+    name: Confirmação de stem de navio
+    description: |
+      Confirmação de stem e parcela face a obrigações contratuais.
+  BC-3100.40.30:
+    name: Acompanhamento operacional de sobre-estadia
+    description: |
+      Acompanhamento operacional de eventos de sobre-estadia em portos de
+      carregamento e descarga.
+  BC-3100.50:
+    name: Gestão de combustível para navios e combustível marítimo
+    description: |
+      Aquisição de combustível e garantia de qualidade para a frota operada e
+      fretada.
+  BC-3100.50.10:
+    name: Aquisição de combustível para navios
+    description: |
+      Aquisição spot e a prazo de combustíveis marítimos para a frota.
+  BC-3100.50.20:
+    name: Garantia de qualidade do combustível para navios
+    description: |
+      Amostragem, ensaio e gestão de litígios de combustíveis fornecidos.
+metadata:
+  status: draft
+  translator: claude-ai
+  notes: Machine-translated; needs native-speaker review.
