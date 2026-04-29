@@ -1,0 +1,151 @@
+locale: de
+source: L1-point-of-sale-operations-management.yaml
+entries:
+  BC-2320:
+    name: Kassenbetrieb / Point-of-Sale Management
+    description: |
+      Kundenorientierte Transaktionsschicht des Einzelhandels — Verkaufserfassung,
+      Zahlungsmittelannahme, Retouren und Erstattungen, Bargeldbehandlung,
+      POS-Konfiguration und Verkaufskontinuität bei Systemausfällen.
+  BC-2320.10:
+    name: Verkaufstransaktions-Management
+    description: |
+      Erfassung von Verbraucher-Verkaufstransaktionen einschließlich Warenkorbaufbau,
+      Scanning, Aktionsanwendung, Steuerbehandlung und digitaler Belege.
+    in_scope:
+      - Warenkorbaufbau und Artikelscanning
+      - Aktions- und Treuekartenanwendung an der Kasse
+      - Steuerberechnung und digitale oder Papierbelege
+    out_of_scope:
+      - Aktionsgestaltung (BC-440.30)
+      - E-Commerce-Checkout (BC-2330)
+  BC-2320.10.10:
+    name: Artikelscanning und Warenkorbaufbau
+    description: |
+      Scanning von Artikeln und Warenkorbaufbau an der Kasse einschließlich Gewichtsartikel.
+  BC-2320.10.20:
+    name: Aktions- und Treueprogramm-Anwendung
+    description: |
+      Anwendung von Aktionen, Gutscheinen und Treueeinlösungen während des Verkaufs.
+  BC-2320.10.30:
+    name: Umsatzsteuer- und MwSt-Behandlung
+    description: |
+      Berechnung von Umsatz- und Mehrwertsteuer sowie jurisdiktionsspezifischen Regeln an der Kasse.
+  BC-2320.10.40:
+    name: Beleg- und Digitalbeleg-Ausgabe
+    description: |
+      Ausgabe von Papier- und Digitalbelegen einschließlich Verbraucher-Verknüpfung.
+  BC-2320.20:
+    name: Zahlungsmittel- und Zahlungsannahme Management
+    description: |
+      Annahme von Zahlungsmitteln an der Kasse einschließlich EMV, Contactless,
+      Mobile Wallets, Geschenkkarten und alternativer Zahlungsarten mit PCI-DSS-Compliance.
+  BC-2320.20.10:
+    name: Karten- und Contactless-Zahlungsannahme
+    description: |
+      EMV-, Contactless- und Mobile-Wallet-Zahlungsannahme an Einzelhandelskassen.
+  BC-2320.20.20:
+    name: Bar- und Scheckzahlungsannahme
+    description: |
+      Bar-, Münz- und Scheckzahlungsannahme einschließlich Stückelungsbehandlung.
+  BC-2320.20.30:
+    name: Geschenkkarten- und Wertgutschein-Annahme
+    description: |
+      Annahme und Ausgabe von Geschenkkarten und gespeicherten Wertgutscheinen.
+  BC-2320.20.40:
+    name: Alternative Zahlungsarten-Annahme
+    description: |
+      Annahme von Buy-now-pay-later, QR-Code und anderen alternativen Zahlungsmitteln.
+  BC-2320.20.50:
+    name: PCI-DSS-Compliance-Betrieb
+    description: |
+      PCI-DSS-konformer Umgang mit Karteninhaberdaten am Point-of-Sale.
+  BC-2320.30:
+    name: Retouren-, Erstattungs- & Umtausch-Management
+    description: |
+      Filialinterne Verarbeitung von Verbraucherretouren, Erstattungen und Umtauschen
+      einschließlich Originalzahlungsmittel-, Filial-Gutschrift- und kanalübergreifender Fälle.
+    in_scope:
+      - Filialinterne Verbraucherretouren und Erstattungen
+      - Filial-Gutschrift- und Umtauschbearbeitung
+      - Kanalübergreifende Retouren von Online-Bestellungen in der Filiale
+    out_of_scope:
+      - Retourenlogistik zurück zum Verteilzentrum (BC-520.40.40)
+  BC-2320.30.10:
+    name: Verbraucherretouren-Annahme
+    description: |
+      Annahme von Verbraucherretouren an der Kasse gemäß Rückgaberichtlinie.
+  BC-2320.30.20:
+    name: Erstattungs- und Filial-Gutschrift-Ausgabe
+    description: |
+      Ausgabe von Erstattungen auf das Originalzahlungsmittel oder Filial-Gutschriften.
+  BC-2320.30.30:
+    name: Umtauschvorgans-Bearbeitung
+    description: |
+      Gleich- und ungleichwertige Umtauschtransaktionen einschließlich Preisabstimmung.
+  BC-2320.30.40:
+    name: Kanalübergreifende Retouren-Verarbeitung
+    description: |
+      Annahme von Online- und anderen Kanalbestellungen zur Rückgabe in der Filiale.
+  BC-2320.40:
+    name: POS-Bargeld- und Zahlungsmittel-Behandlung
+    description: |
+      Kassenschublade, Safe, Einzahlung und Tagesabschluss-Zahlungsmittel-Abstimmung
+      zum Schutz der Kasseneinnahmen.
+  BC-2320.40.10:
+    name: Kassenschubladen-Management
+    description: |
+      Öffnung, Überwachung und Abstimmung von Kassenschubladen.
+  BC-2320.40.20:
+    name: Filialsafe- und Entnahme-Betrieb
+    description: |
+      Safe-Management, Tagesentnahmen und CIT-Vorbereitung.
+  BC-2320.40.30:
+    name: Tagesabschluss-Zahlungsmittel-Abstimmung
+    description: |
+      Abstimmung aller Zahlungsmittel gegenüber POS-Verkaufsdaten am Tagesende.
+  BC-2320.40.40:
+    name: Bankeinzahlung-Vorbereitung
+    description: |
+      Vorbereitung von Bankeinzahlungen und Übergabe an den Geldtransport.
+  BC-2320.50:
+    name: POS-Konfiguration Management
+    description: |
+      Konfiguration von Zahlungsmitteln, Steuerregeln, Aktionslogik, Peripheriegeräten
+      und Kasseverhalten im gesamten Filialbestand.
+  BC-2320.50.10:
+    name: Zahlungsmittel- und Zahlungskonfiguration
+    description: |
+      Konfiguration akzeptierter Zahlungsmittel, Limits und Routing je Filiale.
+  BC-2320.50.20:
+    name: Steuerregeln-Konfiguration
+    description: |
+      Konfiguration von Steuerregeln und jurisdiktionsbezogenen Überschreibungen je Filiale.
+  BC-2320.50.30:
+    name: Aktions-Engine-Konfiguration
+    description: |
+      Konfiguration der POS-Aktions-Engine und Angebotspriorisierungsregeln.
+  BC-2320.50.40:
+    name: POS-Peripheriegeräte-Konfiguration
+    description: |
+      Konfiguration von Waagen, Scannern, Druckern und PIN-Pads an der Kasse.
+  BC-2320.60:
+    name: POS-Resilienz & Offline-Betrieb
+    description: |
+      Kontinuität des Verkaufsbetriebs bei Verbindungs- oder Systemausfällen einschließlich
+      Offline-POS, Store-and-Forward und Warteschlangen-Management.
+  BC-2320.60.10:
+    name: Offline-POS-Betrieb
+    description: |
+      Weiterbetrieb des POS bei Verbindungsverlust.
+  BC-2320.60.20:
+    name: Store-and-Forward-Transaktionsbehandlung
+    description: |
+      Speicherung und Weiterleitung von Offline-Transaktionen bei Wiederverbindung.
+  BC-2320.60.30:
+    name: Ausfall-Warteschlangen-Management
+    description: |
+      Kundenwarteschlangen-Management bei Kassenausfall-Ereignissen.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"
