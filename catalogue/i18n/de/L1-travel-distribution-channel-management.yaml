@@ -1,0 +1,171 @@
+locale: de
+source: L1-travel-distribution-channel-management.yaml
+entries:
+  BC-4010:
+    name: Reisedistributionskanal Management
+    description: |
+      Management der Vertriebswege und des Merchandisings von Reiseprodukten über
+      Direkt-, GDS-, OTA-, Großhandels- und Metasuchkanäle – einschließlich
+      Kanalanbindung, Inhalts-Syndizierung und Raten-/Verfügbarkeitsparität.
+    in_scope:
+      - Direkt-, GDS-, OTA-, Großhandels- und Metasuchkanalbetrieb
+      - Kanalmanager-Hub-Betrieb und Inhalts-Syndizierung
+      - Raten- und Verfügbarkeitsparitätspolitik und -durchsetzung
+    out_of_scope:
+      - Produktmaster- und Inventarpooldefinition (BC-4000)
+      - Reservierungslebenszyklus (BC-4020)
+      - Preis- und Yield-Entscheidungen (BC-4030)
+  BC-4010.10:
+    name: Direktkanal-Vertriebsmanagement
+    description: |
+      Vertrieb von Reiseprodukten über unternehmensinterne Direktkanäle
+      einschließlich Web, Mobil, Telefon und Self-Service-Kiosken.
+  BC-4010.10.10:
+    name: Markenwebsite-Vertriebsmanagement
+    description: |
+      Betrieb der Markenwebsite als direkter Einkaufs- und Buchungskanal
+      für Reiseprodukte.
+  BC-4010.10.20:
+    name: Mobile-App-Vertriebsmanagement
+    description: |
+      Betrieb nativer mobiler Anwendungen als direkter Vertriebs- und Servicekanal.
+  BC-4010.10.30:
+    name: Telefon- und Callcenter-Vertrieb
+    description: |
+      Telefon- und Callcenter-Vertrieb einschließlich agentenunterstützter Buchung.
+  BC-4010.10.40:
+    name: Kiosk- und Self-Service-Vertrieb
+    description: |
+      Self-Service-Vertrieb über Kioske an Flughäfen, Hotels und Partnerstandorten.
+  BC-4010.20:
+    name: GDS-Vertriebsmanagement
+    description: |
+      Vertrieb über globale Vertriebssysteme einschließlich Inhaltssynchronisation,
+      Buchungsklassen-Mapping und Kostenmanagement.
+  BC-4010.20.10:
+    name: GDS-Konnektivitätsbetrieb
+    description: |
+      Betrieb der Konnektivität zu GDS-Anbietern über Angebots-, Buchungs- und Ticketprozesse.
+  BC-4010.20.20:
+    name: GDS-Inhaltspush und Synchronisation
+    description: |
+      Push und Synchronisation von Inhalten, Raten und Verfügbarkeiten an GDS-Anbieter.
+  BC-4010.20.30:
+    name: GDS-Buchungsklassen-Mapping
+    description: |
+      Zuordnung interner Produktklassen zu GDS-Buchungsklassen und Ratencodes.
+  BC-4010.20.40:
+    name: GDS-Kosten- und Aufschlagsmanagement
+    description: |
+      Management von GDS-Buchungsgebühren, Aufschlägen und Vertriebskostenzuordnung.
+  BC-4010.30:
+    name: OTA- und Großhandelsvertriebsmanagement
+    description: |
+      Vertrieb über Online-Reisebüros, Bettenbörsen und B2B-Großhändler
+      einschließlich kommerzieller Konditionen und Inhalts-Overrides.
+  BC-4010.30.10:
+    name: OTA-Konnektivitätsbetrieb
+    description: |
+      Betrieb der Konnektivität zu OTAs für Angebots-, Buchungs- und Nachbuchungsprozesse.
+  BC-4010.30.20:
+    name: Großhandels- und Bettenbörsen-Konnektivität
+    description: |
+      Betrieb der Konnektivität zu Großhändlern und Bettenbörsen für B2B-Weitervertrieb.
+  BC-4010.30.30:
+    name: OTA-Konditionenmanagement
+    description: |
+      Management von OTA-Konditionen einschließlich Provision, Aufschlag und Nettopreismodellen.
+  BC-4010.30.40:
+    name: OTA-Inhalts-Override-Management
+    description: |
+      Management kanalspezifischer Inhalts-Overrides für OTAs unter Wahrung der Markenkonsistenz.
+  BC-4010.40:
+    name: Metasuche-Vertriebsmanagement
+    description: |
+      Vertrieb und Gebotsabgabe auf Metasuchplattformen einschließlich Feed-Betrieb
+      und Konversions-Tracking.
+  BC-4010.40.10:
+    name: Metasuche-Feed-Betrieb
+    description: |
+      Betrieb von Preis- und Verfügbarkeits-Feeds an Metasuche-Anbieter.
+  BC-4010.40.20:
+    name: Metasuche-Gebotsbetrieb
+    description: |
+      Betrieb von Gebotsstrategien auf Metasuche-Platzierungen über Märkte und Geräte.
+  BC-4010.40.30:
+    name: Metasuche-Konversions-Tracking
+    description: |
+      Tracking der Konversionszuordnung und Gebotseffektivität im Metasuche-Traffic.
+  BC-4010.40.40:
+    name: Markengebots-Konfliktmanagement
+    description: |
+      Management von Gebotskonkurrenzen zwischen Eigenmarken- und OTA-Geboten
+      auf Metasuche und Paid Search.
+  BC-4010.50:
+    name: Kanalmanager-Betrieb
+    description: |
+      Betrieb des Kanalmanager-Hubs zur Synchronisation von Inventar,
+      Raten und Restriktionen über alle Vertriebskanäle.
+  BC-4010.50.10:
+    name: Kanal-Mapping-Konfiguration
+    description: |
+      Konfiguration von Zuordnungen zwischen internen Produkten und kanalspezifischen Katalogen.
+  BC-4010.50.20:
+    name: Inventarpush-Betrieb
+    description: |
+      Betrieb von Inventar-Updates vom zentralen Pool zu allen verbundenen Kanälen.
+  BC-4010.50.30:
+    name: Ratenpush-Betrieb
+    description: |
+      Betrieb von Raten-Updates von Preismaschinen zu allen verbundenen Kanälen.
+  BC-4010.50.40:
+    name: Restriktionspush-Betrieb
+    description: |
+      Betrieb von Restriktions-Updates wie Mindestaufenthalt, Ankunftssperrung
+      und Verkaufsstopp über alle Kanäle.
+  BC-4010.60:
+    name: Raten- und Verfügbarkeitsparitätsmanagement
+    description: |
+      Definition, Überwachung und Durchsetzung der Raten- und Verfügbarkeitsparität
+      über direkte und indirekte Kanäle hinweg.
+  BC-4010.60.10:
+    name: Paritätspolitikdefinition
+    description: |
+      Definition der Raten- und Verfügbarkeitsparitätspolitik über Kanaltypen und Partnersegmente.
+  BC-4010.60.20:
+    name: Paritätsüberwachung und Prüfung
+    description: |
+      Überwachung der Kanäle auf Paritätsverstöße und routinemäßige Prüfung im Kanalmix.
+  BC-4010.60.30:
+    name: Paritätsverletzungsbehebung
+    description: |
+      Behebung identifizierter Paritätsverletzungen mit Kanälen und Partnern.
+  BC-4010.60.40:
+    name: Last-Room-Availability-Management
+    description: |
+      Management von Last-Room-Availability-Verpflichtungen gegenüber
+      Firmen- und Kanalpartnern.
+  BC-4010.70:
+    name: Verteilungsinhaltssyndizierung
+    description: |
+      Syndizierung von Produktinhalten an Vertriebspartner mit
+      Kontrollen für Format, Aktualität und Fallback.
+  BC-4010.70.10:
+    name: Inhaltsfeed-Formatmanagement
+    description: |
+      Management kanalspezifischer Inhaltsfeed-Formate und Schemata.
+  BC-4010.70.20:
+    name: Inhaltsaktualitätsüberwachung
+    description: |
+      Überwachung der Inhaltsaktualität auf Vertriebspartner-Oberflächen gegen Veröffentlichungs-SLAs.
+  BC-4010.70.30:
+    name: Kanal-Inhalts-Fallback-Regeln
+    description: |
+      Fallback-Regeln bei fehlenden oder veralteten partnerspezifischen Inhalten.
+  BC-4010.70.40:
+    name: Inhalts-Override-Abstimmung
+    description: |
+      Abstimmung von Partner-Inhalts-Overrides gegen den Masterinhaltsdatensatz.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"
