@@ -1,0 +1,197 @@
+locale: es
+source: L1-building-automation-system-engineering-management.yaml
+entries:
+  BC-2010:
+    name: Gestión de ingeniería de sistemas de automatización de edificios
+    description: |
+      Ingeniería de productos de controladores BAS, dispositivos de campo, software de supervisión,
+      bibliotecas de secuencias de control reutilizables, pilas de protocolos de comunicación,
+      modelos de datos semánticos y ciberseguridad BAS — anclada en ISO 16484 / ASHRAE 135
+      (BACnet) y ASHRAE Guideline 36.
+    in_scope:
+      - Ingeniería de productos de controladores BAS específicos de aplicación y dispositivos de campo
+      - Ingeniería de software de servidor supervisor, alarmas e historiador de tendencias
+      - Bibliotecas de secuencias de operación reutilizables (Guideline 36 y control avanzado)
+      - Pilas de protocolo BACnet, KNX, LonWorks, Modbus, DALI, OPC UA, MQTT
+      - Modelado de datos semánticos Brick / Haystack
+      - Controladores BAS de diseño seguro y ciberseguridad de redes BAS
+    out_of_scope:
+      - Ingeniería de productos electrónicos genéricos cubierta por BC-1900
+      - Listas de puntos y personalización de secuencias a nivel de proyecto (BC-2020)
+      - Ingeniería de equipos mecánicos HVAC (BC-2000)
+      - Comisionamiento en sitio y operaciones de servicio (BC-2050, BC-2060)
+  BC-2010.10:
+    name: Ingeniería de productos de controladores BAS
+    description: |
+      Ingeniería de productos de controladores de edificio específicos de aplicación — zona, UTA,
+      planta, controladores programables y pasarelas edge.
+  BC-2010.10.10:
+    name: Ingeniería de controladores de zona
+    description: |
+      Ingeniería de controladores a nivel de zona para control de VAV, ventiloconvector y unitario.
+  BC-2010.10.20:
+    name: Ingeniería de controladores de UTA
+    description: |
+      Ingeniería de controladores de unidades de tratamiento de aire con soporte de secuencia integrado.
+  BC-2010.10.30:
+    name: Ingeniería de controladores de planta
+    description: |
+      Ingeniería de controladores de planta central para plantas de enfriadoras y calderas.
+  BC-2010.10.40:
+    name: Ingeniería de controladores programables
+    description: |
+      Ingeniería de controladores BAS libremente programables.
+  BC-2010.10.50:
+    name: Ingeniería de pasarelas edge
+    description: |
+      Ingeniería de pasarelas edge que traducen entre BAS y plataformas IoT/nube.
+  BC-2010.20:
+    name: Ingeniería de dispositivos de campo BAS
+    description: |
+      Ingeniería de sensores, válvulas, compuertas y dispositivos de campo inalámbricos que
+      reportan al BAS.
+  BC-2010.20.10:
+    name: Ingeniería de productos de sensores
+    description: |
+      Ingeniería de sensores de temperatura, humedad, presión, CO2 y CAI como dispositivos BAS.
+  BC-2010.20.20:
+    name: Ingeniería de válvulas y actuadores
+    description: |
+      Ingeniería de válvulas de control y actuadores de válvula para sistemas hidrónicos.
+  BC-2010.20.30:
+    name: Ingeniería de actuadores de compuertas
+    description: |
+      Ingeniería de actuadores de compuertas para el control de la parte de aire en BAS.
+  BC-2010.20.40:
+    name: Ingeniería de dispositivos de campo inalámbricos
+    description: |
+      Ingeniería de sensores y actuadores inalámbricos para aplicaciones de retrofit e IoT.
+  BC-2010.30:
+    name: Ingeniería de software supervisor BAS
+    description: |
+      Ingeniería de servidores supervisores, interfaces de operador, motores de alarmas e
+      historiadores.
+  BC-2010.30.10:
+    name: Ingeniería del servidor supervisor
+    description: |
+      Ingeniería de servidores supervisores de cabecera que gestionan redes de controladores.
+  BC-2010.30.20:
+    name: Ingeniería de la interfaz de operador
+    description: |
+      Ingeniería de interfaces de operador gráficas y paneles de control.
+  BC-2010.30.30:
+    name: Ingeniería del motor de alarmas y eventos
+    description: |
+      Ingeniería de motores de procesamiento, priorización y notificación de alarmas.
+  BC-2010.30.40:
+    name: Ingeniería de tendencias e historiador
+    description: |
+      Ingeniería de subsistemas de registro de tendencias e historiador de series temporales.
+  BC-2010.40:
+    name: Ingeniería de la biblioteca de secuencias de control
+    description: |
+      Ingeniería de bibliotecas de secuencias de operación reutilizables e independientes del
+      fabricante para subsistemas HVAC.
+  BC-2010.40.10:
+    name: Biblioteca de secuencias VAV
+    description: |
+      Secuencias reutilizables para el control de zonas de volumen de aire variable.
+  BC-2010.40.20:
+    name: Biblioteca de secuencias de UTA
+    description: |
+      Secuencias reutilizables para el control de unidades de tratamiento de aire.
+  BC-2010.40.30:
+    name: Biblioteca de secuencias de planta central
+    description: |
+      Secuencias reutilizables para el control de plantas de enfriadoras y calderas.
+  BC-2010.40.40:
+    name: Biblioteca de secuencias de control avanzado
+    description: |
+      Secuencias reutilizables para el control predictivo de modelos y basado en optimización.
+  BC-2010.50:
+    name: Ingeniería de protocolos de comunicación BAS
+    description: |
+      Ingeniería de pilas de protocolos de comunicación de automatización de edificios y controladores.
+  BC-2010.50.10:
+    name: Ingeniería de pila BACnet
+    description: |
+      Ingeniería de pilas de protocolo BACnet/IP y BACnet/MSTP.
+  BC-2010.50.20:
+    name: Ingeniería de pilas KNX y LonWorks
+    description: |
+      Ingeniería de pilas de protocolo KNX y LonWorks.
+  BC-2010.50.30:
+    name: Ingeniería de controladores Modbus y DALI
+    description: |
+      Ingeniería de controladores Modbus y DALI para integración de HVAC e iluminación.
+  BC-2010.50.40:
+    name: Ingeniería de servidor OPC UA
+    description: |
+      Ingeniería de servidores OPC UA para la interoperabilidad BAS de grado industrial.
+  BC-2010.50.50:
+    name: Ingeniería de mensajería MQTT e IoT
+    description: |
+      Ingeniería de interfaces de mensajería MQTT e IoT para conectividad en la nube.
+  BC-2010.60:
+    name: Ingeniería del modelo de datos semántico del edificio
+    description: |
+      Ingeniería de modelos semánticos, ontologías y convenciones de nomenclatura para hacer
+      interpretables por máquina los datos del BAS.
+  BC-2010.60.10:
+    name: Modelado de esquema Brick
+    description: |
+      Ingeniería de modelos de esquema Brick que describen la topología del edificio y los equipos.
+  BC-2010.60.20:
+    name: Ingeniería de la biblioteca de etiquetas Haystack
+    description: |
+      Ingeniería de bibliotecas de etiquetas Haystack y convenciones de etiquetado.
+  BC-2010.60.30:
+    name: Biblioteca de convenciones de puntos y nomenclatura
+    description: |
+      Mantenimiento de bibliotecas de convenciones de nomenclatura de puntos y etiquetas.
+  BC-2010.60.40:
+    name: Ingeniería de ontología de activos
+    description: |
+      Ingeniería de ontologías de activos que vinculan datos BAS a equipos y ubicaciones.
+  BC-2010.70:
+    name: Ingeniería de ciberseguridad BAS
+    description: |
+      Ingeniería de diseño seguro de productos, redes y controles de identidad BAS.
+  BC-2010.70.10:
+    name: Arquitectura de controlador seguro
+    description: |
+      Arranque seguro, actualización segura y arquitectura de controlador reforzado.
+  BC-2010.70.20:
+    name: Diseño de segmentación de red BAS
+    description: |
+      Patrones de segmentación y zonificación de redes BAS.
+  BC-2010.70.30:
+    name: Ingeniería de autenticación e identidad
+    description: |
+      Ingeniería de identidad de dispositivo, usuario y servicio para BAS.
+  BC-2010.70.40:
+    name: Ingeniería de gestión de vulnerabilidades BAS
+    description: |
+      Ingeniería de triaje de vulnerabilidades, parcheo y divulgación de productos BAS.
+  BC-2010.80:
+    name: Verificación y conformidad de productos BAS
+    description: |
+      Verificación de productos BAS para conformidad de protocolo, interoperabilidad y preparación
+      para listado.
+  BC-2010.80.10:
+    name: Pruebas de conformidad de protocolo
+    description: |
+      Pruebas de productos frente a conjuntos de conformidad de protocolo BACnet, LonMark, KNX
+      y otros.
+  BC-2010.80.20:
+    name: Pruebas de interoperabilidad en laboratorio
+    description: |
+      Pruebas de interoperabilidad multifabricante en laboratorios dedicados.
+  BC-2010.80.30:
+    name: Pruebas de regresión de protocolo
+    description: |
+      Pruebas de regresión de pilas de protocolo entre revisiones de firmware.
+  BC-2010.80.40:
+    name: Documentación de conformidad
+    description: |
+      Elaboración de documentación de conformidad PICS, BIBB y equivalentes.
