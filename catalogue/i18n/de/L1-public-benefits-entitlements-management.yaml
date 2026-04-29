@@ -1,0 +1,144 @@
+locale: de
+source: L1-public-benefits-entitlements-management.yaml
+entries:
+  BC-3230:
+    name: Öffentliche Leistungen und Sozialleistungen
+    description: |
+      Design, Anspruchsbestimmung, Berechnung, Auszahlung, Monitoring und
+      Rückforderung sozialer Schutzleistungen und gesetzlicher Ansprüche
+      einschließlich Renten, Arbeitslosigkeit, Behinderung, Familie und Nahrungsmittelhilfe.
+  BC-3230.10:
+    name: Leistungsprogramm-Design und Konfiguration
+    description: |
+      Konfiguration gesetzlicher Leistungsprogramme einschließlich Anspruchsregeln,
+      Leistungsformeln und betrieblicher Parameter.
+    in_scope:
+      - Konfiguration von Anspruchsregeln
+      - Leistungsformel- und Satzfestlegung
+      - Programmparameter- und Indexierungsmanagement
+    out_of_scope:
+      - Ausarbeitung von Ermächtigungsgesetzen (durch Gesetzgebungs- und Regulierungsausarbeitungsmanagement abgedeckt)
+  BC-3230.10.10:
+    name: Anspruchsregeln-Konfiguration
+    description: |
+      Kodifizierung gesetzlicher Anspruchsregeln in maschinenausführbarer Form.
+  BC-3230.10.20:
+    name: Leistungsformel- und Satzkonfiguration
+    description: |
+      Konfiguration von Leistungsberechnungsformeln, Sätzen und Höchstgrenzen.
+  BC-3230.10.30:
+    name: Programmparameter-Indexierung
+    description: |
+      Periodische Indexierung und Anpassung von Programmparametern an Inflations- oder Lohnänderungen.
+  BC-3230.20:
+    name: Anspruchsbestimmung
+    description: |
+      Bestimmung der Antragstellerberichtigung für Leistungen einschließlich Bedürftigkeitsprüfung,
+      kategorischer Berechtigung und Haushaltszusammensetzung.
+  BC-3230.20.10:
+    name: Antragseingang
+    description: |
+      Eingang von Leistungsanträgen über Kanäle einschließlich digital, persönlich und unterstützt.
+  BC-3230.20.20:
+    name: Bedürftigkeitsprüfung
+    description: |
+      Einkommens-, Vermögens- und Haushaltsprüfung gegenüber Programmschwellen.
+  BC-3230.20.30:
+    name: Kategorische Anspruchsverifikation
+    description: |
+      Verifikation kategorischer Berechtigung wie Alter, Behinderung oder Familienstatus.
+  BC-3230.20.40:
+    name: Anspruchsentscheidung und Benachrichtigung
+    description: |
+      Entscheidungsaufzeichnung und Antragsteller-Benachrichtigung über Anspruchsergebnisse.
+  BC-3230.30:
+    name: Leistungsberechnung und Festsetzung
+    description: |
+      Berechnung von Festsetzungsbeträgen, Beitragsnachweisbeurteilung und
+      Ausstellung von Leistungsfeststellungen.
+  BC-3230.30.10:
+    name: Beitragsnachweis-Beurteilung
+    description: |
+      Beurteilung von Beitragsnachweisen für beitragsfinanzierte Leistungen wie Renten und Arbeitslosengeld.
+  BC-3230.30.20:
+    name: Festsetzungsberechnung
+    description: |
+      Berechnung von Festsetzungsbeträgen einschließlich Zuschläge, Abzüge und Auslaufzonen.
+  BC-3230.30.30:
+    name: Festsetzungsausstellung
+    description: |
+      Ausstellung und Aufzeichnung von Leistungsfeststellungen und Feststellungsbescheiden.
+  BC-3230.40:
+    name: Leistungsauszahlungsbetrieb
+    description: |
+      Periodische Auszahlung von Leistungszahlungen über Zahlungskanäle und
+      Abgleich gegenüber Festsetzungen.
+  BC-3230.40.10:
+    name: Zahlungsplan-Management
+    description: |
+      Pflege von Zahlungsplänen, -häufigkeiten und Laufkalendern.
+  BC-3230.40.20:
+    name: Zahlungsausführung
+    description: |
+      Ausführung von Zahlungsläufen über Bank-, Prepaid-Karten-, Scheck- und Sachleistungskanäle.
+  BC-3230.40.30:
+    name: Zahlungsabgleich
+    description: |
+      Abgleich von Auszahlungen gegenüber Festsetzungen und Bankbestätigungen.
+  BC-3230.40.40:
+    name: Sachleistungsverteilung
+    description: |
+      Verteilung von Sachleistungen wie Nahrungsmittelhilfegutscheinen und elektronischen Leistungsüberweisungen.
+  BC-3230.50:
+    name: Empfänger-Monitoring und Daueranspruch
+    description: |
+      Laufendes Monitoring der Empfängerumstände und periodische
+      Neubestimmung des Daueranspruchs.
+  BC-3230.50.10:
+    name: Umstandsänderungs-Erfassung
+    description: |
+      Erfassung und Verarbeitung vom Empfänger gemeldeter und erkannter Umstandsänderungen.
+  BC-3230.50.20:
+    name: Periodische Neubestimmung
+    description: |
+      Periodische Neubestimmung von Berechtigung und Festsetzungshöhe.
+  BC-3230.50.30:
+    name: Konditionalitäts- und Compliance-Monitoring
+    description: |
+      Monitoring der Empfänger-Compliance mit Konditionalität wie Jobsuche oder Schulungsanforderungen.
+  BC-3230.60:
+    name: Überzahlungs- und Rückforderungsmanagement
+    description: |
+      Erkennung, Berechnung und Rückforderung von Leistungsüberzahlungen und
+      unberechtigen Zahlungen.
+  BC-3230.60.10:
+    name: Überzahlungs-Erkennung
+    description: |
+      Erkennung von Überzahlungen durch Abgleich, Datenabgleich und Überprüfungen.
+  BC-3230.60.20:
+    name: Rückzahlungsplan-Einrichtung
+    description: |
+      Einrichtung von Rückzahlungsplänen einschließlich Raten, Abzüge und Abschreibungen.
+  BC-3230.60.30:
+    name: Schuldeninkasso-Betrieb
+    description: |
+      Einziehung rückforderbarer Schulden durch Abzüge, zivilrechtliche Maßnahmen und Verrechnungen.
+  BC-3230.70:
+    name: Leistungsbetrugs-Untersuchung
+    description: |
+      Erkennung, Untersuchung und Behandlung von Leistungsbetrugsfällen.
+  BC-3230.70.10:
+    name: Betrugrisiko-Erkennung
+    description: |
+      Risikobasierte Erkennung mutmaßlichen Betrugs durch Analytik und Nachrichtendienste.
+  BC-3230.70.20:
+    name: Betrugsfall-Untersuchung
+    description: |
+      Untersuchung mutmaßlicher Betrugsfälle einschließlich Beweiserhebung und Interviews.
+  BC-3230.70.30:
+    name: Betrugs-Sanktionierung und Überweisung
+    description: |
+      Sanktionierung bestätigten Betrugs und Überweisung zur Strafverfolgung.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

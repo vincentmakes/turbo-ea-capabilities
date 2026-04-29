@@ -1,0 +1,147 @@
+locale: de
+source: L1-travel-loyalty-programme-management.yaml
+entries:
+  BC-4050:
+    name: Reisetreueprogramm Management
+    description: |
+      Gestaltung und Betrieb von Reisenden-Treueprogrammen – Tier-Architektur,
+      Punkte-Earn- und Burn-Engines, Partneransammlung, Statusmanagement
+      und Mitgliederkommunikation, unabhängig von Gastdatensatz und Kanalplattformen.
+    in_scope:
+      - Programmtier-Architektur und Leistungskatalog
+      - Earn- und Burn-Engines einschließlich Partneransammlung
+      - Tier-Qualifikation, Bindung und Soft-Landing
+      - Mitgliederkommunikations- und Meilensteineerkennungsbetrieb
+    out_of_scope:
+      - Gastprofil und Identität (BC-4040)
+      - Vor-Ort-Erkennungslieferung (BC-4040.40)
+      - Marketingkanalausführung (BC-410)
+  BC-4050.10:
+    name: Treueprogrammgestaltung
+    description: |
+      Gestaltung der Programmarchitektur einschließlich Tier-Struktur,
+      Leistungskatalog, Sammelratenparameter und Programmregeln.
+  BC-4050.10.10:
+    name: Programmtier-Architektur
+    description: |
+      Architektur der Treuetiers einschließlich Schwellen, Leistungen und Aufstiegsregeln.
+  BC-4050.10.20:
+    name: Mitglieder-Leistungskatalog
+    description: |
+      Katalog der Mitgliederleistungen über Produkt- und Partneroberflächen.
+  BC-4050.10.30:
+    name: Sammelrate- und Multiplikatordefinition
+    description: |
+      Definition von Basissammelraten und Tier- und Produktmultiplikatoren.
+  BC-4050.10.40:
+    name: Programmbedingungen-Management
+    description: |
+      Management von Programmbedingungen einschließlich Rechtsvarianten.
+  BC-4050.20:
+    name: Treuepunkte-Earn-Engine-Betrieb
+    description: |
+      Betrieb der Earn-Engine für Aufenthalte, Flüge, Partnerausgaben,
+      Aktionsboni und fehlende Aktivitätsansprüche.
+  BC-4050.20.10:
+    name: Aufenthalts- und Flugpunktverarbeitung
+    description: |
+      Verarbeitung von Sammelereignissen aus Aufenthalten, Flügen und Reiseabschlüssen.
+  BC-4050.20.20:
+    name: Partnerausgabenansammlung
+    description: |
+      Verarbeitung von Sammelereignissen aus Co-Branding-Karten- und Partnereinzelhandelsausgaben.
+  BC-4050.20.30:
+    name: Aktionsbonusansammlung
+    description: |
+      Ansammlung von Aktionsboni gemäß Kampagnenregeln.
+  BC-4050.20.40:
+    name: Fehlaktivitätsanspruchsbearbeitung
+    description: |
+      Bearbeitung von Fehlaktivitätsansprüchen und rückwirkenden Sammelanpassungen.
+  BC-4050.30:
+    name: Treuepunkte-Burn- und Einlösungsbetrieb
+    description: |
+      Betrieb von Einlösungsflüssen einschließlich Prämien-Verfügbarkeit,
+      gemischter Bargeld-und-Punkte-Einlösung und Inventarabrechnung.
+  BC-4050.30.10:
+    name: Prämien-Verfügbarkeitsberechnung
+    description: |
+      Berechnung der Prämien-Verfügbarkeit gegen Umsatzinventar und Schutzregeln.
+  BC-4050.30.20:
+    name: Prämieneinlösungsbuchung
+    description: |
+      Buchung von Prämieneinlösungen über Eigenbrand- und Partnerinventar.
+  BC-4050.30.30:
+    name: Gemischte Bargeld-und-Punkte-Einlösung
+    description: |
+      Einlösungsflüsse mit Kombination von Bargeld und Punkten für eine Buchung.
+  BC-4050.30.40:
+    name: Einlösungsinventar-Abrechnung
+    description: |
+      Abrechnung des Einlösungsinventarverbrauchs zwischen Marken- und Partnerkonten.
+  BC-4050.40:
+    name: Tierstatus-Management
+    description: |
+      Betrieb von Tier-Qualifikation, Beförderung, Herabstufung,
+      Status-Match-Programmen und Soft-Landing-Regeln.
+  BC-4050.40.10:
+    name: Tier-Qualifikationsverfolgung
+    description: |
+      Verfolgung qualifizierender Aktivitäten gegen Tier-Schwellen über das Programmjahr.
+  BC-4050.40.20:
+    name: Tier-Beförderungs- und Herabstufungsoperationen
+    description: |
+      Operationen zur Tier-Beförderung, -Herabstufung und -Neuqualifikation an Periodenenden.
+  BC-4050.40.30:
+    name: Status-Match- und Challenge-Programme
+    description: |
+      Betrieb von Status-Match- und Tier-Challenge-Programmen für gezielte Gewinnung.
+  BC-4050.40.40:
+    name: Soft-Landing-Bindungsregeln
+    description: |
+      Bindungsregeln zur Abschwächung des Tier-Verlusts für hochwertige Mitglieder.
+  BC-4050.50:
+    name: Treuepartner-Programmmanagement
+    description: |
+      Management von Treuepartnern einschließlich Kreditkarten-, Einzel- und
+      Airline-Hotel-Partnern über Onboarding, Konfiguration und Abrechnung.
+  BC-4050.50.10:
+    name: Partner-Onboarding und Vertragsabschluss
+    description: |
+      Onboarding und Vertragsabschluss neuer Treuepartner einschließlich Due Diligence und Integration.
+  BC-4050.50.20:
+    name: Partner-Sammelratenkonfiguration
+    description: |
+      Konfiguration von Sammelraten und Bonusstrukturen für jeden Treuepartner.
+  BC-4050.50.30:
+    name: Partner-Abrechnung und Abstimmung
+    description: |
+      Abrechnung und Abstimmung partnerausgegebener Punkte und Sammelgebühren.
+  BC-4050.50.40:
+    name: Partnerleistungsmanagement
+    description: |
+      Leistungsmanagement von Treuepartnern gegen vertragliche KPIs.
+  BC-4050.60:
+    name: Treue-Kommunikations- und Erkennungsbetrieb
+    description: |
+      Betrieb von Mitgliederkommunikation, Meilensteinerkennung und
+      Überraschungs-und-Begeisterungsgesten über den Treuelebenszyklus.
+  BC-4050.60.10:
+    name: Mitglieder-Lebenszykluswommunikation
+    description: |
+      Lebenszykluskommunikation an Mitglieder über Onboarding-, aktive und Reaktivierungsphasen.
+  BC-4050.60.20:
+    name: Meilenstein- und Jubiläumserkennung
+    description: |
+      Erkennung von Mitglieder-Meilensteinen, Zugehörigkeitsjubiläen und Tier-Beförderungen.
+  BC-4050.60.30:
+    name: Überraschungs-und-Begeisterungsbetrieb
+    description: |
+      Betrieb von Überraschungs-und-Begeisterungsgesten durch Mitgliederverhalten oder Serviceereignisse.
+  BC-4050.60.40:
+    name: Mitgliedskontoauszugsgenerierung
+    description: |
+      Generierung von Mitgliedskontoauszügen mit Kontostand, Aktivität und Tier-Fortschritt.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"
