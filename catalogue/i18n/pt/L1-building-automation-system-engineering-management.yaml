@@ -8,6 +8,18 @@ entries:
       bibliotecas reutilizáveis de sequências de controlo, pilhas de protocolos de comunicação, modelos
       semânticos de dados e cibersegurança BAS — ancorada em ISO 16484/ASHRAE 135 (BACnet)
       e ASHRAE Guideline 36.
+    in_scope:
+      - Engenharia de produto de controlador BAS e dispositivo de campo específico para aplicação
+      - Engenharia de software de servidor de supervisão, alarme e historiador de tendências
+      - Bibliotecas reutilizáveis de sequências de operação (Guideline 36 e controlo avançado)
+      - Pilhas de protocolo BACnet, KNX, LonWorks, Modbus, DALI, OPC UA, MQTT
+      - Modelação semântica de dados Brick/Haystack
+      - Controladores BAS seguros por conceção e cibersegurança de rede BAS
+    out_of_scope:
+      - Engenharia de produto eletrónico genérico coberta por BC-1900
+      - Listas de pontos e personalização de sequências ao nível do projeto (BC-2020)
+      - Engenharia de equipamento mecânico HVAC (BC-2000)
+      - Colocação em serviço no local e operações de serviço (BC-2050, BC-2060)
   BC-2010.10:
     name: Engenharia de produto de controlador BAS
     description: |
@@ -177,18 +189,6 @@ entries:
     name: Documentação de conformidade
     description: |
       Elaboração de PICS, BIBB e documentação de conformidade equivalente.
-  in_scope:
-    - Engenharia de produto de controlador BAS e dispositivo de campo específico para aplicação
-    - Engenharia de software de servidor de supervisão, alarme e historiador de tendências
-    - Bibliotecas reutilizáveis de sequências de operação (Guideline 36 e controlo avançado)
-    - Pilhas de protocolo BACnet, KNX, LonWorks, Modbus, DALI, OPC UA, MQTT
-    - Modelação semântica de dados Brick/Haystack
-    - Controladores BAS seguros por conceção e cibersegurança de rede BAS
-  out_of_scope:
-    - Engenharia de produto eletrónico genérico coberta por BC-1900
-    - Listas de pontos e personalização de sequências ao nível do projeto (BC-2020)
-    - Engenharia de equipamento mecânico HVAC (BC-2000)
-    - Colocação em serviço no local e operações de serviço (BC-2050, BC-2060)
 metadata:
   status: draft
   translator: claude-ai

@@ -1,0 +1,177 @@
+locale: pt
+source: L1-food-beverage-processing-operations-management.yaml
+entries:
+  BC-3580:
+    name: Gestão de operações de transformação de alimentos e bebidas
+    description: |
+      Operações de fabrico industrial de alimentos e bebidas — receção de
+      matérias-primas, transformação primária e secundária, embalagem, fabrico
+      em cadeia de frio, saneamento, fabrico de alimentos compostos para animais
+      e valorização de subprodutos em carne, laticínios, moagem, cerveja,
+      padaria e produtos frescos.
+  BC-3580.10:
+    name: Receção e inspeção de matérias-primas
+    description: |
+      Receção, testes sensoriais e laboratoriais e aceitação de lotes de matérias-
+      primas agrícolas em instalações de transformação.
+  BC-3580.10.10:
+    name: Receção de matérias-primas
+    description: |
+      Receção de animais, leite, grão, frutos e produtos vegetais.
+  BC-3580.10.20:
+    name: Teste sensorial e de qualidade de matérias-primas
+    description: |
+      Testes sensoriais e laboratoriais de matérias-primas inbound.
+  BC-3580.10.30:
+    name: Aceitação de lotes de matérias-primas
+    description: |
+      Decisões de aceitação, rejeição e reclassificação de lotes.
+  BC-3580.20:
+    name: Operações de transformação primária
+    description: |
+      Transformação de primeira etapa de matérias-primas agrícolas — abate e
+      preparação de carcaças, separação de leite, moagem e preparação de produto.
+    in_scope:
+      - Abate e preparação de carcaças
+      - Receção e separação de leite
+      - Moagem de grão e esmagamento de oleaginosas
+      - Preparação de frutos e vegetais
+    out_of_scope:
+      - Operações genéricas de fabrico (BC-1010)
+  BC-3580.20.10:
+    name: Abate e preparação de carcaças
+    description: |
+      Abate, preparação e refrigeração de carcaças de animais e aves.
+  BC-3580.20.20:
+    name: Receção e separação de leite
+    description: |
+      Operações de receção, normalização e separação de nata do leite.
+  BC-3580.20.30:
+    name: Moagem de grão e esmagamento de oleaginosas
+    description: |
+      Moagem de grão e esmagamento de oleaginosas, incluindo extração por prensa
+      e por solvente.
+  BC-3580.20.40:
+    name: Preparação de frutos e vegetais
+    description: |
+      Lavagem, descasque, corte e branqueamento de frutos e vegetais.
+  BC-3580.30:
+    name: Operações de transformação secundária
+    description: |
+      Operações de mistura, cozimento, fermentação e concentração que produzem
+      produtos alimentares e bebidas acabados.
+  BC-3580.30.10:
+    name: Operações de mistura e blending
+    description: |
+      Mistura e blending de receitas formuladas de alimentos e bebidas.
+  BC-3580.30.20:
+    name: Cozimento e processamento térmico
+    description: |
+      Operações de cozimento, pasteurização e esterilização.
+  BC-3580.30.30:
+    name: Operações de fermentação e produção de cerveja
+    description: |
+      Fermentação, produção de cerveja e maturação de bebidas e produtos
+      fermentados.
+  BC-3580.30.40:
+    name: Operações de secagem e concentração
+    description: |
+      Secagem por atomização, evaporação e concentração de produtos líquidos.
+  BC-3580.40:
+    name: Operações de embalagem e enchimento
+    description: |
+      Enchimento, selagem, rotulagem e paletização de produtos alimentares e
+      bebidas acabados.
+  BC-3580.40.10:
+    name: Operações de enchimento e selagem
+    description: |
+      Enchimento e selagem de garrafas, latas, sacos e embalagens rígidas.
+  BC-3580.40.20:
+    name: Operações de rotulagem
+    description: |
+      Rotulagem, codificação de datas e aplicação de selos invioláveis.
+  BC-3580.40.30:
+    name: Embalagem em caixas e paletização
+    description: |
+      Embalagem em caixas, retráctil e paletização de produto acabado.
+  BC-3580.50:
+    name: Operações de fabrico em cadeia de frio
+    description: |
+      Refrigeração, congelação e monitorização da cadeia de frio em instalações
+      dentro das linhas de processamento e embalagem.
+  BC-3580.50.10:
+    name: Operações de refrigeração e congelação
+    description: |
+      Operação de câmaras de refrigeração, congeladores rápidos e túneis de
+      congelação dentro das instalações.
+  BC-3580.50.20:
+    name: Monitorização da cadeia de frio dentro das instalações
+    description: |
+      Monitorização da cadeia de frio em zonas dentro das instalações e salas de
+      armazenamento.
+  BC-3580.60:
+    name: Operações de saneamento e controlo de alergénios
+    description: |
+      Programas de limpeza no local, controlo de mudança de alergénios e
+      monitorização ambiental que salvaguardam a segurança do produto.
+    in_scope:
+      - Programas de limpeza no local
+      - Validação de mudança de alergénios
+      - Monitorização ambiental de agentes patogénicos
+    out_of_scope:
+      - Programas de segurança alimentar do lado do retalho (BC-2380.10)
+  BC-3580.60.10:
+    name: Operações de limpeza no local
+    description: |
+      Execução e validação de limpeza no local nas mudanças de produto.
+  BC-3580.60.20:
+    name: Controlo de mudança de alergénios
+    description: |
+      Controlos e verificação por zaragatoa de mudança de alergénios.
+  BC-3580.60.30:
+    name: Programas de monitorização ambiental
+    description: |
+      Monitorização de agentes patogénicos ambientais nas zonas das instalações.
+  BC-3580.70:
+    name: Operações de fabrico de alimentos compostos para animais
+    description: |
+      Fabrico de alimentos compostos para animais, incluindo receção de
+      ingredientes, mistura, pelletização e produção de alimentos medicamentosos
+      para uso pecuário a jusante.
+  BC-3580.70.10:
+    name: Receção de ingredientes alimentares
+    description: |
+      Receção de cereais, farinhas proteicas e aditivos nas fábricas de rações.
+  BC-3580.70.20:
+    name: Mistura e pelletização de rações
+    description: |
+      Mistura e pelletização de rações compostas face a formulações de rações.
+  BC-3580.70.30:
+    name: Produção de alimentos medicamentosos
+    description: |
+      Produção de alimentos medicamentosos com receita e controlos de
+      arrastamento.
+  BC-3580.80:
+    name: Gestão de subprodutos e coprodutos
+    description: |
+      Recuperação e encaminhamento de subprodutos e coprodutos de processo, como
+      transformação de subprodutos de carne, soro de leite e dreches de cerveja,
+      para usos a jusante.
+  BC-3580.80.10:
+    name: Operações de transformação de subprodutos
+    description: |
+      Transformação de subprodutos de processamento de carne em gordura animal
+      e farinha.
+  BC-3580.80.20:
+    name: Recuperação de soro de leite e permeado
+    description: |
+      Recuperação de fluxos de soro de leite e permeado do processamento de
+      laticínios.
+  BC-3580.80.30:
+    name: Recuperação de dreches
+    description: |
+      Recuperação e encaminhamento de dreches de cervejaria e destilaria.
+metadata:
+  status: draft
+  translator: claude-ai
+  notes: Machine-translated; needs native-speaker review.
