@@ -1,0 +1,120 @@
+locale: zh
+source: L1-transport-operations-management.yaml
+entries:
+  BC-2420:
+    name: 运输运营管理
+    description: |
+      统筹多式联运货物运输的全程执行，从取货到干线运输、短驳及最后一公里配送，包括运营中断的应急响应。
+  BC-2420.10:
+    name: 调度管理
+    description: |
+      将货载、驾驶员、机组及设备分配至计划或临时运输任务。
+    in_scope:
+      - 货载与驾驶员及车辆的匹配分配
+      - 设备调位指令
+    out_of_scope:
+      - 调度前的驾驶员排班（BC-2440）
+      - 按合同分配运力（BC-2400.20）
+  BC-2420.10.10:
+    name: 货载分配
+    description: |
+      将货载分配至车辆、船舶、航班或列车路径。
+  BC-2420.10.20:
+    name: 驾驶员与机组调度
+    description: |
+      针对已分配货载调派具备资质的驾驶员及机组人员。
+  BC-2420.10.30:
+    name: 设备调度
+    description: |
+      为已分配运输任务调位集装箱、拖车及ULD。
+  BC-2420.20:
+    name: 干线运营管理
+    description: |
+      跨运输方式在枢纽、港口终端及门户之间开展长距离货物运输。
+  BC-2420.20.10:
+    name: 公路干线运营
+    description: |
+      枢纽与港口终端之间的长途公路运输。
+  BC-2420.20.20:
+    name: 铁路干线运营
+    description: |
+      货运列车及整列火车服务运营。
+  BC-2420.20.30:
+    name: 海运干线运营
+    description: |
+      港口间航运运营，包括中转航段。
+  BC-2420.20.40:
+    name: 空运干线运营
+    description: |
+      机场之间的货运航班及货机服务运营。
+  BC-2420.30:
+    name: 取货与短驳运营管理
+    description: |
+      从货主处进行第一公里取货，以及在港口终端、堆场及内陆节点之间开展短途集装箱短驳。
+  BC-2420.30.10:
+    name: 取货运营
+    description: |
+      从货主及集拼商处提取货物。
+  BC-2420.30.20:
+    name: 集装箱短驳运营
+    description: |
+      在港口终端、铁路货场及内陆仓库之间开展集装箱短驳。
+  BC-2420.30.30:
+    name: 空载设备调运
+    description: |
+      在各仓库之间调运空载集装箱、拖车及ULD。
+  BC-2420.40:
+    name: 最后一公里配送运营管理
+    description: |
+      向收货人完成终端配送，包括路线规划、执行及交货确认。
+  BC-2420.40.10:
+    name: 末端路线规划
+    description: |
+      规划并排序配送站点及时间窗。
+  BC-2420.40.20:
+    name: 客户配送执行
+    description: |
+      现场配送、签收及向收货人完成交接。
+  BC-2420.40.30:
+    name: 交货证明
+    description: |
+      采集并存储交货确认记录。
+  BC-2420.40.40:
+    name: 配送异常处理
+    description: |
+      处理拒收、未能投递及重新配送等异常情况。
+  BC-2420.50:
+    name: 运营中断管理
+    description: |
+      发现在途运营中断并统筹恢复行动。
+  BC-2420.50.10:
+    name: 运营事故检测
+    description: |
+      检测车辆故障、恶劣天气、港口延误及其他中断事件。
+  BC-2420.50.20:
+    name: 改道与恢复
+    description: |
+      对货物改道并恢复中断服务。
+  BC-2420.50.30:
+    name: 服务恢复
+    description: |
+      恢复正常班期并兑现客户承诺。
+  BC-2420.60:
+    name: 运营绩效管理
+    description: |
+      对准时率、运输时效及服务水平达成情况进行运营计量。
+  BC-2420.60.10:
+    name: 准时率追踪
+    description: |
+      追踪取货、出发、到达及配送的准时率。
+  BC-2420.60.20:
+    name: 运输时效监控
+    description: |
+      监控实际运输时效与承诺时效的偏差。
+  BC-2420.60.30:
+    name: 运营KPI报告
+    description: |
+      向内外部利益相关方报告运营KPI。
+metadata:
+  translator: Claude (zh automated)
+  generated: 2026-04-29

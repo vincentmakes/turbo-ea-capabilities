@@ -12,7 +12,7 @@ Two modes:
 - **Whole-Language mode** *(preferred for greenfield locale rollout)* — user names ONLY a target language (e.g. *"French"*, *"German"*, *"Brazilian Portuguese"*). You produce or refresh a sidecar for **every L1** registered in `catalogue/_index.yaml`.
 - **Single-L1 mode** — user names one L1 by name plus a language. You produce or refresh exactly one sidecar.
 
-**Surface = names, not codes.** Resolve language → BCP-47 (French → `fr`, Brazilian Portuguese → `pt-BR`, Simplified Chinese → `zh-Hans`, German → `de`, Spanish → `es`, Latin American Spanish → `es-419`) and L1 names → IDs internally. Show the resolved tag once for confirmation.
+**Surface = names, not codes.** Resolve language → BCP-47 (French → `fr`, Brazilian Portuguese → `pt-BR`, Simplified Chinese → `zh`, German → `de`, Spanish → `es`, Latin American Spanish → `es-419`) and L1 names → IDs internally. Show the resolved tag once for confirmation.
 
 You **must** comply with `business-capability-governance-model.md` Part A naming rules (§5) — adapted to the target language — and never edit `catalogue/L1-*.yaml`, `dist/api/**`, or `packages/py/.../data/**`.
 

@@ -188,7 +188,7 @@ Generate or refresh sidecar translation files under `catalogue/i18n/<locale>/`. 
 
 The skill will:
 
-1. Resolve the language name to a BCP-47 tag (French → `fr`, Brazilian Portuguese → `pt-BR`, Simplified Chinese → `zh-Hans`, …) and display it once for confirmation.
+1. Resolve the language name to a BCP-47 tag (French → `fr`, Brazilian Portuguese → `pt-BR`, Simplified Chinese → `zh`, …) and display it once for confirmation.
 2. Scan `catalogue/i18n/` for existing sidecars — defaulting to **skip-existing** strategy so prior manual edits are preserved; supports `--fill-gaps` and `--overwrite` modes.
 3. Translate only the whitelisted fields: `name`, `description`, `aliases`, `in_scope`, `out_of_scope`. All other fields stay in the English source.
 4. Maintain a consistent cross-L1 glossary so the same source term always maps to the same target-language equivalent throughout the catalogue.

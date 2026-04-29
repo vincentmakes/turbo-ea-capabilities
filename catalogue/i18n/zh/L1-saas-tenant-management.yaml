@@ -1,0 +1,110 @@
+locale: zh
+source: L1-saas-tenant-management.yaml
+entries:
+  BC-4230:
+    name: SaaS租户管理
+    description: |
+      管理多租户服务中租户的供给、配置、隔离、区域放置、身份联合及每租户数据导出。
+  BC-4230.10:
+    name: 租户供给与生命周期
+    description: |
+      在多租户集群中创建、暂停、下线和迁移租户。
+  BC-4230.10.10:
+    name: 租户供给
+    description: |
+      创建新租户并分配相关资源。
+  BC-4230.10.20:
+    name: 租户暂停
+    description: |
+      因欠款、滥用或合同原因暂停租户。
+  BC-4230.10.30:
+    name: 租户下线
+    description: |
+      依据合同完成租户下线，包括数据删除或数据移交。
+  BC-4230.10.40:
+    name: 租户迁移
+    description: |
+      在集群、分片或区域间迁移租户。
+  BC-4230.20:
+    name: 租户配置管理
+    description: |
+      在共享产品基线之上进行每租户功能配置、品牌定制及限额设置。
+  BC-4230.20.10:
+    name: 每租户功能配置
+    description: |
+      在租户层级配置功能选项。
+  BC-4230.20.20:
+    name: 租户品牌管理
+    description: |
+      管理租户级品牌定制，如徽标、颜色及自定义域名。
+  BC-4230.20.30:
+    name: 租户限额管理
+    description: |
+      配置租户级限额，如配额和速率上限。
+  BC-4230.30:
+    name: 租户隔离管理
+    description: |
+      在数据、计算和访问路径层面维护租户间的逻辑和物理隔离机制。
+  BC-4230.30.10:
+    name: 租户数据隔离
+    description: |
+      通过分区、加密和访问范围控制隔离租户数据。
+  BC-4230.30.20:
+    name: 租户计算隔离
+    description: |
+      通过专用或受约束的计算边界隔离租户工作负载。
+  BC-4230.30.30:
+    name: 跨租户访问防护
+    description: |
+      部署管控和监控措施，防止租户间数据和身份泄漏。
+  BC-4230.40:
+    name: 数据驻留与区域放置
+    description: |
+      将租户分配至区域，执行数据驻留承诺，并管理跨区域复制策略。
+  BC-4230.40.10:
+    name: 租户区域分配
+    description: |
+      按合同和法规要求将租户分配至特定区域。
+  BC-4230.40.20:
+    name: 数据驻留执行
+    description: |
+      在运行时执行数据驻留边界约束。
+  BC-4230.40.30:
+    name: 跨区域复制策略
+    description: |
+      制定管控跨区域复制以实现韧性和访问的策略。
+  BC-4230.50:
+    name: 租户身份联合
+    description: |
+      通过单点登录（SSO）和SCIM联合租户身份提供商，管理租户用户账号生命周期。
+  BC-4230.50.10:
+    name: 租户SSO配置
+    description: |
+      配置租户身份提供商与服务之间的单点登录。
+  BC-4230.50.20:
+    name: 基于SCIM的用户供给
+    description: |
+      通过SCIM或同等供给协议管理租户用户账号的生命周期。
+  BC-4230.50.30:
+    name: 租户身份提供商入驻
+    description: |
+      完成租户身份提供商的入驻和验证。
+  BC-4230.60:
+    name: 租户备份与导出管理
+    description: |
+      向租户和管理员提供每租户数据导出、删除和恢复能力。
+  BC-4230.60.10:
+    name: 租户数据导出
+    description: |
+      按请求或合同要求以机器可读格式导出租户数据。
+  BC-4230.60.20:
+    name: 租户数据删除
+    description: |
+      在取消或请求时对租户数据进行可验证的删除操作。
+  BC-4230.60.30:
+    name: 租户备份恢复
+    description: |
+      依据租户或运营者请求从备份恢复租户数据。
+metadata:
+  translator: Claude (zh automated)
+  generated: 2026-04-29

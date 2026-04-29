@@ -1,0 +1,183 @@
+locale: zh
+source: L1-building-performance-management.yaml
+entries:
+  BC-2070:
+    name: 楼宇性能管理
+    description: |
+      持续数据驱动的楼宇性能优化，涵盖能耗测量与验证（IPMVP/ASHRAE Guideline 14）、故障检测与诊断、能耗和室内空气质量分析、需求响应和电网互动、碳排放与可持续发展跟踪，以及向楼宇业主的持续性能报告。
+    in_scope:
+      - 能耗 M&V 基准线建立、节能量计算和修正
+      - FDD 规则库和持续故障分流
+      - 楼宇能耗基准对比、归因、异常检测和预测
+      - 热环境、空气质量、声学和照明成果的室内环境质量分析
+      - 需求响应和电网互动运营
+      - 运营碳排放、可再生能源分配和 ESG 建筑级指标
+      - 面向业主的仪表板、定期报告和相关方简报
+    out_of_scope:
+      - 项目调试期间的 Cx 和 FPT（BC-2050）
+      - 现场服务执行（BC-2060）
+      - 企业可持续发展战略和报告（BC-740）
+      - 暖通空调设备设计（BC-2000）和 BAS 产品工程（BC-2010）
+  BC-2070.10:
+    name: 能耗测量与验证
+    description: |
+      按 IPMVP/ASHRAE Guideline 14 建立基准线、计算节能量及修正调整。
+  BC-2070.10.10:
+    name: 基准线建模
+    description: |
+      建立用于节能量测量的能耗基准线模型。
+  BC-2070.10.20:
+    name: M&V 计划编制
+    description: |
+      按公认协议编制测量与验证计划。
+  BC-2070.10.30:
+    name: 节能量计算
+    description: |
+      计算对比基准线的节能量。
+  BC-2070.10.40:
+    name: 修正与归一化
+    description: |
+      按气候和入住率对 M&V 输出进行修正和归一化处理。
+  BC-2070.20:
+    name: 故障检测与诊断运营
+    description: |
+      FDD 规则库运营和已检测故障的持续分流管理。
+  BC-2070.20.10:
+    name: FDD 规则库管理
+    description: |
+      故障检测与诊断规则库的维护管理。
+  BC-2070.20.20:
+    name: 故障分流与优先级排序
+    description: |
+      按影响程度对检测到的故障进行分流和优先级排序。
+  BC-2070.20.30:
+    name: 根本原因诊断分析
+    description: |
+      对检测故障背后的根本原因进行诊断分析。
+  BC-2070.20.40:
+    name: FDD 误报调优
+    description: |
+      调整 FDD 规则以降低误报率。
+  BC-2070.30:
+    name: 能耗绩效分析
+    description: |
+      跨楼宇组合的能耗数据分析。
+  BC-2070.30.10:
+    name: 基准对比与同行比较
+    description: |
+      将楼宇能耗绩效与同行进行基准对比。
+  BC-2070.30.20:
+    name: 能耗归因分析
+    description: |
+      跨系统、区域和负荷的能耗归因分析。
+  BC-2070.30.30:
+    name: 能耗异常检测
+    description: |
+      检测能耗模式中的异常情况。
+  BC-2070.30.40:
+    name: 能耗预测与目标设定
+    description: |
+      预测未来能耗并设定改进目标。
+  BC-2070.40:
+    name: 室内环境质量分析
+    description: |
+      室内环境质量成果分析，包括热舒适、空气质量、声学和照明指标。
+  BC-2070.40.10:
+    name: 热舒适分析
+    description: |
+      按 ASHRAE 55 及等效标准对热舒适进行分析。
+  BC-2070.40.20:
+    name: 空气质量分析
+    description: |
+      按 ASHRAE 62.1 及等效标准对室内空气质量进行分析。
+  BC-2070.40.30:
+    name: 声学与照明分析
+    description: |
+      针对使用者成果的声学和照明性能分析。
+  BC-2070.40.40:
+    name: 使用者反馈关联分析
+    description: |
+      将使用者反馈与实测环境数据进行关联分析。
+  BC-2070.50:
+    name: 需求响应与电网互动管理
+    description: |
+      楼宇电网互动行为运营和需求响应项目参与管理。
+  BC-2070.50.10:
+    name: 需求响应项目注册
+    description: |
+      将楼宇注册参与需求响应项目。
+  BC-2070.50.20:
+    name: 负荷削减执行
+    description: |
+      按合同义务执行负荷削减事件。
+  BC-2070.50.30:
+    name: 电网互动楼宇运营
+    description: |
+      电网互动高效楼宇的运营管理。
+  BC-2070.50.40:
+    name: 分时电价与动态价格响应
+    description: |
+      楼宇运营对分时电价和动态价格的响应管理。
+  BC-2070.60:
+    name: 碳排放与可持续发展绩效跟踪
+    description: |
+      建筑级运营碳核算和可持续发展成果跟踪。
+  BC-2070.60.10:
+    name: 运营碳核算
+    description: |
+      建筑级运营碳排放核算。
+  BC-2070.60.20:
+    name: 可再生能源分配
+    description: |
+      建筑现场和合同可再生能源的分配管理。
+  BC-2070.60.30:
+    name: ESG 建筑级指标
+    description: |
+      计算建筑级 ESG 指标以用于组合报告。
+  BC-2070.60.40:
+    name: 可持续认证绩效跟踪
+    description: |
+      跟踪绿色建筑认证标准的绩效达标情况。
+  BC-2070.70:
+    name: 性能改进建议管理
+    description: |
+      识别和管理性能改进机会及节能案例。
+  BC-2070.70.10:
+    name: 机会识别
+    description: |
+      从分析结果中识别性能改进机会。
+  BC-2070.70.20:
+    name: 节能商业案例
+    description: |
+      开发支持改进建议的商业案例。
+  BC-2070.70.30:
+    name: 建议优先级排序
+    description: |
+      跨组合对改进建议进行优先级排序。
+  BC-2070.70.40:
+    name: 实施跟踪
+    description: |
+      跟踪已接受建议的实施情况。
+  BC-2070.80:
+    name: 性能报告与仪表板运营
+    description: |
+      面向业主的仪表板、定期报告和法规性能报告。
+  BC-2070.80.10:
+    name: 业主仪表板运营
+    description: |
+      面向业主的性能仪表板运营管理。
+  BC-2070.80.20:
+    name: 定期性能报告
+    description: |
+      为客户编制定期性能报告。
+  BC-2070.80.30:
+    name: 法规性能报告
+    description: |
+      向法规项目报告楼宇性能（如强制基准对比项目）。
+  BC-2070.80.40:
+    name: 相关方性能简报
+    description: |
+      向使用者、投资者和相关方简报楼宇性能情况。
+metadata:
+  translator: Claude (zh automated)
+  generated: 2026-04-29

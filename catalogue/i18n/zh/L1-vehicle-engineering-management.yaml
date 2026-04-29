@@ -1,0 +1,213 @@
+locale: zh
+source: L1-vehicle-engineering-management.yaml
+entries:
+  BC-3400:
+    name: 整车工程管理
+    description: |
+      覆盖车身、底盘、动力总成（ICE、电动、燃料电池）、电气/电子架构、嵌入式软件、功能安全、网络安全及SOTIF的整车工程，依据IATF 16949、ISO 26262、ISO/SAE 21434、ISO 21448、Automotive SPICE及AUTOSAR开展。
+  BC-3400.10:
+    name: 整车架构管理
+    description: |
+      整车架构、总布置、属性目标设定及平台/变型分解，为所有下游工程活动提供框架。
+    in_scope:
+      - 整车属性目标与权衡决策
+      - 整车总布置、布局与区域定义
+      - 平台与模块架构选择
+    out_of_scope:
+      - 项目群阶段门治理（BC-3410）
+      - 详细零部件级工程（由各专业L2覆盖）
+  BC-3400.10.10:
+    name: 整车属性目标设定
+    description: |
+      定义整车级性能、舒适性、安全性、能耗及品牌属性目标，并进行权衡决策。
+  BC-3400.10.20:
+    name: 整车总布置与布局
+    description: |
+      整车总布置、乘员与行李舱布局、硬点定义及区域分配。
+  BC-3400.10.30:
+    name: 平台架构定义
+    description: |
+      定义跨项目群的共享整车平台、通用模块及沿用策略。
+  BC-3400.10.40:
+    name: 模块与变型架构
+    description: |
+      基于共同架构实现衍生车身、动力总成及配置级别的模块化与变型策略。
+  BC-3400.20:
+    name: 动力总成工程
+    description: |
+      内燃机、电动及燃料电池推进系统的工程开发，包括变速器、驱动系及储能系统。
+  BC-3400.20.10:
+    name: 内燃机动力总成工程
+    description: |
+      ICE发动机、燃油系统、排气后处理及相关标定的工程开发。
+  BC-3400.20.20:
+    name: 电动动力总成工程
+    description: |
+      电驱单元、逆变器、充电电子设备及高压系统集成的工程开发。
+  BC-3400.20.30:
+    name: 电池系统工程
+    description: |
+      牵引电池电芯、模组、电池包、BMS及热管理子系统的工程开发。
+  BC-3400.20.40:
+    name: 燃料电池系统工程
+    description: |
+      储氢系统、燃料电池堆、辅助系统及整车集成的工程开发。
+  BC-3400.20.50:
+    name: 变速器与驱动系工程
+    description: |
+      变速器、车桥、传动轴及扭矩矢量驱动部件的工程开发。
+  BC-3400.30:
+    name: 底盘与整车动力学工程
+    description: |
+      悬架、转向、制动、车轮与轮胎系统及其综合动态特性的工程开发。
+  BC-3400.30.10:
+    name: 悬架与转向工程
+    description: |
+      悬架几何、减振器、弹簧及转向系统（含线控转向）的工程开发。
+  BC-3400.30.20:
+    name: 制动系统工程
+    description: |
+      基础制动器、制动能量回收混合控制及制动控制系统的工程开发。
+  BC-3400.30.30:
+    name: 整车动力学调校
+    description: |
+      对平顺性、操稳性、稳定性及牵引力控制进行调校以实现目标动态属性。
+  BC-3400.30.40:
+    name: 车轮与轮胎工程
+    description: |
+      车轮与轮胎的工程开发与选型，包括TPMS及性能/能耗权衡。
+  BC-3400.40:
+    name: 车身与外饰工程
+    description: |
+      白车身、闭合件、玻璃、外饰件、照明及气动外形的工程开发。
+  BC-3400.40.10:
+    name: 白车身工程
+    description: |
+      结构车身壳体、连接工艺及碰撞载荷路径的工程开发。
+  BC-3400.40.20:
+    name: 闭合件与玻璃工程
+    description: |
+      车门、发动机盖、尾门、滑动闭合件及玻璃系统的工程开发。
+  BC-3400.40.30:
+    name: 外饰件与照明工程
+    description: |
+      外饰件、标识及外部照明系统（含前照灯与信号灯架构）的工程开发。
+  BC-3400.40.40:
+    name: 空气动力学工程
+    description: |
+      气动外形开发、风阻与升力平衡及底部气流管理。
+  BC-3400.50:
+    name: 内饰与舒适性工程
+    description: |
+      座椅、约束系统、内饰件、HMI表面、空调及声学/NVH性能的工程开发。
+  BC-3400.50.10:
+    name: 座椅与约束系统工程
+    description: |
+      座椅、安全带、气囊及其他乘员约束系统的工程开发。
+  BC-3400.50.20:
+    name: 内饰件与HMI工程
+    description: |
+      仪表板、中控台、顶棚及物理/数字HMI表面的工程开发。
+  BC-3400.50.30:
+    name: 空调系统工程
+    description: |
+      HVAC、制冷剂、热泵及电池/乘员舱热管理系统的工程开发。
+  BC-3400.50.40:
+    name: 声学与NVH工程
+    description: |
+      整车范围内的声学、振动与粗糙度工程开发与调校。
+  BC-3400.60:
+    name: 电气电子架构工程
+    description: |
+      整车电气/电子拓扑、车内网络、电源分配及ECU硬件的工程开发。
+  BC-3400.60.10:
+    name: E/E拓扑定义
+    description: |
+      定义整车E/E拓扑，包括域架构、区域架构及集中式计算架构。
+  BC-3400.60.20:
+    name: 车载网络工程
+    description: |
+      CAN、CAN-FD、LIN、FlexRay、车载以太网及相关车内通信网络的工程开发。
+  BC-3400.60.30:
+    name: 线束与电源分配工程
+    description: |
+      线束、连接器及高低压电源分配的工程开发。
+  BC-3400.60.40:
+    name: ECU硬件工程
+    description: |
+      按AEC-Q标准开展电子控制单元硬件、半导体及PCB设计的工程开发。
+  BC-3400.70:
+    name: 整车软件工程
+    description: |
+      依据AUTOSAR及Automotive SPICE开展嵌入式软件、汽车软件平台及整车操作系统的工程开发。
+  BC-3400.70.10:
+    name: 嵌入式软件工程
+    description: |
+      ECU级嵌入式软件（含设备驱动与基础软件组件）的工程开发。
+  BC-3400.70.20:
+    name: AUTOSAR平台工程
+    description: |
+      AUTOSAR Classic与Adaptive平台配置及集成的工程开发。
+  BC-3400.70.30:
+    name: 整车操作系统工程
+    description: |
+      面向软件定义汽车的高性能整车操作系统、虚拟机监控程序及中间件的工程开发。
+  BC-3400.70.40:
+    name: 软件集成与构建管理
+    description: |
+      跨ECU与域的整车软件集成、构建及发布列车管理。
+  BC-3400.80:
+    name: 功能安全与网络安全工程
+    description: |
+      保障安全关键型和联网整车行为的工程规程，依据ISO 26262、ISO/SAE 21434及ISO 21448开展。
+    in_scope:
+      - 功能安全用例编写（ISO 26262）
+      - 网络安全工程（ISO/SAE 21434）
+      - SOTIF分析与验证（ISO 21448）
+      - HARA、FMEA-MSR及TARA
+    out_of_scope:
+      - 整车运营SOC与事件响应（BC-3460.60）
+      - UN R155/R156型式批准申报（BC-3420.50）
+  BC-3400.80.10:
+    name: 功能安全用例管理
+    description: |
+      编写与维护ISO 26262安全用例、ASIL分配及安全论证证据。
+  BC-3400.80.20:
+    name: 汽车网络安全工程
+    description: |
+      依据ISO/SAE 21434开展网络安全工程活动，包括TARA、安全设计及安全开发生命周期。
+  BC-3400.80.30:
+    name: SOTIF工程
+    description: |
+      依据ISO 21448对ADAS及自动驾驶功能开展预期功能安全分析与验证。
+  BC-3400.80.40:
+    name: 危害与风险分析
+    description: |
+      开展HARA、FMEA-MSR及其他系统性危害分析，驱动安全与安保需求。
+  BC-3400.90:
+    name: 整车验证与确认管理
+    description: |
+      通过虚拟仿真、台架及实车测试活动对整车、子系统和零部件设计进行验证与确认。
+  BC-3400.90.10:
+    name: 虚拟验证
+    description: |
+      基于CAE、MIL/SIL/HIL及数字孪生的整车与子系统行为虚拟验证。
+  BC-3400.90.20:
+    name: 零部件与子系统测试
+    description: |
+      对零部件和子系统进行台架与试验台测试，验证其是否符合工程规格。
+  BC-3400.90.30:
+    name: 整车集成测试
+    description: |
+      在试验场及公共道路上开展受控条件下的整车集成测试。
+  BC-3400.90.40:
+    name: 耐久与可靠性测试
+    description: |
+      在零部件及整车层面开展加速与客户相关性耐久及可靠性测试。
+  BC-3400.90.50:
+    name: 碰撞与乘员保护测试
+    description: |
+      开展支持法规与消费者评级要求的工程碰撞及乘员保护测试。
+metadata:
+  translator: Claude (zh automated)
+  generated: 2026-04-29
