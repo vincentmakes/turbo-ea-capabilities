@@ -1,0 +1,108 @@
+# Gestione della logistica degli idrocarburi (it) — translations for L1-hydrocarbon-logistics-management.yaml
+locale: it
+source: L1-hydrocarbon-logistics-management.yaml
+entries:
+  BC-3100:
+    name: Gestione della logistica degli idrocarburi
+    description: |
+      Operazioni di cargo marino, terminal e stoccaggio sfuso per greggio,
+      prodotti raffinati e GNL, oltre al coordinamento del lifting e alla gestione
+      del bunker fuel. Distinto dal trasporto cross-industry (serie BC-2400), che
+      comprende le reti di trasporto merci, la gestione della flotta e il trasporto intermodale.
+  BC-3100.10:
+    name: Operazioni di cargo marino
+    description: |
+      Operazione di petroliere per greggio, petroliere per prodotti, gasiere GNL e
+      trasferimenti nave-nave nel servizio petrolifero.
+    in_scope:
+      - Coordinamento operativo di petroliere e gasiere
+      - Alleggerimento e alleggerimento inverso nave-nave
+    out_of_scope:
+      - Gestione generica della flotta di navi (BC-2430)
+      - Prenotazioni di cargo per la navigazione di linea (BC-2400)
+  BC-3100.10.10:
+    name: Operazioni delle petroliere per greggio
+    description: |
+      Coordinamento operativo delle petroliere per greggio in noleggio a viaggio e a tempo.
+  BC-3100.10.20:
+    name: Operazioni delle petroliere per prodotti
+    description: |
+      Coordinamento operativo delle petroliere per prodotti raffinati inclusi i carichi parcel.
+  BC-3100.10.30:
+    name: Operazioni delle gasiere GNL
+    description: |
+      Coordinamento operativo delle gasiere GNL inclusa la gestione del raffreddamento e della pressione dei serbatoi.
+  BC-3100.10.40:
+    name: Coordinamento dei trasferimenti nave-nave
+    description: |
+      Coordinamento dei trasferimenti STS per greggio, prodotti e GNL.
+  BC-3100.20:
+    name: Operazioni terminali
+    description: |
+      Operazione di terminal petroliferi di importazione, esportazione e intermedi:
+      pontili, bracci di carico e ricezione in serbatoio.
+  BC-3100.20.10:
+    name: Operazioni dei bracci di carico e del pontile
+    description: |
+      Operazione delle apparecchiature del pontile e dei bracci di carico marini.
+  BC-3100.20.20:
+    name: Operazioni di ricezione in serbatoio
+    description: |
+      Ricezione e misurazione dei carichi nello stoccaggio del terminal.
+  BC-3100.20.30:
+    name: Operazioni di carico dai serbatoi
+    description: |
+      Carico dallo stoccaggio del terminal sulle navi e nei pipeline.
+  BC-3100.20.40:
+    name: Programmazione delle banchine
+    description: |
+      Allocazione e programmazione delle banchine per gli arrivi delle navi.
+  BC-3100.30:
+    name: Gestione dello stoccaggio sfuso
+    description: |
+      Allocazione dei serbatoi, monitoraggio dei movimenti e taratura dei serbatoi
+      per greggio, prodotti e NGL.
+  BC-3100.30.10:
+    name: Allocazione dei serbatoi
+    description: |
+      Allocazione della capacità dei serbatoi a qualità, proprietari e pool.
+  BC-3100.30.20:
+    name: Monitoraggio dei movimenti serbatoio-serbatoio
+    description: |
+      Monitoraggio dei movimenti interni del terminal e delle posizioni di inventario.
+  BC-3100.30.30:
+    name: Strappatura e taratura dei serbatoi
+    description: |
+      Strappatura dei serbatoi e mantenimento delle tabelle di calibrazione per l'accuratezza fiscale.
+  BC-3100.40:
+    name: Programmazione dei cargo e coordinamento del lifting
+    description: |
+      Nomine di lifting, conferma degli stem delle navi e monitoraggio delle controstallie
+      per i cargo petroliferi.
+  BC-3100.40.10:
+    name: Gestione delle nomine di lifting
+    description: |
+      Ricezione e conferma delle nomine di lifting dei clienti e dell'equity.
+  BC-3100.40.20:
+    name: Conferma degli stem delle navi
+    description: |
+      Conferma degli stem e dei parcel rispetto agli obblighi contrattuali.
+  BC-3100.40.30:
+    name: Monitoraggio operativo delle controstallie
+    description: |
+      Monitoraggio operativo degli eventi di controstallie nei porti di carico e scarico.
+  BC-3100.50:
+    name: Gestione del bunker e del carburante marino
+    description: |
+      Approvvigionamento e garanzia della qualità del bunker per la flotta operata e noleggiata.
+  BC-3100.50.10:
+    name: Approvvigionamento del bunker
+    description: |
+      Approvvigionamento spot e a termine di carburanti marini per la flotta.
+  BC-3100.50.20:
+    name: Garanzia della qualità del bunker
+    description: |
+      Campionamento, analisi e gestione delle controversie sui bunker forniti.
+metadata:
+  status: draft
+  reviewer: pending

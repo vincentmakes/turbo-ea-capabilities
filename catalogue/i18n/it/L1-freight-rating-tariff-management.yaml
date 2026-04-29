@@ -1,0 +1,109 @@
+# Gestione della tariffazione e dei tariffari del trasporto (it) — translations for L1-freight-rating-tariff-management.yaml
+locale: it
+source: L1-freight-rating-tariff-management.yaml
+entries:
+  BC-2520:
+    name: Gestione della tariffazione e dei tariffari del trasporto merci
+    description: |
+      Definizione e gestione delle tariffe di trasporto, dei tariffari, dei prezzi
+      contrattuali, dei prezzi spot, degli addebiti accessori e del motore di tariffazione
+      che calcola i costi dei movimenti merci.
+  BC-2520.10:
+    name: Gestione dei tariffari e dei listini tariffe
+    description: |
+      Definizione, pubblicazione e versionamento dei tariffari pubblici e dei listini
+      tariffe base.
+    in_scope:
+      - Definizione del listino tariffe base per tratta e unità
+      - Pubblicazione del tariffario pubblico ove richiesto
+    out_of_scope:
+      - Quotazione rivolta al cliente nel contesto della spedizione (BC-2450.10)
+      - Metodi di pricing aziendale generico (BC-440)
+  BC-2520.10.10:
+    name: Definizione della tariffa base
+    description: |
+      Definizione delle tariffe di trasporto base per tratta, unità e livello di servizio.
+  BC-2520.10.20:
+    name: Pubblicazione del tariffario pubblico
+    description: |
+      Deposito dei tariffari pubblici presso le autorità di regolamentazione e le
+      conferenze ove richiesto.
+  BC-2520.10.30:
+    name: Versionamento del listino tariffe
+    description: |
+      Controllo delle versioni e gestione delle date di entrata in vigore dei listini
+      tariffe.
+  BC-2520.20:
+    name: Gestione delle tariffe contrattuali
+    description: |
+      Configurazione e manutenzione delle tariffe negoziate con clienti nominativi e
+      impegni di volume.
+  BC-2520.20.10:
+    name: Configurazione delle tariffe contrattuali
+    description: |
+      Configurazione delle tariffe negoziate rispetto ai contratti clienti nominativi.
+  BC-2520.20.20:
+    name: Monitoraggio degli impegni di volume
+    description: |
+      Monitoraggio degli impegni di volume dei clienti e degli obiettivi di quantità
+      minima.
+  BC-2520.20.30:
+    name: Rinnovo delle tariffe contrattuali
+    description: |
+      Rinnovo e rinegoziazione delle tariffe contrattuali in scadenza.
+  BC-2520.30:
+    name: Gestione delle tariffe spot
+    description: |
+      Pricing, accettazione e benchmarking delle tariffe di trasporto sul mercato spot.
+  BC-2520.30.10:
+    name: Quotazione della tariffa spot
+    description: |
+      Quotazione delle tariffe spot per spedizione.
+  BC-2520.30.20:
+    name: Accettazione della tariffa spot
+    description: |
+      Accettazione e conferma delle prenotazioni a tariffa spot.
+  BC-2520.30.30:
+    name: Benchmarking degli indici delle tariffe spot
+    description: |
+      Benchmarking delle tariffe spot rispetto agli indici di mercato.
+  BC-2520.40:
+    name: Gestione degli addebiti accessori e dei supplementi
+    description: |
+      Definizione e applicazione di addebiti accessori, supplementi, demurrage e tariffe
+      di detention.
+  BC-2520.40.10:
+    name: Gestione del supplemento carburante
+    description: |
+      Definizione e applicazione di supplementi carburante e bunker.
+  BC-2520.40.20:
+    name: Definizione degli addebiti accessori
+    description: |
+      Definizione degli addebiti accessori per attesa, movimentazione speciale e
+      attrezzature.
+  BC-2520.40.30:
+    name: Tariffe di demurrage e detention
+    description: |
+      Definizione delle tariffe di demurrage e detention per attrezzature e utilizzo
+      del terminal.
+  BC-2520.50:
+    name: Gestione del motore di tariffazione
+    description: |
+      Gestione del motore di tariffazione che calcola e valida i costi di trasporto
+      su ordini e spedizioni.
+  BC-2520.50.10:
+    name: Esecuzione del calcolo tariffario
+    description: |
+      Esecuzione dei calcoli tariffari su ordini e spedizioni.
+  BC-2520.50.20:
+    name: Distribuzione dei listini tariffe
+    description: |
+      Distribuzione dei listini tariffe a clienti, partner e canali.
+  BC-2520.50.30:
+    name: Audit e validazione delle tariffe
+    description: |
+      Validazione delle tariffe applicate rispetto ai contratti e ai tariffari di
+      riferimento.
+metadata:
+  status: draft
+  reviewer: pending

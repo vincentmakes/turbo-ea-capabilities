@@ -1,0 +1,144 @@
+# Gestione del trading e della liquidazione dell'energia (it) — translations for L1-energy-trading-settlement-management.yaml
+locale: it
+source: L1-energy-trading-settlement-management.yaml
+entries:
+  BC-3850:
+    name: Gestione del trading e della liquidazione dell'energia
+    description: |
+      Trading all'ingrosso di energia elettrica, gas e commodity ambientali —
+      partecipazione al mercato nei timeframe day-ahead, infragiornaliero e del bilanciamento,
+      gestione del rischio energetico, programmazione e nomine, partecipazione al mercato della capacità,
+      e liquidazione back-office e rendicontazione normativa nei regimi REMIT / EMIR / Dodd-Frank.
+  BC-3850.10:
+    name: Trading all'ingrosso di energia elettrica
+    description: |
+      Trading front-office di energia elettrica fisica e finanziaria nei mercati
+      del giorno prima, infragiornaliero e forward.
+  BC-3850.10.10:
+    name: Trading nel mercato del giorno prima
+    description: |
+      Presentazione e gestione di offerte di acquisto e vendita nel mercato del giorno prima.
+  BC-3850.10.20:
+    name: Trading nel mercato infragiornaliero
+    description: |
+      Trading continuo e in asta nel mercato infra-giornaliero in funzione delle variazioni di posizione.
+  BC-3850.10.30:
+    name: Trading forward e bilaterale
+    description: |
+      Trading fisico forward e bilaterale OTC per la copertura e l'origination.
+  BC-3850.10.40:
+    name: Trading di capacità transfrontaliera
+    description: |
+      Trading di prodotti di capacità sugli interconnettori transfrontalieri.
+  BC-3850.20:
+    name: Gestione del rischio energetico
+    description: |
+      Sorveglianza del rischio di mercato, di credito e operativo del portafoglio
+      di trading con amministrazione dei limiti e stress testing.
+    in_scope:
+      - Calcolo del VaR e dell'earnings-at-risk
+      - Gestione dei limiti di credito per le controparti
+      - Test di efficacia delle coperture
+    out_of_scope:
+      - Gestione del rischio aziendale (BC-120)
+      - Rischio di credito sui clienti retail (BC-3910)
+  BC-3850.20.10:
+    name: Sorveglianza del rischio di mercato
+    description: |
+      Sorveglianza del VaR, dell'earnings-at-risk e dell'esposizione del portafoglio di trading.
+  BC-3850.20.20:
+    name: Gestione del rischio di credito delle controparti
+    description: |
+      Limiti di credito delle controparti, garanzie collaterali e monitoraggio dell'esposizione.
+  BC-3850.20.30:
+    name: Gestione del programma di copertura
+    description: |
+      Progettazione ed esecuzione di programmi di copertura rispetto all'esposizione sul combustibile e sull'energia.
+  BC-3850.30:
+    name: Gestione delle posizioni e programmazione
+    description: |
+      Aggregazione delle posizioni di trading e fisiche e presentazione di programmi
+      e nomine ai gestori del sistema elettrico e dei gasdotti.
+  BC-3850.30.10:
+    name: Aggregazione delle posizioni di trading
+    description: |
+      Aggregazione delle posizioni tra prodotti, libri e controparti.
+  BC-3850.30.20:
+    name: Presentazione dei programmi elettrici
+    description: |
+      Presentazione dei programmi elettrici fisici ai TSO e ai responsabili del bilanciamento.
+  BC-3850.30.30:
+    name: Presentazione delle nomine del gas
+    description: |
+      Presentazione delle nomine del gas e ribilanciamento sui gasdotti di trasmissione.
+  BC-3850.40:
+    name: Partecipazione al mercato della capacità
+    description: |
+      Partecipazione ai meccanismi di mercato della capacità e di sicurezza degli approvvigionamenti,
+      inclusi strategia d'asta, qualifica e monitoraggio della consegna.
+  BC-3850.40.10:
+    name: Strategia d'asta della capacità
+    description: |
+      Strategia e preparazione delle offerte per le aste del mercato della capacità.
+  BC-3850.40.20:
+    name: Qualifica del fornitore di capacità
+    description: |
+      Qualifica degli asset e gestione del fattore di de-rating per i prodotti di capacità.
+  BC-3850.40.30:
+    name: Monitoraggio della consegna della capacità
+    description: |
+      Monitoraggio della consegna della capacità durante gli eventi di stress e dell'esposizione a penali.
+  BC-3850.50:
+    name: Trading di commodity ambientali
+    description: |
+      Trading e restituzione di quote di carbonio, certificati di energia rinnovabile,
+      garanzie di origine e certificati bianchi.
+  BC-3850.50.10:
+    name: Trading di quote di emissione di carbonio
+    description: |
+      Trading di EUA, CCA e altre quote di conformità al carbonio.
+  BC-3850.50.20:
+    name: Trading di certificati di energia rinnovabile
+    description: |
+      Trading di REC, ROC e GO (garanzie di origine).
+  BC-3850.50.30:
+    name: Operazioni sui certificati bianchi
+    description: |
+      Trading e restituzione di certificati bianchi per l'efficienza energetica.
+  BC-3850.60:
+    name: Operazioni di liquidazione dei contratti
+    description: |
+      Conferma back-office, calcolo della liquidazione, fatturazione e gestione
+      della liquidità dei contratti di energia all'ingrosso.
+  BC-3850.60.10:
+    name: Conferma dei contratti
+    description: |
+      Conferme in uscita e in entrata dei contratti e risoluzione delle discrepanze.
+  BC-3850.60.20:
+    name: Calcolo della liquidazione
+    description: |
+      Calcolo degli importi di liquidazione fisica e finanziaria per contratto.
+  BC-3850.60.30:
+    name: Fatturazione e gestione della liquidità dei contratti
+    description: |
+      Fatturazione, pagamento e riconciliazione dei flussi di cassa dei contratti all'ingrosso.
+  BC-3850.70:
+    name: Rendicontazione normativa del trading
+    description: |
+      Rendicontazione normativa delle transazioni di energia all'ingrosso ai sensi
+      dei regimi REMIT, EMIR, MiFID II e Dodd-Frank.
+  BC-3850.70.10:
+    name: Rendicontazione REMIT delle transazioni
+    description: |
+      Rendicontazione delle transazioni di energia all'ingrosso (Tabelle 1 e 2) ad ACER.
+  BC-3850.70.20:
+    name: Rendicontazione EMIR e Dodd-Frank
+    description: |
+      Rendicontazione dei contratti derivati ai trade repository ai sensi di EMIR e Dodd-Frank.
+  BC-3850.70.30:
+    name: Divulgazione di informazioni privilegiate
+    description: |
+      Divulgazione delle informazioni privilegiate ai sensi dell'Articolo 4 di REMIT.
+metadata:
+  status: draft
+  reviewer: pending

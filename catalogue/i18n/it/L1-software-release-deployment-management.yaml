@@ -1,0 +1,155 @@
+# Gestione del rilascio e della distribuzione del software (it) — translations for L1-software-release-deployment-management.yaml
+locale: it
+source: L1-software-release-deployment-management.yaml
+entries:
+  BC-4210:
+    name: Gestione del rilascio e della distribuzione del software
+    description: |
+      Integrazione continua, gestione degli ambienti, release engineering,
+      feature flag e distribuzione progressiva dei prodotti SaaS in produzione.
+  BC-4210.10:
+    name: Gestione dell'integrazione continua
+    description: |
+      Pipeline di build, produzione degli artefatti e applicazione delle policy di pipeline
+      che mantengono il prodotto integrato sempre costruibile.
+  BC-4210.10.10:
+    name: Gestione della pipeline di build
+    description: |
+      Definizione e gestione delle pipeline di build automatizzate
+      per i componenti di prodotto.
+  BC-4210.10.20:
+    name: Gestione del repository degli artefatti
+    description: |
+      Archiviazione, conservazione e accesso agli artefatti di build
+      e ai pacchetti di dipendenza.
+  BC-4210.10.30:
+    name: Applicazione delle policy di pipeline
+    description: |
+      Applicazione dei gate obbligatori di qualità, sicurezza e provenienza
+      nelle pipeline.
+  BC-4210.20:
+    name: Gestione degli ambienti
+    description: |
+      Provisioning e gestione degli ambienti non di produzione utilizzati per
+      sviluppo, integrazione e validazione pre-produzione.
+  BC-4210.20.10:
+    name: Provisioning degli ambienti
+    description: |
+      Provisioning degli ambienti non di produzione in linea con
+      le esigenze di sviluppo e validazione.
+  BC-4210.20.20:
+    name: Configurazione degli ambienti
+    description: |
+      Configurazione degli ambienti non di produzione per mantenere la parità
+      con la produzione ove necessario.
+  BC-4210.20.30:
+    name: Gestione dei dati degli ambienti
+    description: |
+      Fornitura, mascheramento e aggiornamento dei dati
+      negli ambienti non di produzione.
+  BC-4210.30:
+    name: Gestione del release engineering
+    description: |
+      Cadenza, versioning, branching e disciplina delle note di rilascio
+      per i rilasci software.
+  BC-4210.30.10:
+    name: Gestione della cadenza di rilascio
+    description: |
+      Definizione e gestione della cadenza di rilascio
+      nelle diverse aree di prodotto.
+  BC-4210.30.20:
+    name: Versioning e branching
+    description: |
+      Schema di versioning e strategia di branching applicati
+      ai rilasci di prodotto.
+  BC-4210.30.30:
+    name: Redazione delle note di rilascio
+    description: |
+      Redazione delle note di rilascio rivolte a clienti e operatori
+      per ogni versione.
+  BC-4210.40:
+    name: Orchestrazione della distribuzione
+    description: |
+      Strategie per rilasciare le modifiche software in produzione in modo sicuro
+      e con un raggio d'impatto controllato.
+  BC-4210.40.10:
+    name: Rollout progressivo
+    description: |
+      Distribuzione graduale dei rilasci a coorti di tenant o utenti
+      sempre più ampie.
+  BC-4210.40.20:
+    name: Canary deployment
+    description: |
+      Distribuzione dei rilasci a una piccola popolazione canary
+      con valutazione automatica dello stato di salute.
+  BC-4210.40.30:
+    name: Blue-green deployment
+    description: |
+      Distribuzione su ambienti paralleli con deviazione del traffico
+      per modifiche con downtime quasi nullo.
+  BC-4210.40.40:
+    name: Coordinamento del rollback
+    description: |
+      Rollback coordinato dei rilasci in risposta a segnali avversi.
+  BC-4210.50:
+    name: Gestione dei feature flag
+    description: |
+      Ciclo di vita e controllo a runtime dei feature flag utilizzati per disaccoppiare
+      la distribuzione dal rilascio e indirizzare le funzionalità a coorti specifiche.
+    in_scope:
+      - Creazione, ritiro e audit dei feature flag
+      - Regole di targeting
+    out_of_scope:
+      - Metodologia di sperimentazione e aggiudicazione (coperta da Gestione della telemetria di prodotto e sperimentazione)
+  BC-4210.50.10:
+    name: Ciclo di vita dei feature flag
+    description: |
+      Ciclo di vita dei feature flag dalla creazione al ritiro.
+  BC-4210.50.20:
+    name: Gestione delle regole di targeting
+    description: |
+      Definizione delle regole di targeting che determinano quali soggetti
+      ricevono una variante del flag.
+  BC-4210.50.30:
+    name: Gestione dell'igiene dei feature flag
+    description: |
+      Pratiche di igiene che ritirano i flag obsoleti e prevengono
+      l'accumulo di codice condizionale inattivo.
+  BC-4210.60:
+    name: Gestione della configurazione e dei segreti
+    description: |
+      Gestione dei valori di configurazione a runtime e dei segreti
+      consumati dai servizi di prodotto.
+  BC-4210.60.10:
+    name: Gestione della configurazione a runtime
+    description: |
+      Archiviazione, distribuzione e audit dei valori di configurazione
+      a runtime.
+  BC-4210.60.20:
+    name: Gestione del ciclo di vita dei segreti
+    description: |
+      Emissione, rotazione e revoca dei segreti utilizzati
+      dai servizi di prodotto.
+  BC-4210.70:
+    name: Autorizzazione delle modifiche in produzione
+    description: |
+      Revisione pre-distribuzione, governance delle finestre di deployment
+      e autorizzazione degli accessi umani alla produzione.
+  BC-4210.70.10:
+    name: Revisione pre-distribuzione
+    description: |
+      Revisione e approvazione delle modifiche prima della distribuzione
+      in produzione.
+  BC-4210.70.20:
+    name: Governance delle finestre di deployment
+    description: |
+      Governance delle finestre di distribuzione consentite
+      e dei periodi di blocco.
+  BC-4210.70.30:
+    name: Autorizzazione degli accessi in produzione
+    description: |
+      Autorizzazione, concessione just-in-time e audit degli accessi
+      umani ai sistemi di produzione.
+metadata:
+  status: draft
+  reviewer: pending

@@ -1,0 +1,162 @@
+# Gestione delle operazioni di guida autonoma (it) — translations for L1-autonomous-driving-operations-management.yaml
+locale: it
+source: L1-autonomous-driving-operations-management.yaml
+entries:
+  BC-3470:
+    name: Gestione delle operazioni di guida autonoma
+    description: |
+      Gestione operativa delle flotte a guida automatizzata — governance dell'ODD,
+      librerie di scenari, safety case ADS, validazione in simulazione e su strada,
+      teleoperazione e coinvolgimento dei regolatori su permessi e segnalazione degli
+      incidenti, ancorata su ISO 21448, SAE J3016 e UN R157.
+  BC-3470.10:
+    name: Governance dell'ODD
+    description: |
+      Definizione, monitoraggio della conformità e gestione del ciclo di vita dell'ODD
+      per ciascuna funzione di guida automatizzata.
+  BC-3470.10.10:
+    name: Gestione della definizione dell'ODD
+    description: |
+      Definizione dell'ODD inclusi i confini geografici, ambientali e
+      comportamentali.
+  BC-3470.10.20:
+    name: Monitoraggio della conformità all'ODD
+    description: |
+      Monitoraggio della conformità all'ODD in servizio e rilevamento di operazioni
+      al di fuori del dominio definito.
+  BC-3470.10.30:
+    name: Gestione degli aggiornamenti dei limiti dell'ODD
+    description: |
+      Gestione delle espansioni e delle restrizioni dell'ODD lungo il ciclo di vita,
+      incluse approvazione e deployment.
+  BC-3470.20:
+    name: Gestione del catalogo di scenari di guida e test
+    description: |
+      Curazione della libreria di scenari di guida e del catalogo di test utilizzati
+      per la progettazione, la simulazione e la validazione dei sistemi di guida
+      automatizzata.
+  BC-3470.20.10:
+    name: Curazione della libreria di scenari
+    description: |
+      Curazione di librerie di scenari strutturate utilizzate per la progettazione e
+      la validazione dell'ADS.
+  BC-3470.20.20:
+    name: Acquisizione e triage dei casi limite
+    description: |
+      Acquisizione, triage e prioritizzazione dei casi limite osservati in
+      simulazione, sulle flotte di test e in servizio.
+  BC-3470.20.30:
+    name: Reportistica della copertura degli scenari
+    description: |
+      Reportistica della copertura degli scenari e dei gap residui rispetto ai
+      requisiti dell'ODD.
+  BC-3470.30:
+    name: Operazioni della flotta autonoma
+    description: |
+      Operatività quotidiana delle flotte di veicoli a guida automatizzata di test,
+      pilota e commerciali, inclusi dispatch, salute e ciclo di turnaround.
+    in_scope:
+      - Dispatch e routing dei veicoli autonomi
+      - Monitoraggio della salute della flotta e telemetria ground-truth
+      - Coordinamento di ricarica, pulizia e turnaround
+    out_of_scope:
+      - Prenotazione e pricing rivolti al passeggero per i servizi di mobilità condivisa (BC-3490)
+      - Ingegneria del veicolo e sviluppo software (BC-3400)
+  BC-3470.30.10:
+    name: Operazioni di dispatch dei veicoli autonomi
+    description: |
+      Dispatch e routing dei veicoli autonomi per missioni di test, pilota e
+      commerciali.
+  BC-3470.30.20:
+    name: Monitoraggio della salute della flotta autonoma
+    description: |
+      Monitoraggio in tempo reale della salute della flotta autonoma, inclusi
+      calibrazione dei sensori e stato del software.
+  BC-3470.30.30:
+    name: Coordinamento della ricarica e pulizia dei veicoli autonomi
+    description: |
+      Coordinamento delle attività di ricarica, pulizia e turnaround per le
+      flotte autonome nei depositi.
+  BC-3470.40:
+    name: Operazioni remote e teleassistenza
+    description: |
+      Operatività dei centri di teleassistenza che forniscono supporto remoto e
+      interventi autorizzati per le flotte a guida automatizzata.
+  BC-3470.40.10:
+    name: Operazioni del centro di teleassistenza
+    description: |
+      Operatività dei centri di teleassistenza remota, inclusa la gestione dei
+      turni e i percorsi di escalation.
+  BC-3470.40.20:
+    name: Gestione delle decisioni di intervento remoto
+    description: |
+      Framework decisionali e autorizzazione per interventi remoti che vanno dal
+      consulenziale al controllo diretto del veicolo.
+  BC-3470.40.30:
+    name: Gestione della forza lavoro dei teleoperatori
+    description: |
+      Reclutamento, formazione, certificazione e gestione delle performance della
+      forza lavoro dei teleoperatori.
+  BC-3470.50:
+    name: Gestione del safety case e dell'assurance
+    description: |
+      Manutenzione del safety case operativo dell'ADS e degli indicatori che ne
+      monitorano la validità continua.
+  BC-3470.50.10:
+    name: Redazione del safety case
+    description: |
+      Redazione del safety case strutturato dell'ADS incluse affermazioni,
+      argomentazioni e prove.
+  BC-3470.50.20:
+    name: Manutenzione dei safety argument
+    description: |
+      Manutenzione dei safety argument all'evolversi del sistema, dell'ODD e del
+      contesto operativo.
+  BC-3470.50.30:
+    name: Monitoraggio degli indicatori di performance della sicurezza
+    description: |
+      Definizione e monitoraggio degli indicatori di performance della sicurezza
+      leading e lagging per la flotta deployata.
+  BC-3470.60:
+    name: Operazioni di validazione della guida autonoma
+    description: |
+      Gestione operativa delle campagne di validazione — simulazione, circuito
+      chiuso e strada pubblica — che forniscono le prove per il safety case.
+  BC-3470.60.10:
+    name: Operazioni di validazione basate su simulazione
+    description: |
+      Operatività di farm di simulazione su larga scala e regressione degli scenari
+      per la validazione dell'ADS.
+  BC-3470.60.20:
+    name: Operazioni di validazione su circuito chiuso
+    description: |
+      Operatività dei programmi di test su circuito chiuso e delle campagne su pista
+      di prova per la validazione dell'ADS.
+  BC-3470.60.30:
+    name: Operazioni di sperimentazione su strada pubblica
+    description: |
+      Operatività delle sperimentazioni supervisionate su strada pubblica, incluse
+      la disciplina del safety driver e la gestione degli incidenti.
+  BC-3470.70:
+    name: Coinvolgimento normativo ADS
+    description: |
+      Coinvolgimento dei regolatori e del pubblico sulle autorizzazioni alla guida
+      autonoma, sulla segnalazione degli incidenti e sulla costruzione della fiducia.
+  BC-3470.70.10:
+    name: Gestione dei permessi e delle autorizzazioni ADS
+    description: |
+      Gestione dei permessi, delle esenzioni e delle autorizzazioni per il deployment
+      dell'ADS in ciascuna giurisdizione.
+  BC-3470.70.20:
+    name: Segnalazione degli incidenti ai regolatori
+    description: |
+      Segnalazione degli incidenti ADS e delle disattivazioni ai regolatori e
+      coordinamento con le indagini.
+  BC-3470.70.30:
+    name: Coinvolgimento del pubblico e degli stakeholder
+    description: |
+      Coinvolgimento di città, comunità e stakeholder sul deployment dell'ADS,
+      sulla sicurezza e sui benefici.
+metadata:
+  status: draft
+  reviewer: pending

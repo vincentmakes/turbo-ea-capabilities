@@ -1,0 +1,182 @@
+# Gestione delle operazioni di generazione di energia elettrica (it) — translations for L1-power-generation-operations-management.yaml
+locale: it
+source: L1-power-generation-operations-management.yaml
+entries:
+  BC-3800:
+    name: Gestione delle operazioni di generazione di energia elettrica
+    description: |
+      Operazione del parco di generazione su asset termoelettrici, nucleari, idroelettrici,
+      eolici, fotovoltaici e di stoccaggio — comprende dispacciamento e programmazione,
+      operazione degli impianti per tecnologia, gestione del combustibile e delle emissioni,
+      e gestione delle prestazioni a livello di parco.
+  BC-3800.10:
+    name: Dispacciamento e programmazione della generazione
+    description: |
+      Impegno delle unità, istruzioni di dispacciamento e programmi a breve termine
+      per il parco di generazione in funzione delle nomine del gestore del sistema
+      e delle posizioni di mercato.
+  BC-3800.10.10:
+    name: Impegno delle unità
+    description: |
+      Selezione giornaliera e infragiornaliera delle unità di generazione per il servizio.
+  BC-3800.10.20:
+    name: Dispacciamento economico
+    description: |
+      Dispacciamento in tempo reale delle unità impegnate secondo l'ordine di merito rispetto al carico.
+  BC-3800.10.30:
+    name: Coordinamento delle fermate
+    description: |
+      Coordinamento delle fermate programmate e forzate delle unità con il gestore del sistema e i programmi di mercato.
+  BC-3800.20:
+    name: Operazioni degli impianti termoelettrici
+    description: |
+      Operazione quotidiana delle centrali alimentate a carbone, gas e olio,
+      inclusi impianti a ciclo combinato e di cogenerazione.
+    in_scope:
+      - Operazione di caldaie e turbine
+      - Sorveglianza del rendimento termico e del heat rate
+      - Controllo della combustione
+    out_of_scope:
+      - Operazione degli impianti nucleari (BC-3800.40)
+      - Operazione degli impianti rinnovabili (BC-3800.50)
+  BC-3800.20.10:
+    name: Operazioni delle caldaie
+    description: |
+      Operazione degli impianti di produzione del vapore e controllo della combustione.
+  BC-3800.20.20:
+    name: Operazioni delle turbine a vapore
+    description: |
+      Operazione delle turbine a vapore e dei sistemi condensato-acqua di alimento.
+  BC-3800.20.30:
+    name: Operazioni delle turbine a gas
+    description: |
+      Operazione delle turbine a gas in ciclo aperto e a ciclo combinato.
+  BC-3800.20.40:
+    name: Operazioni di cogenerazione
+    description: |
+      Operazione degli impianti di cogenerazione che forniscono energia elettrica e calore di processo o teleriscaldamento.
+  BC-3800.30:
+    name: Operazioni degli impianti idroelettrici
+    description: |
+      Operazione di centrali idroelettriche convenzionali, di pompaggio e ad acqua fluente,
+      inclusa la gestione delle dighe e dei canali di adduzione.
+  BC-3800.30.10:
+    name: Operazioni delle unità idroelettriche
+    description: |
+      Avviamento, arresto, regolazione e controllo del carico delle unità di generazione idroelettrica.
+  BC-3800.30.20:
+    name: Gestione del livello del serbatoio
+    description: |
+      Programmazione del livello del serbatoio in funzione degli obiettivi energetici, idraulici e ambientali.
+  BC-3800.30.30:
+    name: Operazioni di ciclo del pompaggio
+    description: |
+      Cicli di pompaggio e generazione degli impianti idroelettrici di pompaggio.
+  BC-3800.30.40:
+    name: Sorveglianza della sicurezza delle dighe
+    description: |
+      Sorveglianza del comportamento strutturale e dei drenaggi delle dighe rispetto ai criteri di sicurezza.
+  BC-3800.40:
+    name: Operazioni degli impianti nucleari
+    description: |
+      Operazione delle centrali nucleari — controllo del reattore, fermate per ricarica del combustibile
+      e sorveglianza della sicurezza radiologica nel rispetto delle condizioni della licenza dell'autorità di regolamentazione nucleare.
+  BC-3800.40.10:
+    name: Operazioni del reattore
+    description: |
+      Controllo del reattore, gestione della reattività e operazioni di inseguimento del carico.
+  BC-3800.40.20:
+    name: Operazioni di fermata per ricarica
+    description: |
+      Pianificazione ed esecuzione delle fermate per ricarica del combustibile e per manutenzione maggiore.
+  BC-3800.40.30:
+    name: Sorveglianza radiologica
+    description: |
+      Sorveglianza dei rilasci radiologici e delle dosi ai lavoratori rispetto ai limiti normativi.
+  BC-3800.40.40:
+    name: Operazioni della piscina del combustibile esausto
+    description: |
+      Operazione e sorveglianza del raffreddamento e dell'inventario della piscina del combustibile esausto.
+  BC-3800.50:
+    name: Operazioni della generazione da rinnovabili
+    description: |
+      Operazione di asset eolici, fotovoltaici e di altre fonti rinnovabili variabili,
+      inclusi curtailment e previsione della produzione.
+  BC-3800.50.10:
+    name: Operazioni dei parchi eolici
+    description: |
+      Operazione di parchi eolici onshore e offshore e gestione della disponibilità delle turbine.
+  BC-3800.50.20:
+    name: Operazioni degli impianti fotovoltaici
+    description: |
+      Operazione di impianti fotovoltaici utility-scale e monitoraggio degli string.
+  BC-3800.50.30:
+    name: Operazioni di curtailment delle rinnovabili
+    description: |
+      Esecuzione delle istruzioni di curtailment dei gestori del sistema sulle fonti rinnovabili variabili.
+  BC-3800.50.40:
+    name: Previsione della generazione da rinnovabili
+    description: |
+      Previsione a breve termine della produzione eolica e fotovoltaica per il dispacciamento e le attività di trading.
+  BC-3800.60:
+    name: Operazioni dello stoccaggio energetico
+    description: |
+      Operazione di accumulo a batteria su scala di rete e di altri asset di stoccaggio energetico,
+      inclusa la gestione dello stato di carica e dei cicli in funzione delle posizioni di mercato e di servizio ancillare.
+  BC-3800.60.10:
+    name: Operazioni dell'accumulo a batteria
+    description: |
+      Operazione e gestione dello stato di carica degli impianti di accumulo a batteria su scala di rete.
+  BC-3800.60.20:
+    name: Ottimizzazione dei cicli di stoccaggio
+    description: |
+      Ottimizzazione dei cicli di carica e scarica rispetto ai valori dell'energia e dei servizi ancillari.
+  BC-3800.60.30:
+    name: Monitoraggio del degrado dello stoccaggio
+    description: |
+      Monitoraggio dell'efficienza round-trip e della perdita di capacità degli asset a batteria.
+  BC-3800.70:
+    name: Gestione delle prestazioni della generazione
+    description: |
+      Sorveglianza a livello di parco della disponibilità, del heat rate, del fattore di capacità
+      e del tasso di fermata forzata per le diverse tecnologie di generazione.
+  BC-3800.70.10:
+    name: Rendicontazione della disponibilità e affidabilità
+    description: |
+      Rendicontazione allineata GADS della disponibilità equivalente e delle statistiche sulle fermate forzate.
+  BC-3800.70.20:
+    name: Monitoraggio del heat rate e del rendimento
+    description: |
+      Monitoraggio del heat rate e del rendimento termico rispetto agli obiettivi di progetto e contrattuali.
+  BC-3800.70.30:
+    name: Monitoraggio delle prestazioni di capacità
+    description: |
+      Monitoraggio del fattore di capacità e delle valutazioni di capacità affidabile.
+  BC-3800.80:
+    name: Gestione del combustibile e delle emissioni
+    description: |
+      Approvvigionamento del combustibile, gestione delle scorte e dei sottoprodotti della combustione
+      per il parco di generazione, inclusa la sorveglianza delle emissioni atmosferiche e della CO2.
+  BC-3800.80.10:
+    name: Operazioni delle scorte di combustibile
+    description: |
+      Operazioni di piazzale per carbone, olio e biomassa e controllo delle scorte.
+  BC-3800.80.20:
+    name: Nomine di fornitura del gas
+    description: |
+      Nomine del gas su gasdotto e bilanciamento per la generazione a gas.
+  BC-3800.80.30:
+    name: Monitoraggio delle emissioni atmosferiche
+    description: |
+      Monitoraggio continuo delle emissioni di NOx, SOx, polveri e relativa rendicontazione.
+  BC-3800.80.40:
+    name: Riconciliazione CO2 e quote di emissione
+    description: |
+      Riconciliazione delle emissioni di CO2 con le quote restituite nell'ambito dei regimi cap-and-trade.
+  BC-3800.80.50:
+    name: Operazioni di gestione delle ceneri e dei residui di combustione
+    description: |
+      Gestione e smaltimento di ceneri volanti, ceneri pesanti e residui del desolforatore.
+metadata:
+  status: draft
+  reviewer: pending

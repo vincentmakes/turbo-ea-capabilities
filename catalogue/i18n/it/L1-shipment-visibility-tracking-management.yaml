@@ -1,0 +1,102 @@
+# Gestione della visibilità e del tracciamento delle spedizioni (it) — translations for L1-shipment-visibility-tracking-management.yaml
+locale: it
+source: L1-shipment-visibility-tracking-management.yaml
+entries:
+  BC-2510:
+    name: Gestione della visibilità e del tracciamento delle spedizioni
+    description: |
+      Visibilità end-to-end delle spedizioni attraverso l'acquisizione di eventi,
+      la risoluzione degli stati, la previsione dell'ETA, gli avvisi di eccezione
+      e le operazioni della control tower logistica.
+  BC-2510.10:
+    name: Gestione dell'acquisizione degli eventi e degli stati
+    description: |
+      Acquisizione degli eventi di spedizione da vettori, IoT e sistemi operativi e
+      traduzione in stati canonici.
+    in_scope:
+      - Acquisizione di eventi EDI 214, IFTSTA ed EPCIS
+      - Acquisizione di eventi IoT e telematica
+    out_of_scope:
+      - Telematica per le condizioni degli asset (BC-2430.40)
+  BC-2510.10.10:
+    name: Acquisizione degli eventi dal vettore
+    description: |
+      Acquisizione degli eventi milestone lato vettore tramite EDI e API.
+  BC-2510.10.20:
+    name: Acquisizione di eventi IoT e telematica
+    description: |
+      Acquisizione degli eventi IoT e di telematica a livello di carico.
+  BC-2510.10.30:
+    name: Acquisizione degli aggiornamenti di stato manuali
+    description: |
+      Acquisizione degli aggiornamenti di stato manuali da autisti, agenti e partner.
+  BC-2510.20:
+    name: Gestione del tracciamento delle spedizioni
+    description: |
+      Risoluzione dello stato delle spedizioni tra tratte, modi e partner e distribuzione
+      alle superfici di tracciamento interne e rivolte ai clienti.
+  BC-2510.20.10:
+    name: Risoluzione dello stato della spedizione
+    description: |
+      Risoluzione dello stato canonico della spedizione dagli eventi grezzi.
+  BC-2510.20.20:
+    name: Ricucitura del tracciamento multi-tratta
+    description: |
+      Ricucitura di viaggi multi-tratta e multi-vettore in un'unica traccia.
+  BC-2510.20.30:
+    name: Operazioni del portale di tracciamento pubblico
+    description: |
+      Gestione dei portali di tracciamento pubblici e delle API per i clienti.
+  BC-2510.30:
+    name: Gestione della previsione dell'ETA
+    description: |
+      Calcolo e raffinamento continuo dell'orario stimato di arrivo (ETA).
+  BC-2510.30.10:
+    name: Calcolo dell'ETA
+    description: |
+      Calcolo deterministico dell'ETA da orari e milestone.
+  BC-2510.30.20:
+    name: Modellizzazione predittiva dell'ETA
+    description: |
+      Modellizzazione predittiva dell'ETA utilizzando dati storici e contestuali.
+  BC-2510.30.30:
+    name: Allerta per variazioni dell'ETA
+    description: |
+      Allerta per variazioni significative dell'ETA rispetto all'impegno concordato.
+  BC-2510.40:
+    name: Gestione delle eccezioni e degli avvisi
+    description: |
+      Rilevamento delle eccezioni operative, notifica agli stakeholder e monitoraggio
+      della risoluzione delle eccezioni.
+  BC-2510.40.10:
+    name: Rilevamento delle eccezioni
+    description: |
+      Rilevamento delle eccezioni operative basato su regole e modelli.
+  BC-2510.40.20:
+    name: Notifica agli stakeholder
+    description: |
+      Notifica a clienti, team operativi e partner.
+  BC-2510.40.30:
+    name: Monitoraggio della risoluzione delle eccezioni
+    description: |
+      Monitoraggio del triage, della responsabilità e della chiusura delle eccezioni.
+  BC-2510.50:
+    name: Gestione delle operazioni della control tower logistica
+    description: |
+      Visibilità end-to-end, monitoraggio della performance e coordinamento degli
+      interventi proattivi tra vettori e partner.
+  BC-2510.50.10:
+    name: Dashboard di visibilità end-to-end
+    description: |
+      Gestione dei dashboard di visibilità end-to-end sull'intera rete.
+  BC-2510.50.20:
+    name: Monitoraggio della performance cross-vettore
+    description: |
+      Monitoraggio della performance tra vettori e partner.
+  BC-2510.50.30:
+    name: Coordinamento degli interventi proattivi
+    description: |
+      Coordinamento degli interventi proattivi a tutela degli impegni verso i clienti.
+metadata:
+  status: draft
+  reviewer: pending

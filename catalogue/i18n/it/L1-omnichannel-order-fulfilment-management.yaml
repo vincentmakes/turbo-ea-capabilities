@@ -1,0 +1,122 @@
+# Gestione degli ordini e dell'evasione omnicanale (it) — translations for L1-omnichannel-order-fulfilment-management.yaml
+locale: it
+source: L1-omnichannel-order-fulfilment-management.yaml
+entries:
+  BC-2330:
+    name: Gestione degli ordini e dell'evasione omnicanale
+    description: |
+      Orchestrazione cross-canale degli ordini del consumatore — acquisizione su
+      qualsiasi canale, promessa da qualsiasi nodo ed evasione tramite punto vendita,
+      centro di distribuzione, marketplace, drop-ship del fornitore o partner per
+      l'ultimo miglio.
+  BC-2330.10:
+    name: Gestione dell'orchestrazione dei canali
+    description: |
+      Visione unica degli ordini del consumatore su tutti i canali, instradamento per
+      mix di canale e stato coerente tra digitale, punto vendita e marketplace.
+    in_scope:
+      - Regole di instradamento per canale e selezione del nodo
+      - Visione unificata degli ordini su tutti i canali
+      - Economie del mix di canale e compromessi sui costi di evasione
+    out_of_scope:
+      - Evasione generica degli ordini (BC-520.40)
+  BC-2330.10.10:
+    name: Gestione delle regole di instradamento per canale
+    description: |
+      Definizione delle regole di instradamento per la selezione del nodo di evasione
+      in base a costo e livello di servizio.
+  BC-2330.10.20:
+    name: Visione cross-canale degli ordini
+    description: |
+      Visione unificata degli ordini, dello stato e della cronologia su tutti i canali.
+  BC-2330.10.30:
+    name: Economie del mix di canale
+    description: |
+      Analisi dell'economia unitaria per canale e percorso di evasione.
+  BC-2330.20:
+    name: Gestione delle operazioni click-and-collect
+    description: |
+      Operazioni di ritiro in negozio, ritiro a bordo strada e ritiro da locker che
+      collegano gli ordini digitali ai punti di ritiro fisici.
+  BC-2330.20.10:
+    name: Operazioni di prelievo e imballaggio in negozio
+    description: |
+      Prelievo e imballaggio degli ordini online da parte degli addetti al punto vendita.
+  BC-2330.20.20:
+    name: Consegna al cliente per il ritiro
+    description: |
+      Passaggio di consegne al cliente per il ritiro, inclusi verifica dell'identità e
+      gestione delle eccezioni.
+  BC-2330.20.30:
+    name: Ritiro a bordo strada e da locker
+    description: |
+      Operazioni di consegna a bordo strada e ritiro tramite locker.
+  BC-2330.30:
+    name: Gestione dell'evasione distribuita degli ordini
+    description: |
+      Evasione tramite spedizione dal negozio, dark store e drop-ship del fornitore
+      da un pool di scorte distribuite verso le destinazioni del consumatore.
+    in_scope:
+      - Operazioni di spedizione dal negozio
+      - Operazioni di dark store e micro-fulfilment centre
+      - Orchestrazione del drop-ship del fornitore
+  BC-2330.30.10:
+    name: Operazioni di spedizione dal negozio
+    description: |
+      Prelievo, imballaggio e spedizione di ordini online dai punti vendita fisici.
+  BC-2330.30.20:
+    name: Operazioni di dark store e micro-fulfilment
+    description: |
+      Operazioni di dark store e micro-fulfilment centre per gli ordini digitali.
+  BC-2330.30.30:
+    name: Orchestrazione del drop-ship del fornitore
+    description: |
+      Orchestrazione del drop-ship del fornitore, inclusi instradamento degli ordini
+      e tracking.
+  BC-2330.40:
+    name: Gestione delle operazioni come venditore su marketplace
+    description: |
+      Gestione degli annunci del retailer come venditore su marketplace di terze parti
+      e gestione dei venditori terzi su un marketplace proprietario.
+  BC-2330.40.10:
+    name: Gestione degli annunci su marketplace
+    description: |
+      Inserimento di articoli su marketplace di terze parti, incluso l'adattamento dei
+      contenuti.
+  BC-2330.40.20:
+    name: Acquisizione degli ordini da marketplace
+    description: |
+      Acquisizione e traduzione degli ordini provenienti da marketplace nel flusso
+      ordini principale.
+  BC-2330.40.30:
+    name: Onboarding dei venditori terzi
+    description: |
+      Onboarding di venditori terzi sul marketplace proprietario del retailer.
+  BC-2330.40.40:
+    name: Gestione delle performance dei venditori terzi
+    description: |
+      Gestione delle performance e della conformità alle policy dei venditori terzi.
+  BC-2330.50:
+    name: Gestione delle fasce orarie di consegna al consumatore
+    description: |
+      Prenotazione delle fasce orarie di consegna rivolte al consumatore, pricing delle
+      finestre temporali e coordinamento del dispacciamento dei corrieri per la consegna
+      a domicilio.
+  BC-2330.50.10:
+    name: Prenotazione della fascia oraria di consegna
+    description: |
+      Prenotazione da parte del consumatore delle fasce orarie di consegna con logica di
+      disponibilità e capacità.
+  BC-2330.50.20:
+    name: Pricing delle finestre temporali
+    description: |
+      Pricing dinamico delle finestre di consegna in base alla domanda e alla densità
+      del percorso.
+  BC-2330.50.30:
+    name: Coordinamento del dispacciamento dei corrieri
+    description: |
+      Coordinamento del dispacciamento con corrieri dell'ultimo miglio propri e di terze
+      parti.
+metadata:
+  status: draft
+  reviewer: pending

@@ -1,0 +1,118 @@
+# Gestione della capacità di trasporto merci (it) — translations for L1-freight-capacity-management.yaml
+locale: it
+source: L1-freight-capacity-management.yaml
+entries:
+  BC-2400:
+    name: Gestione della capacità di trasporto merci
+    description: |
+      Vendita, allocazione e yield management della capacità di trasporto per navigazioni,
+      voli, tratte stradali e ferroviarie e pool di attrezzature.
+  BC-2400.10:
+    name: Gestione dell'inventario di capacità
+    description: |
+      Manutenzione della capacità di trasporto disponibile per modo, tratta, orario e tipo
+      di attrezzatura, come fonte per allocazione e prenotazione.
+    in_scope:
+      - Registri di capacità per navi, voli, veicoli e materiale rotabile
+      - Capacità del pool di attrezzature (container, semirimorchi, ULD)
+      - Capacità della tratta collegata agli orari
+    out_of_scope:
+      - Progettazione a lungo termine della rete e degli orari (BC-2410)
+      - Accettazione di prenotazioni e riserve (BC-2400.40)
+  BC-2400.10.10:
+    name: Inventario di capacità di navi e mezzi di trasporto
+    description: |
+      Registrazione della capacità in termini di carico utile, spazio coperta e spazio
+      cabina per nave, aeromobile, treno o veicolo.
+  BC-2400.10.20:
+    name: Inventario di capacità delle attrezzature
+    description: |
+      Inventario dei container, semirimorchi, chassis e ULD disponibili per ubicazione
+      e condizione.
+  BC-2400.10.30:
+    name: Capacità della tratta e degli orari
+    description: |
+      Capacità per servizio programmato su una tratta, compresi i tratti di collegamento.
+  BC-2400.10.40:
+    name: Pooling della capacità e scambio di slot
+    description: |
+      Capacità condivisa nelle alleanze e accordi di scambio slot con vettori partner.
+  BC-2400.20:
+    name: Gestione dell'allocazione della capacità
+    description: |
+      Allocazione della capacità disponibile tra contratti clienti, segmenti di mercato
+      e domanda spot.
+  BC-2400.20.10:
+    name: Allocazione della capacità contrattuale
+    description: |
+      Allocazione di capacità ai clienti coperti da impegni di quantità minima e accordi
+      nominativi.
+  BC-2400.20.20:
+    name: Allocazione della capacità sul mercato spot
+    description: |
+      Allocazione di capacità rilasciata sui canali di prenotazione del mercato spot.
+  BC-2400.20.30:
+    name: Riallocazione e recupero della capacità
+    description: |
+      Riallocazione della capacità inutilizzata o recuperata prima del cut-off.
+  BC-2400.30:
+    name: Yield e revenue management
+    description: |
+      Ottimizzazione del ricavo per unità di capacità attraverso decisioni di pricing,
+      mix e overbooking.
+  BC-2400.30.10:
+    name: Previsione della domanda di capacità
+    description: |
+      Previsione delle prenotazioni, no-show e rischio di offload per servizio.
+  BC-2400.30.20:
+    name: Ottimizzazione dello yield
+    description: |
+      Ottimizzazione del mix di classi tariffarie per massimizzare lo yield per tonnellata,
+      slot o TEU.
+  BC-2400.30.30:
+    name: Gestione dell'overbooking
+    description: |
+      Definizione e monitoraggio dei limiti di overbooking e dell'esposizione agli offload.
+  BC-2400.30.40:
+    name: Gestione del mix di ricavi
+    description: |
+      Gestione del mix di ricavi tra linee contrattuali, spot e accessorie.
+  BC-2400.40:
+    name: Gestione delle prenotazioni e delle riserve
+    description: |
+      Accettazione, modifica e cancellazione delle prenotazioni di capacità rispetto agli
+      orari e alle quotazioni pubblicate.
+  BC-2400.40.10:
+    name: Prenotazione della capacità
+    description: |
+      Accettazione delle prenotazioni rispetto alla capacità disponibile e alla validità
+      delle tariffe.
+  BC-2400.40.20:
+    name: Modifica e cancellazione delle prenotazioni
+    description: |
+      Variazioni, rollover e cancellazioni delle prenotazioni, incluse le penali per
+      no-show.
+  BC-2400.40.30:
+    name: Gestione delle liste d'attesa e stand-by
+    description: |
+      Gestione del carico in stand-by e in lista d'attesa per la capacità confermata.
+  BC-2400.50:
+    name: Gestione della performance della capacità
+    description: |
+      Monitoraggio del fattore di carico, del riempimento e dell'utilizzo per orientare
+      le decisioni sul mix di capacità e le modifiche alla rete.
+  BC-2400.50.10:
+    name: Analisi del fattore di carico
+    description: |
+      Analisi del fattore di carico per servizio, tratta e segmento.
+  BC-2400.50.20:
+    name: Reportistica sull'utilizzo della capacità
+    description: |
+      Reportistica sull'utilizzo della capacità destinata ai team commerciali e operativi.
+  BC-2400.50.30:
+    name: Miglioramento della performance della capacità
+    description: |
+      Iniziative per migliorare il ricavo per slot e ridurre il riposizionamento a vuoto.
+metadata:
+  status: draft
+  reviewer: pending

@@ -1,0 +1,174 @@
+# Gestione dei ricavi e dello yield nel settore dei viaggi (it) — translations for L1-travel-revenue-yield-management.yaml
+locale: it
+source: L1-travel-revenue-yield-management.yaml
+entries:
+  BC-4030:
+    name: Gestione dei ricavi e dello yield nel settore dei viaggi
+    description: |
+      Previsione della domanda, determinazione dinamica dei prezzi, controlli sull'inventario
+      e decisioni di yield management che massimizzano i ricavi per i prodotti di viaggio —
+      distinta dalla definizione del master prodotto, dalla configurazione della distribuzione
+      e dal ciclo di vita delle prenotazioni.
+    in_scope:
+      - Previsione della domanda non vincolata e dell'andamento delle prenotazioni
+      - Gestione della strategia di prezzo e delle tariffe (BAR, classe tariffaria, stagione)
+      - Limiti di prenotazione, restrizioni sulla durata del soggiorno, overbooking e nesting
+      - Intelligence sulle tariffe competitive e posizionamento di mercato
+      - Meccanismi promozionali e di sconto
+      - Reporting delle performance dei ricavi (RevPAR, RevPAX, ADR, yield)
+    out_of_scope:
+      - Definizione del master prodotto (BC-4000)
+      - Bidding specifico per canale sul metasearch (BC-4010.40.20)
+      - Contrattazione delle vendite di gruppo (BC-4110.10)
+  BC-4030.10:
+    name: Previsione della domanda di viaggio
+    description: |
+      Previsione della domanda non vincolata, dell'andamento delle prenotazioni,
+      della domanda di gruppo e dei comportamenti di no-show e cancellazione
+      per i prodotti di viaggio.
+  BC-4030.10.10:
+    name: Previsione della domanda non vincolata
+    description: |
+      Previsione della domanda in assenza di vincoli di capacità e di prezzo.
+  BC-4030.10.20:
+    name: Previsione dell'andamento e del pickup delle prenotazioni
+    description: |
+      Previsione delle curve di andamento e di pickup rispetto ai pattern
+      storici e alle prenotazioni in essere.
+  BC-4030.10.30:
+    name: Previsione della domanda di gruppo
+    description: |
+      Previsione della domanda di gruppo, inclusi gli effetti di spiazzamento
+      sull'inventario transient.
+  BC-4030.10.40:
+    name: Previsione di no-show e cancellazioni
+    description: |
+      Previsione dei comportamenti di no-show e cancellazione come input
+      per l'overbooking e i controlli dell'inventario.
+  BC-4030.20:
+    name: Gestione della strategia di prezzo e delle tariffe
+    description: |
+      Definizione e adeguamento della strategia tariffaria per livelli BAR,
+      classi tariffarie, finestre stagionali e prezzi dei pacchetti.
+  BC-4030.20.10:
+    name: Impostazione della miglior tariffa disponibile
+    description: |
+      Impostazione delle scale della miglior tariffa disponibile per data e segmento.
+  BC-4030.20.20:
+    name: Strategia per classi tariffarie e bucket
+    description: |
+      Strategia per le classi tariffarie e i bucket di inventario,
+      incluse aperture, chiusure e ribilanciamenti.
+  BC-4030.20.30:
+    name: Prezzi stagionali e per tipo di giorno
+    description: |
+      Variazione dei prezzi per stagioni, pattern giornalieri della settimana
+      e finestre di evento.
+  BC-4030.20.40:
+    name: Prezzi di pacchetti e bundle
+    description: |
+      Determinazione del prezzo per prodotti in pacchetto e bundle,
+      inclusa l'allocazione dei componenti.
+  BC-4030.30:
+    name: Controlli sull'inventario e sulla capacità
+    description: |
+      Controlli sull'inventario, inclusi limiti di prenotazione, restrizioni
+      sulla durata del soggiorno, strategia di overbooking e nesting del bid price.
+  BC-4030.30.10:
+    name: Impostazione dei limiti di prenotazione e delle autorizzazioni
+    description: |
+      Impostazione dei limiti di prenotazione e dei livelli di autorizzazione
+      per classe, canale e segmento.
+  BC-4030.30.20:
+    name: Gestione delle restrizioni sulla durata del soggiorno
+    description: |
+      Gestione delle restrizioni sulla durata del soggiorno, incluse le regole
+      su minimi, massimi e giorno di arrivo.
+  BC-4030.30.30:
+    name: Gestione strategica dell'overbooking
+    description: |
+      Gestione strategica dei livelli di overbooking per data e segmento,
+      calibrata rispetto ai costi del servizio negato.
+  BC-4030.30.40:
+    name: Gestione del nesting e del bid price
+    description: |
+      Gestione del nesting dell'inventario e delle soglie di bid price
+      nei modelli di ottimizzazione dei ricavi.
+  BC-4030.40:
+    name: Intelligence sulle tariffe competitive
+    description: |
+      Rilevazione delle tariffe competitive, analisi della quota di mercato
+      e raccomandazioni di posizionamento tariffario.
+  BC-4030.40.10:
+    name: Rilevazione delle tariffe competitive
+    description: |
+      Rilevazione periodica delle tariffe dei concorrenti sui canali selezionati
+      e per date di arrivo.
+  BC-4030.40.20:
+    name: Analisi della quota di mercato e della penetrazione
+    description: |
+      Analisi della quota di mercato, dell'indice di occupazione e dell'indice
+      tariffario rispetto al competitive set.
+  BC-4030.40.30:
+    name: Raccomandazioni di posizionamento tariffario
+    description: |
+      Generazione di raccomandazioni di posizionamento tariffario rispetto
+      al competitive set e allo stato della domanda.
+  BC-4030.40.40:
+    name: Definizione e manutenzione del competitive set
+    description: |
+      Definizione e manutenzione continuativa dei competitive set
+      utilizzati per il benchmarking.
+  BC-4030.50:
+    name: Gestione di promozioni e sconti
+    description: |
+      Definizione e operatività di promozioni, codici sconto, prezzi opachi
+      e prezzi per gruppi chiusi di utenti per i prodotti di viaggio.
+  BC-4030.50.10:
+    name: Gestione del calendario promozionale
+    description: |
+      Gestione del calendario delle promozioni per stagioni
+      e finestre di prenotazione principali.
+  BC-4030.50.20:
+    name: Regole di idoneità alla promozione
+    description: |
+      Regole di idoneità che governano il riscatto della promozione
+      per segmento, canale e finestra di soggiorno.
+  BC-4030.50.30:
+    name: Gestione di codici sconto e voucher
+    description: |
+      Gestione di codici sconto, voucher e token in stile gift card
+      per uso promozionale.
+  BC-4030.50.40:
+    name: Prezzi opachi e per gruppi chiusi di utenti
+    description: |
+      Operazione di meccanismi di prezzo su canali opachi e per gruppi chiusi
+      di utenti che proteggono la visibilità delle tariffe pubbliche.
+  BC-4030.60:
+    name: Analisi delle performance dei ricavi
+    description: |
+      Reporting e analisi delle performance dei ricavi, inclusi RevPAR,
+      RevPAX, ADR, yield e scostamenti dalle previsioni.
+  BC-4030.60.10:
+    name: Reporting dei KPI dei ricavi
+    description: |
+      Reporting dei KPI principali dei ricavi rispetto al budget
+      e al periodo precedente.
+  BC-4030.60.20:
+    name: Analisi degli scostamenti di yield
+    description: |
+      Analisi degli scostamenti di yield che attribuisce la variazione
+      agli effetti di mix, tariffa e occupazione.
+  BC-4030.60.30:
+    name: Analisi del contributo dei ricavi per canale
+    description: |
+      Analisi del contributo dei ricavi per canale, segmento
+      e codice tariffa.
+  BC-4030.60.40:
+    name: Analisi delle previsioni rispetto ai ricavi effettivi
+    description: |
+      Analisi delle previsioni rispetto ai ricavi effettivi con attribuzione
+      alle fonti di errore di previsione.
+metadata:
+  status: draft
+  reviewer: pending

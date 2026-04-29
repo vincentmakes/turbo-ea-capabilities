@@ -1,0 +1,196 @@
+# Gestione della messa in servizio degli impianti degli edifici (it) — translations for L1-building-systems-commissioning-management.yaml
+locale: it
+source: L1-building-systems-commissioning-management.yaml
+entries:
+  BC-2050:
+    name: Gestione della messa in servizio degli impianti degli edifici
+    description: |
+      Messa in servizio degli impianti HVAC e BAS come servizio erogabile — messa in servizio
+      iniziale, retro-commissioning, ri-commissioning e commissioning basato sul monitoraggio.
+      Basato sul processo di commissioning totale dell'edificio secondo ASHRAE Guideline 0 /
+      Guideline 1.1.
+    in_scope:
+      - Revisione dei requisiti del committente e della base di progetto
+      - Verifica dell'installazione pre-funzionale e ispezione dell'avviamento
+      - Prove funzionali delle prestazioni degli impianti HVAC e BAS
+      - Verifica delle sequenze operative e prove di integrazione dei sistemi
+      - Retro-commissioning, ri-commissioning e commissioning basato sul monitoraggio
+      - Documentazione Cx, manuali di sistema e formazione del committente
+    out_of_scope:
+      - Progettazione dell'integrazione ingegneristica a livello di progetto (BC-2020)
+      - Operazioni di assistenza continuativa dopo il collaudo (BC-2060)
+      - Commissioning ingegneristico generico di impianti capitalizzati (BC-1160)
+
+  BC-2050.10:
+    name: Pianificazione e scoping della messa in servizio
+    description: |
+      Definizione del programma di commissioning, dello scope e della base di accettazione
+      per il progetto.
+
+  BC-2050.10.10:
+    name: Revisione dei requisiti del committente
+    description: Revisione dei requisiti del committente come baseline del commissioning.
+
+  BC-2050.10.20:
+    name: Revisione della base di progetto
+    description: Revisione della base di progetto rispetto ai requisiti del committente.
+
+  BC-2050.10.30:
+    name: Redazione del piano di messa in servizio
+    description: Redazione del piano di commissioning che definisce lo scope, i ruoli e l'accettazione.
+
+  BC-2050.10.40:
+    name: Registro dei rischi del commissioning
+    description: Manutenzione del registro dei rischi del commissioning durante l'erogazione.
+
+  BC-2050.20:
+    name: Gestione delle ispezioni pre-funzionali
+    description: |
+      Verifica della completezza dell'installazione e della disponibilità all'avviamento prima
+      delle prove funzionali.
+
+  BC-2050.20.10:
+    name: Checklist di verifica dell'installazione
+    description: Esecuzione delle checklist di verifica dell'installazione.
+
+  BC-2050.20.20:
+    name: Ispezione di avviamento
+    description: Ispezione dell'avviamento delle apparecchiature rispetto ai requisiti del costruttore.
+
+  BC-2050.20.30:
+    name: Registrazione delle problematiche pre-funzionali
+    description: Registrazione delle problematiche pre-funzionali nel log delle problematiche del commissioning.
+
+  BC-2050.20.40:
+    name: Approvazione pre-funzionale
+    description: Approvazione del raggiungimento della disponibilità pre-funzionale.
+
+  BC-2050.30:
+    name: Prove funzionali delle prestazioni
+    description: |
+      Prove funzionali delle prestazioni dei sottosistemi HVAC e BAS rispetto ai criteri documentati.
+
+  BC-2050.30.10:
+    name: Redazione degli script di prova
+    description: Redazione degli script di prova funzionale rispetto all'intento progettuale.
+
+  BC-2050.30.20:
+    name: Esecuzione e testimonianza delle prove
+    description: Esecuzione e testimonianza delle prove funzionali sugli impianti HVAC e BAS.
+
+  BC-2050.30.30:
+    name: Risoluzione delle problematiche di prova
+    description: Risoluzione delle problematiche identificate durante le prove funzionali.
+
+  BC-2050.30.40:
+    name: Approvazione dei risultati delle prove
+    description: Approvazione dei risultati delle prove e chiusura dei casi di prova.
+
+  BC-2050.40:
+    name: Verifica delle sequenze operative
+    description: |
+      Verifica delle sequenze di controllo programmate rispetto alle sequenze operative progettuali.
+
+  BC-2050.40.10:
+    name: Walkthrough della logica di controllo
+    description: Walkthrough della logica di controllo rispetto alle sequenze redatte.
+
+  BC-2050.40.20:
+    name: Verifica dei setpoint e delle modalità operative
+    description: Verifica dei setpoint e delle modalità operative nei vari calendari.
+
+  BC-2050.40.30:
+    name: Test di override e comportamento in caso di guasto
+    description: Test dei percorsi di override e dei comportamenti in modalità di guasto.
+
+  BC-2050.40.40:
+    name: Verifica basata sui trend
+    description: Utilizzo dei dati di trend per verificare le prestazioni delle sequenze nel tempo.
+
+  BC-2050.50:
+    name: Prove di integrazione dei sistemi
+    description: |
+      Prove dei comportamenti integrati tra sistemi HVAC, antincendio e sistemi elettrici.
+
+  BC-2050.50.10:
+    name: Prova di integrazione antincendio e sicurezza vita
+    description: Prove di integrazione che coprono l'interazione HVAC con i sistemi antincendio e di sicurezza vita.
+
+  BC-2050.50.20:
+    name: Prova di controllo del fumo e pressurizzazione
+    description: Prove delle sequenze di controllo del fumo e di pressurizzazione.
+
+  BC-2050.50.30:
+    name: Prova di mancanza di alimentazione e riduzione del carico
+    description: Prove del comportamento HVAC durante i mancanza di alimentazione e gli eventi di riduzione del carico.
+
+  BC-2050.50.40:
+    name: Prova di integrazione della rete dell'edificio
+    description: Prove di integrazione tra BAS e le reti IT adiacenti dell'edificio.
+
+  BC-2050.60:
+    name: Retro-commissioning e ri-commissioning
+    description: |
+      Servizio di commissioning applicato agli edifici esistenti e come cicli periodici di ri-commissioning.
+
+  BC-2050.60.10:
+    name: Indagine sull'edificio esistente
+    description: Indagine sulle prestazioni dell'edificio esistente rispetto all'intento attuale.
+
+  BC-2050.60.20:
+    name: Analisi dei gap di prestazione
+    description: Analisi dei gap di prestazione e delle cause profonde negli edifici esistenti.
+
+  BC-2050.60.30:
+    name: Attuazione delle misure di retro-commissioning
+    description: Attuazione delle misure di retro-commissioning sui sistemi esistenti.
+
+  BC-2050.60.40:
+    name: Esecuzione del ciclo di ri-commissioning
+    description: Esecuzione dei cicli periodici di ri-commissioning per prestazioni sostenute.
+
+  BC-2050.70:
+    name: Commissioning basato sul monitoraggio
+    description: |
+      Commissioning continuo basato sui dati che utilizza strumentazione e telemetria.
+
+  BC-2050.70.10:
+    name: Piano di monitoraggio e strumentazione
+    description: Redazione dei piani di monitoraggio e selezione della strumentazione di supporto.
+
+  BC-2050.70.20:
+    name: Trend continuo delle prestazioni
+    description: Trend continuo delle prestazioni dell'edificio per informazioni sul commissioning.
+
+  BC-2050.70.30:
+    name: Indagine sulle anomalie
+    description: Indagine sulle anomalie rilevate dai trend continui.
+
+  BC-2050.70.40:
+    name: Verifica della persistenza
+    description: Verifica che le prestazioni commissionate persistano nel tempo.
+
+  BC-2050.80:
+    name: Documentazione e chiusura del commissioning
+    description: |
+      Produzione dei deliverable del commissioning e chiusura formale dello scope del commissioning.
+
+  BC-2050.80.10:
+    name: Redazione del rapporto di commissioning
+    description: Redazione del rapporto finale di commissioning.
+
+  BC-2050.80.20:
+    name: Compilazione del manuale di sistema
+    description: Compilazione del manuale di sistema per la gestione da parte del committente.
+
+  BC-2050.80.30:
+    name: Erogazione della formazione al committente
+    description: Erogazione della formazione al committente sui sistemi messi in servizio.
+
+  BC-2050.80.40:
+    name: Approvazione finale del collaudo
+    description: Approvazione finale del commissioning e passaggio di consegne alle operazioni.
+
+metadata:
+  status: draft
+  reviewer: pending
