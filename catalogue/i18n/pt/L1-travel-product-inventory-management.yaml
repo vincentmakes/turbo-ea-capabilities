@@ -1,0 +1,192 @@
+locale: pt
+source: L1-travel-product-inventory-management.yaml
+entries:
+  BC-4000:
+    name: Gestão de produto e inventário de viagem
+    description: |
+      Definição principal, estrutura e controlo de inventário de produtos
+      de viagem reserváveis — quartos, tarifas, pacotes, serviços adicionais,
+      atrações e a taxonomia e conteúdo que os descreve — independentemente
+      dos canais através dos quais são vendidos.
+  BC-4000.10:
+    name: Gestão de produto de alojamento
+    description: |
+      Definição de produtos de alojamento, incluindo tipos de quarto, planos
+      de tarifa, códigos de pacote e taxonomia de alojamento utilizados
+      em toda a empresa.
+  BC-4000.10.10:
+    name: Definição de tipo de quarto e classe de inventário
+    description: |
+      Definição de tipos de quarto, categorias de suite e classes de inventário
+      que formam a base do produto de alojamento.
+  BC-4000.10.20:
+    name: Definição de plano de tarifa e código de tarifa
+    description: |
+      Definição de planos de tarifa, códigos de tarifa e atributos de plano
+      de tarifa que abrangem regras de reembolsabilidade, pré-pagamento
+      e inclusão.
+  BC-4000.10.30:
+    name: Estado do ciclo de vida do produto de alojamento
+    description: |
+      Gestão do estado do ciclo de vida dos produtos de alojamento, desde
+      proposto a ativo, suspenso e retirado.
+  BC-4000.10.40:
+    name: Agrupamento de produtos de alojamento
+    description: |
+      Construção de pacotes de alojamento que combinam acomodação com
+      pequeno-almoço, estacionamento e outras inclusões.
+  BC-4000.20:
+    name: Gestão de produto aéreo
+    description: |
+      Definição de famílias de tarifas de companhia aérea, atributos de
+      tarifas de marca, regras de tarifa e mapeamentos de produtos de
+      codeshare/interline.
+  BC-4000.20.10:
+    name: Definição de família de tarifas
+    description: |
+      Definição de famílias de tarifas, cabines e classes de tarifa
+      utilizadas para pesquisa e controlo de inventário.
+  BC-4000.20.20:
+    name: Gestão de atributos de tarifas de marca
+    description: |
+      Gestão de atributos de tarifas de marca, como franquia de bagagem,
+      seleção de assento e acesso a sala VIP.
+  BC-4000.20.30:
+    name: Criação de regras de tarifa
+    description: |
+      Criação de regras de tarifa que abrangem compra antecipada, estadia
+      mínima, combinabilidade e penalidades de alteração.
+  BC-4000.20.40:
+    name: Mapeamento de produtos de codeshare e interline
+    description: |
+      Mapeamento de produtos de transportadoras parceiras para as famílias
+      de tarifas próprias para distribuição de codeshare e interline.
+  BC-4000.30:
+    name: Gestão de produtos de excursão e pacote
+    description: |
+      Definição de itinerários empacotados, produtos de viagem multi-percurso
+      e mapeamentos de componentes de pacote dinâmico.
+  BC-4000.30.10:
+    name: Definição de produto de pacote estático
+    description: |
+      Definição de pacotes fixos que combinam componentes fixos num único
+      produto vendável.
+  BC-4000.30.20:
+    name: Mapeamento de componentes de pacote dinâmico
+    description: |
+      Mapeamento de componentes para pacotes dinâmicos onde o viajante
+      monta voo, hotel e serviços adicionais no momento da pesquisa.
+  BC-4000.30.30:
+    name: Versionamento de produtos de pacote
+    description: |
+      Versionamento de produtos de pacote entre épocas, ciclos de brochura
+      e lançamentos de funcionalidades.
+  BC-4000.30.40:
+    name: Calendário de partidas de pacote
+    description: |
+      Definição de calendários de partidas de pacote, datas bloqueadas e
+      janelas de época.
+  BC-4000.40:
+    name: Gestão de produtos adicionais e complementares
+    description: |
+      Definição de produtos adicionais e complementares, como refeições,
+      bagagem, transfers, atrações, spa e serviços terrestres.
+  BC-4000.40.10:
+    name: Definição do catálogo de serviços adicionais
+    description: |
+      Definição do catálogo de serviços adicionais, incluindo categorias,
+      variantes e condições de aplicabilidade.
+  BC-4000.40.20:
+    name: Regras de agrupamento de serviços adicionais
+    description: |
+      Regras para agrupar serviços adicionais com produtos de viagem
+      principais e com outros serviços adicionais.
+  BC-4000.40.30:
+    name: Regras de elegibilidade de venda cruzada
+    description: |
+      Regras de elegibilidade que regem quais os serviços adicionais que
+      podem ser vendidos em conjunto com quais os produtos principais em
+      quais os canais.
+  BC-4000.40.40:
+    name: Gestão do ciclo de vida de serviços adicionais
+    description: |
+      Gestão do ciclo de vida de serviços adicionais desde o lançamento
+      até à retirada, incluindo ofertas por tempo limitado.
+  BC-4000.50:
+    name: Alocação de inventário de viagem
+    description: |
+      Definição e controlo de reservas de inventário, blocos, atribuições
+      e regras de retenção em produtos de viagem.
+  BC-4000.50.10:
+    name: Definição de reserva de inventário
+    description: |
+      Definição de reservas de inventário ao nível de propriedade, frota
+      ou produto utilizado como base para alocação.
+  BC-4000.50.20:
+    name: Alocação de atribuições e blocos
+    description: |
+      Alocação de atribuições e blocos a canais, parceiros e operadores
+      de excursões.
+  BC-4000.50.30:
+    name: Regras de retenção e proteção de classe
+    description: |
+      Regras para proteger inventário para segmentos, canais ou membros
+      de programa de fidelização específicos.
+  BC-4000.50.40:
+    name: Configuração de tampão de overbooking
+    description: |
+      Configuração de tampões de overbooking que refletem as taxas esperadas
+      de não comparência e cancelamento.
+  BC-4000.60:
+    name: Governação de dados mestre de produto de viagem
+    description: |
+      Custódia de taxonomia de produto, classificações, normas de atributos
+      e integridade de identificadores no mestre de produto de viagem.
+  BC-4000.60.10:
+    name: Normas de atributos de produto
+    description: |
+      Normas para atributos de produto que garantem semântica consistente
+      entre sistemas e canais.
+  BC-4000.60.20:
+    name: Classificação e marcação de produtos
+    description: |
+      Classificação e marcação de produtos contra taxonomias utilizadas
+      para pesquisa, merchandising e relatórios.
+  BC-4000.60.30:
+    name: Estado do ciclo de vida do mestre de produto
+    description: |
+      Estado do ciclo de vida principal para produtos que abrangem subtipos
+      de produto e alinham alterações de estado filho.
+  BC-4000.60.40:
+    name: Custódia de identificadores de produto
+    description: |
+      Custódia de identificadores canónicos de produto e resolução de
+      colisões e duplicados de identificadores.
+  BC-4000.70:
+    name: Gestão de conteúdo e imagens de viagem
+    description: |
+      Criação e gestão de conteúdo descritivo, imagens, ativos multimédia
+      e registos de classificação/certificação que descrevem produtos
+      de viagem.
+  BC-4000.70.10:
+    name: Criação de conteúdo descritivo
+    description: |
+      Criação de conteúdo descritivo longo e curto para produtos de viagem.
+  BC-4000.70.20:
+    name: Gestão de ativos de imagens e multimédia
+    description: |
+      Gestão de ativos multimédia de fotografia, vídeo e 360 graus
+      associados a produtos de viagem.
+  BC-4000.70.30:
+    name: Registos de classificação de estrelas e certificação
+    description: |
+      Manutenção de classificações de estrelas, certificações de terceiros
+      e selos de qualidade associados a produtos de viagem.
+  BC-4000.70.40:
+    name: Localização de conteúdo
+    description: |
+      Localização de conteúdo de produto nos mercados e idiomas suportados.
+metadata:
+  status: draft
+  translator: claude-ai
+  notes: Machine-translated; needs native-speaker review.
