@@ -1,0 +1,142 @@
+locale: pt
+source: L1-commodity-origination-merchandising-management.yaml
+entries:
+  BC-3570:
+    name: Gestão de captação e comercialização de produtos de base
+    description: |
+      Programas de captação junto de agricultores, contratação de produtos de
+      base, pesagem e amostragem, posições de inventário físico, negociação
+      em dinheiro e base, cobertura e liquidação de grãos, oleaginosas, produtos
+      moles, animais e produtos lácteos.
+  BC-3570.10:
+    name: Gestão de programas de captação
+    description: |
+      Contratação de agricultores, gestão de relações com produtores e previsão
+      de captação que alimenta o livro de fornecimento.
+  BC-3570.10.10:
+    name: Programas de contratação de agricultores
+    description: |
+      Conceção e execução de programas de contratação de agricultores por região.
+  BC-3570.10.20:
+    name: Gestão de relações com produtores
+    description: |
+      Gestão de relações com produtores distinta do CRM genérico.
+  BC-3570.10.30:
+    name: Previsão de captação
+    description: |
+      Previsão de volumes esperados de captação por região e cultura.
+  BC-3570.20:
+    name: Gestão de contratos de produtos de base
+    description: |
+      Emissão e acompanhamento do desempenho de contratos a prazo, de produção
+      e de preços diferidos de produtos de base.
+    in_scope:
+      - Contratos a prazo com agricultores e contrapartes
+      - Contratos de produção com especificações de qualidade
+      - Acompanhamento do desempenho de contratos
+    out_of_scope:
+      - Gestão genérica de contratos jurídicos (BC-150)
+  BC-3570.20.10:
+    name: Emissão de contratos a prazo
+    description: |
+      Emissão de contratos a prazo a preço fixo e base.
+  BC-3570.20.20:
+    name: Gestão de contratos de produção
+    description: |
+      Gestão de contratos de produção com especificações de qualidade e entrega.
+  BC-3570.20.30:
+    name: Acompanhamento do desempenho de contratos
+    description: |
+      Acompanhamento de toneladas entregues face ao desempenho do contrato.
+  BC-3570.30:
+    name: Pesagem e amostragem inbound
+    description: |
+      Operações de pesagem, amostragem e classificação de qualidade e cálculo
+      do ajuste de receção no ponto de receção.
+  BC-3570.30.10:
+    name: Operações de pesagem
+    description: |
+      Operações de pesagem inbound e outbound e emissão de talão de pesagem.
+  BC-3570.30.20:
+    name: Amostragem e classificação de qualidade
+    description: |
+      Amostragem de receção e classificação face às especificações comerciais.
+  BC-3570.30.30:
+    name: Cálculo do ajuste de receção
+    description: |
+      Cálculo de descontos e prémios baseados em qualidade na receção.
+  BC-3570.40:
+    name: Gestão de posição de inventário de produtos de base
+    description: |
+      Acompanhamento de posições físicas de produtos de base, decisões de mistura
+      e posições em trânsito na rede.
+  BC-3570.40.10:
+    name: Acompanhamento de posições físicas
+    description: |
+      Acompanhamento de posições físicas longas e curtas por local e qualidade.
+  BC-3570.40.20:
+    name: Decisões de mistura de qualidade
+    description: |
+      Decisões de mistura para cumprir as especificações de qualidade do contrato.
+  BC-3570.40.30:
+    name: Acompanhamento de posições em trânsito
+    description: |
+      Acompanhamento de posições em trânsito por navio, comboio e camião.
+  BC-3570.50:
+    name: Operações de negociação de produtos de base
+    description: |
+      Negociação em dinheiro e base, execução de vendas a prazo e gestão de
+      spread entre produtos nos livros físicos de produtos de base.
+  BC-3570.50.10:
+    name: Negociação em dinheiro e base
+    description: |
+      Negociação de posições em dinheiro e base em produtos físicos.
+  BC-3570.50.20:
+    name: Execução de vendas a prazo
+    description: |
+      Execução de vendas a prazo a processadores e exportadores.
+  BC-3570.50.30:
+    name: Gestão de spread entre produtos
+    description: |
+      Gestão de spreads entre produtos como margens de esmagamento e crack.
+  BC-3570.60:
+    name: Gestão de cobertura e posição de risco
+    description: |
+      Execução e reconciliação de coberturas de futuros e opções face a posições
+      físicas de produtos de base.
+  BC-3570.60.10:
+    name: Execução de cobertura com futuros
+    description: |
+      Execução de coberturas com futuros em mercados regulados.
+  BC-3570.60.20:
+    name: Execução de cobertura com opções
+    description: |
+      Execução de coberturas com opções para gerir o risco de cauda de preço.
+  BC-3570.60.30:
+    name: Reconciliação de posição de cobertura
+    description: |
+      Reconciliação de posições de cobertura face às exposições físicas
+      subjacentes.
+  BC-3570.70:
+    name: Liquidação e preçário de produtos de base
+    description: |
+      Preçário final, emissão de extratos de liquidação e resolução de
+      reclamações de qualidade com contrapartes.
+  BC-3570.70.10:
+    name: Preçário final e cálculo de desconto
+    description: |
+      Preçário final incluindo aplicação de desconto e prémio baseados em
+      qualidade.
+  BC-3570.70.20:
+    name: Emissão de extratos de liquidação
+    description: |
+      Emissão de extratos de liquidação a agricultores e contrapartes.
+  BC-3570.70.30:
+    name: Resolução de reclamações de qualidade
+    description: |
+      Resolução de reclamações de qualidade com agricultores, compradores e
+      organismos de arbitragem.
+metadata:
+  status: draft
+  translator: claude-ai
+  notes: Machine-translated; needs native-speaker review.

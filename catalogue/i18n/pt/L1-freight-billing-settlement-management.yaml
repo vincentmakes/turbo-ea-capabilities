@@ -1,0 +1,110 @@
+locale: pt
+source: L1-freight-billing-settlement-management.yaml
+entries:
+  BC-2530:
+    name: Gestão de faturação e liquidação de frete
+    description: |
+      Emissão de faturas de frete, auditoria e pagamento de faturas de
+      transportadoras, liquidação interline e de conjuntos, reclamações de carga
+      e contabilidade de receita de frete.
+  BC-2530.10:
+    name: Gestão de faturação de frete
+    description: |
+      Geração e distribuição de faturas de frete, acessórios e autofaturação a
+      clientes.
+    in_scope:
+      - Geração de faturas de frete
+      - Reconciliação de autofaturação de clientes
+    out_of_scope:
+      - Processos genéricos de contas a receber (BC-200)
+      - Estratégia de preços ao cliente (BC-440)
+  BC-2530.10.10:
+    name: Geração de fatura de frete
+    description: |
+      Geração de faturas de frete a partir de movimentos concluídos.
+  BC-2530.10.20:
+    name: Geração de fatura de acessórios
+    description: |
+      Geração de faturas de acessórios e sobretaxas.
+  BC-2530.10.30:
+    name: Coordenação de autofaturação de clientes
+    description: |
+      Reconciliação de declarações de autofaturação de clientes face a envios.
+  BC-2530.20:
+    name: Gestão de auditoria e pagamento de frete
+    description: |
+      Auditoria de faturas de transportadoras e execução de pagamentos a
+      transportadoras por expedidores e transitários.
+  BC-2530.20.10:
+    name: Auditoria de faturas de transportadora
+    description: |
+      Auditoria de faturas de transportadoras face a contratos, tarifas e envios.
+  BC-2530.20.20:
+    name: Reconciliação pré-auditoria e pós-auditoria
+    description: |
+      Reconciliação pré-auditoria e pós-auditoria de faturas de transportadoras.
+  BC-2530.20.30:
+    name: Execução de pagamento a transportadora
+    description: |
+      Execução de pagamentos a transportadoras e reporte de remessas.
+  BC-2530.30:
+    name: Gestão de liquidação interline e multi-transportadora
+    description: |
+      Liquidação de receita e custos entre parceiros interline, alianças e
+      escritórios de transitários.
+  BC-2530.30.10:
+    name: Cálculo pro-rata interline
+    description: |
+      Cálculo da receita pro-rata interline entre parceiros.
+  BC-2530.30.20:
+    name: Operações de liquidação IATA CASS
+    description: |
+      Operação de liquidação IATA CASS para carga aérea.
+  BC-2530.30.30:
+    name: Liquidação entre escritórios
+    description: |
+      Liquidação entre escritórios de receita e custos de transitário.
+  BC-2530.40:
+    name: Gestão de reclamações de carga
+    description: |
+      Receção, avaliação e liquidação de reclamações de carga ao abrigo de
+      convenções de responsabilidade de transporte.
+  BC-2530.40.10:
+    name: Receção e confirmação de reclamação
+    description: |
+      Receção e confirmação de reclamações de perda e dano de carga.
+  BC-2530.40.20:
+    name: Avaliação de responsabilidade
+    description: |
+      Avaliação da responsabilidade da transportadora ao abrigo de Hague-Visby,
+      Montreal, CMR e COTIF.
+  BC-2530.40.30:
+    name: Liquidação e recuperação de reclamação
+    description: |
+      Liquidação de reclamações aceites e pagamento ao cliente.
+  BC-2530.40.40:
+    name: Recurso e sub-rogação de reclamação
+    description: |
+      Recurso contra transportadoras subjacentes e sub-rogação contra seguradoras.
+  BC-2530.50:
+    name: Gestão de contabilidade de receita de frete
+    description: |
+      Reconhecimento, acompanhamento e reporte de receita de frete, incluindo
+      posições por faturar e diferidas.
+  BC-2530.50.10:
+    name: Reconhecimento de receita de frete
+    description: |
+      Reconhecimento de receita de frete de acordo com as normas contabilísticas
+      aplicáveis.
+  BC-2530.50.20:
+    name: Acompanhamento de receita por faturar
+    description: |
+      Acompanhamento da receita de frete por faturar e acumulada.
+  BC-2530.50.30:
+    name: Reporte de receita de frete
+    description: |
+      Reporte da receita de frete para as funções financeiras e comerciais.
+metadata:
+  status: draft
+  translator: claude-ai
+  notes: Machine-translated; needs native-speaker review.

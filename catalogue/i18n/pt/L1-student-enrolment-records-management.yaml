@@ -1,0 +1,151 @@
+locale: pt
+source: L1-student-enrolment-records-management.yaml
+entries:
+  BC-4720:
+    name: Gestão de matrículas e registos de estudantes
+    description: |
+      Administração do ciclo de vida ativo do estudante desde a matrícula e
+      registo até aos registos académicos, certificados, transferência de créditos
+      e graduação, bem como gestão de registos de identificação do estudante.
+  BC-4720.10:
+    name: Matrícula e registo
+    description: |
+      Matrícula e registo em cursos de estudantes admitidos por período letivo,
+      incluindo ajustes de horário e continuação entre períodos.
+    in_scope:
+      - Registo em cursos
+      - Adição/abandono e ajuste de horário
+      - Rematrícula e continuação
+    out_of_scope:
+      - Decisões iniciais de admissão (abrangidas em Gestão de Recrutamento e Admissões de Estudantes)
+  BC-4720.10.10:
+    name: Registo em cursos
+    description: |
+      Registo de estudantes em cursos, turmas e unidades de aprendizagem.
+  BC-4720.10.20:
+    name: Adição/abandono e ajuste de horário
+    description: |
+      Processamento de adição/abandono e ajuste de horário dentro dos prazos publicados.
+  BC-4720.10.30:
+    name: Rematrícula e continuação
+    description: |
+      Rematrícula e continuação ao longo de períodos e anos académicos.
+  BC-4720.20:
+    name: Gestão de registos académicos
+    description: |
+      Manutenção de registos académicos autoritativos de estudantes, incluindo
+      notas, certificados de habilitações e determinações de situação académica.
+    in_scope:
+      - Registo de notas e classificações
+      - Produção de certificados de habilitações
+      - Determinação da situação académica
+    out_of_scope:
+      - Fluxo de trabalho de avaliação em si (abrangido em Gestão de Avaliação e Exames)
+  BC-4720.20.10:
+    name: Registo de notas e classificações
+    description: |
+      Registo autoritativo de notas e classificações nos registos de estudantes.
+  BC-4720.20.20:
+    name: Produção de certificados de habilitações
+    description: |
+      Produção e emissão de certificados de habilitações oficiais e não oficiais.
+  BC-4720.20.30:
+    name: Determinação da situação académica
+    description: |
+      Determinação da situação académica, distinções, período probatório e exclusão.
+  BC-4720.30:
+    name: Horários de cursos e registos de calendário
+    description: |
+      Registos autoritativos de horários de turmas, alocação de salas e decisões
+      de resolução de conflitos utilizados a jusante pela matrícula.
+    in_scope:
+      - Registos de horários de turmas e coortes
+      - Registos de alocação de salas e instalações
+      - Registos de resolução de conflitos de horário
+    out_of_scope:
+      - Lecionação diária em sala de aula (abrangida em Gestão de Operações de Ensino e Aprendizagem)
+  BC-4720.30.10:
+    name: Registos de horários de turmas e coortes
+    description: |
+      Registos autoritativos de horários por turma e coorte.
+  BC-4720.30.20:
+    name: Registos de alocação de salas e instalações
+    description: |
+      Registos de alocação de salas de ensino e instalações por sessão do horário.
+  BC-4720.30.30:
+    name: Registos de resolução de conflitos de horário
+    description: |
+      Registos de conflitos de horário identificados e resolvidos.
+  BC-4720.40:
+    name: Transferência de créditos e reconhecimento
+    description: |
+      Avaliação e registo de créditos transferidos de outras instituições, reconhecimento
+      de aprendizagem prévia e aplicação de acordos de articulação.
+    in_scope:
+      - Avaliação de créditos de transferência
+      - Reconhecimento de aprendizagem prévia (RAP)
+      - Aplicação de acordos de articulação
+    out_of_scope:
+      - Avaliação de credenciais internacionais na admissão (abrangida em Gestão de Recrutamento e Admissões de Estudantes)
+  BC-4720.40.10:
+    name: Avaliação de créditos de transferência
+    description: |
+      Avaliação de créditos obtidos noutras instituições face a programas da instituição de destino.
+  BC-4720.40.20:
+    name: Reconhecimento de aprendizagem prévia
+    description: |
+      Reconhecimento de aprendizagem experiencial e informal prévia para crédito.
+  BC-4720.40.30:
+    name: Aplicação de acordos de articulação
+    description: |
+      Aplicação de acordos de articulação inter-institucionais aos registos de estudantes.
+  BC-4720.50:
+    name: Graduação e credenciação
+    description: |
+      Auditoria de elegibilidade para graduação, conferência de graus e emissão de
+      credenciais verificáveis, diplomas e certificados.
+    in_scope:
+      - Auditoria de elegibilidade para graduação
+      - Conferência de graus
+      - Emissão de credenciais e verificação a jusante
+    out_of_scope:
+      - Processamento de resultados de exames (abrangido em Gestão de Avaliação e Exames)
+  BC-4720.50.10:
+    name: Auditoria de elegibilidade para graduação
+    description: |
+      Auditoria dos registos de estudantes face aos requisitos de graduação.
+  BC-4720.50.20:
+    name: Conferência de graus
+    description: |
+      Conferência formal de graus e qualificações.
+  BC-4720.50.30:
+    name: Emissão e verificação de credenciais
+    description: |
+      Emissão e verificação de credenciais em papel e digitais, incluindo credenciais verificáveis.
+  BC-4720.60:
+    name: Registos de identificação e ciclo de vida do estudante
+    description: |
+      Manutenção de identificadores de estudantes, indicadores de estado de matrícula
+      e registos de desistência/licença que fundamentam ações administrativas a jusante.
+    in_scope:
+      - Gestão do ciclo de vida do identificador do estudante
+      - Manutenção do estado de matrícula
+      - Registos de desistência e licença de ausência
+    out_of_scope:
+      - Autenticação de identidade e acesso (abrangida em Gestão de Cibersegurança transversal)
+  BC-4720.60.10:
+    name: Ciclo de vida da identidade do estudante
+    description: |
+      Ciclo de vida de identificadores únicos de estudantes desde a emissão até ao encerramento.
+  BC-4720.60.20:
+    name: Manutenção do estado de matrícula
+    description: |
+      Manutenção dos indicadores autoritativos de estado de matrícula (ativo, licença, desistência).
+  BC-4720.60.30:
+    name: Registos de desistência e licença de ausência
+    description: |
+      Registos de desistências, licenças e readmissões de estudantes.
+metadata:
+  status: draft
+  translator: claude-ai
+  notes: Machine-translated; needs native-speaker review.

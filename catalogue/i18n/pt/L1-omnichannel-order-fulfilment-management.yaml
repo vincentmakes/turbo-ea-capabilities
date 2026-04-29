@@ -1,0 +1,123 @@
+locale: pt
+source: L1-omnichannel-order-fulfilment-management.yaml
+entries:
+  BC-2330:
+    name: Gestão de processamento de encomendas omnicanal
+    description: |
+      Orquestração de encomendas de consumidores entre canais — captura em qualquer
+      canal, promessa a partir de qualquer nó e processamento através de loja,
+      centro de distribuição, marketplace, drop-ship de fornecedor ou parceiro de
+      última milha.
+  BC-2330.10:
+    name: Gestão de orquestração de canais
+    description: |
+      Visão única das encomendas dos consumidores entre canais, encaminhamento de
+      mix de canais e estado consistente em digital, loja e marketplace.
+    in_scope:
+      - Regras de encaminhamento de canal e seleção de nó
+      - Visão única de encomendas entre canais
+      - Economia do mix de canais e trade-offs de custo de processamento
+    out_of_scope:
+      - Processamento genérico de encomendas (BC-520.40)
+  BC-2330.10.10:
+    name: Gestão de regras de encaminhamento de canal
+    description: |
+      Definição de regras de encaminhamento para seleção do nó de processamento
+      com base em custo e serviço.
+  BC-2330.10.20:
+    name: Visão de encomendas omnicanal
+    description: |
+      Visão unificada de encomendas, estado e histórico entre canais.
+  BC-2330.10.30:
+    name: Economia do mix de canais
+    description: |
+      Análise de unit economics por canal e rota de processamento.
+  BC-2330.20:
+    name: Gestão de operações click-and-collect
+    description: |
+      Operações de compra online com levantamento em loja, à porta e em cacifo,
+      que ligam as encomendas digitais aos pontos de levantamento físicos.
+  BC-2330.20.10:
+    name: Operações de pick-and-pack em loja
+    description: |
+      Picking e embalagem de encomendas online por colaboradores de loja.
+  BC-2330.20.20:
+    name: Entrega ao cliente no levantamento
+    description: |
+      Entrega ao cliente no levantamento, incluindo verificação de identidade e
+      gestão de exceções.
+  BC-2330.20.30:
+    name: Levantamento à porta e em cacifo
+    description: |
+      Operações de entrega à porta e levantamento em cacifo.
+  BC-2330.30:
+    name: Gestão de processamento de encomendas distribuído
+    description: |
+      Processamento de encomendas a partir de loja, dark store e drop-ship de
+      fornecedor, a partir de um conjunto distribuído de inventário para destinos
+      de consumidores.
+    in_scope:
+      - Operações de ship-from-store
+      - Operações de dark store e micro-centro de processamento
+      - Orquestração de drop-ship de fornecedor
+  BC-2330.30.10:
+    name: Operações de ship-from-store
+    description: |
+      Picking, embalagem e expedição de encomendas online a partir de lojas físicas.
+  BC-2330.30.20:
+    name: Operações de dark store e micro-processamento
+    description: |
+      Operações de dark stores e micro-centros de processamento para encomendas
+      digitais.
+  BC-2330.30.30:
+    name: Orquestração de drop-ship de fornecedor
+    description: |
+      Orquestração de drop-ship de fornecedor, incluindo encaminhamento de PO e
+      rastreio.
+  BC-2330.40:
+    name: Gestão de operações de vendedor em marketplace
+    description: |
+      Operação de listings do retalhista como vendedor em marketplaces de terceiros
+      e gestão de vendedores de terceiros num marketplace próprio.
+  BC-2330.40.10:
+    name: Gestão de listings em marketplace
+    description: |
+      Listagem de artigos em marketplaces de terceiros, incluindo adaptação de
+      conteúdo.
+  BC-2330.40.20:
+    name: Captura de encomendas de marketplace
+    description: |
+      Captura e tradução de encomendas de marketplace para o pipeline de encomendas
+      do anfitrião.
+  BC-2330.40.30:
+    name: Integração de vendedores de terceiros
+    description: |
+      Integração de vendedores de terceiros no marketplace do retalhista.
+  BC-2330.40.40:
+    name: Gestão do desempenho de vendedores de terceiros
+    description: |
+      Gestão do desempenho e conformidade com as políticas de vendedores de
+      terceiros.
+  BC-2330.50:
+    name: Gestão de slots de entrega ao consumidor
+    description: |
+      Marcação de slots de entrega pelo consumidor, definição de preços de janelas
+      horárias e coordenação de despacho de estafetas para entrega em casa.
+  BC-2330.50.10:
+    name: Reserva de slot de entrega
+    description: |
+      Reserva de slots de entrega pelo consumidor com lógica de disponibilidade e
+      capacidade.
+  BC-2330.50.20:
+    name: Preço de janela horária
+    description: |
+      Preço dinâmico de janelas horárias de entrega por procura e densidade de
+      rota.
+  BC-2330.50.30:
+    name: Coordenação de despacho de estafeta
+    description: |
+      Coordenação de despacho com estafetas de última milha próprios e de terceiros.
+metadata:
+  status: draft
+  translator: claude-ai
+  notes: Machine-translated; needs native-speaker review.

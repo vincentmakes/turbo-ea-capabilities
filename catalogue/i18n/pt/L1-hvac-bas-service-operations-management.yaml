@@ -1,0 +1,191 @@
+locale: pt
+source: L1-hvac-bas-service-operations-management.yaml
+entries:
+  BC-2060:
+    name: Gestão de operações de serviço HVAC e BAS
+    description: |
+      Serviço liderado pelo OEM e por contratantes no equipamento HVAC instalado e BAS — gestão
+      de configuração da base instalada, manutenção preventiva e reativa, reprogramação BAS e
+      serviço de software, retrofit e modernização de equipamentos, contratos de serviço baseados
+      em desempenho e serviço remoto conectado.
+    in_scope:
+      - Registo de equipamento instalado e configuração BAS
+      - Prestação de contrato de manutenção preventiva e serviço reativo/de emergência
+      - Reprogramação BAS, atualizações de firmware e operações de backup/recuperação
+      - Execução de retrofit e modernização no equipamento HVAC instalado
+      - Contratos de serviço baseados em desempenho e resultados
+      - Operações de serviço remoto conectado e de centro de diagnóstico
+      - Gestão de acordo de nível de serviço e satisfação do cliente
+    out_of_scope:
+      - Assistência de campo genérica multissetorial (BC-1050) e peças sobressalentes (BC-1060)
+      - Colocação em serviço de projeto e prestação de Cx (BC-2050)
+      - Aprovisionamento e relatório de refrigerante (BC-2040)
+      - Engenharia de produto de equipamento HVAC (BC-2000)
+  BC-2060.10:
+    name: Gestão de configuração da base instalada
+    description: |
+      Manutenção dos dados de configuração tal como instalada e tal como mantida para a base instalada global.
+  BC-2060.10.10:
+    name: Registo de ativos de equipamento
+    description: |
+      Registo de equipamentos HVAC instalados por número de série, local e cliente.
+  BC-2060.10.20:
+    name: Registo de configuração BAS
+    description: |
+      Registo de configurações BAS, controladores, pontos e sequências em serviço.
+  BC-2060.10.30:
+    name: Registos tal como mantido
+    description: |
+      Registos de configuração tal como mantida após cada evento de assistência.
+  BC-2060.10.40:
+    name: Registos de modificação da base instalada
+    description: |
+      Registos de modificações pós-entrega no equipamento instalado e BAS.
+  BC-2060.20:
+    name: Operações de serviço de manutenção preventiva
+    description: |
+      Prestação de manutenção preventiva programada ao abrigo do contrato.
+  BC-2060.20.10:
+    name: Execução do contrato de manutenção
+    description: |
+      Execução da manutenção preventiva face ao âmbito contratado.
+  BC-2060.20.20:
+    name: Encaminhamento de visitas programadas
+    description: |
+      Encaminhamento e despacho de visitas de assistência programadas.
+  BC-2060.20.30:
+    name: Serviço de filtros e correias
+    description: |
+      Serviço de substituição de filtros, correias e consumíveis de rotina.
+  BC-2060.20.40:
+    name: Serviço de refrigerante e serpentinas
+    description: |
+      Serviço de recarga de refrigerante e limpeza de serpentinas de rotina.
+  BC-2060.20.50:
+    name: Relatório de conformidade de manutenção
+    description: |
+      Relatório de conformidade de manutenção preventiva aos clientes.
+  BC-2060.30:
+    name: Operações de serviço reativo e de emergência
+    description: |
+      Serviço reativo e de emergência fora de horas no equipamento instalado.
+  BC-2060.30.10:
+    name: Triagem de pedidos de assistência
+    description: |
+      Triagem de pedidos de assistência recebidos por urgência e capacidade.
+  BC-2060.30.20:
+    name: Despacho de resposta de emergência
+    description: |
+      Despacho de socorristas para avarias críticas de equipamento.
+  BC-2060.30.30:
+    name: Execução de reparação no local
+    description: |
+      Execução de reparação no local por técnicos de assistência.
+  BC-2060.30.40:
+    name: Resposta de emergência a fuga de refrigerante
+    description: |
+      Resposta de emergência a libertações e fugas maiores de refrigerante.
+  BC-2060.40:
+    name: Reprogramação BAS e serviço de software
+    description: |
+      Serviço do lado do software no BAS instalado — atualizações de sequências, atualização de firmware e alterações de configuração.
+  BC-2060.40.10:
+    name: Implementação de atualização de sequências
+    description: |
+      Implementação de sequências de operação atualizadas nos controladores instalados.
+  BC-2060.40.20:
+    name: Atualização de firmware do controlador
+    description: |
+      Atualização de firmware dos controladores BAS instalados.
+  BC-2060.40.30:
+    name: Modificação de pontos e programas
+    description: |
+      Modificação em campo de pontos, programas e tendências BAS.
+  BC-2060.40.40:
+    name: Operações de backup e recuperação BAS
+    description: |
+      Backup da configuração BAS e recuperação em eventos de falha.
+  BC-2060.50:
+    name: Serviço de retrofit e modernização de equipamentos HVAC
+    description: |
+      Serviços de retrofit, substituição e modernização prestados na base HVAC instalada.
+  BC-2060.50.10:
+    name: Engenharia de retrofit no local
+    description: |
+      Engenharia no local de pacotes de retrofit adaptados à instalação.
+  BC-2060.50.20:
+    name: Execução de substituição de equipamento
+    description: |
+      Execução no local de âmbitos de substituição de equipamento.
+  BC-2060.50.30:
+    name: Serviço de conversão de refrigerante
+    description: |
+      Conversão do equipamento instalado para refrigerantes alternativos.
+  BC-2060.50.40:
+    name: Testes de validação de retrofit
+    description: |
+      Testes de validação após trabalho de retrofit ou modernização.
+  BC-2060.60:
+    name: Operações de contratos de serviço baseados em desempenho
+    description: |
+      Operação de contratos de serviço baseados em desempenho e resultados.
+  BC-2060.60.10:
+    name: Execução de contrato de desempenho
+    description: |
+      Execução de obrigações de serviço baseadas em desempenho.
+  BC-2060.60.20:
+    name: Acompanhamento de poupanças garantidas
+    description: |
+      Acompanhamento de resultados de poupanças garantidas face à linha de base.
+  BC-2060.60.30:
+    name: Operações do mecanismo de partilha de risco
+    description: |
+      Operação de mecanismos de bónus e penalização por partilha de risco.
+  BC-2060.60.40:
+    name: Relatório de resultados
+    description: |
+      Relatório de resultados contratados e métricas de nível de serviço.
+  BC-2060.70:
+    name: Operações de serviço remoto conectado
+    description: |
+      Operações de centro de serviço remoto aproveitando dados de HVAC e BAS conectados.
+  BC-2060.70.10:
+    name: Operações do centro de diagnóstico remoto
+    description: |
+      Operações do centro de diagnóstico remoto para equipamentos conectados.
+  BC-2060.70.20:
+    name: Triagem remota de problemas
+    description: |
+      Triagem de problemas identificados por telemetria remota.
+  BC-2060.70.30:
+    name: Execução de resolução remota
+    description: |
+      Execução de resoluções apenas remotas quando o problema não requer visita ao local.
+  BC-2060.70.40:
+    name: Integração de clientes no serviço conectado
+    description: |
+      Integração de clientes em ofertas de serviço conectado.
+  BC-2060.80:
+    name: Gestão de qualidade de serviço e SLA
+    description: |
+      Gestão da qualidade de serviço, acordos de nível de serviço e satisfação do cliente.
+  BC-2060.80.10:
+    name: Acompanhamento do acordo de nível de serviço
+    description: |
+      Acompanhamento do desempenho do acordo de nível de serviço.
+  BC-2060.80.20:
+    name: Captura da satisfação do cliente
+    description: |
+      Captura da satisfação do cliente nas interações de assistência.
+  BC-2060.80.30:
+    name: Gestão de escaladas de assistência
+    description: |
+      Gestão de escaladas de assistência e ações de recuperação.
+  BC-2060.80.40:
+    name: Relatório de desempenho de assistência
+    description: |
+      Relatório periódico do desempenho de assistência a clientes e gestão.
+metadata:
+  status: draft
+  translator: claude-ai
+  notes: Tradução automática; requer revisão por falante nativo.
