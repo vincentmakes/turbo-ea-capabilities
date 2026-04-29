@@ -1,0 +1,213 @@
+locale: es
+source: L1-mine-production-operations-management.yaml
+entries:
+  BC-4430:
+    name: Gestión de operaciones de producción minera
+    description: |
+      Ejecución de la producción minera mediante ciclos de perforación-voladura-
+      carga-acarreo, laboreo de stopes subterráneos, control de leyes, control
+      del terreno, ventilación minera y drenaje en operaciones a cielo abierto y
+      subterráneas.
+
+  BC-4430.10:
+    name: Operaciones de perforación y voladura
+    description: |
+      Perforación de producción, carga, iniciación y análisis del desempeño
+      posterior a la voladura para operaciones a cielo abierto y subterráneas.
+    in_scope:
+      - Perforación de tiros de producción
+      - Carga e iniciación
+      - Análisis de fragmentación y movimiento posterior a la voladura
+    out_of_scope:
+      - Perforación exploratoria (BC-4400.30)
+      - Diseño de patrón de perforación y voladura (BC-4420.40.30)
+
+  BC-4430.10.10:
+    name: Perforación de producción
+    description: |
+      Perforación de tiros de producción conforme al diseño del patrón de
+      voladura.
+
+  BC-4430.10.20:
+    name: Carga de tiros
+    description: |
+      Carga de explosivos y accesorios en los tiros de producción.
+
+  BC-4430.10.30:
+    name: Iniciación y despeje de voladura
+    description: |
+      Conexión, despeje, iniciación y control posterior a la voladura de tiros
+      de producción.
+
+  BC-4430.10.40:
+    name: Análisis del desempeño de voladuras
+    description: |
+      Análisis de fragmentación, movimiento y vibración de las voladuras
+      ejecutadas.
+
+  BC-4430.20:
+    name: Operaciones de carga y acarreo
+    description: |
+      Carga, acarreo y despacho de roca fragmentada desde el frente de trabajo
+      hasta la planta de procesamiento o el botadero.
+
+  BC-4430.20.10:
+    name: Operaciones de palas y excavadoras
+    description: |
+      Operación de palas de cable, excavadoras hidráulicas y cargadoras frontales.
+
+  BC-4430.20.20:
+    name: Operaciones de camiones de acarreo
+    description: |
+      Operación de camiones de acarreo fuera de carretera y sistemas de acarreo
+      con trolley.
+
+  BC-4430.20.30:
+    name: Despacho de flota y telemática
+    description: |
+      Despacho en tiempo real, asignación y gestión de productividad de la flota
+      basada en telemática.
+
+  BC-4430.20.40:
+    name: Reconciliación de movimiento de materiales
+    description: |
+      Reconciliación de toneladas movidas frente a relevamientos topográficos,
+      despacho y balances de pilas de mineral.
+
+  BC-4430.30:
+    name: Operaciones de producción subterránea
+    description: |
+      Desarrollo de stopes, producción, relleno y manejo de materiales
+      subterráneos específicos de los métodos de minería subterránea.
+
+  BC-4430.30.10:
+    name: Desarrollo de stopes
+    description: |
+      Desarrollo de accesos subterráneos, galerías e infraestructura de stopes.
+
+  BC-4430.30.20:
+    name: Producción de stopes
+    description: |
+      Voladura de producción y extracción de mineral en stopes subterráneos.
+
+  BC-4430.30.30:
+    name: Colocación de relleno
+    description: |
+      Colocación de relleno cementado o de roca en stopes agotados.
+
+  BC-4430.30.40:
+    name: Manejo de materiales subterráneos
+    description: |
+      Operación de correas transportadoras subterráneas, chimeneas de mineral y
+      sistemas de izaje por pique.
+
+  BC-4430.40:
+    name: Operaciones de control de leyes
+    description: |
+      Discriminación operativa mineral-estéril mediante muestreo, definición de
+      bloques de mineral y decisiones de enrutamiento en el frente de minería.
+
+  BC-4430.40.10:
+    name: Muestreo de control de leyes
+    description: |
+      Muestreo en etapa de producción de roca fragmentada y frentes para la
+      determinación de leyes.
+
+  BC-4430.40.20:
+    name: Definición de bloques de mineral
+    description: |
+      Definición de bloques de mineral explotables para la ejecución a corto
+      plazo.
+
+  BC-4430.40.30:
+    name: Marcación del límite mineral-estéril
+    description: |
+      Marcación en campo de los límites mineral-estéril para operadores de palas
+      y cargadoras.
+
+  BC-4430.40.40:
+    name: Asignación de pilas de mineral de run-of-mine
+    description: |
+      Asignación del material minado a pilas de run-of-mine y pilas de mineral
+      por ley.
+
+  BC-4430.50:
+    name: Control del terreno y monitoreo geotécnico
+    description: |
+      Control operativo del terreno mediante monitoreo y planes de acción
+      gatillados en taludes de pit y excavaciones subterráneas.
+
+  BC-4430.50.10:
+    name: Monitoreo de taludes
+    description: |
+      Monitoreo en tiempo real de taludes de pit mediante radar, prismas e
+      inclinómetros.
+
+  BC-4430.50.20:
+    name: Instalación de sostenimiento del terreno
+    description: |
+      Instalación de pernos, malla, shotcrete y sostenimiento con cables en
+      labores subterráneas.
+
+  BC-4430.50.30:
+    name: Monitoreo sísmico subterráneo
+    description: |
+      Monitoreo microsísmico de excavaciones subterráneas para la gestión de
+      eventos de estallido de roca y tensiones.
+
+  BC-4430.50.40:
+    name: Respuesta a planes de acción geotécnicos gatillados
+    description: |
+      Ejecución de planes de acción gatillados cuando se superan los umbrales
+      de monitoreo.
+
+  BC-4430.60:
+    name: Gestión de ventilación y atmósfera minera
+    description: |
+      Operación de sistemas de ventilación principal y auxiliar y monitoreo de
+      la calidad de la atmósfera de la mina.
+
+  BC-4430.60.10:
+    name: Operaciones de ventilación principal
+    description: |
+      Operación de ventiladores y galerías de ventilación principal en superficie
+      y subterráneos.
+
+  BC-4430.60.20:
+    name: Operaciones de ventilación auxiliar
+    description: |
+      Operación de ventiladores auxiliares y ductos en el frente de trabajo.
+
+  BC-4430.60.30:
+    name: Monitoreo de la atmósfera minera
+    description: |
+      Monitoreo en tiempo real y rutinario de polvo, gases y niveles de oxígeno
+      en la atmósfera de la mina.
+
+  BC-4430.60.40:
+    name: Gestión de material particulado diésel
+    description: |
+      Gestión de la exposición al material particulado diésel en labores
+      subterráneas.
+
+  BC-4430.70:
+    name: Operaciones de drenaje minero
+    description: |
+      Operación de sistemas de drenaje de pit y subterráneos e infraestructura
+      de estaciones de bombeo.
+
+  BC-4430.70.10:
+    name: Operaciones de drenaje de pit a cielo abierto
+    description: |
+      Operación de bombas en pit y sondajes de drenaje perimetrales.
+
+  BC-4430.70.20:
+    name: Operaciones de drenaje subterráneo
+    description: |
+      Operación de sumideros, bombas y redes de drenaje subterráneo.
+
+  BC-4430.70.30:
+    name: Gestión de estaciones de bombeo
+    description: |
+      Operación y mantenimiento de estaciones de bombeo fijas y tuberías de
+      descarga.
