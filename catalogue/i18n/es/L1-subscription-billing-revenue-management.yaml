@@ -1,0 +1,155 @@
+locale: es
+source: L1-subscription-billing-revenue-management.yaml
+entries:
+  BC-4250:
+    name: Gestión de facturación e ingresos por suscripción
+    description: |
+      Medición de uso, tarifación, facturación, gestión de cobros pendientes,
+      reconocimiento de ingresos por suscripción, manejo de impuestos y
+      analítica de ingresos recurrentes para el modelo comercial SaaS.
+  BC-4250.10:
+    name: Medición de uso
+    description: |
+      Ingesta y agregación de eventos de uso que alimentan la tarifación
+      posterior y la analítica.
+  BC-4250.10.10:
+    name: Ingesta de eventos de uso
+    description: |
+      Ingesta de eventos de uso desde los servicios del producto hacia el
+      pipeline de medición.
+  BC-4250.10.20:
+    name: Agregación de uso
+    description: |
+      Agregación de eventos de uso en cantidades facturables por inquilino
+      (tenant) y medidor.
+  BC-4250.10.30:
+    name: Conciliación de cantidades medidas
+    description: |
+      Conciliación de las cantidades medidas con la fuente de verdad y los
+      contadores visibles para el cliente.
+  BC-4250.20:
+    name: Tarifación y cobro
+    description: |
+      Aplicación de tarifas de suscripción, tarifas de uso, prorrateos y
+      descuentos para calcular los cargos.
+  BC-4250.20.10:
+    name: Tarifación de suscripción
+    description: |
+      Cálculo de los cargos recurrentes de suscripción por ciclo.
+  BC-4250.20.20:
+    name: Tarifación de uso
+    description: |
+      Cálculo de los cargos de uso a partir de las cantidades tarifadas y
+      los aranceles aplicables.
+  BC-4250.20.30:
+    name: Cálculo de prorrateo
+    description: |
+      Cálculo de los cargos prorrateados derivados de cambios a mitad de ciclo.
+  BC-4250.20.40:
+    name: Aplicación de descuentos
+    description: |
+      Aplicación de descuentos y créditos negociados a los cargos calculados.
+  BC-4250.30:
+    name: Gestión de facturas y estados de cuenta
+    description: |
+      Generación, entrega y ajuste de facturas y gestión de disputas de
+      facturación de clientes.
+  BC-4250.30.10:
+    name: Generación de facturas
+    description: |
+      Generación de facturas a partir de cargos tarifados y términos del contrato.
+  BC-4250.30.20:
+    name: Entrega de facturas
+    description: |
+      Entrega de facturas a los clientes mediante portal, correo electrónico
+      y canales de socios.
+  BC-4250.30.30:
+    name: Ajuste de facturas
+    description: |
+      Ajuste de facturas por créditos, errores y variaciones contractuales.
+  BC-4250.30.40:
+    name: Gestión de disputas de facturación del cliente
+    description: |
+      Clasificación y resolución de disputas de facturación de clientes.
+  BC-4250.40:
+    name: Cobro de pagos y gestión de morosidad
+    description: |
+      Gestión de métodos de pago, autorización de pagos, gestión de morosidad
+      y recuperación de cancelaciones involuntarias.
+  BC-4250.40.10:
+    name: Gestión de métodos de pago
+    description: |
+      Captura y administración de los métodos de pago y tokens de los clientes.
+  BC-4250.40.20:
+    name: Autorización de pago
+    description: |
+      Autorización y captura de pagos recurrentes a través de procesadores
+      de pago.
+  BC-4250.40.30:
+    name: Flujo de trabajo de gestión de morosidad
+    description: |
+      Secuencias automatizadas de gestión de morosidad para pagos fallidos
+      y saldos vencidos.
+  BC-4250.40.40:
+    name: Recuperación de cancelaciones involuntarias
+    description: |
+      Recuperación de suscripciones perdidas por tarjetas vencidas, rechazos
+      definitivos y fallos de pago similares.
+  BC-4250.50:
+    name: Reconocimiento de ingresos por suscripción
+    description: |
+      Identificación de obligaciones de desempeño y gestión de calendarios
+      de ingresos conforme a ASC 606 / IFRS 15.
+  BC-4250.50.10:
+    name: Identificación de obligaciones de desempeño
+    description: |
+      Identificación de las obligaciones de desempeño diferenciadas en los
+      contratos de suscripción.
+  BC-4250.50.20:
+    name: Gestión del calendario de reconocimiento de ingresos
+    description: |
+      Generación y mantenimiento de los calendarios de reconocimiento de
+      ingresos durante toda la vigencia del contrato.
+  BC-4250.50.30:
+    name: Conciliación de ingresos diferidos
+    description: |
+      Conciliación de los saldos de ingresos diferidos con los importes
+      facturados y reconocidos.
+  BC-4250.60:
+    name: Gestión de impuestos sobre suscripciones
+    description: |
+      Determinación de jurisdicción fiscal, cálculo y gestión de exenciones
+      para cargos recurrentes y basados en uso.
+  BC-4250.60.10:
+    name: Determinación de jurisdicción fiscal
+    description: |
+      Determinación de las jurisdicciones fiscales aplicables por cliente
+      y cargo.
+  BC-4250.60.20:
+    name: Cálculo de impuestos sobre suscripciones
+    description: |
+      Cálculo de los impuestos indirectos sobre cargos de suscripción y uso.
+  BC-4250.60.30:
+    name: Gestión de exenciones fiscales
+    description: |
+      Captura y aplicación de los certificados de exención fiscal del cliente.
+  BC-4250.70:
+    name: Analítica de ingresos por suscripción
+    description: |
+      Cálculo y análisis de métricas de salud de los ingresos recurrentes,
+      incluyendo ARR, MRR, NRR, GRR y vistas por cohorte.
+  BC-4250.70.10:
+    name: Cálculo de ARR y MRR
+    description: |
+      Cálculo de los ingresos recurrentes anuales y mensuales a partir del
+      estado de las suscripciones.
+  BC-4250.70.20:
+    name: Análisis de retención neta y bruta
+    description: |
+      Análisis de la retención de ingresos neta y bruta en todas las cohortes
+      de clientes.
+  BC-4250.70.30:
+    name: Análisis de ingresos por cohorte
+    description: |
+      Análisis basado en cohortes de la evolución de los ingresos y la
+      dinámica de retención.
