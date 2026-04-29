@@ -1,0 +1,154 @@
+locale: de
+source: L1-travel-revenue-yield-management.yaml
+entries:
+  BC-4030:
+    name: Reiseumsatz und Revenue Management
+    description: |
+      Nachfrageprognose, dynamische Preisgestaltung, Inventarkontrollen und
+      Yield-Entscheidungen zur Umsatzmaximierung über Reiseprodukte hinweg –
+      getrennt von Produktmaster, Vertriebsverkabelung und Reservierungslebenszyklus.
+    in_scope:
+      - Unkonditionierte Nachfrage- und Pickup-Tempo-Prognose
+      - Preis- und Ratenstrategie-Management (BAR, Tarifklasse, Saison)
+      - Buchungslimite, Aufenthaltsdauer-Restriktionen, Überbuchung, Nesting
+      - Wettbewerbsfähige Ratenanalyse und Marktpositionierung
+      - Aktions- und Rabattmechanismen
+      - Erlösleistungsberichterstattung (RevPAR, RevPAX, ADR, Yield)
+    out_of_scope:
+      - Produktmaster-Definition (BC-4000)
+      - Kanalspezifische Gebotsabgabe auf Metasuche (BC-4010.40.20)
+      - Gruppenvertriebsverträge (BC-4110.10)
+  BC-4030.10:
+    name: Reisennachfrageprognose
+    description: |
+      Prognose unkonditionierter Nachfrage, Buchungstempo, Gruppennachfrage
+      und No-Show- oder Stornierungsverhalten für Reiseprodukte.
+  BC-4030.10.10:
+    name: Unkonditionierte Nachfrageprognose
+    description: |
+      Prognose der Nachfrage ohne Kapazitäts- und Preisgrenzen.
+  BC-4030.10.20:
+    name: Buchungstempo- und Pickup-Prognose
+    description: |
+      Prognose von Tempo- und Pickup-Kurven gegen historische und gebuchte Muster.
+  BC-4030.10.30:
+    name: Gruppennachfrageprognose
+    description: |
+      Prognose der Gruppennachfrage einschließlich Verdrängungseffekten
+      auf transientes Inventar.
+  BC-4030.10.40:
+    name: No-Show- und Stornierungsprognose
+    description: |
+      Prognose von No-Show- und Stornierungsverhalten als Eingang
+      für Überbuchungs- und Inventarkontrollen.
+  BC-4030.20:
+    name: Preis- und Ratenstrategiemanagement
+    description: |
+      Definition und Anpassung der Ratenstrategie über BAR-Ebenen,
+      Tarifklassen, Saisonfenster und Paketpreise.
+  BC-4030.20.10:
+    name: Best-Available-Rate-Festlegung
+    description: |
+      Festlegung von BAR-Leisten nach Datum und Segment.
+  BC-4030.20.20:
+    name: Tarifklassen- und Eimer-Strategie
+    description: |
+      Strategie für Tarifklassen und Inventareimer einschließlich
+      Öffnungen, Schließungen und Neujustierung.
+  BC-4030.20.30:
+    name: Saison- und Tagestyp-Preisgestaltung
+    description: |
+      Preisvariation über Saisonen, Wochentagsmuster und Ereignisfenster.
+  BC-4030.20.40:
+    name: Paket- und Bundle-Preisgestaltung
+    description: |
+      Preisgestaltung für Paketprodukte und Bundles einschließlich Komponentenzuordnung.
+  BC-4030.30:
+    name: Inventar- und Kapazitätskontrollen
+    description: |
+      Inventarkontrollen einschließlich Buchungslimite, Aufenthaltsdauer-Restriktionen,
+      Überbuchungsstrategie und Bid-Price-Nesting.
+  BC-4030.30.10:
+    name: Buchungslimit- und Autorisierungsfestsetzung
+    description: |
+      Festlegung von Buchungslimiten und Autorisierungsniveaus nach Klasse, Kanal und Segment.
+  BC-4030.30.20:
+    name: Aufenthaltsdauer-Restriktionsmanagement
+    description: |
+      Management von Aufenthaltsdauer-Restriktionen einschließlich Mindest-, Maximal-
+      und Anreise-Tag-Regeln.
+  BC-4030.30.30:
+    name: Überbuchungsstrategiemanagement
+    description: |
+      Strategisches Management von Überbuchungsniveaus nach Datum und Segment
+      gegen Kosten für verweigerter Dienst kalibriert.
+  BC-4030.30.40:
+    name: Nesting- und Bid-Price-Management
+    description: |
+      Management von Inventar-Nesting und Bid-Price-Schwellenwerten in Erlösoptimierungsmodellen.
+  BC-4030.40:
+    name: Wettbewerbsfähige Ratenanalyse
+    description: |
+      Wettbewerbsfähiges Raten-Shopping, Marktanteilsanalyse und
+      Ratenpositionierungsempfehlungen.
+  BC-4030.40.10:
+    name: Wettbewerbsfähiges Raten-Shopping
+    description: |
+      Routinemäßiges Shopping von Wettbewerbsraten über ausgewählte Kanäle und Anreisedaten.
+  BC-4030.40.20:
+    name: Marktanteils- und Penetrationsanalyse
+    description: |
+      Analyse von Marktanteil, Belegungsindex und Ratenindex gegen den Wettbewerbsset.
+  BC-4030.40.30:
+    name: Ratenpositionierungsempfehlungen
+    description: |
+      Generierung von Ratenpositionierungsempfehlungen gegen den Wettbewerbsset und Nachfragezustand.
+  BC-4030.40.40:
+    name: Wettbewerbsset-Definition und Pflege
+    description: |
+      Definition und laufende Pflege der für Benchmarking verwendeten Wettbewerbssets.
+  BC-4030.50:
+    name: Aktions- und Rabattmanagement
+    description: |
+      Definition und Betrieb von Aktionen, Rabattcodes, intransparenten
+      und Geschlossene-Nutzergruppen-Preisen für Reiseprodukte.
+  BC-4030.50.10:
+    name: Aktionskalendermanagement
+    description: |
+      Kalenderbasiertes Management von Aktionen über Saisonen und wesentliche Buchungsfenster.
+  BC-4030.50.20:
+    name: Aktionsberechtigungsregeln
+    description: |
+      Berechtigungsregeln für die Aktionseinlösung nach Segment, Kanal und Aufenthaltsfenster.
+  BC-4030.50.30:
+    name: Rabattcode- und Gutscheinmanagement
+    description: |
+      Management von Rabattcodes, Gutscheinen und Geschenkkarten-ähnlichen Tokens.
+  BC-4030.50.40:
+    name: Intransparente und Geschlossene-Nutzergruppen-Preisgestaltung
+    description: |
+      Betrieb intransparenter Kanal- und Geschlossene-Nutzergruppen-Preismechanismen.
+  BC-4030.60:
+    name: Erlösleistungsanalyse
+    description: |
+      Berichterstattung und Analyse der Erlösleistung einschließlich RevPAR,
+      RevPAX, ADR, Yield und Prognoseabweichung.
+  BC-4030.60.10:
+    name: Erlös-KPI-Berichterstattung
+    description: |
+      Berichterstattung über Haupterlös-KPIs gegen Budget und Vorjahresperiode.
+  BC-4030.60.20:
+    name: Yield-Abweichungsanalyse
+    description: |
+      Analyse der Yield-Abweichung mit Zurechnung von Änderungen auf Mix-, Raten- und Belegungseffekte.
+  BC-4030.60.30:
+    name: Kanalerlösbeitragsanalyse
+    description: |
+      Analyse des Erlösbeitrags nach Kanal, Segment und Ratencode.
+  BC-4030.60.40:
+    name: Erlösprognose-Ist-Analyse
+    description: |
+      Analyse von Prognose- versus Ist-Erlös mit Zurechnung auf Prognosefehlquellen.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

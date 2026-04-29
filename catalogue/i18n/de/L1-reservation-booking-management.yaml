@@ -1,0 +1,198 @@
+locale: de
+source: L1-reservation-booking-management.yaml
+entries:
+  BC-4020:
+    name: Reservierung und Buchung Management
+    description: |
+      Lebenszyklus der Reservierung, des PNR und des Hotelfolios – Erfassung,
+      Änderung, Stornierung, Gruppenblöcke, Bestätigungen, Zahlungen und
+      störungsbedingte Neubuchungen – unabhängig vom Ursprungskanal.
+    in_scope:
+      - Reservierungserfassung für Einzel-, Mehrpassagier- und Mehrkomponienten-Reisepläne
+      - Buchungsänderungen, Stornierungen und Erstattungsberechtigung
+      - Gruppenblöcke, Zimmerlisten, Stichtermin und Pickup
+      - Bestätigungs-, Gutschein- und E-Ticket-Ausstellung
+      - Buchungsseitige Zahlung und BSP/ARC-Abrechnung
+      - Fahrplan-Änderungs- und IROPS-Umbuchung
+    out_of_scope:
+      - Kanal- und Paritätsmanagement (BC-4010)
+      - Preismaschinen und Yield-Entscheidungen (BC-4030)
+      - Operative Störungsentscheidungen für Flugzeug und Besatzung (BC-4080.60)
+  BC-4020.10:
+    name: Reservierungserfassung
+    description: |
+      Erfassung von Reservierungen für einfache und komplexe Reisepläne
+      aus jedem Ursprungskanal oder Agenten.
+  BC-4020.10.10:
+    name: Einzel-Reiseplan-Reservierungserfassung
+    description: |
+      Erfassung von Einzelreiseplan-Reservierungen wie Einzel-Property-Aufenthalt
+      oder Einzel-Flugbuchung.
+  BC-4020.10.20:
+    name: Mehrpassagier-Reservierungserfassung
+    description: |
+      Erfassung von Mehrpassagier- oder Mehrgeschäfts-Reservierungen mit
+      gemeinsamen Reiseplan-Segmenten.
+  BC-4020.10.30:
+    name: Mehrkomponienten-Reservierungserfassung
+    description: |
+      Erfassung von Mehrkomponienten-Reservierungen mit Flügen,
+      Hotels, Zusatzleistungen und Bodendiensten.
+  BC-4020.10.40:
+    name: Reisebürobuchungserfassung
+    description: |
+      Erfassung von Buchungen durch Einzel- und Firmereisebüros im Namen von Reisenden.
+  BC-4020.20:
+    name: Buchungsänderung und Stornierung
+    description: |
+      Freiwillige Änderung und Stornierung von Buchungen einschließlich
+      Änderungsgebühren, Erstattungsberechtigung und Neuausstellungsoperationen.
+  BC-4020.20.10:
+    name: Buchungsänderungsmanagement
+    description: |
+      Management freiwilliger Buchungsänderungen bei Datum, Produkt und Reisendedaten.
+  BC-4020.20.20:
+    name: Buchungsstornierungsmanagement
+    description: |
+      Management freiwilliger Stornierungen und Inventarrückgabe in den Pool.
+  BC-4020.20.30:
+    name: Erstattungsberechtigungs- und Berechnung
+    description: |
+      Feststellung der Erstattungsberechtigung und Berechnung erstattungsfähiger
+      Beträge einschließlich Strafen.
+  BC-4020.20.40:
+    name: Freiwillige Neuausstellungsoperationen
+    description: |
+      Durchführung freiwilliger Neuausstellung einschließlich Tarifunterschiedserhebung
+      und Dokumentenneuausstellung.
+  BC-4020.30:
+    name: Gruppenblock-Management
+    description: |
+      Management von Gruppenblöcken gegen vertraglich gebundenes Inventar –
+      Blockerstellung, Zimmerlisten, Stichtermin und Pickup-Tracking.
+    in_scope:
+      - Gruppenblock-Lebenszyklus von Vertrag bis Bereinigung und finalem Pickup
+      - Zimmerlisten-Erfassung und -Aktualisierung
+    out_of_scope:
+      - Gruppenvertriebsverträge (BC-4110.10)
+      - Veranstaltungsauftragsausführung (BC-4110.30)
+  BC-4020.30.10:
+    name: Gruppenblock-Erstellung
+    description: |
+      Erstellung von Gruppenblöcken entsprechend vertraglicch gebundenem
+      Inventar und Ratenverpflichtungen.
+  BC-4020.30.20:
+    name: Zimmerlisten-Management
+    description: |
+      Management von Zimmerlisten zur Zuordnung einzelner Reisender
+      zu Blockinventar.
+  BC-4020.30.30:
+    name: Gruppenst-Stichterminsmanagement
+    description: |
+      Management von Gruppen-Stichtermin-Daten und Freigabe ungenutzten Blockinventars.
+  BC-4020.30.40:
+    name: Gruppen-Pickup-Tracking
+    description: |
+      Tracking des Gruppen-Pickups gegen Vertrag für Erlösrechnung und Prognose.
+  BC-4020.40:
+    name: Reservierungsbestätigung und Dokumentation
+    description: |
+      Ausstellung von Buchungsbestätigungen, Gutscheinen, E-Tickets und
+      Reiseplan-Dokumenten an Reisende und Agenten.
+  BC-4020.40.10:
+    name: Buchungsbestätigungsgenerierung
+    description: |
+      Generierung und Versand von Buchungsbestätigungen über Benachrichtigungskanäle.
+  BC-4020.40.20:
+    name: Gutschein- und Dokumentenausstellung
+    description: |
+      Ausstellung von Gutscheinen und Servicedokumenten für Hotel-, Reise-
+      und Aktivitätskomponenten.
+  BC-4020.40.30:
+    name: E-Ticket-Ausstellung und Neuausstellung
+    description: |
+      Ausstellung und Neuausstellung von Airline-E-Tickets einschließlich Coupon-Statusaktualisierungen.
+  BC-4020.40.40:
+    name: Buchungs-Reiseplan-Verteilung
+    description: |
+      Verteilung von Reiseplandokumenten an Reisende, Reisebüros und
+      integrierte Reiseverwaltungssysteme.
+  BC-4020.50:
+    name: Reservierungshalten- und Wartelistenmanagement
+    description: |
+      Management vorläufiger Reservierungshalten, Wartelisten und Umwandlungen
+      bei begrenzter Verfügbarkeit oder zahlungsfristgebundenen Konditionen.
+  BC-4020.50.10:
+    name: Vorläufige Haltenmanagement
+    description: |
+      Management vorläufiger Reservierungshalten mit kontrollierten Zahlungsfristen.
+  BC-4020.50.20:
+    name: Wartelisten-Erfassung und Priorisierung
+    description: |
+      Erfassung von Wartelisten-Anfragen und Priorisierungsregeln
+      bei verfügbar werdendem Inventar.
+  BC-4020.50.30:
+    name: Wartelisten-Umwandlungsoperationen
+    description: |
+      Umwandlung von Wartelisten-Anfragen in bestätigte Buchungen
+      bei freiwerdendem Inventar.
+  BC-4020.50.40:
+    name: Halteverfalls-Management
+    description: |
+      Management des Halteverfalls und automatische Freigabe des gehaltenen Inventars.
+  BC-4020.60:
+    name: Buchungszahlung und Abrechnung
+    description: |
+      Buchungsseitige Zahlung, Anzahlung, Kostenfang und Partnerabrechnung
+      einschließlich BSP und ARC.
+  BC-4020.60.10:
+    name: Buchungsanzahlung und Vorautorisierung
+    description: |
+      Erfassung von Buchungsanzahlungen und Kartenvorautorisierungen
+      gegen Anzahlungs- und Garantierichtlinien.
+  BC-4020.60.20:
+    name: Buchungskostenfang
+    description: |
+      Kostenfang gegen buchungsseitige Zahlungsmittel an Berechtigungspunkten.
+  BC-4020.60.30:
+    name: BSP- und ARC-Abrechnungsoperationen
+    description: |
+      Abrechnung agentenbuchter Buchungen über BSP, ARC und gleichwertige Abrechnungspläne.
+  BC-4020.60.40:
+    name: Provisionsberechnung und Auszahlung
+    description: |
+      Berechnung und Auszahlung von Provisionen an Reisebüros und Vertriebspartner.
+  BC-4020.70:
+    name: Buchungsstörungs- und Umbuchungsoperationen
+    description: |
+      Unterbringung von Buchungen, die von Fahrplanänderungen, Stornierungen
+      und Massenstörungen betroffen sind, einschließlich Kommunikation und Entschädigungsberechtigung.
+    in_scope:
+      - Fahrplanänderungs-Umbuchung
+      - Massenbedrohungs-Umbuchung (IROPS, Wetter, höhere Gewalt)
+      - Entschädigungsberechtigung nach Fluggesellschafts- und Verbraucherregeln
+    out_of_scope:
+      - Operative Entscheidungen zu Flugzeug, Besatzung und Dispatch (BC-4080.60)
+      - Reiseplan-Wiederherstellung auf Toursseite (BC-4100.60)
+  BC-4020.70.10:
+    name: Fahrplanänderungs-Umbuchung
+    description: |
+      Umbuchung von Buchungen bei Fahrplanänderungen einschließlich
+      angebotener Optionen für Reisende.
+  BC-4020.70.20:
+    name: Massenbedrohungs-Umbuchung
+    description: |
+      Umbuchung großer Buchungszahlen bei Wetter-, IROPS- oder höherer-Gewalt-Ereignissen.
+  BC-4020.70.30:
+    name: Entschädigungsberechtigungs-Feststellung
+    description: |
+      Feststellung der Entschädigungsberechtigung nach Fluggesellschaftsrichtlinien
+      und anwendbaren Fahrgastrechtsregeln.
+  BC-4020.70.40:
+    name: Umbuchungskommunikation
+    description: |
+      Ausgehende Kommunikation an betroffene Reisende und Agenten
+      während Umbuchungsereignissen.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"
