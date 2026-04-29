@@ -1,0 +1,107 @@
+locale: fr
+source: L1-saas-tenant-management.yaml
+entries:
+  BC-4230:
+    name: Gestion des tenants SaaS
+    description: |
+      Provisionnement, configuration, isolation, placement régional, fédération d'identité et export de données par tenant dans le service multi-tenant.
+  BC-4230.10:
+    name: Provisionnement et cycle de vie des tenants
+    description: |
+      Création, suspension, désactivation et migration des tenants dans le parc multi-tenant.
+  BC-4230.10.10:
+    name: Provisionnement des tenants
+    description: |
+      Création de nouveaux tenants et allocation des ressources associées.
+  BC-4230.10.20:
+    name: Suspension des tenants
+    description: |
+      Suspension des tenants pour non-paiement, abus ou motifs contractuels.
+  BC-4230.10.30:
+    name: Désactivation des tenants
+    description: |
+      Désactivation des tenants incluant la suppression ou la restitution des données selon le contrat.
+  BC-4230.10.40:
+    name: Migration des tenants
+    description: |
+      Migration des tenants entre clusters, shards ou régions.
+  BC-4230.20:
+    name: Gestion de la configuration des tenants
+    description: |
+      Configuration des fonctionnalités, de la personnalisation et des limites par tenant appliquée au-dessus du socle produit partagé.
+  BC-4230.20.10:
+    name: Configuration des fonctionnalités par tenant
+    description: |
+      Configuration des options de fonctionnalités au niveau du tenant.
+  BC-4230.20.20:
+    name: Gestion de la personnalisation de la marque du tenant
+    description: |
+      Personnalisation de la marque du tenant, telle que les logos, les couleurs et les domaines personnalisés.
+  BC-4230.20.30:
+    name: Gestion des limites du tenant
+    description: |
+      Configuration des limites au niveau du tenant telles que les quotas et les plafonds de débit.
+  BC-4230.30:
+    name: Gestion de l'isolation des tenants
+    description: |
+      Mécanismes maintenant l'isolation logique et physique entre les tenants sur les chemins de données, de calcul et d'accès.
+  BC-4230.30.10:
+    name: Isolation des données des tenants
+    description: |
+      Isolation des données des tenants par partitionnement, chiffrement et restriction d'accès.
+  BC-4230.30.20:
+    name: Isolation des ressources de calcul des tenants
+    description: |
+      Isolation des charges de travail des tenants via des frontières de calcul dédiées ou contraintes.
+  BC-4230.30.30:
+    name: Prévention des accès entre tenants
+    description: |
+      Contrôles et surveillance empêchant les fuites de données et d'identité entre tenants.
+  BC-4230.40:
+    name: Gestion de la résidence des données et du placement régional
+    description: |
+      Affectation des tenants aux régions, application des engagements de résidence des données et gestion de la politique de réplication inter-régions.
+  BC-4230.40.10:
+    name: Affectation régionale des tenants
+    description: |
+      Affectation des tenants aux régions dans le respect du contrat et de la réglementation.
+  BC-4230.40.20:
+    name: Application de la résidence des données
+    description: |
+      Application des frontières de résidence des données à l'exécution.
+  BC-4230.40.30:
+    name: Politique de réplication inter-régions
+    description: |
+      Politique régissant la réplication inter-régions pour la résilience et l'accès.
+  BC-4230.50:
+    name: Fédération d'identité des tenants
+    description: |
+      Fédération des fournisseurs d'identité des tenants et cycle de vie des comptes utilisateurs via le SSO et le SCIM.
+  BC-4230.50.10:
+    name: Configuration du SSO des tenants
+    description: |
+      Configuration du SSO entre les fournisseurs d'identité des tenants et le service.
+  BC-4230.50.20:
+    name: Provisionnement des utilisateurs par SCIM
+    description: |
+      Cycle de vie des comptes utilisateurs des tenants piloté par SCIM ou protocoles de provisionnement équivalents.
+  BC-4230.50.30:
+    name: Intégration des fournisseurs d'identité des tenants
+    description: |
+      Intégration et validation des fournisseurs d'identité des tenants.
+  BC-4230.60:
+    name: Gestion des sauvegardes et exports des tenants
+    description: |
+      Capacités d'export, de suppression et de restauration des données par tenant exposées aux tenants et aux administrateurs.
+  BC-4230.60.10:
+    name: Export des données des tenants
+    description: |
+      Export des données des tenants dans un format lisible par machine sur demande ou contractuellement.
+  BC-4230.60.20:
+    name: Suppression des données des tenants
+    description: |
+      Suppression vérifiable des données des tenants à l'annulation ou sur demande.
+  BC-4230.60.30:
+    name: Restauration des sauvegardes des tenants
+    description: |
+      Restauration des données des tenants à partir des sauvegardes sur demande du tenant ou de l'opérateur.
