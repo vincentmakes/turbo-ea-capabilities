@@ -1,0 +1,126 @@
+locale: pt
+source: L1-saas-tenant-management.yaml
+entries:
+  BC-4230:
+    name: Gestão de tenants SaaS
+    description: |
+      Provisionamento, configuração, isolamento, colocação regional, federação
+      de identidade e exportação de dados por tenant no serviço multi-tenant.
+  BC-4230.10:
+    name: Provisionamento e ciclo de vida de tenants
+    description: |
+      Criação, suspensão, desativação e migração de tenants no parque
+      multi-tenant.
+  BC-4230.10.10:
+    name: Provisionamento de tenants
+    description: |
+      Criação de novos tenants e alocação dos recursos associados.
+  BC-4230.10.20:
+    name: Suspensão de tenants
+    description: |
+      Suspensão de tenants por falta de pagamento, abuso ou razões contratuais.
+  BC-4230.10.30:
+    name: Desativação de tenants
+    description: |
+      Desativação de tenants, incluindo eliminação de dados ou entrega conforme
+      o contrato.
+  BC-4230.10.40:
+    name: Migração de tenants
+    description: |
+      Migração de tenants entre clusters, shards ou regiões.
+  BC-4230.20:
+    name: Gestão de configuração de tenants
+    description: |
+      Configuração de funcionalidades por tenant, marca e limites aplicados
+      acima da linha de base do produto partilhado.
+  BC-4230.20.10:
+    name: Configuração de funcionalidades por tenant
+    description: |
+      Configuração de opções de funcionalidades ao nível do tenant.
+  BC-4230.20.20:
+    name: Gestão de marca do tenant
+    description: |
+      Marca ao nível do tenant, como logótipos, cores e domínios personalizados.
+  BC-4230.20.30:
+    name: Gestão de limites do tenant
+    description: |
+      Configuração de limites ao nível do tenant, como quotas e tetos de taxa.
+  BC-4230.30:
+    name: Gestão de isolamento de tenants
+    description: |
+      Mecanismos que mantêm o isolamento lógico e físico entre tenants
+      em dados, computação e caminhos de acesso.
+  BC-4230.30.10:
+    name: Isolamento de dados do tenant
+    description: |
+      Isolamento dos dados do tenant através de particionamento, encriptação
+      e âmbito de acesso.
+  BC-4230.30.20:
+    name: Isolamento de computação do tenant
+    description: |
+      Isolamento das cargas de trabalho do tenant através de limites de
+      computação dedicados ou restritos.
+  BC-4230.30.30:
+    name: Prevenção de acesso entre tenants
+    description: |
+      Controlos e monitorização que impedem a contaminação cruzada de dados
+      e identidade entre tenants.
+  BC-4230.40:
+    name: Residência de dados e colocação regional
+    description: |
+      Atribuição de tenants a regiões, aplicação de compromissos de residência
+      de dados e gestão da política de replicação entre regiões.
+  BC-4230.40.10:
+    name: Atribuição de região a tenants
+    description: |
+      Atribuição de tenants a regiões consistente com o contrato e a regulação.
+  BC-4230.40.20:
+    name: Aplicação de residência de dados
+    description: |
+      Aplicação de limites de residência de dados em tempo de execução.
+  BC-4230.40.30:
+    name: Política de replicação entre regiões
+    description: |
+      Política que governa a replicação entre regiões para resiliência e acesso.
+  BC-4230.50:
+    name: Federação de identidade de tenants
+    description: |
+      Federação de fornecedores de identidade do tenant e ciclo de vida de
+      contas de utilizadores do tenant através de início de sessão único e SCIM.
+  BC-4230.50.10:
+    name: Configuração de SSO do tenant
+    description: |
+      Configuração do início de sessão único entre os fornecedores de identidade
+      do tenant e o serviço.
+  BC-4230.50.20:
+    name: Provisionamento de utilizadores baseado em SCIM
+    description: |
+      Ciclo de vida das contas de utilizadores do tenant conduzido por SCIM
+      ou protocolos de provisionamento equivalentes.
+  BC-4230.50.30:
+    name: Integração de fornecedores de identidade do tenant
+    description: |
+      Integração e validação de fornecedores de identidade do tenant.
+  BC-4230.60:
+    name: Gestão de backup e exportação do tenant
+    description: |
+      Capacidades de exportação, eliminação e restauro de dados por tenant
+      expostas a tenants e administradores.
+  BC-4230.60.10:
+    name: Exportação de dados do tenant
+    description: |
+      Exportação de dados do tenant em formato legível por máquina mediante
+      pedido ou por contrato.
+  BC-4230.60.20:
+    name: Eliminação de dados do tenant
+    description: |
+      Eliminação verificável de dados do tenant no cancelamento ou por pedido.
+  BC-4230.60.30:
+    name: Restauro de backup do tenant
+    description: |
+      Restauro de dados do tenant a partir de backup mediante pedido do tenant
+      ou do operador.
+metadata:
+  status: draft
+  translator: claude-ai
+  notes: Machine-translated; needs native-speaker review.

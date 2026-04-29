@@ -1,0 +1,120 @@
+locale: pt
+source: L1-freight-capacity-management.yaml
+entries:
+  BC-2400:
+    name: Gestão de capacidade de frete
+    description: |
+      Venda, alocação e gestão de yield da capacidade de transporte em viagens de
+      navios, voos, rotas de camião e comboio e conjuntos de equipamento.
+  BC-2400.10:
+    name: Gestão de inventário de capacidade
+    description: |
+      Manutenção da capacidade de transporte disponível por modo, rota, horário e
+      tipo de equipamento como fonte para alocação e reserva.
+    in_scope:
+      - Registos de capacidade de navio, voo, veículo e material circulante
+      - Capacidade de conjunto de equipamento (contentores, reboques, ULDs)
+      - Capacidade de rota ligada a horário
+    out_of_scope:
+      - Conceção de rede e horário a longo prazo (BC-2410)
+      - Aceitação de reservas (BC-2400.40)
+  BC-2400.10.10:
+    name: Inventário de capacidade de navio e conveyance
+    description: |
+      Registo da capacidade de carga útil, convés e cabine por navio, aeronave,
+      comboio ou veículo.
+  BC-2400.10.20:
+    name: Inventário de capacidade de equipamento
+    description: |
+      Inventário de contentores, reboques, chassis e ULDs disponíveis por
+      localização e condição.
+  BC-2400.10.30:
+    name: Capacidade de rota e horário
+    description: |
+      Capacidade por serviço programado numa rota, incluindo escalas de ligação.
+  BC-2400.10.40:
+    name: Partilha de capacidade e troca de slots
+    description: |
+      Capacidade partilhada em alianças e acordos de troca de slots com
+      transportadoras parceiras.
+  BC-2400.20:
+    name: Gestão de alocação de capacidade
+    description: |
+      Alocação da capacidade disponível a contratos de clientes, segmentos de
+      mercado e procura spot.
+  BC-2400.20.10:
+    name: Alocação de capacidade contratual
+    description: |
+      Alocação de capacidade a clientes abrangidos por compromissos de quantidade
+      mínima e acordos de conta nomeada.
+  BC-2400.20.20:
+    name: Alocação de capacidade no mercado spot
+    description: |
+      Alocação de capacidade disponibilizada para canais de reserva no mercado
+      spot.
+  BC-2400.20.30:
+    name: Realocação e recuperação de capacidade
+    description: |
+      Realocação de capacidade não utilizada ou recuperada antes do corte.
+  BC-2400.30:
+    name: Gestão de yield e receita
+    description: |
+      Otimização da receita por unidade de capacidade através de decisões de
+      preço, mix e overbooking.
+  BC-2400.30.10:
+    name: Previsão de procura de capacidade
+    description: |
+      Previsão de reservas, no-shows e risco de offload por serviço.
+  BC-2400.30.20:
+    name: Otimização de yield
+    description: |
+      Otimização do mix de classes tarifárias para maximizar o yield por tonelada,
+      slot ou TEU.
+  BC-2400.30.30:
+    name: Gestão de overbooking
+    description: |
+      Definição e monitorização de limites de overbooking e exposição a offload.
+  BC-2400.30.40:
+    name: Gestão do mix de receita
+    description: |
+      Gestão do mix de receita entre linhas contratuais, spot e acessórias.
+  BC-2400.40:
+    name: Gestão de reservas
+    description: |
+      Aceitação, modificação e cancelamento de reservas de capacidade face a
+      horários e cotações publicados.
+  BC-2400.40.10:
+    name: Reserva de capacidade
+    description: |
+      Aceitação de reservas face à capacidade disponível e validade de tarifas.
+  BC-2400.40.20:
+    name: Modificação e cancelamento de reservas
+    description: |
+      Alterações, deslocamentos e cancelamentos de reservas, incluindo taxas de
+      no-show.
+  BC-2400.40.30:
+    name: Gestão de stand-by e lista de espera
+    description: |
+      Gestão de carga em stand-by e em lista de espera para capacidade confirmada.
+  BC-2400.50:
+    name: Gestão do desempenho de capacidade
+    description: |
+      Monitorização do fator de carga, preenchimento e utilização para orientar
+      decisões de mix de capacidade e alterações de rede.
+  BC-2400.50.10:
+    name: Análise do fator de carga
+    description: |
+      Análise do fator de carga por serviço, rota e segmento.
+  BC-2400.50.20:
+    name: Reporte de utilização de capacidade
+    description: |
+      Reporte da utilização de capacidade para equipas comerciais e de operações.
+  BC-2400.50.30:
+    name: Melhoria do desempenho de capacidade
+    description: |
+      Iniciativas para melhorar a receita por slot e reduzir o reposicionamento
+      em vazio.
+metadata:
+  status: draft
+  translator: claude-ai
+  notes: Machine-translated; needs native-speaker review.

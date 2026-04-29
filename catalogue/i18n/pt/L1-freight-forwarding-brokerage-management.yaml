@@ -1,0 +1,105 @@
+locale: pt
+source: L1-freight-forwarding-brokerage-management.yaml
+entries:
+  BC-2450:
+    name: Gestão de transitário e corretagem de frete
+    description: |
+      Organização de transporte em nome de expedidores como transitário, NVOCC,
+      corretor de frete ou despachante aduaneiro, incluindo coordenação
+      multimodal e operações de rede de parceiros.
+  BC-2450.10:
+    name: Gestão de cotações para expedidores
+    description: |
+      Receção de pedidos de cotação de expedidores e emissão de tarifas de
+      transitário em vários modos e transportadoras.
+    in_scope:
+      - Pesquisa de tarifas de múltiplas transportadoras para consultas de
+        expedidores
+      - Acompanhamento de validade e confirmação de cotações
+    out_of_scope:
+      - Gestão de tarifas e tabelas pelo lado da transportadora (BC-2520)
+  BC-2450.10.10:
+    name: Captura de pedido de cotação
+    description: |
+      Captura de pedidos de cotação de expedidores por vários canais.
+  BC-2450.10.20:
+    name: Pesquisa de tarifas em múltiplas transportadoras
+    description: |
+      Pesquisa e comparação de tarifas em transportadoras subjacentes.
+  BC-2450.10.30:
+    name: Emissão e validade de cotação
+    description: |
+      Emissão de cotações vinculativas e indicativas e acompanhamento da validade.
+  BC-2450.20:
+    name: Gestão de aprovisionamento e alocação de transportadoras
+    description: |
+      Reserva de capacidade junto de transportadoras subjacentes e gestão de
+      alocações e despesas de transportadoras.
+  BC-2450.20.10:
+    name: Seleção de transportadora
+    description: |
+      Seleção de transportadoras subjacentes por envio.
+  BC-2450.20.20:
+    name: Execução de reserva com transportadora
+    description: |
+      Reserva de capacidade junto das transportadoras selecionadas.
+  BC-2450.20.30:
+    name: Otimização de despesas de alocação
+    description: |
+      Otimização das despesas do transitário pelas alocações de transportadoras.
+  BC-2450.30:
+    name: Coordenação de transitário multimodal
+    description: |
+      Coordenação de movimentos multi-etapa e multimodais, incluindo consolidação,
+      desconsolidação e guias de casa.
+  BC-2450.30.10:
+    name: Emissão de conhecimento de embarque de casa
+    description: |
+      Emissão de conhecimentos de embarque de casa de transitário para expedidores.
+  BC-2450.30.20:
+    name: Coordenação de movimento multi-etapa
+    description: |
+      Coordenação de movimentos multi-etapa em transportadoras e modos.
+  BC-2450.30.30:
+    name: Consolidação e desconsolidação
+    description: |
+      Consolidação de carga na origem e desconsolidação no destino.
+  BC-2450.40:
+    name: Gestão de despachante aduaneiro
+    description: |
+      Prestação de serviços de despachante aduaneiro em nome de importadores e
+      exportadores.
+  BC-2450.40.10:
+    name: Preparação de declarações aduaneiras
+    description: |
+      Preparação de declarações aduaneiras em nome de clientes.
+  BC-2450.40.20:
+    name: Cálculo de direitos e impostos
+    description: |
+      Cálculo e pagamento de direitos e impostos indiretos para clientes.
+  BC-2450.40.30:
+    name: Acompanhamento do estado do despacho aduaneiro
+    description: |
+      Acompanhamento do progresso do despacho aduaneiro e resolução de exceções.
+  BC-2450.50:
+    name: Coordenação da rede de transitários
+    description: |
+      Coordenação com agentes de origem, destino e parceiros numa rede de
+      transitários, incluindo liquidação entre escritórios.
+  BC-2450.50.10:
+    name: Coordenação com agentes de origem e destino
+    description: |
+      Coordenação de atividades com agentes de origem e destino.
+  BC-2450.50.20:
+    name: Liquidação entre escritórios
+    description: |
+      Liquidação inter-escritórios e inter-agentes de receita e custos de
+      transitário.
+  BC-2450.50.30:
+    name: Gestão do desempenho de agentes parceiros
+    description: |
+      Gestão da qualidade de serviço e conformidade de agentes parceiros.
+metadata:
+  status: draft
+  translator: claude-ai
+  notes: Machine-translated; needs native-speaker review.
