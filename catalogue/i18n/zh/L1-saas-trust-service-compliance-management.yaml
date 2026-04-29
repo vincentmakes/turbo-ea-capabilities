@@ -1,0 +1,111 @@
+locale: zh
+source: L1-saas-trust-service-compliance-management.yaml
+entries:
+  BC-4290:
+    name: SaaS信任与服务合规管理
+    description: |
+      管理SaaS产品的服务级认证、客户安全问卷、公开信任披露、分处理方管理、服务隐私承诺及面向客户的服务韧性承诺。
+  BC-4290.10:
+    name: 服务认证管理
+    description: |
+      协调SaaS服务的SOC 2、ISO 27001及FedRAMP等服务级认证。
+    in_scope:
+      - 服务审计就绪状态
+      - 外部审计员参与和报告生成
+    out_of_scope:
+      - 全企业合规项目（由合规管理负责）
+  BC-4290.10.10:
+    name: 审计就绪状态协调
+    description: |
+      跨控制责任人协调服务审计就绪状态。
+  BC-4290.10.20:
+    name: 外部审计员参与
+    description: |
+      与外部审计员接洽并管理现场审计工作。
+  BC-4290.10.30:
+    name: 认证续期管理
+    description: |
+      管理认证续期周期和持续审计安排。
+  BC-4290.20:
+    name: 客户安全问卷管理
+    description: |
+      管理问卷库、答案编写及用于回应客户供应商风险评估的知识库。
+  BC-4290.20.10:
+    name: 问卷库管理
+    description: |
+      维护入站问卷库和路由规则。
+  BC-4290.20.20:
+    name: 问卷答案编写
+    description: |
+      编写客户安全问卷的答案。
+  BC-4290.20.30:
+    name: 问卷知识库维护
+    description: |
+      维护包含经审批答案和证据的精选知识库。
+  BC-4290.30:
+    name: 信任门户与公开披露
+    description: |
+      运营客户信任门户、公开状态披露及文件分发工作流。
+  BC-4290.30.10:
+    name: 信任门户内容管理
+    description: |
+      管理在客户信任门户上发布的内容。
+  BC-4290.30.20:
+    name: 公开状态披露
+    description: |
+      公开披露故障事件状态和历史服务状态。
+  BC-4290.30.30:
+    name: 文件分发工作流
+    description: |
+      向客户受控分发审计报告和信任文件。
+  BC-4290.40:
+    name: 分处理方管理
+    description: |
+      管理处理客户数据的分处理方的清单、披露及变更通知。
+  BC-4290.40.10:
+    name: 分处理方清单
+    description: |
+      维护分处理方及其处理的客户数据类别清单。
+  BC-4290.40.20:
+    name: 分处理方披露
+    description: |
+      向客户披露当前分处理方名单。
+  BC-4290.40.30:
+    name: 分处理方变更通知
+    description: |
+      按合同规定提前通知分处理方的新增和移除。
+  BC-4290.50:
+    name: 服务隐私承诺管理
+    description: |
+      管理数据处理附录、客户数据流披露及数据主体请求路由。
+  BC-4290.50.10:
+    name: 数据处理附录管理
+    description: |
+      与客户维护和签署数据处理附录。
+  BC-4290.50.20:
+    name: 客户数据流映射
+    description: |
+      绘制客户数据流图，用于披露和评估。
+  BC-4290.50.30:
+    name: 数据主体请求路由
+    description: |
+      将通过客户收到的数据主体请求路由至相应处理方。
+  BC-4290.60:
+    name: 服务韧性承诺管理
+    description: |
+      管理面向客户的服务级别承诺（SLA）、可用时间披露及服务积分管理。
+  BC-4290.60.10:
+    name: 服务级别承诺管理
+    description: |
+      定义和管理面向客户的服务级别承诺（SLA）。
+  BC-4290.60.20:
+    name: 可用时间披露
+    description: |
+      披露历史可用时间与承诺级别的对比情况。
+  BC-4290.60.30:
+    name: 服务积分管理
+    description: |
+      管理因未达承诺而产生的服务积分。
+metadata:
+  translator: Claude (zh automated)
+  generated: 2026-04-29

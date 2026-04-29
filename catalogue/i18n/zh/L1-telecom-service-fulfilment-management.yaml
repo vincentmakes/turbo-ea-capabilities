@@ -1,0 +1,114 @@
+locale: zh
+source: L1-telecom-service-fulfilment-management.yaml
+entries:
+  BC-2620:
+    name: 电信服务开通管理
+    description: |
+      覆盖消费者、企业和批发服务的服务订单受理、分解、业务开通、激活、验收和客户驻地安装，以eTOM服务开通流程和TM Forum开放API为基础。
+  BC-2620.10:
+    name: 服务订单受理
+    description: |
+      通过多渠道受理服务订单，在提交前完成可行性和信用审核。
+  BC-2620.10.10:
+    name: 全渠道订单受理
+    description: |
+      通过零售、数字、呼叫中心和合作伙伴渠道受理服务订单。
+  BC-2620.10.20:
+    name: 服务可行性核查
+    description: |
+      针对申请业务进行地址、覆盖和资源可行性核查。
+  BC-2620.10.30:
+    name: 信用与风险审核
+    description: |
+      在订单受理前进行信用评估和欺诈风险审核。
+  BC-2620.10.40:
+    name: 订单提交
+    description: |
+      对已受理的服务订单进行验证、持久化存储并向下游提交。
+  BC-2620.20:
+    name: 服务订单分解
+    description: |
+      将面向客户的订单分解为面向资源的工单，并对依赖关系进行排序。
+  BC-2620.20.10:
+    name: 服务到资源分解
+    description: |
+      将面向客户的服务分解为面向资源的服务和网元。
+  BC-2620.20.20:
+    name: 工单生成
+    description: |
+      从分解后的服务订单生成网络和现场工单。
+  BC-2620.20.30:
+    name: 依赖排序
+    description: |
+      对跨网络域的依赖工单进行排序，以实现端到端服务交付。
+  BC-2620.30:
+    name: 服务开通
+    description: |
+      分配网络资源并编排配置变更，以实例化服务。
+  BC-2620.30.10:
+    name: 网络资源分配
+    description: |
+      为特定服务实例分配带宽、端口、IP地址及其他资源。
+  BC-2620.30.20:
+    name: 服务编排
+    description: |
+      跨物理和虚拟网络功能编排执行开通步骤。
+  BC-2620.30.30:
+    name: 配置下发
+    description: |
+      将服务专属配置下发至目标网络单元。
+  BC-2620.40:
+    name: 服务激活
+    description: |
+      完成已开通服务的最终上线，并通知客户和下游系统。
+  BC-2620.40.10:
+    name: 服务上线
+    description: |
+      将已开通的服务切换至在网状态。
+  BC-2620.40.20:
+    name: 用户注册入网
+    description: |
+      将用户注册至新业务的认证、授权和策略系统。
+  BC-2620.40.30:
+    name: 计费激活
+    description: |
+      向计费系统发送激活事件，触发计费开始和合同计时。
+  BC-2620.40.40:
+    name: 客户激活通知
+    description: |
+      通知客户和渠道服务已上线并可正常使用。
+  BC-2620.50:
+    name: 服务验收测试
+    description: |
+      在正式移交新服务前完成端到端测试和基线采集。
+  BC-2620.50.10:
+    name: 端到端服务测试
+    description: |
+      对新开通的服务执行端到端功能和性能测试。
+  BC-2620.50.20:
+    name: 服务基线采集
+    description: |
+      采集服务性能基线，用于后续SLA监控。
+  BC-2620.50.30:
+    name: 验收签字确认
+    description: |
+      正式验收并将服务移交运营团队和客户。
+  BC-2620.60:
+    name: 客户驻地安装协调
+    description: |
+      协调客户驻地设备的现场安装及相关活动。
+  BC-2620.60.10:
+    name: 安装预约调度
+    description: |
+      为现场安装调度客户预约。
+  BC-2620.60.20:
+    name: 现场安装协调
+    description: |
+      协调安装人员在客户驻地的作业、物料和访问。
+  BC-2620.60.30:
+    name: 客户设备注册
+    description: |
+      注册已安装的客户驻地设备并与服务实例关联。
+metadata:
+  translator: Claude (zh automated)
+  generated: 2026-04-29

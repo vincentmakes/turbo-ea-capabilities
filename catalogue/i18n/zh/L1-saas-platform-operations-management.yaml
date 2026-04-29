@@ -1,0 +1,119 @@
+locale: zh
+source: L1-saas-platform-operations-management.yaml
+entries:
+  BC-4220:
+    name: SaaS平台运营管理
+    description: |
+      管理多租户SaaS服务的站点可靠性工程（SRE）、可观测性、值班响应、容量、性能及灾难恢复运营。
+  BC-4220.10:
+    name: 服务可靠性工程
+    description: |
+      定义和管理SaaS服务的服务级别指标（SLI）、服务级别目标（SLO）及错误预算。
+    in_scope:
+      - 运行中产品的SLI/SLO/错误预算规范
+    out_of_scope:
+      - 面向客户的SLA承诺（由SaaS信任与服务合规管理负责）
+      - 内部IT服务级别（由信息技术管理负责）
+  BC-4220.10.10:
+    name: 服务级别指标定义
+    description: |
+      定义衡量运行中服务客户体验的服务级别指标（SLI）。
+  BC-4220.10.20:
+    name: 服务级别目标管理
+    description: |
+      跨服务设定、审查和修订服务级别目标（SLO）。
+  BC-4220.10.30:
+    name: 错误预算管理
+    description: |
+      管理错误预算及规范其消耗的策略。
+  BC-4220.20:
+    name: 可观测性管理
+    description: |
+      通过日志、指标、追踪及合成监控，使运行中的服务在生产环境中清晰可见。
+  BC-4220.20.10:
+    name: 应用日志管理
+    description: |
+      管理应用日志的规范、流水线及保留策略。
+  BC-4220.20.20:
+    name: 指标流水线管理
+    description: |
+      运营指标采集、存储和查询流水线。
+  BC-4220.20.30:
+    name: 分布式链路追踪
+    description: |
+      跨服务进行端到端分布式链路追踪，用于生产环境调查。
+  BC-4220.20.40:
+    name: 合成监控
+    description: |
+      从服务外部运行合成探针，模拟关键用户旅程进行监控。
+  BC-4220.30:
+    name: 故障事件响应管理
+    description: |
+      在生产故障事件期间进行值班响应、事件检测、协调及客户沟通。
+  BC-4220.30.10:
+    name: 值班轮值管理
+    description: |
+      定义和运营各产品团队的值班（On-call）轮值。
+  BC-4220.30.20:
+    name: 故障事件检测
+    description: |
+      通过遥测和外部信号检测生产故障事件。
+  BC-4220.30.30:
+    name: 故障事件协调
+    description: |
+      协调故障事件响应，包括角色分配、沟通及事件中的决策。
+  BC-4220.30.40:
+    name: 客户故障事件沟通
+    description: |
+      在故障事件期间和之后向受影响客户进行沟通。
+  BC-4220.40:
+    name: 复盘与可靠性改进
+    description: |
+      编写事后复盘报告并追踪可靠性改进事项，使经验教训持续积累。
+  BC-4220.40.10:
+    name: 复盘报告编写
+    description: |
+      在故障事件和重大未遂事件后开展无指责复盘报告编写。
+  BC-4220.40.20:
+    name: 可靠性改进追踪
+    description: |
+      跨团队追踪可靠性改进事项至闭环。
+  BC-4220.40.30:
+    name: 可靠性趋势分析
+    description: |
+      跨服务和时间维度分析可靠性趋势。
+  BC-4220.50:
+    name: 容量与性能管理
+    description: |
+      开展SaaS服务的容量预测、自动扩缩容策略制定及性能测试。
+  BC-4220.50.10:
+    name: 容量预测
+    description: |
+      预测跨服务和区域的容量需求。
+  BC-4220.50.20:
+    name: 自动扩缩容策略管理
+    description: |
+      为产品服务定义和调优自动扩缩容策略。
+  BC-4220.50.30:
+    name: 性能测试
+    description: |
+      对运行中的服务进行负载、压力及长时压测。
+  BC-4220.60:
+    name: 灾难恢复与韧性管理
+    description: |
+      管理SaaS服务的备份恢复、故障切换编排及灾难恢复演练。
+  BC-4220.60.10:
+    name: 备份与恢复管理
+    description: |
+      制定并执行服务数据存储的备份策略和恢复验证。
+  BC-4220.60.20:
+    name: 故障切换编排
+    description: |
+      编排可用区和区域间的故障切换操作。
+  BC-4220.60.30:
+    name: 灾难恢复演练管理
+    description: |
+      规划和执行灾难恢复演练及游戏日活动。
+metadata:
+  translator: Claude (zh automated)
+  generated: 2026-04-29

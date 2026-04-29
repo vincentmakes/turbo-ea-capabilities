@@ -1,0 +1,122 @@
+locale: zh
+source: L1-food-safety-traceability-management.yaml
+entries:
+  BC-2380:
+    name: 食品安全与追溯管理
+    description: |
+      针对食杂零售和食品制造运营，管理食品安全计划、批次追溯、召回协调、生鲜保质期管理及冷链合规。
+  BC-2380.10:
+    name: 食品安全计划管理
+    description: |
+      通过HACCP及认证计划（BRCGS、SQF、FSSC 22000、IFS Food、ISO 22000）制定并执行食品安全政策，规范食品操作与供应管理。
+    in_scope:
+      - HACCP与食品安全政策
+      - 第三方认证（BRCGS、SQF、FSSC 22000、IFS Food）
+      - 食品安全事件管理
+    out_of_scope:
+      - 通用质量管理（BC-720）
+  BC-2380.10.10:
+    name: 食品安全政策管理
+    description: |
+      跨网络制定并管护食品安全政策。
+  BC-2380.10.20:
+    name: HACCP计划管理
+    description: |
+      制定HACCP计划、开展危害分析并监控关键控制点。
+  BC-2380.10.30:
+    name: 食品安全认证管理
+    description: |
+      获取并维护BRCGS、SQF、FSSC 22000、IFS Food及ISO 22000认证。
+  BC-2380.10.40:
+    name: 食品安全事件管理
+    description: |
+      处理食品安全事件，包括病原体检出情况的应对。
+  BC-2380.20:
+    name: 批次追溯管理
+    description: |
+      利用GS1 EPCIS事件采集和交易伙伴数据交换，实现供应链上下游批次追溯。
+  BC-2380.20.10:
+    name: 批次编码
+    description: |
+      按GS1标准生成并打印批次编码。
+  BC-2380.20.20:
+    name: EPCIS事件采集
+    description: |
+      采集供应链全环节的EPCIS事件（赋码、发货、收货）。
+  BC-2380.20.30:
+    name: 上下游追溯
+    description: |
+      在各操作节点实现投入物料与产出物料的上下游追溯。
+  BC-2380.20.40:
+    name: 交易伙伴追溯数据交换
+    description: |
+      与供应商及下游交易伙伴交换追溯数据。
+  BC-2380.30:
+    name: 召回与撤市协调管理
+    description: |
+      统筹协调食品及消费品的召回与撤市工作，包括监管机构通知及消费者沟通。
+    in_scope:
+      - 召回分类与决策
+      - 监管机构通知与报告
+      - 消费者及交易伙伴沟通
+  BC-2380.30.10:
+    name: 召回决策与分类
+    description: |
+      决定并划定召回范围及严重程度。
+  BC-2380.30.20:
+    name: 监管机构通知
+    description: |
+      按辖区规定通知食品安全监管机构。
+  BC-2380.30.30:
+    name: 消费者与交易伙伴沟通
+    description: |
+      就召回行动向消费者及交易伙伴发出沟通信息。
+  BC-2380.30.40:
+    name: 召回效果核查
+    description: |
+      核查召回执行效果及回收率。
+  BC-2380.40:
+    name: 生鲜与保质期管理
+    description: |
+      跨生鲜品类开展保质期监控、FEFO先过期先出轮转、日期管理及减少浪费工作。
+  BC-2380.40.10:
+    name: 保质期与日期编码
+    description: |
+      按市场规则定义并打印保质期及日期编码。
+  BC-2380.40.20:
+    name: 先过期先出轮转
+    description: |
+      在门店和配送中心实施FEFO先过期先出轮转管理。
+  BC-2380.40.30:
+    name: 生鲜临期降价协调
+    description: |
+      协调生鲜商品在临近到期前降价处理，以减少浪费。
+  BC-2380.40.40:
+    name: 食品减废计划
+    description: |
+      推进食品减废、捐赠及循环利用计划。
+  BC-2380.50:
+    name: 冷链合规管理
+    description: |
+      管理冷藏及冷冻食品的冷链完整性，包括温度监控、异常处置及处理决策。
+    in_scope:
+      - 跨节点冷链温度监控
+      - 温度异常调查与处置
+      - 冷链标准操作程序与审计
+    out_of_scope:
+      - 药品冷链（BC-1570.10）
+  BC-2380.50.10:
+    name: 冷链温度监控
+    description: |
+      对食品冷链全程实施端到端温度监控。
+  BC-2380.50.20:
+    name: 冷链温度异常处置
+    description: |
+      调查并处置冷链温度超标异常情况。
+  BC-2380.50.30:
+    name: 冷链审计与核查
+    description: |
+      对全网络冷链操作规范进行审计与核查。
+metadata:
+  translator: Claude (zh automated)
+  generated: 2026-04-29
