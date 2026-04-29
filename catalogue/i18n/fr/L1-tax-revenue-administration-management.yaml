@@ -1,0 +1,147 @@
+locale: fr
+source: L1-tax-revenue-administration-management.yaml
+entries:
+  BC-3250:
+    name: Gestion de l'administration fiscale et des recettes
+    description: |
+      Administration côté gouvernement des recettes fiscales et non fiscales incluant
+      l'immatriculation des contribuables, le traitement des déclarations, la cotisation,
+      le recouvrement, le contrôle fiscal, le recouvrement forcé et l'administration des remboursements.
+  BC-3250.10:
+    name: Immatriculation et identité des contribuables
+    description: |
+      Immatriculation des contribuables, gestion de leur identité et maintenance
+      des données de référence des contribuables.
+    in_scope:
+      - Immatriculation des contribuables et attribution du numéro d'identification fiscale
+      - Maintenance du profil du contribuable
+      - Registres des bénéficiaires effectifs
+    out_of_scope:
+      - Enregistrement de l'identité civile (couvert par la gestion de l'état civil et de l'enregistrement de l'identité)
+  BC-3250.10.10:
+    name: Immatriculation des contribuables
+    description: |
+      Immatriculation des contribuables personnes physiques et morales et attribution
+      des numéros d'identification fiscale.
+  BC-3250.10.20:
+    name: Maintenance du profil des contribuables
+    description: |
+      Maintenance des données de référence des contribuables, des coordonnées et du registre des obligations fiscales.
+  BC-3250.10.30:
+    name: Enregistrement des bénéficiaires effectifs
+    description: |
+      Capture des bénéficiaires effectifs et des structures de groupe pour les entités.
+  BC-3250.20:
+    name: Traitement des déclarations et cotisation
+    description: |
+      Réception, validation et cotisation des déclarations fiscales et des déclarations
+      pour les impôts directs, indirects et les retenues à la source.
+  BC-3250.20.10:
+    name: Dépôt des déclarations
+    description: |
+      Réception et enregistrement des déclarations fiscales et des déclarations d'information sur tous les canaux.
+  BC-3250.20.20:
+    name: Validation des déclarations
+    description: |
+      Validation automatisée et manuelle des déclarations incluant l'arithmétique, la complétude et la cohérence.
+  BC-3250.20.30:
+    name: Traitement de l'auto-cotisation
+    description: |
+      Traitement des déclarations auto-cotisées et enregistrement des impositions déclarées.
+  BC-3250.20.40:
+    name: Émission de la cotisation d'office
+    description: |
+      Émission de cotisations d'office et estimées pour les non-déclarants.
+  BC-3250.30:
+    name: Opérations de recouvrement des recettes
+    description: |
+      Recouvrement des paiements fiscaux volontaires par voie électronique, retenue à la source,
+      versements échelonnés et guichets.
+  BC-3250.30.10:
+    name: Opérations des canaux de paiement
+    description: |
+      Exploitation des canaux de paiement incluant virement bancaire, carte, portefeuille électronique et guichet.
+  BC-3250.30.20:
+    name: Retenue à la source et prélèvement à la source
+    description: |
+      Administration des retenues à la source et des régimes de prélèvement à la source par les agents payeurs.
+  BC-3250.30.30:
+    name: Administration des plans d'échelonnement
+    description: |
+      Mise en place et suivi des plans d'échelonnement des contribuables et des arrangements de délai de paiement.
+  BC-3250.30.40:
+    name: Réconciliation des recettes
+    description: |
+      Réconciliation des recettes fiscales par rapport aux comptes des contribuables et au Trésor.
+  BC-3250.40:
+    name: Contrôle et vérification fiscale
+    description: |
+      Contrôle, vérification et redressement fondés sur le risque de la conformité des contribuables.
+  BC-3250.40.10:
+    name: Sélection des dossiers de contrôle
+    description: |
+      Sélection fondée sur le risque des dossiers de contrôle à l'aide de l'analyse et du renseignement.
+  BC-3250.40.20:
+    name: Travaux de vérification sur le terrain
+    description: |
+      Conduite des travaux de vérification sur le terrain, examen des documents et entretiens avec les contribuables.
+  BC-3250.40.30:
+    name: Émission des redressements
+    description: |
+      Émission des redressements, ajustements et lettres de décision de contrôle.
+  BC-3250.40.40:
+    name: Examen des prix de transfert
+    description: |
+      Examen de la tarification des transactions entre parties liées transfrontalières
+      selon les principes OCDE en matière de prix de transfert.
+  BC-3250.50:
+    name: Gestion du contentieux fiscal et du recouvrement forcé
+    description: |
+      Recouvrement des dettes fiscales par les pouvoirs légaux d'exécution incluant
+      les saisies-arrêts, les privilèges, la saisie et le renvoi aux poursuites.
+  BC-3250.50.10:
+    name: Gestion du portefeuille de dettes fiscales
+    description: |
+      Segmentation, vieillissement et priorisation du portefeuille de dettes fiscales.
+  BC-3250.50.20:
+    name: Mesures légales d'exécution
+    description: |
+      Mise en œuvre des pouvoirs légaux d'exécution incluant les saisies-arrêts, les privilèges et la saisie.
+  BC-3250.50.30:
+    name: Renvoi pour infraction fiscale
+    description: |
+      Investigation et renvoi pour poursuites des cas présumés d'évasion et d'infraction fiscale.
+  BC-3250.60:
+    name: Administration des remboursements et des crédits
+    description: |
+      Traitement des remboursements d'impôt, des compensations de crédits et des blocages de montants contestés.
+  BC-3250.60.10:
+    name: Validation des remboursements
+    description: |
+      Validation des demandes de remboursement par rapport aux déclarations, aux paiements et aux profils de risque.
+  BC-3250.60.20:
+    name: Émission des remboursements
+    description: |
+      Émission des remboursements et compensation sur les impositions en cours.
+  BC-3250.60.30:
+    name: Contrôle de la fraude aux remboursements
+    description: |
+      Contrôle des demandes de remboursement pour détecter les indicateurs d'usurpation d'identité et de fraude.
+  BC-3250.70:
+    name: Administration des recettes non fiscales
+    description: |
+      Administration des recettes publiques non fiscales incluant les droits, les amendes,
+      les redevances et les prélèvements.
+  BC-3250.70.10:
+    name: Administration des droits et redevances
+    description: |
+      Administration des droits statutaires, des redevances et des paiements d'utilisation au gouvernement.
+  BC-3250.70.20:
+    name: Recouvrement des amendes et pénalités
+    description: |
+      Recouvrement des amendes et pénalités judiciaires et administratives.
+  BC-3250.70.30:
+    name: Administration des redevances et des prélèvements
+    description: |
+      Administration des redevances sur les ressources naturelles, des prélèvements environnementaux
+      et des charges affectées.

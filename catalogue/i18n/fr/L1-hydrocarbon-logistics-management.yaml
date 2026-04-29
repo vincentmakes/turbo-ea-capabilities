@@ -1,0 +1,103 @@
+locale: fr
+source: L1-hydrocarbon-logistics-management.yaml
+entries:
+  BC-3100:
+    name: Gestion de la logistique des hydrocarbures
+    description: |
+      Opérations de transport maritime, de terminal et de stockage en vrac pour le pétrole brut,
+      les produits raffinés et le GNL, ainsi que la coordination des enlèvements et la gestion
+      du combustible de soute. Distinct du transport inter-industries (série BC-2400), qui couvre
+      les réseaux de fret, la gestion de flotte et le transport intermodal.
+  BC-3100.10:
+    name: Opérations de transport maritime des cargaisons
+    description: |
+      Exploitation des pétroliers bruts, des pétroliers de produits, des méthaniers et des
+      transferts de navire à navire dans le service pétrolier.
+    in_scope:
+      - Coordination opérationnelle des pétroliers et transporteurs de gaz
+      - Allégeage et allégeage inverse de navire à navire
+    out_of_scope:
+      - Gestion générale de la flotte de transport maritime (BC-2430)
+      - Réservations de fret pour le transport maritime de ligne (BC-2400)
+  BC-3100.10.10:
+    name: Opérations des pétroliers bruts
+    description: |
+      Coordination opérationnelle des pétroliers bruts sous affrètement au voyage et à temps.
+  BC-3100.10.20:
+    name: Opérations des pétroliers de produits
+    description: |
+      Coordination opérationnelle des pétroliers de produits raffinés incluant les cargaisons en lots.
+  BC-3100.10.30:
+    name: Opérations des méthaniers
+    description: |
+      Coordination opérationnelle des méthaniers incluant la gestion du refroidissement et de la pression des réservoirs.
+  BC-3100.10.40:
+    name: Coordination des transferts de navire à navire
+    description: |
+      Coordination des transferts STS pour le brut, les produits et le GNL.
+  BC-3100.20:
+    name: Opérations de terminal
+    description: |
+      Exploitation des terminaux pétroliers d'importation, d'exportation et intermédiaires —
+      jetées, bras de chargement et réceptions en réservoir.
+  BC-3100.20.10:
+    name: Opérations des bras de chargement et des jetées
+    description: |
+      Exploitation des équipements de jetée et des bras de chargement marins.
+  BC-3100.20.20:
+    name: Opérations de réception en réservoir
+    description: |
+      Réception et jaugeage des cargaisons dans le stockage du terminal.
+  BC-3100.20.30:
+    name: Opérations de chargement des réservoirs
+    description: |
+      Chargement depuis le stockage du terminal vers les navires et les pipelines.
+  BC-3100.20.40:
+    name: Planification des postes à quai
+    description: |
+      Allocation et planification des postes à quai pour les arrivées de navires.
+  BC-3100.30:
+    name: Gestion du stockage en vrac
+    description: |
+      Allocation des réservoirs, suivi des mouvements et étalonnage pour le brut, les produits et les LGN.
+  BC-3100.30.10:
+    name: Allocation des capacités de réservoir
+    description: |
+      Allocation de la capacité des réservoirs par grade, propriétaire et pool.
+  BC-3100.30.20:
+    name: Suivi des mouvements de réservoir à réservoir
+    description: |
+      Suivi des mouvements internes du terminal et des positions d'inventaire.
+  BC-3100.30.30:
+    name: Jaugeage et étalonnage des réservoirs
+    description: |
+      Jaugeage et maintenance des tables d'étalonnage des réservoirs pour la précision fiscale.
+  BC-3100.40:
+    name: Planification des cargaisons et coordination des enlèvements
+    description: |
+      Nominations d'enlèvement, confirmation des tiges de navire et suivi des surestaries
+      pour les cargaisons pétrolières.
+  BC-3100.40.10:
+    name: Gestion des nominations d'enlèvement
+    description: |
+      Réception et confirmation des nominations d'enlèvement des clients et de la part d'équité.
+  BC-3100.40.20:
+    name: Confirmation des tiges de navire
+    description: |
+      Confirmation de la tige et du lot par rapport aux obligations contractuelles.
+  BC-3100.40.30:
+    name: Suivi opérationnel des surestaries
+    description: |
+      Suivi opérationnel des événements de surestaries aux ports de chargement et de déchargement.
+  BC-3100.50:
+    name: Gestion des soutes et du combustible marin
+    description: |
+      Approvisionnement et assurance qualité des soutes pour la flotte exploitée et affrétée.
+  BC-3100.50.10:
+    name: Approvisionnement en soutes
+    description: |
+      Approvisionnement au comptant et à terme de combustibles marins pour la flotte.
+  BC-3100.50.20:
+    name: Assurance qualité des soutes
+    description: |
+      Échantillonnage, essais et gestion des litiges relatifs aux soutes livrées.

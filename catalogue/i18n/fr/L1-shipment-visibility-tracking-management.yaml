@@ -1,0 +1,102 @@
+locale: fr
+source: L1-shipment-visibility-tracking-management.yaml
+entries:
+  BC-2510:
+    name: Gestion de la visibilité et du suivi des expéditions
+    description: |
+      Visibilité de bout en bout des expéditions par la capture d'événements,
+      la résolution des statuts, la prédiction de l'ETA, les alertes d'exception
+      et les opérations de tour de contrôle.
+  BC-2510.10:
+    name: Gestion de la capture d'événements et des statuts
+    description: |
+      Capture des événements d'expédition en provenance des transporteurs, de
+      l'IoT et des systèmes opérationnels, et traduction en statuts canoniques.
+    in_scope:
+      - Ingestion d'événements EDI 214, IFTSTA et EPCIS
+      - Capture d'événements IoT et télématiques
+    out_of_scope:
+      - Télématique pour l'état des actifs (BC-2430.40)
+  BC-2510.10.10:
+    name: Ingestion des événements transporteurs
+    description: |
+      Ingestion des événements jalons côté transporteur via EDI et API.
+  BC-2510.10.20:
+    name: Capture des événements IoT et télématiques
+    description: |
+      Capture des événements IoT et télématiques au niveau du fret.
+  BC-2510.10.30:
+    name: Saisie manuelle des mises à jour de statut
+    description: |
+      Saisie des mises à jour de statut manuelles des conducteurs, agents et
+      partenaires.
+  BC-2510.20:
+    name: Gestion du suivi des expéditions
+    description: |
+      Résolution du statut des expéditions sur les tronçons, modes et partenaires
+      et diffusion sur les surfaces de suivi internes et orientées client.
+  BC-2510.20.10:
+    name: Résolution du statut des expéditions
+    description: |
+      Résolution du statut canonique des expéditions à partir des événements bruts.
+  BC-2510.20.20:
+    name: Assemblage du suivi multi-tronçons
+    description: |
+      Assemblage des parcours multi-tronçons et multi-transporteurs en un suivi
+      unifié.
+  BC-2510.20.30:
+    name: Exploitation du portail de suivi public
+    description: |
+      Exploitation des portails de suivi publics et des API clients.
+  BC-2510.30:
+    name: Gestion de la prédiction d'ETA
+    description: |
+      Calcul et affinage continu de l'heure d'arrivée estimée.
+  BC-2510.30.10:
+    name: Calcul de l'ETA
+    description: |
+      Calcul déterministe de l'ETA à partir des horaires et des jalons.
+  BC-2510.30.20:
+    name: Modélisation prédictive de l'ETA
+    description: |
+      Modélisation prédictive de l'ETA à partir de données historiques et
+      contextuelles.
+  BC-2510.30.30:
+    name: Alertes sur les écarts d'ETA
+    description: |
+      Alertes sur les écarts significatifs d'ETA par rapport aux engagements.
+  BC-2510.40:
+    name: Gestion des exceptions et des alertes
+    description: |
+      Détection des exceptions opérationnelles, notification des parties prenantes
+      et suivi de la résolution des exceptions.
+  BC-2510.40.10:
+    name: Détection des exceptions
+    description: |
+      Détection des exceptions opérationnelles par règles et modèles.
+  BC-2510.40.20:
+    name: Notification des parties prenantes
+    description: |
+      Notification des clients, équipes opérationnelles et partenaires.
+  BC-2510.40.30:
+    name: Suivi de la résolution des exceptions
+    description: |
+      Suivi du tri, de la prise en charge et de la clôture des exceptions.
+  BC-2510.50:
+    name: Gestion des opérations de tour de contrôle
+    description: |
+      Visibilité de bout en bout, suivi des performances et coordination des
+      interventions proactives entre transporteurs et partenaires.
+  BC-2510.50.10:
+    name: Tableaux de bord de visibilité de bout en bout
+    description: |
+      Exploitation des tableaux de bord de visibilité de bout en bout sur
+      l'ensemble du réseau.
+  BC-2510.50.20:
+    name: Suivi des performances multi-transporteurs
+    description: |
+      Suivi des performances auprès des transporteurs et partenaires.
+  BC-2510.50.30:
+    name: Coordination des interventions proactives
+    description: |
+      Coordination des interventions proactives pour protéger les engagements.

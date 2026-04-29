@@ -1,0 +1,122 @@
+locale: fr
+source: L1-customs-trade-compliance-management.yaml
+entries:
+  BC-2480:
+    name: Gestion de la conformité douanière et commerciale
+    description: |
+      Conformité aux régimes douaniers, de sanctions, d'origine et d'opérateur
+      de confiance pour les mouvements transfrontaliers, incluant la détermination
+      des droits et des taxes indirectes.
+  BC-2480.10:
+    name: Gestion de la classification tarifaire
+    description: |
+      Détermination et maintien des classifications HS pour les marchandises
+      échangées.
+    in_scope:
+      - Détermination du code HS par article et par expédition
+      - Décisions de renseignements tarifaires contraignants
+    out_of_scope:
+      - Criblage des sanctions et des parties (BC-2480.40)
+  BC-2480.10.10:
+    name: Détermination du code HS
+    description: |
+      Détermination des codes HS par article et par expédition.
+  BC-2480.10.20:
+    name: Gestion des décisions de classification
+    description: |
+      Demande et gestion des décisions tarifaires contraignantes.
+  BC-2480.10.30:
+    name: Maintenance de la base de données de classification
+    description: |
+      Maintenance des bases de données de classification principale pour les
+      articles échangés.
+  BC-2480.20:
+    name: Gestion des déclarations en douane
+    description: |
+      Dépôt des déclarations d'importation, d'exportation et de transit auprès
+      des autorités douanières.
+  BC-2480.20.10:
+    name: Dépôt des déclarations d'importation
+    description: |
+      Préparation et dépôt des déclarations d'importation.
+  BC-2480.20.20:
+    name: Dépôt des déclarations d'exportation
+    description: |
+      Préparation et dépôt des déclarations d'exportation.
+  BC-2480.20.30:
+    name: Gestion des déclarations de transit
+    description: |
+      Dépôt et apurement des déclarations de transit, y compris TIR et NCTS.
+  BC-2480.30:
+    name: Gestion de l'origine et des accords de libre-échange
+    description: |
+      Détermination et certification de l'origine préférentielle dans le cadre
+      des accords de libre-échange.
+  BC-2480.30.10:
+    name: Détermination de l'origine
+    description: |
+      Détermination de l'origine préférentielle et non préférentielle.
+  BC-2480.30.20:
+    name: Documentation de qualification ALE
+    description: |
+      Émission et gestion des certificats d'origine dans le cadre des ALE.
+  BC-2480.30.30:
+    name: Piste d'audit de l'origine
+    description: |
+      Maintenance des pièces justificatives pour les audits d'origine.
+  BC-2480.40:
+    name: Gestion du criblage des sanctions et des parties refusées
+    description: |
+      Criblage des parties, navires et marchandises contre les listes de sanctions
+      et de parties refusées.
+  BC-2480.40.10:
+    name: Criblage des parties et des navires
+    description: |
+      Criblage des clients, consignataires et convois contre les listes de
+      sanctions.
+  BC-2480.40.20:
+    name: Gestion des listes de sanctions
+    description: |
+      Maintenance des listes consolidées de sanctions et de parties refusées.
+  BC-2480.40.30:
+    name: Traitement des blocages et des mainlevées
+    description: |
+      Traitement des alertes de criblage, des blocages et des mainlevées
+      autorisées.
+  BC-2480.50:
+    name: Gestion des programmes d'opérateur de confiance
+    description: |
+      Demande, maintien et audit des programmes d'opérateur de confiance tels
+      que l'OEA et le C-TPAT.
+  BC-2480.50.10:
+    name: Demande et maintien du statut OEA
+    description: |
+      Demande du statut OEA et maintien continu du programme.
+  BC-2480.50.20:
+    name: Gestion du programme C-TPAT
+    description: |
+      Adhésion au C-TPAT et conformité aux critères minimaux de sécurité.
+  BC-2480.50.30:
+    name: Coordination des audits douaniers
+    description: |
+      Coordination des audits douaniers et des programmes d'opérateur de
+      confiance.
+  BC-2480.60:
+    name: Gestion des droits et taxes indirectes
+    description: |
+      Détermination, paiement et recouvrement des droits, taxes indirectes et
+      remboursements sur les mouvements transfrontaliers.
+  BC-2480.60.10:
+    name: Calcul des droits de douane
+    description: |
+      Calcul des droits payables sur les importations et exportations.
+  BC-2480.60.20:
+    name: Détermination des taxes indirectes
+    description: |
+      Détermination de la TVA, de la TPS et des accises sur les flux
+      transfrontaliers.
+  BC-2480.60.30:
+    name: Remboursement et drawback des droits
+    description: |
+      Recouvrement des droits via les régimes de drawback, de suspension et de
+      remboursement.

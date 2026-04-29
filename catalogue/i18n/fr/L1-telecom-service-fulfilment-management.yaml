@@ -1,0 +1,136 @@
+locale: fr
+source: L1-telecom-service-fulfilment-management.yaml
+entries:
+  BC-2620:
+    name: Gestion du fulfilment de services télécom
+    description: |
+      Saisie, décomposition, provisionnement, activation, recette des commandes
+      de service et installation sur les sites clients pour les services grand
+      public, entreprise et wholesale — ancré sur l'eTOM Service Fulfilment et
+      les Open APIs du TM Forum.
+  BC-2620.10:
+    name: Saisie des commandes de service
+    description: |
+      Saisie multicanale des commandes de service avec vérifications de
+      faisabilité et de crédit préalables à la soumission.
+  BC-2620.10.10:
+    name: Saisie des commandes omnicanale
+    description: |
+      Saisie des commandes de service via les canaux boutique, numérique,
+      centre de contact et partenaires.
+  BC-2620.10.20:
+    name: Vérification de faisabilité du service
+    description: |
+      Vérifications de faisabilité au niveau de l'adresse, de la couverture et
+      des ressources pour les services demandés.
+  BC-2620.10.30:
+    name: Contrôle du crédit et du risque
+    description: |
+      Évaluation du crédit et contrôle du risque de fraude avant acceptation
+      de la commande.
+  BC-2620.10.40:
+    name: Soumission de la commande
+    description: |
+      Validation, persistance et transmission en aval des commandes de service
+      acceptées.
+  BC-2620.20:
+    name: Décomposition des commandes de service
+    description: |
+      Décomposition des commandes orientées client en travaux orientés ressources
+      et séquencement des dépendances.
+  BC-2620.20.10:
+    name: Décomposition service-vers-ressource
+    description: |
+      Décomposition des services orientés client en services et éléments orientés
+      ressources.
+  BC-2620.20.20:
+    name: Génération des ordres de travail
+    description: |
+      Génération des ordres de travail réseau et terrain à partir des commandes
+      de service décomposées.
+  BC-2620.20.30:
+    name: Séquencement des dépendances
+    description: |
+      Séquencement des travaux dépendants sur les domaines réseau pour livrer
+      un service de bout en bout.
+  BC-2620.30:
+    name: Provisionnement des services
+    description: |
+      Allocation des ressources réseau et orchestration des modifications de
+      configuration pour instancier les services.
+  BC-2620.30.10:
+    name: Allocation des ressources réseau
+    description: |
+      Allocation de bande passante, ports, adresses IP et autres ressources à
+      une instance de service spécifique.
+  BC-2620.30.20:
+    name: Orchestration des services
+    description: |
+      Exécution orchestrée des étapes de provisionnement sur les fonctions
+      réseau physiques et virtualisées.
+  BC-2620.30.30:
+    name: Déploiement de la configuration
+    description: |
+      Application de la configuration spécifique au service sur les éléments
+      réseau cibles.
+  BC-2620.40:
+    name: Activation des services
+    description: |
+      Mise en service finale des services provisionnés et notification du client
+      et des systèmes en aval.
+  BC-2620.40.10:
+    name: Mise en service du service
+    description: |
+      Basculement des services provisionnés dans l'état actif.
+  BC-2620.40.20:
+    name: Enrôlement des abonnés
+    description: |
+      Enrôlement des abonnés dans les systèmes d'authentification, d'autorisation
+      et de politique pour le nouveau service.
+  BC-2620.40.30:
+    name: Activation de la facturation
+    description: |
+      Communication des événements d'activation à la facturation pour le
+      démarrage des frais et l'initialisation de l'horloge contractuelle.
+  BC-2620.40.40:
+    name: Notification d'activation au client
+    description: |
+      Notification aux clients et canaux que le service est actif et disponible.
+  BC-2620.50:
+    name: Tests de recette des services
+    description: |
+      Tests de bout en bout et capture de la référence avant la remise formelle
+      des nouveaux services.
+  BC-2620.50.10:
+    name: Tests de service de bout en bout
+    description: |
+      Exécution de tests fonctionnels et de performance de bout en bout sur
+      les services nouvellement provisionnés.
+  BC-2620.50.20:
+    name: Capture de la référence de service
+    description: |
+      Capture des références de performance des services pour la surveillance
+      SLA en aval.
+  BC-2620.50.30:
+    name: Validation de la recette
+    description: |
+      Acceptation et remise formelles des services aux opérations et au client.
+  BC-2620.60:
+    name: Coordination de l'installation sur les sites clients
+    description: |
+      Coordination de l'installation sur site des équipements côté client et
+      des activités associées.
+  BC-2620.60.10:
+    name: Planification des rendez-vous d'installation
+    description: |
+      Planification des rendez-vous clients pour les installations sur site.
+  BC-2620.60.20:
+    name: Coordination de l'installation sur site
+    description: |
+      Coordination des activités de l'installateur, des matériaux et des accès
+      sur les sites clients.
+  BC-2620.60.30:
+    name: Enregistrement des équipements clients
+    description: |
+      Enregistrement des équipements installés côté client et association à
+      l'instance de service.

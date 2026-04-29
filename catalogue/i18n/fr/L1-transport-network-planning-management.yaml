@@ -1,0 +1,125 @@
+locale: fr
+source: L1-transport-network-planning-management.yaml
+entries:
+  BC-2410:
+    name: Gestion de la planification du réseau de transport
+    description: |
+      Conception des réseaux de transport, des lignes, des hubs, des horaires et
+      du mix modal qui définissent le portefeuille de services du transporteur ou
+      du prestataire logistique.
+
+  BC-2410.10:
+    name: Gestion de la conception du réseau
+    description: |
+      Conception à long horizon des hubs, passerelles, lignes et mix modal
+      soutenant le portefeuille de services.
+    in_scope:
+      - Décisions de structure hub-and-spoke et point à point
+      - Conception du mix modal sur route, rail, maritime et aérien
+    out_of_scope:
+      - Conception du réseau côté chargeur (BC-520)
+
+  BC-2410.10.10:
+    name: Conception des hubs et passerelles
+    description: |
+      Sélection et dimensionnement des hubs, passerelles et points de consolidation.
+
+  BC-2410.10.20:
+    name: Conception des lignes et des services
+    description: |
+      Définition des lignes origine-destination et des services y circulant.
+
+  BC-2410.10.30:
+    name: Conception du mix modal
+    description: |
+      Choix du mode et du mix intermodal pour chaque ligne et niveau de service.
+
+  BC-2410.20:
+    name: Gestion de la planification des horaires
+    description: |
+      Construction des horaires maîtres, des créneaux et des fenêtres de service
+      pour les départs de navires, vols, sillons ferroviaires et camions.
+
+  BC-2410.20.10:
+    name: Conception de l'horaire maître
+    description: |
+      Conception des horaires récurrents de navigation, vols, trains et camions.
+
+  BC-2410.20.20:
+    name: Planification des créneaux et fenêtres
+    description: |
+      Attribution des créneaux de poste à quai, de piste et de porte aux services
+      programmés.
+
+  BC-2410.20.30:
+    name: Publication des horaires
+    description: |
+      Publication des horaires aux clients, partenaires et canaux de réservation.
+
+  BC-2410.30:
+    name: Gestion des schémas de service
+    description: |
+      Définition des produits de service, des niveaux de transit et du catalogue
+      de services proposés aux clients.
+
+  BC-2410.30.10:
+    name: Définition des niveaux de service
+    description: |
+      Définition des niveaux de service express, standard, différé et intermodal
+      avec leurs engagements respectifs.
+
+  BC-2410.30.20:
+    name: Ingénierie des délais de transit
+    description: |
+      Conception des délais de transit de bout en bout sur les tronçons et
+      correspondances.
+
+  BC-2410.30.30:
+    name: Gestion du catalogue de services
+    description: |
+      Maintenance du catalogue publié des services de transport.
+
+  BC-2410.40:
+    name: Gestion de l'équilibrage capacité-demande
+    description: |
+      Réconciliation de la capacité planifiée avec la demande prévisionnelle
+      incluant le repositionnement des équipements vides.
+
+  BC-2410.40.10:
+    name: Intégration des prévisions de demande
+    description: |
+      Intégration des prévisions de demande clients et de marché dans les plans
+      réseau.
+
+  BC-2410.40.20:
+    name: Réconciliation du plan de capacité
+    description: |
+      Réconciliation de la capacité planifiée par rapport à la demande et aux
+      contraintes.
+
+  BC-2410.40.30:
+    name: Planification du repositionnement des équipements vides
+    description: |
+      Planification du repositionnement des conteneurs, remorques et ULD vides.
+
+  BC-2410.50:
+    name: Optimisation et simulation du réseau
+    description: |
+      Modélisation, simulation et benchmarking des options réseau et des scénarios
+      de perturbation.
+
+  BC-2410.50.10:
+    name: Modélisation du réseau
+    description: |
+      Construction de modèles analytiques du réseau de transport.
+
+  BC-2410.50.20:
+    name: Simulation de scénarios
+    description: |
+      Simulation de la demande, des perturbations et des alternatives de conception.
+
+  BC-2410.50.30:
+    name: Benchmarking de la performance du réseau
+    description: |
+      Benchmarking du coût et du service réseau par rapport aux concurrents et aux
+      configurations antérieures.

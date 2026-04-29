@@ -1,0 +1,145 @@
+locale: fr
+source: L1-freight-capacity-management.yaml
+entries:
+  BC-2400:
+    name: Gestion de la capacité fret
+    description: |
+      Vente, allocation et gestion du rendement de la capacité de transport sur les
+      départs de navires, les vols, les lignes routières et ferroviaires, et les
+      parcs d'équipements.
+
+  BC-2400.10:
+    name: Gestion de l'inventaire de capacité
+    description: |
+      Maintenance de la capacité de transport disponible par mode, ligne, horaire et
+      type d'équipement comme source pour l'allocation et la réservation.
+    in_scope:
+      - Enregistrements de capacité des navires, vols, véhicules et matériel roulant
+      - Capacité du parc d'équipements (conteneurs, remorques, ULD)
+      - Capacité de ligne liée aux horaires
+    out_of_scope:
+      - Conception du réseau et des horaires à long terme (BC-2410)
+      - Acceptation des réservations (BC-2400.40)
+
+  BC-2400.10.10:
+    name: Inventaire de capacité des navires et convoyeurs
+    description: |
+      Enregistrement de la capacité de charge, de pont et de cabine par navire,
+      aéronef, train ou véhicule.
+
+  BC-2400.10.20:
+    name: Inventaire de capacité des équipements
+    description: |
+      Inventaire des conteneurs, remorques, châssis et ULD disponibles par
+      localisation et état.
+
+  BC-2400.10.30:
+    name: Capacité des lignes et des horaires
+    description: |
+      Capacité par service programmé sur une ligne, incluant les tronçons de
+      correspondance.
+
+  BC-2400.10.40:
+    name: Mise en commun de capacité et échange de créneaux
+    description: |
+      Capacité mutualisée dans le cadre d'alliances et d'accords d'échange de
+      créneaux avec des transporteurs partenaires.
+
+  BC-2400.20:
+    name: Gestion de l'allocation de capacité
+    description: |
+      Allocation de la capacité disponible entre les contrats clients, les segments
+      de marché et la demande spot.
+
+  BC-2400.20.10:
+    name: Allocation de capacité contractuelle
+    description: |
+      Allocation de capacité aux clients couverts par des engagements de quantité
+      minimale et des accords de compte nommé.
+
+  BC-2400.20.20:
+    name: Allocation de capacité sur le marché spot
+    description: |
+      Allocation de la capacité mise à disposition sur les canaux de réservation
+      spot.
+
+  BC-2400.20.30:
+    name: Réallocation et récupération de capacité
+    description: |
+      Réallocation de la capacité inutilisée ou récupérée avant la date limite
+      d'enregistrement.
+
+  BC-2400.30:
+    name: Gestion du rendement et des revenus
+    description: |
+      Optimisation du revenu par unité de capacité par les décisions de tarification,
+      de mix et de surbooking.
+
+  BC-2400.30.10:
+    name: Prévision de la demande de capacité
+    description: |
+      Prévision des réservations, des no-shows et du risque d'offloading par service.
+
+  BC-2400.30.20:
+    name: Optimisation du rendement
+    description: |
+      Optimisation du mix de classes tarifaires et de classes de taux pour maximiser
+      le rendement par tonne, créneau ou EVP.
+
+  BC-2400.30.30:
+    name: Gestion du surbooking
+    description: |
+      Définition et surveillance des limites de surbooking et de l'exposition
+      à l'offloading.
+
+  BC-2400.30.40:
+    name: Gestion du mix de revenus
+    description: |
+      Gestion du mix de revenus entre contrats, spot et lignes annexes.
+
+  BC-2400.40:
+    name: Gestion des réservations
+    description: |
+      Acceptation, modification et annulation des réservations de capacité par
+      rapport aux horaires publiés et aux devis.
+
+  BC-2400.40.10:
+    name: Réservation de capacité
+    description: |
+      Acceptation des réservations par rapport à la capacité disponible et à la
+      validité des tarifs.
+
+  BC-2400.40.20:
+    name: Modification et annulation de réservation
+    description: |
+      Modifications, reports et annulations de réservations incluant les frais de
+      no-show.
+
+  BC-2400.40.30:
+    name: Gestion des listes d'attente et de stand-by
+    description: |
+      Gestion des dossiers fret en stand-by et en liste d'attente pour obtenir une
+      capacité confirmée.
+
+  BC-2400.50:
+    name: Gestion de la performance de la capacité
+    description: |
+      Surveillance du taux de remplissage, du chargement et de l'utilisation pour
+      guider les décisions de mix de capacité et d'évolution du réseau.
+
+  BC-2400.50.10:
+    name: Analyse du taux de remplissage
+    description: |
+      Analyse du taux de remplissage par service, ligne et segment.
+
+  BC-2400.50.20:
+    name: Reporting de l'utilisation de la capacité
+    description: |
+      Reporting de l'utilisation de la capacité aux équipes commerciales et
+      opérationnelles.
+
+  BC-2400.50.30:
+    name: Amélioration de la performance de la capacité
+    description: |
+      Initiatives visant à améliorer le revenu par créneau et à réduire le
+      repositionnement à vide.

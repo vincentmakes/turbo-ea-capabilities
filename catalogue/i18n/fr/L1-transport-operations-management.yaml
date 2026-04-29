@@ -1,0 +1,155 @@
+locale: fr
+source: L1-transport-operations-management.yaml
+entries:
+  BC-2420:
+    name: Gestion des opérations de transport
+    description: |
+      Exécution multimodale des mouvements de transport depuis l'enlèvement jusqu'à
+      la ligne principale, le drayage et la livraison du dernier kilomètre, incluant
+      la réponse aux perturbations opérationnelles.
+
+  BC-2420.10:
+    name: Gestion des expéditions
+    description: |
+      Affectation des chargements, conducteurs, équipages et équipements aux
+      mouvements de transport programmés et ad hoc.
+    in_scope:
+      - Affectation chargement-conducteur et chargement-véhicule
+      - Instructions de positionnement des équipements
+    out_of_scope:
+      - Planification des conducteurs en amont de l'expédition (BC-2440)
+      - Allocation de capacité par contrat (BC-2400.20)
+
+  BC-2420.10.10:
+    name: Affectation des chargements
+    description: |
+      Affectation des chargements aux véhicules, navires, vols ou sillons
+      ferroviaires.
+
+  BC-2420.10.20:
+    name: Envoi en mission des conducteurs et équipages
+    description: |
+      Envoi en mission des conducteurs et équipages qualifiés sur les chargements
+      affectés.
+
+  BC-2420.10.30:
+    name: Expédition des équipements
+    description: |
+      Positionnement des conteneurs, remorques et ULD pour les mouvements affectés.
+
+  BC-2420.20:
+    name: Gestion des opérations de ligne principale
+    description: |
+      Mouvement de fret sur longue distance entre hubs, terminaux et passerelles
+      selon les modes.
+
+  BC-2420.20.10:
+    name: Opérations de ligne principale routière
+    description: |
+      Transport routier longue distance entre hubs et terminaux.
+
+  BC-2420.20.20:
+    name: Opérations de ligne principale ferroviaire
+    description: |
+      Exploitation des trains de fret et des services de trains complets.
+
+  BC-2420.20.30:
+    name: Opérations de ligne principale maritime
+    description: |
+      Opérations de navigation entre ports incluant les tronçons de transbordement.
+
+  BC-2420.20.40:
+    name: Opérations de ligne principale aérienne
+    description: |
+      Exploitation des vols cargo et services tout-cargo entre aéroports.
+
+  BC-2420.30:
+    name: Gestion des opérations d'enlèvement et de drayage
+    description: |
+      Enlèvements premier kilomètre chez les chargeurs et drayage courte distance
+      entre terminaux, cours et points intérieurs.
+
+  BC-2420.30.10:
+    name: Opérations d'enlèvement
+    description: |
+      Collecte du fret chez les chargeurs et les groupeurs.
+
+  BC-2420.30.20:
+    name: Opérations de drayage de conteneurs
+    description: |
+      Drayage de conteneurs entre les terminaux portuaires, les rampes ferroviaires
+      et les dépôts intérieurs.
+
+  BC-2420.30.30:
+    name: Mouvement des équipements vides
+    description: |
+      Mouvement des conteneurs, remorques et ULD vides entre les dépôts.
+
+  BC-2420.40:
+    name: Gestion des opérations de livraison du dernier kilomètre
+    description: |
+      Livraison du tronçon final aux destinataires incluant le routage, l'exécution
+      et la preuve de livraison.
+
+  BC-2420.40.10:
+    name: Routage du dernier kilomètre
+    description: |
+      Routage et séquençage des arrêts de livraison et des fenêtres horaires.
+
+  BC-2420.40.20:
+    name: Exécution de la livraison client
+    description: |
+      Livraison sur site, capture de signature et remise aux destinataires.
+
+  BC-2420.40.30:
+    name: Preuve de livraison
+    description: |
+      Capture et stockage des preuves de livraison.
+
+  BC-2420.40.40:
+    name: Gestion des exceptions de livraison
+    description: |
+      Traitement des refus, livraisons manquées et nouvelles tentatives.
+
+  BC-2420.50:
+    name: Gestion des perturbations opérationnelles
+    description: |
+      Détection des perturbations opérationnelles en cours d'opération et
+      orchestration des actions de rétablissement.
+
+  BC-2420.50.10:
+    name: Détection des incidents opérationnels
+    description: |
+      Détection des pannes, conditions météorologiques, retards portuaires et autres
+      perturbations.
+
+  BC-2420.50.20:
+    name: Reroutage et rétablissement
+    description: |
+      Reroutage du fret et rétablissement des services perturbés.
+
+  BC-2420.50.30:
+    name: Restauration du service
+    description: |
+      Restauration des horaires normaux et des engagements envers les clients.
+
+  BC-2420.60:
+    name: Gestion de la performance opérationnelle
+    description: |
+      Mesure opérationnelle de la ponctualité, des délais de transit et du respect
+      des niveaux de service.
+
+  BC-2420.60.10:
+    name: Suivi de la ponctualité
+    description: |
+      Suivi de la ponctualité des enlèvements, départs, arrivées et livraisons.
+
+  BC-2420.60.20:
+    name: Surveillance des délais de transit
+    description: |
+      Surveillance des délais de transit réels par rapport aux engagements.
+
+  BC-2420.60.30:
+    name: Reporting des KPI opérationnels
+    description: |
+      Reporting des KPI opérationnels aux parties prenantes internes et externes.

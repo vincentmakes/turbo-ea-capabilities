@@ -1,0 +1,180 @@
+locale: fr
+source: L1-building-systems-commissioning-management.yaml
+entries:
+  BC-2050:
+    name: Gestion de la mise en service des systèmes du bâtiment
+    description: |
+      Mise en service des systèmes HVAC et GTB comme prestation — mise en service initiale,
+      remise en service, recommissionnement et mise en service basée sur la surveillance.
+      Ancrée sur le processus de mise en service globale du bâtiment ASHRAE Guideline 0 / Guideline 1.1.
+    in_scope:
+      - Revue des exigences du projet du maître d'ouvrage et de la base de conception
+      - Vérification de l'installation pré-fonctionnelle et inspection de démarrage
+      - Tests de performance fonctionnelle des systèmes HVAC et GTB
+      - Vérification des séquences d'opération et tests des systèmes intégrés
+      - Remise en service, recommissionnement et mise en service basée sur la surveillance
+      - Documentation Cx, manuels des systèmes et formation du maître d'ouvrage
+    out_of_scope:
+      - Conception de l'intégration des systèmes au niveau projet (BC-2020)
+      - Opérations de service continues après remise (BC-2060)
+      - Mise en service générique d'installations d'ingénierie (BC-1160)
+  BC-2050.10:
+    name: Planification et cadrage de la mise en service
+    description: |
+      Établissement du programme de mise en service, du périmètre et de la base d'acceptation pour le projet.
+  BC-2050.10.10:
+    name: Revue des exigences du projet du maître d'ouvrage
+    description: |
+      Revue des exigences du projet du maître d'ouvrage comme référence de mise en service.
+  BC-2050.10.20:
+    name: Revue de la base de conception
+    description: |
+      Revue de la base de conception par rapport aux exigences du projet du maître d'ouvrage.
+  BC-2050.10.30:
+    name: Rédaction du plan de mise en service
+    description: |
+      Rédaction du plan de mise en service définissant le périmètre, les rôles et l'acceptation.
+  BC-2050.10.40:
+    name: Registre des risques de mise en service
+    description: |
+      Maintenance du registre des risques de mise en service tout au long de la livraison.
+  BC-2050.20:
+    name: Gestion des inspections pré-fonctionnelles
+    description: |
+      Vérification de l'exhaustivité de l'installation et de la disponibilité au démarrage avant les tests fonctionnels.
+  BC-2050.20.10:
+    name: Listes de contrôle de vérification de l'installation
+    description: |
+      Exécution des listes de contrôle de vérification de l'installation.
+  BC-2050.20.20:
+    name: Inspection de démarrage
+    description: |
+      Inspection du démarrage des équipements conformément aux exigences du fabricant.
+  BC-2050.20.30:
+    name: Enregistrement des problèmes pré-fonctionnels
+    description: |
+      Enregistrement des problèmes pré-fonctionnels dans le journal des problèmes de mise en service.
+  BC-2050.20.40:
+    name: Validation pré-fonctionnelle
+    description: |
+      Validation de l'atteinte de la disponibilité pré-fonctionnelle.
+  BC-2050.30:
+    name: Tests de performance fonctionnelle
+    description: |
+      Tests de performance fonctionnelle des sous-systèmes HVAC et GTB par rapport aux critères documentés.
+  BC-2050.30.10:
+    name: Rédaction des scripts de test
+    description: |
+      Rédaction des scripts de tests fonctionnels par rapport à l'intention de conception.
+  BC-2050.30.20:
+    name: Exécution et témoin des tests
+    description: |
+      Exécution et témoin des tests fonctionnels sur les systèmes HVAC et GTB.
+  BC-2050.30.30:
+    name: Résolution des problèmes de test
+    description: |
+      Résolution des problèmes identifiés lors des tests fonctionnels.
+  BC-2050.30.40:
+    name: Approbation des résultats de test
+    description: |
+      Approbation des résultats de test et clôture des cas de test.
+  BC-2050.40:
+    name: Vérification des séquences d'opération
+    description: |
+      Vérification des séquences de régulation programmées par rapport aux séquences d'opération de conception.
+  BC-2050.40.10:
+    name: Revue de la logique de régulation
+    description: |
+      Revue de la logique de régulation par rapport aux séquences rédigées.
+  BC-2050.40.20:
+    name: Vérification des points de consigne et des modes
+    description: |
+      Vérification des points de consigne et des modes de fonctionnement sur les plages horaires.
+  BC-2050.40.30:
+    name: Tests de dérogation et de mode de défaillance
+    description: |
+      Tests des chemins de dérogation et des comportements en mode de défaillance.
+  BC-2050.40.40:
+    name: Vérification basée sur les tendances
+    description: |
+      Utilisation des données de tendances pour vérifier les performances des séquences dans le temps.
+  BC-2050.50:
+    name: Tests des systèmes intégrés
+    description: |
+      Tests des comportements transversaux des systèmes intégrés impliquant HVAC, sécurité incendie et systèmes électriques.
+  BC-2050.50.10:
+    name: Test d'intégration incendie et sécurité des personnes
+    description: |
+      Tests d'intégration couvrant l'interaction du HVAC avec les systèmes de sécurité incendie et de protection des personnes.
+  BC-2050.50.20:
+    name: Test de désenfumage et de mise en surpression
+    description: |
+      Tests des séquences de désenfumage et de mise en surpression.
+  BC-2050.50.30:
+    name: Test de coupure de courant et de délestage
+    description: |
+      Tests du comportement du HVAC lors de coupures de courant et d'événements de délestage.
+  BC-2050.50.40:
+    name: Test d'intégration réseau du bâtiment
+    description: |
+      Tests d'intégration entre le GTB et les réseaux informatiques adjacents du bâtiment.
+  BC-2050.60:
+    name: Remise en service et recommissionnement
+    description: |
+      Service de mise en service appliqué aux bâtiments existants et sous forme de cycles périodiques de recommissionnement.
+  BC-2050.60.10:
+    name: Étude du bâtiment existant
+    description: |
+      Étude des performances du bâtiment existant par rapport à l'intention actuelle.
+  BC-2050.60.20:
+    name: Analyse des écarts de performance
+    description: |
+      Analyse des écarts de performance et de leurs causes profondes dans les bâtiments existants.
+  BC-2050.60.30:
+    name: Mise en œuvre des mesures de remise en service
+    description: |
+      Mise en œuvre des mesures de remise en service sur les systèmes existants.
+  BC-2050.60.40:
+    name: Exécution des cycles de recommissionnement
+    description: |
+      Exécution des cycles périodiques de recommissionnement pour des performances durables.
+  BC-2050.70:
+    name: Mise en service basée sur la surveillance
+    description: |
+      Mise en service continue et pilotée par les données exploitant l'instrumentation et la télémétrie.
+  BC-2050.70.10:
+    name: Plan de surveillance et instrumentation
+    description: |
+      Rédaction des plans de surveillance et sélection de l'instrumentation à l'appui.
+  BC-2050.70.20:
+    name: Tendances de performance continues
+    description: |
+      Suivi continu des tendances de performance du bâtiment pour l'information de mise en service.
+  BC-2050.70.30:
+    name: Étude des anomalies
+    description: |
+      Étude des anomalies détectées à partir des tendances continues.
+  BC-2050.70.40:
+    name: Vérification de la persistance
+    description: |
+      Vérification que les performances mises en service persistent dans le temps.
+  BC-2050.80:
+    name: Documentation et clôture de la mise en service
+    description: |
+      Production des livrables de mise en service et clôture formelle du périmètre de mise en service.
+  BC-2050.80.10:
+    name: Rédaction du rapport de mise en service
+    description: |
+      Rédaction du rapport final de mise en service.
+  BC-2050.80.20:
+    name: Compilation du manuel des systèmes
+    description: |
+      Compilation du manuel des systèmes pour l'exploitation par le maître d'ouvrage.
+  BC-2050.80.30:
+    name: Formation du maître d'ouvrage
+    description: |
+      Formation du maître d'ouvrage sur les systèmes mis en service.
+  BC-2050.80.40:
+    name: Validation finale et remise
+    description: |
+      Validation finale de la mise en service et remise aux opérations.

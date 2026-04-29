@@ -1,0 +1,130 @@
+locale: fr
+source: L1-citizen-constituent-service-management.yaml
+entries:
+  BC-3220:
+    name: Gestion des services aux citoyens et aux administrés
+    description: |
+      Prestation multicanal de services gouvernementaux aux citoyens, résidents et administrés,
+      incluant l'authentification d'identité, la gestion des dossiers, les demandes,
+      les recours et la participation citoyenne.
+  BC-3220.10:
+    name: Opérations des canaux de service
+    description: |
+      Exploitation des canaux en présentiel, téléphonique, postal, numérique et mobile
+      par lesquels les citoyens accèdent aux services gouvernementaux.
+    in_scope:
+      - Guichets uniques et centres de service en présentiel
+      - Canaux de centre de contact et de téléphonie
+      - Portails numériques et applications mobiles
+      - Canaux postaux et formulaires papier
+    out_of_scope:
+      - Vérification de l'identité des citoyens (couverte par l'identité et l'authentification des citoyens)
+  BC-3220.10.10:
+    name: Opérations des guichets uniques
+    description: |
+      Exploitation des centres de service en présentiel et des guichets uniques entre agences.
+  BC-3220.10.20:
+    name: Opérations des centres de contact
+    description: |
+      Exploitation des centres de contact téléphonique et de chat multi-agences.
+  BC-3220.10.30:
+    name: Opérations des portails de services numériques
+    description: |
+      Exploitation des portails numériques et des applications mobiles destinés aux citoyens.
+  BC-3220.10.40:
+    name: Assurance de l'accessibilité des services
+    description: |
+      Assurance d'accessibilité WCAG et Section 508 sur l'ensemble des canaux de service
+      et soutien aux technologies d'assistance.
+  BC-3220.20:
+    name: Identité et authentification des citoyens
+    description: |
+      Établissement et vérification des identités numériques des citoyens, des justificatifs
+      et des niveaux de garantie pour l'accès aux services gouvernementaux.
+  BC-3220.20.10:
+    name: Vérification d'identité
+    description: |
+      Vérification d'identité alignée sur les niveaux d'assurance NIST 800-63 IAL ou eIDAS.
+  BC-3220.20.20:
+    name: Émission de justificatifs
+    description: |
+      Émission d'authentifiants et de justificatifs pour l'accès aux services gouvernementaux.
+  BC-3220.20.30:
+    name: Opérations d'authentification
+    description: |
+      Authentification quotidienne des citoyens auprès des services gouvernementaux.
+  BC-3220.20.40:
+    name: Fédération et confiance transfrontalière
+    description: |
+      Fédération de l'identité entre agences et confiance transfrontalière selon eIDAS ou équivalent.
+  BC-3220.30:
+    name: Gestion des dossiers des citoyens
+    description: |
+      Gestion du cycle de vie complet des dossiers des citoyens dans les agences et programmes.
+  BC-3220.30.10:
+    name: Réception et triage des dossiers
+    description: |
+      Réception, classification et triage des dossiers des citoyens.
+  BC-3220.30.20:
+    name: Routage et affectation des dossiers
+    description: |
+      Routage des dossiers vers les agents et agences compétents selon la juridiction et les règles.
+  BC-3220.30.30:
+    name: Avancement et résolution des dossiers
+    description: |
+      Avancement des dossiers à travers les flux de travail de service jusqu'à leur résolution.
+  BC-3220.30.40:
+    name: Clôture et révision qualité des dossiers
+    description: |
+      Clôture, révision qualité et reprise des dossiers traités.
+  BC-3220.40:
+    name: Traitement des demandes de service et des renseignements
+    description: |
+      Traitement des renseignements, des demandes, des plaintes et des demandes d'accès
+      à l'information sur l'ensemble des canaux.
+  BC-3220.40.10:
+    name: Traitement des renseignements généraux
+    description: |
+      Traitement des renseignements généraux et des demandes d'information.
+  BC-3220.40.20:
+    name: Traitement des plaintes
+    description: |
+      Réception, instruction et résolution des plaintes des citoyens.
+  BC-3220.40.30:
+    name: Traitement des demandes d'accès à l'information
+    description: |
+      Traitement des demandes d'accès à l'information et d'accès aux documents.
+  BC-3220.50:
+    name: Gestion des recours et du médiateur
+    description: |
+      Révision administrative indépendante des décisions des agences incluant les recours,
+      les tribunaux et les enquêtes du médiateur.
+  BC-3220.50.10:
+    name: Réception des recours administratifs
+    description: |
+      Réception et validation des recours administratifs contre les décisions des agences.
+  BC-3220.50.20:
+    name: Audition des recours et décision
+    description: |
+      Audition des recours et décision sur les résultats par les autorités de révision.
+  BC-3220.50.30:
+    name: Enquête du médiateur
+    description: |
+      Enquête indépendante du médiateur sur les plaintes de mauvaise administration.
+  BC-3220.60:
+    name: Engagement et participation des citoyens
+    description: |
+      Engagement bidirectionnel avec les citoyens par les plateformes de participation,
+      les pétitions et les canaux de rétroaction.
+  BC-3220.60.10:
+    name: Traitement des pétitions et des initiatives citoyennes
+    description: |
+      Réception, validation et réponse aux pétitions et aux propositions d'initiative citoyenne.
+  BC-3220.60.20:
+    name: Opérations des plateformes participatives
+    description: |
+      Exploitation des plateformes de budget participatif, de délibération et de co-création.
+  BC-3220.60.30:
+    name: Mesure de la satisfaction des citoyens
+    description: |
+      Mesure de la satisfaction, de la confiance et de l'expérience de service des citoyens.

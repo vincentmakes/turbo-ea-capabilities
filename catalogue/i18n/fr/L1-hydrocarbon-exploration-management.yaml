@@ -1,0 +1,141 @@
+locale: fr
+source: L1-hydrocarbon-exploration-management.yaml
+entries:
+  BC-3000:
+    name: Gestion de l'exploration des hydrocarbures
+    description: |
+      Identification et acquisition de nouvelles ressources en hydrocarbures par prospection géophysique, évaluation des bassins et des prospects, acquisition de licences et concessions, et décisions de forage exploratoire.
+  BC-3000.10:
+    name: Gestion des levés géophysiques
+    description: |
+      Acquisition, traitement et interprétation des données géophysiques sismiques et non sismiques pour imager le sous-sol.
+    in_scope:
+      - Campagnes d'acquisition sismique 2D et 3D
+      - Traitement et retraitement sismique
+      - Interprétation sismique pour la génération de prospects
+    out_of_scope:
+      - Géomodélisation à l'échelle du réservoir pour les actifs en développement (BC-3010)
+  BC-3000.10.10:
+    name: Acquisition sismique 3D
+    description: |
+      Opérations d'acquisition sismique 3D marine, terrestre et fond marin.
+  BC-3000.10.20:
+    name: Acquisition sismique 2D
+    description: |
+      Opérations d'acquisition sismique 2D à l'échelle de reconnaissance régionale.
+  BC-3000.10.30:
+    name: Acquisition géophysique non sismique
+    description: |
+      Levés gravimétriques, magnétiques, électromagnétiques et autres levés non sismiques.
+  BC-3000.10.40:
+    name: Traitement des données sismiques
+    description: |
+      Traitement avant et après sommation, migration en profondeur et retraitement des données sismiques.
+  BC-3000.10.50:
+    name: Interprétation des données sismiques
+    description: |
+      Interprétation structurale et stratigraphique des volumes sismiques pour la génération de prospects.
+  BC-3000.20:
+    name: Évaluation des bassins et des prospects
+    description: |
+      Analyse des systèmes pétroliers, cartographie des couloirs de jeux et évaluation risque-volume des prospects d'exploration.
+    in_scope:
+      - Modélisation des systèmes pétroliers
+      - Inventaire et classement des prospects
+      - Estimation volumétrique pondérée du risque
+    out_of_scope:
+      - Classification des réserves de volumes découverts (BC-3010.30)
+  BC-3000.20.10:
+    name: Analyse des systèmes pétroliers
+    description: |
+      Analyse de la source, du réservoir, du sceau, du piège et du calendrier pour qualifier les systèmes pétroliers.
+  BC-3000.20.20:
+    name: Cartographie des couloirs de jeux
+    description: |
+      Cartographie des jeux régionaux et des segments à risque commun sur le périmètre.
+  BC-3000.20.30:
+    name: Gestion de l'inventaire des prospects
+    description: |
+      Maintenance de l'inventaire classé des prospects et des leads et de leur maturation.
+  BC-3000.20.40:
+    name: Évaluation du risque des prospects
+    description: |
+      Évaluation probabiliste de la chance géologique de succès des prospects.
+  BC-3000.20.50:
+    name: Estimation volumétrique
+    description: |
+      Estimation probabiliste pré-forage des volumes en place et récupérables.
+  BC-3000.30:
+    name: Acquisition de licences et concessions
+    description: |
+      Acquisition de surfaces d'exploration par des tours de licences, des négociations directes et des transactions de cession partielle.
+    in_scope:
+      - Sélection et participation aux tours d'attribution
+      - Soumission d'offres pour les concessions et les CPP
+      - Négociation de cessions partielles entrantes et sortantes
+    out_of_scope:
+      - Suivi des obligations de licence en cours (BC-3110.40)
+  BC-3000.30.10:
+    name: Sélection des tours de licences
+    description: |
+      Sélection des tours d'attribution de licences des gouvernements hôtes pour les décisions d'entrée.
+  BC-3000.30.20:
+    name: Soumission d'offres pour les concessions
+    description: |
+      Préparation et soumission d'offres compétitives pour les concessions et les contrats de partage de production.
+  BC-3000.30.30:
+    name: Négociation de cessions partielles
+    description: |
+      Négociation des transactions de cession partielle entrante, sortante et d'échange de surfaces.
+  BC-3000.30.40:
+    name: Gestion du portefeuille de surfaces
+    description: |
+      Maintenance du portefeuille de surfaces d'exploration et décisions de rationalisation.
+  BC-3000.40:
+    name: Gestion du programme de forage exploratoire
+    description: |
+      Définition, approbation et évaluation post-puits des programmes de forage wildcat et d'appraisal.
+  BC-3000.40.10:
+    name: Définition du programme de puits exploratoires
+    description: |
+      Définition des objectifs et du séquencement des puits wildcat et d'appraisal.
+  BC-3000.40.20:
+    name: Approbation des puits wildcat
+    description: |
+      Gouvernance d'approbation interne et partenaire pour les puits d'exploration wildcat.
+  BC-3000.40.30:
+    name: Gestion du programme de puits d'appraisal
+    description: |
+      Gestion des programmes de puits d'appraisal consécutifs à une découverte.
+  BC-3000.40.40:
+    name: Évaluation post-puits
+    description: |
+      Évaluation sous-sol post-puits et capitalisation des apprentissages pour l'inventaire des prospects.
+  BC-3000.50:
+    name: Pilotage du portefeuille d'exploration
+    description: |
+      Pilotage stratégique du portefeuille d'exploration à travers les géographies, les jeux et les classes de risque.
+  BC-3000.50.10:
+    name: Définition de la stratégie d'exploration
+    description: |
+      Définition de la stratégie d'exploration par bassin, jeu et classe de risque.
+  BC-3000.50.20:
+    name: Allocation des investissements d'exploration
+    description: |
+      Allocation du capital d'exploration entre les géographies et les types de jeux.
+  BC-3000.50.30:
+    name: Suivi des performances d'exploration
+    description: |
+      Suivi du coût de découverte, des taux de succès et des ajouts de ressources en exploration.
+  BC-3000.60:
+    name: Déclaration des découvertes sous-sol
+    description: |
+      Notification des découvertes aux gouvernements hôtes, aux partenaires et aux marchés financiers, et suivi de la maturation des ressources jusqu'à la sanction du développement.
+  BC-3000.60.10:
+    name: Notification des découvertes
+    description: |
+      Notification des découvertes aux gouvernements hôtes, aux partenaires et divulgations aux marchés financiers.
+  BC-3000.60.20:
+    name: Suivi de la maturation des ressources
+    description: |
+      Suivi des ressources contingentes de la découverte à la sanction du développement.

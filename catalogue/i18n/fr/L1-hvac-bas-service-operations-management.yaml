@@ -1,0 +1,187 @@
+locale: fr
+source: L1-hvac-bas-service-operations-management.yaml
+entries:
+  BC-2060:
+    name: Gestion des opérations de service HVAC et GTB
+    description: |
+      Service sur les équipements HVAC installés et les GTB, piloté par l'OEM et les entrepreneurs
+      — gestion de la configuration du parc installé, maintenance préventive et réactive,
+      reprogrammation GTB et service logiciel, modernisation des équipements, contrats de
+      service à la performance et service connecté à distance.
+    in_scope:
+      - Registre de configuration des équipements et GTB du parc installé
+      - Livraison des contrats de maintenance préventive et service réactif/d'urgence
+      - Reprogrammation GTB, mises à niveau du firmware et opérations de sauvegarde/restauration
+      - Exécution des modernisations sur les équipements HVAC installés
+      - Contrats de service à la performance et aux résultats
+      - Service connecté à distance et opérations du centre de diagnostic
+      - Gestion des accords de niveau de service et de la satisfaction client
+    out_of_scope:
+      - Service de terrain générique multi-industrie (BC-1050) et pièces détachées (BC-1060)
+      - Mise en service du projet et livraison Cx (BC-2050)
+      - Approvisionnement et déclarations des fluides frigorigènes (BC-2040)
+      - Ingénierie des produits équipements HVAC (BC-2000)
+  BC-2060.10:
+    name: Gestion de la configuration du parc installé
+    description: |
+      Maintenance des données de configuration telles qu'installées et maintenues pour le parc mondial installé.
+  BC-2060.10.10:
+    name: Registre des actifs équipements
+    description: |
+      Registre des équipements HVAC installés par numéro de série, site et client.
+  BC-2060.10.20:
+    name: Registre de configuration GTB
+    description: |
+      Registre des configurations GTB, contrôleurs, points et séquences en service.
+  BC-2060.10.30:
+    name: Enregistrements tels que maintenus
+    description: |
+      Enregistrements de la configuration telle que maintenue après chaque événement de service.
+  BC-2060.10.40:
+    name: Enregistrements des modifications du parc installé
+    description: |
+      Enregistrements des modifications post-remise apportées aux équipements et au GTB installés.
+  BC-2060.20:
+    name: Opérations de service de maintenance préventive
+    description: |
+      Prestation de la maintenance préventive planifiée sous contrat.
+  BC-2060.20.10:
+    name: Exécution du contrat de maintenance
+    description: |
+      Exécution de la maintenance préventive conformément au périmètre contractuel.
+  BC-2060.20.20:
+    name: Routage des visites planifiées
+    description: |
+      Routage et dépêche des visites de service planifiées.
+  BC-2060.20.30:
+    name: Service filtres et courroies
+    description: |
+      Service de remplacement de routine des filtres, courroies et consommables.
+  BC-2060.20.40:
+    name: Service fluides frigorigènes et serpentins
+    description: |
+      Service de routine d'appoint en fluide frigorigène et de nettoyage des serpentins.
+  BC-2060.20.50:
+    name: Rapport de conformité de maintenance
+    description: |
+      Rapport de conformité de la maintenance préventive aux clients.
+  BC-2060.30:
+    name: Opérations de service réactif et d'urgence
+    description: |
+      Service réactif et d'urgence en dehors des heures sur les équipements installés.
+  BC-2060.30.10:
+    name: Triage des demandes de service
+    description: |
+      Triage des demandes de service entrantes par urgence et compétence.
+  BC-2060.30.20:
+    name: Dépêche d'urgence
+    description: |
+      Dépêche des intervenants d'urgence pour les défaillances critiques d'équipements.
+  BC-2060.30.30:
+    name: Exécution des réparations sur site
+    description: |
+      Exécution des réparations sur site par les techniciens de service.
+  BC-2060.30.40:
+    name: Intervention d'urgence en cas de fuite de fluide frigorigène
+    description: |
+      Intervention d'urgence en cas de fuites de fluides frigorigènes et de fuites majeures.
+  BC-2060.40:
+    name: Reprogrammation GTB et service logiciel
+    description: |
+      Service côté logiciel sur les GTB installés — mises à jour des séquences, mises à niveau du firmware et modifications de configuration.
+  BC-2060.40.10:
+    name: Déploiement des mises à jour de séquences
+    description: |
+      Déploiement des séquences d'opération mises à jour sur les contrôleurs installés.
+  BC-2060.40.20:
+    name: Mise à niveau du firmware des contrôleurs
+    description: |
+      Mise à niveau du firmware des contrôleurs GTB installés.
+  BC-2060.40.30:
+    name: Modification des points et des programmes
+    description: |
+      Modification de terrain des points GTB, des programmes et des tendances.
+  BC-2060.40.40:
+    name: Opérations de sauvegarde et de restauration GTB
+    description: |
+      Sauvegarde de la configuration GTB et restauration en cas de défaillance.
+  BC-2060.50:
+    name: Service de modernisation et de mise à niveau des équipements HVAC
+    description: |
+      Services de modernisation, remplacement et mise à niveau livrés sur le parc HVAC installé.
+  BC-2060.50.10:
+    name: Ingénierie de modernisation sur site
+    description: |
+      Ingénierie sur site des kits de modernisation adaptés à l'installation.
+  BC-2060.50.20:
+    name: Exécution du remplacement des équipements
+    description: |
+      Exécution sur site des périmètres de remplacement des équipements.
+  BC-2060.50.30:
+    name: Service de conversion des fluides frigorigènes
+    description: |
+      Conversion des équipements installés vers des fluides frigorigènes alternatifs.
+  BC-2060.50.40:
+    name: Tests de validation après modernisation
+    description: |
+      Tests de validation après modernisation ou mise à niveau.
+  BC-2060.60:
+    name: Opérations des contrats de service à la performance
+    description: |
+      Exploitation des contrats de service à la performance et aux résultats.
+  BC-2060.60.10:
+    name: Exécution des contrats de performance
+    description: |
+      Exécution des obligations de service à la performance.
+  BC-2060.60.20:
+    name: Suivi des économies garanties
+    description: |
+      Suivi des résultats d'économies garanties par rapport à la référence.
+  BC-2060.60.30:
+    name: Opérations des mécanismes de partage des risques
+    description: |
+      Exploitation des mécanismes de bonus et de pénalité pour le partage des risques.
+  BC-2060.60.40:
+    name: Rapport des résultats
+    description: |
+      Rapport des résultats contractuels et des indicateurs de niveau de service.
+  BC-2060.70:
+    name: Opérations de service connecté à distance
+    description: |
+      Opérations du centre de service à distance exploitant les données HVAC et GTB connectées.
+  BC-2060.70.10:
+    name: Opérations du centre de diagnostic à distance
+    description: |
+      Opérations du centre de diagnostic à distance pour les équipements connectés.
+  BC-2060.70.20:
+    name: Triage à distance des problèmes
+    description: |
+      Triage des problèmes identifiés par la télémétrie à distance.
+  BC-2060.70.30:
+    name: Exécution de résolutions à distance
+    description: |
+      Exécution de résolutions uniquement à distance lorsque le problème ne nécessite pas de visite sur site.
+  BC-2060.70.40:
+    name: Intégration des clients au service connecté
+    description: |
+      Intégration des clients aux offres de service connecté.
+  BC-2060.80:
+    name: Gestion de la qualité de service et des accords de niveau de service
+    description: |
+      Gestion de la qualité du service, des accords de niveau de service et de la satisfaction client.
+  BC-2060.80.10:
+    name: Suivi des accords de niveau de service
+    description: |
+      Suivi des performances des accords de niveau de service.
+  BC-2060.80.20:
+    name: Collecte de la satisfaction client
+    description: |
+      Collecte de la satisfaction client sur l'ensemble des interactions de service.
+  BC-2060.80.30:
+    name: Gestion des escalades de service
+    description: |
+      Gestion des escalades de service et des actions de rétablissement.
+  BC-2060.80.40:
+    name: Rapport de performance du service
+    description: |
+      Rapport périodique de performance du service aux clients et à la direction.
