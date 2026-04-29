@@ -1,0 +1,117 @@
+locale: es
+source: L1-hydrocarbon-logistics-management.yaml
+entries:
+  BC-3100:
+    name: Gestión de logística de hidrocarburos
+    description: |
+      Operaciones de carga marítima, terminales y almacenamiento a granel
+      para crudo, productos refinados y GNL, más la coordinación de
+      levantamientos y la gestión de combustible de barcos. Distinta del
+      transporte de aplicación transversal (serie BC-2400), que abarca
+      redes de carga, gestión de flotas y transporte intermodal.
+  BC-3100.10:
+    name: Operaciones de carga marítima
+    description: |
+      Operación de tanqueros de crudo, tanqueros de productos, buques de
+      GNL y transferencias entre buques en servicio de hidrocarburos.
+    in_scope:
+      - Coordinación operativa de tanqueros y buques de gas
+      - Aligera y aligera inversa entre buques
+    out_of_scope:
+      - Gestión genérica de flotas navieras (BC-2430)
+      - Reservas de carga en líneas regulares (BC-2400)
+  BC-3100.10.10:
+    name: Operaciones de tanqueros de crudo
+    description: |
+      Coordinación operativa de tanqueros de crudo bajo contrato de
+      viaje y tiempo.
+  BC-3100.10.20:
+    name: Operaciones de tanqueros de productos
+    description: |
+      Coordinación operativa de tanqueros de productos refinados,
+      incluyendo cargamentos parciales.
+  BC-3100.10.30:
+    name: Operaciones de buques de GNL
+    description: |
+      Coordinación operativa de buques de GNL, incluyendo enfriamiento y
+      gestión de la presión de los tanques.
+  BC-3100.10.40:
+    name: Coordinación de transferencias entre buques
+    description: |
+      Coordinación de transferencias STS (ship-to-ship) de crudo,
+      productos y GNL.
+  BC-3100.20:
+    name: Operaciones de terminales
+    description: |
+      Operación de terminales de importación, exportación e intermedias
+      de hidrocarburos: muelles, brazos de carga y recepciones en tanque.
+  BC-3100.20.10:
+    name: Operaciones de brazos de carga y muelles
+    description: |
+      Operación del equipo de muelle y los brazos de carga marinos.
+  BC-3100.20.20:
+    name: Operaciones de recepción en tanque
+    description: |
+      Recepción y aforo de cargamentos en el almacenamiento de la terminal.
+  BC-3100.20.30:
+    name: Operaciones de carga desde tanque
+    description: |
+      Carga desde el almacenamiento de la terminal hacia buques y ductos.
+  BC-3100.20.40:
+    name: Programación de atraques
+    description: |
+      Asignación y programación de atraques para la llegada de buques.
+  BC-3100.30:
+    name: Gestión de almacenamiento a granel
+    description: |
+      Asignación de tanques, seguimiento de movimientos y calibración
+      de tanques para crudo, productos y LGN.
+  BC-3100.30.10:
+    name: Asignación de tanques
+    description: |
+      Asignación de la capacidad de los tanques a grados, propietarios
+      y reservorios.
+  BC-3100.30.20:
+    name: Seguimiento de movimientos entre tanques
+    description: |
+      Seguimiento de movimientos internos en la terminal y posiciones
+      de inventario.
+  BC-3100.30.30:
+    name: Calibración de tanques
+    description: |
+      Mantenimiento de la tabla de calibración de tanques para
+      la exactitud fiscal.
+  BC-3100.40:
+    name: Programación de carga y coordinación de levantamientos
+    description: |
+      Nominaciones de levantamiento, confirmación de stem del buque y
+      seguimiento de la estadía para los cargamentos de hidrocarburos.
+  BC-3100.40.10:
+    name: Gestión de nominaciones de levantamiento
+    description: |
+      Recepción y confirmación de nominaciones de levantamiento de
+      clientes y de participación accionaria.
+  BC-3100.40.20:
+    name: Confirmación del stem del buque
+    description: |
+      Confirmación del stem y parcela frente a las obligaciones contractuales.
+  BC-3100.40.30:
+    name: Seguimiento operativo de la estadía
+    description: |
+      Seguimiento operativo de los eventos de estadía en los puertos
+      de carga y descarga.
+  BC-3100.50:
+    name: Gestión de combustible de barcos y marine fuel
+    description: |
+      Aprovisionamiento y aseguramiento de la calidad del combustible
+      de barcos para la flota operada y fletada.
+  BC-3100.50.10:
+    name: Aprovisionamiento de combustible de barcos
+    description: |
+      Aprovisionamiento spot y a término de combustibles marinos para
+      la flota.
+  BC-3100.50.20:
+    name: Aseguramiento de la calidad del combustible de barcos
+    description: |
+      Muestreo, prueba y gestión de disputas del combustible de barcos
+      suministrado.
