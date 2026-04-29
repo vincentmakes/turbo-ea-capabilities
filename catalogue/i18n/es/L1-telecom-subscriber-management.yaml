@@ -1,0 +1,124 @@
+locale: es
+source: L1-telecom-subscriber-management.yaml
+entries:
+  BC-2640:
+    name: Suscriptor de telecomunicaciones
+    description: |
+      Identidad del suscriptor, ciclo de vida de SIM y eSIM, numeración, portabilidad,
+      identidad de dispositivo, y autenticación y autorización en redes móviles y fijas.
+  BC-2640.10:
+    name: Gestión de identidad del suscriptor
+    description: |
+      Gestión del ciclo de vida de los identificadores y perfiles del suscriptor en la
+      capa de datos de suscriptores.
+  BC-2640.10.10:
+    name: Aprovisionamiento de IMSI
+    description: |
+      Asignación y aprovisionamiento de IMSI e identificadores equivalentes en los
+      repositorios de datos de suscriptores.
+  BC-2640.10.20:
+    name: Gestión del perfil del suscriptor
+    description: |
+      Gestión de registros de perfil del suscriptor en HLR, HSS, UDM y sistemas
+      equivalentes.
+  BC-2640.10.30:
+    name: Revocación de identidades de suscriptor
+    description: |
+      Revocación de identidades de suscriptor por cancelación, fraude o requerimiento
+      regulatorio.
+  BC-2640.20:
+    name: Gestión del ciclo de vida de SIM y eSIM
+    description: |
+      Gestión del ciclo de vida de tarjetas SIM físicas y perfiles eSIM, incluyendo
+      personalización, distribución, sustitución y reemplazo.
+  BC-2640.20.10:
+    name: Aprovisionamiento de SIM física
+    description: |
+      Personalización y distribución de tarjetas SIM físicas.
+  BC-2640.20.20:
+    name: Gestión de perfiles eSIM
+    description: |
+      Gestión de perfiles eSIM mediante SM-DP+, SM-SR y plataformas equivalentes.
+  BC-2640.20.30:
+    name: Sustitución y reemplazo de perfil
+    description: |
+      Sustitución y reemplazo de perfiles SIM y eSIM del suscriptor, incluidos los
+      flujos con detección de fraude.
+  BC-2640.30:
+    name: Gestión de recursos de numeración
+    description: |
+      Gestión de los recursos de numeración telefónica asignados por reguladores y su
+      asignación a servicios.
+  BC-2640.30.10:
+    name: Asignación de bloques de números
+    description: |
+      Adquisición y asignación de bloques de números del regulador al inventario interno.
+  BC-2640.30.20:
+    name: Gestión del inventario de números
+    description: |
+      Gestión del inventario de números disponibles, reservados, asignados y en
+      cuarentena.
+  BC-2640.30.30:
+    name: Reserva y devolución de números
+    description: |
+      Reserva de números para pedidos y devolución de números no utilizados al pool o
+      al regulador.
+  BC-2640.40:
+    name: Gestión de portabilidad numérica
+    description: |
+      Portabilidad numérica móvil y fija de entrada y salida, y mantenimiento de datos
+      de referencia de enrutamiento.
+  BC-2640.40.10:
+    name: Gestión de portaciones entrantes
+    description: |
+      Tramitación de solicitudes de portabilidad numérica entrante procedentes de otros
+      operadores.
+  BC-2640.40.20:
+    name: Gestión de portaciones salientes
+    description: |
+      Tramitación de solicitudes de portabilidad numérica saliente hacia otros
+      operadores.
+  BC-2640.40.30:
+    name: Mantenimiento de datos de enrutamiento de portabilidad
+    description: |
+      Mantenimiento de los datos de enrutamiento de portabilidad, incluidos ENUM y
+      bases de datos de referencia centrales.
+  BC-2640.50:
+    name: Gestión de identidad de dispositivos
+    description: |
+      Registro y control de identificadores de dispositivos para la elegibilidad de
+      servicio y la lista negra de dispositivos robados.
+  BC-2640.50.10:
+    name: Registro de IMEI
+    description: |
+      Registro de IMEI de dispositivos frente a suscriptores y comprobaciones de
+      elegibilidad de servicio.
+  BC-2640.50.20:
+    name: Mantenimiento del registro de identidad de equipos
+    description: |
+      Mantenimiento de datos EIR para dispositivos en lista blanca, gris y negra.
+  BC-2640.50.30:
+    name: Inclusión en lista negra de dispositivos robados
+    description: |
+      Inclusión en lista negra de dispositivos robados y perdidos en colaboración con
+      registros del sector y fuerzas del orden.
+  BC-2640.60:
+    name: Autenticación y autorización de suscriptores
+    description: |
+      Autenticación, autorización y contabilidad de suscriptores y dispositivos en
+      distintas tecnologías de acceso.
+  BC-2640.60.10:
+    name: Autenticación de suscriptores
+    description: |
+      Autenticación de suscriptores en accesos móvil, fijo y Wi-Fi mediante protocolos
+      AAA.
+  BC-2640.60.20:
+    name: Gestión de políticas de autorización
+    description: |
+      Gestión de reglas de autorización de servicios y políticas por suscriptor y
+      dispositivo.
+  BC-2640.60.30:
+    name: Gestión de registros de contabilidad
+    description: |
+      Generación y gestión de registros de contabilidad AAA para cargos y analíticas
+      aguas abajo.

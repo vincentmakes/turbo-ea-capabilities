@@ -1,0 +1,106 @@
+locale: es
+source: L1-freight-forwarding-brokerage-management.yaml
+entries:
+  BC-2450:
+    name: Gestión de transitarios y agentes de carga
+    description: |
+      Organización del transporte en nombre de los expedidores como transitario,
+      NVOCC, agente de carga o agente aduanero, incluida la coordinación
+      multimodal y las operaciones de la red de socios.
+  BC-2450.10:
+    name: Gestión de cotizaciones a expedidores
+    description: |
+      Recepción de solicitudes de cotización de expedidores y emisión de tarifas
+      del transitario a través de modos y transportistas.
+    in_scope:
+      - Búsqueda de tarifas multiportador para consultas de expedidores
+      - Seguimiento de validez y confirmación de cotizaciones
+    out_of_scope:
+      - Gestión de tarifas y aranceles del lado del transportista (BC-2520)
+  BC-2450.10.10:
+    name: Captura de solicitudes de cotización
+    description: |
+      Captura de las solicitudes de cotización de los expedidores a través de
+      los diferentes canales.
+  BC-2450.10.20:
+    name: Búsqueda de tarifas multiportador
+    description: |
+      Búsqueda y comparación de tarifas entre los transportistas subyacentes.
+  BC-2450.10.30:
+    name: Emisión y vigencia de cotizaciones
+    description: |
+      Emisión de cotizaciones vinculantes e indicativas y seguimiento de su
+      vigencia.
+  BC-2450.20:
+    name: Gestión de la adquisición y asignación de transportistas
+    description: |
+      Reserva de capacidad con los transportistas subyacentes y gestión de las
+      asignaciones y el gasto en transportistas.
+  BC-2450.20.10:
+    name: Selección de transportistas
+    description: |
+      Selección de los transportistas subyacentes por envío.
+  BC-2450.20.20:
+    name: Ejecución de reservas con transportistas
+    description: |
+      Reserva de capacidad con los transportistas seleccionados.
+  BC-2450.20.30:
+    name: Optimización del gasto en asignaciones
+    description: |
+      Optimización del gasto del transitario en las asignaciones de
+      transportistas.
+  BC-2450.30:
+    name: Coordinación multimodal del transitario
+    description: |
+      Coordinación de movimientos multitramo y multimodal, incluida la
+      consolidación, desconsolidación y conocimientos de embarque de la casa.
+  BC-2450.30.10:
+    name: Emisión de conocimientos de embarque de la casa
+    description: |
+      Emisión de conocimientos de embarque de la casa del transitario para los
+      expedidores.
+  BC-2450.30.20:
+    name: Coordinación de movimientos multitramo
+    description: |
+      Coordinación de movimientos multitramo a través de transportistas y modos.
+  BC-2450.30.30:
+    name: Consolidación y desconsolidación
+    description: |
+      Consolidación de carga en origen y desconsolidación en destino.
+  BC-2450.40:
+    name: Gestión de agencia aduanera
+    description: |
+      Prestación de servicios de agencia aduanera en nombre de importadores y
+      exportadores.
+  BC-2450.40.10:
+    name: Preparación de declaraciones aduaneras
+    description: |
+      Preparación de declaraciones aduaneras en nombre de los clientes.
+  BC-2450.40.20:
+    name: Cálculo de derechos e impuestos
+    description: |
+      Cálculo y desembolso de derechos e impuestos indirectos para los
+      clientes.
+  BC-2450.40.30:
+    name: Seguimiento del estado de agencia
+    description: |
+      Seguimiento del progreso de la agencia y resolución de excepciones.
+  BC-2450.50:
+    name: Coordinación de la red de transitarios
+    description: |
+      Coordinación con los agentes de origen, destino y socios en una red de
+      transitarios, incluida la liquidación interoficinas.
+  BC-2450.50.10:
+    name: Coordinación con agentes de origen y destino
+    description: |
+      Coordinación de actividades con los agentes de origen y destino.
+  BC-2450.50.20:
+    name: Liquidación interoficinas
+    description: |
+      Liquidación interoficinas e interagentes de ingresos y costos de
+      transitarios.
+  BC-2450.50.30:
+    name: Gestión del rendimiento de agentes socios
+    description: |
+      Gestión de la calidad del servicio y el cumplimiento de los agentes
+      socios.
