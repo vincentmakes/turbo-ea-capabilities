@@ -1,0 +1,132 @@
+locale: zh-Hans
+source: L1-warehousing-operations-management.yaml
+entries:
+  BC-2460:
+    name: 仓储运营管理
+    description: |
+      运营第三方仓库及配送中心，包括入库、存储、出库、增值服务及逆向物流。
+  BC-2460.10:
+    name: 入库运营管理
+    description: |
+      对进入仓库的货物进行收货、验收及上架。
+    in_scope:
+      - 预收货通知及ASN处理
+      - 货物验收及上架
+    out_of_scope:
+      - 出库发货（BC-2460.30）
+      - 货主层面的库存所有权（BC-530）
+  BC-2460.10.10:
+    name: 收货前期准备
+    description: |
+      处理ASN、安排月台时间及为收货配置资源。
+  BC-2460.10.20:
+    name: 货物收货与验收
+    description: |
+      对入库货物进行实物收货与验收。
+  BC-2460.10.30:
+    name: 上架与库位分配
+    description: |
+      将收到的货物上架并分配存储库位。
+  BC-2460.20:
+    name: 存储与库存运营管理
+    description: |
+      开展仓内存储运营，包括库位优化、循环盘点及特定条件存储。
+  BC-2460.20.10:
+    name: 库位优化与管理
+    description: |
+      制定库位规划决策并维护存储库位信息。
+  BC-2460.20.20:
+    name: 循环盘点与对账
+    description: |
+      开展循环盘点、库存对账及库存调整。
+  BC-2460.20.30:
+    name: 批次、序列号与货批追踪
+    description: |
+      追踪在库货物的批次、序列号及货批属性。
+  BC-2460.20.40:
+    name: 冷链与特殊条件存储
+    description: |
+      运营温控、危险品及保税等特殊条件存储。
+  BC-2460.30:
+    name: 出库运营管理
+    description: |
+      完成出库货物的拣货、打包、贴标及发运。
+  BC-2460.30.10:
+    name: 拣货运营
+    description: |
+      采用批量、波次及分区策略开展订单拣货。
+  BC-2460.30.20:
+    name: 打包与贴标
+    description: |
+      完成货物打包、贴标及货运单证准备。
+  BC-2460.30.30:
+    name: 发运与装载
+    description: |
+      完成出库车辆装载及发运确认。
+  BC-2460.40:
+    name: 增值服务管理
+    description: |
+      提供仓内增值服务，如套装组合、联合包装、贴标及配置。
+  BC-2460.40.10:
+    name: 套装与组装服务
+    description: |
+      在仓内开展套装、半成品组装及捆绑组合服务。
+  BC-2460.40.20:
+    name: 联合包装与重新贴标
+    description: |
+      提供联合包装、重新包装及重新贴标服务。
+  BC-2460.40.30:
+    name: 延迟生产与配置
+    description: |
+      提供产品延迟生产配置及定制化服务。
+  BC-2460.50:
+    name: 退货与逆向物流运营管理
+    description: |
+      对退货及逆向物流货物进行收货、分拣及处置。
+  BC-2460.50.10:
+    name: 退货收货与分拣
+    description: |
+      对退回货物进行收货与分类鉴定。
+  BC-2460.50.20:
+    name: 翻新与处置
+    description: |
+      开展翻新、重新包装及处置决策。
+  BC-2460.50.30:
+    name: 逆向物流报废处理
+    description: |
+      对无法修复的退货进行处理、回收及销毁。
+  BC-2460.60:
+    name: 仓库资源管理
+    description: |
+      管理仓库内的劳动力、物料搬运设备、月台及时段运力。
+  BC-2460.60.10:
+    name: 劳动力规划与生产力管理
+    description: |
+      开展班次规划、任务分配及生产力追踪。
+  BC-2460.60.20:
+    name: 物料搬运设备运营
+    description: |
+      运营、分配及维护叉车、输送机及AGV。
+  BC-2460.60.30:
+    name: 月台与时段排程
+    description: |
+      安排进出库月台时段。
+  BC-2460.70:
+    name: 仓储绩效管理
+    description: |
+      计量仓库服务、准确率及吞吐量KPI。
+  BC-2460.70.10:
+    name: 订单周期KPI追踪
+    description: |
+      追踪订单周期、满足率及准确率KPI。
+  BC-2460.70.20:
+    name: 库存准确率报告
+    description: |
+      报告库存准确率及货损情况。
+  BC-2460.70.30:
+    name: 吞吐量与生产力报告
+    description: |
+      报告吞吐量、每小时件数及生产力基准。
+metadata:
+  translator: Claude (zh-Hans automated)
+  generated: 2026-04-29

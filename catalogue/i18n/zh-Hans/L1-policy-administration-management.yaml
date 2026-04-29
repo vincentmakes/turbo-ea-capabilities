@@ -1,0 +1,114 @@
+locale: zh-Hans
+source: L1-policy-administration-management.yaml
+entries:
+  BC-2140:
+    name: 保单管理
+    description: |
+      在效保险合同的签发、批改、中途调整、续保、注销、失效、复效、文件管理及团体/主单管理。
+  BC-2140.10:
+    name: 保单签发管理
+    description: |
+      新保单合同及相关文件的生成、组装和激活。
+  BC-2140.10.10:
+    name: 保单文件生成
+    description: |
+      依据产品模板和已绑定条款生成保单文件。
+  BC-2140.10.20:
+    name: 保单明细与条款组装
+    description: |
+      将保单明细、条款和批单组装成合同。
+  BC-2140.10.30:
+    name: 保单激活
+    description: |
+      激活新保单并通知下游系统。
+  BC-2140.20:
+    name: 保单批改与中途调整
+    description: |
+      批改请求的受理、定价、审批及签发管理。
+  BC-2140.20.10:
+    name: 批改请求受理
+    description: |
+      受理来自投保人和经纪人的批改请求。
+  BC-2140.20.20:
+    name: 批改定价与审批
+    description: |
+      批改定价及在必要时进行承保审批。
+  BC-2140.20.30:
+    name: 批改签发与沟通
+    description: |
+      签发批单文件并向投保人沟通。
+  BC-2140.30:
+    name: 保单续保管理
+    description: |
+      续保资格评估、重新定价、报价生成及不予续保处理。
+  BC-2140.30.10:
+    name: 续保资格评估
+    description: |
+      依据出险经验和承保规则评估续保资格。
+  BC-2140.30.20:
+    name: 续保重新定价
+    description: |
+      按当前报备费率和经验对续保保单重新定价。
+  BC-2140.30.30:
+    name: 续保报价生成
+    description: |
+      生成和发送续保报价给投保人。
+  BC-2140.30.40:
+    name: 不予续保处理
+    description: |
+      不予续保处理，包括通知期限和监管沟通。
+  BC-2140.40:
+    name: 保单注销与失效管理
+    description: |
+      注销处理、保费调整、失效和复效管理。
+  BC-2140.40.10:
+    name: 注销请求处理
+    description: |
+      处理来自投保人、经纪人或保险人的注销请求。
+  BC-2140.40.20:
+    name: 按比例与短期计算
+    description: |
+      注销时按比例和短期费率计算保费调整额。
+  BC-2140.40.30:
+    name: 失效处理
+    description: |
+      欠费失效处理和向投保人通知。
+  BC-2140.40.40:
+    name: 复效处理
+    description: |
+      经承保审核后对失效或注销保单进行复效处理。
+  BC-2140.50:
+    name: 保单文件与档案管理
+    description: |
+      保单文件存储库、法规档案保留及保单审计追踪管理。
+  BC-2140.50.10:
+    name: 保单文件存储库
+    description: |
+      保单文件和相关往来文件的存储库管理。
+  BC-2140.50.20:
+    name: 法规档案保留
+    description: |
+      按保险法规要求保留保单记录。
+  BC-2140.50.30:
+    name: 保单审计追踪维护
+    description: |
+      维护保单变更和决策的不可篡改审计追踪。
+  BC-2140.60:
+    name: 团体与主单管理
+    description: |
+      团体保单设置、证书维护及团体续保周期管理。
+  BC-2140.60.10:
+    name: 团体保单设置
+    description: |
+      为雇主和亲和力方案设置团体和主单合同。
+  BC-2140.60.20:
+    name: 成员与证书维护
+    description: |
+      维护团体成员、证书和被抚养人信息。
+  BC-2140.60.30:
+    name: 团体续保周期管理
+    description: |
+      管理团体续保周期、重新定价和成员重新参保。
+metadata:
+  translator: Claude (zh-Hans automated)
+  generated: 2026-04-29

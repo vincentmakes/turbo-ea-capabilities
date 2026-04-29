@@ -1,0 +1,111 @@
+locale: zh-Hans
+source: L1-customs-trade-compliance-management.yaml
+entries:
+  BC-2480:
+    name: 海关与贸易合规管理
+    description: |
+      管理跨境运输的海关、制裁、原产地及可信商业运营商制度合规，包括关税及间接税确定。
+  BC-2480.10:
+    name: 关税分类管理
+    description: |
+      确定并维护贸易商品的HS Code归类。
+    in_scope:
+      - 按商品及货物确定HS Code
+      - 约束性商品归类决定申请
+    out_of_scope:
+      - 制裁及当事方筛查（BC-2480.40）
+  BC-2480.10.10:
+    name: HS Code确定
+    description: |
+      按商品及货物确定HS Code归类。
+  BC-2480.10.20:
+    name: 归类裁定管理
+    description: |
+      申请并管理约束性关税裁定。
+  BC-2480.10.30:
+    name: 归类数据库维护
+    description: |
+      维护贸易商品的主归类数据库。
+  BC-2480.20:
+    name: 报关管理
+    description: |
+      向海关当局申报进口、出口及过境申报。
+  BC-2480.20.10:
+    name: 进口申报填报
+    description: |
+      准备并申报进口报关单。
+  BC-2480.20.20:
+    name: 出口申报填报
+    description: |
+      准备并申报出口报关单。
+  BC-2480.20.30:
+    name: 过境申报管理
+    description: |
+      申报并核销过境申报，包括TIR及NCTS制度。
+  BC-2480.30:
+    name: 原产地与自贸协定管理
+    description: |
+      依据自贸协定确定并认证优惠原产地资格。
+  BC-2480.30.10:
+    name: 原产地确定
+    description: |
+      确定优惠及非优惠原产地。
+  BC-2480.30.20:
+    name: 自贸协定资格证明文件
+    description: |
+      开具并管理自贸协定原产地证书。
+  BC-2480.30.30:
+    name: 原产地审计追溯
+    description: |
+      维护支持原产地审计的证明材料。
+  BC-2480.40:
+    name: 制裁与禁止当事方筛查管理
+    description: |
+      对当事方、船舶及货物进行制裁名单和禁止当事方名单筛查。
+  BC-2480.40.10:
+    name: 当事方与船舶筛查
+    description: |
+      对客户、收货人及运输工具进行制裁名单筛查。
+  BC-2480.40.20:
+    name: 制裁名单管理
+    description: |
+      维护综合制裁及禁止当事方名单。
+  BC-2480.40.30:
+    name: 扣押与放行处理
+    description: |
+      处理筛查命中、扣押及授权放行。
+  BC-2480.50:
+    name: 可信商业运营商计划管理
+    description: |
+      申请、维护并审计AEO及C-TPAT等可信商业运营商计划。
+  BC-2480.50.10:
+    name: AEO申请与维护
+    description: |
+      开展AEO申请及持续计划维护。
+  BC-2480.50.20:
+    name: C-TPAT计划管理
+    description: |
+      完成C-TPAT注册并符合最低安全标准要求。
+  BC-2480.50.30:
+    name: 海关审计协调
+    description: |
+      协调海关及可信商业运营商审计工作。
+  BC-2480.60:
+    name: 关税与间接税管理
+    description: |
+      确定、缴纳并退回跨境运输所涉关税、间接税及退税。
+  BC-2480.60.10:
+    name: 关税计算
+    description: |
+      计算进出口应缴关税。
+  BC-2480.60.20:
+    name: 间接税确定
+    description: |
+      确定跨境货物流转的VAT、GST及消费税。
+  BC-2480.60.30:
+    name: 关税退税与退款
+    description: |
+      通过退税、缓税及退款制度追偿关税。
+metadata:
+  translator: Claude (zh-Hans automated)
+  generated: 2026-04-29

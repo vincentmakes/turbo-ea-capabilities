@@ -1,0 +1,143 @@
+locale: zh-Hans
+source: L1-point-of-sale-operations-management.yaml
+entries:
+  BC-2320:
+    name: 销售终端运营管理
+    description: |
+      涵盖零售面向顾客的交易层，包括销售录入、支付受理、退款退货、现金管理、POS配置，以及系统中断期间的持续销售能力。
+  BC-2320.10:
+    name: 销售交易管理
+    description: |
+      采集消费者销售交易，包括购物篮组建、扫码、促销应用、税务处理及电子小票。
+    in_scope:
+      - 购物篮组建与商品扫描
+      - 收银台促销与会员积分应用
+      - 税款计算及电子或纸质小票
+    out_of_scope:
+      - 促销设计（BC-440.30）
+      - 电商结账（BC-2330）
+  BC-2320.10.10:
+    name: 商品扫描与购物篮组建
+    description: |
+      在收银台完成商品扫描及购物篮组建，包括称重商品处理。
+  BC-2320.10.20:
+    name: 促销与会员积分应用
+    description: |
+      在销售过程中应用促销、优惠券及会员积分兑换。
+  BC-2320.10.30:
+    name: 销售税与VAT处理
+    description: |
+      在收银台计算销售税、VAT及特定辖区税务规则。
+  BC-2320.10.40:
+    name: 小票与电子小票开具
+    description: |
+      开具纸质及电子小票，包括关联消费者账户。
+  BC-2320.20:
+    name: 支付方式受理管理
+    description: |
+      受理收银台各类支付方式，包括EMV、非接触式支付、移动钱包、礼品卡及其他支付方式，并符合PCI-DSS合规要求。
+  BC-2320.20.10:
+    name: 银行卡与非接触支付受理
+    description: |
+      在零售收银台受理EMV、非接触式及移动钱包支付。
+  BC-2320.20.20:
+    name: 现金与支票受理
+    description: |
+      受理现金、硬币及支票，包括面额处理。
+  BC-2320.20.30:
+    name: 礼品卡与储值卡受理
+    description: |
+      受理和开具礼品卡及储值工具。
+  BC-2320.20.40:
+    name: 其他支付方式受理
+    description: |
+      受理先买后付、二维码及其他非传统支付方式。
+  BC-2320.20.50:
+    name: PCI-DSS合规运营
+    description: |
+      在销售终端以符合PCI-DSS的方式处理持卡人数据。
+  BC-2320.30:
+    name: 退货、退款与换货管理
+    description: |
+      在门店处理消费者退货、退款及换货，包括原支付方式退款、门店积分及跨渠道情形。
+    in_scope:
+      - 门店消费者退货与退款
+      - 门店积分及换货处理
+      - 将线上订单退货至门店的跨渠道退货
+    out_of_scope:
+      - 退回配送中心的逆向物流（BC-520.40.40）
+  BC-2320.30.10:
+    name: 消费者退货受理
+    description: |
+      按退货政策在收银台受理消费者退货。
+  BC-2320.30.20:
+    name: 退款与门店积分开具
+    description: |
+      将退款退回原支付方式或开具门店积分。
+  BC-2320.30.30:
+    name: 换货交易处理
+    description: |
+      处理等价及不等价换货交易，包括差价结算。
+  BC-2320.30.40:
+    name: 跨渠道退货处理
+    description: |
+      在门店受理线上及其他渠道订单的退货。
+  BC-2320.40:
+    name: POS现金与款项管理
+    description: |
+      通过钱箱管理、保险柜、存款及日终款项对账流程保护收银款项。
+  BC-2320.40.10:
+    name: 收银钱箱管理
+    description: |
+      对收银钱箱进行开启、监控及对账。
+  BC-2320.40.20:
+    name: 门店保险柜与取款运营
+    description: |
+      管理保险柜、日中取款及现金运输准备。
+  BC-2320.40.30:
+    name: 日终款项对账
+    description: |
+      对各类支付方式与POS销售记录进行日终对账。
+  BC-2320.40.40:
+    name: 银行存款准备
+    description: |
+      准备银行存款及现金运输交接。
+  BC-2320.50:
+    name: POS配置管理
+    description: |
+      跨门店资产配置支付方式、税务规则、促销逻辑、外设及收银机行为。
+  BC-2320.50.10:
+    name: 支付方式配置
+    description: |
+      按门店配置受理支付方式、限额及路由规则。
+  BC-2320.50.20:
+    name: 税务规则配置
+    description: |
+      按门店配置税务规则及辖区覆盖设置。
+  BC-2320.50.30:
+    name: 促销引擎配置
+    description: |
+      配置POS促销引擎及优惠优先级规则。
+  BC-2320.50.40:
+    name: POS外设配置
+    description: |
+      配置收银台的电子秤、扫描枪、打印机及PIN输入设备。
+  BC-2320.60:
+    name: POS韧性与离线运营
+    description: |
+      在网络或系统中断期间维持销售连续性，包括离线POS、存储转发及排队管理。
+  BC-2320.60.10:
+    name: 离线POS运营
+    description: |
+      在网络中断时维持POS系统持续运营。
+  BC-2320.60.20:
+    name: 存储转发交易处理
+    description: |
+      在重新联网时存储并转发离线交易数据。
+  BC-2320.60.30:
+    name: 故障期间排队管理
+    description: |
+      在结账系统故障期间管理顾客排队。
+metadata:
+  translator: Claude (zh-Hans automated)
+  generated: 2026-04-29

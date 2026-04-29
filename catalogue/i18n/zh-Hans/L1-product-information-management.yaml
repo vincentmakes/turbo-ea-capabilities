@@ -1,0 +1,104 @@
+locale: zh-Hans
+source: L1-product-information-management.yaml
+entries:
+  BC-2370:
+    name: 产品信息管理
+    description: |
+      管理权威商品属性、营销内容及适配各渠道的产品数据，涵盖商品创建、GS1/GDSN同步直至多渠道分发与内容就绪度管理的全流程。
+  BC-2370.10:
+    name: 商品主数据管理
+    description: |
+      维护商品主属性、GTIN、层级结构与分类体系，构成企业级规范产品记录。
+    in_scope:
+      - 商品创建与属性维护
+      - GTIN、GLN及包装层级标识
+      - 产品分类与分类法（如GS1 GPC）
+    out_of_scope:
+      - 通用主数据治理（BC-610）
+  BC-2370.10.10:
+    name: 商品创建与属性录入
+    description: |
+      创建商品记录并录入属性值。
+  BC-2370.10.20:
+    name: GTIN与标识码分配
+    description: |
+      按GS1规则为各包装层级分配GTIN及标识码。
+  BC-2370.10.30:
+    name: 产品层级与分类体系
+    description: |
+      维护产品层级结构与分类体系（如GS1 GPC）。
+  BC-2370.10.40:
+    name: 商品状态与生命周期管理
+    description: |
+      追踪商品从概念到下架的生命周期状态。
+  BC-2370.20:
+    name: 产品内容创作管理
+    description: |
+      创作营销文案、产品摄影、视频及富媒体内容，将商品记录转化为面向消费者的可销售产品。
+  BC-2370.20.10:
+    name: 营销文案创作
+    description: |
+      按渠道创作产品标题、描述及销售文案。
+  BC-2370.20.20:
+    name: 产品摄影与视频制作
+    description: |
+      制作产品摄影、生活方式图片及视频内容。
+  BC-2370.20.30:
+    name: 富媒体与3D素材制作
+    description: |
+      制作360度、AR及3D产品素材。
+  BC-2370.20.40:
+    name: 内容翻译与本地化
+    description: |
+      针对目标市场对产品内容进行翻译与本地化。
+  BC-2370.30:
+    name: 渠道分发管理
+    description: |
+      将产品内容发布至自有渠道、零售商数据流、平台及交易伙伴，并按渠道要求进行适配。
+  BC-2370.30.10:
+    name: 自有渠道发布
+    description: |
+      将内容发布至自有网站、移动端及门店渠道。
+  BC-2370.30.20:
+    name: 平台数据流分发
+    description: |
+      向第三方平台及聚合商分发产品数据流。
+  BC-2370.30.30:
+    name: 零售商数据流与EDI 832目录
+    description: |
+      向零售交易伙伴提供EDI 832产品目录。
+  BC-2370.40:
+    name: GS1/GDSN数据同步管理
+    description: |
+      通过GDSN数据池、企业注册及接收方订阅，与交易伙伴同步产品主数据。
+  BC-2370.40.10:
+    name: GDSN数据池运营
+    description: |
+      运营GDSN数据池关系并提交数据。
+  BC-2370.40.20:
+    name: 企业与接收方注册
+    description: |
+      在GDSN中注册企业及接收方订阅关系。
+  BC-2370.40.30:
+    name: GDSN同步异常管理
+    description: |
+      处理GDSN同步异常及交易伙伴数据不一致问题。
+  BC-2370.50:
+    name: 产品内容质量管理
+    description: |
+      对内容就绪度评分、完整性计量及渠道专属质量标准符合性进行验证。
+  BC-2370.50.10:
+    name: 内容完整性评分
+    description: |
+      按渠道就绪度要求对内容完整性进行评分。
+  BC-2370.50.20:
+    name: 内容验证与合规
+    description: |
+      验证内容是否符合监管及渠道规则。
+  BC-2370.50.30:
+    name: 内容质量整改
+    description: |
+      为未通过内容质量检查的商品建立整改流程。
+metadata:
+  translator: Claude (zh-Hans automated)
+  generated: 2026-04-29

@@ -1,0 +1,95 @@
+locale: zh-Hans
+source: L1-shipment-visibility-tracking-management.yaml
+entries:
+  BC-2510:
+    name: 货物可视化与追踪管理
+    description: |
+      通过事件采集、状态解析、ETA预测、异常预警及控制塔运营，实现货物端到端可视化。
+  BC-2510.10:
+    name: 事件采集与状态管理
+    description: |
+      从承运商、物联网及运营系统采集货物事件，并转译为标准化状态。
+    in_scope:
+      - EDI 214、IFTSTA及EPCIS事件接入
+      - 物联网及远程信息处理事件采集
+    out_of_scope:
+      - 用于资产状态监控的远程信息处理（BC-2430.40）
+  BC-2510.10.10:
+    name: 承运商事件接入
+    description: |
+      通过EDI及API接入承运商里程碑事件。
+  BC-2510.10.20:
+    name: 物联网与远程信息处理事件采集
+    description: |
+      采集货物级物联网及远程信息处理事件。
+  BC-2510.10.30:
+    name: 手动状态更新采集
+    description: |
+      采集来自驾驶员、代理及合作伙伴的手动状态更新。
+  BC-2510.20:
+    name: 货物追踪管理
+    description: |
+      跨航段、运输方式及合作伙伴解析货物状态，并推送至内部及客户端追踪界面。
+  BC-2510.20.10:
+    name: 货物状态解析
+    description: |
+      从原始事件中解析标准化货物状态。
+  BC-2510.20.20:
+    name: 多航段追踪拼接
+    description: |
+      将多航段、多承运商的运输旅程拼接为单一追踪链。
+  BC-2510.20.30:
+    name: 公开追踪门户运营
+    description: |
+      运营对外追踪门户及客户API。
+  BC-2510.30:
+    name: ETA预测管理
+    description: |
+      计算并持续优化预计到达时间。
+  BC-2510.30.10:
+    name: ETA计算
+    description: |
+      基于班期与里程碑进行确定性ETA计算。
+  BC-2510.30.20:
+    name: 预测性ETA建模
+    description: |
+      利用历史及上下文数据进行预测性ETA建模。
+  BC-2510.30.30:
+    name: ETA偏差预警
+    description: |
+      对ETA与承诺时效的重大偏差发出预警。
+  BC-2510.40:
+    name: 异常与预警管理
+    description: |
+      检测运营异常、通知相关方并追踪异常处理进度。
+  BC-2510.40.10:
+    name: 异常检测
+    description: |
+      基于规则和模型检测运营异常。
+  BC-2510.40.20:
+    name: 相关方通知
+    description: |
+      通知客户、运营团队及合作伙伴。
+  BC-2510.40.30:
+    name: 异常处理追踪
+    description: |
+      追踪异常分类、责任归属及关闭情况。
+  BC-2510.50:
+    name: 控制塔运营管理
+    description: |
+      跨承运商及合作伙伴开展端到端可视化、绩效监控及主动干预协调。
+  BC-2510.50.10:
+    name: 端到端可视化仪表板
+    description: |
+      运营全网络端到端可视化仪表板。
+  BC-2510.50.20:
+    name: 跨承运商绩效监控
+    description: |
+      监控各承运商及合作伙伴的绩效表现。
+  BC-2510.50.30:
+    name: 主动干预协调
+    description: |
+      协调主动干预措施以保障承诺履行。
+metadata:
+  translator: Claude (zh-Hans automated)
+  generated: 2026-04-29

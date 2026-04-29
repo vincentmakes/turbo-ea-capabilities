@@ -1,0 +1,133 @@
+locale: zh-Hans
+source: L1-energy-trading-settlement-management.yaml
+entries:
+  BC-3850:
+    name: 能源交易与结算管理
+    description: |
+      涵盖电力、天然气及环境商品的批发交易，包括日前、日内和平衡时段的市场参与、能源风险管理、排程与申报、容量市场参与，以及在REMIT/EMIR/多德-弗兰克法规体系下的后台结算与监管报告。
+  BC-3850.10:
+    name: 电力批发交易
+    description: |
+      在日前、日内和远期市场开展实物和金融电力的前台交易。
+  BC-3850.10.10:
+    name: 日前市场交易
+    description: |
+      提交并管理日前市场的买入和卖出申报。
+  BC-3850.10.20:
+    name: 日内市场交易
+    description: |
+      针对持仓变化进行连续和拍卖式日内交易。
+  BC-3850.10.30:
+    name: 远期与双边交易
+    description: |
+      用于套期保值和开发的远期实物和双边场外交易。
+  BC-3850.10.40:
+    name: 跨境容量交易
+    description: |
+      交易跨境联络线容量产品。
+  BC-3850.20:
+    name: 能源风险管理
+    description: |
+      对交易组合进行市场、信用和运营风险监测，实施限额管理和压力测试。
+    in_scope:
+      - VaR和收益风险计算
+      - 交易对手信用限额管理
+      - 套期保值有效性测试
+    out_of_scope:
+      - 企业风险管理（BC-120）
+      - 零售客户信用风险（BC-3910）
+  BC-3850.20.10:
+    name: 市场风险监测
+    description: |
+      对交易账簿进行VaR、收益风险和敞口监测。
+  BC-3850.20.20:
+    name: 交易对手信用风险管理
+    description: |
+      管理交易对手信用限额、保证金和敞口监控。
+  BC-3850.20.30:
+    name: 套期保值计划管理
+    description: |
+      针对燃料和电力敞口设计并执行套期保值计划。
+  BC-3850.30:
+    name: 持仓管理与排程
+    description: |
+      汇总交易和实物持仓，向系统运营商和管道运营商提交排程和申报。
+  BC-3850.30.10:
+    name: 交易持仓汇总
+    description: |
+      跨产品、账簿和交易对手汇总持仓。
+  BC-3850.30.20:
+    name: 电力排程申报
+    description: |
+      向输电系统运营商和平衡责任方申报实物电力排程。
+  BC-3850.30.30:
+    name: 天然气申报
+    description: |
+      在输气管道上提交天然气申报和再平衡。
+  BC-3850.40:
+    name: 容量市场参与
+    description: |
+      参与容量市场和电力安全供应机制，包括竞拍策略、资质认定和交付监测。
+  BC-3850.40.10:
+    name: 容量竞拍策略
+    description: |
+      制定容量市场竞拍策略并准备投标文件。
+  BC-3850.40.20:
+    name: 容量提供商资质认定
+    description: |
+      对容量产品的资产资质认定和折减系数管理。
+  BC-3850.40.30:
+    name: 容量交付监测
+    description: |
+      监测压力事件期间的容量交付情况和违约敞口。
+  BC-3850.50:
+    name: 环境商品交易
+    description: |
+      交易和缴销碳排放配额、可再生能源证书、原产地担保及白色证书。
+  BC-3850.50.10:
+    name: 碳排放配额交易
+    description: |
+      交易欧盟排放配额（EUA）、加州碳配额（CCA）及其他合规碳配额。
+  BC-3850.50.20:
+    name: 可再生能源证书交易
+    description: |
+      交易可再生能源证书（REC）、可再生义务证书（ROC）及原产地担保。
+  BC-3850.50.30:
+    name: 白色证书运营
+    description: |
+      交易和缴销节能白色证书。
+  BC-3850.60:
+    name: 交易结算运营
+    description: |
+      完成批发能源交易的后台确认、结算计算、开票和现金管理。
+  BC-3850.60.10:
+    name: 交易确认
+    description: |
+      完成对外和对内交易确认并解决差异。
+  BC-3850.60.20:
+    name: 结算计算
+    description: |
+      按合同计算实物和金融结算金额。
+  BC-3850.60.30:
+    name: 交易开票与现金管理
+    description: |
+      对批发交易现金流进行开票、付款和核对。
+  BC-3850.70:
+    name: 交易监管报告
+    description: |
+      在REMIT、EMIR、MiFID II和多德-弗兰克法规体系下上报批发能源交易。
+  BC-3850.70.10:
+    name: REMIT交易报告
+    description: |
+      向ACER进行REMIT表1和表2批发能源交易报告。
+  BC-3850.70.20:
+    name: EMIR与多德-弗兰克报告
+    description: |
+      按EMIR和多德-弗兰克要求向交易报告库报告衍生品交易。
+  BC-3850.70.30:
+    name: 内幕信息披露
+    description: |
+      按REMIT第4条披露内幕信息。
+metadata:
+  translator: Claude (zh-Hans automated)
+  generated: 2026-04-29

@@ -1,0 +1,95 @@
+locale: zh-Hans
+source: L1-freight-forwarding-brokerage-management.yaml
+entries:
+  BC-2450:
+    name: 货运代理与经纪管理
+    description: |
+      作为货运代理、无船承运人（NVOCC）、货运经纪或报关行，代表货主安排运输，包括多式联运协调及代理网络运营。
+  BC-2450.10:
+    name: 货主报价管理
+    description: |
+      接收货主询价请求，并跨运输方式及承运商出具代理运价报价。
+    in_scope:
+      - 针对货主询价开展多承运商运价查询
+      - 报价有效期与确认追踪
+    out_of_scope:
+      - 承运商侧运价表及运费表管理（BC-2520）
+  BC-2450.10.10:
+    name: 询价需求采集
+    description: |
+      跨渠道采集货主询价需求。
+  BC-2450.10.20:
+    name: 多承运商运价查询
+    description: |
+      查询并比较各底层承运商运价。
+  BC-2450.10.30:
+    name: 报价开具与有效期管理
+    description: |
+      开具约束性及参考性报价，并追踪其有效期。
+  BC-2450.20:
+    name: 承运商采购与分配管理
+    description: |
+      向底层承运商订舱，并管理承运商分配及费用。
+  BC-2450.20.10:
+    name: 承运商选择
+    description: |
+      按批次货物选择底层承运商。
+  BC-2450.20.20:
+    name: 承运商订舱执行
+    description: |
+      向选定承运商订舱。
+  BC-2450.20.30:
+    name: 分配费用优化
+    description: |
+      优化代理在各承运商分配间的费用支出。
+  BC-2450.30:
+    name: 多式联运货代协调
+    description: |
+      协调多航段、多方式运输，包括集拼、拆箱及分单提单操作。
+  BC-2450.30.10:
+    name: 分单提单开具
+    description: |
+      向货主开具代理分单提单。
+  BC-2450.30.20:
+    name: 多航段运输协调
+    description: |
+      协调跨承运商及运输方式的多航段运输。
+  BC-2450.30.30:
+    name: 集拼与拆箱
+    description: |
+      在起运地完成货物集拼，在目的地完成货物拆箱。
+  BC-2450.40:
+    name: 报关行管理
+    description: |
+      代表进口商及出口商提供报关代理服务。
+  BC-2450.40.10:
+    name: 报关单填报
+    description: |
+      代客户填报报关单。
+  BC-2450.40.20:
+    name: 关税与税款计算
+    description: |
+      为客户计算并代付关税及间接税款。
+  BC-2450.40.30:
+    name: 报关进度追踪
+    description: |
+      追踪报关进度及异常问题处理。
+  BC-2450.50:
+    name: 代理网络协调
+    description: |
+      与代理网络中的起运地、目的地及合作代理协调，包括内部结算。
+  BC-2450.50.10:
+    name: 起运地与目的地代理协调
+    description: |
+      与起运地及目的地代理协调业务活动。
+  BC-2450.50.20:
+    name: 内部结算
+    description: |
+      开展代理网络内部及跨代理的货代收入与成本结算。
+  BC-2450.50.30:
+    name: 合作代理绩效管理
+    description: |
+      管理合作代理的服务质量与合规情况。
+metadata:
+  translator: Claude (zh-Hans automated)
+  generated: 2026-04-29
