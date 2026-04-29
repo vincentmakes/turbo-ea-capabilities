@@ -1,0 +1,104 @@
+locale: de
+source: L1-freight-billing-settlement-management.yaml
+entries:
+  BC-2530:
+    name: Frachtabrechnung
+    description: |
+      Ausstellung von Frachtrechungen, Prüfung und Zahlung von Carrier-Rechnungen,
+      Interline- und Pool-Abrechnung, Frachtansprüche und Frachtumsatzbuchhaltung.
+  BC-2530.10:
+    name: Frachtabrechnung-Management
+    description: |
+      Generierung und Verteilung von Fracht-, Nebenentgelt- und Selbstrechnungs-Rechnungen an Kunden.
+    in_scope:
+      - Frachtrechnung-Generierung
+      - Kunden-Selbstabrechnungsabstimmung
+    out_of_scope:
+      - Allgemeine Debitorenbuchhaltungsprozesse (BC-200)
+      - Kundenstrategie Preisgestaltung (BC-440)
+  BC-2530.10.10:
+    name: Frachtrechnung-Generierung
+    description: |
+      Generierung von Frachtrechnungen aus abgeschlossenen Transporten.
+  BC-2530.10.20:
+    name: Nebenentgelt-Rechnung-Generierung
+    description: |
+      Generierung von Nebenentgelt- und Zuschlagsrechnungen.
+  BC-2530.10.30:
+    name: Kunden-Selbstabrechnungs-Koordination
+    description: |
+      Abstimmung von Kunden-Selbstabrechnungsaufstellungen gegen Sendungen.
+  BC-2530.20:
+    name: Frachtprüfung und Zahlungsmanagement
+    description: |
+      Prüfung von Carrier-Rechnungen und Durchführung von Carrier-Zahlungen
+      durch Versender und Spediteure.
+  BC-2530.20.10:
+    name: Carrier-Rechnungsprüfung
+    description: |
+      Prüfung von Carrier-Rechnungen gegen Verträge, Tarife und Sendungen.
+  BC-2530.20.20:
+    name: Vor- und Nachprüfungs-Abstimmung
+    description: |
+      Vor- und Nachprüfungs-Abstimmung von Carrier-Rechnungen.
+  BC-2530.20.30:
+    name: Carrier-Zahlungsdurchführung
+    description: |
+      Durchführung von Carrier-Zahlungen und Überweisungsberichten.
+  BC-2530.30:
+    name: Interline- und Multi-Carrier-Abrechnungsmanagement
+    description: |
+      Abrechnung von Erlösen und Kosten über Interline-Partner, Allianzen und Spediteur-Niederlassungen.
+  BC-2530.30.10:
+    name: Interline-Pro-Rata-Berechnung
+    description: |
+      Berechnung der Interline-Erlöspro-Rata über Partner.
+  BC-2530.30.20:
+    name: IATA-CASS-Abrechnungsbetrieb
+    description: |
+      Betrieb der IATA-CASS-Abrechnung für Luftfracht.
+  BC-2530.30.30:
+    name: Zwischenniederlassungs-Abrechnung
+    description: |
+      Zwischenniederlassungs-Abrechnung von Spediteur-Erlösen und -Kosten.
+  BC-2530.40:
+    name: Frachtanspruchs-Management
+    description: |
+      Entgegennahme, Beurteilung und Abwicklung von Frachtansprüchen unter
+      Transporthaftungsübereinkommen.
+  BC-2530.40.10:
+    name: Anspruchserfassung und -bestätigung
+    description: |
+      Entgegennahme und Bestätigung von Frachtverlust- und Beschädigungsansprüchen.
+  BC-2530.40.20:
+    name: Haftungsbeurteilung
+    description: |
+      Beurteilung der Carrier-Haftung gemäß Haager-Visby-Regeln, Montreal, CMR und COTIF.
+  BC-2530.40.30:
+    name: Anspruchsabwicklung und Rückforderung
+    description: |
+      Abwicklung anerkannter Ansprüche und Kundenzahlung.
+  BC-2530.40.40:
+    name: Anspruchsregress und Subrogation
+    description: |
+      Regress gegen zugrunde liegende Carrier und Subrogation gegen Versicherer.
+  BC-2530.50:
+    name: Frachtumsatzbuchhaltungs-Management
+    description: |
+      Erfassung, Verfolgung und Berichterstattung von Frachterlösen einschließlich
+      nicht fakturierter und zurückgestellter Positionen.
+  BC-2530.50.10:
+    name: Frachterlöserfassung
+    description: |
+      Erfassung von Frachterlösen gemäß geltenden Rechnungslegungsstandards.
+  BC-2530.50.20:
+    name: Nicht fakturierter Erlös-Verfolgung
+    description: |
+      Verfolgung nicht fakturierter und aufgelaufener Frachterlöse.
+  BC-2530.50.30:
+    name: Frachterlös-Berichterstattung
+    description: |
+      Berichterstattung von Frachterlösen an Finanz- und Vertriebsfunktionen.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

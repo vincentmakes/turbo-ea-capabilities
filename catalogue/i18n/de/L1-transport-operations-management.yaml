@@ -1,0 +1,125 @@
+locale: de
+source: L1-transport-operations-management.yaml
+entries:
+  BC-2420:
+    name: Transportbetrieb-Management
+    description: |
+      Multimodale Durchführung von Transportbewegungen von der Abholung über den
+      Fernverkehr, Nahverkehr bis zur Letzte-Meile-Zustellung, einschließlich
+      Reaktion auf betriebliche Störungen.
+  BC-2420.10:
+    name: Disposition-Management
+    description: |
+      Zuweisung von Ladungen, Fahrern, Besatzungen und Ausrüstung für geplante und
+      Ad-hoc-Transportbewegungen.
+    in_scope:
+      - Ladungs-zu-Fahrer- und Ladungs-zu-Fahrzeug-Zuweisung
+      - Ausrüstungspositionierungsanweisungen
+    out_of_scope:
+      - Fahrereinteilung vor der Disposition (BC-2440)
+      - Kapazitätszuweisung nach Vertrag (BC-2400.20)
+  BC-2420.10.10:
+    name: Ladungszuweisung
+    description: |
+      Zuweisung von Ladungen an Fahrzeuge, Schiffe, Flüge oder Zugpfade.
+  BC-2420.10.20:
+    name: Fahrer- und Besatzungsdisposition
+    description: |
+      Disposition qualifizierter Fahrer und Besatzungen für zugewiesene Ladungen.
+  BC-2420.10.30:
+    name: Ausrüstungsdisposition
+    description: |
+      Positionierung von Containern, Trailern und ULDs für zugewiesene Bewegungen.
+  BC-2420.20:
+    name: Fernverkehrs-Betriebsmanagement
+    description: |
+      Langstreckentransport von Fracht zwischen Hubs, Terminals und Gateways über verschiedene Verkehrsträger.
+  BC-2420.20.10:
+    name: Straßen-Fernverkehr-Betrieb
+    description: |
+      Langstrecken-LKW-Transport zwischen Hubs und Terminals.
+  BC-2420.20.20:
+    name: Schienen-Fernverkehr-Betrieb
+    description: |
+      Betrieb von Güterzügen und Blockzug-Services.
+  BC-2420.20.30:
+    name: Seefernverkehr-Betrieb
+    description: |
+      Fahrtbetrieb zwischen Häfen einschließlich Umladestrecken.
+  BC-2420.20.40:
+    name: Luftfernverkehr-Betrieb
+    description: |
+      Betrieb von Frachtflügen und Freighter-Services zwischen Flughäfen.
+  BC-2420.30:
+    name: Abholung und Nahverkehr-Betriebsmanagement
+    description: |
+      Erstmeilenabholungen bei Versendern und Kurzstrecken-Nahverkehr zwischen Terminals,
+      Höfen und Binnenpunkten.
+  BC-2420.30.10:
+    name: Abholungsbetrieb
+    description: |
+      Abholung von Fracht bei Versendern und Konsolidatoren.
+  BC-2420.30.20:
+    name: Container-Nahverkehr-Betrieb
+    description: |
+      Container-Nahverkehr zwischen Hafenterminals, Bahnanlagen und Binnenlagern.
+  BC-2420.30.30:
+    name: Leerausrüstungsbewegung
+    description: |
+      Bewegung leerer Container, Trailer und ULDs zwischen Lagern.
+  BC-2420.40:
+    name: Letzte-Meile-Zustellungs-Betriebsmanagement
+    description: |
+      Letzte-Leg-Zustellung an Empfänger einschließlich Routenplanung, Durchführung und
+      Zustellnachweis.
+  BC-2420.40.10:
+    name: Letzte-Meile-Routenplanung
+    description: |
+      Routenplanung und Sequenzierung von Zustellpunkten und Zeitfenstern.
+  BC-2420.40.20:
+    name: Kundenzustellungsdurchführung
+    description: |
+      Vor-Ort-Zustellung, Unterschriftserfassung und Übergabe an Empfänger.
+  BC-2420.40.30:
+    name: Zustellnachweis
+    description: |
+      Erfassung und Speicherung von Zustellnachweisen.
+  BC-2420.40.40:
+    name: Zustellausnahme-Behandlung
+    description: |
+      Behandlung von Annahmeverweigerungen, Fehlzustellungen und Wiederzustellversuchen.
+  BC-2420.50:
+    name: Betriebsstörungs-Management
+    description: |
+      Erkennung laufender betrieblicher Störungen und Orchestrierung von Wiederherstellungsmaßnahmen.
+  BC-2420.50.10:
+    name: Betriebsvorfall-Erkennung
+    description: |
+      Erkennung von Pannen, Wetterbedingungen, Hafenverzögerungen und anderen Störungen.
+  BC-2420.50.20:
+    name: Umleitung und Wiederherstellung
+    description: |
+      Umleitung von Fracht und Wiederherstellung gestörter Services.
+  BC-2420.50.30:
+    name: Dienstwiederherstellung
+    description: |
+      Wiederherstellung normaler Fahrpläne und Kundenzusagen.
+  BC-2420.60:
+    name: Betriebsleistungs-Management
+    description: |
+      Betriebliche Messung von Pünktlichkeit, Transitzeiten und Servicelevel-Einhaltung.
+  BC-2420.60.10:
+    name: Pünktlichkeits-Tracking
+    description: |
+      Verfolgung pünktlicher Abholung, Abfahrt, Ankunft und Zustellung.
+  BC-2420.60.20:
+    name: Transitzeitüberwachung
+    description: |
+      Überwachung tatsächlicher versus zugesagter Transitzeiten.
+  BC-2420.60.30:
+    name: Betriebs-KPI-Berichterstattung
+    description: |
+      Berichterstattung über Betriebs-KPIs an interne und externe Stakeholder.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

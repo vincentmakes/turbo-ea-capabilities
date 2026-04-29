@@ -1,0 +1,134 @@
+locale: de
+source: L1-saas-tenant-management.yaml
+entries:
+  BC-4230:
+    name: SaaS-Mandanten-Management
+    description: |
+      Bereitstellung, Konfiguration, Isolation, Regionsplatzierung,
+      Identitätsföderation und mandantenspezifischer Datenexport im
+      mandantenfähigen Dienst.
+  BC-4230.10:
+    name: Mandantenbereitstellung und -Lebenszyklus
+    description: |
+      Erstellung, Aussetzung, Stilllegung und Migration von Mandanten
+      im mandantenfähigen Verbund.
+  BC-4230.10.10:
+    name: Mandantenbereitstellung
+    description: |
+      Erstellung neuer Mandanten und Zuteilung zugehöriger Ressourcen.
+  BC-4230.10.20:
+    name: Mandantenaussetzung
+    description: |
+      Aussetzung von Mandanten bei Nichtzahlung, Missbrauch oder
+      vertraglichen Gründen.
+  BC-4230.10.30:
+    name: Mandantenstilllegung
+    description: |
+      Stilllegung von Mandanten einschließlich Datenlöschung oder
+      -rückgabe gemäß Vertrag.
+  BC-4230.10.40:
+    name: Mandantenmigration
+    description: |
+      Migration von Mandanten zwischen Clustern, Shards oder Regionen.
+  BC-4230.20:
+    name: Mandantenkonfigurations-Management
+    description: |
+      Mandantenspezifische Funktionskonfiguration, Branding und
+      Limits oberhalb des gemeinsamen Produktbasiswerts.
+  BC-4230.20.10:
+    name: Mandantenspezifische Funktionskonfiguration
+    description: |
+      Konfiguration von Funktionsoptionen auf Mandantenebene.
+  BC-4230.20.20:
+    name: Mandanten-Branding-Management
+    description: |
+      Mandantenseitiges Branding wie Logos, Farben und
+      benutzerdefinierte Domänen.
+  BC-4230.20.30:
+    name: Mandantenlimit-Management
+    description: |
+      Konfiguration mandantenspezifischer Limits wie Kontingente und
+      Rateobergrenzen.
+  BC-4230.30:
+    name: Mandantenisolations-Management
+    description: |
+      Mechanismen zur Aufrechterhaltung logischer und physischer
+      Isolation zwischen Mandanten über Daten-, Compute- und
+      Zugangspfade hinweg.
+  BC-4230.30.10:
+    name: Mandantendatenisolation
+    description: |
+      Isolation von Mandantendaten durch Partitionierung, Verschlüsselung
+      und Zugriffsbegrenzung.
+  BC-4230.30.20:
+    name: Mandanten-Compute-Isolation
+    description: |
+      Isolation von Mandantenworkloads durch dedizierte oder
+      begrenzte Compute-Grenzen.
+  BC-4230.30.30:
+    name: Mandantenübergreifende Zugangsprävention
+    description: |
+      Kontrollen und Monitoring zur Verhinderung mandantenübergreifenden
+      Daten- und Identitätsübergangs.
+  BC-4230.40:
+    name: Datenhaltungsort und Regionsplatzierung
+    description: |
+      Zuweisung von Mandanten zu Regionen, Durchsetzung von
+      Datenhaltungsverpflichtungen und Verwaltung der
+      regionsübergreifenden Replikations-Policy.
+  BC-4230.40.10:
+    name: Mandantenregions-Zuweisung
+    description: |
+      Zuweisung von Mandanten zu Regionen entsprechend Vertrag
+      und Regulierung.
+  BC-4230.40.20:
+    name: Datenhaltungsort-Durchsetzung
+    description: |
+      Durchsetzung von Datenhaltungsgrenzen zur Laufzeit.
+  BC-4230.40.30:
+    name: Regionsübergreifende Replikations-Policy
+    description: |
+      Policy zur Steuerung regionsübergreifender Replikation für
+      Resilienz und Zugang.
+  BC-4230.50:
+    name: Mandantenidentitätsföderation
+    description: |
+      Föderation mandantenspezifischer Identitätsprovider und
+      Lebenszyklus von Mandantennutzerkonten via Single Sign-On und SCIM.
+  BC-4230.50.10:
+    name: Mandanten-SSO-Konfiguration
+    description: |
+      Konfiguration von Single Sign-On zwischen mandantenseitigen
+      Identitätsprovidern und dem Dienst.
+  BC-4230.50.20:
+    name: SCIM-basierte Nutzerbereitstellung
+    description: |
+      Lebenszyklus von Mandantennutzerkonten über SCIM oder
+      gleichwertige Bereitstellungsprotokolle.
+  BC-4230.50.30:
+    name: Mandantenidentitätsprovider-Onboarding
+    description: |
+      Onboarding und Validierung mandantenseitiger Identitätsprovider.
+  BC-4230.60:
+    name: Mandantensicherung und -Export-Management
+    description: |
+      Mandantenspezifische Datenexport-, Löschungs- und
+      Wiederherstellungsfunktionen für Mandanten und Administratoren.
+  BC-4230.60.10:
+    name: Mandantendaten-Export
+    description: |
+      Export von Mandantendaten in maschinenlesbarem Format auf
+      Anfrage oder vertraglich.
+  BC-4230.60.20:
+    name: Mandantendaten-Löschung
+    description: |
+      Nachweisbare Löschung von Mandantendaten bei Kündigung
+      oder Anfrage.
+  BC-4230.60.30:
+    name: Mandantensicherungs-Wiederherstellung
+    description: |
+      Wiederherstellung von Mandantendaten aus Sicherungen auf
+      Mandanten- oder Betreiberanfrage.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

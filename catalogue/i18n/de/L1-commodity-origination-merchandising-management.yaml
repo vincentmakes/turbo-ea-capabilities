@@ -1,0 +1,148 @@
+locale: de
+source: L1-commodity-origination-merchandising-management.yaml
+entries:
+  BC-3570:
+    name: Rohwarenhandel und Warenvermarktung
+    description: |
+      Originierungsprogramme mit Landwirten, Rohwarenkontraktierung,
+      Brückenwaage und Beprobung, physische Lagerpositionen,
+      Kassa- und Basis-Handel, Absicherung und Abwicklung für
+      Getreide, Ölsaaten, Softs, Nutzvieh und Molkerei-Rohwaren.
+  BC-3570.10:
+    name: Originierungsprogramm-Management
+    description: |
+      Landwirtschaftskontraktierung, Erzeuger-Beziehungsmanagement
+      und Originierungsprognose für das Versorgungsbuch.
+  BC-3570.10.10:
+    name: Landwirtschaftskontraktierungs-Programme
+    description: |
+      Design und Durchführung regionaler Landwirtschafts-
+      kontraktierungsprogramme.
+  BC-3570.10.20:
+    name: Erzeuger-Beziehungsmanagement
+    description: |
+      Erzeuger-Beziehungsmanagement getrennt von allgemeinem CRM.
+  BC-3570.10.30:
+    name: Originierungsprognose
+    description: |
+      Prognose erwarteter Originierungsvolumina nach Region und Kultur.
+  BC-3570.20:
+    name: Rohwarenkontrakt-Management
+    description: |
+      Ausgabe und Leistungsverfolgung von Termin-, Produktions-
+      und Deferred-Pricing-Rohwarenkontrakten.
+    in_scope:
+      - Terminkontrakte mit Landwirten und Gegenparteien
+      - Produktionskontrakte mit Qualitätsspezifikationen
+      - Kontraktleistungsverfolgung
+    out_of_scope:
+      - Generelles rechtliches Vertragsmanagement (BC-150)
+  BC-3570.20.10:
+    name: Terminkontrakt-Ausgabe
+    description: |
+      Ausgabe von Festpreis- und Basis-Terminkontrakten.
+  BC-3570.20.20:
+    name: Produktionskontrakt-Management
+    description: |
+      Management von Produktionskontrakten mit Qualitäts- und
+      Lieferspezifikationen.
+  BC-3570.20.30:
+    name: Kontraktleistungs-Verfolgung
+    description: |
+      Verfolgung gelieferter Tonnen gegen Kontraktleistung.
+  BC-3570.30:
+    name: Eingangsbrückenwaage und -Beprobung
+    description: |
+      Brückenwaagenbetrieb, Qualitätsbeprobung und -Klassifizierung
+      sowie Annahmeverrechnungsberechnung am Annahmeort.
+  BC-3570.30.10:
+    name: Brückenwaagen-Betrieb
+    description: |
+      Ein- und Ausgangsbrückenwaagenbetrieb und Ticketausstellung.
+  BC-3570.30.20:
+    name: Qualitätsbeprobung und -Klassifizierung
+    description: |
+      Annahmebeprobung und -Klassifizierung gegen Handels-
+      spezifikationen.
+  BC-3570.30.30:
+    name: Annahmeverrechnungs-Berechnung
+    description: |
+      Berechnung von Qualitätsabschlägen und -Zuschlägen bei
+      der Annahme.
+  BC-3570.40:
+    name: Rohwarenbestand-Positions-Management
+    description: |
+      Verfolgung physischer Rohwarenpositionen, Mischentscheidungen
+      und In-Transit-Positionen über das Netzwerk.
+  BC-3570.40.10:
+    name: Physische Positions-Verfolgung
+    description: |
+      Verfolgung von Long- und Short-Positionen nach Standort und Klasse.
+  BC-3570.40.20:
+    name: Qualitätsmisch-Entscheidungen
+    description: |
+      Mischentscheidungen zur Erfüllung vertraglicher
+      Qualitätsspezifikationen.
+  BC-3570.40.30:
+    name: In-Transit-Positions-Verfolgung
+    description: |
+      Verfolgung von Schiff-, Bahn- und Lastwagen-In-Transit-Positionen.
+  BC-3570.50:
+    name: Rohwarenhandels-Betrieb
+    description: |
+      Kassa- und Basis-Handel, Spot-Verkaufsdurchführung und
+      Cross-Commodity-Spread-Management in physischen Rohwarenbüchern.
+  BC-3570.50.10:
+    name: Kassa- und Basis-Handel
+    description: |
+      Handel von Kassa- und Basis-Positionen in physischen Rohwaren.
+  BC-3570.50.20:
+    name: Spot-Verkaufs-Durchführung
+    description: |
+      Durchführung von Spot-Verkäufen an Verarbeiter und Exporteure.
+  BC-3570.50.30:
+    name: Cross-Commodity-Spread-Management
+    description: |
+      Management von Cross-Commodity-Spreads wie Crush- und
+      Crack-Margen.
+  BC-3570.60:
+    name: Absicherung und Risikopositions-Management
+    description: |
+      Durchführung und Abstimmung von Futures- und Options-
+      Absicherungen gegen physische Rohwarenpositionen.
+  BC-3570.60.10:
+    name: Futures-Absicherungs-Durchführung
+    description: |
+      Durchführung von Futures-Absicherungen an regulierten Börsen.
+  BC-3570.60.20:
+    name: Options-Absicherungs-Durchführung
+    description: |
+      Durchführung von Options-Absicherungen zur Steuerung des
+      Preisschwanzrisikos.
+  BC-3570.60.30:
+    name: Absicherungspositions-Abstimmung
+    description: |
+      Abstimmung von Absicherungspositionen gegen zugrundeliegende
+      physische Exposures.
+  BC-3570.70:
+    name: Rohwarenabwicklung und -Preisstellung
+    description: |
+      Endpreisstellung, Abrechnungsnachweis-Ausgabe und Klärung
+      von Qualitätsansprüchen mit Gegenparteien.
+  BC-3570.70.10:
+    name: Endpreisstellung und Abschlagsberechnung
+    description: |
+      Endpreisstellung einschließlich Qualitätsabschlag- und
+      -Zuschlaganwendung.
+  BC-3570.70.20:
+    name: Abrechnungsnachweis-Ausgabe
+    description: |
+      Ausgabe von Abrechnungsnachweisen an Landwirte und Gegenparteien.
+  BC-3570.70.30:
+    name: Qualitätsanspruchs-Klärung
+    description: |
+      Klärung von Qualitätsansprüchen mit Landwirten, Käufern
+      und Schiedsorganen.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

@@ -1,0 +1,109 @@
+locale: de
+source: L1-freight-capacity-management.yaml
+entries:
+  BC-2400:
+    name: Frachtkapazitäts-Management
+    description: |
+      Verkauf, Zuweisung und Yield Management von Transportkapazitäten über Schiffsfahrten,
+      Flüge, LKW- und Eisenbahnstrecken sowie Ausrüstungspools.
+  BC-2400.10:
+    name: Kapazitätsinventar-Management
+    description: |
+      Pflege der verfügbaren Transportkapazität nach Verkehrsträger, Strecke, Fahrplan und
+      Ausrüstungstyp als Grundlage für Zuweisung und Buchung.
+    in_scope:
+      - Kapazitätsdatensätze für Schiffe, Flüge, Fahrzeuge und Schienenfahrzeuge
+      - Ausrüstungspool-Kapazität (Container, Trailer, ULDs)
+      - Fahrplangebundene Streckenkapazität
+    out_of_scope:
+      - Langfristiges Netzwerk- und Fahrplandesign (BC-2410)
+      - Buchungs- und Reservierungsannahme (BC-2400.40)
+  BC-2400.10.10:
+    name: Schiff- und Beförderungsmittel-Kapazitätsinventar
+    description: |
+      Erfassung von Nutzlast-, Deck- und Kabinenkapazität je Schiff, Flugzeug, Zug oder Fahrzeug.
+  BC-2400.10.20:
+    name: Ausrüstungskapazitäts-Inventar
+    description: |
+      Inventar verfügbarer Container, Trailer, Chassis und ULDs nach Standort und Zustand.
+  BC-2400.10.30:
+    name: Strecken- und Fahrplankapazität
+    description: |
+      Kapazität je geplantem Service auf einer Strecke einschließlich Anschlussstrecken.
+  BC-2400.10.40:
+    name: Kapazitätspooling und Slot-Tausch
+    description: |
+      Gebündelte Kapazitäten über Allianzen und Slot-Tausch-Vereinbarungen mit Partnerreedereien.
+  BC-2400.20:
+    name: Kapazitätszuweisungs-Management
+    description: |
+      Zuweisung verfügbarer Kapazitäten auf Kundenverträge, Marktsegmente und Spot-Nachfrage.
+  BC-2400.20.10:
+    name: Vertragskapazitäts-Zuweisung
+    description: |
+      Zuweisung von Kapazitäten an Kunden mit Mindestmengen-Verpflichtungen und Namenkonten.
+  BC-2400.20.20:
+    name: Spotmarkt-Kapazitätszuweisung
+    description: |
+      Zuweisung von Kapazitäten, die für Spotmarkt-Buchungskanäle freigegeben werden.
+  BC-2400.20.30:
+    name: Kapazitäts-Umzuweisung und Rückgewinnung
+    description: |
+      Neuzuweisung ungenutzter oder zurückgewonnener Kapazitäten vor Annahmeschluss.
+  BC-2400.30:
+    name: Yield- und Revenue-Management
+    description: |
+      Optimierung des Umsatzes je Kapazitätseinheit durch Preis-, Mix- und Overbooking-Entscheidungen.
+  BC-2400.30.10:
+    name: Kapazitätsnachfrage-Prognose
+    description: |
+      Prognose von Buchungen, No-Shows und Entladerisiken je Service.
+  BC-2400.30.20:
+    name: Yield-Optimierung
+    description: |
+      Optimierung des Tarif- und Ratenklassen-Mix zur Maximierung des Yields je Tonne, Slot oder TEU.
+  BC-2400.30.30:
+    name: Overbooking-Management
+    description: |
+      Festlegung und Überwachung von Overbooking-Grenzen und Entladerisiken.
+  BC-2400.30.40:
+    name: Umsatzmix-Management
+    description: |
+      Steuerung des Umsatzmix zwischen Vertrags-, Spot- und Nebenerlösen.
+  BC-2400.40:
+    name: Buchungs- und Reservierungsmanagement
+    description: |
+      Annahme, Änderung und Stornierung von Kapazitätsbuchungen gegenüber
+      veröffentlichten Fahrplänen und Angeboten.
+  BC-2400.40.10:
+    name: Kapazitätsbuchung
+    description: |
+      Buchungsannahme gegen verfügbare Kapazitäten und Ratengültigkeit.
+  BC-2400.40.20:
+    name: Buchungsänderung und -stornierung
+    description: |
+      Buchungsänderungen, Umladungen und Stornierungen einschließlich No-Show-Gebühren.
+  BC-2400.40.30:
+    name: Stand-by- und Wartelisten-Management
+    description: |
+      Verwaltung von Stand-by- und wartelistierten Frachten für bestätigte Kapazitäten.
+  BC-2400.50:
+    name: Kapazitätsleistungs-Management
+    description: |
+      Überwachung von Auslastungsgrad, Füllgrad und Nutzung zur Steuerung von
+      Kapazitätsmix-Entscheidungen und Netzwerkanpassungen.
+  BC-2400.50.10:
+    name: Auslastungsgrad-Analyse
+    description: |
+      Analyse des Auslastungsgrads nach Service, Strecke und Segment.
+  BC-2400.50.20:
+    name: Kapazitätsauslastungs-Berichterstattung
+    description: |
+      Berichterstattung über Kapazitätsauslastung an Vertriebs- und Betriebsteams.
+  BC-2400.50.30:
+    name: Kapazitätsleistungsverbesserung
+    description: |
+      Maßnahmen zur Verbesserung des Umsatzes je Slot und Reduzierung von Leerfahrten.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

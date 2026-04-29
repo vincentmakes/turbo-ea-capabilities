@@ -1,0 +1,133 @@
+locale: de
+source: L1-citizen-constituent-service-management.yaml
+entries:
+  BC-3220:
+    name: Bürger- und Behördendienstleistungen
+    description: |
+      Mehrkanalige Erbringung staatlicher Dienstleistungen für Bürger, Einwohner und
+      Wahlkreisangehörige, einschließlich Identitätsauthentifizierung, Fallmanagement,
+      Anfragen, Widersprüche und Bürgerbeteiligung.
+  BC-3220.10:
+    name: Dienstleistungskanal-Betrieb
+    description: |
+      Betrieb von persönlichen, telefonischen, postalischen, digitalen und mobilen Kanälen,
+      über die Bürger staatliche Dienstleistungen in Anspruch nehmen.
+    in_scope:
+      - One-Stop-Shop- und Walk-in-Dienstleistungszentren
+      - Kontaktzentrum- und Telefonie-Kanäle
+      - Digitale Portale und Mobile-Apps
+      - Postalische und formularbasierte Kanäle
+    out_of_scope:
+      - Bürger-Identitätsverifikation (durch Bürgeridentität und Authentifizierung abgedeckt)
+  BC-3220.10.10:
+    name: One-Stop-Shop-Betrieb
+    description: |
+      Betrieb persönlicher Dienstleistungszentren und One-Stop-Schalter über Behörden.
+  BC-3220.10.20:
+    name: Kontaktzentrum-Betrieb
+    description: |
+      Betrieb behördenübergreifender Telefon- und Chat-Kontaktzentren.
+  BC-3220.10.30:
+    name: Digitales Dienstleistungsportal-Betrieb
+    description: |
+      Betrieb bürgerseitiger digitaler Portale und mobiler Dienstleistungs-Apps.
+  BC-3220.10.40:
+    name: Dienstleistungszugänglichkeits-Sicherung
+    description: |
+      WCAG- und Section-508-Zugänglichkeitssicherung über Dienstleistungskanäle und Unterstützungstechnologie.
+  BC-3220.20:
+    name: Bürgeridentität und Authentifizierung
+    description: |
+      Etablierung und Verifikation digitaler Bürgeridentitäten, Anmeldedaten
+      und Sicherheitsniveaus für den staatlichen Dienstleistungszugang.
+  BC-3220.20.10:
+    name: Identitätsprüfung
+    description: |
+      Identitätsprüfung nach NIST 800-63 IAL- oder eIDAS-Sicherheitsniveaus.
+  BC-3220.20.20:
+    name: Anmeldedaten-Ausstellung
+    description: |
+      Ausstellung von Authentifikatoren und Anmeldedaten für staatlichen Zugang.
+  BC-3220.20.30:
+    name: Authentifizierungs-Betrieb
+    description: |
+      Tägliche Authentifizierung von Bürgern gegenüber staatlichen Diensten.
+  BC-3220.20.40:
+    name: Föderierung und grenzüberschreitendes Vertrauen
+    description: |
+      Identitätsföderierung über Behörden und grenzüberschreitendes Vertrauen nach eIDAS oder Äquivalent.
+  BC-3220.30:
+    name: Bürger-Fallmanagement
+    description: |
+      End-to-End-Falllebenszyklus-Management von Bürgerinteraktionen über
+      Behörden und Programme hinweg.
+  BC-3220.30.10:
+    name: Falleingang und Triage
+    description: |
+      Eingang, Klassifikation und Triage von Bürgerfällen.
+  BC-3220.30.20:
+    name: Fall-Weiterleitung und Zuweisung
+    description: |
+      Weiterleitung von Fällen an Sachbearbeiter und Behörden nach Zuständigkeit und Regeln.
+  BC-3220.30.30:
+    name: Fallfortschritt und -lösung
+    description: |
+      Fortschritt von Fällen durch Dienstleistungs-Workflows bis zur Lösung.
+  BC-3220.30.40:
+    name: Fallabschluss und Qualitätsprüfung
+    description: |
+      Abschluss, Qualitätsprüfung und Nachbearbeitung abgeschlossener Fälle.
+  BC-3220.40:
+    name: Dienstleistungsanfragen und Auskunftsbearbeitung
+    description: |
+      Bearbeitung von Anfragen, Ersuchen, Beschwerden und Informationsfreiheits-
+      Einreichungen über alle Kanäle.
+  BC-3220.40.10:
+    name: Allgemeine Auskunftsbearbeitung
+    description: |
+      Bearbeitung allgemeiner Anfragen und Informationsersuchen.
+  BC-3220.40.20:
+    name: Beschwerdebearbeitung
+    description: |
+      Eingang, Untersuchung und Lösung von Bürgerbeschwerden.
+  BC-3220.40.30:
+    name: Informationsfreiheits-Anfragen
+    description: |
+      Bearbeitung von Informationsfreiheits- und Akteneinsichtsersuchen.
+  BC-3220.50:
+    name: Widerspruchs- und Ombudsmann-Management
+    description: |
+      Unabhängige Verwaltungsüberprüfung von Behördenentscheidungen einschließlich Widersprüchen,
+      Verwaltungsgerichten und Ombudsmann-Untersuchungen.
+  BC-3220.50.10:
+    name: Verwaltungswiderspruchs-Eingang
+    description: |
+      Eingang und Validierung von Verwaltungswidersprüchen gegen Behördenentscheidungen.
+  BC-3220.50.20:
+    name: Widerspruchsanhörung und -entscheidung
+    description: |
+      Anhörung von Widersprüchen und Entscheidungsfindung durch Überprüfungsbehörden.
+  BC-3220.50.30:
+    name: Ombudsmann-Untersuchung
+    description: |
+      Unabhängige Ombudsmann-Untersuchung von Missverwaltungsbeschwerden.
+  BC-3220.60:
+    name: Bürgerbeteiligung und Partizipation
+    description: |
+      Wechselseitiger Austausch mit Bürgern durch Partizipationsplattformen,
+      Petitionen und Feedback-Kanäle.
+  BC-3220.60.10:
+    name: Petitions- und Bürgerinitiative-Bearbeitung
+    description: |
+      Eingang, Validierung und Reaktion auf Petitionen und bürgerinitiierte Vorschläge.
+  BC-3220.60.20:
+    name: Partizipationsplattform-Betrieb
+    description: |
+      Betrieb von partizipativen Haushalts-, Beratungs- und Co-Creation-Plattformen.
+  BC-3220.60.30:
+    name: Bürgerzufriedenheitsmessung
+    description: |
+      Messung von Bürgerzufriedenheit, Vertrauen und Serviceerfahrung.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

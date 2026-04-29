@@ -1,0 +1,113 @@
+locale: de
+source: L1-customs-trade-compliance-management.yaml
+entries:
+  BC-2480:
+    name: Zoll- und Handelskonformität
+    description: |
+      Einhaltung von Zoll-, Sanktions-, Ursprungs- und Trusted-Trader-Regelungen bei
+      grenzüberschreitenden Bewegungen einschließlich Zoll- und indirekter Steuerermittlung.
+  BC-2480.10:
+    name: Zolltarifklassifizierungs-Management
+    description: |
+      Ermittlung und Pflege von HS-Klassifikationen für gehandelte Waren.
+    in_scope:
+      - HS-Code-Ermittlung je Artikel und Sendung
+      - Verbindliche Zolltarifauskunft
+    out_of_scope:
+      - Sanktionen und Parteiüberprüfung (BC-2480.40)
+  BC-2480.10.10:
+    name: HS-Code-Ermittlung
+    description: |
+      Ermittlung von HS-Codes je Artikel und Sendung.
+  BC-2480.10.20:
+    name: Klassifizierungsentscheidungs-Management
+    description: |
+      Beantragung und Verwaltung verbindlicher Zolltarifauskünfte.
+  BC-2480.10.30:
+    name: Klassifizierungsdatenbank-Pflege
+    description: |
+      Pflege von Master-Klassifizierungsdatenbanken für gehandelte Artikel.
+  BC-2480.20:
+    name: Zollanmeldungs-Management
+    description: |
+      Einreichung von Einfuhr-, Ausfuhr- und Durchfuhranmeldungen bei Zollbehörden.
+  BC-2480.20.10:
+    name: Einfuhranmeldungs-Einreichung
+    description: |
+      Vorbereitung und Einreichung von Einfuhranmeldungen.
+  BC-2480.20.20:
+    name: Ausfuhranmeldungs-Einreichung
+    description: |
+      Vorbereitung und Einreichung von Ausfuhranmeldungen.
+  BC-2480.20.30:
+    name: Durchfuhranmeldungs-Management
+    description: |
+      Einreichung und Erledigung von Durchfuhranmeldungen einschließlich TIR und NCTS.
+  BC-2480.30:
+    name: Ursprungs- und Freihandelsabkommens-Management
+    description: |
+      Ermittlung und Zertifizierung des präferenziellen Ursprungs im Rahmen von Freihandelsabkommen.
+  BC-2480.30.10:
+    name: Ursprungsermittlung
+    description: |
+      Ermittlung des präferenziellen und nichtpräferenziellen Ursprungs.
+  BC-2480.30.20:
+    name: FTA-Qualifikationsdokumentation
+    description: |
+      Ausstellung und Verwaltung von FTA-Ursprungszeugnissen.
+  BC-2480.30.30:
+    name: Ursprungs-Prüfpfad
+    description: |
+      Pflege von Nachweisen für Ursprungsaudits.
+  BC-2480.40:
+    name: Sanktionen- und Denied-Party-Screening-Management
+    description: |
+      Überprüfung von Parteien, Schiffen und Waren gegen Sanktions- und Denied-Party-Listen.
+  BC-2480.40.10:
+    name: Partei- und Schiffsüberprüfung
+    description: |
+      Überprüfung von Kunden, Empfängern und Transportmitteln gegen Sanktionslisten.
+  BC-2480.40.20:
+    name: Sanktionslisten-Management
+    description: |
+      Pflege konsolidierter Sanktions- und Denied-Party-Listen.
+  BC-2480.40.30:
+    name: Sperrung und Freigabe-Verarbeitung
+    description: |
+      Verarbeitung von Screening-Treffern, Sperren und autorisierten Freigaben.
+  BC-2480.50:
+    name: Trusted-Trader-Programm-Management
+    description: |
+      Beantragung, Pflege und Audit von Trusted-Trader-Programmen wie AEO und C-TPAT.
+  BC-2480.50.10:
+    name: AEO-Antragstellung und Pflege
+    description: |
+      AEO-Antragstellung und laufende Programmplege.
+  BC-2480.50.20:
+    name: C-TPAT-Programm-Management
+    description: |
+      C-TPAT-Einschreibung und Einhaltung der Mindestsicherheitskriterien.
+  BC-2480.50.30:
+    name: Zollprüfungs-Koordination
+    description: |
+      Koordination von Zoll- und Trusted-Trader-Prüfungen.
+  BC-2480.60:
+    name: Zoll- und indirektes Steuer-Management
+    description: |
+      Ermittlung, Zahlung und Rückerstattung von Zöllen, indirekten Steuern und
+      Erstattungen bei grenzüberschreitenden Bewegungen.
+  BC-2480.60.10:
+    name: Zollberechnung
+    description: |
+      Berechnung der auf Einfuhren und Ausfuhren anfallenden Zölle.
+  BC-2480.60.20:
+    name: Indirekte Steuerermittlung
+    description: |
+      Ermittlung von Mehrwertsteuer, GST und Verbrauchsteuer bei grenzüberschreitenden Flüssen.
+  BC-2480.60.30:
+    name: Zollrückerstattung und Rückforderung
+    description: |
+      Rückforderung von Zöllen durch Drawback-, Aussetzungs- und Erstattungsregelungen.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

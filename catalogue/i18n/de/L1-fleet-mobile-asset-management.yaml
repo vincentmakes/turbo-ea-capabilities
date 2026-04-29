@@ -1,0 +1,128 @@
+locale: de
+source: L1-fleet-mobile-asset-management.yaml
+entries:
+  BC-2430:
+    name: Flotten- und Mobile-Betriebsmittel-Management
+    description: |
+      Bereitstellung, Instandhaltung, Auslastung und Entsorgung von Fahrzeugen, Schiffen,
+      Flugzeugen, Schienenfahrzeugen und gepoolten Betriebsmitteln wie Containern, Trailern
+      und ULDs.
+  BC-2430.10:
+    name: Flottenakquisition und -entsorgung
+    description: |
+      Spezifikation, Akquisition, Leasing, Charterung und Entsorgung am Ende des Lebenszyklus
+      mobiler Betriebsmittel.
+    in_scope:
+      - Beschaffung von Fahrzeugen, Schiffen, Flugzeugen und Schienenfahrzeugen
+      - Nass-, Trocken- und Bareboat-Charter-Vereinbarungen
+      - Entscheidungen über Entsorgung und Wiederverkauf am Lebensende
+    out_of_scope:
+      - Allgemeine Beschaffung von Nicht-Produktionsgütern (BC-500)
+      - Anlagebuchhaltung (BC-200)
+  BC-2430.10.10:
+    name: Flottenspezifikation und -beschaffung
+    description: |
+      Spezifikation und Beschaffung neuer Flottenassets.
+  BC-2430.10.20:
+    name: Leasing- und Charter-Management
+    description: |
+      Operating-Leasing, Finanzierungsleasing und Charter-Vereinbarungen für Flottenassets.
+  BC-2430.10.30:
+    name: Lebensende-Entsorgung
+    description: |
+      Wiederverkauf, Verschrottung und Recycling ausgemusterter Flottenassets.
+  BC-2430.20:
+    name: Flotten-Instandhaltungs-Management
+    description: |
+      Präventive, korrektive und Großinstandhaltung von Fahrzeugen, Schiffen,
+      Flugzeugen und Schienenfahrzeugen.
+  BC-2430.20.10:
+    name: Präventive Instandhaltungsplanung
+    description: |
+      Zeit- und zustandsbasierte Präventive-Instandhaltungs-Planung.
+  BC-2430.20.20:
+    name: Korrektive Instandhaltungsdurchführung
+    description: |
+      Reparatur von Pannen und korrektive Arbeiten an mobilen Betriebsmitteln.
+  BC-2430.20.30:
+    name: Pflichtinspektion-Compliance
+    description: |
+      Einhaltung gesetzlicher Inspektionen und Lufttüchtigkeits- oder Seetüchtigkeitsanweisungen.
+  BC-2430.20.40:
+    name: Großinstandhaltung und Überholung
+    description: |
+      Generalüberholung, Trockendock und schwere Inspektionsereignisse.
+  BC-2430.30:
+    name: Ausrüstungspool-Management
+    description: |
+      Verwaltung gepoolter Container, Trailer, Chassis und ULDs über Lager, Kunden und Partner.
+  BC-2430.30.10:
+    name: Container-Pool-Management
+    description: |
+      Verfolgung und Ausbalancierung von Container-Flotten über Lager.
+  BC-2430.30.20:
+    name: Trailer- und Chassis-Pool-Management
+    description: |
+      Pool-Management von Trailern und Chassis einschließlich Gray-Pool-Sharing.
+  BC-2430.30.30:
+    name: ULD-Pool-Management
+    description: |
+      Verfolgung, Reparatur und Ausbalancierung von ULDs über Stationen.
+  BC-2430.30.40:
+    name: Leerausrüstungs-Repositionierungsbetrieb
+    description: |
+      Durchführung von Leer-Repositionierungsbewegungen zwischen Überschuss- und Defizitlagern.
+  BC-2430.40:
+    name: Flotten-Telematik und -Überwachung
+    description: |
+      Kontinuierliche Überwachung von Assetposition, -zustand und Fahrverhalten
+      zur Information von Instandhaltung und Betrieb.
+  BC-2430.40.10:
+    name: Flotten-Telematik-Betrieb
+    description: |
+      Betrieb von Telematikplattformen zur Erfassung von Positions- und Motordaten.
+  BC-2430.40.20:
+    name: Asset-Zustandsüberwachung
+    description: |
+      Zustandsüberwachung mobiler Betriebsmittel einschließlich Kühlketten- und Frachtsstatus.
+  BC-2430.40.30:
+    name: Fahrerverhaltens-Überwachung
+    description: |
+      Überwachung von Fahrverhaltens-Signalen wie Hartem Bremsen und Geschwindigkeitsübertretungen.
+  BC-2430.50:
+    name: Flotten-Compliance und -Zertifizierung
+    description: |
+      Registrierung, Zertifizierung und Emissionskonformität der Flottenassets
+      bei Behörden und Klassifizierungsgesellschaften.
+  BC-2430.50.10:
+    name: Fahrzeug-, Schiff- und Flugzeugregistrierung
+    description: |
+      Erst- und Folgeregistrierung bei nationalen und internationalen Behörden.
+  BC-2430.50.20:
+    name: Gesetzliche Inspektion und Zertifizierung
+    description: |
+      Klassen-, Lufttüchtigkeits- und Straßenzulassungszertifikate und Audits.
+  BC-2430.50.30:
+    name: Emissionen und Umwelt-Compliance
+    description: |
+      Einhaltung von Emissionsvorschriften für Fahrzeuge, Schiffe und Flugzeuge.
+  BC-2430.60:
+    name: Flottenauslastung und Leistungsmanagement
+    description: |
+      Messung von Assetauslastung, Umlaufzeiten und Gesamtbetriebskosten
+      zur Steuerung von Flottenentscheidungen.
+  BC-2430.60.10:
+    name: Asset-Auslastungs-Berichterstattung
+    description: |
+      Berichterstattung über Auslastung nach Assettyp, Strecke und Lager.
+  BC-2430.60.20:
+    name: Ausrüstungs-Umlaufzeit-Analyse
+    description: |
+      Analyse von Container-, Trailer- und ULD-Umlaufzeiten.
+  BC-2430.60.30:
+    name: Gesamtbetriebskosten-Analyse
+    description: |
+      Gesamtbetriebskosten-Analyse über Flottentypen und Anbieter.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

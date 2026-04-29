@@ -1,0 +1,144 @@
+locale: de
+source: L1-energy-trading-settlement-management.yaml
+entries:
+  BC-3850:
+    name: Energiehandel und Abrechnungs Management
+    description: |
+      Großhandel von Strom, Gas und Umweltkommoditäten –
+      Marktbeteiligung in Day-ahead-, Intraday- und Ausgleichszeiträumen,
+      Energierisikoverwaltung, Scheduling und Nominierungen,
+      Kapazitätsmarktbeteiligung sowie Back-Office-Abrechnung und
+      regulatorische Meldepflichten unter REMIT/EMIR/Dodd-Frank-Regimes.
+  BC-3850.10:
+    name: Großhandel Stromhandel
+    description: |
+      Front-Office-Handel physischer und finanzieller Energie über
+      Day-ahead-, Intraday- und Terminmärkte.
+  BC-3850.10.10:
+    name: Day-ahead-Markthandel
+    description: |
+      Einreichung und Verwaltung von Day-ahead-Marktgeboten und -angeboten.
+  BC-3850.10.20:
+    name: Intraday-Markthandel
+    description: |
+      Kontinuierlicher und auktionsbasierter Intraday-Handel gegen Positionsveränderungen.
+  BC-3850.10.30:
+    name: Termin- und bilateraler Handel
+    description: |
+      Physischer Terminhandel und bilateraler OTC-Handel zur Absicherung und Herkunft.
+  BC-3850.10.40:
+    name: Grenzüberschreitender Kapazitätshandel
+    description: |
+      Handel grenzüberschreitender Interkonnektorkapazitätsprodukte.
+  BC-3850.20:
+    name: Energierisikoverwaltung
+    description: |
+      Markt-, Kredit- und operationelle Risikoüberwachung des Handelsportfolios
+      mit Limitverwaltung und Stresstests.
+    in_scope:
+      - VaR- und Earnings-at-Risk-Berechnung
+      - Counterparty-Kreditlimitmanagement
+      - Hedge-Effektivitätstests
+    out_of_scope:
+      - Unternehmensweites Risikomanagement (BC-120)
+      - Kreditrisiko gegenüber Privatkunden (BC-3910)
+  BC-3850.20.10:
+    name: Marktrisiko-Überwachung
+    description: |
+      VaR-, Earnings-at-Risk- und Exposureüberwachung des Handelsbuchs.
+  BC-3850.20.20:
+    name: Gegenpartei-Kreditrisikomanagement
+    description: |
+      Gegenpartei-Kreditlimite, Sicherheiten und Exposureüberwachung.
+  BC-3850.20.30:
+    name: Absicherungsprogrammmanagement
+    description: |
+      Konzeption und Umsetzung von Absicherungsprogrammen gegen Brennstoff- und Stromexposure.
+  BC-3850.30:
+    name: Positionsmanagement und Scheduling
+    description: |
+      Aggregation von Handels- und physischen Positionen sowie Einreichung von
+      Schedules und Nominierungen bei Netz- und Leitungsbetreibern.
+  BC-3850.30.10:
+    name: Handelspositionsaggregation
+    description: |
+      Aggregation von Positionen über Produkte, Bücher und Gegenparteien.
+  BC-3850.30.20:
+    name: Stromfahrplaneinreichung
+    description: |
+      Einreichung physischer Stromfahrpläne bei ÜNBs und Bilanzkreisverantwortlichen.
+  BC-3850.30.30:
+    name: Gasnominierungseinreichung
+    description: |
+      Einreichung von Gasnominierungen und Wiederausgleich auf Übertragungsleitungen.
+  BC-3850.40:
+    name: Kapazitätsmarktbeteiligung
+    description: |
+      Beteiligung an Kapazitätsmarkt- und Versorgungssicherheitsmechanismen
+      einschließlich Auktionsstrategie, Qualifikation und Lieferüberwachung.
+  BC-3850.40.10:
+    name: Kapazitätsauktionstrategie
+    description: |
+      Strategie und Gebotsvorbereitung für Kapazitätsmarktauktionen.
+  BC-3850.40.20:
+    name: Kapazitätsanbieterqualifikation
+    description: |
+      Anlagenqualifikation und Deratierungsfaktormanagement für Kapazitätsprodukte.
+  BC-3850.40.30:
+    name: Kapazitätslieferungsüberwachung
+    description: |
+      Überwachung der Kapazitätslieferung bei Stressereignissen und Strafexposure.
+  BC-3850.50:
+    name: Umweltkommoditätenhandel
+    description: |
+      Handel und Abgabe von Kohlenstoffzertifikaten, erneuerbaren Zertifikaten,
+      Herkunftsnachweisen und Weißen Zertifikaten.
+  BC-3850.50.10:
+    name: Kohlenstoffzertifikathandel
+    description: |
+      Handel mit EUA, CCA und anderen Compliance-Kohlenstoffzertifikaten.
+  BC-3850.50.20:
+    name: Erneuerbare Zertifikate Handel
+    description: |
+      Handel mit RECs, ROCs und Herkunftsnachweisen.
+  BC-3850.50.30:
+    name: Weiße Zertifikate Betrieb
+    description: |
+      Handel und Abgabe von Energieeffizienz-Weißzertifikaten.
+  BC-3850.60:
+    name: Handelsabrechnungsbetrieb
+    description: |
+      Back-Office-Bestätigung, Abrechnungsberechnung, Rechnungsstellung und
+      Cash-Management von Großhandelsenergegeschäften.
+  BC-3850.60.10:
+    name: Handelsbestätigung
+    description: |
+      Ausgehende und eingehende Handelsbestätigungen und Differenzklärung.
+  BC-3850.60.20:
+    name: Abrechnungsberechnung
+    description: |
+      Berechnung physischer und finanzieller Abrechnungsbeträge je Kontrakt.
+  BC-3850.60.30:
+    name: Handelsabrechnung und Cash-Management
+    description: |
+      Rechnungsstellung, Zahlung und Abstimmung von Großhandelshandels-Cashflows.
+  BC-3850.70:
+    name: Handels-Regulierungsberichterstattung
+    description: |
+      Regulatorische Meldung von Großhandelsenergegeschäften unter
+      REMIT-, EMIR-, MiFID-II- und Dodd-Frank-Regimes.
+  BC-3850.70.10:
+    name: REMIT-Transaktionsmeldung
+    description: |
+      Tabellen 1- und 2-Meldung von Großhandelsenergegeschäften an die ACER.
+  BC-3850.70.20:
+    name: EMIR- und Dodd-Frank-Meldung
+    description: |
+      Meldung von Derivategeschäften an Transaktionsregister unter EMIR und Dodd-Frank.
+  BC-3850.70.30:
+    name: Insiderinformationsveröffentlichung
+    description: |
+      Veröffentlichung von Insiderinformationen gemäß REMIT Art. 4.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

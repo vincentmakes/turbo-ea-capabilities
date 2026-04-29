@@ -1,0 +1,182 @@
+locale: de
+source: L1-food-beverage-processing-operations-management.yaml
+entries:
+  BC-3580:
+    name: Lebensmittel- und Getränkeverarbeitung
+    description: |
+      Industrielle Lebensmittel- und Getränkeherstellungsbetriebe –
+      Rohstoffannahme, Erst- und Weiterverarbeitung, Verpackung,
+      Kühlkettenherstellung, Sanitärmaßnahmen, Tiernahrungsherstellung
+      und Nebenproduktgewinnung bei Fleisch, Milch, Mühlen, Brauereien,
+      Backwaren und frisch geschnittenem Gemüse.
+  BC-3580.10:
+    name: Rohstoffannahme und -Inspektion
+    description: |
+      Annahme, sensorische und Laborprüfung sowie Chargenabnahme
+      von landwirtschaftlichen Rohrohstoffen in Verarbeitungsanlagen.
+  BC-3580.10.10:
+    name: Rohstoffannahme
+    description: |
+      Annahme von Nutzvieh, Milch, Getreide, Obst- und
+      Gemüseinputs.
+  BC-3580.10.20:
+    name: Rohstoff-Sensorik- und Qualitätsprüfung
+    description: |
+      Sensorische und Laborprüfung eingehender Rohstoffe.
+  BC-3580.10.30:
+    name: Rohstoffchargen-Abnahme
+    description: |
+      Chargenabnahme-, Ablehnungs- und Umeinstufungsentscheidungen.
+  BC-3580.20:
+    name: Erstverarbeitungs-Betrieb
+    description: |
+      Erste Transformation landwirtschaftlicher Rohstoffe –
+      Schlachtung und Dressing, Milchseparation, Mahlen und
+      Erzeugnisaufbereitung.
+    in_scope:
+      - Schlachtung und Schlachtkörper-Dressing
+      - Milchannahme und -Separation
+      - Getreidemahlen und Ölsaatenpressung
+      - Obst- und Gemüseaufbereitung
+    out_of_scope:
+      - Generelle Herstellungsbetriebe (BC-1010)
+  BC-3580.20.10:
+    name: Schlachtung und Schlachtkörper-Dressing
+    description: |
+      Schlachtung, Dressing und Kühlung von Nutzvieh- und
+      Geflügelschlachtkörpern.
+  BC-3580.20.20:
+    name: Milchannahme und -Separation
+    description: |
+      Milchannahme, Standardisierung und Rahmseparationsbetrieb.
+  BC-3580.20.30:
+    name: Getreidemahlen und Ölsaatenpressung
+    description: |
+      Getreidemahlen und Ölsaatenpressung einschließlich Expeller
+      und Lösungsmittelextraktion.
+  BC-3580.20.40:
+    name: Obst- und Gemüse-Aufbereitung
+    description: |
+      Waschen, Schälen, Schneiden und Blanchieren von Obst und Gemüse.
+  BC-3580.30:
+    name: Weiterverarbeitungs-Betrieb
+    description: |
+      Mischen, Kochen, Fermentation und Konzentration zur
+      Herstellung von Fertig-Lebensmitteln und Getränken.
+  BC-3580.30.10:
+    name: Misch- und Blending-Betrieb
+    description: |
+      Mischen und Blending von formulierten Lebensmittel- und
+      Getränkerezepturen.
+  BC-3580.30.20:
+    name: Koch- und Thermoverarbeitungs-Betrieb
+    description: |
+      Koch-, Pasteurisierungs- und Sterilisationsbetrieb.
+  BC-3580.30.30:
+    name: Fermentations- und Brau-Betrieb
+    description: |
+      Fermentations-, Brau- und Reifungsbetrieb von Getränken und
+      fermentierten Produkten.
+  BC-3580.30.40:
+    name: Trocknungs- und Konzentrations-Betrieb
+    description: |
+      Sprühtrocknung, Eindampfung und Konzentration von
+      Flüssigprodukten.
+  BC-3580.40:
+    name: Verpackungs- und Abfüllungs-Betrieb
+    description: |
+      Abfüllung, Versiegelung, Etikettierung und Palettierung
+      von fertigen Lebensmitteln und Getränken.
+  BC-3580.40.10:
+    name: Abfüllungs- und Versiegelungs-Betrieb
+    description: |
+      Abfüllung und Versiegelung von Flaschen, Dosen, Beuteln
+      und Starrbehältern.
+  BC-3580.40.20:
+    name: Etikettierungs-Betrieb
+    description: |
+      Etikettierung, Datumskodierung und Manipulationsschutz-Anbringung.
+  BC-3580.40.30:
+    name: Kartonverpackung und Palettierung
+    description: |
+      Kartonverpackung, Schrumpffolie und Palettierung von
+      Fertigwaren.
+  BC-3580.50:
+    name: Kühlketten-Herstellungsbetrieb
+    description: |
+      Betriebsinterne Kühlung, Gefrieren und Kühlkettenüberwachung
+      über Verarbeitungs- und Verpackungslinien.
+  BC-3580.50.10:
+    name: Kühl- und Gefrierbetrieb
+    description: |
+      Betrieb von betriebsinternen Kühlern, Schockgefrieranlagen
+      und Gefrierkanälen.
+  BC-3580.50.20:
+    name: Betriebsinterne Kühlkettenüberwachung
+    description: |
+      Kühlkettenüberwachung über betriebsinterne Zonen und Lagerräume.
+  BC-3580.60:
+    name: Sanitärmaßnahmen und Allergen-Kontrollbetrieb
+    description: |
+      CIP-Reinigung, Allergenumstellungskontrolle und Umgebungs-
+      überwachungsprogramme zum Schutz der Produktsicherheit.
+    in_scope:
+      - Cleaning-in-Place-Programme
+      - Allergenumstellungsvalidierung
+      - Umgebungspathogen-Überwachung
+    out_of_scope:
+      - Einzelhandelseitige Lebensmittelsicherheitsprogramme (BC-2380.10)
+  BC-3580.60.10:
+    name: CIP-Betrieb
+    description: |
+      CIP-Durchführung und -Validierung über Produktumstellungen hinweg.
+  BC-3580.60.20:
+    name: Allergenumstellungs-Kontrolle
+    description: |
+      Allergenumstellungskontrollen und Verifikationsabstriche.
+  BC-3580.60.30:
+    name: Umgebungsüberwachungs-Programme
+    description: |
+      Umgebungspathogen-Überwachung über Anlagenzonen hinweg.
+  BC-3580.70:
+    name: Tiernahrungsherstellungs-Betrieb
+    description: |
+      Mischfutterherstellung einschließlich Futterinhaltsstoffannahme,
+      Mischen, Pelletierung und Arzneifutterproduktion für die
+      nachgelagerte Tierhaltung.
+  BC-3580.70.10:
+    name: Futterinhaltsstoff-Annahme
+    description: |
+      Annahme von Getreide, Eiweißfuttermitteln und Additiven
+      in Futtermühlen.
+  BC-3580.70.20:
+    name: Futtermisch- und Pelletierungsbetrieb
+    description: |
+      Mischen und Pelletieren von Mischfutter nach Rationenformulierungen.
+  BC-3580.70.30:
+    name: Arzneifutter-Produktion
+    description: |
+      Arzneifutterproduktion auf Rezept mit Übertragungs-Kontrollen.
+  BC-3580.80:
+    name: Neben- und Koprodukt-Management
+    description: |
+      Gewinnung und Weiterleitung von Prozessnebenerzeugnissen und
+      Koprodukten wie Tierfett, Molke und Biertreber.
+  BC-3580.80.10:
+    name: Tierfettverwertungs-Betrieb
+    description: |
+      Tierfettverwertung von Fleischverarbeitungsnebenerzeugnissen
+      zu Talg und Tiermehl.
+  BC-3580.80.20:
+    name: Molken- und Permeat-Gewinnung
+    description: |
+      Gewinnung von Molken- und Permeatströmen aus der
+      Milchverarbeitung.
+  BC-3580.80.30:
+    name: Biertreber-Gewinnung
+    description: |
+      Gewinnung und Weiterleitung von Brauerei- und
+      Brennerei-Biertreber.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

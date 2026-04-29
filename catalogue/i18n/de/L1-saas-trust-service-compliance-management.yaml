@@ -1,0 +1,135 @@
+locale: de
+source: L1-saas-trust-service-compliance-management.yaml
+entries:
+  BC-4290:
+    name: SaaS-Vertrauenswürdigkeit und Servicekonformität
+    description: |
+      Servicebezogene Attestierungen, Kundensicherheitsfragebögen,
+      öffentliche Vertrauensoffenlegungen, Sub-Prozessor-Management,
+      servicebezogene Datenschutzverpflichtungen und
+      kundenseitige Service-Resilienz-Verpflichtungen für das
+      SaaS-Angebot.
+  BC-4290.10:
+    name: Service-Attestierungsmanagement
+    description: |
+      Koordination servicebezogener Attestierungen wie SOC 2,
+      ISO 27001 und FedRAMP für das SaaS-Angebot.
+    in_scope:
+      - Prüfungsbereitschaft für den Service
+      - Prüferengagement und Berichtserstellung
+    out_of_scope:
+      - Unternehmensweites Compliance-Programm (abgedeckt durch Compliance Management)
+  BC-4290.10.10:
+    name: Prüfungsbereitschaftskoordination
+    description: |
+      Koordination der Prüfungsbereitschaft über Kontrollverantwortliche
+      für den Service hinweg.
+  BC-4290.10.20:
+    name: Prüferengagement
+    description: |
+      Beauftragung externer Prüfer und Management der
+      Prüfungsdurchführung.
+  BC-4290.10.30:
+    name: Attestierungserneuerungsmanagement
+    description: |
+      Management von Attestierungserneuerungszyklen und
+      kontinuierlichen Prüfungsvereinbarungen.
+  BC-4290.20:
+    name: Kundensicherheitsfragebogen-Management
+    description: |
+      Verwaltung des Fragebogen-Repositorys, Antwortgestaltung und
+      Wissensbasis zur Beantwortung von Kundensicherheitsbewertungen.
+  BC-4290.20.10:
+    name: Fragebogen-Repository-Management
+    description: |
+      Pflege des eingehenden Fragebogen-Repositorys und Weiterleitung.
+  BC-4290.20.20:
+    name: Fragebogenantwort-Erstellung
+    description: |
+      Erstellung von Antworten auf Kundensicherheitsfragebögen.
+  BC-4290.20.30:
+    name: Fragebogen-Wissensbasis-Pflege
+    description: |
+      Pflege einer kuratierten Wissensbasis mit genehmigten Antworten
+      und Belegen.
+  BC-4290.30:
+    name: Trust-Portal und öffentliche Offenlegung
+    description: |
+      Betrieb des Kunden-Trust-Portals, öffentliche
+      Status-Offenlegungen und Dokumentenverteilungs-Workflows.
+  BC-4290.30.10:
+    name: Trust-Portal-Inhaltsverwaltung
+    description: |
+      Kuration der auf dem Kunden-Trust-Portal veröffentlichten
+      Inhalte.
+  BC-4290.30.20:
+    name: Öffentliche Statusoffenlegung
+    description: |
+      Öffentliche Offenlegung von Vorfallstatus und historischem
+      Servicestatus.
+  BC-4290.30.30:
+    name: Dokumentenverteilungs-Workflow
+    description: |
+      Kontrollierte Verteilung von Prüfberichten und
+      Vertrauensdokumenten an Kunden.
+  BC-4290.40:
+    name: Sub-Prozessor-Management
+    description: |
+      Inventar, Offenlegung und Änderungsbenachrichtigung von
+      Sub-Prozessoren, die Kundendaten verarbeiten.
+  BC-4290.40.10:
+    name: Sub-Prozessor-Inventar
+    description: |
+      Inventar der Sub-Prozessoren und der von ihnen verarbeiteten
+      Kundendatenkategorien.
+  BC-4290.40.20:
+    name: Sub-Prozessor-Offenlegung
+    description: |
+      Kundenseitige Offenlegung der aktuellen Sub-Prozessor-Liste.
+  BC-4290.40.30:
+    name: Sub-Prozessor-Änderungsbenachrichtigung
+    description: |
+      Vorherige Benachrichtigung über Hinzufügungen und Entfernungen
+      von Sub-Prozessoren gemäß Vertrag.
+  BC-4290.50:
+    name: Service-Datenschutzverpflichtungsmanagement
+    description: |
+      Verwaltung von Datenverarbeitungsverträgen, Offenlegung von
+      Kundendatenflüssen und Weiterleitung von Betroffenenanfragen.
+  BC-4290.50.10:
+    name: Datenverarbeitungsvertrag-Management
+    description: |
+      Pflege und Ausführung von Datenverarbeitungsverträgen mit
+      Kunden.
+  BC-4290.50.20:
+    name: Kundendatenfluss-Mapping
+    description: |
+      Mapping von Kundendatenflüssen für Offenlegung und Bewertung.
+  BC-4290.50.30:
+    name: Betroffenenanfragen-Weiterleitung
+    description: |
+      Weiterleitung von über Kunden eingegangenen
+      Betroffenenanfragen an die zuständigen Stellen.
+  BC-4290.60:
+    name: Service-Resilienz-Verpflichtungsmanagement
+    description: |
+      Kundenseitige Service-Level-Verpflichtungen, Verfügbarkeits-
+      offenlegung und Service-Credit-Verwaltung.
+  BC-4290.60.10:
+    name: Service-Level-Verpflichtungsmanagement
+    description: |
+      Definition und Verwaltung kundenseitiger
+      Service-Level-Verpflichtungen.
+  BC-4290.60.20:
+    name: Verfügbarkeitsoffenlegung
+    description: |
+      Offenlegung der historischen Verfügbarkeit gegenüber den
+      zugesagten Levels.
+  BC-4290.60.30:
+    name: Service-Credit-Verwaltung
+    description: |
+      Verwaltung von Service-Credits aus nicht eingehaltenen
+      Verpflichtungen.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

@@ -1,0 +1,173 @@
+locale: de
+source: L1-tour-itinerary-operations-management.yaml
+entries:
+  BC-4100:
+    name: Reiseveranstaltung und Reisebürobetrieb Management
+    description: |
+      Betrieb von Reiseveranstalter- und Destination-Management-Aktivitäten –
+      Produktzusammenstellung und Lieferantenverträge, Abreiseentscheidungen,
+      Reiseleiter- und Begleiterbetrieb, Zielortlogistik, Lieferantenkoordination,
+      Reiseplanwiederherstellung und Reisendedokumentation.
+    in_scope:
+      - Tourprodukt-Zusammenstellung und Lieferantenverträge
+      - Abreiselimit- und Go/No-Go-Entscheidungen
+      - Reiseleiterzuweisung, Briefing und Einsatzleistung
+      - Zielort-Transfers und Tagesausflug-Erbringung
+      - Live-Reiseplanänderung und höhere-Gewalt-Wiederherstellung
+      - Tourkunden-Dokumentation und Gutscheinausstellung
+    out_of_scope:
+      - Tourproduktmaster- und Inventarpooldefinition (BC-4000.30)
+      - Reservierungs- und Buchungslebenszyklus (BC-4020)
+      - Kreuzfahrtbetrieb (BC-4090)
+  BC-4100.10:
+    name: Tourprodukt-Zusammenstellung und Vertragsabschluss
+    description: |
+      Zusammenstellung von Tourprodukten, Lieferantenverträge, Kalkulation,
+      Routing und Produktlebenszyklusstatus über Tourmarken hinweg.
+  BC-4100.10.10:
+    name: Lieferantenverträge und Kontingentverhandlung
+    description: |
+      Vertragsabschluss mit Unterkunfts-, Transport- und Aktivitätslieferanten
+      einschließlich Kontingentverhandlung.
+  BC-4100.10.20:
+    name: Tourkalkultion und Margenaufbau
+    description: |
+      Kalkulation von Tourprodukten und Margenaufbau gegen Zielverkaufspreise.
+  BC-4100.10.30:
+    name: Reiseplankomposition und Routing
+    description: |
+      Komposition von Reiseplänen und Routing über Zielorte und Lieferantenkomponenten.
+  BC-4100.10.40:
+    name: Tourprodukt-Lebenszyklus-Status
+    description: |
+      Lebenszyklusstatus von Tourprodukten von Konzept und Pilot bis Eingestellt.
+  BC-4100.20:
+    name: Tourabreise-Management
+    description: |
+      Entscheidungen zu Tourabreisen einschließlich Mindestpassagier-Schwellen,
+      Zuteilung, Markenkonsolidierung und Stornierung oder Substitution.
+  BC-4100.20.10:
+    name: Abreiselimit- und Go/No-Go-Entscheidung
+    description: |
+      Entscheidung, ob geplante Abreisen gegen Mindestpassagier-Schwellen operiert werden.
+  BC-4100.20.20:
+    name: Abreisezuteilung und Inventarfreigabe
+    description: |
+      Sitzzuteilung und Inventarfreigabeentscheidungen über Abreisen.
+  BC-4100.20.30:
+    name: Abreisekonsolidierung über Marken
+    description: |
+      Konsolidierung marginaler Abreisen über Schwestermarken oder Partnerveranstalter.
+  BC-4100.20.40:
+    name: Abreisestornierung und Substitution
+    description: |
+      Stornierung nicht lebensfähiger Abreisen und Substitution auf alternative Abreisedaten.
+  BC-4100.30:
+    name: Reiseleiter- und Begleiterbetrieb
+    description: |
+      Zuweisung, Briefing, Leistungsmanagement und lokale Reiseleiterkoordination
+      für die Tourerbringung.
+  BC-4100.30.10:
+    name: Reiseleiter- und Tour-Direktor-Zuweisung
+    description: |
+      Zuweisung von Reiseleitern und Tour-Direktoren zu Abreisen
+      gegen Sprach- und Reiseplananforderungen.
+  BC-4100.30.20:
+    name: Vor-Tour-Briefing und Skriptmanagement
+    description: |
+      Vor-Tour-Briefing von Begleiterteams und Management von Reiseplanen-Skripten.
+  BC-4100.30.30:
+    name: Reiseleiter-Einsatzleistungsüberwachung
+    description: |
+      Überwachung der Reiseleiterleistung während der Tourerbringung.
+  BC-4100.30.40:
+    name: Lokale Reiseleiterkoordination
+    description: |
+      Koordination lokaler Reiseleiter an Zielorten gegen stadtteil- und standortspezifische Anforderungen.
+  BC-4100.40:
+    name: Zielort-Logistik und Transfers
+    description: |
+      Zielort-Logistik einschließlich Bus- und Fahrzeugdiensten,
+      Flughafen- und Hotel-Transfers, Tagesausflugserbringung und Aktivitätsticketierung.
+  BC-4100.40.10:
+    name: Bus- und Fahrzeuglogistik
+    description: |
+      Logistik für Bus- und Fahrzeugdienste über den Reiseplan.
+  BC-4100.40.20:
+    name: Flughafen- und Hotel-Transfers
+    description: |
+      Betrieb von Flughafen- und Hotel-Transfers für Tourreisende.
+  BC-4100.40.30:
+    name: Tagesausflug-Erbringungsbetrieb
+    description: |
+      Durchführung von Tagesausflügen und Exkursionen in Mehrtages-Reiseplänen.
+  BC-4100.40.40:
+    name: Aktivitäts- und Attraktionsticketierungsbetrieb
+    description: |
+      Betrieb der Aktivitäts- und Attraktionsticketierung einschließlich Zeitfensterzuteilung.
+  BC-4100.50:
+    name: Tour-Lieferantenkoordination
+    description: |
+      Koordination mit Destination-Management-Unternehmen, Unterkunfts-
+      und Aktivitätslieferanten über die operative Erbringung.
+  BC-4100.50.10:
+    name: DMC- und Lokalbetreiberkoordination
+    description: |
+      Koordination mit Destination-Management-Unternehmen und lokalen Betreibern.
+  BC-4100.50.20:
+    name: Unterkunftslieferantenkoordination
+    description: |
+      Koordination mit Unterkunftslieferanten zu Zimmerlisten, Ankunftszeiten und Sonderwünschen.
+  BC-4100.50.30:
+    name: Attraktions- und Aktivitätslieferantenkoordination
+    description: |
+      Koordination mit Attraktions- und Aktivitätslieferanten zu Zugang und Kapazität.
+  BC-4100.50.40:
+    name: Lieferantenleistungsbetrieb
+    description: |
+      Operative Leistungsverwaltung von Tourlieferanten auf Basis von Begleiterfeedback.
+  BC-4100.60:
+    name: Reiseplanänderung und Wiederherstellung
+    description: |
+      Live-Änderung von Reiseplänen und Wiederherstellung nach Störungsereignissen
+      einschließlich höherer Gewalt und reisendenseitiger Änderungen.
+  BC-4100.60.10:
+    name: Live-Reiseplanänderungsbetrieb
+    description: |
+      Live-Änderung von Reiseplänen während einer laufenden Tour durch operative Auslöser.
+  BC-4100.60.20:
+    name: Höhere-Gewalt-Reiseplanwiederherstellung
+    description: |
+      Wiederherstellung von Reiseplänen bei höherer Gewalt wie Wetter, Streiks und politische Unruhen.
+  BC-4100.60.30:
+    name: Reisendenseitige Reiseplanänderung
+    description: |
+      Bearbeitung reisendenseitiger Änderungen, die nachgelagerte Lieferantenbuchungen betreffen.
+  BC-4100.60.40:
+    name: Wiederherstellungsentschädigungsfeststellung
+    description: |
+      Feststellung von Entschädigungen nach Reiseplanänderungen einschließlich Erstattung.
+  BC-4100.70:
+    name: Tour-Kundendokumentation
+    description: |
+      Ausstellung und Neuausstellung von Abschlussdokumenten, Gutscheinen,
+      Vorabreiseinformationen und tourspezifischer Reisendekommunikation.
+  BC-4100.70.10:
+    name: Abschlussdokumentenausstellung
+    description: |
+      Ausstellung von Abschlussdokumenten einschließlich finalem Reiseplan und Notfallkontakten.
+  BC-4100.70.20:
+    name: Gutschein- und Servicedokumentenausstellung
+    description: |
+      Ausstellung von Gutscheinen und Servicedokumenten für Tourlieferanten.
+  BC-4100.70.30:
+    name: Vorabreise-Informationspaket
+    description: |
+      Zusammenstellung von Vorabreise-Informationspaketen einschließlich Gesundheits-, Visa- und Packhinweise.
+  BC-4100.70.40:
+    name: Reisedokument-Neuausstellungsbetrieb
+    description: |
+      Neuausstellung von Dokumenten nach Reiseplanänderungen und Reisendedatenänderungen.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

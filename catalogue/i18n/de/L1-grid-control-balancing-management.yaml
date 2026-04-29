@@ -1,0 +1,132 @@
+locale: de
+source: L1-grid-control-balancing-management.yaml
+entries:
+  BC-3830:
+    name: Netzsteuerung und Netzausgleich Management
+    description: |
+      Netzbetreiberfunktion für das Hochspannungsnetz – Echtzeit-
+      Ausgleich von Erzeugung und Nachfrage, Frequenz- und Spannungsregelung,
+      Reserven und Systemdienstleistungen, Betriebsplanung, grenzüberschreitende
+      Koordination sowie Schwarzstart-Bereitschaft.
+  BC-3830.10:
+    name: Echtzeit-Systembetrieb
+    description: |
+      Kontinuierliche Echtzeit-Aufsicht und Steuerung der Systemerzeugung,
+      Nachfrage und des Austauschs zur Aufrechterhaltung eines sicheren Betriebs.
+  BC-3830.10.10:
+    name: Systemlagebild
+    description: |
+      Kontinuierliches Lagebild von Erzeugung, Last und Kontingenzmargen aus der Leitstelle.
+  BC-3830.10.20:
+    name: Echtzeit-Kontingenzanalyse
+    description: |
+      Echtzeit-N-1- und N-1-1-Kontingenzanalyse und Auslösung von Maßnahmenautomatiken.
+  BC-3830.10.30:
+    name: Betriebsanweisungserteilung
+    description: |
+      Erteilung von Betriebsanweisungen an Bilanzkreisverantwortliche und ÜNBs.
+  BC-3830.20:
+    name: Frequenz- und Spannungsregelung
+    description: |
+      Aktive Frequenz- und Spannungsregelung durch automatische
+      Erzeugungssteuerung und Blindleistungsdispatch.
+  BC-3830.20.10:
+    name: Automatische Erzeugungssteuerung
+    description: |
+      AGC-Dispatch und Regelzonenfehlermanagement zur Frequenzregelung.
+  BC-3830.20.20:
+    name: Blindleistungsdispatch
+    description: |
+      Dispatch von Blindleistungsressourcen zur Aufrechterhaltung des Spannungsprofils im Netz.
+  BC-3830.20.30:
+    name: Trägheits- und Frequenzreaktionsmanagement
+    description: |
+      Management von Trägheit, schneller Frequenzreaktion und Droop-Diensten.
+  BC-3830.30:
+    name: Betriebsplanung
+    description: |
+      Day-ahead- und Intraday-Systemsicherheitsanalyse, Stillstandsbewertung
+      und Betriebsmargenplanung.
+  BC-3830.30.10:
+    name: Day-ahead-Sicherheitsanalyse
+    description: |
+      Engpassbehafteter Kraftwerkseinsatz und Kontingenzanalyse für den Betriebstag.
+  BC-3830.30.20:
+    name: Intraday-Redispatch
+    description: |
+      Intraday-Redispatch von Erzeugung und Nachfrage gegen Prognoseupdates.
+  BC-3830.30.30:
+    name: Saisonale Betriebsmargenbeurteilung
+    description: |
+      Saisonale Kapazitätsmargenbewertung und Ausreichenheitsprüfung.
+  BC-3830.40:
+    name: Reserven und Systemdienstleistungen
+    description: |
+      Beschaffung und Aktivierung von Betriebsreserven und Systemdienstleistungen
+      einschließlich Frequenz-, Spannungs- und Trägheitsprodukten.
+  BC-3830.40.10:
+    name: Reservenbeschaffung
+    description: |
+      Beschaffung von Primär-, Sekundär- und Tertiärreserveprodukten.
+  BC-3830.40.20:
+    name: Systemdienstleistungsaktivierung
+    description: |
+      Aktivierung und Dispatch vertraglich gebundener Systemdienstleistungsanbieter.
+  BC-3830.40.30:
+    name: Reserveleistungsüberwachung
+    description: |
+      Überwachung der Leistung und Verfügbarkeit von Reserveanbietern.
+  BC-3830.50:
+    name: Ausgleichsenergieabrechnungsbetrieb
+    description: |
+      Netzbetreiberseitige Berechnung und Benachrichtigung von Ausgleichsenergienmengen
+      und -preisen für Bilanzkreisverantwortliche.
+  BC-3830.50.10:
+    name: Mengenaggregation
+    description: |
+      Aggregation von Messwerten je Bilanzkreisverantwortlichem.
+  BC-3830.50.20:
+    name: Ausgleichsenergiepreisberechnung
+    description: |
+      Berechnung von Systemausgleichsenergiepreisen gemäß Marktregeln.
+  BC-3830.50.30:
+    name: BRP-Abrechnungsbenachrichtigung
+    description: |
+      Benachrichtigung von Bilanzkreisverantwortlichen über Ausgleichsenergienmengen und -kosten.
+  BC-3830.60:
+    name: Grenzüberschreitende Koordination
+    description: |
+      Koordination von Interkonnektorflüssen, Redispatch und Netzsicherheit
+      mit benachbarten ÜNBs und regionalen Sicherheitskoordinatoren.
+  BC-3830.60.10:
+    name: Interkonnektorfaplanung
+    description: |
+      Scheduling physischer und kommerzieller Flüsse auf Interkonnektoren.
+  BC-3830.60.20:
+    name: Koordinierte Kapazitätsberechnung
+    description: |
+      Koordinierte Kapazitätsberechnung über Gebotszonen mit Nachbarn hinweg.
+  BC-3830.60.30:
+    name: Grenzüberschreitender Redispatch und Gegensatz
+    description: |
+      Grenzüberschreitender Redispatch und Gegensatz zur Engpassbehebung.
+  BC-3830.70:
+    name: Schwarzstart- und Wiederaufbauplanung
+    description: |
+      Pflege von Schwarzstartverträgen, Wiederaufbauplänen und
+      Wiederaufbauübungen für vollständige oder teilweise Systemzusammenbruchszenarien.
+  BC-3830.70.10:
+    name: Schwarzstartvertragsmanagement
+    description: |
+      Beschaffung und Überwachung von Schwarzstartdienstleistungsverträgen.
+  BC-3830.70.20:
+    name: Systemwiederaufbauplanpflege
+    description: |
+      Pflege von Wiederaufbausequenzen und Inselnetzplänen.
+  BC-3830.70.30:
+    name: Wiederaufbauübungen
+    description: |
+      Betreiber- und interutility-Wiederaufbauübungen und Nachbesprechungen.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

@@ -1,0 +1,140 @@
+locale: de
+source: L1-border-immigration-management.yaml
+entries:
+  BC-3300:
+    name: Grenz- und Einwanderungsverwaltung
+    description: |
+      Personenbezogene Grenzkontrolle, Visa- und Reisegenehmigungen, Asyl-
+      und Flüchtlingsstatusbestimmung, Aufenthaltsstatus- und
+      Wohnsitzverwaltung, Einbürgerung und Abschiebungsoperationen.
+  BC-3300.10:
+    name: Visa- und Reisegenehmigungsverwaltung
+    description: |
+      Antragsbearbeitung, Entscheidungsfindung und Ausstellung von Visa
+      und Reisegenehmigungen einschließlich ETA-artiger Vorabgenehmigungen.
+    in_scope:
+      - Visaantragsbearbeitung und Entscheidungsfindung
+      - Elektronische Reisegenehmigung
+      - Visa-Betrugsprüfung
+    out_of_scope:
+      - Zollabfertigung und Handelscompliance (durch Zoll- und Handels-Compliance-Management abgedeckt)
+  BC-3300.10.10:
+    name: Visaantrags-Bearbeitung
+    description: |
+      Eingang, Validierung und Bearbeitung von Visaanträgen über alle Kategorien.
+  BC-3300.10.20:
+    name: Visa-Entscheidungsfindung
+    description: |
+      Entscheidungsfindung über Visaanträge einschließlich Ablehnung und Auflagen.
+  BC-3300.10.30:
+    name: Elektronische Reisegenehmigung
+    description: |
+      Ausstellung und Widerruf von ETA-artigen Vorabgenehmigungen für die Einreise.
+  BC-3300.10.40:
+    name: Visa-Betrugsprüfung
+    description: |
+      Prüfung von Anträgen auf Betrug, Urkundenfälschung und Identitätsdokument-Anomalien.
+  BC-3300.20:
+    name: Grenzinspektion und Einreisekontrolle
+    description: |
+      Inspektion und Einreisekontrolle von Reisenden an Grenzübergangsstellen
+      einschließlich Erst- und Zweitbefragung.
+  BC-3300.20.10:
+    name: Vorab-Passagierdaten-Verarbeitung
+    description: |
+      Verarbeitung von API- und PNR-Daten vor der Ankunft von Reisenden.
+  BC-3300.20.20:
+    name: Erstbefragung
+    description: |
+      Erstlinien-Inspektion an Grenzübergangsstellen einschließlich biometrischer Verifikation.
+  BC-3300.20.30:
+    name: Zweitbefragung
+    description: |
+      Zweitbefragung von Reisenden, die einer weiteren Prüfung bedürfen.
+  BC-3300.20.40:
+    name: Einreise- und Zurückweisungsentscheidung
+    description: |
+      Entscheidungsfindung über Einreise, Zurückweisung und Einreisebedingungen.
+  BC-3300.30:
+    name: Asyl- und Flüchtlingsstatusbestimmung
+    description: |
+      Eingang, Prüfung und Entscheidung über Asylanträge nach der
+      Genfer Flüchtlingskonvention von 1951 und nationalen Schutzregimen.
+  BC-3300.30.10:
+    name: Asylantrag-Aufnahme
+    description: |
+      Aufnahme und Registrierung von Asylanträgen an der Grenze und im Inland.
+  BC-3300.30.20:
+    name: Flüchtlingsstatus-Bestimmung
+    description: |
+      Adjudizierung des Flüchtlingsstatus nach der Konvention von 1951 und ergänzendem Schutz.
+  BC-3300.30.30:
+    name: Asylbewerber-Aufnahme und Unterstützungskoordination
+    description: |
+      Koordination von Aufnahme, Unterkunft und Grundversorgung für Asylbewerber.
+  BC-3300.30.40:
+    name: Umsiedlungs- und Humanitäre Aufnahmeprogramme
+    description: |
+      Betrieb von Umsiedlungs- und humanitären Aufnahmeprogrammen.
+  BC-3300.40:
+    name: Aufenthaltsstatus- und Wohnsitzverwaltung
+    description: |
+      Verwaltung des Aufenthaltsstatus im Inland einschließlich Aufenthaltserlaubnissen,
+      Arbeitserlaubnissen und Familienzusammenführungsfällen.
+  BC-3300.40.10:
+    name: Aufenthaltserlaubnis-Verwaltung
+    description: |
+      Ausstellung und Erneuerung von Aufenthaltserlaubnissen und biometrischen Aufenthaltstiteln.
+  BC-3300.40.20:
+    name: Arbeitserlaubnis-Verwaltung
+    description: |
+      Verwaltung von Arbeitserlaubnissen, Sponsoring-Lizenzen und Arbeitsmarktprüfungen.
+  BC-3300.40.30:
+    name: Familienzusammenführungs-Bearbeitung
+    description: |
+      Bearbeitung von Familienzusammenführungs- und Familienangehörigen-Anträgen.
+  BC-3300.40.40:
+    name: Statuscompliance-Monitoring
+    description: |
+      Monitoring der Compliance mit Auflagenbestimmungen und Statusänderungen.
+  BC-3300.50:
+    name: Einbürgerungs- und Staatsangehörigkeitsverwaltung
+    description: |
+      Adjudizierung von Einbürgerungsanträgen, Staatsangehörigkeit durch Abstammung
+      oder Eintragung sowie Staatsangehörigkeitsentzugs-Fällen.
+  BC-3300.50.10:
+    name: Einbürgerungsantrags-Bearbeitung
+    description: |
+      Bearbeitung von Einbürgerungsanträgen und Unbescholtenheitsbewertungen.
+  BC-3300.50.20:
+    name: Staatsangehörigkeit durch Abstammung und Eintragung
+    description: |
+      Feststellung der Staatsangehörigkeit durch Abstammung, Eintragung und Adoption.
+  BC-3300.50.30:
+    name: Einbürgerungszeremonie und Eidverwaltung
+    description: |
+      Durchführung von Einbürgerungsfeiern und Eidesablegungen zur Staatstreue.
+  BC-3300.50.40:
+    name: Staatsangehörigkeitsentzug-Bearbeitung
+    description: |
+      Adjudizierung von Staatsangehörigkeitsentzugs-, Verzichts- und Widerrufsfällen.
+  BC-3300.60:
+    name: Abschiebungs- und Abschiebehaft-Verwaltung
+    description: |
+      Abschiebehaft-, Abschiebungs- und freiwillige Rückkehr-Operationen für
+      Personen ohne Aufenthaltsstatus.
+  BC-3300.60.10:
+    name: Einwanderungs-Abschiebehaft-Betrieb
+    description: |
+      Betrieb von Abschiebehafteinrichtungen und Wohlfahrtsstandards.
+  BC-3300.60.20:
+    name: Abschiebungsbescheid-Vollstreckung
+    description: |
+      Vollstreckung von Abschiebungs- und Ausweisungsbescheiden einschließlich begleiteter Abschiebungen.
+  BC-3300.60.30:
+    name: Freiwillige Rückkehr-Programmoperationen
+    description: |
+      Koordination von unterstützten Freiwilligenrückkehr- und Reintegrationsprogrammen.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

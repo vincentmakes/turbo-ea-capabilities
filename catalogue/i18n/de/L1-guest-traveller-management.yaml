@@ -1,0 +1,161 @@
+locale: de
+source: L1-guest-traveller-management.yaml
+entries:
+  BC-4040:
+    name: Gast und Reisender Management
+    description: |
+      Stewardship des zentralen Gast- und Reisendenprofils über das gesamte Unternehmen –
+      Identität, Präferenzen, Einwilligung, Erkennung, Segmentierung
+      und Reisedokument-/Compliance-Daten, unabhängig von Kanal oder Property.
+    in_scope:
+      - Zentrales Gast- und Reisendenprofil und Identität
+      - Präferenzen, Ernährungs- und Barrierefreiheitsanforderungen
+      - Einwilligung, Marketingerlaubnis und Betroffenenrechte
+      - Erkennungssignalisierung und Tierstatus-Lieferung
+      - Gastsegmentierung und Lifetime-Value-Analyse
+      - Reisedokument-, APIS- und Watchlist-Screening-Daten
+    out_of_scope:
+      - Treuepunkte-Earn/Burn-Engines (BC-4050)
+      - Front-Office-Check-in-Ausführung (BC-4060.10)
+      - Allgemeines branchenübergreifendes CRM (BC-400)
+  BC-4040.10:
+    name: Gastprofil- und Identitätsmanagement
+    description: |
+      Erstellung, Deduplizierung und Identitätsverifikation des zentralen
+      Gastprofils über Buchungs- und Betriebssysteme hinweg.
+  BC-4040.10.10:
+    name: Gastprofilanlegung
+    description: |
+      Anlage von Gastprofilen aus beliebigen Ursprungskanälen oder Berührungspunkten.
+  BC-4040.10.20:
+    name: Gastprofil-Deduplizierung
+    description: |
+      Deduplizierung von Gastprofilen mittels deterministischem und probabilistischem Matching.
+  BC-4040.10.30:
+    name: Gastidentitätsverifikation
+    description: |
+      Verifikation der Gastidentität für hochwertige oder regulierte Interaktionen.
+  BC-4040.10.40:
+    name: Profilzusammenführung und Survivorship
+    description: |
+      Zusammenführung doppelter Profile und Auflösung von Attribut-Survivorship.
+  BC-4040.20:
+    name: Gast-Präferenz- und Personalisierungsmanagement
+    description: |
+      Erfassung und Stewardship von Gastpräferenzen zu Aufenthalt,
+      Ernährung und Barrierefreiheitsanforderungen sowie Personalisierungsregeln.
+  BC-4040.20.10:
+    name: Aufenthaltspräferenz-Erfassung
+    description: |
+      Erfassung von Aufenthaltspräferenzen wie Betttyp, Etage und Ankunftszeitpräferenzen.
+  BC-4040.20.20:
+    name: Ernährungs- und Allergenpräferenz-Management
+    description: |
+      Management von Ernährungs-, religiösen und Allergenpräferenzen
+      für F&B- und Borddienste.
+  BC-4040.20.30:
+    name: Barrierefreiheitsanforderungsmanagement
+    description: |
+      Management von Barrierefreiheitsanforderungen und Sonderhilfsbedarf
+      an Reisekontaktpunkten.
+  BC-4040.20.40:
+    name: Personalisierungsregeldefinition
+    description: |
+      Definition von Personalisierungsregeln zur Anwendung von Präferenzen
+      auf Service- und Merchandising-Interaktionen.
+  BC-4040.30:
+    name: Gast-Einwilligungs- und Datenschutzmanagement
+    description: |
+      Management von Gasteinwilligung, Marketingerlaubnis, Betroffenenrechten
+      und grenzüberschreitender Übertragungskonformität für Reisedaten.
+  BC-4040.30.10:
+    name: Einwilligungserfassung und -management
+    description: |
+      Erfassung und laufendes Management von Einwilligungsaufzeichnungen
+      über Zwecke und Kanäle.
+  BC-4040.30.20:
+    name: Marketingerlaubnis-Management
+    description: |
+      Management von Marketingerlaubnissen einschließlich kanalspezifischer Opt-in- und Opt-out-Zustände.
+  BC-4040.30.30:
+    name: Betroffenenanfragebearbeitung
+    description: |
+      Bearbeitung von Auskunfts-, Datenübertragbarkeits-, Berichtigungs- und Löschanfragen.
+  BC-4040.30.40:
+    name: Grenzüberschreitende Übertragungskonformität
+    description: |
+      Konformität mit grenzüberschreitenden Übertragungsanforderungen
+      für Reisende- und Gastdaten.
+  BC-4040.40:
+    name: Gasterkennung- und Tier-Status-Lieferung
+    description: |
+      Lieferung von Erkennungssignalen und Tierstatus an operative Teams
+      zur konsistenten Gasterkennung an allen Berührungspunkten.
+    in_scope:
+      - Erkennungsanstoß vor Ankunft und vor Ort
+      - Protokollierung und Abschluss der Erkennungslieferung
+    out_of_scope:
+      - Treueprogrammgestaltung und Earn/Burn (BC-4050)
+  BC-4040.40.10:
+    name: Erkennungsanstoß vor Ankunft
+    description: |
+      Anstoß von Erkennungserwartungen an operative Teams vor Gästeankunft.
+  BC-4040.40.20:
+    name: Gasterkennungslieferung vor Ort
+    description: |
+      Erkennungslieferung durch Front-Office-, F&B- und Concierge-Teams während des Aufenthalts.
+  BC-4040.40.30:
+    name: Erkennungsdienstprotokollierung
+    description: |
+      Protokollierung von Erkennungslieferungsereignissen für Serviceprüfung und Rückmeldeschleifen.
+  BC-4040.40.40:
+    name: Erkennungsabschluss-Berichterstattung
+    description: |
+      Berichterstattung über Erkennungsabschlussraten gegen Vorankünfts-Erkennungsanstosse.
+  BC-4040.50:
+    name: Gastsegmentierungs- und Analyse-Management
+    description: |
+      Definition von Gastsegmenten, Lifetime-Value- und Abwanderungsmodellierung
+      sowie Kohorteneinblicke und Verhaltensanalysen.
+  BC-4040.50.10:
+    name: Gastsegmentierungsdefinition
+    description: |
+      Definition und Pflege von Gastsegmenten für Marketing und Merchandising.
+  BC-4040.50.20:
+    name: Lifetime-Value-Modellierung
+    description: |
+      Modellierung des Gast-Lifetime-Value als Eingang für Investitions- und Anerkennungsentscheidungen.
+  BC-4040.50.30:
+    name: Gast-Abwanderungs- und Bindungsanalyse
+    description: |
+      Analyse von Gast-Abwanderungstreibern und Bindungsmöglichkeiten über Segmente.
+  BC-4040.50.40:
+    name: Kohortenanalyse und Verhaltenseinblicke
+    description: |
+      Generierung von Kohorten- und Verhaltenseinblicken aus Buchungs-, Aufenthalts- und Engagementvorgängen.
+  BC-4040.60:
+    name: Reisendedokument- und Compliance-Datenmanagement
+    description: |
+      Management von Reisedokument-, APIS-, Visa- und Watchlist-Daten
+      zur Erfüllung von Beförderungs- und Grenzübertrittsverpflichtungen.
+  BC-4040.60.10:
+    name: Reisedokumenterfassung
+    description: |
+      Erfassung von Reisepass-, Ausweis- und Visadaten für Reiseeignungs-
+      und Dokumentenprüfungen.
+  BC-4040.60.20:
+    name: APIS- und Vorab-Passagierinformations-Einreichung
+    description: |
+      Einreichung von APIS und Vorab-Passagierinformationen an Grenzkontrollbehörden.
+  BC-4040.60.30:
+    name: Visa- und ESTA-Berechtigungsreferenz
+    description: |
+      Referenzprüfungen gegen Visa-, ESTA- und gleichwertige Berechtigungsregimes.
+  BC-4040.60.40:
+    name: Secure-Flight- und No-Fly-Watchlist-Screening
+    description: |
+      Screening von Reisenden gegen Secure-Flight- und gleichwertige
+      No-Fly- und Watchlist-Programme.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

@@ -1,0 +1,183 @@
+locale: de
+source: L1-software-product-engineering-management.yaml
+entries:
+  BC-4200:
+    name: Software-Produktentwicklung Management
+    description: |
+      Entdeckung, Spezifikation, Design, Implementierung, Code-Review und
+      Qualitätsentwicklung von SaaS-Produkten von der Idee bis zum
+      releasefähigen Build.
+  BC-4200.10:
+    name: Produktentdeckung und Backlog-Management
+    description: |
+      Marktchancenforschung, Ideenfindung, Validierung und Backlog-Pflege,
+      die Markt- und Kundensignale in ein priorisiertes Arbeitspaket übersetzen.
+    in_scope:
+      - Nutzer- und Marktforschung
+      - Backlog-Pflege und Priorisierung
+      - Roadmap-Definition und -Aktualisierung
+    out_of_scope:
+      - Quantitative Produktanalysen (abgedeckt durch Produkttelemetrie- und Experimentierungsmanagement)
+      - Marketing-Nachfragegenerierung
+  BC-4200.10.10:
+    name: Nutzerforschung
+    description: |
+      Generative und evaluative Forschung mit Nutzern zur Aufdeckung von
+      Bedürfnissen, Reibungspunkten und Zahlungsbereitschaft.
+  BC-4200.10.20:
+    name: Backlog-Verfeinerung
+    description: |
+      Kontinuierliche Verfeinerung des Produkt-Backlogs einschließlich
+      Schätzung, Zerlegung und Neupriorisierung.
+  BC-4200.10.30:
+    name: Roadmap-Definition
+    description: |
+      Definition und regelmäßige Aktualisierung der Produkt-Roadmap und
+      thematischer Investitionsbereiche.
+  BC-4200.10.40:
+    name: Kundenfeedback-Synthese
+    description: |
+      Synthese eingehender Rückmeldungen aus Support, Customer Success,
+      Vertrieb und Community zu handlungsrelevanten Produktsignalen.
+  BC-4200.20:
+    name: Produktspezifikations-Management
+    description: |
+      Erfassung des beabsichtigten Verhaltens, der Rahmenbedingungen und
+      Abnahmekriterien, damit Entwicklungsarbeit vorhersehbar ausgeführt werden kann.
+    in_scope:
+      - Funktionale und nicht-funktionale Spezifikationen
+      - Abnahmekriterien
+    out_of_scope:
+      - Visuelles und Interaktionsdesign (abgedeckt durch Software-Design-Management)
+  BC-4200.20.10:
+    name: Funktionale Spezifikation
+    description: |
+      Spezifikation des beabsichtigten Verhaltens und nutzerrelevanter Ergebnisse
+      für Funktionen und Fähigkeiten.
+  BC-4200.20.20:
+    name: Nicht-funktionale Spezifikation
+    description: |
+      Spezifikation nicht-funktionaler Anforderungen wie Verfügbarkeit,
+      Latenz, Durchsatz und Sicherheitsprofil.
+  BC-4200.20.30:
+    name: Abnahmekriterien-Definition
+    description: |
+      Definition testbarer Abnahmekriterien, die das „Fertig" für
+      Funktionen und User Stories verankern.
+  BC-4200.30:
+    name: Software-Design-Management
+    description: |
+      User-Experience-, System- und Barrierefreiheitsdesign für
+      Softwareprodukte, verankert in gemeinsamen Design-Systemen.
+  BC-4200.30.10:
+    name: User-Experience-Design
+    description: |
+      Interaktions-, Informationsarchitektur- und visuelles Design
+      von Produktoberflächen.
+  BC-4200.30.20:
+    name: Systemdesign
+    description: |
+      Architekturdesign von Softwarekomponenten, Diensten, Datenflüssen
+      und externen Schnittstellen.
+  BC-4200.30.30:
+    name: Design-System-Pflege
+    description: |
+      Pflege des gemeinsamen Design-Systems einschließlich Komponenten,
+      Tokens und Nutzungsrichtlinien.
+  BC-4200.30.40:
+    name: Barrierefreiheitsdesign
+    description: |
+      Design-Konformität mit Barrierefreiheitsstandards über
+      Produktoberflächen hinweg.
+  BC-4200.40:
+    name: Software-Konstruktions-Management
+    description: |
+      Implementierungspraxis einschließlich Quellcodeverwaltung,
+      Code-Review und kollaborativer Programmierdisziplinen.
+  BC-4200.40.10:
+    name: Quellcode-Management
+    description: |
+      Pflege von Quellcode-Repositories, Branching-Policy und
+      Code-Eigentümerschaft.
+  BC-4200.40.20:
+    name: Code-Review-Praxis
+    description: |
+      Peer-Review von Codeänderungen gegen Entwicklungs- und
+      Sicherheitsstandards.
+  BC-4200.40.30:
+    name: Pair- und Mob-Programmierung
+    description: |
+      Kollaborative Programmierpraktiken zur Wissensverteilung und
+      Qualitätssteigerung bei ausgewählten Arbeitsgegenständen.
+  BC-4200.50:
+    name: Software-Qualitätsentwicklung
+    description: |
+      Teststrategie, automatisierte Testsuiten-Pflege und
+      Defekt-Management für Softwareprodukte.
+    in_scope:
+      - Automatisierte Unit-, Integrations- und End-to-End-Tests des Produkts
+      - Defekt-Triage und -Behebung
+    out_of_scope:
+      - Unternehmensweites Qualitätsmanagementsystem (abgedeckt durch Qualitätsmanagement)
+      - Performance- und Resilienztests des laufenden Dienstes (abgedeckt durch SaaS-Plattformbetrieb Management)
+  BC-4200.50.10:
+    name: Teststrategie-Definition
+    description: |
+      Definition der Teststrategie über Unit-, Integrations-,
+      End-to-End- und explorative Schichten.
+  BC-4200.50.20:
+    name: Automatisierte Testsuiten-Verwaltung
+    description: |
+      Pflege automatisierter Testsuiten einschließlich Abdeckung,
+      Instabilität und Laufzeit.
+  BC-4200.50.30:
+    name: Defekt-Triage und -Behebung
+    description: |
+      Triage und Behebung von Defekten, die gegen das Produkt gemeldet wurden.
+  BC-4200.50.40:
+    name: Regressions-Abdeckungs-Management
+    description: |
+      Management der Regressionsabdeckung bei Weiterentwicklung der
+      Produktoberfläche.
+  BC-4200.60:
+    name: Open-Source-Pflege
+    description: |
+      Eingehende Nutzung, ausgehende Beiträge und Lieferketten-Artefakte
+      für im Produkt eingebettete Open-Source-Software.
+  BC-4200.60.10:
+    name: Eingehende Open-Source-Compliance
+    description: |
+      Compliance mit eingehenden Open-Source-Lizenzen und Hinweispflichten.
+  BC-4200.60.20:
+    name: Ausgehende Open-Source-Beiträge
+    description: |
+      Governance ausgehender Beiträge zu und Pflege von
+      Open-Source-Projekten.
+  BC-4200.60.30:
+    name: Software-Stücklisten-Management
+    description: |
+      Generierung, Verteilung und Pflege von Software-Stücklisten
+      in Standardformaten.
+  BC-4200.70:
+    name: Entwicklerproduktivitäts-Management
+    description: |
+      Interne Entwicklerplattformen, Tooling und Messung der
+      Entwicklerleistung zur Steigerung des nachhaltigen Lieferdurchsatzes.
+  BC-4200.70.10:
+    name: Entwickler-Toolchain-Management
+    description: |
+      Auswahl und Pflege von Entwickler-Toolchains in der
+      Entwicklerorganisation.
+  BC-4200.70.20:
+    name: Interne Entwicklerplattform-Verwaltung
+    description: |
+      Betrieb interner Plattformen, die Infrastruktur und standardisierte
+      Workflows für Entwickler abstrahieren.
+  BC-4200.70.30:
+    name: Entwicklerleistungskennzahlen
+    description: |
+      Messung der Entwicklerleistung anhand von Liefer- und
+      Entwicklererfahrungskennzahlen.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

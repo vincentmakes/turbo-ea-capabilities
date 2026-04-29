@@ -1,0 +1,160 @@
+locale: de
+source: L1-electricity-distribution-operations-management.yaml
+entries:
+  BC-3820:
+    name: Stromverteilungsbetrieb Management
+    description: |
+      Betrieb von Mittel- und Niederspannungsverteilungsnetzen –
+      Leitstellendispatch, Fehlerreaktion und Wiederversorgung, Schalthandlungen,
+      Primär- und Sekundärumspannwerksbetrieb sowie Feldtruppenkoordination
+      zur Stromversorgung von Endkunden.
+  BC-3820.10:
+    name: Verteilungsleitstellenbetrieb
+    description: |
+      24/7-Leitstellenbetrieb des Verteilungsnetzes mittels
+      DMS/OMS/ADMS, Lagebilderstellung und Lastflussanalyse.
+  BC-3820.10.10:
+    name: ADMS-Betrieb
+    description: |
+      Betrieb fortgeschrittener Verteilungsmanagementsysteme zur Überwachung und Steuerung.
+  BC-3820.10.20:
+    name: Verteiler-SCADA-Betrieb
+    description: |
+      Echtzeit-SCADA-Erfassung und Steuerung von Verteilungsfeldern und Schaltern.
+  BC-3820.10.30:
+    name: Netztopologiemanagement
+    description: |
+      Pflege der betriebsaktuellen Netztopologie im Leitsystem.
+  BC-3820.20:
+    name: Schalt- und Wiederversorgungsbetrieb
+    description: |
+      Netzkonfiguration und Wiederversorgung nach geplanten und
+      ungeplanten Abschaltungen einschließlich FLISR-gestützter Selbstheilung.
+  BC-3820.20.10:
+    name: Schaltprogrammausführung
+    description: |
+      Autorisierte Ausführung von Verteilungsschaltprogrammen.
+  BC-3820.20.20:
+    name: Fehlerortung, Isolierung und Wiederversorgung
+    description: |
+      FLISR-gestützte Erkennung, Isolierung und Wiederversorgung bei Fehlern auf Abgangsfeldern.
+  BC-3820.20.30:
+    name: Rückspeisung und Inselnetzbetrieb
+    description: |
+      Koordination von Feldrückspeisungen und beabsichtigtem Inselnetzbetrieb zur Wiederversorgung.
+  BC-3820.30:
+    name: Fehlerbehebungsbetrieb
+    description: |
+      Durchgängige Reaktion auf Fehler im Verteilungsnetz von der
+      Erkennung über die Feldreparatur bis zur Kundenkommunikation.
+    in_scope:
+      - Fehlererkennung und Patrouille
+      - Truppzuweisung zu Fehlerstellen
+      - Abschaltkommunikation an Kunden
+    out_of_scope:
+      - DER-bezogene Abschaltbehandlung (BC-3840)
+      - Großhandelserzeugungsabschaltungen (BC-3800.10)
+  BC-3820.30.10:
+    name: Fehlerpriorisierung
+    description: |
+      Priorisierung von Fehlermeldungen aus Feld-, Kunden- und Telemetriequellen.
+  BC-3820.30.20:
+    name: Feldstörungspatrouille
+    description: |
+      Feldpatrouille zur Lokalisierung und Bestätigung von Fehlern an Freileitungs- und Kabelanlagen.
+  BC-3820.30.30:
+    name: Wiederversorgungsverfolgung
+    description: |
+      Verfolgung des Wiederversorgungsfortschritts und der Kundenminnuten-Verluststatistiken.
+  BC-3820.30.40:
+    name: Großereignisreaktion
+    description: |
+      Sturm- und Großereignis-Verteilungsreaktion einschließlich gegenseitiger Hilfstrupps.
+  BC-3820.40:
+    name: Feldtruppdispatchbetrieb
+    description: |
+      Dispatch, Routenplanung und Feldeinsatzunterstützung für Verteilungsfeldtrupps
+      bei Fehlern, geplanten Arbeiten und Kundenaufträgen.
+  BC-3820.40.10:
+    name: Truppschichtplanung
+    description: |
+      Tägliche Planung von Truppbesetzungen und Bereitschaftsrotationen.
+  BC-3820.40.20:
+    name: Auftragsdispatch und Routenplanung
+    description: |
+      Dispatch und Routenplanung von Aufträgen zu Feldtrupps aus Arbeitsmanagementsystemen.
+  BC-3820.40.30:
+    name: Feldauftragabschluss
+    description: |
+      Erfassung von Bestandsänderungen, verwendeten Materialien und Zeiten beim Auftragsabschluss.
+  BC-3820.50:
+    name: Verteilungsanlageninspektion
+    description: |
+      Routine- und zustandsorientierte Inspektion von Freileitungen,
+      Masten, Erdkabeln und Verteilungsumspannwerken.
+  BC-3820.50.10:
+    name: Mast- und Freileitungsinspektion
+    description: |
+      Zyklische Mast- und Freileitungsinspektion einschließlich thermografischer Aufnahmen.
+  BC-3820.50.20:
+    name: Erdnetzinspektion
+    description: |
+      Inspektion und Zustandserhebung von Erdkabeln, Verbindungsboxen und Muffen.
+  BC-3820.50.30:
+    name: Verteilungsumspannwerksinspektion
+    description: |
+      Routinemäßige Inspektion von Primär-, Sekundär- und Kundenumspannwerken.
+  BC-3820.60:
+    name: Vegetation und Schutzstreifenmanagement
+    description: |
+      Vegetationsbeseitigung und Schutzstreifenpflege auf Verteilungsleitungen
+      zur Beherrschung von Abschaltrisiken und gesetzlich vorgeschriebenen Abstanden.
+  BC-3820.60.10:
+    name: Vegetationszyklusplanung
+    description: |
+      Zyklusbasierte und risikobasierte Planung von Vegetationsarbeiten an Verteilungsleitungen.
+  BC-3820.60.20:
+    name: Vegetationsfeldbetrieb
+    description: |
+      Felddurchführung von Schnitt-, Fäll- und Herbizidarbeiten.
+  BC-3820.60.30:
+    name: Waldbrandrisikominderungsbetrieb
+    description: |
+      PSPS-, Schnellauslöse- und Leitungsverhärtungsmaßnahmen in Waldbrandrisikobereichen.
+  BC-3820.70:
+    name: Neuanschlussbetrieb
+    description: |
+      Herstellung neuer und geänderter elektrischer Anschlüsse für
+      Haus-, Gewerbe- und Industriekunden sowie Projektentwickler.
+  BC-3820.70.10:
+    name: Anschlussbewertung
+    description: |
+      Technische Bewertung von Neuantragsanträgen und verfügbarer Kapazität.
+  BC-3820.70.20:
+    name: Anschlussplanung
+    description: |
+      Detaillierte Anschlussplanung, Netzanschlusspunkt und Verstärkungsanforderungen.
+  BC-3820.70.30:
+    name: Anschlussinbetriebnahme
+    description: |
+      Inbetriebnahme neuer Anschlüsse und Einschaltabnahme.
+  BC-3820.80:
+    name: Spannungsqualitätsmanagement
+    description: |
+      Überwachung und Behebung von Verteilungsspannungsniveaus,
+      Flicker, Oberwellen und Kundenbeschwerden zur Spannungsqualität.
+  BC-3820.80.10:
+    name: Spannungsüberwachung
+    description: |
+      Überwachung von Feldspannungsprofilen gegen gesetzliche Grenzwerte.
+  BC-3820.80.20:
+    name: Oberwellen- und Flickerüberwachung
+    description: |
+      Netzüberwachung von Oberwellenverzerrungen und Spannungsflicker.
+  BC-3820.80.30:
+    name: Kundenbeschwerdeuntersuchung Spannungsqualität
+    description: |
+      Untersuchung und Behebung von kundengemeldeten Spannungsqualitätsproblemen.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

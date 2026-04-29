@@ -1,0 +1,188 @@
+locale: de
+source: L1-travel-product-inventory-management.yaml
+entries:
+  BC-4000:
+    name: Reiseprodukt und Reiseinventar Management
+    description: |
+      Masterdefinition, Struktur und Inventarkontrolle buchbarer Reiseprodukte –
+      Zimmer, Tarife, Pakete, Zusatzleistungen, Attraktionen sowie Taxonomie
+      und Inhaltsdaten, unabhängig von den Vertriebskanälen.
+    in_scope:
+      - Unterkunfts-Zimmertypen, Ratenpläne und Paketcodes
+      - Luftfahrt-Tarifgruppen, Markenleistungstarife und Tarifregeln
+      - Verpackte Reisepläne (statisch und dynamisch) und Zusatzleistungskataloge
+      - Inventarpools, Kontingente und Überbuchungspuffer
+      - Produktstammdaten, Inhalte und Bildmaterial
+    out_of_scope:
+      - Kanalspezifische Vertriebsverkabelung (BC-4010)
+      - Reservierungslebenszyklus und Buchungen (BC-4020)
+      - Preisstrategie und Yield-Entscheidungen (BC-4030)
+  BC-4000.10:
+    name: Unterkunftsproduktmanagement
+    description: |
+      Definition von Unterkunftsprodukten einschließlich Zimmertypen, Ratenplänen,
+      Paketcodes und Unterkunftstaxonomie für das gesamte Unternehmen.
+  BC-4000.10.10:
+    name: Zimmertyp- und Inventarklassendefinition
+    description: |
+      Definition von Zimmertypen, Suitenkategorien und Inventarklassen
+      als Grundlage des Unterkunftsprodukts.
+  BC-4000.10.20:
+    name: Ratenplan- und Ratencodegestaltung
+    description: |
+      Definition von Ratenplänen, Ratencodes und Ratenplanattributen
+      zu Erstattungsfähigkeit, Vorauszahlung und Inklusivleistungen.
+  BC-4000.10.30:
+    name: Unterkunftsprodukt-Lebenszyklus-Status
+    description: |
+      Lebenszyklus-Statusmanagement für Unterkunftsprodukte von der Entwicklung
+      bis Aktiv, Gesperrt und Eingestellt.
+  BC-4000.10.40:
+    name: Unterkunftsprodukt-Bündelung
+    description: |
+      Erstellung von Unterkunftsbundles mit Frühstück, Parkplatz und weiteren Inklusivleistungen.
+  BC-4000.20:
+    name: Flugproduktmanagement
+    description: |
+      Definition von Airline-Tarifgruppen, Markenleistungsattributen,
+      Tarifregeln und Codeshare-/Interline-Produktzuordnungen.
+  BC-4000.20.10:
+    name: Tarifgruppendefinition
+    description: |
+      Definition von Tarifgruppen, Kabinen und Tarifeimern für
+      Angebot und Inventarsteuerung.
+  BC-4000.20.20:
+    name: Markenleistungsattribut-Management
+    description: |
+      Management von Markenleistungsattributen wie Freigepäck,
+      Sitzplatzwahl und Lounge-Zugang.
+  BC-4000.20.30:
+    name: Tarifregelerfassung
+    description: |
+      Erfassung von Tarifregeln zu Vorausbuchungsfrist, Mindestaufenthalt,
+      Kombinierbarkeit und Änderungsgebühren.
+  BC-4000.20.40:
+    name: Codeshare- und Interline-Produktzuordnung
+    description: |
+      Zuordnung von Partnerfluggesellschaftsprodukten zu eigenen Tarifgruppen
+      für Codeshare- und Interline-Vertrieb.
+  BC-4000.30:
+    name: Reise- und Paketproduktmanagement
+    description: |
+      Definition von Pauschalreiseplänen, Mehrstreckenprodukten und
+      Dynamikpaketierskomponentenzuordnungen.
+  BC-4000.30.10:
+    name: Statisches Paketprodukt-Definition
+    description: |
+      Definition von Festpaketen mit fixen Komponenten als einzelnes verkäufliches Produkt.
+  BC-4000.30.20:
+    name: Dynamikpaketierungs-Komponentenzuordnung
+    description: |
+      Zuordnung von Komponenten für Dynamikpaketiering, bei der der Reisende
+      Flug, Hotel und Zusatzleistungen beim Buchungsvorgang zusammenstellt.
+  BC-4000.30.30:
+    name: Paketprodukt-Versionierung
+    description: |
+      Versionierung von Paketprodukten über Saisonen, Katalogszyklen und Funktionsveröffentlichungen.
+  BC-4000.30.40:
+    name: Paketabreisekalender
+    description: |
+      Definition von Paketabreisekalendern, Sperrfristen und Saison-Fenstern.
+  BC-4000.40:
+    name: Zusatzleistungs- und Optionsproduktmanagement
+    description: |
+      Definition von Zusatzleistungen wie Mahlzeiten, Gepäck, Transfers,
+      Attraktionen, Spa und Bodendiensten.
+  BC-4000.40.10:
+    name: Zusatzleistungskatalogdefinition
+    description: |
+      Definition des Zusatzleistungskatalogs einschließlich Kategorien,
+      Varianten und Anwendungsbedingungen.
+  BC-4000.40.20:
+    name: Zusatzleistungs-Bündelungsregeln
+    description: |
+      Regeln zur Bündelung von Zusatzleistungen mit Hauptreiseprodukten
+      und anderen Zusatzleistungen.
+  BC-4000.40.30:
+    name: Cross-Selling-Zulässigkeitsregeln
+    description: |
+      Zulässigkeitsregeln für den Cross-Sell von Zusatzleistungen
+      mit Hauptprodukten in bestimmten Kanälen.
+  BC-4000.40.40:
+    name: Zusatzleistungs-Lebenszyklusmanagement
+    description: |
+      Lebenszyklusmanagement von Zusatzleistungen von der Einführung bis zur Einstellung.
+  BC-4000.50:
+    name: Reiseinventarzuteilung
+    description: |
+      Definition und Kontrolle von Inventarpools, Kontingenten und
+      Rückhalteregeln für Reiseprodukte.
+  BC-4000.50.10:
+    name: Inventarpooldefinition
+    description: |
+      Definition von Inventarpools auf Unterkunfts-, Flotten- oder
+      Produktebene als Grundlage der Zuteilung.
+  BC-4000.50.20:
+    name: Kontingent- und Blockvergabe
+    description: |
+      Zuteilung von Kontingenten und Blöcken an Kanäle, Partner und Reiseveranstalter.
+  BC-4000.50.30:
+    name: Rückhalte- und Schutzklassenregeln
+    description: |
+      Regeln zum Schutz von Inventar für bestimmte Segmente, Kanäle oder Treueprogrammmitglieder.
+  BC-4000.50.40:
+    name: Überbuchungspufferkonfiguration
+    description: |
+      Konfiguration von Überbuchungspuffern entsprechend erwarteter No-Show-
+      und Stornierungsraten.
+  BC-4000.60:
+    name: Reiseprodukt-Stammdaten-Governance
+    description: |
+      Stewardship von Produkttaxonomie, Klassifizierungen, Attributstandards
+      und Kennungsintegrität im Reiseprodukt-Master.
+  BC-4000.60.10:
+    name: Produktattributstandards
+    description: |
+      Standards für Produktattribute zur Sicherstellung konsistenter Semantik
+      über Systeme und Kanäle hinweg.
+  BC-4000.60.20:
+    name: Produktklassifizierung und Tagging
+    description: |
+      Klassifizierung und Tagging von Produkten gegen Taxonomien für
+      Suche, Merchandising und Berichterstattung.
+  BC-4000.60.30:
+    name: Produktmaster-Lebenszyklus-Status
+    description: |
+      Master-Lebenszyklusstatus für Produkte über Sub-Produkttypen hinweg
+      mit Ausrichtung von Kindstatusänderungen.
+  BC-4000.60.40:
+    name: Produktkennungs-Stewardship
+    description: |
+      Stewardship kanonischer Produktkennungen und Auflösung von
+      Kennungskollisionen und Duplikaten.
+  BC-4000.70:
+    name: Reiseinhalts- und Bildmaterialmanagement
+    description: |
+      Erstellung und Verwaltung beschreibender Inhalte, Bildmaterial, Multimedia-Assets
+      und Bewertungs-/Zertifizierungsnachweise für Reiseprodukte.
+  BC-4000.70.10:
+    name: Beschreibende Inhaltserstellung
+    description: |
+      Erstellung von Lang- und Kurzformat-Beschreibungen für Reiseprodukte.
+  BC-4000.70.20:
+    name: Bild- und Multimedia-Asset-Management
+    description: |
+      Verwaltung von Foto-, Video- und 360-Grad-Multimedia-Assets
+      zu Reiseprodukten.
+  BC-4000.70.30:
+    name: Sternebewertungs- und Zertifizierungsunterlagen
+    description: |
+      Pflege von Sternebewertungen, Drittanbieterzertifizierungen und
+      Qualitätssiegeln für Reiseprodukte.
+  BC-4000.70.40:
+    name: Inhaltslokalisierung
+    description: |
+      Lokalisierung von Produktinhalten für unterstützte Märkte und Sprachen.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

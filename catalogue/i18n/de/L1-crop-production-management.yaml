@@ -1,0 +1,193 @@
+locale: de
+source: L1-crop-production-management.yaml
+entries:
+  BC-3500:
+    name: Pflanzenbau-Management
+    description: |
+      Landwirtschaftliche Anbaubetriebe – Anbausystemplanung,
+      Bodenbearbeitung, Aussaat, Düngung, Pflanzenschutz,
+      Bewässerung, Überwachung und Ertragsschätzung für Acker-,
+      Gartenbau- und Spezialkulturen.
+  BC-3500.10:
+    name: Anbausystem-Planung
+    description: |
+      Mehrjährige Planung von Fruchtfolgen, Schlagverteilungen,
+      Aussaatfenstern und Sortenwahl über das gesamte Betriebsportfolio.
+    in_scope:
+      - Fruchtfolge-Design
+      - Schlagbasierte Kulturenverteilung
+      - Aussaatfenster-Planung
+      - Sorten- und Hybridauswahl
+    out_of_scope:
+      - Sortenverdurchführung (BC-3530.60)
+      - Agronomische Empfehlungen (BC-3530.20)
+  BC-3500.10.10:
+    name: Fruchtfolge-Planung
+    description: |
+      Mehrjährige Fruchtfolge-Planung zur Ausgewogenheit von
+      Bodengesundheit, Marktnachfrage und Schädlingszyklen.
+  BC-3500.10.20:
+    name: Schlagverteilungs-Planung
+    description: |
+      Zuweisung von Kulturen auf bestimmte Schläge und Parzellen
+      für die Anbausaison.
+  BC-3500.10.30:
+    name: Aussaatfenster-Planung
+    description: |
+      Planung optimaler Aussaatfenster nach Kultur, Sorte und
+      agrarklimatischer Zone.
+  BC-3500.10.40:
+    name: Sortenauswahl-Entscheidungen
+    description: |
+      Auswahl von Sorten und Hybriden für die Anbausaison auf Basis
+      agronomischer und marktlicher Kriterien.
+  BC-3500.20:
+    name: Bodenbearbeitungs-Betrieb
+    description: |
+      Bodenbearbeitung, Beetvorbereitung und Voraussaat-Boden-
+      verbesserungsmaßnahmen zur Herstellung eines keimfähigen Saatbetts.
+  BC-3500.20.10:
+    name: Bodenbearbeitungs-Betrieb
+    description: |
+      Konventionelle, reduzierte und Direktsaat-Feldvorbereitungen.
+  BC-3500.20.20:
+    name: Beet-Vorbereitungs-Betrieb
+    description: |
+      Beetforming, Dammkultur und Mulchen für Gartenbau-
+      und Reihenkulturen.
+  BC-3500.20.30:
+    name: Voraussaat-Bodenverbesserungs-Ausbringung
+    description: |
+      Ausbringung von Voraussaat-Bodenverbesserern wie Kalk,
+      Gips und organischem Material.
+  BC-3500.30:
+    name: Aussaat- und Pflanzungs-Betrieb
+    description: |
+      Saatgut- und Pflanzgutablage einschließlich Nachsaat-
+      Entscheidungen und Bestandsetablierung.
+  BC-3500.30.10:
+    name: Saatbett-Fertigstellung
+    description: |
+      Endgültige Saatbett-Vorbereitung unmittelbar vor der Aussaat.
+  BC-3500.30.20:
+    name: Saatgut- und Pflanzgut-Ablage
+    description: |
+      Mechanische und manuelle Ablage von Saatgut und Pflanzgut
+      auf dem Feld.
+  BC-3500.30.30:
+    name: Nachsaat- und Lückenschluss-Betrieb
+    description: |
+      Nachsaat und Lückenschluss bei unzureichender Bestandsetablierung.
+  BC-3500.40:
+    name: Pflanzenernährungs-Betrieb
+    description: |
+      Nährstoffzufuhr während der Saison durch Fest-, Flüssig-,
+      Blatt- und Fertigationsmethoden.
+  BC-3500.40.10:
+    name: Festdünger-Ausbringung
+    description: |
+      Breitband-, Reihen- und variabelraten Festdünger-Ausbringung.
+  BC-3500.40.20:
+    name: Blattdünger-Ausbringung
+    description: |
+      Blattapplikation von Makro- und Mikronährstoffen während
+      der Vegetationsperiode.
+  BC-3500.40.30:
+    name: Fertigations-Betrieb
+    description: |
+      Nährstoffzufuhr über Bewässerungssysteme einschließlich
+      Injektions- und Dosiersteuerung.
+  BC-3500.50:
+    name: Pflanzenschutz-Betrieb
+    description: |
+      Ausbringung chemischer, biologischer und mechanischer
+      Pflanzenschutzmaßnahmen sowie dazugehörige Aufzeichnungen.
+    in_scope:
+      - Pestizid- und Herbizid-Ausbringung
+      - Ausbringung biologischer Pflanzenschutzmittel
+      - Mechanische und thermische Unkrautbekämpfung
+      - Spritz- und Applikationsaufzeichnungen
+    out_of_scope:
+      - IPM-Planung (BC-3530.30)
+      - HHR-Konformitätsüberwachung (BC-3590.50)
+  BC-3500.50.10:
+    name: Pestizid-Ausbringung
+    description: |
+      Boden- und Luftpestizid-Ausbringung einschließlich
+      Abdrift-Management.
+  BC-3500.50.20:
+    name: Biologische Pflanzenschutz-Ausbringung
+    description: |
+      Freilassung von Nützlingen und Biopestizid-Produkten.
+  BC-3500.50.30:
+    name: Mechanische und Thermische Unkrautbekämpfung
+    description: |
+      Mechanische und thermische Unkrautbekämpfung einschließlich
+      Bearbeitung und Abflammung.
+  BC-3500.50.40:
+    name: Spritzapplikation-Aufzeichnung
+    description: |
+      Feldspezifische Spritzaufzeichnungen mit Produkt, Aufwandmenge,
+      Wetter und Bediener.
+  BC-3500.60:
+    name: Bewässerungs-Betrieb
+    description: |
+      Tägliche Bewässerungsplanung, Applikation und Drainage-
+      Entscheidungen zur Steuerung des Pflanzenwasserstatus.
+  BC-3500.60.10:
+    name: Bewässerungsplanung
+    description: |
+      Bodenfeuchte- und Pflanzenbedarf-basierte Bewässerungsplanung.
+  BC-3500.60.20:
+    name: Bewässerungsapplikations-Betrieb
+    description: |
+      Applikation von Bewässerungswasser über Regen-, Tropf- und
+      Oberflächensysteme.
+  BC-3500.60.30:
+    name: Feldentwässerungs-Betrieb
+    description: |
+      Oberflächen- und Unterdrainagebetrieb und Grundwasserspiegels-
+      Steuerung.
+  BC-3500.70:
+    name: Pflanzenüberwachung und -Scouting
+    description: |
+      Feldüberwachung von Pflanzengesundheit, Schädlingsdruck und
+      Phänologie durch Scouting-, Sensor- und Fernerkundungsmethoden.
+  BC-3500.70.10:
+    name: Feld-Scouting-Betrieb
+    description: |
+      Manuelle Scouting-Begehungen für Schädlings-, Krankheits-
+      und Pflanzenzustandsbeurteilung.
+  BC-3500.70.20:
+    name: Schädlings- und Krankheits-Surveillance
+    description: |
+      Fallen- und Sensor-basierte Überwachung von Schädlings-
+      und Krankheitsdruck.
+  BC-3500.70.30:
+    name: Pflanzen-Phänologie-Verfolgung
+    description: |
+      Verfolgung von Wachstumsstadien, Wärmeeinheiten und
+      phänologischen Meilensteinen.
+  BC-3500.70.40:
+    name: Fernerkundungs-Pflanzenüberwachung
+    description: |
+      Satelliten-, Drohnen- und Proximal-Sensor-basierte
+      Pflanzenstatusüberwachung.
+  BC-3500.80:
+    name: Ertragsschätzung
+    description: |
+      Saisonal und vor der Ernte Ertragsschätzungen für Originierung,
+      Logistik und kommerzielle Planung.
+  BC-3500.80.10:
+    name: Saisonale Ertragsschätzung
+    description: |
+      Midsaisonale Ertragschätzungen aus Kulturindizes und
+      Feldmessungen.
+  BC-3500.80.20:
+    name: Erntevorhersage
+    description: |
+      Erntevorhersagen vor der Ernte für Ernte-, Lager- und
+      Originierungspläne.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

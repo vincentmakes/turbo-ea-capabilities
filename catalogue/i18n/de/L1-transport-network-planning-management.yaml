@@ -1,0 +1,101 @@
+locale: de
+source: L1-transport-network-planning-management.yaml
+entries:
+  BC-2410:
+    name: Transportnetzplanung
+    description: |
+      Gestaltung von Transportnetzwerken, Strecken, Hubs, Fahrplänen und Modalitätsmix,
+      die das Dienstleistungsportfolio des Carriers oder 3PL bestimmen.
+  BC-2410.10:
+    name: Netzwerkdesign-Management
+    description: |
+      Langfristiges Design von Hubs, Gateways, Strecken und Modalitätsmix zur
+      Unterstützung des Dienstleistungsportfolios.
+    in_scope:
+      - Hub-and-Spoke- und Punkt-zu-Punkt-Strukturentscheidungen
+      - Modalitätsmix-Design über Straße, Schiene, See und Luft
+    out_of_scope:
+      - Nachfrageseitiges Netzwerkdesign durch Versender (BC-520)
+  BC-2410.10.10:
+    name: Hub- und Gateway-Design
+    description: |
+      Auswahl und Dimensionierung von Hubs, Gateways und Konsolidierungspunkten.
+  BC-2410.10.20:
+    name: Strecken- und Service-Design
+    description: |
+      Definition von Ursprungs-Ziel-Strecken und den darauf verkehrenden Services.
+  BC-2410.10.30:
+    name: Modalitätsmix-Design
+    description: |
+      Wahl des Verkehrsträgers und intermodalen Mix für jede Strecke und Servicestufe.
+  BC-2410.20:
+    name: Fahrplanplanungs-Management
+    description: |
+      Erstellung von Masterfahrplänen, Slots und Servicezeitfenstern für Schiffsfahrten,
+      Flüge, Zugpfade und LKW-Abfahrten.
+  BC-2410.20.10:
+    name: Masterfahrplan-Design
+    description: |
+      Design wiederkehrender Schiffs-, Flug-, Zug- und LKW-Fahrpläne.
+  BC-2410.20.20:
+    name: Slot- und Zeitfensterplanung
+    description: |
+      Zuweisung von Liegeplatz-, Start- und Gate-Zeitfenstern an geplante Services.
+  BC-2410.20.30:
+    name: Fahrplanveröffentlichung
+    description: |
+      Veröffentlichung von Fahrplänen an Kunden, Partner und Buchungskanäle.
+  BC-2410.30:
+    name: Servicemuster-Management
+    description: |
+      Definition von Serviceprodukten, Transitzeitkategorien und dem Katalog
+      der Kundenservices.
+  BC-2410.30.10:
+    name: Servicelevel-Definition
+    description: |
+      Definition von Express-, Standard-, Verzögerungs- und intermodalen Servicestufen
+      mit ihren Leistungsversprechen.
+  BC-2410.30.20:
+    name: Transitzeitgestaltung
+    description: |
+      Gestaltung der Ende-zu-Ende-Transitzeiten über Streckenabschnitte und Umladepunkte.
+  BC-2410.30.30:
+    name: Servicekatalog-Management
+    description: |
+      Pflege des veröffentlichten Katalogs der Transportservices.
+  BC-2410.40:
+    name: Kapazitäts-Nachfrage-Ausgleichs-Management
+    description: |
+      Abstimmung der geplanten Kapazität mit der prognostizierten Nachfrage einschließlich
+      Leercontainer-Repositionierung.
+  BC-2410.40.10:
+    name: Nachfrageprognose-Integration
+    description: |
+      Integration von Kunden- und Marktnachfrageprognosen in Netzwerkpläne.
+  BC-2410.40.20:
+    name: Kapazitätsplan-Abstimmung
+    description: |
+      Abstimmung der geplanten Kapazität gegenüber Nachfrage und Einschränkungen.
+  BC-2410.40.30:
+    name: Leerausrüstungs-Repositionierungsplanung
+    description: |
+      Planung der Repositionierung leerer Container, Trailer und ULDs.
+  BC-2410.50:
+    name: Netzwerkoptimierung und Simulation
+    description: |
+      Modellierung, Simulation und Benchmarking von Netzwerkoptionen und Störungsszenarien.
+  BC-2410.50.10:
+    name: Netzwerkmodellierung
+    description: |
+      Erstellung analytischer Modelle des Transportnetzwerks.
+  BC-2410.50.20:
+    name: Szenariosimulation
+    description: |
+      Simulation von Nachfrage-, Störungs- und Designalternativen.
+  BC-2410.50.30:
+    name: Netzwerkleistungs-Benchmarking
+    description: |
+      Benchmarking von Netzwerkkosten und Service gegenüber Wettbewerbern und früheren Konfigurationen.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

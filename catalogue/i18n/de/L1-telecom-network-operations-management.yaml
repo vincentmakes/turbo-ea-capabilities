@@ -1,0 +1,188 @@
+locale: de
+source: L1-telecom-network-operations-management.yaml
+entries:
+  BC-2600:
+    name: Telekommunikations-Netzbetrieb
+    description: |
+      Täglicher Betrieb von Fest-, Mobil- und IP-Netzen über Funkzugang, Kernnetz,
+      Transport und Edge – umfasst Fehler-, Konfigurations-, Leistungs-, Inventar-,
+      Änderungs-, Sicherheitsbetrieb und Feldkoordination auf Basis von TMN FCAPS
+      und eTOM-Ressourcenverwaltung und -betrieb.
+  BC-2600.10:
+    name: Netzfehler-Management
+    description: |
+      Erkennung, Korrelation, Ticketing, Wiederherstellung und Ursachenanalyse von
+      Netzfehlern in Zugangs-, Kern- und Transportdomänen.
+  BC-2600.10.10:
+    name: Alarmkorrelation
+    description: |
+      Echtzeit-Korrelation und Deduplizierung von Netzalarmen zu handlungsrelevanten Ereignissen.
+  BC-2600.10.20:
+    name: Störungsticket-Management
+    description: |
+      Lebenszyklusverwaltung von Netzstörungstickets von der Erstellung bis zum Abschluss.
+  BC-2600.10.30:
+    name: Netzausfall-Management
+    description: |
+      Koordination von Netzausfallreaktionen, Kommunikation und Wiederherstellungsmaßnahmen.
+  BC-2600.10.40:
+    name: Ursachenanalyse
+    description: |
+      Strukturierte Untersuchung wiederkehrender oder schwerwiegender Fehler zur
+      Identifikation und Beseitigung zugrunde liegender Ursachen.
+  BC-2600.20:
+    name: Netzwerk-Konfigurationsmanagement
+    description: |
+      Definition und Durchsetzung von Netzelementkonfigurations-Standards und
+      kontrollierte Bereitstellung von Konfigurationsänderungen.
+  BC-2600.20.10:
+    name: Goldkonfigurations-Management
+    description: |
+      Definition und Pflege genehmigter Baseline-Konfigurationen je Netzelementtyp und -rolle.
+  BC-2600.20.20:
+    name: Netzparameter-Management
+    description: |
+      Lebenszyklusverwaltung einstellbarer Netzparameter und ihrer autorisierten Bereiche.
+  BC-2600.20.30:
+    name: Software-Image-Management
+    description: |
+      Verwahrung und genehmigte Versionskontrolle von Netzelement-Software-Images und Firmware.
+  BC-2600.20.40:
+    name: Automatisierte Konfigurationsbereitstellung
+    description: |
+      Werkzeuggesteuerte Bereitstellung genehmigter Konfigurationsänderungen im großen Maßstab
+      mit Verifizierung und Rollback.
+  BC-2600.30:
+    name: Netzleistungs-Management
+    description: |
+      Kontinuierliche Erfassung und Analyse von Netzleistungszählern und KPIs
+      zur Erkennung und Prävention von Leistungsabfall.
+  BC-2600.30.10:
+    name: Netz-KPI-Erfassung
+    description: |
+      Sammlung und Speicherung von Element- und Netzebenen-Leistungszählern und KPIs.
+  BC-2600.30.20:
+    name: Schwellenwertüberwachung
+    description: |
+      Überwachung von Leistungs-KPIs gegen Ingenieurs- und SLA-Schwellenwerte.
+  BC-2600.30.30:
+    name: Kapazitätsauslastungs-Überwachung
+    description: |
+      Verfolgung der Ressourcenauslastung gegenüber der Engineered Capacity zur
+      Erkennung von Sättigungszuständen.
+  BC-2600.30.40:
+    name: Kundenwirkungskorrelation
+    description: |
+      Korrelation von Netzleistungssignalen mit Kundenerfahrungs-Indikatoren zur
+      Identifikation dienstbeeinträchtigender Zustände.
+  BC-2600.40:
+    name: Netzinventar-Management
+    description: |
+      Maßgeblicher Datensatz logischer und physischer Netzressourcen und ihrer
+      Beziehungen, synchronisiert mit der Realität durch Abstimmung.
+  BC-2600.40.10:
+    name: Logisches Netzinventar
+    description: |
+      Maßgeblicher Datensatz logischer Ressourcen wie Dienste, Schaltkreise,
+      IP/VLAN-Zuweisungen und Trägerpfade.
+  BC-2600.40.20:
+    name: Physisches Netzinventar
+    description: |
+      Maßgeblicher Datensatz physischer Assets wie Knoten, Karten, Ports,
+      Glasfaser, Leerrohre und Antennen.
+  BC-2600.40.30:
+    name: Inventarabstimmung
+    description: |
+      Abstimmung von Inventardatensätzen gegen Entdeckung, Design und Felderhebungen.
+  BC-2600.40.40:
+    name: Netzressourcen-Entdeckung
+    description: |
+      Automatisierte Entdeckung eingesetzter Netzelemente und ihrer Zustände.
+  BC-2600.50:
+    name: Netzänderungs- und Release-Management
+    description: |
+      Planung, Genehmigung, Durchführung, Verifizierung und Rollback von Änderungen
+      an Live-Netzelementen und Diensten.
+  BC-2600.50.10:
+    name: Netzänderungs-Planung
+    description: |
+      Planung und Risikobewertung von Netzänderungen einschließlich Auswirkungsfenstern.
+  BC-2600.50.20:
+    name: Netzänderungs-Umsetzung
+    description: |
+      Kontrollierte Durchführung genehmigter Netzänderungen innerhalb geplanter Fenster.
+  BC-2600.50.30:
+    name: Änderungsverifizierung
+    description: |
+      Nachänderungs-Verifizierung, dass das Netz den erwarteten Zustand hat und
+      innerhalb der Toleranz funktioniert.
+  BC-2600.50.40:
+    name: Änderungs-Rollback
+    description: |
+      Rücknahme von Änderungen, die die Verifizierung nicht bestehen oder inakzeptable Auswirkungen auslösen.
+  BC-2600.60:
+    name: Netzsicherheits-Betrieb
+    description: |
+      Telekommunikations-netzspezifische Sicherheitsüberwachung und -reaktion
+      für Signalisierungs-, Transport- und Kernnetzdomänen, ergänzend zur Unternehmens-Cybersicherheit.
+  BC-2600.60.10:
+    name: Netzbedrohungs-Überwachung
+    description: |
+      Überwachung von Signalisierungs-, Transport- und Kernnetzen auf anomale
+      und böswillige Aktivitäten.
+  BC-2600.60.20:
+    name: DDoS-Schutz
+    description: |
+      Erkennung und Abwehr volumetrischer und protokollbasierter Denial-of-Service-Angriffe
+      gegen Netz- und Kundenendpunkte.
+  BC-2600.60.30:
+    name: Netzzugangs-Kontrolle
+    description: |
+      Durchsetzung von administrativen und maschinellen Zugriffskontrollen zu Netzelementen.
+  BC-2600.60.40:
+    name: Netzsicherheits-Vorfallreaktion
+    description: |
+      Eindämmung, Beseitigung und Wiederherstellung nach bestätigten Netzsicherheitsvorfällen.
+  BC-2600.70:
+    name: Feldbetrieb-Koordination
+    description: |
+      Disposition, Ausführungssteuerung und Standortzugangskoordination für
+      Netz-Feldaktivitäten.
+  BC-2600.70.10:
+    name: Feldarbeitsauftrag-Disposition
+    description: |
+      Zuweisung von Netzarbeitsaufträgen an interne und externe Feldteams.
+  BC-2600.70.20:
+    name: Verfahrens-Ausführungssteuerung
+    description: |
+      Ausführungssteuerung genehmigter Verfahren an Live-Netzelementen.
+  BC-2600.70.30:
+    name: Standortzugangs-Koordination
+    description: |
+      Koordination des physischen Zugangs zu Netzstandorten einschließlich Begleitung,
+      Genehmigungen und Sicherheitskontrollen.
+  BC-2600.80:
+    name: Netzoptimierungs-Management
+    description: |
+      Kontinuierliche Abstimmung von Netzelementen und Verkehrspfaden zur Maximierung
+      von Leistung, Kapazität und Kundenerfahrung.
+  BC-2600.80.10:
+    name: Funkzugang-Optimierung
+    description: |
+      Abstimmung von Funkzugangsparametern, Nachbarzellenbeziehungen und Antennenkonfiguration.
+  BC-2600.80.20:
+    name: Transport-Optimierung
+    description: |
+      Abstimmung von Transportnetzpfaden, Kapazitätszuweisung und Dienstqualität.
+  BC-2600.80.30:
+    name: Verkehrsengineering
+    description: |
+      Steuerung von IP- und Transportverkehr über das Netz für Leistungs-, Kosten- und Resilienz-Ziele.
+  BC-2600.80.40:
+    name: Closed-Loop-Automatisierung
+    description: |
+      Automatisierte Erkennen-Entscheiden-Handeln-Schleifen, die das Netz kontinuierlich
+      ohne manuellen Eingriff optimieren.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

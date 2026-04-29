@@ -1,0 +1,219 @@
+locale: de
+source: L1-client-engagement-management.yaml
+entries:
+  BC-4300:
+    name: Mandatsbetreuung
+    description: |
+      Lebenszyklus der Mandanten- und Auftragsannahme, Umfangsdefinition,
+      Mobilisierung, Änderungssteuerung, Abschluss und laufende
+      Mandantenbetreuung über Rechtsmandate, Beratungsaufträge sowie
+      Prüfungs- und Bestätigungsaufträge hinweg.
+  BC-4300.10:
+    name: Mandanten-Annahmemanagement
+    description: |
+      Aufnahme neuer Mandantenbeziehungen einschließlich KYC-,
+      AML-Screening, Sanktions- und PEP-Prüfungen sowie Verification
+      des wirtschaftlichen Eigentums vor Annahme eines Auftrags.
+    in_scope:
+      - KYC- und AML-Freigabe für neue Mandanten
+      - Sanktions- und PEP-Screening für Interessenten
+      - Prüfung des wirtschaftlichen Eigentums und der Mittelherkunft
+      - Periodische Aktualisierung der KYC-Unterlagen
+    out_of_scope:
+      - Unabhängigkeits- und Interessenkonfliktprüfung (BC-4350)
+      - Auftragsspezifische Risikoakzeptanz (BC-4300.20)
+  BC-4300.10.10:
+    name: Mandanten-KYC-Erfassung
+    description: |
+      Erfassung von Identifikations-, Eigentums- und
+      Mittelherkunftsinformationen für potenzielle und bestehende
+      Mandanten.
+  BC-4300.10.20:
+    name: Mandanten-Sanktions- und PEP-Screening
+    description: |
+      Screening von Mandanten und wirtschaftlichen Eigentümern gegen
+      Sanktionslisten, PEP- und Negativmedienlisten.
+  BC-4300.10.30:
+    name: Mandanten-Risikoeinstufung
+    description: |
+      Risikoeinstufung der Mandantenbeziehung zur Steuerung der
+      Sorgfaltspflichtiefe und des Überprüfungsturnus.
+  BC-4300.10.40:
+    name: Periodische Mandanten-KYC-Aktualisierung
+    description: |
+      Aktualisierung von Mandanten-KYC, Eigentumsverhältnissen
+      und Risikoeinstufungen in einem definierten Zyklus.
+  BC-4300.20:
+    name: Auftragsannahmemanagement
+    description: |
+      Entscheidungsprozess zur Annahme oder Ablehnung eines bestimmten
+      Auftrags unter Berücksichtigung von Unabhängigkeits- und
+      Konfliktfreigabe, Kapazitätsprüfung, Honorarmachbarkeit und
+      auftragsspezifischer Risikobewertung.
+    in_scope:
+      - Auftragsspezifische Risikobewertung
+      - Kapazitäts- und Fähigkeitsprüfung
+      - Go/No-Go-Entscheidung für den Auftrag
+    out_of_scope:
+      - Materielle Unabhängigkeits- und Konfliktprüfungen (BC-4350)
+      - Akquise- und Angebotsstätigkeit (BC-4360)
+  BC-4300.20.10:
+    name: Auftragsrisikobewertung
+    description: |
+      Bewertung auftragsspezifischer Risiken einschließlich
+      Sachkomplexität, Mandantenintegrität und Honorareintreibbarkeit.
+  BC-4300.20.20:
+    name: Kapazitäts- und Fähigkeitsprüfung
+    description: |
+      Bestätigung, dass die Kanzlei über die fachliche Kompetenz und
+      die Ressourcenkapazität zur Auftragsdurchführung verfügt.
+  BC-4300.20.30:
+    name: Auftrags-Go-No-Go-Entscheidung
+    description: |
+      Go/No-Go-Entscheidung auf Partnerebene unter Integration von
+      Risiko-, Konflikt-, Unabhängigkeits-, Kapazitäts- und
+      kommerziellen Inputs.
+  BC-4300.30:
+    name: Auftragsumfang und Vertragsbedingungen
+    description: |
+      Definition von Auftragsumfang, Leistungen, Annahmen, Honorar-
+      bedingungen sowie Auftragsschreiben oder Rahmenvertrag.
+    in_scope:
+      - Definition des Leistungsumfangs
+      - Honorarstruktur und Bedingungsentwurf
+      - Ausstellung des Auftragsschreibens oder Rahmenvertrags
+    out_of_scope:
+      - Preisstrategie auf Kanzleibene (BC-4360.50)
+      - Angebotsseitige Proposal-Erstellung (BC-4360.30)
+  BC-4300.30.10:
+    name: Auftragsumfangsdefinition
+    description: |
+      Definition von Leistungen, Ergebnissen, Annahmen, Ausschlüssen
+      und Abhängigkeiten des Auftrags.
+  BC-4300.30.20:
+    name: Auftragsschreibenentwurf
+    description: |
+      Entwurf von Auftragsschreiben und Rahmenverträgen gemäß
+      Kanzleivorlagen und geltenden Berufsstandards.
+  BC-4300.30.30:
+    name: Auftragsbedingungenverhandlung
+    description: |
+      Verhandlung der Auftragsbedingungen mit dem Mandanten
+      einschließlich Haftungsgrenzen, Rechtsordnung und
+      Streitbeilegungsklauseln.
+  BC-4300.30.40:
+    name: Auftragsschreiben-Unterzeichnung
+    description: |
+      Unterzeichnung, Gegenzeichnung und Aufbewahrung unterzeichneter
+      Auftragsschreiben als Voraussetzung für die Auftragsmobilisierung.
+  BC-4300.40:
+    name: Auftragsmobilisierungsmanagement
+    description: |
+      Operativer Start eines angenommenen Auftrags einschließlich
+      Teambildung, Kickoff, sicherem Datenzugang und Einrichtung
+      der Auftragsinfrastruktur.
+  BC-4300.40.10:
+    name: Auftragsteambildung
+    description: |
+      Identifikation und Bestätigung der Partner-, Manager- und
+      Mitarbeiterrollen im Auftragsteam.
+  BC-4300.40.20:
+    name: Auftrags-Kickoff-Management
+    description: |
+      Interne und mandantenseitige Kickoff-Meetings, Briefingmaterialien
+      und Bestätigung von Zielen und Arbeitsweisen.
+  BC-4300.40.30:
+    name: Auftragsdatenzugangseinrichtung
+    description: |
+      Bereitstellung von sicheren Datenräumen, Mandantenportalen und
+      auftragsspezifischen Zugangsdaten.
+  BC-4300.40.40:
+    name: Auftragsinfrastruktureinrichtung
+    description: |
+      Einrichtung von Auftragscodes, Abrechnungsstrukturen und
+      Mandatsnummern in den Kanzleisystemen.
+  BC-4300.50:
+    name: Auftragsänderungsmanagement
+    description: |
+      Steuerung von Änderungen des Auftragsumfangs, der Honorare,
+      Zeitpläne oder Teamzusammensetzung nach Unterzeichnung des
+      Auftragsschreibens.
+  BC-4300.50.10:
+    name: Umfangsänderungsantrag-Bearbeitung
+    description: |
+      Erfassung, Bewertung und Behandlung von Umfangsänderungsanträgen
+      des Mandanten oder des Auftragsteams.
+  BC-4300.50.20:
+    name: Honoraranpassungsgenehmigung
+    description: |
+      Genehmigungsworkflow für Honoraranpassungen, zusätzliche
+      Retainer und Genehmigungen für außerhalb des Umfangs liegende
+      Arbeiten.
+  BC-4300.50.30:
+    name: Auftragsschreibenänderung
+    description: |
+      Ausstellung und Ausführung von Nachträgen und Seitenbriefen,
+      die genehmigte Auftragsänderungen widerspiegeln.
+  BC-4300.60:
+    name: Auftragsabschlussmanagement
+    description: |
+      Abschluss abgeschlossener Aufträge einschließlich Leistungs-
+      übergabe, Arbeitsaktenaufbewahrung, Abschlussrechnungsauslösung
+      und Nachbesprechung.
+  BC-4300.60.10:
+    name: Leistungsübergabemanagement
+    description: |
+      Endgültige Übergabe von Berichten, Gutachten und Arbeitsprodukten
+      an den Mandanten mit entsprechenden Übersendungsschreiben.
+  BC-4300.60.20:
+    name: Auftragsakte-Aufbewahrungseinrichtung
+    description: |
+      Schließung der Auftragsakte und Konfiguration von Aufbewahrungs-,
+      Abfrage- und Vernichtungsrichtlinien.
+  BC-4300.60.30:
+    name: Auftragsnachbesprechung und Lessons Learned
+    description: |
+      Nachbesprechung nach Auftragsabschluss mit dem Auftragsteam
+      zur Erfassung von Lessons Learned und Verbesserungsmaßnahmen.
+  BC-4300.60.40:
+    name: Mandantenabschlusskommunikation
+    description: |
+      Abschlusskommunikation an den Mandanten einschließlich
+      Abschlussbericht, Zufriedenheitsumfrage und Folgeterminplanung.
+  BC-4300.70:
+    name: Mandantenbeziehungsstewardship
+    description: |
+      Laufende Betreuung strategischer Mandantenbeziehungen
+      einschließlich Partner-Verantwortlichkeit, Mandanten-
+      Accountplanung und kanzleiübergreifender Koordination.
+    in_scope:
+      - Zuweisung des Beziehungspartners
+      - Mandantenaccountplanung über mehrere Aufträge
+      - Mandantenzufriedenheitsverfolgung
+    out_of_scope:
+      - Akquise- und Angebotstätigkeit (BC-4360)
+      - Generisches CRM (BC-3060)
+  BC-4300.70.10:
+    name: Beziehungspartnerzuweisung
+    description: |
+      Zuweisung und Rotation des Leitenden Beziehungspartners für
+      jeden strategischen Mandanten.
+  BC-4300.70.20:
+    name: Mandantenaccountplanung
+    description: |
+      Accountbezogene Planung über das Portfolio der Aufträge mit
+      einem einzelnen Mandanten einschließlich Wallet-Share- und
+      Beziehungszielen.
+  BC-4300.70.30:
+    name: Mandantenzufriedenheitsverfolgung
+    description: |
+      Erfassung von Mandantenfeedback, NPS oder gleichwertigen
+      Kennzahlen und Eskalation von Unzufriedenheitssignalen.
+  BC-4300.70.40:
+    name: Bereichsübergreifende Mandantenkoordination
+    description: |
+      Koordination über Fachbereiche und Standorte hinweg für
+      gemeinsame Mandanten.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

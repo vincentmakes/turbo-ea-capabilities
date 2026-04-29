@@ -1,0 +1,150 @@
+locale: de
+source: L1-electoral-administration-management.yaml
+entries:
+  BC-3330:
+    name: Wahlverwaltung
+    description: |
+      Verwaltung von Wahlen einschließlich Wählerregistrierung, Wahlkreisverwaltung,
+      Kandidaten- und Parteiregistrierung, Stimmzettelgestaltung und -produktion,
+      Wahllokal-Betrieb, Stimmenauszählung und Ergebnistabellierung sowie
+      Wahlkampffinanzierungs-Offenlegung.
+  BC-3330.10:
+    name: Wählerregistrierungs-Verwaltung
+    description: |
+      Pflege autoritativer Wählerlisten einschließlich Registrierung,
+      Adressänderungen und Listenpflegemaßnahmen.
+    in_scope:
+      - Wählereinschreibung und Neuregistrierung
+      - Wählerlistenpflege
+      - Berechtigungsverifikation
+    out_of_scope:
+      - Personenstands-Identitätsregistrierung (durch Personenstandsregister und Identitätsverwaltung abgedeckt)
+  BC-3330.10.10:
+    name: Wählereinschreibung
+    description: |
+      Einschreibung wahlberechtigter Wähler in das Wählerverzeichnis über alle Kanäle.
+  BC-3330.10.20:
+    name: Wählerlistenpflege
+    description: |
+      Listenpflege einschließlich Adressaktualisierungen, Verstorbenen-Entfernung und Duplikatbehandlung.
+  BC-3330.10.30:
+    name: Wählerberechtigungs-Verifikation
+    description: |
+      Verifikation der Wahlberechtigung anhand von Staatsangehörigkeits-, Alters- und Wohnsitzkriterien.
+  BC-3330.10.40:
+    name: Wählerinformation-Bereitstellung
+    description: |
+      Bereitstellung von Wahlausweisen, Wahllokal-Suchdiensten und Wählerbildungsinformationen.
+  BC-3330.20:
+    name: Wahlkreis- und Bezirksverwaltung
+    description: |
+      Pflege von Wahlkreisen, Wahllokal-Geographien und
+      Wahlkreiseinteilungszyklen.
+  BC-3330.20.10:
+    name: Wahlkreispflege
+    description: |
+      Pflege von Wahlkreis- und Wahlbezirksgrenzen.
+  BC-3330.20.20:
+    name: Wahllokal-Bestimmung
+    description: |
+      Bestimmung, Barrierefreiheitsbewertung und Veröffentlichung von Wahllokalen.
+  BC-3330.20.30:
+    name: Wahlkreiseinteilungs-Koordination
+    description: |
+      Koordination gesetzlicher Wahlkreiseinteilungs- und Grenzkommissionszyklen.
+  BC-3330.30:
+    name: Kandidaten- und Parteiregistrierung
+    description: |
+      Registrierung politischer Parteien, Kandidaten, Nominierungseinreichungen
+      und Wahlzulassungen.
+  BC-3330.30.10:
+    name: Politische Parteiregistrierung
+    description: |
+      Registrierung und Anerkennung politischer Parteien und Parteibezeichnungen.
+  BC-3330.30.20:
+    name: Kandidatennominierung-Einreichung
+    description: |
+      Eingang und Verifikation von Kandidatennominierungen und gesetzlichen Erklärungen.
+  BC-3330.30.30:
+    name: Wahlzulassungs-Bestimmung
+    description: |
+      Bestimmung der Wahlzulassung einschließlich Unterschriftenerfordernisse und Qualifikationsschwellen.
+  BC-3330.40:
+    name: Stimmzettelgestaltung und -produktion
+    description: |
+      Gestaltung, Layout, Barrierefreiheit, Übersetzung und Produktion von Stimmzetteln
+      in Papier- und elektronischen Formaten.
+  BC-3330.40.10:
+    name: Stimmzettel-Layout-Gestaltung
+    description: |
+      Gestaltung und Layout von Stimmzetteln für Übersichtlichkeit, Barrierefreiheit und Sprachabdeckung.
+  BC-3330.40.20:
+    name: Stimmzettelübersetzung und Barrierefreiheit
+    description: |
+      Bereitstellung übersetzter Stimmzettel und barrierefreier Formate für Wähler mit Behinderungen.
+  BC-3330.40.30:
+    name: Stimmzettelproduktion und -verteilung
+    description: |
+      Druck, Programmierung und sichere Verteilung von Papier- und elektronischen Stimmzetteln.
+  BC-3330.50:
+    name: Wahllokal-Betrieb
+    description: |
+      Betrieb von Wahllokalen am Wahltag einschließlich Wahlhelfer-Management,
+      Wähler-Check-in und Stimmabgabe unter VVSG-konformen Kontrollen.
+  BC-3330.50.10:
+    name: Wahlhelfer-Management
+    description: |
+      Rekrutierung, Ausbildung und Einsatz von Wahlhelfern und Wahlbeamten.
+  BC-3330.50.20:
+    name: Wähler-Check-in
+    description: |
+      Wähler-Check-in, Identitätsverifikation und Stimmzettelausgabe im Wahllokal.
+  BC-3330.50.30:
+    name: Persönliche Stimmabgabe
+    description: |
+      Persönliche Stimmabgabe auf Papier oder mit VVSG-zertifizierten Wahlgeräten.
+  BC-3330.50.40:
+    name: Briefwahl-Operationen
+    description: |
+      Operationen zur Unterstützung von Brief-, Post- und Auslandswahl.
+  BC-3330.60:
+    name: Stimmenauszählung und Ergebnistabellierung
+    description: |
+      Auszählung der Stimmzettel, Tabellierung der Ergebnisse, Prüfungen und
+      Zertifizierung von Wahlergebnissen.
+  BC-3330.60.10:
+    name: Stimmzettelauszählung
+    description: |
+      Auszählung von Papier- und elektronischen Stimmzetteln gemäß gesetzlichem Verfahren.
+  BC-3330.60.20:
+    name: Ergebnistabellierung und -berichterstattung
+    description: |
+      Aggregation der Ergebnisse über Wahlbezirke und Berichterstattung an die Öffentlichkeit.
+  BC-3330.60.30:
+    name: Nach-Wahl-Prüfung
+    description: |
+      Risikobegrenzende und nach-Wahl-Prüfungen von Stimmenzählungen und Wahlgeräten.
+  BC-3330.60.40:
+    name: Wahlergebnis-Zertifizierung
+    description: |
+      Gesetzliche Zertifizierung von Wahlergebnissen und Erklärung gewählter Amtsträger.
+  BC-3330.70:
+    name: Wahlkampffinanzierungs-Offenlegung
+    description: |
+      Registrierung politischer Komitees, Spenden- und Ausgaben-Offenlegung
+      sowie Durchsetzung von Wahlkampffinanzierungsgrenzen.
+  BC-3330.70.10:
+    name: Politisches Komitee-Registrierung
+    description: |
+      Registrierung politischer Komitees, Parteien und PAC-äquivalenter Organisationen.
+  BC-3330.70.20:
+    name: Spenden- und Ausgaben-Berichterstattung
+    description: |
+      Eingang, Validierung und Veröffentlichung von Spenden- und Ausgaben-Offenlegungen.
+  BC-3330.70.30:
+    name: Wahlkampffinanzierungs-Vollstreckung
+    description: |
+      Untersuchung und Durchsetzung von Verstößen gegen Wahlkampffinanzierungsgrenzen und Offenlegungspflichten.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

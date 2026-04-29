@@ -1,0 +1,141 @@
+locale: de
+source: L1-utility-customer-metering-management.yaml
+entries:
+  BC-3910:
+    name: Versorgungskunden und Messwesen Management
+    description: |
+      Versorgungsspezifischer Kunden- und Messbetrieb vom Übergabepunkt
+      bis zum Rechnungseingang – Versorgungskundenkonten, Zählerinventar,
+      AMI/Intelligente-Zähler-Datenerfassung, Zählerablesung und -validierung,
+      Zähler-zu-Kasse-Eingaben, Anschluss-/Trenndienste sowie Schutz
+      schutzbedürftiger Kunden.
+  BC-3910.10:
+    name: Versorgungskundenkontoführung
+    description: |
+      Versorgungsspezifischer Kundenkontenlebenszyklus einschließlich
+      Übergabepunktkennnummern, Nutzerwechsel und Tarifzuweisung.
+  BC-3910.10.10:
+    name: Übergabepunktregistrierung
+    description: |
+      Registrierung und Pflege von Übergabepunktkennnummern (MPAN, MPRN, SPID).
+  BC-3910.10.20:
+    name: Nutzerwechselbetrieb
+    description: |
+      Einzug, Auszug und Mieterwechselverarbeitung für Versorgungsübergabepunkte.
+  BC-3910.10.30:
+    name: Kundentarifzuweisung
+    description: |
+      Zuweisung von Kunden zu anwendbaren Tarifplänen und Produktoptionen.
+  BC-3910.20:
+    name: Zählerbestandsmanagement
+    description: |
+      Lebenszyklusmanagement physischer Zähler- und Kommunikationsanlagen
+      einschließlich Lagerbestand, Einbau, Tausch und Rückgabe.
+  BC-3910.20.10:
+    name: Zählerbestandsbetrieb
+    description: |
+      Bestandsmanagement, Inbetriebnahme und Außerbetriebnahme von Zähleranlagen.
+  BC-3910.20.20:
+    name: Zählereinbaubetrieb
+    description: |
+      Feldeinbau von Neu- und Austauschzählern.
+  BC-3910.20.30:
+    name: Zählerrücknahme und Entsorgung
+    description: |
+      Rücknahme, Aufbereitung und Lebensendentsorgung von Zähleranlagen.
+  BC-3910.30:
+    name: AMI-Datenerfassungsbetrieb
+    description: |
+      Erfassung von Advanced-Metering-Infrastructure-Daten über Head-End-
+      Systeme, Kommunikationsnetze und Zählerdatenmanagement.
+    in_scope:
+      - Intelligenter Zähler Head-End-Betrieb
+      - Kommunikationsnetz- und Konzentrator-Überwachung
+      - Zählerdatenmanagement-Ingestion
+    out_of_scope:
+      - Physischer Zählereinbau (BC-3910.20.20)
+      - Handelsseitige aggregierte Nachfrage (BC-3850.30.10)
+  BC-3910.30.10:
+    name: Head-End-Systembetrieb
+    description: |
+      Betrieb von Intelligenten-Zähler-Head-End-Systemen und Zählerbefehlserteilung.
+  BC-3910.30.20:
+    name: AMI-Kommunikationsnetzbetrieb
+    description: |
+      Betrieb von HF-, PLC- und Mobilfunk-AMI-Kommunikationsnetzen und Konzentratoren.
+  BC-3910.30.30:
+    name: Zählerdatenmanagement-Ingestion
+    description: |
+      Ingestion von Intervall- und Registerablesungen in das Zählerdatenmanagementsystem.
+  BC-3910.40:
+    name: Zählerablesung und Validierung
+    description: |
+      Zyklische und ereignisgesteuerte Zählerablesung sowie Validierung,
+      Schätzung und Bearbeitung von Verbrauchsdaten.
+  BC-3910.40.10:
+    name: Manuelle Ablesung und Fahrtzählerablesung
+    description: |
+      Lauf-, Fahr- und AMR-Ablesebetrieb für Nicht-AMI-Zähler.
+  BC-3910.40.20:
+    name: Validierung, Schätzung und Bearbeitung
+    description: |
+      VEE-Verarbeitung von Register- und Intervallesungen zur Rechnungsqualitätsdatenerzeugung.
+  BC-3910.40.30:
+    name: Verbrauchsaggregation
+    description: |
+      Aggregation von Verbräuchen für Abrechnungsperioden und Vergleichsprofile.
+  BC-3910.50:
+    name: Zähler-zu-Kasse-Betrieb
+    description: |
+      Versorgungsspezifischer Betrieb zur Aufbereitung von Verbrauchsdaten für die
+      Abrechnung und Einnahmensicherung einschließlich Rechnungsausnahmenbearbeitung
+      und Erleckserkennnung.
+  BC-3910.50.10:
+    name: Rechnungsgrundlagenvorbereitung
+    description: |
+      Aufbereitung von Rechnungsgrundlagen – Verbrauch, Leistung und Blindenergie – für Abrechnungssysteme.
+  BC-3910.50.20:
+    name: Rechnungsausnahmenbearbeitung
+    description: |
+      Untersuchung und Klärung von Rechnungsausnahmen und Zählerdatenanomalien.
+  BC-3910.50.30:
+    name: Einnahmensicherungsbetrieb
+    description: |
+      Erkennung und Felduntersuchung von Zählermanipulationen und Strom- oder Wasserdiebstahl.
+  BC-3910.60:
+    name: Anschluss- und Trenndienste
+    description: |
+      Aktivierung, Deaktivierung und Vorauszahlungsmodenbetrieb von
+      Versorgungsanschlüssen an der Kundenschnittstelle.
+  BC-3910.60.10:
+    name: Anschlussaktivierungsbetrieb
+    description: |
+      Aktivierung neuer und reaktivierter Anschlüsse einschließlich Ferneinschaltung.
+  BC-3910.60.20:
+    name: Sperrung wegen Nichtzahlung
+    description: |
+      Sperrvorgänge unter Beachtung gesetzlicher und regulatorischer Schutzbestimmungen.
+  BC-3910.60.30:
+    name: Vorauszahlungsbetrieb
+    description: |
+      Betrieb von Vorauszahlungszählern und Aufladesystemen.
+  BC-3910.70:
+    name: Schutzbedürftige Kunden Management
+    description: |
+      Identifizierung und Schutz von Kunden in schutzbedürftigen Lebenslagen
+      einschließlich Vorrangkundenregistern und Erschwinglichkeitsprogrammen.
+  BC-3910.70.10:
+    name: Vorrangkundenregisterbetrieb
+    description: |
+      Pflege des Vorrangkundenregisters und zugeschnittener Unterstützungsmarkierungen.
+  BC-3910.70.20:
+    name: Härte- und Erschwinglichkeitsprogrammbetrieb
+    description: |
+      Verwaltung von Sozialtarif- und Härtefondsregelungen für Versorgungskunden.
+  BC-3910.70.30:
+    name: Medizingerätekundenmanagement
+    description: |
+      Management von Kunden, die auf Medizin- oder Dialysegeräte angewiesen sind, für Abschaltplanung.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

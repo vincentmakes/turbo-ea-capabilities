@@ -1,0 +1,100 @@
+locale: de
+source: L1-freight-forwarding-brokerage-management.yaml
+entries:
+  BC-2450:
+    name: Spedition und Frachtmakler-Management
+    description: |
+      Arrangierung von Transporten im Namen von Versendern als Spediteur, NVOCC,
+      Frachtmakler oder Zollagent, einschließlich multimodaler Koordination und
+      Partnernetzwerkbetrieb.
+  BC-2450.10:
+    name: Versenderangebots-Management
+    description: |
+      Entgegennahme von Versenderanfragen und Ausstellung von Spediteursraten
+      über verschiedene Verkehrsträger und Carrier.
+    in_scope:
+      - Multi-Carrier-Ratenrecherche für Versenderanfragen
+      - Angebotsgültigkeit und Bestätigungsverfolgung
+    out_of_scope:
+      - Carrier-seitige Raten- und Tarifverwaltung (BC-2520)
+  BC-2450.10.10:
+    name: Angebotsanfrage-Erfassung
+    description: |
+      Erfassung von Versenderangebotsanfragen über verschiedene Kanäle.
+  BC-2450.10.20:
+    name: Multi-Carrier-Ratenrecherche
+    description: |
+      Recherche und Vergleich von Raten über die zugrunde liegenden Carrier.
+  BC-2450.10.30:
+    name: Angebotsausstellung und Gültigkeit
+    description: |
+      Ausstellung verbindlicher und indikativer Angebote und Verfolgung der Gültigkeit.
+  BC-2450.20:
+    name: Carrier-Beschaffung und -Zuweisungs-Management
+    description: |
+      Buchung von Kapazitäten bei Carriern und Verwaltung von Carrier-Zuteilungen und Ausgaben.
+  BC-2450.20.10:
+    name: Carrier-Auswahl
+    description: |
+      Auswahl der zugrunde liegenden Carrier je Sendung.
+  BC-2450.20.20:
+    name: Carrier-Buchungsdurchführung
+    description: |
+      Buchung von Kapazitäten bei ausgewählten Carriern.
+  BC-2450.20.30:
+    name: Zuteilungsausgaben-Optimierung
+    description: |
+      Optimierung der Spediteur-Ausgaben über Carrier-Zuteilungen.
+  BC-2450.30:
+    name: Multimodale Speditionskoordination
+    description: |
+      Koordination von mehrstufigen, multimodalen Transporten einschließlich Konsolidierung,
+      Dekonsolidierung und Hausfrachtbriefen.
+  BC-2450.30.10:
+    name: Hausfrachtbrief-Ausstellung
+    description: |
+      Ausstellung von Spediteur-Hausfrachtbriefen für Versender.
+  BC-2450.30.20:
+    name: Mehrstufige Transportkoordination
+    description: |
+      Koordination mehrstufiger Transporte über Carrier und Verkehrsträger.
+  BC-2450.30.30:
+    name: Konsolidierung und Dekonsolidierung
+    description: |
+      Frachtkonsolidierung am Ursprung und Dekonsolidierung am Ziel.
+  BC-2450.40:
+    name: Zollagenten-Management
+    description: |
+      Erbringung von Zollagenten-Dienstleistungen im Namen von Importeuren und Exporteuren.
+  BC-2450.40.10:
+    name: Zollanmeldungs-Vorbereitung
+    description: |
+      Vorbereitung von Zollanmeldungen im Namen von Kunden.
+  BC-2450.40.20:
+    name: Zoll- und Steuerberechnung
+    description: |
+      Berechnung und Abführung von Zöllen und indirekten Steuern für Kunden.
+  BC-2450.40.30:
+    name: Zollagenten-Statusverfolgung
+    description: |
+      Verfolgung des Zollagenten-Fortschritts und Ausnahmelösung.
+  BC-2450.50:
+    name: Spediteursnetzwerk-Koordination
+    description: |
+      Koordination mit Ursprungs-, Ziel- und Partneragenten in einem Spediteursnetzwerk
+      einschließlich zwischenbetrieblicher Abrechnung.
+  BC-2450.50.10:
+    name: Ursprungs- und Zielagenten-Koordination
+    description: |
+      Koordination von Aktivitäten mit Ursprungs- und Zielagenten.
+  BC-2450.50.20:
+    name: Zwischenbetriebliche Abrechnung
+    description: |
+      Zwischenbetriebliche Abrechnung von Speditionserlösen und -kosten.
+  BC-2450.50.30:
+    name: Partneragenten-Leistungsmanagement
+    description: |
+      Verwaltung von Partneragenten-Servicequalität und Compliance.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

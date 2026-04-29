@@ -1,0 +1,111 @@
+locale: de
+source: L1-omnichannel-order-fulfilment-management.yaml
+entries:
+  BC-2330:
+    name: Omnikanal-Auftragserfüllung Management
+    description: |
+      Kanalübergreifende Orchestrierung von Verbraucherbestellungen — Erfassung in jedem
+      Kanal, Zusagen aus jedem Knoten und Erfüllung über Filiale, Verteilzentrum,
+      Marktplatz, Lieferanten-Direktlieferung oder Last-Mile-Partner.
+  BC-2330.10:
+    name: Kanal-Orchestrierungs-Management
+    description: |
+      Einheitliche Sicht auf Verbraucherbestellungen über Kanäle, Kanal-Mix-Routing
+      und konsistenter Status über Digital-, Filial- und Marktplatzkanäle.
+    in_scope:
+      - Kanal-Routing-Regeln und Knotenauswahl
+      - Einheitliche Bestellübersicht über Kanäle
+      - Kanal-Mix-Wirtschaftlichkeit und Erfüllungskosten-Abwägungen
+    out_of_scope:
+      - Allgemeine Auftragserfüllung (BC-520.40)
+  BC-2330.10.10:
+    name: Kanal-Routing-Regeln-Management
+    description: |
+      Definition von Routing-Regeln zur Auswahl des Erfüllungsknotens nach Kosten und Service.
+  BC-2330.10.20:
+    name: Kanalübergreifende Bestellübersicht
+    description: |
+      Einheitliche Sicht auf Bestellungen, Status und Verlauf über Kanäle.
+  BC-2330.10.30:
+    name: Kanal-Mix-Wirtschaftlichkeit
+    description: |
+      Analyse von Stückkosten nach Kanal und Erfüllungsroute.
+  BC-2330.20:
+    name: Click-and-Collect-Betriebs Management
+    description: |
+      Online-kaufen-in-Filiale-abholen-, Kerbside- und Schließfach-Abholbetrieb,
+      der digitale Bestellungen mit physischen Abholpunkten verbindet.
+  BC-2330.20.10:
+    name: Filialkommissionierungs- und Packbetrieb
+    description: |
+      Kommissionierung und Verpackung von Online-Bestellungen durch Filialmitarbeiter.
+  BC-2330.20.20:
+    name: Kundenabholübergabe
+    description: |
+      Kundenabholübergabe einschließlich Identitätsprüfung und Ausnahmebehandlung.
+  BC-2330.20.30:
+    name: Kerbside- und Schließfach-Abholung
+    description: |
+      Kerbside-Übergabe und schließfachbasierter Abholbetrieb.
+  BC-2330.30:
+    name: Verteilte Auftragserfüllung Management
+    description: |
+      Ship-from-Store-, Dark-Store- und Direktlieferungs-Erfüllung aus einem
+      verteilten Bestandspool an Verbraucherziele.
+    in_scope:
+      - Ship-from-Store-Betrieb
+      - Dark-Store- und Mikro-Fulfillment-Center-Betrieb
+      - Lieferanten-Direktlieferungs-Orchestrierung
+  BC-2330.30.10:
+    name: Ship-from-Store-Betrieb
+    description: |
+      Kommissionierung, Verpackung und Versand von Online-Bestellungen aus physischen Filialen.
+  BC-2330.30.20:
+    name: Dark-Store- und Mikro-Fulfillment-Betrieb
+    description: |
+      Betrieb von Dark Stores und Mikro-Fulfillment-Centern für digitale Bestellungen.
+  BC-2330.30.30:
+    name: Lieferanten-Direktlieferungs-Orchestrierung
+    description: |
+      Orchestrierung der Lieferanten-Direktlieferung einschließlich Bestellrouting und Tracking.
+  BC-2330.40:
+    name: Marktplatz-Verkäufer-Betriebs Management
+    description: |
+      Betrieb von Einzelhändler-als-Verkäufer-Listings auf Drittanbieter-Marktplätzen und
+      Management von Drittanbieter-Verkäufern auf einem eigenen Marktplatz.
+  BC-2330.40.10:
+    name: Marktplatz-Listing-Management
+    description: |
+      Listung von Artikeln auf Drittanbieter-Marktplätzen einschließlich Inhaltsanpassung.
+  BC-2330.40.20:
+    name: Marktplatz-Bestellerfassung
+    description: |
+      Erfassung und Übersetzung von Marktplatz-Bestellungen in die eigene Bestellpipeline.
+  BC-2330.40.30:
+    name: Drittanbieter-Verkäufer-Onboarding
+    description: |
+      Onboarding von Drittanbieter-Verkäufern auf den eigenen Marktplatz des Einzelhändlers.
+  BC-2330.40.40:
+    name: Drittanbieter-Verkäufer-Performance Management
+    description: |
+      Management der Performance und Richtlinien-Compliance von Drittanbieter-Verkäufern.
+  BC-2330.50:
+    name: Verbraucher-Lieferzeitfenster Management
+    description: |
+      Verbraucherorientierte Lieferzeitfenster-Buchung, Zeitfensterpreisgestaltung und
+      Kurierversand-Koordination für die Hauszustellung.
+  BC-2330.50.10:
+    name: Lieferzeitfenster-Buchung
+    description: |
+      Verbraucherbuchung von Lieferzeitfenstern mit Verfügbarkeits- und Kapazitätslogik.
+  BC-2330.50.20:
+    name: Zeitfenster-Preisgestaltung
+    description: |
+      Dynamische Preisgestaltung von Lieferzeitfenstern nach Nachfrage und Routendichte.
+  BC-2330.50.30:
+    name: Kurierversand-Koordination
+    description: |
+      Versandkoordination mit eigenen und Drittanbieter-Last-Mile-Kurieren.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

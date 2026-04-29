@@ -1,0 +1,160 @@
+locale: de
+source: L1-student-enrolment-records-management.yaml
+entries:
+  BC-4720:
+    name: Studierendeneinschreibung und Immatrikulationsregisterverwaltung
+    description: |
+      Verwaltung des aktiven Studierendenlebenszyklus von der Einschreibung und
+      Registrierung über akademische Aufzeichnungen, Transkripte, Kreditanrechnung
+      bis hin zur Graduierung sowie zugrundeliegendes Studierenden-Identitätsregistermanagement.
+  BC-4720.10:
+    name: Einschreibung und Registrierung
+    description: |
+      Semesterweise Einschreibung und Kursregistrierung zugelassener Studierender,
+      einschließlich Stundenplanänderungen und Fortsetzung zwischen Semestern.
+    in_scope:
+      - Kursregistrierung
+      - Hinzufügen/Abmelden und Stundenplanänderung
+      - Wiedereinschreibung und Fortsetzung
+    out_of_scope:
+      - Erstmalige Zulassungsentscheidungen (abgedeckt unter Studierendengewinnung & Zulassungsmanagement)
+  BC-4720.10.10:
+    name: Kursregistrierung
+    description: |
+      Registrierung von Studierenden in Kursen, Kursabschnitten und Lerneinheiten.
+  BC-4720.10.20:
+    name: Hinzufügen/Abmelden und Stundenplanänderung
+    description: |
+      Bearbeitung von Hinzufügen/Abmelden und Stundenplanänderungen innerhalb
+      veröffentlichter Fristen.
+  BC-4720.10.30:
+    name: Wiedereinschreibung und Fortsetzung
+    description: |
+      Wiedereinschreibung und Fortsetzung über akademische Semester und Studienjahre.
+  BC-4720.20:
+    name: Akademische Datenverwaltung
+    description: |
+      Pflege maßgeblicher akademischer Studierendendaten, einschließlich Noten,
+      Transkripte und Feststellungen zum akademischen Status.
+    in_scope:
+      - Noten- und Punkteerfassung
+      - Transkriptproduktion
+      - Feststellung des akademischen Status
+    out_of_scope:
+      - Der Bewertungsworkflow selbst (abgedeckt unter Prüfungs- und Bewertungswesen)
+  BC-4720.20.10:
+    name: Noten- und Punkteerfassung
+    description: |
+      Maßgebliche Erfassung von Noten und Punkten in Studierendendaten.
+  BC-4720.20.20:
+    name: Transkriptproduktion
+    description: |
+      Erstellung und Ausstellung offizieller und inoffizieller Transkripte.
+  BC-4720.20.30:
+    name: Feststellung des akademischen Status
+    description: |
+      Feststellung des akademischen Status, Auszeichnungen, Bewährung und
+      Exmatrikulation.
+  BC-4720.30:
+    name: Kursplanung und Stundenplanaufzeichnungen
+    description: |
+      Maßgebliche Aufzeichnungen von Kursabschnitt-Stundenplänen, Raumzuweisung
+      und Konfliktlösungsentscheidungen, die nachgelagert für die Einschreibung
+      genutzt werden.
+    in_scope:
+      - Stundenplanaufzeichnungen für Abschnitte und Kohorten
+      - Raum- und Anlagenzuweisungsaufzeichnungen
+      - Aufzeichnungen zur Stundenplankonfliktlösung
+    out_of_scope:
+      - Täglicher Unterrichtsbetrieb (abgedeckt unter Lehr- und Lernbetriebsmanagement)
+  BC-4720.30.10:
+    name: Stundenplanaufzeichnungen für Abschnitte und Kohorten
+    description: |
+      Maßgebliche Stundenplanaufzeichnungen nach Abschnitt und Kohorte.
+  BC-4720.30.20:
+    name: Raum- und Anlagenzuweisungsaufzeichnungen
+    description: |
+      Aufzeichnungen über Unterrichtsraum- und Anlagenzuweisungen zu geplanten
+      Sitzungen.
+  BC-4720.30.30:
+    name: Stundenplankonfliktlösungsaufzeichnungen
+    description: |
+      Aufzeichnungen identifizierter und gelöster Stundenplankonflikte.
+  BC-4720.40:
+    name: Kreditanrechnung und Anerkennung
+    description: |
+      Bewertung und Erfassung von Kreditanrechnungen von anderen Institutionen,
+      Anerkennung früherer Lernerfahrungen und Anwendung von Anrechnungsvereinbarungen.
+    in_scope:
+      - Bewertung der Kreditanrechnung
+      - Anerkennung früherer Lernerfahrungen (APL)
+      - Anwendung von Anrechnungsvereinbarungen
+    out_of_scope:
+      - Internationale Zeugnisbewertung bei der Zulassung (abgedeckt unter Studierendengewinnung & Zulassungsmanagement)
+  BC-4720.40.10:
+    name: Kreditanrechnungsbewertung
+    description: |
+      Bewertung von an anderen Institutionen erworbenen Credits im Vergleich zu
+      Heimprogrammen.
+  BC-4720.40.20:
+    name: Anerkennung früherer Lernerfahrungen
+    description: |
+      Anerkennung früherer Erfahrungs- und informeller Lernerfahrungen für Credits.
+  BC-4720.40.30:
+    name: Anwendung von Anrechnungsvereinbarungen
+    description: |
+      Anwendung interinstitutioneller Anrechnungsvereinbarungen auf Studierendendaten.
+  BC-4720.50:
+    name: Graduierung und Zeugnisausstellung
+    description: |
+      Überprüfung der Graduierungsberechtigung, Verleihung von Abschlüssen und
+      Ausstellung prüfbarer Zeugnisse, Diplome und Zertifikate.
+    in_scope:
+      - Überprüfung der Graduierungsberechtigung
+      - Abschlussverleihung
+      - Zeugnisausstellung und nachgelagerte Verifizierung
+    out_of_scope:
+      - Prüfungsergebnisverarbeitung (abgedeckt unter Prüfungs- und Bewertungswesen)
+  BC-4720.50.10:
+    name: Überprüfung der Graduierungsberechtigung
+    description: |
+      Überprüfung der Studierendendaten anhand der Graduierungsanforderungen.
+  BC-4720.50.20:
+    name: Abschlussverleihung
+    description: |
+      Formelle Verleihung von Graden und Qualifikationen.
+  BC-4720.50.30:
+    name: Zeugnisausstellung und -verifizierung
+    description: |
+      Ausstellung und Verifizierung von Papier- und digitalen Zeugnissen,
+      einschließlich verifizierbarer Zeugnisse.
+  BC-4720.60:
+    name: Studierenden-Identitäts- und Lebenszyklus-Aufzeichnungen
+    description: |
+      Pflege von Studierendenidentifikatoren, Einschreibungsstatuskennzeichen und
+      Exmatrikulations-/Beurlaubungsaufzeichnungen, die nachgelagerte administrative
+      Aktionen verankern.
+    in_scope:
+      - Lebenszyklus-Management der Studierendenidentifikatoren
+      - Pflege des Einschreibungsstatus
+      - Exmatrikulations- und Beurlaubungsaufzeichnungen
+    out_of_scope:
+      - Identitätsauthentifizierung und -zugang (abgedeckt unter branchenübergreifendem Cybersicherheitsmanagement)
+  BC-4720.60.10:
+    name: Studierenden-Identitätslebenszyklus
+    description: |
+      Lebenszyklus eindeutiger Studierendenidentifikatoren von der Ausstellung bis
+      zur Schließung.
+  BC-4720.60.20:
+    name: Pflege des Einschreibungsstatus
+    description: |
+      Pflege maßgeblicher Einschreibungsstatuskennzeichen (aktiv, beurlaubt,
+      exmatrikuliert).
+  BC-4720.60.30:
+    name: Exmatrikulations- und Beurlaubungsaufzeichnungen
+    description: |
+      Aufzeichnungen über Studierendenexmatrikulationen, Beurlaubungen und
+      Wiedereinschreibungen.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

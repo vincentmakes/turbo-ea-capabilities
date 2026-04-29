@@ -1,0 +1,145 @@
+locale: de
+source: L1-saas-platform-operations-management.yaml
+entries:
+  BC-4220:
+    name: SaaS-Plattformbetrieb Management
+    description: |
+      Site-Reliability, Observierbarkeit, On-Call-Reaktion, Kapazität,
+      Performance und Disaster-Recovery-Betrieb des mandantenfähigen
+      SaaS-Dienstes.
+  BC-4220.10:
+    name: Service-Reliability-Engineering
+    description: |
+      Definition und Pflege von Service-Level-Indikatoren, -Zielen
+      und Fehlerbudgets für den SaaS-Dienst.
+    in_scope:
+      - SLI / SLO / Fehlerbudget-Disziplin für das laufende Produkt
+    out_of_scope:
+      - Kundenseitige SLA-Verpflichtungen (abgedeckt durch SaaS-Trust- und Service-Compliance-Management)
+      - Interne IT-Service-Level (abgedeckt durch IT-Management)
+  BC-4220.10.10:
+    name: Service-Level-Indikator-Definition
+    description: |
+      Definition von Service-Level-Indikatoren, die die Kundenerfahrung
+      laufender Dienste messen.
+  BC-4220.10.20:
+    name: Service-Level-Ziel-Management
+    description: |
+      Festlegung, Überprüfung und Anpassung von Service-Level-Zielen
+      über Dienste hinweg.
+  BC-4220.10.30:
+    name: Fehlerbudget-Management
+    description: |
+      Management von Fehlerbudgets und der Policy zur Steuerung
+      ihres Verbrauchs.
+  BC-4220.20:
+    name: Observierbarkeits-Management
+    description: |
+      Logs, Metriken, Traces und synthetisches Monitoring, die den
+      laufenden Dienst in der Produktion transparent machen.
+  BC-4220.20.10:
+    name: Anwendungsprotokollierungs-Management
+    description: |
+      Pflege von Anwendungsprotokollierungskonventionen, Pipelines
+      und Aufbewahrungsregeln.
+  BC-4220.20.20:
+    name: Metriken-Pipeline-Management
+    description: |
+      Betrieb von Metriken-Ingestion, -Speicherung und
+      -Abfragepipelines.
+  BC-4220.20.30:
+    name: Verteiltes Tracing
+    description: |
+      End-to-End-verteiltes Tracing über Dienste für die
+      Produktionsuntersuchung.
+  BC-4220.20.40:
+    name: Synthetisches Monitoring
+    description: |
+      Synthetische Prüfpunkte, die kritische Nutzerreisen von
+      außerhalb des Dienstes überprüfen.
+  BC-4220.30:
+    name: Vorfallsreaktions-Management
+    description: |
+      On-Call-Reaktion, Vorfallserkennung, Koordination und
+      Kundenkommunikation bei Produktionsvorfällen.
+  BC-4220.30.10:
+    name: On-Call-Rotations-Management
+    description: |
+      Definition und Betrieb von On-Call-Rotationen über
+      Produktteams hinweg.
+  BC-4220.30.20:
+    name: Vorfallserkennung
+    description: |
+      Erkennung von Produktionsvorfällen aus Telemetrie- und
+      externen Signalen.
+  BC-4220.30.30:
+    name: Vorfallskoordination
+    description: |
+      Koordination der Vorfallsreaktion einschließlich Rollen,
+      Kommunikation und Entscheidungen während des Vorfalls.
+  BC-4220.30.40:
+    name: Kunden-Vorfallskommunikation
+    description: |
+      Kommunikation an betroffene Kunden während und nach Vorfällen.
+  BC-4220.40:
+    name: Postmortem und Zuverlässigkeitsverbesserung
+    description: |
+      Postmortem-Erstellung und Verfolgung von Zuverlässigkeits-
+      Aktionspunkten, damit Erkenntnisse sich über Zeit kumulieren.
+  BC-4220.40.10:
+    name: Postmortem-Erstellung
+    description: |
+      Schuldenfreie Postmortem-Erstellung nach Vorfällen und
+      bedeutsamen Beinaheunfällen.
+  BC-4220.40.20:
+    name: Zuverlässigkeitsmaßnahmen-Tracking
+    description: |
+      Verfolgung von Zuverlässigkeitsmaßnahmen bis zum Abschluss
+      über Teams hinweg.
+  BC-4220.40.30:
+    name: Zuverlässigkeitstrend-Analyse
+    description: |
+      Analyse von Zuverlässigkeitstrends über Dienste und
+      Zeithorizonte hinweg.
+  BC-4220.50:
+    name: Kapazitäts- und Performance-Management
+    description: |
+      Kapazitätsprognose, Auto-Scaling-Policies und Performancetests
+      des SaaS-Dienstes.
+  BC-4220.50.10:
+    name: Kapazitätsprognose
+    description: |
+      Prognose des Kapazitätsbedarfs über Dienste und
+      Regionen hinweg.
+  BC-4220.50.20:
+    name: Auto-Scaling-Policy-Management
+    description: |
+      Definition und Anpassung von Auto-Scaling-Policies für
+      Produktdienste.
+  BC-4220.50.30:
+    name: Performancetest
+    description: |
+      Last-, Stress- und Ausdauertests des laufenden Dienstes.
+  BC-4220.60:
+    name: Disaster-Recovery und Resilienz
+    description: |
+      Sicherung und Wiederherstellung, Failover-Orchestrierung und
+      Disaster-Recovery-Übungen für den SaaS-Dienst.
+  BC-4220.60.10:
+    name: Sicherung- und Wiederherstellungs-Management
+    description: |
+      Sicherungs-Policy, Ausführung und Wiederherstellungsvalidierung
+      für Service-Datenspeicher.
+  BC-4220.60.20:
+    name: Failover-Orchestrierung
+    description: |
+      Orchestrierung des Failovers zwischen Verfügbarkeitszonen
+      und Regionen.
+  BC-4220.60.30:
+    name: Disaster-Recovery-Übungs-Management
+    description: |
+      Planung und Durchführung von Disaster-Recovery-Übungen und
+      Game-Days.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

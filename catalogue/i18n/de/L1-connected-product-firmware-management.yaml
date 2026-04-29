@@ -1,0 +1,147 @@
+locale: de
+source: L1-connected-product-firmware-management.yaml
+entries:
+  BC-1950:
+    name: Vernetztes Produkt & Firmware Management
+    description: |
+      Betrieblicher Lebenszyklus vernetzter elektrischer Produkte im Feld — Geräteidentität,
+      Firmware-Build und -Release, OTA-Updates, Telemetrie, Produktcybersicherheit, IIoT-Plattformbetrieb.
+  BC-1950.10:
+    name: Geräteidentitäts- & Provisionierungs-Management
+    description: |
+      Ausgabe und Lebenszyklus von Geräteidentitäten und kryptografischen Zugangsdaten.
+  BC-1950.10.10:
+    name: Geräteidentitätsausgabe
+    description: |
+      Ausgabe eindeutiger Geräteidentitäten bei der Herstellung.
+  BC-1950.10.20:
+    name: Kryptografische Schlüsselprovisionierung
+    description: |
+      Provisionierung kryptografischer Schlüssel auf Geräten.
+  BC-1950.10.30:
+    name: Geräte-Onboarding auf Plattform
+    description: |
+      Onboarding von Geräten auf der vernetzten Produktplattform.
+  BC-1950.10.40:
+    name: Geräte-Dekommissionierung
+    description: |
+      Dekommissionierung und Zugangsdatenwiderruf für ausgemusterte Geräte.
+  BC-1950.20:
+    name: Firmware-Build- & Release-Management
+    description: |
+      Build-Pipelines, Release-Genehmigung, Signierung und Versionsinventar für Produktions-Firmware.
+  BC-1950.20.10:
+    name: Firmware-Build-Pipeline-Management
+    description: |
+      Betrieb von Firmware-Build- und Continuous-Integration-Pipelines.
+  BC-1950.20.20:
+    name: Firmware-Release-Genehmigung
+    description: |
+      Stage-Gate-Genehmigung von Firmware-Releases zur Bereitstellung.
+  BC-1950.20.30:
+    name: Firmware-Signierung & Integritäts-Management
+    description: |
+      Code-Signierung und Integritätsschutz von Firmware-Artefakten.
+  BC-1950.20.40:
+    name: Firmware-Versionsinventar
+    description: |
+      Inventar der bereitgestellten Firmware-Versionen über die installierte Basis.
+  BC-1950.30:
+    name: Over-the-Air-Update-Management
+    description: |
+      Planung, Durchführung und Rollback von Over-the-Air-Firmware-Updates.
+  BC-1950.30.10:
+    name: OTA-Kampagnen-Planung
+    description: |
+      Planung von OTA-Kampagnen und Rollout-Kohorten.
+  BC-1950.30.20:
+    name: OTA-Rollout-Durchführung
+    description: |
+      Durchführung von OTA-Rollouts und Fortschrittsverfolgung.
+  BC-1950.30.30:
+    name: OTA-Rollback-Management
+    description: |
+      Rollback fehlgeschlagener OTA-Updates auf bekannt-gute Versionen.
+  BC-1950.30.40:
+    name: OTA-Kompatibilitätsverifizierung
+    description: |
+      Verifizierung der Firmware-Kompatibilität vor OTA-Release.
+  BC-1950.40:
+    name: Gerätetelemetrie- & Konnektivitäts-Management
+    description: |
+      Telemetrieaufnahme, Konnektivitätsstatus, Routing und Carrier-/SIM-Management.
+  BC-1950.40.10:
+    name: Telemetrie-Aufnahme-Betrieb
+    description: |
+      Aufnahme von Gerätetelemetrie in Plattformspeicher.
+  BC-1950.40.20:
+    name: Konnektivitätsstatus-Überwachung
+    description: |
+      Überwachung des Gerätekonnektivitätsstatus und der Erreichbarkeit.
+  BC-1950.40.30:
+    name: Telemetriedaten-Routing
+    description: |
+      Routing von Telemetrie an nachgelagerte Verbraucher und Analytik.
+  BC-1950.40.40:
+    name: Netzwerk-Carrier- & SIM-Management
+    description: |
+      Verwaltung von Mobilfunk-Carrier-Beziehungen und SIM-Inventar.
+  BC-1950.50:
+    name: Vernetztes Produkt Cybersicherheits-Management
+    description: |
+      Produktseitige Cybersicherheit für Bedrohungen, Schwachstellen, Secure Boot und Konformität.
+  BC-1950.50.10:
+    name: Produkt-Bedrohungsmodellierung
+    description: |
+      Bedrohungsmodellierung für vernetzte Produktdesigns.
+  BC-1950.50.20:
+    name: Schwachstellenoffenlegung & -reaktion
+    description: |
+      Koordinierte Offenlegung und Reaktion auf Produktschwachstellen.
+  BC-1950.50.30:
+    name: Secure Boot & Attestierung
+    description: |
+      Secure-Boot- und Attestierungsmechanismen auf Geräten.
+  BC-1950.50.40:
+    name: Produkt-Cybersicherheits-Konformität
+    description: |
+      Konformität vernetzter Produkte mit IEC 62443 und gleichwertigen Regimen.
+  BC-1950.60:
+    name: Vernetztes Produkt Plattform-Betrieb
+    description: |
+      Betrieb der IIoT-Plattform, die vernetzten Produkten zugrunde liegt.
+  BC-1950.60.10:
+    name: IIoT-Plattform-Mandanten-Management
+    description: |
+      Mandanten-Onboarding und -Isolation auf der IIoT-Plattform.
+  BC-1950.60.20:
+    name: Plattform-Kapazität & -Leistung
+    description: |
+      Kapazitätsplanung und Leistungsmanagement der Plattform.
+  BC-1950.60.30:
+    name: Plattform-Integrationsdienste
+    description: |
+      Integration der Plattform mit Unternehmens- und Kundensystemen.
+  BC-1950.60.40:
+    name: Plattform-API-Lebenszyklus
+    description: |
+      Lebenszyklus plattformseitig exponierter APIs und SDKs.
+  BC-1950.70:
+    name: Edge- & Gateway-Betriebsmanagement
+    description: |
+      Betrieb von Edge-Anwendungen und Gateway-Geräten im Feld.
+  BC-1950.70.10:
+    name: Edge-Anwendungs-Bereitstellung
+    description: |
+      Bereitstellung von Edge-Anwendungen auf Gateways und Steuerungen.
+  BC-1950.70.20:
+    name: Gateway-Konfigurations-Management
+    description: |
+      Konfigurationsmanagement von Feld-Gateway-Geräten.
+  BC-1950.70.30:
+    name: Edge-Zustandsüberwachung
+    description: |
+      Zustandsüberwachung von Edge-Geräten und -Anwendungen.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

@@ -1,0 +1,129 @@
+locale: de
+source: L1-food-safety-traceability-management.yaml
+entries:
+  BC-2380:
+    name: Lebensmittelsicherheit und Rückverfolgbarkeit
+    description: |
+      Lebensmittelsicherheitsprogramme, Chargen-Rückverfolgbarkeit, Rückrufkoordination,
+      Frischeprodukt-Haltbarkeitsmanagement und Kühlketten-Compliance für den Lebensmitteleinzelhandel
+      und die Lebensmittelproduktion.
+  BC-2380.10:
+    name: Lebensmittelsicherheitsprogramm-Management
+    description: |
+      Lebensmittelsicherheitsrichtlinien, HACCP und Zertifizierungsprogramme (BRCGS, SQF,
+      FSSC 22000, IFS Food, ISO 22000) zur Steuerung von Lebensmittelhandhabung und -versorgung.
+    in_scope:
+      - HACCP und Lebensmittelsicherheitsrichtlinien
+      - Drittanbieter-Zertifizierung (BRCGS, SQF, FSSC 22000, IFS Food)
+      - Lebensmittelsicherheits-Vorfallmanagement
+    out_of_scope:
+      - Allgemeines Qualitätsmanagement (BC-720)
+  BC-2380.10.10:
+    name: Lebensmittelsicherheitsrichtlinien-Management
+    description: |
+      Erstellung und Stewardship von Lebensmittelsicherheitsrichtlinien im gesamten Netzwerk.
+  BC-2380.10.20:
+    name: HACCP-Plan-Management
+    description: |
+      HACCP-Plan-Entwicklung, Gefahrenanalyse und Überwachung kritischer Kontrollpunkte.
+  BC-2380.10.30:
+    name: Lebensmittelsicherheits-Zertifizierungsmanagement
+    description: |
+      Zertifizierung nach BRCGS, SQF, FSSC 22000, IFS Food und ISO 22000.
+  BC-2380.10.40:
+    name: Lebensmittelsicherheits-Vorfallmanagement
+    description: |
+      Vorfallbehandlung bei Lebensmittelsicherheitsereignissen einschließlich Erregernachweise.
+  BC-2380.20:
+    name: Chargen-Rückverfolgbarkeits-Management
+    description: |
+      Einstufige Vorwärts-/Rückwärts-Rückverfolgbarkeit von Chargen in der Lieferkette
+      mittels GS1 EPCIS-Ereigniserfassung und Handelspartnerdatenaustausch.
+  BC-2380.20.10:
+    name: Chargen-Codierung
+    description: |
+      Generierung und Druck von Chargencodes gemäß GS1-Standards.
+  BC-2380.20.20:
+    name: EPCIS-Ereigniserfassung
+    description: |
+      Erfassung von EPCIS-Ereignissen (Inbetriebnahme, Versand, Empfang) in der Lieferkette.
+  BC-2380.20.30:
+    name: Einstufige Vorwärts-/Rückwärts-Nachverfolgung
+    description: |
+      Einstufige Vor- und Rückwärtsnachverfolgung von Inputs und Outputs an jedem Handlingknoten.
+  BC-2380.20.40:
+    name: Handelspartner-Rückverfolgungsdatenaustausch
+    description: |
+      Austausch von Rückverfolgungsdaten mit Lieferanten und nachgelagerten Handelspartnern.
+  BC-2380.30:
+    name: Rückruf- und Rücknahmekoordination
+    description: |
+      Koordination von Lebensmittel- und Konsumgüter-Rückrufen und -Rücknahmen
+      einschließlich Behördenbenachrichtigung und Verbraucherkommunikation.
+    in_scope:
+      - Rückrufklassifizierung und Entscheidungsfindung
+      - Behördenbenachrichtigung und Berichterstattung
+      - Verbraucher- und Handelspartnerkommunikation
+  BC-2380.30.10:
+    name: Rückrufentscheidung und Klassifizierung
+    description: |
+      Entscheidung und Klassifizierung von Rückrufumfang und Schweregrad.
+  BC-2380.30.20:
+    name: Behördenbenachrichtigung
+    description: |
+      Benachrichtigung der Lebensmittelsicherheitsbehörden gemäß jurisdiktionellen Regeln.
+  BC-2380.30.30:
+    name: Verbraucher- und Handelspartnerkommunikation
+    description: |
+      Kommunikation mit Verbrauchern und Handelspartnern über Rückrufmaßnahmen.
+  BC-2380.30.40:
+    name: Rückrufeffektivitäts-Verifikation
+    description: |
+      Überprüfung der Rückrufeffektivität und Rückholquoten.
+  BC-2380.40:
+    name: Frischeprodukt- und Haltbarkeits-Management
+    description: |
+      Haltbarkeitsüberwachung, FEFO-Rotation, Datierungsdisziplin und Abfallreduzierung
+      bei verderblichen Waren.
+  BC-2380.40.10:
+    name: Haltbarkeit und Datumskodierung
+    description: |
+      Festlegung und Druck von Haltbarkeits- und Datumscodes gemäß Marktregeln.
+  BC-2380.40.20:
+    name: First-Expire-First-Out-Rotation
+    description: |
+      FEFO-Rotation in Filialen und Distributionszentren.
+  BC-2380.40.30:
+    name: Frischeprodukt-Preisreduzierungskoordination
+    description: |
+      Koordination von Preisreduzierungen bei Frischeprodukten vor Ablauf zur Abfallreduzierung.
+  BC-2380.40.40:
+    name: Lebensmittelabfall-Reduktionsprogramme
+    description: |
+      Programme zur Lebensmittelabfallreduzierung, -spende und -kreislaufführung.
+  BC-2380.50:
+    name: Kühlketten-Compliance-Management
+    description: |
+      Kühlkettenintegrität für gekühlte und gefrorene Lebensmittel einschließlich
+      Temperaturüberwachung, Abweichungsbehandlung und Dispositionsentscheidungen.
+    in_scope:
+      - Kühlketten-Temperaturüberwachung an allen Knoten
+      - Abweichungsuntersuchung und Disposition
+      - Kühlketten-SOPs und Audits
+    out_of_scope:
+      - Pharmazeutische Kühlkette (BC-1570.10)
+  BC-2380.50.10:
+    name: Kühlketten-Temperaturüberwachung
+    description: |
+      Ende-zu-Ende-Temperaturüberwachung der Lebensmittel-Kühlkette.
+  BC-2380.50.20:
+    name: Kühlketten-Abweichungsdisposition
+    description: |
+      Untersuchung und Disposition von Temperaturabweichungen in der Kühlkette.
+  BC-2380.50.30:
+    name: Kühlketten-Audit und Verifikation
+    description: |
+      Audit und Überprüfung der Kühlkettenpraktiken im gesamten Netzwerk.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"
