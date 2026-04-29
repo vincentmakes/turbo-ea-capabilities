@@ -1,0 +1,146 @@
+locale: de
+source: L1-payments-card-management.yaml
+entries:
+  BC-1340:
+    name: Zahlungsverkehrs- und Kartenmanagement
+    description: |
+      Zahlungsauslösung, -verarbeitung, Clearing/Abwicklung, Kartenausgabe und Kartentransaktionsverarbeitung.
+  BC-1340.10:
+    name: Zahlungsauslösungs-Management
+    description: |
+      Zahlungsauftragserfassung, -validierung und -autorisierung.
+  BC-1340.10.10:
+    name: Zahlungsauftragserfassung
+    description: |
+      Erfassung von Zahlungsaufträgen über alle Kanäle.
+  BC-1340.10.20:
+    name: Zahlungsvalidierung
+    description: |
+      Validierung von Zahlungsaufträgen und Begünstigtendaten.
+  BC-1340.10.30:
+    name: Zahlungsautorisierung
+    description: |
+      Autorisierung, Authentifizierung und starke Kundenauthentifizierung.
+  BC-1340.10.40:
+    name: Zahlungsvorankündigung
+    description: |
+      Vorankündigung von Zahlungen und Zahlungsempfängerbestätigung.
+  BC-1340.20:
+    name: Zahlungsverarbeitungs-Management
+    description: |
+      Zahlungsverarbeitung, -routing, -formatierung und ISO-20022.
+  BC-1340.20.10:
+    name: Zahlungsanreicherung und -formatierung
+    description: |
+      Anreicherung und ISO-20022-Formatierung von Zahlungsnachrichten.
+  BC-1340.20.20:
+    name: Zahlungsrouting
+    description: |
+      Routing von Zahlungen an geeignete Rails und Korrespondenzbanken.
+  BC-1340.20.30:
+    name: Zahlungssanktions-Screening
+    description: |
+      Sanktions- und Restricted-Party-Screening von Zahlungen.
+  BC-1340.20.40:
+    name: Zahlungsuntersuchungen
+    description: |
+      Untersuchung fehlgeschlagener, zurückgegebener und angefochtener Zahlungen.
+  BC-1340.30:
+    name: Clearing- und Abwicklungsmanagement
+    description: |
+      Inländisches Clearing – ACH, BACS, SEPA, FPS – und Abwicklung.
+  BC-1340.30.10:
+    name: ACH- und Massen-Clearing
+    description: |
+      Betrieb von ACH-, BACS- und Massen-Clearing-Systemen.
+  BC-1340.30.20:
+    name: SEPA-Clearing-Betrieb
+    description: |
+      SEPA-Überweisung und SEPA-Lastschrift-Betrieb.
+  BC-1340.30.30:
+    name: RTGS- und Netto-Abwicklung
+    description: |
+      RTGS-Abwicklung und verzögerte Netto-Abwicklungsvorgänge.
+  BC-1340.30.40:
+    name: Nostro- und Vostro-Abstimmung
+    description: |
+      Nostro/Vostro-Kontoabstimmung und Differenzenverwaltung.
+  BC-1340.40:
+    name: Grenzüberschreitender-Zahlungsverkehr-Management
+    description: |
+      Internationale Zahlungen, Korrespondenzbankgeschäft und Devisen.
+  BC-1340.40.10:
+    name: Korrespondenzbank-Management
+    description: |
+      Korrespondenzbankbeziehungen und RMA-Management.
+  BC-1340.40.20:
+    name: Grenzüberschreitendes-Zahlungsrouting
+    description: |
+      Routing grenzüberschreitender Zahlungen über SWIFT und alternative Rails.
+  BC-1340.40.30:
+    name: Devisenkonvertierung für Zahlungen
+    description: |
+      Devisenkonvertierung, Kursermittlung und Preisgestaltung für Zahlungen.
+  BC-1340.40.40:
+    name: SWIFT-GPI-Verfolgung
+    description: |
+      SWIFT-GPI-Statusverfolgung und Kundentransparenz.
+  BC-1340.50:
+    name: Echtzeit-Zahlungsmanagement
+    description: |
+      Echtzeit- und Sofortzahlungs-Rails.
+  BC-1340.50.10:
+    name: Sofortzahlungssystem-Betrieb
+    description: |
+      Betrieb von FPS-, SCT-Inst- und anderen Sofortzahlungssystemen.
+  BC-1340.50.20:
+    name: Request-to-Pay-Betrieb
+    description: |
+      Request-to-Pay-Nachrichtenübermittlung und Lebenszyklusmanagement.
+  BC-1340.50.30:
+    name: Echtzeit-Zahlungsliquidität
+    description: |
+      Liquiditätsmanagement für 24/7-Sofortzahlungs-Rails.
+  BC-1340.60:
+    name: Kartenausgabe-Management
+    description: |
+      Kartenproduktion, Personalisierung, Versand und Aktivierung.
+  BC-1340.60.10:
+    name: Kartenproduktion und -personalisierung
+    description: |
+      Kartenproduktion, Prägung und Personalisierungsvorgänge.
+  BC-1340.60.20:
+    name: Kartenversand und -zustellung
+    description: |
+      Versand von Plastikkarten und PIN-Zustellung.
+  BC-1340.60.30:
+    name: Kartenaktivierung
+    description: |
+      Kartenaktivierungs- und PIN-Verwaltungsworkflows.
+  BC-1340.60.40:
+    name: Digitale-Karte und Wallet-Bereitstellung
+    description: |
+      Digitale Kartenausgabe und Wallet-Bereitstellung (Tokenisierung).
+  BC-1340.70:
+    name: Kartentransaktionsverarbeitungs-Management
+    description: |
+      Switching, Autorisierung, Betrugsscreening und Chargebacks.
+  BC-1340.70.10:
+    name: Karten-Autorisierungs-Switching
+    description: |
+      Echtzeit-Autorisierungs-Switching und -Routing.
+  BC-1340.70.20:
+    name: Karten-Betrugserkennung
+    description: |
+      Echtzeit-Betrugserkennung bei Kartentransaktionen.
+  BC-1340.70.30:
+    name: Kartenabwicklung und Interbankenentgelt
+    description: |
+      Abwicklung, Interbankenentgelt und Clearing mit Kartensystemen.
+  BC-1340.70.40:
+    name: Chargeback- und Streitfall-Management
+    description: |
+      Chargeback-Bearbeitung und Kartensystem-Streitbeilegung.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"
