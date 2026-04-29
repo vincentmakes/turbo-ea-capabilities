@@ -1,0 +1,166 @@
+# Gestione delle operazioni al punto vendita (it) — translations for L1-point-of-sale-operations-management.yaml
+locale: it
+source: L1-point-of-sale-operations-management.yaml
+entries:
+  BC-2320:
+    name: Gestione delle operazioni al punto vendita
+    description: |
+      Strato transazionale rivolto al cliente nel retail — registrazione delle vendite,
+      accettazione dei pagamenti, resi e rimborsi, gestione del contante, configurazione
+      del POS e continuità della vendita durante le interruzioni di sistema.
+  BC-2320.10:
+    name: Gestione delle transazioni di vendita
+    description: |
+      Registrazione delle transazioni di vendita al consumatore, inclusi la composizione
+      del carrello, la scansione, l'applicazione delle promozioni, la gestione fiscale e
+      le ricevute digitali.
+    in_scope:
+      - Composizione del carrello e scansione degli articoli
+      - Applicazione di promozioni e loyalty alla cassa
+      - Calcolo delle imposte e ricevute digitali o cartacee
+    out_of_scope:
+      - Progettazione delle promozioni (BC-440.30)
+      - Cassa e-commerce (BC-2330)
+  BC-2320.10.10:
+    name: Scansione degli articoli e composizione del carrello
+    description: |
+      Scansione degli articoli e assemblaggio del carrello alla cassa, inclusi gli
+      articoli a peso.
+  BC-2320.10.20:
+    name: Applicazione di promozioni e loyalty
+    description: |
+      Applicazione di promozioni, coupon e riscatto punti loyalty durante la vendita.
+  BC-2320.10.30:
+    name: Gestione di imposte e IVA
+    description: |
+      Calcolo delle imposte sulle vendite, dell'IVA e delle regole giurisdizionali alla
+      cassa.
+  BC-2320.10.40:
+    name: Emissione di ricevute cartacee e digitali
+    description: |
+      Emissione di ricevute cartacee e digitali con possibilità di collegamento al profilo
+      del consumatore.
+  BC-2320.20:
+    name: Gestione dell'accettazione dei pagamenti
+    description: |
+      Accettazione dei pagamenti alla cassa, inclusi EMV, contactless, wallet digitali,
+      gift card e metodi di pagamento alternativi, con conformità PCI-DSS.
+  BC-2320.20.10:
+    name: Accettazione di pagamenti con carta e contactless
+    description: |
+      Accettazione di pagamenti EMV, contactless e tramite wallet digitale alle casse
+      retail.
+  BC-2320.20.20:
+    name: Accettazione di contanti e assegni
+    description: |
+      Accettazione di contanti, monete e assegni, inclusa la gestione delle
+      denominazioni.
+  BC-2320.20.30:
+    name: Accettazione di gift card e strumenti a valore memorizzato
+    description: |
+      Accettazione ed emissione di gift card e strumenti a valore memorizzato.
+  BC-2320.20.40:
+    name: Accettazione di metodi di pagamento alternativi
+    description: |
+      Accettazione di pagamenti buy-now-pay-later, QR e altri metodi alternativi.
+  BC-2320.20.50:
+    name: Operazioni di conformità PCI-DSS
+    description: |
+      Gestione dei dati del titolare di carta conforme agli standard PCI-DSS al punto
+      vendita.
+  BC-2320.30:
+    name: Gestione di resi, rimborsi e cambi
+    description: |
+      Elaborazione in negozio di resi, rimborsi e cambi del consumatore, inclusi i casi
+      di rimborso sul mezzo di pagamento originale, credito negozio e resi cross-canale.
+    in_scope:
+      - Resi e rimborsi del consumatore in negozio
+      - Gestione di credito negozio e cambi
+      - Resi in negozio di ordini online (cross-canale)
+    out_of_scope:
+      - Logistica inversa verso il centro di distribuzione (BC-520.40.40)
+  BC-2320.30.10:
+    name: Accettazione dei resi del consumatore
+    description: |
+      Accettazione dei resi del consumatore alla cassa nel rispetto della politica di
+      reso.
+  BC-2320.30.20:
+    name: Emissione di rimborsi e crediti negozio
+    description: |
+      Emissione di rimborsi sul mezzo di pagamento originale o tramite credito negozio.
+  BC-2320.30.30:
+    name: Gestione delle transazioni di cambio
+    description: |
+      Transazioni di cambio in pari e non in pari, inclusa la riconciliazione del prezzo.
+  BC-2320.30.40:
+    name: Elaborazione dei resi cross-canale
+    description: |
+      Accettazione in negozio di ordini provenienti da altri canali per la restituzione.
+  BC-2320.40:
+    name: Gestione del contante e dei pagamenti al POS
+    description: |
+      Processi di gestione del cassetto del denaro, della cassaforte, del versamento e
+      della riconciliazione dei pagamenti di fine giornata a tutela degli incassi.
+  BC-2320.40.10:
+    name: Gestione del cassetto del denaro
+    description: |
+      Apertura, monitoraggio e riconciliazione dei cassetti del denaro alla cassa.
+  BC-2320.40.20:
+    name: Operazioni di cassaforte e prelievi
+    description: |
+      Gestione della cassaforte, prelievi a metà giornata e preparazione per il trasporto
+      valori.
+  BC-2320.40.30:
+    name: Riconciliazione dei pagamenti di fine giornata
+    description: |
+      Riconciliazione di tutti i mezzi di pagamento rispetto ai registri di vendita POS
+      a fine giornata.
+  BC-2320.40.40:
+    name: Preparazione del versamento bancario
+    description: |
+      Preparazione dei versamenti bancari e consegna al servizio di trasporto valori.
+  BC-2320.50:
+    name: Gestione della configurazione del POS
+    description: |
+      Configurazione dei tipi di pagamento, delle regole fiscali, della logica
+      promozionale, delle periferiche e del comportamento della cassa in tutti i punti
+      vendita.
+  BC-2320.50.10:
+    name: Configurazione dei pagamenti e dei mezzi di pagamento
+    description: |
+      Configurazione dei mezzi di pagamento accettati, dei limiti e dell'instradamento
+      per punto vendita.
+  BC-2320.50.20:
+    name: Configurazione delle regole fiscali
+    description: |
+      Configurazione delle regole fiscali e delle deroghe giurisdizionali per punto
+      vendita.
+  BC-2320.50.30:
+    name: Configurazione del motore promozionale
+    description: |
+      Configurazione del motore promozionale del POS e delle regole di prioritizzazione
+      delle offerte.
+  BC-2320.50.40:
+    name: Configurazione delle periferiche POS
+    description: |
+      Configurazione di bilance, scanner, stampanti e pin pad alla cassa.
+  BC-2320.60:
+    name: Resilienza del POS e operazioni offline
+    description: |
+      Continuità della vendita durante interruzioni di connettività o di sistema, inclusi
+      POS offline, store-and-forward e gestione delle code.
+  BC-2320.60.10:
+    name: Operatività del POS offline
+    description: |
+      Operatività continuata del POS in caso di perdita di connettività.
+  BC-2320.60.20:
+    name: Gestione delle transazioni store-and-forward
+    description: |
+      Memorizzazione e inoltro delle transazioni offline al ripristino della connessione.
+  BC-2320.60.30:
+    name: Gestione delle code in caso di interruzione
+    description: |
+      Gestione delle code dei clienti durante le interruzioni del sistema di cassa.
+metadata:
+  status: draft
+  reviewer: pending

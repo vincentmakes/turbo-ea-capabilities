@@ -1,0 +1,168 @@
+# Gestione della fatturazione e dei ricavi da abbonamento (it) — translations for L1-subscription-billing-revenue-management.yaml
+locale: it
+source: L1-subscription-billing-revenue-management.yaml
+entries:
+  BC-4250:
+    name: Gestione della fatturazione e dei ricavi da abbonamento
+    description: |
+      Misurazione dell'utilizzo, tariffazione, fatturazione, gestione dei mancati pagamenti,
+      riconoscimento dei ricavi da abbonamento, fiscalità e analytics dei ricavi ricorrenti
+      per il modello commerciale SaaS.
+  BC-4250.10:
+    name: Misurazione dell'utilizzo
+    description: |
+      Ingestione e aggregazione degli eventi di utilizzo che alimentano
+      la tariffazione downstream e le analytics.
+  BC-4250.10.10:
+    name: Ingestione degli eventi di utilizzo
+    description: |
+      Ingestione degli eventi di utilizzo dai servizi di prodotto
+      nella pipeline di misurazione.
+  BC-4250.10.20:
+    name: Aggregazione dell'utilizzo
+    description: |
+      Aggregazione degli eventi di utilizzo in quantità fatturabili
+      per tenant e contatore.
+  BC-4250.10.30:
+    name: Riconciliazione delle quantità misurate
+    description: |
+      Riconciliazione delle quantità misurate rispetto alla fonte di verità
+      e ai contatori visibili al cliente.
+  BC-4250.20:
+    name: Tariffazione e addebito
+    description: |
+      Applicazione di tariffe di abbonamento, tariffe di utilizzo, ripartizioni proporzionali
+      e sconti per il calcolo degli addebiti.
+  BC-4250.20.10:
+    name: Tariffazione degli abbonamenti
+    description: |
+      Calcolo degli addebiti ricorrenti dell'abbonamento
+      per ciclo.
+  BC-4250.20.20:
+    name: Tariffazione dell'utilizzo
+    description: |
+      Calcolo degli addebiti di utilizzo dalle quantità
+      tariffate e dalle tariffe.
+  BC-4250.20.30:
+    name: Calcolo della ripartizione proporzionale
+    description: |
+      Calcolo degli addebiti pro-rata derivanti
+      da modifiche a metà ciclo.
+  BC-4250.20.40:
+    name: Applicazione degli sconti
+    description: |
+      Applicazione di sconti e crediti negoziati
+      agli addebiti calcolati.
+  BC-4250.30:
+    name: Gestione delle fatture e dei rendiconti
+    description: |
+      Generazione, consegna e rettifica delle fatture e gestione
+      delle contestazioni di fatturazione dei clienti.
+  BC-4250.30.10:
+    name: Generazione delle fatture
+    description: |
+      Generazione delle fatture dagli addebiti tariffati
+      e dai termini contrattuali.
+  BC-4250.30.20:
+    name: Consegna delle fatture
+    description: |
+      Consegna delle fatture ai clienti tramite portale, email
+      e canali partner.
+  BC-4250.30.30:
+    name: Rettifica delle fatture
+    description: |
+      Rettifica delle fatture per crediti, errori
+      e scostamenti contrattuali.
+  BC-4250.30.40:
+    name: Gestione delle contestazioni di fatturazione
+    description: |
+      Triage e risoluzione delle contestazioni di fatturazione
+      dei clienti.
+  BC-4250.40:
+    name: Riscossione dei pagamenti e gestione dei mancati pagamenti
+    description: |
+      Gestione dei metodi di pagamento, autorizzazione, gestione dei mancati pagamenti
+      e recupero dell'abbandono involontario.
+  BC-4250.40.10:
+    name: Gestione dei metodi di pagamento
+    description: |
+      Acquisizione e gestione dei metodi di pagamento
+      e dei token dei clienti.
+  BC-4250.40.20:
+    name: Autorizzazione dei pagamenti
+    description: |
+      Autorizzazione e acquisizione dei pagamenti ricorrenti
+      tramite processori di pagamento.
+  BC-4250.40.30:
+    name: Workflow di gestione dei mancati pagamenti
+    description: |
+      Sequenze automatizzate di gestione dei mancati pagamenti
+      per pagamenti falliti e saldi in scadenza.
+  BC-4250.40.40:
+    name: Recupero dell'abbandono involontario
+    description: |
+      Recupero degli abbonamenti persi a causa di carte scadute,
+      rifiuti definitivi e analoghe problematiche di pagamento.
+  BC-4250.50:
+    name: Riconoscimento dei ricavi da abbonamento
+    description: |
+      Identificazione delle obbligazioni di performance e gestione
+      dei piani di ricavo in linea con ASC 606 / IFRS 15.
+  BC-4250.50.10:
+    name: Identificazione delle obbligazioni di performance
+    description: |
+      Identificazione delle obbligazioni di performance distinte
+      dai contratti di abbonamento.
+  BC-4250.50.20:
+    name: Gestione dei piani di ricavo
+    description: |
+      Generazione e manutenzione dei piani di riconoscimento dei ricavi
+      nel corso della vita del contratto.
+  BC-4250.50.30:
+    name: Riconciliazione dei ricavi differiti
+    description: |
+      Riconciliazione dei saldi dei ricavi differiti con gli importi
+      fatturati e riconosciuti.
+  BC-4250.60:
+    name: Gestione della fiscalità degli abbonamenti
+    description: |
+      Determinazione delle giurisdizioni fiscali, calcolo e gestione delle esenzioni
+      sulle tariffe ricorrenti e di utilizzo.
+  BC-4250.60.10:
+    name: Determinazione della giurisdizione fiscale
+    description: |
+      Determinazione delle giurisdizioni fiscali applicabili
+      per cliente e addebito.
+  BC-4250.60.20:
+    name: Calcolo delle imposte sugli abbonamenti
+    description: |
+      Calcolo dell'imposta indiretta sugli addebiti
+      di abbonamento e di utilizzo.
+  BC-4250.60.30:
+    name: Gestione delle esenzioni fiscali
+    description: |
+      Acquisizione e applicazione dei certificati di esenzione
+      fiscale dei clienti.
+  BC-4250.70:
+    name: Analytics dei ricavi da abbonamento
+    description: |
+      Calcolo e analisi delle metriche di salute dei ricavi ricorrenti,
+      inclusi ARR, MRR, NRR, GRR e viste per coorte.
+  BC-4250.70.10:
+    name: Calcolo di ARR e MRR
+    description: |
+      Calcolo dei ricavi ricorrenti annuali e mensili
+      dallo stato degli abbonamenti.
+  BC-4250.70.20:
+    name: Analisi della retention netta e lorda
+    description: |
+      Analisi della retention dei ricavi netta e lorda
+      tra le coorti di clienti.
+  BC-4250.70.30:
+    name: Analisi dei ricavi per coorte
+    description: |
+      Analisi per coorte dell'evoluzione dei ricavi
+      e delle dinamiche di retention.
+metadata:
+  status: draft
+  reviewer: pending

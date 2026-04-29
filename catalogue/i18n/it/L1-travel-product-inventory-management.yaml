@@ -1,0 +1,196 @@
+# Gestione del prodotto e dell'inventario di viaggio (it) — translations for L1-travel-product-inventory-management.yaml
+locale: it
+source: L1-travel-product-inventory-management.yaml
+entries:
+  BC-4000:
+    name: Gestione del prodotto e dell'inventario di viaggio
+    description: |
+      Definizione principale, struttura e controllo dell'inventario dei prodotti di viaggio prenotabili —
+      camere, tariffe, pacchetti, ancillari, attrazioni e la tassonomia e i contenuti che li descrivono —
+      indipendentemente dai canali attraverso cui vengono venduti.
+    in_scope:
+      - Tipi di camera per alloggio, piani tariffari e codici pacchetto
+      - Famiglie di tariffe aeree, tariffe branded e regole tariffarie
+      - Itinerari in pacchetto (statici e dinamici) e cataloghi di ancillari
+      - Pool di inventario, allotment e buffer di overbooking
+      - Dati master di prodotto, contenuti e immagini
+    out_of_scope:
+      - Configurazione della distribuzione per canale (BC-4010)
+      - Ciclo di vita delle prenotazioni (BC-4020)
+      - Strategia di prezzo e decisioni di yield (BC-4030)
+  BC-4000.10:
+    name: Gestione del prodotto ricettivo
+    description: |
+      Definizione dei prodotti di alloggio, inclusi tipi di camera, piani tariffari,
+      codici pacchetto e tassonomia ricettiva utilizzata in tutta l'impresa.
+  BC-4000.10.10:
+    name: Definizione del tipo di camera e della classe di inventario
+    description: |
+      Definizione dei tipi di camera, delle categorie suite e delle classi di inventario
+      che costituiscono la struttura portante del prodotto ricettivo.
+  BC-4000.10.20:
+    name: Definizione del piano tariffario e del codice tariffa
+    description: |
+      Definizione dei piani tariffari, dei codici tariffa e degli attributi del piano tariffario
+      relativi a rimborsabilità, prepagamento e regole di inclusione.
+  BC-4000.10.30:
+    name: Stato del ciclo di vita del prodotto ricettivo
+    description: |
+      Gestione dello stato del ciclo di vita dei prodotti ricettivi, dalla fase proposta
+      a quella attiva, sospesa e ritirata.
+  BC-4000.10.40:
+    name: Composizione del pacchetto ricettivo
+    description: |
+      Costruzione di pacchetti ricettivi che combinano l'alloggio con la colazione,
+      il parcheggio e altre inclusioni.
+  BC-4000.20:
+    name: Gestione del prodotto aereo
+    description: |
+      Definizione delle famiglie di tariffe aeree, degli attributi delle tariffe branded,
+      delle regole tariffarie e delle mappature dei prodotti in codeshare e interline.
+  BC-4000.20.10:
+    name: Definizione della famiglia di tariffe
+    description: |
+      Definizione delle famiglie di tariffe, delle classi di cabina e dei bucket tariffari
+      utilizzati per la ricerca e il controllo dell'inventario.
+  BC-4000.20.20:
+    name: Gestione degli attributi delle tariffe branded
+    description: |
+      Gestione degli attributi delle tariffe branded, come la franchigia bagaglio,
+      la scelta del posto e l'accesso alla lounge.
+  BC-4000.20.30:
+    name: Redazione delle regole tariffarie
+    description: |
+      Redazione delle regole tariffarie relative all'acquisto anticipato, al soggiorno minimo,
+      alla combinabilità e alle penali di modifica.
+  BC-4000.20.40:
+    name: Mappatura del prodotto in codeshare e interline
+    description: |
+      Mappatura dei prodotti dei vettori partner sulle proprie famiglie di tariffe
+      per la distribuzione in codeshare e interline.
+  BC-4000.30:
+    name: Gestione del prodotto tour e pacchetto
+    description: |
+      Definizione degli itinerari in pacchetto, dei prodotti di viaggio multi-tratta
+      e delle mappature dei componenti per il pacchetto dinamico.
+  BC-4000.30.10:
+    name: Definizione del pacchetto statico
+    description: |
+      Definizione di pacchetti fissi che combinano componenti predefiniti
+      in un unico prodotto vendibile.
+  BC-4000.30.20:
+    name: Mappatura dei componenti per il pacchetto dinamico
+    description: |
+      Mappatura dei componenti per il pacchetto dinamico, in cui il viaggiatore
+      assembla volo, hotel e ancillari al momento della ricerca.
+  BC-4000.30.30:
+    name: Versionamento del prodotto pacchetto
+    description: |
+      Versionamento dei prodotti pacchetto attraverso stagioni, cicli di brochure
+      e rilasci di nuove funzionalità.
+  BC-4000.30.40:
+    name: Calendario delle partenze del pacchetto
+    description: |
+      Definizione dei calendari di partenza dei pacchetti, delle date di blackout
+      e delle finestre stagionali.
+  BC-4000.40:
+    name: Gestione del prodotto ancillare e dei servizi aggiuntivi
+    description: |
+      Definizione dei prodotti ancillari e dei servizi aggiuntivi, come pasti, bagaglio,
+      transfer, attrazioni, spa e servizi a terra.
+  BC-4000.40.10:
+    name: Definizione del catalogo ancillari
+    description: |
+      Definizione del catalogo ancillari, comprese le categorie, le varianti
+      e le condizioni di applicabilità.
+  BC-4000.40.20:
+    name: Regole di composizione degli ancillari in bundle
+    description: |
+      Regole per la composizione in bundle degli ancillari con i prodotti di viaggio
+      principali e con altri ancillari.
+  BC-4000.40.30:
+    name: Regole di idoneità al cross-sell
+    description: |
+      Regole di idoneità che determinano quali ancillari possono essere oggetto di
+      cross-sell con quali prodotti principali e in quali canali.
+  BC-4000.40.40:
+    name: Gestione del ciclo di vita degli ancillari
+    description: |
+      Gestione del ciclo di vita degli ancillari dal lancio al ritiro,
+      comprese le offerte a tempo limitato.
+  BC-4000.50:
+    name: Allocazione dell'inventario di viaggio
+    description: |
+      Definizione e controllo dei pool di inventario, dei blocchi, degli allotment
+      e delle regole di riserva per i prodotti di viaggio.
+  BC-4000.50.10:
+    name: Definizione del pool di inventario
+    description: |
+      Definizione dei pool di inventario a livello di struttura, flotta o prodotto,
+      utilizzati come base per l'allocazione.
+  BC-4000.50.20:
+    name: Allocazione di allotment e blocchi
+    description: |
+      Allocazione di allotment e blocchi a canali, partner e tour operator.
+  BC-4000.50.30:
+    name: Regole di riserva e protezione della classe
+    description: |
+      Regole per proteggere l'inventario per segmenti specifici, canali
+      o membri del programma fedeltà.
+  BC-4000.50.40:
+    name: Configurazione del buffer di overbooking
+    description: |
+      Configurazione dei buffer di overbooking che riflettono i tassi attesi
+      di no-show e cancellazione.
+  BC-4000.60:
+    name: Governance dei dati master del prodotto di viaggio
+    description: |
+      Amministrazione della tassonomia del prodotto, delle classificazioni, degli standard
+      degli attributi e dell'integrità degli identificatori nel master del prodotto di viaggio.
+  BC-4000.60.10:
+    name: Standard degli attributi del prodotto
+    description: |
+      Standard per gli attributi del prodotto che garantiscono una semantica coerente
+      tra sistemi e canali.
+  BC-4000.60.20:
+    name: Classificazione e tagging del prodotto
+    description: |
+      Classificazione e tagging dei prodotti rispetto alle tassonomie utilizzate
+      per la ricerca, il merchandising e il reporting.
+  BC-4000.60.30:
+    name: Stato del ciclo di vita del master prodotto
+    description: |
+      Stato del ciclo di vita del master per i prodotti, esteso ai sotto-tipi di prodotto
+      e allineato alle variazioni di stato dei figli.
+  BC-4000.60.40:
+    name: Amministrazione degli identificatori di prodotto
+    description: |
+      Amministrazione degli identificatori canonici del prodotto e risoluzione
+      di collisioni e duplicati degli identificatori.
+  BC-4000.70:
+    name: Gestione dei contenuti e delle immagini del prodotto di viaggio
+    description: |
+      Redazione e gestione dei contenuti descrittivi, delle immagini, degli asset multimediali
+      e dei record di rating e certificazione che descrivono i prodotti di viaggio.
+  BC-4000.70.10:
+    name: Redazione dei contenuti descrittivi
+    description: |
+      Redazione di contenuti descrittivi in formato lungo e breve
+      per i prodotti di viaggio.
+  BC-4000.70.20:
+    name: Gestione delle immagini e degli asset multimediali
+    description: |
+      Gestione di asset fotografici, video e multimediali a 360 gradi
+      associati ai prodotti di viaggio.
+  BC-4000.70.30:
+    name: Record di classificazione a stelle e certificazione
+    description: |
+      Manutenzione delle classificazioni a stelle, delle certificazioni di terze parti
+      e dei marchi di qualità associati ai prodotti di viaggio.
+  BC-4000.70.40:
+    name: Localizzazione dei contenuti
+    description: |
+      Localizzazione dei contenuti del prodotto nei mercati e nelle lingue supportati.
+metadata:
+  status: draft
+  reviewer: pending

@@ -1,0 +1,202 @@
+# Gestione della performance degli edifici (it) — translations for L1-building-performance-management.yaml
+locale: it
+source: L1-building-performance-management.yaml
+entries:
+  BC-2070:
+    name: Gestione della performance degli edifici
+    description: |
+      Ottimizzazione continua e basata sui dati della performance degli edifici — misurazione e
+      verifica dell'energia (IPMVP / ASHRAE Guideline 14), FDD (Fault Detection and Diagnostics),
+      analisi dell'energia e della qualità dell'aria interna (IAQ), risposta alla domanda e
+      interazione con la rete elettrica, tracciamento del carbonio e della sostenibilità, e
+      reporting periodico delle prestazioni ai proprietari degli edifici.
+    in_scope:
+      - Baseline M&V dell'energia, calcolo dei risparmi e aggiustamenti
+      - Librerie di regole FDD e triage continuativo dei guasti
+      - Benchmarking energetico dell'edificio, attribuzione, rilevamento delle anomalie e previsione
+      - Analisi della qualità ambientale interna per risultati termici, aerei, acustici e di illuminazione
+      - Risposta alla domanda e operazioni dell'edificio grid-interactive
+      - Carbonio operativo, allocazione delle rinnovabili e metriche ESG a livello di edificio
+      - Dashboard per il proprietario, reporting periodico e briefing agli stakeholder
+    out_of_scope:
+      - Cx e FPT durante il commissioning di progetto (BC-2050)
+      - Esecuzione dell'assistenza sul campo (BC-2060)
+      - Strategia di sostenibilità aziendale e reporting (BC-740)
+      - Progettazione delle apparecchiature HVAC (BC-2000) e ingegneria del prodotto BAS (BC-2010)
+
+  BC-2070.10:
+    name: Misurazione e verifica dell'energia
+    description: |
+      Baseline, calcolo dei risparmi e aggiustamento della prestazione energetica ai sensi
+      di IPMVP / ASHRAE Guideline 14.
+
+  BC-2070.10.10:
+    name: Modellazione della baseline
+    description: Modellazione delle baseline energetiche rispetto alle quali vengono misurati i risparmi.
+
+  BC-2070.10.20:
+    name: Redazione del piano M&V
+    description: Redazione dei piani di misurazione e verifica allineati ai protocolli riconosciuti.
+
+  BC-2070.10.30:
+    name: Calcolo dei risparmi
+    description: Calcolo dei risparmi energetici rispetto alla baseline.
+
+  BC-2070.10.40:
+    name: Aggiustamento e normalizzazione
+    description: Aggiustamento e normalizzazione degli output M&V per clima e occupazione.
+
+  BC-2070.20:
+    name: Operazioni di FDD (Fault Detection and Diagnostics)
+    description: |
+      Gestione delle librerie di regole FDD e triage continuativo dei guasti rilevati.
+
+  BC-2070.20.10:
+    name: Gestione della libreria di regole FDD
+    description: Manutenzione delle librerie di regole di FDD (Fault Detection and Diagnostics).
+
+  BC-2070.20.20:
+    name: Triage e prioritizzazione dei guasti
+    description: Triage e prioritizzazione dei guasti rilevati per impatto.
+
+  BC-2070.20.30:
+    name: Analisi diagnostica della causa profonda
+    description: Analisi diagnostica per identificare le cause profonde dei guasti rilevati.
+
+  BC-2070.20.40:
+    name: Ottimizzazione dei falsi positivi FDD
+    description: Ottimizzazione delle regole FDD per ridurre i tassi di allarme falso positivo.
+
+  BC-2070.30:
+    name: Analisi delle prestazioni energetiche
+    description: |
+      Analisi del consumo energetico nell'intero portafoglio edilizio.
+
+  BC-2070.30.10:
+    name: Benchmarking e confronto tra pari
+    description: Benchmarking delle prestazioni energetiche dell'edificio rispetto ai pari.
+
+  BC-2070.30.20:
+    name: Attribuzione del consumo energetico
+    description: Attribuzione del consumo energetico tra sistemi, zone e carichi.
+
+  BC-2070.30.30:
+    name: Rilevamento delle anomalie energetiche
+    description: Rilevamento delle anomalie nei pattern di consumo energetico.
+
+  BC-2070.30.40:
+    name: Previsione e targeting
+    description: Previsione del consumo energetico futuro e targeting rispetto agli obiettivi di miglioramento.
+
+  BC-2070.40:
+    name: Analisi della qualità ambientale interna
+    description: |
+      Analisi dei risultati della qualità ambientale interna, incluse metriche di comfort,
+      aria, acustica e illuminazione.
+
+  BC-2070.40.10:
+    name: Analisi del comfort termico
+    description: Analisi del comfort termico rispetto ai criteri ASHRAE 55 ed equivalenti.
+
+  BC-2070.40.20:
+    name: Analisi della qualità dell'aria
+    description: Analisi della qualità dell'aria interna (IAQ) rispetto ai criteri ASHRAE 62.1 ed equivalenti.
+
+  BC-2070.40.30:
+    name: Analisi acustica e dell'illuminazione
+    description: Analisi delle prestazioni acustiche e di illuminazione per i risultati degli occupanti.
+
+  BC-2070.40.40:
+    name: Correlazione del feedback degli occupanti
+    description: Correlazione del feedback degli occupanti con i dati ambientali misurati.
+
+  BC-2070.50:
+    name: Gestione della risposta alla domanda e dell'interazione con la rete elettrica
+    description: |
+      Gestione del comportamento dell'edificio grid-interactive e partecipazione ai programmi
+      di risposta alla domanda.
+
+  BC-2070.50.10:
+    name: Iscrizione ai programmi di risposta alla domanda
+    description: Iscrizione degli edifici ai programmi di risposta alla domanda.
+
+  BC-2070.50.20:
+    name: Esecuzione della riduzione del carico
+    description: Esecuzione degli eventi di riduzione del carico rispetto agli obblighi contrattuali.
+
+  BC-2070.50.30:
+    name: Operazioni dell'edificio grid-interactive
+    description: Operazioni degli edifici efficienti grid-interactive.
+
+  BC-2070.50.40:
+    name: Risposta tariffaria e ai prezzi
+    description: Risposta delle operazioni dell'edificio alle tariffe a fascia oraria e dinamiche.
+
+  BC-2070.60:
+    name: Tracciamento delle prestazioni di carbonio e sostenibilità
+    description: |
+      Contabilità del carbonio operativo a livello di edificio e tracciamento dei risultati
+      di sostenibilità.
+
+  BC-2070.60.10:
+    name: Contabilità del carbonio operativo
+    description: Contabilità delle emissioni di carbonio operativo a livello di edificio.
+
+  BC-2070.60.20:
+    name: Allocazione dell'energia rinnovabile
+    description: Allocazione dell'energia rinnovabile in loco e contrattuale agli edifici.
+
+  BC-2070.60.30:
+    name: Metriche ESG a livello di edificio
+    description: Calcolo delle metriche ESG a livello di edificio per il reporting di portafoglio.
+
+  BC-2070.60.40:
+    name: Tracciamento delle prestazioni per la certificazione di sostenibilità
+    description: Tracciamento delle prestazioni rispetto ai criteri di certificazione degli edifici verdi.
+
+  BC-2070.70:
+    name: Gestione delle raccomandazioni di miglioramento delle prestazioni
+    description: |
+      Identificazione e gestione delle opportunità di miglioramento delle prestazioni e dei
+      casi di risparmio.
+
+  BC-2070.70.10:
+    name: Identificazione delle opportunità
+    description: Identificazione delle opportunità di miglioramento delle prestazioni dall'analisi.
+
+  BC-2070.70.20:
+    name: Business case dei risparmi
+    description: Sviluppo dei business case a supporto dei miglioramenti raccomandati.
+
+  BC-2070.70.30:
+    name: Prioritizzazione delle raccomandazioni
+    description: Prioritizzazione delle raccomandazioni nell'intero portafoglio.
+
+  BC-2070.70.40:
+    name: Tracciamento dell'attuazione
+    description: Tracciamento dell'attuazione delle raccomandazioni accettate.
+
+  BC-2070.80:
+    name: Reporting delle prestazioni e operazioni della dashboard
+    description: |
+      Dashboard per il proprietario, report periodici e reporting normativo delle prestazioni.
+
+  BC-2070.80.10:
+    name: Operazioni della dashboard del proprietario
+    description: Gestione delle dashboard di prestazione per il proprietario.
+
+  BC-2070.80.20:
+    name: Reporting periodico delle prestazioni
+    description: Produzione di report periodici delle prestazioni per i clienti.
+
+  BC-2070.80.30:
+    name: Reporting normativo delle prestazioni
+    description: Reporting delle prestazioni dell'edificio ai programmi normativi (ad es. benchmarking obbligatorio).
+
+  BC-2070.80.40:
+    name: Briefing sulle prestazioni per gli stakeholder
+    description: Briefing agli occupanti, agli investitori e agli stakeholder sulle prestazioni dell'edificio.
+
+metadata:
+  status: draft
+  reviewer: pending

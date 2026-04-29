@@ -1,0 +1,144 @@
+# Gestione delle operazioni della rete di distribuzione idrica (it) — translations for L1-water-distribution-network-operations-management.yaml
+locale: it
+source: L1-water-distribution-network-operations-management.yaml
+entries:
+  BC-3880:
+    name: Gestione delle operazioni della rete di distribuzione idrica
+    description: |
+      Operazione delle condotte principali e di distribuzione per la fornitura di acqua
+      trattata ai clienti — gestione idraulica e della pressione, controllo delle perdite,
+      qualità dell'acqua in rete, riparazione e sostituzione delle condotte
+      e realizzazione delle connessioni al cliente.
+  BC-3880.10:
+    name: Controllo della rete di distribuzione
+    description: |
+      Operazione 24/7 della sala controllo del sistema di distribuzione idrica
+      tramite telemetria, modelli idraulici e SCADA.
+  BC-3880.10.10:
+    name: Operazioni SCADA di distribuzione
+    description: |
+      Controllo supervisivo in tempo reale degli asset di pompaggio e pressione su tutta la rete.
+  BC-3880.10.20:
+    name: Operazioni del modello idraulico
+    description: |
+      Utilizzo di modelli idraulici online e offline per le decisioni di rete.
+  BC-3880.10.30:
+    name: Sorveglianza della telemetria di rete
+    description: |
+      Sorveglianza della telemetria sui distretti di misurazione, valvole e punti di pressione.
+  BC-3880.20:
+    name: Operazioni delle condotte principali e del pompaggio
+    description: |
+      Operazione delle condotte principali, delle stazioni di pompaggio e dei
+      trasferimenti interzonali, incluso il pompaggio di rilancio e la gestione dei colpi d'ariete.
+  BC-3880.20.10:
+    name: Operazioni delle stazioni di pompaggio
+    description: |
+      Operazione e ottimizzazione energetica delle stazioni di pompaggio della distribuzione.
+  BC-3880.20.20:
+    name: Operazioni delle condotte principali
+    description: |
+      Operazione, manovra delle valvole e gestione dei colpi d'ariete sulle condotte di trasmissione principali.
+  BC-3880.20.30:
+    name: Operazioni di trasferimento interzonale
+    description: |
+      Operazione dei trasferimenti interzonali e dei collegamenti di fornitura all'ingrosso tra zone di risorsa.
+  BC-3880.30:
+    name: Gestione delle perdite
+    description: |
+      Controllo attivo e passivo delle perdite nei distretti di misurazione
+      tramite analisi degli afflussi, rilevamento acustico e interventi di ricerca e riparazione.
+    in_scope:
+      - Analisi dell'afflusso nei DMA e del flusso minimo notturno
+      - Campagne di rilevamento acustico delle perdite
+      - Operazioni di ricerca e riparazione delle perdite
+    out_of_scope:
+      - Programmi di sostituzione delle condotte (BC-3900.50)
+      - Perdite sul lato del cliente (BC-3910.60)
+  BC-3880.30.10:
+    name: Analisi del distretto di misurazione
+    description: |
+      Analisi dei dati di afflusso e del flusso minimo notturno nei DMA per localizzare le perdite.
+  BC-3880.30.20:
+    name: Rilevamento acustico delle perdite
+    description: |
+      Sondaggi acustici, correlazione e campagne con data logger per la localizzazione delle perdite.
+  BC-3880.30.30:
+    name: Operazioni di ricerca e riparazione delle perdite
+    description: |
+      Operazioni sul campo di ricerca e riparazione delle perdite individuate rispetto agli obiettivi di tempo di riparazione.
+  BC-3880.30.40:
+    name: Rendicontazione delle prestazioni sulle perdite
+    description: |
+      Rendicontazione delle prestazioni sulle perdite rispetto ai parametri regolatori e IWA di bilancio idrico.
+  BC-3880.40:
+    name: Gestione della pressione
+    description: |
+      Ottimizzazione della pressione di distribuzione nelle zone a pressione gestita
+      per la riduzione delle perdite e il controllo del tasso di rotture.
+  BC-3880.40.10:
+    name: Configurazione delle zone di pressione
+    description: |
+      Configurazione delle zone a pressione gestita e dei setpoint dei riduttori di pressione.
+  BC-3880.40.20:
+    name: Controllo avanzato della pressione
+    description: |
+      Operazione di riduttori di pressione controllati da remoto e a modulazione temporale.
+  BC-3880.40.30:
+    name: Gestione della pressione transitoria
+    description: |
+      Analisi dei colpi d'ariete e mitigazione dei transitori sulle reti di distribuzione.
+  BC-3880.50:
+    name: Operazioni di qualità dell'acqua in rete
+    description: |
+      Sorveglianza della qualità dell'acqua in rete — cloro residuo, acqua
+      decolorata, gusto e odore — e operazioni di rimedio.
+  BC-3880.50.10:
+    name: Sorveglianza del cloro residuo in rete
+    description: |
+      Sorveglianza dei residui di cloro in tutta la rete e dosaggio di reclorazione.
+  BC-3880.50.20:
+    name: Controllo della decolorazione e dei sedimenti
+    description: |
+      Operazioni di spurgo e ice-pigging per gestire i reclami per acqua decolorata.
+  BC-3880.50.30:
+    name: Operazioni di campionamento in rete
+    description: |
+      Campionamento normativo presso i rubinetti dei clienti e i punti di fornitura.
+  BC-3880.60:
+    name: Operazioni di riparazione e sostituzione delle condotte
+    description: |
+      Riparazione reattiva di rotture e guasti ai giunti e realizzazione operativa
+      dei programmi di sostituzione delle condotte.
+  BC-3880.60.10:
+    name: Risposta alle rotture delle condotte
+    description: |
+      Risposta, isolamento e riparazione delle rotture delle condotte rispetto agli obiettivi di minuti cliente persi.
+  BC-3880.60.20:
+    name: Operazioni di riparazione degli allacciamenti
+    description: |
+      Riparazione delle tubazioni di raccordo e di allacciamento tra la condotta principale e il rubinetto di arresto.
+  BC-3880.60.30:
+    name: Operazioni di sostituzione delle condotte sul campo
+    description: |
+      Esecuzione sul campo dei programmi di sostituzione e riabilitazione delle condotte, inclusi i metodi senza scavo.
+  BC-3880.70:
+    name: Operazioni per le nuove connessioni idriche
+    description: |
+      Realizzazione di nuove connessioni idriche per clienti domestici, commerciali
+      e sviluppatori.
+  BC-3880.70.10:
+    name: Valutazione delle domande di nuova connessione
+    description: |
+      Valutazione tecnica delle domande di nuova connessione idrica e dei servizi per gli sviluppatori.
+  BC-3880.70.20:
+    name: Operazioni di installazione delle connessioni
+    description: |
+      Installazione di tubazioni di raccordo, ferule e contatori del cliente.
+  BC-3880.70.30:
+    name: Collaudo delle connessioni
+    description: |
+      Collaudo, spurgatura e disinfezione delle nuove connessioni prima dell'utilizzo.
+metadata:
+  status: draft
+  reviewer: pending

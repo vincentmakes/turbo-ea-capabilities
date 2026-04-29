@@ -1,0 +1,161 @@
+# Gestione delle operazioni di trasformazione alimentare e delle bevande (it) — translations for L1-food-beverage-processing-operations-management.yaml
+locale: it
+source: L1-food-beverage-processing-operations-management.yaml
+entries:
+  BC-3580:
+    name: Gestione delle operazioni di trasformazione alimentare e delle bevande
+    description: |
+      Operazioni di produzione industriale di alimenti e bevande — ricevimento delle materie prime,
+      lavorazione primaria e secondaria, confezionamento, produzione in catena del freddo,
+      sanificazione, produzione di mangimi e recupero dei sottoprodotti
+      nei settori della carne, del lattiero-caseario, della molitura, della birra, della panificazione e dei prodotti freschi a taglio.
+  BC-3580.10:
+    name: Ricevimento e ispezione delle materie prime
+    description: |
+      Ricevimento, test sensoriali e di laboratorio e accettazione dei lotti di input agricoli grezzi presso gli stabilimenti di trasformazione.
+  BC-3580.10.10:
+    name: Ricevimento delle materie prime
+    description: |
+      Ricevimento di bestiame, latte, cereali, frutta e verdura come input.
+  BC-3580.10.20:
+    name: Test sensoriali e qualitativi delle materie prime
+    description: |
+      Test sensoriali e di laboratorio sulle materie prime in ingresso.
+  BC-3580.10.30:
+    name: Accettazione dei lotti di materie prime
+    description: |
+      Decisioni di accettazione, rifiuto e riclassificazione dei lotti.
+  BC-3580.20:
+    name: Operazioni di lavorazione primaria
+    description: |
+      Prima trasformazione degli input agricoli grezzi — macellazione e sezionamento,
+      separazione del latte, molitura e preparazione dei prodotti ortofrutticoli.
+    in_scope:
+      - Macellazione e sezionamento delle carcasse
+      - Ricevimento e separazione del latte
+      - Molitura dei cereali e spremitura delle oleaginose
+      - Preparazione di frutta e verdura
+    out_of_scope:
+      - Operazioni manifatturiere generiche (BC-1010)
+  BC-3580.20.10:
+    name: Macellazione e sezionamento delle carcasse
+    description: |
+      Macellazione, sezionamento e refrigerazione delle carcasse di bestiame e avicoli.
+  BC-3580.20.20:
+    name: Ricevimento e separazione del latte
+    description: |
+      Ricevimento del latte, standardizzazione e operazioni di separazione della panna.
+  BC-3580.20.30:
+    name: Molitura dei cereali e spremitura delle oleaginose
+    description: |
+      Molitura dei cereali e spremitura delle oleaginose, inclusa l'estrazione meccanica e con solventi.
+  BC-3580.20.40:
+    name: Preparazione di frutta e verdura
+    description: |
+      Lavaggio, sbucciatura, taglio e blanching di frutta e verdura.
+  BC-3580.30:
+    name: Operazioni di lavorazione secondaria
+    description: |
+      Operazioni di miscelazione, cottura, fermentazione e concentrazione per la produzione di alimenti e bevande finiti.
+  BC-3580.30.10:
+    name: Operazioni di miscelazione e blending
+    description: |
+      Miscelazione e blending di ricette formulate per alimenti e bevande.
+  BC-3580.30.20:
+    name: Cottura e trattamento termico
+    description: |
+      Operazioni di cottura, pastorizzazione e sterilizzazione.
+  BC-3580.30.30:
+    name: Operazioni di fermentazione e produzione birra
+    description: |
+      Fermentazione, produzione di birra e maturazione di bevande e prodotti a cultura microbica.
+  BC-3580.30.40:
+    name: Operazioni di essiccazione e concentrazione
+    description: |
+      Essiccazione spray, evaporazione e concentrazione di prodotti liquidi.
+  BC-3580.40:
+    name: Operazioni di confezionamento e riempimento
+    description: |
+      Riempimento, sigillatura, etichettatura e pallettizzazione dei prodotti alimentari e delle bevande finiti.
+  BC-3580.40.10:
+    name: Operazioni di riempimento e sigillatura
+    description: |
+      Riempimento e sigillatura di bottiglie, lattine, buste e contenitori rigidi.
+  BC-3580.40.20:
+    name: Operazioni di etichettatura
+    description: |
+      Etichettatura, datazione e applicazione di dispositivi antimanomissione.
+  BC-3580.40.30:
+    name: Inscatolamento e pallettizzazione
+    description: |
+      Inscatolamento, fascettatura termoretraibile e pallettizzazione dei prodotti finiti.
+  BC-3580.50:
+    name: Operazioni di produzione in catena del freddo
+    description: |
+      Refrigerazione, congelamento e monitoraggio della catena del freddo negli stabilimenti nelle linee di lavorazione e confezionamento.
+  BC-3580.50.10:
+    name: Operazioni di refrigerazione e congelamento
+    description: |
+      Gestione dei refrigeratori, dei tunnel di surgelazione e dei congelatori rapidi negli stabilimenti.
+  BC-3580.50.20:
+    name: Monitoraggio della catena del freddo negli stabilimenti
+    description: |
+      Monitoraggio della catena del freddo nelle zone degli stabilimenti e nei magazzini.
+  BC-3580.60:
+    name: Operazioni di sanificazione e controllo degli allergeni
+    description: |
+      CIP, controllo del cambio produzione per allergeni e programmi di monitoraggio ambientale a salvaguardia della sicurezza del prodotto.
+    in_scope:
+      - Programmi di CIP (Clean-in-Place)
+      - Validazione del cambio produzione per allergeni
+      - Monitoraggio ambientale degli agenti patogeni
+    out_of_scope:
+      - Programmi di sicurezza alimentare lato distribuzione al dettaglio (BC-2380.10)
+  BC-3580.60.10:
+    name: Operazioni CIP
+    description: |
+      Esecuzione e validazione del CIP nei cambi produzione.
+  BC-3580.60.20:
+    name: Controllo del cambio produzione per allergeni
+    description: |
+      Controlli e campionamenti di verifica per il cambio produzione in presenza di allergeni.
+  BC-3580.60.30:
+    name: Programmi di monitoraggio ambientale
+    description: |
+      Monitoraggio ambientale degli agenti patogeni nelle zone degli stabilimenti.
+  BC-3580.70:
+    name: Operazioni di produzione di mangimi composti
+    description: |
+      Produzione di mangimi composti, inclusi ricevimento degli ingredienti, miscelazione,
+      pellettizzazione e produzione di mangimi medicati per l'uso zootecnico a valle.
+  BC-3580.70.10:
+    name: Ricevimento degli ingredienti per mangimi
+    description: |
+      Ricevimento di cereali, farine proteiche e additivi presso i mangimifici.
+  BC-3580.70.20:
+    name: Miscelazione e pellettizzazione dei mangimi
+    description: |
+      Miscelazione e pellettizzazione di mangimi composti secondo le formulazioni delle razioni.
+  BC-3580.70.30:
+    name: Produzione di mangimi medicati
+    description: |
+      Produzione di mangimi medicati su prescrizione con controlli del riporto.
+  BC-3580.80:
+    name: Gestione dei sottoprodotti e co-prodotti
+    description: |
+      Recupero e destinazione dei sottoprodotti e co-prodotti di processo, quali prodotti della fusione, siero di latte e trebbie, verso usi a valle.
+  BC-3580.80.10:
+    name: Operazioni di fusione
+    description: |
+      Fusione dei sottoprodotti della lavorazione delle carni in sego e farina.
+  BC-3580.80.20:
+    name: Recupero di siero di latte e permeato
+    description: |
+      Recupero dei flussi di siero di latte e permeato dalla trasformazione lattiero-casearia.
+  BC-3580.80.30:
+    name: Recupero delle trebbie esaurite
+    description: |
+      Recupero e destinazione delle trebbie di birrificio e distilleria.
+metadata:
+  status: draft
+  reviewer: pending

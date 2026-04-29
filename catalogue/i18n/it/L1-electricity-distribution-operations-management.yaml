@@ -1,0 +1,160 @@
+# Gestione delle operazioni di distribuzione dell'energia elettrica (it) — translations for L1-electricity-distribution-operations-management.yaml
+locale: it
+source: L1-electricity-distribution-operations-management.yaml
+entries:
+  BC-3820:
+    name: Gestione delle operazioni di distribuzione dell'energia elettrica
+    description: |
+      Operazione delle reti di distribuzione MT/BT — dispacciamento dalla sala controllo,
+      risposta ai guasti e ripristino, manovre, operazioni nelle cabine primarie e secondarie
+      e coordinamento delle squadre di campo per la fornitura di energia ai clienti finali.
+  BC-3820.10:
+    name: Operazioni di controllo della distribuzione
+    description: |
+      Operazione 24/7 del centro di controllo della rete di distribuzione tramite
+      DMS / OMS / ADMS, consapevolezza situazionale e analisi del flusso di carico.
+  BC-3820.10.10:
+    name: Operazioni ADMS
+    description: |
+      Operazione dei sistemi avanzati di gestione della distribuzione per il monitoraggio e il controllo.
+  BC-3820.10.20:
+    name: Operazioni SCADA di distribuzione
+    description: |
+      Acquisizione in tempo reale tramite SCADA e controllo degli alimentatori e degli interruttori di distribuzione.
+  BC-3820.10.30:
+    name: Gestione della topologia di rete
+    description: |
+      Manutenzione della topologia di rete as-operated nel sistema di controllo.
+  BC-3820.20:
+    name: Operazioni di manovra e ripristino
+    description: |
+      Riconfigurazione della rete e ripristino dell'alimentazione dopo fermate programmate
+      e non programmate, incluso il self-healing basato su FLISR.
+  BC-3820.20.10:
+    name: Esecuzione dei programmi di manovra
+    description: |
+      Esecuzione autorizzata dei programmi di manovra della distribuzione.
+  BC-3820.20.20:
+    name: Localizzazione dei guasti, isolamento e ripristino del servizio
+    description: |
+      Rilevamento, isolamento e ripristino dell'alimentazione su alimentatori guasti tramite FLISR.
+  BC-3820.20.30:
+    name: Coordinamento del backfeed e dell'isola intenzionale
+    description: |
+      Coordinamento del backfeed degli alimentatori e dell'isola intenzionale per il ripristino.
+  BC-3820.30:
+    name: Operazioni di risposta ai guasti
+    description: |
+      Risposta end-to-end ai guasti sulla rete di distribuzione, dal rilevamento
+      alla riparazione sul campo e alla comunicazione con i clienti.
+    in_scope:
+      - Rilevamento e pattugliamento dei guasti
+      - Assegnazione delle squadre ai lavori di guasto
+      - Notifica delle interruzioni ai clienti
+    out_of_scope:
+      - Gestione delle interruzioni legate alle DER (BC-3840)
+      - Interruzioni della generazione all'ingrosso (BC-3800.10)
+  BC-3820.30.10:
+    name: Triage dei guasti
+    description: |
+      Triage delle segnalazioni di guasto provenienti dal campo, dai clienti e dalla telemetria.
+  BC-3820.30.20:
+    name: Pattugliamento sul campo
+    description: |
+      Pattugliamenti sul campo per localizzare e confermare i guasti su asset aerei e sotterranei.
+  BC-3820.30.30:
+    name: Monitoraggio del ripristino delle interruzioni
+    description: |
+      Monitoraggio dell'avanzamento del ripristino delle interruzioni e delle statistiche sui minuti cliente persi.
+  BC-3820.30.40:
+    name: Risposta agli eventi maggiori
+    description: |
+      Risposta alle tempeste e agli eventi maggiori nella distribuzione, incluse le squadre di mutuo soccorso.
+  BC-3820.40:
+    name: Operazioni di dispacciamento delle squadre di campo
+    description: |
+      Dispacciamento, instradamento e supporto operativo sul campo per le squadre di distribuzione
+      impegnate in guasti, lavori programmati e interventi sui clienti.
+  BC-3820.40.10:
+    name: Pianificazione delle squadre
+    description: |
+      Pianificazione giornaliera dei turni delle squadre e delle rotazioni di reperibilità.
+  BC-3820.40.20:
+    name: Dispacciamento e instradamento dei lavori
+    description: |
+      Dispacciamento e instradamento dei lavori alle squadre di campo dai sistemi di gestione lavori.
+  BC-3820.40.30:
+    name: Chiusura dei lavori sul campo
+    description: |
+      Acquisizione delle modifiche as-built, dei materiali utilizzati e del tempo impiegato alla chiusura del lavoro.
+  BC-3820.50:
+    name: Operazioni di ispezione degli asset di distribuzione
+    description: |
+      Ispezioni periodiche e basate sulle condizioni di linee aeree, pali,
+      cavi sotterranei e cabine di distribuzione.
+  BC-3820.50.10:
+    name: Ispezione di pali e linee aeree
+    description: |
+      Ispezione ciclica di pali e linee aeree, incluse le termografie.
+  BC-3820.50.20:
+    name: Ispezione della rete sotterranea
+    description: |
+      Ispezione e valutazione delle condizioni degli alimentatori sotterranei, dei link-box e delle giunzioni.
+  BC-3820.50.30:
+    name: Ispezione delle cabine di distribuzione
+    description: |
+      Ispezione periodica delle cabine primarie, secondarie e del cliente.
+  BC-3820.60:
+    name: Gestione della vegetazione e della fascia di rispetto
+    description: |
+      Taglio della vegetazione e manutenzione della fascia di rispetto sui circuiti
+      di distribuzione per gestire il rischio di interruzione e i corridoi normativi.
+  BC-3820.60.10:
+    name: Pianificazione dei cicli di vegetazione
+    description: |
+      Programmazione ciclica e basata sul rischio degli interventi di vegetazione sui circuiti di distribuzione.
+  BC-3820.60.20:
+    name: Operazioni di vegetazione sul campo
+    description: |
+      Esecuzione sul campo di potatura, abbattimento e applicazione di diserbanti.
+  BC-3820.60.30:
+    name: Operazioni di mitigazione del rischio incendio boschivo
+    description: |
+      Operazioni di PSPS, fast-trip e hardening dei circuiti nelle aree a rischio incendio boschivo.
+  BC-3820.70:
+    name: Operazioni per le nuove connessioni
+    description: |
+      Realizzazione di connessioni elettriche nuove e modificate per clienti
+      domestici, commerciali, industriali e sviluppatori.
+  BC-3820.70.10:
+    name: Valutazione delle domande di connessione
+    description: |
+      Valutazione tecnica delle domande di nuova connessione e disponibilità di capacità.
+  BC-3820.70.20:
+    name: Progettazione delle connessioni
+    description: |
+      Progettazione dettagliata della connessione, punto di connessione e requisiti di rinforzo.
+  BC-3820.70.30:
+    name: Collaudo delle connessioni
+    description: |
+      Collaudo delle nuove connessioni e accettazione dell'energizzazione.
+  BC-3820.80:
+    name: Gestione della qualità della fornitura
+    description: |
+      Sorveglianza e rimedio dei livelli di tensione di distribuzione,
+      flicker, armoniche e reclami sulla qualità della fornitura dei clienti.
+  BC-3820.80.10:
+    name: Sorveglianza della tensione
+    description: |
+      Sorveglianza dei profili di tensione degli alimentatori rispetto ai limiti normativi.
+  BC-3820.80.20:
+    name: Monitoraggio delle armoniche e del flicker
+    description: |
+      Monitoraggio della rete per la distorsione armonica e il flicker di tensione.
+  BC-3820.80.30:
+    name: Indagine sulla qualità della fornitura del cliente
+    description: |
+      Indagine e rimedio dei problemi di qualità della fornitura segnalati dai clienti.
+metadata:
+  status: draft
+  reviewer: pending

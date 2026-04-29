@@ -1,0 +1,142 @@
+# Gestione dei clienti e della misura nei servizi pubblici (it) — translations for L1-utility-customer-metering-management.yaml
+locale: it
+source: L1-utility-customer-metering-management.yaml
+entries:
+  BC-3910:
+    name: Gestione dei clienti e della misura nei servizi pubblici
+    description: |
+      Operazioni specifiche della utility per clienti e contatori dal punto di fornitura
+      agli input di fatturazione — gestione dei conti cliente, inventario dei contatori,
+      acquisizione dati AMI / contatore intelligente, lettura e validazione dei contatori,
+      input da contatore a incasso, attivazione e disattivazione del servizio
+      e tutela dei clienti vulnerabili.
+  BC-3910.10:
+    name: Gestione dei conti cliente della utility
+    description: |
+      Ciclo di vita del conto cliente specifico della utility, compresi gli
+      identificatori del punto di fornitura, i cambi di occupazione e l'assegnazione della tariffa.
+  BC-3910.10.10:
+    name: Registrazione del punto di fornitura
+    description: |
+      Registrazione e manutenzione degli identificatori del punto di fornitura (MPAN, MPRN, SPID).
+  BC-3910.10.20:
+    name: Operazioni di cambio di occupazione
+    description: |
+      Elaborazione dell'ingresso, dell'uscita e del cambio di conduttore per i punti di fornitura della utility.
+  BC-3910.10.30:
+    name: Assegnazione della tariffa al cliente
+    description: |
+      Assegnazione dei clienti alle tariffe applicabili e alle opzioni di prodotto.
+  BC-3910.20:
+    name: Gestione degli asset del contatore
+    description: |
+      Gestione del ciclo di vita degli asset fisici dei contatori e delle comunicazioni,
+      inclusi stock, installazione, sostituzione e recupero.
+  BC-3910.20.10:
+    name: Operazioni delle scorte di contatori
+    description: |
+      Gestione delle scorte, messa in servizio e fuori servizio degli asset dei contatori.
+  BC-3910.20.20:
+    name: Operazioni di installazione dei contatori
+    description: |
+      Installazione sul campo di contatori nuovi e in sostituzione.
+  BC-3910.20.30:
+    name: Recupero e smaltimento dei contatori
+    description: |
+      Recupero, ricondizionamento e smaltimento a fine vita degli asset dei contatori.
+  BC-3910.30:
+    name: Operazioni di acquisizione dati AMI
+    description: |
+      Acquisizione dei dati dell'infrastruttura di misura avanzata tramite sistemi
+      head-end, reti di comunicazione e MDM.
+    in_scope:
+      - Operazione del sistema head-end del contatore intelligente
+      - Monitoraggio della rete di comunicazione e dei concentratori
+      - Ingestione nel MDM
+    out_of_scope:
+      - Installazione fisica del contatore (BC-3910.20.20)
+      - Domanda aggregata lato trading (BC-3850.30.10)
+  BC-3910.30.10:
+    name: Operazioni del sistema head-end
+    description: |
+      Operazione dei sistemi head-end dei contatori intelligenti e emissione di comandi ai contatori.
+  BC-3910.30.20:
+    name: Operazioni della rete di comunicazione AMI
+    description: |
+      Operazione delle reti di comunicazione AMI RF, PLC e cellulari e dei concentratori.
+  BC-3910.30.30:
+    name: Ingestione nel sistema di MDM
+    description: |
+      Ingestione delle letture di intervallo e di registro nel sistema di gestione dei dati di misura.
+  BC-3910.40:
+    name: Lettura e validazione dei contatori
+    description: |
+      Lettura ciclica e basata su eventi dei contatori e validazione,
+      stima e modifica dei dati di consumo.
+  BC-3910.40.10:
+    name: Operazioni di lettura manuale e drive-by
+    description: |
+      Operazioni di lettura a piedi, drive-by e AMR per i contatori non-AMI.
+  BC-3910.40.20:
+    name: Validazione, stima e modifica
+    description: |
+      Elaborazione VEE delle letture di registro e di intervallo per produrre dati di qualità per la fatturazione.
+  BC-3910.40.30:
+    name: Aggregazione dei consumi
+    description: |
+      Aggregazione dei consumi per periodi di fatturazione e per profili di liquidazione.
+  BC-3910.50:
+    name: Operazioni da contatore a incasso
+    description: |
+      Operazioni specifiche della utility per la preparazione dei dati di utilizzo per la fatturazione
+      e la protezione dei ricavi, inclusa la gestione delle eccezioni di fatturazione
+      e il rilevamento delle perdite di ricavo.
+  BC-3910.50.10:
+    name: Preparazione dei determinanti di fatturazione
+    description: |
+      Preparazione dei determinanti di fatturazione — consumo, potenza impegnata e reattiva — per i sistemi di fatturazione.
+  BC-3910.50.20:
+    name: Gestione delle eccezioni di fatturazione
+    description: |
+      Indagine e risoluzione delle eccezioni di fatturazione e delle anomalie dei dati di misura.
+  BC-3910.50.30:
+    name: Operazioni di tutela dei ricavi
+    description: |
+      Rilevamento e indagine sul campo di manomissioni dei contatori e di furti di energia o acqua.
+  BC-3910.60:
+    name: Operazioni di attivazione e disattivazione del servizio
+    description: |
+      Attivazione, disattivazione e operazione in modalità prepagamento
+      delle forniture della utility all'interfaccia con il cliente.
+  BC-3910.60.10:
+    name: Operazioni di attivazione della fornitura
+    description: |
+      Attivazione di forniture nuove e riattivate, inclusa l'energizzazione da remoto.
+  BC-3910.60.20:
+    name: Disattivazione per mancato pagamento
+    description: |
+      Processi di disattivazione nel rispetto delle protezioni normative e regolamentari.
+  BC-3910.60.30:
+    name: Operazioni in modalità prepagamento
+    description: |
+      Operazione dei contatori a prepagamento e dei canali di ricarica.
+  BC-3910.70:
+    name: Gestione dei clienti vulnerabili
+    description: |
+      Identificazione e tutela dei clienti in condizioni di vulnerabilità, inclusi
+      i registri dei servizi prioritari e gli schemi di agevolazione.
+  BC-3910.70.10:
+    name: Operazioni del registro dei servizi prioritari
+    description: |
+      Manutenzione del registro dei servizi prioritari e dei flag di supporto personalizzato.
+  BC-3910.70.20:
+    name: Operazioni dei programmi di agevolazione economica
+    description: |
+      Amministrazione delle tariffe sociali e dei fondi di sostegno per i clienti della utility.
+  BC-3910.70.30:
+    name: Gestione dei clienti con apparecchiature mediche
+    description: |
+      Gestione dei clienti dipendenti da apparecchiature mediche o dialisi per la pianificazione delle interruzioni.
+metadata:
+  status: draft
+  reviewer: pending

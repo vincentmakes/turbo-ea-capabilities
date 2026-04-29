@@ -1,0 +1,137 @@
+# Gestione dei tenant SaaS (it) — translations for L1-saas-tenant-management.yaml
+locale: it
+source: L1-saas-tenant-management.yaml
+entries:
+  BC-4230:
+    name: Gestione dei tenant SaaS
+    description: |
+      Provisioning, configurazione, isolamento, collocazione regionale, federazione delle identità
+      ed esportazione dei dati per tenant nel servizio multi-tenant.
+  BC-4230.10:
+    name: Provisioning e ciclo di vita del tenant
+    description: |
+      Creazione, sospensione, decommissioning e migrazione dei tenant
+      nel parco multi-tenant.
+  BC-4230.10.10:
+    name: Provisioning del tenant
+    description: |
+      Creazione di nuovi tenant e allocazione
+      delle risorse associate.
+  BC-4230.10.20:
+    name: Sospensione del tenant
+    description: |
+      Sospensione dei tenant per mancato pagamento,
+      abuso o motivi contrattuali.
+  BC-4230.10.30:
+    name: Decommissioning del tenant
+    description: |
+      Decommissioning dei tenant, incluse la cancellazione dei dati
+      o la restituzione secondo contratto.
+  BC-4230.10.40:
+    name: Migrazione del tenant
+    description: |
+      Migrazione dei tenant tra cluster, shard
+      o regioni.
+  BC-4230.20:
+    name: Gestione della configurazione del tenant
+    description: |
+      Configurazione delle funzionalità, branding e limiti per singolo tenant
+      al di sopra della baseline condivisa del prodotto.
+  BC-4230.20.10:
+    name: Configurazione delle funzionalità per tenant
+    description: |
+      Configurazione delle opzioni di funzionalità
+      a livello di tenant.
+  BC-4230.20.20:
+    name: Gestione del branding del tenant
+    description: |
+      Branding a livello di tenant, inclusi loghi,
+      colori e domini personalizzati.
+  BC-4230.20.30:
+    name: Gestione dei limiti del tenant
+    description: |
+      Configurazione dei limiti a livello di tenant
+      come quote e soglie di rate limiting.
+  BC-4230.30:
+    name: Gestione dell'isolamento del tenant
+    description: |
+      Meccanismi che mantengono l'isolamento logico e fisico tra i tenant
+      su dati, compute e percorsi di accesso.
+  BC-4230.30.10:
+    name: Isolamento dei dati del tenant
+    description: |
+      Isolamento dei dati del tenant tramite partizionamento,
+      cifratura e scoping degli accessi.
+  BC-4230.30.20:
+    name: Isolamento del compute del tenant
+    description: |
+      Isolamento dei carichi di lavoro del tenant tramite confini
+      di compute dedicati o vincolati.
+  BC-4230.30.30:
+    name: Prevenzione degli accessi cross-tenant
+    description: |
+      Controlli e monitoraggio che impediscono la contaminazione
+      di dati e identità tra tenant.
+  BC-4230.40:
+    name: Residenza dei dati e collocazione regionale
+    description: |
+      Assegnazione dei tenant alle regioni, applicazione degli impegni
+      di residenza dei dati e gestione della policy di replica cross-region.
+  BC-4230.40.10:
+    name: Assegnazione regionale del tenant
+    description: |
+      Assegnazione dei tenant alle regioni in conformità
+      al contratto e alla normativa.
+  BC-4230.40.20:
+    name: Applicazione della residenza dei dati
+    description: |
+      Applicazione dei confini di residenza dei dati
+      a runtime.
+  BC-4230.40.30:
+    name: Policy di replica cross-region
+    description: |
+      Policy che regola la replica cross-region
+      per resilienza e accesso.
+  BC-4230.50:
+    name: Federazione delle identità del tenant
+    description: |
+      Federazione degli identity provider dei tenant e ciclo di vita
+      degli account utente tramite single sign-on e SCIM.
+  BC-4230.50.10:
+    name: Configurazione SSO del tenant
+    description: |
+      Configurazione del single sign-on tra gli identity provider
+      dei tenant e il servizio.
+  BC-4230.50.20:
+    name: Provisioning utenti basato su SCIM
+    description: |
+      Ciclo di vita degli account utente del tenant gestito
+      tramite SCIM o protocolli di provisioning equivalenti.
+  BC-4230.50.30:
+    name: Onboarding degli identity provider del tenant
+    description: |
+      Onboarding e validazione degli identity provider
+      dei tenant.
+  BC-4230.60:
+    name: Gestione del backup e dell'esportazione del tenant
+    description: |
+      Capacità di esportazione, cancellazione e ripristino dei dati per tenant,
+      esposte a tenant e amministratori.
+  BC-4230.60.10:
+    name: Esportazione dei dati del tenant
+    description: |
+      Esportazione dei dati del tenant in formato leggibile dalla macchina
+      su richiesta o per contratto.
+  BC-4230.60.20:
+    name: Cancellazione dei dati del tenant
+    description: |
+      Cancellazione verificabile dei dati del tenant
+      alla cancellazione o su richiesta.
+  BC-4230.60.30:
+    name: Ripristino del backup del tenant
+    description: |
+      Ripristino dei dati del tenant da backup su richiesta
+      del tenant o dell'operatore.
+metadata:
+  status: draft
+  reviewer: pending

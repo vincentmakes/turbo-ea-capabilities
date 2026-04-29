@@ -1,0 +1,162 @@
+# Gestione dei servizi connessi del veicolo (it) — translations for L1-vehicle-connected-services-management.yaml
+locale: it
+source: L1-vehicle-connected-services-management.yaml
+entries:
+  BC-3460:
+    name: Gestione dei servizi connessi del veicolo
+    description: |
+      Operatività dei servizi connessi del veicolo — piattaforma di connettività del
+      veicolo, aggiornamenti OTA del software, app e abbonamenti nel veicolo,
+      piattaforma dati del veicolo, servizi V2X, operazioni di sicurezza del veicolo
+      e assistenza clienti per i servizi connessi.
+  BC-3460.10:
+    name: Operazioni della piattaforma di connettività del veicolo
+    description: |
+      Operatività della connettività nel veicolo, del provisioning SIM e della
+      piattaforma di telemetria vehicle-to-cloud.
+  BC-3460.10.10:
+    name: Provisioning SIM e connettività del veicolo
+    description: |
+      Provisioning della connettività SIM embedded e del roaming dell'operatore per
+      i veicoli connessi.
+  BC-3460.10.20:
+    name: Operazioni della rete di connettività
+    description: |
+      Operatività del backbone di connettività a supporto dei servizi del veicolo,
+      inclusi failover e qualità del servizio.
+  BC-3460.10.30:
+    name: Operazioni di telemetria vehicle-to-cloud
+    description: |
+      Operatività delle pipeline di telemetria del veicolo dagli agenti nel veicolo
+      alle piattaforme cloud.
+  BC-3460.20:
+    name: Operazioni di aggiornamento OTA del software
+    description: |
+      Operatività delle campagne di aggiornamento OTA del software allineate a
+      UN R156 e al sistema di gestione degli aggiornamenti software.
+  BC-3460.20.10:
+    name: Pianificazione delle campagne OTA
+    description: |
+      Pianificazione delle campagne di aggiornamento OTA del software, inclusi
+      perimetro, idoneità e strategia di rollout.
+  BC-3460.20.20:
+    name: Distribuzione dei pacchetti OTA
+    description: |
+      Distribuzione di pacchetti OTA firmati ai veicoli e orchestrazione
+      dell'installazione sulle ECU.
+  BC-3460.20.30:
+    name: Gestione del rollback e del ripristino OTA
+    description: |
+      Gestione del rollback OTA, del ripristino e della risposta agli incidenti sul
+      campo quando gli aggiornamenti falliscono.
+  BC-3460.30:
+    name: Gestione delle app nel veicolo e degli abbonamenti
+    description: |
+      Operatività dell'app store nel veicolo, del ciclo di vita degli abbonamenti e
+      dei servizi di pagamento nel veicolo.
+  BC-3460.30.10:
+    name: Gestione del catalogo dei servizi connessi
+    description: |
+      Manutenzione del catalogo dei servizi connessi e delle app nel veicolo
+      offerte ai clienti.
+  BC-3460.30.20:
+    name: Gestione del ciclo di vita degli abbonamenti
+    description: |
+      Gestione del ciclo di vita degli abbonamenti dei clienti ai servizi connessi
+      e ai servizi feature-on-demand.
+  BC-3460.30.30:
+    name: Operazioni di pagamento nel veicolo
+    description: |
+      Operatività del pagamento nel veicolo, della tokenizzazione e del regolamento
+      delle transazioni.
+  BC-3460.40:
+    name: Operazioni della piattaforma dati del veicolo
+    description: |
+      Operatività della piattaforma dati del veicolo — ingestione, archiviazione,
+      condivisione e gestione del consenso — a supporto dei casi d'uso di prima e
+      terza parte.
+    in_scope:
+      - Ingestione e archiviazione dei dati del veicolo
+      - API di condivisione dei dati del veicolo per consumatori interni e partner
+      - Gestione della privacy e del consenso per i dati del veicolo
+    out_of_scope:
+      - Gestione generica dei dati aziendali (coperta da dati aziendali e IT)
+      - Redazione del safety case funzionale (BC-3400.80)
+  BC-3460.40.10:
+    name: Ingestione e archiviazione dei dati del veicolo
+    description: |
+      Ingestione, normalizzazione e archiviazione della telemetria del veicolo e
+      dei dati degli eventi su scala flotta.
+  BC-3460.40.20:
+    name: Condivisione dei dati del veicolo e gestione delle API
+    description: |
+      Fornitura di API per i dati del veicolo a team interni, concessionari e partner
+      esterni nell'ambito di accordi di condivisione dei dati.
+  BC-3460.40.30:
+    name: Gestione della privacy e del consenso sui dati del veicolo
+    description: |
+      Gestione del consenso dei clienti, delle preferenze e dei controlli sulla
+      privacy per i dati generati dal veicolo.
+  BC-3460.50:
+    name: Servizi V2X e di mobilità cooperativa
+    description: |
+      Operatività dei servizi di messaggistica V2X e dei servizi di mobilità
+      cooperativa con infrastrutture e altri veicoli.
+  BC-3460.50.10:
+    name: Operazioni del servizio V2I
+    description: |
+      Operatività dei servizi vehicle-to-infrastructure quali fase e timing del
+      semaforo, avvisi di cantiere e pedaggi.
+  BC-3460.50.20:
+    name: Operazioni dei messaggi V2V
+    description: |
+      Operatività dei servizi di messaggistica vehicle-to-vehicle e dei canali
+      broadcast secondo SAE J2735 ed equivalenti.
+  BC-3460.50.30:
+    name: Operazioni del servizio di consapevolezza cooperativa
+    description: |
+      Operatività dei servizi di consapevolezza cooperativa, avvisi di pericolo e
+      platooning su flotte miste.
+  BC-3460.60:
+    name: Operazioni di sicurezza del veicolo
+    description: |
+      Monitoraggio operativo della sicurezza della flotta di veicoli connessi e
+      risposta agli incidenti cyber del veicolo.
+  BC-3460.60.10:
+    name: Rilevamento delle minacce al veicolo
+    description: |
+      Rilevamento di minacce cyber e comportamenti anomali sulla flotta di
+      veicoli connessi.
+  BC-3460.60.20:
+    name: Risposta agli incidenti di cybersecurity del veicolo
+    description: |
+      Risposta agli incidenti di cybersecurity del veicolo, inclusi contenimento,
+      rimedio e notifica al cliente.
+  BC-3460.60.30:
+    name: Operazioni del SOC del veicolo
+    description: |
+      Operatività del security operations centre del veicolo e delle pipeline di
+      telemetria di supporto.
+  BC-3460.70:
+    name: Operazioni clienti per i servizi connessi
+    description: |
+      Operazioni rivolte al cliente per i servizi connessi, incluso il supporto
+      all'attivazione, la risoluzione dei problemi e la gestione dell'account.
+  BC-3460.70.10:
+    name: Supporto all'attivazione dei servizi connessi
+    description: |
+      Supporto all'attivazione, al trasferimento e alla disattivazione dei
+      servizi connessi da parte del cliente.
+  BC-3460.70.20:
+    name: Risoluzione dei problemi dei servizi connessi
+    description: |
+      Risoluzione dei problemi segnalati dai clienti sui servizi connessi attraverso
+      canali di contact centre, concessionario e self-service.
+  BC-3460.70.30:
+    name: Gestione dell'account dei servizi connessi
+    description: |
+      Gestione degli account cliente dei servizi connessi, dell'identità e
+      dell'abbinamento degli entitlement ai veicoli.
+metadata:
+  status: draft
+  reviewer: pending

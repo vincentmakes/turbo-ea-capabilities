@@ -1,0 +1,102 @@
+# Gestione delle spedizioni e del brokeraggio logistico (it) — translations for L1-freight-forwarding-brokerage-management.yaml
+locale: it
+source: L1-freight-forwarding-brokerage-management.yaml
+entries:
+  BC-2450:
+    name: Gestione delle spedizioni e del brokeraggio logistico
+    description: |
+      Organizzazione del trasporto per conto dei mittenti nelle vesti di spedizioniere,
+      NVOCC, broker di trasporto o spedizioniere doganale, incluso il coordinamento
+      multimodale e le operazioni della rete partner.
+  BC-2450.10:
+    name: Gestione delle quotazioni ai mittenti
+    description: |
+      Ricezione delle richieste di offerta (RFQ) dai mittenti ed emissione di tariffe
+      dello spedizioniere su più modi e vettori.
+    in_scope:
+      - Ricerca tariffaria multi-vettore per le richieste dei mittenti
+      - Monitoraggio della validità e della conferma delle offerte
+    out_of_scope:
+      - Gestione dei listini tariffe e dei tariffari lato vettore (BC-2520)
+  BC-2450.10.10:
+    name: Acquisizione delle richieste di offerta
+    description: |
+      Acquisizione delle richieste di offerta dei mittenti attraverso i vari canali.
+  BC-2450.10.20:
+    name: Ricerca tariffaria multi-vettore
+    description: |
+      Ricerca e comparazione delle tariffe tra i vettori sottostanti.
+  BC-2450.10.30:
+    name: Emissione e validità dell'offerta
+    description: |
+      Emissione di offerte vincolanti e indicative e monitoraggio della loro validità.
+  BC-2450.20:
+    name: Gestione dell'approvvigionamento e dell'allocazione dei vettori
+    description: |
+      Prenotazione di capacità presso i vettori sottostanti e gestione delle allocazioni
+      e della spesa verso i vettori.
+  BC-2450.20.10:
+    name: Selezione del vettore
+    description: |
+      Selezione dei vettori sottostanti per spedizione.
+  BC-2450.20.20:
+    name: Esecuzione della prenotazione presso il vettore
+    description: |
+      Prenotazione della capacità presso i vettori selezionati.
+  BC-2450.20.30:
+    name: Ottimizzazione della spesa sulle allocazioni
+    description: |
+      Ottimizzazione della spesa dello spedizioniere sulle allocazioni dei vettori.
+  BC-2450.30:
+    name: Coordinamento del trasporto multimodale
+    description: |
+      Coordinamento di movimenti multi-tratta e multimodali, inclusi consolidamento,
+      deconsolidamento e polizze house.
+  BC-2450.30.10:
+    name: Emissione della polizza di carico house
+    description: |
+      Emissione delle polizze di carico house dello spedizioniere per i mittenti.
+  BC-2450.30.20:
+    name: Coordinamento dei movimenti multi-tratta
+    description: |
+      Coordinamento di movimenti multi-tratta tra vettori e modi di trasporto.
+  BC-2450.30.30:
+    name: Consolidamento e deconsolidamento
+    description: |
+      Consolidamento delle merci all'origine e deconsolidamento a destinazione.
+  BC-2450.40:
+    name: Gestione del brokeraggio doganale
+    description: |
+      Erogazione di servizi di brokeraggio doganale per conto di importatori ed esportatori.
+  BC-2450.40.10:
+    name: Predisposizione della dichiarazione doganale
+    description: |
+      Predisposizione delle dichiarazioni doganali per conto dei clienti.
+  BC-2450.40.20:
+    name: Calcolo di dazi e imposte
+    description: |
+      Calcolo e pagamento di dazi e imposte indirette per conto dei clienti.
+  BC-2450.40.30:
+    name: Monitoraggio dello stato del brokeraggio
+    description: |
+      Monitoraggio dell'avanzamento del brokeraggio e risoluzione delle eccezioni.
+  BC-2450.50:
+    name: Coordinamento della rete degli spedizionieri
+    description: |
+      Coordinamento con gli agenti di origine, destinazione e partner nella rete degli
+      spedizionieri, incluso il regolamento inter-ufficio.
+  BC-2450.50.10:
+    name: Coordinamento con gli agenti di origine e destinazione
+    description: |
+      Coordinamento delle attività con gli agenti di origine e destinazione.
+  BC-2450.50.20:
+    name: Regolamento inter-ufficio
+    description: |
+      Regolamento inter-ufficio e inter-agente dei ricavi e dei costi di spedizione.
+  BC-2450.50.30:
+    name: Gestione della performance degli agenti partner
+    description: |
+      Gestione della qualità del servizio e della conformità degli agenti partner.
+metadata:
+  status: draft
+  reviewer: pending

@@ -1,0 +1,182 @@
+# Gestione dell'ingegneria del prodotto software (it) — translations for L1-software-product-engineering-management.yaml
+locale: it
+source: L1-software-product-engineering-management.yaml
+entries:
+  BC-4200:
+    name: Gestione dell'ingegneria del prodotto software
+    description: |
+      Attività di discovery, specifica, progettazione, implementazione, code review e quality engineering
+      dei prodotti SaaS, dall'idea fino alla build pronta per il rilascio.
+  BC-4200.10:
+    name: Gestione del product discovery e del backlog
+    description: |
+      Ricerca sulle opportunità, ideazione, validazione e gestione del backlog che traducono
+      i segnali di mercato e dei clienti in un insieme di lavoro prioritizzato.
+    in_scope:
+      - Ricerca su utenti e mercato
+      - Grooming e prioritizzazione del backlog
+      - Definizione e aggiornamento della roadmap
+    out_of_scope:
+      - Analytics quantitativa di prodotto (coperta da Gestione della telemetria di prodotto e sperimentazione)
+      - Demand generation di marketing
+  BC-4200.10.10:
+    name: Ricerca utenti
+    description: |
+      Ricerca generativa e valutativa con gli utenti per individuare esigenze,
+      criticità e disponibilità a pagare.
+  BC-4200.10.20:
+    name: Raffinamento del backlog
+    description: |
+      Raffinamento continuo del backlog di prodotto, incluse la stima,
+      la scomposizione e la ri-prioritizzazione.
+  BC-4200.10.30:
+    name: Definizione della roadmap
+    description: |
+      Definizione e aggiornamento periodico della roadmap di prodotto
+      e delle aree di investimento tematiche.
+  BC-4200.10.40:
+    name: Sintesi del feedback dei clienti
+    description: |
+      Sintesi del feedback ricevuto da supporto, customer success, vendite e community
+      in segnali di prodotto azionabili.
+  BC-4200.20:
+    name: Gestione delle specifiche di prodotto
+    description: |
+      Raccolta del comportamento atteso, dei vincoli e dei criteri di accettazione
+      affinché il lavoro di sviluppo possa essere eseguito in modo prevedibile.
+    in_scope:
+      - Specifiche funzionali e non funzionali
+      - Criteri di accettazione
+    out_of_scope:
+      - Progettazione visiva e dell'interazione (coperta da Gestione del design del software)
+  BC-4200.20.10:
+    name: Specifica funzionale
+    description: |
+      Specifica del comportamento atteso e degli outcome visibili all'utente
+      per funzionalità e capacità.
+  BC-4200.20.20:
+    name: Specifica non funzionale
+    description: |
+      Specifica dei requisiti non funzionali quali disponibilità, latenza,
+      throughput e postura di sicurezza.
+  BC-4200.20.30:
+    name: Definizione dei criteri di accettazione
+    description: |
+      Definizione di criteri di accettazione verificabili che fissano il
+      significato di "completato" per funzionalità e user story.
+  BC-4200.30:
+    name: Gestione del design del software
+    description: |
+      Design della user experience, del sistema e dell'accessibilità per i prodotti software,
+      fondato su design system condivisi.
+  BC-4200.30.10:
+    name: Design dell'esperienza utente
+    description: |
+      Progettazione dell'interazione, dell'architettura informativa e del visual design
+      delle superfici di prodotto.
+  BC-4200.30.20:
+    name: Design del sistema
+    description: |
+      Progettazione architetturale di componenti software, servizi, flussi di dati
+      e interfacce esterne.
+  BC-4200.30.30:
+    name: Gestione del design system
+    description: |
+      Gestione del design system condiviso, inclusi componenti,
+      token e linee guida d'uso.
+  BC-4200.30.40:
+    name: Design per l'accessibilità
+    description: |
+      Conformità del design agli standard di accessibilità
+      su tutte le superfici di prodotto.
+  BC-4200.40:
+    name: Gestione della costruzione del software
+    description: |
+      Pratiche di implementazione, incluse la gestione del codice sorgente,
+      la code review e le discipline di programmazione collaborativa.
+  BC-4200.40.10:
+    name: Gestione del codice sorgente
+    description: |
+      Gestione dei repository sorgente, della policy di branching
+      e della proprietà del codice.
+  BC-4200.40.20:
+    name: Pratiche di code review
+    description: |
+      Revisione tra pari delle modifiche al codice rispetto agli standard
+      di ingegneria e sicurezza.
+  BC-4200.40.30:
+    name: Pratiche di pair e mob programming
+    description: |
+      Pratiche di programmazione collaborativa utilizzate per condividere
+      conoscenze e migliorare la qualità su lavori selezionati.
+  BC-4200.50:
+    name: Quality engineering del software
+    description: |
+      Strategia di test, gestione delle suite di test automatizzate e gestione
+      dei difetti per i prodotti software.
+    in_scope:
+      - Test automatizzati unitari, di integrazione ed end-to-end del prodotto
+      - Triage e risoluzione dei difetti
+    out_of_scope:
+      - Sistema di gestione della qualità a livello aziendale (coperto da Gestione della qualità)
+      - Test di performance e resilienza del servizio in esercizio (coperti da Gestione operativa della piattaforma SaaS)
+  BC-4200.50.10:
+    name: Definizione della strategia di test
+    description: |
+      Definizione della strategia di test su livelli unitari, di integrazione,
+      end-to-end ed esplorativi.
+  BC-4200.50.20:
+    name: Gestione della suite di test automatizzati
+    description: |
+      Gestione delle suite di test automatizzati, incluse copertura,
+      instabilità e tempi di esecuzione.
+  BC-4200.50.30:
+    name: Triage e risoluzione dei difetti
+    description: |
+      Triage e risoluzione dei difetti segnalati sul prodotto.
+  BC-4200.50.40:
+    name: Gestione della copertura di regressione
+    description: |
+      Gestione della copertura di regressione al crescere della superficie di prodotto.
+  BC-4200.60:
+    name: Gestione dell'open source
+    description: |
+      Utilizzo in ingresso, contribuzione in uscita e artefatti della supply chain
+      per il software open source integrato nel prodotto.
+  BC-4200.60.10:
+    name: Conformità alle licenze open source in ingresso
+    description: |
+      Conformità alle licenze open source in ingresso e agli obblighi di notifica.
+  BC-4200.60.20:
+    name: Contribuzione open source in uscita
+    description: |
+      Governance delle contribuzioni in uscita e della gestione
+      di progetti open source.
+  BC-4200.60.30:
+    name: Gestione della software bill of materials
+    description: |
+      Generazione, distribuzione e manutenzione delle software bill of materials
+      in formati standard.
+  BC-4200.70:
+    name: Gestione della produttività di sviluppo
+    description: |
+      Piattaforme interne per sviluppatori, strumenti e misurazione delle performance
+      di ingegneria che incrementano la produttività di consegna nel tempo.
+  BC-4200.70.10:
+    name: Gestione della toolchain degli sviluppatori
+    description: |
+      Selezione e gestione delle toolchain degli sviluppatori
+      nell'intera organizzazione di ingegneria.
+  BC-4200.70.20:
+    name: Gestione della piattaforma interna per sviluppatori
+    description: |
+      Gestione delle piattaforme interne che astraggono l'infrastruttura
+      e i workflow standard per gli sviluppatori.
+  BC-4200.70.30:
+    name: Metriche di performance dell'ingegneria
+    description: |
+      Misurazione delle performance di ingegneria tramite metriche di consegna
+      e di developer experience.
+metadata:
+  status: draft
+  reviewer: pending

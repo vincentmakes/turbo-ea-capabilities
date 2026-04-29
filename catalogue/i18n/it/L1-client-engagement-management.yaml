@@ -1,0 +1,211 @@
+# Gestione del cliente (it) — translations for L1-client-engagement-management.yaml
+locale: it
+source: L1-client-engagement-management.yaml
+entries:
+  BC-4300:
+    name: Gestione del cliente
+    description: |
+      Ciclo di vita dell'acquisizione del cliente e della commessa, definizione dell'ambito,
+      mobilizzazione, controllo delle modifiche, chiusura e gestione continuativa delle relazioni
+      con i clienti in ambiti legale, advisory e di revisione e assurance.
+  BC-4300.10:
+    name: Gestione dell'accettazione del cliente
+    description: |
+      Accettazione di nuove relazioni con i clienti, inclusi KYC, screening AML,
+      verifiche su sanzioni e PEP e verifica della titolarità effettiva
+      prima di accettare qualsiasi incarico.
+    in_scope:
+      - KYC e clearance AML per nuovi clienti
+      - Screening su sanzioni e PEP per clienti potenziali
+      - Verifiche sulla titolarità effettiva e sull'origine dei fondi
+      - Aggiornamento periodico dei fascicoli KYC dei clienti
+    out_of_scope:
+      - Valutazione di indipendenza e conflitti di interesse (BC-4350)
+      - Accettazione del rischio specifico dell'incarico (BC-4300.20)
+  BC-4300.10.10:
+    name: Raccolta dei dati KYC del cliente
+    description: |
+      Raccolta di informazioni identificative, sulla titolarità effettiva
+      e sull'origine dei fondi per clienti potenziali ed esistenti.
+  BC-4300.10.20:
+    name: Screening del cliente su sanzioni e PEP
+    description: |
+      Screening di clienti e titolari effettivi rispetto a liste
+      di sanzioni, PEP e media avverse.
+  BC-4300.10.30:
+    name: Rating del rischio del cliente
+    description: |
+      Rating del rischio della relazione con il cliente per determinare
+      la profondità della due diligence e la cadenza di revisione.
+  BC-4300.10.40:
+    name: Aggiornamento periodico della due diligence sul cliente
+    description: |
+      Aggiornamento periodico di KYC, assetti proprietari
+      e rating di rischio del cliente.
+  BC-4300.20:
+    name: Gestione dell'accettazione dell'incarico
+    description: |
+      Workflow decisionale per accettare o declinare un incarico specifico, che tiene conto
+      della clearance su indipendenza e conflitti, della valutazione della capacità,
+      della fattibilità economica e della valutazione del rischio specifico.
+    in_scope:
+      - Valutazione del rischio dell'incarico
+      - Verifica di capacità e competenze
+      - Decisione go/no-go per l'incarico
+    out_of_scope:
+      - Verifiche sostanziali di indipendenza e conflitti (BC-4350)
+      - Attività di pursuit e proposta (BC-4360)
+  BC-4300.20.10:
+    name: Valutazione del rischio dell'incarico
+    description: |
+      Valutazione del rischio specifico dell'incarico, inclusi la complessità
+      della materia, l'integrità del cliente e la recuperabilità degli onorari.
+  BC-4300.20.20:
+    name: Verifica di capacità e competenze
+    description: |
+      Conferma che lo studio disponga della competenza tecnica
+      e della capacità di risorse per eseguire l'incarico.
+  BC-4300.20.30:
+    name: Decisione go/no-go per l'incarico
+    description: |
+      Decisione go/no-go a livello di partner che integra rischio,
+      conflitti, indipendenza, capacità e input commerciali.
+  BC-4300.30:
+    name: Gestione dell'ambito e dei termini dell'incarico
+    description: |
+      Definizione dell'ambito dell'incarico, dei deliverable, delle ipotesi,
+      dei termini economici e della lettera d'incarico o dell'accordo di retainer.
+    in_scope:
+      - Definizione dell'ambito dei servizi
+      - Bozza della struttura economica e dei termini
+      - Emissione della lettera d'incarico o dell'accordo di retainer
+    out_of_scope:
+      - Strategia di pricing a livello di studio (BC-4360.50)
+      - Proposta nella fase di pursuit (BC-4360.30)
+  BC-4300.30.10:
+    name: Definizione dell'ambito dell'incarico
+    description: |
+      Definizione di servizi, deliverable, ipotesi, esclusioni
+      e dipendenze per l'incarico.
+  BC-4300.30.20:
+    name: Bozza della lettera d'incarico
+    description: |
+      Bozza di lettere d'incarico e accordi di retainer allineati
+      ai template dello studio e agli standard professionali applicabili.
+  BC-4300.30.30:
+    name: Negoziazione dei termini dell'incarico
+    description: |
+      Negoziazione dei termini dell'incarico con il cliente, inclusi
+      massimali di responsabilità, legge applicabile e clausole di risoluzione delle controversie.
+  BC-4300.30.40:
+    name: Sottoscrizione della lettera d'incarico
+    description: |
+      Firma, controfirma e archiviazione delle lettere d'incarico firmate
+      come precondizione per la mobilizzazione dell'incarico.
+  BC-4300.40:
+    name: Gestione della mobilizzazione dell'incarico
+    description: |
+      Avvio operativo di un incarico accettato, inclusi la formazione del team,
+      il kickoff, l'accesso sicuro ai dati e la configurazione dell'infrastruttura dell'incarico.
+  BC-4300.40.10:
+    name: Formazione del team dell'incarico
+    description: |
+      Identificazione e conferma dei ruoli di partner, manager
+      e staff nel team dell'incarico.
+  BC-4300.40.20:
+    name: Gestione del kickoff dell'incarico
+    description: |
+      Riunioni di kickoff interne e rivolte al cliente, materiali di briefing
+      e conferma degli obiettivi e delle modalità di lavoro.
+  BC-4300.40.30:
+    name: Configurazione dell'accesso ai dati dell'incarico
+    description: |
+      Provisioning di data room sicure, portali clienti e credenziali di accesso
+      specifici per l'incarico.
+  BC-4300.40.40:
+    name: Configurazione dell'infrastruttura dell'incarico
+    description: |
+      Configurazione dei codici di incarico, delle strutture di fatturazione
+      e della numerazione delle pratiche nei sistemi dello studio.
+  BC-4300.50:
+    name: Gestione delle modifiche all'incarico
+    description: |
+      Controllo delle modifiche all'ambito, agli onorari, alle tempistiche
+      o alla composizione del team dopo la firma della lettera d'incarico.
+  BC-4300.50.10:
+    name: Gestione delle richieste di modifica dell'ambito
+    description: |
+      Raccolta, valutazione e definizione delle richieste di modifica dell'ambito
+      dal cliente o dal team dell'incarico.
+  BC-4300.50.20:
+    name: Approvazione delle variazioni di onorario
+    description: |
+      Workflow di approvazione per rettifiche degli onorari, retainer aggiuntivi
+      e autorizzazioni per lavori fuori ambito.
+  BC-4300.50.30:
+    name: Modifica alla lettera d'incarico
+    description: |
+      Emissione e sottoscrizione di addendum e lettere integrative
+      che recepiscono le modifiche approvate all'incarico.
+  BC-4300.60:
+    name: Gestione della chiusura dell'incarico
+    description: |
+      Conclusione degli incarichi completati, inclusi la consegna dei deliverable,
+      la conservazione dei documenti di lavoro, il trigger della fatturazione finale
+      e il debriefing post-incarico.
+  BC-4300.60.10:
+    name: Gestione della consegna dei deliverable
+    description: |
+      Consegna finale di report, pareri e prodotti di lavoro al cliente
+      con relativa trasmissione.
+  BC-4300.60.20:
+    name: Configurazione della conservazione del fascicolo
+    description: |
+      Chiusura del fascicolo dell'incarico e configurazione delle policy
+      di conservazione, recupero e distruzione.
+  BC-4300.60.30:
+    name: Debriefing e lezioni apprese dell'incarico
+    description: |
+      Revisione post-incarico con il team per raccogliere
+      le lezioni apprese e le azioni di miglioramento.
+  BC-4300.60.40:
+    name: Comunicazione di chiusura al cliente
+    description: |
+      Comunicazione di chiusura al cliente, inclusi report finale,
+      survey di soddisfazione e pianificazione del follow-up.
+  BC-4300.70:
+    name: Gestione della relazione con il cliente
+    description: |
+      Gestione continuativa delle relazioni strategiche con i clienti, inclusi
+      la responsabilità del partner di relazione, la pianificazione dell'account
+      e il coordinamento cross-practice.
+    in_scope:
+      - Assegnazione del partner di relazione
+      - Pianificazione dell'account su più incarichi
+      - Monitoraggio della soddisfazione del cliente
+    out_of_scope:
+      - Attività di pursuit e proposta (BC-4360)
+      - CRM generico (BC-3060)
+  BC-4300.70.10:
+    name: Assegnazione del partner di relazione
+    description: |
+      Assegnazione e rotazione del partner di relazione principale
+      per ogni cliente strategico.
+  BC-4300.70.20:
+    name: Pianificazione dell'account cliente
+    description: |
+      Pianificazione a livello di account sul portafoglio di incarichi con un singolo cliente,
+      inclusi share-of-wallet e obiettivi di relazione.
+  BC-4300.70.30:
+    name: Monitoraggio della soddisfazione del cliente
+    description: |
+      Raccolta del feedback del cliente, NPS o misure equivalenti
+      ed escalation dei segnali di insoddisfazione.
+  BC-4300.70.40:
+    name: Coordinamento cross-practice del cliente
+    description: |
+      Coordinamento tra gruppi di practice e aree geografiche
+      che servono un cliente comune.
+metadata:
+  status: draft
+  reviewer: pending

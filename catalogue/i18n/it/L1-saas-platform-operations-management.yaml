@@ -1,0 +1,146 @@
+# Gestione operativa della piattaforma SaaS (it) — translations for L1-saas-platform-operations-management.yaml
+locale: it
+source: L1-saas-platform-operations-management.yaml
+entries:
+  BC-4220:
+    name: Gestione operativa della piattaforma SaaS
+    description: |
+      SRE (Site Reliability Engineering), observability, risposta on-call, gestione
+      della capacità, performance e operazioni di disaster recovery del servizio SaaS multi-tenant.
+  BC-4220.10:
+    name: Ingegneria dell'affidabilità del servizio
+    description: |
+      Definizione e gestione degli SLI, SLO e degli error budget
+      per il servizio SaaS.
+    in_scope:
+      - Disciplina SLI / SLO / error budget per il prodotto in esercizio
+    out_of_scope:
+      - Impegni SLA verso i clienti (coperti da Gestione della sicurezza e conformità del servizio SaaS)
+      - Livelli di servizio IT interni (coperti da Gestione dell'information technology)
+  BC-4220.10.10:
+    name: Definizione degli indicatori di livello di servizio
+    description: |
+      Definizione degli SLI che misurano l'esperienza del cliente
+      sui servizi in esercizio.
+  BC-4220.10.20:
+    name: Gestione degli obiettivi di livello di servizio
+    description: |
+      Definizione, revisione e aggiornamento degli SLO
+      sui diversi servizi.
+  BC-4220.10.30:
+    name: Gestione degli error budget
+    description: |
+      Gestione degli error budget e della policy che ne governa
+      il consumo.
+  BC-4220.20:
+    name: Gestione dell'observability
+    description: |
+      Log, metriche, trace e monitoraggio sintetico che rendono
+      il servizio in esercizio comprensibile in produzione.
+  BC-4220.20.10:
+    name: Gestione del logging applicativo
+    description: |
+      Gestione delle convenzioni di logging applicativo,
+      delle pipeline e della conservazione.
+  BC-4220.20.20:
+    name: Gestione della pipeline delle metriche
+    description: |
+      Gestione delle pipeline di ingestione, archiviazione
+      e interrogazione delle metriche.
+  BC-4220.20.30:
+    name: Distributed tracing
+    description: |
+      Distributed tracing end-to-end tra i servizi
+      per le analisi in produzione.
+  BC-4220.20.40:
+    name: Monitoraggio sintetico
+    description: |
+      Sonde sintetiche che esercitano i percorsi utente critici
+      dall'esterno del servizio.
+  BC-4220.30:
+    name: Gestione della risposta agli incidenti
+    description: |
+      Risposta on-call, rilevamento degli incidenti, coordinamento
+      e comunicazione ai clienti durante gli incidenti in produzione.
+  BC-4220.30.10:
+    name: Gestione dei turni on-call
+    description: |
+      Definizione e gestione dei turni on-call
+      nei team di prodotto.
+  BC-4220.30.20:
+    name: Rilevamento degli incidenti
+    description: |
+      Rilevamento degli incidenti in produzione da telemetria
+      e segnali esterni.
+  BC-4220.30.30:
+    name: Coordinamento degli incidenti
+    description: |
+      Coordinamento della risposta agli incidenti, inclusi ruoli, comunicazioni
+      e decisioni durante l'incidente.
+  BC-4220.30.40:
+    name: Comunicazione agli utenti durante gli incidenti
+    description: |
+      Comunicazione ai clienti coinvolti durante e dopo gli incidenti.
+  BC-4220.40:
+    name: Postmortem e miglioramento dell'affidabilità
+    description: |
+      Redazione dei postmortem e monitoraggio delle azioni di miglioramento
+      dell'affidabilità affinché le lezioni si accumulino nel tempo.
+  BC-4220.40.10:
+    name: Redazione dei postmortem
+    description: |
+      Redazione di postmortem blameless dopo incidenti
+      e near-miss significativi.
+  BC-4220.40.20:
+    name: Monitoraggio delle azioni di affidabilità
+    description: |
+      Monitoraggio delle azioni di miglioramento dell'affidabilità
+      fino alla chiusura nei team.
+  BC-4220.40.30:
+    name: Analisi dei trend di affidabilità
+    description: |
+      Analisi dei trend di affidabilità tra i servizi
+      e sulle diverse fasce temporali.
+  BC-4220.50:
+    name: Gestione della capacità e delle performance
+    description: |
+      Previsione della capacità, policy di auto-scaling e test di performance
+      del servizio SaaS.
+  BC-4220.50.10:
+    name: Previsione della capacità
+    description: |
+      Previsione della domanda di capacità tra i servizi
+      e le regioni.
+  BC-4220.50.20:
+    name: Gestione delle policy di auto-scaling
+    description: |
+      Definizione e ottimizzazione delle policy di auto-scaling
+      per i servizi di prodotto.
+  BC-4220.50.30:
+    name: Test di performance
+    description: |
+      Test di carico, stress e soak del servizio
+      in esercizio.
+  BC-4220.60:
+    name: Disaster recovery e resilienza
+    description: |
+      Backup e ripristino, orchestrazione del failover ed esercitazioni
+      di disaster recovery per il servizio SaaS.
+  BC-4220.60.10:
+    name: Gestione del backup e del ripristino
+    description: |
+      Policy di backup, esecuzione e validazione del ripristino
+      per i datastore del servizio.
+  BC-4220.60.20:
+    name: Orchestrazione del failover
+    description: |
+      Orchestrazione del failover tra zone di disponibilità
+      e regioni.
+  BC-4220.60.30:
+    name: Gestione delle esercitazioni di disaster recovery
+    description: |
+      Pianificazione ed esecuzione di esercitazioni di disaster recovery
+      e game-day.
+metadata:
+  status: draft
+  reviewer: pending

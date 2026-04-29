@@ -1,0 +1,112 @@
+# Gestione della fatturazione e del regolamento del trasporto (it) — translations for L1-freight-billing-settlement-management.yaml
+locale: it
+source: L1-freight-billing-settlement-management.yaml
+entries:
+  BC-2530:
+    name: Gestione della fatturazione e del regolamento del trasporto merci
+    description: |
+      Emissione di fatture di trasporto, audit e pagamento delle fatture dei vettori,
+      regolamento interline e pooling, richieste di risarcimento per merci e contabilità
+      dei ricavi da trasporto.
+  BC-2530.10:
+    name: Gestione della fatturazione del trasporto
+    description: |
+      Generazione e distribuzione di fatture di trasporto, addebiti accessori e
+      fatture self-billing ai clienti.
+    in_scope:
+      - Generazione delle fatture di trasporto
+      - Riconciliazione del self-billing dei clienti
+    out_of_scope:
+      - Processi generici di contabilità clienti (BC-200)
+      - Strategia di pricing dei clienti (BC-440)
+  BC-2530.10.10:
+    name: Generazione delle fatture di trasporto
+    description: |
+      Generazione delle fatture di trasporto dai movimenti completati.
+  BC-2530.10.20:
+    name: Generazione delle fatture per addebiti accessori
+    description: |
+      Generazione delle fatture per addebiti accessori e supplementi.
+  BC-2530.10.30:
+    name: Coordinamento del self-billing dei clienti
+    description: |
+      Riconciliazione degli estratti conto di self-billing dei clienti rispetto alle
+      spedizioni.
+  BC-2530.20:
+    name: Gestione dell'audit e del pagamento del trasporto
+    description: |
+      Audit delle fatture dei vettori ed esecuzione dei pagamenti ai vettori da parte
+      di mittenti e spedizionieri.
+  BC-2530.20.10:
+    name: Audit delle fatture dei vettori
+    description: |
+      Audit delle fatture dei vettori rispetto a contratti, tariffari e spedizioni.
+  BC-2530.20.20:
+    name: Riconciliazione pre-audit e post-audit
+    description: |
+      Riconciliazione pre-audit e post-audit delle fatture dei vettori.
+  BC-2530.20.30:
+    name: Esecuzione del pagamento ai vettori
+    description: |
+      Esecuzione dei pagamenti ai vettori e reportistica della rimessa.
+  BC-2530.30:
+    name: Gestione del regolamento interline e multi-vettore
+    description: |
+      Regolamento di ricavi e costi tra partner interline, alleanze e uffici degli
+      spedizionieri.
+  BC-2530.30.10:
+    name: Calcolo del pro-rata interline
+    description: |
+      Calcolo del pro-rata dei ricavi interline tra partner.
+  BC-2530.30.20:
+    name: Operazioni di liquidazione IATA CASS
+    description: |
+      Gestione della liquidazione IATA CASS per il cargo aereo.
+  BC-2530.30.30:
+    name: Regolamento inter-ufficio
+    description: |
+      Regolamento inter-ufficio dei ricavi e dei costi degli spedizionieri.
+  BC-2530.40:
+    name: Gestione delle richieste di risarcimento per merci
+    description: |
+      Ricezione, valutazione e liquidazione delle richieste di risarcimento per merci
+      nell'ambito delle convenzioni sulla responsabilità del trasporto.
+  BC-2530.40.10:
+    name: Ricezione e conferma delle richieste
+    description: |
+      Ricezione e conferma di ricezione delle richieste di risarcimento per perdita e
+      danni alle merci.
+  BC-2530.40.20:
+    name: Valutazione della responsabilità
+    description: |
+      Valutazione della responsabilità del vettore ai sensi delle convenzioni
+      Hague-Visby, Montreal, CMR e COTIF.
+  BC-2530.40.30:
+    name: Liquidazione e recupero delle richieste
+    description: |
+      Liquidazione delle richieste accettate e pagamento al cliente.
+  BC-2530.40.40:
+    name: Rivalsa e surrogazione
+    description: |
+      Rivalsa verso i vettori sottostanti e surrogazione verso le compagnie di
+      assicurazione.
+  BC-2530.50:
+    name: Gestione della contabilità dei ricavi da trasporto
+    description: |
+      Rilevazione, monitoraggio e reportistica dei ricavi da trasporto, incluse le
+      posizioni non fatturate e differite.
+  BC-2530.50.10:
+    name: Rilevazione dei ricavi da trasporto
+    description: |
+      Rilevazione dei ricavi da trasporto secondo i principi contabili applicabili.
+  BC-2530.50.20:
+    name: Monitoraggio dei ricavi non fatturati
+    description: |
+      Monitoraggio dei ricavi da trasporto non fatturati e maturati.
+  BC-2530.50.30:
+    name: Reportistica dei ricavi da trasporto
+    description: |
+      Reportistica dei ricavi da trasporto alle funzioni finanziarie e commerciali.
+metadata:
+  status: draft
+  reviewer: pending
