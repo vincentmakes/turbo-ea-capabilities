@@ -1,0 +1,136 @@
+locale: fr
+source: L1-travel-loyalty-programme-management.yaml
+entries:
+  BC-4050:
+    name: Gestion des programmes de fidélité voyage
+    description: |
+      Conception et exploitation des programmes de fidélité des voyageurs — architecture des niveaux, moteurs d'accumulation et d'utilisation, accréditations partenaires, gestion des statuts et communications membres — indépendamment du dossier client et des plateformes de canaux.
+    in_scope:
+      - Architecture des niveaux et catalogue d'avantages du programme
+      - Moteurs d'accumulation et d'utilisation, y compris les accréditations partenaires
+      - Qualification, maintien et atterrissage en douceur des niveaux
+      - Communications membres et opérations de reconnaissance des jalons
+    out_of_scope:
+      - Profil et identité du client (BC-4040)
+      - Délivrance de la reconnaissance sur site (BC-4040.40)
+      - Exécution des canaux marketing (BC-410)
+  BC-4050.10:
+    name: Conception du programme de fidélité
+    description: |
+      Conception de l'architecture du programme incluant la structure des niveaux, le catalogue d'avantages, les paramètres de taux d'accumulation et les règles du programme.
+  BC-4050.10.10:
+    name: Architecture des niveaux du programme
+    description: |
+      Architecture des niveaux de fidélité incluant les seuils, les avantages et les règles de progression.
+  BC-4050.10.20:
+    name: Catalogue des avantages membres
+    description: |
+      Catalogue des avantages membres sur les surfaces produits et partenaires.
+  BC-4050.10.30:
+    name: Définition des taux d'accumulation et des multiplicateurs
+    description: |
+      Définition des taux d'accumulation de base et des multiplicateurs par niveau et par produit.
+  BC-4050.10.40:
+    name: Gestion des conditions générales du programme
+    description: |
+      Gestion des conditions générales du programme incluant les variantes juridictionnelles.
+  BC-4050.20:
+    name: Opérations du moteur d'accumulation
+    description: |
+      Exploitation du moteur d'accumulation sur les séjours, vols, dépenses partenaires, bonus promotionnels et réclamations d'activités manquantes.
+  BC-4050.20.10:
+    name: Traitement des accréditations séjour et vol
+    description: |
+      Traitement des événements d'accréditation liés aux séjours, vols et circuits effectués.
+  BC-4050.20.20:
+    name: Traitement des accréditations de dépenses partenaires
+    description: |
+      Traitement des événements d'accréditation issus des cartes co-brandées et des dépenses chez les partenaires.
+  BC-4050.20.30:
+    name: Accréditation des bonus promotionnels
+    description: |
+      Accréditation des bonus promotionnels liés aux règles de campagne.
+  BC-4050.20.40:
+    name: Traitement des réclamations d'activités manquantes
+    description: |
+      Traitement des réclamations d'activités manquantes et ajustements rétroactifs d'accréditation.
+  BC-4050.30:
+    name: Opérations d'utilisation et d'échange de points
+    description: |
+      Exploitation des flux d'échange incluant la disponibilité des récompenses, le paiement mixte espèces et points, et le règlement d'inventaire.
+  BC-4050.30.10:
+    name: Calcul de la disponibilité des récompenses
+    description: |
+      Calcul de la disponibilité des récompenses par rapport à l'inventaire commercial et aux règles de protection.
+  BC-4050.30.20:
+    name: Réservation des échanges de récompenses
+    description: |
+      Réservation des échanges de récompenses sur l'inventaire propre et partenaire.
+  BC-4050.30.30:
+    name: Échange avec paiement mixte espèces et points
+    description: |
+      Flux d'échange combinant un paiement en espèces et en points pour la même réservation.
+  BC-4050.30.40:
+    name: Règlement de l'inventaire d'échange
+    description: |
+      Règlement de la consommation d'inventaire d'échange entre les comptes de la marque et des partenaires.
+  BC-4050.40:
+    name: Gestion du statut de niveau
+    description: |
+      Exploitation de la qualification, de la promotion, de la rétrogradation, des programmes de reconnaissance de statut et des règles d'atterrissage en douceur.
+  BC-4050.40.10:
+    name: Suivi de la qualification de niveau
+    description: |
+      Suivi de l'activité qualifiante par rapport aux seuils de niveau tout au long de l'année du programme.
+  BC-4050.40.20:
+    name: Opérations de promotion et de rétrogradation de niveau
+    description: |
+      Opérations de promotion, rétrogradation et re-qualification des membres aux échéances de période.
+  BC-4050.40.30:
+    name: Programmes de reconnaissance de statut et défis
+    description: |
+      Exploitation des programmes de reconnaissance de statut et de défis de niveau pour l'acquisition ciblée.
+  BC-4050.40.40:
+    name: Règles d'atterrissage en douceur
+    description: |
+      Règles de rétention atténuant la perte de niveau pour les membres à haute valeur sur les périodes de qualification.
+  BC-4050.50:
+    name: Gestion des partenaires du programme de fidélité
+    description: |
+      Gestion des partenaires de fidélité incluant les partenaires carte bancaire, distribution et hôtel-compagnie aérienne, couvrant l'intégration, la configuration et le règlement.
+  BC-4050.50.10:
+    name: Intégration et contractualisation des partenaires
+    description: |
+      Intégration et contractualisation de nouveaux partenaires de fidélité, incluant la diligence raisonnable et l'intégration technique.
+  BC-4050.50.20:
+    name: Configuration des taux d'accumulation partenaires
+    description: |
+      Configuration des taux d'accumulation et des structures de bonus pour chaque partenaire de fidélité.
+  BC-4050.50.30:
+    name: Règlement et réconciliation partenaires
+    description: |
+      Règlement et réconciliation des points émis par les partenaires et des frais d'accréditation.
+  BC-4050.50.40:
+    name: Gestion des performances partenaires
+    description: |
+      Gestion des performances des partenaires de fidélité par rapport aux KPI contractuels.
+  BC-4050.60:
+    name: Opérations de communication et de reconnaissance membres
+    description: |
+      Exploitation des communications membres, de la reconnaissance des jalons et des gestes de surprise et de plaisir tout au long du cycle de vie de la fidélité.
+  BC-4050.60.10:
+    name: Communications du cycle de vie membre
+    description: |
+      Communications du cycle de vie aux membres lors des phases d'intégration, d'activité et de réactivation.
+  BC-4050.60.20:
+    name: Reconnaissance des jalons et anniversaires
+    description: |
+      Reconnaissance des jalons membres, anniversaires d'adhésion et promotions de niveau.
+  BC-4050.60.30:
+    name: Opérations de surprise et de plaisir
+    description: |
+      Exploitation des gestes de surprise et de plaisir déclenchés par le comportement des membres ou des événements de service.
+  BC-4050.60.40:
+    name: Génération des relevés membres
+    description: |
+      Génération des relevés membres couvrant le solde, l'activité et la progression de niveau.

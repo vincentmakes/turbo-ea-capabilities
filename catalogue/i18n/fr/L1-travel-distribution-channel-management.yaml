@@ -1,0 +1,155 @@
+locale: fr
+source: L1-travel-distribution-channel-management.yaml
+entries:
+  BC-4010:
+    name: Gestion de la distribution et des canaux voyage
+    description: |
+      Gestion de la distribution et du merchandising des produits voyage via les canaux directs, GDS, OTA, grossistes et métamoteurs — incluant la connectivité des canaux, la syndication de contenu et la parité des tarifs et disponibilités.
+    in_scope:
+      - Opérations des canaux directs, GDS, OTA, grossistes et métamoteurs
+      - Exploitation du gestionnaire de canaux et syndication de contenu
+      - Politique et application de la parité tarifaire et de disponibilité
+    out_of_scope:
+      - Définition du référentiel produits et des pools d'inventaire (BC-4000)
+      - Cycle de vie des réservations (BC-4020)
+      - Décisions de tarification et de yield (BC-4030)
+  BC-4010.10:
+    name: Gestion de la distribution directe
+    description: |
+      Distribution des produits voyage via les canaux directs de l'entreprise : site web, mobile, téléphone et bornes libre-service.
+  BC-4010.10.10:
+    name: Gestion de la distribution via le site de la marque
+    description: |
+      Exploitation du site de la marque comme surface d'achat et de réservation directe pour les produits voyage.
+  BC-4010.10.20:
+    name: Gestion de la distribution via l'application mobile
+    description: |
+      Exploitation des applications mobiles natives comme canal de distribution et de service direct.
+  BC-4010.10.30:
+    name: Distribution par téléphone et centre d'appels
+    description: |
+      Distribution par téléphone et centre d'appels, y compris les achats et réservations assistés par un agent.
+  BC-4010.10.40:
+    name: Distribution par bornes et libre-service
+    description: |
+      Distribution libre-service via les bornes dans les aéroports, hôtels et établissements partenaires.
+  BC-4010.20:
+    name: Gestion de la distribution GDS
+    description: |
+      Distribution via les systèmes de distribution globale, incluant la synchronisation du contenu, le mapping des classes de réservation et la gestion des coûts.
+  BC-4010.20.10:
+    name: Opérations de connectivité GDS
+    description: |
+      Exploitation de la connectivité aux fournisseurs GDS couvrant les flux de recherche, de réservation et d'émission de billets.
+  BC-4010.20.20:
+    name: Envoi et synchronisation du contenu GDS
+    description: |
+      Envoi et synchronisation du contenu, des tarifs et des disponibilités vers les fournisseurs GDS.
+  BC-4010.20.30:
+    name: Mapping des classes de réservation GDS
+    description: |
+      Mapping des classes de produits internes sur les classes de réservation et codes tarifs GDS.
+  BC-4010.20.40:
+    name: Gestion des coûts et surcharges GDS
+    description: |
+      Gestion des frais de réservation GDS, des surcharges et de l'imputation du coût de distribution.
+  BC-4010.30:
+    name: Gestion de la distribution OTA et grossistes
+    description: |
+      Distribution via les agences de voyage en ligne, les bed banks et les grossistes B2B, incluant les conditions commerciales et les remplacements de contenu.
+  BC-4010.30.10:
+    name: Opérations de connectivité OTA
+    description: |
+      Exploitation de la connectivité aux OTA couvrant les flux de recherche, de réservation et d'événements post-réservation.
+  BC-4010.30.20:
+    name: Connectivité grossistes et bed banks
+    description: |
+      Exploitation de la connectivité aux grossistes et bed banks pour la redistribution B2B.
+  BC-4010.30.30:
+    name: Gestion des conditions commerciales OTA
+    description: |
+      Gestion des conditions commerciales OTA incluant les modèles à commission, à marge et à tarif net.
+  BC-4010.30.40:
+    name: Gestion des substitutions de contenu OTA
+    description: |
+      Gestion des substitutions de contenu propres aux canaux OTA tout en préservant la cohérence de la marque.
+  BC-4010.40:
+    name: Gestion de la distribution sur les métamoteurs
+    description: |
+      Distribution et enchères sur les plateformes métamoteurs, incluant les opérations de flux et le suivi des conversions.
+  BC-4010.40.10:
+    name: Opérations de flux métamoteurs
+    description: |
+      Exploitation des flux de tarifs et de disponibilités vers les fournisseurs de métamoteurs.
+  BC-4010.40.20:
+    name: Opérations d'enchères sur les métamoteurs
+    description: |
+      Exploitation des stratégies d'enchères sur les emplacements métamoteurs selon les marchés et les appareils.
+  BC-4010.40.30:
+    name: Suivi des conversions sur les métamoteurs
+    description: |
+      Suivi de l'attribution des conversions et de l'efficacité des enchères sur le trafic métamoteur.
+  BC-4010.40.40:
+    name: Gestion des conflits d'enchères sur la marque
+    description: |
+      Gestion des conflits d'enchères entre la marque propre et les OTA sur les métamoteurs et la publicité payante.
+  BC-4010.50:
+    name: Opérations du gestionnaire de canaux
+    description: |
+      Exploitation du gestionnaire de canaux synchronisant l'inventaire, les tarifs et les restrictions sur l'ensemble des canaux de distribution.
+  BC-4010.50.10:
+    name: Configuration du mapping des canaux
+    description: |
+      Configuration des mappings entre les produits internes et les catalogues propres à chaque canal.
+  BC-4010.50.20:
+    name: Opérations d'envoi de l'inventaire
+    description: |
+      Exploitation des mises à jour d'inventaire transmises du pool central vers tous les canaux connectés.
+  BC-4010.50.30:
+    name: Opérations d'envoi des tarifs
+    description: |
+      Exploitation des mises à jour de tarifs transmises des moteurs de tarification vers tous les canaux connectés.
+  BC-4010.50.40:
+    name: Opérations d'envoi des restrictions
+    description: |
+      Exploitation des mises à jour de restrictions — séjour minimum, fermeture à l'arrivée, stop-sell — sur l'ensemble des canaux.
+  BC-4010.60:
+    name: Gestion de la parité tarifaire et de disponibilité
+    description: |
+      Définition, surveillance et application de la parité tarifaire et de disponibilité sur les canaux directs et indirects.
+  BC-4010.60.10:
+    name: Définition de la politique de parité
+    description: |
+      Définition de la politique de parité tarifaire et de disponibilité selon les types de canaux et les segments partenaires.
+  BC-4010.60.20:
+    name: Surveillance et audit de la parité
+    description: |
+      Surveillance des canaux pour détecter les écarts de parité et audit régulier du mix de canaux.
+  BC-4010.60.30:
+    name: Résolution des écarts de parité
+    description: |
+      Résolution des écarts de parité identifiés avec les canaux et les partenaires.
+  BC-4010.60.40:
+    name: Gestion de la disponibilité jusqu'à la dernière chambre
+    description: |
+      Gestion des engagements de disponibilité jusqu'à la dernière chambre envers les partenaires corporate et de distribution.
+  BC-4010.70:
+    name: Syndication du contenu de distribution
+    description: |
+      Syndication du contenu produit aux partenaires de distribution avec des contrôles de format, de fraîcheur et de repli.
+  BC-4010.70.10:
+    name: Gestion des formats de flux de contenu
+    description: |
+      Gestion des formats de flux de contenu et des schémas propres à chaque canal.
+  BC-4010.70.20:
+    name: Surveillance de la fraîcheur du contenu
+    description: |
+      Surveillance de la fraîcheur du contenu sur les surfaces des partenaires de distribution par rapport aux SLA de publication.
+  BC-4010.70.30:
+    name: Règles de repli du contenu canal
+    description: |
+      Règles de repli utilisées lorsque le contenu propre au partenaire est absent ou obsolète.
+  BC-4010.70.40:
+    name: Réconciliation des substitutions de contenu
+    description: |
+      Réconciliation des substitutions de contenu partenaires par rapport à l'enregistrement de contenu de référence.

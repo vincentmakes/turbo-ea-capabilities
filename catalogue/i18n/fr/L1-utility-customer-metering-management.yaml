@@ -1,0 +1,126 @@
+locale: fr
+source: L1-utility-customer-metering-management.yaml
+entries:
+  BC-3910:
+    name: Gestion du comptage client pour les réseaux de distribution
+    description: |
+      Opérations de gestion de la clientèle et du comptage propres aux réseaux de distribution — comptes clients, parc de compteurs, acquisition de données AMI et compteurs intelligents, relevé et validation, préparation de la facturation, connexion et déconnexion de service, et protection des clients vulnérables.
+  BC-3910.10:
+    name: Gestion des comptes clients de réseau de distribution
+    description: |
+      Cycle de vie du compte client spécifique aux réseaux de distribution, couvrant les identifiants de points de fourniture, les changements d'occupant et l'attribution des tarifs.
+  BC-3910.10.10:
+    name: Immatriculation des points de fourniture
+    description: |
+      Enregistrement et maintenance des identifiants de points de fourniture (MPAN, MPRN, SPID).
+  BC-3910.10.20:
+    name: Gestion des changements d'occupant
+    description: |
+      Traitement des entrées, des sorties et des changements de locataire pour les points de fourniture.
+  BC-3910.10.30:
+    name: Attribution des tarifs clients
+    description: |
+      Affectation des clients aux grilles tarifaires et options de produits applicables.
+  BC-3910.20:
+    name: Gestion des actifs de comptage
+    description: |
+      Gestion du cycle de vie des compteurs et des équipements de communication, incluant le stock, l'installation, l'échange et la reprise.
+  BC-3910.20.10:
+    name: Gestion du stock de compteurs
+    description: |
+      Gestion du stock, mise en service et mise hors service des actifs de comptage.
+  BC-3910.20.20:
+    name: Installation des compteurs
+    description: |
+      Pose sur le terrain de compteurs neufs ou de remplacement.
+  BC-3910.20.30:
+    name: Reprise et élimination des compteurs
+    description: |
+      Reprise, reconditionnement et élimination en fin de vie des actifs de comptage.
+  BC-3910.30:
+    name: Exploitation de l'acquisition de données AMI
+    description: |
+      Acquisition des données d'infrastructure de comptage avancée via les systèmes de tête de réseau, les réseaux de communication et les systèmes de gestion des données de comptage.
+    in_scope:
+      - Exploitation du système de tête de réseau pour compteurs intelligents
+      - Surveillance du réseau de communication et des concentrateurs
+      - Ingestion dans le système de gestion des données de comptage
+    out_of_scope:
+      - Installation physique des compteurs (BC-3910.20.20)
+      - Demande agrégée du côté négoce (BC-3850.30.10)
+  BC-3910.30.10:
+    name: Exploitation du système de tête de réseau
+    description: |
+      Exploitation des systèmes de tête de réseau pour compteurs intelligents et émission de commandes.
+  BC-3910.30.20:
+    name: Exploitation du réseau de communication AMI
+    description: |
+      Exploitation des réseaux de communication AMI par radiofréquence, CPL et cellulaire, ainsi que des concentrateurs.
+  BC-3910.30.30:
+    name: Ingestion dans le système de gestion des données de comptage
+    description: |
+      Ingestion des relevés par intervalles et par index dans le système de gestion des données de comptage.
+  BC-3910.40:
+    name: Relevé et validation des compteurs
+    description: |
+      Relevé cyclique et événementiel des compteurs, validation, estimation et édition des données de consommation.
+  BC-3910.40.10:
+    name: Opérations de relevé manuel et par passage
+    description: |
+      Relevé par tournée à pied, par passage et par AMR pour les compteurs non équipés AMI.
+  BC-3910.40.20:
+    name: Validation, estimation et édition
+    description: |
+      Traitement VEE des relevés par index et par intervalles pour produire des données de qualité facturable.
+  BC-3910.40.30:
+    name: Agrégation de la consommation
+    description: |
+      Agrégation de la consommation par périodes de facturation et par profils de règlement.
+  BC-3910.50:
+    name: Opérations de comptage à la facturation
+    description: |
+      Opérations propres aux réseaux de distribution préparant les données d'usage pour la facturation et la protection des recettes, incluant le traitement des exceptions et la détection des pertes.
+  BC-3910.50.10:
+    name: Préparation des éléments de facturation
+    description: |
+      Préparation des éléments de facturation — usage, puissance et réactif — pour les systèmes de facturation.
+  BC-3910.50.20:
+    name: Gestion des exceptions de facturation
+    description: |
+      Investigation et résolution des exceptions de facturation et anomalies de données de comptage.
+  BC-3910.50.30:
+    name: Opérations de protection des recettes
+    description: |
+      Détection et investigation terrain des fraudes et vols d'énergie ou d'eau.
+  BC-3910.60:
+    name: Opérations de connexion et de déconnexion de service
+    description: |
+      Activation, désactivation et passage en mode prépayé des fournitures à l'interface client.
+  BC-3910.60.10:
+    name: Opérations d'activation des fournitures
+    description: |
+      Activation des fournitures nouvelles et réactivées, y compris la mise sous tension à distance.
+  BC-3910.60.20:
+    name: Déconnexion pour non-paiement
+    description: |
+      Processus de déconnexion dans le respect des protections légales et réglementaires.
+  BC-3910.60.30:
+    name: Opérations de comptage prépayé
+    description: |
+      Exploitation des compteurs prépayés et des canaux de rechargement.
+  BC-3910.70:
+    name: Gestion des clients vulnérables
+    description: |
+      Identification et protection des clients en situation de vulnérabilité, incluant les registres de services prioritaires et les dispositifs d'aide à l'accessibilité tarifaire.
+  BC-3910.70.10:
+    name: Gestion du registre des services prioritaires
+    description: |
+      Maintenance du registre des services prioritaires et des indicateurs d'assistance personnalisée.
+  BC-3910.70.20:
+    name: Opérations des dispositifs d'aide et d'accessibilité tarifaire
+    description: |
+      Administration des tarifs sociaux et des fonds de solidarité pour les clients des réseaux de distribution.
+  BC-3910.70.30:
+    name: Gestion des clients dépendants d'équipements médicaux
+    description: |
+      Gestion des clients dont la vie dépend d'équipements médicaux ou de dialyse aux fins de planification des coupures.

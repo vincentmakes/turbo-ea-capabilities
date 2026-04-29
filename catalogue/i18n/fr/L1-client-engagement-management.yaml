@@ -1,0 +1,211 @@
+locale: fr
+source: L1-client-engagement-management.yaml
+entries:
+  BC-4300:
+    name: Gestion des missions clients
+    description: |
+      Cycle de vie de l'acceptation des clients et des missions, cadrage, mobilisation,
+      gestion des modifications, clôture et gestion continue des relations clients
+      pour les missions juridiques, de conseil et d'audit et assurance.
+  BC-4300.10:
+    name: Gestion de l'acceptation des clients
+    description: |
+      Prise en charge de nouvelles relations clients, incluant les vérifications KYC,
+      le filtrage AML, les contrôles sanctions et PPE, et la vérification des
+      bénéficiaires effectifs avant l'acceptation de toute mission.
+    in_scope:
+      - Vérifications KYC et conformité AML pour les nouveaux clients
+      - Filtrage sanctions et PPE pour les clients potentiels
+      - Contrôles des bénéficiaires effectifs et de l'origine des fonds
+      - Actualisation périodique des dossiers KYC clients
+    out_of_scope:
+      - Évaluation de l'indépendance et des conflits d'intérêts (BC-4350)
+      - Acceptation des risques propres à la mission (BC-4300.20)
+  BC-4300.10.10:
+    name: Collecte des informations KYC clients
+    description: |
+      Collecte des informations d'identification, des bénéficiaires effectifs
+      et de l'origine des fonds pour les clients potentiels et existants.
+  BC-4300.10.20:
+    name: Filtrage sanctions et PPE des clients
+    description: |
+      Filtrage des clients et des bénéficiaires effectifs contre les listes
+      de sanctions, PPE et médias adverses.
+  BC-4300.10.30:
+    name: Notation du risque client
+    description: |
+      Notation du risque de la relation client pour déterminer la profondeur
+      de la diligence et la fréquence de révision.
+  BC-4300.10.40:
+    name: Actualisation périodique de la diligence client
+    description: |
+      Actualisation des données KYC, de la structure d'actionnariat et des
+      notes de risque selon un cycle défini.
+  BC-4300.20:
+    name: Gestion de l'acceptation des missions
+    description: |
+      Processus décisionnel d'acceptation ou de refus d'une mission spécifique,
+      s'appuyant sur la vérification de l'indépendance, l'évaluation des conflits,
+      l'analyse de la capacité, la faisabilité financière et l'évaluation des
+      risques propres à la mission.
+    in_scope:
+      - Évaluation des risques de la mission
+      - Vérification des capacités et des compétences
+      - Décision de lancement ou d'abandon de la mission
+    out_of_scope:
+      - Contrôles substantiels d'indépendance et de conflits (BC-4350)
+      - Activités de prospection et de proposition commerciale (BC-4360)
+  BC-4300.20.10:
+    name: Évaluation des risques de la mission
+    description: |
+      Évaluation des risques spécifiques à la mission, incluant la complexité
+      de la matière, l'intégrité du client et la recouvrabilité des honoraires.
+  BC-4300.20.20:
+    name: Vérification des capacités et des compétences
+    description: |
+      Confirmation que le cabinet dispose des compétences techniques et de la
+      capacité en ressources nécessaires pour exécuter la mission.
+  BC-4300.20.30:
+    name: Décision de lancement ou d'abandon de la mission
+    description: |
+      Décision d'associé de lancement ou d'abandon intégrant les risques, les
+      conflits d'intérêts, l'indépendance, la capacité et les critères commerciaux.
+  BC-4300.30:
+    name: Gestion du cadrage et des conditions de la mission
+    description: |
+      Définition du périmètre, des livrables, des hypothèses, des conditions
+      d'honoraires et de la lettre de mission ou du contrat de prestation.
+    in_scope:
+      - Définition du périmètre des services
+      - Rédaction de la structure et des conditions tarifaires
+      - Émission de la lettre de mission ou du contrat de prestation
+    out_of_scope:
+      - Stratégie tarifaire au niveau du cabinet (BC-4360.50)
+      - Proposition commerciale en phase de prospection (BC-4360.30)
+  BC-4300.30.10:
+    name: Définition du périmètre de la mission
+    description: |
+      Définition des services, des livrables, des hypothèses, des exclusions
+      et des dépendances de la mission.
+  BC-4300.30.20:
+    name: Rédaction de la lettre de mission
+    description: |
+      Rédaction des lettres de mission et contrats de prestation alignés sur
+      les modèles du cabinet et les normes professionnelles applicables.
+  BC-4300.30.30:
+    name: Négociation des conditions de la mission
+    description: |
+      Négociation des conditions de la mission avec le client, incluant
+      les plafonds de responsabilité, le droit applicable et les clauses
+      de résolution des litiges.
+  BC-4300.30.40:
+    name: Signature de la lettre de mission
+    description: |
+      Signature, contresignature et archivage des lettres de mission exécutées
+      comme condition préalable à la mobilisation de la mission.
+  BC-4300.40:
+    name: Gestion de la mobilisation de la mission
+    description: |
+      Démarrage opérationnel d'une mission acceptée, incluant la constitution
+      de l'équipe, le lancement, l'accès sécurisé aux données et la mise en
+      place de l'infrastructure de mission.
+  BC-4300.40.10:
+    name: Constitution de l'équipe de mission
+    description: |
+      Identification et confirmation des rôles d'associé, de manager et
+      de collaborateur au sein de l'équipe de mission.
+  BC-4300.40.20:
+    name: Gestion du lancement de la mission
+    description: |
+      Réunions de lancement internes et avec le client, documents de briefing
+      et confirmation des objectifs et des modalités de travail.
+  BC-4300.40.30:
+    name: Mise en place de l'accès aux données de la mission
+    description: |
+      Provisionnement des salles de données sécurisées, des portails clients
+      et des accréditations d'accès spécifiques à la mission.
+  BC-4300.40.40:
+    name: Mise en place de l'infrastructure de mission
+    description: |
+      Mise en place des codes de mission, des structures de facturation et
+      de la numérotation des dossiers dans les systèmes du cabinet.
+  BC-4300.50:
+    name: Gestion des modifications de mission
+    description: |
+      Contrôle des modifications du périmètre, des honoraires, des délais
+      ou de la composition de l'équipe après la signature de la lettre de mission.
+  BC-4300.50.10:
+    name: Traitement des demandes de modification du périmètre
+    description: |
+      Enregistrement, évaluation et traitement des demandes de modification
+      du périmètre émanant du client ou de l'équipe de mission.
+  BC-4300.50.20:
+    name: Approbation des variations d'honoraires
+    description: |
+      Processus d'approbation des ajustements d'honoraires, des provisions
+      supplémentaires et des autorisations de travaux hors périmètre.
+  BC-4300.50.30:
+    name: Avenant à la lettre de mission
+    description: |
+      Émission et signature des avenants et lettres annexes reflétant les
+      modifications approuvées de la mission.
+  BC-4300.60:
+    name: Gestion de la clôture de la mission
+    description: |
+      Finalisation des missions terminées, incluant la remise des livrables,
+      la conservation des dossiers de travail, le déclenchement de la facturation
+      finale et le bilan post-mission.
+  BC-4300.60.10:
+    name: Gestion de la remise des livrables
+    description: |
+      Remise définitive des rapports, avis et produits de travail au client
+      avec les transmittals associés.
+  BC-4300.60.20:
+    name: Mise en place de la conservation du dossier de mission
+    description: |
+      Clôture du dossier de mission et configuration des politiques de
+      conservation, d'accès et de destruction.
+  BC-4300.60.30:
+    name: Bilan de mission et retours d'expérience
+    description: |
+      Revue post-mission avec l'équipe pour capitaliser les retours d'expérience
+      et les actions d'amélioration.
+  BC-4300.60.40:
+    name: Communication de clôture au client
+    description: |
+      Communication de clôture au client incluant le rapport final, l'enquête
+      de satisfaction et la planification du suivi.
+  BC-4300.70:
+    name: Gestion de la relation client
+    description: |
+      Gestion continue des relations clients stratégiques, incluant la responsabilité
+      de l'associé relation, la planification des comptes clients et la coordination
+      inter-pratiques.
+    in_scope:
+      - Attribution de l'associé relation
+      - Planification du compte client sur plusieurs missions
+      - Suivi de la satisfaction client
+    out_of_scope:
+      - Activités de prospection et de proposition commerciale (BC-4360)
+      - CRM générique (BC-3060)
+  BC-4300.70.10:
+    name: Attribution de l'associé relation
+    description: |
+      Attribution et rotation de l'associé relation principal pour chaque
+      client stratégique.
+  BC-4300.70.20:
+    name: Planification du compte client
+    description: |
+      Planification au niveau du compte sur l'ensemble des missions avec
+      un client donné, incluant les objectifs de part de portefeuille et
+      de relation.
+  BC-4300.70.30:
+    name: Suivi de la satisfaction client
+    description: |
+      Collecte des retours clients, mesures NPS ou équivalentes et escalade
+      des signaux d'insatisfaction.
+  BC-4300.70.40:
+    name: Coordination inter-pratiques pour les clients partagés
+    description: |
+      Coordination entre les pratiques et les géographies intervenant auprès
+      d'un client commun.

@@ -1,0 +1,138 @@
+locale: fr
+source: L1-travel-revenue-yield-management.yaml
+entries:
+  BC-4030:
+    name: Gestion des revenus et du yield voyage
+    description: |
+      Prévision de la demande, tarification dynamique, contrôles d'inventaire et décisions de yield visant à maximiser les revenus sur les produits voyage — distinct du référentiel produits, du câblage de distribution et du cycle de vie des réservations.
+    in_scope:
+      - Prévision de la demande non contrainte et du rythme de pickup
+      - Gestion de la stratégie tarifaire (BAR, classe tarifaire, saison)
+      - Limites de réservation, restrictions de durée de séjour, surbooking et nesting
+      - Veille concurrentielle tarifaire et positionnement marché
+      - Mécanique des promotions et des remises
+      - Reporting des performances de revenus (RevPAR, RevPAX, ADR, yield)
+    out_of_scope:
+      - Définition du référentiel produits (BC-4000)
+      - Enchères propres aux canaux métamoteurs (BC-4010.40.20)
+      - Contractualisation des ventes groupes (BC-4110.10)
+  BC-4030.10:
+    name: Prévision de la demande voyage
+    description: |
+      Prévision de la demande non contrainte, du rythme de réservation, de la demande groupe et des comportements de no-show et d'annulation sur les produits voyage.
+  BC-4030.10.10:
+    name: Prévision de la demande non contrainte
+    description: |
+      Prévision de la demande en l'absence de contraintes de capacité et de prix.
+  BC-4030.10.20:
+    name: Prévision du rythme de réservation et du pickup
+    description: |
+      Prévision des courbes de rythme et de pickup par rapport aux historiques et aux données actuelles.
+  BC-4030.10.30:
+    name: Prévision de la demande groupe
+    description: |
+      Prévision de la demande groupe incluant les effets de déplacement sur l'inventaire individuel.
+  BC-4030.10.40:
+    name: Prévision des no-shows et des annulations
+    description: |
+      Prévision des comportements de no-show et d'annulation en tant qu'intrants aux contrôles de surbooking et d'inventaire.
+  BC-4030.20:
+    name: Gestion de la stratégie de tarification
+    description: |
+      Définition et ajustement de la stratégie tarifaire par niveaux BAR, classes tarifaires, fenêtres saisonnières et tarification des forfaits.
+  BC-4030.20.10:
+    name: Fixation du meilleur tarif disponible
+    description: |
+      Fixation des grilles de meilleur tarif disponible par date et segment.
+  BC-4030.20.20:
+    name: Stratégie de classes tarifaires et de compartiments
+    description: |
+      Stratégie pour les classes tarifaires et les compartiments d'inventaire, incluant les ouvertures, fermetures et reclassements.
+  BC-4030.20.30:
+    name: Tarification saisonnière et par type de jour
+    description: |
+      Variation tarifaire selon les saisons, les jours de la semaine et les fenêtres événementielles.
+  BC-4030.20.40:
+    name: Tarification des forfaits et des bundles
+    description: |
+      Tarification des produits forfaits et bundles incluant l'allocation par composant.
+  BC-4030.30:
+    name: Contrôles d'inventaire et de capacité
+    description: |
+      Contrôles d'inventaire incluant les limites de réservation, les restrictions de durée de séjour, la stratégie de surbooking et le nesting par prix d'acceptation.
+  BC-4030.30.10:
+    name: Fixation des limites de réservation et des niveaux d'autorisation
+    description: |
+      Fixation des limites de réservation et des niveaux d'autorisation par classe, canal et segment.
+  BC-4030.30.20:
+    name: Gestion des restrictions de durée de séjour
+    description: |
+      Gestion des restrictions de durée de séjour incluant les minimums, maximums et règles d'arrivée.
+  BC-4030.30.30:
+    name: Gestion de la stratégie de surbooking
+    description: |
+      Gestion stratégique des niveaux de surbooking par date et segment, calibrée par rapport aux coûts de refus.
+  BC-4030.30.40:
+    name: Gestion du nesting et des prix d'acceptation
+    description: |
+      Gestion du nesting d'inventaire et des seuils de prix d'acceptation dans les modèles d'optimisation des revenus.
+  BC-4030.40:
+    name: Veille concurrentielle tarifaire
+    description: |
+      Surveillance des tarifs concurrents, analyse des parts de marché et recommandations de positionnement tarifaire.
+  BC-4030.40.10:
+    name: Surveillance des tarifs concurrents
+    description: |
+      Surveillance régulière des tarifs concurrents sur les canaux et dates d'arrivée sélectionnés.
+  BC-4030.40.20:
+    name: Analyse des parts de marché et de pénétration
+    description: |
+      Analyse des parts de marché, de l'indice d'occupation et de l'indice tarifaire par rapport au groupe concurrentiel.
+  BC-4030.40.30:
+    name: Recommandations de positionnement tarifaire
+    description: |
+      Génération de recommandations de positionnement tarifaire par rapport au groupe concurrentiel et à l'état de la demande.
+  BC-4030.40.40:
+    name: Définition et maintenance du groupe concurrentiel
+    description: |
+      Définition et maintenance continue des groupes concurrentiels utilisés pour le benchmarking.
+  BC-4030.50:
+    name: Gestion des promotions et des remises
+    description: |
+      Définition et exploitation des promotions, codes de réduction, tarifs opaques et tarifs groupe fermé sur les produits voyage.
+  BC-4030.50.10:
+    name: Gestion du calendrier des promotions
+    description: |
+      Gestion du calendrier des promotions selon les saisons et les fenêtres clés de réservation.
+  BC-4030.50.20:
+    name: Règles d'éligibilité aux promotions
+    description: |
+      Règles d'éligibilité encadrant l'utilisation des promotions par segment, canal et fenêtre de séjour.
+  BC-4030.50.30:
+    name: Gestion des codes de réduction et des bons
+    description: |
+      Gestion des codes de réduction, bons et jetons de type carte cadeau à usage promotionnel.
+  BC-4030.50.40:
+    name: Tarification opaque et groupe fermé
+    description: |
+      Exploitation des mécanismes de tarification opaque et groupe fermé préservant la visibilité du tarif public.
+  BC-4030.60:
+    name: Analyse des performances de revenus
+    description: |
+      Reporting et analyse des performances de revenus incluant RevPAR, RevPAX, ADR, yield et écarts de prévision.
+  BC-4030.60.10:
+    name: Reporting des KPI de revenus
+    description: |
+      Reporting des principaux KPI de revenus par rapport au budget et à la période précédente.
+  BC-4030.60.20:
+    name: Analyse des écarts de yield
+    description: |
+      Analyse des écarts de yield attribuant les variations aux effets de mix, de tarif et d'occupation.
+  BC-4030.60.30:
+    name: Analyse de la contribution des revenus par canal
+    description: |
+      Analyse de la contribution des revenus par canal, segment et code tarif.
+  BC-4030.60.40:
+    name: Analyse des prévisions versus réalisé
+    description: |
+      Analyse des revenus prévisionnels versus réalisés avec attribution aux sources d'erreur de prévision.

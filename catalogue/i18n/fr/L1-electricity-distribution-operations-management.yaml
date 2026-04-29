@@ -1,0 +1,184 @@
+locale: fr
+source: L1-electricity-distribution-operations-management.yaml
+entries:
+  BC-3820:
+    name: Gestion des opérations de distribution électrique
+    description: |
+      Exploitation des réseaux de distribution moyenne et basse tension —
+      conduite en salle de commande, réponse aux défauts et rétablissement,
+      manœuvres, opérations des postes HTA et BT, et coordination des équipes
+      terrain assurant l'alimentation des clients finals.
+  BC-3820.10:
+    name: Opérations de conduite de la distribution
+    description: |
+      Conduite 24h/24 7j/7 du réseau de distribution en centre de conduite à
+      l'aide du DMS / OMS / ADMS, de la connaissance de situation et de
+      l'analyse de flux de charge.
+  BC-3820.10.10:
+    name: Opérations ADMS
+    description: |
+      Exploitation des systèmes avancés de gestion de la distribution pour la
+      surveillance et la commande.
+  BC-3820.10.20:
+    name: Opérations SCADA distribution
+    description: |
+      Acquisition SCADA en temps réel et commande des départs et interrupteurs
+      de distribution.
+  BC-3820.10.30:
+    name: Gestion de la topologie du réseau
+    description: |
+      Maintenance de la topologie du réseau en exploitation dans le système de
+      conduite.
+  BC-3820.20:
+    name: Opérations de manœuvres et de rétablissement
+    description: |
+      Reconfiguration du réseau et rétablissement de l'alimentation après des
+      coupures planifiées et non planifiées, incluant le self-healing piloté
+      par le FLISR.
+  BC-3820.20.10:
+    name: Exécution des programmes de manœuvres
+    description: |
+      Exécution autorisée des programmes de manœuvres de distribution.
+  BC-3820.20.20:
+    name: Localisation de défaut, isolation et rétablissement du service
+    description: |
+      Détection, isolation et rétablissement de l'alimentation fondés sur le
+      FLISR sur les départs en défaut.
+  BC-3820.20.30:
+    name: Coordination de l'alimentation de secours et du fonctionnement en îlot
+    description: |
+      Coordination de l'alimentation de secours par le départ aval et du
+      fonctionnement intentionnel en îlot pour le rétablissement.
+  BC-3820.30:
+    name: Opérations de réponse aux défauts
+    description: |
+      Réponse de bout en bout aux défauts du réseau de distribution, de la
+      détection à la réparation terrain et à la communication client.
+    in_scope:
+      - Détection et patrouille de défaut
+      - Affectation des équipes aux travaux sur défaut
+      - Notification des coupures aux clients
+    out_of_scope:
+      - Gestion des coupures liées aux RED (BC-3840)
+      - Coupures de production en gros (BC-3800.10)
+  BC-3820.30.10:
+    name: Triage des défauts
+    description: |
+      Triage des signalements de défaut provenant du terrain, des clients et
+      des sources de télémesure.
+  BC-3820.30.20:
+    name: Patrouille terrain des défauts
+    description: |
+      Patrouilles terrain pour localiser et confirmer les défauts sur les
+      actifs aériens et souterrains.
+  BC-3820.30.30:
+    name: Suivi du rétablissement des coupures
+    description: |
+      Suivi de l'avancement du rétablissement des coupures et des statistiques
+      de minutes clients perdues.
+  BC-3820.30.40:
+    name: Réponse aux événements majeurs
+    description: |
+      Réponse de distribution aux tempêtes et événements majeurs, incluant les
+      équipes de renfort mutuel.
+  BC-3820.40:
+    name: Opérations de déclenchement des équipes terrain
+    description: |
+      Déclenchement, routage et soutien à l'exécution terrain des équipes de
+      distribution gérant les défauts, travaux planifiés et interventions
+      clients.
+  BC-3820.40.10:
+    name: Planification des équipes
+    description: |
+      Planification quotidienne des roulements d'équipes et des rotations
+      d'astreinte.
+  BC-3820.40.20:
+    name: Déclenchement et routage des interventions
+    description: |
+      Déclenchement et routage des interventions vers les équipes terrain depuis
+      les systèmes de gestion des travaux.
+  BC-3820.40.30:
+    name: Clôture des interventions terrain
+    description: |
+      Saisie des modifications en tant que construit, des matériaux utilisés et
+      des temps à la clôture de l'intervention.
+  BC-3820.50:
+    name: Opérations d'inspection des actifs de distribution
+    description: |
+      Inspection routinière et conditionnelle des lignes aériennes, poteaux,
+      câbles souterrains et postes de distribution.
+  BC-3820.50.10:
+    name: Inspection des poteaux et des lignes aériennes
+    description: |
+      Inspection cyclique des poteaux et des lignes aériennes incluant les
+      relevés thermographiques.
+  BC-3820.50.20:
+    name: Inspection du réseau souterrain
+    description: |
+      Inspection et évaluation de l'état des départs souterrains, boîtes de
+      coupure et jonctions.
+  BC-3820.50.30:
+    name: Inspection des postes de distribution
+    description: |
+      Inspection routinière des postes HTA, BT et clients.
+  BC-3820.60:
+    name: Gestion de la végétation et des servitudes
+    description: |
+      Dégagement de végétation et entretien des servitudes sur les circuits de
+      distribution pour gérer le risque de coupure et respecter les dégagements
+      réglementaires.
+  BC-3820.60.10:
+    name: Planification des cycles de végétation
+    description: |
+      Planification cyclique et basée sur le risque des travaux de végétation
+      sur les circuits de distribution.
+  BC-3820.60.20:
+    name: Opérations terrain de végétation
+    description: |
+      Exécution terrain des travaux d'élagage, d'abattage et d'application
+      d'herbicide.
+  BC-3820.60.30:
+    name: Opérations de réduction du risque incendie
+    description: |
+      Opérations PSPS, déclenchement rapide et renforcement des circuits dans
+      les zones à risque d'incendie.
+  BC-3820.70:
+    name: Opérations de raccordement de nouveaux clients
+    description: |
+      Réalisation des raccordements électriques nouveaux et modifiés pour les
+      clients domestiques, commerciaux et industriels et les promoteurs.
+  BC-3820.70.10:
+    name: Évaluation des demandes de raccordement
+    description: |
+      Évaluation technique des demandes de nouveau raccordement et
+      disponibilité de la capacité.
+  BC-3820.70.20:
+    name: Conception du raccordement
+    description: |
+      Conception détaillée du raccordement, point de connexion et besoins de
+      renforcement.
+  BC-3820.70.30:
+    name: Mise en service du raccordement
+    description: |
+      Mise en service des nouveaux raccordements et réception de la mise sous
+      tension.
+  BC-3820.80:
+    name: Gestion de la qualité de l'alimentation
+    description: |
+      Surveillance et remédiation des niveaux de tension de distribution, du
+      flicker, des harmoniques et des réclamations clients liées à la qualité
+      de l'alimentation.
+  BC-3820.80.10:
+    name: Surveillance de la tension
+    description: |
+      Surveillance des profils de tension des départs par rapport aux limites
+      réglementaires.
+  BC-3820.80.20:
+    name: Surveillance des harmoniques et du flicker
+    description: |
+      Surveillance réseau de la distorsion harmonique et du flicker de tension.
+  BC-3820.80.30:
+    name: Investigation des problèmes de qualité d'alimentation clients
+    description: |
+      Investigation et remédiation des problèmes de qualité d'alimentation
+      signalés par les clients.

@@ -1,0 +1,143 @@
+locale: fr
+source: L1-guest-traveller-management.yaml
+entries:
+  BC-4040:
+    name: Gestion des clients et des voyageurs
+    description: |
+      Gestion du dossier unique client et voyageur à l'échelle de l'entreprise — identité, préférences, consentement, reconnaissance, segmentation et données de documents de voyage et de conformité — indépendamment d'un canal ou d'un établissement particulier.
+    in_scope:
+      - Profil unique et identité du client et du voyageur
+      - Préférences, régimes alimentaires et besoins d'accessibilité
+      - Consentement, autorisation marketing et droits des personnes concernées
+      - Signaux de reconnaissance et délivrance du statut de niveau
+      - Segmentation des clients et analyse de la valeur à vie
+      - Documents de voyage, APIS et données de criblage
+    out_of_scope:
+      - Moteurs d'accumulation et d'utilisation des points de fidélité (BC-4050)
+      - Exécution de l'enregistrement à la réception (BC-4060.10)
+      - Opérations CRM transversales génériques (BC-400)
+  BC-4040.10:
+    name: Gestion du profil et de l'identité du client
+    description: |
+      Création, déduplication et vérification de l'identité du profil unique client sur les systèmes de réservation et opérationnels.
+  BC-4040.10.10:
+    name: Création du profil client
+    description: |
+      Création des profils clients depuis tout canal ou point de contact d'origine.
+  BC-4040.10.20:
+    name: Déduplication des profils clients
+    description: |
+      Déduplication des profils clients par appariement déterministe et probabiliste.
+  BC-4040.10.30:
+    name: Vérification de l'identité du client
+    description: |
+      Vérification de l'identité du client pour les interactions à valeur élevée ou réglementées.
+  BC-4040.10.40:
+    name: Fusion et règles de survie des profils
+    description: |
+      Fusion des profils en doublon et résolution des règles de survie des attributs.
+  BC-4040.20:
+    name: Gestion des préférences et de la personnalisation
+    description: |
+      Saisie et gestion des préférences clients couvrant le séjour, l'alimentation et les besoins d'accessibilité, ainsi que les règles de personnalisation.
+  BC-4040.20.10:
+    name: Saisie des préférences de séjour
+    description: |
+      Saisie des préférences de séjour telles que le type de lit, l'étage et l'heure d'arrivée.
+  BC-4040.20.20:
+    name: Gestion des préférences alimentaires et des allergènes
+    description: |
+      Gestion des préférences alimentaires, religieuses et d'allergènes pour le service de restauration et le service en vol.
+  BC-4040.20.30:
+    name: Gestion des besoins d'accessibilité
+    description: |
+      Gestion des besoins d'accessibilité et d'assistance spéciale sur l'ensemble des points de contact voyage.
+  BC-4040.20.40:
+    name: Définition des règles de personnalisation
+    description: |
+      Définition des règles de personnalisation appliquant les préférences aux interactions de service et de merchandising.
+  BC-4040.30:
+    name: Gestion du consentement et de la confidentialité
+    description: |
+      Gestion du consentement, des autorisations marketing, des droits des personnes concernées et de la conformité aux transferts transfrontaliers sur les données voyage.
+  BC-4040.30.10:
+    name: Saisie et gestion du consentement
+    description: |
+      Saisie et gestion continue des enregistrements de consentement par finalité et par canal.
+  BC-4040.30.20:
+    name: Gestion des autorisations marketing
+    description: |
+      Gestion des autorisations marketing incluant les états d'opt-in et d'opt-out propres à chaque canal.
+  BC-4040.30.30:
+    name: Traitement des demandes des personnes concernées
+    description: |
+      Traitement des demandes d'accès, de portabilité, de rectification et d'effacement des personnes concernées.
+  BC-4040.30.40:
+    name: Conformité aux transferts transfrontaliers
+    description: |
+      Conformité aux exigences de transfert transfrontalier applicables aux données des voyageurs et clients.
+  BC-4040.40:
+    name: Délivrance de la reconnaissance et du statut de niveau
+    description: |
+      Délivrance des signaux de reconnaissance et du statut de niveau aux équipes opérationnelles pour une expérience cohérente sur l'ensemble des points de contact.
+    in_scope:
+      - Signal de reconnaissance avant l'arrivée et sur site
+      - Journalisation et clôture de la délivrance de la reconnaissance
+    out_of_scope:
+      - Conception du programme de fidélité et accumulation/utilisation (BC-4050)
+  BC-4040.40.10:
+    name: Signal de reconnaissance avant l'arrivée
+    description: |
+      Transmission des attentes de reconnaissance aux équipes opérationnelles avant l'arrivée du client.
+  BC-4040.40.20:
+    name: Délivrance de la reconnaissance sur site
+    description: |
+      Délivrance de la reconnaissance par la réception, la restauration et les équipes de conciergerie pendant le séjour.
+  BC-4040.40.30:
+    name: Journalisation des services de reconnaissance
+    description: |
+      Journalisation des événements de délivrance de reconnaissance pour l'audit du service et les boucles de retour d'information.
+  BC-4040.40.40:
+    name: Reporting de clôture des reconnaissances
+    description: |
+      Reporting des taux de clôture des reconnaissances par rapport aux signaux de pré-arrivée.
+  BC-4040.50:
+    name: Gestion de la segmentation et des analyses clients
+    description: |
+      Définition des segments clients, modélisation de la valeur à vie et de l'attrition, et production d'analyses par cohorte et comportementales.
+  BC-4040.50.10:
+    name: Définition des segments clients
+    description: |
+      Définition et maintenance des segments clients utilisés pour le marketing et le merchandising.
+  BC-4040.50.20:
+    name: Modélisation de la valeur à vie
+    description: |
+      Modélisation de la valeur à vie du client en tant qu'intrant aux décisions d'investissement et de reconnaissance.
+  BC-4040.50.30:
+    name: Analyse de l'attrition et de la rétention
+    description: |
+      Analyse des facteurs d'attrition et des opportunités de rétention par segment.
+  BC-4040.50.40:
+    name: Analyse par cohorte et comportementale
+    description: |
+      Production d'analyses par cohorte et comportementales à partir des événements de réservation, de séjour et d'engagement.
+  BC-4040.60:
+    name: Gestion des documents de voyage et des données de conformité
+    description: |
+      Gestion des documents de voyage, des données APIS, de visa et de criblage nécessaires au respect des obligations de transport et de contrôle aux frontières.
+  BC-4040.60.10:
+    name: Saisie des documents de voyage
+    description: |
+      Saisie des données de passeport, pièce d'identité et visa pour les vérifications d'éligibilité et de documents.
+  BC-4040.60.20:
+    name: Transmission des informations préalables sur les passagers (APIS)
+    description: |
+      Transmission des informations APIS et informations préalables sur les passagers aux autorités de contrôle aux frontières.
+  BC-4040.60.30:
+    name: Référence d'éligibilité visa et ESTA
+    description: |
+      Vérifications de référence par rapport aux régimes d'éligibilité visa, ESTA et équivalents.
+  BC-4040.60.40:
+    name: Criblage Secure Flight et listes d'interdiction de vol
+    description: |
+      Criblage des voyageurs selon Secure Flight et les programmes équivalents d'interdiction de vol et de surveillance.
