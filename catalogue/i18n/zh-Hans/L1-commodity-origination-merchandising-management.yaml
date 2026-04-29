@@ -1,0 +1,128 @@
+locale: zh-Hans
+source: L1-commodity-origination-merchandising-management.yaml
+entries:
+  BC-3570:
+    name: 大宗商品采购与经营管理
+    description: |
+      种植者采购计划、大宗商品合同、地磅与取样、实物库存头寸、现货与基差交易、套期保值，以及谷物、油料、软商品、牲畜和乳制品大宗商品的结算。
+  BC-3570.10:
+    name: 采购计划管理
+    description: |
+      种植者合同签订、生产商关系管理及为供应账簿提供支撑的采购预测。
+  BC-3570.10.10:
+    name: 种植者合同计划
+    description: |
+      按区域设计和执行种植者合同计划。
+  BC-3570.10.20:
+    name: 生产商关系管理
+    description: |
+      区别于通用CRM的生产商关系管理。
+  BC-3570.10.30:
+    name: 采购预测
+    description: |
+      按区域和作物预测预期采购量。
+  BC-3570.20:
+    name: 大宗商品合同管理
+    description: |
+      远期、生产和延迟定价大宗商品合同的签发与执行跟踪。
+    in_scope:
+      - 与种植者和交易对手的远期合同
+      - 带质量规格的生产合同
+      - 合同执行跟踪
+    out_of_scope:
+      - 通用法律合同管理（BC-150）
+  BC-3570.20.10:
+    name: 远期合同签发
+    description: |
+      签发固定价格和基差远期合同。
+  BC-3570.20.20:
+    name: 生产合同管理
+    description: |
+      管理带质量和交货规格的生产合同。
+  BC-3570.20.30:
+    name: 合同执行跟踪
+    description: |
+      跟踪已交货吨数对应合同的执行情况。
+  BC-3570.30:
+    name: 到货地磅与取样
+    description: |
+      收货时的地磅作业、质量取样与分级，以及收货结算计算。
+  BC-3570.30.10:
+    name: 地磅作业
+    description: |
+      到货和出货地磅作业与称重单据。
+  BC-3570.30.20:
+    name: 质量取样与分级
+    description: |
+      依据贸易规格开展收货取样和分级。
+  BC-3570.30.30:
+    name: 收货结算计算
+    description: |
+      收货时计算等级折扣和溢价。
+  BC-3570.40:
+    name: 大宗商品库存头寸管理
+    description: |
+      跟踪实物大宗商品头寸、混拼决策及全网在途头寸。
+  BC-3570.40.10:
+    name: 实物头寸跟踪
+    description: |
+      按场地和等级跟踪多头和空头实物头寸。
+  BC-3570.40.20:
+    name: 品质混拼决策
+    description: |
+      满足合同质量规格的混拼决策。
+  BC-3570.40.30:
+    name: 在途头寸跟踪
+    description: |
+      跟踪船舶、铁路和卡车在途头寸。
+  BC-3570.50:
+    name: 大宗商品交易运营
+    description: |
+      实物大宗商品账簿上的现货和基差交易、即期销售执行及跨商品价差管理。
+  BC-3570.50.10:
+    name: 现货与基差交易
+    description: |
+      实物大宗商品的现货和基差头寸交易。
+  BC-3570.50.20:
+    name: 即期销售执行
+    description: |
+      向加工商和出口商执行即期销售。
+  BC-3570.50.30:
+    name: 跨商品价差管理
+    description: |
+      管理大豆压榨和裂解等跨商品价差。
+  BC-3570.60:
+    name: 套期保值与风险头寸管理
+    description: |
+      针对实物大宗商品头寸执行和对账期货与期权套期保值。
+  BC-3570.60.10:
+    name: 期货套期保值执行
+    description: |
+      在监管交易所执行期货套期保值。
+  BC-3570.60.20:
+    name: 期权套期保值执行
+    description: |
+      执行期权套期保值以管理价格尾部风险。
+  BC-3570.60.30:
+    name: 套保头寸对账
+    description: |
+      将套保头寸与底层实物敞口进行对账。
+  BC-3570.70:
+    name: 大宗商品结算与定价
+    description: |
+      最终定价、向交易对手签发结算单及质量索赔解决。
+  BC-3570.70.10:
+    name: 最终定价与折扣计算
+    description: |
+      含等级折扣和溢价应用的最终定价。
+  BC-3570.70.20:
+    name: 结算单签发
+    description: |
+      向种植者和交易对手签发结算单。
+  BC-3570.70.30:
+    name: 质量索赔解决
+    description: |
+      与种植者、买方及仲裁机构解决质量索赔。
+metadata:
+  translator: Claude (zh-Hans automated)
+  generated: 2026-04-29

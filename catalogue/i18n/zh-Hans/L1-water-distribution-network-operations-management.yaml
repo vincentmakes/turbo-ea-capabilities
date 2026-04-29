@@ -1,0 +1,133 @@
+locale: zh-Hans
+source: L1-water-distribution-network-operations-management.yaml
+entries:
+  BC-3880:
+    name: 供水管网运营管理
+    description: |
+      运营向客户输送净水的干管和配水管网，涵盖水力和水压管理、漏损控制、管网水质保障、管道修复与更新，以及客户接入服务。
+  BC-3880.10:
+    name: 配水管网控制
+    description: |
+      利用遥测、水力模型和SCADA，对供水管网进行全天候控制中心运营。
+  BC-3880.10.10:
+    name: 配水SCADA运营
+    description: |
+      对管网中的泵送和水压设施进行实时监控。
+  BC-3880.10.20:
+    name: 水力模型运营
+    description: |
+      运行在线和离线水力模型，支持管网决策。
+  BC-3880.10.30:
+    name: 管网遥测监测
+    description: |
+      监测计量分区、阀门和测压点的遥测数据。
+  BC-3880.20:
+    name: 干管与泵站运营
+    description: |
+      运营干管、泵站和区间调配，包括增压泵送和水锤防护管理。
+  BC-3880.20.10:
+    name: 泵站运营
+    description: |
+      运营并优化配水泵站的能耗。
+  BC-3880.20.20:
+    name: 干管运营
+    description: |
+      对输水干管进行运营、阀门操作和水锤管理。
+  BC-3880.20.30:
+    name: 区间调配运营
+    description: |
+      运营资源分区之间的区间调配和大宗供水联络线。
+  BC-3880.30:
+    name: 漏损管理
+    description: |
+      通过计量分区流量分析、声学检漏和现场查漏，对供水管网进行主动和被动漏损控制。
+    in_scope:
+      - 计量分区流量和最小夜间流量分析
+      - 声学检漏巡检
+      - 查找并修复漏点
+    out_of_scope:
+      - 管道更新资本改造项目（BC-3900.50）
+      - 客户侧供水管漏损（BC-3910.60）
+  BC-3880.30.10:
+    name: 计量分区分析
+    description: |
+      分析计量分区流量和最小夜间流量数据，定位漏损区域。
+  BC-3880.30.20:
+    name: 声学检漏
+    description: |
+      通过声学探听、相关和噪声记录器巡检定位漏点。
+  BC-3880.30.30:
+    name: 漏点查修运营
+    description: |
+      按修复时限目标，对已发现漏点开展现场查找和修复作业。
+  BC-3880.30.40:
+    name: 漏损绩效报告
+    description: |
+      按监管要求和IWA水量平衡指标报告漏损绩效。
+  BC-3880.40:
+    name: 水压管理
+    description: |
+      优化各压力管理分区的配水压力，降低漏损和爆管率。
+  BC-3880.40.10:
+    name: 压力分区配置
+    description: |
+      配置压力管理区域和减压阀设定值。
+  BC-3880.40.20:
+    name: 高级水压控制
+    description: |
+      运营远程控制和时间调制减压阀。
+  BC-3880.40.30:
+    name: 暂态水压管理
+    description: |
+      分析水锤并对配水管网的瞬态压力进行抑制。
+  BC-3880.50:
+    name: 管网水质运营
+    description: |
+      开展管网内水质监测——余氯、水色异常、味觉和嗅觉——以及整治运营。
+  BC-3880.50.10:
+    name: 管网余氯监测
+    description: |
+      监测管网余氯并进行补氯投加。
+  BC-3880.50.20:
+    name: 浑水与沉积物控制
+    description: |
+      通过冲洗和冰猪清管作业处理浑水投诉。
+  BC-3880.50.30:
+    name: 管网采样运营
+    description: |
+      在客户水龙头和供水点开展法定采样。
+  BC-3880.60:
+    name: 管道修复与更新运营
+    description: |
+      对爆管和接头失效进行抢修，并实施配水管道更新改造项目。
+  BC-3880.60.10:
+    name: 爆管应急响应
+    description: |
+      按客户停水分钟数目标，对爆管进行响应、隔离和修复。
+  BC-3880.60.20:
+    name: 接户管修复运营
+    description: |
+      修复干管与止水阀之间的接户管和供水管。
+  BC-3880.60.30:
+    name: 管道更新现场运营
+    description: |
+      现场执行管道更新和修复改造项目，包括非开挖施工方法。
+  BC-3880.70:
+    name: 新供水接入运营
+    description: |
+      为家庭、商业和开发商客户提供新供水接入服务。
+  BC-3880.70.10:
+    name: 新接入申请评估
+    description: |
+      对新供水接入申请和开发商服务供给进行技术评估。
+  BC-3880.70.20:
+    name: 接入安装运营
+    description: |
+      安装接户管、鞍形接头和客户水表。
+  BC-3880.70.30:
+    name: 接入调试
+    description: |
+      在投入使用前对新接入进行调试、冲洗和消毒。
+metadata:
+  translator: Claude (zh-Hans automated)
+  generated: 2026-04-29
