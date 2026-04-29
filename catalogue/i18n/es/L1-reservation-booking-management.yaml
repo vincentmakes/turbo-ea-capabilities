@@ -1,0 +1,242 @@
+locale: es
+source: L1-reservation-booking-management.yaml
+entries:
+  BC-4020:
+    name: Gestión de reservas
+    description: |
+      Ciclo de vida de la reserva, el PNR y el folio hotelero — captura, modificación,
+      cancelación, bloques grupales, confirmaciones, pagos y reubicación por
+      interrupciones — con independencia del canal que originó la reserva.
+    in_scope:
+      - Captura de reservas para itinerarios individuales, multipasajero y multicomponente
+      - Cambios de reserva, cancelaciones y elegibilidad de reembolso
+      - Bloques grupales, listas de habitaciones, fecha límite y seguimiento de ocupación
+      - Emisión de confirmaciones, comprobantes y billetes electrónicos
+      - Pago a nivel de reserva y liquidación BSP/ARC
+      - Reubicación por cambios de horario e IROPS
+    out_of_scope:
+      - Gestión de canal y paridad (BC-4010)
+      - Motores de precios y decisiones de rendimiento (BC-4030)
+      - Decisiones operativas de interrupción sobre aeronaves y tripulación (BC-4080.60)
+
+  BC-4020.10:
+    name: Captura de reservas
+    description: |
+      Captura de reservas para itinerarios simples y complejos provenientes de
+      cualquier canal o agente originador.
+
+  BC-4020.10.10:
+    name: Captura de reserva de itinerario simple
+    description: |
+      Captura de reservas de itinerario simple, como una estancia en un establecimiento
+      o una reserva de un vuelo.
+
+  BC-4020.10.20:
+    name: Captura de reserva multipasajero
+    description: |
+      Captura de reservas multipasajero o multihuésped que comparten segmentos de
+      itinerario comunes.
+
+  BC-4020.10.30:
+    name: Captura de reserva multicomponente
+    description: |
+      Captura de reservas multicomponente que combinan vuelos, hoteles, servicios
+      adicionales y servicios en destino.
+
+  BC-4020.10.40:
+    name: Captura de reservas de agencia de viajes
+    description: |
+      Captura de reservas realizadas por agentes de viajes minoristas y corporativos
+      en nombre de los viajeros.
+
+  BC-4020.20:
+    name: Modificación y cancelación de reservas
+    description: |
+      Modificación y cancelación voluntaria de reservas, incluyendo tasas de cambio,
+      elegibilidad de reembolso y operaciones de reemisión.
+
+  BC-4020.20.10:
+    name: Gestión de cambios de reserva
+    description: |
+      Gestión de cambios voluntarios de reserva que cubren fechas, productos y datos
+      del viajero.
+
+  BC-4020.20.20:
+    name: Gestión de cancelaciones de reserva
+    description: |
+      Gestión de cancelaciones voluntarias y liberación del inventario de vuelta al
+      grupo.
+
+  BC-4020.20.30:
+    name: Elegibilidad y cálculo del reembolso
+    description: |
+      Determinación de la elegibilidad del reembolso y cálculo de los importes
+      reembolsables, incluyendo penalizaciones.
+
+  BC-4020.20.40:
+    name: Operaciones de reemisión voluntaria
+    description: |
+      Operación de la reemisión voluntaria, incluyendo la recaudación de la diferencia
+      de tarifa y la reemisión de documentos.
+
+  BC-4020.30:
+    name: Gestión de bloques grupales
+    description: |
+      Gestión de bloques grupales sobre inventario contratado — creación de bloque,
+      listas de habitaciones, fecha límite y seguimiento de ocupación.
+    in_scope:
+      - Ciclo de vida del bloque grupal desde el contrato hasta el lavado y la ocupación final
+      - Captura y actualización de la lista de habitaciones
+    out_of_scope:
+      - Contratación de ventas grupales (BC-4110.10)
+      - Ejecución de órdenes de eventos de banquete (BC-4110.30)
+
+  BC-4020.30.10:
+    name: Creación de bloque grupal
+    description: |
+      Creación de bloques grupales que reflejan el inventario contratado y los
+      compromisos de tarifa.
+
+  BC-4020.30.20:
+    name: Gestión de la lista de habitaciones
+    description: |
+      Gestión de listas de habitaciones que asocian a viajeros individuales con el
+      inventario del bloque.
+
+  BC-4020.30.30:
+    name: Gestión de la fecha límite del grupo
+    description: |
+      Gestión de las fechas límite del grupo y la liberación del inventario de bloque
+      no utilizado para la venta general.
+
+  BC-4020.30.40:
+    name: Seguimiento de la ocupación del grupo
+    description: |
+      Seguimiento de la ocupación del grupo frente al contrato para el reconocimiento
+      de ingresos y la previsión.
+
+  BC-4020.40:
+    name: Confirmación y documentación de la reserva
+    description: |
+      Emisión de confirmaciones de reserva, comprobantes, billetes electrónicos y
+      documentos de itinerario a viajeros y agentes.
+
+  BC-4020.40.10:
+    name: Generación de confirmación de reserva
+    description: |
+      Generación y envío de confirmaciones de reserva a través de los canales de
+      notificación disponibles.
+
+  BC-4020.40.20:
+    name: Emisión de comprobantes y documentos
+    description: |
+      Emisión de comprobantes y documentos de servicio para componentes de hotel,
+      tour y actividades.
+
+  BC-4020.40.30:
+    name: Emisión y reemisión de billetes electrónicos
+    description: |
+      Emisión y reemisión de billetes electrónicos de aerolínea, incluyendo
+      actualizaciones del estado del cupón.
+
+  BC-4020.40.40:
+    name: Distribución del itinerario de reserva
+    description: |
+      Distribución de documentos de itinerario a viajeros, agentes de viajes y
+      sistemas integrados de gestión del viajero.
+
+  BC-4020.50:
+    name: Gestión de reservas provisionales y lista de espera
+    description: |
+      Gestión de reservas provisionales, listas de espera y conversiones cuando la
+      disponibilidad en tiempo real es limitada o las condiciones requieren un plazo
+      de pago.
+
+  BC-4020.50.10:
+    name: Gestión de reservas provisionales
+    description: |
+      Gestión de reservas provisionales con ventanas de plazo de pago controladas.
+
+  BC-4020.50.20:
+    name: Captura y priorización de la lista de espera
+    description: |
+      Captura de solicitudes en lista de espera y reglas de priorización para cuando
+      se libere inventario.
+
+  BC-4020.50.30:
+    name: Operaciones de conversión de lista de espera
+    description: |
+      Operaciones para convertir solicitudes en lista de espera en reservas confirmadas
+      cuando se libera inventario.
+
+  BC-4020.50.40:
+    name: Gestión de la expiración de la reserva provisional
+    description: |
+      Gestión de las expiraciones de la reserva provisional y liberación automática
+      del inventario retenido.
+
+  BC-4020.60:
+    name: Pago y liquidación de reservas
+    description: |
+      Pago a nivel de reserva, depósito, captura de cargos y liquidación con socios,
+      incluyendo BSP y ARC.
+
+  BC-4020.60.10:
+    name: Depósito de reserva y preautorización
+    description: |
+      Captura de depósitos de reserva y preautorizaciones de tarjeta conforme a las
+      políticas de depósito y garantía.
+
+  BC-4020.60.20:
+    name: Captura de cargos de reserva
+    description: |
+      Captura de cargos contra los instrumentos de pago de la reserva en los puntos
+      de elegibilidad.
+
+  BC-4020.60.30:
+    name: Operaciones de liquidación BSP y ARC
+    description: |
+      Operaciones para liquidar reservas emitidas por agentes a través de BSP, ARC
+      y planes de liquidación equivalentes.
+
+  BC-4020.60.40:
+    name: Cálculo y pago de comisiones
+    description: |
+      Cálculo y pago de comisiones a agentes de viajes y socios de distribución.
+
+  BC-4020.70:
+    name: Operaciones de interrupción y reubicación de reservas
+    description: |
+      Reubicación de reservas afectadas por cambios de horario, cancelaciones y
+      perturbaciones masivas, incluyendo comunicaciones y elegibilidad de compensación.
+    in_scope:
+      - Reubicación por cambio de horario
+      - Reubicación por interrupción masiva (IROPS, meteorología, fuerza mayor)
+      - Elegibilidad de compensación conforme a las reglas del operador y del consumidor
+    out_of_scope:
+      - Decisiones operativas sobre aeronaves, tripulación y despacho (BC-4080.60)
+      - Recuperación del itinerario en el lado del tour (BC-4100.60)
+
+  BC-4020.70.10:
+    name: Reubicación por cambio de horario
+    description: |
+      Reubicación de reservas afectadas por cambios de horario publicados, incluyendo
+      las opciones ofrecidas a los viajeros.
+
+  BC-4020.70.20:
+    name: Reubicación por interrupción masiva
+    description: |
+      Reubicación de grandes volúmenes de reservas durante eventos meteorológicos,
+      IROPS o de fuerza mayor.
+
+  BC-4020.70.30:
+    name: Determinación de la elegibilidad de compensación
+    description: |
+      Determinación de la elegibilidad de compensación conforme a la política del
+      operador y la normativa aplicable de derechos de los pasajeros.
+
+  BC-4020.70.40:
+    name: Comunicaciones de reubicación
+    description: |
+      Comunicaciones salientes a viajeros y agentes afectados durante los eventos
+      de reubicación.

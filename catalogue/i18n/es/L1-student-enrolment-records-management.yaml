@@ -1,0 +1,154 @@
+locale: es
+source: L1-student-enrolment-records-management.yaml
+entries:
+  BC-4720:
+    name: Gestión de matrícula y expedientes de estudiantes
+    description: |
+      Administración del ciclo de vida activo del estudiante desde la matrícula y el
+      registro hasta los expedientes académicos, certificados, transferencia de créditos
+      y graduación, así como la gestión de los registros de identificación del estudiante.
+  BC-4720.10:
+    name: Matrícula y registro
+    description: |
+      Matrícula y registro de cursos por período académico para los estudiantes admitidos,
+      incluyendo ajustes de horario y continuación entre períodos.
+    in_scope:
+      - Registro de cursos
+      - Altas/bajas y ajustes de horario
+      - Renovación de matrícula y continuación
+    out_of_scope:
+      - Decisiones iniciales de admisión (cubiertas en Gestión de captación de estudiantes y admisiones)
+  BC-4720.10.10:
+    name: Registro de cursos
+    description: |
+      Registro de estudiantes en cursos, secciones y unidades de aprendizaje.
+  BC-4720.10.20:
+    name: Altas/bajas y ajustes de horario
+    description: |
+      Tramitación de altas/bajas y ajustes de horario dentro de los plazos publicados.
+  BC-4720.10.30:
+    name: Renovación de matrícula y continuación
+    description: |
+      Renovación de matrícula y continuación entre períodos y cursos académicos.
+  BC-4720.20:
+    name: Gestión del expediente académico
+    description: |
+      Mantenimiento de los expedientes académicos oficiales del estudiante, incluyendo
+      calificaciones, certificados de notas y determinaciones de situación académica.
+    in_scope:
+      - Registro de calificaciones y notas
+      - Producción de certificados de notas
+      - Determinación de la situación académica
+    out_of_scope:
+      - Flujo de trabajo de corrección en sí (cubierto en Gestión de evaluación y exámenes)
+  BC-4720.20.10:
+    name: Registro de calificaciones y notas
+    description: |
+      Registro oficial de calificaciones y notas en los expedientes de los estudiantes.
+  BC-4720.20.20:
+    name: Producción de certificados de notas
+    description: |
+      Producción y emisión de certificados de notas oficiales y no oficiales.
+  BC-4720.20.30:
+    name: Determinación de la situación académica
+    description: |
+      Determinación de la situación académica, menciones de honor, condición
+      probatoria y expulsión.
+  BC-4720.30:
+    name: Registros de horarios y calendarios de cursos
+    description: |
+      Registros oficiales de los horarios de las secciones de cursos, asignación de
+      aulas y decisiones de resolución de conflictos utilizados por el proceso de matrícula.
+    in_scope:
+      - Registros de horarios por sección y cohorte
+      - Registros de asignación de aulas e instalaciones
+      - Registros de resolución de conflictos de horario
+    out_of_scope:
+      - Impartición diaria en el aula (cubierta en Gestión de operaciones de enseñanza y aprendizaje)
+  BC-4720.30.10:
+    name: Registros de horarios por sección y cohorte
+    description: |
+      Registros oficiales de horarios por sección y cohorte.
+  BC-4720.30.20:
+    name: Registros de asignación de aulas e instalaciones
+    description: |
+      Registros de la asignación de aulas docentes e instalaciones a las sesiones programadas.
+  BC-4720.30.30:
+    name: Registros de resolución de conflictos de horario
+    description: |
+      Registros de los conflictos de horario identificados y resueltos.
+  BC-4720.40:
+    name: Transferencia y reconocimiento de créditos
+    description: |
+      Evaluación y registro de los créditos transferidos de otras instituciones,
+      reconocimiento de aprendizajes previos y aplicación de acuerdos de articulación.
+    in_scope:
+      - Evaluación de créditos transferidos
+      - Reconocimiento de aprendizaje previo (RAP)
+      - Aplicación de acuerdos de articulación
+    out_of_scope:
+      - Evaluación de credenciales internacionales en la admisión (cubierta en Gestión de captación de estudiantes y admisiones)
+  BC-4720.40.10:
+    name: Evaluación de créditos transferidos
+    description: |
+      Evaluación de los créditos obtenidos en otras instituciones frente a los
+      programas de origen.
+  BC-4720.40.20:
+    name: Reconocimiento de aprendizaje previo
+    description: |
+      Reconocimiento del aprendizaje experiencial e informal previo para la
+      obtención de créditos.
+  BC-4720.40.30:
+    name: Aplicación de acuerdos de articulación
+    description: |
+      Aplicación de los acuerdos de articulación interinstitucionales a los
+      expedientes de los estudiantes.
+  BC-4720.50:
+    name: Graduación y expedición de credenciales
+    description: |
+      Auditoría de elegibilidad para la graduación, conferición de títulos y emisión
+      de credenciales verificables, diplomas y certificados.
+    in_scope:
+      - Auditoría de elegibilidad para la graduación
+      - Conferición del título
+      - Emisión de credenciales y verificación posterior
+    out_of_scope:
+      - Tramitación de resultados de exámenes (cubierta en Gestión de evaluación y exámenes)
+  BC-4720.50.10:
+    name: Auditoría de elegibilidad para la graduación
+    description: |
+      Auditoría de los expedientes de los estudiantes frente a los requisitos de graduación.
+  BC-4720.50.20:
+    name: Conferición del título
+    description: |
+      Conferición formal de títulos y cualificaciones.
+  BC-4720.50.30:
+    name: Emisión y verificación de credenciales
+    description: |
+      Emisión y verificación de credenciales en papel y digitales, incluyendo
+      credenciales verificables.
+  BC-4720.60:
+    name: Registros de identificación y ciclo de vida del estudiante
+    description: |
+      Mantenimiento de los identificadores de los estudiantes, indicadores de estado
+      de matrícula y registros de baja y permiso que anclan las acciones administrativas posteriores.
+    in_scope:
+      - Gestión del ciclo de vida del identificador del estudiante
+      - Mantenimiento del estado de matrícula
+      - Registros de baja y excedencia
+    out_of_scope:
+      - Autenticación de identidad y acceso (cubierta en Gestión de ciberseguridad transversal)
+  BC-4720.60.10:
+    name: Ciclo de vida de la identidad del estudiante
+    description: |
+      Ciclo de vida de los identificadores únicos del estudiante desde la emisión
+      hasta el cierre.
+  BC-4720.60.20:
+    name: Mantenimiento del estado de matrícula
+    description: |
+      Mantenimiento de los indicadores oficiales del estado de matrícula (activo,
+      en excedencia, baja).
+  BC-4720.60.30:
+    name: Registros de baja y excedencia
+    description: |
+      Registros de bajas, excedencias y readmisiones de estudiantes.

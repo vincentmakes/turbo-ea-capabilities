@@ -1,0 +1,189 @@
+locale: es
+source: L1-mineral-resource-reserve-management.yaml
+entries:
+  BC-4410:
+    name: Gestión de recursos y reservas minerales
+    description: |
+      Modelado geológico, estimación geoestadística, clasificación, gobernanza
+      de personas competentes e información pública de recursos minerales y
+      reservas de mineral bajo códigos alineados con CRIRSCO.
+
+  BC-4410.10:
+    name: Modelado geológico
+    description: |
+      Construcción de modelos geológicos tridimensionales de litología,
+      estructura, alteración y dominios de mineralización como insumo para la
+      estimación de recursos.
+    in_scope:
+      - Modelado litológico y estratigráfico
+      - Modelado estructural y de fallas
+      - Generación de wireframes de dominios de mineralización
+    out_of_scope:
+      - Wireframes de diseño de pit y stope (BC-4420.40)
+
+  BC-4410.10.10:
+    name: Modelado litológico
+    description: |
+      Modelado tridimensional de unidades litológicas y estratigráficas a partir
+      del registro de sondajes.
+
+  BC-4410.10.20:
+    name: Modelado estructural
+    description: |
+      Modelado de fallas, pliegues y zonas de cizalla que controlan la geometría
+      de la mineralización.
+
+  BC-4410.10.30:
+    name: Modelado de dominios de mineralización
+    description: |
+      Generación de wireframes de envolventes de mineralización y dominios de
+      ley usados como límites de estimación.
+
+  BC-4410.10.40:
+    name: Flujos de trabajo de modelado implícito
+    description: |
+      Flujos de trabajo de modelado geológico implícito y de actualización rápida
+      para el refinamiento iterativo de modelos.
+
+  BC-4410.20:
+    name: Estimación de recursos
+    description: |
+      Estimación geoestadística de ley y tonelaje en modelos de bloques y
+      clasificación del material estimado como Inferido, Indicado o Medido bajo
+      los códigos de información pública.
+
+  BC-4410.20.10:
+    name: Estimación geoestadística
+    description: |
+      Variografía y estimación por kriging o simulación de leyes en modelos de
+      bloques.
+
+  BC-4410.20.20:
+    name: Construcción de modelos de bloques
+    description: |
+      Construcción y población de modelos de bloques regularizados para la
+      planificación posterior.
+
+  BC-4410.20.30:
+    name: Validación de estimaciones
+    description: |
+      Validación estadística y visual de las leyes estimadas frente a los datos
+      compuestos.
+
+  BC-4410.20.40:
+    name: Clasificación de recursos
+    description: |
+      Clasificación de la mineralización estimada en las categorías Inferido,
+      Indicado y Medido.
+
+  BC-4410.30:
+    name: Estimación de reservas
+    description: |
+      Aplicación de factores modificadores de minería, metalurgia, economía y
+      otros para convertir Recursos Indicados y Medidos en Reservas de Mineral
+      Probables y Probadas.
+
+  BC-4410.30.10:
+    name: Aplicación de factores modificadores
+    description: |
+      Aplicación de factores modificadores de minería, metalurgia, infraestructura
+      y economía a los recursos.
+
+  BC-4410.30.20:
+    name: Determinación de la ley de corte
+    description: |
+      Cálculo de leyes de corte que sustentan la definición de reservas bajo
+      precios y costos supuestos.
+
+  BC-4410.30.30:
+    name: Modelado de recuperación y dilución minera
+    description: |
+      Modelado de recuperación minera, dilución y efectos de borde aplicados a
+      los recursos in situ.
+
+  BC-4410.30.40:
+    name: Clasificación de reservas de mineral
+    description: |
+      Clasificación de las reservas de mineral en las categorías Probable y
+      Probada.
+
+  BC-4410.40:
+    name: Gobernanza de personas competentes
+    description: |
+      Gobernanza de las personas competentes y calificadas que asumen
+      responsabilidad por las declaraciones de recursos y reservas bajo los
+      códigos de información pública.
+
+  BC-4410.40.10:
+    name: Firma de persona competente
+    description: |
+      Revisión y firma de declaraciones de recursos y reservas por una persona
+      competente o calificada.
+
+  BC-4410.40.20:
+    name: Revisión interna de recursos
+    description: |
+      Revisión interna por pares y por comité técnico de las estimaciones de
+      recursos y reservas.
+
+  BC-4410.40.30:
+    name: Coordinación de auditorías externas de recursos
+    description: |
+      Coordinación de auditorías independientes de recursos y reservas por
+      terceros.
+
+  BC-4410.50:
+    name: Información pública de recursos y reservas
+    description: |
+      Preparación y divulgación de declaraciones públicas de recursos minerales
+      y reservas de mineral requeridas por reguladores de valores y reglas de
+      cotización.
+
+  BC-4410.50.10:
+    name: Preparación de declaración de recursos
+    description: |
+      Preparación de declaraciones públicas de recursos minerales alineadas con
+      los códigos de la familia CRIRSCO.
+
+  BC-4410.50.20:
+    name: Preparación de declaración de reservas
+    description: |
+      Preparación de declaraciones públicas de reservas de mineral alineadas con
+      los códigos de la familia CRIRSCO.
+
+  BC-4410.50.30:
+    name: Actualización anual de la declaración de reservas
+    description: |
+      Actualización anual de las declaraciones de recursos y reservas que refleja
+      el agotamiento y las nuevas estimaciones.
+
+  BC-4410.50.40:
+    name: Coordinación de informes técnicos independientes
+    description: |
+      Coordinación de informes técnicos de personas calificadas para mercados de
+      capitales, transacciones y eventos de divulgación.
+
+  BC-4410.60:
+    name: Reconciliación de recursos
+    description: |
+      Reconciliación de recursos y reservas estimados frente al control de leyes,
+      la alimentación de planta y la producción de metal para informar el
+      desempeño del modelo.
+
+  BC-4410.60.10:
+    name: Reconciliación mina-planta
+    description: |
+      Reconciliación de toneladas y leyes minadas frente a la alimentación de
+      planta y el metal recuperado.
+
+  BC-4410.60.20:
+    name: Seguimiento del agotamiento de recursos
+    description: |
+      Seguimiento del agotamiento de recursos y reservas resultante de la
+      actividad minera.
+
+  BC-4410.60.30:
+    name: Análisis del desempeño del modelo
+    description: |
+      Análisis del desempeño del modelo de recursos frente a los valores reales
+      para informar estimaciones futuras.

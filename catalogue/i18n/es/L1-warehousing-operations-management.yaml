@@ -1,0 +1,144 @@
+locale: es
+source: L1-warehousing-operations-management.yaml
+entries:
+  BC-2460:
+    name: Gestión de operaciones de almacén
+    description: |
+      Operación de almacenes de terceros y centros de distribución, incluidas las
+      operaciones de entrada, almacenamiento, salida, servicios de valor añadido
+      y logística inversa.
+  BC-2460.10:
+    name: Gestión de operaciones de entrada
+    description: |
+      Recepción, inspección y ubicación de las mercancías que entran en el
+      almacén.
+    in_scope:
+      - Gestión de avisos previos de expedición (ASN) y preaviso de recepción
+      - Inspección de entrada de mercancías y ubicación
+    out_of_scope:
+      - Despacho de salida (BC-2460.30)
+      - Propiedad del inventario a nivel del expedidor (BC-530)
+  BC-2460.10.10:
+    name: Planificación de la prerecepción
+    description: |
+      Ingesta de ASN, programación de muelles y planificación de recursos para
+      las recepciones.
+  BC-2460.10.20:
+    name: Recepción e inspección de mercancías
+    description: |
+      Recepción física e inspección de las mercancías entrantes.
+  BC-2460.10.30:
+    name: Ubicación y asignación de almacenamiento
+    description: |
+      Ubicación de las mercancías recibidas y asignación a las localizaciones de
+      almacenamiento.
+  BC-2460.20:
+    name: Gestión de operaciones de almacenamiento e inventario
+    description: |
+      Operaciones de almacenamiento interno que incluyen la asignación de
+      ubicaciones, recuentos cíclicos y almacenamiento en condiciones
+      especiales.
+  BC-2460.20.10:
+    name: Gestión de ubicaciones y posicionamiento
+    description: |
+      Decisiones de posicionamiento y mantenimiento de localizaciones de
+      almacenamiento.
+  BC-2460.20.20:
+    name: Recuento cíclico y conciliación
+    description: |
+      Recuentos cíclicos, conciliación de existencias y ajuste de inventario.
+  BC-2460.20.30:
+    name: Seguimiento de lote, número de serie y partida
+    description: |
+      Seguimiento de los atributos de lote, número de serie y partida de las
+      mercancías almacenadas.
+  BC-2460.20.40:
+    name: Almacenamiento en cadena de frío y condiciones especiales
+    description: |
+      Operación de almacenamiento con control de temperatura, mercancías
+      peligrosas y depósito aduanero.
+  BC-2460.30:
+    name: Gestión de operaciones de salida
+    description: |
+      Preparación, empaque, etiquetado y despacho de envíos de salida.
+  BC-2460.30.10:
+    name: Operaciones de preparación de pedidos
+    description: |
+      Preparación de pedidos mediante estrategias de lote, ola y zona.
+  BC-2460.30.20:
+    name: Empaque y etiquetado
+    description: |
+      Empaque, etiquetado y preparación de documentos de envío.
+  BC-2460.30.30:
+    name: Despacho y carga
+    description: |
+      Carga de vehículos de salida y confirmación del despacho.
+  BC-2460.40:
+    name: Gestión de servicios de valor añadido
+    description: |
+      Servicios de valor añadido dentro del almacén, como kitting, co-empaque,
+      etiquetado y configuración.
+  BC-2460.40.10:
+    name: Servicios de kitting y ensamblado
+    description: |
+      Kitting, subensamblado y ensamblado de paquetes dentro del almacén.
+  BC-2460.40.20:
+    name: Co-empaque y reetiquetado
+    description: |
+      Servicios de co-empaque, reempaque y reetiquetado.
+  BC-2460.40.30:
+    name: Aplazamiento y configuración
+    description: |
+      Configuración del producto en la etapa final y aplazamiento.
+  BC-2460.50:
+    name: Gestión de devoluciones y operaciones inversas
+    description: |
+      Recepción, clasificación y disposición de mercancías devueltas y flujos de
+      logística inversa.
+  BC-2460.50.10:
+    name: Recepción y clasificación de devoluciones
+    description: |
+      Recepción y clasificación de las mercancías devueltas.
+  BC-2460.50.20:
+    name: Reacondicionamiento y disposición
+    description: |
+      Reacondicionamiento, reempaque y decisiones de disposición.
+  BC-2460.50.30:
+    name: Eliminación en logística inversa
+    description: |
+      Eliminación, reciclaje y destrucción de devoluciones no recuperables.
+  BC-2460.60:
+    name: Gestión de recursos del almacén
+    description: |
+      Gestión del trabajo, los equipos de manutención de materiales y la
+      capacidad de muelles y espacios dentro del almacén.
+  BC-2460.60.10:
+    name: Planificación de la mano de obra y productividad
+    description: |
+      Planificación de turnos, asignación de tareas y seguimiento de la
+      productividad.
+  BC-2460.60.20:
+    name: Operaciones de equipos de manutención de materiales
+    description: |
+      Operación, asignación y mantenimiento de carretillas elevadoras,
+      transportadores y AGVs.
+  BC-2460.60.30:
+    name: Programación de muelles y espacios
+    description: |
+      Programación de los espacios de muelle de entrada y salida.
+  BC-2460.70:
+    name: Gestión del rendimiento del almacén
+    description: |
+      Medición de los KPIs de servicio, precisión y rendimiento del almacén.
+  BC-2460.70.10:
+    name: Seguimiento de KPIs del ciclo de pedidos
+    description: |
+      Seguimiento de KPIs de ciclo de pedidos, tasa de servicio y precisión.
+  BC-2460.70.20:
+    name: Informe de precisión del inventario
+    description: |
+      Reporte de la precisión del inventario y las mermas.
+  BC-2460.70.30:
+    name: Informe de rendimiento y productividad
+    description: |
+      Reporte del rendimiento, unidades por hora y referencias de productividad.
