@@ -1,0 +1,224 @@
+locale: es
+source: L1-travel-distribution-channel-management.yaml
+entries:
+  BC-4010:
+    name: Gestión de canal de distribución de viajes
+    description: |
+      Gestión de cómo se distribuyen y comercializan los productos de viaje a través
+      de canales directos, GDS, OTA, mayoristas y metabuscadores — incluyendo
+      conectividad de canal, sindicación de contenido y paridad de tarifas y disponibilidad.
+    in_scope:
+      - Operaciones de canales directo, GDS, OTA, mayorista y metabuscador
+      - Operaciones del hub del gestor de canales y sindicación de contenido
+      - Política y aplicación de paridad de tarifas y disponibilidad
+    out_of_scope:
+      - Definición del maestro de producto y grupo de inventario (BC-4000)
+      - Ciclo de vida de reservas (BC-4020)
+      - Decisiones de precios y rendimiento (BC-4030)
+
+  BC-4010.10:
+    name: Gestión de distribución en canal directo
+    description: |
+      Distribución de productos de viaje a través de canales directos propiedad de la
+      empresa, incluyendo web, móvil, voz y quioscos de autoservicio.
+
+  BC-4010.10.10:
+    name: Gestión de distribución en sitio web de marca
+    description: |
+      Operación del sitio web de marca como superficie de búsqueda y reserva directa
+      para productos de viaje.
+
+  BC-4010.10.20:
+    name: Gestión de distribución en aplicación móvil
+    description: |
+      Operación de aplicaciones móviles nativas como superficie de distribución y
+      atención directa al cliente.
+
+  BC-4010.10.30:
+    name: Distribución por voz y centro de llamadas
+    description: |
+      Distribución por voz y centro de llamadas incluyendo búsqueda y reserva
+      asistida por agente.
+
+  BC-4010.10.40:
+    name: Distribución por quiosco y autoservicio
+    description: |
+      Distribución de autoservicio a través de quioscos en aeropuertos, hoteles
+      y establecimientos asociados.
+
+  BC-4010.20:
+    name: Gestión de distribución en GDS
+    description: |
+      Distribución a través de sistemas de distribución global, incluyendo
+      sincronización de contenido, mapeo de clase de reserva y gestión de costes.
+
+  BC-4010.20.10:
+    name: Operaciones de conectividad con GDS
+    description: |
+      Operación de la conectividad con proveedores GDS en los flujos de búsqueda,
+      reserva y emisión de billetes.
+
+  BC-4010.20.20:
+    name: Envío y sincronización de contenido en GDS
+    description: |
+      Envío y sincronización de contenido, tarifas y disponibilidad hacia los
+      proveedores GDS.
+
+  BC-4010.20.30:
+    name: Mapeo de clase de reserva en GDS
+    description: |
+      Mapeo de las clases de producto internas a las clases de reserva y códigos
+      de tarifa del GDS.
+
+  BC-4010.20.40:
+    name: Gestión de costes y recargos en GDS
+    description: |
+      Gestión de las comisiones de reserva, recargos y asignación del coste de
+      venta en GDS.
+
+  BC-4010.30:
+    name: Gestión de distribución en OTA y mayoristas
+    description: |
+      Distribución a través de agencias de viajes en línea (OTA), bedbanks y
+      mayoristas B2B, incluyendo condiciones comerciales y anulaciones de contenido.
+
+  BC-4010.30.10:
+    name: Operaciones de conectividad con OTA
+    description: |
+      Operación de la conectividad con OTA en los flujos de búsqueda, reserva y
+      eventos post-reserva.
+
+  BC-4010.30.20:
+    name: Conectividad con mayoristas y bedbanks
+    description: |
+      Operación de la conectividad con mayoristas y bedbanks para la redistribución B2B.
+
+  BC-4010.30.30:
+    name: Gestión de condiciones comerciales con OTA
+    description: |
+      Gestión de las condiciones comerciales con OTA, incluyendo modelos de comisión,
+      margen y tarifa neta.
+
+  BC-4010.30.40:
+    name: Gestión de anulaciones de contenido en OTA
+    description: |
+      Gestión de anulaciones de contenido específicas por canal para OTA mientras se
+      mantiene la coherencia de marca.
+
+  BC-4010.40:
+    name: Gestión de distribución en metabuscadores
+    description: |
+      Distribución y puja en plataformas de metabúsqueda, incluyendo operaciones de
+      feed y seguimiento de conversión.
+
+  BC-4010.40.10:
+    name: Operaciones de feed para metabuscadores
+    description: |
+      Operación de los feeds de precio y disponibilidad hacia proveedores de
+      metabúsqueda.
+
+  BC-4010.40.20:
+    name: Operaciones de puja en metabuscadores
+    description: |
+      Operación de estrategias de puja en posicionamientos de metabúsqueda para
+      distintos mercados y dispositivos.
+
+  BC-4010.40.30:
+    name: Seguimiento de conversión en metabuscadores
+    description: |
+      Seguimiento de la atribución de conversión y la efectividad de la puja en el
+      tráfico de metabúsqueda.
+
+  BC-4010.40.40:
+    name: Gestión de conflictos de puja de marca
+    description: |
+      Gestión de los conflictos de puja entre la propia marca y las OTA en
+      metabuscadores y búsqueda de pago.
+
+  BC-4010.50:
+    name: Operaciones del gestor de canales
+    description: |
+      Operación del hub del gestor de canales que sincroniza inventario, tarifas y
+      restricciones a través de los canales de distribución.
+
+  BC-4010.50.10:
+    name: Configuración de mapeo de canales
+    description: |
+      Configuración de los mapeos entre productos internos y catálogos
+      específicos de cada canal.
+
+  BC-4010.50.20:
+    name: Operaciones de envío de inventario
+    description: |
+      Operación de las actualizaciones de inventario enviadas desde el grupo central
+      a todos los canales conectados.
+
+  BC-4010.50.30:
+    name: Operaciones de envío de tarifas
+    description: |
+      Operación de las actualizaciones de tarifas enviadas desde los motores de
+      precios a todos los canales conectados.
+
+  BC-4010.50.40:
+    name: Operaciones de envío de restricciones
+    description: |
+      Operación de las actualizaciones de restricciones, como estancia mínima,
+      cierre a llegada y stop-sell, a través de los canales.
+
+  BC-4010.60:
+    name: Gestión de paridad de tarifas y disponibilidad
+    description: |
+      Definición, supervisión y aplicación de la paridad de tarifas y disponibilidad
+      en canales directos e indirectos.
+
+  BC-4010.60.10:
+    name: Definición de política de paridad
+    description: |
+      Definición de la política de paridad de tarifas y disponibilidad para los
+      distintos tipos de canal y segmentos de socio.
+
+  BC-4010.60.20:
+    name: Seguimiento y auditoría de paridad
+    description: |
+      Supervisión de los canales para detectar incumplimientos de paridad y auditoría
+      periódica de la combinación de canales.
+
+  BC-4010.60.30:
+    name: Resolución de incumplimientos de paridad
+    description: |
+      Resolución de los incumplimientos de paridad identificados con canales y socios.
+
+  BC-4010.60.40:
+    name: Gestión de disponibilidad hasta la última habitación
+    description: |
+      Gestión de los compromisos de disponibilidad hasta la última habitación con
+      socios corporativos y de canal.
+
+  BC-4010.70:
+    name: Sindicación de contenido de distribución
+    description: |
+      Sindicación de contenido de producto a socios de distribución con controles de
+      formato, actualidad y contenido de respaldo.
+
+  BC-4010.70.10:
+    name: Gestión del formato del feed de contenido
+    description: |
+      Gestión de los formatos y esquemas de feed de contenido específicos por canal.
+
+  BC-4010.70.20:
+    name: Supervisión de la actualidad del contenido
+    description: |
+      Supervisión de la actualidad del contenido en las superficies de socios de
+      distribución frente a los SLA de publicación.
+
+  BC-4010.70.30:
+    name: Reglas de contenido de respaldo por canal
+    description: |
+      Reglas de respaldo utilizadas cuando el contenido específico de un socio está
+      ausente o desactualizado.
+
+  BC-4010.70.40:
+    name: Reconciliación de anulaciones de contenido
+    description: |
+      Reconciliación de las anulaciones de contenido de socios frente al registro
+      maestro de contenido.

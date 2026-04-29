@@ -1,0 +1,106 @@
+locale: es
+source: L1-dangerous-goods-management.yaml
+entries:
+  BC-2490:
+    name: Gestión de mercancías peligrosas
+    description: |
+      Aceptación, documentación, manipulación, formación y respuesta a incidentes
+      para movimientos de mercancías peligrosas por carretera, ferrocarril, océano
+      y aire bajo los regímenes IMDG, IATA DGR, ADR y RID.
+  BC-2490.10:
+    name: Gestión de la aceptación de mercancías peligrosas
+    description: |
+      Revisión previa a la aceptación de los envíos de mercancías peligrosas
+      frente a las normas modales y decisión de aceptación.
+    in_scope:
+      - Revisión de la declaración del expedidor
+      - Verificaciones de compatibilidad, segregación y cantidad
+    out_of_scope:
+      - Restricciones aduaneras de sustancias peligrosas (BC-2480)
+      - Reclamaciones de carga por DG dañadas (BC-2530.40)
+  BC-2490.10.10:
+    name: Revisión de la declaración del expedidor
+    description: |
+      Revisión de las declaraciones de mercancías peligrosas del expedidor y la
+      documentación de apoyo.
+  BC-2490.10.20:
+    name: Verificación de compatibilidad y segregación
+    description: |
+      Verificaciones de compatibilidad, segregación y cantidad según la
+      normativa modal.
+  BC-2490.10.30:
+    name: Decisión de aceptación y endoso
+    description: |
+      Decisión de aceptación, endoso o rechazo de envíos de DG.
+  BC-2490.20:
+    name: Gestión de la documentación de mercancías peligrosas
+    description: |
+      Emisión y mantenimiento de declaraciones de mercancías peligrosas, NOTOC y
+      documentación multimodal de materiales peligrosos.
+  BC-2490.20.10:
+    name: Emisión de declaraciones de mercancías peligrosas
+    description: |
+      Emisión de declaraciones de DG según IMDG, DGR, ADR y RID.
+  BC-2490.20.20:
+    name: Preparación del NOTOC y el manifiesto
+    description: |
+      Preparación de la notificación al capitán y el manifiesto de carga
+      peligrosa.
+  BC-2490.20.30:
+    name: Conciliación de documentación multimodal
+    description: |
+      Conciliación de los documentos de DG en los traspasos entre modos.
+  BC-2490.30:
+    name: Gestión de la manipulación y estiba de mercancías peligrosas
+    description: |
+      Cumplimiento de la manipulación física y la estiba con los requisitos de
+      mercancías peligrosas.
+  BC-2490.30.10:
+    name: Cumplimiento de segregación y estiba
+    description: |
+      Cumplimiento de la segregación y la estiba a bordo, en cubierta y en
+      almacén.
+  BC-2490.30.20:
+    name: Almacenamiento en área restringida
+    description: |
+      Almacenamiento de DG en áreas restringidas, ventiladas y con cubeta de
+      retención.
+  BC-2490.30.30:
+    name: Uso de equipos de manipulación especializados
+    description: |
+      Uso de equipos especializados para la manipulación de DG y equipos de
+      protección individual.
+  BC-2490.40:
+    name: Gestión de la formación y competencia en mercancías peligrosas
+    description: |
+      Formación inicial y periódica, evaluación de competencias y registros para
+      el personal que manipula DG.
+  BC-2490.40.10:
+    name: Formación inicial en DG
+    description: |
+      Formación inicial en mercancías peligrosas según la autoridad modal.
+  BC-2490.40.20:
+    name: Formación periódica en DG
+    description: |
+      Formación periódica y de actualización en mercancías peligrosas.
+  BC-2490.40.30:
+    name: Gestión de registros de competencia
+    description: |
+      Mantenimiento de registros de competencia en DG y evidencias de auditoría.
+  BC-2490.50:
+    name: Gestión de incidentes de mercancías peligrosas
+    description: |
+      Detección, respuesta, notificación e informe de incidentes y derrames de
+      mercancías peligrosas.
+  BC-2490.50.10:
+    name: Detección de incidentes de DG
+    description: |
+      Detección de incidentes de DG durante la manipulación y el transporte.
+  BC-2490.50.20:
+    name: Respuesta a derrames y liberaciones de DG
+    description: |
+      Contención de derrames, respuesta a liberaciones y descontaminación.
+  BC-2490.50.30:
+    name: Notificación e informe a las autoridades
+    description: |
+      Notificación e informe de incidentes de DG a las autoridades competentes.

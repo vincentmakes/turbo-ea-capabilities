@@ -1,0 +1,112 @@
+locale: es
+source: L1-freight-billing-settlement-management.yaml
+entries:
+  BC-2530:
+    name: Gestión de facturación y liquidación de carga
+    description: |
+      Emisión de facturas de carga, auditoría y pago de facturas de
+      transportistas, liquidación interlineal y de parques, reclamaciones de
+      carga y contabilidad de ingresos de carga.
+  BC-2530.10:
+    name: Gestión de la facturación de carga
+    description: |
+      Generación y distribución de facturas de carga, accesorios y
+      autofacturación a los clientes.
+    in_scope:
+      - Generación de facturas de carga
+      - Conciliación de la autofacturación del cliente
+    out_of_scope:
+      - Procesos genéricos de cuentas por cobrar (BC-200)
+      - Estrategia de precios para clientes (BC-440)
+  BC-2530.10.10:
+    name: Generación de facturas de carga
+    description: |
+      Generación de facturas de carga a partir de los movimientos completados.
+  BC-2530.10.20:
+    name: Generación de facturas de cargos accesorios
+    description: |
+      Generación de facturas de cargos accesorios y suplementos.
+  BC-2530.10.30:
+    name: Coordinación de la autofacturación del cliente
+    description: |
+      Conciliación de los estados de autofacturación del cliente frente a los
+      envíos.
+  BC-2530.20:
+    name: Gestión de la auditoría y pago de carga
+    description: |
+      Auditoría de las facturas de los transportistas y ejecución de los pagos
+      a transportistas por parte de expedidores y transitarios.
+  BC-2530.20.10:
+    name: Auditoría de facturas de transportistas
+    description: |
+      Auditoría de las facturas de los transportistas frente a contratos,
+      aranceles y envíos.
+  BC-2530.20.20:
+    name: Conciliación previa y posterior a la auditoría
+    description: |
+      Conciliación previa y posterior a la auditoría de las facturas de los
+      transportistas.
+  BC-2530.20.30:
+    name: Ejecución del pago a transportistas
+    description: |
+      Ejecución de los pagos a transportistas y el informe de remesas.
+  BC-2530.30:
+    name: Gestión de la liquidación interlineal y multiportador
+    description: |
+      Liquidación de ingresos y costos entre socios de interlínea, alianzas y
+      oficinas de transitarios.
+  BC-2530.30.10:
+    name: Cálculo pro-rata interlineal
+    description: |
+      Cálculo del reparto pro-rata de ingresos interlineales entre socios.
+  BC-2530.30.20:
+    name: Operaciones de liquidación IATA CASS
+    description: |
+      Operación de la liquidación IATA CASS para la carga aérea.
+  BC-2530.30.30:
+    name: Liquidación interoficinas
+    description: |
+      Liquidación interoficinas de ingresos y costos de transitarios.
+  BC-2530.40:
+    name: Gestión de reclamaciones de carga
+    description: |
+      Recepción, evaluación y liquidación de reclamaciones de carga bajo las
+      convenciones de responsabilidad de transporte.
+  BC-2530.40.10:
+    name: Recepción y acuse de recibo de reclamaciones
+    description: |
+      Recepción y acuse de recibo de reclamaciones por pérdida y daño de
+      carga.
+  BC-2530.40.20:
+    name: Evaluación de responsabilidad
+    description: |
+      Evaluación de la responsabilidad del transportista bajo Hague-Visby,
+      Montreal, CMR y COTIF.
+  BC-2530.40.30:
+    name: Liquidación y recuperación de reclamaciones
+    description: |
+      Liquidación de las reclamaciones aceptadas y pago al cliente.
+  BC-2530.40.40:
+    name: Recurso y subrogación de reclamaciones
+    description: |
+      Recurso contra los transportistas subyacentes y subrogación frente a los
+      aseguradores.
+  BC-2530.50:
+    name: Gestión de la contabilidad de ingresos de carga
+    description: |
+      Reconocimiento, seguimiento e informe de los ingresos de carga, incluidas
+      las posiciones no facturadas y diferidas.
+  BC-2530.50.10:
+    name: Reconocimiento de ingresos de carga
+    description: |
+      Reconocimiento de los ingresos de carga según las normas contables
+      aplicables.
+  BC-2530.50.20:
+    name: Seguimiento de ingresos no facturados
+    description: |
+      Seguimiento de los ingresos de carga no facturados y devengados.
+  BC-2530.50.30:
+    name: Informe de ingresos de carga
+    description: |
+      Reporte de los ingresos de carga a las funciones financieras y
+      comerciales.

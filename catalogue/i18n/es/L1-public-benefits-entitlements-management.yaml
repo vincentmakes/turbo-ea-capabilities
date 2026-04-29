@@ -1,0 +1,146 @@
+locale: es
+source: L1-public-benefits-entitlements-management.yaml
+entries:
+  BC-3230:
+    name: Gestión de prestaciones y beneficios públicos
+    description: |
+      Diseño, determinación de elegibilidad, cálculo, desembolso, seguimiento y recuperación de
+      prestaciones de protección social y derechos estatutarios, incluidas pensiones, desempleo,
+      discapacidad, familia y asistencia alimentaria.
+  BC-3230.10:
+    name: Diseño y configuración de programas de prestaciones
+    description: |
+      Configuración de los programas de prestaciones estatutarias, incluidas las reglas de
+      elegibilidad, las fórmulas de cálculo y los parámetros operativos.
+    in_scope:
+      - Configuración de reglas de elegibilidad
+      - Configuración de fórmulas y tasas de prestaciones
+      - Gestión de parámetros e indexación del programa
+    out_of_scope:
+      - Redacción de legislación habilitante (cubierto por Gestión de redacción legislativa y regulatoria)
+  BC-3230.10.10:
+    name: Configuración de reglas de elegibilidad
+    description: |
+      Codificación de las reglas de elegibilidad estatutarias en forma ejecutable por máquina.
+  BC-3230.10.20:
+    name: Configuración de fórmulas y tasas de prestaciones
+    description: |
+      Configuración de fórmulas de cálculo, tasas y límites máximos de prestaciones.
+  BC-3230.10.30:
+    name: Indexación de parámetros del programa
+    description: |
+      Indexación y ajuste periódico de los parámetros del programa a la inflación o a los
+      cambios salariales.
+  BC-3230.20:
+    name: Determinación de elegibilidad
+    description: |
+      Determinación de la elegibilidad de los solicitantes para las prestaciones, incluidas las
+      pruebas de medios, la elegibilidad categórica y la composición del hogar.
+  BC-3230.20.10:
+    name: Recepción de solicitudes
+    description: |
+      Recepción de solicitudes de prestaciones a través de canales digitales, presenciales y asistidos.
+  BC-3230.20.20:
+    name: Prueba de medios
+    description: |
+      Comprobación de ingresos, activos y circunstancias del hogar respecto a los umbrales del programa.
+  BC-3230.20.30:
+    name: Verificación de elegibilidad categórica
+    description: |
+      Verificación de la elegibilidad categórica por edad, discapacidad o situación familiar.
+  BC-3230.20.40:
+    name: Decisión y notificación de elegibilidad
+    description: |
+      Registro de la decisión y notificación al solicitante del resultado de elegibilidad.
+  BC-3230.30:
+    name: Cálculo y concesión de prestaciones
+    description: |
+      Cálculo de los importes de la concesión, evaluación del historial de cotización y emisión
+      de resoluciones de prestación.
+  BC-3230.30.10:
+    name: Evaluación del historial de cotización
+    description: |
+      Evaluación de los historiales de cotización para prestaciones contributivas como pensiones
+      y desempleo.
+  BC-3230.30.20:
+    name: Cálculo de la concesión
+    description: |
+      Cálculo de los importes de la concesión, incluidos complementos, deducciones y reducciones
+      progresivas.
+  BC-3230.30.30:
+    name: Emisión de la resolución
+    description: |
+      Emisión y registro de resoluciones de prestación y cartas de concesión.
+  BC-3230.40:
+    name: Operaciones de desembolso de prestaciones
+    description: |
+      Desembolso periódico de pagos de prestaciones a través de distintos canales y conciliación
+      con las resoluciones.
+  BC-3230.40.10:
+    name: Gestión del calendario de pagos
+    description: |
+      Mantenimiento de los calendarios de pago, las frecuencias y los calendarios de ejecución.
+  BC-3230.40.20:
+    name: Ejecución de pagos
+    description: |
+      Ejecución de las pasadas de pago por canales bancarios, tarjeta prepago, cheque y en especie.
+  BC-3230.40.30:
+    name: Conciliación de pagos
+    description: |
+      Conciliación de los desembolsos con las resoluciones y las confirmaciones bancarias.
+  BC-3230.40.40:
+    name: Distribución de prestaciones en especie
+    description: |
+      Distribución de prestaciones en especie como vales de asistencia alimentaria y transferencia
+      electrónica de beneficios.
+  BC-3230.50:
+    name: Seguimiento de beneficiarios y elegibilidad continua
+    description: |
+      Seguimiento continuo de las circunstancias de los beneficiarios y redeterminación periódica
+      de la elegibilidad continuada.
+  BC-3230.50.10:
+    name: Captura de cambios en las circunstancias
+    description: |
+      Captura y procesamiento de los cambios de circunstancias comunicados por el beneficiario o
+      detectados por el sistema.
+  BC-3230.50.20:
+    name: Redeterminación periódica
+    description: |
+      Redeterminación periódica de la elegibilidad y el nivel de prestación.
+  BC-3230.50.30:
+    name: Seguimiento de condicionalidad y cumplimiento
+    description: |
+      Seguimiento del cumplimiento por el beneficiario de las condiciones, como los requisitos de
+      búsqueda de empleo o formación.
+  BC-3230.60:
+    name: Gestión de cobros indebidos y recuperación
+    description: |
+      Detección, cálculo y recuperación de cobros indebidos y pagos no elegibles de prestaciones.
+  BC-3230.60.10:
+    name: Detección de cobros indebidos
+    description: |
+      Detección de cobros indebidos mediante conciliación, cotejo de datos y revisiones.
+  BC-3230.60.20:
+    name: Configuración de planes de recuperación
+    description: |
+      Configuración de planes de recuperación, incluidas cuotas, deducciones y cancelaciones.
+  BC-3230.60.30:
+    name: Operaciones de cobro de deudas
+    description: |
+      Cobro de deudas recuperables mediante deducciones, acciones civiles y compensaciones.
+  BC-3230.70:
+    name: Investigación del fraude en prestaciones
+    description: |
+      Detección, investigación y resolución de casos de fraude en prestaciones.
+  BC-3230.70.10:
+    name: Detección de riesgo de fraude
+    description: |
+      Detección basada en riesgos de presunto fraude mediante analítica e inteligencia.
+  BC-3230.70.20:
+    name: Investigación de casos de fraude
+    description: |
+      Investigación de presuntos casos de fraude, incluida la recogida de pruebas y las entrevistas.
+  BC-3230.70.30:
+    name: Sanción y remisión por fraude
+    description: |
+      Sanción del fraude confirmado y remisión a la fiscalía cuando proceda.

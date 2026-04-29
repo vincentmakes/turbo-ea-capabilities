@@ -1,0 +1,144 @@
+locale: es
+source: L1-food-safety-traceability-management.yaml
+entries:
+  BC-2380:
+    name: Seguridad alimentaria y trazabilidad
+    description: |
+      Programas de seguridad alimentaria, trazabilidad de lotes y partidas,
+      coordinación de retiradas, gestión de la vida útil de los perecederos y
+      cumplimiento de la cadena de frío en operaciones de alimentación y
+      fabricación de alimentos.
+  BC-2380.10:
+    name: Gestión del programa de seguridad alimentaria
+    description: |
+      Política de seguridad alimentaria, APPCC y programas de certificación
+      (BRCGS, SQF, FSSC 22000, IFS Food, ISO 22000) que rigen la manipulación
+      y el suministro de alimentos.
+    in_scope:
+      - APPCC y política de seguridad alimentaria
+      - Certificación de terceros (BRCGS, SQF, FSSC 22000, IFS Food)
+      - Gestión de incidentes de seguridad alimentaria
+    out_of_scope:
+      - Gestión genérica de calidad (BC-720)
+  BC-2380.10.10:
+    name: Gestión de la política de seguridad alimentaria
+    description: |
+      Elaboración y custodia de la política de seguridad alimentaria en toda
+      la red.
+  BC-2380.10.20:
+    name: Gestión del plan APPCC
+    description: |
+      Desarrollo del plan APPCC, análisis de peligros y seguimiento de los
+      puntos de control crítico.
+  BC-2380.10.30:
+    name: Gestión de la certificación de seguridad alimentaria
+    description: |
+      Certificación frente a BRCGS, SQF, FSSC 22000, IFS Food e ISO 22000.
+  BC-2380.10.40:
+    name: Gestión de incidentes de seguridad alimentaria
+    description: |
+      Gestión de incidentes de seguridad alimentaria, incluidas las detecciones
+      de patógenos.
+  BC-2380.20:
+    name: Gestión de la trazabilidad de lotes y partidas
+    description: |
+      Trazabilidad de lotes y partidas en la cadena de suministro mediante la
+      captura de eventos EPCIS de GS1 e intercambio de datos con socios
+      comerciales.
+  BC-2380.20.10:
+    name: Codificación de lotes y partidas
+    description: |
+      Generación e impresión de códigos de lote y partida según las normas GS1.
+  BC-2380.20.20:
+    name: Captura de eventos EPCIS
+    description: |
+      Captura de eventos EPCIS (comisionado, envío, recepción) en toda la cadena
+      de suministro.
+  BC-2380.20.30:
+    name: Trazabilidad hacia adelante y hacia atrás
+    description: |
+      Trazabilidad de una posición hacia adelante y hacia atrás de entradas y
+      salidas en cada nodo de manipulación.
+  BC-2380.20.40:
+    name: Intercambio de datos de trazabilidad con socios comerciales
+    description: |
+      Intercambio de datos de trazabilidad con proveedores y socios comerciales
+      aguas abajo.
+  BC-2380.30:
+    name: Gestión de la coordinación de retiradas y alertas
+    description: |
+      Coordinación de retiradas y alertas de alimentos y bienes de consumo,
+      incluyendo la notificación a reguladores y la comunicación con consumidores.
+    in_scope:
+      - Clasificación y toma de decisiones de retirada
+      - Notificación e informes a reguladores
+      - Comunicación con consumidores y socios comerciales
+  BC-2380.30.10:
+    name: Decisión y clasificación de la retirada
+    description: |
+      Decisión y clasificación del alcance y la gravedad de la retirada.
+  BC-2380.30.20:
+    name: Notificación a reguladores
+    description: |
+      Notificación a las autoridades de seguridad alimentaria según las normas
+      jurisdiccionales.
+  BC-2380.30.30:
+    name: Comunicación con consumidores y socios comerciales
+    description: |
+      Comunicación a consumidores y socios comerciales sobre las acciones de
+      retirada.
+  BC-2380.30.40:
+    name: Verificación de la efectividad de la retirada
+    description: |
+      Verificación de la efectividad de la retirada y las tasas de recuperación.
+  BC-2380.40:
+    name: Gestión de perecederos y vida útil
+    description: |
+      Seguimiento de la vida útil, rotación FEFO, disciplina de fechas y
+      reducción de desperdicio en las categorías de productos perecederos.
+  BC-2380.40.10:
+    name: Vida útil y codificación de fechas
+    description: |
+      Definición e impresión de la vida útil y los códigos de fecha según la
+      normativa de cada mercado.
+  BC-2380.40.20:
+    name: Rotación por orden de caducidad
+    description: |
+      Rotación FEFO en tiendas y centros de distribución.
+  BC-2380.40.30:
+    name: Coordinación de rebajas en perecederos
+    description: |
+      Coordinación de rebajas en perecederos antes de su caducidad para reducir
+      el desperdicio.
+  BC-2380.40.40:
+    name: Programas de reducción del desperdicio alimentario
+    description: |
+      Programas de reducción del desperdicio alimentario, donación y
+      encaminamiento circular.
+  BC-2380.50:
+    name: Gestión del cumplimiento de la cadena de frío
+    description: |
+      Integridad de la cadena de frío para alimentos refrigerados y congelados,
+      incluyendo el seguimiento de temperatura, la gestión de excursiones y
+      las decisiones de disposición.
+    in_scope:
+      - Seguimiento de temperatura de la cadena de frío en todos los nodos
+      - Investigación de excursiones y disposición
+      - Procedimientos y auditorías de la cadena de frío
+    out_of_scope:
+      - Cadena de frío farmacéutica (BC-1570.10)
+  BC-2380.50.10:
+    name: Seguimiento de temperatura de la cadena de frío
+    description: |
+      Seguimiento de temperatura de extremo a extremo en la cadena de frío
+      alimentaria.
+  BC-2380.50.20:
+    name: Disposición ante excursiones en la cadena de frío
+    description: |
+      Investigación y disposición de excursiones de temperatura en la cadena
+      de frío.
+  BC-2380.50.30:
+    name: Auditoría y verificación de la cadena de frío
+    description: |
+      Auditoría y verificación de las prácticas de la cadena de frío en toda
+      la red.

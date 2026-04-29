@@ -1,0 +1,169 @@
+locale: es
+source: L1-point-of-sale-operations-management.yaml
+entries:
+  BC-2320:
+    name: Gestión de operaciones en punto de venta
+    description: |
+      Capa de transacción orientada al cliente en el comercio minorista: cobro
+      de ventas, aceptación de medios de pago, devoluciones y reembolsos, gestión
+      del efectivo, configuración del TPV y continuidad de la venta durante
+      interrupciones del sistema.
+  BC-2320.10:
+    name: Gestión de transacciones de venta
+    description: |
+      Captura de transacciones de venta al consumidor, incluida la construcción
+      del carro, el escaneado, la aplicación de promociones, el cálculo de
+      impuestos y los tickets digitales.
+    in_scope:
+      - Construcción del carro y escaneado de artículos
+      - Aplicación de promociones y fidelización en caja
+      - Cálculo de impuestos y emisión de tickets en papel o digital
+    out_of_scope:
+      - Diseño de promociones (BC-440.30)
+      - Checkout de comercio electrónico (BC-2330)
+  BC-2320.10.10:
+    name: Escaneado de artículos y construcción del carro
+    description: |
+      Escaneado de artículos y construcción del carro en caja, incluyendo
+      artículos de peso variable.
+  BC-2320.10.20:
+    name: Aplicación de promociones y fidelización
+    description: |
+      Aplicación de promociones, cupones y canjes de fidelización durante
+      la venta.
+  BC-2320.10.30:
+    name: Gestión de impuestos sobre ventas e IVA
+    description: |
+      Cálculo del impuesto sobre ventas, el IVA y las normas específicas de
+      cada jurisdicción en caja.
+  BC-2320.10.40:
+    name: Emisión de tickets y tickets digitales
+    description: |
+      Emisión de tickets en papel y digitales, incluyendo la vinculación con
+      el consumidor.
+  BC-2320.20:
+    name: Gestión de la aceptación de medios de pago
+    description: |
+      Aceptación de medios de pago en caja, incluyendo EMV, contactless,
+      monederos digitales, tarjetas regalo y métodos alternativos, con
+      cumplimiento PCI-DSS.
+  BC-2320.20.10:
+    name: Aceptación de pagos con tarjeta y contactless
+    description: |
+      Aceptación de pagos EMV, contactless y monederos digitales en cajas de
+      comercio minorista.
+  BC-2320.20.20:
+    name: Aceptación de efectivo y cheques
+    description: |
+      Aceptación de billetes, monedas y cheques, incluido el manejo de
+      denominaciones.
+  BC-2320.20.30:
+    name: Aceptación y emisión de tarjetas regalo y saldo almacenado
+    description: |
+      Aceptación y emisión de tarjetas regalo e instrumentos de saldo almacenado.
+  BC-2320.20.40:
+    name: Aceptación de métodos de pago alternativos
+    description: |
+      Aceptación de compra a plazos, QR y otros medios de pago alternativos.
+  BC-2320.20.50:
+    name: Operaciones de cumplimiento PCI-DSS
+    description: |
+      Gestión de datos de titulares de tarjeta en el punto de venta conforme
+      a PCI-DSS.
+  BC-2320.30:
+    name: Gestión de devoluciones, reembolsos e intercambios
+    description: |
+      Procesamiento en tienda de devoluciones, reembolsos e intercambios de
+      consumidores, incluyendo casos en el medio de pago original, crédito en
+      tienda y devoluciones multicanal.
+    in_scope:
+      - Devoluciones y reembolsos de consumidores en tienda
+      - Gestión de crédito en tienda e intercambios
+      - Devoluciones en tienda de pedidos online
+    out_of_scope:
+      - Logística inversa al centro de distribución (BC-520.40.40)
+  BC-2320.30.10:
+    name: Aceptación de devoluciones del consumidor
+    description: |
+      Aceptación de devoluciones del consumidor en caja según la política de
+      devoluciones.
+  BC-2320.30.20:
+    name: Emisión de reembolsos y crédito en tienda
+    description: |
+      Emisión de reembolsos al medio de pago original o instrumentos de crédito
+      en tienda.
+  BC-2320.30.30:
+    name: Gestión de transacciones de intercambio
+    description: |
+      Transacciones de intercambio iguales y desiguales, incluyendo la
+      conciliación de precios.
+  BC-2320.30.40:
+    name: Procesamiento de devoluciones multicanal
+    description: |
+      Aceptación en tienda de pedidos de otros canales para su devolución.
+  BC-2320.40:
+    name: Gestión de efectivo y medios de pago en TPV
+    description: |
+      Procesos de gestión del cajón de caja, caja fuerte, depósito y conciliación
+      de medios de pago al cierre que protegen la recaudación de caja.
+  BC-2320.40.10:
+    name: Gestión del cajón de caja
+    description: |
+      Apertura, supervisión y cuadre del cajón de caja.
+  BC-2320.40.20:
+    name: Operaciones de caja fuerte y recogidas parciales
+    description: |
+      Gestión de la caja fuerte, recogidas parciales durante el día y preparación
+      para el transporte de fondos.
+  BC-2320.40.30:
+    name: Conciliación de medios de pago al cierre
+    description: |
+      Conciliación de todos los medios de pago contra los registros de ventas
+      del TPV al final del día.
+  BC-2320.40.40:
+    name: Preparación del depósito bancario
+    description: |
+      Preparación de los depósitos bancarios y entrega al servicio de transporte
+      de fondos.
+  BC-2320.50:
+    name: Gestión de la configuración del TPV
+    description: |
+      Configuración de tipos de pago, normas fiscales, lógica de promociones,
+      periféricos y comportamiento de la caja en todo el parque de tiendas.
+  BC-2320.50.10:
+    name: Configuración de medios de pago
+    description: |
+      Configuración de los medios de pago aceptados, límites y enrutamiento
+      por tienda.
+  BC-2320.50.20:
+    name: Configuración de normas fiscales
+    description: |
+      Configuración de normas fiscales y excepciones jurisdiccionales por tienda.
+  BC-2320.50.30:
+    name: Configuración del motor de promociones
+    description: |
+      Configuración del motor de promociones del TPV y las reglas de priorización
+      de ofertas.
+  BC-2320.50.40:
+    name: Configuración de periféricos del TPV
+    description: |
+      Configuración de básculas, lectores, impresoras y pinpads en caja.
+  BC-2320.60:
+    name: Resiliencia del TPV y operaciones fuera de línea
+    description: |
+      Continuidad de la venta durante interrupciones de conectividad o del
+      sistema, incluyendo TPV sin conexión, almacenamiento y reenvío, y gestión
+      de colas.
+  BC-2320.60.10:
+    name: Operación del TPV sin conexión
+    description: |
+      Operación continuada del TPV durante la pérdida de conectividad.
+  BC-2320.60.20:
+    name: Gestión de transacciones con almacenamiento y reenvío
+    description: |
+      Almacenamiento y reenvío de transacciones fuera de línea al restablecer
+      la conexión.
+  BC-2320.60.30:
+    name: Gestión de colas durante interrupciones
+    description: |
+      Gestión de colas de clientes durante interrupciones en el sistema de caja.

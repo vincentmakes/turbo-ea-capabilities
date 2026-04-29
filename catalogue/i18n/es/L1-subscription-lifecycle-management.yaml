@@ -1,0 +1,152 @@
+locale: es
+source: L1-subscription-lifecycle-management.yaml
+entries:
+  BC-4240:
+    name: Gestión del ciclo de vida de la suscripción
+    description: |
+      Diseño de planes y derechos, contratación, aprovisionamiento, modificación,
+      renovación, cancelación y aplicación de derechos en tiempo de ejecución a
+      lo largo del ciclo de vida comercial SaaS.
+  BC-4240.10:
+    name: Diseño de planes y derechos
+    description: |
+      Definición de planes, derechos de funcionalidades y las reglas que
+      determinan qué clientes son elegibles para cada plan.
+    in_scope:
+      - Catálogo de planes y restricción de funcionalidades
+      - Reglas de elegibilidad de planes
+    out_of_scope:
+      - Estrategia de precios y gobernanza de la lista de precios (cubierta por Gestión de precios)
+  BC-4240.10.10:
+    name: Definición del catálogo de planes
+    description: |
+      Definición del catálogo de planes, incluyendo los niveles y el contenido
+      de cada plan.
+  BC-4240.10.20:
+    name: Definición de derechos de funcionalidades
+    description: |
+      Definición de los derechos de funcionalidades asociados a planes,
+      complementos y contratos personalizados.
+  BC-4240.10.30:
+    name: Reglas de elegibilidad de planes
+    description: |
+      Reglas que determinan qué clientes y casos de uso son elegibles
+      para cada plan.
+  BC-4240.20:
+    name: Contratación de suscripciones
+    description: |
+      Gestión de cotizaciones, generación de formularios de pedido y captura
+      de artefactos del contrato de suscripción.
+  BC-4240.20.10:
+    name: Gestión de cotizaciones de suscripción
+    description: |
+      Generación y administración de cotizaciones de suscripción durante el
+      proceso de ventas.
+  BC-4240.20.20:
+    name: Generación de formularios de pedido
+    description: |
+      Generación de formularios de pedido que reflejan los términos acordados
+      para clientes nuevos y existentes.
+  BC-4240.20.30:
+    name: Captura del contrato de suscripción
+    description: |
+      Captura y almacenamiento de los artefactos del contrato de suscripción
+      ejecutado y sus términos clave.
+  BC-4240.30:
+    name: Aprovisionamiento de suscripciones
+    description: |
+      Activación del servicio para nuevas suscripciones, incluyendo la conversión
+      de prueba a pago y el aprovisionamiento masivo de puestos.
+  BC-4240.30.10:
+    name: Aprovisionamiento inicial
+    description: |
+      Aprovisionamiento inicial de derechos de servicio al inicio de la
+      suscripción.
+  BC-4240.30.20:
+    name: Conversión de prueba a pago
+    description: |
+      Conversión de cuentas de prueba a suscripciones de pago.
+  BC-4240.30.30:
+    name: Aprovisionamiento masivo de puestos
+    description: |
+      Aprovisionamiento masivo de puestos para suscripciones empresariales.
+  BC-4240.40:
+    name: Modificación de suscripciones
+    description: |
+      Cambios en suscripciones activas, incluyendo actualizaciones, reducciones,
+      ajustes de puestos y activación de complementos.
+  BC-4240.40.10:
+    name: Gestión de actualización de plan
+    description: |
+      Gestión de las actualizaciones de plan iniciadas por el cliente y por
+      el sistema.
+  BC-4240.40.20:
+    name: Gestión de reducción de plan
+    description: |
+      Gestión de las reducciones de plan, incluyendo el efecto sobre los
+      derechos y los datos.
+  BC-4240.40.30:
+    name: Ajuste de puestos
+    description: |
+      Ajuste del número de puestos en suscripciones activas.
+  BC-4240.40.40:
+    name: Activación de complementos
+    description: |
+      Activación de derechos de complementos opcionales en suscripciones
+      activas.
+  BC-4240.50:
+    name: Gestión de renovaciones
+    description: |
+      Previsión, procesamiento y negociación de renovaciones de suscripción,
+      ya sean automáticas o manuales.
+  BC-4240.50.10:
+    name: Previsión de renovaciones
+    description: |
+      Previsión de las renovaciones próximas y los resultados esperados.
+  BC-4240.50.20:
+    name: Procesamiento de renovación automática
+    description: |
+      Procesamiento de renovaciones automáticas de suscripción conforme a
+      los términos del contrato.
+  BC-4240.50.30:
+    name: Apoyo a la negociación de renovaciones
+    description: |
+      Apoyo a las negociaciones de renovación, incluyendo datos, precios y
+      paquetes de cambio de términos.
+  BC-4240.60:
+    name: Cancelación y terminación
+    description: |
+      Cancelación voluntaria, terminación involuntaria y cierre del servicio
+      para clientes que se van.
+  BC-4240.60.10:
+    name: Procesamiento de cancelaciones
+    description: |
+      Procesamiento de cancelaciones iniciadas por el cliente.
+  BC-4240.60.20:
+    name: Terminación involuntaria
+    description: |
+      Terminación del servicio por impago, incumplimiento o fin contractual.
+  BC-4240.60.30:
+    name: Coordinación del cierre del servicio
+    description: |
+      Cierre coordinado del servicio, incluyendo la entrega de exportación y
+      eliminación de datos.
+  BC-4240.70:
+    name: Aplicación de derechos
+    description: |
+      Resolución y aplicación en tiempo de ejecución de los derechos de
+      suscripción con registro de auditoría de las decisiones de acceso.
+  BC-4240.70.10:
+    name: Resolución de derechos
+    description: |
+      Resolución de los derechos efectivos por suscripción, cuenta y usuario.
+  BC-4240.70.20:
+    name: Aplicación de compuertas de derechos
+    description: |
+      Restricción en tiempo de ejecución de funcionalidades y cuotas conforme
+      a los derechos resueltos.
+  BC-4240.70.30:
+    name: Registro de auditoría de derechos
+    description: |
+      Registro de grado de auditoría de los cambios de derechos y las
+      decisiones de compuerta.

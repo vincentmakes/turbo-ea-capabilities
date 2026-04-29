@@ -1,0 +1,154 @@
+locale: es
+source: L1-software-release-deployment-management.yaml
+entries:
+  BC-4210:
+    name: Gestión de lanzamiento e implantación de software
+    description: |
+      Integración continua, gestión de entornos, ingeniería de lanzamientos,
+      gestión de indicadores de funcionalidad e implantación progresiva de
+      productos SaaS en producción.
+  BC-4210.10:
+    name: Gestión de integración continua
+    description: |
+      Pipelines de compilación, producción de artefactos y aplicación de políticas
+      de pipeline que mantienen el producto integrado en estado continuamente
+      compilable.
+  BC-4210.10.10:
+    name: Gestión de pipelines de compilación
+    description: |
+      Definición y operación de pipelines de compilación automatizados para
+      los componentes del producto.
+  BC-4210.10.20:
+    name: Gestión del repositorio de artefactos
+    description: |
+      Almacenamiento, retención y acceso de artefactos de compilación y
+      paquetes de dependencias.
+  BC-4210.10.30:
+    name: Aplicación de políticas de pipeline
+    description: |
+      Aplicación de compuertas de calidad, seguridad y procedencia requeridas
+      en todos los pipelines.
+  BC-4210.20:
+    name: Gestión de entornos
+    description: |
+      Aprovisionamiento y administración de entornos no productivos utilizados
+      para el desarrollo, la integración y la validación preproductiva.
+  BC-4210.20.10:
+    name: Aprovisionamiento de entornos
+    description: |
+      Aprovisionamiento de entornos no productivos alineados con las necesidades
+      de ingeniería y validación.
+  BC-4210.20.20:
+    name: Configuración de entornos
+    description: |
+      Configuración de entornos no productivos para mantener la paridad con
+      producción donde sea necesario.
+  BC-4210.20.30:
+    name: Gestión de datos de entornos
+    description: |
+      Provisión, enmascaramiento y actualización de datos en entornos
+      no productivos.
+  BC-4210.30:
+    name: Gestión de ingeniería de lanzamientos
+    description: |
+      Cadencia, versionado, ramificación y disciplina de notas de lanzamiento
+      para los lanzamientos de software.
+  BC-4210.30.10:
+    name: Gestión de la cadencia de lanzamientos
+    description: |
+      Definición y administración de la cadencia de lanzamientos en todas
+      las áreas del producto.
+  BC-4210.30.20:
+    name: Versionado y ramificación
+    description: |
+      Esquema de versionado y estrategia de ramificación aplicados a los
+      lanzamientos del producto.
+  BC-4210.30.30:
+    name: Redacción de notas de lanzamiento
+    description: |
+      Redacción de notas de lanzamiento dirigidas a clientes y operadores
+      para cada versión.
+  BC-4210.40:
+    name: Orquestación de implantaciones
+    description: |
+      Estrategias para llevar cambios de software a producción de forma segura
+      y con radio de impacto controlado.
+  BC-4210.40.10:
+    name: Despliegue progresivo
+    description: |
+      Despliegue gradual de lanzamientos a cohortes crecientes de inquilinos
+      o usuarios.
+  BC-4210.40.20:
+    name: Implantación canary
+    description: |
+      Implantación de lanzamientos en una pequeña población canary con
+      evaluación automatizada del estado del servicio.
+  BC-4210.40.30:
+    name: Implantación azul-verde
+    description: |
+      Implantación en entornos paralelos con transferencia de tráfico para
+      cambios con tiempo de inactividad casi nulo.
+  BC-4210.40.40:
+    name: Coordinación de reversión
+    description: |
+      Reversión coordinada de lanzamientos ante señales adversas.
+  BC-4210.50:
+    name: Gestión de indicadores de funcionalidad
+    description: |
+      Control del ciclo de vida y en tiempo de ejecución de los indicadores de
+      funcionalidad (feature flags) utilizados para desacoplar el despliegue del
+      lanzamiento y dirigir funcionalidades a cohortes.
+    in_scope:
+      - Creación, retirada y auditoría de indicadores de funcionalidad
+      - Reglas de segmentación
+    out_of_scope:
+      - Metodología de experimentación y adjudicación (cubierta por Gestión de telemetría de producto y experimentación)
+  BC-4210.50.10:
+    name: Ciclo de vida del indicador de funcionalidad
+    description: |
+      Ciclo de vida de los indicadores de funcionalidad desde su creación
+      hasta su retirada.
+  BC-4210.50.20:
+    name: Gestión de reglas de segmentación
+    description: |
+      Definición de reglas de segmentación que determinan qué sujetos
+      reciben una variante del indicador.
+  BC-4210.50.30:
+    name: Gestión del estado de los indicadores
+    description: |
+      Práctica de mantenimiento que retira indicadores obsoletos y evita la
+      acumulación de código condicional muerto.
+  BC-4210.60:
+    name: Gestión de configuración y secretos
+    description: |
+      Gestión de valores de configuración en tiempo de ejecución y secretos
+      consumidos por los servicios del producto.
+  BC-4210.60.10:
+    name: Gestión de configuración en tiempo de ejecución
+    description: |
+      Almacenamiento, distribución y auditoría de valores de configuración
+      en tiempo de ejecución.
+  BC-4210.60.20:
+    name: Gestión del ciclo de vida de secretos
+    description: |
+      Emisión, rotación y revocación de secretos utilizados por los servicios
+      del producto.
+  BC-4210.70:
+    name: Autorización de cambios en producción
+    description: |
+      Revisión previa al despliegue, gobernanza de ventanas de despliegue y
+      autorización de acceso humano a producción.
+  BC-4210.70.10:
+    name: Revisión previa al despliegue
+    description: |
+      Revisión y aprobación de cambios antes de la implantación en producción.
+  BC-4210.70.20:
+    name: Gobernanza de ventanas de despliegue
+    description: |
+      Gobernanza de las ventanas de despliegue permitidas y los períodos de
+      congelación.
+  BC-4210.70.30:
+    name: Autorización de acceso a producción
+    description: |
+      Autorización, concesión en el momento justo y auditoría del acceso
+      humano a los sistemas de producción.

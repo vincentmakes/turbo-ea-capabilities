@@ -1,0 +1,124 @@
+locale: es
+source: L1-freight-capacity-management.yaml
+entries:
+  BC-2400:
+    name: Gestión de capacidad de carga
+    description: |
+      Venta, asignación y gestión del rendimiento de la capacidad de transporte en
+      travesías de buques, vuelos, carriles de camión y ferroviarios, y parques de
+      equipos.
+  BC-2400.10:
+    name: Gestión del inventario de capacidad
+    description: |
+      Mantenimiento de la capacidad de transporte disponible por modo, carril,
+      horario y tipo de equipo como fuente para la asignación y reserva.
+    in_scope:
+      - Registros de capacidad de buques, vuelos, vehículos y material rodante
+      - Capacidad del parque de equipos (contenedores, remolques, ULDs)
+      - Capacidad de carril vinculada a horario
+    out_of_scope:
+      - Diseño de red y horarios a largo plazo (BC-2410)
+      - Aceptación de reservas y solicitudes (BC-2400.40)
+  BC-2400.10.10:
+    name: Inventario de capacidad de buques y vehículos
+    description: |
+      Registro de la capacidad de carga, espacio en cubierta y espacio de cabina
+      por buque, aeronave, tren o vehículo.
+  BC-2400.10.20:
+    name: Inventario de capacidad de equipos
+    description: |
+      Inventario de contenedores, remolques, chasis y ULDs disponibles por
+      ubicación y estado.
+  BC-2400.10.30:
+    name: Capacidad de carriles y horarios
+    description: |
+      Capacidad por servicio programado en un carril, incluidos los tramos de
+      conexión.
+  BC-2400.10.40:
+    name: Agrupación de capacidad e intercambio de espacios
+    description: |
+      Capacidad compartida en alianzas y acuerdos de intercambio de espacios con
+      transportistas asociados.
+  BC-2400.20:
+    name: Gestión de la asignación de capacidad
+    description: |
+      Asignación de la capacidad disponible entre contratos de clientes, segmentos
+      de mercado y demanda spot.
+  BC-2400.20.10:
+    name: Asignación de capacidad contractual
+    description: |
+      Asignación de capacidad a clientes cubiertos por compromisos de cantidad
+      mínima y acuerdos de cuenta nominada.
+  BC-2400.20.20:
+    name: Asignación de capacidad en mercado spot
+    description: |
+      Asignación de capacidad liberada a canales de reserva en el mercado spot.
+  BC-2400.20.30:
+    name: Reasignación y recuperación de capacidad
+    description: |
+      Reasignación de capacidad no utilizada o recuperada antes del cierre de
+      plazo.
+  BC-2400.30:
+    name: Gestión de rendimiento e ingresos
+    description: |
+      Optimización de los ingresos por unidad de capacidad mediante decisiones de
+      precios, combinación y sobrerreserva.
+  BC-2400.30.10:
+    name: Previsión de demanda de capacidad
+    description: |
+      Previsión de reservas, no presentaciones y riesgo de denegación de embarque
+      por servicio.
+  BC-2400.30.20:
+    name: Optimización del rendimiento
+    description: |
+      Optimización de la combinación de clases tarifarias para maximizar el
+      rendimiento por tonelada, espacio o TEU.
+  BC-2400.30.30:
+    name: Gestión de sobrerreservas
+    description: |
+      Establecimiento y seguimiento de límites de sobrerreserva y exposición a
+      denegaciones de embarque.
+  BC-2400.30.40:
+    name: Gestión de la combinación de ingresos
+    description: |
+      Gestión de la combinación de ingresos entre líneas contractuales, spot y
+      accesorias.
+  BC-2400.40:
+    name: Gestión de reservas y solicitudes
+    description: |
+      Aceptación, modificación y cancelación de reservas de capacidad frente a
+      horarios y cotizaciones publicados.
+  BC-2400.40.10:
+    name: Reserva de capacidad
+    description: |
+      Aceptación de reservas frente a la capacidad disponible y la validez de
+      tarifas.
+  BC-2400.40.20:
+    name: Modificación y cancelación de reservas
+    description: |
+      Cambios, traslados y cancelaciones de reservas, incluidas las tasas por no
+      presentación.
+  BC-2400.40.30:
+    name: Gestión de lista de espera y stand-by
+    description: |
+      Gestión de la carga en stand-by y en lista de espera para capacidad
+      confirmada.
+  BC-2400.50:
+    name: Gestión del rendimiento de la capacidad
+    description: |
+      Seguimiento del factor de carga, ocupación y utilización para impulsar las
+      decisiones sobre combinación de capacidad y cambios de red.
+  BC-2400.50.10:
+    name: Análisis del factor de carga
+    description: |
+      Análisis del factor de carga por servicio, carril y segmento.
+  BC-2400.50.20:
+    name: Informe de utilización de capacidad
+    description: |
+      Reporte de la utilización de la capacidad a los equipos comerciales y de
+      operaciones.
+  BC-2400.50.30:
+    name: Mejora del rendimiento de la capacidad
+    description: |
+      Iniciativas para mejorar los ingresos por espacio y reducir el
+      reposicionamiento en vacío.

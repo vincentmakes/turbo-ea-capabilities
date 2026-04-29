@@ -1,0 +1,176 @@
+locale: es
+source: L1-ev-charging-network-operations-management.yaml
+entries:
+  BC-3480:
+    name: Gestión de operaciones de red de recarga de vehículos eléctricos
+    description: |
+      Operaciones de redes de recarga de vehículos eléctricos para operadores
+      de puntos de recarga y proveedores de servicios de e-movilidad — planificación
+      de emplazamientos, operaciones de puntos de recarga, gestión de energía y
+      tarifas, operaciones de clientes e itinerancia, facturación y liquidación,
+      mantenimiento de cargadores y participación en servicios de red.
+  BC-3480.10:
+    name: Planificación y despliegue de emplazamientos de recarga
+    description: |
+      Selección de emplazamientos, permisos, conexión a la red y despliegue
+      físico de la infraestructura de recarga.
+  BC-3480.10.10:
+    name: Selección de emplazamientos de recarga
+    description: |
+      Identificación y cualificación de emplazamientos de recarga frente a
+      criterios de demanda, terreno y red eléctrica.
+  BC-3480.10.20:
+    name: Permisos y conexión a la red del emplazamiento
+    description: |
+      Obtención de permisos, aprobación de planificación y coordinación de la
+      conexión a la red eléctrica para los emplazamientos de recarga.
+  BC-3480.10.30:
+    name: Coordinación de la instalación de cargadores
+    description: |
+      Coordinación de la instalación de cargadores, obra civil, puesta en marcha
+      y traspaso a operaciones.
+  BC-3480.20:
+    name: Operaciones de puntos de recarga
+    description: |
+      Operación diaria de los puntos de recarga, incluida la monitorización,
+      el ciclo de vida de la sesión y el control del firmware mediante OCPP.
+  BC-3480.20.10:
+    name: Monitorización de puntos de recarga
+    description: |
+      Monitorización en tiempo real de la salud, la disponibilidad y los estados
+      de alarma de los puntos de recarga.
+  BC-3480.20.20:
+    name: Gestión del ciclo de vida de la sesión de recarga
+    description: |
+      Gestión del ciclo de vida de la sesión de recarga desde la autorización
+      hasta la entrega de energía y la finalización.
+  BC-3480.20.30:
+    name: Gestión del firmware y la configuración del cargador
+    description: |
+      Gestión de versiones de firmware del cargador, perfiles de configuración
+      y actualizaciones remotas.
+  BC-3480.30:
+    name: Gestión de energía y tarifas de recarga
+    description: |
+      Gestión de la coordinación del aprovisionamiento de energía, las tarifas
+      de recarga y la optimización del tiempo de uso en toda la red de recarga.
+  BC-3480.30.10:
+    name: Coordinación del aprovisionamiento de energía mayorista
+    description: |
+      Coordinación con el aprovisionamiento de energía en volúmenes, cobertura
+      y PPA de apoyo a las operaciones de recarga.
+  BC-3480.30.20:
+    name: Definición de tarifas de recarga
+    description: |
+      Definición de tarifas de recarga públicas, de socios y de itinerancia
+      en los distintos mercados.
+  BC-3480.30.30:
+    name: Optimización de la demanda y el tiempo de uso
+    description: |
+      Optimización de las operaciones de recarga frente a las estructuras de
+      energía de demanda y tiempo de uso.
+  BC-3480.40:
+    name: Gestión de clientes y suscripciones de recarga
+    description: |
+      Alta de clientes, planes de suscripción y autenticación para los servicios
+      de recarga.
+  BC-3480.40.10:
+    name: Alta de clientes de recarga
+    description: |
+      Alta de clientes de recarga, incluida la identidad, el método de pago
+      y la selección del plan.
+  BC-3480.40.20:
+    name: Gestión de planes de suscripción de recarga
+    description: |
+      Gestión de planes de suscripción, membresía y prepago para clientes
+      de recarga.
+  BC-3480.40.30:
+    name: Autenticación y autorización de recarga
+    description: |
+      Autenticación y autorización de sesiones de recarga mediante RFID,
+      aplicación o Plug-and-Charge.
+  BC-3480.50:
+    name: Facturación y liquidación de recarga
+    description: |
+      Facturación de sesiones de recarga, liquidación con socios de itinerancia
+      y gestión de recibos para los clientes de recarga.
+  BC-3480.50.10:
+    name: Facturación de sesiones de recarga
+    description: |
+      Tarificación y facturación de sesiones de recarga para clientes directos
+      y de itinerancia.
+  BC-3480.50.20:
+    name: Liquidación de itinerancia
+    description: |
+      Liquidación de sesiones de itinerancia con CPOs y EMSPs socios mediante
+      OCPI y protocolos equivalentes.
+  BC-3480.50.30:
+    name: Gestión de reembolsos y recibos
+    description: |
+      Emisión de recibos, apoyo al reembolso de gastos y documentación fiscal
+      para los clientes de recarga.
+  BC-3480.60:
+    name: Interoperabilidad de la red de recarga
+    description: |
+      Interoperabilidad con socios de itinerancia y conformidad con los estándares
+      de recarga en conectores y protocolos.
+  BC-3480.60.10:
+    name: Gestión de socios de itinerancia
+    description: |
+      Alta y gestión de socios de itinerancia y concentradores de red.
+  BC-3480.60.20:
+    name: Operaciones de Plug-and-Charge
+    description: |
+      Operación de certificados de contrato y flujos de autenticación
+      Plug-and-Charge según ISO 15118.
+  BC-3480.60.30:
+    name: Gestión de compatibilidad de conectores del cargador
+    description: |
+      Gestión de la compatibilidad de conectores CCS, NACS, CHAdeMO y GB/T y
+      las estrategias de adaptadores.
+  BC-3480.70:
+    name: Servicio de campo y mantenimiento de recarga
+    description: |
+      Servicio de campo y mantenimiento de los activos de recarga, incluido
+      el despacho, el mantenimiento preventivo y los repuestos.
+  BC-3480.70.10:
+    name: Despacho por averías del cargador
+    description: |
+      Despacho de técnicos de campo en respuesta a averías del cargador y
+      problemas reportados por el cliente.
+  BC-3480.70.20:
+    name: Mantenimiento preventivo del cargador
+    description: |
+      Mantenimiento preventivo planificado e inspección de los activos de
+      recarga.
+  BC-3480.70.30:
+    name: Gestión de repuestos del cargador
+    description: |
+      Gestión del inventario de repuestos del cargador, grupos de reparación
+      y obsolescencia.
+  BC-3480.80:
+    name: Participación en servicios de red y energía
+    description: |
+      Participación de los activos de recarga en los mercados de red y energía,
+      incluidos la respuesta a la demanda, V2G y la recarga inteligente.
+    in_scope:
+      - Servicios de exportación de energía y capacidad V2G
+      - Participación en programas de respuesta a la demanda
+      - Optimización del programa de recarga inteligente
+    out_of_scope:
+      - Operaciones de activos de generación y negociación de energía mayorista
+  BC-3480.80.10:
+    name: Operaciones del servicio V2G
+    description: |
+      Operación de los servicios V2G que suministran productos de energía y
+      capacidad a los mercados de red y regulación.
+  BC-3480.80.20:
+    name: Participación en programas de respuesta a la demanda
+    description: |
+      Participación en programas de respuesta a la demanda, incluida la respuesta
+      al despacho y la liquidación.
+  BC-3480.80.30:
+    name: Gestión del programa de recarga inteligente
+    description: |
+      Recarga inteligente basada en programación en todos los emplazamientos
+      y vehículos para optimizar el coste y el impacto en la red.

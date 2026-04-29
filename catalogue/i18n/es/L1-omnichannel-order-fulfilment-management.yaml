@@ -1,0 +1,122 @@
+locale: es
+source: L1-omnichannel-order-fulfilment-management.yaml
+entries:
+  BC-2330:
+    name: Gestión de pedidos omnicanal
+    description: |
+      Orquestación multicanal de pedidos de consumidores: captación en cualquier
+      canal, promesa desde cualquier nodo y cumplimiento mediante tienda, centro
+      de distribución, marketplace, envío directo del proveedor o partner de
+      última milla.
+  BC-2330.10:
+    name: Gestión de la orquestación de canales
+    description: |
+      Visión unificada de los pedidos del consumidor en todos los canales,
+      enrutamiento por mix de canales y estado consistente en el canal digital,
+      la tienda y el marketplace.
+    in_scope:
+      - Reglas de enrutamiento de canal y selección de nodo
+      - Visión unificada de pedidos en todos los canales
+      - Economía del mix de canales y compromisos del coste de cumplimiento
+    out_of_scope:
+      - Cumplimiento genérico de pedidos (BC-520.40)
+  BC-2330.10.10:
+    name: Gestión de reglas de enrutamiento de canal
+    description: |
+      Definición de reglas de enrutamiento que seleccionan el nodo de cumplimiento
+      según coste y nivel de servicio.
+  BC-2330.10.20:
+    name: Visión de pedidos multicanal
+    description: |
+      Visión unificada de pedidos, estado e historial en todos los canales.
+  BC-2330.10.30:
+    name: Economía del mix de canales
+    description: |
+      Análisis de la economía unitaria por canal y ruta de cumplimiento.
+  BC-2330.20:
+    name: Gestión de operaciones de clic y recoge
+    description: |
+      Operaciones de compra online y recogida en tienda, en bordillo y en taquilla
+      que conectan los pedidos digitales con los puntos de recogida físicos.
+  BC-2330.20.10:
+    name: Operaciones de picking y empaque en tienda
+    description: |
+      Preparación y empaque de pedidos online por el personal de tienda.
+  BC-2330.20.20:
+    name: Entrega al cliente en recogida
+    description: |
+      Entrega al cliente en el punto de recogida, incluyendo verificación de
+      identidad y gestión de incidencias.
+  BC-2330.20.30:
+    name: Recogida en bordillo y taquilla
+    description: |
+      Operaciones de entrega en bordillo y recogida en taquilla.
+  BC-2330.30:
+    name: Gestión del cumplimiento de pedidos distribuido
+    description: |
+      Cumplimiento de pedidos mediante envío desde tienda, dark store y envío
+      directo del proveedor desde un inventario distribuido hacia los destinos
+      del consumidor.
+    in_scope:
+      - Operaciones de envío desde tienda
+      - Operaciones de dark store y centro de microfulfilment
+      - Orquestación del envío directo del proveedor
+  BC-2330.30.10:
+    name: Operaciones de envío desde tienda
+    description: |
+      Picking, empaque y envío de pedidos online desde tiendas físicas.
+  BC-2330.30.20:
+    name: Operaciones de dark store y microfulfilment
+    description: |
+      Operaciones de dark stores y centros de microfulfilment para pedidos
+      digitales.
+  BC-2330.30.30:
+    name: Orquestación del envío directo del proveedor
+    description: |
+      Orquestación del envío directo del proveedor, incluido el enrutamiento
+      de pedidos y el seguimiento.
+  BC-2330.40:
+    name: Gestión de operaciones como vendedor en marketplace
+    description: |
+      Operación del retailer como vendedor en marketplaces de terceros y gestión
+      de vendedores externos en un marketplace propio.
+  BC-2330.40.10:
+    name: Gestión de listados en marketplace
+    description: |
+      Publicación de artículos en marketplaces de terceros, incluida la
+      adaptación de contenido.
+  BC-2330.40.20:
+    name: Captación de pedidos en marketplace
+    description: |
+      Captación y traducción de pedidos de marketplace al pipeline de pedidos
+      del host.
+  BC-2330.40.30:
+    name: Alta de vendedores externos
+    description: |
+      Alta de vendedores externos en el marketplace propio del retailer.
+  BC-2330.40.40:
+    name: Gestión del rendimiento de vendedores externos
+    description: |
+      Gestión del rendimiento y el cumplimiento de políticas de los vendedores
+      externos.
+  BC-2330.50:
+    name: Gestión de franjas de entrega al consumidor
+    description: |
+      Reserva de franjas de entrega orientada al consumidor, tarificación de
+      ventanas temporales y coordinación del despacho con mensajeros para
+      entregas a domicilio.
+  BC-2330.50.10:
+    name: Reserva de franjas de entrega
+    description: |
+      Reserva por parte del consumidor de franjas de entrega con lógica de
+      disponibilidad y capacidad.
+  BC-2330.50.20:
+    name: Tarificación de ventanas temporales
+    description: |
+      Tarificación dinámica de ventanas temporales de entrega según demanda y
+      densidad de ruta.
+  BC-2330.50.30:
+    name: Coordinación del despacho con mensajeros
+    description: |
+      Coordinación del despacho con mensajeros propios y de terceros para la
+      última milla.

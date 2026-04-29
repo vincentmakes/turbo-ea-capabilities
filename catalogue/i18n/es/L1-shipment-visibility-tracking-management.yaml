@@ -1,0 +1,99 @@
+locale: es
+source: L1-shipment-visibility-tracking-management.yaml
+entries:
+  BC-2510:
+    name: Gestión de la visibilidad y seguimiento de envíos
+    description: |
+      Visibilidad de extremo a extremo de los envíos mediante la captura de
+      eventos, la resolución de estados, la predicción de ETA, las alertas de
+      excepciones y las operaciones de torre de control.
+  BC-2510.10:
+    name: Gestión de la captura de eventos y estados
+    description: |
+      Captura de eventos de envío provenientes de transportistas, IoT y sistemas
+      operativos, y su conversión en estados canónicos.
+    in_scope:
+      - Ingesta de eventos EDI 214, IFTSTA y EPCIS
+      - Captura de eventos de IoT y telemática
+    out_of_scope:
+      - Telemática para la condición de activos (BC-2430.40)
+  BC-2510.10.10:
+    name: Ingesta de eventos de transportistas
+    description: |
+      Ingesta de eventos hito del lado del transportista vía EDI y APIs.
+  BC-2510.10.20:
+    name: Captura de eventos de IoT y telemática
+    description: |
+      Captura de eventos de IoT y telemática a nivel de carga.
+  BC-2510.10.30:
+    name: Captura de actualizaciones de estado manuales
+    description: |
+      Captura de actualizaciones de estado manuales de conductores, agentes y
+      socios.
+  BC-2510.20:
+    name: Gestión del seguimiento de envíos
+    description: |
+      Resolución del estado del envío a través de tramos, modos y socios, y
+      entrega a superficies de seguimiento internas y orientadas al cliente.
+  BC-2510.20.10:
+    name: Resolución del estado del envío
+    description: |
+      Resolución del estado canónico del envío a partir de eventos brutos.
+  BC-2510.20.20:
+    name: Integración del seguimiento multitramo
+    description: |
+      Integración de trayectos multitramo y multiportador en una única traza.
+  BC-2510.20.30:
+    name: Operaciones del portal de seguimiento público
+    description: |
+      Operación de portales de seguimiento público y APIs para clientes.
+  BC-2510.30:
+    name: Gestión de la predicción de ETA
+    description: |
+      Cálculo y refinamiento continuo del tiempo estimado de llegada.
+  BC-2510.30.10:
+    name: Cálculo del ETA
+    description: |
+      Cálculo determinístico del ETA a partir de horarios e hitos.
+  BC-2510.30.20:
+    name: Modelización predictiva del ETA
+    description: |
+      Modelización predictiva del ETA usando datos históricos y contextuales.
+  BC-2510.30.30:
+    name: Alertas de variación del ETA
+    description: |
+      Alertas sobre variaciones materiales del ETA frente al compromiso.
+  BC-2510.40:
+    name: Gestión de excepciones y alertas
+    description: |
+      Detección de excepciones operativas, notificación a las partes interesadas
+      y seguimiento de la resolución de excepciones.
+  BC-2510.40.10:
+    name: Detección de excepciones
+    description: |
+      Detección de excepciones operativas basada en reglas y modelos.
+  BC-2510.40.20:
+    name: Notificación a partes interesadas
+    description: |
+      Notificación a clientes, equipos de operaciones y socios.
+  BC-2510.40.30:
+    name: Seguimiento de la resolución de excepciones
+    description: |
+      Seguimiento del triaje, la titularidad y el cierre de excepciones.
+  BC-2510.50:
+    name: Gestión de operaciones de torre de control
+    description: |
+      Visibilidad de extremo a extremo, monitorización del rendimiento e
+      intervención proactiva en todos los transportistas y socios.
+  BC-2510.50.10:
+    name: Panel de visibilidad de extremo a extremo
+    description: |
+      Operación de paneles de visibilidad de extremo a extremo en toda la red.
+  BC-2510.50.20:
+    name: Monitorización del rendimiento entre transportistas
+    description: |
+      Monitorización del rendimiento entre transportistas y socios.
+  BC-2510.50.30:
+    name: Coordinación de intervenciones proactivas
+    description: |
+      Coordinación de intervenciones proactivas para proteger los compromisos.

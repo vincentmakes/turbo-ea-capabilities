@@ -1,0 +1,183 @@
+locale: es
+source: L1-software-product-engineering-management.yaml
+entries:
+  BC-4200:
+    name: Gestión de ingeniería de productos de software
+    description: |
+      Descubrimiento, especificación, diseño, implementación, revisión de código e
+      ingeniería de calidad de productos SaaS desde la idea hasta la compilación
+      lista para lanzamiento.
+  BC-4200.10:
+    name: Gestión del descubrimiento de producto y backlog
+    description: |
+      Investigación de oportunidades, ideación, validación y administración del
+      backlog que transforman las señales del mercado y de clientes en un conjunto
+      de trabajo priorizado.
+    in_scope:
+      - Investigación de usuarios y de mercado
+      - Refinamiento y priorización del backlog
+      - Definición y actualización de la hoja de ruta
+    out_of_scope:
+      - Analítica cuantitativa de producto (cubierta por Gestión de telemetría de producto y experimentación)
+      - Generación de demanda de marketing
+  BC-4200.10.10:
+    name: Investigación de usuarios
+    description: |
+      Investigación generativa y evaluativa con usuarios para identificar
+      necesidades, fricciones y disposición a pagar.
+  BC-4200.10.20:
+    name: Refinamiento del backlog
+    description: |
+      Refinamiento continuo del backlog de producto, incluyendo estimación,
+      descomposición y repriorización.
+  BC-4200.10.30:
+    name: Definición de la hoja de ruta
+    description: |
+      Definición y actualización periódica de la hoja de ruta del producto y
+      las áreas de inversión temáticas.
+  BC-4200.10.40:
+    name: Síntesis de retroalimentación de clientes
+    description: |
+      Síntesis de la retroalimentación entrante de soporte, éxito, ventas y
+      comunidad en señales de producto accionables.
+  BC-4200.20:
+    name: Gestión de especificaciones de producto
+    description: |
+      Captura del comportamiento previsto, las restricciones y los criterios
+      de aceptación para que el trabajo de ingeniería pueda ejecutarse de
+      manera predecible.
+    in_scope:
+      - Especificaciones funcionales y no funcionales
+      - Criterios de aceptación
+    out_of_scope:
+      - Diseño visual e interacción (cubierto por Gestión de diseño de software)
+  BC-4200.20.10:
+    name: Especificación funcional
+    description: |
+      Especificación del comportamiento previsto y los resultados visibles para
+      el usuario de las funcionalidades y capacidades.
+  BC-4200.20.20:
+    name: Especificación no funcional
+    description: |
+      Especificación de requisitos no funcionales como disponibilidad, latencia,
+      rendimiento y postura de seguridad.
+  BC-4200.20.30:
+    name: Definición de criterios de aceptación
+    description: |
+      Definición de criterios de aceptación verificables que establecen el
+      significado de "hecho" para funcionalidades e historias.
+  BC-4200.30:
+    name: Gestión de diseño de software
+    description: |
+      Diseño de experiencia de usuario, sistema y accesibilidad para productos
+      de software, anclado en sistemas de diseño compartidos.
+  BC-4200.30.10:
+    name: Diseño de experiencia de usuario
+    description: |
+      Diseño de interacción, arquitectura de información y diseño visual de las
+      superficies del producto.
+  BC-4200.30.20:
+    name: Diseño de sistemas
+    description: |
+      Diseño arquitectónico de componentes de software, servicios, flujos de
+      datos e interfaces externas.
+  BC-4200.30.30:
+    name: Administración del sistema de diseño
+    description: |
+      Administración del sistema de diseño compartido, incluyendo componentes,
+      tokens y guías de uso.
+  BC-4200.30.40:
+    name: Diseño de accesibilidad
+    description: |
+      Conformidad del diseño con los estándares de accesibilidad en las
+      superficies del producto.
+  BC-4200.40:
+    name: Gestión de construcción de software
+    description: |
+      Práctica de implementación que incluye control de código fuente, revisión
+      de código y disciplinas de codificación colaborativa.
+  BC-4200.40.10:
+    name: Gestión del código fuente
+    description: |
+      Administración de repositorios de código fuente, política de ramificación
+      y propiedad del código.
+  BC-4200.40.20:
+    name: Práctica de revisión de código
+    description: |
+      Revisión de cambios de código por pares conforme a los estándares de
+      ingeniería y seguridad.
+  BC-4200.40.30:
+    name: Práctica de programación en pareja y en grupo
+    description: |
+      Prácticas de codificación colaborativa utilizadas para compartir
+      conocimiento y elevar la calidad en trabajos seleccionados.
+  BC-4200.50:
+    name: Ingeniería de calidad de software
+    description: |
+      Estrategia de pruebas, administración del conjunto de pruebas automatizadas
+      y gestión de defectos para productos de software.
+    in_scope:
+      - Pruebas automatizadas unitarias, de integración y extremo a extremo del producto
+      - Clasificación y resolución de defectos
+    out_of_scope:
+      - Sistema de gestión de calidad a nivel empresarial (cubierto por Gestión de calidad)
+      - Pruebas de rendimiento y resiliencia del servicio en ejecución (cubiertas por Gestión de operaciones de plataforma SaaS)
+  BC-4200.50.10:
+    name: Definición de estrategia de pruebas
+    description: |
+      Definición de la estrategia de pruebas en las capas unitaria, de integración,
+      extremo a extremo y exploratoria.
+  BC-4200.50.20:
+    name: Gestión del conjunto de pruebas automatizadas
+    description: |
+      Administración de los conjuntos de pruebas automatizadas, incluyendo
+      cobertura, inestabilidad y tiempo de ejecución.
+  BC-4200.50.30:
+    name: Clasificación y resolución de defectos
+    description: |
+      Clasificación y resolución de defectos reportados contra el producto.
+  BC-4200.50.40:
+    name: Gestión de cobertura de regresión
+    description: |
+      Gestión de la cobertura de regresión a medida que evoluciona la superficie
+      del producto.
+  BC-4200.60:
+    name: Administración del software de código abierto
+    description: |
+      Uso entrante, contribución saliente y artefactos de cadena de suministro
+      del software de código abierto integrado en el producto.
+  BC-4200.60.10:
+    name: Cumplimiento del código abierto entrante
+    description: |
+      Cumplimiento de las licencias de código abierto entrantes y las
+      obligaciones de notificación.
+  BC-4200.60.20:
+    name: Contribución al código abierto saliente
+    description: |
+      Gobernanza de las contribuciones salientes y administración de proyectos
+      de código abierto.
+  BC-4200.60.30:
+    name: Gestión de lista de materiales de software
+    description: |
+      Generación, distribución y mantenimiento de listas de materiales de
+      software en formatos estándar.
+  BC-4200.70:
+    name: Gestión de productividad de ingeniería
+    description: |
+      Plataformas internas para desarrolladores, herramientas y medición del
+      rendimiento de ingeniería que elevan el rendimiento sostenido de entrega.
+  BC-4200.70.10:
+    name: Gestión de la cadena de herramientas del desarrollador
+    description: |
+      Selección y administración de cadenas de herramientas para desarrolladores
+      en toda la organización de ingeniería.
+  BC-4200.70.20:
+    name: Gestión de la plataforma interna del desarrollador
+    description: |
+      Operación de plataformas internas que abstraen la infraestructura y los
+      flujos de trabajo pavimentados para los ingenieros.
+  BC-4200.70.30:
+    name: Métricas de rendimiento de ingeniería
+    description: |
+      Medición del rendimiento de ingeniería mediante métricas de entrega y
+      experiencia del desarrollador.

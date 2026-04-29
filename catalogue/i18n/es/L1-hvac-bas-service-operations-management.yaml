@@ -1,0 +1,190 @@
+locale: es
+source: L1-hvac-bas-service-operations-management.yaml
+entries:
+  BC-2060:
+    name: Gestión de operaciones de servicio HVAC/BAS
+    description: |
+      Servicio liderado por el OEM y por contratistas sobre equipos HVAC instalados y BAS —
+      gestión de la configuración de la base instalada, mantenimiento preventivo y reactivo,
+      reprogramación BAS y servicio de software, retrofit y modernización de equipos, contratos
+      de servicio basados en desempeño y servicio conectado remoto.
+    in_scope:
+      - Registro de la configuración de equipos y BAS de la base instalada
+      - Ejecución de contratos de mantenimiento preventivo y servicio reactivo/de emergencia
+      - Reprogramación BAS, actualizaciones de firmware y operaciones de copia de seguridad/restauración
+      - Ejecución de retrofit y modernización en equipos HVAC instalados
+      - Contratos de servicio basados en desempeño y resultados
+      - Servicio conectado remoto y operaciones del centro de diagnóstico
+      - Gestión de acuerdos de nivel de servicio y satisfacción del cliente
+    out_of_scope:
+      - Servicio de campo genérico intersectorial (BC-1050) y repuestos (BC-1060)
+      - Comisionamiento de proyectos y entrega de Cx (BC-2050)
+      - Aprovisionamiento e informes de refrigerante (BC-2040)
+      - Ingeniería de productos de equipos HVAC (BC-2000)
+  BC-2060.10:
+    name: Gestión de la configuración de la base instalada
+    description: |
+      Mantenimiento de los datos de configuración tal como se instaló y tal como se mantiene
+      para la base instalada global.
+  BC-2060.10.10:
+    name: Registro de activos de equipos
+    description: |
+      Registro de equipos HVAC instalados por número de serie, sitio y cliente.
+  BC-2060.10.20:
+    name: Registro de configuraciones BAS
+    description: |
+      Registro de configuraciones BAS, controladores, puntos y secuencias en servicio.
+  BC-2060.10.30:
+    name: Registros tal como se mantiene
+    description: |
+      Registros de la configuración tal como se mantiene tras cada evento de servicio.
+  BC-2060.10.40:
+    name: Registros de modificación de la base instalada
+    description: |
+      Registros de las modificaciones posteriores a la entrega en los equipos y el BAS instalados.
+  BC-2060.20:
+    name: Operaciones de servicio de mantenimiento preventivo
+    description: |
+      Prestación del mantenimiento preventivo programado bajo contrato.
+  BC-2060.20.10:
+    name: Ejecución del contrato de mantenimiento
+    description: |
+      Ejecución del mantenimiento preventivo conforme al alcance contratado.
+  BC-2060.20.20:
+    name: Enrutamiento de visitas programadas
+    description: |
+      Enrutamiento y despacho de visitas de servicio programadas.
+  BC-2060.20.30:
+    name: Servicio de filtros y correas
+    description: |
+      Servicio rutinario de sustitución de filtros, correas y consumibles.
+  BC-2060.20.40:
+    name: Servicio de refrigerante y serpentines
+    description: |
+      Servicio rutinario de recarga de refrigerante y limpieza de serpentines.
+  BC-2060.20.50:
+    name: Reporte de cumplimiento del mantenimiento
+    description: |
+      Reporte del cumplimiento del mantenimiento preventivo a los clientes.
+  BC-2060.30:
+    name: Operaciones de servicio reactivo y de emergencia
+    description: |
+      Servicio reactivo y de emergencia fuera de horario en equipos instalados.
+  BC-2060.30.10:
+    name: Triaje de solicitudes de servicio
+    description: |
+      Triaje de las solicitudes de servicio entrantes por urgencia y capacidad.
+  BC-2060.30.20:
+    name: Despacho de respuesta de emergencia
+    description: |
+      Despacho de equipos de respuesta de emergencia ante fallos críticos de equipos.
+  BC-2060.30.30:
+    name: Ejecución de reparación en sitio
+    description: |
+      Ejecución de reparaciones en sitio por los técnicos de servicio.
+  BC-2060.30.40:
+    name: Respuesta de emergencia ante fuga de refrigerante
+    description: |
+      Respuesta de emergencia ante fugas y escapes significativos de refrigerante.
+  BC-2060.40:
+    name: Reprogramación BAS y servicio de software
+    description: |
+      Servicio del lado del software en el BAS instalado — actualizaciones de secuencias,
+      actualizaciones de firmware y cambios de configuración.
+  BC-2060.40.10:
+    name: Despliegue de actualizaciones de secuencias
+    description: |
+      Despliegue de secuencias de operación actualizadas en los controladores instalados.
+  BC-2060.40.20:
+    name: Actualización de firmware del controlador
+    description: |
+      Actualización del firmware de los controladores BAS instalados.
+  BC-2060.40.30:
+    name: Modificación de puntos y horarios
+    description: |
+      Modificación en campo de puntos, horarios y tendencias del BAS.
+  BC-2060.40.40:
+    name: Operaciones de copia de seguridad y recuperación BAS
+    description: |
+      Copia de seguridad de la configuración BAS y recuperación ante eventos de fallo.
+  BC-2060.50:
+    name: Servicio de retrofit y modernización de equipos HVAC
+    description: |
+      Servicios de retrofit, sustitución y modernización prestados en la base HVAC instalada.
+  BC-2060.50.10:
+    name: Ingeniería de retrofit en sitio
+    description: |
+      Ingeniería en sitio de paquetes de retrofit adaptados a la instalación.
+  BC-2060.50.20:
+    name: Ejecución de sustitución de equipos
+    description: |
+      Ejecución en sitio de alcances de sustitución de equipos.
+  BC-2060.50.30:
+    name: Servicio de conversión de refrigerante
+    description: |
+      Conversión de equipos instalados a refrigerantes alternativos.
+  BC-2060.50.40:
+    name: Pruebas de validación de retrofit
+    description: |
+      Pruebas de validación tras el retrofit o la modernización.
+  BC-2060.60:
+    name: Operaciones de contratos de servicio de desempeño
+    description: |
+      Operación de contratos de servicio basados en desempeño y resultados.
+  BC-2060.60.10:
+    name: Ejecución del contrato de desempeño
+    description: |
+      Ejecución de las obligaciones de servicio basadas en desempeño.
+  BC-2060.60.20:
+    name: Seguimiento de ahorros garantizados
+    description: |
+      Seguimiento de los resultados de ahorros garantizados frente a la línea de base.
+  BC-2060.60.30:
+    name: Operaciones del mecanismo de reparto de riesgos
+    description: |
+      Operación de mecanismos de bonificación y penalización de reparto de riesgos.
+  BC-2060.60.40:
+    name: Reporte de resultados
+    description: |
+      Reporte de resultados contratados y métricas de nivel de servicio.
+  BC-2060.70:
+    name: Operaciones de servicio conectado remoto
+    description: |
+      Operaciones del centro de servicio remoto que aprovechan los datos de HVAC y BAS conectados.
+  BC-2060.70.10:
+    name: Operaciones del centro de diagnóstico remoto
+    description: |
+      Operaciones del centro de diagnóstico remoto para equipos conectados.
+  BC-2060.70.20:
+    name: Triaje remoto de incidencias
+    description: |
+      Triaje de incidencias identificadas a través de la telemetría remota.
+  BC-2060.70.30:
+    name: Ejecución de resoluciones remotas
+    description: |
+      Ejecución de resoluciones exclusivamente remotas cuando la incidencia no requiere visita en sitio.
+  BC-2060.70.40:
+    name: Incorporación de clientes al servicio conectado
+    description: |
+      Incorporación de clientes a las ofertas de servicio conectado.
+  BC-2060.80:
+    name: Gestión de la calidad del servicio y los ANS
+    description: |
+      Gestión de la calidad del servicio, los acuerdos de nivel de servicio y la satisfacción
+      del cliente.
+  BC-2060.80.10:
+    name: Seguimiento del acuerdo de nivel de servicio
+    description: |
+      Seguimiento del rendimiento del acuerdo de nivel de servicio.
+  BC-2060.80.20:
+    name: Captura de la satisfacción del cliente
+    description: |
+      Captura de la satisfacción del cliente en las interacciones de servicio.
+  BC-2060.80.30:
+    name: Gestión de escaladas de servicio
+    description: |
+      Gestión de escaladas de servicio y acciones de recuperación.
+  BC-2060.80.40:
+    name: Reporte de rendimiento del servicio
+    description: |
+      Reporte periódico del rendimiento del servicio a clientes y gestión.

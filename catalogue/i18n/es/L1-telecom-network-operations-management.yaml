@@ -1,0 +1,200 @@
+locale: es
+source: L1-telecom-network-operations-management.yaml
+entries:
+  BC-2600:
+    name: Operaciones de red de telecomunicaciones
+    description: |
+      Operación cotidiana de redes fijas, móviles e IP en los dominios de acceso radio,
+      núcleo, transporte y borde, abarcando fallos, configuración, rendimiento, inventario,
+      cambios, operaciones de seguridad y coordinación de campo, bajo los marcos TMN FCAPS
+      y eTOM de gestión de recursos y operaciones.
+  BC-2600.10:
+    name: Gestión de fallos de red
+    description: |
+      Detección, correlación, registro en tickets, restauración y análisis de causa raíz
+      de fallos de red en los dominios de acceso, núcleo y transporte.
+  BC-2600.10.10:
+    name: Correlación de alarmas
+    description: |
+      Correlación y deduplicación en tiempo real de alarmas de red para generar eventos
+      accionables.
+  BC-2600.10.20:
+    name: Gestión de tickets de incidencia
+    description: |
+      Gestión del ciclo de vida de los tickets de incidencia de red desde la creación
+      hasta el cierre.
+  BC-2600.10.30:
+    name: Gestión de interrupciones de red
+    description: |
+      Coordinación de la respuesta ante interrupciones graves de red, comunicaciones y
+      acciones de recuperación.
+  BC-2600.10.40:
+    name: Análisis de causa raíz
+    description: |
+      Investigación estructurada de fallos recurrentes o graves para identificar y
+      eliminar sus causas subyacentes.
+  BC-2600.20:
+    name: Gestión de configuración de red
+    description: |
+      Definición y aplicación de estándares de configuración de elementos de red y
+      despliegue controlado de cambios de configuración.
+  BC-2600.20.10:
+    name: Gestión de configuraciones base
+    description: |
+      Definición y mantenimiento de configuraciones base aprobadas por tipo y función
+      de elemento de red.
+  BC-2600.20.20:
+    name: Gestión de parámetros de red
+    description: |
+      Gestión del ciclo de vida de parámetros de red ajustables y sus rangos autorizados.
+  BC-2600.20.30:
+    name: Gestión de imágenes de software
+    description: |
+      Custodia y control de versiones aprobadas de imágenes de software y firmware de
+      elementos de red.
+  BC-2600.20.40:
+    name: Despliegue automatizado de configuración
+    description: |
+      Despliegue a escala de cambios de configuración aprobados mediante herramientas,
+      con verificación y reversión.
+  BC-2600.30:
+    name: Gestión del rendimiento de red
+    description: |
+      Captura y análisis continuos de contadores de rendimiento y KPIs de red para
+      detectar y anticipar degradaciones.
+  BC-2600.30.10:
+    name: Captura de KPIs de red
+    description: |
+      Recopilación y almacenamiento de contadores de rendimiento y KPIs a nivel de
+      elemento y de red.
+  BC-2600.30.20:
+    name: Monitorización de umbrales
+    description: |
+      Monitorización de KPIs de rendimiento frente a umbrales de ingeniería y SLA.
+  BC-2600.30.30:
+    name: Monitorización de utilización de capacidad
+    description: |
+      Seguimiento de la utilización de recursos frente a la capacidad dimensionada para
+      detectar condiciones de saturación inminente.
+  BC-2600.30.40:
+    name: Correlación de impacto en clientes
+    description: |
+      Correlación de señales de rendimiento de red con indicadores de experiencia del
+      cliente para identificar condiciones que afectan al servicio.
+  BC-2600.40:
+    name: Gestión de inventario de red
+    description: |
+      Registro autorizado de recursos lógicos y físicos de red y sus relaciones,
+      mantenido sincronizado con la realidad mediante reconciliación.
+  BC-2600.40.10:
+    name: Inventario lógico de red
+    description: |
+      Registro autorizado de recursos lógicos como servicios, circuitos, asignaciones
+      IP/VLAN y caminos portadores.
+  BC-2600.40.20:
+    name: Inventario físico de red
+    description: |
+      Registro autorizado de activos físicos como nodos, tarjetas, puertos, fibra,
+      conductos y antenas.
+  BC-2600.40.30:
+    name: Reconciliación de inventario
+    description: |
+      Reconciliación de registros de inventario frente a descubrimiento, diseño e
+      inspecciones de campo.
+  BC-2600.40.40:
+    name: Descubrimiento de recursos de red
+    description: |
+      Descubrimiento automatizado de elementos de red desplegados y su estado.
+  BC-2600.50:
+    name: Gestión de cambios y versiones de red
+    description: |
+      Planificación, aprobación, ejecución, verificación y reversión de cambios en
+      elementos de red y servicios en producción.
+  BC-2600.50.10:
+    name: Planificación de cambios de red
+    description: |
+      Planificación y evaluación de riesgos de los cambios de red, incluyendo ventanas
+      de impacto.
+  BC-2600.50.20:
+    name: Implementación de cambios de red
+    description: |
+      Ejecución controlada de cambios de red aprobados en las ventanas planificadas.
+  BC-2600.50.30:
+    name: Verificación de cambios
+    description: |
+      Verificación posterior al cambio de que la red se encuentra en el estado esperado
+      y rinde dentro de los márgenes de tolerancia.
+  BC-2600.50.40:
+    name: Reversión de cambios
+    description: |
+      Revertir cambios que no superan la verificación o que generan un impacto
+      inaceptable.
+  BC-2600.60:
+    name: Operaciones de seguridad de red
+    description: |
+      Monitorización y respuesta de seguridad específicas de la red de telecomunicaciones
+      en los dominios de señalización, transporte y núcleo, complementando la
+      ciberseguridad corporativa.
+  BC-2600.60.10:
+    name: Monitorización de amenazas de red
+    description: |
+      Monitorización de redes de señalización, transporte y núcleo en busca de actividad
+      anómala y maliciosa.
+  BC-2600.60.20:
+    name: Protección contra DDoS
+    description: |
+      Detección y mitigación de ataques de denegación de servicio volumétricos y basados
+      en protocolo contra la red y los endpoints de clientes.
+  BC-2600.60.30:
+    name: Control de acceso a la red
+    description: |
+      Aplicación de controles de acceso administrativo y de máquina a los elementos de red.
+  BC-2600.60.40:
+    name: Respuesta a incidentes de seguridad de red
+    description: |
+      Contención, erradicación y recuperación ante incidentes de seguridad de red
+      confirmados.
+  BC-2600.70:
+    name: Coordinación de operaciones de campo
+    description: |
+      Despacho, control de ejecución y coordinación de acceso a instalaciones para
+      actividades de campo en la red.
+  BC-2600.70.10:
+    name: Despacho de órdenes de trabajo de campo
+    description: |
+      Asignación de órdenes de trabajo de red a equipos de campo internos y contratados.
+  BC-2600.70.20:
+    name: Ejecución de procedimientos operativos
+    description: |
+      Control de ejecución de los procedimientos operativos aprobados en elementos de
+      red en producción.
+  BC-2600.70.30:
+    name: Coordinación de acceso a instalaciones
+    description: |
+      Coordinación del acceso físico a instalaciones de red, incluidos acompañamiento,
+      permisos y controles de seguridad.
+  BC-2600.80:
+    name: Gestión de optimización de red
+    description: |
+      Ajuste continuo de elementos de red y rutas de tráfico para maximizar el
+      rendimiento, la capacidad y la experiencia del cliente.
+  BC-2600.80.10:
+    name: Optimización del acceso radio
+    description: |
+      Ajuste de parámetros de acceso radio, relaciones de vecindad y configuración de
+      antenas.
+  BC-2600.80.20:
+    name: Optimización de transporte
+    description: |
+      Ajuste de rutas de red de transporte, asignación de capacidad y calidad de
+      servicio.
+  BC-2600.80.30:
+    name: Ingeniería de tráfico
+    description: |
+      Direccionamiento del tráfico IP y de transporte a través de la red en función de
+      objetivos de rendimiento, coste y resiliencia.
+  BC-2600.80.40:
+    name: Automatización de bucle cerrado
+    description: |
+      Bucles automatizados de detección-decisión-acción que optimizan continuamente la
+      red sin intervención manual.

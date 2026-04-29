@@ -1,0 +1,209 @@
+locale: es
+source: L1-client-engagement-management.yaml
+entries:
+  BC-4300:
+    name: Gestión de clientes y encargos
+    description: |
+      Ciclo de vida de la aceptación, definición de alcance, movilización,
+      control de cambios, cierre y gestión continua de clientes en asuntos
+      legales, encargos de asesoramiento y auditoría y aseguramiento.
+  BC-4300.10:
+    name: Gestión de aceptación de clientes
+    description: |
+      Alta de nuevas relaciones con clientes, incluyendo KYC, revisión AML,
+      controles de sanciones y PEP, y verificación de titularidad real antes
+      de aceptar cualquier encargo.
+    in_scope:
+      - Autorización KYC y AML de nuevos clientes
+      - Cribado de sanciones y PEP en clientes potenciales
+      - Comprobaciones de titularidad real y origen de fondos
+      - Actualización periódica de los expedientes KYC de clientes
+    out_of_scope:
+      - Evaluación de independencia y conflictos (BC-4350)
+      - Aceptación de riesgo específica del encargo (BC-4300.20)
+  BC-4300.10.10:
+    name: Captación de datos KYC del cliente
+    description: |
+      Recogida de información de identificación, titularidad real y origen
+      de fondos de clientes potenciales y existentes.
+  BC-4300.10.20:
+    name: Cribado de sanciones y PEP del cliente
+    description: |
+      Revisión de clientes y titulares reales frente a listas de sanciones,
+      personas expuestas políticamente y medios adversos.
+  BC-4300.10.30:
+    name: Calificación de riesgo del cliente
+    description: |
+      Valoración del riesgo de la relación con el cliente para determinar
+      el nivel de diligencia debida y la periodicidad de revisión.
+  BC-4300.10.40:
+    name: Actualización periódica de la diligencia debida del cliente
+    description: |
+      Renovación de los datos KYC, titularidad y calificaciones de riesgo
+      del cliente según un ciclo establecido.
+  BC-4300.20:
+    name: Gestión de aceptación del encargo
+    description: |
+      Flujo de decisión para aceptar o rechazar un encargo concreto,
+      integrando la revisión de independencia y conflictos, la evaluación de
+      capacidad, la viabilidad de honorarios y el riesgo específico del encargo.
+    in_scope:
+      - Evaluación de riesgo del encargo
+      - Comprobación de capacidad y competencia
+      - Decisión de aceptación o rechazo del encargo
+    out_of_scope:
+      - Comprobaciones sustantivas de independencia y conflictos (BC-4350)
+      - Actividad de captación y propuesta (BC-4360)
+  BC-4300.20.10:
+    name: Evaluación de riesgo del encargo
+    description: |
+      Valoración del riesgo específico del encargo, incluyendo complejidad
+      temática, integridad del cliente y recuperabilidad de honorarios.
+  BC-4300.20.20:
+    name: Comprobación de capacidad y competencia
+    description: |
+      Confirmación de que la firma dispone de la competencia técnica y la
+      capacidad de recursos necesaria para prestar el encargo.
+  BC-4300.20.30:
+    name: Decisión de aceptación o rechazo del encargo
+    description: |
+      Decisión de aceptación o rechazo a nivel de socio, integrando riesgo,
+      conflictos, independencia, capacidad y consideraciones comerciales.
+  BC-4300.30:
+    name: Gestión del alcance y condiciones del encargo
+    description: |
+      Definición del alcance, entregables, supuestos, condiciones de honorarios
+      y carta de encargo o contrato de retención.
+    in_scope:
+      - Definición del alcance de los servicios
+      - Redacción de estructura de honorarios y condiciones
+      - Emisión de carta de encargo o contrato de retención
+    out_of_scope:
+      - Estrategia de precios a nivel de firma (BC-4360.50)
+      - Propuesta en fase de captación (BC-4360.30)
+  BC-4300.30.10:
+    name: Definición del alcance del encargo
+    description: |
+      Definición de los servicios, entregables, supuestos, exclusiones y
+      dependencias del encargo.
+  BC-4300.30.20:
+    name: Redacción de la carta de encargo
+    description: |
+      Elaboración de cartas de encargo y contratos de retención conforme a
+      las plantillas de la firma y las normas profesionales aplicables.
+  BC-4300.30.30:
+    name: Negociación de las condiciones del encargo
+    description: |
+      Negociación de las condiciones del encargo con el cliente, incluyendo
+      límites de responsabilidad, ley aplicable y cláusulas de resolución de disputas.
+  BC-4300.30.40:
+    name: Formalización de la carta de encargo
+    description: |
+      Firma, contrafirma y archivo de las cartas de encargo ejecutadas como
+      condición previa para la movilización del encargo.
+  BC-4300.40:
+    name: Gestión de la movilización del encargo
+    description: |
+      Puesta en marcha operativa de un encargo aceptado, incluyendo la
+      formación del equipo, la reunión de inicio, el acceso seguro a datos
+      y la configuración de la infraestructura del encargo.
+  BC-4300.40.10:
+    name: Formación del equipo del encargo
+    description: |
+      Identificación y confirmación de los roles de socio, gerente y
+      colaboradores en el equipo del encargo.
+  BC-4300.40.20:
+    name: Gestión de la reunión de inicio del encargo
+    description: |
+      Reuniones de inicio internas y con el cliente, materiales de
+      presentación y confirmación de objetivos y formas de trabajo.
+  BC-4300.40.30:
+    name: Configuración del acceso a datos del encargo
+    description: |
+      Provisión de salas de datos seguras, portales de clientes y
+      credenciales de acceso específicas del encargo.
+  BC-4300.40.40:
+    name: Configuración de la infraestructura del encargo
+    description: |
+      Creación de códigos de encargo, estructuras de facturación y
+      numeración de asuntos en los sistemas de gestión de la firma.
+  BC-4300.50:
+    name: Gestión de cambios del encargo
+    description: |
+      Control de modificaciones en el alcance, honorarios, plazos o
+      composición del equipo tras la firma de la carta de encargo.
+  BC-4300.50.10:
+    name: Tramitación de solicitudes de cambio de alcance
+    description: |
+      Recepción, evaluación y resolución de solicitudes de cambio de
+      alcance procedentes del cliente o del equipo del encargo.
+  BC-4300.50.20:
+    name: Aprobación de variaciones de honorarios
+    description: |
+      Flujo de aprobación para ajustes de honorarios, retenciones
+      adicionales y autorizaciones de trabajo fuera del alcance.
+  BC-4300.50.30:
+    name: Modificación de la carta de encargo
+    description: |
+      Emisión y firma de modificaciones y cartas complementarias que
+      recogen los cambios aprobados en el encargo.
+  BC-4300.60:
+    name: Gestión del cierre del encargo
+    description: |
+      Conclusión de los encargos finalizados, incluyendo la entrega de
+      resultados, la conservación de papeles de trabajo, el detonante de
+      la facturación final y el análisis post-encargo.
+  BC-4300.60.10:
+    name: Gestión de la entrega de resultados
+    description: |
+      Entrega final de informes, dictámenes y productos de trabajo al
+      cliente con la documentación de transmisión correspondiente.
+  BC-4300.60.20:
+    name: Configuración de la retención del expediente del encargo
+    description: |
+      Cierre del expediente del encargo y configuración de las políticas
+      de retención, recuperación y destrucción.
+  BC-4300.60.30:
+    name: Análisis post-encargo y lecciones aprendidas
+    description: |
+      Revisión post-encargo con el equipo para recopilar lecciones
+      aprendidas y acciones de mejora.
+  BC-4300.60.40:
+    name: Comunicación de cierre al cliente
+    description: |
+      Comunicación de cierre al cliente que incluye el informe final,
+      la encuesta de satisfacción y la programación del seguimiento.
+  BC-4300.70:
+    name: Gestión de la relación continua con el cliente
+    description: |
+      Gestión continua de las relaciones estratégicas con clientes,
+      incluyendo la responsabilidad del socio de relación, la planificación
+      de cuenta y la coordinación entre áreas de práctica.
+    in_scope:
+      - Asignación del socio de relación
+      - Planificación de cuenta del cliente en múltiples encargos
+      - Seguimiento de la satisfacción del cliente
+    out_of_scope:
+      - Actividad de captación y propuesta (BC-4360)
+      - CRM genérico (BC-3060)
+  BC-4300.70.10:
+    name: Asignación del socio de relación
+    description: |
+      Asignación y rotación del socio de relación principal para cada
+      cliente estratégico.
+  BC-4300.70.20:
+    name: Planificación de cuenta del cliente
+    description: |
+      Planificación a nivel de cuenta a través del portafolio de encargos
+      con un mismo cliente, incluyendo objetivos de cuota de cartera y
+      de relación.
+  BC-4300.70.30:
+    name: Seguimiento de la satisfacción del cliente
+    description: |
+      Recogida de opiniones de clientes, NPS u otras métricas equivalentes,
+      y escalado de señales de insatisfacción.
+  BC-4300.70.40:
+    name: Coordinación de clientes entre áreas de práctica
+    description: |
+      Coordinación entre grupos de práctica y zonas geográficas que
+      atienden a un mismo cliente.

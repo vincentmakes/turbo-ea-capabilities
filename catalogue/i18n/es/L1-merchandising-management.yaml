@@ -1,0 +1,182 @@
+locale: es
+source: L1-merchandising-management.yaml
+entries:
+  BC-2300:
+    name: Gestión de surtido
+    description: |
+      Decisiones de surtido, categoría, espacio, compras, marca propia y rebajas
+      que determinan qué productos se venden a los consumidores, dónde y con qué
+      amplitud de elección.
+  BC-2300.10:
+    name: Planificación de surtido y gama
+    description: |
+      Arquitectura de gama, conteos de referencias y planes de surtido por
+      agrupación de tiendas que traducen la estrategia en los SKU que lleva cada
+      ubicación.
+    in_scope:
+      - Arquitectura de gama y estructura básico-mejor-premium
+      - Planes de surtido por agrupación y canal
+      - Slots de introducción de nuevos artículos y discontinuaciones
+    out_of_scope:
+      - Gestión genérica del ciclo de vida del producto (BC-820)
+      - Previsión de demanda (BC-520.10)
+  BC-2300.10.10:
+    name: Definición de arquitectura de gama
+    description: |
+      Definición de la arquitectura de gama, niveles y estructura básico-mejor-premium
+      en todas las categorías.
+  BC-2300.10.20:
+    name: Planificación de surtido por agrupación de tiendas
+    description: |
+      Planes de surtido adaptados a agrupaciones de tiendas según área comercial y
+      misión de compra.
+  BC-2300.10.30:
+    name: Optimización del número de referencias
+    description: |
+      Optimización del número de SKU por categoría para equilibrar variedad,
+      complejidad y margen.
+  BC-2300.10.40:
+    name: Planificación de introducción de nuevos artículos
+    description: |
+      Slotting y ranging de nuevos artículos, incluyendo cadencia de introducción
+      y decisiones de sustitución.
+  BC-2300.10.50:
+    name: Planificación de discontinuaciones
+    description: |
+      Decisiones de salida de gama, elección de sustitutos y disposición de
+      artículos discontinuados.
+  BC-2300.20:
+    name: Gestión por categorías
+    description: |
+      Estrategia de categoría, definición de roles y gestión del rendimiento
+      tratando cada categoría como una unidad de negocio, según la práctica
+      CGF/ECR.
+    in_scope:
+      - Estrategia de categoría y definición de roles
+      - Rendimiento de categoría y cuadros de mando
+      - Colaboración con proveedores líderes de categoría
+  BC-2300.20.10:
+    name: Definición de estrategia de categoría
+    description: |
+      Definición de la estrategia de categoría, comprador objetivo y
+      posicionamiento competitivo.
+  BC-2300.20.20:
+    name: Asignación de roles de categoría
+    description: |
+      Asignación de roles de categoría como destino, rutina, conveniencia
+      o estacional.
+  BC-2300.20.30:
+    name: Análisis de rendimiento de categoría
+    description: |
+      Cuadros de mando de categoría, análisis de cuota, crecimiento y margen.
+  BC-2300.20.40:
+    name: Colaboración con el líder de categoría
+    description: |
+      Colaboración con proveedores líderes de categoría con controles de
+      separación informativa.
+  BC-2300.30:
+    name: Gestión de espacio y planogramas
+    description: |
+      Asignación de espacio en planta y estantería, planogramas y distribuciones
+      de mobiliario que traducen el plan de surtido a la estantería física o
+      digital.
+  BC-2300.30.10:
+    name: Diseño de planogramas
+    description: |
+      Diseño de planogramas por categoría, agrupación de tiendas y tipo de
+      mobiliario.
+  BC-2300.30.20:
+    name: Asignación de espacio en estantería
+    description: |
+      Asignación de espacio en estantería entre categorías y marcas según
+      rendimiento.
+  BC-2300.30.30:
+    name: Distribución de planta y mobiliario
+    description: |
+      Distribución de planta y ubicación de mobiliario para favorecer
+      adyacencias y flujo del comprador.
+  BC-2300.30.40:
+    name: Seguimiento del cumplimiento del planograma
+    description: |
+      Seguimiento del cumplimiento del planograma mediante auditorías en tienda
+      y feeds de reconocimiento de imagen.
+  BC-2300.40:
+    name: Gestión de compras y presupuesto abierto de compra
+    description: |
+      Planificación del presupuesto abierto de compra, ejecución del plan de
+      compras y asignación a tiendas que convierten los planes de surtido en
+      compromisos de compra con proveedores.
+    in_scope:
+      - Presupuestos abiertos de compra por departamento y temporada
+      - Ejecución del plan de compras con proveedores
+      - Asignación de mercancía recibida entre tiendas
+    out_of_scope:
+      - Aprovisionamiento genérico (BC-500)
+  BC-2300.40.10:
+    name: Planificación del presupuesto abierto de compra
+    description: |
+      Presupuestación del open-to-buy por departamento, clase y temporada.
+  BC-2300.40.20:
+    name: Ejecución del plan de compras
+    description: |
+      Ejecución de los planes de compras con proveedores, incluyendo selección
+      de estilos y SKU.
+  BC-2300.40.30:
+    name: Asignación a tiendas y canales
+    description: |
+      Asignación de la mercancía recibida a tiendas y canales según atributo
+      y rendimiento.
+  BC-2300.40.40:
+    name: Gestión de compras de reposición
+    description: |
+      Decisiones de compra de reposición para artículos básicos y de stock
+      permanente.
+  BC-2300.50:
+    name: Gestión del desarrollo de marca propia
+    description: |
+      Estrategia, especificación, aprovisionamiento y custodia de marca de
+      las líneas de productos de marca propia.
+  BC-2300.50.10:
+    name: Estrategia de marca propia
+    description: |
+      Estrategia de la cartera de marca propia y niveles entre marcas propias.
+  BC-2300.50.20:
+    name: Especificación de marca propia
+    description: |
+      Especificaciones de producto, briefings de envase y estándares de calidad
+      para las marcas propias.
+  BC-2300.50.30:
+    name: Aprovisionamiento de marca propia
+    description: |
+      Búsqueda de fabricantes a contrato y maquiladores para la producción de
+      marcas propias.
+  BC-2300.50.40:
+    name: Custodia de marca propia
+    description: |
+      Custodia de la identidad de la marca propia, gobierno del envase y
+      gestión del valor de marca.
+  BC-2300.60:
+    name: Gestión de rebajas y disposición de stock
+    description: |
+      Cadencia de rebajas, liquidación y decisiones de disposición que retiran
+      el stock excedente y al final de su vida útil.
+    in_scope:
+      - Decisiones de cadencia y profundidad de rebajas
+      - Planes de liquidación de fin de temporada
+      - Disposición por liquidación, outlets, donación y destrucción
+    out_of_scope:
+      - Cambios de precio diarios (BC-440.20.20)
+      - Descuentos promocionales (BC-440.30)
+  BC-2300.60.10:
+    name: Estrategia de rebajas
+    description: |
+      Estrategia de profundidad, cadencia y calendario de rebajas por categoría.
+  BC-2300.60.20:
+    name: Planificación de liquidación de fin de temporada
+    description: |
+      Planes de liquidación de fin de temporada y gestión de precios de salida.
+  BC-2300.60.30:
+    name: Encaminamiento de disposición de stock
+    description: |
+      Encaminamiento del stock residual a outlets, liquidación, donación o
+      destrucción.

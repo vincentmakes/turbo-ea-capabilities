@@ -1,0 +1,198 @@
+locale: es
+source: L1-travel-loyalty-programme-management.yaml
+entries:
+  BC-4050:
+    name: Gestión del programa de fidelización de viajes
+    description: |
+      Diseño y operación de programas de fidelización para viajeros — arquitectura de
+      niveles, motores de acumulación y canje, acumulaciones con socios, gestión del
+      estado y comunicaciones con miembros — con independencia del perfil del huésped
+      subyacente y las plataformas de canal.
+    in_scope:
+      - Arquitectura de niveles del programa y catálogo de beneficios
+      - Motores de acumulación y canje, incluyendo acumulación con socios
+      - Cualificación, retención y aterrizaje suave del nivel
+      - Comunicaciones con miembros y operaciones de reconocimiento por hito
+    out_of_scope:
+      - Perfil e identidad del huésped (BC-4040)
+      - Entrega del reconocimiento en el establecimiento (BC-4040.40)
+      - Ejecución del canal de marketing (BC-410)
+
+  BC-4050.10:
+    name: Diseño del programa de fidelización
+    description: |
+      Diseño de la arquitectura del programa, incluyendo la estructura de niveles, el
+      catálogo de beneficios, los parámetros de la tasa de acumulación y las reglas
+      del programa.
+
+  BC-4050.10.10:
+    name: Arquitectura de niveles del programa
+    description: |
+      Arquitectura de los niveles de fidelización, incluyendo umbrales, beneficios y
+      reglas de progresión.
+
+  BC-4050.10.20:
+    name: Catálogo de beneficios para miembros
+    description: |
+      Catálogo de beneficios para miembros en las superficies de producto y socio.
+
+  BC-4050.10.30:
+    name: Definición de la tasa de acumulación y multiplicadores
+    description: |
+      Definición de las tasas de acumulación base y de los multiplicadores por nivel
+      y producto.
+
+  BC-4050.10.40:
+    name: Gestión de los términos y condiciones del programa
+    description: |
+      Gestión de los términos y condiciones del programa, incluyendo variantes
+      jurisdiccionales.
+
+  BC-4050.20:
+    name: Operaciones del motor de acumulación de fidelización
+    description: |
+      Operación del motor de acumulación en estancias, vuelos, gasto con socios,
+      bonificaciones promocionales y reclamaciones de actividad no registrada.
+
+  BC-4050.20.10:
+    name: Procesamiento de acumulación por estancias y vuelos
+    description: |
+      Procesamiento de eventos de acumulación procedentes de estancias, vuelos y
+      completaciones de tour.
+
+  BC-4050.20.20:
+    name: Procesamiento de acumulación por gasto con socios
+    description: |
+      Procesamiento de eventos de acumulación procedentes del gasto en tarjetas
+      co-branded y comercios socios.
+
+  BC-4050.20.30:
+    name: Acumulación de bonificaciones promocionales
+    description: |
+      Acumulación de bonificaciones promocionales vinculadas a las reglas de campaña.
+
+  BC-4050.20.40:
+    name: Tramitación de reclamaciones de actividad no registrada
+    description: |
+      Tramitación de reclamaciones de actividad no registrada y ajustes de acumulación
+      retroactiva.
+
+  BC-4050.30:
+    name: Operaciones de canje de fidelización
+    description: |
+      Operación de los flujos de canje, incluyendo disponibilidad de premios, canje
+      mixto de efectivo y puntos, y liquidación de inventario.
+
+  BC-4050.30.10:
+    name: Cálculo de disponibilidad de premios
+    description: |
+      Cálculo de la disponibilidad de premios frente al inventario de ingresos y las
+      reglas de protección.
+
+  BC-4050.30.20:
+    name: Reserva de canje de premios
+    description: |
+      Reserva de canjes de premios en inventario de marca propia y de socios.
+
+  BC-4050.30.30:
+    name: Canje mixto de efectivo y puntos
+    description: |
+      Flujos de canje que combinan el pago en efectivo y en puntos para la misma
+      reserva.
+
+  BC-4050.30.40:
+    name: Liquidación del inventario de canje
+    description: |
+      Liquidación del consumo del inventario de canje entre los libros contables de
+      la marca y del socio.
+
+  BC-4050.40:
+    name: Gestión del estado de nivel
+    description: |
+      Operación de la cualificación, promoción, degradación, programas de igualdad
+      de estatus y reglas de aterrizaje suave de nivel.
+
+  BC-4050.40.10:
+    name: Seguimiento de la cualificación de nivel
+    description: |
+      Seguimiento de la actividad cualificante frente a los umbrales de nivel a lo
+      largo del año del programa.
+
+  BC-4050.40.20:
+    name: Operaciones de promoción y degradación de nivel
+    description: |
+      Operaciones para promover, degradar y recualificar miembros en los límites de
+      período.
+
+  BC-4050.40.30:
+    name: Programas de igualdad de estatus y retos
+    description: |
+      Operación de programas de igualdad de estatus y retos de nivel para la
+      captación dirigida.
+
+  BC-4050.40.40:
+    name: Reglas de aterrizaje suave para la retención
+    description: |
+      Reglas de retención que suavizan la pérdida de nivel para los miembros de
+      alto valor durante los períodos de cualificación.
+
+  BC-4050.50:
+    name: Gestión del programa de socios de fidelización
+    description: |
+      Gestión de los socios de fidelización, incluyendo tarjetas de crédito, comercios
+      minoristas y socios aerolínea-hotel, en las fases de incorporación, configuración
+      y liquidación.
+
+  BC-4050.50.10:
+    name: Incorporación y contratación de socios
+    description: |
+      Incorporación y contratación de nuevos socios de fidelización, incluyendo la
+      debida diligencia y la integración.
+
+  BC-4050.50.20:
+    name: Configuración de la tasa de acumulación del socio
+    description: |
+      Configuración de las tasas de acumulación y las estructuras de bonificación
+      para cada socio de fidelización.
+
+  BC-4050.50.30:
+    name: Liquidación y reconciliación con socios
+    description: |
+      Liquidación y reconciliación de los puntos emitidos por socios y las comisiones
+      de acumulación.
+
+  BC-4050.50.40:
+    name: Gestión del rendimiento de socios
+    description: |
+      Gestión del rendimiento de los socios de fidelización frente a los KPI
+      contractuales.
+
+  BC-4050.60:
+    name: Operaciones de comunicación y reconocimiento de fidelización
+    description: |
+      Operación de las comunicaciones con los miembros, el reconocimiento por hito y
+      los gestos de sorpresa y deleite a lo largo del ciclo de vida de la fidelización.
+
+  BC-4050.60.10:
+    name: Comunicaciones del ciclo de vida del miembro
+    description: |
+      Comunicaciones del ciclo de vida a los miembros en las fases de incorporación,
+      activo y reactivación.
+
+  BC-4050.60.20:
+    name: Reconocimiento de hitos y aniversarios
+    description: |
+      Reconocimiento de los hitos del miembro, aniversarios de antigüedad y
+      promociones de nivel.
+
+  BC-4050.60.30:
+    name: Operaciones de sorpresa y deleite
+    description: |
+      Operación de gestos de sorpresa y deleite activados por el comportamiento del
+      miembro o eventos de servicio.
+
+  BC-4050.60.40:
+    name: Generación del estado de cuenta del miembro
+    description: |
+      Generación de estados de cuenta para miembros que cubren saldo, actividad y
+      progresión de nivel.

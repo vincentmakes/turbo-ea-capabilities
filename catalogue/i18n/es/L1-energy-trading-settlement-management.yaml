@@ -1,0 +1,147 @@
+locale: es
+source: L1-energy-trading-settlement-management.yaml
+entries:
+  BC-3850:
+    name: Gestión de comercialización de energía y liquidación
+    description: |
+      Comercialización mayorista de electricidad, gas y materias primas medioambientales —
+      participación en el mercado en los marcos diario, intradiario y de balance,
+      gestión del riesgo energético, programación y nominaciones, participación en
+      el mercado de capacidad y liquidación en el back-office con informes regulatorios
+      bajo los regímenes REMIT / EMIR / Dodd-Frank.
+  BC-3850.10:
+    name: Comercialización mayorista de electricidad
+    description: |
+      Comercialización front-office de electricidad física y financiera en los mercados
+      diario, intradiario y a plazo.
+  BC-3850.10.10:
+    name: Comercialización en el mercado diario
+    description: |
+      Presentación y gestión de ofertas de compra y venta en el mercado diario.
+  BC-3850.10.20:
+    name: Comercialización en el mercado intradiario
+    description: |
+      Comercialización intradiaria continua y en subasta frente a cambios de posición.
+  BC-3850.10.30:
+    name: Comercialización a plazo y bilateral
+    description: |
+      Comercialización física a plazo y OTC bilateral para cobertura y originación.
+  BC-3850.10.40:
+    name: Comercialización de capacidad transfronteriza
+    description: |
+      Comercialización de productos de capacidad en interconexiones transfronterizas.
+  BC-3850.20:
+    name: Gestión del riesgo energético
+    description: |
+      Vigilancia del riesgo de mercado, crédito y operacional de la cartera de
+      comercialización con administración de límites y pruebas de tensión.
+    in_scope:
+      - Cálculo del VaR y el riesgo de beneficios
+      - Gestión de los límites de crédito de contrapartes
+      - Pruebas de eficacia de coberturas
+    out_of_scope:
+      - Gestión del riesgo empresarial (BC-120)
+      - Riesgo de crédito en clientes minoristas (BC-3910)
+  BC-3850.20.10:
+    name: Vigilancia del riesgo de mercado
+    description: |
+      Vigilancia del VaR, el riesgo de beneficios y la exposición de la cartera de
+      comercialización.
+  BC-3850.20.20:
+    name: Gestión del riesgo de crédito de contrapartes
+    description: |
+      Límites de crédito de contrapartes, garantías y monitorización de la exposición.
+  BC-3850.20.30:
+    name: Gestión del programa de coberturas
+    description: |
+      Diseño y ejecución de programas de cobertura frente a la exposición en combustible
+      y electricidad.
+  BC-3850.30:
+    name: Gestión de posiciones y programación
+    description: |
+      Agregación de las posiciones comerciales y físicas y presentación de programas
+      y nominaciones a operadores del sistema y operadores de gasoductos.
+  BC-3850.30.10:
+    name: Agregación de posiciones comerciales
+    description: |
+      Agregación de posiciones por productos, libros y contrapartes.
+  BC-3850.30.20:
+    name: Presentación de programas de electricidad
+    description: |
+      Presentación de programas de electricidad físicos a los TSOs y las partes
+      responsables del balance.
+  BC-3850.30.30:
+    name: Presentación de nominaciones de gas
+    description: |
+      Presentación de nominaciones de gas y reequilibrio en gasoductos de transporte.
+  BC-3850.40:
+    name: Participación en el mercado de capacidad
+    description: |
+      Participación en mecanismos de mercado de capacidad y seguridad de suministro,
+      incluida la estrategia de subasta, la cualificación y el seguimiento de la entrega.
+  BC-3850.40.10:
+    name: Estrategia de subastas de capacidad
+    description: |
+      Estrategia y preparación de ofertas para las subastas del mercado de capacidad.
+  BC-3850.40.20:
+    name: Cualificación como proveedor de capacidad
+    description: |
+      Cualificación de activos y gestión del factor de reducción para los productos de
+      capacidad.
+  BC-3850.40.30:
+    name: Monitorización de la entrega de capacidad
+    description: |
+      Monitorización de la entrega de capacidad durante eventos de tensión y la exposición
+      a penalizaciones.
+  BC-3850.50:
+    name: Comercialización de materias primas medioambientales
+    description: |
+      Comercialización y entrega de derechos de emisión de carbono, certificados de
+      energías renovables, garantías de origen y certificados blancos.
+  BC-3850.50.10:
+    name: Comercialización de derechos de emisión de carbono
+    description: |
+      Comercialización de EUAs, CCAs y otros derechos de emisión de carbono de cumplimiento.
+  BC-3850.50.20:
+    name: Comercialización de certificados de energías renovables
+    description: |
+      Comercialización de RECs, ROCs y Garantías de Origen.
+  BC-3850.50.30:
+    name: Operaciones de certificados blancos
+    description: |
+      Comercialización y entrega de certificados blancos de eficiencia energética.
+  BC-3850.60:
+    name: Operaciones de liquidación de operaciones comerciales
+    description: |
+      Confirmación en el back-office, cálculo de la liquidación, facturación y gestión
+      de tesorería de las operaciones de energía mayorista.
+  BC-3850.60.10:
+    name: Confirmación de operaciones comerciales
+    description: |
+      Confirmaciones de operaciones salientes y entrantes y resolución de discrepancias.
+  BC-3850.60.20:
+    name: Cálculo de la liquidación
+    description: |
+      Cálculo de los importes de la liquidación física y financiera por contrato.
+  BC-3850.60.30:
+    name: Facturación y gestión de tesorería de operaciones
+    description: |
+      Facturación, pago y conciliación de los flujos de caja de las operaciones mayoristas.
+  BC-3850.70:
+    name: Informes regulatorios de operaciones comerciales
+    description: |
+      Notificación regulatoria de las transacciones de energía mayorista bajo los
+      regímenes REMIT, EMIR, MiFID II y Dodd-Frank.
+  BC-3850.70.10:
+    name: Notificación de transacciones bajo REMIT
+    description: |
+      Notificación de las transacciones de energía mayorista a ACER según las tablas 1 y 2.
+  BC-3850.70.20:
+    name: Notificación bajo EMIR y Dodd-Frank
+    description: |
+      Notificación de operaciones con derivados a los registros de operaciones bajo EMIR
+      y Dodd-Frank.
+  BC-3850.70.30:
+    name: Divulgación de información privilegiada
+    description: |
+      Divulgación de información privilegiada según el artículo 4 de REMIT.

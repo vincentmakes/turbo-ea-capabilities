@@ -1,0 +1,154 @@
+locale: es
+source: L1-telecom-billing-revenue-management.yaml
+entries:
+  BC-2660:
+    name: Facturación e ingresos de telecomunicaciones
+    description: |
+      Mediación, cargos, tarificación, facturación, presentación, cobros, aseguramiento
+      de ingresos y procesamiento de impuestos y recargos específicos de
+      telecomunicaciones en servicios de prepago, pospago y convergentes.
+  BC-2660.10:
+    name: Gestión de mediación de uso
+    description: |
+      Recopilación, normalización y enrutamiento de registros de uso desde los elementos
+      de red hacia los sistemas de cargos y facturación.
+  BC-2660.10.10:
+    name: Recopilación de CDR
+    description: |
+      Recopilación de registros detallados de llamadas, sesiones y eventos de elementos
+      de red y fuentes IPDR.
+  BC-2660.10.20:
+    name: Enriquecimiento de CDR
+    description: |
+      Enriquecimiento de CDR con datos de suscriptor, tarifa y referencia necesarios
+      aguas abajo.
+  BC-2660.10.30:
+    name: Deduplicación de CDR
+    description: |
+      Detección y eliminación de registros de uso duplicados.
+  BC-2660.10.40:
+    name: Conversión de formato de CDR
+    description: |
+      Conversión de formatos de CDR entre las fuentes de recopilación y los consumidores
+      aguas abajo.
+  BC-2660.20:
+    name: Gestión de cargos y tarificación
+    description: |
+      Cargos online y offline, tarificación, gestión de saldos y recargas en modelos de
+      prepago y pospago.
+  BC-2660.20.10:
+    name: Gestión de cargos online
+    description: |
+      Cargos en tiempo real de sesiones y eventos frente al saldo y la política del
+      suscriptor.
+  BC-2660.20.20:
+    name: Gestión de cargos offline
+    description: |
+      Tarificación offline de registros de uso y eventos para la facturación pospago.
+  BC-2660.20.30:
+    name: Gestión de saldos
+    description: |
+      Gestión de saldos principales y dedicados, acumuladores y cuotas del suscriptor.
+  BC-2660.20.40:
+    name: Gestión de vales y recargas
+    description: |
+      Emisión, distribución y canje de vales y recargas electrónicas.
+  BC-2660.30:
+    name: Gestión de operaciones de facturación
+    description: |
+      Ejecución de ciclos de facturación, cálculo de facturas y gestión de ajustes y
+      correcciones.
+  BC-2660.30.10:
+    name: Ejecución del ciclo de facturación
+    description: |
+      Ejecución de ciclos de facturación programados y ejecuciones de facturas ad hoc.
+  BC-2660.30.20:
+    name: Cálculo de facturas
+    description: |
+      Cálculo de cargos, impuestos y ajustes de todos los componentes de la cuenta.
+  BC-2660.30.30:
+    name: Ajuste de facturas
+    description: |
+      Aplicación de ajustes aprobados a facturas, incluidos créditos y exenciones.
+  BC-2660.30.40:
+    name: Corrección de facturas
+    description: |
+      Corrección de facturas incorrectas mediante re-facturación o ajustes
+      compensatorios.
+  BC-2660.40:
+    name: Gestión de presentación e consultas de facturas
+    description: |
+      Presentación multiformato de facturas y resolución de consultas y reclamaciones
+      de clientes.
+  BC-2660.40.10:
+    name: Presentación de facturas
+    description: |
+      Producción y distribución de facturas en formatos papel, PDF y digital.
+  BC-2660.40.20:
+    name: Consulta de factura detallada
+    description: |
+      Tramitación de consultas detalladas e inicio de reclamaciones por parte de
+      clientes.
+  BC-2660.40.30:
+    name: Explicación de factura
+    description: |
+      Explicación y visualización de los componentes de la factura para clientes y
+      agentes de atención.
+  BC-2660.50:
+    name: Gestión de cobros de telecomunicaciones
+    description: |
+      Flujos de notificación de deuda, suspensión, desconexión y cobro de deudas
+      específicos de telecomunicaciones.
+  BC-2660.50.10:
+    name: Flujo de trabajo de notificación de deuda
+    description: |
+      Flujo de trabajo de notificación escalonada de impagos para cuentas pospago
+      vencidas.
+  BC-2660.50.20:
+    name: Suspensión y desconexión del servicio
+    description: |
+      Suspensión temporal, desconexión definitiva y reactivación de servicios por saldos
+      impagados.
+  BC-2660.50.30:
+    name: Coordinación del cobro de deudas
+    description: |
+      Coordinación con agencias de cobro de deudas internas y de terceros.
+  BC-2660.60:
+    name: Gestión del aseguramiento de ingresos
+    description: |
+      Detección, cuantificación y remediación de fugas de ingresos en la cadena de
+      ingresos.
+  BC-2660.60.10:
+    name: Detección de fugas de ingresos
+    description: |
+      Detección de fugas entre el uso de red, la mediación, los cargos, la facturación
+      y la contabilidad.
+  BC-2660.60.20:
+    name: Verificación de exactitud de facturación
+    description: |
+      Verificación a nivel de muestra y exhaustiva de la exactitud de las facturas
+      frente a los eventos fuente.
+  BC-2660.60.30:
+    name: Reconciliación red-facturación
+    description: |
+      Reconciliación extremo a extremo de los eventos registrados por la red con los
+      ingresos facturados.
+  BC-2660.70:
+    name: Gestión de impuestos y recargos de telecomunicaciones
+    description: |
+      Cálculo y remesa de impuestos, recargos y tasas regulatorias específicas de
+      telecomunicaciones.
+  BC-2660.70.10:
+    name: Recargo del fondo de servicio universal
+    description: |
+      Cálculo, facturación y remesa de las contribuciones al fondo de servicio
+      universal.
+  BC-2660.70.20:
+    name: Impuesto especial sobre telecomunicaciones
+    description: |
+      Cálculo y remesa de impuestos especiales sobre telecomunicaciones y comunicaciones.
+  BC-2660.70.30:
+    name: Devengo de tasas regulatorias
+    description: |
+      Devengo y remesa de tasas regulatorias recurrentes vinculadas a suscriptores e
+      ingresos.

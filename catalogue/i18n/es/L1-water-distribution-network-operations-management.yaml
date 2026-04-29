@@ -1,0 +1,154 @@
+locale: es
+source: L1-water-distribution-network-operations-management.yaml
+entries:
+  BC-3880:
+    name: Gestión de operaciones de la red de distribución de agua
+    description: |
+      Operación de arterias y redes de distribución que suministran agua tratada a los
+      clientes — gestión hidráulica y de presiones, control de fugas, calidad del agua
+      en la red, reparación y renovación de tuberías, y realización de nuevas conexiones
+      de clientes.
+  BC-3880.10:
+    name: Control de la red de distribución
+    description: |
+      Operación 24/7 de la sala de control del sistema de distribución de agua mediante
+      telemetría, modelos hidráulicos y SCADA.
+  BC-3880.10.10:
+    name: Operaciones de SCADA de distribución
+    description: |
+      Control supervisor en tiempo real de los activos de bombeo y presión en toda la red.
+  BC-3880.10.20:
+    name: Operaciones del modelo hidráulico
+    description: |
+      Operación de modelos hidráulicos en línea y fuera de línea para la toma de
+      decisiones en la red.
+  BC-3880.10.30:
+    name: Vigilancia de telemetría de la red
+    description: |
+      Vigilancia de la telemetría en DMAs, válvulas y puntos de presión.
+  BC-3880.20:
+    name: Operaciones de arterias y bombeo
+    description: |
+      Operación de arterias, estaciones de bombeo y trasvases interzonales, incluido
+      el bombeo de refuerzo y la gestión del golpe de ariete.
+  BC-3880.20.10:
+    name: Operaciones de estaciones de bombeo
+    description: |
+      Operación y optimización energética de las estaciones de bombeo de distribución.
+  BC-3880.20.20:
+    name: Operaciones de arterias
+    description: |
+      Operación, maniobras de válvulas y gestión del golpe de ariete en arterias
+      de transporte.
+  BC-3880.20.30:
+    name: Operaciones de trasvases interzonales
+    description: |
+      Operación de trasvases interzonales y enlaces de suministro en bloque entre zonas
+      de recursos.
+  BC-3880.30:
+    name: Gestión de fugas
+    description: |
+      Control activo y pasivo de fugas en zonas de medición distrital mediante análisis
+      de caudales, detección acústica y trabajos de localización y reparación.
+    in_scope:
+      - Análisis de caudal entrante y caudal mínimo nocturno en DMAs
+      - Campañas de detección acústica de fugas
+      - Operaciones de localización y reparación de fugas
+    out_of_scope:
+      - Programas de renovación de tuberías (BC-3900.50)
+      - Fugas en tuberías de acometida del cliente (BC-3910.60)
+  BC-3880.30.10:
+    name: Análisis de zonas de medición distrital
+    description: |
+      Análisis de los datos de caudal entrante y caudal mínimo nocturno de las DMAs para
+      localizar fugas.
+  BC-3880.30.20:
+    name: Detección acústica de fugas
+    description: |
+      Sondeos acústicos, correlación y barridos con registradores de ruido para localizar
+      fugas.
+  BC-3880.30.30:
+    name: Operaciones de localización y reparación de fugas
+    description: |
+      Operaciones de localización y reparación en campo de las fugas detectadas frente a
+      los objetivos de tiempo de reparación.
+  BC-3880.30.40:
+    name: Informes de rendimiento en materia de fugas
+    description: |
+      Notificación del rendimiento en materia de fugas frente a las métricas del balance
+      hídrico reglamentario y de la IWA.
+  BC-3880.40:
+    name: Gestión de presiones
+    description: |
+      Optimización de la presión de distribución en zonas gestionadas por presión para
+      la reducción de fugas y el control de la tasa de roturas.
+  BC-3880.40.10:
+    name: Configuración de zonas de presión
+    description: |
+      Configuración de las zonas de gestión de presión y los puntos de ajuste de las
+      válvulas reductoras de presión.
+  BC-3880.40.20:
+    name: Control avanzado de presiones
+    description: |
+      Operación de válvulas reductoras de presión controladas a distancia y moduladas
+      por tiempo.
+  BC-3880.40.30:
+    name: Gestión de presiones transitorias
+    description: |
+      Análisis de transitorios y mitigación del golpe de ariete en redes de distribución.
+  BC-3880.50:
+    name: Operaciones de calidad del agua en la red
+    description: |
+      Vigilancia de la calidad del agua en la red — cloro residual, agua decolorada,
+      sabor y olor — y operaciones de corrección.
+  BC-3880.50.10:
+    name: Vigilancia del cloro residual en la red
+    description: |
+      Vigilancia de los residuos de cloro en toda la red y dosificación de recloración.
+  BC-3880.50.20:
+    name: Control de decoloración y sedimentos
+    description: |
+      Operaciones de lavado y limpieza por hielo para gestionar las reclamaciones por
+      agua decolorada.
+  BC-3880.50.30:
+    name: Operaciones de muestreo en la red
+    description: |
+      Muestreo reglamentario en los grifos de los clientes y puntos de suministro.
+  BC-3880.60:
+    name: Operaciones de reparación y renovación de tuberías
+    description: |
+      Reparación reactiva de roturas y fallos en juntas, y ejecución operativa de los
+      programas de renovación de tuberías.
+  BC-3880.60.10:
+    name: Respuesta ante roturas de tuberías
+    description: |
+      Respuesta, aislamiento y reparación de roturas de tuberías frente a los objetivos
+      de minutos-cliente perdidos.
+  BC-3880.60.20:
+    name: Operaciones de reparación de tuberías de acometida
+    description: |
+      Reparación de tuberías de conexión y de acometida entre la arteria y la llave
+      de paso.
+  BC-3880.60.30:
+    name: Operaciones de campo de renovación de tuberías
+    description: |
+      Ejecución en campo de los programas de renovación y rehabilitación de tuberías,
+      incluidos los métodos sin zanja.
+  BC-3880.70:
+    name: Operaciones de nuevas conexiones de agua
+    description: |
+      Realización de nuevas conexiones de suministro de agua para clientes domésticos,
+      comerciales y promotores.
+  BC-3880.70.10:
+    name: Evaluación de solicitudes de nueva conexión
+    description: |
+      Evaluación técnica de las solicitudes de nueva conexión de agua y la prestación
+      de servicios a promotores.
+  BC-3880.70.20:
+    name: Operaciones de instalación de conexiones
+    description: |
+      Instalación de tuberías de conexión, ferulas y contadores del cliente.
+  BC-3880.70.30:
+    name: Puesta en servicio de conexiones
+    description: |
+      Puesta en servicio, flushing y desinfección de nuevas conexiones antes de su uso.

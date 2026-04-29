@@ -1,0 +1,119 @@
+locale: es
+source: L1-product-information-management.yaml
+entries:
+  BC-2370:
+    name: Gestión de información de producto
+    description: |
+      Atributos maestros de artículos, contenido de marketing y datos de
+      producto listos para cada canal: desde la creación del artículo hasta
+      la sincronización GS1/GDSN y la distribución multicanal.
+  BC-2370.10:
+    name: Gestión de datos maestros de artículos
+    description: |
+      Atributos maestros de artículos, GTINs, jerarquías y taxonomía que
+      constituyen el registro de producto canónico en toda la empresa.
+    in_scope:
+      - Creación y mantenimiento de atributos de artículos
+      - Identificación por GTIN, GLN y nivel de envase
+      - Taxonomía y clasificación de productos (p. ej., GS1 GPC)
+    out_of_scope:
+      - Gobernanza genérica de datos maestros (BC-610)
+  BC-2370.10.10:
+    name: Creación y atribución de artículos
+    description: |
+      Creación de registros de artículos y elaboración de los valores de
+      atributos.
+  BC-2370.10.20:
+    name: Asignación de GTINs e identificadores
+    description: |
+      Asignación de GTINs e identificadores por nivel de envase según las
+      normas GS1.
+  BC-2370.10.30:
+    name: Jerarquía y taxonomía de productos
+    description: |
+      Mantenimiento de la jerarquía y la taxonomía de productos (p. ej., GS1 GPC).
+  BC-2370.10.40:
+    name: Estado del artículo y fase del ciclo de vida
+    description: |
+      Seguimiento de las fases del ciclo de vida del artículo desde el concepto
+      hasta la discontinuación.
+  BC-2370.20:
+    name: Gestión de la elaboración de contenido de producto
+    description: |
+      Elaboración de textos de marketing, fotografía, vídeo y contenido
+      enriquecido que convierten el registro de artículo en un producto
+      vendible orientado al consumidor.
+  BC-2370.20.10:
+    name: Elaboración de textos de marketing
+    description: |
+      Elaboración de títulos, descripciones y textos de venta por canal.
+  BC-2370.20.20:
+    name: Producción de fotografía y vídeo de producto
+    description: |
+      Producción de fotografía de producto, imágenes de lifestyle y vídeo.
+  BC-2370.20.30:
+    name: Producción de contenido enriquecido y activos 3D
+    description: |
+      Producción de activos de producto en 360 grados, realidad aumentada y 3D.
+  BC-2370.20.40:
+    name: Traducción y localización
+    description: |
+      Traducción y localización del contenido de producto para los mercados
+      objetivo.
+  BC-2370.30:
+    name: Gestión de la distribución multicanal
+    description: |
+      Publicación de contenido de producto en canales propios, feeds de
+      minoristas, marketplaces y socios comerciales con adaptación específica
+      por canal.
+  BC-2370.30.10:
+    name: Publicación en canales propios
+    description: |
+      Publicación de contenido en los canales web, móvil y de tienda propios.
+  BC-2370.30.20:
+    name: Distribución de feeds a marketplaces
+    description: |
+      Distribución de feeds a marketplaces de terceros y agregadores.
+  BC-2370.30.30:
+    name: Feed para minoristas y catálogo EDI 832
+    description: |
+      Suministro de catálogos de productos EDI 832 a socios comerciales
+      minoristas.
+  BC-2370.40:
+    name: Gestión de la sincronización GS1/GDSN
+    description: |
+      Sincronización de datos maestros de producto con socios comerciales a
+      través de los data pools de GDSN, el registro de partes y las
+      suscripciones de destinatarios.
+  BC-2370.40.10:
+    name: Operaciones del data pool GDSN
+    description: |
+      Operación de la relación con el data pool GDSN y las publicaciones.
+  BC-2370.40.20:
+    name: Registro de partes y destinatarios
+    description: |
+      Registro de partes y suscripciones de destinatarios en la red GDSN.
+  BC-2370.40.30:
+    name: Gestión de excepciones de sincronización GDSN
+    description: |
+      Gestión de excepciones de sincronización GDSN y discrepancias con socios
+      comerciales.
+  BC-2370.50:
+    name: Gestión de la calidad del contenido de producto
+    description: |
+      Puntuación de preparación del contenido, medición de la exhaustividad y
+      validación frente a los estándares de calidad específicos de cada canal.
+  BC-2370.50.10:
+    name: Puntuación de exhaustividad del contenido
+    description: |
+      Puntuación de la exhaustividad del contenido frente a los requisitos de
+      preparación para cada canal.
+  BC-2370.50.20:
+    name: Validación y cumplimiento del contenido
+    description: |
+      Validación del contenido frente a las normas regulatorias y de canal.
+  BC-2370.50.30:
+    name: Remediación de la calidad del contenido
+    description: |
+      Flujo de trabajo de remediación para artículos que no superan los controles
+      de calidad del contenido.

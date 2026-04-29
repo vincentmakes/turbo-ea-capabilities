@@ -1,0 +1,131 @@
+locale: es
+source: L1-saas-tenant-management.yaml
+entries:
+  BC-4230:
+    name: Gestión de inquilinos SaaS
+    description: |
+      Aprovisionamiento, configuración, aislamiento, ubicación por región,
+      federación de identidades y exportación de datos por inquilino (tenant)
+      en el servicio multiinquilino.
+  BC-4230.10:
+    name: Aprovisionamiento y ciclo de vida del inquilino SaaS (tenant)
+    description: |
+      Creación, suspensión, desactivación y migración de inquilinos (tenants)
+      en la flota multiinquilino.
+  BC-4230.10.10:
+    name: Aprovisionamiento del inquilino SaaS (tenant)
+    description: |
+      Creación de nuevos inquilinos (tenants) y asignación de los recursos
+      asociados.
+  BC-4230.10.20:
+    name: Suspensión del inquilino SaaS (tenant)
+    description: |
+      Suspensión de inquilinos (tenants) por impago, abuso o motivos
+      contractuales.
+  BC-4230.10.30:
+    name: Desactivación del inquilino SaaS (tenant)
+    description: |
+      Desactivación de inquilinos (tenants), incluyendo eliminación de datos
+      o devolución según contrato.
+  BC-4230.10.40:
+    name: Migración del inquilino SaaS (tenant)
+    description: |
+      Migración de inquilinos (tenants) entre clústeres, fragmentos o regiones.
+  BC-4230.20:
+    name: Gestión de configuración del inquilino SaaS (tenant)
+    description: |
+      Configuración de funcionalidades, marca y límites por inquilino (tenant)
+      aplicados sobre la línea base del producto compartido.
+  BC-4230.20.10:
+    name: Configuración de funcionalidades por inquilino SaaS (tenant)
+    description: |
+      Configuración de opciones de funcionalidad a nivel de inquilino (tenant).
+  BC-4230.20.20:
+    name: Gestión de marca del inquilino SaaS (tenant)
+    description: |
+      Marca a nivel de inquilino (tenant), como logotipos, colores y dominios
+      personalizados.
+  BC-4230.20.30:
+    name: Gestión de límites del inquilino SaaS (tenant)
+    description: |
+      Configuración de límites a nivel de inquilino (tenant), como cuotas y
+      techos de velocidad.
+  BC-4230.30:
+    name: Gestión del aislamiento del inquilino SaaS (tenant)
+    description: |
+      Mecanismos que mantienen el aislamiento lógico y físico entre inquilinos
+      (tenants) en los datos, el cómputo y las rutas de acceso.
+  BC-4230.30.10:
+    name: Aislamiento de datos del inquilino SaaS (tenant)
+    description: |
+      Aislamiento de los datos del inquilino (tenant) mediante particionamiento,
+      cifrado y alcance de acceso.
+  BC-4230.30.20:
+    name: Aislamiento de cómputo del inquilino SaaS (tenant)
+    description: |
+      Aislamiento de las cargas de trabajo del inquilino (tenant) mediante
+      límites de cómputo dedicados o restringidos.
+  BC-4230.30.30:
+    name: Prevención de acceso entre inquilinos SaaS (tenants)
+    description: |
+      Controles y monitoreo que evitan la filtración de datos e identidades
+      entre inquilinos (tenants).
+  BC-4230.40:
+    name: Residencia de datos y ubicación por región
+    description: |
+      Asignación de inquilinos (tenants) a regiones, aplicación de compromisos
+      de residencia de datos y gestión de la política de replicación entre
+      regiones.
+  BC-4230.40.10:
+    name: Asignación de región al inquilino SaaS (tenant)
+    description: |
+      Asignación de inquilinos (tenants) a regiones conforme al contrato y
+      la normativa aplicable.
+  BC-4230.40.20:
+    name: Aplicación de la residencia de datos
+    description: |
+      Aplicación de los límites de residencia de datos en tiempo de ejecución.
+  BC-4230.40.30:
+    name: Política de replicación entre regiones
+    description: |
+      Política que rige la replicación entre regiones para resiliencia y acceso.
+  BC-4230.50:
+    name: Federación de identidades del inquilino SaaS (tenant)
+    description: |
+      Federación de proveedores de identidad del inquilino (tenant) y ciclo
+      de vida de cuentas de usuario mediante inicio de sesión único y SCIM.
+  BC-4230.50.10:
+    name: Configuración de SSO del inquilino SaaS (tenant)
+    description: |
+      Configuración del inicio de sesión único entre los proveedores de
+      identidad del inquilino (tenant) y el servicio.
+  BC-4230.50.20:
+    name: Aprovisionamiento de usuarios basado en SCIM
+    description: |
+      Ciclo de vida de cuentas de usuario del inquilino (tenant) gestionado
+      mediante SCIM u otros protocolos de aprovisionamiento equivalentes.
+  BC-4230.50.30:
+    name: Incorporación del proveedor de identidades del inquilino SaaS (tenant)
+    description: |
+      Incorporación y validación de los proveedores de identidad del
+      inquilino (tenant).
+  BC-4230.60:
+    name: Gestión de respaldo y exportación del inquilino SaaS (tenant)
+    description: |
+      Capacidades de exportación, eliminación y restauración de datos por
+      inquilino (tenant) expuestas a inquilinos y administradores.
+  BC-4230.60.10:
+    name: Exportación de datos del inquilino SaaS (tenant)
+    description: |
+      Exportación de datos del inquilino (tenant) en formato legible por
+      máquina a solicitud o por contrato.
+  BC-4230.60.20:
+    name: Eliminación de datos del inquilino SaaS (tenant)
+    description: |
+      Eliminación verificable de los datos del inquilino (tenant) al cancelar
+      o por solicitud.
+  BC-4230.60.30:
+    name: Restauración de respaldo del inquilino SaaS (tenant)
+    description: |
+      Restauración de los datos del inquilino (tenant) desde el respaldo a
+      solicitud del inquilino o del operador.

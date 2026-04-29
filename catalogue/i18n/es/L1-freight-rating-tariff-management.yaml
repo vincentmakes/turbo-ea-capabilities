@@ -1,0 +1,109 @@
+locale: es
+source: L1-freight-rating-tariff-management.yaml
+entries:
+  BC-2520:
+    name: Gestión de tarifación y aranceles de carga
+    description: |
+      Definición y operación de las tarifas de carga, aranceles, precios
+      contractuales, precios spot, cargos accesorios y el motor de tarifación
+      que valora los movimientos de carga.
+  BC-2520.10:
+    name: Gestión de aranceles y tarjetas de tarifas
+    description: |
+      Definición, publicación y versionado de aranceles públicos y tarjetas de
+      tarifas base.
+    in_scope:
+      - Definición de la tarjeta de tarifas base por carril y unidad
+      - Presentación de aranceles públicos cuando sea exigida
+    out_of_scope:
+      - Cotización orientada al cliente en contexto de transitario (BC-2450.10)
+      - Métodos genéricos de fijación de precios empresariales (BC-440)
+  BC-2520.10.10:
+    name: Definición de tarifas base
+    description: |
+      Definición de las tarifas de carga base por carril, unidad y nivel de
+      servicio.
+  BC-2520.10.20:
+    name: Presentación de aranceles públicos
+    description: |
+      Presentación de aranceles públicos ante reguladores y conferencias cuando
+      sea necesario.
+  BC-2520.10.30:
+    name: Versionado de tarjetas de tarifas
+    description: |
+      Control de versiones y gestión de fechas de vigencia de las tarjetas de
+      tarifas.
+  BC-2520.20:
+    name: Gestión de tarifas contractuales
+    description: |
+      Configuración y mantenimiento de las tarifas contractuales negociadas con
+      clientes nombrados y compromisos de volumen.
+  BC-2520.20.10:
+    name: Configuración de tarifas contractuales
+    description: |
+      Configuración de tarifas negociadas frente a contratos de clientes
+      nombrados.
+  BC-2520.20.20:
+    name: Seguimiento de compromisos de volumen
+    description: |
+      Seguimiento de los compromisos de volumen de los clientes y los objetivos
+      de cantidad mínima.
+  BC-2520.20.30:
+    name: Renovación de tarifas contractuales
+    description: |
+      Renovación y renegociación de las tarifas contractuales que vencen.
+  BC-2520.30:
+    name: Gestión de tarifas spot
+    description: |
+      Fijación de precios, aceptación y evaluación comparativa de las tarifas de
+      carga en el mercado spot.
+  BC-2520.30.10:
+    name: Cotización de tarifas spot
+    description: |
+      Cotización de tarifas del mercado spot por envío.
+  BC-2520.30.20:
+    name: Aceptación de tarifas spot
+    description: |
+      Aceptación y confirmación de reservas a tarifa spot.
+  BC-2520.30.30:
+    name: Evaluación comparativa de índices de tarifas spot
+    description: |
+      Evaluación comparativa de las tarifas spot frente a los índices de
+      mercado.
+  BC-2520.40:
+    name: Gestión de cargos accesorios y suplementos
+    description: |
+      Definición y aplicación de cargos accesorios, suplementos, demurrage y
+      aranceles de detención.
+  BC-2520.40.10:
+    name: Gestión del suplemento de combustible
+    description: |
+      Definición y aplicación de suplementos de combustible y bunker.
+  BC-2520.40.20:
+    name: Definición de cargos accesorios
+    description: |
+      Definición de cargos accesorios por espera, manipulación especial y
+      equipos.
+  BC-2520.40.30:
+    name: Aranceles de demurrage y detención
+    description: |
+      Definición de aranceles de demurrage y detención para el uso de equipos
+      y terminal.
+  BC-2520.50:
+    name: Gestión de operaciones del motor de tarifación
+    description: |
+      Operación del motor de tarifación que calcula y valida los cargos de carga
+      en pedidos y envíos.
+  BC-2520.50.10:
+    name: Ejecución del cálculo de tarifas
+    description: |
+      Ejecución de los cálculos de tarifas en pedidos y envíos.
+  BC-2520.50.20:
+    name: Distribución de hojas de tarifas
+    description: |
+      Distribución de hojas de tarifas a clientes, socios y canales.
+  BC-2520.50.30:
+    name: Auditoría y validación de tarifas
+    description: |
+      Validación de las tarifas aplicadas frente a las líneas base contractuales
+      y arancelarias.
