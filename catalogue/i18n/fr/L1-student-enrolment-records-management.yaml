@@ -1,0 +1,161 @@
+locale: fr
+source: L1-student-enrolment-records-management.yaml
+entries:
+  BC-4720:
+    name: Gestion des inscriptions et des dossiers étudiants
+    description: |
+      Administration du cycle de vie actif des étudiants depuis l'inscription
+      et l'enregistrement jusqu'aux dossiers académiques, relevés de notes,
+      transfert de crédits et diplomation, ainsi que la gestion des identifiants
+      étudiants.
+  BC-4720.10:
+    name: Inscription et enregistrement
+    description: |
+      Inscription et enregistrement aux cours des étudiants admis terme par
+      terme, incluant les ajustements de calendrier et la poursuite entre les
+      termes.
+    in_scope:
+      - Enregistrement aux cours
+      - Ajout/abandon et ajustement de calendrier
+      - Réinscription et poursuite des études
+    out_of_scope:
+      - Décisions d'admission initiales (couvert sous Gestion du recrutement et des admissions)
+  BC-4720.10.10:
+    name: Enregistrement aux cours
+    description: |
+      Inscription des étudiants dans les cours, sections et unités d'apprentissage.
+  BC-4720.10.20:
+    name: Ajout/abandon et ajustement de calendrier
+    description: |
+      Traitement des ajouts/abandons et ajustements de calendrier dans les
+      fenêtres publiées.
+  BC-4720.10.30:
+    name: Réinscription et poursuite des études
+    description: |
+      Réinscription et poursuite des études sur les termes et années académiques.
+  BC-4720.20:
+    name: Gestion des dossiers académiques
+    description: |
+      Maintenance des dossiers académiques officiels des étudiants, incluant
+      les notes, les relevés de notes et les déterminations du statut académique.
+    in_scope:
+      - Enregistrement des notes
+      - Production des relevés de notes
+      - Détermination du statut académique
+    out_of_scope:
+      - Flux de travail de notation lui-même (couvert sous Gestion des évaluations et des examens)
+  BC-4720.20.10:
+    name: Enregistrement des notes
+    description: |
+      Enregistrement officiel des notes dans les dossiers des étudiants.
+  BC-4720.20.20:
+    name: Production des relevés de notes
+    description: |
+      Production et émission des relevés de notes officiels et non officiels.
+  BC-4720.20.30:
+    name: Détermination du statut académique
+    description: |
+      Détermination du statut académique, des mentions, de la mise en probation
+      et de l'exclusion.
+  BC-4720.30:
+    name: Dossiers de planification des cours et des emplois du temps
+    description: |
+      Dossiers officiels des emplois du temps des sections de cours, de
+      l'allocation des salles et des décisions de résolution de conflits utilisés
+      en aval par les inscriptions.
+    in_scope:
+      - Dossiers d'emploi du temps des sections et promotions
+      - Dossiers d'allocation des salles et installations
+      - Dossiers de résolution des conflits d'horaires
+    out_of_scope:
+      - Dispensation en salle de classe au quotidien (couvert sous Gestion des opérations d'enseignement et d'apprentissage)
+  BC-4720.30.10:
+    name: Dossiers d'emplois du temps des sections et promotions
+    description: |
+      Dossiers officiels des emplois du temps par section et promotion.
+  BC-4720.30.20:
+    name: Dossiers d'allocation des salles et installations
+    description: |
+      Dossiers d'allocation des salles d'enseignement et des installations pour
+      les séances planifiées.
+  BC-4720.30.30:
+    name: Dossiers de résolution des conflits d'horaires
+    description: |
+      Dossiers des conflits d'emplois du temps identifiés et résolus.
+  BC-4720.40:
+    name: Transfert de crédits et reconnaissance
+    description: |
+      Évaluation et enregistrement des crédits transférés d'autres établissements,
+      reconnaissance des acquis de l'expérience et application des accords
+      d'articulation.
+    in_scope:
+      - Évaluation des crédits transférés
+      - Reconnaissance des acquis de l'expérience (VAE)
+      - Application des accords d'articulation
+    out_of_scope:
+      - Évaluation des diplômes étrangers à l'admission (couvert sous Gestion du recrutement et des admissions)
+  BC-4720.40.10:
+    name: Évaluation des crédits transférés
+    description: |
+      Évaluation des crédits obtenus dans d'autres établissements par rapport
+      aux programmes d'accueil.
+  BC-4720.40.20:
+    name: Reconnaissance des acquis de l'expérience
+    description: |
+      Reconnaissance des apprentissages expérientiels et informels antérieurs
+      en vue d'une validation en crédits.
+  BC-4720.40.30:
+    name: Application des accords d'articulation
+    description: |
+      Application des accords d'articulation interétablissements aux dossiers
+      étudiants.
+  BC-4720.50:
+    name: Diplomation et délivrance de titres
+    description: |
+      Audit d'éligibilité à la diplomation, conférence des diplômes et émission
+      de titres vérifiables, diplômes et certificats.
+    in_scope:
+      - Audit d'éligibilité à la diplomation
+      - Conférence des diplômes
+      - Émission et vérification des titres
+    out_of_scope:
+      - Traitement des résultats d'examens (couvert sous Gestion des évaluations et des examens)
+  BC-4720.50.10:
+    name: Audit d'éligibilité à la diplomation
+    description: |
+      Audit des dossiers étudiants par rapport aux conditions de diplomation.
+  BC-4720.50.20:
+    name: Conférence des diplômes
+    description: |
+      Conférence formelle des grades et qualifications.
+  BC-4720.50.30:
+    name: Émission et vérification des titres
+    description: |
+      Émission et vérification des titres papier et numériques, incluant les
+      titres vérifiables.
+  BC-4720.60:
+    name: Dossiers d'identifiant et de cycle de vie des étudiants
+    description: |
+      Maintenance des identifiants étudiants, des indicateurs de statut
+      d'inscription et des dossiers de retrait/congé qui ancrent les actions
+      administratives en aval.
+    in_scope:
+      - Gestion du cycle de vie des identifiants étudiants
+      - Maintenance du statut d'inscription
+      - Dossiers de retrait et de congé
+    out_of_scope:
+      - Authentification d'identité et accès (couvert sous Gestion de la cybersécurité transversale)
+  BC-4720.60.10:
+    name: Cycle de vie des identités des étudiants
+    description: |
+      Cycle de vie des identifiants uniques des étudiants depuis l'émission
+      jusqu'à la clôture.
+  BC-4720.60.20:
+    name: Maintenance du statut d'inscription
+    description: |
+      Maintenance des indicateurs officiels de statut d'inscription (actif,
+      en congé, retiré).
+  BC-4720.60.30:
+    name: Dossiers de retrait et de congé
+    description: |
+      Dossiers de retrait, de congés et de réadmissions des étudiants.

@@ -1,0 +1,170 @@
+locale: fr
+source: L1-mineral-processing-operations-management.yaml
+entries:
+  BC-4440:
+    name: Gestion des opérations de traitement du minerai
+    description: |
+      Opérations de concentrateur et hydrométallurgiques convertissant le
+      tout-venant en concentrés vendables ou produits intermédiaires par
+      comminution, enrichissement, lixiviation et manutention des concentrés.
+  BC-4440.10:
+    name: Gestion du stockpile de tout-venant
+    description: |
+      Gestion des stockpiles de tout-venant entre la mine et l'usine de
+      traitement, incluant la reprise, le mélange et la réconciliation
+      des inventaires.
+    in_scope:
+      - Reprise et mélange des stockpiles ROM
+      - Réconciliation des inventaires de stockpiles
+    out_of_scope:
+      - Allocation des blocs de minerai en fosse (BC-4430.40.40)
+      - Stockpiles de concentrés (BC-4440.50.30)
+  BC-4440.10.10:
+    name: Reprise des stockpiles de tout-venant
+    description: |
+      Reprise des stockpiles de tout-venant vers l'alimentation de l'usine
+      par alimentateurs à tablier ou chargeuses frontales.
+  BC-4440.10.20:
+    name: Mélange du minerai
+    description: |
+      Mélange des matériaux de stockpile pour atteindre les caractéristiques
+      cibles de teneur et de comportement métallurgique.
+  BC-4440.10.30:
+    name: Réconciliation des inventaires de stockpiles
+    description: |
+      Réconciliation des données de levé, de dispatch et de reprise dans
+      les soldes d'inventaire des stockpiles.
+  BC-4440.20:
+    name: Opérations de comminution
+    description: |
+      Opérations de concassage, broyage et optimisation des circuits réduisant
+      le minerai à la granulométrie de libération.
+  BC-4440.20.10:
+    name: Opérations de concassage
+    description: |
+      Exploitation des stations de concassage primaire, secondaire et tertiaire.
+  BC-4440.20.20:
+    name: Opérations de broyage
+    description: |
+      Exploitation des broyeurs SAG, AG, à boulets et à barreaux avec la
+      classification associée.
+  BC-4440.20.30:
+    name: Optimisation des circuits de comminution
+    description: |
+      Optimisation des procédés des circuits de comminution pour le débit,
+      le P80 et l'intensité énergétique.
+  BC-4440.30:
+    name: Opérations d'enrichissement
+    description: |
+      Concentration physique des minéraux de valeur par flottation, gravimétrie,
+      séparation magnétique et par milieu dense.
+  BC-4440.30.10:
+    name: Opérations des circuits de flottation
+    description: |
+      Exploitation des circuits de flottation ébaucheur, scavenger et nettoyeur
+      avec dosage des réactifs.
+  BC-4440.30.20:
+    name: Concentration gravimétrique
+    description: |
+      Exploitation des jigs, spirales et concentrateurs centrifuges pour
+      les minéraux à récupération gravimétrique.
+  BC-4440.30.30:
+    name: Séparation magnétique
+    description: |
+      Séparation magnétique basse et haute intensité pour les minéraux
+      ferromagnétiques et paramagnétiques.
+  BC-4440.30.40:
+    name: Séparation par milieu dense
+    description: |
+      Exploitation des cyclones et tambours à milieu dense pour la
+      pré-concentration.
+  BC-4440.40:
+    name: Opérations hydrométallurgiques
+    description: |
+      Extraction aqueuse des métaux par lixiviation en tas, en cuves et en
+      bacs, extraction par solvant et circuits d'adsorption.
+  BC-4440.40.10:
+    name: Opérations de lixiviation en tas
+    description: |
+      Exploitation des platesformes de lixiviation en tas, incluant l'empilement,
+      l'irrigation et la collecte de la solution chargée.
+  BC-4440.40.20:
+    name: Opérations de lixiviation en cuves et en bacs
+    description: |
+      Exploitation des circuits de lixiviation en cuves et en bacs pour
+      le minerai et le concentré.
+  BC-4440.40.30:
+    name: Opérations d'extraction par solvant
+    description: |
+      Exploitation des circuits d'extraction par solvant pour le transfert
+      sélectif des métaux vers l'électrolyte.
+  BC-4440.40.40:
+    name: Opérations d'adsorption sur charbon actif
+    description: |
+      Exploitation des circuits d'adsorption-élution-récupération de type
+      charbon en pulpe, charbon en lixiviation et charbon en colonne.
+  BC-4440.50:
+    name: Manutention et filtration des concentrés
+    description: |
+      Épaississement, filtration et stockpile des concentrés en vue de
+      l'expédition vers la fonderie ou la vente.
+  BC-4440.50.10:
+    name: Opérations d'épaississement
+    description: |
+      Exploitation des épaississeurs à haute vitesse et en pâte pour le
+      déshydratage des concentrés et des résidus.
+  BC-4440.50.20:
+    name: Filtration et déshydratage
+    description: |
+      Exploitation des filtres sous pression, sous vide et à bande pour
+      le déshydratage des concentrés.
+  BC-4440.50.30:
+    name: Stockpile de concentrés
+    description: |
+      Stockpile couvert et en plein air des concentrés déshydratés en attente
+      d'expédition.
+  BC-4440.60:
+    name: Comptabilité métallurgique de l'usine
+    description: |
+      Échantillonnage, analyse et réconciliation du bilan métallique de
+      l'alimentation, des produits et des résidus de l'usine.
+  BC-4440.60.10:
+    name: Échantillonnage et analyse de l'usine
+    description: |
+      Échantillonnage et analyse en continu de l'alimentation, du concentré
+      et des résidus de l'usine.
+  BC-4440.60.20:
+    name: Bilan métallurgique
+    description: |
+      Réconciliation périodique du bilan métallique sur l'ensemble du
+      flowsheet de l'usine.
+  BC-4440.60.30:
+    name: Reporting de la récupération
+    description: |
+      Reporting de la récupération métallique par rapport au plan et à la
+      conception.
+  BC-4440.60.40:
+    name: Reporting de la qualité du concentré
+    description: |
+      Reporting de la teneur du concentré, des éléments délétères et de
+      l'humidité par rapport aux spécifications.
+  BC-4440.70:
+    name: Gestion des réactifs et consommables de traitement
+    description: |
+      Gestion des réactifs et consommables de traitement, incluant le contrôle
+      du dosage, les inventaires et la gestion des réactifs dangereux.
+  BC-4440.70.10:
+    name: Contrôle du dosage des réactifs
+    description: |
+      Contrôle en temps réel du dosage des réactifs dans les circuits de
+      flottation et hydrométallurgiques.
+  BC-4440.70.20:
+    name: Gestion des inventaires de réactifs
+    description: |
+      Gestion des inventaires et de la consommation des réactifs en vrac et
+      des corps broyants.
+  BC-4440.70.30:
+    name: Gestion du cyanure
+    description: |
+      Gestion du cyanure et autres réactifs dangereux conformément au Code
+      international de gestion du cyanure.
