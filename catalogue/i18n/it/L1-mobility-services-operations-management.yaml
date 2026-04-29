@@ -1,0 +1,181 @@
+# Gestione delle operazioni dei servizi di mobilità (it) — translations for L1-mobility-services-operations-management.yaml
+locale: it
+source: L1-mobility-services-operations-management.yaml
+entries:
+  BC-3490:
+    name: Gestione delle operazioni dei servizi di mobilità
+    description: |
+      Operazioni dei servizi di mobilità condivisa e on-demand — ride-hailing,
+      car sharing e micromobilità, e aggregazione MaaS —
+      inclusi catalogo dei servizi, operazioni di viaggio, riequilibrio della flotta,
+      operazioni di conducenti e passeggeri, pricing dinamico, integrazione con i
+      partner e coinvolgimento di città e regolatori.
+  BC-3490.10:
+    name: Gestione del catalogo dei servizi di mobilità
+    description: |
+      Definizione delle tipologie di servizio di mobilità, dei piani tariffari e delle
+      zone di copertura geografica.
+  BC-3490.10.10:
+    name: Definizione delle tipologie di servizio
+    description: |
+      Definizione delle tipologie di servizio quali point-to-point, free-floating,
+      station-based e corse in pool.
+  BC-3490.10.20:
+    name: Configurazione dei piani tariffari dei servizi
+    description: |
+      Configurazione delle tariffe base, del pricing per tempo e distanza e dei
+      piani di abbonamento.
+  BC-3490.10.30:
+    name: Gestione dei geofence e della copertura dei servizi
+    description: |
+      Gestione dei geofence operativi, delle zone vietate e delle aree di
+      copertura.
+  BC-3490.20:
+    name: Operazioni di viaggio e prenotazione
+    description: |
+      Acquisizione, abbinamento, dispatch e gestione del ciclo di vita delle
+      prenotazioni e dei viaggi di mobilità.
+  BC-3490.20.10:
+    name: Acquisizione delle prenotazioni di viaggio
+    description: |
+      Acquisizione delle prenotazioni di viaggio tramite canali app, web e
+      partner.
+  BC-3490.20.20:
+    name: Abbinamento e dispatch del viaggio
+    description: |
+      Abbinamento dei passeggeri a veicoli o conducenti e dispatch dei viaggi
+      confermati.
+  BC-3490.20.30:
+    name: Gestione del ciclo di vita del viaggio
+    description: |
+      Gestione del ciclo di vita dei viaggi in corso, incluse cancellazione,
+      deviazione e completamento.
+  BC-3490.30:
+    name: Operazioni della flotta condivisa
+    description: |
+      Gestione operativa della flotta condivisa, inclusi riequilibrio, manutenzione
+      in loco e controllo dei danni.
+    in_scope:
+      - Riequilibrio dei veicoli tra zone e stazioni
+      - Pulizia, ricarica e rifornimento in strada
+      - Gestione dei danni e delle perdite per i veicoli condivisi
+    out_of_scope:
+      - Contabilità generica degli asset delle flotte aziendali (BC-2430)
+      - Operazioni delle stazioni di ricarica EV (BC-3480)
+  BC-3490.30.10:
+    name: Operazioni di riequilibrio dei veicoli
+    description: |
+      Riequilibrio dei veicoli condivisi tra zone, stazioni e aree ad alta domanda.
+  BC-3490.30.20:
+    name: Coordinamento della pulizia e della ricarica dei veicoli
+    description: |
+      Coordinamento delle attività di pulizia, ricarica e rifornimento dei veicoli
+      in campo.
+  BC-3490.30.30:
+    name: Gestione dei danni e delle perdite dei veicoli
+    description: |
+      Gestione della valutazione dei danni, dell'instradamento alle riparazioni e
+      del recupero delle perdite per i veicoli condivisi.
+  BC-3490.40:
+    name: Operazioni di conducenti e fornitori
+    description: |
+      Onboarding, conformità, regolamento e gestione delle performance di conducenti
+      e altri fornitori di servizi.
+  BC-3490.40.10:
+    name: Onboarding e conformità dei conducenti
+    description: |
+      Onboarding dei conducenti, inclusi controlli della patente, verifiche dei
+      precedenti e conformità continuativa.
+  BC-3490.40.20:
+    name: Guadagni e regolamento dei conducenti
+    description: |
+      Calcolo e pagamento dei guadagni, delle mance e degli incentivi dei
+      conducenti.
+  BC-3490.40.30:
+    name: Gestione delle performance dei conducenti
+    description: |
+      Gestione delle performance dei conducenti, inclusi valutazioni, coaching e
+      disattivazione.
+  BC-3490.50:
+    name: Operazioni passeggeri
+    description: |
+      Onboarding, supporto e operazioni di trust-and-safety per i passeggeri e i
+      clienti finali dei servizi di mobilità.
+  BC-3490.50.10:
+    name: Onboarding e identità del passeggero
+    description: |
+      Onboarding dei passeggeri, inclusi verifica dell'identità, metodo di pagamento
+      e consenso.
+  BC-3490.50.20:
+    name: Operazioni di supporto ai passeggeri
+    description: |
+      Supporto ai passeggeri per problemi pre-viaggio, durante il viaggio e
+      post-viaggio.
+  BC-3490.50.30:
+    name: Gestione della sicurezza e della fiducia dei passeggeri
+    description: |
+      Operazioni di trust-and-safety, inclusa la gestione degli incidenti, la
+      prevenzione degli abusi e le funzioni di sicurezza.
+  BC-3490.60:
+    name: Pricing dinamico e gestione della domanda
+    description: |
+      Previsione della domanda e operatività dei motori di pricing dinamico,
+      surge e promozioni per i servizi di mobilità.
+  BC-3490.60.10:
+    name: Previsione della domanda
+    description: |
+      Previsione della domanda a breve termine per zona, orario e tipologia di
+      servizio.
+  BC-3490.60.20:
+    name: Operazioni del motore di pricing dinamico
+    description: |
+      Operatività dei motori di pricing dinamico e surge, inclusi limiti di prezzo
+      e audit.
+  BC-3490.60.30:
+    name: Operazioni di promozioni e incentivi
+    description: |
+      Operatività di promozioni e incentivi per passeggeri e conducenti nelle
+      campagne.
+  BC-3490.70:
+    name: Aggregazione multimodale e operazioni con i partner
+    description: |
+      Aggregazione dei partner MaaS, composizione di viaggi multimodali e regolamento
+      inter-operatore tra i partner di mobilità.
+  BC-3490.70.10:
+    name: Onboarding dei partner MaaS
+    description: |
+      Onboarding dei partner di trasporto pubblico, ride-hail e micromobilità
+      sulla piattaforma MaaS.
+  BC-3490.70.20:
+    name: Composizione di viaggi multimodali
+    description: |
+      Composizione di viaggi multimodali che combinano trasporto pubblico e
+      mobilità on-demand.
+  BC-3490.70.30:
+    name: Regolamento inter-operatore
+    description: |
+      Regolamento di ricavi e commissioni tra aggregatori MaaS e operatori di
+      mobilità sottostanti.
+  BC-3490.80:
+    name: Operazioni normative e con le città per la mobilità
+    description: |
+      Coinvolgimento di città e regolatori su permessi, condivisione dei dati e
+      operazioni di marciapiede e parcheggio.
+  BC-3490.80.10:
+    name: Gestione dei permessi e delle autorizzazioni per le città
+    description: |
+      Gestione dei permessi operativi delle città, dei tetti al numero di veicoli e
+      delle autorizzazioni nelle giurisdizioni.
+  BC-3490.80.20:
+    name: Condivisione dei dati operativi con le città
+    description: |
+      Condivisione dei dati operativi con le città secondo MDS, GBFS e
+      specifiche equivalenti.
+  BC-3490.80.30:
+    name: Coordinamento del marciapiede e dei parcheggi
+    description: |
+      Coordinamento dell'accesso ai marciapiedi, dei parcheggi e delle zone di
+      attesa con le autorità cittadine.
+metadata:
+  status: draft
+  reviewer: pending

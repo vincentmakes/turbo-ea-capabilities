@@ -1,0 +1,207 @@
+# Gestione delle operazioni di volo delle compagnie aeree (it) — translations for L1-airline-flight-operations-management.yaml
+locale: it
+source: L1-airline-flight-operations-management.yaml
+entries:
+  BC-4080:
+    name: Gestione delle operazioni di volo delle compagnie aeree
+    description: |
+      Pianificazione degli orari, instradamento degli aeromobili, pianificazione degli equipaggi,
+      dispacciamento del volo, coordinamento gate e turnaround, recupero in caso di IROPS
+      e reporting sulle performance di volo e sulla sicurezza per i vettori aerei.
+    in_scope:
+      - Pianificazione dell'orario di volo, coordinamento degli slot e connection bank
+      - Instradamento degli aeromobili, assegnazione della coda e tracciamento MEL
+      - Costruzione dei pairing degli equipaggi, rostering e conformità FTL
+      - Dispacciamento del volo e controllo operativo
+      - Allocazione dei gate e coordinamento del turnaround
+      - Decisioni operative di disruption (IROPS) su aeromobili ed equipaggi
+      - Reporting sulle performance di volo e sugli eventi di sicurezza
+    out_of_scope:
+      - Controllo del traffico aereo da parte degli ANSP (BC-1700)
+      - Flusso di risistemazione dei passeggeri a livello di prenotazione (BC-4020.70)
+      - Gestione dei voli cargo (BC-3270)
+  BC-4080.10:
+    name: Pianificazione dell'orario di volo
+    description: |
+      Costruzione e pubblicazione dell'orario di volo della compagnia aerea,
+      con riferimento alla rete, agli slot e alle connection bank.
+  BC-4080.10.10:
+    name: Definizione del piano di rete e delle rotte
+    description: |
+      Definizione del piano di rete e delle rotte rispetto
+      ai piani di domanda e di flotta.
+  BC-4080.10.20:
+    name: Coordinamento degli slot aeroportuali
+    description: |
+      Coordinamento degli slot aeroportuali e dei vincoli,
+      inclusa la programmazione allineata alle IATA WSG.
+  BC-4080.10.30:
+    name: Costruzione e pubblicazione dell'orario
+    description: |
+      Costruzione dell'orario pubblicato e pubblicazione del file SSIM
+      ai partner di distribuzione.
+  BC-4080.10.40:
+    name: Ottimizzazione delle connection bank
+    description: |
+      Ottimizzazione delle connection bank hub e dei tempi minimi
+      di connessione.
+  BC-4080.20:
+    name: Instradamento degli aeromobili e assegnazione della coda
+    description: |
+      Costruzione delle rotazioni degli aeromobili, assegnazione della coda,
+      operazioni di swap, coordinamento degli slot di manutenzione e tracciamento MEL.
+  BC-4080.20.10:
+    name: Pianificazione delle rotazioni di flotta
+    description: |
+      Pianificazione delle rotazioni di flotta sulla rete, con bilanciamento
+      delle ore di volo e dei cicli.
+  BC-4080.20.20:
+    name: Assegnazione della coda e operazioni di swap
+    description: |
+      Assegnazione di code specifiche ai voli ed esecuzione
+      di swap tattici.
+  BC-4080.20.30:
+    name: Coordinamento degli slot di manutenzione degli aeromobili
+    description: |
+      Coordinamento degli slot di manutenzione e dei voli ferry
+      rispetto all'orario.
+  BC-4080.20.40:
+    name: Tracciamento della Minimum Equipment List
+    description: |
+      Tracciamento delle deroghe MEL rispetto alla scadenza
+      e all'impatto operativo.
+  BC-4080.30:
+    name: Pianificazione e rostering degli equipaggi
+    description: |
+      Pianificazione degli equipaggi di cabina e di pilotaggio, inclusa la costruzione
+      dei pairing, il bidding, il tracciamento delle qualifiche e la conformità FTL.
+  BC-4080.30.10:
+    name: Costruzione dei pairing degli equipaggi
+    description: |
+      Costruzione dei pairing degli equipaggi sull'orario
+      nel rispetto delle regole di legittimità.
+  BC-4080.30.20:
+    name: Bidding degli equipaggi e costruzione del roster
+    description: |
+      Operazione dei processi di bidding e costruzione del roster
+      per gli equipaggi di cabina e di pilotaggio.
+  BC-4080.30.30:
+    name: Tracciamento delle qualifiche e della currency degli equipaggi
+    description: |
+      Tracciamento delle qualifiche, della recency e della currency
+      dei membri dell'equipaggio.
+  BC-4080.30.40:
+    name: Conformità ai limiti di ore di volo e di servizio
+    description: |
+      Conformità alle regole FTL e sui tempi di servizio
+      nella fase di pianificazione e di esecuzione.
+  BC-4080.40:
+    name: Dispacciamento del volo e controllo operativo
+    description: |
+      Generazione dei piani di volo operativi, decisioni sul carburante,
+      briefing su meteo e NOTAM e decision-making del centro di controllo operativo.
+  BC-4080.40.10:
+    name: Generazione del piano di volo
+    description: |
+      Generazione dei piani di volo operativi, inclusi rotta,
+      quota e tempo di percorrenza.
+  BC-4080.40.20:
+    name: Calcolo del carburante operativo
+    description: |
+      Calcolo del carburante operativo, incluse riserve, contingenza
+      e imbarco discrezionale.
+  BC-4080.40.30:
+    name: Briefing meteo e NOTAM
+    description: |
+      Compilazione e consegna dei briefing meteo e NOTAM
+      agli equipaggi e al dispacciamento.
+  BC-4080.40.40:
+    name: Decision-making del centro di controllo operativo
+    description: |
+      Decision-making dell'OCC su ritardi, dirottamenti
+      e opzioni di recupero.
+  BC-4080.50:
+    name: Operazioni gate e turnaround
+    description: |
+      Pianificazione dei gate e coordinamento in tempo reale del turnaround
+      negli aeroporti, inclusa la gestione del pushback e dei ritardi sul piazzale.
+  BC-4080.50.10:
+    name: Allocazione e sequenziamento dei gate
+    description: |
+      Allocazione dei gate e sequenziamento degli stand
+      nelle operazioni del giorno.
+  BC-4080.50.20:
+    name: Coordinamento del turnaround
+    description: |
+      Coordinamento in tempo reale delle attività di turnaround,
+      inclusi catering, rifornimento e imbarco.
+  BC-4080.50.30:
+    name: Operazioni di pushback e block-out
+    description: |
+      Coordinamento del pushback, del block-out e del rullaggio
+      allo stand.
+  BC-4080.50.40:
+    name: Gestione dei ritardi sul piazzale
+    description: |
+      Gestione dei ritardi sul piazzale nel rispetto dei limiti normativi
+      e degli obblighi di assistenza ai passeggeri.
+  BC-4080.60:
+    name: Gestione delle disruption di volo e IROPS
+    description: |
+      Decisioni operative durante gli eventi di disruption, inclusi dirottamenti,
+      cancellazioni di massa e recupero degli equipaggi, oltre al coordinamento
+      con i flussi di re-booking lato passeggeri.
+    in_scope:
+      - Decision-making su dirottamenti e cancellazioni
+      - Recupero degli equipaggi in caso di disruption e assegnazione degli standby
+      - Coordinamento con la risistemazione dei passeggeri (BC-4020.70)
+    out_of_scope:
+      - Re-booking e determinazione del risarcimento a livello passeggero (BC-4020.70)
+  BC-4080.60.10:
+    name: Operazioni di decisione sul dirottamento
+    description: |
+      Operazioni per decidere ed eseguire dirottamenti
+      in rotta e prima della partenza.
+  BC-4080.60.20:
+    name: Operazioni di recupero per cancellazioni di massa
+    description: |
+      Operazioni di recupero durante le cancellazioni di massa,
+      relative ad aeromobili, equipaggi e slot.
+  BC-4080.60.30:
+    name: Recupero degli equipaggi in caso di disruption
+    description: |
+      Recupero dei roster degli equipaggi durante la disruption,
+      inclusa l'assegnazione degli standby e delle riserve.
+  BC-4080.60.40:
+    name: Coordinamento del re-booking dei passeggeri
+    description: |
+      Coordinamento con i team di risistemazione dei passeggeri
+      sulle opzioni di recupero e la prioritizzazione.
+  BC-4080.70:
+    name: Reporting sulle performance di volo e sulla sicurezza
+    description: |
+      Reporting sulle performance di volo, sui KPI di puntualità,
+      sui rapporti di sicurezza aerea e sui feed di dati operativi sulla sicurezza.
+  BC-4080.70.10:
+    name: Reporting sulla puntualità (OTP)
+    description: |
+      Reporting sull'OTP (puntualità) e sui codici di ritardo
+      sulla rete.
+  BC-4080.70.20:
+    name: Acquisizione dei rapporti di sicurezza aerea
+    description: |
+      Acquisizione e triage dei rapporti di sicurezza aerea
+      da parte degli equipaggi e del personale operativo.
+  BC-4080.70.30:
+    name: Supporto alle indagini sulla sicurezza operativa
+    description: |
+      Supporto alle indagini sulla sicurezza operativa,
+      incluse la raccolta dei dati e le azioni di follow-up.
+  BC-4080.70.40:
+    name: Feed di analisi dei dati di volo
+    description: |
+      Feed di analisi dei dati di volo per i programmi
+      di analisi della sicurezza e delle operazioni.
+metadata:
+  status: draft
+  reviewer: pending
