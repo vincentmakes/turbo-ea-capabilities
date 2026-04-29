@@ -1,0 +1,164 @@
+locale: de
+source: L1-subscription-billing-revenue-management.yaml
+entries:
+  BC-4250:
+    name: Abonnementabrechnung und -Umsatz-Management
+    description: |
+      Nutzungsmessung, Tarifierung, Rechnungsstellung, Mahnwesen,
+      Abonnementumsatzrealisierung, Abonnementsteuerbehandlung und
+      Wiederkehrumsatz-Analysen für das SaaS-Geschäftsmodell.
+  BC-4250.10:
+    name: Nutzungsmessung
+    description: |
+      Ingestion und Aggregation von Nutzungsereignissen, die
+      nachgelagerte Tarifierung und Analysen speisen.
+  BC-4250.10.10:
+    name: Nutzungsereignis-Ingestion
+    description: |
+      Ingestion von Nutzungsereignissen aus Produktdiensten in
+      die Messpipeline.
+  BC-4250.10.20:
+    name: Nutzungsaggregation
+    description: |
+      Aggregation von Nutzungsereignissen zu abrechenbaren Mengen
+      je Mandant und Messzähler.
+  BC-4250.10.30:
+    name: Gemessene Mengenabstimmung
+    description: |
+      Abstimmung gemessener Mengen gegen Quelldaten und
+      kundenseitige Zähler.
+  BC-4250.20:
+    name: Tarifierung und Abrechnung
+    description: |
+      Anwendung von Abonnement- und Nutzungstarifen, Tagessatzberechnungen
+      und Rabatten zur Berechnung von Entgelten.
+  BC-4250.20.10:
+    name: Abonnementstarifierung
+    description: |
+      Berechnung wiederkehrender Abonnemententgelte je Zyklus.
+  BC-4250.20.20:
+    name: Nutzungstarifierung
+    description: |
+      Berechnung von Nutzungsentgelten aus tarifartierten Mengen
+      und Tarifen.
+  BC-4250.20.30:
+    name: Tagessatzberechnung
+    description: |
+      Berechnung anteiliger Entgelte aus zyklusmittigen Änderungen.
+  BC-4250.20.40:
+    name: Rabattanwendung
+    description: |
+      Anwendung ausgehandelter Rabatte und Gutschriften auf
+      berechnete Entgelte.
+  BC-4250.30:
+    name: Rechnungsstellung und Kontoauszug-Management
+    description: |
+      Generierung, Lieferung und Anpassung von Rechnungen sowie
+      Bearbeitung von Kundenabrechnungsstreitigkeiten.
+  BC-4250.30.10:
+    name: Rechnungsgenerierung
+    description: |
+      Generierung von Rechnungen aus tarifartierten Entgelten
+      und Vertragsbedingungen.
+  BC-4250.30.20:
+    name: Rechnungslieferung
+    description: |
+      Lieferung von Rechnungen an Kunden über Portal-, E-Mail-
+      und Partnerkanäle.
+  BC-4250.30.30:
+    name: Rechnungsanpassung
+    description: |
+      Anpassung von Rechnungen für Gutschriften, Fehler und
+      vertragliche Abweichungen.
+  BC-4250.30.40:
+    name: Kunden-Abrechnungsstreitigkeiten-Bearbeitung
+    description: |
+      Triage und Lösung von Kunden-Abrechnungsstreitigkeiten.
+  BC-4250.40:
+    name: Zahlungseinzug und Mahnwesen
+    description: |
+      Zahlungsmittel-Management, Zahlungsautorisierung, Mahnwesen
+      und Rückgewinnung unfreiwilliger Abwanderung.
+  BC-4250.40.10:
+    name: Zahlungsmittel-Management
+    description: |
+      Erfassung und Pflege von Kundenzahlungsmitteln und -tokens.
+  BC-4250.40.20:
+    name: Zahlungsautorisierung
+    description: |
+      Autorisierung und Einzug wiederkehrender Zahlungen über
+      Zahlungsabwickler.
+  BC-4250.40.30:
+    name: Mahnworkflow
+    description: |
+      Automatisierte Mahnsequenzen bei fehlgeschlagenen Zahlungen
+      und überfälligen Salden.
+  BC-4250.40.40:
+    name: Unfreiwillige Abwanderungs-Rückgewinnung
+    description: |
+      Rückgewinnung von Abonnements, die durch abgelaufene Karten,
+      Hartzurückweisungen und ähnliche Zahlungsfehler verloren gingen.
+  BC-4250.50:
+    name: Abonnementumsatzrealisierung
+    description: |
+      Identifikation von Leistungsverpflichtungen und Verwaltung von
+      Umsatzplänen gemäß ASC 606 / IFRS 15.
+  BC-4250.50.10:
+    name: Leistungsverpflichtungs-Identifikation
+    description: |
+      Identifikation eigenständiger Leistungsverpflichtungen aus
+      Abonnementverträgen.
+  BC-4250.50.20:
+    name: Umsatzplan-Management
+    description: |
+      Generierung und Pflege von Umsatzrealisierungsplänen über
+      die Vertragslaufzeit.
+  BC-4250.50.30:
+    name: Deferred-Revenue-Abstimmung
+    description: |
+      Abstimmung abgegrenzter Umsatzsalden gegen abgerechnete und
+      realisierte Beträge.
+  BC-4250.60:
+    name: Abonnementsteuer-Management
+    description: |
+      Steuerjurisdiktionsbestimmung, Steuerberechnung und
+      Befreiungsbehandlung über wiederkehrende und nutzungsbasierte
+      Entgelte hinweg.
+  BC-4250.60.10:
+    name: Steuerjurisdiktionsbestimmung
+    description: |
+      Bestimmung anwendbarer Steuerjurisdiktionen je Kunde und
+      Entgelt.
+  BC-4250.60.20:
+    name: Abonnementsteuerberechnung
+    description: |
+      Berechnung indirekter Steuern auf Abonnement- und
+      Nutzungsentgelte.
+  BC-4250.60.30:
+    name: Steuerbefreiungsbehandlung
+    description: |
+      Erfassung und Anwendung kundenseitiger
+      Steuerbefreiungsbescheinigungen.
+  BC-4250.70:
+    name: Abonnementumsatz-Analysen
+    description: |
+      Berechnung und Analyse von Wiederkehrumsatz-Gesundheitskennzahlen
+      einschließlich ARR, MRR, NRR, GRR und Kohortansichten.
+  BC-4250.70.10:
+    name: ARR- und MRR-Berechnung
+    description: |
+      Berechnung von jährlichem und monatlichem Wiederkehrumsatz
+      aus dem Abonnementstatus.
+  BC-4250.70.20:
+    name: Netto- und Brutto-Retention-Analyse
+    description: |
+      Analyse der Netto- und Brutto-Umsatzretention über
+      Kundenkohorten.
+  BC-4250.70.30:
+    name: Kohorten-Umsatzanalyse
+    description: |
+      Kohortenbasierte Analyse der Umsatzentwicklung und
+      Retentionsdynamik.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"

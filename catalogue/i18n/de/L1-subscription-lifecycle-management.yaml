@@ -1,0 +1,157 @@
+locale: de
+source: L1-subscription-lifecycle-management.yaml
+entries:
+  BC-4240:
+    name: Abonnement-Lebenszyklus-Management
+    description: |
+      Plan- und Berechtigungsdesign, Abonnementvertragsabschluss,
+      Bereitstellung, Änderung, Verlängerung, Kündigung und
+      Laufzeit-Berechtigungsdurchsetzung über den kommerziellen
+      SaaS-Lebenszyklus.
+  BC-4240.10:
+    name: Plan- und Berechtigungsdesign
+    description: |
+      Definition von Plänen, Funktionsberechtigungen und den Regeln,
+      die festlegen, welche Kunden für welchen Plan berechtigt sind.
+    in_scope:
+      - Plankatalog und Funktions-Gating
+      - Planberechtigungsregeln
+    out_of_scope:
+      - Preisstrategie und Preislistengovernance (abgedeckt durch Preismanagement)
+  BC-4240.10.10:
+    name: Plankatalog-Definition
+    description: |
+      Definition des Plankatalogs einschließlich Planstufen und
+      -inhalten.
+  BC-4240.10.20:
+    name: Funktionsberechtigungs-Definition
+    description: |
+      Definition von Funktionsberechtigungen, die Plänen, Add-ons
+      und benutzerdefinierten Verträgen zugeordnet sind.
+  BC-4240.10.30:
+    name: Planberechtigungsregeln
+    description: |
+      Regeln, die bestimmen, welche Kunden und Anwendungsfälle für
+      welchen Plan berechtigt sind.
+  BC-4240.20:
+    name: Abonnementvertrags-Management
+    description: |
+      Angebotsverwaltung, Bestellformulargenerierung und Erfassung
+      von Abonnementvertragsartefakten.
+  BC-4240.20.10:
+    name: Abonnementangebots-Management
+    description: |
+      Generierung und Pflege von Abonnementangeboten im
+      Vertriebsprozess.
+  BC-4240.20.20:
+    name: Bestellformular-Generierung
+    description: |
+      Generierung von Bestellformularen, die vereinbarte Bedingungen
+      für neue und bestehende Kunden widerspiegeln.
+  BC-4240.20.30:
+    name: Abonnementvertrags-Erfassung
+    description: |
+      Erfassung und Speicherung ausgeführter Abonnementvertragsartefakte
+      und wesentlicher Bedingungen.
+  BC-4240.30:
+    name: Abonnementbereitstellung
+    description: |
+      Aktivierung des Dienstes für neue Abonnements einschließlich
+      Trial-zu-Paid-Konversion und Massenplatz-Bereitstellung.
+  BC-4240.30.10:
+    name: Erstbereitstellung
+    description: |
+      Erstbereitstellung von Dienstleistungsberechtigungen zu
+      Beginn des Abonnements.
+  BC-4240.30.20:
+    name: Trial-Konversion
+    description: |
+      Konversion von Testkonten zu bezahlten Abonnements.
+  BC-4240.30.30:
+    name: Massenplatz-Bereitstellung
+    description: |
+      Massenbereitstellung von Plätzen für Unternehmensabonnements.
+  BC-4240.40:
+    name: Abonnementänderungs-Management
+    description: |
+      Änderungen an aktiven Abonnements einschließlich Upgrades,
+      Downgrades, Platzanpassungen und Add-on-Aktivierung.
+  BC-4240.40.10:
+    name: Plan-Upgrade-Management
+    description: |
+      Bearbeitung kunden- und systemseitig initiierter Plan-Upgrades.
+  BC-4240.40.20:
+    name: Plan-Downgrade-Management
+    description: |
+      Bearbeitung von Plan-Downgrades einschließlich Auswirkungen
+      auf Berechtigungen und Daten.
+  BC-4240.40.30:
+    name: Platzanpassung
+    description: |
+      Anpassung von Platzanzahlen bei aktiven Abonnements.
+  BC-4240.40.40:
+    name: Add-on-Aktivierung
+    description: |
+      Aktivierung optionaler Add-on-Berechtigungen bei aktiven
+      Abonnements.
+  BC-4240.50:
+    name: Verlängerungs-Management
+    description: |
+      Prognose, Verarbeitung und Verhandlung von Abonnementverlängerungen
+      unabhängig ob automatisch oder manuell.
+  BC-4240.50.10:
+    name: Verlängerungsprognose
+    description: |
+      Prognose bevorstehender Verlängerungen und erwarteter Ergebnisse.
+  BC-4240.50.20:
+    name: Automatische Verlängerungsverarbeitung
+    description: |
+      Verarbeitung automatischer Abonnementverlängerungen gemäß
+      Vertragsbedingungen.
+  BC-4240.50.30:
+    name: Verlängerungsverhandlungs-Unterstützung
+    description: |
+      Unterstützung bei Verlängerungsverhandlungen einschließlich
+      Daten, Preisgestaltung und Änderungspaketen.
+  BC-4240.60:
+    name: Kündigung und Vertragsbeendigung
+    description: |
+      Freiwillige Kündigung, unfreiwillige Vertragsbeendigung und
+      Dienst-Abwicklung für ausscheidende Kunden.
+  BC-4240.60.10:
+    name: Kündigungsverarbeitung
+    description: |
+      Verarbeitung kundenseitig initiierter Kündigungen.
+  BC-4240.60.20:
+    name: Unfreiwillige Vertragsbeendigung
+    description: |
+      Vertragsbeendigung bei Nichtzahlung, Vertragsbruch oder
+      vertraglichem Ende.
+  BC-4240.60.30:
+    name: Dienst-Abwicklungs-Koordination
+    description: |
+      Koordinierte Dienst-Abwicklung einschließlich Datenexport
+      und Löschungsübergabe.
+  BC-4240.70:
+    name: Berechtigungsdurchsetzung
+    description: |
+      Auflösung und Laufzeitdurchsetzung von Abonnementberechtigungen
+      mit Prüfpfad für Zugriffsentscheidungen.
+  BC-4240.70.10:
+    name: Berechtigungsauflösung
+    description: |
+      Auflösung effektiver Berechtigungen je Abonnement, Konto
+      und Nutzer.
+  BC-4240.70.20:
+    name: Berechtigungs-Gate-Durchsetzung
+    description: |
+      Laufzeit-Gating von Funktionen und Kontingenten gegen
+      aufgelöste Berechtigungen.
+  BC-4240.70.30:
+    name: Berechtigungs-Prüfpfad
+    description: |
+      Prüfungsgrade Aufzeichnung von Berechtigungsänderungen und
+      Gate-Entscheidungen.
+metadata:
+  translator: claude-ai
+  date: "2026-04-29"
