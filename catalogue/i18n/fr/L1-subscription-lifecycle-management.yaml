@@ -1,0 +1,151 @@
+locale: fr
+source: L1-subscription-lifecycle-management.yaml
+entries:
+  BC-4240:
+    name: Gestion du cycle de vie de l'abonnement
+    description: |
+      Conception des offres et des droits d'accès, contractualisation, provisionnement,
+      modification, renouvellement, résiliation et application des droits en temps réel
+      tout au long du cycle de vie commercial SaaS.
+  BC-4240.10:
+    name: Conception des offres et des droits d'accès
+    description: |
+      Définition des offres, des droits d'accès aux fonctionnalités et des règles
+      d'éligibilité déterminant quels clients peuvent accéder à quelle offre.
+    in_scope:
+      - Catalogue d'offres et contrôle d'accès aux fonctionnalités
+      - Règles d'éligibilité aux offres
+    out_of_scope:
+      - Stratégie tarifaire et gouvernance de la grille de prix (couvert par la gestion des prix)
+  BC-4240.10.10:
+    name: Définition du catalogue d'offres
+    description: |
+      Définition du catalogue d'offres, y compris les niveaux d'abonnement et
+      leur contenu.
+  BC-4240.10.20:
+    name: Définition des droits aux fonctionnalités
+    description: |
+      Définition des droits d'accès aux fonctionnalités associés aux offres,
+      aux modules complémentaires et aux contrats personnalisés.
+  BC-4240.10.30:
+    name: Règles d'éligibilité aux offres
+    description: |
+      Règles déterminant quels clients et quels cas d'usage sont éligibles
+      à chaque offre.
+  BC-4240.20:
+    name: Contractualisation des abonnements
+    description: |
+      Gestion des devis, génération des bons de commande et conservation
+      des documents contractuels d'abonnement.
+  BC-4240.20.10:
+    name: Gestion des devis d'abonnement
+    description: |
+      Génération et gestion des devis d'abonnement tout au long du processus
+      de vente.
+  BC-4240.20.20:
+    name: Génération des bons de commande
+    description: |
+      Génération des bons de commande reflétant les conditions convenues pour
+      les clients nouveaux et existants.
+  BC-4240.20.30:
+    name: Conservation des contrats d'abonnement
+    description: |
+      Conservation et archivage des documents contractuels d'abonnement exécutés
+      et des conditions clés.
+  BC-4240.30:
+    name: Provisionnement des abonnements
+    description: |
+      Activation du service pour les nouveaux abonnements, y compris la conversion
+      des essais gratuits en abonnements payants et le provisionnement en masse de postes.
+  BC-4240.30.10:
+    name: Provisionnement initial
+    description: |
+      Provisionnement initial des droits de service au démarrage
+      de l'abonnement.
+  BC-4240.30.20:
+    name: Conversion des essais gratuits
+    description: |
+      Conversion des comptes d'essai en abonnements payants.
+  BC-4240.30.30:
+    name: Provisionnement en masse de postes
+    description: |
+      Provisionnement en masse de postes pour les abonnements entreprise.
+  BC-4240.40:
+    name: Modification des abonnements
+    description: |
+      Modifications apportées aux abonnements actifs, incluant les montées en gamme,
+      les rétrogradations, les ajustements de postes et l'activation de modules complémentaires.
+  BC-4240.40.10:
+    name: Gestion des montées en gamme
+    description: |
+      Traitement des montées en gamme initiées par le client ou par le système.
+  BC-4240.40.20:
+    name: Gestion des rétrogradations
+    description: |
+      Traitement des rétrogradations d'offre, y compris les effets sur les droits
+      et les données.
+  BC-4240.40.30:
+    name: Ajustement des postes
+    description: |
+      Ajustement du nombre de postes sur les abonnements actifs.
+  BC-4240.40.40:
+    name: Activation des modules complémentaires
+    description: |
+      Activation des droits aux modules complémentaires optionnels sur les
+      abonnements actifs.
+  BC-4240.50:
+    name: Gestion des renouvellements
+    description: |
+      Prévision, traitement et négociation des renouvellements d'abonnement,
+      qu'ils soient automatiques ou manuels.
+  BC-4240.50.10:
+    name: Prévision des renouvellements
+    description: |
+      Prévision des renouvellements à venir et des résultats attendus.
+  BC-4240.50.20:
+    name: Traitement des renouvellements automatiques
+    description: |
+      Traitement des renouvellements automatiques d'abonnement conformément
+      aux conditions contractuelles.
+  BC-4240.50.30:
+    name: Accompagnement à la négociation des renouvellements
+    description: |
+      Accompagnement des négociations de renouvellement, notamment par des données,
+      des tarifications et des propositions de modification de conditions.
+  BC-4240.60:
+    name: Résiliation et fin de contrat
+    description: |
+      Résiliation volontaire, résiliation pour motif et clôture du service
+      pour les clients sortants.
+  BC-4240.60.10:
+    name: Traitement des résiliations
+    description: |
+      Traitement des résiliations initiées par le client.
+  BC-4240.60.20:
+    name: Résiliation forcée
+    description: |
+      Résiliation du service pour non-paiement, manquement ou fin contractuelle.
+  BC-4240.60.30:
+    name: Coordination de la clôture du service
+    description: |
+      Clôture coordonnée du service, incluant l'export des données et le
+      transfert pour suppression.
+  BC-4240.70:
+    name: Application des droits d'accès
+    description: |
+      Résolution et application en temps réel des droits d'abonnement avec
+      une piste d'audit des décisions d'accès.
+  BC-4240.70.10:
+    name: Résolution des droits d'accès
+    description: |
+      Résolution des droits effectifs par abonnement, compte et utilisateur.
+  BC-4240.70.20:
+    name: Application des contrôles d'accès
+    description: |
+      Contrôle en temps réel des fonctionnalités et des quotas par rapport
+      aux droits résolus.
+  BC-4240.70.30:
+    name: Piste d'audit des droits d'accès
+    description: |
+      Enregistrement à qualité d'audit des modifications de droits et des
+      décisions de contrôle d'accès.
