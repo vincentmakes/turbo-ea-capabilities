@@ -5544,3 +5544,396 @@ value_streams:
         stage_name: Commission Settlement
         capability_id: BC-4960
         notes: Cooperating-broker settlement, commission disbursement, and referral fees
+  - name: Firmware-to-Field
+    industries: [Electrical Components & Equipment]
+    stages:
+      - stage_order: 1
+        stage_name: Firmware Build & Sign
+        capability_id: BC-1950
+        notes: Firmware build pipelines, code signing, and artefact governance
+      - stage_order: 2
+        stage_name: Release Authorisation
+        capability_id: BC-1950
+        notes: Release-train governance, change approval, and release-note authoring
+      - stage_order: 3
+        stage_name: Staged Rollout & Pilot
+        capability_id: BC-1950
+        notes: Canary rings, pilot fleets, and rollback gating
+      - stage_order: 4
+        stage_name: OTA Distribution
+        capability_id: BC-1950
+        notes: Over-the-air delivery, device-side update orchestration, and verification
+      - stage_order: 5
+        stage_name: Field Telemetry & Health
+        capability_id: BC-1950
+        notes: Device telemetry ingestion and fleet health monitoring
+      - stage_order: 6
+        stage_name: Vulnerability & Incident Response
+        capability_id: BC-1950
+        notes: Product PSIRT, CVE triage, and emergency patch issuance
+      - stage_order: 6
+        stage_name: Vulnerability & Incident Response
+        capability_id: BC-620
+        notes: Enterprise cybersecurity coordination for product incidents
+      - stage_order: 7
+        stage_name: Decommission & Sunset
+        capability_id: BC-1950
+        notes: End-of-support declaration, key revocation, and device retirement
+  - name: Refrigerant-to-Reclaim
+    industries: [HVAC & Building Automation Systems]
+    stages:
+      - stage_order: 1
+        stage_name: Procurement & Inventory
+        capability_id: BC-2040
+        notes: Refrigerant sourcing, allocation, and storage
+      - stage_order: 2
+        stage_name: Charge & Install
+        capability_id: BC-2040
+        notes: Asset-level charge accounting on installed equipment
+      - stage_order: 2
+        stage_name: Charge & Install
+        capability_id: BC-2060
+        notes: Field charging activity during install and service visits
+      - stage_order: 3
+        stage_name: Leak Detection & Repair
+        capability_id: BC-2040
+        notes: Leak rate tracking, repair triggers, and rate reporting
+      - stage_order: 4
+        stage_name: Recovery & Reclaim
+        capability_id: BC-2040
+        notes: Field recovery, reclamation, and recycled-refrigerant quality control
+      - stage_order: 5
+        stage_name: Regulatory Reporting
+        capability_id: BC-2040
+        notes: F-Gas, EPA Section 608, and Kigali Amendment reporting
+      - stage_order: 6
+        stage_name: Phase-Out & Substitution
+        capability_id: BC-2040
+        notes: Refrigerant transition planning and low-GWP substitution roadmap
+      - stage_order: 7
+        stage_name: End-of-Life Disposition
+        capability_id: BC-2040
+        notes: Certified destruction, disposal, and chain-of-custody evidence
+  - name: Quote-to-Bind
+    industries: [Insurance]
+    stages:
+      - stage_order: 1
+        stage_name: Submission Intake
+        capability_id: BC-2110
+        notes: Producer / broker submission capture and routing
+      - stage_order: 1
+        stage_name: Submission Intake
+        capability_id: BC-2130
+        notes: Submission triage and risk data collection
+      - stage_order: 2
+        stage_name: Risk Evaluation & Pricing
+        capability_id: BC-2130
+        notes: Risk evaluation, exposure rating, and underwriting authority enforcement
+      - stage_order: 2
+        stage_name: Risk Evaluation & Pricing
+        capability_id: BC-2180
+        notes: Pricing model application and rate adequacy support
+      - stage_order: 3
+        stage_name: Quote Production
+        capability_id: BC-2130
+        notes: Quote generation, indication letters, and broker negotiation support
+      - stage_order: 4
+        stage_name: Reinsurance Check
+        capability_id: BC-2170
+        notes: Facultative reinsurance enquiry and treaty capacity check
+      - stage_order: 5
+        stage_name: Underwriting Decision
+        capability_id: BC-2130
+        notes: Acceptance, declination, or referral with conditions
+      - stage_order: 6
+        stage_name: Bind
+        capability_id: BC-2130
+        notes: Binding of agreed terms and conditions
+      - stage_order: 6
+        stage_name: Bind
+        capability_id: BC-2110
+        notes: Broker / producer bind confirmation and commission setup
+      - stage_order: 7
+        stage_name: Policy Issuance
+        capability_id: BC-2140
+        notes: Policy document generation, schedule assembly, and activation
+      - stage_order: 7
+        stage_name: Policy Issuance
+        capability_id: BC-2150
+        notes: Initial premium booking and instalment schedule setup
+      - stage_order: 8
+        stage_name: Reinsurance Cession Setup
+        capability_id: BC-2170
+        notes: Cession to treaty programme and bordereau preparation
+  - name: First-Notice-to-Settlement
+    industries: [Insurance]
+    stages:
+      - stage_order: 1
+        stage_name: FNOL Intake
+        capability_id: BC-2160
+        notes: Multi-channel first notice of loss capture and registration
+      - stage_order: 1
+        stage_name: FNOL Intake
+        capability_id: BC-2120
+        notes: Policyholder identification and contact verification at FNOL
+      - stage_order: 2
+        stage_name: Triage & Coverage
+        capability_id: BC-2160
+        notes: Severity triage, coverage verification, and assignment
+      - stage_order: 3
+        stage_name: Investigation & Adjustment
+        capability_id: BC-2160
+        notes: Investigation, liability assessment, and loss adjustment
+      - stage_order: 4
+        stage_name: Reserving
+        capability_id: BC-2160
+        notes: Case reserve setting and revision through claim life
+      - stage_order: 4
+        stage_name: Reserving
+        capability_id: BC-2180
+        notes: IBNR and bulk reserve estimation feeding portfolio reserves
+      - stage_order: 5
+        stage_name: Settlement
+        capability_id: BC-2160
+        notes: Settlement negotiation, payment, and litigation closure
+      - stage_order: 6
+        stage_name: Recovery & Subrogation
+        capability_id: BC-2160
+        notes: Salvage, subrogation, and third-party recovery
+      - stage_order: 6
+        stage_name: Recovery & Subrogation
+        capability_id: BC-2170
+        notes: Reinsurance recoveries against ceded claims
+  - name: Trade-Plan-to-Settle
+    industries: [Retail & Consumer Goods]
+    stages:
+      - stage_order: 1
+        stage_name: Trade Plan Development
+        capability_id: BC-2360
+        notes: Annual trade plan, joint business plans, and customer-level investment strategy
+      - stage_order: 2
+        stage_name: Fund Allocation
+        capability_id: BC-2360
+        notes: Trade-spend budgeting and accrual setup
+      - stage_order: 3
+        stage_name: Promotion Execution
+        capability_id: BC-2360
+        notes: In-store event execution, slotting, and feature scheduling
+      - stage_order: 4
+        stage_name: Deduction & Claim Handling
+        capability_id: BC-2360
+        notes: Customer deduction validation, claim resolution, and chargeback management
+      - stage_order: 4
+        stage_name: Deduction & Claim Handling
+        capability_id: BC-200
+        notes: Trade-spend accruals, deduction accounting, and AR clearing
+      - stage_order: 5
+        stage_name: Post-Event Lift Measurement
+        capability_id: BC-2360
+        notes: Lift analytics, ROI evaluation, and feedback into next plan
+  - name: Network-Plan-to-Service
+    industries: [Transportation & Logistics]
+    stages:
+      - stage_order: 1
+        stage_name: Demand Forecast
+        capability_id: BC-2410
+        notes: Lane-level demand forecasting and modal mix analysis
+      - stage_order: 2
+        stage_name: Network Design
+        capability_id: BC-2410
+        notes: Hub, gateway, lane, and modal-mix design decisions
+      - stage_order: 3
+        stage_name: Capacity & Schedule Plan
+        capability_id: BC-2410
+        notes: Schedule and slot planning across the service portfolio
+      - stage_order: 3
+        stage_name: Capacity & Schedule Plan
+        capability_id: BC-2400
+        notes: Capacity commitments and equipment / vessel allocation
+      - stage_order: 4
+        stage_name: Service Publication
+        capability_id: BC-2410
+        notes: Service catalogue publication and channel distribution
+      - stage_order: 5
+        stage_name: Service Operations
+        capability_id: BC-2420
+        notes: Day-to-day execution of the published service
+      - stage_order: 6
+        stage_name: Performance Monitoring & Re-plan
+        capability_id: BC-2410
+        notes: Service KPIs, gap analysis, and feedback into the next planning cycle
+  - name: Spectrum-to-Deployment
+    industries: [Telecommunications]
+    stages:
+      - stage_order: 1
+        stage_name: Spectrum Strategy
+        capability_id: BC-2670
+        notes: Spectrum portfolio strategy and technology-band roadmap
+      - stage_order: 2
+        stage_name: Licence Acquisition
+        capability_id: BC-2670
+        notes: Auction participation, licence purchase, and trading
+      - stage_order: 2
+        stage_name: Licence Acquisition
+        capability_id: BC-2700
+        notes: Regulatory engagement and licence-condition negotiation
+      - stage_order: 3
+        stage_name: Frequency Assignment & Coordination
+        capability_id: BC-2670
+        notes: Frequency planning, cell-level assignment, and cross-border coordination
+      - stage_order: 4
+        stage_name: Network Deployment
+        capability_id: BC-2610
+        notes: RAN and transport build-out aligned to the spectrum plan
+      - stage_order: 4
+        stage_name: Network Deployment
+        capability_id: BC-2600
+        notes: Activation, optimisation, and acceptance of new spectrum carriers
+      - stage_order: 5
+        stage_name: Interference & Compliance
+        capability_id: BC-2670
+        notes: Interference monitoring, mitigation, and shared-access spectrum operations
+      - stage_order: 5
+        stage_name: Interference & Compliance
+        capability_id: BC-2700
+        notes: Licence-condition compliance and regulatory reporting
+      - stage_order: 6
+        stage_name: Renewal & Reframing
+        capability_id: BC-2670
+        notes: Licence renewal, reframing, and end-of-life return
+  - name: Settle-Inter-Operator
+    industries: [Telecommunications]
+    stages:
+      - stage_order: 1
+        stage_name: Wholesale Agreement
+        capability_id: BC-2680
+        notes: Wholesale, interconnect, and roaming agreement negotiation
+      - stage_order: 2
+        stage_name: Usage Capture
+        capability_id: BC-2680
+        notes: TAP/RAP file exchange and inter-operator usage record collection
+      - stage_order: 2
+        stage_name: Usage Capture
+        capability_id: BC-2600
+        notes: Network-side CDR generation and mediation feed
+      - stage_order: 3
+        stage_name: Rating & Charging
+        capability_id: BC-2680
+        notes: Wholesale rating against contracted tariffs and discount schemes
+      - stage_order: 4
+        stage_name: Inter-Operator Settlement
+        capability_id: BC-2680
+        notes: Net settlement, invoicing, and clearing-house exchange
+      - stage_order: 4
+        stage_name: Inter-Operator Settlement
+        capability_id: BC-2660
+        notes: Wholesale revenue assurance and accounting integration
+      - stage_order: 5
+        stage_name: Dispute & Reconciliation
+        capability_id: BC-2680
+        notes: Discrepancy investigation, dispute resolution, and adjustment posting
+  - name: Encounter-to-Discharge
+    industries: [Healthcare Providers]
+    stages:
+      - stage_order: 1
+        stage_name: Pre-Encounter Access
+        capability_id: BC-2800
+        notes: Scheduling, eligibility verification, and financial counselling
+      - stage_order: 2
+        stage_name: Registration & Admission
+        capability_id: BC-2800
+        notes: Patient registration, admission, and bed assignment
+      - stage_order: 3
+        stage_name: Clinical Care Delivery
+        capability_id: BC-2810
+        notes: Inpatient, outpatient, emergency, and procedural care delivery
+      - stage_order: 4
+        stage_name: Diagnostic & Therapeutic Services
+        capability_id: BC-2860
+        notes: Laboratory, imaging, and ancillary diagnostic services
+      - stage_order: 4
+        stage_name: Diagnostic & Therapeutic Services
+        capability_id: BC-2850
+        notes: Medication ordering, dispensing, and administration
+      - stage_order: 5
+        stage_name: Clinical Documentation
+        capability_id: BC-2830
+        notes: Notes, orders, results review, and decision support
+      - stage_order: 6
+        stage_name: Care Coordination
+        capability_id: BC-2820
+        notes: Multidisciplinary coordination, transitions, and case management
+      - stage_order: 7
+        stage_name: Discharge & Transition
+        capability_id: BC-2810
+        notes: Discharge planning, instructions, and disposition
+      - stage_order: 7
+        stage_name: Discharge & Transition
+        capability_id: BC-2820
+        notes: Post-discharge follow-up and onward care handoff
+  - name: Claim-to-Reimbursement
+    industries: [Healthcare Providers]
+    stages:
+      - stage_order: 1
+        stage_name: Charge Capture
+        capability_id: BC-2870
+        notes: Charge capture from clinical documentation and ancillary systems
+      - stage_order: 2
+        stage_name: Coding
+        capability_id: BC-2870
+        notes: Medical coding, CDI queries, and DRG / APC assignment
+      - stage_order: 3
+        stage_name: Claim Production & Submission
+        capability_id: BC-2870
+        notes: Claim assembly, edits, and payer submission
+      - stage_order: 4
+        stage_name: Adjudication & Denial Management
+        capability_id: BC-2870
+        notes: Remittance handling, denial work, and appeals
+      - stage_order: 5
+        stage_name: Cash Posting & Reconciliation
+        capability_id: BC-2870
+        notes: ERA / EOB posting and contract variance analysis
+      - stage_order: 5
+        stage_name: Cash Posting & Reconciliation
+        capability_id: BC-200
+        notes: Patient AR accounting and bank reconciliation
+      - stage_order: 6
+        stage_name: Patient Billing & Collections
+        capability_id: BC-2870
+        notes: Patient statements, payment plans, and collections
+      - stage_order: 7
+        stage_name: Underpayment Recovery
+        capability_id: BC-2870
+        notes: Underpayment identification and payer recovery actions
+  - name: Population-Health-to-Outcome
+    industries: [Healthcare Providers]
+    stages:
+      - stage_order: 1
+        stage_name: Population Identification
+        capability_id: BC-2880
+        notes: Attribution, empanelment, and population definition
+      - stage_order: 2
+        stage_name: Risk Stratification
+        capability_id: BC-2880
+        notes: Predictive risk modelling and rising-risk identification
+      - stage_order: 3
+        stage_name: Care Gap Identification
+        capability_id: BC-2880
+        notes: HEDIS / quality-measure gap detection across the panel
+      - stage_order: 4
+        stage_name: Outreach & Intervention
+        capability_id: BC-2880
+        notes: Outreach campaigns, preventive care, and chronic-disease programmes
+      - stage_order: 4
+        stage_name: Outreach & Intervention
+        capability_id: BC-2820
+        notes: Care management coordination for high-risk cohorts
+      - stage_order: 5
+        stage_name: Care Delivery
+        capability_id: BC-2810
+        notes: Clinical care delivery aligned to the intervention plan
+      - stage_order: 6
+        stage_name: Outcomes Measurement
+        capability_id: BC-2880
+        notes: Outcome tracking, value-based-care reporting, and feedback loop
