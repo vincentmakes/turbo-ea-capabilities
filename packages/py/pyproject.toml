@@ -43,6 +43,16 @@ source = "code"
 path = "src/turbo_ea_capabilities/_version.py"
 expression = "VERSION"
 
+[tool.hatch.build]
+# data/ is gitignored (populated at build time by scripts/build_pkg.ts).
+# Hatchling's VCS-aware filter would otherwise drop it from the wheel —
+# `artifacts` overrides that so the bundled JSON catalogue and per-locale
+# i18n maps actually ship.
+artifacts = [
+    "src/turbo_ea_capabilities/data/*.json",
+    "src/turbo_ea_capabilities/data/i18n/*.json",
+]
+
 [tool.hatch.build.targets.wheel]
 packages = ["src/turbo_ea_capabilities"]
 
