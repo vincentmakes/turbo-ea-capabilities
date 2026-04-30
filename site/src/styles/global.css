@@ -362,7 +362,6 @@ body {
   color: var(--color-white);
 }
 
-.kofi-button,
 .github-button,
 .linkedin-button {
   display: inline-flex;
@@ -381,17 +380,10 @@ body {
     box-shadow var(--transition-fast);
 }
 
-.kofi-button:hover,
 .github-button:hover,
 .linkedin-button:hover {
   color: #fff;
   transform: translateY(-1px);
-}
-
-.kofi-button { background: #d6336c; }
-.kofi-button:hover {
-  background: #b8255a;
-  box-shadow: 0 4px 12px rgba(214, 51, 108, 0.35);
 }
 
 .github-button { background: #126EF8; }
@@ -406,7 +398,6 @@ body {
   box-shadow: 0 4px 12px rgba(10, 102, 194, 0.35);
 }
 
-.kofi-button svg,
 .github-button svg,
 .linkedin-button svg {
   display: block;
@@ -414,7 +405,6 @@ body {
 }
 
 /* Compact pill buttons inside the top nav */
-.nav-links .kofi-button,
 .nav-links .github-button,
 .nav-links .linkedin-button {
   padding: 6px 12px;
@@ -423,7 +413,6 @@ body {
   font-weight: 600;
 }
 
-.nav-links .kofi-button svg,
 .nav-links .github-button svg,
 .nav-links .linkedin-button svg {
   width: 14px;
@@ -431,7 +420,6 @@ body {
 }
 
 /* Suppress nav underline indicator on pill buttons */
-.nav-links .kofi-button::after,
 .nav-links .github-button::after,
 .nav-links .linkedin-button::after {
   display: none;
