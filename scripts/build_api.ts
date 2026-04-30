@@ -30,8 +30,24 @@ const DIST_API = join(REPO_ROOT, "dist", "api");
 
 const SCHEMA_VERSION = 1;
 
-function getCatalogueVersion(): string {
-  // Prefer an exact tag at HEAD; otherwise calver YYYY.MM.DD from build time.
+function getCommitCount(): number | undefined {
+  try {
+    const n = execSync("git rev-list --count HEAD 2>/dev/null", {
+      encoding: "utf8",
+    }).trim();
+    const parsed = Number.parseInt(n, 10);
+    return Number.isFinite(parsed) ? parsed : undefined;
+  } catch {
+    return undefined;
+  }
+}
+
+function getCatalogueVersion(commitCount: number | undefined): string {
+  // Prefer an exact tag at HEAD (clean release). Otherwise emit a PEP 440
+  // 4-segment release `<YYYY>.<M>.<D>.<N>` where N is the total commit count
+  // on this branch — strictly monotonic across rebuilds so PyPI never rejects
+  // a duplicate. Leading zeros are intentionally omitted to match PEP 440
+  // normalization (2026.04.30 → 2026.4.30).
   try {
     const exact = execSync("git describe --tags --exact-match HEAD 2>/dev/null", {
       encoding: "utf8",
@@ -42,9 +58,10 @@ function getCatalogueVersion(): string {
   }
   const d = new Date();
   const yyyy = d.getUTCFullYear();
-  const mm = String(d.getUTCMonth() + 1).padStart(2, "0");
-  const dd = String(d.getUTCDate()).padStart(2, "0");
-  return `${yyyy}.${mm}.${dd}`;
+  const m = d.getUTCMonth() + 1;
+  const day = d.getUTCDate();
+  const base = `${yyyy}.${m}.${day}`;
+  return commitCount !== undefined ? `${base}.${commitCount}` : base;
 }
 
 function getCatalogueCommit(): string | undefined {
@@ -139,12 +156,14 @@ for (const f of flatSorted) {
 
 // version.json
 const commit = getCatalogueCommit();
+const commitCount = getCommitCount();
 const version = {
-  catalogue_version: getCatalogueVersion(),
+  catalogue_version: getCatalogueVersion(commitCount),
   schema_version: SCHEMA_VERSION,
   generated_at: new Date().toISOString(),
   node_count: flatSorted.length,
   ...(commit && { commit }),
+  ...(commitCount !== undefined && { commit_count: commitCount }),
 };
 
 mkdir(DIST_API);

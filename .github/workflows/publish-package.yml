@@ -2,6 +2,7 @@ name: publish-package
 
 on:
   push:
+    branches: [main]
     tags: ["v*"]
   workflow_dispatch:
 
@@ -43,3 +44,6 @@ jobs:
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           packages-dir: packages/py/dist
+          # Belt-and-braces: a re-run of the same SHA produces the same
+          # version, so let PyPI silently no-op rather than fail the job.
+          skip-existing: true
