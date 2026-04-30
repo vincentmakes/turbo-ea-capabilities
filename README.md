@@ -12,7 +12,7 @@ An **open-source Business Capability Reference Catalogue**. It is intentionally 
 - **Blog & EA resources:** [`turbo-ea.org/blog`](https://www.turbo-ea.org/blog/).
 
 All governance lives in [`business-capability-governance-model.md`](business-capability-governance-model.md): **Part A** covers the reference model (definition, levels, naming, identifiers, metadata); **Part B** covers operational governance (PR workflow, lint rules, versioning, promotion).
-
+ 
 ## Layout
 
 ```
