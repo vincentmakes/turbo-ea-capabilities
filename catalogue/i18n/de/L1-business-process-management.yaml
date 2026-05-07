@@ -1,0 +1,153 @@
+locale: de
+source: L1-business-process-management.yaml
+entries:
+  BC-930:
+    name: Geschäftsprozessmanagement
+    description: |
+      Disziplin der Gestaltung, Modellierung, Überwachung, Analyse, Optimierung und Steuerung durchgängiger Geschäftsprozesse als verwaltete Vermögensklasse. Behandelt Prozesse als eigenständige Artefakte, unabhängig von den operativen Domänen, die sie ausführen.
+    in_scope:
+      - Prozessgouvernance über Taxonomie, Eigentümerschaft, Lebenszyklus und Standards
+      - Prozesserhebung, BPMN-Modellierung, Dokumentation und Versionierung
+      - Prozessleistungs-KPIs, Überwachung und Konformitätsberichterstattung
+      - Process Mining inklusive Ereignisprotokollerfassung, Discovery und Konformitätsprüfung
+      - Prozess-Redesign, Simulation und Identifikation von Automatisierungschancen
+      - Steuerung des Automatisierungsportfolios über Workflow- und RPA-Plattformen
+      - Entwurf von Prozesskontrollen und Funktionstrennungs-Modellierung
+    out_of_scope:
+      - Verbesserungsprojekte über Lean, Six Sigma oder Kaizen (BC-720.50)
+      - Domänenspezifische operative Ausführung wie Auftrags-, Schaden- oder Sendungsabwicklung
+      - Entwicklung von RPA-Bot-Software und Plattform-Engineering (IT-Lieferfähigkeiten)
+      - Ausführung von IT-Servicemanagement-Prozessen (IT-Fähigkeiten der BC-700-Reihe)
+      - Geschäftsarchitektur-, Fähigkeiten- und Wertstrommodellierung (BC-170)
+  BC-930.10:
+    name: Prozessarchitektur und -governance
+    description: |
+      Prozesstaxonomie, Eigentümermodell, Lebenszyklusrichtlinie und Erstellungsstandards, die das Prozessportfolio rahmen.
+  BC-930.10.10:
+    name: Verwaltung der Prozesstaxonomie
+    description: |
+      Definition und Pflege des unternehmensweiten Prozessklassifikationsrahmens.
+  BC-930.10.20:
+    name: Zuweisung der Prozessverantwortung
+    description: |
+      Zuordnung von Prozesseigentümern, -betreuern und -verwaltern über das Portfolio.
+  BC-930.10.30:
+    name: Lebenszyklusrichtlinie für Prozesse
+    description: |
+      Richtlinie für Einführung, Pflege, Außerbetriebnahme und Archivierung von Prozessen.
+  BC-930.10.40:
+    name: Prozessstandards und -konventionen
+    description: |
+      Modellierungsnotationen, Attributstandards und Reviewkonventionen für Prozessartefakte.
+  BC-930.20:
+    name: Prozessmodellierung und -dokumentation
+    description: |
+      Erhebung, Erstellung, Veröffentlichung und Versionskontrolle von Prozessmodellen und unterstützender Dokumentation.
+  BC-930.20.10:
+    name: Prozesserhebung und -elizitierung
+    description: |
+      Workshops, Interviews und Beobachtung zur Erfassung des Ist-Prozesswissens.
+  BC-930.20.20:
+    name: Erstellung von Prozessmodellen
+    description: |
+      Erstellung von BPMN- und gleichwertigen Prozessmodellen im Modellierungstool.
+  BC-930.20.30:
+    name: Veröffentlichung der Prozessdokumentation
+    description: |
+      Veröffentlichung der Prozessdokumentation für operative Zielgruppen.
+  BC-930.20.40:
+    name: Versionierung von Prozessmodellen
+    description: |
+      Versionskontrolle, Änderungshistorie und Genehmigungsworkflow für Prozessmodelle.
+  BC-930.30:
+    name: Prozessleistungsmessung
+    description: |
+      Definition, Überwachung und Berichterstattung der Prozessleistung und -konformität.
+  BC-930.30.10:
+    name: Definition von Prozess-KPIs
+    description: |
+      Definition von KPIs für Durchlaufzeit, Durchsatz, Qualität und Kosten je Prozess.
+  BC-930.30.20:
+    name: Überwachung der Prozessleistung
+    description: |
+      Operative Dashboards und Alarmierung gegen Prozessleistungsziele.
+  BC-930.30.30:
+    name: Berichterstattung zur Prozesskonformität
+    description: |
+      Berichterstattung der Ausführungskonformität gegenüber dem modellierten Soll-Prozess.
+  BC-930.40:
+    name: Process Mining und Discovery
+    description: |
+      Ereignisprotokollgestützte Discovery, Konformitätsprüfung und Prozessintelligenz.
+  BC-930.40.10:
+    name: Erfassung von Ereignisprotokollen
+    description: |
+      Extraktion, Transformation und Laden von Ereignisprotokollen aus Quellsystemen.
+  BC-930.40.20:
+    name: Process-Discovery-Analyse
+    description: |
+      Algorithmische Rekonstruktion der ausgeführten Prozessvarianten aus Ereignisprotokollen.
+  BC-930.40.30:
+    name: Konformitätsprüfung
+    description: |
+      Vergleich des ausgeführten Verhaltens mit Referenzmodellen und Regelwerken.
+  BC-930.40.40:
+    name: Berichterstattung zur Prozessintelligenz
+    description: |
+      Berichterstattung gewonnener Erkenntnisse wie Engpässe, Nacharbeit und Variantenwirkung.
+  BC-930.50:
+    name: Prozessoptimierung und -redesign
+    description: |
+      Architektonisches, datengetriebenes Prozess-Redesign einschließlich Simulation und Automatisierungskandidatenanalyse. Abgegrenzt von der Verbesserungsprojektabwicklung unter BC-720.50.
+  BC-930.50.10:
+    name: Engpassanalyse
+    description: |
+      Identifikation und Quantifizierung von Engpunkten über Prozessvarianten hinweg.
+  BC-930.50.20:
+    name: Prozesssimulation
+    description: |
+      Diskrete-Ereignis- und Monte-Carlo-Simulation von Prozessdesignalternativen.
+  BC-930.50.30:
+    name: Soll-Prozess-Design
+    description: |
+      Entwurf von Flussabläufen, Kontrollen und Übergaben in redesignten Prozessen.
+  BC-930.50.40:
+    name: Identifikation von Automatisierungschancen
+    description: |
+      Identifikation kandidatenfähiger Schritte für Workflow-, RPA- oder KI-basierte Automatisierung.
+  BC-930.60:
+    name: Steuerung der Prozessautomatisierung
+    description: |
+      Steuerung des Automatisierungsportfolios über Workflow-, RPA- und Intelligent-Automation-Plattformen. Schließt Engineering und Betrieb der Plattformen selbst aus.
+  BC-930.60.10:
+    name: Verwaltung des Automatisierungsportfolios
+    description: |
+      Bedarfserfassung, Priorisierung und Lebenszyklusmanagement der Automatisierungsbestände.
+  BC-930.60.20:
+    name: Steuerung der Workflow-Orchestrierung
+    description: |
+      Standards und Kontrollen für orchestrierte Workflow-Prozesse über Geschäftssysteme hinweg.
+  BC-930.60.30:
+    name: Steuerung des RPA-Programms
+    description: |
+      Steuerung des Programms zur robotergestützten Prozessautomatisierung einschließlich Bot-Eigentümerschaft.
+  BC-930.60.40:
+    name: Kontrolle und Audit der Automatisierung
+    description: |
+      Kontrollrahmen, Überwachung und Audit-Trail über den Automatisierungsbestand.
+  BC-930.70:
+    name: Prozessrisiko- und Kontrollmanagement
+    description: |
+      In Prozessen verankerte Risiken und Kontrollen einschließlich Funktionstrennung. Ergänzt Unternehmensrisiko- und Auditfunktionen, ohne sie zu ersetzen.
+  BC-930.70.10:
+    name: Entwurf von Prozesskontrollen
+    description: |
+      Entwurf präventiver und detektiver Kontrollen, die in Prozessabläufe eingebettet sind.
+  BC-930.70.20:
+    name: Modellierung der Funktionstrennung
+    description: |
+      Modellierung der Funktionstrennungsregeln und Konflikterkennung über Prozesse hinweg.
+  BC-930.70.30:
+    name: Prüfung von Prozesskontrollen
+    description: |
+      Periodische Prüfung der Wirksamkeit von Prozesskontrollen und der Ausnahmebehandlung.

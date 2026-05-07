@@ -1,0 +1,153 @@
+locale: it
+source: L1-business-process-management.yaml
+entries:
+  BC-930:
+    name: Gestione dei processi di business
+    description: |
+      Disciplina di progettazione, modellazione, monitoraggio, mining, ottimizzazione e governance dei processi di business end-to-end come classe di asset gestita. Tratta i processi come artefatti di prima classe indipendentemente dai domini operativi che li eseguono.
+    in_scope:
+      - Governance di tassonomia, ownership, ciclo di vita e standard dei processi
+      - Discovery dei processi, modellazione BPMN, documentazione e versionamento
+      - KPI di performance dei processi, monitoraggio e reporting di conformità
+      - Process mining, inclusi acquisizione di event log, discovery e conformance checking
+      - Riprogettazione dei processi, simulazione e identificazione di opportunità di automazione
+      - Governance del portfolio di automazione tra piattaforme di workflow e RPA
+      - Progettazione dei controlli di processo e modellazione della separazione dei compiti
+    out_of_scope:
+      - Erogazione di progetti di miglioramento Lean, Six Sigma o Kaizen (BC-720.50)
+      - Esecuzione operativa specifica di dominio (ordini, sinistri, spedizioni ecc.)
+      - Sviluppo software dei bot RPA e ingegneria di piattaforma (capacità di delivery IT)
+      - Esecuzione dei processi di IT service management (capacità BC-700)
+      - Modellazione dell'architettura di business, delle capacità e dei value stream (BC-170)
+  BC-930.10:
+    name: Architettura e governance dei processi
+    description: |
+      Tassonomia dei processi, modello di ownership, policy di ciclo di vita e standard di stesura che inquadrano il portfolio di processi.
+  BC-930.10.10:
+    name: Gestione della tassonomia dei processi
+    description: |
+      Definizione e manutenzione del framework di classificazione dei processi a livello aziendale.
+  BC-930.10.20:
+    name: Assegnazione dell'ownership dei processi
+    description: |
+      Assegnazione di owner, custodi e amministratori dei processi nel portfolio.
+  BC-930.10.30:
+    name: Policy del ciclo di vita dei processi
+    description: |
+      Policy per introduzione, manutenzione, dismissione e archiviazione dei processi.
+  BC-930.10.40:
+    name: Standard e convenzioni dei processi
+    description: |
+      Notazioni di modellazione, standard di attributi e convenzioni di revisione per gli artefatti di processo.
+  BC-930.20:
+    name: Modellazione e documentazione dei processi
+    description: |
+      Discovery, stesura, pubblicazione e versionamento dei modelli di processo e della documentazione di supporto.
+  BC-930.20.10:
+    name: Discovery ed elicitazione dei processi
+    description: |
+      Workshop, interviste e osservazione per acquisire la conoscenza del processo as-is.
+  BC-930.20.20:
+    name: Stesura dei modelli di processo
+    description: |
+      Stesura dei modelli BPMN ed equivalenti nello strumento di modellazione.
+  BC-930.20.30:
+    name: Pubblicazione della documentazione di processo
+    description: |
+      Pubblicazione della documentazione di processo per le audience operative.
+  BC-930.20.40:
+    name: Versionamento dei modelli di processo
+    description: |
+      Controllo delle versioni, cronologia delle modifiche e workflow di approvazione dei modelli di processo.
+  BC-930.30:
+    name: Misurazione della performance dei processi
+    description: |
+      Definizione, monitoraggio e reporting della performance e della conformità dei processi.
+  BC-930.30.10:
+    name: Definizione dei KPI di processo
+    description: |
+      Definizione di KPI di tempo di ciclo, throughput, qualità e costo per processo.
+  BC-930.30.20:
+    name: Monitoraggio della performance dei processi
+    description: |
+      Cruscotti operativi e alerting rispetto ai target di performance dei processi.
+  BC-930.30.30:
+    name: Reporting di conformità dei processi
+    description: |
+      Reporting della conformità di esecuzione rispetto al processo modellato.
+  BC-930.40:
+    name: Process mining e discovery
+    description: |
+      Discovery, conformance checking e intelligence dei processi guidata dagli event log.
+  BC-930.40.10:
+    name: Acquisizione degli event log
+    description: |
+      Estrazione, trasformazione e caricamento degli event log dai sistemi sorgente.
+  BC-930.40.20:
+    name: Analisi di process discovery
+    description: |
+      Ricostruzione algoritmica delle varianti di processo eseguite a partire dagli event log.
+  BC-930.40.30:
+    name: Conformance checking
+    description: |
+      Confronto del comportamento eseguito con modelli di riferimento e regole.
+  BC-930.40.40:
+    name: Reporting di intelligence dei processi
+    description: |
+      Reporting degli insight emersi dal mining come colli di bottiglia, retrolavorazioni e impatto delle varianti.
+  BC-930.50:
+    name: Ottimizzazione e ridisegno dei processi
+    description: |
+      Ridisegno architetturale e data-driven dei processi, inclusa simulazione e analisi dei candidati all'automazione. Distinta dall'erogazione di progetti di miglioramento sotto BC-720.50.
+  BC-930.50.10:
+    name: Analisi dei colli di bottiglia
+    description: |
+      Identificazione e quantificazione dei punti di vincolo tra le varianti di processo.
+  BC-930.50.20:
+    name: Simulazione di processo
+    description: |
+      Simulazione a eventi discreti e Monte Carlo delle alternative di progettazione del processo.
+  BC-930.50.30:
+    name: Progettazione dei processi target
+    description: |
+      Progettazione di flussi, controlli e passaggi dei processi ridisegnati.
+  BC-930.50.40:
+    name: Identificazione di opportunità di automazione
+    description: |
+      Identificazione delle attività candidate ad automazione tramite workflow, RPA o IA.
+  BC-930.60:
+    name: Governance dell'automazione dei processi
+    description: |
+      Governance del portfolio di automazione su piattaforme workflow, RPA e intelligent automation. Esclude ingegneria e gestione operativa delle piattaforme stesse.
+  BC-930.60.10:
+    name: Gestione del portfolio di automazione
+    description: |
+      Raccolta della domanda, prioritizzazione e gestione del ciclo di vita degli asset di automazione.
+  BC-930.60.20:
+    name: Governance dell'orchestrazione dei workflow
+    description: |
+      Standard e controlli per i processi workflow orchestrati attraverso i sistemi di business.
+  BC-930.60.30:
+    name: Governance del programma RPA
+    description: |
+      Governance del programma di robotic process automation, inclusa l'ownership dei bot.
+  BC-930.60.40:
+    name: Controllo e audit dell'automazione
+    description: |
+      Framework di controllo, monitoraggio e audit trail sul parco di automazione.
+  BC-930.70:
+    name: Gestione dei rischi e dei controlli di processo
+    description: |
+      Rischi e controlli incorporati nei processi, inclusa la separazione dei compiti. Complementa, senza sostituirle, le funzioni di enterprise risk e audit.
+  BC-930.70.10:
+    name: Progettazione dei controlli di processo
+    description: |
+      Progettazione di controlli preventivi e detettivi inseriti nei flussi di processo.
+  BC-930.70.20:
+    name: Modellazione della separazione dei compiti
+    description: |
+      Modellazione delle regole di separazione dei compiti e rilevazione dei conflitti nei processi.
+  BC-930.70.30:
+    name: Test dei controlli di processo
+    description: |
+      Test periodici dell'efficacia dei controlli di processo e della gestione delle eccezioni.

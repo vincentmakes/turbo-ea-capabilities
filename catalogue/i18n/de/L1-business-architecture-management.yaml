@@ -1,0 +1,156 @@
+locale: de
+source: L1-business-architecture-management.yaml
+entries:
+  BC-170:
+    name: Geschäftsarchitekturmanagement
+    description: |
+      Gestaltung, Dokumentation und Steuerung der strukturellen Beziehungen zwischen Strategie, Fähigkeiten, Wertströmen, Betriebsmodell und geschäftlichen Informationsbeständen. Liefert die Architekturartefakte, die die Unternehmensstrategie in eine konsistente, navigierbare Sicht der Wertschöpfungsorganisation übersetzen.
+    in_scope:
+      - Modellierung, Dekomposition, Heatmapping und Bewertung von Geschäftsfähigkeiten
+      - Identifikation, Stufendefinition und Fähigkeitenzuordnung von Wertströmen
+      - Entwurf des Ziel-Betriebsmodells und Übergangsplanung
+      - Geschäftsinformationsmodellierung auf konzeptioneller und logischer Ebene
+      - Geschäftsarchitekturprinzipien, Rahmenwerksadoption und Governance
+      - Verwaltung des Architekturartefakt-Repositories und Nachvollziehbarkeit
+    out_of_scope:
+      - IT-, Anwendungs-, Datenschicht-, Technologie- und Sicherheitsarchitektur
+      - Strategieformulierung und Steuerung der Strategieumsetzung (BC-100)
+      - Projekt-, Programm- und Portfolioabwicklung (BC-900)
+      - Organisatorische Veränderung und Nutzenrealisierung (BC-910 und BC-920)
+      - Prozessmodellierung, -mining, -optimierung und Automatisierungssteuerung (BC-930)
+  BC-170.10:
+    name: Geschäftsarchitektur-Governance
+    description: |
+      Architekturprinzipien, Rahmenwerksadoption, Reviews und Ausnahmebehandlung für die Geschäftsarchitekturpraxis.
+  BC-170.10.10:
+    name: Definition der Architekturprinzipien
+    description: |
+      Definition und Pflege der Geschäftsarchitekturprinzipien, die Designentscheidungen unternehmensweit leiten.
+  BC-170.10.20:
+    name: Adoption von Architekturrahmenwerken
+    description: |
+      Auswahl, Anpassung und Einführung von Rahmenwerken wie TOGAF und BIZBOK.
+  BC-170.10.30:
+    name: Architekturreview und Konformität
+    description: |
+      Prüfung von Lösungen und Initiativen gegenüber Architekturstandards und -prinzipien.
+  BC-170.10.40:
+    name: Management von Architekturausnahmen
+    description: |
+      Erfassung, Bewertung und Behandlung von Abweichungen gegenüber Architekturstandards.
+  BC-170.20:
+    name: Geschäftsfähigkeitsmodellierung
+    description: |
+      Identifikation, Dekomposition, Bewertung und Beschaffungsanalyse der Geschäftsfähigkeiten als zentraler architektonischer Anker.
+  BC-170.20.10:
+    name: Identifikation von Fähigkeiten
+    description: |
+      Entdeckung und Benennung der Geschäftsfähigkeiten auf Unternehmensebene.
+  BC-170.20.20:
+    name: Dekomposition von Fähigkeiten
+    description: |
+      Zerlegung der Fähigkeiten in MECE-konforme Teilfähigkeiten bis auf Arbeitsebene.
+  BC-170.20.30:
+    name: Heatmapping von Fähigkeiten
+    description: |
+      Visualisierung von Bedeutung, Leistung und Investitionsausrichtung der Fähigkeiten.
+  BC-170.20.40:
+    name: Bewertung von Fähigkeiten
+    description: |
+      Reife-, Leistungs- und Lückenbewertung einzelner Fähigkeiten.
+  BC-170.20.50:
+    name: Beschaffungsstrategie für Fähigkeiten
+    description: |
+      Make-, Buy-, Partner- oder Behalten-Entscheidungen entlang der Fähigkeitenportfolios.
+  BC-170.30:
+    name: Wertstrommodellierung
+    description: |
+      Identifikation und Modellierung durchgängiger Wertströme und ihrer Verknüpfung mit den unterstützenden Fähigkeiten.
+  BC-170.30.10:
+    name: Identifikation von Wertströmen
+    description: |
+      Entdeckung von Kunden-, Partner- und internen Wertströmen unternehmensweit.
+  BC-170.30.20:
+    name: Definition der Wertstromstufen
+    description: |
+      Definition der Wertstromstufen, Eintrittskriterien und Wertelemente.
+  BC-170.30.30:
+    name: Leistungsmessung der Wertströme
+    description: |
+      Definition und Messung von Stufenleistung und Wertbeitragsmetriken.
+  BC-170.30.40:
+    name: Zuordnung Wertstrom zu Fähigkeiten
+    description: |
+      Zuordnung der für jede Wertstromstufe erforderlichen Fähigkeiten.
+  BC-170.40:
+    name: Entwurf des Betriebsmodells
+    description: |
+      Architektonischer Entwurf des Betriebsmodells einschließlich Servicebereitstellungsmodell, Sourcing-Footprint und Übergangsplanung.
+  BC-170.40.10:
+    name: Entwurf des Ziel-Betriebsmodells
+    description: |
+      Festlegung des Ziel-Betriebsmodells über Fähigkeiten, Prozesse, Organisation, Standorte und Information hinweg.
+  BC-170.40.20:
+    name: Entwurf des Servicebereitstellungsmodells
+    description: |
+      Gestaltung interner Bereitstellungsmuster, Shared Services und Kompetenzzentren.
+  BC-170.40.30:
+    name: Sourcing- und Standortstrategie
+    description: |
+      Architektonische Entscheidungen zu Sourcing- und Standort-Footprint der Fähigkeitenbereitstellung.
+  BC-170.40.40:
+    name: Übergangsplanung des Betriebsmodells
+    description: |
+      Sequenzierung der Betriebsmodellveränderungen in Übergangszustände und Wellen.
+  BC-170.50:
+    name: Geschäftsinformationsmodellierung
+    description: |
+      Modellierung der Informationsbestände, des Glossars und des Informationslebenszyklus aus geschäftlicher Sicht. Konzeptionelle und logische Sicht; die physische Datenarchitektur liegt in der IT.
+  BC-170.50.10:
+    name: Modellierung der Geschäftsentitäten
+    description: |
+      Identifikation und Definition zentraler Geschäftsentitäten und ihrer Beziehungen.
+  BC-170.50.20:
+    name: Verwaltung des Geschäftsglossars
+    description: |
+      Maßgebliche Definitionen geschäftlicher Begriffe und Konzepte.
+  BC-170.50.30:
+    name: Abbildung des Informationslebenszyklus
+    description: |
+      Abbildung, wo Geschäftsinformationen erzeugt, genutzt, aufbewahrt und ausgesondert werden.
+  BC-170.60:
+    name: Verwaltung des Geschäftsarchitektur-Repositories
+    description: |
+      Katalogisierung, Versionierung und Tooling für Geschäftsarchitektur-Artefakte.
+  BC-170.60.10:
+    name: Katalogisierung von Architekturartefakten
+    description: |
+      Bestandsaufnahme und Klassifikation der Geschäftsarchitektur-Artefakte im Repository.
+  BC-170.60.20:
+    name: Versionierung und Nachvollziehbarkeit von Artefakten
+    description: |
+      Versionierung der Artefakte und Nachvollziehbarkeit zwischen Strategie, Fähigkeiten, Wertströmen und Initiativen.
+  BC-170.60.30:
+    name: Administration des Repository-Tools
+    description: |
+      Konfiguration, Zugriffsverwaltung und Betrieb des Architektur-Repository-Tools.
+  BC-170.70:
+    name: Roadmap und Übergangsplanung der Geschäftsarchitektur
+    description: |
+      Planung von Ist-Zustand, Ziel-Zustand und Übergangsarchitekturen zur Steuerung von Portfolio- und Investitionsentscheidungen.
+  BC-170.70.10:
+    name: Bewertung des Ist-Zustands
+    description: |
+      Dokumentation der aktuellen Geschäftsarchitektur über Fähigkeiten und Wertströme hinweg.
+  BC-170.70.20:
+    name: Definition des Ziel-Zustands
+    description: |
+      Definition der strategiekonformen Ziel-Geschäftsarchitektur.
+  BC-170.70.30:
+    name: Lückenanalyse
+    description: |
+      Identifikation und Priorisierung von Lücken zwischen Ist- und Ziel-Architektur.
+  BC-170.70.40:
+    name: Entwurf von Übergangsarchitekturen
+    description: |
+      Entwurf zwischenliegender Übergangsarchitekturen und abhängigkeitsbewusste Sequenzierung.
