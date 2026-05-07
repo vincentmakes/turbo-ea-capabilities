@@ -1,0 +1,267 @@
+# Business Process Management
+id: BC-930
+name: Business Process Management
+level: 1
+industry: Cross-Industry
+description: |
+  Discipline of designing, modelling, monitoring, mining, optimizing, and governing
+  end-to-end business processes as a managed asset class. Treats processes as
+  first-class artefacts independent of the operational domains that execute them.
+in_scope:
+  - Process taxonomy, ownership, lifecycle, and standards governance
+  - Process discovery, BPMN-based modelling, documentation, and versioning
+  - Process performance KPIs, monitoring, and conformance reporting
+  - Process mining including event log acquisition, discovery, and conformance checking
+  - Process redesign, simulation, and automation opportunity identification
+  - Automation portfolio governance across workflow and RPA platforms
+  - Process control design and segregation-of-duties modelling
+out_of_scope:
+  - Improvement-project delivery via Lean, Six Sigma, or Kaizen events (covered by BC-720.50)
+  - Per-domain operational execution such as order, claims, or shipment handling
+  - RPA bot software development and platform engineering (covered by IT delivery capabilities)
+  - IT service management process execution (covered by BC-700-series IT capabilities)
+  - Business architecture, capability, and value stream modelling (covered by BC-170)
+references:
+  - https://www.omg.org/spec/BPMN/2.0/
+  - https://www.apqc.org/process-frameworks
+  - https://www.gartner.com/en/information-technology/glossary/bpm-business-process-management
+  - https://www.processmining.org/process-mining-manifesto
+  - https://www.abpmp.org/page/CBOK_Guide
+children:
+  - id: BC-930.10
+    name: Process Architecture and Governance
+    level: 2
+    industry: Cross-Industry
+    description: |
+      Process taxonomy, ownership model, lifecycle policy, and authoring standards
+      that frame the process estate.
+    children:
+      - id: BC-930.10.10
+        name: Process Taxonomy Management
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Definition and stewardship of the enterprise process classification framework.
+        children: []
+      - id: BC-930.10.20
+        name: Process Ownership Assignment
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Allocation of process owners, custodians, and stewards across the estate.
+        children: []
+      - id: BC-930.10.30
+        name: Process Lifecycle Policy
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Policy for how processes are introduced, maintained, retired, and archived.
+        children: []
+      - id: BC-930.10.40
+        name: Process Standards and Conventions
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Modelling notations, attribute standards, and review conventions for process artefacts.
+        children: []
+  - id: BC-930.20
+    name: Process Modeling and Documentation
+    level: 2
+    industry: Cross-Industry
+    description: |
+      Discovery, authoring, publication, and version control of process models
+      and supporting documentation.
+    children:
+      - id: BC-930.20.10
+        name: Process Discovery and Elicitation
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Workshops, interviews, and observation to capture as-is process knowledge.
+        children: []
+      - id: BC-930.20.20
+        name: Process Model Authoring
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Authoring of BPMN and equivalent process models in the modelling tool.
+        children: []
+      - id: BC-930.20.30
+        name: Process Documentation Publication
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Publication of process documentation to operational audiences.
+        children: []
+      - id: BC-930.20.40
+        name: Process Model Versioning
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Version control, change history, and approval workflow for process models.
+        children: []
+  - id: BC-930.30
+    name: Process Performance Measurement
+    level: 2
+    industry: Cross-Industry
+    description: |
+      Definition, monitoring, and reporting of process performance and conformance.
+    children:
+      - id: BC-930.30.10
+        name: Process KPI Definition
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Definition of cycle time, throughput, quality, and cost KPIs by process.
+        children: []
+      - id: BC-930.30.20
+        name: Process Performance Monitoring
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Operational dashboards and alerting against process performance targets.
+        children: []
+      - id: BC-930.30.30
+        name: Process Conformance Reporting
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Reporting of execution conformance versus the modelled to-be process.
+        children: []
+  - id: BC-930.40
+    name: Process Mining and Discovery
+    level: 2
+    industry: Cross-Industry
+    description: |
+      Event-log-driven discovery, conformance checking, and process intelligence.
+    children:
+      - id: BC-930.40.10
+        name: Event Log Acquisition
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Extraction, transformation, and loading of event logs from source systems.
+        children: []
+      - id: BC-930.40.20
+        name: Process Discovery Analysis
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Algorithmic reconstruction of as-executed process variants from event logs.
+        children: []
+      - id: BC-930.40.30
+        name: Conformance Checking
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Comparison of as-executed behaviour to reference models and rule sets.
+        children: []
+      - id: BC-930.40.40
+        name: Process Intelligence Reporting
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Reporting of mined insights such as bottlenecks, rework, and variant impact.
+        children: []
+  - id: BC-930.50
+    name: Process Optimization and Redesign
+    level: 2
+    industry: Cross-Industry
+    description: |
+      Architectural, data-driven redesign of processes including simulation and
+      automation candidate analysis. Distinct from improvement-project delivery,
+      which sits under BC-720.50 Continuous Improvement Management.
+    children:
+      - id: BC-930.50.10
+        name: Process Bottleneck Analysis
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Identification and quantification of constraint points across process variants.
+        children: []
+      - id: BC-930.50.20
+        name: Process Simulation
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Discrete-event and Monte Carlo simulation of process design alternatives.
+        children: []
+      - id: BC-930.50.30
+        name: To-Be Process Design
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Design of redesigned process flows, controls, and hand-offs.
+        children: []
+      - id: BC-930.50.40
+        name: Automation Opportunity Identification
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Identification of candidate steps for workflow, RPA, or AI-based automation.
+        children: []
+  - id: BC-930.60
+    name: Process Automation Governance
+    level: 2
+    industry: Cross-Industry
+    description: |
+      Governance of the automation portfolio across workflow, RPA, and intelligent
+      automation platforms. Excludes the engineering and operation of the platforms themselves.
+    children:
+      - id: BC-930.60.10
+        name: Automation Portfolio Management
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Demand intake, prioritisation, and lifecycle management of automation assets.
+        children: []
+      - id: BC-930.60.20
+        name: Workflow Orchestration Governance
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Standards and controls for orchestrated workflow processes across business systems.
+        children: []
+      - id: BC-930.60.30
+        name: RPA Programme Governance
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Governance of the robotic process automation programme, including bot ownership.
+        children: []
+      - id: BC-930.60.40
+        name: Automation Control and Audit
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Control framework, monitoring, and audit trail across the automation estate.
+        children: []
+  - id: BC-930.70
+    name: Process Risk and Control Management
+    level: 2
+    industry: Cross-Industry
+    description: |
+      Process-embedded risks and controls, including segregation of duties.
+      Complements enterprise risk and audit functions rather than replacing them.
+    children:
+      - id: BC-930.70.10
+        name: Process Control Design
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Design of preventive and detective controls embedded in process flows.
+        children: []
+      - id: BC-930.70.20
+        name: Segregation of Duties Modeling
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Modelling of segregation-of-duties rules and conflict detection across processes.
+        children: []
+      - id: BC-930.70.30
+        name: Process Control Testing
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Periodic testing of process control effectiveness and exception handling.
+        children: []

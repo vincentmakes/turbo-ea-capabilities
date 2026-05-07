@@ -1,0 +1,156 @@
+locale: pt
+source: L1-business-architecture-management.yaml
+entries:
+  BC-170:
+    name: Gestão da arquitetura de negócio
+    description: |
+      Conceção, documentação e governo das relações estruturais entre estratégia, capacidades, cadeias de valor, modelo operacional e ativos de informação de negócio. Disponibiliza os artefactos arquiteturais que traduzem a estratégia empresarial numa visão coerente e navegável de como o negócio se organiza para entregar valor.
+    in_scope:
+      - Modelação, decomposição, mapas de calor e avaliação das capacidades de negócio
+      - Identificação, definição de etapas e mapeamento de capacidades das cadeias de valor
+      - Conceção do modelo operacional alvo e planeamento da transição
+      - Modelação da informação de negócio nos níveis conceptual e lógico
+      - Princípios, adoção de frameworks e governo da arquitetura de negócio
+      - Gestão do repositório de artefactos de arquitetura e rastreabilidade
+    out_of_scope:
+      - Arquitetura de TI, aplicacional, da camada de dados, tecnológica e de segurança
+      - Formulação da estratégia e governo da execução estratégica (BC-100)
+      - Entrega de projetos, programas e portfólios (BC-900)
+      - Adoção de mudança organizacional e realização de benefícios (BC-910 e BC-920)
+      - Modelação, mineração, otimização e governo da automação de processos (BC-930)
+  BC-170.10:
+    name: Governo da arquitetura de negócio
+    description: |
+      Princípios arquiteturais, adoção de frameworks, revisão e gestão de exceções para a prática de arquitetura de negócio.
+  BC-170.10.10:
+    name: Definição dos princípios de arquitetura
+    description: |
+      Definição e manutenção dos princípios de arquitetura de negócio que orientam as decisões de design em toda a empresa.
+  BC-170.10.20:
+    name: Adoção de frameworks de arquitetura
+    description: |
+      Seleção, adaptação e disseminação de frameworks como TOGAF e BIZBOK.
+  BC-170.10.30:
+    name: Revisão e conformidade de arquitetura
+    description: |
+      Revisão de soluções e iniciativas face aos padrões e princípios de arquitetura.
+  BC-170.10.40:
+    name: Gestão de exceções de arquitetura
+    description: |
+      Captura, avaliação e tratamento dos desvios em relação aos padrões de arquitetura.
+  BC-170.20:
+    name: Modelação das capacidades de negócio
+    description: |
+      Identificação, decomposição, avaliação e análise de sourcing das capacidades de negócio utilizadas como âncora arquitetural principal.
+  BC-170.20.10:
+    name: Identificação de capacidades
+    description: |
+      Descoberta e nomeação das capacidades de negócio ao nível empresarial.
+  BC-170.20.20:
+    name: Decomposição de capacidades
+    description: |
+      Decomposição das capacidades em subcapacidades MECE até ao nível operacional.
+  BC-170.20.30:
+    name: Mapas de calor de capacidades
+    description: |
+      Visualização da importância, do desempenho e da postura de investimento das capacidades.
+  BC-170.20.40:
+    name: Avaliação de capacidades
+    description: |
+      Avaliação da maturidade, do desempenho e das lacunas de cada capacidade.
+  BC-170.20.50:
+    name: Estratégia de sourcing de capacidades
+    description: |
+      Decisões de fazer, comprar, fazer parceria ou manter, enquadradas nos portfólios de capacidades.
+  BC-170.30:
+    name: Modelação de cadeias de valor
+    description: |
+      Identificação e modelação de cadeias de valor end-to-end e da sua ligação às capacidades habilitadoras.
+  BC-170.30.10:
+    name: Identificação de cadeias de valor
+    description: |
+      Descoberta de cadeias de valor de cliente, parceiro e internas em toda a empresa.
+  BC-170.30.20:
+    name: Definição das etapas das cadeias de valor
+    description: |
+      Definição das etapas, critérios de entrada e itens de valor da cadeia de valor.
+  BC-170.30.30:
+    name: Medição do desempenho das cadeias de valor
+    description: |
+      Definição e acompanhamento das métricas de desempenho e criação de valor por etapa.
+  BC-170.30.40:
+    name: Mapeamento cadeia de valor–capacidades
+    description: |
+      Mapeamento das capacidades necessárias para habilitar cada etapa da cadeia de valor.
+  BC-170.40:
+    name: Conceção do modelo operacional
+    description: |
+      Conceção arquitetural do modelo operacional, incluindo o modelo de prestação de serviços, a pegada de sourcing e o planeamento da transição.
+  BC-170.40.10:
+    name: Conceção do modelo operacional alvo
+    description: |
+      Definição do modelo operacional alvo abrangendo capacidades, processos, organização, localizações e informação.
+  BC-170.40.20:
+    name: Conceção do modelo de prestação de serviços
+    description: |
+      Conceção de padrões de prestação interna, serviços partilhados e centros de excelência.
+  BC-170.40.30:
+    name: Estratégia de sourcing e localização
+    description: |
+      Decisões arquiteturais de sourcing e pegada geográfica para a entrega de capacidades.
+  BC-170.40.40:
+    name: Planeamento da transição do modelo operacional
+    description: |
+      Sequenciamento das alterações ao modelo operacional em estados de transição e ondas.
+  BC-170.50:
+    name: Modelação da informação de negócio
+    description: |
+      Modelação dos ativos de informação, do glossário e do ciclo de vida da informação na perspetiva do negócio. Visão conceptual e lógica; a arquitetura física dos dados pertence à TI.
+  BC-170.50.10:
+    name: Modelação de entidades de negócio
+    description: |
+      Identificação e definição das entidades de negócio centrais e das suas relações.
+  BC-170.50.20:
+    name: Gestão do glossário de negócio
+    description: |
+      Definições autorizadas dos termos e conceitos de negócio.
+  BC-170.50.30:
+    name: Mapeamento do ciclo de vida da informação
+    description: |
+      Mapeamento dos pontos onde a informação de negócio é criada, utilizada, retida e descontinuada.
+  BC-170.60:
+    name: Gestão do repositório de arquitetura de negócio
+    description: |
+      Catalogação, versionamento e ferramentas para os artefactos de arquitetura de negócio.
+  BC-170.60.10:
+    name: Catalogação de artefactos de arquitetura
+    description: |
+      Inventário e classificação dos artefactos de arquitetura de negócio no repositório.
+  BC-170.60.20:
+    name: Versionamento e rastreabilidade de artefactos
+    description: |
+      Versionamento dos artefactos e rastreabilidade entre estratégia, capacidades, cadeias de valor e iniciativas.
+  BC-170.60.30:
+    name: Administração da ferramenta de repositório
+    description: |
+      Configuração, gestão de acessos e operação da ferramenta de repositório de arquitetura.
+  BC-170.70:
+    name: Roadmap e planeamento da transição da arquitetura de negócio
+    description: |
+      Planeamento do estado atual, estado alvo e arquiteturas de transição para orientar decisões de portfólio e investimento.
+  BC-170.70.10:
+    name: Avaliação do estado atual
+    description: |
+      Documentação da arquitetura de negócio atual ao longo de capacidades e cadeias de valor.
+  BC-170.70.20:
+    name: Definição do estado alvo
+    description: |
+      Definição da arquitetura de negócio alvo alinhada com a estratégia.
+  BC-170.70.30:
+    name: Análise de lacunas
+    description: |
+      Identificação e priorização das lacunas entre arquitetura atual e alvo.
+  BC-170.70.40:
+    name: Conceção das arquiteturas de transição
+    description: |
+      Conceção de arquiteturas de transição intermédias e sequenciamento consciente das dependências.

@@ -145,6 +145,10 @@ value_streams:
         stage_name: Issue Capture (Audit)
         capability_id: BC-140
       - stage_order: 1
+        stage_name: Issue Capture (Process Conformance)
+        capability_id: BC-930
+        notes: Process mining and conformance reporting surface execution issues
+      - stage_order: 1
         stage_name: Issue Capture (Aviation Safety)
         capability_id: BC-1280
         industry_variant: ATC
@@ -2307,10 +2311,18 @@ value_streams:
         stage_name: Strategy Formulation
         capability_id: BC-100
         notes: Strategic planning; Business model design
+      - stage_order: 1
+        stage_name: Strategy Formulation
+        capability_id: BC-170
+        notes: Capability and operating model translate strategy into structure
       - stage_order: 2
         stage_name: Portfolio Definition
         capability_id: BC-100
         notes: Strategic portfolio
+      - stage_order: 2
+        stage_name: Portfolio Definition
+        capability_id: BC-170
+        notes: Capability heatmap and gap analysis drive investment prioritisation
       - stage_order: 2
         stage_name: Portfolio Definition
         capability_id: BC-900
@@ -2327,6 +2339,10 @@ value_streams:
         stage_name: Delivery & Governance
         capability_id: BC-920
         notes: Transformation programme execution
+      - stage_order: 4
+        stage_name: Delivery & Governance
+        capability_id: BC-930
+        notes: Process redesign and conformance during transformation delivery
       - stage_order: 5
         stage_name: Change Adoption
         capability_id: BC-910
@@ -2335,6 +2351,10 @@ value_streams:
         stage_name: Benefits Realisation
         capability_id: BC-100
         notes: Strategy execution review
+      - stage_order: 6
+        stage_name: Benefits Realisation
+        capability_id: BC-170
+        notes: Target-state capability assessment validates strategic outcomes
       - stage_order: 6
         stage_name: Benefits Realisation
         capability_id: BC-920
@@ -5937,3 +5957,26 @@ value_streams:
         stage_name: Outcomes Measurement
         capability_id: BC-2880
         notes: Outcome tracking, value-based-care reporting, and feedback loop
+  - name: Discover-to-Automate
+    industries: [Cross-Industry]
+    stages:
+      - stage_order: 1
+        stage_name: Process Discovery
+        capability_id: BC-930
+        notes: Process elicitation; BPMN authoring; documentation publication
+      - stage_order: 2
+        stage_name: Process Measurement
+        capability_id: BC-930
+        notes: KPI definition; performance monitoring
+      - stage_order: 3
+        stage_name: Process Mining
+        capability_id: BC-930
+        notes: Event log acquisition; discovery analysis; conformance checking
+      - stage_order: 4
+        stage_name: Process Redesign
+        capability_id: BC-930
+        notes: Bottleneck analysis; simulation; to-be design
+      - stage_order: 5
+        stage_name: Process Automation
+        capability_id: BC-930
+        notes: Automation portfolio; orchestration governance; RPA programme; control & audit

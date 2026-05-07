@@ -1,0 +1,156 @@
+locale: it
+source: L1-business-architecture-management.yaml
+entries:
+  BC-170:
+    name: Gestione dell'architettura di business
+    description: |
+      Progettazione, documentazione e governance delle relazioni strutturali tra strategia, capacità, value stream, modello operativo e asset informativi di business. Fornisce gli artefatti architetturali che traducono la strategia d'impresa in una visione coerente e navigabile di come l'organizzazione genera valore.
+    in_scope:
+      - Modellazione, decomposizione, heatmapping e valutazione delle capacità di business
+      - Identificazione, definizione delle fasi e mappatura delle capacità dei value stream
+      - Progettazione del modello operativo target e pianificazione della transizione
+      - Modellazione dell'informazione di business a livello concettuale e logico
+      - Principi, adozione di framework e governance dell'architettura di business
+      - Gestione del repository degli artefatti di architettura e tracciabilità
+    out_of_scope:
+      - Architettura IT, applicativa, dei dati, tecnologica e di sicurezza
+      - Formulazione della strategia e governance dell'esecuzione (BC-100)
+      - Erogazione di progetti, programmi e portfolio (BC-900)
+      - Adozione del cambiamento organizzativo e realizzazione dei benefici (BC-910 e BC-920)
+      - Modellazione, mining, ottimizzazione e governance dell'automazione dei processi (BC-930)
+  BC-170.10:
+    name: Governance dell'architettura di business
+    description: |
+      Principi architetturali, adozione di framework, revisione e gestione delle deroghe per la pratica di architettura di business.
+  BC-170.10.10:
+    name: Definizione dei principi di architettura
+    description: |
+      Definizione e mantenimento dei principi di architettura di business che guidano le decisioni di progettazione a livello aziendale.
+  BC-170.10.20:
+    name: Adozione di framework di architettura
+    description: |
+      Selezione, adattamento e diffusione di framework come TOGAF e BIZBOK.
+  BC-170.10.30:
+    name: Revisione e conformità di architettura
+    description: |
+      Revisione di soluzioni e iniziative rispetto a standard e principi di architettura.
+  BC-170.10.40:
+    name: Gestione delle deroghe di architettura
+    description: |
+      Acquisizione, valutazione e trattamento delle deviazioni rispetto agli standard di architettura.
+  BC-170.20:
+    name: Modellazione delle capacità di business
+    description: |
+      Identificazione, decomposizione, valutazione e analisi di sourcing delle capacità di business utilizzate come ancoraggio architetturale principale.
+  BC-170.20.10:
+    name: Identificazione delle capacità
+    description: |
+      Scoperta e denominazione delle capacità di business a livello d'impresa.
+  BC-170.20.20:
+    name: Decomposizione delle capacità
+    description: |
+      Decomposizione delle capacità in sotto-capacità MECE fino al livello operativo.
+  BC-170.20.30:
+    name: Heatmapping delle capacità
+    description: |
+      Visualizzazione di rilevanza, performance e postura di investimento delle capacità.
+  BC-170.20.40:
+    name: Valutazione delle capacità
+    description: |
+      Valutazione della maturità, della performance e dei gap di ciascuna capacità.
+  BC-170.20.50:
+    name: Strategia di sourcing delle capacità
+    description: |
+      Decisioni di make, buy, partner o retain inquadrate sui portafogli di capacità.
+  BC-170.30:
+    name: Modellazione dei value stream
+    description: |
+      Identificazione e modellazione di value stream end-to-end e del loro collegamento alle capacità abilitanti.
+  BC-170.30.10:
+    name: Identificazione dei value stream
+    description: |
+      Scoperta dei value stream cliente, partner e interni a livello aziendale.
+  BC-170.30.20:
+    name: Definizione delle fasi dei value stream
+    description: |
+      Definizione di fasi, criteri d'ingresso e value item del value stream.
+  BC-170.30.30:
+    name: Misurazione della performance dei value stream
+    description: |
+      Definizione e monitoraggio delle metriche di performance e di creazione di valore per fase.
+  BC-170.30.40:
+    name: Mappatura value stream–capacità
+    description: |
+      Mappatura delle capacità necessarie ad abilitare ogni fase del value stream.
+  BC-170.40:
+    name: Progettazione del modello operativo
+    description: |
+      Progettazione architetturale del modello operativo, comprensiva del modello di erogazione dei servizi, dell'impronta di sourcing e della pianificazione della transizione.
+  BC-170.40.10:
+    name: Progettazione del modello operativo target
+    description: |
+      Definizione del modello operativo target attraverso capacità, processi, organizzazione, sedi e informazione.
+  BC-170.40.20:
+    name: Progettazione del modello di erogazione dei servizi
+    description: |
+      Progettazione di pattern di erogazione interna, servizi condivisi e centri di eccellenza.
+  BC-170.40.30:
+    name: Strategia di sourcing e localizzazione
+    description: |
+      Decisioni architetturali di sourcing e impronta geografica per l'erogazione delle capacità.
+  BC-170.40.40:
+    name: Pianificazione della transizione del modello operativo
+    description: |
+      Sequenziamento delle evoluzioni del modello operativo in stati di transizione e ondate.
+  BC-170.50:
+    name: Modellazione dell'informazione di business
+    description: |
+      Modellazione degli asset informativi, del glossario e del ciclo di vita dell'informazione in ottica di business. Vista concettuale e logica; l'architettura fisica dei dati appartiene all'IT.
+  BC-170.50.10:
+    name: Modellazione delle entità di business
+    description: |
+      Identificazione e definizione delle entità di business centrali e delle loro relazioni.
+  BC-170.50.20:
+    name: Gestione del glossario di business
+    description: |
+      Definizioni autorevoli dei termini e dei concetti di business.
+  BC-170.50.30:
+    name: Mappatura del ciclo di vita dell'informazione
+    description: |
+      Mappatura dei punti in cui l'informazione di business viene creata, utilizzata, conservata e dismessa.
+  BC-170.60:
+    name: Gestione del repository di architettura di business
+    description: |
+      Catalogazione, versionamento e tooling per gli artefatti di architettura di business.
+  BC-170.60.10:
+    name: Catalogazione degli artefatti di architettura
+    description: |
+      Inventario e classificazione degli artefatti di architettura di business nel repository.
+  BC-170.60.20:
+    name: Versionamento e tracciabilità degli artefatti
+    description: |
+      Versionamento degli artefatti e tracciabilità tra strategia, capacità, value stream e iniziative.
+  BC-170.60.30:
+    name: Amministrazione dello strumento di repository
+    description: |
+      Configurazione, gestione degli accessi e operatività dello strumento di repository di architettura.
+  BC-170.70:
+    name: Roadmap e pianificazione della transizione dell'architettura di business
+    description: |
+      Pianificazione di stato attuale, stato target e architetture di transizione a guida delle decisioni di portfolio e di investimento.
+  BC-170.70.10:
+    name: Valutazione dello stato attuale
+    description: |
+      Documentazione dell'architettura di business attuale attraverso capacità e value stream.
+  BC-170.70.20:
+    name: Definizione dello stato target
+    description: |
+      Definizione dell'architettura di business target allineata alla strategia.
+  BC-170.70.30:
+    name: Analisi dei gap
+    description: |
+      Identificazione e prioritizzazione dei gap tra architettura attuale e target.
+  BC-170.70.40:
+    name: Progettazione delle architetture di transizione
+    description: |
+      Progettazione di architetture di transizione intermedie e sequenziamento consapevole delle dipendenze.

@@ -1,0 +1,156 @@
+locale: fr
+source: L1-business-architecture-management.yaml
+entries:
+  BC-170:
+    name: Gestion de l'architecture métier
+    description: |
+      Conception, documentation et gouvernance des relations structurelles entre la stratégie, les capacités, les chaînes de valeur, le modèle opérationnel et les actifs informationnels métier. Fournit les artefacts architecturaux qui traduisent la stratégie d'entreprise en une vue cohérente et navigable de l'organisation pour la création de valeur.
+    in_scope:
+      - Modélisation, décomposition, cartographie thermique et évaluation des capacités métier
+      - Identification, définition des étapes et cartographie des capacités des chaînes de valeur
+      - Conception du modèle opérationnel cible et planification de la transition
+      - Modélisation de l'information métier aux niveaux conceptuel et logique
+      - Principes, adoption de cadres et gouvernance de l'architecture métier
+      - Gestion du référentiel d'artefacts d'architecture et traçabilité
+    out_of_scope:
+      - Architecture informatique, applicative, des données, technologique et de sécurité
+      - Formulation de la stratégie et gouvernance de l'exécution (BC-100)
+      - Livraison de projets, programmes et portefeuilles (BC-900)
+      - Adoption du changement organisationnel et réalisation des bénéfices (BC-910 et BC-920)
+      - Modélisation, exploration, optimisation et gouvernance de l'automatisation des processus (BC-930)
+  BC-170.10:
+    name: Gouvernance de l'architecture métier
+    description: |
+      Principes architecturaux, adoption de cadres, revue et gestion des dérogations pour la pratique d'architecture métier.
+  BC-170.10.10:
+    name: Définition des principes d'architecture
+    description: |
+      Définition et maintenance des principes d'architecture métier qui guident les décisions de conception à l'échelle de l'entreprise.
+  BC-170.10.20:
+    name: Adoption des cadres d'architecture
+    description: |
+      Sélection, adaptation et déploiement de cadres tels que TOGAF et BIZBOK.
+  BC-170.10.30:
+    name: Revue et conformité d'architecture
+    description: |
+      Revue des solutions et des initiatives par rapport aux normes et principes d'architecture.
+  BC-170.10.40:
+    name: Gestion des dérogations d'architecture
+    description: |
+      Capture, évaluation et traitement des écarts par rapport aux normes d'architecture.
+  BC-170.20:
+    name: Modélisation des capacités métier
+    description: |
+      Identification, décomposition, évaluation et analyse de l'approvisionnement des capacités métier utilisées comme ancrage architectural principal.
+  BC-170.20.10:
+    name: Identification des capacités
+    description: |
+      Découverte et nommage des capacités métier au niveau de l'entreprise.
+  BC-170.20.20:
+    name: Décomposition des capacités
+    description: |
+      Décomposition des capacités en sous-capacités MECE jusqu'au niveau opérationnel.
+  BC-170.20.30:
+    name: Cartographie thermique des capacités
+    description: |
+      Visualisation de l'importance, de la performance et du positionnement d'investissement des capacités.
+  BC-170.20.40:
+    name: Évaluation des capacités
+    description: |
+      Évaluation de la maturité, de la performance et des écarts pour chaque capacité.
+  BC-170.20.50:
+    name: Stratégie d'approvisionnement des capacités
+    description: |
+      Décisions de faire, acheter, partenariat ou conserver appliquées aux portefeuilles de capacités.
+  BC-170.30:
+    name: Modélisation des chaînes de valeur
+    description: |
+      Identification et modélisation des chaînes de valeur de bout en bout et de leur lien avec les capacités habilitantes.
+  BC-170.30.10:
+    name: Identification des chaînes de valeur
+    description: |
+      Découverte des chaînes de valeur clients, partenaires et internes à l'échelle de l'entreprise.
+  BC-170.30.20:
+    name: Définition des étapes des chaînes de valeur
+    description: |
+      Définition des étapes de la chaîne de valeur, des critères d'entrée et des éléments de valeur.
+  BC-170.30.30:
+    name: Mesure de la performance des chaînes de valeur
+    description: |
+      Définition et suivi des métriques de performance et de création de valeur par étape.
+  BC-170.30.40:
+    name: Mise en correspondance chaînes de valeur–capacités
+    description: |
+      Mise en correspondance des capacités requises pour chaque étape de la chaîne de valeur.
+  BC-170.40:
+    name: Conception du modèle opérationnel
+    description: |
+      Conception architecturale du modèle opérationnel incluant le modèle de prestation de services, l'empreinte de sourcing et la planification de la transition.
+  BC-170.40.10:
+    name: Conception du modèle opérationnel cible
+    description: |
+      Définition du modèle opérationnel cible couvrant capacités, processus, organisation, localisations et information.
+  BC-170.40.20:
+    name: Conception du modèle de prestation de services
+    description: |
+      Conception des schémas de prestation interne, des services partagés et des centres d'excellence.
+  BC-170.40.30:
+    name: Stratégie de sourcing et de localisation
+    description: |
+      Décisions architecturales de sourcing et de localisation pour la fourniture des capacités.
+  BC-170.40.40:
+    name: Planification de la transition du modèle opérationnel
+    description: |
+      Séquencement des évolutions du modèle opérationnel en états de transition et vagues.
+  BC-170.50:
+    name: Modélisation de l'information métier
+    description: |
+      Modélisation des actifs informationnels, du glossaire et du cycle de vie de l'information selon une perspective métier. Vue conceptuelle et logique ; l'architecture des données physiques relève de l'informatique.
+  BC-170.50.10:
+    name: Modélisation des entités métier
+    description: |
+      Identification et définition des entités métier centrales et de leurs relations.
+  BC-170.50.20:
+    name: Gestion du glossaire métier
+    description: |
+      Définitions de référence des termes et concepts métier.
+  BC-170.50.30:
+    name: Cartographie du cycle de vie de l'information
+    description: |
+      Cartographie de la création, de l'utilisation, de la rétention et du retrait de l'information métier.
+  BC-170.60:
+    name: Gestion du référentiel d'architecture métier
+    description: |
+      Catalogage, versionnage et outillage des artefacts d'architecture métier.
+  BC-170.60.10:
+    name: Catalogage des artefacts d'architecture
+    description: |
+      Inventaire et classification des artefacts d'architecture métier dans le référentiel.
+  BC-170.60.20:
+    name: Versionnage et traçabilité des artefacts
+    description: |
+      Versionnage des artefacts et traçabilité entre stratégie, capacités, chaînes de valeur et initiatives.
+  BC-170.60.30:
+    name: Administration de l'outil de référentiel
+    description: |
+      Configuration, gestion des accès et exploitation de l'outil de référentiel d'architecture.
+  BC-170.70:
+    name: Feuille de route et planification de la transition de l'architecture métier
+    description: |
+      Planification de l'état actuel, de l'état cible et des architectures de transition pour orienter les décisions de portefeuille et d'investissement.
+  BC-170.70.10:
+    name: Évaluation de l'état actuel
+    description: |
+      Documentation de l'architecture métier actuelle à travers les capacités et les chaînes de valeur.
+  BC-170.70.20:
+    name: Définition de l'état cible
+    description: |
+      Définition de l'architecture métier cible alignée sur la stratégie.
+  BC-170.70.30:
+    name: Analyse des écarts
+    description: |
+      Identification et priorisation des écarts entre l'architecture actuelle et cible.
+  BC-170.70.40:
+    name: Conception des architectures de transition
+    description: |
+      Conception des architectures de transition intermédiaires et séquencement tenant compte des dépendances.
