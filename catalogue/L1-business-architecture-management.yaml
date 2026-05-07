@@ -1,0 +1,278 @@
+# Business Architecture Management
+id: BC-170
+name: Business Architecture Management
+level: 1
+industry: Cross-Industry
+description: |
+  Design, documentation, and governance of the structural relationships between
+  strategy, capabilities, value streams, operating model, and business information
+  assets. Provides the architectural artefacts that translate enterprise strategy
+  into a coherent, navigable view of how the business is organised to deliver value.
+in_scope:
+  - Business capability modelling, decomposition, heatmapping, and assessment
+  - Value stream identification, stage definition, and capability mapping
+  - Target operating model design and transition planning
+  - Business information modelling at the conceptual and logical level
+  - Business architecture principles, framework adoption, and governance
+  - Architecture artefact repository management and traceability
+out_of_scope:
+  - IT, application, data-layer, technology, and security architecture
+  - Strategy formation and execution governance (covered by BC-100)
+  - Project, programme, and portfolio delivery (covered by BC-900)
+  - Organisational change adoption and benefits realisation (covered by BC-910 and BC-920)
+  - Process modelling, mining, optimization, and automation governance (covered by BC-930)
+references:
+  - https://www.businessarchitectureguild.org/page/bizbok
+  - https://pubs.opengroup.org/togaf-standard/business-architecture/
+  - https://www.omg.org/spec/VDML/
+  - https://www.gartner.com/en/information-technology/glossary/business-architecture
+children:
+  - id: BC-170.10
+    name: Business Architecture Governance
+    level: 2
+    industry: Cross-Industry
+    description: |
+      Architecture principles, framework adoption, review, and exception handling
+      for the business architecture practice.
+    children:
+      - id: BC-170.10.10
+        name: Architecture Principles Definition
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Definition and maintenance of business architecture principles that guide
+          design decisions across the enterprise.
+        children: []
+      - id: BC-170.10.20
+        name: Architecture Framework Adoption
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Selection, tailoring, and rollout of frameworks such as TOGAF and BIZBOK.
+        children: []
+      - id: BC-170.10.30
+        name: Architecture Review and Compliance
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Review of solutions and initiatives against architecture standards and principles.
+        children: []
+      - id: BC-170.10.40
+        name: Architecture Exception Management
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Capture, evaluation, and disposition of deviations from architecture standards.
+        children: []
+  - id: BC-170.20
+    name: Business Capability Modeling
+    level: 2
+    industry: Cross-Industry
+    description: |
+      Identification, decomposition, assessment, and sourcing analysis of business
+      capabilities used as the primary architectural anchor.
+    children:
+      - id: BC-170.20.10
+        name: Capability Identification
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Discovery and naming of business capabilities at the enterprise level.
+        children: []
+      - id: BC-170.20.20
+        name: Capability Decomposition
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Decomposition of capabilities into MECE child capabilities to working level.
+        children: []
+      - id: BC-170.20.30
+        name: Capability Heatmapping
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Visualisation of capability importance, performance, and investment posture.
+        children: []
+      - id: BC-170.20.40
+        name: Capability Assessment
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Maturity, performance, and gap assessment of individual capabilities.
+        children: []
+      - id: BC-170.20.50
+        name: Capability Sourcing Strategy
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Build, buy, partner, or retain decisions framed against capability portfolios.
+        children: []
+  - id: BC-170.30
+    name: Value Stream Modeling
+    level: 2
+    industry: Cross-Industry
+    description: |
+      Identification and modelling of end-to-end value streams and their linkage
+      to enabling capabilities.
+    children:
+      - id: BC-170.30.10
+        name: Value Stream Identification
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Discovery of customer, partner, and internal value streams across the enterprise.
+        children: []
+      - id: BC-170.30.20
+        name: Value Stream Stage Definition
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Definition of value stream stages, entrance criteria, and value items.
+        children: []
+      - id: BC-170.30.30
+        name: Value Stream Performance Measurement
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Definition and tracking of stage-level performance and value-creation metrics.
+        children: []
+      - id: BC-170.30.40
+        name: Value Stream Capability Mapping
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Mapping of capabilities required to enable each value stream stage.
+        children: []
+  - id: BC-170.40
+    name: Operating Model Design
+    level: 2
+    industry: Cross-Industry
+    description: |
+      Architectural design of the operating model including service delivery model,
+      sourcing footprint, and transition planning.
+    children:
+      - id: BC-170.40.10
+        name: Target Operating Model Design
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Definition of the target operating model across capabilities, processes,
+          organisation, locations, and information.
+        children: []
+      - id: BC-170.40.20
+        name: Service Delivery Model Design
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Design of internal service delivery patterns, shared services, and
+          centre-of-excellence structures.
+        children: []
+      - id: BC-170.40.30
+        name: Sourcing and Location Strategy
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Architectural sourcing and location footprint decisions for capability delivery.
+        children: []
+      - id: BC-170.40.40
+        name: Operating Model Transition Planning
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Sequencing of operating model changes into transition states and waves.
+        children: []
+  - id: BC-170.50
+    name: Business Information Modeling
+    level: 2
+    industry: Cross-Industry
+    description: |
+      Business-lens modelling of information assets, glossary, and information
+      lifecycle. Conceptual and logical view; physical data architecture sits in IT.
+    children:
+      - id: BC-170.50.10
+        name: Business Entity Modeling
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Identification and definition of core business entities and their relationships.
+        children: []
+      - id: BC-170.50.20
+        name: Business Glossary Management
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Authoritative definitions of business terms and concepts.
+        children: []
+      - id: BC-170.50.30
+        name: Information Lifecycle Mapping
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Mapping of where business information is created, used, retained, and retired.
+        children: []
+  - id: BC-170.60
+    name: Business Architecture Repository Management
+    level: 2
+    industry: Cross-Industry
+    description: |
+      Cataloguing, versioning, and tooling for business architecture artefacts.
+    children:
+      - id: BC-170.60.10
+        name: Architecture Artefact Cataloguing
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Inventory and classification of business architecture artefacts in the repository.
+        children: []
+      - id: BC-170.60.20
+        name: Artefact Versioning and Traceability
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Versioning of artefacts and traceability between strategy, capabilities,
+          value streams, and initiatives.
+        children: []
+      - id: BC-170.60.30
+        name: Repository Tool Administration
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Configuration, access management, and operations of the architecture
+          repository tool.
+        children: []
+  - id: BC-170.70
+    name: Business Architecture Roadmap and Transition Planning
+    level: 2
+    industry: Cross-Industry
+    description: |
+      Current-state, target-state, and transition architecture planning to guide
+      portfolio and investment decisions.
+    children:
+      - id: BC-170.70.10
+        name: Current State Assessment
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Documentation of the as-is business architecture across capabilities and value streams.
+        children: []
+      - id: BC-170.70.20
+        name: Target State Definition
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Definition of the to-be business architecture aligned with strategy.
+        children: []
+      - id: BC-170.70.30
+        name: Gap Analysis
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Identification and prioritisation of gaps between current and target architecture.
+        children: []
+      - id: BC-170.70.40
+        name: Transition Architecture Design
+        level: 3
+        industry: Cross-Industry
+        description: |
+          Design of intermediate transition architectures and dependency-aware sequencing.
+        children: []
