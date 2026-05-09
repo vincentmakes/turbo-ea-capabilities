@@ -14,18 +14,76 @@ children:
     name: Manage Real Estate Listing and Brokerage
     level: 2
     description: >-
-      Operate residential and commercial brokerage: listing agreements, MLS exposure, showings, and offer negotiation.
+      Operate residential and commercial brokerage: listing agreements, MLS exposure, showings, offer negotiation.
     realizes_capability_ids:
       - BC-410
-    children: []
+    children:
+      - id: BP-330.10.10
+        name: Win Listing Agreements
+        level: 3
+        description: >-
+          Pursue and win listing agreements with property owners.
+        realizes_capability_ids:
+          - BC-410
+        children: []
+      - id: BP-330.10.20
+        name: Market Listings
+        level: 3
+        description: >-
+          Set up and market listings across MLS, portals, and direct channels.
+        realizes_capability_ids:
+          - BC-410
+          - BC-400
+        children: []
+      - id: BP-330.10.30
+        name: Coordinate Showings and Offers
+        level: 3
+        description: >-
+          Coordinate property showings; receive and present offers to seller.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-330.10.40
+        name: Close Brokerage Transactions and Manage Commission
+        level: 3
+        description: >-
+          Coordinate closing; manage commission settlement and disclosures.
+        realizes_capability_ids:
+          - BC-200
+        children: []
   - id: BP-330.20
     name: Manage Real Estate Acquisition and Disposition Advisory
     level: 2
     description: >-
-      Advise clients on acquisitions and dispositions: target identification, underwriting, due diligence, and deal closing.
+      Advise clients on acquisitions and dispositions: target identification, underwriting, due diligence, deal closing.
     realizes_capability_ids:
       - BC-710
-    children: []
+    children:
+      - id: BP-330.20.10
+        name: Source and Underwrite Deals
+        level: 3
+        description: >-
+          Source acquisition opportunities; underwrite to investment criteria.
+        realizes_capability_ids:
+          - BC-710
+          - BC-230
+        children: []
+      - id: BP-330.20.20
+        name: Conduct Due Diligence
+        level: 3
+        description: >-
+          Conduct legal, financial, environmental, and physical due diligence.
+        realizes_capability_ids:
+          - BC-710
+          - BC-150
+        children: []
+      - id: BP-330.20.30
+        name: Structure and Close Real Estate Transactions
+        level: 3
+        description: >-
+          Structure deals; negotiate and close acquisition or disposition transactions.
+        realizes_capability_ids:
+          - BC-710
+        children: []
   - id: BP-330.30
     name: Manage Real Estate Capital Markets and Fund Management
     level: 2
@@ -33,11 +91,50 @@ children:
       Operate real-estate fund and investment management: capital raising, fund administration, asset/portfolio reporting.
     realizes_capability_ids:
       - BC-210
-    children: []
+    children:
+      - id: BP-330.30.10
+        name: Form and Capitalise Real Estate Vehicles
+        level: 3
+        description: >-
+          Establish funds, joint ventures, and SPVs; manage capital commitments and calls.
+        realizes_capability_ids:
+          - BC-210
+        children: []
+      - id: BP-330.30.20
+        name: Manage Fund Accounting and NAV
+        level: 3
+        description: >-
+          Calculate fund NAV; manage fund-level expenses and accruals.
+        realizes_capability_ids:
+          - BC-200
+          - BC-210
+        children: []
+      - id: BP-330.30.30
+        name: Produce LP Reporting and Distributions
+        level: 3
+        description: >-
+          Produce limited-partner reports; manage distributions and waterfall calculations.
+        realizes_capability_ids:
+          - BC-240
+        children: []
   - id: BP-330.40
     name: Manage Real Estate Valuation and Appraisal
     level: 2
     description: >-
       Conduct property valuation and appraisal under IPMS / RICS / USPAP standards.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-330.40.10
+        name: Conduct Property Valuations
+        level: 3
+        description: >-
+          Conduct property valuations using income, sales-comparison, and cost approaches.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-330.40.20
+        name: Produce Appraisal Reports
+        level: 3
+        description: >-
+          Produce appraisal reports per RICS / USPAP / IVS standards.
+        realizes_capability_ids: []
+        children: []

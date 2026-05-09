@@ -3,7 +3,7 @@ name: Operate Real Estate Asset and Property Management
 level: 1
 industry: Real Estate
 description: >-
-  Run real-estate-specific asset and property operations: portfolio management, tenant lease lifecycle, day-to-day property/facility management, capital projects, and disposition.
+  Run real-estate-specific asset and property operations: portfolio management, tenant lease lifecycle, day-to-day property/facility management, capital projects, disposition.
 framework_refs:
   - framework: APQC-PCF
     external_id: "Real Estate asset and property reference (OSCRE IDM-aligned)"
@@ -17,14 +17,66 @@ children:
       Plan and govern the portfolio of properties: asset strategy, hold/sell decisions, performance reporting.
     realizes_capability_ids:
       - BC-710
-    children: []
+    children:
+      - id: BP-320.10.10
+        name: Develop Portfolio Strategy
+        level: 3
+        description: >-
+          Set the multi-year portfolio strategy: asset class mix, geographic mix, hold/sell criteria.
+        realizes_capability_ids:
+          - BC-710
+        children: []
+      - id: BP-320.10.20
+        name: Conduct Asset-Level Hold/Sell Reviews
+        level: 3
+        description: >-
+          Periodically review each asset for hold, sell, refurbish, or repurpose decisions.
+        realizes_capability_ids:
+          - BC-710
+        children: []
+      - id: BP-320.10.30
+        name: Produce Portfolio Performance Reporting
+        level: 3
+        description: >-
+          Produce portfolio performance reports for owners, partners, and lenders.
+        realizes_capability_ids:
+          - BC-230
+        children: []
   - id: BP-320.20
     name: Manage Tenant Lease Lifecycle
     level: 2
     description: >-
       Originate, abstract, administer, and renew tenant leases; manage lease accounting and CAM reconciliation.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-320.20.10
+        name: Originate and Negotiate Tenant Leases
+        level: 3
+        description: >-
+          Source tenants; negotiate terms; execute new leases.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-320.20.20
+        name: Abstract and Administer Leases
+        level: 3
+        description: >-
+          Abstract lease terms; administer rent escalations, renewals, and options.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-320.20.30
+        name: Reconcile CAM, Insurance, and Tax Pass-Throughs
+        level: 3
+        description: >-
+          Reconcile common-area maintenance, insurance, and tax pass-throughs annually.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-320.20.40
+        name: Manage Lease Renewals and Expirations
+        level: 3
+        description: >-
+          Manage lease renewals, terminations, and tenant turnover.
+        realizes_capability_ids: []
+        children: []
   - id: BP-320.30
     name: Operate Property Management and Facility Operations
     level: 2
@@ -32,7 +84,31 @@ children:
       Run day-to-day property operations: tenant services, on-site management, vendor coordination, common-area facility management.
     realizes_capability_ids:
       - BC-700
-    children: []
+    children:
+      - id: BP-320.30.10
+        name: Operate On-Site Property Management
+        level: 3
+        description: >-
+          Run on-site property management, including tenant relations and inspections.
+        realizes_capability_ids:
+          - BC-700
+        children: []
+      - id: BP-320.30.20
+        name: Coordinate Property Vendors and Service Contracts
+        level: 3
+        description: >-
+          Source and manage property vendors (cleaning, security, landscaping, lift maintenance).
+        realizes_capability_ids:
+          - BC-510
+        children: []
+      - id: BP-320.30.30
+        name: Manage Tenant Service Requests
+        level: 3
+        description: >-
+          Receive and resolve tenant service requests and maintenance tickets.
+        realizes_capability_ids:
+          - BC-430
+        children: []
   - id: BP-320.40
     name: Manage Property Capital Projects
     level: 2
@@ -41,7 +117,24 @@ children:
     realizes_capability_ids:
       - BC-700
       - BC-900
-    children: []
+    children:
+      - id: BP-320.40.10
+        name: Plan and Approve Property Capital Projects
+        level: 3
+        description: >-
+          Plan tenant improvements, repositioning, and major refurbishment projects.
+        realizes_capability_ids:
+          - BC-900
+        children: []
+      - id: BP-320.40.20
+        name: Execute Property Capital Projects
+        level: 3
+        description: >-
+          Execute property capital projects across design, construction, and handover.
+        realizes_capability_ids:
+          - BC-700
+          - BC-900
+        children: []
   - id: BP-320.50
     name: Manage Real Estate Disposition
     level: 2
@@ -49,4 +142,21 @@ children:
       Position, market, and dispose of property assets; manage sale and post-closing transition.
     realizes_capability_ids:
       - BC-710
-    children: []
+    children:
+      - id: BP-320.50.10
+        name: Position and Market Properties for Sale
+        level: 3
+        description: >-
+          Prepare properties for sale; develop sale offerings; engage brokers and investors.
+        realizes_capability_ids:
+          - BC-710
+          - BC-410
+        children: []
+      - id: BP-320.50.20
+        name: Negotiate and Close Property Sales
+        level: 3
+        description: >-
+          Negotiate sale terms; execute closing and post-closing transition.
+        realizes_capability_ids:
+          - BC-710
+        children: []
