@@ -1,0 +1,56 @@
+id: BP-440
+name: Deliver Engineering and Construction Services
+level: 1
+industry: Engineering Services
+description: >-
+  Run engineering-services-firm operations: tendering and estimation, engineering design, construction execution, commissioning and handover.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "ISO 19650 BIM + AIA Phases / RIBA Plan of Work + PMI Construction Extension to PMBOK"
+realizes_capability_ids:
+  - BC-700
+  - BC-810
+children:
+  - id: BP-440.10
+    name: Manage Engineering Tendering and Estimation
+    level: 2
+    description: >-
+      Pursue engineering opportunities; develop tenders, cost estimates, and schedules.
+    realizes_capability_ids:
+      - BC-410
+    children: []
+  - id: BP-440.20
+    name: Deliver Engineering Design
+    level: 2
+    description: >-
+      Perform engineering design across disciplines; manage design coordination via BIM/CDE.
+    realizes_capability_ids:
+      - BC-810
+    children: []
+  - id: BP-440.30
+    name: Deliver Construction Execution
+    level: 2
+    description: >-
+      Execute construction work to design and schedule; manage subcontractors, materials, and HSE.
+    realizes_capability_ids:
+      - BC-700
+      - BC-900
+    children: []
+  - id: BP-440.40
+    name: Manage Commissioning and Handover
+    level: 2
+    description: >-
+      Commission and validate engineered assets; manage handover to operations with as-built documentation.
+    realizes_capability_ids:
+      - BC-720
+      - BC-700
+    children: []
+  - id: BP-440.50
+    name: Manage Engineering Document and Configuration
+    level: 2
+    description: >-
+      Maintain engineering documents, drawings, and configuration baselines through the project lifecycle.
+    realizes_capability_ids:
+      - BC-820
+      - BC-610
+    children: []
