@@ -22,7 +22,70 @@ children:
         version: "7.4.0"
     realizes_capability_ids:
       - BC-100
-    children: []
+    children:
+      - id: BP-10.10.10
+        name: Assess the External Environment
+        level: 3
+        description: >-
+          Scan macro, industry, regulatory, and competitive forces shaping the enterprise's future operating context.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "1.1.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-100
+        children: []
+      - id: BP-10.10.20
+        name: Survey Markets and Determine Customer Needs and Wants
+        level: 3
+        description: >-
+          Identify served and underserved customer segments and their unmet needs to inform vision and strategy.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "1.1.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-100
+          - BC-400
+        children: []
+      - id: BP-10.10.30
+        name: Perform Internal Analysis
+        level: 3
+        description: >-
+          Assess current capabilities, performance, financial position, and organisational health as input to strategy.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "1.1.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-100
+          - BC-170
+        children: []
+      - id: BP-10.10.40
+        name: Establish Strategic Vision
+        level: 3
+        description: >-
+          Articulate the long-term aspiration and strategic direction that orients the enterprise.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "1.1.4"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-100
+        children: []
+      - id: BP-10.10.50
+        name: Conduct Organisation Restructuring Opportunities
+        level: 3
+        description: >-
+          Identify potential organisational, portfolio, or operating-model shifts implied by the vision.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "1.1.5"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-100
+          - BC-920
+        children: []
   - id: BP-10.20
     name: Develop Business Strategy
     level: 2
@@ -35,7 +98,110 @@ children:
     realizes_capability_ids:
       - BC-100
       - BC-230
-    children: []
+    children:
+      - id: BP-10.20.10
+        name: Develop Overall Mission Statement
+        level: 3
+        description: >-
+          Codify the enterprise mission expressing its purpose and reason for being.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "1.2.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-100
+        children: []
+      - id: BP-10.20.20
+        name: Define and Evaluate Strategic Options to Achieve the Objectives
+        level: 3
+        description: >-
+          Generate and assess alternative strategic paths against the objectives, constraints, and risk appetite.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "1.2.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-100
+          - BC-230
+        children: []
+      - id: BP-10.20.30
+        name: Select Long-Term Business Strategy
+        level: 3
+        description: >-
+          Choose the multi-year strategy that best balances opportunity, capability, and risk.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "1.2.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-100
+        children: []
+      - id: BP-10.20.40
+        name: Coordinate and Align Functional and Process Strategies
+        level: 3
+        description: >-
+          Cascade the chosen strategy into functional and process strategies that deliver it.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "1.2.4"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-100
+          - BC-170
+          - BC-930
+        children: []
+      - id: BP-10.20.50
+        name: Create Organisational Design
+        level: 3
+        description: >-
+          Define the structure, governance, decision rights, and reporting that execute the strategy.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "1.2.5"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-100
+          - BC-110
+        children: []
+      - id: BP-10.20.60
+        name: Develop and Set Organisational Goals
+        level: 3
+        description: >-
+          Translate the strategy into measurable enterprise, business-unit, and functional goals.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "1.2.6"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-100
+          - BC-230
+        children: []
+      - id: BP-10.20.70
+        name: Formulate Business Unit Strategies
+        level: 3
+        description: >-
+          Develop unit-level strategies aligned to the overall enterprise strategy.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "1.2.7"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-100
+        children: []
+      - id: BP-10.20.80
+        name: Communicate Strategies Internally and Externally
+        level: 3
+        description: >-
+          Communicate the strategy to internal stakeholders and (where appropriate) external audiences.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "1.2.8"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-100
+          - BC-850
+          - BC-240
+        children: []
   - id: BP-10.30
     name: Manage Strategic Initiatives
     level: 2
@@ -49,4 +215,56 @@ children:
       - BC-100
       - BC-900
       - BC-920
-    children: []
+    children:
+      - id: BP-10.30.10
+        name: Develop Strategic Initiatives
+        level: 3
+        description: >-
+          Charter initiatives required to deliver the strategy with scope, owners, and benefits.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "1.3.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-100
+          - BC-900
+        children: []
+      - id: BP-10.30.20
+        name: Evaluate Strategic Initiatives
+        level: 3
+        description: >-
+          Evaluate proposed initiatives against strategic fit, value, feasibility, and risk.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "1.3.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-100
+          - BC-900
+        children: []
+      - id: BP-10.30.30
+        name: Select Strategic Initiatives
+        level: 3
+        description: >-
+          Approve the portfolio of initiatives to fund and execute, with allocation decisions.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "1.3.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-100
+          - BC-900
+        children: []
+      - id: BP-10.30.40
+        name: Establish High-Level Measures
+        level: 3
+        description: >-
+          Define the strategic KPIs and outcome measures used to monitor execution.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "1.3.4"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-100
+          - BC-230
+        children: []
