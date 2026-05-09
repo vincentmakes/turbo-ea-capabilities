@@ -29,7 +29,7 @@ An open-source Business Architecture Reference Catalogue with **three orthogonal
 
 - **Source of truth:** `catalogue/processes/BP1-<slug>.yaml` (one file per Category), indexed in `catalogue/processes/_index.yaml`. Schema: `schema/business-process.schema.json`.
 - **ID format:** `BP-<L1>[.<L2>[.<L3>[.<L4>]]]` mirroring BC. Max depth **L4** (Category → Group → Process → Activity per APQC PCF). BPMN-level steps belong in diagrams, not the catalogue.
-- **Names are verb-phrased** (unlike capabilities): *Develop Vision and Strategy*, *Process Sales Order*.
+- **Naming is two-tier:** BP1 roots aligned to a value stream use the VS bookend name verbatim (*Order-to-Cash*, *Hire-to-Retire*, *Procure-to-Pay*). BP2/BP3/BP4 names are verb-phrased operational activities (*Capture Customer Order*, *Verify Customer Credit*, *Allocate Inventory to Order*). One canonical name per node; **aliases are disabled by governance** — do not author them.
 - **Industry tag:** same scheme as capabilities. BC L1 industry vocabulary is the master list.
 - **`realizes_capability_ids`** is the single source of truth for the BC↔BP link; the reverse `Capability.realizes_processes` is derived at build time.
 - **`framework_refs`** for structured cross-walks to APQC-PCF, BIAN, eTOM, ITIL, SCOR, DCOR, COBIT, SHRM-BoCK, ISO-55000, ISO-31000, COSO-ERM, TOGAF, BIZBOK, ACORD, ICMM. Multiple entries per node are expected — pin a primary framework whose vernacular drives the node's name, and retain APQC-PCF as a secondary cross-walk on Cross-Industry BPs for continuity. Used alongside (not instead of) the free-form `references[]` URI list.

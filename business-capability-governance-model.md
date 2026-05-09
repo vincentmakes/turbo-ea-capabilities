@@ -905,7 +905,7 @@ Each stream declares `industries: [...]` from the capability catalogue's industr
 
 ## 11. Process Layer
 
-Business processes describe **how work is done**. Verb-phrased activities, anchored on APQC PCF's 4-level Category → Process Group → Process → Activity hierarchy. Orthogonal to capabilities and value streams.
+Business processes describe **how work is done**. Cross-Industry BPs are generated from the Business Capability (BC) catalogue and the Value Stream (VS) catalogue: BP1 roots align 1:1 with Cross-Industry value streams; BP2 mirrors the VS stages; BP3 decomposes each stage into the verb-phrased operational activities that realise the relevant BCs. Industry-specific BPs remain anchored on their domain frameworks (BIAN, eTOM, ACORD, ICMM, industry-PCFs). The 4-level Category → Process Group → Process → Activity depth is preserved; orthogonal to capabilities and value streams.
 
 ### 11.1 Source of truth
 
@@ -917,7 +917,12 @@ One YAML file per BP1 (Category) at `catalogue/processes/BP1-<slug>.yaml`. Index
 
 ### 11.3 Naming
 
-Verb-phrased — *Develop Vision and Strategy*, *Manage Customer Service*, *Process Sales Order*. Unlike capabilities, processes describe activities.
+Two-tier rule:
+
+- **BP1 root** — aligned to a value stream uses the VS bookend name verbatim (`Order-to-Cash`, `Hire-to-Retire`, `Procure-to-Pay`, `Idea-to-Market`). A non-VS BP1 (rare; only for support functions outside the VS framing) uses a Title-Case noun phrase. The BP1 name is **not** verb-phrased.
+- **BP2 / BP3 / BP4** — verb-phrased operational activities, Title Case (`Capture Customer Order`, `Verify Customer Credit`, `Allocate Inventory to Order`, `Generate Customer Invoice`, `Apply Customer Payment`). BP2 typically mirrors a VS stage and may inherit the stage's noun-phrased name when that reads more naturally; BP3 is always verb-phrased.
+
+**Aliases** are disabled by governance — every node has exactly one canonical name. The schema still permits `aliases[]` for future use, but authors must not populate it.
 
 ### 11.4 Industry tagging
 
