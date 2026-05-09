@@ -2,9 +2,22 @@ id: BP-40
 name: Manage Supply Chain for Physical Products
 level: 1
 industry: Cross-Industry
+aliases:
+  - Plan-Source-Make-Deliver
+  - SCOR Supply Chain Operations
 description: >-
-  Performing supply chain activities include planning supply chain, procuring materials and services, and managing logistics.
+  Plan, source, make, deliver, and return physical products end-to-end.
+  Structured along the SCOR (Supply Chain Operations Reference) macro
+  processes Plan, Source, Make, Deliver — with returns and reverse
+  logistics scoped under Deliver and Enable functions distributed across
+  the relevant L2 categories. APQC PCF Cross-Industry v8.0 retained as
+  a secondary cross-walk so existing tooling and benchmarking continue
+  to resolve.
 framework_refs:
+  - framework: SCOR
+    external_id: Supply Chain Operations
+    version: "14.0"
+    url: https://www.ascm.org/learning-development/certifications-credentials/scor-ds/
   - framework: APQC-PCF
     external_id: "4.0"
     version: "8.0"
@@ -13,11 +26,22 @@ realizes_capability_ids:
   - BC-530
 children:
   - id: BP-40.10
-    name: Plan for and Align Supply Chain Resources
+    name: Plan Supply Chain Operations
     level: 2
+    aliases:
+      - Sales and Operations Planning
+      - S&OP
+      - Plan for and Align Supply Chain Resources
     description: >-
-      Creating strategies for production and materials. Handle the demand for the products of the organization. Develop plans for handling materials. Develop and administer the schedule for master production. Plan for distribution requirements and its constraints by reviewing and assessing distribution policies and performance and by establishing quality standards and procedures.
+      Develop and align demand, supply, production, and distribution plans
+      across the supply chain. Covers production and materials strategy,
+      demand forecasting and reconciliation, master scheduling,
+      distribution requirements planning (DRP), and quality standard-setting.
+      Maps to SCOR Plan (sP).
     framework_refs:
+      - framework: SCOR
+        external_id: sP
+        version: "14.0"
       - framework: APQC-PCF
         external_id: "4.1"
         version: "8.0"
@@ -31,6 +55,9 @@ children:
         description: >-
           Creating strategies for production processes, as well as the process of managing materials. Define production and supply constraints. Design a blueprint of the workplace. Establish rules and regulations regarding the employees, outsourcing of services, and the expenditure to be incurred on the manufacturing capital.
         framework_refs:
+          - framework: SCOR
+            external_id: sP3.1
+            version: "14.0"
           - framework: APQC-PCF
             external_id: "4.1.1"
             version: "8.0"
@@ -41,9 +68,15 @@ children:
       - id: BP-40.10.20
         name: Manage Demand for Products
         level: 3
+        aliases:
+          - Demand Forecasting
+          - Demand Planning
         description: >-
           Forecasting demand for products using secondary research and customer feedback. Refine these forecasts. Inspect the approach used in creating forecasts, and determine its accuracy.
         framework_refs:
+          - framework: SCOR
+            external_id: sP1.1
+            version: "14.0"
           - framework: APQC-PCF
             external_id: "4.1.2"
             version: "8.0"
@@ -54,9 +87,15 @@ children:
       - id: BP-40.10.30
         name: Create Materials Plan
         level: 3
+        aliases:
+          - Material Requirements Planning
+          - MRP
         description: >-
           Developing a scheme that allows for advance planning for the availability of raw materials and spares. Start with an unconstrained plan, and refine based on supply chain realities by identifying critical materials required for production, checking material specifications, and collaborating with all vendors over the supply.
         framework_refs:
+          - framework: SCOR
+            external_id: sP2.1
+            version: "14.0"
           - framework: APQC-PCF
             external_id: "4.1.3"
             version: "8.0"
@@ -67,9 +106,14 @@ children:
       - id: BP-40.10.40
         name: Create and Manage Master Production Schedule
         level: 3
+        aliases:
+          - MPS
         description: >-
           Taking care of the master production plan. The master production includes creation and implementation of the site-level production plan, as well as management of the inventory that is currently in the production process.
         framework_refs:
+          - framework: SCOR
+            external_id: sP3.4
+            version: "14.0"
           - framework: APQC-PCF
             external_id: "4.1.4"
             version: "8.0"
@@ -79,9 +123,15 @@ children:
       - id: BP-40.10.50
         name: Plan Distribution Requirements
         level: 3
+        aliases:
+          - Distribution Requirements Planning
+          - DRP
         description: >-
           Maintaining master data of finished products and inventory. Identify the requirements of finished products at the destination, as well as partner requirements. Calculate the consolidation at source. Manage replenishment planning. Create and administer a dispatch plan. Calculate load plans for destinations and partners. Manage the cost of supplying these products. Ensure effective utilization of capacity.
         framework_refs:
+          - framework: SCOR
+            external_id: sP4.1
+            version: "14.0"
           - framework: APQC-PCF
             external_id: "4.1.5"
             version: "8.0"
@@ -95,6 +145,9 @@ children:
         description: >-
           Instituting the constraints for planning of distribution process. Create a plan that specifies every element in the distribution process from the blueprint of the distribution centers to how and when the inventory would reach the distribution centers.
         framework_refs:
+          - framework: SCOR
+            external_id: sP4.2
+            version: "14.0"
           - framework: APQC-PCF
             external_id: "4.1.6"
             version: "8.0"
@@ -108,6 +161,9 @@ children:
         description: >-
           Revisiting and refurbishing the policies for planning the distribution process. Asses the distribution strategies, including how the products are to be made available and sent to different distributors. Set guidelines regarding relationships between the sources and the distribution centers.
         framework_refs:
+          - framework: SCOR
+            external_id: sE1.3
+            version: "14.0"
           - framework: APQC-PCF
             external_id: "4.1.7"
             version: "8.0"
@@ -121,6 +177,9 @@ children:
         description: >-
           Developing standards and procedures for maintaining the quality of products/services. Establish desired quality targets. Create standardized procedures for the quality. Ensure quality specifications are effectively communicated.
         framework_refs:
+          - framework: SCOR
+            external_id: sE2.1
+            version: "14.0"
           - framework: APQC-PCF
             external_id: "4.1.8"
             version: "8.0"
@@ -130,11 +189,23 @@ children:
           - BC-720
         children: []
   - id: BP-40.20
-    name: Procure Materials and Services
+    name: Source Materials and Services
     level: 2
+    aliases:
+      - Procurement
+      - Procure-to-Pay
+      - P2P
+      - Procure Materials and Services
     description: >-
-      Creating a plan for procuring materials and services. Develop strategies for sourcing materials and services. Choose the most appropriate suppliers, and develop contracts with them. Order the materials and services as per the requirements. Manage relationships with suppliers.
+      Order, receive, and pay for materials and services from approved
+      suppliers. Includes sourcing strategy and category management,
+      supplier selection and contracting, requisitioning and purchase
+      order placement, and supplier performance management. Maps to SCOR
+      Source (sS) plus Enable Procurement (sE9) for governance.
     framework_refs:
+      - framework: SCOR
+        external_id: sS
+        version: "14.0"
       - framework: APQC-PCF
         external_id: "4.2"
         version: "8.0"
@@ -148,6 +219,9 @@ children:
         description: >-
           Creating strategies for procuring materials and services from various sources, and for managing and evaluating categories. Establish a procurement process that describes the approach for obtaining products and purchasing activities. Evaluate the sources. Create sourcing relationships in order to continuously improve. Re-evaluate purchasing activities.
         framework_refs:
+          - framework: SCOR
+            external_id: sE9
+            version: "14.0"
           - framework: APQC-PCF
             external_id: "4.2.1"
             version: "8.0"
@@ -159,9 +233,15 @@ children:
       - id: BP-40.20.20
         name: Develop Category Plan
         level: 3
+        aliases:
+          - Category Strategy
+          - Category Management
         description: >-
           Defining sourcing strategies and plans for categories of materials or services to optimize cost, supply continuity, value, and alignment with organizational requirements and market conditions.
         framework_refs:
+          - framework: SCOR
+            external_id: sE9.1
+            version: "14.0"
           - framework: APQC-PCF
             external_id: "4.2.2"
             version: "8.0"
@@ -172,9 +252,15 @@ children:
       - id: BP-40.20.30
         name: Select Suppliers and Develop/maintain Contracts
         level: 3
+        aliases:
+          - Supplier Selection
+          - Contract Negotiation
         description: >-
           Evaluating supplier options to select the most effective and efficient suppliers. Validate selected suppliers. Establish and manage supplier contracts.
         framework_refs:
+          - framework: SCOR
+            external_id: sE9.4
+            version: "14.0"
           - framework: APQC-PCF
             external_id: "4.2.3"
             version: "8.0"
@@ -185,9 +271,15 @@ children:
       - id: BP-40.20.40
         name: Order Materials and Services
         level: 3
+        aliases:
+          - Purchase Order Processing
+          - Requisition-to-PO
         description: >-
           Creating and approving requisitions and distributing purchase orders accordingly. Hasten the procurement process to satisfy internal needs.
         framework_refs:
+          - framework: SCOR
+            external_id: sS1.1
+            version: "14.0"
           - framework: APQC-PCF
             external_id: "4.2.4"
             version: "8.0"
@@ -198,9 +290,16 @@ children:
       - id: BP-40.20.50
         name: Manage Suppliers
         level: 3
+        aliases:
+          - Supplier Performance Management
+          - Supplier Relationship Management
+          - SRM
         description: >-
           Collecting and analyzing new information in order to track and rate suppliers and build relationships.
         framework_refs:
+          - framework: SCOR
+            external_id: sE9.5
+            version: "14.0"
           - framework: APQC-PCF
             external_id: "4.2.5"
             version: "8.0"
@@ -209,11 +308,22 @@ children:
           - BC-510
         children: []
   - id: BP-40.30
-    name: Produce/Assemble/Test Product
+    name: Make Products
     level: 2
+    aliases:
+      - Production
+      - Manufacturing Operations
+      - Produce/Assemble/Test Product
     description: >-
-      Processing and delivering the finished goods manufactured by the organization. Schedule the production of products. Execute the product production activities. Perform tests to oversee and ensure quality of production. Maintain records of the production process. Track lots.
+      Schedule, execute, and quality-control the production of finished
+      goods. Covers production scheduling, manufacturing and assembly,
+      in-process and final quality testing, and lot traceability. Maps
+      to SCOR Make (sM) — Make-to-Stock, Make-to-Order, and
+      Engineer-to-Order are mode variants pinned per node where relevant.
     framework_refs:
+      - framework: SCOR
+        external_id: sM
+        version: "14.0"
       - framework: APQC-PCF
         external_id: "4.3"
         version: "8.0"
@@ -224,9 +334,15 @@ children:
       - id: BP-40.30.10
         name: Schedule Production
         level: 3
+        aliases:
+          - Production Scheduling
+          - Shop-Floor Scheduling
         description: >-
           Scheduling the production of final products. Generate a detailed schedule plan. Create and release production orders and lots. Schedule the planned and unplanned maintenance orders.
         framework_refs:
+          - framework: SCOR
+            external_id: sM1.1
+            version: "14.0"
           - framework: APQC-PCF
             external_id: "4.3.1"
             version: "8.0"
@@ -236,9 +352,15 @@ children:
       - id: BP-40.30.20
         name: Produce/Assemble Product
         level: 3
+        aliases:
+          - Manufacture Product
+          - Assemble Product
         description: >-
           Manufacturing the product. Convert the raw materials to develop consumer-ready products. Manage the raw materials to implement the detailed production schedule. Reproduce defectives to establish and remediate cause. Ensure production optimization and benchmark performance.
         framework_refs:
+          - framework: SCOR
+            external_id: sM1.3
+            version: "14.0"
           - framework: APQC-PCF
             external_id: "4.3.2"
             version: "8.0"
@@ -248,9 +370,15 @@ children:
       - id: BP-40.30.30
         name: Perform Quality Testing
         level: 3
+        aliases:
+          - Quality Control
+          - QC Testing
         description: >-
           Executing tests to evaluate the quality of the products manufactured. Calibrate the test equipment. Conduct the actual tests. Record the results and outcomes of the quality test conducted.
         framework_refs:
+          - framework: SCOR
+            external_id: sM1.4
+            version: "14.0"
           - framework: APQC-PCF
             external_id: "4.3.3"
             version: "8.0"
@@ -260,9 +388,15 @@ children:
       - id: BP-40.30.40
         name: Maintain Production Records and Manage Lot Traceability
         level: 3
+        aliases:
+          - Lot Traceability
+          - Batch Records
         description: >-
           Perpetuating the production records by systematically documenting and using it to ensure the effective management of lots. Determine the lot numbering system and its use. (The lot number enables tracking of the constituent parts, as well as labor and equipment records involved in the manufacturing of a product. It enables manufacturers and to perform quality control checks, calculate expiration dates, and issue corrections of their production output.)
         framework_refs:
+          - framework: SCOR
+            external_id: sM1.6
+            version: "14.0"
           - framework: APQC-PCF
             external_id: "4.3.4"
             version: "8.0"
@@ -271,11 +405,24 @@ children:
           - BC-610
         children: []
   - id: BP-40.40
-    name: Manage Logistics and Warehousing
+    name: Deliver Products
     level: 2
+    aliases:
+      - Order Fulfillment
+      - Order Fulfillment & Shipping
+      - Outbound Logistics
+      - Manage Logistics and Warehousing
     description: >-
-      Administering and overseeing all activities related to logistics and warehousing. Outline and establish a strategy for the logistics function. Plan and administer the flow of inbound materials. Administer the operational activities of warehousing and outbound transportation. Manage reverse logistics including returns and exchanges.
+      Receive customer orders, fulfil them from inventory or production,
+      ship to destination, manage the last-mile, and process customer
+      returns. Covers logistics governance and network design, inbound
+      and reverse-logistics flow, warehousing and pick-pack-ship,
+      outbound transportation, and last-mile delivery. Maps to SCOR
+      Deliver (sD) plus Return (sR) for the reverse flows.
     framework_refs:
+      - framework: SCOR
+        external_id: sD
+        version: "14.0"
       - framework: APQC-PCF
         external_id: "4.4"
         version: "8.0"
@@ -286,9 +433,15 @@ children:
       - id: BP-40.40.10
         name: Provide Logistics Governance
         level: 3
+        aliases:
+          - Logistics Network Design
+          - Logistics Strategy
         description: >-
           Outlining the strategy for managing logistics. Translate customer requirements logistic requirements. Create an efficient logistic network and outsourcing portions of logistics activities. Design a logistics strategy that optimizes transportation costs and schedule. Define key performance indicators.
         framework_refs:
+          - framework: SCOR
+            external_id: sE5
+            version: "14.0"
           - framework: APQC-PCF
             external_id: "4.4.1"
             version: "8.0"
@@ -298,11 +451,19 @@ children:
           - BC-530
         children: []
       - id: BP-40.40.20
-        name: Plan and Manage Inbound Material Flow
+        name: Manage Inbound Logistics and Returns
         level: 3
+        aliases:
+          - Inbound Logistics
+          - Reverse Logistics
+          - Returns Management
+          - Plan and Manage Inbound Material Flow
         description: >-
-          Creating and executing a strategy for all the internal activities related to the flow/transfer of inbound materials. This process includes planning inbound material receipts, managing inbound material flow, monitoring inbound delivery performance, managing the flow of returned products, controlling the quality of returned parts, and salvaging or repairing returned products.
+          Plan, receive, and inspect inbound materials and customer returns. Includes inbound receipt scheduling, monitoring of inbound delivery performance, processing of returned products, quality control of returned parts, and salvage or repair. Covers SCOR Source-Return (sSR) and Deliver-Return (sDR).
         framework_refs:
+          - framework: SCOR
+            external_id: sR
+            version: "14.0"
           - framework: APQC-PCF
             external_id: "4.4.2"
             version: "8.0"
@@ -313,9 +474,16 @@ children:
       - id: BP-40.40.30
         name: Operate Warehousing
         level: 3
+        aliases:
+          - Order Fulfillment Operations
+          - Pick-Pack-Ship
+          - Warehouse Operations
         description: >-
-          Tracking the inventory deployment. Accept and store products. Ship the products. Measure the accuracy of the inventory. Assess the performance of the outsourced logistics activities.
+          Tracking the inventory deployment. Accept and store products. Pick, pack, and ship customer orders. Measure the accuracy of the inventory. Assess the performance of the outsourced logistics activities.
         framework_refs:
+          - framework: SCOR
+            external_id: sD1.7
+            version: "14.0"
           - framework: APQC-PCF
             external_id: "4.4.3"
             version: "8.0"
@@ -325,9 +493,16 @@ children:
       - id: BP-40.40.40
         name: Operate Outbound Transportation
         level: 3
+        aliases:
+          - Shipping Operations
+          - Freight Management
+          - Carrier Management
         description: >-
           Creating a plan that specifies the schedule and system for transportation and delivery of the outbound products, as well as tracking the performance of the carrier delivery system. Conduct vehicle management and processing of all carrier-related documents.
         framework_refs:
+          - framework: SCOR
+            external_id: sD1.12
+            version: "14.0"
           - framework: APQC-PCF
             external_id: "4.4.4"
             version: "8.0"
@@ -335,11 +510,18 @@ children:
           - BC-520
         children: []
       - id: BP-40.40.50
-        name: Deliver Last Mile Delivery Services
+        name: Operate Last-Mile Delivery
         level: 3
+        aliases:
+          - Last-Mile Delivery
+          - Final-Mile Delivery
+          - Deliver Last Mile Delivery Services
         description: >-
-          Validating specific service requirements for individual customers. Determine and schedule resource to fulfill these requirements. Provide service to specific individual customers. Ensure the quality of service delivery.
+          Validate specific service requirements for individual customers. Determine and schedule resource to fulfill these requirements. Provide service to specific individual customers. Ensure the quality of service delivery.
         framework_refs:
+          - framework: SCOR
+            external_id: sD4
+            version: "14.0"
           - framework: APQC-PCF
             external_id: "4.4.5"
             version: "8.0"
