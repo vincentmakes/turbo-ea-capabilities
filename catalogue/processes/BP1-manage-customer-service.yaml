@@ -126,8 +126,9 @@ children:
             external_id: "6.2.1"
             version: "8.0"
         realizes_capability_ids:
-          - BC-430
           - BC-300
+          - BC-420
+          - BC-430
         children: []
       - id: BP-60.20.20
         name: Manage Customer Service Problems, Requests, and Inquiries
@@ -152,6 +153,7 @@ children:
             external_id: "6.2.3"
             version: "8.0"
         realizes_capability_ids:
+          - BC-420
           - BC-430
           - BC-720
         children: []
@@ -178,8 +180,10 @@ children:
             external_id: "6.2.5"
             version: "8.0"
         realizes_capability_ids:
-          - BC-430
+          - BC-120
+          - BC-130
           - BC-420
+          - BC-430
         children: []
   - id: BP-60.30
     name: Service Products After Sales
@@ -191,8 +195,9 @@ children:
         external_id: "6.3"
         version: "8.0"
     realizes_capability_ids:
-      - BC-430
+      - BC-410
       - BC-420
+      - BC-430
     children:
       - id: BP-60.30.10
         name: Register Products
@@ -230,8 +235,9 @@ children:
             external_id: "6.3.3"
             version: "8.0"
         realizes_capability_ids:
-          - BC-430
           - BC-420
+          - BC-430
+          - BC-510
         children: []
       - id: BP-60.30.40
         name: Service Products
@@ -256,8 +262,9 @@ children:
         external_id: "6.4"
         version: "8.0"
     realizes_capability_ids:
-      - BC-430
+      - BC-130
       - BC-420
+      - BC-430
     children:
       - id: BP-60.40.10
         name: Initiate Recall
@@ -308,8 +315,9 @@ children:
             external_id: "6.4.4"
             version: "8.0"
         realizes_capability_ids:
-          - BC-430
+          - BC-130
           - BC-420
+          - BC-430
         children: []
       - id: BP-60.40.50
         name: Monitor and Audit Recall Effectiveness
@@ -321,8 +329,9 @@ children:
             external_id: "6.4.5"
             version: "8.0"
         realizes_capability_ids:
-          - BC-430
+          - BC-140
           - BC-420
+          - BC-430
         children: []
       - id: BP-60.40.60
         name: Manage Recall Termination

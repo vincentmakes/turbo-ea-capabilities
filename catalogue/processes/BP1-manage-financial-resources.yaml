@@ -122,9 +122,10 @@ children:
             version: "8.0"
         realizes_capability_ids:
           - BC-200
+          - BC-420
         children: []
       - id: BP-90.20.30
-        name: Process Accounts Receivable (AR)
+        name: "Process Accounts Receivable (AR)"
         level: 3
         description: >-
           Processing payments due from customers. This includes all processing of funds received, whether by check or electronically. This does not include the generation of invoices.
@@ -307,8 +308,9 @@ children:
             external_id: "9.5.3"
             version: "8.0"
         realizes_capability_ids:
-          - BC-300
           - BC-200
+          - BC-220
+          - BC-300
         children: []
   - id: BP-90.60
     name: Process Accounts Payable and Expense Reimbursements
@@ -324,7 +326,7 @@ children:
       - BC-500
     children:
       - id: BP-90.60.10
-        name: Process Accounts Payable (AP)
+        name: "Process Accounts Payable (AP)"
         level: 3
         description: >-
           Processing payments of operating expenses and other supplier charges. This includes the development of policies and procedures around processing of accounts payable and all operations. This process is often supported by key technology enablers.
@@ -496,6 +498,7 @@ children:
             external_id: "9.8.3"
             version: "8.0"
         realizes_capability_ids:
+          - BC-130
           - BC-140
         children: []
   - id: BP-90.90

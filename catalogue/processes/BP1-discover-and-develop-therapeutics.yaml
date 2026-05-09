@@ -57,6 +57,7 @@ children:
         description: >-
           Run cell-based and biochemical assays for efficacy, selectivity, mechanism, and early safety.
         realizes_capability_ids:
+          - BC-730
           - BC-810
         children: []
       - id: BP-190.20.20
@@ -115,8 +116,9 @@ children:
         description: >-
           Run post-approval studies for long-term safety, comparative effectiveness, and label expansion.
         realizes_capability_ids:
-          - BC-810
           - BC-130
+          - BC-400
+          - BC-810
         children: []
   - id: BP-190.40
     name: Manage Clinical Operations and Sites

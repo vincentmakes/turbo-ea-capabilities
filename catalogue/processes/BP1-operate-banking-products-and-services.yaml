@@ -159,7 +159,8 @@ children:
         level: 3
         description: >-
           Operate supplier-finance and receivables-finance programs.
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-520
         children: []
   - id: BP-130.60
     name: Manage Banking Customer Servicing
@@ -176,6 +177,7 @@ children:
         description: >-
           Receive and resolve customer inquiries and service requests across channels.
         realizes_capability_ids:
+          - BC-420
           - BC-430
         children: []
       - id: BP-130.60.20
@@ -184,6 +186,7 @@ children:
         description: >-
           Process and resolve customer complaints and disputes; manage regulatory complaint reporting.
         realizes_capability_ids:
+          - BC-420
           - BC-430
         children: []
       - id: BP-130.60.30
