@@ -1,21 +1,100 @@
 ---
 import Base from "../layouts/Base.astro";
 import HeroTessellation from "../components/HeroTessellation.astro";
-import CatalogueBrowser from "../components/CatalogueBrowser.tsx";
-import { flat, valueStreams, version } from "../data/load.ts";
+import { bpFlat, flat, valueStreams, version } from "../data/load.ts";
+
+const capabilityCount = version.node_count ?? flat.length;
+const processCount = version.process_count ?? bpFlat.length;
+const streamCount = valueStreams.length;
 ---
 
 <Base
   title=""
-  description="Browse, filter, and export an open Business Capability Reference Catalog."
+  description="Open Enterprise Architecture Reference Catalog — capabilities, business processes, and value streams in one searchable, exportable model."
   navTransparent={true}
 >
   <HeroTessellation
-    title="Business Capability Reference Catalog"
-    description={`${version.node_count} capabilities · catalog ${version.catalogue_version} · schema v${version.schema_version}`}
+    title="Enterprise Architecture Reference Catalog"
+    description={`${capabilityCount} capabilities · ${processCount} processes · ${streamCount} value streams · catalog ${version.catalogue_version}`}
   />
 
   <main class="main">
-    <CatalogueBrowser data={flat} valueStreams={valueStreams} client:load />
+    <section class="catalog-tile-grid" aria-label="Reference catalogues">
+      <a class="catalog-tile" href="/capabilities">
+        <div class="catalog-tile-icon" aria-hidden="true">
+          <span class="material-symbols-outlined">account_tree</span>
+        </div>
+        <div class="catalog-tile-body">
+          <h2 class="catalog-tile-title">Capabilities</h2>
+          <p class="catalog-tile-tagline">
+            <strong>What</strong> the business does. Industry-aware, MECE
+            hierarchy of business capabilities — the noun-phrased model behind
+            heat-maps, investment lenses, and architecture blueprints.
+          </p>
+          <span class="catalog-tile-count">
+            {capabilityCount}
+            <span class="catalog-tile-count-label">capabilities</span>
+          </span>
+          <span class="catalog-tile-cta">Browse capabilities →</span>
+        </div>
+      </a>
+
+      <a class="catalog-tile" href="/business-processes">
+        <div class="catalog-tile-icon" aria-hidden="true">
+          <span class="material-symbols-outlined">linear_scale</span>
+        </div>
+        <div class="catalog-tile-body">
+          <h2 class="catalog-tile-title">Business Processes</h2>
+          <p class="catalog-tile-tagline">
+            <strong>How</strong> the work is done. Verb-phrased activities
+            anchored on APQC PCF's Category → Process Group → Process →
+            Activity hierarchy, cross-walked to BIAN / eTOM / ITIL / SCOR.
+          </p>
+          <span class="catalog-tile-count">
+            {processCount}
+            <span class="catalog-tile-count-label">{processCount === 1 ? "process" : "processes"}</span>
+          </span>
+          <span class="catalog-tile-cta">Browse processes →</span>
+        </div>
+      </a>
+
+      <a class="catalog-tile" href="/value-streams">
+        <div class="catalog-tile-icon" aria-hidden="true">
+          <span class="material-symbols-outlined">route</span>
+        </div>
+        <div class="catalog-tile-body">
+          <h2 class="catalog-tile-title">Value Streams</h2>
+          <p class="catalog-tile-tagline">
+            <strong>End-to-end</strong> value delivery. Trigger-to-outcome
+            flows whose stages link the capabilities and processes that
+            participate at each step.
+          </p>
+          <span class="catalog-tile-count">
+            {streamCount}
+            <span class="catalog-tile-count-label">{streamCount === 1 ? "stream" : "streams"}</span>
+          </span>
+          <span class="catalog-tile-cta">Browse value streams →</span>
+        </div>
+      </a>
+    </section>
+
+    <section class="landing-meta">
+      <p>
+        Three orthogonal artefacts, one open source of truth. YAML in
+        <code>catalogue/</code> · JSON Schema validated · CLI helpers for
+        every change · CSV / JSON export from every catalog.
+      </p>
+      <p class="landing-meta-links">
+        <a href="/api/tree.json">JSON API</a>
+        <span aria-hidden="true">·</span>
+        <a href="/about">About the model</a>
+        <span aria-hidden="true">·</span>
+        <a
+          href="https://github.com/vincentmakes/turbo-ea-capabilities"
+          target="_blank"
+          rel="noopener"
+        >GitHub</a>
+      </p>
+    </section>
   </main>
 </Base>
