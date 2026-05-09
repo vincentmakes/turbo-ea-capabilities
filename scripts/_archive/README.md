@@ -69,3 +69,9 @@ archived copy as documentation, not as live code.
 | Script | What it did | When it ran |
 |---|---|---|
 | `import_industry_bp3_v3.py` | BP3 drill-down for the remaining 18 industry BP1s without it: Telecom (BP-160), Oil & Gas (BP-210/220), Health Payor (BP-300), Retail (BP-280), Automotive (BP-290), Mining (BP-310), Media (BP-390), Professional Services (BP-400), Transportation & Logistics (BP-410), Software & Technology (BP-420), Air Traffic Control (BP-430), Engineering Services (BP-440), HVAC & BAS (BP-450), Electrical Components (BP-460), Manufacturing & Industrial (BP-470), Agriculture (BP-480), Chemicals (BP-490). All 27 BC industries now covered at BP1 + BP2 + BP3 depth. | One PR (multiple per-industry-pair commits). |
+
+## Phase 8 addendum
+
+| Script | What it did | When it ran |
+|---|---|---|
+| `verify_apqc_v8_versions.py` | Cross-walked every cross-industry BP node's `framework_refs.external_id` against the official APQC PCF v8.0 Excel file (Combined sheet). Reverted 198 nodes from `version: "8.0"` to `version: "7.4.0"` where v8.0 reused the same code for a different process or removed the code entirely. Left 103 nodes at `version: "8.0"` where the v7.4 → v8.0 cross-walk holds. Documented the mixed-version state in §11.7. | One PR (one commit). |
