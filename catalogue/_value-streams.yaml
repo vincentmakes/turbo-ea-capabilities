@@ -883,7 +883,8 @@ value_streams:
     stage_name: Network Strategy & Coverage
     capability_ids:
     - BC-3430
-    process_ids: []
+    process_ids:
+    - BP-290.20
     industry_variant: Automotive
     notes: Market coverage planning and footprint optimisation
   - id: VS-70.20
@@ -891,7 +892,8 @@ value_streams:
     stage_name: Application & Vetting
     capability_ids:
     - BC-3430
-    process_ids: []
+    process_ids:
+    - BP-290.20
     industry_variant: Automotive
     notes: Dealer application, financial and operational due diligence
   - id: VS-70.30
@@ -899,14 +901,16 @@ value_streams:
     stage_name: Agreement Execution
     capability_ids:
     - BC-150
-    process_ids: []
+    process_ids:
+    - BP-290.20
     notes: Legal terms and competition-law review
   - id: VS-70.40
     stage_order: 3
     stage_name: Agreement Execution
     capability_ids:
     - BC-3430
-    process_ids: []
+    process_ids:
+    - BP-290.20
     industry_variant: Automotive
     notes: Dealer agreement drafting and territory rights
   - id: VS-70.50
@@ -914,7 +918,8 @@ value_streams:
     stage_name: Onboarding & Certification
     capability_ids:
     - BC-3430
-    process_ids: []
+    process_ids:
+    - BP-290.20
     industry_variant: Automotive
     notes: Dealer training, certification, and DMS integration
   - id: VS-70.60
@@ -922,7 +927,8 @@ value_streams:
     stage_name: Standards Compliance
     capability_ids:
     - BC-3430
-    process_ids: []
+    process_ids:
+    - BP-290.20
     industry_variant: Automotive
     notes: Brand and facility standards auditing and corrective action
   - id: VS-70.70
@@ -930,7 +936,8 @@ value_streams:
     stage_name: Performance Management
     capability_ids:
     - BC-3430
-    process_ids: []
+    process_ids:
+    - BP-290.20
     industry_variant: Automotive
     notes: Scorecard, performance reviews, and incentive programmes
   - id: VS-70.80
@@ -938,7 +945,8 @@ value_streams:
     stage_name: Termination & Transition
     capability_ids:
     - BC-3430
-    process_ids: []
+    process_ids:
+    - BP-290.20
     industry_variant: Automotive
     notes: Dealer termination, run-out, and territory reassignment
 - id: VS-80
@@ -8417,21 +8425,26 @@ value_streams:
     stage_name: Trade Plan Development
     capability_ids:
     - BC-2360
-    process_ids: []
+    process_ids:
+    - BP-30.40
+    - BP-280.20
     notes: Annual trade plan, joint business plans, and customer-level investment strategy
   - id: VS-610.20
     stage_order: 2
     stage_name: Fund Allocation
     capability_ids:
     - BC-2360
-    process_ids: []
+    process_ids:
+    - BP-30.40
     notes: Trade-spend budgeting and accrual setup
   - id: VS-610.30
     stage_order: 3
     stage_name: Promotion Execution
     capability_ids:
     - BC-2360
-    process_ids: []
+    process_ids:
+    - BP-30.40
+    - BP-280.20
     notes: In-store event execution, slotting, and feature scheduling
   - id: VS-610.40
     stage_order: 4
@@ -8439,14 +8452,17 @@ value_streams:
     capability_ids:
     - BC-2360
     - BC-200
-    process_ids: []
+    process_ids:
+    - BP-90.60
     notes: Customer deduction validation, claim resolution, and chargeback management; Trade-spend accruals, deduction accounting, and AR clearing
   - id: VS-610.50
     stage_order: 5
     stage_name: Post-Event Lift Measurement
     capability_ids:
     - BC-2360
-    process_ids: []
+    process_ids:
+    - BP-30.40
+    - BP-280.20
     notes: Lift analytics, ROI evaluation, and feedback into next plan
 - id: VS-620
   name: Trial-to-Renewal
@@ -8524,7 +8540,8 @@ value_streams:
     stage_name: ODD Definition
     capability_ids:
     - BC-3470
-    process_ids: []
+    process_ids:
+    - BP-290.10
     industry_variant: Automotive
     notes: Operational design domain definition
   - id: VS-630.20
@@ -8532,7 +8549,8 @@ value_streams:
     stage_name: Scenario Coverage Build
     capability_ids:
     - BC-3470
-    process_ids: []
+    process_ids:
+    - BP-290.10
     industry_variant: Automotive
     notes: Scenario library curation and edge-case capture
   - id: VS-630.30
@@ -8540,7 +8558,8 @@ value_streams:
     stage_name: Validation Execution
     capability_ids:
     - BC-3470
-    process_ids: []
+    process_ids:
+    - BP-290.10
     industry_variant: Automotive
     notes: Simulation, closed-course, and public-road validation
   - id: VS-630.40
@@ -8548,7 +8567,9 @@ value_streams:
     stage_name: Safety Case Authoring
     capability_ids:
     - BC-3470
-    process_ids: []
+    process_ids:
+    - BP-290.10
+    - BP-290.40
     industry_variant: Automotive
     notes: Authoring and assurance of the ADS safety case
   - id: VS-630.50
@@ -8557,7 +8578,9 @@ value_streams:
     capability_ids:
     - BC-3420
     - BC-3470
-    process_ids: []
+    process_ids:
+    - BP-290.10
+    - BP-290.40
     industry_variant: Automotive
     notes: ALKS / ADS approval submission under UN R157; ADS permit and authorisation management
   - id: VS-630.60
@@ -8565,7 +8588,9 @@ value_streams:
     stage_name: Deployment Monitoring
     capability_ids:
     - BC-3470
-    process_ids: []
+    process_ids:
+    - BP-290.40
+    - BP-290.60
     industry_variant: Automotive
     notes: ODD conformance monitoring and SPI tracking
   - id: VS-630.70
@@ -8573,7 +8598,8 @@ value_streams:
     stage_name: Incident Reporting & Iteration
     capability_ids:
     - BC-3470
-    process_ids: []
+    process_ids:
+    - BP-290.40
     industry_variant: Automotive
     notes: Incident reporting to regulators and feedback into safety case
 - id: VS-640
