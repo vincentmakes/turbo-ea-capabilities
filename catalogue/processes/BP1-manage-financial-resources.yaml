@@ -2,12 +2,24 @@ id: BP-90
 name: Manage Financial Resources
 level: 1
 industry: Cross-Industry
+aliases:
+  - Finance Operations
+  - Office of the CFO
+  - Order-to-Cash and Procure-to-Pay
 description: >-
-  Overseeing key back-office processes for organizations. This category includes process groups related to planning and management accounting, revenue accounting, general accounting and reporting, fixed-asset project accounting, payroll, accounts payable and expense reimbursements, treasury operations, internal controls, tax management, international funds/consolidation, and global trade services.
+  Plan, account for, control, report on, and steward the organisation's
+  financial resources end-to-end. Anchored on APQC Cross-Industry PCF
+  v8.0 with operational vernacular drawn from APQC's Finance industry
+  PCF (FP&A, Order-to-Cash, Procure-to-Pay, Record-to-Report, Treasury,
+  Tax, Internal Controls). COSO-ERM 2017 cited on internal-controls
+  nodes as the canonical control framework.
 framework_refs:
   - framework: APQC-PCF
     external_id: "9.0"
     version: "8.0"
+  - framework: APQC-PCF
+    external_id: Finance v7.2
+    version: "7.2"
 realizes_capability_ids:
   - BC-200
   - BC-230
@@ -15,20 +27,35 @@ realizes_capability_ids:
   - BC-220
 children:
   - id: BP-90.10
-    name: Perform Planning and Management Accounting
+    name: Plan and Forecast Finances
     level: 2
+    aliases:
+      - Perform Planning and Management Accounting
+      - Financial Planning and Analysis
+      - FP&A
+      - Budgeting and Forecasting
+      - Cost Accounting
     description: >-
-      Determining different stages of the planning process and accounting. Classify, determine, analyze, interpret, and communicate information to make up-to-date business decisions for better management and control functions.
+      Run the financial planning and management-accounting cycle —
+      strategy, budgets, forecasts, cost accounting, and financial
+      performance evaluation. Includes the rolling forecast and
+      management-reporting cadence used by the office of the CFO.
     framework_refs:
       - framework: APQC-PCF
         external_id: "9.1"
         version: "8.0"
+      - framework: APQC-PCF
+        external_id: Finance FP&A
+        version: "7.2"
     realizes_capability_ids:
       - BC-230
     children:
       - id: BP-90.10.10
         name: Develop and Manage Financial Resources Strategy
         level: 3
+        aliases:
+          - Finance Strategy
+          - Capital Allocation Strategy
         description: >-
           Ensuring the effective allocation, utilization, and sustainability of financial assets. Activities include analyzing internal and external financial drivers; identifying long-term funding needs; evaluating investment, capital, and liquidity requirements; and defining guiding financial principles that support enterprise objectives.
         framework_refs:
@@ -41,6 +68,12 @@ children:
       - id: BP-90.10.20
         name: Perform Planning/budgeting/forecasting
         level: 3
+        aliases:
+          - Annual Operating Plan
+          - AOP
+          - Rolling Forecast
+          - Zero-Based Budgeting
+          - ZBB
         description: >-
           Allocating funds to meet future and current financial goals. Led by the chief financial officer, have the finance function plan, budget, and forecast in order to determine and describe long and short-term financial goals.
         framework_refs:
@@ -53,6 +86,11 @@ children:
       - id: BP-90.10.30
         name: Perform Cost Accounting and Control
         level: 3
+        aliases:
+          - Cost Accounting
+          - Standard Costing
+          - Activity-Based Costing
+          - ABC
         description: >-
           Defining costs to be incurred and methods for optimum utilization. Determine the costs of products, processes, projects, etc. to compile in the financial statements, as well as to assist management in making decisions regarding planning and control. Control costs by managing and reducing business expenses.
         framework_refs:
@@ -65,6 +103,9 @@ children:
       - id: BP-90.10.40
         name: Perform Cost Management
         level: 3
+        aliases:
+          - Cost Optimization
+          - Spend Management
         description: >-
           Deciding which expenses can be avoided to reduce some costs and increase revenues. Plan and control the organization's budget to forecast future expenditures.
         framework_refs:
@@ -77,6 +118,10 @@ children:
       - id: BP-90.10.50
         name: Evaluate and Manage Financial Performance
         level: 3
+        aliases:
+          - Management Reporting
+          - Variance Analysis
+          - KPI Reporting
         description: >-
           Checking and achieving predetermined financial targets and timelines. Assess and manage the profitability, feasibility, and consistency of a business or project. Study the revenues generated.
         framework_refs:
@@ -87,26 +132,46 @@ children:
           - BC-230
         children: []
   - id: BP-90.20
-    name: Perform Revenue Accounting
+    name: Operate Order-to-Cash
     level: 2
+    aliases:
+      - Perform Revenue Accounting
+      - Order-to-Cash
+      - O2C
+      - Accounts Receivable
+      - Customer Billing
+      - Collections
     description: >-
-      Comparing revenue targets to reality. Review all transactions and entries passed in final accounts in a year in order to examine profits.
+      Run the customer-side revenue cycle — credit, billing, accounts
+      receivable, cash application, collections, and adjustments. Maps
+      to the Order-to-Cash (O2C) operating motion in APQC Finance v7.2.
     framework_refs:
       - framework: APQC-PCF
         external_id: "9.2"
         version: "8.0"
+      - framework: APQC-PCF
+        external_id: Finance Order-to-Cash
+        version: "7.2"
     realizes_capability_ids:
       - BC-200
     children:
       - id: BP-90.20.10
         name: Process Customer Credit
         level: 3
+        aliases:
+          - Trade Credit Management
+          - Credit Risk Assessment
+          - Credit Approval
+          - Customer Credit Limit
         description: >-
-          Evaluating and processing requests for advances. Evaluate credit requests by customers requiring loans to buy products/services.
+          Evaluating and processing requests for advances. Evaluate credit requests by customers requiring loans to buy products/services. Set credit limits, monitor utilisation, and re-rate periodically.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.2.1"
             version: "8.0"
+          - framework: BIAN
+            external_id: Customer Credit Rating
+            version: "9.0"
         realizes_capability_ids:
           - BC-200
           - BC-420
@@ -114,6 +179,10 @@ children:
       - id: BP-90.20.20
         name: Invoice Customer
         level: 3
+        aliases:
+          - Customer Invoicing
+          - Billing
+          - eInvoicing
         description: >-
           Preparing detailed reports of customer purchases. Prepare a commercial document between the seller and customer with details about transaction. Detail the quantity purchased, price of products/services, date, parties involved, unique invoice number, and tax information.
         framework_refs:
@@ -127,6 +196,11 @@ children:
       - id: BP-90.20.30
         name: "Process Accounts Receivable (AR)"
         level: 3
+        aliases:
+          - Accounts Receivable
+          - AR
+          - Cash Application
+          - Customer Payment Posting
         description: >-
           Processing payments due from customers. This includes all processing of funds received, whether by check or electronically. This does not include the generation of invoices.
         framework_refs:
@@ -139,6 +213,10 @@ children:
       - id: BP-90.20.40
         name: Manage and Process Collections
         level: 3
+        aliases:
+          - Collections
+          - Dunning
+          - Bad-Debt Recovery
         description: >-
           Posting entries to respective accounts, and preparing accounts for receivables. Manage the cash collected by the business from its debtors. Record it in the books of accounts to provide clear information about the availability of the cash.
         framework_refs:
@@ -151,6 +229,10 @@ children:
       - id: BP-90.20.50
         name: Manage and Process Adjustments/deductions
         level: 3
+        aliases:
+          - Deduction Management
+          - Credit Memos
+          - Chargeback Resolution
         description: >-
           Creating and providing funds for necessary adjustments and deductions, including all expenses that were required for the business at certain point in time.
         framework_refs:
@@ -161,20 +243,36 @@ children:
           - BC-200
         children: []
   - id: BP-90.30
-    name: Perform General Accounting and Reporting
+    name: Operate Record-to-Report
     level: 2
+    aliases:
+      - Perform General Accounting and Reporting
+      - Record-to-Report
+      - R2R
+      - Financial Close
+      - Statutory Reporting
     description: >-
-      Making statements about business activities and functions. Prepare financial statements (balance sheet, income statement, statement of cash flows, and statement of stockholders' equity) according to accounting concepts and principles.
+      Run the general-ledger close and external-financial-reporting
+      cycle — accounting policies, sub-ledger to general-ledger close,
+      fixed-asset accounting, and financial reporting. Maps to the
+      Record-to-Report (R2R) operating motion in APQC Finance v7.2.
     framework_refs:
       - framework: APQC-PCF
         external_id: "9.3"
         version: "8.0"
+      - framework: APQC-PCF
+        external_id: Finance Record-to-Report
+        version: "7.2"
     realizes_capability_ids:
       - BC-200
     children:
       - id: BP-90.30.10
         name: Manage Financial Policies and Procedures
         level: 3
+        aliases:
+          - Accounting Policies
+          - GAAP Policy
+          - IFRS Policy
         description: >-
           Creating procedures to perform general accounting and reporting. Follow the rules and regulations made for a particular process in the business. Publish accounting policies.
         framework_refs:
@@ -187,6 +285,10 @@ children:
       - id: BP-90.30.20
         name: Perform General Accounting
         level: 3
+        aliases:
+          - General Ledger
+          - GL
+          - Financial Close
         description: >-
           Applying basic principles, concepts, and accounting practices in recording and preparing final accounts, and using accounting information in management.
         framework_refs:
@@ -199,6 +301,10 @@ children:
       - id: BP-90.30.30
         name: Perform Fixed-asset Accounting
         level: 3
+        aliases:
+          - Fixed Asset Accounting
+          - Capitalization
+          - Depreciation Management
         description: >-
           Accounting for long-term and fixed assets. Record purchased, fixed assets that are not easily convertible into cash. Account for costs, useful life, resale value, depreciation, and amortization.
         framework_refs:
@@ -211,6 +317,12 @@ children:
       - id: BP-90.30.40
         name: Perform Financial Reporting
         level: 3
+        aliases:
+          - External Financial Reporting
+          - Statutory Reporting
+          - SEC Reporting
+          - 10-K
+          - 10-Q
         description: >-
           Reporting on the organization's financial status to stakeholders. Include balance sheets, income statements, cash flow statements, and statements of shareholders' equity.
         framework_refs:
@@ -224,6 +336,9 @@ children:
   - id: BP-90.40
     name: Manage Fixed-asset Project Accounting
     level: 2
+    aliases:
+      - Capital Project Accounting
+      - CapEx Accounting
     description: >-
       Managing accounts for large funds-invested projects. Manage and account for fixed assets projects (capital projects), which required significant capital investments over many years.
     framework_refs:
@@ -237,6 +352,10 @@ children:
       - id: BP-90.40.10
         name: Perform Capital Planning and Project Approval
         level: 3
+        aliases:
+          - Capital Planning
+          - CapEx Approval
+          - Project Funding
         description: >-
           Preparing a project finance report to solicit approvals in capital projects. Prepare budgets for projects that require heavy investments. Report on project finances to solicit approvals from management.
         framework_refs:
@@ -250,6 +369,9 @@ children:
       - id: BP-90.40.20
         name: Perform Capital Project Accounting
         level: 3
+        aliases:
+          - Project Accounting
+          - WIP Accounting
         description: >-
           Accounting for large-scale and large-cost investments. Manage and account for ongoing activities related to capital projects, including setting up new projects, recording project transactions, monitoring and tracking spending, closing and capitalizing projects, and measuring the financial returns on completed projects.
         framework_refs:
@@ -263,12 +385,18 @@ children:
   - id: BP-90.50
     name: Process Payroll
     level: 2
+    aliases:
+      - Payroll Operations
+      - Hire-to-Retire Payroll Component
     description: >-
       Handling reporting time, managing pay, and processing taxes from salaries. Pay employees. Withhold taxes. Confirm the correct funds are paid to the correct government agency.
     framework_refs:
       - framework: APQC-PCF
         external_id: "9.5"
         version: "8.0"
+      - framework: APQC-PCF
+        external_id: Finance Payroll
+        version: "7.2"
     realizes_capability_ids:
       - BC-300
       - BC-200
@@ -276,6 +404,9 @@ children:
       - id: BP-90.50.10
         name: Report Time
         level: 3
+        aliases:
+          - Time and Attendance
+          - Timekeeping
         description: >-
           Recording the reporting time of employees on-site. Track working days, salary calculations, holidays taken, number of hours spend in the office, billing hours, etc.
         framework_refs:
@@ -288,6 +419,9 @@ children:
       - id: BP-90.50.20
         name: Manage Pay
         level: 3
+        aliases:
+          - Salary Disbursement
+          - Bonus Processing
         description: >-
           Managing the total payments made in employees payroll, including bonuses and compensation.
         framework_refs:
@@ -301,6 +435,10 @@ children:
       - id: BP-90.50.30
         name: Manage and Process Payroll Taxes
         level: 3
+        aliases:
+          - Payroll Tax Withholding
+          - PAYE
+          - Tax Filing
         description: >-
           Deducting and paying taxes from employees' salaries.
         framework_refs:
@@ -313,14 +451,25 @@ children:
           - BC-300
         children: []
   - id: BP-90.60
-    name: Process Accounts Payable and Expense Reimbursements
+    name: Operate Procure-to-Pay
     level: 2
+    aliases:
+      - Process Accounts Payable and Expense Reimbursements
+      - Procure-to-Pay
+      - P2P
+      - Accounts Payable
+      - Expense Management
     description: >-
-      Handling bills and reimbursements to be made. Make payments for goods or services taken or used on behalf of the organization.
+      Run the supplier-side payment cycle — accounts payable, employee
+      expense reimbursements, and corporate-card administration. Maps
+      to the Procure-to-Pay (P2P) operating motion in APQC Finance v7.2.
     framework_refs:
       - framework: APQC-PCF
         external_id: "9.6"
         version: "8.0"
+      - framework: APQC-PCF
+        external_id: Finance Procure-to-Pay
+        version: "7.2"
     realizes_capability_ids:
       - BC-200
       - BC-500
@@ -328,6 +477,12 @@ children:
       - id: BP-90.60.10
         name: "Process Accounts Payable (AP)"
         level: 3
+        aliases:
+          - Accounts Payable
+          - AP
+          - Invoice Processing
+          - Three-Way Match
+          - Supplier Payments
         description: >-
           Processing payments of operating expenses and other supplier charges. This includes the development of policies and procedures around processing of accounts payable and all operations. This process is often supported by key technology enablers.
         framework_refs:
@@ -341,6 +496,10 @@ children:
       - id: BP-90.60.20
         name: Process Expense Reimbursements
         level: 3
+        aliases:
+          - Travel and Expense
+          - T&E
+          - Expense Reports
         description: >-
           Processing reimbursements to employees for the expenses incurred during the course of business. Approve and process advancements and reimbursements for employee expenses on the organization's behalf. Capture and report relevant tax data and manage personal accounts.
         framework_refs:
@@ -354,6 +513,9 @@ children:
       - id: BP-90.60.30
         name: Manage Corporate Credit Cards
         level: 3
+        aliases:
+          - P-Card Administration
+          - Corporate Card Programme
         description: >-
           Handling and authoring credit cards to business entities or for corporate purchases.
         framework_refs:
@@ -367,18 +529,27 @@ children:
   - id: BP-90.70
     name: Manage Treasury Operations
     level: 2
+    aliases:
+      - Treasury and Cash Management
+      - Corporate Treasury
     description: >-
       Managing business's investments in trading in bonds, currencies, financial derivatives, etc. Manage the financial assets and holdings of the organization. Optimize the organization's liquidity. Invest excess cash. Reduce financial risks.
     framework_refs:
       - framework: APQC-PCF
         external_id: "9.7"
         version: "8.0"
+      - framework: APQC-PCF
+        external_id: Finance Treasury
+        version: "7.2"
     realizes_capability_ids:
       - BC-210
     children:
       - id: BP-90.70.10
         name: Manage Treasury Policies and Procedures
         level: 3
+        aliases:
+          - Treasury Policy
+          - Liquidity Policy
         description: >-
           Managing rules and regulations for investments in trading in bonds, currencies, financial derivatives, etc. Establish policies and procedures for investments made. Optimize liquidity in treasury operations.
         framework_refs:
@@ -391,6 +562,10 @@ children:
       - id: BP-90.70.20
         name: Manage Cash
         level: 3
+        aliases:
+          - Cash Management
+          - Liquidity Management
+          - Bank Reconciliation
         description: >-
           Taking care of all cash-related activities in the business. Manage and reconcile cash positions. Manage cash equivalents. Process and oversee electronic fund transfers. Develop cash flow forecasts. Manage cash flows. Produce cash management accounting transactions and reports. Manage and oversee banking relationships. Analyze, negotiate, resolve, and confirm bank fees.
         framework_refs:
@@ -403,6 +578,9 @@ children:
       - id: BP-90.70.30
         name: Manage In-house Bank Accounts
         level: 3
+        aliases:
+          - In-House Bank
+          - Intercompany Cash Pooling
         description: >-
           Managing financial services provided by an in-house bank structure in the corporation that is operating like a commercial bank.
         framework_refs:
@@ -415,6 +593,9 @@ children:
       - id: BP-90.70.40
         name: Manage Debt and Investment
         level: 3
+        aliases:
+          - Debt Management
+          - Investment Portfolio
         description: >-
           Taking care of the organization's financial position. Manage its loans or debts from different sources and investments. Leverage the most profitable options to balance the financial position in the market.
         framework_refs:
@@ -427,6 +608,10 @@ children:
       - id: BP-90.70.50
         name: Monitor and Execute Risk and Hedging Transactions
         level: 3
+        aliases:
+          - FX Hedging
+          - Interest Rate Hedging
+          - Hedge Accounting
         description: >-
           Performing transactions that limit investment risk with the help of derivatives, such as options and futures contracts. Manage interest rates, foreign exchange, and exposure risks. Develop and execute hedging transactions. Evaluate and refine hedging positions. Produce hedge accounting transactions and reports. Monitor credit.
         framework_refs:
@@ -440,6 +625,9 @@ children:
       - id: BP-90.70.60
         name: Manage Financial Fraud/dispute Cases
         level: 3
+        aliases:
+          - Fraud Investigation
+          - Dispute Resolution
         description: >-
           Handling cases that involve financial fraud. Resolve disputes.
         framework_refs:
@@ -452,9 +640,20 @@ children:
   - id: BP-90.80
     name: Manage Internal Controls
     level: 2
+    aliases:
+      - SOX Compliance
+      - Financial Controls
+      - COSO Internal Controls
     description: >-
-      Administering internal controls. This process requires the organization to manage entity's board of trustees, management, and other personnel in order to offer judicious assurance about the achievement of effectiveness, proficiency of operations, and reliability of financial reporting.
+      Design, operate, and report on the organisation's internal control
+      framework over financial reporting and operations. Anchored on
+      COSO Internal Control – Integrated Framework and COSO ERM 2017;
+      typical regulatory anchors include SOX 404, J-SOX, and equivalent
+      international regimes.
     framework_refs:
+      - framework: COSO-ERM
+        external_id: ERM Integrated Framework
+        version: "2017"
       - framework: APQC-PCF
         external_id: "9.8"
         version: "8.0"
@@ -465,9 +664,15 @@ children:
       - id: BP-90.80.10
         name: Establish Internal Controls, Policies, and Procedures
         level: 3
+        aliases:
+          - Internal Control Design
+          - Control Framework Design
         description: >-
           Forming rules and regulations to ensure the achievement of effectiveness, proficiency of operations, and reliability of financial reporting.
         framework_refs:
+          - framework: COSO-ERM
+            external_id: ERM 2017
+            version: "2017"
           - framework: APQC-PCF
             external_id: "9.8.1"
             version: "8.0"
@@ -478,9 +683,16 @@ children:
       - id: BP-90.80.20
         name: Operate Controls and Monitor Compliance with Internal Controls Policies and Procedures
         level: 3
+        aliases:
+          - Controls Operation
+          - Controls Testing
+          - SOX Testing
         description: >-
           Performing planning, management, operations, and monitoring of internal control mechanism policies and procedures in order to manage internal controls.
         framework_refs:
+          - framework: COSO-ERM
+            external_id: ERM 2017
+            version: "2017"
           - framework: APQC-PCF
             external_id: "9.8.2"
             version: "8.0"
@@ -491,9 +703,15 @@ children:
       - id: BP-90.80.30
         name: Report on Internal Controls Compliance
         level: 3
+        aliases:
+          - Controls Reporting
+          - SOX Reporting
         description: >-
           Reporting on internal controls compliance to the appropriate authority, including IT regulations and pertinent data.
         framework_refs:
+          - framework: COSO-ERM
+            external_id: ERM 2017
+            version: "2017"
           - framework: APQC-PCF
             external_id: "9.8.3"
             version: "8.0"
@@ -504,18 +722,28 @@ children:
   - id: BP-90.90
     name: Manage Taxes
     level: 2
+    aliases:
+      - Corporate Tax
+      - Tax Compliance
+      - Tax Provision
     description: >-
       Estimating the organization's periodic tax liabilities. Ensure that appropriate taxing authorities receive tax return filings and payments when due.
     framework_refs:
       - framework: APQC-PCF
         external_id: "9.9"
         version: "8.0"
+      - framework: APQC-PCF
+        external_id: Finance Tax
+        version: "7.2"
     realizes_capability_ids:
       - BC-220
     children:
       - id: BP-90.90.10
         name: Develop Tax Strategy and Plan
         level: 3
+        aliases:
+          - Tax Planning
+          - Transfer Pricing Strategy
         description: >-
           Setting targets for periodic tax liabilities. Assess the tax impact of various activities such as the acquisition or disposal of fixed assets or a deliberate change in number of employee.
         framework_refs:
@@ -528,6 +756,10 @@ children:
       - id: BP-90.90.20
         name: Process Taxes
         level: 3
+        aliases:
+          - Tax Filing
+          - Tax Payment
+          - VAT/GST Return
         description: >-
           Processing the taxes of the organization in line with the regional taxation structure, including corporate, property, excise, and service taxes.
         framework_refs:
@@ -540,6 +772,9 @@ children:
   - id: BP-90.100
     name: Manage International Funds/consolidation
     level: 2
+    aliases:
+      - Consolidation
+      - Multi-Currency Cash Management
     description: >-
       Managing cash collections and disbursements made by operating units across the enterprise. When appropriate, transfer cash from the operating units to parent-level bank accounts managed by the organization's treasury team.
     framework_refs:
@@ -553,6 +788,8 @@ children:
       - id: BP-90.100.10
         name: Monitor International Rates
         level: 3
+        aliases:
+          - FX Rate Monitoring
         description: >-
           Forecasting and monitoring changes in foreign currency value or interest rates around the world that play an important role in the organization.
         framework_refs:
@@ -565,6 +802,9 @@ children:
       - id: BP-90.100.20
         name: Manage Transactions
         level: 3
+        aliases:
+          - Cross-Border Payments
+          - Intercompany Transactions
         description: >-
           Managing any transfer of funds in the course of conducting cross-border trades or investments, including conversion across currencies. Find the most suitable alternative for making payments, while saving taxes and avoiding any unwarranted regulation, with the objective of protecting capital.
         framework_refs:
@@ -578,6 +818,9 @@ children:
       - id: BP-90.100.30
         name: Monitor Currency Exposure/hedge Currency
         level: 3
+        aliases:
+          - FX Exposure Monitoring
+          - Currency Hedging
         description: >-
           Assessing exposure to potential financial losses as a result of changes in the value of currencies. Forecast the impact of movements in foreign currency values. Enter into financial transactions designed to offset or limit potential exposure to loss.
         framework_refs:
@@ -591,6 +834,8 @@ children:
       - id: BP-90.100.40
         name: Report Results
         level: 3
+        aliases:
+          - FX Gain/Loss Reporting
         description: >-
           Documenting and reporting accounting entries to formally report financial gains or losses experienced as a result of foreign exchange activity.
         framework_refs:
@@ -604,8 +849,12 @@ children:
   - id: BP-90.110
     name: Perform Global Trade Services
     level: 2
+    aliases:
+      - Global Trade Compliance
+      - Customs and Duty Operations
+      - Trade Finance
     description: >-
-      Making and collecting payments for transactions in products/services, and transporting them to interested markets.
+      Making and collecting payments for transactions in products/services, and transporting them to interested markets. Includes trade-finance instruments (Letter of Credit, Documentary Collection) and customs/duty operations.
     framework_refs:
       - framework: APQC-PCF
         external_id: "9.11"
@@ -619,6 +868,10 @@ children:
       - id: BP-90.110.10
         name: Screen Sanctioned Party List
         level: 3
+        aliases:
+          - Sanctions Screening
+          - Denied Party Screening
+          - OFAC Screening
         description: >-
           Evaluating the approved list of parties for engaging in international trade in order to ensure the safety of the organization's business transactions. Examine agents that have been granted legal rights to engage in global trade and their credentials.
         framework_refs:
@@ -634,6 +887,10 @@ children:
       - id: BP-90.110.20
         name: Control Exports and Imports
         level: 3
+        aliases:
+          - Export Control
+          - Import Control
+          - ITAR/EAR Compliance
         description: >-
           Overseeing and directing the flow of trade to/from the organization in order to ensure financial gains.
         framework_refs:
@@ -649,6 +906,9 @@ children:
       - id: BP-90.110.30
         name: Classify Products
         level: 3
+        aliases:
+          - HS Code Classification
+          - Tariff Classification
         description: >-
           Systematically categorizing products/services for their suitability to international trade. Create classes and categories for demarcating the types of products suitable for international trade. Study requisite national and international standards and the adherence of the organization's portfolio of offerings to these.
         framework_refs:
@@ -664,6 +924,8 @@ children:
       - id: BP-90.110.40
         name: Perform Currency Conversion
         level: 3
+        aliases:
+          - FX Conversion
         description: >-
           Identifying current exchange rates between two currencies and converting the foreign currency to that of the local monetary unit. I.E., yen to US dollar.
         framework_refs:
@@ -679,6 +941,9 @@ children:
       - id: BP-90.110.50
         name: Calculate Duty
         level: 3
+        aliases:
+          - Customs Duty Calculation
+          - Landed Cost Calculation
         description: >-
           Computing the excise duty to be paid during international trade.
         framework_refs:
@@ -694,6 +959,9 @@ children:
       - id: BP-90.110.60
         name: Communicate with Customs
         level: 3
+        aliases:
+          - Customs Brokerage
+          - Customs Filing
         description: >-
           Communicating with the customs department to ensure fluid compliance. Share pertinent information mandated by law with the government agency that controls and collects the duties levied for the international exchange of products/services.
         framework_refs:
@@ -709,6 +977,9 @@ children:
       - id: BP-90.110.70
         name: Document Trade
         level: 3
+        aliases:
+          - Trade Documentation
+          - Bill of Lading Management
         description: >-
           Documenting and recording the trade processes while making transactions, noting the description, quality, number, transportation medium, indemnity, and inspection.
         framework_refs:
@@ -724,6 +995,9 @@ children:
       - id: BP-90.110.80
         name: Process Trade Preferences
         level: 3
+        aliases:
+          - FTA Origin Determination
+          - Preference Origin
         description: >-
           Preparing global trade under preference, which allows the organization to import/export products at a lower or nil rate of customs duty and/or levy charge.
         framework_refs:
@@ -739,6 +1013,9 @@ children:
       - id: BP-90.110.90
         name: Handle Restitution
         level: 3
+        aliases:
+          - Customs Restitution
+          - Trade Restitution
         description: >-
           Administering and overseeing all restitution activities the organization may be subjected to. Manage compliance with apposite legal frameworks. Make any restitution that may be required by law; comply with authorities over any fines or non-financial measures imposed.
         framework_refs:
@@ -754,6 +1031,11 @@ children:
       - id: BP-90.110.100
         name: Prepare Letter of Credit
         level: 3
+        aliases:
+          - Letter of Credit
+          - LC Issuance
+          - Documentary Credit
+          - Trade Finance Instrument
         description: >-
           Creating a document assuring that a seller will receive payment when certain delivery conditions are met. (If the buyer is unable to make payment on the purchase, a bank covers the outstanding amount.)
         framework_refs:
