@@ -1,11 +1,11 @@
 ---
 import Base from "../../layouts/Base.astro";
-import { flat, getById, getAncestors, getBpById, getStageById } from "../../data/load.ts";
+import { bpFlat, getBpById, getBpAncestors, getStageById, getById } from "../../data/load.ts";
 
 export function getStaticPaths() {
-  return flat.map((c) => ({
-    params: { id: c.id },
-    props: { id: c.id },
+  return bpFlat.map((b) => ({
+    params: { id: b.id },
+    props: { id: b.id },
   }));
 }
 
@@ -13,34 +13,35 @@ interface Props {
   id: string;
 }
 const { id } = Astro.props as Props;
-const node = getById(id);
+const node = getBpById(id);
 if (!node) {
-  throw new Error(`Capability ${id} not found at build time`);
+  throw new Error(`Business process ${id} not found at build time`);
 }
-const ancestors = getAncestors(id);
-const directChildren = flat.filter((c) => c.parent_id === id);
-const successor = node.successor_id ? getById(node.successor_id) : null;
-const githubUrl = `https://github.com/vincentmakes/turbo-ea-capabilities/tree/main/catalogue`;
+const ancestors = getBpAncestors(id);
+const directChildren = bpFlat.filter((b) => b.parent_id === id);
+const successor = node.successor_id ? getBpById(node.successor_id) : null;
+const githubUrl = `https://github.com/vincentmakes/turbo-ea-capabilities/tree/main/catalogue/processes`;
 
-const realizingProcesses = (node.realizes_processes ?? [])
-  .map((pid) => getBpById(pid))
-  .filter((p): p is NonNullable<ReturnType<typeof getBpById>> => Boolean(p));
-const involvedStages = (node.value_stream_stages ?? [])
+const realizesCaps = (node.realizes_capability_ids ?? [])
+  .map((bcId) => getById(bcId))
+  .filter((c): c is NonNullable<ReturnType<typeof getById>> => Boolean(c));
+
+const realizedInStages = (node.realized_in_value_streams ?? [])
   .map((sid) => getStageById(sid))
   .filter((x): x is NonNullable<ReturnType<typeof getStageById>> => Boolean(x));
 ---
 
 <Base
   title={`${node.id} · ${node.name}`}
-  description={node.description ?? `Business Capability ${node.id} - ${node.name}.`}
+  description={node.description ?? `Business Process ${node.id} - ${node.name}.`}
 >
   <main class="main">
     <nav class="detail-breadcrumb">
-      <a href="/">Catalog</a>
+      <a href="/business-processes">Processes</a>
       {ancestors.map((a) => (
         <>
           <span class="sep">/</span>
-          <a href={`/capability/${a.id}`}>{a.name}</a>
+          <a href={`/business-process/${a.id}`}>{a.name}</a>
         </>
       ))}
       <span class="sep">/</span>
@@ -60,7 +61,7 @@ const involvedStages = (node.value_stream_stages ?? [])
           <strong>Deprecated.</strong> {node.deprecation_reason}
           {successor && (
             <>
-              {" "}Successor: <a href={`/capability/${successor.id}`}>{successor.id} {successor.name}</a>.
+              {" "}Successor: <a href={`/business-process/${successor.id}`}>{successor.id} {successor.name}</a>.
             </>
           )}
         </div>
@@ -83,6 +84,21 @@ const involvedStages = (node.value_stream_stages ?? [])
             <div class="meta-val">{node.aliases.join(", ")}</div>
           </div>
         )}
+        {node.framework_refs && node.framework_refs.length > 0 && (
+          <div>
+            <div class="meta-key">Framework refs</div>
+            <div class="meta-val">
+              {node.framework_refs.map((fr) => (
+                <div>
+                  <strong>{fr.framework}</strong>
+                  {fr.version && <> ({fr.version})</>}
+                  {": "}
+                  {fr.url ? <a href={fr.url} target="_blank" rel="noopener">{fr.external_id}</a> : fr.external_id}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
         {node.references && node.references.length > 0 && (
           <div>
             <div class="meta-key">References</div>
@@ -96,15 +112,8 @@ const involvedStages = (node.value_stream_stages ?? [])
       </div>
 
       <div class="permalink-row">
-        <a class="btn" href={`/api/capability/${node.id}.json`}>Raw JSON</a>
+        <a class="btn" href={`/api/business-process/${node.id}.json`}>Raw JSON</a>
         <a class="btn" href={githubUrl} target="_blank" rel="noopener">View on GitHub</a>
-        <button
-          class="btn btn-magenta"
-          type="button"
-          onclick={`navigator.clipboard.writeText('${node.id}')`}
-        >
-          Copy ID
-        </button>
       </div>
     </article>
 
@@ -115,7 +124,7 @@ const involvedStages = (node.value_stream_stages ?? [])
         </div>
         <div class="cap-list">
           {directChildren.map((c) => (
-            <a class="cap-list-row" href={`/capability/${c.id}`}>
+            <a class="cap-list-row" href={`/business-process/${c.id}`}>
               <span class="cap-id">{c.id}</span>
               <span class="cap-name">{c.name}</span>
               <span class="cap-level">L{c.level}</span>
@@ -126,42 +135,40 @@ const involvedStages = (node.value_stream_stages ?? [])
       </section>
     )}
 
-    {involvedStages.length > 0 && (
+    {realizesCaps.length > 0 && (
       <section>
         <div class="section-header">
-          <h2>Exercised in Value Streams ({involvedStages.length})</h2>
+          <h2>Realizes Capabilities ({realizesCaps.length})</h2>
+        </div>
+        <div class="cap-list">
+          {realizesCaps.map((c) => (
+            <a class="cap-list-row" href={`/capability/${c.id}`}>
+              <span class="cap-id">{c.id}</span>
+              <span class="cap-name">{c.name}</span>
+              <span class="cap-level">L{c.level}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {realizedInStages.length > 0 && (
+      <section>
+        <div class="section-header">
+          <h2>Used in Value Streams ({realizedInStages.length})</h2>
         </div>
         <ul class="cap-list">
-          {involvedStages.map(({ stream, stage }) => (
+          {realizedInStages.map(({ stream, stage }) => (
             <li class="cap-list-row">
               <a href={`/value-streams#${stream.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}>
                 <span class="cap-id">{stage.id}</span>
                 <span class="cap-name">
                   <strong>{stream.name}</strong> · stage {stage.stage_order} ({stage.stage_name})
-                  {stage.industry_variant && <> · {stage.industry_variant}</>}
                 </span>
               </a>
             </li>
           ))}
         </ul>
-      </section>
-    )}
-
-    {realizingProcesses.length > 0 && (
-      <section>
-        <div class="section-header">
-          <h2>Realized by Processes ({realizingProcesses.length})</h2>
-        </div>
-        <div class="cap-list">
-          {realizingProcesses.map((p) => (
-            <a class="cap-list-row" href={`/business-process/${p.id}`}>
-              <span class="cap-id">{p.id}</span>
-              <span class="cap-name">{p.name}</span>
-              <span class="cap-level">L{p.level}</span>
-              {p.deprecated && <span class="cap-deprecated-badge">Deprecated</span>}
-            </a>
-          ))}
-        </div>
       </section>
     )}
   </main>

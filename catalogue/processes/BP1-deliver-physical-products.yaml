@@ -1,0 +1,66 @@
+id: BP-40
+name: Deliver Physical Products
+level: 1
+industry: Cross-Industry
+description: >-
+  Plan and run the physical supply chain end-to-end: procurement, production, and outbound logistics that move goods from suppliers to customers.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "4.0"
+    version: "7.4.0"
+realizes_capability_ids:
+  - BC-520
+  - BC-530
+children:
+  - id: BP-40.10
+    name: Plan for and Align Supply Chain Resources
+    level: 2
+    description: >-
+      Forecast demand, plan supply, balance capacity, and align inventory positions to meet service-level and cost targets.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "4.1"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-520
+      - BC-530
+    children: []
+  - id: BP-40.20
+    name: Procure Materials and Services
+    level: 2
+    description: >-
+      Source, contract, and acquire goods and services from suppliers, including supplier qualification and ongoing supplier management.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "4.2"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-500
+      - BC-510
+    children: []
+  - id: BP-40.30
+    name: Produce/Manufacture/Deliver Product
+    level: 2
+    description: >-
+      Convert inputs into finished products through production scheduling, manufacturing operations, and quality control.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "4.3"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-520
+      - BC-720
+    children: []
+  - id: BP-40.40
+    name: Manage Logistics and Warehousing
+    level: 2
+    description: >-
+      Run the inbound, internal, and outbound flow of goods: warehousing, transport, fulfilment, and reverse logistics.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "4.4"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-520
+      - BC-530
+    children: []

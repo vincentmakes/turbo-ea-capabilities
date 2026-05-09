@@ -1,0 +1,79 @@
+id: BP-120
+name: Manage External Relationships
+level: 1
+industry: Cross-Industry
+description: >-
+  Manage the enterprise's relationships with external stakeholders: investors, government, board, legal, ethical, and public-relations counterparts.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "12.0"
+    version: "7.4.0"
+realizes_capability_ids:
+  - BC-240
+  - BC-150
+  - BC-850
+  - BC-110
+children:
+  - id: BP-120.10
+    name: Build Investor Relationships
+    level: 2
+    description: >-
+      Engage with current and prospective investors, analysts, and rating agencies; manage investor communications and disclosures.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "12.1"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-240
+    children: []
+  - id: BP-120.20
+    name: Manage Government and Industry Relationships
+    level: 2
+    description: >-
+      Engage with regulators, government bodies, and industry associations on policy, lobbying, and regulatory matters.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "12.2"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-150
+      - BC-850
+    children: []
+  - id: BP-120.30
+    name: Manage Relations with Board of Directors
+    level: 2
+    description: >-
+      Support the board: agendas, materials, governance processes, and director engagement.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "12.3"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-110
+      - BC-240
+    children: []
+  - id: BP-120.40
+    name: Manage Legal and Ethical Issues
+    level: 2
+    description: >-
+      Manage legal matters, contracts, litigation, ethics programs, and corporate-conduct standards.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "12.4"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-150
+      - BC-130
+    children: []
+  - id: BP-120.50
+    name: Manage Public Relations Program
+    level: 2
+    description: >-
+      Run external communications, media relations, brand reputation, and crisis communications.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "12.5"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-850
+    children: []

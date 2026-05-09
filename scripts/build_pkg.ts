@@ -29,7 +29,14 @@ if (!existsSync(join(DIST_API, "version.json"))) {
 
 mkdirSync(PKG_DATA, { recursive: true });
 
-const filesToCopy = ["capabilities.json", "tree.json", "version.json"];
+const filesToCopy = [
+  "capabilities.json",
+  "tree.json",
+  "version.json",
+  "value-streams.json",
+  "business-processes.json",
+  "bp-tree.json",
+];
 for (const f of filesToCopy) {
   const src = join(DIST_API, f);
   const dst = join(PKG_DATA, f);

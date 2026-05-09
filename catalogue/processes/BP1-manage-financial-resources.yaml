@@ -1,0 +1,141 @@
+id: BP-90
+name: Manage Financial Resources
+level: 1
+industry: Cross-Industry
+description: >-
+  Run enterprise finance end-to-end: planning and management accounting, transaction processing (revenue, AP, payroll), reporting, treasury, controls, tax, and consolidation.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "9.0"
+    version: "7.4.0"
+realizes_capability_ids:
+  - BC-200
+  - BC-230
+  - BC-210
+  - BC-220
+children:
+  - id: BP-90.10
+    name: Perform Planning and Management Accounting
+    level: 2
+    description: >-
+      Plan, budget, forecast, and produce management-accounting analyses that drive business decisions.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "9.1"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-230
+    children: []
+  - id: BP-90.20
+    name: Perform Revenue Accounting
+    level: 2
+    description: >-
+      Recognise, record, and report revenue in accordance with accounting standards and contract terms.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "9.2"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-200
+    children: []
+  - id: BP-90.30
+    name: Perform General Accounting and Reporting
+    level: 2
+    description: >-
+      Maintain the general ledger, perform period-end close, and produce statutory and management financial reports.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "9.3"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-200
+    children: []
+  - id: BP-90.40
+    name: Manage Fixed-Asset Project Accounting
+    level: 2
+    description: >-
+      Account for capital projects and fixed assets across acquisition, depreciation, impairment, and disposal.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "9.4"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-200
+      - BC-900
+    children: []
+  - id: BP-90.50
+    name: Process Payroll
+    level: 2
+    description: >-
+      Calculate, pay, and report employee compensation, including statutory withholdings and benefits accounting.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "9.5"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-300
+      - BC-200
+    children: []
+  - id: BP-90.60
+    name: Process Accounts Payable and Expense Reimbursements
+    level: 2
+    description: >-
+      Validate, approve, and pay supplier invoices and employee expense claims.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "9.6"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-200
+      - BC-500
+    children: []
+  - id: BP-90.70
+    name: Manage Treasury Operations
+    level: 2
+    description: >-
+      Manage cash, liquidity, banking, debt, investments, and financial-risk hedging.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "9.7"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-210
+    children: []
+  - id: BP-90.80
+    name: Manage Internal Controls
+    level: 2
+    description: >-
+      Design, operate, and assure financial internal controls aligned to regulatory and assurance requirements.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "9.8"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-140
+      - BC-130
+    children: []
+  - id: BP-90.90
+    name: Manage Taxes
+    level: 2
+    description: >-
+      Determine, file, and pay direct, indirect, and transactional taxes; manage tax controversy and planning.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "9.9"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-220
+    children: []
+  - id: BP-90.100
+    name: Manage International Funds/Consolidation
+    level: 2
+    description: >-
+      Translate, consolidate, and report multi-entity, multi-currency results.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "9.10"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-200
+      - BC-210
+    children: []

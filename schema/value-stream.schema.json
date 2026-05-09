@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://business-capabilities.turbo-ea.org/schema/value-stream.schema.json",
+  "title": "ValueStreamCatalogue",
+  "description": "Reference schema for catalogue/_value-streams.yaml. Value streams are an artefact orthogonal to the capability hierarchy: each stream describes an end-to-end flow whose stages link to L1 capabilities (`capability_ids`) and to business processes that realize the work (`process_ids`).",
+  "type": "object",
+  "required": ["value_streams"],
+  "additionalProperties": false,
+  "properties": {
+    "value_streams": {
+      "type": "array",
+      "minItems": 0,
+      "items": { "$ref": "#/$defs/ValueStream" }
+    }
+  },
+  "$defs": {
+    "ValueStream": {
+      "type": "object",
+      "required": ["id", "name", "industries", "stages"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable identifier for the value stream. Sparse 10/20/30 numbering so insertions never renumber siblings.",
+          "pattern": "^VS-\\d+$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Display name. Outcome-focused, hyphenated bookend pattern (e.g. Order-to-Cash, Hire-to-Retire)."
+        },
+        "description": {
+          "type": "string",
+          "description": "Outcome-oriented summary of the end-to-end flow (1-3 sentences)."
+        },
+        "industries": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "Industry applicability. 'Cross-Industry' must stand alone when present; otherwise list one or more specific industries from the catalogue's L1 vocabulary."
+        },
+        "deprecated": { "type": "boolean", "default": false },
+        "deprecation_reason": { "type": "string" },
+        "successor_id": {
+          "type": "string",
+          "pattern": "^VS-\\d+$"
+        },
+        "metadata": {
+          "type": "object",
+          "additionalProperties": true,
+          "description": "Escape hatch for governance fields not yet promoted to first-class."
+        },
+        "stages": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/ValueStreamStage" }
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "deprecated": { "const": true } }, "required": ["deprecated"] },
+          "then": { "required": ["deprecation_reason"] }
+        }
+      ]
+    },
+    "ValueStreamStage": {
+      "type": "object",
+      "required": ["id", "stage_order", "stage_name", "capability_ids", "process_ids"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable stage identifier in the form <stream-id>.<n> with sparse 10/20/30 numbering.",
+          "pattern": "^VS-\\d+\\.\\d+$"
+        },
+        "stage_order": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "1-based ordinal position of the stage within the stream. Multiple stages may share an order when industry variants split a logical step."
+        },
+        "stage_name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Display name of the stage."
+        },
+        "capability_ids": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^BC-\\d+(\\.\\d+){0,3}$" },
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "L1 capabilities exercised at this stage. Stages link at L1 only; the site auto-expands to descendants when filtering. Use 'notes' to capture sub-scope detail."
+        },
+        "process_ids": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^BP-\\d+(\\.\\d+){0,3}$" },
+          "uniqueItems": true,
+          "description": "Business processes that realize the work at this stage. May be empty during rollout while the BP catalogue is being populated."
+        },
+        "industries": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true,
+          "description": "Optional override of the parent stream's industries for this stage. Inherited if absent."
+        },
+        "industry_variant": {
+          "type": "string",
+          "description": "Optional industry-specific variant label distinguishing this stage from the cross-industry baseline (e.g. 'Healthcare Providers')."
+        },
+        "description": {
+          "type": "string",
+          "description": "Optional longer description of the stage."
+        },
+        "notes": {
+          "type": "string",
+          "description": "Free-form notes — typically sub-scope of the linked capability or stage-specific commentary."
+        }
+      }
+    }
+  }
+}

@@ -34,7 +34,19 @@
    - 9.8 [Reference Frameworks](#98-reference-frameworks)
    - 9.9 [What Does Not Drive Governance](#99-what-does-not-drive-governance)
 
-10. [Glossary](#10-glossary)
+**Part C — Value Stream Layer** *(end-to-end value delivery, orthogonal to capabilities)*
+
+10. [Value Stream Layer](#10-value-stream-layer)
+
+**Part D — Process Layer** *(how work is done, anchored on APQC PCF)*
+
+11. [Process Layer](#11-process-layer)
+
+**Part E — Cross-Layer Linkage** *(how the three artefacts compose)*
+
+12. [Cross-Layer Linkage](#12-cross-layer-linkage)
+
+13. [Glossary](#13-glossary)
 
 ---
 
@@ -107,7 +119,7 @@ The following rules are governance-enforced and apply at every level of the hier
    - duplicate another branch;
    - no longer add governance value (no distinct owner, no distinct application footprint, no distinct decision to be made).
 5. **Symmetry is not required.** One branch may go four levels deep while another stops at L2. Do not force balance.
-6. **Maximum depth = L4.** If L5 feels necessary, the model has slipped into process territory — push it to the process layer instead.
+6. **Maximum depth = L4.** If L5 feels necessary, the model has slipped into process territory — push it into the process layer (`BP-` ids; see [Part D](#11-process-layer)) rather than extending the capability tree.
 
 ---
 
@@ -851,19 +863,157 @@ These references describe *what* organisations in a given industry typically do 
 
 ---
 
-## 10. Glossary
+## Part C — Value Stream Layer
+
+## 10. Value Stream Layer
+
+A **value stream** is an end-to-end flow that delivers value to a stakeholder. Examples: *Order-to-Cash*, *Hire-to-Retire*, *First-Notice-to-Settlement*. Value streams are **orthogonal** to the capability hierarchy: a single stream exercises many capabilities, and a single capability participates in many streams.
+
+### 10.1 Source of truth
+
+`catalogue/_value-streams.yaml`. One file, all streams. Schema: `schema/value-stream.schema.json`.
+
+### 10.2 Identifiers
+
+- **Stream id:** `VS-<n>` with sparse 10/20/30 numbering (e.g. `VS-10`, `VS-20`). Stable; never reused.
+- **Stage id:** `VS-<n>.<m>` with sparse 10/20/30 numbering. Stable across stage reordering — `stage_order` is the visual rank, not part of the identity.
+
+### 10.3 Naming
+
+- **Streams** use the bookend pattern: `<Trigger>-to-<Outcome>`. Title Case, hyphenated.
+- **Stages** are short noun phrases describing the step (e.g. *Quote Generation*, *Selection & Hire*).
+
+### 10.4 What stages link to
+
+A stage links to:
+
+- **`capability_ids: [BC-...]`** — the L1 capabilities exercised at this stage. Stages link **at L1 only**; the site auto-expands to descendants when filtering. Use `notes` to capture sub-scope detail (e.g. *"AR sub-capability"*).
+- **`process_ids: [BP-...]`** — the business processes that realize the work at this stage. May be empty during rollout. Process ids may resolve at any depth (BP1, BP2, BP3, BP4).
+
+### 10.5 Industry tagging
+
+Each stream declares `industries: [...]` from the capability catalogue's industry vocabulary. `Cross-Industry`, when present, must stand alone. Stages may declare `industry_variant` to call out an industry-specific specialisation (e.g. *Healthcare Providers*) without forking the whole stream.
+
+### 10.6 What value streams are not
+
+- They are **not** processes. A stream describes *what* end-to-end flow delivers value, not *how* the work happens. The how lives in [Part D](#11-process-layer).
+- They are **not** capabilities. A stream is a flow; a capability is an ability. Order-to-Cash is a stream; *Customer Order Management* is a capability.
+
+---
+
+## Part D — Process Layer
+
+## 11. Process Layer
+
+Business processes describe **how work is done**. Verb-phrased activities, anchored on APQC PCF's 4-level Category → Process Group → Process → Activity hierarchy. Orthogonal to capabilities and value streams.
+
+### 11.1 Source of truth
+
+One YAML file per BP1 (Category) at `catalogue/processes/BP1-<slug>.yaml`. Indexed in `catalogue/processes/_index.yaml`. Schema: `schema/business-process.schema.json`.
+
+### 11.2 Identifiers
+
+`BP-<L1>[.<L2>[.<L3>[.<L4>]]]` mirroring the BC scheme. Sparse 10/20/30 at every level. Maximum depth 4. Step / task granularity (BPMN-level detail) belongs in BPMN diagrams, not in this catalogue.
+
+### 11.3 Naming
+
+Verb-phrased — *Develop Vision and Strategy*, *Manage Customer Service*, *Process Sales Order*. Unlike capabilities, processes describe activities.
+
+### 11.4 Industry tagging
+
+Same scheme as capabilities: `Cross-Industry` | `<Single>` | `<A; B>`. The capability catalogue's L1 industry vocabulary is the master list — BP industries must match. APQC publishes both Cross-Industry and industry-specific PCFs (Banking, Telecom, Insurance, etc.); industry-specific BP1 files sit alongside Cross-Industry BP1 files exactly the way industry L1 capability files sit alongside Cross-Industry L1 files.
+
+### 11.5 Cross-references
+
+- **`realizes_capability_ids: [BC-...]`** — the capabilities this process realizes. Single source of truth for the BC↔BP link; the reverse direction (`Capability.realizes_processes`) is derived at build time.
+- **`framework_refs: [{framework, external_id, version?, url?}]`** — structured cross-walks to APQC PCF (`framework: APQC-PCF`, `external_id: "8.1.1.1"`), BIAN (service domain name), eTOM, ITIL, SCOR. Distinct from `references[]` (free-form URIs); `framework_refs[]` is machine-readable for coverage analytics and external-tool integration.
+
+### 11.6 What business processes are not
+
+- They are **not** capabilities. *Manage Sales Order* (process) realises *Customer Order Management* (capability). The capability is stable; the process is the way the work is currently organised and may change.
+- They are **not** value streams. A value stream describes the end-to-end flow; a process is one of the verb-phrased activities executed within a stage of that flow.
+- They are **not** BPMN diagrams. The catalogue stops at the activity level; sequence, gateways, and lanes belong in BPMN.
+
+---
+
+## Part E — Cross-Layer Linkage
+
+## 12. Cross-Layer Linkage
+
+The three artefacts (BC, VS, BP) form an orthogonal triangle, not a hierarchy:
+
+```
+        Capabilities (BC)
+       /                 \
+      /                   \
+  realizes              exercises (capability_ids)
+      \                   /
+       \                 /
+        Processes (BP) — process_ids → Value Streams (VS)
+```
+
+A value stream stage references both **capabilities** (`capability_ids[]`) and **processes** (`process_ids[]`). A process can independently reference the **capabilities** it realizes (`realizes_capability_ids[]`). Capabilities don't reference outward — their backlinks are derived at build time:
+
+- `Capability.realizes_processes` ← derived from `BP.realizes_capability_ids`.
+- `Capability.value_stream_stages` ← derived from VS stage `capability_ids[]`.
+- `BusinessProcess.realized_in_value_streams` ← derived from VS stage `process_ids[]`.
+
+### 12.1 Worked example: Order-to-Cash
+
+```
+VS-310 Order-to-Cash (Cross-Industry)
+├── VS-310.10 Order Capture
+│   capability_ids: [BC-100, BC-130]
+│   process_ids:    [BP-30.10.10, BP-30.10.20]
+├── VS-310.20 Order Fulfilment
+│   capability_ids: [BC-100, BC-180]
+│   process_ids:    [BP-30.20.10]
+├── VS-310.30 Invoicing
+│   capability_ids: [BC-90]
+│   process_ids:    [BP-90.30.10]
+└── VS-310.40 Cash Application
+    capability_ids: [BC-90]
+    process_ids:    [BP-90.30.20]
+```
+
+The same capability (`BC-100 Customer Order Management`) appears in multiple stages — totally fine. The same process can also appear in multiple stages of multiple streams. None of this introduces a hierarchy; the relationships are many-to-many.
+
+### 12.2 When to use which artefact
+
+| Question | Artefact |
+|---|---|
+| What does the business need to be able to do? | Capability (BC) |
+| How is the work organised today? | Process (BP) |
+| Which end-to-end flow does this work belong to? | Value Stream (VS) |
+| Which capabilities are exercised when this stream runs? | VS stage `capability_ids[]` |
+| Which processes implement those capabilities at this stage? | VS stage `process_ids[]` |
+| Which streams use this capability? | `Capability.value_stream_stages` (derived) |
+| Which processes realize this capability? | `Capability.realizes_processes` (derived) |
+
+### 12.3 Authoring discipline
+
+- **Authoring direction is outward from capabilities.** Capabilities never reference downward — the BP and VS artefacts reference the BCs they connect to. This keeps the BC catalogue stable and lets a single capability appear in dozens of streams and processes without churning the BC files.
+- **Process and value-stream changes are reviewed by their owners** (CODEOWNERS), independently of capability changes.
+- **A process or stream can be deprecated without touching capabilities.** A capability can be deprecated only after every BP that realizes it and every VS stage that exercises it has been updated (lint enforces).
+
+---
+
+## 13. Glossary
 
 | Term | Definition |
 |---|---|
 | **ADM** | Architecture Development Method (TOGAF). |
+| **APQC PCF** | APQC Process Classification Framework — Cross-Industry process taxonomy with 4 levels (Category → Process Group → Process → Activity). Anchor framework for the BP layer. |
 | **ARB** | Architecture Review Board. |
 | **Business Capability** | See [Section 1](#1-definition). |
 | **Business Context** | An end-to-end flow (value stream, scenario, journey) such as Order-to-Cash or Procure-to-Pay that exercises multiple capabilities in sequence. *Not* a capability. |
+| **Business Process** | See [Section 11](#11-process-layer). HOW work is done. |
 | **Capability Map** | A structured representation of capabilities, typically rendered as a hierarchical or tiled diagram. |
+| **Framework Ref** | Structured cross-reference to an external framework (APQC-PCF, BIAN, eTOM, ITIL, SCOR). Machine-readable cousin of free-form `references[]` URIs. |
 | **MECE** | Mutually Exclusive, Collectively Exhaustive. |
 | **Noun Phrase** | A grammatical unit whose head is a noun (e.g. *Customer Order Management*). Names a thing; does not describe an action. |
 | **TOGAF** | The Open Group Architecture Framework. |
-| **Value Stream** | An end-to-end set of activities delivering value to a stakeholder; orthogonal to capabilities. A type of Business Context. |
+| **Value Stream** | An end-to-end set of activities delivering value to a stakeholder; orthogonal to capabilities. See [Section 10](#10-value-stream-layer). |
 
 ---
 

@@ -1,0 +1,65 @@
+id: BP-50
+name: Deliver Services
+level: 1
+industry: Cross-Industry
+description: >-
+  Govern, plan, and execute the delivery of services to customers — including the resourcing, operations, and post-delivery management distinct from physical-goods supply chains.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "5.0"
+    version: "7.4.0"
+realizes_capability_ids:
+  - BC-430
+  - BC-720
+children:
+  - id: BP-50.10
+    name: Establish Service Delivery Governance and Strategy
+    level: 2
+    description: >-
+      Define service-delivery operating model, governance forums, and service strategy aligned to customer outcomes and SLAs.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "5.1"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-100
+      - BC-720
+    children: []
+  - id: BP-50.20
+    name: Manage Service Delivery Resources
+    level: 2
+    description: >-
+      Plan, allocate, and develop the people, facilities, and infrastructure that deliver service.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "5.2"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-300
+      - BC-700
+    children: []
+  - id: BP-50.30
+    name: Deliver Service to Customer
+    level: 2
+    description: >-
+      Execute the service interaction with the customer end-to-end, including provisioning, support, and assurance.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "5.3"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-430
+    children: []
+  - id: BP-50.40
+    name: Manage Service Delivery
+    level: 2
+    description: >-
+      Monitor, assure, and improve service delivery against SLAs and customer-experience targets.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "5.4"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-430
+      - BC-720
+    children: []

@@ -1,0 +1,42 @@
+Turbo EA Capabilities — Reference Business Architecture Catalogue
+Copyright (c) 2026 Vincent and contributors. Released under the MIT License (see LICENSE).
+
+This product includes references to and attribution-based use of third-party
+frameworks. Inclusion of an attribution below does not imply endorsement by
+the framework owner.
+
+================================================================================
+APQC Process Classification Framework® (PCF)
+================================================================================
+
+The business-process catalogue under `catalogue/processes/` is anchored on the
+APQC Process Classification Framework® (PCF), Cross-Industry version 7.4.0,
+published by APQC (American Productivity & Quality Center, https://www.apqc.org/).
+
+"Process Classification Framework®" and "PCF®" are registered trademarks of
+APQC. The APQC PCF is provided by APQC for use as a benchmark and process
+reference; this project uses APQC's category and process-group taxonomy with
+attribution. Each business-process node carries a structured `framework_refs`
+entry that pins the corresponding APQC PCF code (e.g.
+`{framework: APQC-PCF, external_id: "8.1", version: "7.4.0"}`).
+
+For the canonical APQC PCF documentation, including the full multi-level
+process taxonomy and definitions, see:
+
+    https://www.apqc.org/process-frameworks
+
+The names, definitions, and ordering used in this catalogue are derived from
+the APQC PCF and adapted to this catalogue's governance conventions
+(verb-phrased Title Case, sparse `BP-N0[.M0]` ids, depth-4 cap, MECE within
+parent). Where this catalogue's wording differs from APQC's, the
+`framework_refs.external_id` pin remains authoritative for cross-walks.
+
+================================================================================
+Other reference frameworks (cited but not redistributed)
+================================================================================
+
+Capability and process records may include `framework_refs` entries that
+cross-walk to additional industry frameworks: BIAN (Banking Industry
+Architecture Network), TM Forum eTOM/Frameworx, ITIL®, and SCOR®. None of
+these frameworks are redistributed by this project; entries cite their
+identifiers only, with attribution to the respective owners of each.

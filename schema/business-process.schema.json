@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://business-capabilities.turbo-ea.org/schema/business-process.schema.json",
+  "title": "BusinessProcess",
+  "description": "Reference schema for a Business Process node. Source files are YAML; this schema validates the parsed structure for a single BP1 file (a tree rooted at one BP1 process category). Business processes describe HOW work is done, anchored on APQC PCF's Category → Process Group → Process → Activity hierarchy. They are an artefact orthogonal to capabilities (BC) and value streams (VS); cross-references go via `realizes_capability_ids` and via VS-stage `process_ids`.",
+  "type": "object",
+  "required": ["id", "name", "level", "children"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable identifier. BP-<L1>[.<L2>[.<L3>[.<L4>]]] mirroring the capability id scheme. Max depth 4. Sparse 10/20/30 numbering at every level.",
+      "pattern": "^BP-\\d+(\\.\\d+){0,3}$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Display name. Verb-phrased (e.g. 'Develop Vision and Strategy') — unlike capabilities, processes describe activities, not outcomes."
+    },
+    "level": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 4,
+      "description": "Decomposition depth. Must equal depth in the tree (root=1). 1=Category, 2=Process Group, 3=Process, 4=Activity."
+    },
+    "description": {
+      "type": "string",
+      "description": "Activity-oriented definition (1-3 sentences)."
+    },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "industry": {
+      "type": "string",
+      "description": "Industry classification. 'Cross-Industry', a single industry, or semicolon-separated list. Inherited from BP1 if absent. Must match the capability catalogue's L1 industry vocabulary."
+    },
+    "references": {
+      "type": "array",
+      "items": { "type": "string", "format": "uri" },
+      "uniqueItems": true,
+      "description": "Free-form URI evidence (whitepapers, vendor docs, regulator pages). For machine-readable cross-walks to APQC/BIAN/eTOM use `framework_refs`."
+    },
+    "framework_refs": {
+      "type": "array",
+      "uniqueItems": true,
+      "description": "Structured cross-references to external process / capability frameworks. Each entry pins a framework, an external id (e.g. APQC PCF code), and an optional version.",
+      "items": {
+        "type": "object",
+        "required": ["framework", "external_id"],
+        "additionalProperties": false,
+        "properties": {
+          "framework": {
+            "type": "string",
+            "enum": ["APQC-PCF", "BIAN", "eTOM", "ITIL", "SCOR"]
+          },
+          "external_id": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Native identifier in the source framework (e.g. APQC PCF '8.1.1.1'; BIAN service domain name; eTOM process code)."
+          },
+          "version": { "type": "string", "description": "Framework version (e.g. APQC PCF '7.4.0')." },
+          "url": { "type": "string", "format": "uri" }
+        }
+      }
+    },
+    "realizes_capability_ids": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^BC-\\d+(\\.\\d+){0,3}$" },
+      "uniqueItems": true,
+      "description": "Capabilities this process realizes. Used to derive the reverse `realizes_processes` index on capability records at build time — single source of truth lives on the BP side."
+    },
+    "in_scope": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Concrete in-scope activities."
+    },
+    "out_of_scope": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Concrete out-of-scope activities (clarifies MECE)."
+    },
+    "deprecated": { "type": "boolean", "default": false },
+    "deprecation_reason": { "type": "string" },
+    "successor_id": {
+      "type": "string",
+      "pattern": "^BP-\\d+(\\.\\d+){0,3}$"
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Escape hatch for governance fields not yet promoted to first-class.",
+      "additionalProperties": true
+    },
+    "children": {
+      "type": "array",
+      "items": { "$ref": "#" }
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "deprecated": { "const": true } }, "required": ["deprecated"] },
+      "then": { "required": ["deprecation_reason"] }
+    }
+  ]
+}
