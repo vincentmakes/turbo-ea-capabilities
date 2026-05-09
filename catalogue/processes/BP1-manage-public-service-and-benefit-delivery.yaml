@@ -17,28 +17,145 @@ children:
       Issue and maintain citizen identity, civil registration records, and verifiable credentials.
     realizes_capability_ids:
       - BC-610
-    children: []
+    children:
+      - id: BP-340.10.10
+        name: Issue Citizen Identity Credentials
+        level: 3
+        description: >-
+          Issue national IDs, e-IDs, and verifiable credentials.
+        realizes_capability_ids:
+          - BC-610
+        children: []
+      - id: BP-340.10.20
+        name: Maintain Citizen Identity Registry
+        level: 3
+        description: >-
+          Maintain authoritative identity registry; update demographics; manage identity proofing.
+        realizes_capability_ids:
+          - BC-610
+        children: []
+      - id: BP-340.10.30
+        name: Authenticate and Federate Identity
+        level: 3
+        description: >-
+          Operate citizen-authentication services and federation across government services.
+        realizes_capability_ids:
+          - BC-620
+          - BC-610
+        children: []
   - id: BP-340.20
     name: Manage Benefit and Entitlement Programs
     level: 2
     description: >-
-      Administer benefit and entitlement programs: eligibility, application, decision, payment, and ongoing review.
+      Administer benefit and entitlement programs: eligibility, application, decision, payment, ongoing review.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-340.20.10
+        name: Configure Benefit Programs
+        level: 3
+        description: >-
+          Define and maintain benefit-program rules, eligibility criteria, and payment schedules.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-340.20.20
+        name: Process Benefit Applications
+        level: 3
+        description: >-
+          Receive and process applications for benefits; collect supporting evidence.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-340.20.30
+        name: Determine Benefit Eligibility
+        level: 3
+        description: >-
+          Apply rules and evidence to determine benefit eligibility and entitlement amount.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-340.20.40
+        name: Disburse Benefit Payments
+        level: 3
+        description: >-
+          Calculate and disburse benefit payments to recipients.
+        realizes_capability_ids:
+          - BC-200
+        children: []
+      - id: BP-340.20.50
+        name: Manage Continuing Eligibility and Reviews
+        level: 3
+        description: >-
+          Conduct periodic eligibility reviews; adjust entitlements based on changes in circumstance.
+        realizes_capability_ids: []
+        children: []
   - id: BP-340.30
     name: Manage Licensing and Permitting
     level: 2
     description: >-
-      Operate licensing and permitting regimes: application intake, evaluation, issuance, renewal, and enforcement.
+      Operate licensing and permitting regimes: application intake, evaluation, issuance, renewal, enforcement.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-340.30.10
+        name: Receive Licensing/Permit Applications
+        level: 3
+        description: >-
+          Receive applications across channels; perform initial completeness checks.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-340.30.20
+        name: Evaluate Applications and Render Decisions
+        level: 3
+        description: >-
+          Evaluate applications against statutory criteria; render licensing decisions.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-340.30.30
+        name: Issue Licences and Permits
+        level: 3
+        description: >-
+          Issue physical or digital licences and permits to approved applicants.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-340.30.40
+        name: Manage Renewals and Modifications
+        level: 3
+        description: >-
+          Process licence renewals, modifications, and conditional updates.
+        realizes_capability_ids: []
+        children: []
   - id: BP-340.40
     name: Manage Visa and Immigration
     level: 2
     description: >-
       Operate visa, asylum, immigration, and border admission processes.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-340.40.10
+        name: Process Visa Applications
+        level: 3
+        description: >-
+          Receive and process visa applications including biometric capture.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-340.40.20
+        name: Conduct Pre-Travel Authorisation
+        level: 3
+        description: >-
+          Operate pre-travel authorisation systems (e.g. ESTA, ETIAS).
+        realizes_capability_ids: []
+        children: []
+      - id: BP-340.40.30
+        name: Manage Border Admission
+        level: 3
+        description: >-
+          Inspect arrivals at ports of entry; render admission decisions.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-340.40.40
+        name: Manage Immigration Status and Removal
+        level: 3
+        description: >-
+          Maintain immigration-status records; process removals and returns.
+        realizes_capability_ids: []
+        children: []
   - id: BP-340.50
     name: Manage Vital and Statutory Records
     level: 2
@@ -46,4 +163,27 @@ children:
       Maintain civil/vital records: births, deaths, marriages, statutory filings.
     realizes_capability_ids:
       - BC-610
-    children: []
+    children:
+      - id: BP-340.50.10
+        name: Register Vital Events
+        level: 3
+        description: >-
+          Register births, deaths, marriages, and equivalent vital events.
+        realizes_capability_ids:
+          - BC-610
+        children: []
+      - id: BP-340.50.20
+        name: Issue Vital-Records Certificates
+        level: 3
+        description: >-
+          Issue certified copies of vital records; manage authentication and apostille.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-340.50.30
+        name: Maintain Statutory Public Registers
+        level: 3
+        description: >-
+          Maintain public registers required by statute; manage controlled disclosure.
+        realizes_capability_ids:
+          - BC-610
+        children: []

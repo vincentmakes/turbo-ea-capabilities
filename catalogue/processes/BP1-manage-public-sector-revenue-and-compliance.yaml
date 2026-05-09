@@ -3,7 +3,7 @@ name: Manage Public Sector Revenue and Compliance
 level: 1
 industry: Public Sector & Government
 description: >-
-  Operate public-sector revenue collection and regulatory compliance: tax filing and collection, customs and trade, regulatory enforcement, and judicial / statutory filings.
+  Operate public-sector revenue collection and regulatory compliance: tax filing and collection, customs and trade, regulatory enforcement, judicial / statutory filings.
 framework_refs:
   - framework: APQC-PCF
     external_id: "FEAF — Tax Administration / Regulatory & Compliance domains"
@@ -15,10 +15,44 @@ children:
     name: Manage Tax Filing and Collection
     level: 2
     description: >-
-      Receive tax returns, assess liabilities, collect tax, and manage refunds and disputes.
+      Receive tax returns, assess liabilities, collect tax, manage refunds and disputes.
     realizes_capability_ids:
       - BC-220
-    children: []
+    children:
+      - id: BP-350.10.10
+        name: Register Taxpayers and Assign IDs
+        level: 3
+        description: >-
+          Register taxpayers; assign tax identification numbers; manage taxpayer master.
+        realizes_capability_ids:
+          - BC-220
+        children: []
+      - id: BP-350.10.20
+        name: Process Tax Returns
+        level: 3
+        description: >-
+          Receive, validate, and process tax returns across tax types.
+        realizes_capability_ids:
+          - BC-220
+        children: []
+      - id: BP-350.10.30
+        name: Assess and Collect Tax
+        level: 3
+        description: >-
+          Assess tax liabilities; collect payments; manage refunds and credits.
+        realizes_capability_ids:
+          - BC-220
+          - BC-200
+        children: []
+      - id: BP-350.10.40
+        name: Manage Tax Disputes and Appeals
+        level: 3
+        description: >-
+          Process taxpayer disputes, objections, and appeals.
+        realizes_capability_ids:
+          - BC-220
+          - BC-150
+        children: []
   - id: BP-350.20
     name: Manage Customs and Trade Administration
     level: 2
@@ -26,7 +60,32 @@ children:
       Operate customs entry, duty assessment, trade-compliance, and border-control processes.
     realizes_capability_ids:
       - BC-130
-    children: []
+    children:
+      - id: BP-350.20.10
+        name: Process Customs Declarations
+        level: 3
+        description: >-
+          Receive and process customs declarations for import/export.
+        realizes_capability_ids:
+          - BC-130
+        children: []
+      - id: BP-350.20.20
+        name: Assess and Collect Duties and VAT
+        level: 3
+        description: >-
+          Assess customs duties, excise, and VAT; collect at border.
+        realizes_capability_ids:
+          - BC-220
+          - BC-130
+        children: []
+      - id: BP-350.20.30
+        name: Manage Trade Compliance and Sanctions
+        level: 3
+        description: >-
+          Manage export controls, sanctions screening, and trade-compliance enforcement.
+        realizes_capability_ids:
+          - BC-130
+        children: []
   - id: BP-350.30
     name: Manage Regulatory Enforcement and Investigations
     level: 2
@@ -35,7 +94,33 @@ children:
     realizes_capability_ids:
       - BC-130
       - BC-150
-    children: []
+    children:
+      - id: BP-350.30.10
+        name: Plan and Conduct Regulatory Inspections
+        level: 3
+        description: >-
+          Plan inspection programs; conduct site or document inspections.
+        realizes_capability_ids:
+          - BC-130
+        children: []
+      - id: BP-350.30.20
+        name: Conduct Investigations and Cases
+        level: 3
+        description: >-
+          Open and conduct regulatory investigations and cases.
+        realizes_capability_ids:
+          - BC-130
+          - BC-150
+        children: []
+      - id: BP-350.30.30
+        name: Impose and Collect Penalties
+        level: 3
+        description: >-
+          Impose regulatory penalties; manage collection and enforcement.
+        realizes_capability_ids:
+          - BC-130
+          - BC-200
+        children: []
   - id: BP-350.40
     name: Manage Court and Statutory Filings
     level: 2
@@ -43,4 +128,29 @@ children:
       Receive, docket, and process court filings and statutory submissions; manage case dispositions.
     realizes_capability_ids:
       - BC-150
-    children: []
+    children:
+      - id: BP-350.40.10
+        name: Receive and Docket Court Filings
+        level: 3
+        description: >-
+          Receive court filings; assign case numbers; docket events.
+        realizes_capability_ids:
+          - BC-150
+        children: []
+      - id: BP-350.40.20
+        name: Manage Court Hearings and Trials
+        level: 3
+        description: >-
+          Schedule and manage court hearings, trials, and dispositions.
+        realizes_capability_ids:
+          - BC-150
+        children: []
+      - id: BP-350.40.30
+        name: Maintain Court and Public Records
+        level: 3
+        description: >-
+          Maintain official court records; manage public access and sealing orders.
+        realizes_capability_ids:
+          - BC-610
+          - BC-150
+        children: []
