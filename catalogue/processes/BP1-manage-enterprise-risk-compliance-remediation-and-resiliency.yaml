@@ -26,7 +26,45 @@ children:
     realizes_capability_ids:
       - BC-120
       - BC-140
-    children: []
+    children:
+      - id: BP-110.10.10
+        name: Establish Enterprise Risk Framework
+        level: 3
+        description: >-
+          Establish the enterprise risk-management framework, taxonomy, and governance.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "11.1.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-120
+          - BC-110
+        children: []
+      - id: BP-110.10.20
+        name: Manage Business Unit and Function Risk
+        level: 3
+        description: >-
+          Identify and manage risks at business-unit and functional levels.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "11.1.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-120
+        children: []
+      - id: BP-110.10.30
+        name: Manage Process Risk
+        level: 3
+        description: >-
+          Identify and manage risks at the process level.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "11.1.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-120
+          - BC-930
+        children: []
   - id: BP-110.20
     name: Manage Business Resiliency
     level: 2
@@ -38,7 +76,43 @@ children:
         version: "7.4.0"
     realizes_capability_ids:
       - BC-160
-    children: []
+    children:
+      - id: BP-110.20.10
+        name: Develop Business Resiliency Plan
+        level: 3
+        description: >-
+          Develop business-continuity and disaster-recovery plans for critical processes and assets.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "11.2.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-160
+        children: []
+      - id: BP-110.20.20
+        name: Test the Plan
+        level: 3
+        description: >-
+          Exercise resiliency plans through tests and drills.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "11.2.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-160
+        children: []
+      - id: BP-110.20.30
+        name: Manage and Execute Business Resiliency Response
+        level: 3
+        description: >-
+          Activate and execute resiliency responses during disruptive events.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "11.2.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-160
+        children: []
   - id: BP-110.30
     name: Manage Environmental, Health, and Safety (EHS)
     level: 2
@@ -51,4 +125,67 @@ children:
     realizes_capability_ids:
       - BC-730
       - BC-740
-    children: []
+    children:
+      - id: BP-110.30.10
+        name: Manage EHS Strategy
+        level: 3
+        description: >-
+          Set EHS strategy, policy, and target performance.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "11.3.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-730
+        children: []
+      - id: BP-110.30.20
+        name: Manage EHS Implementation
+        level: 3
+        description: >-
+          Implement EHS programs across operations.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "11.3.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-730
+        children: []
+      - id: BP-110.30.30
+        name: Train Employees on EHS
+        level: 3
+        description: >-
+          Deliver EHS training to employees and contractors.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "11.3.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-730
+          - BC-300
+        children: []
+      - id: BP-110.30.40
+        name: Monitor and Manage EHS Performance
+        level: 3
+        description: >-
+          Monitor EHS performance, incidents, and lagging/leading indicators.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "11.3.4"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-730
+          - BC-720
+        children: []
+      - id: BP-110.30.50
+        name: Remediate Environmental Issues
+        level: 3
+        description: >-
+          Remediate environmental issues and contamination, including legacy liabilities.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "11.3.5"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-730
+          - BC-740
+        children: []
