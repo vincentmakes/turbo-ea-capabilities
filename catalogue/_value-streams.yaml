@@ -8697,14 +8697,17 @@ value_streams:
     capability_ids:
     - BC-4240
     - BC-4230
-    process_ids: []
+    process_ids:
+    - BP-420.20
     notes: Trial sign-up and trial subscription provisioning; Tenant provisioning for trial accounts
   - id: VS-620.20
     stage_order: 2
     stage_name: Trial Activation
     capability_ids:
     - BC-4260
-    process_ids: []
+    process_ids:
+    - BP-420.30
+    - BP-420.20
     notes: Onboarding and activation milestone tracking during trial
   - id: VS-620.30
     stage_order: 3
@@ -8712,7 +8715,8 @@ value_streams:
     capability_ids:
     - BC-4240
     - BC-4250
-    process_ids: []
+    process_ids:
+    - BP-420.20
     notes: Trial-to-paid subscription conversion; Initial invoicing and payment authorisation on conversion
   - id: VS-620.40
     stage_order: 4
@@ -8720,14 +8724,16 @@ value_streams:
     capability_ids:
     - BC-4260
     - BC-4280
-    process_ids: []
+    process_ids:
+    - BP-420.30
     notes: Adoption programmes, power-user enablement; Product telemetry and feature engagement reporting that drive adoption
   - id: VS-620.50
     stage_order: 5
     stage_name: Health & Risk Monitoring
     capability_ids:
     - BC-4260
-    process_ids: []
+    process_ids:
+    - BP-420.40
     notes: Customer health scoring and at-risk account intervention
   - id: VS-620.60
     stage_order: 6
@@ -8735,7 +8741,8 @@ value_streams:
     capability_ids:
     - BC-4240
     - BC-4260
-    process_ids: []
+    process_ids:
+    - BP-420.40
     notes: Auto-renewal processing and renewal negotiation; Renewal advocacy, save motions, renewal forecasting
   - id: VS-620.70
     stage_order: 7
@@ -8743,14 +8750,17 @@ value_streams:
     capability_ids:
     - BC-4260
     - BC-4240
-    process_ids: []
+    process_ids:
+    - BP-420.40
     notes: Expansion opportunity identification and upsell qualification; Plan upgrade, seat adjustment, and add-on activation
   - id: VS-620.80
     stage_order: 8
     stage_name: Churn or Wind-Down
     capability_ids:
     - BC-4240
-    process_ids: []
+    process_ids:
+    - BP-420.20
+    - BP-420.40
     notes: Cancellation processing and service wind-down coordination
 - id: VS-630
   name: Validate-to-Authorise
