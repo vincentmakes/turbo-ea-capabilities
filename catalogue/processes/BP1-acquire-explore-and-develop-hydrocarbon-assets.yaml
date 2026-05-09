@@ -1,0 +1,50 @@
+id: BP-210
+name: Acquire, Explore, and Develop Hydrocarbon Assets
+level: 1
+industry: Oil & Gas
+description: >-
+  Run upstream petroleum operations from licence acquisition and exploration through field appraisal and development to first hydrocarbons.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "Upstream Petroleum PCF v7.2 — Categories 2.0 'Acquire, Explore, and Appraise Hydrocarbon Assets' and 3.0 'Develop and Deplete Hydrocarbon Assets'"
+realizes_capability_ids:
+  - BC-100
+children:
+  - id: BP-210.10
+    name: Acquire Hydrocarbon Licences and Acreage
+    level: 2
+    description: >-
+      Acquire exploration and production rights through licence rounds, farm-ins, and asset acquisitions.
+    realizes_capability_ids:
+      - BC-150
+    children: []
+  - id: BP-210.20
+    name: Explore for Hydrocarbon Resources
+    level: 2
+    description: >-
+      Conduct geological and geophysical exploration: seismic acquisition, processing, and prospect generation.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-210.30
+    name: Appraise and Evaluate Discoveries
+    level: 2
+    description: >-
+      Drill appraisal wells and evaluate discoveries to estimate resources and commercial viability.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-210.40
+    name: Develop Hydrocarbon Assets
+    level: 2
+    description: >-
+      Plan, design, and execute field-development projects, including drilling and facilities construction.
+    realizes_capability_ids:
+      - BC-700
+      - BC-900
+    children: []
+  - id: BP-210.50
+    name: Manage Subsurface and Reservoir Engineering
+    level: 2
+    description: >-
+      Manage subsurface modelling, reservoir engineering, and recovery optimisation across the asset life.
+    realizes_capability_ids: []
+    children: []
