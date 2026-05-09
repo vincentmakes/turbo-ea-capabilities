@@ -462,7 +462,8 @@ value_streams:
     stage_name: Case Intake
     capability_ids:
     - BC-1540
-    process_ids: []
+    process_ids:
+    - BP-200.40
     industry_variant: Pharma
     notes: Adverse event capture
   - id: VS-20.20
@@ -470,7 +471,8 @@ value_streams:
     stage_name: Case Triage & Coding
     capability_ids:
     - BC-1540
-    process_ids: []
+    process_ids:
+    - BP-200.40
     industry_variant: Pharma
     notes: MedDRA coding, seriousness assessment
   - id: VS-20.30
@@ -478,7 +480,8 @@ value_streams:
     stage_name: Causality & Medical Review
     capability_ids:
     - BC-1580
-    process_ids: []
+    process_ids:
+    - BP-200.40
     industry_variant: Pharma
     notes: Medical affairs review
   - id: VS-20.40
@@ -486,7 +489,8 @@ value_streams:
     stage_name: Signal Detection
     capability_ids:
     - BC-1540
-    process_ids: []
+    process_ids:
+    - BP-200.40
     industry_variant: Pharma
     notes: Signal detection & evaluation
   - id: VS-20.50
@@ -494,7 +498,8 @@ value_streams:
     stage_name: Risk Assessment & RMP Update
     capability_ids:
     - BC-1540
-    process_ids: []
+    process_ids:
+    - BP-200.40
     industry_variant: Pharma
     notes: Risk management plan
   - id: VS-20.60
@@ -503,7 +508,9 @@ value_streams:
     capability_ids:
     - BC-1530
     - BC-1540
-    process_ids: []
+    process_ids:
+    - BP-200.40
+    - BP-200.50
     industry_variant: Pharma
     notes: Agency notification; Periodic safety reports
   - id: VS-20.70
@@ -511,14 +518,16 @@ value_streams:
     stage_name: Label & Communication Updates
     capability_ids:
     - BC-850
-    process_ids: []
+    process_ids:
+    - BP-200.50
     notes: Stakeholder communications
   - id: VS-20.80
     stage_order: 7
     stage_name: Label & Communication Updates
     capability_ids:
     - BC-1530
-    process_ids: []
+    process_ids:
+    - BP-200.50
     industry_variant: Pharma
     notes: Labelling change
   - id: VS-20.90
@@ -526,7 +535,9 @@ value_streams:
     stage_name: Audit & Inspection Readiness
     capability_ids:
     - BC-1540
-    process_ids: []
+    process_ids:
+    - BP-200.50
+    - BP-90.80
     industry_variant: Pharma
     notes: PV audit
 - id: VS-30
@@ -1889,7 +1900,8 @@ value_streams:
     stage_name: Target Discovery
     capability_ids:
     - BC-1500
-    process_ids: []
+    process_ids:
+    - BP-190.10
     industry_variant: Pharma
     notes: Target identification & validation
   - id: VS-160.20
@@ -1897,7 +1909,8 @@ value_streams:
     stage_name: Hit & Lead Discovery
     capability_ids:
     - BC-1500
-    process_ids: []
+    process_ids:
+    - BP-190.10
     industry_variant: Pharma
     notes: Hit discovery; Lead optimisation
   - id: VS-160.30
@@ -1906,7 +1919,8 @@ value_streams:
     capability_ids:
     - BC-1500
     - BC-1510
-    process_ids: []
+    process_ids:
+    - BP-190.20
     industry_variant: Pharma
     notes: Candidate selection; Pre-clinical studies; CMC development
   - id: VS-160.40
@@ -1915,7 +1929,8 @@ value_streams:
     capability_ids:
     - BC-1520
     - BC-1530
-    process_ids: []
+    process_ids:
+    - BP-190.30
     industry_variant: Pharma
     notes: Protocol design; Regulatory strategy
   - id: VS-160.50
@@ -1923,7 +1938,9 @@ value_streams:
     stage_name: Clinical Trials Execution
     capability_ids:
     - BC-1520
-    process_ids: []
+    process_ids:
+    - BP-190.30
+    - BP-190.40
     industry_variant: Pharma
     notes: Site management; Subject management; Clinical data management; Trial supply
   - id: VS-160.60
@@ -1931,7 +1948,8 @@ value_streams:
     stage_name: Phase Progression
     capability_ids:
     - BC-1510
-    process_ids: []
+    process_ids:
+    - BP-190.30
     industry_variant: Pharma
     notes: Phase I; Phase II; Phase III
   - id: VS-160.70
@@ -1939,7 +1957,8 @@ value_streams:
     stage_name: Regulatory Submission
     capability_ids:
     - BC-1530
-    process_ids: []
+    process_ids:
+    - BP-190.50
     industry_variant: Pharma
     notes: NDA / MAA submission; Agency interaction; Labelling
   - id: VS-160.80
@@ -1949,7 +1968,9 @@ value_streams:
     - BC-1580
     - BC-1590
     - BC-1600
-    process_ids: []
+    process_ids:
+    - BP-190.50
+    - BP-200.50
     industry_variant: Pharma
     notes: Medical affairs preparation; Commercial readiness; Market access & reimbursement
   - id: VS-160.90
@@ -1958,7 +1979,8 @@ value_streams:
     capability_ids:
     - BC-1510
     - BC-1530
-    process_ids: []
+    process_ids:
+    - BP-200.40
     industry_variant: Pharma
     notes: Phase IV; Lifecycle maintenance
 - id: VS-170
