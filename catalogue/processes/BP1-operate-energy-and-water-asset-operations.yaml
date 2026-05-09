@@ -3,10 +3,10 @@ name: Operate Energy and Water Asset Operations
 level: 1
 industry: Power & Water Utilities
 description: >-
-  Operate utility production and network assets: generation (electric), production and treatment (water), transmission, distribution, and storage.
+  Operate utility production and network assets: generation (electric), production and treatment (water), transmission, distribution, storage.
 framework_refs:
   - framework: APQC-PCF
-    external_id: "Utilities PCF v7.2 — Asset operations categories"
+    external_id: "APQC Utilities PCF v7.2 — Asset operations categories"
 realizes_capability_ids:
   - BC-700
 children:
@@ -14,29 +14,111 @@ children:
     name: Operate Electricity Generation
     level: 2
     description: >-
-      Operate electricity generation assets across thermal, hydro, nuclear, and renewable plants.
+      Operate electricity generation assets across thermal, hydro, nuclear, renewable.
     realizes_capability_ids:
       - BC-700
       - BC-720
-    children: []
+    children:
+      - id: BP-260.10.10
+        name: Schedule and Dispatch Generation
+        level: 3
+        description: >-
+          Schedule generation against day-ahead and intraday markets; dispatch to system operator instructions.
+        realizes_capability_ids:
+          - BC-700
+        children: []
+      - id: BP-260.10.20
+        name: Operate Generation Plant
+        level: 3
+        description: >-
+          Operate thermal, hydro, nuclear, and renewable generation plants safely and efficiently.
+        realizes_capability_ids:
+          - BC-700
+          - BC-720
+        children: []
+      - id: BP-260.10.30
+        name: Manage Generation Performance and Outages
+        level: 3
+        description: >-
+          Monitor performance; manage planned and forced outages.
+        realizes_capability_ids:
+          - BC-700
+          - BC-160
+        children: []
   - id: BP-260.20
     name: Operate Water Production and Treatment
     level: 2
     description: >-
-      Operate water abstraction, treatment, and wastewater treatment assets to meet quality standards.
+      Operate water abstraction, treatment, and wastewater treatment assets.
     realizes_capability_ids:
       - BC-700
       - BC-720
       - BC-730
-    children: []
+    children:
+      - id: BP-260.20.10
+        name: Abstract Raw Water
+        level: 3
+        description: >-
+          Abstract raw water from sources per licence and environmental conditions.
+        realizes_capability_ids:
+          - BC-730
+        children: []
+      - id: BP-260.20.20
+        name: Treat Drinking Water
+        level: 3
+        description: >-
+          Treat raw water to drinking-water quality standards.
+        realizes_capability_ids:
+          - BC-720
+        children: []
+      - id: BP-260.20.30
+        name: Treat Wastewater
+        level: 3
+        description: >-
+          Operate wastewater treatment to effluent quality standards.
+        realizes_capability_ids:
+          - BC-730
+        children: []
+      - id: BP-260.20.40
+        name: Conduct Water Quality Assurance
+        level: 3
+        description: >-
+          Sample and test water quality across the production chain; report to regulators.
+        realizes_capability_ids:
+          - BC-720
+        children: []
   - id: BP-260.30
     name: Operate Transmission and Distribution Networks
     level: 2
     description: >-
-      Operate electricity transmission and distribution networks (or water mains and reticulation).
+      Operate electricity T&D networks (or water mains and reticulation).
     realizes_capability_ids:
       - BC-700
-    children: []
+    children:
+      - id: BP-260.30.10
+        name: Operate Transmission Networks
+        level: 3
+        description: >-
+          Operate high-voltage transmission networks and substations.
+        realizes_capability_ids:
+          - BC-700
+        children: []
+      - id: BP-260.30.20
+        name: Operate Distribution Networks
+        level: 3
+        description: >-
+          Operate distribution networks and feeders to customer connections.
+        realizes_capability_ids:
+          - BC-700
+        children: []
+      - id: BP-260.30.30
+        name: Balance and Dispatch the System
+        level: 3
+        description: >-
+          Balance supply and demand in real time; dispatch system resources.
+        realizes_capability_ids:
+          - BC-700
+        children: []
   - id: BP-260.40
     name: Manage Outages, Restoration, and Emergency Response
     level: 2
@@ -45,16 +127,65 @@ children:
     realizes_capability_ids:
       - BC-160
       - BC-700
-    children: []
+    children:
+      - id: BP-260.40.10
+        name: Detect and Localise Outages
+        level: 3
+        description: >-
+          Detect outages via SCADA, AMI, and customer reports; localise faults.
+        realizes_capability_ids:
+          - BC-700
+        children: []
+      - id: BP-260.40.20
+        name: Dispatch and Restore
+        level: 3
+        description: >-
+          Dispatch crews; restore service per operating procedures.
+        realizes_capability_ids:
+          - BC-700
+        children: []
+      - id: BP-260.40.30
+        name: Manage Emergency and Storm Response
+        level: 3
+        description: >-
+          Activate emergency response for storms, ice, wildfire, and equivalent events.
+        realizes_capability_ids:
+          - BC-160
+        children: []
   - id: BP-260.50
     name: Manage Energy Storage and Distributed Energy Resources
     level: 2
     description: >-
-      Operate energy storage and integrate distributed energy resources (DER) and demand response.
+      Operate energy storage and integrate DER and demand response.
     realizes_capability_ids:
       - BC-700
       - BC-600
-    children: []
+    children:
+      - id: BP-260.50.10
+        name: Operate Energy Storage
+        level: 3
+        description: >-
+          Operate utility-scale and distributed energy-storage assets.
+        realizes_capability_ids:
+          - BC-700
+        children: []
+      - id: BP-260.50.20
+        name: Integrate Distributed Energy Resources
+        level: 3
+        description: >-
+          Integrate DER (rooftop solar, EV chargers) into operations.
+        realizes_capability_ids:
+          - BC-700
+          - BC-600
+        children: []
+      - id: BP-260.50.30
+        name: Manage Demand Response Programs
+        level: 3
+        description: >-
+          Manage demand-response programs across customer segments.
+        realizes_capability_ids:
+          - BC-700
+        children: []
   - id: BP-260.60
     name: Manage Network Planning and Capital Investment
     level: 2
@@ -63,4 +194,20 @@ children:
     realizes_capability_ids:
       - BC-230
       - BC-130
-    children: []
+    children:
+      - id: BP-260.60.10
+        name: Develop Network Investment Plans
+        level: 3
+        description: >-
+          Develop multi-year network investment plans; align to price-control submissions.
+        realizes_capability_ids:
+          - BC-230
+        children: []
+      - id: BP-260.60.20
+        name: Conduct Reliability and Resilience Planning
+        level: 3
+        description: >-
+          Plan reliability and resilience investments; meet NERC/CIGRE/equivalent standards.
+        realizes_capability_ids:
+          - BC-160
+        children: []

@@ -6,7 +6,7 @@ description: >-
   Run utility-specific customer operations (metering, billing, supply switching, hardship support) and regulatory operations (price control, code compliance, statutory reporting).
 framework_refs:
   - framework: APQC-PCF
-    external_id: "Utilities PCF v7.2 — Customer and regulatory categories"
+    external_id: "APQC Utilities PCF v7.2 — Customer and regulatory categories"
 realizes_capability_ids:
   - BC-100
 children:
@@ -14,10 +14,34 @@ children:
     name: Manage Customer Metering and Meter Data
     level: 2
     description: >-
-      Operate the meter estate (smart and non-smart); collect, validate, estimate, and edit meter data.
+      Operate the meter estate; collect, validate, estimate, edit meter data.
     realizes_capability_ids:
       - BC-610
-    children: []
+    children:
+      - id: BP-270.10.10
+        name: Operate Meter Estate
+        level: 3
+        description: >-
+          Operate smart and non-smart meter estate; manage meter exchange.
+        realizes_capability_ids:
+          - BC-610
+        children: []
+      - id: BP-270.10.20
+        name: Collect and Validate Meter Data
+        level: 3
+        description: >-
+          Collect AMI/AMR readings; validate, estimate, and edit (VEE) meter data.
+        realizes_capability_ids:
+          - BC-610
+        children: []
+      - id: BP-270.10.30
+        name: Provide Meter Data to Market
+        level: 3
+        description: >-
+          Provide meter data to retailers, settlement bodies, and customers.
+        realizes_capability_ids:
+          - BC-610
+        children: []
   - id: BP-270.20
     name: Operate Utility Billing and Revenue Collection
     level: 2
@@ -25,7 +49,32 @@ children:
       Calculate utility bills, present bills, run dunning, and manage collections and disconnection.
     realizes_capability_ids:
       - BC-200
-    children: []
+    children:
+      - id: BP-270.20.10
+        name: Calculate Utility Bills
+        level: 3
+        description: >-
+          Calculate utility bills using tariffs, meter data, and prepayment top-up where applicable.
+        realizes_capability_ids:
+          - BC-200
+        children: []
+      - id: BP-270.20.20
+        name: Present Bills and Manage Inquiries
+        level: 3
+        description: >-
+          Present bills across channels; resolve billing inquiries and disputes.
+        realizes_capability_ids:
+          - BC-430
+          - BC-200
+        children: []
+      - id: BP-270.20.30
+        name: Manage Collections and Disconnection
+        level: 3
+        description: >-
+          Run dunning and collections; manage disconnection and reconnection per regulations.
+        realizes_capability_ids:
+          - BC-200
+        children: []
   - id: BP-270.30
     name: Manage Supply Switching and Customer Onboarding
     level: 2
@@ -34,7 +83,23 @@ children:
     realizes_capability_ids:
       - BC-420
       - BC-430
-    children: []
+    children:
+      - id: BP-270.30.10
+        name: Manage Customer Switching
+        level: 3
+        description: >-
+          Manage customer switching between retailers per market codes.
+        realizes_capability_ids:
+          - BC-420
+        children: []
+      - id: BP-270.30.20
+        name: Operate Supply-Point Onboarding
+        level: 3
+        description: >-
+          Onboard new connections; manage move-in/move-out events.
+        realizes_capability_ids:
+          - BC-430
+        children: []
   - id: BP-270.40
     name: Manage Vulnerable Customer and Hardship Programs
     level: 2
@@ -43,7 +108,24 @@ children:
     realizes_capability_ids:
       - BC-430
       - BC-130
-    children: []
+    children:
+      - id: BP-270.40.10
+        name: Identify and Register Vulnerable Customers
+        level: 3
+        description: >-
+          Identify and register vulnerable customers per regulatory definitions.
+        realizes_capability_ids:
+          - BC-430
+          - BC-130
+        children: []
+      - id: BP-270.40.20
+        name: Operate Hardship Programs
+        level: 3
+        description: >-
+          Operate payment plans, hardship grants, and energy-efficiency programs for hardship customers.
+        realizes_capability_ids:
+          - BC-430
+        children: []
   - id: BP-270.50
     name: Manage Regulatory Reporting and Price-Control Submissions
     level: 2
@@ -52,4 +134,30 @@ children:
     realizes_capability_ids:
       - BC-130
       - BC-240
-    children: []
+    children:
+      - id: BP-270.50.10
+        name: Prepare Price-Control Submissions
+        level: 3
+        description: >-
+          Prepare RIIO / equivalent price-control submissions to economic regulators.
+        realizes_capability_ids:
+          - BC-130
+          - BC-240
+        children: []
+      - id: BP-270.50.20
+        name: Produce Regulatory Performance Reports
+        level: 3
+        description: >-
+          Produce regulatory performance reports against published targets.
+        realizes_capability_ids:
+          - BC-130
+        children: []
+      - id: BP-270.50.30
+        name: Manage Regulatory Inquiries and Audits
+        level: 3
+        description: >-
+          Respond to regulatory inquiries and audits; manage remediation.
+        realizes_capability_ids:
+          - BC-130
+          - BC-140
+        children: []
