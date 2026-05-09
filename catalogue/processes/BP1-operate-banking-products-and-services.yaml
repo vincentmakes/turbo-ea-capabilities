@@ -1,0 +1,56 @@
+id: BP-130
+name: Operate Banking Products and Services
+level: 1
+industry: Banking & Capital Markets
+description: >-
+  Run banking-specific product and service operations: deposit-taking, lending, cards, payments, trade finance, and customer servicing — distinct from the cross-industry Order-to-Cash flow.
+framework_refs:
+  - framework: BIAN
+    external_id: "Banking Industry Architecture Network — service-domain reference"
+realizes_capability_ids:
+  - BC-100
+children:
+  - id: BP-130.10
+    name: Manage Deposit Operations
+    level: 2
+    description: >-
+      Operate retail and commercial deposit accounts: account opening, transaction posting, interest calculation, and statement production.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-130.20
+    name: Manage Lending Operations
+    level: 2
+    description: >-
+      Originate, underwrite, service, and collect on loans: retail, mortgage, commercial, and syndicated facilities.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-130.30
+    name: Manage Card Operations
+    level: 2
+    description: >-
+      Operate credit, debit, and prepaid card programs: issuance, authorisation, clearing, settlement, and disputes.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-130.40
+    name: Manage Payment Operations
+    level: 2
+    description: >-
+      Process domestic and cross-border payments across rails (ACH, wire, RTGS, instant payments, SWIFT).
+    realizes_capability_ids: []
+    children: []
+  - id: BP-130.50
+    name: Manage Trade Finance Operations
+    level: 2
+    description: >-
+      Operate trade-finance products: letters of credit, documentary collections, supply-chain finance, guarantees.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-130.60
+    name: Manage Banking Customer Servicing
+    level: 2
+    description: >-
+      Service banking customers across channels: call centre, branch, digital, and dispute handling.
+    realizes_capability_ids:
+      - BC-430
+      - BC-420
+    children: []
