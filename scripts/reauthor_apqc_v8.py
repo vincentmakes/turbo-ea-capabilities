@@ -283,6 +283,14 @@ def reauthor_category(cat):
 
         bp2_data.append((bp2_lid, bp2_code, v8_bp2_name, v8_bp2["desc"], bp2_realizes, bp3_list))
 
+    # Sort BP2 children by local id (ascending) so lint passes
+    def id_sort_key(lid):
+        return tuple(int(p) for p in lid.replace("BP-", "").split("."))
+    bp2_data.sort(key=lambda x: id_sort_key(x[0]))
+    # Sort BP3 within each BP2
+    bp2_data = [(b[0], b[1], b[2], b[3], b[4], sorted(b[5], key=lambda x: id_sort_key(x[0])))
+                for b in bp2_data]
+
     # Compute id_mapping: old local ids that no longer exist → None
     new_ids = set()
     for bp2_lid, _, _, _, _, bp3s in bp2_data:
