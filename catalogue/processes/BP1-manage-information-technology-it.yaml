@@ -2,9 +2,22 @@ id: BP-80
 name: "Manage Information Technology (IT)"
 level: 1
 industry: Cross-Industry
+aliases:
+  - IT Service Management
+  - ITSM
+  - ITIL 4 Service Value System
 description: >-
-  Managing process groups relevant to the business of information technology within an organization. The process groups include "Develop and manage IT customer relationships", "Develop and manage IT business strategy", " Develop and manage IT resilience and risk", " Manage information", " Develop and manage services/solutions", "Deploy services/solutions", and " Create and manage support services/solutions".
+  Plan, design, build, deploy, support, and govern information-technology
+  services and solutions across the enterprise. Structured along ITIL 4
+  practices grouped to match the Service Value Chain activities (Plan,
+  Engage, Design and Transition, Obtain/Build, Deliver and Support,
+  Improve), with cross-cutting risk, security, and information practices.
+  APQC PCF Cross-Industry v8.0 retained as a secondary cross-walk.
 framework_refs:
+  - framework: ITIL
+    external_id: Service Value System
+    version: "4"
+    url: https://www.axelos.com/certifications/propath/itil-4
   - framework: APQC-PCF
     external_id: "8.0"
     version: "8.0"
@@ -14,11 +27,24 @@ realizes_capability_ids:
   - BC-620
 children:
   - id: BP-80.10
-    name: Develop and Manage IT Customer Relationships
+    name: Engage with IT Customers and Manage Service Levels
     level: 2
+    aliases:
+      - Develop and Manage IT Customer Relationships
+      - Service Level Management
+      - Business Relationship Management
+      - Relationship Management
     description: >-
-      Creating and administering relationships with IT customers. Understanding customer needs including high-level business requirements for IT transformation. Plan for and communicate IT services along with establishing IT service levels, providing transformation guidance, and performance analysis that foster IT customer relationships.
+      Build and sustain the IT-business relationship by understanding
+      customer needs, planning and communicating the IT service offering,
+      negotiating service-level agreements, and tracking service-level
+      performance. Maps to the ITIL 4 Engage Service Value Chain activity
+      and the Relationship Management, Service Level Management, Service
+      Catalogue Management, and Business Analysis practices.
     framework_refs:
+      - framework: ITIL
+        external_id: Engage
+        version: "4"
       - framework: APQC-PCF
         external_id: "8.1"
         version: "8.0"
@@ -31,9 +57,15 @@ children:
       - id: BP-80.10.10
         name: Understand IT Customer Needs
         level: 3
+        aliases:
+          - Customer Needs Analysis
+          - Business Analysis
         description: >-
           Assessing the customer communities along with current IT operational capabilities and usage.
         framework_refs:
+          - framework: ITIL
+            external_id: Business Analysis
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.1.1"
             version: "8.0"
@@ -46,9 +78,15 @@ children:
       - id: BP-80.10.20
         name: Identify IT Customer Transformation Needs
         level: 3
+        aliases:
+          - Digital Transformation Needs
+          - Demand Management
         description: >-
           Identifying changing needs of staff dependent on information technology based on continuous improvement to deliver results according to organizational goals. This is inclusive of all forms of new and evolving technology such as artificial intelligence (AI).
         framework_refs:
+          - framework: ITIL
+            external_id: Business Analysis
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.1.2"
             version: "8.0"
@@ -62,9 +100,15 @@ children:
       - id: BP-80.10.30
         name: Plan and Communicate IT Services
         level: 3
+        aliases:
+          - Service Catalogue Management
+          - Service Catalog
         description: >-
           Create and design an organized and curated collection of all IT-related services that can be performed by, for, or within the organization. Maintain and convey information about deliverables, prices, contact points, and processes for requesting an information technology service.
         framework_refs:
+          - framework: ITIL
+            external_id: Service Catalogue Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.1.3"
             version: "8.0"
@@ -76,9 +120,15 @@ children:
       - id: BP-80.10.40
         name: Provide IT Transformation Guidance
         level: 3
+        aliases:
+          - Strategy Consultation
+          - Transformation Roadmap
         description: >-
           Understanding the necessity of IT transformation for the business. This is inclusive of all forms of new and evolving technology such as artificial intelligence (AI). Collect and analyze customer requirements. Identify opportunities and prioritize outcomes. Develop and support business case for transformation. Develop transformation plan and roadmap.
         framework_refs:
+          - framework: ITIL
+            external_id: Strategy Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.1.4"
             version: "8.0"
@@ -89,11 +139,19 @@ children:
           - BC-920
         children: []
       - id: BP-80.10.50
-        name: Develop and Manage IT Service Levels
+        name: Manage Service Level Agreements
         level: 3
+        aliases:
+          - Service Level Management
+          - SLM
+          - SLA Management
+          - Develop and Manage IT Service Levels
         description: >-
           Establishing and maintaining service levels for the provision of IT services and solutions. Design and maintain the IT services and solution catalogue, as well as service level agreements. Evaluate the performance of IT service level agreements. Communicate the results to the management.
         framework_refs:
+          - framework: ITIL
+            external_id: Service Level Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.1.5"
             version: "8.0"
@@ -105,9 +163,16 @@ children:
       - id: BP-80.10.60
         name: Manage IT Customer Relationships
         level: 3
+        aliases:
+          - Business Relationship Management
+          - BRM
+          - Stakeholder Engagement
         description: >-
           Managing the IT relationship with its customers by systematically coordinating interactions over multiple touch points on a regular basis. Coordinate the IT's efforts to reach out to its customers, which include emails, social-media interactions, newsletters, and direct conversations.
         framework_refs:
+          - framework: ITIL
+            external_id: Relationship Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.1.6"
             version: "8.0"
@@ -120,9 +185,15 @@ children:
       - id: BP-80.10.70
         name: Analyze Service Performance
         level: 3
+        aliases:
+          - Measurement and Reporting
+          - Service Reporting
         description: >-
           Proactively manage IT service levels against IT customer requirements.
         framework_refs:
+          - framework: ITIL
+            external_id: Measurement and Reporting
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.1.7"
             version: "8.0"
@@ -132,11 +203,23 @@ children:
           - BC-620
         children: []
   - id: BP-80.20
-    name: Develop and Manage IT Business Strategy
+    name: Plan IT Strategy, Portfolio, and Architecture
     level: 2
+    aliases:
+      - Develop and Manage IT Business Strategy
+      - IT Strategy
+      - Enterprise Architecture
+      - Portfolio Management
     description: >-
-      Handling the business of IT. Create a organization-wide strategy for the IT function. Define the organization's IT architecture. Manage the IT portfolio. Research and innovate in the field of IT. Assess and convey the performance and the value of the IT function.
+      Set the direction for IT — strategy, portfolio, enterprise
+      architecture, technology innovation, and value-management
+      governance. Maps to the ITIL 4 Plan Service Value Chain activity
+      and the Strategy Management, Portfolio Management, Architecture
+      Management, and Service Financial Management practices.
     framework_refs:
+      - framework: ITIL
+        external_id: Plan
+        version: "4"
       - framework: APQC-PCF
         external_id: "8.2"
         version: "8.0"
@@ -148,9 +231,16 @@ children:
       - id: BP-80.20.10
         name: Define Business Technology and Governance Strategy
         level: 3
+        aliases:
+          - IT Strategy
+          - IT Governance
+          - Strategy Management
         description: >-
           Defining the need of technology in business and systematic implementation of IT investments. This is inclusive of all forms of new and evolving technology such as artificial intelligence (AI). It comprises of assessing competitive technology components to ensure structural analysis, development, usage and security of technology for efficient business operations.
         framework_refs:
+          - framework: ITIL
+            external_id: Strategy Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.2.1"
             version: "8.0"
@@ -163,9 +253,15 @@ children:
       - id: BP-80.20.20
         name: Manage IT Portfolio Strategy
         level: 3
+        aliases:
+          - Portfolio Management
+          - IT Portfolio Management
         description: >-
           Strategy for systematic management of IT investments, projects, and activities. Analyze and examine the value of the IT portfolio and allocate resources based on business objectives.
         framework_refs:
+          - framework: ITIL
+            external_id: Portfolio Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.2.2"
             version: "8.0"
@@ -178,9 +274,19 @@ children:
       - id: BP-80.20.30
         name: Define and Maintain Enterprise Architecture
         level: 3
+        aliases:
+          - Enterprise Architecture
+          - EA
+          - Architecture Management
         description: >-
           Outlining and maintaining the organization's IT architecture. Establish the IT architecture definition and framework. Ensure the relevance of IT. Create and confirm the approach for IT maintenance. Create rules and regulations to guide IT architecture. Authenticate and finalize all IT related research and innovation that takes place within the organization.
         framework_refs:
+          - framework: ITIL
+            external_id: Architecture Management
+            version: "4"
+          - framework: TOGAF
+            external_id: ADM
+            version: "10"
           - framework: APQC-PCF
             external_id: "8.2.3"
             version: "8.0"
@@ -193,9 +299,15 @@ children:
       - id: BP-80.20.40
         name: Define IT Service Management Strategy
         level: 3
+        aliases:
+          - ITSM Strategy
+          - Service Management Strategy
         description: >-
           Defining perspective, position, plans, and patterns needed to execute designing, delivering, managing, and improving the way information technology is used within an organization.
         framework_refs:
+          - framework: ITIL
+            external_id: Strategy Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.2.4"
             version: "8.0"
@@ -207,9 +319,18 @@ children:
       - id: BP-80.20.50
         name: Control IT Management System
         level: 3
+        aliases:
+          - IT Governance Controls
+          - Continual Improvement
         description: >-
           Regulating the IT management system through performance measures, governance, analysis, and monitoring through a variety of analytic tools. Evaluate IT finances, resource, services, projects, and value for report out.
         framework_refs:
+          - framework: ITIL
+            external_id: Continual Improvement
+            version: "4"
+          - framework: COBIT
+            external_id: EDM/MEA
+            version: "2019"
           - framework: APQC-PCF
             external_id: "8.2.5"
             version: "8.0"
@@ -221,9 +342,15 @@ children:
       - id: BP-80.20.60
         name: Manage IT Value Portfolio
         level: 3
+        aliases:
+          - IT Financial Management
+          - Service Financial Management
         description: >-
           Creating and establishing the value portfolio. Defining, analyzing, and examining the value of projects, investments, and activities of the IT function.
         framework_refs:
+          - framework: ITIL
+            external_id: Service Financial Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.2.6"
             version: "8.0"
@@ -236,9 +363,15 @@ children:
       - id: BP-80.20.70
         name: Define and Manage Technology Innovation
         level: 3
+        aliases:
+          - IT Innovation
+          - Emerging Technology Management
         description: >-
           Outline and manage the innovation of technology within the organization. This is inclusive of all forms of new and evolving technology such as artificial intelligence (AI). Research and understand emerging future technological concepts and capabilities. Plan for IT innovation investments. Plan and execute viable innovation projects.
         framework_refs:
+          - framework: ITIL
+            external_id: Strategy Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.2.7"
             version: "8.0"
@@ -249,11 +382,24 @@ children:
           - BC-800
         children: []
   - id: BP-80.30
-    name: Develop and Manage IT Resilience and Risk
+    name: Manage Information Security, Risk, and Service Continuity
     level: 2
+    aliases:
+      - Develop and Manage IT Resilience and Risk
+      - Information Security Management
+      - InfoSec
+      - Cybersecurity Operations
+      - Service Continuity Management
     description: >-
-      Develop and include the processes required to rapidly adapt and respond to any internal or external opportunity, demand, disruption, or threat to IT and cybersecurity. Build a dynamic, strategic, and integrated approach to managing IT and cyber risks, compliance obligations, and resilience, while ensuring alignment with global standards and frameworks.
+      Protect IT and OT assets and ensure resilient service delivery
+      through information security, risk management, business continuity,
+      compliance, and identity-and-access governance. Maps to the ITIL 4
+      Information Security Management, Risk Management, Service Continuity
+      Management, and Identity and Access Management practices.
     framework_refs:
+      - framework: ITIL
+        external_id: Information Security Management
+        version: "4"
       - framework: APQC-PCF
         external_id: "8.3"
         version: "8.0"
@@ -266,9 +412,16 @@ children:
       - id: BP-80.30.10
         name: Develop IT Compliance, Risk, and Security Strategy
         level: 3
+        aliases:
+          - Risk Management
+          - Cybersecurity Strategy
+          - GRC Strategy
         description: >-
           Ensuring that the organization effectively manages IT and cybersecurity risks by developing rules, standards, and strategies that safeguard the confidentiality, integrity, and availability of IT and OT assets. Establish compliance objectives, align with recognized cybersecurity frameworks, and integrate IT and OT risk management to create a unified approach.
         framework_refs:
+          - framework: ITIL
+            external_id: Risk Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.3.1"
             version: "8.0"
@@ -282,9 +435,14 @@ children:
       - id: BP-80.30.20
         name: Develop IT Resilience Strategy
         level: 3
+        aliases:
+          - Cyber Resilience Strategy
         description: >-
           Developing resilience strategies across IT and cybersecurity functions to proactively avoid risks and disruptions. Identify critical risks, prioritize them based on business needs, and establish mitigation approaches to ensure the organization’s ability to adapt and recover from cyber and IT-related threats.
         framework_refs:
+          - framework: ITIL
+            external_id: Service Continuity Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.3.2"
             version: "8.0"
@@ -294,11 +452,18 @@ children:
           - BC-620
         children: []
       - id: BP-80.30.30
-        name: Control IT Risk, Compliance, and Security
+        name: Operate Information Security Controls
         level: 3
+        aliases:
+          - Information Security Operations
+          - Threat and Vulnerability Management
+          - Control IT Risk, Compliance, and Security
         description: >-
           Ensuring effective control over IT and cybersecurity risks, compliance obligations, and security measures. Formulate and execute guidelines in line with regulatory bodies and organizational security objectives. Implement proactive measures such as threat intelligence, vulnerability management, and OT-specific controls to safeguard the organization’s IT and OT environments. This is inclusive of all forms of new and evolving technology such as artificial intelligence (AI).
         framework_refs:
+          - framework: ITIL
+            external_id: Information Security Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.3.3"
             version: "8.0"
@@ -310,11 +475,20 @@ children:
           - BC-620
         children: []
       - id: BP-80.30.40
-        name: Plan and Manage IT Continuity
+        name: Manage Service Continuity
         level: 3
+        aliases:
+          - Service Continuity Management
+          - Business Continuity Planning
+          - Disaster Recovery
+          - DR
+          - Plan and Manage IT Continuity
         description: >-
           Planning and managing the organization’s ability to recover from exposure to internal and external threats, with a focus on IT and cybersecurity. Ensure that continuity plans address cyber-specific scenarios, including ransomware attacks and other evolving threats, while maintaining uninterrupted operations of critical IT and OT services.
         framework_refs:
+          - framework: ITIL
+            external_id: Service Continuity Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.3.4"
             version: "8.0"
@@ -324,11 +498,19 @@ children:
           - BC-620
         children: []
       - id: BP-80.30.50
-        name: Develop and Manage IT Security, Privacy, and Data Protection
+        name: Operate IT Security, Privacy, and Data Protection
         level: 3
+        aliases:
+          - Data Protection
+          - Privacy Operations
+          - Zero Trust Architecture
+          - Develop and Manage IT Security, Privacy, and Data Protection
         description: >-
           Creating and deploying an architecture for securing and ensuring the privacy of data flows throughout the organization. Develop and implement protocols and policies to protect IT and OT environments, aligned with global standards. Incorporate modern security paradigms, such as Zero Trust Architecture, to ensure the safe use of IT services and solutions.
         framework_refs:
+          - framework: ITIL
+            external_id: Information Security Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.3.5"
             version: "8.0"
@@ -340,9 +522,18 @@ children:
       - id: BP-80.30.60
         name: Conduct and Analyze IT Compliance Assessments
         level: 3
+        aliases:
+          - IT Audit
+          - Compliance Assessment
         description: >-
           Evaluate and analyze the IT environment for the compliance of industry regulations and government legislation. Ensure that IT capability and resources meet the set standards.
         framework_refs:
+          - framework: ITIL
+            external_id: Information Security Management
+            version: "4"
+          - framework: COBIT
+            external_id: MEA
+            version: "2019"
           - framework: APQC-PCF
             external_id: "8.3.6"
             version: "8.0"
@@ -355,9 +546,15 @@ children:
       - id: BP-80.30.70
         name: Develop and Execute IT Resilience and Continuity Operations
         level: 3
+        aliases:
+          - Crisis Management
+          - Incident Response Planning
         description: >-
           Create and execute a process to rapidly adapt and respond to any internal or external opportunity, demand, disruption, or threat in IT. Maintain continuous IT operations to protect employees, assets, and overall brand equity.
         framework_refs:
+          - framework: ITIL
+            external_id: Service Continuity Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.3.7"
             version: "8.0"
@@ -367,11 +564,20 @@ children:
           - BC-620
         children: []
       - id: BP-80.30.80
-        name: Manage IT User Identity and Authorization
+        name: Manage Identity and Access
         level: 3
+        aliases:
+          - Identity and Access Management
+          - IAM
+          - Access Management
+          - Authentication and Authorization
+          - Manage IT User Identity and Authorization
         description: >-
           The process of identifying, authenticating, and authorizing IT users to have access to applications, systems, IT components, or networks by associating user rights and restrictions with established identities.
         framework_refs:
+          - framework: ITIL
+            external_id: Information Security Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.3.8"
             version: "8.0"
@@ -381,11 +587,22 @@ children:
           - BC-620
         children: []
   - id: BP-80.40
-    name: Manage Information
+    name: Manage Information, Knowledge, and Data
     level: 2
+    aliases:
+      - Manage Information
+      - Knowledge Management
+      - Data Management
+      - Information Architecture
     description: >-
-      Creating strategies to manage the organization's information and content. Outline the architecture for information. Administer information resources. Administer the management of data and content.
+      Govern the lifecycle of business information and knowledge across
+      the enterprise — strategy, architecture, lifecycle planning, and
+      day-to-day knowledge operations. Maps to the ITIL 4 Knowledge
+      Management practice and broader information-architecture practices.
     framework_refs:
+      - framework: ITIL
+        external_id: Knowledge Management
+        version: "4"
       - framework: APQC-PCF
         external_id: "8.4"
         version: "8.0"
@@ -397,9 +614,15 @@ children:
       - id: BP-80.40.10
         name: Define Business Information and Analytics Strategy
         level: 3
+        aliases:
+          - Data Strategy
+          - Analytics Strategy
         description: >-
           Create an organization-wide strategy for the IT function by combining skills, technologies, applications, and processes in order to attain organizations objectives. This is inclusive of all forms of new and evolving technology such as artificial intelligence (AI).
         framework_refs:
+          - framework: ITIL
+            external_id: Strategy Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.4.1"
             version: "8.0"
@@ -411,9 +634,15 @@ children:
       - id: BP-80.40.20
         name: Define and Maintain Business Information Architecture
         level: 3
+        aliases:
+          - Information Architecture
+          - Data Architecture
         description: >-
           Creating strategies to manage the organization's information and content. Outline the architecture for information collection and communication. Administer information resources, data management and content.
         framework_refs:
+          - framework: ITIL
+            external_id: Architecture Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.4.2"
             version: "8.0"
@@ -426,9 +655,15 @@ children:
       - id: BP-80.40.30
         name: Define and Execute Business Information Lifecycle Planning and Control
         level: 3
+        aliases:
+          - Information Lifecycle Management
+          - Data Lifecycle Management
         description: >-
           Develop and implement strategies to plan and manage the flow of an information system's data from creation and initial storage to the time when it becomes obsolete and deleted.
         framework_refs:
+          - framework: ITIL
+            external_id: Knowledge Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.4.3"
             version: "8.0"
@@ -440,9 +675,15 @@ children:
       - id: BP-80.40.40
         name: Manage Business Information
         level: 3
+        aliases:
+          - Knowledge Management
+          - Content Management
         description: >-
           Creating strategies to administer information and content. Understand the needs of the organization for information and content management. Realize the role of IT services for implementing the overall business strategy. Assess the implications of new technologies for managing information and content. Identify and prioritize the most effective and efficient actions for managing information and content.
         framework_refs:
+          - framework: ITIL
+            external_id: Knowledge Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.4.4"
             version: "8.0"
@@ -452,11 +693,25 @@ children:
           - BC-620
         children: []
   - id: BP-80.50
-    name: Develop and Manage Services/solutions
+    name: Design, Build, and Test Services
     level: 2
+    aliases:
+      - Develop and Manage Services/solutions
+      - Service Design
+      - Software Development
+      - DevOps
     description: >-
-      Designing and maintaining the IT services/solutions catalogue. Evaluate the performance of IT services/solutions. Communicate the results to the management.
+      Translate business needs into well-architected, tested IT services
+      and software products. Covers service design and architecture,
+      lifecycle planning, software development and management, and
+      service validation and testing. Maps to the ITIL 4 Design and
+      Transition Service Value Chain activity and the Service Design,
+      Software Development and Management, and Service Validation and
+      Testing practices.
     framework_refs:
+      - framework: ITIL
+        external_id: Design and Transition
+        version: "4"
       - framework: APQC-PCF
         external_id: "8.5"
         version: "8.0"
@@ -468,9 +723,15 @@ children:
       - id: BP-80.50.10
         name: Develop Service/solution and Integration Strategy
         level: 3
+        aliases:
+          - Service Design Strategy
+          - Integration Strategy
         description: >-
           Developing service/solution along with creating a strategy that provides a base for delivering service/solution aligned with overall business needs. This is inclusive of all forms of new and evolving technology such as artificial intelligence (AI). Conduct research within the services/solutions field for development and integration.
         framework_refs:
+          - framework: ITIL
+            external_id: Service Design
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.5.1"
             version: "8.0"
@@ -482,9 +743,15 @@ children:
       - id: BP-80.50.20
         name: Manage Service/solution Lifecycle Planning
         level: 3
+        aliases:
+          - Service Lifecycle Management
+          - Product Lifecycle Planning
         description: >-
           Executing life-cycle planning for IT services and solutions. Develop new requirements and feature-function enhancements. Create and design a life cycle plan that addresses the current and future state of IT services and solutions.
         framework_refs:
+          - framework: ITIL
+            external_id: Service Design
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.5.2"
             version: "8.0"
@@ -496,9 +763,15 @@ children:
       - id: BP-80.50.30
         name: Develop and Manage Service/solution Architecture
         level: 3
+        aliases:
+          - Solution Architecture
+          - Service Architecture
         description: >-
           Creating the architecture for the IT services and solutions. Assess architecture and business constraints in order to understand integration requirements. Promote existing architecture. Manage exceptions.
         framework_refs:
+          - framework: ITIL
+            external_id: Architecture Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.5.3"
             version: "8.0"
@@ -509,11 +782,19 @@ children:
           - BC-620
         children: []
       - id: BP-80.50.40
-        name: Execute IT Service/solution Creation and Testing
+        name: Build and Test Services
         level: 3
+        aliases:
+          - Software Development
+          - Service Validation and Testing
+          - SDLC
+          - Execute IT Service/solution Creation and Testing
         description: >-
           Understanding customer requirements. Design the IT services and solutions based on the requirements. Develop components for providing the requirements. Train resources to provide support. Test the IT services and solutions in advance. Confirm the customer experience post-sale.
         framework_refs:
+          - framework: ITIL
+            external_id: Software Development and Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.5.4"
             version: "8.0"
@@ -523,11 +804,19 @@ children:
           - BC-620
         children: []
       - id: BP-80.50.50
-        name: Perform Service/solution Maintenance and Testing
+        name: Validate and Maintain Services
         level: 3
+        aliases:
+          - Service Validation and Testing
+          - Quality Assurance
+          - QA
+          - Perform Service/solution Maintenance and Testing
         description: >-
           Engaging in all aspects of service/solution maintenance and testing includes all preventative, routine, and corrective activates. Ensure that IT service/solution are functioning properly and regulations where applicable.
         framework_refs:
+          - framework: ITIL
+            external_id: Service Validation and Testing
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.5.5"
             version: "8.0"
@@ -537,11 +826,24 @@ children:
           - BC-620
         children: []
   - id: BP-80.60
-    name: Deploy Services/solutions
+    name: Enable Change, Release, and Deployment
     level: 2
+    aliases:
+      - Deploy Services/solutions
+      - Change Enablement
+      - Change Management
+      - Release Management
+      - Deployment Management
     description: >-
-      Executing IT services/solutions by creating a strategy for deployment. Plan and execute the changes. Plan and administer the release of its IT services and solutions.
+      Move IT changes safely from build into production. Covers change
+      enablement strategy and policy, change planning and authorisation,
+      release packaging, and deployment execution. Maps to the ITIL 4
+      Obtain/Build Service Value Chain activity and the Change Enablement,
+      Release Management, and Deployment Management practices.
     framework_refs:
+      - framework: ITIL
+        external_id: Change Enablement
+        version: "4"
       - framework: APQC-PCF
         external_id: "8.6"
         version: "8.0"
@@ -553,9 +855,15 @@ children:
       - id: BP-80.60.10
         name: Develop and Manage Service/solution Deployment Strategy
         level: 3
+        aliases:
+          - Deployment Strategy
+          - DevOps Strategy
         description: >-
           Creating and implementing a strategy for the deployment of IT service/solution. Define all of the activities that make the IT function available for use. Establish the change policies for IT services and solutions. Define the deployment process, procedures, and tools. Select the most feasible and practical methodologies for the deployment process.
         framework_refs:
+          - framework: ITIL
+            external_id: Deployment Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.6.1"
             version: "8.0"
@@ -565,11 +873,19 @@ children:
           - BC-620
         children: []
       - id: BP-80.60.20
-        name: Plan Service and Solution Implementation
+        name: Plan Change Implementation
         level: 3
+        aliases:
+          - Change Planning
+          - Change Advisory Board
+          - CAB
+          - Plan Service and Solution Implementation
         description: >-
           Strategizing and executing changes in IT solutions and services. Create a plan for deploying the changes. Communicate with stakeholders about the changes. Administer and implement the changes. Train the resources who will be affected by these changes. Install changes and verify their effect.
         framework_refs:
+          - framework: ITIL
+            external_id: Change Enablement
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.6.2"
             version: "8.0"
@@ -579,11 +895,19 @@ children:
           - BC-620
         children: []
       - id: BP-80.60.30
-        name: Manage Change Deployment Control
+        name: Operate Change Enablement
         level: 3
+        aliases:
+          - Change Enablement
+          - Change Management
+          - Change Authorization
+          - Manage Change Deployment Control
         description: >-
           Creating and deploying an architecture for securing the changes deployed in the organization. Create and develop protocols that ensure proper and efficient use of deployed IT services and solutions. Test, evaluate, and implement the policies and protocols.
         framework_refs:
+          - framework: ITIL
+            external_id: Change Enablement
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.6.3"
             version: "8.0"
@@ -593,11 +917,19 @@ children:
           - BC-620
         children: []
       - id: BP-80.60.40
-        name: Implement Technology Solutions
+        name: Operate Deployment Management
         level: 3
+        aliases:
+          - Deployment Management
+          - CI/CD
+          - Continuous Deployment
+          - Implement Technology Solutions
         description: >-
           Deploy the identified solutions for information technology important for healthy business operations. Confirm status and operational availability of IT resources. Perform testing and distribution of change. Execute roll-back protocol if necessary.
         framework_refs:
+          - framework: ITIL
+            external_id: Deployment Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.6.4"
             version: "8.0"
@@ -607,11 +939,18 @@ children:
           - BC-620
         children: []
       - id: BP-80.60.50
-        name: Perform Service and Solution Rollout
+        name: Operate Release Management
         level: 3
+        aliases:
+          - Release Management
+          - Release Coordination
+          - Perform Service and Solution Rollout
         description: >-
           Strategizing and executing changes in IT solutions and services. Create a plan for deploying the changes. Communicate with stakeholders about the changes. Administer and implement the changes. Train the resources who will be affected by these changes. Install changes and verify their effect.
         framework_refs:
+          - framework: ITIL
+            external_id: Release Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.6.5"
             version: "8.0"
@@ -621,11 +960,27 @@ children:
           - BC-620
         children: []
   - id: BP-80.70
-    name: Create and Manage Support Services/solutions
+    name: Operate Service Desk, Incident, and Request Management
     level: 2
+    aliases:
+      - Create and Manage Support Services/solutions
+      - Service Desk
+      - Incident Management
+      - Problem Management
+      - Service Request Management
+      - IT Operations
     description: >-
-      Establishing and managing services for providing support to users of IT services and solutions. Define the plethora of services by which the organization assists users of computers, software products, or other information technology products.
+      Run day-to-day IT operations and user support — service desk,
+      incident response, problem management, request fulfilment,
+      infrastructure operations, and IT-asset administration. Maps to
+      the ITIL 4 Deliver and Support Service Value Chain activity and
+      the Service Desk, Incident Management, Problem Management, Service
+      Request Management, Monitoring and Event Management, IT Asset
+      Management, and Infrastructure and Platform Management practices.
     framework_refs:
+      - framework: ITIL
+        external_id: Deliver and Support
+        version: "4"
       - framework: APQC-PCF
         external_id: "8.7"
         version: "8.0"
@@ -637,9 +992,15 @@ children:
       - id: BP-80.70.10
         name: Define and Establish Service Delivery Strategy
         level: 3
+        aliases:
+          - Service Delivery Strategy
+          - Operations Strategy
         description: >-
           Defining and establishing strategy for delivering IT services and solutions to the users. Design an IT service delivery model that defines the processes and procedures needed to deliver the IT services and solutions.
         framework_refs:
+          - framework: ITIL
+            external_id: Strategy Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.7.1"
             version: "8.0"
@@ -651,9 +1012,15 @@ children:
       - id: BP-80.70.20
         name: Define and Develop Service Support Strategy
         level: 3
+        aliases:
+          - Support Strategy
+          - Service Desk Strategy
         description: >-
           Defining and creating a strategy for provision of support to users of IT services and solutions.
         framework_refs:
+          - framework: ITIL
+            external_id: Service Desk
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.7.2"
             version: "8.0"
@@ -663,11 +1030,17 @@ children:
           - BC-620
         children: []
       - id: BP-80.70.30
-        name: Plan and Manage Service Delivery Control
+        name: Manage Service Delivery
         level: 3
+        aliases:
+          - Service Delivery Management
+          - Plan and Manage Service Delivery Control
         description: >-
           Determine and manage service delivery flow across different business functions. Understand the level of services needed by different stakeholders. Identify major service delivery touch points and criticality associated. Ensure timely communication with users.
         framework_refs:
+          - framework: ITIL
+            external_id: Service Level Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.7.3"
             version: "8.0"
@@ -677,11 +1050,18 @@ children:
           - BC-620
         children: []
       - id: BP-80.70.40
-        name: Develop and Manage Infrastructure Resource Planning
+        name: Plan Infrastructure and Platform Capacity
         level: 3
+        aliases:
+          - Capacity and Performance Management
+          - Infrastructure Capacity Planning
+          - Develop and Manage Infrastructure Resource Planning
         description: >-
           Developing and managing the resources required for administration of infrastructure. Manage the IT inventory and assets to meet organization's IT resource capacity.
         framework_refs:
+          - framework: ITIL
+            external_id: Capacity and Performance Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.7.4"
             version: "8.0"
@@ -691,11 +1071,17 @@ children:
           - BC-620
         children: []
       - id: BP-80.70.50
-        name: Define Service Support Planning
+        name: Plan Service Support
         level: 3
+        aliases:
+          - Service Support Planning
+          - Define Service Support Planning
         description: >-
           Develop strategies and methodologies to provide service support. Examine service levels, support complexity, stakeholder requirements to offer service support.
         framework_refs:
+          - framework: ITIL
+            external_id: Service Desk
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.7.5"
             version: "8.0"
@@ -705,11 +1091,18 @@ children:
           - BC-620
         children: []
       - id: BP-80.70.60
-        name: Develop and Manage Service Delivery Operations
+        name: Operate Service Delivery
         level: 3
+        aliases:
+          - Service Delivery Operations
+          - IT Operations Management
+          - Develop and Manage Service Delivery Operations
         description: >-
           Developing and managing different delivery services using service delivery systems for operational activities within the IT function in order to achieve organizations goal.
         framework_refs:
+          - framework: ITIL
+            external_id: Monitoring and Event Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.7.6"
             version: "8.0"
@@ -719,11 +1112,20 @@ children:
           - BC-620
         children: []
       - id: BP-80.70.70
-        name: Manage Infrastructure Resource Administration
+        name: Operate IT Asset Management
         level: 3
+        aliases:
+          - IT Asset Management
+          - ITAM
+          - Configuration Management
+          - CMDB
+          - Manage Infrastructure Resource Administration
         description: >-
           Managing the resources required for administration of IT infrastructure. Manage the IT inventory and assets. Take care of the organization's IT resource capacity.
         framework_refs:
+          - framework: ITIL
+            external_id: IT Asset Management
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.7.7"
             version: "8.0"
@@ -733,11 +1135,22 @@ children:
           - BC-620
         children: []
       - id: BP-80.70.80
-        name: Operate IT User Support
+        name: Operate Service Desk and Request Fulfilment
         level: 3
+        aliases:
+          - Service Desk
+          - Help Desk
+          - Incident Management
+          - Problem Management
+          - Service Request Management
+          - Request Fulfilment
+          - Operate IT User Support
         description: >-
           Managing systematic user support functionality and capability through defined procedures. Determine, record, and monitor user requests. Execute issue/request resolution. Utilize escalation path when needed. Resolve issue/request.
         framework_refs:
+          - framework: ITIL
+            external_id: Service Desk
+            version: "4"
           - framework: APQC-PCF
             external_id: "8.7.8"
             version: "8.0"
