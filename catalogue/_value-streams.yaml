@@ -2577,21 +2577,24 @@ value_streams:
     capability_ids:
     - BC-2160
     - BC-2120
-    process_ids: []
+    process_ids:
+    - BP-150.40
     notes: Multi-channel first notice of loss capture and registration; Policyholder identification and contact verification at FNOL
   - id: VS-240.20
     stage_order: 2
     stage_name: Triage & Coverage
     capability_ids:
     - BC-2160
-    process_ids: []
+    process_ids:
+    - BP-150.40
     notes: Severity triage, coverage verification, and assignment
   - id: VS-240.30
     stage_order: 3
     stage_name: Investigation & Adjustment
     capability_ids:
     - BC-2160
-    process_ids: []
+    process_ids:
+    - BP-150.40
     notes: Investigation, liability assessment, and loss adjustment
   - id: VS-240.40
     stage_order: 4
@@ -2599,14 +2602,18 @@ value_streams:
     capability_ids:
     - BC-2160
     - BC-2180
-    process_ids: []
+    process_ids:
+    - BP-150.40
+    - BP-150.60
     notes: Case reserve setting and revision through claim life; IBNR and bulk reserve estimation feeding portfolio reserves
   - id: VS-240.50
     stage_order: 5
     stage_name: Settlement
     capability_ids:
     - BC-2160
-    process_ids: []
+    process_ids:
+    - BP-150.40
+    - BP-90.70
     notes: Settlement negotiation, payment, and litigation closure
   - id: VS-240.60
     stage_order: 6
@@ -2614,7 +2621,9 @@ value_streams:
     capability_ids:
     - BC-2160
     - BC-2170
-    process_ids: []
+    process_ids:
+    - BP-150.40
+    - BP-150.50
     notes: Salvage, subrogation, and third-party recovery; Reinsurance recoveries against ceded claims
 - id: VS-250
   name: Flight-to-Settle
@@ -6833,7 +6842,9 @@ value_streams:
     capability_ids:
     - BC-2110
     - BC-2130
-    process_ids: []
+    process_ids:
+    - BP-150.20
+    - BP-150.70
     notes: Producer / broker submission capture and routing; Submission triage and risk data collection
   - id: VS-450.20
     stage_order: 2
@@ -6841,28 +6852,32 @@ value_streams:
     capability_ids:
     - BC-2130
     - BC-2180
-    process_ids: []
+    process_ids:
+    - BP-150.20
     notes: Risk evaluation, exposure rating, and underwriting authority enforcement; Pricing model application and rate adequacy support
   - id: VS-450.30
     stage_order: 3
     stage_name: Quote Production
     capability_ids:
     - BC-2130
-    process_ids: []
+    process_ids:
+    - BP-150.20
     notes: Quote generation, indication letters, and broker negotiation support
   - id: VS-450.40
     stage_order: 4
     stage_name: Reinsurance Check
     capability_ids:
     - BC-2170
-    process_ids: []
+    process_ids:
+    - BP-150.50
     notes: Facultative reinsurance enquiry and treaty capacity check
   - id: VS-450.50
     stage_order: 5
     stage_name: Underwriting Decision
     capability_ids:
     - BC-2130
-    process_ids: []
+    process_ids:
+    - BP-150.20
     notes: Acceptance, declination, or referral with conditions
   - id: VS-450.60
     stage_order: 6
@@ -6870,7 +6885,9 @@ value_streams:
     capability_ids:
     - BC-2130
     - BC-2110
-    process_ids: []
+    process_ids:
+    - BP-150.20
+    - BP-150.30
     notes: Binding of agreed terms and conditions; Broker / producer bind confirmation and commission setup
   - id: VS-450.70
     stage_order: 7
@@ -6878,14 +6895,16 @@ value_streams:
     capability_ids:
     - BC-2140
     - BC-2150
-    process_ids: []
+    process_ids:
+    - BP-150.30
     notes: Policy document generation, schedule assembly, and activation; Initial premium booking and instalment schedule setup
   - id: VS-450.80
     stage_order: 8
     stage_name: Reinsurance Cession Setup
     capability_ids:
     - BC-2170
-    process_ids: []
+    process_ids:
+    - BP-150.50
     notes: Cession to treaty programme and bordereau preparation
 - id: VS-460
   name: Record-to-Report
