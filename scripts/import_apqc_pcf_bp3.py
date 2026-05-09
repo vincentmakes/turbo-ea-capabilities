@@ -136,6 +136,67 @@ TREE["BP-10"] = {
 
 # Other BP1s appended progressively below as we drill them. ----------------
 
+TREE["BP-60"] = {
+    "id": "BP-60",
+    "apqc": "6.0",
+    "name": "Manage Customer Service",
+    "description": "Develop and run the customer-care function: strategy, contact-center operations, and continuous evaluation that resolves customer issues and protects loyalty.",
+    "realizes": ["BC-430", "BC-420"],
+    "children": [
+        {
+            "id": "BP-60.10", "apqc": "6.1",
+            "name": "Develop Customer Care/Customer Service Strategy",
+            "description": "Define the customer-service operating model, channels, service levels, and self-service strategy.",
+            "realizes": ["BC-430", "BC-100"],
+            "children": [
+                ("BP-60.10.10", "6.1.1", "Develop Customer Service Segmentation/Prioritisation",
+                 "Define customer-service segments and prioritisation rules tied to value and risk.",
+                 ["BC-430", "BC-420"]),
+                ("BP-60.10.20", "6.1.2", "Define Customer Service Policies and Procedures",
+                 "Establish customer-service policies, procedures, and decision-rights frameworks.",
+                 ["BC-430"]),
+                ("BP-60.10.30", "6.1.3", "Establish Service Levels for Customers",
+                 "Define the SLAs and response-time targets that customer service must achieve.",
+                 ["BC-430", "BC-720"]),
+            ],
+        },
+        {
+            "id": "BP-60.20", "apqc": "6.2",
+            "name": "Plan and Manage Customer Service Operations",
+            "description": "Run day-to-day customer service operations: contact handling, case management, escalation, and workforce management.",
+            "realizes": ["BC-430"],
+            "children": [
+                ("BP-60.20.10", "6.2.1", "Plan and Manage Customer Service Workforce",
+                 "Plan, schedule, and develop the customer-service workforce.",
+                 ["BC-430", "BC-300"]),
+                ("BP-60.20.20", "6.2.2", "Manage Customer Service Requests/Inquiries",
+                 "Receive, route, and resolve customer service requests and inquiries.",
+                 ["BC-430"]),
+                ("BP-60.20.30", "6.2.3", "Manage Customer Complaints",
+                 "Capture, route, and resolve customer complaints, including escalation handling.",
+                 ["BC-430", "BC-720"]),
+            ],
+        },
+        {
+            "id": "BP-60.30", "apqc": "6.3",
+            "name": "Measure and Evaluate Customer Service Operations",
+            "description": "Measure service performance, customer satisfaction, and operational efficiency; drive continuous improvement.",
+            "realizes": ["BC-430", "BC-720"],
+            "children": [
+                ("BP-60.30.10", "6.3.1", "Measure Customer Satisfaction with Customer Requests/Inquiries Handling",
+                 "Run customer-satisfaction surveys and analytics for inquiry handling.",
+                 ["BC-430"]),
+                ("BP-60.30.20", "6.3.2", "Measure Customer Satisfaction with Complaint Handling",
+                 "Run customer-satisfaction surveys and analytics for complaint resolution.",
+                 ["BC-430"]),
+                ("BP-60.30.30", "6.3.3", "Measure Customer Satisfaction with Products and Services",
+                 "Measure overall customer satisfaction with products, services, and the brand.",
+                 ["BC-430", "BC-820"]),
+            ],
+        },
+    ],
+}
+
 TREE["BP-50"] = {
     "id": "BP-50",
     "apqc": "5.0",

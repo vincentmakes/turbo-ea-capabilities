@@ -24,7 +24,45 @@ children:
     realizes_capability_ids:
       - BC-430
       - BC-100
-    children: []
+    children:
+      - id: BP-60.10.10
+        name: Develop Customer Service Segmentation/Prioritisation
+        level: 3
+        description: >-
+          Define customer-service segments and prioritisation rules tied to value and risk.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "6.1.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-430
+          - BC-420
+        children: []
+      - id: BP-60.10.20
+        name: Define Customer Service Policies and Procedures
+        level: 3
+        description: >-
+          Establish customer-service policies, procedures, and decision-rights frameworks.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "6.1.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-430
+        children: []
+      - id: BP-60.10.30
+        name: Establish Service Levels for Customers
+        level: 3
+        description: >-
+          Define the SLAs and response-time targets that customer service must achieve.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "6.1.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-430
+          - BC-720
+        children: []
   - id: BP-60.20
     name: Plan and Manage Customer Service Operations
     level: 2
@@ -36,7 +74,45 @@ children:
         version: "7.4.0"
     realizes_capability_ids:
       - BC-430
-    children: []
+    children:
+      - id: BP-60.20.10
+        name: Plan and Manage Customer Service Workforce
+        level: 3
+        description: >-
+          Plan, schedule, and develop the customer-service workforce.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "6.2.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-430
+          - BC-300
+        children: []
+      - id: BP-60.20.20
+        name: Manage Customer Service Requests/Inquiries
+        level: 3
+        description: >-
+          Receive, route, and resolve customer service requests and inquiries.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "6.2.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-430
+        children: []
+      - id: BP-60.20.30
+        name: Manage Customer Complaints
+        level: 3
+        description: >-
+          Capture, route, and resolve customer complaints, including escalation handling.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "6.2.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-430
+          - BC-720
+        children: []
   - id: BP-60.30
     name: Measure and Evaluate Customer Service Operations
     level: 2
@@ -49,4 +125,41 @@ children:
     realizes_capability_ids:
       - BC-430
       - BC-720
-    children: []
+    children:
+      - id: BP-60.30.10
+        name: Measure Customer Satisfaction with Customer Requests/Inquiries Handling
+        level: 3
+        description: >-
+          Run customer-satisfaction surveys and analytics for inquiry handling.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "6.3.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-430
+        children: []
+      - id: BP-60.30.20
+        name: Measure Customer Satisfaction with Complaint Handling
+        level: 3
+        description: >-
+          Run customer-satisfaction surveys and analytics for complaint resolution.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "6.3.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-430
+        children: []
+      - id: BP-60.30.30
+        name: Measure Customer Satisfaction with Products and Services
+        level: 3
+        description: >-
+          Measure overall customer satisfaction with products, services, and the brand.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "6.3.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-430
+          - BC-820
+        children: []
