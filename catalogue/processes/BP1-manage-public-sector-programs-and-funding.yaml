@@ -6,7 +6,7 @@ description: >-
   Operate public-sector procurement and program funding: government procurement under FAR / EU rules, program funding administration, grants and awards, public-sector reporting.
 framework_refs:
   - framework: APQC-PCF
-    external_id: "FEAF — Mission Support / Resource Management domains; FAR / EU procurement"
+    external_id: "FEAF — Mission Support / Resource Management; FAR / EU procurement"
 realizes_capability_ids:
   - BC-100
 children:
@@ -17,7 +17,40 @@ children:
       Plan, solicit, award, and administer government contracts under FAR / EU procurement rules.
     realizes_capability_ids:
       - BC-500
-    children: []
+    children:
+      - id: BP-360.10.10
+        name: Plan Acquisitions and Conduct Market Research
+        level: 3
+        description: >-
+          Conduct acquisition planning and market research per FAR Part 7 / EU equivalents.
+        realizes_capability_ids:
+          - BC-500
+        children: []
+      - id: BP-360.10.20
+        name: Publish Solicitations
+        level: 3
+        description: >-
+          Draft and publish RFPs, RFQs, and IFBs.
+        realizes_capability_ids:
+          - BC-500
+        children: []
+      - id: BP-360.10.30
+        name: Evaluate Bids and Award Contracts
+        level: 3
+        description: >-
+          Evaluate bids; conduct source selection; award contracts.
+        realizes_capability_ids:
+          - BC-500
+        children: []
+      - id: BP-360.10.40
+        name: Administer Public-Sector Contracts
+        level: 3
+        description: >-
+          Administer contracts: modifications, deliverable acceptance, closeout.
+        realizes_capability_ids:
+          - BC-500
+          - BC-150
+        children: []
   - id: BP-360.20
     name: Manage Program Funding and Appropriations
     level: 2
@@ -26,14 +59,60 @@ children:
     realizes_capability_ids:
       - BC-200
       - BC-230
-    children: []
+    children:
+      - id: BP-360.20.10
+        name: Manage Appropriations and Allotments
+        level: 3
+        description: >-
+          Receive and allocate appropriations to programs and budget lines.
+        realizes_capability_ids:
+          - BC-230
+        children: []
+      - id: BP-360.20.20
+        name: Manage Obligations and Outlays
+        level: 3
+        description: >-
+          Record obligations against appropriations; track outlays.
+        realizes_capability_ids:
+          - BC-200
+        children: []
+      - id: BP-360.20.30
+        name: Manage Apportionment and Reprogramming
+        level: 3
+        description: >-
+          Manage apportionment splits and reprogramming requests.
+        realizes_capability_ids:
+          - BC-230
+        children: []
   - id: BP-360.30
     name: Manage Grants and Awards
     level: 2
     description: >-
       Award and administer grants and cooperative agreements; manage grantee compliance and reporting.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-360.30.10
+        name: Develop Grant Programs and Notices
+        level: 3
+        description: >-
+          Design grant programs and publish funding-opportunity announcements.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-360.30.20
+        name: Process Grant Applications and Awards
+        level: 3
+        description: >-
+          Receive grant applications; evaluate and award grants.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-360.30.30
+        name: Monitor Grantee Performance and Audit
+        level: 3
+        description: >-
+          Monitor grantee performance; conduct single-audit or equivalent oversight.
+        realizes_capability_ids:
+          - BC-140
+        children: []
   - id: BP-360.40
     name: Manage Public-Sector Performance and Statistical Reporting
     level: 2
@@ -41,4 +120,28 @@ children:
       Produce statutory performance, statistical, and accountability reports per IPSAS / GFSM standards.
     realizes_capability_ids:
       - BC-130
-    children: []
+    children:
+      - id: BP-360.40.10
+        name: Produce IPSAS Financial Statements
+        level: 3
+        description: >-
+          Produce public-sector financial statements per IPSAS or equivalent.
+        realizes_capability_ids:
+          - BC-200
+        children: []
+      - id: BP-360.40.20
+        name: Produce GFSM Statistical Reports
+        level: 3
+        description: >-
+          Produce IMF GFSM statistical reports and OECD equivalents.
+        realizes_capability_ids:
+          - BC-130
+        children: []
+      - id: BP-360.40.30
+        name: Produce Mission/Performance Accountability Reports
+        level: 3
+        description: >-
+          Produce statutory mission and performance accountability reports.
+        realizes_capability_ids:
+          - BC-130
+        children: []

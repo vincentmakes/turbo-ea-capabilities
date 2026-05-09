@@ -3,7 +3,7 @@ name: Operate Hospitality Properties and Distribution
 level: 1
 industry: Travel & Hospitality
 description: >-
-  Run hospitality-specific operations: reservations and inventory, guest experience, distribution and channel, loyalty, revenue management, and property operations (rooms, F&B, events).
+  Run hospitality-specific operations: reservations and inventory, guest experience, distribution and channel, loyalty, revenue management, property operations.
 framework_refs:
   - framework: APQC-PCF
     external_id: "AHLA USALI 11th Ed + HEDNA + OpenTravel + HTNG reference architecture"
@@ -16,15 +16,69 @@ children:
     description: >-
       Manage room, table, and event-space inventory; receive and confirm reservations across channels.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-380.10.10
+        name: Manage Inventory Allotments and Restrictions
+        level: 3
+        description: >-
+          Manage room/table/event-space inventory, allotments, and stay restrictions.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-380.10.20
+        name: Process Reservations and Modifications
+        level: 3
+        description: >-
+          Receive reservations across channels; process changes, cancellations, and waitlist.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-380.10.30
+        name: Manage Group Blocks and Allocations
+        level: 3
+        description: >-
+          Manage group blocks for events, conferences, and tour operators.
+        realizes_capability_ids: []
+        children: []
   - id: BP-380.20
     name: Manage Guest Experience and Stay
     level: 2
     description: >-
-      Operate the guest journey from arrival through stay to departure, including check-in, in-stay servicing, and check-out.
+      Operate the guest journey from arrival through stay to departure.
     realizes_capability_ids:
       - BC-430
-    children: []
+    children:
+      - id: BP-380.20.10
+        name: Manage Pre-Arrival and Check-In
+        level: 3
+        description: >-
+          Conduct pre-arrival communication; manage check-in, ID verification, and key issuance.
+        realizes_capability_ids:
+          - BC-430
+        children: []
+      - id: BP-380.20.20
+        name: Service In-Stay Requests
+        level: 3
+        description: >-
+          Manage in-stay guest requests, housekeeping requests, and amenity orders.
+        realizes_capability_ids:
+          - BC-430
+        children: []
+      - id: BP-380.20.30
+        name: Manage Check-Out and Folio Settlement
+        level: 3
+        description: >-
+          Manage check-out, folio review, and final charge settlement.
+        realizes_capability_ids:
+          - BC-430
+          - BC-200
+        children: []
+      - id: BP-380.20.40
+        name: Resolve Guest Complaints and Service Recovery
+        level: 3
+        description: >-
+          Resolve guest complaints with service-recovery protocols.
+        realizes_capability_ids:
+          - BC-430
+        children: []
   - id: BP-380.30
     name: Manage Distribution and Channel
     level: 2
@@ -32,7 +86,32 @@ children:
       Operate distribution across direct, OTA, GDS, and metasearch channels; manage rate parity and content.
     realizes_capability_ids:
       - BC-410
-    children: []
+    children:
+      - id: BP-380.30.10
+        name: Connect and Manage Distribution Channels
+        level: 3
+        description: >-
+          Connect to OTA, GDS, metasearch, and wholesaler channels via channel manager.
+        realizes_capability_ids:
+          - BC-410
+        children: []
+      - id: BP-380.30.20
+        name: Manage Rate Parity and Content Distribution
+        level: 3
+        description: >-
+          Maintain rate parity across channels; distribute content (descriptions, photos, amenities).
+        realizes_capability_ids:
+          - BC-440
+        children: []
+      - id: BP-380.30.30
+        name: Manage Direct Booking Channels
+        level: 3
+        description: >-
+          Operate brand.com, mobile app, and call-centre booking channels.
+        realizes_capability_ids:
+          - BC-410
+          - BC-600
+        children: []
   - id: BP-380.40
     name: Manage Loyalty Programs
     level: 2
@@ -40,7 +119,30 @@ children:
       Operate guest loyalty programs across enrolment, accrual, redemption, and partner exchange.
     realizes_capability_ids:
       - BC-420
-    children: []
+    children:
+      - id: BP-380.40.10
+        name: Enrol and Tier Loyalty Members
+        level: 3
+        description: >-
+          Enrol guests; manage tier qualification and re-qualification.
+        realizes_capability_ids:
+          - BC-420
+        children: []
+      - id: BP-380.40.20
+        name: Process Loyalty Accruals and Redemptions
+        level: 3
+        description: >-
+          Process points/nights accruals and redemptions across the program.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-380.40.30
+        name: Manage Loyalty Partner Exchange
+        level: 3
+        description: >-
+          Manage loyalty exchange with airline, credit-card, and other program partners.
+        realizes_capability_ids:
+          - BC-510
+        children: []
   - id: BP-380.50
     name: Manage Revenue Management and Yield
     level: 2
@@ -48,12 +150,58 @@ children:
       Forecast demand and optimise pricing, length-of-stay controls, and channel mix.
     realizes_capability_ids:
       - BC-440
-    children: []
+    children:
+      - id: BP-380.50.10
+        name: Forecast Demand and Set Rate Strategy
+        level: 3
+        description: >-
+          Forecast demand by segment, channel, and date; set rate-management strategy.
+        realizes_capability_ids:
+          - BC-440
+        children: []
+      - id: BP-380.50.20
+        name: Operate Yield and Pricing Controls
+        level: 3
+        description: >-
+          Operate dynamic pricing, length-of-stay controls, and channel-mix optimisation.
+        realizes_capability_ids:
+          - BC-440
+        children: []
   - id: BP-380.60
     name: Operate Property Operations
     level: 2
     description: >-
-      Operate rooms, food & beverage, events, housekeeping, and property maintenance.
+      Operate rooms, food & beverage, events, housekeeping, property maintenance.
     realizes_capability_ids:
       - BC-700
-    children: []
+    children:
+      - id: BP-380.60.10
+        name: Operate Rooms Division
+        level: 3
+        description: >-
+          Operate front office, housekeeping, and rooms division.
+        realizes_capability_ids:
+          - BC-700
+        children: []
+      - id: BP-380.60.20
+        name: Operate F&B and Banqueting
+        level: 3
+        description: >-
+          Operate restaurants, bars, banqueting, and in-room dining services.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-380.60.30
+        name: Operate Events and Group Services
+        level: 3
+        description: >-
+          Operate group events: meeting setup, AV, banquet service, group dining.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-380.60.40
+        name: Operate Property Engineering and Maintenance
+        level: 3
+        description: >-
+          Operate property engineering, preventive and corrective maintenance.
+        realizes_capability_ids:
+          - BC-700
+        children: []

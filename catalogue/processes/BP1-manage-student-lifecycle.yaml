@@ -3,10 +3,10 @@ name: Manage Student Lifecycle
 level: 1
 industry: Education
 description: >-
-  Run the end-to-end student lifecycle from prospective recruitment through admissions, enrolment, learning delivery, assessment, graduation, and alumni engagement.
+  Run the end-to-end student lifecycle from prospective recruitment through admissions, enrolment, learning delivery, assessment, graduation, alumni engagement.
 framework_refs:
   - framework: APQC-PCF
-    external_id: "Education PCF v7.2 — Student lifecycle categories"
+    external_id: "Education PCF v7.2.1 — Student lifecycle categories"
 realizes_capability_ids:
   - BC-100
 children:
@@ -16,39 +16,154 @@ children:
     description: >-
       Recruit prospective students and process admissions, including selection and offer-acceptance.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-240.10.10
+        name: Conduct Outreach and Recruitment
+        level: 3
+        description: >-
+          Conduct outreach campaigns and recruitment events.
+        realizes_capability_ids:
+          - BC-400
+        children: []
+      - id: BP-240.10.20
+        name: Process Applications and Selection
+        level: 3
+        description: >-
+          Receive applications; conduct selection and admissions decisions.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-240.10.30
+        name: Issue Offers and Manage Acceptance
+        level: 3
+        description: >-
+          Issue offers; manage acceptance, deferral, and rejection.
+        realizes_capability_ids: []
+        children: []
   - id: BP-240.20
     name: Enrol and Register Students
     level: 2
     description: >-
       Enrol admitted students and register them in courses and programmes for each academic period.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-240.20.10
+        name: Enrol Students into Programmes
+        level: 3
+        description: >-
+          Enrol admitted students into academic programmes.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-240.20.20
+        name: Register Students for Courses
+        level: 3
+        description: >-
+          Register students for courses each academic period; manage waitlists.
+        realizes_capability_ids: []
+        children: []
   - id: BP-240.30
     name: Deliver Teaching and Learning
     level: 2
     description: >-
       Deliver teaching and learning experiences across modes (in-person, online, hybrid).
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-240.30.10
+        name: Schedule Classes and Resources
+        level: 3
+        description: >-
+          Schedule classes, instructors, and learning spaces.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-240.30.20
+        name: Deliver Instruction Across Modes
+        level: 3
+        description: >-
+          Deliver in-person, online, and hybrid instruction.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-240.30.30
+        name: Manage Learning Management Systems
+        level: 3
+        description: >-
+          Operate the LMS and digital learning environments.
+        realizes_capability_ids:
+          - BC-600
+        children: []
   - id: BP-240.40
     name: Assess Students and Award Credentials
     level: 2
     description: >-
       Assess student learning, manage examinations and assignments, and award qualifications.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-240.40.10
+        name: Conduct Assessments and Examinations
+        level: 3
+        description: >-
+          Conduct course assessments, exams, and equivalent learning measures.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-240.40.20
+        name: Manage Grading and Academic Standing
+        level: 3
+        description: >-
+          Manage grading, GPA, and academic standing.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-240.40.30
+        name: Verify Completion and Award Credentials
+        level: 3
+        description: >-
+          Verify programme completion; award degrees, diplomas, certificates.
+        realizes_capability_ids: []
+        children: []
   - id: BP-240.50
     name: Manage Student Support and Wellbeing
     level: 2
     description: >-
-      Provide academic, financial, mental-health, and accessibility support to enrolled students.
+      Provide academic, financial, mental-health, accessibility support to enrolled students.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-240.50.10
+        name: Provide Academic and Career Support
+        level: 3
+        description: >-
+          Provide academic advising, tutoring, and career-services support.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-240.50.20
+        name: Provide Financial Aid and Bursary Support
+        level: 3
+        description: >-
+          Administer financial aid, bursaries, scholarships, and student loans.
+        realizes_capability_ids:
+          - BC-200
+        children: []
+      - id: BP-240.50.30
+        name: Provide Wellbeing and Accessibility Services
+        level: 3
+        description: >-
+          Provide mental-health, counselling, and accessibility services.
+        realizes_capability_ids: []
+        children: []
   - id: BP-240.60
     name: Manage Graduation and Alumni Relations
     level: 2
     description: >-
       Process graduation and confer awards; engage alumni for lifelong relationships and giving.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-240.60.10
+        name: Process Graduation Ceremonies
+        level: 3
+        description: >-
+          Process graduation ceremonies and conferral of awards.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-240.60.20
+        name: Manage Alumni Engagement and Giving
+        level: 3
+        description: >-
+          Engage alumni for ongoing relationships, advancement, and giving.
+        realizes_capability_ids: []
+        children: []

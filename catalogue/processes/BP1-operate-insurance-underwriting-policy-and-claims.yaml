@@ -3,10 +3,10 @@ name: Operate Insurance Underwriting, Policy, and Claims
 level: 1
 industry: Insurance
 description: >-
-  Run insurance-specific operations: product filing, underwriting, policy administration, claims handling, reinsurance, and actuarial reserving.
+  Run insurance-specific operations: product filing, underwriting, policy administration, claims handling, reinsurance, actuarial reserving, distribution.
 framework_refs:
-  - framework: BIAN
-    external_id: "Insurance reference (where applicable)"
+  - framework: APQC-PCF
+    external_id: "BIAN Insurance reference + ACORD Process Model (Distribution / UW / Policy / Claims / Reinsurance)"
 realizes_capability_ids:
   - BC-100
 children:
@@ -16,35 +16,173 @@ children:
     description: >-
       Develop, file, and obtain regulatory approval for insurance products and rate plans.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-150.10.10
+        name: Develop Insurance Product Concepts
+        level: 3
+        description: >-
+          Develop insurance product concepts; conduct actuarial pricing analysis.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-150.10.20
+        name: File Products with Regulators
+        level: 3
+        description: >-
+          Prepare regulatory filings (rate, form, rule); manage filing process.
+        realizes_capability_ids:
+          - BC-130
+        children: []
+      - id: BP-150.10.30
+        name: Manage Product Approvals and Re-Filings
+        level: 3
+        description: >-
+          Track filing decisions; manage re-filings and product changes.
+        realizes_capability_ids:
+          - BC-130
+        children: []
   - id: BP-150.20
     name: Manage Underwriting Operations
     level: 2
     description: >-
       Risk-assess and price insurance applications; bind cover.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-150.20.10
+        name: Receive and Triage Submissions
+        level: 3
+        description: >-
+          Receive submissions from brokers and direct channels; triage for underwriter assignment.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-150.20.20
+        name: Conduct Risk Assessment and Pricing
+        level: 3
+        description: >-
+          Conduct risk assessment; apply rating engines; price the risk.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-150.20.30
+        name: Render Underwriting Decisions
+        level: 3
+        description: >-
+          Underwrite to bind authority limits; decline, refer, or quote.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-150.20.40
+        name: Bind and Issue Quotes
+        level: 3
+        description: >-
+          Issue quotes; bind cover when accepted.
+        realizes_capability_ids: []
+        children: []
   - id: BP-150.30
     name: Manage Policy Administration
     level: 2
     description: >-
       Administer policies across the lifecycle: issuance, endorsements, renewals, cancellations.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-150.30.10
+        name: Issue Policies and Documents
+        level: 3
+        description: >-
+          Issue policy documents, schedules, and certificates.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-150.30.20
+        name: Process Endorsements and Mid-Term Changes
+        level: 3
+        description: >-
+          Process endorsements, mid-term changes, and notifications.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-150.30.30
+        name: Manage Renewals and Cancellations
+        level: 3
+        description: >-
+          Manage renewal cycles, non-renewals, and cancellations.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-150.30.40
+        name: Manage Premium Billing and Collection
+        level: 3
+        description: >-
+          Bill and collect premiums; manage premium financing.
+        realizes_capability_ids:
+          - BC-200
+        children: []
   - id: BP-150.40
     name: Manage Claims Operations
     level: 2
     description: >-
       Receive, investigate, adjudicate, and pay insurance claims, including fraud and recovery.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-150.40.10
+        name: Receive and Triage FNOL
+        level: 3
+        description: >-
+          Receive first notice of loss; triage and assign claim.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-150.40.20
+        name: Investigate and Adjust Claims
+        level: 3
+        description: >-
+          Investigate claims; engage adjusters and experts; assess coverage and liability.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-150.40.30
+        name: Estimate Reserves and Approve Settlement
+        level: 3
+        description: >-
+          Estimate claim reserves; approve and pay settlement.
+        realizes_capability_ids:
+          - BC-200
+        children: []
+      - id: BP-150.40.40
+        name: Detect and Investigate Claims Fraud
+        level: 3
+        description: >-
+          Apply fraud-detection analytics; investigate suspicious claims; refer to SIU.
+        realizes_capability_ids:
+          - BC-130
+        children: []
+      - id: BP-150.40.50
+        name: Manage Subrogation and Recoveries
+        level: 3
+        description: >-
+          Pursue subrogation and salvage recoveries from third parties.
+        realizes_capability_ids: []
+        children: []
   - id: BP-150.50
     name: Manage Reinsurance Operations
     level: 2
     description: >-
       Cede risk to reinsurers; administer reinsurance treaties and recoveries.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-150.50.10
+        name: Negotiate and Place Reinsurance Treaties
+        level: 3
+        description: >-
+          Place treaty and facultative reinsurance with reinsurers.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-150.50.20
+        name: Cede Risk and Manage Bordereaux
+        level: 3
+        description: >-
+          Cede underwritten risk per treaty terms; produce bordereaux to reinsurers.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-150.50.30
+        name: Manage Reinsurance Claims Recoveries
+        level: 3
+        description: >-
+          Submit and recover reinsurance claims from treaty reinsurers.
+        realizes_capability_ids: []
+        children: []
   - id: BP-150.60
     name: Manage Actuarial Reserving and Capital
     level: 2
@@ -52,13 +190,63 @@ children:
       Calculate insurance reserves, capital requirements, and produce statutory actuarial reports.
     realizes_capability_ids:
       - BC-200
-    children: []
+    children:
+      - id: BP-150.60.10
+        name: Calculate IBNR and Loss Reserves
+        level: 3
+        description: >-
+          Calculate IBNR and loss reserves using actuarial methods.
+        realizes_capability_ids:
+          - BC-200
+        children: []
+      - id: BP-150.60.20
+        name: Calculate Capital Requirements
+        level: 3
+        description: >-
+          Calculate Solvency II / NAIC RBC / IFRS 17 capital and reserves.
+        realizes_capability_ids:
+          - BC-200
+        children: []
+      - id: BP-150.60.30
+        name: Produce Statutory Actuarial Reports
+        level: 3
+        description: >-
+          Produce statutory actuarial reports including ORSA / opinion / external SAO.
+        realizes_capability_ids:
+          - BC-200
+          - BC-130
+        children: []
   - id: BP-150.70
     name: Manage Insurance Distribution and Producer Network
     level: 2
     description: >-
-      Manage broker, agent, MGA, and direct distribution channels: producer onboarding, licensing, commissioning, and performance management. A major operating area in ACORD's Process Model not otherwise covered above.
+      Manage broker, agent, MGA, and direct distribution channels.
     realizes_capability_ids:
       - BC-410
       - BC-510
-    children: []
+    children:
+      - id: BP-150.70.10
+        name: Onboard and License Producers
+        level: 3
+        description: >-
+          Onboard agents, brokers, and MGAs; verify licensing.
+        realizes_capability_ids:
+          - BC-510
+        children: []
+      - id: BP-150.70.20
+        name: Manage Producer Commissions
+        level: 3
+        description: >-
+          Calculate and pay producer commissions and bonuses.
+        realizes_capability_ids:
+          - BC-510
+          - BC-200
+        children: []
+      - id: BP-150.70.30
+        name: Monitor Producer Performance
+        level: 3
+        description: >-
+          Monitor producer performance, loss ratios, and compliance.
+        realizes_capability_ids:
+          - BC-510
+        children: []

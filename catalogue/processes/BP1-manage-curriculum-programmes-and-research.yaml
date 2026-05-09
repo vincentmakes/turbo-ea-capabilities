@@ -6,7 +6,7 @@ description: >-
   Manage the academic backbone: curriculum and programme design, accreditation, research administration, and educational content management.
 framework_refs:
   - framework: APQC-PCF
-    external_id: "Education PCF v7.2 — Curriculum and research categories"
+    external_id: "Education PCF v7.2.1 — Curriculum and research categories"
 realizes_capability_ids:
   - BC-100
 children:
@@ -16,7 +16,28 @@ children:
     description: >-
       Design, approve, and maintain curricula and academic programmes; manage course catalogues.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-250.10.10
+        name: Design New Programmes and Curricula
+        level: 3
+        description: >-
+          Design new academic programmes and curricula; obtain internal approval.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-250.10.20
+        name: Maintain Course Catalogue
+        level: 3
+        description: >-
+          Maintain course catalogue; process course-change requests.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-250.10.30
+        name: Map Learning Outcomes
+        level: 3
+        description: >-
+          Map learning outcomes across curriculum; ensure alignment to programme outcomes.
+        realizes_capability_ids: []
+        children: []
   - id: BP-250.20
     name: Manage Programme Accreditation and Quality Assurance
     level: 2
@@ -25,16 +46,71 @@ children:
     realizes_capability_ids:
       - BC-720
       - BC-130
-    children: []
+    children:
+      - id: BP-250.20.10
+        name: Prepare Accreditation Self-Studies
+        level: 3
+        description: >-
+          Prepare programme accreditation self-studies for CHEA / ENQA / equivalent.
+        realizes_capability_ids:
+          - BC-130
+        children: []
+      - id: BP-250.20.20
+        name: Manage Accreditation Visits and Outcomes
+        level: 3
+        description: >-
+          Manage accreditation visits; respond to findings; remediate.
+        realizes_capability_ids:
+          - BC-130
+        children: []
+      - id: BP-250.20.30
+        name: Conduct Periodic Programme Reviews
+        level: 3
+        description: >-
+          Conduct periodic programme reviews and continuous improvement.
+        realizes_capability_ids:
+          - BC-720
+        children: []
   - id: BP-250.30
     name: Administer Research and Scholarship
     level: 2
     description: >-
-      Administer research grants, ethics, integrity, and research outputs; manage research-data governance.
+      Administer research grants, ethics, integrity, and research outputs.
     realizes_capability_ids:
       - BC-150
       - BC-610
-    children: []
+    children:
+      - id: BP-250.30.10
+        name: Pursue and Manage Research Grants
+        level: 3
+        description: >-
+          Pursue research opportunities; develop proposals; manage award setup and post-award administration.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-250.30.20
+        name: Manage Research Ethics and Integrity
+        level: 3
+        description: >-
+          Operate research-ethics committees; manage research-integrity oversight.
+        realizes_capability_ids:
+          - BC-150
+        children: []
+      - id: BP-250.30.30
+        name: Manage Research Data and Outputs
+        level: 3
+        description: >-
+          Manage research data, publications, and dissemination.
+        realizes_capability_ids:
+          - BC-610
+          - BC-840
+        children: []
+      - id: BP-250.30.40
+        name: Measure Research Impact
+        level: 3
+        description: >-
+          Measure research impact through bibliometrics and equivalent measures.
+        realizes_capability_ids: []
+        children: []
   - id: BP-250.40
     name: Manage Educational Content and Learning Resources
     level: 2
@@ -42,7 +118,23 @@ children:
       Develop and curate teaching content, courseware, and learning resources, including digital platforms.
     realizes_capability_ids:
       - BC-820
-    children: []
+    children:
+      - id: BP-250.40.10
+        name: Develop Courseware and Learning Resources
+        level: 3
+        description: >-
+          Develop courseware, OER, and learning resources.
+        realizes_capability_ids:
+          - BC-820
+        children: []
+      - id: BP-250.40.20
+        name: Operate Digital Learning Platforms
+        level: 3
+        description: >-
+          Operate digital learning platforms and content repositories.
+        realizes_capability_ids:
+          - BC-600
+        children: []
   - id: BP-250.50
     name: Manage Educator Workforce
     level: 2
@@ -50,4 +142,28 @@ children:
       Plan and manage the academic workforce: recruitment, tenure tracks, peer review, professional development.
     realizes_capability_ids:
       - BC-300
-    children: []
+    children:
+      - id: BP-250.50.10
+        name: Recruit and Onboard Educators
+        level: 3
+        description: >-
+          Recruit and onboard academic staff per policies.
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-250.50.20
+        name: Manage Tenure Track and Promotion
+        level: 3
+        description: >-
+          Manage tenure tracks, peer review, and academic promotion.
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-250.50.30
+        name: Provide Educator Professional Development
+        level: 3
+        description: >-
+          Provide pedagogy and continuing professional development for educators.
+        realizes_capability_ids:
+          - BC-300
+        children: []

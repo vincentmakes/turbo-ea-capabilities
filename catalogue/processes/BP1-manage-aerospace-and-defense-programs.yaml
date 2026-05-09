@@ -6,7 +6,7 @@ description: >-
   Run aerospace and defense programs across the acquisition lifecycle: capture, contract, develop, deliver, sustain, and dispose, including export-control and configuration management.
 framework_refs:
   - framework: APQC-PCF
-    external_id: "Aerospace and Defense PCF v7.2 — A&D-specific operating categories"
+    external_id: "Aerospace and Defense PCF v7.2 (IBM-donated) + AS9100 + DoD acquisition lifecycle"
 realizes_capability_ids:
   - BC-100
 children:
@@ -17,7 +17,31 @@ children:
       Pursue defense and aerospace opportunities: bid/no-bid, capture planning, proposal development.
     realizes_capability_ids:
       - BC-410
-    children: []
+    children:
+      - id: BP-230.10.10
+        name: Conduct Capture Planning
+        level: 3
+        description: >-
+          Conduct customer intelligence and capture planning for major opportunities.
+        realizes_capability_ids:
+          - BC-410
+        children: []
+      - id: BP-230.10.20
+        name: Develop and Submit Proposals
+        level: 3
+        description: >-
+          Develop technical, management, and cost proposals; submit to customer.
+        realizes_capability_ids:
+          - BC-410
+        children: []
+      - id: BP-230.10.30
+        name: Manage Teaming and Subcontracting
+        level: 3
+        description: >-
+          Establish teaming agreements; manage subcontractor solicitation and selection.
+        realizes_capability_ids:
+          - BC-510
+        children: []
   - id: BP-230.20
     name: Manage Program Contract and Earned Value
     level: 2
@@ -26,7 +50,31 @@ children:
     realizes_capability_ids:
       - BC-150
       - BC-900
-    children: []
+    children:
+      - id: BP-230.20.10
+        name: Negotiate and Award Contract
+        level: 3
+        description: >-
+          Negotiate contract terms; award and baseline.
+        realizes_capability_ids:
+          - BC-150
+        children: []
+      - id: BP-230.20.20
+        name: Operate Earned Value Management System
+        level: 3
+        description: >-
+          Operate EVMS per ANSI/EIA-748; report EAC, CPI, SPI to customer.
+        realizes_capability_ids:
+          - BC-900
+        children: []
+      - id: BP-230.20.30
+        name: Manage Contract Modifications and Change
+        level: 3
+        description: >-
+          Process contract modifications, REAs, and equitable adjustments.
+        realizes_capability_ids:
+          - BC-150
+        children: []
   - id: BP-230.30
     name: Perform Mission Systems Engineering
     level: 2
@@ -34,7 +82,32 @@ children:
       Perform systems engineering for defense and aerospace mission systems, including verification and validation.
     realizes_capability_ids:
       - BC-810
-    children: []
+    children:
+      - id: BP-230.30.10
+        name: Develop System Requirements
+        level: 3
+        description: >-
+          Decompose customer requirements into system and subsystem requirements.
+        realizes_capability_ids:
+          - BC-810
+        children: []
+      - id: BP-230.30.20
+        name: Design and Integrate Mission Systems
+        level: 3
+        description: >-
+          Design and integrate mission-system architectures across hardware and software.
+        realizes_capability_ids:
+          - BC-810
+        children: []
+      - id: BP-230.30.30
+        name: Verify and Validate Mission Systems
+        level: 3
+        description: >-
+          Conduct V&V activities including DT&E and OT&E.
+        realizes_capability_ids:
+          - BC-810
+          - BC-720
+        children: []
   - id: BP-230.40
     name: Manage Configuration and Technical Data Package
     level: 2
@@ -42,16 +115,66 @@ children:
       Maintain configuration of platforms and systems; manage the technical data package across the lifecycle.
     realizes_capability_ids:
       - BC-820
-    children: []
+    children:
+      - id: BP-230.40.10
+        name: Establish Configuration Baselines
+        level: 3
+        description: >-
+          Establish functional, allocated, and product baselines per MIL-HDBK-61.
+        realizes_capability_ids:
+          - BC-820
+        children: []
+      - id: BP-230.40.20
+        name: Manage Engineering Change Proposals
+        level: 3
+        description: >-
+          Process ECPs; manage CCB review and incorporation.
+        realizes_capability_ids:
+          - BC-820
+          - BC-910
+        children: []
+      - id: BP-230.40.30
+        name: Maintain Technical Data Package
+        level: 3
+        description: >-
+          Maintain TDP per ASME Y14.100; manage data rights and deliverables.
+        realizes_capability_ids:
+          - BC-820
+        children: []
   - id: BP-230.50
     name: Manage Export Controls and Security
     level: 2
     description: >-
-      Manage ITAR / EAR / EU dual-use export controls and program security (industrial security, classified data).
+      Manage ITAR / EAR / EU dual-use export controls and program security.
     realizes_capability_ids:
       - BC-150
       - BC-620
-    children: []
+    children:
+      - id: BP-230.50.10
+        name: Classify and License Exports
+        level: 3
+        description: >-
+          Classify items per USML/CCL; obtain licences for exports/transfers.
+        realizes_capability_ids:
+          - BC-150
+        children: []
+      - id: BP-230.50.20
+        name: Manage Foreign Disclosure
+        level: 3
+        description: >-
+          Manage foreign-disclosure decisions and Technology Control Plans.
+        realizes_capability_ids:
+          - BC-150
+          - BC-620
+        children: []
+      - id: BP-230.50.30
+        name: Operate Industrial Security and Classified Programs
+        level: 3
+        description: >-
+          Operate industrial security per NISPOM; manage classified-program security.
+        realizes_capability_ids:
+          - BC-620
+        children: []
   - id: BP-230.60
     name: Sustain Defense Systems
     level: 2
@@ -59,7 +182,31 @@ children:
       Sustain in-service defense and aerospace systems: depot maintenance, overhaul, modifications, obsolescence.
     realizes_capability_ids:
       - BC-700
-    children: []
+    children:
+      - id: BP-230.60.10
+        name: Operate Depot and Field Maintenance
+        level: 3
+        description: >-
+          Operate depot-level and field-level maintenance for in-service systems.
+        realizes_capability_ids:
+          - BC-700
+        children: []
+      - id: BP-230.60.20
+        name: Manage Spares and Repair Pool
+        level: 3
+        description: >-
+          Manage spares pool; coordinate repair-and-return cycles.
+        realizes_capability_ids:
+          - BC-530
+        children: []
+      - id: BP-230.60.30
+        name: Manage Diminishing Manufacturing Sources
+        level: 3
+        description: >-
+          Identify DMSMS risks; manage obsolescence and bridge buys.
+        realizes_capability_ids:
+          - BC-820
+        children: []
   - id: BP-230.70
     name: Manage Disposal and Demilitarisation
     level: 2
@@ -67,4 +214,21 @@ children:
       Demilitarise and dispose of defense materiel at end-of-life under regulatory and security controls.
     realizes_capability_ids:
       - BC-740
-    children: []
+    children:
+      - id: BP-230.70.10
+        name: Demilitarise End-of-Life Materiel
+        level: 3
+        description: >-
+          Demilitarise platforms and weapons under DoD/MoD demil standards.
+        realizes_capability_ids:
+          - BC-740
+        children: []
+      - id: BP-230.70.20
+        name: Dispose of Hazardous and Classified Materiel
+        level: 3
+        description: >-
+          Dispose of hazardous and classified materiel per regulations.
+        realizes_capability_ids:
+          - BC-730
+          - BC-620
+        children: []
