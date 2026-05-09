@@ -940,7 +940,8 @@ Mirror of §9.8 for the BP layer. Each industry's process catalogue is anchored 
 
 #### Cross-industry baseline
 
-- **APQC Process Classification Framework® (PCF) — Cross-Industry, v7.4.0** *(authoritative for BP-10 through BP-120)*. APQC-published taxonomy with 12 top-level Categories, ~60 Process Groups, ~250+ Processes, 1,000+ Activities. Public summary: <https://www.apqc.org/process-frameworks>. **APQC PCF v8.0** is the most recent public version; this catalogue currently anchors on v7.4.0 and will re-pin in a follow-up PR once v8.0 codes are verified end-to-end (BP3 codes shifted in several categories between 7.4 and 8.0).
+- **APQC Process Classification Framework® (PCF) — Cross-Industry, v8.0** *(authoritative for BP-10 through BP-120, plus BP-370)*. APQC-published taxonomy. **v8.0 (released August 2024)** introduced 13 top-level categories, up from 12 in v7.4: category 4.0 was renamed *Deliver Physical Products* → *Manage Supply Chain for Physical Products*, and a new category 13.0 *Develop and Manage Business Capabilities* was added. This catalogue's BP-10..BP-120 keep their local sparse numbering for stability — APQC's category 13.0 maps to local id `BP-370` because BP-130..BP-360 were already taken by industry-specific BP1s. The `framework_refs.external_id` field is authoritative for cross-walks to APQC's published numbering. Public summary: <https://www.apqc.org/process-frameworks>.
+- **Naming divergence:** the local BP-40 file/name kept the v8.0 nomenclature (*Manage Supply Chain for Physical Products*); BP3 codes (`1.1.1`, `9.3.2`, etc.) authored against v7.4 may shift slightly in v8.0 — a follow-up PR can re-pin BP3 codes once a verified v8.0 reference is in hand.
 
 #### Banking & Capital Markets
 
@@ -1012,6 +1013,27 @@ Mirror of §9.8 for the BP layer. Each industry's process catalogue is anchored 
 - **APQC Health Insurance Payor PCF, v7.2.1.** Industry-specific PCF for health-plan operators covering enrolment, provider network, claims adjudication, care management, and member services — distinct from the Healthcare Provider PCF (BP-170/180) and from general Insurance (BP-150). Anchors `BP-300` Operate Health Insurance Payor.
 - **HEDIS, NCQA Star Ratings, MLR (Medical Loss Ratio) reporting** — inform regulatory and quality-reporting processes specific to US health plans.
 - **HL7 / FHIR, X12 837/835** — inform health-claims data and provider-network data exchange; cited in `references[]`.
+
+#### Mining & Metals
+
+- **ICMM Mining Principles** *(updated December 2024)*. Industry standard from the International Council on Mining and Metals; informs the *content* of mining processes, especially safety, environmental, and tailings management. Anchors `BP-310` Operate Mining and Metals Lifecycle.
+- **CRIRSCO Reporting Standards (JORC, SAMREC, NI 43-101, PERC, SME)** — international family of resource and reserve reporting standards; cited at the BP2 for mineral exploration and resource definition.
+- **GISTM (Global Industry Standard on Tailings Management), ICMM Integrated Mine Closure Good Practice Guide (3rd Ed., February 2025)** — inform tailings-management and mine-closure processes.
+- **APQC has no published Mining-specific PCF** (as of May 2026); BP-310 is structured on ICMM lifecycle stages with cross-walks to APQC Cross-Industry where applicable.
+
+#### Real Estate
+
+- **OSCRE Industry Data Model (IDM)** *(Open Standards Consortium for Real Estate)*. Recognised global standard for real estate data exchange covering 130+ use cases across leasing, space management, facility management, and investment management. Anchors `BP-320` Operate Real Estate Asset and Property Management. Public summary: <https://www.oscre.org/>.
+- **RESO Data Dictionary** *(Real Estate Standards Organization)*. North American MLS data standard for residential real estate; informs `BP-330.10` Manage Real Estate Listing and Brokerage.
+- **IPMS (International Property Measurement Standards), RICS Standards, USPAP** — inform property-measurement, valuation, and appraisal processes; anchor `BP-330.40` Manage Real Estate Valuation and Appraisal.
+
+#### Public Sector & Government
+
+- **FEAF (Federal Enterprise Architecture Framework), v3 (US)**. Federal-government EA framework with Business Reference Model categorising government services. Anchors `BP-340` Manage Public Service and Benefit Delivery, `BP-350` Manage Public Sector Revenue and Compliance, `BP-360` Manage Public Sector Programs and Funding.
+- **TOGAF Government Reference Model**, **OMB Circulars (A-11, A-123, A-130)** — inform US-federal program and budget management processes.
+- **IPSAS (International Public Sector Accounting Standards), GFSM (IMF Government Finance Statistics Manual), COFOG (UN Classification of Functions of Government)** — inform public-sector financial and statistical reporting processes.
+- **FAR (US Federal Acquisition Regulation), EU Procurement Directives** — inform `BP-360.10` Manage Public-Sector Procurement.
+- **NIST SP 800-53** *(US federal cybersecurity controls)* — informs IT-related public-sector compliance processes.
 
 #### How to add a new industry's process catalogue
 

@@ -16,35 +16,150 @@ children:
     description: >-
       Receive, register, schedule, and admit patients across inpatient, outpatient, and emergency channels.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-170.10.10
+        name: Schedule Patient Appointments and Encounters
+        level: 3
+        description: >-
+          Schedule outpatient appointments and inpatient admissions across services.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-170.10.20
+        name: Register and Verify Patient Demographics
+        level: 3
+        description: >-
+          Register patients; verify demographics and coverage; perform authorisation checks.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-170.10.30
+        name: Admit and Transfer Patients
+        level: 3
+        description: >-
+          Admit patients to inpatient units; manage internal transfers and bed assignments.
+        realizes_capability_ids: []
+        children: []
   - id: BP-170.20
     name: Perform Clinical Assessment and Triage
     level: 2
     description: >-
       Triage and clinically assess patients on arrival, including history, examination, and acuity scoring.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-170.20.10
+        name: Perform ED Triage
+        level: 3
+        description: >-
+          Run emergency-department triage and acuity scoring (ESI, MTS).
+        realizes_capability_ids: []
+        children: []
+      - id: BP-170.20.20
+        name: Conduct Initial History and Examination
+        level: 3
+        description: >-
+          Capture history, perform physical examination, document chief complaint.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-170.20.30
+        name: Develop Initial Care Plan
+        level: 3
+        description: >-
+          Formulate initial diagnosis and care plan; place initial orders.
+        realizes_capability_ids: []
+        children: []
   - id: BP-170.30
     name: Deliver Clinical Care
     level: 2
     description: >-
       Provide clinical care across inpatient, outpatient, surgical, and emergency settings.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-170.30.10
+        name: Administer Medications and Treatments
+        level: 3
+        description: >-
+          Administer medications, treatments, and procedures per orders; perform medication reconciliation.
+        realizes_capability_ids:
+          - BC-720
+        children: []
+      - id: BP-170.30.20
+        name: Provide Nursing Care
+        level: 3
+        description: >-
+          Provide bedside nursing care across shifts; document care delivered.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-170.30.30
+        name: Conduct Multidisciplinary Rounds
+        level: 3
+        description: >-
+          Conduct multidisciplinary care rounds; update care plans collaboratively.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-170.30.40
+        name: Manage Critical Care and Emergency Response
+        level: 3
+        description: >-
+          Manage critical care and rapid-response events; escalate per protocols.
+        realizes_capability_ids:
+          - BC-160
+        children: []
   - id: BP-170.40
     name: Manage Care Coordination and Transitions
     level: 2
     description: >-
       Coordinate care across teams and settings; manage transitions between units, facilities, or to home.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-170.40.10
+        name: Coordinate Multidisciplinary Care
+        level: 3
+        description: >-
+          Coordinate care between physicians, nursing, ancillary services, and case management.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-170.40.20
+        name: Manage Inter-Facility Transfers
+        level: 3
+        description: >-
+          Coordinate transfers to higher acuity, post-acute, or rehabilitation facilities.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-170.40.30
+        name: Coordinate Social and Community Resources
+        level: 3
+        description: >-
+          Engage social work and community resources to support discharge planning.
+        realizes_capability_ids: []
+        children: []
   - id: BP-170.50
     name: Discharge and Follow Up
     level: 2
     description: >-
       Discharge patients with appropriate instructions, medication reconciliation, and follow-up scheduling.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-170.50.10
+        name: Conduct Discharge Planning
+        level: 3
+        description: >-
+          Plan discharge readiness, destination, and follow-up; complete discharge education.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-170.50.20
+        name: Reconcile Discharge Medications
+        level: 3
+        description: >-
+          Reconcile and reconcile-on-discharge medications; produce discharge prescriptions.
+        realizes_capability_ids:
+          - BC-720
+        children: []
+      - id: BP-170.50.30
+        name: Schedule Post-Discharge Follow-Up
+        level: 3
+        description: >-
+          Schedule follow-up appointments and post-discharge community-care services.
+        realizes_capability_ids: []
+        children: []
   - id: BP-170.60
     name: Manage Patient Experience
     level: 2
@@ -52,4 +167,20 @@ children:
       Monitor and manage the patient experience across the care journey, including grievance handling.
     realizes_capability_ids:
       - BC-430
-    children: []
+    children:
+      - id: BP-170.60.10
+        name: Measure Patient Satisfaction and Experience
+        level: 3
+        description: >-
+          Run HCAHPS and equivalent patient-experience surveys; analyse results.
+        realizes_capability_ids:
+          - BC-430
+        children: []
+      - id: BP-170.60.20
+        name: Manage Patient Complaints and Grievances
+        level: 3
+        description: >-
+          Process patient complaints and formal grievances per regulatory requirements.
+        realizes_capability_ids:
+          - BC-430
+        children: []

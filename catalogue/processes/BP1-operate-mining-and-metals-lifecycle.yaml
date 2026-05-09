@@ -1,0 +1,61 @@
+id: BP-310
+name: Operate Mining and Metals Lifecycle
+level: 1
+industry: Mining & Metals
+description: >-
+  Run the end-to-end mining and metals lifecycle: exploration and resource definition, mine planning, extraction, mineral processing, tailings management, and mine closure and rehabilitation.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "Mining lifecycle reference (no published APQC Mining PCF; structure aligned to ICMM Mining Principles and CRIRSCO reserve standards)"
+realizes_capability_ids:
+  - BC-100
+children:
+  - id: BP-310.10
+    name: Manage Mineral Exploration and Resource Definition
+    level: 2
+    description: >-
+      Conduct mineral exploration; estimate and classify resources/reserves under JORC/SAMREC/NI 43-101.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-310.20
+    name: Manage Mine Planning and Development
+    level: 2
+    description: >-
+      Plan and design mine layouts; develop mine projects through feasibility study, construction, and commissioning.
+    realizes_capability_ids:
+      - BC-700
+      - BC-900
+    children: []
+  - id: BP-310.30
+    name: Operate Mining Extraction
+    level: 2
+    description: >-
+      Operate underground or surface mining: drilling, blasting, hauling, and grade control.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-310.40
+    name: Operate Mineral Processing and Beneficiation
+    level: 2
+    description: >-
+      Process ore through crushing, grinding, flotation, leaching, smelting, refining, and product blending.
+    realizes_capability_ids:
+      - BC-720
+    children: []
+  - id: BP-310.50
+    name: Manage Tailings and Mining Waste
+    level: 2
+    description: >-
+      Manage tailings storage facilities and mining waste under GISTM and ICMM tailings governance standards.
+    realizes_capability_ids:
+      - BC-730
+      - BC-740
+    children: []
+  - id: BP-310.60
+    name: Manage Mine Closure and Rehabilitation
+    level: 2
+    description: >-
+      Plan and execute integrated mine closure: progressive rehabilitation, decommissioning, and post-closure monitoring per ICMM Integrated Mine Closure guidance.
+    realizes_capability_ids:
+      - BC-740
+      - BC-730
+    children: []

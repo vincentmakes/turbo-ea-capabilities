@@ -1,0 +1,68 @@
+id: BP-370
+name: Develop and Manage Business Capabilities
+level: 1
+industry: Cross-Industry
+description: >-
+  Govern the enterprise's business-capability portfolio: identify, assess, and develop capabilities; manage capability strategy and architecture; align capability investments to strategic priorities. New top-level category introduced in APQC PCF v8.0 (category 13.0); the local BP-370 numbering preserves the existing BP-10..BP-360 layout — see business-capability-governance-model.md §11.7 for the cross-walk.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "13.0"
+    version: "8.0"
+realizes_capability_ids:
+  - BC-170
+  - BC-100
+  - BC-920
+children:
+  - id: BP-370.10
+    name: Identify and Assess Business Capabilities
+    level: 2
+    description: >-
+      Identify the enterprise's required and current business capabilities; assess capability maturity, gaps, and strategic importance.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "13.1"
+        version: "8.0"
+    realizes_capability_ids:
+      - BC-170
+    children: []
+  - id: BP-370.20
+    name: Develop and Improve Business Capabilities
+    level: 2
+    description: >-
+      Plan and execute the development or improvement of business capabilities through capability initiatives, transformation programs, and organisational change.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "13.2"
+        version: "8.0"
+    realizes_capability_ids:
+      - BC-170
+      - BC-920
+      - BC-900
+    children: []
+  - id: BP-370.30
+    name: Govern Capability Architecture
+    level: 2
+    description: >-
+      Govern the enterprise capability architecture: model, taxonomy, and reference catalogue; manage capability versions, deprecations, and cross-walks to industry frameworks.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "13.3"
+        version: "8.0"
+    realizes_capability_ids:
+      - BC-170
+      - BC-110
+    children: []
+  - id: BP-370.40
+    name: Align Capability Investment Portfolio
+    level: 2
+    description: >-
+      Align the capability investment portfolio to strategic priorities; prioritise capability initiatives in the enterprise initiative portfolio.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "13.4"
+        version: "8.0"
+    realizes_capability_ids:
+      - BC-100
+      - BC-900
+      - BC-170
+    children: []

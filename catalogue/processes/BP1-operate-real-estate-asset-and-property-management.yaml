@@ -1,0 +1,52 @@
+id: BP-320
+name: Operate Real Estate Asset and Property Management
+level: 1
+industry: Real Estate
+description: >-
+  Run real-estate-specific asset and property operations: portfolio management, tenant lease lifecycle, day-to-day property/facility management, capital projects, and disposition.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "Real Estate asset and property reference (OSCRE IDM-aligned)"
+realizes_capability_ids:
+  - BC-710
+children:
+  - id: BP-320.10
+    name: Manage Real Estate Portfolio
+    level: 2
+    description: >-
+      Plan and govern the portfolio of properties: asset strategy, hold/sell decisions, performance reporting.
+    realizes_capability_ids:
+      - BC-710
+    children: []
+  - id: BP-320.20
+    name: Manage Tenant Lease Lifecycle
+    level: 2
+    description: >-
+      Originate, abstract, administer, and renew tenant leases; manage lease accounting and CAM reconciliation.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-320.30
+    name: Operate Property Management and Facility Operations
+    level: 2
+    description: >-
+      Run day-to-day property operations: tenant services, on-site management, vendor coordination, common-area facility management.
+    realizes_capability_ids:
+      - BC-700
+    children: []
+  - id: BP-320.40
+    name: Manage Property Capital Projects
+    level: 2
+    description: >-
+      Plan and deliver capital projects on owned property: tenant improvements, repositioning, refurbishment.
+    realizes_capability_ids:
+      - BC-700
+      - BC-900
+    children: []
+  - id: BP-320.50
+    name: Manage Real Estate Disposition
+    level: 2
+    description: >-
+      Position, market, and dispose of property assets; manage sale and post-closing transition.
+    realizes_capability_ids:
+      - BC-710
+    children: []

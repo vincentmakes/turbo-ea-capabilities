@@ -550,7 +550,8 @@ value_streams:
     stage_name: Programme Configuration
     capability_ids:
     - BC-3230
-    process_ids: []
+    process_ids:
+    - BP-340.20
     notes: Eligibility rules, benefit formulae, and indexation parameters
   - id: VS-30.20
     stage_order: 2
@@ -558,49 +559,58 @@ value_streams:
     capability_ids:
     - BC-3230
     - BC-3220
-    process_ids: []
+    process_ids:
+    - BP-340.20
     notes: Receipt of benefit applications across channels; Citizen-service channels supporting assisted application
   - id: VS-30.30
     stage_order: 3
     stage_name: Eligibility Determination
     capability_ids:
     - BC-3230
-    process_ids: []
+    process_ids:
+    - BP-340.20
     notes: Means testing, categorical eligibility, decision and notification
   - id: VS-30.40
     stage_order: 4
     stage_name: Award Calculation
     capability_ids:
     - BC-3230
-    process_ids: []
+    process_ids:
+    - BP-340.20
     notes: Contribution-record assessment, award calculation, and issuance
   - id: VS-30.50
     stage_order: 5
     stage_name: Disbursement
     capability_ids:
     - BC-3230
-    process_ids: []
+    process_ids:
+    - BP-340.20
+    - BP-90.70
     notes: Payment runs across bank, prepaid card, and in-kind channels
   - id: VS-30.60
     stage_order: 6
     stage_name: Continuing Eligibility
     capability_ids:
     - BC-3230
-    process_ids: []
+    process_ids:
+    - BP-340.20
     notes: Change of circumstances, periodic redetermination, conditionality
   - id: VS-30.70
     stage_order: 7
     stage_name: Overpayment & Recovery
     capability_ids:
     - BC-3230
-    process_ids: []
+    process_ids:
+    - BP-340.20
+    - BP-350.30
     notes: Overpayment detection, recovery plans, and debt collection
   - id: VS-30.80
     stage_order: 8
     stage_name: Fraud Investigation
     capability_ids:
     - BC-3230
-    process_ids: []
+    process_ids:
+    - BP-350.30
     notes: Fraud detection, investigation, and sanction
 - id: VS-40
   name: Application-to-Funding
@@ -759,56 +769,64 @@ value_streams:
     capability_ids:
     - BC-3240
     - BC-3220
-    process_ids: []
+    process_ids:
+    - BP-340.30
     notes: Submission, completeness check, and fee assessment; Citizen-service channels for licence applications
   - id: VS-50.20
     stage_order: 2
     stage_name: Eligibility & Qualification Assessment
     capability_ids:
     - BC-3240
-    process_ids: []
+    process_ids:
+    - BP-340.30
     notes: Fit and proper, qualification, and background checks
   - id: VS-50.30
     stage_order: 3
     stage_name: Licensing Decision
     capability_ids:
     - BC-3240
-    process_ids: []
+    process_ids:
+    - BP-340.30
     notes: Decisioning on grant, refusal, or conditional grant
   - id: VS-50.40
     stage_order: 4
     stage_name: Credential Issuance
     capability_ids:
     - BC-3240
-    process_ids: []
+    process_ids:
+    - BP-340.30
     notes: Production and issuance of physical and digital credentials
   - id: VS-50.50
     stage_order: 5
     stage_name: Inspection & Compliance Monitoring
     capability_ids:
     - BC-3240
-    process_ids: []
+    process_ids:
+    - BP-350.30
     notes: Risk-based inspection and compliance reporting review
   - id: VS-50.60
     stage_order: 6
     stage_name: Enforcement & Sanction
     capability_ids:
     - BC-3240
-    process_ids: []
+    process_ids:
+    - BP-350.30
     notes: Suspension, revocation, civil penalties, and sanctions
   - id: VS-50.70
     stage_order: 7
     stage_name: Renewal
     capability_ids:
     - BC-3240
-    process_ids: []
+    process_ids:
+    - BP-340.30
     notes: Renewal processing and continuing-eligibility checks
   - id: VS-50.80
     stage_order: 8
     stage_name: Register Disclosure
     capability_ids:
     - BC-3240
-    process_ids: []
+    process_ids:
+    - BP-340.50
     notes: Public register search and credential verification services
 - id: VS-60
   name: Apply-to-Graduate
@@ -1105,14 +1123,16 @@ value_streams:
     capability_ids:
     - BC-3200
     - BC-3210
-    process_ids: []
+    process_ids:
+    - BP-120.20
     notes: Policy decision converted into drafting instructions; Receipt and clarification of drafting instructions by parliamentary counsel
   - id: VS-90.20
     stage_order: 2
     stage_name: Drafting
     capability_ids:
     - BC-3210
-    process_ids: []
+    process_ids:
+    - BP-120.20
     notes: Drafting of bills, regulations, and statutory instruments
   - id: VS-90.30
     stage_order: 3
@@ -1120,35 +1140,42 @@ value_streams:
     capability_ids:
     - BC-3210
     - BC-150
-    process_ids: []
+    process_ids:
+    - BP-120.20
+    - BP-120.40
     notes: Constitutional, human-rights, and international-law review; Government legal services advisory review
   - id: VS-90.40
     stage_order: 4
     stage_name: Impact Assessment
     capability_ids:
     - BC-3210
-    process_ids: []
+    process_ids:
+    - BP-120.20
     notes: Regulatory impact assessment and small-business test
   - id: VS-90.50
     stage_order: 5
     stage_name: Legislative Passage
     capability_ids:
     - BC-3210
-    process_ids: []
+    process_ids:
+    - BP-120.20
     notes: Parliamentary liaison, committee evidence, amendment tracking
   - id: VS-90.60
     stage_order: 6
     stage_name: Promulgation
     capability_ids:
     - BC-3210
-    process_ids: []
+    process_ids:
+    - BP-120.20
+    - BP-340.50
     notes: Royal assent or executive signature and effective-date setting
   - id: VS-90.70
     stage_order: 7
     stage_name: Codification & Publication
     capability_ids:
     - BC-3210
-    process_ids: []
+    process_ids:
+    - BP-340.50
     notes: Official gazette publication and statutory codification
 - id: VS-100
   name: Brief-to-Campaign
@@ -2485,42 +2512,50 @@ value_streams:
     stage_name: Event Notification
     capability_ids:
     - BC-3290
-    process_ids: []
+    process_ids:
+    - BP-340.50
     notes: Notification of births, deaths, marriages, business events, and land transactions
   - id: VS-210.20
     stage_order: 2
     stage_name: Registration
     capability_ids:
     - BC-3290
-    process_ids: []
+    process_ids:
+    - BP-340.50
     notes: Authoritative registration and identifier assignment
   - id: VS-210.30
     stage_order: 3
     stage_name: Certification & Issuance
     capability_ids:
     - BC-3290
-    process_ids: []
+    process_ids:
+    - BP-340.10
+    - BP-340.50
     notes: Issuance of certificates, credentials, and registry extracts
   - id: VS-210.40
     stage_order: 4
     stage_name: Authentication
     capability_ids:
     - BC-3290
-    process_ids: []
+    process_ids:
+    - BP-340.10
     notes: Document authentication and apostille issuance under the Hague Convention
   - id: VS-210.50
     stage_order: 5
     stage_name: Disclosure & Search
     capability_ids:
     - BC-3290
-    process_ids: []
+    process_ids:
+    - BP-340.10
     notes: Public-facing search services and certified-copy provision
   - id: VS-210.60
     stage_order: 6
     stage_name: Record Maintenance & Privacy
     capability_ids:
     - BC-3290
-    process_ids: []
+    process_ids:
+    - BP-340.50
+    - BP-340.10
     notes: Ongoing maintenance, restricted disclosure, and privacy controls
 - id: VS-220
   name: Filing-to-Disposition
@@ -2532,49 +2567,57 @@ value_streams:
     stage_name: Case Filing
     capability_ids:
     - BC-3320
-    process_ids: []
+    process_ids:
+    - BP-350.40
     notes: Case initiation, e-filing, classification, and fee assessment
   - id: VS-220.20
     stage_order: 2
     stage_name: Docket & Scheduling
     capability_ids:
     - BC-3320
-    process_ids: []
+    process_ids:
+    - BP-350.40
     notes: Docket maintenance, hearing scheduling, and judicial assignment
   - id: VS-220.30
     stage_order: 3
     stage_name: Hearing & Trial
     capability_ids:
     - BC-3320
-    process_ids: []
+    process_ids:
+    - BP-350.40
     notes: Jury management, courtroom operations, and witness support
   - id: VS-220.40
     stage_order: 4
     stage_name: Judgment & Sentencing
     capability_ids:
     - BC-3320
-    process_ids: []
+    process_ids:
+    - BP-350.40
     notes: Recording of judgments, sentences, and dispositional orders
   - id: VS-220.50
     stage_order: 5
     stage_name: Order Enforcement
     capability_ids:
     - BC-3320
-    process_ids: []
+    process_ids:
+    - BP-350.30
+    - BP-350.40
     notes: Fines, restitution, civil judgment enforcement, and warrants
   - id: VS-220.60
     stage_order: 6
     stage_name: Custody & Supervision
     capability_ids:
     - BC-3320
-    process_ids: []
+    process_ids:
+    - BP-350.40
     notes: Corrections custody, probation, and parole supervision
   - id: VS-220.70
     stage_order: 7
     stage_name: Records & Public Access
     capability_ids:
     - BC-3320
-    process_ids: []
+    process_ids:
+    - BP-350.40
     notes: Court records maintenance, public access, sealing, and expungement
 - id: VS-230
   name: Firmware-to-Field
@@ -4709,49 +4752,58 @@ value_streams:
     stage_name: Listing Pursuit & Win
     capability_ids:
     - BC-4960
-    process_ids: []
+    process_ids:
+    - BP-330.10
     notes: Listing pitch, CMA, and win of the listing mandate
   - id: VS-340.20
     stage_order: 2
     stage_name: Listing Setup & Marketing
     capability_ids:
     - BC-4960
-    process_ids: []
+    process_ids:
+    - BP-330.10
     notes: Listing agreement, MLS capture, media production, and syndication
   - id: VS-340.30
     stage_order: 3
     stage_name: Showing & Engagement
     capability_ids:
     - BC-4960
-    process_ids: []
+    process_ids:
+    - BP-330.10
     notes: Showings, open houses, and prospect engagement
   - id: VS-340.40
     stage_order: 4
     stage_name: Offer & Negotiation
     capability_ids:
     - BC-4960
-    process_ids: []
+    process_ids:
+    - BP-330.10
+    - BP-330.20
     notes: Offer drafting, counter-offers, and multiple-offer handling
   - id: VS-340.50
     stage_order: 5
     stage_name: Contingency & Closing Coordination
     capability_ids:
     - BC-4960
-    process_ids: []
+    process_ids:
+    - BP-330.20
     notes: Contingency tracking and coordination with escrow / conveyancing
   - id: VS-340.60
     stage_order: 6
     stage_name: Closing Execution
     capability_ids:
     - BC-4960
-    process_ids: []
+    process_ids:
+    - BP-330.20
     notes: Closing-day coordination and key handover
   - id: VS-340.70
     stage_order: 7
     stage_name: Commission Settlement
     capability_ids:
     - BC-4960
-    process_ids: []
+    process_ids:
+    - BP-330.10
+    - BP-90.30
     notes: Cooperating-broker settlement, commission disbursement, and referral fees
 - id: VS-350
   name: Maintenance-Request-to-Closure
@@ -4992,49 +5044,61 @@ value_streams:
     stage_name: Mandate & Strategy Definition
     capability_ids:
     - BC-4910
-    process_ids: []
+    process_ids:
+    - BP-330.30
+    - BP-320.10
     notes: Fund / mandate definition and investment strategy
   - id: VS-360.20
     stage_order: 2
     stage_name: Vehicle Formation
     capability_ids:
     - BC-4910
-    process_ids: []
+    process_ids:
+    - BP-330.30
     notes: Fund structuring, vehicle setup, and tax-efficient holding
   - id: VS-360.30
     stage_order: 3
     stage_name: Capital Raising
     capability_ids:
     - BC-4910
-    process_ids: []
+    process_ids:
+    - BP-330.30
+    - BP-120.10
     notes: Investor targeting, subscription, and fund closing
   - id: VS-360.40
     stage_order: 4
     stage_name: Capital Deployment
     capability_ids:
     - BC-4910
-    process_ids: []
+    process_ids:
+    - BP-330.30
+    - BP-330.20
     notes: Pipeline pacing, allocation across vehicles, and capital calls
   - id: VS-360.50
     stage_order: 5
     stage_name: NAV & Performance Management
     capability_ids:
     - BC-4910
-    process_ids: []
+    process_ids:
+    - BP-330.30
+    - BP-90.30
     notes: NAV computation, attribution, and fee / waterfall calculation
   - id: VS-360.60
     stage_order: 6
     stage_name: LP Reporting
     capability_ids:
     - BC-4910
-    process_ids: []
+    process_ids:
+    - BP-330.30
+    - BP-90.30
     notes: LP reporting and INREV / NCREIF / EPRA index submission
   - id: VS-360.70
     stage_order: 7
     stage_name: Distribution & Wind-Down
     capability_ids:
     - BC-4910
-    process_ids: []
+    process_ids:
+    - BP-330.30
     notes: Periodic distributions and end-of-life fund wind-down
 - id: VS-370
   name: Network-Plan-to-Service
@@ -7272,56 +7336,66 @@ value_streams:
     stage_name: Voter Registration
     capability_ids:
     - BC-3330
-    process_ids: []
+    process_ids:
+    - BP-340.10
+    - BP-340.50
     notes: Voter enrolment, list maintenance, and eligibility verification
   - id: VS-480.20
     stage_order: 2
     stage_name: Boundary & Polling Place Setup
     capability_ids:
     - BC-3330
-    process_ids: []
+    process_ids:
+    - BP-340.50
     notes: Electoral district maintenance and polling-place designation
   - id: VS-480.30
     stage_order: 3
     stage_name: Candidate Nomination
     capability_ids:
     - BC-3330
-    process_ids: []
+    process_ids:
+    - BP-340.30
     notes: Party registration, candidate filing, and ballot access determination
   - id: VS-480.40
     stage_order: 4
     stage_name: Ballot Production
     capability_ids:
     - BC-3330
-    process_ids: []
+    process_ids:
+    - BP-340.50
     notes: Ballot design, translation, accessibility, and secure distribution
   - id: VS-480.50
     stage_order: 5
     stage_name: Polling
     capability_ids:
     - BC-3330
-    process_ids: []
+    process_ids:
+    - BP-340.50
     notes: Poll-worker management, voter check-in, and absentee voting
   - id: VS-480.60
     stage_order: 6
     stage_name: Counting & Tabulation
     capability_ids:
     - BC-3330
-    process_ids: []
+    process_ids:
+    - BP-340.50
     notes: Ballot counting, results aggregation, and post-election audit
   - id: VS-480.70
     stage_order: 7
     stage_name: Certification
     capability_ids:
     - BC-3330
-    process_ids: []
+    process_ids:
+    - BP-340.30
     notes: Statutory certification of election results
   - id: VS-480.80
     stage_order: 8
     stage_name: Campaign Finance Disclosure
     capability_ids:
     - BC-3330
-    process_ids: []
+    process_ids:
+    - BP-340.50
+    - BP-350.10
     notes: Political-committee registration, donation reporting, and enforcement
 - id: VS-490
   name: Return-to-Collection
@@ -7333,49 +7407,58 @@ value_streams:
     stage_name: Taxpayer Registration
     capability_ids:
     - BC-3250
-    process_ids: []
+    process_ids:
+    - BP-350.10
     notes: Registration and TIN issuance; taxpayer master data
   - id: VS-490.20
     stage_order: 2
     stage_name: Return Lodgement
     capability_ids:
     - BC-3250
-    process_ids: []
+    process_ids:
+    - BP-350.10
     notes: Receipt and validation of tax returns
   - id: VS-490.30
     stage_order: 3
     stage_name: Assessment
     capability_ids:
     - BC-3250
-    process_ids: []
+    process_ids:
+    - BP-350.10
     notes: Self-assessment processing and default assessments
   - id: VS-490.40
     stage_order: 4
     stage_name: Payment Collection
     capability_ids:
     - BC-3250
-    process_ids: []
+    process_ids:
+    - BP-350.10
     notes: Payment channel operations, withholding, instalment plans
   - id: VS-490.50
     stage_order: 5
     stage_name: Refund & Credit
     capability_ids:
     - BC-3250
-    process_ids: []
+    process_ids:
+    - BP-350.10
     notes: Refund validation, issuance, and fraud screening
   - id: VS-490.60
     stage_order: 6
     stage_name: Audit & Examination
     capability_ids:
     - BC-3250
-    process_ids: []
+    process_ids:
+    - BP-350.10
+    - BP-350.30
     notes: Risk-based audit, fieldwork, and reassessment issuance
   - id: VS-490.70
     stage_order: 7
     stage_name: Debt Enforcement
     capability_ids:
     - BC-3250
-    process_ids: []
+    process_ids:
+    - BP-350.10
+    - BP-350.30
     notes: Tax debt portfolio management, statutory enforcement, prosecution referral
 - id: VS-500
   name: Risk-to-Mitigation
@@ -7791,21 +7874,26 @@ value_streams:
     stage_name: Site Sourcing & Origination
     capability_ids:
     - BC-4900
-    process_ids: []
+    process_ids:
+    - BP-330.20
     notes: Site identification, off-market origination, and pipeline tracking
   - id: VS-530.20
     stage_order: 2
     stage_name: Feasibility & Underwriting
     capability_ids:
     - BC-4900
-    process_ids: []
+    process_ids:
+    - BP-330.20
+    - BP-320.40
     notes: Highest & best use, programme studies, pro forma, and land underwriting
   - id: VS-530.30
     stage_order: 3
     stage_name: Entitlement & Permitting
     capability_ids:
     - BC-4900
-    process_ids: []
+    process_ids:
+    - BP-340.30
+    - BP-320.40
     notes: Zoning, planning consent, environmental review, and building permits
   - id: VS-530.40
     stage_order: 4
@@ -7813,7 +7901,8 @@ value_streams:
     capability_ids:
     - BC-4900
     - BC-4980
-    process_ids: []
+    process_ids:
+    - BP-330.30
     notes: Equity, construction loans, JV, and public incentives sourcing; Construction and bridge loan origination
   - id: VS-530.50
     stage_order: 5
@@ -7821,7 +7910,8 @@ value_streams:
     capability_ids:
     - BC-4900
     - BC-1150
-    process_ids: []
+    process_ids:
+    - BP-100.20
     notes: Design oversight and owner-side construction monitoring; Construction execution by GC and trades
   - id: VS-530.60
     stage_order: 6
@@ -7829,14 +7919,17 @@ value_streams:
     capability_ids:
     - BC-4900
     - BC-4950
-    process_ids: []
+    process_ids:
+    - BP-320.20
     notes: Pre-leasing, opening, and ramp to stabilised performance; Pre-leasing campaigns and initial lease execution
   - id: VS-530.70
     stage_order: 7
     stage_name: Operational Handover
     capability_ids:
     - BC-4940
-    process_ids: []
+    process_ids:
+    - BP-320.30
+    - BP-320.10
     notes: Handover into ongoing property management operations
 - id: VS-540
   name: Solicitation-to-Closeout
@@ -7848,42 +7941,52 @@ value_streams:
     stage_name: Programme Design
     capability_ids:
     - BC-3260
-    process_ids: []
+    process_ids:
+    - BP-360.30
+    - BP-360.20
     notes: Objectives, allocation modelling, evaluation criteria
   - id: VS-540.20
     stage_order: 2
     stage_name: Solicitation Publication
     capability_ids:
     - BC-3260
-    process_ids: []
+    process_ids:
+    - BP-360.10
     notes: Funding opportunity publication and applicant outreach
   - id: VS-540.30
     stage_order: 3
     stage_name: Application Review
     capability_ids:
     - BC-3260
-    process_ids: []
+    process_ids:
+    - BP-360.10
     notes: Eligibility screening and merit review with conflict-of-interest controls
   - id: VS-540.40
     stage_order: 4
     stage_name: Award & Agreement
     capability_ids:
     - BC-3260
-    process_ids: []
+    process_ids:
+    - BP-360.10
+    - BP-360.30
     notes: Award selection, grant agreement issuance, and obligation
   - id: VS-540.50
     stage_order: 5
     stage_name: Recipient Monitoring
     capability_ids:
     - BC-3260
-    process_ids: []
+    process_ids:
+    - BP-360.30
+    - BP-360.40
     notes: Performance, financial, and site monitoring of recipients
   - id: VS-540.60
     stage_order: 6
     stage_name: Closeout & Audit Resolution
     capability_ids:
     - BC-3260
-    process_ids: []
+    process_ids:
+    - BP-360.30
+    - BP-360.40
     notes: Final reporting, single-audit resolution, and disallowed-cost recovery
 - id: VS-550
   name: Source-to-Tap
@@ -7975,49 +8078,58 @@ value_streams:
     stage_name: Deal Sourcing
     capability_ids:
     - BC-4930
-    process_ids: []
+    process_ids:
+    - BP-330.20
     notes: Acquisition lead sourcing across direct, broker, and off-market channels
   - id: VS-560.20
     stage_order: 2
     stage_name: Underwriting
     capability_ids:
     - BC-4930
-    process_ids: []
+    process_ids:
+    - BP-330.20
     notes: Cash flow, comparables, sensitivity, and scenario underwriting
   - id: VS-560.30
     stage_order: 3
     stage_name: Due Diligence
     capability_ids:
     - BC-4930
-    process_ids: []
+    process_ids:
+    - BP-330.20
     notes: Physical, environmental, title, lease, and financial diligence
   - id: VS-560.40
     stage_order: 4
     stage_name: Structuring & Negotiation
     capability_ids:
     - BC-4930
-    process_ids: []
+    process_ids:
+    - BP-330.20
     notes: Bid strategy, LOI, PSA, and tax / vehicle structuring
   - id: VS-560.50
     stage_order: 5
     stage_name: Closing & Settlement
     capability_ids:
     - BC-4930
-    process_ids: []
+    process_ids:
+    - BP-330.20
+    - BP-90.70
     notes: Escrow, settlement statement, and recording
   - id: VS-560.60
     stage_order: 6
     stage_name: Operational Onboarding
     capability_ids:
     - BC-4930
-    process_ids: []
+    process_ids:
+    - BP-320.30
     notes: Asset and lease data migration and vendor contract novation
   - id: VS-560.70
     stage_order: 7
     stage_name: Asset Management Handover
     capability_ids:
     - BC-4920
-    process_ids: []
+    process_ids:
+    - BP-320.10
+    - BP-320.30
     notes: Handover to ongoing asset stewardship and business plan execution
 - id: VS-570
   name: Spectrum-to-Deployment
@@ -8612,47 +8724,54 @@ value_streams:
     stage_name: Visa Application
     capability_ids:
     - BC-3300
-    process_ids: []
+    process_ids:
+    - BP-340.40
     notes: Receipt and validation of visa applications across categories
   - id: VS-640.20
     stage_order: 2
     stage_name: Visa Decisioning
     capability_ids:
     - BC-3300
-    process_ids: []
+    process_ids:
+    - BP-340.40
     notes: Adjudication of visa applications and fraud screening
   - id: VS-640.30
     stage_order: 3
     stage_name: Pre-Travel Authorisation
     capability_ids:
     - BC-3300
-    process_ids: []
+    process_ids:
+    - BP-340.40
     notes: ETA-style pre-travel authorisation and API/PNR processing
   - id: VS-640.40
     stage_order: 4
     stage_name: Border Inspection
     capability_ids:
     - BC-3300
-    process_ids: []
+    process_ids:
+    - BP-340.40
     notes: Primary and secondary inspection at ports of entry
   - id: VS-640.50
     stage_order: 5
     stage_name: Admission Decision
     capability_ids:
     - BC-3300
-    process_ids: []
+    process_ids:
+    - BP-340.40
     notes: Decisioning on admission, refusal, and conditions of entry
   - id: VS-640.60
     stage_order: 6
     stage_name: Status Maintenance
     capability_ids:
     - BC-3300
-    process_ids: []
+    process_ids:
+    - BP-340.40
     notes: Residence permits, work authorisations, and naturalisation administration
   - id: VS-640.70
     stage_order: 7
     stage_name: Removal & Return
     capability_ids:
     - BC-3300
-    process_ids: []
+    process_ids:
+    - BP-340.40
     notes: Detention, removal-order execution, and voluntary return

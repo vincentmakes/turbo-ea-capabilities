@@ -41,3 +41,11 @@ archived copy as documentation, not as live code.
 |---|---|---|
 | `import_industry_pcfs_phase3.py` | Authored 3 more industry-specific BP1 files (Retail BP-280, Automotive OEM BP-290, Health Insurance Payor BP-300) at BP1 + BP2 depth, anchored on APQC industry PCFs per `business-capability-governance-model.md` §11.7. | One PR (multiple commits). |
 | `wire_industry_vs_process_ids.py` | Populated `process_ids[]` on industry-specific value-stream stages now that the corresponding industry BP1+BP2 files exist (Banking VS-40, Insurance VS-240/VS-450, Telecom VS-510/VS-570, Healthcare VS-120/VS-180/VS-410, Pharma VS-20/VS-160, Oil & Gas VS-330, Defense VS-110/VS-590, Education VS-60/VS-430, Utilities VS-260/VS-550, Automotive VS-70/VS-630, Retail VS-610). | One PR (multiple per-industry commits). |
+
+## Phase 4 addendum
+
+| Script | What it did | When it ran |
+|---|---|---|
+| `import_industry_pcfs_phase4.py` | Authored 6 industry-specific BP1 files (Mining BP-310, Real Estate BP-320/330, Public Sector BP-340/350/360) at BP1 + BP2 depth. | One PR (multiple commits). |
+| `wire_industry_vs_phase4.py` | Wired `process_ids[]` for Real Estate (VS-340/360/530/560) and Public Sector (VS-30/50/90/210/220/480/490/540/640) value streams. | One PR (multiple per-industry commits). |
+| `import_industry_bp3.py` | BP3 drill-down for Pharma (BP-190/200), Banking (BP-130/140), Healthcare Provider (BP-170/180) — re-emitted each industry BP1 with BP1+BP2+BP3 levels. | One PR (one commit per industry). |

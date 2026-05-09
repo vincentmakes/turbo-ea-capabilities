@@ -18,7 +18,31 @@ children:
       Identify and validate biological targets; screen and optimise hit and lead compounds.
     realizes_capability_ids:
       - BC-810
-    children: []
+    children:
+      - id: BP-190.10.10
+        name: Identify and Validate Biological Targets
+        level: 3
+        description: >-
+          Identify candidate disease targets and validate their relevance through genetic, biochemical, and disease-association studies.
+        realizes_capability_ids:
+          - BC-810
+        children: []
+      - id: BP-190.10.20
+        name: Screen and Select Hit Compounds
+        level: 3
+        description: >-
+          Run high-throughput screening, fragment-based, and computational approaches to identify hit compounds against validated targets.
+        realizes_capability_ids:
+          - BC-810
+        children: []
+      - id: BP-190.10.30
+        name: Optimise Lead Candidates
+        level: 3
+        description: >-
+          Refine hits into leads through medicinal-chemistry optimisation, ADME tuning, and selectivity profiling.
+        realizes_capability_ids:
+          - BC-810
+        children: []
   - id: BP-190.20
     name: Conduct Preclinical Development
     level: 2
@@ -26,7 +50,33 @@ children:
       Conduct in vitro and in vivo preclinical studies; perform IND-enabling work.
     realizes_capability_ids:
       - BC-810
-    children: []
+    children:
+      - id: BP-190.20.10
+        name: Conduct In Vitro Pharmacology and Safety
+        level: 3
+        description: >-
+          Run cell-based and biochemical assays for efficacy, selectivity, mechanism, and early safety.
+        realizes_capability_ids:
+          - BC-810
+        children: []
+      - id: BP-190.20.20
+        name: Conduct In Vivo Toxicology and Pharmacokinetics
+        level: 3
+        description: >-
+          Run animal studies for pharmacokinetics, toxicology, and disease-model efficacy under GLP.
+        realizes_capability_ids:
+          - BC-810
+          - BC-720
+        children: []
+      - id: BP-190.20.30
+        name: Prepare IND/CTA Submissions
+        level: 3
+        description: >-
+          Compile preclinical data and CMC into Investigational New Drug / Clinical Trial Application packages.
+        realizes_capability_ids:
+          - BC-130
+          - BC-810
+        children: []
   - id: BP-190.30
     name: Conduct Clinical Trials
     level: 2
@@ -34,7 +84,40 @@ children:
       Plan and conduct clinical trials across Phase I, II, III, and IV under GCP.
     realizes_capability_ids:
       - BC-810
-    children: []
+    children:
+      - id: BP-190.30.10
+        name: Conduct Phase I Clinical Trials
+        level: 3
+        description: >-
+          Run first-in-human safety, tolerability, and pharmacokinetic studies under GCP.
+        realizes_capability_ids:
+          - BC-810
+        children: []
+      - id: BP-190.30.20
+        name: Conduct Phase II Clinical Trials
+        level: 3
+        description: >-
+          Run dose-finding and proof-of-concept efficacy trials in target patient populations.
+        realizes_capability_ids:
+          - BC-810
+        children: []
+      - id: BP-190.30.30
+        name: Conduct Phase III Clinical Trials
+        level: 3
+        description: >-
+          Run pivotal efficacy and safety trials at scale to support marketing authorisation.
+        realizes_capability_ids:
+          - BC-810
+        children: []
+      - id: BP-190.30.40
+        name: Conduct Phase IV / Post-Marketing Studies
+        level: 3
+        description: >-
+          Run post-approval studies for long-term safety, comparative effectiveness, and label expansion.
+        realizes_capability_ids:
+          - BC-810
+          - BC-130
+        children: []
   - id: BP-190.40
     name: Manage Clinical Operations and Sites
     level: 2
@@ -43,7 +126,41 @@ children:
     realizes_capability_ids:
       - BC-810
       - BC-300
-    children: []
+    children:
+      - id: BP-190.40.10
+        name: Select and Onboard Clinical Sites
+        level: 3
+        description: >-
+          Identify, qualify, and onboard investigator sites with site-initiation activities.
+        realizes_capability_ids:
+          - BC-810
+        children: []
+      - id: BP-190.40.20
+        name: Recruit and Enroll Patients
+        level: 3
+        description: >-
+          Recruit eligible patients through investigator sites, registries, and digital channels; manage informed consent.
+        realizes_capability_ids:
+          - BC-810
+        children: []
+      - id: BP-190.40.30
+        name: Monitor Trial Conduct
+        level: 3
+        description: >-
+          Monitor sites for protocol adherence, data quality, and patient safety; manage site queries and source data verification.
+        realizes_capability_ids:
+          - BC-810
+          - BC-720
+        children: []
+      - id: BP-190.40.40
+        name: Manage Clinical Trial Data
+        level: 3
+        description: >-
+          Capture, clean, and lock clinical-trial data; manage EDC systems and statistical analyses.
+        realizes_capability_ids:
+          - BC-610
+          - BC-810
+        children: []
   - id: BP-190.50
     name: Prepare Regulatory Submissions
     level: 2
@@ -51,4 +168,30 @@ children:
       Prepare and file regulatory submissions (IND, NDA, BLA, MAA) and respond to agency queries.
     realizes_capability_ids:
       - BC-130
-    children: []
+    children:
+      - id: BP-190.50.10
+        name: Prepare CMC and Module 3 Documentation
+        level: 3
+        description: >-
+          Author Chemistry, Manufacturing, and Controls documentation for regulatory submissions.
+        realizes_capability_ids:
+          - BC-130
+          - BC-720
+        children: []
+      - id: BP-190.50.20
+        name: Prepare Clinical Module 5
+        level: 3
+        description: >-
+          Author clinical study reports and integrated summaries of efficacy and safety.
+        realizes_capability_ids:
+          - BC-130
+          - BC-810
+        children: []
+      - id: BP-190.50.30
+        name: File and Respond to Regulatory Queries
+        level: 3
+        description: >-
+          File NDA/BLA/MAA submissions; respond to regulatory authority questions and information requests.
+        realizes_capability_ids:
+          - BC-130
+        children: []

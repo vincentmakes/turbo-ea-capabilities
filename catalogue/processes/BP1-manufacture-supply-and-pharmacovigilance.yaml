@@ -19,7 +19,32 @@ children:
     realizes_capability_ids:
       - BC-520
       - BC-720
-    children: []
+    children:
+      - id: BP-200.10.10
+        name: Plan GMP Production
+        level: 3
+        description: >-
+          Plan GMP production runs against demand and supply constraints; manage materials and capacity.
+        realizes_capability_ids:
+          - BC-520
+        children: []
+      - id: BP-200.10.20
+        name: Execute GMP Manufacturing
+        level: 3
+        description: >-
+          Execute GMP manufacturing operations including API synthesis, drug-product formulation, and biologics fermentation/purification.
+        realizes_capability_ids:
+          - BC-520
+          - BC-720
+        children: []
+      - id: BP-200.10.30
+        name: Manage Batch Records and Release
+        level: 3
+        description: >-
+          Maintain executed batch records; perform QA review and product release.
+        realizes_capability_ids:
+          - BC-720
+        children: []
   - id: BP-200.20
     name: Manage Quality Assurance and Quality Control
     level: 2
@@ -27,7 +52,40 @@ children:
       Run QA/QC programs across the product lifecycle, including stability, release testing, and CAPA.
     realizes_capability_ids:
       - BC-720
-    children: []
+    children:
+      - id: BP-200.20.10
+        name: Operate Quality Control Testing
+        level: 3
+        description: >-
+          Run incoming, in-process, and finished-product QC testing.
+        realizes_capability_ids:
+          - BC-720
+        children: []
+      - id: BP-200.20.20
+        name: Manage Stability Studies
+        level: 3
+        description: >-
+          Plan and run ICH stability studies; manage shelf-life determination.
+        realizes_capability_ids:
+          - BC-720
+        children: []
+      - id: BP-200.20.30
+        name: Manage CAPA and Deviations
+        level: 3
+        description: >-
+          Process deviations, OOS results, and corrective/preventive actions per ICH Q10.
+        realizes_capability_ids:
+          - BC-720
+        children: []
+      - id: BP-200.20.40
+        name: Conduct Quality Audits
+        level: 3
+        description: >-
+          Conduct internal and supplier quality audits; manage findings and corrective actions.
+        realizes_capability_ids:
+          - BC-720
+          - BC-140
+        children: []
   - id: BP-200.30
     name: Manage Cold-Chain and Pharmaceutical Supply Chain
     level: 2
@@ -36,7 +94,33 @@ children:
     realizes_capability_ids:
       - BC-520
       - BC-530
-    children: []
+    children:
+      - id: BP-200.30.10
+        name: Manage Cold-Chain Logistics
+        level: 3
+        description: >-
+          Operate temperature-controlled storage and transport across the supply chain.
+        realizes_capability_ids:
+          - BC-520
+        children: []
+      - id: BP-200.30.20
+        name: Manage Serialisation and Track-and-Trace
+        level: 3
+        description: >-
+          Apply unit-level serialisation and aggregate to comply with DSCSA / FMD track-and-trace requirements.
+        realizes_capability_ids:
+          - BC-520
+          - BC-130
+        children: []
+      - id: BP-200.30.30
+        name: Manage Wholesaler and Pharmacy Distribution
+        level: 3
+        description: >-
+          Manage 3PL/wholesaler relationships; deliver to retail and hospital pharmacy channels.
+        realizes_capability_ids:
+          - BC-510
+          - BC-520
+        children: []
   - id: BP-200.40
     name: Manage Pharmacovigilance and Adverse-Event Reporting
     level: 2
@@ -45,7 +129,41 @@ children:
     realizes_capability_ids:
       - BC-130
       - BC-120
-    children: []
+    children:
+      - id: BP-200.40.10
+        name: Process Adverse-Event Cases
+        level: 3
+        description: >-
+          Receive, triage, and process individual case safety reports across markets.
+        realizes_capability_ids:
+          - BC-130
+        children: []
+      - id: BP-200.40.20
+        name: Conduct Signal Detection and Risk Assessment
+        level: 3
+        description: >-
+          Detect safety signals; assess and document risk; update Risk Management Plans.
+        realizes_capability_ids:
+          - BC-120
+          - BC-130
+        children: []
+      - id: BP-200.40.30
+        name: Maintain Safety Database
+        level: 3
+        description: >-
+          Maintain the global safety database with adequate data quality and traceability.
+        realizes_capability_ids:
+          - BC-610
+          - BC-130
+        children: []
+      - id: BP-200.40.40
+        name: Submit PSUR / PADER and Regulatory Safety Reports
+        level: 3
+        description: >-
+          Prepare and submit Periodic Safety Update Reports and equivalent regulatory safety reports.
+        realizes_capability_ids:
+          - BC-130
+        children: []
   - id: BP-200.50
     name: Manage Product Registration and Post-Market Compliance
     level: 2
@@ -53,4 +171,29 @@ children:
       Maintain product registrations across markets and run post-market regulatory commitments and inspections.
     realizes_capability_ids:
       - BC-130
-    children: []
+    children:
+      - id: BP-200.50.10
+        name: Maintain Product Registrations
+        level: 3
+        description: >-
+          Maintain marketing authorisations across jurisdictions; manage registration databases.
+        realizes_capability_ids:
+          - BC-130
+        children: []
+      - id: BP-200.50.20
+        name: Submit Variations and Renewals
+        level: 3
+        description: >-
+          Prepare and submit registration variations, line extensions, and periodic renewals.
+        realizes_capability_ids:
+          - BC-130
+        children: []
+      - id: BP-200.50.30
+        name: Manage Inspection Readiness
+        level: 3
+        description: >-
+          Maintain inspection readiness for FDA / EMA / health-authority inspections; respond to findings.
+        realizes_capability_ids:
+          - BC-130
+          - BC-720
+        children: []

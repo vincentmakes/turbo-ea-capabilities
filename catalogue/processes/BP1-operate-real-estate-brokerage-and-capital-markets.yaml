@@ -1,0 +1,43 @@
+id: BP-330
+name: Operate Real Estate Brokerage and Capital Markets
+level: 1
+industry: Real Estate
+description: >-
+  Run real estate brokerage, transaction management, and capital-markets operations: listing and brokerage, acquisition/disposition advisory, real estate fund management, valuation and appraisal.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "Real Estate brokerage / capital markets reference (RESO Data Dictionary, IPMS, RICS)"
+realizes_capability_ids:
+  - BC-710
+children:
+  - id: BP-330.10
+    name: Manage Real Estate Listing and Brokerage
+    level: 2
+    description: >-
+      Operate residential and commercial brokerage: listing agreements, MLS exposure, showings, and offer negotiation.
+    realizes_capability_ids:
+      - BC-410
+    children: []
+  - id: BP-330.20
+    name: Manage Real Estate Acquisition and Disposition Advisory
+    level: 2
+    description: >-
+      Advise clients on acquisitions and dispositions: target identification, underwriting, due diligence, and deal closing.
+    realizes_capability_ids:
+      - BC-710
+    children: []
+  - id: BP-330.30
+    name: Manage Real Estate Capital Markets and Fund Management
+    level: 2
+    description: >-
+      Operate real-estate fund and investment management: capital raising, fund administration, asset/portfolio reporting.
+    realizes_capability_ids:
+      - BC-210
+    children: []
+  - id: BP-330.40
+    name: Manage Real Estate Valuation and Appraisal
+    level: 2
+    description: >-
+      Conduct property valuation and appraisal under IPMS / RICS / USPAP standards.
+    realizes_capability_ids: []
+    children: []
