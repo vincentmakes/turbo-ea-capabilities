@@ -940,16 +940,13 @@ Mirror of §9.8 for the BP layer. Each industry's process catalogue is anchored 
 
 #### Cross-industry baseline
 
-- **APQC Process Classification Framework® (PCF) — Cross-Industry, mixed v8.0 / v7.4** *(authoritative for BP-10 through BP-120, plus BP-370)*. APQC-published taxonomy. **v8.0 (released August 2024, generated 2026-02-25)** introduced 13 top-level categories, up from 12 in v7.4: category 4.0 was renamed *Deliver Physical Products* → *Manage Supply Chain for Physical Products*, category 7 *Human Capital* → *Human Resources*, category 8 added "(IT)" qualifier, and a new category 13.0 *Develop and Manage Business Capabilities* was added (covering BPM / PMO / EQM / OCM in v8.0, *not* the BC-catalogue meta-management I initially assumed). v8.0 also reorganised the BP2 within several categories — notably category 11 (Resiliency moved out, Compliance/Remediation slotted in) and most BP3 codes throughout.
-- **Verified state per node** (from a 2026-05-09 cross-walk against the official v8.0 Excel file):
-  - **103 cross-industry nodes** carry codes whose v7.4 → v8.0 mapping is preserved (same code refers to the same process); these are tagged `version: "8.0"`.
-  - **198 cross-industry nodes** carry codes that v8.0 *reused for a different process* or *removed entirely*; these are tagged `version: "7.4.0"` to be honest about the anchor — a future PR can re-author them from v8.0 ground truth.
-- The mixed-version state is intentional and defensive. The framework_refs version label is authoritative — readers can trust that a `"8.0"` label resolves to the same process in v8.0, and a `"7.4.0"` label means the local node anchors on v7.4 (because v8.0 reorganised that position).
-- Public summary: <https://www.apqc.org/process-frameworks>.
-
-##### Future re-author work
-
-The 198 v7.4-anchored cross-industry nodes can be re-authored from v8.0 in a future PR by reading the official v8.0 Excel `Combined` sheet (PCF ID, Hierarchy ID, Name, Element Description) and replacing each non-matching node's `name`, `description`, and `external_id` with v8.0 ground truth, while preserving local BP ids and `realizes_capability_ids`. Out of scope for the current PR because BP3 reorganisation in v8.0 (e.g. cat 11) cascades into VS `process_ids` re-wiring.
+- **APQC Process Classification Framework® (PCF) — Cross-Industry, v8.0** *(authoritative for BP-10 through BP-120 plus BP-370)*. APQC-published taxonomy with 13 top-level categories, 74 BP2 (Process Groups), and 362 BP3 (Processes). The local catalogue is **fully re-authored from the official v8.0 Excel `Combined` sheet** (K016808, generated 2026-02-25) — names (Title-Cased), descriptions, and `framework_refs.external_id` codes all sourced verbatim from v8.0. Public summary: <https://www.apqc.org/process-frameworks>.
+- **Local id mapping:** APQC categories 1.0–12.0 map to local `BP-10`..`BP-120`; APQC category 13.0 maps to local `BP-370` (BP-130..BP-360 are taken by industry-specific BP1 files added in earlier PRs). The `framework_refs.external_id` is the authoritative cross-walk — a reader can pull the official APQC element by that id.
+- **Local name preservation:** two BP1s kept local names that diverge from v8.0 nomenclature for backward compatibility:
+  - `BP-70` local "Develop and Manage Human Capital" — v8.0 calls it "Develop and Manage Human Resources".
+  - `BP-80` local "Manage Information Technology" — v8.0 calls it "Manage Information Technology (IT)".
+  These are aliases — the BP2/BP3 content beneath each matches v8.0 exactly.
+- **Local id continuity:** wherever a v7.4-authored local BP node fuzzy-matched a v8.0 node by name, the local id was preserved so VS `process_ids` continued to resolve. Two cat-2 BP2 ids were absorbed by v8.0's simplification of category 2 and got re-routed via VS `process_ids` patch (BP-20.40 / BP-20.50 → BP-20.30 across 20 VS stages).
 
 #### Banking & Capital Markets
 

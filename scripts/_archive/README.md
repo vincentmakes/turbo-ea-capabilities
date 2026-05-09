@@ -75,3 +75,9 @@ archived copy as documentation, not as live code.
 | Script | What it did | When it ran |
 |---|---|---|
 | `verify_apqc_v8_versions.py` | Cross-walked every cross-industry BP node's `framework_refs.external_id` against the official APQC PCF v8.0 Excel file (Combined sheet). Reverted 198 nodes from `version: "8.0"` to `version: "7.4.0"` where v8.0 reused the same code for a different process or removed the code entirely. Left 103 nodes at `version: "8.0"` where the v7.4 → v8.0 cross-walk holds. Documented the mixed-version state in §11.7. | One PR (one commit). |
+
+## Phase 9 addendum
+
+| Script | What it did | When it ran |
+|---|---|---|
+| `reauthor_apqc_v8.py` | Re-authored every cross-industry BP1 file (BP-10..BP-120 + BP-370) from the official APQC PCF v8.0 Cross-Industry Excel (K016808). For each category, built the v8.0 BP2/BP3 tree, fuzzy-matched against existing v7.4-authored local nodes by name to preserve local BP ids and `realizes_capability_ids`, then re-emitted the BP1 YAML with v8.0 names (Title-Cased), descriptions verbatim from v8.0, and framework_refs codes pinned to v8.0. Two cat-2 BP2 ids were absorbed by v8.0 simplification (BP-20.40 / BP-20.50 → BP-20.30 across 20 VS stages). | One PR (multiple per-category commits + 1 VS patch commit). |

@@ -3,7 +3,7 @@ name: Acquire, Construct, and Manage Assets
 level: 1
 industry: Cross-Industry
 description: >-
-  Plan, acquire, construct, maintain, and dispose of productive assets — facilities, plant, real estate, and similar long-lived enterprise assets.
+  Relating to the design, construction, acquisition, and management of both productive and non-productive assets.
 framework_refs:
   - framework: APQC-PCF
     external_id: "10.0"
@@ -16,7 +16,7 @@ children:
     name: Plan and Acquire Assets
     level: 2
     description: >-
-      Plan asset needs, evaluate buy/lease alternatives, and acquire productive assets.
+      Planning, acquiring, and managing facilities, workspaces, and supporting assets. Acquire, configure, and manage facilities and workspaces, to include supporting equipment and materials.
     framework_refs:
       - framework: APQC-PCF
         external_id: "10.1"
@@ -26,204 +26,277 @@ children:
       - BC-700
     children:
       - id: BP-100.10.10
-        name: Develop Property and Asset Strategy
+        name: Develop Property Strategy and Long Term Vision
         level: 3
         description: >-
-          Set the multi-year property and productive-asset strategy.
+          Strategizing a long-term vision for managing properties. Prepare strategies and a long-term vision for managing purchased/retained properties.
         framework_refs:
           - framework: APQC-PCF
             external_id: "10.1.1"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-710
-          - BC-700
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-100.10.20
-        name: Plan Facility Capacity
+        name: Plan Facility
         level: 3
         description: >-
-          Plan facility capacity to meet the operating plan.
+          Recognizing the needs of facility users in order to construct a project proposal that meets those needs.
         framework_refs:
           - framework: APQC-PCF
             external_id: "10.1.2"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-700
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-100.10.30
-        name: Acquire Real Estate or Buildings
+        name: Provide Workspace and Facilities
         level: 3
         description: >-
-          Acquire real estate or buildings consistent with the strategy.
+          Managing the provision of the workspace and its assets. Arrange an office space with all assets (tables, chairs, computers, admin staff, etc.) according to requirements.
         framework_refs:
           - framework: APQC-PCF
             external_id: "10.1.3"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-710
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-100.10.40
-        name: Acquire Equipment and Tooling
+        name: Manage Facilities Operations
         level: 3
         description: >-
-          Acquire production and operating equipment.
+          Managing all operational activities of the facility. Manage how each function/business unit works. Support the manufacturing facility to attain organizational goals.
         framework_refs:
           - framework: APQC-PCF
             external_id: "10.1.4"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-700
-          - BC-500
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
   - id: BP-100.20
-    name: Design and Construct Productive Assets
+    name: Design and Construct Assets
     level: 2
     description: >-
-      Design, construct, and commission productive assets — facilities, plant, and infrastructure.
+      Designing and constructing assets such as machines, tools, factories, etc. Manage steps to acquire assets including managing capital, as well as planning, scheduling, and overseeing acquisition/construction.
     framework_refs:
       - framework: APQC-PCF
         external_id: "10.2"
-        version: "7.4.0"
-    realizes_capability_ids:
-      - BC-700
-      - BC-720
+        version: "8.0"
+    realizes_capability_ids: []
     children:
       - id: BP-100.20.10
-        name: Design Productive Assets
+        name: Manage Capital Program for Assets
         level: 3
         description: >-
-          Design facilities and productive assets to specification.
+          Producing and maintaining a planning schedule and a financial plan to purchase or manufacture assets. Determine the investment plan, monitor capital, and secure the necessary financing in order to realize completion of the program.
         framework_refs:
           - framework: APQC-PCF
             external_id: "10.2.1"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-700
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-100.20.20
-        name: Schedule and Perform Construction Work
+        name: Design and Plan Asset Construction
         level: 3
         description: >-
-          Schedule and perform construction work for new and refurbished assets.
+          Outlining the steps and strategies needed to construct assets. Verify that all regulations are adhered to and that all permissions have been granted. Organize and plan for resources to complete construction.
         framework_refs:
           - framework: APQC-PCF
             external_id: "10.2.2"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-700
-          - BC-900
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-100.20.30
-        name: Manage Construction Project
+        name: Schedule and Perform Construction Work
         level: 3
         description: >-
-          Manage construction projects across cost, schedule, and quality.
+          Arranging a timetable for which to perform construction work. Schedule resources to contract assets for new or replacement assets. Reschedule or redesign assets if needed.
         framework_refs:
           - framework: APQC-PCF
             external_id: "10.2.3"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-900
-          - BC-700
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-100.20.40
-        name: Commission Productive Assets
+        name: Manage Asset Construction
         level: 3
         description: >-
-          Commission, test, and accept productive assets prior to operation.
+          Overseeing the performance and quality of work. Assure that records are maintained throughout the construction process. Adhere to all safety, security, and access regulations set forth by the organization and all government standards.
         framework_refs:
           - framework: APQC-PCF
             external_id: "10.2.4"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-700
-          - BC-720
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
   - id: BP-100.30
-    name: Maintain Productive Assets
+    name: Maintain Assets
     level: 2
     description: >-
-      Operate and maintain productive assets across their useful life: planned, preventive, and corrective maintenance.
+      Preserving assets through the planning, managing, and performance of preventative, routine, and critical maintenance work.
     framework_refs:
       - framework: APQC-PCF
         external_id: "10.3"
-        version: "7.4.0"
-    realizes_capability_ids:
-      - BC-700
+        version: "8.0"
+    realizes_capability_ids: []
     children:
       - id: BP-100.30.10
-        name: Maintain Plan and Resources for Asset Maintenance
+        name: Plan Asset Maintenance
         level: 3
         description: >-
-          Plan maintenance programs, resources, and budgets.
+          Ensuring that necessary resources are available and tasks are prioritized accordingly through planning. Provide strategies and policies that identify tasks that need to be completed, and the resources necessary to fulfill those tasks.
         framework_refs:
           - framework: APQC-PCF
             external_id: "10.3.1"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-700
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-100.30.20
-        name: Perform Asset Maintenance
+        name: Manage Asset Maintenance
         level: 3
         description: >-
-          Execute planned, preventive, and corrective maintenance work.
+          Ensuring that asset maintenance is conducted in a timely manner and successfully. Schedule work with the required resources with an eye on quality control and safety. Verify that contracted maintenance meets performance targets.
         framework_refs:
           - framework: APQC-PCF
             external_id: "10.3.2"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-700
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-100.30.30
-        name: Manage Asset Performance
+        name: Perform Asset Maintenance
         level: 3
         description: >-
-          Monitor asset performance and reliability; drive improvement.
+          Engaging in all aspects of asset maintenance. Ensure that all assets are functioning properly and to all specified codes and regulations where applicable. Maintenance includes all preventative, routine, and corrective activates.
         framework_refs:
           - framework: APQC-PCF
             external_id: "10.3.3"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-700
-          - BC-720
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
   - id: BP-100.40
-    name: Dispose of Productive Assets
+    name: Manage Asset End-of-life
     level: 2
     description: >-
-      Decommission and dispose of assets at end-of-life, including environmental and remarketing considerations.
+      Managing the disposition of assets at their end-of-life. End-of-life for an asset may be due to obsolescence, replacement, excess capacity, or disrepair among other potential factors. Steps may include decommissioning, disassembly, recycling, etc. Tracking and reporting may also be appropriate for some or all asset types due to law, regulation, or social/environmental responsibility.
     framework_refs:
       - framework: APQC-PCF
         external_id: "10.4"
-        version: "7.4.0"
-    realizes_capability_ids:
-      - BC-710
-      - BC-740
+        version: "8.0"
+    realizes_capability_ids: []
     children:
       - id: BP-100.40.10
-        name: Plan Asset Decommissioning
+        name: Develop Exit Strategy
         level: 3
         description: >-
-          Plan decommissioning, including environmental and safety considerations.
+          Creating a strategy for managing asset exits.
         framework_refs:
           - framework: APQC-PCF
             external_id: "10.4.1"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-710
-          - BC-730
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-100.40.20
-        name: Decommission and Dispose of Assets
+        name: Decommission Productive Assets
         level: 3
         description: >-
-          Execute decommissioning and disposal, including remarketing or scrappage.
+          Retiring assets that are no longer viable to the business. Decommission assets that are no longer in working order, are out of date, or whose maintenance exceeds the cost of replacement.
         framework_refs:
           - framework: APQC-PCF
             external_id: "10.4.2"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-710
-          - BC-740
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-100.40.30
+        name: Perform Sale or Trade
+        level: 3
+        description: >-
+          Performing the sale of assets. Achieve and complete the sale process. Deliver the end product to the customers.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "10.4.3"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-100.40.40
+        name: Manage Take-back Centers
+        level: 3
+        description: >-
+          Managing locations where end-of-life assets are evaluated for decommissioning, disassembly, recycling, etc.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "10.4.4"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-100.40.50
+        name: Dismantle Assets
+        level: 3
+        description: >-
+          Dismantling an asset into manageable parts. The parts may follow different dispositions, such as resale, reuse, recycle, etc.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "10.4.5"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-100.40.60
+        name: Track Parts
+        level: 3
+        description: >-
+          Tracking the disposition of all parts from end-of-life assets. Tracking should provide an audit trail to include source, rational for disposition, and destination.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "10.4.6"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-100.40.70
+        name: Recycle Parts
+        level: 3
+        description: >-
+          Recycling parts in accordance with legal, regulatory, and social/environmental responsibilities.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "10.4.7"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-100.40.80
+        name: Ship Hazardous Material
+        level: 3
+        description: >-
+          Planning, conducting, and tracking shipment of hazardous materials.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "10.4.8"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-100.40.90
+        name: Provide Government Reporting
+        level: 3
+        description: >-
+          Preparing and distributing government reports.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "10.4.9"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-100.40.100
+        name: Perform Abandonment
+        level: 3
+        description: >-
+          Planning and performing abandonment activities. Whether facilities  or equipment, ensure assets to be abandoned are safe, secure, and meet all legal, regulatory, and social/environmental responsibilities.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "10.4.10"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-100.40.110
+        name: Perform Waste and Hazardous Goods Management
+        level: 3
+        description: >-
+          Planning and performing waste and hazardous goods management. In compliance with all legal, regulatory, and social/environmental requirements, plan, document, and conduct hazardous material handling, disposal, and reporting.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "10.4.11"
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
