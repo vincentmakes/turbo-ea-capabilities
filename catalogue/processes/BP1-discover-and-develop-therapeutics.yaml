@@ -1,0 +1,54 @@
+id: BP-190
+name: Discover and Develop Therapeutics
+level: 1
+industry: Pharmaceuticals & Life Sciences
+description: >-
+  Conduct discovery, preclinical, and clinical development of therapeutic products through to regulatory submission readiness.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "Life Sciences PCF v6.1/7.2 — Discovery and Development categories"
+realizes_capability_ids:
+  - BC-810
+  - BC-820
+children:
+  - id: BP-190.10
+    name: Conduct Drug Discovery and Target Identification
+    level: 2
+    description: >-
+      Identify and validate biological targets; screen and optimise hit and lead compounds.
+    realizes_capability_ids:
+      - BC-810
+    children: []
+  - id: BP-190.20
+    name: Conduct Preclinical Development
+    level: 2
+    description: >-
+      Conduct in vitro and in vivo preclinical studies; perform IND-enabling work.
+    realizes_capability_ids:
+      - BC-810
+    children: []
+  - id: BP-190.30
+    name: Conduct Clinical Trials
+    level: 2
+    description: >-
+      Plan and conduct clinical trials across Phase I, II, III, and IV under GCP.
+    realizes_capability_ids:
+      - BC-810
+    children: []
+  - id: BP-190.40
+    name: Manage Clinical Operations and Sites
+    level: 2
+    description: >-
+      Operate the clinical-trial machine: site selection, patient recruitment, monitoring, data management.
+    realizes_capability_ids:
+      - BC-810
+      - BC-300
+    children: []
+  - id: BP-190.50
+    name: Prepare Regulatory Submissions
+    level: 2
+    description: >-
+      Prepare and file regulatory submissions (IND, NDA, BLA, MAA) and respond to agency queries.
+    realizes_capability_ids:
+      - BC-130
+    children: []
