@@ -1,0 +1,56 @@
+id: BP-490
+name: Operate Chemical Manufacturing and Compliance
+level: 1
+industry: Chemicals
+description: >-
+  Run chemical-industry operations: chemical product development and formulation, chemical manufacturing, hazardous-materials and REACH compliance, chemical distribution and process safety.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "REACH (EU 1907/2006) + GHS + ACC Responsible Care + OSHA PSM + EU Seveso III 2012/18/EU + ISO 9001/14001"
+realizes_capability_ids:
+  - BC-520
+  - BC-130
+children:
+  - id: BP-490.10
+    name: Develop Chemical Products and Formulations
+    level: 2
+    description: >-
+      Develop chemical products and formulations; manage product stewardship from R&D onward.
+    realizes_capability_ids:
+      - BC-810
+      - BC-820
+    children: []
+  - id: BP-490.20
+    name: Operate Chemical Manufacturing
+    level: 2
+    description: >-
+      Run continuous and batch chemical manufacturing; manage process control, kinetics, and yield.
+    realizes_capability_ids:
+      - BC-520
+      - BC-720
+    children: []
+  - id: BP-490.30
+    name: Manage Hazardous Materials and REACH Compliance
+    level: 2
+    description: >-
+      Maintain REACH and equivalent registrations; manage SDS, GHS labelling, exposure scenarios, and authorisations.
+    realizes_capability_ids:
+      - BC-130
+    children: []
+  - id: BP-490.40
+    name: Manage Process Safety and Major-Hazard Operations
+    level: 2
+    description: >-
+      Operate process-safety management per OSHA PSM / Seveso III; manage major-accident hazards.
+    realizes_capability_ids:
+      - BC-730
+      - BC-160
+    children: []
+  - id: BP-490.50
+    name: Manage Chemical Distribution and Logistics
+    level: 2
+    description: >-
+      Operate hazmat-compliant chemical distribution: bulk and packed shipments, ADR/RID/IMDG transport regulations.
+    realizes_capability_ids:
+      - BC-520
+    children: []

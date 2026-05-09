@@ -1,0 +1,60 @@
+id: BP-390
+name: Develop, Produce, and Distribute Content
+level: 1
+industry: Media, Entertainment & Telecom Content
+description: >-
+  Run media-industry operations: content development and greenlight, production, rights and IP, distribution and syndication, advertising/subscription monetisation, audience measurement.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "APQC Broadcasting/Media PCF v7.2.x + MovieLabs Common Workflow + SMPTE/EBU/DPP standards"
+realizes_capability_ids:
+  - BC-100
+children:
+  - id: BP-390.10
+    name: Develop and Greenlight Content
+    level: 2
+    description: >-
+      Source, evaluate, and greenlight content concepts; manage development slate.
+    realizes_capability_ids:
+      - BC-800
+    children: []
+  - id: BP-390.20
+    name: Produce Content
+    level: 2
+    description: >-
+      Plan, execute, and post-produce content (film, TV, audio, news), including pre-production, principal photography/recording, and post.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-390.30
+    name: Manage Rights and Intellectual Property
+    level: 2
+    description: >-
+      Acquire, register, and administer content rights; manage chain of title; license rights to and from third parties.
+    realizes_capability_ids:
+      - BC-840
+    children: []
+  - id: BP-390.40
+    name: Distribute and Syndicate Content
+    level: 2
+    description: >-
+      Distribute content across linear, OTT, theatrical, home-entertainment, syndication, and licensee channels.
+    realizes_capability_ids:
+      - BC-520
+    children: []
+  - id: BP-390.50
+    name: Operate Advertising Sales and Subscription
+    level: 2
+    description: >-
+      Sell advertising inventory and operate subscription services; manage ad operations, viewership-based billing.
+    realizes_capability_ids:
+      - BC-410
+      - BC-420
+    children: []
+  - id: BP-390.60
+    name: Manage Audience Measurement and Analytics
+    level: 2
+    description: >-
+      Capture and analyse audience data (linear ratings, streaming telemetry, ad delivery) for monetisation and programming decisions.
+    realizes_capability_ids:
+      - BC-610
+    children: []

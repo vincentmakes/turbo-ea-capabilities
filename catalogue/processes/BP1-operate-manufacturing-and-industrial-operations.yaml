@@ -1,0 +1,48 @@
+id: BP-470
+name: Operate Manufacturing and Industrial Operations
+level: 1
+industry: Manufacturing & Industrial
+description: >-
+  Run manufacturing-specific operational specialisations: discrete and process manufacturing operations, manufacturing maintenance (TPM), and industrial automation / OT (ISA-95-aligned MOM).
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "ISA-95 (IEC 62264) MOM + APQC Cross-Industry PCF + TPM/OEE + MESA MOM Model + IEC 62443 (OT cybersecurity)"
+realizes_capability_ids:
+  - BC-520
+children:
+  - id: BP-470.10
+    name: Operate Discrete Manufacturing
+    level: 2
+    description: >-
+      Run discrete manufacturing (assembly, machining, fabrication) per ISA-95 Level 3 MOM.
+    realizes_capability_ids:
+      - BC-520
+      - BC-720
+    children: []
+  - id: BP-470.20
+    name: Operate Process Manufacturing
+    level: 2
+    description: >-
+      Run process manufacturing (continuous, batch) per ISA-95 Level 3 MOM.
+    realizes_capability_ids:
+      - BC-520
+      - BC-720
+    children: []
+  - id: BP-470.30
+    name: Manage Manufacturing Maintenance
+    level: 2
+    description: >-
+      Run TPM and maintenance programs across plant assets; track OEE and reliability metrics.
+    realizes_capability_ids:
+      - BC-700
+      - BC-720
+    children: []
+  - id: BP-470.40
+    name: Operate Industrial Automation and OT
+    level: 2
+    description: >-
+      Operate industrial automation systems (SCADA, MES, HMI) and OT cybersecurity per IEC 62443.
+    realizes_capability_ids:
+      - BC-600
+      - BC-620
+    children: []

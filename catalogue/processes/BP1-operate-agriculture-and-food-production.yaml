@@ -1,0 +1,44 @@
+id: BP-480
+name: Operate Agriculture and Food Production
+level: 1
+industry: Agriculture & Food Production
+description: >-
+  Run agriculture and food-production operations: crop and livestock production, food processing and manufacturing, farm-to-market supply chain, food-safety and traceability.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "APQC Food & Beverage PCF v7.2.x + GLOBALG.A.P. + FSMA / EU 178/2002 + ISO 22000/FSSC 22000 + AgGateway + ISO 11783 (ISOBUS)"
+realizes_capability_ids:
+  - BC-520
+children:
+  - id: BP-480.10
+    name: Manage Crop Production
+    level: 2
+    description: >-
+      Run crop production: planning, planting, crop protection, irrigation, and harvest under GLOBALG.A.P. or equivalent.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-480.20
+    name: Manage Livestock Production
+    level: 2
+    description: >-
+      Run livestock production: breeding, husbandry, animal health, and welfare per industry standards.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-480.30
+    name: Operate Food Processing and Manufacturing
+    level: 2
+    description: >-
+      Run food processing and manufacturing under HACCP / FSSC 22000; manage hygienic operations and allergen controls.
+    realizes_capability_ids:
+      - BC-520
+      - BC-720
+    children: []
+  - id: BP-480.40
+    name: Manage Farm-to-Market Supply Chain and Traceability
+    level: 2
+    description: >-
+      Operate farm-to-market supply chains; maintain end-to-end traceability for food-safety and recall purposes.
+    realizes_capability_ids:
+      - BC-520
+      - BC-130
+    children: []

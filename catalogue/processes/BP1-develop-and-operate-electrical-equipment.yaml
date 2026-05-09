@@ -1,0 +1,47 @@
+id: BP-460
+name: Develop and Operate Electrical Equipment
+level: 1
+industry: Electrical Components & Equipment
+description: >-
+  Run electrical-equipment-industry operations: electrical/electronic product development, type approval and certification, component lifecycle (PCN/EOL), distributor and broker network.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "IEC 60204/61439/61010/61508/62443 + IPC-A-600/610 + UL listings + IATF 16949 (where automotive-supply)"
+realizes_capability_ids:
+  - BC-820
+children:
+  - id: BP-460.10
+    name: Develop Electrical and Electronic Products
+    level: 2
+    description: >-
+      Design and develop electrical/electronic products; manage hardware-software co-design and EMC.
+    realizes_capability_ids:
+      - BC-810
+      - BC-820
+    children: []
+  - id: BP-460.20
+    name: Manage Type Approval and Certification
+    level: 2
+    description: >-
+      Obtain product certifications (UL, CE, IEC, agency marks); manage compliance throughout lifecycle.
+    realizes_capability_ids:
+      - BC-720
+      - BC-130
+    children: []
+  - id: BP-460.30
+    name: Manage Component Lifecycle and Obsolescence
+    level: 2
+    description: >-
+      Manage product change notifications (PCN), end-of-life (EOL), last-time-buy windows, and replacement migration.
+    realizes_capability_ids:
+      - BC-820
+    children: []
+  - id: BP-460.40
+    name: Manage Distributor and Broker Network
+    level: 2
+    description: >-
+      Onboard and manage authorised distributors and brokers; manage grey-market and counterfeit-component risk.
+    realizes_capability_ids:
+      - BC-510
+      - BC-410
+    children: []

@@ -1035,6 +1035,107 @@ Mirror of §9.8 for the BP layer. Each industry's process catalogue is anchored 
 - **FAR (US Federal Acquisition Regulation), EU Procurement Directives** — inform `BP-360.10` Manage Public-Sector Procurement.
 - **NIST SP 800-53** *(US federal cybersecurity controls)* — informs IT-related public-sector compliance processes.
 
+#### Travel & Hospitality
+
+- **AHLA Uniform System of Accounts for the Lodging Industry (USALI), 11th Edition** — accounting and operating-metric standard for the lodging industry; informs hotel operations and revenue-management processes.
+- **HEDNA (Hotel Electronic Distribution Network Association) and OpenTravel Alliance (OTA) standards** — distribution and reservation messaging standards; inform `BP-380.30` Manage Distribution and Channel.
+- **HTNG (Hospitality Technology Next Generation) reference architecture** — technology and integration standards across PMS, CRS, RMS.
+- **AHRA / IATA Resolutions** — air-travel industry standards (where Travel & Hospitality overlaps with airline/cruise).
+- Anchors `BP-380` Operate Hospitality Properties and Distribution.
+
+#### Media, Entertainment & Telecom Content
+
+- **APQC Broadcasting / Radio / TV / Cable / Media PCF, v7.2.x** — industry-specific PCF for broadcasters and content distributors.
+- **MovieLabs 2030 Vision and Common Workflow** — production and post-production reference for film/TV studios.
+- **SMPTE standards (e.g. ST 2110, IMF, EIDR)** — production, mastering, and content-identifier standards.
+- **EBU (European Broadcasting Union) reference frameworks**, **DPP (Digital Production Partnership) standards** — broadcaster-to-broadcaster delivery standards.
+- Anchors `BP-390` Develop, Produce, and Distribute Content.
+
+#### Professional Services
+
+- **APQC Consulting / Professional Services PCF, v7.2.x** — industry-specific PCF for consulting firms, IT service providers, audit and law firms.
+- **CMMI for Services (CMMI-SVC), v2.0** — service-delivery process maturity reference.
+- **Service Performance Insight (SPI) Service Performance Best Practices Survey** — operational benchmarks for engagement profitability and resource utilisation.
+- **PMI Standard for Program Management** — informs program- and engagement-management processes.
+- Anchors `BP-400` Operate Professional Services Engagements.
+
+#### Transportation & Logistics
+
+- **APQC Cross-Industry PCF** *(no published L&T-specific industry PCF as of May 2026)* — transport/logistics processes covered as a specialisation of Cross-Industry BP-40.
+- **SCOR (Supply Chain Operations Reference) v14.0** — APICS/ASCM reference model with Plan-Source-Make-Deliver-Return-Enable categories. Informs the structure of `BP-410` Operate Transportation and Logistics Services.
+- **GS1 Global Logistics Standards (Logistics Interoperability Model)**, **UN/CEFACT Multi-Modal Transport Reference Data Model** — data-interchange standards for shipments and consignments.
+- **IATA Resolutions, IMO conventions (SOLAS, MARPOL), AAR Operations Specifications** — air, maritime, and rail operating standards.
+- Anchors `BP-410` Operate Transportation and Logistics Services.
+
+#### Software & Technology
+
+- **SaaS Capability Maturity Model (SaaS CMM), TM Forum ODA, ITIL 4** — service-strategy/design/transition/operation references for SaaS and tech operators.
+- **TSIA (Technology Services Industry Association) frameworks** — customer-success, professional-services, and support frameworks for technology vendors.
+- **OpenChain ISO/IEC 5230** — open-source compliance for software products.
+- **DevOps / SRE practices (Google SRE Book; DORA capability model)** — inform engineering and operational processes for software products.
+- Anchors `BP-420` Operate Software-as-a-Service Lifecycle.
+
+#### Air Traffic Control
+
+- **ICAO Doc 4444 — Air Traffic Management (PANS-ATM)** — global ATM standard.
+- **ICAO Doc 9750 — Aviation System Block Upgrades (ASBU)** — modernisation roadmap.
+- **EUROCONTROL ATM Master Plan and Single European Sky regulations** — pan-European ATM operations.
+- **FAA Order 7110.65 — Air Traffic Control** — US-domestic ATC procedures.
+- **CANSO Standard of Excellence in Safety Management** — performance-based ANSP safety reference.
+- Anchors `BP-430` Operate Air Traffic Management.
+
+#### Engineering Services
+
+- **APQC Engineering / Construction PCF** *(no specific industry PCF; uses Cross-Industry BP-100 + Engineering specialisation)*.
+- **ISO 19650 series — Building Information Modelling (BIM)** — common data environment and information delivery.
+- **AECO project lifecycle (AIA Phases / RIBA Plan of Work)** — design and construction project phases.
+- **PMI Construction Extension to the PMBOK Guide** — construction-specific project management reference.
+- Anchors `BP-440` Deliver Engineering and Construction Services.
+
+#### HVAC & Building Automation Systems
+
+- **ASHRAE standards (62.1 Ventilation, 90.1 Energy, 15 Refrigeration Safety, Standard 211 Energy Audits)** — HVAC engineering reference.
+- **BACnet (ASHRAE 135) and KNX (ISO/IEC 14543-3) standards** — building-automation interoperability standards.
+- **AHRI certification programs** — HVAC equipment performance certification.
+- **EU F-Gas Regulation 517/2014, US EPA Section 608** — refrigerant-handling regulatory regimes.
+- Anchors `BP-450` Operate HVAC and Building Automation Lifecycle.
+
+#### Electrical Components & Equipment
+
+- **IEC standards (60204, 61439, 61010, 61508, 62443)** — electrical safety, switchgear, machinery, functional safety, industrial cybersecurity.
+- **IPC standards (IPC-A-600, IPC-A-610)** — electronics manufacturing acceptability standards.
+- **UL listings (UL 489, UL 1741)** — North American product safety listings.
+- **ISO 9001 and IATF 16949 (where automotive supply)** — quality management.
+- Anchors `BP-460` Develop and Operate Electrical Equipment.
+
+#### Manufacturing & Industrial
+
+- **ISA-95 (IEC 62264) — Enterprise-Control System Integration** — Level 0–4 manufacturing operations management reference.
+- **APQC Cross-Industry PCF (BP-40 + BP-100)** — most manufacturing processes are Cross-Industry; this BP1 captures discrete- and process-manufacturing specialisations.
+- **TPM (Total Productive Maintenance), OEE (Overall Equipment Effectiveness)** — operational measurement frameworks.
+- **MESA (Manufacturing Enterprise Solutions Association) MOM Model** — Manufacturing Operations Management reference.
+- **IEC 62443 (industrial cybersecurity)** — OT-specific cybersecurity reference.
+- Anchors `BP-470` Operate Manufacturing and Industrial Operations.
+
+#### Agriculture & Food Production
+
+- **APQC Food & Beverage PCF, v7.2.x** *(also covers agriculture-adjacent food manufacturing)*.
+- **GLOBALG.A.P. Integrated Farm Assurance** — farm-level certification standard.
+- **FSMA (US Food Safety Modernization Act), EU General Food Law (EC 178/2002)** — food-safety regulatory regimes.
+- **ISO 22000 / FSSC 22000** — food-safety management systems.
+- **AgGateway, GS1 Foundation, ISO 11783 (ISOBUS)** — agricultural data and equipment interoperability standards.
+- Anchors `BP-480` Operate Agriculture and Food Production.
+
+#### Chemicals
+
+- **APQC Cross-Industry PCF + chemical specialisation** *(no published Chemicals-specific PCF)*.
+- **REACH (EU Regulation 1907/2006)** — registration, evaluation, authorisation, and restriction of chemicals.
+- **GHS (Globally Harmonized System)** — classification and labelling of hazardous chemicals.
+- **ACC Responsible Care®** — chemical-industry sustainability and operational-excellence framework.
+- **OSHA PSM, EU Seveso III Directive 2012/18/EU** — process-safety management for major-hazard chemical operations.
+- **ISO 9001 and ISO 14001** — quality and environmental management.
+- Anchors `BP-490` Operate Chemical Manufacturing and Compliance.
+
 #### How to add a new industry's process catalogue
 
 Same workflow as adding a new BC industry under §9.8:
