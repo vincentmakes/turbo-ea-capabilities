@@ -1,0 +1,53 @@
+id: BP-410
+name: Operate Transportation and Logistics Services
+level: 1
+industry: Transportation & Logistics
+description: >-
+  Operate transportation and logistics services across modes: network planning, capacity management, freight movement, last-mile delivery, returns/reverse logistics, freight forwarding and customs.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "SCOR v14.0 + GS1 Global Logistics + UN/CEFACT MMT + IATA/IMO/AAR operating standards"
+realizes_capability_ids:
+  - BC-520
+children:
+  - id: BP-410.10
+    name: Plan Transport Network and Capacity
+    level: 2
+    description: >-
+      Design transport network, asset, and capacity plans; align with demand forecasts and service-level commitments.
+    realizes_capability_ids:
+      - BC-520
+    children: []
+  - id: BP-410.20
+    name: Operate Freight and Passenger Movement
+    level: 2
+    description: >-
+      Execute movement across modes (road, rail, air, marine, intermodal); manage dispatch, tracking, and exception handling.
+    realizes_capability_ids:
+      - BC-520
+    children: []
+  - id: BP-410.30
+    name: Manage Last-Mile and Customer Delivery
+    level: 2
+    description: >-
+      Plan and execute last-mile delivery; manage delivery exceptions and customer-facing communication.
+    realizes_capability_ids:
+      - BC-430
+      - BC-520
+    children: []
+  - id: BP-410.40
+    name: Manage Freight Forwarding and Customs
+    level: 2
+    description: >-
+      Operate freight forwarding, multi-modal coordination, and customs/trade-compliance for cross-border movements.
+    realizes_capability_ids:
+      - BC-130
+    children: []
+  - id: BP-410.50
+    name: Manage Returns and Reverse Logistics
+    level: 2
+    description: >-
+      Operate returns and reverse-logistics flows for repairs, recalls, and disposal.
+    realizes_capability_ids:
+      - BC-520
+    children: []
