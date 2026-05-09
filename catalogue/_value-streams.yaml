@@ -2249,14 +2249,18 @@ value_streams:
     capability_ids:
     - BC-4300
     - BC-4350
-    process_ids: []
+    process_ids:
+    - BP-400.10
+    - BP-400.50
     notes: Client and engagement acceptance, scoping, and engagement-letter execution; Independence, conflicts, and integrity clearance feeding acceptance
   - id: VS-190.20
     stage_order: 1
     stage_name: Engagement Acceptance
     capability_ids:
     - BC-4970
-    process_ids: []
+    process_ids:
+    - BP-400.10
+    - BP-400.50
     industry_variant: Real Estate
     notes: Valuation engagement intake, scoping, conflict and independence checks
   - id: VS-190.30
@@ -2265,7 +2269,9 @@ value_streams:
     capability_ids:
     - BC-4300
     - BC-4320
-    process_ids: []
+    process_ids:
+    - BP-400.10
+    - BP-400.20
     notes: Engagement team formation, kickoff, and data-access setup; Engagement staffing and leverage allocation
   - id: VS-190.40
     stage_order: 3
@@ -2274,14 +2280,16 @@ value_streams:
     - BC-4310
     - BC-4320
     - BC-4330
-    process_ids: []
+    process_ids:
+    - BP-400.10
     notes: Fieldwork, advisory analysis, drafting, and working-paper capture; Utilisation tracking and bench redeployment during delivery; Timekeeping and disbursement capture against the engagement
   - id: VS-190.50
     stage_order: 3
     stage_name: Delivery
     capability_ids:
     - BC-4970
-    process_ids: []
+    process_ids:
+    - BP-400.10
     industry_variant: Real Estate
     notes: Valuation approach application and report drafting
   - id: VS-190.60
@@ -2289,14 +2297,16 @@ value_streams:
     stage_name: Quality Review
     capability_ids:
     - BC-4340
-    process_ids: []
+    process_ids:
+    - BP-400.50
     notes: EQR, file review, and technical consultation before issuance
   - id: VS-190.70
     stage_order: 4
     stage_name: Quality Review
     capability_ids:
     - BC-4970
-    process_ids: []
+    process_ids:
+    - BP-400.50
     industry_variant: Real Estate
     notes: Reviewer sign-off and quality control
   - id: VS-190.80
@@ -2305,14 +2315,16 @@ value_streams:
     capability_ids:
     - BC-4310
     - BC-4300
-    process_ids: []
+    process_ids:
+    - BP-400.10
     notes: Final report, opinion, or deliverable issuance to the client; Engagement closure communication and post-issuance handover
   - id: VS-190.90
     stage_order: 5
     stage_name: Issuance
     capability_ids:
     - BC-4970
-    process_ids: []
+    process_ids:
+    - BP-400.10
     industry_variant: Real Estate
     notes: Valuation report issuance to client and lender
   - id: VS-190.100
@@ -2320,7 +2332,9 @@ value_streams:
     stage_name: Billing & Realisation
     capability_ids:
     - BC-4330
-    process_ids: []
+    process_ids:
+    - BP-400.10
+    - BP-90.20
     notes: Invoicing, WIP write-up/down, realisation tracking, and write-off control
   - id: VS-190.110
     stage_order: 7
@@ -2328,7 +2342,9 @@ value_streams:
     capability_ids:
     - BC-4310
     - BC-4300
-    process_ids: []
+    process_ids:
+    - BP-400.40
+    - BP-400.10
     notes: Engagement file assembly and post-issuance lock-down; Retention configuration and engagement-file archival
 - id: VS-200
   name: ESG-to-Disclosure
@@ -3738,7 +3754,8 @@ value_streams:
     capability_ids:
     - BC-4310
     - BC-4370
-    process_ids: []
+    process_ids:
+    - BP-400.40
     notes: Engagement deliverables and working papers identified as candidate assets; Reusable asset selection from completed engagements
   - id: VS-300.20
     stage_order: 2
@@ -3746,14 +3763,16 @@ value_streams:
     capability_ids:
     - BC-4370
     - BC-4350
-    process_ids: []
+    process_ids:
+    - BP-400.40
     notes: Removal of client-confidential content before reuse; Information-barrier and confidentiality compliance during redaction
   - id: VS-300.30
     stage_order: 3
     stage_name: Curation & Versioning
     capability_ids:
     - BC-4370
-    process_ids: []
+    process_ids:
+    - BP-400.40
     notes: Precedent curation and methodology versioning
   - id: VS-300.40
     stage_order: 4
@@ -3761,21 +3780,24 @@ value_streams:
     capability_ids:
     - BC-4370
     - BC-720
-    process_ids: []
+    process_ids:
+    - BP-400.40
     notes: Asset tagging, metadata enrichment, and library catalogue placement; Enterprise knowledge taxonomy and search alignment
   - id: VS-300.50
     stage_order: 5
     stage_name: Distribution & Community
     capability_ids:
     - BC-4370
-    process_ids: []
+    process_ids:
+    - BP-400.40
     notes: Practice-group, community-of-practice, and knowledge-champion distribution
   - id: VS-300.60
     stage_order: 6
     stage_name: Reuse & Analytics
     capability_ids:
     - BC-4370
-    process_ids: []
+    process_ids:
+    - BP-400.40
     notes: Library usage analytics and reuse-impact tracking
 - id: VS-310
   name: Issue-to-Resolution
