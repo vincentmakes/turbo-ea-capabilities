@@ -1,0 +1,52 @@
+id: BP-10
+name: Develop Vision and Strategy
+level: 1
+industry: Cross-Industry
+description: >-
+  Define the business concept and long-term vision, develop the business strategy, and manage the strategic initiative portfolio that turns strategy into outcomes.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "1.0"
+    version: "7.4.0"
+realizes_capability_ids:
+  - BC-100
+children:
+  - id: BP-10.10
+    name: Define the Business Concept and Long-Term Vision
+    level: 2
+    description: >-
+      Frame the enterprise's purpose, scope, and aspirational future state. Establishes the long-horizon view that strategic plans serve.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "1.1"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-100
+    children: []
+  - id: BP-10.20
+    name: Develop Business Strategy
+    level: 2
+    description: >-
+      Translate the long-term vision into a multi-year business strategy with markets, value propositions, and competitive positioning.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "1.2"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-100
+      - BC-230
+    children: []
+  - id: BP-10.30
+    name: Manage Strategic Initiatives
+    level: 2
+    description: >-
+      Charter, prioritise, and govern the portfolio of initiatives that execute the strategy. Allocate resources and track strategic outcomes.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "1.3"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-100
+      - BC-900
+      - BC-920
+    children: []

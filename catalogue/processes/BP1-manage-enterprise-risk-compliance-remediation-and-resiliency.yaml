@@ -1,0 +1,54 @@
+id: BP-110
+name: Manage Enterprise Risk, Compliance, Remediation, and Resiliency
+level: 1
+industry: Cross-Industry
+description: >-
+  Run enterprise risk, compliance, business resilience, and EHS programs that protect the enterprise from financial, operational, regulatory, and safety threats.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "11.0"
+    version: "7.4.0"
+realizes_capability_ids:
+  - BC-120
+  - BC-130
+  - BC-160
+  - BC-730
+children:
+  - id: BP-110.10
+    name: Manage Enterprise Risk
+    level: 2
+    description: >-
+      Identify, assess, treat, and monitor enterprise risk across financial, operational, strategic, and compliance dimensions.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "11.1"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-120
+      - BC-140
+    children: []
+  - id: BP-110.20
+    name: Manage Business Resiliency
+    level: 2
+    description: >-
+      Maintain business-continuity and disaster-recovery capabilities; respond to and recover from disruptive events.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "11.2"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-160
+    children: []
+  - id: BP-110.30
+    name: Manage Environmental, Health, and Safety (EHS)
+    level: 2
+    description: >-
+      Run EHS programs that protect employees, communities, and the environment, including incident response and regulatory reporting.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "11.3"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-730
+      - BC-740
+    children: []

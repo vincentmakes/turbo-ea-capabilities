@@ -1,0 +1,65 @@
+id: BP-100
+name: Acquire, Construct, and Manage Assets
+level: 1
+industry: Cross-Industry
+description: >-
+  Plan, acquire, construct, maintain, and dispose of productive assets — facilities, plant, real estate, and similar long-lived enterprise assets.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "10.0"
+    version: "7.4.0"
+realizes_capability_ids:
+  - BC-700
+  - BC-710
+children:
+  - id: BP-100.10
+    name: Plan and Acquire Assets
+    level: 2
+    description: >-
+      Plan asset needs, evaluate buy/lease alternatives, and acquire productive assets.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "10.1"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-710
+      - BC-700
+    children: []
+  - id: BP-100.20
+    name: Design and Construct Productive Assets
+    level: 2
+    description: >-
+      Design, construct, and commission productive assets — facilities, plant, and infrastructure.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "10.2"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-700
+      - BC-720
+    children: []
+  - id: BP-100.30
+    name: Maintain Productive Assets
+    level: 2
+    description: >-
+      Operate and maintain productive assets across their useful life: planned, preventive, and corrective maintenance.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "10.3"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-700
+    children: []
+  - id: BP-100.40
+    name: Dispose of Productive Assets
+    level: 2
+    description: >-
+      Decommission and dispose of assets at end-of-life, including environmental and remarketing considerations.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "10.4"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-710
+      - BC-740
+    children: []
