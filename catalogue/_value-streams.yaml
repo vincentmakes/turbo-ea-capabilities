@@ -4532,14 +4532,16 @@ value_streams:
     capability_ids:
     - BC-3000
     - BC-3110
-    process_ids: []
+    process_ids:
+    - BP-210.10
     notes: License round entry, concession bidding, farm-in; JOA negotiation and AFE setup at entry
   - id: VS-330.20
     stage_order: 1
     stage_name: Acreage Acquisition
     capability_ids:
     - BC-4490
-    process_ids: []
+    process_ids:
+    - BP-210.10
     industry_variant: Mining & Metals
     notes: Mineral tenement application, lease, and acquisition due diligence
   - id: VS-330.30
@@ -4547,14 +4549,16 @@ value_streams:
     stage_name: Prospect Maturation
     capability_ids:
     - BC-3000
-    process_ids: []
+    process_ids:
+    - BP-210.20
     notes: Seismic acquisition, prospect evaluation and risking
   - id: VS-330.40
     stage_order: 2
     stage_name: Prospect Maturation
     capability_ids:
     - BC-4400
-    process_ids: []
+    process_ids:
+    - BP-210.20
     industry_variant: Mining & Metals
     notes: Geoscientific surveys, target generation, and prospect ranking
   - id: VS-330.50
@@ -4563,14 +4567,16 @@ value_streams:
     capability_ids:
     - BC-3020
     - BC-3000
-    process_ids: []
+    process_ids:
+    - BP-210.20
     notes: Wildcat and appraisal drilling execution; Post-well evaluation and prospect inventory update
   - id: VS-330.60
     stage_order: 3
     stage_name: Exploration Drilling
     capability_ids:
     - BC-4400
-    process_ids: []
+    process_ids:
+    - BP-210.20
     industry_variant: Mining & Metals
     notes: Reverse-circulation and diamond core drilling, sample assay, discovery reporting
   - id: VS-330.70
@@ -4578,14 +4584,18 @@ value_streams:
     stage_name: Reserves Maturation
     capability_ids:
     - BC-3010
-    process_ids: []
+    process_ids:
+    - BP-210.30
+    - BP-210.50
     notes: Reservoir characterisation and SPE-PRMS classification
   - id: VS-330.80
     stage_order: 4
     stage_name: Reserves Maturation
     capability_ids:
     - BC-4410
-    process_ids: []
+    process_ids:
+    - BP-210.30
+    - BP-210.50
     industry_variant: Mining & Metals
     notes: Geological modelling, resource estimation, reserve classification
   - id: VS-330.90
@@ -4594,14 +4604,16 @@ value_streams:
     capability_ids:
     - BC-3010
     - BC-3110
-    process_ids: []
+    process_ids:
+    - BP-210.40
     notes: Concept selection and field development plan authoring; Partner approvals via OPCOM and host-government FDP submission
   - id: VS-330.100
     stage_order: 5
     stage_name: Field Development Sanction
     capability_ids:
     - BC-4420
-    process_ids: []
+    process_ids:
+    - BP-210.40
     industry_variant: Mining & Metals
     notes: Mine design, life-of-mine planning, and capital project sequencing
   - id: VS-330.110
@@ -4610,7 +4622,8 @@ value_streams:
     capability_ids:
     - BC-3020
     - BC-1110
-    process_ids: []
+    process_ids:
+    - BP-210.40
     notes: Development drilling and completions; Project engineering for surface facility EPC
   - id: VS-330.120
     stage_order: 7
@@ -4618,14 +4631,16 @@ value_streams:
     capability_ids:
     - BC-3030
     - BC-1160
-    process_ids: []
+    process_ids:
+    - BP-220.10
     notes: Startup, ramp-up, and first oil/gas; Facility commissioning and handover
   - id: VS-330.130
     stage_order: 7
     stage_name: First Production
     capability_ids:
     - BC-4430
-    process_ids: []
+    process_ids:
+    - BP-220.10
     industry_variant: Mining & Metals
     notes: Production ramp-up across open-pit and underground operations
   - id: VS-330.140
@@ -4634,7 +4649,8 @@ value_streams:
     capability_ids:
     - BC-3030
     - BC-3010
-    process_ids: []
+    process_ids:
+    - BP-220.10
     notes: Handover to steady-state operate phase; Production forecasting handover and reservoir surveillance
   - id: VS-330.150
     stage_order: 8
@@ -4642,7 +4658,8 @@ value_streams:
     capability_ids:
     - BC-4430
     - BC-4410
-    process_ids: []
+    process_ids:
+    - BP-220.10
     industry_variant: Mining & Metals
     notes: Handover to steady-state mining operations; Resource and reserve reconciliation handover
 - id: VS-340
