@@ -136,6 +136,87 @@ TREE["BP-10"] = {
 
 # Other BP1s appended progressively below as we drill them. ----------------
 
+TREE["BP-100"] = {
+    "id": "BP-100",
+    "apqc": "10.0",
+    "name": "Acquire, Construct, and Manage Assets",
+    "description": "Plan, acquire, construct, maintain, and dispose of productive assets — facilities, plant, real estate, and similar long-lived enterprise assets.",
+    "realizes": ["BC-700", "BC-710"],
+    "children": [
+        {
+            "id": "BP-100.10", "apqc": "10.1",
+            "name": "Plan and Acquire Assets",
+            "description": "Plan asset needs, evaluate buy/lease alternatives, and acquire productive assets.",
+            "realizes": ["BC-710", "BC-700"],
+            "children": [
+                ("BP-100.10.10", "10.1.1", "Develop Property and Asset Strategy",
+                 "Set the multi-year property and productive-asset strategy.",
+                 ["BC-710", "BC-700"]),
+                ("BP-100.10.20", "10.1.2", "Plan Facility Capacity",
+                 "Plan facility capacity to meet the operating plan.",
+                 ["BC-700"]),
+                ("BP-100.10.30", "10.1.3", "Acquire Real Estate or Buildings",
+                 "Acquire real estate or buildings consistent with the strategy.",
+                 ["BC-710"]),
+                ("BP-100.10.40", "10.1.4", "Acquire Equipment and Tooling",
+                 "Acquire production and operating equipment.",
+                 ["BC-700", "BC-500"]),
+            ],
+        },
+        {
+            "id": "BP-100.20", "apqc": "10.2",
+            "name": "Design and Construct Productive Assets",
+            "description": "Design, construct, and commission productive assets — facilities, plant, and infrastructure.",
+            "realizes": ["BC-700", "BC-720"],
+            "children": [
+                ("BP-100.20.10", "10.2.1", "Design Productive Assets",
+                 "Design facilities and productive assets to specification.",
+                 ["BC-700"]),
+                ("BP-100.20.20", "10.2.2", "Schedule and Perform Construction Work",
+                 "Schedule and perform construction work for new and refurbished assets.",
+                 ["BC-700", "BC-900"]),
+                ("BP-100.20.30", "10.2.3", "Manage Construction Project",
+                 "Manage construction projects across cost, schedule, and quality.",
+                 ["BC-900", "BC-700"]),
+                ("BP-100.20.40", "10.2.4", "Commission Productive Assets",
+                 "Commission, test, and accept productive assets prior to operation.",
+                 ["BC-700", "BC-720"]),
+            ],
+        },
+        {
+            "id": "BP-100.30", "apqc": "10.3",
+            "name": "Maintain Productive Assets",
+            "description": "Operate and maintain productive assets across their useful life: planned, preventive, and corrective maintenance.",
+            "realizes": ["BC-700"],
+            "children": [
+                ("BP-100.30.10", "10.3.1", "Maintain Plan and Resources for Asset Maintenance",
+                 "Plan maintenance programs, resources, and budgets.",
+                 ["BC-700"]),
+                ("BP-100.30.20", "10.3.2", "Perform Asset Maintenance",
+                 "Execute planned, preventive, and corrective maintenance work.",
+                 ["BC-700"]),
+                ("BP-100.30.30", "10.3.3", "Manage Asset Performance",
+                 "Monitor asset performance and reliability; drive improvement.",
+                 ["BC-700", "BC-720"]),
+            ],
+        },
+        {
+            "id": "BP-100.40", "apqc": "10.4",
+            "name": "Dispose of Productive Assets",
+            "description": "Decommission and dispose of assets at end-of-life, including environmental and remarketing considerations.",
+            "realizes": ["BC-710", "BC-740"],
+            "children": [
+                ("BP-100.40.10", "10.4.1", "Plan Asset Decommissioning",
+                 "Plan decommissioning, including environmental and safety considerations.",
+                 ["BC-710", "BC-730"]),
+                ("BP-100.40.20", "10.4.2", "Decommission and Dispose of Assets",
+                 "Execute decommissioning and disposal, including remarketing or scrappage.",
+                 ["BC-710", "BC-740"]),
+            ],
+        },
+    ],
+}
+
 TREE["BP-90"] = {
     "id": "BP-90",
     "apqc": "9.0",
