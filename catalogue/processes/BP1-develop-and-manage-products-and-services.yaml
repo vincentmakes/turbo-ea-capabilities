@@ -1,0 +1,81 @@
+id: BP-20
+name: Develop and Manage Products and Services
+level: 1
+industry: Cross-Industry
+description: >-
+  Govern the product/service portfolio across the lifecycle: from idea generation and development through market test and production readiness.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "2.0"
+    version: "7.4.0"
+realizes_capability_ids:
+  - BC-820
+  - BC-810
+  - BC-800
+children:
+  - id: BP-20.10
+    name: Govern and Manage the Product/Service Development Program
+    level: 2
+    description: >-
+      Establish development governance, stage gates, portfolio prioritisation, and program controls across the product/service lifecycle.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "2.1"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-820
+      - BC-900
+    children: []
+  - id: BP-20.20
+    name: Generate and Define New Product/Service Ideas
+    level: 2
+    description: >-
+      Source, screen, and define candidate product and service concepts. Translate market and technology insight into evaluable concepts.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "2.2"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-800
+      - BC-810
+    children: []
+  - id: BP-20.30
+    name: Develop Products and Services
+    level: 2
+    description: >-
+      Design, engineer, and validate products and services from concept through release readiness, including IP protection.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "2.3"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-810
+      - BC-820
+      - BC-840
+    children: []
+  - id: BP-20.40
+    name: Test Market for New or Revised Products and Services
+    level: 2
+    description: >-
+      Validate concept-market fit through market trials, pilots, and customer testing before full-scale launch.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "2.4"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-820
+      - BC-400
+    children: []
+  - id: BP-20.50
+    name: Prepare for Production
+    level: 2
+    description: >-
+      Industrialise the design, qualify the supply base, and ready operations to produce or deliver at commercial scale.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "2.5"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-820
+      - BC-520
+    children: []

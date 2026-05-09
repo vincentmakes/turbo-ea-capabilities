@@ -1,0 +1,52 @@
+id: BP-60
+name: Manage Customer Service
+level: 1
+industry: Cross-Industry
+description: >-
+  Develop and run the customer-care function: strategy, contact-center operations, and continuous evaluation that resolves customer issues and protects loyalty.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "6.0"
+    version: "7.4.0"
+realizes_capability_ids:
+  - BC-430
+  - BC-420
+children:
+  - id: BP-60.10
+    name: Develop Customer Care/Customer Service Strategy
+    level: 2
+    description: >-
+      Define the customer-service operating model, channels, service levels, and self-service strategy.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "6.1"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-430
+      - BC-100
+    children: []
+  - id: BP-60.20
+    name: Plan and Manage Customer Service Operations
+    level: 2
+    description: >-
+      Run day-to-day customer service operations: contact handling, case management, escalation, and workforce management.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "6.2"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-430
+    children: []
+  - id: BP-60.30
+    name: Measure and Evaluate Customer Service Operations
+    level: 2
+    description: >-
+      Measure service performance, customer satisfaction, and operational efficiency; drive continuous improvement.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "6.3"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-430
+      - BC-720
+    children: []

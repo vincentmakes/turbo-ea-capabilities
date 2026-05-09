@@ -230,4 +230,4 @@ All responses are static, immutable per build, and cacheable by Cloudflare's edg
 
 ## Licence
 
-[MIT](LICENSE).
+[MIT](LICENSE). Third-party framework attributions (APQC PCF® for the business-process catalogue, plus BIAN / TM Forum eTOM / ITIL® / SCOR® references) are listed in [NOTICE](NOTICE).

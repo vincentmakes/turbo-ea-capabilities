@@ -1,0 +1,92 @@
+id: BP-80
+name: Manage Information Technology
+level: 1
+industry: Cross-Industry
+description: >-
+  Run the enterprise IT function: strategy, build, deploy, run, and knowledge management — including IT-side risk and resilience that protects business continuity.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "8.0"
+    version: "7.4.0"
+realizes_capability_ids:
+  - BC-600
+  - BC-610
+  - BC-620
+children:
+  - id: BP-80.10
+    name: Develop and Manage Business Resilience and Risk
+    level: 2
+    description: >-
+      Identify, assess, and mitigate IT-related risks; maintain business-continuity and disaster-recovery readiness for technology-enabled operations.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "8.1"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-160
+      - BC-120
+      - BC-620
+    children: []
+  - id: BP-80.20
+    name: Develop Information Technology (IT) Strategy
+    level: 2
+    description: >-
+      Set the IT strategy, target architecture, and investment plan that supports the business strategy.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "8.2"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-600
+      - BC-170
+    children: []
+  - id: BP-80.30
+    name: Develop and Maintain Information Technology Solutions
+    level: 2
+    description: >-
+      Design, build, integrate, and evolve the application and infrastructure portfolio that runs the business.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "8.3"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-600
+    children: []
+  - id: BP-80.40
+    name: Deploy Information Technology Solutions
+    level: 2
+    description: >-
+      Release new and changed IT solutions into production with appropriate change controls and adoption support.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "8.4"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-600
+      - BC-910
+    children: []
+  - id: BP-80.50
+    name: Deliver and Support Information Technology Services
+    level: 2
+    description: >-
+      Operate IT services day-to-day: incident, problem, request, and service-level management.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "8.5"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-600
+    children: []
+  - id: BP-80.60
+    name: Manage IT Knowledge
+    level: 2
+    description: >-
+      Capture and curate IT knowledge: configuration data, runbooks, architecture, and support knowledge bases.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "8.6"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-830
+      - BC-600
+    children: []

@@ -1,0 +1,78 @@
+id: BP-30
+name: Market and Sell Products and Services
+level: 1
+industry: Cross-Industry
+description: >-
+  Understand markets and customers, set marketing and sales strategy, and execute the demand-creation and order-capture activities that monetise products and services.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "3.0"
+    version: "7.4.0"
+realizes_capability_ids:
+  - BC-400
+  - BC-410
+  - BC-420
+  - BC-440
+children:
+  - id: BP-30.10
+    name: Understand Markets, Customers, and Capabilities
+    level: 2
+    description: >-
+      Develop the evidence base on market dynamics, customer needs, segments, and competitive position that drives marketing and sales decisions.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "3.1"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-400
+      - BC-420
+    children: []
+  - id: BP-30.20
+    name: Develop Marketing Strategy
+    level: 2
+    description: >-
+      Define target segments, value propositions, brand positioning, and channel mix that direct marketing investment.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "3.2"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-400
+    children: []
+  - id: BP-30.30
+    name: Develop Sales Strategy
+    level: 2
+    description: >-
+      Define sales coverage, channel structure, account strategy, and quota/incentive design.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "3.3"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-410
+    children: []
+  - id: BP-30.40
+    name: Develop and Manage Marketing Plans
+    level: 2
+    description: >-
+      Plan, execute, and measure marketing campaigns and demand-generation programs that deliver pipeline against the strategy.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "3.4"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-400
+    children: []
+  - id: BP-30.50
+    name: Develop and Manage Sales Plans
+    level: 2
+    description: >-
+      Plan, execute, and manage the sales motion: account planning, opportunity management, pricing, quoting, and order capture.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "3.5"
+        version: "7.4.0"
+    realizes_capability_ids:
+      - BC-410
+      - BC-440
+    children: []
