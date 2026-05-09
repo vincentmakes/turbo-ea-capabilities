@@ -3,7 +3,7 @@ name: Operate Health Insurance Payor
 level: 1
 industry: Insurance
 description: >-
-  Run health insurance payor operations: member enrolment and eligibility, provider network management, medical claims adjudication, care management, member services, and regulatory operations distinct from P&C insurance. Aligned to APQC Health Insurance Payor PCF v7.2.1.
+  Run health insurance payor operations: member enrolment and eligibility, provider network management, medical claims adjudication, care management, member services, and regulatory operations distinct from P&C insurance.
 framework_refs:
   - framework: APQC-PCF
     external_id: "Health Insurance Payor PCF v7.2.1"
@@ -14,44 +14,182 @@ children:
     name: Manage Member Enrolment and Eligibility
     level: 2
     description: >-
-      Enrol and disenrol members across individual, group, Medicare, and Medicaid lines; maintain eligibility.
+      Enrol and disenrol members across individual, group, Medicare, Medicaid lines.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-300.10.10
+        name: Process Member Enrolments
+        level: 3
+        description: >-
+          Process member enrolments and disenrolments.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-300.10.20
+        name: Maintain Member Eligibility
+        level: 3
+        description: >-
+          Maintain eligibility records; manage qualifying-event changes.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-300.10.30
+        name: Issue Member ID Cards and Materials
+        level: 3
+        description: >-
+          Issue ID cards and welcome materials.
+        realizes_capability_ids:
+          - BC-430
+        children: []
   - id: BP-300.20
     name: Manage Provider Network and Contracting
     level: 2
     description: >-
-      Recruit, contract, credential, and manage performance of in-network providers; maintain provider directory.
+      Recruit, contract, credential, manage performance of in-network providers.
     realizes_capability_ids:
       - BC-510
-    children: []
+    children:
+      - id: BP-300.20.10
+        name: Recruit and Contract Providers
+        level: 3
+        description: >-
+          Recruit and contract in-network providers and facilities.
+        realizes_capability_ids:
+          - BC-510
+        children: []
+      - id: BP-300.20.20
+        name: Credential Providers
+        level: 3
+        description: >-
+          Credential providers per CMS / NCQA standards.
+        realizes_capability_ids:
+          - BC-510
+        children: []
+      - id: BP-300.20.30
+        name: Maintain Provider Directory
+        level: 3
+        description: >-
+          Maintain provider directory; comply with No Surprises Act and equivalents.
+        realizes_capability_ids:
+          - BC-610
+        children: []
   - id: BP-300.30
     name: Adjudicate Medical Claims
     level: 2
     description: >-
-      Receive, edit, adjudicate, and pay medical claims under benefit plans; manage appeals and grievances.
+      Receive, edit, adjudicate, pay medical claims under benefit plans.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-300.30.10
+        name: Receive and Edit Claims
+        level: 3
+        description: >-
+          Receive 837 claims; apply edits and validations.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-300.30.20
+        name: Adjudicate Claims
+        level: 3
+        description: >-
+          Adjudicate claims against benefits, eligibility, and provider contracts.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-300.30.30
+        name: Pay Claims and Issue 835
+        level: 3
+        description: >-
+          Pay claims; issue 835 remittance advice.
+        realizes_capability_ids:
+          - BC-200
+        children: []
+      - id: BP-300.30.40
+        name: Manage Appeals and Grievances
+        level: 3
+        description: >-
+          Process member and provider appeals and grievances.
+        realizes_capability_ids: []
+        children: []
   - id: BP-300.40
     name: Manage Care and Utilization
     level: 2
     description: >-
-      Run care-management and utilisation-management programs: prior authorisation, case management, disease management.
+      Run care-management and utilisation-management programs.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-300.40.10
+        name: Conduct Prior Authorisation
+        level: 3
+        description: >-
+          Process prior-authorisation requests for services.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-300.40.20
+        name: Run Case and Disease Management
+        level: 3
+        description: >-
+          Run case-management and disease-management programs.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-300.40.30
+        name: Conduct Concurrent and Retrospective Review
+        level: 3
+        description: >-
+          Conduct concurrent and retrospective utilisation review.
+        realizes_capability_ids: []
+        children: []
   - id: BP-300.50
     name: Manage Member Services
     level: 2
     description: >-
-      Service members across channels for inquiries, ID cards, formularies, and benefits questions.
+      Service members across channels for inquiries, ID cards, formularies, benefits questions.
     realizes_capability_ids:
       - BC-430
-    children: []
+    children:
+      - id: BP-300.50.10
+        name: Resolve Member Inquiries
+        level: 3
+        description: >-
+          Resolve member inquiries across channels.
+        realizes_capability_ids:
+          - BC-430
+        children: []
+      - id: BP-300.50.20
+        name: Manage Member Engagement
+        level: 3
+        description: >-
+          Run member-engagement programs and digital tools.
+        realizes_capability_ids:
+          - BC-420
+        children: []
   - id: BP-300.60
     name: Manage Health Plan Regulatory Operations
     level: 2
     description: >-
-      Run regulatory operations specific to health plans: HEDIS, Star Ratings, MLR reporting, state DOI filings.
+      Run regulatory operations specific to health plans: HEDIS, Star Ratings, MLR, state DOI filings.
     realizes_capability_ids:
       - BC-130
-    children: []
+    children:
+      - id: BP-300.60.10
+        name: Produce HEDIS Quality Measures
+        level: 3
+        description: >-
+          Calculate and submit HEDIS quality measures.
+        realizes_capability_ids:
+          - BC-130
+          - BC-720
+        children: []
+      - id: BP-300.60.20
+        name: Produce Star Ratings and CMS Reports
+        level: 3
+        description: >-
+          Produce CMS Star Ratings reports and equivalent regulator submissions.
+        realizes_capability_ids:
+          - BC-130
+        children: []
+      - id: BP-300.60.30
+        name: Calculate and Report MLR
+        level: 3
+        description: >-
+          Calculate Medical Loss Ratio; submit to regulators.
+        realizes_capability_ids:
+          - BC-200
+          - BC-130
+        children: []

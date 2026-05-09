@@ -3,7 +3,7 @@ name: Operate Retail Merchandising and Stores
 level: 1
 industry: Retail & Consumer Goods
 description: >-
-  Run retail-specific operations: merchandising and assortment, omni-channel commerce, store operations, loyalty, and supply for store and online fulfilment. Aligned to APQC Retail PCF's industry-specific categories (Develop and Manage Customer Experience, Market Products and Services, Merchandise Products and Services, Deliver Products).
+  Run retail-specific operations: merchandising and assortment, omni-channel commerce, store operations, loyalty, and supply for store and online fulfilment.
 framework_refs:
   - framework: APQC-PCF
     external_id: "Retail PCF v7.2.1 — Operating categories"
@@ -14,11 +14,34 @@ children:
     name: Manage Merchandising and Assortment Planning
     level: 2
     description: >-
-      Plan assortments, allocate space and shelf, and manage category and brand lifecycles.
+      Plan assortments, allocate space and shelf, manage category and brand lifecycles.
     realizes_capability_ids:
       - BC-820
       - BC-400
-    children: []
+    children:
+      - id: BP-280.10.10
+        name: Plan Assortments by Category
+        level: 3
+        description: >-
+          Plan assortments by category and store cluster.
+        realizes_capability_ids:
+          - BC-820
+        children: []
+      - id: BP-280.10.20
+        name: Manage Space and Planogram
+        level: 3
+        description: >-
+          Allocate space and develop planograms.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-280.10.30
+        name: Manage Category Lifecycle
+        level: 3
+        description: >-
+          Manage category lifecycle: introductions, refreshes, exits.
+        realizes_capability_ids:
+          - BC-820
+        children: []
   - id: BP-280.20
     name: Manage Pricing, Promotions, and Markdown
     level: 2
@@ -26,7 +49,32 @@ children:
       Set everyday and promotional pricing; plan and execute markdown and clearance.
     realizes_capability_ids:
       - BC-440
-    children: []
+    children:
+      - id: BP-280.20.10
+        name: Set Everyday Pricing
+        level: 3
+        description: >-
+          Set everyday-low / regular pricing across categories.
+        realizes_capability_ids:
+          - BC-440
+        children: []
+      - id: BP-280.20.20
+        name: Plan and Execute Promotions
+        level: 3
+        description: >-
+          Plan and execute promotional events.
+        realizes_capability_ids:
+          - BC-440
+          - BC-400
+        children: []
+      - id: BP-280.20.30
+        name: Plan and Execute Markdowns
+        level: 3
+        description: >-
+          Plan markdown cadences; execute clearance.
+        realizes_capability_ids:
+          - BC-440
+        children: []
   - id: BP-280.30
     name: Operate Omni-Channel Commerce
     level: 2
@@ -35,7 +83,24 @@ children:
     realizes_capability_ids:
       - BC-420
       - BC-410
-    children: []
+    children:
+      - id: BP-280.30.10
+        name: Operate Brand E-Commerce
+        level: 3
+        description: >-
+          Operate brand.com, mobile app, and direct digital sales.
+        realizes_capability_ids:
+          - BC-410
+        children: []
+      - id: BP-280.30.20
+        name: Manage Marketplaces and Resellers
+        level: 3
+        description: >-
+          Manage marketplace and reseller channels.
+        realizes_capability_ids:
+          - BC-410
+          - BC-510
+        children: []
   - id: BP-280.40
     name: Operate Store Operations
     level: 2
@@ -44,7 +109,31 @@ children:
     realizes_capability_ids:
       - BC-700
       - BC-300
-    children: []
+    children:
+      - id: BP-280.40.10
+        name: Manage Store Workforce and Scheduling
+        level: 3
+        description: >-
+          Schedule and manage store labour.
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-280.40.20
+        name: Operate Store Daily Operations
+        level: 3
+        description: >-
+          Run store opening, closing, and shift operations.
+        realizes_capability_ids:
+          - BC-700
+        children: []
+      - id: BP-280.40.30
+        name: Manage Loss Prevention
+        level: 3
+        description: >-
+          Run loss-prevention programs.
+        realizes_capability_ids:
+          - BC-120
+        children: []
   - id: BP-280.50
     name: Operate Customer Loyalty and CX Programs
     level: 2
@@ -52,13 +141,55 @@ children:
       Run loyalty, member, and customer-experience programs across channels.
     realizes_capability_ids:
       - BC-420
-    children: []
+    children:
+      - id: BP-280.50.10
+        name: Run Loyalty Program
+        level: 3
+        description: >-
+          Operate loyalty enrolment, accruals, redemptions.
+        realizes_capability_ids:
+          - BC-420
+        children: []
+      - id: BP-280.50.20
+        name: Manage Customer Experience Programs
+        level: 3
+        description: >-
+          Run CX measurement and improvement programs.
+        realizes_capability_ids:
+          - BC-420
+          - BC-430
+        children: []
   - id: BP-280.60
     name: Manage Store and Online Fulfilment
     level: 2
     description: >-
-      Fulfil orders across BOPIS, kerbside, ship-from-store, and DC-to-customer; manage last-mile.
+      Fulfil orders across BOPIS, kerbside, ship-from-store, DC-to-customer; manage last-mile.
     realizes_capability_ids:
       - BC-520
       - BC-530
-    children: []
+    children:
+      - id: BP-280.60.10
+        name: Operate BOPIS and Kerbside
+        level: 3
+        description: >-
+          Operate buy-online-pick-up-in-store and kerbside pickup.
+        realizes_capability_ids:
+          - BC-520
+        children: []
+      - id: BP-280.60.20
+        name: Operate Ship-from-Store
+        level: 3
+        description: >-
+          Operate ship-from-store fulfilment.
+        realizes_capability_ids:
+          - BC-520
+          - BC-530
+        children: []
+      - id: BP-280.60.30
+        name: Manage Last-Mile and Returns
+        level: 3
+        description: >-
+          Manage last-mile delivery and customer returns.
+        realizes_capability_ids:
+          - BC-520
+        children: []
