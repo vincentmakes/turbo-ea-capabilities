@@ -2796,7 +2796,8 @@ value_streams:
     stage_name: Flight Plan Filing
     capability_ids:
     - BC-1230
-    process_ids: []
+    process_ids:
+    - BP-430.20
     industry_variant: ATC
     notes: Aeronautical information / flight plan
   - id: VS-250.20
@@ -2805,7 +2806,8 @@ value_streams:
     capability_ids:
     - BC-1210
     - BC-1220
-    process_ids: []
+    process_ids:
+    - BP-430.30
     industry_variant: ATC
     notes: En-route control; Flow management
   - id: VS-250.30
@@ -2813,7 +2815,8 @@ value_streams:
     stage_name: Charge Determination
     capability_ids:
     - BC-1270
-    process_ids: []
+    process_ids:
+    - BP-90.20
     industry_variant: ATC
     notes: Charging zone resolution; Route charge calculation
   - id: VS-250.40
@@ -2821,14 +2824,16 @@ value_streams:
     stage_name: Invoicing
     capability_ids:
     - BC-200
-    process_ids: []
+    process_ids:
+    - BP-90.20
     notes: AR processing
   - id: VS-250.50
     stage_order: 4
     stage_name: Invoicing
     capability_ids:
     - BC-1270
-    process_ids: []
+    process_ids:
+    - BP-90.20
     industry_variant: ATC
     notes: Airline billing
   - id: VS-250.60
@@ -2836,7 +2841,9 @@ value_streams:
     stage_name: Collection
     capability_ids:
     - BC-1270
-    process_ids: []
+    process_ids:
+    - BP-90.20
+    - BP-90.70
     industry_variant: ATC
     notes: Charges collection
   - id: VS-250.70
@@ -2844,14 +2851,16 @@ value_streams:
     stage_name: Reconciliation & Reporting
     capability_ids:
     - BC-200
-    process_ids: []
+    process_ids:
+    - BP-90.30
     notes: GL posting
   - id: VS-250.80
     stage_order: 6
     stage_name: Reconciliation & Reporting
     capability_ids:
     - BC-1270
-    process_ids: []
+    process_ids:
+    - BP-90.30
     industry_variant: ATC
     notes: Charges reporting
 - id: VS-260
