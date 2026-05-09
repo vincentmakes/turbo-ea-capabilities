@@ -942,11 +942,26 @@ Mirror of §9.8 for the BP layer. Each industry's process catalogue is anchored 
 
 - **APQC Process Classification Framework® (PCF) — Cross-Industry, v8.0** *(authoritative for BP-10 through BP-120 plus BP-370)*. APQC-published taxonomy with 13 top-level categories, 74 BP2 (Process Groups), and 362 BP3 (Processes). The local catalogue is **fully re-authored from the official v8.0 Excel `Combined` sheet** (K016808, generated 2026-02-25) — names (Title-Cased), descriptions, and `framework_refs.external_id` codes all sourced verbatim from v8.0. Public summary: <https://www.apqc.org/process-frameworks>.
 - **Local id mapping:** APQC categories 1.0–12.0 map to local `BP-10`..`BP-120`; APQC category 13.0 maps to local `BP-370` (BP-130..BP-360 are taken by industry-specific BP1 files added in earlier PRs). The `framework_refs.external_id` is the authoritative cross-walk — a reader can pull the official APQC element by that id.
-- **Local name preservation:** two BP1s kept local names that diverge from v8.0 nomenclature for backward compatibility:
-  - `BP-70` local "Develop and Manage Human Capital" — v8.0 calls it "Develop and Manage Human Resources".
-  - `BP-80` local "Manage Information Technology" — v8.0 calls it "Manage Information Technology (IT)".
-  These are aliases — the BP2/BP3 content beneath each matches v8.0 exactly.
 - **Local id continuity:** wherever a v7.4-authored local BP node fuzzy-matched a v8.0 node by name, the local id was preserved so VS `process_ids` continued to resolve. Two cat-2 BP2 ids were absorbed by v8.0's simplification of category 2 and got re-routed via VS `process_ids` patch (BP-20.40 / BP-20.50 → BP-20.30 across 20 VS stages).
+- **realizes_capability_ids backfill:** 332 cross-industry BP nodes (43 BP2 + 289 BP3) had empty `realizes_capability_ids[]` after the v8.0 reauthor (because v8.0-only nodes didn't fuzzy-match any v7.4 node). They were filled by parent inheritance — each BP3 with no own realizes inherits its BP2 parent's realizes (or BP1's, walking up). Sensible default; specific nodes that should realise *additional* capabilities can be refined manually.
+
+##### Industry-specific PCFs at v8.0 — status
+
+As of 2026-05, APQC has released **v8.0 of the Cross-Industry PCF** (Feb 2026 release) but **industry-specific PCFs remain at v7.2.x**:
+
+- Banking PCF v7.2.2 (March 2025)
+- Health Insurance Payor PCF v7.2.1
+- Healthcare Provider PCF v7.2.1
+- Life Sciences PCF v6.1/7.2
+- Education PCF v7.2.1
+- Utilities PCF v7.2.x
+- Aerospace and Defense PCF v7.2 *(IBM-donated)*
+- Retail PCF v7.2.1
+- Automotive (OEM) PCF v7.2.2
+- Consumer Products PCF v7.2.x
+- Petroleum (Upstream / Downstream) PCFs v7.2
+
+When APQC publishes v8.0 industry PCFs, those releases can be re-authored into the catalogue using the same workflow as `reauthor_apqc_v8.py` (archived under `scripts/_archive/`): read the v8.0 Excel `Combined` sheet, fuzzy-match against existing local BP nodes by name, preserve local ids and `realizes_capability_ids`, re-emit each BP1 file. Until then, industry-specific BP1s (BP-130..BP-490 except BP-370) remain anchored on their currently-cited frameworks (BIAN, eTOM, ACORD, ICMM, ICAO, etc.) per the per-industry subsections above.
 
 #### Banking & Capital Markets
 

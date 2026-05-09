@@ -81,3 +81,9 @@ archived copy as documentation, not as live code.
 | Script | What it did | When it ran |
 |---|---|---|
 | `reauthor_apqc_v8.py` | Re-authored every cross-industry BP1 file (BP-10..BP-120 + BP-370) from the official APQC PCF v8.0 Cross-Industry Excel (K016808). For each category, built the v8.0 BP2/BP3 tree, fuzzy-matched against existing v7.4-authored local nodes by name to preserve local BP ids and `realizes_capability_ids`, then re-emitted the BP1 YAML with v8.0 names (Title-Cased), descriptions verbatim from v8.0, and framework_refs codes pinned to v8.0. Two cat-2 BP2 ids were absorbed by v8.0 simplification (BP-20.40 / BP-20.50 → BP-20.30 across 20 VS stages). | One PR (multiple per-category commits + 1 VS patch commit). |
+
+## Phase 10 addendum
+
+| Script | What it did | When it ran |
+|---|---|---|
+| `backfill_realizes.py` | Filled `realizes_capability_ids[]` on 332 cross-industry BP nodes (43 BP2 + 289 BP3) that had empty arrays after the v8.0 reauthor (PR #71). Walked each cross-industry BP1 tree and inherited each empty node's `realizes_capability_ids` from its BP2/BP1 parent. Industry-specific BP1s untouched. | One PR (one commit). |
