@@ -87,3 +87,11 @@ archived copy as documentation, not as live code.
 | Script | What it did | When it ran |
 |---|---|---|
 | `backfill_realizes.py` | Filled `realizes_capability_ids[]` on 332 cross-industry BP nodes (43 BP2 + 289 BP3) that had empty arrays after the v8.0 reauthor (PR #71). Walked each cross-industry BP1 tree and inherited each empty node's `realizes_capability_ids` from its BP2/BP1 parent. Industry-specific BP1s untouched. | One PR (one commit). |
+
+## Phase 11 addendum
+
+| Script | What it did | When it ran |
+|---|---|---|
+| `refine_realizes_rules.py` | Targeted refinement of `realizes_capability_ids[]` on cross-industry BP nodes via keyword pattern matching (tax → BC-220, payroll → BC-300+BC-200, treasury → BC-210, security → BC-620, etc.). Added 122 BC ids across 32 BP1 files where parent inheritance had missed obvious cross-references. | One PR (one commit). |
+| `wire_remaining_cross_industry_vs.py` | Wired `process_ids[]` for the 12 final unwired Cross-Industry value streams (VS-10/80/140/150/200/310/380/400/440/500/580/600 — 381 stages total). VS-310 Issue-to-Resolution mapped via stage-name prefix to handle 108 industry-variant stages. Achieves 100% VS coverage: 64/64 streams, 996/996 stages. | One PR (one commit). |
+| `generate_bp_i18n_sidecars.py` | Authored 343 BP i18n sidecar files (49 BP1 × 7 locales) under `catalogue/i18n/<locale>/processes/` with hand-curated BP1 + BP2 name translations across de/es/fr/it/pt/ru/zh. Style mirrors the existing L1 sidecars: noun-form translations, acronyms preserved verbatim. BP3 names (896 nodes) and BP descriptions left for a follow-up PR. | One PR (one commit). |
