@@ -603,7 +603,8 @@ value_streams:
     capability_ids:
     - BC-1300
     - BC-1320
-    process_ids: []
+    process_ids:
+    - BP-130.20
     industry_variant: Banking
     notes: Channel intake (digital, branch); Origination intake
   - id: VS-40.20
@@ -611,7 +612,8 @@ value_streams:
     stage_name: Application Capture
     capability_ids:
     - BC-4980
-    process_ids: []
+    process_ids:
+    - BP-130.20
     industry_variant: Real Estate
     notes: CRE debt origination intake — senior, mezz, construction, and bridge loans
   - id: VS-40.30
@@ -620,7 +622,8 @@ value_streams:
     capability_ids:
     - BC-1300
     - BC-1400
-    process_ids: []
+    process_ids:
+    - BP-130.20
     industry_variant: Banking
     notes: KYC / CDD; Sanctions screening
   - id: VS-40.40
@@ -628,7 +631,8 @@ value_streams:
     stage_name: Underwriting & Decisioning
     capability_ids:
     - BC-1320
-    process_ids: []
+    process_ids:
+    - BP-130.20
     industry_variant: Banking
     notes: Credit decisioning; Credit risk model scoring
   - id: VS-40.50
@@ -636,7 +640,8 @@ value_streams:
     stage_name: Underwriting & Decisioning
     capability_ids:
     - BC-4980
-    process_ids: []
+    process_ids:
+    - BP-130.20
     industry_variant: Real Estate
     notes: CRE loan underwriting against asset and sponsor
   - id: VS-40.60
@@ -644,14 +649,16 @@ value_streams:
     stage_name: Pricing & Offer
     capability_ids:
     - BC-440
-    process_ids: []
+    process_ids:
+    - BP-130.20
     notes: Discount / promotional pricing
   - id: VS-40.70
     stage_order: 4
     stage_name: Pricing & Offer
     capability_ids:
     - BC-1310
-    process_ids: []
+    process_ids:
+    - BP-130.20
     industry_variant: Banking
     notes: Banking product configuration
   - id: VS-40.80
@@ -659,14 +666,18 @@ value_streams:
     stage_name: Documentation & Booking
     capability_ids:
     - BC-150
-    process_ids: []
+    process_ids:
+    - BP-130.20
+    - BP-90.30
     notes: Loan agreement drafting
   - id: VS-40.90
     stage_order: 5
     stage_name: Documentation & Booking
     capability_ids:
     - BC-1320
-    process_ids: []
+    process_ids:
+    - BP-130.20
+    - BP-90.30
     industry_variant: Banking
     notes: Loan booking
   - id: VS-40.100
@@ -674,7 +685,9 @@ value_streams:
     stage_name: Documentation & Booking
     capability_ids:
     - BC-4980
-    process_ids: []
+    process_ids:
+    - BP-130.20
+    - BP-90.30
     industry_variant: Real Estate
     notes: CRE loan boarding and servicing setup
   - id: VS-40.110
@@ -682,7 +695,9 @@ value_streams:
     stage_name: Disbursement
     capability_ids:
     - BC-1340
-    process_ids: []
+    process_ids:
+    - BP-130.20
+    - BP-90.70
     industry_variant: Banking
     notes: Payment initiation; Payment processing
   - id: VS-40.120
@@ -690,7 +705,8 @@ value_streams:
     stage_name: Servicing & Collections
     capability_ids:
     - BC-1320
-    process_ids: []
+    process_ids:
+    - BP-130.20
     industry_variant: Banking
     notes: Loan servicing; Collections & recoveries
   - id: VS-40.130
@@ -698,7 +714,8 @@ value_streams:
     stage_name: Servicing & Collections
     capability_ids:
     - BC-4980
-    process_ids: []
+    process_ids:
+    - BP-130.20
     industry_variant: Real Estate
     notes: CRE loan servicing and special-servicing coordination
   - id: VS-40.140
@@ -707,7 +724,8 @@ value_streams:
     capability_ids:
     - BC-1320
     - BC-1410
-    process_ids: []
+    process_ids:
+    - BP-130.20
     industry_variant: Banking
     notes: Loan portfolio health; Banking risk overview
   - id: VS-40.150
@@ -715,7 +733,8 @@ value_streams:
     stage_name: Portfolio Monitoring
     capability_ids:
     - BC-4980
-    process_ids: []
+    process_ids:
+    - BP-130.20
     industry_variant: Real Estate
     notes: Covenant, DSCR, and LTV monitoring across CRE loan portfolio
 - id: VS-50
