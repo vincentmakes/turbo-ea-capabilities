@@ -1,0 +1,55 @@
+id: BP-270
+name: Manage Utility Customer and Regulatory Operations
+level: 1
+industry: Power & Water Utilities
+description: >-
+  Run utility-specific customer operations (metering, billing, supply switching, hardship support) and regulatory operations (price control, code compliance, statutory reporting).
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "Utilities PCF v7.2 — Customer and regulatory categories"
+realizes_capability_ids:
+  - BC-100
+children:
+  - id: BP-270.10
+    name: Manage Customer Metering and Meter Data
+    level: 2
+    description: >-
+      Operate the meter estate (smart and non-smart); collect, validate, estimate, and edit meter data.
+    realizes_capability_ids:
+      - BC-610
+    children: []
+  - id: BP-270.20
+    name: Operate Utility Billing and Revenue Collection
+    level: 2
+    description: >-
+      Calculate utility bills, present bills, run dunning, and manage collections and disconnection.
+    realizes_capability_ids:
+      - BC-200
+    children: []
+  - id: BP-270.30
+    name: Manage Supply Switching and Customer Onboarding
+    level: 2
+    description: >-
+      Manage supply-point onboarding, switching, and tariff changes per market codes.
+    realizes_capability_ids:
+      - BC-420
+      - BC-430
+    children: []
+  - id: BP-270.40
+    name: Manage Vulnerable Customer and Hardship Programs
+    level: 2
+    description: >-
+      Identify and support vulnerable customers and customers in hardship per regulatory obligations.
+    realizes_capability_ids:
+      - BC-430
+      - BC-130
+    children: []
+  - id: BP-270.50
+    name: Manage Regulatory Reporting and Price-Control Submissions
+    level: 2
+    description: >-
+      Prepare regulatory rate filings, performance reports, and price-control submissions.
+    realizes_capability_ids:
+      - BC-130
+      - BC-240
+    children: []
