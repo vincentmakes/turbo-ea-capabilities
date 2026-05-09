@@ -1,0 +1,47 @@
+id: BP-450
+name: Operate HVAC and Building Automation Lifecycle
+level: 1
+industry: HVAC & Building Automation Systems
+description: >-
+  Run HVAC and building-automation operations: product development, installation/commissioning, operations, refrigerant-lifecycle management.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "ASHRAE 62.1/90.1/15/211 + BACnet (ASHRAE 135) + KNX (ISO/IEC 14543-3) + AHRI certification + EU F-Gas / US EPA 608"
+realizes_capability_ids:
+  - BC-820
+children:
+  - id: BP-450.10
+    name: Develop HVAC and BAS Products
+    level: 2
+    description: >-
+      Develop HVAC equipment and BAS solutions; obtain AHRI certification and energy-efficiency ratings.
+    realizes_capability_ids:
+      - BC-810
+      - BC-820
+    children: []
+  - id: BP-450.20
+    name: Manage HVAC Installation and Commissioning
+    level: 2
+    description: >-
+      Install HVAC equipment and BAS; commission per ASHRAE Guideline 0 / 1.1 / 1.2 standards.
+    realizes_capability_ids:
+      - BC-700
+      - BC-720
+    children: []
+  - id: BP-450.30
+    name: Operate Building Automation
+    level: 2
+    description: >-
+      Operate BAS for HVAC, lighting, and other building systems; manage tenant comfort and energy performance.
+    realizes_capability_ids:
+      - BC-700
+    children: []
+  - id: BP-450.40
+    name: Manage Refrigerant Lifecycle
+    level: 2
+    description: >-
+      Capture, recover, and reclaim refrigerants per EU F-Gas / EPA Section 608; manage quotas and phase-down.
+    realizes_capability_ids:
+      - BC-740
+      - BC-130
+    children: []
