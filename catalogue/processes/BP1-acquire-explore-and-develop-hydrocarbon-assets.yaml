@@ -14,37 +14,126 @@ children:
     name: Acquire Hydrocarbon Licences and Acreage
     level: 2
     description: >-
-      Acquire exploration and production rights through licence rounds, farm-ins, and asset acquisitions.
+      Acquire exploration and production rights through licence rounds, farm-ins, asset acquisitions.
     realizes_capability_ids:
       - BC-150
-    children: []
+    children:
+      - id: BP-210.10.10
+        name: Pursue Licence Rounds
+        level: 3
+        description: >-
+          Bid in licence rounds; manage commitments.
+        realizes_capability_ids:
+          - BC-150
+        children: []
+      - id: BP-210.10.20
+        name: Negotiate Farm-Ins and Acquisitions
+        level: 3
+        description: >-
+          Negotiate farm-in agreements and asset acquisitions.
+        realizes_capability_ids:
+          - BC-150
+        children: []
   - id: BP-210.20
     name: Explore for Hydrocarbon Resources
     level: 2
     description: >-
-      Conduct geological and geophysical exploration: seismic acquisition, processing, and prospect generation.
+      Conduct geological and geophysical exploration: seismic acquisition, processing, prospect generation.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-210.20.10
+        name: Acquire Seismic Data
+        level: 3
+        description: >-
+          Acquire 2D/3D seismic data over licence acreage.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-210.20.20
+        name: Process and Interpret Seismic
+        level: 3
+        description: >-
+          Process seismic data; interpret structure and stratigraphy.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-210.20.30
+        name: Generate and Mature Prospects
+        level: 3
+        description: >-
+          Generate prospects and lead inventories; mature for drill decision.
+        realizes_capability_ids: []
+        children: []
   - id: BP-210.30
     name: Appraise and Evaluate Discoveries
     level: 2
     description: >-
-      Drill appraisal wells and evaluate discoveries to estimate resources and commercial viability.
+      Drill appraisal wells; evaluate discoveries to estimate resources and commercial viability.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-210.30.10
+        name: Drill Appraisal Wells
+        level: 3
+        description: >-
+          Drill appraisal wells to delineate discoveries.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-210.30.20
+        name: Evaluate Resources and Reserves
+        level: 3
+        description: >-
+          Estimate resources and reserves per SPE-PRMS / equivalent.
+        realizes_capability_ids: []
+        children: []
   - id: BP-210.40
     name: Develop Hydrocarbon Assets
     level: 2
     description: >-
-      Plan, design, and execute field-development projects, including drilling and facilities construction.
+      Plan, design, execute field-development projects, including drilling and facilities construction.
     realizes_capability_ids:
       - BC-700
       - BC-900
-    children: []
+    children:
+      - id: BP-210.40.10
+        name: Concept Select and Sanction Field Development
+        level: 3
+        description: >-
+          Conduct concept select; reach FID and sanction field development.
+        realizes_capability_ids:
+          - BC-900
+        children: []
+      - id: BP-210.40.20
+        name: Drill Development Wells
+        level: 3
+        description: >-
+          Drill development wells per the field-development plan.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-210.40.30
+        name: Construct and Commission Production Facilities
+        level: 3
+        description: >-
+          Construct and commission production facilities.
+        realizes_capability_ids:
+          - BC-700
+          - BC-900
+        children: []
   - id: BP-210.50
     name: Manage Subsurface and Reservoir Engineering
     level: 2
     description: >-
-      Manage subsurface modelling, reservoir engineering, and recovery optimisation across the asset life.
+      Manage subsurface modelling, reservoir engineering, recovery optimisation across the asset life.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-210.50.10
+        name: Maintain Subsurface Models
+        level: 3
+        description: >-
+          Maintain subsurface and reservoir models; update with production data.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-210.50.20
+        name: Optimise Reservoir Recovery
+        level: 3
+        description: >-
+          Plan and execute interventions to optimise hydrocarbon recovery.
+        realizes_capability_ids: []
+        children: []

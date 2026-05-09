@@ -15,10 +15,26 @@ children:
     name: Manage Engineering Tendering and Estimation
     level: 2
     description: >-
-      Pursue engineering opportunities; develop tenders, cost estimates, and schedules.
+      Pursue engineering opportunities; develop tenders, cost estimates, schedules.
     realizes_capability_ids:
       - BC-410
-    children: []
+    children:
+      - id: BP-440.10.10
+        name: Pursue Engineering Opportunities
+        level: 3
+        description: >-
+          Pursue engineering opportunities; pre-qualify.
+        realizes_capability_ids:
+          - BC-410
+        children: []
+      - id: BP-440.10.20
+        name: Develop Cost Estimates and Tenders
+        level: 3
+        description: >-
+          Develop cost estimates and tenders.
+        realizes_capability_ids:
+          - BC-230
+        children: []
   - id: BP-440.20
     name: Deliver Engineering Design
     level: 2
@@ -26,31 +42,106 @@ children:
       Perform engineering design across disciplines; manage design coordination via BIM/CDE.
     realizes_capability_ids:
       - BC-810
-    children: []
+    children:
+      - id: BP-440.20.10
+        name: Perform Multi-Discipline Engineering Design
+        level: 3
+        description: >-
+          Perform engineering design across disciplines.
+        realizes_capability_ids:
+          - BC-810
+        children: []
+      - id: BP-440.20.20
+        name: Coordinate Design via BIM and CDE
+        level: 3
+        description: >-
+          Coordinate design through BIM and CDE per ISO 19650.
+        realizes_capability_ids:
+          - BC-810
+        children: []
   - id: BP-440.30
     name: Deliver Construction Execution
     level: 2
     description: >-
-      Execute construction work to design and schedule; manage subcontractors, materials, and HSE.
+      Execute construction work to design and schedule; manage subcontractors, materials, HSE.
     realizes_capability_ids:
       - BC-700
       - BC-900
-    children: []
+    children:
+      - id: BP-440.30.10
+        name: Manage Construction Subcontractors
+        level: 3
+        description: >-
+          Manage subcontractor packages and execution.
+        realizes_capability_ids:
+          - BC-510
+        children: []
+      - id: BP-440.30.20
+        name: Execute Construction Work
+        level: 3
+        description: >-
+          Execute construction to design and schedule.
+        realizes_capability_ids:
+          - BC-700
+          - BC-900
+        children: []
+      - id: BP-440.30.30
+        name: Manage Construction HSE
+        level: 3
+        description: >-
+          Manage construction HSE per industry standards.
+        realizes_capability_ids:
+          - BC-730
+        children: []
   - id: BP-440.40
     name: Manage Commissioning and Handover
     level: 2
     description: >-
-      Commission and validate engineered assets; manage handover to operations with as-built documentation.
+      Commission and validate engineered assets; manage handover with as-built documentation.
     realizes_capability_ids:
       - BC-720
       - BC-700
-    children: []
+    children:
+      - id: BP-440.40.10
+        name: Commission Assets
+        level: 3
+        description: >-
+          Commission and validate engineered assets.
+        realizes_capability_ids:
+          - BC-720
+        children: []
+      - id: BP-440.40.20
+        name: Hand Over to Operations
+        level: 3
+        description: >-
+          Hand over to operations with as-built documentation.
+        realizes_capability_ids:
+          - BC-700
+        children: []
   - id: BP-440.50
     name: Manage Engineering Document and Configuration
     level: 2
     description: >-
-      Maintain engineering documents, drawings, and configuration baselines through the project lifecycle.
+      Maintain engineering documents, drawings, configuration baselines.
     realizes_capability_ids:
       - BC-820
       - BC-610
-    children: []
+    children:
+      - id: BP-440.50.10
+        name: Manage Engineering Documents
+        level: 3
+        description: >-
+          Manage engineering documents across project lifecycle.
+        realizes_capability_ids:
+          - BC-820
+          - BC-610
+        children: []
+      - id: BP-440.50.20
+        name: Manage Engineering Configuration
+        level: 3
+        description: >-
+          Manage engineering configuration baselines and changes.
+        realizes_capability_ids:
+          - BC-820
+          - BC-910
+        children: []

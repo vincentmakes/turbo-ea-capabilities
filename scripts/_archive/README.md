@@ -63,3 +63,9 @@ archived copy as documentation, not as live code.
 |---|---|---|
 | `wire_multi_industry_vs.py` | Wired `process_ids[]` for the multi-industry value streams (VS-130 Concept-to-Manufacture, VS-350 Maintenance-Request-to-Closure) using `(stream_id, stage_name, industry_variant)` keys, plus appended Mining BPs to VS-330 mining-variant stages. | One PR (multiple commits). |
 | `import_industry_bp3_v2.py` | BP3 drill-down for the highest-leverage industry BP1s without it: Public Sector (BP-340/350/360 — 9 wired streams), Real Estate (BP-320/330), Travel (BP-380), Insurance (BP-150), Defense (BP-230), Utilities (BP-260/270), Education (BP-240/250). | One PR (one commit per industry pair). |
+
+## Phase 7 addendum
+
+| Script | What it did | When it ran |
+|---|---|---|
+| `import_industry_bp3_v3.py` | BP3 drill-down for the remaining 18 industry BP1s without it: Telecom (BP-160), Oil & Gas (BP-210/220), Health Payor (BP-300), Retail (BP-280), Automotive (BP-290), Mining (BP-310), Media (BP-390), Professional Services (BP-400), Transportation & Logistics (BP-410), Software & Technology (BP-420), Air Traffic Control (BP-430), Engineering Services (BP-440), HVAC & BAS (BP-450), Electrical Components (BP-460), Manufacturing & Industrial (BP-470), Agriculture (BP-480), Chemicals (BP-490). All 27 BC industries now covered at BP1 + BP2 + BP3 depth. | One PR (multiple per-industry-pair commits). |

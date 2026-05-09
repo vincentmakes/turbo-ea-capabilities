@@ -3,10 +3,10 @@ name: Operate Mining and Metals Lifecycle
 level: 1
 industry: Mining & Metals
 description: >-
-  Run the end-to-end mining and metals lifecycle: exploration and resource definition, mine planning, extraction, mineral processing, tailings management, and mine closure and rehabilitation.
+  Run end-to-end mining and metals lifecycle: exploration and resource definition, mine planning, extraction, mineral processing, tailings management, closure and rehabilitation.
 framework_refs:
   - framework: APQC-PCF
-    external_id: "Mining lifecycle reference (no published APQC Mining PCF; structure aligned to ICMM Mining Principles and CRIRSCO reserve standards)"
+    external_id: "Mining lifecycle reference (no published APQC Mining PCF; aligned to ICMM Mining Principles, CRIRSCO, GISTM)"
 realizes_capability_ids:
   - BC-100
 children:
@@ -16,46 +16,170 @@ children:
     description: >-
       Conduct mineral exploration; estimate and classify resources/reserves under JORC/SAMREC/NI 43-101.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-310.10.10
+        name: Conduct Mineral Exploration
+        level: 3
+        description: >-
+          Conduct geological mapping, geophysical and geochemical surveys; drill exploration holes.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-310.10.20
+        name: Estimate Resources and Reserves
+        level: 3
+        description: >-
+          Estimate resources and reserves under JORC/SAMREC/NI 43-101.
+        realizes_capability_ids: []
+        children: []
   - id: BP-310.20
     name: Manage Mine Planning and Development
     level: 2
     description: >-
-      Plan and design mine layouts; develop mine projects through feasibility study, construction, and commissioning.
+      Plan and design mine layouts; develop mine projects through feasibility, construction, commissioning.
     realizes_capability_ids:
       - BC-700
       - BC-900
-    children: []
+    children:
+      - id: BP-310.20.10
+        name: Conduct Feasibility Studies
+        level: 3
+        description: >-
+          Conduct PFS and DFS for mine development.
+        realizes_capability_ids:
+          - BC-900
+        children: []
+      - id: BP-310.20.20
+        name: Design Mine Layouts and Schedules
+        level: 3
+        description: >-
+          Design mine layouts; schedule production and development.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-310.20.30
+        name: Construct and Commission Mines
+        level: 3
+        description: >-
+          Construct and commission mining projects.
+        realizes_capability_ids:
+          - BC-700
+          - BC-900
+        children: []
   - id: BP-310.30
     name: Operate Mining Extraction
     level: 2
     description: >-
-      Operate underground or surface mining: drilling, blasting, hauling, and grade control.
+      Operate underground or surface mining: drilling, blasting, hauling, grade control.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-310.30.10
+        name: Operate Drill and Blast
+        level: 3
+        description: >-
+          Operate drill-and-blast operations.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-310.30.20
+        name: Operate Loading and Hauling
+        level: 3
+        description: >-
+          Operate loading and hauling operations.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-310.30.30
+        name: Manage Grade Control
+        level: 3
+        description: >-
+          Manage grade control and ore-waste delineation.
+        realizes_capability_ids: []
+        children: []
   - id: BP-310.40
     name: Operate Mineral Processing and Beneficiation
     level: 2
     description: >-
-      Process ore through crushing, grinding, flotation, leaching, smelting, refining, and product blending.
+      Process ore through crushing, grinding, flotation, leaching, smelting, refining, blending.
     realizes_capability_ids:
       - BC-720
-    children: []
+    children:
+      - id: BP-310.40.10
+        name: Operate Crushing and Grinding
+        level: 3
+        description: >-
+          Operate crushing and grinding circuits.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-310.40.20
+        name: Operate Concentration and Refining
+        level: 3
+        description: >-
+          Operate flotation, leaching, smelting, refining.
+        realizes_capability_ids:
+          - BC-720
+        children: []
+      - id: BP-310.40.30
+        name: Manage Product Blending and Quality
+        level: 3
+        description: >-
+          Blend mineral products to specification.
+        realizes_capability_ids:
+          - BC-720
+        children: []
   - id: BP-310.50
     name: Manage Tailings and Mining Waste
     level: 2
     description: >-
-      Manage tailings storage facilities and mining waste under GISTM and ICMM tailings governance standards.
+      Manage tailings storage facilities and mining waste under GISTM and ICMM standards.
     realizes_capability_ids:
       - BC-730
       - BC-740
-    children: []
+    children:
+      - id: BP-310.50.10
+        name: Operate Tailings Storage Facilities
+        level: 3
+        description: >-
+          Operate tailings storage facilities under GISTM governance.
+        realizes_capability_ids:
+          - BC-730
+        children: []
+      - id: BP-310.50.20
+        name: Manage Mine Waste and Water
+        level: 3
+        description: >-
+          Manage waste rock and mine water across the operation.
+        realizes_capability_ids:
+          - BC-730
+          - BC-740
+        children: []
   - id: BP-310.60
     name: Manage Mine Closure and Rehabilitation
     level: 2
     description: >-
-      Plan and execute integrated mine closure: progressive rehabilitation, decommissioning, and post-closure monitoring per ICMM Integrated Mine Closure guidance.
+      Plan and execute integrated mine closure: rehabilitation, decommissioning, post-closure monitoring.
     realizes_capability_ids:
       - BC-740
       - BC-730
-    children: []
+    children:
+      - id: BP-310.60.10
+        name: Plan Mine Closure
+        level: 3
+        description: >-
+          Plan integrated mine closure per ICMM IMC guidance.
+        realizes_capability_ids:
+          - BC-740
+        children: []
+      - id: BP-310.60.20
+        name: Execute Rehabilitation and Closure
+        level: 3
+        description: >-
+          Execute rehabilitation and closure works.
+        realizes_capability_ids:
+          - BC-740
+          - BC-730
+        children: []
+      - id: BP-310.60.30
+        name: Conduct Post-Closure Monitoring
+        level: 3
+        description: >-
+          Conduct post-closure environmental monitoring.
+        realizes_capability_ids:
+          - BC-730
+        children: []

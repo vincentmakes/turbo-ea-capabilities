@@ -3,10 +3,10 @@ name: Develop and Operate Electrical Equipment
 level: 1
 industry: Electrical Components & Equipment
 description: >-
-  Run electrical-equipment-industry operations: electrical/electronic product development, type approval and certification, component lifecycle (PCN/EOL), distributor and broker network.
+  Run electrical-equipment-industry operations: electrical/electronic product development, type approval and certification, component lifecycle, distributor and broker network.
 framework_refs:
   - framework: APQC-PCF
-    external_id: "IEC 60204/61439/61010/61508/62443 + IPC-A-600/610 + UL listings + IATF 16949 (where automotive-supply)"
+    external_id: "IEC + IPC + UL + IATF 16949"
 realizes_capability_ids:
   - BC-820
 children:
@@ -14,34 +14,110 @@ children:
     name: Develop Electrical and Electronic Products
     level: 2
     description: >-
-      Design and develop electrical/electronic products; manage hardware-software co-design and EMC.
+      Design and develop electrical/electronic products; manage HW-SW co-design and EMC.
     realizes_capability_ids:
       - BC-810
       - BC-820
-    children: []
+    children:
+      - id: BP-460.10.10
+        name: Develop Hardware Designs
+        level: 3
+        description: >-
+          Develop hardware designs for electrical/electronic products.
+        realizes_capability_ids:
+          - BC-810
+        children: []
+      - id: BP-460.10.20
+        name: Develop Embedded Software and Firmware
+        level: 3
+        description: >-
+          Develop embedded software and firmware.
+        realizes_capability_ids:
+          - BC-810
+          - BC-600
+        children: []
+      - id: BP-460.10.30
+        name: Manage EMC and Functional Safety
+        level: 3
+        description: >-
+          Manage EMC and functional safety per IEC 61508.
+        realizes_capability_ids:
+          - BC-720
+        children: []
   - id: BP-460.20
     name: Manage Type Approval and Certification
     level: 2
     description: >-
-      Obtain product certifications (UL, CE, IEC, agency marks); manage compliance throughout lifecycle.
+      Obtain product certifications; manage compliance throughout lifecycle.
     realizes_capability_ids:
       - BC-720
       - BC-130
-    children: []
+    children:
+      - id: BP-460.20.10
+        name: Obtain Product Certifications
+        level: 3
+        description: >-
+          Obtain UL, CE, IEC certifications and agency marks.
+        realizes_capability_ids:
+          - BC-720
+          - BC-130
+        children: []
+      - id: BP-460.20.20
+        name: Maintain Certification Compliance
+        level: 3
+        description: >-
+          Maintain certification compliance through lifecycle.
+        realizes_capability_ids:
+          - BC-130
+        children: []
   - id: BP-460.30
     name: Manage Component Lifecycle and Obsolescence
     level: 2
     description: >-
-      Manage product change notifications (PCN), end-of-life (EOL), last-time-buy windows, and replacement migration.
+      Manage PCN, EOL, last-time-buy windows, replacement migration.
     realizes_capability_ids:
       - BC-820
-    children: []
+    children:
+      - id: BP-460.30.10
+        name: Issue Product Change Notifications
+        level: 3
+        description: >-
+          Issue PCNs to customers and channel.
+        realizes_capability_ids:
+          - BC-820
+        children: []
+      - id: BP-460.30.20
+        name: Manage End-of-Life and Last-Time Buy
+        level: 3
+        description: >-
+          Manage EOL and last-time-buy windows.
+        realizes_capability_ids:
+          - BC-820
+          - BC-530
+        children: []
   - id: BP-460.40
     name: Manage Distributor and Broker Network
     level: 2
     description: >-
-      Onboard and manage authorised distributors and brokers; manage grey-market and counterfeit-component risk.
+      Onboard and manage authorised distributors and brokers; manage counterfeit risk.
     realizes_capability_ids:
       - BC-510
       - BC-410
-    children: []
+    children:
+      - id: BP-460.40.10
+        name: Onboard Authorised Distributors
+        level: 3
+        description: >-
+          Onboard and qualify authorised distributors.
+        realizes_capability_ids:
+          - BC-510
+        children: []
+      - id: BP-460.40.20
+        name: Manage Counterfeit and Grey-Market Risk
+        level: 3
+        description: >-
+          Manage counterfeit and grey-market component risk.
+        realizes_capability_ids:
+          - BC-720
+          - BC-120
+        children: []

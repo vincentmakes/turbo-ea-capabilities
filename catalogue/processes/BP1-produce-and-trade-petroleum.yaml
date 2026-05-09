@@ -14,18 +14,66 @@ children:
     name: Operate Hydrocarbon Production
     level: 2
     description: >-
-      Operate producing wells, surface facilities, and gathering systems; optimise production rates.
+      Operate producing wells, surface facilities, gathering systems; optimise production rates.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-220.10.10
+        name: Operate Producing Wells
+        level: 3
+        description: >-
+          Operate producing wells; manage well work and interventions.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-220.10.20
+        name: Operate Surface Facilities
+        level: 3
+        description: >-
+          Operate surface separation, treatment, and gathering facilities.
+        realizes_capability_ids:
+          - BC-700
+        children: []
+      - id: BP-220.10.30
+        name: Manage Production Allocation
+        level: 3
+        description: >-
+          Allocate production to wells, leases, and partners.
+        realizes_capability_ids:
+          - BC-200
+        children: []
   - id: BP-220.20
     name: Operate Refining and Processing
     level: 2
     description: >-
-      Run refining and gas processing: crude distillation, conversion, treatment, and blending.
+      Run refining and gas processing: crude distillation, conversion, treatment, blending.
     realizes_capability_ids:
       - BC-520
       - BC-720
-    children: []
+    children:
+      - id: BP-220.20.10
+        name: Plan Refinery Operations
+        level: 3
+        description: >-
+          Plan refinery operations: crude slate, unit utilisation, product yields.
+        realizes_capability_ids:
+          - BC-520
+        children: []
+      - id: BP-220.20.20
+        name: Operate Refinery Units
+        level: 3
+        description: >-
+          Operate distillation, conversion, treatment, and blending units.
+        realizes_capability_ids:
+          - BC-520
+          - BC-720
+        children: []
+      - id: BP-220.20.30
+        name: Manage Product Quality and Blending
+        level: 3
+        description: >-
+          Blend products to specification; manage quality assurance.
+        realizes_capability_ids:
+          - BC-720
+        children: []
   - id: BP-220.30
     name: Manage Petroleum Trading and Optimisation
     level: 2
@@ -33,23 +81,73 @@ children:
       Trade crude, products, and energy; optimise the value chain through commercial decisions.
     realizes_capability_ids:
       - BC-210
-    children: []
+    children:
+      - id: BP-220.30.10
+        name: Operate ETRM and Trade Capture
+        level: 3
+        description: >-
+          Capture trades into ETRM; manage positions and exposures.
+        realizes_capability_ids:
+          - BC-210
+        children: []
+      - id: BP-220.30.20
+        name: Optimise Hydrocarbon Value Chain
+        level: 3
+        description: >-
+          Optimise crude/product flows across the value chain.
+        realizes_capability_ids:
+          - BC-210
+          - BC-520
+        children: []
   - id: BP-220.40
     name: Manage Bulk Distribution and Logistics
     level: 2
     description: >-
-      Move bulk hydrocarbons through pipelines, marine, rail, and truck; manage terminals and storage.
+      Move bulk hydrocarbons through pipelines, marine, rail, truck; manage terminals and storage.
     realizes_capability_ids:
       - BC-520
-    children: []
+    children:
+      - id: BP-220.40.10
+        name: Operate Pipelines and Terminals
+        level: 3
+        description: >-
+          Operate pipelines, marine terminals, and storage tanks.
+        realizes_capability_ids:
+          - BC-700
+          - BC-520
+        children: []
+      - id: BP-220.40.20
+        name: Manage Marine and Rail Movements
+        level: 3
+        description: >-
+          Manage marine and rail bulk hydrocarbon movements.
+        realizes_capability_ids:
+          - BC-520
+        children: []
   - id: BP-220.50
     name: Operate Retail Fuel Marketing
     level: 2
     description: >-
-      Operate retail fuels and convenience networks, including pricing, supply, and station operations.
+      Operate retail fuels and convenience networks, including pricing, supply, station operations.
     realizes_capability_ids:
       - BC-440
-    children: []
+    children:
+      - id: BP-220.50.10
+        name: Operate Service Stations and Convenience Retail
+        level: 3
+        description: >-
+          Operate service stations and convenience retail.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-220.50.20
+        name: Manage Retail Pricing and Supply
+        level: 3
+        description: >-
+          Manage retail pricing and station supply.
+        realizes_capability_ids:
+          - BC-440
+          - BC-520
+        children: []
   - id: BP-220.60
     name: Manage Hydrocarbon Asset Decommissioning
     level: 2
@@ -58,4 +156,21 @@ children:
     realizes_capability_ids:
       - BC-740
       - BC-730
-    children: []
+    children:
+      - id: BP-220.60.10
+        name: Plan Asset Decommissioning
+        level: 3
+        description: >-
+          Plan decommissioning programs; manage liabilities and stakeholders.
+        realizes_capability_ids:
+          - BC-740
+        children: []
+      - id: BP-220.60.20
+        name: Execute Decommissioning and Restoration
+        level: 3
+        description: >-
+          Execute decommissioning and site restoration.
+        realizes_capability_ids:
+          - BC-740
+          - BC-730
+        children: []

@@ -6,7 +6,7 @@ description: >-
   Run professional-services engagements end-to-end: opportunity, engagement planning, delivery, billing/realisation, knowledge reuse, talent management.
 framework_refs:
   - framework: APQC-PCF
-    external_id: "APQC Consulting/Professional Services PCF v7.2.x + CMMI-SVC v2.0 + SPI benchmarks"
+    external_id: "Consulting/Professional Services PCF v7.2.x + CMMI-SVC v2.0 + SPI"
 realizes_capability_ids:
   - BC-100
 children:
@@ -14,42 +14,139 @@ children:
     name: Manage Engagement Lifecycle
     level: 2
     description: >-
-      Run engagement lifecycle: opportunity, proposal, engagement letter, planning, delivery, change control, closeout.
+      Run engagement lifecycle: opportunity, proposal, planning, delivery, change, closeout.
     realizes_capability_ids:
       - BC-410
       - BC-900
-    children: []
+    children:
+      - id: BP-400.10.10
+        name: Pursue Opportunities and Submit Proposals
+        level: 3
+        description: >-
+          Pursue opportunities; develop and submit proposals.
+        realizes_capability_ids:
+          - BC-410
+        children: []
+      - id: BP-400.10.20
+        name: Plan and Mobilise Engagements
+        level: 3
+        description: >-
+          Plan engagements; mobilise teams and resources.
+        realizes_capability_ids:
+          - BC-900
+        children: []
+      - id: BP-400.10.30
+        name: Deliver and Manage Engagement Change
+        level: 3
+        description: >-
+          Deliver engagements; manage scope changes.
+        realizes_capability_ids:
+          - BC-900
+        children: []
+      - id: BP-400.10.40
+        name: Close Out Engagements
+        level: 3
+        description: >-
+          Close out engagements with deliverables and lessons learned.
+        realizes_capability_ids: []
+        children: []
   - id: BP-400.20
     name: Manage Resource and Talent
     level: 2
     description: >-
-      Plan, allocate, and develop the professional workforce; manage utilisation, leverage, and skills development.
+      Plan, allocate, and develop the professional workforce.
     realizes_capability_ids:
       - BC-300
-    children: []
+    children:
+      - id: BP-400.20.10
+        name: Plan and Allocate Resources
+        level: 3
+        description: >-
+          Plan resource demand; allocate consultants to engagements.
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-400.20.20
+        name: Develop Skills and Capabilities
+        level: 3
+        description: >-
+          Develop staff skills, certifications, and capabilities.
+        realizes_capability_ids:
+          - BC-300
+        children: []
   - id: BP-400.30
     name: Manage Client Relationships and Accounts
     level: 2
     description: >-
-      Run account management for client portfolios; manage cross-sell and renewal.
+      Run account management for client portfolios.
     realizes_capability_ids:
       - BC-420
       - BC-410
-    children: []
+    children:
+      - id: BP-400.30.10
+        name: Manage Key Accounts
+        level: 3
+        description: >-
+          Manage strategic and key accounts.
+        realizes_capability_ids:
+          - BC-420
+        children: []
+      - id: BP-400.30.20
+        name: Manage Cross-Sell and Renewal
+        level: 3
+        description: >-
+          Drive cross-sell and renewal in client accounts.
+        realizes_capability_ids:
+          - BC-410
+        children: []
   - id: BP-400.40
     name: Manage Knowledge Reuse and Methodology
     level: 2
     description: >-
-      Capture engagement knowledge, develop methodologies, and curate reusable assets for future engagements.
+      Capture engagement knowledge; develop methodologies and reusable assets.
     realizes_capability_ids:
       - BC-830
-    children: []
+    children:
+      - id: BP-400.40.10
+        name: Capture and Curate Engagement Knowledge
+        level: 3
+        description: >-
+          Capture engagement assets; sanitise and curate.
+        realizes_capability_ids:
+          - BC-830
+        children: []
+      - id: BP-400.40.20
+        name: Develop Methodologies and IP
+        level: 3
+        description: >-
+          Develop firm methodologies and IP for reuse.
+        realizes_capability_ids:
+          - BC-830
+          - BC-840
+        children: []
   - id: BP-400.50
     name: Manage Engagement Quality and Risk
     level: 2
     description: >-
-      Run engagement-level quality assurance, peer review, and risk management; manage independence and conflict checks.
+      Run engagement-level QA, peer review, risk management; manage independence and conflict checks.
     realizes_capability_ids:
       - BC-720
       - BC-120
-    children: []
+    children:
+      - id: BP-400.50.10
+        name: Conduct Independence and Conflict Checks
+        level: 3
+        description: >-
+          Conduct independence, conflict, and ethics checks at engagement acceptance.
+        realizes_capability_ids:
+          - BC-150
+          - BC-130
+        children: []
+      - id: BP-400.50.20
+        name: Conduct Engagement Peer Review and QA
+        level: 3
+        description: >-
+          Conduct engagement-level peer review and QA.
+        realizes_capability_ids:
+          - BC-720
+        children: []

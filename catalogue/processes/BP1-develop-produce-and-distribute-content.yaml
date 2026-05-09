@@ -3,10 +3,10 @@ name: Develop, Produce, and Distribute Content
 level: 1
 industry: Media, Entertainment & Telecom Content
 description: >-
-  Run media-industry operations: content development and greenlight, production, rights and IP, distribution and syndication, advertising/subscription monetisation, audience measurement.
+  Run media-industry operations: content development and greenlight, production, rights and IP, distribution and syndication, advertising/subscription, audience measurement.
 framework_refs:
   - framework: APQC-PCF
-    external_id: "APQC Broadcasting/Media PCF v7.2.x + MovieLabs Common Workflow + SMPTE/EBU/DPP standards"
+    external_id: "Broadcasting/Media PCF v7.2.x + MovieLabs Common Workflow + SMPTE/EBU/DPP"
 realizes_capability_ids:
   - BC-100
 children:
@@ -17,44 +17,158 @@ children:
       Source, evaluate, and greenlight content concepts; manage development slate.
     realizes_capability_ids:
       - BC-800
-    children: []
+    children:
+      - id: BP-390.10.10
+        name: Source and Evaluate Content Ideas
+        level: 3
+        description: >-
+          Source content ideas; conduct creative development.
+        realizes_capability_ids:
+          - BC-800
+        children: []
+      - id: BP-390.10.20
+        name: Greenlight Content for Production
+        level: 3
+        description: >-
+          Conduct greenlight reviews; commit to production.
+        realizes_capability_ids:
+          - BC-800
+        children: []
   - id: BP-390.20
     name: Produce Content
     level: 2
     description: >-
-      Plan, execute, and post-produce content (film, TV, audio, news), including pre-production, principal photography/recording, and post.
+      Plan, execute, post-produce content (film, TV, audio, news).
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-390.20.10
+        name: Plan Pre-Production
+        level: 3
+        description: >-
+          Plan pre-production: scripts, casting, location, scheduling.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-390.20.20
+        name: Execute Principal Production
+        level: 3
+        description: >-
+          Execute principal photography or recording.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-390.20.30
+        name: Conduct Post-Production and Mastering
+        level: 3
+        description: >-
+          Conduct editing, VFX, sound, color, and mastering.
+        realizes_capability_ids: []
+        children: []
   - id: BP-390.30
-    name: Manage Rights and Intellectual Property
+    name: Manage Rights and IP
     level: 2
     description: >-
-      Acquire, register, and administer content rights; manage chain of title; license rights to and from third parties.
+      Acquire, register, and administer content rights; manage chain of title.
     realizes_capability_ids:
       - BC-840
-    children: []
+    children:
+      - id: BP-390.30.10
+        name: Acquire and Register Rights
+        level: 3
+        description: >-
+          Acquire and register content rights and chain of title.
+        realizes_capability_ids:
+          - BC-840
+        children: []
+      - id: BP-390.30.20
+        name: License Rights to/from Third Parties
+        level: 3
+        description: >-
+          License rights inbound and outbound.
+        realizes_capability_ids:
+          - BC-840
+        children: []
   - id: BP-390.40
     name: Distribute and Syndicate Content
     level: 2
     description: >-
-      Distribute content across linear, OTT, theatrical, home-entertainment, syndication, and licensee channels.
+      Distribute content across linear, OTT, theatrical, home-entertainment, syndication channels.
     realizes_capability_ids:
       - BC-520
-    children: []
+    children:
+      - id: BP-390.40.10
+        name: Schedule and Place Content
+        level: 3
+        description: >-
+          Schedule content; place in catalogue.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-390.40.20
+        name: Distribute via Linear and OTT
+        level: 3
+        description: >-
+          Distribute via linear broadcast, OTT, and streaming.
+        realizes_capability_ids:
+          - BC-520
+        children: []
+      - id: BP-390.40.30
+        name: Manage Theatrical and Home-Entertainment Releases
+        level: 3
+        description: >-
+          Manage theatrical, home-entertainment, and syndication windows.
+        realizes_capability_ids: []
+        children: []
   - id: BP-390.50
     name: Operate Advertising Sales and Subscription
     level: 2
     description: >-
-      Sell advertising inventory and operate subscription services; manage ad operations, viewership-based billing.
+      Sell advertising inventory and operate subscription services.
     realizes_capability_ids:
       - BC-410
       - BC-420
-    children: []
+    children:
+      - id: BP-390.50.10
+        name: Sell Advertising Inventory
+        level: 3
+        description: >-
+          Sell advertising inventory across linear and digital.
+        realizes_capability_ids:
+          - BC-410
+        children: []
+      - id: BP-390.50.20
+        name: Operate Ad Trafficking and Delivery
+        level: 3
+        description: >-
+          Traffic creative; deliver and verify ad impressions.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-390.50.30
+        name: Operate Subscription Services
+        level: 3
+        description: >-
+          Operate subscription billing and member servicing.
+        realizes_capability_ids:
+          - BC-420
+        children: []
   - id: BP-390.60
     name: Manage Audience Measurement and Analytics
     level: 2
     description: >-
-      Capture and analyse audience data (linear ratings, streaming telemetry, ad delivery) for monetisation and programming decisions.
+      Capture and analyse audience data for monetisation and programming decisions.
     realizes_capability_ids:
       - BC-610
-    children: []
+    children:
+      - id: BP-390.60.10
+        name: Capture Audience Telemetry
+        level: 3
+        description: >-
+          Capture viewing telemetry across linear, OTT, and ad delivery.
+        realizes_capability_ids:
+          - BC-610
+        children: []
+      - id: BP-390.60.20
+        name: Analyse Audience and Performance
+        level: 3
+        description: >-
+          Analyse audience metrics and content performance.
+        realizes_capability_ids:
+          - BC-610
+        children: []

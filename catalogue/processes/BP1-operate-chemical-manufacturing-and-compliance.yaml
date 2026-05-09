@@ -3,10 +3,10 @@ name: Operate Chemical Manufacturing and Compliance
 level: 1
 industry: Chemicals
 description: >-
-  Run chemical-industry operations: chemical product development and formulation, chemical manufacturing, hazardous-materials and REACH compliance, chemical distribution and process safety.
+  Run chemical-industry operations: chemical product development, chemical manufacturing, hazardous-materials and REACH compliance, process safety, distribution.
 framework_refs:
   - framework: APQC-PCF
-    external_id: "REACH (EU 1907/2006) + GHS + ACC Responsible Care + OSHA PSM + EU Seveso III 2012/18/EU + ISO 9001/14001"
+    external_id: "REACH + GHS + ACC Responsible Care + OSHA PSM + EU Seveso III + ISO 9001/14001"
 realizes_capability_ids:
   - BC-520
   - BC-130
@@ -15,42 +15,142 @@ children:
     name: Develop Chemical Products and Formulations
     level: 2
     description: >-
-      Develop chemical products and formulations; manage product stewardship from R&D onward.
+      Develop chemical products and formulations.
     realizes_capability_ids:
       - BC-810
       - BC-820
-    children: []
+    children:
+      - id: BP-490.10.10
+        name: Conduct Chemical R&D and Synthesis Routes
+        level: 3
+        description: >-
+          Conduct chemical R&D and develop synthesis routes.
+        realizes_capability_ids:
+          - BC-810
+        children: []
+      - id: BP-490.10.20
+        name: Develop Specialty Formulations
+        level: 3
+        description: >-
+          Develop specialty chemical formulations.
+        realizes_capability_ids:
+          - BC-810
+          - BC-820
+        children: []
+      - id: BP-490.10.30
+        name: Manage Product Stewardship
+        level: 3
+        description: >-
+          Manage product stewardship from R&D through end-of-life.
+        realizes_capability_ids:
+          - BC-820
+          - BC-740
+        children: []
   - id: BP-490.20
     name: Operate Chemical Manufacturing
     level: 2
     description: >-
-      Run continuous and batch chemical manufacturing; manage process control, kinetics, and yield.
+      Run continuous and batch chemical manufacturing.
     realizes_capability_ids:
       - BC-520
       - BC-720
-    children: []
+    children:
+      - id: BP-490.20.10
+        name: Operate Continuous Chemical Manufacturing
+        level: 3
+        description: >-
+          Operate continuous chemical manufacturing.
+        realizes_capability_ids:
+          - BC-520
+        children: []
+      - id: BP-490.20.20
+        name: Operate Batch Chemical Manufacturing
+        level: 3
+        description: >-
+          Operate batch chemical manufacturing.
+        realizes_capability_ids:
+          - BC-520
+        children: []
+      - id: BP-490.20.30
+        name: Manage Chemical Quality
+        level: 3
+        description: >-
+          Manage chemical product quality and specifications.
+        realizes_capability_ids:
+          - BC-720
+        children: []
   - id: BP-490.30
     name: Manage Hazardous Materials and REACH Compliance
     level: 2
     description: >-
-      Maintain REACH and equivalent registrations; manage SDS, GHS labelling, exposure scenarios, and authorisations.
+      Maintain REACH and equivalent registrations; manage SDS, GHS labelling.
     realizes_capability_ids:
       - BC-130
-    children: []
+    children:
+      - id: BP-490.30.10
+        name: Maintain REACH Registrations
+        level: 3
+        description: >-
+          Maintain REACH registrations and authorisations.
+        realizes_capability_ids:
+          - BC-130
+        children: []
+      - id: BP-490.30.20
+        name: Manage SDS and GHS Labelling
+        level: 3
+        description: >-
+          Maintain SDS and GHS labels per jurisdiction.
+        realizes_capability_ids:
+          - BC-130
+        children: []
   - id: BP-490.40
     name: Manage Process Safety and Major-Hazard Operations
     level: 2
     description: >-
-      Operate process-safety management per OSHA PSM / Seveso III; manage major-accident hazards.
+      Operate PSM per OSHA / Seveso III; manage major-accident hazards.
     realizes_capability_ids:
       - BC-730
       - BC-160
-    children: []
+    children:
+      - id: BP-490.40.10
+        name: Operate Process Safety Management
+        level: 3
+        description: >-
+          Operate PSM per OSHA / Seveso III.
+        realizes_capability_ids:
+          - BC-730
+        children: []
+      - id: BP-490.40.20
+        name: Manage Major-Accident Hazard Programs
+        level: 3
+        description: >-
+          Manage major-accident hazard programs.
+        realizes_capability_ids:
+          - BC-160
+          - BC-730
+        children: []
   - id: BP-490.50
     name: Manage Chemical Distribution and Logistics
     level: 2
     description: >-
-      Operate hazmat-compliant chemical distribution: bulk and packed shipments, ADR/RID/IMDG transport regulations.
+      Operate hazmat-compliant chemical distribution.
     realizes_capability_ids:
       - BC-520
-    children: []
+    children:
+      - id: BP-490.50.10
+        name: Manage Hazmat Compliant Logistics
+        level: 3
+        description: >-
+          Operate hazmat-compliant logistics per ADR/RID/IMDG.
+        realizes_capability_ids:
+          - BC-520
+          - BC-130
+        children: []
+      - id: BP-490.50.20
+        name: Manage Chemical Distributor Network
+        level: 3
+        description: >-
+          Manage chemical distributor and tolling network.
+        realizes_capability_ids:
+          - BC-510
+        children: []

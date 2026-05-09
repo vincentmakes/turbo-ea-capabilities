@@ -3,7 +3,7 @@ name: Manage Vehicle Programs and Dealer Network
 level: 1
 industry: Automotive & Mobility
 description: >-
-  Run automotive-OEM-specific operations: vehicle program management (including type approval and homologation), dealer network management, vehicle distribution, recall management, and connected/aftermarket services. Aligned to APQC Automotive (OEM) PCF v7.2.2.
+  Run automotive-OEM-specific operations: vehicle program management, dealer network management, vehicle distribution, recall management, connected/aftermarket services.
 framework_refs:
   - framework: APQC-PCF
     external_id: "Automotive (OEM) PCF v7.2.2"
@@ -14,52 +14,179 @@ children:
     name: Manage Vehicle Program Lifecycle
     level: 2
     description: >-
-      Govern vehicle programs from concept gate through SOP and end-of-production, including homologation and type approval.
+      Govern vehicle programs from concept gate through SOP and end-of-production.
     realizes_capability_ids:
       - BC-820
       - BC-810
-    children: []
+    children:
+      - id: BP-290.10.10
+        name: Develop Vehicle Concepts
+        level: 3
+        description: >-
+          Develop vehicle concepts; conduct concept gates.
+        realizes_capability_ids:
+          - BC-820
+        children: []
+      - id: BP-290.10.20
+        name: Engineer and Validate Vehicles
+        level: 3
+        description: >-
+          Engineer, integrate, and validate vehicle programs.
+        realizes_capability_ids:
+          - BC-810
+        children: []
+      - id: BP-290.10.30
+        name: Obtain Type Approval and Homologation
+        level: 3
+        description: >-
+          Obtain type approval and homologation in target markets.
+        realizes_capability_ids:
+          - BC-720
+          - BC-130
+        children: []
+      - id: BP-290.10.40
+        name: Launch Vehicle Programs
+        level: 3
+        description: >-
+          Manage vehicle program launch including SOP and ramp.
+        realizes_capability_ids:
+          - BC-820
+        children: []
   - id: BP-290.20
     name: Manage Dealer Network
     level: 2
     description: >-
-      Recruit, onboard, contract, and manage performance of the dealer network across regions.
+      Recruit, onboard, contract, and manage performance of the dealer network.
     realizes_capability_ids:
       - BC-410
       - BC-510
-    children: []
+    children:
+      - id: BP-290.20.10
+        name: Recruit and Onboard Dealers
+        level: 3
+        description: >-
+          Recruit and onboard new dealers; verify standards.
+        realizes_capability_ids:
+          - BC-410
+          - BC-510
+        children: []
+      - id: BP-290.20.20
+        name: Manage Dealer Agreements
+        level: 3
+        description: >-
+          Manage dealer agreements, modifications, and terminations.
+        realizes_capability_ids:
+          - BC-150
+          - BC-510
+        children: []
+      - id: BP-290.20.30
+        name: Monitor Dealer Performance
+        level: 3
+        description: >-
+          Monitor dealer performance against standards and KPIs.
+        realizes_capability_ids:
+          - BC-410
+        children: []
   - id: BP-290.30
     name: Manage Vehicle Distribution and Logistics
     level: 2
     description: >-
-      Allocate, ship, and deliver finished vehicles to dealers and customers; manage build slots and ATP.
+      Allocate, ship, and deliver finished vehicles to dealers and customers.
     realizes_capability_ids:
       - BC-520
-    children: []
+    children:
+      - id: BP-290.30.10
+        name: Allocate Vehicles to Dealers
+        level: 3
+        description: >-
+          Allocate vehicles to dealers per ATP and demand.
+        realizes_capability_ids:
+          - BC-520
+        children: []
+      - id: BP-290.30.20
+        name: Ship and Deliver Vehicles
+        level: 3
+        description: >-
+          Ship and deliver vehicles to dealers/customers.
+        realizes_capability_ids:
+          - BC-520
+        children: []
   - id: BP-290.40
     name: Manage Vehicle Recalls and Field Actions
     level: 2
     description: >-
-      Identify, investigate, and execute safety recalls and field service actions; manage NHTSA / regulator reporting.
+      Identify, investigate, and execute safety recalls and field service actions.
     realizes_capability_ids:
       - BC-720
       - BC-130
-    children: []
+    children:
+      - id: BP-290.40.10
+        name: Investigate Field Issues
+        level: 3
+        description: >-
+          Investigate field-quality issues; determine recall need.
+        realizes_capability_ids:
+          - BC-720
+        children: []
+      - id: BP-290.40.20
+        name: Execute Recalls
+        level: 3
+        description: >-
+          Execute recalls; manage NHTSA / regulator reporting.
+        realizes_capability_ids:
+          - BC-130
+          - BC-720
+        children: []
   - id: BP-290.50
     name: Operate Aftermarket and Parts Distribution
     level: 2
     description: >-
-      Operate the aftermarket parts business: sourcing, distribution, dealer parts ordering, and remanufacture.
+      Operate the aftermarket parts business: sourcing, distribution, dealer parts ordering, remanufacture.
     realizes_capability_ids:
       - BC-520
       - BC-530
-    children: []
+    children:
+      - id: BP-290.50.10
+        name: Manage Aftermarket Parts Catalogue
+        level: 3
+        description: >-
+          Manage aftermarket parts catalogue and superseding.
+        realizes_capability_ids:
+          - BC-820
+          - BC-530
+        children: []
+      - id: BP-290.50.20
+        name: Distribute Aftermarket Parts
+        level: 3
+        description: >-
+          Distribute parts to dealers and customers.
+        realizes_capability_ids:
+          - BC-520
+        children: []
   - id: BP-290.60
     name: Manage Connected and Mobility Services
     level: 2
     description: >-
-      Operate connected-vehicle services, telematics, charging networks, and adjacent mobility offers.
+      Operate connected-vehicle services, telematics, charging networks, adjacent mobility offers.
     realizes_capability_ids:
       - BC-600
       - BC-820
-    children: []
+    children:
+      - id: BP-290.60.10
+        name: Operate Connected-Vehicle Platform
+        level: 3
+        description: >-
+          Operate connected-vehicle platform and OTA updates.
+        realizes_capability_ids:
+          - BC-600
+          - BC-820
+        children: []
+      - id: BP-290.60.20
+        name: Manage Mobility Services
+        level: 3
+        description: >-
+          Manage charging networks, ride-share, and adjacent mobility services.
+        realizes_capability_ids:
+          - BC-820
+          - BC-410
+        children: []
