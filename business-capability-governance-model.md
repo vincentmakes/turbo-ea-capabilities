@@ -963,6 +963,35 @@ As of 2026-05, APQC has released **v8.0 of the Cross-Industry PCF** (Feb 2026 re
 
 When APQC publishes v8.0 industry PCFs, those releases can be re-authored into the catalogue using the same workflow as `reauthor_apqc_v8.py` (archived under `scripts/_archive/`): read the v8.0 Excel `Combined` sheet, fuzzy-match against existing local BP nodes by name, preserve local ids and `realizes_capability_ids`, re-emit each BP1 file. Until then, industry-specific BP1s (BP-130..BP-490 except BP-370) remain anchored on their currently-cited frameworks (BIAN, eTOM, ACORD, ICMM, ICAO, etc.) per the per-industry subsections above.
 
+#### Cross-industry primary-framework anchors per BP1
+
+APQC PCF Cross-Industry v8.0 is taxonomically complete but its naming is deliberately abstract — practitioners often look for nodes by the operational vernacular of their domain (e.g. *Order Fulfillment & Shipping*, *Credit Check*, *Incident Management*) and fail to find them under APQC labels like *Manage Logistics and Warehousing* or *Manage Customer Service*. To improve operational legibility while preserving the cross-industry coverage and id continuity, each Cross-Industry BP1 designates a **primary framework** whose vernacular drives node naming. APQC-PCF is retained as a **secondary** `framework_refs` entry on every Cross-Industry BP node so existing tooling, value-stream `process_ids`, and consumer cross-walks continue to resolve.
+
+Rules:
+
+- **Primary framework drives `name` and `description`.** Names still obey §11.3 (verb-phrased Title Case, 2–5 words).
+- **APQC retained as secondary cross-walk.** Every Cross-Industry BP node carries the original APQC `framework_refs` entry alongside the primary; the primary entry is listed first.
+- **IDs are stable.** Renames never change `BP-...` ids; sparse 10/20/30 numbering is preserved. Structural moves (where the chosen framework's grouping diverges from APQC's) use `bp:mv` so `metadata.replaces` records the prior id.
+- **Aliases capture common-language synonyms.** Where a node's framework label still differs from how practitioners search (e.g. *Order Fulfilment & Shipping* vs. SCOR's *Deliver*), add the operational name to `aliases[]`.
+
+| BP1 | Local L1 name | Primary framework | Secondary cross-walks |
+|---|---|---|---|
+| BP-10 | Develop Vision and Strategy | APQC-PCF Cross-Industry v8.0 | TOGAF (where strategy-to-architecture linkage is modelled) |
+| BP-20 | Develop and Manage Products and Services | DCOR (ASCM Design Chain Operations Reference) | APQC-PCF, industry PCF where applicable |
+| BP-30 | Market and Sell Products and Services | APQC-PCF Retail v7.2.1 + Consumer Products v7.2.x | APQC-PCF Cross-Industry |
+| BP-40 | Manage Supply Chain for Physical Products | SCOR DS (Plan/Source/Make/Deliver/Return/Enable) | APQC-PCF |
+| BP-50 | Deliver Services | ITIL 4 Service Value Chain | APQC-PCF |
+| BP-60 | Manage Customer Service | APQC-PCF Cross-Industry (light vernacular pass) | — |
+| BP-70 | Develop and Manage Human Resources | SHRM-BoCK | APQC-PCF HR |
+| BP-80 | Manage Information Technology (IT) | ITIL 4 practices | APQC-PCF IT, COBIT 2019 |
+| BP-90 | Manage Financial Resources | APQC-PCF Finance + Order-to-Cash / Procure-to-Pay vernacular | APQC-PCF Cross-Industry, COSO-ERM |
+| BP-100 | Acquire, Construct, and Manage Assets | ISO 55000 | APQC-PCF |
+| BP-110 | Manage Enterprise Risk, Compliance, Remediation, and Resiliency | COSO-ERM 2017 + ISO 31000 | APQC-PCF |
+| BP-120 | Manage External Relationships | APQC-PCF Cross-Industry | — |
+| BP-370 | Develop and Manage Business Capabilities | TOGAF / BIZBOK | APQC-PCF |
+
+The realignment is executed BP1-by-BP1 in PRs that (a) rewrite `name`/`description` toward the primary framework's vernacular, (b) prepend the primary framework to `framework_refs[]` with its native `external_id`, (c) add `aliases[]` for operational synonyms, and (d) preserve all `realizes_capability_ids` and ids. See [`schema/business-process.schema.json`](schema/business-process.schema.json) for the full `framework` enum (15 frameworks: APQC-PCF, BIAN, eTOM, ITIL, SCOR, DCOR, COBIT, SHRM-BoCK, ISO-55000, ISO-31000, COSO-ERM, TOGAF, BIZBOK, ACORD, ICMM).
+
 #### Banking & Capital Markets
 
 - **APQC Banking PCF, v7.2.x.** Industry-specific PCF for retail and commercial banking (anchors `BP-130` Operate Banking Products and Services, `BP-140` Operate Capital Markets and Treasury Services).

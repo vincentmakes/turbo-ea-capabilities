@@ -32,7 +32,7 @@ An open-source Business Architecture Reference Catalogue with **three orthogonal
 - **Names are verb-phrased** (unlike capabilities): *Develop Vision and Strategy*, *Process Sales Order*.
 - **Industry tag:** same scheme as capabilities. BC L1 industry vocabulary is the master list.
 - **`realizes_capability_ids`** is the single source of truth for the BC↔BP link; the reverse `Capability.realizes_processes` is derived at build time.
-- **`framework_refs`** for structured cross-walks to APQC-PCF / BIAN / eTOM / ITIL / SCOR. Used alongside (not instead of) the free-form `references[]` URI list.
+- **`framework_refs`** for structured cross-walks to APQC-PCF, BIAN, eTOM, ITIL, SCOR, DCOR, COBIT, SHRM-BoCK, ISO-55000, ISO-31000, COSO-ERM, TOGAF, BIZBOK, ACORD, ICMM. Multiple entries per node are expected — pin a primary framework whose vernacular drives the node's name, and retain APQC-PCF as a secondary cross-walk on Cross-Industry BPs for continuity. Used alongside (not instead of) the free-form `references[]` URI list.
 
 ## Translations — sidecar invariants
 
