@@ -1218,7 +1218,8 @@ value_streams:
     capability_ids:
     - BC-1730
     - BC-1750
-    process_ids: []
+    process_ids:
+    - BP-230.10
     industry_variant: Defense
     notes: Intelligence operations input; Defense customer intel
   - id: VS-110.20
@@ -1226,7 +1227,8 @@ value_streams:
     stage_name: Capture Strategy
     capability_ids:
     - BC-1750
-    process_ids: []
+    process_ids:
+    - BP-230.10
     industry_variant: Defense
     notes: Capture management
   - id: VS-110.30
@@ -1235,7 +1237,9 @@ value_streams:
     capability_ids:
     - BC-1750
     - BC-1810
-    process_ids: []
+    process_ids:
+    - BP-230.10
+    - BP-230.50
     industry_variant: Defense
     notes: Teaming strategy; Cleared subcontractor vetting
   - id: VS-110.40
@@ -1243,7 +1247,8 @@ value_streams:
     stage_name: Bid & Proposal
     capability_ids:
     - BC-1750
-    process_ids: []
+    process_ids:
+    - BP-230.10
     industry_variant: Defense
     notes: Bid management; Proposal development
   - id: VS-110.50
@@ -1251,14 +1256,16 @@ value_streams:
     stage_name: Pricing & Cost Estimation
     capability_ids:
     - BC-440
-    process_ids: []
+    process_ids:
+    - BP-230.10
     notes: Pricing strategy
   - id: VS-110.60
     stage_order: 5
     stage_name: Pricing & Cost Estimation
     capability_ids:
     - BC-1140
-    process_ids: []
+    process_ids:
+    - BP-230.10
     industry_variant: Defense
     notes: Tendering & estimation
   - id: VS-110.70
@@ -1266,14 +1273,16 @@ value_streams:
     stage_name: Compliance & Export Review
     capability_ids:
     - BC-130
-    process_ids: []
+    process_ids:
+    - BP-230.50
     notes: Regulatory compliance
   - id: VS-110.80
     stage_order: 6
     stage_name: Compliance & Export Review
     capability_ids:
     - BC-1790
-    process_ids: []
+    process_ids:
+    - BP-230.50
     industry_variant: Defense
     notes: ITAR / EAR / export control
   - id: VS-110.90
@@ -1281,14 +1290,16 @@ value_streams:
     stage_name: Contract Negotiation & Award
     capability_ids:
     - BC-150
-    process_ids: []
+    process_ids:
+    - BP-230.20
     notes: Contract negotiation
   - id: VS-110.100
     stage_order: 7
     stage_name: Contract Negotiation & Award
     capability_ids:
     - BC-1760
-    process_ids: []
+    process_ids:
+    - BP-230.20
     industry_variant: Defense
     notes: Programme handover
 - id: VS-120
@@ -8116,7 +8127,8 @@ value_streams:
     stage_name: Sustainment Planning
     capability_ids:
     - BC-1780
-    process_ids: []
+    process_ids:
+    - BP-230.60
     industry_variant: Defense
     notes: In-service support plan; RAM engineering
   - id: VS-590.20
@@ -8125,7 +8137,9 @@ value_streams:
     capability_ids:
     - BC-1720
     - BC-1780
-    process_ids: []
+    process_ids:
+    - BP-230.60
+    - BP-100.30
     industry_variant: Defense
     notes: Defense logistics; Depot maintenance
   - id: VS-590.30
@@ -8133,14 +8147,16 @@ value_streams:
     stage_name: Spares & Repairs
     capability_ids:
     - BC-1060
-    process_ids: []
+    process_ids:
+    - BP-230.60
     notes: Aftermarket parts
   - id: VS-590.40
     stage_order: 3
     stage_name: Spares & Repairs
     capability_ids:
     - BC-1780
-    process_ids: []
+    process_ids:
+    - BP-230.60
     industry_variant: Defense
     notes: Spares & repair pipeline
   - id: VS-590.50
@@ -8148,7 +8164,8 @@ value_streams:
     stage_name: Technical Documentation
     capability_ids:
     - BC-1780
-    process_ids: []
+    process_ids:
+    - BP-230.40
     industry_variant: Defense
     notes: Technical publications
   - id: VS-590.60
@@ -8156,7 +8173,8 @@ value_streams:
     stage_name: Obsolescence Management
     capability_ids:
     - BC-1780
-    process_ids: []
+    process_ids:
+    - BP-230.60
     industry_variant: Defense
     notes: DMSMS / obsolescence
   - id: VS-590.70
@@ -8165,7 +8183,9 @@ value_streams:
     capability_ids:
     - BC-1770
     - BC-1800
-    process_ids: []
+    process_ids:
+    - BP-230.30
+    - BP-230.40
     industry_variant: Defense
     notes: Configuration management; Test & evaluation
   - id: VS-590.80
@@ -8173,14 +8193,16 @@ value_streams:
     stage_name: Disposal & Disposition
     capability_ids:
     - BC-1040
-    process_ids: []
+    process_ids:
+    - BP-230.70
     notes: Decommissioning
   - id: VS-590.90
     stage_order: 7
     stage_name: Disposal & Disposition
     capability_ids:
     - BC-1810
-    process_ids: []
+    process_ids:
+    - BP-230.70
     industry_variant: Defense
     notes: Classified material destruction
 - id: VS-600
