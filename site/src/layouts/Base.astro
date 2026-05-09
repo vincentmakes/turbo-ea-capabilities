@@ -57,6 +57,7 @@ const generatedDate = version.generated_at.slice(0, 10);
           <a href="/">Home</a>
           <a href="/about">About</a>
           <a href="/value-streams">Value Streams</a>
+          <a href="/business-processes">Processes</a>
           <a href="/api/tree.json">API</a>
           <a
             href="https://www.turbo-ea.org"
@@ -121,7 +122,8 @@ const generatedDate = version.generated_at.slice(0, 10);
         </div>
         <div class="footer-copy">
           Catalog {version.catalogue_version} · schema v{version.schema_version} ·
-          {version.node_count} capabilities · generated {generatedDate}
+          {version.node_count} capabilities{version.process_count ? ` · ${version.process_count} processes` : ""} ·
+          generated {generatedDate}
         </div>
       </div>
     </footer>

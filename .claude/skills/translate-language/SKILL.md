@@ -1,11 +1,21 @@
 ---
 name: translate-language
-description: Translate the catalogue into a target language by generating sidecar files under catalogue/i18n/<locale>/. Two modes — Whole-Language (user names ONLY a language; skill produces or refreshes a sidecar for every L1 in catalogue/_index.yaml) and Single-L1 (user names one L1 + a language; skill produces or refreshes one sidecar). The user always speaks in language NAMES and capability NAMES; the skill resolves to BCP-47 tags and BC-IDs internally.
+description: Translate the catalogue into a target language by generating sidecar files under catalogue/i18n/<locale>/. Handles three artefact kinds — capability (L1-*.yaml), business-process (processes/BP1-*.yaml), value-stream (_value-streams.yaml). Two scope modes — Whole-Language (user names ONLY a language; skill produces or refreshes a sidecar for every L1, BP1, and the VS file) and Single-Source (user names one source artefact + a language). User speaks in language NAMES and source NAMES; skill resolves to BCP-47 tags and BC/BP/VS ids internally.
 ---
 
 # translate-language
 
-Translate the English source catalogue into a target language as **sidecar files** under `catalogue/i18n/<locale>/`. Source files in `catalogue/L1-*.yaml` are never modified — translations are additive and locale-neutral fields (id, level, industry, references, deprecation, metadata) are never duplicated.
+Translate the English source catalogue into a target language as **sidecar files** under `catalogue/i18n/<locale>/`. Source files in `catalogue/L1-*.yaml`, `catalogue/processes/BP1-*.yaml`, and `catalogue/_value-streams.yaml` are never modified — translations are additive and locale-neutral fields (id, level, industry, references, framework_refs, deprecation, metadata) are never duplicated.
+
+The skill supports three artefact kinds, all governed by the same `schema/i18n.schema.json` with a `kind:` discriminator:
+
+| Kind | Source file | Sidecar location | Translatable fields |
+|---|---|---|---|
+| `capability` | `catalogue/L1-<slug>.yaml` | `catalogue/i18n/<locale>/L1-<slug>.yaml` | name, description, aliases, in_scope, out_of_scope |
+| `business-process` | `catalogue/processes/BP1-<slug>.yaml` | `catalogue/i18n/<locale>/processes/BP1-<slug>.yaml` | name, description, aliases, in_scope, out_of_scope |
+| `value-stream` | `catalogue/_value-streams.yaml` | `catalogue/i18n/<locale>/_value-streams.yaml` | stream-level: name, description; stage-level: stage_name, description, notes |
+
+The Whole-Language mode covers all three artefact kinds in one run. Single-Source mode covers exactly one artefact (one L1, one BP1, or the VS file).
 
 Two modes:
 
@@ -92,9 +102,50 @@ Always close with: *"Open a PR; CODEOWNERS for `catalogue/i18n/<bcp47>/` (and pe
 ## What this skill must not do
 
 - Edit any file outside `catalogue/i18n/<target-locale>/`.
-- Translate URLs, identifiers, industry tags, levels, or any non-whitelisted field.
-- Invent capabilities not present in the source tree (no orphaned entries).
+- Translate URLs, identifiers, industry tags, levels, framework refs, or any non-whitelisted field.
+- Invent capabilities, processes, or stages not present in the source tree (no orphaned entries).
 - Refresh / overwrite an existing sidecar without explicit user approval (Step 2's refresh strategy is required).
 - Skip lint validation.
 - Loosen `schema/i18n.schema.json` or `scripts/lint.ts` to make a draft pass.
 - Translate into a language the user has not explicitly approved (no auto-detection from the user's prompt language).
+
+## Business-process and value-stream sidecars
+
+The same workflow applies to BP and VS sidecars with three differences:
+
+1. **`kind:` field.** Sidecar declares `kind: capability`, `kind: business-process`, or `kind: value-stream`. Default is `capability` for back-compat.
+2. **Source path & sidecar path.**
+   - business-process: source `BP1-<slug>.yaml` (in `catalogue/processes/`), sidecar `catalogue/i18n/<locale>/processes/BP1-<slug>.yaml`.
+   - value-stream: source `_value-streams.yaml`, sidecar `catalogue/i18n/<locale>/_value-streams.yaml`.
+3. **Translatable fields.**
+   - business-process — same whitelist as capability (name, description, aliases, in_scope, out_of_scope). Verb-phrased names; preserve the action voice across the target language.
+   - value-stream — stream-level entries (id pattern `^VS-\d+$`) accept `name` and `description`. Stage-level entries (id pattern `^VS-\d+\.\d+$`) accept `stage_name`, `description`, `notes`. Stream names use the bookend pattern `<Trigger>-to-<Outcome>` — preserve the bookend in translation if the target language supports it; otherwise pick the closest idiomatic equivalent.
+
+Example BP sidecar:
+
+```yaml
+kind: business-process
+locale: fr
+source: BP1-develop-vision-and-strategy.yaml
+entries:
+  BP-10:
+    name: Élaborer la vision et la stratégie
+    description: Définir l'orientation stratégique de l'entreprise...
+  BP-10.10:
+    name: Définir le concept et la vision de l'entreprise
+```
+
+Example VS sidecar (excerpt):
+
+```yaml
+kind: value-stream
+locale: fr
+source: _value-streams.yaml
+entries:
+  VS-310:
+    name: Commande-à-Encaissement
+    description: Flux de bout en bout depuis la prise de commande client jusqu'à l'encaissement.
+  VS-310.10:
+    stage_name: Prise de commande
+    notes: Saisie et validation
+```

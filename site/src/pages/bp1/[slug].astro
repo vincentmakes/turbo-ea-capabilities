@@ -1,0 +1,66 @@
+---
+import Base from "../../layouts/Base.astro";
+import { bp1List, bpFlat, getBpById } from "../../data/load.ts";
+
+export function getStaticPaths() {
+  return bp1List().map(({ slug, root }) => ({
+    params: { slug },
+    props: { rootId: root.id, rootName: root.name },
+  }));
+}
+
+interface Props {
+  rootId: string;
+  rootName: string;
+}
+const { rootId, rootName } = Astro.props as Props;
+
+function descendants(id: string): typeof bpFlat {
+  const out: typeof bpFlat = [];
+  const stack = [id];
+  while (stack.length > 0) {
+    const cur = stack.pop()!;
+    const node = bpFlat.find((b) => b.id === cur);
+    if (node) {
+      out.push(node);
+      stack.push(...(node.children ?? []));
+    }
+  }
+  return out;
+}
+const subset = descendants(rootId);
+const root = getBpById(rootId);
+---
+
+<Base title={rootName}>
+  <main class="main">
+    <nav class="detail-breadcrumb">
+      <a href="/business-processes">Processes</a>
+      <span class="sep">/</span>
+      <span>{rootName}</span>
+    </nav>
+
+    <div class="section-header">
+      <h2>{rootName}</h2>
+    </div>
+    <p class="search-results-info" style="margin-bottom: 24px;">
+      Subtree of <span class="cap-id">{rootId}</span> · {subset.length}
+      {subset.length === 1 ? "process node" : "process nodes"}
+    </p>
+
+    {root?.description && (
+      <p style="max-width: 720px; line-height: 1.7;">{root.description}</p>
+    )}
+
+    <div class="cap-list" style="margin-top: 16px;">
+      {subset.map((b) => (
+        <a class="cap-list-row" href={`/business-process/${b.id}`} style={`padding-left: ${(b.level - 1) * 20}px;`}>
+          <span class="cap-id">{b.id}</span>
+          <span class="cap-name">{b.name}</span>
+          <span class="cap-level">L{b.level}</span>
+          {b.deprecated && <span class="cap-deprecated-badge">Deprecated</span>}
+        </a>
+      ))}
+    </div>
+  </main>
+</Base>

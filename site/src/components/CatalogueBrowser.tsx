@@ -16,15 +16,21 @@ export interface FlatCap {
 }
 
 export interface ValueStreamStage {
+  id: string;
   stage_order: number;
   stage_name: string;
-  capability_id: string;
+  capability_ids: string[];
+  process_ids: string[];
+  industries?: string[];
   industry_variant?: string;
+  description?: string;
   notes?: string;
 }
 
 export interface ValueStream {
+  id: string;
   name: string;
+  description?: string;
   industries: string[];
   stages: ValueStreamStage[];
 }
@@ -206,9 +212,11 @@ export default function CatalogueBrowser({ data, valueStreams }: Props) {
     };
     for (const stream of valueStreams) {
       for (const stage of stream.stages) {
-        add(stage.capability_id, stream.name);
-        for (const d of descendantsOf.get(stage.capability_id) ?? []) {
-          add(d, stream.name);
+        for (const cid of stage.capability_ids ?? []) {
+          add(cid, stream.name);
+          for (const d of descendantsOf.get(cid) ?? []) {
+            add(d, stream.name);
+          }
         }
       }
     }
@@ -1234,10 +1242,10 @@ function DetailModal({
   const inStreams: { stream: string; stage: ValueStreamStage }[] = [];
   for (const s of valueStreams) {
     for (const stage of s.stages) {
-      if (
-        stage.capability_id === node.id ||
-        node.id.startsWith(stage.capability_id + ".")
-      ) {
+      const matches = (stage.capability_ids ?? []).some(
+        (cid) => cid === node.id || node.id.startsWith(cid + ".")
+      );
+      if (matches) {
         inStreams.push({ stream: s.name, stage });
       }
     }
@@ -1332,7 +1340,7 @@ function DetailModal({
                 <div class="meta-key">Value streams</div>
                 <ul class="meta-val detail-modal-streams">
                   {inStreams.map(({ stream, stage }, idx) => (
-                    <li key={`${stream}-${stage.stage_order}-${idx}`}>
+                    <li key={`${stream}-${stage.id}-${idx}`}>
                       <strong>{stream}</strong>
                       {" · stage "}
                       {stage.stage_order} ({stage.stage_name})

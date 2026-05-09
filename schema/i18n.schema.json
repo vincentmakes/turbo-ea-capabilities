@@ -1,12 +1,18 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://business-capabilities.turbo-ea.org/schema/i18n.schema.json",
-  "title": "CapabilityTranslations",
-  "description": "Sidecar translation file. One file per (locale, L1) under `catalogue/i18n/<locale>/L1-*.yaml`. Mirrors the source L1 filename so per-L1 CODEOWNERS still apply. Only translatable display fields appear here; identifiers, levels, industry tags, references, and lifecycle metadata stay locale-neutral in `catalogue/L1-*.yaml`.",
+  "title": "ArtefactTranslations",
+  "description": "Sidecar translation file. One file per (locale, source) tuple. The optional `kind` field selects the artefact this sidecar translates (capability | value-stream | business-process). Default is 'capability' for back-compat with pre-VS/BP sidecars. Identifiers, levels, industry tags, references, framework refs, and lifecycle metadata stay locale-neutral in the source YAML.",
   "type": "object",
   "required": ["locale", "source", "entries"],
   "additionalProperties": false,
   "properties": {
+    "kind": {
+      "type": "string",
+      "enum": ["capability", "value-stream", "business-process"],
+      "default": "capability",
+      "description": "Artefact this sidecar translates. Selects which `entries` key pattern and which translatable-field set apply."
+    },
     "locale": {
       "type": "string",
       "description": "BCP-47 language tag (e.g. 'fr', 'fr-CA', 'zh', 'pt-BR'). Must equal the parent directory name under catalogue/i18n/.",
@@ -14,16 +20,18 @@
     },
     "source": {
       "type": "string",
-      "description": "Filename of the source L1 file this translates (e.g. 'L1-actuarial-management.yaml'). Lint enforces existence.",
-      "pattern": "^L1-[a-z0-9-]+\\.yaml$"
+      "description": "Filename of the source artefact this translates. For capabilities: 'L1-<slug>.yaml'. For business processes: 'BP1-<slug>.yaml'. For the value-stream catalogue: '_value-streams.yaml'.",
+      "pattern": "^(L1-[a-z0-9-]+\\.yaml|BP1-[a-z0-9-]+\\.yaml|_value-streams\\.yaml)$"
     },
     "entries": {
       "type": "object",
-      "description": "Map of capability id -> translated display fields. Every key must resolve to a node in the source L1 tree.",
+      "description": "Map of artefact id -> translated display fields. Every key must resolve to a node in the source artefact. Allowed key patterns and translatable fields depend on `kind` (see allOf below).",
       "minProperties": 1,
       "additionalProperties": false,
       "patternProperties": {
-        "^BC-\\d+(\\.\\d+){0,3}$": { "$ref": "#/$defs/LocalizedFields" }
+        "^BC-\\d+(\\.\\d+){0,3}$": { "$ref": "#/$defs/CapabilityFields" },
+        "^BP-\\d+(\\.\\d+){0,3}$": { "$ref": "#/$defs/CapabilityFields" },
+        "^VS-\\d+(\\.\\d+)?$": { "$ref": "#/$defs/ValueStreamFields" }
       }
     },
     "metadata": {
@@ -33,38 +41,92 @@
     }
   },
   "$defs": {
-    "LocalizedFields": {
+    "CapabilityFields": {
       "type": "object",
-      "description": "Translatable fields for one capability node. All optional — omit a field to fall back to the source language for that field only.",
+      "description": "Translatable fields for a capability or business-process node. All optional — omit a field to fall back to the source language for that field only.",
       "additionalProperties": false,
       "minProperties": 1,
       "properties": {
-        "name": {
-          "type": "string",
-          "minLength": 1,
-          "description": "Localised display name. Same noun-phrase, Title Case rules as the source name (per business-capability-governance-model.md §5)."
-        },
-        "description": {
-          "type": "string",
-          "description": "Localised outcome-oriented definition (1-3 sentences)."
-        },
+        "name": { "type": "string", "minLength": 1 },
+        "description": { "type": "string" },
         "aliases": {
           "type": "array",
           "items": { "type": "string", "minLength": 1 },
-          "uniqueItems": true,
-          "description": "Localised aliases. Independent from the source `aliases` list."
+          "uniqueItems": true
         },
         "in_scope": {
           "type": "array",
-          "items": { "type": "string", "minLength": 1 },
-          "description": "Localised in-scope outcomes."
+          "items": { "type": "string", "minLength": 1 }
         },
         "out_of_scope": {
           "type": "array",
-          "items": { "type": "string", "minLength": 1 },
-          "description": "Localised out-of-scope outcomes."
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "ValueStreamFields": {
+      "type": "object",
+      "description": "Translatable fields for a value-stream entry. Stream-level entries (id matching ^VS-\\d+$) accept `name` and `description`; stage-level entries (id matching ^VS-\\d+\\.\\d+$) accept `stage_name`, `description`, and `notes`.",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "stage_name": { "type": "string", "minLength": 1 },
+        "description": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "anyOf": [
+          { "not": { "required": ["kind"] } },
+          { "properties": { "kind": { "const": "capability" } } }
+        ]
+      },
+      "then": {
+        "properties": {
+          "source": { "pattern": "^L1-[a-z0-9-]+\\.yaml$" },
+          "entries": {
+            "patternProperties": {
+              "^BC-\\d+(\\.\\d+){0,3}$": true,
+              "^BP-\\d+(\\.\\d+){0,3}$": false,
+              "^VS-\\d+(\\.\\d+)?$": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "kind": { "const": "business-process" } }, "required": ["kind"] },
+      "then": {
+        "properties": {
+          "source": { "pattern": "^BP1-[a-z0-9-]+\\.yaml$" },
+          "entries": {
+            "patternProperties": {
+              "^BC-\\d+(\\.\\d+){0,3}$": false,
+              "^BP-\\d+(\\.\\d+){0,3}$": true,
+              "^VS-\\d+(\\.\\d+)?$": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "kind": { "const": "value-stream" } }, "required": ["kind"] },
+      "then": {
+        "properties": {
+          "source": { "pattern": "^_value-streams\\.yaml$" },
+          "entries": {
+            "patternProperties": {
+              "^BC-\\d+(\\.\\d+){0,3}$": false,
+              "^BP-\\d+(\\.\\d+){0,3}$": false,
+              "^VS-\\d+(\\.\\d+)?$": true
+            }
+          }
         }
       }
     }
-  }
+  ]
 }

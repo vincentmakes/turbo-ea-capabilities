@@ -1,0 +1,103 @@
+---
+import Base from "../layouts/Base.astro";
+import { bpFlat, bp1List } from "../data/load.ts";
+
+const bp1s = bp1List();
+const totalProcesses = bpFlat.length;
+---
+
+<Base
+  title="Business Processes"
+  description="Browse the business-process catalogue. Processes describe HOW work is done — verb-phrased activities anchored on APQC PCF's 4-level hierarchy. Orthogonal to capabilities (BC) and value streams (VS)."
+>
+  <main class="main">
+    <div class="section-header">
+      <h2>Business Processes</h2>
+      <p class="section-sub">
+        Verb-phrased activities anchored on APQC PCF's Category → Process Group → Process → Activity
+        hierarchy. {totalProcesses} {totalProcesses === 1 ? "process node" : "process nodes"} across
+        {bp1s.length} {bp1s.length === 1 ? "category" : "categories"}.
+      </p>
+    </div>
+
+    {bp1s.length === 0 ? (
+      <div class="bp-empty">
+        <p>
+          The business-process catalogue is currently scaffolded but empty —
+          schema, lint, build pipeline, and CLI are all in place. APQC PCF
+          Cross-Industry import lands in a follow-up PR.
+        </p>
+        <p>
+          Add a BP1 file at <code>catalogue/processes/BP1-&lt;slug&gt;.yaml</code>,
+          register it in <code>catalogue/processes/_index.yaml</code>, then run
+          <code>npm run lint</code>.
+        </p>
+      </div>
+    ) : (
+      <div class="bp-grid">
+        {bp1s.map(({ slug, root }) => (
+          <a class="bp-card" href={`/bp1/${slug}`}>
+            <h3 class="bp-card-title">
+              <span class="cap-id">{root.id}</span>
+              {root.name}
+            </h3>
+            {root.description && <p class="bp-card-desc">{root.description}</p>}
+            {root.industry && <span class="cap-industry">{root.industry}</span>}
+          </a>
+        ))}
+      </div>
+    )}
+  </main>
+</Base>
+
+<style>
+  .section-sub {
+    margin: 8px 0 0;
+    color: var(--color-muted);
+    max-width: 720px;
+  }
+  .bp-empty {
+    padding: 24px;
+    border: 1px dashed var(--color-border);
+    border-radius: var(--radius-sm, 8px);
+    background: var(--color-white);
+    color: var(--color-muted);
+    max-width: 720px;
+  }
+  .bp-empty code {
+    background: var(--color-pale-blue);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+  }
+  .bp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+  }
+  .bp-card {
+    display: block;
+    padding: 16px;
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm, 8px);
+    text-decoration: none;
+    color: inherit;
+  }
+  .bp-card:hover {
+    border-color: var(--color-light-blue);
+  }
+  .bp-card-title {
+    margin: 0 0 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+  }
+  .bp-card-desc {
+    margin: 0 0 8px;
+    color: var(--color-muted);
+    font-size: 13px;
+  }
+</style>
