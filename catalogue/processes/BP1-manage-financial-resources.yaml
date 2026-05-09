@@ -35,7 +35,8 @@ children:
           - framework: APQC-PCF
             external_id: "9.1.1"
             version: "8.0"
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-230
         children: []
       - id: BP-90.10.20
         name: Perform Planning/budgeting/forecasting
@@ -46,7 +47,8 @@ children:
           - framework: APQC-PCF
             external_id: "9.1.2"
             version: "8.0"
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-230
         children: []
       - id: BP-90.10.30
         name: Perform Cost Accounting and Control
@@ -57,7 +59,8 @@ children:
           - framework: APQC-PCF
             external_id: "9.1.3"
             version: "8.0"
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-230
         children: []
       - id: BP-90.10.40
         name: Perform Cost Management
@@ -68,7 +71,8 @@ children:
           - framework: APQC-PCF
             external_id: "9.1.4"
             version: "8.0"
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-230
         children: []
       - id: BP-90.10.50
         name: Evaluate and Manage Financial Performance
@@ -79,7 +83,8 @@ children:
           - framework: APQC-PCF
             external_id: "9.1.5"
             version: "8.0"
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-230
         children: []
   - id: BP-90.20
     name: Perform Revenue Accounting
@@ -175,7 +180,8 @@ children:
           - framework: APQC-PCF
             external_id: "9.3.1"
             version: "8.0"
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-200
         children: []
       - id: BP-90.30.20
         name: Perform General Accounting
@@ -300,7 +306,9 @@ children:
           - framework: APQC-PCF
             external_id: "9.5.3"
             version: "8.0"
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-300
+          - BC-200
         children: []
   - id: BP-90.60
     name: Process Accounts Payable and Expense Reimbursements
@@ -350,7 +358,9 @@ children:
           - framework: APQC-PCF
             external_id: "9.6.3"
             version: "8.0"
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-200
+          - BC-500
         children: []
   - id: BP-90.70
     name: Manage Treasury Operations
@@ -434,7 +444,8 @@ children:
           - framework: APQC-PCF
             external_id: "9.7.6"
             version: "8.0"
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-210
         children: []
   - id: BP-90.80
     name: Manage Internal Controls
@@ -471,7 +482,9 @@ children:
           - framework: APQC-PCF
             external_id: "9.8.2"
             version: "8.0"
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-140
+          - BC-130
         children: []
       - id: BP-90.80.30
         name: Report on Internal Controls Compliance
@@ -555,7 +568,9 @@ children:
           - framework: APQC-PCF
             external_id: "9.10.2"
             version: "8.0"
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-200
+          - BC-210
         children: []
       - id: BP-90.100.30
         name: Monitor Currency Exposure/hedge Currency
@@ -566,7 +581,9 @@ children:
           - framework: APQC-PCF
             external_id: "9.10.3"
             version: "8.0"
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-200
+          - BC-210
         children: []
       - id: BP-90.100.40
         name: Report Results
@@ -577,7 +594,9 @@ children:
           - framework: APQC-PCF
             external_id: "9.10.4"
             version: "8.0"
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-200
+          - BC-210
         children: []
   - id: BP-90.110
     name: Perform Global Trade Services
@@ -588,7 +607,11 @@ children:
       - framework: APQC-PCF
         external_id: "9.11"
         version: "8.0"
-    realizes_capability_ids: []
+    realizes_capability_ids:
+      - BC-200
+      - BC-230
+      - BC-210
+      - BC-220
     children:
       - id: BP-90.110.10
         name: Screen Sanctioned Party List
@@ -599,7 +622,11 @@ children:
           - framework: APQC-PCF
             external_id: "9.11.1"
             version: "8.0"
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-200
+          - BC-230
+          - BC-210
+          - BC-220
         children: []
       - id: BP-90.110.20
         name: Control Exports and Imports
@@ -610,7 +637,11 @@ children:
           - framework: APQC-PCF
             external_id: "9.11.2"
             version: "8.0"
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-200
+          - BC-230
+          - BC-210
+          - BC-220
         children: []
       - id: BP-90.110.30
         name: Classify Products
@@ -621,7 +652,11 @@ children:
           - framework: APQC-PCF
             external_id: "9.11.3"
             version: "8.0"
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-200
+          - BC-230
+          - BC-210
+          - BC-220
         children: []
       - id: BP-90.110.40
         name: Perform Currency Conversion
@@ -632,7 +667,11 @@ children:
           - framework: APQC-PCF
             external_id: "9.11.4"
             version: "8.0"
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-200
+          - BC-230
+          - BC-210
+          - BC-220
         children: []
       - id: BP-90.110.50
         name: Calculate Duty
@@ -643,7 +682,11 @@ children:
           - framework: APQC-PCF
             external_id: "9.11.5"
             version: "8.0"
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-200
+          - BC-230
+          - BC-210
+          - BC-220
         children: []
       - id: BP-90.110.60
         name: Communicate with Customs
@@ -654,7 +697,11 @@ children:
           - framework: APQC-PCF
             external_id: "9.11.6"
             version: "8.0"
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-200
+          - BC-230
+          - BC-210
+          - BC-220
         children: []
       - id: BP-90.110.70
         name: Document Trade
@@ -665,7 +712,11 @@ children:
           - framework: APQC-PCF
             external_id: "9.11.7"
             version: "8.0"
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-200
+          - BC-230
+          - BC-210
+          - BC-220
         children: []
       - id: BP-90.110.80
         name: Process Trade Preferences
@@ -676,7 +727,11 @@ children:
           - framework: APQC-PCF
             external_id: "9.11.8"
             version: "8.0"
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-200
+          - BC-230
+          - BC-210
+          - BC-220
         children: []
       - id: BP-90.110.90
         name: Handle Restitution
@@ -687,7 +742,11 @@ children:
           - framework: APQC-PCF
             external_id: "9.11.9"
             version: "8.0"
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-200
+          - BC-230
+          - BC-210
+          - BC-220
         children: []
       - id: BP-90.110.100
         name: Prepare Letter of Credit
@@ -698,5 +757,9 @@ children:
           - framework: APQC-PCF
             external_id: "9.11.10"
             version: "8.0"
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-200
+          - BC-230
+          - BC-210
+          - BC-220
         children: []
