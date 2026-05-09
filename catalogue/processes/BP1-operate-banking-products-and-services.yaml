@@ -3,7 +3,7 @@ name: Operate Banking Products and Services
 level: 1
 industry: Banking & Capital Markets
 description: >-
-  Run banking-specific product and service operations: deposit-taking, lending, cards, payments, trade finance, and customer servicing — distinct from the cross-industry Order-to-Cash flow.
+  Run banking-specific product and service operations: deposit-taking, lending, cards, payments, trade finance, customer servicing, channels — distinct from cross-industry Order-to-Cash.
 framework_refs:
   - framework: BIAN
     external_id: "Banking Industry Architecture Network — service-domain reference"
@@ -16,35 +16,151 @@ children:
     description: >-
       Operate retail and commercial deposit accounts: account opening, transaction posting, interest calculation, and statement production.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-130.10.10
+        name: Open and Maintain Deposit Accounts
+        level: 3
+        description: >-
+          Onboard customers; open and amend deposit accounts including KYC and account-opening compliance.
+        realizes_capability_ids:
+          - BC-130
+        children: []
+      - id: BP-130.10.20
+        name: Process Deposit Transactions
+        level: 3
+        description: >-
+          Post deposits, withdrawals, transfers; calculate and credit interest.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-130.10.30
+        name: Manage Statements and Disclosures
+        level: 3
+        description: >-
+          Produce and deliver account statements and regulatory disclosures.
+        realizes_capability_ids: []
+        children: []
   - id: BP-130.20
     name: Manage Lending Operations
     level: 2
     description: >-
-      Originate, underwrite, service, and collect on loans: retail, mortgage, commercial, and syndicated facilities.
+      Originate, underwrite, service, and collect on loans across retail, mortgage, commercial, and syndicated facilities.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-130.20.10
+        name: Originate Loans
+        level: 3
+        description: >-
+          Capture loan applications across channels; perform initial validation and KYC.
+        realizes_capability_ids:
+          - BC-130
+        children: []
+      - id: BP-130.20.20
+        name: Underwrite and Decision Loans
+        level: 3
+        description: >-
+          Underwrite credit applications; render approve/decline decisions; price and offer loans.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-130.20.30
+        name: Document, Disburse, and Service Loans
+        level: 3
+        description: >-
+          Execute loan documentation; disburse funds; service loans through their lifecycle.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-130.20.40
+        name: Manage Collections and Recoveries
+        level: 3
+        description: >-
+          Manage delinquent loans through collections, restructuring, and recovery actions.
+        realizes_capability_ids: []
+        children: []
   - id: BP-130.30
     name: Manage Card Operations
     level: 2
     description: >-
       Operate credit, debit, and prepaid card programs: issuance, authorisation, clearing, settlement, and disputes.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-130.30.10
+        name: Issue and Manage Cards
+        level: 3
+        description: >-
+          Onboard cardholders; issue, replace, and maintain physical and virtual cards.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-130.30.20
+        name: Authorise, Clear, and Settle Card Transactions
+        level: 3
+        description: >-
+          Operate card authorisation, clearing, and settlement across schemes.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-130.30.30
+        name: Manage Card Disputes and Chargebacks
+        level: 3
+        description: >-
+          Process cardholder disputes and chargebacks per scheme rules.
+        realizes_capability_ids:
+          - BC-430
+        children: []
   - id: BP-130.40
     name: Manage Payment Operations
     level: 2
     description: >-
       Process domestic and cross-border payments across rails (ACH, wire, RTGS, instant payments, SWIFT).
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-130.40.10
+        name: Initiate and Validate Payments
+        level: 3
+        description: >-
+          Capture payment instructions across channels; perform validation, sanctions screening, and AML checks.
+        realizes_capability_ids:
+          - BC-130
+        children: []
+      - id: BP-130.40.20
+        name: Route and Execute Payments
+        level: 3
+        description: >-
+          Route payments to appropriate rails (ACH, wire, RTGS, instant) and execute settlement.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-130.40.30
+        name: Reconcile and Investigate Payments
+        level: 3
+        description: >-
+          Reconcile payment flows and investigate exceptions, returns, and recalls.
+        realizes_capability_ids: []
+        children: []
   - id: BP-130.50
     name: Manage Trade Finance Operations
     level: 2
     description: >-
       Operate trade-finance products: letters of credit, documentary collections, supply-chain finance, guarantees.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-130.50.10
+        name: Issue Trade Finance Instruments
+        level: 3
+        description: >-
+          Issue letters of credit, guarantees, and bonds against approved facilities.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-130.50.20
+        name: Manage Trade Documents and Discrepancies
+        level: 3
+        description: >-
+          Examine trade documents under UCP 600; manage discrepancies and authorisations to pay.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-130.50.30
+        name: Operate Supply-Chain Finance and Receivables
+        level: 3
+        description: >-
+          Operate supplier-finance and receivables-finance programs.
+        realizes_capability_ids: []
+        children: []
   - id: BP-130.60
     name: Manage Banking Customer Servicing
     level: 2
@@ -53,13 +169,61 @@ children:
     realizes_capability_ids:
       - BC-430
       - BC-420
-    children: []
+    children:
+      - id: BP-130.60.10
+        name: Resolve Customer Inquiries and Servicing Requests
+        level: 3
+        description: >-
+          Receive and resolve customer inquiries and service requests across channels.
+        realizes_capability_ids:
+          - BC-430
+        children: []
+      - id: BP-130.60.20
+        name: Manage Customer Complaints and Disputes
+        level: 3
+        description: >-
+          Process and resolve customer complaints and disputes; manage regulatory complaint reporting.
+        realizes_capability_ids:
+          - BC-430
+        children: []
+      - id: BP-130.60.30
+        name: Manage Account Maintenance
+        level: 3
+        description: >-
+          Process account maintenance: contact updates, beneficiary changes, joint-account changes.
+        realizes_capability_ids:
+          - BC-420
+        children: []
   - id: BP-130.70
     name: Manage Banking Channels and Distribution
     level: 2
     description: >-
-      Operate banking distribution channels: branch network, ATM estate, call centre, digital channels, and partner / introducer channels. Aligned to BIAN's Customer & Channel category.
+      Operate banking distribution channels: branch network, ATM estate, call centre, digital, partner introducers (BIAN Customer & Channel category).
     realizes_capability_ids:
       - BC-410
       - BC-420
-    children: []
+    children:
+      - id: BP-130.70.10
+        name: Operate Branch Network
+        level: 3
+        description: >-
+          Operate physical branch network and in-branch services.
+        realizes_capability_ids:
+          - BC-700
+        children: []
+      - id: BP-130.70.20
+        name: Operate ATM and Self-Service Estate
+        level: 3
+        description: >-
+          Operate ATMs and self-service banking infrastructure.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-130.70.30
+        name: Operate Digital and Mobile Banking Channels
+        level: 3
+        description: >-
+          Operate digital and mobile banking channels including authentication and digital onboarding.
+        realizes_capability_ids:
+          - BC-600
+          - BC-620
+        children: []

@@ -17,7 +17,40 @@ children:
       Execute trades across asset classes: equities, fixed income, FX, commodities, derivatives.
     realizes_capability_ids:
       - BC-210
-    children: []
+    children:
+      - id: BP-140.10.10
+        name: Capture and Validate Trade Orders
+        level: 3
+        description: >-
+          Receive trade orders across channels; validate against limits and pre-trade controls.
+        realizes_capability_ids:
+          - BC-210
+          - BC-120
+        children: []
+      - id: BP-140.10.20
+        name: Execute Trades
+        level: 3
+        description: >-
+          Execute trades on exchanges, MTFs, and OTC counterparties across asset classes.
+        realizes_capability_ids:
+          - BC-210
+        children: []
+      - id: BP-140.10.30
+        name: Manage Trade Allocation and Confirmation
+        level: 3
+        description: >-
+          Allocate executed trades to client accounts; confirm trades with counterparties.
+        realizes_capability_ids:
+          - BC-210
+        children: []
+      - id: BP-140.10.40
+        name: Manage Position and Trading Risk
+        level: 3
+        description: >-
+          Manage intraday and end-of-day positions; monitor market and credit risk on trading book.
+        realizes_capability_ids:
+          - BC-120
+        children: []
   - id: BP-140.20
     name: Manage Clearing and Settlement
     level: 2
@@ -25,7 +58,31 @@ children:
       Clear and settle trades through central counterparties and bilateral mechanisms.
     realizes_capability_ids:
       - BC-210
-    children: []
+    children:
+      - id: BP-140.20.10
+        name: Clear Trades through CCPs
+        level: 3
+        description: >-
+          Submit trades to central counterparties; manage margin and default-fund contributions.
+        realizes_capability_ids:
+          - BC-210
+        children: []
+      - id: BP-140.20.20
+        name: Settle Trades
+        level: 3
+        description: >-
+          Settle trades through CSDs and correspondent banks; manage delivery-vs-payment.
+        realizes_capability_ids:
+          - BC-210
+        children: []
+      - id: BP-140.20.30
+        name: Manage Settlement Failures and Buy-Ins
+        level: 3
+        description: >-
+          Manage failed settlements and CSDR buy-in obligations.
+        realizes_capability_ids:
+          - BC-210
+        children: []
   - id: BP-140.30
     name: Manage Custody Operations
     level: 2
@@ -33,7 +90,32 @@ children:
       Hold and safekeep client securities; process corporate actions and income.
     realizes_capability_ids:
       - BC-210
-    children: []
+    children:
+      - id: BP-140.30.10
+        name: Hold Client Securities in Custody
+        level: 3
+        description: >-
+          Maintain client securities holdings in custody and sub-custody networks.
+        realizes_capability_ids:
+          - BC-210
+        children: []
+      - id: BP-140.30.20
+        name: Process Corporate Actions
+        level: 3
+        description: >-
+          Process voluntary and mandatory corporate actions; communicate with clients.
+        realizes_capability_ids:
+          - BC-210
+        children: []
+      - id: BP-140.30.30
+        name: Process Income and Tax
+        level: 3
+        description: >-
+          Collect and credit dividends, coupons, and other income; apply withholding tax and tax reclaims.
+        realizes_capability_ids:
+          - BC-210
+          - BC-220
+        children: []
   - id: BP-140.40
     name: Manage Asset Servicing
     level: 2
@@ -41,7 +123,33 @@ children:
       Service investment products: corporate actions, dividend processing, proxy voting, tax reclaim.
     realizes_capability_ids:
       - BC-210
-    children: []
+    children:
+      - id: BP-140.40.10
+        name: Manage Proxy Voting and Shareholder Communications
+        level: 3
+        description: >-
+          Receive and process proxy voting instructions; communicate shareholder events.
+        realizes_capability_ids:
+          - BC-210
+        children: []
+      - id: BP-140.40.20
+        name: Manage Fund Accounting and NAV
+        level: 3
+        description: >-
+          Calculate and publish fund net-asset values; manage fund expenses and accruals.
+        realizes_capability_ids:
+          - BC-200
+          - BC-210
+        children: []
+      - id: BP-140.40.30
+        name: Manage Investor Reporting
+        level: 3
+        description: >-
+          Produce and distribute investor reports; manage transparency disclosures.
+        realizes_capability_ids:
+          - BC-240
+          - BC-210
+        children: []
   - id: BP-140.50
     name: Manage Securities Lending
     level: 2
@@ -49,4 +157,20 @@ children:
       Operate securities-lending programs and collateral management.
     realizes_capability_ids:
       - BC-210
-    children: []
+    children:
+      - id: BP-140.50.10
+        name: Lend Securities and Manage Collateral
+        level: 3
+        description: >-
+          Lend securities to borrowers; receive and manage collateral.
+        realizes_capability_ids:
+          - BC-210
+        children: []
+      - id: BP-140.50.20
+        name: Manage Recalls and Returns
+        level: 3
+        description: >-
+          Recall lent securities for corporate actions or sales; manage returns and substitutions.
+        realizes_capability_ids:
+          - BC-210
+        children: []
