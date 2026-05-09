@@ -1013,6 +1013,27 @@ Mirror of §9.8 for the BP layer. Each industry's process catalogue is anchored 
 - **HEDIS, NCQA Star Ratings, MLR (Medical Loss Ratio) reporting** — inform regulatory and quality-reporting processes specific to US health plans.
 - **HL7 / FHIR, X12 837/835** — inform health-claims data and provider-network data exchange; cited in `references[]`.
 
+#### Mining & Metals
+
+- **ICMM Mining Principles** *(updated December 2024)*. Industry standard from the International Council on Mining and Metals; informs the *content* of mining processes, especially safety, environmental, and tailings management. Anchors `BP-310` Operate Mining and Metals Lifecycle.
+- **CRIRSCO Reporting Standards (JORC, SAMREC, NI 43-101, PERC, SME)** — international family of resource and reserve reporting standards; cited at the BP2 for mineral exploration and resource definition.
+- **GISTM (Global Industry Standard on Tailings Management), ICMM Integrated Mine Closure Good Practice Guide (3rd Ed., February 2025)** — inform tailings-management and mine-closure processes.
+- **APQC has no published Mining-specific PCF** (as of May 2026); BP-310 is structured on ICMM lifecycle stages with cross-walks to APQC Cross-Industry where applicable.
+
+#### Real Estate
+
+- **OSCRE Industry Data Model (IDM)** *(Open Standards Consortium for Real Estate)*. Recognised global standard for real estate data exchange covering 130+ use cases across leasing, space management, facility management, and investment management. Anchors `BP-320` Operate Real Estate Asset and Property Management. Public summary: <https://www.oscre.org/>.
+- **RESO Data Dictionary** *(Real Estate Standards Organization)*. North American MLS data standard for residential real estate; informs `BP-330.10` Manage Real Estate Listing and Brokerage.
+- **IPMS (International Property Measurement Standards), RICS Standards, USPAP** — inform property-measurement, valuation, and appraisal processes; anchor `BP-330.40` Manage Real Estate Valuation and Appraisal.
+
+#### Public Sector & Government
+
+- **FEAF (Federal Enterprise Architecture Framework), v3 (US)**. Federal-government EA framework with Business Reference Model categorising government services. Anchors `BP-340` Manage Public Service and Benefit Delivery, `BP-350` Manage Public Sector Revenue and Compliance, `BP-360` Manage Public Sector Programs and Funding.
+- **TOGAF Government Reference Model**, **OMB Circulars (A-11, A-123, A-130)** — inform US-federal program and budget management processes.
+- **IPSAS (International Public Sector Accounting Standards), GFSM (IMF Government Finance Statistics Manual), COFOG (UN Classification of Functions of Government)** — inform public-sector financial and statistical reporting processes.
+- **FAR (US Federal Acquisition Regulation), EU Procurement Directives** — inform `BP-360.10` Manage Public-Sector Procurement.
+- **NIST SP 800-53** *(US federal cybersecurity controls)* — informs IT-related public-sector compliance processes.
+
 #### How to add a new industry's process catalogue
 
 Same workflow as adding a new BC industry under §9.8:
