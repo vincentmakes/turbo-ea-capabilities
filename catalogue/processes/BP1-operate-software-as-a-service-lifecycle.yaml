@@ -15,43 +15,132 @@ children:
     name: Manage SaaS Product Lifecycle
     level: 2
     description: >-
-      Operate SaaS product lifecycle: roadmap, feature flags, beta/GA cycles, deprecation, and EOL.
+      Operate SaaS product lifecycle: roadmap, feature flags, beta/GA cycles, deprecation, EOL.
     realizes_capability_ids:
       - BC-820
-    children: []
+    children:
+      - id: BP-420.10.10
+        name: Manage SaaS Roadmap and Release Trains
+        level: 3
+        description: >-
+          Manage product roadmap and release trains.
+        realizes_capability_ids:
+          - BC-820
+        children: []
+      - id: BP-420.10.20
+        name: Operate Feature Flags and Experimentation
+        level: 3
+        description: >-
+          Operate feature flags, A/B testing, and progressive rollouts.
+        realizes_capability_ids:
+          - BC-820
+        children: []
   - id: BP-420.20
     name: Manage Subscription and Trial Lifecycle
     level: 2
     description: >-
-      Operate trial, conversion, subscription, expansion, contraction, and cancellation events.
+      Operate trial, conversion, subscription, expansion, contraction, cancellation.
     realizes_capability_ids:
       - BC-410
       - BC-440
-    children: []
+    children:
+      - id: BP-420.20.10
+        name: Manage Trials and Conversion
+        level: 3
+        description: >-
+          Run free/paid trial programs; convert to paid.
+        realizes_capability_ids:
+          - BC-410
+        children: []
+      - id: BP-420.20.20
+        name: Manage Subscription Lifecycle Events
+        level: 3
+        description: >-
+          Process subscription start, change, pause, cancel.
+        realizes_capability_ids:
+          - BC-440
+        children: []
   - id: BP-420.30
     name: Manage Customer Onboarding and Adoption
     level: 2
     description: >-
-      Onboard customers; drive adoption of features and time-to-value; manage activation milestones.
+      Onboard customers; drive adoption and time-to-value.
     realizes_capability_ids:
       - BC-430
       - BC-420
-    children: []
+    children:
+      - id: BP-420.30.10
+        name: Onboard Customers
+        level: 3
+        description: >-
+          Onboard new customers through implementation milestones.
+        realizes_capability_ids:
+          - BC-430
+        children: []
+      - id: BP-420.30.20
+        name: Drive Adoption and Time-to-Value
+        level: 3
+        description: >-
+          Drive feature adoption, milestones, and time-to-value.
+        realizes_capability_ids:
+          - BC-420
+        children: []
   - id: BP-420.40
     name: Manage Customer Success and Renewal
     level: 2
     description: >-
-      Run customer-success programs; manage health scores, expansion, and renewals.
+      Run customer-success programs; manage health scores, expansion, renewals.
     realizes_capability_ids:
       - BC-420
       - BC-410
-    children: []
+    children:
+      - id: BP-420.40.10
+        name: Monitor Customer Health Signals
+        level: 3
+        description: >-
+          Monitor health scores; identify risk and expansion opportunities.
+        realizes_capability_ids:
+          - BC-420
+        children: []
+      - id: BP-420.40.20
+        name: Drive Expansion and Renewal
+        level: 3
+        description: >-
+          Drive expansion (upsell/cross-sell) and renewal.
+        realizes_capability_ids:
+          - BC-410
+        children: []
   - id: BP-420.50
     name: Operate Cloud and Tenant Operations
     level: 2
     description: >-
-      Operate multi-tenant SaaS infrastructure: provisioning, isolation, capacity, observability, SRE/incident response.
+      Operate multi-tenant SaaS infrastructure: provisioning, capacity, observability, SRE.
     realizes_capability_ids:
       - BC-600
       - BC-620
-    children: []
+    children:
+      - id: BP-420.50.10
+        name: Provision and Isolate Tenants
+        level: 3
+        description: >-
+          Provision tenants; manage tenant isolation and quotas.
+        realizes_capability_ids:
+          - BC-600
+        children: []
+      - id: BP-420.50.20
+        name: Operate SRE and Incident Response
+        level: 3
+        description: >-
+          Operate SRE practices and incident response.
+        realizes_capability_ids:
+          - BC-600
+          - BC-160
+        children: []
+      - id: BP-420.50.30
+        name: Operate Observability and Capacity
+        level: 3
+        description: >-
+          Operate observability, telemetry, and capacity management.
+        realizes_capability_ids:
+          - BC-600
+        children: []

@@ -279,6 +279,347 @@ TREE.append(("BP-310", "Operate Mining and Metals Lifecycle",
 ))
 
 
+
+# ============ Media (BP-390) ============
+TREE.append(("BP-390", "Develop, Produce, and Distribute Content",
+    "Media, Entertainment & Telecom Content",
+    "Run media-industry operations: content development and greenlight, production, rights and IP, distribution and syndication, advertising/subscription, audience measurement.",
+    "Broadcasting/Media PCF v7.2.x + MovieLabs Common Workflow + SMPTE/EBU/DPP",
+    ["BC-100"],
+    [
+        ("BP-390.10", "Develop and Greenlight Content", "Source, evaluate, and greenlight content concepts; manage development slate.", ["BC-800"], [
+            ("BP-390.10.10", "Source and Evaluate Content Ideas", "Source content ideas; conduct creative development.", ["BC-800"]),
+            ("BP-390.10.20", "Greenlight Content for Production", "Conduct greenlight reviews; commit to production.", ["BC-800"]),
+        ]),
+        ("BP-390.20", "Produce Content", "Plan, execute, post-produce content (film, TV, audio, news).", [], [
+            ("BP-390.20.10", "Plan Pre-Production", "Plan pre-production: scripts, casting, location, scheduling.", []),
+            ("BP-390.20.20", "Execute Principal Production", "Execute principal photography or recording.", []),
+            ("BP-390.20.30", "Conduct Post-Production and Mastering", "Conduct editing, VFX, sound, color, and mastering.", []),
+        ]),
+        ("BP-390.30", "Manage Rights and IP", "Acquire, register, and administer content rights; manage chain of title.", ["BC-840"], [
+            ("BP-390.30.10", "Acquire and Register Rights", "Acquire and register content rights and chain of title.", ["BC-840"]),
+            ("BP-390.30.20", "License Rights to/from Third Parties", "License rights inbound and outbound.", ["BC-840"]),
+        ]),
+        ("BP-390.40", "Distribute and Syndicate Content", "Distribute content across linear, OTT, theatrical, home-entertainment, syndication channels.", ["BC-520"], [
+            ("BP-390.40.10", "Schedule and Place Content", "Schedule content; place in catalogue.", []),
+            ("BP-390.40.20", "Distribute via Linear and OTT", "Distribute via linear broadcast, OTT, and streaming.", ["BC-520"]),
+            ("BP-390.40.30", "Manage Theatrical and Home-Entertainment Releases", "Manage theatrical, home-entertainment, and syndication windows.", []),
+        ]),
+        ("BP-390.50", "Operate Advertising Sales and Subscription", "Sell advertising inventory and operate subscription services.", ["BC-410", "BC-420"], [
+            ("BP-390.50.10", "Sell Advertising Inventory", "Sell advertising inventory across linear and digital.", ["BC-410"]),
+            ("BP-390.50.20", "Operate Ad Trafficking and Delivery", "Traffic creative; deliver and verify ad impressions.", []),
+            ("BP-390.50.30", "Operate Subscription Services", "Operate subscription billing and member servicing.", ["BC-420"]),
+        ]),
+        ("BP-390.60", "Manage Audience Measurement and Analytics", "Capture and analyse audience data for monetisation and programming decisions.", ["BC-610"], [
+            ("BP-390.60.10", "Capture Audience Telemetry", "Capture viewing telemetry across linear, OTT, and ad delivery.", ["BC-610"]),
+            ("BP-390.60.20", "Analyse Audience and Performance", "Analyse audience metrics and content performance.", ["BC-610"]),
+        ]),
+    ],
+))
+
+# ============ Professional Services (BP-400) ============
+TREE.append(("BP-400", "Operate Professional Services Engagements",
+    "Professional Services",
+    "Run professional-services engagements end-to-end: opportunity, engagement planning, delivery, billing/realisation, knowledge reuse, talent management.",
+    "Consulting/Professional Services PCF v7.2.x + CMMI-SVC v2.0 + SPI",
+    ["BC-100"],
+    [
+        ("BP-400.10", "Manage Engagement Lifecycle", "Run engagement lifecycle: opportunity, proposal, planning, delivery, change, closeout.", ["BC-410", "BC-900"], [
+            ("BP-400.10.10", "Pursue Opportunities and Submit Proposals", "Pursue opportunities; develop and submit proposals.", ["BC-410"]),
+            ("BP-400.10.20", "Plan and Mobilise Engagements", "Plan engagements; mobilise teams and resources.", ["BC-900"]),
+            ("BP-400.10.30", "Deliver and Manage Engagement Change", "Deliver engagements; manage scope changes.", ["BC-900"]),
+            ("BP-400.10.40", "Close Out Engagements", "Close out engagements with deliverables and lessons learned.", []),
+        ]),
+        ("BP-400.20", "Manage Resource and Talent", "Plan, allocate, and develop the professional workforce.", ["BC-300"], [
+            ("BP-400.20.10", "Plan and Allocate Resources", "Plan resource demand; allocate consultants to engagements.", ["BC-300"]),
+            ("BP-400.20.20", "Develop Skills and Capabilities", "Develop staff skills, certifications, and capabilities.", ["BC-300"]),
+        ]),
+        ("BP-400.30", "Manage Client Relationships and Accounts", "Run account management for client portfolios.", ["BC-420", "BC-410"], [
+            ("BP-400.30.10", "Manage Key Accounts", "Manage strategic and key accounts.", ["BC-420"]),
+            ("BP-400.30.20", "Manage Cross-Sell and Renewal", "Drive cross-sell and renewal in client accounts.", ["BC-410"]),
+        ]),
+        ("BP-400.40", "Manage Knowledge Reuse and Methodology", "Capture engagement knowledge; develop methodologies and reusable assets.", ["BC-830"], [
+            ("BP-400.40.10", "Capture and Curate Engagement Knowledge", "Capture engagement assets; sanitise and curate.", ["BC-830"]),
+            ("BP-400.40.20", "Develop Methodologies and IP", "Develop firm methodologies and IP for reuse.", ["BC-830", "BC-840"]),
+        ]),
+        ("BP-400.50", "Manage Engagement Quality and Risk", "Run engagement-level QA, peer review, risk management; manage independence and conflict checks.", ["BC-720", "BC-120"], [
+            ("BP-400.50.10", "Conduct Independence and Conflict Checks", "Conduct independence, conflict, and ethics checks at engagement acceptance.", ["BC-150", "BC-130"]),
+            ("BP-400.50.20", "Conduct Engagement Peer Review and QA", "Conduct engagement-level peer review and QA.", ["BC-720"]),
+        ]),
+    ],
+))
+
+# ============ Software & Technology (BP-420) ============
+TREE.append(("BP-420", "Operate Software-as-a-Service Lifecycle",
+    "Software & Technology",
+    "Run SaaS-specific operations: product lifecycle, subscription/trial lifecycle, customer onboarding, customer success and renewal, cloud and tenant operations.",
+    "TSIA frameworks + ITIL 4 + DORA capability model + DevOps/SRE practices",
+    ["BC-820", "BC-600"],
+    [
+        ("BP-420.10", "Manage SaaS Product Lifecycle", "Operate SaaS product lifecycle: roadmap, feature flags, beta/GA cycles, deprecation, EOL.", ["BC-820"], [
+            ("BP-420.10.10", "Manage SaaS Roadmap and Release Trains", "Manage product roadmap and release trains.", ["BC-820"]),
+            ("BP-420.10.20", "Operate Feature Flags and Experimentation", "Operate feature flags, A/B testing, and progressive rollouts.", ["BC-820"]),
+        ]),
+        ("BP-420.20", "Manage Subscription and Trial Lifecycle", "Operate trial, conversion, subscription, expansion, contraction, cancellation.", ["BC-410", "BC-440"], [
+            ("BP-420.20.10", "Manage Trials and Conversion", "Run free/paid trial programs; convert to paid.", ["BC-410"]),
+            ("BP-420.20.20", "Manage Subscription Lifecycle Events", "Process subscription start, change, pause, cancel.", ["BC-440"]),
+        ]),
+        ("BP-420.30", "Manage Customer Onboarding and Adoption", "Onboard customers; drive adoption and time-to-value.", ["BC-430", "BC-420"], [
+            ("BP-420.30.10", "Onboard Customers", "Onboard new customers through implementation milestones.", ["BC-430"]),
+            ("BP-420.30.20", "Drive Adoption and Time-to-Value", "Drive feature adoption, milestones, and time-to-value.", ["BC-420"]),
+        ]),
+        ("BP-420.40", "Manage Customer Success and Renewal", "Run customer-success programs; manage health scores, expansion, renewals.", ["BC-420", "BC-410"], [
+            ("BP-420.40.10", "Monitor Customer Health Signals", "Monitor health scores; identify risk and expansion opportunities.", ["BC-420"]),
+            ("BP-420.40.20", "Drive Expansion and Renewal", "Drive expansion (upsell/cross-sell) and renewal.", ["BC-410"]),
+        ]),
+        ("BP-420.50", "Operate Cloud and Tenant Operations", "Operate multi-tenant SaaS infrastructure: provisioning, capacity, observability, SRE.", ["BC-600", "BC-620"], [
+            ("BP-420.50.10", "Provision and Isolate Tenants", "Provision tenants; manage tenant isolation and quotas.", ["BC-600"]),
+            ("BP-420.50.20", "Operate SRE and Incident Response", "Operate SRE practices and incident response.", ["BC-600", "BC-160"]),
+            ("BP-420.50.30", "Operate Observability and Capacity", "Operate observability, telemetry, and capacity management.", ["BC-600"]),
+        ]),
+    ],
+))
+
+# ============ Air Traffic Control (BP-430) ============
+TREE.append(("BP-430", "Operate Air Traffic Management",
+    "Air Traffic Control",
+    "Run air-navigation-service-provider operations: airspace management, flight data, ATC services, CNS, aeronautical information, safety.",
+    "ICAO Doc 4444 + ICAO Doc 9750 + EUROCONTROL ATM Master Plan + FAA Order 7110.65 + CANSO",
+    ["BC-100"],
+    [
+        ("BP-430.10", "Manage Airspace and Air Traffic Flow", "Plan and manage airspace structure, sectors, and traffic flow.", [], [
+            ("BP-430.10.10", "Manage Airspace Structure", "Maintain airspace structure, sectors, and routes.", []),
+            ("BP-430.10.20", "Manage Air Traffic Flow", "Plan and execute air traffic flow management.", []),
+        ]),
+        ("BP-430.20", "Manage Flight Data and Plan", "Receive, validate, distribute, and update flight plans.", [], [
+            ("BP-430.20.10", "Receive and Validate Flight Plans", "Receive and validate ICAO/national flight plans.", []),
+            ("BP-430.20.20", "Distribute Flight Data", "Distribute flight data to controllers and adjacent ANSPs.", []),
+        ]),
+        ("BP-430.30", "Provide Air Traffic Control Services", "Provide tower, approach, and en-route ATC services.", [], [
+            ("BP-430.30.10", "Provide Tower Control", "Provide aerodrome / tower ATC services.", []),
+            ("BP-430.30.20", "Provide Approach and En-Route Control", "Provide approach and en-route ATC services.", []),
+            ("BP-430.30.30", "Manage Separation and Conflict Resolution", "Maintain separation; resolve conflicts.", []),
+        ]),
+        ("BP-430.40", "Manage CNS Infrastructure", "Operate CNS infrastructure supporting ATC services.", ["BC-700", "BC-600"], [
+            ("BP-430.40.10", "Operate Communications and Surveillance", "Operate VHF/data link/radar/ADS-B systems.", ["BC-700", "BC-600"]),
+            ("BP-430.40.20", "Operate Navigation Aids", "Operate ground-based and satellite navigation aids.", ["BC-700"]),
+        ]),
+        ("BP-430.50", "Manage Aeronautical Information", "Capture, validate, and publish aeronautical information.", ["BC-610"], [
+            ("BP-430.50.10", "Maintain AIP and Charts", "Maintain Aeronautical Information Publication and charts.", ["BC-610"]),
+            ("BP-430.50.20", "Issue NOTAMs and Updates", "Issue NOTAMs and updates to airspace users.", ["BC-610"]),
+        ]),
+        ("BP-430.60", "Manage Aviation Safety and Investigation", "Run ATM safety-management activities including occurrence reporting.", ["BC-720", "BC-160"], [
+            ("BP-430.60.10", "Operate Safety Management System", "Operate ATM SMS per ICAO Annex 19 / CANSO standards.", ["BC-720"]),
+            ("BP-430.60.20", "Investigate Safety Occurrences", "Investigate safety occurrences; produce just-culture findings.", ["BC-160"]),
+        ]),
+    ],
+))
+
+# ============ Engineering Services (BP-440) ============
+TREE.append(("BP-440", "Deliver Engineering and Construction Services",
+    "Engineering Services",
+    "Run engineering-services-firm operations: tendering and estimation, engineering design, construction execution, commissioning and handover.",
+    "ISO 19650 BIM + AIA Phases / RIBA Plan of Work + PMI Construction Extension to PMBOK",
+    ["BC-700", "BC-810"],
+    [
+        ("BP-440.10", "Manage Engineering Tendering and Estimation", "Pursue engineering opportunities; develop tenders, cost estimates, schedules.", ["BC-410"], [
+            ("BP-440.10.10", "Pursue Engineering Opportunities", "Pursue engineering opportunities; pre-qualify.", ["BC-410"]),
+            ("BP-440.10.20", "Develop Cost Estimates and Tenders", "Develop cost estimates and tenders.", ["BC-230"]),
+        ]),
+        ("BP-440.20", "Deliver Engineering Design", "Perform engineering design across disciplines; manage design coordination via BIM/CDE.", ["BC-810"], [
+            ("BP-440.20.10", "Perform Multi-Discipline Engineering Design", "Perform engineering design across disciplines.", ["BC-810"]),
+            ("BP-440.20.20", "Coordinate Design via BIM and CDE", "Coordinate design through BIM and CDE per ISO 19650.", ["BC-810"]),
+        ]),
+        ("BP-440.30", "Deliver Construction Execution", "Execute construction work to design and schedule; manage subcontractors, materials, HSE.", ["BC-700", "BC-900"], [
+            ("BP-440.30.10", "Manage Construction Subcontractors", "Manage subcontractor packages and execution.", ["BC-510"]),
+            ("BP-440.30.20", "Execute Construction Work", "Execute construction to design and schedule.", ["BC-700", "BC-900"]),
+            ("BP-440.30.30", "Manage Construction HSE", "Manage construction HSE per industry standards.", ["BC-730"]),
+        ]),
+        ("BP-440.40", "Manage Commissioning and Handover", "Commission and validate engineered assets; manage handover with as-built documentation.", ["BC-720", "BC-700"], [
+            ("BP-440.40.10", "Commission Assets", "Commission and validate engineered assets.", ["BC-720"]),
+            ("BP-440.40.20", "Hand Over to Operations", "Hand over to operations with as-built documentation.", ["BC-700"]),
+        ]),
+        ("BP-440.50", "Manage Engineering Document and Configuration", "Maintain engineering documents, drawings, configuration baselines.", ["BC-820", "BC-610"], [
+            ("BP-440.50.10", "Manage Engineering Documents", "Manage engineering documents across project lifecycle.", ["BC-820", "BC-610"]),
+            ("BP-440.50.20", "Manage Engineering Configuration", "Manage engineering configuration baselines and changes.", ["BC-820", "BC-910"]),
+        ]),
+    ],
+))
+
+# ============ HVAC & BAS (BP-450) ============
+TREE.append(("BP-450", "Operate HVAC and Building Automation Lifecycle",
+    "HVAC & Building Automation Systems",
+    "Run HVAC and building-automation operations: product development, installation/commissioning, operations, refrigerant-lifecycle management.",
+    "ASHRAE + BACnet/KNX + AHRI + EU F-Gas / EPA 608",
+    ["BC-820"],
+    [
+        ("BP-450.10", "Develop HVAC and BAS Products", "Develop HVAC equipment and BAS solutions; obtain certifications.", ["BC-810", "BC-820"], [
+            ("BP-450.10.10", "Engineer HVAC Equipment", "Engineer HVAC equipment to ASHRAE standards.", ["BC-810"]),
+            ("BP-450.10.20", "Develop BAS Solutions", "Develop BAS solutions per BACnet/KNX standards.", ["BC-820"]),
+            ("BP-450.10.30", "Obtain AHRI and Energy Certifications", "Obtain AHRI certification and energy ratings.", ["BC-720"]),
+        ]),
+        ("BP-450.20", "Manage HVAC Installation and Commissioning", "Install HVAC and BAS; commission per ASHRAE Guideline 0/1.1/1.2.", ["BC-700", "BC-720"], [
+            ("BP-450.20.10", "Install HVAC and BAS Equipment", "Install HVAC and BAS equipment per design.", ["BC-700"]),
+            ("BP-450.20.20", "Commission per ASHRAE Guideline", "Commission per ASHRAE Guideline 0/1.1/1.2.", ["BC-720"]),
+        ]),
+        ("BP-450.30", "Operate Building Automation", "Operate BAS for HVAC, lighting, and other building systems.", ["BC-700"], [
+            ("BP-450.30.10", "Manage BAS Setpoints and Schedules", "Manage BAS setpoints, schedules, and control sequences.", ["BC-700"]),
+            ("BP-450.30.20", "Monitor and Optimise Energy Performance", "Monitor and optimise building energy performance.", ["BC-700", "BC-740"]),
+        ]),
+        ("BP-450.40", "Manage Refrigerant Lifecycle", "Capture, recover, and reclaim refrigerants per F-Gas / EPA 608.", ["BC-740", "BC-130"], [
+            ("BP-450.40.10", "Manage Refrigerant Inventory and Quotas", "Manage refrigerant inventory and EU F-Gas quotas.", ["BC-130", "BC-530"]),
+            ("BP-450.40.20", "Recover and Reclaim Refrigerants", "Recover and reclaim refrigerants per regulations.", ["BC-740"]),
+            ("BP-450.40.30", "Manage Phase-Down Substitution", "Manage phase-down substitution to lower-GWP refrigerants.", ["BC-740"]),
+        ]),
+    ],
+))
+
+# ============ Electrical Components (BP-460) ============
+TREE.append(("BP-460", "Develop and Operate Electrical Equipment",
+    "Electrical Components & Equipment",
+    "Run electrical-equipment-industry operations: electrical/electronic product development, type approval and certification, component lifecycle, distributor and broker network.",
+    "IEC + IPC + UL + IATF 16949",
+    ["BC-820"],
+    [
+        ("BP-460.10", "Develop Electrical and Electronic Products", "Design and develop electrical/electronic products; manage HW-SW co-design and EMC.", ["BC-810", "BC-820"], [
+            ("BP-460.10.10", "Develop Hardware Designs", "Develop hardware designs for electrical/electronic products.", ["BC-810"]),
+            ("BP-460.10.20", "Develop Embedded Software and Firmware", "Develop embedded software and firmware.", ["BC-810", "BC-600"]),
+            ("BP-460.10.30", "Manage EMC and Functional Safety", "Manage EMC and functional safety per IEC 61508.", ["BC-720"]),
+        ]),
+        ("BP-460.20", "Manage Type Approval and Certification", "Obtain product certifications; manage compliance throughout lifecycle.", ["BC-720", "BC-130"], [
+            ("BP-460.20.10", "Obtain Product Certifications", "Obtain UL, CE, IEC certifications and agency marks.", ["BC-720", "BC-130"]),
+            ("BP-460.20.20", "Maintain Certification Compliance", "Maintain certification compliance through lifecycle.", ["BC-130"]),
+        ]),
+        ("BP-460.30", "Manage Component Lifecycle and Obsolescence", "Manage PCN, EOL, last-time-buy windows, replacement migration.", ["BC-820"], [
+            ("BP-460.30.10", "Issue Product Change Notifications", "Issue PCNs to customers and channel.", ["BC-820"]),
+            ("BP-460.30.20", "Manage End-of-Life and Last-Time Buy", "Manage EOL and last-time-buy windows.", ["BC-820", "BC-530"]),
+        ]),
+        ("BP-460.40", "Manage Distributor and Broker Network", "Onboard and manage authorised distributors and brokers; manage counterfeit risk.", ["BC-510", "BC-410"], [
+            ("BP-460.40.10", "Onboard Authorised Distributors", "Onboard and qualify authorised distributors.", ["BC-510"]),
+            ("BP-460.40.20", "Manage Counterfeit and Grey-Market Risk", "Manage counterfeit and grey-market component risk.", ["BC-720", "BC-120"]),
+        ]),
+    ],
+))
+
+# ============ Manufacturing & Industrial (BP-470) ============
+TREE.append(("BP-470", "Operate Manufacturing and Industrial Operations",
+    "Manufacturing & Industrial",
+    "Run manufacturing-specific specialisations: discrete and process manufacturing, manufacturing maintenance (TPM), industrial automation / OT.",
+    "ISA-95 (IEC 62264) MOM + APQC Cross-Industry PCF + TPM/OEE + MESA MOM Model + IEC 62443",
+    ["BC-520"],
+    [
+        ("BP-470.10", "Operate Discrete Manufacturing", "Run discrete manufacturing per ISA-95 Level 3 MOM.", ["BC-520", "BC-720"], [
+            ("BP-470.10.10", "Schedule and Dispatch Production", "Schedule and dispatch production orders to shop floor.", ["BC-520"]),
+            ("BP-470.10.20", "Execute Discrete Production", "Execute assembly, machining, fabrication operations.", ["BC-520"]),
+            ("BP-470.10.30", "Manage Quality and Traceability", "Manage in-process quality and lot/serial traceability.", ["BC-720", "BC-610"]),
+        ]),
+        ("BP-470.20", "Operate Process Manufacturing", "Run process manufacturing (continuous, batch).", ["BC-520", "BC-720"], [
+            ("BP-470.20.10", "Manage Recipes and Batch Records", "Manage recipes and batch records per S88.", ["BC-820"]),
+            ("BP-470.20.20", "Execute Process Manufacturing", "Execute continuous and batch process operations.", ["BC-520"]),
+        ]),
+        ("BP-470.30", "Manage Manufacturing Maintenance", "Run TPM and maintenance programs across plant assets; track OEE and reliability.", ["BC-700", "BC-720"], [
+            ("BP-470.30.10", "Operate Preventive and Corrective Maintenance", "Operate planned, preventive, and corrective maintenance.", ["BC-700"]),
+            ("BP-470.30.20", "Track OEE and Reliability", "Track OEE; drive reliability improvements.", ["BC-700", "BC-720"]),
+        ]),
+        ("BP-470.40", "Operate Industrial Automation and OT", "Operate industrial automation systems and OT cybersecurity per IEC 62443.", ["BC-600", "BC-620"], [
+            ("BP-470.40.10", "Operate SCADA / MES / HMI", "Operate SCADA, MES, and HMI systems on plant floor.", ["BC-600"]),
+            ("BP-470.40.20", "Manage OT Cybersecurity", "Manage OT cybersecurity per IEC 62443.", ["BC-620", "BC-600"]),
+        ]),
+    ],
+))
+
+# ============ Agriculture & Food Production (BP-480) ============
+TREE.append(("BP-480", "Operate Agriculture and Food Production",
+    "Agriculture & Food Production",
+    "Run agriculture and food-production operations: crop and livestock production, food processing and manufacturing, farm-to-market supply chain, food-safety.",
+    "Food & Beverage PCF v7.2.x + GLOBALG.A.P. + FSMA / EU 178/2002 + ISO 22000",
+    ["BC-520"],
+    [
+        ("BP-480.10", "Manage Crop Production", "Run crop production: planning, planting, crop protection, irrigation, harvest.", [], [
+            ("BP-480.10.10", "Plan and Plant Crops", "Plan crop rotations; plant per agronomic plan.", []),
+            ("BP-480.10.20", "Manage Crop Protection and Irrigation", "Apply crop-protection products; manage irrigation.", []),
+            ("BP-480.10.30", "Conduct Harvest", "Conduct harvest; manage yield and quality.", []),
+        ]),
+        ("BP-480.20", "Manage Livestock Production", "Run livestock production: breeding, husbandry, animal health, welfare.", [], [
+            ("BP-480.20.10", "Manage Breeding and Genetics", "Manage breeding programs and genetics.", []),
+            ("BP-480.20.20", "Manage Animal Health and Welfare", "Manage animal health, vaccination, and welfare.", ["BC-730"]),
+        ]),
+        ("BP-480.30", "Operate Food Processing and Manufacturing", "Run food processing under HACCP / FSSC 22000.", ["BC-520", "BC-720"], [
+            ("BP-480.30.10", "Operate HACCP and Food-Safety Programs", "Operate HACCP plans and food-safety programs.", ["BC-720"]),
+            ("BP-480.30.20", "Execute Food Manufacturing", "Execute food manufacturing operations.", ["BC-520"]),
+            ("BP-480.30.30", "Manage Allergen and Hygiene Controls", "Manage allergen segregation and hygienic operations.", ["BC-720", "BC-730"]),
+        ]),
+        ("BP-480.40", "Manage Farm-to-Market Supply Chain and Traceability", "Operate farm-to-market supply chains; maintain traceability for recall and food-safety.", ["BC-520", "BC-130"], [
+            ("BP-480.40.10", "Operate Farm-to-Market Logistics", "Operate cold-chain and bulk-commodity logistics.", ["BC-520"]),
+            ("BP-480.40.20", "Maintain End-to-End Traceability", "Maintain product traceability for recalls and food-safety reporting.", ["BC-610", "BC-130"]),
+        ]),
+    ],
+))
+
+# ============ Chemicals (BP-490) ============
+TREE.append(("BP-490", "Operate Chemical Manufacturing and Compliance",
+    "Chemicals",
+    "Run chemical-industry operations: chemical product development, chemical manufacturing, hazardous-materials and REACH compliance, process safety, distribution.",
+    "REACH + GHS + ACC Responsible Care + OSHA PSM + EU Seveso III + ISO 9001/14001",
+    ["BC-520", "BC-130"],
+    [
+        ("BP-490.10", "Develop Chemical Products and Formulations", "Develop chemical products and formulations.", ["BC-810", "BC-820"], [
+            ("BP-490.10.10", "Conduct Chemical R&D and Synthesis Routes", "Conduct chemical R&D and develop synthesis routes.", ["BC-810"]),
+            ("BP-490.10.20", "Develop Specialty Formulations", "Develop specialty chemical formulations.", ["BC-810", "BC-820"]),
+            ("BP-490.10.30", "Manage Product Stewardship", "Manage product stewardship from R&D through end-of-life.", ["BC-820", "BC-740"]),
+        ]),
+        ("BP-490.20", "Operate Chemical Manufacturing", "Run continuous and batch chemical manufacturing.", ["BC-520", "BC-720"], [
+            ("BP-490.20.10", "Operate Continuous Chemical Manufacturing", "Operate continuous chemical manufacturing.", ["BC-520"]),
+            ("BP-490.20.20", "Operate Batch Chemical Manufacturing", "Operate batch chemical manufacturing.", ["BC-520"]),
+            ("BP-490.20.30", "Manage Chemical Quality", "Manage chemical product quality and specifications.", ["BC-720"]),
+        ]),
+        ("BP-490.30", "Manage Hazardous Materials and REACH Compliance", "Maintain REACH and equivalent registrations; manage SDS, GHS labelling.", ["BC-130"], [
+            ("BP-490.30.10", "Maintain REACH Registrations", "Maintain REACH registrations and authorisations.", ["BC-130"]),
+            ("BP-490.30.20", "Manage SDS and GHS Labelling", "Maintain SDS and GHS labels per jurisdiction.", ["BC-130"]),
+        ]),
+        ("BP-490.40", "Manage Process Safety and Major-Hazard Operations", "Operate PSM per OSHA / Seveso III; manage major-accident hazards.", ["BC-730", "BC-160"], [
+            ("BP-490.40.10", "Operate Process Safety Management", "Operate PSM per OSHA / Seveso III.", ["BC-730"]),
+            ("BP-490.40.20", "Manage Major-Accident Hazard Programs", "Manage major-accident hazard programs.", ["BC-160", "BC-730"]),
+        ]),
+        ("BP-490.50", "Manage Chemical Distribution and Logistics", "Operate hazmat-compliant chemical distribution.", ["BC-520"], [
+            ("BP-490.50.10", "Manage Hazmat Compliant Logistics", "Operate hazmat-compliant logistics per ADR/RID/IMDG.", ["BC-520", "BC-130"]),
+            ("BP-490.50.20", "Manage Chemical Distributor Network", "Manage chemical distributor and tolling network.", ["BC-510"]),
+        ]),
+    ],
+))
+
+# ============ Transportation & Logistics (BP-410) ============
+TREE.append(("BP-410", "Operate Transportation and Logistics Services",
+    "Transportation & Logistics",
+    "Operate transportation and logistics services across modes: network planning, freight movement, last-mile delivery, returns/reverse logistics, freight forwarding and customs.",
+    "SCOR v14.0 + GS1 Global Logistics + UN/CEFACT MMT + IATA/IMO/AAR",
+    ["BC-520"],
+    [
+        ("BP-410.10", "Plan Transport Network and Capacity", "Design transport network, asset, and capacity plans.", ["BC-520"], [
+            ("BP-410.10.10", "Plan Network and Routing", "Plan transport network and routing.", ["BC-520"]),
+            ("BP-410.10.20", "Plan Capacity and Asset Utilisation", "Plan asset capacity and utilisation.", ["BC-520"]),
+        ]),
+        ("BP-410.20", "Operate Freight and Passenger Movement", "Execute movement across modes; manage dispatch, tracking, exceptions.", ["BC-520"], [
+            ("BP-410.20.10", "Dispatch and Track Movements", "Dispatch shipments; track in transit.", ["BC-520"]),
+            ("BP-410.20.20", "Operate Multi-Modal Carriage", "Execute carriage across road/rail/air/marine modes.", ["BC-520"]),
+            ("BP-410.20.30", "Manage Exceptions and Service Recovery", "Manage exceptions and service recovery.", ["BC-430", "BC-520"]),
+        ]),
+        ("BP-410.30", "Manage Last-Mile and Customer Delivery", "Plan and execute last-mile delivery.", ["BC-430", "BC-520"], [
+            ("BP-410.30.10", "Plan Last-Mile Routes", "Plan last-mile routes and delivery slots.", ["BC-520"]),
+            ("BP-410.30.20", "Execute Last-Mile Delivery", "Execute last-mile delivery to consignees.", ["BC-430", "BC-520"]),
+        ]),
+        ("BP-410.40", "Manage Freight Forwarding and Customs", "Operate freight forwarding, multi-modal coordination, customs/trade-compliance.", ["BC-130"], [
+            ("BP-410.40.10", "Coordinate Multi-Modal Forwarding", "Coordinate multi-modal forwarding for cross-border movements.", ["BC-520"]),
+            ("BP-410.40.20", "Manage Customs and Trade Compliance", "Manage customs entries and trade-compliance.", ["BC-130"]),
+        ]),
+        ("BP-410.50", "Manage Returns and Reverse Logistics", "Operate returns and reverse-logistics flows.", ["BC-520"], [
+            ("BP-410.50.10", "Process Returns Authorisations", "Process returns authorisations from customers.", ["BC-430", "BC-520"]),
+            ("BP-410.50.20", "Operate Reverse-Logistics Flows", "Operate reverse-logistics for repairs, recalls, disposal.", ["BC-520"]),
+        ]),
+    ],
+))
+
+
 def emit(t):
     bp1_id, name, ind, desc, fwlabel, realizes, children = t
     L = []
