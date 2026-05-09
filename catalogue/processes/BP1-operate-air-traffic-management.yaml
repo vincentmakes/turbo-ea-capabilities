@@ -136,8 +136,9 @@ children:
     description: >-
       Run ATM safety-management activities including occurrence reporting.
     realizes_capability_ids:
-      - BC-720
       - BC-160
+      - BC-720
+      - BC-730
     children:
       - id: BP-430.60.10
         name: Operate Safety Management System
@@ -146,6 +147,7 @@ children:
           Operate ATM SMS per ICAO Annex 19 / CANSO standards.
         realizes_capability_ids:
           - BC-720
+          - BC-730
         children: []
       - id: BP-430.60.20
         name: Investigate Safety Occurrences
@@ -154,4 +156,5 @@ children:
           Investigate safety occurrences; produce just-culture findings.
         realizes_capability_ids:
           - BC-160
+          - BC-730
         children: []

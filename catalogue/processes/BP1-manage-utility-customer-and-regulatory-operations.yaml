@@ -16,6 +16,7 @@ children:
     description: >-
       Operate the meter estate; collect, validate, estimate, edit meter data.
     realizes_capability_ids:
+      - BC-420
       - BC-610
     children:
       - id: BP-270.10.10
@@ -106,8 +107,9 @@ children:
     description: >-
       Identify and support vulnerable customers and customers in hardship per regulatory obligations.
     realizes_capability_ids:
-      - BC-430
       - BC-130
+      - BC-420
+      - BC-430
     children:
       - id: BP-270.40.10
         name: Identify and Register Vulnerable Customers

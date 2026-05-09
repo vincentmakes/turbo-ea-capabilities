@@ -17,6 +17,7 @@ children:
       Plan and govern the portfolio of properties: asset strategy, hold/sell decisions, performance reporting.
     realizes_capability_ids:
       - BC-710
+      - BC-900
     children:
       - id: BP-320.10.10
         name: Develop Portfolio Strategy
@@ -25,6 +26,7 @@ children:
           Set the multi-year portfolio strategy: asset class mix, geographic mix, hold/sell criteria.
         realizes_capability_ids:
           - BC-710
+          - BC-900
         children: []
       - id: BP-320.10.20
         name: Conduct Asset-Level Hold/Sell Reviews
@@ -41,6 +43,7 @@ children:
           Produce portfolio performance reports for owners, partners, and lenders.
         realizes_capability_ids:
           - BC-230
+          - BC-900
         children: []
   - id: BP-320.20
     name: Manage Tenant Lease Lifecycle
@@ -68,7 +71,8 @@ children:
         level: 3
         description: >-
           Reconcile common-area maintenance, insurance, and tax pass-throughs annually.
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-220
         children: []
       - id: BP-320.20.40
         name: Manage Lease Renewals and Expirations
@@ -84,6 +88,7 @@ children:
       Run day-to-day property operations: tenant services, on-site management, vendor coordination, common-area facility management.
     realizes_capability_ids:
       - BC-700
+      - BC-710
     children:
       - id: BP-320.30.10
         name: Operate On-Site Property Management
@@ -92,6 +97,7 @@ children:
           Run on-site property management, including tenant relations and inspections.
         realizes_capability_ids:
           - BC-700
+          - BC-710
         children: []
       - id: BP-320.30.20
         name: Coordinate Property Vendors and Service Contracts
@@ -100,6 +106,7 @@ children:
           Source and manage property vendors (cleaning, security, landscaping, lift maintenance).
         realizes_capability_ids:
           - BC-510
+          - BC-710
         children: []
       - id: BP-320.30.30
         name: Manage Tenant Service Requests
@@ -116,6 +123,7 @@ children:
       Plan and deliver capital projects on owned property: tenant improvements, repositioning, refurbishment.
     realizes_capability_ids:
       - BC-700
+      - BC-710
       - BC-900
     children:
       - id: BP-320.40.10
@@ -124,6 +132,7 @@ children:
         description: >-
           Plan tenant improvements, repositioning, and major refurbishment projects.
         realizes_capability_ids:
+          - BC-710
           - BC-900
         children: []
       - id: BP-320.40.20
@@ -133,6 +142,7 @@ children:
           Execute property capital projects across design, construction, and handover.
         realizes_capability_ids:
           - BC-700
+          - BC-710
           - BC-900
         children: []
   - id: BP-320.50
@@ -158,5 +168,6 @@ children:
         description: >-
           Negotiate sale terms; execute closing and post-closing transition.
         realizes_capability_ids:
+          - BC-410
           - BC-710
         children: []

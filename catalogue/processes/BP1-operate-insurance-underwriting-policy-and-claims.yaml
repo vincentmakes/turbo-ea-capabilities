@@ -59,7 +59,9 @@ children:
         level: 3
         description: >-
           Conduct risk assessment; apply rating engines; price the risk.
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-120
+          - BC-440
         children: []
       - id: BP-150.20.30
         name: Render Underwriting Decisions
@@ -174,7 +176,8 @@ children:
         level: 3
         description: >-
           Cede underwritten risk per treaty terms; produce bordereaux to reinsurers.
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-120
         children: []
       - id: BP-150.50.30
         name: Manage Reinsurance Claims Recoveries

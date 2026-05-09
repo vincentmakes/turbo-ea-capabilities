@@ -105,14 +105,16 @@ import { version } from "../data/load.ts";
 
     <div class="detail-card">
       <h3 style="margin-top:0;">JSON API</h3>
-      <p>All endpoints are static, immutable per build, and edge-cached:</p>
+      <p>Aggregated endpoints, static and edge-cached:</p>
       <ul style="margin-left: 24px; margin-top: 12px;">
         <li><a href="/api/version.json"><code>/api/version.json</code></a> — catalog + schema version</li>
-        <li><a href="/api/tree.json"><code>/api/tree.json</code></a> — full nested tree (default)</li>
-        <li><code>/api/by-l1/&lt;slug&gt;.json</code> — nested subtree for one L1</li>
-        <li><code>/api/capability/&lt;id&gt;.json</code> — nested subtree rooted at <code>&lt;id&gt;</code></li>
-        <li><a href="/api/capabilities.json"><code>/api/capabilities.json</code></a> — flat array (legacy / alternative)</li>
+        <li><a href="/api/tree.json"><code>/api/tree.json</code></a> — full nested tree</li>
+        <li><a href="/api/capabilities.json"><code>/api/capabilities.json</code></a> — flat array of every node</li>
       </ul>
+      <p style="margin-top: 12px;">
+        For per-node lookup or per-L1 subtrees use the Python package below — it
+        bundles the same per-id files locally without round-tripping the network.
+      </p>
     </div>
 
     <div class="detail-card">

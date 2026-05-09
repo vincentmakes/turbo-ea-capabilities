@@ -79,13 +79,15 @@ children:
     realizes_capability_ids:
       - BC-150
       - BC-610
+      - BC-810
     children:
       - id: BP-250.30.10
         name: Pursue and Manage Research Grants
         level: 3
         description: >-
           Pursue research opportunities; develop proposals; manage award setup and post-award administration.
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-810
         children: []
       - id: BP-250.30.20
         name: Manage Research Ethics and Integrity
@@ -94,6 +96,7 @@ children:
           Operate research-ethics committees; manage research-integrity oversight.
         realizes_capability_ids:
           - BC-150
+          - BC-810
         children: []
       - id: BP-250.30.30
         name: Manage Research Data and Outputs
@@ -102,6 +105,7 @@ children:
           Manage research data, publications, and dissemination.
         realizes_capability_ids:
           - BC-610
+          - BC-810
           - BC-840
         children: []
       - id: BP-250.30.40
@@ -109,7 +113,8 @@ children:
         level: 3
         description: >-
           Measure research impact through bibliometrics and equivalent measures.
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-810
         children: []
   - id: BP-250.40
     name: Manage Educational Content and Learning Resources

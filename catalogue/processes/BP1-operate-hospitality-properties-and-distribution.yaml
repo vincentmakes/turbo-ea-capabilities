@@ -15,14 +15,16 @@ children:
     level: 2
     description: >-
       Manage room, table, and event-space inventory; receive and confirm reservations across channels.
-    realizes_capability_ids: []
+    realizes_capability_ids:
+      - BC-530
     children:
       - id: BP-380.10.10
         name: Manage Inventory Allotments and Restrictions
         level: 3
         description: >-
           Manage room/table/event-space inventory, allotments, and stay restrictions.
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-530
         children: []
       - id: BP-380.10.20
         name: Process Reservations and Modifications
@@ -174,6 +176,7 @@ children:
       Operate rooms, food & beverage, events, housekeeping, property maintenance.
     realizes_capability_ids:
       - BC-700
+      - BC-710
     children:
       - id: BP-380.60.10
         name: Operate Rooms Division
@@ -204,4 +207,5 @@ children:
           Operate property engineering, preventive and corrective maintenance.
         realizes_capability_ids:
           - BC-700
+          - BC-710
         children: []

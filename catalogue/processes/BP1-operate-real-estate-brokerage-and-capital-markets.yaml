@@ -17,6 +17,7 @@ children:
       Operate residential and commercial brokerage: listing agreements, MLS exposure, showings, offer negotiation.
     realizes_capability_ids:
       - BC-410
+      - BC-710
     children:
       - id: BP-330.10.10
         name: Win Listing Agreements
@@ -91,6 +92,7 @@ children:
       Operate real-estate fund and investment management: capital raising, fund administration, asset/portfolio reporting.
     realizes_capability_ids:
       - BC-210
+      - BC-710
     children:
       - id: BP-330.30.10
         name: Form and Capitalise Real Estate Vehicles
@@ -99,6 +101,7 @@ children:
           Establish funds, joint ventures, and SPVs; manage capital commitments and calls.
         realizes_capability_ids:
           - BC-210
+          - BC-710
         children: []
       - id: BP-330.30.20
         name: Manage Fund Accounting and NAV
@@ -122,14 +125,16 @@ children:
     level: 2
     description: >-
       Conduct property valuation and appraisal under IPMS / RICS / USPAP standards.
-    realizes_capability_ids: []
+    realizes_capability_ids:
+      - BC-710
     children:
       - id: BP-330.40.10
         name: Conduct Property Valuations
         level: 3
         description: >-
           Conduct property valuations using income, sales-comparison, and cost approaches.
-        realizes_capability_ids: []
+        realizes_capability_ids:
+          - BC-710
         children: []
       - id: BP-330.40.20
         name: Produce Appraisal Reports
