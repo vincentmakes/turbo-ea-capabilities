@@ -1,0 +1,59 @@
+id: BP-430
+name: Operate Air Traffic Management
+level: 1
+industry: Air Traffic Control
+description: >-
+  Run air-navigation-service-provider operations: airspace management, flight data and plan management, ATC services (tower/approach/en-route), CNS infrastructure, aeronautical information.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "ICAO Doc 4444 (PANS-ATM) + ICAO Doc 9750 (ASBU) + EUROCONTROL ATM Master Plan + FAA Order 7110.65 + CANSO Standard of Excellence"
+realizes_capability_ids:
+  - BC-100
+children:
+  - id: BP-430.10
+    name: Manage Airspace and Air Traffic Flow
+    level: 2
+    description: >-
+      Plan and manage airspace structure, sectors, and traffic flow; coordinate with adjacent ANSPs.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-430.20
+    name: Manage Flight Data and Plan
+    level: 2
+    description: >-
+      Receive, validate, distribute, and update flight plans; coordinate flight-data exchange with operators and other ANSPs.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-430.30
+    name: Provide Air Traffic Control Services
+    level: 2
+    description: >-
+      Provide tower, approach, and en-route ATC services to airspace users; manage separation and conflict resolution.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-430.40
+    name: Manage CNS Infrastructure
+    level: 2
+    description: >-
+      Operate communications, navigation, and surveillance (CNS) infrastructure supporting ATC services.
+    realizes_capability_ids:
+      - BC-700
+      - BC-600
+    children: []
+  - id: BP-430.50
+    name: Manage Aeronautical Information
+    level: 2
+    description: >-
+      Capture, validate, and publish aeronautical information (AIP, NOTAM, charts) to airspace users.
+    realizes_capability_ids:
+      - BC-610
+    children: []
+  - id: BP-430.60
+    name: Manage Aviation Safety and Investigation
+    level: 2
+    description: >-
+      Run ATM safety-management activities including occurrence reporting, safety case management, just-culture investigation.
+    realizes_capability_ids:
+      - BC-720
+      - BC-160
+    children: []
