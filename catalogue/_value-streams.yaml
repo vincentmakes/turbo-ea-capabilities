@@ -1123,14 +1123,16 @@ value_streams:
     capability_ids:
     - BC-3200
     - BC-3210
-    process_ids: []
+    process_ids:
+    - BP-120.20
     notes: Policy decision converted into drafting instructions; Receipt and clarification of drafting instructions by parliamentary counsel
   - id: VS-90.20
     stage_order: 2
     stage_name: Drafting
     capability_ids:
     - BC-3210
-    process_ids: []
+    process_ids:
+    - BP-120.20
     notes: Drafting of bills, regulations, and statutory instruments
   - id: VS-90.30
     stage_order: 3
@@ -1138,35 +1140,42 @@ value_streams:
     capability_ids:
     - BC-3210
     - BC-150
-    process_ids: []
+    process_ids:
+    - BP-120.20
+    - BP-120.40
     notes: Constitutional, human-rights, and international-law review; Government legal services advisory review
   - id: VS-90.40
     stage_order: 4
     stage_name: Impact Assessment
     capability_ids:
     - BC-3210
-    process_ids: []
+    process_ids:
+    - BP-120.20
     notes: Regulatory impact assessment and small-business test
   - id: VS-90.50
     stage_order: 5
     stage_name: Legislative Passage
     capability_ids:
     - BC-3210
-    process_ids: []
+    process_ids:
+    - BP-120.20
     notes: Parliamentary liaison, committee evidence, amendment tracking
   - id: VS-90.60
     stage_order: 6
     stage_name: Promulgation
     capability_ids:
     - BC-3210
-    process_ids: []
+    process_ids:
+    - BP-120.20
+    - BP-340.50
     notes: Royal assent or executive signature and effective-date setting
   - id: VS-90.70
     stage_order: 7
     stage_name: Codification & Publication
     capability_ids:
     - BC-3210
-    process_ids: []
+    process_ids:
+    - BP-340.50
     notes: Official gazette publication and statutory codification
 - id: VS-100
   name: Brief-to-Campaign
@@ -2558,49 +2567,57 @@ value_streams:
     stage_name: Case Filing
     capability_ids:
     - BC-3320
-    process_ids: []
+    process_ids:
+    - BP-350.40
     notes: Case initiation, e-filing, classification, and fee assessment
   - id: VS-220.20
     stage_order: 2
     stage_name: Docket & Scheduling
     capability_ids:
     - BC-3320
-    process_ids: []
+    process_ids:
+    - BP-350.40
     notes: Docket maintenance, hearing scheduling, and judicial assignment
   - id: VS-220.30
     stage_order: 3
     stage_name: Hearing & Trial
     capability_ids:
     - BC-3320
-    process_ids: []
+    process_ids:
+    - BP-350.40
     notes: Jury management, courtroom operations, and witness support
   - id: VS-220.40
     stage_order: 4
     stage_name: Judgment & Sentencing
     capability_ids:
     - BC-3320
-    process_ids: []
+    process_ids:
+    - BP-350.40
     notes: Recording of judgments, sentences, and dispositional orders
   - id: VS-220.50
     stage_order: 5
     stage_name: Order Enforcement
     capability_ids:
     - BC-3320
-    process_ids: []
+    process_ids:
+    - BP-350.30
+    - BP-350.40
     notes: Fines, restitution, civil judgment enforcement, and warrants
   - id: VS-220.60
     stage_order: 6
     stage_name: Custody & Supervision
     capability_ids:
     - BC-3320
-    process_ids: []
+    process_ids:
+    - BP-350.40
     notes: Corrections custody, probation, and parole supervision
   - id: VS-220.70
     stage_order: 7
     stage_name: Records & Public Access
     capability_ids:
     - BC-3320
-    process_ids: []
+    process_ids:
+    - BP-350.40
     notes: Court records maintenance, public access, sealing, and expungement
 - id: VS-230
   name: Firmware-to-Field
@@ -7319,56 +7336,66 @@ value_streams:
     stage_name: Voter Registration
     capability_ids:
     - BC-3330
-    process_ids: []
+    process_ids:
+    - BP-340.10
+    - BP-340.50
     notes: Voter enrolment, list maintenance, and eligibility verification
   - id: VS-480.20
     stage_order: 2
     stage_name: Boundary & Polling Place Setup
     capability_ids:
     - BC-3330
-    process_ids: []
+    process_ids:
+    - BP-340.50
     notes: Electoral district maintenance and polling-place designation
   - id: VS-480.30
     stage_order: 3
     stage_name: Candidate Nomination
     capability_ids:
     - BC-3330
-    process_ids: []
+    process_ids:
+    - BP-340.30
     notes: Party registration, candidate filing, and ballot access determination
   - id: VS-480.40
     stage_order: 4
     stage_name: Ballot Production
     capability_ids:
     - BC-3330
-    process_ids: []
+    process_ids:
+    - BP-340.50
     notes: Ballot design, translation, accessibility, and secure distribution
   - id: VS-480.50
     stage_order: 5
     stage_name: Polling
     capability_ids:
     - BC-3330
-    process_ids: []
+    process_ids:
+    - BP-340.50
     notes: Poll-worker management, voter check-in, and absentee voting
   - id: VS-480.60
     stage_order: 6
     stage_name: Counting & Tabulation
     capability_ids:
     - BC-3330
-    process_ids: []
+    process_ids:
+    - BP-340.50
     notes: Ballot counting, results aggregation, and post-election audit
   - id: VS-480.70
     stage_order: 7
     stage_name: Certification
     capability_ids:
     - BC-3330
-    process_ids: []
+    process_ids:
+    - BP-340.30
     notes: Statutory certification of election results
   - id: VS-480.80
     stage_order: 8
     stage_name: Campaign Finance Disclosure
     capability_ids:
     - BC-3330
-    process_ids: []
+    process_ids:
+    - BP-340.50
+    - BP-350.10
     notes: Political-committee registration, donation reporting, and enforcement
 - id: VS-490
   name: Return-to-Collection
@@ -7380,49 +7407,58 @@ value_streams:
     stage_name: Taxpayer Registration
     capability_ids:
     - BC-3250
-    process_ids: []
+    process_ids:
+    - BP-350.10
     notes: Registration and TIN issuance; taxpayer master data
   - id: VS-490.20
     stage_order: 2
     stage_name: Return Lodgement
     capability_ids:
     - BC-3250
-    process_ids: []
+    process_ids:
+    - BP-350.10
     notes: Receipt and validation of tax returns
   - id: VS-490.30
     stage_order: 3
     stage_name: Assessment
     capability_ids:
     - BC-3250
-    process_ids: []
+    process_ids:
+    - BP-350.10
     notes: Self-assessment processing and default assessments
   - id: VS-490.40
     stage_order: 4
     stage_name: Payment Collection
     capability_ids:
     - BC-3250
-    process_ids: []
+    process_ids:
+    - BP-350.10
     notes: Payment channel operations, withholding, instalment plans
   - id: VS-490.50
     stage_order: 5
     stage_name: Refund & Credit
     capability_ids:
     - BC-3250
-    process_ids: []
+    process_ids:
+    - BP-350.10
     notes: Refund validation, issuance, and fraud screening
   - id: VS-490.60
     stage_order: 6
     stage_name: Audit & Examination
     capability_ids:
     - BC-3250
-    process_ids: []
+    process_ids:
+    - BP-350.10
+    - BP-350.30
     notes: Risk-based audit, fieldwork, and reassessment issuance
   - id: VS-490.70
     stage_order: 7
     stage_name: Debt Enforcement
     capability_ids:
     - BC-3250
-    process_ids: []
+    process_ids:
+    - BP-350.10
+    - BP-350.30
     notes: Tax debt portfolio management, statutory enforcement, prosecution referral
 - id: VS-500
   name: Risk-to-Mitigation
@@ -7905,42 +7941,52 @@ value_streams:
     stage_name: Programme Design
     capability_ids:
     - BC-3260
-    process_ids: []
+    process_ids:
+    - BP-360.30
+    - BP-360.20
     notes: Objectives, allocation modelling, evaluation criteria
   - id: VS-540.20
     stage_order: 2
     stage_name: Solicitation Publication
     capability_ids:
     - BC-3260
-    process_ids: []
+    process_ids:
+    - BP-360.10
     notes: Funding opportunity publication and applicant outreach
   - id: VS-540.30
     stage_order: 3
     stage_name: Application Review
     capability_ids:
     - BC-3260
-    process_ids: []
+    process_ids:
+    - BP-360.10
     notes: Eligibility screening and merit review with conflict-of-interest controls
   - id: VS-540.40
     stage_order: 4
     stage_name: Award & Agreement
     capability_ids:
     - BC-3260
-    process_ids: []
+    process_ids:
+    - BP-360.10
+    - BP-360.30
     notes: Award selection, grant agreement issuance, and obligation
   - id: VS-540.50
     stage_order: 5
     stage_name: Recipient Monitoring
     capability_ids:
     - BC-3260
-    process_ids: []
+    process_ids:
+    - BP-360.30
+    - BP-360.40
     notes: Performance, financial, and site monitoring of recipients
   - id: VS-540.60
     stage_order: 6
     stage_name: Closeout & Audit Resolution
     capability_ids:
     - BC-3260
-    process_ids: []
+    process_ids:
+    - BP-360.30
+    - BP-360.40
     notes: Final reporting, single-audit resolution, and disallowed-cost recovery
 - id: VS-550
   name: Source-to-Tap
