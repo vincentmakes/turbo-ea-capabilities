@@ -24,7 +24,57 @@ children:
     realizes_capability_ids:
       - BC-710
       - BC-700
-    children: []
+    children:
+      - id: BP-100.10.10
+        name: Develop Property and Asset Strategy
+        level: 3
+        description: >-
+          Set the multi-year property and productive-asset strategy.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "10.1.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-710
+          - BC-700
+        children: []
+      - id: BP-100.10.20
+        name: Plan Facility Capacity
+        level: 3
+        description: >-
+          Plan facility capacity to meet the operating plan.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "10.1.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-700
+        children: []
+      - id: BP-100.10.30
+        name: Acquire Real Estate or Buildings
+        level: 3
+        description: >-
+          Acquire real estate or buildings consistent with the strategy.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "10.1.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-710
+        children: []
+      - id: BP-100.10.40
+        name: Acquire Equipment and Tooling
+        level: 3
+        description: >-
+          Acquire production and operating equipment.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "10.1.4"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-700
+          - BC-500
+        children: []
   - id: BP-100.20
     name: Design and Construct Productive Assets
     level: 2
@@ -37,7 +87,58 @@ children:
     realizes_capability_ids:
       - BC-700
       - BC-720
-    children: []
+    children:
+      - id: BP-100.20.10
+        name: Design Productive Assets
+        level: 3
+        description: >-
+          Design facilities and productive assets to specification.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "10.2.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-700
+        children: []
+      - id: BP-100.20.20
+        name: Schedule and Perform Construction Work
+        level: 3
+        description: >-
+          Schedule and perform construction work for new and refurbished assets.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "10.2.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-700
+          - BC-900
+        children: []
+      - id: BP-100.20.30
+        name: Manage Construction Project
+        level: 3
+        description: >-
+          Manage construction projects across cost, schedule, and quality.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "10.2.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-900
+          - BC-700
+        children: []
+      - id: BP-100.20.40
+        name: Commission Productive Assets
+        level: 3
+        description: >-
+          Commission, test, and accept productive assets prior to operation.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "10.2.4"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-700
+          - BC-720
+        children: []
   - id: BP-100.30
     name: Maintain Productive Assets
     level: 2
@@ -49,7 +150,44 @@ children:
         version: "7.4.0"
     realizes_capability_ids:
       - BC-700
-    children: []
+    children:
+      - id: BP-100.30.10
+        name: Maintain Plan and Resources for Asset Maintenance
+        level: 3
+        description: >-
+          Plan maintenance programs, resources, and budgets.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "10.3.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-700
+        children: []
+      - id: BP-100.30.20
+        name: Perform Asset Maintenance
+        level: 3
+        description: >-
+          Execute planned, preventive, and corrective maintenance work.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "10.3.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-700
+        children: []
+      - id: BP-100.30.30
+        name: Manage Asset Performance
+        level: 3
+        description: >-
+          Monitor asset performance and reliability; drive improvement.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "10.3.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-700
+          - BC-720
+        children: []
   - id: BP-100.40
     name: Dispose of Productive Assets
     level: 2
@@ -62,4 +200,30 @@ children:
     realizes_capability_ids:
       - BC-710
       - BC-740
-    children: []
+    children:
+      - id: BP-100.40.10
+        name: Plan Asset Decommissioning
+        level: 3
+        description: >-
+          Plan decommissioning, including environmental and safety considerations.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "10.4.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-710
+          - BC-730
+        children: []
+      - id: BP-100.40.20
+        name: Decommission and Dispose of Assets
+        level: 3
+        description: >-
+          Execute decommissioning and disposal, including remarketing or scrappage.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "10.4.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-710
+          - BC-740
+        children: []

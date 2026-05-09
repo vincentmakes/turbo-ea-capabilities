@@ -25,7 +25,46 @@ children:
     realizes_capability_ids:
       - BC-820
       - BC-900
-    children: []
+    children:
+      - id: BP-20.10.10
+        name: Manage Product and Service Portfolio
+        level: 3
+        description: >-
+          Govern the active and pipeline portfolio of products and services, balancing investment across categories and stages.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "2.1.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-820
+          - BC-900
+        children: []
+      - id: BP-20.10.20
+        name: Manage Product and Service Master Data
+        level: 3
+        description: >-
+          Maintain the authoritative product/service master record across systems and channels.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "2.1.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-820
+          - BC-610
+        children: []
+      - id: BP-20.10.30
+        name: Manage Product and Service Development Life Cycle
+        level: 3
+        description: >-
+          Operate stage gates, decision rights, and program controls across the product/service lifecycle.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "2.1.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-820
+          - BC-900
+        children: []
   - id: BP-20.20
     name: Generate and Define New Product/Service Ideas
     level: 2
@@ -38,7 +77,73 @@ children:
     realizes_capability_ids:
       - BC-800
       - BC-810
-    children: []
+    children:
+      - id: BP-20.20.10
+        name: Perform Discovery Research
+        level: 3
+        description: >-
+          Run primary and secondary research to surface unmet needs and emerging technologies relevant to the portfolio.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "2.2.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-800
+          - BC-810
+          - BC-400
+        children: []
+      - id: BP-20.20.20
+        name: Generate New Product/Service Ideas
+        level: 3
+        description: >-
+          Systematically generate candidate product and service ideas through ideation, scouting, and open innovation channels.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "2.2.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-800
+        children: []
+      - id: BP-20.20.30
+        name: Define New Product/Service Ideas
+        level: 3
+        description: >-
+          Articulate idea concepts with target customer, value proposition, scope, and high-level feasibility.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "2.2.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-800
+          - BC-820
+        children: []
+      - id: BP-20.20.40
+        name: Develop Business Case for Product/Service
+        level: 3
+        description: >-
+          Develop the business case quantifying value, cost, risk, and strategic fit for go/no-go decisions.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "2.2.4"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-800
+          - BC-820
+          - BC-230
+        children: []
+      - id: BP-20.20.50
+        name: Validate New Product/Service Ideas
+        level: 3
+        description: >-
+          Validate concepts through customer research, technical feasibility, and economic screening before committing to development.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "2.2.5"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-800
+          - BC-820
+        children: []
   - id: BP-20.30
     name: Develop Products and Services
     level: 2
@@ -52,7 +157,70 @@ children:
       - BC-810
       - BC-820
       - BC-840
-    children: []
+    children:
+      - id: BP-20.30.10
+        name: Design and Prototype Products and Services
+        level: 3
+        description: >-
+          Translate validated concepts into detailed designs and prototypes that prove the offer.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "2.3.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-810
+          - BC-820
+        children: []
+      - id: BP-20.30.20
+        name: Build Products and Services Capabilities
+        level: 3
+        description: >-
+          Build the product/service deliverable to specification, including engineering and configuration.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "2.3.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-810
+          - BC-820
+        children: []
+      - id: BP-20.30.30
+        name: Test Product/Service
+        level: 3
+        description: >-
+          Validate the product/service against requirements through test, pilot, and pre-production trials.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "2.3.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-820
+          - BC-720
+        children: []
+      - id: BP-20.30.40
+        name: Manage Intellectual Property Created During Development
+        level: 3
+        description: >-
+          Identify, protect, and manage IP arising from product and service development.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "2.3.4"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-840
+        children: []
+      - id: BP-20.30.50
+        name: Refine Existing Products/Services
+        level: 3
+        description: >-
+          Improve existing offers based on field feedback, defects, or shifting requirements.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "2.3.5"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-820
+        children: []
   - id: BP-20.40
     name: Test Market for New or Revised Products and Services
     level: 2
@@ -65,7 +233,46 @@ children:
     realizes_capability_ids:
       - BC-820
       - BC-400
-    children: []
+    children:
+      - id: BP-20.40.10
+        name: Develop Market Test Plan
+        level: 3
+        description: >-
+          Define market-test scope, segments, channels, and success criteria.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "2.4.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-820
+          - BC-400
+        children: []
+      - id: BP-20.40.20
+        name: Conduct Market Test
+        level: 3
+        description: >-
+          Execute the market test in target segments and channels.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "2.4.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-820
+          - BC-400
+        children: []
+      - id: BP-20.40.30
+        name: Evaluate Market Test Results
+        level: 3
+        description: >-
+          Analyse market-test results against success criteria; recommend launch, iterate, or kill.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "2.4.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-820
+          - BC-400
+        children: []
   - id: BP-20.50
     name: Prepare for Production
     level: 2
@@ -78,4 +285,45 @@ children:
     realizes_capability_ids:
       - BC-820
       - BC-520
-    children: []
+    children:
+      - id: BP-20.50.10
+        name: Develop and Test Prototype Production and/or Service Delivery Process
+        level: 3
+        description: >-
+          Pilot the production or service-delivery process at limited scale and validate readiness.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "2.5.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-820
+          - BC-520
+        children: []
+      - id: BP-20.50.20
+        name: Design and Obtain Necessary Materials and Equipment
+        level: 3
+        description: >-
+          Source and qualify the materials, equipment, and tooling required for at-scale production.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "2.5.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-500
+          - BC-510
+          - BC-520
+        children: []
+      - id: BP-20.50.30
+        name: Install and Validate Production Process
+        level: 3
+        description: >-
+          Stand up the production or service-delivery process, validate quality, and hand off to operations.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "2.5.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-820
+          - BC-520
+          - BC-720
+        children: []

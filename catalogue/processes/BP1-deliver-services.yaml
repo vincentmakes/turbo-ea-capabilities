@@ -24,7 +24,45 @@ children:
     realizes_capability_ids:
       - BC-100
       - BC-720
-    children: []
+    children:
+      - id: BP-50.10.10
+        name: Establish Service Delivery Governance
+        level: 3
+        description: >-
+          Establish governance forums, decision rights, and operating-model controls for service delivery.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "5.1.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-110
+          - BC-100
+        children: []
+      - id: BP-50.10.20
+        name: Define Service Delivery Strategy
+        level: 3
+        description: >-
+          Define multi-year service-delivery strategy: portfolio, channels, sourcing, target service levels.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "5.1.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-100
+        children: []
+      - id: BP-50.10.30
+        name: Define Service Standards
+        level: 3
+        description: >-
+          Establish the service-quality standards and SLAs that delivery must achieve.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "5.1.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-720
+          - BC-430
+        children: []
   - id: BP-50.20
     name: Manage Service Delivery Resources
     level: 2
@@ -37,7 +75,44 @@ children:
     realizes_capability_ids:
       - BC-300
       - BC-700
-    children: []
+    children:
+      - id: BP-50.20.10
+        name: Manage Service Delivery Workforce
+        level: 3
+        description: >-
+          Plan and manage the staffing, skills, and scheduling of the service-delivery workforce.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "5.2.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-50.20.20
+        name: Manage Service Delivery Resources and Assets
+        level: 3
+        description: >-
+          Manage the facilities, equipment, and assets used in service delivery.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "5.2.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-700
+        children: []
+      - id: BP-50.20.30
+        name: Manage Service Delivery Suppliers
+        level: 3
+        description: >-
+          Manage third-party service providers and supplier relationships supporting delivery.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "5.2.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-510
+          - BC-500
+        children: []
   - id: BP-50.30
     name: Deliver Service to Customer
     level: 2
@@ -49,7 +124,43 @@ children:
         version: "7.4.0"
     realizes_capability_ids:
       - BC-430
-    children: []
+    children:
+      - id: BP-50.30.10
+        name: Initiate Service Delivery
+        level: 3
+        description: >-
+          Onboard, provision, and start service for the customer.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "5.3.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-430
+        children: []
+      - id: BP-50.30.20
+        name: Execute Service Delivery
+        level: 3
+        description: >-
+          Perform the service interactions with the customer.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "5.3.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-430
+        children: []
+      - id: BP-50.30.30
+        name: Complete Service Delivery
+        level: 3
+        description: >-
+          Close out service engagements, capture deliverables, and confirm customer acceptance.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "5.3.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-430
+        children: []
   - id: BP-50.40
     name: Manage Service Delivery
     level: 2
@@ -62,4 +173,43 @@ children:
     realizes_capability_ids:
       - BC-430
       - BC-720
-    children: []
+    children:
+      - id: BP-50.40.10
+        name: Monitor Service Delivery Performance
+        level: 3
+        description: >-
+          Measure service-delivery performance against SLAs and KPIs.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "5.4.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-430
+          - BC-720
+        children: []
+      - id: BP-50.40.20
+        name: Assure Service Delivery Quality
+        level: 3
+        description: >-
+          Run quality assurance over the delivered service, including audits and customer feedback loops.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "5.4.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-720
+          - BC-430
+        children: []
+      - id: BP-50.40.30
+        name: Improve Service Delivery
+        level: 3
+        description: >-
+          Drive continuous improvement based on performance data and customer feedback.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "5.4.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-720
+          - BC-430
+        children: []

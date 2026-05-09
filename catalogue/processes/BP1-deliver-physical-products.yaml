@@ -24,7 +24,58 @@ children:
     realizes_capability_ids:
       - BC-520
       - BC-530
-    children: []
+    children:
+      - id: BP-40.10.10
+        name: Develop Production and Materials Strategies
+        level: 3
+        description: >-
+          Set the multi-period production and materials strategy to match the business plan.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "4.1.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-520
+          - BC-530
+        children: []
+      - id: BP-40.10.20
+        name: Manage Demand for Products and Services
+        level: 3
+        description: >-
+          Forecast and shape demand for products and services across channels and segments.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "4.1.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-520
+          - BC-400
+        children: []
+      - id: BP-40.10.30
+        name: Create Materials Plan
+        level: 3
+        description: >-
+          Translate the demand plan into a materials and components plan.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "4.1.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-520
+          - BC-530
+        children: []
+      - id: BP-40.10.40
+        name: Create and Manage Master Production Schedule
+        level: 3
+        description: >-
+          Build and maintain the master production schedule that drives execution.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "4.1.4"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-520
+        children: []
   - id: BP-40.20
     name: Procure Materials and Services
     level: 2
@@ -37,7 +88,57 @@ children:
     realizes_capability_ids:
       - BC-500
       - BC-510
-    children: []
+    children:
+      - id: BP-40.20.10
+        name: Develop Sourcing Strategies
+        level: 3
+        description: >-
+          Set category and item-level sourcing strategies aligned to the business plan.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "4.2.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-500
+          - BC-510
+        children: []
+      - id: BP-40.20.20
+        name: Select Suppliers and Develop/Maintain Contracts
+        level: 3
+        description: >-
+          Run RFx, qualify suppliers, and manage contracts across the lifecycle.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "4.2.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-500
+          - BC-510
+        children: []
+      - id: BP-40.20.30
+        name: Order Materials and Services
+        level: 3
+        description: >-
+          Issue purchase orders and receive goods and services against contracts.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "4.2.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-500
+        children: []
+      - id: BP-40.20.40
+        name: Appraise and Develop Suppliers
+        level: 3
+        description: >-
+          Monitor supplier performance, develop strategic suppliers, and remediate underperformers.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "4.2.4"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-510
+        children: []
   - id: BP-40.30
     name: Produce/Manufacture/Deliver Product
     level: 2
@@ -50,7 +151,69 @@ children:
     realizes_capability_ids:
       - BC-520
       - BC-720
-    children: []
+    children:
+      - id: BP-40.30.10
+        name: Schedule Production
+        level: 3
+        description: >-
+          Convert the master schedule into shop-floor production schedules and orders.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "4.3.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-520
+        children: []
+      - id: BP-40.30.20
+        name: Produce/Assemble Product
+        level: 3
+        description: >-
+          Execute production and assembly to plan.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "4.3.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-520
+        children: []
+      - id: BP-40.30.30
+        name: Perform Quality Testing
+        level: 3
+        description: >-
+          Inspect and test products against quality specifications during and after production.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "4.3.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-720
+        children: []
+      - id: BP-40.30.40
+        name: Maintain Production Records and Manage Lot Traceability
+        level: 3
+        description: >-
+          Capture production records and maintain lot/serial traceability for compliance and recall.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "4.3.4"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-520
+          - BC-610
+        children: []
+      - id: BP-40.30.50
+        name: Perform Manufacturing Maintenance
+        level: 3
+        description: >-
+          Maintain production equipment to keep capacity available and quality assured.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "4.3.5"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-700
+          - BC-720
+        children: []
   - id: BP-40.40
     name: Manage Logistics and Warehousing
     level: 2
@@ -63,4 +226,66 @@ children:
     realizes_capability_ids:
       - BC-520
       - BC-530
-    children: []
+    children:
+      - id: BP-40.40.10
+        name: Define Logistics Strategy
+        level: 3
+        description: >-
+          Set the logistics-network strategy: footprint, modes, partners, service levels.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "4.4.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-520
+        children: []
+      - id: BP-40.40.20
+        name: Plan and Manage Inbound Material Flow
+        level: 3
+        description: >-
+          Plan and execute the inbound flow of materials from suppliers to facilities.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "4.4.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-520
+          - BC-510
+        children: []
+      - id: BP-40.40.30
+        name: Operate Warehousing
+        level: 3
+        description: >-
+          Run warehousing operations: receiving, putaway, picking, and shipping.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "4.4.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-530
+        children: []
+      - id: BP-40.40.40
+        name: Operate Outbound Transportation
+        level: 3
+        description: >-
+          Plan and execute outbound transportation to customers and channels.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "4.4.4"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-520
+        children: []
+      - id: BP-40.40.50
+        name: Manage Returns; Manage Reverse Logistics
+        level: 3
+        description: >-
+          Run returns processing and the reverse-logistics flow for repairs, recalls, and disposal.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "4.4.5"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-520
+          - BC-430
+        children: []

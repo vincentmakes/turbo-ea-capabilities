@@ -25,7 +25,32 @@ children:
         version: "7.4.0"
     realizes_capability_ids:
       - BC-240
-    children: []
+    children:
+      - id: BP-120.10.10
+        name: Plan, Build, and Manage Investor Relations
+        level: 3
+        description: >-
+          Establish and run the investor-relations program.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "12.1.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-240
+        children: []
+      - id: BP-120.10.20
+        name: Communicate with Investors
+        level: 3
+        description: >-
+          Communicate financial results, strategy, and outlook to investors.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "12.1.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-240
+          - BC-850
+        children: []
   - id: BP-120.20
     name: Manage Government and Industry Relationships
     level: 2
@@ -38,7 +63,32 @@ children:
     realizes_capability_ids:
       - BC-150
       - BC-850
-    children: []
+    children:
+      - id: BP-120.20.10
+        name: Manage Government Relations
+        level: 3
+        description: >-
+          Engage with government bodies on policy and regulatory matters.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "12.2.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-150
+          - BC-850
+        children: []
+      - id: BP-120.20.20
+        name: Manage Industry Relations
+        level: 3
+        description: >-
+          Engage with industry associations and standard-setting bodies.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "12.2.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-850
+        children: []
   - id: BP-120.30
     name: Manage Relations with Board of Directors
     level: 2
@@ -51,7 +101,33 @@ children:
     realizes_capability_ids:
       - BC-110
       - BC-240
-    children: []
+    children:
+      - id: BP-120.30.10
+        name: Report Results to the Board
+        level: 3
+        description: >-
+          Prepare and present financial and operational results to the board.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "12.3.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-110
+          - BC-240
+        children: []
+      - id: BP-120.30.20
+        name: Report Audit Findings to the Board
+        level: 3
+        description: >-
+          Report internal-audit findings and remediation status to the audit committee.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "12.3.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-140
+          - BC-110
+        children: []
   - id: BP-120.40
     name: Manage Legal and Ethical Issues
     level: 2
@@ -64,7 +140,83 @@ children:
     realizes_capability_ids:
       - BC-150
       - BC-130
-    children: []
+    children:
+      - id: BP-120.40.10
+        name: Create Ethics and Business Conduct Policies
+        level: 3
+        description: >-
+          Establish and maintain ethics and conduct policies.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "12.4.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-130
+          - BC-150
+        children: []
+      - id: BP-120.40.20
+        name: Manage Corporate Governance Compliance
+        level: 3
+        description: >-
+          Manage compliance with corporate-governance and disclosure obligations.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "12.4.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-110
+          - BC-130
+        children: []
+      - id: BP-120.40.30
+        name: Manage Legal Issues
+        level: 3
+        description: >-
+          Manage litigation, disputes, and legal exposures.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "12.4.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-150
+        children: []
+      - id: BP-120.40.40
+        name: Manage Compliance with Laws/Regulations
+        level: 3
+        description: >-
+          Run regulatory-compliance programs across jurisdictions.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "12.4.4"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-130
+          - BC-150
+        children: []
+      - id: BP-120.40.50
+        name: Provide Legal Counsel and Advice
+        level: 3
+        description: >-
+          Provide legal counsel to the business across day-to-day decisions.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "12.4.5"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-150
+        children: []
+      - id: BP-120.40.60
+        name: Negotiate and Document Agreements/Contracts
+        level: 3
+        description: >-
+          Negotiate, draft, and manage commercial contracts and agreements.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "12.4.6"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-150
+          - BC-510
+        children: []
   - id: BP-120.50
     name: Manage Public Relations Program
     level: 2
@@ -76,4 +228,55 @@ children:
         version: "7.4.0"
     realizes_capability_ids:
       - BC-850
-    children: []
+    children:
+      - id: BP-120.50.10
+        name: Manage Community Relations
+        level: 3
+        description: >-
+          Engage with local communities where the enterprise operates.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "12.5.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-850
+          - BC-740
+        children: []
+      - id: BP-120.50.20
+        name: Manage Media Relations
+        level: 3
+        description: >-
+          Manage relations with media, including press communications and crisis comms.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "12.5.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-850
+        children: []
+      - id: BP-120.50.30
+        name: Promote Political Stability
+        level: 3
+        description: >-
+          Engage on political-stability and regulatory-environment matters where relevant.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "12.5.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-850
+          - BC-150
+        children: []
+      - id: BP-120.50.40
+        name: Build/Sustain Corporate Image
+        level: 3
+        description: >-
+          Build and sustain the corporate brand and reputation.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "12.5.4"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-850
+          - BC-400
+        children: []

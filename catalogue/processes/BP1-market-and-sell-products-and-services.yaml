@@ -26,7 +26,33 @@ children:
     realizes_capability_ids:
       - BC-400
       - BC-420
-    children: []
+    children:
+      - id: BP-30.10.10
+        name: Perform Customer and Market Intelligence Analysis
+        level: 3
+        description: >-
+          Gather and analyse customer, market, and competitor data to inform marketing and sales decisions.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.1.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-400
+          - BC-420
+        children: []
+      - id: BP-30.10.20
+        name: Evaluate and Prioritise Market Opportunities
+        level: 3
+        description: >-
+          Score and prioritise candidate markets and segments by attractiveness and fit.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.1.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-400
+          - BC-100
+        children: []
   - id: BP-30.20
     name: Develop Marketing Strategy
     level: 2
@@ -38,7 +64,45 @@ children:
         version: "7.4.0"
     realizes_capability_ids:
       - BC-400
-    children: []
+    children:
+      - id: BP-30.20.10
+        name: Define Offering and Customer Value Proposition
+        level: 3
+        description: >-
+          Articulate the offer-by-segment value proposition and positioning.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.2.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-400
+          - BC-820
+        children: []
+      - id: BP-30.20.20
+        name: Define Pricing Strategy
+        level: 3
+        description: >-
+          Set pricing strategy, structure, and policies aligned to the value proposition.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.2.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-440
+        children: []
+      - id: BP-30.20.30
+        name: Define Marketing Budgets
+        level: 3
+        description: >-
+          Set the overall marketing investment envelope and allocation across channels and programs.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.2.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-400
+          - BC-230
+        children: []
   - id: BP-30.30
     name: Develop Sales Strategy
     level: 2
@@ -50,7 +114,71 @@ children:
         version: "7.4.0"
     realizes_capability_ids:
       - BC-410
-    children: []
+    children:
+      - id: BP-30.30.10
+        name: Develop Sales Forecast
+        level: 3
+        description: >-
+          Develop the multi-period sales forecast by segment, channel, and product.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.3.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-410
+          - BC-230
+        children: []
+      - id: BP-30.30.20
+        name: Develop Sales Partner/Alliance Relationships
+        level: 3
+        description: >-
+          Establish and govern partner and alliance channels supporting sales.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.3.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-410
+          - BC-510
+        children: []
+      - id: BP-30.30.30
+        name: Establish Overall Sales Budgets
+        level: 3
+        description: >-
+          Set sales-function operating budgets and territory/account allocations.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.3.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-410
+          - BC-230
+        children: []
+      - id: BP-30.30.40
+        name: Establish Sales Goals and Measures
+        level: 3
+        description: >-
+          Set sales goals, quotas, and the performance measures used to manage the sales force.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.3.4"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-410
+        children: []
+      - id: BP-30.30.50
+        name: Establish Customer Management Measures
+        level: 3
+        description: >-
+          Define the customer-relationship measures used to track health and lifetime value.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.3.5"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-420
+          - BC-410
+        children: []
   - id: BP-30.40
     name: Develop and Manage Marketing Plans
     level: 2
@@ -62,7 +190,107 @@ children:
         version: "7.4.0"
     realizes_capability_ids:
       - BC-400
-    children: []
+    children:
+      - id: BP-30.40.10
+        name: Establish Goals, Objectives, and Metrics for Products/Services
+        level: 3
+        description: >-
+          Set per-product and per-channel marketing goals and KPIs.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.4.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-400
+        children: []
+      - id: BP-30.40.20
+        name: Establish Marketing Budgets
+        level: 3
+        description: >-
+          Allocate marketing investment across products, channels, and campaigns.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.4.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-400
+          - BC-230
+        children: []
+      - id: BP-30.40.30
+        name: Develop and Manage Media
+        level: 3
+        description: >-
+          Plan and run paid and owned media programs.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.4.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-400
+        children: []
+      - id: BP-30.40.40
+        name: Develop and Manage Pricing
+        level: 3
+        description: >-
+          Operate pricing across promotions, discounts, and lifecycle pricing decisions.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.4.4"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-440
+        children: []
+      - id: BP-30.40.50
+        name: Develop and Manage Promotional Activities
+        level: 3
+        description: >-
+          Plan and execute promotions, campaigns, and demand-generation programs.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.4.5"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-400
+        children: []
+      - id: BP-30.40.60
+        name: Track Customer Management Measures
+        level: 3
+        description: >-
+          Monitor customer health, retention, and engagement metrics.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.4.6"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-420
+          - BC-400
+        children: []
+      - id: BP-30.40.70
+        name: Develop and Manage Packaging Strategy
+        level: 3
+        description: >-
+          Manage product packaging and presentation in market.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.4.7"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-820
+          - BC-400
+        children: []
+      - id: BP-30.40.80
+        name: Manage Product and Brand
+        level: 3
+        description: >-
+          Run brand-management and product-management activities in market.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.4.8"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-400
+          - BC-820
+        children: []
   - id: BP-30.50
     name: Develop and Manage Sales Plans
     level: 2
@@ -75,4 +303,67 @@ children:
     realizes_capability_ids:
       - BC-410
       - BC-440
-    children: []
+    children:
+      - id: BP-30.50.10
+        name: Generate Leads
+        level: 3
+        description: >-
+          Source and qualify leads to feed the sales pipeline.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.5.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-410
+          - BC-400
+        children: []
+      - id: BP-30.50.20
+        name: Manage Customers and Accounts
+        level: 3
+        description: >-
+          Run account management for customers across renewal, upsell, and retention.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.5.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-420
+          - BC-410
+        children: []
+      - id: BP-30.50.30
+        name: Manage Customer Sales
+        level: 3
+        description: >-
+          Manage opportunities through pipeline stages from qualification to close.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.5.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-410
+        children: []
+      - id: BP-30.50.40
+        name: Manage Sales Orders
+        level: 3
+        description: >-
+          Capture, validate, and progress sales orders into fulfilment.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.5.4"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-410
+        children: []
+      - id: BP-30.50.50
+        name: Manage Sales Partners and Alliances
+        level: 3
+        description: >-
+          Operate partner and alliance sales channels.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.5.5"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-410
+          - BC-510
+        children: []

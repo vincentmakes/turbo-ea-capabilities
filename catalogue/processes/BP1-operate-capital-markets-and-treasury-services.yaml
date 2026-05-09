@@ -1,0 +1,52 @@
+id: BP-140
+name: Operate Capital Markets and Treasury Services
+level: 1
+industry: Banking & Capital Markets
+description: >-
+  Run capital-markets and treasury operations: trading execution, settlement and clearing, custody, asset servicing, and securities lending.
+framework_refs:
+  - framework: BIAN
+    external_id: "Capital Markets service-domain reference"
+realizes_capability_ids:
+  - BC-210
+children:
+  - id: BP-140.10
+    name: Manage Trading Operations
+    level: 2
+    description: >-
+      Execute trades across asset classes: equities, fixed income, FX, commodities, derivatives.
+    realizes_capability_ids:
+      - BC-210
+    children: []
+  - id: BP-140.20
+    name: Manage Clearing and Settlement
+    level: 2
+    description: >-
+      Clear and settle trades through central counterparties and bilateral mechanisms.
+    realizes_capability_ids:
+      - BC-210
+    children: []
+  - id: BP-140.30
+    name: Manage Custody Operations
+    level: 2
+    description: >-
+      Hold and safekeep client securities; process corporate actions and income.
+    realizes_capability_ids:
+      - BC-210
+    children: []
+  - id: BP-140.40
+    name: Manage Asset Servicing
+    level: 2
+    description: >-
+      Service investment products: corporate actions, dividend processing, proxy voting, tax reclaim.
+    realizes_capability_ids:
+      - BC-210
+    children: []
+  - id: BP-140.50
+    name: Manage Securities Lending
+    level: 2
+    description: >-
+      Operate securities-lending programs and collateral management.
+    realizes_capability_ids:
+      - BC-210
+    children: []

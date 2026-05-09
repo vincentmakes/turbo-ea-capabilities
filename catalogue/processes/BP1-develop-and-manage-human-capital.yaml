@@ -22,7 +22,44 @@ children:
         version: "7.4.0"
     realizes_capability_ids:
       - BC-300
-    children: []
+    children:
+      - id: BP-70.10.10
+        name: Develop Human Resources Strategy
+        level: 3
+        description: >-
+          Define HR strategy aligned to enterprise strategy and workforce ambition.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "7.1.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-300
+          - BC-100
+        children: []
+      - id: BP-70.10.20
+        name: Develop and Implement Human Resources Plans
+        level: 3
+        description: >-
+          Translate HR strategy into actionable workforce plans across functions and geographies.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "7.1.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-70.10.30
+        name: Monitor and Update Plans
+        level: 3
+        description: >-
+          Track and refresh HR plans as business and labour-market conditions change.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "7.1.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-300
+        children: []
   - id: BP-70.20
     name: Recruit, Source, and Select Employees
     level: 2
@@ -34,7 +71,55 @@ children:
         version: "7.4.0"
     realizes_capability_ids:
       - BC-300
-    children: []
+    children:
+      - id: BP-70.20.10
+        name: Manage Employee Requisitions
+        level: 3
+        description: >-
+          Receive, validate, and approve employee requisitions from hiring managers.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "7.2.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-70.20.20
+        name: Recruit and Source Candidates
+        level: 3
+        description: >-
+          Source candidates through internal, external, and referral channels.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "7.2.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-70.20.30
+        name: Screen and Select Candidates
+        level: 3
+        description: >-
+          Assess and select candidates against requisition criteria.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "7.2.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-70.20.40
+        name: Manage New Hire/Re-hire
+        level: 3
+        description: >-
+          Process the new-hire/re-hire administrative onboarding.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "7.2.4"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-300
+        children: []
   - id: BP-70.30
     name: Develop and Counsel Employees
     level: 2
@@ -46,7 +131,55 @@ children:
         version: "7.4.0"
     realizes_capability_ids:
       - BC-300
-    children: []
+    children:
+      - id: BP-70.30.10
+        name: Manage Employee Orientation and Deployment
+        level: 3
+        description: >-
+          Run orientation and initial deployment of new employees into their roles.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "7.3.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-70.30.20
+        name: Manage Employee Performance
+        level: 3
+        description: >-
+          Run goal-setting, performance reviews, and feedback cycles.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "7.3.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-70.30.30
+        name: Manage Employee Development
+        level: 3
+        description: >-
+          Plan and support employee development across careers.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "7.3.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-70.30.40
+        name: Develop and Train Employees
+        level: 3
+        description: >-
+          Design and deliver training programs that build employee capability.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "7.3.4"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-300
+        children: []
   - id: BP-70.40
     name: Reward and Retain Employees
     level: 2
@@ -58,7 +191,56 @@ children:
         version: "7.4.0"
     realizes_capability_ids:
       - BC-300
-    children: []
+    children:
+      - id: BP-70.40.10
+        name: Develop and Manage Reward, Recognition, and Motivation Programs
+        level: 3
+        description: >-
+          Design and run reward and recognition programs that drive engagement and retention.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "7.4.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-70.40.20
+        name: Manage and Administer Benefits
+        level: 3
+        description: >-
+          Administer health, retirement, and other benefits programs.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "7.4.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-70.40.30
+        name: Manage Employee Assistance and Retention
+        level: 3
+        description: >-
+          Run employee-assistance programs and retention interventions for at-risk employees.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "7.4.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-70.40.40
+        name: Payroll Administration
+        level: 3
+        description: >-
+          Coordinate the HR-side of payroll administration: data, time, leaves, and approvals.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "7.4.4"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-300
+          - BC-200
+        children: []
   - id: BP-70.50
     name: Redeploy and Retire Employees
     level: 2
@@ -70,7 +252,56 @@ children:
         version: "7.4.0"
     realizes_capability_ids:
       - BC-300
-    children: []
+    children:
+      - id: BP-70.50.10
+        name: Manage Promotion and Demotion Processes
+        level: 3
+        description: >-
+          Run promotion and demotion decisions and the associated changes to comp/role.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "7.5.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-70.50.20
+        name: Manage Separation
+        level: 3
+        description: >-
+          Run voluntary and involuntary separations, including notice and severance.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "7.5.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-300
+          - BC-150
+        children: []
+      - id: BP-70.50.30
+        name: Manage Retirement
+        level: 3
+        description: >-
+          Process employee retirements, including pension and benefits transitions.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "7.5.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-70.50.40
+        name: Manage Leave of Absence
+        level: 3
+        description: >-
+          Manage paid and unpaid leave types, including statutory and parental leaves.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "7.5.4"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-300
+        children: []
   - id: BP-70.60
     name: Manage Employee Information and Analytics
     level: 2
@@ -83,7 +314,58 @@ children:
     realizes_capability_ids:
       - BC-300
       - BC-610
-    children: []
+    children:
+      - id: BP-70.60.10
+        name: Manage Reporting Processes
+        level: 3
+        description: >-
+          Run statutory, regulatory, and management HR reporting cycles.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "7.6.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-70.60.20
+        name: Manage Employee Data
+        level: 3
+        description: >-
+          Maintain employee master data with the appropriate access and privacy controls.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "7.6.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-300
+          - BC-610
+        children: []
+      - id: BP-70.60.30
+        name: Manage HR Information Systems
+        level: 3
+        description: >-
+          Operate the HRIS and related systems supporting HR processes.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "7.6.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-300
+          - BC-600
+        children: []
+      - id: BP-70.60.40
+        name: Develop and Manage Employee Metrics
+        level: 3
+        description: >-
+          Define and produce workforce analytics and KPIs.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "7.6.4"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-300
+          - BC-230
+        children: []
   - id: BP-70.70
     name: Manage Employee Inquiries
     level: 2
@@ -95,4 +377,41 @@ children:
         version: "7.4.0"
     realizes_capability_ids:
       - BC-300
-    children: []
+    children:
+      - id: BP-70.70.10
+        name: Receive and Respond to Employee Inquiries
+        level: 3
+        description: >-
+          Receive, route, and resolve employee inquiries on policy, benefits, and pay.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "7.7.1"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-70.70.20
+        name: Manage Employee Work Assignment Inquiries
+        level: 3
+        description: >-
+          Handle inquiries about role, schedule, location, and assignment changes.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "7.7.2"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-70.70.30
+        name: Manage Employee Grievances
+        level: 3
+        description: >-
+          Handle formal employee grievances and works-council interactions.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "7.7.3"
+            version: "7.4.0"
+        realizes_capability_ids:
+          - BC-300
+          - BC-150
+        children: []
