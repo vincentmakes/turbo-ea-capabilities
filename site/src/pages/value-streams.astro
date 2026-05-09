@@ -16,7 +16,8 @@ const stageCount = data.filter((n) => n.level === 2).length;
 >
   <HeroTessellation
     title="Value Streams"
-    description={`${valueStreams.length} ${valueStreams.length === 1 ? "stream" : "streams"} · ${stageCount} ${stageCount === 1 ? "stage" : "stages"} · catalog ${version.catalogue_version}`}
+    tagline={`${valueStreams.length} ${valueStreams.length === 1 ? "stream" : "streams"} · ${stageCount} ${stageCount === 1 ? "stage" : "stages"}`}
+    description={`Catalog ${version.catalogue_version} · schema v${version.schema_version}`}
   />
 
   <main class="main">

@@ -15,7 +15,8 @@ const streamCount = valueStreams.length;
 >
   <HeroTessellation
     title="Enterprise Architecture Reference Catalog"
-    description={`${capabilityCount} capabilities · ${processCount} processes · ${streamCount} value streams · catalog ${version.catalogue_version}`}
+    tagline={`${capabilityCount} capabilities · ${processCount} processes · ${streamCount} value streams`}
+    description={`Catalog ${version.catalogue_version} · schema v${version.schema_version}`}
   />
 
   <main class="main">
@@ -41,7 +42,7 @@ const streamCount = valueStreams.length;
 
       <a class="catalog-tile" href="/business-processes">
         <div class="catalog-tile-icon" aria-hidden="true">
-          <span class="material-symbols-outlined">linear_scale</span>
+          <span class="material-symbols-outlined">route</span>
         </div>
         <div class="catalog-tile-body">
           <h2 class="catalog-tile-title">Business Processes</h2>
@@ -60,7 +61,7 @@ const streamCount = valueStreams.length;
 
       <a class="catalog-tile" href="/value-streams">
         <div class="catalog-tile-icon" aria-hidden="true">
-          <span class="material-symbols-outlined">route</span>
+          <span class="material-symbols-outlined">label_important</span>
         </div>
         <div class="catalog-tile-body">
           <h2 class="catalog-tile-title">Value Streams</h2>
@@ -78,23 +79,211 @@ const streamCount = valueStreams.length;
       </a>
     </section>
 
-    <section class="landing-meta">
-      <p>
-        Three orthogonal artefacts, one open source of truth. YAML in
-        <code>catalogue/</code> · JSON Schema validated · CLI helpers for
-        every change · CSV / JSON export from every catalog.
-      </p>
-      <p class="landing-meta-links">
-        <a href="/api/tree.json">JSON API</a>
-        <span aria-hidden="true">·</span>
-        <a href="/about">About the model</a>
-        <span aria-hidden="true">·</span>
-        <a
-          href="https://github.com/vincentmakes/turbo-ea-capabilities"
-          target="_blank"
-          rel="noopener"
-        >GitHub</a>
-      </p>
+    <section class="about-section" id="about" aria-labelledby="about-heading">
+      <div class="section-header">
+        <h2 id="about-heading">About this catalog</h2>
+      </div>
+
+      <div class="detail-card">
+        <p>
+          An open-source <strong>Enterprise Architecture Reference Catalog</strong>.
+          It is intentionally tool-agnostic and can be used in any EA management
+          solution &mdash; well beyond Turbo EA.
+        </p>
+        <p style="margin-top: 12px;">
+          The catalog ships <strong>three orthogonal artefacts</strong>, designed
+          to be used together:
+        </p>
+        <ul class="about-bullets">
+          <li>
+            <strong>Capabilities</strong> &mdash; <em>what</em> the business
+            does. An industry-aware, MECE hierarchy of noun-phrased business
+            capabilities, anchored on the Business Capability Governance Model.
+          </li>
+          <li>
+            <strong>Business Processes</strong> &mdash; <em>how</em> the work
+            is done. Verb-phrased activities organised on APQC PCF's
+            Category → Process Group → Process → Activity hierarchy, with
+            cross-walks to BIAN, eTOM, ITIL, and SCOR.
+          </li>
+          <li>
+            <strong>Value Streams</strong> &mdash; <em>end-to-end</em> value
+            delivery. Trigger-to-outcome flows whose stages link the
+            capabilities and processes that participate at each step.
+          </li>
+        </ul>
+        <p style="margin-top: 12px;">
+          This site exists to help enterprise architects get started with the
+          implementation of an EA function, by providing a curated, opinionated
+          baseline that teams can adopt, adapt, and extend.
+        </p>
+        <p style="margin-top: 12px;">
+          The naming convention, decomposition rules, and identifier scheme
+          come from the
+          <a
+            href="https://github.com/vincentmakes/turbo-ea-capabilities/blob/main/business-capability-governance-model.md"
+            target="_blank"
+            rel="noopener">Business Capability Governance Model</a>.
+        </p>
+
+        <div class="detail-meta-grid">
+          <div>
+            <div class="meta-key">Catalog version</div>
+            <div class="meta-val">{version.catalogue_version}</div>
+          </div>
+          <div>
+            <div class="meta-key">Schema version</div>
+            <div class="meta-val">v{version.schema_version}</div>
+          </div>
+          <div>
+            <div class="meta-key">Generated</div>
+            <div class="meta-val">{version.generated_at.slice(0, 10)}</div>
+          </div>
+          <div>
+            <div class="meta-key">Capabilities</div>
+            <div class="meta-val">{capabilityCount}</div>
+          </div>
+          <div>
+            <div class="meta-key">Processes</div>
+            <div class="meta-val">{processCount}</div>
+          </div>
+          <div>
+            <div class="meta-key">Value streams</div>
+            <div class="meta-val">{streamCount}</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-card author-card">
+        <h3 style="margin-top:0;">Author</h3>
+        <div class="author-block">
+          <a href="https://cv.verdet.me" target="_blank" rel="noopener">
+            <img
+              src="https://www.turbo-ea.org/blog/images/vincent-verdet.jpeg"
+              alt="Vincent Verdet"
+              class="author-photo"
+            />
+          </a>
+          <div class="author-bio">
+            <div class="author-name">Vincent Verdet</div>
+            <p>
+              This reference catalog has been developed by Vincent Verdet, a
+              Strategic Technology Leader and Enterprise Architect with
+              extensive experience enabling business objectives with
+              technology.
+            </p>
+            <a
+              href="https://www.linkedin.com/in/vincent-verdet/"
+              target="_blank"
+              rel="noopener"
+              class="linkedin-button author-linkedin"
+              aria-label="Vincent Verdet on LinkedIn"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              <span>Connect on LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <h3 style="margin-top:0;">Support this project</h3>
+        <p>
+          This catalog is free and open-source. If it's useful to you or your
+          team, you can support continued development with a small contribution.
+        </p>
+        <iframe
+          src="https://github.com/sponsors/vincentmakes/button"
+          title="Sponsor vincentmakes"
+          height="32"
+          width="114"
+          style="border: 0; border-radius: 6px; margin-top: 12px;"
+        ></iframe>
+      </div>
+
+      <div class="detail-card">
+        <h3 style="margin-top:0;">JSON API</h3>
+        <p>Aggregated endpoints, static and edge-cached:</p>
+        <ul class="about-bullets">
+          <li><a href="/api/version.json"><code>/api/version.json</code></a> — catalog + schema version</li>
+          <li><a href="/api/tree.json"><code>/api/tree.json</code></a> — full nested capability tree</li>
+          <li><a href="/api/capabilities.json"><code>/api/capabilities.json</code></a> — flat array of every capability</li>
+          <li><a href="/api/business-processes.json"><code>/api/business-processes.json</code></a> — flat array of every process</li>
+          <li><a href="/api/bp-tree.json"><code>/api/bp-tree.json</code></a> — full nested process tree</li>
+          <li><a href="/api/value-streams.json"><code>/api/value-streams.json</code></a> — every value stream with its stages</li>
+        </ul>
+        <p style="margin-top: 12px;">
+          For per-node lookup or per-L1 / per-BP1 subtrees use the Python
+          package below — it bundles the same per-id files locally without
+          round-tripping the network.
+        </p>
+      </div>
+
+      <div class="detail-card">
+        <h3 style="margin-top:0;">Native consumption</h3>
+        <p>For offline / airgapped use:</p>
+        <pre style="background: var(--color-pale-blue); padding: 16px; border-radius: 8px; margin-top: 12px;">pip install turbo-ea-capabilities</pre>
+        <p style="margin-top: 12px;">
+          See the package on
+          <a href="https://pypi.org/project/turbo-ea-capabilities/" target="_blank" rel="noopener">PyPI</a>.
+        </p>
+      </div>
     </section>
   </main>
 </Base>
+
+<style>
+  .about-section {
+    margin-top: 24px;
+    scroll-margin-top: 80px;
+  }
+  .about-bullets {
+    margin: 12px 0 0 24px;
+    padding: 0;
+  }
+  .about-bullets li {
+    margin: 6px 0;
+    line-height: 1.55;
+  }
+  .author-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 12px;
+  }
+  .author-photo {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 2px solid var(--color-border);
+  }
+  .author-name {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color-dark);
+    margin-bottom: 6px;
+  }
+  .author-bio p {
+    margin: 0;
+  }
+  .author-linkedin {
+    margin-top: 14px;
+  }
+  @media (max-width: 600px) {
+    .author-block {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+</style>

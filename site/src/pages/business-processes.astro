@@ -14,7 +14,8 @@ const totalProcesses = version.process_count ?? bpFlat.length;
 >
   <HeroTessellation
     title="Business Processes"
-    description={`${totalProcesses} ${totalProcesses === 1 ? "process node" : "process nodes"} · catalog ${version.catalogue_version} · schema v${version.schema_version}`}
+    tagline={`${totalProcesses} ${totalProcesses === 1 ? "process node" : "process nodes"}`}
+    description={`Catalog ${version.catalogue_version} · schema v${version.schema_version}`}
   />
 
   <main class="main">
