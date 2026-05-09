@@ -1,0 +1,55 @@
+id: BP-170
+name: Deliver Patient Care
+level: 1
+industry: Healthcare Providers
+description: >-
+  Run end-to-end patient care delivery in a hospital or care-network setting: from access through clinical encounters to discharge and post-discharge follow-up.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "Healthcare Provider PCF v7.2 — Care delivery categories"
+realizes_capability_ids:
+  - BC-100
+children:
+  - id: BP-170.10
+    name: Manage Patient Access and Registration
+    level: 2
+    description: >-
+      Receive, register, schedule, and admit patients across inpatient, outpatient, and emergency channels.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-170.20
+    name: Perform Clinical Assessment and Triage
+    level: 2
+    description: >-
+      Triage and clinically assess patients on arrival, including history, examination, and acuity scoring.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-170.30
+    name: Deliver Clinical Care
+    level: 2
+    description: >-
+      Provide clinical care across inpatient, outpatient, surgical, and emergency settings.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-170.40
+    name: Manage Care Coordination and Transitions
+    level: 2
+    description: >-
+      Coordinate care across teams and settings; manage transitions between units, facilities, or to home.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-170.50
+    name: Discharge and Follow Up
+    level: 2
+    description: >-
+      Discharge patients with appropriate instructions, medication reconciliation, and follow-up scheduling.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-170.60
+    name: Manage Patient Experience
+    level: 2
+    description: >-
+      Monitor and manage the patient experience across the care journey, including grievance handling.
+    realizes_capability_ids:
+      - BC-430
+    children: []

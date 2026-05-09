@@ -1,0 +1,65 @@
+id: BP-180
+name: Manage Clinical Operations and Health Information
+level: 1
+industry: Healthcare Providers
+description: >-
+  Run the operational backbone of a healthcare provider: ancillary clinical services (pharmacy, laboratory, imaging, surgical), health information management, infection prevention, and credentialing.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "Healthcare Provider PCF v7.2 — Clinical operations categories"
+realizes_capability_ids:
+  - BC-100
+children:
+  - id: BP-180.10
+    name: Manage Pharmacy Operations
+    level: 2
+    description: >-
+      Operate inpatient and outpatient pharmacy services, including medication preparation, dispensing, and reconciliation.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-180.20
+    name: Manage Laboratory Operations
+    level: 2
+    description: >-
+      Operate clinical laboratory services across pre-analytical, analytical, and post-analytical phases.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-180.30
+    name: Manage Imaging and Diagnostics Operations
+    level: 2
+    description: >-
+      Operate radiology and imaging services, including modality scheduling, acquisition, and reporting.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-180.40
+    name: Manage Surgical and Procedural Services
+    level: 2
+    description: >-
+      Operate operating rooms and procedural suites, including scheduling, sterile processing, and theatre logistics.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-180.50
+    name: Manage Health Information and Medical Records
+    level: 2
+    description: >-
+      Manage patient medical records, clinical documentation, coding, and information release.
+    realizes_capability_ids:
+      - BC-610
+    children: []
+  - id: BP-180.60
+    name: Manage Infection Prevention and Control
+    level: 2
+    description: >-
+      Run infection-prevention surveillance, controls, and outbreak response across the care environment.
+    realizes_capability_ids:
+      - BC-720
+      - BC-730
+    children: []
+  - id: BP-180.70
+    name: Manage Practitioner Credentialing and Privileging
+    level: 2
+    description: >-
+      Credential and privilege practising clinicians; manage ongoing competency and peer review.
+    realizes_capability_ids:
+      - BC-300
+    children: []
