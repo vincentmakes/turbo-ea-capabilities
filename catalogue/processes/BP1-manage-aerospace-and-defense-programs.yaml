@@ -1,0 +1,70 @@
+id: BP-230
+name: Manage Aerospace and Defense Programs
+level: 1
+industry: Defense & Aerospace
+description: >-
+  Run aerospace and defense programs across the acquisition lifecycle: capture, contract, develop, deliver, sustain, and dispose, including export-control and configuration management.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "Aerospace and Defense PCF v7.2 — A&D-specific operating categories"
+realizes_capability_ids:
+  - BC-100
+children:
+  - id: BP-230.10
+    name: Manage Capture and Bid
+    level: 2
+    description: >-
+      Pursue defense and aerospace opportunities: bid/no-bid, capture planning, proposal development.
+    realizes_capability_ids:
+      - BC-410
+    children: []
+  - id: BP-230.20
+    name: Manage Program Contract and Earned Value
+    level: 2
+    description: >-
+      Manage the program contract through award, change, modifications, and earned-value reporting.
+    realizes_capability_ids:
+      - BC-150
+      - BC-900
+    children: []
+  - id: BP-230.30
+    name: Perform Mission Systems Engineering
+    level: 2
+    description: >-
+      Perform systems engineering for defense and aerospace mission systems, including verification and validation.
+    realizes_capability_ids:
+      - BC-810
+    children: []
+  - id: BP-230.40
+    name: Manage Configuration and Technical Data Package
+    level: 2
+    description: >-
+      Maintain configuration of platforms and systems; manage the technical data package across the lifecycle.
+    realizes_capability_ids:
+      - BC-820
+    children: []
+  - id: BP-230.50
+    name: Manage Export Controls and Security
+    level: 2
+    description: >-
+      Manage ITAR / EAR / EU dual-use export controls and program security (industrial security, classified data).
+    realizes_capability_ids:
+      - BC-150
+      - BC-620
+    children: []
+  - id: BP-230.60
+    name: Sustain Defense Systems
+    level: 2
+    description: >-
+      Sustain in-service defense and aerospace systems: depot maintenance, overhaul, modifications, obsolescence.
+    realizes_capability_ids:
+      - BC-700
+    children: []
+  - id: BP-230.70
+    name: Manage Disposal and Demilitarisation
+    level: 2
+    description: >-
+      Demilitarise and dispose of defense materiel at end-of-life under regulatory and security controls.
+    realizes_capability_ids:
+      - BC-740
+    children: []

@@ -1,0 +1,56 @@
+id: BP-200
+name: Manufacture, Supply, and Pharmacovigilance
+level: 1
+industry: Pharmaceuticals & Life Sciences
+description: >-
+  Manufacture pharmaceutical and biologic products under GMP; manage commercial supply chain; run pharmacovigilance and post-market safety surveillance.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "Life Sciences PCF v6.1/7.2 — Manufacturing and Pharmacovigilance categories"
+realizes_capability_ids:
+  - BC-520
+  - BC-130
+children:
+  - id: BP-200.10
+    name: Manage GMP Manufacturing Operations
+    level: 2
+    description: >-
+      Run GMP-compliant manufacturing of APIs, drug products, and biologics.
+    realizes_capability_ids:
+      - BC-520
+      - BC-720
+    children: []
+  - id: BP-200.20
+    name: Manage Quality Assurance and Quality Control
+    level: 2
+    description: >-
+      Run QA/QC programs across the product lifecycle, including stability, release testing, and CAPA.
+    realizes_capability_ids:
+      - BC-720
+    children: []
+  - id: BP-200.30
+    name: Manage Cold-Chain and Pharmaceutical Supply Chain
+    level: 2
+    description: >-
+      Operate the pharmaceutical supply chain, including cold-chain logistics, serialisation, and distributor management.
+    realizes_capability_ids:
+      - BC-520
+      - BC-530
+    children: []
+  - id: BP-200.40
+    name: Manage Pharmacovigilance and Adverse-Event Reporting
+    level: 2
+    description: >-
+      Capture, assess, and report adverse events and safety signals; maintain the safety database and PSUR cycle.
+    realizes_capability_ids:
+      - BC-130
+      - BC-120
+    children: []
+  - id: BP-200.50
+    name: Manage Product Registration and Post-Market Compliance
+    level: 2
+    description: >-
+      Maintain product registrations across markets and run post-market regulatory commitments and inspections.
+    realizes_capability_ids:
+      - BC-130
+    children: []

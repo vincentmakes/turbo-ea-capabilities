@@ -27,3 +27,10 @@ npm run vs:add  | vs:add-stage | vs:deprecate
 If a future migration needs the same shape, prefer copying and adapting the
 relevant script into `scripts/` (not back into `_archive/`). Treat the
 archived copy as documentation, not as live code.
+
+
+## Phase 2 addendum
+
+| Script | What it did | When it ran |
+|---|---|---|
+| `import_industry_pcfs_phase2.py` | Authored 11 industry-specific BP1 files (Healthcare ×2, Life Sciences ×2, Petroleum ×2, A&D ×1, Education ×2, Utilities ×2) at BP1 + BP2 depth, anchored on APQC industry PCFs and supporting frameworks per `business-capability-governance-model.md` §11.7. | One PR (multiple commits). |

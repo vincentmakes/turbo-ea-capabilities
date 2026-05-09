@@ -934,6 +934,78 @@ Same scheme as capabilities: `Cross-Industry` | `<Single>` | `<A; B>`. The capab
 - They are **not** value streams. A value stream describes the end-to-end flow; a process is one of the verb-phrased activities executed within a stage of that flow.
 - They are **not** BPMN diagrams. The catalogue stops at the activity level; sequence, gateways, and lanes belong in BPMN.
 
+### 11.7 Process Layer Reference Frameworks
+
+Mirror of §9.8 for the BP layer. Each industry's process catalogue is anchored on one or more public reference frameworks; the relevant framework codes are pinned via `framework_refs` on each BP node so downstream consumers can cross-walk to the source. Naming and structure are *informed* by these references but adapted to this catalogue's governance conventions (verb-phrased Title Case, sparse `BP-N0[.M0]` ids, depth-4 cap, MECE within parent). Citing a framework does not exempt a node from §11.3 (naming) or §11.5 (cross-references).
+
+#### Cross-industry baseline
+
+- **APQC Process Classification Framework® (PCF) — Cross-Industry, v7.4.0** *(authoritative for BP-10 through BP-120)*. APQC-published taxonomy with 12 top-level Categories, ~60 Process Groups, ~250+ Processes, 1,000+ Activities. Public summary: <https://www.apqc.org/process-frameworks>. **APQC PCF v8.0** is the most recent public version; this catalogue currently anchors on v7.4.0 and will re-pin in a follow-up PR once v8.0 codes are verified end-to-end (BP3 codes shifted in several categories between 7.4 and 8.0).
+
+#### Banking & Capital Markets
+
+- **APQC Banking PCF, v7.2.x.** Industry-specific PCF for retail and commercial banking (anchors `BP-130` Operate Banking Products and Services, `BP-140` Operate Capital Markets and Treasury Services).
+- **BIAN (Banking Industry Architecture Network) Service Landscape, v9.x+.** Banking-industry reference architecture: ~300 elemental Service Domains organised across categories such as Customer & Channel, Products & Offers, Lending, Deposits, Payments, Trade Banking, Risk & Compliance, Finance & Settlement. Used as a cross-walk target for BP2/BP3 nodes inside `BP-130`/`BP-140` via `framework_refs[].framework: BIAN`.
+
+#### Insurance
+
+- **APQC Banking PCF — Insurance lines** *(where applicable)* and ACORD reference (anchors `BP-150` Operate Insurance Underwriting, Policy, and Claims).
+- **ACORD Reference Architecture.** Insurance-industry reference comprising an Information Model (Policy, Party, Claim, Financial Transaction), a Capability Model (un-sequenced activities across the value chain), and a Process Model (workflow-oriented reference processes covering Distribution, Underwriting, Policy Administration, Claims, Reinsurance, Customer Service). Public overview: <https://www.acord.org/standards-architecture/reference-architecture>. Used as a cross-walk target via `framework_refs[].framework: BIAN` (where insurance lines overlap) or `external_id` referencing ACORD capability/process names.
+
+#### Telecommunications
+
+- **APQC Telecommunication PCF, v7.2.x.** Industry-specific PCF for fixed and mobile communications providers.
+- **TM Forum Frameworx (eTOM, SID, TAM, ODA), GB921 v21.x+.** Telecom-industry reference comprising the Business Process Framework (eTOM), Information Framework (SID), Application Framework (TAM), and Open Digital Architecture. eTOM organises processes across three vertical areas (Strategy/Infrastructure & Product, Operations, Enterprise Management) and four horizontal functional groupings (Customer, Service, Resource, Supplier/Partner). Anchors `BP-160` Operate Communications Networks and Services. Public summary: <https://www.tmforum.org/open-digital-architecture/process-framework-etom/>.
+
+#### Healthcare Providers
+
+- **APQC Healthcare Provider PCF, v7.2.1** *(KPMG-donated)*. Industry-specific PCF for hospitals and care networks. Restructures the cross-industry PCF with categories relevant to direct medical-services delivery. Anchors `BP-170` Deliver Patient Care and `BP-180` Manage Clinical Operations and Health Information.
+- **HL7 / FHIR** — clinical data interchange standard; used at the data layer rather than as a process taxonomy. Cross-referenced where specific processes generate or consume FHIR resources.
+- **The Joint Commission accreditation standards, ISMP medication-safety standards** — inform the *content* of clinical and pharmacy processes but are not modelled as `framework_refs` (regulatory rather than process taxonomies).
+
+#### Pharmaceuticals & Life Sciences
+
+- **APQC Life Sciences PCF, v6.1 / v7.2.x** *(formerly the Pharmaceutical PCF)*. Industry-specific PCF aligned with NAICS 3254 and 3391. Anchors `BP-190` Discover and Develop Therapeutics and `BP-200` Manufacture, Supply, and Pharmacovigilance.
+- **ICH guidelines** (E6 Good Clinical Practice, Q10 Pharmaceutical Quality System, Q9 Quality Risk Management, E2A-E2F Pharmacovigilance) — inform the *content* of clinical-development, manufacturing-quality, and pharmacovigilance processes.
+- **FDA / EMA / PMDA / CDSCO regulatory submission frameworks** — inform regulatory-submission processes; cross-references via `framework_refs[].framework: APQC-PCF` plus free-form `references[]` URIs.
+
+#### Petroleum (Oil & Gas)
+
+- **APQC Upstream Petroleum PCF, v7.2.x** *(anchors `BP-210`)* and **APQC Downstream Petroleum PCF, v7.2.x** *(anchors `BP-220`)*. The two industry segments are intentionally separated; midstream is split between the two depending on operating model.
+- **IOGP (International Association of Oil & Gas Producers) standards.** Used as evidence references for upstream operating processes.
+- **SPE Petroleum Resources Management System (SPE-PRMS).** Resource classification framework; cited in resource-evaluation processes.
+- **API standards, IPIECA reporting standards.** Operating and reporting standards across the value chain.
+
+#### Aerospace & Defense
+
+- **APQC Aerospace and Defense PCF, v7.2.x** *(IBM-donated)*. Industry-specific PCF restructuring the cross-industry taxonomy for A&D-specific operating categories (mission systems engineering, configuration management, contract and earned-value management). Anchors `BP-230` Manage Aerospace and Defense Programs.
+- **AS9100 (Quality Management Systems for Aerospace).** Standard for aerospace quality; informs the *content* of A&D quality and engineering processes but is not pinned as a `framework_refs` entry.
+- **DoD acquisition lifecycle (DoDI 5000.02), ITAR / EAR export controls.** Inform program and export-control processes.
+
+#### Education
+
+- **APQC Education PCF, v7.2.1** *(supports both higher education and K-12)*. Industry-specific PCF restructured for education organisations. Anchors `BP-240` Manage Student Lifecycle and `BP-250` Manage Curriculum, Programmes, and Research.
+- **CHEA / ENQA / TEQSA accreditation processes**, **CEDS (Common Education Data Standards)**, **ISCED (International Standard Classification of Education)** — inform the *content* of accreditation, data, and curriculum processes.
+
+#### Utilities (Power & Water)
+
+- **APQC Utilities PCF, v7.2.x.** Industry-specific PCF restructuring the cross-industry taxonomy for energy and utility organisations (generation, transmission, distribution, retail). Anchors `BP-260` Operate Energy and Water Asset Operations and `BP-270` Manage Utility Customer and Regulatory Operations.
+- **NERC Reliability Standards (BAL, FAC, IRO, TOP, PRC, EOP, MOD), NERC CIP** — inform reliability-operations and cybersecurity processes for North American bulk-electric-system operators.
+- **IEC 61850 (substation automation), IEC 61968/61970 (CIM)** — inform network-operations processes and meter-data management.
+- **AWWA Standards, WHO Drinking-Water Quality Guidelines, EU Drinking Water Directive 2020/2184** — inform water-utility production, treatment, and distribution processes.
+- **ENTSO-E Network Codes, FERC Orders.** Inform European TSO and US wholesale electricity market processes.
+
+#### How to add a new industry's process catalogue
+
+Same workflow as adding a new BC industry under §9.8:
+
+1. **Identify the canonical framework(s)** for the target industry (typically the APQC industry PCF plus one or two industry-specific architectures or standards). Public-summary URLs and version numbers are required.
+2. **Add a subsection here** (under §11.7) covering the framework(s) and the BP1 file(s) they anchor. Same shape as the subsections above.
+3. **Author the BP1 file(s)** with `industry: <BC L1 industry vocabulary value>` and `framework_refs[]` pinning each anchoring framework with `external_id` set to the framework's identifier for that node (where applicable).
+4. **Run `npm run lint`** before commit. Lint enforces that the industry tag matches the BC L1 vocabulary (single source of truth: §7.7 / §9.8).
+
+If the industry's framework isn't yet documented here, the new subsection lands in the **same PR** as the BP1 file(s) — never separately.
+
 ---
 
 ## Part E — Cross-Layer Linkage

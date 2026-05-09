@@ -1,0 +1,53 @@
+id: BP-250
+name: Manage Curriculum, Programmes, and Research
+level: 1
+industry: Education
+description: >-
+  Manage the academic backbone: curriculum and programme design, accreditation, research administration, and educational content management.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "Education PCF v7.2 — Curriculum and research categories"
+realizes_capability_ids:
+  - BC-100
+children:
+  - id: BP-250.10
+    name: Design and Maintain Curriculum and Programmes
+    level: 2
+    description: >-
+      Design, approve, and maintain curricula and academic programmes; manage course catalogues.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-250.20
+    name: Manage Programme Accreditation and Quality Assurance
+    level: 2
+    description: >-
+      Manage programme accreditation cycles and academic quality-assurance processes.
+    realizes_capability_ids:
+      - BC-720
+      - BC-130
+    children: []
+  - id: BP-250.30
+    name: Administer Research and Scholarship
+    level: 2
+    description: >-
+      Administer research grants, ethics, integrity, and research outputs; manage research-data governance.
+    realizes_capability_ids:
+      - BC-150
+      - BC-610
+    children: []
+  - id: BP-250.40
+    name: Manage Educational Content and Learning Resources
+    level: 2
+    description: >-
+      Develop and curate teaching content, courseware, and learning resources, including digital platforms.
+    realizes_capability_ids:
+      - BC-820
+    children: []
+  - id: BP-250.50
+    name: Manage Educator Workforce
+    level: 2
+    description: >-
+      Plan and manage the academic workforce: recruitment, tenure tracks, peer review, professional development.
+    realizes_capability_ids:
+      - BC-300
+    children: []
