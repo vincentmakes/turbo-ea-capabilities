@@ -7379,7 +7379,9 @@ value_streams:
     stage_name: Procurement & Inventory
     capability_ids:
     - BC-2040
-    process_ids: []
+    process_ids:
+    - BP-450.40
+    - BP-40.20
     notes: Refrigerant sourcing, allocation, and storage
   - id: VS-470.20
     stage_order: 2
@@ -7387,42 +7389,53 @@ value_streams:
     capability_ids:
     - BC-2040
     - BC-2060
-    process_ids: []
+    process_ids:
+    - BP-450.20
+    - BP-450.40
     notes: Asset-level charge accounting on installed equipment; Field charging activity during install and service visits
   - id: VS-470.30
     stage_order: 3
     stage_name: Leak Detection & Repair
     capability_ids:
     - BC-2040
-    process_ids: []
+    process_ids:
+    - BP-450.30
+    - BP-450.40
     notes: Leak rate tracking, repair triggers, and rate reporting
   - id: VS-470.40
     stage_order: 4
     stage_name: Recovery & Reclaim
     capability_ids:
     - BC-2040
-    process_ids: []
+    process_ids:
+    - BP-450.40
     notes: Field recovery, reclamation, and recycled-refrigerant quality control
   - id: VS-470.50
     stage_order: 5
     stage_name: Regulatory Reporting
     capability_ids:
     - BC-2040
-    process_ids: []
+    process_ids:
+    - BP-450.40
+    - BP-110.30
     notes: F-Gas, EPA Section 608, and Kigali Amendment reporting
   - id: VS-470.60
     stage_order: 6
     stage_name: Phase-Out & Substitution
     capability_ids:
     - BC-2040
-    process_ids: []
+    process_ids:
+    - BP-450.40
+    - BP-450.10
     notes: Refrigerant transition planning and low-GWP substitution roadmap
   - id: VS-470.70
     stage_order: 7
     stage_name: End-of-Life Disposition
     capability_ids:
     - BC-2040
-    process_ids: []
+    process_ids:
+    - BP-450.40
+    - BP-100.40
     notes: Certified destruction, disposal, and chain-of-custody evidence
 - id: VS-480
   name: Registration-to-Certification
