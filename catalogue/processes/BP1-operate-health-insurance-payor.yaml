@@ -1,0 +1,57 @@
+id: BP-300
+name: Operate Health Insurance Payor
+level: 1
+industry: Insurance
+description: >-
+  Run health insurance payor operations: member enrolment and eligibility, provider network management, medical claims adjudication, care management, member services, and regulatory operations distinct from P&C insurance. Aligned to APQC Health Insurance Payor PCF v7.2.1.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "Health Insurance Payor PCF v7.2.1"
+realizes_capability_ids:
+  - BC-100
+children:
+  - id: BP-300.10
+    name: Manage Member Enrolment and Eligibility
+    level: 2
+    description: >-
+      Enrol and disenrol members across individual, group, Medicare, and Medicaid lines; maintain eligibility.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-300.20
+    name: Manage Provider Network and Contracting
+    level: 2
+    description: >-
+      Recruit, contract, credential, and manage performance of in-network providers; maintain provider directory.
+    realizes_capability_ids:
+      - BC-510
+    children: []
+  - id: BP-300.30
+    name: Adjudicate Medical Claims
+    level: 2
+    description: >-
+      Receive, edit, adjudicate, and pay medical claims under benefit plans; manage appeals and grievances.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-300.40
+    name: Manage Care and Utilization
+    level: 2
+    description: >-
+      Run care-management and utilisation-management programs: prior authorisation, case management, disease management.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-300.50
+    name: Manage Member Services
+    level: 2
+    description: >-
+      Service members across channels for inquiries, ID cards, formularies, and benefits questions.
+    realizes_capability_ids:
+      - BC-430
+    children: []
+  - id: BP-300.60
+    name: Manage Health Plan Regulatory Operations
+    level: 2
+    description: >-
+      Run regulatory operations specific to health plans: HEDIS, Star Ratings, MLR reporting, state DOI filings.
+    realizes_capability_ids:
+      - BC-130
+    children: []
