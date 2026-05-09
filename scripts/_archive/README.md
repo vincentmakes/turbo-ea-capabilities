@@ -56,3 +56,10 @@ archived copy as documentation, not as live code.
 |---|---|---|
 | `import_industry_pcfs_phase5.py` | Authored the 12 final industry-specific BP1 files (Travel & Hospitality BP-380, Media BP-390, Professional Services BP-400, Transportation & Logistics BP-410, Software & Technology BP-420, Air Traffic Control BP-430, Engineering Services BP-440, HVAC & BAS BP-450, Electrical Components BP-460, Manufacturing & Industrial BP-470, Agriculture BP-480, Chemicals BP-490) at BP1 + BP2 depth, completing coverage of all 27 BC industries. | One PR (multiple commits). |
 | `wire_industry_vs_phase5.py` | Wired `process_ids[]` for the 12 industry-specific value streams enabled by Phase 5 BP1s (VS-100/270 Media, VS-170/320/520 Travel, VS-190/300 Prof Services, VS-230 Electrical, VS-250 ATC, VS-370 Transp & Log, VS-470 HVAC, VS-620 Software). | One PR (multiple per-industry commits). |
+
+## Phase 6 addendum
+
+| Script | What it did | When it ran |
+|---|---|---|
+| `wire_multi_industry_vs.py` | Wired `process_ids[]` for the multi-industry value streams (VS-130 Concept-to-Manufacture, VS-350 Maintenance-Request-to-Closure) using `(stream_id, stage_name, industry_variant)` keys, plus appended Mining BPs to VS-330 mining-variant stages. | One PR (multiple commits). |
+| `import_industry_bp3_v2.py` | BP3 drill-down for the highest-leverage industry BP1s without it: Public Sector (BP-340/350/360 — 9 wired streams), Real Estate (BP-320/330), Travel (BP-380), Insurance (BP-150), Defense (BP-230), Utilities (BP-260/270), Education (BP-240/250). | One PR (one commit per industry pair). |
