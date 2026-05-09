@@ -2761,7 +2761,8 @@ value_streams:
     capability_ids:
     - BC-3800
     - BC-3850
-    process_ids: []
+    process_ids:
+    - BP-260.10
     industry_variant: Utilities
     notes: Unit commitment and economic dispatch against forecast load; Forward and bilateral position pre-scheduling
   - id: VS-260.20
@@ -2769,7 +2770,9 @@ value_streams:
     stage_name: Wholesale Trading & Position Management
     capability_ids:
     - BC-3850
-    process_ids: []
+    process_ids:
+    - BP-220.30
+    - BP-260.10
     industry_variant: Utilities
     notes: Day-ahead, intraday, capacity, and environmental commodity trading
   - id: VS-260.30
@@ -2777,7 +2780,8 @@ value_streams:
     stage_name: Generation Operations
     capability_ids:
     - BC-3800
-    process_ids: []
+    process_ids:
+    - BP-260.10
     industry_variant: Utilities
     notes: Thermal, hydro, nuclear, renewable, and storage plant operations
   - id: VS-260.40
@@ -2785,7 +2789,8 @@ value_streams:
     stage_name: System Balancing & Dispatch
     capability_ids:
     - BC-3830
-    process_ids: []
+    process_ids:
+    - BP-260.30
     industry_variant: Utilities
     notes: Real-time system ops, frequency, reserves, and ancillary services
   - id: VS-260.50
@@ -2793,7 +2798,8 @@ value_streams:
     stage_name: Distributed Energy Coordination
     capability_ids:
     - BC-3840
-    process_ids: []
+    process_ids:
+    - BP-260.50
     industry_variant: Utilities
     notes: VPP, demand response, EV grid integration, and microgrid dispatch
   - id: VS-260.60
@@ -2802,7 +2808,8 @@ value_streams:
     capability_ids:
     - BC-3810
     - BC-3820
-    process_ids: []
+    process_ids:
+    - BP-260.30
     industry_variant: Utilities
     notes: Transmission grid operation and inter-area flow; Distribution-network delivery to point of use
   - id: VS-260.70
@@ -2811,7 +2818,8 @@ value_streams:
     capability_ids:
     - BC-3910
     - BC-3830
-    process_ids: []
+    process_ids:
+    - BP-270.10
     industry_variant: Utilities
     notes: AMI data acquisition, validation, and aggregation by BRP; Imbalance volume, price calculation, and BRP notification
   - id: VS-260.80
@@ -2819,7 +2827,9 @@ value_streams:
     stage_name: Trade Settlement & Reporting
     capability_ids:
     - BC-3850
-    process_ids: []
+    process_ids:
+    - BP-270.20
+    - BP-270.50
     industry_variant: Utilities
     notes: Trade confirmation, settlement, and REMIT / EMIR / Dodd-Frank reporting
 - id: VS-270
@@ -7877,7 +7887,8 @@ value_streams:
     stage_name: Resource Planning & Authorisation
     capability_ids:
     - BC-3860
-    process_ids: []
+    process_ids:
+    - BP-260.60
     industry_variant: Utilities
     notes: Supply-demand balance, drought planning, abstraction licence administration
   - id: VS-550.20
@@ -7885,7 +7896,8 @@ value_streams:
     stage_name: Catchment Stewardship
     capability_ids:
     - BC-3860
-    process_ids: []
+    process_ids:
+    - BP-260.20
     industry_variant: Utilities
     notes: Catchment risk assessment, source protection zones, stakeholder engagement
   - id: VS-550.30
@@ -7893,7 +7905,8 @@ value_streams:
     stage_name: Raw Water Abstraction
     capability_ids:
     - BC-3860
-    process_ids: []
+    process_ids:
+    - BP-260.20
     industry_variant: Utilities
     notes: Surface intake, groundwater borehole, and raw-water pumping operations
   - id: VS-550.40
@@ -7901,7 +7914,8 @@ value_streams:
     stage_name: Treatment
     capability_ids:
     - BC-3870
-    process_ids: []
+    process_ids:
+    - BP-260.20
     industry_variant: Utilities
     notes: Treatment-works shift operations and unit-process control
   - id: VS-550.50
@@ -7909,7 +7923,9 @@ value_streams:
     stage_name: Drinking Water Quality Assurance
     capability_ids:
     - BC-3870
-    process_ids: []
+    process_ids:
+    - BP-260.20
+    - BP-110.30
     industry_variant: Utilities
     notes: Statutory sampling, online monitoring, incident response, and DWI/EPA reporting
   - id: VS-550.60
@@ -7918,7 +7934,8 @@ value_streams:
     capability_ids:
     - BC-3870
     - BC-3880
-    process_ids: []
+    process_ids:
+    - BP-260.30
     industry_variant: Utilities
     notes: Service reservoir and contact-tank operations; Trunk-main and pumping-station operations between zones
   - id: VS-550.70
@@ -7926,7 +7943,8 @@ value_streams:
     stage_name: Distribution
     capability_ids:
     - BC-3880
-    process_ids: []
+    process_ids:
+    - BP-260.30
     industry_variant: Utilities
     notes: Distribution control, leakage, pressure, network quality, and mains repair
   - id: VS-550.80
@@ -7935,7 +7953,8 @@ value_streams:
     capability_ids:
     - BC-3880
     - BC-3910
-    process_ids: []
+    process_ids:
+    - BP-270.10
     industry_variant: Utilities
     notes: New service connection installation and commissioning; Customer account, AMI data acquisition, meter reading, and M2C inputs
 - id: VS-560
