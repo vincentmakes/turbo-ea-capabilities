@@ -7,6 +7,7 @@ entries:
       Exploitation des entrepôts tiers et centres de distribution, incluant les
       opérations entrantes, le stockage, les opérations sortantes, les services
       à valeur ajoutée et la logistique inverse.
+    source_hash: sha256-3082efe3f0874d08
   BC-2460.10:
     name: Gestion des opérations entrantes
     description: |
@@ -17,128 +18,157 @@ entries:
     out_of_scope:
       - Expéditions sortantes (BC-2460.30)
       - Propriété des stocks au niveau du chargeur (BC-530)
+    source_hash: sha256-a60bce9cf6c7bbf0
   BC-2460.10.10:
     name: Planification préalable à la réception
     description: |
       Ingestion des ASN, planification des quais et planification des ressources
       pour les réceptions.
+    source_hash: sha256-cd2bd9b2943816cf
   BC-2460.10.20:
     name: Réception et inspection des marchandises
     description: |
       Réception physique et inspection des marchandises entrantes.
+    source_hash: sha256-9400d6cd24a81a6b
   BC-2460.10.30:
     name: Rangement et allocation aux emplacements de stockage
     description: |
       Rangement des marchandises reçues et allocation aux emplacements de
       stockage.
+    source_hash: sha256-cb142735ef7048be
   BC-2460.20:
     name: Gestion des opérations de stockage et d'inventaire
     description: |
       Opérations de stockage en entrepôt incluant le slotting, les inventaires
       tournants et le stockage conditionné.
+    source_hash: sha256-a7e7738634970826
   BC-2460.20.10:
     name: Slotting et gestion des emplacements
     description: |
       Décisions de slotting et maintenance des emplacements de stockage.
+    source_hash: sha256-8c5aa19fe0e507e0
   BC-2460.20.20:
     name: Inventaire tournant et réconciliation
     description: |
       Inventaires tournants, réconciliation des stocks et ajustement des
       inventaires.
+    source_hash: sha256-089d4a1fdb3e4422
   BC-2460.20.30:
     name: Suivi des lots, numéros de série et batches
     description: |
       Suivi des attributs de lot, numéro de série et batch pour les marchandises
       stockées.
+    source_hash: sha256-095075deb53f4976
   BC-2460.20.40:
     name: Stockage en froid et conditionné
     description: |
       Exploitation du stockage à température contrôlée, des marchandises
       dangereuses et du stockage sous douane.
+    source_hash: sha256-3deda749db8e64d8
   BC-2460.30:
     name: Gestion des opérations sortantes
     description: |
       Préparation de commandes, emballage, étiquetage et expédition des
       envois sortants.
+    source_hash: sha256-00a07fb72a842428
   BC-2460.30.10:
     name: Opérations de préparation de commandes
     description: |
       Préparation de commandes par stratégies de vague, batch et zone.
+    source_hash: sha256-9e772fae76893fa1
   BC-2460.30.20:
     name: Emballage et étiquetage
     description: |
       Emballage, étiquetage et préparation des documents d'expédition.
+    source_hash: sha256-e825a386675f31dc
   BC-2460.30.30:
     name: Expédition et chargement
     description: |
       Chargement des véhicules sortants et confirmation d'expédition.
+    source_hash: sha256-ade3d9456e011e47
   BC-2460.40:
     name: Gestion des services à valeur ajoutée
     description: |
       Services à valeur ajoutée en entrepôt tels que le kitting, le co-packing,
       l'étiquetage et la configuration.
+    source_hash: sha256-a332647650516992
   BC-2460.40.10:
     name: Services de kitting et d'assemblage
     description: |
       Kitting, sous-assemblage et assemblage de kits au sein de l'entrepôt.
+    source_hash: sha256-b8725921a71628e1
   BC-2460.40.20:
     name: Co-packing et ré-étiquetage
     description: |
       Services de co-packing, reconditionnement et ré-étiquetage.
+    source_hash: sha256-93b2aeb37faa98ca
   BC-2460.40.30:
     name: Personnalisation et différenciation retardée
     description: |
       Configuration produit en phase finale et différenciation retardée.
+    source_hash: sha256-1a22ee054e83d942
   BC-2460.50:
     name: Gestion des retours et des opérations inverses
     description: |
       Réception, tri et traitement des marchandises retournées et des flux de
       logistique inverse.
+    source_hash: sha256-ab4a99552e35722e
   BC-2460.50.10:
     name: Réception et tri des retours
     description: |
       Réception et tri des marchandises retournées.
+    source_hash: sha256-658940a5d1990d29
   BC-2460.50.20:
     name: Remise en état et décision de traitement
     description: |
       Remise en état, reconditionnement et décisions de traitement des retours.
+    source_hash: sha256-70b610edce627189
   BC-2460.50.30:
     name: Élimination en logistique inverse
     description: |
       Mise au rebut, recyclage et destruction des retours non récupérables.
+    source_hash: sha256-f57327f1226cc94f
   BC-2460.60:
     name: Gestion des ressources de l'entrepôt
     description: |
       Gestion de la main-d'œuvre, des équipements de manutention et de la
       capacité des quais et créneaux au sein de l'entrepôt.
+    source_hash: sha256-41c48ab7a504f6e2
   BC-2460.60.10:
     name: Planification de la main-d'œuvre et productivité
     description: |
       Planification des équipes, affectation des tâches et suivi de la
       productivité.
+    source_hash: sha256-c3d8915d2cf8d35d
   BC-2460.60.20:
     name: Opérations des équipements de manutention
     description: |
       Exploitation, allocation et maintenance des chariots élévateurs, convoyeurs
       et AGV.
+    source_hash: sha256-7a83f64e443c7ee8
   BC-2460.60.30:
     name: Planification des créneaux de quai
     description: |
       Planification des créneaux de quai entrants et sortants.
+    source_hash: sha256-cd784308169ae653
   BC-2460.70:
     name: Gestion des performances de l'entrepôt
     description: |
       Mesure des KPI de service, d'exactitude et de débit de l'entrepôt.
+    source_hash: sha256-2fe466ee41c0c330
   BC-2460.70.10:
     name: Suivi des KPI du cycle de commande
     description: |
       Suivi des KPI de cycle de commande, de taux de service et d'exactitude.
+    source_hash: sha256-95a6655bba370956
   BC-2460.70.20:
     name: Rapports sur l'exactitude des stocks
     description: |
       Rapports sur l'exactitude des stocks et les manques.
+    source_hash: sha256-b7c3b5a824fde0ca
   BC-2460.70.30:
     name: Rapports sur le débit et la productivité
     description: |
       Rapports sur le débit, les unités par heure et les benchmarks de
       productivité.
+    source_hash: sha256-f98f914f7a7ad76d

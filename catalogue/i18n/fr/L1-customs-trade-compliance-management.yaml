@@ -7,6 +7,7 @@ entries:
       Conformité aux régimes douaniers, de sanctions, d'origine et d'opérateur
       de confiance pour les mouvements transfrontaliers, incluant la détermination
       des droits et des taxes indirectes.
+    source_hash: sha256-27073022c81ea6a7
   BC-2480.10:
     name: Gestion de la classification tarifaire
     description: |
@@ -17,106 +18,130 @@ entries:
       - Décisions de renseignements tarifaires contraignants
     out_of_scope:
       - Criblage des sanctions et des parties (BC-2480.40)
+    source_hash: sha256-f4887150116b3ec1
   BC-2480.10.10:
     name: Détermination du code HS
     description: |
       Détermination des codes HS par article et par expédition.
+    source_hash: sha256-07f78bf587b71e5a
   BC-2480.10.20:
     name: Gestion des décisions de classification
     description: |
       Demande et gestion des décisions tarifaires contraignantes.
+    source_hash: sha256-891ed1c146f1db1b
   BC-2480.10.30:
     name: Maintenance de la base de données de classification
     description: |
       Maintenance des bases de données de classification principale pour les
       articles échangés.
+    source_hash: sha256-cb65eab2569f1262
   BC-2480.20:
     name: Gestion des déclarations en douane
     description: |
       Dépôt des déclarations d'importation, d'exportation et de transit auprès
       des autorités douanières.
+    source_hash: sha256-2da72d1a42f14bdd
   BC-2480.20.10:
     name: Dépôt des déclarations d'importation
     description: |
       Préparation et dépôt des déclarations d'importation.
+    source_hash: sha256-7c6c8aef4acbf6f6
   BC-2480.20.20:
     name: Dépôt des déclarations d'exportation
     description: |
       Préparation et dépôt des déclarations d'exportation.
+    source_hash: sha256-886c4c5dbcdf4ccb
   BC-2480.20.30:
     name: Gestion des déclarations de transit
     description: |
       Dépôt et apurement des déclarations de transit, y compris TIR et NCTS.
+    source_hash: sha256-997b05a0ed996c54
   BC-2480.30:
     name: Gestion de l'origine et des accords de libre-échange
     description: |
       Détermination et certification de l'origine préférentielle dans le cadre
       des accords de libre-échange.
+    source_hash: sha256-25a71dcec7be3587
   BC-2480.30.10:
     name: Détermination de l'origine
     description: |
       Détermination de l'origine préférentielle et non préférentielle.
+    source_hash: sha256-693ec779957e6f90
   BC-2480.30.20:
     name: Documentation de qualification ALE
     description: |
       Émission et gestion des certificats d'origine dans le cadre des ALE.
+    source_hash: sha256-ffdb5a9607c3e32f
   BC-2480.30.30:
     name: Piste d'audit de l'origine
     description: |
       Maintenance des pièces justificatives pour les audits d'origine.
+    source_hash: sha256-da1666dadfe30b97
   BC-2480.40:
     name: Gestion du criblage des sanctions et des parties refusées
     description: |
       Criblage des parties, navires et marchandises contre les listes de sanctions
       et de parties refusées.
+    source_hash: sha256-8668e88df1aaa706
   BC-2480.40.10:
     name: Criblage des parties et des navires
     description: |
       Criblage des clients, consignataires et convois contre les listes de
       sanctions.
+    source_hash: sha256-a6ad8c0dc630541c
   BC-2480.40.20:
     name: Gestion des listes de sanctions
     description: |
       Maintenance des listes consolidées de sanctions et de parties refusées.
+    source_hash: sha256-577c081c93320fa2
   BC-2480.40.30:
     name: Traitement des blocages et des mainlevées
     description: |
       Traitement des alertes de criblage, des blocages et des mainlevées
       autorisées.
+    source_hash: sha256-545c9ec8fd48ad2c
   BC-2480.50:
     name: Gestion des programmes d'opérateur de confiance
     description: |
       Demande, maintien et audit des programmes d'opérateur de confiance tels
       que l'OEA et le C-TPAT.
+    source_hash: sha256-85c3bd0142bf4b4a
   BC-2480.50.10:
     name: Demande et maintien du statut OEA
     description: |
       Demande du statut OEA et maintien continu du programme.
+    source_hash: sha256-402dc292eee9fe88
   BC-2480.50.20:
     name: Gestion du programme C-TPAT
     description: |
       Adhésion au C-TPAT et conformité aux critères minimaux de sécurité.
+    source_hash: sha256-c3dc3bfd32cb43d5
   BC-2480.50.30:
     name: Coordination des audits douaniers
     description: |
       Coordination des audits douaniers et des programmes d'opérateur de
       confiance.
+    source_hash: sha256-8aee94050730e8a6
   BC-2480.60:
     name: Gestion des droits et taxes indirectes
     description: |
       Détermination, paiement et recouvrement des droits, taxes indirectes et
       remboursements sur les mouvements transfrontaliers.
+    source_hash: sha256-4e57576c1b642c5b
   BC-2480.60.10:
     name: Calcul des droits de douane
     description: |
       Calcul des droits payables sur les importations et exportations.
+    source_hash: sha256-d706e9ecb3367678
   BC-2480.60.20:
     name: Détermination des taxes indirectes
     description: |
       Détermination de la TVA, de la TPS et des accises sur les flux
       transfrontaliers.
+    source_hash: sha256-23ad2f32d4fdcebf
   BC-2480.60.30:
     name: Remboursement et drawback des droits
     description: |
       Recouvrement des droits via les régimes de drawback, de suspension et de
       remboursement.
+    source_hash: sha256-e0070c6606c1e924

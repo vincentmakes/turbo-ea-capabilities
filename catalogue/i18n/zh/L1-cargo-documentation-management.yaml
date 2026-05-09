@@ -5,6 +5,7 @@ entries:
     name: 货运单证管理
     description: |
       管理货运单证的开具、交换及全生命周期，包括提单、航空运单、公路及铁路运单、货物舱单及其电子等效文件。
+    source_hash: sha256-334d68148376bc75
   BC-2500.10:
     name: 提单管理
     description: |
@@ -14,82 +15,102 @@ entries:
       - 可转让、直提单及海运单等变体
     out_of_scope:
       - 贸易融资项下信用证处理（BC-1360）
+    source_hash: sha256-a10c88d27a1b1bb2
   BC-2500.10.10:
     name: 提单开具
     description: |
       开具主提单及分单提单。
+    source_hash: sha256-06248be055f36f59
   BC-2500.10.20:
     name: 提单交回与货物放行
     description: |
       处理电放、提单交回及凭提单放货。
+    source_hash: sha256-bb06088c9dfc937b
   BC-2500.10.30:
     name: 可转让及直提单变体
     description: |
       开具可转让、直提单及海运单等各类变体单据。
+    source_hash: sha256-e3885a4f4e368f7a
   BC-2500.20:
     name: 航空运单管理
     description: |
       开具并管理主航空运单及分单航空运单，包括e-AWB。
+    source_hash: sha256-f95befc197c4ba90
   BC-2500.20.10:
     name: 主航空运单开具
     description: |
       由航空承运商开具主航空运单。
+    source_hash: sha256-b76a1e4c60eeab6d
   BC-2500.20.20:
     name: 分单航空运单开具
     description: |
       由货代及集拼商开具分单航空运单。
+    source_hash: sha256-479e960e3462d814
   BC-2500.20.30:
     name: e-AWB转换与维护
     description: |
       将纸质AWB转换为e-AWB并进行全生命周期维护。
+    source_hash: sha256-5f667a92ddde6976
   BC-2500.30:
     name: 公路及铁路运单管理
     description: |
       依据CMR及CIM/SMGS制度开具并管理公路及铁路运单。
+    source_hash: sha256-17a3bd4ead688fb3
   BC-2500.30.10:
     name: CMR运单开具
     description: |
       为国际公路运输开具CMR运单。
+    source_hash: sha256-e0a6cb570694ca64
   BC-2500.30.20:
     name: CIM及SMGS运单开具
     description: |
       为国际铁路运输开具CIM及SMGS运单。
+    source_hash: sha256-1cf782f1773436e1
   BC-2500.30.30:
     name: 国内运单开具
     description: |
       开具国内运单及送货单。
+    source_hash: sha256-023175e79d9bcda9
   BC-2500.40:
     name: 舱单与货物申报管理
     description: |
       向海关、港口终端及合作承运商申报货物舱单和预到港货物申报。
+    source_hash: sha256-2066a4566299879a
   BC-2500.40.10:
     name: 进口舱单申报
     description: |
       向港口终端及海关申报进口舱单。
+    source_hash: sha256-159e8f5b338b5001
   BC-2500.40.20:
     name: 出口舱单申报
     description: |
       向港口终端及海关申报出口舱单。
+    source_hash: sha256-9a3893584da646a2
   BC-2500.40.30:
     name: 预到港货物报告
     description: |
       依据ICS2及CBP ACE等制度提交预到港货物申报。
+    source_hash: sha256-04ea7eda2fc9de39
   BC-2500.50:
     name: 电子单证管理
     description: |
       运营电子运输单证平台，包括eBL及ONE Record数据交换。
+    source_hash: sha256-7164f8516ac087ff
   BC-2500.50.10:
     name: 电子提单运营
     description: |
       运营电子提单平台。
+    source_hash: sha256-e34c4ccfc7460611
   BC-2500.50.20:
     name: e-AWB与ONE Record运营
     description: |
       运营e-AWB及ONE Record数据交换。
+    source_hash: sha256-80bf34e1023a8412
   BC-2500.50.30:
     name: 单证交换与核验
     description: |
       开展各方单证交换及电子签名与印章核验。
+    source_hash: sha256-6d007a5108d1a664
 metadata:
   translator: Claude (zh automated)
   generated: 2026-04-29

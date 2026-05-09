@@ -127,7 +127,8 @@ export function loadValueStreams(): ValueStream[] {
 // ---------------------------------------------------------------------------
 
 export interface FrameworkRef {
-  framework: "APQC-PCF" | "BIAN" | "eTOM" | "ITIL" | "SCOR";
+  /** Framework code. Validated against the enum in schema/business-process.schema.json. */
+  framework: string;
   external_id: string;
   version?: string;
   url?: string;
@@ -311,6 +312,8 @@ export interface LocalizedFields {
   in_scope?: string[];
   out_of_scope?: string[];
   notes?: string;
+  /** SHA-256 fingerprint of the source's translatable surface at translation time. Optional. */
+  source_hash?: string;
 }
 
 export type SidecarKind = "capability" | "value-stream" | "business-process";

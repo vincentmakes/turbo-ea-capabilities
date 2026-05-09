@@ -7,6 +7,7 @@ entries:
       Cycle de vie de l'acceptation des clients et des missions, cadrage, mobilisation,
       gestion des modifications, clôture et gestion continue des relations clients
       pour les missions juridiques, de conseil et d'audit et assurance.
+    source_hash: sha256-9f352a42f72ec425
   BC-4300.10:
     name: Gestion de l'acceptation des clients
     description: |
@@ -21,26 +22,31 @@ entries:
     out_of_scope:
       - Évaluation de l'indépendance et des conflits d'intérêts (BC-4350)
       - Acceptation des risques propres à la mission (BC-4300.20)
+    source_hash: sha256-d75870601966ca11
   BC-4300.10.10:
     name: Collecte des informations KYC clients
     description: |
       Collecte des informations d'identification, des bénéficiaires effectifs
       et de l'origine des fonds pour les clients potentiels et existants.
+    source_hash: sha256-23c2eb9abc602232
   BC-4300.10.20:
     name: Filtrage sanctions et PPE des clients
     description: |
       Filtrage des clients et des bénéficiaires effectifs contre les listes
       de sanctions, PPE et médias adverses.
+    source_hash: sha256-8c0de97052c9a437
   BC-4300.10.30:
     name: Notation du risque client
     description: |
       Notation du risque de la relation client pour déterminer la profondeur
       de la diligence et la fréquence de révision.
+    source_hash: sha256-daf4f2fba776b51c
   BC-4300.10.40:
     name: Actualisation périodique de la diligence client
     description: |
       Actualisation des données KYC, de la structure d'actionnariat et des
       notes de risque selon un cycle défini.
+    source_hash: sha256-04ebd80e6de851ec
   BC-4300.20:
     name: Gestion de l'acceptation des missions
     description: |
@@ -55,21 +61,25 @@ entries:
     out_of_scope:
       - Contrôles substantiels d'indépendance et de conflits (BC-4350)
       - Activités de prospection et de proposition commerciale (BC-4360)
+    source_hash: sha256-9cf668875017d907
   BC-4300.20.10:
     name: Évaluation des risques de la mission
     description: |
       Évaluation des risques spécifiques à la mission, incluant la complexité
       de la matière, l'intégrité du client et la recouvrabilité des honoraires.
+    source_hash: sha256-58d2b3bc18e5143e
   BC-4300.20.20:
     name: Vérification des capacités et des compétences
     description: |
       Confirmation que le cabinet dispose des compétences techniques et de la
       capacité en ressources nécessaires pour exécuter la mission.
+    source_hash: sha256-171a17fcbd05dbe2
   BC-4300.20.30:
     name: Décision de lancement ou d'abandon de la mission
     description: |
       Décision d'associé de lancement ou d'abandon intégrant les risques, les
       conflits d'intérêts, l'indépendance, la capacité et les critères commerciaux.
+    source_hash: sha256-893dbc19b429b026
   BC-4300.30:
     name: Gestion du cadrage et des conditions de la mission
     description: |
@@ -82,99 +92,118 @@ entries:
     out_of_scope:
       - Stratégie tarifaire au niveau du cabinet (BC-4360.50)
       - Proposition commerciale en phase de prospection (BC-4360.30)
+    source_hash: sha256-96d7d8064d4e5a90
   BC-4300.30.10:
     name: Définition du périmètre de la mission
     description: |
       Définition des services, des livrables, des hypothèses, des exclusions
       et des dépendances de la mission.
+    source_hash: sha256-93189dfcd06ad681
   BC-4300.30.20:
     name: Rédaction de la lettre de mission
     description: |
       Rédaction des lettres de mission et contrats de prestation alignés sur
       les modèles du cabinet et les normes professionnelles applicables.
+    source_hash: sha256-fa3e22b9c7ad5e80
   BC-4300.30.30:
     name: Négociation des conditions de la mission
     description: |
       Négociation des conditions de la mission avec le client, incluant
       les plafonds de responsabilité, le droit applicable et les clauses
       de résolution des litiges.
+    source_hash: sha256-097dcdbb2642c9e7
   BC-4300.30.40:
     name: Signature de la lettre de mission
     description: |
       Signature, contresignature et archivage des lettres de mission exécutées
       comme condition préalable à la mobilisation de la mission.
+    source_hash: sha256-0129a001b3d97c61
   BC-4300.40:
     name: Gestion de la mobilisation de la mission
     description: |
       Démarrage opérationnel d'une mission acceptée, incluant la constitution
       de l'équipe, le lancement, l'accès sécurisé aux données et la mise en
       place de l'infrastructure de mission.
+    source_hash: sha256-0d6d18f102c397c0
   BC-4300.40.10:
     name: Constitution de l'équipe de mission
     description: |
       Identification et confirmation des rôles d'associé, de manager et
       de collaborateur au sein de l'équipe de mission.
+    source_hash: sha256-381522ab5b414d59
   BC-4300.40.20:
     name: Gestion du lancement de la mission
     description: |
       Réunions de lancement internes et avec le client, documents de briefing
       et confirmation des objectifs et des modalités de travail.
+    source_hash: sha256-7fa6357f88932dd5
   BC-4300.40.30:
     name: Mise en place de l'accès aux données de la mission
     description: |
       Provisionnement des salles de données sécurisées, des portails clients
       et des accréditations d'accès spécifiques à la mission.
+    source_hash: sha256-0d9a3b40c9a384c0
   BC-4300.40.40:
     name: Mise en place de l'infrastructure de mission
     description: |
       Mise en place des codes de mission, des structures de facturation et
       de la numérotation des dossiers dans les systèmes du cabinet.
+    source_hash: sha256-e6d8373e619de0d6
   BC-4300.50:
     name: Gestion des modifications de mission
     description: |
       Contrôle des modifications du périmètre, des honoraires, des délais
       ou de la composition de l'équipe après la signature de la lettre de mission.
+    source_hash: sha256-cdbaa531fa40aea8
   BC-4300.50.10:
     name: Traitement des demandes de modification du périmètre
     description: |
       Enregistrement, évaluation et traitement des demandes de modification
       du périmètre émanant du client ou de l'équipe de mission.
+    source_hash: sha256-86942782df0957ab
   BC-4300.50.20:
     name: Approbation des variations d'honoraires
     description: |
       Processus d'approbation des ajustements d'honoraires, des provisions
       supplémentaires et des autorisations de travaux hors périmètre.
+    source_hash: sha256-a55c000b7f3174e2
   BC-4300.50.30:
     name: Avenant à la lettre de mission
     description: |
       Émission et signature des avenants et lettres annexes reflétant les
       modifications approuvées de la mission.
+    source_hash: sha256-4ff5f263eb69254a
   BC-4300.60:
     name: Gestion de la clôture de la mission
     description: |
       Finalisation des missions terminées, incluant la remise des livrables,
       la conservation des dossiers de travail, le déclenchement de la facturation
       finale et le bilan post-mission.
+    source_hash: sha256-94c0de581e8564b0
   BC-4300.60.10:
     name: Gestion de la remise des livrables
     description: |
       Remise définitive des rapports, avis et produits de travail au client
       avec les transmittals associés.
+    source_hash: sha256-3379789b5a6fde2b
   BC-4300.60.20:
     name: Mise en place de la conservation du dossier de mission
     description: |
       Clôture du dossier de mission et configuration des politiques de
       conservation, d'accès et de destruction.
+    source_hash: sha256-11d44ac98d73e2bc
   BC-4300.60.30:
     name: Bilan de mission et retours d'expérience
     description: |
       Revue post-mission avec l'équipe pour capitaliser les retours d'expérience
       et les actions d'amélioration.
+    source_hash: sha256-aef3d74da284cfc8
   BC-4300.60.40:
     name: Communication de clôture au client
     description: |
       Communication de clôture au client incluant le rapport final, l'enquête
       de satisfaction et la planification du suivi.
+    source_hash: sha256-389f703c90b02c44
   BC-4300.70:
     name: Gestion de la relation client
     description: |
@@ -188,24 +217,29 @@ entries:
     out_of_scope:
       - Activités de prospection et de proposition commerciale (BC-4360)
       - CRM générique (BC-3060)
+    source_hash: sha256-dd73b088bdd58c13
   BC-4300.70.10:
     name: Attribution de l'associé relation
     description: |
       Attribution et rotation de l'associé relation principal pour chaque
       client stratégique.
+    source_hash: sha256-e92ce679946c743c
   BC-4300.70.20:
     name: Planification du compte client
     description: |
       Planification au niveau du compte sur l'ensemble des missions avec
       un client donné, incluant les objectifs de part de portefeuille et
       de relation.
+    source_hash: sha256-94f17a4a27736c69
   BC-4300.70.30:
     name: Suivi de la satisfaction client
     description: |
       Collecte des retours clients, mesures NPS ou équivalentes et escalade
       des signaux d'insatisfaction.
+    source_hash: sha256-c0fd4c845394d367
   BC-4300.70.40:
     name: Coordination inter-pratiques pour les clients partagés
     description: |
       Coordination entre les pratiques et les géographies intervenant auprès
       d'un client commun.
+    source_hash: sha256-5487c29462605a14

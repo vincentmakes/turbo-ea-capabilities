@@ -43,6 +43,7 @@ An open-source Business Architecture Reference Catalogue with **three orthogonal
   - value-stream → `catalogue/i18n/<locale>/_value-streams.yaml`, `source: _value-streams.yaml`
 - **Translatable fields whitelist:** capability/business-process — `name`, `description`, `aliases`, `in_scope`, `out_of_scope`. value-stream — stream-level `name`, `description`; stage-level `stage_name`, `description`, `notes`. **Never** translate ids, levels, industry, references, framework_refs, deprecated, successor_id, or metadata.
 - **No orphans.** Every entry id in a sidecar must resolve to a node in the declared source. After a `cap:mv`/`cap:deprecate`/`bp:mv`/`bp:deprecate`/`vs:deprecate` the corresponding sidecar entries must be updated or removed in the same PR — lint blocks otherwise.
+- **Staleness detection.** Each sidecar entry carries an optional `source_hash` (SHA-256 fingerprint of the source's translatable surface at translation time). Lint flags any entry whose stored hash no longer matches the recomputed source. After editing a source `name`/`description`/`aliases`/`in_scope`/`out_of_scope`, retranslate the affected sidecar entry (typically via `/translate-language`) and run `npm run i18n:stamp` to refresh the hash. The stamp command is idempotent and safe to run on the whole catalogue.
 - **Locale tag = directory name.** `catalogue/i18n/fr-CA/...` files must declare `locale: fr-CA`. BCP-47 only.
 - **Bundle layout is additive.** `dist/api/capabilities.json`, `business-processes.json`, `value-streams.json`, `tree.json`, `bp-tree.json` stay English. Locale data ships separately under `dist/api/i18n/<locale>.json` and `dist/api/locales.json` — old consumers are unaffected.
 
@@ -63,6 +64,12 @@ npm run bp:deprecate   -- --id BP-30.10.20 --successor BP-30.10.10 --reason "Mer
 npm run vs:add         -- --name "Quote-to-Cash" --industries Cross-Industry
 npm run vs:add-stage   -- --stream VS-30 --name "Quote Generation" --capabilities BC-100 [--processes BP-10.10]
 npm run vs:deprecate   -- --id VS-30 --successor VS-40 --reason "Merged"
+
+# Translations / staleness
+npm run i18n:stamp                    # backfill or refresh source_hash on every sidecar entry
+npm run i18n:stamp -- --check         # dry-run; non-zero exit if any entry is stale
+npm run i18n:stamp -- --locale fr     # restrict to one locale
+npm run i18n:stamp -- --kind business-process
 
 # Validation / build
 npm run lint           # required before commit

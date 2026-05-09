@@ -7,6 +7,7 @@ entries:
       Site-Reliability, Observierbarkeit, On-Call-Reaktion, Kapazität,
       Performance und Disaster-Recovery-Betrieb des mandantenfähigen
       SaaS-Dienstes.
+    source_hash: sha256-c6d5fa99c3a9b789
   BC-4220.10:
     name: Service-Reliability-Engineering
     description: |
@@ -17,129 +18,155 @@ entries:
     out_of_scope:
       - Kundenseitige SLA-Verpflichtungen (abgedeckt durch SaaS-Trust- und Service-Compliance-Management)
       - Interne IT-Service-Level (abgedeckt durch IT-Management)
+    source_hash: sha256-f3c55a40706dbee0
   BC-4220.10.10:
     name: Service-Level-Indikator-Definition
     description: |
       Definition von Service-Level-Indikatoren, die die Kundenerfahrung
       laufender Dienste messen.
+    source_hash: sha256-94d1aafedc852abf
   BC-4220.10.20:
     name: Service-Level-Ziel-Management
     description: |
       Festlegung, Überprüfung und Anpassung von Service-Level-Zielen
       über Dienste hinweg.
+    source_hash: sha256-6b3cdfe29da27fe2
   BC-4220.10.30:
     name: Fehlerbudget-Management
     description: |
       Management von Fehlerbudgets und der Policy zur Steuerung
       ihres Verbrauchs.
+    source_hash: sha256-9b815fd1abf00bb1
   BC-4220.20:
     name: Observierbarkeits-Management
     description: |
       Logs, Metriken, Traces und synthetisches Monitoring, die den
       laufenden Dienst in der Produktion transparent machen.
+    source_hash: sha256-90dd7562e3d249b0
   BC-4220.20.10:
     name: Anwendungsprotokollierungs-Management
     description: |
       Pflege von Anwendungsprotokollierungskonventionen, Pipelines
       und Aufbewahrungsregeln.
+    source_hash: sha256-6a411b045a7aa03d
   BC-4220.20.20:
     name: Metriken-Pipeline-Management
     description: |
       Betrieb von Metriken-Ingestion, -Speicherung und
       -Abfragepipelines.
+    source_hash: sha256-8ff0214bf9d04029
   BC-4220.20.30:
     name: Verteiltes Tracing
     description: |
       End-to-End-verteiltes Tracing über Dienste für die
       Produktionsuntersuchung.
+    source_hash: sha256-d3971fad8949a12a
   BC-4220.20.40:
     name: Synthetisches Monitoring
     description: |
       Synthetische Prüfpunkte, die kritische Nutzerreisen von
       außerhalb des Dienstes überprüfen.
+    source_hash: sha256-bd5da0d5a976c3e5
   BC-4220.30:
     name: Vorfallsreaktions-Management
     description: |
       On-Call-Reaktion, Vorfallserkennung, Koordination und
       Kundenkommunikation bei Produktionsvorfällen.
+    source_hash: sha256-e97ef643804b720f
   BC-4220.30.10:
     name: On-Call-Rotations-Management
     description: |
       Definition und Betrieb von On-Call-Rotationen über
       Produktteams hinweg.
+    source_hash: sha256-586a5402f8d90c2c
   BC-4220.30.20:
     name: Vorfallserkennung
     description: |
       Erkennung von Produktionsvorfällen aus Telemetrie- und
       externen Signalen.
+    source_hash: sha256-8eb25bb6e7701c33
   BC-4220.30.30:
     name: Vorfallskoordination
     description: |
       Koordination der Vorfallsreaktion einschließlich Rollen,
       Kommunikation und Entscheidungen während des Vorfalls.
+    source_hash: sha256-397364287785699b
   BC-4220.30.40:
     name: Kunden-Vorfallskommunikation
     description: |
       Kommunikation an betroffene Kunden während und nach Vorfällen.
+    source_hash: sha256-fedbf3cc73593b40
   BC-4220.40:
     name: Postmortem und Zuverlässigkeitsverbesserung
     description: |
       Postmortem-Erstellung und Verfolgung von Zuverlässigkeits-
       Aktionspunkten, damit Erkenntnisse sich über Zeit kumulieren.
+    source_hash: sha256-ccc471918fdc9e2d
   BC-4220.40.10:
     name: Postmortem-Erstellung
     description: |
       Schuldenfreie Postmortem-Erstellung nach Vorfällen und
       bedeutsamen Beinaheunfällen.
+    source_hash: sha256-68732ffb8fd1e616
   BC-4220.40.20:
     name: Zuverlässigkeitsmaßnahmen-Tracking
     description: |
       Verfolgung von Zuverlässigkeitsmaßnahmen bis zum Abschluss
       über Teams hinweg.
+    source_hash: sha256-1fbbe86c7fc28d70
   BC-4220.40.30:
     name: Zuverlässigkeitstrend-Analyse
     description: |
       Analyse von Zuverlässigkeitstrends über Dienste und
       Zeithorizonte hinweg.
+    source_hash: sha256-01d2a20db2afe130
   BC-4220.50:
     name: Kapazitäts- und Performance-Management
     description: |
       Kapazitätsprognose, Auto-Scaling-Policies und Performancetests
       des SaaS-Dienstes.
+    source_hash: sha256-e1eb97162623d226
   BC-4220.50.10:
     name: Kapazitätsprognose
     description: |
       Prognose des Kapazitätsbedarfs über Dienste und
       Regionen hinweg.
+    source_hash: sha256-865f1934b46cb549
   BC-4220.50.20:
     name: Auto-Scaling-Policy-Management
     description: |
       Definition und Anpassung von Auto-Scaling-Policies für
       Produktdienste.
+    source_hash: sha256-5593c826524575ff
   BC-4220.50.30:
     name: Performancetest
     description: |
       Last-, Stress- und Ausdauertests des laufenden Dienstes.
+    source_hash: sha256-bbb84c96d916bd37
   BC-4220.60:
     name: Disaster-Recovery und Resilienz
     description: |
       Sicherung und Wiederherstellung, Failover-Orchestrierung und
       Disaster-Recovery-Übungen für den SaaS-Dienst.
+    source_hash: sha256-b5f0234c064926cb
   BC-4220.60.10:
     name: Sicherung- und Wiederherstellungs-Management
     description: |
       Sicherungs-Policy, Ausführung und Wiederherstellungsvalidierung
       für Service-Datenspeicher.
+    source_hash: sha256-7ef3b9e990b36b50
   BC-4220.60.20:
     name: Failover-Orchestrierung
     description: |
       Orchestrierung des Failovers zwischen Verfügbarkeitszonen
       und Regionen.
+    source_hash: sha256-3089230e2f4004d4
   BC-4220.60.30:
     name: Disaster-Recovery-Übungs-Management
     description: |
       Planung und Durchführung von Disaster-Recovery-Übungen und
       Game-Days.
+    source_hash: sha256-9d76ec8a59193ed7
 metadata:
   translator: claude-ai
   date: "2026-04-29"

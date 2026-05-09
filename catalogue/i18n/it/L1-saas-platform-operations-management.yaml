@@ -7,6 +7,7 @@ entries:
     description: |
       SRE (Site Reliability Engineering), observability, risposta on-call, gestione
       della capacità, performance e operazioni di disaster recovery del servizio SaaS multi-tenant.
+    source_hash: sha256-c6d5fa99c3a9b789
   BC-4220.10:
     name: Ingegneria dell'affidabilità del servizio
     description: |
@@ -17,130 +18,156 @@ entries:
     out_of_scope:
       - Impegni SLA verso i clienti (coperti da Gestione della sicurezza e conformità del servizio SaaS)
       - Livelli di servizio IT interni (coperti da Gestione dell'information technology)
+    source_hash: sha256-f3c55a40706dbee0
   BC-4220.10.10:
     name: Definizione degli indicatori di livello di servizio
     description: |
       Definizione degli SLI che misurano l'esperienza del cliente
       sui servizi in esercizio.
+    source_hash: sha256-94d1aafedc852abf
   BC-4220.10.20:
     name: Gestione degli obiettivi di livello di servizio
     description: |
       Definizione, revisione e aggiornamento degli SLO
       sui diversi servizi.
+    source_hash: sha256-6b3cdfe29da27fe2
   BC-4220.10.30:
     name: Gestione degli error budget
     description: |
       Gestione degli error budget e della policy che ne governa
       il consumo.
+    source_hash: sha256-9b815fd1abf00bb1
   BC-4220.20:
     name: Gestione dell'observability
     description: |
       Log, metriche, trace e monitoraggio sintetico che rendono
       il servizio in esercizio comprensibile in produzione.
+    source_hash: sha256-90dd7562e3d249b0
   BC-4220.20.10:
     name: Gestione del logging applicativo
     description: |
       Gestione delle convenzioni di logging applicativo,
       delle pipeline e della conservazione.
+    source_hash: sha256-6a411b045a7aa03d
   BC-4220.20.20:
     name: Gestione della pipeline delle metriche
     description: |
       Gestione delle pipeline di ingestione, archiviazione
       e interrogazione delle metriche.
+    source_hash: sha256-8ff0214bf9d04029
   BC-4220.20.30:
     name: Distributed tracing
     description: |
       Distributed tracing end-to-end tra i servizi
       per le analisi in produzione.
+    source_hash: sha256-d3971fad8949a12a
   BC-4220.20.40:
     name: Monitoraggio sintetico
     description: |
       Sonde sintetiche che esercitano i percorsi utente critici
       dall'esterno del servizio.
+    source_hash: sha256-bd5da0d5a976c3e5
   BC-4220.30:
     name: Gestione della risposta agli incidenti
     description: |
       Risposta on-call, rilevamento degli incidenti, coordinamento
       e comunicazione ai clienti durante gli incidenti in produzione.
+    source_hash: sha256-e97ef643804b720f
   BC-4220.30.10:
     name: Gestione dei turni on-call
     description: |
       Definizione e gestione dei turni on-call
       nei team di prodotto.
+    source_hash: sha256-586a5402f8d90c2c
   BC-4220.30.20:
     name: Rilevamento degli incidenti
     description: |
       Rilevamento degli incidenti in produzione da telemetria
       e segnali esterni.
+    source_hash: sha256-8eb25bb6e7701c33
   BC-4220.30.30:
     name: Coordinamento degli incidenti
     description: |
       Coordinamento della risposta agli incidenti, inclusi ruoli, comunicazioni
       e decisioni durante l'incidente.
+    source_hash: sha256-397364287785699b
   BC-4220.30.40:
     name: Comunicazione agli utenti durante gli incidenti
     description: |
       Comunicazione ai clienti coinvolti durante e dopo gli incidenti.
+    source_hash: sha256-fedbf3cc73593b40
   BC-4220.40:
     name: Postmortem e miglioramento dell'affidabilità
     description: |
       Redazione dei postmortem e monitoraggio delle azioni di miglioramento
       dell'affidabilità affinché le lezioni si accumulino nel tempo.
+    source_hash: sha256-ccc471918fdc9e2d
   BC-4220.40.10:
     name: Redazione dei postmortem
     description: |
       Redazione di postmortem blameless dopo incidenti
       e near-miss significativi.
+    source_hash: sha256-68732ffb8fd1e616
   BC-4220.40.20:
     name: Monitoraggio delle azioni di affidabilità
     description: |
       Monitoraggio delle azioni di miglioramento dell'affidabilità
       fino alla chiusura nei team.
+    source_hash: sha256-1fbbe86c7fc28d70
   BC-4220.40.30:
     name: Analisi dei trend di affidabilità
     description: |
       Analisi dei trend di affidabilità tra i servizi
       e sulle diverse fasce temporali.
+    source_hash: sha256-01d2a20db2afe130
   BC-4220.50:
     name: Gestione della capacità e delle performance
     description: |
       Previsione della capacità, policy di auto-scaling e test di performance
       del servizio SaaS.
+    source_hash: sha256-e1eb97162623d226
   BC-4220.50.10:
     name: Previsione della capacità
     description: |
       Previsione della domanda di capacità tra i servizi
       e le regioni.
+    source_hash: sha256-865f1934b46cb549
   BC-4220.50.20:
     name: Gestione delle policy di auto-scaling
     description: |
       Definizione e ottimizzazione delle policy di auto-scaling
       per i servizi di prodotto.
+    source_hash: sha256-5593c826524575ff
   BC-4220.50.30:
     name: Test di performance
     description: |
       Test di carico, stress e soak del servizio
       in esercizio.
+    source_hash: sha256-bbb84c96d916bd37
   BC-4220.60:
     name: Disaster recovery e resilienza
     description: |
       Backup e ripristino, orchestrazione del failover ed esercitazioni
       di disaster recovery per il servizio SaaS.
+    source_hash: sha256-b5f0234c064926cb
   BC-4220.60.10:
     name: Gestione del backup e del ripristino
     description: |
       Policy di backup, esecuzione e validazione del ripristino
       per i datastore del servizio.
+    source_hash: sha256-7ef3b9e990b36b50
   BC-4220.60.20:
     name: Orchestrazione del failover
     description: |
       Orchestrazione del failover tra zone di disponibilità
       e regioni.
+    source_hash: sha256-3089230e2f4004d4
   BC-4220.60.30:
     name: Gestione delle esercitazioni di disaster recovery
     description: |
       Pianificazione ed esecuzione di esercitazioni di disaster recovery
       e game-day.
+    source_hash: sha256-9d76ec8a59193ed7
 metadata:
   status: draft
   reviewer: pending

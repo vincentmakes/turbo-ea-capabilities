@@ -18,137 +18,168 @@ entries:
       - Produktmaster-Definition (BC-4000)
       - Kanalspezifische Gebotsabgabe auf Metasuche (BC-4010.40.20)
       - Gruppenvertriebsverträge (BC-4110.10)
+    source_hash: sha256-b554f0acaaa1a6ea
   BC-4030.10:
     name: Reisennachfrageprognose
     description: |
       Prognose unkonditionierter Nachfrage, Buchungstempo, Gruppennachfrage
       und No-Show- oder Stornierungsverhalten für Reiseprodukte.
+    source_hash: sha256-d1989d77f00e026f
   BC-4030.10.10:
     name: Unkonditionierte Nachfrageprognose
     description: |
       Prognose der Nachfrage ohne Kapazitäts- und Preisgrenzen.
+    source_hash: sha256-53e07c5cd503f45f
   BC-4030.10.20:
     name: Buchungstempo- und Pickup-Prognose
     description: |
       Prognose von Tempo- und Pickup-Kurven gegen historische und gebuchte Muster.
+    source_hash: sha256-1e886519f747a779
   BC-4030.10.30:
     name: Gruppennachfrageprognose
     description: |
       Prognose der Gruppennachfrage einschließlich Verdrängungseffekten
       auf transientes Inventar.
+    source_hash: sha256-c34086393bb5bbe7
   BC-4030.10.40:
     name: No-Show- und Stornierungsprognose
     description: |
       Prognose von No-Show- und Stornierungsverhalten als Eingang
       für Überbuchungs- und Inventarkontrollen.
+    source_hash: sha256-fbb9904d9b45e0cc
   BC-4030.20:
     name: Preis- und Ratenstrategiemanagement
     description: |
       Definition und Anpassung der Ratenstrategie über BAR-Ebenen,
       Tarifklassen, Saisonfenster und Paketpreise.
+    source_hash: sha256-7e8a7e10b36b953b
   BC-4030.20.10:
     name: Best-Available-Rate-Festlegung
     description: |
       Festlegung von BAR-Leisten nach Datum und Segment.
+    source_hash: sha256-0db8a27646670e22
   BC-4030.20.20:
     name: Tarifklassen- und Eimer-Strategie
     description: |
       Strategie für Tarifklassen und Inventareimer einschließlich
       Öffnungen, Schließungen und Neujustierung.
+    source_hash: sha256-5cc69ff122d0a35d
   BC-4030.20.30:
     name: Saison- und Tagestyp-Preisgestaltung
     description: |
       Preisvariation über Saisonen, Wochentagsmuster und Ereignisfenster.
+    source_hash: sha256-5808cf4da3787d0b
   BC-4030.20.40:
     name: Paket- und Bundle-Preisgestaltung
     description: |
       Preisgestaltung für Paketprodukte und Bundles einschließlich Komponentenzuordnung.
+    source_hash: sha256-7b355af8fb29571c
   BC-4030.30:
     name: Inventar- und Kapazitätskontrollen
     description: |
       Inventarkontrollen einschließlich Buchungslimite, Aufenthaltsdauer-Restriktionen,
       Überbuchungsstrategie und Bid-Price-Nesting.
+    source_hash: sha256-4e0571cbf42733e9
   BC-4030.30.10:
     name: Buchungslimit- und Autorisierungsfestsetzung
     description: |
       Festlegung von Buchungslimiten und Autorisierungsniveaus nach Klasse, Kanal und Segment.
+    source_hash: sha256-34e2abb61ace5a88
   BC-4030.30.20:
     name: Aufenthaltsdauer-Restriktionsmanagement
     description: |
       Management von Aufenthaltsdauer-Restriktionen einschließlich Mindest-, Maximal-
       und Anreise-Tag-Regeln.
+    source_hash: sha256-8eea352dd0df715b
   BC-4030.30.30:
     name: Überbuchungsstrategiemanagement
     description: |
       Strategisches Management von Überbuchungsniveaus nach Datum und Segment
       gegen Kosten für verweigerter Dienst kalibriert.
+    source_hash: sha256-3c520040e48e8a0c
   BC-4030.30.40:
     name: Nesting- und Bid-Price-Management
     description: |
       Management von Inventar-Nesting und Bid-Price-Schwellenwerten in Erlösoptimierungsmodellen.
+    source_hash: sha256-39e9d319e1aff7c0
   BC-4030.40:
     name: Wettbewerbsfähige Ratenanalyse
     description: |
       Wettbewerbsfähiges Raten-Shopping, Marktanteilsanalyse und
       Ratenpositionierungsempfehlungen.
+    source_hash: sha256-e646b74c7afad427
   BC-4030.40.10:
     name: Wettbewerbsfähiges Raten-Shopping
     description: |
       Routinemäßiges Shopping von Wettbewerbsraten über ausgewählte Kanäle und Anreisedaten.
+    source_hash: sha256-ca5f754f04af011a
   BC-4030.40.20:
     name: Marktanteils- und Penetrationsanalyse
     description: |
       Analyse von Marktanteil, Belegungsindex und Ratenindex gegen den Wettbewerbsset.
+    source_hash: sha256-e842e0d9bc13f682
   BC-4030.40.30:
     name: Ratenpositionierungsempfehlungen
     description: |
       Generierung von Ratenpositionierungsempfehlungen gegen den Wettbewerbsset und Nachfragezustand.
+    source_hash: sha256-34f39a2185422223
   BC-4030.40.40:
     name: Wettbewerbsset-Definition und Pflege
     description: |
       Definition und laufende Pflege der für Benchmarking verwendeten Wettbewerbssets.
+    source_hash: sha256-84f9a97e1e7e3383
   BC-4030.50:
     name: Aktions- und Rabattmanagement
     description: |
       Definition und Betrieb von Aktionen, Rabattcodes, intransparenten
       und Geschlossene-Nutzergruppen-Preisen für Reiseprodukte.
+    source_hash: sha256-8bf5f7925f9fafc9
   BC-4030.50.10:
     name: Aktionskalendermanagement
     description: |
       Kalenderbasiertes Management von Aktionen über Saisonen und wesentliche Buchungsfenster.
+    source_hash: sha256-390b5fe29d39a97d
   BC-4030.50.20:
     name: Aktionsberechtigungsregeln
     description: |
       Berechtigungsregeln für die Aktionseinlösung nach Segment, Kanal und Aufenthaltsfenster.
+    source_hash: sha256-6114297800f6f7cd
   BC-4030.50.30:
     name: Rabattcode- und Gutscheinmanagement
     description: |
       Management von Rabattcodes, Gutscheinen und Geschenkkarten-ähnlichen Tokens.
+    source_hash: sha256-4dde557835798255
   BC-4030.50.40:
     name: Intransparente und Geschlossene-Nutzergruppen-Preisgestaltung
     description: |
       Betrieb intransparenter Kanal- und Geschlossene-Nutzergruppen-Preismechanismen.
+    source_hash: sha256-5058234755f62cef
   BC-4030.60:
     name: Erlösleistungsanalyse
     description: |
       Berichterstattung und Analyse der Erlösleistung einschließlich RevPAR,
       RevPAX, ADR, Yield und Prognoseabweichung.
+    source_hash: sha256-ec75b278c632c9a7
   BC-4030.60.10:
     name: Erlös-KPI-Berichterstattung
     description: |
       Berichterstattung über Haupterlös-KPIs gegen Budget und Vorjahresperiode.
+    source_hash: sha256-9043588a959ed465
   BC-4030.60.20:
     name: Yield-Abweichungsanalyse
     description: |
       Analyse der Yield-Abweichung mit Zurechnung von Änderungen auf Mix-, Raten- und Belegungseffekte.
+    source_hash: sha256-69f0d9f8c955486c
   BC-4030.60.30:
     name: Kanalerlösbeitragsanalyse
     description: |
       Analyse des Erlösbeitrags nach Kanal, Segment und Ratencode.
+    source_hash: sha256-7650f41ed66bdd57
   BC-4030.60.40:
     name: Erlösprognose-Ist-Analyse
     description: |
       Analyse von Prognose- versus Ist-Erlös mit Zurechnung auf Prognosefehlquellen.
+    source_hash: sha256-1f2a1974ef561519
 metadata:
   translator: claude-ai
   date: "2026-04-29"

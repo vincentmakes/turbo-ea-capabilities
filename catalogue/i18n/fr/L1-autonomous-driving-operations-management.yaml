@@ -5,38 +5,47 @@ entries:
     name: Gestion des opérations de conduite autonome
     description: |
       Exploitation opérationnelle des flottes de conduite automatisée — gouvernance du domaine de conception opérationnel, bibliothèques de scénarios, dossier de sécurité ADS, validation par simulation et sur route, télé-assistance, et engagement auprès des régulateurs pour les permis et le reporting d'incidents, fondés sur l'ISO 21448, la SAE J3016 et UN R157.
+    source_hash: sha256-98333bd596d29656
   BC-3470.10:
     name: Gouvernance du domaine de conception opérationnel
     description: |
       Définition, surveillance de la conformité et gestion du cycle de vie du domaine de conception opérationnel pour chaque fonctionnalité de conduite automatisée.
+    source_hash: sha256-0507d40ad7712d59
   BC-3470.10.10:
     name: Gestion de la définition du ODD
     description: |
       Définition du domaine de conception opérationnel incluant les limites géographiques, environnementales et comportementales.
+    source_hash: sha256-a9e5bbb2f0d7c952
   BC-3470.10.20:
     name: Surveillance de la conformité au ODD
     description: |
       Surveillance de la conformité au ODD en service et détection des opérations hors du domaine défini.
+    source_hash: sha256-2b5bc9b4fd32d578
   BC-3470.10.30:
     name: Gestion des mises à jour des limites du ODD
     description: |
       Gestion des extensions et restrictions du ODD sur le cycle de vie, incluant l'approbation et le déploiement.
+    source_hash: sha256-eeacd3ee5627eeff
   BC-3470.20:
     name: Gestion de la bibliothèque de scénarios de conduite et du catalogue d'essais
     description: |
       Curation de la bibliothèque de scénarios de conduite et du catalogue d'essais utilisés pour la conception, la simulation et la validation des systèmes de conduite automatisée.
+    source_hash: sha256-e7016f0f2b5dc6ea
   BC-3470.20.10:
     name: Curation de la bibliothèque de scénarios
     description: |
       Curation des bibliothèques de scénarios structurés utilisées pour la conception et la validation des ADS.
+    source_hash: sha256-5d52e7144a6fe05f
   BC-3470.20.20:
     name: Capture et triage des cas limites
     description: |
       Capture, triage et priorisation des cas limites observés en simulation, sur les flottes de test et en service.
+    source_hash: sha256-bebe6f6f79c999c0
   BC-3470.20.30:
     name: Reporting de la couverture des scénarios
     description: |
       Reporting de la couverture des scénarios et des lacunes résiduelles par rapport aux exigences du ODD.
+    source_hash: sha256-4c61520fe16e0af6
   BC-3470.30:
     name: Opérations de flotte autonome
     description: |
@@ -48,79 +57,99 @@ entries:
     out_of_scope:
       - Réservation et tarification côté passager pour les services de mobilité partagée (BC-3490)
       - Ingénierie véhicule et développement logiciel (BC-3400)
+    source_hash: sha256-4668e4103502c06f
   BC-3470.30.10:
     name: Opérations de dispatch des véhicules autonomes
     description: |
       Dispatch et routage des véhicules autonomes pour les missions de test, pilote et commercial.
+    source_hash: sha256-9f6850689b04d2ab
   BC-3470.30.20:
     name: Surveillance de la santé de la flotte autonome
     description: |
       Surveillance en temps réel de la santé des flottes autonomes incluant la calibration des capteurs et le statut logiciel.
+    source_hash: sha256-48e91324712df133
   BC-3470.30.30:
     name: Coordination de la recharge et du nettoyage des véhicules autonomes
     description: |
       Coordination des activités de recharge, de nettoyage et de rotation des flottes autonomes dans les dépôts.
+    source_hash: sha256-58392561110b031a
   BC-3470.40:
     name: Opérations à distance et télé-assistance
     description: |
       Exploitation des centres de télé-assistance fournissant un support à distance et des interventions autorisées pour les flottes de conduite automatisée.
+    source_hash: sha256-604b1b73e36070ca
   BC-3470.40.10:
     name: Opérations du centre de télé-assistance
     description: |
       Exploitation des centres de télé-assistance à distance incluant la gestion des équipes et les circuits d'escalade.
+    source_hash: sha256-01a053697ba0efc3
   BC-3470.40.20:
     name: Gestion des décisions d'intervention à distance
     description: |
       Cadres de décision et autorisation pour les interventions à distance allant du conseil au contrôle direct du véhicule.
+    source_hash: sha256-39e63c2de1c898c0
   BC-3470.40.30:
     name: Gestion des effectifs de télé-opérateurs
     description: |
       Recrutement, formation, certification et gestion de la performance des télé-opérateurs.
+    source_hash: sha256-a6d6323b3d48e633
   BC-3470.50:
     name: Gestion du dossier de sécurité et de l'assurance
     description: |
       Maintien du dossier de sécurité opérationnel des ADS et des indicateurs qui surveillent sa validité continue.
+    source_hash: sha256-4786e07d82a6cc4b
   BC-3470.50.10:
     name: Rédaction du dossier de sécurité
     description: |
       Rédaction du dossier de sécurité structuré des ADS incluant les affirmations, arguments et preuves.
+    source_hash: sha256-caabfa0101ec0b8d
   BC-3470.50.20:
     name: Maintien de l'argumentation sécurité
     description: |
       Maintien des arguments de sécurité à mesure que le système, le ODD et le contexte opérationnel évoluent.
+    source_hash: sha256-3e247c7a384c1438
   BC-3470.50.30:
     name: Suivi des indicateurs de performance sécurité
     description: |
       Définition et suivi des indicateurs de performance sécurité avancés et de résultats pour la flotte déployée.
+    source_hash: sha256-9fbf61c289bb7234
   BC-3470.60:
     name: Opérations de validation de la conduite autonome
     description: |
       Exploitation opérationnelle des campagnes de validation — simulation, circuit fermé et route ouverte — qui fournissent les preuves du dossier de sécurité.
+    source_hash: sha256-d533f18cb19c8ee0
   BC-3470.60.10:
     name: Opérations de validation par simulation
     description: |
       Exploitation de fermes de simulation à grande échelle et de régression de scénarios pour la validation des ADS.
+    source_hash: sha256-b310b26f5b6380c4
   BC-3470.60.20:
     name: Opérations de validation sur circuit fermé
     description: |
       Exploitation des programmes d'essais sur circuit fermé et des campagnes sur piste pour la validation des ADS.
+    source_hash: sha256-53a8fbedfb70939b
   BC-3470.60.30:
     name: Opérations d'essais sur route ouverte
     description: |
       Exploitation des essais supervisés sur route ouverte incluant la discipline des chauffeurs de sécurité et la gestion des incidents.
+    source_hash: sha256-d3a63c52e2afe2f2
   BC-3470.70:
     name: Engagement réglementaire ADS
     description: |
       Engagement auprès des régulateurs et du public sur les autorisations de conduite automatisée, le reporting d'incidents et le renforcement de la confiance.
+    source_hash: sha256-2ead5b056ff7c890
   BC-3470.70.10:
     name: Gestion des permis et autorisations ADS
     description: |
       Gestion des permis, dérogations et autorisations pour le déploiement des ADS dans chaque juridiction.
+    source_hash: sha256-e0643e58033ce071
   BC-3470.70.20:
     name: Reporting des incidents aux régulateurs
     description: |
       Reporting des incidents et désengagements ADS aux régulateurs et coordination avec les enquêtes.
+    source_hash: sha256-5e12e9797e913abb
   BC-3470.70.30:
     name: Engagement public et parties prenantes
     description: |
       Engagement auprès des collectivités, communautés et parties prenantes sur le déploiement, la sécurité et les bénéfices des ADS.
+    source_hash: sha256-25122911e87d1858

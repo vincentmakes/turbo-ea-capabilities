@@ -7,6 +7,7 @@ entries:
       Visibilité de bout en bout des expéditions par la capture d'événements,
       la résolution des statuts, la prédiction de l'ETA, les alertes d'exception
       et les opérations de tour de contrôle.
+    source_hash: sha256-8ea9ff58ce2685eb
   BC-2510.10:
     name: Gestion de la capture d'événements et des statuts
     description: |
@@ -17,86 +18,106 @@ entries:
       - Capture d'événements IoT et télématiques
     out_of_scope:
       - Télématique pour l'état des actifs (BC-2430.40)
+    source_hash: sha256-3a61b4197d69f131
   BC-2510.10.10:
     name: Ingestion des événements transporteurs
     description: |
       Ingestion des événements jalons côté transporteur via EDI et API.
+    source_hash: sha256-72f2696ba7dad219
   BC-2510.10.20:
     name: Capture des événements IoT et télématiques
     description: |
       Capture des événements IoT et télématiques au niveau du fret.
+    source_hash: sha256-a8a72c7ebbb6ac7d
   BC-2510.10.30:
     name: Saisie manuelle des mises à jour de statut
     description: |
       Saisie des mises à jour de statut manuelles des conducteurs, agents et
       partenaires.
+    source_hash: sha256-42a8d355da140037
   BC-2510.20:
     name: Gestion du suivi des expéditions
     description: |
       Résolution du statut des expéditions sur les tronçons, modes et partenaires
       et diffusion sur les surfaces de suivi internes et orientées client.
+    source_hash: sha256-04fe8209f1f19323
   BC-2510.20.10:
     name: Résolution du statut des expéditions
     description: |
       Résolution du statut canonique des expéditions à partir des événements bruts.
+    source_hash: sha256-442bcdc9db4966f6
   BC-2510.20.20:
     name: Assemblage du suivi multi-tronçons
     description: |
       Assemblage des parcours multi-tronçons et multi-transporteurs en un suivi
       unifié.
+    source_hash: sha256-2bdc145ce03e0a36
   BC-2510.20.30:
     name: Exploitation du portail de suivi public
     description: |
       Exploitation des portails de suivi publics et des API clients.
+    source_hash: sha256-77d6b89cef1e80b7
   BC-2510.30:
     name: Gestion de la prédiction d'ETA
     description: |
       Calcul et affinage continu de l'heure d'arrivée estimée.
+    source_hash: sha256-e9d8eb18e42fec31
   BC-2510.30.10:
     name: Calcul de l'ETA
     description: |
       Calcul déterministe de l'ETA à partir des horaires et des jalons.
+    source_hash: sha256-35017be74dfff2f5
   BC-2510.30.20:
     name: Modélisation prédictive de l'ETA
     description: |
       Modélisation prédictive de l'ETA à partir de données historiques et
       contextuelles.
+    source_hash: sha256-8af4670e56884dc7
   BC-2510.30.30:
     name: Alertes sur les écarts d'ETA
     description: |
       Alertes sur les écarts significatifs d'ETA par rapport aux engagements.
+    source_hash: sha256-2eec2468a8cac143
   BC-2510.40:
     name: Gestion des exceptions et des alertes
     description: |
       Détection des exceptions opérationnelles, notification des parties prenantes
       et suivi de la résolution des exceptions.
+    source_hash: sha256-c2ef3acb43bcf4b1
   BC-2510.40.10:
     name: Détection des exceptions
     description: |
       Détection des exceptions opérationnelles par règles et modèles.
+    source_hash: sha256-5fc8479c1b20fa96
   BC-2510.40.20:
     name: Notification des parties prenantes
     description: |
       Notification des clients, équipes opérationnelles et partenaires.
+    source_hash: sha256-396b16b057b497fe
   BC-2510.40.30:
     name: Suivi de la résolution des exceptions
     description: |
       Suivi du tri, de la prise en charge et de la clôture des exceptions.
+    source_hash: sha256-68b44bf8f3e44230
   BC-2510.50:
     name: Gestion des opérations de tour de contrôle
     description: |
       Visibilité de bout en bout, suivi des performances et coordination des
       interventions proactives entre transporteurs et partenaires.
+    source_hash: sha256-cd2027757600e7f4
   BC-2510.50.10:
     name: Tableaux de bord de visibilité de bout en bout
     description: |
       Exploitation des tableaux de bord de visibilité de bout en bout sur
       l'ensemble du réseau.
+    source_hash: sha256-55cb8e63528ed6be
   BC-2510.50.20:
     name: Suivi des performances multi-transporteurs
     description: |
       Suivi des performances auprès des transporteurs et partenaires.
+    source_hash: sha256-b1e171bf46bc2548
   BC-2510.50.30:
     name: Coordination des interventions proactives
     description: |
       Coordination des interventions proactives pour protéger les engagements.
+    source_hash: sha256-3ac3218790ba259a

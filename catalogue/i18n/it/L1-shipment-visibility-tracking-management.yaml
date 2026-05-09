@@ -8,6 +8,7 @@ entries:
       Visibilità end-to-end delle spedizioni attraverso l'acquisizione di eventi,
       la risoluzione degli stati, la previsione dell'ETA, gli avvisi di eccezione
       e le operazioni della control tower logistica.
+    source_hash: sha256-8ea9ff58ce2685eb
   BC-2510.10:
     name: Gestione dell'acquisizione degli eventi e degli stati
     description: |
@@ -18,85 +19,105 @@ entries:
       - Acquisizione di eventi IoT e telematica
     out_of_scope:
       - Telematica per le condizioni degli asset (BC-2430.40)
+    source_hash: sha256-3a61b4197d69f131
   BC-2510.10.10:
     name: Acquisizione degli eventi dal vettore
     description: |
       Acquisizione degli eventi milestone lato vettore tramite EDI e API.
+    source_hash: sha256-72f2696ba7dad219
   BC-2510.10.20:
     name: Acquisizione di eventi IoT e telematica
     description: |
       Acquisizione degli eventi IoT e di telematica a livello di carico.
+    source_hash: sha256-a8a72c7ebbb6ac7d
   BC-2510.10.30:
     name: Acquisizione degli aggiornamenti di stato manuali
     description: |
       Acquisizione degli aggiornamenti di stato manuali da autisti, agenti e partner.
+    source_hash: sha256-42a8d355da140037
   BC-2510.20:
     name: Gestione del tracciamento delle spedizioni
     description: |
       Risoluzione dello stato delle spedizioni tra tratte, modi e partner e distribuzione
       alle superfici di tracciamento interne e rivolte ai clienti.
+    source_hash: sha256-04fe8209f1f19323
   BC-2510.20.10:
     name: Risoluzione dello stato della spedizione
     description: |
       Risoluzione dello stato canonico della spedizione dagli eventi grezzi.
+    source_hash: sha256-442bcdc9db4966f6
   BC-2510.20.20:
     name: Ricucitura del tracciamento multi-tratta
     description: |
       Ricucitura di viaggi multi-tratta e multi-vettore in un'unica traccia.
+    source_hash: sha256-2bdc145ce03e0a36
   BC-2510.20.30:
     name: Operazioni del portale di tracciamento pubblico
     description: |
       Gestione dei portali di tracciamento pubblici e delle API per i clienti.
+    source_hash: sha256-77d6b89cef1e80b7
   BC-2510.30:
     name: Gestione della previsione dell'ETA
     description: |
       Calcolo e raffinamento continuo dell'orario stimato di arrivo (ETA).
+    source_hash: sha256-e9d8eb18e42fec31
   BC-2510.30.10:
     name: Calcolo dell'ETA
     description: |
       Calcolo deterministico dell'ETA da orari e milestone.
+    source_hash: sha256-35017be74dfff2f5
   BC-2510.30.20:
     name: Modellizzazione predittiva dell'ETA
     description: |
       Modellizzazione predittiva dell'ETA utilizzando dati storici e contestuali.
+    source_hash: sha256-8af4670e56884dc7
   BC-2510.30.30:
     name: Allerta per variazioni dell'ETA
     description: |
       Allerta per variazioni significative dell'ETA rispetto all'impegno concordato.
+    source_hash: sha256-2eec2468a8cac143
   BC-2510.40:
     name: Gestione delle eccezioni e degli avvisi
     description: |
       Rilevamento delle eccezioni operative, notifica agli stakeholder e monitoraggio
       della risoluzione delle eccezioni.
+    source_hash: sha256-c2ef3acb43bcf4b1
   BC-2510.40.10:
     name: Rilevamento delle eccezioni
     description: |
       Rilevamento delle eccezioni operative basato su regole e modelli.
+    source_hash: sha256-5fc8479c1b20fa96
   BC-2510.40.20:
     name: Notifica agli stakeholder
     description: |
       Notifica a clienti, team operativi e partner.
+    source_hash: sha256-396b16b057b497fe
   BC-2510.40.30:
     name: Monitoraggio della risoluzione delle eccezioni
     description: |
       Monitoraggio del triage, della responsabilità e della chiusura delle eccezioni.
+    source_hash: sha256-68b44bf8f3e44230
   BC-2510.50:
     name: Gestione delle operazioni della control tower logistica
     description: |
       Visibilità end-to-end, monitoraggio della performance e coordinamento degli
       interventi proattivi tra vettori e partner.
+    source_hash: sha256-cd2027757600e7f4
   BC-2510.50.10:
     name: Dashboard di visibilità end-to-end
     description: |
       Gestione dei dashboard di visibilità end-to-end sull'intera rete.
+    source_hash: sha256-55cb8e63528ed6be
   BC-2510.50.20:
     name: Monitoraggio della performance cross-vettore
     description: |
       Monitoraggio della performance tra vettori e partner.
+    source_hash: sha256-b1e171bf46bc2548
   BC-2510.50.30:
     name: Coordinamento degli interventi proattivi
     description: |
       Coordinamento degli interventi proattivi a tutela degli impegni verso i clienti.
+    source_hash: sha256-3ac3218790ba259a
 metadata:
   status: draft
   reviewer: pending

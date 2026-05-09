@@ -8,6 +8,7 @@ entries:
       des ventes, acceptation des moyens de paiement, retours et remboursements,
       gestion des espèces, configuration du PDV et continuité des ventes lors
       d'interruptions système.
+    source_hash: sha256-be0f6698812e2ac1
 
   BC-2320.10:
     name: Gestion des transactions de vente
@@ -22,30 +23,35 @@ entries:
     out_of_scope:
       - Conception des promotions (BC-440.30)
       - Paiement en ligne (BC-2330)
+    source_hash: sha256-31fc675da3070daf
 
   BC-2320.10.10:
     name: Lecture des articles et constitution du panier
     description: |
       Lecture des articles et constitution du panier à la caisse, incluant les
       articles au poids.
+    source_hash: sha256-43f245d9878d5655
 
   BC-2320.10.20:
     name: Application des promotions et de la fidélité
     description: |
       Application des promotions, coupons et utilisations de points de fidélité lors
       de la vente.
+    source_hash: sha256-fdf4dd3fe8ecd8ed
 
   BC-2320.10.30:
     name: Traitement de la taxe sur les ventes et de la TVA
     description: |
       Calcul de la taxe sur les ventes, de la TVA et des règles spécifiques aux
       juridictions à la caisse.
+    source_hash: sha256-1031e7ad3d42e33a
 
   BC-2320.10.40:
     name: Émission du ticket et du ticket dématérialisé
     description: |
       Émission des tickets papier et dématérialisés incluant le rattachement au
       compte client.
+    source_hash: sha256-e28808ee76ab9ca7
 
   BC-2320.20:
     name: Gestion de l'acceptation des moyens de paiement
@@ -53,35 +59,41 @@ entries:
       Acceptation des moyens de paiement à la caisse incluant EMV, sans contact,
       portefeuilles mobiles, cartes cadeaux et méthodes de paiement alternatives,
       dans le respect de la norme PCI-DSS.
+    source_hash: sha256-9ac272f2044de959
 
   BC-2320.20.10:
     name: Acceptation des paiements par carte et sans contact
     description: |
       Acceptation des paiements EMV, sans contact et par portefeuille mobile aux
       caisses.
+    source_hash: sha256-795ddbd67ef022c3
 
   BC-2320.20.20:
     name: Acceptation des espèces et chèques
     description: |
       Acceptation des espèces, monnaie et chèques incluant la gestion des
       coupures.
+    source_hash: sha256-71384bcb1b5e1e0f
 
   BC-2320.20.30:
     name: Acceptation des cartes cadeaux et valeurs stockées
     description: |
       Acceptation et émission de cartes cadeaux et d'instruments à valeur stockée.
+    source_hash: sha256-f6192e184dcf544e
 
   BC-2320.20.40:
     name: Acceptation des moyens de paiement alternatifs
     description: |
       Acceptation des solutions acheter-maintenant-payer-plus-tard, QR et autres
       modes de paiement alternatifs.
+    source_hash: sha256-f8dff7eafcc7f20c
 
   BC-2320.20.50:
     name: Opérations de conformité PCI-DSS
     description: |
       Traitement conforme à la norme PCI-DSS des données des porteurs de cartes au
       point de vente.
+    source_hash: sha256-fa1c744d12520953
 
   BC-2320.30:
     name: Gestion des retours, remboursements et échanges
@@ -95,57 +107,67 @@ entries:
       - Retours en magasin des commandes passées en ligne
     out_of_scope:
       - Logistique inverse vers le centre de distribution (BC-520.40.40)
+    source_hash: sha256-223efa4ed40af752
 
   BC-2320.30.10:
     name: Acceptation des retours consommateurs
     description: |
       Acceptation des retours consommateurs à la caisse conformément à la politique
       de retour.
+    source_hash: sha256-881d862a9d2ab9a8
 
   BC-2320.30.20:
     name: Émission des remboursements et avoirs en magasin
     description: |
       Émission des remboursements sur le moyen de paiement d'origine ou sous forme
       d'avoir en magasin.
+    source_hash: sha256-a0eaecf52c48884b
 
   BC-2320.30.30:
     name: Traitement des transactions d'échange
     description: |
       Transactions d'échange à valeur identique ou différente incluant la
       réconciliation des écarts de prix.
+    source_hash: sha256-db4b5d4519b9da6c
 
   BC-2320.30.40:
     name: Traitement des retours multicanaux
     description: |
       Acceptation en magasin des commandes passées sur d'autres canaux pour retour.
+    source_hash: sha256-0e6457cbbcce5b77
 
   BC-2320.40:
     name: Gestion des espèces et des moyens de paiement au PDV
     description: |
       Procédures de gestion du tiroir-caisse, du coffre, des dépôts et de la
       réconciliation des encaissements en fin de journée pour protéger les recettes.
+    source_hash: sha256-e3200b5681fad8c8
 
   BC-2320.40.10:
     name: Gestion du tiroir-caisse
     description: |
       Ouverture, surveillance et réconciliation des tiroirs-caisses.
+    source_hash: sha256-242600c09c5deebe
 
   BC-2320.40.20:
     name: Opérations de coffre et de prélèvement en magasin
     description: |
       Gestion du coffre, prélèvements en cours de journée et préparation des
       transferts sécurisés.
+    source_hash: sha256-8b4760a1d365fa1f
 
   BC-2320.40.30:
     name: Réconciliation des encaissements en fin de journée
     description: |
       Réconciliation de tous les moyens de paiement par rapport aux enregistrements
       PDV en fin de journée.
+    source_hash: sha256-10033316f8ee77d2
 
   BC-2320.40.40:
     name: Préparation des remises bancaires
     description: |
       Préparation des remises bancaires et remise aux convoyeurs de fonds.
+    source_hash: sha256-38dbb6861e7313c6
 
   BC-2320.50:
     name: Gestion de la configuration du PDV
@@ -153,29 +175,34 @@ entries:
       Configuration des moyens de paiement, des règles fiscales, de la logique
       promotionnelle, des périphériques et du comportement des caisses dans
       l'ensemble des magasins.
+    source_hash: sha256-40adce71c9062463
 
   BC-2320.50.10:
     name: Configuration des moyens de paiement
     description: |
       Configuration des moyens de paiement acceptés, des limites et de
       l'acheminement par magasin.
+    source_hash: sha256-1d42ac4fef10c45c
 
   BC-2320.50.20:
     name: Configuration des règles fiscales
     description: |
       Configuration des règles fiscales et des dérogations juridictionnelles par
       magasin.
+    source_hash: sha256-e0744c4f46c7abb0
 
   BC-2320.50.30:
     name: Configuration du moteur promotionnel
     description: |
       Configuration du moteur promotionnel PDV et des règles de priorisation des
       offres.
+    source_hash: sha256-a6d70018acd4327f
 
   BC-2320.50.40:
     name: Configuration des périphériques PDV
     description: |
       Configuration des balances, scanners, imprimantes et claviers PIN à la caisse.
+    source_hash: sha256-5feb6f4030f8f164
 
   BC-2320.60:
     name: Résilience et opérations hors ligne du PDV
@@ -183,18 +210,22 @@ entries:
       Continuité des ventes lors de ruptures de connectivité ou d'interruptions
       système, incluant le PDV hors ligne, le mode store-and-forward et la gestion
       des files d'attente.
+    source_hash: sha256-7bb2d2dd6a6d4b83
 
   BC-2320.60.10:
     name: Opération du PDV en mode hors ligne
     description: |
       Poursuite du fonctionnement du PDV en cas de perte de connectivité.
+    source_hash: sha256-c0ff1d2f23de3b67
 
   BC-2320.60.20:
     name: Traitement des transactions en mode store-and-forward
     description: |
       Stockage et transfert des transactions hors ligne à la reconnexion.
+    source_hash: sha256-92a84da381807dbc
 
   BC-2320.60.30:
     name: Gestion des files d'attente en cas d'interruption
     description: |
       Gestion des files d'attente clients lors d'interruptions du système de caisse.
+    source_hash: sha256-69ff1d024d828487

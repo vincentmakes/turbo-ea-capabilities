@@ -10,29 +10,35 @@ entries:
       nominations, participation au marché de capacité, et règlement back-office
       et reporting réglementaire dans le cadre des régimes REMIT / EMIR /
       Dodd-Frank.
+    source_hash: sha256-3c52b084f32a6190
   BC-3850.10:
     name: Trading de gros d'électricité
     description: |
       Trading front-office d'électricité physique et financière sur les marchés
       en J-1, infrajournalier et à terme.
+    source_hash: sha256-ea578ef655a91b17
   BC-3850.10.10:
     name: Trading sur le marché en J-1
     description: |
       Soumission et gestion des offres d'achat et de vente sur le marché en J-1.
+    source_hash: sha256-c78264ee80ad55f5
   BC-3850.10.20:
     name: Trading infrajournalier
     description: |
       Trading infrajournalier en continu et aux enchères en réponse aux
       évolutions de position.
+    source_hash: sha256-35eb0a779a911fa3
   BC-3850.10.30:
     name: Trading à terme et bilatéral
     description: |
       Trading physique à terme et bilatéral OTC pour la couverture et
       l'origination.
+    source_hash: sha256-a9174d4d32725bf9
   BC-3850.10.40:
     name: Trading de capacité transfrontalière
     description: |
       Trading des produits de capacité d'interconnexion transfrontalière.
+    source_hash: sha256-51f6f1d27ce62887
   BC-3850.20:
     name: Gestion des risques énergétiques
     description: |
@@ -45,112 +51,136 @@ entries:
     out_of_scope:
       - Gestion des risques d'entreprise (BC-120)
       - Risque de crédit clients détail (BC-3910)
+    source_hash: sha256-aa38187c757c0529
   BC-3850.20.10:
     name: Surveillance du risque de marché
     description: |
       Surveillance de la VaR, des résultats à risque et des expositions du
       portefeuille de trading.
+    source_hash: sha256-63a5c446385525e4
   BC-3850.20.20:
     name: Gestion du risque de crédit contrepartie
     description: |
       Limites de crédit contrepartie, collatéral et surveillance des expositions.
+    source_hash: sha256-8fc34fb57829b2b4
   BC-3850.20.30:
     name: Gestion du programme de couverture
     description: |
       Conception et exécution des programmes de couverture des expositions
       combustible et électricité.
+    source_hash: sha256-bd3a165f18ee663a
   BC-3850.30:
     name: Gestion des positions et planification
     description: |
       Agrégation des positions de trading et physiques et soumission des
       programmes et nominations aux opérateurs de réseau et de pipeline.
+    source_hash: sha256-1a13c9ed2bf4cd5a
   BC-3850.30.10:
     name: Agrégation des positions de trading
     description: |
       Agrégation des positions sur les produits, portefeuilles et contreparties.
+    source_hash: sha256-47a76bcf4c5415a5
   BC-3850.30.20:
     name: Soumission des programmes d'électricité
     description: |
       Soumission des programmes d'électricité physique aux GRT et responsables
       d'équilibre.
+    source_hash: sha256-1b76290e2a8f79cb
   BC-3850.30.30:
     name: Soumission des nominations de gaz
     description: |
       Soumission des nominations de gaz et rééquilibrage sur les pipelines de
       transport.
+    source_hash: sha256-42f9418970b6e212
   BC-3850.40:
     name: Participation au marché de capacité
     description: |
       Participation aux mécanismes de marché de capacité et de sécurité
       d'approvisionnement, incluant la stratégie d'enchères, la qualification et
       le suivi de livraison.
+    source_hash: sha256-eef3f2f3ef74ad2c
   BC-3850.40.10:
     name: Stratégie d'enchères de capacité
     description: |
       Stratégie et préparation des offres pour les enchères de marché de
       capacité.
+    source_hash: sha256-1b0460d315b72e08
   BC-3850.40.20:
     name: Qualification des fournisseurs de capacité
     description: |
       Qualification des actifs et gestion des facteurs de déclassement pour
       les produits de capacité.
+    source_hash: sha256-9a126a5703fab925
   BC-3850.40.30:
     name: Surveillance de la livraison de capacité
     description: |
       Surveillance de la livraison de capacité lors des événements de stress et
       exposition aux pénalités.
+    source_hash: sha256-949390d13af77a97
   BC-3850.50:
     name: Trading de matières premières environnementales
     description: |
       Trading et restitution de quotas de carbone, certificats d'énergie
       renouvelable, garanties d'origine et certificats blancs.
+    source_hash: sha256-9e7807f580b0f251
   BC-3850.50.10:
     name: Trading de quotas de carbone
     description: |
       Trading d'EUA, CCA et autres quotas de carbone de conformité.
+    source_hash: sha256-77d79c3dadce4674
   BC-3850.50.20:
     name: Trading de certificats d'énergie renouvelable
     description: |
       Trading de REC, ROC et garanties d'origine.
+    source_hash: sha256-77c45de5ad2b238b
   BC-3850.50.30:
     name: Opérations sur certificats blancs
     description: |
       Trading et restitution de certificats blancs d'efficacité énergétique.
+    source_hash: sha256-493e013f74a8afa2
   BC-3850.60:
     name: Opérations de règlement des transactions
     description: |
       Confirmation back-office, calcul du règlement, facturation et gestion de
       trésorerie des transactions d'énergie en gros.
+    source_hash: sha256-55e12cd7ab39c065
   BC-3850.60.10:
     name: Confirmation des transactions
     description: |
       Confirmations de transactions sortantes et entrantes et résolution des
       écarts.
+    source_hash: sha256-5669bea3fdd0152f
   BC-3850.60.20:
     name: Calcul du règlement
     description: |
       Calcul des montants de règlement physiques et financiers par contrat.
+    source_hash: sha256-a9a3e05641dd0a9c
   BC-3850.60.30:
     name: Facturation et gestion de trésorerie des transactions
     description: |
       Facturation, paiement et rapprochement des flux de trésorerie des
       transactions de gros.
+    source_hash: sha256-c6729c7dd621dea0
   BC-3850.70:
     name: Reporting réglementaire des transactions
     description: |
       Reporting réglementaire des transactions d'énergie en gros dans le cadre
       des régimes REMIT, EMIR, MiFID II et Dodd-Frank.
+    source_hash: sha256-5043e8200100ac2a
   BC-3850.70.10:
     name: Reporting des transactions REMIT
     description: |
       Reporting des transactions d'énergie en gros tableaux 1 et 2 à l'ACER.
+    source_hash: sha256-d8e58704c7057586
   BC-3850.70.20:
     name: Reporting EMIR et Dodd-Frank
     description: |
       Déclaration des transactions dérivées aux référentiels centraux selon
       EMIR et Dodd-Frank.
+    source_hash: sha256-bccdd605095b3fa1
   BC-3850.70.30:
     name: Divulgation des informations privilégiées
     description: |
       Divulgation des informations privilégiées conformément à l'article 4 du
       REMIT.
+    source_hash: sha256-3b2c9c37efe46b3f

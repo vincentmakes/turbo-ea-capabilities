@@ -8,161 +8,193 @@ entries:
       Misurazione dell'utilizzo, tariffazione, fatturazione, gestione dei mancati pagamenti,
       riconoscimento dei ricavi da abbonamento, fiscalità e analytics dei ricavi ricorrenti
       per il modello commerciale SaaS.
+    source_hash: sha256-7146e52db7b63d13
   BC-4250.10:
     name: Misurazione dell'utilizzo
     description: |
       Ingestione e aggregazione degli eventi di utilizzo che alimentano
       la tariffazione downstream e le analytics.
+    source_hash: sha256-3428352c1e3acf9f
   BC-4250.10.10:
     name: Ingestione degli eventi di utilizzo
     description: |
       Ingestione degli eventi di utilizzo dai servizi di prodotto
       nella pipeline di misurazione.
+    source_hash: sha256-31d9023f3afbbdc5
   BC-4250.10.20:
     name: Aggregazione dell'utilizzo
     description: |
       Aggregazione degli eventi di utilizzo in quantità fatturabili
       per tenant e contatore.
+    source_hash: sha256-c6741d7d6db8676b
   BC-4250.10.30:
     name: Riconciliazione delle quantità misurate
     description: |
       Riconciliazione delle quantità misurate rispetto alla fonte di verità
       e ai contatori visibili al cliente.
+    source_hash: sha256-18ccac794b4b6321
   BC-4250.20:
     name: Tariffazione e addebito
     description: |
       Applicazione di tariffe di abbonamento, tariffe di utilizzo, ripartizioni proporzionali
       e sconti per il calcolo degli addebiti.
+    source_hash: sha256-223b9918dc596533
   BC-4250.20.10:
     name: Tariffazione degli abbonamenti
     description: |
       Calcolo degli addebiti ricorrenti dell'abbonamento
       per ciclo.
+    source_hash: sha256-5be6f91a1e54c30e
   BC-4250.20.20:
     name: Tariffazione dell'utilizzo
     description: |
       Calcolo degli addebiti di utilizzo dalle quantità
       tariffate e dalle tariffe.
+    source_hash: sha256-44e1c2dd1ec39f54
   BC-4250.20.30:
     name: Calcolo della ripartizione proporzionale
     description: |
       Calcolo degli addebiti pro-rata derivanti
       da modifiche a metà ciclo.
+    source_hash: sha256-e6c52ecf60828a64
   BC-4250.20.40:
     name: Applicazione degli sconti
     description: |
       Applicazione di sconti e crediti negoziati
       agli addebiti calcolati.
+    source_hash: sha256-059bc39c662f4768
   BC-4250.30:
     name: Gestione delle fatture e dei rendiconti
     description: |
       Generazione, consegna e rettifica delle fatture e gestione
       delle contestazioni di fatturazione dei clienti.
+    source_hash: sha256-68d610731fbaf835
   BC-4250.30.10:
     name: Generazione delle fatture
     description: |
       Generazione delle fatture dagli addebiti tariffati
       e dai termini contrattuali.
+    source_hash: sha256-bd37e9c37782320d
   BC-4250.30.20:
     name: Consegna delle fatture
     description: |
       Consegna delle fatture ai clienti tramite portale, email
       e canali partner.
+    source_hash: sha256-f4c8de48637b5073
   BC-4250.30.30:
     name: Rettifica delle fatture
     description: |
       Rettifica delle fatture per crediti, errori
       e scostamenti contrattuali.
+    source_hash: sha256-57cbf4f6c4031576
   BC-4250.30.40:
     name: Gestione delle contestazioni di fatturazione
     description: |
       Triage e risoluzione delle contestazioni di fatturazione
       dei clienti.
+    source_hash: sha256-b235dddbb3c79377
   BC-4250.40:
     name: Riscossione dei pagamenti e gestione dei mancati pagamenti
     description: |
       Gestione dei metodi di pagamento, autorizzazione, gestione dei mancati pagamenti
       e recupero dell'abbandono involontario.
+    source_hash: sha256-3a593098fa4d0f3a
   BC-4250.40.10:
     name: Gestione dei metodi di pagamento
     description: |
       Acquisizione e gestione dei metodi di pagamento
       e dei token dei clienti.
+    source_hash: sha256-75f6a6f9e63c09f6
   BC-4250.40.20:
     name: Autorizzazione dei pagamenti
     description: |
       Autorizzazione e acquisizione dei pagamenti ricorrenti
       tramite processori di pagamento.
+    source_hash: sha256-303ac3953a30856b
   BC-4250.40.30:
     name: Workflow di gestione dei mancati pagamenti
     description: |
       Sequenze automatizzate di gestione dei mancati pagamenti
       per pagamenti falliti e saldi in scadenza.
+    source_hash: sha256-078ffd276ac411bd
   BC-4250.40.40:
     name: Recupero dell'abbandono involontario
     description: |
       Recupero degli abbonamenti persi a causa di carte scadute,
       rifiuti definitivi e analoghe problematiche di pagamento.
+    source_hash: sha256-0dc2544af9afb29b
   BC-4250.50:
     name: Riconoscimento dei ricavi da abbonamento
     description: |
       Identificazione delle obbligazioni di performance e gestione
       dei piani di ricavo in linea con ASC 606 / IFRS 15.
+    source_hash: sha256-f1be5714e6a3d408
   BC-4250.50.10:
     name: Identificazione delle obbligazioni di performance
     description: |
       Identificazione delle obbligazioni di performance distinte
       dai contratti di abbonamento.
+    source_hash: sha256-bb225b7c1eb9598d
   BC-4250.50.20:
     name: Gestione dei piani di ricavo
     description: |
       Generazione e manutenzione dei piani di riconoscimento dei ricavi
       nel corso della vita del contratto.
+    source_hash: sha256-32b05fb994519d03
   BC-4250.50.30:
     name: Riconciliazione dei ricavi differiti
     description: |
       Riconciliazione dei saldi dei ricavi differiti con gli importi
       fatturati e riconosciuti.
+    source_hash: sha256-0dc6fabc7746b44f
   BC-4250.60:
     name: Gestione della fiscalità degli abbonamenti
     description: |
       Determinazione delle giurisdizioni fiscali, calcolo e gestione delle esenzioni
       sulle tariffe ricorrenti e di utilizzo.
+    source_hash: sha256-4c6fa0b367b14b63
   BC-4250.60.10:
     name: Determinazione della giurisdizione fiscale
     description: |
       Determinazione delle giurisdizioni fiscali applicabili
       per cliente e addebito.
+    source_hash: sha256-3cda282c052adff2
   BC-4250.60.20:
     name: Calcolo delle imposte sugli abbonamenti
     description: |
       Calcolo dell'imposta indiretta sugli addebiti
       di abbonamento e di utilizzo.
+    source_hash: sha256-0d3dc4c274ee4bc2
   BC-4250.60.30:
     name: Gestione delle esenzioni fiscali
     description: |
       Acquisizione e applicazione dei certificati di esenzione
       fiscale dei clienti.
+    source_hash: sha256-200e469dd41fac17
   BC-4250.70:
     name: Analytics dei ricavi da abbonamento
     description: |
       Calcolo e analisi delle metriche di salute dei ricavi ricorrenti,
       inclusi ARR, MRR, NRR, GRR e viste per coorte.
+    source_hash: sha256-e8947c198bc36a47
   BC-4250.70.10:
     name: Calcolo di ARR e MRR
     description: |
       Calcolo dei ricavi ricorrenti annuali e mensili
       dallo stato degli abbonamenti.
+    source_hash: sha256-1318961648ffee3e
   BC-4250.70.20:
     name: Analisi della retention netta e lorda
     description: |
       Analisi della retention dei ricavi netta e lorda
       tra le coorti di clienti.
+    source_hash: sha256-6e59d2284c88e079
   BC-4250.70.30:
     name: Analisi dei ricavi per coorte
     description: |
       Analisi per coorte dell'evoluzione dei ricavi
       e delle dinamiche di retention.
+    source_hash: sha256-201b5b343fa07b42
 metadata:
   status: draft
   reviewer: pending

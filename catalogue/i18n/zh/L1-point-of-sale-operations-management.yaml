@@ -5,6 +5,7 @@ entries:
     name: 销售终端运营管理
     description: |
       涵盖零售面向顾客的交易层，包括销售录入、支付受理、退款退货、现金管理、POS配置，以及系统中断期间的持续销售能力。
+    source_hash: sha256-be0f6698812e2ac1
   BC-2320.10:
     name: 销售交易管理
     description: |
@@ -16,46 +17,57 @@ entries:
     out_of_scope:
       - 促销设计（BC-440.30）
       - 电商结账（BC-2330）
+    source_hash: sha256-31fc675da3070daf
   BC-2320.10.10:
     name: 商品扫描与购物篮组建
     description: |
       在收银台完成商品扫描及购物篮组建，包括称重商品处理。
+    source_hash: sha256-43f245d9878d5655
   BC-2320.10.20:
     name: 促销与会员积分应用
     description: |
       在销售过程中应用促销、优惠券及会员积分兑换。
+    source_hash: sha256-fdf4dd3fe8ecd8ed
   BC-2320.10.30:
     name: 销售税与VAT处理
     description: |
       在收银台计算销售税、VAT及特定辖区税务规则。
+    source_hash: sha256-1031e7ad3d42e33a
   BC-2320.10.40:
     name: 小票与电子小票开具
     description: |
       开具纸质及电子小票，包括关联消费者账户。
+    source_hash: sha256-e28808ee76ab9ca7
   BC-2320.20:
     name: 支付方式受理管理
     description: |
       受理收银台各类支付方式，包括EMV、非接触式支付、移动钱包、礼品卡及其他支付方式，并符合PCI-DSS合规要求。
+    source_hash: sha256-9ac272f2044de959
   BC-2320.20.10:
     name: 银行卡与非接触支付受理
     description: |
       在零售收银台受理EMV、非接触式及移动钱包支付。
+    source_hash: sha256-795ddbd67ef022c3
   BC-2320.20.20:
     name: 现金与支票受理
     description: |
       受理现金、硬币及支票，包括面额处理。
+    source_hash: sha256-71384bcb1b5e1e0f
   BC-2320.20.30:
     name: 礼品卡与储值卡受理
     description: |
       受理和开具礼品卡及储值工具。
+    source_hash: sha256-f6192e184dcf544e
   BC-2320.20.40:
     name: 其他支付方式受理
     description: |
       受理先买后付、二维码及其他非传统支付方式。
+    source_hash: sha256-f8dff7eafcc7f20c
   BC-2320.20.50:
     name: PCI-DSS合规运营
     description: |
       在销售终端以符合PCI-DSS的方式处理持卡人数据。
+    source_hash: sha256-fa1c744d12520953
   BC-2320.30:
     name: 退货、退款与换货管理
     description: |
@@ -66,78 +78,97 @@ entries:
       - 将线上订单退货至门店的跨渠道退货
     out_of_scope:
       - 退回配送中心的逆向物流（BC-520.40.40）
+    source_hash: sha256-223efa4ed40af752
   BC-2320.30.10:
     name: 消费者退货受理
     description: |
       按退货政策在收银台受理消费者退货。
+    source_hash: sha256-881d862a9d2ab9a8
   BC-2320.30.20:
     name: 退款与门店积分开具
     description: |
       将退款退回原支付方式或开具门店积分。
+    source_hash: sha256-a0eaecf52c48884b
   BC-2320.30.30:
     name: 换货交易处理
     description: |
       处理等价及不等价换货交易，包括差价结算。
+    source_hash: sha256-db4b5d4519b9da6c
   BC-2320.30.40:
     name: 跨渠道退货处理
     description: |
       在门店受理线上及其他渠道订单的退货。
+    source_hash: sha256-0e6457cbbcce5b77
   BC-2320.40:
     name: POS现金与款项管理
     description: |
       通过钱箱管理、保险柜、存款及日终款项对账流程保护收银款项。
+    source_hash: sha256-e3200b5681fad8c8
   BC-2320.40.10:
     name: 收银钱箱管理
     description: |
       对收银钱箱进行开启、监控及对账。
+    source_hash: sha256-242600c09c5deebe
   BC-2320.40.20:
     name: 门店保险柜与取款运营
     description: |
       管理保险柜、日中取款及现金运输准备。
+    source_hash: sha256-8b4760a1d365fa1f
   BC-2320.40.30:
     name: 日终款项对账
     description: |
       对各类支付方式与POS销售记录进行日终对账。
+    source_hash: sha256-10033316f8ee77d2
   BC-2320.40.40:
     name: 银行存款准备
     description: |
       准备银行存款及现金运输交接。
+    source_hash: sha256-38dbb6861e7313c6
   BC-2320.50:
     name: POS配置管理
     description: |
       跨门店资产配置支付方式、税务规则、促销逻辑、外设及收银机行为。
+    source_hash: sha256-40adce71c9062463
   BC-2320.50.10:
     name: 支付方式配置
     description: |
       按门店配置受理支付方式、限额及路由规则。
+    source_hash: sha256-1d42ac4fef10c45c
   BC-2320.50.20:
     name: 税务规则配置
     description: |
       按门店配置税务规则及辖区覆盖设置。
+    source_hash: sha256-e0744c4f46c7abb0
   BC-2320.50.30:
     name: 促销引擎配置
     description: |
       配置POS促销引擎及优惠优先级规则。
+    source_hash: sha256-a6d70018acd4327f
   BC-2320.50.40:
     name: POS外设配置
     description: |
       配置收银台的电子秤、扫描枪、打印机及PIN输入设备。
+    source_hash: sha256-5feb6f4030f8f164
   BC-2320.60:
     name: POS韧性与离线运营
     description: |
       在网络或系统中断期间维持销售连续性，包括离线POS、存储转发及排队管理。
+    source_hash: sha256-7bb2d2dd6a6d4b83
   BC-2320.60.10:
     name: 离线POS运营
     description: |
       在网络中断时维持POS系统持续运营。
+    source_hash: sha256-c0ff1d2f23de3b67
   BC-2320.60.20:
     name: 存储转发交易处理
     description: |
       在重新联网时存储并转发离线交易数据。
+    source_hash: sha256-92a84da381807dbc
   BC-2320.60.30:
     name: 故障期间排队管理
     description: |
       在结账系统故障期间管理顾客排队。
+    source_hash: sha256-69ff1d024d828487
 metadata:
   translator: Claude (zh automated)
   generated: 2026-04-29

@@ -7,6 +7,7 @@ entries:
       Émission des factures de fret, audit et paiement des factures transporteurs,
       règlement intercompagnie et en pool, réclamations de fret et comptabilisation
       des revenus de fret.
+    source_hash: sha256-87dcbd5d52e6a436
   BC-2530.10:
     name: Gestion de la facturation du fret
     description: |
@@ -18,93 +19,114 @@ entries:
     out_of_scope:
       - Processus génériques de comptes clients (BC-200)
       - Stratégie de tarification client (BC-440)
+    source_hash: sha256-f3fe6c6ecc2ad35b
   BC-2530.10.10:
     name: Génération des factures de fret
     description: |
       Génération des factures de fret à partir des acheminements réalisés.
+    source_hash: sha256-b3b5609bdd569a3d
   BC-2530.10.20:
     name: Génération des factures d'accessoires
     description: |
       Génération des factures d'accessoires et de surcharges.
+    source_hash: sha256-b5cadfd86530821b
   BC-2530.10.30:
     name: Coordination de l'auto-facturation client
     description: |
       Réconciliation des relevés d'auto-facturation des clients par rapport
       aux expéditions.
+    source_hash: sha256-0b13e8f3e31dbb8e
   BC-2530.20:
     name: Gestion de l'audit et du paiement du fret
     description: |
       Audit des factures transporteurs et exécution des paiements aux transporteurs
       par les chargeurs et commissionnaires.
+    source_hash: sha256-c27d5952a42f9961
   BC-2530.20.10:
     name: Audit des factures transporteurs
     description: |
       Audit des factures transporteurs par rapport aux contrats, tarifs et
       expéditions.
+    source_hash: sha256-823c36fff43e71de
   BC-2530.20.20:
     name: Réconciliation avant et après audit
     description: |
       Réconciliation des factures transporteurs avant et après audit.
+    source_hash: sha256-fc9d66dd75b77c04
   BC-2530.20.30:
     name: Exécution des paiements transporteurs
     description: |
       Exécution des paiements aux transporteurs et rapports de remise.
+    source_hash: sha256-2834eb86670a39d4
   BC-2530.30:
     name: Gestion du règlement intercompagnie et multi-transporteurs
     description: |
       Règlement des revenus et coûts entre partenaires interlignes, alliances
       et bureaux de commissionnaires.
+    source_hash: sha256-f3e8ba9e0b00c13e
   BC-2530.30.10:
     name: Calcul du prorata interligne
     description: |
       Calcul du prorata de revenus interlignes entre partenaires.
+    source_hash: sha256-2466e97305b93f16
   BC-2530.30.20:
     name: Opérations de règlement IATA CASS
     description: |
       Exploitation du règlement IATA CASS pour le fret aérien.
+    source_hash: sha256-7cf9d4f8fe0cabdb
   BC-2530.30.30:
     name: Règlement inter-bureaux
     description: |
       Règlement inter-bureaux des revenus et coûts des commissionnaires.
+    source_hash: sha256-296977a8349df371
   BC-2530.40:
     name: Gestion des réclamations de fret
     description: |
       Saisie, évaluation et règlement des réclamations de fret dans le cadre des
       conventions de responsabilité du transport.
+    source_hash: sha256-af8d86433d2fb010
   BC-2530.40.10:
     name: Saisie et accusé de réception des réclamations
     description: |
       Saisie et accusé de réception des réclamations pour perte et dommage de
       fret.
+    source_hash: sha256-dfce4e7dd266c9f1
   BC-2530.40.20:
     name: Évaluation de la responsabilité
     description: |
       Évaluation de la responsabilité du transporteur au titre des conventions
       de La Haye-Visby, de Montréal, CMR et COTIF.
+    source_hash: sha256-0432648905806652
   BC-2530.40.30:
     name: Règlement et recouvrement des réclamations
     description: |
       Règlement des réclamations acceptées et paiement aux clients.
+    source_hash: sha256-ee7fd0b00db82f07
   BC-2530.40.40:
     name: Recours et subrogation
     description: |
       Recours contre les transporteurs sous-jacents et subrogation contre les
       assureurs.
+    source_hash: sha256-f6409acad7b332cf
   BC-2530.50:
     name: Gestion de la comptabilisation des revenus de fret
     description: |
       Comptabilisation, suivi et reporting des revenus de fret, y compris les
       positions non facturées et différées.
+    source_hash: sha256-aaf70cbbc8e48b33
   BC-2530.50.10:
     name: Comptabilisation des revenus de fret
     description: |
       Comptabilisation des revenus de fret conformément aux normes comptables
       applicables.
+    source_hash: sha256-60341a8cc43a5322
   BC-2530.50.20:
     name: Suivi des revenus non facturés
     description: |
       Suivi des revenus de fret non facturés et courus.
+    source_hash: sha256-d924f56cb87d24d9
   BC-2530.50.30:
     name: Reporting des revenus de fret
     description: |
       Reporting des revenus de fret aux fonctions finance et commerciale.
+    source_hash: sha256-601ebaae2ed7fb34

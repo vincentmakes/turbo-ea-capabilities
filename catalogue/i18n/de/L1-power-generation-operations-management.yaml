@@ -8,24 +8,29 @@ entries:
       Solar- und Speicheranlagen – einschließlich Dispatch und Scheduling,
       technologiespezifischen Anlagenbetrieb, Brennstoff- und Emissionshandling
       sowie flottenweitem Leistungsmanagement.
+    source_hash: sha256-f3f49059846c80c1
   BC-3800.10:
     name: Erzeugungsdispatch und Scheduling
     description: |
       Kraftwerkseinsatz, Dispatchanweisungen und kurzfristige Fahrpläne
       für den Erzeugungspark gemäß Netzbetreibernominierungen und
       Marktpositionen.
+    source_hash: sha256-579f42d9bf7808a8
   BC-3800.10.10:
     name: Kraftwerkseinsatzplanung
     description: |
       Day-ahead- und Intraday-Auswahl von Erzeugungseinheiten für den Betrieb.
+    source_hash: sha256-cdd84893bbbab983
   BC-3800.10.20:
     name: Wirtschaftlicher Dispatch
     description: |
       Echtzeit-Merit-Order-Dispatch eingesetzter Einheiten gegen die Last.
+    source_hash: sha256-6ce979dad8bd5110
   BC-3800.10.30:
     name: Stillstandskoordination
     description: |
       Koordination geplanter und erzwungener Anlagenstillstände mit Netzbetreiber und Marktfahrplänen.
+    source_hash: sha256-b243cf01cd9c2a24
   BC-3800.20:
     name: Thermischer Anlagenbetrieb
     description: |
@@ -38,145 +43,179 @@ entries:
     out_of_scope:
       - Kernkraftwerksbetrieb (BC-3800.40)
       - Erneuerbarer Anlagenbetrieb (BC-3800.50)
+    source_hash: sha256-6bb43c3513ca8886
   BC-3800.20.10:
     name: Kesselbetrieb
     description: |
       Betrieb der Dampferzeugungsanlage und Verbrennungsregelung.
+    source_hash: sha256-e7ebbc9be7834a63
   BC-3800.20.20:
     name: Dampfturbinenbetrieb
     description: |
       Betrieb von Dampfturbinen und Kondensatspeisewassersystemen.
+    source_hash: sha256-019d40236eae1d35
   BC-3800.20.30:
     name: Gasturbinenbetrieb
     description: |
       Betrieb von Gasturbinen in offener und kombinierter Zyklusausführung.
+    source_hash: sha256-98fe8542818f42b1
   BC-3800.20.40:
     name: Kraft-Wärme-Kopplungsbetrieb
     description: |
       Betrieb von KWK-Anlagen zur Lieferung von Strom und Prozess- bzw. Fernwärme.
+    source_hash: sha256-b7e03e78210a5529
   BC-3800.30:
     name: Wasserkraftanlagenbetrieb
     description: |
       Betrieb konventioneller, Pumpspeicher- und Laufwasserkraftwerke
       einschließlich Staudamm- und Wasserwegemanagement.
+    source_hash: sha256-3b87bad9fc2de63f
   BC-3800.30.10:
     name: Hydro-Einheitenbetrieb
     description: |
       An-/Abfahrt, Regelung und Laststeuerung von Wasserkrafterzeugungseinheiten.
+    source_hash: sha256-fdf27f7ac787f9e8
   BC-3800.30.20:
     name: Stauseepegelmanagement
     description: |
       Staupegel-Scheduling gegen Energie-, Hochwasser- und Umweltrestriktionen.
+    source_hash: sha256-28a2af6ae6c5d05e
   BC-3800.30.30:
     name: Pumpspeicher-Zyklenbetrieb
     description: |
       Pump- und Erzeugungszyklen von Pumpspeicherkraftwerken.
+    source_hash: sha256-e51e284d0332566a
   BC-3800.30.40:
     name: Dammüberwachung
     description: |
       Überwachung des strukturellen Verhaltens und der Sickerwassersituation von Staudämmen.
+    source_hash: sha256-e53a22c47d909fe6
   BC-3800.40:
     name: Kernkraftanlagenbetrieb
     description: |
       Betrieb von Kernkraftwerken – Reaktorsteuerung, Brennstoffwechselstillstände
       und radiologische Sicherheitsüberwachung unter Lizenzbedingungen des Nuklearregulators.
+    source_hash: sha256-2318f93757dabdcd
   BC-3800.40.10:
     name: Reaktorbetrieb
     description: |
       Reaktorsteuerung, Reaktivitätsmanagement und Lastfolgebetrieb.
+    source_hash: sha256-62ed7c64fabab6b7
   BC-3800.40.20:
     name: Brennstoffwechselstillstandsbetrieb
     description: |
       Planung und Durchführung von Brennstoffwechsel- und Großwartungsstillständen.
+    source_hash: sha256-e40bd66460d37134
   BC-3800.40.30:
     name: Radiologische Überwachung
     description: |
       Überwachung radiologischer Freisetzungen und Personendosen gegen Grenzwerte.
+    source_hash: sha256-33a27c85ae9a982d
   BC-3800.40.40:
     name: Abklingbeckenbetrieb
     description: |
       Betrieb und Überwachung der Abklingbeckenkühlung und des Inventars.
+    source_hash: sha256-7dc5ec1dee703ed2
   BC-3800.50:
     name: Erneuerbare Erzeugungsbetrieb
     description: |
       Betrieb von Wind-, Solar-PV- und anderen variablen Erzeugungsanlagen
       einschließlich Abregelung und Prognosedateneingabe.
+    source_hash: sha256-7a126d93a83af5a5
   BC-3800.50.10:
     name: Windparkbetrieb
     description: |
       Onshore- und Offshore-Windparkbetrieb sowie Turbinenverfügbarkeitsmanagement.
+    source_hash: sha256-20503c1c1749b539
   BC-3800.50.20:
     name: Solar-PV-Anlagenbetrieb
     description: |
       Betrieb von Utility-Scale-Solar-PV-Anlagen und String-Monitoring.
+    source_hash: sha256-1e43e2de2ac6c56d
   BC-3800.50.30:
     name: Erneuerbare Abregelungsbetrieb
     description: |
       Ausführung von Abregelungsanweisungen des Netzbetreibers für variable Erneuerbare.
+    source_hash: sha256-4348e01a1e92183c
   BC-3800.50.40:
     name: Erneuerbare Erzeugungsprognose
     description: |
       Kurzfristprognose von Wind- und Solarerträgen als Dispatch- und Handelseingang.
+    source_hash: sha256-f7224a7c78696e4d
   BC-3800.60:
     name: Energiespeicherbetrieb
     description: |
       Betrieb netzgekoppelter Batterie- und anderer Energiespeicheranlagen,
       einschließlich Ladestandsmanagement und Zyklussteuerung gegen Markt-
       und Systemdienstleistungspositionen.
+    source_hash: sha256-6f5e008392f1c047
   BC-3800.60.10:
     name: Batteriespeicherbetrieb
     description: |
       Betrieb und Ladestandsmanagement netzgekoppelter Batterieanlagen.
+    source_hash: sha256-f160687b95057060
   BC-3800.60.20:
     name: Speicherzyklusoptimierung
     description: |
       Optimierung der Lade-/Entladezyklen gegen Energie- und Systemdienstleistungswertschöpfung.
+    source_hash: sha256-544caa2f99aa92a5
   BC-3800.60.30:
     name: Speicherdegradationsverfolgung
     description: |
       Verfolgung von Rundwirkungsgrad und Kapazitätsverlust bei Batterieanlagen.
+    source_hash: sha256-d903da90993ce962
   BC-3800.70:
     name: Erzeugungsleistungsmanagement
     description: |
       Flottenweite Überwachung von Verfügbarkeit, Wärmerate, Kapazitätsfaktor
       und Zwangsstillstandsrate über Erzeugungstechnologien hinweg.
+    source_hash: sha256-7a033f71b05d575d
   BC-3800.70.10:
     name: Verfügbarkeits- und Zuverlässigkeitsberichterstattung
     description: |
       GADS-konforme Berichterstattung über äquivalente Verfügbarkeit und Zwangsstillstandsstatistiken.
+    source_hash: sha256-532b7591559aab43
   BC-3800.70.20:
     name: Wärmerate- und Effizienzverfolgung
     description: |
       Verfolgung von Wärmerate und Wirkungsgrad gegen Design- und Vertragsvorgaben.
+    source_hash: sha256-a06285e3df067b6c
   BC-3800.70.30:
     name: Kapazitätsleistungsverfolgung
     description: |
       Verfolgung von Kapazitätsfaktor und gesicherter Leistungsbewertung.
+    source_hash: sha256-41b50e93a01e7fd1
   BC-3800.80:
     name: Brennstoff- und Emissionsmanagement
     description: |
       Brennstoffversorgung, -vorrats- und Verbrennungsnebenproduktmanagement
       für den Erzeugungspark einschließlich Luftemissions- und CO2-Überwachung.
+    source_hash: sha256-20e2111309270b6a
   BC-3800.80.10:
     name: Brennstoffvorratsbetrieb
     description: |
       Kohle-, Öl- und Biomassehof-Betrieb und Bestandskontrolle.
+    source_hash: sha256-2de6a6302b042f4e
   BC-3800.80.20:
     name: Gasnominierungen
     description: |
       Pipeline-Gasnominierungen und -ausgleich für gasbefeuerte Erzeugung.
+    source_hash: sha256-e825de39129f5345
   BC-3800.80.30:
     name: Luftemissionsüberwachung
     description: |
       Kontinuierliche Emissionsüberwachung von NOx, SOx, Partikeln und Berichterstattung.
+    source_hash: sha256-122c9626b929d9b2
   BC-3800.80.40:
     name: CO2- und Zertifikateabrechnung
     description: |
       Abstimmung von CO2-Emissionen mit abgegebenen Zertifikaten im Rahmen von Cap-and-Trade-Systemen.
+    source_hash: sha256-59de888925c48eec
   BC-3800.80.50:
     name: Asche- und Verbrennungsrückstandsbetrieb
     description: |
       Handhabung und Entsorgung von Flugasche, Kesselasche und REA-Rückständen.
+    source_hash: sha256-7bcd387a32518d5b
 metadata:
   translator: claude-ai
   date: "2026-04-29"

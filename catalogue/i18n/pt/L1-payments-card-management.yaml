@@ -5,142 +5,177 @@ entries:
     name: Gestão de pagamentos e cartões
     description: |
       Iniciação, processamento, compensação/liquidação de pagamentos, emissão de cartões e processamento de transações com cartão.
+    source_hash: sha256-a856bdf402f47367
   BC-1340.10:
     name: Gestão de iniciação de pagamentos
     description: |
       Captura, validação e autorização de instruções de pagamento.
+    source_hash: sha256-196b990f8df2c318
   BC-1340.10.10:
     name: Captura de instruções de pagamento
     description: |
       Captura de instruções de pagamento em todos os canais.
+    source_hash: sha256-11dd7654155b1bbc
   BC-1340.10.20:
     name: Validação de pagamentos
     description: |
       Validação de instruções de pagamento e dados do beneficiário.
+    source_hash: sha256-32192484b044f7cf
   BC-1340.10.30:
     name: Autorização de pagamentos
     description: |
       Autorização, autenticação e aplicação de SCA.
+    source_hash: sha256-6f1157df171426ed
   BC-1340.10.40:
     name: Pré-notificação de pagamento
     description: |
       Pré-notificação de pagamentos e confirmação de beneficiário.
+    source_hash: sha256-29a0fac6b9fb069e
   BC-1340.20:
     name: Gestão do processamento de pagamentos
     description: |
       Processamento, encaminhamento, formatação e ISO 20022 de pagamentos.
+    source_hash: sha256-7e86cce261549727
   BC-1340.20.10:
     name: Enriquecimento e formatação de pagamentos
     description: |
       Enriquecimento e formatação ISO 20022 de mensagens de pagamento.
+    source_hash: sha256-60061b9aa2cdfd0b
   BC-1340.20.20:
     name: Encaminhamento de pagamentos
     description: |
       Encaminhamento de pagamentos para os circuitos e correspondentes adequados.
+    source_hash: sha256-e534e87eb3909189
   BC-1340.20.30:
     name: Rastreio de sanções em pagamentos
     description: |
       Rastreio de sanções e partes restritas em pagamentos.
+    source_hash: sha256-d601fa8d62dd2a77
   BC-1340.20.40:
     name: Investigação de pagamentos
     description: |
       Investigação de pagamentos falhados, devolvidos e questionados.
+    source_hash: sha256-c101ce2115ce0f5e
   BC-1340.30:
     name: Gestão de compensação e liquidação
     description: |
       Compensação doméstica — ACH, BACS, SEPA, FPS — e liquidação.
+    source_hash: sha256-ba94e52c16705444
   BC-1340.30.10:
     name: ACH e compensação em lote
     description: |
       Operação de sistemas de compensação ACH, BACS e em lote.
+    source_hash: sha256-6f143fad32998aa2
   BC-1340.30.20:
     name: Operações de compensação SEPA
     description: |
       Operações de Transferência a Crédito SEPA e Débito Direto SEPA.
+    source_hash: sha256-7e4a211008e3bb73
   BC-1340.30.30:
     name: RTGS e liquidação líquida
     description: |
       Liquidação em RTGS e operações de liquidação líquida diferida.
+    source_hash: sha256-a55cd8b3b98e5c56
   BC-1340.30.40:
     name: Reconciliação de contas nostro e vostro
     description: |
       Reconciliação de contas nostro/vostro e gestão de divergências.
+    source_hash: sha256-263f8cd350ea8610
   BC-1340.40:
     name: Gestão de pagamentos transfronteiriços
     description: |
       Pagamentos internacionais, banca correspondente e câmbio.
+    source_hash: sha256-d3808cb77d5ed257
   BC-1340.40.10:
     name: Gestão de banca correspondente
     description: |
       Relações de banca correspondente e gestão de RMA.
+    source_hash: sha256-6fbe4c6e9e9fc585
   BC-1340.40.20:
     name: Encaminhamento de pagamentos transfronteiriços
     description: |
       Encaminhamento de pagamentos transfronteiriços via SWIFT e circuitos alternativos.
+    source_hash: sha256-212d99aa4b7fb878
   BC-1340.40.30:
     name: Conversão cambial para pagamentos
     description: |
       Conversão cambial, obtenção de taxas e preços para pagamentos.
+    source_hash: sha256-fbca91e5e3de62cc
   BC-1340.40.40:
     name: Acompanhamento SWIFT GPI
     description: |
       Acompanhamento do estado SWIFT GPI e transparência para o cliente.
+    source_hash: sha256-4ee4bd0f9a59af7f
   BC-1340.50:
     name: Gestão de pagamentos em tempo real
     description: |
       Circuitos de pagamento em tempo real / instantâneo.
+    source_hash: sha256-22769b9569c82a5a
   BC-1340.50.10:
     name: Operações de sistemas de pagamento instantâneo
     description: |
       Operação de FPS, SCT Inst e outros sistemas de pagamento instantâneo.
+    source_hash: sha256-9a9e96c9b346ff6d
   BC-1340.50.20:
     name: Operações de pedido de pagamento
     description: |
       Mensagens de pedido de pagamento e gestão do ciclo de vida.
+    source_hash: sha256-d659d487aa8589bc
   BC-1340.50.30:
     name: Liquidez de pagamentos em tempo real
     description: |
       Gestão de liquidez para circuitos de pagamento instantâneo 24/7.
+    source_hash: sha256-226c4e4ce4ac6da3
   BC-1340.60:
     name: Gestão de emissão de cartões
     description: |
       Produção, personalização, expedição e ativação de cartões.
+    source_hash: sha256-1cb04bcdd87a5b2b
   BC-1340.60.10:
     name: Produção e personalização de cartões
     description: |
       Operações de produção, gravação e personalização de cartões.
+    source_hash: sha256-2e792dc99acb71f9
   BC-1340.60.20:
     name: Expedição e entrega de cartões
     description: |
       Expedição de cartões físicos e entrega de PIN.
+    source_hash: sha256-6bba224d3d71bee9
   BC-1340.60.30:
     name: Ativação de cartões
     description: |
       Fluxos de trabalho de ativação de cartões e gestão de PIN.
+    source_hash: sha256-3dfcb75b68e4d799
   BC-1340.60.40:
     name: Provisionamento de cartão digital e carteira eletrónica
     description: |
       Emissão de cartão digital e provisionamento de carteira eletrónica (tokenização).
+    source_hash: sha256-0c591e2d4ce0ca31
   BC-1340.70:
     name: Gestão do processamento de transações com cartão
     description: |
       Comutação, autorização, rastreio de fraude e estornos.
+    source_hash: sha256-4f23c980bb5331c2
   BC-1340.70.10:
     name: Comutação de autorização de cartões
     description: |
       Comutação e encaminhamento de autorização em tempo real.
+    source_hash: sha256-7aed8916c08aedd5
   BC-1340.70.20:
     name: Rastreio de fraude em cartões
     description: |
       Rastreio em tempo real de fraude em transações com cartão.
+    source_hash: sha256-79b49f87f1e423d2
   BC-1340.70.30:
     name: Liquidação e intercâmbio de cartões
     description: |
       Liquidação, intercâmbio e compensação com sistemas.
+    source_hash: sha256-56392a624c748e9f
   BC-1340.70.40:
     name: Gestão de estornos e litígios
     description: |
       Tratamento de estornos e resolução de litígios junto dos sistemas.
+    source_hash: sha256-4f3d73232c5b4e95
 metadata:
   status: draft
   translator: claude-ai

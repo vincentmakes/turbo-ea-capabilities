@@ -7,6 +7,7 @@ entries:
       Multimodale Durchführung von Transportbewegungen von der Abholung über den
       Fernverkehr, Nahverkehr bis zur Letzte-Meile-Zustellung, einschließlich
       Reaktion auf betriebliche Störungen.
+    source_hash: sha256-493efbc703dd1841
   BC-2420.10:
     name: Disposition-Management
     description: |
@@ -18,108 +19,134 @@ entries:
     out_of_scope:
       - Fahrereinteilung vor der Disposition (BC-2440)
       - Kapazitätszuweisung nach Vertrag (BC-2400.20)
+    source_hash: sha256-a022a7d9c5e3d246
   BC-2420.10.10:
     name: Ladungszuweisung
     description: |
       Zuweisung von Ladungen an Fahrzeuge, Schiffe, Flüge oder Zugpfade.
+    source_hash: sha256-01616fc4ff3664cf
   BC-2420.10.20:
     name: Fahrer- und Besatzungsdisposition
     description: |
       Disposition qualifizierter Fahrer und Besatzungen für zugewiesene Ladungen.
+    source_hash: sha256-482bc6cfc7f77267
   BC-2420.10.30:
     name: Ausrüstungsdisposition
     description: |
       Positionierung von Containern, Trailern und ULDs für zugewiesene Bewegungen.
+    source_hash: sha256-9913208b5c5f52be
   BC-2420.20:
     name: Fernverkehrs-Betriebsmanagement
     description: |
       Langstreckentransport von Fracht zwischen Hubs, Terminals und Gateways über verschiedene Verkehrsträger.
+    source_hash: sha256-ac34f817f63beaf2
   BC-2420.20.10:
     name: Straßen-Fernverkehr-Betrieb
     description: |
       Langstrecken-LKW-Transport zwischen Hubs und Terminals.
+    source_hash: sha256-97fef0c549ec6ead
   BC-2420.20.20:
     name: Schienen-Fernverkehr-Betrieb
     description: |
       Betrieb von Güterzügen und Blockzug-Services.
+    source_hash: sha256-a819c7577b71c8ce
   BC-2420.20.30:
     name: Seefernverkehr-Betrieb
     description: |
       Fahrtbetrieb zwischen Häfen einschließlich Umladestrecken.
+    source_hash: sha256-c3127d6147be02e6
   BC-2420.20.40:
     name: Luftfernverkehr-Betrieb
     description: |
       Betrieb von Frachtflügen und Freighter-Services zwischen Flughäfen.
+    source_hash: sha256-f80769bc2a001e25
   BC-2420.30:
     name: Abholung und Nahverkehr-Betriebsmanagement
     description: |
       Erstmeilenabholungen bei Versendern und Kurzstrecken-Nahverkehr zwischen Terminals,
       Höfen und Binnenpunkten.
+    source_hash: sha256-a3e7c418a24dfb7f
   BC-2420.30.10:
     name: Abholungsbetrieb
     description: |
       Abholung von Fracht bei Versendern und Konsolidatoren.
+    source_hash: sha256-2007bfca72dade4a
   BC-2420.30.20:
     name: Container-Nahverkehr-Betrieb
     description: |
       Container-Nahverkehr zwischen Hafenterminals, Bahnanlagen und Binnenlagern.
+    source_hash: sha256-625791dab30a9a78
   BC-2420.30.30:
     name: Leerausrüstungsbewegung
     description: |
       Bewegung leerer Container, Trailer und ULDs zwischen Lagern.
+    source_hash: sha256-eff654c69a4b0193
   BC-2420.40:
     name: Letzte-Meile-Zustellungs-Betriebsmanagement
     description: |
       Letzte-Leg-Zustellung an Empfänger einschließlich Routenplanung, Durchführung und
       Zustellnachweis.
+    source_hash: sha256-e7ecfc3480f3e432
   BC-2420.40.10:
     name: Letzte-Meile-Routenplanung
     description: |
       Routenplanung und Sequenzierung von Zustellpunkten und Zeitfenstern.
+    source_hash: sha256-dea34bdf6734a959
   BC-2420.40.20:
     name: Kundenzustellungsdurchführung
     description: |
       Vor-Ort-Zustellung, Unterschriftserfassung und Übergabe an Empfänger.
+    source_hash: sha256-b7e8eb08b0b105ee
   BC-2420.40.30:
     name: Zustellnachweis
     description: |
       Erfassung und Speicherung von Zustellnachweisen.
+    source_hash: sha256-b105e0ddec0ace72
   BC-2420.40.40:
     name: Zustellausnahme-Behandlung
     description: |
       Behandlung von Annahmeverweigerungen, Fehlzustellungen und Wiederzustellversuchen.
+    source_hash: sha256-bb127b33dbb81ada
   BC-2420.50:
     name: Betriebsstörungs-Management
     description: |
       Erkennung laufender betrieblicher Störungen und Orchestrierung von Wiederherstellungsmaßnahmen.
+    source_hash: sha256-ce329ef97a1b791e
   BC-2420.50.10:
     name: Betriebsvorfall-Erkennung
     description: |
       Erkennung von Pannen, Wetterbedingungen, Hafenverzögerungen und anderen Störungen.
+    source_hash: sha256-1aea2c0d13a9139d
   BC-2420.50.20:
     name: Umleitung und Wiederherstellung
     description: |
       Umleitung von Fracht und Wiederherstellung gestörter Services.
+    source_hash: sha256-5594f850ac6710f3
   BC-2420.50.30:
     name: Dienstwiederherstellung
     description: |
       Wiederherstellung normaler Fahrpläne und Kundenzusagen.
+    source_hash: sha256-9fc6a7521308c1af
   BC-2420.60:
     name: Betriebsleistungs-Management
     description: |
       Betriebliche Messung von Pünktlichkeit, Transitzeiten und Servicelevel-Einhaltung.
+    source_hash: sha256-c0e0d0d9284c0555
   BC-2420.60.10:
     name: Pünktlichkeits-Tracking
     description: |
       Verfolgung pünktlicher Abholung, Abfahrt, Ankunft und Zustellung.
+    source_hash: sha256-7798baea7dbd8ff2
   BC-2420.60.20:
     name: Transitzeitüberwachung
     description: |
       Überwachung tatsächlicher versus zugesagter Transitzeiten.
+    source_hash: sha256-1cac7b65e3a64b6f
   BC-2420.60.30:
     name: Betriebs-KPI-Berichterstattung
     description: |
       Berichterstattung über Betriebs-KPIs an interne und externe Stakeholder.
+    source_hash: sha256-15c17f7c8dd11f1f
 metadata:
   translator: claude-ai
   date: "2026-04-29"

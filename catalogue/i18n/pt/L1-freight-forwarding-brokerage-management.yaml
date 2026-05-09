@@ -7,98 +7,118 @@ entries:
       Organização de transporte em nome de expedidores como transitário, NVOCC,
       corretor de frete ou despachante aduaneiro, incluindo coordenação
       multimodal e operações de rede de parceiros.
+    source_hash: sha256-e79ebf8899871210
   BC-2450.10:
     name: Gestão de cotações para expedidores
     description: |
       Receção de pedidos de cotação de expedidores e emissão de tarifas de
       transitário em vários modos e transportadoras.
     in_scope:
-      - Pesquisa de tarifas de múltiplas transportadoras para consultas de
-        expedidores
+      - Pesquisa de tarifas de múltiplas transportadoras para consultas de expedidores
       - Acompanhamento de validade e confirmação de cotações
     out_of_scope:
       - Gestão de tarifas e tabelas pelo lado da transportadora (BC-2520)
+    source_hash: sha256-45e57d27ccb8177d
   BC-2450.10.10:
     name: Captura de pedido de cotação
     description: |
       Captura de pedidos de cotação de expedidores por vários canais.
+    source_hash: sha256-8e74e5c1a4941035
   BC-2450.10.20:
     name: Pesquisa de tarifas em múltiplas transportadoras
     description: |
       Pesquisa e comparação de tarifas em transportadoras subjacentes.
+    source_hash: sha256-03e9f517385ed079
   BC-2450.10.30:
     name: Emissão e validade de cotação
     description: |
       Emissão de cotações vinculativas e indicativas e acompanhamento da validade.
+    source_hash: sha256-00ea905c3cfdd7fb
   BC-2450.20:
     name: Gestão de aprovisionamento e alocação de transportadoras
     description: |
       Reserva de capacidade junto de transportadoras subjacentes e gestão de
       alocações e despesas de transportadoras.
+    source_hash: sha256-6777c740e0e86b5b
   BC-2450.20.10:
     name: Seleção de transportadora
     description: |
       Seleção de transportadoras subjacentes por envio.
+    source_hash: sha256-024e7dc7ed481be8
   BC-2450.20.20:
     name: Execução de reserva com transportadora
     description: |
       Reserva de capacidade junto das transportadoras selecionadas.
+    source_hash: sha256-7750a01aed7f7d47
   BC-2450.20.30:
     name: Otimização de despesas de alocação
     description: |
       Otimização das despesas do transitário pelas alocações de transportadoras.
+    source_hash: sha256-8221d3835846f04d
   BC-2450.30:
     name: Coordenação de transitário multimodal
     description: |
       Coordenação de movimentos multi-etapa e multimodais, incluindo consolidação,
       desconsolidação e guias de casa.
+    source_hash: sha256-ca1bb5766e3e0612
   BC-2450.30.10:
     name: Emissão de conhecimento de embarque de casa
     description: |
       Emissão de conhecimentos de embarque de casa de transitário para expedidores.
+    source_hash: sha256-fdbc62c7d5c835dd
   BC-2450.30.20:
     name: Coordenação de movimento multi-etapa
     description: |
       Coordenação de movimentos multi-etapa em transportadoras e modos.
+    source_hash: sha256-b3519743145301a2
   BC-2450.30.30:
     name: Consolidação e desconsolidação
     description: |
       Consolidação de carga na origem e desconsolidação no destino.
+    source_hash: sha256-cb1082ca9f8e2b9a
   BC-2450.40:
     name: Gestão de despachante aduaneiro
     description: |
       Prestação de serviços de despachante aduaneiro em nome de importadores e
       exportadores.
+    source_hash: sha256-67a741141081384b
   BC-2450.40.10:
     name: Preparação de declarações aduaneiras
     description: |
       Preparação de declarações aduaneiras em nome de clientes.
+    source_hash: sha256-011bed1d1018b0cc
   BC-2450.40.20:
     name: Cálculo de direitos e impostos
     description: |
       Cálculo e pagamento de direitos e impostos indiretos para clientes.
+    source_hash: sha256-796ff7c643363a45
   BC-2450.40.30:
     name: Acompanhamento do estado do despacho aduaneiro
     description: |
       Acompanhamento do progresso do despacho aduaneiro e resolução de exceções.
+    source_hash: sha256-f14b36420a72e45e
   BC-2450.50:
     name: Coordenação da rede de transitários
     description: |
       Coordenação com agentes de origem, destino e parceiros numa rede de
       transitários, incluindo liquidação entre escritórios.
+    source_hash: sha256-2f584233672f3d6a
   BC-2450.50.10:
     name: Coordenação com agentes de origem e destino
     description: |
       Coordenação de atividades com agentes de origem e destino.
+    source_hash: sha256-e4c7612af011696d
   BC-2450.50.20:
     name: Liquidação entre escritórios
     description: |
       Liquidação inter-escritórios e inter-agentes de receita e custos de
       transitário.
+    source_hash: sha256-ebe5eea8188b5136
   BC-2450.50.30:
     name: Gestão do desempenho de agentes parceiros
     description: |
       Gestão da qualidade de serviço e conformidade de agentes parceiros.
+    source_hash: sha256-a4e8c404f3a31fa2
 metadata:
   status: draft
   translator: claude-ai

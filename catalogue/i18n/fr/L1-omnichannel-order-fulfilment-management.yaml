@@ -8,6 +8,7 @@ entries:
       n'importe quel canal, promesse depuis n'importe quel nœud et exécution via
       le magasin, le centre de distribution, la marketplace, la livraison directe
       fournisseur ou le transporteur du dernier kilomètre.
+    source_hash: sha256-759583730d4c128a
 
   BC-2330.10:
     name: Gestion de l'orchestration des canaux
@@ -21,46 +22,54 @@ entries:
       - Économie du mix canal et arbitrages sur les coûts d'exécution
     out_of_scope:
       - Exécution des commandes générique (BC-520.40)
+    source_hash: sha256-db07250e9bb8b15a
 
   BC-2330.10.10:
     name: Gestion des règles d'acheminement par canal
     description: |
       Définition des règles d'acheminement sélectionnant le nœud d'exécution selon
       le coût et le niveau de service.
+    source_hash: sha256-06b62f3d1addf895
 
   BC-2330.10.20:
     name: Vue unifiée des commandes multicanales
     description: |
       Vue unifiée des commandes, de leur statut et de leur historique sur tous les
       canaux.
+    source_hash: sha256-8fba0cf403f1d058
 
   BC-2330.10.30:
     name: Économie du mix canal
     description: |
       Analyse des coûts unitaires par canal et par mode d'exécution.
+    source_hash: sha256-0b9c2abcbc0f96b1
 
   BC-2330.20:
     name: Gestion des opérations de retrait en magasin
     description: |
       Opérations d'achat en ligne et retrait en magasin, en mode kerbside et en
       consigne qui relient les commandes numériques aux points de retrait physiques.
+    source_hash: sha256-420798729bf23e70
 
   BC-2330.20.10:
     name: Opérations de préparation et conditionnement en magasin
     description: |
       Préparation et conditionnement des commandes en ligne par les employés en
       magasin.
+    source_hash: sha256-c550b7b8afac84d5
 
   BC-2330.20.20:
     name: Remise au client lors du retrait
     description: |
       Remise au client lors du retrait incluant la vérification d'identité et la
       gestion des exceptions.
+    source_hash: sha256-958eb75637d5b41a
 
   BC-2330.20.30:
     name: Retrait en mode kerbside et en consigne
     description: |
       Opérations de remise en mode kerbside et de retrait en consigne automatique.
+    source_hash: sha256-ff53d42c5962b9ea
 
   BC-2330.30:
     name: Gestion de l'exécution des commandes distribuées
@@ -71,73 +80,86 @@ entries:
       - Opérations d'expédition depuis le magasin
       - Opérations de dark store et de micro-centre d'exécution
       - Orchestration de la livraison directe fournisseur
+    source_hash: sha256-b60a03f7118135fa
 
   BC-2330.30.10:
     name: Opérations d'expédition depuis le magasin
     description: |
       Préparation, conditionnement et expédition des commandes en ligne depuis les
       magasins physiques.
+    source_hash: sha256-4568396914d82bee
 
   BC-2330.30.20:
     name: Opérations de dark store et micro-centre d'exécution
     description: |
       Exploitation des dark stores et des micro-centres d'exécution pour les
       commandes numériques.
+    source_hash: sha256-39cc74df8aa89ea8
 
   BC-2330.30.30:
     name: Orchestration de la livraison directe fournisseur
     description: |
       Orchestration de la livraison directe fournisseur incluant le routage des
       bons de commande et le suivi.
+    source_hash: sha256-b810de00017d4ed8
 
   BC-2330.40:
     name: Gestion des opérations de vendeur sur marketplace
     description: |
       Exploitation du détaillant en tant que vendeur sur des marketplaces tierces
       et gestion des vendeurs tiers sur une marketplace hébergée.
+    source_hash: sha256-eab4286589a88a4d
 
   BC-2330.40.10:
     name: Gestion des annonces sur marketplace
     description: |
       Mise en ligne des articles sur des marketplaces tierces incluant l'adaptation
       des contenus.
+    source_hash: sha256-d57e122570a455d1
 
   BC-2330.40.20:
     name: Capture des commandes marketplace
     description: |
       Capture et intégration des commandes marketplace dans le pipeline de commandes
       de l'hébergeur.
+    source_hash: sha256-ca4fff8b300f83ee
 
   BC-2330.40.30:
     name: Intégration des vendeurs tiers
     description: |
       Intégration des vendeurs tiers sur la marketplace propre du détaillant.
+    source_hash: sha256-5b3510bdf2d1ad96
 
   BC-2330.40.40:
     name: Gestion de la performance des vendeurs tiers
     description: |
       Gestion de la performance des vendeurs tiers et conformité à la politique.
+    source_hash: sha256-1574cff833e3f6b1
 
   BC-2330.50:
     name: Gestion des créneaux de livraison consommateurs
     description: |
       Réservation des créneaux de livraison orientée client, tarification des plages
       horaires et coordination de l'envoi des coursiers pour la livraison à domicile.
+    source_hash: sha256-74aa992aec45405d
 
   BC-2330.50.10:
     name: Réservation des créneaux de livraison
     description: |
       Réservation par le consommateur des créneaux de livraison avec logique de
       disponibilité et de capacité.
+    source_hash: sha256-8fdb8b9f2725465a
 
   BC-2330.50.20:
     name: Tarification des plages horaires
     description: |
       Tarification dynamique des plages de livraison selon la demande et la densité
       des tournées.
+    source_hash: sha256-9504b4df42405539
 
   BC-2330.50.30:
     name: Coordination de l'envoi des coursiers
     description: |
       Coordination de l'envoi avec les coursiers du dernier kilomètre propres et
       tiers.
+    source_hash: sha256-8abd0a106ab30e0b

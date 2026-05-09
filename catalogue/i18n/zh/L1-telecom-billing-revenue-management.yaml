@@ -5,130 +5,162 @@ entries:
     name: 电信计费与收入管理
     description: |
       覆盖预付费、后付费和融合业务的话单采集、计费、费率计算、账单生成、账单呈现、催收、收入保障以及电信专项税费处理。
+    source_hash: sha256-18d66e4ca9f0f999
   BC-2660.10:
     name: 话单采集管理
     description: |
       从网络单元采集、规范化并路由使用量记录至计费和账单系统。
+    source_hash: sha256-ab3de1f3107de58f
   BC-2660.10.10:
     name: CDR采集
     description: |
       从网络单元和IPDR数据源采集通话、会话和事件详单。
+    source_hash: sha256-8323efdc16ee4e4d
   BC-2660.10.20:
     name: CDR富化
     description: |
       用下游所需的订户、资费和参考数据对CDR进行富化。
+    source_hash: sha256-832a64a1146e8eea
   BC-2660.10.30:
     name: CDR去重
     description: |
       检测并删除重复的使用量记录。
+    source_hash: sha256-f4dc7bdbe4236a44
   BC-2660.10.40:
     name: CDR格式转换
     description: |
       在采集源和下游消费方之间转换CDR格式。
+    source_hash: sha256-8aed22e8dc3bbf11
   BC-2660.20:
     name: 计费与费率计算管理
     description: |
       跨预付费和后付费模式进行在线和离线计费、费率计算、余额管理和充值。
+    source_hash: sha256-f60a82b46b22da5c
   BC-2660.20.10:
     name: 在线计费管理
     description: |
       根据订户余额和策略对会话和事件进行实时计费。
+    source_hash: sha256-82449f7cdcb62fb1
   BC-2660.20.20:
     name: 离线计费管理
     description: |
       对使用量和事件记录进行离线费率计算，用于后付费账单。
+    source_hash: sha256-cfce7e066337d606
   BC-2660.20.30:
     name: 余额管理
     description: |
       管理订户主账户余额、专项余额、累加器和配额。
+    source_hash: sha256-046a6fb32b486d2e
   BC-2660.20.40:
     name: 充值券与充值管理
     description: |
       发行、分发和兑换充值券及电子充值。
+    source_hash: sha256-d4e4d5e107123b79
   BC-2660.30:
     name: 账单运营管理
     description: |
       执行账单周期、计算账单金额，并管理账单调整和更正。
+    source_hash: sha256-af1bd4488e7b14e4
   BC-2660.30.10:
     name: 账单周期执行
     description: |
       执行定期账单周期和临时出账。
+    source_hash: sha256-560661db2b0dc591
   BC-2660.30.20:
     name: 账单计算
     description: |
       计算所有账户组成部分的费用、税款和调整。
+    source_hash: sha256-f2e133fa83110f2f
   BC-2660.30.30:
     name: 账单调整
     description: |
       对账单执行已批准的调整，包括信用额和免收处理。
+    source_hash: sha256-80352e91951d0ef7
   BC-2660.30.40:
     name: 账单更正
     description: |
       通过重新出账或补偿调整更正错误账单。
+    source_hash: sha256-ee1f968b931d8d26
   BC-2660.40:
     name: 账单呈现与查询管理
     description: |
       以多种格式呈现账单并处理客户查询和争议。
+    source_hash: sha256-4b858ffaf0d7c811
   BC-2660.40.10:
     name: 账单呈现
     description: |
       以纸质、PDF和数字格式制作和分发账单。
+    source_hash: sha256-f1a7e4f0bbc22943
   BC-2660.40.20:
     name: 账单明细查询
     description: |
       处理客户发起的账单明细查询和争议申请。
+    source_hash: sha256-aef459e46e1984d7
   BC-2660.40.30:
     name: 账单说明
     description: |
       为客户和客服坐席解释和可视化展示账单构成。
+    source_hash: sha256-9443f8b365634a22
   BC-2660.50:
     name: 电信催收管理
     description: |
       电信专项催缴流程，包括催款、暂停服务、断网和债务催收。
+    source_hash: sha256-c96dffabb5dc16fe
   BC-2660.50.10:
     name: 催款工作流
     description: |
       针对逾期后付费账户的多步骤催款工作流。
+    source_hash: sha256-ab472d9b28b57005
   BC-2660.50.20:
     name: 业务暂停与断网
     description: |
       因欠费对服务进行软暂停、强制断网和复机处理。
+    source_hash: sha256-0f2eadbf28f42168
   BC-2660.50.30:
     name: 债务催收协调
     description: |
       与内部和第三方债务催收机构进行协调。
+    source_hash: sha256-760f59faaca5b42f
   BC-2660.60:
     name: 收入保障管理
     description: |
       检测、量化和修复收入链各环节的收入漏损。
+    source_hash: sha256-1e01b01571651b1d
   BC-2660.60.10:
     name: 收入漏损检测
     description: |
       检测网络使用量、话单采集、计费、账单和财务之间的漏损。
+    source_hash: sha256-5670a6d8789bf361
   BC-2660.60.20:
     name: 账单准确性验证
     description: |
       对账单准确性进行抽样和全量核对，与源事件进行比对。
+    source_hash: sha256-23811d4a223561ba
   BC-2660.60.30:
     name: 网络到账单核对
     description: |
       对网络记录的事件与账单收入进行端到端核对。
+    source_hash: sha256-d2fd1ea106384b87
   BC-2660.70:
     name: 电信税费管理
     description: |
       计算和缴纳电信专项税款、附加费和监管费用。
+    source_hash: sha256-83d1d3447c537937
   BC-2660.70.10:
     name: 普遍服务基金附加费
     description: |
       计算、收取和缴纳普遍服务基金摊款。
+    source_hash: sha256-576d95c08eacbcbf
   BC-2660.70.20:
     name: 电信消费税
     description: |
       计算和缴纳电信消费税及通信专项税款。
+    source_hash: sha256-76ece2d388fef22a
   BC-2660.70.30:
     name: 监管费用计提
     description: |
       按用户数和收入计提和缴纳周期性监管费用。
+    source_hash: sha256-92048a56f0e09f58
 metadata:
   translator: Claude (zh automated)
   generated: 2026-04-29

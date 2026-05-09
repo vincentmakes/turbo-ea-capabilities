@@ -7,89 +7,107 @@ entries:
       Integração contínua, gestão de ambientes, engenharia de lançamento,
       sinalizadores de funcionalidades e implementação progressiva de produtos
       SaaS em produção.
+    source_hash: sha256-e5ceed739d6679f8
   BC-4210.10:
     name: Gestão de integração contínua
     description: |
       Pipelines de construção, produção de artefactos e aplicação de políticas
       de pipeline que mantêm o produto integrado continuamente construível.
+    source_hash: sha256-773f8994988d57c5
   BC-4210.10.10:
     name: Gestão de pipeline de construção
     description: |
       Definição e operação de pipelines de construção automatizados para
       componentes do produto.
+    source_hash: sha256-519e3dc29d305cc1
   BC-4210.10.20:
     name: Gestão de repositório de artefactos
     description: |
       Armazenamento, retenção e acesso a artefactos de construção e pacotes
       de dependências.
+    source_hash: sha256-e91cb012a36f6d0a
   BC-4210.10.30:
     name: Aplicação de políticas de pipeline
     description: |
       Aplicação de portais obrigatórios de qualidade, segurança e proveniência
       em todos os pipelines.
+    source_hash: sha256-c27a7e3fd6ac8f6d
   BC-4210.20:
     name: Gestão de ambientes
     description: |
       Provisionamento e gestão de ambientes de não-produção utilizados para
       desenvolvimento, integração e validação de pré-produção.
+    source_hash: sha256-ed817059475a147d
   BC-4210.20.10:
     name: Provisionamento de ambientes
     description: |
       Provisionamento de ambientes de não-produção alinhados às necessidades
       de engenharia e validação.
+    source_hash: sha256-a3775ad116f44ec0
   BC-4210.20.20:
     name: Configuração de ambientes
     description: |
       Configuração de ambientes de não-produção para manter paridade com
       a produção onde necessário.
+    source_hash: sha256-4dc74d8aea590c74
   BC-4210.20.30:
     name: Gestão de dados de ambientes
     description: |
       Provisionamento, mascaramento e atualização de dados em ambientes
       de não-produção.
+    source_hash: sha256-a5daae1b12ed03be
   BC-4210.30:
     name: Gestão de engenharia de lançamento
     description: |
       Cadência, versionamento, ramificação e disciplina de notas de lançamento
       para versões de software.
+    source_hash: sha256-28b4c590bcb7796a
   BC-4210.30.10:
     name: Gestão de cadência de lançamento
     description: |
       Definição e gestão da cadência de lançamento em todas as áreas do produto.
+    source_hash: sha256-aa9a851e7b4c9fee
   BC-4210.30.20:
     name: Versionamento e ramificação
     description: |
       Esquema de versionamento e estratégia de ramificação aplicados às
       versões do produto.
+    source_hash: sha256-f6b1c33af0d8816f
   BC-4210.30.30:
     name: Elaboração de notas de lançamento
     description: |
       Elaboração de notas de lançamento dirigidas a clientes e operadores
       para cada versão.
+    source_hash: sha256-cb4a2f92e7e6ad00
   BC-4210.40:
     name: Orquestração de implementação
     description: |
       Estratégias para entregar alterações de software em produção de forma
       segura e com raio de impacto controlado.
+    source_hash: sha256-c705917852e6d3ef
   BC-4210.40.10:
     name: Lançamento progressivo
     description: |
       Lançamento gradual de versões para coortes crescentes de tenants ou
       utilizadores.
+    source_hash: sha256-14263284a5b8a3f0
   BC-4210.40.20:
     name: Implementação canário
     description: |
       Implementação de versões numa pequena população canário com avaliação
       automatizada de saúde.
+    source_hash: sha256-5fefc7a45aa41358
   BC-4210.40.30:
     name: Implementação azul-verde
     description: |
       Implementação em ambiente paralelo com transferência de tráfego para
       mudanças com tempo de inatividade próximo de zero.
+    source_hash: sha256-660193555cf410de
   BC-4210.40.40:
     name: Coordenação de reversão
     description: |
       Reversão coordenada de versões mediante sinais adversos.
+    source_hash: sha256-309bd693ee29581e
   BC-4210.50:
     name: Gestão de sinalizadores de funcionalidades
     description: |
@@ -101,54 +119,65 @@ entries:
       - Regras de direcionamento
     out_of_scope:
       - Metodologia de experimentação e adjudicação (abrangida pela Gestão de Telemetria e Experimentação de Produto)
+    source_hash: sha256-1d574363ee50edee
   BC-4210.50.10:
     name: Ciclo de vida de sinalizadores de funcionalidades
     description: |
       Ciclo de vida dos sinalizadores de funcionalidades desde a criação
       até à retirada.
+    source_hash: sha256-633a014e188d16e0
   BC-4210.50.20:
     name: Gestão de regras de direcionamento
     description: |
       Definição de regras de direcionamento que determinam quais os sujeitos
       que recebem uma variante de sinalizador.
+    source_hash: sha256-1942b8719f14b5d6
   BC-4210.50.30:
     name: Gestão de higiene de sinalizadores
     description: |
       Prática de higiene que retira sinalizadores obsoletos e impede a
       acumulação de código condicional morto.
+    source_hash: sha256-b070386b3646bab5
   BC-4210.60:
     name: Gestão de configuração e segredos
     description: |
       Gestão de valores de configuração em tempo de execução e segredos
       consumidos pelos serviços do produto.
+    source_hash: sha256-05dce1e924a73bcf
   BC-4210.60.10:
     name: Gestão de configuração em tempo de execução
     description: |
       Armazenamento, distribuição e auditoria de valores de configuração
       em tempo de execução.
+    source_hash: sha256-fa27a64b85a91acb
   BC-4210.60.20:
     name: Gestão do ciclo de vida de segredos
     description: |
       Emissão, rotação e revogação de segredos utilizados pelos serviços
       do produto.
+    source_hash: sha256-0c0465e7504eaa7b
   BC-4210.70:
     name: Autorização de mudanças em produção
     description: |
       Revisão pré-implementação, governação de janelas de implementação e
       autorização de acesso humano à produção.
+    source_hash: sha256-a3ec69f4a5aad386
   BC-4210.70.10:
     name: Revisão pré-implementação
     description: |
       Revisão e aprovação de alterações antes da implementação em produção.
+    source_hash: sha256-962c619b0b3a634e
   BC-4210.70.20:
     name: Governação de janelas de implementação
     description: |
       Governação das janelas de implementação permitidas e congelamentos.
+    source_hash: sha256-86409edb74069abd
   BC-4210.70.30:
     name: Autorização de acesso à produção
     description: |
       Autorização, concessão just-in-time e auditoria do acesso humano aos
       sistemas de produção.
+    source_hash: sha256-0f5ad24a2a142c40
 metadata:
   status: draft
   translator: claude-ai

@@ -5,6 +5,7 @@ entries:
     name: 订阅生命周期管理
     description: |
       管理SaaS商业生命周期中的方案与权益设计、订阅合同签署、供给、变更、续签、取消及运行时权益执行。
+    source_hash: sha256-8a27c7c29229b7d3
   BC-4240.10:
     name: 方案与权益设计
     description: |
@@ -14,118 +15,147 @@ entries:
       - 方案资格规则
     out_of_scope:
       - 定价策略与价格表治理（由定价管理负责）
+    source_hash: sha256-8fdeaa98df6e641a
   BC-4240.10.10:
     name: 方案目录定义
     description: |
       定义方案目录，包括方案等级和内容。
+    source_hash: sha256-1d49e6b70f6d19c6
   BC-4240.10.20:
     name: 功能权益定义
     description: |
       定义附加在方案、附加项及定制合同上的功能权益。
+    source_hash: sha256-aee5a94f19999c2f
   BC-4240.10.30:
     name: 方案资格规则
     description: |
       制定决定哪些客户和用例适用各方案的规则。
+    source_hash: sha256-977474e0ae808108
   BC-4240.20:
     name: 订阅合同签署
     description: |
       管理报价、生成订单表格及捕获订阅合同制品。
+    source_hash: sha256-c26b13a0e921c48a
   BC-4240.20.10:
     name: 订阅报价管理
     description: |
       在销售流程中生成和管理订阅报价。
+    source_hash: sha256-4da34e9ecbe7fdbd
   BC-4240.20.20:
     name: 订单表格生成
     description: |
       为新老客户生成反映商定条款的订单表格。
+    source_hash: sha256-69009697e052e120
   BC-4240.20.30:
     name: 订阅合同捕获
     description: |
       捕获和存储已执行的订阅合同制品及关键条款。
+    source_hash: sha256-395d07e2687da3fb
   BC-4240.30:
     name: 订阅供给
     description: |
       为新订阅激活服务，包括试用转付费及批量席位供给。
+    source_hash: sha256-08b0b2944963046c
   BC-4240.30.10:
     name: 初始供给
     description: |
       在订阅开始时完成服务权益的初始供给。
+    source_hash: sha256-a86d2b00a52bba1f
   BC-4240.30.20:
     name: 试用转付费
     description: |
       将试用账户转换为付费订阅。
+    source_hash: sha256-f215745671111ada
   BC-4240.30.30:
     name: 批量席位供给
     description: |
       为企业订阅批量供给席位。
+    source_hash: sha256-c0dd79cdb93610e7
   BC-4240.40:
     name: 订阅变更
     description: |
       处理活跃订阅的在网变更，包括升级、降级、席位调整及附加项激活。
+    source_hash: sha256-d59bfe6dd61947c3
   BC-4240.40.10:
     name: 方案升级管理
     description: |
       处理客户发起和系统发起的方案升级。
+    source_hash: sha256-12b3312c4a58e16a
   BC-4240.40.20:
     name: 方案降级管理
     description: |
       处理方案降级，包括对权益和数据的影响。
+    source_hash: sha256-5823feba9487167c
   BC-4240.40.30:
     name: 席位调整
     description: |
       调整活跃订阅的席位数量。
+    source_hash: sha256-f63269dfd1de8391
   BC-4240.40.40:
     name: 附加项激活
     description: |
       在活跃订阅上激活可选附加权益。
+    source_hash: sha256-5cea7af2e4c629b3
   BC-4240.50:
     name: 续签管理
     description: |
       无论自动还是手动，均对订阅续签进行预测、处理和谈判。
+    source_hash: sha256-4f61816c6623c5e9
   BC-4240.50.10:
     name: 续签预测
     description: |
       预测即将到期的续签及预期结果。
+    source_hash: sha256-f00f87768fbfe56e
   BC-4240.50.20:
     name: 自动续签处理
     description: |
       按合同条款处理订阅自动续签。
+    source_hash: sha256-19efe28d0f5ff71f
   BC-4240.50.30:
     name: 续签谈判支持
     description: |
       为续签谈判提供数据、定价及条款变更方案支持。
+    source_hash: sha256-d54ef985a8f72e5b
   BC-4240.60:
     name: 取消与终止
     description: |
       处理自愿取消、非自愿终止及离网客户的服务收尾工作。
+    source_hash: sha256-79defe9fc4b12978
   BC-4240.60.10:
     name: 取消处理
     description: |
       处理客户发起的取消请求。
+    source_hash: sha256-c2817b700a791d53
   BC-4240.60.20:
     name: 非自愿终止
     description: |
       因欠款、违约或合同到期终止服务。
+    source_hash: sha256-f9597e36e90cd970
   BC-4240.60.30:
     name: 服务收尾协调
     description: |
       协调服务收尾工作，包括数据导出和删除移交。
+    source_hash: sha256-a7008873120b0204
   BC-4240.70:
     name: 权益执行
     description: |
       解析并在运行时执行订阅权益，并保留访问决策的审计追踪。
+    source_hash: sha256-0a87d7d86ad4b6d1
   BC-4240.70.10:
     name: 权益解析
     description: |
       解析每个订阅、账户和用户的有效权益。
+    source_hash: sha256-ac05b186bf294293
   BC-4240.70.20:
     name: 权益门控执行
     description: |
       按解析后的权益对功能和配额进行运行时门控。
+    source_hash: sha256-332943e35038d300
   BC-4240.70.30:
     name: 权益审计追踪
     description: |
       保留权益变更和门控决策的审计级记录。
+    source_hash: sha256-ccc10a415aed0de9
 metadata:
   translator: Claude (zh automated)
   generated: 2026-04-29

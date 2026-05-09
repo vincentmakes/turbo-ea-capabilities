@@ -8,193 +8,233 @@ entries:
       núcleo, transporte y borde, abarcando fallos, configuración, rendimiento, inventario,
       cambios, operaciones de seguridad y coordinación de campo, bajo los marcos TMN FCAPS
       y eTOM de gestión de recursos y operaciones.
+    source_hash: sha256-b625bf94dcb5acc0
   BC-2600.10:
     name: Gestión de fallos de red
     description: |
       Detección, correlación, registro en tickets, restauración y análisis de causa raíz
       de fallos de red en los dominios de acceso, núcleo y transporte.
+    source_hash: sha256-884fe607b5bb0f37
   BC-2600.10.10:
     name: Correlación de alarmas
     description: |
       Correlación y deduplicación en tiempo real de alarmas de red para generar eventos
       accionables.
+    source_hash: sha256-f88fe3e817b7ced2
   BC-2600.10.20:
     name: Gestión de tickets de incidencia
     description: |
       Gestión del ciclo de vida de los tickets de incidencia de red desde la creación
       hasta el cierre.
+    source_hash: sha256-8fa25825aff7537c
   BC-2600.10.30:
     name: Gestión de interrupciones de red
     description: |
       Coordinación de la respuesta ante interrupciones graves de red, comunicaciones y
       acciones de recuperación.
+    source_hash: sha256-8a9c7d3cd2e96bad
   BC-2600.10.40:
     name: Análisis de causa raíz
     description: |
       Investigación estructurada de fallos recurrentes o graves para identificar y
       eliminar sus causas subyacentes.
+    source_hash: sha256-2b79cc0e58d8db2d
   BC-2600.20:
     name: Gestión de configuración de red
     description: |
       Definición y aplicación de estándares de configuración de elementos de red y
       despliegue controlado de cambios de configuración.
+    source_hash: sha256-77401b41b2a77bbd
   BC-2600.20.10:
     name: Gestión de configuraciones base
     description: |
       Definición y mantenimiento de configuraciones base aprobadas por tipo y función
       de elemento de red.
+    source_hash: sha256-ae116e9004e6c3bc
   BC-2600.20.20:
     name: Gestión de parámetros de red
     description: |
       Gestión del ciclo de vida de parámetros de red ajustables y sus rangos autorizados.
+    source_hash: sha256-f2711c9a3e63a726
   BC-2600.20.30:
     name: Gestión de imágenes de software
     description: |
       Custodia y control de versiones aprobadas de imágenes de software y firmware de
       elementos de red.
+    source_hash: sha256-627e376bc49fcd5e
   BC-2600.20.40:
     name: Despliegue automatizado de configuración
     description: |
       Despliegue a escala de cambios de configuración aprobados mediante herramientas,
       con verificación y reversión.
+    source_hash: sha256-38f9d348146ced6e
   BC-2600.30:
     name: Gestión del rendimiento de red
     description: |
       Captura y análisis continuos de contadores de rendimiento y KPIs de red para
       detectar y anticipar degradaciones.
+    source_hash: sha256-3ceb28c376239b58
   BC-2600.30.10:
     name: Captura de KPIs de red
     description: |
       Recopilación y almacenamiento de contadores de rendimiento y KPIs a nivel de
       elemento y de red.
+    source_hash: sha256-1b0766370739dad9
   BC-2600.30.20:
     name: Monitorización de umbrales
     description: |
       Monitorización de KPIs de rendimiento frente a umbrales de ingeniería y SLA.
+    source_hash: sha256-bcfc43aa9e63432c
   BC-2600.30.30:
     name: Monitorización de utilización de capacidad
     description: |
       Seguimiento de la utilización de recursos frente a la capacidad dimensionada para
       detectar condiciones de saturación inminente.
+    source_hash: sha256-7b1904d78d429ffc
   BC-2600.30.40:
     name: Correlación de impacto en clientes
     description: |
       Correlación de señales de rendimiento de red con indicadores de experiencia del
       cliente para identificar condiciones que afectan al servicio.
+    source_hash: sha256-d17fb08fea22157f
   BC-2600.40:
     name: Gestión de inventario de red
     description: |
       Registro autorizado de recursos lógicos y físicos de red y sus relaciones,
       mantenido sincronizado con la realidad mediante reconciliación.
+    source_hash: sha256-05fd7267bdd115a6
   BC-2600.40.10:
     name: Inventario lógico de red
     description: |
       Registro autorizado de recursos lógicos como servicios, circuitos, asignaciones
       IP/VLAN y caminos portadores.
+    source_hash: sha256-fe7835e6708fd2f5
   BC-2600.40.20:
     name: Inventario físico de red
     description: |
       Registro autorizado de activos físicos como nodos, tarjetas, puertos, fibra,
       conductos y antenas.
+    source_hash: sha256-07500259a69fc2e8
   BC-2600.40.30:
     name: Reconciliación de inventario
     description: |
       Reconciliación de registros de inventario frente a descubrimiento, diseño e
       inspecciones de campo.
+    source_hash: sha256-3d73e1f0731d1d0f
   BC-2600.40.40:
     name: Descubrimiento de recursos de red
     description: |
       Descubrimiento automatizado de elementos de red desplegados y su estado.
+    source_hash: sha256-2245973620fab02d
   BC-2600.50:
     name: Gestión de cambios y versiones de red
     description: |
       Planificación, aprobación, ejecución, verificación y reversión de cambios en
       elementos de red y servicios en producción.
+    source_hash: sha256-11cb4cf5a7eddf90
   BC-2600.50.10:
     name: Planificación de cambios de red
     description: |
       Planificación y evaluación de riesgos de los cambios de red, incluyendo ventanas
       de impacto.
+    source_hash: sha256-7a69b532d04ad286
   BC-2600.50.20:
     name: Implementación de cambios de red
     description: |
       Ejecución controlada de cambios de red aprobados en las ventanas planificadas.
+    source_hash: sha256-b6c5facc9af23e89
   BC-2600.50.30:
     name: Verificación de cambios
     description: |
       Verificación posterior al cambio de que la red se encuentra en el estado esperado
       y rinde dentro de los márgenes de tolerancia.
+    source_hash: sha256-65976270d75759aa
   BC-2600.50.40:
     name: Reversión de cambios
     description: |
       Revertir cambios que no superan la verificación o que generan un impacto
       inaceptable.
+    source_hash: sha256-2d504d42cbbf84d1
   BC-2600.60:
     name: Operaciones de seguridad de red
     description: |
       Monitorización y respuesta de seguridad específicas de la red de telecomunicaciones
       en los dominios de señalización, transporte y núcleo, complementando la
       ciberseguridad corporativa.
+    source_hash: sha256-a8787aa2e1d39096
   BC-2600.60.10:
     name: Monitorización de amenazas de red
     description: |
       Monitorización de redes de señalización, transporte y núcleo en busca de actividad
       anómala y maliciosa.
+    source_hash: sha256-197c80e3905033ed
   BC-2600.60.20:
     name: Protección contra DDoS
     description: |
       Detección y mitigación de ataques de denegación de servicio volumétricos y basados
       en protocolo contra la red y los endpoints de clientes.
+    source_hash: sha256-a83b2e9207ed2a5e
   BC-2600.60.30:
     name: Control de acceso a la red
     description: |
       Aplicación de controles de acceso administrativo y de máquina a los elementos de red.
+    source_hash: sha256-6f44c327f7672ce1
   BC-2600.60.40:
     name: Respuesta a incidentes de seguridad de red
     description: |
       Contención, erradicación y recuperación ante incidentes de seguridad de red
       confirmados.
+    source_hash: sha256-a743eb08186d9349
   BC-2600.70:
     name: Coordinación de operaciones de campo
     description: |
       Despacho, control de ejecución y coordinación de acceso a instalaciones para
       actividades de campo en la red.
+    source_hash: sha256-4403abb380bac838
   BC-2600.70.10:
     name: Despacho de órdenes de trabajo de campo
     description: |
       Asignación de órdenes de trabajo de red a equipos de campo internos y contratados.
+    source_hash: sha256-27eb24d09800f603
   BC-2600.70.20:
     name: Ejecución de procedimientos operativos
     description: |
       Control de ejecución de los procedimientos operativos aprobados en elementos de
       red en producción.
+    source_hash: sha256-6f84a52bf0834e3b
   BC-2600.70.30:
     name: Coordinación de acceso a instalaciones
     description: |
       Coordinación del acceso físico a instalaciones de red, incluidos acompañamiento,
       permisos y controles de seguridad.
+    source_hash: sha256-25a30da3e17c0ee6
   BC-2600.80:
     name: Gestión de optimización de red
     description: |
       Ajuste continuo de elementos de red y rutas de tráfico para maximizar el
       rendimiento, la capacidad y la experiencia del cliente.
+    source_hash: sha256-9879cdd3d0f0eb0b
   BC-2600.80.10:
     name: Optimización del acceso radio
     description: |
       Ajuste de parámetros de acceso radio, relaciones de vecindad y configuración de
       antenas.
+    source_hash: sha256-bb968df5c344d087
   BC-2600.80.20:
     name: Optimización de transporte
     description: |
       Ajuste de rutas de red de transporte, asignación de capacidad y calidad de
       servicio.
+    source_hash: sha256-5b857e757044d479
   BC-2600.80.30:
     name: Ingeniería de tráfico
     description: |
       Direccionamiento del tráfico IP y de transporte a través de la red en función de
       objetivos de rendimiento, coste y resiliencia.
+    source_hash: sha256-7fabeae1c7d1f8f4
   BC-2600.80.40:
     name: Automatización de bucle cerrado
     description: |
       Bucles automatizados de detección-decisión-acción que optimizan continuamente la
       red sin intervención manual.
+    source_hash: sha256-59075d5adc1cc752

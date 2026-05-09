@@ -8,6 +8,7 @@ entries:
       Definizione e gestione delle tariffe di trasporto, dei tariffari, dei prezzi
       contrattuali, dei prezzi spot, degli addebiti accessori e del motore di tariffazione
       che calcola i costi dei movimenti merci.
+    source_hash: sha256-8419cc78e1b75f96
   BC-2520.10:
     name: Gestione dei tariffari e dei listini tariffe
     description: |
@@ -19,91 +20,111 @@ entries:
     out_of_scope:
       - Quotazione rivolta al cliente nel contesto della spedizione (BC-2450.10)
       - Metodi di pricing aziendale generico (BC-440)
+    source_hash: sha256-e397a2715d244c78
   BC-2520.10.10:
     name: Definizione della tariffa base
     description: |
       Definizione delle tariffe di trasporto base per tratta, unità e livello di servizio.
+    source_hash: sha256-99fa2a57620d2144
   BC-2520.10.20:
     name: Pubblicazione del tariffario pubblico
     description: |
       Deposito dei tariffari pubblici presso le autorità di regolamentazione e le
       conferenze ove richiesto.
+    source_hash: sha256-05fb6fe927efcfed
   BC-2520.10.30:
     name: Versionamento del listino tariffe
     description: |
       Controllo delle versioni e gestione delle date di entrata in vigore dei listini
       tariffe.
+    source_hash: sha256-479cca17279a028b
   BC-2520.20:
     name: Gestione delle tariffe contrattuali
     description: |
       Configurazione e manutenzione delle tariffe negoziate con clienti nominativi e
       impegni di volume.
+    source_hash: sha256-79b60109883ab8fe
   BC-2520.20.10:
     name: Configurazione delle tariffe contrattuali
     description: |
       Configurazione delle tariffe negoziate rispetto ai contratti clienti nominativi.
+    source_hash: sha256-a2b13274a0cbd717
   BC-2520.20.20:
     name: Monitoraggio degli impegni di volume
     description: |
       Monitoraggio degli impegni di volume dei clienti e degli obiettivi di quantità
       minima.
+    source_hash: sha256-91896bb435c9df6a
   BC-2520.20.30:
     name: Rinnovo delle tariffe contrattuali
     description: |
       Rinnovo e rinegoziazione delle tariffe contrattuali in scadenza.
+    source_hash: sha256-e5503aec0e6a01dd
   BC-2520.30:
     name: Gestione delle tariffe spot
     description: |
       Pricing, accettazione e benchmarking delle tariffe di trasporto sul mercato spot.
+    source_hash: sha256-71a20b67696cda41
   BC-2520.30.10:
     name: Quotazione della tariffa spot
     description: |
       Quotazione delle tariffe spot per spedizione.
+    source_hash: sha256-e7a2b0fce416e38b
   BC-2520.30.20:
     name: Accettazione della tariffa spot
     description: |
       Accettazione e conferma delle prenotazioni a tariffa spot.
+    source_hash: sha256-0720b6b666098f57
   BC-2520.30.30:
     name: Benchmarking degli indici delle tariffe spot
     description: |
       Benchmarking delle tariffe spot rispetto agli indici di mercato.
+    source_hash: sha256-ba41d0f4fb382bc3
   BC-2520.40:
     name: Gestione degli addebiti accessori e dei supplementi
     description: |
       Definizione e applicazione di addebiti accessori, supplementi, demurrage e tariffe
       di detention.
+    source_hash: sha256-74365e7c618f18a6
   BC-2520.40.10:
     name: Gestione del supplemento carburante
     description: |
       Definizione e applicazione di supplementi carburante e bunker.
+    source_hash: sha256-f6cbfeda5841b351
   BC-2520.40.20:
     name: Definizione degli addebiti accessori
     description: |
       Definizione degli addebiti accessori per attesa, movimentazione speciale e
       attrezzature.
+    source_hash: sha256-7d719a5e446826ab
   BC-2520.40.30:
     name: Tariffe di demurrage e detention
     description: |
       Definizione delle tariffe di demurrage e detention per attrezzature e utilizzo
       del terminal.
+    source_hash: sha256-5b925632ad9cbd3c
   BC-2520.50:
     name: Gestione del motore di tariffazione
     description: |
       Gestione del motore di tariffazione che calcola e valida i costi di trasporto
       su ordini e spedizioni.
+    source_hash: sha256-d113c57f96ed1cc0
   BC-2520.50.10:
     name: Esecuzione del calcolo tariffario
     description: |
       Esecuzione dei calcoli tariffari su ordini e spedizioni.
+    source_hash: sha256-7e5ead895c3f9d6a
   BC-2520.50.20:
     name: Distribuzione dei listini tariffe
     description: |
       Distribuzione dei listini tariffe a clienti, partner e canali.
+    source_hash: sha256-18578d061bfde963
   BC-2520.50.30:
     name: Audit e validazione delle tariffe
     description: |
       Validazione delle tariffe applicate rispetto ai contratti e ai tariffari di
       riferimento.
+    source_hash: sha256-15b89ac176a56acf
 metadata:
   status: draft
   reviewer: pending

@@ -8,6 +8,7 @@ entries:
       de ventas, aceptación de medios de pago, devoluciones y reembolsos, gestión
       del efectivo, configuración del TPV y continuidad de la venta durante
       interrupciones del sistema.
+    source_hash: sha256-be0f6698812e2ac1
   BC-2320.10:
     name: Gestión de transacciones de venta
     description: |
@@ -21,55 +22,66 @@ entries:
     out_of_scope:
       - Diseño de promociones (BC-440.30)
       - Checkout de comercio electrónico (BC-2330)
+    source_hash: sha256-31fc675da3070daf
   BC-2320.10.10:
     name: Escaneado de artículos y construcción del carro
     description: |
       Escaneado de artículos y construcción del carro en caja, incluyendo
       artículos de peso variable.
+    source_hash: sha256-43f245d9878d5655
   BC-2320.10.20:
     name: Aplicación de promociones y fidelización
     description: |
       Aplicación de promociones, cupones y canjes de fidelización durante
       la venta.
+    source_hash: sha256-fdf4dd3fe8ecd8ed
   BC-2320.10.30:
     name: Gestión de impuestos sobre ventas e IVA
     description: |
       Cálculo del impuesto sobre ventas, el IVA y las normas específicas de
       cada jurisdicción en caja.
+    source_hash: sha256-1031e7ad3d42e33a
   BC-2320.10.40:
     name: Emisión de tickets y tickets digitales
     description: |
       Emisión de tickets en papel y digitales, incluyendo la vinculación con
       el consumidor.
+    source_hash: sha256-e28808ee76ab9ca7
   BC-2320.20:
     name: Gestión de la aceptación de medios de pago
     description: |
       Aceptación de medios de pago en caja, incluyendo EMV, contactless,
       monederos digitales, tarjetas regalo y métodos alternativos, con
       cumplimiento PCI-DSS.
+    source_hash: sha256-9ac272f2044de959
   BC-2320.20.10:
     name: Aceptación de pagos con tarjeta y contactless
     description: |
       Aceptación de pagos EMV, contactless y monederos digitales en cajas de
       comercio minorista.
+    source_hash: sha256-795ddbd67ef022c3
   BC-2320.20.20:
     name: Aceptación de efectivo y cheques
     description: |
       Aceptación de billetes, monedas y cheques, incluido el manejo de
       denominaciones.
+    source_hash: sha256-71384bcb1b5e1e0f
   BC-2320.20.30:
     name: Aceptación y emisión de tarjetas regalo y saldo almacenado
     description: |
       Aceptación y emisión de tarjetas regalo e instrumentos de saldo almacenado.
+    source_hash: sha256-f6192e184dcf544e
   BC-2320.20.40:
     name: Aceptación de métodos de pago alternativos
     description: |
       Aceptación de compra a plazos, QR y otros medios de pago alternativos.
+    source_hash: sha256-f8dff7eafcc7f20c
   BC-2320.20.50:
     name: Operaciones de cumplimiento PCI-DSS
     description: |
       Gestión de datos de titulares de tarjeta en el punto de venta conforme
       a PCI-DSS.
+    source_hash: sha256-fa1c744d12520953
   BC-2320.30:
     name: Gestión de devoluciones, reembolsos e intercambios
     description: |
@@ -82,88 +94,107 @@ entries:
       - Devoluciones en tienda de pedidos online
     out_of_scope:
       - Logística inversa al centro de distribución (BC-520.40.40)
+    source_hash: sha256-223efa4ed40af752
   BC-2320.30.10:
     name: Aceptación de devoluciones del consumidor
     description: |
       Aceptación de devoluciones del consumidor en caja según la política de
       devoluciones.
+    source_hash: sha256-881d862a9d2ab9a8
   BC-2320.30.20:
     name: Emisión de reembolsos y crédito en tienda
     description: |
       Emisión de reembolsos al medio de pago original o instrumentos de crédito
       en tienda.
+    source_hash: sha256-a0eaecf52c48884b
   BC-2320.30.30:
     name: Gestión de transacciones de intercambio
     description: |
       Transacciones de intercambio iguales y desiguales, incluyendo la
       conciliación de precios.
+    source_hash: sha256-db4b5d4519b9da6c
   BC-2320.30.40:
     name: Procesamiento de devoluciones multicanal
     description: |
       Aceptación en tienda de pedidos de otros canales para su devolución.
+    source_hash: sha256-0e6457cbbcce5b77
   BC-2320.40:
     name: Gestión de efectivo y medios de pago en TPV
     description: |
       Procesos de gestión del cajón de caja, caja fuerte, depósito y conciliación
       de medios de pago al cierre que protegen la recaudación de caja.
+    source_hash: sha256-e3200b5681fad8c8
   BC-2320.40.10:
     name: Gestión del cajón de caja
     description: |
       Apertura, supervisión y cuadre del cajón de caja.
+    source_hash: sha256-242600c09c5deebe
   BC-2320.40.20:
     name: Operaciones de caja fuerte y recogidas parciales
     description: |
       Gestión de la caja fuerte, recogidas parciales durante el día y preparación
       para el transporte de fondos.
+    source_hash: sha256-8b4760a1d365fa1f
   BC-2320.40.30:
     name: Conciliación de medios de pago al cierre
     description: |
       Conciliación de todos los medios de pago contra los registros de ventas
       del TPV al final del día.
+    source_hash: sha256-10033316f8ee77d2
   BC-2320.40.40:
     name: Preparación del depósito bancario
     description: |
       Preparación de los depósitos bancarios y entrega al servicio de transporte
       de fondos.
+    source_hash: sha256-38dbb6861e7313c6
   BC-2320.50:
     name: Gestión de la configuración del TPV
     description: |
       Configuración de tipos de pago, normas fiscales, lógica de promociones,
       periféricos y comportamiento de la caja en todo el parque de tiendas.
+    source_hash: sha256-40adce71c9062463
   BC-2320.50.10:
     name: Configuración de medios de pago
     description: |
       Configuración de los medios de pago aceptados, límites y enrutamiento
       por tienda.
+    source_hash: sha256-1d42ac4fef10c45c
   BC-2320.50.20:
     name: Configuración de normas fiscales
     description: |
       Configuración de normas fiscales y excepciones jurisdiccionales por tienda.
+    source_hash: sha256-e0744c4f46c7abb0
   BC-2320.50.30:
     name: Configuración del motor de promociones
     description: |
       Configuración del motor de promociones del TPV y las reglas de priorización
       de ofertas.
+    source_hash: sha256-a6d70018acd4327f
   BC-2320.50.40:
     name: Configuración de periféricos del TPV
     description: |
       Configuración de básculas, lectores, impresoras y pinpads en caja.
+    source_hash: sha256-5feb6f4030f8f164
   BC-2320.60:
     name: Resiliencia del TPV y operaciones fuera de línea
     description: |
       Continuidad de la venta durante interrupciones de conectividad o del
       sistema, incluyendo TPV sin conexión, almacenamiento y reenvío, y gestión
       de colas.
+    source_hash: sha256-7bb2d2dd6a6d4b83
   BC-2320.60.10:
     name: Operación del TPV sin conexión
     description: |
       Operación continuada del TPV durante la pérdida de conectividad.
+    source_hash: sha256-c0ff1d2f23de3b67
   BC-2320.60.20:
     name: Gestión de transacciones con almacenamiento y reenvío
     description: |
       Almacenamiento y reenvío de transacciones fuera de línea al restablecer
       la conexión.
+    source_hash: sha256-92a84da381807dbc
   BC-2320.60.30:
     name: Gestión de colas durante interrupciones
     description: |
       Gestión de colas de clientes durante interrupciones en el sistema de caja.
+    source_hash: sha256-69ff1d024d828487

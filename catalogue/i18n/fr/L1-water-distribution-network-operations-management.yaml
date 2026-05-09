@@ -8,45 +8,54 @@ entries:
       l'eau traitée aux clients — gestion hydraulique et de pression, contrôle
       des pertes, qualité de l'eau dans le réseau, réparation et renouvellement
       des conduites, et raccordements clients.
+    source_hash: sha256-38fcbfa706b88734
   BC-3880.10:
     name: Conduite du réseau de distribution
     description: |
       Exploitation 24h/24 7j/7 du système de distribution d'eau en centre de
       conduite à l'aide de la télémesure, des modèles hydrauliques et du SCADA.
+    source_hash: sha256-da1c69a71631f438
   BC-3880.10.10:
     name: Opérations SCADA de distribution
     description: |
       Commande supervisée en temps réel des actifs de pompage et de pression sur
       le réseau.
+    source_hash: sha256-acd970d3b96a68cd
   BC-3880.10.20:
     name: Opérations des modèles hydrauliques
     description: |
       Exploitation des modèles hydrauliques en ligne et hors ligne pour les
       décisions réseau.
+    source_hash: sha256-1a67cca20cb0c348
   BC-3880.10.30:
     name: Surveillance de la télémesure réseau
     description: |
       Surveillance de la télémesure sur les DMA, vannes et points de pression.
+    source_hash: sha256-8696d0df69ecf167
   BC-3880.20:
     name: Opérations des conduites maîtresses et des stations de pompage
     description: |
       Exploitation des conduites maîtresses, stations de pompage et transferts
       interzonaux, incluant le surpressage et la gestion des coups de bélier.
+    source_hash: sha256-db6d953c0a06ffa5
   BC-3880.20.10:
     name: Opérations des stations de pompage
     description: |
       Exploitation et optimisation énergétique des stations de pompage de
       distribution.
+    source_hash: sha256-c7fef51eea734a94
   BC-3880.20.20:
     name: Opérations des conduites maîtresses
     description: |
       Exploitation, manœuvres et gestion des coups de bélier sur les conduites
       maîtresses de transport.
+    source_hash: sha256-f0b282922fbaa270
   BC-3880.20.30:
     name: Opérations de transfert interzonal
     description: |
       Exploitation des transferts interzonaux et des liens d'alimentation en
       gros entre zones ressources.
+    source_hash: sha256-195d201e54d61ea1
   BC-3880.30:
     name: Gestion des pertes d'eau
     description: |
@@ -60,103 +69,124 @@ entries:
     out_of_scope:
       - Programmes de renouvellement des conduites (BC-3900.50)
       - Fuites sur les branchements côté client (BC-3910.60)
+    source_hash: sha256-29131a46576afe35
   BC-3880.30.10:
     name: Analyse des zones de comptage distinctes
     description: |
       Analyse des débits entrants et des débits nocturnes minimaux des DMA pour
       localiser les pertes.
+    source_hash: sha256-8013aa76ac881c94
   BC-3880.30.20:
     name: Détection acoustique des fuites
     description: |
       Sondage acoustique, corrélation et campagnes de sonomètres pour la
       localisation des fuites.
+    source_hash: sha256-839a3460a92e0185
   BC-3880.30.30:
     name: Opérations de localisation et réparation des fuites
     description: |
       Opérations terrain de localisation et réparation des fuites détectées
       dans les délais cibles de réparation.
+    source_hash: sha256-8fdd53d1733afe4c
   BC-3880.30.40:
     name: Reporting de performance des pertes
     description: |
       Reporting de la performance des pertes par rapport aux indicateurs
       réglementaires et au bilan hydrique IWA.
+    source_hash: sha256-c231e7329b16d9f7
   BC-3880.40:
     name: Gestion de la pression
     description: |
       Optimisation de la pression de distribution dans les zones de gestion de
       la pression pour réduire les pertes et contrôler le taux de ruptures.
+    source_hash: sha256-413b28eb3944d3fc
   BC-3880.40.10:
     name: Configuration des zones de pression
     description: |
       Configuration des zones de régulation de pression et des points de
       consigne des réducteurs de pression.
+    source_hash: sha256-13cc3d77c78db951
   BC-3880.40.20:
     name: Contrôle avancé de la pression
     description: |
       Exploitation des réducteurs de pression à commande à distance et à
       modulation temporelle.
+    source_hash: sha256-55c78759492093a0
   BC-3880.40.30:
     name: Gestion des pressions transitoires
     description: |
       Analyse des coups de bélier et atténuation des phénomènes transitoires
       sur les réseaux de distribution.
+    source_hash: sha256-7d2501d2f0ca6202
   BC-3880.50:
     name: Opérations de qualité de l'eau dans le réseau
     description: |
       Surveillance de la qualité de l'eau dans le réseau — chlore résiduel, eau
       colorée, goût et odeur — et opérations de remédiation.
+    source_hash: sha256-c89ebb2a35bbdbf8
   BC-3880.50.10:
     name: Surveillance du chlore résiduel dans le réseau
     description: |
       Surveillance des teneurs en chlore résiduel dans le réseau et dosage de
       rechloration.
+    source_hash: sha256-86cf089272dd86b4
   BC-3880.50.20:
     name: Contrôle de la décoloration et des sédiments
     description: |
       Opérations de rinçage et de débouchage par bouchon de glace pour gérer
       les réclamations pour eau colorée.
+    source_hash: sha256-b357719d0efb6265
   BC-3880.50.30:
     name: Opérations de prélèvement dans le réseau
     description: |
       Prélèvements réglementaires au robinet des clients et aux points
       d'alimentation.
+    source_hash: sha256-fde8b76be043e2de
   BC-3880.60:
     name: Opérations de réparation et de renouvellement des conduites
     description: |
       Réparation réactive des ruptures et défaillances de joints, et livraison
       opérationnelle des programmes de renouvellement des conduites.
+    source_hash: sha256-5ba88927d93cb948
   BC-3880.60.10:
     name: Réponse aux ruptures de conduites
     description: |
       Réponse, isolement et réparation des ruptures de conduites selon les
       objectifs de minutes clients perdues.
+    source_hash: sha256-b875b6429ae1752c
   BC-3880.60.20:
     name: Opérations de réparation des branchements
     description: |
       Réparation des conduites de communication et d'alimentation entre la
       conduite principale et le robinet d'arrêt.
+    source_hash: sha256-945c4f7bb0690d8d
   BC-3880.60.30:
     name: Opérations terrain de renouvellement des conduites
     description: |
       Exécution terrain des programmes de renouvellement et de réhabilitation
       des conduites, incluant les méthodes sans tranchée.
+    source_hash: sha256-5cc00b8e0cb498c5
   BC-3880.70:
     name: Opérations de raccordement de nouveaux clients à l'eau
     description: |
       Réalisation des raccordements d'eau nouveaux pour les clients
       domestiques, commerciaux et les promoteurs.
+    source_hash: sha256-1c7af387aad60050
   BC-3880.70.10:
     name: Évaluation des demandes de raccordement eau
     description: |
       Évaluation technique des demandes de raccordement eau et fourniture de
       services aux promoteurs.
+    source_hash: sha256-ee1503d5ed385bc9
   BC-3880.70.20:
     name: Opérations d'installation des raccordements
     description: |
       Pose des conduites de communication, robinets de prise en charge et
       compteurs clients.
+    source_hash: sha256-cca66994b42b88cf
   BC-3880.70.30:
     name: Mise en service des raccordements
     description: |
       Mise en service, désinfection et rinçage des nouveaux raccordements avant
       utilisation.
+    source_hash: sha256-39d5ff0204ba68ee

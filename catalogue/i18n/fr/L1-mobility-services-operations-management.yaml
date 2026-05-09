@@ -5,38 +5,47 @@ entries:
     name: Gestion des opérations de services de mobilité
     description: |
       Opérations des services de mobilité partagée et à la demande — VTC, autopartage et micromobilité, et agrégation de mobilité en tant que service — incluant le catalogue de services, les opérations de trajets, le rééquilibrage de flotte, les opérations conducteurs et passagers, la tarification dynamique, l'intégration des partenaires et l'engagement auprès des collectivités et des régulateurs.
+    source_hash: sha256-8a41c36dcee96b37
   BC-3490.10:
     name: Gestion du catalogue de services de mobilité
     description: |
       Définition des types de services de mobilité, des plans tarifaires et des zones de couverture géographique.
+    source_hash: sha256-ff1bd1627802910d
   BC-3490.10.10:
     name: Définition des types de services
     description: |
       Définition des types de services tels que les trajets point à point, en libre-service, en station et en covoiturage.
+    source_hash: sha256-2b506d42953c1508
   BC-3490.10.20:
     name: Configuration des plans tarifaires
     description: |
       Configuration des tarifs de base, de la tarification au temps et à la distance, et des plans d'abonnement.
+    source_hash: sha256-c0fde01ea1201aae
   BC-3490.10.30:
     name: Gestion des géofences et de la couverture des services
     description: |
       Gestion des géofences opérationnelles, des zones d'exclusion et des zones de couverture.
+    source_hash: sha256-ea8adddd2296ba29
   BC-3490.20:
     name: Opérations de réservation et de trajets
     description: |
       Capture, mise en correspondance, dispatch et gestion du cycle de vie des réservations et trajets de mobilité.
+    source_hash: sha256-82166c59e546fd63
   BC-3490.20.10:
     name: Capture des réservations de trajets
     description: |
       Capture des réservations de trajets via les canaux application, web et partenaires.
+    source_hash: sha256-dbf9d8aa9e455c4c
   BC-3490.20.20:
     name: Mise en correspondance et dispatch des trajets
     description: |
       Mise en correspondance des passagers avec les véhicules ou conducteurs et dispatch des trajets confirmés.
+    source_hash: sha256-4d254b12514d38c5
   BC-3490.20.30:
     name: Gestion du cycle de vie des trajets
     description: |
       Gestion du cycle de vie des trajets en cours incluant l'annulation, la réorientation et la finalisation.
+    source_hash: sha256-66268e703c29cc34
   BC-3490.30:
     name: Opérations de flotte partagée
     description: |
@@ -48,95 +57,119 @@ entries:
     out_of_scope:
       - Comptabilité générique des actifs de flotte d'entreprise (BC-2430)
       - Opérations des stations de recharge (BC-3480)
+    source_hash: sha256-aecefd2b62dd434e
   BC-3490.30.10:
     name: Opérations de rééquilibrage des véhicules
     description: |
       Rééquilibrage des véhicules partagés entre zones, stations et zones de forte demande.
+    source_hash: sha256-f0a229997619eef8
   BC-3490.30.20:
     name: Coordination du nettoyage et de la recharge des véhicules
     description: |
       Coordination des activités de nettoyage, recharge et ravitaillement des véhicules en voirie.
+    source_hash: sha256-5df7c262519f718a
   BC-3490.30.30:
     name: Gestion des dommages et des pertes de véhicules
     description: |
       Gestion de l'évaluation des dommages, de l'orientation vers la réparation et du recouvrement des pertes pour les véhicules partagés.
+    source_hash: sha256-0e17e5dd8404f8e8
   BC-3490.40:
     name: Opérations conducteurs et prestataires
     description: |
       Intégration, conformité, règlement et gestion de la performance des conducteurs et autres prestataires de services.
+    source_hash: sha256-0cdb5b1250f94f7f
   BC-3490.40.10:
     name: Intégration et conformité des conducteurs
     description: |
       Intégration des conducteurs incluant la vérification du permis, les enquêtes d'antécédents et la conformité continue.
+    source_hash: sha256-ba6ba994f576e2d3
   BC-3490.40.20:
     name: Rémunération et règlement des conducteurs
     description: |
       Calcul et paiement des revenus, pourboires et incitations des conducteurs.
+    source_hash: sha256-c14db19144190db6
   BC-3490.40.30:
     name: Gestion de la performance des conducteurs
     description: |
       Gestion de la performance des conducteurs incluant les évaluations, le coaching et la désactivation.
+    source_hash: sha256-5f76ffb6b53434b8
   BC-3490.50:
     name: Opérations passagers
     description: |
       Intégration, support et opérations de confiance et sécurité pour les passagers et clients finaux des services de mobilité.
+    source_hash: sha256-672e90ab3310f3f5
   BC-3490.50.10:
     name: Intégration et identité des passagers
     description: |
       Intégration des passagers incluant la vérification d'identité, le moyen de paiement et le consentement.
+    source_hash: sha256-9ba149f3cad5e370
   BC-3490.50.20:
     name: Opérations de support aux passagers
     description: |
       Support aux passagers avant, pendant et après le trajet.
+    source_hash: sha256-35b8c519523b85bf
   BC-3490.50.30:
     name: Gestion de la sécurité et de la confiance des passagers
     description: |
       Opérations de confiance et sécurité incluant la gestion des incidents, la prévention des abus et les fonctionnalités de sécurité.
+    source_hash: sha256-18c9afecda52b690
   BC-3490.60:
     name: Gestion de la tarification dynamique et de la demande
     description: |
       Prévision de la demande et exploitation des moteurs de tarification dynamique, de surtarification et de promotion pour les services de mobilité.
+    source_hash: sha256-00a08951ef82e72d
   BC-3490.60.10:
     name: Prévision de la demande
     description: |
       Prévision de la demande à court terme par zone, période et type de service.
+    source_hash: sha256-7435018eed57b060
   BC-3490.60.20:
     name: Opérations du moteur de tarification dynamique
     description: |
       Exploitation des moteurs de tarification dynamique et de surtarification incluant les garde-fous de prix et les audits.
+    source_hash: sha256-e1cdbd2ff713158b
   BC-3490.60.30:
     name: Opérations de promotions et d'incitations
     description: |
       Exploitation des promotions et incitations passagers et conducteurs dans les campagnes.
+    source_hash: sha256-9b0d3cbe72d59a1b
   BC-3490.70:
     name: Agrégation multimodale et opérations partenaires
     description: |
       Agrégation des partenaires MaaS, composition de trajets multimodaux et règlement inter-opérateurs entre partenaires de mobilité.
+    source_hash: sha256-d53e4266d6160aa5
   BC-3490.70.10:
     name: Intégration des partenaires MaaS
     description: |
       Intégration des partenaires de transport public, de VTC et de micromobilité sur la plateforme MaaS.
+    source_hash: sha256-2476e81fa9be845a
   BC-3490.70.20:
     name: Composition de trajets multimodaux
     description: |
       Composition de trajets multimodaux combinant les transports publics et la mobilité à la demande.
+    source_hash: sha256-1599bbd9cbe26b96
   BC-3490.70.30:
     name: Règlement inter-opérateurs
     description: |
       Règlement des revenus et des frais entre les agrégateurs MaaS et les opérateurs de mobilité sous-jacents.
+    source_hash: sha256-87347f9b9de05b72
   BC-3490.80:
     name: Opérations réglementaires et collectivités pour la mobilité
     description: |
       Engagement auprès des collectivités et des régulateurs sur les permis, le partage de données et les opérations de stationnement et de voirie.
+    source_hash: sha256-c7ddfa7e3743cf3d
   BC-3490.80.10:
     name: Gestion des permis et autorisations collectivités
     description: |
       Gestion des permis d'exploitation municipaux, des plafonds de véhicules et des autorisations dans chaque juridiction.
+    source_hash: sha256-2ef19800ab8c293d
   BC-3490.80.20:
     name: Partage des données opérationnelles avec les collectivités
     description: |
       Partage des données opérationnelles avec les collectivités selon les spécifications MDS, GBFS et équivalentes.
+    source_hash: sha256-b9282ce32be041f5
   BC-3490.80.30:
     name: Coordination du stationnement et de la voirie
     description: |
       Coordination de l'accès à la voirie, du stationnement et des zones de prise en charge avec les autorités municipales.
+    source_hash: sha256-137ca0e40d1d9208

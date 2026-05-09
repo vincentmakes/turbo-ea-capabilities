@@ -61,6 +61,11 @@
         "out_of_scope": {
           "type": "array",
           "items": { "type": "string", "minLength": 1 }
+        },
+        "source_hash": {
+          "type": "string",
+          "pattern": "^sha256-[0-9a-f]{16}$",
+          "description": "Optional staleness marker. SHA-256 fingerprint (first 16 hex chars) of the source node's translatable surface (name, description, aliases, in_scope, out_of_scope) at the time this entry was authored or last refreshed. Lint recomputes the hash from the current source and flags a mismatch as stale (drift). Run `npm run i18n:stamp` to backfill or refresh."
         }
       }
     },
@@ -73,7 +78,12 @@
         "name": { "type": "string", "minLength": 1 },
         "stage_name": { "type": "string", "minLength": 1 },
         "description": { "type": "string" },
-        "notes": { "type": "string" }
+        "notes": { "type": "string" },
+        "source_hash": {
+          "type": "string",
+          "pattern": "^sha256-[0-9a-f]{16}$",
+          "description": "Optional staleness marker. SHA-256 fingerprint (first 16 hex chars) of the source stream/stage's translatable surface at the time this entry was authored or last refreshed. Lint recomputes the hash from the current source and flags a mismatch as stale (drift). Run `npm run i18n:stamp` to backfill or refresh."
+        }
       }
     }
   },

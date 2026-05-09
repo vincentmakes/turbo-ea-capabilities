@@ -9,67 +9,80 @@ entries:
       dentro del vehículo, plataforma de datos del vehículo, servicios V2X,
       operaciones de seguridad del vehículo y soporte al cliente de servicios
       conectados.
+    source_hash: sha256-827d4672e10446bb
   BC-3460.10:
     name: Operaciones de la plataforma de conectividad del vehículo
     description: |
       Operación de la conectividad dentro del vehículo, el aprovisionamiento
       de SIM y la plataforma de telemetría vehículo-a-nube.
+    source_hash: sha256-c5db848d4bef1d81
   BC-3460.10.10:
     name: Aprovisionamiento de SIM y conectividad del vehículo
     description: |
       Aprovisionamiento de conectividad SIM embebida e itinerancia de operadores
       para vehículos conectados.
+    source_hash: sha256-278ba17fc579e9b7
   BC-3460.10.20:
     name: Operaciones de la red de conectividad
     description: |
       Operación de la columna vertebral de conectividad que da soporte a los
       servicios del vehículo, incluida la conmutación por error y la calidad
       de servicio.
+    source_hash: sha256-725b15dff54ea334
   BC-3460.10.30:
     name: Operaciones de telemetría vehículo-a-nube
     description: |
       Operación de los flujos de telemetría del vehículo desde los agentes
       dentro del vehículo hasta las plataformas en la nube.
+    source_hash: sha256-c9f247262e505669
   BC-3460.20:
     name: Operaciones de actualización de software OTA
     description: |
       Operación de campañas de actualización de software OTA alineadas con
       UN R156 y el sistema de gestión de actualizaciones de software.
+    source_hash: sha256-7a6360df88957c94
   BC-3460.20.10:
     name: Planificación de campañas OTA
     description: |
       Planificación de campañas de actualización de software OTA, incluido el
       alcance, la elegibilidad y la estrategia de despliegue.
+    source_hash: sha256-026b06feec6deed9
   BC-3460.20.20:
     name: Distribución de paquetes OTA
     description: |
       Distribución de paquetes OTA firmados a los vehículos y orquestación de
       la instalación en las ECUs.
+    source_hash: sha256-06820db80574124a
   BC-3460.20.30:
     name: Gestión de reversión y recuperación OTA
     description: |
       Gestión de la reversión, recuperación y respuesta a incidencias en campo
       cuando las actualizaciones fallan.
+    source_hash: sha256-04285bf893e7679b
   BC-3460.30:
     name: Gestión de aplicaciones y suscripciones dentro del vehículo
     description: |
       Operación de la tienda de aplicaciones dentro del vehículo, el ciclo de
       vida de las suscripciones y los servicios de pago dentro del vehículo.
+    source_hash: sha256-4252d07c3f8de938
   BC-3460.30.10:
     name: Gestión del catálogo de servicios conectados
     description: |
       Mantenimiento del catálogo de servicios conectados y aplicaciones dentro
       del vehículo ofrecidas a los clientes.
+    source_hash: sha256-c38268ee5705a051
   BC-3460.30.20:
     name: Gestión del ciclo de vida de las suscripciones
     description: |
       Gestión del ciclo de vida de las suscripciones de clientes a servicios
       conectados y funciones bajo demanda.
+    source_hash: sha256-312f5876619bc047
   BC-3460.30.30:
     name: Operaciones de pago dentro del vehículo
     description: |
       Operación del pago, la tokenización y la liquidación de transacciones
       dentro del vehículo.
+    source_hash: sha256-33b491f042a2a94e
   BC-3460.40:
     name: Operaciones de la plataforma de datos del vehículo
     description: |
@@ -83,79 +96,95 @@ entries:
     out_of_scope:
       - Gestión de datos empresariales genérica (cubierta en datos empresariales y TI)
       - Elaboración del caso de seguridad funcional (BC-3400.80)
+    source_hash: sha256-2cecd1fde2c5335b
   BC-3460.40.10:
     name: Ingesta y almacenamiento de datos del vehículo
     description: |
       Ingesta, normalización y almacenamiento de telemetría y datos de eventos
       del vehículo a escala de flota.
+    source_hash: sha256-eb7aa3629443ba50
   BC-3460.40.20:
     name: Gestión de API y compartición de datos del vehículo
     description: |
       Provisión de API de datos del vehículo a equipos internos, concesionarios
       y socios externos bajo acuerdos de compartición de datos.
+    source_hash: sha256-eef0cdad6b1e2699
   BC-3460.40.30:
     name: Gestión de privacidad y consentimiento de datos del vehículo
     description: |
       Gestión del consentimiento, las preferencias y los controles de privacidad
       del cliente sobre los datos generados por el vehículo.
+    source_hash: sha256-124858e8486f48e4
   BC-3460.50:
     name: Servicios V2X y de movilidad cooperativa
     description: |
       Operación de los servicios de mensajes V2X y de servicios de movilidad
       cooperativa con infraestructura y otros vehículos.
+    source_hash: sha256-f738f1889b507350
   BC-3460.50.10:
     name: Operaciones del servicio V2I
     description: |
       Operación de los servicios vehículo-a-infraestructura, como la fase y el
       calendario de semáforos, la advertencia de obras y el pago de peajes.
+    source_hash: sha256-9066e8a70afc897c
   BC-3460.50.20:
     name: Operaciones de mensajes V2V
     description: |
       Operación de los servicios de mensajes vehículo-a-vehículo y canales de
       difusión según SAE J2735 y equivalentes.
+    source_hash: sha256-29f4bc3b5a2461a8
   BC-3460.50.30:
     name: Operaciones del servicio de conciencia cooperativa
     description: |
       Operación de los servicios de conciencia cooperativa, advertencia de
       peligros y platooning en flotas mixtas.
+    source_hash: sha256-04331f7548df8bbb
   BC-3460.60:
     name: Operaciones de seguridad del vehículo
     description: |
       Vigilancia operativa de la seguridad de la flota de vehículos conectados
       y respuesta a incidentes cibernéticos del vehículo.
+    source_hash: sha256-98edf87e17621fec
   BC-3460.60.10:
     name: Detección de amenazas al vehículo
     description: |
       Detección de ciberamenazas y comportamientos anómalos en la flota de
       vehículos conectados.
+    source_hash: sha256-20d1676fbbadf4ba
   BC-3460.60.20:
     name: Respuesta a incidentes de seguridad del vehículo
     description: |
       Respuesta a los incidentes de ciberseguridad del vehículo, incluida la
       contención, la remediación y la notificación al cliente.
+    source_hash: sha256-6b84182898697344
   BC-3460.60.30:
     name: Operaciones del SOC del vehículo
     description: |
       Operación del centro de operaciones de seguridad del vehículo y los
       flujos de telemetría de soporte.
+    source_hash: sha256-2cab3bd564def6ff
   BC-3460.70:
     name: Operaciones de atención al cliente de servicios conectados
     description: |
       Operaciones orientadas al cliente para los servicios conectados, incluida
       la asistencia de activación, la resolución de incidencias y la gestión
       de cuentas.
+    source_hash: sha256-661c2c91a56833a0
   BC-3460.70.10:
     name: Asistencia a la activación de servicios conectados
     description: |
       Asistencia para la activación, transferencia y desactivación de servicios
       conectados por parte del cliente.
+    source_hash: sha256-b34f185808bbcf71
   BC-3460.70.20:
     name: Resolución de incidencias de servicios conectados
     description: |
       Resolución de incidencias de servicios conectados reportadas por el cliente
       en los canales de centro de contacto, concesionario y autoservicio.
+    source_hash: sha256-296a0d3eb30716cb
   BC-3460.70.30:
     name: Gestión de cuentas de servicios conectados
     description: |
       Gestión de las cuentas de clientes de servicios conectados, la identidad
       y los derechos vinculados a los vehículos.
+    source_hash: sha256-b067275531e71bdd

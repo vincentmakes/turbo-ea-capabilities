@@ -8,157 +8,188 @@ entries:
       decisões de yield que maximizam a receita em produtos de viagem
       — distinto do mestre de produto, da ligação de distribuição e
       do ciclo de vida de reservas.
+    source_hash: sha256-b554f0acaaa1a6ea
   BC-4030.10:
     name: Previsão de procura de viagem
     description: |
       Previsão de procura não restrita, ritmo de reserva, procura de
       grupo e comportamento de não comparência ou cancelamento para
       produtos de viagem.
+    source_hash: sha256-d1989d77f00e026f
   BC-4030.10.10:
     name: Previsão de procura não restrita
     description: |
       Previsão de procura na ausência de restrições de capacidade
       e preço.
+    source_hash: sha256-53e07c5cd503f45f
   BC-4030.10.20:
     name: Previsão de ritmo e ocupação de reservas
     description: |
       Previsão de curvas de ritmo e ocupação contra padrões históricos
       e em carteira.
+    source_hash: sha256-1e886519f747a779
   BC-4030.10.30:
     name: Previsão de procura de grupo
     description: |
       Previsão de procura de grupo, incluindo efeitos de deslocamento
       no inventário transitório.
+    source_hash: sha256-c34086393bb5bbe7
   BC-4030.10.40:
     name: Previsão de não comparência e cancelamento
     description: |
       Previsão de comportamento de não comparência e cancelamento como
       entradas para controlos de overbooking e inventário.
+    source_hash: sha256-fbb9904d9b45e0cc
   BC-4030.20:
     name: Gestão de preços e estratégia de tarifa
     description: |
       Definição e ajustamento da estratégia de tarifa em níveis de BAR,
       classes de tarifa, janelas de época e preços de pacote.
+    source_hash: sha256-7e8a7e10b36b953b
   BC-4030.20.10:
     name: Definição da melhor tarifa disponível
     description: |
       Definição de escadas de melhor tarifa disponível por data e segmento.
+    source_hash: sha256-0db8a27646670e22
   BC-4030.20.20:
     name: Estratégia de classe de tarifa e classe de inventário
     description: |
       Estratégia para classes de tarifa e classes de inventário, incluindo
       aberturas, encerramentos e reajustamentos.
+    source_hash: sha256-5cc69ff122d0a35d
   BC-4030.20.30:
     name: Preços sazonais e por tipo de dia
     description: |
       Variação de preços entre épocas, padrões de dia da semana e janelas
       de evento.
+    source_hash: sha256-5808cf4da3787d0b
   BC-4030.20.40:
     name: Preços de pacote e pacote agrupado
     description: |
       Preços para produtos empacotados e pacotes agrupados, incluindo
       alocação de componentes.
+    source_hash: sha256-7b355af8fb29571c
   BC-4030.30:
     name: Controlos de inventário e capacidade
     description: |
       Controlos de inventário, incluindo limites de reserva, restrições
       de duração da estadia, estratégia de overbooking e aninhamento
       de preço de licitação.
+    source_hash: sha256-4e0571cbf42733e9
   BC-4030.30.10:
     name: Definição de limite de reserva e autorização
     description: |
       Definição de limites de reserva e níveis de autorização por classe,
       canal e segmento.
+    source_hash: sha256-34e2abb61ace5a88
   BC-4030.30.20:
     name: Gestão de restrições de duração da estadia
     description: |
       Gestão de restrições de duração da estadia, incluindo mínimos,
       máximos e regras de dia de chegada.
+    source_hash: sha256-8eea352dd0df715b
   BC-4030.30.30:
     name: Gestão da estratégia de overbooking
     description: |
       Gestão estratégica dos níveis de overbooking por data e segmento,
       calibrada contra os custos de recusa de serviço.
+    source_hash: sha256-3c520040e48e8a0c
   BC-4030.30.40:
     name: Gestão de aninhamento e preço de licitação
     description: |
       Gestão de aninhamento de inventário e limiares de preço de licitação
       em modelos de otimização de receita.
+    source_hash: sha256-39e9d319e1aff7c0
   BC-4030.40:
     name: Inteligência de tarifas da concorrência
     description: |
       Pesquisa de tarifas da concorrência, análise de quota de mercado e
       recomendações de posicionamento de tarifa.
+    source_hash: sha256-e646b74c7afad427
   BC-4030.40.10:
     name: Pesquisa de tarifas da concorrência
     description: |
       Pesquisa de rotina das tarifas dos concorrentes em canais e datas
       de chegada selecionados.
+    source_hash: sha256-ca5f754f04af011a
   BC-4030.40.20:
     name: Análise de quota de mercado e penetração
     description: |
       Análise de quota de mercado, índice de ocupação e índice de tarifa
       contra o conjunto competitivo.
+    source_hash: sha256-e842e0d9bc13f682
   BC-4030.40.30:
     name: Recomendações de posicionamento de tarifa
     description: |
       Geração de recomendações de posicionamento de tarifa contra o
       conjunto competitivo e o estado da procura.
+    source_hash: sha256-34f39a2185422223
   BC-4030.40.40:
     name: Definição e manutenção do conjunto competitivo
     description: |
       Definição e manutenção contínua de conjuntos competitivos utilizados
       para benchmarking.
+    source_hash: sha256-84f9a97e1e7e3383
   BC-4030.50:
     name: Gestão de promoções e descontos
     description: |
       Definição e operação de promoções, códigos de desconto, preços opacos
       e de grupo de utilizadores fechado em produtos de viagem.
+    source_hash: sha256-8bf5f7925f9fafc9
   BC-4030.50.10:
     name: Gestão do calendário de promoções
     description: |
       Gestão de calendário de promoções entre épocas e janelas de reserva
       principais.
+    source_hash: sha256-390b5fe29d39a97d
   BC-4030.50.20:
     name: Regras de elegibilidade de promoção
     description: |
       Regras de elegibilidade que regem o resgate de promoções por segmento,
       canal e janela de estadia.
+    source_hash: sha256-6114297800f6f7cd
   BC-4030.50.30:
     name: Gestão de código de desconto e voucher
     description: |
       Gestão de códigos de desconto, vouchers e tokens de uso promocional
       semelhantes a cartões de oferta.
+    source_hash: sha256-4dde557835798255
   BC-4030.50.40:
     name: Preços opacos e de grupo de utilizadores fechado
     description: |
       Operação de mecanismos de preços em canal opaco e grupo de utilizadores
       fechado que protegem a visibilidade da tarifa pública.
+    source_hash: sha256-5058234755f62cef
   BC-4030.60:
     name: Análise do desempenho de receita
     description: |
       Relatórios e análise do desempenho de receita, incluindo RevPAR,
       RevPAX, ADR, yield e variância de previsão.
+    source_hash: sha256-ec75b278c632c9a7
   BC-4030.60.10:
     name: Relatórios de KPI de receita
     description: |
       Relatórios de KPIs de receita principais contra orçamento e período
       anterior.
+    source_hash: sha256-9043588a959ed465
   BC-4030.60.20:
     name: Análise de variância de yield
     description: |
       Análise de variância de yield que atribui a mudança a efeitos de
       mix, tarifa e ocupação.
+    source_hash: sha256-69f0d9f8c955486c
   BC-4030.60.30:
     name: Análise de contribuição de receita por canal
     description: |
       Análise da contribuição de receita por canal, segmento e código
       de tarifa.
+    source_hash: sha256-7650f41ed66bdd57
   BC-4030.60.40:
     name: Análise de previsão vs. real de receita
     description: |
       Análise da receita prevista versus real, com atribuição a fontes
       de erro de previsão.
+    source_hash: sha256-1f2a1974ef561519
 metadata:
   status: draft
   translator: claude-ai

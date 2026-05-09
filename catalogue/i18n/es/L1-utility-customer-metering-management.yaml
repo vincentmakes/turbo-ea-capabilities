@@ -9,42 +9,51 @@ entries:
       inventario de contadores, adquisición de datos AMI / contadores inteligentes, lectura
       y validación de contadores, entradas del proceso contador-cobro, conexión y
       desconexión del servicio, y protección de clientes vulnerables.
+    source_hash: sha256-f74694fa69c593ae
   BC-3910.10:
     name: Gestión de cuentas de clientes de servicios públicos
     description: |
       Ciclo de vida de la cuenta del cliente específico de la empresa de servicios públicos,
       cubriendo los identificadores del punto de suministro, los cambios de ocupación y la
       asignación de tarifas.
+    source_hash: sha256-a0c9a896cf28ce39
   BC-3910.10.10:
     name: Registro del punto de suministro
     description: |
       Registro y mantenimiento de los identificadores del punto de suministro (MPAN, MPRN, SPID).
+    source_hash: sha256-cac659a583bdf4dd
   BC-3910.10.20:
     name: Operaciones de cambio de ocupación
     description: |
       Tramitación de altas, bajas y cambios de titular en los puntos de suministro.
+    source_hash: sha256-e99c7a3d0aeb39d3
   BC-3910.10.30:
     name: Asignación de tarifas al cliente
     description: |
       Asignación de los clientes a los programas tarifarios y opciones de producto aplicables.
+    source_hash: sha256-1c1eabf239132e30
   BC-3910.20:
     name: Gestión de activos de medición
     description: |
       Gestión del ciclo de vida de los activos físicos de medición y comunicación, incluidos
       las existencias, la instalación, el cambio y la recuperación.
+    source_hash: sha256-43266d8e137e496d
   BC-3910.20.10:
     name: Operaciones de existencias de contadores
     description: |
       Gestión de existencias, puesta en servicio y retirada de servicio de activos de medición.
+    source_hash: sha256-96477c182d4f24be
   BC-3910.20.20:
     name: Operaciones de instalación de contadores
     description: |
       Instalación en campo de contadores nuevos y de sustitución.
+    source_hash: sha256-02a116379cb362b1
   BC-3910.20.30:
     name: Recuperación y eliminación de contadores
     description: |
       Recuperación, reacondicionamiento y eliminación al final de la vida útil de los
       activos de medición.
+    source_hash: sha256-0a30af310d1e61b2
   BC-3910.30:
     name: Operaciones de adquisición de datos AMI
     description: |
@@ -57,93 +66,113 @@ entries:
     out_of_scope:
       - Instalación física del contador (BC-3910.20.20)
       - Demanda agregada del lado de la comercialización (BC-3850.30.10)
+    source_hash: sha256-5ae0014bd6d01f3c
   BC-3910.30.10:
     name: Operaciones del sistema concentrador
     description: |
       Operación de los sistemas concentradores de contadores inteligentes y emisión de
       órdenes al contador.
+    source_hash: sha256-0e952d7082e57b80
   BC-3910.30.20:
     name: Operaciones de la red de comunicaciones AMI
     description: |
       Operación de las redes de comunicaciones AMI por RF, PLC y celular, y sus concentradores.
+    source_hash: sha256-ded8fa417c4d162c
   BC-3910.30.30:
     name: Ingesta en el sistema de gestión de datos del contador
     description: |
       Ingesta de lecturas por intervalos y de registro en el sistema de gestión de datos
       del contador.
+    source_hash: sha256-bd8ab77495df99b0
   BC-3910.40:
     name: Lectura y validación de contadores
     description: |
       Lectura cíclica y por eventos de los contadores y validación, estimación y edición
       de los datos de consumo.
+    source_hash: sha256-bbec3f0d7e24bc21
   BC-3910.40.10:
     name: Operaciones de lectura manual y por vehículo
     description: |
       Operaciones de lectura a pie, por vehículo y AMR para contadores sin AMI.
+    source_hash: sha256-a64ddcac466f1c84
   BC-3910.40.20:
     name: Validación, estimación y edición
     description: |
       Proceso VEE de lecturas de registro e intervalo para producir datos de calidad para
       la facturación.
+    source_hash: sha256-c38d00995af9d270
   BC-3910.40.30:
     name: Agregación del consumo
     description: |
       Agregación del consumo por periodos de facturación y perfiles de liquidación.
+    source_hash: sha256-83444602c31572f8
   BC-3910.50:
     name: Operaciones de contador a cobro
     description: |
       Operaciones específicas de la empresa de servicios públicos para preparar los datos
       de consumo para la facturación y la protección de ingresos, incluida la gestión de
       excepciones de facturas y la detección de fugas de ingresos.
+    source_hash: sha256-8f93ceec5247e9c6
   BC-3910.50.10:
     name: Preparación de determinantes de facturación
     description: |
       Preparación de los determinantes de facturación — consumo, demanda y reactiva — para
       los sistemas de facturación.
+    source_hash: sha256-a5ed6e0e1ecc746c
   BC-3910.50.20:
     name: Gestión de excepciones de facturas
     description: |
       Investigación y resolución de excepciones en facturas y anomalías en los datos del
       contador.
+    source_hash: sha256-1865c6a057f967e6
   BC-3910.50.30:
     name: Operaciones de protección de ingresos
     description: |
       Detección e investigación en campo de manipulaciones de contadores y robo de energía
       o agua.
+    source_hash: sha256-9f98f5de9360770d
   BC-3910.60:
     name: Operaciones de conexión y desconexión del servicio
     description: |
       Activación, desactivación y operación en modo prepago de los suministros en la
       interfaz con el cliente.
+    source_hash: sha256-834463badab12ab8
   BC-3910.60.10:
     name: Operaciones de activación del suministro
     description: |
       Activación de suministros nuevos y reactivados, incluida la energización a distancia.
+    source_hash: sha256-7b4c3d99dd5524ca
   BC-3910.60.20:
     name: Desconexión por impago
     description: |
       Procesos de desconexión frente a las protecciones legales y regulatorias.
+    source_hash: sha256-db215d017af07109
   BC-3910.60.30:
     name: Operaciones en modo prepago
     description: |
       Operación de contadores de prepago y canales de recarga.
+    source_hash: sha256-e6550dd50b828e7a
   BC-3910.70:
     name: Gestión de clientes vulnerables
     description: |
       Identificación y protección de los clientes en situación de vulnerabilidad, incluidos
       los registros de servicios prioritarios y los esquemas de asequibilidad.
+    source_hash: sha256-bd85c25be841e5f1
   BC-3910.70.10:
     name: Operaciones del registro de servicios prioritarios
     description: |
       Mantenimiento del registro de servicios prioritarios y los indicadores de atención
       personalizada.
+    source_hash: sha256-9adf2435e81a9346
   BC-3910.70.20:
     name: Operaciones de esquemas de dificultad económica y asequibilidad
     description: |
       Administración de los esquemas de tarifa social y fondos de ayuda para clientes
       de servicios públicos.
+    source_hash: sha256-514a8df23d9c8efa
   BC-3910.70.30:
     name: Gestión de clientes con equipos médicos
     description: |
       Gestión de los clientes que dependen de equipos médicos o de diálisis para la
       planificación de interrupciones.
+    source_hash: sha256-8ed0fc3e2bcae204

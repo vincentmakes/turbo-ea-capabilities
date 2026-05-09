@@ -8,6 +8,7 @@ entries:
       canal, promessa a partir de qualquer nó e processamento através de loja,
       centro de distribuição, marketplace, drop-ship de fornecedor ou parceiro de
       última milha.
+    source_hash: sha256-759583730d4c128a
   BC-2330.10:
     name: Gestão de orquestração de canais
     description: |
@@ -19,37 +20,45 @@ entries:
       - Economia do mix de canais e trade-offs de custo de processamento
     out_of_scope:
       - Processamento genérico de encomendas (BC-520.40)
+    source_hash: sha256-db07250e9bb8b15a
   BC-2330.10.10:
     name: Gestão de regras de encaminhamento de canal
     description: |
       Definição de regras de encaminhamento para seleção do nó de processamento
       com base em custo e serviço.
+    source_hash: sha256-06b62f3d1addf895
   BC-2330.10.20:
     name: Visão de encomendas omnicanal
     description: |
       Visão unificada de encomendas, estado e histórico entre canais.
+    source_hash: sha256-8fba0cf403f1d058
   BC-2330.10.30:
     name: Economia do mix de canais
     description: |
       Análise de unit economics por canal e rota de processamento.
+    source_hash: sha256-0b9c2abcbc0f96b1
   BC-2330.20:
     name: Gestão de operações click-and-collect
     description: |
       Operações de compra online com levantamento em loja, à porta e em cacifo,
       que ligam as encomendas digitais aos pontos de levantamento físicos.
+    source_hash: sha256-420798729bf23e70
   BC-2330.20.10:
     name: Operações de pick-and-pack em loja
     description: |
       Picking e embalagem de encomendas online por colaboradores de loja.
+    source_hash: sha256-c550b7b8afac84d5
   BC-2330.20.20:
     name: Entrega ao cliente no levantamento
     description: |
       Entrega ao cliente no levantamento, incluindo verificação de identidade e
       gestão de exceções.
+    source_hash: sha256-958eb75637d5b41a
   BC-2330.20.30:
     name: Levantamento à porta e em cacifo
     description: |
       Operações de entrega à porta e levantamento em cacifo.
+    source_hash: sha256-ff53d42c5962b9ea
   BC-2330.30:
     name: Gestão de processamento de encomendas distribuído
     description: |
@@ -60,63 +69,76 @@ entries:
       - Operações de ship-from-store
       - Operações de dark store e micro-centro de processamento
       - Orquestração de drop-ship de fornecedor
+    source_hash: sha256-b60a03f7118135fa
   BC-2330.30.10:
     name: Operações de ship-from-store
     description: |
       Picking, embalagem e expedição de encomendas online a partir de lojas físicas.
+    source_hash: sha256-4568396914d82bee
   BC-2330.30.20:
     name: Operações de dark store e micro-processamento
     description: |
       Operações de dark stores e micro-centros de processamento para encomendas
       digitais.
+    source_hash: sha256-39cc74df8aa89ea8
   BC-2330.30.30:
     name: Orquestração de drop-ship de fornecedor
     description: |
       Orquestração de drop-ship de fornecedor, incluindo encaminhamento de PO e
       rastreio.
+    source_hash: sha256-b810de00017d4ed8
   BC-2330.40:
     name: Gestão de operações de vendedor em marketplace
     description: |
       Operação de listings do retalhista como vendedor em marketplaces de terceiros
       e gestão de vendedores de terceiros num marketplace próprio.
+    source_hash: sha256-eab4286589a88a4d
   BC-2330.40.10:
     name: Gestão de listings em marketplace
     description: |
       Listagem de artigos em marketplaces de terceiros, incluindo adaptação de
       conteúdo.
+    source_hash: sha256-d57e122570a455d1
   BC-2330.40.20:
     name: Captura de encomendas de marketplace
     description: |
       Captura e tradução de encomendas de marketplace para o pipeline de encomendas
       do anfitrião.
+    source_hash: sha256-ca4fff8b300f83ee
   BC-2330.40.30:
     name: Integração de vendedores de terceiros
     description: |
       Integração de vendedores de terceiros no marketplace do retalhista.
+    source_hash: sha256-5b3510bdf2d1ad96
   BC-2330.40.40:
     name: Gestão do desempenho de vendedores de terceiros
     description: |
       Gestão do desempenho e conformidade com as políticas de vendedores de
       terceiros.
+    source_hash: sha256-1574cff833e3f6b1
   BC-2330.50:
     name: Gestão de slots de entrega ao consumidor
     description: |
       Marcação de slots de entrega pelo consumidor, definição de preços de janelas
       horárias e coordenação de despacho de estafetas para entrega em casa.
+    source_hash: sha256-74aa992aec45405d
   BC-2330.50.10:
     name: Reserva de slot de entrega
     description: |
       Reserva de slots de entrega pelo consumidor com lógica de disponibilidade e
       capacidade.
+    source_hash: sha256-8fdb8b9f2725465a
   BC-2330.50.20:
     name: Preço de janela horária
     description: |
       Preço dinâmico de janelas horárias de entrega por procura e densidade de
       rota.
+    source_hash: sha256-9504b4df42405539
   BC-2330.50.30:
     name: Coordenação de despacho de estafeta
     description: |
       Coordenação de despacho com estafetas de última milha próprios e de terceiros.
+    source_hash: sha256-8abd0a106ab30e0b
 metadata:
   status: draft
   translator: claude-ai

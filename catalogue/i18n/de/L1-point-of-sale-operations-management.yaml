@@ -7,6 +7,7 @@ entries:
       Kundenorientierte Transaktionsschicht des Einzelhandels — Verkaufserfassung,
       Zahlungsmittelannahme, Retouren und Erstattungen, Bargeldbehandlung,
       POS-Konfiguration und Verkaufskontinuität bei Systemausfällen.
+    source_hash: sha256-be0f6698812e2ac1
   BC-2320.10:
     name: Verkaufstransaktions-Management
     description: |
@@ -19,47 +20,58 @@ entries:
     out_of_scope:
       - Aktionsgestaltung (BC-440.30)
       - E-Commerce-Checkout (BC-2330)
+    source_hash: sha256-31fc675da3070daf
   BC-2320.10.10:
     name: Artikelscanning und Warenkorbaufbau
     description: |
       Scanning von Artikeln und Warenkorbaufbau an der Kasse einschließlich Gewichtsartikel.
+    source_hash: sha256-43f245d9878d5655
   BC-2320.10.20:
     name: Aktions- und Treueprogramm-Anwendung
     description: |
       Anwendung von Aktionen, Gutscheinen und Treueeinlösungen während des Verkaufs.
+    source_hash: sha256-fdf4dd3fe8ecd8ed
   BC-2320.10.30:
     name: Umsatzsteuer- und MwSt-Behandlung
     description: |
       Berechnung von Umsatz- und Mehrwertsteuer sowie jurisdiktionsspezifischen Regeln an der Kasse.
+    source_hash: sha256-1031e7ad3d42e33a
   BC-2320.10.40:
     name: Beleg- und Digitalbeleg-Ausgabe
     description: |
       Ausgabe von Papier- und Digitalbelegen einschließlich Verbraucher-Verknüpfung.
+    source_hash: sha256-e28808ee76ab9ca7
   BC-2320.20:
     name: Zahlungsmittel- und Zahlungsannahme Management
     description: |
       Annahme von Zahlungsmitteln an der Kasse einschließlich EMV, Contactless,
       Mobile Wallets, Geschenkkarten und alternativer Zahlungsarten mit PCI-DSS-Compliance.
+    source_hash: sha256-9ac272f2044de959
   BC-2320.20.10:
     name: Karten- und Contactless-Zahlungsannahme
     description: |
       EMV-, Contactless- und Mobile-Wallet-Zahlungsannahme an Einzelhandelskassen.
+    source_hash: sha256-795ddbd67ef022c3
   BC-2320.20.20:
     name: Bar- und Scheckzahlungsannahme
     description: |
       Bar-, Münz- und Scheckzahlungsannahme einschließlich Stückelungsbehandlung.
+    source_hash: sha256-71384bcb1b5e1e0f
   BC-2320.20.30:
     name: Geschenkkarten- und Wertgutschein-Annahme
     description: |
       Annahme und Ausgabe von Geschenkkarten und gespeicherten Wertgutscheinen.
+    source_hash: sha256-f6192e184dcf544e
   BC-2320.20.40:
     name: Alternative Zahlungsarten-Annahme
     description: |
       Annahme von Buy-now-pay-later, QR-Code und anderen alternativen Zahlungsmitteln.
+    source_hash: sha256-f8dff7eafcc7f20c
   BC-2320.20.50:
     name: PCI-DSS-Compliance-Betrieb
     description: |
       PCI-DSS-konformer Umgang mit Karteninhaberdaten am Point-of-Sale.
+    source_hash: sha256-fa1c744d12520953
   BC-2320.30:
     name: Retouren-, Erstattungs- & Umtausch-Management
     description: |
@@ -71,81 +83,100 @@ entries:
       - Kanalübergreifende Retouren von Online-Bestellungen in der Filiale
     out_of_scope:
       - Retourenlogistik zurück zum Verteilzentrum (BC-520.40.40)
+    source_hash: sha256-223efa4ed40af752
   BC-2320.30.10:
     name: Verbraucherretouren-Annahme
     description: |
       Annahme von Verbraucherretouren an der Kasse gemäß Rückgaberichtlinie.
+    source_hash: sha256-881d862a9d2ab9a8
   BC-2320.30.20:
     name: Erstattungs- und Filial-Gutschrift-Ausgabe
     description: |
       Ausgabe von Erstattungen auf das Originalzahlungsmittel oder Filial-Gutschriften.
+    source_hash: sha256-a0eaecf52c48884b
   BC-2320.30.30:
     name: Umtauschvorgans-Bearbeitung
     description: |
       Gleich- und ungleichwertige Umtauschtransaktionen einschließlich Preisabstimmung.
+    source_hash: sha256-db4b5d4519b9da6c
   BC-2320.30.40:
     name: Kanalübergreifende Retouren-Verarbeitung
     description: |
       Annahme von Online- und anderen Kanalbestellungen zur Rückgabe in der Filiale.
+    source_hash: sha256-0e6457cbbcce5b77
   BC-2320.40:
     name: POS-Bargeld- und Zahlungsmittel-Behandlung
     description: |
       Kassenschublade, Safe, Einzahlung und Tagesabschluss-Zahlungsmittel-Abstimmung
       zum Schutz der Kasseneinnahmen.
+    source_hash: sha256-e3200b5681fad8c8
   BC-2320.40.10:
     name: Kassenschubladen-Management
     description: |
       Öffnung, Überwachung und Abstimmung von Kassenschubladen.
+    source_hash: sha256-242600c09c5deebe
   BC-2320.40.20:
     name: Filialsafe- und Entnahme-Betrieb
     description: |
       Safe-Management, Tagesentnahmen und CIT-Vorbereitung.
+    source_hash: sha256-8b4760a1d365fa1f
   BC-2320.40.30:
     name: Tagesabschluss-Zahlungsmittel-Abstimmung
     description: |
       Abstimmung aller Zahlungsmittel gegenüber POS-Verkaufsdaten am Tagesende.
+    source_hash: sha256-10033316f8ee77d2
   BC-2320.40.40:
     name: Bankeinzahlung-Vorbereitung
     description: |
       Vorbereitung von Bankeinzahlungen und Übergabe an den Geldtransport.
+    source_hash: sha256-38dbb6861e7313c6
   BC-2320.50:
     name: POS-Konfiguration Management
     description: |
       Konfiguration von Zahlungsmitteln, Steuerregeln, Aktionslogik, Peripheriegeräten
       und Kasseverhalten im gesamten Filialbestand.
+    source_hash: sha256-40adce71c9062463
   BC-2320.50.10:
     name: Zahlungsmittel- und Zahlungskonfiguration
     description: |
       Konfiguration akzeptierter Zahlungsmittel, Limits und Routing je Filiale.
+    source_hash: sha256-1d42ac4fef10c45c
   BC-2320.50.20:
     name: Steuerregeln-Konfiguration
     description: |
       Konfiguration von Steuerregeln und jurisdiktionsbezogenen Überschreibungen je Filiale.
+    source_hash: sha256-e0744c4f46c7abb0
   BC-2320.50.30:
     name: Aktions-Engine-Konfiguration
     description: |
       Konfiguration der POS-Aktions-Engine und Angebotspriorisierungsregeln.
+    source_hash: sha256-a6d70018acd4327f
   BC-2320.50.40:
     name: POS-Peripheriegeräte-Konfiguration
     description: |
       Konfiguration von Waagen, Scannern, Druckern und PIN-Pads an der Kasse.
+    source_hash: sha256-5feb6f4030f8f164
   BC-2320.60:
     name: POS-Resilienz & Offline-Betrieb
     description: |
       Kontinuität des Verkaufsbetriebs bei Verbindungs- oder Systemausfällen einschließlich
       Offline-POS, Store-and-Forward und Warteschlangen-Management.
+    source_hash: sha256-7bb2d2dd6a6d4b83
   BC-2320.60.10:
     name: Offline-POS-Betrieb
     description: |
       Weiterbetrieb des POS bei Verbindungsverlust.
+    source_hash: sha256-c0ff1d2f23de3b67
   BC-2320.60.20:
     name: Store-and-Forward-Transaktionsbehandlung
     description: |
       Speicherung und Weiterleitung von Offline-Transaktionen bei Wiederverbindung.
+    source_hash: sha256-92a84da381807dbc
   BC-2320.60.30:
     name: Ausfall-Warteschlangen-Management
     description: |
       Kundenwarteschlangen-Management bei Kassenausfall-Ereignissen.
+    source_hash: sha256-69ff1d024d828487
 metadata:
   translator: claude-ai
   date: "2026-04-29"

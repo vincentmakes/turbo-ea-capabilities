@@ -9,24 +9,29 @@ entries:
       eolici, fotovoltaici e di stoccaggio — comprende dispacciamento e programmazione,
       operazione degli impianti per tecnologia, gestione del combustibile e delle emissioni,
       e gestione delle prestazioni a livello di parco.
+    source_hash: sha256-f3f49059846c80c1
   BC-3800.10:
     name: Dispacciamento e programmazione della generazione
     description: |
       Impegno delle unità, istruzioni di dispacciamento e programmi a breve termine
       per il parco di generazione in funzione delle nomine del gestore del sistema
       e delle posizioni di mercato.
+    source_hash: sha256-579f42d9bf7808a8
   BC-3800.10.10:
     name: Impegno delle unità
     description: |
       Selezione giornaliera e infragiornaliera delle unità di generazione per il servizio.
+    source_hash: sha256-cdd84893bbbab983
   BC-3800.10.20:
     name: Dispacciamento economico
     description: |
       Dispacciamento in tempo reale delle unità impegnate secondo l'ordine di merito rispetto al carico.
+    source_hash: sha256-6ce979dad8bd5110
   BC-3800.10.30:
     name: Coordinamento delle fermate
     description: |
       Coordinamento delle fermate programmate e forzate delle unità con il gestore del sistema e i programmi di mercato.
+    source_hash: sha256-b243cf01cd9c2a24
   BC-3800.20:
     name: Operazioni degli impianti termoelettrici
     description: |
@@ -39,144 +44,178 @@ entries:
     out_of_scope:
       - Operazione degli impianti nucleari (BC-3800.40)
       - Operazione degli impianti rinnovabili (BC-3800.50)
+    source_hash: sha256-6bb43c3513ca8886
   BC-3800.20.10:
     name: Operazioni delle caldaie
     description: |
       Operazione degli impianti di produzione del vapore e controllo della combustione.
+    source_hash: sha256-e7ebbc9be7834a63
   BC-3800.20.20:
     name: Operazioni delle turbine a vapore
     description: |
       Operazione delle turbine a vapore e dei sistemi condensato-acqua di alimento.
+    source_hash: sha256-019d40236eae1d35
   BC-3800.20.30:
     name: Operazioni delle turbine a gas
     description: |
       Operazione delle turbine a gas in ciclo aperto e a ciclo combinato.
+    source_hash: sha256-98fe8542818f42b1
   BC-3800.20.40:
     name: Operazioni di cogenerazione
     description: |
       Operazione degli impianti di cogenerazione che forniscono energia elettrica e calore di processo o teleriscaldamento.
+    source_hash: sha256-b7e03e78210a5529
   BC-3800.30:
     name: Operazioni degli impianti idroelettrici
     description: |
       Operazione di centrali idroelettriche convenzionali, di pompaggio e ad acqua fluente,
       inclusa la gestione delle dighe e dei canali di adduzione.
+    source_hash: sha256-3b87bad9fc2de63f
   BC-3800.30.10:
     name: Operazioni delle unità idroelettriche
     description: |
       Avviamento, arresto, regolazione e controllo del carico delle unità di generazione idroelettrica.
+    source_hash: sha256-fdf27f7ac787f9e8
   BC-3800.30.20:
     name: Gestione del livello del serbatoio
     description: |
       Programmazione del livello del serbatoio in funzione degli obiettivi energetici, idraulici e ambientali.
+    source_hash: sha256-28a2af6ae6c5d05e
   BC-3800.30.30:
     name: Operazioni di ciclo del pompaggio
     description: |
       Cicli di pompaggio e generazione degli impianti idroelettrici di pompaggio.
+    source_hash: sha256-e51e284d0332566a
   BC-3800.30.40:
     name: Sorveglianza della sicurezza delle dighe
     description: |
       Sorveglianza del comportamento strutturale e dei drenaggi delle dighe rispetto ai criteri di sicurezza.
+    source_hash: sha256-e53a22c47d909fe6
   BC-3800.40:
     name: Operazioni degli impianti nucleari
     description: |
       Operazione delle centrali nucleari — controllo del reattore, fermate per ricarica del combustibile
       e sorveglianza della sicurezza radiologica nel rispetto delle condizioni della licenza dell'autorità di regolamentazione nucleare.
+    source_hash: sha256-2318f93757dabdcd
   BC-3800.40.10:
     name: Operazioni del reattore
     description: |
       Controllo del reattore, gestione della reattività e operazioni di inseguimento del carico.
+    source_hash: sha256-62ed7c64fabab6b7
   BC-3800.40.20:
     name: Operazioni di fermata per ricarica
     description: |
       Pianificazione ed esecuzione delle fermate per ricarica del combustibile e per manutenzione maggiore.
+    source_hash: sha256-e40bd66460d37134
   BC-3800.40.30:
     name: Sorveglianza radiologica
     description: |
       Sorveglianza dei rilasci radiologici e delle dosi ai lavoratori rispetto ai limiti normativi.
+    source_hash: sha256-33a27c85ae9a982d
   BC-3800.40.40:
     name: Operazioni della piscina del combustibile esausto
     description: |
       Operazione e sorveglianza del raffreddamento e dell'inventario della piscina del combustibile esausto.
+    source_hash: sha256-7dc5ec1dee703ed2
   BC-3800.50:
     name: Operazioni della generazione da rinnovabili
     description: |
       Operazione di asset eolici, fotovoltaici e di altre fonti rinnovabili variabili,
       inclusi curtailment e previsione della produzione.
+    source_hash: sha256-7a126d93a83af5a5
   BC-3800.50.10:
     name: Operazioni dei parchi eolici
     description: |
       Operazione di parchi eolici onshore e offshore e gestione della disponibilità delle turbine.
+    source_hash: sha256-20503c1c1749b539
   BC-3800.50.20:
     name: Operazioni degli impianti fotovoltaici
     description: |
       Operazione di impianti fotovoltaici utility-scale e monitoraggio degli string.
+    source_hash: sha256-1e43e2de2ac6c56d
   BC-3800.50.30:
     name: Operazioni di curtailment delle rinnovabili
     description: |
       Esecuzione delle istruzioni di curtailment dei gestori del sistema sulle fonti rinnovabili variabili.
+    source_hash: sha256-4348e01a1e92183c
   BC-3800.50.40:
     name: Previsione della generazione da rinnovabili
     description: |
       Previsione a breve termine della produzione eolica e fotovoltaica per il dispacciamento e le attività di trading.
+    source_hash: sha256-f7224a7c78696e4d
   BC-3800.60:
     name: Operazioni dello stoccaggio energetico
     description: |
       Operazione di accumulo a batteria su scala di rete e di altri asset di stoccaggio energetico,
       inclusa la gestione dello stato di carica e dei cicli in funzione delle posizioni di mercato e di servizio ancillare.
+    source_hash: sha256-6f5e008392f1c047
   BC-3800.60.10:
     name: Operazioni dell'accumulo a batteria
     description: |
       Operazione e gestione dello stato di carica degli impianti di accumulo a batteria su scala di rete.
+    source_hash: sha256-f160687b95057060
   BC-3800.60.20:
     name: Ottimizzazione dei cicli di stoccaggio
     description: |
       Ottimizzazione dei cicli di carica e scarica rispetto ai valori dell'energia e dei servizi ancillari.
+    source_hash: sha256-544caa2f99aa92a5
   BC-3800.60.30:
     name: Monitoraggio del degrado dello stoccaggio
     description: |
       Monitoraggio dell'efficienza round-trip e della perdita di capacità degli asset a batteria.
+    source_hash: sha256-d903da90993ce962
   BC-3800.70:
     name: Gestione delle prestazioni della generazione
     description: |
       Sorveglianza a livello di parco della disponibilità, del heat rate, del fattore di capacità
       e del tasso di fermata forzata per le diverse tecnologie di generazione.
+    source_hash: sha256-7a033f71b05d575d
   BC-3800.70.10:
     name: Rendicontazione della disponibilità e affidabilità
     description: |
       Rendicontazione allineata GADS della disponibilità equivalente e delle statistiche sulle fermate forzate.
+    source_hash: sha256-532b7591559aab43
   BC-3800.70.20:
     name: Monitoraggio del heat rate e del rendimento
     description: |
       Monitoraggio del heat rate e del rendimento termico rispetto agli obiettivi di progetto e contrattuali.
+    source_hash: sha256-a06285e3df067b6c
   BC-3800.70.30:
     name: Monitoraggio delle prestazioni di capacità
     description: |
       Monitoraggio del fattore di capacità e delle valutazioni di capacità affidabile.
+    source_hash: sha256-41b50e93a01e7fd1
   BC-3800.80:
     name: Gestione del combustibile e delle emissioni
     description: |
       Approvvigionamento del combustibile, gestione delle scorte e dei sottoprodotti della combustione
       per il parco di generazione, inclusa la sorveglianza delle emissioni atmosferiche e della CO2.
+    source_hash: sha256-20e2111309270b6a
   BC-3800.80.10:
     name: Operazioni delle scorte di combustibile
     description: |
       Operazioni di piazzale per carbone, olio e biomassa e controllo delle scorte.
+    source_hash: sha256-2de6a6302b042f4e
   BC-3800.80.20:
     name: Nomine di fornitura del gas
     description: |
       Nomine del gas su gasdotto e bilanciamento per la generazione a gas.
+    source_hash: sha256-e825de39129f5345
   BC-3800.80.30:
     name: Monitoraggio delle emissioni atmosferiche
     description: |
       Monitoraggio continuo delle emissioni di NOx, SOx, polveri e relativa rendicontazione.
+    source_hash: sha256-122c9626b929d9b2
   BC-3800.80.40:
     name: Riconciliazione CO2 e quote di emissione
     description: |
       Riconciliazione delle emissioni di CO2 con le quote restituite nell'ambito dei regimi cap-and-trade.
+    source_hash: sha256-59de888925c48eec
   BC-3800.80.50:
     name: Operazioni di gestione delle ceneri e dei residui di combustione
     description: |
       Gestione e smaltimento di ceneri volanti, ceneri pesanti e residui del desolforatore.
+    source_hash: sha256-7bcd387a32518d5b
 metadata:
   status: draft
   reviewer: pending
