@@ -2,9 +2,23 @@ id: BP-70
 name: Develop and Manage Human Resources
 level: 1
 industry: Cross-Industry
+aliases:
+  - Hire-to-Retire
+  - H2R
+  - People Operations
+  - HR Operations
 description: >-
-  Delivering processes traditionally defined as "human resources". Process groups include those related to developing and maintaining workforce strategy, recruiting employees, developing and counseling employees, managing employee relations, rewarding and retaining employees, redeploying and retiring employees, managing employee information, and managing employee communications.
+  Run the human-resources function end-to-end — workforce strategy,
+  talent acquisition, onboarding, learning and development, performance
+  management, total rewards, employee relations, mobility and offboarding,
+  HR information systems, and employee communications. Anchored on APQC
+  Cross-Industry PCF v8.0 with operational vernacular drawn from SHRM
+  Body of Competency and Knowledge (BoCK) and APQC's Human Capital
+  Management industry PCF.
 framework_refs:
+  - framework: SHRM-BoCK
+    external_id: HR Competency Model
+    version: "2022"
   - framework: APQC-PCF
     external_id: "7.0"
     version: "8.0"
@@ -14,9 +28,19 @@ children:
   - id: BP-70.10
     name: "Develop and Manage Human Resources (HR) Planning, Policies, and Strategies"
     level: 2
+    aliases:
+      - HR Strategy
+      - Workforce Planning
+      - HR Policy
     description: >-
-      Creating strategies for the HR function. Create and implement strategies for managing the work force. Supervise and enhance the strategies, plans, and policies supporting the HR function. Developing models for managing competency levels of the HR of the organization.
+      Set HR direction — workforce strategy, planning, policies, and
+      competency models. Maps to SHRM BoCK Strategy and Organization
+      clusters (Business and HR Strategy, Workforce Management,
+      Structure of the HR Function).
     framework_refs:
+      - framework: SHRM-BoCK
+        external_id: Business and HR Strategy
+        version: "2022"
       - framework: APQC-PCF
         external_id: "7.1"
         version: "8.0"
@@ -26,9 +50,15 @@ children:
       - id: BP-70.10.10
         name: Develop Human Resources Strategy
         level: 3
+        aliases:
+          - HR Strategy
+          - People Strategy
         description: >-
           Creating a long-term plan that strategically aligns human resources with the company's goals. The HR function's focus is to ensure the organization has the necessary talent and capabilities to achieve its objectives, sustain its competitive advantage, and reduce employee turnover.
         framework_refs:
+          - framework: SHRM-BoCK
+            external_id: Business and HR Strategy
+            version: "2022"
           - framework: APQC-PCF
             external_id: "7.1.1"
             version: "8.0"
@@ -39,9 +69,16 @@ children:
       - id: BP-70.10.20
         name: Develop and Implement Workforce Planning, Policies, and Strategies
         level: 3
+        aliases:
+          - Workforce Planning
+          - Strategic Workforce Planning
+          - SWP
         description: >-
           Creating and executing strategies and policies for smooth administration of workforce. Determine and gather skill requirements. Plan the requirements for employee resourcing per unit. Create compensation, succession, HR program, and employee diversity plans. Develop and administer policies for HR. Develop benefits for employees. Create models for work force strategies.
         framework_refs:
+          - framework: SHRM-BoCK
+            external_id: Workforce Management
+            version: "2022"
           - framework: APQC-PCF
             external_id: "7.1.2"
             version: "8.0"
@@ -51,6 +88,9 @@ children:
       - id: BP-70.10.30
         name: Monitor and Update HR Strategies, Plans, and Policies
         level: 3
+        aliases:
+          - HR Policy Review
+          - HR Strategy Refresh
         description: >-
           Supervising the HR and workforce strategy, plans, and policies in order to refurbish them whenever needed. Determine the performance of HR and workforce plans and policies by measuring the objective achievement rate and its contribution to the overall business strategy. Ensure that information about these plans and strategies is effectively communicated to various stakeholders. Incorporate any suggestions by these stakeholders when revising HR and workforce plans and policies.
         framework_refs:
@@ -63,9 +103,15 @@ children:
       - id: BP-70.10.40
         name: Develop Competency Management Models
         level: 3
+        aliases:
+          - Competency Modelling
+          - Skills Taxonomy
         description: >-
           Creating and implementing the tools for managing the competency levels of HR. Design a model for integrating HR planning with business planning. Assess current HR capacity based on the competencies against the capacity needed to achieve the vision, mission, and business goals of the organization. Consider factors such as employee development, career path, compensation policies, and performance management.
         framework_refs:
+          - framework: SHRM-BoCK
+            external_id: Organizational Effectiveness and Development
+            version: "2022"
           - framework: APQC-PCF
             external_id: "7.1.4"
             version: "8.0"
@@ -75,9 +121,16 @@ children:
   - id: BP-70.20
     name: Recruit, Source, and Select Employees
     level: 2
+    aliases:
+      - Talent Acquisition
+      - Recruiting
+      - Hiring
     description: >-
-      Determining and handling employee requirements. Recruit or source the candidates as per the requirements. Screen and select the most appropriate candidates. Take care of the newly hired and re-hired employees. Maintain records of information for all applicants.
+      Attract, evaluate, and hire talent — requisitions, sourcing, screening, selection, offer management, and applicant-tracking. Maps to SHRM BoCK Talent Acquisition.
     framework_refs:
+      - framework: SHRM-BoCK
+        external_id: Talent Acquisition
+        version: "2022"
       - framework: APQC-PCF
         external_id: "7.2"
         version: "8.0"
@@ -87,9 +140,16 @@ children:
       - id: BP-70.20.10
         name: Manage Employee Requisitions
         level: 3
+        aliases:
+          - Job Requisition
+          - Open Role Management
+          - Posting Management
         description: >-
           Handling the requirements for new employees. Create and open job requisitions by clearly defining the job descriptions. Post these requirements internally and externally, and modify them as appropriate. Manage the dates of the whole requisition process.
         framework_refs:
+          - framework: SHRM-BoCK
+            external_id: Talent Acquisition
+            version: "2022"
           - framework: APQC-PCF
             external_id: "7.2.1"
             version: "8.0"
@@ -99,9 +159,16 @@ children:
       - id: BP-70.20.20
         name: Recruit/Source Candidates
         level: 3
+        aliases:
+          - Sourcing
+          - Talent Sourcing
+          - Candidate Pipeline
         description: >-
           Recruiting new candidates for deployment across various functional areas inside the organization. Select methods for sourcing new employees. Manage relationships with third-party agencies. Stage recruitment fairs and drives. Manage employee referral programs.
         framework_refs:
+          - framework: SHRM-BoCK
+            external_id: Talent Acquisition
+            version: "2022"
           - framework: APQC-PCF
             external_id: "7.2.2"
             version: "8.0"
@@ -111,9 +178,16 @@ children:
       - id: BP-70.20.30
         name: Screen and Select Candidates
         level: 3
+        aliases:
+          - Candidate Screening
+          - Interviewing
+          - Assessment
         description: >-
           Evaluating and selecting potential employees through interviews, tests, etc.
         framework_refs:
+          - framework: SHRM-BoCK
+            external_id: Talent Acquisition
+            version: "2022"
           - framework: APQC-PCF
             external_id: "7.2.3"
             version: "8.0"
@@ -123,9 +197,16 @@ children:
       - id: BP-70.20.40
         name: Manage New Hire/re-hire
         level: 3
+        aliases:
+          - Offer Management
+          - Hire Management
+          - Background Check
         description: >-
           Creating and making job offers to the selected candidates. Fairly negotiate the job offers. Agree on terms with the candidate to complete the hiring process.
         framework_refs:
+          - framework: SHRM-BoCK
+            external_id: Talent Acquisition
+            version: "2022"
           - framework: APQC-PCF
             external_id: "7.2.4"
             version: "8.0"
@@ -135,6 +216,9 @@ children:
       - id: BP-70.20.50
         name: Manage Applicant Information
         level: 3
+        aliases:
+          - Applicant Tracking
+          - ATS
         description: >-
           Creating and maintaining a system for managing the information of applicants. Create records for all candidates who apply. Maintain and track information through the use applicant-tracking systems.
         framework_refs:
@@ -145,11 +229,22 @@ children:
           - BC-300
         children: []
   - id: BP-70.30
-    name: Manage Employee Onboarding, Training, and Development
+    name: Onboard, Develop, and Manage Employee Performance
     level: 2
+    aliases:
+      - Manage Employee Onboarding, Training, and Development
+      - Onboarding
+      - Performance Management
+      - Learning and Development
+      - Talent Management
     description: >-
-      Assisting employees in developing their capabilities, and providing them counseling services. Handle the orientation and deployment of the employees. Administer the performance of employees. Administer the development and enhancement of the employees. Provide training and development programs for employees.
+      Bring people into the organisation, develop them, and manage their
+      performance. Maps to SHRM BoCK Learning and Development plus the
+      Performance Management and Talent Management practice areas.
     framework_refs:
+      - framework: SHRM-BoCK
+        external_id: Learning and Development
+        version: "2022"
       - framework: APQC-PCF
         external_id: "7.3"
         version: "8.0"
@@ -159,6 +254,10 @@ children:
       - id: BP-70.30.10
         name: Manage Employee Onboarding
         level: 3
+        aliases:
+          - Onboarding
+          - Induction
+          - New-Hire Orientation
         description: >-
           Creating and maintaining various employee on-boarding programs typically known as induction programs in order to ensure that the new employees are effectively introduced to the organization and its existing employees. Examine and evaluate the performance of these induction programs. Execute these programs on the ground level.
         framework_refs:
@@ -171,9 +270,16 @@ children:
       - id: BP-70.30.20
         name: Manage Employee Performance
         level: 3
+        aliases:
+          - Performance Management
+          - Performance Appraisal
+          - Goals and OKRs
         description: >-
           Defining individual performance objectives. Review performance in order to provide appraisals. Evaluate the efficiency and effectiveness of the current performance program. Update it regularly.
         framework_refs:
+          - framework: SHRM-BoCK
+            external_id: Performance Management
+            version: "2022"
           - framework: APQC-PCF
             external_id: "7.3.2"
             version: "8.0"
@@ -183,9 +289,16 @@ children:
       - id: BP-70.30.30
         name: Manage Employee Career Development
         level: 3
+        aliases:
+          - Career Development
+          - Succession Planning
+          - Talent Mobility
         description: >-
           Establishing employee development guidelines. Lay out career paths and plans for individual employees. Manage the development of their skills to enhance their skills, ability, and knowledge.
         framework_refs:
+          - framework: SHRM-BoCK
+            external_id: Learning and Development
+            version: "2022"
           - framework: APQC-PCF
             external_id: "7.3.3"
             version: "8.0"
@@ -195,9 +308,16 @@ children:
       - id: BP-70.30.40
         name: Develop and Train Employees
         level: 3
+        aliases:
+          - Learning and Development
+          - L&D
+          - Training Programmes
         description: >-
           Establish organizational development needs for employees. Creating a link between employee and organizational development needs.
         framework_refs:
+          - framework: SHRM-BoCK
+            external_id: Learning and Development
+            version: "2022"
           - framework: APQC-PCF
             external_id: "7.3.4"
             version: "8.0"
@@ -207,9 +327,19 @@ children:
   - id: BP-70.40
     name: Manage Employee Relations
     level: 2
+    aliases:
+      - Employee and Labor Relations
+      - ER
+      - Labor Relations
     description: >-
-      Assisting general management in developing, maintaining, and improving employee relationships. This is accomplished through communication, performance management, processing grievances, and/or dispute. Interpret and convey organizational policies.
+      Maintain healthy employee–management and labor relations,
+      grievance resolution, collective bargaining, and regulatory
+      compliance. Maps to SHRM BoCK Employee and Labor Relations and
+      U.S. Employment Law and Regulations.
     framework_refs:
+      - framework: SHRM-BoCK
+        external_id: Employee and Labor Relations
+        version: "2022"
       - framework: APQC-PCF
         external_id: "7.4"
         version: "8.0"
@@ -219,9 +349,15 @@ children:
       - id: BP-70.40.10
         name: Manage Labor Relations
         level: 3
+        aliases:
+          - Labor Relations
+          - Union Relations
         description: >-
           Managing labor relations, the collective bargaining process, and the relationships between the labor and management. Take care of employee grievances.
         framework_refs:
+          - framework: SHRM-BoCK
+            external_id: Employee and Labor Relations
+            version: "2022"
           - framework: APQC-PCF
             external_id: "7.4.1"
             version: "8.0"
@@ -231,6 +367,9 @@ children:
       - id: BP-70.40.20
         name: Manage Collective Bargaining Process
         level: 3
+        aliases:
+          - Collective Bargaining
+          - Union Negotiations
         description: >-
           Managing any negotiations between an employer and a group of employees that determine the conditions of employment. Engage employees to reach agreements in regulating working conditions.
         framework_refs:
@@ -243,6 +382,9 @@ children:
       - id: BP-70.40.30
         name: Manage Labor Management Partnerships
         level: 3
+        aliases:
+          - Works Councils
+          - Labor-Management Partnership
         description: >-
           Handling partnerships between labor and management. Develop a lasting two-way relationship that is beneficial for the labor, management, and the organization.
         framework_refs:
@@ -255,6 +397,9 @@ children:
       - id: BP-70.40.40
         name: Manage Employee Grievances
         level: 3
+        aliases:
+          - Grievance Management
+          - Disciplinary Process
         description: >-
           Taking care or resolving any complaint raised by an employee by procedures provided for in a collective agreement, an employment contract, or by other mechanisms established by an employer.
         framework_refs:
@@ -267,9 +412,15 @@ children:
       - id: BP-70.40.50
         name: Monitor Legal and Regulatory Environment
         level: 3
+        aliases:
+          - Employment Law Compliance
+          - HR Compliance
         description: >-
-          Awareness of the employee legislature that is in place for the organization.  The regulatory environment could include areas, regions, countries, or technologies (around AI, for example).
+          Awareness of the employee legislature that is in place for the organization. The regulatory environment could include areas, regions, countries, or technologies (around AI, for example).
         framework_refs:
+          - framework: SHRM-BoCK
+            external_id: U.S. Employment Law and Regulations
+            version: "2022"
           - framework: APQC-PCF
             external_id: "7.4.5"
             version: "8.0"
@@ -281,9 +432,18 @@ children:
   - id: BP-70.50
     name: Reward and Retain Employees
     level: 2
+    aliases:
+      - Total Rewards
+      - Compensation and Benefits
+      - Comp and Benefits
     description: >-
-      Creating frameworks for rewarding and recognizing employees with the objective of retaining them. Create and manage programs for provision of rewards, recognition, and motivation. Manage and administer the benefits for employees. Help assist and retain employees. Administer payroll to employees.
+      Design and run the total-rewards programme — base pay, variable
+      pay, recognition, benefits, retention, and payroll. Maps to SHRM
+      BoCK Total Rewards.
     framework_refs:
+      - framework: SHRM-BoCK
+        external_id: Total Rewards
+        version: "2022"
       - framework: APQC-PCF
         external_id: "7.5"
         version: "8.0"
@@ -293,9 +453,17 @@ children:
       - id: BP-70.50.10
         name: Develop and Manage Reward, Recognition, and Motivation Programs
         level: 3
+        aliases:
+          - Compensation Design
+          - Variable Pay
+          - Sales Compensation
+          - Bonus Programmes
         description: >-
           Developing a salary/compensation structure and plan; developing a benefits and reward plan; develop commission plan; performing competitive analyses of benefits and rewards; identifying compensation requirements based on compensation, benefits, and HR policies; administering compensation, commission, and rewards to employees; and rewarding and motivating employees.
         framework_refs:
+          - framework: SHRM-BoCK
+            external_id: Total Rewards
+            version: "2022"
           - framework: APQC-PCF
             external_id: "7.5.1"
             version: "8.0"
@@ -305,9 +473,15 @@ children:
       - id: BP-70.50.20
         name: Manage and Administer Benefits
         level: 3
+        aliases:
+          - Benefits Administration
+          - Open Enrollment
         description: >-
           Managing and ensuring benefits enrollment by the employees. Process any benefit claims made by the employees. Balance the estimated amount and entitled amount of benefits.
         framework_refs:
+          - framework: SHRM-BoCK
+            external_id: Total Rewards
+            version: "2022"
           - framework: APQC-PCF
             external_id: "7.5.2"
             version: "8.0"
@@ -317,6 +491,11 @@ children:
       - id: BP-70.50.30
         name: Manage Employee Assistance and Retention
         level: 3
+        aliases:
+          - Employee Assistance Programme
+          - EAP
+          - Retention Management
+          - Wellbeing
         description: >-
           Managing activities centered around delivering programs to support work/life balance for employees; developing family support systems; reviewing retention and motivation indicators; and reviewing compensation plans.
         framework_refs:
@@ -329,6 +508,9 @@ children:
       - id: BP-70.50.40
         name: Administer Payroll
         level: 3
+        aliases:
+          - Payroll Administration
+          - HR Side of Payroll
         description: >-
           Managing the sum of all financial records of salaries for an employee, including wages, bonuses, and deductions. Use a payroll management system to deal with the financial aspects of employees' salaries, allowances, deductions, gross pay, net pay, etc. Generate pay slips for a specific period.
         framework_refs:
@@ -342,6 +524,9 @@ children:
       - id: BP-70.50.50
         name: Manage/Collect Employee Suggestions and Perform Employee Research
         level: 3
+        aliases:
+          - Employee Voice
+          - Employee Research
         description: >-
           Procuring and handling suggestions from employees, and performing research on employees. Manage and analyze the programs that help the organization to tap into employee ideas for improving the organization's processes and/or products. Use surveys, focus groups, and other data-gathering methods to find out the attitudes, opinions, and feelings of members of an organization.
         framework_refs:
@@ -353,11 +538,19 @@ children:
           - BC-810
         children: []
   - id: BP-70.60
-    name: Redeploy and Retire Employees
+    name: Manage Employee Mobility and Offboarding
     level: 2
+    aliases:
+      - Redeploy and Retire Employees
+      - Internal Mobility
+      - Offboarding
+      - Termination Management
     description: >-
-      Managing employee mobility and retirement. Manage the process of employee promotion and demotion. Administer separation, retirement, and leaves of absence. Outplace employees. Deploy personnel. Relocate employees in order to manage assignments.
+      Move people through promotions, transfers, relocations, separations, and retirements. Maps to SHRM BoCK Workforce Management.
     framework_refs:
+      - framework: SHRM-BoCK
+        external_id: Workforce Management
+        version: "2022"
       - framework: APQC-PCF
         external_id: "7.6"
         version: "8.0"
@@ -367,6 +560,9 @@ children:
       - id: BP-70.60.10
         name: Manage Promotion and Demotion Process
         level: 3
+        aliases:
+          - Promotions
+          - Internal Transfers
         description: >-
           Administering the process of promoting and demoting employees. Design a system for advancing or demoting an employee's rank or position. Leverage techniques such as horizontal promotion, vertical promotion, dry promotion, and involuntary/voluntary demotion.
         framework_refs:
@@ -379,6 +575,11 @@ children:
       - id: BP-70.60.20
         name: Manage Separation
         level: 3
+        aliases:
+          - Offboarding
+          - Termination
+          - Resignation Processing
+          - Layoff Management
         description: >-
           Managing the process of employee separation, including leaves of absence, resignations, discharges, and layoffs. Inform the employee of the termination. Complete paperwork for continuation of benefits. Enter employment status change into system.
         framework_refs:
@@ -391,6 +592,10 @@ children:
       - id: BP-70.60.30
         name: Relocate Employees and Manage Assignments
         level: 3
+        aliases:
+          - Global Mobility
+          - Expatriate Management
+          - Relocation
         description: >-
           Managing the relocation of employees in order to carry out assignments. Manage internal business processes to transfer employees, their families, and/or entire departments of a business to a new location.
         framework_refs:
@@ -403,9 +608,17 @@ children:
   - id: BP-70.70
     name: Manage Employee Information and Analytics
     level: 2
+    aliases:
+      - HRIS
+      - HCM
+      - People Analytics
+      - Workforce Analytics
     description: >-
-      Managing the employee reporting processes, employee inquiry process, employee information and data, and the HR information systems. Create and administer the employee metrics. Develop and handle the time and attendance systems. Refurbish the indicators for employee retention and motivation.
+      Operate the HRIS/HCM platform and run people analytics — reporting, employee data, time and attendance, and workforce-analytics models. Maps to SHRM BoCK Technology Management.
     framework_refs:
+      - framework: SHRM-BoCK
+        external_id: Technology Management
+        version: "2022"
       - framework: APQC-PCF
         external_id: "7.7"
         version: "8.0"
@@ -415,6 +628,9 @@ children:
       - id: BP-70.70.10
         name: Manage Reporting Processes
         level: 3
+        aliases:
+          - HR Reporting
+          - Compliance Reporting
         description: >-
           Providing information and reports regarding employees to management.
         framework_refs:
@@ -427,6 +643,10 @@ children:
       - id: BP-70.70.20
         name: Manage Employee Inquiry Process
         level: 3
+        aliases:
+          - HR Service Desk
+          - Employee Helpdesk
+          - Tier-1 HR Support
         description: >-
           Handling instances where an employee believes that he/she has been inappropriately treated or he/she desires clarification. Encourage employees to inquire when needed. Record and clarify the issues for which the enquiry has been made.
         framework_refs:
@@ -439,6 +659,9 @@ children:
       - id: BP-70.70.30
         name: Manage and Maintain Employee Data
         level: 3
+        aliases:
+          - Employee Master Data
+          - HR Data Management
         description: >-
           Capturing and updating employee information and data and information on the employees.
         framework_refs:
@@ -451,9 +674,17 @@ children:
       - id: BP-70.70.40
         name: Manage Human Resource Information Systems
         level: 3
+        aliases:
+          - HRIS
+          - HCM Platform
+          - Workday Operations
+          - SAP SuccessFactors Operations
         description: >-
           Administering and maintaining HR information systems that take care of activities related to HR, accounting, management, and payroll.
         framework_refs:
+          - framework: SHRM-BoCK
+            external_id: Technology Management
+            version: "2022"
           - framework: APQC-PCF
             external_id: "7.7.4"
             version: "8.0"
@@ -463,6 +694,9 @@ children:
       - id: BP-70.70.50
         name: Develop and Manage Employee Measures
         level: 3
+        aliases:
+          - HR Metrics
+          - HR KPI Definition
         description: >-
           Creating and maintaining performance metrics for employees. Create and manage a strategic system of data and statistics to accurately gauge each employee's information. Consider productivity metrics, efficiency metrics, training metrics, etc.
         framework_refs:
@@ -475,6 +709,9 @@ children:
       - id: BP-70.70.60
         name: Develop and Manage Time and Attendance Systems
         level: 3
+        aliases:
+          - Time and Attendance
+          - Timekeeping Systems
         description: >-
           Developing and maintaining systems for managing the time and attendance of employees. Routinely upgrade the process and systems that track when employees start and stop work, the department where the work is performed, attendance in addition to tracking meals and breaks, the type of work performed, and the number of items produced.
         framework_refs:
@@ -487,6 +724,9 @@ children:
       - id: BP-70.70.70
         name: Develop Workforce Analytics
         level: 3
+        aliases:
+          - People Analytics Modelling
+          - Talent Analytics Design
         description: >-
           Understand, develop, and gather workforce data in support of stakeholder requirements.
         framework_refs:
@@ -499,6 +739,9 @@ children:
       - id: BP-70.70.80
         name: Implement Workforce Analytics
         level: 3
+        aliases:
+          - People Analytics Operations
+          - Workforce Insights
         description: >-
           Transform, develop, and communicate workforce data into analytics in support of organizational requirements.
         framework_refs:
@@ -511,9 +754,15 @@ children:
   - id: BP-70.80
     name: Manage Employee Communication
     level: 2
+    aliases:
+      - Internal Communications
+      - Employee Engagement
     description: >-
-      Creating an effective plan that initiates and promotes communication and engagement among the employees and between employees and management.
+      Plan, deliver, and measure communications to employees — internal comms, engagement surveys, and change-communication. Maps to SHRM BoCK Employee Engagement and Retention.
     framework_refs:
+      - framework: SHRM-BoCK
+        external_id: Employee Engagement and Retention
+        version: "2022"
       - framework: APQC-PCF
         external_id: "7.8"
         version: "8.0"
@@ -524,6 +773,9 @@ children:
       - id: BP-70.80.10
         name: Develop Employee Communication Plan
         level: 3
+        aliases:
+          - Internal Communications Plan
+          - Change Communication Plan
         description: >-
           Creating a plan for managing communication among employees. Inform employees of direction. Counter resistance with change management approaches. Seek specific areas of input to the decision-making process. Seek varying degrees of involvement and co-creation.
         framework_refs:
@@ -537,9 +789,15 @@ children:
       - id: BP-70.80.20
         name: Conduct Employee Engagement Surveys
         level: 3
+        aliases:
+          - Engagement Survey
+          - Pulse Survey
         description: >-
           Questioning employees to ascertain overall workplace satisfaction.
         framework_refs:
+          - framework: SHRM-BoCK
+            external_id: Employee Engagement and Retention
+            version: "2022"
           - framework: APQC-PCF
             external_id: "7.8.2"
             version: "8.0"
@@ -549,6 +807,9 @@ children:
       - id: BP-70.80.30
         name: Deliver Employee Communications
         level: 3
+        aliases:
+          - Internal Comms Delivery
+          - Town Halls
         description: >-
           Implementing the communication plan for employees. Initiate dialogues and engagement by monitoring the exchange of ideas and opinions, the development of personal relationships, etc.
         framework_refs:
