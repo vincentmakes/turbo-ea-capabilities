@@ -1,0 +1,55 @@
+id: BP-150
+name: Operate Insurance Underwriting, Policy, and Claims
+level: 1
+industry: Insurance
+description: >-
+  Run insurance-specific operations: product filing, underwriting, policy administration, claims handling, reinsurance, and actuarial reserving.
+framework_refs:
+  - framework: BIAN
+    external_id: "Insurance reference (where applicable)"
+realizes_capability_ids:
+  - BC-100
+children:
+  - id: BP-150.10
+    name: Manage Product Filing and Approval
+    level: 2
+    description: >-
+      Develop, file, and obtain regulatory approval for insurance products and rate plans.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-150.20
+    name: Manage Underwriting Operations
+    level: 2
+    description: >-
+      Risk-assess and price insurance applications; bind cover.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-150.30
+    name: Manage Policy Administration
+    level: 2
+    description: >-
+      Administer policies across the lifecycle: issuance, endorsements, renewals, cancellations.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-150.40
+    name: Manage Claims Operations
+    level: 2
+    description: >-
+      Receive, investigate, adjudicate, and pay insurance claims, including fraud and recovery.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-150.50
+    name: Manage Reinsurance Operations
+    level: 2
+    description: >-
+      Cede risk to reinsurers; administer reinsurance treaties and recoveries.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-150.60
+    name: Manage Actuarial Reserving and Capital
+    level: 2
+    description: >-
+      Calculate insurance reserves, capital requirements, and produce statutory actuarial reports.
+    realizes_capability_ids:
+      - BC-200
+    children: []
