@@ -1435,7 +1435,9 @@ value_streams:
     stage_name: Concept Design
     capability_ids:
     - BC-3400
-    process_ids: []
+    process_ids:
+    - BP-290.10
+    - BP-20.30
     industry_variant: Automotive
     notes: Vehicle concept and architecture
   - id: VS-130.20
@@ -1443,7 +1445,9 @@ value_streams:
     stage_name: Concept Design
     capability_ids:
     - BC-1900
-    process_ids: []
+    process_ids:
+    - BP-460.10
+    - BP-20.30
     industry_variant: Electrical Components & Equipment
     notes: Concept-stage circuit & topology design
   - id: VS-130.30
@@ -1451,7 +1455,9 @@ value_streams:
     stage_name: Concept Design
     capability_ids:
     - BC-1120
-    process_ids: []
+    process_ids:
+    - BP-440.20
+    - BP-20.30
     industry_variant: Engineering Services
     notes: Conceptual design
   - id: VS-130.40
@@ -1460,7 +1466,9 @@ value_streams:
     capability_ids:
     - BC-2000
     - BC-2010
-    process_ids: []
+    process_ids:
+    - BP-450.10
+    - BP-20.30
     industry_variant: HVAC & Building Automation Systems
     notes: HVAC equipment concept-stage cycle & topology; BAS controller & supervisor concept
   - id: VS-130.50
@@ -1468,14 +1476,17 @@ value_streams:
     stage_name: FEED & Specification
     capability_ids:
     - BC-820
-    process_ids: []
+    process_ids:
+    - BP-20.30
     notes: Product specification
   - id: VS-130.60
     stage_order: 2
     stage_name: FEED & Specification
     capability_ids:
     - BC-3400
-    process_ids: []
+    process_ids:
+    - BP-290.10
+    - BP-20.30
     industry_variant: Automotive
     notes: Vehicle attribute and subsystem specification
   - id: VS-130.70
@@ -1483,7 +1494,9 @@ value_streams:
     stage_name: FEED & Specification
     capability_ids:
     - BC-1900
-    process_ids: []
+    process_ids:
+    - BP-460.10
+    - BP-20.30
     industry_variant: Electrical Components & Equipment
     notes: Front-end electrical engineering
   - id: VS-130.80
@@ -1491,7 +1504,8 @@ value_streams:
     stage_name: FEED & Specification
     capability_ids:
     - BC-1120
-    process_ids: []
+    process_ids:
+    - BP-440.20
     industry_variant: Engineering Services
     notes: Front-end engineering design
   - id: VS-130.90
@@ -1500,7 +1514,8 @@ value_streams:
     capability_ids:
     - BC-2000
     - BC-2020
-    process_ids: []
+    process_ids:
+    - BP-450.10
     industry_variant: HVAC & Building Automation Systems
     notes: HVAC equipment FEED; Project-level HVAC system spec & sizing
   - id: VS-130.100
@@ -1508,7 +1523,9 @@ value_streams:
     stage_name: Detailed Design
     capability_ids:
     - BC-3400
-    process_ids: []
+    process_ids:
+    - BP-290.10
+    - BP-20.30
     industry_variant: Automotive
     notes: Multi-domain vehicle engineering
   - id: VS-130.110
@@ -1516,7 +1533,8 @@ value_streams:
     stage_name: Detailed Design
     capability_ids:
     - BC-1900
-    process_ids: []
+    process_ids:
+    - BP-460.10
     industry_variant: Electrical Components & Equipment
     notes: Detailed electrical/electronic design
   - id: VS-130.120
@@ -1525,7 +1543,9 @@ value_streams:
     capability_ids:
     - BC-1100
     - BC-1120
-    process_ids: []
+    process_ids:
+    - BP-440.20
+    - BP-440.50
     industry_variant: Engineering Services
     notes: Multi-discipline engineering; Detailed design
   - id: VS-130.130
@@ -1535,7 +1555,8 @@ value_streams:
     - BC-2000
     - BC-2010
     - BC-2020
-    process_ids: []
+    process_ids:
+    - BP-450.10
     industry_variant: HVAC & Building Automation Systems
     notes: Detailed HVAC equipment engineering; Detailed BAS product engineering; Project-level integration design
   - id: VS-130.140
@@ -1544,7 +1565,9 @@ value_streams:
     capability_ids:
     - BC-3400
     - BC-3420
-    process_ids: []
+    process_ids:
+    - BP-290.10
+    - BP-20.30
     industry_variant: Automotive
     notes: ISO 26262 / 21434 / 21448 reviews; Type-approval readiness review
   - id: VS-130.150
@@ -1552,7 +1575,9 @@ value_streams:
     stage_name: Design Review
     capability_ids:
     - BC-1770
-    process_ids: []
+    process_ids:
+    - BP-230.30
+    - BP-230.40
     industry_variant: Defense
     notes: Defense V&V
   - id: VS-130.160
@@ -1562,7 +1587,9 @@ value_streams:
     - BC-1910
     - BC-1920
     - BC-1970
-    process_ids: []
+    process_ids:
+    - BP-460.10
+    - BP-460.20
     industry_variant: Electrical Components & Equipment
     notes: Certification readiness review; Type-test sign-off on first articles; Safety case & FMEA review
   - id: VS-130.170
@@ -1570,7 +1597,8 @@ value_streams:
     stage_name: Design Review
     capability_ids:
     - BC-1120
-    process_ids: []
+    process_ids:
+    - BP-440.20
     industry_variant: Engineering Services
     notes: Verification & validation
   - id: VS-130.180
@@ -1580,7 +1608,8 @@ value_streams:
     - BC-2000
     - BC-2010
     - BC-2030
-    process_ids: []
+    process_ids:
+    - BP-450.10
     industry_variant: HVAC & Building Automation Systems
     notes: HVAC equipment design verification; BAS conformance & interoperability review; Performance & safety listing readiness
   - id: VS-130.190
@@ -1588,14 +1617,17 @@ value_streams:
     stage_name: Manufacturing Engineering
     capability_ids:
     - BC-820
-    process_ids: []
+    process_ids:
+    - BP-20.50
     notes: Configuration / variants
   - id: VS-130.200
     stage_order: 5
     stage_name: Manufacturing Engineering
     capability_ids:
     - BC-3410
-    process_ids: []
+    process_ids:
+    - BP-290.10
+    - BP-470.10
     industry_variant: Automotive
     notes: Programme governance over industrialisation
   - id: VS-130.210
@@ -1603,7 +1635,9 @@ value_streams:
     stage_name: Manufacturing Engineering
     capability_ids:
     - BC-1930
-    process_ids: []
+    process_ids:
+    - BP-460.10
+    - BP-470.10
     industry_variant: Electrical Components & Equipment
     notes: Preferred parts feed manufacturing engineering
   - id: VS-130.220
@@ -1611,7 +1645,9 @@ value_streams:
     stage_name: Manufacturing Engineering
     capability_ids:
     - BC-1020
-    process_ids: []
+    process_ids:
+    - BP-470.10
+    - BP-470.20
     industry_variant: Manufacturing
     notes: Process design / industrialisation
   - id: VS-130.230
@@ -1619,7 +1655,9 @@ value_streams:
     stage_name: Production Ramp-Up
     capability_ids:
     - BC-3410
-    process_ids: []
+    process_ids:
+    - BP-290.10
+    - BP-470.10
     industry_variant: Automotive
     notes: SOP readiness and ramp coordination
   - id: VS-130.240
@@ -1628,7 +1666,10 @@ value_streams:
     capability_ids:
     - BC-1000
     - BC-1010
-    process_ids: []
+    process_ids:
+    - BP-470.10
+    - BP-470.20
+    - BP-20.50
     industry_variant: Manufacturing
     notes: Production planning; Shop floor execution
   - id: VS-130.250
@@ -1636,14 +1677,18 @@ value_streams:
     stage_name: Quality & Yield Stabilisation
     capability_ids:
     - BC-720
-    process_ids: []
+    process_ids:
+    - BP-470.30
+    - BP-20.30
     notes: QC ramp-up
   - id: VS-130.260
     stage_order: 7
     stage_name: Quality & Yield Stabilisation
     capability_ids:
     - BC-1000
-    process_ids: []
+    process_ids:
+    - BP-470.30
+    - BP-470.10
     industry_variant: Manufacturing
     notes: Production performance
   - id: VS-130.270
@@ -1652,7 +1697,9 @@ value_streams:
     capability_ids:
     - BC-3410
     - BC-3420
-    process_ids: []
+    process_ids:
+    - BP-290.10
+    - BP-20.30
     industry_variant: Automotive
     notes: Vehicle programme configuration baseline at SOP; Type-approved configuration baseline
   - id: VS-130.280
@@ -1660,7 +1707,8 @@ value_streams:
     stage_name: Configuration Baseline
     capability_ids:
     - BC-1770
-    process_ids: []
+    process_ids:
+    - BP-230.40
     industry_variant: Defense
     notes: Configuration management
   - id: VS-130.290
@@ -1668,7 +1716,8 @@ value_streams:
     stage_name: Configuration Baseline
     capability_ids:
     - BC-1940
-    process_ids: []
+    process_ids:
+    - BP-460.30
     industry_variant: Electrical Components & Equipment
     notes: Saleable variant baseline
   - id: VS-130.300
@@ -1676,7 +1725,8 @@ value_streams:
     stage_name: Configuration Baseline
     capability_ids:
     - BC-1130
-    process_ids: []
+    process_ids:
+    - BP-440.50
     industry_variant: Engineering Services
     notes: Engineering document control
 - id: VS-140
