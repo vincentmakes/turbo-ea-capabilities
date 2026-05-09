@@ -3,10 +3,10 @@ name: Operate Transportation and Logistics Services
 level: 1
 industry: Transportation & Logistics
 description: >-
-  Operate transportation and logistics services across modes: network planning, capacity management, freight movement, last-mile delivery, returns/reverse logistics, freight forwarding and customs.
+  Operate transportation and logistics services across modes: network planning, freight movement, last-mile delivery, returns/reverse logistics, freight forwarding and customs.
 framework_refs:
   - framework: APQC-PCF
-    external_id: "SCOR v14.0 + GS1 Global Logistics + UN/CEFACT MMT + IATA/IMO/AAR operating standards"
+    external_id: "SCOR v14.0 + GS1 Global Logistics + UN/CEFACT MMT + IATA/IMO/AAR"
 realizes_capability_ids:
   - BC-520
 children:
@@ -14,40 +14,131 @@ children:
     name: Plan Transport Network and Capacity
     level: 2
     description: >-
-      Design transport network, asset, and capacity plans; align with demand forecasts and service-level commitments.
+      Design transport network, asset, and capacity plans.
     realizes_capability_ids:
       - BC-520
-    children: []
+    children:
+      - id: BP-410.10.10
+        name: Plan Network and Routing
+        level: 3
+        description: >-
+          Plan transport network and routing.
+        realizes_capability_ids:
+          - BC-520
+        children: []
+      - id: BP-410.10.20
+        name: Plan Capacity and Asset Utilisation
+        level: 3
+        description: >-
+          Plan asset capacity and utilisation.
+        realizes_capability_ids:
+          - BC-520
+        children: []
   - id: BP-410.20
     name: Operate Freight and Passenger Movement
     level: 2
     description: >-
-      Execute movement across modes (road, rail, air, marine, intermodal); manage dispatch, tracking, and exception handling.
+      Execute movement across modes; manage dispatch, tracking, exceptions.
     realizes_capability_ids:
       - BC-520
-    children: []
+    children:
+      - id: BP-410.20.10
+        name: Dispatch and Track Movements
+        level: 3
+        description: >-
+          Dispatch shipments; track in transit.
+        realizes_capability_ids:
+          - BC-520
+        children: []
+      - id: BP-410.20.20
+        name: Operate Multi-Modal Carriage
+        level: 3
+        description: >-
+          Execute carriage across road/rail/air/marine modes.
+        realizes_capability_ids:
+          - BC-520
+        children: []
+      - id: BP-410.20.30
+        name: Manage Exceptions and Service Recovery
+        level: 3
+        description: >-
+          Manage exceptions and service recovery.
+        realizes_capability_ids:
+          - BC-430
+          - BC-520
+        children: []
   - id: BP-410.30
     name: Manage Last-Mile and Customer Delivery
     level: 2
     description: >-
-      Plan and execute last-mile delivery; manage delivery exceptions and customer-facing communication.
+      Plan and execute last-mile delivery.
     realizes_capability_ids:
       - BC-430
       - BC-520
-    children: []
+    children:
+      - id: BP-410.30.10
+        name: Plan Last-Mile Routes
+        level: 3
+        description: >-
+          Plan last-mile routes and delivery slots.
+        realizes_capability_ids:
+          - BC-520
+        children: []
+      - id: BP-410.30.20
+        name: Execute Last-Mile Delivery
+        level: 3
+        description: >-
+          Execute last-mile delivery to consignees.
+        realizes_capability_ids:
+          - BC-430
+          - BC-520
+        children: []
   - id: BP-410.40
     name: Manage Freight Forwarding and Customs
     level: 2
     description: >-
-      Operate freight forwarding, multi-modal coordination, and customs/trade-compliance for cross-border movements.
+      Operate freight forwarding, multi-modal coordination, customs/trade-compliance.
     realizes_capability_ids:
       - BC-130
-    children: []
+    children:
+      - id: BP-410.40.10
+        name: Coordinate Multi-Modal Forwarding
+        level: 3
+        description: >-
+          Coordinate multi-modal forwarding for cross-border movements.
+        realizes_capability_ids:
+          - BC-520
+        children: []
+      - id: BP-410.40.20
+        name: Manage Customs and Trade Compliance
+        level: 3
+        description: >-
+          Manage customs entries and trade-compliance.
+        realizes_capability_ids:
+          - BC-130
+        children: []
   - id: BP-410.50
     name: Manage Returns and Reverse Logistics
     level: 2
     description: >-
-      Operate returns and reverse-logistics flows for repairs, recalls, and disposal.
+      Operate returns and reverse-logistics flows.
     realizes_capability_ids:
       - BC-520
-    children: []
+    children:
+      - id: BP-410.50.10
+        name: Process Returns Authorisations
+        level: 3
+        description: >-
+          Process returns authorisations from customers.
+        realizes_capability_ids:
+          - BC-430
+          - BC-520
+        children: []
+      - id: BP-410.50.20
+        name: Operate Reverse-Logistics Flows
+        level: 3
+        description: >-
+          Operate reverse-logistics for repairs, recalls, disposal.
+        realizes_capability_ids:
+          - BC-520
+        children: []
