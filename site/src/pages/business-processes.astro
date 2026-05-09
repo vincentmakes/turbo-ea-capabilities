@@ -1,26 +1,25 @@
 ---
 import Base from "../layouts/Base.astro";
-import { bpFlat, bp1List } from "../data/load.ts";
+import HeroTessellation from "../components/HeroTessellation.astro";
+import CatalogBrowser from "../components/catalog/CatalogBrowser.tsx";
+import { bpFlat, valueStreams, version } from "../data/load.ts";
 
-const bp1s = bp1List();
-const totalProcesses = bpFlat.length;
+const totalProcesses = version.process_count ?? bpFlat.length;
 ---
 
 <Base
   title="Business Processes"
-  description="Browse the business-process catalogue. Processes describe HOW work is done — verb-phrased activities anchored on APQC PCF's 4-level hierarchy. Orthogonal to capabilities (BC) and value streams (VS)."
+  description="Browse, filter, and export the open business-process catalog. Verb-phrased activities anchored on APQC PCF's 4-level hierarchy."
+  navTransparent={true}
 >
-  <main class="main">
-    <div class="section-header">
-      <h2>Business Processes</h2>
-      <p class="section-sub">
-        Verb-phrased activities anchored on APQC PCF's Category → Process Group → Process → Activity
-        hierarchy. {totalProcesses} {totalProcesses === 1 ? "process node" : "process nodes"} across
-        {bp1s.length} {bp1s.length === 1 ? "category" : "categories"}.
-      </p>
-    </div>
+  <HeroTessellation
+    title="Business Processes"
+    tagline={`${totalProcesses} ${totalProcesses === 1 ? "process node" : "process nodes"}`}
+    description={`Catalog ${version.catalogue_version} · schema v${version.schema_version}`}
+  />
 
-    {bp1s.length === 0 ? (
+  <main class="main">
+    {bpFlat.length === 0 ? (
       <div class="bp-empty">
         <p>
           The business-process catalogue is currently scaffolded but empty —
@@ -34,28 +33,12 @@ const totalProcesses = bpFlat.length;
         </p>
       </div>
     ) : (
-      <div class="bp-grid">
-        {bp1s.map(({ slug, root }) => (
-          <a class="bp-card" href={`/bp1/${slug}`}>
-            <h3 class="bp-card-title">
-              <span class="cap-id">{root.id}</span>
-              {root.name}
-            </h3>
-            {root.description && <p class="bp-card-desc">{root.description}</p>}
-            {root.industry && <span class="cap-industry">{root.industry}</span>}
-          </a>
-        ))}
-      </div>
+      <CatalogBrowser kind="process" data={bpFlat} valueStreams={valueStreams} client:load />
     )}
   </main>
 </Base>
 
 <style>
-  .section-sub {
-    margin: 8px 0 0;
-    color: var(--color-muted);
-    max-width: 720px;
-  }
   .bp-empty {
     padding: 24px;
     border: 1px dashed var(--color-border);
@@ -63,41 +46,12 @@ const totalProcesses = bpFlat.length;
     background: var(--color-white);
     color: var(--color-muted);
     max-width: 720px;
+    margin: 24px 0;
   }
   .bp-empty code {
     background: var(--color-pale-blue);
     padding: 1px 5px;
     border-radius: 3px;
     font-size: 12px;
-  }
-  .bp-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 16px;
-    margin-top: 16px;
-  }
-  .bp-card {
-    display: block;
-    padding: 16px;
-    background: var(--color-white);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-sm, 8px);
-    text-decoration: none;
-    color: inherit;
-  }
-  .bp-card:hover {
-    border-color: var(--color-light-blue);
-  }
-  .bp-card-title {
-    margin: 0 0 8px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 16px;
-  }
-  .bp-card-desc {
-    margin: 0 0 8px;
-    color: var(--color-muted);
-    font-size: 13px;
   }
 </style>

@@ -1,0 +1,22 @@
+---
+import Base from "../layouts/Base.astro";
+import HeroTessellation from "../components/HeroTessellation.astro";
+import CatalogueBrowser from "../components/CatalogueBrowser.tsx";
+import { flat, valueStreams, version } from "../data/load.ts";
+---
+
+<Base
+  title="Capabilities"
+  description="Browse, filter, and export the open Business Capability catalog."
+  navTransparent={true}
+>
+  <HeroTessellation
+    title="Business Capabilities"
+    tagline={`${version.node_count} capabilities`}
+    description={`Catalog ${version.catalogue_version} · schema v${version.schema_version}`}
+  />
+
+  <main class="main">
+    <CatalogueBrowser data={flat} valueStreams={valueStreams} client:load />
+  </main>
+</Base>
