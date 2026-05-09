@@ -42,6 +42,21 @@ const SCHEMA_VERSION = 2;
 
 function getCommitCount(): number | undefined {
   try {
+    // Many CI / hosted-deploy environments (Cloudflare Pages, Vercel, …)
+    // shallow-clone the repo, which makes `git rev-list --count HEAD` return
+    // a tiny number and produces nonsense versions like `2026.5.9.1`. Try to
+    // unshallow first; fall through quietly if there's no network or the
+    // remote isn't reachable.
+    const isShallow = execSync("git rev-parse --is-shallow-repository 2>/dev/null", {
+      encoding: "utf8",
+    }).trim() === "true";
+    if (isShallow) {
+      try {
+        execSync("git fetch --unshallow --quiet 2>/dev/null", { stdio: "ignore" });
+      } catch {
+        /* no network or restricted; fall through with whatever count we have */
+      }
+    }
     const n = execSync("git rev-list --count HEAD 2>/dev/null", {
       encoding: "utf8",
     }).trim();
