@@ -4709,49 +4709,58 @@ value_streams:
     stage_name: Listing Pursuit & Win
     capability_ids:
     - BC-4960
-    process_ids: []
+    process_ids:
+    - BP-330.10
     notes: Listing pitch, CMA, and win of the listing mandate
   - id: VS-340.20
     stage_order: 2
     stage_name: Listing Setup & Marketing
     capability_ids:
     - BC-4960
-    process_ids: []
+    process_ids:
+    - BP-330.10
     notes: Listing agreement, MLS capture, media production, and syndication
   - id: VS-340.30
     stage_order: 3
     stage_name: Showing & Engagement
     capability_ids:
     - BC-4960
-    process_ids: []
+    process_ids:
+    - BP-330.10
     notes: Showings, open houses, and prospect engagement
   - id: VS-340.40
     stage_order: 4
     stage_name: Offer & Negotiation
     capability_ids:
     - BC-4960
-    process_ids: []
+    process_ids:
+    - BP-330.10
+    - BP-330.20
     notes: Offer drafting, counter-offers, and multiple-offer handling
   - id: VS-340.50
     stage_order: 5
     stage_name: Contingency & Closing Coordination
     capability_ids:
     - BC-4960
-    process_ids: []
+    process_ids:
+    - BP-330.20
     notes: Contingency tracking and coordination with escrow / conveyancing
   - id: VS-340.60
     stage_order: 6
     stage_name: Closing Execution
     capability_ids:
     - BC-4960
-    process_ids: []
+    process_ids:
+    - BP-330.20
     notes: Closing-day coordination and key handover
   - id: VS-340.70
     stage_order: 7
     stage_name: Commission Settlement
     capability_ids:
     - BC-4960
-    process_ids: []
+    process_ids:
+    - BP-330.10
+    - BP-90.30
     notes: Cooperating-broker settlement, commission disbursement, and referral fees
 - id: VS-350
   name: Maintenance-Request-to-Closure
@@ -4992,49 +5001,61 @@ value_streams:
     stage_name: Mandate & Strategy Definition
     capability_ids:
     - BC-4910
-    process_ids: []
+    process_ids:
+    - BP-330.30
+    - BP-320.10
     notes: Fund / mandate definition and investment strategy
   - id: VS-360.20
     stage_order: 2
     stage_name: Vehicle Formation
     capability_ids:
     - BC-4910
-    process_ids: []
+    process_ids:
+    - BP-330.30
     notes: Fund structuring, vehicle setup, and tax-efficient holding
   - id: VS-360.30
     stage_order: 3
     stage_name: Capital Raising
     capability_ids:
     - BC-4910
-    process_ids: []
+    process_ids:
+    - BP-330.30
+    - BP-120.10
     notes: Investor targeting, subscription, and fund closing
   - id: VS-360.40
     stage_order: 4
     stage_name: Capital Deployment
     capability_ids:
     - BC-4910
-    process_ids: []
+    process_ids:
+    - BP-330.30
+    - BP-330.20
     notes: Pipeline pacing, allocation across vehicles, and capital calls
   - id: VS-360.50
     stage_order: 5
     stage_name: NAV & Performance Management
     capability_ids:
     - BC-4910
-    process_ids: []
+    process_ids:
+    - BP-330.30
+    - BP-90.30
     notes: NAV computation, attribution, and fee / waterfall calculation
   - id: VS-360.60
     stage_order: 6
     stage_name: LP Reporting
     capability_ids:
     - BC-4910
-    process_ids: []
+    process_ids:
+    - BP-330.30
+    - BP-90.30
     notes: LP reporting and INREV / NCREIF / EPRA index submission
   - id: VS-360.70
     stage_order: 7
     stage_name: Distribution & Wind-Down
     capability_ids:
     - BC-4910
-    process_ids: []
+    process_ids:
+    - BP-330.30
     notes: Periodic distributions and end-of-life fund wind-down
 - id: VS-370
   name: Network-Plan-to-Service
@@ -7791,21 +7812,26 @@ value_streams:
     stage_name: Site Sourcing & Origination
     capability_ids:
     - BC-4900
-    process_ids: []
+    process_ids:
+    - BP-330.20
     notes: Site identification, off-market origination, and pipeline tracking
   - id: VS-530.20
     stage_order: 2
     stage_name: Feasibility & Underwriting
     capability_ids:
     - BC-4900
-    process_ids: []
+    process_ids:
+    - BP-330.20
+    - BP-320.40
     notes: Highest & best use, programme studies, pro forma, and land underwriting
   - id: VS-530.30
     stage_order: 3
     stage_name: Entitlement & Permitting
     capability_ids:
     - BC-4900
-    process_ids: []
+    process_ids:
+    - BP-340.30
+    - BP-320.40
     notes: Zoning, planning consent, environmental review, and building permits
   - id: VS-530.40
     stage_order: 4
@@ -7813,7 +7839,8 @@ value_streams:
     capability_ids:
     - BC-4900
     - BC-4980
-    process_ids: []
+    process_ids:
+    - BP-330.30
     notes: Equity, construction loans, JV, and public incentives sourcing; Construction and bridge loan origination
   - id: VS-530.50
     stage_order: 5
@@ -7821,7 +7848,8 @@ value_streams:
     capability_ids:
     - BC-4900
     - BC-1150
-    process_ids: []
+    process_ids:
+    - BP-100.20
     notes: Design oversight and owner-side construction monitoring; Construction execution by GC and trades
   - id: VS-530.60
     stage_order: 6
@@ -7829,14 +7857,17 @@ value_streams:
     capability_ids:
     - BC-4900
     - BC-4950
-    process_ids: []
+    process_ids:
+    - BP-320.20
     notes: Pre-leasing, opening, and ramp to stabilised performance; Pre-leasing campaigns and initial lease execution
   - id: VS-530.70
     stage_order: 7
     stage_name: Operational Handover
     capability_ids:
     - BC-4940
-    process_ids: []
+    process_ids:
+    - BP-320.30
+    - BP-320.10
     notes: Handover into ongoing property management operations
 - id: VS-540
   name: Solicitation-to-Closeout
@@ -7975,49 +8006,58 @@ value_streams:
     stage_name: Deal Sourcing
     capability_ids:
     - BC-4930
-    process_ids: []
+    process_ids:
+    - BP-330.20
     notes: Acquisition lead sourcing across direct, broker, and off-market channels
   - id: VS-560.20
     stage_order: 2
     stage_name: Underwriting
     capability_ids:
     - BC-4930
-    process_ids: []
+    process_ids:
+    - BP-330.20
     notes: Cash flow, comparables, sensitivity, and scenario underwriting
   - id: VS-560.30
     stage_order: 3
     stage_name: Due Diligence
     capability_ids:
     - BC-4930
-    process_ids: []
+    process_ids:
+    - BP-330.20
     notes: Physical, environmental, title, lease, and financial diligence
   - id: VS-560.40
     stage_order: 4
     stage_name: Structuring & Negotiation
     capability_ids:
     - BC-4930
-    process_ids: []
+    process_ids:
+    - BP-330.20
     notes: Bid strategy, LOI, PSA, and tax / vehicle structuring
   - id: VS-560.50
     stage_order: 5
     stage_name: Closing & Settlement
     capability_ids:
     - BC-4930
-    process_ids: []
+    process_ids:
+    - BP-330.20
+    - BP-90.70
     notes: Escrow, settlement statement, and recording
   - id: VS-560.60
     stage_order: 6
     stage_name: Operational Onboarding
     capability_ids:
     - BC-4930
-    process_ids: []
+    process_ids:
+    - BP-320.30
     notes: Asset and lease data migration and vendor contract novation
   - id: VS-560.70
     stage_order: 7
     stage_name: Asset Management Handover
     capability_ids:
     - BC-4920
-    process_ids: []
+    process_ids:
+    - BP-320.10
+    - BP-320.30
     notes: Handover to ongoing asset stewardship and business plan execution
 - id: VS-570
   name: Spectrum-to-Deployment
