@@ -1,0 +1,55 @@
+id: BP-400
+name: Operate Professional Services Engagements
+level: 1
+industry: Professional Services
+description: >-
+  Run professional-services engagements end-to-end: opportunity, engagement planning, delivery, billing/realisation, knowledge reuse, talent management.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "APQC Consulting/Professional Services PCF v7.2.x + CMMI-SVC v2.0 + SPI benchmarks"
+realizes_capability_ids:
+  - BC-100
+children:
+  - id: BP-400.10
+    name: Manage Engagement Lifecycle
+    level: 2
+    description: >-
+      Run engagement lifecycle: opportunity, proposal, engagement letter, planning, delivery, change control, closeout.
+    realizes_capability_ids:
+      - BC-410
+      - BC-900
+    children: []
+  - id: BP-400.20
+    name: Manage Resource and Talent
+    level: 2
+    description: >-
+      Plan, allocate, and develop the professional workforce; manage utilisation, leverage, and skills development.
+    realizes_capability_ids:
+      - BC-300
+    children: []
+  - id: BP-400.30
+    name: Manage Client Relationships and Accounts
+    level: 2
+    description: >-
+      Run account management for client portfolios; manage cross-sell and renewal.
+    realizes_capability_ids:
+      - BC-420
+      - BC-410
+    children: []
+  - id: BP-400.40
+    name: Manage Knowledge Reuse and Methodology
+    level: 2
+    description: >-
+      Capture engagement knowledge, develop methodologies, and curate reusable assets for future engagements.
+    realizes_capability_ids:
+      - BC-830
+    children: []
+  - id: BP-400.50
+    name: Manage Engagement Quality and Risk
+    level: 2
+    description: >-
+      Run engagement-level quality assurance, peer review, and risk management; manage independence and conflict checks.
+    realizes_capability_ids:
+      - BC-720
+      - BC-120
+    children: []
