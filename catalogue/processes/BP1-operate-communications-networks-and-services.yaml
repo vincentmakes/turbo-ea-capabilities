@@ -1,0 +1,58 @@
+id: BP-160
+name: Operate Communications Networks and Services
+level: 1
+industry: Telecommunications
+description: >-
+  Run telecom-specific operations: network lifecycle, service provisioning and assurance, performance management, and spectrum and interconnect management.
+framework_refs:
+  - framework: eTOM
+    external_id: "TM Forum Frameworx eTOM Operations and Strategy domains"
+realizes_capability_ids:
+  - BC-100
+  - BC-600
+children:
+  - id: BP-160.10
+    name: Manage Network Lifecycle
+    level: 2
+    description: >-
+      Plan, design, build, and decommission network infrastructure across the lifecycle.
+    realizes_capability_ids:
+      - BC-700
+      - BC-600
+    children: []
+  - id: BP-160.20
+    name: Manage Network Operations and Service Assurance
+    level: 2
+    description: >-
+      Operate the network and assure services: fault, performance, configuration, and capacity management.
+    realizes_capability_ids:
+      - BC-600
+      - BC-720
+    children: []
+  - id: BP-160.30
+    name: Manage Service Provisioning and Activation
+    level: 2
+    description: >-
+      Provision and activate customer services across access, core, and OSS systems.
+    realizes_capability_ids:
+      - BC-430
+      - BC-600
+    children: []
+  - id: BP-160.40
+    name: Manage Service Quality and Performance
+    level: 2
+    description: >-
+      Manage service quality and performance against SLAs across the customer base.
+    realizes_capability_ids:
+      - BC-720
+      - BC-430
+    children: []
+  - id: BP-160.50
+    name: Manage Spectrum and Interconnect
+    level: 2
+    description: >-
+      Manage radio spectrum holdings and interconnect arrangements with peer operators.
+    realizes_capability_ids:
+      - BC-150
+      - BC-510
+    children: []
