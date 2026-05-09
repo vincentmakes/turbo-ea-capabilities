@@ -7540,7 +7540,8 @@ value_streams:
     stage_name: Wholesale Agreement
     capability_ids:
     - BC-2680
-    process_ids: []
+    process_ids:
+    - BP-160.50
     notes: Wholesale, interconnect, and roaming agreement negotiation
   - id: VS-510.20
     stage_order: 2
@@ -7548,14 +7549,16 @@ value_streams:
     capability_ids:
     - BC-2680
     - BC-2600
-    process_ids: []
+    process_ids:
+    - BP-160.20
     notes: TAP/RAP file exchange and inter-operator usage record collection; Network-side CDR generation and mediation feed
   - id: VS-510.30
     stage_order: 3
     stage_name: Rating & Charging
     capability_ids:
     - BC-2680
-    process_ids: []
+    process_ids:
+    - BP-90.20
     notes: Wholesale rating against contracted tariffs and discount schemes
   - id: VS-510.40
     stage_order: 4
@@ -7563,14 +7566,16 @@ value_streams:
     capability_ids:
     - BC-2680
     - BC-2660
-    process_ids: []
+    process_ids:
+    - BP-160.50
     notes: Net settlement, invoicing, and clearing-house exchange; Wholesale revenue assurance and accounting integration
   - id: VS-510.50
     stage_order: 5
     stage_name: Dispute & Reconciliation
     capability_ids:
     - BC-2680
-    process_ids: []
+    process_ids:
+    - BP-160.50
     notes: Discrepancy investigation, dispute resolution, and adjustment posting
 - id: VS-520
   name: Shop-to-Stay
@@ -7907,7 +7912,8 @@ value_streams:
     stage_name: Spectrum Strategy
     capability_ids:
     - BC-2670
-    process_ids: []
+    process_ids:
+    - BP-160.50
     notes: Spectrum portfolio strategy and technology-band roadmap
   - id: VS-570.20
     stage_order: 2
@@ -7915,14 +7921,17 @@ value_streams:
     capability_ids:
     - BC-2670
     - BC-2700
-    process_ids: []
+    process_ids:
+    - BP-160.50
+    - BP-120.20
     notes: Auction participation, licence purchase, and trading; Regulatory engagement and licence-condition negotiation
   - id: VS-570.30
     stage_order: 3
     stage_name: Frequency Assignment & Coordination
     capability_ids:
     - BC-2670
-    process_ids: []
+    process_ids:
+    - BP-160.50
     notes: Frequency planning, cell-level assignment, and cross-border coordination
   - id: VS-570.40
     stage_order: 4
@@ -7930,7 +7939,8 @@ value_streams:
     capability_ids:
     - BC-2610
     - BC-2600
-    process_ids: []
+    process_ids:
+    - BP-160.10
     notes: RAN and transport build-out aligned to the spectrum plan; Activation, optimisation, and acceptance of new spectrum carriers
   - id: VS-570.50
     stage_order: 5
@@ -7938,14 +7948,17 @@ value_streams:
     capability_ids:
     - BC-2670
     - BC-2700
-    process_ids: []
+    process_ids:
+    - BP-160.50
+    - BP-110.10
     notes: Interference monitoring, mitigation, and shared-access spectrum operations; Licence-condition compliance and regulatory reporting
   - id: VS-570.60
     stage_order: 6
     stage_name: Renewal & Reframing
     capability_ids:
     - BC-2670
-    process_ids: []
+    process_ids:
+    - BP-160.50
     notes: Licence renewal, reframing, and end-of-life return
 - id: VS-580
   name: Strategy-to-Execution
