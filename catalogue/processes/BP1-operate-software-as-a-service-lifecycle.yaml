@@ -1,0 +1,57 @@
+id: BP-420
+name: Operate Software-as-a-Service Lifecycle
+level: 1
+industry: Software & Technology
+description: >-
+  Run SaaS-specific operations: product lifecycle, subscription/trial lifecycle, customer onboarding, customer success and renewal, cloud and tenant operations.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "TSIA frameworks + ITIL 4 + DORA capability model + DevOps/SRE practices"
+realizes_capability_ids:
+  - BC-820
+  - BC-600
+children:
+  - id: BP-420.10
+    name: Manage SaaS Product Lifecycle
+    level: 2
+    description: >-
+      Operate SaaS product lifecycle: roadmap, feature flags, beta/GA cycles, deprecation, and EOL.
+    realizes_capability_ids:
+      - BC-820
+    children: []
+  - id: BP-420.20
+    name: Manage Subscription and Trial Lifecycle
+    level: 2
+    description: >-
+      Operate trial, conversion, subscription, expansion, contraction, and cancellation events.
+    realizes_capability_ids:
+      - BC-410
+      - BC-440
+    children: []
+  - id: BP-420.30
+    name: Manage Customer Onboarding and Adoption
+    level: 2
+    description: >-
+      Onboard customers; drive adoption of features and time-to-value; manage activation milestones.
+    realizes_capability_ids:
+      - BC-430
+      - BC-420
+    children: []
+  - id: BP-420.40
+    name: Manage Customer Success and Renewal
+    level: 2
+    description: >-
+      Run customer-success programs; manage health scores, expansion, and renewals.
+    realizes_capability_ids:
+      - BC-420
+      - BC-410
+    children: []
+  - id: BP-420.50
+    name: Operate Cloud and Tenant Operations
+    level: 2
+    description: >-
+      Operate multi-tenant SaaS infrastructure: provisioning, isolation, capacity, observability, SRE/incident response.
+    realizes_capability_ids:
+      - BC-600
+      - BC-620
+    children: []
