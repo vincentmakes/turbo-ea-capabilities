@@ -6,7 +6,7 @@ description: >-
   Run HVAC and building-automation operations: product development, installation/commissioning, operations, refrigerant-lifecycle management.
 framework_refs:
   - framework: APQC-PCF
-    external_id: "ASHRAE 62.1/90.1/15/211 + BACnet (ASHRAE 135) + KNX (ISO/IEC 14543-3) + AHRI certification + EU F-Gas / US EPA 608"
+    external_id: "ASHRAE + BACnet/KNX + AHRI + EU F-Gas / EPA 608"
 realizes_capability_ids:
   - BC-820
 children:
@@ -14,34 +14,116 @@ children:
     name: Develop HVAC and BAS Products
     level: 2
     description: >-
-      Develop HVAC equipment and BAS solutions; obtain AHRI certification and energy-efficiency ratings.
+      Develop HVAC equipment and BAS solutions; obtain certifications.
     realizes_capability_ids:
       - BC-810
       - BC-820
-    children: []
+    children:
+      - id: BP-450.10.10
+        name: Engineer HVAC Equipment
+        level: 3
+        description: >-
+          Engineer HVAC equipment to ASHRAE standards.
+        realizes_capability_ids:
+          - BC-810
+        children: []
+      - id: BP-450.10.20
+        name: Develop BAS Solutions
+        level: 3
+        description: >-
+          Develop BAS solutions per BACnet/KNX standards.
+        realizes_capability_ids:
+          - BC-820
+        children: []
+      - id: BP-450.10.30
+        name: Obtain AHRI and Energy Certifications
+        level: 3
+        description: >-
+          Obtain AHRI certification and energy ratings.
+        realizes_capability_ids:
+          - BC-720
+        children: []
   - id: BP-450.20
     name: Manage HVAC Installation and Commissioning
     level: 2
     description: >-
-      Install HVAC equipment and BAS; commission per ASHRAE Guideline 0 / 1.1 / 1.2 standards.
+      Install HVAC and BAS; commission per ASHRAE Guideline 0/1.1/1.2.
     realizes_capability_ids:
       - BC-700
       - BC-720
-    children: []
+    children:
+      - id: BP-450.20.10
+        name: Install HVAC and BAS Equipment
+        level: 3
+        description: >-
+          Install HVAC and BAS equipment per design.
+        realizes_capability_ids:
+          - BC-700
+        children: []
+      - id: BP-450.20.20
+        name: Commission per ASHRAE Guideline
+        level: 3
+        description: >-
+          Commission per ASHRAE Guideline 0/1.1/1.2.
+        realizes_capability_ids:
+          - BC-720
+        children: []
   - id: BP-450.30
     name: Operate Building Automation
     level: 2
     description: >-
-      Operate BAS for HVAC, lighting, and other building systems; manage tenant comfort and energy performance.
+      Operate BAS for HVAC, lighting, and other building systems.
     realizes_capability_ids:
       - BC-700
-    children: []
+    children:
+      - id: BP-450.30.10
+        name: Manage BAS Setpoints and Schedules
+        level: 3
+        description: >-
+          Manage BAS setpoints, schedules, and control sequences.
+        realizes_capability_ids:
+          - BC-700
+        children: []
+      - id: BP-450.30.20
+        name: Monitor and Optimise Energy Performance
+        level: 3
+        description: >-
+          Monitor and optimise building energy performance.
+        realizes_capability_ids:
+          - BC-700
+          - BC-740
+        children: []
   - id: BP-450.40
     name: Manage Refrigerant Lifecycle
     level: 2
     description: >-
-      Capture, recover, and reclaim refrigerants per EU F-Gas / EPA Section 608; manage quotas and phase-down.
+      Capture, recover, and reclaim refrigerants per F-Gas / EPA 608.
     realizes_capability_ids:
       - BC-740
       - BC-130
-    children: []
+    children:
+      - id: BP-450.40.10
+        name: Manage Refrigerant Inventory and Quotas
+        level: 3
+        description: >-
+          Manage refrigerant inventory and EU F-Gas quotas.
+        realizes_capability_ids:
+          - BC-130
+          - BC-530
+        children: []
+      - id: BP-450.40.20
+        name: Recover and Reclaim Refrigerants
+        level: 3
+        description: >-
+          Recover and reclaim refrigerants per regulations.
+        realizes_capability_ids:
+          - BC-740
+        children: []
+      - id: BP-450.40.30
+        name: Manage Phase-Down Substitution
+        level: 3
+        description: >-
+          Manage phase-down substitution to lower-GWP refrigerants.
+        realizes_capability_ids:
+          - BC-740
+        children: []

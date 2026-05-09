@@ -3,10 +3,10 @@ name: Operate Agriculture and Food Production
 level: 1
 industry: Agriculture & Food Production
 description: >-
-  Run agriculture and food-production operations: crop and livestock production, food processing and manufacturing, farm-to-market supply chain, food-safety and traceability.
+  Run agriculture and food-production operations: crop and livestock production, food processing and manufacturing, farm-to-market supply chain, food-safety.
 framework_refs:
   - framework: APQC-PCF
-    external_id: "APQC Food & Beverage PCF v7.2.x + GLOBALG.A.P. + FSMA / EU 178/2002 + ISO 22000/FSSC 22000 + AgGateway + ISO 11783 (ISOBUS)"
+    external_id: "Food & Beverage PCF v7.2.x + GLOBALG.A.P. + FSMA / EU 178/2002 + ISO 22000"
 realizes_capability_ids:
   - BC-520
 children:
@@ -14,31 +14,109 @@ children:
     name: Manage Crop Production
     level: 2
     description: >-
-      Run crop production: planning, planting, crop protection, irrigation, and harvest under GLOBALG.A.P. or equivalent.
+      Run crop production: planning, planting, crop protection, irrigation, harvest.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-480.10.10
+        name: Plan and Plant Crops
+        level: 3
+        description: >-
+          Plan crop rotations; plant per agronomic plan.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-480.10.20
+        name: Manage Crop Protection and Irrigation
+        level: 3
+        description: >-
+          Apply crop-protection products; manage irrigation.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-480.10.30
+        name: Conduct Harvest
+        level: 3
+        description: >-
+          Conduct harvest; manage yield and quality.
+        realizes_capability_ids: []
+        children: []
   - id: BP-480.20
     name: Manage Livestock Production
     level: 2
     description: >-
-      Run livestock production: breeding, husbandry, animal health, and welfare per industry standards.
+      Run livestock production: breeding, husbandry, animal health, welfare.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-480.20.10
+        name: Manage Breeding and Genetics
+        level: 3
+        description: >-
+          Manage breeding programs and genetics.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-480.20.20
+        name: Manage Animal Health and Welfare
+        level: 3
+        description: >-
+          Manage animal health, vaccination, and welfare.
+        realizes_capability_ids:
+          - BC-730
+        children: []
   - id: BP-480.30
     name: Operate Food Processing and Manufacturing
     level: 2
     description: >-
-      Run food processing and manufacturing under HACCP / FSSC 22000; manage hygienic operations and allergen controls.
+      Run food processing under HACCP / FSSC 22000.
     realizes_capability_ids:
       - BC-520
       - BC-720
-    children: []
+    children:
+      - id: BP-480.30.10
+        name: Operate HACCP and Food-Safety Programs
+        level: 3
+        description: >-
+          Operate HACCP plans and food-safety programs.
+        realizes_capability_ids:
+          - BC-720
+        children: []
+      - id: BP-480.30.20
+        name: Execute Food Manufacturing
+        level: 3
+        description: >-
+          Execute food manufacturing operations.
+        realizes_capability_ids:
+          - BC-520
+        children: []
+      - id: BP-480.30.30
+        name: Manage Allergen and Hygiene Controls
+        level: 3
+        description: >-
+          Manage allergen segregation and hygienic operations.
+        realizes_capability_ids:
+          - BC-720
+          - BC-730
+        children: []
   - id: BP-480.40
     name: Manage Farm-to-Market Supply Chain and Traceability
     level: 2
     description: >-
-      Operate farm-to-market supply chains; maintain end-to-end traceability for food-safety and recall purposes.
+      Operate farm-to-market supply chains; maintain traceability for recall and food-safety.
     realizes_capability_ids:
       - BC-520
       - BC-130
-    children: []
+    children:
+      - id: BP-480.40.10
+        name: Operate Farm-to-Market Logistics
+        level: 3
+        description: >-
+          Operate cold-chain and bulk-commodity logistics.
+        realizes_capability_ids:
+          - BC-520
+        children: []
+      - id: BP-480.40.20
+        name: Maintain End-to-End Traceability
+        level: 3
+        description: >-
+          Maintain product traceability for recalls and food-safety reporting.
+        realizes_capability_ids:
+          - BC-610
+          - BC-130
+        children: []
