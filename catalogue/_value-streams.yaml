@@ -5191,14 +5191,17 @@ value_streams:
     stage_name: Demand Forecast
     capability_ids:
     - BC-2410
-    process_ids: []
+    process_ids:
+    - BP-40.10
+    - BP-410.10
     notes: Lane-level demand forecasting and modal mix analysis
   - id: VS-370.20
     stage_order: 2
     stage_name: Network Design
     capability_ids:
     - BC-2410
-    process_ids: []
+    process_ids:
+    - BP-410.10
     notes: Hub, gateway, lane, and modal-mix design decisions
   - id: VS-370.30
     stage_order: 3
@@ -5206,28 +5209,33 @@ value_streams:
     capability_ids:
     - BC-2410
     - BC-2400
-    process_ids: []
+    process_ids:
+    - BP-410.10
     notes: Schedule and slot planning across the service portfolio; Capacity commitments and equipment / vessel allocation
   - id: VS-370.40
     stage_order: 4
     stage_name: Service Publication
     capability_ids:
     - BC-2410
-    process_ids: []
+    process_ids:
+    - BP-410.20
     notes: Service catalogue publication and channel distribution
   - id: VS-370.50
     stage_order: 5
     stage_name: Service Operations
     capability_ids:
     - BC-2420
-    process_ids: []
+    process_ids:
+    - BP-410.20
     notes: Day-to-day execution of the published service
   - id: VS-370.60
     stage_order: 6
     stage_name: Performance Monitoring & Re-plan
     capability_ids:
     - BC-2410
-    process_ids: []
+    process_ids:
+    - BP-410.10
+    - BP-50.40
     notes: Service KPIs, gap analysis, and feedback into the next planning cycle
 - id: VS-380
   name: Opportunity-to-Order
