@@ -1,0 +1,65 @@
+id: BP-290
+name: Manage Vehicle Programs and Dealer Network
+level: 1
+industry: Automotive & Mobility
+description: >-
+  Run automotive-OEM-specific operations: vehicle program management (including type approval and homologation), dealer network management, vehicle distribution, recall management, and connected/aftermarket services. Aligned to APQC Automotive (OEM) PCF v7.2.2.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "Automotive (OEM) PCF v7.2.2"
+realizes_capability_ids:
+  - BC-820
+children:
+  - id: BP-290.10
+    name: Manage Vehicle Program Lifecycle
+    level: 2
+    description: >-
+      Govern vehicle programs from concept gate through SOP and end-of-production, including homologation and type approval.
+    realizes_capability_ids:
+      - BC-820
+      - BC-810
+    children: []
+  - id: BP-290.20
+    name: Manage Dealer Network
+    level: 2
+    description: >-
+      Recruit, onboard, contract, and manage performance of the dealer network across regions.
+    realizes_capability_ids:
+      - BC-410
+      - BC-510
+    children: []
+  - id: BP-290.30
+    name: Manage Vehicle Distribution and Logistics
+    level: 2
+    description: >-
+      Allocate, ship, and deliver finished vehicles to dealers and customers; manage build slots and ATP.
+    realizes_capability_ids:
+      - BC-520
+    children: []
+  - id: BP-290.40
+    name: Manage Vehicle Recalls and Field Actions
+    level: 2
+    description: >-
+      Identify, investigate, and execute safety recalls and field service actions; manage NHTSA / regulator reporting.
+    realizes_capability_ids:
+      - BC-720
+      - BC-130
+    children: []
+  - id: BP-290.50
+    name: Operate Aftermarket and Parts Distribution
+    level: 2
+    description: >-
+      Operate the aftermarket parts business: sourcing, distribution, dealer parts ordering, and remanufacture.
+    realizes_capability_ids:
+      - BC-520
+      - BC-530
+    children: []
+  - id: BP-290.60
+    name: Manage Connected and Mobility Services
+    level: 2
+    description: >-
+      Operate connected-vehicle services, telematics, charging networks, and adjacent mobility offers.
+    realizes_capability_ids:
+      - BC-600
+      - BC-820
+    children: []

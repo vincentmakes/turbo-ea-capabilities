@@ -995,6 +995,24 @@ Mirror of §9.8 for the BP layer. Each industry's process catalogue is anchored 
 - **AWWA Standards, WHO Drinking-Water Quality Guidelines, EU Drinking Water Directive 2020/2184** — inform water-utility production, treatment, and distribution processes.
 - **ENTSO-E Network Codes, FERC Orders.** Inform European TSO and US wholesale electricity market processes.
 
+#### Retail & Consumer Goods
+
+- **APQC Retail PCF, v7.2.1.** Industry-specific PCF restructuring the cross-industry taxonomy for omni-channel retailers. Anchors `BP-280` Operate Retail Merchandising and Stores. Includes operating categories Develop and Manage Customer Experience, Market Products and Services, Merchandise Products and Services, and Deliver Products.
+- **APQC Consumer Products PCF, v7.2.x** *(IBM-donated)*. Companion industry PCF for consumer-products manufacturers; informs portions of `BP-280` related to brand and trade-promotion management.
+- **ARTS / NRF data model, GS1 (GTIN, GLN, GDSN), EDI 850/810** — inform retail master-data and electronic commerce processes; cited in `references[]` rather than `framework_refs` (data-interchange standards rather than process taxonomies).
+
+#### Automotive (OEM)
+
+- **APQC Automotive (OEM) PCF, v7.2.2.** Industry-specific PCF for vehicle OEMs covering vehicle program management, dealer network management, and aftermarket. Anchors `BP-290` Manage Vehicle Programs and Dealer Network.
+- **IATF 16949** *(automotive quality management)*, **AUTOSAR** *(automotive software architecture)*, **ISO 26262** *(functional safety for automotive E/E systems)* — inform vehicle-engineering, quality, and safety processes; cited in `references[]`.
+- **NHTSA / KBA / EU type-approval frameworks** — inform homologation, recall, and field-action processes.
+
+#### Health Insurance Payor
+
+- **APQC Health Insurance Payor PCF, v7.2.1.** Industry-specific PCF for health-plan operators covering enrolment, provider network, claims adjudication, care management, and member services — distinct from the Healthcare Provider PCF (BP-170/180) and from general Insurance (BP-150). Anchors `BP-300` Operate Health Insurance Payor.
+- **HEDIS, NCQA Star Ratings, MLR (Medical Loss Ratio) reporting** — inform regulatory and quality-reporting processes specific to US health plans.
+- **HL7 / FHIR, X12 837/835** — inform health-claims data and provider-network data exchange; cited in `references[]`.
+
 #### How to add a new industry's process catalogue
 
 Same workflow as adding a new BC industry under §9.8:

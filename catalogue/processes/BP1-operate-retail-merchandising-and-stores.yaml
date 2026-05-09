@@ -1,0 +1,64 @@
+id: BP-280
+name: Operate Retail Merchandising and Stores
+level: 1
+industry: Retail & Consumer Goods
+description: >-
+  Run retail-specific operations: merchandising and assortment, omni-channel commerce, store operations, loyalty, and supply for store and online fulfilment. Aligned to APQC Retail PCF's industry-specific categories (Develop and Manage Customer Experience, Market Products and Services, Merchandise Products and Services, Deliver Products).
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "Retail PCF v7.2.1 — Operating categories"
+realizes_capability_ids:
+  - BC-100
+children:
+  - id: BP-280.10
+    name: Manage Merchandising and Assortment Planning
+    level: 2
+    description: >-
+      Plan assortments, allocate space and shelf, and manage category and brand lifecycles.
+    realizes_capability_ids:
+      - BC-820
+      - BC-400
+    children: []
+  - id: BP-280.20
+    name: Manage Pricing, Promotions, and Markdown
+    level: 2
+    description: >-
+      Set everyday and promotional pricing; plan and execute markdown and clearance.
+    realizes_capability_ids:
+      - BC-440
+    children: []
+  - id: BP-280.30
+    name: Operate Omni-Channel Commerce
+    level: 2
+    description: >-
+      Operate e-commerce, mobile, marketplace, and digital channels alongside physical store sales.
+    realizes_capability_ids:
+      - BC-420
+      - BC-410
+    children: []
+  - id: BP-280.40
+    name: Operate Store Operations
+    level: 2
+    description: >-
+      Run store-level operations: opening procedures, labour scheduling, cash handling, loss prevention.
+    realizes_capability_ids:
+      - BC-700
+      - BC-300
+    children: []
+  - id: BP-280.50
+    name: Operate Customer Loyalty and CX Programs
+    level: 2
+    description: >-
+      Run loyalty, member, and customer-experience programs across channels.
+    realizes_capability_ids:
+      - BC-420
+    children: []
+  - id: BP-280.60
+    name: Manage Store and Online Fulfilment
+    level: 2
+    description: >-
+      Fulfil orders across BOPIS, kerbside, ship-from-store, and DC-to-customer; manage last-mile.
+    realizes_capability_ids:
+      - BC-520
+      - BC-530
+    children: []
