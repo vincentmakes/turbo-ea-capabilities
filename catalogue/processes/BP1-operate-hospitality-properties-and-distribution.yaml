@@ -1,0 +1,59 @@
+id: BP-380
+name: Operate Hospitality Properties and Distribution
+level: 1
+industry: Travel & Hospitality
+description: >-
+  Run hospitality-specific operations: reservations and inventory, guest experience, distribution and channel, loyalty, revenue management, and property operations (rooms, F&B, events).
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "AHLA USALI 11th Ed + HEDNA + OpenTravel + HTNG reference architecture"
+realizes_capability_ids:
+  - BC-100
+children:
+  - id: BP-380.10
+    name: Manage Reservations and Inventory
+    level: 2
+    description: >-
+      Manage room, table, and event-space inventory; receive and confirm reservations across channels.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-380.20
+    name: Manage Guest Experience and Stay
+    level: 2
+    description: >-
+      Operate the guest journey from arrival through stay to departure, including check-in, in-stay servicing, and check-out.
+    realizes_capability_ids:
+      - BC-430
+    children: []
+  - id: BP-380.30
+    name: Manage Distribution and Channel
+    level: 2
+    description: >-
+      Operate distribution across direct, OTA, GDS, and metasearch channels; manage rate parity and content.
+    realizes_capability_ids:
+      - BC-410
+    children: []
+  - id: BP-380.40
+    name: Manage Loyalty Programs
+    level: 2
+    description: >-
+      Operate guest loyalty programs across enrolment, accrual, redemption, and partner exchange.
+    realizes_capability_ids:
+      - BC-420
+    children: []
+  - id: BP-380.50
+    name: Manage Revenue Management and Yield
+    level: 2
+    description: >-
+      Forecast demand and optimise pricing, length-of-stay controls, and channel mix.
+    realizes_capability_ids:
+      - BC-440
+    children: []
+  - id: BP-380.60
+    name: Operate Property Operations
+    level: 2
+    description: >-
+      Operate rooms, food & beverage, events, housekeeping, and property maintenance.
+    realizes_capability_ids:
+      - BC-700
+    children: []
