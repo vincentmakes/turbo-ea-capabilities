@@ -3,7 +3,7 @@ name: Market and Sell Products and Services
 level: 1
 industry: Cross-Industry
 description: >-
-  Understand markets and customers, set marketing and sales strategy, and execute the demand-creation and order-capture activities that monetise products and services.
+  Outlining process groups related to understanding markets, customers, and capabilities; developing marketing strategies; executing marketing plans; developing sales strategies; developing and managing marketing plans; and managing sales partners and alliances.
 framework_refs:
   - framework: APQC-PCF
     external_id: "3.0"
@@ -18,7 +18,7 @@ children:
     name: Understand Markets, Customers, and Capabilities
     level: 2
     description: >-
-      Develop the evidence base on market dynamics, customer needs, segments, and competitive position that drives marketing and sales decisions.
+      Making sense of the market and customers to identify the right opportunities to be capitalized, given the organization's competencies. Discern trends and shift in the market and customers. Identify the right market opportunities that fit closely with the organization's capabilities and strategy by gathering intelligence on various attributes of different market/customer segments.
     framework_refs:
       - framework: APQC-PCF
         external_id: "3.1"
@@ -31,7 +31,7 @@ children:
         name: Perform Customer and Market Intelligence Analysis
         level: 3
         description: >-
-          Gather and analyse customer, market, and competitor data to inform marketing and sales decisions.
+          Gathering intelligence on the market and customers. Closely examine the inherent attributes and collective behavior of the various market and customer segments. Track trends in the market. Determine what drives the customers to make purchasing decisions in order to identify opportunities in the market.
         framework_refs:
           - framework: APQC-PCF
             external_id: "3.1.1"
@@ -41,23 +41,21 @@ children:
           - BC-420
         children: []
       - id: BP-30.10.20
-        name: Evaluate and Prioritise Market Opportunities
+        name: Evaluate and Prioritize Market Opportunities
         level: 3
         description: >-
-          Score and prioritise candidate markets and segments by attractiveness and fit.
+          Appraising market opportunities by quantifying and subjecting them to prioritization, as well as validation tests. Closely examine the market opportunities that have been identified by Perform customer and market intelligence analysis [10106]. Triangulate those opportunities to capitalize by finding a fit between identified opportunities and the composite of organizational capabilities and business strategy.
         framework_refs:
           - framework: APQC-PCF
             external_id: "3.1.2"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-400
-          - BC-100
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
   - id: BP-30.20
     name: Develop Marketing Strategy
     level: 2
     description: >-
-      Define target segments, value propositions, brand positioning, and channel mix that direct marketing investment.
+      Charting a strategic course for marketing products/services. This will include defining the value proposition, creating a mechanism for pricing, and determining the right mix of marketing channels. Create a specific positioning and branding for the organization's offerings. Enlist marketing head to lead, with inputs from the business development and sales functions.
     framework_refs:
       - framework: APQC-PCF
         external_id: "3.2"
@@ -69,7 +67,7 @@ children:
         name: Define Offering and Customer Value Proposition
         level: 3
         description: >-
-          Articulate the offer-by-segment value proposition and positioning.
+          Refining the attributes of organizational offerings to define their value proposition for the customer. Clearly define the suite of offerings in terms of the value delivered, from the perspective of what the customer desires. Validate the benefits delivered to the customers against target market segments, using techniques such as minimum viable product. Position brands for the respective products/services, in line with their unique value proposition and aligned with customers needs.
         framework_refs:
           - framework: APQC-PCF
             external_id: "3.2.1"
@@ -79,39 +77,199 @@ children:
           - BC-820
         children: []
       - id: BP-30.20.20
-        name: Define Pricing Strategy
+        name: Develop and Manage Brands
         level: 3
         description: >-
-          Set pricing strategy, structure, and policies aligned to the value proposition.
+          Defining and overseeing the positioning, value proposition, and governance of brands to ensure a consistent identity, clear differentiation, and alignment with overall marketing direction and business objectives across markets and offerings.
         framework_refs:
           - framework: APQC-PCF
             external_id: "3.2.2"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-440
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-30.20.30
-        name: Define Marketing Budgets
+        name: Define Pricing Strategy
         level: 3
         description: >-
-          Set the overall marketing investment envelope and allocation across channels and programs.
+          Creating a pricing strategy and mechanism that aligns with the benefits of the products/services, as perceived by customers. Chart a strategic course and a methodology that can guide the pricing of products/services. Draw heavily from the customer value proposition, and balance the expectations of different divisions inside the organization, while delivering the maximum ROI.
         framework_refs:
           - framework: APQC-PCF
             external_id: "3.2.3"
-            version: "7.4.0"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-30.20.40
+        name: Define and Manage Channel Strategy
+        level: 3
+        description: >-
+          Establishing all the activities needed to identify the appropriate channels to market to different customer segments as defined in Determine target segments [10117]. This involves finding channel partners, ensuring that the channels align with organizational strategy for each segment, and the final channel selection process.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.2.4"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-30.20.50
+        name: Analyze and Manage Channel Performance
+        level: 3
+        description: >-
+          Monitoring marketing and distribution efforts of all channels individually and as a network. Re-distribute or add resources to channels that perform better than expected. Purge or consolidate under-performing channels, and find more promising replacements.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.2.5"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-30.20.60
+        name: Develop Marketing Communication Strategy
+        level: 3
+        description: >-
+          Establishing marketing communications that deliver promotional messages, in a coordinated way, through multiple marketing channels, such as print, radio, television, direct mail, online or mobile advertising, email, social media or personal selling.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.2.6"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-30.20.70
+        name: Design and Manage Customer Loyalty Program
+        level: 3
+        description: >-
+          Creating and managing a customer loyalty program. The loyalty program is a key part of marketing, with an elaborate strategy and process for acquiring, retaining, and engaging with members. Members are engaged and acquainted to the loyalty program, thus growing relationship and adding value through the program.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.2.7"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+  - id: BP-30.40
+    name: Develop and Manage Marketing Plans
+    level: 2
+    description: >-
+      Creating specific plans to market offerings to customers. This process group includes processes for making budgets, identifying and developing media, pricing products and services, managing packaging, managing marketing content and promotional activities, tracking and responding to customer insight and monitoring measures established within "develop marketing strategy". Additionally, in this process group, organizations take action on plans made in earlier processes. Here, marketing and customers are managed and measured along with any supporting materials.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "3.3"
+        version: "8.0"
+    realizes_capability_ids:
+      - BC-400
+    children:
+      - id: BP-30.40.10
+        name: Establish Goals, Objectives, and Measures for Products/services by Channel/segment
+        level: 3
+        description: >-
+          Determining what to achieve by marketing. Create qualitative and quantitative targets. Establish metrics to track performance (for individual Market segments [10109] and Channels for target segments [10129]). Enlist the head of marketing to determine marketing priorities and the related measures. (The decision in establishing these goals, objectives, and metrics is founded in Develop marketing strategy [10102] and takes cues from current priorities and organizational strategy.)
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.3.1"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-30.40.20
+        name: Establish Marketing Budgets
+        level: 3
+        description: >-
+          Creating a budget for the organization's marketing efforts, in line with the business-wide strategic outlook. Create a plan to distribute resources for achieving the marketing strategy in light of the overall business strategy. Make cost assumptions; calculate the estimated total revenue from the marketing activities against the costs/expenses of these activities. Forecast the return on investment. Attribute costs to the appropriate marketing activities such as promotional campaigns, advertising, marketing communications, PR campaigns, personnel, and office space. Enlist the financial and marketing functions.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.3.2"
+            version: "8.0"
         realizes_capability_ids:
           - BC-400
           - BC-230
+        children: []
+      - id: BP-30.40.40
+        name: Develop and Manage Pricing
+        level: 3
+        description: >-
+          Determining and maintaining a pricing mechanism based on forecasted sales and that enables a pricing equilibrium for the lifecycles of products/services. Create a pricing mechanism, factoring in attributes relating to the market, customers, sales, and the cost of production. Implement this pricing mechanism over all products/services. Analyze its performance, and adjust accordingly.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.3.3"
+            version: "8.0"
+        realizes_capability_ids:
+          - BC-440
+        children: []
+      - id: BP-30.40.50
+        name: Develop and Manage Promotional Activities
+        level: 3
+        description: >-
+          Conceptualizing, testing, and executing product/service/brand promotions. Once a promotion has launched, this process continues as the organization tweaks parts of the promotion or chooses to use ideas or lessons learned during the promotion in future activities. The promotion's performance according to organizational measures is also evaluated in this process. Determine early on whether you need third party help with promotion. Purchase lists, consult with social media experts, hire seasonal staff, or pay for additional research.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.3.4"
+            version: "8.0"
+        realizes_capability_ids:
+          - BC-400
+        children: []
+      - id: BP-30.40.60
+        name: Track Customer Management Measures
+        level: 3
+        description: >-
+          Collating all customer-centered metrics. The objective is to create a big-picture view of the customers' mindset and their behavior pertaining to the organization's offerings.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.3.5"
+            version: "8.0"
+        realizes_capability_ids:
+          - BC-420
+          - BC-400
+        children: []
+      - id: BP-30.40.30
+        name: Analyze and Respond to Customer Insight
+        level: 3
+        description: >-
+          Reviewing and responding to customer feedback. Create tickets to initiate bug fixes or to propose feature updates. Monitor and track progress.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.3.6"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-30.40.70
+        name: Develop and Manage Packaging Strategy
+        level: 3
+        description: >-
+          Creating, executing, and administering a strategic road map for packaging products/services. Determine how to package products/services into finished offerings that can be directly marketed to prospective customers. Consider physicality, perishability, and shelf-life. Develop a strategy for packaging products/services. Test alternatives. Collect feedback. Refine the option chosen for execution. Have marketing, product development, and supply chain functions work together to develop sound packaging.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.3.7"
+            version: "8.0"
+        realizes_capability_ids:
+          - BC-820
+          - BC-400
+        children: []
+      - id: BP-30.40.80
+        name: Develop Go-to-market Strategy
+        level: 3
+        description: >-
+          Creation of a plan detailing how a company plans to execute a successful product release and promotion, and ultimately its sale to customers.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.3.8"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-30.40.90
+        name: Manage Product Marketing Material
+        level: 3
+        description: >-
+          Creating descriptions of products that are promotional and informative in content in order to initiate and increase sales. Marketing content consists of text, and optionally, images.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.3.9"
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
   - id: BP-30.30
     name: Develop Sales Strategy
     level: 2
     description: >-
-      Define sales coverage, channel structure, account strategy, and quota/incentive design.
+      Developing concrete plans for guiding and providing support to the sales function. Chart a road map for the sales function, including an analysis of historical sales data to create forecasts for anticipated sales, forming sales targets, forging partnerships with other economic agents to boost sales, devising a budget for this function, and determining metrics to measure customer management activities as well as progress in achieving sales targets.
     framework_refs:
       - framework: APQC-PCF
-        external_id: "3.3"
-        version: "7.4.0"
+        external_id: "3.4"
+        version: "8.0"
     realizes_capability_ids:
       - BC-410
     children:
@@ -119,24 +277,24 @@ children:
         name: Develop Sales Forecast
         level: 3
         description: >-
-          Develop the multi-period sales forecast by segment, channel, and product.
+          Developing a sales forecast for the organization's portfolio of offerings, bearing in mind the effect of promotional events, and fine-tuning these in the context of the new forecast. Estimate the future demand for the organization's products/services by analyzing historical information and any promotional activity.
         framework_refs:
           - framework: APQC-PCF
-            external_id: "3.3.1"
-            version: "7.4.0"
+            external_id: "3.4.1"
+            version: "8.0"
         realizes_capability_ids:
           - BC-410
           - BC-230
         children: []
       - id: BP-30.30.20
-        name: Develop Sales Partner/Alliance Relationships
+        name: Develop Sales Partner/alliance Relationships
         level: 3
         description: >-
-          Establish and govern partner and alliance channels supporting sales.
+          Cultivating an alliance of partners by identifying, analyzing, negotiating, and managing partnerships with other economic agents.
         framework_refs:
           - framework: APQC-PCF
-            external_id: "3.3.2"
-            version: "7.4.0"
+            external_id: "3.4.2"
+            version: "8.0"
         realizes_capability_ids:
           - BC-410
           - BC-510
@@ -145,11 +303,11 @@ children:
         name: Establish Overall Sales Budgets
         level: 3
         description: >-
-          Set sales-function operating budgets and territory/account allocations.
+          Setting up a financial plan for the sales function. Calculate the estimated sales revenue and costs, which helps in calculating the overall net profit. Create a sound plan for resource outlay by comparing the forecast with historical data.
         framework_refs:
           - framework: APQC-PCF
-            external_id: "3.3.3"
-            version: "7.4.0"
+            external_id: "3.4.3"
+            version: "8.0"
         realizes_capability_ids:
           - BC-410
           - BC-230
@@ -158,11 +316,11 @@ children:
         name: Establish Sales Goals and Measures
         level: 3
         description: >-
-          Set sales goals, quotas, and the performance measures used to manage the sales force.
+          Establishing specific quantitative and qualitative measures of realizing sales targets. Create sales targets by analyzing historical sales data and comparing the forecasts to results, in light of customer and market intelligence. Examine the performance of sales personnel in light of market opportunities. Based on this review, establish sales targets along with metrics to quantify these goals, corresponding with the overall business strategy.
         framework_refs:
           - framework: APQC-PCF
-            external_id: "3.3.4"
-            version: "7.4.0"
+            external_id: "3.4.4"
+            version: "8.0"
         realizes_capability_ids:
           - BC-410
         children: []
@@ -170,132 +328,20 @@ children:
         name: Establish Customer Management Measures
         level: 3
         description: >-
-          Define the customer-relationship measures used to track health and lifetime value.
-        framework_refs:
-          - framework: APQC-PCF
-            external_id: "3.3.5"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-420
-          - BC-410
-        children: []
-  - id: BP-30.40
-    name: Develop and Manage Marketing Plans
-    level: 2
-    description: >-
-      Plan, execute, and measure marketing campaigns and demand-generation programs that deliver pipeline against the strategy.
-    framework_refs:
-      - framework: APQC-PCF
-        external_id: "3.4"
-        version: "7.4.0"
-    realizes_capability_ids:
-      - BC-400
-    children:
-      - id: BP-30.40.10
-        name: Establish Goals, Objectives, and Metrics for Products/Services
-        level: 3
-        description: >-
-          Set per-product and per-channel marketing goals and KPIs.
-        framework_refs:
-          - framework: APQC-PCF
-            external_id: "3.4.1"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-400
-        children: []
-      - id: BP-30.40.20
-        name: Establish Marketing Budgets
-        level: 3
-        description: >-
-          Allocate marketing investment across products, channels, and campaigns.
-        framework_refs:
-          - framework: APQC-PCF
-            external_id: "3.4.2"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-400
-          - BC-230
-        children: []
-      - id: BP-30.40.30
-        name: Develop and Manage Media
-        level: 3
-        description: >-
-          Plan and run paid and owned media programs.
-        framework_refs:
-          - framework: APQC-PCF
-            external_id: "3.4.3"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-400
-        children: []
-      - id: BP-30.40.40
-        name: Develop and Manage Pricing
-        level: 3
-        description: >-
-          Operate pricing across promotions, discounts, and lifecycle pricing decisions.
-        framework_refs:
-          - framework: APQC-PCF
-            external_id: "3.4.4"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-440
-        children: []
-      - id: BP-30.40.50
-        name: Develop and Manage Promotional Activities
-        level: 3
-        description: >-
-          Plan and execute promotions, campaigns, and demand-generation programs.
+          Identifying the appropriate measures that can represent key attributes of the customer management function. Select measures to track customer activity, feedback, satisfaction, organizational responsiveness to customer needs, and general data on how the organization is managing customer accounts, leads, and contacts. Build on customer and market intelligence to identify metrics gauging aspects related to customer management. Select measures based on the nature of the business, the type and size of customer base, strategic goals, and the model used to structure sales and customer relationships.
         framework_refs:
           - framework: APQC-PCF
             external_id: "3.4.5"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-400
-        children: []
-      - id: BP-30.40.60
-        name: Track Customer Management Measures
-        level: 3
-        description: >-
-          Monitor customer health, retention, and engagement metrics.
-        framework_refs:
-          - framework: APQC-PCF
-            external_id: "3.4.6"
-            version: "7.4.0"
+            version: "8.0"
         realizes_capability_ids:
           - BC-420
-          - BC-400
-        children: []
-      - id: BP-30.40.70
-        name: Develop and Manage Packaging Strategy
-        level: 3
-        description: >-
-          Manage product packaging and presentation in market.
-        framework_refs:
-          - framework: APQC-PCF
-            external_id: "3.4.7"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-820
-          - BC-400
-        children: []
-      - id: BP-30.40.80
-        name: Manage Product and Brand
-        level: 3
-        description: >-
-          Run brand-management and product-management activities in market.
-        framework_refs:
-          - framework: APQC-PCF
-            external_id: "3.4.8"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-400
-          - BC-820
+          - BC-410
         children: []
   - id: BP-30.50
     name: Develop and Manage Sales Plans
     level: 2
     description: >-
-      Plan, execute, and manage the sales motion: account planning, opportunity management, pricing, quoting, and order capture.
+      Selling products/services. Set appropriate customer expectations. Work with customers using the same schedule that product/service development, production, and customer service functions follow. Manage sales personnel and sales partnerships/alliances.
     framework_refs:
       - framework: APQC-PCF
         external_id: "3.5"
@@ -305,23 +351,21 @@ children:
       - BC-440
     children:
       - id: BP-30.50.10
-        name: Generate Leads
+        name: Manage Leads/opportunities
         level: 3
         description: >-
-          Source and qualify leads to feed the sales pipeline.
+          Generating leads of prospective customers to grow the organization's business. Identify viable customers based on customer and market research. Discover leads through IT applications, cold calling, reference/network development, or other sales and business development techniques. Employ a scoring model qualify the prospective customers into leads, and prioritize them.
         framework_refs:
           - framework: APQC-PCF
             external_id: "3.5.1"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-410
-          - BC-400
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-30.50.20
         name: Manage Customers and Accounts
         level: 3
         description: >-
-          Run account management for customers across renewal, upsell, and retention.
+          Managing the customer's expectations, with the intent of responsibly increasing the sale of the organization's products/services. Create a systematic method for governing sales, using sales forecasts and customer management measures. Develop a blueprint to manage relationships with customers and the data it holds on them, as well as the sale of its products/services to these customers. Devise a recipe for handling the organization's key customers in order to manage their expectations with tact and responsibility while maximizing revenue.
         framework_refs:
           - framework: APQC-PCF
             external_id: "3.5.2"
@@ -331,22 +375,21 @@ children:
           - BC-410
         children: []
       - id: BP-30.50.30
-        name: Manage Customer Sales
+        name: Develop and Manage Sales Proposals, Bids, and Quotes
         level: 3
         description: >-
-          Manage opportunities through pipeline stages from qualification to close.
+          Understanding and refining the customer requirements as provided in a RFP (Request for Proposal) or RFI (Request for Information).  When compiling the response, they must take into consideration whether the requirements are a match with the strategic or tactical plans of the organization and whether they are able to submit a bid/proposal that is competitive based on an understanding of the offerings of other competing organizations. The next step will be to define the pricing and scheduling of the proposed solution and determine whether the proposal will be profitable for the company if accepted. The bid is then submitted and a notification of whether or not it was successful is received.
         framework_refs:
           - framework: APQC-PCF
             external_id: "3.5.3"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-410
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-30.50.40
         name: Manage Sales Orders
         level: 3
         description: >-
-          Capture, validate, and progress sales orders into fulfilment.
+          Taking, receiving, processing, and acknowledging new customer orders or amendments to outstanding customer orders. Monitoring status from order receipt to customer delivery/customer invoicing.
         framework_refs:
           - framework: APQC-PCF
             external_id: "3.5.4"
@@ -358,7 +401,7 @@ children:
         name: Manage Sales Partners and Alliances
         level: 3
         description: >-
-          Operate partner and alliance sales channels.
+          Managing the organization's partners and alliances, with the objective of maximizing revenue. Train partners regarding the organization's portfolio of products/services. Craft sales forecasts. Examine their performance. Manage all data held by the organization on these partners.
         framework_refs:
           - framework: APQC-PCF
             external_id: "3.5.5"
@@ -366,4 +409,37 @@ children:
         realizes_capability_ids:
           - BC-410
           - BC-510
+        children: []
+      - id: BP-30.50.60
+        name: Perform Sales at Physical Outlets
+        level: 3
+        description: >-
+          Execution of sales at physical / brick and mortar locations.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.5.6"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-30.50.70
+        name: Perform Field Sales
+        level: 3
+        description: >-
+          Execution of sales within field/remote locations.  This could be any location that is not part of a headquarters location.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.5.7"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-30.50.80
+        name: Perform Digital Sales
+        level: 3
+        description: >-
+          Execution of sales in an online environment.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "3.5.8"
+            version: "8.0"
+        realizes_capability_ids: []
         children: []

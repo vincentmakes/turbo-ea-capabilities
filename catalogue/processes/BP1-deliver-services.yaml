@@ -3,7 +3,7 @@ name: Deliver Services
 level: 1
 industry: Cross-Industry
 description: >-
-  Govern, plan, and execute the delivery of services to customers — including the resourcing, operations, and post-delivery management distinct from physical-goods supply chains.
+  Offering services to customers. This is the act of providing service delivery as a core business practice and covers identifying strategies for performing service delivery, managing resources, and delivering services to the customer.
 framework_refs:
   - framework: APQC-PCF
     external_id: "5.0"
@@ -13,23 +13,21 @@ realizes_capability_ids:
   - BC-720
 children:
   - id: BP-50.10
-    name: Establish Service Delivery Governance and Strategy
+    name: Establish Service Delivery Governance and Strategies
     level: 2
     description: >-
-      Define service-delivery operating model, governance forums, and service strategy aligned to customer outcomes and SLAs.
+      Creating rules and regulations for service delivery to the customer. Establish a system to manage performance, delivery, and direction of service delivery. Engage with the customer for satisfaction feedback. Define goals, policies, processes, and workplace layout and infrastructure as a part of the service delivery strategy.
     framework_refs:
       - framework: APQC-PCF
         external_id: "5.1"
-        version: "7.4.0"
-    realizes_capability_ids:
-      - BC-100
-      - BC-720
+        version: "8.0"
+    realizes_capability_ids: []
     children:
       - id: BP-50.10.10
         name: Establish Service Delivery Governance
         level: 3
         description: >-
-          Establish governance forums, decision rights, and operating-model controls for service delivery.
+          Establishing service delivery governance through a system that manages performance, development, and direction. Allow for customer feedback on delivery satisfaction.
         framework_refs:
           - framework: APQC-PCF
             external_id: "5.1.1"
@@ -39,35 +37,21 @@ children:
           - BC-100
         children: []
       - id: BP-50.10.20
-        name: Define Service Delivery Strategy
+        name: Develop Service Delivery Strategies
         level: 3
         description: >-
-          Define multi-year service-delivery strategy: portfolio, channels, sourcing, target service levels.
+          Constructing strategies that identify goals, policies, processes, and procedures in relation to service delivery. Review and validate strategies. Define the workplace layout and infrastructure.
         framework_refs:
           - framework: APQC-PCF
             external_id: "5.1.2"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-100
-        children: []
-      - id: BP-50.10.30
-        name: Define Service Standards
-        level: 3
-        description: >-
-          Establish the service-quality standards and SLAs that delivery must achieve.
-        framework_refs:
-          - framework: APQC-PCF
-            external_id: "5.1.3"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-720
-          - BC-430
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
   - id: BP-50.20
     name: Manage Service Delivery Resources
     level: 2
     description: >-
-      Plan, allocate, and develop the people, facilities, and infrastructure that deliver service.
+      Understanding the demands on resources and creating a plan to enable the delivery of services via those resources.
     framework_refs:
       - framework: APQC-PCF
         external_id: "5.2"
@@ -77,139 +61,134 @@ children:
       - BC-700
     children:
       - id: BP-50.20.10
-        name: Manage Service Delivery Workforce
+        name: Manage Service Delivery Resource Demand
         level: 3
         description: >-
-          Plan and manage the staffing, skills, and scheduling of the service-delivery workforce.
+          Ensuring necessary resources are maintained through monitoring pipeline, developing forecasts, and collaborating with customers. Determine skills needed for service deliver and forecast customer orders. Monitor forecasted orders and modify if where needed. Measure forecast accuracy.
         framework_refs:
           - framework: APQC-PCF
             external_id: "5.2.1"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-300
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-50.20.20
-        name: Manage Service Delivery Resources and Assets
+        name: Create and Manage Resource Plan
         level: 3
         description: >-
-          Manage the facilities, equipment, and assets used in service delivery.
+          Identifying the need for and creating a resource plan. Understand resource demand and align with capacity, skills, and capabilities. Enlist suppliers and partners to supplement needed skills and capabilities. Monitor and manage capabilities and skills with an eye on critical resources and supplier capacity.
         framework_refs:
           - framework: APQC-PCF
             external_id: "5.2.2"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-700
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-50.20.30
-        name: Manage Service Delivery Suppliers
+        name: Enable Service Delivery Resources
         level: 3
         description: >-
-          Manage third-party service providers and supplier relationships supporting delivery.
+          Instituting training to enable resources to provide service delivery to the customer. Develop a training plan. Create materials that provide for operation and technical training. Schedule, perform, and evaluate training.
         framework_refs:
           - framework: APQC-PCF
             external_id: "5.2.3"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-510
-          - BC-500
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
   - id: BP-50.30
-    name: Deliver Service to Customer
+    name: Manage and Operate Service Delivery System
     level: 2
     description: >-
-      Execute the service interaction with the customer end-to-end, including provisioning, support, and assurance.
+      Managing and operating the systems, resources, and processes used to deliver services to customers, including planning, startup, ongoing operations, and service assurance.
     framework_refs:
       - framework: APQC-PCF
         external_id: "5.3"
-        version: "7.4.0"
-    realizes_capability_ids:
-      - BC-430
+        version: "8.0"
+    realizes_capability_ids: []
     children:
       - id: BP-50.30.10
-        name: Initiate Service Delivery
+        name: Perform Service Delivery System Planning
         level: 3
         description: >-
-          Onboard, provision, and start service for the customer.
+          Planning the service delivery system by defining service requirements, capacity, resources, and delivery approaches needed to support effective and reliable service provision.
         framework_refs:
           - framework: APQC-PCF
             external_id: "5.3.1"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-430
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-50.30.20
-        name: Execute Service Delivery
+        name: Perform Service Delivery System Startup
         level: 3
         description: >-
-          Perform the service interactions with the customer.
+          Establishing and activating the service delivery system, including preparing resources, processes, and controls required to begin delivering services.
         framework_refs:
           - framework: APQC-PCF
             external_id: "5.3.2"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-430
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-50.30.30
-        name: Complete Service Delivery
+        name: Operate Service Delivery System
         level: 3
         description: >-
-          Close out service engagements, capture deliverables, and confirm customer acceptance.
+          Executing day-to-day service delivery activities using the established service delivery system to meet service commitments, performance expectations, and customer needs.
         framework_refs:
           - framework: APQC-PCF
             external_id: "5.3.3"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-430
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-50.30.40
+        name: Assure Service Delivery System Service
+        level: 3
+        description: >-
+          Monitoring and assuring service delivery system performance to maintain service quality, reliability, and compliance with defined service standards and expectations.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "5.3.4"
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
   - id: BP-50.40
-    name: Manage Service Delivery
+    name: Deliver Service to Customer
     level: 2
     description: >-
-      Monitor, assure, and improve service delivery against SLAs and customer-experience targets.
+      Rendering service to the customer by initiating, executing, and completing tasks associated with service delivery.
     framework_refs:
       - framework: APQC-PCF
         external_id: "5.4"
-        version: "7.4.0"
-    realizes_capability_ids:
-      - BC-430
-      - BC-720
+        version: "8.0"
+    realizes_capability_ids: []
     children:
       - id: BP-50.40.10
-        name: Monitor Service Delivery Performance
+        name: Initiate Service Delivery
         level: 3
         description: >-
-          Measure service-delivery performance against SLAs and KPIs.
+          Collaborating with the customer to understand service needs. Review, understand, and modify the delivery scope with the organization needs of the customer in mind. Confirm readiness and identify, select, and assign resources. Plan for service delivery.
         framework_refs:
           - framework: APQC-PCF
             external_id: "5.4.1"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-430
-          - BC-720
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-50.40.20
-        name: Assure Service Delivery Quality
+        name: Execute Service Delivery
         level: 3
         description: >-
-          Run quality assurance over the delivered service, including audits and customer feedback loops.
+          Carrying out service delivery to the customer by creating and deploying the necessary solution. Analyze need and create a solution. Validate the solution and make changes if needed. Obtain approval to build/buy solution and then deploy solution to customer.
         framework_refs:
           - framework: APQC-PCF
             external_id: "5.4.2"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-720
-          - BC-430
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-50.40.30
-        name: Improve Service Delivery
+        name: Complete Service Delivery
         level: 3
         description: >-
-          Drive continuous improvement based on performance data and customer feedback.
+          Implementing final steps to complete service delivery to the customer. Evaluate success through project review, complete finance activities, and confirm delivery. Release resources and manage completion by harvesting knowledge and systems by archiving records.
         framework_refs:
           - framework: APQC-PCF
             external_id: "5.4.3"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-720
-          - BC-430
+            version: "8.0"
+        realizes_capability_ids: []
         children: []

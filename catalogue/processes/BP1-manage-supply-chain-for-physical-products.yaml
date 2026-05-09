@@ -3,7 +3,7 @@ name: Manage Supply Chain for Physical Products
 level: 1
 industry: Cross-Industry
 description: >-
-  Manage the end-to-end supply chain for physical products: planning, procurement, production, logistics, and warehousing. Renamed in APQC PCF v8.0 from "Deliver Physical Products" to emphasise the supply-chain framing.
+  Performing supply chain activities include planning supply chain, procuring materials and services, and managing logistics.
 framework_refs:
   - framework: APQC-PCF
     external_id: "4.0"
@@ -16,7 +16,7 @@ children:
     name: Plan for and Align Supply Chain Resources
     level: 2
     description: >-
-      Forecast demand, plan supply, balance capacity, and align inventory positions to meet service-level and cost targets.
+      Creating strategies for production and materials. Handle the demand for the products of the organization. Develop plans for handling materials. Develop and administer the schedule for master production. Plan for distribution requirements and its constraints by reviewing and assessing distribution policies and performance and by establishing quality standards and procedures.
     framework_refs:
       - framework: APQC-PCF
         external_id: "4.1"
@@ -29,7 +29,7 @@ children:
         name: Develop Production and Materials Strategies
         level: 3
         description: >-
-          Set the multi-period production and materials strategy to match the business plan.
+          Creating strategies for production processes, as well as the process of managing materials. Define production and supply constraints. Design a blueprint of the workplace. Establish rules and regulations regarding the employees, outsourcing of services, and the expenditure to be incurred on the manufacturing capital.
         framework_refs:
           - framework: APQC-PCF
             external_id: "4.1.1"
@@ -39,23 +39,21 @@ children:
           - BC-530
         children: []
       - id: BP-40.10.20
-        name: Manage Demand for Products and Services
+        name: Manage Demand for Products
         level: 3
         description: >-
-          Forecast and shape demand for products and services across channels and segments.
+          Forecasting demand for products using secondary research and customer feedback. Refine these forecasts. Inspect the approach used in creating forecasts, and determine its accuracy.
         framework_refs:
           - framework: APQC-PCF
             external_id: "4.1.2"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-520
-          - BC-400
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-40.10.30
         name: Create Materials Plan
         level: 3
         description: >-
-          Translate the demand plan into a materials and components plan.
+          Developing a scheme that allows for advance planning for the availability of raw materials and spares. Start with an unconstrained plan, and refine based on supply chain realities by identifying critical materials required for production, checking material specifications, and collaborating with all vendors over the supply.
         framework_refs:
           - framework: APQC-PCF
             external_id: "4.1.3"
@@ -68,7 +66,7 @@ children:
         name: Create and Manage Master Production Schedule
         level: 3
         description: >-
-          Build and maintain the master production schedule that drives execution.
+          Taking care of the master production plan. The master production includes creation and implementation of the site-level production plan, as well as management of the inventory that is currently in the production process.
         framework_refs:
           - framework: APQC-PCF
             external_id: "4.1.4"
@@ -76,11 +74,55 @@ children:
         realizes_capability_ids:
           - BC-520
         children: []
+      - id: BP-40.10.50
+        name: Plan Distribution Requirements
+        level: 3
+        description: >-
+          Maintaining master data of finished products and inventory. Identify the requirements of finished products at the destination, as well as partner requirements. Calculate the consolidation at source. Manage replenishment planning. Create and administer a dispatch plan. Calculate load plans for destinations and partners. Manage the cost of supplying these products. Ensure effective utilization of capacity.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "4.1.5"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-40.10.60
+        name: Establish Distribution Planning Constraints
+        level: 3
+        description: >-
+          Instituting the constraints for planning of distribution process. Create a plan that specifies every element in the distribution process from the blueprint of the distribution centers to how and when the inventory would reach the distribution centers.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "4.1.6"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-40.10.70
+        name: Review Distribution Planning Policies
+        level: 3
+        description: >-
+          Revisiting and refurbishing the policies for planning the distribution process. Asses the distribution strategies, including how the products are to be made available and sent to different distributors. Set guidelines regarding relationships between the sources and the distribution centers.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "4.1.7"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-40.10.80
+        name: Develop Quality Standards and Procedures
+        level: 3
+        description: >-
+          Developing standards and procedures for maintaining the quality of products/services. Establish desired quality targets. Create standardized procedures for the quality. Ensure quality specifications are effectively communicated.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "4.1.8"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
   - id: BP-40.20
     name: Procure Materials and Services
     level: 2
     description: >-
-      Source, contract, and acquire goods and services from suppliers, including supplier qualification and ongoing supplier management.
+      Creating a plan for procuring materials and services. Develop strategies for sourcing materials and services. Choose the most appropriate suppliers, and develop contracts with them. Order the materials and services as per the requirements. Manage relationships with suppliers.
     framework_refs:
       - framework: APQC-PCF
         external_id: "4.2"
@@ -90,73 +132,76 @@ children:
       - BC-510
     children:
       - id: BP-40.20.10
-        name: Develop Sourcing Strategies
+        name: Provide Sourcing Governance
         level: 3
         description: >-
-          Set category and item-level sourcing strategies aligned to the business plan.
+          Creating strategies for procuring materials and services from various sources, and for managing and evaluating categories. Establish a procurement process that describes the approach for obtaining products and purchasing activities. Evaluate the sources. Create sourcing relationships in order to continuously improve. Re-evaluate purchasing activities.
         framework_refs:
           - framework: APQC-PCF
             external_id: "4.2.1"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-500
-          - BC-510
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-40.20.20
-        name: Select Suppliers and Develop/Maintain Contracts
+        name: Develop Category Plan
         level: 3
         description: >-
-          Run RFx, qualify suppliers, and manage contracts across the lifecycle.
+          Defining sourcing strategies and plans for categories of materials or services to optimize cost, supply continuity, value, and alignment with organizational requirements and market conditions.
         framework_refs:
           - framework: APQC-PCF
             external_id: "4.2.2"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-500
-          - BC-510
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-40.20.30
-        name: Order Materials and Services
+        name: Select Suppliers and Develop/maintain Contracts
         level: 3
         description: >-
-          Issue purchase orders and receive goods and services against contracts.
+          Evaluating supplier options to select the most effective and efficient suppliers. Validate selected suppliers. Establish and manage supplier contracts.
         framework_refs:
           - framework: APQC-PCF
             external_id: "4.2.3"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-500
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-40.20.40
-        name: Appraise and Develop Suppliers
+        name: Order Materials and Services
         level: 3
         description: >-
-          Monitor supplier performance, develop strategic suppliers, and remediate underperformers.
+          Creating and approving requisitions and distributing purchase orders accordingly. Hasten the procurement process to satisfy internal needs.
         framework_refs:
           - framework: APQC-PCF
             external_id: "4.2.4"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-510
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-40.20.50
+        name: Manage Suppliers
+        level: 3
+        description: >-
+          Collecting and analyzing new information in order to track and rate suppliers and build relationships.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "4.2.5"
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
   - id: BP-40.30
-    name: Produce/Manufacture/Deliver Product
+    name: Produce/Assemble/Test Product
     level: 2
     description: >-
-      Convert inputs into finished products through production scheduling, manufacturing operations, and quality control.
+      Processing and delivering the finished goods manufactured by the organization. Schedule the production of products. Execute the product production activities. Perform tests to oversee and ensure quality of production. Maintain records of the production process. Track lots.
     framework_refs:
       - framework: APQC-PCF
         external_id: "4.3"
-        version: "7.4.0"
-    realizes_capability_ids:
-      - BC-520
-      - BC-720
+        version: "8.0"
+    realizes_capability_ids: []
     children:
       - id: BP-40.30.10
         name: Schedule Production
         level: 3
         description: >-
-          Convert the master schedule into shop-floor production schedules and orders.
+          Scheduling the production of final products. Generate a detailed schedule plan. Create and release production orders and lots. Schedule the planned and unplanned maintenance orders.
         framework_refs:
           - framework: APQC-PCF
             external_id: "4.3.1"
@@ -168,7 +213,7 @@ children:
         name: Produce/Assemble Product
         level: 3
         description: >-
-          Execute production and assembly to plan.
+          Manufacturing the product. Convert the raw materials to develop consumer-ready products. Manage the raw materials to implement the detailed production schedule. Reproduce defectives to establish and remediate cause. Ensure production optimization and benchmark performance.
         framework_refs:
           - framework: APQC-PCF
             external_id: "4.3.2"
@@ -180,7 +225,7 @@ children:
         name: Perform Quality Testing
         level: 3
         description: >-
-          Inspect and test products against quality specifications during and after production.
+          Executing tests to evaluate the quality of the products manufactured. Calibrate the test equipment. Conduct the actual tests. Record the results and outcomes of the quality test conducted.
         framework_refs:
           - framework: APQC-PCF
             external_id: "4.3.3"
@@ -192,7 +237,7 @@ children:
         name: Maintain Production Records and Manage Lot Traceability
         level: 3
         description: >-
-          Capture production records and maintain lot/serial traceability for compliance and recall.
+          Perpetuating the production records by systematically documenting and using it to ensure the effective management of lots. Determine the lot numbering system and its use. (The lot number enables tracking of the constituent parts, as well as labor and equipment records involved in the manufacturing of a product. It enables manufacturers and to perform quality control checks, calculate expiration dates, and issue corrections of their production output.)
         framework_refs:
           - framework: APQC-PCF
             external_id: "4.3.4"
@@ -201,24 +246,11 @@ children:
           - BC-520
           - BC-610
         children: []
-      - id: BP-40.30.50
-        name: Perform Manufacturing Maintenance
-        level: 3
-        description: >-
-          Maintain production equipment to keep capacity available and quality assured.
-        framework_refs:
-          - framework: APQC-PCF
-            external_id: "4.3.5"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-700
-          - BC-720
-        children: []
   - id: BP-40.40
     name: Manage Logistics and Warehousing
     level: 2
     description: >-
-      Run the inbound, internal, and outbound flow of goods: warehousing, transport, fulfilment, and reverse logistics.
+      Administering and overseeing all activities related to logistics and warehousing. Outline and establish a strategy for the logistics function. Plan and administer the flow of inbound materials. Administer the operational activities of warehousing and outbound transportation. Manage reverse logistics including returns and exchanges.
     framework_refs:
       - framework: APQC-PCF
         external_id: "4.4"
@@ -228,22 +260,21 @@ children:
       - BC-530
     children:
       - id: BP-40.40.10
-        name: Define Logistics Strategy
+        name: Provide Logistics Governance
         level: 3
         description: >-
-          Set the logistics-network strategy: footprint, modes, partners, service levels.
+          Outlining the strategy for managing logistics. Translate customer requirements logistic requirements. Create an efficient logistic network and outsourcing portions of logistics activities. Design a logistics strategy that optimizes transportation costs and schedule. Define key performance indicators.
         framework_refs:
           - framework: APQC-PCF
             external_id: "4.4.1"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-520
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-40.40.20
         name: Plan and Manage Inbound Material Flow
         level: 3
         description: >-
-          Plan and execute the inbound flow of materials from suppliers to facilities.
+          Creating and executing a strategy for all the internal activities related to the flow/transfer of inbound materials. This process includes planning inbound material receipts, managing inbound material flow, monitoring inbound delivery performance, managing the flow of returned products, controlling the quality of returned parts, and salvaging or repairing returned products.
         framework_refs:
           - framework: APQC-PCF
             external_id: "4.4.2"
@@ -256,7 +287,7 @@ children:
         name: Operate Warehousing
         level: 3
         description: >-
-          Run warehousing operations: receiving, putaway, picking, and shipping.
+          Tracking the inventory deployment. Accept and store products. Ship the products. Measure the accuracy of the inventory. Assess the performance of the outsourced logistics activities.
         framework_refs:
           - framework: APQC-PCF
             external_id: "4.4.3"
@@ -268,7 +299,7 @@ children:
         name: Operate Outbound Transportation
         level: 3
         description: >-
-          Plan and execute outbound transportation to customers and channels.
+          Creating a plan that specifies the schedule and system for transportation and delivery of the outbound products, as well as tracking the performance of the carrier delivery system. Conduct vehicle management and processing of all carrier-related documents.
         framework_refs:
           - framework: APQC-PCF
             external_id: "4.4.4"
@@ -277,15 +308,13 @@ children:
           - BC-520
         children: []
       - id: BP-40.40.50
-        name: Manage Returns; Manage Reverse Logistics
+        name: Deliver Last Mile Delivery Services
         level: 3
         description: >-
-          Run returns processing and the reverse-logistics flow for repairs, recalls, and disposal.
+          Validating specific service requirements for individual customers. Determine and schedule resource to fulfill these requirements. Provide service to specific individual customers. Ensure the quality of service delivery.
         framework_refs:
           - framework: APQC-PCF
             external_id: "4.4.5"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-520
-          - BC-430
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
