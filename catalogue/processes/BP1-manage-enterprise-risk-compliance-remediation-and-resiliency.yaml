@@ -2,17 +2,8 @@ id: BP-110
 name: Manage Enterprise Risk, Compliance, Remediation, and Resiliency
 level: 1
 industry: Cross-Industry
-aliases:
-  - GRC
-  - Governance, Risk, and Compliance
-  - Enterprise Risk Management
-  - ERM
 description: >-
-  Run the enterprise governance-risk-and-compliance (GRC) function —
-  enterprise risk management, regulatory compliance, remediation, and
-  business resilience and continuity. Anchored on COSO ERM 2017 and
-  ISO 31000:2018 (risk management) with APQC Cross-Industry PCF v8.0
-  retained as a secondary cross-walk.
+  Run the enterprise governance-risk-and-compliance (GRC) function — enterprise risk management, regulatory compliance, remediation, and business resilience and continuity. Anchored on COSO ERM 2017 and ISO 31000:2018 (risk management) with APQC Cross-Industry PCF v8.0 retained as a secondary cross-walk.
 framework_refs:
   - framework: COSO-ERM
     external_id: ERM Integrated Framework
@@ -33,17 +24,8 @@ children:
   - id: BP-110.10
     name: Manage Enterprise Risk
     level: 2
-    aliases:
-      - Enterprise Risk Management
-      - ERM
-      - Risk Management
     description: >-
-      Set the enterprise risk-management framework, oversee ERM
-      activities at the enterprise level, and roll the framework down
-      into business units. Maps to COSO ERM 2017 (Governance and
-      Culture, Strategy and Objective Setting, Performance, Review
-      and Revision, Information, Communication, and Reporting) and
-      ISO 31000:2018 (principles, framework, process).
+      Set the enterprise risk-management framework, oversee ERM activities at the enterprise level, and roll the framework down into business units. Maps to COSO ERM 2017 (Governance and Culture, Strategy and Objective Setting, Performance, Review and Revision, Information, Communication, and Reporting) and ISO 31000:2018 (principles, framework, process).
     framework_refs:
       - framework: COSO-ERM
         external_id: ERM 2017
@@ -61,10 +43,6 @@ children:
       - id: BP-110.10.10
         name: Establish the Enterprise Risk Framework and Policies
         level: 3
-        aliases:
-          - ERM Framework
-          - Risk Appetite Statement
-          - Risk Tolerance
         description: >-
           Creating an agenda for the rules and regulations of enterprise risk that deal with hazardous, financial, operational, and strategic risks. This is inclusive of all forms of new and evolving technology such as artificial intelligence (AI).
         framework_refs:
@@ -84,9 +62,6 @@ children:
       - id: BP-110.10.20
         name: Oversee and Coordinate Enterprise Risk Management Activities
         level: 3
-        aliases:
-          - ERM Oversight
-          - Risk Committee Operations
         description: >-
           Coordinating to plan, organize, lead, and control the activities of an organization in order to minimize the special effects of risk on capital and earnings.
         framework_refs:
@@ -103,10 +78,6 @@ children:
       - id: BP-110.10.30
         name: Manage Business Unit and Function Risk
         level: 3
-        aliases:
-          - Operational Risk Management
-          - ORM
-          - Risk Register
         description: >-
           Analyzing the threats a business unit/function faces to prioritize the controls it implements.
         framework_refs:
@@ -123,15 +94,8 @@ children:
   - id: BP-110.20
     name: Manage Compliance
     level: 2
-    aliases:
-      - Regulatory Compliance
-      - Compliance Management
-      - Compliance Operations
     description: >-
-      Establish the compliance framework and operate the regulatory-
-      compliance programme. Maps to COSO ERM Component 5 (Information,
-      Communication, and Reporting) plus regulatory frameworks (SOX,
-      GDPR, HIPAA, PCI DSS, etc. depending on industry).
+      Establish the compliance framework and operate the regulatory- compliance programme. Maps to COSO ERM Component 5 (Information, Communication, and Reporting) plus regulatory frameworks (SOX, GDPR, HIPAA, PCI DSS, etc. depending on industry).
     framework_refs:
       - framework: COSO-ERM
         external_id: ERM 2017
@@ -148,9 +112,6 @@ children:
       - id: BP-110.20.10
         name: Establish Compliance Framework and Policies
         level: 3
-        aliases:
-          - Compliance Framework Design
-          - Policy Management
         description: >-
           Developing a set of procedures detailing an organization's progress in complying with established guidelines, provisions, and legislation.
         framework_refs:
@@ -169,12 +130,6 @@ children:
       - id: BP-110.20.20
         name: Manage Regulatory Compliance
         level: 3
-        aliases:
-          - Regulatory Reporting
-          - GDPR Compliance
-          - HIPAA Compliance
-          - PCI DSS Compliance
-          - SOX Compliance
         description: >-
           Obeying laws, guidelines, strategies, and stipulations related to the business.
         framework_refs:
@@ -190,14 +145,8 @@ children:
   - id: BP-110.30
     name: Manage Remediation Efforts
     level: 2
-    aliases:
-      - Remediation Management
-      - Issue Remediation
     description: >-
-      Plan and execute remediation activities to address compliance
-      findings, environmental contamination, regulatory violations, or
-      operational damage. Maps to ISO 31000:2018 risk-treatment
-      activities and incident-response/remediation practices.
+      Plan and execute remediation activities to address compliance findings, environmental contamination, regulatory violations, or operational damage. Maps to ISO 31000:2018 risk-treatment activities and incident-response/remediation practices.
     framework_refs:
       - framework: ISO-31000
         external_id: ISO 31000 §6.5
@@ -214,10 +163,6 @@ children:
       - id: BP-110.30.10
         name: Create Remediation Plans
         level: 3
-        aliases:
-          - Remediation Planning
-          - Corrective Action Plan
-          - CAP
         description: >-
           Creating plans for remediation efforts. Make a plan to address a case of environmental adulteration. Identify and treat the adulteration so that the area will become operational again.
         framework_refs:
@@ -233,9 +178,6 @@ children:
       - id: BP-110.30.20
         name: Contact and Confer with Experts
         level: 3
-        aliases:
-          - Expert Consultation
-          - Subject-Matter Expert Engagement
         description: >-
           Discussing and soliciting advice from experts for in order to incorporate their suggestion (regarding Create remediation plans).
         framework_refs:
@@ -249,10 +191,8 @@ children:
           - BC-730
         children: []
       - id: BP-110.30.30
-        name: Identify/Dedicate Resources
+        name: Identify and Dedicate Resources
         level: 3
-        aliases:
-          - Remediation Resource Allocation
         description: >-
           Identifying and dedicating the resources for managing remediation efforts. Discern the resources needed for remediation efforts. Dispense with resources in a sound and well-reasoned manner.
         framework_refs:
@@ -268,9 +208,6 @@ children:
       - id: BP-110.30.40
         name: Investigate Legal Aspects
         level: 3
-        aliases:
-          - Legal Investigation
-          - Compliance Legal Review
         description: >-
           Examining regulatory and legislative frameworks. Obligate the organization to remediate any damages through compensations, fines, and any other remedial efforts necessitated to correct the situations. Analyze local environmental laws, binding international covenants, etc. in order to examine legal accuracy about the rules and procedures.
         framework_refs:
@@ -287,9 +224,6 @@ children:
       - id: BP-110.30.50
         name: Investigate Damage Cause
         level: 3
-        aliases:
-          - Root-Cause Analysis
-          - RCA
         description: >-
           Studying the causes of damage, which could be environmental, physical, social, etc. at country level in order to institute better policies and regulations.
         framework_refs:
@@ -305,9 +239,6 @@ children:
       - id: BP-110.30.60
         name: Amend or Create Policy
         level: 3
-        aliases:
-          - Policy Update
-          - Policy Issuance
         description: >-
           Crafting a new framework of policies and procedures for deploying remediation efforts, or change existing policies and procedures. Adapt the policy structure to the context of the apposite national and international regulatory frameworks.
         framework_refs:
@@ -323,16 +254,8 @@ children:
   - id: BP-110.40
     name: Manage Business Resiliency
     level: 2
-    aliases:
-      - Business Continuity
-      - BCM
-      - Disaster Recovery
-      - Crisis Management
     description: >-
-      Establish, plan, test, and operate the business-resilience and
-      continuity programme. Maps to ISO 22301 (Business Continuity
-      Management Systems) plus COSO ERM Component 4 (Performance,
-      including risk response and reporting).
+      Establish, plan, test, and operate the business-resilience and continuity programme. Maps to ISO 22301 (Business Continuity Management Systems) plus COSO ERM Component 4 (Performance, including risk response and reporting).
     framework_refs:
       - framework: COSO-ERM
         external_id: ERM 2017 Component 4
@@ -349,9 +272,6 @@ children:
       - id: BP-110.40.10
         name: Develop the Business Resilience Strategy
         level: 3
-        aliases:
-          - Resilience Strategy
-          - BCM Strategy
         description: >-
           Creating a strategy for rapidly adapting to disturbances. Maintain continuous business processes and protecting employees, assets, and overall brand equity. This is inclusive of all forms of new and evolving technology such as artificial intelligence (AI).
         framework_refs:
@@ -367,11 +287,6 @@ children:
       - id: BP-110.40.20
         name: Perform Continuous Business Operations Planning
         level: 3
-        aliases:
-          - Business Continuity Planning
-          - BCP
-          - Disaster Recovery Planning
-          - DR Planning
         description: >-
           Developing plans to ensure continuous business operations.
         framework_refs:
@@ -387,10 +302,6 @@ children:
       - id: BP-110.40.30
         name: Test Continuous Business Operations
         level: 3
-        aliases:
-          - BCP Testing
-          - DR Drills
-          - Tabletop Exercise
         description: >-
           Assessing ongoing activities within the organization that are not intended to stop except for in an emergency.
         framework_refs:
@@ -406,9 +317,6 @@ children:
       - id: BP-110.40.40
         name: Maintain Continuous Business Operations
         level: 3
-        aliases:
-          - BCM Operations
-          - Continuity Operations
         description: >-
           Evaluating business operations. Determine which activities generate revenues, perform best, and provide good returns.
         framework_refs:
@@ -424,9 +332,6 @@ children:
       - id: BP-110.40.50
         name: Share Knowledge of Specific Risks Across Other Parts of the Organization
         level: 3
-        aliases:
-          - Risk Knowledge Sharing
-          - Lessons Learned
         description: >-
           Sharing information about risks and resilience strategies of business operations across the organization so that prospective risks can be avoided.
         framework_refs:

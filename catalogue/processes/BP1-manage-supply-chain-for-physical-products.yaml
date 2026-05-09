@@ -2,17 +2,8 @@ id: BP-40
 name: Manage Supply Chain for Physical Products
 level: 1
 industry: Cross-Industry
-aliases:
-  - Plan-Source-Make-Deliver
-  - SCOR Supply Chain Operations
 description: >-
-  Plan, source, make, deliver, and return physical products end-to-end.
-  Structured along the SCOR (Supply Chain Operations Reference) macro
-  processes Plan, Source, Make, Deliver — with returns and reverse
-  logistics scoped under Deliver and Enable functions distributed across
-  the relevant L2 categories. APQC PCF Cross-Industry v8.0 retained as
-  a secondary cross-walk so existing tooling and benchmarking continue
-  to resolve.
+  Plan, source, make, deliver, and return physical products end-to-end. Structured along the SCOR (Supply Chain Operations Reference) macro processes Plan, Source, Make, Deliver — with returns and reverse logistics scoped under Deliver and Enable functions distributed across the relevant L2 categories. APQC PCF Cross-Industry v8.0 retained as a secondary cross-walk so existing tooling and benchmarking continue to resolve.
 framework_refs:
   - framework: SCOR
     external_id: Supply Chain Operations
@@ -28,16 +19,8 @@ children:
   - id: BP-40.10
     name: Plan Supply Chain Operations
     level: 2
-    aliases:
-      - Sales and Operations Planning
-      - S&OP
-      - Plan for and Align Supply Chain Resources
     description: >-
-      Develop and align demand, supply, production, and distribution plans
-      across the supply chain. Covers production and materials strategy,
-      demand forecasting and reconciliation, master scheduling,
-      distribution requirements planning (DRP), and quality standard-setting.
-      Maps to SCOR Plan (sP).
+      Develop and align demand, supply, production, and distribution plans across the supply chain. Covers production and materials strategy, demand forecasting and reconciliation, master scheduling, distribution requirements planning (DRP), and quality standard-setting. Maps to SCOR Plan (sP).
     framework_refs:
       - framework: SCOR
         external_id: sP
@@ -68,9 +51,6 @@ children:
       - id: BP-40.10.20
         name: Manage Demand for Products
         level: 3
-        aliases:
-          - Demand Forecasting
-          - Demand Planning
         description: >-
           Forecasting demand for products using secondary research and customer feedback. Refine these forecasts. Inspect the approach used in creating forecasts, and determine its accuracy.
         framework_refs:
@@ -87,9 +67,6 @@ children:
       - id: BP-40.10.30
         name: Create Materials Plan
         level: 3
-        aliases:
-          - Material Requirements Planning
-          - MRP
         description: >-
           Developing a scheme that allows for advance planning for the availability of raw materials and spares. Start with an unconstrained plan, and refine based on supply chain realities by identifying critical materials required for production, checking material specifications, and collaborating with all vendors over the supply.
         framework_refs:
@@ -106,8 +83,6 @@ children:
       - id: BP-40.10.40
         name: Create and Manage Master Production Schedule
         level: 3
-        aliases:
-          - MPS
         description: >-
           Taking care of the master production plan. The master production includes creation and implementation of the site-level production plan, as well as management of the inventory that is currently in the production process.
         framework_refs:
@@ -123,9 +98,6 @@ children:
       - id: BP-40.10.50
         name: Plan Distribution Requirements
         level: 3
-        aliases:
-          - Distribution Requirements Planning
-          - DRP
         description: >-
           Maintaining master data of finished products and inventory. Identify the requirements of finished products at the destination, as well as partner requirements. Calculate the consolidation at source. Manage replenishment planning. Create and administer a dispatch plan. Calculate load plans for destinations and partners. Manage the cost of supplying these products. Ensure effective utilization of capacity.
         framework_refs:
@@ -191,17 +163,8 @@ children:
   - id: BP-40.20
     name: Source Materials and Services
     level: 2
-    aliases:
-      - Procurement
-      - Procure-to-Pay
-      - P2P
-      - Procure Materials and Services
     description: >-
-      Order, receive, and pay for materials and services from approved
-      suppliers. Includes sourcing strategy and category management,
-      supplier selection and contracting, requisitioning and purchase
-      order placement, and supplier performance management. Maps to SCOR
-      Source (sS) plus Enable Procurement (sE9) for governance.
+      Order, receive, and pay for materials and services from approved suppliers. Includes sourcing strategy and category management, supplier selection and contracting, requisitioning and purchase order placement, and supplier performance management. Maps to SCOR Source (sS) plus Enable Procurement (sE9) for governance.
     framework_refs:
       - framework: SCOR
         external_id: sS
@@ -233,9 +196,6 @@ children:
       - id: BP-40.20.20
         name: Develop Category Plan
         level: 3
-        aliases:
-          - Category Strategy
-          - Category Management
         description: >-
           Defining sourcing strategies and plans for categories of materials or services to optimize cost, supply continuity, value, and alignment with organizational requirements and market conditions.
         framework_refs:
@@ -252,9 +212,6 @@ children:
       - id: BP-40.20.30
         name: Select Suppliers and Develop/maintain Contracts
         level: 3
-        aliases:
-          - Supplier Selection
-          - Contract Negotiation
         description: >-
           Evaluating supplier options to select the most effective and efficient suppliers. Validate selected suppliers. Establish and manage supplier contracts.
         framework_refs:
@@ -271,9 +228,6 @@ children:
       - id: BP-40.20.40
         name: Order Materials and Services
         level: 3
-        aliases:
-          - Purchase Order Processing
-          - Requisition-to-PO
         description: >-
           Creating and approving requisitions and distributing purchase orders accordingly. Hasten the procurement process to satisfy internal needs.
         framework_refs:
@@ -290,10 +244,6 @@ children:
       - id: BP-40.20.50
         name: Manage Suppliers
         level: 3
-        aliases:
-          - Supplier Performance Management
-          - Supplier Relationship Management
-          - SRM
         description: >-
           Collecting and analyzing new information in order to track and rate suppliers and build relationships.
         framework_refs:
@@ -310,16 +260,8 @@ children:
   - id: BP-40.30
     name: Make Products
     level: 2
-    aliases:
-      - Production
-      - Manufacturing Operations
-      - Produce/Assemble/Test Product
     description: >-
-      Schedule, execute, and quality-control the production of finished
-      goods. Covers production scheduling, manufacturing and assembly,
-      in-process and final quality testing, and lot traceability. Maps
-      to SCOR Make (sM) — Make-to-Stock, Make-to-Order, and
-      Engineer-to-Order are mode variants pinned per node where relevant.
+      Schedule, execute, and quality-control the production of finished goods. Covers production scheduling, manufacturing and assembly, in-process and final quality testing, and lot traceability. Maps to SCOR Make (sM) — Make-to-Stock, Make-to-Order, and Engineer-to-Order are mode variants pinned per node where relevant.
     framework_refs:
       - framework: SCOR
         external_id: sM
@@ -334,9 +276,6 @@ children:
       - id: BP-40.30.10
         name: Schedule Production
         level: 3
-        aliases:
-          - Production Scheduling
-          - Shop-Floor Scheduling
         description: >-
           Scheduling the production of final products. Generate a detailed schedule plan. Create and release production orders and lots. Schedule the planned and unplanned maintenance orders.
         framework_refs:
@@ -350,11 +289,8 @@ children:
           - BC-520
         children: []
       - id: BP-40.30.20
-        name: Produce/Assemble Product
+        name: Produce and Assemble Product
         level: 3
-        aliases:
-          - Manufacture Product
-          - Assemble Product
         description: >-
           Manufacturing the product. Convert the raw materials to develop consumer-ready products. Manage the raw materials to implement the detailed production schedule. Reproduce defectives to establish and remediate cause. Ensure production optimization and benchmark performance.
         framework_refs:
@@ -370,9 +306,6 @@ children:
       - id: BP-40.30.30
         name: Perform Quality Testing
         level: 3
-        aliases:
-          - Quality Control
-          - QC Testing
         description: >-
           Executing tests to evaluate the quality of the products manufactured. Calibrate the test equipment. Conduct the actual tests. Record the results and outcomes of the quality test conducted.
         framework_refs:
@@ -388,9 +321,6 @@ children:
       - id: BP-40.30.40
         name: Maintain Production Records and Manage Lot Traceability
         level: 3
-        aliases:
-          - Lot Traceability
-          - Batch Records
         description: >-
           Perpetuating the production records by systematically documenting and using it to ensure the effective management of lots. Determine the lot numbering system and its use. (The lot number enables tracking of the constituent parts, as well as labor and equipment records involved in the manufacturing of a product. It enables manufacturers and to perform quality control checks, calculate expiration dates, and issue corrections of their production output.)
         framework_refs:
@@ -407,18 +337,8 @@ children:
   - id: BP-40.40
     name: Deliver Products
     level: 2
-    aliases:
-      - Order Fulfillment
-      - Order Fulfillment & Shipping
-      - Outbound Logistics
-      - Manage Logistics and Warehousing
     description: >-
-      Receive customer orders, fulfil them from inventory or production,
-      ship to destination, manage the last-mile, and process customer
-      returns. Covers logistics governance and network design, inbound
-      and reverse-logistics flow, warehousing and pick-pack-ship,
-      outbound transportation, and last-mile delivery. Maps to SCOR
-      Deliver (sD) plus Return (sR) for the reverse flows.
+      Receive customer orders, fulfil them from inventory or production, ship to destination, manage the last-mile, and process customer returns. Covers logistics governance and network design, inbound and reverse-logistics flow, warehousing and pick-pack-ship, outbound transportation, and last-mile delivery. Maps to SCOR Deliver (sD) plus Return (sR) for the reverse flows.
     framework_refs:
       - framework: SCOR
         external_id: sD
@@ -433,9 +353,6 @@ children:
       - id: BP-40.40.10
         name: Provide Logistics Governance
         level: 3
-        aliases:
-          - Logistics Network Design
-          - Logistics Strategy
         description: >-
           Outlining the strategy for managing logistics. Translate customer requirements logistic requirements. Create an efficient logistic network and outsourcing portions of logistics activities. Design a logistics strategy that optimizes transportation costs and schedule. Define key performance indicators.
         framework_refs:
@@ -453,11 +370,6 @@ children:
       - id: BP-40.40.20
         name: Manage Inbound Logistics and Returns
         level: 3
-        aliases:
-          - Inbound Logistics
-          - Reverse Logistics
-          - Returns Management
-          - Plan and Manage Inbound Material Flow
         description: >-
           Plan, receive, and inspect inbound materials and customer returns. Includes inbound receipt scheduling, monitoring of inbound delivery performance, processing of returned products, quality control of returned parts, and salvage or repair. Covers SCOR Source-Return (sSR) and Deliver-Return (sDR).
         framework_refs:
@@ -474,10 +386,6 @@ children:
       - id: BP-40.40.30
         name: Operate Warehousing
         level: 3
-        aliases:
-          - Order Fulfillment Operations
-          - Pick-Pack-Ship
-          - Warehouse Operations
         description: >-
           Tracking the inventory deployment. Accept and store products. Pick, pack, and ship customer orders. Measure the accuracy of the inventory. Assess the performance of the outsourced logistics activities.
         framework_refs:
@@ -493,10 +401,6 @@ children:
       - id: BP-40.40.40
         name: Operate Outbound Transportation
         level: 3
-        aliases:
-          - Shipping Operations
-          - Freight Management
-          - Carrier Management
         description: >-
           Creating a plan that specifies the schedule and system for transportation and delivery of the outbound products, as well as tracking the performance of the carrier delivery system. Conduct vehicle management and processing of all carrier-related documents.
         framework_refs:
@@ -512,10 +416,6 @@ children:
       - id: BP-40.40.50
         name: Operate Last-Mile Delivery
         level: 3
-        aliases:
-          - Last-Mile Delivery
-          - Final-Mile Delivery
-          - Deliver Last Mile Delivery Services
         description: >-
           Validate specific service requirements for individual customers. Determine and schedule resource to fulfill these requirements. Provide service to specific individual customers. Ensure the quality of service delivery.
         framework_refs:
