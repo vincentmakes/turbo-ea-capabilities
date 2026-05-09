@@ -3,7 +3,7 @@ name: Manage Financial Resources
 level: 1
 industry: Cross-Industry
 description: >-
-  Run enterprise finance end-to-end: planning and management accounting, transaction processing (revenue, AP, payroll), reporting, treasury, controls, tax, and consolidation.
+  Overseeing key back-office processes for organizations. This category includes process groups related to planning and management accounting, revenue accounting, general accounting and reporting, fixed-asset project accounting, payroll, accounts payable and expense reimbursements, treasury operations, internal controls, tax management, international funds/consolidation, and global trade services.
 framework_refs:
   - framework: APQC-PCF
     external_id: "9.0"
@@ -18,7 +18,7 @@ children:
     name: Perform Planning and Management Accounting
     level: 2
     description: >-
-      Plan, budget, forecast, and produce management-accounting analyses that drive business decisions.
+      Determining different stages of the planning process and accounting. Classify, determine, analyze, interpret, and communicate information to make up-to-date business decisions for better management and control functions.
     framework_refs:
       - framework: APQC-PCF
         external_id: "9.1"
@@ -27,59 +27,65 @@ children:
       - BC-230
     children:
       - id: BP-90.10.10
-        name: Perform Planning/Budgeting/Forecasting
+        name: Develop and Manage Financial Resources Strategy
         level: 3
         description: >-
-          Run planning, budgeting, and forecasting cycles across the enterprise.
+          Ensuring the effective allocation, utilization, and sustainability of financial assets. Activities include analyzing internal and external financial drivers; identifying long-term funding needs; evaluating investment, capital, and liquidity requirements; and defining guiding financial principles that support enterprise objectives.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.1.1"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-230
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-90.10.20
-        name: Perform Cost Accounting and Control
+        name: Perform Planning/budgeting/forecasting
         level: 3
         description: >-
-          Operate cost-accounting structures and controls.
+          Allocating funds to meet future and current financial goals. Led by the chief financial officer, have the finance function plan, budget, and forecast in order to determine and describe long and short-term financial goals.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.1.2"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-230
-          - BC-200
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-90.10.30
-        name: Perform Cost Management
+        name: Perform Cost Accounting and Control
         level: 3
         description: >-
-          Analyse and manage cost across products, services, and units.
+          Defining costs to be incurred and methods for optimum utilization. Determine the costs of products, processes, projects, etc. to compile in the financial statements, as well as to assist management in making decisions regarding planning and control. Control costs by managing and reducing business expenses.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.1.3"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-230
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-90.10.40
-        name: Evaluate and Manage Financial Performance
+        name: Perform Cost Management
         level: 3
         description: >-
-          Evaluate financial performance and drive corrective actions.
+          Deciding which expenses can be avoided to reduce some costs and increase revenues. Plan and control the organization's budget to forecast future expenditures.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.1.4"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-230
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-90.10.50
+        name: Evaluate and Manage Financial Performance
+        level: 3
+        description: >-
+          Checking and achieving predetermined financial targets and timelines. Assess and manage the profitability, feasibility, and consistency of a business or project. Study the revenues generated.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "9.1.5"
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
   - id: BP-90.20
     name: Perform Revenue Accounting
     level: 2
     description: >-
-      Recognise, record, and report revenue in accordance with accounting standards and contract terms.
+      Comparing revenue targets to reality. Review all transactions and entries passed in final accounts in a year in order to examine profits.
     framework_refs:
       - framework: APQC-PCF
         external_id: "9.2"
@@ -91,7 +97,7 @@ children:
         name: Process Customer Credit
         level: 3
         description: >-
-          Manage customer credit limits and credit decisions.
+          Evaluating and processing requests for advances. Evaluate credit requests by customers requiring loans to buy products/services.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.2.1"
@@ -101,10 +107,10 @@ children:
           - BC-420
         children: []
       - id: BP-90.20.20
-        name: Invoice Customers
+        name: Invoice Customer
         level: 3
         description: >-
-          Generate and issue customer invoices.
+          Preparing detailed reports of customer purchases. Prepare a commercial document between the seller and customer with details about transaction. Detail the quantity purchased, price of products/services, date, parties involved, unique invoice number, and tax information.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.2.2"
@@ -116,7 +122,7 @@ children:
         name: Process Accounts Receivable (AR)
         level: 3
         description: >-
-          Maintain the AR sub-ledger and apply customer payments.
+          Processing payments due from customers. This includes all processing of funds received, whether by check or electronically. This does not include the generation of invoices.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.2.3"
@@ -128,7 +134,7 @@ children:
         name: Manage and Process Collections
         level: 3
         description: >-
-          Run collections activities for past-due receivables.
+          Posting entries to respective accounts, and preparing accounts for receivables. Manage the cash collected by the business from its debtors. Record it in the books of accounts to provide clear information about the availability of the cash.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.2.4"
@@ -137,10 +143,10 @@ children:
           - BC-200
         children: []
       - id: BP-90.20.50
-        name: Manage and Process Adjustments/Deductions
+        name: Manage and Process Adjustments/deductions
         level: 3
         description: >-
-          Process AR adjustments, deductions, and write-offs.
+          Creating and providing funds for necessary adjustments and deductions, including all expenses that were required for the business at certain point in time.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.2.5"
@@ -152,7 +158,7 @@ children:
     name: Perform General Accounting and Reporting
     level: 2
     description: >-
-      Maintain the general ledger, perform period-end close, and produce statutory and management financial reports.
+      Making statements about business activities and functions. Prepare financial statements (balance sheet, income statement, statement of cash flows, and statement of stockholders' equity) according to accounting concepts and principles.
     framework_refs:
       - framework: APQC-PCF
         external_id: "9.3"
@@ -161,22 +167,21 @@ children:
       - BC-200
     children:
       - id: BP-90.30.10
-        name: Manage Policies and Procedures
+        name: Manage Financial Policies and Procedures
         level: 3
         description: >-
-          Maintain accounting policies, procedures, and the chart of accounts.
+          Creating procedures to perform general accounting and reporting. Follow the rules and regulations made for a particular process in the business. Publish accounting policies.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.3.1"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-200
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-90.30.20
         name: Perform General Accounting
         level: 3
         description: >-
-          Operate the GL through journal entry, reconciliation, and period-end close.
+          Applying basic principles, concepts, and accounting practices in recording and preparing final accounts, and using accounting information in management.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.3.2"
@@ -185,10 +190,10 @@ children:
           - BC-200
         children: []
       - id: BP-90.30.30
-        name: Perform Fixed-Asset Accounting
+        name: Perform Fixed-asset Accounting
         level: 3
         description: >-
-          Account for fixed assets across acquisition, depreciation, and disposal.
+          Accounting for long-term and fixed assets. Record purchased, fixed assets that are not easily convertible into cash. Account for costs, useful life, resale value, depreciation, and amortization.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.3.3"
@@ -200,7 +205,7 @@ children:
         name: Perform Financial Reporting
         level: 3
         description: >-
-          Produce statutory, management, and regulatory financial reports.
+          Reporting on the organization's financial status to stakeholders. Include balance sheets, income statements, cash flow statements, and statements of shareholders' equity.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.3.4"
@@ -210,10 +215,10 @@ children:
           - BC-230
         children: []
   - id: BP-90.40
-    name: Manage Fixed-Asset Project Accounting
+    name: Manage Fixed-asset Project Accounting
     level: 2
     description: >-
-      Account for capital projects and fixed assets across acquisition, depreciation, impairment, and disposal.
+      Managing accounts for large funds-invested projects. Manage and account for fixed assets projects (capital projects), which required significant capital investments over many years.
     framework_refs:
       - framework: APQC-PCF
         external_id: "9.4"
@@ -226,7 +231,7 @@ children:
         name: Perform Capital Planning and Project Approval
         level: 3
         description: >-
-          Plan capital investment and approve capital projects.
+          Preparing a project finance report to solicit approvals in capital projects. Prepare budgets for projects that require heavy investments. Report on project finances to solicit approvals from management.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.4.1"
@@ -239,7 +244,7 @@ children:
         name: Perform Capital Project Accounting
         level: 3
         description: >-
-          Account for capital projects across the construction-in-progress lifecycle.
+          Accounting for large-scale and large-cost investments. Manage and account for ongoing activities related to capital projects, including setting up new projects, recording project transactions, monitoring and tracking spending, closing and capitalizing projects, and measuring the financial returns on completed projects.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.4.2"
@@ -248,36 +253,11 @@ children:
           - BC-200
           - BC-900
         children: []
-      - id: BP-90.40.30
-        name: Perform Asset Valuation and Tracking
-        level: 3
-        description: >-
-          Value, track, and reconcile the fixed-asset register.
-        framework_refs:
-          - framework: APQC-PCF
-            external_id: "9.4.3"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-200
-        children: []
-      - id: BP-90.40.40
-        name: Manage Decommissioning, Disposals, Write-offs
-        level: 3
-        description: >-
-          Account for asset retirements, disposals, and write-offs.
-        framework_refs:
-          - framework: APQC-PCF
-            external_id: "9.4.4"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-200
-          - BC-740
-        children: []
   - id: BP-90.50
     name: Process Payroll
     level: 2
     description: >-
-      Calculate, pay, and report employee compensation, including statutory withholdings and benefits accounting.
+      Handling reporting time, managing pay, and processing taxes from salaries. Pay employees. Withhold taxes. Confirm the correct funds are paid to the correct government agency.
     framework_refs:
       - framework: APQC-PCF
         external_id: "9.5"
@@ -290,7 +270,7 @@ children:
         name: Report Time
         level: 3
         description: >-
-          Capture and approve employee time and attendance.
+          Recording the reporting time of employees on-site. Track working days, salary calculations, holidays taken, number of hours spend in the office, billing hours, etc.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.5.1"
@@ -302,7 +282,7 @@ children:
         name: Manage Pay
         level: 3
         description: >-
-          Calculate pay and execute payroll runs.
+          Managing the total payments made in employees payroll, including bonuses and compensation.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.5.2"
@@ -312,36 +292,21 @@ children:
           - BC-200
         children: []
       - id: BP-90.50.30
-        name: Process Payroll Taxes
+        name: Manage and Process Payroll Taxes
         level: 3
         description: >-
-          Calculate, withhold, and remit payroll taxes.
+          Deducting and paying taxes from employees' salaries.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.5.3"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-220
-          - BC-300
-        children: []
-      - id: BP-90.50.40
-        name: Manage Time-Tracking and Labour-Cost Recovery
-        level: 3
-        description: >-
-          Track labour cost to projects, customers, or activities for cost recovery.
-        framework_refs:
-          - framework: APQC-PCF
-            external_id: "9.5.4"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-200
-          - BC-230
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
   - id: BP-90.60
     name: Process Accounts Payable and Expense Reimbursements
     level: 2
     description: >-
-      Validate, approve, and pay supplier invoices and employee expense claims.
+      Handling bills and reimbursements to be made. Make payments for goods or services taken or used on behalf of the organization.
     framework_refs:
       - framework: APQC-PCF
         external_id: "9.6"
@@ -354,7 +319,7 @@ children:
         name: Process Accounts Payable (AP)
         level: 3
         description: >-
-          Process supplier invoices through 3-way match, approval, and payment.
+          Processing payments of operating expenses and other supplier charges. This includes the development of policies and procedures around processing of accounts payable and all operations. This process is often supported by key technology enablers.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.6.1"
@@ -367,7 +332,7 @@ children:
         name: Process Expense Reimbursements
         level: 3
         description: >-
-          Process employee expense claims through approval and payment.
+          Processing reimbursements to employees for the expenses incurred during the course of business. Approve and process advancements and reimbursements for employee expenses on the organization's behalf. Capture and report relevant tax data and manage personal accounts.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.6.2"
@@ -376,11 +341,22 @@ children:
           - BC-200
           - BC-300
         children: []
+      - id: BP-90.60.30
+        name: Manage Corporate Credit Cards
+        level: 3
+        description: >-
+          Handling and authoring credit cards to business entities or for corporate purchases.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "9.6.3"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
   - id: BP-90.70
     name: Manage Treasury Operations
     level: 2
     description: >-
-      Manage cash, liquidity, banking, debt, investments, and financial-risk hedging.
+      Managing business's investments in trading in bonds, currencies, financial derivatives, etc. Manage the financial assets and holdings of the organization. Optimize the organization's liquidity. Invest excess cash. Reduce financial risks.
     framework_refs:
       - framework: APQC-PCF
         external_id: "9.7"
@@ -392,7 +368,7 @@ children:
         name: Manage Treasury Policies and Procedures
         level: 3
         description: >-
-          Maintain treasury policies, controls, and authority matrices.
+          Managing rules and regulations for investments in trading in bonds, currencies, financial derivatives, etc. Establish policies and procedures for investments made. Optimize liquidity in treasury operations.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.7.1"
@@ -404,7 +380,7 @@ children:
         name: Manage Cash
         level: 3
         description: >-
-          Manage cash positions, forecasts, and liquidity.
+          Taking care of all cash-related activities in the business. Manage and reconcile cash positions. Manage cash equivalents. Process and oversee electronic fund transfers. Develop cash flow forecasts. Manage cash flows. Produce cash management accounting transactions and reports. Manage and oversee banking relationships. Analyze, negotiate, resolve, and confirm bank fees.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.7.2"
@@ -413,10 +389,10 @@ children:
           - BC-210
         children: []
       - id: BP-90.70.30
-        name: Manage In-House Bank Accounts
+        name: Manage In-house Bank Accounts
         level: 3
         description: >-
-          Operate in-house bank structures and intercompany funding.
+          Managing financial services provided by an in-house bank structure in the corporation that is operating like a commercial bank.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.7.3"
@@ -425,10 +401,10 @@ children:
           - BC-210
         children: []
       - id: BP-90.70.40
-        name: Manage Debt and Investments
+        name: Manage Debt and Investment
         level: 3
         description: >-
-          Manage corporate debt portfolios and investments.
+          Taking care of the organization's financial position. Manage its loans or debts from different sources and investments. Leverage the most profitable options to balance the financial position in the market.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.7.4"
@@ -440,7 +416,7 @@ children:
         name: Monitor and Execute Risk and Hedging Transactions
         level: 3
         description: >-
-          Execute hedging programs and monitor financial-market risk exposures.
+          Performing transactions that limit investment risk with the help of derivatives, such as options and futures contracts. Manage interest rates, foreign exchange, and exposure risks. Develop and execute hedging transactions. Evaluate and refine hedging positions. Produce hedge accounting transactions and reports. Monitor credit.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.7.5"
@@ -450,23 +426,21 @@ children:
           - BC-120
         children: []
       - id: BP-90.70.60
-        name: Manage Financial Risk
+        name: Manage Financial Fraud/dispute Cases
         level: 3
         description: >-
-          Manage financial risks: FX, interest-rate, commodity, credit.
+          Handling cases that involve financial fraud. Resolve disputes.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.7.6"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-210
-          - BC-120
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
   - id: BP-90.80
     name: Manage Internal Controls
     level: 2
     description: >-
-      Design, operate, and assure financial internal controls aligned to regulatory and assurance requirements.
+      Administering internal controls. This process requires the organization to manage entity's board of trustees, management, and other personnel in order to offer judicious assurance about the achievement of effectiveness, proficiency of operations, and reliability of financial reporting.
     framework_refs:
       - framework: APQC-PCF
         external_id: "9.8"
@@ -479,7 +453,7 @@ children:
         name: Establish Internal Controls, Policies, and Procedures
         level: 3
         description: >-
-          Design and document the internal-control framework.
+          Forming rules and regulations to ensure the achievement of effectiveness, proficiency of operations, and reliability of financial reporting.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.8.1"
@@ -489,23 +463,21 @@ children:
           - BC-130
         children: []
       - id: BP-90.80.20
-        name: Operate Controls and Monitor Compliance
+        name: Operate Controls and Monitor Compliance with Internal Controls Policies and Procedures
         level: 3
         description: >-
-          Operate the control environment and monitor compliance with policy.
+          Performing planning, management, operations, and monitoring of internal control mechanism policies and procedures in order to manage internal controls.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.8.2"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-140
-          - BC-130
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-90.80.30
         name: Report on Internal Controls Compliance
         level: 3
         description: >-
-          Report on control effectiveness to audit and regulators.
+          Reporting on internal controls compliance to the appropriate authority, including IT regulations and pertinent data.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.8.3"
@@ -517,7 +489,7 @@ children:
     name: Manage Taxes
     level: 2
     description: >-
-      Determine, file, and pay direct, indirect, and transactional taxes; manage tax controversy and planning.
+      Estimating the organization's periodic tax liabilities. Ensure that appropriate taxing authorities receive tax return filings and payments when due.
     framework_refs:
       - framework: APQC-PCF
         external_id: "9.9"
@@ -529,7 +501,7 @@ children:
         name: Develop Tax Strategy and Plan
         level: 3
         description: >-
-          Set tax strategy and planning across jurisdictions.
+          Setting targets for periodic tax liabilities. Assess the tax impact of various activities such as the acquisition or disposal of fixed assets or a deliberate change in number of employee.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.9.1"
@@ -541,7 +513,7 @@ children:
         name: Process Taxes
         level: 3
         description: >-
-          Calculate, file, and pay tax obligations.
+          Processing the taxes of the organization in line with the regional taxation structure, including corporate, property, excise, and service taxes.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.9.2"
@@ -549,49 +521,11 @@ children:
         realizes_capability_ids:
           - BC-220
         children: []
-      - id: BP-90.90.30
-        name: Perform Tax-Planning Calculations and Consultation
-        level: 3
-        description: >-
-          Perform tax-planning calculations and advise the business.
-        framework_refs:
-          - framework: APQC-PCF
-            external_id: "9.9.3"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-220
-        children: []
-      - id: BP-90.90.40
-        name: Account for Taxes
-        level: 3
-        description: >-
-          Account for current and deferred taxes in financial statements.
-        framework_refs:
-          - framework: APQC-PCF
-            external_id: "9.9.4"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-220
-          - BC-200
-        children: []
-      - id: BP-90.90.50
-        name: Monitor Tax Compliance
-        level: 3
-        description: >-
-          Monitor tax compliance and manage tax controversy.
-        framework_refs:
-          - framework: APQC-PCF
-            external_id: "9.9.5"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-220
-          - BC-130
-        children: []
   - id: BP-90.100
-    name: Manage International Funds/Consolidation
+    name: Manage International Funds/consolidation
     level: 2
     description: >-
-      Translate, consolidate, and report multi-entity, multi-currency results.
+      Managing cash collections and disbursements made by operating units across the enterprise. When appropriate, transfer cash from the operating units to parent-level bank accounts managed by the organization's treasury team.
     framework_refs:
       - framework: APQC-PCF
         external_id: "9.10"
@@ -604,7 +538,7 @@ children:
         name: Monitor International Rates
         level: 3
         description: >-
-          Monitor exchange rates and rate-related events relevant to consolidation.
+          Forecasting and monitoring changes in foreign currency value or interest rates around the world that play an important role in the organization.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.10.1"
@@ -613,41 +547,156 @@ children:
           - BC-210
         children: []
       - id: BP-90.100.20
-        name: Manage International Transactions
+        name: Manage Transactions
         level: 3
         description: >-
-          Manage cross-border transactions and intercompany flows.
+          Managing any transfer of funds in the course of conducting cross-border trades or investments, including conversion across currencies. Find the most suitable alternative for making payments, while saving taxes and avoiding any unwarranted regulation, with the objective of protecting capital.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.10.2"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-210
-          - BC-200
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-90.100.30
-        name: Monitor Currency Exposures
+        name: Monitor Currency Exposure/hedge Currency
         level: 3
         description: >-
-          Monitor and report currency exposures across the group.
+          Assessing exposure to potential financial losses as a result of changes in the value of currencies. Forecast the impact of movements in foreign currency values. Enter into financial transactions designed to offset or limit potential exposure to loss.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.10.3"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-210
-          - BC-120
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-90.100.40
-        name: Report on Movement of Intercompany Funds
+        name: Report Results
         level: 3
         description: >-
-          Report on intercompany flows and consolidation adjustments.
+          Documenting and reporting accounting entries to formally report financial gains or losses experienced as a result of foreign exchange activity.
         framework_refs:
           - framework: APQC-PCF
             external_id: "9.10.4"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-200
-          - BC-210
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+  - id: BP-90.110
+    name: Perform Global Trade Services
+    level: 2
+    description: >-
+      Making and collecting payments for transactions in products/services, and transporting them to interested markets.
+    framework_refs:
+      - framework: APQC-PCF
+        external_id: "9.11"
+        version: "8.0"
+    realizes_capability_ids: []
+    children:
+      - id: BP-90.110.10
+        name: Screen Sanctioned Party List
+        level: 3
+        description: >-
+          Evaluating the approved list of parties for engaging in international trade in order to ensure the safety of the organization's business transactions. Examine agents that have been granted legal rights to engage in global trade and their credentials.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "9.11.1"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-90.110.20
+        name: Control Exports and Imports
+        level: 3
+        description: >-
+          Overseeing and directing the flow of trade to/from the organization in order to ensure financial gains.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "9.11.2"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-90.110.30
+        name: Classify Products
+        level: 3
+        description: >-
+          Systematically categorizing products/services for their suitability to international trade. Create classes and categories for demarcating the types of products suitable for international trade. Study requisite national and international standards and the adherence of the organization's portfolio of offerings to these.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "9.11.3"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-90.110.40
+        name: Perform Currency Conversion
+        level: 3
+        description: >-
+          Identifying current exchange rates between two currencies and converting the foreign currency to that of the local monetary unit. I.E., yen to US dollar.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "9.11.4"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-90.110.50
+        name: Calculate Duty
+        level: 3
+        description: >-
+          Computing the excise duty to be paid during international trade.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "9.11.5"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-90.110.60
+        name: Communicate with Customs
+        level: 3
+        description: >-
+          Communicating with the customs department to ensure fluid compliance. Share pertinent information mandated by law with the government agency that controls and collects the duties levied for the international exchange of products/services.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "9.11.6"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-90.110.70
+        name: Document Trade
+        level: 3
+        description: >-
+          Documenting and recording the trade processes while making transactions, noting the description, quality, number, transportation medium, indemnity, and inspection.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "9.11.7"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-90.110.80
+        name: Process Trade Preferences
+        level: 3
+        description: >-
+          Preparing global trade under preference, which allows the organization to import/export products at a lower or nil rate of customs duty and/or levy charge.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "9.11.8"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-90.110.90
+        name: Handle Restitution
+        level: 3
+        description: >-
+          Administering and overseeing all restitution activities the organization may be subjected to. Manage compliance with apposite legal frameworks. Make any restitution that may be required by law; comply with authorities over any fines or non-financial measures imposed.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "9.11.9"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-90.110.100
+        name: Prepare Letter of Credit
+        level: 3
+        description: >-
+          Creating a document assuring that a seller will receive payment when certain delivery conditions are met. (If the buyer is unable to make payment on the purchase, a bank covers the outstanding amount.)
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "9.11.10"
+            version: "8.0"
+        realizes_capability_ids: []
         children: []

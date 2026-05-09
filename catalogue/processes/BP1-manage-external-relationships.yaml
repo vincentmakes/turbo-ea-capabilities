@@ -3,7 +3,7 @@ name: Manage External Relationships
 level: 1
 industry: Cross-Industry
 description: >-
-  Manage the enterprise's relationships with external stakeholders: investors, government, board, legal, ethical, and public-relations counterparts.
+  Fostering external relationships with stakeholders of the entity, including investors, government and industry, the board of directors, and the general public. This is not related to customer management.
 framework_refs:
   - framework: APQC-PCF
     external_id: "12.0"
@@ -18,7 +18,7 @@ children:
     name: Build Investor Relationships
     level: 2
     description: >-
-      Engage with current and prospective investors, analysts, and rating agencies; manage investor communications and disclosures.
+      Creating a strategic management responsibility for integrating finance, communication, marketing, and securities law compliance. Allow the most effective two-way communication among the organization, the financial community, and other constituencies. Enlist the investor relations function to provide market intelligence to corporate management.
     framework_refs:
       - framework: APQC-PCF
         external_id: "12.1"
@@ -27,35 +27,43 @@ children:
       - BC-240
     children:
       - id: BP-120.10.10
-        name: Plan, Build, and Manage Investor Relations
+        name: Plan, Build, and Manage Lender Relations
         level: 3
         description: >-
-          Establish and run the investor-relations program.
+          Building and managing relations with bankers or lenders through strong products/services strategies that bankers would want to invest in. Foster a receptive environment for low rates of interest, easy access to loans, etc.
         framework_refs:
           - framework: APQC-PCF
             external_id: "12.1.1"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-240
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-120.10.20
-        name: Communicate with Investors
+        name: Plan, Build, and Manage Analyst Relations
         level: 3
         description: >-
-          Communicate financial results, strategy, and outlook to investors.
+          Creating and maintaining long-term relations with analysts. Involve analysts in strategy and product decisions in order to elicit valuable information.
         framework_refs:
           - framework: APQC-PCF
             external_id: "12.1.2"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-240
-          - BC-850
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-120.10.30
+        name: Communicate with Shareholders
+        level: 3
+        description: >-
+          Practicing regular, transparent communication with shareholders through annual shareholders' meetings, quarterly earnings calls, shareholders letters, one-on-one emails or calls, etc.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "12.1.3"
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
   - id: BP-120.20
     name: Manage Government and Industry Relationships
     level: 2
     description: >-
-      Engage with regulators, government bodies, and industry associations on policy, lobbying, and regulatory matters.
+      Creating and maintaining relationships with government and industry representatives.
     framework_refs:
       - framework: APQC-PCF
         external_id: "12.2"
@@ -68,7 +76,7 @@ children:
         name: Manage Government Relations
         level: 3
         description: >-
-          Engage with government bodies on policy and regulatory matters.
+          Persuading public and government policy at the local, regional, national, and global level (subject to government regulations).
         framework_refs:
           - framework: APQC-PCF
             external_id: "12.2.1"
@@ -78,22 +86,43 @@ children:
           - BC-850
         children: []
       - id: BP-120.20.20
-        name: Manage Industry Relations
+        name: Manage Relations with Quasi-government Bodies
         level: 3
         description: >-
-          Engage with industry associations and standard-setting bodies.
+          Managing relations with quasi-governmental organizations, corporations, businesses, or any other agency that is treated by national laws and principles to be under the supervision of the government but also distinct and self-directed from the government.
         framework_refs:
           - framework: APQC-PCF
             external_id: "12.2.2"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-850
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-120.20.30
+        name: Manage Relations with Trade or Industry Groups
+        level: 3
+        description: >-
+          Managing relations with organizations established and financed by businesses that operate in a specific industry. Participate in public relations actions such as lobbying and publishing, advertising, education, and political donations.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "12.2.3"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-120.20.40
+        name: Manage Lobby Activities
+        level: 3
+        description: >-
+          Managing lobbying activities to affect government policies.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "12.2.4"
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
   - id: BP-120.30
     name: Manage Relations with Board of Directors
     level: 2
     description: >-
-      Support the board: agendas, materials, governance processes, and director engagement.
+      Maintaining relations with representatives of the stockholders. Establish corporate management-related policies and to make decisions on major company issues. Implement practices designed to engender communication, trust, and cooperation.
     framework_refs:
       - framework: APQC-PCF
         external_id: "12.3"
@@ -103,36 +132,32 @@ children:
       - BC-240
     children:
       - id: BP-120.30.10
-        name: Report Results to the Board
+        name: Report Financial Results
         level: 3
         description: >-
-          Prepare and present financial and operational results to the board.
+          Reporting financial results to management, and releasing results to the public. Report financial statements, including the income statement, balance sheet, and statement of cash flows.
         framework_refs:
           - framework: APQC-PCF
             external_id: "12.3.1"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-110
-          - BC-240
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-120.30.20
-        name: Report Audit Findings to the Board
+        name: Report Audit Findings
         level: 3
         description: >-
-          Report internal-audit findings and remediation status to the audit committee.
+          Reporting audit findings to management. Practice an internal audit with criteria for confirming a problem, a description of the situation, and the root cause of the problem. Make recommendations that resolve the issue.
         framework_refs:
           - framework: APQC-PCF
             external_id: "12.3.2"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-140
-          - BC-110
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
   - id: BP-120.40
     name: Manage Legal and Ethical Issues
     level: 2
     description: >-
-      Manage legal matters, contracts, litigation, ethics programs, and corporate-conduct standards.
+      Managing legal practices to abide by the law, as well as ethical practices.
     framework_refs:
       - framework: APQC-PCF
         external_id: "12.4"
@@ -142,86 +167,109 @@ children:
       - BC-130
     children:
       - id: BP-120.40.10
-        name: Create Ethics and Business Conduct Policies
+        name: Create Ethics Policies
         level: 3
         description: >-
-          Establish and maintain ethics and conduct policies.
+          Creating a code of ethics that communicate the organization's philosophy to employees, vendors, customers, clients, and the public.
         framework_refs:
           - framework: APQC-PCF
             external_id: "12.4.1"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-130
-          - BC-150
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-120.40.20
-        name: Manage Corporate Governance Compliance
+        name: Manage Corporate Governance Policies
         level: 3
         description: >-
-          Manage compliance with corporate-governance and disclosure obligations.
+          Administering the system of rules, practices, and processes through which a company is directed and controlled. Balance stakeholder interests including shareholders, management, customers, suppliers, financiers, government, and the community. Outline a strategy for achieving organizational goals, from action plans and internal controls to performance measurement and corporate disclosure.
         framework_refs:
           - framework: APQC-PCF
             external_id: "12.4.2"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-110
-          - BC-130
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-120.40.30
-        name: Manage Legal Issues
+        name: Develop and Perform Preventive Law Programs
         level: 3
         description: >-
-          Manage litigation, disputes, and legal exposures.
+          Creating and applying programs and activities. Encourage the adherence preventive laws, such as environmental law, sex discrimination, computer law, estate planning, corporate compliance, business planning, and property transactions.
         framework_refs:
           - framework: APQC-PCF
             external_id: "12.4.3"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-150
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-120.40.40
-        name: Manage Compliance with Laws/Regulations
+        name: Ensure Compliance
         level: 3
         description: >-
-          Run regulatory-compliance programs across jurisdictions.
+          Ensuring the organization's compliance position. Validate compliance with different statutes, regulatory directions, and legal principles (using Establish compliance framework and policies [17468]). Coordinate with compliance and risk management personnel.
         framework_refs:
           - framework: APQC-PCF
             external_id: "12.4.4"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-130
-          - BC-150
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-120.40.50
-        name: Provide Legal Counsel and Advice
+        name: Manage Outside Counsel
         level: 3
         description: >-
-          Provide legal counsel to the business across day-to-day decisions.
+          Managing professionals, sought externally for assistance over legal and ethical concerns. Administer and oversee assistance from subject matter experts and professionals for sourcing expert opinion and counseling over legal and ethical matters.
         framework_refs:
           - framework: APQC-PCF
             external_id: "12.4.5"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-150
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
       - id: BP-120.40.60
-        name: Negotiate and Document Agreements/Contracts
+        name: Protect Intellectual Property
         level: 3
         description: >-
-          Negotiate, draft, and manage commercial contracts and agreements.
+          Safeguarding the intellectual property of the organization. This process requires the organization to protect a wide variety of intellectual property created by it. This includes leveraging artificial intelligence(AI) to identify potential infringement of intellectual property and making sure employees are adhering to company policies around use of artificial intelligence(AI). It involves creating and managing non-disclosure agreements (NDAs), following up on current developments in the areas where the organization holds patents, tracking the use of the organization's copyrighted material, creating and upholding licensing terms, and administering policies for safeguarding intellectual property.
         framework_refs:
           - framework: APQC-PCF
             external_id: "12.4.6"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-150
-          - BC-510
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-120.40.70
+        name: Resolve Disputes and Litigations
+        level: 3
+        description: >-
+          Resolving disputes or civil lawsuits internally or externally.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "12.4.7"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-120.40.80
+        name: Provide Legal Advice/counseling
+        level: 3
+        description: >-
+          Providing legal advice concerning the substance or procedure of a law in relation to a particular situation.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "12.4.8"
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-120.40.90
+        name: Negotiate and Document Agreements/contracts
+        level: 3
+        description: >-
+          Negotiating terms to reach a final draft of a contract that is acceptable to all parties.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "12.4.9"
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
   - id: BP-120.50
     name: Manage Public Relations Program
     level: 2
     description: >-
-      Run external communications, media relations, brand reputation, and crisis communications.
+      Managing a public relations programs through business and communications skills.
     framework_refs:
       - framework: APQC-PCF
         external_id: "12.5"
@@ -233,7 +281,7 @@ children:
         name: Manage Community Relations
         level: 3
         description: >-
-          Engage with local communities where the enterprise operates.
+          Developing and administering community relations. Establish business connections with the people constituting the environment the organization operates in and draws resources from in order to foster mutual understanding, trust, and support. Create programs that promote the organization's image in a positive and community-oriented way.
         framework_refs:
           - framework: APQC-PCF
             external_id: "12.5.1"
@@ -246,7 +294,7 @@ children:
         name: Manage Media Relations
         level: 3
         description: >-
-          Manage relations with media, including press communications and crisis comms.
+          Developing and managing relations with media. Develop connections with journalists to solicit critical, third-party endorsements for a product, issue, service, or organization.
         framework_refs:
           - framework: APQC-PCF
             external_id: "12.5.2"
@@ -258,7 +306,7 @@ children:
         name: Promote Political Stability
         level: 3
         description: >-
-          Engage on political-stability and regulatory-environment matters where relevant.
+          Promoting political security and stability in the regions where the organization conducts business. Encourage political stability in the regions where the organization operates. Support civic programs, citizen engagement, connection platforms, etc.
         framework_refs:
           - framework: APQC-PCF
             external_id: "12.5.3"
@@ -268,15 +316,24 @@ children:
           - BC-150
         children: []
       - id: BP-120.50.40
-        name: Build/Sustain Corporate Image
+        name: Create Press Releases
         level: 3
         description: >-
-          Build and sustain the corporate brand and reputation.
+          Developing press releases to communicate developments and generate interest in the organization.
         framework_refs:
           - framework: APQC-PCF
             external_id: "12.5.4"
-            version: "7.4.0"
-        realizes_capability_ids:
-          - BC-850
-          - BC-400
+            version: "8.0"
+        realizes_capability_ids: []
+        children: []
+      - id: BP-120.50.50
+        name: Issue Press Releases
+        level: 3
+        description: >-
+          Issuing press releases to carefully selected media in distribution channels such as the web, newspapers, and social media.
+        framework_refs:
+          - framework: APQC-PCF
+            external_id: "12.5.5"
+            version: "8.0"
+        realizes_capability_ids: []
         children: []
