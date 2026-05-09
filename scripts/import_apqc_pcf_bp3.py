@@ -136,6 +136,84 @@ TREE["BP-10"] = {
 
 # Other BP1s appended progressively below as we drill them. ----------------
 
+TREE["BP-50"] = {
+    "id": "BP-50",
+    "apqc": "5.0",
+    "name": "Deliver Services",
+    "description": "Govern, plan, and execute the delivery of services to customers — including the resourcing, operations, and post-delivery management distinct from physical-goods supply chains.",
+    "realizes": ["BC-430", "BC-720"],
+    "children": [
+        {
+            "id": "BP-50.10", "apqc": "5.1",
+            "name": "Establish Service Delivery Governance and Strategy",
+            "description": "Define service-delivery operating model, governance forums, and service strategy aligned to customer outcomes and SLAs.",
+            "realizes": ["BC-100", "BC-720"],
+            "children": [
+                ("BP-50.10.10", "5.1.1", "Establish Service Delivery Governance",
+                 "Establish governance forums, decision rights, and operating-model controls for service delivery.",
+                 ["BC-110", "BC-100"]),
+                ("BP-50.10.20", "5.1.2", "Define Service Delivery Strategy",
+                 "Define multi-year service-delivery strategy: portfolio, channels, sourcing, target service levels.",
+                 ["BC-100"]),
+                ("BP-50.10.30", "5.1.3", "Define Service Standards",
+                 "Establish the service-quality standards and SLAs that delivery must achieve.",
+                 ["BC-720", "BC-430"]),
+            ],
+        },
+        {
+            "id": "BP-50.20", "apqc": "5.2",
+            "name": "Manage Service Delivery Resources",
+            "description": "Plan, allocate, and develop the people, facilities, and infrastructure that deliver service.",
+            "realizes": ["BC-300", "BC-700"],
+            "children": [
+                ("BP-50.20.10", "5.2.1", "Manage Service Delivery Workforce",
+                 "Plan and manage the staffing, skills, and scheduling of the service-delivery workforce.",
+                 ["BC-300"]),
+                ("BP-50.20.20", "5.2.2", "Manage Service Delivery Resources and Assets",
+                 "Manage the facilities, equipment, and assets used in service delivery.",
+                 ["BC-700"]),
+                ("BP-50.20.30", "5.2.3", "Manage Service Delivery Suppliers",
+                 "Manage third-party service providers and supplier relationships supporting delivery.",
+                 ["BC-510", "BC-500"]),
+            ],
+        },
+        {
+            "id": "BP-50.30", "apqc": "5.3",
+            "name": "Deliver Service to Customer",
+            "description": "Execute the service interaction with the customer end-to-end, including provisioning, support, and assurance.",
+            "realizes": ["BC-430"],
+            "children": [
+                ("BP-50.30.10", "5.3.1", "Initiate Service Delivery",
+                 "Onboard, provision, and start service for the customer.",
+                 ["BC-430"]),
+                ("BP-50.30.20", "5.3.2", "Execute Service Delivery",
+                 "Perform the service interactions with the customer.",
+                 ["BC-430"]),
+                ("BP-50.30.30", "5.3.3", "Complete Service Delivery",
+                 "Close out service engagements, capture deliverables, and confirm customer acceptance.",
+                 ["BC-430"]),
+            ],
+        },
+        {
+            "id": "BP-50.40", "apqc": "5.4",
+            "name": "Manage Service Delivery",
+            "description": "Monitor, assure, and improve service delivery against SLAs and customer-experience targets.",
+            "realizes": ["BC-430", "BC-720"],
+            "children": [
+                ("BP-50.40.10", "5.4.1", "Monitor Service Delivery Performance",
+                 "Measure service-delivery performance against SLAs and KPIs.",
+                 ["BC-430", "BC-720"]),
+                ("BP-50.40.20", "5.4.2", "Assure Service Delivery Quality",
+                 "Run quality assurance over the delivered service, including audits and customer feedback loops.",
+                 ["BC-720", "BC-430"]),
+                ("BP-50.40.30", "5.4.3", "Improve Service Delivery",
+                 "Drive continuous improvement based on performance data and customer feedback.",
+                 ["BC-720", "BC-430"]),
+            ],
+        },
+    ],
+}
+
 TREE["BP-40"] = {
     "id": "BP-40",
     "apqc": "4.0",
