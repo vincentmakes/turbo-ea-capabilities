@@ -1,0 +1,49 @@
+id: BP-340
+name: Manage Public Service and Benefit Delivery
+level: 1
+industry: Public Sector & Government
+description: >-
+  Run citizen-facing public service delivery: identity and records, benefit and entitlement programs, licensing, immigration, and civil registration.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "FEAF Business Reference Model — Service Delivery domain"
+realizes_capability_ids:
+  - BC-100
+children:
+  - id: BP-340.10
+    name: Manage Citizen Identity and Records
+    level: 2
+    description: >-
+      Issue and maintain citizen identity, civil registration records, and verifiable credentials.
+    realizes_capability_ids:
+      - BC-610
+    children: []
+  - id: BP-340.20
+    name: Manage Benefit and Entitlement Programs
+    level: 2
+    description: >-
+      Administer benefit and entitlement programs: eligibility, application, decision, payment, and ongoing review.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-340.30
+    name: Manage Licensing and Permitting
+    level: 2
+    description: >-
+      Operate licensing and permitting regimes: application intake, evaluation, issuance, renewal, and enforcement.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-340.40
+    name: Manage Visa and Immigration
+    level: 2
+    description: >-
+      Operate visa, asylum, immigration, and border admission processes.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-340.50
+    name: Manage Vital and Statutory Records
+    level: 2
+    description: >-
+      Maintain civil/vital records: births, deaths, marriages, statutory filings.
+    realizes_capability_ids:
+      - BC-610
+    children: []

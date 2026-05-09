@@ -1,0 +1,44 @@
+id: BP-360
+name: Manage Public Sector Programs and Funding
+level: 1
+industry: Public Sector & Government
+description: >-
+  Operate public-sector procurement and program funding: government procurement under FAR / EU rules, program funding administration, grants and awards, public-sector reporting.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "FEAF — Mission Support / Resource Management domains; FAR / EU procurement"
+realizes_capability_ids:
+  - BC-100
+children:
+  - id: BP-360.10
+    name: Manage Public-Sector Procurement
+    level: 2
+    description: >-
+      Plan, solicit, award, and administer government contracts under FAR / EU procurement rules.
+    realizes_capability_ids:
+      - BC-500
+    children: []
+  - id: BP-360.20
+    name: Manage Program Funding and Appropriations
+    level: 2
+    description: >-
+      Administer appropriations, allotments, and obligations against authorised programs.
+    realizes_capability_ids:
+      - BC-200
+      - BC-230
+    children: []
+  - id: BP-360.30
+    name: Manage Grants and Awards
+    level: 2
+    description: >-
+      Award and administer grants and cooperative agreements; manage grantee compliance and reporting.
+    realizes_capability_ids: []
+    children: []
+  - id: BP-360.40
+    name: Manage Public-Sector Performance and Statistical Reporting
+    level: 2
+    description: >-
+      Produce statutory performance, statistical, and accountability reports per IPSAS / GFSM standards.
+    realizes_capability_ids:
+      - BC-130
+    children: []

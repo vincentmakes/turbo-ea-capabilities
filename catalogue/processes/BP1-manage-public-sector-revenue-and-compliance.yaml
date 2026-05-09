@@ -1,0 +1,46 @@
+id: BP-350
+name: Manage Public Sector Revenue and Compliance
+level: 1
+industry: Public Sector & Government
+description: >-
+  Operate public-sector revenue collection and regulatory compliance: tax filing and collection, customs and trade, regulatory enforcement, and judicial / statutory filings.
+framework_refs:
+  - framework: APQC-PCF
+    external_id: "FEAF — Tax Administration / Regulatory & Compliance domains"
+realizes_capability_ids:
+  - BC-220
+  - BC-130
+children:
+  - id: BP-350.10
+    name: Manage Tax Filing and Collection
+    level: 2
+    description: >-
+      Receive tax returns, assess liabilities, collect tax, and manage refunds and disputes.
+    realizes_capability_ids:
+      - BC-220
+    children: []
+  - id: BP-350.20
+    name: Manage Customs and Trade Administration
+    level: 2
+    description: >-
+      Operate customs entry, duty assessment, trade-compliance, and border-control processes.
+    realizes_capability_ids:
+      - BC-130
+    children: []
+  - id: BP-350.30
+    name: Manage Regulatory Enforcement and Investigations
+    level: 2
+    description: >-
+      Conduct regulatory inspections and investigations; impose and recover penalties.
+    realizes_capability_ids:
+      - BC-130
+      - BC-150
+    children: []
+  - id: BP-350.40
+    name: Manage Court and Statutory Filings
+    level: 2
+    description: >-
+      Receive, docket, and process court filings and statutory submissions; manage case dispositions.
+    realizes_capability_ids:
+      - BC-150
+    children: []
