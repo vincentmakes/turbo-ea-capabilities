@@ -940,7 +940,8 @@ Mirror of §9.8 for the BP layer. Each industry's process catalogue is anchored 
 
 #### Cross-industry baseline
 
-- **APQC Process Classification Framework® (PCF) — Cross-Industry, v7.4.0** *(authoritative for BP-10 through BP-120)*. APQC-published taxonomy with 12 top-level Categories, ~60 Process Groups, ~250+ Processes, 1,000+ Activities. Public summary: <https://www.apqc.org/process-frameworks>. **APQC PCF v8.0** is the most recent public version; this catalogue currently anchors on v7.4.0 and will re-pin in a follow-up PR once v8.0 codes are verified end-to-end (BP3 codes shifted in several categories between 7.4 and 8.0).
+- **APQC Process Classification Framework® (PCF) — Cross-Industry, v8.0** *(authoritative for BP-10 through BP-120, plus BP-370)*. APQC-published taxonomy. **v8.0 (released August 2024)** introduced 13 top-level categories, up from 12 in v7.4: category 4.0 was renamed *Deliver Physical Products* → *Manage Supply Chain for Physical Products*, and a new category 13.0 *Develop and Manage Business Capabilities* was added. This catalogue's BP-10..BP-120 keep their local sparse numbering for stability — APQC's category 13.0 maps to local id `BP-370` because BP-130..BP-360 were already taken by industry-specific BP1s. The `framework_refs.external_id` field is authoritative for cross-walks to APQC's published numbering. Public summary: <https://www.apqc.org/process-frameworks>.
+- **Naming divergence:** the local BP-40 file/name kept the v8.0 nomenclature (*Manage Supply Chain for Physical Products*); BP3 codes (`1.1.1`, `9.3.2`, etc.) authored against v7.4 may shift slightly in v8.0 — a follow-up PR can re-pin BP3 codes once a verified v8.0 reference is in hand.
 
 #### Banking & Capital Markets
 
