@@ -16,28 +16,119 @@ children:
     description: >-
       Operate inpatient and outpatient pharmacy services, including medication preparation, dispensing, and reconciliation.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-180.10.10
+        name: Procure and Manage Pharmacy Inventory
+        level: 3
+        description: >-
+          Procure pharmaceuticals; manage cold-chain and controlled-substance inventory.
+        realizes_capability_ids:
+          - BC-500
+          - BC-530
+        children: []
+      - id: BP-180.10.20
+        name: Compound and Dispense Medications
+        level: 3
+        description: >-
+          Compound sterile and non-sterile preparations; dispense medications to inpatient and outpatient settings.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-180.10.30
+        name: Provide Clinical Pharmacy Services
+        level: 3
+        description: >-
+          Provide medication therapy management, clinical consultation, and antibiotic stewardship.
+        realizes_capability_ids:
+          - BC-720
+        children: []
   - id: BP-180.20
     name: Manage Laboratory Operations
     level: 2
     description: >-
       Operate clinical laboratory services across pre-analytical, analytical, and post-analytical phases.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-180.20.10
+        name: Collect and Receive Specimens
+        level: 3
+        description: >-
+          Collect specimens; receive and triage incoming specimens for testing.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-180.20.20
+        name: Perform Laboratory Testing
+        level: 3
+        description: >-
+          Perform clinical chemistry, haematology, microbiology, molecular, and pathology testing.
+        realizes_capability_ids:
+          - BC-720
+        children: []
+      - id: BP-180.20.30
+        name: Verify and Report Results
+        level: 3
+        description: >-
+          Verify and authorise results; deliver to ordering clinicians.
+        realizes_capability_ids: []
+        children: []
   - id: BP-180.30
     name: Manage Imaging and Diagnostics Operations
     level: 2
     description: >-
       Operate radiology and imaging services, including modality scheduling, acquisition, and reporting.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-180.30.10
+        name: Schedule and Acquire Imaging Studies
+        level: 3
+        description: >-
+          Schedule modalities; acquire imaging studies (CT, MRI, ultrasound, X-ray, nuclear).
+        realizes_capability_ids: []
+        children: []
+      - id: BP-180.30.20
+        name: Interpret and Report Imaging
+        level: 3
+        description: >-
+          Interpret studies; produce structured radiology reports.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-180.30.30
+        name: Manage Imaging Quality and Safety
+        level: 3
+        description: >-
+          Manage radiation dose, contrast safety, and imaging-modality quality control.
+        realizes_capability_ids:
+          - BC-720
+          - BC-730
+        children: []
   - id: BP-180.40
     name: Manage Surgical and Procedural Services
     level: 2
     description: >-
       Operate operating rooms and procedural suites, including scheduling, sterile processing, and theatre logistics.
     realizes_capability_ids: []
-    children: []
+    children:
+      - id: BP-180.40.10
+        name: Schedule and Manage OR Cases
+        level: 3
+        description: >-
+          Schedule surgical cases; manage block time and case logistics.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-180.40.20
+        name: Provide Perioperative Care
+        level: 3
+        description: >-
+          Provide pre-, intra-, and post-operative care including anaesthesia.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-180.40.30
+        name: Manage Sterile Processing and Instruments
+        level: 3
+        description: >-
+          Operate sterile processing department; track and sterilise instruments.
+        realizes_capability_ids:
+          - BC-720
+        children: []
   - id: BP-180.50
     name: Manage Health Information and Medical Records
     level: 2
@@ -45,7 +136,32 @@ children:
       Manage patient medical records, clinical documentation, coding, and information release.
     realizes_capability_ids:
       - BC-610
-    children: []
+    children:
+      - id: BP-180.50.10
+        name: Maintain Electronic Medical Records
+        level: 3
+        description: >-
+          Operate the EMR/EHR; maintain documentation completeness and access controls.
+        realizes_capability_ids:
+          - BC-610
+          - BC-600
+        children: []
+      - id: BP-180.50.20
+        name: Code Clinical Encounters
+        level: 3
+        description: >-
+          Assign ICD/CPT codes to encounters and procedures; review for accuracy.
+        realizes_capability_ids: []
+        children: []
+      - id: BP-180.50.30
+        name: Release Information and Manage Privacy
+        level: 3
+        description: >-
+          Process information-release requests; manage privacy under HIPAA / GDPR.
+        realizes_capability_ids:
+          - BC-130
+          - BC-610
+        children: []
   - id: BP-180.60
     name: Manage Infection Prevention and Control
     level: 2
@@ -54,7 +170,24 @@ children:
     realizes_capability_ids:
       - BC-720
       - BC-730
-    children: []
+    children:
+      - id: BP-180.60.10
+        name: Conduct Infection Surveillance
+        level: 3
+        description: >-
+          Surveil healthcare-associated infections; report to public-health authorities.
+        realizes_capability_ids:
+          - BC-720
+        children: []
+      - id: BP-180.60.20
+        name: Manage Outbreak Response
+        level: 3
+        description: >-
+          Activate and run outbreak response, including isolation and contact tracing.
+        realizes_capability_ids:
+          - BC-160
+          - BC-730
+        children: []
   - id: BP-180.70
     name: Manage Practitioner Credentialing and Privileging
     level: 2
@@ -62,4 +195,20 @@ children:
       Credential and privilege practising clinicians; manage ongoing competency and peer review.
     realizes_capability_ids:
       - BC-300
-    children: []
+    children:
+      - id: BP-180.70.10
+        name: Initial Credentialing and Privileging
+        level: 3
+        description: >-
+          Verify credentials; grant initial clinical privileges per medical-staff bylaws.
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-180.70.20
+        name: Manage Ongoing Competency and Peer Review
+        level: 3
+        description: >-
+          Conduct ongoing professional practice evaluation, focused review, and reappointment.
+        realizes_capability_ids:
+          - BC-300
+        children: []
