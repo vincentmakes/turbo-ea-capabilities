@@ -1290,28 +1290,32 @@ value_streams:
     stage_name: Charge Capture
     capability_ids:
     - BC-2870
-    process_ids: []
+    process_ids:
+    - BP-180.50
     notes: Charge capture from clinical documentation and ancillary systems
   - id: VS-120.20
     stage_order: 2
     stage_name: Coding
     capability_ids:
     - BC-2870
-    process_ids: []
+    process_ids:
+    - BP-180.50
     notes: Medical coding, CDI queries, and DRG / APC assignment
   - id: VS-120.30
     stage_order: 3
     stage_name: Claim Production & Submission
     capability_ids:
     - BC-2870
-    process_ids: []
+    process_ids:
+    - BP-180.50
     notes: Claim assembly, edits, and payer submission
   - id: VS-120.40
     stage_order: 4
     stage_name: Adjudication & Denial Management
     capability_ids:
     - BC-2870
-    process_ids: []
+    process_ids:
+    - BP-300.30
     notes: Remittance handling, denial work, and appeals
   - id: VS-120.50
     stage_order: 5
@@ -1319,21 +1323,24 @@ value_streams:
     capability_ids:
     - BC-2870
     - BC-200
-    process_ids: []
+    process_ids:
+    - BP-90.20
     notes: ERA / EOB posting and contract variance analysis; Patient AR accounting and bank reconciliation
   - id: VS-120.60
     stage_order: 6
     stage_name: Patient Billing & Collections
     capability_ids:
     - BC-2870
-    process_ids: []
+    process_ids:
+    - BP-90.20
     notes: Patient statements, payment plans, and collections
   - id: VS-120.70
     stage_order: 7
     stage_name: Underpayment Recovery
     capability_ids:
     - BC-2870
-    process_ids: []
+    process_ids:
+    - BP-90.20
     notes: Underpayment identification and payer recovery actions
 - id: VS-130
   name: Concept-to-Manufacture
@@ -2062,21 +2069,24 @@ value_streams:
     stage_name: Pre-Encounter Access
     capability_ids:
     - BC-2800
-    process_ids: []
+    process_ids:
+    - BP-170.10
     notes: Scheduling, eligibility verification, and financial counselling
   - id: VS-180.20
     stage_order: 2
     stage_name: Registration & Admission
     capability_ids:
     - BC-2800
-    process_ids: []
+    process_ids:
+    - BP-170.10
     notes: Patient registration, admission, and bed assignment
   - id: VS-180.30
     stage_order: 3
     stage_name: Clinical Care Delivery
     capability_ids:
     - BC-2810
-    process_ids: []
+    process_ids:
+    - BP-170.30
     notes: Inpatient, outpatient, emergency, and procedural care delivery
   - id: VS-180.40
     stage_order: 4
@@ -2084,21 +2094,26 @@ value_streams:
     capability_ids:
     - BC-2860
     - BC-2850
-    process_ids: []
+    process_ids:
+    - BP-180.10
+    - BP-180.20
+    - BP-180.30
     notes: Laboratory, imaging, and ancillary diagnostic services; Medication ordering, dispensing, and administration
   - id: VS-180.50
     stage_order: 5
     stage_name: Clinical Documentation
     capability_ids:
     - BC-2830
-    process_ids: []
+    process_ids:
+    - BP-180.50
     notes: Notes, orders, results review, and decision support
   - id: VS-180.60
     stage_order: 6
     stage_name: Care Coordination
     capability_ids:
     - BC-2820
-    process_ids: []
+    process_ids:
+    - BP-170.40
     notes: Multidisciplinary coordination, transitions, and case management
   - id: VS-180.70
     stage_order: 7
@@ -2106,7 +2121,8 @@ value_streams:
     capability_ids:
     - BC-2810
     - BC-2820
-    process_ids: []
+    process_ids:
+    - BP-170.50
     notes: Discharge planning, instructions, and disposition; Post-discharge follow-up and onward care handoff
 - id: VS-190
   name: Engagement-to-Realisation
@@ -6214,21 +6230,25 @@ value_streams:
     stage_name: Population Identification
     capability_ids:
     - BC-2880
-    process_ids: []
+    process_ids:
+    - BP-300.40
     notes: Attribution, empanelment, and population definition
   - id: VS-410.20
     stage_order: 2
     stage_name: Risk Stratification
     capability_ids:
     - BC-2880
-    process_ids: []
+    process_ids:
+    - BP-300.40
     notes: Predictive risk modelling and rising-risk identification
   - id: VS-410.30
     stage_order: 3
     stage_name: Care Gap Identification
     capability_ids:
     - BC-2880
-    process_ids: []
+    process_ids:
+    - BP-300.40
+    - BP-180.50
     notes: HEDIS / quality-measure gap detection across the panel
   - id: VS-410.40
     stage_order: 4
@@ -6236,21 +6256,26 @@ value_streams:
     capability_ids:
     - BC-2880
     - BC-2820
-    process_ids: []
+    process_ids:
+    - BP-170.30
+    - BP-300.40
     notes: Outreach campaigns, preventive care, and chronic-disease programmes; Care management coordination for high-risk cohorts
   - id: VS-410.50
     stage_order: 5
     stage_name: Care Delivery
     capability_ids:
     - BC-2810
-    process_ids: []
+    process_ids:
+    - BP-170.30
     notes: Clinical care delivery aligned to the intervention plan
   - id: VS-410.60
     stage_order: 6
     stage_name: Outcomes Measurement
     capability_ids:
     - BC-2880
-    process_ids: []
+    process_ids:
+    - BP-170.60
+    - BP-180.60
     notes: Outcome tracking, value-based-care reporting, and feedback loop
 - id: VS-420
   name: Procure-to-Pay
