@@ -2682,35 +2682,44 @@ value_streams:
     stage_name: Firmware Build & Sign
     capability_ids:
     - BC-1950
-    process_ids: []
+    process_ids:
+    - BP-460.10
+    - BP-80.30
     notes: Firmware build pipelines, code signing, and artefact governance
   - id: VS-230.20
     stage_order: 2
     stage_name: Release Authorisation
     capability_ids:
     - BC-1950
-    process_ids: []
+    process_ids:
+    - BP-460.20
     notes: Release-train governance, change approval, and release-note authoring
   - id: VS-230.30
     stage_order: 3
     stage_name: Staged Rollout & Pilot
     capability_ids:
     - BC-1950
-    process_ids: []
+    process_ids:
+    - BP-80.40
+    - BP-460.30
     notes: Canary rings, pilot fleets, and rollback gating
   - id: VS-230.40
     stage_order: 4
     stage_name: OTA Distribution
     capability_ids:
     - BC-1950
-    process_ids: []
+    process_ids:
+    - BP-80.40
+    - BP-460.30
     notes: Over-the-air delivery, device-side update orchestration, and verification
   - id: VS-230.50
     stage_order: 5
     stage_name: Field Telemetry & Health
     capability_ids:
     - BC-1950
-    process_ids: []
+    process_ids:
+    - BP-460.30
+    - BP-50.40
     notes: Device telemetry ingestion and fleet health monitoring
   - id: VS-230.60
     stage_order: 6
@@ -2718,14 +2727,17 @@ value_streams:
     capability_ids:
     - BC-1950
     - BC-620
-    process_ids: []
+    process_ids:
+    - BP-80.10
+    - BP-460.20
     notes: Product PSIRT, CVE triage, and emergency patch issuance; Enterprise cybersecurity coordination for product incidents
   - id: VS-230.70
     stage_order: 7
     stage_name: Decommission & Sunset
     capability_ids:
     - BC-1950
-    process_ids: []
+    process_ids:
+    - BP-460.30
     notes: End-of-support declaration, key revocation, and device retirement
 - id: VS-240
   name: First-Notice-to-Settlement
