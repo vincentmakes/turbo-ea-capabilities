@@ -782,6 +782,33 @@ for (const { locale, file, data } of loadAllSidecars()) {
 }
 
 // ---------------------------------------------------------------------------
+// 13. BC coverage check (warning, not error). Every Cross-Industry BC L1
+// should have at least one BP claiming to realize it. Process orphans
+// are reported as warnings — they don't fail the build, but they signal
+// gaps in the BP layer that should be closed.
+// ---------------------------------------------------------------------------
+const warnings: LintError[] = [];
+const cxL1Ids = new Set<string>();
+for (const { node } of allFlat) {
+  if (node.level !== 1) continue;
+  const industry = node.industry ?? "";
+  if (!industry.includes("Cross-Industry")) continue;
+  cxL1Ids.add(node.id);
+}
+const realisedBcIds = new Set<string>();
+for (const { node } of allFlatBP) {
+  for (const bcId of node.realizes_capability_ids ?? []) realisedBcIds.add(bcId);
+}
+for (const id of cxL1Ids) {
+  if (!realisedBcIds.has(id)) {
+    warnings.push({
+      file: "bc-coverage",
+      message: `Cross-Industry BC L1 '${id}' has no BP realising it (orphan capability — extend an existing BP1 or add a new one).`,
+    });
+  }
+}
+
+// ---------------------------------------------------------------------------
 // Report
 // ---------------------------------------------------------------------------
 if (errors.length > 0) {
@@ -791,6 +818,13 @@ if (errors.length > 0) {
   }
   console.error("");
   process.exit(1);
+}
+if (warnings.length > 0) {
+  console.warn(`\n⚠ ${warnings.length} warning(s):`);
+  for (const { file, message } of warnings) {
+    console.warn(`  [${file}] ${message}`);
+  }
+  console.warn("");
 }
 console.log(
   `✔ Lint passed: ${trees.length} L1 file(s), ${allFlat.length} capability node(s), ${bpTrees.length} BP1 file(s), ${allFlatBP.length} process node(s), ${streams.length} value stream(s), ${sidecarCount} sidecar(s).`
