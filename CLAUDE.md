@@ -71,8 +71,14 @@ npm run i18n:stamp -- --check         # dry-run; non-zero exit if any entry is s
 npm run i18n:stamp -- --locale fr     # restrict to one locale
 npm run i18n:stamp -- --kind business-process
 
+# Coverage checks (run after BP / VS edits)
+npm run check:bc-coverage              # every Cross-Industry BC L1 has a realising BP
+npm run check:bc-coverage -- --strict  # exit non-zero on any orphan
+npm run check:i18n-coverage            # which (BP1 × locale) sidecars are missing
+npm run check:i18n-coverage -- --strict
+
 # Validation / build
-npm run lint           # required before commit
+npm run lint           # required before commit; warns on BC-coverage gaps
 npm run build          # generates dist/api/, site/, package data
 ```
 
