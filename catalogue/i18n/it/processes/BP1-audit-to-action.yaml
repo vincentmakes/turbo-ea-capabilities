@@ -3,68 +3,68 @@ locale: it
 source: BP1-audit-to-action.yaml
 entries:
   BP-1120:
-    name: "Audit-ad-Azione"
-    source_hash: sha256-78ba5fa747a3298e
+    name: "Audit-a-Azione"
+    description: "Ciclo di internal audit dalla pianificazione dell'audit-universe attraverso scoping dell'engagement, fieldwork, rilievi, tracciamento della remediation e quality assurance dell'audit. Un BP2 per ogni stage_name di VS-80."
   BP-1120.10:
-    name: "Universo e piano di audit"
-    source_hash: sha256-052dfbb5301861aa
+    name: "Audit-universe e piano"
+    description: "Mantenere l'audit-universe e costruire il piano annuale di audit basato sul rischio."
   BP-1120.10.10:
-    name: "Mantenere l'universo di audit"
-    source_hash: sha256-c80bb421c22ca929
+    name: "Mantenere audit-universe"
+    description: "Mantenere la popolazione di entità auditabili — processi, sistemi, ubicazioni, terze parti."
   BP-1120.10.20:
-    name: "Costruire il piano annuale basato sui rischi"
-    source_hash: sha256-641aa762dfc377f6
+    name: "Costruire piano di audit basato sul rischio"
+    description: "Costruire il piano annuale di audit dall'universe pesato per rischio; ottenere approvazione del comitato di audit."
   BP-1120.20:
-    name: "Definizione dell'ambito"
-    source_hash: sha256-379378e4cbe00ff2
+    name: "Scoping dell'engagement"
+    description: "Definire scope dell'engagement di audit — obiettivi, controlli in scope, periodo, risorse."
   BP-1120.20.10:
-    name: "Definire gli obiettivi di audit"
-    source_hash: sha256-9db77920df093c01
+    name: "Definire obiettivi di audit"
+    description: "Definire obiettivi di audit, domande chiave e rischi da affrontare nell'engagement."
   BP-1120.20.20:
-    name: "Pianificare le procedure di audit"
-    source_hash: sha256-20c9befca109dbaa
+    name: "Pianificare procedure di audit"
+    description: "Pianificare procedure di audit — walk-through, test campionari, analytics — ed evidenze richieste."
   BP-1120.30:
-    name: "Lavoro sul campo"
-    source_hash: sha256-5397ca54ccad52ae
+    name: "Fieldwork"
+    description: "Eseguire fieldwork di audit — raccogliere evidenze, eseguire test e documentare workpaper."
   BP-1120.30.10:
-    name: "Percorrere il processo"
-    source_hash: sha256-360facf431ae416c
+    name: "Walk-through del processo"
+    description: "Fare walk-through del processo in scope per comprendere design e controlli chiave; documentare narrativa e diagramma di flusso."
   BP-1120.30.20:
     name: "Testare controlli e transazioni"
-    source_hash: sha256-984e0a2fd05bc625
+    description: "Eseguire test campionari o sull'intera popolazione di efficacia di design e operativa; documentare workpaper."
   BP-1120.30.30:
-    name: "Eseguire l'analitica di audit"
-    source_hash: sha256-02da298d8bc68b3b
+    name: "Eseguire audit analytics"
+    description: "Eseguire data analytics sull'intera popolazione per far emergere anomalie, eccezioni e pattern."
   BP-1120.30.40:
-    name: "Documentare le evidenze di audit"
-    source_hash: sha256-ff668222fb905e5c
+    name: "Documentare evidenze di audit"
+    description: "Documentare evidenze nei workpaper con cross-reference; ottenere conferme dell'auditato dove richiesto."
   BP-1120.40:
-    name: "Risultati e reporting"
-    source_hash: sha256-882dae2ab975b4e0
+    name: "Rilievi e reportistica"
+    description: "Sviluppare rilievi, concordare risposte di management ed emettere il report di audit."
   BP-1120.40.10:
-    name: "Sviluppare i rilievi"
-    source_hash: sha256-ec29da0b1405dcb1
+    name: "Sviluppare rilievi"
+    description: "Sviluppare rilievi con condition, criteria, cause, consequence e raccomandazione."
   BP-1120.40.20:
-    name: "Concordare le risposte del management"
-    source_hash: sha256-d7f6c42262644426
+    name: "Concordare risposte di management"
+    description: "Concordare risposta di management — accettare, azione alternativa, contestare — con auditati e data target di remediation."
   BP-1120.40.30:
-    name: "Emettere il rapporto di audit"
-    source_hash: sha256-7cb1bfa395b5139f
+    name: "Emettere report di audit"
+    description: "Emettere il report finale di audit allo sponsor esecutivo e al comitato di audit; chiudere l'engagement."
   BP-1120.50:
-    name: "Tracciamento delle remediation"
-    source_hash: sha256-7d1a7c3bb67fc4f2
+    name: "Tracciamento della remediation"
+    description: "Tracciare la remediation dei rilievi da parte del management fino alla chiusura; verificare con re-test dove applicabile."
   BP-1120.50.10:
-    name: "Tracciare lo stato delle remediation"
-    source_hash: sha256-9d2ac6245533df68
+    name: "Tracciare stato della remediation"
+    description: "Tracciare rilievi aperti, date target e progresso del management rispetto al piano di remediation."
   BP-1120.50.20:
-    name: "Verificare la chiusura"
-    source_hash: sha256-fe5f854372d81622
+    name: "Verificare chiusura"
+    description: "Verificare chiusura del rilievo per re-test, revisione di evidenza o audit di follow-up; chiudere nel tracker."
   BP-1120.60:
-    name: "Assicurazione qualità dell'audit"
-    source_hash: sha256-bcb7a79e6deadaa3
+    name: "Quality assurance dell'audit"
+    description: "Eseguire quality assurance sulla funzione di audit — revisione workpaper, peer review, valutazione esterna."
   BP-1120.60.10:
-    name: "Rivedere i workpaper di audit"
-    source_hash: sha256-69e2e4705ce5c949
+    name: "Rivedere workpaper di audit"
+    description: "Eseguire revisione supervisoria dei workpaper e dei rilievi per evidenza sufficiente e appropriata."
   BP-1120.60.20:
-    name: "Eseguire valutazione esterna della qualità"
-    source_hash: sha256-dcbe505dd1a3c5cf
+    name: "Eseguire valutazione esterna di qualità"
+    description: "Eseguire valutazione esterna periodica di qualità della funzione di audit secondo gli Standard IIA."

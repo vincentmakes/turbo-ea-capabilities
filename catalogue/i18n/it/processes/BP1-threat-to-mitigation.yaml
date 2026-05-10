@@ -4,82 +4,82 @@ source: BP1-threat-to-mitigation.yaml
 entries:
   BP-1150:
     name: "Minaccia-a-Mitigazione"
-    source_hash: sha256-62cfa323d63dbb61
+    description: "Ciclo operativo di cybersecurity dalla definizione della postura attraverso threat intelligence, scoperta di vulnerabilità, rilevazione, incident response, hardening di identità e accesso e awareness. Un BP2 per ogni stage_name di VS-600."
   BP-1150.10:
     name: "Definizione della postura di sicurezza"
-    source_hash: sha256-285a1bef4d6d76a0
+    description: "Definire postura di sicurezza, baseline di controllo e maturità target per l'azienda."
   BP-1150.10.10:
-    name: "Definire la strategia di sicurezza"
-    source_hash: sha256-2981098fcc513191
+    name: "Definire strategia di sicurezza"
+    description: "Definire strategia di cybersecurity — appetito al rischio, maturità target, framework (NIST CSF, ISO 27001)."
   BP-1150.10.20:
-    name: "Definire la baseline dei controlli"
-    source_hash: sha256-63384bd7bbe11517
+    name: "Stabilire baseline di controllo"
+    description: "Stabilire la baseline di controllo per l'azienda; allineare a framework di controllo e regolamentazione applicabile."
   BP-1150.20:
     name: "Threat intelligence"
-    source_hash: sha256-e4b50b0b5b6967dc
+    description: "Raccogliere, analizzare e diffondere threat intelligence a difensori e decision-maker."
   BP-1150.20.10:
     name: "Raccogliere threat intelligence"
-    source_hash: sha256-25a4ebda6df7a42c
+    description: "Raccogliere threat intelligence da sensori interni, feed ISAC, vendor e OSINT."
   BP-1150.20.20:
     name: "Analizzare e diffondere intelligence"
-    source_hash: sha256-8dc002ed9ddc3a76
+    description: "Analizzare intelligence per rilevanza e operazionalizzarla — IOC, ipotesi di hunt, briefing."
   BP-1150.30:
-    name: "Scoperta delle vulnerabilità"
-    source_hash: sha256-1cd2e38ea225310b
+    name: "Scoperta di vulnerabilità"
+    description: "Scoprire vulnerabilità — scan, pen test, bug bounty, code review — e guidare la remediation."
   BP-1150.30.10:
-    name: "Eseguire scansioni di vulnerabilità"
-    source_hash: sha256-3d007f831d2f79fc
+    name: "Eseguire scan di vulnerabilità"
+    description: "Eseguire scan continui di vulnerabilità attraverso infrastruttura, applicazioni e workload cloud."
   BP-1150.30.20:
-    name: "Condurre penetration test"
-    source_hash: sha256-2201a76850035e2c
+    name: "Eseguire penetration test"
+    description: "Eseguire penetration test periodici ed event-driven; catturare rilievi sfruttabili e remediation."
   BP-1150.30.30:
-    name: "Pilotare la remediation delle vulnerabilità"
-    source_hash: sha256-005fa7631055e776
+    name: "Guidare remediation di vulnerabilità"
+    description: "Prioritizzare vulnerabilità per sfruttabilità e criticità dell'asset; tracciare remediation rispetto agli SLA."
   BP-1150.40:
-    name: "Rilevamento"
-    source_hash: sha256-5b45b06eb911ec76
+    name: "Rilevazione"
+    description: "Rilevare eventi di sicurezza tramite monitoring, analytics, threat hunting e baseline comportamentali."
   BP-1150.40.10:
-    name: "Operare il monitoraggio di sicurezza"
-    source_hash: sha256-585fc4acb622dda1
+    name: "Operare monitoring di sicurezza"
+    description: "Operare il SOC — SIEM, EDR, XDR, network detection — per monitorare eventi di sicurezza 24/7."
   BP-1150.40.20:
-    name: "Triage e investigazione degli alert"
-    source_hash: sha256-7d2b0bd5673e3f73
+    name: "Triagiare e investigare alert"
+    description: "Triagiare e investigare alert; escalare incident confermati; chiudere falsi positivi."
   BP-1150.40.30:
-    name: "Cacciare le minacce"
-    source_hash: sha256-2ffda774c0958b04
+    name: "Cacciare minacce"
+    description: "Eseguire threat hunt proattivi su ipotesi derivate da intelligence e TTP emergenti."
   BP-1150.50:
-    name: "Risposta agli incidenti"
-    source_hash: sha256-d8dfacbd546cd220
+    name: "Incident response"
+    description: "Rispondere a incident di sicurezza confermati — contenere, eradicare, ripristinare e imparare."
   BP-1150.50.10:
-    name: "Contenere l'incidente"
-    source_hash: sha256-e08d702bed938c2b
+    name: "Contenere incident"
+    description: "Contenere l'incident — isolare sistemi interessati, revocare credenziali, bloccare traffico — per fermare la propagazione."
   BP-1150.50.20:
-    name: "Eradicare la minaccia"
-    source_hash: sha256-cd617fc1c8cb81cf
+    name: "Eradicare minaccia"
+    description: "Eradicare la minaccia — rimuovere malware, patchare vulnerabilità, chiudere meccanismo di persistenza."
   BP-1150.50.30:
-    name: "Recuperare le operazioni"
-    source_hash: sha256-811a7311f022d96f
+    name: "Ripristinare operazioni"
+    description: "Ripristinare sistemi e operazioni interessati allo stato known-good; validare prima del rientro in servizio."
   BP-1150.50.40:
-    name: "Notificare e segnalare"
-    source_hash: sha256-26950b7503501bb9
+    name: "Notificare e reportare"
+    description: "Notificare regolatori, clienti e parti interessate secondo obblighi di breach notification e protocollo."
   BP-1150.60:
     name: "Hardening di identità e accesso"
-    source_hash: sha256-72dbc7762816a757
+    description: "Fare hardening di identità e accesso — IAM, MFA, privileged access — per prevenire percorsi di attacco basati su identità."
   BP-1150.60.10:
-    name: "Gestire il ciclo di vita dell'identità"
-    source_hash: sha256-227f2ed8620f69a0
+    name: "Gestire ciclo di vita dell'identità"
+    description: "Gestire ciclo di vita dell'identità — provisioning, cambio di ruolo, deprovisioning — per dipendenti, contractor e macchine."
   BP-1150.60.20:
-    name: "Applicare i controlli di autenticazione"
-    source_hash: sha256-06480b7b3357d537
+    name: "Imporre controlli di autenticazione"
+    description: "Imporre MFA, conditional access e autenticazione basata sul rischio su tutti i percorsi di accesso."
   BP-1150.60.30:
-    name: "Governare l'accesso privilegiato"
-    source_hash: sha256-f89226ca9d7688a4
+    name: "Governare accesso privilegiato"
+    description: "Governare accesso privilegiato — vault, elevazione just-in-time, monitoraggio di sessione, ri-attestazione periodica."
   BP-1150.70:
-    name: "Awareness e lezioni apprese"
-    source_hash: sha256-520072a406ecbde5
+    name: "Awareness e lessons learned"
+    description: "Eseguire awareness di sicurezza nella workforce; catturare lessons da incident ed esercizi."
   BP-1150.70.10:
-    name: "Erogare awareness sulla sicurezza"
-    source_hash: sha256-9a21fcb8f5340c81
+    name: "Eseguire awareness di sicurezza"
+    description: "Eseguire formazione di awareness di sicurezza, simulazioni di phishing e formazione mirata per ruolo."
   BP-1150.70.20:
-    name: "Capturare e applicare le lezioni"
-    source_hash: sha256-ecb7a0e28fb3b9af
+    name: "Catturare e applicare lessons"
+    description: "Catturare lessons da incident, esercizi e report di breach; applicare a controlli, formazione, runbook."
