@@ -5,138 +5,184 @@ entries:
   BP-1000:
     name: "Ordine-a-Incasso"
     description: "Ciclo di ricavi end-to-end dalla cattura del lead attraverso preventivo, contratto e cattura dell'ordine (con verifica del credito), promessa e allocazione dell'ordine, produzione o erogazione del servizio, logistica in uscita, fatturazione al cliente, incasso e applicazione dei pagamenti, fino al riconoscimento dei ricavi. Un BP2 per ogni stage di VS-390; BP3 scompone il lavoro in attività operative in forma verbale."
+    source_hash: sha256-02663879ffca2011
   BP-1000.10:
     name: "Cattura e qualificazione dei lead"
     description: "Catturare l'interesse del prospect, arricchirlo con dati firmografici e comportamentali, valutarlo rispetto ai criteri di profilo cliente ideale e instradare i lead qualificati alle vendite."
+    source_hash: sha256-07bdfadef9990ed2
   BP-1000.10.10:
     name: "Catturare lead inbound"
     description: "Ricevere l'interesse inbound del prospect da form web, eventi, referenze partner o prospecting outbound e persisterlo come record di lead."
+    source_hash: sha256-6454fcf6bc6781ce
   BP-1000.10.20:
     name: "Arricchire dati del lead"
     description: "Aumentare il lead con dati firmografici, tecnografici e comportamentali da fonti interne e di terze parti per abilitare scoring e routing."
+    source_hash: sha256-a3dd161e93754dbc
   BP-1000.10.30:
     name: "Valutare e qualificare il lead"
     description: "Applicare un modello di scoring (fit + intent) per qualificare il lead come Marketing-Qualified o Sales-Qualified, oppure squalificarlo e ricicarlo."
+    source_hash: sha256-f43020b741809658
   BP-1000.10.40:
     name: "Instradare lead alle vendite"
     description: "Assegnare il lead qualificato al territorio di vendita, ruolo o partner appropriato secondo le regole di routing e SLA."
+    source_hash: sha256-7d6396d776187ec0
   BP-1000.20:
     name: "Preventivo e configurazione"
     description: "Configurare la soluzione cliente, prezzarla secondo le regole di sconto approvate ed emettere un preventivo che il cliente possa accettare."
+    source_hash: sha256-d780b7ea12fbe2c2
   BP-1000.20.10:
     name: "Configurare soluzione cliente"
     description: "Tradurre i requisiti del cliente in un bundle prodotto/servizio configurato, validando compatibilità e fattibilità rispetto al catalogo offerta."
+    source_hash: sha256-20914cf9c10ff37d
   BP-1000.20.20:
     name: "Calcolare prezzo del preventivo"
     description: "Applicare prezzo di listino, sconti contrattuali, promozioni, valuta e regole fiscali per produrre il totale del preventivo riga per riga."
+    source_hash: sha256-b510e96248e28f82
   BP-1000.20.30:
     name: "Sottoporre preventivo ad approvazione"
     description: "Instradare il preventivo attraverso il workflow di approvazione di sconto e margine quando le soglie richiedono sign-off, catturando le decisioni dell'approvatore."
+    source_hash: sha256-c4f14a586af0b8e6
   BP-1000.20.40:
     name: "Emettere preventivo al cliente"
     description: "Consegnare il preventivo approvato al cliente con condizioni, validità e istruzioni di accettazione; tracciare lo stato del preventivo fino alla decisione."
+    source_hash: sha256-423cb58f1e902201
   BP-1000.30:
     name: "Contratto e cattura dell'ordine"
     description: "Negoziare ed eseguire il contratto, eseguire la verifica del credito del cliente e catturare l'ordine di vendita fermo."
+    source_hash: sha256-4fcc590b0de143b0
   BP-1000.30.10:
     name: "Negoziare termini contrattuali"
     description: "Negoziare termini commerciali, livelli di servizio, indennizzi e responsabilità; redlinare il contratto fino a quando entrambe le parti accettano."
+    source_hash: sha256-0f2c1c373f9fbe2f
   BP-1000.30.20:
     name: "Verificare credito del cliente"
     description: "Eseguire la verifica del credito sul cliente (storico interno + bureau esterno dove applicabile), impostare o confermare il limite di credito e autorizzare l'ordine rispetto al credito disponibile."
+    source_hash: sha256-4bda1b0a655e43c1
   BP-1000.30.30:
     name: "Eseguire contratto"
     description: "Catturare le firme del cliente e del firmatario autorizzato, persistere il contratto eseguito nel repository contratti e attivare la cattura ordine a valle."
+    source_hash: sha256-b1b33289faef6e20
   BP-1000.30.40:
     name: "Catturare ordine cliente"
     description: "Convertire il contratto eseguito o il preventivo accettato in un ordine di vendita fermo nel sistema di gestione ordini; validare completezza e fattibilità prima del commit."
+    source_hash: sha256-8a89509e24124861
   BP-1000.40:
     name: "Promessa e allocazione dell'ordine"
     description: "Promettere la data di consegna, allocare inventario o capacità e schedulare l'ordine per il fulfilment."
+    source_hash: sha256-b00d1e0b79ab3dda
   BP-1000.40.10:
     name: "Promettere data di consegna"
     description: "Eseguire verifiche available-to-promise / capable-to-promise rispetto a inventario, fornitura e capacità per impegnare una data di consegna su cui il cliente possa contare."
+    source_hash: sha256-529e86dc01e814a6
   BP-1000.40.20:
     name: "Allocare inventario all'ordine"
     description: "Riservare inventario specifico (lotti, seriali, ubicazioni) all'ordine; risolvere conflitti di allocazione quando la fornitura è vincolata."
+    source_hash: sha256-7c8ab755d52164f4
   BP-1000.40.30:
     name: "Riservare capacità di produzione"
     description: "Per make-to-order o assemble-to-order, riservare la linea di produzione e la fornitura di componenti necessaria per rispettare la data promessa."
+    source_hash: sha256-1312ab0f17c8f21d
   BP-1000.40.40:
     name: "Rilasciare ordine al fulfilment"
     description: "Consegnare l'ordine allocato e schedulato a produzione o fulfilment di magazzino con tutte le istruzioni di routing."
+    source_hash: sha256-b0e3332507414bf6
   BP-1000.50:
     name: "Produzione / Erogazione del servizio"
     description: "Eseguire l'ordine di lavoro di produzione o erogare il servizio per soddisfare l'ordine cliente."
+    source_hash: sha256-c778d7128a28f457
   BP-1000.50.10:
     name: "Emettere ordine di lavoro di produzione"
     description: "Generare l'ordine di lavoro rispetto alla capacità riservata, includendo BOM, routing e checkpoint di qualità."
+    source_hash: sha256-9c74e1005241f1cc
   BP-1000.50.20:
     name: "Eseguire produzione make-to-order"
     description: "Eseguire il lavoro di produzione secondo specifica sulla linea pianificata, registrando consumo di lavoro, macchina e materiale."
+    source_hash: sha256-7784055ee0d59778
   BP-1000.50.30:
     name: "Erogare servizio al cliente"
     description: "Per ordini di servizio, eseguire l'engagement rispetto allo statement of work, catturando tempi, milestone e deliverable."
+    source_hash: sha256-c821d4e93a7b2fa7
   BP-1000.50.40:
     name: "Confermare completamento ordine"
     description: "Chiudere l'ordine di lavoro o l'engagement di servizio con sign-off di qualità; attivare fatturazione e riconoscimento ricavi a valle."
+    source_hash: sha256-898a3aa4a2d5049f
   BP-1000.60:
     name: "Logistica in uscita"
     description: "Picking, packing e spedizione dell'ordine; gestire il trasporto in uscita e confermare la consegna al cliente."
+    source_hash: sha256-143fc0bf329859d2
   BP-1000.60.10:
     name: "Pickare, imballare e spedire l'ordine"
     description: "Pickare lo stock allocato, imballare in condizione di spedizione con documentazione e consegnare al corriere."
+    source_hash: sha256-66dce8504ab268b4
   BP-1000.60.20:
     name: "Gestire trasporto in uscita"
     description: "Pianificare freight, selezionare corriere, generare etichette di spedizione e documentazione doganale e spedire il carico."
+    source_hash: sha256-7da56889672fd0b0
   BP-1000.60.30:
     name: "Tracciare spedizione al cliente"
     description: "Monitorare lo stato in transito, gestire eccezioni (ritardo, danno, mis-routing) e mantenere il cliente informato."
+    source_hash: sha256-7e612f642846a332
   BP-1000.60.40:
     name: "Confermare consegna al cliente"
     description: "Catturare prova di consegna, chiudere la spedizione e attivare fatturazione a valle dove la fatturazione è basata sulla consegna."
+    source_hash: sha256-4235ba98e513e646
   BP-1000.70:
     name: "Fatturazione al cliente"
     description: "Generare la fattura cliente con tasse e sconti, emetterla attraverso il canale preferito del cliente e gestire eventuali dispute."
+    source_hash: sha256-1a9cbab342c75127
   BP-1000.70.10:
     name: "Generare fattura cliente"
     description: "Costruire la fattura da dati di ordine, consegna e contratto; validare completezza e aritmetica prima dell'emissione."
+    source_hash: sha256-015419e91094b20b
   BP-1000.70.20:
     name: "Applicare tasse e sconti"
     description: "Applicare tasse giurisdizionali (IVA/GST/sales tax), ritenute e sconti contrattuali alle righe di fattura."
+    source_hash: sha256-976c7ebd9885656f
   BP-1000.70.30:
     name: "Emettere fattura al cliente"
     description: "Consegnare la fattura tramite il canale preferito del cliente (portale e-invoicing, EDI, email, cartaceo) e persistere l'audit trail."
+    source_hash: sha256-b95e6fb74bd072ce
   BP-1000.70.40:
     name: "Gestire dispute di fattura"
     description: "Ricevere, investigare e risolvere dispute del cliente sul contenuto della fattura; emettere note di credito o revisioni dove giustificato."
+    source_hash: sha256-c585e82bed2bfd3c
   BP-1000.80:
     name: "Incasso e applicazione dei pagamenti"
     description: "Incassare i pagamenti del cliente attraverso il ciclo di sollecito, applicare gli incassi alle fatture e perseguire saldi scaduti."
+    source_hash: sha256-8d8f97ede9e3ceda
   BP-1000.80.10:
     name: "Inviare solleciti di pagamento"
     description: "Eseguire il ciclo di sollecito — promemoria automatici a intervalli di policy man mano che le fatture si avvicinano e superano la scadenza."
+    source_hash: sha256-a6b6ae3029528d87
   BP-1000.80.20:
     name: "Ricevere pagamento del cliente"
     description: "Accettare il pagamento tramite lo strumento scelto dal cliente (bonifico, ACH, carta, assegno, e-payment) e persistere l'incasso."
+    source_hash: sha256-ea2521d19092870f
   BP-1000.80.30:
     name: "Applicare pagamento alla fattura"
     description: "Conciliare l'incasso rispetto alla(e) fattura(e) aperta(e), allocare per riga dove parziale e chiudere il credito."
+    source_hash: sha256-39354d40e2fdce1d
   BP-1000.80.40:
     name: "Gestire collections del cliente"
     description: "Perseguire saldi scaduti attraverso la scala di escalation (esattore, agenzia di recupero crediti, write-off / accantonamento per crediti dubbi)."
+    source_hash: sha256-278d2b3138044a1c
   BP-1000.90:
     name: "Riconoscimento dei ricavi"
     description: "Riconoscere i ricavi maturati secondo lo standard contabile applicabile (IFRS 15 / ASC 606), differire i ricavi non maturati e conciliare con il sub-libro mastro."
+    source_hash: sha256-89c091b122b13417
   BP-1000.90.10:
     name: "Riconoscere ricavi maturati"
     description: "Applicare il modello a cinque step IFRS 15 / ASC 606 per riconoscere ricavi nel momento appropriato o lungo la durata del contratto."
+    source_hash: sha256-6662367ac5e86683
   BP-1000.90.20:
     name: "Differire ricavi non maturati"
     description: "Parcheggiare gli importi fatturati ma non ancora maturati in conti di ricavi differiti, rilasciandoli man mano che l'obbligazione di performance viene soddisfatta."
+    source_hash: sha256-8d97df9e020fe229
   BP-1000.90.30:
     name: "Conciliare ricavi con sub-libro mastro"
     description: "Conciliare il libro mastro dei ricavi con AR e i sistemi di ordine/fatturazione; risolvere variazioni prima della chiusura del periodo."
+    source_hash: sha256-744e9c32a46a15e5
   BP-1000.90.40:
     name: "Reportare performance dei ricavi"
     description: "Produrre reporting dei ricavi (riconosciuti, differiti, backlog) per management, chiusura finanziaria e disclosure esterna."
+    source_hash: sha256-6aaef44ce04968d1

@@ -5,57 +5,76 @@ entries:
   BP-1070:
     name: "Incidente-a-Resolução"
     description: "Ciclo universal de tratamento de incidentes e issues desde a captura passando por investigação, resolução e lições aprendidas. Usado transversalmente em atendimento ao cliente, TI, segurança, compliance, auditoria e risco operacional — variantes específicas de indústria em VS-310 colapsam aqui em quatro fases lógicas."
+    source_hash: sha256-b983a0971b80b34a
   BP-1070.10:
     name: "Captura do incidente"
     description: "Capturar incidentes, reclamações, defeitos, near-misses e achados de auditoria através de qualquer canal; persistir com metadados estruturados."
+    source_hash: sha256-093e28b2aff5be18
   BP-1070.10.10:
     name: "Receber incidente"
     description: "Aceitar o incidente do canal originador (cliente, funcionário, sistema, regulador, auditoria) no sistema de gestão de incidentes."
+    source_hash: sha256-6677adae952fc44a
   BP-1070.10.20:
     name: "Classificar incidente"
     description: "Classificar incidente por tipo, severidade, impacto ao negócio e serviço ou ativo afetado; rotear para a fila correta."
+    source_hash: sha256-cba5705b5f9d810f
   BP-1070.10.30:
     name: "Acusar recebimento ao originador"
     description: "Acusar recebimento ao originador com identificador do caso e cadência de resposta esperada."
+    source_hash: sha256-a717b2fcc19577ea
   BP-1070.10.40:
     name: "Disparar protocolo de incidente maior"
     description: "Para incidentes de alta severidade, disparar o protocolo de incidente maior ou crise — incident commander, war-room, rotas de escalonamento."
+    source_hash: sha256-87779e038caf7086
   BP-1070.20:
     name: "Investigação"
     description: "Investigar o incidente — coletar evidências, executar diagnósticos, identificar causa raiz e avaliar impacto."
+    source_hash: sha256-9a76413da5babd6b
   BP-1070.20.10:
     name: "Coletar evidências"
     description: "Coletar logs, declarações, amostras e outras evidências relevantes ao incidente; persistir no arquivo do caso."
+    source_hash: sha256-f1889e0eb572f35a
   BP-1070.20.20:
     name: "Diagnosticar causa raiz"
     description: "Aplicar métodos de análise de causa raiz (5 porquês, fault-tree, fishbone) para identificar causas primárias e contribuintes."
+    source_hash: sha256-efd298ee1737914c
   BP-1070.20.30:
     name: "Avaliar impacto"
     description: "Avaliar impacto ao cliente, financeiro, regulatório, de segurança e reputacional do incidente e do caminho de resolução proposto."
+    source_hash: sha256-537fbed4ced3fa38
   BP-1070.30:
     name: "Resolução"
     description: "Resolver o incidente — restaurar serviço, remediar dano, comunicar e fechar o caso."
+    source_hash: sha256-b5d47b41164583bf
   BP-1070.30.10:
     name: "Aplicar workaround"
     description: "Aplicar um workaround para restaurar serviço ou conter dano enquanto a correção permanente é desenvolvida."
+    source_hash: sha256-f14e89ff6d03d050
   BP-1070.30.20:
     name: "Implementar correção permanente"
     description: "Desenvolver e fazer deploy da ação corretiva permanente através de change management; validar a correção."
+    source_hash: sha256-9c9fe4ea00149e05
   BP-1070.30.30:
     name: "Comunicar resolução"
     description: "Comunicar a resolução ao originador, clientes afetados, reguladores onde requerido e stakeholders internos."
+    source_hash: sha256-9120ad28b948233e
   BP-1070.30.40:
     name: "Fechar caso"
     description: "Confirmar satisfação do originador; fechar o caso com trilha de auditoria completa e rating CSAT ou equivalente."
+    source_hash: sha256-21993740429b4490
   BP-1070.40:
     name: "Lições aprendidas"
     description: "Extrair lições do caso, impulsionar ações preventivas sistêmicas e melhorar a capacidade de resolução."
+    source_hash: sha256-ecad8d3fe25fecc6
   BP-1070.40.10:
     name: "Conduzir post-incident review"
     description: "Conduzir post-incident review blameless; capturar o que funcionou, o que não funcionou e o que mudar."
+    source_hash: sha256-afac791cac610cae
   BP-1070.40.20:
     name: "Impulsionar ações preventivas"
     description: "Abrir e rastrear ações preventivas (sistema, processo, treinamento); confirmar fechamento com evidência."
+    source_hash: sha256-1cc2a76473435e62
   BP-1070.40.30:
     name: "Atualizar base de conhecimento"
     description: "Atualizar base de conhecimento, runbooks e regras de decisão com nova evidência para acelerar resoluções futuras."
+    source_hash: sha256-06c8c470a3324f6e

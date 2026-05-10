@@ -5,138 +5,184 @@ entries:
   BP-1000:
     name: "Pedido-a-Recebimento"
     description: "Ciclo de receita ponta a ponta, da captura do lead à cotação, contrato e captura do pedido (com verificação de crédito), promessa e alocação do pedido, produção ou entrega de serviço, logística de saída, faturamento ao cliente, cobrança e aplicação do recebimento, e reconhecimento de receita. Um BP2 por estágio do VS-390; o BP3 decompõe o trabalho em atividades operacionais com frase verbal."
+    source_hash: sha256-02663879ffca2011
   BP-1000.10:
     name: "Captura e Qualificação de Leads"
     description: "Capturar o interesse do prospecto, enriquecê-lo com dados firmográficos e comportamentais, pontuar contra critérios de perfil de cliente ideal e rotear leads qualificados para vendas."
+    source_hash: sha256-07bdfadef9990ed2
   BP-1000.10.10:
     name: "Capturar Lead de Entrada"
     description: "Receber interesse de prospecto vindo de formulários web, eventos, indicações de parceiros ou prospecção ativa e persistir como registro de lead."
+    source_hash: sha256-6454fcf6bc6781ce
   BP-1000.10.20:
     name: "Enriquecer Dados do Lead"
     description: "Aumentar o lead com dados firmográficos, tecnográficos e comportamentais de fontes internas e de terceiros para viabilizar pontuação e roteamento."
+    source_hash: sha256-a3dd161e93754dbc
   BP-1000.10.30:
     name: "Pontuar e Qualificar Lead"
     description: "Aplicar um modelo de pontuação (fit + intenção) para qualificar o lead como Marketing-Qualified ou Sales-Qualified, ou desqualificar e reciclar."
+    source_hash: sha256-f43020b741809658
   BP-1000.10.40:
     name: "Rotear Lead para Vendas"
     description: "Atribuir o lead qualificado ao território, papel ou parceiro de vendas apropriado segundo regras de roteamento e SLA."
+    source_hash: sha256-7d6396d776187ec0
   BP-1000.20:
     name: "Cotação e Configuração"
     description: "Configurar a solução do cliente, precificá-la sob regras aprovadas de desconto e emitir uma cotação que o cliente possa aceitar."
+    source_hash: sha256-d780b7ea12fbe2c2
   BP-1000.20.10:
     name: "Configurar Solução do Cliente"
     description: "Traduzir requisitos do cliente em um pacote configurado de produto ou serviço, validando compatibilidade e viabilidade contra o catálogo de ofertas."
+    source_hash: sha256-20914cf9c10ff37d
   BP-1000.20.20:
     name: "Calcular Preço da Cotação"
     description: "Aplicar preço de tabela, descontos contratuais, promoções, moeda e regras tributárias para produzir o total linha a linha da cotação."
+    source_hash: sha256-b510e96248e28f82
   BP-1000.20.30:
     name: "Submeter Cotação para Aprovação"
     description: "Rotear a cotação pelo workflow de aprovação de desconto e margem quando os limites exigirem assinatura, capturando as decisões dos aprovadores."
+    source_hash: sha256-c4f14a586af0b8e6
   BP-1000.20.40:
     name: "Emitir Cotação ao Cliente"
     description: "Entregar a cotação aprovada ao cliente com termos, validade e instruções de aceitação; rastrear o status da cotação até a decisão."
+    source_hash: sha256-423cb58f1e902201
   BP-1000.30:
     name: "Contrato e Captura do Pedido"
     description: "Negociar e executar o contrato, realizar a verificação de crédito do cliente e capturar o pedido de venda firme."
+    source_hash: sha256-4fcc590b0de143b0
   BP-1000.30.10:
     name: "Negociar Termos do Contrato"
     description: "Negociar termos comerciais, níveis de serviço, indenizações e responsabilidades; revisar o contrato até que ambas as partes aceitem."
+    source_hash: sha256-0f2c1c373f9fbe2f
   BP-1000.30.20:
     name: "Verificar Crédito do Cliente"
     description: "Realizar a verificação de crédito do cliente (histórico interno + bureau externo quando aplicável), definir ou confirmar o limite de crédito e autorizar o pedido contra o crédito disponível."
+    source_hash: sha256-4bda1b0a655e43c1
   BP-1000.30.30:
     name: "Executar Contrato"
     description: "Capturar assinaturas do cliente e dos signatários autorizados, persistir o contrato executado no repositório de contratos e disparar a captura do pedido downstream."
+    source_hash: sha256-b1b33289faef6e20
   BP-1000.30.40:
     name: "Capturar Pedido do Cliente"
     description: "Converter o contrato executado ou a cotação aceita em um pedido de venda firme no sistema de gestão de pedidos; validar completude e viabilidade antes do commit."
+    source_hash: sha256-8a89509e24124861
   BP-1000.40:
     name: "Promessa e Alocação do Pedido"
     description: "Prometer a data de entrega, alocar estoque ou capacidade e programar o pedido para o atendimento."
+    source_hash: sha256-b00d1e0b79ab3dda
   BP-1000.40.10:
     name: "Prometer Data de Entrega do Pedido"
     description: "Realizar verificações de available-to-promise / capable-to-promise contra estoque, fornecimento e capacidade para comprometer uma data de entrega confiável para o cliente."
+    source_hash: sha256-529e86dc01e814a6
   BP-1000.40.20:
     name: "Alocar Estoque ao Pedido"
     description: "Reservar estoque específico (lotes, séries, locais) contra o pedido; resolver conflitos de alocação quando o fornecimento estiver restrito."
+    source_hash: sha256-7c8ab755d52164f4
   BP-1000.40.30:
     name: "Reservar Capacidade de Produção"
     description: "Para make-to-order ou assemble-to-order, reservar a linha de produção e o fornecimento de componentes necessários para cumprir a data prometida."
+    source_hash: sha256-1312ab0f17c8f21d
   BP-1000.40.40:
     name: "Liberar Pedido para Atendimento"
     description: "Entregar o pedido alocado e programado à produção ou ao atendimento de armazém com todas as instruções de roteamento."
+    source_hash: sha256-b0e3332507414bf6
   BP-1000.50:
     name: "Produção / Entrega de Serviço"
     description: "Executar a ordem de produção ou prestar o serviço para atender ao pedido do cliente."
+    source_hash: sha256-c778d7128a28f457
   BP-1000.50.10:
     name: "Emitir Ordem de Produção"
     description: "Gerar a ordem de produção contra a capacidade reservada, incluindo BOM, roteiro e pontos de controle de qualidade."
+    source_hash: sha256-9c74e1005241f1cc
   BP-1000.50.20:
     name: "Executar Produção Make-to-Order"
     description: "Executar o trabalho de produção conforme especificação na linha planejada, registrando consumo de mão de obra, máquinas e materiais."
+    source_hash: sha256-7784055ee0d59778
   BP-1000.50.30:
     name: "Entregar Serviço ao Cliente"
     description: "Para pedidos de linha de serviço, executar o engajamento conforme o statement of work, capturando tempo, marcos e entregáveis."
+    source_hash: sha256-c821d4e93a7b2fa7
   BP-1000.50.40:
     name: "Confirmar Conclusão do Pedido"
     description: "Encerrar a ordem de produção ou o engajamento de serviço com aceite de qualidade; disparar faturamento e reconhecimento de receita downstream."
+    source_hash: sha256-898a3aa4a2d5049f
   BP-1000.60:
     name: "Logística de Saída"
     description: "Separar, embalar e expedir o pedido; gerenciar o transporte de saída e confirmar a entrega ao cliente."
+    source_hash: sha256-143fc0bf329859d2
   BP-1000.60.10:
     name: "Separar, Embalar e Expedir Pedido"
     description: "Separar o estoque alocado, embalar em condição pronta para envio com documentação e entregar à transportadora."
+    source_hash: sha256-66dce8504ab268b4
   BP-1000.60.20:
     name: "Gerenciar Transporte de Saída"
     description: "Planejar o frete, selecionar a transportadora, gerar etiquetas de envio e documentação aduaneira, e despachar a carga."
+    source_hash: sha256-7da56889672fd0b0
   BP-1000.60.30:
     name: "Rastrear Remessa ao Cliente"
     description: "Monitorar o status em trânsito, gerenciar exceções (atraso, dano, roteamento incorreto) e manter o cliente informado."
+    source_hash: sha256-7e612f642846a332
   BP-1000.60.40:
     name: "Confirmar Entrega ao Cliente"
     description: "Capturar o comprovante de entrega, encerrar a remessa e disparar o faturamento downstream quando o billing for baseado em entrega."
+    source_hash: sha256-4235ba98e513e646
   BP-1000.70:
     name: "Faturamento ao Cliente"
     description: "Gerar a fatura do cliente com tributos e descontos, emiti-la pelo canal preferido do cliente e gerenciar quaisquer disputas."
+    source_hash: sha256-1a9cbab342c75127
   BP-1000.70.10:
     name: "Gerar Fatura do Cliente"
     description: "Construir a fatura a partir de dados do pedido, entrega e contrato; validar completude e aritmética antes da emissão."
+    source_hash: sha256-015419e91094b20b
   BP-1000.70.20:
     name: "Aplicar Tributos e Descontos"
     description: "Aplicar tributos jurisdicionais (IVA/ICMS/sales tax), retenções e descontos contratuais aos itens da fatura."
+    source_hash: sha256-976c7ebd9885656f
   BP-1000.70.30:
     name: "Emitir Fatura ao Cliente"
     description: "Entregar a fatura pelo canal preferido do cliente (portal de e-invoicing, EDI, e-mail, papel) e persistir a trilha de auditoria."
+    source_hash: sha256-b95e6fb74bd072ce
   BP-1000.70.40:
     name: "Gerenciar Disputas de Fatura"
     description: "Receber, investigar e resolver disputas de clientes sobre o conteúdo da fatura; emitir notas de crédito ou revisões quando justificadas."
+    source_hash: sha256-c585e82bed2bfd3c
   BP-1000.80:
     name: "Cobrança e Aplicação do Recebimento"
     description: "Cobrar pagamentos de clientes através do ciclo de dunning, aplicar recebimentos a faturas e perseguir saldos vencidos."
+    source_hash: sha256-8d8f97ede9e3ceda
   BP-1000.80.10:
     name: "Enviar Lembretes de Pagamento"
     description: "Executar o ciclo de dunning — lembretes automatizados em intervalos definidos por política à medida que as faturas se aproximam e ultrapassam o vencimento."
+    source_hash: sha256-a6b6ae3029528d87
   BP-1000.80.20:
     name: "Receber Pagamento do Cliente"
     description: "Aceitar o pagamento via instrumento escolhido pelo cliente (wire, ACH, cartão, cheque, e-payment) e persistir o recebimento."
+    source_hash: sha256-ea2521d19092870f
   BP-1000.80.30:
     name: "Aplicar Pagamento à Fatura"
     description: "Conciliar o recebimento contra a(s) fatura(s) em aberto, alocar por item de linha quando parcial e baixar o recebível."
+    source_hash: sha256-39354d40e2fdce1d
   BP-1000.80.40:
     name: "Gerenciar Cobrança de Clientes"
     description: "Perseguir saldos vencidos pela escada de escalonamento (cobrador, agência de cobrança, write-off / provisão para dívida incobrável)."
+    source_hash: sha256-278d2b3138044a1c
   BP-1000.90:
     name: "Reconhecimento de Receita"
     description: "Reconhecer a receita ganha sob o padrão contábil aplicável (IFRS 15 / ASC 606), diferir a receita não ganha e conciliar com o sub-ledger."
+    source_hash: sha256-89c091b122b13417
   BP-1000.90.10:
     name: "Reconhecer Receita Ganha"
     description: "Aplicar o modelo de cinco passos do IFRS 15 / ASC 606 para reconhecer a receita no momento apropriado ou ao longo do prazo do contrato."
+    source_hash: sha256-6662367ac5e86683
   BP-1000.90.20:
     name: "Diferir Receita Não Ganha"
     description: "Manter em contas de receita diferida os valores faturados mas ainda não ganhos, liberando à medida que a obrigação de desempenho é satisfeita."
+    source_hash: sha256-8d97df9e020fe229
   BP-1000.90.30:
     name: "Conciliar Receita ao Sub-Ledger"
     description: "Conciliar o ledger de receita com AR e com sistemas de pedidos/faturamento; resolver variações antes do fechamento de período."
+    source_hash: sha256-744e9c32a46a15e5
   BP-1000.90.40:
     name: "Reportar Performance de Receita"
     description: "Produzir relatórios de receita (reconhecida, diferida, backlog) para a gestão, fechamento financeiro e divulgação externa."
+    source_hash: sha256-6aaef44ce04968d1

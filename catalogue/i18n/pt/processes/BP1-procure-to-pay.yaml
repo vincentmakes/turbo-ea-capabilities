@@ -5,129 +5,172 @@ entries:
   BP-1010:
     name: "Compra-a-Pagamento"
     description: "Ciclo de gastos do lado do fornecedor ponta a ponta, da identificação da necessidade ao sourcing, seleção de fornecedor, contrato e pedido de compra, recebimento de bens ou serviços, processamento de fatura, pagamento, conciliação e monitoramento de performance do fornecedor. Um BP2 por stage_name do VS-420."
+    source_hash: sha256-441bb8b7fd59b66e
   BP-1010.10:
     name: "Identificação de Necessidade e Requisição"
     description: "Capturar, validar e aprovar a demanda interna por bens ou serviços e traduzi-la em uma requisição de compra."
+    source_hash: sha256-bbc0873a1ff7d971
   BP-1010.10.10:
     name: "Identificar Necessidade de Compra"
     description: "Capturar a demanda do negócio por um bem ou serviço da função solicitante e confirmar que alternativas internas foram consideradas."
+    source_hash: sha256-66e41d54b5c4bea5
   BP-1010.10.20:
     name: "Especificar Requisitos"
     description: "Converter a necessidade em uma especificação clara — quantidade, qualidade, nível de serviço e restrições de entrega — contra a qual os fornecedores possam cotar."
+    source_hash: sha256-3fd70cb209eafc8f
   BP-1010.10.30:
     name: "Abrir Requisição de Compra"
     description: "Criar a requisição de compra no sistema de procurement, atribuir a codificação orçamentária e submeter para aprovação."
+    source_hash: sha256-b0677f99d098cf47
   BP-1010.10.40:
     name: "Aprovar Requisição de Compra"
     description: "Rotear a requisição pela hierarquia de autorização de gastos; capturar decisões de aprovação e rejeições com justificativas."
+    source_hash: sha256-8d4bdb1517b11a19
   BP-1010.20:
     name: "Sourcing"
     description: "Selecionar a estratégia de sourcing, conduzir eventos de sourcing (RFx), avaliar respostas e adjudicar o trabalho."
+    source_hash: sha256-719e2b17612cca8c
   BP-1010.20.10:
     name: "Desenvolver Estratégia de Sourcing por Categoria"
     description: "Confirmar a estratégia da categoria — make-vs-buy, fornecedor único vs múltiplos, restrições geográficas — que enquadra este evento de sourcing."
+    source_hash: sha256-727cd2bf1bfe20b6
   BP-1010.20.20:
     name: "Conduzir Evento de Sourcing"
     description: "Emitir RFI/RFP/RFQ a fornecedores qualificados, gerenciar perguntas e respostas e coletar respostas até o prazo."
+    source_hash: sha256-e735ccd3c4480991
   BP-1010.20.30:
     name: "Avaliar Respostas dos Fornecedores"
     description: "Pontuar respostas contra os critérios de avaliação publicados — custo total de propriedade, qualidade, capacidade, sustentabilidade, risco."
+    source_hash: sha256-af59b5fc1ba76ba3
   BP-1010.20.40:
     name: "Negociar Adjudicação de Sourcing"
     description: "Conduzir rodadas finais de negociação com fornecedores selecionados e finalizar a decisão de adjudicação e sua justificativa."
+    source_hash: sha256-b98f7d3de17963a7
   BP-1010.30:
     name: "Seleção e Onboarding de Fornecedor"
     description: "Qualificar o fornecedor adjudicado, executar verificações de risco e compliance e realizar o onboarding nos dados mestres de fornecedor e nos sistemas operacionais."
+    source_hash: sha256-683a9e61adb86dea
   BP-1010.30.10:
     name: "Realizar Due Diligence do Fornecedor"
     description: "Executar verificações financeiras, regulatórias, de sanções, ESG e cybersecurity contra o fornecedor adjudicado e documentar os riscos residuais."
+    source_hash: sha256-8ef50a47cb84a438
   BP-1010.30.20:
     name: "Qualificar Fornecedor"
     description: "Confirmar que o fornecedor atende aos gates de qualificação da categoria — certificações, seguros, padrões de qualidade — antes de prosseguir o onboarding."
+    source_hash: sha256-f3331baf6022fbae
   BP-1010.30.30:
     name: "Configurar Dados Mestres do Fornecedor"
     description: "Persistir dados bancários, fiscais, de endereço e de contato do fornecedor nos dados mestres com as devidas verificações de stewardship."
+    source_hash: sha256-b7b66f5643b401ce
   BP-1010.30.40:
     name: "Onboarding do Fornecedor nos Sistemas Operacionais"
     description: "Provisionar o fornecedor em P2P, EDI/portal e quaisquer sistemas específicos da categoria; executar testes de integração nas transações."
+    source_hash: sha256-7fdaa28784925973
   BP-1010.40:
     name: "Contrato e Pedido de Compra"
     description: "Executar o contrato com o fornecedor e converter requisições aprovadas em pedidos de compra contra os quais o fornecedor possa entregar."
+    source_hash: sha256-3113e72df76ed62c
   BP-1010.40.10:
     name: "Negociar Contrato com Fornecedor"
     description: "Negociar termos comerciais, jurídicos e operacionais — preço, SLAs, indenizações, controle de mudanças — e capturar revisões até a execução."
+    source_hash: sha256-2c9256ddb544c554
   BP-1010.40.20:
     name: "Executar Contrato com Fornecedor"
     description: "Capturar assinaturas autorizadas, persistir o contrato executado no repositório e vinculá-lo aos dados mestres do fornecedor."
+    source_hash: sha256-4b716cff8ccb2b56
   BP-1010.40.30:
     name: "Emitir Pedido de Compra"
     description: "Converter a requisição aprovada (sob contrato executado ou PO avulso) em um pedido de compra firme e transmiti-lo ao fornecedor."
+    source_hash: sha256-6a43283b2a09687a
   BP-1010.40.40:
     name: "Gerenciar Mudanças de PO"
     description: "Processar mudanças solicitadas por fornecedor ou comprador — quantidade, data, preço — pelo workflow de controle de mudanças do PO."
+    source_hash: sha256-a94a0169b6c872df
   BP-1010.50:
     name: "Recebimento de Bens/Serviços"
     description: "Receber bens ou serviços, verificar quantidade e qualidade contra o PO e lançar o recebimento para a conciliação de fatura downstream."
+    source_hash: sha256-aa4194c3a4173341
   BP-1010.50.10:
     name: "Receber Bens ou Serviços"
     description: "Realizar o recebimento físico de bens na doca, ou aceitar a conclusão de serviços entregues, e capturar o comprovante de entrega."
+    source_hash: sha256-51f0892b82631e47
   BP-1010.50.20:
     name: "Inspecionar Quantidade e Qualidade"
     description: "Verificar quantidade, condição e conformidade com a especificação do PO; abrir relatórios de não conformidade onde houver falta."
+    source_hash: sha256-46bf76cbcd12b15b
   BP-1010.50.30:
     name: "Lançar Recebimento de Bens"
     description: "Lançar o recebimento de bens no ERP, liberando o estoque ou o reconhecimento de despesa e habilitando a conciliação de fatura por three-way match."
+    source_hash: sha256-7935849d37adf90f
   BP-1010.50.40:
     name: "Resolver Exceções de Recebimento"
     description: "Gerenciar faltas, danos ou disputas de conclusão de serviços com o fornecedor; acordar ajustes antes da aceitação da fatura."
+    source_hash: sha256-c5539a1a7af33dee
   BP-1010.60:
     name: "Recebimento e Verificação de Fatura"
     description: "Receber a fatura do fornecedor, executar three-way match contra PO e recebimento e resolver discrepâncias."
+    source_hash: sha256-1ca657d8c9103c84
   BP-1010.60.10:
     name: "Receber Fatura do Fornecedor"
     description: "Capturar a fatura do fornecedor via e-invoicing, EDI, portal ou papel; persistir com metadados do sistema-fonte."
+    source_hash: sha256-cc3184c35be1df6c
   BP-1010.60.20:
     name: "Conciliar Fatura com PO e Recebimento"
     description: "Executar o three-way match contra PO e recebimento de bens; rotear exceções para AP para resolução antes da autorização de pagamento."
+    source_hash: sha256-cf6eb77a135e2b0e
   BP-1010.60.30:
     name: "Resolver Discrepâncias de Fatura"
     description: "Investigar discrepâncias de preço, quantidade ou termos com comprador e fornecedor; capturar notas de crédito ou ajustes antes da aprovação."
+    source_hash: sha256-e72235e3e615abcb
   BP-1010.60.40:
     name: "Aprovar Fatura para Pagamento"
     description: "Rotear a fatura conciliada por qualquer aprovação requerida (limite do CFO, sign-off de projeto) e autorizá-la para pagamento."
+    source_hash: sha256-3e4fc912913e5ef4
   BP-1010.70:
     name: "Execução de Pagamento"
     description: "Executar o pagamento ao fornecedor via instrumento escolhido e enviar o aviso de remessa ao fornecedor."
+    source_hash: sha256-4c0510057501fef2
   BP-1010.70.10:
     name: "Programar Run de Pagamento"
     description: "Agrupar faturas aprovadas em um run de pagamento por data de vencimento, moeda e instrumento; otimizar captura de descontos e float."
+    source_hash: sha256-60937e6890ef6c0d
   BP-1010.70.20:
     name: "Executar Pagamento"
     description: "Desembolsar via wire, ACH, cartão virtual, cheque ou e-payment; persistir confirmações bancárias de tesouraria."
+    source_hash: sha256-6b277f8f8fa00b9c
   BP-1010.70.30:
     name: "Enviar Aviso de Remessa"
     description: "Notificar o fornecedor sobre o pagamento com detalhes de remessa linha a linha para que ele possa aplicar contra seu AR aberto."
+    source_hash: sha256-e44fa0c5d23f05e2
   BP-1010.80:
     name: "Conciliação"
     description: "Conciliar o sub-ledger de AP com o razão geral e com o banco, resolvendo variações antes do fechamento de período."
+    source_hash: sha256-1f90bbe4d421b275
   BP-1010.80.10:
     name: "Conciliar AP com Razão Geral"
     description: "Rolar o sub-ledger de AP e conciliar saldos com as contas de controle do GL, investigando qualquer variação."
+    source_hash: sha256-7d8553b73cbbc050
   BP-1010.80.20:
     name: "Conciliar Pagamentos com Banco"
     description: "Conciliar runs de pagamento com extratos bancários; investigar cheques não compensados, ACH retornados, timing de FX e variações de tarifas bancárias."
+    source_hash: sha256-196a279cd9183e28
   BP-1010.80.30:
     name: "Resolver Variações de Conciliação"
     description: "Levar variações à raiz — pagamento duplicado, lançamento incorreto, crédito de fornecedor não aplicado — e lançar entradas corretivas."
+    source_hash: sha256-322c16848d9c70f8
   BP-1010.90:
     name: "Monitoramento de Performance do Fornecedor"
     description: "Monitorar a performance do fornecedor contra SLAs e KPIs contratuais, executar scorecards e gerenciar ações corretivas."
+    source_hash: sha256-2ebe5b6f74d11ea4
   BP-1010.90.10:
     name: "Acompanhar KPIs do Fornecedor"
     description: "Coletar dados operacionais sobre qualidade, entrega no prazo, fill rate e atendimento de SLA; persistir para geração de scorecards."
+    source_hash: sha256-2940321cf7dfdec7
   BP-1010.90.20:
     name: "Emitir Scorecard do Fornecedor"
     description: "Produzir e compartilhar o scorecard periódico do fornecedor com o fornecedor e a gestão interna da categoria; capturar o feedback do fornecedor."
+    source_hash: sha256-96a7a88808e2fe7a
   BP-1010.90.30:
     name: "Gerenciar Ações Corretivas do Fornecedor"
     description: "Abrir, acompanhar e encerrar planos de ação corretiva com fornecedores de baixa performance; escalar para remédios contratuais quando a violação persistir."
+    source_hash: sha256-04248767aaf1f096
