@@ -3,83 +3,83 @@ locale: ru
 source: BP1-threat-to-mitigation.yaml
 entries:
   BP-1150:
-    name: "От угрозы к митигации"
-    source_hash: sha256-62cfa323d63dbb61
+    name: "Угроза-в-Митигацию"
+    description: "Цикл операционной кибербезопасности от определения posture через threat intelligence, обнаружение уязвимостей, детекцию, incident response, ужесточение identity-and-access и осведомлённость. Один BP2 на каждый stage_name VS-600."
   BP-1150.10:
-    name: "Определение позиции безопасности"
-    source_hash: sha256-285a1bef4d6d76a0
+    name: "Определение security posture"
+    description: "Определить security posture, базовую линию контролей и целевую зрелость для предприятия."
   BP-1150.10.10:
     name: "Определить стратегию безопасности"
-    source_hash: sha256-2981098fcc513191
+    description: "Определить стратегию кибербезопасности — risk appetite, целевая зрелость, фреймворк (NIST CSF, ISO 27001)."
   BP-1150.10.20:
-    name: "Установить базовый набор контролей"
-    source_hash: sha256-63384bd7bbe11517
+    name: "Установить базовую линию контролей"
+    description: "Установить базовую линию контролей для предприятия; выровнять с фреймворками контролей и применимым регулированием."
   BP-1150.20:
     name: "Threat intelligence"
-    source_hash: sha256-e4b50b0b5b6967dc
+    description: "Собирать, анализировать и распространять threat intelligence защитникам и принимающим решения."
   BP-1150.20.10:
-    name: "Собирать данные об угрозах"
-    source_hash: sha256-25a4ebda6df7a42c
+    name: "Собирать threat intelligence"
+    description: "Собирать threat intelligence из внутренних сенсоров, ISAC feeds, вендоров и OSINT."
   BP-1150.20.20:
-    name: "Анализировать и распространять разведданные"
-    source_hash: sha256-8dc002ed9ddc3a76
+    name: "Анализировать и распространять intelligence"
+    description: "Анализировать intelligence на релевантность и операционализировать — IOCs, гипотезы хантов, брифинги."
   BP-1150.30:
-    name: "Выявление уязвимостей"
-    source_hash: sha256-1cd2e38ea225310b
+    name: "Обнаружение уязвимостей"
+    description: "Обнаруживать уязвимости — сканирования, pen tests, bug bounty, ревью кода — и продвигать remediation."
   BP-1150.30.10:
-    name: "Проводить сканирование уязвимостей"
-    source_hash: sha256-3d007f831d2f79fc
+    name: "Запускать сканирования уязвимостей"
+    description: "Запускать непрерывные сканирования уязвимостей по инфраструктуре, приложениям и cloud workloads."
   BP-1150.30.20:
-    name: "Проводить тестирование на проникновение"
-    source_hash: sha256-2201a76850035e2c
+    name: "Проводить pen tests"
+    description: "Проводить периодические и event-driven penetration tests; фиксировать эксплуатируемые находки и remediations."
   BP-1150.30.30:
-    name: "Управлять устранением уязвимостей"
-    source_hash: sha256-005fa7631055e776
+    name: "Продвигать remediation уязвимостей"
+    description: "Приоритизировать уязвимости по эксплуатируемости и критичности активов; отслеживать remediation против SLA."
   BP-1150.40:
-    name: "Обнаружение"
-    source_hash: sha256-5b45b06eb911ec76
+    name: "Детекция"
+    description: "Обнаруживать события безопасности через мониторинг, аналитику, threat hunting и поведенческие базовые линии."
   BP-1150.40.10:
-    name: "Эксплуатировать SOC-мониторинг"
-    source_hash: sha256-585fc4acb622dda1
+    name: "Эксплуатировать мониторинг безопасности"
+    description: "Эксплуатировать SOC — SIEM, EDR, XDR, network detection — для мониторинга событий безопасности 24/7."
   BP-1150.40.20:
-    name: "Сортировать и расследовать алерты"
-    source_hash: sha256-7d2b0bd5673e3f73
+    name: "Триажировать и расследовать алёрты"
+    description: "Триажировать и расследовать алёрты; эскалировать подтверждённые инциденты; закрывать ложные срабатывания."
   BP-1150.40.30:
-    name: "Вести охоту на угрозы"
-    source_hash: sha256-2ffda774c0958b04
+    name: "Хантить угрозы"
+    description: "Проводить проактивные хант угроз по гипотезам, выведенным из intelligence и emerging TTPs."
   BP-1150.50:
-    name: "Реагирование на инциденты"
-    source_hash: sha256-d8dfacbd546cd220
+    name: "Incident response"
+    description: "Реагировать на подтверждённые инциденты безопасности — сдерживать, искоренять, восстанавливать и извлекать уроки."
   BP-1150.50.10:
-    name: "Локализовать инцидент"
-    source_hash: sha256-e08d702bed938c2b
+    name: "Сдержать инцидент"
+    description: "Сдержать инцидент — изолировать затронутые системы, отозвать учётные данные, заблокировать трафик — для остановки распространения."
   BP-1150.50.20:
-    name: "Устранить угрозу"
-    source_hash: sha256-cd617fc1c8cb81cf
+    name: "Искоренить угрозу"
+    description: "Искоренить угрозу — удалить вредонос, пропатчить уязвимость, закрыть механизм persistence."
   BP-1150.50.30:
     name: "Восстановить операции"
-    source_hash: sha256-811a7311f022d96f
+    description: "Восстановить затронутые системы и операции до known-good состояния; валидировать перед возвратом в эксплуатацию."
   BP-1150.50.40:
     name: "Уведомить и отчитаться"
-    source_hash: sha256-26950b7503501bb9
+    description: "Уведомить регуляторов, клиентов и затронутые стороны согласно обязательствам breach-notification и протоколу."
   BP-1150.60:
-    name: "Усиление идентичности и доступа"
-    source_hash: sha256-72dbc7762816a757
+    name: "Ужесточение identity и access"
+    description: "Ужесточить identity и access — IAM, MFA, privileged access — для предотвращения identity-based путей атаки."
   BP-1150.60.10:
-    name: "Управлять жизненным циклом идентичности"
-    source_hash: sha256-227f2ed8620f69a0
+    name: "Управлять жизненным циклом identity"
+    description: "Управлять жизненным циклом identity — provisioning, изменение роли, deprovisioning — по сотрудникам, контракторам и машинам."
   BP-1150.60.20:
-    name: "Применять контроли аутентификации"
-    source_hash: sha256-06480b7b3357d537
+    name: "Обеспечить контроли аутентификации"
+    description: "Обеспечить MFA, conditional access и risk-based authentication по всем путям доступа."
   BP-1150.60.30:
-    name: "Управлять привилегированным доступом"
-    source_hash: sha256-f89226ca9d7688a4
+    name: "Регулировать privileged access"
+    description: "Регулировать privileged access — vault, just-in-time elevation, мониторинг сессий, периодическая повторная аттестация."
   BP-1150.70:
-    name: "Осведомлённость и извлечённые уроки"
-    source_hash: sha256-520072a406ecbde5
+    name: "Осведомлённость и lessons learned"
+    description: "Проводить security awareness среди персонала; захватывать уроки из инцидентов и упражнений."
   BP-1150.70.10:
-    name: "Проводить обучение по безопасности"
-    source_hash: sha256-9a21fcb8f5340c81
+    name: "Проводить security awareness"
+    description: "Проводить тренинги security-awareness, симуляции фишинга и role-targeted обучение."
   BP-1150.70.20:
-    name: "Фиксировать и применять уроки"
-    source_hash: sha256-ecb7a0e28fb3b9af
+    name: "Захватывать и применять уроки"
+    description: "Захватывать уроки из инцидентов, упражнений и breach-отчётов; применять к контролям, обучению, runbooks."
