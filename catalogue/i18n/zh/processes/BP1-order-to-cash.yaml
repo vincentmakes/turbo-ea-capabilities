@@ -1,0 +1,142 @@
+kind: business-process
+locale: zh
+source: BP1-order-to-cash.yaml
+entries:
+  BP-1000:
+    name: "订单到回款"
+    source_hash: sha256-02663879ffca2011
+  BP-1000.10:
+    name: "潜客捕获与资格化"
+    source_hash: sha256-07bdfadef9990ed2
+  BP-1000.10.10:
+    name: "捕获入站潜客"
+    source_hash: sha256-6454fcf6bc6781ce
+  BP-1000.10.20:
+    name: "丰富潜客数据"
+    source_hash: sha256-a3dd161e93754dbc
+  BP-1000.10.30:
+    name: "评分并资格化潜客"
+    source_hash: sha256-f43020b741809658
+  BP-1000.10.40:
+    name: "将潜客分派至销售"
+    source_hash: sha256-7d6396d776187ec0
+  BP-1000.20:
+    name: "报价与配置"
+    source_hash: sha256-d780b7ea12fbe2c2
+  BP-1000.20.10:
+    name: "配置客户解决方案"
+    source_hash: sha256-20914cf9c10ff37d
+  BP-1000.20.20:
+    name: "计算报价价格"
+    source_hash: sha256-b510e96248e28f82
+  BP-1000.20.30:
+    name: "提交报价审批"
+    source_hash: sha256-c4f14a586af0b8e6
+  BP-1000.20.40:
+    name: "向客户出具报价"
+    source_hash: sha256-423cb58f1e902201
+  BP-1000.30:
+    name: "合同与订单录入"
+    source_hash: sha256-4fcc590b0de143b0
+  BP-1000.30.10:
+    name: "谈判合同条款"
+    source_hash: sha256-0f2c1c373f9fbe2f
+  BP-1000.30.20:
+    name: "核验客户信用"
+    source_hash: sha256-4bda1b0a655e43c1
+  BP-1000.30.30:
+    name: "签订合同"
+    source_hash: sha256-b1b33289faef6e20
+  BP-1000.30.40:
+    name: "录入客户订单"
+    source_hash: sha256-8a89509e24124861
+  BP-1000.40:
+    name: "订单承诺与分配"
+    source_hash: sha256-b00d1e0b79ab3dda
+  BP-1000.40.10:
+    name: "承诺交付日期"
+    source_hash: sha256-529e86dc01e814a6
+  BP-1000.40.20:
+    name: "为订单分配库存"
+    source_hash: sha256-7c8ab755d52164f4
+  BP-1000.40.30:
+    name: "预留生产产能"
+    source_hash: sha256-1312ab0f17c8f21d
+  BP-1000.40.40:
+    name: "将订单释放至履约"
+    source_hash: sha256-b0e3332507414bf6
+  BP-1000.50:
+    name: "生产 / 服务交付"
+    source_hash: sha256-c778d7128a28f457
+  BP-1000.50.10:
+    name: "下达生产工单"
+    source_hash: sha256-9c74e1005241f1cc
+  BP-1000.50.20:
+    name: "执行按订单生产"
+    source_hash: sha256-7784055ee0d59778
+  BP-1000.50.30:
+    name: "向客户交付服务"
+    source_hash: sha256-c821d4e93a7b2fa7
+  BP-1000.50.40:
+    name: "确认订单完成"
+    source_hash: sha256-898a3aa4a2d5049f
+  BP-1000.60:
+    name: "出库物流"
+    source_hash: sha256-143fc0bf329859d2
+  BP-1000.60.10:
+    name: "拣货、包装并发运订单"
+    source_hash: sha256-66dce8504ab268b4
+  BP-1000.60.20:
+    name: "管理出站运输"
+    source_hash: sha256-7da56889672fd0b0
+  BP-1000.60.30:
+    name: "追踪发货至客户"
+    source_hash: sha256-7e612f642846a332
+  BP-1000.60.40:
+    name: "确认客户签收"
+    source_hash: sha256-4235ba98e513e646
+  BP-1000.70:
+    name: "客户开票"
+    source_hash: sha256-1a9cbab342c75127
+  BP-1000.70.10:
+    name: "生成客户发票"
+    source_hash: sha256-015419e91094b20b
+  BP-1000.70.20:
+    name: "应用税费与折扣"
+    source_hash: sha256-976c7ebd9885656f
+  BP-1000.70.30:
+    name: "向客户开具发票"
+    source_hash: sha256-b95e6fb74bd072ce
+  BP-1000.70.40:
+    name: "处理发票争议"
+    source_hash: sha256-c585e82bed2bfd3c
+  BP-1000.80:
+    name: "回款与核销"
+    source_hash: sha256-8d8f97ede9e3ceda
+  BP-1000.80.10:
+    name: "发送付款提醒"
+    source_hash: sha256-a6b6ae3029528d87
+  BP-1000.80.20:
+    name: "接收客户付款"
+    source_hash: sha256-ea2521d19092870f
+  BP-1000.80.30:
+    name: "将付款核销至发票"
+    source_hash: sha256-39354d40e2fdce1d
+  BP-1000.80.40:
+    name: "管理客户催收"
+    source_hash: sha256-278d2b3138044a1c
+  BP-1000.90:
+    name: "收入确认"
+    source_hash: sha256-89c091b122b13417
+  BP-1000.90.10:
+    name: "确认已实现收入"
+    source_hash: sha256-6662367ac5e86683
+  BP-1000.90.20:
+    name: "递延未实现收入"
+    source_hash: sha256-8d97df9e020fe229
+  BP-1000.90.30:
+    name: "对账收入与子分类账"
+    source_hash: sha256-744e9c32a46a15e5
+  BP-1000.90.40:
+    name: "报告收入业绩"
+    source_hash: sha256-6aaef44ce04968d1

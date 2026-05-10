@@ -1,0 +1,142 @@
+kind: business-process
+locale: fr
+source: BP1-order-to-cash.yaml
+entries:
+  BP-1000:
+    name: "Commande-à-Encaissement"
+    source_hash: sha256-02663879ffca2011
+  BP-1000.10:
+    name: "Capture et qualification de leads"
+    source_hash: sha256-07bdfadef9990ed2
+  BP-1000.10.10:
+    name: "Capter le lead entrant"
+    source_hash: sha256-6454fcf6bc6781ce
+  BP-1000.10.20:
+    name: "Enrichir les données du lead"
+    source_hash: sha256-a3dd161e93754dbc
+  BP-1000.10.30:
+    name: "Scorer et qualifier le lead"
+    source_hash: sha256-f43020b741809658
+  BP-1000.10.40:
+    name: "Router le lead vers les ventes"
+    source_hash: sha256-7d6396d776187ec0
+  BP-1000.20:
+    name: "Devis et configuration"
+    source_hash: sha256-d780b7ea12fbe2c2
+  BP-1000.20.10:
+    name: "Configurer la solution client"
+    source_hash: sha256-20914cf9c10ff37d
+  BP-1000.20.20:
+    name: "Calculer le prix du devis"
+    source_hash: sha256-b510e96248e28f82
+  BP-1000.20.30:
+    name: "Soumettre le devis à approbation"
+    source_hash: sha256-c4f14a586af0b8e6
+  BP-1000.20.40:
+    name: "Émettre le devis au client"
+    source_hash: sha256-423cb58f1e902201
+  BP-1000.30:
+    name: "Contrat et prise de commande"
+    source_hash: sha256-4fcc590b0de143b0
+  BP-1000.30.10:
+    name: "Négocier les termes du contrat"
+    source_hash: sha256-0f2c1c373f9fbe2f
+  BP-1000.30.20:
+    name: "Vérifier le crédit client"
+    source_hash: sha256-4bda1b0a655e43c1
+  BP-1000.30.30:
+    name: "Exécuter le contrat"
+    source_hash: sha256-b1b33289faef6e20
+  BP-1000.30.40:
+    name: "Saisir la commande client"
+    source_hash: sha256-8a89509e24124861
+  BP-1000.40:
+    name: "Promesse de commande et allocation"
+    source_hash: sha256-b00d1e0b79ab3dda
+  BP-1000.40.10:
+    name: "Promettre la date de livraison"
+    source_hash: sha256-529e86dc01e814a6
+  BP-1000.40.20:
+    name: "Allouer le stock à la commande"
+    source_hash: sha256-7c8ab755d52164f4
+  BP-1000.40.30:
+    name: "Réserver la capacité de production"
+    source_hash: sha256-1312ab0f17c8f21d
+  BP-1000.40.40:
+    name: "Libérer la commande au fulfilment"
+    source_hash: sha256-b0e3332507414bf6
+  BP-1000.50:
+    name: "Production / délivrance du service"
+    source_hash: sha256-c778d7128a28f457
+  BP-1000.50.10:
+    name: "Émettre l'ordre de production"
+    source_hash: sha256-9c74e1005241f1cc
+  BP-1000.50.20:
+    name: "Exécuter la production à la commande"
+    source_hash: sha256-7784055ee0d59778
+  BP-1000.50.30:
+    name: "Délivrer le service au client"
+    source_hash: sha256-c821d4e93a7b2fa7
+  BP-1000.50.40:
+    name: "Confirmer l'achèvement de la commande"
+    source_hash: sha256-898a3aa4a2d5049f
+  BP-1000.60:
+    name: "Logistique sortante"
+    source_hash: sha256-143fc0bf329859d2
+  BP-1000.60.10:
+    name: "Picker, packer et expédier la commande"
+    source_hash: sha256-66dce8504ab268b4
+  BP-1000.60.20:
+    name: "Gérer le transport sortant"
+    source_hash: sha256-7da56889672fd0b0
+  BP-1000.60.30:
+    name: "Suivre l'expédition au client"
+    source_hash: sha256-7e612f642846a332
+  BP-1000.60.40:
+    name: "Confirmer la livraison au client"
+    source_hash: sha256-4235ba98e513e646
+  BP-1000.70:
+    name: "Facturation client"
+    source_hash: sha256-1a9cbab342c75127
+  BP-1000.70.10:
+    name: "Générer la facture client"
+    source_hash: sha256-015419e91094b20b
+  BP-1000.70.20:
+    name: "Appliquer taxes et remises"
+    source_hash: sha256-976c7ebd9885656f
+  BP-1000.70.30:
+    name: "Émettre la facture au client"
+    source_hash: sha256-b95e6fb74bd072ce
+  BP-1000.70.40:
+    name: "Gérer les litiges de facture"
+    source_hash: sha256-c585e82bed2bfd3c
+  BP-1000.80:
+    name: "Encaissement et application"
+    source_hash: sha256-8d8f97ede9e3ceda
+  BP-1000.80.10:
+    name: "Envoyer les relances de paiement"
+    source_hash: sha256-a6b6ae3029528d87
+  BP-1000.80.20:
+    name: "Recevoir le paiement client"
+    source_hash: sha256-ea2521d19092870f
+  BP-1000.80.30:
+    name: "Appliquer le paiement à la facture"
+    source_hash: sha256-39354d40e2fdce1d
+  BP-1000.80.40:
+    name: "Gérer le recouvrement client"
+    source_hash: sha256-278d2b3138044a1c
+  BP-1000.90:
+    name: "Reconnaissance du revenu"
+    source_hash: sha256-89c091b122b13417
+  BP-1000.90.10:
+    name: "Comptabiliser le revenu acquis"
+    source_hash: sha256-6662367ac5e86683
+  BP-1000.90.20:
+    name: "Différer le revenu non acquis"
+    source_hash: sha256-8d97df9e020fe229
+  BP-1000.90.30:
+    name: "Réconcilier le revenu au sous-grand livre"
+    source_hash: sha256-744e9c32a46a15e5
+  BP-1000.90.40:
+    name: "Reporter la performance du revenu"
+    source_hash: sha256-6aaef44ce04968d1

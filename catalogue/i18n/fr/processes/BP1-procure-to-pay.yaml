@@ -1,0 +1,133 @@
+kind: business-process
+locale: fr
+source: BP1-procure-to-pay.yaml
+entries:
+  BP-1010:
+    name: "Achat-à-Paiement"
+    source_hash: sha256-441bb8b7fd59b66e
+  BP-1010.10:
+    name: "Identification du besoin et requisition"
+    source_hash: sha256-bbc0873a1ff7d971
+  BP-1010.10.10:
+    name: "Identifier le besoin d'achat"
+    source_hash: sha256-66e41d54b5c4bea5
+  BP-1010.10.20:
+    name: "Spécifier les exigences"
+    source_hash: sha256-3fd70cb209eafc8f
+  BP-1010.10.30:
+    name: "Créer la demande d'achat"
+    source_hash: sha256-b0677f99d098cf47
+  BP-1010.10.40:
+    name: "Approuver la demande d'achat"
+    source_hash: sha256-8d4bdb1517b11a19
+  BP-1010.20:
+    name: "Sourcing"
+    source_hash: sha256-719e2b17612cca8c
+  BP-1010.20.10:
+    name: "Développer la stratégie de sourcing par catégorie"
+    source_hash: sha256-727cd2bf1bfe20b6
+  BP-1010.20.20:
+    name: "Lancer l'événement de sourcing"
+    source_hash: sha256-e735ccd3c4480991
+  BP-1010.20.30:
+    name: "Évaluer les réponses fournisseurs"
+    source_hash: sha256-af59b5fc1ba76ba3
+  BP-1010.20.40:
+    name: "Négocier l'attribution"
+    source_hash: sha256-b98f7d3de17963a7
+  BP-1010.30:
+    name: "Sélection et onboarding fournisseur"
+    source_hash: sha256-683a9e61adb86dea
+  BP-1010.30.10:
+    name: "Conduire la due diligence fournisseur"
+    source_hash: sha256-8ef50a47cb84a438
+  BP-1010.30.20:
+    name: "Qualifier le fournisseur"
+    source_hash: sha256-f3331baf6022fbae
+  BP-1010.30.30:
+    name: "Mettre en place les données maîtres fournisseur"
+    source_hash: sha256-b7b66f5643b401ce
+  BP-1010.30.40:
+    name: "Onboarder le fournisseur dans les systèmes"
+    source_hash: sha256-7fdaa28784925973
+  BP-1010.40:
+    name: "Contrat et bon de commande"
+    source_hash: sha256-3113e72df76ed62c
+  BP-1010.40.10:
+    name: "Négocier le contrat fournisseur"
+    source_hash: sha256-2c9256ddb544c554
+  BP-1010.40.20:
+    name: "Exécuter le contrat fournisseur"
+    source_hash: sha256-4b716cff8ccb2b56
+  BP-1010.40.30:
+    name: "Émettre le bon de commande"
+    source_hash: sha256-6a43283b2a09687a
+  BP-1010.40.40:
+    name: "Gérer les changements de BC"
+    source_hash: sha256-a94a0169b6c872df
+  BP-1010.50:
+    name: "Réception biens/services"
+    source_hash: sha256-aa4194c3a4173341
+  BP-1010.50.10:
+    name: "Réceptionner biens ou services"
+    source_hash: sha256-51f0892b82631e47
+  BP-1010.50.20:
+    name: "Inspecter quantité et qualité"
+    source_hash: sha256-46bf76cbcd12b15b
+  BP-1010.50.30:
+    name: "Comptabiliser la réception"
+    source_hash: sha256-7935849d37adf90f
+  BP-1010.50.40:
+    name: "Résoudre les écarts de réception"
+    source_hash: sha256-c5539a1a7af33dee
+  BP-1010.60:
+    name: "Réception et contrôle de facture"
+    source_hash: sha256-1ca657d8c9103c84
+  BP-1010.60.10:
+    name: "Recevoir la facture fournisseur"
+    source_hash: sha256-cc3184c35be1df6c
+  BP-1010.60.20:
+    name: "Rapprocher facture, BC et réception"
+    source_hash: sha256-cf6eb77a135e2b0e
+  BP-1010.60.30:
+    name: "Résoudre les écarts de facture"
+    source_hash: sha256-e72235e3e615abcb
+  BP-1010.60.40:
+    name: "Approuver la facture pour paiement"
+    source_hash: sha256-3e4fc912913e5ef4
+  BP-1010.70:
+    name: "Exécution des paiements"
+    source_hash: sha256-4c0510057501fef2
+  BP-1010.70.10:
+    name: "Planifier la campagne de paiement"
+    source_hash: sha256-60937e6890ef6c0d
+  BP-1010.70.20:
+    name: "Exécuter le paiement"
+    source_hash: sha256-6b277f8f8fa00b9c
+  BP-1010.70.30:
+    name: "Envoyer l'avis de règlement"
+    source_hash: sha256-e44fa0c5d23f05e2
+  BP-1010.80:
+    name: "Réconciliation"
+    source_hash: sha256-1f90bbe4d421b275
+  BP-1010.80.10:
+    name: "Réconcilier AP avec le grand livre"
+    source_hash: sha256-7d8553b73cbbc050
+  BP-1010.80.20:
+    name: "Réconcilier paiements avec la banque"
+    source_hash: sha256-196a279cd9183e28
+  BP-1010.80.30:
+    name: "Résoudre les écarts de réconciliation"
+    source_hash: sha256-322c16848d9c70f8
+  BP-1010.90:
+    name: "Suivi de la performance fournisseur"
+    source_hash: sha256-2ebe5b6f74d11ea4
+  BP-1010.90.10:
+    name: "Suivre les KPI fournisseur"
+    source_hash: sha256-2940321cf7dfdec7
+  BP-1010.90.20:
+    name: "Émettre la scorecard fournisseur"
+    source_hash: sha256-96a7a88808e2fe7a
+  BP-1010.90.30:
+    name: "Gérer les actions correctives fournisseur"
+    source_hash: sha256-04248767aaf1f096
