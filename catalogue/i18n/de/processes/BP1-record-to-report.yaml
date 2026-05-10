@@ -1,0 +1,64 @@
+kind: business-process
+locale: de
+source: BP1-record-to-report.yaml
+entries:
+  BP-1080:
+    name: "Buchung bis Bericht"
+  BP-1080.10:
+    name: "Transaktionserfassung"
+  BP-1080.10.10:
+    name: "Quelltransaktionen erfassen"
+  BP-1080.10.20:
+    name: "Kontierung anwenden"
+  BP-1080.10.30:
+    name: "Transaktionsdaten validieren"
+  BP-1080.20:
+    name: "Sub-Ledger-Abschluss"
+  BP-1080.20.10:
+    name: "AR-Sub-Ledger schließen"
+  BP-1080.20.20:
+    name: "AP-Sub-Ledger schließen"
+  BP-1080.20.30:
+    name: "Anlagen-Sub-Ledger schließen"
+  BP-1080.20.40:
+    name: "Sonstige Sub-Ledger schließen"
+  BP-1080.30:
+    name: "Abstimmung und Anpassungen"
+  BP-1080.30.10:
+    name: "Bilanzkonten abstimmen"
+  BP-1080.30.20:
+    name: "Periodenendanpassungen buchen"
+  BP-1080.30.30:
+    name: "Abstimmungsdifferenzen klären"
+  BP-1080.40:
+    name: "Konsolidierung"
+  BP-1080.40.10:
+    name: "Lokalwährungs-Saldenbilanzen umrechnen"
+  BP-1080.40.20:
+    name: "Intercompany eliminieren"
+  BP-1080.40.30:
+    name: "Konsolidiertes Konzernergebnis erstellen"
+  BP-1080.50:
+    name: "Management-Reporting"
+  BP-1080.50.10:
+    name: "Management-Berichte erstellen"
+  BP-1080.50.20:
+    name: "Plan-Abweichungen analysieren"
+  BP-1080.50.30:
+    name: "Management-Pack verteilen"
+  BP-1080.60:
+    name: "Statutarisches und regulatorisches Reporting"
+  BP-1080.60.10:
+    name: "Handelsrechtliche Abschlüsse erstellen"
+  BP-1080.60.20:
+    name: "Steuererklärungen einreichen"
+  BP-1080.60.30:
+    name: "Regulatorische Berichte einreichen"
+  BP-1080.70:
+    name: "Audit und Sign-Off"
+  BP-1080.70.10:
+    name: "Externes Audit unterstützen"
+  BP-1080.70.20:
+    name: "Internes Audit unterstützen"
+  BP-1080.70.30:
+    name: "Management-Sign-Off einholen"
