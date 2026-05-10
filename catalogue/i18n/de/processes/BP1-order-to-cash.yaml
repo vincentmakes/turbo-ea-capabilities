@@ -3,140 +3,140 @@ locale: de
 source: BP1-order-to-cash.yaml
 entries:
   BP-1000:
-    name: "Auftrag bis Zahlung"
-    source_hash: sha256-02663879ffca2011
+    name: "Auftrag-zu-Zahlung"
+    description: "End-to-End-Umsatzzyklus von der Lead-Erfassung über Angebot, Vertrag und Auftragserfassung (mit Bonitätsprüfung), Auftragszusage und -allokation, Produktion oder Dienstleistungserbringung, Versandlogistik, Kundenfakturierung, Inkasso und Zahlungszuordnung bis zur Umsatzrealisierung. Ein BP2 pro VS-390-Stage; BP3 zerlegt die Arbeit in verbformulierte operative Aktivitäten."
   BP-1000.10:
-    name: "Lead-Erfassung und Qualifizierung"
-    source_hash: sha256-07bdfadef9990ed2
+    name: "Lead-Erfassung & Qualifizierung"
+    description: "Interesse von Interessenten erfassen, mit firmographischen und Verhaltensdaten anreichern, gegen Ideal-Customer-Profile-Kriterien bewerten und qualifizierte Leads an den Vertrieb weiterleiten."
   BP-1000.10.10:
     name: "Inbound-Lead erfassen"
-    source_hash: sha256-6454fcf6bc6781ce
+    description: "Eingehendes Interesse von Interessenten aus Webformularen, Veranstaltungen, Partnerempfehlungen oder Outbound-Prospecting empfangen und als Lead-Datensatz persistieren."
   BP-1000.10.20:
     name: "Lead-Daten anreichern"
-    source_hash: sha256-a3dd161e93754dbc
+    description: "Den Lead mit firmographischen, technographischen und Verhaltensdaten aus internen und Drittquellen anreichern, um Scoring und Routing zu ermöglichen."
   BP-1000.10.30:
-    name: "Lead scoren und qualifizieren"
-    source_hash: sha256-f43020b741809658
+    name: "Lead bewerten und qualifizieren"
+    description: "Ein Scoring-Modell (Fit + Intent) anwenden, um den Lead als Marketing-Qualified oder Sales-Qualified zu qualifizieren oder zu disqualifizieren und zu recyceln."
   BP-1000.10.40:
     name: "Lead an Vertrieb routen"
-    source_hash: sha256-7d6396d776187ec0
+    description: "Den qualifizierten Lead dem zuständigen Vertriebsgebiet, der Rolle oder dem Partner gemäß Routing-Regeln und SLA zuweisen."
   BP-1000.20:
-    name: "Angebot und Konfiguration"
-    source_hash: sha256-d780b7ea12fbe2c2
+    name: "Angebot & Konfiguration"
+    description: "Die Kundenlösung konfigurieren, sie unter genehmigten Rabattregeln bepreisen und ein Angebot ausstellen, das der Kunde annehmen kann."
   BP-1000.20.10:
     name: "Kundenlösung konfigurieren"
-    source_hash: sha256-20914cf9c10ff37d
+    description: "Kundenanforderungen in ein konfiguriertes Produkt- oder Servicebündel übersetzen und Kompatibilität sowie Machbarkeit gegenüber dem Angebotskatalog validieren."
   BP-1000.20.20:
-    name: "Angebotspreis kalkulieren"
-    source_hash: sha256-b510e96248e28f82
+    name: "Angebotspreis berechnen"
+    description: "Listenpreis, vertragliche Rabatte, Promotionen, Währungs- und Steuerregeln anwenden, um die Position-für-Position-Angebotssumme zu erzeugen."
   BP-1000.20.30:
     name: "Angebot zur Genehmigung einreichen"
-    source_hash: sha256-c4f14a586af0b8e6
+    description: "Das Angebot durch den Rabatt- und Marge-Genehmigungsworkflow routen, wenn Schwellenwerte ein Sign-off erfordern, und Genehmigerentscheidungen erfassen."
   BP-1000.20.40:
-    name: "Angebot an den Kunden ausstellen"
-    source_hash: sha256-423cb58f1e902201
+    name: "Angebot an Kunden ausstellen"
+    description: "Das genehmigte Angebot mit Konditionen, Gültigkeit und Annahmeanweisungen an den Kunden ausliefern; Angebotsstatus bis zur Entscheidung verfolgen."
   BP-1000.30:
-    name: "Vertrag und Auftragserfassung"
-    source_hash: sha256-4fcc590b0de143b0
+    name: "Vertrag & Auftragserfassung"
+    description: "Den Vertrag verhandeln und ausführen, die Bonitätsprüfung des Kunden durchführen und den festen Verkaufsauftrag erfassen."
   BP-1000.30.10:
     name: "Vertragsbedingungen verhandeln"
-    source_hash: sha256-0f2c1c373f9fbe2f
+    description: "Kommerzielle Bedingungen, Service Levels, Freistellungen und Haftungen verhandeln; Vertrag redlinen, bis beide Seiten zustimmen."
   BP-1000.30.20:
     name: "Kundenbonität prüfen"
-    source_hash: sha256-4bda1b0a655e43c1
+    description: "Die Bonitätsprüfung am Kunden durchführen (interne Kredithistorie + externe Auskunftei wo zutreffend), Kreditlimit setzen oder bestätigen und den Auftrag gegen verfügbares Kreditlimit autorisieren."
   BP-1000.30.30:
     name: "Vertrag ausführen"
-    source_hash: sha256-b1b33289faef6e20
+    description: "Unterschriften von Kunde und autorisiertem Unterzeichner erfassen, den ausgeführten Vertrag im Vertragsrepository persistieren und nachgelagerte Auftragserfassung auslösen."
   BP-1000.30.40:
     name: "Kundenauftrag erfassen"
-    source_hash: sha256-8a89509e24124861
+    description: "Den ausgeführten Vertrag oder das angenommene Angebot in einen festen Verkaufsauftrag im Order-Management-System konvertieren; Vollständigkeit und Machbarkeit vor Commit validieren."
   BP-1000.40:
-    name: "Lieferzusage und Allokation"
-    source_hash: sha256-b00d1e0b79ab3dda
+    name: "Auftragszusage & Allokation"
+    description: "Das Lieferdatum zusagen, Bestand oder Kapazität allokieren und den Auftrag für die Erfüllung einplanen."
   BP-1000.40.10:
-    name: "Liefertermin zusagen"
-    source_hash: sha256-529e86dc01e814a6
+    name: "Lieferdatum zusagen"
+    description: "Available-to-Promise / Capable-to-Promise-Prüfungen gegen Bestand, Versorgung und Kapazität durchführen, um ein Lieferdatum zuzusagen, auf das sich der Kunde verlassen kann."
   BP-1000.40.20:
-    name: "Bestand zum Auftrag zuteilen"
-    source_hash: sha256-7c8ab755d52164f4
+    name: "Bestand auf Auftrag allokieren"
+    description: "Spezifischen Bestand (Lose, Seriennummern, Standorte) gegen den Auftrag reservieren; Allokationskonflikte bei beschränkter Versorgung lösen."
   BP-1000.40.30:
     name: "Produktionskapazität reservieren"
-    source_hash: sha256-1312ab0f17c8f21d
+    description: "Für Make-to-Order oder Assemble-to-Order die Produktionslinie und die zur Erfüllung des zugesagten Datums benötigte Komponentenversorgung reservieren."
   BP-1000.40.40:
-    name: "Auftrag an Fulfillment freigeben"
-    source_hash: sha256-b0e3332507414bf6
+    name: "Auftrag zur Erfüllung freigeben"
+    description: "Den allokierten und eingeplanten Auftrag mit allen Routing-Anweisungen an Produktion oder Lager-Erfüllung übergeben."
   BP-1000.50:
-    name: "Produktion / Service-Erbringung"
-    source_hash: sha256-c778d7128a28f457
+    name: "Produktion / Dienstleistungserbringung"
+    description: "Den Produktionsauftrag ausführen oder die Dienstleistung erbringen, um den Kundenauftrag zu erfüllen."
   BP-1000.50.10:
-    name: "Produktionsauftrag erteilen"
-    source_hash: sha256-9c74e1005241f1cc
+    name: "Produktionsauftrag ausstellen"
+    description: "Den Arbeitsauftrag gegen die reservierte Kapazität generieren, einschließlich Stückliste, Routing und Qualitätskontrollpunkten."
   BP-1000.50.20:
     name: "Make-to-Order-Produktion ausführen"
-    source_hash: sha256-7784055ee0d59778
+    description: "Die Produktionsarbeit nach Spezifikation auf der geplanten Linie ausführen und Arbeits-, Maschinen- und Materialverbrauch erfassen."
   BP-1000.50.30:
-    name: "Service an Kunden erbringen"
-    source_hash: sha256-c821d4e93a7b2fa7
+    name: "Dienstleistung an Kunden erbringen"
+    description: "Bei Service-Aufträgen das Engagement gemäß Statement of Work durchführen und Zeit, Meilensteine und Liefergegenstände erfassen."
   BP-1000.50.40:
     name: "Auftragsabschluss bestätigen"
-    source_hash: sha256-898a3aa4a2d5049f
+    description: "Den Arbeitsauftrag oder das Service-Engagement mit Qualitäts-Sign-off schließen; nachgelagerte Fakturierung und Umsatzrealisierung auslösen."
   BP-1000.60:
-    name: "Outbound-Logistik"
-    source_hash: sha256-143fc0bf329859d2
+    name: "Versandlogistik"
+    description: "Den Auftrag kommissionieren, packen und versenden; Outbound-Transport managen und die Lieferung an den Kunden bestätigen."
   BP-1000.60.10:
-    name: "Auftrag picken, packen und versenden"
-    source_hash: sha256-66dce8504ab268b4
+    name: "Auftrag kommissionieren, packen und versenden"
+    description: "Den allokierten Bestand kommissionieren, in versandbereitem Zustand mit Dokumentation packen und an den Frachtführer übergeben."
   BP-1000.60.20:
     name: "Outbound-Transport managen"
-    source_hash: sha256-7da56889672fd0b0
+    description: "Fracht planen, Frachtführer wählen, Versandetiketten und Zolldokumentation erzeugen und die Ladung versenden."
   BP-1000.60.30:
-    name: "Sendung zum Kunden verfolgen"
-    source_hash: sha256-7e612f642846a332
+    name: "Sendung zum Kunden tracken"
+    description: "In-Transit-Status überwachen, Ausnahmen (Verzögerung, Beschädigung, Fehlrouting) managen und den Kunden informiert halten."
   BP-1000.60.40:
-    name: "Kundenzustellung bestätigen"
-    source_hash: sha256-4235ba98e513e646
+    name: "Kundenlieferung bestätigen"
+    description: "Liefernachweis erfassen, die Sendung schließen und nachgelagerte Fakturierung auslösen, wo die Abrechnung lieferbasiert ist."
   BP-1000.70:
-    name: "Kundenrechnungsstellung"
-    source_hash: sha256-1a9cbab342c75127
+    name: "Kundenfakturierung"
+    description: "Die Kundenrechnung mit Steuern und Rabatten generieren, sie über den vom Kunden bevorzugten Kanal ausstellen und etwaige Streitigkeiten managen."
   BP-1000.70.10:
-    name: "Kundenrechnung erstellen"
-    source_hash: sha256-015419e91094b20b
+    name: "Kundenrechnung generieren"
+    description: "Die Rechnung aus Auftrags-, Liefer- und Vertragsdaten erstellen; Vollständigkeit und Arithmetik vor der Ausstellung validieren."
   BP-1000.70.20:
     name: "Steuern und Rabatte anwenden"
-    source_hash: sha256-976c7ebd9885656f
+    description: "Jurisdiktionsbezogene Steuern (USt./MwSt./Sales Tax), Quellensteuer und vertragliche Rabatte auf die Rechnungspositionen anwenden."
   BP-1000.70.30:
     name: "Rechnung an Kunden ausstellen"
-    source_hash: sha256-b95e6fb74bd072ce
+    description: "Die Rechnung über den vom Kunden bevorzugten Kanal (E-Invoicing-Portal, EDI, E-Mail, Papier) ausliefern und den Audit-Trail persistieren."
   BP-1000.70.40:
     name: "Rechnungsstreitigkeiten managen"
-    source_hash: sha256-c585e82bed2bfd3c
+    description: "Kundenstreitigkeiten zum Rechnungsinhalt empfangen, untersuchen und lösen; Gutschriften oder Korrekturen ausstellen, wo gerechtfertigt."
   BP-1000.80:
-    name: "Geldeinzug und Zuordnung"
-    source_hash: sha256-8d8f97ede9e3ceda
+    name: "Inkasso & Zahlungszuordnung"
+    description: "Kundenzahlungen über den Mahnzyklus einziehen, Zahlungseingänge auf Rechnungen zuordnen und überfällige Salden verfolgen."
   BP-1000.80.10:
     name: "Zahlungserinnerungen senden"
-    source_hash: sha256-a6b6ae3029528d87
+    description: "Den Mahnzyklus durchführen — automatisierte Erinnerungen in policy-konformen Intervallen, wenn Rechnungen sich dem Fälligkeitstermin nähern oder ihn überschreiten."
   BP-1000.80.20:
     name: "Kundenzahlung empfangen"
-    source_hash: sha256-ea2521d19092870f
+    description: "Zahlung über das vom Kunden gewählte Instrument (Überweisung, Lastschrift, Karte, Scheck, E-Payment) annehmen und den Eingang persistieren."
   BP-1000.80.30:
-    name: "Zahlung der Rechnung zuordnen"
-    source_hash: sha256-39354d40e2fdce1d
+    name: "Zahlung auf Rechnung zuordnen"
+    description: "Den Zahlungseingang gegen die offenen Rechnung(en) abgleichen, bei Teilzahlung positionsweise zuordnen und die Forderung schließen."
   BP-1000.80.40:
-    name: "Kunden-Inkasso managen"
-    source_hash: sha256-278d2b3138044a1c
+    name: "Kundenforderungen managen"
+    description: "Überfällige Salden über die Eskalationsleiter (Sachbearbeiter, Inkassoagentur, Abschreibung / Forderungsausfall-Vorsorge) verfolgen."
   BP-1000.90:
     name: "Umsatzrealisierung"
-    source_hash: sha256-89c091b122b13417
+    description: "Verdiente Umsätze nach geltendem Rechnungslegungsstandard (IFRS 15 / ASC 606) realisieren, unverdiente Umsätze abgrenzen und mit dem Nebenbuch abstimmen."
   BP-1000.90.10:
-    name: "Erzielten Umsatz realisieren"
-    source_hash: sha256-6662367ac5e86683
+    name: "Verdiente Umsätze realisieren"
+    description: "Das Fünf-Schritte-Modell IFRS 15 / ASC 606 anwenden, um Umsätze zum geeigneten Zeitpunkt oder über die Vertragslaufzeit zu realisieren."
   BP-1000.90.20:
-    name: "Unrealisierte Umsätze abgrenzen"
-    source_hash: sha256-8d97df9e020fe229
+    name: "Unverdiente Umsätze abgrenzen"
+    description: "Fakturierte, aber noch nicht verdiente Beträge in Konten für Umsatzabgrenzung parken und freigeben, sobald die Leistungsverpflichtung erfüllt ist."
   BP-1000.90.30:
-    name: "Umsatz mit Sub-Ledger abstimmen"
-    source_hash: sha256-744e9c32a46a15e5
+    name: "Umsatz mit Nebenbuch abstimmen"
+    description: "Das Umsatzhauptbuch mit Debitoren- und Auftrags-/Fakturierungssystemen abstimmen; Abweichungen vor Periodenabschluss klären."
   BP-1000.90.40:
-    name: "Umsatzleistung berichten"
-    source_hash: sha256-6aaef44ce04968d1
+    name: "Umsatzperformance reporten"
+    description: "Umsatz-Reporting (realisiert, abgegrenzt, Backlog) für Management, Finanzabschluss und externe Offenlegung produzieren."

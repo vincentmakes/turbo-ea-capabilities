@@ -4,79 +4,79 @@ source: BP1-crisis-to-recovery.yaml
 entries:
   BP-1140:
     name: "Crise-à-Reprise"
-    source_hash: sha256-6b5a46bc8192fd2e
+    description: "Cycle de continuité d'activité et de gestion de crise, de la planification de continuité aux tests de résilience, à la détection et à l'activation, à la réponse à la crise, à la reprise après sinistre, à la restauration et à la revue post-crise. Un BP2 par stage_name de VS-140."
   BP-1140.10:
     name: "Planification de continuité"
-    source_hash: sha256-015c32937d1d65af
+    description: "Construire et maintenir les plans de continuité d'activité et de reprise après sinistre pour les processus et systèmes critiques."
   BP-1140.10.10:
-    name: "Mener l'analyse d'impact métier"
-    source_hash: sha256-16d992be1d96a2e6
+    name: "Conduire l'analyse d'impact métier"
+    description: "Identifier les processus critiques, les cibles RTO/RPO, les dépendances et les exigences minimales de fonctionnement."
   BP-1140.10.20:
     name: "Construire les plans de continuité"
-    source_hash: sha256-504a6e02114d49ad
+    description: "Construire les plans de continuité d'activité au niveau processus et site — contournements, sites alternatifs, contacts clés."
   BP-1140.10.30:
     name: "Construire les plans de reprise après sinistre"
-    source_hash: sha256-88c412c4c1a51500
+    description: "Construire les plans de reprise après sinistre IT — runbooks, réplication, cibles de bascule — pour les systèmes critiques."
   BP-1140.20:
     name: "Tests de résilience"
-    source_hash: sha256-eb3618fdb4e292cb
+    description: "Tester les plans de continuité et de reprise — exercices sur table, walk-throughs, bascule complète."
   BP-1140.20.10:
     name: "Animer des exercices sur table"
-    source_hash: sha256-19611168ac84e9f3
+    description: "Animer des exercices sur table avec les équipes clés pour valider les plans et faire ressortir les gaps sans perturber les opérations."
   BP-1140.20.20:
     name: "Réaliser des drills de bascule"
-    source_hash: sha256-549dfa1938c1c12c
+    description: "Réaliser des drills de bascule contrôlés pour valider la reprise technique ; capturer le timing face aux cibles."
   BP-1140.20.30:
     name: "Mettre à jour les plans selon les constats"
-    source_hash: sha256-a53a2d1c7ca74f86
+    description: "Mettre à jour les plans de continuité et de reprise sur la base des constats des tests ; combler les gaps avant le prochain cycle."
   BP-1140.30:
     name: "Détection et activation"
-    source_hash: sha256-0373dbdb7e081af0
+    description: "Détecter le déclencheur de crise et activer la réponse — incident commander, war-room, comms."
   BP-1140.30.10:
     name: "Détecter le déclencheur de crise"
-    source_hash: sha256-a2b600c30c99453b
+    description: "Détecter les événements qui satisfont les critères de déclenchement de crise — panne, brèche, événement de sécurité, action réglementaire."
   BP-1140.30.20:
     name: "Activer le protocole de crise"
-    source_hash: sha256-c4d200ad5dcab2c4
+    description: "Activer le protocole de gestion de crise — désigner le commander, convoquer la war-room, établir la cadence de comms."
   BP-1140.40:
     name: "Réponse à la crise"
-    source_hash: sha256-4c79bc509b89d20c
+    description: "Gérer la crise active — protéger les personnes et les actifs, contenir le préjudice, communiquer, coordonner."
   BP-1140.40.10:
     name: "Protéger personnes et biens"
-    source_hash: sha256-bc0d35d4aee77175
+    description: "Conduire les actions protectrices — évacuation, shutdown, isolation, médical, sécurité — pour limiter le préjudice."
   BP-1140.40.20:
     name: "Contenir l'impact de la crise"
-    source_hash: sha256-9a019f4fa1f15864
+    description: "Contenir l'impact opérationnel, financier, réglementaire et de réputation via des actions de réponse ciblées."
   BP-1140.40.30:
     name: "Gérer la communication de crise"
-    source_hash: sha256-4dad5b0557fd8542
+    description: "Conduire les communications internes, externes, régulateurs et médias tout au long de la crise active."
   BP-1140.50:
     name: "Reprise après sinistre"
-    source_hash: sha256-fb85c409a6e401a5
+    description: "Exécuter les procédures de reprise après sinistre pour restaurer les services IT dans les cibles RTO/RPO."
   BP-1140.50.10:
     name: "Exécuter la bascule IT"
-    source_hash: sha256-10be996126e393fa
+    description: "Exécuter la bascule planifiée des systèmes IT critiques vers l'infrastructure de reprise."
   BP-1140.50.20:
     name: "Valider les services rétablis"
-    source_hash: sha256-036370fd854b7000
+    description: "Valider les services rétablis face aux critères d'acceptation ; reprendre les opérations face client."
   BP-1140.50.30:
     name: "Réaliser le retour arrière"
-    source_hash: sha256-c1689ce7096339a1
+    description: "Planifier et exécuter le retour vers l'infrastructure primaire une fois stable ; valider la restauration complète."
   BP-1140.60:
     name: "Restauration"
-    source_hash: sha256-44df1443f713f43d
+    description: "Restaurer actifs physiques, supply chains et opérations à l'état pré-crise."
   BP-1140.60.10:
     name: "Restaurer les opérations physiques"
-    source_hash: sha256-f505be01a02d874a
+    description: "Restaurer actifs physiques, sites et équipements en condition d'exploitation ; passer les contrôles de sécurité."
   BP-1140.60.20:
-    name: "Restaurer les flux d'offre et de demande"
-    source_hash: sha256-93a3ae915fd7288e
+    name: "Restaurer les flux d'approvisionnement et de demande"
+    description: "Restaurer les flux fournisseurs, le flux des commandes clients et le positionnement de stock à la baseline."
   BP-1140.70:
     name: "Revue post-crise"
-    source_hash: sha256-2955b6f0dfd36dd5
+    description: "Conduire la revue post-action ; capturer les enseignements ; piloter les améliorations systémiques de résilience."
   BP-1140.70.10:
     name: "Conduire la revue post-action"
-    source_hash: sha256-7583baae8ac29129
+    description: "Conduire une revue post-action blameless avec tous les responders ; capturer la timeline, les décisions et les apprentissages."
   BP-1140.70.20:
     name: "Renforcer la résilience"
-    source_hash: sha256-676cf9bedb8b4c35
+    description: "Traduire les enseignements en améliorations de résilience — contrôles, plans, formation, technologie."
