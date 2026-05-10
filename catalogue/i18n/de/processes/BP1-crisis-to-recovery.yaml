@@ -3,80 +3,80 @@ locale: de
 source: BP1-crisis-to-recovery.yaml
 entries:
   BP-1140:
-    name: "Krise bis Wiederherstellung"
-    source_hash: sha256-6b5a46bc8192fd2e
+    name: "Krise-zu-Wiederherstellung"
+    description: "Business-Continuity- und Krisenmanagement-Zyklus von der Continuity-Planung über Resilience-Tests, Detektion und Aktivierung, Krisenreaktion, Disaster Recovery, Restauration bis zum Post-Crisis-Review. Ein BP2 pro VS-140-stage_name."
   BP-1140.10:
-    name: "Kontinuitätsplanung"
-    source_hash: sha256-015c32937d1d65af
+    name: "Continuity-Planung"
+    description: "Business-Continuity- und Disaster-Recovery-Pläne für kritische Prozesse und Systeme aufbauen und pflegen."
   BP-1140.10.10:
     name: "Business-Impact-Analyse durchführen"
-    source_hash: sha256-16d992be1d96a2e6
+    description: "Kritische Prozesse, RTO/RPO-Ziele, Abhängigkeiten und Mindestbetriebsanforderungen identifizieren."
   BP-1140.10.20:
-    name: "Kontinuitätspläne erstellen"
-    source_hash: sha256-504a6e02114d49ad
+    name: "Continuity-Pläne aufbauen"
+    description: "Business-Continuity-Pläne auf Prozess- und Standortebene aufbauen — Workarounds, Ausweichstandorte, Schlüsselkontakte."
   BP-1140.10.30:
-    name: "Disaster-Recovery-Pläne erstellen"
-    source_hash: sha256-88c412c4c1a51500
+    name: "Disaster-Recovery-Pläne aufbauen"
+    description: "IT-Disaster-Recovery-Pläne aufbauen — Runbooks, Replikation, Failover-Ziele — für kritische Systeme."
   BP-1140.20:
-    name: "Resilienz-Tests"
-    source_hash: sha256-eb3618fdb4e292cb
+    name: "Resilience-Tests"
+    description: "Continuity- und Recovery-Pläne testen — Tabletop-Übungen, Walk-throughs, vollständige Failover."
   BP-1140.20.10:
-    name: "Tabletop-Übungen durchführen"
-    source_hash: sha256-19611168ac84e9f3
+    name: "Tabletop-Übungen führen"
+    description: "Tabletop-Übungen mit Schlüsselteams führen, um Pläne zu validieren und Lücken aufzudecken, ohne den Betrieb zu stören."
   BP-1140.20.20:
     name: "Failover-Drills durchführen"
-    source_hash: sha256-549dfa1938c1c12c
+    description: "Kontrollierte Failover-Drills durchführen, um die technische Recovery zu validieren; Timing gegen Ziele erfassen."
   BP-1140.20.30:
-    name: "Pläne auf Basis der Testergebnisse aktualisieren"
-    source_hash: sha256-a53a2d1c7ca74f86
+    name: "Pläne nach Erkenntnissen aktualisieren"
+    description: "Continuity- und Recovery-Pläne auf Basis der Test-Erkenntnisse aktualisieren; Lücken vor dem nächsten Zyklus schließen."
   BP-1140.30:
-    name: "Erkennung und Aktivierung"
-    source_hash: sha256-0373dbdb7e081af0
+    name: "Detektion & Aktivierung"
+    description: "Krisen-Trigger detektieren und die Reaktion aktivieren — Incident Commander, War-Room, Comms."
   BP-1140.30.10:
-    name: "Krisenauslöser erkennen"
-    source_hash: sha256-a2b600c30c99453b
+    name: "Krisen-Trigger detektieren"
+    description: "Ereignisse detektieren, die die Krisen-Trigger-Kriterien erfüllen — Ausfall, Brüche, Sicherheitsereignis, regulatorische Aktion."
   BP-1140.30.20:
     name: "Krisenprotokoll aktivieren"
-    source_hash: sha256-c4d200ad5dcab2c4
+    description: "Das Krisenmanagement-Protokoll aktivieren — Commander designieren, War-Room einberufen, Comms-Kadenz etablieren."
   BP-1140.40:
     name: "Krisenreaktion"
-    source_hash: sha256-4c79bc509b89d20c
+    description: "Die aktive Krise managen — Personen und Assets schützen, Schaden eindämmen, kommunizieren, koordinieren."
   BP-1140.40.10:
-    name: "Menschen und Vermögenswerte schützen"
-    source_hash: sha256-bc0d35d4aee77175
+    name: "Personen und Güter schützen"
+    description: "Schutzaktionen durchführen — Evakuierung, Shutdown, Isolation, Medizin, Sicherheit — um Schaden zu begrenzen."
   BP-1140.40.20:
-    name: "Krisenauswirkungen eindämmen"
-    source_hash: sha256-9a019f4fa1f15864
+    name: "Krisenauswirkung eindämmen"
+    description: "Operative, finanzielle, regulatorische und Reputations-Auswirkung über gezielte Reaktionsaktionen eindämmen."
   BP-1140.40.30:
     name: "Krisenkommunikation managen"
-    source_hash: sha256-4dad5b0557fd8542
+    description: "Interne, externe, regulatorische und Medien-Kommunikation während der gesamten aktiven Krise führen."
   BP-1140.50:
     name: "Disaster Recovery"
-    source_hash: sha256-fb85c409a6e401a5
+    description: "Disaster-Recovery-Verfahren ausführen, um IT-Services innerhalb der RTO/RPO-Ziele wiederherzustellen."
   BP-1140.50.10:
     name: "IT-Failover ausführen"
-    source_hash: sha256-10be996126e393fa
+    description: "Geplante Failover kritischer IT-Systeme auf die Recovery-Infrastruktur ausführen."
   BP-1140.50.20:
-    name: "Wiederhergestellte Dienste validieren"
-    source_hash: sha256-036370fd854b7000
+    name: "Wiederhergestellte Services validieren"
+    description: "Wiederhergestellte Services gegen Akzeptanzkriterien validieren; kundenseitige Operationen wieder aufnehmen."
   BP-1140.50.30:
-    name: "Reverse-Failover durchführen"
-    source_hash: sha256-c1689ce7096339a1
+    name: "Failback durchführen"
+    description: "Failback zur Primär-Infrastruktur planen und ausführen, sobald stabil; vollständige Wiederherstellung validieren."
   BP-1140.60:
-    name: "Wiederherstellung"
-    source_hash: sha256-44df1443f713f43d
+    name: "Restauration"
+    description: "Physische Assets, Supply Chains und Operationen in den Vor-Krisen-Zustand wiederherstellen."
   BP-1140.60.10:
     name: "Physische Operationen wiederherstellen"
-    source_hash: sha256-f505be01a02d874a
+    description: "Physische Assets, Standorte und Equipment in betriebsfähigen Zustand wiederherstellen; Sicherheitsprüfungen bestehen."
   BP-1140.60.20:
-    name: "Liefer- und Nachfragefluss wiederherstellen"
-    source_hash: sha256-93a3ae915fd7288e
+    name: "Versorgungs- und Nachfrageflüsse wiederherstellen"
+    description: "Lieferantenflüsse, Kunden-Auftragsfluss und Bestandspositionierung auf die Baseline wiederherstellen."
   BP-1140.70:
-    name: "Nachbetrachtung"
-    source_hash: sha256-2955b6f0dfd36dd5
+    name: "Post-Crisis-Review"
+    description: "Post-Action-Review durchführen; Lessons Learned erfassen; systemische Resilience-Verbesserungen treiben."
   BP-1140.70.10:
-    name: "After-Action-Review durchführen"
-    source_hash: sha256-7583baae8ac29129
+    name: "Post-Action-Review durchführen"
+    description: "Blameless Post-Action-Review mit allen Respondern durchführen; Timeline, Entscheidungen und Lernpunkte erfassen."
   BP-1140.70.20:
-    name: "Resilienz verbessern"
-    source_hash: sha256-676cf9bedb8b4c35
+    name: "Resilience stärken"
+    description: "Lessons Learned in Resilience-Verbesserungen übersetzen — Kontrollen, Pläne, Schulung, Technologie."

@@ -3,80 +3,80 @@ locale: de
 source: BP1-plan-to-inventory.yaml
 entries:
   BP-1040:
-    name: "Plan bis Bestand"
-    source_hash: sha256-5f3fe8d72d009682
+    name: "Plan-zu-Bestand"
+    description: "Bedarfs- und Versorgungsplanungszyklus, der Bestand am richtigen Ort, in der richtigen Zeit und Menge positioniert. Sechs BP2 spiegeln VS-400-Stages von der Bedarfsplanung über S&OP-Abgleich, Bestandspositionierung, Replenishment bis zur laufenden Bestandsgesundheits-Überwachung."
   BP-1040.10:
     name: "Bedarfsplanung"
-    source_hash: sha256-e5ff0b3a843d784c
+    description: "Die Konsens-Bedarfsprognose aus Historie, Marktsignalen, Vertriebspipeline und Promotionsplänen aufbauen."
   BP-1040.10.10:
     name: "Statistische Prognose erstellen"
-    source_hash: sha256-a13b25758934520a
+    description: "Statistische Prognosemodelle auf die Bedarfshistorie auf der gewählten Aggregationsebene anwenden; Prognosefehler verfolgen."
   BP-1040.10.20:
-    name: "Sales- und Marketing-Inputs einbeziehen"
-    source_hash: sha256-88973e710b73199f
+    name: "Vertriebs- und Marketingeingaben einbeziehen"
+    description: "Vertriebs-Pipeline-Signale, Promotionskalender und Produkt-Launch-Pläne einbeziehen, um die statistische Baseline zu justieren."
   BP-1040.10.30:
-    name: "Bedarfsprognose abstimmen"
-    source_hash: sha256-ba75edf4bc320284
+    name: "Bedarfsprognose abgleichen"
+    description: "Bottom-up- und Top-down-Bedarfsprognosen abgleichen; die Konsens-Prognose für den Planungshorizont festschreiben."
   BP-1040.20:
     name: "Versorgungsplanung"
-    source_hash: sha256-bbc57302462ff965
+    description: "Versorgung zur Deckung der Nachfrage planen — Produktion, Sourcing, Distribution — innerhalb von Kapazitäts-, Lead-Time- und Materialbeschränkungen."
   BP-1040.20.10:
     name: "Produktionsplan erstellen"
-    source_hash: sha256-ab96b55b9b9df1e4
+    description: "Den Master-Produktionsplan gegen Kapazität, Material und Personal aufbauen; Beschränkungskonflikte lösen."
   BP-1040.20.20:
     name: "Materialversorgung planen"
-    source_hash: sha256-b3e37b7570b8c203
+    description: "Materialbedarf (MRP) — Roh, Komponenten, Verpackung — gegen Produktionsplan und Lieferanten-Lead-Times planen."
   BP-1040.20.30:
-    name: "Distributionsnetzfluss planen"
-    source_hash: sha256-2402e53a2757e94d
+    name: "Distributionsnetz-Fluss planen"
+    description: "Bestandsfluss durch das Distributionsnetz (DRP) planen — DC-zu-DC, DC-zu-Filiale, Cross-Dock — um Bestand nahe an die Nachfrage zu positionieren."
   BP-1040.20.40:
-    name: "Versorgungsengpässe lösen"
-    source_hash: sha256-d44aa96dca72d51b
+    name: "Versorgungsbeschränkungen lösen"
+    description: "Versorgungslücken gegen Nachfrage aufdecken; im S&OP über Expedites, Alternativen, Allokationen oder Demand-Shaping rebalancieren."
   BP-1040.30:
     name: "S&OP-Abgleich"
-    source_hash: sha256-a30cd60530049364
+    description: "Den integrierten Sales-&-Operations-Planning-Zyklus durchführen — Pre-S&OP, Executive S&OP — um den integrierten Geschäftsplan festzuschreiben."
   BP-1040.30.10:
     name: "Pre-S&OP-Review durchführen"
-    source_hash: sha256-6f884f8c6f6c0c9b
+    description: "Cross-funktionales Pre-S&OP durchführen, um Bedarfs-, Versorgungs- und Finanzsichten abzugleichen; Lücken und Empfehlungen für das Executive S&OP aufdecken."
   BP-1040.30.20:
     name: "Executive S&OP durchführen"
-    source_hash: sha256-0410a63b32cc1146
+    description: "Das Executive S&OP durchführen, um Trade-offs zu entscheiden (Service vs. Kosten, Wachstum vs. Marge, Portfolio-Rebalance) und den integrierten Plan festzuschreiben."
   BP-1040.30.30:
-    name: "Beschlossenen Plan kommunizieren"
-    source_hash: sha256-d0ee8f3b86a2c73b
+    name: "Festgeschriebenen Plan kommunizieren"
+    description: "Den festgeschriebenen integrierten Geschäftsplan an die Funktionen kaskadieren; nachgelagerte Ausführung am Plan ausrichten."
   BP-1040.40:
     name: "Bestandspositionierung"
-    source_hash: sha256-a197c07d1dcb9836
+    description: "Bestandsziele und Positionierung setzen — pro SKU, Standort, Kanal — um Service und Working Capital auszubalancieren."
   BP-1040.40.10:
-    name: "Bestandsziele festlegen"
-    source_hash: sha256-4d5a524a99dc1254
+    name: "Bestandsziele setzen"
+    description: "Sicherheitsbestand, Zyklus-Bestand und Zielbestand pro SKU/Standort auf Basis von Service-Level-Zielen und Bedarfsschwankung setzen."
   BP-1040.40.20:
-    name: "Bestand im Netzwerk positionieren"
-    source_hash: sha256-a6078f6970638338
+    name: "Bestand im Netz positionieren"
+    description: "Bestand auf DCs, Hubs und Forward-Stocking-Standorte verteilen, um die Geometrie des Nachfragenetzes zu treffen."
   BP-1040.40.30:
-    name: "Bestandsmix und -allokation managen"
-    source_hash: sha256-a3ca09e90dc76a66
+    name: "Bestandsmix und Allokation managen"
+    description: "Beschränkten Bestand auf Kunden, Kanäle und Produktvarianten gemäß Allokationsregeln verteilen."
   BP-1040.50:
     name: "Replenishment-Ausführung"
-    source_hash: sha256-bd30b078b62f8103
+    description: "Replenishment-Aufträge ausführen, um Bestand auf Zielniveaus im gesamten Netz zu halten."
   BP-1040.50.10:
-    name: "Nachschuborders erzeugen"
-    source_hash: sha256-c19d5a48aef8101e
+    name: "Replenishment-Aufträge erzeugen"
+    description: "Replenishment-Aufträge gegen Bestandsziele erzeugen — Bestell-, Umlagerungs- oder Produktionsaufträge."
   BP-1040.50.20:
-    name: "Kritische Nachschuborders beschleunigen"
-    source_hash: sha256-67cf3347e5220114
+    name: "Kritische Replenishments expedieren"
+    description: "Replenishments für Stock-Out-Risiko oder VIP-Kundenzusagen expedieren; mit Versorgung und Logistik koordinieren."
   BP-1040.50.30:
-    name: "Nachschubeingang bestätigen"
-    source_hash: sha256-8574c3ad10ebd359
+    name: "Replenishment-Empfang bestätigen"
+    description: "Empfang des Replenishments am Zielstandort bestätigen und Bestandspositionen aktualisieren."
   BP-1040.60:
-    name: "Bestandsgesundheits-Monitoring"
-    source_hash: sha256-a1195703dfa02d91
+    name: "Bestandsgesundheits-Überwachung"
+    description: "Bestandsgesundheit überwachen — Umschlag, Alterung, Slow-and-Obsolete — und handeln, um Qualität, Wert und Working Capital zu erhalten."
   BP-1040.60.10:
     name: "Bestands-KPIs überwachen"
-    source_hash: sha256-8835c035ce713dbe
+    description: "Bestandsumschlag, Reichweite-in-Tagen, Alterung und Stock-Out-Ereignisse verfolgen; Anomalien für Aktion aufdecken."
   BP-1040.60.20:
     name: "Slow-Moving und obsoleten Bestand managen"
-    source_hash: sha256-f2594c163d2a4ba7
+    description: "Slow-Moving und obsoleten Bestand identifizieren; Markdown, Umlagerung, Lieferantenrückgabe oder Abschreibung entscheiden."
   BP-1040.60.30:
     name: "Cycle Counts und Audits durchführen"
-    source_hash: sha256-907c97f895f23f64
+    description: "Cycle Counts und physische Inventur-Audits durchführen; Zählungen mit Systembeständen abgleichen und Korrekturen buchen."
