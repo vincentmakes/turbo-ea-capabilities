@@ -1,0 +1,131 @@
+id: BP-1160
+name: Discover-to-Automate
+level: 1
+industry: Cross-Industry
+description: >-
+  Process-improvement and automation cycle from process discovery
+  through measurement, mining, redesign, and automation. One BP2 per
+  VS-150 stage_name.
+framework_refs: []
+realizes_capability_ids:
+  - BC-930
+children:
+  - id: BP-1160.10
+    name: Process Discovery
+    level: 2
+    description: Discover and document the as-is process — actors, steps, data, systems.
+    realizes_capability_ids:
+      - BC-930
+    children:
+      - id: BP-1160.10.10
+        name: Map As-Is Process
+        level: 3
+        description: Map the as-is process via interviews, walk-throughs, and observation; persist in a process model.
+        realizes_capability_ids:
+          - BC-930
+        children: []
+      - id: BP-1160.10.20
+        name: Capture Process Variants
+        level: 3
+        description: Capture variants — by region, channel, customer type — to surface where standardisation matters.
+        realizes_capability_ids:
+          - BC-930
+        children: []
+  - id: BP-1160.20
+    name: Process Measurement
+    level: 2
+    description: Measure process performance — cycle time, cost, quality, customer experience.
+    realizes_capability_ids:
+      - BC-930
+    children:
+      - id: BP-1160.20.10
+        name: Define Process KPIs
+        level: 3
+        description: Define KPIs for the process — efficiency, quality, customer outcome — and baseline current performance.
+        realizes_capability_ids:
+          - BC-930
+        children: []
+      - id: BP-1160.20.20
+        name: Baseline Performance
+        level: 3
+        description: Baseline current performance through sampling and analytics; identify outliers and patterns.
+        realizes_capability_ids:
+          - BC-930
+        children: []
+  - id: BP-1160.30
+    name: Process Mining
+    level: 2
+    description: Mine system event-logs to derive the actual process flow and surface inefficiencies.
+    realizes_capability_ids:
+      - BC-930
+    children:
+      - id: BP-1160.30.10
+        name: Extract Event Log
+        level: 3
+        description: Extract event-log data from source systems for the in-scope process; cleanse and prepare.
+        realizes_capability_ids:
+          - BC-930
+        children: []
+      - id: BP-1160.30.20
+        name: Run Process Mining Analysis
+        level: 3
+        description: Apply process-mining tools to derive actual flow, conformance, bottlenecks, rework loops, and variants.
+        realizes_capability_ids:
+          - BC-930
+        children: []
+      - id: BP-1160.30.30
+        name: Surface Improvement Hypotheses
+        level: 3
+        description: Translate mining findings into improvement hypotheses prioritised by impact and feasibility.
+        realizes_capability_ids:
+          - BC-930
+        children: []
+  - id: BP-1160.40
+    name: Process Redesign
+    level: 2
+    description: Redesign the process — eliminate, simplify, integrate, automate — to deliver step-change improvement.
+    realizes_capability_ids:
+      - BC-930
+    children:
+      - id: BP-1160.40.10
+        name: Design To-Be Process
+        level: 3
+        description: Design the to-be process applying lean principles, customer-journey alignment, and automation.
+        realizes_capability_ids:
+          - BC-930
+        children: []
+      - id: BP-1160.40.20
+        name: Validate Redesign
+        level: 3
+        description: Validate the redesign with operators, customers, and risk; refine before build.
+        realizes_capability_ids:
+          - BC-930
+        children: []
+  - id: BP-1160.50
+    name: Process Automation
+    level: 2
+    description: Build, deploy, and operate process automation — RPA, orchestration, AI assistance — at scale.
+    realizes_capability_ids:
+      - BC-930
+    children:
+      - id: BP-1160.50.10
+        name: Build Automation
+        level: 3
+        description: Build automation — RPA bots, orchestrated flows, agentic-AI components — per the redesigned process.
+        realizes_capability_ids:
+          - BC-930
+        children: []
+      - id: BP-1160.50.20
+        name: Deploy and Operate Automation
+        level: 3
+        description: Deploy automation to production; operate, monitor, and maintain through change cycles.
+        realizes_capability_ids:
+          - BC-930
+        children: []
+      - id: BP-1160.50.30
+        name: Track Automation Benefits
+        level: 3
+        description: Track the realised benefits of automation against the business case; iterate and scale.
+        realizes_capability_ids:
+          - BC-930
+        children: []

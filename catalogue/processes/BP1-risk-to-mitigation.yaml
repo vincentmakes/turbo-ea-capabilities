@@ -1,0 +1,256 @@
+id: BP-1110
+name: Risk-to-Mitigation
+level: 1
+industry: Cross-Industry
+description: >-
+  Enterprise-risk management cycle from risk-appetite framing through
+  risk identification, assessment, treatment, monitoring, and reporting.
+  One BP2 per VS-500 stage_name.
+framework_refs:
+  - framework: COSO-ERM
+    external_id: ERM Integrated Framework
+    version: "2017"
+  - framework: ISO-31000
+    external_id: ISO 31000
+    version: "2018"
+realizes_capability_ids:
+  - BC-120
+  - BC-130
+  - BC-520
+  - BC-1280
+  - BC-1320
+  - BC-1410
+  - BC-1970
+  - BC-2170
+  - BC-2180
+  - BC-2190
+  - BC-2700
+  - BC-2840
+  - BC-3590
+  - BC-3780
+  - BC-3850
+  - BC-4350
+  - BC-4460
+  - BC-4480
+  - BC-4500
+  - BC-4920
+  - BC-4980
+  - BC-4990
+children:
+  - id: BP-1110.10
+    name: Risk Appetite & Framework
+    level: 2
+    description: Set risk appetite and tolerances; define the enterprise risk-management framework, taxonomy, and governance.
+    realizes_capability_ids:
+      - BC-120
+      - BC-4350
+    children:
+      - id: BP-1110.10.10
+        name: Set Risk Appetite
+        level: 3
+        description: Set enterprise risk-appetite statements and tolerance thresholds by risk category; ratify with the board.
+        realizes_capability_ids:
+          - BC-120
+          - BC-4350
+        children: []
+      - id: BP-1110.10.20
+        name: Define Risk Framework
+        level: 3
+        description: Define the ERM framework — taxonomy, governance forums, roles, lifecycle — under COSO ERM and ISO 31000.
+        realizes_capability_ids:
+          - BC-120
+        children: []
+  - id: BP-1110.20
+    name: Risk Identification
+    level: 2
+    description: Identify enterprise risks across strategic, operational, financial, regulatory, and emerging domains.
+    realizes_capability_ids:
+      - BC-120
+      - BC-520
+      - BC-1410
+      - BC-2190
+      - BC-2700
+      - BC-2840
+      - BC-3590
+      - BC-3780
+      - BC-3850
+      - BC-4350
+      - BC-4460
+      - BC-4500
+    children:
+      - id: BP-1110.20.10
+        name: Run Risk Workshops
+        level: 3
+        description: Run structured workshops to surface risks across the business with owners and SMEs.
+        realizes_capability_ids:
+          - BC-120
+        children: []
+      - id: BP-1110.20.20
+        name: Scan External Risks
+        level: 3
+        description: Scan external sources — regulatory, market, geopolitical, environmental — for emerging risk signals.
+        realizes_capability_ids:
+          - BC-1410
+          - BC-2700
+          - BC-3590
+          - BC-3780
+          - BC-3850
+          - BC-4460
+          - BC-4500
+        children: []
+      - id: BP-1110.20.30
+        name: Capture Risk Inventory
+        level: 3
+        description: Persist identified risks in the enterprise risk register with owner, category, and initial assessment.
+        realizes_capability_ids:
+          - BC-120
+          - BC-520
+          - BC-2190
+          - BC-2840
+          - BC-4350
+        children: []
+  - id: BP-1110.30
+    name: Risk Assessment
+    level: 2
+    description: Assess identified risks for likelihood, impact, and velocity; rate inherent and residual risk.
+    realizes_capability_ids:
+      - BC-120
+      - BC-1280
+      - BC-1970
+      - BC-2180
+      - BC-2840
+      - BC-3590
+      - BC-3850
+      - BC-4920
+    children:
+      - id: BP-1110.30.10
+        name: Score Likelihood and Impact
+        level: 3
+        description: Score each risk's likelihood and impact using qualitative and quantitative methods per the framework.
+        realizes_capability_ids:
+          - BC-120
+          - BC-1280
+          - BC-1970
+        children: []
+      - id: BP-1110.30.20
+        name: Rate Inherent and Residual Risk
+        level: 3
+        description: Compute inherent risk rating and, after considering existing controls, residual rating.
+        realizes_capability_ids:
+          - BC-2180
+          - BC-2840
+          - BC-3590
+        children: []
+      - id: BP-1110.30.30
+        name: Prioritise Risks
+        level: 3
+        description: Prioritise risks for treatment based on residual rating, appetite, and strategic relevance.
+        realizes_capability_ids:
+          - BC-3850
+          - BC-4920
+        children: []
+  - id: BP-1110.40
+    name: Treatment & Control Design
+    level: 2
+    description: Decide treatment — accept, avoid, mitigate, transfer — and design or strengthen controls.
+    realizes_capability_ids:
+      - BC-120
+      - BC-2170
+      - BC-2840
+      - BC-3780
+      - BC-4350
+      - BC-4990
+    children:
+      - id: BP-1110.40.10
+        name: Decide Risk Treatment
+        level: 3
+        description: Decide treatment per risk — accept, avoid, mitigate, transfer (insurance, contractual, hedging).
+        realizes_capability_ids:
+          - BC-120
+          - BC-4350
+        children: []
+      - id: BP-1110.40.20
+        name: Design Controls
+        level: 3
+        description: Design or strengthen controls — preventive, detective, corrective — to bring residual risk within appetite.
+        realizes_capability_ids:
+          - BC-2170
+          - BC-2840
+          - BC-3780
+        children: []
+      - id: BP-1110.40.30
+        name: Implement Treatment Plan
+        level: 3
+        description: Implement the treatment plan; assign owners, deadlines, and verification evidence.
+        realizes_capability_ids:
+          - BC-4990
+        children: []
+  - id: BP-1110.50
+    name: Monitoring
+    level: 2
+    description: Monitor risks and controls — KRI tracking, control testing, incident pattern monitoring.
+    realizes_capability_ids:
+      - BC-120
+      - BC-1320
+      - BC-2190
+      - BC-3780
+      - BC-3850
+      - BC-4480
+      - BC-4980
+    children:
+      - id: BP-1110.50.10
+        name: Track Key Risk Indicators
+        level: 3
+        description: Track KRIs and emerging-risk signals; trigger thresholds and escalation routes.
+        realizes_capability_ids:
+          - BC-120
+          - BC-1320
+          - BC-2190
+        children: []
+      - id: BP-1110.50.20
+        name: Test Controls
+        level: 3
+        description: Test design and operating effectiveness of controls; rate exceptions; drive remediation.
+        realizes_capability_ids:
+          - BC-3780
+          - BC-3850
+        children: []
+      - id: BP-1110.50.30
+        name: Monitor Incident Patterns
+        level: 3
+        description: Monitor incident, near-miss, and loss-event patterns; refine risk and control views accordingly.
+        realizes_capability_ids:
+          - BC-4480
+          - BC-4980
+        children: []
+  - id: BP-1110.60
+    name: Reporting & Escalation
+    level: 2
+    description: Report enterprise risk to executive forums, the board, and regulators; escalate breaches.
+    realizes_capability_ids:
+      - BC-120
+      - BC-130
+      - BC-2700
+    children:
+      - id: BP-1110.60.10
+        name: Produce Risk Report
+        level: 3
+        description: Produce the periodic enterprise-risk report — dashboards, heat-maps, top-risk narratives.
+        realizes_capability_ids:
+          - BC-120
+        children: []
+      - id: BP-1110.60.20
+        name: Brief Executive and Board
+        level: 3
+        description: Brief executive risk committee and board risk committee; capture decisions and direction.
+        realizes_capability_ids:
+          - BC-130
+        children: []
+      - id: BP-1110.60.30
+        name: Escalate Breaches
+        level: 3
+        description: Escalate appetite breaches and high-velocity incidents per protocol; notify regulators where required.
+        realizes_capability_ids:
+          - BC-130
+          - BC-2700
+        children: []

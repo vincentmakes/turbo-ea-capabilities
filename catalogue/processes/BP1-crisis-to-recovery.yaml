@@ -1,0 +1,258 @@
+id: BP-1140
+name: Crisis-to-Recovery
+level: 1
+industry: Cross-Industry
+description: >-
+  Business-continuity and crisis-management cycle from continuity
+  planning through resilience testing, detection and activation,
+  crisis response, disaster recovery, restoration, and post-crisis
+  review. One BP2 per VS-140 stage_name.
+framework_refs: []
+realizes_capability_ids:
+  - BC-120
+  - BC-160
+  - BC-600
+  - BC-620
+  - BC-830
+  - BC-850
+  - BC-1030
+  - BC-1280
+  - BC-2380
+  - BC-2600
+  - BC-2630
+  - BC-2700
+  - BC-2810
+  - BC-3050
+  - BC-3310
+  - BC-3820
+  - BC-3830
+  - BC-3890
+  - BC-4220
+  - BC-4460
+  - BC-4770
+children:
+  - id: BP-1140.10
+    name: Continuity Planning
+    level: 2
+    description: Build and maintain business-continuity and disaster-recovery plans for critical processes and systems.
+    realizes_capability_ids:
+      - BC-160
+      - BC-3310
+      - BC-3830
+      - BC-4460
+    children:
+      - id: BP-1140.10.10
+        name: Run Business-Impact Analysis
+        level: 3
+        description: Identify critical processes, RTO/RPO targets, dependencies, and minimum operating requirements.
+        realizes_capability_ids:
+          - BC-160
+          - BC-3310
+        children: []
+      - id: BP-1140.10.20
+        name: Build Continuity Plans
+        level: 3
+        description: Build process- and site-level business-continuity plans — workarounds, alternate sites, key contacts.
+        realizes_capability_ids:
+          - BC-160
+          - BC-3830
+          - BC-4460
+        children: []
+      - id: BP-1140.10.30
+        name: Build Disaster-Recovery Plans
+        level: 3
+        description: Build IT disaster-recovery plans — runbooks, replication, failover targets — for critical systems.
+        realizes_capability_ids:
+          - BC-3310
+        children: []
+  - id: BP-1140.20
+    name: Resilience Testing
+    level: 2
+    description: Test continuity and recovery plans — tabletops, walk-throughs, full failover.
+    realizes_capability_ids:
+      - BC-160
+      - BC-1280
+      - BC-3310
+      - BC-4220
+    children:
+      - id: BP-1140.20.10
+        name: Run Tabletop Exercises
+        level: 3
+        description: Run tabletop exercises with key teams to validate plans and surface gaps without disrupting operations.
+        realizes_capability_ids:
+          - BC-160
+          - BC-1280
+        children: []
+      - id: BP-1140.20.20
+        name: Run Failover Drills
+        level: 3
+        description: Run controlled failover drills to validate technical recovery; capture timing against targets.
+        realizes_capability_ids:
+          - BC-3310
+          - BC-4220
+        children: []
+      - id: BP-1140.20.30
+        name: Update Plans from Test Findings
+        level: 3
+        description: Update continuity and recovery plans based on test findings; close gaps before next cycle.
+        realizes_capability_ids:
+          - BC-160
+        children: []
+  - id: BP-1140.30
+    name: Detection & Activation
+    level: 2
+    description: Detect crisis trigger and activate response — incident commander, war-room, comms.
+    realizes_capability_ids:
+      - BC-160
+      - BC-620
+      - BC-2630
+      - BC-3310
+      - BC-3820
+      - BC-4460
+    children:
+      - id: BP-1140.30.10
+        name: Detect Crisis Trigger
+        level: 3
+        description: Detect events that meet crisis-trigger criteria — outage, breach, safety event, regulatory action.
+        realizes_capability_ids:
+          - BC-620
+          - BC-2630
+          - BC-3820
+        children: []
+      - id: BP-1140.30.20
+        name: Activate Crisis Protocol
+        level: 3
+        description: Activate the crisis-management protocol — appoint commander, convene war-room, establish comms cadence.
+        realizes_capability_ids:
+          - BC-160
+          - BC-3310
+          - BC-4460
+        children: []
+  - id: BP-1140.40
+    name: Crisis Response
+    level: 2
+    description: Manage the active crisis — protect people and assets, contain harm, communicate, coordinate.
+    realizes_capability_ids:
+      - BC-160
+      - BC-850
+      - BC-2380
+      - BC-2700
+      - BC-2810
+      - BC-3050
+      - BC-3310
+      - BC-3820
+      - BC-3890
+      - BC-4460
+      - BC-4770
+    children:
+      - id: BP-1140.40.10
+        name: Protect People and Assets
+        level: 3
+        description: Run protective actions — evacuation, shutdown, isolation, medical, security — to limit harm.
+        realizes_capability_ids:
+          - BC-2380
+          - BC-2810
+          - BC-3050
+          - BC-3890
+          - BC-4770
+        children: []
+      - id: BP-1140.40.20
+        name: Contain Crisis Impact
+        level: 3
+        description: Contain operational, financial, regulatory, and reputational impact through targeted response actions.
+        realizes_capability_ids:
+          - BC-160
+          - BC-2700
+          - BC-3820
+        children: []
+      - id: BP-1140.40.30
+        name: Manage Crisis Communications
+        level: 3
+        description: Run internal, external, regulator, and media communications throughout the active crisis.
+        realizes_capability_ids:
+          - BC-850
+          - BC-3310
+          - BC-4460
+        children: []
+  - id: BP-1140.50
+    name: Disaster Recovery
+    level: 2
+    description: Execute disaster-recovery procedures to restore IT services within RTO/RPO targets.
+    realizes_capability_ids:
+      - BC-160
+      - BC-600
+      - BC-3310
+      - BC-4220
+    children:
+      - id: BP-1140.50.10
+        name: Execute IT Failover
+        level: 3
+        description: Execute the planned failover of critical IT systems to recovery infrastructure.
+        realizes_capability_ids:
+          - BC-3310
+          - BC-4220
+        children: []
+      - id: BP-1140.50.20
+        name: Validate Recovered Services
+        level: 3
+        description: Validate recovered services against acceptance criteria; resume customer-facing operations.
+        realizes_capability_ids:
+          - BC-600
+        children: []
+      - id: BP-1140.50.30
+        name: Run Reverse Failover
+        level: 3
+        description: Plan and execute return to primary infrastructure once stable; validate full restoration.
+        realizes_capability_ids:
+          - BC-160
+        children: []
+  - id: BP-1140.60
+    name: Restoration
+    level: 2
+    description: Restore physical assets, supply chains, and operations to pre-crisis state.
+    realizes_capability_ids:
+      - BC-1030
+      - BC-2600
+      - BC-3310
+      - BC-3830
+    children:
+      - id: BP-1140.60.10
+        name: Restore Physical Operations
+        level: 3
+        description: Restore physical assets, sites, and equipment to operating condition; pass safety checks.
+        realizes_capability_ids:
+          - BC-1030
+          - BC-2600
+        children: []
+      - id: BP-1140.60.20
+        name: Restore Supply and Demand Flow
+        level: 3
+        description: Restore supplier flow, customer order flow, and inventory positioning to baseline.
+        realizes_capability_ids:
+          - BC-3310
+          - BC-3830
+        children: []
+  - id: BP-1140.70
+    name: Post-Crisis Review
+    level: 2
+    description: Conduct after-action review; capture lessons; drive systemic resilience improvements.
+    realizes_capability_ids:
+      - BC-120
+      - BC-830
+      - BC-3310
+    children:
+      - id: BP-1140.70.10
+        name: Conduct After-Action Review
+        level: 3
+        description: Run blameless after-action review with all responders; capture timeline, decisions, and learnings.
+        realizes_capability_ids:
+          - BC-3310
+        children: []
+      - id: BP-1140.70.20
+        name: Improve Resilience
+        level: 3
+        description: Translate lessons into resilience improvements — controls, plans, training, technology.
+        realizes_capability_ids:
+          - BC-120
+          - BC-830
+        children: []

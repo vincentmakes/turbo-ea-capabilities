@@ -1,0 +1,235 @@
+id: BP-1150
+name: Threat-to-Mitigation
+level: 1
+industry: Cross-Industry
+description: >-
+  Cybersecurity operating cycle from posture definition through threat
+  intelligence, vulnerability discovery, detection, incident response,
+  identity-and-access hardening, and awareness. One BP2 per VS-600
+  stage_name.
+framework_refs: []
+realizes_capability_ids:
+  - BC-160
+  - BC-620
+  - BC-830
+  - BC-1740
+  - BC-1950
+  - BC-2010
+  - BC-2060
+  - BC-2600
+  - BC-3460
+  - BC-3810
+children:
+  - id: BP-1150.10
+    name: Security Posture Definition
+    level: 2
+    description: Define security posture, control baseline, and target maturity for the enterprise.
+    realizes_capability_ids:
+      - BC-620
+    children:
+      - id: BP-1150.10.10
+        name: Define Security Strategy
+        level: 3
+        description: Define cybersecurity strategy — risk appetite, target maturity, framework (NIST CSF, ISO 27001).
+        realizes_capability_ids:
+          - BC-620
+        children: []
+      - id: BP-1150.10.20
+        name: Set Control Baseline
+        level: 3
+        description: Set the control baseline for the enterprise; align to control frameworks and applicable regulation.
+        realizes_capability_ids:
+          - BC-620
+        children: []
+  - id: BP-1150.20
+    name: Threat Intelligence
+    level: 2
+    description: Collect, analyse, and disseminate threat intelligence to defenders and decision-makers.
+    realizes_capability_ids:
+      - BC-620
+      - BC-1740
+      - BC-1950
+      - BC-3460
+    children:
+      - id: BP-1150.20.10
+        name: Collect Threat Intelligence
+        level: 3
+        description: Collect threat intelligence from internal sensors, ISAC feeds, vendors, and OSINT.
+        realizes_capability_ids:
+          - BC-1740
+          - BC-1950
+        children: []
+      - id: BP-1150.20.20
+        name: Analyse and Disseminate Intelligence
+        level: 3
+        description: Analyse intelligence for relevance and operationalise — IOCs, hunt hypotheses, briefings.
+        realizes_capability_ids:
+          - BC-620
+          - BC-3460
+        children: []
+  - id: BP-1150.30
+    name: Vulnerability Discovery
+    level: 2
+    description: Discover vulnerabilities — scans, pen tests, bug bounty, code review — and drive remediation.
+    realizes_capability_ids:
+      - BC-620
+      - BC-1950
+      - BC-2010
+    children:
+      - id: BP-1150.30.10
+        name: Run Vulnerability Scans
+        level: 3
+        description: Run continuous vulnerability scans across infrastructure, applications, and cloud workloads.
+        realizes_capability_ids:
+          - BC-1950
+          - BC-2010
+        children: []
+      - id: BP-1150.30.20
+        name: Run Penetration Tests
+        level: 3
+        description: Run periodic and event-driven penetration tests; capture exploitable findings and remediations.
+        realizes_capability_ids:
+          - BC-620
+          - BC-2010
+        children: []
+      - id: BP-1150.30.30
+        name: Drive Vulnerability Remediation
+        level: 3
+        description: Prioritise vulnerabilities by exploitability and asset criticality; track remediation against SLA.
+        realizes_capability_ids:
+          - BC-620
+        children: []
+  - id: BP-1150.40
+    name: Detection
+    level: 2
+    description: Detect security events through monitoring, analytics, threat hunting, and behavioural baselines.
+    realizes_capability_ids:
+      - BC-620
+      - BC-2060
+      - BC-2600
+      - BC-3460
+      - BC-3810
+    children:
+      - id: BP-1150.40.10
+        name: Operate Security Monitoring
+        level: 3
+        description: Operate the SOC — SIEM, EDR, XDR, network detection — to monitor for security events 24/7.
+        realizes_capability_ids:
+          - BC-2060
+          - BC-3460
+          - BC-3810
+        children: []
+      - id: BP-1150.40.20
+        name: Triage and Investigate Alerts
+        level: 3
+        description: Triage and investigate alerts; escalate confirmed incidents; close false positives.
+        realizes_capability_ids:
+          - BC-620
+          - BC-2600
+        children: []
+      - id: BP-1150.40.30
+        name: Hunt for Threats
+        level: 3
+        description: Run proactive threat hunts on hypotheses derived from intelligence and emerging TTPs.
+        realizes_capability_ids:
+          - BC-620
+          - BC-3460
+        children: []
+  - id: BP-1150.50
+    name: Incident Response
+    level: 2
+    description: Respond to confirmed security incidents — contain, eradicate, recover, and learn.
+    realizes_capability_ids:
+      - BC-160
+      - BC-620
+      - BC-1950
+      - BC-2060
+      - BC-2600
+      - BC-3460
+      - BC-3810
+    children:
+      - id: BP-1150.50.10
+        name: Contain Incident
+        level: 3
+        description: Contain the incident — isolate affected systems, revoke credentials, block traffic — to halt spread.
+        realizes_capability_ids:
+          - BC-620
+          - BC-2060
+          - BC-3460
+          - BC-3810
+        children: []
+      - id: BP-1150.50.20
+        name: Eradicate Threat
+        level: 3
+        description: Eradicate the threat — remove malware, patch vulnerability, close persistence mechanism.
+        realizes_capability_ids:
+          - BC-1950
+          - BC-2600
+        children: []
+      - id: BP-1150.50.30
+        name: Recover Operations
+        level: 3
+        description: Recover affected systems and operations to known-good state; validate before returning to service.
+        realizes_capability_ids:
+          - BC-160
+          - BC-620
+        children: []
+      - id: BP-1150.50.40
+        name: Notify and Report
+        level: 3
+        description: Notify regulators, customers, and affected parties per breach-notification obligations and protocol.
+        realizes_capability_ids:
+          - BC-620
+        children: []
+  - id: BP-1150.60
+    name: Identity & Access Hardening
+    level: 2
+    description: Harden identity and access — IAM, MFA, privileged access — to prevent identity-based attack paths.
+    realizes_capability_ids:
+      - BC-620
+    children:
+      - id: BP-1150.60.10
+        name: Manage Identity Lifecycle
+        level: 3
+        description: Manage identity lifecycle — provisioning, role change, deprovisioning — across employees, contractors, and machines.
+        realizes_capability_ids:
+          - BC-620
+        children: []
+      - id: BP-1150.60.20
+        name: Enforce Authentication Controls
+        level: 3
+        description: Enforce MFA, conditional access, and risk-based authentication on all access paths.
+        realizes_capability_ids:
+          - BC-620
+        children: []
+      - id: BP-1150.60.30
+        name: Govern Privileged Access
+        level: 3
+        description: Govern privileged access — vault, just-in-time elevation, session monitoring, periodic re-attestation.
+        realizes_capability_ids:
+          - BC-620
+        children: []
+  - id: BP-1150.70
+    name: Awareness & Lessons Learned
+    level: 2
+    description: Run security awareness across the workforce; capture lessons from incidents and exercises.
+    realizes_capability_ids:
+      - BC-620
+      - BC-830
+    children:
+      - id: BP-1150.70.10
+        name: Run Security Awareness
+        level: 3
+        description: Run security-awareness training, phishing simulations, and role-targeted training.
+        realizes_capability_ids:
+          - BC-620
+          - BC-830
+        children: []
+      - id: BP-1150.70.20
+        name: Capture and Apply Lessons
+        level: 3
+        description: Capture lessons from incidents, exercises, and breach reports; apply to controls, training, runbooks.
+        realizes_capability_ids:
+          - BC-620
+          - BC-830
+        children: []
