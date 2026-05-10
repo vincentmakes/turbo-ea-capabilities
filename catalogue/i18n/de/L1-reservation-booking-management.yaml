@@ -18,53 +18,64 @@ entries:
       - Kanal- und Paritätsmanagement (BC-4010)
       - Preismaschinen und Yield-Entscheidungen (BC-4030)
       - Operative Störungsentscheidungen für Flugzeug und Besatzung (BC-4080.60)
+    source_hash: sha256-a5d4bad03941c15f
   BC-4020.10:
     name: Reservierungserfassung
     description: |
       Erfassung von Reservierungen für einfache und komplexe Reisepläne
       aus jedem Ursprungskanal oder Agenten.
+    source_hash: sha256-763ebd1245e5292f
   BC-4020.10.10:
     name: Einzel-Reiseplan-Reservierungserfassung
     description: |
       Erfassung von Einzelreiseplan-Reservierungen wie Einzel-Property-Aufenthalt
       oder Einzel-Flugbuchung.
+    source_hash: sha256-fd30d1d4b408a4bd
   BC-4020.10.20:
     name: Mehrpassagier-Reservierungserfassung
     description: |
       Erfassung von Mehrpassagier- oder Mehrgeschäfts-Reservierungen mit
       gemeinsamen Reiseplan-Segmenten.
+    source_hash: sha256-bcf691c53d2ec185
   BC-4020.10.30:
     name: Mehrkomponienten-Reservierungserfassung
     description: |
       Erfassung von Mehrkomponienten-Reservierungen mit Flügen,
       Hotels, Zusatzleistungen und Bodendiensten.
+    source_hash: sha256-4a511884e3096fb1
   BC-4020.10.40:
     name: Reisebürobuchungserfassung
     description: |
       Erfassung von Buchungen durch Einzel- und Firmereisebüros im Namen von Reisenden.
+    source_hash: sha256-0c121a48d256a4bf
   BC-4020.20:
     name: Buchungsänderung und Stornierung
     description: |
       Freiwillige Änderung und Stornierung von Buchungen einschließlich
       Änderungsgebühren, Erstattungsberechtigung und Neuausstellungsoperationen.
+    source_hash: sha256-4a6c32212f8e9f30
   BC-4020.20.10:
     name: Buchungsänderungsmanagement
     description: |
       Management freiwilliger Buchungsänderungen bei Datum, Produkt und Reisendedaten.
+    source_hash: sha256-47b407d449f2e91e
   BC-4020.20.20:
     name: Buchungsstornierungsmanagement
     description: |
       Management freiwilliger Stornierungen und Inventarrückgabe in den Pool.
+    source_hash: sha256-415edc4b348ac9f9
   BC-4020.20.30:
     name: Erstattungsberechtigungs- und Berechnung
     description: |
       Feststellung der Erstattungsberechtigung und Berechnung erstattungsfähiger
       Beträge einschließlich Strafen.
+    source_hash: sha256-a59db2534d9a06e9
   BC-4020.20.40:
     name: Freiwillige Neuausstellungsoperationen
     description: |
       Durchführung freiwilliger Neuausstellung einschließlich Tarifunterschiedserhebung
       und Dokumentenneuausstellung.
+    source_hash: sha256-c260cd8a07d917a8
   BC-4020.30:
     name: Gruppenblock-Management
     description: |
@@ -76,92 +87,112 @@ entries:
     out_of_scope:
       - Gruppenvertriebsverträge (BC-4110.10)
       - Veranstaltungsauftragsausführung (BC-4110.30)
+    source_hash: sha256-51e43e7624c15723
   BC-4020.30.10:
     name: Gruppenblock-Erstellung
     description: |
       Erstellung von Gruppenblöcken entsprechend vertraglicch gebundenem
       Inventar und Ratenverpflichtungen.
+    source_hash: sha256-7ee2f1a0b32b623c
   BC-4020.30.20:
     name: Zimmerlisten-Management
     description: |
       Management von Zimmerlisten zur Zuordnung einzelner Reisender
       zu Blockinventar.
+    source_hash: sha256-2880b119d4f7c3e4
   BC-4020.30.30:
     name: Gruppenst-Stichterminsmanagement
     description: |
       Management von Gruppen-Stichtermin-Daten und Freigabe ungenutzten Blockinventars.
+    source_hash: sha256-36faea08c23c53f3
   BC-4020.30.40:
     name: Gruppen-Pickup-Tracking
     description: |
       Tracking des Gruppen-Pickups gegen Vertrag für Erlösrechnung und Prognose.
+    source_hash: sha256-d01013f9ba768c9c
   BC-4020.40:
     name: Reservierungsbestätigung und Dokumentation
     description: |
       Ausstellung von Buchungsbestätigungen, Gutscheinen, E-Tickets und
       Reiseplan-Dokumenten an Reisende und Agenten.
+    source_hash: sha256-f1881085544c258f
   BC-4020.40.10:
     name: Buchungsbestätigungsgenerierung
     description: |
       Generierung und Versand von Buchungsbestätigungen über Benachrichtigungskanäle.
+    source_hash: sha256-4bca6fd4ce48fe18
   BC-4020.40.20:
     name: Gutschein- und Dokumentenausstellung
     description: |
       Ausstellung von Gutscheinen und Servicedokumenten für Hotel-, Reise-
       und Aktivitätskomponenten.
+    source_hash: sha256-c775858ce4832bfc
   BC-4020.40.30:
     name: E-Ticket-Ausstellung und Neuausstellung
     description: |
       Ausstellung und Neuausstellung von Airline-E-Tickets einschließlich Coupon-Statusaktualisierungen.
+    source_hash: sha256-9716f77b8caa03cf
   BC-4020.40.40:
     name: Buchungs-Reiseplan-Verteilung
     description: |
       Verteilung von Reiseplandokumenten an Reisende, Reisebüros und
       integrierte Reiseverwaltungssysteme.
+    source_hash: sha256-8a538c186a6746f7
   BC-4020.50:
     name: Reservierungshalten- und Wartelistenmanagement
     description: |
       Management vorläufiger Reservierungshalten, Wartelisten und Umwandlungen
       bei begrenzter Verfügbarkeit oder zahlungsfristgebundenen Konditionen.
+    source_hash: sha256-35cb9115f6955fb7
   BC-4020.50.10:
     name: Vorläufige Haltenmanagement
     description: |
       Management vorläufiger Reservierungshalten mit kontrollierten Zahlungsfristen.
+    source_hash: sha256-e0df8d9e14c24816
   BC-4020.50.20:
     name: Wartelisten-Erfassung und Priorisierung
     description: |
       Erfassung von Wartelisten-Anfragen und Priorisierungsregeln
       bei verfügbar werdendem Inventar.
+    source_hash: sha256-1573d59eeafa371c
   BC-4020.50.30:
     name: Wartelisten-Umwandlungsoperationen
     description: |
       Umwandlung von Wartelisten-Anfragen in bestätigte Buchungen
       bei freiwerdendem Inventar.
+    source_hash: sha256-ed72475e229ec877
   BC-4020.50.40:
     name: Halteverfalls-Management
     description: |
       Management des Halteverfalls und automatische Freigabe des gehaltenen Inventars.
+    source_hash: sha256-00b70e2903d7d0b1
   BC-4020.60:
     name: Buchungszahlung und Abrechnung
     description: |
       Buchungsseitige Zahlung, Anzahlung, Kostenfang und Partnerabrechnung
       einschließlich BSP und ARC.
+    source_hash: sha256-1745bd38cd74b1b4
   BC-4020.60.10:
     name: Buchungsanzahlung und Vorautorisierung
     description: |
       Erfassung von Buchungsanzahlungen und Kartenvorautorisierungen
       gegen Anzahlungs- und Garantierichtlinien.
+    source_hash: sha256-79f4a8a794b9d4e0
   BC-4020.60.20:
     name: Buchungskostenfang
     description: |
       Kostenfang gegen buchungsseitige Zahlungsmittel an Berechtigungspunkten.
+    source_hash: sha256-06937142c88d38ba
   BC-4020.60.30:
     name: BSP- und ARC-Abrechnungsoperationen
     description: |
       Abrechnung agentenbuchter Buchungen über BSP, ARC und gleichwertige Abrechnungspläne.
+    source_hash: sha256-05d065bdf975ca20
   BC-4020.60.40:
     name: Provisionsberechnung und Auszahlung
     description: |
       Berechnung und Auszahlung von Provisionen an Reisebüros und Vertriebspartner.
+    source_hash: sha256-146b3630f0bd5437
   BC-4020.70:
     name: Buchungsstörungs- und Umbuchungsoperationen
     description: |
@@ -174,25 +205,30 @@ entries:
     out_of_scope:
       - Operative Entscheidungen zu Flugzeug, Besatzung und Dispatch (BC-4080.60)
       - Reiseplan-Wiederherstellung auf Toursseite (BC-4100.60)
+    source_hash: sha256-c4c963db4ab44627
   BC-4020.70.10:
     name: Fahrplanänderungs-Umbuchung
     description: |
       Umbuchung von Buchungen bei Fahrplanänderungen einschließlich
       angebotener Optionen für Reisende.
+    source_hash: sha256-9ae93c3dda1e3aa0
   BC-4020.70.20:
     name: Massenbedrohungs-Umbuchung
     description: |
       Umbuchung großer Buchungszahlen bei Wetter-, IROPS- oder höherer-Gewalt-Ereignissen.
+    source_hash: sha256-5ca1caa035805fea
   BC-4020.70.30:
     name: Entschädigungsberechtigungs-Feststellung
     description: |
       Feststellung der Entschädigungsberechtigung nach Fluggesellschaftsrichtlinien
       und anwendbaren Fahrgastrechtsregeln.
+    source_hash: sha256-3c45983e7b06c841
   BC-4020.70.40:
     name: Umbuchungskommunikation
     description: |
       Ausgehende Kommunikation an betroffene Reisende und Agenten
       während Umbuchungsereignissen.
+    source_hash: sha256-8f899f2b7fc4c002
 metadata:
   translator: claude-ai
   date: "2026-04-29"

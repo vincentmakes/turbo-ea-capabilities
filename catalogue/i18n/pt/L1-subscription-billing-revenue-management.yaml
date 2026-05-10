@@ -7,149 +7,181 @@ entries:
       Medição de utilização, tarifação, faturação, cobrança de dívidas,
       reconhecimento de receita de subscrições, gestão de impostos e análise
       de receita recorrente para o modelo comercial SaaS.
+    source_hash: sha256-7146e52db7b63d13
   BC-4250.10:
     name: Medição de utilização
     description: |
       Ingestão e agregação de eventos de utilização que alimentam a tarifação
       e análise a jusante.
+    source_hash: sha256-3428352c1e3acf9f
   BC-4250.10.10:
     name: Ingestão de eventos de utilização
     description: |
       Ingestão de eventos de utilização dos serviços do produto para o
       pipeline de medição.
+    source_hash: sha256-31d9023f3afbbdc5
   BC-4250.10.20:
     name: Agregação de utilização
     description: |
       Agregação de eventos de utilização em quantidades faturáveis por tenant
       e medidor.
+    source_hash: sha256-c6741d7d6db8676b
   BC-4250.10.30:
     name: Reconciliação de quantidades medidas
     description: |
       Reconciliação de quantidades medidas face à fonte de verdade e contadores
       visíveis ao cliente.
+    source_hash: sha256-18ccac794b4b6321
   BC-4250.20:
     name: Tarifação e cobrança
     description: |
       Aplicação de tarifas de subscrição, tarifas de utilização, prorateamentos
       e descontos para calcular encargos.
+    source_hash: sha256-223b9918dc596533
   BC-4250.20.10:
     name: Tarifação de subscrição
     description: |
       Cálculo dos encargos recorrentes de subscrição por ciclo.
+    source_hash: sha256-5be6f91a1e54c30e
   BC-4250.20.20:
     name: Tarifação de utilização
     description: |
       Cálculo dos encargos de utilização a partir de quantidades tarifadas
       e tarifas.
+    source_hash: sha256-44e1c2dd1ec39f54
   BC-4250.20.30:
     name: Cálculo de prorateamento
     description: |
       Cálculo de encargos pro-rata resultantes de alterações a meio do ciclo.
+    source_hash: sha256-e6c52ecf60828a64
   BC-4250.20.40:
     name: Aplicação de descontos
     description: |
       Aplicação de descontos e créditos negociados aos encargos calculados.
+    source_hash: sha256-059bc39c662f4768
   BC-4250.30:
     name: Gestão de faturas e extratos
     description: |
       Geração, entrega e ajuste de faturas e gestão de disputas de faturação
       de clientes.
+    source_hash: sha256-68d610731fbaf835
   BC-4250.30.10:
     name: Geração de faturas
     description: |
       Geração de faturas a partir de encargos tarifados e termos do contrato.
+    source_hash: sha256-bd37e9c37782320d
   BC-4250.30.20:
     name: Entrega de faturas
     description: |
       Entrega de faturas aos clientes através do portal, email e canais
       de parceiros.
+    source_hash: sha256-f4c8de48637b5073
   BC-4250.30.30:
     name: Ajuste de faturas
     description: |
       Ajuste de faturas para créditos, erros e variações contratuais.
+    source_hash: sha256-57cbf4f6c4031576
   BC-4250.30.40:
     name: Tratamento de disputas de faturação de clientes
     description: |
       Triagem e resolução de disputas de faturação de clientes.
+    source_hash: sha256-b235dddbb3c79377
   BC-4250.40:
     name: Cobrança de pagamentos e gestão de dívidas
     description: |
       Gestão de métodos de pagamento, autorização de pagamento, cobrança de
       dívidas e recuperação de churn involuntário.
+    source_hash: sha256-3a593098fa4d0f3a
   BC-4250.40.10:
     name: Gestão de métodos de pagamento
     description: |
       Captura e gestão de métodos de pagamento e tokens dos clientes.
+    source_hash: sha256-75f6a6f9e63c09f6
   BC-4250.40.20:
     name: Autorização de pagamento
     description: |
       Autorização e captura de pagamentos recorrentes através de processadores
       de pagamento.
+    source_hash: sha256-303ac3953a30856b
   BC-4250.40.30:
     name: Fluxo de cobrança de dívidas
     description: |
       Sequências automatizadas de cobrança de dívidas para pagamentos falhados
       e saldos em atraso.
+    source_hash: sha256-078ffd276ac411bd
   BC-4250.40.40:
     name: Recuperação de churn involuntário
     description: |
       Recuperação de subscrições perdidas por cartões expirados, recusas
       definitivas e falhas de pagamento semelhantes.
+    source_hash: sha256-0dc2544af9afb29b
   BC-4250.50:
     name: Reconhecimento de receita de subscrições
     description: |
       Identificação de obrigações de desempenho e gestão de calendários de
       receita em linha com ASC 606 / IFRS 15.
+    source_hash: sha256-f1be5714e6a3d408
   BC-4250.50.10:
     name: Identificação de obrigações de desempenho
     description: |
       Identificação de obrigações de desempenho distintas a partir de
       contratos de subscrição.
+    source_hash: sha256-bb225b7c1eb9598d
   BC-4250.50.20:
     name: Gestão de calendários de receita
     description: |
       Geração e manutenção de calendários de reconhecimento de receita ao
       longo da vida do contrato.
+    source_hash: sha256-32b05fb994519d03
   BC-4250.50.30:
     name: Reconciliação de receita diferida
     description: |
       Reconciliação de saldos de receita diferida face a valores faturados
       e reconhecidos.
+    source_hash: sha256-0dc6fabc7746b44f
   BC-4250.60:
     name: Gestão de impostos sobre subscrições
     description: |
       Determinação de jurisdição fiscal, cálculo e gestão de isenções em
       encargos recorrentes e baseados em utilização.
+    source_hash: sha256-4c6fa0b367b14b63
   BC-4250.60.10:
     name: Determinação de jurisdição fiscal
     description: |
       Determinação das jurisdições fiscais aplicáveis por cliente e encargo.
+    source_hash: sha256-3cda282c052adff2
   BC-4250.60.20:
     name: Cálculo de imposto sobre subscrições
     description: |
       Cálculo do imposto indireto sobre encargos de subscrição e utilização.
+    source_hash: sha256-0d3dc4c274ee4bc2
   BC-4250.60.30:
     name: Gestão de isenções fiscais
     description: |
       Captura e aplicação de certificados de isenção fiscal de clientes.
+    source_hash: sha256-200e469dd41fac17
   BC-4250.70:
     name: Análise de receita de subscrições
     description: |
       Cálculo e análise de métricas de saúde da receita recorrente,
       incluindo ARR, MRR, NRR, GRR e vistas de coorte.
+    source_hash: sha256-e8947c198bc36a47
   BC-4250.70.10:
     name: Cálculo de ARR e MRR
     description: |
       Cálculo da receita recorrente anual e mensal a partir do estado das
       subscrições.
+    source_hash: sha256-1318961648ffee3e
   BC-4250.70.20:
     name: Análise de retenção líquida e bruta
     description: |
       Análise da retenção de receita líquida e bruta em coortes de clientes.
+    source_hash: sha256-6e59d2284c88e079
   BC-4250.70.30:
     name: Análise de receita por coorte
     description: |
       Análise baseada em coortes da evolução da receita e dinâmicas de retenção.
+    source_hash: sha256-201b5b343fa07b42
 metadata:
   status: draft
   translator: claude-ai

@@ -1,0 +1,76 @@
+kind: business-process
+locale: zh
+source: BP1-discover-to-automate.yaml
+entries:
+  BP-1160:
+    name: "发现到自动化"
+    description: "流程改进与自动化循环,涵盖流程发现、度量、挖掘、再设计与自动化。每个BP2对应VS-150的一个stage_name。"
+    source_hash: sha256-242ccdd2644d3357
+  BP-1160.10:
+    name: "流程发现"
+    description: "发现并记录现状(as-is)流程——参与者、步骤、数据、系统。"
+    source_hash: sha256-98b633c844e6186d
+  BP-1160.10.10:
+    name: "梳理现状流程"
+    description: "通过访谈、穿行和观察梳理现状流程;持久化至流程模型。"
+    source_hash: sha256-67cdd9b1759b8c85
+  BP-1160.10.20:
+    name: "捕获流程变体"
+    description: "按地区、渠道、客户类型捕获变体,以浮现需要标准化的环节。"
+    source_hash: sha256-4fd5fee3601621d3
+  BP-1160.20:
+    name: "流程度量"
+    description: "度量流程绩效——周期时间、成本、质量、客户体验。"
+    source_hash: sha256-a3c0f1e1d505a6cc
+  BP-1160.20.10:
+    name: "定义流程KPI"
+    description: "为流程定义KPI——效率、质量、客户结果——并对当前绩效设定基线。"
+    source_hash: sha256-30ac3e4647779862
+  BP-1160.20.20:
+    name: "建立绩效基线"
+    description: "通过抽样和分析建立当前绩效基线;识别异常值和模式。"
+    source_hash: sha256-e76ab6dab63ebabb
+  BP-1160.30:
+    name: "流程挖掘"
+    description: "挖掘系统事件日志以推导实际流程流向并浮现低效。"
+    source_hash: sha256-29c23b6d3ba32017
+  BP-1160.30.10:
+    name: "提取事件日志"
+    description: "从源系统为范围内流程提取事件日志数据;清洗并准备。"
+    source_hash: sha256-123c36e8e61e369a
+  BP-1160.30.20:
+    name: "执行流程挖掘分析"
+    description: "应用流程挖掘工具推导实际流向、一致性、瓶颈、返工环和变体。"
+    source_hash: sha256-57df458afdfbfe9a
+  BP-1160.30.30:
+    name: "浮现改进假设"
+    description: "将挖掘发现转化为改进假设,依据影响和可行性排序。"
+    source_hash: sha256-b2937b52a52a943e
+  BP-1160.40:
+    name: "流程再设计"
+    description: "再设计流程——消除、简化、整合、自动化——以实现阶跃式改进。"
+    source_hash: sha256-494cbf24df9546c1
+  BP-1160.40.10:
+    name: "设计未来流程"
+    description: "应用精益原则、客户旅程对齐和自动化,设计未来(to-be)流程。"
+    source_hash: sha256-d48fc9741c148b80
+  BP-1160.40.20:
+    name: "验证再设计"
+    description: "与操作人员、客户和风险方验证再设计;在构建前优化。"
+    source_hash: sha256-db270467cb280b5c
+  BP-1160.50:
+    name: "流程自动化"
+    description: "大规模构建、部署并运行流程自动化——RPA、编排、AI辅助。"
+    source_hash: sha256-10dd79850ae8b384
+  BP-1160.50.10:
+    name: "构建自动化"
+    description: "依据再设计流程构建自动化——RPA机器人、编排流、agentic-AI组件。"
+    source_hash: sha256-041615d4647618a2
+  BP-1160.50.20:
+    name: "部署并运行自动化"
+    description: "将自动化部署至生产;在变更周期中运行、监控并维护。"
+    source_hash: sha256-a131e4085bd2075a
+  BP-1160.50.30:
+    name: "跟踪自动化收益"
+    description: "对照商业论证跟踪自动化的已实现收益;迭代并扩展。"
+    source_hash: sha256-3ad25892234ed3fc

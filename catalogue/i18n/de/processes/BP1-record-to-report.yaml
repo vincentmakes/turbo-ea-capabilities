@@ -1,0 +1,124 @@
+kind: business-process
+locale: de
+source: BP1-record-to-report.yaml
+entries:
+  BP-1080:
+    name: "Buchung-zu-Berichterstattung"
+    description: "Finanzabschlusszyklus von der Transaktionserfassung über Nebenbuch-Schließung, Abstimmung, Konsolidierung, Management-Reporting, Statutary- und Regulatory-Reporting bis zum Audit-Sign-off. Ein BP2 pro VS-460-stage_name."
+    source_hash: sha256-4fde77e621173949
+  BP-1080.10:
+    name: "Transaktionserfassung"
+    description: "Wirtschaftliche Transaktionen aus Quellsystemen mit angemessener Kodierung in das Finanz-Backbone erfassen."
+    source_hash: sha256-777e85c66d610c9a
+  BP-1080.10.10:
+    name: "Quelltransaktionen erfassen"
+    description: "Transaktionen aus Vertrieb, Einkauf, Lohnabrechnung, Treasury und anderen Quellsystemen in die Buchungsflüsse erfassen."
+    source_hash: sha256-fbc670a75cbbd7dc
+  BP-1080.10.20:
+    name: "Buchhaltungs-Kodierung anwenden"
+    description: "Konten-, Kostenstellen- und Projekt-Kodierung gemäß Kontenplan und Richtlinie anwenden."
+    source_hash: sha256-3208ef579f9e5a6e
+  BP-1080.10.30:
+    name: "Transaktionsdaten validieren"
+    description: "Validierungsregeln ausführen — Vollständigkeit, Klassifikation, Währung, Periode — und Ausnahmen zur Korrektur routen."
+    source_hash: sha256-94f1805cf11bb0f4
+  BP-1080.20:
+    name: "Nebenbuch-Schließung"
+    description: "Nebenbücher schließen — Debitoren, Kreditoren, Anlagen, Lohn, Treasury — und ins Hauptbuch buchen."
+    source_hash: sha256-3a01332bbbd8e5b6
+  BP-1080.20.10:
+    name: "Debitoren-Nebenbuch schließen"
+    description: "Das Debitoren-Nebenbuch schließen; AR-zu-GL-Zusammenfassung buchen und offene Salden reporten."
+    source_hash: sha256-16b68b86dab484d7
+  BP-1080.20.20:
+    name: "Kreditoren-Nebenbuch schließen"
+    description: "Das Kreditoren-Nebenbuch schließen; AP-zu-GL-Zusammenfassung buchen und offene Salden reporten."
+    source_hash: sha256-822c5ccc9d117a3e
+  BP-1080.20.30:
+    name: "Anlagen-Nebenbuch schließen"
+    description: "Anlagenabschreibung und Zugänge/Abgänge ausführen; ins Hauptbuch buchen."
+    source_hash: sha256-2cc9569fd696441c
+  BP-1080.20.40:
+    name: "Andere Nebenbücher schließen"
+    description: "Lohn-, Treasury-, Bestand- und Projekt-Nebenbücher schließen; mit Audit-Trail ins Hauptbuch buchen."
+    source_hash: sha256-dfa3c16a92f5cd96
+  BP-1080.30:
+    name: "Abstimmung & Anpassungen"
+    description: "Bilanzkonten abstimmen und Periodenend-Anpassungen vornehmen, um die Bücher zu schließen."
+    source_hash: sha256-a40463df068adf10
+  BP-1080.30.10:
+    name: "Bilanzkonten abstimmen"
+    description: "Treasury-, Debitoren-, Kreditoren-, Inter-Company-, Rückstellungs- und andere Bilanzkonten mit Quelldetail abstimmen."
+    source_hash: sha256-cdac4b1e9dea96b3
+  BP-1080.30.20:
+    name: "Periodenend-Anpassungen vornehmen"
+    description: "Rückstellungen, ARAP, PRAP und Umgliederungsbuchungen vornehmen; Belegdokumentation erfassen."
+    source_hash: sha256-94718769a1e91c73
+  BP-1080.30.30:
+    name: "Abstimmungsabweichungen lösen"
+    description: "Abstimmungspositionen untersuchen und lösen; nicht gelöste Positionen an Controllership zur Abschreibung oder Übertragung eskalieren."
+    source_hash: sha256-47fa45469b7aecfa
+  BP-1080.40:
+    name: "Konsolidierung"
+    description: "Jahresabschlüsse über Rechtspersonen und Währungen konsolidieren; Inter-Company eliminieren; Konzernergebnisse produzieren."
+    source_hash: sha256-8664a943f2bd0932
+  BP-1080.40.10:
+    name: "Lokalwährungs-Salden umrechnen"
+    description: "Lokalwährungs-Salden zu den geeigneten FX-Kursen gemäß Rechnungslegungsstandard in die Berichtswährung umrechnen."
+    source_hash: sha256-f313d0c3bb592eaf
+  BP-1080.40.20:
+    name: "Inter-Company eliminieren"
+    description: "Inter-Company-Verkäufe, -Salden und nicht realisierte Gewinne gemäß Konsolidierungsregeln eliminieren."
+    source_hash: sha256-9a6678eccaf80ba7
+  BP-1080.40.30:
+    name: "Konsolidierte Konzernergebnisse produzieren"
+    description: "Konsolidierte Konzern-Bilanz, GuV, Cashflow-Rechnung und Eigenkapital produzieren; im Konsolidierungssystem persistieren."
+    source_hash: sha256-7a001bb947c22f23
+  BP-1080.50:
+    name: "Management-Reporting"
+    description: "Interne Management-Berichte für Executive-Team, Vorstand und operative Leader produzieren."
+    source_hash: sha256-9c8b574b42de7183
+  BP-1080.50.10:
+    name: "Management-Berichte erstellen"
+    description: "Management-Berichte erstellen — P&L nach Segment, Kostenstelle, Produkt, Kunde; Cash- und Working-Capital-Sichten."
+    source_hash: sha256-de53fc2bd2c34b48
+  BP-1080.50.20:
+    name: "Plan-Abweichungen analysieren"
+    description: "Abweichungen Ist vs. Plan und vs. Vorperiode analysieren; Treiber und Korrekturmaßnahmen identifizieren."
+    source_hash: sha256-f7c61b60767e9595
+  BP-1080.50.30:
+    name: "Management-Pack verteilen"
+    description: "Den Management-Reporting-Pack an Executives und operative Leader gemäß vereinbarter Kadenz verteilen."
+    source_hash: sha256-704f3bdaa5a9510b
+  BP-1080.60:
+    name: "Statutary- & Regulatory-Reporting"
+    description: "Statutary-, Regulatory- und Steuererklärungen an Behörden gemäß Kalender produzieren."
+    source_hash: sha256-28b70bf275aca7d0
+  BP-1080.60.10:
+    name: "Statutary-Abschlüsse erstellen"
+    description: "Statutary-Jahresabschlüsse nach lokalem GAAP / IFRS für jede Rechtspersönlichkeit der Jurisdiktion erstellen."
+    source_hash: sha256-b8abdafd810f4956
+  BP-1080.60.20:
+    name: "Steuererklärungen einreichen"
+    description: "Körperschaftsteuer-, USt./GST-, Quellensteuer- und Verrechnungspreis-Erklärungen pro Jurisdiktion erstellen und einreichen."
+    source_hash: sha256-daddfbd3713c4626
+  BP-1080.60.30:
+    name: "Regulatorische Berichte einreichen"
+    description: "Sektor-Regulierungs-Berichte (Banken, Versicherungen, börsennotierte Unternehmensoffenlegungen) bei den zuständigen Regulatoren einreichen."
+    source_hash: sha256-9492faf5010a52e2
+  BP-1080.70:
+    name: "Audit & Sign-off"
+    description: "Internes und externes Audit unterstützen; Sign-off auf Jahresabschlüsse und Kontrollen erhalten."
+    source_hash: sha256-fbcdf10910aea625
+  BP-1080.70.10:
+    name: "Externes Audit unterstützen"
+    description: "Externen Wirtschaftsprüfern Belege und Walk-throughs bereitstellen; Audit-Anfragen lösen; auf Findings reagieren."
+    source_hash: sha256-9373890a507a8478
+  BP-1080.70.20:
+    name: "Internes Audit unterstützen"
+    description: "Interne Audit-Reviews zu Finanzabschluss, Abstimmungen und Kontrollen unterstützen; Findings schließen."
+    source_hash: sha256-93f2c12d1ae74ff2
+  BP-1080.70.30:
+    name: "Management-Sign-off erhalten"
+    description: "Sign-off von CFO und CEO auf Jahresabschlüsse und SOX- oder äquivalente Kontroll-Repräsentationen erhalten; Audit-Komitee gemäß Corporate-Governance-Protokoll briefen."
+    source_hash: sha256-7615dbb49880ed60

@@ -42,6 +42,11 @@ import {
   type RawBusinessProcess,
   type SidecarKind,
 } from "./lib/load.ts";
+import {
+  hashCapabilityLikeSource,
+  hashValueStreamSource,
+  hashValueStreamStageSource,
+} from "./lib/i18n_hash.ts";
 
 const L1_ID_REGEX = /^BC-\d+$/;
 
@@ -606,6 +611,20 @@ const indexedFileSet = new Set(index.files);
 const processesIndexedFileSet = new Set(processesIndex.files);
 let sidecarCount = 0;
 
+// Source lookups for staleness hash recomputation.
+const capabilityById = new Map<string, FlatCapability>();
+for (const { node } of allFlat) capabilityById.set(node.id, node);
+const businessProcessById = new Map<string, FlatBusinessProcess>();
+for (const { node } of allFlatBP) businessProcessById.set(node.id, node);
+const streamById = new Map<string, (typeof streams)[number]>();
+const stageById = new Map<string, (typeof streams)[number]["stages"][number]>();
+for (const stream of streams) {
+  if (stream.id) streamById.set(stream.id, stream);
+  for (const stage of stream.stages ?? []) {
+    if (stage.id) stageById.set(stage.id, stage);
+  }
+}
+
 for (const { locale, file, data } of loadAllSidecars()) {
   const tag = `i18n/${locale}/${file}`;
   sidecarCount++;
@@ -648,6 +667,21 @@ for (const { locale, file, data } of loadAllSidecars()) {
           `entry '${id}' is not part of source '${data.source}' (cross-L1 entry — move to the correct sidecar)`
         );
       }
+      // Staleness check: if the entry pinned a source_hash, recompute and
+      // compare against the current English source. Mismatch → drift.
+      const stored = data.entries[id]?.source_hash;
+      if (stored) {
+        const src = capabilityById.get(id);
+        if (src) {
+          const current = hashCapabilityLikeSource(src);
+          if (current !== stored) {
+            err(
+              tag,
+              `entry '${id}' is stale: source_hash '${stored}' no longer matches source '${data.source}' (current: '${current}'). Retranslate and re-stamp via 'npm run i18n:stamp'.`
+            );
+          }
+        }
+      }
     }
   } else if (kind === "business-process") {
     if (!processesIndexedFileSet.has(data.source)) {
@@ -676,6 +710,19 @@ for (const { locale, file, data } of loadAllSidecars()) {
           `entry '${id}' is not part of source '${data.source}' (cross-BP1 entry — move to the correct sidecar)`
         );
       }
+      const stored = data.entries[id]?.source_hash;
+      if (stored) {
+        const src = businessProcessById.get(id);
+        if (src) {
+          const current = hashCapabilityLikeSource(src);
+          if (current !== stored) {
+            err(
+              tag,
+              `entry '${id}' is stale: source_hash '${stored}' no longer matches source '${data.source}' (current: '${current}'). Retranslate and re-stamp via 'npm run i18n:stamp'.`
+            );
+          }
+        }
+      }
     }
   } else if (kind === "value-stream") {
     if (data.source !== "_value-streams.yaml") {
@@ -694,15 +741,70 @@ for (const { locale, file, data } of loadAllSidecars()) {
       if (VS_ID_REGEX.test(id)) {
         if (!streamIds.has(id)) {
           err(tag, `entry '${id}' does not resolve to any value stream`);
+          continue;
+        }
+        const stored = data.entries[id]?.source_hash;
+        if (stored) {
+          const src = streamById.get(id);
+          if (src) {
+            const current = hashValueStreamSource(src);
+            if (current !== stored) {
+              err(
+                tag,
+                `entry '${id}' is stale: source_hash '${stored}' no longer matches '_value-streams.yaml' (current: '${current}'). Retranslate and re-stamp via 'npm run i18n:stamp'.`
+              );
+            }
+          }
         }
       } else if (VS_STAGE_ID_REGEX.test(id)) {
         if (!stageIds.has(id)) {
           err(tag, `entry '${id}' does not resolve to any value-stream stage`);
+          continue;
+        }
+        const stored = data.entries[id]?.source_hash;
+        if (stored) {
+          const src = stageById.get(id);
+          if (src) {
+            const current = hashValueStreamStageSource(src);
+            if (current !== stored) {
+              err(
+                tag,
+                `entry '${id}' is stale: source_hash '${stored}' no longer matches '_value-streams.yaml' (current: '${current}'). Retranslate and re-stamp via 'npm run i18n:stamp'.`
+              );
+            }
+          }
         }
       } else {
         err(tag, `entry '${id}' is not a value-stream id (expected VS-<n> or VS-<n>.<m>)`);
       }
     }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// 13. BC coverage check (warning, not error). Every Cross-Industry BC L1
+// should have at least one BP claiming to realize it. Process orphans
+// are reported as warnings — they don't fail the build, but they signal
+// gaps in the BP layer that should be closed.
+// ---------------------------------------------------------------------------
+const warnings: LintError[] = [];
+const cxL1Ids = new Set<string>();
+for (const { node } of allFlat) {
+  if (node.level !== 1) continue;
+  const industry = node.industry ?? "";
+  if (!industry.includes("Cross-Industry")) continue;
+  cxL1Ids.add(node.id);
+}
+const realisedBcIds = new Set<string>();
+for (const { node } of allFlatBP) {
+  for (const bcId of node.realizes_capability_ids ?? []) realisedBcIds.add(bcId);
+}
+for (const id of cxL1Ids) {
+  if (!realisedBcIds.has(id)) {
+    warnings.push({
+      file: "bc-coverage",
+      message: `Cross-Industry BC L1 '${id}' has no BP realising it (orphan capability — extend an existing BP1 or add a new one).`,
+    });
   }
 }
 
@@ -716,6 +818,13 @@ if (errors.length > 0) {
   }
   console.error("");
   process.exit(1);
+}
+if (warnings.length > 0) {
+  console.warn(`\n⚠ ${warnings.length} warning(s):`);
+  for (const { file, message } of warnings) {
+    console.warn(`  [${file}] ${message}`);
+  }
+  console.warn("");
 }
 console.log(
   `✔ Lint passed: ${trees.length} L1 file(s), ${allFlat.length} capability node(s), ${bpTrees.length} BP1 file(s), ${allFlatBP.length} process node(s), ${streams.length} value stream(s), ${sidecarCount} sidecar(s).`

@@ -1,0 +1,80 @@
+kind: business-process
+locale: de
+source: BP1-issue-to-resolution.yaml
+entries:
+  BP-1070:
+    name: "Vorfall-zu-Lösung"
+    description: "Universeller Incident- und Issue-Handling-Zyklus von der Erfassung über Untersuchung, Lösung bis zu Lessons Learned. Übergreifend genutzt in Kundendienst, IT, Sicherheit, Compliance, Audit und Operational Risk — branchenspezifische Varianten in VS-310 reduzieren sich hier auf vier logische Phasen."
+    source_hash: sha256-b983a0971b80b34a
+  BP-1070.10:
+    name: "Vorfall-Erfassung"
+    description: "Vorfälle, Beschwerden, Defekte, Beinahe-Unfälle und Audit-Findings über jeden Kanal erfassen; mit strukturierten Metadaten persistieren."
+    source_hash: sha256-093e28b2aff5be18
+  BP-1070.10.10:
+    name: "Vorfall empfangen"
+    description: "Den Vorfall vom auslösenden Kanal (Kunde, Mitarbeiter, System, Regulator, Audit) im Issue-Management-System annehmen."
+    source_hash: sha256-6677adae952fc44a
+  BP-1070.10.20:
+    name: "Vorfall klassifizieren"
+    description: "Vorfall nach Typ, Schweregrad, Geschäftsauswirkung und betroffenem Service oder Asset klassifizieren; in die richtige Queue routen."
+    source_hash: sha256-cba5705b5f9d810f
+  BP-1070.10.30:
+    name: "An Auslöser bestätigen"
+    description: "Empfangsbestätigung an den Auslöser mit Fall-Identifier und erwarteter Reaktionskadenz."
+    source_hash: sha256-a717b2fcc19577ea
+  BP-1070.10.40:
+    name: "Major-Incident-Protokoll auslösen"
+    description: "Bei hochgradig schweren Vorfällen das Major-Incident- oder Krisen-Protokoll auslösen — Incident Commander, War-Room, Eskalationspfade."
+    source_hash: sha256-87779e038caf7086
+  BP-1070.20:
+    name: "Untersuchung"
+    description: "Den Vorfall untersuchen — Beweise sammeln, Diagnosen durchführen, Wurzelursache identifizieren und Auswirkung bewerten."
+    source_hash: sha256-9a76413da5babd6b
+  BP-1070.20.10:
+    name: "Beweise sammeln"
+    description: "Logs, Aussagen, Proben und andere für den Vorfall relevante Beweise sammeln; in der Falldatei persistieren."
+    source_hash: sha256-f1889e0eb572f35a
+  BP-1070.20.20:
+    name: "Wurzelursache diagnostizieren"
+    description: "Wurzelursachen-Analysemethoden (5-Whys, Fault-Tree, Fishbone) anwenden, um primäre und beitragende Ursachen zu identifizieren."
+    source_hash: sha256-efd298ee1737914c
+  BP-1070.20.30:
+    name: "Auswirkung bewerten"
+    description: "Kunden-, finanzielle, regulatorische, sicherheitsbezogene und Reputationsauswirkung des Vorfalls und des vorgeschlagenen Lösungspfades bewerten."
+    source_hash: sha256-537fbed4ced3fa38
+  BP-1070.30:
+    name: "Lösung"
+    description: "Den Vorfall lösen — Service wiederherstellen, Schaden beheben, kommunizieren und den Fall schließen."
+    source_hash: sha256-b5d47b41164583bf
+  BP-1070.30.10:
+    name: "Workaround anwenden"
+    description: "Einen Workaround anwenden, um den Service wiederherzustellen oder Schaden einzudämmen, während die dauerhafte Behebung entwickelt wird."
+    source_hash: sha256-f14e89ff6d03d050
+  BP-1070.30.20:
+    name: "Permanente Behebung implementieren"
+    description: "Die permanente Korrekturmaßnahme über Change Management entwickeln und deployen; die Behebung validieren."
+    source_hash: sha256-9c9fe4ea00149e05
+  BP-1070.30.30:
+    name: "Lösung kommunizieren"
+    description: "Lösung an Auslöser, betroffene Kunden, Regulatoren wo erforderlich und interne Stakeholder kommunizieren."
+    source_hash: sha256-9120ad28b948233e
+  BP-1070.30.40:
+    name: "Fall schließen"
+    description: "Auslöser-Zufriedenheit bestätigen; den Fall mit vollständigem Audit-Trail und CSAT- oder äquivalentem Rating schließen."
+    source_hash: sha256-21993740429b4490
+  BP-1070.40:
+    name: "Lessons Learned"
+    description: "Lessons aus dem Fall extrahieren, systemische präventive Maßnahmen treiben und die Lösungsfähigkeit verbessern."
+    source_hash: sha256-ecad8d3fe25fecc6
+  BP-1070.40.10:
+    name: "Post-Incident-Review durchführen"
+    description: "Blameless Post-Incident-Review durchführen; erfassen, was gut lief, was nicht und was geändert werden soll."
+    source_hash: sha256-afac791cac610cae
+  BP-1070.40.20:
+    name: "Präventive Maßnahmen treiben"
+    description: "Präventive Maßnahmen (System, Prozess, Schulung) öffnen und verfolgen; Schließung mit Evidenz bestätigen."
+    source_hash: sha256-1cc2a76473435e62
+  BP-1070.40.30:
+    name: "Knowledge Base aktualisieren"
+    description: "Knowledge Base, Runbooks und Entscheidungsregeln mit neuer Evidenz aktualisieren, um zukünftige Lösungen zu beschleunigen."
+    source_hash: sha256-06c8c470a3324f6e

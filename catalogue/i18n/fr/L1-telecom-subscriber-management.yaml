@@ -7,122 +7,147 @@ entries:
       Identité de l'abonné, cycle de vie de la SIM et eSIM, numérotation,
       portabilité, identité des terminaux et authentification et autorisation
       sur les réseaux mobiles et fixes.
+    source_hash: sha256-9e58eccef659092e
   BC-2640.10:
     name: Gestion de l'identité des abonnés
     description: |
       Gestion du cycle de vie des identifiants et profils abonnés dans la couche
       de données abonnés.
+    source_hash: sha256-dca41d5115209b82
   BC-2640.10.10:
     name: Provisionnement de l'IMSI
     description: |
       Allocation et provisionnement de l'IMSI et des identifiants équivalents
       dans les magasins de données abonnés.
+    source_hash: sha256-28a98f5850a1cccd
   BC-2640.10.20:
     name: Gestion du profil abonné
     description: |
       Gestion des enregistrements de profil abonné dans le HLR, HSS, UDM et
       systèmes équivalents.
+    source_hash: sha256-f5603b12a173d7f5
   BC-2640.10.30:
     name: Révocation de l'identité abonné
     description: |
       Révocation des identités abonnés lors de la résiliation, de la fraude ou
       à la demande du régulateur.
+    source_hash: sha256-dbbe123ec9c91ded
   BC-2640.20:
     name: Gestion du cycle de vie de la SIM et eSIM
     description: |
       Gestion du cycle de vie des cartes SIM physiques et des profils eSIM,
       incluant la personnalisation, la distribution, le remplacement et
       l'échange.
+    source_hash: sha256-1748f193e5c1637d
   BC-2640.20.10:
     name: Provisionnement des SIM physiques
     description: |
       Personnalisation et distribution des cartes SIM physiques.
+    source_hash: sha256-cf62f05585721e8d
   BC-2640.20.20:
     name: Gestion des profils eSIM
     description: |
       Gestion des profils eSIM via SM-DP+, SM-SR et plateformes équivalentes.
+    source_hash: sha256-4a2f9ede4cd24b9d
   BC-2640.20.30:
     name: Échange et remplacement de profils
     description: |
       Échange et remplacement des profils SIM et eSIM abonnés, incluant les
       flux de protection contre la fraude.
+    source_hash: sha256-e9f4189685cecc83
   BC-2640.30:
     name: Gestion des ressources de numérotation
     description: |
       Gestion des ressources de numérotation téléphonique attribuées par les
       régulateurs et leur affectation aux services.
+    source_hash: sha256-0cd26d584b1b11d5
   BC-2640.30.10:
     name: Allocation des blocs de numéros
     description: |
       Acquisition et allocation des blocs de numéros auprès du régulateur dans
       l'inventaire interne.
+    source_hash: sha256-ada1f3cf3e9c1dcb
   BC-2640.30.20:
     name: Gestion de l'inventaire de numéros
     description: |
       Gestion de l'inventaire de numéros disponibles, réservés, attribués et
       mis en quarantaine.
+    source_hash: sha256-20135cc919a41315
   BC-2640.30.30:
     name: Réservation et restitution de numéros
     description: |
       Réservation de numéros pour les commandes et restitution des numéros
       non utilisés au pool ou au régulateur.
+    source_hash: sha256-5b5e29999fc61798
   BC-2640.40:
     name: Gestion de la portabilité des numéros
     description: |
       Portabilité entrante et sortante des numéros mobiles et fixes et
       maintenance des données de référence de routage.
+    source_hash: sha256-fa3cd8425fbf367a
   BC-2640.40.10:
     name: Gestion de la portabilité entrante
     description: |
       Traitement des demandes de portabilité de numéros entrantes en provenance
       d'autres opérateurs.
+    source_hash: sha256-3049c85ebc28503e
   BC-2640.40.20:
     name: Gestion de la portabilité sortante
     description: |
       Traitement des demandes de portabilité de numéros sortantes vers d'autres
       opérateurs.
+    source_hash: sha256-6caf9a6cb842a195
   BC-2640.40.30:
     name: Maintenance des données de référence de routage de portabilité
     description: |
       Maintenance des données de routage de portabilité incluant ENUM et les
       bases de données de référence centrales.
+    source_hash: sha256-2c13b7d663c1d5fa
   BC-2640.50:
     name: Gestion de l'identité des terminaux
     description: |
       Enregistrement et contrôle des identifiants de terminaux pour l'éligibilité
       au service et la mise en liste noire des terminaux volés.
+    source_hash: sha256-652d23146f644c8c
   BC-2640.50.10:
     name: Enregistrement des IMEI
     description: |
       Enregistrement des IMEI des terminaux par rapport aux abonnés et vérifications
       d'éligibilité au service.
+    source_hash: sha256-02f870220a0f82ff
   BC-2640.50.20:
     name: Maintenance du registre d'identité des équipements
     description: |
       Maintenance des données EIR pour les terminaux en liste blanche, liste
       grise et liste noire.
+    source_hash: sha256-80a2984d1047d657
   BC-2640.50.30:
     name: Mise en liste noire des terminaux volés
     description: |
       Mise en liste noire des terminaux volés et perdus en coopération avec les
       registres industriels et les forces de l'ordre.
+    source_hash: sha256-ebd6f2c68b1a633c
   BC-2640.60:
     name: Authentification et autorisation des abonnés
     description: |
       Authentification, autorisation et comptabilisation des abonnés et terminaux
       sur les technologies d'accès.
+    source_hash: sha256-486cbc6eb01e7bcd
   BC-2640.60.10:
     name: Authentification des abonnés
     description: |
       Authentification des abonnés sur les accès mobiles, fixes et Wi-Fi via
       les protocoles AAA.
+    source_hash: sha256-49da4afb350b9f9c
   BC-2640.60.20:
     name: Gestion des politiques d'autorisation
     description: |
       Gestion des règles d'autorisation de service et de politique par abonné
       et terminal.
+    source_hash: sha256-759d212f3a636c5a
   BC-2640.60.30:
     name: Gestion des enregistrements de comptabilisation
     description: |
       Génération et gestion des enregistrements de comptabilisation AAA pour
       la facturation et l'analytique en aval.
+    source_hash: sha256-377abc0bda5e3edb

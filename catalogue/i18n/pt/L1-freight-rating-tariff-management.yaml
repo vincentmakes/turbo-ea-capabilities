@@ -7,6 +7,7 @@ entries:
       Definição e operação de tarifas de frete, tabelas, preços contratuais,
       preços spot, acessórios e o motor de tarifação que calcula o preço dos
       movimentos de frete.
+    source_hash: sha256-8419cc78e1b75f96
   BC-2520.10:
     name: Gestão de tabelas de tarifas e preços
     description: |
@@ -18,91 +19,111 @@ entries:
     out_of_scope:
       - Cotação ao cliente no contexto de transitário (BC-2450.10)
       - Métodos de preços empresariais genéricos (BC-440)
+    source_hash: sha256-e397a2715d244c78
   BC-2520.10.10:
     name: Definição de tarifa de base
     description: |
       Definição de tarifas de frete de base por rota, unidade e nível de serviço.
+    source_hash: sha256-99fa2a57620d2144
   BC-2520.10.20:
     name: Submissão de tarifa pública
     description: |
       Submissão de tarifas públicas junto de reguladores e conferências quando
       exigido.
+    source_hash: sha256-05fb6fe927efcfed
   BC-2520.10.30:
     name: Versionamento de tabela de preços
     description: |
       Controlo de versões e gestão de datas de vigência de tabelas de preços.
+    source_hash: sha256-479cca17279a028b
   BC-2520.20:
     name: Gestão de tarifas contratuais
     description: |
       Configuração e manutenção de tarifas contratuais negociadas com clientes
       nomeados e compromissos de volume.
+    source_hash: sha256-79b60109883ab8fe
   BC-2520.20.10:
     name: Configuração de tarifa contratual
     description: |
       Configuração de tarifas negociadas face a contratos de clientes nomeados.
+    source_hash: sha256-a2b13274a0cbd717
   BC-2520.20.20:
     name: Acompanhamento de compromissos de volume
     description: |
       Acompanhamento de compromissos de volume de clientes e objetivos de
       quantidade mínima.
+    source_hash: sha256-91896bb435c9df6a
   BC-2520.20.30:
     name: Renovação de tarifa contratual
     description: |
       Renovação e renegociação de tarifas contratuais a expirar.
+    source_hash: sha256-e5503aec0e6a01dd
   BC-2520.30:
     name: Gestão de tarifas spot
     description: |
       Definição de preços, aceitação e benchmarking de tarifas de frete no
       mercado spot.
+    source_hash: sha256-71a20b67696cda41
   BC-2520.30.10:
     name: Cotação de tarifa spot
     description: |
       Cotação de tarifas de mercado spot por envio.
+    source_hash: sha256-e7a2b0fce416e38b
   BC-2520.30.20:
     name: Aceitação de tarifa spot
     description: |
       Aceitação e confirmação de reservas a tarifa spot.
+    source_hash: sha256-0720b6b666098f57
   BC-2520.30.30:
     name: Benchmarking de índice de tarifas spot
     description: |
       Benchmarking de tarifas spot face a índices de mercado.
+    source_hash: sha256-ba41d0f4fb382bc3
   BC-2520.40:
     name: Gestão de acessórios e sobretaxas
     description: |
       Definição e aplicação de acessórios, sobretaxas, tarifas de demurrage e
       detenção.
+    source_hash: sha256-74365e7c618f18a6
   BC-2520.40.10:
     name: Gestão de sobretaxa de combustível
     description: |
       Definição e aplicação de sobretaxas de combustível e bunker.
+    source_hash: sha256-f6cbfeda5841b351
   BC-2520.40.20:
     name: Definição de encargos acessórios
     description: |
       Definição de encargos acessórios para espera, manuseamento especial e
       equipamento.
+    source_hash: sha256-7d719a5e446826ab
   BC-2520.40.30:
     name: Tarifas de demurrage e detenção
     description: |
       Definição de tarifas de demurrage e detenção para uso de equipamento e
       terminal.
+    source_hash: sha256-5b925632ad9cbd3c
   BC-2520.50:
     name: Gestão de operações do motor de tarifação
     description: |
       Operação do motor de tarifação que calcula e valida os encargos de frete
       em encomendas e envios.
+    source_hash: sha256-d113c57f96ed1cc0
   BC-2520.50.10:
     name: Execução de cálculo de tarifa
     description: |
       Execução de cálculos de tarifa em encomendas e envios.
+    source_hash: sha256-7e5ead895c3f9d6a
   BC-2520.50.20:
     name: Distribuição de folhas de tarifa
     description: |
       Distribuição de folhas de tarifa a clientes, parceiros e canais.
+    source_hash: sha256-18578d061bfde963
   BC-2520.50.30:
     name: Auditoria e validação de tarifas
     description: |
       Validação das tarifas aplicadas face a bases de referência contratuais e
       de tabela.
+    source_hash: sha256-15b89ac176a56acf
 metadata:
   status: draft
   translator: claude-ai

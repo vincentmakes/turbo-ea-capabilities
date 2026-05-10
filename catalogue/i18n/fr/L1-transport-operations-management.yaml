@@ -7,6 +7,7 @@ entries:
       Exécution multimodale des mouvements de transport depuis l'enlèvement jusqu'à
       la ligne principale, le drayage et la livraison du dernier kilomètre, incluant
       la réponse aux perturbations opérationnelles.
+    source_hash: sha256-493efbc703dd1841
 
   BC-2420.10:
     name: Gestion des expéditions
@@ -19,137 +20,163 @@ entries:
     out_of_scope:
       - Planification des conducteurs en amont de l'expédition (BC-2440)
       - Allocation de capacité par contrat (BC-2400.20)
+    source_hash: sha256-a022a7d9c5e3d246
 
   BC-2420.10.10:
     name: Affectation des chargements
     description: |
       Affectation des chargements aux véhicules, navires, vols ou sillons
       ferroviaires.
+    source_hash: sha256-01616fc4ff3664cf
 
   BC-2420.10.20:
     name: Envoi en mission des conducteurs et équipages
     description: |
       Envoi en mission des conducteurs et équipages qualifiés sur les chargements
       affectés.
+    source_hash: sha256-482bc6cfc7f77267
 
   BC-2420.10.30:
     name: Expédition des équipements
     description: |
       Positionnement des conteneurs, remorques et ULD pour les mouvements affectés.
+    source_hash: sha256-9913208b5c5f52be
 
   BC-2420.20:
     name: Gestion des opérations de ligne principale
     description: |
       Mouvement de fret sur longue distance entre hubs, terminaux et passerelles
       selon les modes.
+    source_hash: sha256-ac34f817f63beaf2
 
   BC-2420.20.10:
     name: Opérations de ligne principale routière
     description: |
       Transport routier longue distance entre hubs et terminaux.
+    source_hash: sha256-97fef0c549ec6ead
 
   BC-2420.20.20:
     name: Opérations de ligne principale ferroviaire
     description: |
       Exploitation des trains de fret et des services de trains complets.
+    source_hash: sha256-a819c7577b71c8ce
 
   BC-2420.20.30:
     name: Opérations de ligne principale maritime
     description: |
       Opérations de navigation entre ports incluant les tronçons de transbordement.
+    source_hash: sha256-c3127d6147be02e6
 
   BC-2420.20.40:
     name: Opérations de ligne principale aérienne
     description: |
       Exploitation des vols cargo et services tout-cargo entre aéroports.
+    source_hash: sha256-f80769bc2a001e25
 
   BC-2420.30:
     name: Gestion des opérations d'enlèvement et de drayage
     description: |
       Enlèvements premier kilomètre chez les chargeurs et drayage courte distance
       entre terminaux, cours et points intérieurs.
+    source_hash: sha256-a3e7c418a24dfb7f
 
   BC-2420.30.10:
     name: Opérations d'enlèvement
     description: |
       Collecte du fret chez les chargeurs et les groupeurs.
+    source_hash: sha256-2007bfca72dade4a
 
   BC-2420.30.20:
     name: Opérations de drayage de conteneurs
     description: |
       Drayage de conteneurs entre les terminaux portuaires, les rampes ferroviaires
       et les dépôts intérieurs.
+    source_hash: sha256-625791dab30a9a78
 
   BC-2420.30.30:
     name: Mouvement des équipements vides
     description: |
       Mouvement des conteneurs, remorques et ULD vides entre les dépôts.
+    source_hash: sha256-eff654c69a4b0193
 
   BC-2420.40:
     name: Gestion des opérations de livraison du dernier kilomètre
     description: |
       Livraison du tronçon final aux destinataires incluant le routage, l'exécution
       et la preuve de livraison.
+    source_hash: sha256-e7ecfc3480f3e432
 
   BC-2420.40.10:
     name: Routage du dernier kilomètre
     description: |
       Routage et séquençage des arrêts de livraison et des fenêtres horaires.
+    source_hash: sha256-dea34bdf6734a959
 
   BC-2420.40.20:
     name: Exécution de la livraison client
     description: |
       Livraison sur site, capture de signature et remise aux destinataires.
+    source_hash: sha256-b7e8eb08b0b105ee
 
   BC-2420.40.30:
     name: Preuve de livraison
     description: |
       Capture et stockage des preuves de livraison.
+    source_hash: sha256-b105e0ddec0ace72
 
   BC-2420.40.40:
     name: Gestion des exceptions de livraison
     description: |
       Traitement des refus, livraisons manquées et nouvelles tentatives.
+    source_hash: sha256-bb127b33dbb81ada
 
   BC-2420.50:
     name: Gestion des perturbations opérationnelles
     description: |
       Détection des perturbations opérationnelles en cours d'opération et
       orchestration des actions de rétablissement.
+    source_hash: sha256-ce329ef97a1b791e
 
   BC-2420.50.10:
     name: Détection des incidents opérationnels
     description: |
       Détection des pannes, conditions météorologiques, retards portuaires et autres
       perturbations.
+    source_hash: sha256-1aea2c0d13a9139d
 
   BC-2420.50.20:
     name: Reroutage et rétablissement
     description: |
       Reroutage du fret et rétablissement des services perturbés.
+    source_hash: sha256-5594f850ac6710f3
 
   BC-2420.50.30:
     name: Restauration du service
     description: |
       Restauration des horaires normaux et des engagements envers les clients.
+    source_hash: sha256-9fc6a7521308c1af
 
   BC-2420.60:
     name: Gestion de la performance opérationnelle
     description: |
       Mesure opérationnelle de la ponctualité, des délais de transit et du respect
       des niveaux de service.
+    source_hash: sha256-c0e0d0d9284c0555
 
   BC-2420.60.10:
     name: Suivi de la ponctualité
     description: |
       Suivi de la ponctualité des enlèvements, départs, arrivées et livraisons.
+    source_hash: sha256-7798baea7dbd8ff2
 
   BC-2420.60.20:
     name: Surveillance des délais de transit
     description: |
       Surveillance des délais de transit réels par rapport aux engagements.
+    source_hash: sha256-1cac7b65e3a64b6f
 
   BC-2420.60.30:
     name: Reporting des KPI opérationnels
     description: |
       Reporting des KPI opérationnels aux parties prenantes internes et externes.
+    source_hash: sha256-15c17f7c8dd11f1f

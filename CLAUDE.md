@@ -28,11 +28,11 @@ An open-source Business Architecture Reference Catalogue with **three orthogonal
 ## Invariants — business processes (BP-)
 
 - **Source of truth:** `catalogue/processes/BP1-<slug>.yaml` (one file per Category), indexed in `catalogue/processes/_index.yaml`. Schema: `schema/business-process.schema.json`.
-- **ID format:** `BP-<L1>[.<L2>[.<L3>[.<L4>]]]` mirroring BC. Max depth **L4** (Category → Group → Process → Activity per APQC PCF). BPMN-level steps belong in diagrams, not the catalogue.
-- **Names are verb-phrased** (unlike capabilities): *Develop Vision and Strategy*, *Process Sales Order*.
+- **ID format:** `BP-<L1>[.<L2>[.<L3>[.<L4>]]]` mirroring BC. Cross-Industry BP1s live in the sparse `BP-1000`..`BP-1160` range (one BP1 per Cross-Industry value stream, generated from BC + VS); industry-specific BP1s use `BP-130`..`BP-490`. Max depth **L4** (Category → Group → Process → Activity); Cross-Industry BPs stop at L3 by construction. BPMN-level steps belong in diagrams, not the catalogue.
+- **Naming is two-tier:** BP1 roots aligned to a value stream use the VS bookend name verbatim (*Order-to-Cash*, *Hire-to-Retire*, *Procure-to-Pay*). BP2/BP3/BP4 names are verb-phrased operational activities (*Capture Customer Order*, *Verify Customer Credit*, *Allocate Inventory to Order*). One canonical name per node; **aliases are disabled by governance** — do not author them.
 - **Industry tag:** same scheme as capabilities. BC L1 industry vocabulary is the master list.
 - **`realizes_capability_ids`** is the single source of truth for the BC↔BP link; the reverse `Capability.realizes_processes` is derived at build time.
-- **`framework_refs`** for structured cross-walks to APQC-PCF / BIAN / eTOM / ITIL / SCOR. Used alongside (not instead of) the free-form `references[]` URI list.
+- **`framework_refs`** for structured cross-walks to APQC-PCF, BIAN, eTOM, ITIL, SCOR, DCOR, COBIT, SHRM-BoCK, ISO-55000, ISO-31000, COSO-ERM, TOGAF, BIZBOK, ACORD, ICMM. Cross-Industry BPs are no longer authored from APQC PCF — they are generated from BC + VS — but APQC-PCF can still be cited as a secondary cross-walk where structurally honest. Industry-specific BPs anchor on their domain framework (BIAN for banking, eTOM for telco, ACORD for insurance, ICMM for mining, the relevant APQC industry PCF, etc.). Used alongside (not instead of) the free-form `references[]` URI list.
 
 ## Translations — sidecar invariants
 
@@ -43,6 +43,7 @@ An open-source Business Architecture Reference Catalogue with **three orthogonal
   - value-stream → `catalogue/i18n/<locale>/_value-streams.yaml`, `source: _value-streams.yaml`
 - **Translatable fields whitelist:** capability/business-process — `name`, `description`, `aliases`, `in_scope`, `out_of_scope`. value-stream — stream-level `name`, `description`; stage-level `stage_name`, `description`, `notes`. **Never** translate ids, levels, industry, references, framework_refs, deprecated, successor_id, or metadata.
 - **No orphans.** Every entry id in a sidecar must resolve to a node in the declared source. After a `cap:mv`/`cap:deprecate`/`bp:mv`/`bp:deprecate`/`vs:deprecate` the corresponding sidecar entries must be updated or removed in the same PR — lint blocks otherwise.
+- **Staleness detection.** Each sidecar entry carries an optional `source_hash` (SHA-256 fingerprint of the source's translatable surface at translation time). Lint flags any entry whose stored hash no longer matches the recomputed source. After editing a source `name`/`description`/`aliases`/`in_scope`/`out_of_scope`, retranslate the affected sidecar entry (typically via `/translate-language`) and run `npm run i18n:stamp` to refresh the hash. The stamp command is idempotent and safe to run on the whole catalogue.
 - **Locale tag = directory name.** `catalogue/i18n/fr-CA/...` files must declare `locale: fr-CA`. BCP-47 only.
 - **Bundle layout is additive.** `dist/api/capabilities.json`, `business-processes.json`, `value-streams.json`, `tree.json`, `bp-tree.json` stay English. Locale data ships separately under `dist/api/i18n/<locale>.json` and `dist/api/locales.json` — old consumers are unaffected.
 
@@ -64,8 +65,20 @@ npm run vs:add         -- --name "Quote-to-Cash" --industries Cross-Industry
 npm run vs:add-stage   -- --stream VS-30 --name "Quote Generation" --capabilities BC-100 [--processes BP-10.10]
 npm run vs:deprecate   -- --id VS-30 --successor VS-40 --reason "Merged"
 
+# Translations / staleness
+npm run i18n:stamp                    # backfill or refresh source_hash on every sidecar entry
+npm run i18n:stamp -- --check         # dry-run; non-zero exit if any entry is stale
+npm run i18n:stamp -- --locale fr     # restrict to one locale
+npm run i18n:stamp -- --kind business-process
+
+# Coverage checks (run after BP / VS edits)
+npm run check:bc-coverage              # every Cross-Industry BC L1 has a realising BP
+npm run check:bc-coverage -- --strict  # exit non-zero on any orphan
+npm run check:i18n-coverage            # which (BP1 × locale) sidecars are missing
+npm run check:i18n-coverage -- --strict
+
 # Validation / build
-npm run lint           # required before commit
+npm run lint           # required before commit; warns on BC-coverage gaps
 npm run build          # generates dist/api/, site/, package data
 ```
 
@@ -81,7 +94,7 @@ The CLI scripts under `scripts/cli/` preserve YAML formatting and compute next I
 ## Skills available in this repo
 
 - `/generate-capability` — draft new L1s or extend existing ones with MECE L2/L3 trees, industry-aware references, and metadata. Drives `cap:add` for ID safety.
-- `/generate-process` — draft new BP1 process trees with MECE structure, APQC PCF alignment, and `framework_refs`. Drives `bp:add`.
+- `/generate-process` — synthesise a Cross-Industry BP1 from a value stream and the capabilities its stages exercise (or extend an existing BP1 with a new stage). Generates BP2 = stage, BP3 = verb-phrased activities; populates `realizes_capability_ids` and `framework_refs`. Drives `bp:bootstrap-bp1` and `bp:add`.
 - `/generate-value-stream` — propose new value streams with stages linked to capabilities and (optionally) processes. Drives `vs:add` / `vs:add-stage`.
 - `/map-value-streams` — legacy alias for value-stream mapping; superseded by `/generate-value-stream`.
 - `/translate-language` — generate or refresh sidecar translations under `catalogue/i18n/<locale>/`. Handles all three kinds (capability, business-process, value-stream).

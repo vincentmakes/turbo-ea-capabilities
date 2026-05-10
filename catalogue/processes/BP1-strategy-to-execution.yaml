@@ -1,0 +1,220 @@
+id: BP-1100
+name: Strategy-to-Execution
+level: 1
+industry: Cross-Industry
+description: >-
+  End-to-end strategy delivery cycle from strategy formulation through
+  portfolio definition, programme and project setup, delivery and
+  governance, change adoption, and benefits realisation. One BP2 per
+  VS-580 stage_name.
+framework_refs:
+  - framework: TOGAF
+    external_id: ADM
+    version: "10"
+realizes_capability_ids:
+  - BC-100
+  - BC-170
+  - BC-900
+  - BC-910
+  - BC-920
+  - BC-930
+  - BC-3200
+  - BC-4910
+  - BC-4920
+children:
+  - id: BP-1100.10
+    name: Strategy Formulation
+    level: 2
+    description: Set enterprise strategy — vision, goals, choices, and the operating model needed to win.
+    realizes_capability_ids:
+      - BC-100
+      - BC-170
+      - BC-3200
+      - BC-4910
+    children:
+      - id: BP-1100.10.10
+        name: Define Strategic Direction
+        level: 3
+        description: Define vision, mission, strategic goals, and the principles guiding choices.
+        realizes_capability_ids:
+          - BC-100
+        children: []
+      - id: BP-1100.10.20
+        name: Make Strategic Choices
+        level: 3
+        description: Make where-to-play and how-to-win choices; resolve trade-offs across markets, segments, products, and capabilities.
+        realizes_capability_ids:
+          - BC-100
+          - BC-170
+        children: []
+      - id: BP-1100.10.30
+        name: Define Operating Model
+        level: 3
+        description: Define the operating model — capabilities, organisation, locations, and partners — needed to execute the strategy.
+        realizes_capability_ids:
+          - BC-170
+          - BC-3200
+          - BC-4910
+        children: []
+  - id: BP-1100.20
+    name: Portfolio Definition
+    level: 2
+    description: Translate strategy into the portfolio of programmes and investments that will deliver the chosen outcomes.
+    realizes_capability_ids:
+      - BC-100
+      - BC-170
+      - BC-900
+      - BC-4910
+    children:
+      - id: BP-1100.20.10
+        name: Identify Portfolio Investments
+        level: 3
+        description: Identify the candidate investments that will close strategic gaps; capture value, cost, risk, and dependencies.
+        realizes_capability_ids:
+          - BC-100
+          - BC-900
+        children: []
+      - id: BP-1100.20.20
+        name: Prioritise Portfolio
+        level: 3
+        description: Prioritise investments by value, fit, capacity, and risk; build the integrated portfolio across horizons.
+        realizes_capability_ids:
+          - BC-170
+          - BC-900
+          - BC-4910
+        children: []
+      - id: BP-1100.20.30
+        name: Approve Portfolio
+        level: 3
+        description: Approve and fund the portfolio through the executive forum; trigger programme and project setup.
+        realizes_capability_ids:
+          - BC-100
+          - BC-900
+        children: []
+  - id: BP-1100.30
+    name: Programme & Project Setup
+    level: 2
+    description: Set up programmes and projects with charter, governance, plan, team, and budget.
+    realizes_capability_ids:
+      - BC-900
+    children:
+      - id: BP-1100.30.10
+        name: Charter Programme
+        level: 3
+        description: Charter the programme — outcomes, scope, governance, sponsor, accountabilities, success criteria.
+        realizes_capability_ids:
+          - BC-900
+        children: []
+      - id: BP-1100.30.20
+        name: Plan Programme Delivery
+        level: 3
+        description: Build the integrated delivery plan across constituent projects, with milestones, dependencies, and resourcing.
+        realizes_capability_ids:
+          - BC-900
+        children: []
+      - id: BP-1100.30.30
+        name: Stand Up Project Teams
+        level: 3
+        description: Form project teams, confirm roles, on-board, and trigger sprint or phase-zero work.
+        realizes_capability_ids:
+          - BC-900
+        children: []
+  - id: BP-1100.40
+    name: Delivery & Governance
+    level: 2
+    description: Deliver programmes and projects against plan; run governance to surface risk, decide change, and ensure quality.
+    realizes_capability_ids:
+      - BC-900
+      - BC-920
+      - BC-930
+      - BC-3200
+      - BC-4920
+    children:
+      - id: BP-1100.40.10
+        name: Execute Project Work
+        level: 3
+        description: Execute the project work — design, build, test, deliver — per chosen delivery method (agile, waterfall, hybrid).
+        realizes_capability_ids:
+          - BC-900
+        children: []
+      - id: BP-1100.40.20
+        name: Run Programme Governance
+        level: 3
+        description: Run steering committees, decision forums, and quality gates under enterprise corporate-governance authority; surface and resolve risks, issues, and changes.
+        realizes_capability_ids:
+          - BC-110
+          - BC-920
+          - BC-930
+          - BC-3200
+        children: []
+      - id: BP-1100.40.30
+        name: Manage Programme Risks and Changes
+        level: 3
+        description: Maintain risk register and change log; mitigate, escalate, and decide changes through governance.
+        realizes_capability_ids:
+          - BC-920
+          - BC-4920
+        children: []
+  - id: BP-1100.50
+    name: Change Adoption
+    level: 2
+    description: Drive end-user adoption of the changes delivered by the programme — communicate, train, support, sustain.
+    realizes_capability_ids:
+      - BC-910
+    children:
+      - id: BP-1100.50.10
+        name: Plan Change Adoption
+        level: 3
+        description: Build the change-adoption plan — stakeholder map, communication, training, support, sustainability.
+        realizes_capability_ids:
+          - BC-910
+        children: []
+      - id: BP-1100.50.20
+        name: Communicate and Train
+        level: 3
+        description: Run communications and training across the impacted population per the change-adoption plan.
+        realizes_capability_ids:
+          - BC-910
+        children: []
+      - id: BP-1100.50.30
+        name: Support Adoption
+        level: 3
+        description: Provide hyper-care support, surface adoption blockers, and run reinforcement activities.
+        realizes_capability_ids:
+          - BC-910
+        children: []
+  - id: BP-1100.60
+    name: Benefits Realisation
+    level: 2
+    description: Track and harvest the strategic benefits the programme committed to deliver; close out the programme.
+    realizes_capability_ids:
+      - BC-100
+      - BC-170
+      - BC-920
+      - BC-3200
+      - BC-4920
+    children:
+      - id: BP-1100.60.10
+        name: Track Benefit Metrics
+        level: 3
+        description: Track committed benefits — revenue, cost, NPS, throughput — against baseline and target.
+        realizes_capability_ids:
+          - BC-100
+          - BC-3200
+          - BC-4920
+        children: []
+      - id: BP-1100.60.20
+        name: Harvest Benefits
+        level: 3
+        description: Harvest benefits into business-as-usual — embed in budgets, KPIs, run-the-business processes.
+        realizes_capability_ids:
+          - BC-170
+          - BC-920
+        children: []
+      - id: BP-1100.60.30
+        name: Close Out Programme
+        level: 3
+        description: Close the programme — final report, lessons learned, archival, team release; trigger any follow-on portfolio moves.
+        realizes_capability_ids:
+          - BC-920
+        children: []

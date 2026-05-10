@@ -1,0 +1,108 @@
+kind: business-process
+locale: fr
+source: BP1-plan-to-inventory.yaml
+entries:
+  BP-1040:
+    name: "Plan-à-Stock"
+    description: "Cycle de planification de la demande et de l'offre qui positionne le stock au bon endroit, au bon moment et dans la bonne quantité. Six BP2 reflètent les étapes de VS-400, de la planification de la demande à la réconciliation S&OP, au positionnement de stock, au réapprovisionnement et au monitoring continu de la santé du stock."
+    source_hash: sha256-5f3fe8d72d009682
+  BP-1040.10:
+    name: "Planification de la demande"
+    description: "Construire la prévision de demande consensuelle à partir de l'historique, des signaux de marché, du pipeline ventes et des plans promotionnels."
+    source_hash: sha256-e5ff0b3a843d784c
+  BP-1040.10.10:
+    name: "Construire la prévision statistique"
+    description: "Exécuter les modèles de prévision statistique sur l'historique de demande au niveau d'agrégation choisi ; suivre l'erreur de prévision."
+    source_hash: sha256-a13b25758934520a
+  BP-1040.10.20:
+    name: "Intégrer les apports ventes et marketing"
+    description: "Superposer le signal de pipeline ventes, les calendriers promotionnels et les plans de lancement produit pour ajuster la baseline statistique."
+    source_hash: sha256-88973e710b73199f
+  BP-1040.10.30:
+    name: "Réconcilier la prévision de demande"
+    description: "Réconcilier les prévisions bottom-up et top-down ; verrouiller la prévision consensuelle pour l'horizon de planification."
+    source_hash: sha256-ba75edf4bc320284
+  BP-1040.20:
+    name: "Planification de l'approvisionnement"
+    description: "Planifier l'approvisionnement pour répondre à la demande — production, sourcing, distribution — sous contraintes de capacité, lead-time et matières."
+    source_hash: sha256-bbc57302462ff965
+  BP-1040.20.10:
+    name: "Planifier l'ordonnancement de production"
+    description: "Construire le master production schedule face à la capacité, aux matières et à la main-d'œuvre ; résoudre les conflits de contraintes."
+    source_hash: sha256-ab96b55b9b9df1e4
+  BP-1040.20.20:
+    name: "Planifier l'approvisionnement matières"
+    description: "Planifier les besoins matières (MRP) — matières premières, composants, packaging — face au plan de production et aux délais fournisseurs."
+    source_hash: sha256-b3e37b7570b8c203
+  BP-1040.20.30:
+    name: "Planifier le flux du réseau de distribution"
+    description: "Planifier le flux de stock à travers le réseau de distribution (DRP) — DC à DC, DC à magasin, cross-dock — pour positionner le stock près de la demande."
+    source_hash: sha256-2402e53a2757e94d
+  BP-1040.20.40:
+    name: "Résoudre les contraintes d'approvisionnement"
+    description: "Faire ressortir les écarts d'approvisionnement face à la demande ; rééquilibrer via expedites, alternatives, allocations ou demand-shaping en S&OP."
+    source_hash: sha256-d44aa96dca72d51b
+  BP-1040.30:
+    name: "Réconciliation S&OP"
+    description: "Conduire le cycle Sales & Operations Planning intégré — pré-S&OP, S&OP exécutif — pour verrouiller le plan business intégré."
+    source_hash: sha256-a30cd60530049364
+  BP-1040.30.10:
+    name: "Conduire la revue pré-S&OP"
+    description: "Conduire le pré-S&OP cross-fonctionnel pour aligner les vues demande, approvisionnement, finance ; faire ressortir les gaps et les recommandations vers le S&OP exécutif."
+    source_hash: sha256-6f884f8c6f6c0c9b
+  BP-1040.30.20:
+    name: "Conduire le S&OP exécutif"
+    description: "Conduire le S&OP exécutif pour décider des arbitrages (service vs coût, croissance vs marge, rééquilibrage de portefeuille) et verrouiller le plan intégré."
+    source_hash: sha256-0410a63b32cc1146
+  BP-1040.30.30:
+    name: "Communiquer le plan verrouillé"
+    description: "Cascader le plan business intégré verrouillé aux fonctions ; aligner l'exécution en aval face au plan."
+    source_hash: sha256-d0ee8f3b86a2c73b
+  BP-1040.40:
+    name: "Positionnement du stock"
+    description: "Définir les cibles de stock et le positionnement — par SKU, emplacement, canal — pour équilibrer service et besoin en fonds de roulement."
+    source_hash: sha256-a197c07d1dcb9836
+  BP-1040.40.10:
+    name: "Définir les cibles de stock"
+    description: "Définir le stock de sécurité, le stock cyclique et le stock cible par SKU/emplacement sur la base des cibles de niveau de service et de la variabilité de demande."
+    source_hash: sha256-4d5a524a99dc1254
+  BP-1040.40.20:
+    name: "Positionner le stock dans le réseau"
+    description: "Placer le stock à travers les DC, hubs et forward stocking locations pour correspondre à la géométrie du réseau de demande."
+    source_hash: sha256-a6078f6970638338
+  BP-1040.40.30:
+    name: "Gérer le mix et l'allocation de stock"
+    description: "Allouer le stock contraint à travers les clients, canaux et variantes produit selon les règles d'allocation."
+    source_hash: sha256-a3ca09e90dc76a66
+  BP-1040.50:
+    name: "Exécution du réapprovisionnement"
+    description: "Exécuter les ordres de réapprovisionnement pour maintenir le stock aux niveaux cibles à travers le réseau."
+    source_hash: sha256-bd30b078b62f8103
+  BP-1040.50.10:
+    name: "Générer les ordres de réapprovisionnement"
+    description: "Générer les ordres de réapprovisionnement face aux cibles de stock — bons de commande, transferts ou ordres de production."
+    source_hash: sha256-c19d5a48aef8101e
+  BP-1040.50.20:
+    name: "Accélérer les réapprovisionnements critiques"
+    description: "Accélérer les réapprovisionnements pour risque de rupture ou engagements clients VIP ; coordonner avec l'approvisionnement et la logistique."
+    source_hash: sha256-67cf3347e5220114
+  BP-1040.50.30:
+    name: "Confirmer la réception du réapprovisionnement"
+    description: "Confirmer la réception du réapprovisionnement à l'emplacement de destination et mettre à jour les positions de stock."
+    source_hash: sha256-8574c3ad10ebd359
+  BP-1040.60:
+    name: "Monitoring de la santé du stock"
+    description: "Surveiller la santé du stock — rotation, vieillissement, slow-moving et obsolète — et agir pour maintenir qualité, valeur et besoin en fonds de roulement."
+    source_hash: sha256-a1195703dfa02d91
+  BP-1040.60.10:
+    name: "Surveiller les KPI de stock"
+    description: "Suivre la rotation des stocks, le days-on-hand, le vieillissement et les événements de rupture ; faire ressortir les anomalies à actionner."
+    source_hash: sha256-8835c035ce713dbe
+  BP-1040.60.20:
+    name: "Gérer le stock slow-moving et obsolète"
+    description: "Identifier le stock slow-moving et obsolète ; décider les actions de markdown, transfert, retour fournisseur ou write-off."
+    source_hash: sha256-f2594c163d2a4ba7
+  BP-1040.60.30:
+    name: "Conduire les inventaires tournants et audits"
+    description: "Exécuter les inventaires tournants et les inventaires physiques ; réconcilier les comptages avec les enregistrements système et passer les ajustements."
+    source_hash: sha256-907c97f895f23f64

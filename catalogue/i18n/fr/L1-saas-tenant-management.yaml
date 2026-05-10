@@ -5,103 +5,129 @@ entries:
     name: Gestion des tenants SaaS
     description: |
       Provisionnement, configuration, isolation, placement régional, fédération d'identité et export de données par tenant dans le service multi-tenant.
+    source_hash: sha256-548cd618eea450ad
   BC-4230.10:
     name: Provisionnement et cycle de vie des tenants
     description: |
       Création, suspension, désactivation et migration des tenants dans le parc multi-tenant.
+    source_hash: sha256-5fc04b036c87d274
   BC-4230.10.10:
     name: Provisionnement des tenants
     description: |
       Création de nouveaux tenants et allocation des ressources associées.
+    source_hash: sha256-0067ad6b2e926dc4
   BC-4230.10.20:
     name: Suspension des tenants
     description: |
       Suspension des tenants pour non-paiement, abus ou motifs contractuels.
+    source_hash: sha256-7586e6f75b85c7cf
   BC-4230.10.30:
     name: Désactivation des tenants
     description: |
       Désactivation des tenants incluant la suppression ou la restitution des données selon le contrat.
+    source_hash: sha256-197d6253cf21bbac
   BC-4230.10.40:
     name: Migration des tenants
     description: |
       Migration des tenants entre clusters, shards ou régions.
+    source_hash: sha256-b1df0165dd05c91d
   BC-4230.20:
     name: Gestion de la configuration des tenants
     description: |
       Configuration des fonctionnalités, de la personnalisation et des limites par tenant appliquée au-dessus du socle produit partagé.
+    source_hash: sha256-5224b2aa796e5151
   BC-4230.20.10:
     name: Configuration des fonctionnalités par tenant
     description: |
       Configuration des options de fonctionnalités au niveau du tenant.
+    source_hash: sha256-674b00adf7e3bd98
   BC-4230.20.20:
     name: Gestion de la personnalisation de la marque du tenant
     description: |
       Personnalisation de la marque du tenant, telle que les logos, les couleurs et les domaines personnalisés.
+    source_hash: sha256-840cac69204592ea
   BC-4230.20.30:
     name: Gestion des limites du tenant
     description: |
       Configuration des limites au niveau du tenant telles que les quotas et les plafonds de débit.
+    source_hash: sha256-bb5406a6bd7529e9
   BC-4230.30:
     name: Gestion de l'isolation des tenants
     description: |
       Mécanismes maintenant l'isolation logique et physique entre les tenants sur les chemins de données, de calcul et d'accès.
+    source_hash: sha256-7758f039325a4bdd
   BC-4230.30.10:
     name: Isolation des données des tenants
     description: |
       Isolation des données des tenants par partitionnement, chiffrement et restriction d'accès.
+    source_hash: sha256-bec6bd09c0854186
   BC-4230.30.20:
     name: Isolation des ressources de calcul des tenants
     description: |
       Isolation des charges de travail des tenants via des frontières de calcul dédiées ou contraintes.
+    source_hash: sha256-c3cf00b6f1e2cc8a
   BC-4230.30.30:
     name: Prévention des accès entre tenants
     description: |
       Contrôles et surveillance empêchant les fuites de données et d'identité entre tenants.
+    source_hash: sha256-8db9266955461bea
   BC-4230.40:
     name: Gestion de la résidence des données et du placement régional
     description: |
       Affectation des tenants aux régions, application des engagements de résidence des données et gestion de la politique de réplication inter-régions.
+    source_hash: sha256-08ef71f465da69a4
   BC-4230.40.10:
     name: Affectation régionale des tenants
     description: |
       Affectation des tenants aux régions dans le respect du contrat et de la réglementation.
+    source_hash: sha256-b0d7b07efe702c43
   BC-4230.40.20:
     name: Application de la résidence des données
     description: |
       Application des frontières de résidence des données à l'exécution.
+    source_hash: sha256-549ef0cda6cbf3b1
   BC-4230.40.30:
     name: Politique de réplication inter-régions
     description: |
       Politique régissant la réplication inter-régions pour la résilience et l'accès.
+    source_hash: sha256-888a8a9de6482208
   BC-4230.50:
     name: Fédération d'identité des tenants
     description: |
       Fédération des fournisseurs d'identité des tenants et cycle de vie des comptes utilisateurs via le SSO et le SCIM.
+    source_hash: sha256-c574b6105a69091c
   BC-4230.50.10:
     name: Configuration du SSO des tenants
     description: |
       Configuration du SSO entre les fournisseurs d'identité des tenants et le service.
+    source_hash: sha256-88d0999fbbc14997
   BC-4230.50.20:
     name: Provisionnement des utilisateurs par SCIM
     description: |
       Cycle de vie des comptes utilisateurs des tenants piloté par SCIM ou protocoles de provisionnement équivalents.
+    source_hash: sha256-4508d82bdd9fb018
   BC-4230.50.30:
     name: Intégration des fournisseurs d'identité des tenants
     description: |
       Intégration et validation des fournisseurs d'identité des tenants.
+    source_hash: sha256-a34bfa71419760ad
   BC-4230.60:
     name: Gestion des sauvegardes et exports des tenants
     description: |
       Capacités d'export, de suppression et de restauration des données par tenant exposées aux tenants et aux administrateurs.
+    source_hash: sha256-8107e2a437f66f16
   BC-4230.60.10:
     name: Export des données des tenants
     description: |
       Export des données des tenants dans un format lisible par machine sur demande ou contractuellement.
+    source_hash: sha256-48d9be2f00f6edb9
   BC-4230.60.20:
     name: Suppression des données des tenants
     description: |
       Suppression vérifiable des données des tenants à l'annulation ou sur demande.
+    source_hash: sha256-501fdac8005bad56
   BC-4230.60.30:
     name: Restauration des sauvegardes des tenants
     description: |
       Restauration des données des tenants à partir des sauvegardes sur demande du tenant ou de l'opérateur.
+    source_hash: sha256-cdc9587f0a143a88

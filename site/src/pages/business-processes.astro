@@ -9,7 +9,7 @@ const totalProcesses = version.process_count ?? bpFlat.length;
 
 <Base
   title="Business Processes"
-  description="Browse, filter, and export the open business-process catalog. Verb-phrased activities anchored on APQC PCF's 4-level hierarchy."
+  description="Browse, filter, and export the open business-process catalog. Cross-Industry processes generated from value streams and capabilities; industry-specific processes anchored on BIAN, eTOM, ITIL, SCOR, ACORD, ICMM and others."
   navTransparent={true}
 >
   <HeroTessellation
@@ -23,8 +23,9 @@ const totalProcesses = version.process_count ?? bpFlat.length;
       <div class="bp-empty">
         <p>
           The business-process catalogue is currently scaffolded but empty —
-          schema, lint, build pipeline, and CLI are all in place. APQC PCF
-          Cross-Industry import lands in a follow-up PR.
+          schema, lint, build pipeline, and CLI are all in place. Run
+          <code>/generate-process</code> to synthesise a BP1 from a value
+          stream and the capabilities its stages exercise.
         </p>
         <p>
           Add a BP1 file at <code>catalogue/processes/BP1-&lt;slug&gt;.yaml</code>,

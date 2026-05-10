@@ -5,38 +5,47 @@ entries:
     name: 自动驾驶运营管理
     description: |
       自动驾驶车队的运营管理——运行设计域治理、场景库、ADS安全用例、仿真与实路验证、远程协助，以及与监管机构就许可证和事件报告开展协作，依据ISO 21448、SAE J3016及UN R157开展。
+    source_hash: sha256-98333bd596d29656
   BC-3470.10:
     name: 运行设计域治理
     description: |
       定义、符合性监控及每项自动驾驶功能运行设计域的生命周期管理。
+    source_hash: sha256-0507d40ad7712d59
   BC-3470.10.10:
     name: ODD定义管理
     description: |
       定义运行设计域，包括地理、环境及行为边界。
+    source_hash: sha256-a9e5bbb2f0d7c952
   BC-3470.10.20:
     name: ODD符合性监控
     description: |
       监控在用ODD符合性，检测超出定义域的运行情况。
+    source_hash: sha256-2b5bc9b4fd32d578
   BC-3470.10.30:
     name: ODD边界更新管理
     description: |
       管理生命周期内的ODD扩展与收窄，包括审批与部署。
+    source_hash: sha256-eeacd3ee5627eeff
   BC-3470.20:
     name: 驾驶场景与测试目录管理
     description: |
       管理用于自动驾驶系统设计、仿真和验证的驾驶场景库和测试目录。
+    source_hash: sha256-e7016f0f2b5dc6ea
   BC-3470.20.10:
     name: 场景库管理
     description: |
       管理用于ADS设计与验证的结构化场景库。
+    source_hash: sha256-5d52e7144a6fe05f
   BC-3470.20.20:
     name: 边界场景采集与分类
     description: |
       采集、分类并优先处理仿真、测试车队及在用服务中观察到的边界场景。
+    source_hash: sha256-bebe6f6f79c999c0
   BC-3470.20.30:
     name: 场景覆盖率报告
     description: |
       报告场景覆盖率及相对ODD要求的剩余缺口。
+    source_hash: sha256-4c61520fe16e0af6
   BC-3470.30:
     name: 自动驾驶车队运营
     description: |
@@ -48,82 +57,102 @@ entries:
     out_of_scope:
       - 共享出行服务的乘客预约与定价（BC-3490）
       - 整车工程与软件开发（BC-3400）
+    source_hash: sha256-4668e4103502c06f
   BC-3470.30.10:
     name: 自动驾驶车辆调度运营
     description: |
       为测试、试点及商业任务调度和规划自动驾驶车辆路径。
+    source_hash: sha256-9f6850689b04d2ab
   BC-3470.30.20:
     name: 自动驾驶车队健康监控
     description: |
       实时监控自动驾驶车队健康状况，包括传感器标定和软件状态。
+    source_hash: sha256-48e91324712df133
   BC-3470.30.30:
     name: 自动驾驶车辆充电与清洁协调
     description: |
       协调自动驾驶车队在基地的充电、清洁及周转活动。
+    source_hash: sha256-58392561110b031a
   BC-3470.40:
     name: 远程运营与远程协助
     description: |
       运营远程协助中心，为自动驾驶车队提供远程支持和授权干预。
+    source_hash: sha256-604b1b73e36070ca
   BC-3470.40.10:
     name: 远程协助中心运营
     description: |
       运营远程协助中心，包括班次管理和升级路径。
+    source_hash: sha256-01a053697ba0efc3
   BC-3470.40.20:
     name: 远程干预决策管理
     description: |
       制定从建议到直接车辆控制的远程干预决策框架与授权机制。
+    source_hash: sha256-39e63c2de1c898c0
   BC-3470.40.30:
     name: 远程操作员人力管理
     description: |
       开展远程操作员的招聘、培训、认证和绩效管理。
+    source_hash: sha256-a6d6323b3d48e633
   BC-3470.50:
     name: 安全用例与保障管理
     description: |
       维护运营ADS安全用例及监控其持续有效性的指标。
+    source_hash: sha256-4786e07d82a6cc4b
   BC-3470.50.10:
     name: 安全用例编写
     description: |
       编写结构化ADS安全用例，包括主张、论证及证据。
+    source_hash: sha256-caabfa0101ec0b8d
   BC-3470.50.20:
     name: 安全论证维护
     description: |
       随系统、ODD及运营情境的演进维护安全论证。
+    source_hash: sha256-3e247c7a384c1438
   BC-3470.50.30:
     name: 安全绩效指标跟踪
     description: |
       定义并跟踪已部署车队的先行与滞后安全绩效指标。
+    source_hash: sha256-9fbf61c289bb7234
   BC-3470.60:
     name: 自动驾驶验证运营
     description: |
       运营验证活动——仿真、封闭测试场及公共道路，为安全用例提供证据。
+    source_hash: sha256-d533f18cb19c8ee0
   BC-3470.60.10:
     name: 基于仿真的验证运营
     description: |
       运营大规模仿真农场和场景回归测试，支持ADS验证。
+    source_hash: sha256-b310b26f5b6380c4
   BC-3470.60.20:
     name: 封闭测试场验证运营
     description: |
       运营封闭测试场测试项目和试验场活动，支持ADS验证。
+    source_hash: sha256-53a8fbedfb70939b
   BC-3470.60.30:
     name: 公共道路试验运营
     description: |
       运营有监督的公共道路试验，包括安全驾驶员纪律管理和事件处理。
+    source_hash: sha256-d3a63c52e2afe2f2
   BC-3470.70:
     name: ADS监管协作
     description: |
       与监管机构和公众就自动驾驶授权、事件报告及信任建立开展协作。
+    source_hash: sha256-2ead5b056ff7c890
   BC-3470.70.10:
     name: ADS许可与授权管理
     description: |
       管理各司法管辖区ADS部署的许可证、豁免及授权。
+    source_hash: sha256-e0643e58033ce071
   BC-3470.70.20:
     name: 向监管机构事件报告
     description: |
       向监管机构报告ADS事件和脱离事件，并协调调查工作。
+    source_hash: sha256-5e12e9797e913abb
   BC-3470.70.30:
     name: 公众与利益相关方沟通
     description: |
       就ADS部署、安全及效益与城市、社区及利益相关方开展沟通。
+    source_hash: sha256-25122911e87d1858
 metadata:
   translator: Claude (zh automated)
   generated: 2026-04-29

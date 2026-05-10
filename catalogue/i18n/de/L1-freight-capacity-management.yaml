@@ -6,6 +6,7 @@ entries:
     description: |
       Verkauf, Zuweisung und Yield Management von Transportkapazitäten über Schiffsfahrten,
       Flüge, LKW- und Eisenbahnstrecken sowie Ausrüstungspools.
+    source_hash: sha256-f6d0e842dd9bdfa3
   BC-2400.10:
     name: Kapazitätsinventar-Management
     description: |
@@ -18,92 +19,114 @@ entries:
     out_of_scope:
       - Langfristiges Netzwerk- und Fahrplandesign (BC-2410)
       - Buchungs- und Reservierungsannahme (BC-2400.40)
+    source_hash: sha256-5a447c1b6dfb992d
   BC-2400.10.10:
     name: Schiff- und Beförderungsmittel-Kapazitätsinventar
     description: |
       Erfassung von Nutzlast-, Deck- und Kabinenkapazität je Schiff, Flugzeug, Zug oder Fahrzeug.
+    source_hash: sha256-57b917da29f4cb44
   BC-2400.10.20:
     name: Ausrüstungskapazitäts-Inventar
     description: |
       Inventar verfügbarer Container, Trailer, Chassis und ULDs nach Standort und Zustand.
+    source_hash: sha256-b34a3f197b16c0b8
   BC-2400.10.30:
     name: Strecken- und Fahrplankapazität
     description: |
       Kapazität je geplantem Service auf einer Strecke einschließlich Anschlussstrecken.
+    source_hash: sha256-d9d015dbd9bec4bc
   BC-2400.10.40:
     name: Kapazitätspooling und Slot-Tausch
     description: |
       Gebündelte Kapazitäten über Allianzen und Slot-Tausch-Vereinbarungen mit Partnerreedereien.
+    source_hash: sha256-d0711890b0185068
   BC-2400.20:
     name: Kapazitätszuweisungs-Management
     description: |
       Zuweisung verfügbarer Kapazitäten auf Kundenverträge, Marktsegmente und Spot-Nachfrage.
+    source_hash: sha256-2b52260d5c374bec
   BC-2400.20.10:
     name: Vertragskapazitäts-Zuweisung
     description: |
       Zuweisung von Kapazitäten an Kunden mit Mindestmengen-Verpflichtungen und Namenkonten.
+    source_hash: sha256-ce8e128004e94739
   BC-2400.20.20:
     name: Spotmarkt-Kapazitätszuweisung
     description: |
       Zuweisung von Kapazitäten, die für Spotmarkt-Buchungskanäle freigegeben werden.
+    source_hash: sha256-9da7c6f77ca47cae
   BC-2400.20.30:
     name: Kapazitäts-Umzuweisung und Rückgewinnung
     description: |
       Neuzuweisung ungenutzter oder zurückgewonnener Kapazitäten vor Annahmeschluss.
+    source_hash: sha256-74b6a1febe858858
   BC-2400.30:
     name: Yield- und Revenue-Management
     description: |
       Optimierung des Umsatzes je Kapazitätseinheit durch Preis-, Mix- und Overbooking-Entscheidungen.
+    source_hash: sha256-69a01f93e0a8610c
   BC-2400.30.10:
     name: Kapazitätsnachfrage-Prognose
     description: |
       Prognose von Buchungen, No-Shows und Entladerisiken je Service.
+    source_hash: sha256-c43e6c5ae23c942f
   BC-2400.30.20:
     name: Yield-Optimierung
     description: |
       Optimierung des Tarif- und Ratenklassen-Mix zur Maximierung des Yields je Tonne, Slot oder TEU.
+    source_hash: sha256-39e970d94d2113af
   BC-2400.30.30:
     name: Overbooking-Management
     description: |
       Festlegung und Überwachung von Overbooking-Grenzen und Entladerisiken.
+    source_hash: sha256-395aaf268f368aed
   BC-2400.30.40:
     name: Umsatzmix-Management
     description: |
       Steuerung des Umsatzmix zwischen Vertrags-, Spot- und Nebenerlösen.
+    source_hash: sha256-26d4e361cd7afaca
   BC-2400.40:
     name: Buchungs- und Reservierungsmanagement
     description: |
       Annahme, Änderung und Stornierung von Kapazitätsbuchungen gegenüber
       veröffentlichten Fahrplänen und Angeboten.
+    source_hash: sha256-0fb9962ba66c640b
   BC-2400.40.10:
     name: Kapazitätsbuchung
     description: |
       Buchungsannahme gegen verfügbare Kapazitäten und Ratengültigkeit.
+    source_hash: sha256-5959b32c4e93420c
   BC-2400.40.20:
     name: Buchungsänderung und -stornierung
     description: |
       Buchungsänderungen, Umladungen und Stornierungen einschließlich No-Show-Gebühren.
+    source_hash: sha256-869dea4c05ddf1e2
   BC-2400.40.30:
     name: Stand-by- und Wartelisten-Management
     description: |
       Verwaltung von Stand-by- und wartelistierten Frachten für bestätigte Kapazitäten.
+    source_hash: sha256-0aea40ddc55de2c7
   BC-2400.50:
     name: Kapazitätsleistungs-Management
     description: |
       Überwachung von Auslastungsgrad, Füllgrad und Nutzung zur Steuerung von
       Kapazitätsmix-Entscheidungen und Netzwerkanpassungen.
+    source_hash: sha256-e4691e3d8de222a6
   BC-2400.50.10:
     name: Auslastungsgrad-Analyse
     description: |
       Analyse des Auslastungsgrads nach Service, Strecke und Segment.
+    source_hash: sha256-29fd203688aee215
   BC-2400.50.20:
     name: Kapazitätsauslastungs-Berichterstattung
     description: |
       Berichterstattung über Kapazitätsauslastung an Vertriebs- und Betriebsteams.
+    source_hash: sha256-3fe2f94f9716877d
   BC-2400.50.30:
     name: Kapazitätsleistungsverbesserung
     description: |
       Maßnahmen zur Verbesserung des Umsatzes je Slot und Reduzierung von Leerfahrten.
+    source_hash: sha256-8efed1fbdd6e7f95
 metadata:
   translator: claude-ai
   date: "2026-04-29"

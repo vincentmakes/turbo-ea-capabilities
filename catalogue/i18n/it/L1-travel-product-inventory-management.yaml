@@ -18,179 +18,215 @@ entries:
       - Configurazione della distribuzione per canale (BC-4010)
       - Ciclo di vita delle prenotazioni (BC-4020)
       - Strategia di prezzo e decisioni di yield (BC-4030)
+    source_hash: sha256-00990a957cdde16a
   BC-4000.10:
     name: Gestione del prodotto ricettivo
     description: |
       Definizione dei prodotti di alloggio, inclusi tipi di camera, piani tariffari,
       codici pacchetto e tassonomia ricettiva utilizzata in tutta l'impresa.
+    source_hash: sha256-bd4119a5323f8359
   BC-4000.10.10:
     name: Definizione del tipo di camera e della classe di inventario
     description: |
       Definizione dei tipi di camera, delle categorie suite e delle classi di inventario
       che costituiscono la struttura portante del prodotto ricettivo.
+    source_hash: sha256-b0e45ede49cdd660
   BC-4000.10.20:
     name: Definizione del piano tariffario e del codice tariffa
     description: |
       Definizione dei piani tariffari, dei codici tariffa e degli attributi del piano tariffario
       relativi a rimborsabilità, prepagamento e regole di inclusione.
+    source_hash: sha256-47c6e4eed9e42023
   BC-4000.10.30:
     name: Stato del ciclo di vita del prodotto ricettivo
     description: |
       Gestione dello stato del ciclo di vita dei prodotti ricettivi, dalla fase proposta
       a quella attiva, sospesa e ritirata.
+    source_hash: sha256-29bed2a3cba2b9db
   BC-4000.10.40:
     name: Composizione del pacchetto ricettivo
     description: |
       Costruzione di pacchetti ricettivi che combinano l'alloggio con la colazione,
       il parcheggio e altre inclusioni.
+    source_hash: sha256-24da750212d115d9
   BC-4000.20:
     name: Gestione del prodotto aereo
     description: |
       Definizione delle famiglie di tariffe aeree, degli attributi delle tariffe branded,
       delle regole tariffarie e delle mappature dei prodotti in codeshare e interline.
+    source_hash: sha256-a4061f937a2ccb00
   BC-4000.20.10:
     name: Definizione della famiglia di tariffe
     description: |
       Definizione delle famiglie di tariffe, delle classi di cabina e dei bucket tariffari
       utilizzati per la ricerca e il controllo dell'inventario.
+    source_hash: sha256-ad2157788caae096
   BC-4000.20.20:
     name: Gestione degli attributi delle tariffe branded
     description: |
       Gestione degli attributi delle tariffe branded, come la franchigia bagaglio,
       la scelta del posto e l'accesso alla lounge.
+    source_hash: sha256-ab9e20d36119aa8c
   BC-4000.20.30:
     name: Redazione delle regole tariffarie
     description: |
       Redazione delle regole tariffarie relative all'acquisto anticipato, al soggiorno minimo,
       alla combinabilità e alle penali di modifica.
+    source_hash: sha256-9e4bdbe6e1f02227
   BC-4000.20.40:
     name: Mappatura del prodotto in codeshare e interline
     description: |
       Mappatura dei prodotti dei vettori partner sulle proprie famiglie di tariffe
       per la distribuzione in codeshare e interline.
+    source_hash: sha256-b74f1e50cd2182fe
   BC-4000.30:
     name: Gestione del prodotto tour e pacchetto
     description: |
       Definizione degli itinerari in pacchetto, dei prodotti di viaggio multi-tratta
       e delle mappature dei componenti per il pacchetto dinamico.
+    source_hash: sha256-cbb30cbaa5bd2f0f
   BC-4000.30.10:
     name: Definizione del pacchetto statico
     description: |
       Definizione di pacchetti fissi che combinano componenti predefiniti
       in un unico prodotto vendibile.
+    source_hash: sha256-5fde7d975c45cc2c
   BC-4000.30.20:
     name: Mappatura dei componenti per il pacchetto dinamico
     description: |
       Mappatura dei componenti per il pacchetto dinamico, in cui il viaggiatore
       assembla volo, hotel e ancillari al momento della ricerca.
+    source_hash: sha256-db232b0ca6f1b2cf
   BC-4000.30.30:
     name: Versionamento del prodotto pacchetto
     description: |
       Versionamento dei prodotti pacchetto attraverso stagioni, cicli di brochure
       e rilasci di nuove funzionalità.
+    source_hash: sha256-a62003834315a324
   BC-4000.30.40:
     name: Calendario delle partenze del pacchetto
     description: |
       Definizione dei calendari di partenza dei pacchetti, delle date di blackout
       e delle finestre stagionali.
+    source_hash: sha256-c0844856a955c0f1
   BC-4000.40:
     name: Gestione del prodotto ancillare e dei servizi aggiuntivi
     description: |
       Definizione dei prodotti ancillari e dei servizi aggiuntivi, come pasti, bagaglio,
       transfer, attrazioni, spa e servizi a terra.
+    source_hash: sha256-49be7485a50b8eda
   BC-4000.40.10:
     name: Definizione del catalogo ancillari
     description: |
       Definizione del catalogo ancillari, comprese le categorie, le varianti
       e le condizioni di applicabilità.
+    source_hash: sha256-77f81f8230b0bc34
   BC-4000.40.20:
     name: Regole di composizione degli ancillari in bundle
     description: |
       Regole per la composizione in bundle degli ancillari con i prodotti di viaggio
       principali e con altri ancillari.
+    source_hash: sha256-f15be00d4e14c69f
   BC-4000.40.30:
     name: Regole di idoneità al cross-sell
     description: |
       Regole di idoneità che determinano quali ancillari possono essere oggetto di
       cross-sell con quali prodotti principali e in quali canali.
+    source_hash: sha256-6516a2c4678d1f14
   BC-4000.40.40:
     name: Gestione del ciclo di vita degli ancillari
     description: |
       Gestione del ciclo di vita degli ancillari dal lancio al ritiro,
       comprese le offerte a tempo limitato.
+    source_hash: sha256-710dab896aca0be6
   BC-4000.50:
     name: Allocazione dell'inventario di viaggio
     description: |
       Definizione e controllo dei pool di inventario, dei blocchi, degli allotment
       e delle regole di riserva per i prodotti di viaggio.
+    source_hash: sha256-9ada49eb3fa15be0
   BC-4000.50.10:
     name: Definizione del pool di inventario
     description: |
       Definizione dei pool di inventario a livello di struttura, flotta o prodotto,
       utilizzati come base per l'allocazione.
+    source_hash: sha256-b75ba26cccaf107a
   BC-4000.50.20:
     name: Allocazione di allotment e blocchi
     description: |
       Allocazione di allotment e blocchi a canali, partner e tour operator.
+    source_hash: sha256-20d938f62cddaa9d
   BC-4000.50.30:
     name: Regole di riserva e protezione della classe
     description: |
       Regole per proteggere l'inventario per segmenti specifici, canali
       o membri del programma fedeltà.
+    source_hash: sha256-7ef82f02d94ddbeb
   BC-4000.50.40:
     name: Configurazione del buffer di overbooking
     description: |
       Configurazione dei buffer di overbooking che riflettono i tassi attesi
       di no-show e cancellazione.
+    source_hash: sha256-3aed091ddbfce563
   BC-4000.60:
     name: Governance dei dati master del prodotto di viaggio
     description: |
       Amministrazione della tassonomia del prodotto, delle classificazioni, degli standard
       degli attributi e dell'integrità degli identificatori nel master del prodotto di viaggio.
+    source_hash: sha256-ddb877425140e221
   BC-4000.60.10:
     name: Standard degli attributi del prodotto
     description: |
       Standard per gli attributi del prodotto che garantiscono una semantica coerente
       tra sistemi e canali.
+    source_hash: sha256-852c2cd609fa68d5
   BC-4000.60.20:
     name: Classificazione e tagging del prodotto
     description: |
       Classificazione e tagging dei prodotti rispetto alle tassonomie utilizzate
       per la ricerca, il merchandising e il reporting.
+    source_hash: sha256-a9b9882b9174c68f
   BC-4000.60.30:
     name: Stato del ciclo di vita del master prodotto
     description: |
       Stato del ciclo di vita del master per i prodotti, esteso ai sotto-tipi di prodotto
       e allineato alle variazioni di stato dei figli.
+    source_hash: sha256-9d8544c1225c4207
   BC-4000.60.40:
     name: Amministrazione degli identificatori di prodotto
     description: |
       Amministrazione degli identificatori canonici del prodotto e risoluzione
       di collisioni e duplicati degli identificatori.
+    source_hash: sha256-2a559bad1ff0afea
   BC-4000.70:
     name: Gestione dei contenuti e delle immagini del prodotto di viaggio
     description: |
       Redazione e gestione dei contenuti descrittivi, delle immagini, degli asset multimediali
       e dei record di rating e certificazione che descrivono i prodotti di viaggio.
+    source_hash: sha256-c78022c006440776
   BC-4000.70.10:
     name: Redazione dei contenuti descrittivi
     description: |
       Redazione di contenuti descrittivi in formato lungo e breve
       per i prodotti di viaggio.
+    source_hash: sha256-ebd02c84127b901e
   BC-4000.70.20:
     name: Gestione delle immagini e degli asset multimediali
     description: |
       Gestione di asset fotografici, video e multimediali a 360 gradi
       associati ai prodotti di viaggio.
+    source_hash: sha256-79167f939e8c7d47
   BC-4000.70.30:
     name: Record di classificazione a stelle e certificazione
     description: |
       Manutenzione delle classificazioni a stelle, delle certificazioni di terze parti
       e dei marchi di qualità associati ai prodotti di viaggio.
+    source_hash: sha256-dce458cc06061200
   BC-4000.70.40:
     name: Localizzazione dei contenuti
     description: |
       Localizzazione dei contenuti del prodotto nei mercati e nelle lingue supportati.
+    source_hash: sha256-ecc8fde93321435b
 metadata:
   status: draft
   reviewer: pending

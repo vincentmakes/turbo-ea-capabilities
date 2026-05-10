@@ -20,56 +20,67 @@ entries:
       - Gestione dei canali e della parità (BC-4010)
       - Motori di prezzo e decisioni di yield (BC-4030)
       - Decisioni operative di disruption su aeromobili e equipaggi (BC-4080.60)
+    source_hash: sha256-a5d4bad03941c15f
   BC-4020.10:
     name: Acquisizione della prenotazione
     description: |
       Acquisizione di prenotazioni per itinerari semplici e complessi
       da qualsiasi canale o agente di origine.
+    source_hash: sha256-763ebd1245e5292f
   BC-4020.10.10:
     name: Acquisizione della prenotazione per itinerario singolo
     description: |
       Acquisizione di prenotazioni per itinerario singolo, come un soggiorno
       in una struttura o un volo singolo.
+    source_hash: sha256-fd30d1d4b408a4bd
   BC-4020.10.20:
     name: Acquisizione della prenotazione multi-passeggero
     description: |
       Acquisizione di prenotazioni multi-passeggero o multi-ospite che condividono
       segmenti comuni dell'itinerario.
+    source_hash: sha256-bcf691c53d2ec185
   BC-4020.10.30:
     name: Acquisizione della prenotazione multi-componente
     description: |
       Acquisizione di prenotazioni multi-componente che combinano voli,
       hotel, ancillari e servizi a terra.
+    source_hash: sha256-4a511884e3096fb1
   BC-4020.10.40:
     name: Acquisizione della prenotazione tramite agente di viaggio
     description: |
       Acquisizione delle prenotazioni effettuate da agenti di viaggio retail
       e corporate per conto dei viaggiatori.
+    source_hash: sha256-0c121a48d256a4bf
   BC-4020.20:
     name: Modifica e cancellazione della prenotazione
     description: |
       Modifica volontaria e cancellazione delle prenotazioni, incluse
       le penali di modifica, l'idoneità al rimborso e le operazioni di re-emissione.
+    source_hash: sha256-4a6c32212f8e9f30
   BC-4020.20.10:
     name: Gestione delle modifiche alla prenotazione
     description: |
       Gestione delle modifiche volontarie alla prenotazione relative a date,
       prodotti e dati del viaggiatore.
+    source_hash: sha256-47b407d449f2e91e
   BC-4020.20.20:
     name: Gestione della cancellazione della prenotazione
     description: |
       Gestione delle cancellazioni volontarie e del rilascio dell'inventario
       nel pool.
+    source_hash: sha256-415edc4b348ac9f9
   BC-4020.20.30:
     name: Determinazione dell'idoneità al rimborso e calcolo del rimborso
     description: |
       Determinazione dell'idoneità al rimborso e calcolo degli importi rimborsabili,
       incluse le penali.
+    source_hash: sha256-a59db2534d9a06e9
   BC-4020.20.40:
     name: Operazioni di re-emissione volontaria
     description: |
       Operazioni di re-emissione volontaria, incluse la riscossione della differenza
       tariffaria e la re-emissione del documento.
+    source_hash: sha256-c260cd8a07d917a8
   BC-4020.30:
     name: Gestione del blocco di gruppo
     description: |
@@ -81,100 +92,120 @@ entries:
     out_of_scope:
       - Contrattazione delle vendite di gruppo (BC-4110.10)
       - Esecuzione del banquet event order (BC-4110.30)
+    source_hash: sha256-51e43e7624c15723
   BC-4020.30.10:
     name: Creazione del blocco di gruppo
     description: |
       Creazione di blocchi di gruppo che riflettono l'inventario contrattualizzato
       e gli impegni tariffari.
+    source_hash: sha256-7ee2f1a0b32b623c
   BC-4020.30.20:
     name: Gestione della lista camere
     description: |
       Gestione delle liste camere che associano i singoli viaggiatori
       all'inventario del blocco.
+    source_hash: sha256-2880b119d4f7c3e4
   BC-4020.30.30:
     name: Gestione del cut-off di gruppo
     description: |
       Gestione delle date di cut-off di gruppo e del rilascio dell'inventario
       del blocco non utilizzato in vendita libera.
+    source_hash: sha256-36faea08c23c53f3
   BC-4020.30.40:
     name: Tracciamento del pickup di gruppo
     description: |
       Tracciamento del pickup di gruppo rispetto al contratto per il riconoscimento
       dei ricavi e le previsioni.
+    source_hash: sha256-d01013f9ba768c9c
   BC-4020.40:
     name: Conferma e documentazione della prenotazione
     description: |
       Emissione di conferme di prenotazione, voucher, biglietti elettronici
       e documenti di itinerario per viaggiatori e agenti.
+    source_hash: sha256-f1881085544c258f
   BC-4020.40.10:
     name: Generazione della conferma di prenotazione
     description: |
       Generazione e invio delle conferme di prenotazione
       attraverso i canali di notifica.
+    source_hash: sha256-4bca6fd4ce48fe18
   BC-4020.40.20:
     name: Emissione di voucher e documenti di servizio
     description: |
       Emissione di voucher e documenti di servizio per componenti
       di hotel, tour e attività.
+    source_hash: sha256-c775858ce4832bfc
   BC-4020.40.30:
     name: Emissione e re-emissione del biglietto elettronico
     description: |
       Emissione e re-emissione dei biglietti elettronici aerei,
       inclusi gli aggiornamenti dello stato del coupon.
+    source_hash: sha256-9716f77b8caa03cf
   BC-4020.40.40:
     name: Distribuzione dell'itinerario di prenotazione
     description: |
       Distribuzione dei documenti di itinerario a viaggiatori, agenti di viaggio
       e sistemi integrati di gestione dei viaggiatori.
+    source_hash: sha256-8a538c186a6746f7
   BC-4020.50:
     name: Gestione dei blocchi provvisori e della lista d'attesa
     description: |
       Gestione dei blocchi provvisori, delle liste d'attesa e delle conversioni
       quando la disponibilità è limitata o i termini richiedono un tempo di pagamento.
+    source_hash: sha256-35cb9115f6955fb7
   BC-4020.50.10:
     name: Gestione del blocco provvisorio
     description: |
       Gestione dei blocchi provvisori con finestre di tempo di pagamento controllate.
+    source_hash: sha256-e0df8d9e14c24816
   BC-4020.50.20:
     name: Acquisizione e prioritizzazione della lista d'attesa
     description: |
       Acquisizione delle richieste di lista d'attesa e definizione delle regole di priorità
       per quando l'inventario si rende disponibile.
+    source_hash: sha256-1573d59eeafa371c
   BC-4020.50.30:
     name: Operazioni di conversione della lista d'attesa
     description: |
       Operazioni per convertire le richieste di lista d'attesa in prenotazioni confermate
       al liberarsi dell'inventario.
+    source_hash: sha256-ed72475e229ec877
   BC-4020.50.40:
     name: Gestione della scadenza del blocco provvisorio
     description: |
       Gestione delle scadenze dei blocchi provvisori e rilascio automatico
       dell'inventario bloccato.
+    source_hash: sha256-00b70e2903d7d0b1
   BC-4020.60:
     name: Pagamento e regolamento della prenotazione
     description: |
       Pagamento a livello di prenotazione, caparra, acquisizione degli addebiti
       e regolamento con i partner, inclusi BSP e ARC.
+    source_hash: sha256-1745bd38cd74b1b4
   BC-4020.60.10:
     name: Caparra e pre-autorizzazione della prenotazione
     description: |
       Acquisizione delle caparre di prenotazione e delle pre-autorizzazioni
       della carta rispetto alle politiche di deposito e garanzia.
+    source_hash: sha256-79f4a8a794b9d4e0
   BC-4020.60.20:
     name: Acquisizione degli addebiti della prenotazione
     description: |
       Acquisizione degli addebiti rispetto agli strumenti di pagamento
       a livello di prenotazione nei momenti di eleggibilità.
+    source_hash: sha256-06937142c88d38ba
   BC-4020.60.30:
     name: Operazioni di regolamento BSP e ARC
     description: |
       Operazioni per il regolamento delle prenotazioni emesse dagli agenti
       tramite BSP, ARC e piani di regolamento equivalenti.
+    source_hash: sha256-05d065bdf975ca20
   BC-4020.60.40:
     name: Calcolo e pagamento delle commissioni
     description: |
       Calcolo e pagamento delle commissioni agli agenti di viaggio
       e ai partner di distribuzione.
+    source_hash: sha256-146b3630f0bd5437
   BC-4020.70:
     name: Gestione della disruption e del re-booking della prenotazione
     description: |
@@ -188,26 +219,31 @@ entries:
     out_of_scope:
       - Decisioni operative su aeromobili, equipaggi e dispacciamento (BC-4080.60)
       - Recupero dell'itinerario lato tour (BC-4100.60)
+    source_hash: sha256-c4c963db4ab44627
   BC-4020.70.10:
     name: Risistemazione per cambio orario
     description: |
       Risistemazione delle prenotazioni interessate da cambi di orario pubblicati,
       incluse le opzioni offerte ai viaggiatori.
+    source_hash: sha256-9ae93c3dda1e3aa0
   BC-4020.70.20:
     name: Risistemazione per disruption di massa
     description: |
       Risistemazione di un gran numero di prenotazioni durante eventi
       di maltempo, IROPS o forza maggiore.
+    source_hash: sha256-5ca1caa035805fea
   BC-4020.70.30:
     name: Determinazione dell'idoneità al risarcimento
     description: |
       Determinazione dell'idoneità al risarcimento secondo la politica del vettore
       e le norme applicabili sui diritti dei passeggeri.
+    source_hash: sha256-3c45983e7b06c841
   BC-4020.70.40:
     name: Comunicazioni di risistemazione
     description: |
       Comunicazioni in uscita verso i viaggiatori e gli agenti interessati
       durante gli eventi di risistemazione.
+    source_hash: sha256-8f899f2b7fc4c002
 metadata:
   status: draft
   reviewer: pending

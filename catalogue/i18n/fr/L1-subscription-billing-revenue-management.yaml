@@ -7,151 +7,183 @@ entries:
       Mesure de l'utilisation, tarification, facturation, relances, reconnaissance
       des revenus d'abonnement, gestion fiscale et analyse des revenus récurrents
       pour le modèle commercial SaaS.
+    source_hash: sha256-7146e52db7b63d13
   BC-4250.10:
     name: Mesure de l'utilisation
     description: |
       Ingestion et agrégation des événements d'utilisation alimentant la tarification
       et l'analytique en aval.
+    source_hash: sha256-3428352c1e3acf9f
   BC-4250.10.10:
     name: Ingestion des événements d'utilisation
     description: |
       Ingestion des événements d'utilisation depuis les services produit
       vers le pipeline de mesure.
+    source_hash: sha256-31d9023f3afbbdc5
   BC-4250.10.20:
     name: Agrégation de l'utilisation
     description: |
       Agrégation des événements d'utilisation en quantités facturables par
       locataire et par compteur.
+    source_hash: sha256-c6741d7d6db8676b
   BC-4250.10.30:
     name: Réconciliation des quantités mesurées
     description: |
       Réconciliation des quantités mesurées avec la source de référence et
       les compteurs visibles par le client.
+    source_hash: sha256-18ccac794b4b6321
   BC-4250.20:
     name: Tarification et calcul des charges
     description: |
       Application des tarifs d'abonnement, des tarifs d'utilisation, des
       prorations et des remises pour calculer les charges.
+    source_hash: sha256-223b9918dc596533
   BC-4250.20.10:
     name: Tarification des abonnements
     description: |
       Calcul des charges récurrentes d'abonnement par cycle de facturation.
+    source_hash: sha256-5be6f91a1e54c30e
   BC-4250.20.20:
     name: Tarification à l'utilisation
     description: |
       Calcul des charges d'utilisation à partir des quantités tarifées et
       des grilles tarifaires.
+    source_hash: sha256-44e1c2dd1ec39f54
   BC-4250.20.30:
     name: Calcul des prorations
     description: |
       Calcul des charges au prorata résultant des modifications en cours de cycle.
+    source_hash: sha256-e6c52ecf60828a64
   BC-4250.20.40:
     name: Application des remises
     description: |
       Application des remises négociées et des avoirs aux charges calculées.
+    source_hash: sha256-059bc39c662f4768
   BC-4250.30:
     name: Gestion de la facturation et des relevés
     description: |
       Génération, transmission et ajustement des factures, et traitement des
       litiges de facturation clients.
+    source_hash: sha256-68d610731fbaf835
   BC-4250.30.10:
     name: Génération des factures
     description: |
       Génération des factures à partir des charges tarifées et des conditions
       contractuelles.
+    source_hash: sha256-bd37e9c37782320d
   BC-4250.30.20:
     name: Transmission des factures
     description: |
       Transmission des factures aux clients via le portail, l'e-mail et
       les canaux partenaires.
+    source_hash: sha256-f4c8de48637b5073
   BC-4250.30.30:
     name: Ajustement des factures
     description: |
       Ajustement des factures pour les avoirs, les erreurs et les écarts
       contractuels.
+    source_hash: sha256-57cbf4f6c4031576
   BC-4250.30.40:
     name: Traitement des litiges de facturation clients
     description: |
       Qualification et résolution des litiges de facturation clients.
+    source_hash: sha256-b235dddbb3c79377
   BC-4250.40:
     name: Recouvrement des paiements et relances
     description: |
       Gestion des moyens de paiement, autorisation des paiements, relances
       et récupération des pertes d'abonnement involontaires.
+    source_hash: sha256-3a593098fa4d0f3a
   BC-4250.40.10:
     name: Gestion des moyens de paiement
     description: |
       Enregistrement et gestion des moyens de paiement et tokens des clients.
+    source_hash: sha256-75f6a6f9e63c09f6
   BC-4250.40.20:
     name: Autorisation des paiements
     description: |
       Autorisation et capture des paiements récurrents via les processeurs
       de paiement.
+    source_hash: sha256-303ac3953a30856b
   BC-4250.40.30:
     name: Workflow de relances
     description: |
       Séquences de relances automatisées pour les paiements échoués et
       les soldes en souffrance.
+    source_hash: sha256-078ffd276ac411bd
   BC-4250.40.40:
     name: Récupération des pertes d'abonnement involontaires
     description: |
       Récupération des abonnements perdus suite à des cartes expirées,
       refus définitifs et autres échecs de paiement similaires.
+    source_hash: sha256-0dc2544af9afb29b
   BC-4250.50:
     name: Reconnaissance des revenus d'abonnement
     description: |
       Identification des obligations de performance et gestion des plannings
       de reconnaissance des revenus conformément aux normes ASC 606 / IFRS 15.
+    source_hash: sha256-f1be5714e6a3d408
   BC-4250.50.10:
     name: Identification des obligations de performance
     description: |
       Identification des obligations de performance distinctes issues
       des contrats d'abonnement.
+    source_hash: sha256-bb225b7c1eb9598d
   BC-4250.50.20:
     name: Gestion des plannings de revenus
     description: |
       Génération et maintenance des plannings de reconnaissance des revenus
       sur toute la durée du contrat.
+    source_hash: sha256-32b05fb994519d03
   BC-4250.50.30:
     name: Réconciliation des revenus différés
     description: |
       Réconciliation des soldes de revenus différés avec les montants facturés
       et reconnus.
+    source_hash: sha256-0dc6fabc7746b44f
   BC-4250.60:
     name: Gestion fiscale des abonnements
     description: |
       Détermination des juridictions fiscales, calcul des taxes et gestion
       des exonérations sur les charges récurrentes et à l'utilisation.
+    source_hash: sha256-4c6fa0b367b14b63
   BC-4250.60.10:
     name: Détermination des juridictions fiscales
     description: |
       Détermination des juridictions fiscales applicables par client et
       par charge.
+    source_hash: sha256-3cda282c052adff2
   BC-4250.60.20:
     name: Calcul des taxes sur abonnements
     description: |
       Calcul de la taxe indirecte sur les charges d'abonnement et d'utilisation.
+    source_hash: sha256-0d3dc4c274ee4bc2
   BC-4250.60.30:
     name: Gestion des exonérations fiscales
     description: |
       Enregistrement et application des certificats d'exonération fiscale
       des clients.
+    source_hash: sha256-200e469dd41fac17
   BC-4250.70:
     name: Analytique des revenus d'abonnement
     description: |
       Calcul et analyse des indicateurs de santé des revenus récurrents,
       notamment ARR, MRR, NRR, GRR et les vues par cohorte.
+    source_hash: sha256-e8947c198bc36a47
   BC-4250.70.10:
     name: Calcul de l'ARR et du MRR
     description: |
       Calcul du revenu récurrent annuel et mensuel à partir de l'état
       des abonnements.
+    source_hash: sha256-1318961648ffee3e
   BC-4250.70.20:
     name: Analyse de la rétention nette et brute
     description: |
       Analyse de la rétention des revenus nette et brute par cohortes clients.
+    source_hash: sha256-6e59d2284c88e079
   BC-4250.70.30:
     name: Analyse des revenus par cohorte
     description: |
       Analyse par cohorte de l'évolution des revenus et des dynamiques
       de rétention.
+    source_hash: sha256-201b5b343fa07b42

@@ -1,0 +1,108 @@
+kind: business-process
+locale: es
+source: BP1-plan-to-inventory.yaml
+entries:
+  BP-1040:
+    name: "Plan-a-Inventario"
+    description: "Ciclo de planeación de demanda y suministro que posiciona el inventario en el lugar, tiempo y cantidad correctos. Seis BP2 reflejan stages de VS-400 desde planeación de demanda pasando por reconciliación S&OP, posicionamiento de inventario, replenishment hasta monitoreo continuo de salud del inventario."
+    source_hash: sha256-5f3fe8d72d009682
+  BP-1040.10:
+    name: "Planeación de demanda"
+    description: "Construir el pronóstico consensuado de demanda a partir de historia, señales de mercado, pipeline de ventas y planes de promoción."
+    source_hash: sha256-e5ff0b3a843d784c
+  BP-1040.10.10:
+    name: "Construir pronóstico estadístico"
+    description: "Ejecutar modelos de pronóstico estadístico sobre la historia de demanda al nivel de agregación elegido; rastrear error de pronóstico."
+    source_hash: sha256-a13b25758934520a
+  BP-1040.10.20:
+    name: "Incorporar inputs de ventas y marketing"
+    description: "Incorporar señal de pipeline de ventas, calendarios de promociones y planes de lanzamiento de producto para ajustar la baseline estadística."
+    source_hash: sha256-88973e710b73199f
+  BP-1040.10.30:
+    name: "Reconciliar pronóstico de demanda"
+    description: "Reconciliar pronósticos bottom-up y top-down de demanda; lockear el pronóstico consensuado para el horizonte de planeación."
+    source_hash: sha256-ba75edf4bc320284
+  BP-1040.20:
+    name: "Planeación de suministro"
+    description: "Planificar suministro para satisfacer demanda — producción, sourcing, distribución — dentro de restricciones de capacidad, lead-time y materiales."
+    source_hash: sha256-bbc57302462ff965
+  BP-1040.20.10:
+    name: "Planificar programa de producción"
+    description: "Construir el master production schedule contra capacidad, materiales y mano de obra; resolver conflictos de restricciones."
+    source_hash: sha256-ab96b55b9b9df1e4
+  BP-1040.20.20:
+    name: "Planificar suministro de materiales"
+    description: "Planificar requisitos de materiales (MRP) — materia prima, componentes, empaque — contra el programa de producción y lead times de proveedores."
+    source_hash: sha256-b3e37b7570b8c203
+  BP-1040.20.30:
+    name: "Planificar flujo de red de distribución"
+    description: "Planificar el flujo de inventario a través de la red de distribución (DRP) — DC-a-DC, DC-a-tienda, cross-dock — para posicionar stock cerca de la demanda."
+    source_hash: sha256-2402e53a2757e94d
+  BP-1040.20.40:
+    name: "Resolver restricciones de suministro"
+    description: "Hacer aflorar brechas de suministro contra demanda; rebalancear vía expedites, alternos, asignaciones o demand-shaping en S&OP."
+    source_hash: sha256-d44aa96dca72d51b
+  BP-1040.30:
+    name: "Reconciliación S&OP"
+    description: "Ejecutar el ciclo integrado de Sales & Operations Planning — pre-S&OP, executive S&OP — para lockear el plan de negocio integrado."
+    source_hash: sha256-a30cd60530049364
+  BP-1040.30.10:
+    name: "Ejecutar revisión pre-S&OP"
+    description: "Ejecutar pre-S&OP cross-funcional para alinear vistas de demanda, suministro y finanzas; hacer aflorar brechas y recomendaciones para executive S&OP."
+    source_hash: sha256-6f884f8c6f6c0c9b
+  BP-1040.30.20:
+    name: "Ejecutar executive S&OP"
+    description: "Ejecutar el executive S&OP para decidir trade-offs (servicio vs costo, crecimiento vs margen, rebalance de portafolio) y lockear el plan integrado."
+    source_hash: sha256-0410a63b32cc1146
+  BP-1040.30.30:
+    name: "Comunicar plan lockeado"
+    description: "Cascadear el plan de negocio integrado lockeado a las funciones; alinear ejecución aguas abajo contra el plan."
+    source_hash: sha256-d0ee8f3b86a2c73b
+  BP-1040.40:
+    name: "Posicionamiento de inventario"
+    description: "Establecer metas de inventario y posicionamiento — por SKU, ubicación, canal — para balancear servicio y working capital."
+    source_hash: sha256-a197c07d1dcb9836
+  BP-1040.40.10:
+    name: "Establecer metas de inventario"
+    description: "Establecer safety stock, cycle stock y stock objetivo por SKU/ubicación basado en metas de service-level y variabilidad de demanda."
+    source_hash: sha256-4d5a524a99dc1254
+  BP-1040.40.20:
+    name: "Posicionar inventario en la red"
+    description: "Colocar inventario a través de DCs, hubs y ubicaciones de forward stocking para coincidir con la geometría de la red de demanda."
+    source_hash: sha256-a6078f6970638338
+  BP-1040.40.30:
+    name: "Gestionar mix y asignación de inventario"
+    description: "Asignar inventario restringido entre clientes, canales y variantes de producto según reglas de asignación."
+    source_hash: sha256-a3ca09e90dc76a66
+  BP-1040.50:
+    name: "Ejecución de replenishment"
+    description: "Ejecutar órdenes de replenishment para mantener el inventario en niveles meta a través de la red."
+    source_hash: sha256-bd30b078b62f8103
+  BP-1040.50.10:
+    name: "Generar órdenes de replenishment"
+    description: "Generar órdenes de replenishment contra metas de inventario — órdenes de compra, transferencia o producción."
+    source_hash: sha256-c19d5a48aef8101e
+  BP-1040.50.20:
+    name: "Expeditar replenishments críticos"
+    description: "Expeditar replenishments por riesgo de stock-out o compromisos a clientes VIP; coordinar con suministro y logística."
+    source_hash: sha256-67cf3347e5220114
+  BP-1040.50.30:
+    name: "Confirmar recepción de replenishment"
+    description: "Confirmar recepción del replenishment en la ubicación destino y actualizar posiciones de inventario."
+    source_hash: sha256-8574c3ad10ebd359
+  BP-1040.60:
+    name: "Monitoreo de salud del inventario"
+    description: "Monitorear salud del inventario — rotación, antigüedad, slow-and-obsolete — y actuar para mantener calidad, valor y working capital."
+    source_hash: sha256-a1195703dfa02d91
+  BP-1040.60.10:
+    name: "Monitorear KPIs de inventario"
+    description: "Rastrear rotación de inventario, días de mano, antigüedad y eventos de stock-out; hacer aflorar anomalías para acción."
+    source_hash: sha256-8835c035ce713dbe
+  BP-1040.60.20:
+    name: "Gestionar stock slow-moving y obsoleto"
+    description: "Identificar inventario slow-moving y obsoleto; decidir markdown, transferencia, retorno a proveedor o castigo."
+    source_hash: sha256-f2594c163d2a4ba7
+  BP-1040.60.30:
+    name: "Conducir cycle counts y auditorías"
+    description: "Ejecutar cycle counts y auditorías físicas de inventario; reconciliar conteos con registros de sistema y postear ajustes."
+    source_hash: sha256-907c97f895f23f64

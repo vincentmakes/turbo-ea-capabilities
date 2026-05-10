@@ -7,6 +7,7 @@ entries:
       Emissão de faturas de frete, auditoria e pagamento de faturas de
       transportadoras, liquidação interline e de conjuntos, reclamações de carga
       e contabilidade de receita de frete.
+    source_hash: sha256-87dcbd5d52e6a436
   BC-2530.10:
     name: Gestão de faturação de frete
     description: |
@@ -18,92 +19,113 @@ entries:
     out_of_scope:
       - Processos genéricos de contas a receber (BC-200)
       - Estratégia de preços ao cliente (BC-440)
+    source_hash: sha256-f3fe6c6ecc2ad35b
   BC-2530.10.10:
     name: Geração de fatura de frete
     description: |
       Geração de faturas de frete a partir de movimentos concluídos.
+    source_hash: sha256-b3b5609bdd569a3d
   BC-2530.10.20:
     name: Geração de fatura de acessórios
     description: |
       Geração de faturas de acessórios e sobretaxas.
+    source_hash: sha256-b5cadfd86530821b
   BC-2530.10.30:
     name: Coordenação de autofaturação de clientes
     description: |
       Reconciliação de declarações de autofaturação de clientes face a envios.
+    source_hash: sha256-0b13e8f3e31dbb8e
   BC-2530.20:
     name: Gestão de auditoria e pagamento de frete
     description: |
       Auditoria de faturas de transportadoras e execução de pagamentos a
       transportadoras por expedidores e transitários.
+    source_hash: sha256-c27d5952a42f9961
   BC-2530.20.10:
     name: Auditoria de faturas de transportadora
     description: |
       Auditoria de faturas de transportadoras face a contratos, tarifas e envios.
+    source_hash: sha256-823c36fff43e71de
   BC-2530.20.20:
     name: Reconciliação pré-auditoria e pós-auditoria
     description: |
       Reconciliação pré-auditoria e pós-auditoria de faturas de transportadoras.
+    source_hash: sha256-fc9d66dd75b77c04
   BC-2530.20.30:
     name: Execução de pagamento a transportadora
     description: |
       Execução de pagamentos a transportadoras e reporte de remessas.
+    source_hash: sha256-2834eb86670a39d4
   BC-2530.30:
     name: Gestão de liquidação interline e multi-transportadora
     description: |
       Liquidação de receita e custos entre parceiros interline, alianças e
       escritórios de transitários.
+    source_hash: sha256-f3e8ba9e0b00c13e
   BC-2530.30.10:
     name: Cálculo pro-rata interline
     description: |
       Cálculo da receita pro-rata interline entre parceiros.
+    source_hash: sha256-2466e97305b93f16
   BC-2530.30.20:
     name: Operações de liquidação IATA CASS
     description: |
       Operação de liquidação IATA CASS para carga aérea.
+    source_hash: sha256-7cf9d4f8fe0cabdb
   BC-2530.30.30:
     name: Liquidação entre escritórios
     description: |
       Liquidação entre escritórios de receita e custos de transitário.
+    source_hash: sha256-296977a8349df371
   BC-2530.40:
     name: Gestão de reclamações de carga
     description: |
       Receção, avaliação e liquidação de reclamações de carga ao abrigo de
       convenções de responsabilidade de transporte.
+    source_hash: sha256-af8d86433d2fb010
   BC-2530.40.10:
     name: Receção e confirmação de reclamação
     description: |
       Receção e confirmação de reclamações de perda e dano de carga.
+    source_hash: sha256-dfce4e7dd266c9f1
   BC-2530.40.20:
     name: Avaliação de responsabilidade
     description: |
       Avaliação da responsabilidade da transportadora ao abrigo de Hague-Visby,
       Montreal, CMR e COTIF.
+    source_hash: sha256-0432648905806652
   BC-2530.40.30:
     name: Liquidação e recuperação de reclamação
     description: |
       Liquidação de reclamações aceites e pagamento ao cliente.
+    source_hash: sha256-ee7fd0b00db82f07
   BC-2530.40.40:
     name: Recurso e sub-rogação de reclamação
     description: |
       Recurso contra transportadoras subjacentes e sub-rogação contra seguradoras.
+    source_hash: sha256-f6409acad7b332cf
   BC-2530.50:
     name: Gestão de contabilidade de receita de frete
     description: |
       Reconhecimento, acompanhamento e reporte de receita de frete, incluindo
       posições por faturar e diferidas.
+    source_hash: sha256-aaf70cbbc8e48b33
   BC-2530.50.10:
     name: Reconhecimento de receita de frete
     description: |
       Reconhecimento de receita de frete de acordo com as normas contabilísticas
       aplicáveis.
+    source_hash: sha256-60341a8cc43a5322
   BC-2530.50.20:
     name: Acompanhamento de receita por faturar
     description: |
       Acompanhamento da receita de frete por faturar e acumulada.
+    source_hash: sha256-d924f56cb87d24d9
   BC-2530.50.30:
     name: Reporte de receita de frete
     description: |
       Reporte da receita de frete para as funções financeiras e comerciais.
+    source_hash: sha256-601ebaae2ed7fb34
 metadata:
   status: draft
   translator: claude-ai

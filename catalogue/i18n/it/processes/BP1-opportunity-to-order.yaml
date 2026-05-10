@@ -1,0 +1,128 @@
+kind: business-process
+locale: it
+source: BP1-opportunity-to-order.yaml
+entries:
+  BP-1060:
+    name: "Opportunità-a-Ordine"
+    description: "Ciclo pre-vendita di enterprise selling dalla qualificazione dell'opportunità attraverso scoping della soluzione, preventivo e configurazione, approvazioni di pricing, proposta, negoziazione, contratto e booking dell'ordine, e handover al fulfilment. Un BP2 per ogni stage_name di VS-380."
+    source_hash: sha256-8a1a0e6c41d58ca5
+  BP-1060.10:
+    name: "Qualificazione dell'opportunità"
+    description: "Qualificare l'opportunità rispetto a fit, budget, autorità e timing; decidere se investire sforzo di pursuit."
+    source_hash: sha256-cfcce898301b9f16
+  BP-1060.10.10:
+    name: "Catturare opportunità"
+    description: "Catturare l'opportunità nel CRM con sorgente, prodotti di interesse, close target e contesto dell'account."
+    source_hash: sha256-436ccbe744d04f49
+  BP-1060.10.20:
+    name: "Qualificare opportunità"
+    description: "Applicare criteri di qualificazione (BANT, MEDDIC o equivalente) per validare fit, budget, autorità, bisogno e timing."
+    source_hash: sha256-0edf81b549f113b1
+  BP-1060.10.30:
+    name: "Costruire piano di pursuit"
+    description: "Decidere pursuit, costruire piano di account e mappa di decision-making-unit e assemblare il team di pursuit."
+    source_hash: sha256-05a81bb7581c5e2e
+  BP-1060.20:
+    name: "Scoping della soluzione"
+    description: "Scoprire i requisiti del cliente e definire scope di una soluzione che li soddisfi entro vincoli commerciali e di consegna."
+    source_hash: sha256-3a1257e11aeb8669
+  BP-1060.20.10:
+    name: "Scoprire requisiti"
+    description: "Eseguire workshop e interviste di discovery per catturare requisiti funzionali, non funzionali e di contesto operativo."
+    source_hash: sha256-e484ab7a698ed3a5
+  BP-1060.20.20:
+    name: "Progettare soluzione"
+    description: "Tradurre requisiti in soluzione candidata — prodotti, servizi, integrazioni, configurazioni."
+    source_hash: sha256-431bb2ccc1177c11
+  BP-1060.20.30:
+    name: "Validare fattibilità della soluzione"
+    description: "Validare la soluzione con delivery, finance e rischio per fattibilità, deliverability e margine accettabile."
+    source_hash: sha256-891b9f5af2c22958
+  BP-1060.30:
+    name: "Preventivo e configurazione"
+    description: "Configurare l'offerta prezzata per il cliente usando configuratore prodotto, regole di pricing e framework di sconto."
+    source_hash: sha256-9985d7a00beac8c2
+  BP-1060.30.10:
+    name: "Configurare bundle di soluzione"
+    description: "Usare il configuratore prodotto per comporre il bundle prezzato dai componenti del catalogo offerta."
+    source_hash: sha256-dbd0a6f8c05d9bfc
+  BP-1060.30.20:
+    name: "Calcolare preventivo"
+    description: "Applicare prezzo di listino, sconto contrattuale e regole fiscali per produrre il preventivo prezzato."
+    source_hash: sha256-acb8536573a9c904
+  BP-1060.40:
+    name: "Pricing e approvazioni"
+    description: "Applicare governance di sconto e margine; instradare attraverso il workflow di approvazione di pricing; catturare decisioni dell'approvatore."
+    source_hash: sha256-ae9b5bc5a53cd4fb
+  BP-1060.40.10:
+    name: "Verificare compliance di pricing"
+    description: "Validare il preventivo rispetto a regole di sconto, margine e special-pricing-agreement; flaggare eccezioni."
+    source_hash: sha256-1a9666f3ca203856
+  BP-1060.40.20:
+    name: "Instradare approvazioni di pricing"
+    description: "Instradare preventivi di eccezione attraverso la gerarchia di approvazione di sconto; catturare decisioni, condizioni e giustificazione."
+    source_hash: sha256-5940523d16019a2e
+  BP-1060.50:
+    name: "Sviluppo della proposta"
+    description: "Costruire la proposta formale o risposta RFP; orchestrare input da soluzione, legale, sicurezza e delivery."
+    source_hash: sha256-c9cc2f984d49d0f4
+  BP-1060.50.10:
+    name: "Redigere contenuto della proposta"
+    description: "Redigere la narrativa della proposta — executive summary, soluzione, delivery, commerciali, referenze, termini."
+    source_hash: sha256-1e95a476ce3a5f0e
+  BP-1060.50.20:
+    name: "Coordinare input degli SME"
+    description: "Coordinare input da SME di soluzione, legale, sicurezza, finance e delivery nella proposta."
+    source_hash: sha256-adc9e8e346581fb6
+  BP-1060.50.30:
+    name: "Sottoporre proposta"
+    description: "Formattare, rivedere e sottoporre la proposta tramite il canale richiesto dal cliente (portale RFP, email, di persona)."
+    source_hash: sha256-0c91eafc652e43e7
+  BP-1060.60:
+    name: "Negoziazione"
+    description: "Negoziare i termini commerciali e contrattuali con il cliente; risolvere posizioni aperte fino all'accettazione."
+    source_hash: sha256-5b67248014901319
+  BP-1060.60.10:
+    name: "Condurre negoziazione commerciale"
+    description: "Negoziare prezzo, termini di pagamento, impegni di volume e concessioni commerciali."
+    source_hash: sha256-e80a594858f1cbe0
+  BP-1060.60.20:
+    name: "Negoziare termini contrattuali"
+    description: "Negoziare termini legali — SLA, indennizzi, IP, sicurezza, dati — con legale e counsel del cliente."
+    source_hash: sha256-05e5b44465e6cf12
+  BP-1060.60.30:
+    name: "Risolvere issue aperte"
+    description: "Tracciare e chiudere tutte le issue aperte — commerciali, tecniche, legali — finché il cliente non è pronto a firmare."
+    source_hash: sha256-460b5ec799c72c0d
+  BP-1060.70:
+    name: "Contratto e booking dell'ordine"
+    description: "Eseguire il contratto, fare booking dell'ordine e attivare provisioning, fulfilment e riconoscimento ricavi a valle."
+    source_hash: sha256-7e7532bf65be5538
+  BP-1060.70.10:
+    name: "Eseguire contratto"
+    description: "Catturare firme di cliente e firmatario autorizzato; persistere il contratto eseguito; collegare ad account e ordine."
+    source_hash: sha256-5dcd5cb7d7b77fc9
+  BP-1060.70.20:
+    name: "Bookare ordine di vendita"
+    description: "Convertire il contratto eseguito in ordine di vendita fermo in OMS; validare completezza rispetto ai termini contrattuali."
+    source_hash: sha256-9bfea8ca62d52534
+  BP-1060.70.30:
+    name: "Confermare booking con finance"
+    description: "Confermare booking a finance per backlog, billing e setup di riconoscimento ricavi; risolvere eventuali hold."
+    source_hash: sha256-0874878ede4057bd
+  BP-1060.80:
+    name: "Handover al fulfilment"
+    description: "Fare handover dell'ordine bookato a team di fulfilment, delivery o servizio; chiudere il loop con vendite per renewal."
+    source_hash: sha256-acd76b2c5aac72c9
+  BP-1060.80.10:
+    name: "Eseguire handover vendite-a-delivery"
+    description: "Eseguire la riunione di handover; trasferire contesto, criteri di successo e relazioni con il cliente da vendite a delivery."
+    source_hash: sha256-58ff5189568c4e64
+  BP-1060.80.20:
+    name: "Configurare engagement di delivery"
+    description: "Configurare l'engagement di delivery — progetto, team di account, success plan — e confermare readiness di kick-off."
+    source_hash: sha256-a10e2ab2cb17661b
+  BP-1060.80.30:
+    name: "Chiudere ciclo di vendita"
+    description: "Chiudere l'opportunità nel CRM, catturare ragioni di win/loss e attivare workflow di commissioni e tracking di renewal."
+    source_hash: sha256-024a3560b43944cb

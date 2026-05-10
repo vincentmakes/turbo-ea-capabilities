@@ -1,0 +1,124 @@
+kind: business-process
+locale: zh
+source: BP1-record-to-report.yaml
+entries:
+  BP-1080:
+    name: "记账到报告"
+    description: "财务关账循环,涵盖交易捕获、子分类账关账、对账、合并、管理报告、法定与监管报告以及审计签收。每个BP2对应VS-460的一个stage_name。"
+    source_hash: sha256-4fde77e621173949
+  BP-1080.10:
+    name: "交易捕获"
+    description: "在各源系统中将经济交易捕获至财务主轴并赋予正确编码。"
+    source_hash: sha256-777e85c66d610c9a
+  BP-1080.10.10:
+    name: "捕获源交易"
+    description: "将销售、采购、薪资、司库及其他源系统的交易捕获至会计数据流。"
+    source_hash: sha256-fbc670a75cbbd7dc
+  BP-1080.10.20:
+    name: "应用科目编码"
+    description: "依据科目表和政策应用科目、成本中心和项目编码。"
+    source_hash: sha256-3208ef579f9e5a6e
+  BP-1080.10.30:
+    name: "校验交易数据"
+    description: "运行校验规则——完整性、分类、币种、期间——并将异常路由至更正。"
+    source_hash: sha256-94f1805cf11bb0f4
+  BP-1080.20:
+    name: "子分类账关账"
+    description: "关账子分类账——AR、AP、固定资产、薪资、司库——并过账至总账。"
+    source_hash: sha256-3a01332bbbd8e5b6
+  BP-1080.20.10:
+    name: "关账AR子分类账"
+    description: "关账应收账款子分类账;过账AR至GL汇总并滚动未结余额。"
+    source_hash: sha256-16b68b86dab484d7
+  BP-1080.20.20:
+    name: "关账AP子分类账"
+    description: "关账应付账款子分类账;过账AP至GL汇总并滚动未结余额。"
+    source_hash: sha256-822c5ccc9d117a3e
+  BP-1080.20.30:
+    name: "关账固定资产子分类账"
+    description: "运行固定资产折旧及增加/处置;过账至GL。"
+    source_hash: sha256-2cc9569fd696441c
+  BP-1080.20.40:
+    name: "关账其他子分类账"
+    description: "关账薪资、司库、库存和项目子分类账;以审计轨迹过账至GL。"
+    source_hash: sha256-dfa3c16a92f5cd96
+  BP-1080.30:
+    name: "对账与调整"
+    description: "对资产负债表科目对账并过账期末调整以锁定账簿。"
+    source_hash: sha256-a40463df068adf10
+  BP-1080.30.10:
+    name: "对账资产负债表科目"
+    description: "将现金、AR、AP、内部往来、计提及其他资产负债表科目与源明细对账。"
+    source_hash: sha256-cdac4b1e9dea96b3
+  BP-1080.30.20:
+    name: "过账期末调整"
+    description: "过账计提、预付、递延和重分类分录;采集支持文档。"
+    source_hash: sha256-94718769a1e91c73
+  BP-1080.30.30:
+    name: "解决对账差异"
+    description: "调查并解决对账项;将未解决项升级至控制部进行核销或结转。"
+    source_hash: sha256-47fa45469b7aecfa
+  BP-1080.40:
+    name: "合并"
+    description: "跨法人实体和币种合并财务;抵销内部往来;产出集团结果。"
+    source_hash: sha256-8664a943f2bd0932
+  BP-1080.40.10:
+    name: "折算本币试算平衡"
+    description: "依据会计准则按适当FX汇率将本币试算平衡折算为报告货币。"
+    source_hash: sha256-f313d0c3bb592eaf
+  BP-1080.40.20:
+    name: "抵销内部往来"
+    description: "依据合并规则抵销内部销售、余额和未实现利润。"
+    source_hash: sha256-9a6678eccaf80ba7
+  BP-1080.40.30:
+    name: "产出集团合并结果"
+    description: "为集团产出合并资产负债表、利润表、现金流量表和权益表;持久化至合并系统。"
+    source_hash: sha256-7a001bb947c22f23
+  BP-1080.50:
+    name: "管理报告"
+    description: "为执行团队、董事会和运营负责人产出内部管理报告。"
+    source_hash: sha256-9c8b574b42de7183
+  BP-1080.50.10:
+    name: "构建管理报告"
+    description: "构建管理报告——按业务条线、成本中心、产品、客户的P&L;现金与营运资本视图。"
+    source_hash: sha256-de53fc2bd2c34b48
+  BP-1080.50.20:
+    name: "分析对预算的差异"
+    description: "分析实际vs预算及与上期的差异;识别驱动因素与纠正措施。"
+    source_hash: sha256-f7c61b60767e9595
+  BP-1080.50.30:
+    name: "分发管理报告包"
+    description: "按约定节奏向高管和运营负责人分发管理报告包。"
+    source_hash: sha256-704f3bdaa5a9510b
+  BP-1080.60:
+    name: "法定与监管报告"
+    description: "按时向监管机构产出法定、监管和税务申报。"
+    source_hash: sha256-28b70bf275aca7d0
+  BP-1080.60.10:
+    name: "编制法定财务报表"
+    description: "为各司法管辖区每个法人实体依据当地GAAP/IFRS编制法定财务报表。"
+    source_hash: sha256-b8abdafd810f4956
+  BP-1080.60.20:
+    name: "申报税务报表"
+    description: "依据各司法管辖区编制并申报企业所得税、VAT/GST、预扣税及转让定价报表。"
+    source_hash: sha256-daddfbd3713c4626
+  BP-1080.60.30:
+    name: "申报监管报告"
+    description: "向适用监管机构申报行业特定监管报告(银行、保险、上市公司披露)。"
+    source_hash: sha256-9492faf5010a52e2
+  BP-1080.70:
+    name: "审计与签收"
+    description: "支持内部与外部审计;就财务报表与控制取得签收。"
+    source_hash: sha256-fbcdf10910aea625
+  BP-1080.70.10:
+    name: "支持外部审计"
+    description: "向外部审计师提供证据与穿行测试;解决审计询问;响应审计发现。"
+    source_hash: sha256-9373890a507a8478
+  BP-1080.70.20:
+    name: "支持内部审计"
+    description: "支持对财务关账、对账和控制的内部审计评审;关闭审计发现。"
+    source_hash: sha256-93f2c12d1ae74ff2
+  BP-1080.70.30:
+    name: "取得管理层签收"
+    description: "取得CFO和CEO对财务报表及SOX或等同控制声明的签收;依据公司治理协议向审计委员会汇报。"
+    source_hash: sha256-7615dbb49880ed60

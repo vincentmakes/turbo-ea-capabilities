@@ -1,0 +1,108 @@
+kind: business-process
+locale: zh
+source: BP1-crisis-to-recovery.yaml
+entries:
+  BP-1140:
+    name: "危机到恢复"
+    description: "业务连续性与危机管理循环,涵盖连续性规划、韧性测试、检测与激活、危机响应、灾难恢复、复原以及危机后复盘。每个BP2对应VS-140的一个stage_name。"
+    source_hash: sha256-6b5a46bc8192fd2e
+  BP-1140.10:
+    name: "连续性规划"
+    description: "为关键流程和系统构建并维护业务连续性与灾难恢复计划。"
+    source_hash: sha256-015c32937d1d65af
+  BP-1140.10.10:
+    name: "执行业务影响分析"
+    description: "识别关键流程、RTO/RPO目标、依赖关系和最低运行要求。"
+    source_hash: sha256-16d992be1d96a2e6
+  BP-1140.10.20:
+    name: "构建连续性计划"
+    description: "构建流程级和场地级业务连续性计划——workaround、备用站点、关键联系人。"
+    source_hash: sha256-504a6e02114d49ad
+  BP-1140.10.30:
+    name: "构建灾难恢复计划"
+    description: "为关键系统构建IT灾难恢复计划——runbook、复制、failover目标。"
+    source_hash: sha256-88c412c4c1a51500
+  BP-1140.20:
+    name: "韧性测试"
+    description: "测试连续性与恢复计划——桌面演练、穿行、完整failover。"
+    source_hash: sha256-eb3618fdb4e292cb
+  BP-1140.20.10:
+    name: "执行桌面演练"
+    description: "与关键团队执行桌面演练以在不打断运营的情况下验证计划并浮现差距。"
+    source_hash: sha256-19611168ac84e9f3
+  BP-1140.20.20:
+    name: "执行Failover演练"
+    description: "执行受控failover演练以验证技术恢复;捕获相对目标的耗时。"
+    source_hash: sha256-549dfa1938c1c12c
+  BP-1140.20.30:
+    name: "依据测试发现更新计划"
+    description: "依据测试发现更新连续性与恢复计划;在下一周期前关闭差距。"
+    source_hash: sha256-a53a2d1c7ca74f86
+  BP-1140.30:
+    name: "检测与激活"
+    description: "检测危机触发器并激活响应——指挥官、war-room、沟通。"
+    source_hash: sha256-0373dbdb7e081af0
+  BP-1140.30.10:
+    name: "检测危机触发"
+    description: "检测满足危机触发标准的事件——中断、入侵、安全事件、监管行动。"
+    source_hash: sha256-a2b600c30c99453b
+  BP-1140.30.20:
+    name: "激活危机协议"
+    description: "激活危机管理协议——任命指挥官、召集war-room、建立沟通节奏。"
+    source_hash: sha256-c4d200ad5dcab2c4
+  BP-1140.40:
+    name: "危机响应"
+    description: "管理活跃危机——保护人员与资产、控制损害、沟通、协同。"
+    source_hash: sha256-4c79bc509b89d20c
+  BP-1140.40.10:
+    name: "保护人员与资产"
+    description: "执行保护性行动——疏散、停机、隔离、医疗、安保——以限制损害。"
+    source_hash: sha256-bc0d35d4aee77175
+  BP-1140.40.20:
+    name: "控制危机影响"
+    description: "通过有针对性的响应行动控制运营、财务、监管和声誉影响。"
+    source_hash: sha256-9a019f4fa1f15864
+  BP-1140.40.30:
+    name: "管理危机沟通"
+    description: "在活跃危机期间运行内部、外部、监管和媒体沟通。"
+    source_hash: sha256-4dad5b0557fd8542
+  BP-1140.50:
+    name: "灾难恢复"
+    description: "执行灾难恢复程序,在RTO/RPO目标内恢复IT服务。"
+    source_hash: sha256-fb85c409a6e401a5
+  BP-1140.50.10:
+    name: "执行IT Failover"
+    description: "执行关键IT系统至恢复基础设施的预案failover。"
+    source_hash: sha256-10be996126e393fa
+  BP-1140.50.20:
+    name: "验证已恢复服务"
+    description: "对照验收标准验证已恢复服务;恢复客户面运营。"
+    source_hash: sha256-036370fd854b7000
+  BP-1140.50.30:
+    name: "执行反向Failover"
+    description: "在稳定后规划并执行返回主基础设施;验证全面恢复。"
+    source_hash: sha256-c1689ce7096339a1
+  BP-1140.60:
+    name: "复原"
+    description: "将实物资产、供应链和运营复原至危机前状态。"
+    source_hash: sha256-44df1443f713f43d
+  BP-1140.60.10:
+    name: "复原实物运营"
+    description: "将实物资产、场地和设备复原至运行状态;通过安全检查。"
+    source_hash: sha256-f505be01a02d874a
+  BP-1140.60.20:
+    name: "复原供需流"
+    description: "将供应商流、客户订单流和库存定位复原至基线。"
+    source_hash: sha256-93a3ae915fd7288e
+  BP-1140.70:
+    name: "危机后复盘"
+    description: "执行行动后复盘;采集经验;推动系统性韧性改进。"
+    source_hash: sha256-2955b6f0dfd36dd5
+  BP-1140.70.10:
+    name: "执行行动后复盘"
+    description: "与所有响应人员执行无指责行动后复盘;采集时间线、决策和经验。"
+    source_hash: sha256-7583baae8ac29129
+  BP-1140.70.20:
+    name: "提升韧性"
+    description: "将经验转化为韧性改进——控制、计划、培训、技术。"
+    source_hash: sha256-676cf9bedb8b4c35

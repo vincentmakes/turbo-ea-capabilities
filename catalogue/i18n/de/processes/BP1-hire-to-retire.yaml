@@ -1,0 +1,184 @@
+kind: business-process
+locale: de
+source: BP1-hire-to-retire.yaml
+entries:
+  BP-1020:
+    name: "Einstellung-zu-Austritt"
+    description: "End-to-End-Mitarbeiterlebenszyklus von der Personalplanung über Sourcing, Auswahl, Onboarding, Performance und Entwicklung, Vergütungs- und Benefits-Administration, Mitarbeitererfahrung, interne Mobilität bis zum Offboarding. Ein BP2 pro VS-280-stage_name."
+    source_hash: sha256-09ffdeb0d20eb666
+  BP-1020.10:
+    name: "Personalplanung"
+    description: "Personalbedarf gegen Strategie und aktuelles Angebot prognostizieren, Skill-Lücken identifizieren und die zur Schließung benötigten Einstellungs-, Mobilitäts- und Austrittsbewegungen planen."
+    source_hash: sha256-8ee05419330812e0
+  BP-1020.10.10:
+    name: "Personalbedarf prognostizieren"
+    description: "Den Geschäftsplan in Headcount-, Skill- und Kapazitätsbedarf nach Team, Rolle und Zeithorizont übersetzen."
+    source_hash: sha256-b13cd46fc052b75b
+  BP-1020.10.20:
+    name: "Personalangebot bewerten"
+    description: "Aktuelle Mitarbeiter, Contractors und laufende Bewegungen inventarisieren; Skills gegen die Nachfrage bewerten, um Lücken und Überhänge aufzudecken."
+    source_hash: sha256-9aa3173db35ae515
+  BP-1020.10.30:
+    name: "Personalplan aufbauen"
+    description: "Den integrierten Plan entwerfen — einstellen, entwickeln, umverteilen, austreten — um die Lücke zu schließen; Bewegungen mit Budget und Genehmigungen sequenzieren."
+    source_hash: sha256-05868c274352d2bf
+  BP-1020.20:
+    name: "Sourcing & Attraktivität"
+    description: "Kandidaten über Employer Brand, Sourcing-Kanäle und Direktansprache identifizieren und gewinnen."
+    source_hash: sha256-c9f25567ef00b334
+  BP-1020.20.10:
+    name: "Employer Brand entwickeln"
+    description: "Die Employer-Brand-Wertversprechen und die in den Kanälen verwendeten Botschaften positionieren, um Zielsegmente an Talenten zu gewinnen."
+    source_hash: sha256-301153251b07415f
+  BP-1020.20.20:
+    name: "Kandidaten sourcen"
+    description: "Über Job Boards, soziale Medien, Mitarbeiterempfehlungen, Agenturen und Direktansprache sourcen; Kandidaten im ATS persistieren."
+    source_hash: sha256-d2e9732fbea74c90
+  BP-1020.20.30:
+    name: "Talent Communities managen"
+    description: "Beziehungen zu Kandidaten in Talent Pools und Communities für Evergreen-Rollen und Pipelines pflegen."
+    source_hash: sha256-0d81fb41f934c50b
+  BP-1020.30:
+    name: "Auswahl & Einstellung"
+    description: "Kandidaten filtern, bewerten, interviewen und auswählen; Vor-Einstellungsprüfungen durchführen; Angebot machen und akzeptieren lassen."
+    source_hash: sha256-05bfafa6ba03c777
+  BP-1020.30.10:
+    name: "Kandidaten filtern und vorselektieren"
+    description: "Filterkriterien auf eingehende Bewerbungen anwenden; auf Basis von Fit und Qualifikationen für ein Interview vorselektieren."
+    source_hash: sha256-cb5a307727a052bc
+  BP-1020.30.20:
+    name: "Bewertungen und Interviews durchführen"
+    description: "Strukturierte Interviews und Skill-Bewertungen durchführen; Feedback der Bewerter zu einer Einstellungsentscheidung konsolidieren."
+    source_hash: sha256-3d521eea12b26cfa
+  BP-1020.30.30:
+    name: "Vor-Einstellungsprüfungen durchführen"
+    description: "Background-, Referenz- und Arbeitsrechtsprüfungen je nach Jurisdiktion und Risikoprofil der Stelle durchführen."
+    source_hash: sha256-19a67bb8129a9e6a
+  BP-1020.30.40:
+    name: "Angebot machen und verhandeln"
+    description: "Das Angebot konstruieren (Vergütung, Equity, Eintrittsdatum), mit dem Kandidaten verhandeln und die Annahme erfassen."
+    source_hash: sha256-761e6d7b309b32d4
+  BP-1020.30.50:
+    name: "Mitarbeiter einstellen"
+    description: "Den Arbeitsvertrag ausführen, den Mitarbeiterdatensatz im HRIS anlegen und nachgelagerte Onboarding-Workflows auslösen."
+    source_hash: sha256-d80a4476cf0e5849
+  BP-1020.40:
+    name: "Onboarding"
+    description: "Den neuen Mitarbeiter in die Organisation einführen — Empfang, Formalitäten, Ausstattung, Schulung und Integration."
+    source_hash: sha256-f60d0cdc7e828a78
+  BP-1020.40.10:
+    name: "Ausstattung und Zugänge bereitstellen"
+    description: "Laptop, Gebäudezugang, System-Credentials und rollenspezifische Ausstattung vor Tag 1 bereitstellen."
+    source_hash: sha256-7c434b47b861c4de
+  BP-1020.40.20:
+    name: "Onboarding-Formalitäten erledigen"
+    description: "Gesetzliche Einstellungsformalitäten erfassen — Steuerformulare, Benefits-Anmeldung, Richtlinien-Quittungen — zur Compliance."
+    source_hash: sha256-ddbf6f961bce99c1
+  BP-1020.40.30:
+    name: "Onboarding-Programm liefern"
+    description: "Den strukturierten Onboarding-Pfad ausführen — Orientierung, Rollenschulung, Manager-Termine — über die ersten 30/60/90 Tage."
+    source_hash: sha256-ee4ee7e3818020aa
+  BP-1020.40.40:
+    name: "Onboarding-Abschluss bestätigen"
+    description: "Validieren, dass der neue Mitarbeiter alle erforderlichen Onboarding-Meilensteine erreicht hat und voll einsatzfähig ist."
+    source_hash: sha256-0341b621099346a9
+  BP-1020.50:
+    name: "Performance & Entwicklung"
+    description: "Ziele setzen, Feedback geben, formale Reviews durchführen, Entwicklungsbedarf identifizieren und Lernen und Coaching liefern."
+    source_hash: sha256-7f4f873f09922c08
+  BP-1020.50.10:
+    name: "Leistungsziele setzen"
+    description: "Geschäftsziele zu Beginn des Zyklus auf individuelle Ziele kaskadieren; auf Team- und Funktionsprioritäten ausrichten."
+    source_hash: sha256-6d6c3da452126277
+  BP-1020.50.20:
+    name: "Kontinuierliches Feedback geben"
+    description: "Regelmäßige 1:1-Gespräche und kontinuierliches Feedback zwischen Managern und Mitarbeitern über den gesamten Zyklus führen."
+    source_hash: sha256-108b0046db668289
+  BP-1020.50.30:
+    name: "Performance-Review durchführen"
+    description: "Den formalen Zyklus-Review ausführen — Selbstbewertung, Manager-Review, Kalibrierung — um Bewertungen und Konsequenzen zu bestimmen."
+    source_hash: sha256-672da1819702f401
+  BP-1020.50.40:
+    name: "Entwicklungsbedarf identifizieren"
+    description: "Skill-Lücken zur aktuellen und zukünftigen Rolle identifizieren; in Entwicklungsplänen erfassen, die mit Lerninterventionen verknüpft sind."
+    source_hash: sha256-0c9679c589077ab9
+  BP-1020.50.50:
+    name: "Lernen und Coaching liefern"
+    description: "Schulungsprogramme, On-the-Job-Coaching, Mentoring und Entwicklungseinsätze ausführen; Abschluss und Wirkung verfolgen."
+    source_hash: sha256-45e4c4dda86fdd30
+  BP-1020.60:
+    name: "Vergütungs- und Benefits-Administration"
+    description: "Grundgehalt, variable Vergütung, Equity und Benefits über den Lebenszyklus administrieren; Gehaltsreview durchführen und Übergabe an die Lohnabrechnung."
+    source_hash: sha256-ed60011d8ab65f0e
+  BP-1020.60.10:
+    name: "Fixe und variable Vergütung administrieren"
+    description: "Gehaltsbänder, individuelle Sätze und variable Vergütungspläne pflegen; Lohnaktualisierungen bei Beförderung, Versetzung oder Tarifänderung auslösen."
+    source_hash: sha256-c45df0159b0099aa
+  BP-1020.60.20:
+    name: "Gehaltsreview-Zyklus durchführen"
+    description: "Den jährlichen oder Off-Cycle-Gehaltsreview-Prozess durchführen; Budgetrichtlinien, Manager-Vorschläge und Genehmigungen anwenden."
+    source_hash: sha256-c01fd88d6f4da442
+  BP-1020.60.30:
+    name: "Benefits-Anmeldung administrieren"
+    description: "Open Enrolment und Anmeldung bei qualifizierenden Ereignissen für Gesundheit, Altersvorsorge und andere Benefits durchführen; mit Trägerflüssen abstimmen."
+    source_hash: sha256-09055d65dc34c179
+  BP-1020.60.40:
+    name: "Equity-Programme managen"
+    description: "Equity gemäß Planregeln gewähren, vesten und ausüben lassen; mit Finanzen, Rechtsabteilung und Equity-Broker koordinieren."
+    source_hash: sha256-31daf9cd9c81ea58
+  BP-1020.70:
+    name: "Mitarbeitererfahrung & Engagement"
+    description: "Engagement-Programm, Employee-Voice-Umfragen, Anerkennung, Wohlbefinden und breitere Mitarbeitererfahrung steuern."
+    source_hash: sha256-f0e69b4282464c4a
+  BP-1020.70.10:
+    name: "Engagement-Umfragen durchführen"
+    description: "Periodische Engagement-Umfragen und Pulse Surveys durchführen; Ergebnisse nach Team, Segment und Trend analysieren."
+    source_hash: sha256-78f0d2806028c8ed
+  BP-1020.70.20:
+    name: "Auf Mitarbeiter-Feedback handeln"
+    description: "Umfrage-Insights in Aktionspläne auf Team- und Unternehmensebene übersetzen; Umsetzung verfolgen."
+    source_hash: sha256-952715be78e361e8
+  BP-1020.70.30:
+    name: "Anerkennungsprogramme betreiben"
+    description: "Peer-to-Peer- und Manager-Anerkennungsprogramme durchführen; Teilnahme und Wirkung auf Engagement verfolgen."
+    source_hash: sha256-2f1b11504ae2ac03
+  BP-1020.70.40:
+    name: "Mitarbeiter-Wohlbefinden unterstützen"
+    description: "Wohlbefindensprogramme — EAP, mentale Gesundheit, finanzielles Wohlbefinden, Ergonomie — betreiben und auf Eskalationen reagieren."
+    source_hash: sha256-04c0e83acf6247b0
+  BP-1020.80:
+    name: "Interne Mobilität & Karriere"
+    description: "Internen Job-Marketplace, Nachfolgeplanung und Karrierepfad-Management betreiben."
+    source_hash: sha256-993c916a1d85bec6
+  BP-1020.80.10:
+    name: "Internen Job-Marketplace betreiben"
+    description: "Interne Stellen ausschreiben, interne Bewerbungen managen und Interviews mit internen Kandidaten führen."
+    source_hash: sha256-43393d28f6a60618
+  BP-1020.80.20:
+    name: "Nachfolgeplanung durchführen"
+    description: "Nachfolger für kritische Rollen identifizieren, ihre Readiness bewerten und Entwicklungsbewegungen zur Schließung der Lücken aufbauen."
+    source_hash: sha256-1fdfca6245f60e37
+  BP-1020.80.30:
+    name: "Karrierepfade managen"
+    description: "Karrierepfad-Frameworks, Rollenprogressionskriterien und interne Mobilitätsrichtlinien für Manager und Mitarbeiter pflegen."
+    source_hash: sha256-dfdd52489ff5725d
+  BP-1020.90:
+    name: "Offboarding & Alumni"
+    description: "Mitarbeiteraustritte managen — freiwillig, unfreiwillig, Ruhestand — und das Alumni-Programm betreiben."
+    source_hash: sha256-22e8c08197f922e3
+  BP-1020.90.10:
+    name: "Kündigung oder Auflösung verarbeiten"
+    description: "Trennung — Kündigung, Entlassung, betriebsbedingte Auflösung, Ruhestand — über den Offboarding-Workflow erfassen und verarbeiten."
+    source_hash: sha256-a125a10cab774080
+  BP-1020.90.20:
+    name: "Austrittsgespräch führen"
+    description: "Das Austrittsgespräch zur Erfassung von Lessons Learned und Feedback führen; in Engagement- und Retention-Insights integrieren."
+    source_hash: sha256-e9c23ee30af51824
+  BP-1020.90.30:
+    name: "Ausstattung und Zugänge zurücknehmen"
+    description: "Laptop, Ausweis, System-Credentials und rollenspezifische Ausstattung am letzten Arbeitstag zurücknehmen."
+    source_hash: sha256-4c346ccd2649f029
+  BP-1020.90.40:
+    name: "Alumni-Netzwerk betreiben"
+    description: "Das Alumni-Netzwerk für Wiedereinstellungen, Empfehlungen und Community pflegen; periodisches Engagement durchführen."
+    source_hash: sha256-d66212468362c119

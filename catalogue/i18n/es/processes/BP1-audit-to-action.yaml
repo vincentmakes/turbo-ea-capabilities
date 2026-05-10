@@ -1,0 +1,92 @@
+kind: business-process
+locale: es
+source: BP1-audit-to-action.yaml
+entries:
+  BP-1120:
+    name: "Auditoría-a-Acción"
+    description: "Ciclo de auditoría interna desde la planeación del audit-universe pasando por scoping del engagement, fieldwork, hallazgos, seguimiento de remediación y aseguramiento de calidad de auditoría. Un BP2 por cada stage_name de VS-80."
+    source_hash: sha256-78ba5fa747a3298e
+  BP-1120.10:
+    name: "Audit-universe y plan"
+    description: "Mantener el audit-universe y construir el plan anual de auditoría basado en riesgo."
+    source_hash: sha256-052dfbb5301861aa
+  BP-1120.10.10:
+    name: "Mantener audit-universe"
+    description: "Mantener la población de entidades auditables — procesos, sistemas, ubicaciones, terceros."
+    source_hash: sha256-c80bb421c22ca929
+  BP-1120.10.20:
+    name: "Construir plan de auditoría basado en riesgo"
+    description: "Construir el plan anual de auditoría desde el universe ponderado por riesgo; obtener aprobación del comité de auditoría."
+    source_hash: sha256-641aa762dfc377f6
+  BP-1120.20:
+    name: "Scoping del engagement"
+    description: "Definir alcance del engagement de auditoría — objetivos, controles en alcance, período, recursos."
+    source_hash: sha256-379378e4cbe00ff2
+  BP-1120.20.10:
+    name: "Definir objetivos de auditoría"
+    description: "Definir objetivos, preguntas clave y riesgos a abordar en el engagement."
+    source_hash: sha256-9db77920df093c01
+  BP-1120.20.20:
+    name: "Planificar procedimientos de auditoría"
+    description: "Planificar procedimientos de auditoría — walk-throughs, pruebas de muestra, analytics — y evidencia requerida."
+    source_hash: sha256-20c9befca109dbaa
+  BP-1120.30:
+    name: "Fieldwork"
+    description: "Ejecutar fieldwork de auditoría — recopilar evidencia, realizar pruebas y documentar workpapers."
+    source_hash: sha256-5397ca54ccad52ae
+  BP-1120.30.10:
+    name: "Walk-through del proceso"
+    description: "Hacer walk-through del proceso en alcance para entender diseño y controles clave; documentar narrativa y diagrama de flujo."
+    source_hash: sha256-360facf431ae416c
+  BP-1120.30.20:
+    name: "Probar controles y transacciones"
+    description: "Ejecutar pruebas basadas en muestra o sobre la población de efectividad de diseño y operativa; documentar workpapers."
+    source_hash: sha256-984e0a2fd05bc625
+  BP-1120.30.30:
+    name: "Ejecutar audit analytics"
+    description: "Ejecutar analítica de datos sobre la población completa para hacer aflorar anomalías, excepciones y patrones."
+    source_hash: sha256-02da298d8bc68b3b
+  BP-1120.30.40:
+    name: "Documentar evidencia de auditoría"
+    description: "Documentar evidencia en workpapers con cross-references; obtener confirmaciones del auditado donde se requiera."
+    source_hash: sha256-ff668222fb905e5c
+  BP-1120.40:
+    name: "Hallazgos y reporte"
+    description: "Desarrollar hallazgos, acordar respuestas de gestión y emitir el reporte de auditoría."
+    source_hash: sha256-882dae2ab975b4e0
+  BP-1120.40.10:
+    name: "Desarrollar hallazgos"
+    description: "Desarrollar hallazgos con condition, criteria, cause, consequence y recomendación."
+    source_hash: sha256-ec29da0b1405dcb1
+  BP-1120.40.20:
+    name: "Acordar respuestas de gestión"
+    description: "Acordar respuesta de gestión — aceptar, acción alternativa, disputar — con auditados y fecha objetivo de remediación."
+    source_hash: sha256-d7f6c42262644426
+  BP-1120.40.30:
+    name: "Emitir reporte de auditoría"
+    description: "Emitir el reporte final de auditoría al sponsor ejecutivo y comité de auditoría; cerrar el engagement."
+    source_hash: sha256-7cb1bfa395b5139f
+  BP-1120.50:
+    name: "Seguimiento de remediación"
+    description: "Rastrear la remediación de hallazgos por gestión hasta el cierre; verificar con re-test donde aplique."
+    source_hash: sha256-7d1a7c3bb67fc4f2
+  BP-1120.50.10:
+    name: "Rastrear estado de remediación"
+    description: "Rastrear hallazgos abiertos, fechas objetivo y progreso de gestión contra el plan de remediación."
+    source_hash: sha256-9d2ac6245533df68
+  BP-1120.50.20:
+    name: "Verificar cierre"
+    description: "Verificar cierre del hallazgo por re-test, revisión de evidencia o auditoría de seguimiento; cerrar en el tracker."
+    source_hash: sha256-fe5f854372d81622
+  BP-1120.60:
+    name: "Aseguramiento de calidad de auditoría"
+    description: "Ejecutar aseguramiento de calidad sobre la función de auditoría — revisión de workpapers, peer review, evaluación externa."
+    source_hash: sha256-bcb7a79e6deadaa3
+  BP-1120.60.10:
+    name: "Revisar workpapers de auditoría"
+    description: "Ejecutar revisión supervisora de workpapers y hallazgos buscando evidencia suficiente y apropiada."
+    source_hash: sha256-69e2e4705ce5c949
+  BP-1120.60.20:
+    name: "Ejecutar evaluación externa de calidad"
+    description: "Ejecutar evaluación externa de calidad periódica de la función de auditoría según los Estándares IIA."
+    source_hash: sha256-dcbe505dd1a3c5cf

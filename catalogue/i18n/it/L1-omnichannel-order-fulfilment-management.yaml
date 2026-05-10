@@ -9,6 +9,7 @@ entries:
       qualsiasi canale, promessa da qualsiasi nodo ed evasione tramite punto vendita,
       centro di distribuzione, marketplace, drop-ship del fornitore o partner per
       l'ultimo miglio.
+    source_hash: sha256-759583730d4c128a
   BC-2330.10:
     name: Gestione dell'orchestrazione dei canali
     description: |
@@ -20,37 +21,45 @@ entries:
       - Economie del mix di canale e compromessi sui costi di evasione
     out_of_scope:
       - Evasione generica degli ordini (BC-520.40)
+    source_hash: sha256-db07250e9bb8b15a
   BC-2330.10.10:
     name: Gestione delle regole di instradamento per canale
     description: |
       Definizione delle regole di instradamento per la selezione del nodo di evasione
       in base a costo e livello di servizio.
+    source_hash: sha256-06b62f3d1addf895
   BC-2330.10.20:
     name: Visione cross-canale degli ordini
     description: |
       Visione unificata degli ordini, dello stato e della cronologia su tutti i canali.
+    source_hash: sha256-8fba0cf403f1d058
   BC-2330.10.30:
     name: Economie del mix di canale
     description: |
       Analisi dell'economia unitaria per canale e percorso di evasione.
+    source_hash: sha256-0b9c2abcbc0f96b1
   BC-2330.20:
     name: Gestione delle operazioni click-and-collect
     description: |
       Operazioni di ritiro in negozio, ritiro a bordo strada e ritiro da locker che
       collegano gli ordini digitali ai punti di ritiro fisici.
+    source_hash: sha256-420798729bf23e70
   BC-2330.20.10:
     name: Operazioni di prelievo e imballaggio in negozio
     description: |
       Prelievo e imballaggio degli ordini online da parte degli addetti al punto vendita.
+    source_hash: sha256-c550b7b8afac84d5
   BC-2330.20.20:
     name: Consegna al cliente per il ritiro
     description: |
       Passaggio di consegne al cliente per il ritiro, inclusi verifica dell'identità e
       gestione delle eccezioni.
+    source_hash: sha256-958eb75637d5b41a
   BC-2330.20.30:
     name: Ritiro a bordo strada e da locker
     description: |
       Operazioni di consegna a bordo strada e ritiro tramite locker.
+    source_hash: sha256-ff53d42c5962b9ea
   BC-2330.30:
     name: Gestione dell'evasione distribuita degli ordini
     description: |
@@ -60,63 +69,76 @@ entries:
       - Operazioni di spedizione dal negozio
       - Operazioni di dark store e micro-fulfilment centre
       - Orchestrazione del drop-ship del fornitore
+    source_hash: sha256-b60a03f7118135fa
   BC-2330.30.10:
     name: Operazioni di spedizione dal negozio
     description: |
       Prelievo, imballaggio e spedizione di ordini online dai punti vendita fisici.
+    source_hash: sha256-4568396914d82bee
   BC-2330.30.20:
     name: Operazioni di dark store e micro-fulfilment
     description: |
       Operazioni di dark store e micro-fulfilment centre per gli ordini digitali.
+    source_hash: sha256-39cc74df8aa89ea8
   BC-2330.30.30:
     name: Orchestrazione del drop-ship del fornitore
     description: |
       Orchestrazione del drop-ship del fornitore, inclusi instradamento degli ordini
       e tracking.
+    source_hash: sha256-b810de00017d4ed8
   BC-2330.40:
     name: Gestione delle operazioni come venditore su marketplace
     description: |
       Gestione degli annunci del retailer come venditore su marketplace di terze parti
       e gestione dei venditori terzi su un marketplace proprietario.
+    source_hash: sha256-eab4286589a88a4d
   BC-2330.40.10:
     name: Gestione degli annunci su marketplace
     description: |
       Inserimento di articoli su marketplace di terze parti, incluso l'adattamento dei
       contenuti.
+    source_hash: sha256-d57e122570a455d1
   BC-2330.40.20:
     name: Acquisizione degli ordini da marketplace
     description: |
       Acquisizione e traduzione degli ordini provenienti da marketplace nel flusso
       ordini principale.
+    source_hash: sha256-ca4fff8b300f83ee
   BC-2330.40.30:
     name: Onboarding dei venditori terzi
     description: |
       Onboarding di venditori terzi sul marketplace proprietario del retailer.
+    source_hash: sha256-5b3510bdf2d1ad96
   BC-2330.40.40:
     name: Gestione delle performance dei venditori terzi
     description: |
       Gestione delle performance e della conformità alle policy dei venditori terzi.
+    source_hash: sha256-1574cff833e3f6b1
   BC-2330.50:
     name: Gestione delle fasce orarie di consegna al consumatore
     description: |
       Prenotazione delle fasce orarie di consegna rivolte al consumatore, pricing delle
       finestre temporali e coordinamento del dispacciamento dei corrieri per la consegna
       a domicilio.
+    source_hash: sha256-74aa992aec45405d
   BC-2330.50.10:
     name: Prenotazione della fascia oraria di consegna
     description: |
       Prenotazione da parte del consumatore delle fasce orarie di consegna con logica di
       disponibilità e capacità.
+    source_hash: sha256-8fdb8b9f2725465a
   BC-2330.50.20:
     name: Pricing delle finestre temporali
     description: |
       Pricing dinamico delle finestre di consegna in base alla domanda e alla densità
       del percorso.
+    source_hash: sha256-9504b4df42405539
   BC-2330.50.30:
     name: Coordinamento del dispacciamento dei corrieri
     description: |
       Coordinamento del dispacciamento con corrieri dell'ultimo miglio propri e di terze
       parti.
+    source_hash: sha256-8abd0a106ab30e0b
 metadata:
   status: draft
   reviewer: pending

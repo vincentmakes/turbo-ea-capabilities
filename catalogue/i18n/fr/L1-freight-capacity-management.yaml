@@ -7,6 +7,7 @@ entries:
       Vente, allocation et gestion du rendement de la capacité de transport sur les
       départs de navires, les vols, les lignes routières et ferroviaires, et les
       parcs d'équipements.
+    source_hash: sha256-f6d0e842dd9bdfa3
 
   BC-2400.10:
     name: Gestion de l'inventaire de capacité
@@ -20,126 +21,148 @@ entries:
     out_of_scope:
       - Conception du réseau et des horaires à long terme (BC-2410)
       - Acceptation des réservations (BC-2400.40)
+    source_hash: sha256-5a447c1b6dfb992d
 
   BC-2400.10.10:
     name: Inventaire de capacité des navires et convoyeurs
     description: |
       Enregistrement de la capacité de charge, de pont et de cabine par navire,
       aéronef, train ou véhicule.
+    source_hash: sha256-57b917da29f4cb44
 
   BC-2400.10.20:
     name: Inventaire de capacité des équipements
     description: |
       Inventaire des conteneurs, remorques, châssis et ULD disponibles par
       localisation et état.
+    source_hash: sha256-b34a3f197b16c0b8
 
   BC-2400.10.30:
     name: Capacité des lignes et des horaires
     description: |
       Capacité par service programmé sur une ligne, incluant les tronçons de
       correspondance.
+    source_hash: sha256-d9d015dbd9bec4bc
 
   BC-2400.10.40:
     name: Mise en commun de capacité et échange de créneaux
     description: |
       Capacité mutualisée dans le cadre d'alliances et d'accords d'échange de
       créneaux avec des transporteurs partenaires.
+    source_hash: sha256-d0711890b0185068
 
   BC-2400.20:
     name: Gestion de l'allocation de capacité
     description: |
       Allocation de la capacité disponible entre les contrats clients, les segments
       de marché et la demande spot.
+    source_hash: sha256-2b52260d5c374bec
 
   BC-2400.20.10:
     name: Allocation de capacité contractuelle
     description: |
       Allocation de capacité aux clients couverts par des engagements de quantité
       minimale et des accords de compte nommé.
+    source_hash: sha256-ce8e128004e94739
 
   BC-2400.20.20:
     name: Allocation de capacité sur le marché spot
     description: |
       Allocation de la capacité mise à disposition sur les canaux de réservation
       spot.
+    source_hash: sha256-9da7c6f77ca47cae
 
   BC-2400.20.30:
     name: Réallocation et récupération de capacité
     description: |
       Réallocation de la capacité inutilisée ou récupérée avant la date limite
       d'enregistrement.
+    source_hash: sha256-74b6a1febe858858
 
   BC-2400.30:
     name: Gestion du rendement et des revenus
     description: |
       Optimisation du revenu par unité de capacité par les décisions de tarification,
       de mix et de surbooking.
+    source_hash: sha256-69a01f93e0a8610c
 
   BC-2400.30.10:
     name: Prévision de la demande de capacité
     description: |
       Prévision des réservations, des no-shows et du risque d'offloading par service.
+    source_hash: sha256-c43e6c5ae23c942f
 
   BC-2400.30.20:
     name: Optimisation du rendement
     description: |
       Optimisation du mix de classes tarifaires et de classes de taux pour maximiser
       le rendement par tonne, créneau ou EVP.
+    source_hash: sha256-39e970d94d2113af
 
   BC-2400.30.30:
     name: Gestion du surbooking
     description: |
       Définition et surveillance des limites de surbooking et de l'exposition
       à l'offloading.
+    source_hash: sha256-395aaf268f368aed
 
   BC-2400.30.40:
     name: Gestion du mix de revenus
     description: |
       Gestion du mix de revenus entre contrats, spot et lignes annexes.
+    source_hash: sha256-26d4e361cd7afaca
 
   BC-2400.40:
     name: Gestion des réservations
     description: |
       Acceptation, modification et annulation des réservations de capacité par
       rapport aux horaires publiés et aux devis.
+    source_hash: sha256-0fb9962ba66c640b
 
   BC-2400.40.10:
     name: Réservation de capacité
     description: |
       Acceptation des réservations par rapport à la capacité disponible et à la
       validité des tarifs.
+    source_hash: sha256-5959b32c4e93420c
 
   BC-2400.40.20:
     name: Modification et annulation de réservation
     description: |
       Modifications, reports et annulations de réservations incluant les frais de
       no-show.
+    source_hash: sha256-869dea4c05ddf1e2
 
   BC-2400.40.30:
     name: Gestion des listes d'attente et de stand-by
     description: |
       Gestion des dossiers fret en stand-by et en liste d'attente pour obtenir une
       capacité confirmée.
+    source_hash: sha256-0aea40ddc55de2c7
 
   BC-2400.50:
     name: Gestion de la performance de la capacité
     description: |
       Surveillance du taux de remplissage, du chargement et de l'utilisation pour
       guider les décisions de mix de capacité et d'évolution du réseau.
+    source_hash: sha256-e4691e3d8de222a6
 
   BC-2400.50.10:
     name: Analyse du taux de remplissage
     description: |
       Analyse du taux de remplissage par service, ligne et segment.
+    source_hash: sha256-29fd203688aee215
 
   BC-2400.50.20:
     name: Reporting de l'utilisation de la capacité
     description: |
       Reporting de l'utilisation de la capacité aux équipes commerciales et
       opérationnelles.
+    source_hash: sha256-3fe2f94f9716877d
 
   BC-2400.50.30:
     name: Amélioration de la performance de la capacité
     description: |
       Initiatives visant à améliorer le revenu par créneau et à réduire le
       repositionnement à vide.
+    source_hash: sha256-8efed1fbdd6e7f95

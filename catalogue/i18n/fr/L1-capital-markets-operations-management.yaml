@@ -5,147 +5,184 @@ entries:
     name: Gestion des opérations sur les marchés des capitaux
     description: |
       Confirmation des transactions, compensation, règlement-livraison, conservation, gestion du collatéral, opérations sur titres et réconciliation.
+    source_hash: sha256-a4cf6d43710ee9d6
   BC-1380.10:
     name: Gestion de la confirmation des transactions
     description: |
       Saisie, enregistrement, confirmation et réclamation des transactions.
+    source_hash: sha256-035091caaa03cadf
   BC-1380.10.10:
     name: Saisie et enregistrement des transactions
     description: |
       Saisie et enregistrement des transactions dans les systèmes front et middle office.
+    source_hash: sha256-10b60ed3fd0009ae
   BC-1380.10.20:
     name: Rapprochement des confirmations de transaction
     description: |
       Rapprochement et affirmation des confirmations de transaction.
+    source_hash: sha256-3e5a4cf73a33e0e1
   BC-1380.10.30:
     name: Traitement des réclamations de transaction
     description: |
       Traitement des réclamations et des transactions non rapprochées.
+    source_hash: sha256-099ca4070198900a
   BC-1380.20:
     name: Gestion de la compensation
     description: |
       Compensation centrale, contreparties centrales (CCP) et adhésion à la chambre de compensation.
+    source_hash: sha256-159beae68a4360a4
   BC-1380.20.10:
     name: Soumission des transactions compensées aux CCP
     description: |
       Soumission des transactions compensées aux contreparties centrales.
+    source_hash: sha256-7a3026650878d5bb
   BC-1380.20.20:
     name: Gestion des marges de compensation
     description: |
       Gestion des appels de marge initiale et de variation avec les CCP.
+    source_hash: sha256-16e2ebda551328e6
   BC-1380.20.30:
     name: Opérations des membres compensateurs
     description: |
       Exploitation des services de membre compensateur direct et pour compte de tiers.
+    source_hash: sha256-d207a4645268039d
   BC-1380.30:
     name: Gestion du règlement-livraison
     description: |
       Règlement DvP, cycles T+1/T+2 et gestion des défauts de règlement.
+    source_hash: sha256-ebe88e4e0a798b3b
   BC-1380.30.10:
     name: Génération des instructions de règlement
     description: |
       Génération des instructions de règlement pour les transactions.
+    source_hash: sha256-1a72ad72a9f9d362
   BC-1380.30.20:
     name: Opérations de règlement des titres
     description: |
       Opérations de règlement DvP auprès des dépositaires centraux et internationaux.
+    source_hash: sha256-97fda49a4da8bf14
   BC-1380.30.30:
     name: Gestion des défauts de règlement
     description: |
       Identification et résolution des défauts de règlement (CSDR).
+    source_hash: sha256-2df686fef160f0de
   BC-1380.40:
     name: Gestion de la conservation
     description: |
       Conservation des titres et réseaux de sous-dépositaires.
+    source_hash: sha256-6301aaebc1f8234a
   BC-1380.40.10:
     name: Conservation des titres
     description: |
       Conservation des titres pour les comptes clients et propriétaires.
+    source_hash: sha256-f4326e54664fba87
   BC-1380.40.20:
     name: Gestion du réseau de sous-dépositaires
     description: |
       Gestion du réseau de sous-dépositaires et des banques agents.
+    source_hash: sha256-a3f208cd6fae010d
   BC-1380.40.30:
     name: Services fiscaux liés à la conservation
     description: |
       Récupération de retenue à la source et autres services fiscaux liés à la conservation.
+    source_hash: sha256-bfe3257fb5e2b4ba
   BC-1380.50:
     name: Gestion du collatéral
     description: |
       Collatéral, appels de marge et optimisation.
+    source_hash: sha256-03efb2a08fe4b760
   BC-1380.50.10:
     name: Gestion des appels de marge
     description: |
       Émission et réponse aux appels de marge dans le cadre des régimes bilatéraux et CCP.
+    source_hash: sha256-dcba172784f9849f
   BC-1380.50.20:
     name: Opérations de mouvement de collatéral
     description: |
       Mouvements opérationnels de collatéral entre contreparties.
+    source_hash: sha256-926cc86478fa0222
   BC-1380.50.30:
     name: Optimisation du collatéral
     description: |
       Optimisation de l'utilisation et de la substitution du collatéral.
+    source_hash: sha256-b308eb73b4866e33
   BC-1380.50.40:
     name: Gestion de l'éligibilité du collatéral
     description: |
       Règles d'éligibilité du collatéral et application des décotes (haircuts).
+    source_hash: sha256-3e33c3ac3472c398
   BC-1380.60:
     name: Gestion des opérations sur titres
     description: |
       Traitement des opérations sur titres obligatoires et facultatives.
+    source_hash: sha256-7ff23b5e102f1bca
   BC-1380.60.10:
     name: Notification des opérations sur titres
     description: |
       Collecte et notification des opérations sur titres aux clients.
+    source_hash: sha256-5e16d13ed649e30c
   BC-1380.60.20:
     name: Traitement des opérations sur titres obligatoires
     description: |
       Traitement des dividendes, coupons et opérations obligatoires.
+    source_hash: sha256-27257085ecca6172
   BC-1380.60.30:
     name: Traitement des opérations sur titres facultatives
     description: |
       Traitement des opérations facultatives incluant les choix d'option.
+    source_hash: sha256-26ff1675e4666492
   BC-1380.60.40:
     name: Opérations de vote par procuration
     description: |
       Collecte et transmission des votes par procuration.
+    source_hash: sha256-7789e47ab13e9f20
   BC-1380.70:
     name: Gestion de la réconciliation
     description: |
       Réconciliation nostro/vostro, de positions et de trésorerie.
+    source_hash: sha256-8e687c5aae2174ea
   BC-1380.70.10:
     name: Réconciliation de trésorerie
     description: |
       Réconciliation des comptes de trésorerie incluant les comptes nostro/vostro.
+    source_hash: sha256-ccc8f624bd78c60d
   BC-1380.70.20:
     name: Réconciliation des positions en titres
     description: |
       Réconciliation des positions en titres entre les systèmes et les dépositaires.
+    source_hash: sha256-c75c74d18120a97f
   BC-1380.70.30:
     name: Réconciliation des transactions front-back
     description: |
       Réconciliation front-to-back des transactions entre les systèmes.
+    source_hash: sha256-0332c3dbb93284bc
   BC-1380.70.40:
     name: Investigation des écarts de réconciliation
     description: |
       Investigation et résolution des écarts de réconciliation.
+    source_hash: sha256-aa2057577a57a4a5
   BC-1380.80:
     name: Gestion du prêt de titres
     description: |
       Prêt, emprunt de titres et gestion du collatéral.
+    source_hash: sha256-a868736fc495a094
   BC-1380.80.10:
     name: Origination des opérations de prêt de titres
     description: |
       Origination des opérations de prêt et d'emprunt de titres.
+    source_hash: sha256-fa5db392585cf29e
   BC-1380.80.20:
     name: Opérations de collatéral pour le prêt de titres
     description: |
       Opérations de collatéral liées au prêt de titres.
+    source_hash: sha256-ddcf1343862180bc
   BC-1380.80.30:
     name: Calcul des commissions et remises sur prêt de titres
     description: |
       Calcul et règlement des commissions et remises.
+    source_hash: sha256-11dc72f8fcad3490
   BC-1380.80.40:
     name: Gestion des rappels de titres prêtés
     description: |
       Rappel des titres prêtés et opérations de substitution.
+    source_hash: sha256-8dfd64fa9135a048

@@ -35,6 +35,7 @@ class LocalizedFields(BaseModel):
     aliases: tuple[str, ...] = ()
     in_scope: tuple[str, ...] = ()
     out_of_scope: tuple[str, ...] = ()
+    source_hash: Optional[str] = None
 
     @field_validator("aliases", "in_scope", "out_of_scope", mode="before")
     @classmethod

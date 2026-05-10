@@ -7,153 +7,185 @@ entries:
       Médiation, facturation, tarification, présentation des factures,
       recouvrement, assurance des revenus et traitement des taxes et surcharges
       spécifiques aux télécoms sur les services prépayés, postpayés et convergents.
+    source_hash: sha256-18d66e4ca9f0f999
   BC-2660.10:
     name: Gestion de la médiation des usages
     description: |
       Collecte, normalisation et routage des enregistrements d'utilisation depuis
       les éléments réseau vers les systèmes de facturation et de tarification.
+    source_hash: sha256-ab3de1f3107de58f
   BC-2660.10.10:
     name: Collecte des CDR
     description: |
       Collecte des enregistrements détaillés d'appels, sessions et événements
       depuis les éléments réseau et sources IPDR.
+    source_hash: sha256-8323efdc16ee4e4d
   BC-2660.10.20:
     name: Enrichissement des CDR
     description: |
       Enrichissement des CDR avec les données abonné, tarifaires et de référence
       nécessaires en aval.
+    source_hash: sha256-832a64a1146e8eea
   BC-2660.10.30:
     name: Déduplication des CDR
     description: |
       Détection et suppression des enregistrements d'utilisation en double.
+    source_hash: sha256-f4dc7bdbe4236a44
   BC-2660.10.40:
     name: Conversion du format des CDR
     description: |
       Conversion des formats de CDR entre les sources de collecte et les
       consommateurs en aval.
+    source_hash: sha256-8aed22e8dc3bbf11
   BC-2660.20:
     name: Gestion de la tarification et de la taxation
     description: |
       Facturation en ligne et hors ligne, tarification, gestion des soldes et
       rechargement sur les modèles prépayés et postpayés.
+    source_hash: sha256-f60a82b46b22da5c
   BC-2660.20.10:
     name: Gestion de la facturation en ligne
     description: |
       Facturation en temps réel des sessions et événements par rapport au solde
       et à la politique de l'abonné.
+    source_hash: sha256-82449f7cdcb62fb1
   BC-2660.20.20:
     name: Gestion de la facturation hors ligne
     description: |
       Tarification hors ligne des enregistrements d'utilisation et d'événements
       pour la facturation postpayée.
+    source_hash: sha256-cfce7e066337d606
   BC-2660.20.30:
     name: Gestion des soldes
     description: |
       Gestion des soldes principaux et dédiés, des accumulateurs et des quotas
       des abonnés.
+    source_hash: sha256-046a6fb32b486d2e
   BC-2660.20.40:
     name: Gestion des bons et rechargements
     description: |
       Émission, distribution et remboursement de bons et de rechargements
       électroniques.
+    source_hash: sha256-d4e4d5e107123b79
   BC-2660.30:
     name: Gestion des opérations de facturation
     description: |
       Exécution des cycles de facturation, calcul des factures et gestion des
       ajustements et corrections.
+    source_hash: sha256-af1bd4488e7b14e4
   BC-2660.30.10:
     name: Exécution des cycles de facturation
     description: |
       Exécution des cycles de facturation planifiés et des cycles ad hoc.
+    source_hash: sha256-560661db2b0dc591
   BC-2660.30.20:
     name: Calcul des factures
     description: |
       Calcul des frais, taxes et ajustements sur tous les composants du compte.
+    source_hash: sha256-f2e133fa83110f2f
   BC-2660.30.30:
     name: Ajustement des factures
     description: |
       Application des ajustements approuvés aux factures, incluant les crédits
       et renonciations.
+    source_hash: sha256-80352e91951d0ef7
   BC-2660.30.40:
     name: Correction des factures
     description: |
       Correction des factures incorrectes par re-facturation ou ajustements
       compensatoires.
+    source_hash: sha256-ee1f968b931d8d26
   BC-2660.40:
     name: Gestion de la présentation et des demandes de facturation
     description: |
       Présentation des factures en plusieurs formats et résolution des demandes
       et litiges des clients.
+    source_hash: sha256-4b858ffaf0d7c811
   BC-2660.40.10:
     name: Présentation des factures
     description: |
       Production et distribution des factures en formats papier, PDF et
       numérique.
+    source_hash: sha256-f1a7e4f0bbc22943
   BC-2660.40.20:
     name: Demandes de factures détaillées
     description: |
       Traitement des demandes de détail et initiation des litiges par les clients.
+    source_hash: sha256-aef459e46e1984d7
   BC-2660.40.30:
     name: Explication des factures
     description: |
       Explication et visualisation des composants de facture pour les clients
       et les agents de service.
+    source_hash: sha256-9443f8b365634a22
   BC-2660.50:
     name: Gestion des recouvrements télécom
     description: |
       Flux de relance, suspension, déconnexion et recouvrement de créances
       spécifiques aux télécoms.
+    source_hash: sha256-c96dffabb5dc16fe
   BC-2660.50.10:
     name: Flux de relance
     description: |
       Flux de relance multi-étapes pour les comptes postpayés en retard de
       paiement.
+    source_hash: sha256-ab472d9b28b57005
   BC-2660.50.20:
     name: Suspension et déconnexion des services
     description: |
       Suspension partielle, déconnexion totale et réactivation des services
       pour soldes impayés.
+    source_hash: sha256-0f2eadbf28f42168
   BC-2660.50.30:
     name: Coordination du recouvrement de créances
     description: |
       Coordination avec les agences de recouvrement internes et tierces.
+    source_hash: sha256-760f59faaca5b42f
   BC-2660.60:
     name: Gestion de l'assurance des revenus
     description: |
       Détection, quantification et remédiation des fuites de revenus sur
       l'ensemble de la chaîne de revenus.
+    source_hash: sha256-1e01b01571651b1d
   BC-2660.60.10:
     name: Détection des fuites de revenus
     description: |
       Détection des fuites entre l'utilisation réseau, la médiation, la
       facturation, la taxation et la comptabilité.
+    source_hash: sha256-5670a6d8789bf361
   BC-2660.60.20:
     name: Vérification de l'exactitude de la facturation
     description: |
       Vérification par échantillonnage et exhaustive de l'exactitude des
       factures par rapport aux événements source.
+    source_hash: sha256-23811d4a223561ba
   BC-2660.60.30:
     name: Réconciliation réseau-facturation
     description: |
       Réconciliation de bout en bout des événements enregistrés réseau avec
       les revenus facturés.
+    source_hash: sha256-d2fd1ea106384b87
   BC-2660.70:
     name: Gestion des taxes et surcharges télécom
     description: |
       Calcul et versement des taxes, surcharges et redevances réglementaires
       spécifiques aux télécoms.
+    source_hash: sha256-83d1d3447c537937
   BC-2660.70.10:
     name: Surcharge pour le service universel
     description: |
       Calcul, facturation et versement des contributions au fonds pour le service
       universel.
+    source_hash: sha256-576d95c08eacbcbf
   BC-2660.70.20:
     name: Taxe d'accise télécom
     description: |
       Calcul et versement des taxes d'accise et taxes spécifiques aux
       communications.
+    source_hash: sha256-76ece2d388fef22a
   BC-2660.70.30:
     name: Provisionnement des redevances réglementaires
     description: |
       Provisionnement et versement des redevances réglementaires récurrentes
       liées aux comptages d'abonnés et de revenus.
+    source_hash: sha256-92048a56f0e09f58

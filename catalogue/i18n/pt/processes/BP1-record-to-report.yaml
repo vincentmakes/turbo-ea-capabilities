@@ -1,0 +1,124 @@
+kind: business-process
+locale: pt
+source: BP1-record-to-report.yaml
+entries:
+  BP-1080:
+    name: "Registro-a-Relatório"
+    description: "Ciclo de fechamento financeiro da captura de transações ao fechamento de sub-ledgers, conciliação, consolidação, reporte gerencial, reporte estatutário e regulatório, e sign-off de auditoria. Um BP2 por stage_name do VS-460."
+    source_hash: sha256-4fde77e621173949
+  BP-1080.10:
+    name: "Captura de Transações"
+    description: "Capturar transações econômicas dos sistemas-fonte para o backbone financeiro com a codificação adequada."
+    source_hash: sha256-777e85c66d610c9a
+  BP-1080.10.10:
+    name: "Capturar Transações de Origem"
+    description: "Capturar transações de vendas, compras, folha, tesouraria e outros sistemas-fonte para os feeds contábeis."
+    source_hash: sha256-fbc670a75cbbd7dc
+  BP-1080.10.20:
+    name: "Aplicar Codificação Contábil"
+    description: "Aplicar codificação de conta, centro de custo e projeto conforme plano de contas e política."
+    source_hash: sha256-3208ef579f9e5a6e
+  BP-1080.10.30:
+    name: "Validar Dados Transacionais"
+    description: "Executar regras de validação — completude, classificação, moeda, período — e rotear exceções para correção."
+    source_hash: sha256-94f1805cf11bb0f4
+  BP-1080.20:
+    name: "Fechamento de Sub-Ledger"
+    description: "Fechar sub-ledgers — AR, AP, ativos fixos, folha, tesouraria — e lançar no razão geral."
+    source_hash: sha256-3a01332bbbd8e5b6
+  BP-1080.20.10:
+    name: "Fechar Sub-Ledger de AR"
+    description: "Fechar o sub-ledger de contas a receber; lançar o resumo AR-para-GL e rolar saldos abertos."
+    source_hash: sha256-16b68b86dab484d7
+  BP-1080.20.20:
+    name: "Fechar Sub-Ledger de AP"
+    description: "Fechar o sub-ledger de contas a pagar; lançar o resumo AP-para-GL e rolar saldos abertos."
+    source_hash: sha256-822c5ccc9d117a3e
+  BP-1080.20.30:
+    name: "Fechar Sub-Ledger de Ativos Fixos"
+    description: "Executar depreciação e adições/baixas de ativos fixos; lançar no GL."
+    source_hash: sha256-2cc9569fd696441c
+  BP-1080.20.40:
+    name: "Fechar Outros Sub-Ledgers"
+    description: "Fechar sub-ledgers de folha, tesouraria, estoque e projetos; lançar no GL com trilha de auditoria."
+    source_hash: sha256-dfa3c16a92f5cd96
+  BP-1080.30:
+    name: "Conciliação e Ajustes"
+    description: "Conciliar contas do balanço e lançar ajustes de fim de período para fechar os livros."
+    source_hash: sha256-a40463df068adf10
+  BP-1080.30.10:
+    name: "Conciliar Contas do Balanço"
+    description: "Conciliar caixa, AR, AP, intercompany, accruals e outras contas do balanço com o detalhe de origem."
+    source_hash: sha256-cdac4b1e9dea96b3
+  BP-1080.30.20:
+    name: "Lançar Ajustes de Fim de Período"
+    description: "Lançar accruals, prepagamentos, deferrals e reclassificações; capturar a documentação suporte."
+    source_hash: sha256-94718769a1e91c73
+  BP-1080.30.30:
+    name: "Resolver Variações de Conciliação"
+    description: "Investigar e resolver itens conciliatórios; escalar pendências à controladoria para write-off ou carry-forward."
+    source_hash: sha256-47fa45469b7aecfa
+  BP-1080.40:
+    name: "Consolidação"
+    description: "Consolidar demonstrativos entre entidades legais e moedas; eliminar intercompany; produzir resultados do grupo."
+    source_hash: sha256-8664a943f2bd0932
+  BP-1080.40.10:
+    name: "Traduzir Balancetes em Moeda Local"
+    description: "Traduzir balancetes em moeda local para a moeda de reporte às taxas de câmbio apropriadas conforme o padrão contábil."
+    source_hash: sha256-f313d0c3bb592eaf
+  BP-1080.40.20:
+    name: "Eliminar Intercompany"
+    description: "Eliminar vendas, saldos e lucros não realizados entre empresas conforme regras de consolidação."
+    source_hash: sha256-9a6678eccaf80ba7
+  BP-1080.40.30:
+    name: "Produzir Resultados Consolidados do Grupo"
+    description: "Produzir balanço, DRE, fluxo de caixa e mutações do patrimônio consolidados do grupo; persistir no sistema de consolidação."
+    source_hash: sha256-7a001bb947c22f23
+  BP-1080.50:
+    name: "Reporte Gerencial"
+    description: "Produzir relatórios gerenciais internos para a equipe executiva, conselho e líderes operacionais."
+    source_hash: sha256-9c8b574b42de7183
+  BP-1080.50.10:
+    name: "Construir Relatórios Gerenciais"
+    description: "Construir relatórios gerenciais — DRE por segmento, centro de custo, produto, cliente; visões de caixa e capital de giro."
+    source_hash: sha256-de53fc2bd2c34b48
+  BP-1080.50.20:
+    name: "Analisar Variações vs Plano"
+    description: "Analisar variações de realizado vs plano e período anterior; identificar drivers e ações corretivas."
+    source_hash: sha256-f7c61b60767e9595
+  BP-1080.50.30:
+    name: "Distribuir Pacote Gerencial"
+    description: "Distribuir o pacote de reporte gerencial a executivos e líderes operacionais na cadência acordada."
+    source_hash: sha256-704f3bdaa5a9510b
+  BP-1080.60:
+    name: "Reporte Estatutário e Regulatório"
+    description: "Produzir declarações estatutárias, regulatórias e fiscais às autoridades dentro do prazo."
+    source_hash: sha256-28b70bf275aca7d0
+  BP-1080.60.10:
+    name: "Preparar Demonstrações Estatutárias"
+    description: "Preparar demonstrações financeiras estatutárias por GAAP local / IFRS para cada entidade legal na jurisdição."
+    source_hash: sha256-b8abdafd810f4956
+  BP-1080.60.20:
+    name: "Apresentar Declarações Fiscais"
+    description: "Preparar e apresentar declarações de imposto de renda corporativo, IVA/ICMS, retenções e preço de transferência por jurisdição."
+    source_hash: sha256-daddfbd3713c4626
+  BP-1080.60.30:
+    name: "Apresentar Relatórios Regulatórios"
+    description: "Apresentar relatórios regulatórios setoriais (bancos, seguros, divulgações de companhias listadas) aos reguladores aplicáveis."
+    source_hash: sha256-9492faf5010a52e2
+  BP-1080.70:
+    name: "Auditoria e Sign-Off"
+    description: "Apoiar auditoria interna e externa; obter sign-off sobre demonstrações financeiras e controles."
+    source_hash: sha256-fbcdf10910aea625
+  BP-1080.70.10:
+    name: "Apoiar Auditoria Externa"
+    description: "Fornecer evidências e walk-throughs aos auditores externos; resolver consultas de auditoria; responder a achados."
+    source_hash: sha256-9373890a507a8478
+  BP-1080.70.20:
+    name: "Apoiar Auditoria Interna"
+    description: "Apoiar revisões da auditoria interna sobre fechamento financeiro, conciliações e controles; encerrar achados."
+    source_hash: sha256-93f2c12d1ae74ff2
+  BP-1080.70.30:
+    name: "Obter Sign-Off da Gestão"
+    description: "Obter sign-off do CFO e CEO sobre demonstrações financeiras e representações de controles SOX / equivalentes; reportar ao comitê de auditoria conforme o protocolo de governança corporativa."
+    source_hash: sha256-7615dbb49880ed60

@@ -5,6 +5,7 @@ entries:
     name: Gestion des opérations de la plateforme SaaS
     description: |
       Ingénierie de la fiabilité des services, observabilité, réponse aux incidents en astreinte, gestion de la capacité, des performances et de la reprise après sinistre du service SaaS multi-tenant.
+    source_hash: sha256-c6d5fa99c3a9b789
   BC-4220.10:
     name: Ingénierie de la fiabilité des services
     description: |
@@ -14,103 +15,129 @@ entries:
     out_of_scope:
       - Engagements SLA vis-à-vis des clients (couvert par la gestion de la conformité et de la confiance SaaS)
       - Niveaux de service informatique internes (couvert par la gestion des technologies de l'information)
+    source_hash: sha256-f3c55a40706dbee0
   BC-4220.10.10:
     name: Définition des indicateurs de niveau de service
     description: |
       Définition des indicateurs de niveau de service mesurant l'expérience client des services en production.
+    source_hash: sha256-94d1aafedc852abf
   BC-4220.10.20:
     name: Gestion des objectifs de niveau de service
     description: |
       Fixation, révision et actualisation des objectifs de niveau de service sur les services.
+    source_hash: sha256-6b3cdfe29da27fe2
   BC-4220.10.30:
     name: Gestion des budgets d'erreur
     description: |
       Gestion des budgets d'erreur et de la politique régissant leur consommation.
+    source_hash: sha256-9b815fd1abf00bb1
   BC-4220.20:
     name: Gestion de l'observabilité
     description: |
       Journaux, métriques, traces et monitoring synthétique rendant le service en production compréhensible.
+    source_hash: sha256-90dd7562e3d249b0
   BC-4220.20.10:
     name: Gestion de la journalisation applicative
     description: |
       Gestion des conventions de journalisation applicative, des pipelines et de la rétention.
+    source_hash: sha256-6a411b045a7aa03d
   BC-4220.20.20:
     name: Gestion du pipeline de métriques
     description: |
       Exploitation des pipelines d'ingestion, de stockage et d'interrogation des métriques.
+    source_hash: sha256-8ff0214bf9d04029
   BC-4220.20.30:
     name: Traçage distribué
     description: |
       Traçage distribué de bout en bout entre les services pour les investigations en production.
+    source_hash: sha256-d3971fad8949a12a
   BC-4220.20.40:
     name: Monitoring synthétique
     description: |
       Sondes synthétiques exerçant les parcours utilisateurs critiques depuis l'extérieur du service.
+    source_hash: sha256-bd5da0d5a976c3e5
   BC-4220.30:
     name: Gestion de la réponse aux incidents
     description: |
       Réponse en astreinte, détection des incidents, coordination et communication client lors des incidents de production.
+    source_hash: sha256-e97ef643804b720f
   BC-4220.30.10:
     name: Gestion des rotations d'astreinte
     description: |
       Définition et exploitation des rotations d'astreinte au sein des équipes produit.
+    source_hash: sha256-586a5402f8d90c2c
   BC-4220.30.20:
     name: Détection des incidents
     description: |
       Détection des incidents de production à partir de la télémétrie et des signaux externes.
+    source_hash: sha256-8eb25bb6e7701c33
   BC-4220.30.30:
     name: Coordination des incidents
     description: |
       Coordination de la réponse aux incidents incluant les rôles, les communications et les décisions pendant l'incident.
+    source_hash: sha256-397364287785699b
   BC-4220.30.40:
     name: Communication aux clients lors des incidents
     description: |
       Communication aux clients affectés pendant et après les incidents.
+    source_hash: sha256-fedbf3cc73593b40
   BC-4220.40:
     name: Postmortems et amélioration de la fiabilité
     description: |
       Rédaction des postmortems et suivi des actions d'amélioration de la fiabilité afin que les enseignements s'accumulent dans le temps.
+    source_hash: sha256-ccc471918fdc9e2d
   BC-4220.40.10:
     name: Rédaction des postmortems
     description: |
       Rédaction de postmortems sans reproche après les incidents et les quasi-accidents significatifs.
+    source_hash: sha256-68732ffb8fd1e616
   BC-4220.40.20:
     name: Suivi des actions d'amélioration de la fiabilité
     description: |
       Suivi des actions d'amélioration de la fiabilité jusqu'à leur clôture au sein des équipes.
+    source_hash: sha256-1fbbe86c7fc28d70
   BC-4220.40.30:
     name: Analyse des tendances de fiabilité
     description: |
       Analyse des tendances de fiabilité sur les services et les horizons temporels.
+    source_hash: sha256-01d2a20db2afe130
   BC-4220.50:
     name: Gestion de la capacité et des performances
     description: |
       Prévision de la capacité, politiques d'auto-scaling et tests de performance du service SaaS.
+    source_hash: sha256-e1eb97162623d226
   BC-4220.50.10:
     name: Prévision de la capacité
     description: |
       Prévision de la demande de capacité sur les services et les régions.
+    source_hash: sha256-865f1934b46cb549
   BC-4220.50.20:
     name: Gestion des politiques d'auto-scaling
     description: |
       Définition et réglage des politiques d'auto-scaling pour les services du produit.
+    source_hash: sha256-5593c826524575ff
   BC-4220.50.30:
     name: Tests de performance
     description: |
       Tests de charge, de stress et d'endurance du service en production.
+    source_hash: sha256-bbb84c96d916bd37
   BC-4220.60:
     name: Reprise après sinistre et résilience
     description: |
       Sauvegarde et restauration, orchestration du basculement et exercices de reprise après sinistre pour le service SaaS.
+    source_hash: sha256-b5f0234c064926cb
   BC-4220.60.10:
     name: Gestion des sauvegardes et restaurations
     description: |
       Politique de sauvegarde, exécution et validation des restaurations pour les datastores du service.
+    source_hash: sha256-7ef3b9e990b36b50
   BC-4220.60.20:
     name: Orchestration du basculement
     description: |
       Orchestration du basculement entre les zones de disponibilité et les régions.
+    source_hash: sha256-3089230e2f4004d4
   BC-4220.60.30:
     name: Gestion des exercices de reprise après sinistre
     description: |
       Planification et réalisation des exercices de reprise après sinistre et des game-days.
+    source_hash: sha256-9d76ec8a59193ed7

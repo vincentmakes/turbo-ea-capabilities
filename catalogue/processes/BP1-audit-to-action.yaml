@@ -1,0 +1,195 @@
+id: BP-1120
+name: Audit-to-Action
+level: 1
+industry: Cross-Industry
+description: >-
+  Internal-audit cycle from audit-universe planning through engagement
+  scoping, fieldwork, findings, remediation tracking, and audit
+  quality assurance. One BP2 per VS-80 stage_name.
+framework_refs: []
+realizes_capability_ids:
+  - BC-140
+  - BC-1540
+  - BC-2380
+  - BC-2840
+  - BC-3590
+  - BC-4290
+  - BC-4340
+  - BC-4750
+  - BC-4970
+  - BC-4990
+children:
+  - id: BP-1120.10
+    name: Audit Universe & Plan
+    level: 2
+    description: Maintain the audit universe and build the risk-based annual audit plan.
+    realizes_capability_ids:
+      - BC-140
+      - BC-4750
+    children:
+      - id: BP-1120.10.10
+        name: Maintain Audit Universe
+        level: 3
+        description: Maintain the population of auditable entities — processes, systems, locations, third parties.
+        realizes_capability_ids:
+          - BC-140
+        children: []
+      - id: BP-1120.10.20
+        name: Build Risk-Based Audit Plan
+        level: 3
+        description: Build the annual audit plan from the universe weighted by risk; obtain audit-committee approval.
+        realizes_capability_ids:
+          - BC-140
+          - BC-4750
+        children: []
+  - id: BP-1120.20
+    name: Engagement Scoping
+    level: 2
+    description: Scope the audit engagement — objectives, controls in scope, period, resources.
+    realizes_capability_ids:
+      - BC-140
+    children:
+      - id: BP-1120.20.10
+        name: Define Audit Objectives
+        level: 3
+        description: Define audit objectives, key questions, and risks to address in the engagement.
+        realizes_capability_ids:
+          - BC-140
+        children: []
+      - id: BP-1120.20.20
+        name: Plan Audit Procedures
+        level: 3
+        description: Plan audit procedures — walk-throughs, sample tests, analytics — and required evidence.
+        realizes_capability_ids:
+          - BC-140
+        children: []
+  - id: BP-1120.30
+    name: Fieldwork
+    level: 2
+    description: Execute audit fieldwork — gather evidence, perform tests, and document workpapers.
+    realizes_capability_ids:
+      - BC-140
+      - BC-1540
+      - BC-2380
+      - BC-2840
+      - BC-3590
+      - BC-4290
+      - BC-4340
+      - BC-4750
+      - BC-4970
+    children:
+      - id: BP-1120.30.10
+        name: Walk Through Process
+        level: 3
+        description: Walk through the in-scope process to understand design and key controls; document narrative and flowchart.
+        realizes_capability_ids:
+          - BC-140
+          - BC-1540
+        children: []
+      - id: BP-1120.30.20
+        name: Test Controls and Transactions
+        level: 3
+        description: Run sample-based or population testing of design and operating effectiveness; document workpapers.
+        realizes_capability_ids:
+          - BC-2380
+          - BC-2840
+          - BC-3590
+        children: []
+      - id: BP-1120.30.30
+        name: Run Audit Analytics
+        level: 3
+        description: Run data analytics across the full population to surface anomalies, exceptions, and patterns.
+        realizes_capability_ids:
+          - BC-4290
+          - BC-4340
+          - BC-4970
+        children: []
+      - id: BP-1120.30.40
+        name: Document Audit Evidence
+        level: 3
+        description: Document evidence in workpapers with cross-references; obtain auditee confirmations where required.
+        realizes_capability_ids:
+          - BC-140
+          - BC-4750
+        children: []
+  - id: BP-1120.40
+    name: Findings & Reporting
+    level: 2
+    description: Develop findings, agree management responses, and issue the audit report.
+    realizes_capability_ids:
+      - BC-140
+      - BC-4750
+    children:
+      - id: BP-1120.40.10
+        name: Develop Findings
+        level: 3
+        description: Develop findings with condition, criteria, cause, consequence, and recommendation.
+        realizes_capability_ids:
+          - BC-140
+        children: []
+      - id: BP-1120.40.20
+        name: Agree Management Responses
+        level: 3
+        description: Agree management response — accept, alternate action, dispute — with auditees and target remediation date.
+        realizes_capability_ids:
+          - BC-140
+          - BC-4750
+        children: []
+      - id: BP-1120.40.30
+        name: Issue Audit Report
+        level: 3
+        description: Issue the final audit report to executive sponsor and audit committee; close the engagement.
+        realizes_capability_ids:
+          - BC-140
+          - BC-4750
+        children: []
+  - id: BP-1120.50
+    name: Remediation Tracking
+    level: 2
+    description: Track management's remediation of findings to closure; verify with re-test where applicable.
+    realizes_capability_ids:
+      - BC-140
+      - BC-4290
+      - BC-4340
+      - BC-4750
+      - BC-4990
+    children:
+      - id: BP-1120.50.10
+        name: Track Remediation Status
+        level: 3
+        description: Track open audit findings, target dates, and management progress against the remediation plan.
+        realizes_capability_ids:
+          - BC-140
+          - BC-4290
+          - BC-4990
+        children: []
+      - id: BP-1120.50.20
+        name: Verify Closure
+        level: 3
+        description: Verify closure of finding by re-test, evidence review, or follow-up audit; close in the tracker.
+        realizes_capability_ids:
+          - BC-140
+          - BC-4340
+          - BC-4750
+        children: []
+  - id: BP-1120.60
+    name: Audit Quality Assurance
+    level: 2
+    description: Run quality assurance over the audit function — workpaper review, peer review, external assessment.
+    realizes_capability_ids:
+      - BC-140
+    children:
+      - id: BP-1120.60.10
+        name: Review Audit Workpapers
+        level: 3
+        description: Run supervisory review of workpapers and findings for sufficient and appropriate evidence.
+        realizes_capability_ids:
+          - BC-140
+        children: []
+      - id: BP-1120.60.20
+        name: Run External Quality Assessment
+        level: 3
+        description: Run periodic external quality assessment of the audit function per IIA Standards.
+        realizes_capability_ids:
+          - BC-140
+        children: []

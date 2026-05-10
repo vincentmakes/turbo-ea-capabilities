@@ -7,6 +7,7 @@ entries:
       Visibilidad de extremo a extremo de los envíos mediante la captura de
       eventos, la resolución de estados, la predicción de ETA, las alertas de
       excepciones y las operaciones de torre de control.
+    source_hash: sha256-8ea9ff58ce2685eb
   BC-2510.10:
     name: Gestión de la captura de eventos y estados
     description: |
@@ -17,83 +18,103 @@ entries:
       - Captura de eventos de IoT y telemática
     out_of_scope:
       - Telemática para la condición de activos (BC-2430.40)
+    source_hash: sha256-3a61b4197d69f131
   BC-2510.10.10:
     name: Ingesta de eventos de transportistas
     description: |
       Ingesta de eventos hito del lado del transportista vía EDI y APIs.
+    source_hash: sha256-72f2696ba7dad219
   BC-2510.10.20:
     name: Captura de eventos de IoT y telemática
     description: |
       Captura de eventos de IoT y telemática a nivel de carga.
+    source_hash: sha256-a8a72c7ebbb6ac7d
   BC-2510.10.30:
     name: Captura de actualizaciones de estado manuales
     description: |
       Captura de actualizaciones de estado manuales de conductores, agentes y
       socios.
+    source_hash: sha256-42a8d355da140037
   BC-2510.20:
     name: Gestión del seguimiento de envíos
     description: |
       Resolución del estado del envío a través de tramos, modos y socios, y
       entrega a superficies de seguimiento internas y orientadas al cliente.
+    source_hash: sha256-04fe8209f1f19323
   BC-2510.20.10:
     name: Resolución del estado del envío
     description: |
       Resolución del estado canónico del envío a partir de eventos brutos.
+    source_hash: sha256-442bcdc9db4966f6
   BC-2510.20.20:
     name: Integración del seguimiento multitramo
     description: |
       Integración de trayectos multitramo y multiportador en una única traza.
+    source_hash: sha256-2bdc145ce03e0a36
   BC-2510.20.30:
     name: Operaciones del portal de seguimiento público
     description: |
       Operación de portales de seguimiento público y APIs para clientes.
+    source_hash: sha256-77d6b89cef1e80b7
   BC-2510.30:
     name: Gestión de la predicción de ETA
     description: |
       Cálculo y refinamiento continuo del tiempo estimado de llegada.
+    source_hash: sha256-e9d8eb18e42fec31
   BC-2510.30.10:
     name: Cálculo del ETA
     description: |
       Cálculo determinístico del ETA a partir de horarios e hitos.
+    source_hash: sha256-35017be74dfff2f5
   BC-2510.30.20:
     name: Modelización predictiva del ETA
     description: |
       Modelización predictiva del ETA usando datos históricos y contextuales.
+    source_hash: sha256-8af4670e56884dc7
   BC-2510.30.30:
     name: Alertas de variación del ETA
     description: |
       Alertas sobre variaciones materiales del ETA frente al compromiso.
+    source_hash: sha256-2eec2468a8cac143
   BC-2510.40:
     name: Gestión de excepciones y alertas
     description: |
       Detección de excepciones operativas, notificación a las partes interesadas
       y seguimiento de la resolución de excepciones.
+    source_hash: sha256-c2ef3acb43bcf4b1
   BC-2510.40.10:
     name: Detección de excepciones
     description: |
       Detección de excepciones operativas basada en reglas y modelos.
+    source_hash: sha256-5fc8479c1b20fa96
   BC-2510.40.20:
     name: Notificación a partes interesadas
     description: |
       Notificación a clientes, equipos de operaciones y socios.
+    source_hash: sha256-396b16b057b497fe
   BC-2510.40.30:
     name: Seguimiento de la resolución de excepciones
     description: |
       Seguimiento del triaje, la titularidad y el cierre de excepciones.
+    source_hash: sha256-68b44bf8f3e44230
   BC-2510.50:
     name: Gestión de operaciones de torre de control
     description: |
       Visibilidad de extremo a extremo, monitorización del rendimiento e
       intervención proactiva en todos los transportistas y socios.
+    source_hash: sha256-cd2027757600e7f4
   BC-2510.50.10:
     name: Panel de visibilidad de extremo a extremo
     description: |
       Operación de paneles de visibilidad de extremo a extremo en toda la red.
+    source_hash: sha256-55cb8e63528ed6be
   BC-2510.50.20:
     name: Monitorización del rendimiento entre transportistas
     description: |
       Monitorización del rendimiento entre transportistas y socios.
+    source_hash: sha256-b1e171bf46bc2548
   BC-2510.50.30:
     name: Coordinación de intervenciones proactivas
     description: |
       Coordinación de intervenciones proactivas para proteger los compromisos.
+    source_hash: sha256-3ac3218790ba259a

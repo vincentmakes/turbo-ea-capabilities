@@ -1,0 +1,254 @@
+id: BP-1130
+name: ESG-to-Disclosure
+level: 1
+industry: Cross-Industry
+description: >-
+  Sustainability reporting cycle from ESG strategy and materiality
+  through data collection, data quality and assurance, reporting and
+  disclosure, stakeholder engagement, and improvement targets. One
+  BP2 per VS-200 stage_name.
+framework_refs: []
+realizes_capability_ids:
+  - BC-100
+  - BC-140
+  - BC-200
+  - BC-240
+  - BC-510
+  - BC-610
+  - BC-740
+  - BC-1980
+  - BC-2040
+  - BC-2070
+  - BC-2200
+  - BC-3030
+  - BC-3120
+  - BC-3590
+  - BC-3600
+  - BC-3780
+  - BC-3800
+  - BC-3890
+  - BC-3920
+  - BC-4400
+  - BC-4410
+  - BC-4450
+  - BC-4460
+  - BC-4470
+  - BC-4490
+  - BC-4500
+  - BC-4650
+  - BC-4920
+  - BC-4990
+children:
+  - id: BP-1130.10
+    name: ESG Strategy & Materiality
+    level: 2
+    description: Set ESG ambition and conduct double-materiality assessment to focus on what matters.
+    realizes_capability_ids:
+      - BC-740
+      - BC-4500
+    children:
+      - id: BP-1130.10.10
+        name: Set ESG Ambition
+        level: 3
+        description: Set the ESG ambition and link to enterprise strategy; commit to net-zero, social, and governance goals.
+        realizes_capability_ids:
+          - BC-740
+        children: []
+      - id: BP-1130.10.20
+        name: Run Double-Materiality Assessment
+        level: 3
+        description: Run double-materiality assessment to identify material topics — financial materiality and impact materiality.
+        realizes_capability_ids:
+          - BC-740
+          - BC-4500
+        children: []
+  - id: BP-1130.20
+    name: Data Collection
+    level: 2
+    description: Collect ESG data — emissions, energy, water, waste, social, governance — across the value chain.
+    realizes_capability_ids:
+      - BC-510
+      - BC-740
+      - BC-1980
+      - BC-2040
+      - BC-2070
+      - BC-2200
+      - BC-3030
+      - BC-3590
+      - BC-3600
+      - BC-3780
+      - BC-3800
+      - BC-3890
+      - BC-4450
+      - BC-4460
+      - BC-4500
+      - BC-4650
+      - BC-4920
+    children:
+      - id: BP-1130.20.10
+        name: Collect Environmental Data
+        level: 3
+        description: Collect emissions (Scopes 1/2/3), energy, water, waste, biodiversity, and pollution data from operations.
+        realizes_capability_ids:
+          - BC-740
+          - BC-1980
+          - BC-2070
+          - BC-3030
+          - BC-3800
+          - BC-3890
+        children: []
+      - id: BP-1130.20.20
+        name: Collect Social Data
+        level: 3
+        description: Collect workforce, health-and-safety, diversity, community, and human-rights data per material topics.
+        realizes_capability_ids:
+          - BC-2040
+          - BC-2200
+          - BC-3590
+          - BC-4450
+          - BC-4460
+          - BC-4500
+        children: []
+      - id: BP-1130.20.30
+        name: Collect Governance Data
+        level: 3
+        description: Collect governance data — board composition, ethics, anti-bribery, executive remuneration, supplier conduct.
+        realizes_capability_ids:
+          - BC-510
+          - BC-3600
+          - BC-3780
+          - BC-4650
+        children: []
+      - id: BP-1130.20.40
+        name: Collect Value-Chain Data
+        level: 3
+        description: Collect upstream and downstream value-chain data — supplier emissions, product use-phase, end-of-life.
+        realizes_capability_ids:
+          - BC-510
+          - BC-4920
+        children: []
+  - id: BP-1130.30
+    name: Data Quality & Assurance
+    level: 2
+    description: Run data-quality controls and obtain external assurance on disclosed data.
+    realizes_capability_ids:
+      - BC-140
+      - BC-610
+    children:
+      - id: BP-1130.30.10
+        name: Run ESG Data Quality Controls
+        level: 3
+        description: Run completeness, accuracy, consistency, and traceability controls over ESG data.
+        realizes_capability_ids:
+          - BC-610
+        children: []
+      - id: BP-1130.30.20
+        name: Obtain External Assurance
+        level: 3
+        description: Engage assurance provider for limited or reasonable assurance on disclosed metrics per applicable standard.
+        realizes_capability_ids:
+          - BC-140
+        children: []
+  - id: BP-1130.40
+    name: Reporting & Disclosure
+    level: 2
+    description: Produce ESG report and regulatory disclosures — CSRD/ESRS, SEC climate, GRI, SASB, TCFD, ISSB.
+    realizes_capability_ids:
+      - BC-200
+      - BC-740
+      - BC-1980
+      - BC-2040
+      - BC-2070
+      - BC-3120
+      - BC-3600
+      - BC-3780
+      - BC-3920
+      - BC-4400
+      - BC-4410
+      - BC-4460
+      - BC-4470
+      - BC-4490
+      - BC-4500
+      - BC-4920
+      - BC-4990
+    children:
+      - id: BP-1130.40.10
+        name: Build ESG Disclosure Pack
+        level: 3
+        description: Build the ESG disclosure pack — narrative, metrics, footnotes, mappings to standards.
+        realizes_capability_ids:
+          - BC-740
+          - BC-4400
+          - BC-4410
+          - BC-4490
+        children: []
+      - id: BP-1130.40.20
+        name: File Regulatory Disclosures
+        level: 3
+        description: File mandatory ESG / sustainability disclosures — CSRD/ESRS, SEC climate, jurisdictional taxonomies.
+        realizes_capability_ids:
+          - BC-200
+          - BC-3120
+          - BC-3920
+          - BC-4470
+        children: []
+      - id: BP-1130.40.30
+        name: Publish Voluntary Frameworks
+        level: 3
+        description: Publish voluntary disclosures — GRI, SASB, TCFD, CDP, ISSB — aligned to material topics.
+        realizes_capability_ids:
+          - BC-1980
+          - BC-2040
+          - BC-2070
+          - BC-3600
+          - BC-3780
+          - BC-4460
+          - BC-4500
+          - BC-4920
+          - BC-4990
+        children: []
+  - id: BP-1130.50
+    name: Stakeholder Engagement
+    level: 2
+    description: Engage stakeholders — investors, regulators, customers, employees, NGOs, communities — on ESG.
+    realizes_capability_ids:
+      - BC-240
+      - BC-740
+      - BC-4500
+    children:
+      - id: BP-1130.50.10
+        name: Engage Investors and Analysts
+        level: 3
+        description: Engage ESG-focused investors and rating agencies; respond to questionnaires and ratings.
+        realizes_capability_ids:
+          - BC-240
+          - BC-740
+        children: []
+      - id: BP-1130.50.20
+        name: Engage Communities and NGOs
+        level: 3
+        description: Engage local communities, NGOs, and civil-society stakeholders on impact and remediation.
+        realizes_capability_ids:
+          - BC-4500
+        children: []
+  - id: BP-1130.60
+    name: Improvement Targets
+    level: 2
+    description: Set, track, and adjust improvement targets — emissions, social, governance — across the horizon.
+    realizes_capability_ids:
+      - BC-100
+    children:
+      - id: BP-1130.60.10
+        name: Set Improvement Targets
+        level: 3
+        description: Set science-based targets and other ESG improvement targets aligned to ambition and material topics.
+        realizes_capability_ids:
+          - BC-100
+        children: []
+      - id: BP-1130.60.20
+        name: Track Target Progress
+        level: 3
+        description: Track progress against targets through the ESG cycle; surface gaps and decide corrective action.
+        realizes_capability_ids:
+          - BC-100
+        children: []

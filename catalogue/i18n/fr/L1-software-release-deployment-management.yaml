@@ -5,74 +5,92 @@ entries:
     name: Gestion des versions et du déploiement logiciel
     description: |
       Intégration continue, gestion des environnements, ingénierie des versions, gestion des feature flags et déploiement progressif des produits SaaS en production.
+    source_hash: sha256-e5ceed739d6679f8
   BC-4210.10:
     name: Gestion de l'intégration continue
     description: |
       Pipelines de build, production d'artefacts et application des politiques de pipeline garantissant que le produit intégré reste en permanence buildable.
+    source_hash: sha256-773f8994988d57c5
   BC-4210.10.10:
     name: Gestion des pipelines de build
     description: |
       Définition et exploitation des pipelines de build automatisés pour les composants du produit.
+    source_hash: sha256-519e3dc29d305cc1
   BC-4210.10.20:
     name: Gestion du dépôt d'artefacts
     description: |
       Stockage, rétention et accès aux artefacts de build et aux packages de dépendances.
+    source_hash: sha256-e91cb012a36f6d0a
   BC-4210.10.30:
     name: Application des politiques de pipeline
     description: |
       Application des contrôles qualité, sécurité et provenance requis sur les pipelines.
+    source_hash: sha256-c27a7e3fd6ac8f6d
   BC-4210.20:
     name: Gestion des environnements
     description: |
       Provisionnement et gestion des environnements hors production utilisés pour le développement, l'intégration et la validation pré-production.
+    source_hash: sha256-ed817059475a147d
   BC-4210.20.10:
     name: Provisionnement des environnements
     description: |
       Provisionnement des environnements hors production adaptés aux besoins d'ingénierie et de validation.
+    source_hash: sha256-a3775ad116f44ec0
   BC-4210.20.20:
     name: Configuration des environnements
     description: |
       Configuration des environnements hors production pour maintenir la parité avec la production lorsque nécessaire.
+    source_hash: sha256-4dc74d8aea590c74
   BC-4210.20.30:
     name: Gestion des données des environnements
     description: |
       Provisionnement, masquage et actualisation des données dans les environnements hors production.
+    source_hash: sha256-a5daae1b12ed03be
   BC-4210.30:
     name: Gestion de l'ingénierie des versions
     description: |
       Cadence, versionnage, branches et discipline des notes de version pour les livraisons logicielles.
+    source_hash: sha256-28b4c590bcb7796a
   BC-4210.30.10:
     name: Gestion de la cadence des versions
     description: |
       Définition et gestion de la cadence des versions sur l'ensemble des domaines produit.
+    source_hash: sha256-aa9a851e7b4c9fee
   BC-4210.30.20:
     name: Versionnage et branches
     description: |
       Schéma de versionnage et stratégie de branches appliqués aux versions du produit.
+    source_hash: sha256-f6b1c33af0d8816f
   BC-4210.30.30:
     name: Rédaction des notes de version
     description: |
       Rédaction des notes de version à destination des clients et des équipes opérationnelles pour chaque livraison.
+    source_hash: sha256-cb4a2f92e7e6ad00
   BC-4210.40:
     name: Orchestration du déploiement
     description: |
       Stratégies de livraison des modifications logicielles en production en toute sécurité et avec un rayon d'impact maîtrisé.
+    source_hash: sha256-c705917852e6d3ef
   BC-4210.40.10:
     name: Déploiement progressif
     description: |
       Déploiement progressif des versions vers des cohortes croissantes de tenants ou d'utilisateurs.
+    source_hash: sha256-14263284a5b8a3f0
   BC-4210.40.20:
     name: Déploiement canary
     description: |
       Déploiement des versions sur une population canary restreinte avec évaluation automatisée de la santé.
+    source_hash: sha256-5fefc7a45aa41358
   BC-4210.40.30:
     name: Déploiement blue-green
     description: |
       Déploiement en environnements parallèles avec bascule du trafic pour des changements à quasi-zéro interruption.
+    source_hash: sha256-660193555cf410de
   BC-4210.40.40:
     name: Coordination du rollback
     description: |
       Rollback coordonné des versions sur signaux défavorables.
+    source_hash: sha256-309bd693ee29581e
   BC-4210.50:
     name: Gestion des feature flags
     description: |
@@ -82,43 +100,54 @@ entries:
       - Règles de ciblage
     out_of_scope:
       - Méthodologie et arbitrage des expérimentations (couvert par la gestion de la télémétrie et de l'expérimentation)
+    source_hash: sha256-1d574363ee50edee
   BC-4210.50.10:
     name: Cycle de vie des feature flags
     description: |
       Cycle de vie des feature flags de la création au retrait.
+    source_hash: sha256-633a014e188d16e0
   BC-4210.50.20:
     name: Gestion des règles de ciblage
     description: |
       Définition des règles de ciblage déterminant quels sujets reçoivent une variante de flag.
+    source_hash: sha256-1942b8719f14b5d6
   BC-4210.50.30:
     name: Gestion de l'hygiène des flags
     description: |
       Pratique d'hygiène retirant les flags obsolètes et prévenant l'accumulation de code conditionnel mort.
+    source_hash: sha256-b070386b3646bab5
   BC-4210.60:
     name: Gestion de la configuration et des secrets
     description: |
       Gestion des valeurs de configuration à l'exécution et des secrets consommés par les services du produit.
+    source_hash: sha256-05dce1e924a73bcf
   BC-4210.60.10:
     name: Gestion de la configuration à l'exécution
     description: |
       Stockage, distribution et audit des valeurs de configuration à l'exécution.
+    source_hash: sha256-fa27a64b85a91acb
   BC-4210.60.20:
     name: Gestion du cycle de vie des secrets
     description: |
       Émission, rotation et révocation des secrets utilisés par les services du produit.
+    source_hash: sha256-0c0465e7504eaa7b
   BC-4210.70:
     name: Autorisation des changements en production
     description: |
       Revue pré-déploiement, gouvernance des fenêtres de déploiement et autorisation des accès humains à la production.
+    source_hash: sha256-a3ec69f4a5aad386
   BC-4210.70.10:
     name: Revue pré-déploiement
     description: |
       Revue et approbation des modifications avant le déploiement en production.
+    source_hash: sha256-962c619b0b3a634e
   BC-4210.70.20:
     name: Gouvernance des fenêtres de déploiement
     description: |
       Gouvernance des fenêtres de déploiement autorisées et des périodes de gel.
+    source_hash: sha256-86409edb74069abd
   BC-4210.70.30:
     name: Autorisation des accès à la production
     description: |
       Autorisation, octroi juste-à-temps et audit des accès humains aux systèmes de production.
+    source_hash: sha256-0f5ad24a2a142c40

@@ -5,22 +5,27 @@ entries:
     name: Gestion de l'origination et de la commercialisation des matières premières agricoles
     description: |
       Programmes d'origination avec les producteurs, contractualisation des matières premières, pesée et échantillonnage, positions d'inventaire physique, trading au comptant et sur la base, couverture et règlement pour les céréales, oléagineux, produits tropicaux, bétail et produits laitiers.
+    source_hash: sha256-742072528dec68c1
   BC-3570.10:
     name: Gestion du programme d'origination
     description: |
       Contractualisation des producteurs, gestion des relations avec les producteurs et prévisions d'origination alimentant le carnet d'approvisionnement.
+    source_hash: sha256-747aeacec2fb37d0
   BC-3570.10.10:
     name: Programmes de contractualisation des producteurs
     description: |
       Conception et exécution des programmes de contractualisation des producteurs par région.
+    source_hash: sha256-0d8f801072d1e2b4
   BC-3570.10.20:
     name: Gestion des relations avec les producteurs
     description: |
       Gestion des relations avec les producteurs distincte du CRM générique.
+    source_hash: sha256-d0d03540e73ea53d
   BC-3570.10.30:
     name: Prévisions d'origination
     description: |
       Prévisions des volumes d'origination attendus par région et par culture.
+    source_hash: sha256-7936f53c819b382a
   BC-3570.20:
     name: Gestion des contrats de matières premières
     description: |
@@ -31,95 +36,119 @@ entries:
       - Suivi de l'exécution des contrats
     out_of_scope:
       - Gestion générique des contrats juridiques (BC-150)
+    source_hash: sha256-1f4fc8a5b13a74cc
   BC-3570.20.10:
     name: Émission de contrats à terme
     description: |
       Émission de contrats à terme à prix fixe et sur la base.
+    source_hash: sha256-cddaa1004c6597b4
   BC-3570.20.20:
     name: Gestion des contrats de production
     description: |
       Gestion des contrats de production avec les spécifications qualitatives et de livraison.
+    source_hash: sha256-51df6525deb9e05f
   BC-3570.20.30:
     name: Suivi de l'exécution des contrats
     description: |
       Suivi des tonnes livrées par rapport à l'exécution des contrats.
+    source_hash: sha256-8de3c3f82f2bfecb
   BC-3570.30:
     name: Pesée et échantillonnage à la réception
     description: |
       Opérations de pont-bascule, échantillonnage et classification qualitatifs, et calcul du règlement à la réception au point d'entrée.
+    source_hash: sha256-6cfafb95322b4cbb
   BC-3570.30.10:
     name: Opérations de pont-bascule
     description: |
       Opérations de pont-bascule entrant et sortant et émission des tickets de pesée.
+    source_hash: sha256-9d9a4972804143f0
   BC-3570.30.20:
     name: Échantillonnage et classification qualitatifs
     description: |
       Échantillonnage et classification à la réception selon les spécifications commerciales.
+    source_hash: sha256-318067a4b25f2ef9
   BC-3570.30.30:
     name: Calcul du règlement à la réception
     description: |
       Calcul des décotes et primes de qualité à la réception.
+    source_hash: sha256-f911ec823985615a
   BC-3570.40:
     name: Gestion des positions d'inventaire de matières premières
     description: |
       Suivi des positions physiques de matières premières, décisions de mélange et positions en transit sur l'ensemble du réseau.
+    source_hash: sha256-da50eea3d8715356
   BC-3570.40.10:
     name: Suivi des positions physiques
     description: |
       Suivi des positions physiques longues et courtes par site et par grade.
+    source_hash: sha256-d44e9797ecef281f
   BC-3570.40.20:
     name: Décisions de mélange qualitatif
     description: |
       Décisions de mélange pour répondre aux spécifications qualitatives des contrats.
+    source_hash: sha256-ee1bced5b8209e7e
   BC-3570.40.30:
     name: Suivi des positions en transit
     description: |
       Suivi des positions en transit par navire, rail et camion.
+    source_hash: sha256-ac7c5faf5748c3c1
   BC-3570.50:
     name: Opérations de trading de matières premières
     description: |
       Trading au comptant et sur la base, exécution des ventes au comptant et gestion des spreads inter-produits sur les carnets de matières premières physiques.
+    source_hash: sha256-0dfd2dba91324578
   BC-3570.50.10:
     name: Trading au comptant et sur la base
     description: |
       Trading des positions au comptant et sur la base dans les matières premières physiques.
+    source_hash: sha256-4cea62e2c931b131
   BC-3570.50.20:
     name: Exécution des ventes au comptant
     description: |
       Exécution des ventes au comptant aux transformateurs et exportateurs.
+    source_hash: sha256-02a09a90129816d9
   BC-3570.50.30:
     name: Gestion des spreads inter-produits
     description: |
       Gestion des spreads inter-produits tels que les marges de broyage et de raffinage.
+    source_hash: sha256-74c23a645fadb9d6
   BC-3570.60:
     name: Couverture et gestion des positions de risque
     description: |
       Exécution et rapprochement des couvertures en contrats à terme et en options contre les positions physiques de matières premières.
+    source_hash: sha256-439e60a15df9801c
   BC-3570.60.10:
     name: Exécution des couvertures en contrats à terme
     description: |
       Exécution des couvertures en contrats à terme sur les bourses réglementées.
+    source_hash: sha256-bee15d9ce9d4ec65
   BC-3570.60.20:
     name: Exécution des couvertures en options
     description: |
       Exécution des couvertures en options pour gérer le risque de queue de prix.
+    source_hash: sha256-14971ec60b16e821
   BC-3570.60.30:
     name: Rapprochement des positions de couverture
     description: |
       Rapprochement des positions de couverture avec les expositions physiques sous-jacentes.
+    source_hash: sha256-95f8cea605337782
   BC-3570.70:
     name: Règlement et tarification des matières premières
     description: |
       Tarification finale, émission des relevés de règlement et résolution des réclamations qualitatives avec les contreparties.
+    source_hash: sha256-9658ca156a684199
   BC-3570.70.10:
     name: Tarification finale et calcul des décotes
     description: |
       Tarification finale incluant l'application des décotes et primes de qualité.
+    source_hash: sha256-e9c89985fb46c8b8
   BC-3570.70.20:
     name: Émission des relevés de règlement
     description: |
       Émission des relevés de règlement aux producteurs et contreparties.
+    source_hash: sha256-5fac0c5476566666
   BC-3570.70.30:
     name: Résolution des réclamations qualitatives
     description: |
       Résolution des réclamations qualitatives avec les producteurs, acheteurs et organes d'arbitrage.
+    source_hash: sha256-bf1ee5aa4949d900

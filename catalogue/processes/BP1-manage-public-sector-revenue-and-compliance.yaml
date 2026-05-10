@@ -154,3 +154,12 @@ children:
           - BC-610
           - BC-150
         children: []
+  - id: BP-350.50
+    name: Legislative Drafting and Promulgation
+    level: 2
+    description: End-to-end legislative cycle from drafting instruction through legal vetting, impact assessment, legislative passage, and promulgation.
+    realizes_capability_ids:
+      - BC-150
+      - BC-3200
+      - BC-3210
+    children: [ { id: BP-350.50.10, name: Issue Drafting Instruction, level: 3, description: Capture and approve the policy intent that authorises drafting; commission the drafter., realizes_capability_ids: [ BC-3200, BC-3210 ], children: [] }, { id: BP-350.50.20, name: Draft Legislative Text, level: 3, description: Produce the legislative text per drafting conventions; iterate with policy sponsors., realizes_capability_ids: [ BC-3210 ], children: [] }, { id: BP-350.50.30, name: Conduct Legal Vetting, level: 3, description: "Vet draft for legal coherence, constitutionality, and conflict with existing law; capture redlines.", realizes_capability_ids: [ BC-150, BC-3210 ], children: [] }, { id: BP-350.50.40, name: Conduct Impact Assessment, level: 3, description: "Assess regulatory, fiscal, social, and environmental impact of the draft; publish for consultation where required.", realizes_capability_ids: [ BC-3210 ], children: [] }, { id: BP-350.50.50, name: Manage Legislative Passage, level: 3, description: "Steward the bill through committee, amendments, debates, and votes in the legislature.", realizes_capability_ids: [ BC-3210 ], children: [] }, { id: BP-350.50.60, name: Promulgate Legislation, level: 3, description: "Promulgate the enacted law — sign-off, gazette publication, commencement notification, repository update.", realizes_capability_ids: [ BC-3210 ], children: [] } ]

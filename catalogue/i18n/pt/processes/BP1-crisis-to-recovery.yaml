@@ -1,0 +1,108 @@
+kind: business-process
+locale: pt
+source: BP1-crisis-to-recovery.yaml
+entries:
+  BP-1140:
+    name: "Crise-a-Recuperação"
+    description: "Ciclo de continuidade de negócios e gestão de crises do planejamento de continuidade aos testes de resiliência, detecção e ativação, resposta à crise, disaster recovery, restauração e revisão pós-crise. Um BP2 por stage_name do VS-140."
+    source_hash: sha256-6b5a46bc8192fd2e
+  BP-1140.10:
+    name: "Planejamento de Continuidade"
+    description: "Construir e manter planos de continuidade de negócios e disaster recovery para processos e sistemas críticos."
+    source_hash: sha256-015c32937d1d65af
+  BP-1140.10.10:
+    name: "Conduzir Análise de Impacto no Negócio"
+    description: "Identificar processos críticos, metas de RTO/RPO, dependências e requisitos mínimos de operação."
+    source_hash: sha256-16d992be1d96a2e6
+  BP-1140.10.20:
+    name: "Construir Planos de Continuidade"
+    description: "Construir planos de continuidade no nível de processo e site — workarounds, sites alternativos, contatos-chave."
+    source_hash: sha256-504a6e02114d49ad
+  BP-1140.10.30:
+    name: "Construir Planos de Disaster Recovery"
+    description: "Construir planos de disaster recovery de TI — runbooks, replicação, alvos de failover — para sistemas críticos."
+    source_hash: sha256-88c412c4c1a51500
+  BP-1140.20:
+    name: "Testes de Resiliência"
+    description: "Testar planos de continuidade e recuperação — tabletops, walk-throughs, failover completo."
+    source_hash: sha256-eb3618fdb4e292cb
+  BP-1140.20.10:
+    name: "Conduzir Exercícios de Tabletop"
+    description: "Conduzir exercícios de tabletop com times-chave para validar planos e evidenciar lacunas sem disrupção das operações."
+    source_hash: sha256-19611168ac84e9f3
+  BP-1140.20.20:
+    name: "Conduzir Drills de Failover"
+    description: "Conduzir drills controlados de failover para validar a recuperação técnica; capturar timing contra metas."
+    source_hash: sha256-549dfa1938c1c12c
+  BP-1140.20.30:
+    name: "Atualizar Planos a partir de Achados de Teste"
+    description: "Atualizar planos de continuidade e recuperação com base nos achados dos testes; fechar lacunas antes do próximo ciclo."
+    source_hash: sha256-a53a2d1c7ca74f86
+  BP-1140.30:
+    name: "Detecção e Ativação"
+    description: "Detectar trigger de crise e ativar a resposta — incident commander, war-room, comunicações."
+    source_hash: sha256-0373dbdb7e081af0
+  BP-1140.30.10:
+    name: "Detectar Trigger de Crise"
+    description: "Detectar eventos que atendem aos critérios de trigger de crise — outage, breach, evento de segurança, ação regulatória."
+    source_hash: sha256-a2b600c30c99453b
+  BP-1140.30.20:
+    name: "Ativar Protocolo de Crise"
+    description: "Ativar o protocolo de gestão de crise — designar commander, convocar war-room, estabelecer cadência de comunicação."
+    source_hash: sha256-c4d200ad5dcab2c4
+  BP-1140.40:
+    name: "Resposta à Crise"
+    description: "Gerenciar a crise ativa — proteger pessoas e ativos, conter danos, comunicar, coordenar."
+    source_hash: sha256-4c79bc509b89d20c
+  BP-1140.40.10:
+    name: "Proteger Pessoas e Ativos"
+    description: "Conduzir ações protetivas — evacuação, shutdown, isolamento, médicas, segurança — para limitar danos."
+    source_hash: sha256-bc0d35d4aee77175
+  BP-1140.40.20:
+    name: "Conter Impacto da Crise"
+    description: "Conter impactos operacionais, financeiros, regulatórios e reputacionais via ações de resposta direcionadas."
+    source_hash: sha256-9a019f4fa1f15864
+  BP-1140.40.30:
+    name: "Gerenciar Comunicações de Crise"
+    description: "Conduzir comunicações internas, externas, com reguladores e mídia ao longo da crise ativa."
+    source_hash: sha256-4dad5b0557fd8542
+  BP-1140.50:
+    name: "Disaster Recovery"
+    description: "Executar procedimentos de disaster recovery para restaurar serviços de TI dentro das metas de RTO/RPO."
+    source_hash: sha256-fb85c409a6e401a5
+  BP-1140.50.10:
+    name: "Executar Failover de TI"
+    description: "Executar o failover planejado de sistemas críticos de TI para a infraestrutura de recuperação."
+    source_hash: sha256-10be996126e393fa
+  BP-1140.50.20:
+    name: "Validar Serviços Recuperados"
+    description: "Validar serviços recuperados contra critérios de aceitação; retomar operações voltadas ao cliente."
+    source_hash: sha256-036370fd854b7000
+  BP-1140.50.30:
+    name: "Conduzir Reverse Failover"
+    description: "Planejar e executar o retorno à infraestrutura primária quando estável; validar a restauração total."
+    source_hash: sha256-c1689ce7096339a1
+  BP-1140.60:
+    name: "Restauração"
+    description: "Restaurar ativos físicos, cadeias de suprimento e operações ao estado pré-crise."
+    source_hash: sha256-44df1443f713f43d
+  BP-1140.60.10:
+    name: "Restaurar Operações Físicas"
+    description: "Restaurar ativos físicos, sites e equipamentos à condição operacional; passar nas verificações de segurança."
+    source_hash: sha256-f505be01a02d874a
+  BP-1140.60.20:
+    name: "Restaurar Fluxo de Suprimento e Demanda"
+    description: "Restaurar o fluxo de fornecedores, fluxo de pedidos de clientes e posicionamento de estoque ao baseline."
+    source_hash: sha256-93a3ae915fd7288e
+  BP-1140.70:
+    name: "Revisão Pós-Crise"
+    description: "Conduzir revisão pós-ação; capturar lições; conduzir melhorias sistêmicas de resiliência."
+    source_hash: sha256-2955b6f0dfd36dd5
+  BP-1140.70.10:
+    name: "Conduzir Revisão Pós-Ação"
+    description: "Conduzir revisão pós-ação blameless com todos os respondedores; capturar timeline, decisões e aprendizados."
+    source_hash: sha256-7583baae8ac29129
+  BP-1140.70.20:
+    name: "Melhorar Resiliência"
+    description: "Traduzir lições em melhorias de resiliência — controles, planos, treinamento, tecnologia."
+    source_hash: sha256-676cf9bedb8b4c35

@@ -1,0 +1,168 @@
+kind: business-process
+locale: it
+source: BP1-idea-to-market.yaml
+entries:
+  BP-1030:
+    name: "Idea-a-Mercato"
+    description: "Ciclo end-to-end di innovazione di prodotto/servizio dalla cattura di idee attraverso concetto e fattibilità, ricerca e prototipazione, selezione del portafoglio, design e sviluppo, protezione IP, launch readiness, introduzione sul mercato e performance post-launch. Un BP2 per ogni stage_name di VS-290."
+    source_hash: sha256-b36539c6a860d958
+  BP-1030.10:
+    name: "Cattura di idee"
+    description: "Far emergere, catturare e consolidare idee da dipendenti, clienti, partner e segnali di mercato; instradare a triage."
+    source_hash: sha256-a7061e299a1ff468
+  BP-1030.10.10:
+    name: "Sollecitare idee"
+    description: "Eseguire campagne di generazione di idee, hackathon e canali continui; incoraggiare la sottomissione attraverso l'organizzazione e l'ecosistema."
+    source_hash: sha256-c583fe2370715b4c
+  BP-1030.10.20:
+    name: "Catturare e triagiare idee"
+    description: "Persistere idee in arrivo, deduplicare e triagiare in code di revisione con categorizzazione iniziale."
+    source_hash: sha256-c9215649b73f4f3e
+  BP-1030.10.30:
+    name: "Validare fit dell'idea"
+    description: "Applicare primo screen di fit rispetto a strategia, capability e segnale di mercato; rifiutare, parcheggiare o avanzare a fattibilità."
+    source_hash: sha256-e141bfd4610a44b2
+  BP-1030.20:
+    name: "Concetto e fattibilità"
+    description: "Convertire idee promettenti in concetti; valutare fattibilità tecnica, di mercato e commerciale; costruire il caso per selezione del portafoglio."
+    source_hash: sha256-bad24bcc25be296d
+  BP-1030.20.10:
+    name: "Sviluppare concetto"
+    description: "Articolare il concetto — problema, utente target, soluzione proposta, ipotesi di valore — a profondità sufficiente per valutazione."
+    source_hash: sha256-7f29485cfc7bb17a
+  BP-1030.20.20:
+    name: "Valutare fattibilità tecnica"
+    description: "Validare che il concetto possa essere costruito con tecnologia, materiali e competenze disponibili o acquisibili."
+    source_hash: sha256-79c0fcd5a32d0a6b
+  BP-1030.20.30:
+    name: "Valutare fattibilità commerciale"
+    description: "Costruire il business case — mercato indirizzabile, pricing, cost-to-serve, ROI — per dimensionare l'opportunità."
+    source_hash: sha256-91311fcf277dd9f2
+  BP-1030.20.40:
+    name: "Decidere avanzamento del concetto"
+    description: "Decidere al gate di concetto avanzare, raffinare, parcheggiare o killare, con giustificazione chiara e condizioni."
+    source_hash: sha256-138369baf58db536
+  BP-1030.30:
+    name: "Ricerca e prototipazione"
+    description: "Condurre ricerca, costruire prototipi e testare con utenti per deriskare il concetto prima del design completo."
+    source_hash: sha256-17f18132d611266a
+  BP-1030.30.10:
+    name: "Condurre ricerca con utenti"
+    description: "Eseguire ricerca qualitativa e quantitativa con utenti target per validare problem-solution fit."
+    source_hash: sha256-6f99d5b5143f9411
+  BP-1030.30.20:
+    name: "Costruire prototipo"
+    description: "Costruire prototipi a bassa o alta fedeltà — mock-up fisici, wireframe, codice funzionante — per rendere tangibile il concetto."
+    source_hash: sha256-5739023c197a8fda
+  BP-1030.30.30:
+    name: "Testare prototipo con utenti"
+    description: "Eseguire test di usabilità e valore con utenti target; catturare rilievi per informare iterazione o decisioni di kill."
+    source_hash: sha256-e0ce8001b6cefc0d
+  BP-1030.30.40:
+    name: "Iterare concetto"
+    description: "Applicare apprendimenti dei test di prototipo al concetto; iterare finché il concetto non sia pronto per selezione del portafoglio o kill."
+    source_hash: sha256-b97ec6e807254040
+  BP-1030.40:
+    name: "Selezione del portafoglio"
+    description: "Prioritizzare concetti validati nel portafoglio di innovazione; allocare risorse, sequenziare consegna e bilanciare rischio."
+    source_hash: sha256-05557aba2112750f
+  BP-1030.40.10:
+    name: "Punteggiare candidati del portafoglio"
+    description: "Punteggiare concetti validati rispetto a criteri di portafoglio — fit strategico, valore, rischio, fit di capability, time to market."
+    source_hash: sha256-2122433ebccc8046
+  BP-1030.40.20:
+    name: "Sequenziare portafoglio"
+    description: "Sequenziare il portafoglio attraverso orizzonti, bilanciando now/next/later e mix core/adiacente/trasformazionale."
+    source_hash: sha256-038a49840a38ad82
+  BP-1030.40.30:
+    name: "Allocare risorse"
+    description: "Allocare finanziamento, talento e infrastruttura ai concetti selezionati; attivare kick-off formale a design e sviluppo."
+    source_hash: sha256-e99973b9328d841f
+  BP-1030.50:
+    name: "Design e sviluppo"
+    description: "Design dettagliato, ingegneria, build e integrazione del prodotto o servizio fino alla launch readiness."
+    source_hash: sha256-6787748725dca2eb
+  BP-1030.50.10:
+    name: "Definire requisiti dettagliati"
+    description: "Tradurre il concetto validato in requisiti funzionali, non funzionali e di accettazione dettagliati."
+    source_hash: sha256-e0f465f9e03256c8
+  BP-1030.50.20:
+    name: "Progettare prodotto o servizio"
+    description: "Produrre il design dettagliato — architettura, materiali, UX, BOM — che sarà costruito e validato."
+    source_hash: sha256-a18aadaba349f517
+  BP-1030.50.30:
+    name: "Costruire e integrare"
+    description: "Costruire il prodotto o servizio secondo design; integrare componenti e sottosistemi; gestire change e configurazione."
+    source_hash: sha256-43fb091529479223
+  BP-1030.50.40:
+    name: "Validare e verificare"
+    description: "Eseguire verifica e validazione di design rispetto ai requisiti; chiudere non conformità prima della launch readiness."
+    source_hash: sha256-0491e890b9359851
+  BP-1030.60:
+    name: "Protezione IP"
+    description: "Identificare, proteggere e gestire la proprietà intellettuale generata attraverso il ciclo di innovazione."
+    source_hash: sha256-61ef19429576caef
+  BP-1030.60.10:
+    name: "Identificare IP brevettabile"
+    description: "Rivedere innovazioni per novità, utilità e non-ovvietà; identificare invenzioni candidate per brevettazione."
+    source_hash: sha256-1bda5b069a27694a
+  BP-1030.60.20:
+    name: "Depositare e prosecutare brevetti"
+    description: "Depositare domande di brevetto provvisorie e complete; gestire prosecution fino alla concessione attraverso giurisdizioni."
+    source_hash: sha256-f6bb1449f35764c6
+  BP-1030.60.30:
+    name: "Gestire trade secret e marchi"
+    description: "Identificare materiale di trade-secret e asset di brand; applicare protezione (NDA, controlli di accesso, registrazioni)."
+    source_hash: sha256-5618df73b3f9460a
+  BP-1030.70:
+    name: "Launch readiness"
+    description: "Prepararsi per il launch sul mercato — go-to-market, manifattura, supply chain, canali, supporto, formazione."
+    source_hash: sha256-7421f1a483dcc4f8
+  BP-1030.70.10:
+    name: "Costruire piano go-to-market"
+    description: "Sviluppare il piano GTM — posizionamento, pricing, canali, sales enablement, campagne marketing — per la finestra di launch."
+    source_hash: sha256-6258e6325e861f8d
+  BP-1030.70.20:
+    name: "Fare ramp di manifattura o consegna del servizio"
+    description: "Allestire capacità di manifattura o readiness di consegna del servizio — attrezzature, formazione, fornitura, certificazioni."
+    source_hash: sha256-176d0f039e4a2315
+  BP-1030.70.30:
+    name: "Formare vendite e supporto"
+    description: "Formare team di vendite, partner e supporto sul nuovo prodotto/servizio prima del launch."
+    source_hash: sha256-30636bf100386a45
+  BP-1030.70.40:
+    name: "Passare review di launch readiness"
+    description: "Eseguire la review cross-funzionale di launch readiness; chiudere gap o rinviare launch finché non sia pronto."
+    source_hash: sha256-5158e4d8c5beec12
+  BP-1030.80:
+    name: "Introduzione sul mercato"
+    description: "Eseguire il launch — release, annuncio, vendita e supporto del nuovo prodotto o servizio sul mercato."
+    source_hash: sha256-fccc929bbdbc1c0e
+  BP-1030.80.10:
+    name: "Releasare al mercato"
+    description: "Tagliare il release attraverso canali e geografie secondo il piano di launch; coordinare con PR, partner e fornitura."
+    source_hash: sha256-595440a14e2c944e
+  BP-1030.80.20:
+    name: "Eseguire marketing di launch"
+    description: "Eseguire campagne di launch — pubblicità, contenuto, eventi, PR, social — secondo il piano GTM."
+    source_hash: sha256-7bef6ca901f65664
+  BP-1030.80.30:
+    name: "Catturare vendite iniziali"
+    description: "Guidare il motion iniziale di vendita via canali diretti, partner e digitali; tracciare conversione per validare la curva di launch."
+    source_hash: sha256-d7010f1d15c04462
+  BP-1030.90:
+    name: "Performance post-launch"
+    description: "Tracciare performance rispetto al business case, catturare feedback del cliente, guidare miglioramenti e decidere movimenti di ciclo di vita."
+    source_hash: sha256-01cca0985f06a990
+  BP-1030.90.10:
+    name: "Tracciare KPI di launch"
+    description: "Monitorare adozione, ricavi, margine lordo, NPS e altri KPI di launch rispetto al business case per i primi 30/60/90 giorni e oltre."
+    source_hash: sha256-9749cd117ed6d4c6
+  BP-1030.90.20:
+    name: "Catturare feedback del cliente"
+    description: "Catturare feedback strutturato e non strutturato del cliente sul mercato; instradare al backlog di prodotto e roadmap."
+    source_hash: sha256-eb22fe36b8bf4541
+  BP-1030.90.30:
+    name: "Pianificare miglioramenti di ciclo di vita"
+    description: "Decidere miglioramenti, fast-follow feature o movimenti di pivot basati su evidenza post-launch; alimentare di ritorno alla cattura di idee."
+    source_hash: sha256-7dd9d530f1896f55

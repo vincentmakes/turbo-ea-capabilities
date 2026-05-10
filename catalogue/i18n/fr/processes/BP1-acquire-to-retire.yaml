@@ -1,0 +1,112 @@
+kind: business-process
+locale: fr
+source: BP1-acquire-to-retire.yaml
+entries:
+  BP-1090:
+    name: "Acquisition-à-Retrait"
+    description: "Cycle de vie des actifs physiques de bout en bout, du besoin et de la justification à l'acquisition, à la mise en service, à l'exploitation et à la maintenance, au risque et à la fiabilité, à la maintenance des informations d'actif, et au démantèlement. Un BP2 par stage_name de VS-10."
+    source_hash: sha256-e62b5deb624ae388
+  BP-1090.10:
+    name: "Besoin et justification d'actif"
+    description: "Identifier les besoins en actifs, justifier le capital et approuver l'actif avant le démarrage de la procurement."
+    source_hash: sha256-12ac5e53e1eac73a
+  BP-1090.10.10:
+    name: "Identifier le besoin d'actif"
+    description: "Capter le besoin métier pour un actif neuf ou de remplacement ; recueillir le contexte technique et opératoire."
+    source_hash: sha256-0ba6e8034def920a
+  BP-1090.10.20:
+    name: "Construire la justification capital"
+    description: "Construire le business case — coût total de possession, VAN, sensibilité — et sécuriser l'approbation capital."
+    source_hash: sha256-e5a5098d98246214
+  BP-1090.10.30:
+    name: "Approuver le plan d'actif"
+    description: "Router via le comité d'approbation capital ; documenter les conditions et lier au portefeuille."
+    source_hash: sha256-54bb4cd0abe633ef
+  BP-1090.20:
+    name: "Acquisition"
+    description: "Sourcer, concevoir ou spécifier, acquérir et accepter la livraison de l'actif."
+    source_hash: sha256-8a2af9b2f027187d
+  BP-1090.20.10:
+    name: "Spécifier l'actif"
+    description: "Traduire le besoin en spécification d'actif — capacité, performance, conformité, exigences de cycle de vie."
+    source_hash: sha256-ee95f91c13836728
+  BP-1090.20.20:
+    name: "Acquérir l'actif"
+    description: "Conduire le sourcing, la sélection fournisseur et la contractualisation ; passer le bon de commande ou le contrat de construction."
+    source_hash: sha256-a89c0660f830a179
+  BP-1090.20.30:
+    name: "Accepter la livraison de l'actif"
+    description: "Recevoir, inspecter et accepter formellement l'actif face à la spécification."
+    source_hash: sha256-f3cbe16302a78266
+  BP-1090.30:
+    name: "Mise en service et capitalisation"
+    description: "Installer, tester et mettre en service l'actif ; le capitaliser dans les livres."
+    source_hash: sha256-f9c452c0a5eaced6
+  BP-1090.30.10:
+    name: "Installer et mettre en service l'actif"
+    description: "Installer, énergiser et exécuter les tests de mise en service ; transférer aux opérations sur achèvement réussi."
+    source_hash: sha256-42048155b77cddc0
+  BP-1090.30.20:
+    name: "Capitaliser l'actif"
+    description: "Capitaliser l'actif dans le registre des immobilisations avec la classe, la méthode de dépréciation et la durée d'utilité appropriées."
+    source_hash: sha256-cd17f71e2989fdf0
+  BP-1090.40:
+    name: "Exploitation et maintenance"
+    description: "Exploiter l'actif et exécuter la maintenance préventive, corrective et conditionnelle sur sa durée d'utilité."
+    source_hash: sha256-855e61ee20a48fef
+  BP-1090.40.10:
+    name: "Exploiter l'actif"
+    description: "Exécuter les opérations quotidiennes de l'actif face aux paramètres de design ; capturer les données d'exploitation."
+    source_hash: sha256-6e004e72b3b6da7a
+  BP-1090.40.20:
+    name: "Planifier et ordonnancer la maintenance"
+    description: "Planifier la maintenance préventive, prédictive et conditionnelle ; ordonnancer face aux opérations et à la disponibilité des ressources."
+    source_hash: sha256-be9c73f890d79d9c
+  BP-1090.40.30:
+    name: "Exécuter la maintenance"
+    description: "Exécuter les travaux de maintenance — préventive, corrective, shutdown — et confirmer le retour en service de l'actif."
+    source_hash: sha256-7a96a98afd74f07d
+  BP-1090.50:
+    name: "Risque et fiabilité"
+    description: "Gérer le risque d'intégrité, de fiabilité et de sécurité opérationnelle de l'actif tout au long de la vie d'exploitation."
+    source_hash: sha256-2f4c073ebb07c42c
+  BP-1090.50.10:
+    name: "Évaluer le risque de l'actif"
+    description: "Conduire les évaluations de criticité et de risque — modes de défaillance, conséquence, vraisemblance — pour piloter les programmes de maintenance et d'intégrité."
+    source_hash: sha256-8b4ead978114ab1b
+  BP-1090.50.20:
+    name: "Gérer l'intégrité de l'actif"
+    description: "Conduire les programmes d'inspection, de test et de gestion de la corrosion pour maintenir l'intégrité tout au long du cycle de vie."
+    source_hash: sha256-486b8e28b1e5901c
+  BP-1090.50.30:
+    name: "Améliorer la fiabilité de l'actif"
+    description: "Piloter l'amélioration de la fiabilité — analyse de cause racine sur les défaillances chroniques, modélisation RAM, recommandations de changement de design."
+    source_hash: sha256-df0f5b75748e9dc9
+  BP-1090.60:
+    name: "Maintenance de l'information d'actif"
+    description: "Maintenir les données maîtres d'actif, les plans, la configuration et les documents tout au long du cycle de vie."
+    source_hash: sha256-02e2536216d99c0f
+  BP-1090.60.10:
+    name: "Maintenir les données maîtres d'actif"
+    description: "Maintenir les données maîtres d'actif — classe, emplacement, parent-enfant, attributs — dans le registre d'actifs."
+    source_hash: sha256-769c671bf8c0ccfd
+  BP-1090.60.20:
+    name: "Maintenir les documents d'actif"
+    description: "Maintenir plans, manuels, P&ID, certificats et documentation as-built ; aligner avec l'engineering change."
+    source_hash: sha256-7fe4c2b4f307119b
+  BP-1090.70:
+    name: "Démantèlement et disposition"
+    description: "Planifier et exécuter la fin de vie — démantèlement, disposition, restauration et traitement comptable final."
+    source_hash: sha256-8f5f32685fcc7a93
+  BP-1090.70.10:
+    name: "Planifier le démantèlement"
+    description: "Planifier la fin de vie — timing, obligations environnementales, dépose, restauration, impact financier."
+    source_hash: sha256-6cec6f5bc4b6a2d0
+  BP-1090.70.20:
+    name: "Exécuter le démantèlement"
+    description: "Démanteler, démonter et déposer l'actif ; gérer la manipulation des matières dangereuses et la restauration du site."
+    source_hash: sha256-ba0de4c3142fd086
+  BP-1090.70.30:
+    name: "Disposer ou vendre l'actif"
+    description: "Disposer, recycler ou vendre l'actif ; capturer la valeur résiduelle et la chaîne de garde."
+    source_hash: sha256-ac9cbf74dc190003

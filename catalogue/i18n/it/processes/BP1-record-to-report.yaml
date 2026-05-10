@@ -1,0 +1,124 @@
+kind: business-process
+locale: it
+source: BP1-record-to-report.yaml
+entries:
+  BP-1080:
+    name: "Registrazione-a-Reporting"
+    description: "Ciclo di chiusura finanziaria dalla cattura di transazioni attraverso chiusura dei sub-libri mastri, riconciliazione, consolidato, reporting di gestione, reporting statutario e regolatorio e sign-off di audit. Un BP2 per ogni stage_name di VS-460."
+    source_hash: sha256-4fde77e621173949
+  BP-1080.10:
+    name: "Cattura delle transazioni"
+    description: "Catturare transazioni economiche attraverso sistemi sorgente nel backbone finanziario con codifica appropriata."
+    source_hash: sha256-777e85c66d610c9a
+  BP-1080.10.10:
+    name: "Catturare transazioni sorgente"
+    description: "Catturare transazioni da vendite, acquisti, payroll, tesoreria e altri sistemi sorgente nei flussi contabili."
+    source_hash: sha256-fbc670a75cbbd7dc
+  BP-1080.10.20:
+    name: "Applicare codifica contabile"
+    description: "Applicare codifica di conto, centro di costo e progetto secondo il piano dei conti e la policy."
+    source_hash: sha256-3208ef579f9e5a6e
+  BP-1080.10.30:
+    name: "Validare dati di transazione"
+    description: "Eseguire regole di validazione — completezza, classificazione, valuta, periodo — e instradare eccezioni per correzione."
+    source_hash: sha256-94f1805cf11bb0f4
+  BP-1080.20:
+    name: "Chiusura dei sub-libri mastri"
+    description: "Chiudere sub-libri mastri — AR, AP, cespiti, payroll, tesoreria — e postare al libro mastro."
+    source_hash: sha256-3a01332bbbd8e5b6
+  BP-1080.20.10:
+    name: "Chiudere sub-libro mastro AR"
+    description: "Chiudere il sub-libro mastro crediti; postare il riassunto AR-a-GL e reportare saldi aperti."
+    source_hash: sha256-16b68b86dab484d7
+  BP-1080.20.20:
+    name: "Chiudere sub-libro mastro AP"
+    description: "Chiudere il sub-libro mastro debiti; postare il riassunto AP-a-GL e reportare saldi aperti."
+    source_hash: sha256-822c5ccc9d117a3e
+  BP-1080.20.30:
+    name: "Chiudere sub-libro mastro cespiti"
+    description: "Eseguire ammortamento cespiti e acquisizioni/dismissioni; postare al libro mastro."
+    source_hash: sha256-2cc9569fd696441c
+  BP-1080.20.40:
+    name: "Chiudere altri sub-libri mastri"
+    description: "Chiudere sub-libri mastri payroll, tesoreria, inventario e progetti; postare al libro mastro con audit trail."
+    source_hash: sha256-dfa3c16a92f5cd96
+  BP-1080.30:
+    name: "Riconciliazione e aggiustamenti"
+    description: "Riconciliare conti di bilancio e processare aggiustamenti di fine periodo per lockare i libri."
+    source_hash: sha256-a40463df068adf10
+  BP-1080.30.10:
+    name: "Riconciliare conti di bilancio"
+    description: "Riconciliare conti di tesoreria, AR, AP, intercompany, ratei e altri conti di bilancio con il dettaglio sorgente."
+    source_hash: sha256-cdac4b1e9dea96b3
+  BP-1080.30.20:
+    name: "Processare aggiustamenti di fine periodo"
+    description: "Processare ratei, risconti attivi, ricavi differiti e scritture di riclassificazione; catturare documentazione di supporto."
+    source_hash: sha256-94718769a1e91c73
+  BP-1080.30.30:
+    name: "Risolvere variazioni di riconciliazione"
+    description: "Investigare e risolvere voci di riconciliazione; escalare voci non risolte a controllership per write-off o riporto."
+    source_hash: sha256-47fa45469b7aecfa
+  BP-1080.40:
+    name: "Consolidato"
+    description: "Consolidare bilanci attraverso entità legali e valute; eliminare intercompany; produrre risultati di gruppo."
+    source_hash: sha256-8664a943f2bd0932
+  BP-1080.40.10:
+    name: "Convertire saldi in valuta locale"
+    description: "Convertire saldi in valuta locale alla valuta di reporting ai tassi FX appropriati secondo il principio contabile."
+    source_hash: sha256-f313d0c3bb592eaf
+  BP-1080.40.20:
+    name: "Eliminare intercompany"
+    description: "Eliminare vendite intercompany, saldi e profitti non realizzati secondo le regole di consolidato."
+    source_hash: sha256-9a6678eccaf80ba7
+  BP-1080.40.30:
+    name: "Produrre risultati consolidati di gruppo"
+    description: "Produrre il bilancio, conto economico, rendiconto finanziario e patrimonio netto consolidati di gruppo; persistere nel sistema di consolidato."
+    source_hash: sha256-7a001bb947c22f23
+  BP-1080.50:
+    name: "Reporting di gestione"
+    description: "Produrre report di gestione interni per il team esecutivo, il consiglio e i leader operativi."
+    source_hash: sha256-9c8b574b42de7183
+  BP-1080.50.10:
+    name: "Costruire report di gestione"
+    description: "Costruire report di gestione — P&L per segmento, centro di costo, prodotto, cliente; viste cash e capitale circolante."
+    source_hash: sha256-de53fc2bd2c34b48
+  BP-1080.50.20:
+    name: "Analizzare variazioni rispetto al piano"
+    description: "Analizzare variazioni actual vs piano e vs periodo precedente; identificare driver e azioni correttive."
+    source_hash: sha256-f7c61b60767e9595
+  BP-1080.50.30:
+    name: "Distribuire pack di gestione"
+    description: "Distribuire il pack di reporting di gestione a esecutivi e leader operativi secondo la cadenza concordata."
+    source_hash: sha256-704f3bdaa5a9510b
+  BP-1080.60:
+    name: "Reporting statutario e regolatorio"
+    description: "Produrre dichiarazioni statutarie, regolatorie e fiscali alle autorità secondo calendario."
+    source_hash: sha256-28b70bf275aca7d0
+  BP-1080.60.10:
+    name: "Preparare bilanci statutari"
+    description: "Preparare bilanci statutari secondo GAAP locale / IFRS per ogni entità legale della giurisdizione."
+    source_hash: sha256-b8abdafd810f4956
+  BP-1080.60.20:
+    name: "Depositare dichiarazioni fiscali"
+    description: "Preparare e depositare dichiarazioni di imposta sui redditi, IVA/GST, ritenute e transfer pricing per giurisdizione."
+    source_hash: sha256-daddfbd3713c4626
+  BP-1080.60.30:
+    name: "Depositare report regolatori"
+    description: "Depositare report regolatori settoriali (banche, assicurazioni, disclosure di società quotate) ai regolatori applicabili."
+    source_hash: sha256-9492faf5010a52e2
+  BP-1080.70:
+    name: "Audit e sign-off"
+    description: "Supportare audit interno ed esterno; ottenere sign-off su bilanci e controlli."
+    source_hash: sha256-fbcdf10910aea625
+  BP-1080.70.10:
+    name: "Supportare audit esterno"
+    description: "Fornire evidenze e walk-through agli auditor esterni; risolvere richieste di audit; rispondere a rilievi."
+    source_hash: sha256-9373890a507a8478
+  BP-1080.70.20:
+    name: "Supportare audit interno"
+    description: "Supportare revisioni di audit interno su chiusura finanziaria, riconciliazioni e controlli; chiudere rilievi."
+    source_hash: sha256-93f2c12d1ae74ff2
+  BP-1080.70.30:
+    name: "Ottenere sign-off del management"
+    description: "Ottenere sign-off di CFO e CEO su bilanci e rappresentazioni di controllo SOX o equivalente; briefare il comitato di audit secondo protocollo di corporate governance."
+    source_hash: sha256-7615dbb49880ed60

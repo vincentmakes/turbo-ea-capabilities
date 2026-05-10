@@ -6,6 +6,7 @@ entries:
     description: |
       Durchgängige Sendungssichtbarkeit durch Ereigniserfassung, Statusauflösung,
       ETA-Prognose, Ausnahmebenachrichtigung und Control-Tower-Betrieb.
+    source_hash: sha256-8ea9ff58ce2685eb
   BC-2510.10:
     name: Ereigniserfassung und Status-Management
     description: |
@@ -16,85 +17,105 @@ entries:
       - IoT- und Telematik-Ereigniserfassung
     out_of_scope:
       - Telematik für den Asset-Zustand (BC-2430.40)
+    source_hash: sha256-3a61b4197d69f131
   BC-2510.10.10:
     name: Carrier-Ereignisverarbeitung
     description: |
       Verarbeitung von carrierseitigen Meilensteinereignissen über EDI und APIs.
+    source_hash: sha256-72f2696ba7dad219
   BC-2510.10.20:
     name: IoT- und Telematik-Ereigniserfassung
     description: |
       Erfassung von Fracht-IoT- und Telematikereignissen.
+    source_hash: sha256-a8a72c7ebbb6ac7d
   BC-2510.10.30:
     name: Manuelle Status-Aktualisierungserfassung
     description: |
       Erfassung manueller Status-Aktualisierungen von Fahrern, Agenten und Partnern.
+    source_hash: sha256-42a8d355da140037
   BC-2510.20:
     name: Sendungs-Tracking-Management
     description: |
       Auflösung des Sendungsstatus über Strecken, Verkehrsträger und Partner und
       Bereitstellung auf internen und kundenseitigen Tracking-Oberflächen.
+    source_hash: sha256-04fe8209f1f19323
   BC-2510.20.10:
     name: Sendungsstatus-Auflösung
     description: |
       Auflösung des kanonischen Sendungsstatus aus Rohereignissen.
+    source_hash: sha256-442bcdc9db4966f6
   BC-2510.20.20:
     name: Mehrstufige Tracking-Verknüpfung
     description: |
       Verknüpfung mehrstufiger, multi-carrier-Reisen zu einem einheitlichen Track.
+    source_hash: sha256-2bdc145ce03e0a36
   BC-2510.20.30:
     name: Öffentliches Tracking-Portal-Betrieb
     description: |
       Betrieb öffentlicher Tracking-Portale und Kunden-APIs.
+    source_hash: sha256-77d6b89cef1e80b7
   BC-2510.30:
     name: ETA-Prognose-Management
     description: |
       Berechnung und kontinuierliche Verfeinerung der voraussichtlichen Ankunftszeit.
+    source_hash: sha256-e9d8eb18e42fec31
   BC-2510.30.10:
     name: ETA-Berechnung
     description: |
       Deterministische ETA-Berechnung aus Fahrplänen und Meilensteinen.
+    source_hash: sha256-35017be74dfff2f5
   BC-2510.30.20:
     name: Prädiktive ETA-Modellierung
     description: |
       Prädiktive ETA-Modellierung unter Verwendung historischer und kontextueller Daten.
+    source_hash: sha256-8af4670e56884dc7
   BC-2510.30.30:
     name: ETA-Abweichungsbenachrichtigung
     description: |
       Benachrichtigung bei wesentlichen ETA-Abweichungen gegenüber Zusagen.
+    source_hash: sha256-2eec2468a8cac143
   BC-2510.40:
     name: Ausnahme- und Alarm-Management
     description: |
       Erkennung betrieblicher Ausnahmen, Benachrichtigung von Stakeholdern und
       Verfolgung der Ausnahmelösung.
+    source_hash: sha256-c2ef3acb43bcf4b1
   BC-2510.40.10:
     name: Ausnahmeerkennung
     description: |
       Regel- und modellbasierte Erkennung betrieblicher Ausnahmen.
+    source_hash: sha256-5fc8479c1b20fa96
   BC-2510.40.20:
     name: Stakeholder-Benachrichtigung
     description: |
       Benachrichtigung von Kunden, Betriebsteams und Partnern.
+    source_hash: sha256-396b16b057b497fe
   BC-2510.40.30:
     name: Ausnahmelösungs-Verfolgung
     description: |
       Verfolgung von Ausnahme-Triage, Verantwortung und Abschluss.
+    source_hash: sha256-68b44bf8f3e44230
   BC-2510.50:
     name: Control-Tower-Betriebsmanagement
     description: |
       Durchgängige Sichtbarkeit, Leistungsüberwachung und proaktive
       Interventionskoordination über Carrier und Partner.
+    source_hash: sha256-cd2027757600e7f4
   BC-2510.50.10:
     name: Durchgängige Sichtbarkeits-Dashboards
     description: |
       Betrieb durchgängiger Sichtbarkeits-Dashboards über das Netzwerk.
+    source_hash: sha256-55cb8e63528ed6be
   BC-2510.50.20:
     name: Carrier-übergreifende Leistungsüberwachung
     description: |
       Überwachung der Leistung über Carrier und Partner.
+    source_hash: sha256-b1e171bf46bc2548
   BC-2510.50.30:
     name: Proaktive Interventionskoordination
     description: |
       Koordination proaktiver Interventionen zum Schutz von Zusagen.
+    source_hash: sha256-3ac3218790ba259a
 metadata:
   translator: claude-ai
   date: "2026-04-29"

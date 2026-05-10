@@ -1,0 +1,168 @@
+kind: business-process
+locale: zh
+source: BP1-idea-to-market.yaml
+entries:
+  BP-1030:
+    name: "创意到市场"
+    description: "端到端的产品/服务创新循环,涵盖创意捕获、概念与可行性、研究与原型、组合选择、设计与开发、IP保护、上市就绪、市场导入及上市后绩效。每个BP2对应VS-290的一个stage_name。"
+    source_hash: sha256-b36539c6a860d958
+  BP-1030.10:
+    name: "创意捕获"
+    description: "从员工、客户、合作伙伴和市场信号中浮现、捕获并整合创意;路由至分诊。"
+    source_hash: sha256-a7061e299a1ff468
+  BP-1030.10.10:
+    name: "征集创意"
+    description: "运行创意生成活动、黑客松及持续渠道;鼓励组织和生态系统范围内的提交。"
+    source_hash: sha256-c583fe2370715b4c
+  BP-1030.10.20:
+    name: "捕获并分诊创意"
+    description: "持久化收到的创意,去重,并分诊到带有初步分类的评审队列。"
+    source_hash: sha256-c9215649b73f4f3e
+  BP-1030.10.30:
+    name: "验证创意契合度"
+    description: "对照战略、能力和市场信号执行首轮契合度筛选;拒绝、搁置或推进至可行性。"
+    source_hash: sha256-e141bfd4610a44b2
+  BP-1030.20:
+    name: "概念与可行性"
+    description: "将有前景的创意转化为概念;评估技术、市场和商业可行性;为组合选择构建论证。"
+    source_hash: sha256-bad24bcc25be296d
+  BP-1030.20.10:
+    name: "构建概念"
+    description: "在足够深度上阐述概念——问题、目标用户、拟议解决方案、价值假设——以供评估。"
+    source_hash: sha256-7f29485cfc7bb17a
+  BP-1030.20.20:
+    name: "评估技术可行性"
+    description: "验证概念能否使用现有或可获取的技术、材料和技能予以构建。"
+    source_hash: sha256-79c0fcd5a32d0a6b
+  BP-1030.20.30:
+    name: "评估商业可行性"
+    description: "构建商业论证——可触达市场、定价、服务成本、ROI——以测算机会规模。"
+    source_hash: sha256-91311fcf277dd9f2
+  BP-1030.20.40:
+    name: "决定概念推进"
+    description: "在概念关口决定推进、优化、搁置或终止,附明确依据与条件。"
+    source_hash: sha256-138369baf58db536
+  BP-1030.30:
+    name: "研究与原型"
+    description: "开展研究、构建原型并与用户测试,以在全面设计前降低概念风险。"
+    source_hash: sha256-17f18132d611266a
+  BP-1030.30.10:
+    name: "开展用户研究"
+    description: "对目标用户开展定性和定量研究,以验证问题与解决方案的契合度。"
+    source_hash: sha256-6f99d5b5143f9411
+  BP-1030.30.20:
+    name: "构建原型"
+    description: "构建低保真或高保真原型——实物模型、线框图、可运行代码——使概念具象化。"
+    source_hash: sha256-5739023c197a8fda
+  BP-1030.30.30:
+    name: "与用户测试原型"
+    description: "对目标用户开展可用性与价值测试;采集发现以指导迭代或终止决策。"
+    source_hash: sha256-e0ce8001b6cefc0d
+  BP-1030.30.40:
+    name: "迭代概念"
+    description: "将原型测试的学习应用到概念;持续迭代直至可进入组合选择或终止。"
+    source_hash: sha256-b97ec6e807254040
+  BP-1030.40:
+    name: "组合选择"
+    description: "在创新组合中对已验证概念进行优先级排序;分配资源、安排交付时序并平衡风险。"
+    source_hash: sha256-05557aba2112750f
+  BP-1030.40.10:
+    name: "对组合候选打分"
+    description: "依据组合标准——战略契合、价值、风险、能力契合、上市时间——对已验证概念打分。"
+    source_hash: sha256-2122433ebccc8046
+  BP-1030.40.20:
+    name: "排序组合"
+    description: "跨视野(now/next/later)及核心/相邻/转型组合排序,实现组合时序均衡。"
+    source_hash: sha256-038a49840a38ad82
+  BP-1030.40.30:
+    name: "分配资源"
+    description: "为入选概念分配资金、人才和基础设施;触发正式启动进入设计与开发。"
+    source_hash: sha256-e99973b9328d841f
+  BP-1030.50:
+    name: "设计与开发"
+    description: "对产品或服务进行详细设计、工程化、构建与集成,直至上市就绪。"
+    source_hash: sha256-6787748725dca2eb
+  BP-1030.50.10:
+    name: "定义详细需求"
+    description: "将已验证概念转化为详细的功能性、非功能性及验收需求。"
+    source_hash: sha256-e0f465f9e03256c8
+  BP-1030.50.20:
+    name: "设计产品或服务"
+    description: "产出详细设计——架构、材料、UX、BOM——以供构建与验证。"
+    source_hash: sha256-a18aadaba349f517
+  BP-1030.50.30:
+    name: "构建并集成"
+    description: "依据设计构建产品或服务;集成组件与子系统;管理变更与配置。"
+    source_hash: sha256-43fb091529479223
+  BP-1030.50.40:
+    name: "验证与确认"
+    description: "对照需求执行设计验证与确认;在上市就绪前关闭不符合项。"
+    source_hash: sha256-0491e890b9359851
+  BP-1030.60:
+    name: "IP保护"
+    description: "识别、保护并管理创新循环中产生的知识产权。"
+    source_hash: sha256-61ef19429576caef
+  BP-1030.60.10:
+    name: "识别可专利IP"
+    description: "对创新进行新颖性、实用性和非显而易见性审查;识别候选发明用于申请专利。"
+    source_hash: sha256-1bda5b069a27694a
+  BP-1030.60.20:
+    name: "申请并维护专利"
+    description: "提交临时及正式专利申请;在各司法管辖区管理审查至授权。"
+    source_hash: sha256-f6bb1449f35764c6
+  BP-1030.60.30:
+    name: "管理商业秘密与商标"
+    description: "识别商业秘密素材与品牌资产;实施保护(NDA、访问控制、注册)。"
+    source_hash: sha256-5618df73b3f9460a
+  BP-1030.70:
+    name: "上市就绪"
+    description: "为市场上市做好准备——GTM、制造、供应链、渠道、支持与培训。"
+    source_hash: sha256-7421f1a483dcc4f8
+  BP-1030.70.10:
+    name: "构建GTM计划"
+    description: "为上市窗口制定GTM计划——定位、定价、渠道、销售赋能、营销活动。"
+    source_hash: sha256-6258e6325e861f8d
+  BP-1030.70.20:
+    name: "扩产制造或服务交付"
+    description: "搭建制造产能或服务交付就绪——设备、培训、供应、认证。"
+    source_hash: sha256-176d0f039e4a2315
+  BP-1030.70.30:
+    name: "培训销售与支持"
+    description: "在上市前对销售、合作伙伴和支持团队进行新产品/服务培训。"
+    source_hash: sha256-30636bf100386a45
+  BP-1030.70.40:
+    name: "通过上市就绪评审"
+    description: "执行跨职能上市就绪评审;关闭差距或在就绪前暂缓上市。"
+    source_hash: sha256-5158e4d8c5beec12
+  BP-1030.80:
+    name: "市场导入"
+    description: "执行上市——发布、宣告、销售并支持新产品或服务进入市场。"
+    source_hash: sha256-fccc929bbdbc1c0e
+  BP-1030.80.10:
+    name: "向市场发布"
+    description: "依据上市计划在各渠道与地区切换发布;与PR、合作伙伴及供应协同。"
+    source_hash: sha256-595440a14e2c944e
+  BP-1030.80.20:
+    name: "执行上市营销"
+    description: "依据GTM计划运行上市活动——广告、内容、活动、PR、社交。"
+    source_hash: sha256-7bef6ca901f65664
+  BP-1030.80.30:
+    name: "捕获首批销售"
+    description: "通过直销、合作伙伴和数字渠道驱动首批销售动作;跟踪转化以验证上市曲线。"
+    source_hash: sha256-d7010f1d15c04462
+  BP-1030.90:
+    name: "上市后绩效"
+    description: "对照商业论证跟踪绩效,采集客户反馈,推动增强,并决定生命周期动作。"
+    source_hash: sha256-01cca0985f06a990
+  BP-1030.90.10:
+    name: "跟踪上市KPI"
+    description: "在前30/60/90天及之后,对照商业论证监控采用率、收入、毛利、NPS等上市KPI。"
+    source_hash: sha256-9749cd117ed6d4c6
+  BP-1030.90.20:
+    name: "捕获客户反馈"
+    description: "在市场中采集结构化和非结构化客户反馈;路由进入产品backlog与路线图。"
+    source_hash: sha256-eb22fe36b8bf4541
+  BP-1030.90.30:
+    name: "规划生命周期增强"
+    description: "依据上市后证据决定增强、快跟特性或转向动作;反馈至创意捕获环节。"
+    source_hash: sha256-7dd9d530f1896f55

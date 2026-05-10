@@ -1,0 +1,275 @@
+id: BP-1080
+name: Record-to-Report
+level: 1
+industry: Cross-Industry
+description: >-
+  Financial-close cycle from transaction capture through sub-ledger
+  close, reconciliation, consolidation, management reporting, statutory
+  and regulatory reporting, and audit sign-off. One BP2 per VS-460
+  stage_name.
+framework_refs: []
+realizes_capability_ids:
+  - BC-130
+  - BC-140
+  - BC-200
+  - BC-210
+  - BC-220
+  - BC-230
+  - BC-240
+  - BC-2150
+  - BC-2180
+  - BC-2660
+  - BC-3280
+  - BC-3910
+  - BC-3920
+  - BC-4250
+  - BC-4810
+  - BC-4910
+  - BC-4940
+  - BC-4980
+children:
+  - id: BP-1080.10
+    name: Transaction Capture
+    level: 2
+    description: Capture economic transactions across source systems into the financial backbone with proper coding.
+    realizes_capability_ids:
+      - BC-200
+      - BC-2660
+      - BC-3280
+      - BC-3910
+      - BC-4940
+    children:
+      - id: BP-1080.10.10
+        name: Capture Source Transactions
+        level: 3
+        description: Capture transactions from sales, procurement, payroll, treasury, and other source systems into accounting feeds.
+        realizes_capability_ids:
+          - BC-200
+          - BC-2660
+        children: []
+      - id: BP-1080.10.20
+        name: Apply Account Coding
+        level: 3
+        description: Apply account, cost-center, and project coding per chart of accounts and policy.
+        realizes_capability_ids:
+          - BC-200
+          - BC-3280
+        children: []
+      - id: BP-1080.10.30
+        name: Validate Transaction Data
+        level: 3
+        description: Run validation rules — completeness, classification, currency, period — and route exceptions for correction.
+        realizes_capability_ids:
+          - BC-200
+          - BC-3910
+          - BC-4940
+        children: []
+  - id: BP-1080.20
+    name: Sub-Ledger Close
+    level: 2
+    description: Close sub-ledgers — AR, AP, fixed assets, payroll, treasury — and post to general ledger.
+    realizes_capability_ids:
+      - BC-200
+      - BC-2150
+      - BC-3280
+    children:
+      - id: BP-1080.20.10
+        name: Close AR Sub-Ledger
+        level: 3
+        description: Close accounts-receivable sub-ledger; post AR-to-GL summary and roll forward open balances.
+        realizes_capability_ids:
+          - BC-200
+        children: []
+      - id: BP-1080.20.20
+        name: Close AP Sub-Ledger
+        level: 3
+        description: Close accounts-payable sub-ledger; post AP-to-GL summary and roll forward open balances.
+        realizes_capability_ids:
+          - BC-200
+        children: []
+      - id: BP-1080.20.30
+        name: Close Fixed-Asset Sub-Ledger
+        level: 3
+        description: Run fixed-asset depreciation and additions/disposals; post to GL.
+        realizes_capability_ids:
+          - BC-2150
+        children: []
+      - id: BP-1080.20.40
+        name: Close Other Sub-Ledgers
+        level: 3
+        description: Close payroll, treasury, inventory, and project sub-ledgers; post to GL with audit trail.
+        realizes_capability_ids:
+          - BC-200
+          - BC-3280
+        children: []
+  - id: BP-1080.30
+    name: Reconciliation & Adjustments
+    level: 2
+    description: Reconcile balance-sheet accounts and post period-end adjustments to lock the books.
+    realizes_capability_ids:
+      - BC-200
+      - BC-210
+    children:
+      - id: BP-1080.30.10
+        name: Reconcile Balance-Sheet Accounts
+        level: 3
+        description: Reconcile cash, AR, AP, intercompany, accruals, and other balance-sheet accounts to source detail.
+        realizes_capability_ids:
+          - BC-200
+          - BC-210
+        children: []
+      - id: BP-1080.30.20
+        name: Post Period-End Adjustments
+        level: 3
+        description: Post accruals, prepayments, deferrals, and reclassification entries; capture supporting documentation.
+        realizes_capability_ids:
+          - BC-200
+        children: []
+      - id: BP-1080.30.30
+        name: Resolve Reconciliation Variances
+        level: 3
+        description: Investigate and resolve reconciling items; escalate unresolved items to controllership for write-off or carry-forward.
+        realizes_capability_ids:
+          - BC-200
+        children: []
+  - id: BP-1080.40
+    name: Consolidation
+    level: 2
+    description: Consolidate financials across legal entities and currencies; eliminate intercompany; produce group results.
+    realizes_capability_ids:
+      - BC-200
+      - BC-220
+      - BC-3280
+      - BC-4910
+    children:
+      - id: BP-1080.40.10
+        name: Translate Local-Currency Trial Balances
+        level: 3
+        description: Translate local-currency trial balances to reporting currency at appropriate FX rates per accounting standard.
+        realizes_capability_ids:
+          - BC-200
+          - BC-220
+        children: []
+      - id: BP-1080.40.20
+        name: Eliminate Intercompany
+        level: 3
+        description: Eliminate intercompany sales, balances, and unrealised profits per consolidation rules.
+        realizes_capability_ids:
+          - BC-200
+          - BC-3280
+        children: []
+      - id: BP-1080.40.30
+        name: Produce Group Consolidated Results
+        level: 3
+        description: Produce consolidated balance sheet, income statement, cash flow, and equity for the group; persist to consolidation system.
+        realizes_capability_ids:
+          - BC-200
+          - BC-4910
+        children: []
+  - id: BP-1080.50
+    name: Management Reporting
+    level: 2
+    description: Produce internal management reports for the executive team, board, and operating leaders.
+    realizes_capability_ids:
+      - BC-230
+      - BC-4250
+      - BC-4910
+      - BC-4940
+    children:
+      - id: BP-1080.50.10
+        name: Build Management Reports
+        level: 3
+        description: Build management reports — P&L by segment, cost centre, product, customer; cash and working-capital views.
+        realizes_capability_ids:
+          - BC-230
+          - BC-4250
+        children: []
+      - id: BP-1080.50.20
+        name: Analyse Variances to Plan
+        level: 3
+        description: Analyse actual vs plan and prior-period variances; identify drivers and corrective actions.
+        realizes_capability_ids:
+          - BC-230
+          - BC-4910
+        children: []
+      - id: BP-1080.50.30
+        name: Distribute Management Pack
+        level: 3
+        description: Distribute the management reporting pack to executives and operating leaders on the agreed cadence.
+        realizes_capability_ids:
+          - BC-4940
+        children: []
+  - id: BP-1080.60
+    name: Statutory & Regulatory Reporting
+    level: 2
+    description: Produce statutory, regulatory, and tax filings to authorities on schedule.
+    realizes_capability_ids:
+      - BC-200
+      - BC-220
+      - BC-240
+      - BC-2180
+      - BC-3280
+      - BC-3920
+      - BC-4810
+      - BC-4910
+      - BC-4980
+    children:
+      - id: BP-1080.60.10
+        name: Prepare Statutory Accounts
+        level: 3
+        description: Prepare statutory financial statements per local GAAP / IFRS for each legal entity in jurisdiction.
+        realizes_capability_ids:
+          - BC-200
+          - BC-3280
+          - BC-4910
+        children: []
+      - id: BP-1080.60.20
+        name: File Tax Returns
+        level: 3
+        description: Prepare and file corporate income tax, VAT/GST, withholding, and transfer-pricing returns per jurisdiction.
+        realizes_capability_ids:
+          - BC-220
+          - BC-2180
+          - BC-3920
+        children: []
+      - id: BP-1080.60.30
+        name: File Regulatory Reports
+        level: 3
+        description: File industry-specific regulatory reports (banking, insurance, listed-company disclosures) to applicable regulators.
+        realizes_capability_ids:
+          - BC-240
+          - BC-4810
+          - BC-4980
+        children: []
+  - id: BP-1080.70
+    name: Audit & Sign-Off
+    level: 2
+    description: Support internal and external audit; obtain sign-off on financial statements and controls.
+    realizes_capability_ids:
+      - BC-130
+      - BC-140
+    children:
+      - id: BP-1080.70.10
+        name: Support External Audit
+        level: 3
+        description: Provide evidence and walk-throughs to external auditors; resolve audit queries; respond to findings.
+        realizes_capability_ids:
+          - BC-140
+        children: []
+      - id: BP-1080.70.20
+        name: Support Internal Audit
+        level: 3
+        description: Support internal-audit reviews of financial close, reconciliations, and controls; close out findings.
+        realizes_capability_ids:
+          - BC-130
+          - BC-140
+        children: []
+      - id: BP-1080.70.30
+        name: Obtain Management Sign-Off
+        level: 3
+        description: Obtain CFO and CEO sign-off on financial statements and SOX / equivalent control representations; brief audit committee per corporate-governance protocol.
+        realizes_capability_ids:
+          - BC-110
+          - BC-130
+          - BC-140
+        children: []

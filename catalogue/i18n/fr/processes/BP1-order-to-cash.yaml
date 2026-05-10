@@ -1,0 +1,188 @@
+kind: business-process
+locale: fr
+source: BP1-order-to-cash.yaml
+entries:
+  BP-1000:
+    name: "Commande-à-Encaissement"
+    description: "Cycle de revenus de bout en bout : de la captation du lead jusqu'au devis, à la contractualisation et la prise de commande (avec contrôle de crédit), à la promesse et à l'allocation, à la production ou à l'exécution du service, à la logistique sortante, à la facturation client, à l'encaissement et à l'imputation des paiements, et à la reconnaissance du revenu. Un BP2 par étape de VS-390 ; les BP3 décomposent le travail en activités opérationnelles à voix verbale."
+    source_hash: sha256-02663879ffca2011
+  BP-1000.10:
+    name: "Captation et qualification de leads"
+    description: "Capter l'intérêt des prospects, l'enrichir avec des données firmographiques et comportementales, le scorer face aux critères du profil client idéal, et router les leads qualifiés vers les ventes."
+    source_hash: sha256-07bdfadef9990ed2
+  BP-1000.10.10:
+    name: "Capter le lead entrant"
+    description: "Recevoir l'intérêt entrant des prospects via formulaires web, événements, références partenaires ou prospection sortante, et le persister sous forme d'enregistrement de lead."
+    source_hash: sha256-6454fcf6bc6781ce
+  BP-1000.10.20:
+    name: "Enrichir les données du lead"
+    description: "Augmenter le lead avec des données firmographiques, technographiques et comportementales issues de sources internes et tierces afin de permettre le scoring et le routage."
+    source_hash: sha256-a3dd161e93754dbc
+  BP-1000.10.30:
+    name: "Scorer et qualifier le lead"
+    description: "Appliquer un modèle de scoring (adéquation + intention) pour qualifier le lead en Marketing-Qualified ou Sales-Qualified, ou le disqualifier et le recycler."
+    source_hash: sha256-f43020b741809658
+  BP-1000.10.40:
+    name: "Router le lead vers les ventes"
+    description: "Affecter le lead qualifié au territoire commercial, au rôle ou au partenaire approprié selon les règles de routage et les SLA."
+    source_hash: sha256-7d6396d776187ec0
+  BP-1000.20:
+    name: "Devis et configuration"
+    description: "Configurer la solution client, la valoriser selon les règles de remise approuvées et émettre un devis que le client peut accepter."
+    source_hash: sha256-d780b7ea12fbe2c2
+  BP-1000.20.10:
+    name: "Configurer la solution client"
+    description: "Traduire les exigences client en un bundle de produit ou de service configuré, en validant la compatibilité et la faisabilité face au catalogue d'offres."
+    source_hash: sha256-20914cf9c10ff37d
+  BP-1000.20.20:
+    name: "Calculer le prix du devis"
+    description: "Appliquer le prix de liste, les remises contractuelles, les promotions, les règles de devise et de fiscalité pour produire le total du devis ligne à ligne."
+    source_hash: sha256-b510e96248e28f82
+  BP-1000.20.30:
+    name: "Soumettre le devis pour approbation"
+    description: "Router le devis dans le workflow d'approbation des remises et des marges lorsque les seuils requièrent une validation, en capturant les décisions des approbateurs."
+    source_hash: sha256-c4f14a586af0b8e6
+  BP-1000.20.40:
+    name: "Émettre le devis au client"
+    description: "Délivrer le devis approuvé au client avec ses conditions, sa durée de validité et les instructions d'acceptation ; suivre le statut du devis jusqu'à la décision."
+    source_hash: sha256-423cb58f1e902201
+  BP-1000.30:
+    name: "Contractualisation et prise de commande"
+    description: "Négocier et exécuter le contrat, exécuter le contrôle de crédit client et enregistrer la commande de vente ferme."
+    source_hash: sha256-4fcc590b0de143b0
+  BP-1000.30.10:
+    name: "Négocier les termes du contrat"
+    description: "Négocier les conditions commerciales, niveaux de service, indemnités et responsabilités ; redliner le contrat jusqu'à acceptation des deux parties."
+    source_hash: sha256-0f2c1c373f9fbe2f
+  BP-1000.30.20:
+    name: "Vérifier le crédit client"
+    description: "Exécuter le contrôle de crédit du client (historique de crédit interne + bureau externe le cas échéant), définir ou confirmer la limite de crédit et autoriser la commande au regard du crédit disponible."
+    source_hash: sha256-4bda1b0a655e43c1
+  BP-1000.30.30:
+    name: "Exécuter le contrat"
+    description: "Capturer les signatures du client et du signataire autorisé, persister le contrat exécuté dans le référentiel de contrats et déclencher la prise de commande en aval."
+    source_hash: sha256-b1b33289faef6e20
+  BP-1000.30.40:
+    name: "Saisir la commande client"
+    description: "Convertir le contrat exécuté ou le devis accepté en une commande de vente ferme dans le système de gestion des commandes ; valider la complétude et la faisabilité avant validation."
+    source_hash: sha256-8a89509e24124861
+  BP-1000.40:
+    name: "Promesse de commande et allocation"
+    description: "Promettre la date de livraison, allouer le stock ou la capacité et planifier la commande pour exécution."
+    source_hash: sha256-b00d1e0b79ab3dda
+  BP-1000.40.10:
+    name: "Promettre la date de livraison"
+    description: "Exécuter les contrôles available-to-promise / capable-to-promise face au stock, à l'approvisionnement et à la capacité afin d'engager une date de livraison fiable pour le client."
+    source_hash: sha256-529e86dc01e814a6
+  BP-1000.40.20:
+    name: "Allouer le stock à la commande"
+    description: "Réserver un stock spécifique (lots, numéros de série, emplacements) sur la commande ; résoudre les conflits d'allocation lorsque l'approvisionnement est contraint."
+    source_hash: sha256-7c8ab755d52164f4
+  BP-1000.40.30:
+    name: "Réserver la capacité de production"
+    description: "Pour les commandes make-to-order ou assemble-to-order, réserver la ligne de production et l'approvisionnement en composants nécessaires pour tenir la date promise."
+    source_hash: sha256-1312ab0f17c8f21d
+  BP-1000.40.40:
+    name: "Libérer la commande à l'exécution"
+    description: "Transmettre la commande allouée et planifiée à la production ou à l'exécution entrepôt avec toutes les instructions de routage."
+    source_hash: sha256-b0e3332507414bf6
+  BP-1000.50:
+    name: "Production / exécution du service"
+    description: "Exécuter l'ordre de fabrication ou réaliser la prestation de service afin de satisfaire la commande client."
+    source_hash: sha256-c778d7128a28f457
+  BP-1000.50.10:
+    name: "Émettre l'ordre de fabrication"
+    description: "Générer l'ordre de fabrication face à la capacité réservée, incluant la nomenclature, le routing et les points de contrôle qualité."
+    source_hash: sha256-9c74e1005241f1cc
+  BP-1000.50.20:
+    name: "Exécuter la production make-to-order"
+    description: "Réaliser la production selon les spécifications sur la ligne planifiée, en enregistrant la consommation de main-d'œuvre, de machine et de matières."
+    source_hash: sha256-7784055ee0d59778
+  BP-1000.50.30:
+    name: "Délivrer le service au client"
+    description: "Pour les commandes de service, exécuter la mission selon le statement of work, en capturant le temps, les jalons et les livrables."
+    source_hash: sha256-c821d4e93a7b2fa7
+  BP-1000.50.40:
+    name: "Confirmer la complétion de la commande"
+    description: "Clôturer l'ordre de fabrication ou la mission de service avec validation qualité ; déclencher la facturation et la reconnaissance du revenu en aval."
+    source_hash: sha256-898a3aa4a2d5049f
+  BP-1000.60:
+    name: "Logistique sortante"
+    description: "Picker, emballer et expédier la commande ; gérer le transport sortant et confirmer la livraison au client."
+    source_hash: sha256-143fc0bf329859d2
+  BP-1000.60.10:
+    name: "Picker, emballer et expédier la commande"
+    description: "Picker le stock alloué, emballer en condition prête à l'expédition avec la documentation et remettre au transporteur."
+    source_hash: sha256-66dce8504ab268b4
+  BP-1000.60.20:
+    name: "Gérer le transport sortant"
+    description: "Planifier le fret, sélectionner le transporteur, générer les étiquettes d'expédition et la documentation douanière, et expédier le chargement."
+    source_hash: sha256-7da56889672fd0b0
+  BP-1000.60.30:
+    name: "Suivre l'expédition vers le client"
+    description: "Surveiller le statut en transit, gérer les exceptions (retard, dommage, erreur de routage) et tenir le client informé."
+    source_hash: sha256-7e612f642846a332
+  BP-1000.60.40:
+    name: "Confirmer la livraison au client"
+    description: "Capturer la preuve de livraison, clore l'expédition et déclencher la facturation en aval lorsque la facturation est basée sur la livraison."
+    source_hash: sha256-4235ba98e513e646
+  BP-1000.70:
+    name: "Facturation client"
+    description: "Générer la facture client avec taxes et remises, l'émettre via le canal préféré du client et gérer les éventuels litiges."
+    source_hash: sha256-1a9cbab342c75127
+  BP-1000.70.10:
+    name: "Générer la facture client"
+    description: "Construire la facture à partir des données de commande, de livraison et de contrat ; valider la complétude et l'arithmétique avant émission."
+    source_hash: sha256-015419e91094b20b
+  BP-1000.70.20:
+    name: "Appliquer taxes et remises"
+    description: "Appliquer les taxes juridictionnelles (TVA/GST/sales tax), retenues à la source et remises contractuelles aux lignes de la facture."
+    source_hash: sha256-976c7ebd9885656f
+  BP-1000.70.30:
+    name: "Émettre la facture au client"
+    description: "Délivrer la facture via le canal préféré du client (portail e-invoicing, EDI, e-mail, papier) et persister la piste d'audit."
+    source_hash: sha256-b95e6fb74bd072ce
+  BP-1000.70.40:
+    name: "Gérer les litiges de facture"
+    description: "Recevoir, instruire et résoudre les litiges client portant sur le contenu de la facture ; émettre des avoirs ou des révisions lorsque cela se justifie."
+    source_hash: sha256-c585e82bed2bfd3c
+  BP-1000.80:
+    name: "Encaissement et imputation"
+    description: "Collecter les paiements clients via le cycle de relance, imputer les encaissements aux factures et poursuivre les soldes en retard."
+    source_hash: sha256-8d8f97ede9e3ceda
+  BP-1000.80.10:
+    name: "Envoyer les rappels de paiement"
+    description: "Exécuter le cycle de relance — rappels automatiques aux intervalles définis par la politique à mesure que les factures approchent et dépassent l'échéance."
+    source_hash: sha256-a6b6ae3029528d87
+  BP-1000.80.20:
+    name: "Recevoir le paiement client"
+    description: "Accepter le paiement via l'instrument choisi par le client (virement, ACH, carte, chèque, e-paiement) et persister l'encaissement."
+    source_hash: sha256-ea2521d19092870f
+  BP-1000.80.30:
+    name: "Imputer le paiement à la facture"
+    description: "Rapprocher l'encaissement avec la ou les factures ouvertes, allouer ligne à ligne en cas de paiement partiel et clore la créance."
+    source_hash: sha256-39354d40e2fdce1d
+  BP-1000.80.40:
+    name: "Gérer le recouvrement client"
+    description: "Poursuivre les soldes en retard via l'échelle de relance (collecteur, agence de recouvrement, passage en perte / provisionnement pour créances douteuses)."
+    source_hash: sha256-278d2b3138044a1c
+  BP-1000.90:
+    name: "Reconnaissance du revenu"
+    description: "Comptabiliser le revenu acquis selon la norme comptable applicable (IFRS 15 / ASC 606), différer le revenu non acquis et réconcilier au sous-grand livre."
+    source_hash: sha256-89c091b122b13417
+  BP-1000.90.10:
+    name: "Comptabiliser le revenu acquis"
+    description: "Appliquer le modèle en cinq étapes IFRS 15 / ASC 606 pour reconnaître le revenu au point dans le temps approprié ou sur la durée du contrat."
+    source_hash: sha256-6662367ac5e86683
+  BP-1000.90.20:
+    name: "Différer le revenu non acquis"
+    description: "Parquer les montants facturés mais non encore acquis dans les comptes de revenus différés, en libérant à mesure que l'obligation de prestation est satisfaite."
+    source_hash: sha256-8d97df9e020fe229
+  BP-1000.90.30:
+    name: "Réconcilier le revenu au sous-grand livre"
+    description: "Réconcilier le grand livre des revenus avec la comptabilité client et les systèmes de commande/facturation ; résoudre les écarts avant la clôture de période."
+    source_hash: sha256-744e9c32a46a15e5
+  BP-1000.90.40:
+    name: "Reporter la performance du revenu"
+    description: "Produire le reporting des revenus (reconnus, différés, backlog) pour le management, la clôture financière et la communication externe."
+    source_hash: sha256-6aaef44ce04968d1

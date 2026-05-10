@@ -1,0 +1,389 @@
+id: BP-1000
+name: Order-to-Cash
+level: 1
+industry: Cross-Industry
+description: >-
+  End-to-end revenue cycle from lead capture through quote, contract and order
+  capture (with credit check), order promising and allocation, production or
+  service delivery, outbound logistics, customer invoicing, cash collection
+  and application, and revenue recognition. One BP2 per VS-390 stage; BP3
+  decomposes the work into verb-phrased operational activities.
+framework_refs:
+  - framework: SCOR
+    external_id: sD
+    version: "14.0"
+realizes_capability_ids:
+  - BC-150
+  - BC-200
+  - BC-210
+  - BC-410
+  - BC-420
+  - BC-440
+  - BC-520
+  - BC-530
+  - BC-4230
+  - BC-4240
+  - BC-4250
+  - BC-4940
+children:
+  - id: BP-1000.10
+    name: Lead Capture & Qualification
+    level: 2
+    description: Capture prospect interest, enrich it with firmographic and behavioural data, score against ideal-customer-profile criteria, and route qualified leads to sales.
+    realizes_capability_ids:
+      - BC-410
+      - BC-420
+    children:
+      - id: BP-1000.10.10
+        name: Capture Inbound Lead
+        level: 3
+        description: Receive inbound prospect interest from web forms, events, partner referrals, or outbound prospecting and persist as a lead record.
+        realizes_capability_ids:
+          - BC-410
+        children: []
+      - id: BP-1000.10.20
+        name: Enrich Lead Data
+        level: 3
+        description: Augment the lead with firmographic, technographic, and behavioural data from internal and third-party sources to enable scoring and routing.
+        realizes_capability_ids:
+          - BC-420
+        children: []
+      - id: BP-1000.10.30
+        name: Score and Qualify Lead
+        level: 3
+        description: Apply a scoring model (fit + intent) to qualify the lead as Marketing-Qualified or Sales-Qualified, or to disqualify and recycle.
+        realizes_capability_ids:
+          - BC-410
+          - BC-420
+        children: []
+      - id: BP-1000.10.40
+        name: Route Lead to Sales
+        level: 3
+        description: Assign the qualified lead to the appropriate sales territory, role, or partner per routing rules and SLA.
+        realizes_capability_ids:
+          - BC-410
+        children: []
+  - id: BP-1000.20
+    name: Quote & Configuration
+    level: 2
+    description: Configure the customer solution, price it under approved discounting rules, and issue a quote the customer can accept.
+    realizes_capability_ids:
+      - BC-410
+      - BC-440
+    children:
+      - id: BP-1000.20.10
+        name: Configure Customer Solution
+        level: 3
+        description: Translate customer requirements into a configured product or service bundle, validating compatibility and feasibility against the offer catalogue.
+        realizes_capability_ids:
+          - BC-410
+        children: []
+      - id: BP-1000.20.20
+        name: Calculate Quote Pricing
+        level: 3
+        description: Apply list price, contractual discounts, promotions, currency, and tax rules to produce the line-by-line quote total.
+        realizes_capability_ids:
+          - BC-440
+        children: []
+      - id: BP-1000.20.30
+        name: Submit Quote for Approval
+        level: 3
+        description: Route the quote through discount and margin approval workflow when thresholds require sign-off, capturing approver decisions.
+        realizes_capability_ids:
+          - BC-440
+        children: []
+      - id: BP-1000.20.40
+        name: Issue Quote to Customer
+        level: 3
+        description: Deliver the approved quote to the customer with terms, validity, and acceptance instructions; track quote status until decision.
+        realizes_capability_ids:
+          - BC-410
+        children: []
+  - id: BP-1000.30
+    name: Contract & Order Capture
+    level: 2
+    description: Negotiate and execute the contract, run the customer credit check, and capture the firm sales order.
+    framework_refs:
+      - framework: BIAN
+        external_id: Customer Credit Rating
+        version: "9.0"
+    realizes_capability_ids:
+      - BC-150
+      - BC-410
+      - BC-4240
+    children:
+      - id: BP-1000.30.10
+        name: Negotiate Contract Terms
+        level: 3
+        description: Negotiate commercial terms, service levels, indemnities, and liabilities; redline contract until both sides accept.
+        realizes_capability_ids:
+          - BC-150
+        children: []
+      - id: BP-1000.30.20
+        name: Verify Customer Credit
+        level: 3
+        description: Run the credit check on the customer (internal credit history + external bureau where applicable), set or confirm credit limit, and authorise the order against available credit.
+        framework_refs:
+          - framework: BIAN
+            external_id: Customer Credit Rating
+            version: "9.0"
+        realizes_capability_ids:
+          - BC-150
+          - BC-200
+        children: []
+      - id: BP-1000.30.30
+        name: Execute Contract
+        level: 3
+        description: Capture customer and authorised-signatory signatures, persist the executed contract to the contract repository, and trigger downstream order capture.
+        realizes_capability_ids:
+          - BC-150
+          - BC-4240
+        children: []
+      - id: BP-1000.30.40
+        name: Capture Customer Order
+        level: 3
+        description: Convert the executed contract or accepted quote into a firm sales order in the order management system; validate completeness and feasibility before commit.
+        realizes_capability_ids:
+          - BC-410
+          - BC-4240
+        children: []
+  - id: BP-1000.40
+    name: Order Promising & Allocation
+    level: 2
+    description: Promise the delivery date, allocate inventory or capacity, and schedule the order for fulfilment.
+    framework_refs:
+      - framework: SCOR
+        external_id: sD1.3
+        version: "14.0"
+    realizes_capability_ids:
+      - BC-520
+      - BC-530
+    children:
+      - id: BP-1000.40.10
+        name: Promise Order Delivery Date
+        level: 3
+        description: Run available-to-promise / capable-to-promise checks against inventory, supply, and capacity to commit a delivery date the customer can rely on.
+        realizes_capability_ids:
+          - BC-520
+        children: []
+      - id: BP-1000.40.20
+        name: Allocate Inventory to Order
+        level: 3
+        description: Reserve specific inventory (lots, serials, locations) against the order; resolve allocation conflicts when supply is constrained.
+        realizes_capability_ids:
+          - BC-530
+        children: []
+      - id: BP-1000.40.30
+        name: Reserve Production Capacity
+        level: 3
+        description: For make-to-order or assemble-to-order, reserve the production line and component supply needed to meet the promised date.
+        realizes_capability_ids:
+          - BC-520
+        children: []
+      - id: BP-1000.40.40
+        name: Release Order to Fulfilment
+        level: 3
+        description: Hand the allocated and scheduled order over to production or warehouse fulfilment with all routing instructions.
+        realizes_capability_ids:
+          - BC-530
+        children: []
+  - id: BP-1000.50
+    name: Production / Service Delivery
+    level: 2
+    description: Execute the production work order or perform the service to fulfil the customer's order.
+    framework_refs:
+      - framework: SCOR
+        external_id: sM
+        version: "14.0"
+    realizes_capability_ids:
+      - BC-4230
+    children:
+      - id: BP-1000.50.10
+        name: Issue Production Work Order
+        level: 3
+        description: Generate the work order against the reserved capacity, including BOM, routing, and quality checkpoints.
+        realizes_capability_ids:
+          - BC-4230
+        children: []
+      - id: BP-1000.50.20
+        name: Execute Make-to-Order Production
+        level: 3
+        description: Run the production work to specification on the planned line, recording labour, machine, and material consumption.
+        realizes_capability_ids:
+          - BC-4230
+        children: []
+      - id: BP-1000.50.30
+        name: Deliver Service to Customer
+        level: 3
+        description: For service-line orders, perform the engagement against the statement of work, capturing time, milestones, and deliverables.
+        realizes_capability_ids:
+          - BC-4230
+        children: []
+      - id: BP-1000.50.40
+        name: Confirm Order Completion
+        level: 3
+        description: Close the work order or service engagement with quality sign-off; trigger downstream invoicing and revenue recognition.
+        realizes_capability_ids:
+          - BC-4230
+        children: []
+  - id: BP-1000.60
+    name: Outbound Logistics
+    level: 2
+    description: Pick, pack, and ship the order; manage outbound transportation and confirm delivery to the customer.
+    framework_refs:
+      - framework: SCOR
+        external_id: sD1.7
+        version: "14.0"
+    realizes_capability_ids:
+      - BC-520
+    children:
+      - id: BP-1000.60.10
+        name: Pick, Pack, and Ship Order
+        level: 3
+        description: Pick the allocated stock, pack to ship-ready condition with documentation, and tender to the carrier.
+        realizes_capability_ids:
+          - BC-520
+        children: []
+      - id: BP-1000.60.20
+        name: Manage Outbound Transportation
+        level: 3
+        description: Plan freight, select carrier, generate shipping labels and customs documentation, and despatch the load.
+        realizes_capability_ids:
+          - BC-520
+        children: []
+      - id: BP-1000.60.30
+        name: Track Shipment to Customer
+        level: 3
+        description: Monitor in-transit status, manage exceptions (delay, damage, mis-routing), and keep the customer informed.
+        realizes_capability_ids:
+          - BC-520
+        children: []
+      - id: BP-1000.60.40
+        name: Confirm Customer Delivery
+        level: 3
+        description: Capture proof of delivery, close the shipment, and trigger downstream invoicing where billing is delivery-based.
+        realizes_capability_ids:
+          - BC-520
+        children: []
+  - id: BP-1000.70
+    name: Customer Invoicing
+    level: 2
+    description: Generate the customer invoice with taxes and discounts, issue it through the customer's preferred channel, and manage any disputes.
+    realizes_capability_ids:
+      - BC-200
+      - BC-4250
+      - BC-4940
+    children:
+      - id: BP-1000.70.10
+        name: Generate Customer Invoice
+        level: 3
+        description: Build the invoice from order, delivery, and contract data; validate completeness and arithmetic before issue.
+        realizes_capability_ids:
+          - BC-200
+          - BC-4250
+        children: []
+      - id: BP-1000.70.20
+        name: Apply Taxes and Discounts
+        level: 3
+        description: Apply jurisdictional taxes (VAT/GST/sales tax), withholding, and contractual discounts to the invoice line items.
+        realizes_capability_ids:
+          - BC-200
+          - BC-4940
+        children: []
+      - id: BP-1000.70.30
+        name: Issue Invoice to Customer
+        level: 3
+        description: Deliver the invoice via the customer's preferred channel (e-invoicing portal, EDI, email, paper) and persist the audit trail.
+        realizes_capability_ids:
+          - BC-4250
+        children: []
+      - id: BP-1000.70.40
+        name: Manage Invoice Disputes
+        level: 3
+        description: Receive, investigate, and resolve customer disputes on invoice content; issue credit memos or revisions where warranted.
+        realizes_capability_ids:
+          - BC-200
+          - BC-4250
+        children: []
+  - id: BP-1000.80
+    name: Cash Collection & Application
+    level: 2
+    description: Collect customer payments through the dunning cycle, apply receipts to invoices, and pursue overdue balances.
+    realizes_capability_ids:
+      - BC-200
+      - BC-210
+      - BC-4250
+      - BC-4940
+    children:
+      - id: BP-1000.80.10
+        name: Send Payment Reminders
+        level: 3
+        description: Run the dunning cycle — automated reminders at policy intervals as invoices approach and pass due date.
+        realizes_capability_ids:
+          - BC-200
+          - BC-4250
+        children: []
+      - id: BP-1000.80.20
+        name: Receive Customer Payment
+        level: 3
+        description: Accept payment via the customer's chosen instrument (wire, ACH, card, cheque, e-payment) and persist the receipt.
+        realizes_capability_ids:
+          - BC-210
+          - BC-4940
+        children: []
+      - id: BP-1000.80.30
+        name: Apply Payment to Invoice
+        level: 3
+        description: Match the receipt against the open invoice(s), allocate by line item where partial, and close the receivable.
+        realizes_capability_ids:
+          - BC-200
+          - BC-4250
+        children: []
+      - id: BP-1000.80.40
+        name: Manage Customer Collections
+        level: 3
+        description: Pursue overdue balances through the escalation ladder (collector, collections agency, write-off / bad-debt provisioning).
+        realizes_capability_ids:
+          - BC-200
+        children: []
+  - id: BP-1000.90
+    name: Revenue Recognition
+    level: 2
+    description: Recognise earned revenue under the applicable accounting standard (IFRS 15 / ASC 606), defer unearned revenue, and reconcile to the sub-ledger.
+    realizes_capability_ids:
+      - BC-200
+      - BC-4250
+      - BC-4940
+    children:
+      - id: BP-1000.90.10
+        name: Recognise Earned Revenue
+        level: 3
+        description: Apply the five-step IFRS 15 / ASC 606 model to recognise revenue at the appropriate point in time or over the contract term.
+        realizes_capability_ids:
+          - BC-200
+          - BC-4250
+        children: []
+      - id: BP-1000.90.20
+        name: Defer Unearned Revenue
+        level: 3
+        description: Park amounts billed but not yet earned in deferred revenue accounts, releasing as the performance obligation is satisfied.
+        realizes_capability_ids:
+          - BC-200
+          - BC-4250
+        children: []
+      - id: BP-1000.90.30
+        name: Reconcile Revenue to Sub-Ledger
+        level: 3
+        description: Reconcile the revenue ledger to AR and order/billing systems; resolve variances ahead of period-end close.
+        realizes_capability_ids:
+          - BC-200
+          - BC-4940
+        children: []
+      - id: BP-1000.90.40
+        name: Report Revenue Performance
+        level: 3
+        description: Produce revenue reporting (recognised, deferred, backlog) for management, finance close, and external disclosure.
+        realizes_capability_ids:
+          - BC-200
+          - BC-4250
+        children: []

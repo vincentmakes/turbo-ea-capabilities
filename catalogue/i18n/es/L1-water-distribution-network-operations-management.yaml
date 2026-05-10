@@ -8,43 +8,52 @@ entries:
       clientes — gestión hidráulica y de presiones, control de fugas, calidad del agua
       en la red, reparación y renovación de tuberías, y realización de nuevas conexiones
       de clientes.
+    source_hash: sha256-38fcbfa706b88734
   BC-3880.10:
     name: Control de la red de distribución
     description: |
       Operación 24/7 de la sala de control del sistema de distribución de agua mediante
       telemetría, modelos hidráulicos y SCADA.
+    source_hash: sha256-da1c69a71631f438
   BC-3880.10.10:
     name: Operaciones de SCADA de distribución
     description: |
       Control supervisor en tiempo real de los activos de bombeo y presión en toda la red.
+    source_hash: sha256-acd970d3b96a68cd
   BC-3880.10.20:
     name: Operaciones del modelo hidráulico
     description: |
       Operación de modelos hidráulicos en línea y fuera de línea para la toma de
       decisiones en la red.
+    source_hash: sha256-1a67cca20cb0c348
   BC-3880.10.30:
     name: Vigilancia de telemetría de la red
     description: |
       Vigilancia de la telemetría en DMAs, válvulas y puntos de presión.
+    source_hash: sha256-8696d0df69ecf167
   BC-3880.20:
     name: Operaciones de arterias y bombeo
     description: |
       Operación de arterias, estaciones de bombeo y trasvases interzonales, incluido
       el bombeo de refuerzo y la gestión del golpe de ariete.
+    source_hash: sha256-db6d953c0a06ffa5
   BC-3880.20.10:
     name: Operaciones de estaciones de bombeo
     description: |
       Operación y optimización energética de las estaciones de bombeo de distribución.
+    source_hash: sha256-c7fef51eea734a94
   BC-3880.20.20:
     name: Operaciones de arterias
     description: |
       Operación, maniobras de válvulas y gestión del golpe de ariete en arterias
       de transporte.
+    source_hash: sha256-f0b282922fbaa270
   BC-3880.20.30:
     name: Operaciones de trasvases interzonales
     description: |
       Operación de trasvases interzonales y enlaces de suministro en bloque entre zonas
       de recursos.
+    source_hash: sha256-195d201e54d61ea1
   BC-3880.30:
     name: Gestión de fugas
     description: |
@@ -57,98 +66,119 @@ entries:
     out_of_scope:
       - Programas de renovación de tuberías (BC-3900.50)
       - Fugas en tuberías de acometida del cliente (BC-3910.60)
+    source_hash: sha256-29131a46576afe35
   BC-3880.30.10:
     name: Análisis de zonas de medición distrital
     description: |
       Análisis de los datos de caudal entrante y caudal mínimo nocturno de las DMAs para
       localizar fugas.
+    source_hash: sha256-8013aa76ac881c94
   BC-3880.30.20:
     name: Detección acústica de fugas
     description: |
       Sondeos acústicos, correlación y barridos con registradores de ruido para localizar
       fugas.
+    source_hash: sha256-839a3460a92e0185
   BC-3880.30.30:
     name: Operaciones de localización y reparación de fugas
     description: |
       Operaciones de localización y reparación en campo de las fugas detectadas frente a
       los objetivos de tiempo de reparación.
+    source_hash: sha256-8fdd53d1733afe4c
   BC-3880.30.40:
     name: Informes de rendimiento en materia de fugas
     description: |
       Notificación del rendimiento en materia de fugas frente a las métricas del balance
       hídrico reglamentario y de la IWA.
+    source_hash: sha256-c231e7329b16d9f7
   BC-3880.40:
     name: Gestión de presiones
     description: |
       Optimización de la presión de distribución en zonas gestionadas por presión para
       la reducción de fugas y el control de la tasa de roturas.
+    source_hash: sha256-413b28eb3944d3fc
   BC-3880.40.10:
     name: Configuración de zonas de presión
     description: |
       Configuración de las zonas de gestión de presión y los puntos de ajuste de las
       válvulas reductoras de presión.
+    source_hash: sha256-13cc3d77c78db951
   BC-3880.40.20:
     name: Control avanzado de presiones
     description: |
       Operación de válvulas reductoras de presión controladas a distancia y moduladas
       por tiempo.
+    source_hash: sha256-55c78759492093a0
   BC-3880.40.30:
     name: Gestión de presiones transitorias
     description: |
       Análisis de transitorios y mitigación del golpe de ariete en redes de distribución.
+    source_hash: sha256-7d2501d2f0ca6202
   BC-3880.50:
     name: Operaciones de calidad del agua en la red
     description: |
       Vigilancia de la calidad del agua en la red — cloro residual, agua decolorada,
       sabor y olor — y operaciones de corrección.
+    source_hash: sha256-c89ebb2a35bbdbf8
   BC-3880.50.10:
     name: Vigilancia del cloro residual en la red
     description: |
       Vigilancia de los residuos de cloro en toda la red y dosificación de recloración.
+    source_hash: sha256-86cf089272dd86b4
   BC-3880.50.20:
     name: Control de decoloración y sedimentos
     description: |
       Operaciones de lavado y limpieza por hielo para gestionar las reclamaciones por
       agua decolorada.
+    source_hash: sha256-b357719d0efb6265
   BC-3880.50.30:
     name: Operaciones de muestreo en la red
     description: |
       Muestreo reglamentario en los grifos de los clientes y puntos de suministro.
+    source_hash: sha256-fde8b76be043e2de
   BC-3880.60:
     name: Operaciones de reparación y renovación de tuberías
     description: |
       Reparación reactiva de roturas y fallos en juntas, y ejecución operativa de los
       programas de renovación de tuberías.
+    source_hash: sha256-5ba88927d93cb948
   BC-3880.60.10:
     name: Respuesta ante roturas de tuberías
     description: |
       Respuesta, aislamiento y reparación de roturas de tuberías frente a los objetivos
       de minutos-cliente perdidos.
+    source_hash: sha256-b875b6429ae1752c
   BC-3880.60.20:
     name: Operaciones de reparación de tuberías de acometida
     description: |
       Reparación de tuberías de conexión y de acometida entre la arteria y la llave
       de paso.
+    source_hash: sha256-945c4f7bb0690d8d
   BC-3880.60.30:
     name: Operaciones de campo de renovación de tuberías
     description: |
       Ejecución en campo de los programas de renovación y rehabilitación de tuberías,
       incluidos los métodos sin zanja.
+    source_hash: sha256-5cc00b8e0cb498c5
   BC-3880.70:
     name: Operaciones de nuevas conexiones de agua
     description: |
       Realización de nuevas conexiones de suministro de agua para clientes domésticos,
       comerciales y promotores.
+    source_hash: sha256-1c7af387aad60050
   BC-3880.70.10:
     name: Evaluación de solicitudes de nueva conexión
     description: |
       Evaluación técnica de las solicitudes de nueva conexión de agua y la prestación
       de servicios a promotores.
+    source_hash: sha256-ee1503d5ed385bc9
   BC-3880.70.20:
     name: Operaciones de instalación de conexiones
     description: |
       Instalación de tuberías de conexión, ferulas y contadores del cliente.
+    source_hash: sha256-cca66994b42b88cf
   BC-3880.70.30:
     name: Puesta en servicio de conexiones
     description: |
       Puesta en servicio, flushing y desinfección de nuevas conexiones antes de su uso.
+    source_hash: sha256-39d5ff0204ba68ee

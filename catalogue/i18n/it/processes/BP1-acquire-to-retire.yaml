@@ -1,0 +1,112 @@
+kind: business-process
+locale: it
+source: BP1-acquire-to-retire.yaml
+entries:
+  BP-1090:
+    name: "Acquisizione-a-Dismissione"
+    description: "Ciclo di vita end-to-end di asset fisici da bisogno e giustificazione attraverso acquisizione, messa in servizio, operate-and-maintain, rischio e affidabilità, manutenzione delle informazioni di asset e dismissione. Un BP2 per ogni stage_name di VS-10."
+    source_hash: sha256-e62b5deb624ae388
+  BP-1090.10:
+    name: "Bisogno e giustificazione dell'asset"
+    description: "Identificare bisogni di asset, giustificare capitale e approvare l'asset prima dell'avvio dell'acquisto."
+    source_hash: sha256-12ac5e53e1eac73a
+  BP-1090.10.10:
+    name: "Identificare bisogno di asset"
+    description: "Catturare il bisogno di business per un asset nuovo o di sostituzione; raccogliere contesto tecnico e operativo."
+    source_hash: sha256-0ba6e8034def920a
+  BP-1090.10.20:
+    name: "Costruire giustificazione di capitale"
+    description: "Costruire il business case — costo totale di proprietà, NPV, sensitività — e ottenere approvazione di capitale."
+    source_hash: sha256-e5a5098d98246214
+  BP-1090.10.30:
+    name: "Approvare piano di asset"
+    description: "Instradare attraverso il comitato di approvazione di capitale; documentare condizioni e collegare al portafoglio."
+    source_hash: sha256-54bb4cd0abe633ef
+  BP-1090.20:
+    name: "Acquisizione"
+    description: "Sourcing, design o specifica, acquisto e accettazione della consegna dell'asset."
+    source_hash: sha256-8a2af9b2f027187d
+  BP-1090.20.10:
+    name: "Specificare asset"
+    description: "Tradurre il bisogno in specifica di asset — capacità, performance, compliance, requisiti di ciclo di vita."
+    source_hash: sha256-ee95f91c13836728
+  BP-1090.20.20:
+    name: "Acquistare asset"
+    description: "Eseguire sourcing, selezione del fornitore e contrattazione; piazzare ordine d'acquisto o contratto di costruzione."
+    source_hash: sha256-a89c0660f830a179
+  BP-1090.20.30:
+    name: "Accettare consegna dell'asset"
+    description: "Ricevere, ispezionare e accettare formalmente l'asset rispetto alla specifica."
+    source_hash: sha256-f3cbe16302a78266
+  BP-1090.30:
+    name: "Messa in servizio e capitalizzazione"
+    description: "Installare, testare e mettere in servizio l'asset; capitalizzarlo a libro."
+    source_hash: sha256-f9c452c0a5eaced6
+  BP-1090.30.10:
+    name: "Installare e mettere in servizio l'asset"
+    description: "Installare, energizzare ed eseguire test di messa in servizio; trasferire alle operations al completamento riuscito."
+    source_hash: sha256-42048155b77cddc0
+  BP-1090.30.20:
+    name: "Capitalizzare asset"
+    description: "Capitalizzare l'asset nel registro cespiti con classe, metodo di ammortamento e vita utile appropriati."
+    source_hash: sha256-cd17f71e2989fdf0
+  BP-1090.40:
+    name: "Operate e maintain"
+    description: "Operare l'asset ed eseguire manutenzione preventiva, correttiva e basata sulle condizioni lungo la vita utile."
+    source_hash: sha256-855e61ee20a48fef
+  BP-1090.40.10:
+    name: "Operare asset"
+    description: "Eseguire operazioni quotidiane dell'asset rispetto ai parametri di design; catturare dati operativi."
+    source_hash: sha256-6e004e72b3b6da7a
+  BP-1090.40.20:
+    name: "Pianificare e schedulare manutenzione"
+    description: "Pianificare manutenzione preventiva, predittiva e basata sulle condizioni; schedulare rispetto alla disponibilità di operations e risorse."
+    source_hash: sha256-be9c73f890d79d9c
+  BP-1090.40.30:
+    name: "Eseguire manutenzione"
+    description: "Eseguire lavoro di manutenzione — preventivo, correttivo, shutdown — e confermare l'asset rimesso in servizio."
+    source_hash: sha256-7a96a98afd74f07d
+  BP-1090.50:
+    name: "Rischio e affidabilità"
+    description: "Gestire integrità dell'asset, affidabilità e rischio operational safety lungo la vita operativa."
+    source_hash: sha256-2f4c073ebb07c42c
+  BP-1090.50.10:
+    name: "Valutare rischio dell'asset"
+    description: "Eseguire valutazioni di criticità e rischio — modi di guasto, conseguenza, probabilità — per guidare programmi di manutenzione e integrità."
+    source_hash: sha256-8b4ead978114ab1b
+  BP-1090.50.20:
+    name: "Gestire integrità dell'asset"
+    description: "Eseguire programmi di ispezione, test e gestione della corrosione per mantenere integrità lungo il ciclo di vita."
+    source_hash: sha256-486b8e28b1e5901c
+  BP-1090.50.30:
+    name: "Migliorare affidabilità dell'asset"
+    description: "Guidare miglioramento di affidabilità — analisi della causa radice su guasti cronici, modellazione RAM, raccomandazioni di modifica del design."
+    source_hash: sha256-df0f5b75748e9dc9
+  BP-1090.60:
+    name: "Manutenzione delle informazioni di asset"
+    description: "Mantenere dati anagrafici di asset, disegni, configurazione e documenti lungo il ciclo di vita."
+    source_hash: sha256-02e2536216d99c0f
+  BP-1090.60.10:
+    name: "Mantenere dati anagrafici dell'asset"
+    description: "Mantenere dati anagrafici dell'asset — classe, ubicazione, parent-child, attributi — nel registro cespiti."
+    source_hash: sha256-769c671bf8c0ccfd
+  BP-1090.60.20:
+    name: "Mantenere documenti dell'asset"
+    description: "Mantenere disegni, manuali, P&ID, certificati e documentazione as-built; allineare con engineering change."
+    source_hash: sha256-7fe4c2b4f307119b
+  BP-1090.70:
+    name: "Dismissione e smaltimento"
+    description: "Pianificare ed eseguire fine vita — dismissione, smaltimento, ripristino e trattamento contabile finale."
+    source_hash: sha256-8f5f32685fcc7a93
+  BP-1090.70.10:
+    name: "Pianificare dismissione"
+    description: "Pianificare fine vita — timing, obblighi ambientali, rimozione, ripristino, impatto finanziario."
+    source_hash: sha256-6cec6f5bc4b6a2d0
+  BP-1090.70.20:
+    name: "Eseguire dismissione"
+    description: "Dismettere, smantellare e rimuovere l'asset; gestire trattamento di materiali pericolosi e ripristino del sito."
+    source_hash: sha256-ba0de4c3142fd086
+  BP-1090.70.30:
+    name: "Smaltire o vendere asset"
+    description: "Smaltire, riciclare o vendere l'asset; catturare valore residuo e chain-of-custody."
+    source_hash: sha256-ac9cbf74dc190003

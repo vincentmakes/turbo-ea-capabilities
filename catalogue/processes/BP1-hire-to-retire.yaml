@@ -1,0 +1,376 @@
+id: BP-1020
+name: Hire-to-Retire
+level: 1
+industry: Cross-Industry
+description: >-
+  End-to-end employee lifecycle from workforce planning through sourcing,
+  selection, onboarding, performance and development, compensation and
+  benefits administration, employee experience, internal mobility, and
+  offboarding. One BP2 per VS-280 stage_name.
+framework_refs:
+  - framework: SHRM-BoCK
+    external_id: HR Competency Model
+    version: "2022"
+realizes_capability_ids:
+  - BC-300
+  - BC-400
+  - BC-1290
+  - BC-1560
+  - BC-1810
+  - BC-2440
+  - BC-2890
+  - BC-3790
+  - BC-4380
+  - BC-4760
+  - BC-4960
+  - BC-4990
+children:
+  - id: BP-1020.10
+    name: Workforce Planning
+    level: 2
+    description: Forecast workforce needs against strategy and current supply, identify skill gaps, and plan the hiring, mobility, and exit moves needed to close them.
+    realizes_capability_ids:
+      - BC-300
+      - BC-4760
+    children:
+      - id: BP-1020.10.10
+        name: Forecast Workforce Demand
+        level: 3
+        description: Translate the business plan into headcount, skills, and capacity demand by team, role, and time horizon.
+        realizes_capability_ids:
+          - BC-300
+          - BC-4760
+        children: []
+      - id: BP-1020.10.20
+        name: Assess Workforce Supply
+        level: 3
+        description: Inventory current employees, contractors, and pending moves; assess skills against demand to surface gaps and surpluses.
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-1020.10.30
+        name: Build Workforce Plan
+        level: 3
+        description: Design the integrated plan — hire, develop, redeploy, exit — to close the gap; sequence moves with budget and approvals.
+        realizes_capability_ids:
+          - BC-300
+          - BC-4760
+        children: []
+  - id: BP-1020.20
+    name: Sourcing & Attraction
+    level: 2
+    description: Identify and attract candidates through employer branding, sourcing channels, and direct outreach.
+    realizes_capability_ids:
+      - BC-300
+      - BC-400
+      - BC-3790
+    children:
+      - id: BP-1020.20.10
+        name: Develop Employer Brand
+        level: 3
+        description: Position the employer-brand value proposition and the messaging used across channels to attract target talent segments.
+        realizes_capability_ids:
+          - BC-300
+          - BC-400
+        children: []
+      - id: BP-1020.20.20
+        name: Source Candidates
+        level: 3
+        description: Run sourcing across job boards, social, referrals, agencies, and direct outreach; persist candidates in the ATS.
+        realizes_capability_ids:
+          - BC-300
+          - BC-3790
+        children: []
+      - id: BP-1020.20.30
+        name: Manage Talent Communities
+        level: 3
+        description: Maintain candidate relationships in talent pools and communities for evergreen and pipeline roles.
+        realizes_capability_ids:
+          - BC-300
+        children: []
+  - id: BP-1020.30
+    name: Selection & Hire
+    level: 2
+    description: Screen, assess, interview, and select candidates; run pre-employment checks; make and accept the offer.
+    realizes_capability_ids:
+      - BC-300
+      - BC-1810
+      - BC-2440
+      - BC-2890
+      - BC-3790
+      - BC-4380
+      - BC-4760
+      - BC-4960
+    children:
+      - id: BP-1020.30.10
+        name: Screen and Shortlist Candidates
+        level: 3
+        description: Apply screening criteria to incoming applications; shortlist for interview based on fit and qualifications.
+        realizes_capability_ids:
+          - BC-300
+          - BC-3790
+        children: []
+      - id: BP-1020.30.20
+        name: Conduct Assessments and Interviews
+        level: 3
+        description: Run structured interviews and skills assessments; consolidate evaluator feedback into a hiring decision.
+        realizes_capability_ids:
+          - BC-300
+          - BC-4380
+        children: []
+      - id: BP-1020.30.30
+        name: Run Pre-Employment Checks
+        level: 3
+        description: Conduct background, reference, and right-to-work checks per jurisdiction and role-risk requirements.
+        realizes_capability_ids:
+          - BC-300
+          - BC-1810
+          - BC-4960
+        children: []
+      - id: BP-1020.30.40
+        name: Make and Negotiate Offer
+        level: 3
+        description: Construct the offer (compensation, equity, start date), negotiate with the candidate, and capture acceptance.
+        realizes_capability_ids:
+          - BC-300
+          - BC-2440
+          - BC-2890
+        children: []
+      - id: BP-1020.30.50
+        name: Hire Employee
+        level: 3
+        description: Execute the employment contract, set up the employee record in HRIS, and trigger downstream onboarding workflows.
+        realizes_capability_ids:
+          - BC-300
+          - BC-4760
+        children: []
+  - id: BP-1020.40
+    name: Onboarding
+    level: 2
+    description: Bring the new hire into the organisation — welcome, paperwork, equipment, training, and integration.
+    realizes_capability_ids:
+      - BC-300
+    children:
+      - id: BP-1020.40.10
+        name: Provision Equipment and Access
+        level: 3
+        description: Issue laptop, building access, system credentials, and any role-specific equipment ahead of day one.
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-1020.40.20
+        name: Complete Onboarding Paperwork
+        level: 3
+        description: Capture statutory new-hire paperwork — tax forms, benefits enrolment, policy acknowledgements — for compliance.
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-1020.40.30
+        name: Deliver Onboarding Programme
+        level: 3
+        description: Run the structured onboarding journey — orientation, role training, manager check-ins — across the first 30/60/90 days.
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-1020.40.40
+        name: Confirm Onboarding Completion
+        level: 3
+        description: Validate that the new hire has completed all required onboarding milestones and is fully ramped.
+        realizes_capability_ids:
+          - BC-300
+        children: []
+  - id: BP-1020.50
+    name: Performance & Development
+    level: 2
+    description: Set goals, give feedback, run formal reviews, identify development needs, and deliver learning and coaching.
+    realizes_capability_ids:
+      - BC-300
+      - BC-1290
+      - BC-1560
+      - BC-2440
+      - BC-2890
+      - BC-4380
+      - BC-4760
+      - BC-4990
+    children:
+      - id: BP-1020.50.10
+        name: Set Performance Goals
+        level: 3
+        description: Cascade business objectives into individual goals at the start of the cycle; align with team and function priorities.
+        realizes_capability_ids:
+          - BC-300
+          - BC-4760
+        children: []
+      - id: BP-1020.50.20
+        name: Provide Ongoing Feedback
+        level: 3
+        description: Run regular 1:1 and continuous-feedback conversations between managers and employees throughout the cycle.
+        realizes_capability_ids:
+          - BC-300
+          - BC-1290
+        children: []
+      - id: BP-1020.50.30
+        name: Conduct Performance Review
+        level: 3
+        description: Run the formal cycle review — self-assessment, manager review, calibration — to determine ratings and outcomes.
+        realizes_capability_ids:
+          - BC-300
+          - BC-2440
+          - BC-4380
+        children: []
+      - id: BP-1020.50.40
+        name: Identify Development Needs
+        level: 3
+        description: Identify capability gaps relative to current and future role; capture in development plans tied to learning interventions.
+        realizes_capability_ids:
+          - BC-300
+          - BC-4990
+        children: []
+      - id: BP-1020.50.50
+        name: Deliver Learning and Coaching
+        level: 3
+        description: Run learning programmes, on-the-job coaching, mentoring, and assignment-based development; track completion and impact.
+        realizes_capability_ids:
+          - BC-300
+          - BC-1560
+          - BC-2890
+          - BC-4990
+        children: []
+  - id: BP-1020.60
+    name: Compensation & Benefits Administration
+    level: 2
+    description: Administer base pay, variable pay, equity, and benefits across the lifecycle; run salary review and payroll handoff.
+    realizes_capability_ids:
+      - BC-300
+      - BC-3790
+    children:
+      - id: BP-1020.60.10
+        name: Administer Base and Variable Pay
+        level: 3
+        description: Maintain pay grades, individual rates, and variable-pay plans; trigger payroll updates on promotion, transfer, or rate change.
+        realizes_capability_ids:
+          - BC-300
+          - BC-3790
+        children: []
+      - id: BP-1020.60.20
+        name: Run Salary Review Cycle
+        level: 3
+        description: Run the annual or off-cycle salary-review process; apply budget guidelines, manager proposals, and approvals.
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-1020.60.30
+        name: Administer Benefits Enrolment
+        level: 3
+        description: Run open and qualifying-event enrolment for health, retirement, and other benefits; reconcile to carrier feeds.
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-1020.60.40
+        name: Manage Equity Programmes
+        level: 3
+        description: Grant, vest, and exercise equity per plan rules; coordinate with finance, legal, and the equity broker.
+        realizes_capability_ids:
+          - BC-300
+        children: []
+  - id: BP-1020.70
+    name: Employee Experience & Engagement
+    level: 2
+    description: Run the engagement programme, employee voice surveys, recognition, wellbeing, and the broader employee experience.
+    realizes_capability_ids:
+      - BC-300
+    children:
+      - id: BP-1020.70.10
+        name: Run Engagement Surveys
+        level: 3
+        description: Run periodic and pulse engagement surveys; analyse results by team, segment, and trend.
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-1020.70.20
+        name: Act on Employee Feedback
+        level: 3
+        description: Translate survey insights into team-level and enterprise-level action plans; track follow-through.
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-1020.70.30
+        name: Operate Recognition Programmes
+        level: 3
+        description: Run peer-to-peer and manager recognition programmes; track participation and impact on engagement.
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-1020.70.40
+        name: Support Employee Wellbeing
+        level: 3
+        description: Operate wellbeing programmes — EAP, mental health, financial wellness, ergonomics — and respond to escalations.
+        realizes_capability_ids:
+          - BC-300
+        children: []
+  - id: BP-1020.80
+    name: Internal Mobility & Career
+    level: 2
+    description: Operate internal job marketplace, succession planning, and career-path management.
+    realizes_capability_ids:
+      - BC-300
+      - BC-4760
+    children:
+      - id: BP-1020.80.10
+        name: Operate Internal Job Marketplace
+        level: 3
+        description: Post internal roles, manage internal applications, and run interviews against internal candidates.
+        realizes_capability_ids:
+          - BC-300
+          - BC-4760
+        children: []
+      - id: BP-1020.80.20
+        name: Run Succession Planning
+        level: 3
+        description: Identify successors for critical roles, assess readiness, and build development moves to close gaps.
+        realizes_capability_ids:
+          - BC-300
+          - BC-4760
+        children: []
+      - id: BP-1020.80.30
+        name: Manage Career Paths
+        level: 3
+        description: Maintain career-path frameworks, role progression criteria, and internal-mobility guidance for managers and employees.
+        realizes_capability_ids:
+          - BC-300
+        children: []
+  - id: BP-1020.90
+    name: Offboarding & Alumni
+    level: 2
+    description: Manage employee separations — voluntary, involuntary, retirement — and operate the alumni programme.
+    realizes_capability_ids:
+      - BC-300
+    children:
+      - id: BP-1020.90.10
+        name: Process Resignation or Termination
+        level: 3
+        description: Capture and process the separation — resignation, dismissal, redundancy, retirement — through the offboarding workflow.
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-1020.90.20
+        name: Conduct Exit Interview
+        level: 3
+        description: Run the exit interview to capture learnings and feedback; integrate into engagement and retention insights.
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-1020.90.30
+        name: Reclaim Equipment and Access
+        level: 3
+        description: Recover laptop, badge, system credentials, and any role-specific equipment on the last working day.
+        realizes_capability_ids:
+          - BC-300
+        children: []
+      - id: BP-1020.90.40
+        name: Operate Alumni Network
+        level: 3
+        description: Maintain the alumni network for re-hire, referrals, and community; run periodic engagement.
+        realizes_capability_ids:
+          - BC-300
+        children: []

@@ -15,7 +15,7 @@
     "name": {
       "type": "string",
       "minLength": 1,
-      "description": "Display name. Verb-phrased (e.g. 'Develop Vision and Strategy') — unlike capabilities, processes describe activities, not outcomes."
+      "description": "Display name. Two-tier rule: (a) BP1 roots aligned to a value stream use the source VS bookend name verbatim ('Order-to-Cash', 'Hire-to-Retire', 'Procure-to-Pay'); BP1 roots not derived from a VS use a Title-Case noun phrase. (b) BP2/BP3/BP4 names are verb-phrased operational activities ('Capture Customer Order', 'Verify Customer Credit', 'Allocate Inventory to Order'). Aliases are disabled by governance — every node has exactly one canonical name."
     },
     "level": {
       "type": "integer",
@@ -53,7 +53,24 @@
         "properties": {
           "framework": {
             "type": "string",
-            "enum": ["APQC-PCF", "BIAN", "eTOM", "ITIL", "SCOR"]
+            "description": "Source framework. APQC-PCF = APQC Process Classification Framework (cross-industry and industry-specific PCFs share this code; pin the variant via `version`). BIAN = Banking Industry Architecture Network service domains. eTOM = TM Forum enhanced Telecom Operations Map. ITIL = ITIL 4 service-management practices and Service Value Chain. SCOR = ASCM Supply Chain Operations Reference (Plan/Source/Make/Deliver/Return/Enable). DCOR = ASCM Design Chain Operations Reference (product development). COBIT = ISACA COBIT 2019 IT governance objectives. SHRM-BoCK = SHRM Body of Competency and Knowledge (HR). ISO-55000 = asset management. ISO-31000 = risk management. COSO-ERM = COSO Enterprise Risk Management 2017. TOGAF = TOGAF ADM phases / capability map. BIZBOK = Business Architecture Body of Knowledge. ACORD = ACORD insurance reference architecture. ICMM = Mining Principles / ICMM frameworks.",
+            "enum": [
+              "APQC-PCF",
+              "BIAN",
+              "eTOM",
+              "ITIL",
+              "SCOR",
+              "DCOR",
+              "COBIT",
+              "SHRM-BoCK",
+              "ISO-55000",
+              "ISO-31000",
+              "COSO-ERM",
+              "TOGAF",
+              "BIZBOK",
+              "ACORD",
+              "ICMM"
+            ]
           },
           "external_id": {
             "type": "string",

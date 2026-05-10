@@ -1,0 +1,316 @@
+id: BP-1030
+name: Idea-to-Market
+level: 1
+industry: Cross-Industry
+description: >-
+  End-to-end product/service innovation cycle from idea capture through
+  concept and feasibility, research and prototyping, portfolio
+  selection, design and development, IP protection, launch readiness,
+  market introduction, and post-launch performance. One BP2 per VS-290
+  stage_name.
+framework_refs:
+  - framework: DCOR
+    external_id: Design Chain Operations
+    version: "12"
+realizes_capability_ids:
+  - BC-230
+  - BC-400
+  - BC-410
+  - BC-800
+  - BC-810
+  - BC-820
+  - BC-840
+children:
+  - id: BP-1030.10
+    name: Idea Capture
+    level: 2
+    description: Surface, capture, and consolidate ideas from employees, customers, partners, and market signals; route to triage.
+    realizes_capability_ids:
+      - BC-800
+    children:
+      - id: BP-1030.10.10
+        name: Solicit Ideas
+        level: 3
+        description: Run idea-generation campaigns, hackathons, and continuous channels; encourage submission across the organisation and ecosystem.
+        realizes_capability_ids:
+          - BC-800
+        children: []
+      - id: BP-1030.10.20
+        name: Capture and Triage Ideas
+        level: 3
+        description: Persist incoming ideas, deduplicate, and triage into review queues with initial categorisation.
+        realizes_capability_ids:
+          - BC-800
+        children: []
+      - id: BP-1030.10.30
+        name: Validate Idea Fit
+        level: 3
+        description: Apply first-pass fit screen against strategy, capability, and market signal; reject, park, or advance to feasibility.
+        realizes_capability_ids:
+          - BC-800
+        children: []
+  - id: BP-1030.20
+    name: Concept & Feasibility
+    level: 2
+    description: Convert promising ideas into concepts; assess technical, market, and commercial feasibility; build the case for portfolio selection.
+    realizes_capability_ids:
+      - BC-230
+      - BC-800
+      - BC-820
+    children:
+      - id: BP-1030.20.10
+        name: Develop Concept
+        level: 3
+        description: Articulate the concept — problem, target user, proposed solution, value hypothesis — at sufficient depth for evaluation.
+        realizes_capability_ids:
+          - BC-800
+        children: []
+      - id: BP-1030.20.20
+        name: Assess Technical Feasibility
+        level: 3
+        description: Validate that the concept can be built with available or acquirable technology, materials, and skills.
+        realizes_capability_ids:
+          - BC-820
+        children: []
+      - id: BP-1030.20.30
+        name: Assess Commercial Feasibility
+        level: 3
+        description: Build the business case — addressable market, pricing, cost-to-serve, ROI — to size the opportunity.
+        realizes_capability_ids:
+          - BC-230
+          - BC-800
+        children: []
+      - id: BP-1030.20.40
+        name: Decide on Concept Advancement
+        level: 3
+        description: Decide at the concept gate to advance, refine, park, or kill, with clear rationale and conditions.
+        realizes_capability_ids:
+          - BC-800
+        children: []
+  - id: BP-1030.30
+    name: Research & Prototyping
+    level: 2
+    description: Conduct research, build prototypes, and test with users to de-risk the concept ahead of full design.
+    realizes_capability_ids:
+      - BC-810
+      - BC-820
+    children:
+      - id: BP-1030.30.10
+        name: Conduct User Research
+        level: 3
+        description: Run qualitative and quantitative research with target users to validate problem-solution fit.
+        realizes_capability_ids:
+          - BC-810
+        children: []
+      - id: BP-1030.30.20
+        name: Build Prototype
+        level: 3
+        description: Build low- or high-fidelity prototypes — physical mock-ups, wireframes, working code — to make the concept tangible.
+        realizes_capability_ids:
+          - BC-810
+          - BC-820
+        children: []
+      - id: BP-1030.30.30
+        name: Test Prototype with Users
+        level: 3
+        description: Run usability and value tests with target users; capture findings to inform iteration or kill decisions.
+        realizes_capability_ids:
+          - BC-810
+        children: []
+      - id: BP-1030.30.40
+        name: Iterate Concept
+        level: 3
+        description: Apply prototype-test learnings to the concept; iterate until the concept is ready for portfolio selection or kill.
+        realizes_capability_ids:
+          - BC-810
+        children: []
+  - id: BP-1030.40
+    name: Portfolio Selection
+    level: 2
+    description: Prioritise validated concepts within the innovation portfolio; allocate resources, sequence delivery, and balance risk.
+    realizes_capability_ids:
+      - BC-800
+      - BC-810
+    children:
+      - id: BP-1030.40.10
+        name: Score Portfolio Candidates
+        level: 3
+        description: Score validated concepts against portfolio criteria — strategic fit, value, risk, capability fit, time to market.
+        realizes_capability_ids:
+          - BC-800
+        children: []
+      - id: BP-1030.40.20
+        name: Sequence Portfolio
+        level: 3
+        description: Sequence the portfolio across horizons, balancing now/next/later and core/adjacent/transformational mix.
+        realizes_capability_ids:
+          - BC-800
+          - BC-810
+        children: []
+      - id: BP-1030.40.30
+        name: Allocate Resources
+        level: 3
+        description: Allocate funding, talent, and infrastructure to selected concepts; trigger formal kick-off into design and development.
+        realizes_capability_ids:
+          - BC-800
+        children: []
+  - id: BP-1030.50
+    name: Design & Development
+    level: 2
+    description: Detailed design, engineering, build, and integration of the product or service to launch readiness.
+    realizes_capability_ids:
+      - BC-810
+      - BC-820
+    children:
+      - id: BP-1030.50.10
+        name: Define Detailed Requirements
+        level: 3
+        description: Translate the validated concept into detailed functional, non-functional, and acceptance requirements.
+        realizes_capability_ids:
+          - BC-810
+        children: []
+      - id: BP-1030.50.20
+        name: Design Product or Service
+        level: 3
+        description: Produce the detailed design — architecture, materials, UX, BOM — that will be built and validated.
+        realizes_capability_ids:
+          - BC-810
+          - BC-820
+        children: []
+      - id: BP-1030.50.30
+        name: Build and Integrate
+        level: 3
+        description: Build the product or service to design; integrate components and subsystems; manage change and configuration.
+        realizes_capability_ids:
+          - BC-820
+        children: []
+      - id: BP-1030.50.40
+        name: Validate and Verify
+        level: 3
+        description: Run design verification and validation against requirements; close out non-conformances ahead of launch readiness.
+        realizes_capability_ids:
+          - BC-820
+        children: []
+  - id: BP-1030.60
+    name: IP Protection
+    level: 2
+    description: Identify, protect, and manage the intellectual property generated through the innovation cycle.
+    realizes_capability_ids:
+      - BC-840
+    children:
+      - id: BP-1030.60.10
+        name: Identify Patentable IP
+        level: 3
+        description: Review innovations for novelty, utility, and non-obviousness; identify candidate inventions for patenting.
+        realizes_capability_ids:
+          - BC-840
+        children: []
+      - id: BP-1030.60.20
+        name: File and Prosecute Patents
+        level: 3
+        description: File provisional and full patent applications; manage prosecution to grant across jurisdictions.
+        realizes_capability_ids:
+          - BC-840
+        children: []
+      - id: BP-1030.60.30
+        name: Manage Trade Secrets and Trademarks
+        level: 3
+        description: Identify trade-secret material and brand assets; apply protection (NDAs, access controls, registrations).
+        realizes_capability_ids:
+          - BC-840
+        children: []
+  - id: BP-1030.70
+    name: Launch Readiness
+    level: 2
+    description: Prepare for market launch — go-to-market, manufacturing, supply chain, channels, support, training.
+    realizes_capability_ids:
+      - BC-400
+      - BC-820
+    children:
+      - id: BP-1030.70.10
+        name: Build Go-to-Market Plan
+        level: 3
+        description: Develop the GTM plan — positioning, pricing, channels, sales enablement, marketing campaigns — for the launch window.
+        realizes_capability_ids:
+          - BC-400
+        children: []
+      - id: BP-1030.70.20
+        name: Ramp Manufacturing or Service Delivery
+        level: 3
+        description: Stand up manufacturing capacity or service-delivery readiness — equipment, training, supply, certifications.
+        realizes_capability_ids:
+          - BC-820
+        children: []
+      - id: BP-1030.70.30
+        name: Train Sales and Support
+        level: 3
+        description: Train sales, partners, and support teams on the new product/service ahead of launch.
+        realizes_capability_ids:
+          - BC-400
+        children: []
+      - id: BP-1030.70.40
+        name: Pass Launch Readiness Review
+        level: 3
+        description: Run the cross-functional launch readiness review; close gaps or hold launch until ready.
+        realizes_capability_ids:
+          - BC-820
+        children: []
+  - id: BP-1030.80
+    name: Market Introduction
+    level: 2
+    description: Execute the launch — release, announce, sell, and support the new product or service in market.
+    realizes_capability_ids:
+      - BC-400
+      - BC-410
+    children:
+      - id: BP-1030.80.10
+        name: Release to Market
+        level: 3
+        description: Cut the release across channels and geographies per launch plan; coordinate with PR, partners, and supply.
+        realizes_capability_ids:
+          - BC-410
+        children: []
+      - id: BP-1030.80.20
+        name: Execute Launch Marketing
+        level: 3
+        description: Run launch campaigns — advertising, content, events, PR, social — per the GTM plan.
+        realizes_capability_ids:
+          - BC-400
+        children: []
+      - id: BP-1030.80.30
+        name: Capture Initial Sales
+        level: 3
+        description: Drive initial sales motion via direct, partner, and digital channels; track conversion to validate the launch curve.
+        realizes_capability_ids:
+          - BC-410
+        children: []
+  - id: BP-1030.90
+    name: Post-Launch Performance
+    level: 2
+    description: Track performance against business case, capture customer feedback, drive enhancements, and decide lifecycle moves.
+    realizes_capability_ids:
+      - BC-400
+      - BC-820
+    children:
+      - id: BP-1030.90.10
+        name: Track Launch KPIs
+        level: 3
+        description: Monitor adoption, revenue, gross margin, NPS, and other launch KPIs against the business case for the first 30/60/90 days and beyond.
+        realizes_capability_ids:
+          - BC-400
+          - BC-820
+        children: []
+      - id: BP-1030.90.20
+        name: Capture Customer Feedback
+        level: 3
+        description: Capture structured and unstructured customer feedback in market; route into product backlog and roadmap.
+        realizes_capability_ids:
+          - BC-400
+        children: []
+      - id: BP-1030.90.30
+        name: Plan Lifecycle Enhancements
+        level: 3
+        description: Decide enhancements, fast-follow features, or pivot moves based on post-launch evidence; feed back into Idea Capture.
+        realizes_capability_ids:
+          - BC-820
+        children: []

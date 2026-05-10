@@ -1,0 +1,381 @@
+id: BP-1010
+name: Procure-to-Pay
+level: 1
+industry: Cross-Industry
+description: >-
+  End-to-end supplier-side spend cycle from need identification through
+  sourcing, supplier selection, contract and purchase order, goods or
+  services receipt, invoice processing, payment, reconciliation, and
+  supplier-performance monitoring. One BP2 per VS-420 stage_name.
+framework_refs:
+  - framework: SCOR
+    external_id: sS
+    version: "14.0"
+realizes_capability_ids:
+  - BC-200
+  - BC-210
+  - BC-500
+  - BC-510
+  - BC-1010
+  - BC-1560
+  - BC-1790
+  - BC-1810
+  - BC-1930
+  - BC-2040
+  - BC-3270
+  - BC-3550
+  - BC-3720
+  - BC-4670
+  - BC-4690
+  - BC-4940
+children:
+  - id: BP-1010.10
+    name: Need Identification & Requisition
+    level: 2
+    description: Capture, validate, and approve internal demand for goods or services and translate it into a purchase requisition.
+    realizes_capability_ids:
+      - BC-500
+      - BC-2040
+      - BC-3270
+      - BC-3550
+      - BC-4690
+    children:
+      - id: BP-1010.10.10
+        name: Identify Procurement Need
+        level: 3
+        description: Capture business demand for a good or service from the requesting function and confirm that internal alternatives have been considered.
+        realizes_capability_ids:
+          - BC-500
+        children: []
+      - id: BP-1010.10.20
+        name: Specify Requirements
+        level: 3
+        description: Convert the need into a clear specification — quantity, quality, service-level, and delivery constraints — that suppliers can quote against.
+        realizes_capability_ids:
+          - BC-500
+          - BC-2040
+        children: []
+      - id: BP-1010.10.30
+        name: Raise Purchase Requisition
+        level: 3
+        description: Create the purchase requisition in the procurement system, assign budget coding, and submit for approval.
+        realizes_capability_ids:
+          - BC-500
+          - BC-3270
+        children: []
+      - id: BP-1010.10.40
+        name: Approve Purchase Requisition
+        level: 3
+        description: Route the requisition through the spend-authorisation hierarchy; capture approver decisions and rejections with reasons.
+        realizes_capability_ids:
+          - BC-500
+          - BC-3550
+        children: []
+  - id: BP-1010.20
+    name: Sourcing
+    level: 2
+    description: Select the sourcing strategy, run sourcing events (RFx), evaluate responses, and award the work.
+    realizes_capability_ids:
+      - BC-500
+      - BC-2040
+      - BC-3270
+      - BC-3550
+      - BC-3720
+      - BC-4690
+    children:
+      - id: BP-1010.20.10
+        name: Develop Category Sourcing Strategy
+        level: 3
+        description: Confirm the category strategy — make-vs-buy, single vs multi-source, geographic constraints — that frames this sourcing event.
+        realizes_capability_ids:
+          - BC-500
+          - BC-3270
+        children: []
+      - id: BP-1010.20.20
+        name: Run Sourcing Event
+        level: 3
+        description: Issue RFI/RFP/RFQ to qualified suppliers, manage Q&A, and collect responses by the deadline.
+        realizes_capability_ids:
+          - BC-500
+          - BC-3720
+        children: []
+      - id: BP-1010.20.30
+        name: Evaluate Supplier Responses
+        level: 3
+        description: Score responses against the published evaluation criteria — total cost of ownership, quality, capacity, sustainability, risk.
+        realizes_capability_ids:
+          - BC-500
+          - BC-3550
+        children: []
+      - id: BP-1010.20.40
+        name: Negotiate Sourcing Award
+        level: 3
+        description: Conduct best-and-final negotiation rounds with shortlisted suppliers and finalise the award decision and rationale.
+        realizes_capability_ids:
+          - BC-500
+          - BC-2040
+          - BC-4690
+        children: []
+  - id: BP-1010.30
+    name: Supplier Selection & Onboarding
+    level: 2
+    description: Qualify the awarded supplier, run risk and compliance checks, and onboard them into supplier master data and operational systems.
+    realizes_capability_ids:
+      - BC-510
+      - BC-1560
+      - BC-1810
+      - BC-1930
+      - BC-3270
+      - BC-3550
+      - BC-4670
+    children:
+      - id: BP-1010.30.10
+        name: Conduct Supplier Due Diligence
+        level: 3
+        description: Run financial, regulatory, sanctions, ESG, and cybersecurity checks against the awarded supplier and document residual risks.
+        realizes_capability_ids:
+          - BC-510
+          - BC-1560
+          - BC-1810
+        children: []
+      - id: BP-1010.30.20
+        name: Qualify Supplier
+        level: 3
+        description: Confirm the supplier meets the category's qualification gates — certifications, insurance, quality standards — before onboarding proceeds.
+        realizes_capability_ids:
+          - BC-510
+          - BC-1930
+        children: []
+      - id: BP-1010.30.30
+        name: Set Up Supplier Master Data
+        level: 3
+        description: Persist the supplier's banking, tax, address, and contact data in supplier master with the appropriate stewardship checks.
+        realizes_capability_ids:
+          - BC-510
+          - BC-3270
+          - BC-4670
+        children: []
+      - id: BP-1010.30.40
+        name: Onboard Supplier to Operating Systems
+        level: 3
+        description: Provision the supplier in P2P, EDI/portal, and any category-specific systems; run integration tests on transactions.
+        realizes_capability_ids:
+          - BC-510
+          - BC-3550
+        children: []
+  - id: BP-1010.40
+    name: Contract & Purchase Order
+    level: 2
+    description: Execute the supplier contract and convert approved requisitions into purchase orders the supplier can fulfil against.
+    realizes_capability_ids:
+      - BC-500
+      - BC-1790
+      - BC-3270
+      - BC-3720
+    children:
+      - id: BP-1010.40.10
+        name: Negotiate Supplier Contract
+        level: 3
+        description: Negotiate commercial, legal, and operational terms — pricing, SLAs, indemnities, change control — and capture redlines until executed.
+        realizes_capability_ids:
+          - BC-1790
+          - BC-3720
+        children: []
+      - id: BP-1010.40.20
+        name: Execute Supplier Contract
+        level: 3
+        description: Capture authorised signatures, persist the executed contract to the contract repository, and link it to supplier master.
+        realizes_capability_ids:
+          - BC-1790
+          - BC-3270
+        children: []
+      - id: BP-1010.40.30
+        name: Issue Purchase Order
+        level: 3
+        description: Convert the approved requisition (under an executed contract or one-off PO) into a firm purchase order and transmit it to the supplier.
+        realizes_capability_ids:
+          - BC-500
+          - BC-3270
+        children: []
+      - id: BP-1010.40.40
+        name: Manage PO Changes
+        level: 3
+        description: Process supplier-requested or buyer-requested changes — quantity, date, price — through the PO change-control workflow.
+        realizes_capability_ids:
+          - BC-500
+        children: []
+  - id: BP-1010.50
+    name: Goods/Services Receipt
+    level: 2
+    description: Receive goods or services, verify quantity and quality against the PO, and post the receipt for downstream invoice matching.
+    framework_refs:
+      - framework: SCOR
+        external_id: sS1.4
+        version: "14.0"
+    realizes_capability_ids:
+      - BC-500
+      - BC-1010
+      - BC-3270
+      - BC-3550
+      - BC-4940
+    children:
+      - id: BP-1010.50.10
+        name: Receive Goods or Services
+        level: 3
+        description: Take physical receipt of goods at the dock, or sign-off completion of services delivered, and capture proof of delivery.
+        realizes_capability_ids:
+          - BC-500
+          - BC-1010
+        children: []
+      - id: BP-1010.50.20
+        name: Inspect Quantity and Quality
+        level: 3
+        description: Verify quantity, condition, and conformance to the PO specification; raise non-conformance reports where shortfall is found.
+        realizes_capability_ids:
+          - BC-500
+          - BC-3550
+        children: []
+      - id: BP-1010.50.30
+        name: Post Goods Receipt
+        level: 3
+        description: Post the goods receipt to the ERP, releasing inventory or expense recognition and enabling three-way invoice matching.
+        realizes_capability_ids:
+          - BC-3270
+          - BC-4940
+        children: []
+      - id: BP-1010.50.40
+        name: Resolve Receipt Exceptions
+        level: 3
+        description: Manage shortfalls, damage, or service-completion disputes with the supplier; agree adjustments before invoice acceptance.
+        realizes_capability_ids:
+          - BC-500
+        children: []
+  - id: BP-1010.60
+    name: Invoice Receipt & Verification
+    level: 2
+    description: Receive the supplier invoice, run three-way match against PO and receipt, and resolve discrepancies.
+    realizes_capability_ids:
+      - BC-200
+      - BC-3720
+    children:
+      - id: BP-1010.60.10
+        name: Receive Supplier Invoice
+        level: 3
+        description: Capture the supplier invoice via e-invoicing, EDI, portal, or paper; persist with source-system metadata.
+        realizes_capability_ids:
+          - BC-200
+        children: []
+      - id: BP-1010.60.20
+        name: Match Invoice to PO and Receipt
+        level: 3
+        description: Run the three-way match against PO and goods receipt; route exceptions to AP for resolution before payment authorisation.
+        realizes_capability_ids:
+          - BC-200
+          - BC-3720
+        children: []
+      - id: BP-1010.60.30
+        name: Resolve Invoice Discrepancies
+        level: 3
+        description: Investigate price, quantity, or terms discrepancies with buyer and supplier; capture credit notes or adjustments before approval.
+        realizes_capability_ids:
+          - BC-200
+        children: []
+      - id: BP-1010.60.40
+        name: Approve Invoice for Payment
+        level: 3
+        description: Route the matched invoice through any required approval (CFO threshold, project sign-off) and authorise it for payment.
+        realizes_capability_ids:
+          - BC-200
+        children: []
+  - id: BP-1010.70
+    name: Payment Execution
+    level: 2
+    description: Execute the supplier payment via the chosen instrument and remit advice to the supplier.
+    realizes_capability_ids:
+      - BC-200
+      - BC-210
+      - BC-4940
+    children:
+      - id: BP-1010.70.10
+        name: Schedule Payment Run
+        level: 3
+        description: Group approved invoices into a payment run by due date, currency, and instrument; optimise discount-capture and float.
+        realizes_capability_ids:
+          - BC-200
+          - BC-210
+        children: []
+      - id: BP-1010.70.20
+        name: Execute Payment
+        level: 3
+        description: Disburse via wire, ACH, virtual card, cheque, or e-payment; persist treasury bank confirmations.
+        realizes_capability_ids:
+          - BC-210
+          - BC-4940
+        children: []
+      - id: BP-1010.70.30
+        name: Send Remittance Advice
+        level: 3
+        description: Notify the supplier of the payment with line-by-line remittance detail so they can apply against their open AR.
+        realizes_capability_ids:
+          - BC-200
+        children: []
+  - id: BP-1010.80
+    name: Reconciliation
+    level: 2
+    description: Reconcile AP sub-ledger to general ledger and to bank, resolving variances ahead of period close.
+    realizes_capability_ids:
+      - BC-200
+    children:
+      - id: BP-1010.80.10
+        name: Reconcile AP to General Ledger
+        level: 3
+        description: Roll the AP sub-ledger forward and reconcile balances to GL control accounts, investigating any variance.
+        realizes_capability_ids:
+          - BC-200
+        children: []
+      - id: BP-1010.80.20
+        name: Reconcile Payments to Bank
+        level: 3
+        description: Match payment runs to bank statements; investigate uncashed cheques, returned ACH, FX timing, and bank fee variances.
+        realizes_capability_ids:
+          - BC-200
+        children: []
+      - id: BP-1010.80.30
+        name: Resolve Reconciliation Variances
+        level: 3
+        description: Drive variances to root cause — duplicate payment, misposted entry, supplier credit unapplied — and post correcting entries.
+        realizes_capability_ids:
+          - BC-200
+        children: []
+  - id: BP-1010.90
+    name: Supplier Performance Monitoring
+    level: 2
+    description: Track supplier performance against contractual SLAs and KPIs, run scorecards, and manage corrective action.
+    realizes_capability_ids:
+      - BC-510
+      - BC-1930
+      - BC-3270
+    children:
+      - id: BP-1010.90.10
+        name: Track Supplier KPIs
+        level: 3
+        description: Collect operational data on quality, on-time delivery, fill rate, and SLA attainment; persist for scorecard generation.
+        realizes_capability_ids:
+          - BC-510
+          - BC-3270
+        children: []
+      - id: BP-1010.90.20
+        name: Issue Supplier Scorecard
+        level: 3
+        description: Produce and share the periodic supplier scorecard with the supplier and internal category management; capture supplier feedback.
+        realizes_capability_ids:
+          - BC-510
+          - BC-1930
+        children: []
+      - id: BP-1010.90.30
+        name: Manage Supplier Corrective Actions
+        level: 3
+        description: Open, track, and close corrective-action plans with under-performing suppliers; escalate to contract remedy where breach persists.
+        realizes_capability_ids:
+          - BC-510
+        children: []

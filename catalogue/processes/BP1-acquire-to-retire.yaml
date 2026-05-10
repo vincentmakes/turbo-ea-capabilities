@@ -1,0 +1,350 @@
+id: BP-1090
+name: Acquire-to-Retire
+level: 1
+industry: Cross-Industry
+description: >-
+  End-to-end physical-asset lifecycle from need and justification
+  through acquisition, commissioning, operate-and-maintain, risk and
+  reliability, asset-information maintenance, and decommissioning.
+  One BP2 per VS-10 stage_name.
+framework_refs:
+  - framework: ISO-55000
+    external_id: ISO 55001
+    version: "2024"
+realizes_capability_ids:
+  - BC-200
+  - BC-230
+  - BC-500
+  - BC-740
+  - BC-1030
+  - BC-1040
+  - BC-1110
+  - BC-1160
+  - BC-1780
+  - BC-1960
+  - BC-1970
+  - BC-1980
+  - BC-2020
+  - BC-2050
+  - BC-2060
+  - BC-2070
+  - BC-2350
+  - BC-2430
+  - BC-2600
+  - BC-2610
+  - BC-3000
+  - BC-3010
+  - BC-3020
+  - BC-3030
+  - BC-3050
+  - BC-3060
+  - BC-3070
+  - BC-3080
+  - BC-3120
+  - BC-3480
+  - BC-3540
+  - BC-3710
+  - BC-3800
+  - BC-3810
+  - BC-3820
+  - BC-3870
+  - BC-3880
+  - BC-3890
+  - BC-3900
+  - BC-4470
+  - BC-4610
+  - BC-4620
+  - BC-4640
+children:
+  - id: BP-1090.10
+    name: Asset Need & Justification
+    level: 2
+    description: Identify asset needs, justify capital, and approve the asset before procurement starts.
+    realizes_capability_ids:
+      - BC-230
+      - BC-1040
+      - BC-2350
+      - BC-2430
+      - BC-2610
+      - BC-3000
+      - BC-3010
+      - BC-3480
+      - BC-3540
+      - BC-3900
+    children:
+      - id: BP-1090.10.10
+        name: Identify Asset Need
+        level: 3
+        description: Capture business need for a new or replacement asset; gather technical and operating context.
+        realizes_capability_ids:
+          - BC-1040
+          - BC-2430
+        children: []
+      - id: BP-1090.10.20
+        name: Build Capital Justification
+        level: 3
+        description: Build the business case — total cost of ownership, NPV, sensitivity — and secure capital approval.
+        realizes_capability_ids:
+          - BC-230
+          - BC-3000
+          - BC-3010
+        children: []
+      - id: BP-1090.10.30
+        name: Approve Asset Plan
+        level: 3
+        description: Route through capital-approval committee; document conditions and link to portfolio.
+        realizes_capability_ids:
+          - BC-2350
+          - BC-3480
+          - BC-3540
+          - BC-2610
+          - BC-3900
+        children: []
+  - id: BP-1090.20
+    name: Acquisition
+    level: 2
+    description: Source, design or specify, procure, and accept delivery of the asset.
+    realizes_capability_ids:
+      - BC-500
+      - BC-1110
+      - BC-2020
+      - BC-2430
+      - BC-2610
+      - BC-3020
+      - BC-3480
+      - BC-3540
+      - BC-3900
+      - BC-4610
+    children:
+      - id: BP-1090.20.10
+        name: Specify Asset
+        level: 3
+        description: Translate need into asset specification — capacity, performance, compliance, lifecycle requirements.
+        realizes_capability_ids:
+          - BC-1110
+          - BC-2020
+          - BC-3020
+        children: []
+      - id: BP-1090.20.20
+        name: Procure Asset
+        level: 3
+        description: Run sourcing, supplier selection, and contracting; place purchase order or construction contract.
+        realizes_capability_ids:
+          - BC-500
+          - BC-2430
+          - BC-3480
+          - BC-3540
+          - BC-3900
+        children: []
+      - id: BP-1090.20.30
+        name: Accept Asset Delivery
+        level: 3
+        description: Receive, inspect, and formally accept the asset against the specification.
+        realizes_capability_ids:
+          - BC-2610
+          - BC-4610
+        children: []
+  - id: BP-1090.30
+    name: Commissioning & Capitalisation
+    level: 2
+    description: Install, test, and commission the asset; capitalise it on the books.
+    realizes_capability_ids:
+      - BC-200
+      - BC-1160
+      - BC-1960
+      - BC-2050
+      - BC-3030
+    children:
+      - id: BP-1090.30.10
+        name: Install and Commission Asset
+        level: 3
+        description: Install, energise, and run commissioning tests; transfer to operations on successful completion.
+        realizes_capability_ids:
+          - BC-1160
+          - BC-1960
+          - BC-3030
+        children: []
+      - id: BP-1090.30.20
+        name: Capitalise Asset
+        level: 3
+        description: Capitalise the asset in the fixed-asset register with proper class, depreciation method, and useful life.
+        realizes_capability_ids:
+          - BC-200
+          - BC-2050
+        children: []
+  - id: BP-1090.40
+    name: Operate & Maintain
+    level: 2
+    description: Operate the asset and run preventive, corrective, and condition-based maintenance over its useful life.
+    realizes_capability_ids:
+      - BC-1030
+      - BC-1040
+      - BC-1960
+      - BC-2060
+      - BC-2070
+      - BC-2430
+      - BC-2600
+      - BC-3030
+      - BC-3060
+      - BC-3070
+      - BC-3080
+      - BC-3480
+      - BC-3540
+      - BC-3800
+      - BC-3810
+      - BC-3820
+      - BC-3870
+      - BC-3880
+      - BC-3890
+      - BC-4620
+    children:
+      - id: BP-1090.40.10
+        name: Operate Asset
+        level: 3
+        description: Run day-to-day asset operations against design parameters; capture operating data.
+        realizes_capability_ids:
+          - BC-1030
+          - BC-2060
+          - BC-2070
+          - BC-3030
+          - BC-3060
+          - BC-3070
+          - BC-3080
+          - BC-3800
+          - BC-3810
+          - BC-3820
+          - BC-3870
+          - BC-3880
+          - BC-3890
+        children: []
+      - id: BP-1090.40.20
+        name: Plan and Schedule Maintenance
+        level: 3
+        description: Plan preventive, predictive, and condition-based maintenance; schedule against operations and resource availability.
+        realizes_capability_ids:
+          - BC-1040
+          - BC-1960
+          - BC-2430
+        children: []
+      - id: BP-1090.40.30
+        name: Execute Maintenance
+        level: 3
+        description: Execute maintenance work — preventive, corrective, shutdown — and confirm asset returned to service.
+        realizes_capability_ids:
+          - BC-2600
+          - BC-3480
+          - BC-3540
+          - BC-4620
+        children: []
+  - id: BP-1090.50
+    name: Risk & Reliability
+    level: 2
+    description: Manage asset-integrity, reliability, and operational-safety risk across the operating life.
+    realizes_capability_ids:
+      - BC-1030
+      - BC-1040
+      - BC-1780
+      - BC-1970
+      - BC-2430
+      - BC-3050
+      - BC-3480
+      - BC-3900
+      - BC-4640
+    children:
+      - id: BP-1090.50.10
+        name: Assess Asset Risk
+        level: 3
+        description: Run criticality and risk assessments — failure modes, consequence, likelihood — to drive maintenance and integrity programmes.
+        realizes_capability_ids:
+          - BC-1030
+          - BC-1780
+          - BC-1970
+          - BC-2430
+        children: []
+      - id: BP-1090.50.20
+        name: Manage Asset Integrity
+        level: 3
+        description: Run inspection, testing, and corrosion-management programmes to maintain integrity across the lifecycle.
+        realizes_capability_ids:
+          - BC-1040
+          - BC-3050
+          - BC-3480
+        children: []
+      - id: BP-1090.50.30
+        name: Improve Asset Reliability
+        level: 3
+        description: Drive reliability improvement — root-cause analysis on chronic failures, RAM modelling, design-change recommendations.
+        realizes_capability_ids:
+          - BC-3900
+          - BC-4640
+        children: []
+  - id: BP-1090.60
+    name: Asset Information Maintenance
+    level: 2
+    description: Maintain asset master data, drawings, configuration, and documents through the lifecycle.
+    realizes_capability_ids:
+      - BC-1040
+      - BC-3540
+      - BC-3710
+      - BC-3900
+    children:
+      - id: BP-1090.60.10
+        name: Maintain Asset Master Data
+        level: 3
+        description: Maintain asset master data — class, location, parent-child, attributes — in the asset register.
+        realizes_capability_ids:
+          - BC-1040
+          - BC-3540
+        children: []
+      - id: BP-1090.60.20
+        name: Maintain Asset Documents
+        level: 3
+        description: Maintain drawings, manuals, P&IDs, certificates, and as-built documentation; align with engineering change.
+        realizes_capability_ids:
+          - BC-3710
+          - BC-3900
+        children: []
+  - id: BP-1090.70
+    name: Decommissioning & Disposal
+    level: 2
+    description: Plan and execute end-of-life — decommissioning, disposal, restoration, and final accounting treatment.
+    realizes_capability_ids:
+      - BC-740
+      - BC-1040
+      - BC-1980
+      - BC-2430
+      - BC-2610
+      - BC-3120
+      - BC-3540
+      - BC-3710
+      - BC-3900
+      - BC-4470
+    children:
+      - id: BP-1090.70.10
+        name: Plan Decommissioning
+        level: 3
+        description: Plan end-of-life — timing, environmental obligations, removal, restoration, financial impact.
+        realizes_capability_ids:
+          - BC-1040
+          - BC-2430
+          - BC-3540
+          - BC-3900
+        children: []
+      - id: BP-1090.70.20
+        name: Execute Decommissioning
+        level: 3
+        description: Decommission, dismantle, and remove the asset; manage hazardous-material handling and site restoration.
+        realizes_capability_ids:
+          - BC-740
+          - BC-1980
+          - BC-3120
+          - BC-4470
+        children: []
+      - id: BP-1090.70.30
+        name: Dispose or Sell Asset
+        level: 3
+        description: Dispose, recycle, or sell the asset; capture residual value and chain-of-custody.
+        realizes_capability_ids:
+          - BC-2610
+          - BC-3710
+        children: []

@@ -19,35 +19,41 @@ entries:
       - Control del tráfico aéreo por parte de los ANSP (BC-1700)
       - Flujo de reubicación de pasajeros a nivel de reserva (BC-4020.70)
       - Operaciones de vuelo de carga (BC-3270)
+    source_hash: sha256-b0ece6dffba79eda
 
   BC-4080.10:
     name: Planificación del horario de vuelos
     description: |
       Construcción y publicación del horario de vuelos de la aerolínea, cubriendo
       la red, los slots y los bancos de conexión.
+    source_hash: sha256-43ce20df81b4a5df
 
   BC-4080.10.10:
     name: Definición del plan de red y rutas
     description: |
       Definición del plan de red y rutas frente a los planes de demanda y flota.
+    source_hash: sha256-8a2a48a35e026bfe
 
   BC-4080.10.20:
     name: Coordinación de slots y aeropuertos
     description: |
       Coordinación de slots aeroportuarios y restricciones, incluyendo la
       planificación alineada con las WSG de IATA.
+    source_hash: sha256-69223da3a9bfe364
 
   BC-4080.10.30:
     name: Construcción y publicación del horario
     description: |
       Construcción del horario publicado y publicación del archivo SSIM a los socios
       de distribución.
+    source_hash: sha256-c5a06e1bf1b4d8d4
 
   BC-4080.10.40:
     name: Optimización del banco de conexiones
     description: |
       Optimización de los bancos de conexión del hub y los tiempos mínimos de
       conexión.
+    source_hash: sha256-3272ec7d9325e7ff
 
   BC-4080.20:
     name: Rutas de aeronaves y asignación de matrícula
@@ -55,29 +61,34 @@ entries:
       Construcción de las rotaciones de aeronaves, asignaciones de matrícula,
       operaciones de permuta, coordinación de slots de mantenimiento y seguimiento
       de MEL.
+    source_hash: sha256-e2fb7a2fc6d1cc54
 
   BC-4080.20.10:
     name: Planificación de la rotación de flota
     description: |
       Planificación de las rotaciones de la flota en la red, cubriendo el equilibrio
       de horas de vuelo y ciclos.
+    source_hash: sha256-0f6ee5af65b861a1
 
   BC-4080.20.20:
     name: Asignación de matrícula y operaciones de permuta
     description: |
       Asignación de matrículas específicas a vuelos y ejecución de permutas tácticas.
+    source_hash: sha256-fe3edbb89f84ee1f
 
   BC-4080.20.30:
     name: Coordinación de slots de mantenimiento de aeronaves
     description: |
       Coordinación de los slots de mantenimiento y los vuelos de posicionamiento
       frente al horario.
+    source_hash: sha256-575dc4036a515028
 
   BC-4080.20.40:
     name: Seguimiento de la lista de equipos mínimos
     description: |
       Seguimiento de las exenciones del MEL frente a la caducidad y el impacto
       operativo.
+    source_hash: sha256-290f96cd44fa5d83
 
   BC-4080.30:
     name: Planificación y rotación de tripulaciones
@@ -85,30 +96,35 @@ entries:
       Planificación de las tripulaciones de cabina y cabina, incluyendo la construcción
       de emparejamientos, las pujas, el seguimiento de habilitaciones y el cumplimiento
       de los FTL.
+    source_hash: sha256-b325b04496ddb05c
 
   BC-4080.30.10:
     name: Construcción de emparejamientos de tripulación
     description: |
       Construcción de los emparejamientos de tripulación a lo largo del horario,
       respetando las reglas de legalidad.
+    source_hash: sha256-60410c026dbbd548
 
   BC-4080.30.20:
     name: Pujas de tripulación y construcción de rotaciones
     description: |
       Operación de los procesos de puja y la construcción de rotaciones para las
       tripulaciones de vuelo y cabina.
+    source_hash: sha256-3030d148e3346a67
 
   BC-4080.30.30:
     name: Seguimiento de habilitaciones y vigencias de tripulación
     description: |
       Seguimiento de las habilitaciones, la vigencia y la recurrencia de los miembros
       de la tripulación.
+    source_hash: sha256-e8c054f426860a19
 
   BC-4080.30.40:
     name: Cumplimiento de los límites de tiempo de vuelo y servicio
     description: |
       Cumplimiento de los FTL y las normas de tiempo de servicio en la planificación
       y la ejecución.
+    source_hash: sha256-470853063b8d198a
 
   BC-4080.40:
     name: Despacho de vuelos y control operativo
@@ -116,59 +132,69 @@ entries:
       Generación de los planes de vuelo operativos, decisiones de combustible,
       información meteorológica y NOTAM, y toma de decisiones del centro de control
       de operaciones.
+    source_hash: sha256-9bb59955c8a642b1
 
   BC-4080.40.10:
     name: Generación del plan de vuelo
     description: |
       Generación de los planes de vuelo operativos, incluyendo la ruta, el nivel y
       el tiempo de ruta.
+    source_hash: sha256-4d9dc9808468ac31
 
   BC-4080.40.20:
     name: Cálculo del combustible operativo
     description: |
       Cálculo del combustible operativo, incluyendo reservas, contingencia y carga
       discrecional adicional.
+    source_hash: sha256-fd10341b0178a6e9
 
   BC-4080.40.30:
     name: Información meteorológica y NOTAM
     description: |
       Recopilación y entrega de la información meteorológica y de NOTAM a la
       tripulación y al despacho.
+    source_hash: sha256-df0939634d2bcd10
 
   BC-4080.40.40:
     name: Toma de decisiones del centro de control de operaciones
     description: |
       Toma de decisiones del OCC ante retrasos, desvíos y opciones de recuperación.
+    source_hash: sha256-c029e8087f541dff
 
   BC-4080.50:
     name: Operaciones de puerta y turnaround
     description: |
       Planificación de puerta y coordinación del turnaround en tiempo real en los
       aeropuertos, incluyendo la gestión del remolque y las demoras en pista.
+    source_hash: sha256-62ec1c4b649e2dd1
 
   BC-4080.50.10:
     name: Asignación de puerta y secuenciación
     description: |
       Asignación de puertas y secuenciación de posiciones de estacionamiento durante
       las operaciones del día de vuelo.
+    source_hash: sha256-cc7fa9b4455fb83d
 
   BC-4080.50.20:
     name: Coordinación del turnaround
     description: |
       Coordinación en tiempo real de las actividades del turnaround, incluyendo
       catering, avituallamienteito de combustible y embarque.
+    source_hash: sha256-482559d2869b311f
 
   BC-4080.50.30:
     name: Operaciones de remolque y salida de bloque
     description: |
       Coordinación del remolque, la salida de bloque y el rodaje de salida en la
       posición de estacionamiento.
+    source_hash: sha256-72593a7290c17850
 
   BC-4080.50.40:
     name: Gestión de demoras en pista
     description: |
       Gestión de las demoras en pista conforme a los límites reglamentarios y las
       obligaciones de atención a los pasajeros.
+    source_hash: sha256-1ca9ac720a3b405d
 
   BC-4080.60:
     name: Gestión de interrupciones de vuelo e IROPS
@@ -182,55 +208,65 @@ entries:
       - Transferencia de coordinación a la reubicación de pasajeros (BC-4020.70)
     out_of_scope:
       - Rebooking y determinación de la compensación a nivel del pasajero (BC-4020.70)
+    source_hash: sha256-99888b876266f149
 
   BC-4080.60.10:
     name: Operaciones de decisión de desvío
     description: |
       Operaciones para decidir y ejecutar desvíos en ruta y previos a la salida.
+    source_hash: sha256-57d3137895abdbd3
 
   BC-4080.60.20:
     name: Operaciones de recuperación ante cancelaciones masivas
     description: |
       Operaciones de recuperación durante cancelaciones masivas que cubren la
       recuperación de aeronaves, tripulaciones y slots.
+    source_hash: sha256-b96c3030e1cc41f4
 
   BC-4080.60.30:
     name: Recuperación de tripulaciones ante interrupciones
     description: |
       Recuperación de las rotaciones de tripulación durante la interrupción,
       incluyendo la asignación de reservas y suplentes.
+    source_hash: sha256-ee37648e3049f0d0
 
   BC-4080.60.40:
     name: Coordinación del rebooking de pasajeros
     description: |
       Coordinación con los equipos de reubicación de pasajeros sobre las opciones
       de recuperación y la priorización.
+    source_hash: sha256-523b6e88cbf79fb2
 
   BC-4080.70:
     name: Reporting de rendimiento de vuelo y seguridad
     description: |
       Reporting del rendimiento de vuelos, KPI de puntualidad, informes de seguridad
       aérea y feeds de datos de seguridad operativa.
+    source_hash: sha256-e8583e8ad351a93f
 
   BC-4080.70.10:
     name: Reporting de puntualidad
     description: |
       Reporting sobre la puntualidad y los códigos de retraso en la red.
+    source_hash: sha256-8743c347702dfb72
 
   BC-4080.70.20:
     name: Captura de informes de seguridad aérea
     description: |
       Captura y clasificación de los informes de seguridad aérea del personal de
       tripulación y operaciones.
+    source_hash: sha256-e06d2576c57feed1
 
   BC-4080.70.30:
     name: Apoyo a investigaciones de seguridad operativa
     description: |
       Apoyo a las investigaciones de seguridad operativa, incluyendo la recopilación
       de datos y las acciones de seguimiento.
+    source_hash: sha256-b36cd92228876488
 
   BC-4080.70.40:
     name: Feeds de analítica de datos de vuelo
     description: |
       Feeds de analítica de datos de vuelo hacia los programas de análisis de
       seguridad y operaciones.
+    source_hash: sha256-76b723a18aa5f0de

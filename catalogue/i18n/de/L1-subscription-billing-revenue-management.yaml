@@ -7,158 +7,190 @@ entries:
       Nutzungsmessung, Tarifierung, Rechnungsstellung, Mahnwesen,
       Abonnementumsatzrealisierung, Abonnementsteuerbehandlung und
       Wiederkehrumsatz-Analysen für das SaaS-Geschäftsmodell.
+    source_hash: sha256-7146e52db7b63d13
   BC-4250.10:
     name: Nutzungsmessung
     description: |
       Ingestion und Aggregation von Nutzungsereignissen, die
       nachgelagerte Tarifierung und Analysen speisen.
+    source_hash: sha256-3428352c1e3acf9f
   BC-4250.10.10:
     name: Nutzungsereignis-Ingestion
     description: |
       Ingestion von Nutzungsereignissen aus Produktdiensten in
       die Messpipeline.
+    source_hash: sha256-31d9023f3afbbdc5
   BC-4250.10.20:
     name: Nutzungsaggregation
     description: |
       Aggregation von Nutzungsereignissen zu abrechenbaren Mengen
       je Mandant und Messzähler.
+    source_hash: sha256-c6741d7d6db8676b
   BC-4250.10.30:
     name: Gemessene Mengenabstimmung
     description: |
       Abstimmung gemessener Mengen gegen Quelldaten und
       kundenseitige Zähler.
+    source_hash: sha256-18ccac794b4b6321
   BC-4250.20:
     name: Tarifierung und Abrechnung
     description: |
       Anwendung von Abonnement- und Nutzungstarifen, Tagessatzberechnungen
       und Rabatten zur Berechnung von Entgelten.
+    source_hash: sha256-223b9918dc596533
   BC-4250.20.10:
     name: Abonnementstarifierung
     description: |
       Berechnung wiederkehrender Abonnemententgelte je Zyklus.
+    source_hash: sha256-5be6f91a1e54c30e
   BC-4250.20.20:
     name: Nutzungstarifierung
     description: |
       Berechnung von Nutzungsentgelten aus tarifartierten Mengen
       und Tarifen.
+    source_hash: sha256-44e1c2dd1ec39f54
   BC-4250.20.30:
     name: Tagessatzberechnung
     description: |
       Berechnung anteiliger Entgelte aus zyklusmittigen Änderungen.
+    source_hash: sha256-e6c52ecf60828a64
   BC-4250.20.40:
     name: Rabattanwendung
     description: |
       Anwendung ausgehandelter Rabatte und Gutschriften auf
       berechnete Entgelte.
+    source_hash: sha256-059bc39c662f4768
   BC-4250.30:
     name: Rechnungsstellung und Kontoauszug-Management
     description: |
       Generierung, Lieferung und Anpassung von Rechnungen sowie
       Bearbeitung von Kundenabrechnungsstreitigkeiten.
+    source_hash: sha256-68d610731fbaf835
   BC-4250.30.10:
     name: Rechnungsgenerierung
     description: |
       Generierung von Rechnungen aus tarifartierten Entgelten
       und Vertragsbedingungen.
+    source_hash: sha256-bd37e9c37782320d
   BC-4250.30.20:
     name: Rechnungslieferung
     description: |
       Lieferung von Rechnungen an Kunden über Portal-, E-Mail-
       und Partnerkanäle.
+    source_hash: sha256-f4c8de48637b5073
   BC-4250.30.30:
     name: Rechnungsanpassung
     description: |
       Anpassung von Rechnungen für Gutschriften, Fehler und
       vertragliche Abweichungen.
+    source_hash: sha256-57cbf4f6c4031576
   BC-4250.30.40:
     name: Kunden-Abrechnungsstreitigkeiten-Bearbeitung
     description: |
       Triage und Lösung von Kunden-Abrechnungsstreitigkeiten.
+    source_hash: sha256-b235dddbb3c79377
   BC-4250.40:
     name: Zahlungseinzug und Mahnwesen
     description: |
       Zahlungsmittel-Management, Zahlungsautorisierung, Mahnwesen
       und Rückgewinnung unfreiwilliger Abwanderung.
+    source_hash: sha256-3a593098fa4d0f3a
   BC-4250.40.10:
     name: Zahlungsmittel-Management
     description: |
       Erfassung und Pflege von Kundenzahlungsmitteln und -tokens.
+    source_hash: sha256-75f6a6f9e63c09f6
   BC-4250.40.20:
     name: Zahlungsautorisierung
     description: |
       Autorisierung und Einzug wiederkehrender Zahlungen über
       Zahlungsabwickler.
+    source_hash: sha256-303ac3953a30856b
   BC-4250.40.30:
     name: Mahnworkflow
     description: |
       Automatisierte Mahnsequenzen bei fehlgeschlagenen Zahlungen
       und überfälligen Salden.
+    source_hash: sha256-078ffd276ac411bd
   BC-4250.40.40:
     name: Unfreiwillige Abwanderungs-Rückgewinnung
     description: |
       Rückgewinnung von Abonnements, die durch abgelaufene Karten,
       Hartzurückweisungen und ähnliche Zahlungsfehler verloren gingen.
+    source_hash: sha256-0dc2544af9afb29b
   BC-4250.50:
     name: Abonnementumsatzrealisierung
     description: |
       Identifikation von Leistungsverpflichtungen und Verwaltung von
       Umsatzplänen gemäß ASC 606 / IFRS 15.
+    source_hash: sha256-f1be5714e6a3d408
   BC-4250.50.10:
     name: Leistungsverpflichtungs-Identifikation
     description: |
       Identifikation eigenständiger Leistungsverpflichtungen aus
       Abonnementverträgen.
+    source_hash: sha256-bb225b7c1eb9598d
   BC-4250.50.20:
     name: Umsatzplan-Management
     description: |
       Generierung und Pflege von Umsatzrealisierungsplänen über
       die Vertragslaufzeit.
+    source_hash: sha256-32b05fb994519d03
   BC-4250.50.30:
     name: Deferred-Revenue-Abstimmung
     description: |
       Abstimmung abgegrenzter Umsatzsalden gegen abgerechnete und
       realisierte Beträge.
+    source_hash: sha256-0dc6fabc7746b44f
   BC-4250.60:
     name: Abonnementsteuer-Management
     description: |
       Steuerjurisdiktionsbestimmung, Steuerberechnung und
       Befreiungsbehandlung über wiederkehrende und nutzungsbasierte
       Entgelte hinweg.
+    source_hash: sha256-4c6fa0b367b14b63
   BC-4250.60.10:
     name: Steuerjurisdiktionsbestimmung
     description: |
       Bestimmung anwendbarer Steuerjurisdiktionen je Kunde und
       Entgelt.
+    source_hash: sha256-3cda282c052adff2
   BC-4250.60.20:
     name: Abonnementsteuerberechnung
     description: |
       Berechnung indirekter Steuern auf Abonnement- und
       Nutzungsentgelte.
+    source_hash: sha256-0d3dc4c274ee4bc2
   BC-4250.60.30:
     name: Steuerbefreiungsbehandlung
     description: |
       Erfassung und Anwendung kundenseitiger
       Steuerbefreiungsbescheinigungen.
+    source_hash: sha256-200e469dd41fac17
   BC-4250.70:
     name: Abonnementumsatz-Analysen
     description: |
       Berechnung und Analyse von Wiederkehrumsatz-Gesundheitskennzahlen
       einschließlich ARR, MRR, NRR, GRR und Kohortansichten.
+    source_hash: sha256-e8947c198bc36a47
   BC-4250.70.10:
     name: ARR- und MRR-Berechnung
     description: |
       Berechnung von jährlichem und monatlichem Wiederkehrumsatz
       aus dem Abonnementstatus.
+    source_hash: sha256-1318961648ffee3e
   BC-4250.70.20:
     name: Netto- und Brutto-Retention-Analyse
     description: |
       Analyse der Netto- und Brutto-Umsatzretention über
       Kundenkohorten.
+    source_hash: sha256-6e59d2284c88e079
   BC-4250.70.30:
     name: Kohorten-Umsatzanalyse
     description: |
       Kohortenbasierte Analyse der Umsatzentwicklung und
       Retentionsdynamik.
+    source_hash: sha256-201b5b343fa07b42
 metadata:
   translator: claude-ai
   date: "2026-04-29"

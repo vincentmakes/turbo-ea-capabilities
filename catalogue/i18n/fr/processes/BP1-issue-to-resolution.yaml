@@ -1,0 +1,80 @@
+kind: business-process
+locale: fr
+source: BP1-issue-to-resolution.yaml
+entries:
+  BP-1070:
+    name: "Incident-à-Résolution"
+    description: "Cycle universel de traitement des incidents et issues, du captage à l'investigation, à la résolution et aux retours d'expérience. Utilisé à travers le service client, l'IT, la sécurité, la conformité, l'audit et le risque opérationnel — les variantes industrie de VS-310 se ramènent ici à quatre phases logiques."
+    source_hash: sha256-b983a0971b80b34a
+  BP-1070.10:
+    name: "Captage d'incident"
+    description: "Capter les incidents, plaintes, défauts, near-misses et constats d'audit via tout canal ; persister avec des métadonnées structurées."
+    source_hash: sha256-093e28b2aff5be18
+  BP-1070.10.10:
+    name: "Recevoir l'incident"
+    description: "Accepter l'incident depuis le canal d'origine (client, collaborateur, système, régulateur, audit) dans le système de gestion des incidents."
+    source_hash: sha256-6677adae952fc44a
+  BP-1070.10.20:
+    name: "Classifier l'incident"
+    description: "Classifier l'incident par type, sévérité, impact business et service ou actif affecté ; router vers la bonne file."
+    source_hash: sha256-cba5705b5f9d810f
+  BP-1070.10.30:
+    name: "Accuser réception au déclarant"
+    description: "Accuser réception au déclarant avec un identifiant de dossier et la cadence de réponse attendue."
+    source_hash: sha256-a717b2fcc19577ea
+  BP-1070.10.40:
+    name: "Déclencher le protocole d'incident majeur"
+    description: "Pour les incidents de haute sévérité, déclencher le protocole d'incident majeur ou de crise — incident commander, war-room, chemins d'escalade."
+    source_hash: sha256-87779e038caf7086
+  BP-1070.20:
+    name: "Investigation"
+    description: "Investiguer l'incident — recueillir des preuves, exécuter des diagnostics, identifier la cause racine et évaluer l'impact."
+    source_hash: sha256-9a76413da5babd6b
+  BP-1070.20.10:
+    name: "Recueillir les preuves"
+    description: "Collecter logs, déclarations, échantillons et autres preuves pertinentes pour l'incident ; persister dans le dossier."
+    source_hash: sha256-f1889e0eb572f35a
+  BP-1070.20.20:
+    name: "Diagnostiquer la cause racine"
+    description: "Appliquer les méthodes d'analyse de cause racine (5 whys, fault-tree, fishbone) pour identifier les causes primaires et contributrices."
+    source_hash: sha256-efd298ee1737914c
+  BP-1070.20.30:
+    name: "Évaluer l'impact"
+    description: "Évaluer l'impact client, financier, réglementaire, sécurité et réputation de l'incident et du chemin de résolution proposé."
+    source_hash: sha256-537fbed4ced3fa38
+  BP-1070.30:
+    name: "Résolution"
+    description: "Résoudre l'incident — restaurer le service, remédier au préjudice, communiquer et clore le dossier."
+    source_hash: sha256-b5d47b41164583bf
+  BP-1070.30.10:
+    name: "Appliquer un contournement"
+    description: "Appliquer un contournement pour restaurer le service ou contenir le préjudice pendant que la correction permanente est développée."
+    source_hash: sha256-f14e89ff6d03d050
+  BP-1070.30.20:
+    name: "Mettre en œuvre la correction permanente"
+    description: "Développer et déployer l'action corrective permanente via la gestion du changement ; valider la correction."
+    source_hash: sha256-9c9fe4ea00149e05
+  BP-1070.30.30:
+    name: "Communiquer la résolution"
+    description: "Communiquer la résolution au déclarant, aux clients affectés, aux régulateurs si requis et aux parties prenantes internes."
+    source_hash: sha256-9120ad28b948233e
+  BP-1070.30.40:
+    name: "Clore le dossier"
+    description: "Confirmer la satisfaction du déclarant ; clore le dossier avec piste d'audit complète et notation CSAT ou équivalent."
+    source_hash: sha256-21993740429b4490
+  BP-1070.40:
+    name: "Retours d'expérience"
+    description: "Extraire les enseignements du dossier, piloter l'action préventive systémique et améliorer la capability de résolution."
+    source_hash: sha256-ecad8d3fe25fecc6
+  BP-1070.40.10:
+    name: "Conduire la revue post-incident"
+    description: "Conduire une revue post-incident blameless ; capturer ce qui s'est bien passé, ce qui n'a pas marché et ce qui doit changer."
+    source_hash: sha256-afac791cac610cae
+  BP-1070.40.20:
+    name: "Piloter les actions préventives"
+    description: "Ouvrir et suivre les actions préventives (système, processus, formation) ; confirmer la clôture par évidence."
+    source_hash: sha256-1cc2a76473435e62
+  BP-1070.40.30:
+    name: "Mettre à jour la base de connaissances"
+    description: "Mettre à jour la base de connaissances, les runbooks et les règles de décision avec les nouvelles évidences pour accélérer les futures résolutions."
+    source_hash: sha256-06c8c470a3324f6e

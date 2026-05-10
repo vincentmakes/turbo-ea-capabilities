@@ -5,6 +5,7 @@ entries:
     name: 货运账单与结算管理
     description: |
       管理货运发票开具、承运商发票审计与支付、联运及多承运商结算、货物索赔及货运收入核算。
+    source_hash: sha256-87dcbd5d52e6a436
   BC-2530.10:
     name: 货运开票管理
     description: |
@@ -15,86 +16,107 @@ entries:
     out_of_scope:
       - 通用应收账款流程（BC-200）
       - 客户定价策略（BC-440）
+    source_hash: sha256-f3fe6c6ecc2ad35b
   BC-2530.10.10:
     name: 货运发票生成
     description: |
       根据已完成的运输任务生成货运发票。
+    source_hash: sha256-b3b5609bdd569a3d
   BC-2530.10.20:
     name: 附加费发票生成
     description: |
       生成附加费及附加收费发票。
+    source_hash: sha256-b5cadfd86530821b
   BC-2530.10.30:
     name: 客户自动开票协调
     description: |
       将客户自动开票对账单与货物运输记录进行对账。
+    source_hash: sha256-0b13e8f3e31dbb8e
   BC-2530.20:
     name: 货运审计与支付管理
     description: |
       对货主和货代开展承运商发票审计并执行承运商付款。
+    source_hash: sha256-c27d5952a42f9961
   BC-2530.20.10:
     name: 承运商发票审计
     description: |
       对照合同、运费表及货物运输记录审计承运商发票。
+    source_hash: sha256-823c36fff43e71de
   BC-2530.20.20:
     name: 审计前后对账
     description: |
       对承运商发票开展审计前及审计后对账。
+    source_hash: sha256-fc9d66dd75b77c04
   BC-2530.20.30:
     name: 承运商付款执行
     description: |
       执行承运商付款及汇款报告。
+    source_hash: sha256-2834eb86670a39d4
   BC-2530.30:
     name: 联运与多承运商结算管理
     description: |
       在联运伙伴、联盟及货代办事处之间结算收入与成本。
+    source_hash: sha256-f3e8ba9e0b00c13e
   BC-2530.30.10:
     name: 联运分成计算
     description: |
       计算各伙伴之间的联运收入分成。
+    source_hash: sha256-2466e97305b93f16
   BC-2530.30.20:
     name: IATA CASS结算运营
     description: |
       运营空运货物IATA CASS结算流程。
+    source_hash: sha256-7cf9d4f8fe0cabdb
   BC-2530.30.30:
     name: 内部结算
     description: |
       开展货代收入与成本的跨办事处内部结算。
+    source_hash: sha256-296977a8349df371
   BC-2530.40:
     name: 货物索赔管理
     description: |
       依据运输责任公约，受理、评估并结案货物索赔。
+    source_hash: sha256-af8d86433d2fb010
   BC-2530.40.10:
     name: 索赔受理与确认
     description: |
       受理并确认货物灭失及损坏索赔。
+    source_hash: sha256-dfce4e7dd266c9f1
   BC-2530.40.20:
     name: 责任评估
     description: |
       依据《海牙-威斯比规则》、《蒙特利尔公约》、CMR及COTIF评估承运商责任。
+    source_hash: sha256-0432648905806652
   BC-2530.40.30:
     name: 索赔结案与赔付
     description: |
       对已受理索赔进行结案并向客户支付赔偿。
+    source_hash: sha256-ee7fd0b00db82f07
   BC-2530.40.40:
     name: 索赔追偿与代位求偿
     description: |
       向底层承运商追偿并向保险公司行使代位求偿权。
+    source_hash: sha256-f6409acad7b332cf
   BC-2530.50:
     name: 货运收入核算管理
     description: |
       确认、追踪并报告货运收入，包括未开票及递延收入。
+    source_hash: sha256-aaf70cbbc8e48b33
   BC-2530.50.10:
     name: 货运收入确认
     description: |
       按适用会计准则确认货运收入。
+    source_hash: sha256-60341a8cc43a5322
   BC-2530.50.20:
     name: 未开票收入追踪
     description: |
       追踪未开票及应计货运收入。
+    source_hash: sha256-d924f56cb87d24d9
   BC-2530.50.30:
     name: 货运收入报告
     description: |
       向财务及商务职能部门报告货运收入。
+    source_hash: sha256-601ebaae2ed7fb34
 metadata:
   translator: Claude (zh automated)
   generated: 2026-04-29

@@ -1,0 +1,176 @@
+kind: business-process
+locale: de
+source: BP1-procure-to-pay.yaml
+entries:
+  BP-1010:
+    name: "Beschaffung-zu-Zahlung"
+    description: "End-to-End-Lieferantenseiten-Ausgabezyklus von der Bedarfsidentifikation über Sourcing, Lieferantenauswahl, Vertrag und Bestellung, Waren- oder Leistungseingang, Rechnungsverarbeitung, Zahlung, Abstimmung und Lieferantenleistungsüberwachung. Ein BP2 pro VS-420-stage_name."
+    source_hash: sha256-441bb8b7fd59b66e
+  BP-1010.10:
+    name: "Bedarfsidentifikation & Anforderung"
+    description: "Internen Bedarf an Waren oder Dienstleistungen erfassen, validieren und genehmigen und in eine Bestellanforderung übersetzen."
+    source_hash: sha256-bbc0873a1ff7d971
+  BP-1010.10.10:
+    name: "Beschaffungsbedarf identifizieren"
+    description: "Geschäftlichen Bedarf an einer Ware oder Dienstleistung von der anfordernden Funktion erfassen und bestätigen, dass interne Alternativen geprüft wurden."
+    source_hash: sha256-66e41d54b5c4bea5
+  BP-1010.10.20:
+    name: "Anforderungen spezifizieren"
+    description: "Den Bedarf in eine klare Spezifikation übersetzen — Menge, Qualität, Service Level und Lieferbedingungen — gegen die Lieferanten anbieten können."
+    source_hash: sha256-3fd70cb209eafc8f
+  BP-1010.10.30:
+    name: "Bestellanforderung erstellen"
+    description: "Die Bestellanforderung im Beschaffungssystem anlegen, Budgetkodierung zuweisen und zur Genehmigung einreichen."
+    source_hash: sha256-b0677f99d098cf47
+  BP-1010.10.40:
+    name: "Bestellanforderung genehmigen"
+    description: "Die Anforderung durch die Ausgabe-Genehmigungshierarchie routen; Genehmiger-Entscheidungen und Ablehnungen mit Begründung erfassen."
+    source_hash: sha256-8d4bdb1517b11a19
+  BP-1010.20:
+    name: "Sourcing"
+    description: "Sourcing-Strategie wählen, Sourcing-Events (RFx) durchführen, Antworten bewerten und den Auftrag vergeben."
+    source_hash: sha256-719e2b17612cca8c
+  BP-1010.20.10:
+    name: "Kategorie-Sourcing-Strategie entwickeln"
+    description: "Die Kategoriestrategie bestätigen — Make-vs-Buy, Single- vs. Multi-Source, geografische Beschränkungen — die dieses Sourcing-Event rahmt."
+    source_hash: sha256-727cd2bf1bfe20b6
+  BP-1010.20.20:
+    name: "Sourcing-Event durchführen"
+    description: "RFI/RFP/RFQ an qualifizierte Lieferanten ausgeben, Q&A managen und Antworten bis zur Frist sammeln."
+    source_hash: sha256-e735ccd3c4480991
+  BP-1010.20.30:
+    name: "Lieferantenantworten bewerten"
+    description: "Antworten gegen die veröffentlichten Bewertungskriterien bewerten — Total Cost of Ownership, Qualität, Kapazität, Nachhaltigkeit, Risiko."
+    source_hash: sha256-af59b5fc1ba76ba3
+  BP-1010.20.40:
+    name: "Sourcing-Vergabe verhandeln"
+    description: "Best-and-Final-Verhandlungsrunden mit Shortlist-Lieferanten führen und die Vergabeentscheidung samt Begründung finalisieren."
+    source_hash: sha256-b98f7d3de17963a7
+  BP-1010.30:
+    name: "Lieferantenauswahl & Onboarding"
+    description: "Den vergebenen Lieferanten qualifizieren, Risiko- und Compliance-Prüfungen durchführen und in Lieferantenstammdaten und operative Systeme onboarden."
+    source_hash: sha256-683a9e61adb86dea
+  BP-1010.30.10:
+    name: "Lieferanten-Due-Diligence durchführen"
+    description: "Finanz-, Regulierungs-, Sanktions-, ESG- und Cybersicherheitsprüfungen am vergebenen Lieferanten durchführen und Restrisiken dokumentieren."
+    source_hash: sha256-8ef50a47cb84a438
+  BP-1010.30.20:
+    name: "Lieferanten qualifizieren"
+    description: "Bestätigen, dass der Lieferant die Qualifikations-Gates der Kategorie erfüllt — Zertifizierungen, Versicherungen, Qualitätsstandards — bevor das Onboarding fortgesetzt wird."
+    source_hash: sha256-f3331baf6022fbae
+  BP-1010.30.30:
+    name: "Lieferantenstammdaten einrichten"
+    description: "Bank-, Steuer-, Adress- und Kontaktdaten des Lieferanten mit den entsprechenden Stewardship-Prüfungen in den Lieferantenstammdaten persistieren."
+    source_hash: sha256-b7b66f5643b401ce
+  BP-1010.30.40:
+    name: "Lieferanten in operative Systeme onboarden"
+    description: "Den Lieferanten in P2P, EDI/Portal und etwaigen kategoriespezifischen Systemen provisionieren; Integrationstests an Transaktionen durchführen."
+    source_hash: sha256-7fdaa28784925973
+  BP-1010.40:
+    name: "Vertrag & Bestellung"
+    description: "Den Lieferantenvertrag ausführen und genehmigte Anforderungen in Bestellungen umwandeln, gegen die der Lieferant erfüllen kann."
+    source_hash: sha256-3113e72df76ed62c
+  BP-1010.40.10:
+    name: "Lieferantenvertrag verhandeln"
+    description: "Kommerzielle, rechtliche und operative Bedingungen verhandeln — Preise, SLAs, Freistellungen, Change Control — und Redlines bis zur Ausführung erfassen."
+    source_hash: sha256-2c9256ddb544c554
+  BP-1010.40.20:
+    name: "Lieferantenvertrag ausführen"
+    description: "Autorisierte Unterschriften erfassen, den ausgeführten Vertrag im Vertragsrepository persistieren und mit Lieferantenstammdaten verknüpfen."
+    source_hash: sha256-4b716cff8ccb2b56
+  BP-1010.40.30:
+    name: "Bestellung ausstellen"
+    description: "Die genehmigte Anforderung (unter ausgeführtem Vertrag oder als Einzel-PO) in eine feste Bestellung umwandeln und an den Lieferanten übermitteln."
+    source_hash: sha256-6a43283b2a09687a
+  BP-1010.40.40:
+    name: "PO-Änderungen managen"
+    description: "Lieferanten- oder käuferseitige Änderungswünsche — Menge, Datum, Preis — durch den PO-Change-Control-Workflow verarbeiten."
+    source_hash: sha256-a94a0169b6c872df
+  BP-1010.50:
+    name: "Waren-/Leistungseingang"
+    description: "Waren oder Leistungen empfangen, Menge und Qualität gegen die PO prüfen und den Eingang für nachgelagertes Rechnungs-Matching buchen."
+    source_hash: sha256-aa4194c3a4173341
+  BP-1010.50.10:
+    name: "Waren oder Leistungen empfangen"
+    description: "Waren physisch an der Rampe entgegennehmen oder die Fertigstellung erbrachter Leistungen abzeichnen und Liefernachweis erfassen."
+    source_hash: sha256-51f0892b82631e47
+  BP-1010.50.20:
+    name: "Menge und Qualität prüfen"
+    description: "Menge, Zustand und Konformität mit der PO-Spezifikation überprüfen; Nichtkonformitätsberichte bei Fehlmengen erstellen."
+    source_hash: sha256-46bf76cbcd12b15b
+  BP-1010.50.30:
+    name: "Wareneingang buchen"
+    description: "Den Wareneingang im ERP buchen, Bestand oder Aufwandserfassung freigeben und das Drei-Wege-Matching ermöglichen."
+    source_hash: sha256-7935849d37adf90f
+  BP-1010.50.40:
+    name: "Eingangsausnahmen klären"
+    description: "Fehlmengen, Schäden oder Streitigkeiten zur Leistungserbringung mit dem Lieferanten managen; Anpassungen vor Rechnungsannahme vereinbaren."
+    source_hash: sha256-c5539a1a7af33dee
+  BP-1010.60:
+    name: "Rechnungseingang & -prüfung"
+    description: "Die Lieferantenrechnung empfangen, Drei-Wege-Matching gegen PO und Eingang durchführen und Diskrepanzen klären."
+    source_hash: sha256-1ca657d8c9103c84
+  BP-1010.60.10:
+    name: "Lieferantenrechnung empfangen"
+    description: "Die Lieferantenrechnung über E-Invoicing, EDI, Portal oder Papier erfassen; mit Quellsystem-Metadaten persistieren."
+    source_hash: sha256-cc3184c35be1df6c
+  BP-1010.60.20:
+    name: "Rechnung auf PO und Eingang matchen"
+    description: "Drei-Wege-Matching gegen PO und Wareneingang durchführen; Ausnahmen zur Klärung an Kreditorenbuchhaltung routen, bevor die Zahlung autorisiert wird."
+    source_hash: sha256-cf6eb77a135e2b0e
+  BP-1010.60.30:
+    name: "Rechnungsdiskrepanzen klären"
+    description: "Preis-, Mengen- oder Konditionsdiskrepanzen mit Käufer und Lieferant untersuchen; Gutschriften oder Anpassungen vor Genehmigung erfassen."
+    source_hash: sha256-e72235e3e615abcb
+  BP-1010.60.40:
+    name: "Rechnung zur Zahlung freigeben"
+    description: "Die gematchte Rechnung durch erforderliche Genehmigungen (CFO-Schwelle, Projekt-Sign-off) routen und zur Zahlung autorisieren."
+    source_hash: sha256-3e4fc912913e5ef4
+  BP-1010.70:
+    name: "Zahlungsausführung"
+    description: "Die Lieferantenzahlung über das gewählte Instrument ausführen und die Zahlungsavis an den Lieferanten senden."
+    source_hash: sha256-4c0510057501fef2
+  BP-1010.70.10:
+    name: "Zahlungslauf einplanen"
+    description: "Genehmigte Rechnungen nach Fälligkeitstermin, Währung und Instrument zu einem Zahlungslauf gruppieren; Skonto-Erfassung und Float optimieren."
+    source_hash: sha256-60937e6890ef6c0d
+  BP-1010.70.20:
+    name: "Zahlung ausführen"
+    description: "Auszahlung per Überweisung, Lastschrift, Virtual Card, Scheck oder E-Payment; Bankbestätigungen der Treasury persistieren."
+    source_hash: sha256-6b277f8f8fa00b9c
+  BP-1010.70.30:
+    name: "Zahlungsavis senden"
+    description: "Den Lieferanten über die Zahlung mit positionsweisen Avis-Details informieren, damit er sie gegen seine offenen Forderungen zuordnen kann."
+    source_hash: sha256-e44fa0c5d23f05e2
+  BP-1010.80:
+    name: "Abstimmung"
+    description: "Kreditoren-Nebenbuch mit Hauptbuch und Bank abstimmen und Abweichungen vor Periodenabschluss klären."
+    source_hash: sha256-1f90bbe4d421b275
+  BP-1010.80.10:
+    name: "Kreditoren mit Hauptbuch abstimmen"
+    description: "Das Kreditoren-Nebenbuch fortschreiben und Salden mit GL-Abstimmkonten abgleichen, etwaige Abweichungen untersuchen."
+    source_hash: sha256-7d8553b73cbbc050
+  BP-1010.80.20:
+    name: "Zahlungen mit Bank abstimmen"
+    description: "Zahlungsläufe mit Kontoauszügen abgleichen; nicht eingelöste Schecks, retournierte Lastschriften, FX-Timing und Bankgebühren-Abweichungen untersuchen."
+    source_hash: sha256-196a279cd9183e28
+  BP-1010.80.30:
+    name: "Abstimmungsabweichungen klären"
+    description: "Abweichungen auf die Wurzelursache zurückführen — Doppelzahlung, fehlgebuchte Position, nicht zugeordnete Lieferantengutschrift — und Korrekturbuchungen vornehmen."
+    source_hash: sha256-322c16848d9c70f8
+  BP-1010.90:
+    name: "Lieferantenleistungsüberwachung"
+    description: "Lieferantenleistung gegen vertragliche SLAs und KPIs verfolgen, Scorecards führen und Korrekturmaßnahmen managen."
+    source_hash: sha256-2ebe5b6f74d11ea4
+  BP-1010.90.10:
+    name: "Lieferanten-KPIs verfolgen"
+    description: "Operative Daten zu Qualität, On-Time-Delivery, Fill Rate und SLA-Erreichung sammeln; für Scorecard-Erstellung persistieren."
+    source_hash: sha256-2940321cf7dfdec7
+  BP-1010.90.20:
+    name: "Lieferanten-Scorecard ausstellen"
+    description: "Die periodische Lieferanten-Scorecard erstellen und mit Lieferant und internem Category Management teilen; Lieferanten-Feedback erfassen."
+    source_hash: sha256-96a7a88808e2fe7a
+  BP-1010.90.30:
+    name: "Korrekturmaßnahmen mit Lieferanten managen"
+    description: "Korrekturmaßnahmenpläne mit unterperformenden Lieferanten öffnen, verfolgen und schließen; bei anhaltendem Verstoß zu Vertragsmaßnahmen eskalieren."
+    source_hash: sha256-04248767aaf1f096

@@ -1,0 +1,294 @@
+id: BP-1060
+name: Opportunity-to-Order
+level: 1
+industry: Cross-Industry
+description: >-
+  Pre-sale enterprise selling cycle from opportunity qualification
+  through solution scoping, quote and configuration, pricing approvals,
+  proposal, negotiation, contract and order booking, and handover to
+  fulfilment. One BP2 per VS-380 stage_name.
+framework_refs: []
+realizes_capability_ids:
+  - BC-150
+  - BC-410
+  - BC-420
+  - BC-440
+  - BC-1110
+  - BC-1140
+  - BC-1750
+  - BC-1940
+  - BC-2020
+  - BC-2650
+  - BC-2680
+  - BC-3440
+  - BC-3720
+  - BC-3760
+  - BC-4230
+  - BC-4240
+  - BC-4350
+  - BC-4360
+children:
+  - id: BP-1060.10
+    name: Opportunity Qualification
+    level: 2
+    description: Qualify the opportunity against fit, budget, authority, and timing; decide whether to invest pursuit effort.
+    realizes_capability_ids:
+      - BC-410
+      - BC-420
+      - BC-3440
+      - BC-3720
+      - BC-3760
+      - BC-4350
+      - BC-4360
+    children:
+      - id: BP-1060.10.10
+        name: Capture Opportunity
+        level: 3
+        description: Capture the opportunity in the CRM with source, products of interest, target close, and account context.
+        realizes_capability_ids:
+          - BC-410
+          - BC-420
+        children: []
+      - id: BP-1060.10.20
+        name: Qualify Opportunity
+        level: 3
+        description: Apply qualification criteria (BANT, MEDDIC, or equivalent) to validate fit, budget, authority, need, and timing.
+        realizes_capability_ids:
+          - BC-410
+          - BC-3440
+          - BC-3720
+          - BC-3760
+        children: []
+      - id: BP-1060.10.30
+        name: Build Pursuit Plan
+        level: 3
+        description: Decide pursuit, build the account plan and decision-making-unit map, and assemble the pursuit team.
+        realizes_capability_ids:
+          - BC-410
+          - BC-4350
+          - BC-4360
+        children: []
+  - id: BP-1060.20
+    name: Solution Scoping
+    level: 2
+    description: Discover the customer's requirements and scope a solution that meets them within commercial and delivery constraints.
+    realizes_capability_ids:
+      - BC-410
+      - BC-1110
+      - BC-1140
+      - BC-1750
+      - BC-2020
+      - BC-2680
+      - BC-3440
+    children:
+      - id: BP-1060.20.10
+        name: Discover Requirements
+        level: 3
+        description: Run discovery workshops and interviews to capture functional, non-functional, and operating-context requirements.
+        realizes_capability_ids:
+          - BC-410
+          - BC-1110
+          - BC-1140
+        children: []
+      - id: BP-1060.20.20
+        name: Design Solution
+        level: 3
+        description: Translate requirements into a candidate solution — products, services, integrations, configurations.
+        realizes_capability_ids:
+          - BC-1750
+          - BC-2020
+          - BC-3440
+        children: []
+      - id: BP-1060.20.30
+        name: Validate Solution Feasibility
+        level: 3
+        description: Validate the solution with delivery, finance, and risk for feasibility, deliverability, and acceptable margin.
+        realizes_capability_ids:
+          - BC-2680
+          - BC-1140
+        children: []
+  - id: BP-1060.30
+    name: Quote & Configuration
+    level: 2
+    description: Configure the priced offer for the customer using product configurator, pricing rules, and discount frameworks.
+    realizes_capability_ids:
+      - BC-410
+      - BC-440
+      - BC-1940
+      - BC-2650
+      - BC-4240
+    children:
+      - id: BP-1060.30.10
+        name: Configure Solution Bundle
+        level: 3
+        description: Use the product configurator to compose the priced bundle from offer-catalogue components.
+        realizes_capability_ids:
+          - BC-410
+          - BC-1940
+        children: []
+      - id: BP-1060.30.20
+        name: Calculate Quote
+        level: 3
+        description: Apply list price, contractual discount, and tax rules to produce the priced quote.
+        realizes_capability_ids:
+          - BC-440
+          - BC-2650
+          - BC-4240
+        children: []
+  - id: BP-1060.40
+    name: Pricing & Approvals
+    level: 2
+    description: Apply discount and margin governance; route through pricing-approval workflow; capture approver decisions.
+    realizes_capability_ids:
+      - BC-440
+    children:
+      - id: BP-1060.40.10
+        name: Check Pricing Compliance
+        level: 3
+        description: Validate the quote against discount, margin, and special-pricing-agreement rules; flag exceptions.
+        realizes_capability_ids:
+          - BC-440
+        children: []
+      - id: BP-1060.40.20
+        name: Route Pricing Approvals
+        level: 3
+        description: Route exception quotes through the discount-approval hierarchy; capture decisions, conditions, and rationale.
+        realizes_capability_ids:
+          - BC-440
+        children: []
+  - id: BP-1060.50
+    name: Proposal Development
+    level: 2
+    description: Build the formal proposal or RFP response; orchestrate input from solution, legal, security, and delivery.
+    realizes_capability_ids:
+      - BC-410
+      - BC-1750
+      - BC-3760
+      - BC-4360
+    children:
+      - id: BP-1060.50.10
+        name: Author Proposal Content
+        level: 3
+        description: Author the proposal narrative — executive summary, solution, delivery, commercials, references, terms.
+        realizes_capability_ids:
+          - BC-410
+          - BC-1750
+          - BC-4360
+        children: []
+      - id: BP-1060.50.20
+        name: Coordinate SME Inputs
+        level: 3
+        description: Coordinate inputs from solution, legal, security, finance, and delivery SMEs into the proposal.
+        realizes_capability_ids:
+          - BC-3760
+        children: []
+      - id: BP-1060.50.30
+        name: Submit Proposal
+        level: 3
+        description: Format, review, and submit the proposal via the customer's required channel (RFP portal, email, in-person).
+        realizes_capability_ids:
+          - BC-410
+        children: []
+  - id: BP-1060.60
+    name: Negotiation
+    level: 2
+    description: Negotiate the commercial and contractual terms with the customer; resolve open positions to acceptance.
+    realizes_capability_ids:
+      - BC-150
+      - BC-410
+      - BC-1750
+      - BC-2680
+      - BC-3760
+      - BC-4360
+    children:
+      - id: BP-1060.60.10
+        name: Conduct Commercial Negotiation
+        level: 3
+        description: Negotiate price, payment terms, volume commitments, and commercial concessions.
+        realizes_capability_ids:
+          - BC-410
+          - BC-2680
+        children: []
+      - id: BP-1060.60.20
+        name: Negotiate Contract Terms
+        level: 3
+        description: Negotiate legal terms — SLAs, indemnities, IP, security, data — with legal and customer counsel.
+        realizes_capability_ids:
+          - BC-150
+          - BC-1750
+          - BC-3760
+          - BC-4360
+        children: []
+      - id: BP-1060.60.30
+        name: Resolve Open Issues
+        level: 3
+        description: Track and close all open issues — commercial, technical, legal — until the customer is ready to sign.
+        realizes_capability_ids:
+          - BC-410
+        children: []
+  - id: BP-1060.70
+    name: Contract & Order Booking
+    level: 2
+    description: Execute the contract, book the order, and trigger downstream provisioning, fulfilment, and revenue recognition.
+    realizes_capability_ids:
+      - BC-150
+      - BC-410
+      - BC-3720
+      - BC-3760
+      - BC-4240
+    children:
+      - id: BP-1060.70.10
+        name: Execute Contract
+        level: 3
+        description: Capture customer and authorised-signatory signatures; persist the executed contract; link to account and order.
+        realizes_capability_ids:
+          - BC-150
+          - BC-3760
+          - BC-4240
+        children: []
+      - id: BP-1060.70.20
+        name: Book Sales Order
+        level: 3
+        description: Convert the executed contract into a firm sales order in OMS; validate completeness against contract terms.
+        realizes_capability_ids:
+          - BC-410
+          - BC-3720
+        children: []
+      - id: BP-1060.70.30
+        name: Confirm Booking with Finance
+        level: 3
+        description: Confirm booking to finance for backlog, billing, and revenue-recognition setup; resolve any holds.
+        realizes_capability_ids:
+          - BC-410
+        children: []
+  - id: BP-1060.80
+    name: Handover to Fulfilment
+    level: 2
+    description: Hand the booked order over to fulfilment, delivery, or service teams; close the loop with sales for renewal.
+    realizes_capability_ids:
+      - BC-410
+      - BC-420
+      - BC-4230
+    children:
+      - id: BP-1060.80.10
+        name: Run Sales-to-Delivery Handover
+        level: 3
+        description: Run the handover meeting; transfer context, success criteria, and customer relationships from sales to delivery.
+        realizes_capability_ids:
+          - BC-410
+          - BC-420
+        children: []
+      - id: BP-1060.80.20
+        name: Set Up Delivery Engagement
+        level: 3
+        description: Set up the delivery engagement — project, account team, success plan — and confirm kick-off readiness.
+        realizes_capability_ids:
+          - BC-4230
+        children: []
+      - id: BP-1060.80.30
+        name: Close Sales Cycle
+        level: 3
+        description: Close the opportunity in CRM, capture win/loss reasons, and trigger commission and renewal-tracking workflows.
+        realizes_capability_ids:
+          - BC-410
+        children: []

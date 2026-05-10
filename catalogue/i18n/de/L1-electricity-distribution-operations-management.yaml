@@ -8,40 +8,49 @@ entries:
       Leitstellendispatch, Fehlerreaktion und Wiederversorgung, Schalthandlungen,
       Primär- und Sekundärumspannwerksbetrieb sowie Feldtruppenkoordination
       zur Stromversorgung von Endkunden.
+    source_hash: sha256-bb8d32dfffb323fe
   BC-3820.10:
     name: Verteilungsleitstellenbetrieb
     description: |
       24/7-Leitstellenbetrieb des Verteilungsnetzes mittels
       DMS/OMS/ADMS, Lagebilderstellung und Lastflussanalyse.
+    source_hash: sha256-6806e02bd5509657
   BC-3820.10.10:
     name: ADMS-Betrieb
     description: |
       Betrieb fortgeschrittener Verteilungsmanagementsysteme zur Überwachung und Steuerung.
+    source_hash: sha256-677ff44b0f143557
   BC-3820.10.20:
     name: Verteiler-SCADA-Betrieb
     description: |
       Echtzeit-SCADA-Erfassung und Steuerung von Verteilungsfeldern und Schaltern.
+    source_hash: sha256-5c633657e0372d0f
   BC-3820.10.30:
     name: Netztopologiemanagement
     description: |
       Pflege der betriebsaktuellen Netztopologie im Leitsystem.
+    source_hash: sha256-3ab9633b55056fe6
   BC-3820.20:
     name: Schalt- und Wiederversorgungsbetrieb
     description: |
       Netzkonfiguration und Wiederversorgung nach geplanten und
       ungeplanten Abschaltungen einschließlich FLISR-gestützter Selbstheilung.
+    source_hash: sha256-28e56a550795332c
   BC-3820.20.10:
     name: Schaltprogrammausführung
     description: |
       Autorisierte Ausführung von Verteilungsschaltprogrammen.
+    source_hash: sha256-6b62cf147e88fa82
   BC-3820.20.20:
     name: Fehlerortung, Isolierung und Wiederversorgung
     description: |
       FLISR-gestützte Erkennung, Isolierung und Wiederversorgung bei Fehlern auf Abgangsfeldern.
+    source_hash: sha256-eeb0ac66c07fb9f6
   BC-3820.20.30:
     name: Rückspeisung und Inselnetzbetrieb
     description: |
       Koordination von Feldrückspeisungen und beabsichtigtem Inselnetzbetrieb zur Wiederversorgung.
+    source_hash: sha256-f500b07a6cb34f3b
   BC-3820.30:
     name: Fehlerbehebungsbetrieb
     description: |
@@ -54,107 +63,132 @@ entries:
     out_of_scope:
       - DER-bezogene Abschaltbehandlung (BC-3840)
       - Großhandelserzeugungsabschaltungen (BC-3800.10)
+    source_hash: sha256-e0a8805040b9738c
   BC-3820.30.10:
     name: Fehlerpriorisierung
     description: |
       Priorisierung von Fehlermeldungen aus Feld-, Kunden- und Telemetriequellen.
+    source_hash: sha256-f5b6de747170daa0
   BC-3820.30.20:
     name: Feldstörungspatrouille
     description: |
       Feldpatrouille zur Lokalisierung und Bestätigung von Fehlern an Freileitungs- und Kabelanlagen.
+    source_hash: sha256-629aded5b3fe87f4
   BC-3820.30.30:
     name: Wiederversorgungsverfolgung
     description: |
       Verfolgung des Wiederversorgungsfortschritts und der Kundenminnuten-Verluststatistiken.
+    source_hash: sha256-c50cda5eaed6d4c9
   BC-3820.30.40:
     name: Großereignisreaktion
     description: |
       Sturm- und Großereignis-Verteilungsreaktion einschließlich gegenseitiger Hilfstrupps.
+    source_hash: sha256-a7a2a177c4dc5928
   BC-3820.40:
     name: Feldtruppdispatchbetrieb
     description: |
       Dispatch, Routenplanung und Feldeinsatzunterstützung für Verteilungsfeldtrupps
       bei Fehlern, geplanten Arbeiten und Kundenaufträgen.
+    source_hash: sha256-e3b825d3d196d891
   BC-3820.40.10:
     name: Truppschichtplanung
     description: |
       Tägliche Planung von Truppbesetzungen und Bereitschaftsrotationen.
+    source_hash: sha256-74e8b038bce34a83
   BC-3820.40.20:
     name: Auftragsdispatch und Routenplanung
     description: |
       Dispatch und Routenplanung von Aufträgen zu Feldtrupps aus Arbeitsmanagementsystemen.
+    source_hash: sha256-87f2e21966a77250
   BC-3820.40.30:
     name: Feldauftragabschluss
     description: |
       Erfassung von Bestandsänderungen, verwendeten Materialien und Zeiten beim Auftragsabschluss.
+    source_hash: sha256-d7b216a660cf4899
   BC-3820.50:
     name: Verteilungsanlageninspektion
     description: |
       Routine- und zustandsorientierte Inspektion von Freileitungen,
       Masten, Erdkabeln und Verteilungsumspannwerken.
+    source_hash: sha256-bc313924e30e2687
   BC-3820.50.10:
     name: Mast- und Freileitungsinspektion
     description: |
       Zyklische Mast- und Freileitungsinspektion einschließlich thermografischer Aufnahmen.
+    source_hash: sha256-9158b458ddd1fb51
   BC-3820.50.20:
     name: Erdnetzinspektion
     description: |
       Inspektion und Zustandserhebung von Erdkabeln, Verbindungsboxen und Muffen.
+    source_hash: sha256-6da739fa18de20ed
   BC-3820.50.30:
     name: Verteilungsumspannwerksinspektion
     description: |
       Routinemäßige Inspektion von Primär-, Sekundär- und Kundenumspannwerken.
+    source_hash: sha256-7cbb4dd9acebf1fd
   BC-3820.60:
     name: Vegetation und Schutzstreifenmanagement
     description: |
       Vegetationsbeseitigung und Schutzstreifenpflege auf Verteilungsleitungen
       zur Beherrschung von Abschaltrisiken und gesetzlich vorgeschriebenen Abstanden.
+    source_hash: sha256-dda63e21d1a8b4ab
   BC-3820.60.10:
     name: Vegetationszyklusplanung
     description: |
       Zyklusbasierte und risikobasierte Planung von Vegetationsarbeiten an Verteilungsleitungen.
+    source_hash: sha256-740dfb950218263d
   BC-3820.60.20:
     name: Vegetationsfeldbetrieb
     description: |
       Felddurchführung von Schnitt-, Fäll- und Herbizidarbeiten.
+    source_hash: sha256-802e4844134e2a59
   BC-3820.60.30:
     name: Waldbrandrisikominderungsbetrieb
     description: |
       PSPS-, Schnellauslöse- und Leitungsverhärtungsmaßnahmen in Waldbrandrisikobereichen.
+    source_hash: sha256-e29b0547329740e7
   BC-3820.70:
     name: Neuanschlussbetrieb
     description: |
       Herstellung neuer und geänderter elektrischer Anschlüsse für
       Haus-, Gewerbe- und Industriekunden sowie Projektentwickler.
+    source_hash: sha256-7504663ab3ebf4e1
   BC-3820.70.10:
     name: Anschlussbewertung
     description: |
       Technische Bewertung von Neuantragsanträgen und verfügbarer Kapazität.
+    source_hash: sha256-f661e8eb7add3d2d
   BC-3820.70.20:
     name: Anschlussplanung
     description: |
       Detaillierte Anschlussplanung, Netzanschlusspunkt und Verstärkungsanforderungen.
+    source_hash: sha256-f430158d1b6b0994
   BC-3820.70.30:
     name: Anschlussinbetriebnahme
     description: |
       Inbetriebnahme neuer Anschlüsse und Einschaltabnahme.
+    source_hash: sha256-f04a07253903b26a
   BC-3820.80:
     name: Spannungsqualitätsmanagement
     description: |
       Überwachung und Behebung von Verteilungsspannungsniveaus,
       Flicker, Oberwellen und Kundenbeschwerden zur Spannungsqualität.
+    source_hash: sha256-c06d696b36abdc97
   BC-3820.80.10:
     name: Spannungsüberwachung
     description: |
       Überwachung von Feldspannungsprofilen gegen gesetzliche Grenzwerte.
+    source_hash: sha256-22a4b5ce8bc14de0
   BC-3820.80.20:
     name: Oberwellen- und Flickerüberwachung
     description: |
       Netzüberwachung von Oberwellenverzerrungen und Spannungsflicker.
+    source_hash: sha256-58da4094009c5ae7
   BC-3820.80.30:
     name: Kundenbeschwerdeuntersuchung Spannungsqualität
     description: |
       Untersuchung und Behebung von kundengemeldeten Spannungsqualitätsproblemen.
+    source_hash: sha256-f0dda2a8a08d05c2
 metadata:
   translator: claude-ai
   date: "2026-04-29"
