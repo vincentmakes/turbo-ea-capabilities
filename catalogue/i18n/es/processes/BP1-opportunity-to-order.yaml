@@ -4,94 +4,94 @@ source: BP1-opportunity-to-order.yaml
 entries:
   BP-1060:
     name: "Oportunidad-a-Pedido"
-    source_hash: sha256-8a1a0e6c41d58ca5
+    description: "Ciclo pre-venta de enterprise selling desde calificación de oportunidad pasando por scoping de solución, cotización y configuración, aprobaciones de pricing, propuesta, negociación, contrato y booking del pedido, y handover al cumplimiento. Un BP2 por cada stage_name de VS-380."
   BP-1060.10:
     name: "Calificación de oportunidad"
-    source_hash: sha256-cfcce898301b9f16
+    description: "Calificar la oportunidad contra ajuste, presupuesto, autoridad y timing; decidir si invertir esfuerzo de pursuit."
   BP-1060.10.10:
     name: "Capturar oportunidad"
-    source_hash: sha256-436ccbe744d04f49
+    description: "Capturar la oportunidad en el CRM con fuente, productos de interés, close objetivo y contexto de la cuenta."
   BP-1060.10.20:
     name: "Calificar oportunidad"
-    source_hash: sha256-0edf81b549f113b1
+    description: "Aplicar criterios de calificación (BANT, MEDDIC o equivalente) para validar ajuste, presupuesto, autoridad, necesidad y timing."
   BP-1060.10.30:
-    name: "Construir plan de búsqueda"
-    source_hash: sha256-05a81bb7581c5e2e
+    name: "Construir plan de pursuit"
+    description: "Decidir pursuit, construir el plan de cuenta y mapa de unidad de toma de decisiones y armar el equipo de pursuit."
   BP-1060.20:
-    name: "Definición de la solución"
-    source_hash: sha256-3a1257e11aeb8669
+    name: "Scoping de solución"
+    description: "Descubrir los requisitos del cliente y definir alcance de una solución que los cumpla dentro de restricciones comerciales y de entrega."
   BP-1060.20.10:
     name: "Descubrir requisitos"
-    source_hash: sha256-e484ab7a698ed3a5
+    description: "Ejecutar workshops y entrevistas de discovery para capturar requisitos funcionales, no funcionales y de contexto operativo."
   BP-1060.20.20:
-    name: "Diseñar la solución"
-    source_hash: sha256-431bb2ccc1177c11
+    name: "Diseñar solución"
+    description: "Traducir requisitos en una solución candidata — productos, servicios, integraciones, configuraciones."
   BP-1060.20.30:
-    name: "Validar viabilidad de la solución"
-    source_hash: sha256-891b9f5af2c22958
+    name: "Validar factibilidad de la solución"
+    description: "Validar la solución con delivery, finanzas y riesgo por factibilidad, deliverabilidad y margen aceptable."
   BP-1060.30:
     name: "Cotización y configuración"
-    source_hash: sha256-9985d7a00beac8c2
+    description: "Configurar la oferta con precio para el cliente usando configurador de producto, reglas de pricing y frameworks de descuento."
   BP-1060.30.10:
     name: "Configurar paquete de solución"
-    source_hash: sha256-dbd0a6f8c05d9bfc
+    description: "Usar el configurador de producto para componer el paquete con precio a partir de componentes del catálogo de oferta."
   BP-1060.30.20:
     name: "Calcular cotización"
-    source_hash: sha256-acb8536573a9c904
+    description: "Aplicar precio de lista, descuento contractual y reglas fiscales para producir la cotización con precio."
   BP-1060.40:
-    name: "Precios y aprobaciones"
-    source_hash: sha256-ae9b5bc5a53cd4fb
+    name: "Pricing y aprobaciones"
+    description: "Aplicar gobernanza de descuento y margen; enrutar a través del workflow de aprobación de pricing; capturar decisiones de aprobador."
   BP-1060.40.10:
-    name: "Verificar cumplimiento de precios"
-    source_hash: sha256-1a9666f3ca203856
+    name: "Verificar compliance de pricing"
+    description: "Validar la cotización contra reglas de descuento, margen y special-pricing-agreement; flaggear excepciones."
   BP-1060.40.20:
-    name: "Enrutar aprobaciones de precios"
-    source_hash: sha256-5940523d16019a2e
+    name: "Enrutar aprobaciones de pricing"
+    description: "Enrutar cotizaciones de excepción a través de la jerarquía de aprobación de descuento; capturar decisiones, condiciones y justificación."
   BP-1060.50:
     name: "Desarrollo de propuesta"
-    source_hash: sha256-c9cc2f984d49d0f4
+    description: "Construir la propuesta formal o respuesta a RFP; orquestar input de solución, legal, seguridad y delivery."
   BP-1060.50.10:
     name: "Redactar contenido de propuesta"
-    source_hash: sha256-1e95a476ce3a5f0e
+    description: "Redactar la narrativa de la propuesta — resumen ejecutivo, solución, delivery, comerciales, referencias, términos."
   BP-1060.50.20:
-    name: "Coordinar aportes de expertos"
-    source_hash: sha256-adc9e8e346581fb6
+    name: "Coordinar inputs de SMEs"
+    description: "Coordinar inputs de SMEs de solución, legal, seguridad, finanzas y delivery en la propuesta."
   BP-1060.50.30:
-    name: "Presentar propuesta"
-    source_hash: sha256-0c91eafc652e43e7
+    name: "Someter propuesta"
+    description: "Formatear, revisar y someter la propuesta vía el canal requerido por el cliente (portal de RFP, email, en persona)."
   BP-1060.60:
     name: "Negociación"
-    source_hash: sha256-5b67248014901319
+    description: "Negociar los términos comerciales y contractuales con el cliente; resolver posiciones abiertas hasta la aceptación."
   BP-1060.60.10:
-    name: "Llevar negociación comercial"
-    source_hash: sha256-e80a594858f1cbe0
+    name: "Conducir negociación comercial"
+    description: "Negociar precio, términos de pago, compromisos de volumen y concesiones comerciales."
   BP-1060.60.20:
     name: "Negociar términos contractuales"
-    source_hash: sha256-05e5b44465e6cf12
+    description: "Negociar términos legales — SLAs, indemnizaciones, IP, seguridad, datos — con legal y abogados del cliente."
   BP-1060.60.30:
-    name: "Resolver temas abiertos"
-    source_hash: sha256-460b5ec799c72c0d
+    name: "Resolver issues abiertos"
+    description: "Rastrear y cerrar todos los issues abiertos — comerciales, técnicos, legales — hasta que el cliente esté listo para firmar."
   BP-1060.70:
-    name: "Contrato y registro de pedido"
-    source_hash: sha256-7e7532bf65be5538
+    name: "Contrato y booking del pedido"
+    description: "Ejecutar el contrato, hacer booking del pedido y disparar provisioning, cumplimiento y reconocimiento de ingresos aguas abajo."
   BP-1060.70.10:
     name: "Ejecutar contrato"
-    source_hash: sha256-5dcd5cb7d7b77fc9
+    description: "Capturar firmas del cliente y firmante autorizado; persistir el contrato ejecutado; vincular a cuenta y pedido."
   BP-1060.70.20:
-    name: "Registrar orden de venta"
-    source_hash: sha256-9bfea8ca62d52534
+    name: "Hacer booking del pedido de venta"
+    description: "Convertir el contrato ejecutado en un pedido de venta firme en OMS; validar completitud contra los términos del contrato."
   BP-1060.70.30:
-    name: "Confirmar registro con finanzas"
-    source_hash: sha256-0874878ede4057bd
+    name: "Confirmar booking con finanzas"
+    description: "Confirmar booking a finanzas para backlog, billing y setup de reconocimiento de ingresos; resolver cualquier hold."
   BP-1060.80:
-    name: "Traspaso a fulfillment"
-    source_hash: sha256-acd76b2c5aac72c9
+    name: "Handover a cumplimiento"
+    description: "Hacer handover del pedido boockeado a equipos de cumplimiento, entrega o servicio; cerrar el loop con ventas para renewal."
   BP-1060.80.10:
-    name: "Realizar traspaso ventas-a-delivery"
-    source_hash: sha256-58ff5189568c4e64
+    name: "Ejecutar handover ventas-a-delivery"
+    description: "Ejecutar la reunión de handover; transferir contexto, criterios de éxito y relaciones con cliente de ventas a delivery."
   BP-1060.80.20:
-    name: "Configurar el engagement de delivery"
-    source_hash: sha256-a10e2ab2cb17661b
+    name: "Configurar engagement de delivery"
+    description: "Configurar el engagement de delivery — proyecto, equipo de cuenta, plan de éxito — y confirmar readiness de kick-off."
   BP-1060.80.30:
-    name: "Cerrar el ciclo de ventas"
-    source_hash: sha256-024a3560b43944cb
+    name: "Cerrar ciclo de ventas"
+    description: "Cerrar la oportunidad en CRM, capturar razones de win/loss y disparar workflows de comisiones y tracking de renewal."
