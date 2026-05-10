@@ -1,31 +1,38 @@
-# Business Capability Reference Catalogue
+# Business Architecture Reference Catalogue
 
-An **open-source Business Capability Reference Catalogue**. It is intentionally tool-agnostic and can be used in any Enterprise Architecture management solution — well beyond [Turbo EA](https://www.turbo-ea.org). This site exists to help enterprise architects get started with the implementation of an EA function, by providing a curated, opinionated baseline that teams can adopt, adapt, and extend.
+An **open-source Business Architecture Reference Catalogue** covering three orthogonal artefacts: **business capabilities** (BC — what the enterprise does), **business processes** (BP — how it does it), and **value streams** (VS — end-to-end value delivery). It is intentionally tool-agnostic and can be used in any Enterprise Architecture management solution — well beyond [Turbo EA](https://www.turbo-ea.org). This site exists to help enterprise architects get started with the implementation of an EA function, by providing a curated, opinionated baseline that teams can adopt, adapt, and extend.
 
 <img width="1424" height="678" alt="Screenshot 2026-04-28 at 07 39 44" src="https://github.com/user-attachments/assets/f8deb601-74f2-4b39-92ba-d234ee0494b8" />
 
 
-- **Browse online:** [`capabilities.turbo-ea.org`](https://capabilities.turbo-ea.org/) — searchable web catalogue.
+- **Browse online:** [`catalog.turbo-ea.org`](https://catalog.turbo-ea.org/) — searchable web catalogue (capabilities, processes, value streams).
 - **Source of truth:** YAML files in [`catalogue/`](catalogue/).
-- **Public site + JSON API:** [`capabilities.turbo-ea.org`](https://capabilities.turbo-ea.org/) (Cloudflare Pages).
+- **Public site + JSON API:** [`catalog.turbo-ea.org`](https://catalog.turbo-ea.org/) (Cloudflare Pages).
 - **Python package:** [`turbo-ea-capabilities`](https://pypi.org/project/turbo-ea-capabilities/) on PyPI — embeds the catalogue as bundled JSON for offline / airgapped consumers.
 - **Blog & EA resources:** [`turbo-ea.org/blog`](https://www.turbo-ea.org/blog/).
 
-All governance lives in [`business-capability-governance-model.md`](business-capability-governance-model.md): **Part A** covers the reference model (definition, levels, naming, identifiers, metadata); **Part B** covers operational governance (PR workflow, lint rules, versioning, promotion).
+All governance lives in [`business-capability-governance-model.md`](business-capability-governance-model.md): **Part A** covers the capability reference model (definition, levels, naming, identifiers, metadata); **Part B** covers operational governance (PR workflow, lint rules, versioning, promotion); **Part C** covers the value-stream layer; **Part D** covers the process layer; **Part E** covers cross-layer linkage.
  
 ## Layout
 
 ```
 turbo-ea-capabilities/
-├── catalogue/              # YAML source of truth (one file per L1)
-│   ├── _index.yaml
-│   ├── _value-streams.yaml
-│   ├── L1-*.yaml
-│   └── i18n/               # Translation sidecars (one per locale × L1)
+├── catalogue/              # YAML source of truth
+│   ├── _index.yaml             # Registry of L1 capability files
+│   ├── _value-streams.yaml     # All value streams + stages
+│   ├── L1-*.yaml               # One file per L1 capability
+│   ├── processes/              # Business processes
+│   │   ├── _index.yaml         # Registry of BP1 process files
+│   │   └── BP1-*.yaml          # One file per BP1 (Category)
+│   └── i18n/               # Translation sidecars (capabilities, processes, value streams)
 │       └── <bcp47>/
-│           └── L1-*.yaml
+│           ├── L1-*.yaml
+│           ├── _value-streams.yaml
+│           └── processes/BP1-*.yaml
 ├── schema/                 # JSON Schema 2020-12 for the YAML shape
 │   ├── capability.schema.json
+│   ├── value-stream.schema.json
+│   ├── business-process.schema.json
 │   └── i18n.schema.json    # Schema for translation sidecar files
 ├── scripts/                # lint, build_api, build_pkg, cli helpers
 ├── packages/py/            # Python package (turbo_ea_capabilities)
@@ -59,21 +66,40 @@ python -c "from turbo_ea_capabilities import load_all, VERSION; print(VERSION, l
 
 ## Editing the catalogue
 
-Use the helper CLIs to keep diffs clean:
+Use the helper CLIs to keep diffs clean — they preserve YAML formatting and compute the next sparse 10/20/30 ID deterministically:
 
 ```bash
-npm run cap:add       -- --parent BC-2.1 --name "Forecast Reconciliation"
-npm run cap:mv        -- --id BC-3.1.2 --new-parent BC-2.1
-npm run cap:deprecate -- --id BC-3.1.2 --successor BC-3.1.1 --reason "Merged into BC-3.1.1"
+# Capabilities
+npm run cap:add       -- --parent BC-100.10 --name "Forecast Reconciliation"
+npm run cap:mv        -- --id BC-300.10 --new-parent BC-100.10
+npm run cap:deprecate -- --id BC-300.10 --successor BC-100.10 --reason "Merged"
+
+# Business processes
+npm run bp:add        -- --parent BP-10.10 --name "Forecast Reconciliation" --realizes BC-100.10
+npm run bp:mv         -- --id BP-30.10.20 --new-parent BP-20.10
+npm run bp:deprecate  -- --id BP-30.10.20 --successor BP-30.10.10 --reason "Merged"
+
+# Value streams
+npm run vs:add        -- --name "Quote-to-Cash" --industries Cross-Industry
+npm run vs:add-stage  -- --stream VS-30 --name "Quote Generation" --capabilities BC-100 [--processes BP-10.10]
+npm run vs:deprecate  -- --id VS-30 --successor VS-40 --reason "Merged"
 ```
 
-All editing rules — what's a capability, how to name it, when to deprecate — are in [`business-capability-governance-model.md`](business-capability-governance-model.md).
+All editing rules — naming, depth limits, MECE, deprecation — are in [`business-capability-governance-model.md`](business-capability-governance-model.md). Capabilities cap at L4; cross-industry processes cap at L3; value-stream stages link to L1 capabilities.
 
 ## AI-assisted authoring with Claude Code
 
-Three skills under [`.claude/skills/`](.claude/skills/) help you draft governance-conformant capabilities, value-stream mappings, and translations without writing YAML by hand. All skills enforce the rules in [`business-capability-governance-model.md`](business-capability-governance-model.md) and validate the result with `npm run lint` before suggesting a commit.
+Skills under [`.claude/skills/`](.claude/skills/) help you draft governance-conformant capabilities, business processes, value streams, and translations without writing YAML by hand. All skills enforce the rules in [`business-capability-governance-model.md`](business-capability-governance-model.md) and validate the result with `npm run lint` before suggesting a commit.
 
-> **Names, not IDs.** You always refer to capabilities by their **name** (e.g. *"Manufacturing Operations Management"*, *"Human Capital Management"*). The skills resolve names to `BC-…` identifiers internally and only show the ID back as a confirmation. You never need to look up or type an ID.
+| Skill | What it does |
+| --- | --- |
+| [`/generate-capability`](./.claude/skills/generate-capability/) | Draft new L1s for an industry, a single new L1, or extend an existing L1 with MECE L2/L3 children. Drives `cap:add`. |
+| [`/generate-process`](./.claude/skills/generate-process/) | Synthesise a Cross-Industry BP1 from a value stream and the capabilities its stages exercise (or extend an existing BP1 with a new stage). Drives `bp:bootstrap-bp1` and `bp:add`. |
+| [`/generate-value-stream`](./.claude/skills/generate-value-stream/) | Propose new value streams with stages linked to capabilities and (optionally) processes. Drives `vs:add` and `vs:add-stage`. |
+| [`/map-value-streams`](./.claude/skills/map-value-streams/) | Autonomously map L1s to existing value streams in one batched proposal. Superseded by `/generate-value-stream` for new authoring. |
+| [`/translate-language`](./.claude/skills/translate-language/) | Generate or refresh sidecar translations under `catalogue/i18n/<locale>/` for capabilities, business processes, and value streams. |
+
+> **Names, not IDs.** You always refer to artefacts by their **name** (e.g. *"Manufacturing Operations Management"*, *"Order-to-Cash"*). The skills resolve names to `BC-…` / `BP-…` / `VS-…` identifiers internally and only show the ID back as a confirmation. You never need to look up or type an ID.
 
 ### Install
 
@@ -214,19 +240,24 @@ Both skills reject (and suggest a rewrite for) names that contain verbs, gerunds
 
 ## Static API
 
-After `npm run build`, the following endpoints are available under `dist/api/` (and at `capabilities.turbo-ea.org/api/`):
+After `npm run build`, the following endpoints are available under `dist/api/` (and at `catalog.turbo-ea.org/api/`):
 
 | Path | Returns |
 | --- | --- |
 | `GET /api/version.json` | `{catalogue_version, schema_version, generated_at, node_count}` |
-| `GET /api/capabilities.json` | Flat array of every node, sorted by id |
-| `GET /api/tree.json` | Nested tree (one entry per L1) |
-| `GET /api/by-l1/<slug>.json` | Single L1 nested subtree |
-| `GET /api/capability/<id>.json` | One node + its direct children |
+| `GET /api/capabilities.json` | Flat array of every capability node, sorted by id |
+| `GET /api/tree.json` | Nested capability tree (one entry per L1) |
+| `GET /api/by-l1/<slug>.json` | Single L1 nested capability subtree |
+| `GET /api/capability/<id>.json` | One capability node + its direct children |
+| `GET /api/business-processes.json` | Flat array of every process node, sorted by id |
+| `GET /api/bp-tree.json` | Nested process tree (one entry per BP1) |
+| `GET /api/by-bp1/<slug>.json` | Single BP1 nested process subtree |
+| `GET /api/business-process/<id>.json` | One process node + its direct children |
+| `GET /api/value-streams.json` | All value streams + stages |
 | `GET /api/locales.json` | List of available translation locales |
 | `GET /api/i18n/<locale>.json` | All translated strings for a locale |
 
-All responses are static, immutable per build, and cacheable by Cloudflare's edge. The English endpoints (`capabilities.json`, `tree.json`, etc.) are unaffected by translations — locale data is additive and ships separately under `/api/i18n/`.
+All responses are static, immutable per build, and cacheable by Cloudflare's edge. The English endpoints are unaffected by translations — locale data is additive and ships separately under `/api/i18n/`.
 
 ## Licence
 
