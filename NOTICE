@@ -6,37 +6,73 @@ frameworks. Inclusion of an attribution below does not imply endorsement by
 the framework owner.
 
 ================================================================================
+Cross-Industry business processes — generated from BC + VS
+================================================================================
+
+The Cross-Industry business-process tree (`BP-1000`..`BP-1160` under
+`catalogue/processes/`, one BP1 per Cross-Industry value stream) is generated
+from this catalogue's own Business Capability (BC) and Value Stream (VS)
+artefacts via the `/generate-process` skill. BP1 names follow each value
+stream's bookend pattern (Order-to-Cash, Hire-to-Retire, Procure-to-Pay,
+Idea-to-Market, Plan-to-Inventory, Prospect-to-Customer, Opportunity-to-Order,
+Issue-to-Resolution, Record-to-Report, Acquire-to-Retire, Strategy-to-Execution,
+Risk-to-Mitigation, Audit-to-Action, ESG-to-Disclosure, Crisis-to-Recovery,
+Threat-to-Mitigation, Discover-to-Automate). Names, descriptions, structure,
+and `realizes_capability_ids` are authored in this repository; no third-party
+process taxonomy drives the Cross-Industry layer.
+
+================================================================================
 APQC Process Classification Framework® (PCF)
 ================================================================================
 
-The business-process catalogue under `catalogue/processes/` is anchored on the
-APQC Process Classification Framework® (PCF), Cross-Industry version 7.4.0,
-published by APQC (American Productivity & Quality Center, https://www.apqc.org/).
-
 "Process Classification Framework®" and "PCF®" are registered trademarks of
-APQC. The APQC PCF is provided by APQC for use as a benchmark and process
-reference; this project uses APQC's category and process-group taxonomy with
-attribution. Each business-process node carries a structured `framework_refs`
-entry that pins the corresponding APQC PCF code (e.g.
-`{framework: APQC-PCF, external_id: "8.1", version: "7.4.0"}`).
+APQC (American Productivity & Quality Center, https://www.apqc.org/).
 
-For the canonical APQC PCF documentation, including the full multi-level
-process taxonomy and definitions, see:
+APQC PCF is cited in this catalogue in two ways:
+
+  1. Industry-specific BP1 files (`BP-130`..`BP-490`, except `BP-370` which is
+     no longer used) anchor on APQC's industry PCFs (Banking, Healthcare
+     Provider, Health Insurance Payor, Life Sciences, Education, Utilities,
+     Aerospace and Defense, Retail, Automotive, Consumer Products, Petroleum
+     Upstream/Downstream) alongside other domain frameworks. Each affected
+     node carries a `framework_refs` entry that pins the corresponding APQC
+     PCF code (e.g. `{framework: APQC-PCF, external_id: "8.1", version:
+     "7.2.x"}`).
+
+  2. Cross-Industry BP nodes (`BP-1000`..`BP-1160`) may carry an APQC PCF
+     entry in `framework_refs[]` as a secondary cross-walk where the mapping
+     is structurally honest. APQC PCF does not drive Cross-Industry naming or
+     structure — that role belongs to the BC + VS catalogues in this
+     repository.
+
+For the canonical APQC PCF documentation, see:
 
     https://www.apqc.org/process-frameworks
-
-The names, definitions, and ordering used in this catalogue are derived from
-the APQC PCF and adapted to this catalogue's governance conventions
-(verb-phrased Title Case, sparse `BP-N0[.M0]` ids, depth-4 cap, MECE within
-parent). Where this catalogue's wording differs from APQC's, the
-`framework_refs.external_id` pin remains authoritative for cross-walks.
 
 ================================================================================
 Other reference frameworks (cited but not redistributed)
 ================================================================================
 
 Capability and process records may include `framework_refs` entries that
-cross-walk to additional industry frameworks: BIAN (Banking Industry
-Architecture Network), TM Forum eTOM/Frameworx, ITIL®, and SCOR®. None of
-these frameworks are redistributed by this project; entries cite their
-identifiers only, with attribution to the respective owners of each.
+cross-walk to additional industry and operational frameworks. None of these
+frameworks are redistributed by this project; entries cite their identifiers
+only, with attribution to the respective owners of each:
+
+  - BIAN — Banking Industry Architecture Network Service Landscape
+  - TM Forum eTOM / Frameworx — telecommunications operations map
+  - ITIL® — IT service management practices (AXELOS / PeopleCert)
+  - SCOR® / DCOR — Supply Chain / Design Chain Operations Reference (ASCM)
+  - COBIT® — IT governance framework (ISACA)
+  - SHRM-BoCK — SHRM Body of Competency and Knowledge
+  - ISO 55000 — asset management
+  - ISO 31000 — risk management
+  - COSO ERM — Committee of Sponsoring Organizations Enterprise Risk
+    Management framework
+  - TOGAF® — The Open Group Architecture Framework
+  - BIZBOK® — Business Architecture Body of Knowledge (Business Architecture
+    Guild®)
+  - ACORD — insurance reference architecture
+  - ICMM — International Council on Mining and Metals lifecycle stages
+
+The full machine-readable list of recognised frameworks is the `framework`
+enum in `schema/business-process.schema.json`.
