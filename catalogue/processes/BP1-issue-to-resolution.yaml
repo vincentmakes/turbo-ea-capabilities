@@ -1,0 +1,178 @@
+id: BP-1070
+name: Issue-to-Resolution
+level: 1
+industry: Cross-Industry
+description: >-
+  Universal incident-and-issue handling cycle from capture through
+  investigation, resolution, and lessons learned. Used across customer
+  service, IT, safety, compliance, audit, and operational risk —
+  industry-specific variants in VS-310 collapse to four logical phases
+  here.
+framework_refs:
+  - framework: ITIL
+    external_id: Incident Management
+    version: "4"
+realizes_capability_ids:
+  - BC-130
+  - BC-140
+  - BC-420
+  - BC-430
+  - BC-600
+  - BC-720
+  - BC-730
+children:
+  - id: BP-1070.10
+    name: Issue Capture
+    level: 2
+    description: Capture incidents, complaints, defects, near-misses, and audit findings through any channel; persist with structured metadata.
+    realizes_capability_ids:
+      - BC-420
+      - BC-430
+      - BC-600
+      - BC-720
+      - BC-730
+    children:
+      - id: BP-1070.10.10
+        name: Receive Issue
+        level: 3
+        description: Accept the issue from the originating channel (customer, employee, system, regulator, audit) into the issue-management system.
+        realizes_capability_ids:
+          - BC-420
+          - BC-600
+        children: []
+      - id: BP-1070.10.20
+        name: Classify Issue
+        level: 3
+        description: Classify issue by type, severity, business impact, and affected service or asset; route to the correct queue.
+        realizes_capability_ids:
+          - BC-430
+          - BC-720
+        children: []
+      - id: BP-1070.10.30
+        name: Acknowledge to Originator
+        level: 3
+        description: Acknowledge receipt to the originator with case identifier and expected response cadence.
+        realizes_capability_ids:
+          - BC-420
+          - BC-730
+        children: []
+      - id: BP-1070.10.40
+        name: Trigger Major-Incident Protocol
+        level: 3
+        description: For high-severity issues, trigger the major-incident or crisis protocol — incident commander, war-room, escalation paths.
+        realizes_capability_ids:
+          - BC-130
+          - BC-140
+          - BC-720
+        children: []
+  - id: BP-1070.20
+    name: Investigation
+    level: 2
+    description: Investigate the issue — gather evidence, run diagnostics, identify root cause, and assess impact.
+    realizes_capability_ids:
+      - BC-130
+      - BC-140
+      - BC-600
+      - BC-720
+      - BC-730
+    children:
+      - id: BP-1070.20.10
+        name: Gather Evidence
+        level: 3
+        description: Collect logs, statements, samples, and other evidence relevant to the issue; persist to the case file.
+        realizes_capability_ids:
+          - BC-600
+          - BC-720
+        children: []
+      - id: BP-1070.20.20
+        name: Diagnose Root Cause
+        level: 3
+        description: Apply root-cause-analysis methods (5 whys, fault-tree, fishbone) to identify primary and contributing causes.
+        realizes_capability_ids:
+          - BC-720
+          - BC-730
+        children: []
+      - id: BP-1070.20.30
+        name: Assess Impact
+        level: 3
+        description: Assess customer, financial, regulatory, safety, and reputational impact of the issue and the proposed resolution path.
+        realizes_capability_ids:
+          - BC-130
+          - BC-140
+        children: []
+  - id: BP-1070.30
+    name: Resolution
+    level: 2
+    description: Resolve the issue — restore service, remediate harm, communicate, and close the case.
+    realizes_capability_ids:
+      - BC-420
+      - BC-430
+      - BC-600
+      - BC-720
+    children:
+      - id: BP-1070.30.10
+        name: Apply Workaround
+        level: 3
+        description: Apply a workaround to restore service or contain harm while the permanent fix is being developed.
+        realizes_capability_ids:
+          - BC-600
+          - BC-720
+        children: []
+      - id: BP-1070.30.20
+        name: Implement Permanent Fix
+        level: 3
+        description: Develop and deploy the permanent corrective action through change management; validate the fix.
+        realizes_capability_ids:
+          - BC-600
+          - BC-720
+        children: []
+      - id: BP-1070.30.30
+        name: Communicate Resolution
+        level: 3
+        description: Communicate resolution to the originator, affected customers, regulators where required, and internal stakeholders.
+        realizes_capability_ids:
+          - BC-420
+          - BC-430
+        children: []
+      - id: BP-1070.30.40
+        name: Close Case
+        level: 3
+        description: Confirm originator satisfaction; close the case with full audit trail and CSAT or equivalent rating.
+        realizes_capability_ids:
+          - BC-420
+          - BC-430
+        children: []
+  - id: BP-1070.40
+    name: Lessons Learned
+    level: 2
+    description: Extract lessons from the case, drive systemic preventive action, and improve the resolution capability.
+    realizes_capability_ids:
+      - BC-130
+      - BC-140
+      - BC-720
+      - BC-730
+    children:
+      - id: BP-1070.40.10
+        name: Conduct Post-Incident Review
+        level: 3
+        description: Run blameless post-incident review; capture what went well, what didn't, and what to change.
+        realizes_capability_ids:
+          - BC-720
+          - BC-730
+        children: []
+      - id: BP-1070.40.20
+        name: Drive Preventive Actions
+        level: 3
+        description: Open and track preventive actions (system, process, training); confirm closure with evidence.
+        realizes_capability_ids:
+          - BC-130
+          - BC-720
+        children: []
+      - id: BP-1070.40.30
+        name: Update Knowledge Base
+        level: 3
+        description: Update knowledge base, runbooks, and decision rules with new evidence to accelerate future resolutions.
+        realizes_capability_ids:
+          - BC-140
+          - BC-730
+        children: []
