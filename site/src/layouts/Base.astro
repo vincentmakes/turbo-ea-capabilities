@@ -37,7 +37,7 @@ const generatedDate = version.generated_at.slice(0, 10);
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0&icon_names=account_tree,add,arrow_upward,chevron_right,close,expand_more,label_important,remove,route"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0&icon_names=account_tree,add,arrow_upward,chevron_right,close,expand_more,label_important,menu,remove,route"
     />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta property="og:title" content={pageTitle} />
@@ -47,7 +47,7 @@ const generatedDate = version.generated_at.slice(0, 10);
   <body>
     <nav class={navClass}>
       <div class="nav-inner">
-        <a href="/" class="nav-brand">
+        <a href="https://www.turbo-ea.org" class="nav-brand">
           <img
             src="https://www.turbo-ea.org/assets/logo.png"
             alt="Turbo EA"
@@ -55,44 +55,89 @@ const generatedDate = version.generated_at.slice(0, 10);
           />
           <span class="nav-brand-text" style="color:#f0f0f5">Reference Catalog</span>
         </a>
-        <div class="nav-links">
-          <a href="/">Home</a>
-          <a href="/capabilities">Capabilities</a>
-          <a href="/business-processes">Processes</a>
-          <a href="/value-streams">Value Streams</a>
-          <a href="/#about">About</a>
-          <a href="/api/tree.json">API</a>
-          <a
-            href="https://www.turbo-ea.org"
-            target="_blank"
-            rel="noopener">Turbo EA</a
-          >
-          <a
-            href="https://www.turbo-ea.org/blog/"
-            target="_blank"
-            rel="noopener">Blog</a
-          >
-          <a
-            href="https://github.com/vincentmakes/turbo-ea-capabilities"
-            target="_blank"
-            rel="noopener"
-            class="github-button"
-            aria-label="GitHub repository"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              width="20"
-              height="20"
-              fill="currentColor"
-              aria-hidden="true"
+        <div class="nav-right">
+          <a href="/#about" class="nav-about">About</a>
+          <div class="nav-links" id="primary-nav">
+            <a href="/">Home</a>
+            <a href="/capabilities">Capabilities</a>
+            <a href="/business-processes">Processes</a>
+            <a href="/value-streams">Value Streams</a>
+            <a href="/api/tree.json">API</a>
+            <a
+              href="https://www.turbo-ea.org"
+              target="_blank"
+              rel="noopener">Turbo EA</a
             >
-              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-            </svg>
-            <span>GitHub</span>
-          </a>
+            <a
+              href="https://www.turbo-ea.org/blog/"
+              target="_blank"
+              rel="noopener">Blog</a
+            >
+            <a
+              href="https://github.com/vincentmakes/turbo-ea-capabilities"
+              target="_blank"
+              rel="noopener"
+              class="github-button"
+              aria-label="GitHub repository"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+          <button
+            type="button"
+            class="nav-toggle"
+            aria-controls="primary-nav"
+            aria-expanded="false"
+            aria-label="Open menu"
+          >
+            <span class="material-symbols-outlined nav-toggle-open" aria-hidden="true">menu</span>
+            <span class="material-symbols-outlined nav-toggle-close" aria-hidden="true">close</span>
+          </button>
         </div>
       </div>
     </nav>
+
+    <script is:inline>
+      (function () {
+        var nav = document.querySelector(".nav");
+        var toggle = nav && nav.querySelector(".nav-toggle");
+        var panel = nav && nav.querySelector("#primary-nav");
+        if (!nav || !toggle || !panel) return;
+        var close = function () {
+          nav.classList.remove("is-open");
+          toggle.setAttribute("aria-expanded", "false");
+          toggle.setAttribute("aria-label", "Open menu");
+        };
+        var open = function () {
+          nav.classList.add("is-open");
+          toggle.setAttribute("aria-expanded", "true");
+          toggle.setAttribute("aria-label", "Close menu");
+        };
+        toggle.addEventListener("click", function () {
+          if (nav.classList.contains("is-open")) close();
+          else open();
+        });
+        panel.addEventListener("click", function (e) {
+          var t = e.target;
+          while (t && t !== panel) {
+            if (t.tagName === "A") { close(); return; }
+            t = t.parentNode;
+          }
+        });
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") close();
+        });
+      })();
+    </script>
 
     <slot />
 
