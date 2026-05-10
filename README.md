@@ -230,4 +230,4 @@ All responses are static, immutable per build, and cacheable by Cloudflare's edg
 
 ## Licence
 
-[MIT](LICENSE). Third-party framework attributions (APQC PCF® for the business-process catalogue, plus BIAN / TM Forum eTOM / ITIL® / SCOR® references) are listed in [NOTICE](NOTICE).
+[MIT](LICENSE). Cross-Industry business processes are generated from value streams and the capabilities each stage exercises (BC + VS authoritative); APQC PCF® is retained as a secondary cross-walk on those nodes. Industry-specific business processes anchor on BIAN, TM Forum eTOM, ITIL®, SCOR®, ACORD, ICMM, COSO ERM, ISO 31000, ISO 55000, COBIT, SHRM-BoCK, TOGAF, BIZBOK, DCOR and the relevant APQC industry PCFs. All third-party framework attributions are listed in [NOTICE](NOTICE).

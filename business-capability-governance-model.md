@@ -38,7 +38,7 @@
 
 10. [Value Stream Layer](#10-value-stream-layer)
 
-**Part D — Process Layer** *(how work is done, anchored on APQC PCF)*
+**Part D — Process Layer** *(how work is done; Cross-Industry BPs generated from BC + VS, industry BPs anchored on domain frameworks)*
 
 11. [Process Layer](#11-process-layer)
 
@@ -945,12 +945,47 @@ Mirror of §9.8 for the BP layer. Each industry's process catalogue is anchored 
 
 #### Cross-industry baseline
 
-- **APQC Process Classification Framework® (PCF) — Cross-Industry, v8.0** *(authoritative for BP-10 through BP-120 plus BP-370)*. APQC-published taxonomy with 13 top-level categories, 74 BP2 (Process Groups), and 362 BP3 (Processes). The local catalogue is **fully re-authored from the official v8.0 Excel `Combined` sheet** (K016808, generated 2026-02-25) — names (Title-Cased), descriptions, and `framework_refs.external_id` codes all sourced verbatim from v8.0. Public summary: <https://www.apqc.org/process-frameworks>.
-- **Local id mapping:** APQC categories 1.0–12.0 map to local `BP-10`..`BP-120`; APQC category 13.0 maps to local `BP-370` (BP-130..BP-360 are taken by industry-specific BP1 files added in earlier PRs). The `framework_refs.external_id` is the authoritative cross-walk — a reader can pull the official APQC element by that id.
-- **Local id continuity:** wherever a v7.4-authored local BP node fuzzy-matched a v8.0 node by name, the local id was preserved so VS `process_ids` continued to resolve. Two cat-2 BP2 ids were absorbed by v8.0's simplification of category 2 and got re-routed via VS `process_ids` patch (BP-20.40 / BP-20.50 → BP-20.30 across 20 VS stages).
-- **realizes_capability_ids backfill:** 332 cross-industry BP nodes (43 BP2 + 289 BP3) had empty `realizes_capability_ids[]` after the v8.0 reauthor (because v8.0-only nodes didn't fuzzy-match any v7.4 node). They were filled by parent inheritance — each BP3 with no own realizes inherits its BP2 parent's realizes (or BP1's, walking up). Sensible default; specific nodes that should realise *additional* capabilities can be refined manually.
+The Cross-Industry BP layer is **generated from the BC catalogue and the VS catalogue**, not authored from APQC PCF or any other process taxonomy. Practitioners think in end-to-end value streams (Order-to-Cash, Procure-to-Pay, Hire-to-Retire) and the capabilities each stage exercises; the BP layer surfaces that model directly.
 
-##### Industry-specific PCFs at v8.0 — status
+Synthesis rules (encoded in the `/generate-process` skill):
+
+- **One BP1 per Cross-Industry value stream.** BP1 `name` is the VS bookend (`Order-to-Cash`, `Hire-to-Retire`). BP1 `realizes_capability_ids[]` is the deduped union of every stage's `capability_ids` for that VS.
+- **One BP2 per VS stage.** BP2 `name` mirrors the VS `stage_name`; `realizes_capability_ids[]` is the stage's `capability_ids` verbatim.
+- **3–7 BP3 activities per BP2.** BP3 names are verb-phrased operational activities derived by walking the realised BCs and choosing operational verbs that match the stage's bookend phase (e.g. *Capture Customer Order*, *Verify Customer Credit*, *Allocate Inventory to Order*, *Apply Customer Payment*). `realizes_capability_ids[]` points to the specific BC L2(s) the activity exercises.
+- **Depth stops at L3.** BPMN-level steps belong in diagrams.
+
+The 17 Cross-Industry BP1s occupy the sparse `BP-1000`..`BP-1160` range (kept disjoint from the `BP-130`..`BP-490` range used by industry-specific BP1s):
+
+| BP1 id | Name (= VS name) | Source VS | Primary framework anchor |
+|---|---|---|---|
+| BP-1000 | Order-to-Cash | VS-390 | APQC-PCF Cross-Industry (secondary cross-walk) |
+| BP-1010 | Procure-to-Pay | VS-420 | APQC-PCF + SCOR-S (Source) |
+| BP-1020 | Hire-to-Retire | VS-280 | SHRM-BoCK |
+| BP-1030 | Idea-to-Market | VS-290 | DCOR (ASCM Design Chain Operations Reference) |
+| BP-1040 | Plan-to-Inventory | VS-400 | SCOR-P (Plan) + SCOR-D (Deliver) |
+| BP-1050 | Prospect-to-Customer | VS-440 | APQC-PCF Marketing & Sales |
+| BP-1060 | Opportunity-to-Order | VS-380 | APQC-PCF Cross-Industry |
+| BP-1070 | Issue-to-Resolution | VS-310 | ITIL 4 Incident Management practice |
+| BP-1080 | Record-to-Report | VS-460 | APQC-PCF Finance |
+| BP-1090 | Acquire-to-Retire | VS-10 | ISO 55000 |
+| BP-1100 | Strategy-to-Execution | VS-580 | APQC-PCF Cross-Industry + TOGAF |
+| BP-1110 | Risk-to-Mitigation | VS-500 | COSO ERM 2017 + ISO 31000 |
+| BP-1120 | Audit-to-Action | VS-80 | IIA Standards |
+| BP-1130 | ESG-to-Disclosure | VS-200 | CSRD/ESRS + GRI + ISSB |
+| BP-1140 | Crisis-to-Recovery | VS-140 | ISO 22301 + NIST CSF Recover |
+| BP-1150 | Threat-to-Mitigation | VS-600 | NIST CSF + ISO 27001 |
+| BP-1160 | Discover-to-Automate | VS-150 | Process-mining / Lean |
+
+Properties of the regenerated layer:
+
+- **100% BC L1 coverage by construction.** Every Cross-Industry BC L1 is realised by at least one BP node (`npm run check:bc-coverage`).
+- **Aliases disabled by governance.** Each node has exactly one canonical name (§11.3). The schema still permits `aliases[]`; authors must not populate it.
+- **APQC-PCF retained as secondary cross-walk where structurally honest.** `framework_refs[]` may include `APQC-PCF` alongside the primary anchor so external tooling and historical cross-walks resolve, but APQC no longer drives Cross-Industry naming or structure.
+- **VS `process_ids` resolve into the regenerated tree.** Re-linking is automated by `npm run bp:relink-vs`.
+
+Industry-specific BP1s (the `BP-130`..`BP-490` range, minus the now-retired `BP-370`) are **out of scope** for this generator and remain anchored on their domain frameworks per the per-industry subsections below.
+
+##### Industry-specific PCFs — APQC release status
 
 As of 2026-05, APQC has released **v8.0 of the Cross-Industry PCF** (Feb 2026 release) but **industry-specific PCFs remain at v7.2.x**:
 
@@ -966,36 +1001,7 @@ As of 2026-05, APQC has released **v8.0 of the Cross-Industry PCF** (Feb 2026 re
 - Consumer Products PCF v7.2.x
 - Petroleum (Upstream / Downstream) PCFs v7.2
 
-When APQC publishes v8.0 industry PCFs, those releases can be re-authored into the catalogue using the same workflow as `reauthor_apqc_v8.py` (archived under `scripts/_archive/`): read the v8.0 Excel `Combined` sheet, fuzzy-match against existing local BP nodes by name, preserve local ids and `realizes_capability_ids`, re-emit each BP1 file. Until then, industry-specific BP1s (BP-130..BP-490 except BP-370) remain anchored on their currently-cited frameworks (BIAN, eTOM, ACORD, ICMM, ICAO, etc.) per the per-industry subsections above.
-
-#### Cross-industry primary-framework anchors per BP1
-
-APQC PCF Cross-Industry v8.0 is taxonomically complete but its naming is deliberately abstract — practitioners often look for nodes by the operational vernacular of their domain (e.g. *Order Fulfillment & Shipping*, *Credit Check*, *Incident Management*) and fail to find them under APQC labels like *Manage Logistics and Warehousing* or *Manage Customer Service*. To improve operational legibility while preserving the cross-industry coverage and id continuity, each Cross-Industry BP1 designates a **primary framework** whose vernacular drives node naming. APQC-PCF is retained as a **secondary** `framework_refs` entry on every Cross-Industry BP node so existing tooling, value-stream `process_ids`, and consumer cross-walks continue to resolve.
-
-Rules:
-
-- **Primary framework drives `name` and `description`.** Names still obey §11.3 (verb-phrased Title Case, 2–5 words).
-- **APQC retained as secondary cross-walk.** Every Cross-Industry BP node carries the original APQC `framework_refs` entry alongside the primary; the primary entry is listed first.
-- **IDs are stable.** Renames never change `BP-...` ids; sparse 10/20/30 numbering is preserved. Structural moves (where the chosen framework's grouping diverges from APQC's) use `bp:mv` so `metadata.replaces` records the prior id.
-- **Aliases capture common-language synonyms.** Where a node's framework label still differs from how practitioners search (e.g. *Order Fulfilment & Shipping* vs. SCOR's *Deliver*), add the operational name to `aliases[]`.
-
-| BP1 | Local L1 name | Primary framework | Secondary cross-walks |
-|---|---|---|---|
-| BP-10 | Develop Vision and Strategy | APQC-PCF Cross-Industry v8.0 | TOGAF (where strategy-to-architecture linkage is modelled) |
-| BP-20 | Develop and Manage Products and Services | DCOR (ASCM Design Chain Operations Reference) | APQC-PCF, industry PCF where applicable |
-| BP-30 | Market and Sell Products and Services | APQC-PCF Retail v7.2.1 + Consumer Products v7.2.x | APQC-PCF Cross-Industry |
-| BP-40 | Manage Supply Chain for Physical Products | SCOR DS (Plan/Source/Make/Deliver/Return/Enable) | APQC-PCF |
-| BP-50 | Deliver Services | ITIL 4 Service Value Chain | APQC-PCF |
-| BP-60 | Manage Customer Service | APQC-PCF Cross-Industry (light vernacular pass) | — |
-| BP-70 | Develop and Manage Human Resources | SHRM-BoCK | APQC-PCF HR |
-| BP-80 | Manage Information Technology (IT) | ITIL 4 practices | APQC-PCF IT, COBIT 2019 |
-| BP-90 | Manage Financial Resources | APQC-PCF Finance + Order-to-Cash / Procure-to-Pay vernacular | APQC-PCF Cross-Industry, COSO-ERM |
-| BP-100 | Acquire, Construct, and Manage Assets | ISO 55000 | APQC-PCF |
-| BP-110 | Manage Enterprise Risk, Compliance, Remediation, and Resiliency | COSO-ERM 2017 + ISO 31000 | APQC-PCF |
-| BP-120 | Manage External Relationships | APQC-PCF Cross-Industry | — |
-| BP-370 | Develop and Manage Business Capabilities | TOGAF / BIZBOK | APQC-PCF |
-
-The realignment is executed BP1-by-BP1 in PRs that (a) rewrite `name`/`description` toward the primary framework's vernacular, (b) prepend the primary framework to `framework_refs[]` with its native `external_id`, (c) add `aliases[]` for operational synonyms, and (d) preserve all `realizes_capability_ids` and ids. See [`schema/business-process.schema.json`](schema/business-process.schema.json) for the full `framework` enum (15 frameworks: APQC-PCF, BIAN, eTOM, ITIL, SCOR, DCOR, COBIT, SHRM-BoCK, ISO-55000, ISO-31000, COSO-ERM, TOGAF, BIZBOK, ACORD, ICMM).
+These are referenced by industry-specific BP1s (`BP-130`..`BP-490` except `BP-370`) via `framework_refs[]` alongside BIAN, eTOM, ACORD, ICMM, ICAO and other domain anchors per the per-industry subsections below. See [`schema/business-process.schema.json`](schema/business-process.schema.json) for the full `framework` enum (15 frameworks: APQC-PCF, BIAN, eTOM, ITIL, SCOR, DCOR, COBIT, SHRM-BoCK, ISO-55000, ISO-31000, COSO-ERM, TOGAF, BIZBOK, ACORD, ICMM).
 
 #### Banking & Capital Markets
 

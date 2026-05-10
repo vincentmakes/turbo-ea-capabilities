@@ -28,11 +28,11 @@ An open-source Business Architecture Reference Catalogue with **three orthogonal
 ## Invariants — business processes (BP-)
 
 - **Source of truth:** `catalogue/processes/BP1-<slug>.yaml` (one file per Category), indexed in `catalogue/processes/_index.yaml`. Schema: `schema/business-process.schema.json`.
-- **ID format:** `BP-<L1>[.<L2>[.<L3>[.<L4>]]]` mirroring BC. Max depth **L4** (Category → Group → Process → Activity per APQC PCF). BPMN-level steps belong in diagrams, not the catalogue.
+- **ID format:** `BP-<L1>[.<L2>[.<L3>[.<L4>]]]` mirroring BC. Cross-Industry BP1s live in the sparse `BP-1000`..`BP-1160` range (one BP1 per Cross-Industry value stream, generated from BC + VS); industry-specific BP1s use `BP-130`..`BP-490`. Max depth **L4** (Category → Group → Process → Activity); Cross-Industry BPs stop at L3 by construction. BPMN-level steps belong in diagrams, not the catalogue.
 - **Naming is two-tier:** BP1 roots aligned to a value stream use the VS bookend name verbatim (*Order-to-Cash*, *Hire-to-Retire*, *Procure-to-Pay*). BP2/BP3/BP4 names are verb-phrased operational activities (*Capture Customer Order*, *Verify Customer Credit*, *Allocate Inventory to Order*). One canonical name per node; **aliases are disabled by governance** — do not author them.
 - **Industry tag:** same scheme as capabilities. BC L1 industry vocabulary is the master list.
 - **`realizes_capability_ids`** is the single source of truth for the BC↔BP link; the reverse `Capability.realizes_processes` is derived at build time.
-- **`framework_refs`** for structured cross-walks to APQC-PCF, BIAN, eTOM, ITIL, SCOR, DCOR, COBIT, SHRM-BoCK, ISO-55000, ISO-31000, COSO-ERM, TOGAF, BIZBOK, ACORD, ICMM. Multiple entries per node are expected — pin a primary framework whose vernacular drives the node's name, and retain APQC-PCF as a secondary cross-walk on Cross-Industry BPs for continuity. Used alongside (not instead of) the free-form `references[]` URI list.
+- **`framework_refs`** for structured cross-walks to APQC-PCF, BIAN, eTOM, ITIL, SCOR, DCOR, COBIT, SHRM-BoCK, ISO-55000, ISO-31000, COSO-ERM, TOGAF, BIZBOK, ACORD, ICMM. Cross-Industry BPs are no longer authored from APQC PCF — they are generated from BC + VS — but APQC-PCF can still be cited as a secondary cross-walk where structurally honest. Industry-specific BPs anchor on their domain framework (BIAN for banking, eTOM for telco, ACORD for insurance, ICMM for mining, the relevant APQC industry PCF, etc.). Used alongside (not instead of) the free-form `references[]` URI list.
 
 ## Translations — sidecar invariants
 
@@ -94,7 +94,7 @@ The CLI scripts under `scripts/cli/` preserve YAML formatting and compute next I
 ## Skills available in this repo
 
 - `/generate-capability` — draft new L1s or extend existing ones with MECE L2/L3 trees, industry-aware references, and metadata. Drives `cap:add` for ID safety.
-- `/generate-process` — draft new BP1 process trees with MECE structure, APQC PCF alignment, and `framework_refs`. Drives `bp:add`.
+- `/generate-process` — synthesise a Cross-Industry BP1 from a value stream and the capabilities its stages exercise (or extend an existing BP1 with a new stage). Generates BP2 = stage, BP3 = verb-phrased activities; populates `realizes_capability_ids` and `framework_refs`. Drives `bp:bootstrap-bp1` and `bp:add`.
 - `/generate-value-stream` — propose new value streams with stages linked to capabilities and (optionally) processes. Drives `vs:add` / `vs:add-stage`.
 - `/map-value-streams` — legacy alias for value-stream mapping; superseded by `/generate-value-stream`.
 - `/translate-language` — generate or refresh sidecar translations under `catalogue/i18n/<locale>/`. Handles all three kinds (capability, business-process, value-stream).
