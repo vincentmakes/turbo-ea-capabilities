@@ -1,0 +1,274 @@
+id: BP-1040
+name: Plan-to-Inventory
+level: 1
+industry: Cross-Industry
+description: >-
+  Demand and supply planning cycle that positions inventory at the
+  right place, time, and quantity. Six BP2s mirror VS-400 stages from
+  demand planning through S&OP reconciliation, inventory positioning,
+  replenishment, and ongoing inventory-health monitoring.
+framework_refs:
+  - framework: SCOR
+    external_id: sP
+    version: "14.0"
+realizes_capability_ids:
+  - BC-230
+  - BC-400
+  - BC-520
+  - BC-530
+  - BC-1000
+  - BC-1930
+  - BC-2300
+  - BC-2460
+  - BC-2600
+  - BC-2610
+  - BC-2850
+  - BC-3410
+  - BC-3440
+  - BC-3500
+  - BC-3510
+  - BC-3520
+  - BC-3560
+  - BC-3580
+  - BC-4420
+  - BC-4430
+  - BC-4440
+  - BC-4450
+  - BC-4480
+  - BC-4620
+  - BC-4680
+children:
+  - id: BP-1040.10
+    name: Demand Planning
+    level: 2
+    description: Build the consensus demand forecast from history, market signals, sales pipeline, and promotion plans.
+    realizes_capability_ids:
+      - BC-400
+      - BC-520
+      - BC-2300
+      - BC-2610
+      - BC-3440
+    children:
+      - id: BP-1040.10.10
+        name: Build Statistical Forecast
+        level: 3
+        description: Run statistical forecasting models on demand history at the chosen aggregation level; track forecast error.
+        realizes_capability_ids:
+          - BC-520
+          - BC-2300
+        children: []
+      - id: BP-1040.10.20
+        name: Incorporate Sales and Marketing Inputs
+        level: 3
+        description: Layer in sales-pipeline signal, promotion calendars, and product-launch plans to adjust the statistical baseline.
+        realizes_capability_ids:
+          - BC-400
+          - BC-2610
+        children: []
+      - id: BP-1040.10.30
+        name: Reconcile Demand Forecast
+        level: 3
+        description: Reconcile bottom-up and top-down demand forecasts; lock the consensus forecast for the planning horizon.
+        realizes_capability_ids:
+          - BC-520
+          - BC-3440
+        children: []
+  - id: BP-1040.20
+    name: Supply Planning
+    level: 2
+    description: Plan supply to meet demand — production, sourcing, distribution — within capacity, lead-time, and material constraints.
+    realizes_capability_ids:
+      - BC-520
+      - BC-1000
+      - BC-1930
+      - BC-3410
+      - BC-3500
+      - BC-3510
+      - BC-3520
+      - BC-3580
+      - BC-4420
+      - BC-4430
+      - BC-4440
+      - BC-4450
+      - BC-4620
+    children:
+      - id: BP-1040.20.10
+        name: Plan Production Schedule
+        level: 3
+        description: Build the master production schedule against capacity, materials, and labour; resolve constraint conflicts.
+        realizes_capability_ids:
+          - BC-520
+          - BC-3500
+        children: []
+      - id: BP-1040.20.20
+        name: Plan Materials Supply
+        level: 3
+        description: Plan material requirements (MRP) — raw, components, packaging — against the production schedule and supplier lead times.
+        realizes_capability_ids:
+          - BC-520
+          - BC-3510
+          - BC-3520
+        children: []
+      - id: BP-1040.20.30
+        name: Plan Distribution Network Flow
+        level: 3
+        description: Plan inventory flow across the distribution network (DRP) — DC-to-DC, DC-to-store, cross-dock — to position stock close to demand.
+        realizes_capability_ids:
+          - BC-3410
+          - BC-3580
+          - BC-4620
+        children: []
+      - id: BP-1040.20.40
+        name: Resolve Supply Constraints
+        level: 3
+        description: Surface supply gaps against demand; rebalance via expedites, alternates, allocations, or demand-shaping in S&OP.
+        realizes_capability_ids:
+          - BC-1000
+          - BC-1930
+          - BC-4420
+          - BC-4430
+          - BC-4440
+          - BC-4450
+        children: []
+  - id: BP-1040.30
+    name: S&OP Reconciliation
+    level: 2
+    description: Run the integrated Sales & Operations Planning cycle — pre-S&OP, executive S&OP — to lock the integrated business plan.
+    realizes_capability_ids:
+      - BC-230
+      - BC-520
+    children:
+      - id: BP-1040.30.10
+        name: Run Pre-S&OP Review
+        level: 3
+        description: Run cross-functional pre-S&OP to align demand, supply, finance views; surface gaps and recommendations to executive S&OP.
+        realizes_capability_ids:
+          - BC-230
+          - BC-520
+        children: []
+      - id: BP-1040.30.20
+        name: Run Executive S&OP
+        level: 3
+        description: Run the executive S&OP to decide trade-offs (service vs cost, growth vs margin, portfolio rebalance) and lock the integrated plan.
+        realizes_capability_ids:
+          - BC-230
+          - BC-520
+        children: []
+      - id: BP-1040.30.30
+        name: Communicate Locked Plan
+        level: 3
+        description: Cascade the locked integrated business plan to functions; align downstream execution against the plan.
+        realizes_capability_ids:
+          - BC-520
+        children: []
+  - id: BP-1040.40
+    name: Inventory Positioning
+    level: 2
+    description: Set inventory targets and positioning — by SKU, location, channel — to balance service and working capital.
+    realizes_capability_ids:
+      - BC-530
+      - BC-2300
+      - BC-2460
+      - BC-2600
+      - BC-2850
+      - BC-3440
+      - BC-3560
+      - BC-4480
+      - BC-4680
+    children:
+      - id: BP-1040.40.10
+        name: Set Inventory Targets
+        level: 3
+        description: Set safety stock, cycle stock, and target stock by SKU/location based on service-level targets and demand variability.
+        realizes_capability_ids:
+          - BC-530
+          - BC-2300
+          - BC-2460
+        children: []
+      - id: BP-1040.40.20
+        name: Position Inventory in Network
+        level: 3
+        description: Place inventory across DCs, hubs, and forward stocking locations to match demand-network geometry.
+        realizes_capability_ids:
+          - BC-530
+          - BC-3440
+          - BC-3560
+        children: []
+      - id: BP-1040.40.30
+        name: Manage Inventory Mix and Allocation
+        level: 3
+        description: Allocate constrained inventory across customers, channels, and product variants per allocation rules.
+        realizes_capability_ids:
+          - BC-530
+          - BC-2600
+          - BC-2850
+          - BC-4480
+          - BC-4680
+        children: []
+  - id: BP-1040.50
+    name: Replenishment Execution
+    level: 2
+    description: Execute replenishment orders to maintain inventory at target levels across the network.
+    realizes_capability_ids:
+      - BC-530
+      - BC-2460
+    children:
+      - id: BP-1040.50.10
+        name: Generate Replenishment Orders
+        level: 3
+        description: Generate replenishment orders against inventory targets — purchase, transfer, or production orders.
+        realizes_capability_ids:
+          - BC-530
+          - BC-2460
+        children: []
+      - id: BP-1040.50.20
+        name: Expedite Critical Replenishments
+        level: 3
+        description: Expedite replenishments for stock-out risk or VIP customer commits; coordinate with supply and logistics.
+        realizes_capability_ids:
+          - BC-530
+        children: []
+      - id: BP-1040.50.30
+        name: Confirm Replenishment Receipt
+        level: 3
+        description: Confirm receipt of replenishment at the destination location and update inventory positions.
+        realizes_capability_ids:
+          - BC-530
+        children: []
+  - id: BP-1040.60
+    name: Inventory Health Monitoring
+    level: 2
+    description: Monitor inventory health — turnover, ageing, slow-and-obsolete — and act to maintain quality, value, and working capital.
+    realizes_capability_ids:
+      - BC-520
+      - BC-530
+      - BC-1930
+      - BC-2460
+      - BC-2600
+      - BC-4480
+    children:
+      - id: BP-1040.60.10
+        name: Monitor Inventory KPIs
+        level: 3
+        description: Track inventory turnover, days-on-hand, ageing, and stock-out events; surface anomalies for action.
+        realizes_capability_ids:
+          - BC-520
+          - BC-530
+          - BC-1930
+        children: []
+      - id: BP-1040.60.20
+        name: Manage Slow-Moving and Obsolete Stock
+        level: 3
+        description: Identify slow-moving and obsolete inventory; decide markdown, transfer, return-to-supplier, or write-off action.
+        realizes_capability_ids:
+          - BC-2460
+          - BC-2600
+          - BC-4480
+        children: []
+      - id: BP-1040.60.30
+        name: Conduct Cycle Counts and Audits
+        level: 3
+        description: Run cycle counts and physical inventory audits; reconcile counts to system records and post adjustments.
+        realizes_capability_ids:
+          - BC-530
+        children: []

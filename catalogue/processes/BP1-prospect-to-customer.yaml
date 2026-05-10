@@ -1,0 +1,309 @@
+id: BP-1050
+name: Prospect-to-Customer
+level: 1
+industry: Cross-Industry
+description: >-
+  End-to-end customer acquisition cycle from market and segment strategy
+  through brand, demand generation, lead capture, conversion, onboarding,
+  and ongoing retention and advocacy. One BP2 per VS-440 stage_name.
+framework_refs: []
+realizes_capability_ids:
+  - BC-400
+  - BC-410
+  - BC-420
+  - BC-430
+  - BC-850
+  - BC-1300
+  - BC-2110
+  - BC-2120
+  - BC-2360
+  - BC-2630
+  - BC-2640
+  - BC-3750
+  - BC-4040
+  - BC-4050
+  - BC-4260
+  - BC-4710
+  - BC-4800
+  - BC-4950
+  - BC-4960
+children:
+  - id: BP-1050.10
+    name: Market & Segment Strategy
+    level: 2
+    description: Define target markets and customer segments, and align go-to-market priorities to where the right-to-win is strongest.
+    realizes_capability_ids:
+      - BC-400
+      - BC-420
+    children:
+      - id: BP-1050.10.10
+        name: Analyse Market Landscape
+        level: 3
+        description: Size markets, profile competitors, and surface trends that shape demand and acquisition strategy.
+        realizes_capability_ids:
+          - BC-400
+        children: []
+      - id: BP-1050.10.20
+        name: Define Target Segments
+        level: 3
+        description: Define and prioritise target customer segments based on need, fit, and right-to-win.
+        realizes_capability_ids:
+          - BC-400
+          - BC-420
+        children: []
+      - id: BP-1050.10.30
+        name: Set Acquisition Priorities
+        level: 3
+        description: Translate segment priorities into acquisition targets — accounts, geographies, channels — for the planning horizon.
+        realizes_capability_ids:
+          - BC-400
+        children: []
+  - id: BP-1050.20
+    name: Brand & Positioning
+    level: 2
+    description: Develop and steward the brand, positioning, and messaging system used across all acquisition channels.
+    realizes_capability_ids:
+      - BC-400
+      - BC-850
+    children:
+      - id: BP-1050.20.10
+        name: Develop Brand Strategy
+        level: 3
+        description: Define brand promise, personality, architecture, and visual identity; align across markets and segments.
+        realizes_capability_ids:
+          - BC-400
+          - BC-850
+        children: []
+      - id: BP-1050.20.20
+        name: Develop Positioning and Messaging
+        level: 3
+        description: Develop positioning and messaging for each segment and offer; equip campaigns and sales with consistent narrative.
+        realizes_capability_ids:
+          - BC-400
+          - BC-850
+        children: []
+      - id: BP-1050.20.30
+        name: Steward Brand Assets
+        level: 3
+        description: Maintain brand guidelines, manage approvals on brand use, and govern visual and verbal identity in market.
+        realizes_capability_ids:
+          - BC-850
+        children: []
+  - id: BP-1050.30
+    name: Demand Generation
+    level: 2
+    description: Generate awareness and demand at scale through paid, owned, earned, and partner channels.
+    realizes_capability_ids:
+      - BC-400
+      - BC-2360
+      - BC-4710
+      - BC-4950
+      - BC-4960
+    children:
+      - id: BP-1050.30.10
+        name: Plan Demand Generation Campaigns
+        level: 3
+        description: Plan campaigns by segment, channel, and offer; allocate budget; set lead and pipeline targets.
+        realizes_capability_ids:
+          - BC-400
+          - BC-4710
+        children: []
+      - id: BP-1050.30.20
+        name: Execute Multi-Channel Campaigns
+        level: 3
+        description: Execute paid, owned, earned, and partner campaigns; manage creative, landing pages, and offers.
+        realizes_capability_ids:
+          - BC-2360
+          - BC-4950
+          - BC-4960
+        children: []
+      - id: BP-1050.30.30
+        name: Measure Campaign Performance
+        level: 3
+        description: Measure reach, response, and pipeline impact by campaign and channel; iterate creative and spend.
+        realizes_capability_ids:
+          - BC-400
+        children: []
+  - id: BP-1050.40
+    name: Lead Capture & Nurture
+    level: 2
+    description: Capture inbound interest, enrich and score leads, and nurture them to sales-ready status.
+    realizes_capability_ids:
+      - BC-400
+      - BC-410
+      - BC-2110
+      - BC-3750
+      - BC-4710
+      - BC-4950
+      - BC-4960
+    children:
+      - id: BP-1050.40.10
+        name: Capture Inbound Leads
+        level: 3
+        description: Capture leads from forms, events, partner referrals, and inbound channels into the marketing automation platform.
+        realizes_capability_ids:
+          - BC-400
+          - BC-410
+        children: []
+      - id: BP-1050.40.20
+        name: Enrich and Score Leads
+        level: 3
+        description: Enrich with firmographic and behavioural data; score on fit and intent to identify sales-ready leads.
+        realizes_capability_ids:
+          - BC-2110
+          - BC-3750
+        children: []
+      - id: BP-1050.40.30
+        name: Nurture Leads
+        level: 3
+        description: Run nurture programmes — content, drip campaigns, retargeting — to advance leads toward sales-ready status.
+        realizes_capability_ids:
+          - BC-4710
+          - BC-4950
+          - BC-4960
+        children: []
+      - id: BP-1050.40.40
+        name: Hand Off Sales-Ready Leads
+        level: 3
+        description: Route sales-ready leads to sales for direct engagement; track conversion to opportunity.
+        realizes_capability_ids:
+          - BC-410
+        children: []
+  - id: BP-1050.50
+    name: Conversion
+    level: 2
+    description: Convert qualified leads into first orders or first subscriptions through sales engagement, trials, and offers.
+    realizes_capability_ids:
+      - BC-410
+      - BC-1300
+      - BC-2120
+      - BC-2640
+      - BC-3750
+      - BC-4710
+      - BC-4950
+      - BC-4960
+    children:
+      - id: BP-1050.50.10
+        name: Engage Prospect
+        level: 3
+        description: Run direct sales engagement, demos, and trials to build customer confidence and progress toward decision.
+        realizes_capability_ids:
+          - BC-410
+          - BC-1300
+        children: []
+      - id: BP-1050.50.20
+        name: Address Buyer Objections
+        level: 3
+        description: Surface and address objections — price, fit, security, integration — through evidence and trial.
+        realizes_capability_ids:
+          - BC-410
+          - BC-2640
+        children: []
+      - id: BP-1050.50.30
+        name: Offer and Close First Deal
+        level: 3
+        description: Construct a first-deal offer, negotiate terms, and capture the first order or subscription.
+        realizes_capability_ids:
+          - BC-410
+          - BC-3750
+          - BC-4710
+        children: []
+      - id: BP-1050.50.40
+        name: Track Conversion Funnel
+        level: 3
+        description: Track lead-to-customer conversion by segment, channel, and offer; iterate on the funnel.
+        realizes_capability_ids:
+          - BC-2120
+          - BC-4950
+          - BC-4960
+        children: []
+  - id: BP-1050.60
+    name: Customer Onboarding
+    level: 2
+    description: Onboard new customers — provisioning, training, success planning — to accelerate time-to-value.
+    realizes_capability_ids:
+      - BC-420
+      - BC-1300
+      - BC-2120
+      - BC-2640
+      - BC-3750
+      - BC-4040
+      - BC-4050
+      - BC-4260
+      - BC-4710
+    children:
+      - id: BP-1050.60.10
+        name: Welcome New Customer
+        level: 3
+        description: Run the welcome experience — kickoff, named contacts, success plan — to set expectations and energy.
+        realizes_capability_ids:
+          - BC-420
+          - BC-4710
+        children: []
+      - id: BP-1050.60.20
+        name: Provision Customer
+        level: 3
+        description: Provision the customer in delivery systems — accounts, entitlements, integrations, data migration.
+        realizes_capability_ids:
+          - BC-1300
+          - BC-2640
+          - BC-4040
+          - BC-4050
+        children: []
+      - id: BP-1050.60.30
+        name: Train Customer Users
+        level: 3
+        description: Train customer users on the product or service; certify champions; record into success plan milestones.
+        realizes_capability_ids:
+          - BC-2120
+          - BC-3750
+        children: []
+      - id: BP-1050.60.40
+        name: Confirm Time-to-Value
+        level: 3
+        description: Validate that the customer has reached first-value milestones; capture for retention scoring.
+        realizes_capability_ids:
+          - BC-420
+          - BC-4260
+        children: []
+  - id: BP-1050.70
+    name: Retention & Advocacy
+    level: 2
+    description: Retain customers, drive renewal and expansion, and turn promoters into advocates and references.
+    realizes_capability_ids:
+      - BC-420
+      - BC-430
+      - BC-2120
+      - BC-2630
+      - BC-3750
+      - BC-4260
+      - BC-4800
+      - BC-4950
+    children:
+      - id: BP-1050.70.10
+        name: Run Customer Health Scoring
+        level: 3
+        description: Score customer health from product usage, engagement, and feedback signals; surface at-risk accounts for intervention.
+        realizes_capability_ids:
+          - BC-420
+          - BC-2120
+          - BC-2630
+        children: []
+      - id: BP-1050.70.20
+        name: Drive Renewal and Expansion
+        level: 3
+        description: Run the renewal motion and identify expansion opportunities — cross-sell, upsell — within the account.
+        realizes_capability_ids:
+          - BC-430
+          - BC-3750
+          - BC-4260
+        children: []
+      - id: BP-1050.70.30
+        name: Cultivate Advocacy
+        level: 3
+        description: Identify promoters, capture references, case studies, and testimonials; activate advocacy programmes.
+        realizes_capability_ids:
+          - BC-420
+          - BC-4800
+          - BC-4950
+        children: []
