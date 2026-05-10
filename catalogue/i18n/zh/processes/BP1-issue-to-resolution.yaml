@@ -4,58 +4,58 @@ source: BP1-issue-to-resolution.yaml
 entries:
   BP-1070:
     name: "事件到解决"
-    source_hash: sha256-b983a0971b80b34a
+    description: "通用的事件与问题处理循环,涵盖捕获、调查、解决和经验萃取。适用于客户服务、IT、安全、合规、审计和运营风险等场景——VS-310中的行业特定变体在此归并为四个逻辑阶段。"
   BP-1070.10:
     name: "事件捕获"
-    source_hash: sha256-093e28b2aff5be18
+    description: "通过任意渠道捕获事故、投诉、缺陷、未遂事件和审计发现;以结构化元数据持久化。"
   BP-1070.10.10:
     name: "接收事件"
-    source_hash: sha256-6677adae952fc44a
+    description: "将来自源渠道(客户、员工、系统、监管机构、审计)的事件接入事件管理系统。"
   BP-1070.10.20:
     name: "分类事件"
-    source_hash: sha256-cba5705b5f9d810f
+    description: "按类型、严重性、业务影响及受影响服务或资产对事件分类;路由至正确队列。"
   BP-1070.10.30:
-    name: "向报告人致谢"
-    source_hash: sha256-a717b2fcc19577ea
+    name: "向报告人确认接收"
+    description: "向报告人确认接收,告知案件编号和预计响应节奏。"
   BP-1070.10.40:
     name: "触发重大事件协议"
-    source_hash: sha256-87779e038caf7086
+    description: "对高严重性事件触发重大事件或危机协议——指挥官、war-room、升级路径。"
   BP-1070.20:
     name: "调查"
-    source_hash: sha256-9a76413da5babd6b
+    description: "调查事件——收集证据、运行诊断、识别根因并评估影响。"
   BP-1070.20.10:
     name: "收集证据"
-    source_hash: sha256-f1889e0eb572f35a
+    description: "收集与事件相关的日志、陈述、样本及其他证据;持久化至案件档案。"
   BP-1070.20.20:
-    name: "诊断根本原因"
-    source_hash: sha256-efd298ee1737914c
+    name: "诊断根因"
+    description: "应用根因分析方法(5 Whys、故障树、鱼骨图)识别主因与共因。"
   BP-1070.20.30:
     name: "评估影响"
-    source_hash: sha256-537fbed4ced3fa38
+    description: "评估事件及拟解决路径对客户、财务、监管、安全和声誉的影响。"
   BP-1070.30:
     name: "解决"
-    source_hash: sha256-b5d47b41164583bf
+    description: "解决事件——恢复服务、补救伤害、沟通并关闭案件。"
   BP-1070.30.10:
     name: "应用临时方案"
-    source_hash: sha256-f14e89ff6d03d050
+    description: "应用workaround以恢复服务或控制伤害,同时开发永久修复。"
   BP-1070.30.20:
     name: "实施永久修复"
-    source_hash: sha256-9c9fe4ea00149e05
+    description: "通过变更管理开发并部署永久纠正措施;验证修复效果。"
   BP-1070.30.30:
     name: "传达解决结果"
-    source_hash: sha256-9120ad28b948233e
+    description: "向报告人、受影响客户、必要时的监管机构以及内部利益相关者传达解决结果。"
   BP-1070.30.40:
-    name: "关闭工单"
-    source_hash: sha256-21993740429b4490
+    name: "关闭案件"
+    description: "确认报告人满意度;以完整审计轨迹及CSAT或同等评分关闭案件。"
   BP-1070.40:
-    name: "经验教训"
-    source_hash: sha256-ecad8d3fe25fecc6
+    name: "经验萃取"
+    description: "从案件中萃取经验,推动系统性预防措施,并改进解决能力。"
   BP-1070.40.10:
-    name: "进行事件后复盘"
-    source_hash: sha256-afac791cac610cae
+    name: "执行事后复盘"
+    description: "执行无指责事后复盘;采集做得好的、做得不足的及需要改变的内容。"
   BP-1070.40.20:
     name: "推动预防措施"
-    source_hash: sha256-1cc2a76473435e62
+    description: "开立并跟踪预防措施(系统、流程、培训);以证据确认关闭。"
   BP-1070.40.30:
     name: "更新知识库"
-    source_hash: sha256-06c8c470a3324f6e
+    description: "用新证据更新知识库、runbook和决策规则,以加速未来解决。"

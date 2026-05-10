@@ -4,79 +4,79 @@ source: BP1-plan-to-inventory.yaml
 entries:
   BP-1040:
     name: "计划到库存"
-    source_hash: sha256-5f3fe8d72d009682
+    description: "需求与供应规划循环,将库存定位至正确的地点、时间和数量。六个BP2对应VS-400各阶段——从需求规划到S&OP整合,再到库存定位、补货以及持续的库存健康监控。"
   BP-1040.10:
-    name: "需求计划"
-    source_hash: sha256-e5ff0b3a843d784c
+    name: "需求规划"
+    description: "基于历史、市场信号、销售管线和促销计划构建共识需求预测。"
   BP-1040.10.10:
     name: "构建统计预测"
-    source_hash: sha256-a13b25758934520a
+    description: "在选定的聚合层级对需求历史运行统计预测模型;跟踪预测误差。"
   BP-1040.10.20:
-    name: "纳入销售与市场输入"
-    source_hash: sha256-88973e710b73199f
+    name: "纳入销售与营销输入"
+    description: "叠加销售管线信号、促销日历及产品上市计划,以调整统计基线。"
   BP-1040.10.30:
-    name: "对齐需求预测"
-    source_hash: sha256-ba75edf4bc320284
+    name: "整合需求预测"
+    description: "整合自下而上与自上而下的需求预测;为规划周期锁定共识预测。"
   BP-1040.20:
-    name: "供应计划"
-    source_hash: sha256-bbc57302462ff965
+    name: "供应规划"
+    description: "在产能、提前期和物料约束下规划供应——生产、采购、配送——以满足需求。"
   BP-1040.20.10:
     name: "规划生产排程"
-    source_hash: sha256-ab96b55b9b9df1e4
+    description: "对照产能、物料和人工构建主生产计划(MPS);解决约束冲突。"
   BP-1040.20.20:
     name: "规划物料供应"
-    source_hash: sha256-b3e37b7570b8c203
+    description: "对照生产排程和供应商提前期规划物料需求(MRP)——原料、组件、包装。"
   BP-1040.20.30:
-    name: "规划分销网络流"
-    source_hash: sha256-2402e53a2757e94d
+    name: "规划配送网络流"
+    description: "在配送网络中规划库存流动(DRP)——DC对DC、DC对门店、越库——使库存贴近需求。"
   BP-1040.20.40:
     name: "解决供应约束"
-    source_hash: sha256-d44aa96dca72d51b
+    description: "浮现供应缺口;通过加急、替代、分配或在S&OP中进行需求塑形重新平衡。"
   BP-1040.30:
-    name: "S&OP对齐"
-    source_hash: sha256-a30cd60530049364
+    name: "S&OP整合"
+    description: "运行整合的销售与运营规划(S&OP)循环——pre-S&OP、executive S&OP——以锁定整合业务计划。"
   BP-1040.30.10:
-    name: "开展Pre-S&OP评审"
-    source_hash: sha256-6f884f8c6f6c0c9b
+    name: "运行Pre-S&OP评审"
+    description: "运行跨职能pre-S&OP以对齐需求、供应和财务视角;为executive S&OP浮现差距与建议。"
   BP-1040.30.20:
-    name: "开展高管S&OP"
-    source_hash: sha256-0410a63b32cc1146
+    name: "运行Executive S&OP"
+    description: "运行executive S&OP以决定权衡(服务vs成本、增长vs毛利、组合再平衡)并锁定整合计划。"
   BP-1040.30.30:
-    name: "宣贯锁定计划"
-    source_hash: sha256-d0ee8f3b86a2c73b
+    name: "传达已锁定计划"
+    description: "向各职能下达已锁定的整合业务计划;使下游执行与计划对齐。"
   BP-1040.40:
     name: "库存定位"
-    source_hash: sha256-a197c07d1dcb9836
+    description: "按SKU、库位、渠道设定库存目标与定位,以平衡服务水平与营运资本。"
   BP-1040.40.10:
     name: "设定库存目标"
-    source_hash: sha256-4d5a524a99dc1254
+    description: "依据服务水平目标和需求波动性,按SKU/库位设定安全库存、周期库存和目标库存。"
   BP-1040.40.20:
-    name: "在网络中布置库存"
-    source_hash: sha256-a6078f6970638338
+    name: "在网络中定位库存"
+    description: "在DC、枢纽和前置仓位中布置库存,以匹配需求网络的几何形态。"
   BP-1040.40.30:
-    name: "管理库存结构与分配"
-    source_hash: sha256-a3ca09e90dc76a66
+    name: "管理库存组合与分配"
+    description: "依据分配规则在客户、渠道和产品变体之间分配受限库存。"
   BP-1040.50:
     name: "补货执行"
-    source_hash: sha256-bd30b078b62f8103
+    description: "执行补货订单,使网络各处库存维持在目标水平。"
   BP-1040.50.10:
     name: "生成补货订单"
-    source_hash: sha256-c19d5a48aef8101e
+    description: "对照库存目标生成补货订单——采购订单、转储订单或生产订单。"
   BP-1040.50.20:
     name: "加急关键补货"
-    source_hash: sha256-67cf3347e5220114
+    description: "为缺货风险或VIP客户承诺加急补货;与供应和物流协同。"
   BP-1040.50.30:
     name: "确认补货收货"
-    source_hash: sha256-8574c3ad10ebd359
+    description: "在目的地库位确认补货收货,并更新库存头寸。"
   BP-1040.60:
     name: "库存健康监控"
-    source_hash: sha256-a1195703dfa02d91
+    description: "监控库存健康——周转、账龄、呆滞——并采取行动以维持质量、价值和营运资本。"
   BP-1040.60.10:
-    name: "监控库存关键指标"
-    source_hash: sha256-8835c035ce713dbe
+    name: "监控库存KPI"
+    description: "跟踪库存周转、库存天数、账龄和缺货事件;浮现异常以采取行动。"
   BP-1040.60.20:
-    name: "管理慢动与呆滞库存"
-    source_hash: sha256-f2594c163d2a4ba7
+    name: "管理呆滞与过时库存"
+    description: "识别呆滞与过时库存;决定降价、转储、退供应商或核销动作。"
   BP-1040.60.30:
-    name: "进行循环盘点与审计"
-    source_hash: sha256-907c97f895f23f64
+    name: "执行循环盘点与审计"
+    description: "执行循环盘点和实物盘点;将盘点与系统记录对账并过账调整。"

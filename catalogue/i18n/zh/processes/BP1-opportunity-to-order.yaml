@@ -4,94 +4,94 @@ source: BP1-opportunity-to-order.yaml
 entries:
   BP-1060:
     name: "商机到订单"
-    source_hash: sha256-8a1a0e6c41d58ca5
+    description: "售前企业销售循环,涵盖商机资格评定、解决方案范围界定、报价与配置、定价审批、提案、谈判、合同与订单录入,以及向履约环节的移交。每个BP2对应VS-380的一个stage_name。"
   BP-1060.10:
-    name: "商机资格化"
-    source_hash: sha256-cfcce898301b9f16
+    name: "商机资格评定"
+    description: "依据契合度、预算、决策权和时机评定商机资格;决定是否投入跟单资源。"
   BP-1060.10.10:
-    name: "登记商机"
-    source_hash: sha256-436ccbe744d04f49
+    name: "捕获商机"
+    description: "在CRM中采集商机及其来源、关注产品、目标关单时间和客户背景。"
   BP-1060.10.20:
-    name: "对商机进行资格化"
-    source_hash: sha256-0edf81b549f113b1
+    name: "评定商机资格"
+    description: "应用资格评定标准(BANT、MEDDIC或同等方法)验证契合度、预算、决策权、需求和时机。"
   BP-1060.10.30:
-    name: "构建跟进计划"
-    source_hash: sha256-05a81bb7581c5e2e
+    name: "构建跟单计划"
+    description: "决定跟单,构建客户计划与决策单元(DMU)地图,并组建跟单团队。"
   BP-1060.20:
-    name: "解决方案范围设定"
-    source_hash: sha256-3a1257e11aeb8669
+    name: "解决方案范围界定"
+    description: "发掘客户需求,并在商务和交付约束下界定满足这些需求的解决方案范围。"
   BP-1060.20.10:
-    name: "需求挖掘"
-    source_hash: sha256-e484ab7a698ed3a5
+    name: "发掘需求"
+    description: "执行需求发掘工作坊和访谈,采集功能性、非功能性和运营背景需求。"
   BP-1060.20.20:
     name: "设计解决方案"
-    source_hash: sha256-431bb2ccc1177c11
+    description: "将需求转化为候选解决方案——产品、服务、集成、配置。"
   BP-1060.20.30:
     name: "验证解决方案可行性"
-    source_hash: sha256-891b9f5af2c22958
+    description: "与交付、财务和风险方面验证解决方案的可行性、可交付性和可接受毛利。"
   BP-1060.30:
     name: "报价与配置"
-    source_hash: sha256-9985d7a00beac8c2
+    description: "使用产品配置器、定价规则和折扣框架,为客户配置定价方案。"
   BP-1060.30.10:
-    name: "配置解决方案套件"
-    source_hash: sha256-dbd0a6f8c05d9bfc
+    name: "配置解决方案组合"
+    description: "使用产品配置器从产品目录组件中编排定价组合。"
   BP-1060.30.20:
     name: "计算报价"
-    source_hash: sha256-acb8536573a9c904
+    description: "应用标价、合同折扣和税务规则,生成定价后的报价。"
   BP-1060.40:
     name: "定价与审批"
-    source_hash: sha256-ae9b5bc5a53cd4fb
+    description: "应用折扣与毛利治理;通过定价审批工作流路由;采集审批人决策。"
   BP-1060.40.10:
     name: "检查定价合规性"
-    source_hash: sha256-1a9666f3ca203856
+    description: "对照折扣、毛利和特别定价协议规则验证报价;标记例外。"
   BP-1060.40.20:
-    name: "走定价审批流程"
-    source_hash: sha256-5940523d16019a2e
+    name: "路由定价审批"
+    description: "通过折扣审批层级路由例外报价;采集决策、条件和依据。"
   BP-1060.50:
-    name: "提案撰写"
-    source_hash: sha256-c9cc2f984d49d0f4
+    name: "提案制作"
+    description: "制作正式提案或RFP响应;协调来自解决方案、法务、安全和交付的输入。"
   BP-1060.50.10:
     name: "撰写提案内容"
-    source_hash: sha256-1e95a476ce3a5f0e
+    description: "撰写提案叙事——执行摘要、解决方案、交付、商务、参考客户、条款。"
   BP-1060.50.20:
-    name: "协调专家输入"
-    source_hash: sha256-adc9e8e346581fb6
+    name: "协调SME输入"
+    description: "协调来自解决方案、法务、安全、财务和交付SME的输入并整合至提案。"
   BP-1060.50.30:
     name: "提交提案"
-    source_hash: sha256-0c91eafc652e43e7
+    description: "通过客户要求的渠道(RFP门户、邮件、当面递交)格式化、评审并提交提案。"
   BP-1060.60:
     name: "谈判"
-    source_hash: sha256-5b67248014901319
+    description: "与客户谈判商务与合同条款;解决未决议题直至达成接受。"
   BP-1060.60.10:
-    name: "进行商务谈判"
-    source_hash: sha256-e80a594858f1cbe0
+    name: "执行商务谈判"
+    description: "谈判价格、付款条款、量级承诺和商务让步。"
   BP-1060.60.20:
     name: "谈判合同条款"
-    source_hash: sha256-05e5b44465e6cf12
+    description: "与法务和客户法律顾问谈判法律条款——SLA、赔偿、IP、安全、数据。"
   BP-1060.60.30:
-    name: "解决遗留事项"
-    source_hash: sha256-460b5ec799c72c0d
+    name: "解决未决议题"
+    description: "跟踪并关闭所有未决议题——商务、技术、法律——直至客户准备签署。"
   BP-1060.70:
     name: "合同与订单录入"
-    source_hash: sha256-7e7532bf65be5538
+    description: "签署合同,录入订单,并触发下游开通、履约和收入确认。"
   BP-1060.70.10:
-    name: "签订合同"
-    source_hash: sha256-5dcd5cb7d7b77fc9
+    name: "签署合同"
+    description: "采集客户和授权签字人签名;持久化已签合同;关联到客户与订单。"
   BP-1060.70.20:
     name: "录入销售订单"
-    source_hash: sha256-9bfea8ca62d52534
+    description: "将已签合同转换为OMS中的正式销售订单;对照合同条款验证完整性。"
   BP-1060.70.30:
-    name: "与财务确认订单"
-    source_hash: sha256-0874878ede4057bd
+    name: "与财务确认录单"
+    description: "向财务确认录单以建立backlog、计费和收入确认设置;解决任何冻结。"
   BP-1060.80:
-    name: "向交付移交"
-    source_hash: sha256-acd76b2c5aac72c9
+    name: "向履约移交"
+    description: "将已录单订单移交给履约、交付或服务团队;为续约与销售形成闭环。"
   BP-1060.80.10:
-    name: "执行销售-交付移交"
-    source_hash: sha256-58ff5189568c4e64
+    name: "执行销售到交付移交"
+    description: "执行移交会议;将背景、成功标准和客户关系从销售转移到交付。"
   BP-1060.80.20:
-    name: "启动交付参与"
-    source_hash: sha256-a10e2ab2cb17661b
+    name: "建立交付项目"
+    description: "建立交付项目——立项、客户团队、成功计划——并确认kick-off就绪。"
   BP-1060.80.30:
-    name: "结束销售周期"
-    source_hash: sha256-024a3560b43944cb
+    name: "关闭销售周期"
+    description: "在CRM中关闭商机,采集赢单/失单原因,并触发佣金与续约跟踪工作流。"

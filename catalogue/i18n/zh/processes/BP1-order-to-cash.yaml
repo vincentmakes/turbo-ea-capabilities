@@ -4,139 +4,139 @@ source: BP1-order-to-cash.yaml
 entries:
   BP-1000:
     name: "订单到回款"
-    source_hash: sha256-02663879ffca2011
+    description: "端到端的收入循环,涵盖线索捕获、报价、合同与订单录入(含信用核查)、订单承诺与分配、生产或服务交付、出货物流、客户开票、回款收取与匹配、收入确认。每个BP2对应VS-390的一个阶段;BP3将工作分解为动词短语形式的运营活动。"
   BP-1000.10:
-    name: "潜客捕获与资格化"
-    source_hash: sha256-07bdfadef9990ed2
+    name: "线索捕获与资格评定"
+    description: "捕获潜在客户的兴趣,使用企业属性和行为数据进行丰富,基于理想客户画像标准进行评分,并将合格线索分派给销售团队。"
   BP-1000.10.10:
-    name: "捕获入站潜客"
-    source_hash: sha256-6454fcf6bc6781ce
+    name: "捕获入站线索"
+    description: "通过网页表单、活动、合作伙伴推荐或对外开发渠道接收潜在客户兴趣,并持久化为线索记录。"
   BP-1000.10.20:
-    name: "丰富潜客数据"
-    source_hash: sha256-a3dd161e93754dbc
+    name: "丰富线索数据"
+    description: "利用内部和第三方来源的企业属性、技术属性和行为数据扩充线索信息,以支持评分和分派。"
   BP-1000.10.30:
-    name: "评分并资格化潜客"
-    source_hash: sha256-f43020b741809658
+    name: "评分并评定线索资格"
+    description: "应用评分模型(契合度+意向)将线索评定为市场合格(MQL)或销售合格(SQL),或取消资格并回收。"
   BP-1000.10.40:
-    name: "将潜客分派至销售"
-    source_hash: sha256-7d6396d776187ec0
+    name: "将线索分派给销售"
+    description: "依据分派规则和SLA,将合格线索分配给相应的销售区域、角色或合作伙伴。"
   BP-1000.20:
     name: "报价与配置"
-    source_hash: sha256-d780b7ea12fbe2c2
+    description: "配置面向客户的解决方案,依据已批准的折扣规则定价,并发出客户可接受的报价。"
   BP-1000.20.10:
     name: "配置客户解决方案"
-    source_hash: sha256-20914cf9c10ff37d
+    description: "将客户需求转化为已配置的产品或服务组合,并对照产品目录验证兼容性与可行性。"
   BP-1000.20.20:
     name: "计算报价价格"
-    source_hash: sha256-b510e96248e28f82
+    description: "应用标价、合同折扣、促销、币种和税务规则,生成逐行报价总额。"
   BP-1000.20.30:
     name: "提交报价审批"
-    source_hash: sha256-c4f14a586af0b8e6
+    description: "当折扣或毛利超过阈值时,通过折扣与毛利审批工作流路由报价,并记录审批人决策。"
   BP-1000.20.40:
-    name: "向客户出具报价"
-    source_hash: sha256-423cb58f1e902201
+    name: "向客户发送报价"
+    description: "将经批准的报价连同条款、有效期和接受指引交付给客户;持续跟踪报价状态直至决策。"
   BP-1000.30:
     name: "合同与订单录入"
-    source_hash: sha256-4fcc590b0de143b0
+    description: "协商并签署合同、执行客户信用核查并录入正式销售订单。"
   BP-1000.30.10:
-    name: "谈判合同条款"
-    source_hash: sha256-0f2c1c373f9fbe2f
+    name: "协商合同条款"
+    description: "协商商务条款、服务级别、赔偿和责任;通过修订迭代直至双方达成一致。"
   BP-1000.30.20:
-    name: "核验客户信用"
-    source_hash: sha256-4bda1b0a655e43c1
+    name: "核实客户信用"
+    description: "对客户执行信用核查(内部信用历史+适用情况下的外部征信机构),设置或确认信用额度,并基于可用信用授权该订单。"
   BP-1000.30.30:
-    name: "签订合同"
-    source_hash: sha256-b1b33289faef6e20
+    name: "签署合同"
+    description: "采集客户和授权签字人签名,将已签署合同持久化至合同库,并触发下游订单录入。"
   BP-1000.30.40:
-    name: "录入客户订单"
-    source_hash: sha256-8a89509e24124861
+    name: "捕获客户订单"
+    description: "将已签合同或已接受报价转换为订单管理系统中的正式销售订单;在提交前验证完整性与可行性。"
   BP-1000.40:
     name: "订单承诺与分配"
-    source_hash: sha256-b00d1e0b79ab3dda
+    description: "承诺交付日期,分配库存或产能,并安排订单履约。"
   BP-1000.40.10:
-    name: "承诺交付日期"
-    source_hash: sha256-529e86dc01e814a6
+    name: "承诺订单交付日期"
+    description: "对照库存、供应和产能执行可承诺量(ATP)/可生产承诺(CTP)校验,以承诺客户可信赖的交付日期。"
   BP-1000.40.20:
-    name: "为订单分配库存"
-    source_hash: sha256-7c8ab755d52164f4
+    name: "向订单分配库存"
+    description: "为订单预留特定库存(批次、序列号、库位);在供应受限时解决分配冲突。"
   BP-1000.40.30:
     name: "预留生产产能"
-    source_hash: sha256-1312ab0f17c8f21d
+    description: "对于按订单制造或按订单装配,预留生产线和组件供应,以满足承诺日期。"
   BP-1000.40.40:
-    name: "将订单释放至履约"
-    source_hash: sha256-b0e3332507414bf6
+    name: "向履约环节释放订单"
+    description: "将已分配并已排程的订单连同所有路由指令移交给生产或仓库履约环节。"
   BP-1000.50:
-    name: "生产 / 服务交付"
-    source_hash: sha256-c778d7128a28f457
+    name: "生产/服务交付"
+    description: "执行生产工单或开展服务,以履约客户订单。"
   BP-1000.50.10:
     name: "下达生产工单"
-    source_hash: sha256-9c74e1005241f1cc
+    description: "针对已预留产能生成工单,包括BOM、工艺路线和质量检查点。"
   BP-1000.50.20:
     name: "执行按订单生产"
-    source_hash: sha256-7784055ee0d59778
+    description: "在计划生产线上按规范执行生产作业,记录人工、机器和物料消耗。"
   BP-1000.50.30:
     name: "向客户交付服务"
-    source_hash: sha256-c821d4e93a7b2fa7
+    description: "对于服务型订单,依据SOW执行项目交付,记录工时、里程碑和交付物。"
   BP-1000.50.40:
     name: "确认订单完成"
-    source_hash: sha256-898a3aa4a2d5049f
+    description: "通过质量签收关闭工单或服务项目;触发下游开票和收入确认。"
   BP-1000.60:
-    name: "出库物流"
-    source_hash: sha256-143fc0bf329859d2
+    name: "出货物流"
+    description: "拣货、打包并发运订单;管理出库运输并向客户确认送达。"
   BP-1000.60.10:
-    name: "拣货、包装并发运订单"
-    source_hash: sha256-66dce8504ab268b4
+    name: "拣货、打包与发运订单"
+    description: "拣选已分配库存,打包至可发运状态并附带相关单据,移交承运商。"
   BP-1000.60.20:
-    name: "管理出站运输"
-    source_hash: sha256-7da56889672fd0b0
+    name: "管理出库运输"
+    description: "规划运输、选择承运商、生成发运标签和报关单据,并发车出库。"
   BP-1000.60.30:
-    name: "追踪发货至客户"
-    source_hash: sha256-7e612f642846a332
+    name: "跟踪发运至客户"
+    description: "监控在途状态,处理异常(延迟、损坏、误送),并向客户保持信息透明。"
   BP-1000.60.40:
-    name: "确认客户签收"
-    source_hash: sha256-4235ba98e513e646
+    name: "确认客户收货"
+    description: "采集签收凭证(POD),关闭发运;在按交付计费场景下触发下游开票。"
   BP-1000.70:
     name: "客户开票"
-    source_hash: sha256-1a9cbab342c75127
+    description: "生成含税费与折扣的客户发票,通过客户偏好的渠道交付,并处理任何争议。"
   BP-1000.70.10:
     name: "生成客户发票"
-    source_hash: sha256-015419e91094b20b
+    description: "基于订单、交付和合同数据构建发票;在发出前校验完整性与算术准确性。"
   BP-1000.70.20:
     name: "应用税费与折扣"
-    source_hash: sha256-976c7ebd9885656f
+    description: "在发票行项上应用司法管辖区税费(VAT/GST/销售税)、预扣税及合同折扣。"
   BP-1000.70.30:
-    name: "向客户开具发票"
-    source_hash: sha256-b95e6fb74bd072ce
+    name: "向客户发送发票"
+    description: "通过客户偏好渠道(电子发票门户、EDI、邮件、纸质)交付发票,并保留审计轨迹。"
   BP-1000.70.40:
     name: "处理发票争议"
-    source_hash: sha256-c585e82bed2bfd3c
+    description: "接收、调查并解决客户对发票内容的争议;在合理情形下出具贷项通知或修订发票。"
   BP-1000.80:
-    name: "回款与核销"
-    source_hash: sha256-8d8f97ede9e3ceda
+    name: "回款收取与匹配"
+    description: "通过催款周期收取客户付款,将收款匹配到发票,并追讨逾期余额。"
   BP-1000.80.10:
     name: "发送付款提醒"
-    source_hash: sha256-a6b6ae3029528d87
+    description: "运行催款周期——在发票临近到期及逾期时按策略间隔自动发送提醒。"
   BP-1000.80.20:
-    name: "接收客户付款"
-    source_hash: sha256-ea2521d19092870f
+    name: "收取客户付款"
+    description: "通过客户选择的支付工具(电汇、ACH、信用卡、支票、电子支付)接收付款并持久化收款记录。"
   BP-1000.80.30:
-    name: "将付款核销至发票"
-    source_hash: sha256-39354d40e2fdce1d
+    name: "将付款匹配至发票"
+    description: "将收款与未结发票进行匹配,部分付款时按行项分配,并关闭对应应收款。"
   BP-1000.80.40:
     name: "管理客户催收"
-    source_hash: sha256-278d2b3138044a1c
+    description: "通过升级阶梯(催收员、催收机构、坏账核销/计提)追讨逾期余额。"
   BP-1000.90:
     name: "收入确认"
-    source_hash: sha256-89c091b122b13417
+    description: "依据适用会计准则(IFRS 15/ASC 606)确认已实现收入,递延未实现收入,并与子分类账对账。"
   BP-1000.90.10:
     name: "确认已实现收入"
-    source_hash: sha256-6662367ac5e86683
+    description: "应用IFRS 15/ASC 606五步法,在适当时点或合同期内确认收入。"
   BP-1000.90.20:
     name: "递延未实现收入"
-    source_hash: sha256-8d97df9e020fe229
+    description: "将已开票但尚未实现的金额计入递延收入科目,在履约义务履行时予以释放。"
   BP-1000.90.30:
-    name: "对账收入与子分类账"
-    source_hash: sha256-744e9c32a46a15e5
+    name: "收入与子分类账对账"
+    description: "将收入分类账与AR、订单/开票系统对账;在期末关账前解决差异。"
   BP-1000.90.40:
-    name: "报告收入业绩"
-    source_hash: sha256-6aaef44ce04968d1
+    name: "报告收入绩效"
+    description: "为管理层、财务关账和对外披露生成收入报告(已确认、递延、订单储备)。"

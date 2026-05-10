@@ -4,130 +4,130 @@ source: BP1-procure-to-pay.yaml
 entries:
   BP-1010:
     name: "采购到付款"
-    source_hash: sha256-441bb8b7fd59b66e
+    description: "端到端的供应商侧支出循环,涵盖需求识别、寻源、供应商选择、合同与采购订单、货物或服务接收、发票处理、付款、对账以及供应商绩效监控。每个BP2对应VS-420的一个stage_name。"
   BP-1010.10:
-    name: "需求识别与申请"
-    source_hash: sha256-bbc0873a1ff7d971
+    name: "需求识别与请购"
+    description: "捕获、验证并审批内部对货物或服务的需求,并将其转化为采购请购单。"
   BP-1010.10.10:
     name: "识别采购需求"
-    source_hash: sha256-66e41d54b5c4bea5
+    description: "捕获请购部门对货物或服务的业务需求,并确认已考虑内部替代方案。"
   BP-1010.10.20:
     name: "明确需求规格"
-    source_hash: sha256-3fd70cb209eafc8f
+    description: "将需求转化为清晰的规格说明——数量、质量、服务级别、交付约束——以供供应商报价。"
   BP-1010.10.30:
-    name: "提交采购申请"
-    source_hash: sha256-b0677f99d098cf47
+    name: "提交采购请购单"
+    description: "在采购系统中创建请购单,分配预算编码,并提交审批。"
   BP-1010.10.40:
-    name: "审批采购申请"
-    source_hash: sha256-8d4bdb1517b11a19
+    name: "审批采购请购单"
+    description: "通过支出授权层级路由请购单;记录审批人决策及拒绝原因。"
   BP-1010.20:
     name: "寻源"
-    source_hash: sha256-719e2b17612cca8c
+    description: "选择寻源策略,执行寻源活动(RFx),评估响应并授标。"
   BP-1010.20.10:
     name: "制定品类寻源策略"
-    source_hash: sha256-727cd2bf1bfe20b6
+    description: "确认品类策略——自制/外购、单/多源、地理约束——为本次寻源活动定调。"
   BP-1010.20.20:
-    name: "开展寻源事件"
-    source_hash: sha256-e735ccd3c4480991
+    name: "执行寻源活动"
+    description: "向合格供应商发出RFI/RFP/RFQ,管理问答(Q&A),并在截止前收集响应。"
   BP-1010.20.30:
     name: "评估供应商响应"
-    source_hash: sha256-af59b5fc1ba76ba3
+    description: "依据公布的评估标准——总体拥有成本、质量、产能、可持续性、风险——对响应进行打分。"
   BP-1010.20.40:
     name: "谈判寻源授标"
-    source_hash: sha256-b98f7d3de17963a7
+    description: "与入围供应商进行最优最终(BAFO)谈判轮次,最终确定授标决策与依据。"
   BP-1010.30:
-    name: "供应商选择与上线"
-    source_hash: sha256-683a9e61adb86dea
+    name: "供应商选择与导入"
+    description: "对中标供应商进行资格审核,执行风险与合规检查,并将其导入供应商主数据和运营系统。"
   BP-1010.30.10:
-    name: "开展供应商尽职调查"
-    source_hash: sha256-8ef50a47cb84a438
+    name: "执行供应商尽职调查"
+    description: "对中标供应商执行财务、监管、制裁、ESG和网络安全检查,并记录残余风险。"
   BP-1010.30.20:
-    name: "供应商资格化"
-    source_hash: sha256-f3331baf6022fbae
+    name: "供应商资格认证"
+    description: "确认供应商满足该品类的资格门槛——认证、保险、质量标准——再继续导入流程。"
   BP-1010.30.30:
     name: "建立供应商主数据"
-    source_hash: sha256-b7b66f5643b401ce
+    description: "在供应商主数据中持久化供应商的银行、税务、地址和联系信息,并执行相应的数据治理检查。"
   BP-1010.30.40:
-    name: "在运营系统中上线供应商"
-    source_hash: sha256-7fdaa28784925973
+    name: "将供应商接入运营系统"
+    description: "在P2P、EDI/门户及任何品类专用系统中开通供应商;对交易执行集成测试。"
   BP-1010.40:
     name: "合同与采购订单"
-    source_hash: sha256-3113e72df76ed62c
+    description: "签署供应商合同,并将经审批的请购单转换为供应商可履约的采购订单。"
   BP-1010.40.10:
     name: "谈判供应商合同"
-    source_hash: sha256-2c9256ddb544c554
+    description: "谈判商务、法律和运营条款——定价、SLA、赔偿、变更控制——并通过修订迭代直至签署。"
   BP-1010.40.20:
-    name: "签订供应商合同"
-    source_hash: sha256-4b716cff8ccb2b56
+    name: "签署供应商合同"
+    description: "采集授权签字,将已签合同持久化至合同库,并关联到供应商主数据。"
   BP-1010.40.30:
-    name: "下达采购订单"
-    source_hash: sha256-6a43283b2a09687a
+    name: "发出采购订单"
+    description: "将经审批的请购单(基于已签合同或一次性PO)转换为正式采购订单并发送给供应商。"
   BP-1010.40.40:
-    name: "管理采购订单变更"
-    source_hash: sha256-a94a0169b6c872df
+    name: "管理PO变更"
+    description: "通过PO变更控制工作流处理供应商或采购方发起的变更——数量、日期、价格。"
   BP-1010.50:
-    name: "货物或服务接收"
-    source_hash: sha256-aa4194c3a4173341
+    name: "货物/服务接收"
+    description: "接收货物或服务,对照PO核验数量与质量,并过账收货以供下游发票匹配。"
   BP-1010.50.10:
     name: "接收货物或服务"
-    source_hash: sha256-51f0892b82631e47
+    description: "在收货月台对货物进行实物收货,或对已交付服务进行完成签收,并采集签收凭证。"
   BP-1010.50.20:
     name: "检验数量与质量"
-    source_hash: sha256-46bf76cbcd12b15b
+    description: "核验数量、状况及与PO规格的符合性;对短缺情况开具不符合项报告。"
   BP-1010.50.30:
-    name: "登记收货"
-    source_hash: sha256-7935849d37adf90f
+    name: "过账收货"
+    description: "将收货过账至ERP,触发库存或费用确认,并使三方匹配成为可能。"
   BP-1010.50.40:
     name: "处理收货异常"
-    source_hash: sha256-c5539a1a7af33dee
+    description: "与供应商管理短缺、损坏或服务完成争议;在接受发票前商定调整。"
   BP-1010.60:
     name: "发票接收与核验"
-    source_hash: sha256-1ca657d8c9103c84
+    description: "接收供应商发票,对照PO和收货执行三方匹配,并解决差异。"
   BP-1010.60.10:
     name: "接收供应商发票"
-    source_hash: sha256-cc3184c35be1df6c
+    description: "通过电子发票、EDI、门户或纸质方式采集供应商发票;持久化时附带源系统元数据。"
   BP-1010.60.20:
-    name: "三方匹配发票、订单与收货"
-    source_hash: sha256-cf6eb77a135e2b0e
+    name: "发票与PO及收货匹配"
+    description: "对照PO和收货执行三方匹配;在付款授权前将异常路由至AP处理。"
   BP-1010.60.30:
-    name: "解决发票差异"
-    source_hash: sha256-e72235e3e615abcb
+    name: "处理发票差异"
+    description: "与采购方和供应商一起调查价格、数量或条款差异;在审批前记录贷项通知或调整。"
   BP-1010.60.40:
     name: "审批发票付款"
-    source_hash: sha256-3e4fc912913e5ef4
+    description: "通过任何必要的审批(CFO阈值、项目签收)路由已匹配发票,并授权付款。"
   BP-1010.70:
     name: "付款执行"
-    source_hash: sha256-4c0510057501fef2
+    description: "通过所选支付工具执行供应商付款,并向供应商发送付款通知。"
   BP-1010.70.10:
-    name: "排程付款批次"
-    source_hash: sha256-60937e6890ef6c0d
+    name: "安排付款批次"
+    description: "按到期日、币种和支付工具将已审批发票归集到付款批次;优化折扣捕获与浮存。"
   BP-1010.70.20:
     name: "执行付款"
-    source_hash: sha256-6b277f8f8fa00b9c
+    description: "通过电汇、ACH、虚拟卡、支票或电子支付方式支付;持久化司库银行确认信息。"
   BP-1010.70.30:
     name: "发送付款通知"
-    source_hash: sha256-e44fa0c5d23f05e2
+    description: "向供应商通报付款及逐行付款明细,以便其在AR中匹配未结款项。"
   BP-1010.80:
     name: "对账"
-    source_hash: sha256-1f90bbe4d421b275
+    description: "将AP子分类账与总账及银行对账,在期末关账前解决差异。"
   BP-1010.80.10:
     name: "AP与总账对账"
-    source_hash: sha256-7d8553b73cbbc050
+    description: "滚动AP子分类账并与GL控制科目对账,调查任何差异。"
   BP-1010.80.20:
     name: "付款与银行对账"
-    source_hash: sha256-196a279cd9183e28
+    description: "将付款批次与银行对账单匹配;调查未兑付支票、退回ACH、FX时差和银行手续费差异。"
   BP-1010.80.30:
     name: "解决对账差异"
-    source_hash: sha256-322c16848d9c70f8
+    description: "将差异追溯至根因——重复付款、过账错误、未匹配的供应商贷项——并过账更正分录。"
   BP-1010.90:
     name: "供应商绩效监控"
-    source_hash: sha256-2ebe5b6f74d11ea4
+    description: "依据合同SLA和KPI跟踪供应商绩效,运行计分卡,并管理纠正措施。"
   BP-1010.90.10:
-    name: "跟踪供应商关键指标"
-    source_hash: sha256-2940321cf7dfdec7
+    name: "跟踪供应商KPI"
+    description: "采集质量、按时交付、满足率和SLA达成的运营数据;持久化用于生成计分卡。"
   BP-1010.90.20:
-    name: "发放供应商记分卡"
-    source_hash: sha256-96a7a88808e2fe7a
+    name: "出具供应商计分卡"
+    description: "周期性向供应商及内部品类管理层出具并共享供应商计分卡;采集供应商反馈。"
   BP-1010.90.30:
     name: "管理供应商纠正措施"
-    source_hash: sha256-04248767aaf1f096
+    description: "对绩效不佳供应商开立、跟踪并关闭纠正行动计划;在持续违约时升级至合同救济。"

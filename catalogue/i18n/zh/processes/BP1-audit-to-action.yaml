@@ -4,67 +4,67 @@ source: BP1-audit-to-action.yaml
 entries:
   BP-1120:
     name: "审计到行动"
-    source_hash: sha256-78ba5fa747a3298e
+    description: "内部审计循环,涵盖审计宇宙规划、项目范围界定、外勤、发现、整改跟踪以及审计质量保证。每个BP2对应VS-80的一个stage_name。"
   BP-1120.10:
-    name: "审计范围与计划"
-    source_hash: sha256-052dfbb5301861aa
+    name: "审计宇宙与计划"
+    description: "维护审计宇宙并构建基于风险的年度审计计划。"
   BP-1120.10.10:
-    name: "维护审计范围库"
-    source_hash: sha256-c80bb421c22ca929
+    name: "维护审计宇宙"
+    description: "维护可审计实体的群体——流程、系统、地点、第三方。"
   BP-1120.10.20:
-    name: "制定基于风险的年度审计计划"
-    source_hash: sha256-641aa762dfc377f6
+    name: "构建基于风险的审计计划"
+    description: "依据风险加权从审计宇宙构建年度审计计划;取得审计委员会批准。"
   BP-1120.20:
-    name: "项目范围设定"
-    source_hash: sha256-379378e4cbe00ff2
+    name: "项目范围界定"
+    description: "界定审计项目的范围——目标、范围内控制、期间、资源。"
   BP-1120.20.10:
-    name: "确定审计目标"
-    source_hash: sha256-9db77920df093c01
+    name: "明确审计目标"
+    description: "明确审计目标、关键问题及项目中要应对的风险。"
   BP-1120.20.20:
     name: "规划审计程序"
-    source_hash: sha256-20c9befca109dbaa
+    description: "规划审计程序——穿行测试、抽样测试、分析——及所需证据。"
   BP-1120.30:
-    name: "现场工作"
-    source_hash: sha256-5397ca54ccad52ae
+    name: "外勤"
+    description: "执行审计外勤——收集证据、执行测试并撰写工作底稿。"
   BP-1120.30.10:
-    name: "走查流程"
-    source_hash: sha256-360facf431ae416c
+    name: "穿行流程"
+    description: "对范围内流程执行穿行以理解设计与关键控制;撰写叙述与流程图。"
   BP-1120.30.20:
     name: "测试控制与交易"
-    source_hash: sha256-984e0a2fd05bc625
+    description: "对设计和运行有效性执行抽样或全样本测试;撰写工作底稿。"
   BP-1120.30.30:
-    name: "运行审计分析"
-    source_hash: sha256-02da298d8bc68b3b
+    name: "执行审计分析"
+    description: "对全样本执行数据分析,以浮现异常、例外和模式。"
   BP-1120.30.40:
     name: "记录审计证据"
-    source_hash: sha256-ff668222fb905e5c
+    description: "在工作底稿中以交叉引用方式记录证据;必要时取得被审计方确认。"
   BP-1120.40:
     name: "发现与报告"
-    source_hash: sha256-882dae2ab975b4e0
+    description: "形成审计发现,商定管理层响应,并出具审计报告。"
   BP-1120.40.10:
     name: "形成审计发现"
-    source_hash: sha256-ec29da0b1405dcb1
+    description: "形成包含状况、标准、原因、后果和建议的审计发现。"
   BP-1120.40.20:
-    name: "约定管理层回应"
-    source_hash: sha256-d7f6c42262644426
+    name: "商定管理层响应"
+    description: "与被审计方商定管理层响应——接受、替代行动、争议——以及目标整改日期。"
   BP-1120.40.30:
-    name: "发布审计报告"
-    source_hash: sha256-7cb1bfa395b5139f
+    name: "出具审计报告"
+    description: "向执行发起人和审计委员会出具最终审计报告;关闭项目。"
   BP-1120.50:
     name: "整改跟踪"
-    source_hash: sha256-7d1a7c3bb67fc4f2
+    description: "跟踪管理层对发现的整改至关闭;在适用时通过复测验证。"
   BP-1120.50.10:
-    name: "跟踪整改进度"
-    source_hash: sha256-9d2ac6245533df68
+    name: "跟踪整改状态"
+    description: "对照整改计划跟踪未结审计发现、目标日期和管理层进展。"
   BP-1120.50.20:
     name: "验证关闭"
-    source_hash: sha256-fe5f854372d81622
+    description: "通过复测、证据审阅或后续审计验证发现的关闭;在跟踪器中关闭。"
   BP-1120.60:
     name: "审计质量保证"
-    source_hash: sha256-bcb7a79e6deadaa3
+    description: "对审计职能运行质量保证——工作底稿评审、同行评审、外部评估。"
   BP-1120.60.10:
-    name: "复核审计工作底稿"
-    source_hash: sha256-69e2e4705ce5c949
+    name: "评审审计工作底稿"
+    description: "对工作底稿和发现执行督导评审,确认证据充分且适当。"
   BP-1120.60.20:
-    name: "开展外部质量评估"
-    source_hash: sha256-dcbe505dd1a3c5cf
+    name: "执行外部质量评估"
+    description: "依据IIA标准对审计职能执行周期性外部质量评估。"
