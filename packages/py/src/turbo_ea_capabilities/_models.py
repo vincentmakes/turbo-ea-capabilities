@@ -115,7 +115,23 @@ class FrameworkRef(BaseModel):
 
     model_config = ConfigDict(frozen=True, extra="forbid")
 
-    framework: Literal["APQC-PCF", "BIAN", "eTOM", "ITIL", "SCOR"]
+    framework: Literal[
+        "APQC-PCF",
+        "BIAN",
+        "eTOM",
+        "ITIL",
+        "SCOR",
+        "DCOR",
+        "COBIT",
+        "SHRM-BoCK",
+        "ISO-55000",
+        "ISO-31000",
+        "COSO-ERM",
+        "TOGAF",
+        "BIZBOK",
+        "ACORD",
+        "ICMM",
+    ]
     external_id: str
     version: Optional[str] = None
     url: Optional[str] = None
