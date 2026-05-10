@@ -589,7 +589,8 @@ value_streams:
         stage_name: Audit & Inspection Readiness
         capability_ids:
           - BC-1540
-        process_ids: []
+        process_ids:
+          - BP-1080.70.20
         industry_variant: Pharma
         notes: PV audit
   - id: VS-30
@@ -635,7 +636,8 @@ value_streams:
         stage_name: Disbursement
         capability_ids:
           - BC-3230
-        process_ids: []
+        process_ids:
+          - BP-1010.70.20
         notes: Payment runs across bank, prepaid card, and in-kind channels
       - id: VS-30.60
         stage_order: 6
@@ -737,14 +739,16 @@ value_streams:
         stage_name: Documentation & Booking
         capability_ids:
           - BC-150
-        process_ids: []
+        process_ids:
+          - BP-1060.70
         notes: Loan agreement drafting
       - id: VS-40.90
         stage_order: 5
         stage_name: Documentation & Booking
         capability_ids:
           - BC-1320
-        process_ids: []
+        process_ids:
+          - BP-1060.70
         industry_variant: Banking
         notes: Loan booking
       - id: VS-40.100
@@ -752,7 +756,8 @@ value_streams:
         stage_name: Documentation & Booking
         capability_ids:
           - BC-4980
-        process_ids: []
+        process_ids:
+          - BP-1060.70
         industry_variant: Real Estate
         notes: CRE loan boarding and servicing setup
       - id: VS-40.110
@@ -760,7 +765,8 @@ value_streams:
         stage_name: Disbursement
         capability_ids:
           - BC-1340
-        process_ids: []
+        process_ids:
+          - BP-1010.70.20
         industry_variant: Banking
         notes: Payment initiation; Payment processing
       - id: VS-40.120
@@ -1259,7 +1265,8 @@ value_streams:
         stage_name: Media Plan Development
         capability_ids:
           - BC-3760
-        process_ids: []
+        process_ids:
+          - BP-1050.30.10
         industry_variant: Media & Entertainment
         notes: Multi-surface media plan, packaging, and pricing development
       - id: VS-100.40
@@ -1308,7 +1315,8 @@ value_streams:
         stage_name: Billing & Settlement
         capability_ids:
           - BC-3760
-        process_ids: []
+        process_ids:
+          - BP-1080.50.10
         industry_variant: Media & Entertainment
         notes: Advertiser and agency billing, agency-discount and commission settlement
   - id: VS-110
@@ -1449,21 +1457,24 @@ value_streams:
         capability_ids:
           - BC-2870
           - BC-200
-        process_ids: []
+        process_ids:
+          - BP-1000.80.30
         notes: ERA / EOB posting and contract variance analysis; Patient AR accounting and bank reconciliation
       - id: VS-120.60
         stage_order: 6
         stage_name: Patient Billing & Collections
         capability_ids:
           - BC-2870
-        process_ids: []
+        process_ids:
+          - BP-1000.70.30
         notes: Patient statements, payment plans, and collections
       - id: VS-120.70
         stage_order: 7
         stage_name: Underpayment Recovery
         capability_ids:
           - BC-2870
-        process_ids: []
+        process_ids:
+          - BP-1000.80.40
         notes: Underpayment identification and payer recovery actions
   - id: VS-130
     name: Concept-to-Manufacture
@@ -1480,7 +1491,8 @@ value_streams:
         stage_name: Concept Design
         capability_ids:
           - BC-3400
-        process_ids: []
+        process_ids:
+          - BP-1030.20
         industry_variant: Automotive
         notes: Vehicle concept and architecture
       - id: VS-130.20
@@ -1488,7 +1500,8 @@ value_streams:
         stage_name: Concept Design
         capability_ids:
           - BC-1900
-        process_ids: []
+        process_ids:
+          - BP-1030.20
         industry_variant: Electrical Components & Equipment
         notes: Concept-stage circuit & topology design
       - id: VS-130.30
@@ -1496,7 +1509,8 @@ value_streams:
         stage_name: Concept Design
         capability_ids:
           - BC-1120
-        process_ids: []
+        process_ids:
+          - BP-1030.20
         industry_variant: Engineering Services
         notes: Conceptual design
       - id: VS-130.40
@@ -1505,7 +1519,8 @@ value_streams:
         capability_ids:
           - BC-2000
           - BC-2010
-        process_ids: []
+        process_ids:
+          - BP-1030.20
         industry_variant: HVAC & Building Automation Systems
         notes: HVAC equipment concept-stage cycle & topology; BAS controller & supervisor concept
       - id: VS-130.50
@@ -1513,14 +1528,16 @@ value_streams:
         stage_name: FEED & Specification
         capability_ids:
           - BC-820
-        process_ids: []
+        process_ids:
+          - BP-1030.50.10
         notes: Product specification
       - id: VS-130.60
         stage_order: 2
         stage_name: FEED & Specification
         capability_ids:
           - BC-3400
-        process_ids: []
+        process_ids:
+          - BP-1030.50.10
         industry_variant: Automotive
         notes: Vehicle attribute and subsystem specification
       - id: VS-130.70
@@ -1528,7 +1545,8 @@ value_streams:
         stage_name: FEED & Specification
         capability_ids:
           - BC-1900
-        process_ids: []
+        process_ids:
+          - BP-1030.50.10
         industry_variant: Electrical Components & Equipment
         notes: Front-end electrical engineering
       - id: VS-130.80
@@ -1555,7 +1573,8 @@ value_streams:
         stage_name: Detailed Design
         capability_ids:
           - BC-3400
-        process_ids: []
+        process_ids:
+          - BP-1030.50.20
         industry_variant: Automotive
         notes: Multi-domain vehicle engineering
       - id: VS-130.110
@@ -1595,7 +1614,8 @@ value_streams:
         capability_ids:
           - BC-3400
           - BC-3420
-        process_ids: []
+        process_ids:
+          - BP-1030.50.40
         industry_variant: Automotive
         notes: ISO 26262 / 21434 / 21448 reviews; Type-approval readiness review
       - id: VS-130.150
@@ -1645,7 +1665,8 @@ value_streams:
         stage_name: Manufacturing Engineering
         capability_ids:
           - BC-820
-        process_ids: []
+        process_ids:
+          - BP-1030.70.20
         notes: Configuration / variants
       - id: VS-130.200
         stage_order: 5
@@ -1693,7 +1714,8 @@ value_streams:
         capability_ids:
           - BC-1000
           - BC-1010
-        process_ids: []
+        process_ids:
+          - BP-1030.70.20
         industry_variant: Manufacturing
         notes: Production planning; Shop floor execution
       - id: VS-130.250
@@ -1701,7 +1723,8 @@ value_streams:
         stage_name: Quality & Yield Stabilisation
         capability_ids:
           - BC-720
-        process_ids: []
+        process_ids:
+          - BP-1030.90.10
         notes: QC ramp-up
       - id: VS-130.260
         stage_order: 7
@@ -1719,7 +1742,8 @@ value_streams:
         capability_ids:
           - BC-3410
           - BC-3420
-        process_ids: []
+        process_ids:
+          - BP-1030.50.20
         industry_variant: Automotive
         notes: Vehicle programme configuration baseline at SOP; Type-approved configuration baseline
       - id: VS-130.280
@@ -2164,7 +2188,8 @@ value_streams:
         stage_name: Disruption Detection
         capability_ids:
           - BC-4080
-        process_ids: []
+        process_ids:
+          - BP-1070.10
         industry_variant: Airline
         notes: OCC detection of weather, mechanical, and ATC events
       - id: VS-170.20
@@ -2172,7 +2197,8 @@ value_streams:
         stage_name: Disruption Detection
         capability_ids:
           - BC-4090
-        process_ids: []
+        process_ids:
+          - BP-1070.10
         industry_variant: Cruise
         notes: Voyage-level detection of weather, medical, and port events
       - id: VS-170.30
@@ -2180,7 +2206,8 @@ value_streams:
         stage_name: Disruption Detection
         capability_ids:
           - BC-4100
-        process_ids: []
+        process_ids:
+          - BP-1070.10
         industry_variant: Tour
         notes: In-destination disruption detection by escort and operator
       - id: VS-170.40
@@ -2228,7 +2255,8 @@ value_streams:
         capability_ids:
           - BC-4040
           - BC-4020
-        process_ids: []
+        process_ids:
+          - BP-1070.30.30
         notes: Outbound disruption communications using traveller record and consent; Booking-level reaccommodation communications
       - id: VS-170.90
         stage_order: 5
@@ -2245,21 +2273,24 @@ value_streams:
         stage_name: Compensation Closure
         capability_ids:
           - BC-4020
-        process_ids: []
+        process_ids:
+          - BP-1070.30.40
         notes: Compensation eligibility determination and refund or voucher issuance
       - id: VS-170.110
         stage_order: 7
         stage_name: Post-Event Review
         capability_ids:
           - BC-4030
-        process_ids: []
+        process_ids:
+          - BP-1070.40.10
         notes: Revenue impact analysis and forecast adjustment
       - id: VS-170.120
         stage_order: 7
         stage_name: Post-Event Review
         capability_ids:
           - BC-4080
-        process_ids: []
+        process_ids:
+          - BP-1070.40.10
         industry_variant: Airline
         notes: Operational safety investigation support and lessons
   - id: VS-180
@@ -2422,7 +2453,8 @@ value_streams:
         stage_name: Billing & Realisation
         capability_ids:
           - BC-4330
-        process_ids: []
+        process_ids:
+          - BP-1000.70.10
         notes: Invoicing, WIP write-up/down, realisation tracking, and write-off control
       - id: VS-190.110
         stage_order: 7
@@ -2794,7 +2826,8 @@ value_streams:
         stage_name: Firmware Build & Sign
         capability_ids:
           - BC-1950
-        process_ids: []
+        process_ids:
+          - BP-1030.50.30
         notes: Firmware build pipelines, code signing, and artefact governance
       - id: VS-230.20
         stage_order: 2
@@ -2809,21 +2842,24 @@ value_streams:
         stage_name: Staged Rollout & Pilot
         capability_ids:
           - BC-1950
-        process_ids: []
+        process_ids:
+          - BP-1030.80.10
         notes: Canary rings, pilot fleets, and rollback gating
       - id: VS-230.40
         stage_order: 4
         stage_name: OTA Distribution
         capability_ids:
           - BC-1950
-        process_ids: []
+        process_ids:
+          - BP-1030.80.10
         notes: Over-the-air delivery, device-side update orchestration, and verification
       - id: VS-230.50
         stage_order: 5
         stage_name: Field Telemetry & Health
         capability_ids:
           - BC-1950
-        process_ids: []
+        process_ids:
+          - BP-1030.80.10
         notes: Device telemetry ingestion and fleet health monitoring
       - id: VS-230.60
         stage_order: 6
@@ -2831,7 +2867,8 @@ value_streams:
         capability_ids:
           - BC-1950
           - BC-620
-        process_ids: []
+        process_ids:
+          - BP-1030.90.20
         notes: Product PSIRT, CVE triage, and emergency patch issuance; Enterprise cybersecurity coordination for product incidents
       - id: VS-230.70
         stage_order: 7
@@ -2861,7 +2898,7 @@ value_streams:
         capability_ids:
           - BC-2160
         process_ids:
-          - BP-150.40
+          - BP-1010.70.20
         notes: Severity triage, coverage verification, and assignment
       - id: VS-240.30
         stage_order: 3
@@ -2886,7 +2923,8 @@ value_streams:
         stage_name: Settlement
         capability_ids:
           - BC-2160
-        process_ids: []
+        process_ids:
+          - BP-1010.70.20
         notes: Settlement negotiation, payment, and litigation closure
       - id: VS-240.60
         stage_order: 6
@@ -2909,7 +2947,7 @@ value_streams:
         capability_ids:
           - BC-1230
         process_ids:
-          - BP-430.20
+          - BP-1000.70.20
         industry_variant: ATC
         notes: Aeronautical information / flight plan
       - id: VS-250.20
@@ -2919,7 +2957,7 @@ value_streams:
           - BC-1210
           - BC-1220
         process_ids:
-          - BP-430.30
+          - BP-1000.70.10
         industry_variant: ATC
         notes: En-route control; Flow management
       - id: VS-250.30
@@ -2927,7 +2965,8 @@ value_streams:
         stage_name: Charge Determination
         capability_ids:
           - BC-1270
-        process_ids: []
+        process_ids:
+          - BP-1000.70.10
         industry_variant: ATC
         notes: Charging zone resolution; Route charge calculation
       - id: VS-250.40
@@ -2935,14 +2974,16 @@ value_streams:
         stage_name: Invoicing
         capability_ids:
           - BC-200
-        process_ids: []
+        process_ids:
+          - BP-1000.80.40
         notes: AR processing
       - id: VS-250.50
         stage_order: 4
         stage_name: Invoicing
         capability_ids:
           - BC-1270
-        process_ids: []
+        process_ids:
+          - BP-1080.30.10
         industry_variant: ATC
         notes: Airline billing
       - id: VS-250.60
@@ -2950,7 +2991,8 @@ value_streams:
         stage_name: Collection
         capability_ids:
           - BC-1270
-        process_ids: []
+        process_ids:
+          - BP-1080.30.10
         industry_variant: ATC
         notes: Charges collection
       - id: VS-250.70
@@ -2958,14 +3000,16 @@ value_streams:
         stage_name: Reconciliation & Reporting
         capability_ids:
           - BC-200
-        process_ids: []
+        process_ids:
+          - BP-1080.30.10
         notes: GL posting
       - id: VS-250.80
         stage_order: 6
         stage_name: Reconciliation & Reporting
         capability_ids:
           - BC-1270
-        process_ids: []
+        process_ids:
+          - BP-1080.30.10
         industry_variant: ATC
         notes: Charges reporting
   - id: VS-260
@@ -3061,7 +3105,7 @@ value_streams:
         capability_ids:
           - BC-3700
         process_ids:
-          - BP-390.10
+          - BP-1080.60.30
         industry_variant: Media & Entertainment
         notes: Concept evaluation, slate planning, and incoming pitch triage
       - id: VS-270.20
@@ -3110,7 +3154,8 @@ value_streams:
         capability_ids:
           - BC-3720
           - BC-3780
-        process_ids: []
+        process_ids:
+          - BP-1080.60.30
         industry_variant: Media & Entertainment
         notes: Chain-of-title verification and clearance against territorial rights; Classification submission, editorial review, and accessibility compliance
       - id: VS-270.70
@@ -4823,8 +4868,7 @@ value_streams:
         capability_ids:
           - BC-4110
         process_ids:
-          - BP-380.30
-          - BP-380.10
+          - BP-1060.70
         notes: Inbound group lead qualification
       - id: VS-320.20
         stage_order: 2
@@ -4832,7 +4876,8 @@ value_streams:
         capability_ids:
           - BC-4110
           - BC-4030
-        process_ids: []
+        process_ids:
+          - BP-1060.70
         notes: Group proposal authoring and contract execution; Group pricing and concession against revenue guidance
       - id: VS-320.30
         stage_order: 3
@@ -4860,7 +4905,8 @@ value_streams:
         stage_name: Settlement
         capability_ids:
           - BC-4110
-        process_ids: []
+        process_ids:
+          - BP-1080.50.10
         notes: Master account settlement and reconciliation
       - id: VS-320.60
         stage_order: 6
@@ -5047,7 +5093,7 @@ value_streams:
         capability_ids:
           - BC-4960
         process_ids:
-          - BP-330.10
+          - BP-1010.70.20
         notes: Showings, open houses, and prospect engagement
       - id: VS-340.40
         stage_order: 4
@@ -5079,7 +5125,8 @@ value_streams:
         stage_name: Commission Settlement
         capability_ids:
           - BC-4960
-        process_ids: []
+        process_ids:
+          - BP-1010.70.20
         notes: Cooperating-broker settlement, commission disbursement, and referral fees
   - id: VS-350
     name: Maintenance-Request-to-Closure
@@ -5096,14 +5143,16 @@ value_streams:
         stage_name: Notification / Request
         capability_ids:
           - BC-1050
-        process_ids: []
+        process_ids:
+          - BP-1090.40.20
         notes: Service request (field)
       - id: VS-350.20
         stage_order: 1
         stage_name: Notification / Request
         capability_ids:
           - BC-2060
-        process_ids: []
+        process_ids:
+          - BP-1090.40.20
         industry_variant: HVAC & Building Automation Systems
         notes: HVAC service request intake
       - id: VS-350.30
@@ -5111,7 +5160,8 @@ value_streams:
         stage_name: Notification / Request
         capability_ids:
           - BC-1030
-        process_ids: []
+        process_ids:
+          - BP-1090.40.20
         industry_variant: Manufacturing
         notes: Corrective maintenance notification
       - id: VS-350.40
@@ -5120,7 +5170,7 @@ value_streams:
         capability_ids:
           - BC-4940
         process_ids:
-          - BP-320.30
+          - BP-1090.40.20
         industry_variant: Real Estate
         notes: Tenant work-order intake on commercial and residential properties
       - id: VS-350.50
@@ -5128,7 +5178,8 @@ value_streams:
         stage_name: Notification / Request
         capability_ids:
           - BC-2430
-        process_ids: []
+        process_ids:
+          - BP-1090.40.20
         industry_variant: Transportation & Logistics
         notes: Fleet defect notification, mandatory-inspection trigger
       - id: VS-350.60
@@ -5136,7 +5187,8 @@ value_streams:
         stage_name: Triage & Planning
         capability_ids:
           - BC-1050
-        process_ids: []
+        process_ids:
+          - BP-1090.40.30
         notes: Dispatch & scheduling
       - id: VS-350.70
         stage_order: 2
@@ -5144,7 +5196,7 @@ value_streams:
         capability_ids:
           - BC-1960
         process_ids:
-          - BP-460.30
+          - BP-1090.40.30
         industry_variant: Electrical Components & Equipment
         notes: Retrofit & service contract planning
       - id: VS-350.80
@@ -5152,7 +5204,8 @@ value_streams:
         stage_name: Triage & Planning
         capability_ids:
           - BC-2060
-        process_ids: []
+        process_ids:
+          - BP-1090.40.30
         industry_variant: HVAC & Building Automation Systems
         notes: Reactive triage; remote diagnostic triage
       - id: VS-350.90
@@ -5161,7 +5214,7 @@ value_streams:
         capability_ids:
           - BC-1030
         process_ids:
-          - BP-470.30
+          - BP-1090.40.30
         industry_variant: Manufacturing
         notes: Maintenance work order planning
       - id: VS-350.100
@@ -5170,7 +5223,7 @@ value_streams:
         capability_ids:
           - BC-4940
         process_ids:
-          - BP-320.30
+          - BP-1090.40.30
         industry_variant: Real Estate
         notes: Preventive and reactive maintenance triage
       - id: VS-350.110
@@ -5178,7 +5231,8 @@ value_streams:
         stage_name: Triage & Planning
         capability_ids:
           - BC-2430
-        process_ids: []
+        process_ids:
+          - BP-1090.40.20
         industry_variant: Transportation & Logistics
         notes: Preventive-maintenance scheduling and defect triage
       - id: VS-350.120
@@ -5186,7 +5240,8 @@ value_streams:
         stage_name: Execution
         capability_ids:
           - BC-1050
-        process_ids: []
+        process_ids:
+          - BP-1090.40.20
         notes: Field service execution
       - id: VS-350.130
         stage_order: 3
@@ -5194,7 +5249,7 @@ value_streams:
         capability_ids:
           - BC-1960
         process_ids:
-          - BP-460.30
+          - BP-1090.40.30
         industry_variant: Electrical Components & Equipment
         notes: OEM service execution on installed base
       - id: VS-350.140
@@ -5202,7 +5257,8 @@ value_streams:
         stage_name: Execution
         capability_ids:
           - BC-2060
-        process_ids: []
+        process_ids:
+          - BP-1090.40.30
         industry_variant: HVAC & Building Automation Systems
         notes: On-site HVAC repair; BAS reprogramming
       - id: VS-350.150
@@ -5210,7 +5266,8 @@ value_streams:
         stage_name: Execution
         capability_ids:
           - BC-1030
-        process_ids: []
+        process_ids:
+          - BP-1090.50.30
         industry_variant: Manufacturing
         notes: Corrective maintenance execution
       - id: VS-350.160
@@ -5219,7 +5276,7 @@ value_streams:
         capability_ids:
           - BC-4940
         process_ids:
-          - BP-320.30
+          - BP-1090.40.30
         industry_variant: Real Estate
         notes: Maintenance execution including statutory and compliance inspections
       - id: VS-350.170
@@ -5227,7 +5284,8 @@ value_streams:
         stage_name: Execution
         capability_ids:
           - BC-2430
-        process_ids: []
+        process_ids:
+          - BP-1090.40.30
         industry_variant: Transportation & Logistics
         notes: Fleet maintenance and overhaul execution
       - id: VS-350.180
@@ -5235,14 +5293,16 @@ value_streams:
         stage_name: Parts & Logistics
         capability_ids:
           - BC-1050
-        process_ids: []
+        process_ids:
+          - BP-1090.40.30
         notes: Service parts
       - id: VS-350.190
         stage_order: 4
         stage_name: Parts & Logistics
         capability_ids:
           - BC-2060
-        process_ids: []
+        process_ids:
+          - BP-1090.40.30
         industry_variant: HVAC & Building Automation Systems
         notes: Refrigerant, filters, sensors, replacement parts
       - id: VS-350.200
@@ -5250,7 +5310,8 @@ value_streams:
         stage_name: Parts & Logistics
         capability_ids:
           - BC-1030
-        process_ids: []
+        process_ids:
+          - BP-1090.50.30
         industry_variant: Manufacturing
         notes: Maintenance spares
       - id: VS-350.210
@@ -5258,7 +5319,8 @@ value_streams:
         stage_name: Parts & Logistics
         capability_ids:
           - BC-2430
-        process_ids: []
+        process_ids:
+          - BP-1090.50.30
         industry_variant: Transportation & Logistics
         notes: Spare parts for fleet maintenance
       - id: VS-350.220
@@ -5266,14 +5328,16 @@ value_streams:
         stage_name: Verification & Closure
         capability_ids:
           - BC-720
-        process_ids: []
+        process_ids:
+          - BP-1090.50.30
         notes: Quality control sign-off
       - id: VS-350.230
         stage_order: 5
         stage_name: Verification & Closure
         capability_ids:
           - BC-2060
-        process_ids: []
+        process_ids:
+          - BP-1090.50.30
         industry_variant: HVAC & Building Automation Systems
         notes: Retrofit validation, post-service tests
       - id: VS-350.240
@@ -5281,7 +5345,8 @@ value_streams:
         stage_name: Verification & Closure
         capability_ids:
           - BC-1030
-        process_ids: []
+        process_ids:
+          - BP-1090.50.30
         industry_variant: Manufacturing
         notes: Reliability data update
       - id: VS-350.250
@@ -5298,7 +5363,8 @@ value_streams:
         stage_name: Verification & Closure
         capability_ids:
           - BC-2430
-        process_ids: []
+        process_ids:
+          - BP-1090.50.30
         industry_variant: Transportation & Logistics
         notes: Roadworthiness, airworthiness, or seaworthiness sign-off
       - id: VS-350.270
@@ -5307,14 +5373,16 @@ value_streams:
         capability_ids:
           - BC-1050
           - BC-200
-        process_ids: []
+        process_ids:
+          - BP-1090.50.30
         notes: Field service KPIs; Maintenance cost posting
       - id: VS-350.280
         stage_order: 6
         stage_name: Performance & Cost Analysis
         capability_ids:
           - BC-2060
-        process_ids: []
+        process_ids:
+          - BP-1090.50.30
         industry_variant: HVAC & Building Automation Systems
         notes: Service KPIs, SLA reporting
   - id: VS-360
@@ -5328,8 +5396,7 @@ value_streams:
         capability_ids:
           - BC-4910
         process_ids:
-          - BP-330.30
-          - BP-320.10
+          - BP-1080.50.10
         notes: Fund / mandate definition and investment strategy
       - id: VS-360.20
         stage_order: 2
@@ -5344,7 +5411,8 @@ value_streams:
         stage_name: Capital Raising
         capability_ids:
           - BC-4910
-        process_ids: []
+        process_ids:
+          - BP-1080.50.10
         notes: Investor targeting, subscription, and fund closing
       - id: VS-360.40
         stage_order: 4
@@ -5360,14 +5428,16 @@ value_streams:
         stage_name: NAV & Performance Management
         capability_ids:
           - BC-4910
-        process_ids: []
+        process_ids:
+          - BP-1080.50.30
         notes: NAV computation, attribution, and fee / waterfall calculation
       - id: VS-360.60
         stage_order: 6
         stage_name: LP Reporting
         capability_ids:
           - BC-4910
-        process_ids: []
+        process_ids:
+          - BP-1080.50.30
         notes: LP reporting and INREV / NCREIF / EPRA index submission
       - id: VS-360.70
         stage_order: 7
@@ -5387,7 +5457,8 @@ value_streams:
         stage_name: Demand Forecast
         capability_ids:
           - BC-2410
-        process_ids: []
+        process_ids:
+          - BP-1040.10.10
         notes: Lane-level demand forecasting and modal mix analysis
       - id: VS-370.20
         stage_order: 2
@@ -5420,14 +5491,15 @@ value_streams:
         capability_ids:
           - BC-2420
         process_ids:
-          - BP-410.20
+          - BP-1040.60.10
         notes: Day-to-day execution of the published service
       - id: VS-370.60
         stage_order: 6
         stage_name: Performance Monitoring & Re-plan
         capability_ids:
           - BC-2410
-        process_ids: []
+        process_ids:
+          - BP-1040.60.10
         notes: Service KPIs, gap analysis, and feedback into the next planning cycle
   - id: VS-380
     name: Opportunity-to-Order
@@ -7595,7 +7667,8 @@ value_streams:
         stage_name: Procurement & Inventory
         capability_ids:
           - BC-2040
-        process_ids: []
+        process_ids:
+          - BP-1010.30
         notes: Refrigerant sourcing, allocation, and storage
       - id: VS-470.20
         stage_order: 2
@@ -7622,14 +7695,15 @@ value_streams:
         capability_ids:
           - BC-2040
         process_ids:
-          - BP-450.40
+          - BP-1080.60.30
         notes: Field recovery, reclamation, and recycled-refrigerant quality control
       - id: VS-470.50
         stage_order: 5
         stage_name: Regulatory Reporting
         capability_ids:
           - BC-2040
-        process_ids: []
+        process_ids:
+          - BP-1090.70.20
         notes: F-Gas, EPA Section 608, and Kigali Amendment reporting
       - id: VS-470.60
         stage_order: 6
@@ -7645,7 +7719,8 @@ value_streams:
         stage_name: End-of-Life Disposition
         capability_ids:
           - BC-2040
-        process_ids: []
+        process_ids:
+          - BP-1090.70.20
         notes: Certified destruction, disposal, and chain-of-custody evidence
   - id: VS-480
     name: Registration-to-Certification
@@ -8094,14 +8169,15 @@ value_streams:
           - BC-2680
           - BC-2600
         process_ids:
-          - BP-160.20
+          - BP-1000.70.10
         notes: TAP/RAP file exchange and inter-operator usage record collection; Network-side CDR generation and mediation feed
       - id: VS-510.30
         stage_order: 3
         stage_name: Rating & Charging
         capability_ids:
           - BC-2680
-        process_ids: []
+        process_ids:
+          - BP-1000.70.10
         notes: Wholesale rating against contracted tariffs and discount schemes
       - id: VS-510.40
         stage_order: 4
@@ -8131,7 +8207,8 @@ value_streams:
         capability_ids:
           - BC-4010
           - BC-4030
-        process_ids: []
+        process_ids:
+          - BP-1050.30
         notes: Channel exposure across direct, OTA, and metasearch; Promotion and offer surfacing
       - id: VS-520.20
         stage_order: 2
@@ -8161,7 +8238,7 @@ value_streams:
           - BC-4040
           - BC-4060
         process_ids:
-          - BP-380.20
+          - BP-1080.50.10
         notes: Pre-arrival recognition cueing; Pre-arrival room and amenity preparation
       - id: VS-520.50
         stage_order: 5
@@ -8220,7 +8297,8 @@ value_streams:
           - BC-4020
           - BC-4060
           - BC-4050
-        process_ids: []
+        process_ids:
+          - BP-1080.50.10
         notes: Booking settlement and final charge capture; Folio settlement at check-out; Earn engine accrual on completed activity
       - id: VS-520.110
         stage_order: 7
@@ -8244,7 +8322,7 @@ value_streams:
         capability_ids:
           - BC-4900
         process_ids:
-          - BP-330.20
+          - BP-1090.20
         notes: Site identification, off-market origination, and pipeline tracking
       - id: VS-530.20
         stage_order: 2
@@ -8279,7 +8357,8 @@ value_streams:
         capability_ids:
           - BC-4900
           - BC-1150
-        process_ids: []
+        process_ids:
+          - BP-1090.20
         notes: Design oversight and owner-side construction monitoring; Construction execution by GC and trades
       - id: VS-530.60
         stage_order: 6
@@ -8367,7 +8446,7 @@ value_streams:
         capability_ids:
           - BC-3860
         process_ids:
-          - BP-260.60
+          - BP-1130.30.10
         industry_variant: Utilities
         notes: Supply-demand balance, drought planning, abstraction licence administration
       - id: VS-550.20
@@ -8402,7 +8481,8 @@ value_streams:
         stage_name: Drinking Water Quality Assurance
         capability_ids:
           - BC-3870
-        process_ids: []
+        process_ids:
+          - BP-1130.30.10
         industry_variant: Utilities
         notes: Statutory sampling, online monitoring, incident response, and DWI/EPA reporting
       - id: VS-550.60
@@ -8445,7 +8525,7 @@ value_streams:
         capability_ids:
           - BC-4930
         process_ids:
-          - BP-330.20
+          - BP-1080.50.30
         notes: Acquisition lead sourcing across direct, broker, and off-market channels
       - id: VS-560.20
         stage_order: 2
@@ -8476,7 +8556,8 @@ value_streams:
         stage_name: Closing & Settlement
         capability_ids:
           - BC-4930
-        process_ids: []
+        process_ids:
+          - BP-1080.50.30
         notes: Escrow, settlement statement, and recording
       - id: VS-560.60
         stage_order: 6
@@ -8506,7 +8587,7 @@ value_streams:
         capability_ids:
           - BC-2670
         process_ids:
-          - BP-160.50
+          - BP-1010.40.10
         notes: Spectrum portfolio strategy and technology-band roadmap
       - id: VS-570.20
         stage_order: 2
@@ -8514,7 +8595,8 @@ value_streams:
         capability_ids:
           - BC-2670
           - BC-2700
-        process_ids: []
+        process_ids:
+          - BP-1010.40.10
         notes: Auction participation, licence purchase, and trading; Regulatory engagement and licence-condition negotiation
       - id: VS-570.30
         stage_order: 3
@@ -8539,7 +8621,8 @@ value_streams:
         capability_ids:
           - BC-2670
           - BC-2700
-        process_ids: []
+        process_ids:
+          - BP-1080.60.30
         notes: Interference monitoring, mitigation, and shared-access spectrum operations; Licence-condition compliance and regulatory reporting
       - id: VS-570.60
         stage_order: 6
@@ -8926,21 +9009,24 @@ value_streams:
         stage_name: Trade Plan Development
         capability_ids:
           - BC-2360
-        process_ids: []
+        process_ids:
+          - BP-1050.30.10
         notes: Annual trade plan, joint business plans, and customer-level investment strategy
       - id: VS-610.20
         stage_order: 2
         stage_name: Fund Allocation
         capability_ids:
           - BC-2360
-        process_ids: []
+        process_ids:
+          - BP-1050.30.10
         notes: Trade-spend budgeting and accrual setup
       - id: VS-610.30
         stage_order: 3
         stage_name: Promotion Execution
         capability_ids:
           - BC-2360
-        process_ids: []
+        process_ids:
+          - BP-1050.30.20
         notes: In-store event execution, slotting, and feature scheduling
       - id: VS-610.40
         stage_order: 4
@@ -8948,14 +9034,16 @@ value_streams:
         capability_ids:
           - BC-2360
           - BC-200
-        process_ids: []
+        process_ids:
+          - BP-1000.80.40
         notes: Customer deduction validation, claim resolution, and chargeback management; Trade-spend accruals, deduction accounting, and AR clearing
       - id: VS-610.50
         stage_order: 5
         stage_name: Post-Event Lift Measurement
         capability_ids:
           - BC-2360
-        process_ids: []
+        process_ids:
+          - BP-1050.30.30
         notes: Lift analytics, ROI evaluation, and feedback into next plan
   - id: VS-620
     name: Trial-to-Renewal
