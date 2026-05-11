@@ -1,6 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
-import { flat, getById, getAncestors, getBpById, getStageById } from "../../data/load.ts";
+import { flat, getById, getAncestors, getBpById, getMacroById, getStageById } from "../../data/load.ts";
 
 export function getStaticPaths() {
   return flat.map((c) => ({
@@ -20,6 +20,7 @@ if (!node) {
 const ancestors = getAncestors(id);
 const directChildren = flat.filter((c) => c.parent_id === id);
 const successor = node.successor_id ? getById(node.successor_id) : null;
+const macro = node.macro_id ? getMacroById(node.macro_id) : undefined;
 const githubUrl = `https://github.com/vincentmakes/turbo-ea-capabilities/tree/main/catalogue`;
 
 const realizingProcesses = (node.realizes_processes ?? [])
@@ -37,6 +38,12 @@ const involvedStages = (node.value_stream_stages ?? [])
   <main class="main">
     <nav class="detail-breadcrumb">
       <a href="/">Catalog</a>
+      {macro && (
+        <>
+          <span class="sep">/</span>
+          <a href={`/macro/${macro.id}`}>{macro.name}</a>
+        </>
+      )}
       {ancestors.map((a) => (
         <>
           <span class="sep">/</span>

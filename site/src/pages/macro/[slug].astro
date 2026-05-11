@@ -1,0 +1,72 @@
+---
+import Base from "../../layouts/Base.astro";
+import CatalogueBrowser from "../../components/CatalogueBrowser.tsx";
+import {
+  buildMacroLayeredFlat,
+  flat,
+  getMacroById,
+  macros,
+  valueStreams,
+} from "../../data/load.ts";
+import type { FlatCapability } from "../../../../scripts/lib/load.ts";
+
+export function getStaticPaths() {
+  return macros.map((m) => ({
+    params: { slug: m.id },
+    props: { macroId: m.id },
+  }));
+}
+
+interface Props {
+  macroId: string;
+}
+const { macroId } = Astro.props as Props;
+const macro = getMacroById(macroId);
+if (!macro) {
+  throw new Error(`Macro ${macroId} not found at build time`);
+}
+
+// Restrict the dataset to the macro's claimed L1s and their descendants, then
+// run it through the macro-layer transform so the rendered tree shows MC as
+// L1, BC L1s as L2, and so on.
+const claimedL1s = new Set(macro.capability_ids);
+const inMacro = (c: FlatCapability): boolean => {
+  const l1 = c.id.split(".")[0];
+  return claimedL1s.has(l1);
+};
+const subsetSource: FlatCapability[] = flat.filter(inMacro);
+const subset = buildMacroLayeredFlat(subsetSource, [macro]);
+const directL1Count = macro.capability_ids.length;
+const totalCount = subsetSource.length;
+---
+
+<Base
+  title={macro.name}
+  description={macro.description ?? `Macro capability ${macro.id} - ${macro.name}.`}
+>
+  <main class="main">
+    <nav class="detail-breadcrumb">
+      <a href="/">Catalog</a>
+      <span class="sep">/</span>
+      <a href="/capabilities">Capabilities</a>
+      <span class="sep">/</span>
+      <span>{macro.name}</span>
+    </nav>
+
+    <div class="section-header">
+      <h2>{macro.name}</h2>
+    </div>
+    <p class="search-results-info" style="margin-bottom: 24px;">
+      Macro <span class="cap-id">{macro.id}</span>
+      {" · "}
+      {directL1Count} L1 capabilities
+      {" · "}
+      {totalCount} capabilities in subtree
+    </p>
+    {macro.description && (
+      <p style="margin-bottom: 24px; line-height: 1.7; max-width: 70ch;">{macro.description}</p>
+    )}
+
+    <CatalogueBrowser data={subset} valueStreams={valueStreams} client:load />
+  </main>
+</Base>

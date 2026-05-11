@@ -79,8 +79,19 @@ export const CATALOG_KINDS: Record<CatalogKind, CatalogKindConfig> = {
     breadcrumbLabel: "Capabilities",
     breadcrumbHref: "/capabilities",
     exportStem: "capabilities",
-    githubPathFor: (_node, rootName) =>
-      `${REPO_BLOB}/catalogue/L1-${fileSlug(rootName)}.yaml`,
+    githubPathFor: (node, rootName) => {
+      // Macros live in the dedicated single-file artefact. Routing logic:
+      // - The node itself is a macro → macro file.
+      // - The node sits inside a macro-rooted subtree → the ancestor walk
+      //   lands on the MC; rootName is then the macro display name, but the
+      //   capability YAML for the BC L1 is still the right target. We detect
+      //   this by sniffing the *node* id prefix: BC ids point at their L1
+      //   file, MC ids point at the macro file.
+      if (node.id.startsWith("MC-")) {
+        return `${REPO_BLOB}/catalogue/_macro-capabilities.yaml`;
+      }
+      return `${REPO_BLOB}/catalogue/L1-${fileSlug(rootName)}.yaml`;
+    },
   },
   process: {
     breadcrumbLabel: "Processes",

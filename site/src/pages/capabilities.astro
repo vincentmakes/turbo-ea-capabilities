@@ -2,7 +2,10 @@
 import Base from "../layouts/Base.astro";
 import HeroTessellation from "../components/HeroTessellation.astro";
 import CatalogueBrowser from "../components/CatalogueBrowser.tsx";
-import { flat, valueStreams, version } from "../data/load.ts";
+import { flatWithMacros, macros, valueStreams, version } from "../data/load.ts";
+
+const macroSummary =
+  macros.length > 0 ? ` · ${macros.length} macro capabilities` : "";
 ---
 
 <Base
@@ -12,11 +15,11 @@ import { flat, valueStreams, version } from "../data/load.ts";
 >
   <HeroTessellation
     title="Business Capabilities"
-    tagline={`${version.node_count} capabilities`}
+    tagline={`${version.node_count} capabilities${macroSummary}`}
     description={`Catalog ${version.catalogue_version} · schema v${version.schema_version}`}
   />
 
   <main class="main">
-    <CatalogueBrowser data={flat} valueStreams={valueStreams} client:load />
+    <CatalogueBrowser data={flatWithMacros} valueStreams={valueStreams} client:load />
   </main>
 </Base>

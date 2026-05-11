@@ -1,11 +1,12 @@
 ---
 import Base from "../layouts/Base.astro";
 import HeroTessellation from "../components/HeroTessellation.astro";
-import { bpFlat, flat, valueStreams, version } from "../data/load.ts";
+import { bpFlat, flat, macros, valueStreams, version } from "../data/load.ts";
 
 const capabilityCount = version.node_count ?? flat.length;
 const processCount = version.process_count ?? bpFlat.length;
 const streamCount = valueStreams.length;
+const macroCount = macros.length;
 ---
 
 <Base
@@ -31,6 +32,13 @@ const streamCount = valueStreams.length;
             <strong>What</strong> the business does. Industry-aware, MECE
             hierarchy of business capabilities — the noun-phrased model behind
             heat-maps, investment lenses, and architecture blueprints.
+            {macroCount > 0 && (
+              <>
+                {" "}Cross-industry capabilities roll up into{" "}
+                <strong>{macroCount} macro capabilities</strong> for executive
+                navigation.
+              </>
+            )}
           </p>
           <span class="catalog-tile-count">
             {capabilityCount}
@@ -155,6 +163,12 @@ const streamCount = valueStreams.length;
             <div class="meta-key">Value streams</div>
             <div class="meta-val">{streamCount}</div>
           </div>
+          {macroCount > 0 && (
+            <div>
+              <div class="meta-key">Macro capabilities</div>
+              <div class="meta-val">{macroCount}</div>
+            </div>
+          )}
         </div>
       </div>
 
@@ -223,6 +237,9 @@ const streamCount = valueStreams.length;
           <li><a href="/api/business-processes.json"><code>/api/business-processes.json</code></a> — flat array of every process</li>
           <li><a href="/api/bp-tree.json"><code>/api/bp-tree.json</code></a> — full nested process tree</li>
           <li><a href="/api/value-streams.json"><code>/api/value-streams.json</code></a> — every value stream with its stages</li>
+          {macroCount > 0 && (
+            <li><a href="/api/macro-capabilities.json"><code>/api/macro-capabilities.json</code></a> — macro-capability navigation overlay</li>
+          )}
         </ul>
         <p style="margin-top: 12px;">
           For per-node lookup or per-L1 / per-BP1 subtrees use the Python

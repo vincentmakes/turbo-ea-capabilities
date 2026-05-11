@@ -4,7 +4,7 @@
  * files are missing - run `npm run build:api` first (the workspace `npm run
  * build` does this automatically).
  */
-import type { FlatCapability, FlatBusinessProcess, FrameworkRef } from "../../../scripts/lib/load.ts";
+import type { FlatCapability, FlatBusinessProcess, FrameworkRef, MacroCapability } from "../../../scripts/lib/load.ts";
 
 import flatJson from "@catalogue-data/capabilities.json" with { type: "json" };
 import treeJson from "@catalogue-data/tree.json" with { type: "json" };
@@ -12,6 +12,7 @@ import versionJson from "@catalogue-data/version.json" with { type: "json" };
 import valueStreamsJson from "@catalogue-data/value-streams.json" with { type: "json" };
 import bpFlatJson from "@catalogue-data/business-processes.json" with { type: "json" };
 import bpTreeJson from "@catalogue-data/bp-tree.json" with { type: "json" };
+import macrosJson from "@catalogue-data/macro-capabilities.json" with { type: "json" };
 
 export interface NestedCapability extends Omit<FlatCapability, "children"> {
   children: NestedCapability[];
@@ -53,7 +54,7 @@ export interface ValueStream {
   stages: ValueStreamStage[];
 }
 
-export type { FrameworkRef };
+export type { FrameworkRef, MacroCapability };
 
 export const flat: FlatCapability[] = flatJson as unknown as FlatCapability[];
 export const tree: NestedCapability[] = treeJson as unknown as NestedCapability[];
@@ -64,6 +65,8 @@ export const bpFlat: FlatBusinessProcess[] =
   bpFlatJson as unknown as FlatBusinessProcess[];
 export const bpTree: NestedBusinessProcess[] =
   bpTreeJson as unknown as NestedBusinessProcess[];
+export const macros: MacroCapability[] =
+  macrosJson as unknown as MacroCapability[];
 
 const byId = new Map<string, FlatCapability>();
 for (const c of flat) byId.set(c.id, c);
@@ -81,6 +84,9 @@ for (const s of valueStreams) {
   }
 }
 
+const macroById = new Map<string, MacroCapability>();
+for (const m of macros) macroById.set(m.id, m);
+
 export function getById(id: string): FlatCapability | undefined {
   return byId.get(id);
 }
@@ -91,6 +97,10 @@ export function getBpById(id: string): FlatBusinessProcess | undefined {
 
 export function getVsById(id: string): ValueStream | undefined {
   return vsById.get(id);
+}
+
+export function getMacroById(id: string): MacroCapability | undefined {
+  return macroById.get(id);
 }
 
 export function getStageById(
@@ -169,3 +179,88 @@ export function findBpSubtree(id: string): NestedBusinessProcess | undefined {
   }
   return undefined;
 }
+
+// ---------------------------------------------------------------------------
+// Macro-layered capability view
+//
+// When the catalogue ships a `_macro-capabilities.yaml`, the site renders the
+// macros as the top tier (visually replacing BC L1 at the executive layer):
+// each MC- becomes a synthetic level-1 node, the BC L1s it claims slide down
+// to level 2, their L2s to L3, their L3s to L4. The raw `flat` / `tree`
+// arrays — and every downstream API consumer — keep BC L1 at level=1; the
+// shift is purely a presentation layer for the in-browser catalogue.
+//
+// Industry-specific L1s (no `macro_id`) are unaffected: they stay at level 1
+// with `parent_id: null` so they continue to render as L1 cards grouped by
+// their industry alongside the cross-industry macros.
+// ---------------------------------------------------------------------------
+
+/** Synthesize a `FlatCapability`-shaped node for a macro, suitable for
+ *  passing into the existing CatalogueBrowser at the L1 visual tier. */
+function macroAsFlatCapability(macro: MacroCapability): FlatCapability {
+  return {
+    id: macro.id,
+    name: macro.name,
+    level: 1,
+    parent_id: null,
+    children: [...macro.capability_ids],
+    description: macro.description,
+    industry: macro.industry,
+    references: macro.references,
+    in_scope: macro.in_scope,
+    out_of_scope: macro.out_of_scope,
+    deprecated: macro.deprecated,
+    deprecation_reason: macro.deprecation_reason,
+    successor_id: macro.successor_id,
+    metadata: macro.metadata,
+    // BCs use `realizes_processes` / `value_stream_stages` reverse indices.
+    // Macros don't participate in BP/VS graph; leave those unset.
+  } as FlatCapability;
+}
+
+/** Return a flat array where:
+ *   - each macro becomes a synthetic L1 node (its capability_ids are children);
+ *   - every claimed BC L1 has level += 1 and `parent_id` re-pointed at its macro;
+ *   - every descendant of a claimed L1 has level += 1 (parent_id unchanged);
+ *   - unclaimed BC L1s (industry-specific) are returned unchanged.
+ *  Pass directly into <CatalogueBrowser data={...} /> to render the macro tier.
+ */
+export function buildMacroLayeredFlat(
+  source: FlatCapability[] = flat,
+  macroSet: MacroCapability[] = macros,
+): FlatCapability[] {
+  if (macroSet.length === 0) return source;
+
+  const macroByL1 = new Map<string, MacroCapability>();
+  for (const m of macroSet) {
+    for (const cid of m.capability_ids ?? []) macroByL1.set(cid, m);
+  }
+  // BC ids belonging to a macro'd L1 subtree need to shift down one level.
+  const claimedL1 = new Set(macroByL1.keys());
+  const inMacroSubtree = (node: FlatCapability): boolean => {
+    const l1 = node.id.split(".")[0];
+    return claimedL1.has(l1);
+  };
+
+  const out: FlatCapability[] = [];
+  // 1. Macros first, level 1.
+  for (const m of macroSet) out.push(macroAsFlatCapability(m));
+  // 2. Then every existing capability, shifted iff in a macro'd subtree.
+  for (const c of source) {
+    if (!inMacroSubtree(c)) {
+      out.push(c);
+      continue;
+    }
+    if (c.level === 1) {
+      const macro = macroByL1.get(c.id)!;
+      out.push({ ...c, level: 2, parent_id: macro.id });
+    } else {
+      out.push({ ...c, level: c.level + 1 });
+    }
+  }
+  return out;
+}
+
+/** Memoized convenience: the full catalogue with macro tier applied. */
+export const flatWithMacros: FlatCapability[] = buildMacroLayeredFlat();
+
