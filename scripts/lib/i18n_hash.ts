@@ -81,3 +81,21 @@ export function hashValueStreamStageSource(stage: ValueStreamStageSource): strin
     })
   );
 }
+
+export interface MacroCapabilitySource {
+  name: string;
+  description?: string;
+  in_scope?: string[];
+  out_of_scope?: string[];
+}
+
+export function hashMacroCapabilitySource(macro: MacroCapabilitySource): string {
+  return digest(
+    canonicalJson({
+      name: macro.name,
+      description: macro.description ?? null,
+      in_scope: macro.in_scope ?? null,
+      out_of_scope: macro.out_of_scope ?? null,
+    })
+  );
+}

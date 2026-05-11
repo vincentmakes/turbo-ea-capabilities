@@ -13,7 +13,14 @@
  */
 import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { I18N_DIR, listLocales, readIndex, readProcessesIndex } from "../lib/load.ts";
+import {
+  CATALOGUE_DIR,
+  I18N_DIR,
+  listLocales,
+  loadMacroCapabilities,
+  readIndex,
+  readProcessesIndex,
+} from "../lib/load.ts";
 
 const strict = process.argv.includes("--strict");
 const writeManifest = !process.argv.includes("--no-manifest");
@@ -21,8 +28,14 @@ const writeManifest = !process.argv.includes("--no-manifest");
 const capFiles = readIndex().files;
 const bpFiles = readProcessesIndex().files;
 const locales = listLocales();
+const macroFileExists = existsSync(join(CATALOGUE_DIR, "_macro-capabilities.yaml"));
+const macrosPresent = macroFileExists && loadMacroCapabilities().length > 0;
 
-interface Gap { kind: "capability" | "business-process" | "value-stream"; source: string; locale: string; }
+interface Gap {
+  kind: "capability" | "business-process" | "value-stream" | "macro-capability";
+  source: string;
+  locale: string;
+}
 const gaps: Gap[] = [];
 
 for (const locale of locales) {
@@ -35,15 +48,24 @@ for (const locale of locales) {
   if (!existsSync(join(I18N_DIR, locale, "_value-streams.yaml"))) {
     gaps.push({ kind: "value-stream", source: "_value-streams.yaml", locale });
   }
+  if (macrosPresent && !existsSync(join(I18N_DIR, locale, "_macro-capabilities.yaml"))) {
+    gaps.push({ kind: "macro-capability", source: "_macro-capabilities.yaml", locale });
+  }
 }
 
-const total = (capFiles.length + bpFiles.length + 1) * locales.length;
+const perLocale = capFiles.length + bpFiles.length + 1 + (macrosPresent ? 1 : 0);
+const total = perLocale * locales.length;
 const present = total - gaps.length;
-const pct = ((100 * present) / total).toFixed(1);
+const pct = total === 0 ? 0 : ((100 * present) / total).toFixed(1);
 
 console.log(`i18n coverage: ${present} / ${total} (${pct}%) sidecar files present across ${locales.length} locale(s).`);
 
-const byKind: Record<string, number> = { capability: 0, "business-process": 0, "value-stream": 0 };
+const byKind: Record<string, number> = {
+  capability: 0,
+  "business-process": 0,
+  "value-stream": 0,
+  "macro-capability": 0,
+};
 for (const g of gaps) byKind[g.kind]++;
 for (const [k, n] of Object.entries(byKind)) {
   console.log(`  ${k.padEnd(18)} ${n} missing`);

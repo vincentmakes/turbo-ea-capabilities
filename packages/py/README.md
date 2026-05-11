@@ -20,17 +20,24 @@ from turbo_ea_capabilities import (
     get_children,
     get_subtree,
     get_ancestors,
+    load_macros,
+    get_macros_for_capability,
     VERSION,
     SCHEMA_VERSION,
     GENERATED_AT,
 )
 
 print(f"Catalogue {VERSION} (schema v{SCHEMA_VERSION}), built {GENERATED_AT}")
-print(f"{len(load_all())} capabilities")
+print(f"{len(load_all())} capabilities, {len(load_macros())} macro capabilities")
 
 root = get_subtree("BC-2")
 for child in root.children:
     print(f"  {child.id}  {child.name}")
+
+# Macro navigation overlay (optional — empty list on pre-macro snapshots)
+for m in load_macros():
+    print(f"  {m.id}  {m.name}  ({len(m.capability_ids)} L1s)")
+print(get_macros_for_capability("BC-100"))  # → [MacroCapability(id='MC-10', ...)]
 ```
 
 ## API
@@ -43,8 +50,12 @@ for child in root.children:
 | `get_children(id)` | `list[Capability]` — direct children only |
 | `get_subtree(id)` | `Capability \| None` — node with `.children` populated recursively |
 | `get_ancestors(id)` | `list[Capability]` — root → parent (excludes the node itself) |
+| `load_macros()` | `list[MacroCapability]` — executive navigation overlay above L1 (empty on snapshots without the layer) |
+| `get_macro(mc_id)` | `MacroCapability \| None` |
+| `get_macros_for_capability(bc_id)` | `list[MacroCapability]` — the ≤1 macro claiming the BC's L1 ancestor |
+| `get_capabilities_in_macro(mc_id)` | `list[Capability]` — L1 capabilities grouped by the macro |
 
-`Capability` is a frozen Pydantic v2 model — see `_models.py`.
+`Capability` (with new optional `macro_id` backlink), `MacroCapability`, `BusinessProcess`, `ValueStream` are all frozen Pydantic v2 models — see `_models.py`. The macro layer is purely additive: existing `Capability` fields are unchanged and `SCHEMA_VERSION` is not bumped when only macros are added or edited.
 
 ## Versioning
 

@@ -46,6 +46,14 @@ for (const f of filesToCopy) {
   copyFileSync(src, dst);
 }
 
+// Optional: macro-capabilities.json. Older snapshots may not have it; the
+// wheel uses _read_optional_json to load it, so missing-on-disk is fine.
+const macroSrc = join(DIST_API, "macro-capabilities.json");
+const macrosCopied = existsSync(macroSrc);
+if (macrosCopied) {
+  copyFileSync(macroSrc, join(PKG_DATA, "macro-capabilities.json"));
+}
+
 // Optional: locales.json + per-locale i18n maps. build_api always emits
 // locales.json (with at least 'en'); per-locale files only exist when
 // catalogue/i18n/<locale>/ has sidecars.
@@ -68,6 +76,9 @@ if (existsSync(i18nSrc)) {
 console.log(
   `✔ build_pkg: copied ${filesToCopy.join(", ")} → packages/py/src/turbo_ea_capabilities/data/`
 );
+if (macrosCopied) {
+  console.log(`  + macro-capabilities.json`);
+}
 if (localeFiles.length) {
   console.log(`  + locales: ${localeFiles.join(", ")}`);
 }

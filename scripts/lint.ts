@@ -19,6 +19,8 @@ import {
   CATALOGUE_DIR,
   I18N_SCHEMA_PATH,
   ID_REGEX,
+  MACRO_CAPABILITY_SCHEMA_PATH,
+  MC_ID_REGEX,
   PROCESSES_DIR,
   SCHEMA_PATH,
   VALUE_STREAM_SCHEMA_PATH,
@@ -33,17 +35,20 @@ import {
   loadAllSidecars,
   loadBP1File,
   loadL1File,
+  loadMacroCapabilities,
   loadValueStreams,
   readIndex,
   readProcessesIndex,
   type FlatCapability,
   type FlatBusinessProcess,
+  type MacroCapability,
   type RawCapability,
   type RawBusinessProcess,
   type SidecarKind,
 } from "./lib/load.ts";
 import {
   hashCapabilityLikeSource,
+  hashMacroCapabilitySource,
   hashValueStreamSource,
   hashValueStreamStageSource,
 } from "./lib/i18n_hash.ts";
@@ -601,6 +606,147 @@ for (const stream of streams) {
 }
 
 // ---------------------------------------------------------------------------
+// 11b. Macro capabilities: schema, MC-id format, MECE, L1-only references,
+// industry vocabulary. Macros are an orthogonal overlay above L1 — they don't
+// enter the BC tree and don't participate in VS/BP links.
+// ---------------------------------------------------------------------------
+const mcSchema = JSON.parse(readFileSync(MACRO_CAPABILITY_SCHEMA_PATH, "utf8"));
+const validateMC = ajv.compile(mcSchema);
+
+const mcFilePath = join(CATALOGUE_DIR, "_macro-capabilities.yaml");
+if (existsSync(mcFilePath)) {
+  const rawObj = YAML.parse(readFileSync(mcFilePath, "utf8"));
+  if (rawObj && !validateMC(rawObj)) {
+    for (const e of validateMC.errors ?? []) {
+      err("_macro-capabilities.yaml", `schema: ${e.instancePath || "/"} ${e.message}`);
+    }
+  }
+}
+
+const macros: MacroCapability[] = loadMacroCapabilities();
+const seenMacroIds = new Set<string>();
+const seenMacroSlugs = new Map<string, string>();
+const macroById = new Map<string, MacroCapability>();
+const macroClaims = new Map<string, string[]>(); // BC L1 id -> [MC ids]
+
+for (const macro of macros) {
+  if (!macro.id) {
+    err("_macro-capabilities.yaml", `Macro '${macro.name ?? "<?>"}': missing required 'id' (expected MC-<n>)`);
+  } else if (!MC_ID_REGEX.test(macro.id)) {
+    err(
+      "_macro-capabilities.yaml",
+      `Macro '${macro.name ?? macro.id}': id '${macro.id}' does not match ${MC_ID_REGEX}`
+    );
+  } else if (seenMacroIds.has(macro.id)) {
+    err(
+      "_macro-capabilities.yaml",
+      `Macro '${macro.name ?? macro.id}': id '${macro.id}' duplicates an earlier macro`
+    );
+  } else {
+    seenMacroIds.add(macro.id);
+    macroById.set(macro.id, macro);
+  }
+
+  // Name uniqueness via slug.
+  if (macro.name) {
+    const slug = macro.name
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-|-$/g, "");
+    const existing = seenMacroSlugs.get(slug);
+    if (existing) {
+      err(
+        "_macro-capabilities.yaml",
+        `Macro '${macro.id ?? macro.name}': name '${macro.name}' collides with ${existing} (slug '${slug}')`
+      );
+    } else {
+      seenMacroSlugs.set(slug, macro.id ?? macro.name);
+    }
+  }
+
+  // Industry vocabulary check (allow 'Cross-Industry' standalone or
+  // ';'-separated entries from the L1 industry vocab).
+  if (macro.industry) {
+    const parts = macro.industry
+      .split(";")
+      .map((s) => s.trim())
+      .filter(Boolean);
+    if (parts.includes("Cross-Industry") && parts.length > 1) {
+      err(
+        "_macro-capabilities.yaml",
+        `Macro '${macro.id ?? macro.name}': 'Cross-Industry' must stand alone in industry`
+      );
+    }
+    for (const p of parts) {
+      if (p === "Cross-Industry") continue;
+      if (!industryVocab.has(p)) {
+        const valid = ["Cross-Industry", ...Array.from(industryVocab).sort()].join(", ");
+        err(
+          "_macro-capabilities.yaml",
+          `Macro '${macro.id ?? macro.name}': industry '${p}' not in catalogue vocabulary; valid values: ${valid}`
+        );
+      }
+    }
+  }
+
+  if (macro.deprecated && !macro.deprecation_reason) {
+    err(
+      "_macro-capabilities.yaml",
+      `Macro '${macro.id ?? macro.name}': deprecated=true requires deprecation_reason`
+    );
+  }
+
+  // capability_ids: must be L1 and resolve to a catalogue node.
+  const caps = macro.capability_ids ?? [];
+  if (caps.length === 0) {
+    err(
+      "_macro-capabilities.yaml",
+      `Macro '${macro.id ?? macro.name}': capability_ids[] must contain at least one L1`
+    );
+  }
+  for (let i = 0; i < caps.length; i++) {
+    const cid = caps[i];
+    if (!L1_ID_REGEX.test(cid)) {
+      err(
+        "_macro-capabilities.yaml",
+        `Macro '${macro.id ?? macro.name}': capability_ids[${i}] '${cid}' is not L1 (expected BC-<N>, no dots)`
+      );
+      continue;
+    }
+    if (!l1Set.has(cid)) {
+      err(
+        "_macro-capabilities.yaml",
+        `Macro '${macro.id ?? macro.name}': capability_ids[${i}] '${cid}' not found in catalogue`
+      );
+      continue;
+    }
+    const list = macroClaims.get(cid) ?? [];
+    list.push(macro.id ?? macro.name ?? "<?>");
+    macroClaims.set(cid, list);
+  }
+}
+
+// MECE check: each L1 referenced by at most one macro.
+for (const [cid, mcIds] of macroClaims) {
+  if (mcIds.length > 1) {
+    err(
+      "_macro-capabilities.yaml",
+      `L1 '${cid}' claimed by multiple macros (${mcIds.join(", ")}); macros must be MECE`
+    );
+  }
+}
+
+// Successor resolution.
+for (const macro of macros) {
+  if (macro.successor_id && !seenMacroIds.has(macro.successor_id)) {
+    err(
+      "_macro-capabilities.yaml",
+      `Macro '${macro.id ?? macro.name}': successor_id '${macro.successor_id}' does not resolve`
+    );
+  }
+}
+
+// ---------------------------------------------------------------------------
 // 12. Translation sidecars: schema, locale-tag/dir match, source resolution,
 //     orphaned entry ids. Sidecars are optional; if catalogue/i18n/ does not
 //     exist, this section is a no-op.
@@ -724,6 +870,39 @@ for (const { locale, file, data } of loadAllSidecars()) {
         }
       }
     }
+  } else if (kind === "macro-capability") {
+    if (data.source !== "_macro-capabilities.yaml") {
+      err(
+        tag,
+        `source '${data.source}' must be '_macro-capabilities.yaml' for kind: macro-capability`
+      );
+    }
+    for (const id of Object.keys(data.entries)) {
+      if (!MC_ID_REGEX.test(id)) {
+        err(
+          tag,
+          `entry '${id}' is not a macro-capability id (kind: macro-capability expects MC-<n>)`
+        );
+        continue;
+      }
+      if (!macroById.has(id)) {
+        err(tag, `entry '${id}' does not resolve to any macro capability`);
+        continue;
+      }
+      const stored = data.entries[id]?.source_hash;
+      if (stored) {
+        const src = macroById.get(id);
+        if (src) {
+          const current = hashMacroCapabilitySource(src);
+          if (current !== stored) {
+            err(
+              tag,
+              `entry '${id}' is stale: source_hash '${stored}' no longer matches '_macro-capabilities.yaml' (current: '${current}'). Retranslate and re-stamp via 'npm run i18n:stamp'.`
+            );
+          }
+        }
+      }
+    }
   } else if (kind === "value-stream") {
     if (data.source !== "_value-streams.yaml") {
       err(tag, `source '${data.source}' must be '_value-streams.yaml' for kind: value-stream`);
@@ -808,6 +987,20 @@ for (const id of cxL1Ids) {
   }
 }
 
+// Macro coverage (warning). Every Cross-Industry L1 should belong to one macro.
+// Empty catalogue (macros.length === 0) skips this check so older snapshots
+// without the macro layer don't suddenly warn.
+if (macros.length > 0) {
+  for (const id of cxL1Ids) {
+    if (!macroClaims.has(id)) {
+      warnings.push({
+        file: "macro-coverage",
+        message: `Cross-Industry BC L1 '${id}' is not claimed by any macro (add it to _macro-capabilities.yaml or run \`npm run check:macro-coverage\`).`,
+      });
+    }
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Report
 // ---------------------------------------------------------------------------
@@ -827,5 +1020,5 @@ if (warnings.length > 0) {
   console.warn("");
 }
 console.log(
-  `✔ Lint passed: ${trees.length} L1 file(s), ${allFlat.length} capability node(s), ${bpTrees.length} BP1 file(s), ${allFlatBP.length} process node(s), ${streams.length} value stream(s), ${sidecarCount} sidecar(s).`
+  `✔ Lint passed: ${trees.length} L1 file(s), ${allFlat.length} capability node(s), ${bpTrees.length} BP1 file(s), ${allFlatBP.length} process node(s), ${streams.length} value stream(s), ${macros.length} macro(s), ${sidecarCount} sidecar(s).`
 );

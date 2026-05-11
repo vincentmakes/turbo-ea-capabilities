@@ -1,6 +1,6 @@
 # Business Architecture Reference Catalogue
 
-An **open-source Business Architecture Reference Catalogue** covering three orthogonal artefacts: **business capabilities** (BC — what the enterprise does), **business processes** (BP — how it does it), and **value streams** (VS — end-to-end value delivery). It is intentionally tool-agnostic and can be used in any Enterprise Architecture management solution — well beyond [Turbo EA](https://www.turbo-ea.org). This site exists to help enterprise architects get started with the implementation of an EA function, by providing a curated, opinionated baseline that teams can adopt, adapt, and extend.
+An **open-source Business Architecture Reference Catalogue** covering three orthogonal artefacts: **business capabilities** (BC — what the enterprise does), **business processes** (BP — how it does it), and **value streams** (VS — end-to-end value delivery). An optional **macro-capability** overlay (MC — executive navigation grouping L1s) is provided for catalogues where the L1 layer is larger than the 10–20 sweet spot. It is intentionally tool-agnostic and can be used in any Enterprise Architecture management solution — well beyond [Turbo EA](https://www.turbo-ea.org). This site exists to help enterprise architects get started with the implementation of an EA function, by providing a curated, opinionated baseline that teams can adopt, adapt, and extend.
 
 <img width="1424" height="678" alt="Screenshot 2026-04-28 at 07 39 44" src="https://github.com/user-attachments/assets/f8deb601-74f2-4b39-92ba-d234ee0494b8" />
 
@@ -11,7 +11,7 @@ An **open-source Business Architecture Reference Catalogue** covering three orth
 - **Python package:** [`turbo-ea-capabilities`](https://pypi.org/project/turbo-ea-capabilities/) on PyPI — embeds the catalogue as bundled JSON for offline / airgapped consumers.
 - **Blog & EA resources:** [`turbo-ea.org/blog`](https://www.turbo-ea.org/blog/).
 
-All governance lives in [`business-capability-governance-model.md`](business-capability-governance-model.md): **Part A** covers the capability reference model (definition, levels, naming, identifiers, metadata); **Part B** covers operational governance (PR workflow, lint rules, versioning, promotion); **Part C** covers the value-stream layer; **Part D** covers the process layer; **Part E** covers cross-layer linkage.
+All governance lives in [`business-capability-governance-model.md`](business-capability-governance-model.md): **Part A** covers the capability reference model (definition, levels, naming, identifiers, metadata); **Part B** covers operational governance (PR workflow, lint rules, versioning, promotion); **Part C** covers the value-stream layer; **Part D** covers the process layer; **Part E** covers cross-layer linkage; **Part F** covers the macro-capability navigation overlay.
  
 ## Layout
 
@@ -20,19 +20,22 @@ turbo-ea-capabilities/
 ├── catalogue/              # YAML source of truth
 │   ├── _index.yaml             # Registry of L1 capability files
 │   ├── _value-streams.yaml     # All value streams + stages
+│   ├── _macro-capabilities.yaml # Optional executive navigation overlay above L1
 │   ├── L1-*.yaml               # One file per L1 capability
 │   ├── processes/              # Business processes
 │   │   ├── _index.yaml         # Registry of BP1 process files
 │   │   └── BP1-*.yaml          # One file per BP1 (Category)
-│   └── i18n/               # Translation sidecars (capabilities, processes, value streams)
+│   └── i18n/               # Translation sidecars (capabilities, processes, value streams, macros)
 │       └── <bcp47>/
 │           ├── L1-*.yaml
 │           ├── _value-streams.yaml
+│           ├── _macro-capabilities.yaml
 │           └── processes/BP1-*.yaml
 ├── schema/                 # JSON Schema 2020-12 for the YAML shape
 │   ├── capability.schema.json
 │   ├── value-stream.schema.json
 │   ├── business-process.schema.json
+│   ├── macro-capability.schema.json
 │   └── i18n.schema.json    # Schema for translation sidecar files
 ├── scripts/                # lint, build_api, build_pkg, cli helpers
 ├── packages/py/            # Python package (turbo_ea_capabilities)
@@ -254,8 +257,9 @@ After `npm run build`, the following endpoints are available under `dist/api/` (
 | `GET /api/by-bp1/<slug>.json` | Single BP1 nested process subtree |
 | `GET /api/business-process/<id>.json` | One process node + its direct children |
 | `GET /api/value-streams.json` | All value streams + stages |
+| `GET /api/macro-capabilities.json` | Macro-capability navigation overlay (groups L1s into executive-level domains) |
 | `GET /api/locales.json` | List of available translation locales |
-| `GET /api/i18n/<locale>.json` | All translated strings for a locale |
+| `GET /api/i18n/<locale>.json` | All translated strings for a locale (capabilities, processes, value streams, macros) |
 
 All responses are static, immutable per build, and cacheable by Cloudflare's edge. The English endpoints are unaffected by translations — locale data is additive and ships separately under `/api/i18n/`.
 
