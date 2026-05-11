@@ -4,28 +4,147 @@ source: _macro-capabilities.yaml
 entries:
   MC-10:
     name: "Gouvernance d'Entreprise et Risque"
+    description: |
+      Définir l'orientation de l'entreprise et les garde-fous qui la maintiennent
+      sur la bonne voie : stratégie, gouvernance, risque, conformité, audit,
+      juridique, continuité des affaires et la fonction d'architecture qui les
+      unit.
+    in_scope:
+      - "Intention stratégique, surveillance du conseil et gouvernance d'entreprise"
+      - "Identification, traitement et suivi des risques d'entreprise"
+      - "Conformité réglementaire, audit interne et conseil juridique"
+      - "Continuité des affaires, préparation aux crises et gouvernance architecturale"
+    out_of_scope:
+      - "Reporting financier et opérations de trésorerie (voir MC-20)"
+      - "Opérations liées aux risques RH (voir MC-30)"
+      - "Risques sectoriels (p. ex. crédit, assurance, sécurité) traités dans le L1 concerné"
     source_hash: sha256-742b9d11877faaa1
   MC-20:
     name: "Finance d'Entreprise"
+    description: |
+      Administrer les ressources financières de l'entreprise : tenue des livres
+      et des comptes, trésorerie, fiscalité, planification et analyse, et le
+      dialogue avec les investisseurs et les marchés de capitaux.
+    in_scope:
+      - "Grand livre, contrôle de gestion et reporting statutaire"
+      - "Trésorerie, liquidité et gestion de cash"
+      - "Conformité fiscale et planification"
+      - "Planification financière, budgétisation, prévision et analyse de performance"
+      - "Relations investisseurs et communication aux marchés de capitaux"
+    out_of_scope:
+      - "Tarification des produits et services (voir MC-40)"
+      - "Opérations de comptabilisation du chiffre d'affaires à l'interface client (voir MC-40)"
+      - "Gestion des dépenses d'achats (voir MC-50)"
     source_hash: sha256-d45328ca473bb0f0
   MC-30:
     name: "Capital Humain"
+    description: |
+      Acquérir, développer, déployer, rémunérer et accompagner la force de
+      travail afin que l'entreprise dispose des bonnes personnes, aux bons
+      postes, au bon niveau de performance.
+    in_scope:
+      - "Planification des effectifs, recrutement, intégration et déploiement"
+      - "Gestion de la performance, des talents, de la succession et de la formation"
+      - "Rémunération, avantages, paie et rétribution globale"
+      - "Relations avec les employés, engagement et départ"
+    out_of_scope:
+      - "Locaux et environnement physique de travail (voir MC-70)"
+      - "Sécurité de la main-d'œuvre dans les opérations réglementées (voir MC-80 pour le cadre politique et le L1 opérationnel pertinent pour l'exécution)"
     source_hash: sha256-ef68e5156c6ba75c
   MC-40:
     name: "Client et Commercial"
+    description: |
+      Acquérir, servir et faire croître les relations clients : génération de la
+      demande, exécution commerciale, gestion de comptes, service client et
+      tarification reliant l'offre à la disposition à payer.
+    in_scope:
+      - "Stratégie marketing, marque et génération de demande"
+      - "Opérations de vente, gestion des opportunités et activation des canaux"
+      - "Cycle de vie de la relation client et gestion de comptes"
+      - "Service client, support et traitement des réclamations"
+      - "Stratégie tarifaire, gestion des listes de prix et gouvernance des remises"
+    out_of_scope:
+      - "Exécution des commandes et logistique (voir MC-50)"
+      - "Facturation, recouvrement et comptabilisation du chiffre d'affaires (voir MC-20)"
+      - "Artefacts clients sectoriels (client bancaire, assuré, abonné télécom, etc.) traités dans leur L1 sectoriel"
     source_hash: sha256-47519d8a70bd3787
   MC-50:
     name: "Chaîne d'Approvisionnement et Achats"
+    description: |
+      Approvisionner les intrants et orchestrer le flux de bout en bout des
+      matières, services et informations du fournisseur au client au juste
+      coût, niveau de service et profil de risque.
+    in_scope:
+      - "Stratégie d'achats, sourcing, contractualisation et achats-à-règlement"
+      - "Qualification, performance et gestion de la relation fournisseur"
+      - "Planification de la chaîne logistique, orchestration et logistique"
+      - "Positionnement des stocks, contrôle et optimisation"
+    out_of_scope:
+      - "Opérations sectorielles (production, raffinage, exploitation minière, opérations d'entrepôt, etc.) traitées dans leur L1"
+      - "Prise de commande client (voir MC-40)"
+      - "Règlement de trésorerie des factures fournisseurs (voir MC-20)"
     source_hash: sha256-23b8a759fde708ca
   MC-60:
     name: "Technologie et Information"
+    description: |
+      Faire fonctionner l'épine dorsale numérique de l'entreprise : services
+      informatiques, patrimoine de données et d'information, et posture de
+      cybersécurité qui les protège.
+    in_scope:
+      - "Stratégie SI, architecture, livraison et exploitation des services"
+      - "Gestion de l'information et des données, gouvernance et plateformes analytiques"
+      - "Politique, contrôles, surveillance et réponse aux incidents de cybersécurité"
+    out_of_scope:
+      - "Logiciels embarqués dans les produits et firmware d'objets connectés (traités au L1 d'ingénierie produit concerné)"
+      - "Systèmes d'information cliniques, bancaires ou télécom sectoriels traités dans leur L1"
+      - "Technologies opérationnelles (OT) des actifs réglementés, co-gouvernées avec le L1 sectoriel pertinent"
     source_hash: sha256-f578fe11ce79d38f
   MC-70:
     name: "Lieu de Travail et Immobilier"
+    description: |
+      Fournir l'environnement de travail physique de l'entreprise : le
+      portefeuille d'installations opérationnelles et l'empreinte immobilière
+      qui hébergent personnes, processus et équipements.
+    in_scope:
+      - "Exploitation et maintenance des installations et services aux occupants"
+      - "Stratégie, acquisition et cession immobilières d'entreprise"
+      - "Aménagement des espaces et gestion de l'occupation"
+    out_of_scope:
+      - "Entreprises immobilières dont la propriété est le produit commercial (voir les L1 sectoriels Immobilier)"
+      - "Actifs de production gouvernés par les L1 de maintenance sectoriels"
+      - "Politique santé, sécurité et environnement (voir MC-80)"
     source_hash: sha256-2af429b32f798951
   MC-80:
     name: "Qualité, Innovation et Connaissance"
+    description: |
+      Élever le standard opérationnel de l'entreprise et renouveler ce qu'elle
+      offre : assurance qualité et HSE, durabilité, moteur d'innovation et de
+      R&D, gestion du cycle de vie produit, et la connaissance, la propriété
+      intellectuelle et les communications qui font fructifier l'apprentissage
+      dans le temps.
+    in_scope:
+      - "Systèmes de management de la qualité et amélioration continue"
+      - "Programmes santé, sécurité, environnement et durabilité"
+      - "Portefeuille d'innovation, R&D et gestion du cycle de vie produit"
+      - "Gestion des connaissances, propriété intellectuelle et communications d'entreprise"
+    out_of_scope:
+      - "Ingénierie produit sectorielle (pharmaceutique, électrique, automobile, etc.) traitée au L1 concerné"
+      - "Communication marketing des produits et offres (voir MC-40)"
+      - "Exécution opérationnelle de la sécurité sur les actifs réglementés, traitée au L1 sectoriel concerné"
     source_hash: sha256-8a8128aa3ace91c4
   MC-90:
     name: "Projet, Changement et Processus"
+    description: |
+      Transformer l'intention en résultats : portefeuille et livraison de
+      projets, adoption du changement organisationnel, transformation
+      d'entreprise, et la discipline des processus métier qui capture, mesure
+      et améliore la manière dont le travail est effectué.
+    in_scope:
+      - "Gestion du portefeuille de projets et de programmes"
+      - "Gestion du changement organisationnel et adoption"
+      - "Orchestration de la transformation à l'échelle de l'entreprise"
+      - "Modélisation, performance et amélioration des processus métier"
+    out_of_scope:
+      - "Pratiques techniques de livraison propres à l'informatique (voir MC-60)"
+      - "Gestion de programmes sectoriels (programmes défense, programmes véhicules, développement pharma, projets miniers) traités au L1 concerné"
     source_hash: sha256-bdf5fbe3800d21eb
