@@ -46,7 +46,11 @@
 
 12. [Cross-Layer Linkage](#12-cross-layer-linkage)
 
-13. [Glossary](#13-glossary)
+**Part F — Macro Capability Layer** *(optional executive navigation overlay above L1)*
+
+13. [Macro Capability Layer](#13-macro-capability-layer)
+
+14. [Glossary](#14-glossary)
 
 ---
 
@@ -88,7 +92,7 @@ A Business Capability answers the question **"What must the enterprise be able t
 
 ## 3. Capability Levels
 
-Every node in the hierarchy is a **Business Capability**. There are no separate concepts such as "Domain", "Area", or "Group" above the capability layer — those are categorisation conveniences, not capabilities, and introduce naming ambiguity.
+Every node in the hierarchy is a **Business Capability**. There are no separate concepts such as "Domain", "Area", or "Group" inside the capability hierarchy — non-capability tree nodes are categorisation conveniences, not capabilities, and introduce naming ambiguity. (A *Macro Capability* artefact — see [Part F](#13-macro-capability-layer) — exists as a separate, orthogonal navigation overlay above L1 for the case where the L1 count is too large for unaided executive consumption. It does **not** enter this hierarchy.)
 
 Levels are simply **decomposition depths** of a single concept.
 
@@ -1271,7 +1275,95 @@ The same capability (`BC-100 Customer Order Management`) appears in multiple sta
 
 ---
 
-## 13. Glossary
+## Part F — Macro Capability Layer
+
+## 13. Macro Capability Layer
+
+When the L1 layer grows beyond the 10–20 sweet spot recommended in [Section 3](#3-capability-levels), unaided consumption gets difficult. The Cross-Industry baseline in this catalogue is the canonical case: it ships with 41 L1s. A **Macro Capability** is a thin navigation overlay that groups a small set of L1s for executive consumption without changing any of them.
+
+### 13.1 Source of truth
+
+- Single file: `catalogue/_macro-capabilities.yaml`.
+- Schema: [`schema/macro-capability.schema.json`](schema/macro-capability.schema.json).
+- Translation sidecars: `catalogue/i18n/<locale>/_macro-capabilities.yaml`, validated by [`schema/i18n.schema.json`](schema/i18n.schema.json) (`kind: macro-capability`).
+
+### 13.2 Identifiers
+
+- **Macro id:** `MC-<n>` with sparse 10/20/30 numbering, e.g. `MC-10`, `MC-20`. Stable; never reused.
+- Distinct prefix (`MC-`) keeps macros unambiguous from `BC-` capabilities; the namespace does not overlap with future BC ids.
+
+### 13.3 Naming
+
+- **Title Case noun phrase, 2–5 words.** No verbs, no articles. Same rules as capability names ([Section 5](#5-naming-convention)).
+- Names express the *executive theme* of the L1s grouped, not a duplicate of any single L1.
+
+### 13.4 What macros link to
+
+- **`capability_ids` is L1 only.** Macros never reference L2+ ids; sub-scope detail belongs in the L1 itself.
+- **MECE between macros.** Every Cross-Industry L1 belongs to **exactly one** macro. Lint and `npm run check:macro-coverage` enforce this — orphans (no claim) and double-claims (two macros) both fail strict mode.
+- Macros do **not** appear in value-stream `capability_ids` or in business-process `realizes_capability_ids`. Stages and processes continue to anchor on L1 unchanged.
+
+### 13.5 Industry tagging
+
+- Same vocabulary as the rest of the catalogue ([Section 7.7](#77-industry-classification)). `Cross-Industry` must stand alone.
+- The Cross-Industry baseline ships with 9 macros covering all 41 Cross-Industry L1s. The schema supports industry-specific macros (`industry: Banking`, etc.) for future use; authoring them is out of scope today.
+
+### 13.6 Reference baseline (Cross-Industry)
+
+The shipped Cross-Industry macros are aligned with the BC-ID hundred blocks the catalogue already encodes, so the grouping reads naturally to anyone familiar with the existing numbering:
+
+| Macro | Name | Covers BC ids | Count |
+|---|---|---|---:|
+| `MC-10` | Enterprise Governance & Risk | `BC-100`..`BC-170` | 8 |
+| `MC-20` | Corporate Finance | `BC-200`..`BC-240` | 5 |
+| `MC-30` | Human Capital | `BC-300` | 1 |
+| `MC-40` | Customer & Commercial | `BC-400`..`BC-440` | 5 |
+| `MC-50` | Supply Chain & Procurement | `BC-500`..`BC-530` | 4 |
+| `MC-60` | Technology & Information | `BC-600`..`BC-620` | 3 |
+| `MC-70` | Workplace & Facilities | `BC-700`, `BC-710` | 2 |
+| `MC-80` | Quality, Innovation & Knowledge | `BC-720`..`BC-740`, `BC-800`..`BC-850` | 9 |
+| `MC-90` | Project, Change & Process | `BC-900`..`BC-930` | 4 |
+
+Adopters can re-cluster freely (e.g. fold MC-70 into MC-30 as a "People & Workplace" macro) — the MECE lint check catches any drift, and the `mc:add` CLI keeps id allocation deterministic.
+
+### 13.7 What macros are not
+
+- **Not capabilities.** They have their own id space (`MC-`) and live outside the BC tree. They are *not* nodes the tree decomposes through.
+- **Not strategic statements.** They are a navigation aid; the strategic narrative lives on L1 (and below).
+- **Not a substitute for the L1 layer.** Removing a macro never removes an L1; reassigning an L1 between macros does not touch the L1 id, level, or any downstream link.
+- **Optional.** A repository can ship without `_macro-capabilities.yaml`; the rest of the catalogue and the wheel keep working unchanged.
+
+### 13.8 Lifecycle
+
+- New macro: `npm run mc:add -- --name "..." --capabilities BC-100,BC-110,...` picks the next sparse `MC-` id and writes the entry.
+- Move an L1 between macros: edit `_macro-capabilities.yaml` directly. `check:macro-coverage` will catch any MECE violation.
+- Deprecate a macro: set `deprecated: true` and `deprecation_reason`; optionally point `successor_id` at the macro that absorbs its L1s. The L1s themselves are unchanged.
+- Adding a new Cross-Industry L1: register the new id in exactly one macro's `capability_ids` in the same PR. CI fails otherwise (`check:macro-coverage --strict`).
+
+### 13.9 Wheel surface
+
+The Python wheel exposes the layer additively:
+
+```python
+from turbo_ea_capabilities import (
+    load_macros,                   # all macros, author order
+    get_macro,                     # by MC-id
+    get_macros_for_capability,     # walks to L1 ancestor, returns the (≤1) claiming macro
+    get_capabilities_in_macro,     # Capability objects in the macro
+)
+```
+
+Every L1 carries a derived `macro_id` backlink populated at build time. Pre-existing wheel callers are unaffected: no field is removed, `Capability.level` stays bounded `[1..4]`, and `SCHEMA_VERSION` does not change when only macros are added or edited.
+
+### 13.10 Site rendering
+
+When `_macro-capabilities.yaml` is present, the Astro site renders the macros as the visual L1 tier on the [`/capabilities`](https://catalog.turbo-ea.org/capabilities) page: each macro is a top-level card; the BC L1s it claims appear as L2-style children inside; their L2s/L3s become L3/L4 inside the card. Industry-specific L1s with no macro keep their original L1 card position under their industry. Each macro also has its own deep-link page at `/macro/MC-10`..`/macro/MC-90`, mirroring the per-L1 detail page.
+
+The underlying JSON artefacts and the Python wheel keep BC L1 at `level: 1` — the shift is purely a presentation transform built on top of the existing catalogue browser. Consumers that ignore the macro layer see exactly the same tree they always did.
+
+---
+
+## 14. Glossary
 
 | Term | Definition |
 |---|---|
@@ -1286,6 +1378,7 @@ The same capability (`BC-100 Customer Order Management`) appears in multiple sta
 | **MECE** | Mutually Exclusive, Collectively Exhaustive. |
 | **Noun Phrase** | A grammatical unit whose head is a noun (e.g. *Customer Order Management*). Names a thing; does not describe an action. |
 | **TOGAF** | The Open Group Architecture Framework. |
+| **Macro Capability** | See [Section 13](#13-macro-capability-layer). A navigation overlay above L1 that groups L1 capabilities for executive consumption. `MC-` id space, MECE between macros, single-file source of truth. Orthogonal artefact — does not enter the BC tree. |
 | **Value Stream** | An end-to-end set of activities delivering value to a stakeholder; orthogonal to capabilities. See [Section 10](#10-value-stream-layer). |
 
 ---

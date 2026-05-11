@@ -72,6 +72,11 @@ class Capability(BaseModel):
     # Reverse indices populated by build_api.ts (empty when no backlinks exist).
     realizes_processes: tuple[str, ...] = ()
     value_stream_stages: tuple[str, ...] = ()
+    # Macro overlay backlink: the MC-id this capability's L1 ancestor belongs
+    # to, if any. Populated by build_api.ts; absent on older snapshots and on
+    # capabilities outside any macro (e.g. industry-specific L1s with no
+    # macro layer yet).
+    macro_id: Optional[str] = None
 
     children: tuple["Capability", ...] = ()
 
@@ -258,6 +263,59 @@ class ValueStream(BaseModel):
         if isinstance(v, (list, tuple)):
             return tuple(v)
         raise TypeError(f"Expected list/tuple, got {type(v).__name__}")
+
+
+class MacroCapability(BaseModel):
+    """An executive navigation overlay above L1.
+
+    Each macro names a small set of L1 capabilities it groups. Macros are an
+    orthogonal artefact (like value streams): they do not enter the BC tree,
+    do not change L1 ids/levels, and do not participate in value-stream or
+    business-process links. See ``schema/macro-capability.schema.json`` and
+    the Macro Capability section in
+    ``business-capability-governance-model.md``.
+    """
+
+    model_config = ConfigDict(frozen=True, extra="forbid")
+
+    id: str
+    name: str
+    description: Optional[str] = None
+    industry: str
+    capability_ids: tuple[str, ...]
+    in_scope: tuple[str, ...] = ()
+    out_of_scope: tuple[str, ...] = ()
+    references: tuple[str, ...] = ()
+    framework_refs: tuple[FrameworkRef, ...] = ()
+    deprecated: bool = False
+    deprecation_reason: Optional[str] = None
+    successor_id: Optional[str] = None
+    metadata: dict[str, Any] = Field(default_factory=dict)
+
+    @field_validator(
+        "capability_ids", "in_scope", "out_of_scope", "references", mode="before"
+    )
+    @classmethod
+    def _coerce_to_tuple(cls, v: Any) -> tuple[str, ...]:
+        if v is None:
+            return ()
+        if isinstance(v, (list, tuple)):
+            return tuple(v)
+        raise TypeError(f"Expected list/tuple, got {type(v).__name__}")
+
+    @field_validator("framework_refs", mode="before")
+    @classmethod
+    def _coerce_framework_refs(cls, v: Any) -> tuple[Any, ...]:
+        if v is None:
+            return ()
+        if isinstance(v, (list, tuple)):
+            return tuple(v)
+        raise TypeError(f"Expected list/tuple, got {type(v).__name__}")
+
+    def localized(self, lang: str, *, fallback: str = "en") -> "MacroCapability":
+        from ._loader import _localize_macro_capability  # noqa: PLC0415
+
+        return _localize_macro_capability(self, lang, fallback)
 
 
 # Forward-ref rebuild for Pydantic v2.

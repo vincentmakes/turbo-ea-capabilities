@@ -25,6 +25,8 @@ export interface FlatCapability extends Omit<RawCapability, "children"> {
   /** Reverse indices, populated by build_api.ts. Empty in raw YAML. */
   realizes_processes?: string[];
   value_stream_stages?: string[];
+  /** Derived backlink: the macro capability (MC-...) this node's L1 ancestor belongs to, if any. */
+  macro_id?: string;
 }
 
 export interface IndexFile {
@@ -47,10 +49,16 @@ export const BUSINESS_PROCESS_SCHEMA_PATH = join(
   "schema",
   "business-process.schema.json"
 );
+export const MACRO_CAPABILITY_SCHEMA_PATH = join(
+  REPO_ROOT,
+  "schema",
+  "macro-capability.schema.json"
+);
 export const ID_REGEX = /^BC-\d+(\.\d+){0,3}$/;
 export const BP_ID_REGEX = /^BP-\d+(\.\d+){0,3}$/;
 export const VS_ID_REGEX = /^VS-\d+$/;
 export const VS_STAGE_ID_REGEX = /^VS-\d+\.\d+$/;
+export const MC_ID_REGEX = /^MC-\d+$/;
 export const BCP47_REGEX = /^[a-z]{2,3}(-[A-Z][a-z]{3})?(-([A-Z]{2}|[0-9]{3}))?$/;
 
 export function readIndex(): IndexFile {
@@ -120,6 +128,42 @@ export function loadValueStreams(): ValueStream[] {
     | { value_streams?: ValueStream[] }
     | undefined;
   return parsed?.value_streams ?? [];
+}
+
+// ---------------------------------------------------------------------------
+// Macro capabilities — orthogonal navigation overlay above L1.
+// ---------------------------------------------------------------------------
+
+export interface MacroCapabilityFrameworkRef {
+  framework: string;
+  external_id: string;
+  version?: string;
+  url?: string;
+}
+
+export interface MacroCapability {
+  id: string;
+  name: string;
+  description?: string;
+  industry: string;
+  capability_ids: string[];
+  in_scope?: string[];
+  out_of_scope?: string[];
+  references?: string[];
+  framework_refs?: MacroCapabilityFrameworkRef[];
+  deprecated?: boolean;
+  deprecation_reason?: string;
+  successor_id?: string;
+  metadata?: Record<string, unknown>;
+}
+
+export function loadMacroCapabilities(): MacroCapability[] {
+  const path = join(CATALOGUE_DIR, "_macro-capabilities.yaml");
+  if (!existsSync(path)) return [];
+  const parsed = YAML.parse(readFileSync(path, "utf8")) as
+    | { macros?: MacroCapability[] }
+    | undefined;
+  return parsed?.macros ?? [];
 }
 
 // ---------------------------------------------------------------------------
@@ -368,7 +412,12 @@ export function listSidecarFiles(locale: string): string[] {
       continue;
     }
     if (!f.endsWith(".yaml")) continue;
-    if (f.startsWith("_") && f !== "_value-streams.yaml") continue;
+    if (
+      f.startsWith("_") &&
+      f !== "_value-streams.yaml" &&
+      f !== "_macro-capabilities.yaml"
+    )
+      continue;
     out.push(f);
   }
   return out;

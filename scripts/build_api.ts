@@ -27,11 +27,13 @@ import {
   listSidecarFiles,
   loadAllBP1Files,
   loadAllL1Files,
+  loadMacroCapabilities,
   loadSidecar,
   loadValueStreams,
   type FlatBusinessProcess,
   type FlatCapability,
   type LocalizedFields,
+  type MacroCapability,
   type RawBusinessProcess,
   type RawCapability,
 } from "./lib/load.ts";
@@ -280,6 +282,28 @@ for (const stream of valueStreams) {
 writeJson(join(DIST_API, "value-streams.json"), valueStreams);
 
 // ---------------------------------------------------------------------------
+// Macro capabilities (orthogonal navigation overlay above L1).
+// ---------------------------------------------------------------------------
+const macros = loadMacroCapabilities();
+const macroByL1 = new Map<string, string>(); // BC L1 id -> MC id
+for (const macro of macros) {
+  for (const cid of macro.capability_ids ?? []) {
+    if (!knownIds.has(cid)) {
+      throw new Error(
+        `Macro '${macro.name}' (${macro.id}) references unknown capability ${cid}`
+      );
+    }
+    if (macroByL1.has(cid)) {
+      throw new Error(
+        `Macro MECE violation at build: L1 '${cid}' claimed by both ${macroByL1.get(cid)} and ${macro.id}`
+      );
+    }
+    macroByL1.set(cid, macro.id);
+  }
+}
+writeJson(join(DIST_API, "macro-capabilities.json"), macros);
+
+// ---------------------------------------------------------------------------
 // Reverse indices: which processes realize each capability, which value-stream
 // stages mention each capability or process. Authoring stays single-source on
 // the BP side (`realizes_capability_ids`) and on the VS side (stage ids); the
@@ -311,10 +335,15 @@ for (const stream of valueStreams) {
 function attachCapReverseIndices(node: FlatCapability): FlatCapability {
   const realizes = capToProcesses.get(node.id);
   const vsStages = capToVsStages.get(node.id);
+  // Macro backlink: walk to the L1 ancestor (first dotted segment) and look up
+  // its macro. Same macro inherits from L1 down to all descendants.
+  const l1Id = node.id.split(".")[0];
+  const macroId = macroByL1.get(l1Id);
   return {
     ...node,
     ...(realizes && realizes.length > 0 && { realizes_processes: [...realizes].sort(compareIds) }),
     ...(vsStages && vsStages.length > 0 && { value_stream_stages: [...vsStages].sort(compareIds) }),
+    ...(macroId && { macro_id: macroId }),
   };
 }
 
@@ -393,6 +422,8 @@ interface LocaleSummary {
   processes_translated: number;
   value_stream_count: number;
   value_streams_translated: number;
+  macro_count: number;
+  macros_translated: number;
 }
 
 const localeSummaries: LocaleSummary[] = [];
@@ -407,10 +438,12 @@ for (const locale of listLocales()) {
   let l1Count = 0;
   let bp1Count = 0;
   let vsTouched = false;
+  let macroTouched = false;
   for (const file of listSidecarFiles(locale)) {
     const { data } = loadSidecar(locale, file);
     if (file.startsWith("processes/")) bp1Count++;
     else if (file === "_value-streams.yaml") vsTouched = true;
+    else if (file === "_macro-capabilities.yaml") macroTouched = true;
     else l1Count++;
     for (const [id, fields] of Object.entries(data.entries)) {
       // Schema validation in lint guarantees no cross-source collisions, but
@@ -419,12 +452,12 @@ for (const locale of listLocales()) {
       merged[id] = fields;
     }
   }
-  // Sort keys deterministically (BC- first, BP- second, VS- third).
+  // Sort keys deterministically (BC- first, BP- second, VS- third, MC- fourth).
   const sortedIds = Object.keys(merged).sort((a, b) => {
     const aPrefix = a.split("-")[0];
     const bPrefix = b.split("-")[0];
     if (aPrefix !== bPrefix) {
-      const order = { BC: 0, BP: 1, VS: 2 } as Record<string, number>;
+      const order = { BC: 0, BP: 1, VS: 2, MC: 3 } as Record<string, number>;
       return (order[aPrefix] ?? 9) - (order[bPrefix] ?? 9);
     }
     return compareIds(a, b);
@@ -442,7 +475,11 @@ for (const locale of listLocales()) {
   const vsTranslated = sortedIds.filter(
     (id) => id.startsWith("VS-") && (merged[id].name !== undefined || merged[id].stage_name !== undefined)
   ).length;
+  const macrosTranslated = sortedIds.filter(
+    (id) => id.startsWith("MC-") && merged[id].name !== undefined
+  ).length;
   void vsTouched;
+  void macroTouched;
   localeSummaries.push({
     locale,
     total: totalNodes,
@@ -453,6 +490,8 @@ for (const locale of listLocales()) {
     processes_translated: processesTranslated,
     value_stream_count: totalVsEntries,
     value_streams_translated: vsTranslated,
+    macro_count: macros.length,
+    macros_translated: macrosTranslated,
   });
 }
 
@@ -470,6 +509,8 @@ const localesManifest = {
       processes_translated: totalProcesses,
       value_stream_count: totalVsEntries,
       value_streams_translated: totalVsEntries,
+      macro_count: macros.length,
+      macros_translated: macros.length,
     },
     ...Object.fromEntries(
       localeSummaries.map((s) => [s.locale, s as Omit<LocaleSummary, "locale">])
@@ -480,7 +521,7 @@ writeJson(join(DIST_API, "locales.json"), localesManifest);
 
 // pretty summary
 console.log(
-  `✔ build_api: ${flatSorted.length} cap, ${bpFlatSorted.length} bp, ${valueStreams.length} vs → dist/api/`
+  `✔ build_api: ${flatSorted.length} cap, ${bpFlatSorted.length} bp, ${valueStreams.length} vs, ${macros.length} mc → dist/api/`
 );
 console.log(
   `  catalogue_version=${version.catalogue_version} schema_version=${version.schema_version}`
@@ -488,7 +529,7 @@ console.log(
 if (localeSummaries.length) {
   console.log(
     `  locales: ${localeSummaries
-      .map((s) => `${s.locale} (${s.translated}/${s.total} cap, ${s.processes_translated}/${s.process_count} bp)`)
+      .map((s) => `${s.locale} (${s.translated}/${s.total} cap, ${s.processes_translated}/${s.process_count} bp, ${s.macros_translated}/${s.macro_count} mc)`)
       .join(", ")}`
   );
 }

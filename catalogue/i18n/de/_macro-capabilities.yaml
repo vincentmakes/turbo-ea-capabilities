@@ -1,0 +1,150 @@
+kind: macro-capability
+locale: de
+source: _macro-capabilities.yaml
+entries:
+  MC-10:
+    name: "Unternehmensführung & Risiko"
+    description: |
+      Die Ausrichtung des Unternehmens festlegen und die Leitplanken setzen,
+      die es auf Kurs halten: Strategie, Governance, Risiko, Compliance,
+      Revision, Recht, Geschäftskontinuität sowie die Architekturfunktion,
+      die sie zusammenhält.
+    in_scope:
+      - "Strategische Ausrichtung, Aufsicht durch den Vorstand und Unternehmensführung"
+      - "Identifikation, Behandlung und Überwachung von Unternehmensrisiken"
+      - "Regulatorische Compliance, interne Revision und Rechtsberatung"
+      - "Geschäftskontinuität, Krisenvorsorge und Architektur-Governance"
+    out_of_scope:
+      - "Finanzberichterstattung und Treasury-Operations (siehe MC-20)"
+      - "Personalbezogene Risikooperationen (siehe MC-30)"
+      - "Branchenspezifische Risiken (z. B. Kredit, Versicherung, Sicherheit), die im jeweiligen L1 behandelt werden"
+    source_hash: sha256-742b9d11877faaa1
+  MC-20:
+    name: "Konzernfinanzen"
+    description: |
+      Verwalten der finanziellen Ressourcen des Unternehmens: Buchführung,
+      Treasury, Steuern, Planung und Analyse sowie der Dialog mit Investoren
+      und Kapitalmärkten.
+    in_scope:
+      - "Hauptbuch, Controllership und gesetzliche Berichterstattung"
+      - "Treasury-, Cash- und Liquiditätsmanagement"
+      - "Steuerliche Compliance und Planung"
+      - "Finanzplanung, Budgetierung, Forecasting und Performance-Analyse"
+      - "Investor Relations und Kapitalmarktkommunikation"
+    out_of_scope:
+      - "Preisgestaltung von Produkten und Dienstleistungen (siehe MC-40)"
+      - "Umsatzrealisierung an der Kundenschnittstelle (siehe MC-40)"
+      - "Beschaffungsausgaben-Management (siehe MC-50)"
+    source_hash: sha256-d45328ca473bb0f0
+  MC-30:
+    name: "Humankapital"
+    description: |
+      Mitarbeiter gewinnen, entwickeln, einsetzen, vergüten und unterstützen,
+      damit das Unternehmen die richtigen Personen in den richtigen Rollen
+      auf dem richtigen Leistungsniveau hat.
+    in_scope:
+      - "Personalplanung, Recruiting, Onboarding und Einsatz"
+      - "Performance-, Talent-, Nachfolge- und Lernmanagement"
+      - "Vergütung, Sozialleistungen, Gehaltsabrechnung und Total Rewards"
+      - "Mitarbeiterbeziehungen, Engagement und Austritt"
+    out_of_scope:
+      - "Arbeitsstätten und physisches Arbeitsumfeld (siehe MC-70)"
+      - "Arbeitssicherheit in regulierten Operationen (siehe MC-80 für den Politikrahmen und das einschlägige operative L1 für die Ausführung)"
+    source_hash: sha256-ef68e5156c6ba75c
+  MC-40:
+    name: "Kunde & Geschäft"
+    description: |
+      Kundenbeziehungen gewinnen, betreuen und ausbauen: Nachfragegenerierung,
+      Vertriebsausführung, Account-Management, Kundenservice und die
+      Preisgestaltung, die Angebot und Zahlungsbereitschaft verbindet.
+    in_scope:
+      - "Marketingstrategie, Marke und Nachfragegenerierung"
+      - "Vertriebsoperationen, Opportunity-Management und Kanal-Enablement"
+      - "Lebenszyklus der Kundenbeziehung und Account-Management"
+      - "Kundenservice, Support und Beschwerdemanagement"
+      - "Preisstrategie, Preislisten-Management und Rabatt-Governance"
+    out_of_scope:
+      - "Auftragsabwicklung und Logistik (siehe MC-50)"
+      - "Fakturierung, Inkasso und Umsatzbuchhaltung (siehe MC-20)"
+      - "Branchenspezifische Kundenartefakte (Bankkunde, Versicherungsnehmer, Telekom-Subscriber usw.), die in ihrem Branchen-L1 behandelt werden"
+    source_hash: sha256-47519d8a70bd3787
+  MC-50:
+    name: "Lieferkette & Einkauf"
+    description: |
+      Vorleistungen beschaffen und den End-to-End-Fluss von Material,
+      Dienstleistungen und Informationen vom Lieferanten zum Kunden zu den
+      richtigen Kosten, Servicegrad und Risikoprofil orchestrieren.
+    in_scope:
+      - "Beschaffungsstrategie, Sourcing, Vertragsmanagement und Purchase-to-Pay"
+      - "Lieferantenqualifizierung, -performance und Beziehungsmanagement"
+      - "Supply-Chain-Planung, Auftragsabwicklung und Logistik"
+      - "Bestandspositionierung, -kontrolle und -optimierung"
+    out_of_scope:
+      - "Branchenspezifische Operationen (Fertigung, Raffinerie, Bergbau, Lageroperationen usw.), die in ihrem L1 behandelt werden"
+      - "Erfassung von Kundenaufträgen (siehe MC-40)"
+      - "Treasury-Abwicklung von Lieferantenrechnungen (siehe MC-20)"
+    source_hash: sha256-23b8a759fde708ca
+  MC-60:
+    name: "Technologie & Information"
+    description: |
+      Das digitale Rückgrat des Unternehmens betreiben: IT-Services, der
+      Daten- und Informationsbestand sowie die Cybersecurity-Haltung, die
+      beide schützt.
+    in_scope:
+      - "IT-Strategie, Architektur, Service Delivery und Operations"
+      - "Informations- und Datenmanagement, Governance und Analyseplattformen"
+      - "Cybersecurity-Richtlinien, Kontrollen, Überwachung und Incident-Response"
+    out_of_scope:
+      - "Produkteingebettete Software und Connected-Device-Firmware (im jeweiligen Produkt-Engineering-L1 behandelt)"
+      - "Branchenspezifische klinische, Bank- oder Telekom-Informationssysteme, die in ihrem L1 behandelt werden"
+      - "Operational Technology (OT) regulierter Anlagen, gemeinsam mit dem einschlägigen Branchen-L1 verwaltet"
+    source_hash: sha256-f578fe11ce79d38f
+  MC-70:
+    name: "Arbeitsplatz & Liegenschaften"
+    description: |
+      Die physische Arbeitsumgebung des Unternehmens bereitstellen: das
+      operative Facilities-Portfolio und der Corporate-Real-Estate-Footprint,
+      die Menschen, Prozesse und Geräte beherbergen.
+    in_scope:
+      - "Facility-Betrieb, Instandhaltung und Workplace-Services"
+      - "Corporate-Real-Estate-Strategie, -Erwerb und -Veräußerung"
+      - "Flächenplanung und Nutzungsmanagement"
+    out_of_scope:
+      - "Immobilienunternehmen, deren Eigentum das kommerzielle Produkt ist (siehe Real-Estate-Branchen-L1s)"
+      - "Produktionsanlagen, die von Branchen-Instandhaltungs-L1s verwaltet werden"
+      - "Health-, Safety- und Environment-Politik (siehe MC-80)"
+    source_hash: sha256-2af429b32f798951
+  MC-80:
+    name: "Qualität, Innovation & Wissen"
+    description: |
+      Das operative Niveau des Unternehmens heben und sein Angebot erneuern:
+      Qualitäts- und HSE-Sicherung, Nachhaltigkeit, der Innovations- und
+      F&E-Motor, Produktlebenszyklus-Steuerung sowie Wissen, geistiges
+      Eigentum und Kommunikation, die das Lernen im Zeitablauf
+      kapitalisieren.
+    in_scope:
+      - "Qualitätsmanagementsysteme und kontinuierliche Verbesserung"
+      - "Programme für Gesundheit, Arbeitsschutz, Umwelt und Nachhaltigkeit"
+      - "Innovationsportfolio, Forschung und Entwicklung sowie Produktlebenszyklus-Management"
+      - "Wissensmanagement, geistiges Eigentum und Unternehmenskommunikation"
+    out_of_scope:
+      - "Branchenspezifische Produktentwicklung (Pharma, Elektrotechnik, Fahrzeug usw.), die im jeweiligen L1 behandelt wird"
+      - "Marketing-Kommunikation von Produkten und Angeboten (siehe MC-40)"
+      - "Operative Sicherheitsausführung an regulierten Anlagen, die im jeweiligen Branchen-L1 behandelt wird"
+    source_hash: sha256-8a8128aa3ace91c4
+  MC-90:
+    name: "Projekt, Wandel & Prozess"
+    description: |
+      Absicht in Ergebnisse verwandeln: Portfolio- und Projektdelivery,
+      Adoption organisatorischen Wandels, Unternehmenstransformation und die
+      Geschäftsprozess-Disziplin, die erfasst, misst und verbessert, wie
+      Arbeit getan wird.
+    in_scope:
+      - "Projekt- und Programm-Portfoliomanagement"
+      - "Organisatorisches Change Management und Adoption"
+      - "Unternehmensweite Transformations-Orchestrierung"
+      - "Geschäftsprozessmodellierung, -performance und -verbesserung"
+    out_of_scope:
+      - "Technische Lieferpraktiken, die speziell für die IT gelten (siehe MC-60)"
+      - "Branchenspezifisches Programm-Management (Verteidigungsprogramme, Fahrzeugprogramme, Pharma-Entwicklung, Bergbau-Projekte), das im jeweiligen L1 behandelt wird"
+    source_hash: sha256-bdf5fbe3800d21eb

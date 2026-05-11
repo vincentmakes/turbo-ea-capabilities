@@ -2,14 +2,14 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://business-capabilities.turbo-ea.org/schema/i18n.schema.json",
   "title": "ArtefactTranslations",
-  "description": "Sidecar translation file. One file per (locale, source) tuple. The optional `kind` field selects the artefact this sidecar translates (capability | value-stream | business-process). Default is 'capability' for back-compat with pre-VS/BP sidecars. Identifiers, levels, industry tags, references, framework refs, and lifecycle metadata stay locale-neutral in the source YAML.",
+  "description": "Sidecar translation file. One file per (locale, source) tuple. The optional `kind` field selects the artefact this sidecar translates (capability | value-stream | business-process | macro-capability). Default is 'capability' for back-compat with pre-VS/BP sidecars. Identifiers, levels, industry tags, references, framework refs, and lifecycle metadata stay locale-neutral in the source YAML.",
   "type": "object",
   "required": ["locale", "source", "entries"],
   "additionalProperties": false,
   "properties": {
     "kind": {
       "type": "string",
-      "enum": ["capability", "value-stream", "business-process"],
+      "enum": ["capability", "value-stream", "business-process", "macro-capability"],
       "default": "capability",
       "description": "Artefact this sidecar translates. Selects which `entries` key pattern and which translatable-field set apply."
     },
@@ -20,8 +20,8 @@
     },
     "source": {
       "type": "string",
-      "description": "Filename of the source artefact this translates. For capabilities: 'L1-<slug>.yaml'. For business processes: 'BP1-<slug>.yaml'. For the value-stream catalogue: '_value-streams.yaml'.",
-      "pattern": "^(L1-[a-z0-9-]+\\.yaml|BP1-[a-z0-9-]+\\.yaml|_value-streams\\.yaml)$"
+      "description": "Filename of the source artefact this translates. For capabilities: 'L1-<slug>.yaml'. For business processes: 'BP1-<slug>.yaml'. For the value-stream catalogue: '_value-streams.yaml'. For macro capabilities: '_macro-capabilities.yaml'.",
+      "pattern": "^(L1-[a-z0-9-]+\\.yaml|BP1-[a-z0-9-]+\\.yaml|_value-streams\\.yaml|_macro-capabilities\\.yaml)$"
     },
     "entries": {
       "type": "object",
@@ -31,7 +31,8 @@
       "patternProperties": {
         "^BC-\\d+(\\.\\d+){0,3}$": { "$ref": "#/$defs/CapabilityFields" },
         "^BP-\\d+(\\.\\d+){0,3}$": { "$ref": "#/$defs/CapabilityFields" },
-        "^VS-\\d+(\\.\\d+)?$": { "$ref": "#/$defs/ValueStreamFields" }
+        "^VS-\\d+(\\.\\d+)?$": { "$ref": "#/$defs/ValueStreamFields" },
+        "^MC-\\d+$": { "$ref": "#/$defs/MacroCapabilityFields" }
       }
     },
     "metadata": {
@@ -85,6 +86,29 @@
           "description": "Optional staleness marker. SHA-256 fingerprint (first 16 hex chars) of the source stream/stage's translatable surface at the time this entry was authored or last refreshed. Lint recomputes the hash from the current source and flags a mismatch as stale (drift). Run `npm run i18n:stamp` to backfill or refresh."
         }
       }
+    },
+    "MacroCapabilityFields": {
+      "type": "object",
+      "description": "Translatable fields for a macro-capability entry. All optional — omit a field to fall back to the source language for that field only.",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "description": { "type": "string" },
+        "in_scope": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "out_of_scope": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "source_hash": {
+          "type": "string",
+          "pattern": "^sha256-[0-9a-f]{16}$",
+          "description": "Optional staleness marker. SHA-256 fingerprint (first 16 hex chars) of the source macro's translatable surface at the time this entry was authored or last refreshed. Lint recomputes the hash from the current source and flags a mismatch as stale (drift). Run `npm run i18n:stamp` to backfill or refresh."
+        }
+      }
     }
   },
   "allOf": [
@@ -102,7 +126,8 @@
             "patternProperties": {
               "^BC-\\d+(\\.\\d+){0,3}$": true,
               "^BP-\\d+(\\.\\d+){0,3}$": false,
-              "^VS-\\d+(\\.\\d+)?$": false
+              "^VS-\\d+(\\.\\d+)?$": false,
+              "^MC-\\d+$": false
             }
           }
         }
@@ -117,7 +142,8 @@
             "patternProperties": {
               "^BC-\\d+(\\.\\d+){0,3}$": false,
               "^BP-\\d+(\\.\\d+){0,3}$": true,
-              "^VS-\\d+(\\.\\d+)?$": false
+              "^VS-\\d+(\\.\\d+)?$": false,
+              "^MC-\\d+$": false
             }
           }
         }
@@ -132,7 +158,24 @@
             "patternProperties": {
               "^BC-\\d+(\\.\\d+){0,3}$": false,
               "^BP-\\d+(\\.\\d+){0,3}$": false,
-              "^VS-\\d+(\\.\\d+)?$": true
+              "^VS-\\d+(\\.\\d+)?$": true,
+              "^MC-\\d+$": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "kind": { "const": "macro-capability" } }, "required": ["kind"] },
+      "then": {
+        "properties": {
+          "source": { "pattern": "^_macro-capabilities\\.yaml$" },
+          "entries": {
+            "patternProperties": {
+              "^BC-\\d+(\\.\\d+){0,3}$": false,
+              "^BP-\\d+(\\.\\d+){0,3}$": false,
+              "^VS-\\d+(\\.\\d+)?$": false,
+              "^MC-\\d+$": true
             }
           }
         }

@@ -18,6 +18,7 @@ from ._models import (
     BusinessProcess,
     Capability,
     LocalizedFields,
+    MacroCapability,
     ValueStream,
 )
 
@@ -153,6 +154,34 @@ def _vs_records() -> tuple[ValueStream, ...]:
 @lru_cache(maxsize=1)
 def _vs_by_id() -> dict[str, ValueStream]:
     return {v.id: v for v in _vs_records()}
+
+
+# ---------------------------------------------------------------------------
+# Macro capabilities (orthogonal navigation overlay above L1)
+# ---------------------------------------------------------------------------
+@lru_cache(maxsize=1)
+def _macro_records() -> tuple[MacroCapability, ...]:
+    raw = _read_optional_json("macro-capabilities.json")
+    if raw is None:
+        return ()
+    if not isinstance(raw, list):
+        raise RuntimeError("macro-capabilities.json must be a list")
+    return tuple(MacroCapability.model_validate(r) for r in raw)
+
+
+@lru_cache(maxsize=1)
+def _macro_by_id() -> dict[str, MacroCapability]:
+    return {m.id: m for m in _macro_records()}
+
+
+@lru_cache(maxsize=1)
+def _macro_by_capability() -> dict[str, MacroCapability]:
+    """Map L1 BC id -> the macro that claims it (MECE: at most one)."""
+    out: dict[str, MacroCapability] = {}
+    for m in _macro_records():
+        for cid in m.capability_ids:
+            out[cid] = m
+    return out
 
 
 @lru_cache(maxsize=1)
@@ -337,6 +366,51 @@ def get_value_streams_for_process(bp_id: str) -> list[ValueStream]:
 
 
 # ---------------------------------------------------------------------------
+# Public API: macro capabilities
+# ---------------------------------------------------------------------------
+def load_macros() -> list[MacroCapability]:
+    """All macro capabilities in author order.
+
+    Macros are an executive navigation overlay above L1: each names a small
+    set of L1 capabilities it groups. Returns an empty list on snapshots that
+    pre-date the macro layer (no ``macro-capabilities.json`` bundled).
+    """
+    return list(_macro_records())
+
+
+def get_macro(mc_id: str) -> Optional[MacroCapability]:
+    """Look up a macro by its MC-id."""
+    return _macro_by_id().get(mc_id)
+
+
+def get_macros_for_capability(capability_id: str) -> list[MacroCapability]:
+    """Return the macro(s) the given capability belongs to.
+
+    Walks to the L1 ancestor (first dotted segment) and returns the macro
+    claiming that L1. By the MECE invariant the result has at most one entry;
+    returns an empty list for L1s outside any macro (e.g. industry-specific
+    L1s, or any L1 on a snapshot without the macro layer).
+    """
+    l1_id = capability_id.split(".", 1)[0]
+    m = _macro_by_capability().get(l1_id)
+    return [m] if m is not None else []
+
+
+def get_capabilities_in_macro(mc_id: str) -> list[Capability]:
+    """L1 capability objects grouped by the given macro.
+
+    Returns ``Capability`` instances in the macro's authoring order. Skips ids
+    that don't resolve (shouldn't happen on a lint-clean catalogue but tolerated
+    defensively).
+    """
+    macro = _macro_by_id().get(mc_id)
+    if macro is None:
+        return []
+    by_id = _by_id()
+    return [c for c in (by_id.get(cid) for cid in macro.capability_ids) if c is not None]
+
+
+# ---------------------------------------------------------------------------
 # Localization
 # ---------------------------------------------------------------------------
 @lru_cache(maxsize=1)
@@ -437,6 +511,27 @@ def _localize_business_process(
         update["children"] = tuple(
             _localize_business_process(c, lang, fallback) for c in node.children
         )
+    return node.model_copy(update=update) if update else node
+
+
+def _localize_macro_capability(
+    node: MacroCapability, lang: str, fallback: str = "en"
+) -> MacroCapability:
+    if lang == "en":
+        return node
+    table = _locale_table(lang)
+    fields = table.get(node.id)
+    if fields is None:
+        return node
+    update: dict[str, object] = {}
+    if fields.name is not None:
+        update["name"] = fields.name
+    if fields.description is not None:
+        update["description"] = fields.description
+    if fields.in_scope:
+        update["in_scope"] = fields.in_scope
+    if fields.out_of_scope:
+        update["out_of_scope"] = fields.out_of_scope
     return node.model_copy(update=update) if update else node
 
 

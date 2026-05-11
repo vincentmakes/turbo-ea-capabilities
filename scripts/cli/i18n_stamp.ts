@@ -36,10 +36,12 @@ import {
   loadAllBP1Files,
   loadAllL1Files,
   loadAllSidecars,
+  loadMacroCapabilities,
   loadValueStreams,
 } from "../lib/load.ts";
 import {
   hashCapabilityLikeSource,
+  hashMacroCapabilitySource,
   hashValueStreamSource,
   hashValueStreamStageSource,
 } from "../lib/i18n_hash.ts";
@@ -68,6 +70,9 @@ for (const s of streams) {
     if (st.id) stageById.set(st.id, st);
   }
 }
+const macroById = new Map(
+  loadMacroCapabilities().filter((m) => m.id).map((m) => [m.id, m] as const)
+);
 
 let stamped = 0;
 let refreshed = 0;
@@ -104,6 +109,9 @@ for (const sidecar of loadAllSidecars()) {
         const stage = stageById.get(id);
         if (stage) computed = hashValueStreamStageSource(stage);
       }
+    } else if (kind === "macro-capability") {
+      const macro = macroById.get(id);
+      if (macro) computed = hashMacroCapabilitySource(macro);
     }
     if (computed === null) continue; // orphan — lint reports separately
 

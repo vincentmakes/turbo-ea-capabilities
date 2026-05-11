@@ -1,6 +1,6 @@
 # Business Architecture Reference Catalogue
 
-An **open-source Business Architecture Reference Catalogue** covering three orthogonal artefacts: **business capabilities** (BC — what the enterprise does), **business processes** (BP — how it does it), and **value streams** (VS — end-to-end value delivery). It is intentionally tool-agnostic and can be used in any Enterprise Architecture management solution — well beyond [Turbo EA](https://www.turbo-ea.org). This site exists to help enterprise architects get started with the implementation of an EA function, by providing a curated, opinionated baseline that teams can adopt, adapt, and extend.
+An **open-source Business Architecture Reference Catalogue** covering three orthogonal artefacts: **business capabilities** (BC — what the enterprise does), **business processes** (BP — how it does it), and **value streams** (VS — end-to-end value delivery). An optional **macro-capability** overlay (MC — executive navigation grouping L1s) is provided for catalogues where the L1 layer is larger than the 10–20 sweet spot. It is intentionally tool-agnostic and can be used in any Enterprise Architecture management solution — well beyond [Turbo EA](https://www.turbo-ea.org). This site exists to help enterprise architects get started with the implementation of an EA function, by providing a curated, opinionated baseline that teams can adopt, adapt, and extend.
 
 <img width="1424" height="678" alt="Screenshot 2026-04-28 at 07 39 44" src="https://github.com/user-attachments/assets/f8deb601-74f2-4b39-92ba-d234ee0494b8" />
 
@@ -11,7 +11,7 @@ An **open-source Business Architecture Reference Catalogue** covering three orth
 - **Python package:** [`turbo-ea-capabilities`](https://pypi.org/project/turbo-ea-capabilities/) on PyPI — embeds the catalogue as bundled JSON for offline / airgapped consumers.
 - **Blog & EA resources:** [`turbo-ea.org/blog`](https://www.turbo-ea.org/blog/).
 
-All governance lives in [`business-capability-governance-model.md`](business-capability-governance-model.md): **Part A** covers the capability reference model (definition, levels, naming, identifiers, metadata); **Part B** covers operational governance (PR workflow, lint rules, versioning, promotion); **Part C** covers the value-stream layer; **Part D** covers the process layer; **Part E** covers cross-layer linkage.
+All governance lives in [`business-capability-governance-model.md`](business-capability-governance-model.md): **Part A** covers the capability reference model (definition, levels, naming, identifiers, metadata); **Part B** covers operational governance (PR workflow, lint rules, versioning, promotion); **Part C** covers the value-stream layer; **Part D** covers the process layer; **Part E** covers cross-layer linkage; **Part F** covers the macro-capability navigation overlay.
  
 ## Layout
 
@@ -20,19 +20,22 @@ turbo-ea-capabilities/
 ├── catalogue/              # YAML source of truth
 │   ├── _index.yaml             # Registry of L1 capability files
 │   ├── _value-streams.yaml     # All value streams + stages
+│   ├── _macro-capabilities.yaml # Optional executive navigation overlay above L1
 │   ├── L1-*.yaml               # One file per L1 capability
 │   ├── processes/              # Business processes
 │   │   ├── _index.yaml         # Registry of BP1 process files
 │   │   └── BP1-*.yaml          # One file per BP1 (Category)
-│   └── i18n/               # Translation sidecars (capabilities, processes, value streams)
+│   └── i18n/               # Translation sidecars (capabilities, processes, value streams, macros)
 │       └── <bcp47>/
 │           ├── L1-*.yaml
 │           ├── _value-streams.yaml
+│           ├── _macro-capabilities.yaml
 │           └── processes/BP1-*.yaml
 ├── schema/                 # JSON Schema 2020-12 for the YAML shape
 │   ├── capability.schema.json
 │   ├── value-stream.schema.json
 │   ├── business-process.schema.json
+│   ├── macro-capability.schema.json
 │   └── i18n.schema.json    # Schema for translation sidecar files
 ├── scripts/                # lint, build_api, build_pkg, cli helpers
 ├── packages/py/            # Python package (turbo_ea_capabilities)
@@ -40,6 +43,39 @@ turbo-ea-capabilities/
 ├── .claude/skills/         # Claude Code skills for AI-assisted authoring
 ├── CLAUDE.md               # Always-on guardrails for Claude Code sessions
 └── .github/workflows/      # lint on PRs, deploy on push, publish on tag
+```
+
+## Macro capabilities — executive navigation overlay above L1
+
+When the L1 count grows beyond the 10–20 sweet spot recommended by the governance model, the catalogue can ship an optional **Macro Capability** layer that groups L1s into a small set of executive-level domains for navigation. The Cross-Industry baseline ships with **9 macros** covering all 41 Cross-Industry L1s:
+
+| Macro | Name | L1s grouped |
+| --- | --- | --: |
+| `MC-10` | Enterprise Governance & Risk | 8 |
+| `MC-20` | Corporate Finance | 5 |
+| `MC-30` | Human Capital | 1 |
+| `MC-40` | Customer & Commercial | 5 |
+| `MC-50` | Supply Chain & Procurement | 4 |
+| `MC-60` | Technology & Information | 3 |
+| `MC-70` | Workplace & Facilities | 2 |
+| `MC-80` | Quality, Innovation & Knowledge | 9 |
+| `MC-90` | Project, Change & Process | 4 |
+
+Key properties — see [§13 of the governance model](business-capability-governance-model.md#13-macro-capability-layer):
+
+- **Orthogonal artefact.** Macros live in [`catalogue/_macro-capabilities.yaml`](catalogue/_macro-capabilities.yaml) (single file), validated by [`schema/macro-capability.schema.json`](schema/macro-capability.schema.json). They do **not** enter the BC tree, do **not** participate in VS or BP links, and do **not** change any L1 id, level, or file.
+- **`MC-<n>` id space** with sparse 10/20/30 numbering. `capability_ids` is L1-only (no dotted descendants).
+- **MECE between macros.** Every Cross-Industry L1 belongs to exactly one macro — `npm run check:macro-coverage --strict` blocks orphans and double-claims.
+- **Site renders macros as the visual L1.** When `_macro-capabilities.yaml` is present, [`/capabilities`](https://catalog.turbo-ea.org/capabilities) shows 9 macro cards at the top; the BC L1s slide down to L2 in the rendered tree, their L2s to L3, their L3s to L4. Industry-specific L1s with no macro stay at the top tier under their industry. Each macro also has its own deep link at `/macro/MC-10` … `/macro/MC-90`.
+- **Python wheel exposes the layer additively.** Existing callers are unaffected (`Capability.level` stays 1–4, `SCHEMA_VERSION` unchanged). New helpers: `load_macros`, `get_macro`, `get_macros_for_capability`, `get_capabilities_in_macro`; every `Capability` gains an optional derived `macro_id` backlink populated at build time.
+- **i18n sidecars** under `catalogue/i18n/<locale>/_macro-capabilities.yaml` translate `name`, `description`, `in_scope`, `out_of_scope` — same pattern as the other three artefacts.
+
+```bash
+# Add a new macro
+npm run mc:add  -- --name "People & Workplace" --capabilities BC-300,BC-700,BC-710
+
+# Verify MECE coverage
+npm run check:macro-coverage -- --strict
 ```
 
 ## Quick start
@@ -83,9 +119,17 @@ npm run bp:deprecate  -- --id BP-30.10.20 --successor BP-30.10.10 --reason "Merg
 npm run vs:add        -- --name "Quote-to-Cash" --industries Cross-Industry
 npm run vs:add-stage  -- --stream VS-30 --name "Quote Generation" --capabilities BC-100 [--processes BP-10.10]
 npm run vs:deprecate  -- --id VS-30 --successor VS-40 --reason "Merged"
+
+# Macro capabilities (executive navigation overlay above L1)
+npm run mc:add        -- --name "People & Workplace" --capabilities BC-300,BC-700,BC-710
+
+# Coverage checks (run after BC / BP / VS / MC edits)
+npm run check:bc-coverage     -- --strict   # every Cross-Industry L1 has a realising BP
+npm run check:macro-coverage  -- --strict   # every Cross-Industry L1 belongs to exactly one macro
+npm run check:i18n-coverage   -- --strict   # which (BP1 × locale) sidecars are missing
 ```
 
-All editing rules — naming, depth limits, MECE, deprecation — are in [`business-capability-governance-model.md`](business-capability-governance-model.md). Capabilities cap at L4; cross-industry processes cap at L3; value-stream stages link to L1 capabilities.
+All editing rules — naming, depth limits, MECE, deprecation — are in [`business-capability-governance-model.md`](business-capability-governance-model.md). Capabilities cap at L4; cross-industry processes cap at L3; value-stream stages link to L1 capabilities; macro capabilities (Part F) live in a single file (`catalogue/_macro-capabilities.yaml`) and group L1s MECE.
 
 ## AI-assisted authoring with Claude Code
 
@@ -254,8 +298,9 @@ After `npm run build`, the following endpoints are available under `dist/api/` (
 | `GET /api/by-bp1/<slug>.json` | Single BP1 nested process subtree |
 | `GET /api/business-process/<id>.json` | One process node + its direct children |
 | `GET /api/value-streams.json` | All value streams + stages |
+| `GET /api/macro-capabilities.json` | Macro-capability navigation overlay (groups L1s into executive-level domains) |
 | `GET /api/locales.json` | List of available translation locales |
-| `GET /api/i18n/<locale>.json` | All translated strings for a locale |
+| `GET /api/i18n/<locale>.json` | All translated strings for a locale (capabilities, processes, value streams, macros) |
 
 All responses are static, immutable per build, and cacheable by Cloudflare's edge. The English endpoints are unaffected by translations — locale data is additive and ships separately under `/api/i18n/`.
 

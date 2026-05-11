@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://business-capabilities.turbo-ea.org/schema/macro-capability.schema.json",
+  "title": "MacroCapabilityCatalogue",
+  "description": "Reference schema for catalogue/_macro-capabilities.yaml. Macro capabilities are an executive-friendly navigation overlay above L1: each macro names a small set of L1 Business Capabilities it groups. Macros do not enter the BC tree (the L1 trees are unchanged) and do not participate in value-stream or business-process links. Same orthogonal-artefact pattern as value streams.",
+  "type": "object",
+  "required": ["macros"],
+  "additionalProperties": false,
+  "properties": {
+    "macros": {
+      "type": "array",
+      "minItems": 0,
+      "items": { "$ref": "#/$defs/MacroCapability" }
+    }
+  },
+  "$defs": {
+    "MacroCapability": {
+      "type": "object",
+      "required": ["id", "name", "industry", "capability_ids"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable identifier for the macro capability. Sparse 10/20/30 numbering so insertions never renumber siblings.",
+          "pattern": "^MC-\\d+$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Display name. Title Case noun phrase, 2-5 words, no verbs, no articles, no product/vendor/org/geography names."
+        },
+        "description": {
+          "type": "string",
+          "description": "Outcome-oriented summary of what this macro groups (1-3 sentences)."
+        },
+        "industry": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Industry classification. 'Cross-Industry', a single industry, or a ';'-separated list drawn from the catalogue's L1 industry vocabulary."
+        },
+        "capability_ids": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^BC-\\d+$" },
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "L1 capabilities grouped by this macro. Strictly L1 ids (no dotted descendants). Every id must resolve to an existing L1 in the catalogue and across all macros each L1 must be referenced by at most one macro (MECE)."
+        },
+        "in_scope": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "description": "Concrete in-scope outcomes for the macro."
+        },
+        "out_of_scope": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "description": "Concrete out-of-scope outcomes (clarifies MECE between macros)."
+        },
+        "references": {
+          "type": "array",
+          "items": { "type": "string", "format": "uri" },
+          "uniqueItems": true,
+          "description": "External references (URIs) supporting the macro."
+        },
+        "framework_refs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": ["framework", "external_id"],
+            "additionalProperties": false,
+            "properties": {
+              "framework": {
+                "type": "string",
+                "enum": [
+                  "APQC-PCF",
+                  "BIAN",
+                  "eTOM",
+                  "ITIL",
+                  "SCOR",
+                  "DCOR",
+                  "COBIT",
+                  "SHRM-BoCK",
+                  "ISO-55000",
+                  "ISO-31000",
+                  "COSO-ERM",
+                  "TOGAF",
+                  "BIZBOK",
+                  "ACORD",
+                  "ICMM"
+                ]
+              },
+              "external_id": { "type": "string", "minLength": 1 },
+              "version": { "type": "string" },
+              "url": { "type": "string", "format": "uri" }
+            }
+          },
+          "description": "Structured cross-walks to external capability/process frameworks. Used alongside the free-form references[] URI list."
+        },
+        "deprecated": { "type": "boolean", "default": false },
+        "deprecation_reason": { "type": "string" },
+        "successor_id": {
+          "type": "string",
+          "pattern": "^MC-\\d+$"
+        },
+        "metadata": {
+          "type": "object",
+          "additionalProperties": true,
+          "description": "Escape hatch for governance fields not yet promoted to first-class."
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "deprecated": { "const": true } }, "required": ["deprecated"] },
+          "then": { "required": ["deprecation_reason"] }
+        }
+      ]
+    }
+  }
+}

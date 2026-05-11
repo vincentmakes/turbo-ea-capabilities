@@ -1,0 +1,228 @@
+# Macro Capabilities — executive navigation layer above L1.
+#
+# Macros are an orthogonal artefact (like value streams) that group L1
+# capabilities for navigation. They do not enter the BC tree, do not change any
+# L1 id, level, or file, and do not participate in value-stream / business-
+# process links. See business-capability-governance-model.md (Macro Capability
+# Layer) and schema/macro-capability.schema.json for the canonical rules.
+#
+# MECE invariant: every Cross-Industry L1 belongs to exactly one macro.
+# Industry-specific L1s are grouped by their `industry` tag and currently have
+# no macro layer.
+macros:
+  - id: MC-10
+    name: Enterprise Governance & Risk
+    industry: Cross-Industry
+    description: |
+      Setting enterprise direction and the guardrails that keep it on course:
+      strategy, governance, risk, compliance, audit, legal, business
+      continuity, and the architecture function that holds them together.
+    in_scope:
+      - Strategic intent, board oversight, and corporate governance
+      - Enterprise risk identification, treatment, and monitoring
+      - Regulatory compliance, internal audit, and legal advisory
+      - Business continuity, crisis preparedness, and architectural governance
+    out_of_scope:
+      - Financial reporting and treasury operations (see MC-20)
+      - People-related risk operations (see MC-30)
+      - Domain-specific risk (e.g. credit, insurance, safety) handled inside the relevant L1
+    capability_ids:
+      - BC-100
+      - BC-110
+      - BC-120
+      - BC-130
+      - BC-140
+      - BC-150
+      - BC-160
+      - BC-170
+
+  - id: MC-20
+    name: Corporate Finance
+    industry: Cross-Industry
+    description: |
+      Stewarding the financial resources of the enterprise: book and record
+      keeping, treasury, taxation, planning and analysis, and the dialogue with
+      investors and capital markets.
+    in_scope:
+      - General ledger, controllership, and statutory reporting
+      - Treasury, cash, and liquidity management
+      - Tax compliance and planning
+      - Financial planning, budgeting, forecasting, and performance analysis
+      - Investor relations and capital-markets communication
+    out_of_scope:
+      - Pricing of products and services (see MC-40)
+      - Revenue recognition operations at the customer interface (see MC-40)
+      - Procurement spend management (see MC-50)
+    capability_ids:
+      - BC-200
+      - BC-210
+      - BC-220
+      - BC-230
+      - BC-240
+
+  - id: MC-30
+    name: Human Capital
+    industry: Cross-Industry
+    description: |
+      Acquiring, developing, deploying, rewarding, and supporting the workforce
+      so the enterprise has the right people, in the right roles, performing
+      at the right level.
+    in_scope:
+      - Workforce planning, recruiting, onboarding, and deployment
+      - Performance, talent, succession, and learning management
+      - Compensation, benefits, payroll, and total rewards
+      - Employee relations, engagement, and exit
+    out_of_scope:
+      - Workplace facilities and physical work environment (see MC-70)
+      - Workforce safety in regulated operations (see MC-80 for the policy
+        framework and the relevant operational L1 for execution)
+    capability_ids:
+      - BC-300
+
+  - id: MC-40
+    name: Customer & Commercial
+    industry: Cross-Industry
+    description: |
+      Acquiring, serving, and growing customer relationships: demand creation,
+      sales execution, account stewardship, customer service, and the pricing
+      that connects offers to willingness to pay.
+    in_scope:
+      - Marketing strategy, brand, and demand generation
+      - Sales operations, opportunity management, and channel enablement
+      - Customer relationship lifecycle and account management
+      - Customer service, support, and complaint resolution
+      - Pricing strategy, price-list management, and discount governance
+    out_of_scope:
+      - Order fulfilment and logistics execution (see MC-50)
+      - Billing, collection, and revenue accounting (see MC-20)
+      - Industry-specific customer artefacts (banking customer, insurance
+        policyholder, telecom subscriber, etc.) handled at their industry L1
+    capability_ids:
+      - BC-400
+      - BC-410
+      - BC-420
+      - BC-430
+      - BC-440
+
+  - id: MC-50
+    name: Supply Chain & Procurement
+    industry: Cross-Industry
+    description: |
+      Sourcing inputs and orchestrating the end-to-end flow of materials,
+      services, and information from supplier to customer at the right cost,
+      service level, and risk profile.
+    in_scope:
+      - Procurement strategy, sourcing, contracting, and purchase-to-pay
+      - Supplier qualification, performance, and relationship management
+      - Supply-chain planning, fulfilment orchestration, and logistics
+      - Inventory positioning, control, and stock optimisation
+    out_of_scope:
+      - Industry-specific operations (manufacturing, refining, mining,
+        warehousing operations, etc.) handled at their L1
+      - Customer order capture (see MC-40)
+      - Treasury settlement of supplier invoices (see MC-20)
+    capability_ids:
+      - BC-500
+      - BC-510
+      - BC-520
+      - BC-530
+
+  - id: MC-60
+    name: Technology & Information
+    industry: Cross-Industry
+    description: |
+      Running the digital backbone of the enterprise: IT services, the data
+      and information estate, and the cybersecurity posture that protects
+      both.
+    in_scope:
+      - IT strategy, architecture, service delivery, and operations
+      - Information and data management, governance, and analytics platforms
+      - Cybersecurity policy, controls, monitoring, and incident response
+    out_of_scope:
+      - Product-embedded software and connected-device firmware
+        (handled at the relevant product-engineering L1)
+      - Industry-specific clinical, banking, or telecom information systems
+        handled at their L1
+      - Operational technology (OT) of regulated assets, governed jointly
+        with the relevant industry L1
+    capability_ids:
+      - BC-600
+      - BC-610
+      - BC-620
+
+  - id: MC-70
+    name: Workplace & Facilities
+    industry: Cross-Industry
+    description: |
+      Providing the physical work environment of the enterprise: the
+      operational facilities portfolio and the corporate real-estate footprint
+      that house people, processes, and equipment.
+    in_scope:
+      - Facilities operations, maintenance, and workplace services
+      - Corporate real-estate strategy, acquisition, and disposition
+      - Space planning and occupancy management
+    out_of_scope:
+      - Real-estate businesses operating property as their commercial
+        product (see the Real-Estate industry L1s)
+      - Production plant assets governed by industry maintenance L1s
+      - Health, safety, and environment policy (see MC-80)
+    capability_ids:
+      - BC-700
+      - BC-710
+
+  - id: MC-80
+    name: Quality, Innovation & Knowledge
+    industry: Cross-Industry
+    description: |
+      Raising the operating standard of the enterprise and renewing what it
+      offers: quality and HSE assurance, sustainability, the innovation and
+      R&D engine, product-lifecycle stewardship, and the knowledge,
+      intellectual property, and communications that compound learning over
+      time.
+    in_scope:
+      - Quality management systems and continuous improvement
+      - Health, safety, environment, and sustainability programmes
+      - Innovation portfolio, research and development, and product-lifecycle
+        management
+      - Knowledge management, intellectual property, and corporate
+        communications
+    out_of_scope:
+      - Industry-specific product engineering (pharmaceutical, electrical,
+        vehicle, etc.) handled at the relevant L1
+      - Marketing communication of products and offers (see MC-40)
+      - Operational safety execution in regulated assets handled at the
+        relevant industry L1
+    capability_ids:
+      - BC-720
+      - BC-730
+      - BC-740
+      - BC-800
+      - BC-810
+      - BC-820
+      - BC-830
+      - BC-840
+      - BC-850
+
+  - id: MC-90
+    name: Project, Change & Process
+    industry: Cross-Industry
+    description: |
+      Turning intent into outcomes: portfolio and project delivery,
+      organisational change adoption, enterprise transformation, and the
+      business-process discipline that captures, measures, and improves how
+      work is done.
+    in_scope:
+      - Project and programme portfolio management
+      - Organisational change management and adoption
+      - Enterprise-wide transformation orchestration
+      - Business-process modelling, performance, and improvement
+    out_of_scope:
+      - Technical delivery practices specific to IT (see MC-60)
+      - Industry-specific programme management (defence programmes, vehicle
+        programmes, pharma development, mining projects) handled at the
+        relevant L1
+    capability_ids:
+      - BC-900
+      - BC-910
+      - BC-920
+      - BC-930

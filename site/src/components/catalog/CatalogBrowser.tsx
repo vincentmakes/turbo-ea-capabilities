@@ -880,8 +880,19 @@ function DetailModal({
     cursor = a.parent_id;
   }
 
-  const root = ancestors[0] ?? node;
-  const githubYamlUrl = config.githubPathFor(node, root.name);
+  // For GitHub linking we need the source YAML file:
+  //   - macro nodes (MC-) → `_macro-capabilities.yaml` (handled by the kind).
+  //   - capability nodes (BC-) inside a macro subtree → the underlying BC L1
+  //     file, not the MC ancestor. So we pick the first BC-prefixed ancestor
+  //     (or the node itself if it starts with BC-) as the "file root".
+  const isMacro = node.id.startsWith("MC-");
+  const fileRoot: FlatNode =
+    isMacro
+      ? node
+      : (node.id.startsWith("BC-")
+          ? (ancestors.find((a) => a.id.startsWith("BC-")) ?? node)
+          : (ancestors[0] ?? node));
+  const githubYamlUrl = config.githubPathFor(node, fileRoot.name);
 
   const directChildren = byParent.get(node.id) ?? [];
 
