@@ -187,6 +187,7 @@ When reporting progress to the user, refer to nodes by name. Show the assigned I
 2. For each new L1, write `catalogue/L1-<kebab-case-name>.yaml` with the full L1 → L2 → L3 tree inline. Required top-level fields per `schema/capability.schema.json`: `id`, `name`, `level: 1`, `children`. Recommended: `industry`, `description`.
 3. Register every new file in `catalogue/_index.yaml` (append under `files:`). Lint enforces this.
 4. In Industry mode, batch-write all the new L1 files in one pass before running lint, so a single lint run validates the whole industry.
+5. **Macro placement (Cross-Industry only).** If the new L1 is `industry: Cross-Industry`, also assign it to **exactly one** macro in `catalogue/_macro-capabilities.yaml` (append the new BC id to the chosen macro's `capability_ids:`). `npm run check:macro-coverage --strict` blocks any Cross-Industry L1 left unclaimed. Pick the macro whose theme best fits the new L1; see [`business-capability-governance-model.md` §13](../../business-capability-governance-model.md#13-macro-capability-layer) for the 9 shipped macros and their themes. Industry-specific L1s (Banking, Healthcare, etc.) have no macro layer today — skip this step.
 
 Sample shape (do not commit verbatim — adapt names, IDs, descriptions):
 
@@ -221,8 +222,9 @@ children:
 Run, in order:
 
 ```bash
-npm run lint          # MUST pass before commit
-npm run build:api     # confirms tree builds
+npm run lint                          # MUST pass before commit
+npm run check:macro-coverage --strict # only if you added a Cross-Industry L1
+npm run build:api                     # confirms tree builds
 ```
 
 If lint fails, fix the YAML — do **not** loosen the schema or lint rules. Common failures and fixes:
@@ -232,6 +234,7 @@ If lint fails, fix the YAML — do **not** loosen the schema or lint rules. Comm
 - **Sort order** → siblings must be ascending by ID; `cap:add` handles this. If you hand-edited, re-sort.
 - **Unique slug** → `name` slug across L1 files must not collide with an existing L1.
 - **Index** → every L1 file must appear in `catalogue/_index.yaml`.
+- **Macro orphan** → if `check:macro-coverage` reports a new Cross-Industry L1 as unclaimed, append its id to one macro's `capability_ids` in `catalogue/_macro-capabilities.yaml`.
 
 Also confirm:
 

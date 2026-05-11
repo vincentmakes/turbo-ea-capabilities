@@ -57,6 +57,44 @@ print(get_macros_for_capability("BC-100"))  # → [MacroCapability(id='MC-10', .
 
 `Capability` (with new optional `macro_id` backlink), `MacroCapability`, `BusinessProcess`, `ValueStream` are all frozen Pydantic v2 models — see `_models.py`. The macro layer is purely additive: existing `Capability` fields are unchanged and `SCHEMA_VERSION` is not bumped when only macros are added or edited.
 
+## Macro capabilities
+
+When the L1 layer of the catalogue is too large for unaided executive consumption, the wheel ships an optional **Macro Capability** overlay that groups L1s into a small set of executive-level domains for navigation. The Cross-Industry baseline currently ships 9 macros covering all 41 Cross-Industry L1s; industry-specific L1s do not (yet) have a macro layer.
+
+The overlay is:
+
+- **Optional.** Older wheels without `data/macro-capabilities.json` keep working — `load_macros()` returns `[]`.
+- **Additive.** No existing field on `Capability`/`BusinessProcess`/`ValueStream` was changed. `Capability` gains one new optional field, `macro_id: Optional[str]`, populated at build time on every L1 (and inherited via prefix lookup to descendants). `SCHEMA_VERSION` is unchanged.
+- **Orthogonal.** Macros do not enter the BC tree, do not participate in value-stream stage links, and do not realize processes. They group L1s — that's all.
+
+```python
+from turbo_ea_capabilities import (
+    load_macros,
+    get_macro,
+    get_macros_for_capability,
+    get_capabilities_in_macro,
+)
+
+# 1. Render Cross-Industry as 9 executive cards
+for macro in load_macros():
+    if macro.industry == "Cross-Industry":
+        print(f"{macro.id}  {macro.name}  ({len(macro.capability_ids)} L1s)")
+
+# 2. Breadcrumb / category label on a capability detail page
+m = get_macros_for_capability("BC-100.10.20")  # walks to L1 BC-100
+# → [MacroCapability(id='MC-10', name='Enterprise Governance & Risk', ...)]
+
+# 3. Drill into a macro
+caps = get_capabilities_in_macro("MC-10")
+# → [Capability(id='BC-100', ...), Capability(id='BC-110', ...), ...]
+
+# 4. Translate the macro display name
+fr = get_macro("MC-10").localized("fr")
+print(fr.name)  # "Gouvernance d'Entreprise et Risque"
+```
+
+The model is documented in [Section 13 of the governance doc](https://github.com/vincentmakes/turbo-ea-capabilities/blob/main/business-capability-governance-model.md#13-macro-capability-layer).
+
 ## Versioning
 
 Two version numbers travel together:
