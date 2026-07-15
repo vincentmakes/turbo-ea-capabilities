@@ -9260,3 +9260,78 @@ value_streams:
         process_ids:
           - BP-340.40
         notes: Detention, removal-order execution, and voluntary return
+  - id: VS-650
+    name: Need-to-Operation
+    industries:
+      - Infrastructure
+    description: Owner-side infrastructure capital delivery from identified need through planning, procurement, construction, and commissioning to an operational, revenue-generating asset.
+    stages:
+      - id: VS-650.10
+        stage_order: 1
+        stage_name: Need & Investment Justification
+        capability_ids:
+          - BC-5000
+        process_ids: []
+        notes: "Infrastructure investment strategy, business case, and funding decision"
+      - id: VS-650.20
+        stage_order: 2
+        stage_name: Planning & Consenting
+        capability_ids:
+          - BC-5010
+        process_ids: []
+        notes: "Network planning, feasibility, land and route, consents, and stakeholder engagement"
+      - id: VS-650.30
+        stage_order: 3
+        stage_name: Programme Setup & Controls
+        capability_ids:
+          - BC-5020
+        process_ids: []
+        notes: "Programme governance, assurance, and cost/schedule/risk controls"
+      - id: VS-650.40
+        stage_order: 4
+        stage_name: Procurement & Contracting
+        capability_ids:
+          - BC-5030
+        process_ids: []
+        notes: "Procurement strategy, tendering, contract award, and supply-chain onboarding"
+      - id: VS-650.50
+        stage_order: 5
+        stage_name: Design & Digital Engineering
+        capability_ids:
+          - BC-5060
+        process_ids: []
+        notes: "BIM, common data environment, and design-to-construction coordination"
+      - id: VS-650.60
+        stage_order: 6
+        stage_name: Construction & Field Delivery
+        capability_ids:
+          - BC-5040
+          - BC-5050
+        process_ids: []
+        notes: "Site execution with integrated health, safety, and environment management"
+      - id: VS-650.70
+        stage_order: 7
+        stage_name: Commissioning & Handover
+        capability_ids:
+          - BC-1160
+          - BC-5040
+        process_ids: []
+        notes: "Commissioning, testing, and handover of the completed asset to operations"
+      - id: VS-650.80
+        stage_order: 8
+        stage_name: Operation & Maintenance
+        capability_ids:
+          - BC-5080
+          - BC-5090
+          - BC-5070
+          - BC-5120
+        process_ids: []
+        notes: "Operate the network, maintain assets under whole-life asset management, and sustain resilience and security"
+      - id: VS-650.90
+        stage_order: 9
+        stage_name: Concession & Revenue
+        capability_ids:
+          - BC-5100
+          - BC-5110
+        process_ids: []
+        notes: Realise concession and tariff revenue within economic and safety regulation over the term
