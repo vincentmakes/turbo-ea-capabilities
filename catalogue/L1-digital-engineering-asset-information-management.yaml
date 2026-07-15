@@ -1,0 +1,221 @@
+# Digital Engineering & Asset Information Management
+id: BC-5060
+name: "Digital Engineering & Asset Information Management"
+level: 1
+industry: Infrastructure
+description: |
+  Digital engineering and structured asset information across the built-asset
+  lifecycle, spanning building information modelling, the common data
+  environment, 4D and 5D integration, geospatial and survey management, and
+  digital-twin and asset-information management. Turns models and data into a
+  trusted information asset from design through construction and operation.
+references:
+  - https://www.buildingsmart.org/
+  - https://technical.buildingsmart.org/standards/ifc/
+  - https://www.ogc.org/
+in_scope:
+  - BIM strategy, standards, and model coordination and clash detection
+  - Common data environment and information requirements management
+  - 4D construction sequencing and 5D cost integration
+  - Geospatial, survey, and reality-capture data management
+  - Digital twin development and operational data integration
+  - Structured information handover across the asset lifecycle
+out_of_scope:
+  - Engineering document management (BC-1130)
+  - Product lifecycle management (BC-820)
+  - Enterprise information & data management (BC-610)
+  - IT platform and application delivery (BC-600)
+children:
+  - id: BC-5060.10
+    name: BIM Management
+    level: 2
+    industry: Infrastructure
+    description: |
+      Strategy, standards, and coordination of building information modelling
+      across projects and disciplines.
+    children:
+      - id: BC-5060.10.10
+        name: "BIM Strategy & Standards"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Definition of BIM strategy, standards, and information protocols.
+        children: []
+      - id: BC-5060.10.20
+        name: BIM Execution Planning
+        level: 3
+        industry: Infrastructure
+        description: |
+          Planning of BIM execution, roles, and deliverables for a project.
+        children: []
+      - id: BC-5060.10.30
+        name: Model Authoring Coordination
+        level: 3
+        industry: Infrastructure
+        description: |
+          Coordination of discipline model authoring to agreed standards and
+          schedules.
+        children: []
+      - id: BC-5060.10.40
+        name: "Model Federation & Clash Detection"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Federation of discipline models and detection and resolution of
+          clashes.
+        children: []
+  - id: BC-5060.20
+    name: Common Data Environment
+    level: 2
+    industry: Infrastructure
+    description: |
+      Management of the shared information environment and the requirements,
+      control, and exchange of project data.
+    children:
+      - id: BC-5060.20.10
+        name: Common Data Environment Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Operation of the common data environment as the single source of
+          project information.
+        children: []
+      - id: BC-5060.20.20
+        name: Information Requirements Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Definition and management of organisational, asset, and exchange
+          information requirements.
+        children: []
+      - id: BC-5060.20.30
+        name: "Document & Data Control"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Control, versioning, and status management of documents and data.
+        children: []
+      - id: BC-5060.20.40
+        name: "Data Exchange & Interoperability"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Exchange of information across systems using open and interoperable
+          formats.
+        children: []
+  - id: BC-5060.30
+    name: "4D & 5D Integration"
+    level: 2
+    industry: Infrastructure
+    description: |
+      Integration of models with programme and cost to support construction
+      sequencing and quantity and cost insight.
+    children:
+      - id: BC-5060.30.10
+        name: "4D Construction Sequencing"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Linking of models to the programme to visualise and plan
+          construction sequences.
+        children: []
+      - id: BC-5060.30.20
+        name: "5D Cost Integration"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Integration of model data with cost to support estimating and cost
+          control.
+        children: []
+      - id: BC-5060.30.30
+        name: Model-Based Quantity Take-Off
+        level: 3
+        industry: Infrastructure
+        description: |
+          Derivation of quantities directly from coordinated models.
+        children: []
+      - id: BC-5060.30.40
+        name: Design-to-Construction Coordination
+        level: 3
+        industry: Infrastructure
+        description: |
+          Coordination of model information from design into construction
+          delivery.
+        children: []
+  - id: BC-5060.40
+    name: "Geospatial & Survey Management"
+    level: 2
+    industry: Infrastructure
+    description: |
+      Management of geospatial, survey, and ground data underpinning design
+      and construction.
+    children:
+      - id: BC-5060.40.10
+        name: Geospatial Data Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of geospatial and mapping data across the asset base.
+        children: []
+      - id: BC-5060.40.20
+        name: "Survey & Setting Out"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Provision of survey control and setting out for construction works.
+        children: []
+      - id: BC-5060.40.30
+        name: "Reality Capture & Scanning"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Capture of as-built conditions through scanning and reality-capture
+          techniques.
+        children: []
+      - id: BC-5060.40.40
+        name: Geotechnical Data Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of geotechnical and ground investigation data.
+        children: []
+  - id: BC-5060.50
+    name: "Digital Twin & Asset Data"
+    level: 2
+    industry: Infrastructure
+    description: |
+      Development of asset information models and digital twins fed by
+      operational data for the in-use asset.
+    children:
+      - id: BC-5060.50.10
+        name: Asset Information Model Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of the asset information model for the operational
+          asset.
+        children: []
+      - id: BC-5060.50.20
+        name: Digital Twin Development
+        level: 3
+        industry: Infrastructure
+        description: |
+          Development and maintenance of digital twins of infrastructure
+          assets.
+        children: []
+      - id: BC-5060.50.30
+        name: Operational Data Integration
+        level: 3
+        industry: Infrastructure
+        description: |
+          Integration of operational and sensor data into asset information
+          and twins.
+        children: []
+      - id: BC-5060.50.40
+        name: Information Handover
+        level: 3
+        industry: Infrastructure
+        description: |
+          Structured handover of asset information from delivery into
+          operations.
+        children: []

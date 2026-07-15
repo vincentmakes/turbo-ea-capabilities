@@ -1,0 +1,267 @@
+# Construction & Field Delivery Management
+id: BC-5040
+name: "Construction & Field Delivery Management"
+level: 1
+industry: Infrastructure
+description: |
+  Site execution of infrastructure works, spanning site establishment and
+  mobilisation, work-front and production management, temporary works, plant
+  and equipment, site materials and logistics, and construction quality. The
+  field-delivery discipline that turns design and programme into constructed
+  works safely, productively, and to specification.
+references:
+  - https://www.iso.org/iso-45001-occupational-health-and-safety.html
+  - https://www.buildingsmart.org/
+  - https://www.iso.org/iso-9001-quality-management.html
+  - https://www.hse.gov.uk/construction/cdm/2015/index.htm
+in_scope:
+  - Site establishment, mobilisation, and temporary facilities provision
+  - Work-front coordination, production sequencing, and progress tracking
+  - Temporary works including scaffolding, formwork, and excavation support
+  - Plant, equipment, and lifting operations management
+  - Site materials call-off, laydown, logistics, and waste management
+  - Construction quality control, inspection, and non-conformance management
+out_of_scope:
+  - Engineering construction management (BC-1150)
+  - Commissioning and handover (BC-1160)
+  - Design engineering (BC-1120)
+  - Permanent asset operations and maintenance (BC-5090)
+children:
+  - id: BC-5040.10
+    name: "Site Establishment & Mobilisation"
+    level: 2
+    industry: Infrastructure
+    description: |
+      Setup and mobilisation of the construction site, including compounds,
+      temporary facilities, and connection of utilities and services.
+    children:
+      - id: BC-5040.10.10
+        name: "Site Setup & Compound Establishment"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Establishment of site compounds, offices, and welfare areas ready
+          for construction operations.
+        children: []
+      - id: BC-5040.10.20
+        name: Mobilisation Planning
+        level: 3
+        industry: Infrastructure
+        description: |
+          Planning of resource, workforce, and equipment mobilisation onto
+          the construction site.
+        children: []
+      - id: BC-5040.10.30
+        name: Temporary Facilities Provision
+        level: 3
+        industry: Infrastructure
+        description: |
+          Provision of temporary accommodation, welfare, and site facilities
+          for the construction workforce.
+        children: []
+      - id: BC-5040.10.40
+        name: "Utilities & Services Connection"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Connection of temporary power, water, and communications services
+          required for site operations.
+        children: []
+  - id: BC-5040.20
+    name: "Work Front & Production Management"
+    level: 2
+    industry: Infrastructure
+    description: |
+      Planning, coordination, and tracking of construction production across
+      active work fronts to sustain progress and productivity.
+    children:
+      - id: BC-5040.20.10
+        name: "Production Planning & Sequencing"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Short-interval planning and sequencing of construction production
+          across work fronts.
+        children: []
+      - id: BC-5040.20.20
+        name: Work Front Coordination
+        level: 3
+        industry: Infrastructure
+        description: |
+          Coordination of trades, resources, and access across concurrent
+          work fronts.
+        children: []
+      - id: BC-5040.20.30
+        name: Daily Site Operations
+        level: 3
+        industry: Infrastructure
+        description: |
+          Day-to-day direction and control of construction operations on
+          site.
+        children: []
+      - id: BC-5040.20.40
+        name: "Progress & Productivity Tracking"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Measurement of construction progress and labour productivity
+          against the programme.
+        children: []
+  - id: BC-5040.30
+    name: Temporary Works Management
+    level: 2
+    industry: Infrastructure
+    description: |
+      Management of temporary works and access systems that enable safe
+      construction of the permanent works.
+    children:
+      - id: BC-5040.30.10
+        name: Temporary Works Design Coordination
+        level: 3
+        industry: Infrastructure
+        description: |
+          Coordination and control of temporary works design and its
+          checking regime.
+        children: []
+      - id: BC-5040.30.20
+        name: "Scaffolding & Access Management"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Provision and control of scaffolding and safe access for
+          construction activities.
+        children: []
+      - id: BC-5040.30.30
+        name: "Formwork & Falsework Management"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of formwork and falsework systems supporting concrete
+          and structural works.
+        children: []
+      - id: BC-5040.30.40
+        name: "Excavation & Shoring Management"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of excavations and temporary ground support to keep
+          works stable and safe.
+        children: []
+  - id: BC-5040.40
+    name: "Plant & Equipment Management"
+    level: 2
+    industry: Infrastructure
+    description: |
+      Provision, deployment, and upkeep of construction plant and equipment,
+      including lifting operations.
+    children:
+      - id: BC-5040.40.10
+        name: Plant Fleet Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of the construction plant fleet across projects and work
+          fronts.
+        children: []
+      - id: BC-5040.40.20
+        name: "Equipment Hire & Utilisation"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Sourcing, hire, and utilisation tracking of construction equipment.
+        children: []
+      - id: BC-5040.40.30
+        name: Lifting Operations Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Planning and control of lifting operations and crane use on site.
+        children: []
+      - id: BC-5040.40.40
+        name: "Plant Inspection & Maintenance"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Inspection and maintenance of plant and equipment to sustain
+          availability and safety.
+        children: []
+  - id: BC-5040.50
+    name: "Site Materials & Logistics"
+    level: 2
+    industry: Infrastructure
+    description: |
+      Delivery, storage, and movement of construction materials on site,
+      including logistics and waste.
+    children:
+      - id: BC-5040.50.10
+        name: "Materials Call-Off & Delivery"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Call-off and delivery of construction materials to meet the work
+          programme.
+        children: []
+      - id: BC-5040.50.20
+        name: "Laydown & Storage Management"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of laydown areas and on-site storage of materials and
+          components.
+        children: []
+      - id: BC-5040.50.30
+        name: "Site Logistics & Traffic Management"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of site logistics, deliveries, and vehicle and traffic
+          movements.
+        children: []
+      - id: BC-5040.50.40
+        name: Construction Waste Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Segregation, handling, and disposal of construction waste and
+          surplus materials.
+        children: []
+  - id: BC-5040.60
+    name: Construction Quality Management
+    level: 2
+    industry: Infrastructure
+    description: |
+      Assurance and control of construction quality to deliver works that
+      conform to specification.
+    children:
+      - id: BC-5040.60.10
+        name: "Inspection & Test Planning"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Planning of inspections and tests and their hold and witness
+          points.
+        children: []
+      - id: BC-5040.60.20
+        name: "Quality Control & Assurance"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Execution of quality control checks and assurance across
+          construction activities.
+        children: []
+      - id: BC-5040.60.30
+        name: Non-Conformance Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Identification, disposition, and closure of construction
+          non-conformances.
+        children: []
+      - id: BC-5040.60.40
+        name: "Snagging & Handover Support"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Snagging, defect close-out, and support for handover of completed
+          works.
+        children: []

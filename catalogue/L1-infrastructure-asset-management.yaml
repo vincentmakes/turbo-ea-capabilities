@@ -1,0 +1,266 @@
+# Infrastructure Asset Management
+id: BC-5070
+name: Infrastructure Asset Management
+level: 1
+industry: Infrastructure
+description: |
+  Whole-life management of infrastructure assets under ISO 55000, spanning
+  asset management strategy and planning, the asset register and information
+  base, condition and performance assessment, maintenance and renewals
+  strategy, asset risk and criticality, and lifecycle and disposal.
+references:
+  - https://theiam.org/
+  - https://www.iso.org/standard/83053.html
+in_scope:
+  - Asset management strategy, policy, and planning aligned to corporate objectives
+  - Asset register, hierarchy, and information quality management
+  - Condition, performance, and remaining-life assessment of assets
+  - Maintenance and renewals strategy and whole-life cost modelling
+  - Asset risk, criticality, and intervention prioritisation
+  - Lifecycle value optimisation, decommissioning, and disposal
+out_of_scope:
+  - Cross-industry physical asset management (BC-1040)
+  - Plant maintenance (BC-1030)
+  - Maintenance execution (BC-5090)
+  - Live network operations and control (BC-5080)
+children:
+  - id: BC-5070.10
+    name: "Asset Management Strategy & Planning"
+    level: 2
+    industry: Infrastructure
+    description: |
+      Definition of asset management strategy, objectives, and plans that
+      align asset decisions to organisational goals.
+    children:
+      - id: BC-5070.10.10
+        name: "Asset Management Policy & SAMP"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Establishment of the asset management policy and strategic asset
+          management plan that set direction for the asset base.
+        children: []
+      - id: BC-5070.10.20
+        name: Asset Management Objectives
+        level: 3
+        industry: Infrastructure
+        description: |
+          Definition of measurable asset management objectives derived from
+          organisational goals and stakeholder expectations.
+        children: []
+      - id: BC-5070.10.30
+        name: Line-of-Sight Alignment
+        level: 3
+        industry: Infrastructure
+        description: |
+          Alignment of asset decisions and activities to strategy through a
+          clear line of sight from objectives to delivery.
+        children: []
+      - id: BC-5070.10.40
+        name: Asset Management Planning
+        level: 3
+        industry: Infrastructure
+        description: |
+          Development of asset management plans that translate strategy into
+          scoped activities and resource commitments.
+        children: []
+  - id: BC-5070.20
+    name: "Asset Register & Information"
+    level: 2
+    industry: Infrastructure
+    description: |
+      Maintenance of a trusted asset register and information base that
+      underpins asset management decisions.
+    children:
+      - id: BC-5070.20.10
+        name: Asset Register Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Maintenance of a complete and accurate register of assets and their
+          attributes across the estate.
+        children: []
+      - id: BC-5070.20.20
+        name: "Asset Hierarchy & Classification"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Structuring of assets into consistent hierarchies and
+          classifications to support analysis and reporting.
+        children: []
+      - id: BC-5070.20.30
+        name: Asset Data Quality
+        level: 3
+        industry: Infrastructure
+        description: |
+          Assurance of asset data completeness, accuracy, and currency across
+          the information base.
+        children: []
+      - id: BC-5070.20.40
+        name: Asset Information Standards
+        level: 3
+        industry: Infrastructure
+        description: |
+          Definition of asset information standards and requirements that
+          govern data capture and exchange.
+        children: []
+  - id: BC-5070.30
+    name: "Condition & Performance Assessment"
+    level: 2
+    industry: Infrastructure
+    description: |
+      Assessment of asset condition, performance, and remaining life to inform
+      intervention and investment decisions.
+    children:
+      - id: BC-5070.30.10
+        name: Condition Monitoring
+        level: 3
+        industry: Infrastructure
+        description: |
+          Monitoring of asset condition to detect deterioration and inform
+          maintenance and renewal decisions.
+        children: []
+      - id: BC-5070.30.20
+        name: Asset Inspection Regime
+        level: 3
+        industry: Infrastructure
+        description: |
+          Definition and operation of the inspection regime that establishes
+          asset condition over time.
+        children: []
+      - id: BC-5070.30.30
+        name: Performance Analysis
+        level: 3
+        industry: Infrastructure
+        description: |
+          Analysis of asset performance against expected standards and service
+          requirements.
+        children: []
+      - id: BC-5070.30.40
+        name: Remaining-Life Assessment
+        level: 3
+        industry: Infrastructure
+        description: |
+          Assessment of remaining useful life to support renewal timing and
+          investment planning.
+        children: []
+  - id: BC-5070.40
+    name: "Maintenance & Renewals Strategy"
+    level: 2
+    industry: Infrastructure
+    description: |
+      Development of maintenance and renewals strategy that optimises
+      interventions across the whole life of the asset.
+    children:
+      - id: BC-5070.40.10
+        name: Maintenance Strategy Development
+        level: 3
+        industry: Infrastructure
+        description: |
+          Development of maintenance strategies that balance cost, risk, and
+          performance across asset types.
+        children: []
+      - id: BC-5070.40.20
+        name: "Renewals & Replacement Planning"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Planning of renewals and replacements to sustain asset service over
+          the long term.
+        children: []
+      - id: BC-5070.40.30
+        name: Intervention Optimisation
+        level: 3
+        industry: Infrastructure
+        description: |
+          Optimisation of intervention timing and type to maximise value from
+          maintenance and renewals.
+        children: []
+      - id: BC-5070.40.40
+        name: Whole-Life Cost Modelling
+        level: 3
+        industry: Infrastructure
+        description: |
+          Modelling of whole-life costs to inform maintenance, renewal, and
+          investment trade-offs.
+        children: []
+  - id: BC-5070.50
+    name: "Asset Risk & Criticality"
+    level: 2
+    industry: Infrastructure
+    description: |
+      Assessment of asset risk and criticality to focus interventions on the
+      assets that matter most to service and safety.
+    children:
+      - id: BC-5070.50.10
+        name: Asset Criticality Assessment
+        level: 3
+        industry: Infrastructure
+        description: |
+          Assessment of asset criticality to service continuity, safety, and
+          organisational objectives.
+        children: []
+      - id: BC-5070.50.20
+        name: Failure Mode Analysis
+        level: 3
+        industry: Infrastructure
+        description: |
+          Analysis of asset failure modes and consequences to inform risk and
+          maintenance decisions.
+        children: []
+      - id: BC-5070.50.30
+        name: Risk-Based Intervention Prioritisation
+        level: 3
+        industry: Infrastructure
+        description: |
+          Prioritisation of interventions on the basis of asset risk and
+          criticality.
+        children: []
+      - id: BC-5070.50.40
+        name: Asset Resilience Assessment
+        level: 3
+        industry: Infrastructure
+        description: |
+          Assessment of asset resilience to hazards and stresses that threaten
+          continued service.
+        children: []
+  - id: BC-5070.60
+    name: "Asset Lifecycle & Disposal"
+    level: 2
+    industry: Infrastructure
+    description: |
+      Management of assets through late life, decommissioning, and disposal to
+      maximise value and sustainability outcomes.
+    children:
+      - id: BC-5070.60.10
+        name: Lifecycle Value Optimisation
+        level: 3
+        industry: Infrastructure
+        description: |
+          Optimisation of value delivered by assets across their full
+          lifecycle.
+        children: []
+      - id: BC-5070.60.20
+        name: Decommissioning Planning
+        level: 3
+        industry: Infrastructure
+        description: |
+          Planning for the safe and orderly decommissioning of assets at end
+          of life.
+        children: []
+      - id: BC-5070.60.30
+        name: Asset Disposal Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of asset disposal, transfer, and retirement in line with
+          policy and obligations.
+        children: []
+      - id: BC-5070.60.40
+        name: "Sustainability & Circularity"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Embedding of sustainability and circular-economy outcomes into
+          asset lifecycle and disposal decisions.
+        children: []

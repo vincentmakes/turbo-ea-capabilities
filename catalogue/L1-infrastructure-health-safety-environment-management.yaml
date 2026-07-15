@@ -1,0 +1,223 @@
+# Infrastructure Health, Safety & Environment Management
+id: BC-5050
+name: "Infrastructure Health, Safety & Environment Management"
+level: 1
+industry: Infrastructure
+description: |
+  Health, safety, and environmental management across infrastructure
+  construction and operations, spanning HSE management systems, construction
+  safety, occupational health, environmental management, and incident and
+  emergency response. Protects people, communities, and the environment while
+  works and assets are delivered and operated.
+references:
+  - https://www.iso.org/iso-45001-occupational-health-and-safety.html
+  - https://www.hse.gov.uk/construction/cdm/2015/index.htm
+  - https://www.iso.org/iso-14001-environmental-management.html
+in_scope:
+  - HSE policy, management systems, culture, and competence
+  - Construction safety under CDM, permits, and risk assessment
+  - Occupational health surveillance, welfare, and wellbeing
+  - Environmental controls, pollution prevention, and consents compliance
+  - Ecology and heritage protection during works
+  - Incident reporting, investigation, and emergency response
+out_of_scope:
+  - Cross-industry environment, health & safety (BC-720)
+  - Operational resilience and security (BC-5120)
+  - Construction quality management (BC-5040.60)
+children:
+  - id: BC-5050.10
+    name: HSE Management System
+    level: 2
+    industry: Infrastructure
+    description: |
+      Policy, standards, culture, and competence that make up the health,
+      safety, and environment management system.
+    children:
+      - id: BC-5050.10.10
+        name: "HSE Policy & Standards"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Definition of HSE policy, standards, and objectives across
+          infrastructure activities.
+        children: []
+      - id: BC-5050.10.20
+        name: HSE Management System
+        level: 3
+        industry: Infrastructure
+        description: |
+          Operation and continual improvement of the certified HSE management
+          system.
+        children: []
+      - id: BC-5050.10.30
+        name: "Safety Culture & Behaviour"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Development of a positive safety culture and safe behaviours across
+          the workforce.
+        children: []
+      - id: BC-5050.10.40
+        name: "HSE Competence & Training"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Assurance of HSE competence, training, and authorisation for
+          personnel.
+        children: []
+  - id: BC-5050.20
+    name: Construction Safety Management
+    level: 2
+    industry: Infrastructure
+    description: |
+      Management of construction safety risk through design, site controls,
+      permits, and safe systems of work.
+    children:
+      - id: BC-5050.20.10
+        name: "CDM & Design Risk Management"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of construction design and management duties and
+          design-stage risk reduction.
+        children: []
+      - id: BC-5050.20.20
+        name: Site Safety Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Day-to-day management of safety controls and supervision on the
+          construction site.
+        children: []
+      - id: BC-5050.20.30
+        name: Permit-to-Work Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Control of high-risk activities through permit-to-work systems.
+        children: []
+      - id: BC-5050.20.40
+        name: "Method Statement & Risk Assessment"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Preparation and control of method statements and task risk
+          assessments for safe execution.
+        children: []
+  - id: BC-5050.30
+    name: Occupational Health Management
+    level: 2
+    industry: Infrastructure
+    description: |
+      Protection of workforce health through surveillance, welfare, hygiene,
+      and wellbeing management.
+    children:
+      - id: BC-5050.30.10
+        name: Occupational Health Surveillance
+        level: 3
+        industry: Infrastructure
+        description: |
+          Monitoring of workforce health and fitness against occupational
+          exposures.
+        children: []
+      - id: BC-5050.30.20
+        name: Welfare Provision
+        level: 3
+        industry: Infrastructure
+        description: |
+          Provision of welfare facilities and arrangements for the site
+          workforce.
+        children: []
+      - id: BC-5050.30.30
+        name: "Exposure & Hygiene Monitoring"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Monitoring and control of occupational exposures and workplace
+          hygiene.
+        children: []
+      - id: BC-5050.30.40
+        name: "Fatigue & Wellbeing Management"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of fatigue, mental health, and wellbeing across the
+          workforce.
+        children: []
+  - id: BC-5050.40
+    name: Environmental Management
+    level: 2
+    industry: Infrastructure
+    description: |
+      Management of environmental impacts, controls, and consents across
+      construction and operations.
+    children:
+      - id: BC-5050.40.10
+        name: Environmental Controls
+        level: 3
+        industry: Infrastructure
+        description: |
+          Implementation of controls that limit environmental impact of works
+          and operations.
+        children: []
+      - id: BC-5050.40.20
+        name: Pollution Prevention
+        level: 3
+        industry: Infrastructure
+        description: |
+          Prevention and control of pollution to air, water, and land during
+          works.
+        children: []
+      - id: BC-5050.40.30
+        name: Environmental Consents Compliance
+        level: 3
+        industry: Infrastructure
+        description: |
+          Compliance with environmental consents, permits, and licence
+          conditions.
+        children: []
+      - id: BC-5050.40.40
+        name: "Ecology & Heritage Protection"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Protection of ecology, biodiversity, and heritage assets affected
+          by works.
+        children: []
+  - id: BC-5050.50
+    name: "Incident & Emergency Management"
+    level: 2
+    industry: Infrastructure
+    description: |
+      Reporting, investigation, and emergency response for HSE incidents,
+      with performance monitoring.
+    children:
+      - id: BC-5050.50.10
+        name: "Incident Reporting & Investigation"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Reporting and investigation of HSE incidents and near misses.
+        children: []
+      - id: BC-5050.50.20
+        name: Root Cause Analysis
+        level: 3
+        industry: Infrastructure
+        description: |
+          Analysis of underlying causes to prevent recurrence of incidents.
+        children: []
+      - id: BC-5050.50.30
+        name: Emergency Response Planning
+        level: 3
+        industry: Infrastructure
+        description: |
+          Planning and readiness for emergency response across sites and
+          assets.
+        children: []
+      - id: BC-5050.50.40
+        name: HSE Performance Monitoring
+        level: 3
+        industry: Infrastructure
+        description: |
+          Monitoring and reporting of HSE performance and leading indicators.
+        children: []

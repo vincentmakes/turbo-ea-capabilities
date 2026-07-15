@@ -646,6 +646,17 @@ Where an industry reference framework exists, anchor the upper levels (L1 / L2) 
 - **IPMVP / ASHRAE Guideline 14** — measurement & verification of energy savings.
 - **EU EPBD, LEED, BREEAM, WELL, CIBSE Guides** — building energy regulation, green and wellness certifications, and services engineering guidance.
 
+**Infrastructure**
+
+- **ISO 55000 / 55001 / 55002 (Institute of Asset Management)** — whole-life management of physical infrastructure assets.
+- **ISO 19650 series / buildingSMART openBIM / IFC (ISO 16739)** — information management and asset data across the built-asset lifecycle.
+- **FIDIC (Red / Yellow / Silver Book) and NEC4 suites** — construction and engineering contract frameworks.
+- **AACE International Recommended Practices and PMI Construction Extension** — cost estimation, project controls, and capital-programme management.
+- **ISO 45001 and CDM Regulations (Construction Design and Management)** — construction and operational health-and-safety management.
+- **Envision (ISI) and CEEQUAL** — sustainability rating and assessment for infrastructure projects.
+- **ISO 31000 and ISO 22301** — risk management and business-continuity/resilience.
+- **World Bank PPP frameworks and UK IPA / Project 13** — concession structuring and public-private infrastructure delivery.
+
 **Insurance**
 
 - **ACORD (Reference Architecture, ACORD XML, ACORD AL3)** — insurance data and messaging standards.

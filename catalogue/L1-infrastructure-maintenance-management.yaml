@@ -1,0 +1,224 @@
+# Infrastructure Maintenance Management
+id: BC-5090
+name: Infrastructure Maintenance Management
+level: 1
+industry: Infrastructure
+description: |
+  Execution of inspection and maintenance on live infrastructure assets,
+  spanning maintenance planning and scheduling, inspection and examination,
+  planned maintenance execution, reactive and emergency maintenance, and
+  maintenance performance and records.
+references:
+  - https://theiam.org/
+  - https://www.iso.org/standard/83053.html
+in_scope:
+  - Maintenance work planning, scheduling, and resource allocation
+  - Inspection, examination, and defect identification on assets
+  - Planned preventive and renewals maintenance execution
+  - Reactive and emergency repair and fault response
+  - Maintenance records, backlog, and performance management
+  - Reliability improvement from maintenance insight
+out_of_scope:
+  - Cross-industry plant maintenance (BC-1030)
+  - Asset management strategy (BC-5070)
+  - Network operations (BC-5080)
+  - Whole-life renewals and maintenance strategy (BC-5070.40)
+children:
+  - id: BC-5090.10
+    name: "Maintenance Planning & Scheduling"
+    level: 2
+    industry: Infrastructure
+    description: |
+      Planning and scheduling of maintenance work and the resources and access
+      needed to deliver it.
+    children:
+      - id: BC-5090.10.10
+        name: Maintenance Work Planning
+        level: 3
+        industry: Infrastructure
+        description: |
+          Planning of maintenance work scope, methods, and requirements ahead
+          of execution.
+        children: []
+      - id: BC-5090.10.20
+        name: Maintenance Scheduling
+        level: 3
+        industry: Infrastructure
+        description: |
+          Scheduling of maintenance activities to balance workload, access, and
+          service impact.
+        children: []
+      - id: BC-5090.10.30
+        name: "Resource & Crew Allocation"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Allocation of crews, skills, and resources to planned maintenance
+          work.
+        children: []
+      - id: BC-5090.10.40
+        name: "Outage & Possession Planning"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Planning of outages and possessions that provide safe access for
+          maintenance.
+        children: []
+  - id: BC-5090.20
+    name: "Inspection & Examination"
+    level: 2
+    industry: Infrastructure
+    description: |
+      Inspection and examination of assets to identify defects and confirm
+      fitness for service.
+    children:
+      - id: BC-5090.20.10
+        name: Routine Inspection
+        level: 3
+        industry: Infrastructure
+        description: |
+          Routine inspection of assets to detect emerging defects and
+          deterioration.
+        children: []
+      - id: BC-5090.20.20
+        name: Detailed Examination
+        level: 3
+        industry: Infrastructure
+        description: |
+          Detailed examination of assets to assess condition where closer
+          inspection is required.
+        children: []
+      - id: BC-5090.20.30
+        name: "Defect Identification & Grading"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Identification and grading of defects to prioritise remedial action.
+        children: []
+      - id: BC-5090.20.40
+        name: "Structural & Safety Inspection"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Structural and safety inspection of assets to confirm integrity and
+          safe use.
+        children: []
+  - id: BC-5090.30
+    name: Planned Maintenance Execution
+    level: 2
+    industry: Infrastructure
+    description: |
+      Delivery of planned preventive and renewals maintenance to sustain asset
+      condition and performance.
+    children:
+      - id: BC-5090.30.10
+        name: Preventive Maintenance Execution
+        level: 3
+        industry: Infrastructure
+        description: |
+          Execution of preventive maintenance to keep assets in serviceable
+          condition.
+        children: []
+      - id: BC-5090.30.20
+        name: Planned Renewals Execution
+        level: 3
+        industry: Infrastructure
+        description: |
+          Execution of planned renewals that restore or replace asset
+          components.
+        children: []
+      - id: BC-5090.30.30
+        name: Maintenance Work Delivery
+        level: 3
+        industry: Infrastructure
+        description: |
+          Delivery of maintenance work on site to plan, scope, and standard.
+        children: []
+      - id: BC-5090.30.40
+        name: Maintenance Quality Assurance
+        level: 3
+        industry: Infrastructure
+        description: |
+          Assurance that maintenance work meets required quality and safety
+          standards.
+        children: []
+  - id: BC-5090.40
+    name: "Reactive & Emergency Maintenance"
+    level: 2
+    industry: Infrastructure
+    description: |
+      Response to faults, defects, and emergencies that require unplanned
+      maintenance intervention.
+    children:
+      - id: BC-5090.40.10
+        name: "Fault & Defect Response"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Response to reported faults and defects to protect service and
+          safety.
+        children: []
+      - id: BC-5090.40.20
+        name: Emergency Repair
+        level: 3
+        industry: Infrastructure
+        description: |
+          Execution of emergency repairs to restore assets following failure or
+          damage.
+        children: []
+      - id: BC-5090.40.30
+        name: Reactive Work Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of reactive maintenance work from notification to
+          completion.
+        children: []
+      - id: BC-5090.40.40
+        name: Temporary Repair Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of temporary repairs that hold service pending permanent
+          remediation.
+        children: []
+  - id: BC-5090.50
+    name: "Maintenance Performance & Records"
+    level: 2
+    industry: Infrastructure
+    description: |
+      Management of maintenance records, backlog, and performance to drive
+      reliability improvement.
+    children:
+      - id: BC-5090.50.10
+        name: Maintenance Records Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of maintenance records that evidence work done and asset
+          history.
+        children: []
+      - id: BC-5090.50.20
+        name: Maintenance Backlog Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of the maintenance backlog to control risk and prioritise
+          work.
+        children: []
+      - id: BC-5090.50.30
+        name: Maintenance Performance Analysis
+        level: 3
+        industry: Infrastructure
+        description: |
+          Analysis of maintenance performance against cost, time, and quality
+          measures.
+        children: []
+      - id: BC-5090.50.40
+        name: Reliability Improvement
+        level: 3
+        industry: Infrastructure
+        description: |
+          Improvement of asset reliability using insight from maintenance and
+          failure data.
+        children: []
