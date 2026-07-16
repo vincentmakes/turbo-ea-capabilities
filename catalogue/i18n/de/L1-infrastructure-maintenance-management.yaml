@@ -1,0 +1,176 @@
+locale: de
+source: L1-infrastructure-maintenance-management.yaml
+entries:
+  BC-5090:
+    name: Infrastruktur-Instandhaltungsmanagement
+    description: |
+      Ausführung von Inspektion und Instandhaltung an Live-Infrastrukturanlagen,
+      umfassend Instandhaltungsplanung und -terminierung, Inspektion und
+      Prüfung, Ausführung planmäßiger Instandhaltung, reaktive und
+      Notfallinstandhaltung sowie Instandhaltungsleistung und -aufzeichnungen.
+    in_scope:
+      - Planung, Terminierung und Ressourcenzuweisung von Instandhaltungsarbeiten
+      - Inspektion, Prüfung und Mängelidentifizierung an Anlagen
+      - Ausführung planmäßiger vorbeugender und Erneuerungsinstandhaltung
+      - Reaktive und Notfallreparatur sowie Störungsreaktion
+      - Instandhaltungsaufzeichnungen, -rückstand und Leistungsmanagement
+      - Zuverlässigkeitsverbesserung aus Instandhaltungserkenntnissen
+    out_of_scope:
+      - Branchenübergreifende Anlageninstandhaltung (BC-1030)
+      - Anlagenmanagementstrategie (BC-5070)
+      - Netzbetrieb (BC-5080)
+      - Erneuerungs- und Instandhaltungsstrategie über die gesamte Lebensdauer (BC-5070.40)
+    source_hash: sha256-16e287e0a6c64f65
+  BC-5090.10:
+    name: Instandhaltungsplanung und -terminierung
+    description: |
+      Planung und Terminierung von Instandhaltungsarbeiten und der Ressourcen und
+      des Zugangs, die zu ihrer Durchführung benötigt werden.
+    source_hash: sha256-6a3eb19fe0db371f
+  BC-5090.10.10:
+    name: Instandhaltungsarbeitsplanung
+    description: |
+      Planung von Umfang, Methoden und Anforderungen der Instandhaltungsarbeiten
+      vor der Ausführung.
+    source_hash: sha256-3349241f78e25c26
+  BC-5090.10.20:
+    name: Instandhaltungsterminierung
+    description: |
+      Terminierung von Instandhaltungsaktivitäten zur Ausbalancierung von
+      Arbeitslast, Zugang und Serviceauswirkung.
+    source_hash: sha256-0b7ab11495443950
+  BC-5090.10.30:
+    name: Ressourcen- und Crewzuweisung
+    description: |
+      Zuweisung von Crews, Fähigkeiten und Ressourcen zu geplanten
+      Instandhaltungsarbeiten.
+    source_hash: sha256-e4ba046dbc77eb0a
+  BC-5090.10.40:
+    name: Sperr- und Zugriffsplanung
+    description: |
+      Planung von Sperrungen und Zugriffen, die sicheren Zugang für die
+      Instandhaltung bieten.
+    source_hash: sha256-bcd1694386b2e5fd
+  BC-5090.20:
+    name: Inspektion und Prüfung
+    description: |
+      Inspektion und Prüfung von Anlagen zur Identifizierung von Mängeln und
+      Bestätigung der Gebrauchstauglichkeit.
+    source_hash: sha256-1186d613fd065c57
+  BC-5090.20.10:
+    name: Routineinspektion
+    description: |
+      Routineinspektion von Anlagen zur Erkennung entstehender Mängel und
+      Verschlechterungen.
+    source_hash: sha256-fd47a7ac1aee58a5
+  BC-5090.20.20:
+    name: Detaillierte Prüfung
+    description: |
+      Detaillierte Prüfung von Anlagen zur Zustandsbeurteilung, wo eine genauere
+      Inspektion erforderlich ist.
+    source_hash: sha256-c78848b64794adad
+  BC-5090.20.30:
+    name: Mängelidentifizierung und -einstufung
+    description: |
+      Identifizierung und Einstufung von Mängeln zur Priorisierung von
+      Abhilfemaßnahmen.
+    source_hash: sha256-85281da9fca2213a
+  BC-5090.20.40:
+    name: Struktur- und Sicherheitsinspektion
+    description: |
+      Struktur- und Sicherheitsinspektion von Anlagen zur Bestätigung von
+      Integrität und sicherer Nutzung.
+    source_hash: sha256-af1c8418f2e03953
+  BC-5090.30:
+    name: Ausführung planmäßiger Instandhaltung
+    description: |
+      Durchführung planmäßiger vorbeugender und Erneuerungsinstandhaltung zur
+      Aufrechterhaltung von Anlagenzustand und -leistung.
+    source_hash: sha256-d0a53686779cf2ba
+  BC-5090.30.10:
+    name: Ausführung vorbeugender Instandhaltung
+    description: |
+      Durchführung vorbeugender Instandhaltung, um Anlagen in gebrauchsfähigem
+      Zustand zu halten.
+    source_hash: sha256-103353b24e101b23
+  BC-5090.30.20:
+    name: Ausführung geplanter Erneuerungen
+    description: |
+      Durchführung geplanter Erneuerungen, die Anlagenkomponenten
+      wiederherstellen oder ersetzen.
+    source_hash: sha256-29579b3e2769d2be
+  BC-5090.30.30:
+    name: Durchführung von Instandhaltungsarbeiten
+    description: |
+      Durchführung von Instandhaltungsarbeiten vor Ort nach Plan, Umfang und
+      Standard.
+    source_hash: sha256-3ca5ecc94c9983bf
+  BC-5090.30.40:
+    name: Instandhaltungsqualitätssicherung
+    description: |
+      Sicherstellung, dass Instandhaltungsarbeiten die erforderlichen Qualitäts-
+      und Sicherheitsstandards erfüllen.
+    source_hash: sha256-3cd6593a8ddac244
+  BC-5090.40:
+    name: Reaktive und Notfallinstandhaltung
+    description: |
+      Reaktion auf Störungen, Mängel und Notfälle, die eine ungeplante
+      Instandhaltungsintervention erfordern.
+    source_hash: sha256-52593d3ed6d420fe
+  BC-5090.40.10:
+    name: Störungs- und Mängelreaktion
+    description: |
+      Reaktion auf gemeldete Störungen und Mängel zum Schutz von Service und
+      Sicherheit.
+    source_hash: sha256-4e64aaa0a9b9ca63
+  BC-5090.40.20:
+    name: Notfallreparatur
+    description: |
+      Durchführung von Notfallreparaturen zur Wiederherstellung von Anlagen nach
+      Ausfall oder Beschädigung.
+    source_hash: sha256-4a094ddcefb8095c
+  BC-5090.40.30:
+    name: Management reaktiver Arbeiten
+    description: |
+      Management reaktiver Instandhaltungsarbeiten von der Meldung bis zur
+      Fertigstellung.
+    source_hash: sha256-e30865fd9c368823
+  BC-5090.40.40:
+    name: Management temporärer Reparaturen
+    description: |
+      Management temporärer Reparaturen, die den Service bis zur dauerhaften
+      Behebung aufrechterhalten.
+    source_hash: sha256-c8ff8367a52a27e3
+  BC-5090.50:
+    name: Instandhaltungsleistung und -aufzeichnungen
+    description: |
+      Management von Instandhaltungsaufzeichnungen, -rückstand und -leistung zur
+      Förderung der Zuverlässigkeitsverbesserung.
+    source_hash: sha256-185627c67674b9c1
+  BC-5090.50.10:
+    name: Management der Instandhaltungsaufzeichnungen
+    description: |
+      Management von Instandhaltungsaufzeichnungen, die geleistete Arbeit und
+      Anlagenhistorie belegen.
+    source_hash: sha256-9b9ac70c40a55939
+  BC-5090.50.20:
+    name: Management des Instandhaltungsrückstands
+    description: |
+      Management des Instandhaltungsrückstands zur Risikosteuerung und
+      Priorisierung von Arbeiten.
+    source_hash: sha256-371afc593fcd989e
+  BC-5090.50.30:
+    name: Analyse der Instandhaltungsleistung
+    description: |
+      Analyse der Instandhaltungsleistung anhand von Kosten-, Zeit- und
+      Qualitätsmaßen.
+    source_hash: sha256-3a0f3af4181d9f84
+  BC-5090.50.40:
+    name: Zuverlässigkeitsverbesserung
+    description: |
+      Verbesserung der Anlagenzuverlässigkeit anhand von Erkenntnissen aus
+      Instandhaltungs- und Ausfalldaten.
+    source_hash: sha256-4714639f367edd97
+metadata:
+  translator: claude-ai
+  date: "2026-07-16"

@@ -1,0 +1,171 @@
+locale: de
+source: L1-infrastructure-operations-management.yaml
+entries:
+  BC-5080:
+    name: Infrastruktur-Betriebsmanagement
+    description: |
+      Betrieb von Live-Infrastrukturnetzen und -systemen, umfassend
+      Netzsteuerungsbetrieb, Kapazitäts- und Nachfragemanagement,
+      Serviceverfügbarkeit, Ereignis- und Vorfallbetrieb sowie Kunden- und
+      Nutzerbetrieb.
+    in_scope:
+      - Leitstellen- und Echtzeit-Netzsteuerungsbetrieb
+      - Kapazitäts-, Nachfrage- und Flussmanagement über das Netz
+      - Serviceverfügbarkeit und Service-Level-Management
+      - Management von operativen Ereignissen, Vorfällen und Störungen
+      - Kunden- und Nutzerbetrieb sowie Informationsdienste
+      - Operative Kommunikation und Wiederherstellung des Service
+    out_of_scope:
+      - Versorgungsbetrieb (BC-3800)
+      - Transportbetrieb (BC-2400)
+      - Instandhaltungsausführung (BC-5090)
+      - Anlagenmanagementstrategie und -planung (BC-5070)
+    source_hash: sha256-9017b7761406afa9
+  BC-5080.10:
+    name: Netzsteuerung und -betrieb
+    description: |
+      Echtzeitsteuerung und -betrieb des Infrastrukturnetzes aus Leitstellen und
+      Betriebszentren.
+    source_hash: sha256-a809ce5352d19ec3
+  BC-5080.10.10:
+    name: Leitstellenbetrieb
+    description: |
+      Betrieb von Leitstellen, die die Live-Netzaktivität steuern und
+      überwachen.
+    source_hash: sha256-52ba486b7fa1220e
+  BC-5080.10.20:
+    name: Echtzeit-Netzüberwachung
+    description: |
+      Kontinuierliche Überwachung des Netzzustands zur Aufrechterhaltung sicheren
+      und zuverlässigen Betriebs.
+    source_hash: sha256-3cc6847c301fff02
+  BC-5080.10.30:
+    name: Operative Führung und Steuerung
+    description: |
+      Führung und Steuerung des Netzbetriebs zur Koordination von Ressourcen und
+      Reaktionen.
+    source_hash: sha256-38b9bd72ebc128d9
+  BC-5080.10.40:
+    name: Management der Betriebsverfahren
+    description: |
+      Management von Betriebsverfahren und -regeln, die den sicheren Netzbetrieb
+      regeln.
+    source_hash: sha256-caebefd5eb402b25
+  BC-5080.20:
+    name: Kapazitäts- und Nachfragemanagement
+    description: |
+      Ausbalancierung von Netzkapazität gegenüber Nachfrage zur
+      Aufrechterhaltung des Service und Steuerung von Überlastung.
+    source_hash: sha256-fe707b7d24bf69c4
+  BC-5080.20.10:
+    name: Kapazitätsmanagement
+    description: |
+      Management der verfügbaren Netzkapazität zur Deckung aktueller und
+      prognostizierter Nachfrage.
+    source_hash: sha256-036f1ed463efeaf3
+  BC-5080.20.20:
+    name: Nachfrage- und Flussmanagement
+    description: |
+      Management von Nachfrage und Fluss über das Netz zur Optimierung von
+      Auslastung und Service.
+    source_hash: sha256-724b5fbac7fe0a09
+  BC-5080.20.30:
+    name: Serviceterminierung
+    description: |
+      Terminierung von Diensten und Zugang zur effektiven Nutzung der
+      Netzkapazität.
+    source_hash: sha256-c102d0a1291175e5
+  BC-5080.20.40:
+    name: Überlastungsmanagement
+    description: |
+      Management von Überlastung zum Schutz der Serviceleistung bei
+      Spitzennachfrage.
+    source_hash: sha256-93ff4b80da497c5b
+  BC-5080.30:
+    name: Serviceverfügbarkeitsmanagement
+    description: |
+      Sicherstellung von Serviceverfügbarkeit und -leistung anhand vereinbarter
+      Standards und Service-Level.
+    source_hash: sha256-29572f69e7c76a56
+  BC-5080.30.10:
+    name: Verfügbarkeitsmanagement
+    description: |
+      Management der Serviceverfügbarkeit zur Erfüllung von Zuverlässigkeits- und
+      Kontinuitätszielen.
+    source_hash: sha256-849d496ecfc74adc
+  BC-5080.30.20:
+    name: Service-Level-Management
+    description: |
+      Management von Service-Levels und Zusagen gegenüber Nutzern und
+      Stakeholdern.
+    source_hash: sha256-4c92806743fa9393
+  BC-5080.30.30:
+    name: Überwachung der Standardeinhaltung
+    description: |
+      Überwachung der operativen Leistung anhand definierter Servicestandards.
+    source_hash: sha256-5d7d212f28559ece
+  BC-5080.30.40:
+    name: Servicewiederherstellung
+    description: |
+      Wiederherstellung des Service auf Standardniveau nach Verschlechterung oder
+      Störung.
+    source_hash: sha256-118768d509691748
+  BC-5080.40:
+    name: Ereignis- und Vorfallbetrieb
+    description: |
+      Erkennung, Koordination und Behebung operativer Ereignisse und Vorfälle,
+      die den Service stören.
+    source_hash: sha256-b516cc1a42d01d43
+  BC-5080.40.10:
+    name: Management operativer Vorfälle
+    description: |
+      Management operativer Vorfälle durch Erkennung, Reaktion und Behebung.
+    source_hash: sha256-b8b9a63388a10b1a
+  BC-5080.40.20:
+    name: Störungsmanagement
+    description: |
+      Management von Servicestörungen zur Begrenzung der Auswirkungen auf Nutzer
+      und das Netz.
+    source_hash: sha256-dd720e2f4353cc9f
+  BC-5080.40.30:
+    name: Koordination der Vorfallreaktion
+    description: |
+      Koordination von Ressourcen und Stakeholdern in Reaktion auf operative
+      Vorfälle.
+    source_hash: sha256-ba83aa3785b202bd
+  BC-5080.40.40:
+    name: Operative Kommunikation
+    description: |
+      Kommunikation von Betriebsstatus und Anweisungen an Einsatzkräfte und
+      betroffene Parteien.
+    source_hash: sha256-dc717820ca2c763b
+  BC-5080.50:
+    name: Kunden- und Nutzerbetrieb
+    description: |
+      Operative Dienste und Informationen, die Kunden und Nutzer des
+      Infrastrukturnetzes unterstützen.
+    source_hash: sha256-b452d8cb8558f23b
+  BC-5080.50.10:
+    name: Nutzerinformationsdienste
+    description: |
+      Bereitstellung operativer Informationen, die Nutzern helfen, das Netz zu
+      planen und zu nutzen.
+    source_hash: sha256-dc0d0659f1c7df22
+  BC-5080.50.20:
+    name: Zugangs- und Zulassungsmanagement
+    description: |
+      Management von Nutzerzugang und -zulassung zum Netz und seinen Diensten.
+    source_hash: sha256-665b633351da8100
+  BC-5080.50.30:
+    name: Operativer Kundenservice
+    description: |
+      Erbringung von Kundenservice, der aus dem Live-Netzbetrieb entsteht.
+    source_hash: sha256-906e547f1cf1feb8
+  BC-5080.50.40:
+    name: Management von Nutzerrückmeldungen
+    description: |
+      Erfassung und Management von Nutzerrückmeldungen zum operativen Service.
+    source_hash: sha256-0f89156801a5c9d2
+metadata:
+  translator: claude-ai
+  date: "2026-07-16"

@@ -1,0 +1,148 @@
+locale: es
+source: L1-infrastructure-maintenance-management.yaml
+entries:
+  BC-5090:
+    name: Gestión del mantenimiento de infraestructuras
+    description: |
+      Ejecución de inspecciones y mantenimiento sobre activos de infraestructura en explotación, que abarca la planificación y programación del mantenimiento, la inspección y examen, la ejecución del mantenimiento planificado, el mantenimiento reactivo y de emergencia, y el desempeño y los registros de mantenimiento.
+    in_scope:
+      - Planificación, programación y asignación de recursos del trabajo de mantenimiento
+      - Inspección, examen e identificación de defectos en los activos
+      - Ejecución del mantenimiento preventivo planificado y de renovaciones
+      - Reparación reactiva y de emergencia y respuesta a averías
+      - Registros, backlog y gestión del desempeño de mantenimiento
+      - Mejora de la fiabilidad a partir del conocimiento del mantenimiento
+    out_of_scope:
+      - Mantenimiento de planta transversal a industrias (BC-1030)
+      - Estrategia de gestión de activos (BC-5070)
+      - Operaciones de red (BC-5080)
+      - Estrategia de renovaciones y mantenimiento de ciclo de vida completo (BC-5070.40)
+    source_hash: sha256-16e287e0a6c64f65
+  BC-5090.10:
+    name: Planificación y programación del mantenimiento
+    description: |
+      Planificación y programación del trabajo de mantenimiento y de los recursos y accesos necesarios para ejecutarlo.
+    source_hash: sha256-6a3eb19fe0db371f
+  BC-5090.10.10:
+    name: Planificación del trabajo de mantenimiento
+    description: |
+      Planificación del alcance, los métodos y los requisitos del trabajo de mantenimiento con antelación a la ejecución.
+    source_hash: sha256-3349241f78e25c26
+  BC-5090.10.20:
+    name: Programación del mantenimiento
+    description: |
+      Programación de las actividades de mantenimiento para equilibrar la carga de trabajo, el acceso y el impacto en el servicio.
+    source_hash: sha256-0b7ab11495443950
+  BC-5090.10.30:
+    name: Asignación de recursos y equipos
+    description: |
+      Asignación de equipos, competencias y recursos al trabajo de mantenimiento planificado.
+    source_hash: sha256-e4ba046dbc77eb0a
+  BC-5090.10.40:
+    name: Planificación de interrupciones y posesiones
+    description: |
+      Planificación de interrupciones y posesiones que proporcionan un acceso seguro para el mantenimiento.
+    source_hash: sha256-bcd1694386b2e5fd
+  BC-5090.20:
+    name: Inspección y examen
+    description: |
+      Inspección y examen de los activos para identificar defectos y confirmar su aptitud para el servicio.
+    source_hash: sha256-1186d613fd065c57
+  BC-5090.20.10:
+    name: Inspección rutinaria
+    description: |
+      Inspección rutinaria de los activos para detectar defectos emergentes y deterioro.
+    source_hash: sha256-fd47a7ac1aee58a5
+  BC-5090.20.20:
+    name: Examen detallado
+    description: |
+      Examen detallado de los activos para evaluar su estado cuando se requiere una inspección más minuciosa.
+    source_hash: sha256-c78848b64794adad
+  BC-5090.20.30:
+    name: Identificación y clasificación de defectos
+    description: |
+      Identificación y clasificación de defectos para priorizar la acción correctora.
+    source_hash: sha256-85281da9fca2213a
+  BC-5090.20.40:
+    name: Inspección estructural y de seguridad
+    description: |
+      Inspección estructural y de seguridad de los activos para confirmar su integridad y uso seguro.
+    source_hash: sha256-af1c8418f2e03953
+  BC-5090.30:
+    name: Ejecución del mantenimiento planificado
+    description: |
+      Ejecución del mantenimiento preventivo planificado y de las renovaciones para sostener el estado y el desempeño de los activos.
+    source_hash: sha256-d0a53686779cf2ba
+  BC-5090.30.10:
+    name: Ejecución del mantenimiento preventivo
+    description: |
+      Ejecución del mantenimiento preventivo para mantener los activos en estado de servicio.
+    source_hash: sha256-103353b24e101b23
+  BC-5090.30.20:
+    name: Ejecución de renovaciones planificadas
+    description: |
+      Ejecución de renovaciones planificadas que restauran o sustituyen componentes de los activos.
+    source_hash: sha256-29579b3e2769d2be
+  BC-5090.30.30:
+    name: Ejecución del trabajo de mantenimiento
+    description: |
+      Ejecución del trabajo de mantenimiento en obra conforme al plan, el alcance y el estándar.
+    source_hash: sha256-3ca5ecc94c9983bf
+  BC-5090.30.40:
+    name: Aseguramiento de la calidad del mantenimiento
+    description: |
+      Aseguramiento de que el trabajo de mantenimiento cumple los estándares de calidad y seguridad exigidos.
+    source_hash: sha256-3cd6593a8ddac244
+  BC-5090.40:
+    name: Mantenimiento reactivo y de emergencia
+    description: |
+      Respuesta a averías, defectos y emergencias que requieren una intervención de mantenimiento no planificada.
+    source_hash: sha256-52593d3ed6d420fe
+  BC-5090.40.10:
+    name: Respuesta a averías y defectos
+    description: |
+      Respuesta a averías y defectos notificados para proteger el servicio y la seguridad.
+    source_hash: sha256-4e64aaa0a9b9ca63
+  BC-5090.40.20:
+    name: Reparación de emergencia
+    description: |
+      Ejecución de reparaciones de emergencia para restaurar los activos tras un fallo o daño.
+    source_hash: sha256-4a094ddcefb8095c
+  BC-5090.40.30:
+    name: Gestión del trabajo reactivo
+    description: |
+      Gestión del trabajo de mantenimiento reactivo desde la notificación hasta su finalización.
+    source_hash: sha256-e30865fd9c368823
+  BC-5090.40.40:
+    name: Gestión de reparaciones temporales
+    description: |
+      Gestión de reparaciones temporales que sostienen el servicio a la espera de una remediación permanente.
+    source_hash: sha256-c8ff8367a52a27e3
+  BC-5090.50:
+    name: Desempeño y registros de mantenimiento
+    description: |
+      Gestión de los registros, el backlog y el desempeño de mantenimiento para impulsar la mejora de la fiabilidad.
+    source_hash: sha256-185627c67674b9c1
+  BC-5090.50.10:
+    name: Gestión de registros de mantenimiento
+    description: |
+      Gestión de los registros de mantenimiento que evidencian el trabajo realizado y el historial del activo.
+    source_hash: sha256-9b9ac70c40a55939
+  BC-5090.50.20:
+    name: Gestión del backlog de mantenimiento
+    description: |
+      Gestión del backlog de mantenimiento para controlar el riesgo y priorizar el trabajo.
+    source_hash: sha256-371afc593fcd989e
+  BC-5090.50.30:
+    name: Análisis del desempeño de mantenimiento
+    description: |
+      Análisis del desempeño de mantenimiento frente a medidas de coste, tiempo y calidad.
+    source_hash: sha256-3a0f3af4181d9f84
+  BC-5090.50.40:
+    name: Mejora de la fiabilidad
+    description: |
+      Mejora de la fiabilidad de los activos a partir del conocimiento derivado de los datos de mantenimiento y fallos.
+    source_hash: sha256-4714639f367edd97
+metadata:
+  translator: claude-ai
+  date: "2026-07-16"

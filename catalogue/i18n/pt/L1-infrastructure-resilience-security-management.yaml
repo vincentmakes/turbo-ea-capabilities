@@ -1,0 +1,171 @@
+locale: pt
+source: L1-infrastructure-resilience-security-management.yaml
+entries:
+  BC-5120:
+    name: Gestão de Resiliência e Segurança de Infraestruturas
+    description: |
+      Proteção e resiliência de infraestruturas críticas nas dimensões de
+      segurança física, segurança ciber-física e de tecnologia operacional (OT),
+      resiliência e continuidade, gestão de emergências e crises, e resiliência
+      climática e ambiental.
+    in_scope:
+      - Segurança física, controlo de acessos e videovigilância
+      - Segurança ciber-física e de tecnologia operacional (OT)
+      - Resiliência operacional e continuidade de negócio
+      - Preparação para emergências e gestão de crises
+      - Adaptação climática e resiliência a fenómenos meteorológicos extremos
+      - Proteção de sistemas e ativos críticos
+    out_of_scope:
+      - Gestão de risco empresarial (BC-140)
+      - Gestão de continuidade de negócio (BC-160)
+      - Gestão de cibersegurança (BC-620)
+      - Saúde, segurança e ambiente (BC-5050)
+    source_hash: sha256-bcfbe910a7b9a461
+  BC-5120.10:
+    name: Gestão de Segurança Física
+    description: |
+      Proteção de instalações e ativos de infraestruturas através de controlo de
+      acessos, videovigilância e pessoal de segurança.
+    source_hash: sha256-ab6fd81d819c7d19
+  BC-5120.10.10:
+    name: "Gestão de Acessos e Intrusões"
+    description: |
+      Gestão dos direitos de acesso e deteção de intrusões não autorizadas nas
+      instalações de infraestruturas.
+    source_hash: sha256-bf54fd2f6191d076
+  BC-5120.10.20:
+    name: "Controlo de Perímetro e Acessos"
+    description: |
+      Controlo dos perímetros das instalações e dos pontos de acesso físico a
+      ativos críticos.
+    source_hash: sha256-aaeb117e531a75c4
+  BC-5120.10.30:
+    name: Videovigilância de Segurança
+    description: |
+      Videovigilância e monitorização das instalações de infraestruturas contra
+      ameaças de segurança.
+    source_hash: sha256-c8a6e9e5d44e94ed
+  BC-5120.10.40:
+    name: Gestão de Pessoal de Segurança
+    description: |
+      Gestão do pessoal de segurança e dos serviços de guarda nas instalações.
+    source_hash: sha256-92a7a9683019e254
+  BC-5120.20:
+    name: Segurança Ciber-Física
+    description: |
+      Proteção das tecnologias operacionais e dos sistemas de controlo que operam
+      as infraestruturas críticas face a ameaças ciber-físicas.
+    source_hash: sha256-76663dc59f61c43e
+  BC-5120.20.10:
+    name: "Segurança de OT e Sistemas de Controlo"
+    description: |
+      Segurança dos sistemas de tecnologia operacional (OT) e de controlo
+      industrial que sustentam as infraestruturas.
+    source_hash: sha256-bab81199c8b2066f
+  BC-5120.20.20:
+    name: Proteção de Sistemas Críticos
+    description: |
+      Proteção dos sistemas e ativos críticos essenciais à operação das
+      infraestruturas.
+    source_hash: sha256-8782fc5bee69d8ed
+  BC-5120.20.30:
+    name: Gestão de Ameaças Ciber-Físicas
+    description: |
+      Gestão de ameaças que abrangem os domínios ciber e físico das
+      infraestruturas.
+    source_hash: sha256-45b5d8d04bf46916
+  BC-5120.20.40:
+    name: "Monitorização e Resposta de Segurança"
+    description: |
+      Monitorização de eventos de segurança e resposta a incidentes que afetam os
+      sistemas de controlo.
+    source_hash: sha256-2c7999abe3b319bf
+  BC-5120.30:
+    name: "Gestão de Resiliência e Continuidade"
+    description: |
+      Planeamento e testes que mantêm os serviços de infraestruturas críticas em
+      funcionamento durante a disrupção.
+    source_hash: sha256-50c82bf8d9652c50
+  BC-5120.30.10:
+    name: Planeamento de Resiliência Operacional
+    description: |
+      Planeamento da resiliência operacional dos serviços de infraestruturas
+      críticas.
+    source_hash: sha256-87d444d87065fb57
+  BC-5120.30.20:
+    name: Gestão de Continuidade de Negócio
+    description: |
+      Gestão da continuidade de negócio das operações de infraestruturas durante a
+      disrupção.
+    source_hash: sha256-e9e5fdd1c4f37b7d
+  BC-5120.30.30:
+    name: "Conceção de Redundância e Failover"
+    description: |
+      Conceção de redundância e failover para sustentar o serviço face à falha de
+      ativos.
+    source_hash: sha256-de3a61dc3d3e824a
+  BC-5120.30.40:
+    name: "Testes e Exercícios de Resiliência"
+    description: |
+      Testes e exercícios dos dispositivos de resiliência e continuidade.
+    source_hash: sha256-ccbec6e3ab225a02
+  BC-5120.40:
+    name: "Gestão de Emergências e Crises"
+    description: |
+      Preparação e resposta a emergências e crises que afetam as infraestruturas e
+      os seus utilizadores.
+    source_hash: sha256-c9a84def75d1bc66
+  BC-5120.40.10:
+    name: Preparação para Emergências
+    description: |
+      Planeamento de preparação para emergências que afetam ativos e serviços de
+      infraestruturas.
+    source_hash: sha256-2c08b126adcf3a8b
+  BC-5120.40.20:
+    name: Gestão de Crises
+    description: |
+      Gestão de crises que ameaçam as operações de infraestruturas e as partes
+      interessadas.
+    source_hash: sha256-dda20de9498639d8
+  BC-5120.40.30:
+    name: Coordenação de Resposta a Emergências
+    description: |
+      Coordenação da resposta a emergências entre equipas e intervenientes
+      externos.
+    source_hash: sha256-23673881e80ccf22
+  BC-5120.40.40:
+    name: "Planeamento de Recuperação e Restauração"
+    description: |
+      Planeamento da recuperação e restauração dos serviços após eventos
+      disruptivos.
+    source_hash: sha256-e8210e4f65f83176
+  BC-5120.50:
+    name: "Resiliência Climática e Ambiental"
+    description: |
+      Adaptação e proteção das infraestruturas face às alterações climáticas e aos
+      perigos ambientais.
+    source_hash: sha256-5c8519c07ef26be6
+  BC-5120.50.10:
+    name: Gestão de Adaptação Climática
+    description: |
+      Gestão da adaptação climática de ativos de infraestruturas de longa duração.
+    source_hash: sha256-7eded7738db31aa4
+  BC-5120.50.20:
+    name: Resiliência a Meteorologia Extrema
+    description: |
+      Resiliência das infraestruturas a fenómenos meteorológicos extremos e aos
+      seus impactos.
+    source_hash: sha256-d38d9fa5f0f02308
+  BC-5120.50.30:
+    name: "Proteção contra Cheias e Perigos"
+    description: |
+      Proteção das infraestruturas contra cheias e perigos naturais.
+    source_hash: sha256-e133de2790603d36
+  BC-5120.50.40:
+    name: Gestão de Perigos Ambientais
+    description: |
+      Gestão dos perigos ambientais que afetam as infraestruturas e o seu entorno.
+    source_hash: sha256-f9a3bb27d308ea50
+metadata:
+  translator: claude-ai
+  date: "2026-07-16"

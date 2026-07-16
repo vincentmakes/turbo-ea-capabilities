@@ -1,0 +1,170 @@
+locale: fr
+source: L1-infrastructure-operations-management.yaml
+entries:
+  BC-5080:
+    name: Gestion de l'exploitation d'infrastructure
+    description: |
+      Exploitation des réseaux et systèmes d'infrastructure en service, couvrant les
+      opérations de contrôle du réseau, la gestion de la capacité et de la demande, la
+      disponibilité du service, les opérations d'événement et d'incident, et les
+      opérations clients et usagers.
+    in_scope:
+      - Opérations de contrôle du réseau en salle de contrôle et en temps réel
+      - Gestion de la capacité, de la demande et des flux à travers le réseau
+      - Disponibilité du service et gestion des niveaux de service
+      - Gestion des événements, incidents et perturbations opérationnels
+      - Opérations clients et usagers et services d'information
+      - Communications opérationnelles et rétablissement du service
+    out_of_scope:
+      - Exploitation des services publics (BC-3800)
+      - Exploitation des transports (BC-2400)
+      - Exécution de la maintenance (BC-5090)
+      - Stratégie et planification de la gestion des actifs (BC-5070)
+    source_hash: sha256-9017b7761406afa9
+  BC-5080.10:
+    name: "Contrôle et opérations du réseau"
+    description: |
+      Contrôle et exploitation en temps réel du réseau d'infrastructure depuis les
+      salles de contrôle et les centres d'exploitation.
+    source_hash: sha256-a809ce5352d19ec3
+  BC-5080.10.10:
+    name: Opérations en salle de contrôle
+    description: |
+      Exploitation des salles de contrôle qui dirigent et supervisent l'activité du
+      réseau en service.
+    source_hash: sha256-52ba486b7fa1220e
+  BC-5080.10.20:
+    name: Surveillance du réseau en temps réel
+    description: |
+      Surveillance continue de l'état du réseau pour maintenir une exploitation sûre et
+      fiable.
+    source_hash: sha256-3cc6847c301fff02
+  BC-5080.10.30:
+    name: "Commandement et contrôle opérationnels"
+    description: |
+      Commandement et contrôle des opérations du réseau pour coordonner les ressources
+      et les réponses.
+    source_hash: sha256-38b9bd72ebc128d9
+  BC-5080.10.40:
+    name: Gestion des procédures d'exploitation
+    description: |
+      Gestion des procédures et règles d'exploitation qui régissent l'exploitation sûre
+      du réseau.
+    source_hash: sha256-caebefd5eb402b25
+  BC-5080.20:
+    name: "Gestion de la capacité et de la demande"
+    description: |
+      Équilibrage de la capacité du réseau et de la demande pour maintenir le service et
+      gérer la congestion.
+    source_hash: sha256-fe707b7d24bf69c4
+  BC-5080.20.10:
+    name: Gestion de la capacité
+    description: |
+      Gestion de la capacité disponible du réseau pour répondre à la demande actuelle et
+      prévisionnelle.
+    source_hash: sha256-036f1ed463efeaf3
+  BC-5080.20.20:
+    name: "Gestion de la demande et des flux"
+    description: |
+      Gestion de la demande et des flux à travers le réseau pour optimiser l'utilisation
+      et le service.
+    source_hash: sha256-724b5fbac7fe0a09
+  BC-5080.20.30:
+    name: Programmation des services
+    description: |
+      Programmation des services et des accès pour utiliser efficacement la capacité du
+      réseau.
+    source_hash: sha256-c102d0a1291175e5
+  BC-5080.20.40:
+    name: Gestion de la congestion
+    description: |
+      Gestion de la congestion pour protéger la performance du service en période de
+      pointe.
+    source_hash: sha256-93ff4b80da497c5b
+  BC-5080.30:
+    name: Gestion de la disponibilité du service
+    description: |
+      Assurance de la disponibilité et de la performance du service au regard des normes
+      et niveaux de service convenus.
+    source_hash: sha256-29572f69e7c76a56
+  BC-5080.30.10:
+    name: Gestion de la disponibilité
+    description: |
+      Gestion de la disponibilité du service pour atteindre les cibles de fiabilité et de
+      continuité.
+    source_hash: sha256-849d496ecfc74adc
+  BC-5080.30.20:
+    name: Gestion des niveaux de service
+    description: |
+      Gestion des niveaux de service et des engagements pris envers les usagers et les
+      parties prenantes.
+    source_hash: sha256-4c92806743fa9393
+  BC-5080.30.30:
+    name: Suivi de la performance par rapport aux normes
+    description: |
+      Suivi de la performance opérationnelle au regard des normes de service définies.
+    source_hash: sha256-5d7d212f28559ece
+  BC-5080.30.40:
+    name: Rétablissement du service
+    description: |
+      Rétablissement du service à la norme après dégradation ou perturbation.
+    source_hash: sha256-118768d509691748
+  BC-5080.40:
+    name: "Opérations d'événement et d'incident"
+    description: |
+      Détection, coordination et résolution des événements et incidents opérationnels qui
+      perturbent le service.
+    source_hash: sha256-b516cc1a42d01d43
+  BC-5080.40.10:
+    name: Gestion des incidents opérationnels
+    description: |
+      Gestion des incidents opérationnels par la détection, la réponse et la résolution.
+    source_hash: sha256-b8b9a63388a10b1a
+  BC-5080.40.20:
+    name: Gestion des perturbations
+    description: |
+      Gestion des perturbations de service pour limiter l'impact sur les usagers et le
+      réseau.
+    source_hash: sha256-dd720e2f4353cc9f
+  BC-5080.40.30:
+    name: Coordination de la réponse aux incidents
+    description: |
+      Coordination des ressources et des parties prenantes en réponse aux incidents
+      opérationnels.
+    source_hash: sha256-ba83aa3785b202bd
+  BC-5080.40.40:
+    name: Communications opérationnelles
+    description: |
+      Communication de l'état opérationnel et des consignes aux intervenants et aux
+      parties affectées.
+    source_hash: sha256-dc717820ca2c763b
+  BC-5080.50:
+    name: "Opérations clients et usagers"
+    description: |
+      Services opérationnels et information qui soutiennent les clients et usagers du
+      réseau d'infrastructure.
+    source_hash: sha256-b452d8cb8558f23b
+  BC-5080.50.10:
+    name: Services d'information aux usagers
+    description: |
+      Fourniture d'information opérationnelle qui aide les usagers à planifier et utiliser
+      le réseau.
+    source_hash: sha256-dc0d0659f1c7df22
+  BC-5080.50.20:
+    name: "Gestion des accès et des admissions"
+    description: |
+      Gestion des accès et des admissions des usagers au réseau et à ses services.
+    source_hash: sha256-665b633351da8100
+  BC-5080.50.30:
+    name: Service client opérationnel
+    description: |
+      Prestation du service client découlant de l'exploitation du réseau en service.
+    source_hash: sha256-906e547f1cf1feb8
+  BC-5080.50.40:
+    name: Gestion des retours des usagers
+    description: |
+      Capture et gestion des retours des usagers sur le service opérationnel.
+    source_hash: sha256-0f89156801a5c9d2
+metadata:
+  translator: claude-ai
+  date: "2026-07-16"

@@ -1,0 +1,173 @@
+locale: zh
+source: L1-construction-field-delivery-management.yaml
+entries:
+  BC-5040:
+    name: 施工与现场交付管理
+    description: |
+      基础设施工程的现场执行，涵盖场地建立与动员、工作面与生产管理、临时工程、机械与设备、现场材料与物流以及施工质量。作为现场交付学科，将设计和方案安全、高效且符合规范地转化为已建成工程。
+    in_scope:
+      - 场地建立、动员及临时设施提供
+      - 工作面协调、生产排序和进展跟踪
+      - 临时工程，包括脚手架、模板和开挖支护
+      - 机械、设备和吊装作业管理
+      - 现场材料的分批调用、堆放、物流和废料管理
+      - 施工质量控制、检验和不符合项管理
+    out_of_scope:
+      - 工程施工管理（BC-1150）
+      - 竣工调试与移交（BC-1160）
+      - 设计工程（BC-1120）
+      - 永久资产运营与维护（BC-5090）
+    source_hash: sha256-f60dee7ffc45dc55
+  BC-5040.10:
+    name: 场地建立与动员
+    description: |
+      建立和动员施工场地，包括营地、临时设施以及公用事业和服务的接入。
+    source_hash: sha256-9285db5eebfe952b
+  BC-5040.10.10:
+    name: 场地设置与营地建立
+    description: |
+      建立场地营地、办公室和福利区，为施工作业做好准备。
+    source_hash: sha256-335d23dfe82de860
+  BC-5040.10.20:
+    name: 动员规划
+    description: |
+      规划资源、劳动力和设备向施工场地的动员。
+    source_hash: sha256-60581384b46a2489
+  BC-5040.10.30:
+    name: 临时设施提供
+    description: |
+      为施工劳动力提供临时住宿、福利和现场设施。
+    source_hash: sha256-bdc570f26453b4f2
+  BC-5040.10.40:
+    name: 公用事业与服务接入
+    description: |
+      接入现场作业所需的临时电力、供水和通信服务。
+    source_hash: sha256-fa9d21c7a31f421d
+  BC-5040.20:
+    name: 工作面与生产管理
+    description: |
+      在各活跃工作面上对施工生产进行规划、协调和跟踪，以维持进度和生产率。
+    source_hash: sha256-da95d0c17d542f0f
+  BC-5040.20.10:
+    name: 生产规划与排序
+    description: |
+      对各工作面的施工生产进行短周期规划和排序。
+    source_hash: sha256-6ca57b510f83bd37
+  BC-5040.20.20:
+    name: 工作面协调
+    description: |
+      在并行工作面之间协调工种、资源和进入。
+    source_hash: sha256-ef99fde0316a0954
+  BC-5040.20.30:
+    name: 日常现场作业
+    description: |
+      对现场施工作业进行日常指挥和控制。
+    source_hash: sha256-58aaf7e20cd2397b
+  BC-5040.20.40:
+    name: 进展与生产率跟踪
+    description: |
+      依据方案测量施工进展和劳动生产率。
+    source_hash: sha256-4cfcef94c2878c4d
+  BC-5040.30:
+    name: 临时工程管理
+    description: |
+      管理使永久工程得以安全施工的临时工程和进入系统。
+    source_hash: sha256-cd9a0aeb12bc89c8
+  BC-5040.30.10:
+    name: 临时工程设计协调
+    description: |
+      协调和控制临时工程设计及其复核机制。
+    source_hash: sha256-07057d176e2f55e3
+  BC-5040.30.20:
+    name: 脚手架与进入管理
+    description: |
+      为施工活动提供和控制脚手架及安全进入。
+    source_hash: sha256-a8709804ef7874ba
+  BC-5040.30.30:
+    name: 模板与支撑架管理
+    description: |
+      管理支撑混凝土和结构工程的模板和支撑架系统。
+    source_hash: sha256-8d4e49f3e73f3bfe
+  BC-5040.30.40:
+    name: 开挖与支护管理
+    description: |
+      管理开挖和临时地层支护，以保持工程稳定和安全。
+    source_hash: sha256-e9633d74a71f99ca
+  BC-5040.40:
+    name: 机械与设备管理
+    description: |
+      提供、部署和维护施工机械与设备，包括吊装作业。
+    source_hash: sha256-b9444e8ef65b4670
+  BC-5040.40.10:
+    name: 机械车队管理
+    description: |
+      跨项目和工作面管理施工机械车队。
+    source_hash: sha256-20a6c52330ee2c49
+  BC-5040.40.20:
+    name: 设备租赁与利用
+    description: |
+      对施工设备进行来源获取、租赁和利用率跟踪。
+    source_hash: sha256-9f5eebbf705c8257
+  BC-5040.40.30:
+    name: 吊装作业管理
+    description: |
+      规划和控制现场吊装作业和起重机使用。
+    source_hash: sha256-ee1aa7bedc9fc4a1
+  BC-5040.40.40:
+    name: 机械检查与维护
+    description: |
+      对机械和设备进行检查和维护，以维持可用性和安全。
+    source_hash: sha256-2a091f67f3a9138f
+  BC-5040.50:
+    name: 现场材料与物流
+    description: |
+      在现场进行施工材料的交付、存储和搬运，包括物流和废料。
+    source_hash: sha256-b6986a7c3867f0b8
+  BC-5040.50.10:
+    name: 材料分批调用与交付
+    description: |
+      分批调用和交付施工材料，以满足工作方案。
+    source_hash: sha256-869e753658759c30
+  BC-5040.50.20:
+    name: 堆放与存储管理
+    description: |
+      管理材料和构件的堆放区和现场存储。
+    source_hash: sha256-83efb39bc1be74d7
+  BC-5040.50.30:
+    name: 现场物流与交通管理
+    description: |
+      管理现场物流、交付以及车辆和交通流动。
+    source_hash: sha256-e2831a838b0316f3
+  BC-5040.50.40:
+    name: 施工废料管理
+    description: |
+      对施工废料和多余材料进行分类、处理和处置。
+    source_hash: sha256-76a72cd81d95d613
+  BC-5040.60:
+    name: 施工质量管理
+    description: |
+      对施工质量进行保证和控制，以交付符合规范的工程。
+    source_hash: sha256-65f01840c29dd072
+  BC-5040.60.10:
+    name: 检验与试验计划
+    description: |
+      规划检验和试验及其停检点和见证点。
+    source_hash: sha256-006327a666a14d37
+  BC-5040.60.20:
+    name: 质量控制与保证
+    description: |
+      在施工活动中执行质量控制检查和保证。
+    source_hash: sha256-325581465aeccc65
+  BC-5040.60.30:
+    name: 不符合项管理
+    description: |
+      识别、处置和关闭施工不符合项。
+    source_hash: sha256-716e63f20d5a2f4a
+  BC-5040.60.40:
+    name: 缺陷清单与移交支持
+    description: |
+      处理缺陷清单、缺陷关闭，并支持已完工程的移交。
+    source_hash: sha256-c6fb7d5061da1fe6
+metadata:
+  translator: claude-ai
+  date: "2026-07-16"
