@@ -1,0 +1,148 @@
+locale: zh
+source: L1-infrastructure-operations-management.yaml
+entries:
+  BC-5080:
+    name: 基础设施运营管理
+    description: |
+      对实时基础设施网络和系统的运营，涵盖网络控制运营、容量与需求管理、服务可用性、事件与不良事件运营，以及客户与用户运营。
+    in_scope:
+      - 控制室和实时网络控制运营
+      - 跨网络的容量、需求和流量管理
+      - 服务可用性和服务级别管理
+      - 运营事件、不良事件和中断管理
+      - 客户与用户运营及信息服务
+      - 运营沟通与服务恢复
+    out_of_scope:
+      - 公用事业运营（BC-3800）
+      - 运输运营（BC-2400）
+      - 维护执行（BC-5090）
+      - 资产管理战略与规划（BC-5070）
+    source_hash: sha256-9017b7761406afa9
+  BC-5080.10:
+    name: 网络控制与运营
+    description: |
+      从控制室和运营中心对基础设施网络进行实时控制和运营。
+    source_hash: sha256-a809ce5352d19ec3
+  BC-5080.10.10:
+    name: 控制室运营
+    description: |
+      运营指挥和监督实时网络活动的控制室。
+    source_hash: sha256-52ba486b7fa1220e
+  BC-5080.10.20:
+    name: 实时网络监测
+    description: |
+      持续监测网络状态，以维持安全可靠的运营。
+    source_hash: sha256-3cc6847c301fff02
+  BC-5080.10.30:
+    name: 运营指挥与控制
+    description: |
+      对网络运营进行指挥和控制，以协调资源和响应。
+    source_hash: sha256-38b9bd72ebc128d9
+  BC-5080.10.40:
+    name: 运营程序管理
+    description: |
+      管理支配网络安全运营的运营程序和规则。
+    source_hash: sha256-caebefd5eb402b25
+  BC-5080.20:
+    name: 容量与需求管理
+    description: |
+      平衡网络容量与需求，以维持服务并管理拥堵。
+    source_hash: sha256-fe707b7d24bf69c4
+  BC-5080.20.10:
+    name: 容量管理
+    description: |
+      管理可用网络容量，以满足当前和预测需求。
+    source_hash: sha256-036f1ed463efeaf3
+  BC-5080.20.20:
+    name: 需求与流量管理
+    description: |
+      跨网络管理需求和流量，以优化利用率和服务。
+    source_hash: sha256-724b5fbac7fe0a09
+  BC-5080.20.30:
+    name: 服务排班
+    description: |
+      对服务和进入进行排班，以有效利用网络容量。
+    source_hash: sha256-c102d0a1291175e5
+  BC-5080.20.40:
+    name: 拥堵管理
+    description: |
+      管理拥堵，以在高峰需求下保护服务绩效。
+    source_hash: sha256-93ff4b80da497c5b
+  BC-5080.30:
+    name: 服务可用性管理
+    description: |
+      依据约定的标准和服务级别保证服务可用性和绩效。
+    source_hash: sha256-29572f69e7c76a56
+  BC-5080.30.10:
+    name: 可用性管理
+    description: |
+      管理服务可用性，以满足可靠性和连续性目标。
+    source_hash: sha256-849d496ecfc74adc
+  BC-5080.30.20:
+    name: 服务级别管理
+    description: |
+      管理向用户和利益相关方作出的服务级别和承诺。
+    source_hash: sha256-4c92806743fa9393
+  BC-5080.30.30:
+    name: 达标绩效监测
+    description: |
+      依据既定服务标准监测运营绩效。
+    source_hash: sha256-5d7d212f28559ece
+  BC-5080.30.40:
+    name: 服务恢复
+    description: |
+      在服务降级或中断后将其恢复至标准水平。
+    source_hash: sha256-118768d509691748
+  BC-5080.40:
+    name: 事件与不良事件运营
+    description: |
+      对扰乱服务的运营事件和不良事件进行检测、协调和解决。
+    source_hash: sha256-b516cc1a42d01d43
+  BC-5080.40.10:
+    name: 运营不良事件管理
+    description: |
+      通过检测、响应和解决来管理运营不良事件。
+    source_hash: sha256-b8b9a63388a10b1a
+  BC-5080.40.20:
+    name: 中断管理
+    description: |
+      管理服务中断，以限制对用户和网络的影响。
+    source_hash: sha256-dd720e2f4353cc9f
+  BC-5080.40.30:
+    name: 不良事件响应协调
+    description: |
+      在应对运营不良事件时协调资源和利益相关方。
+    source_hash: sha256-ba83aa3785b202bd
+  BC-5080.40.40:
+    name: 运营沟通
+    description: |
+      向响应方和受影响方传达运营状态和指令。
+    source_hash: sha256-dc717820ca2c763b
+  BC-5080.50:
+    name: 客户与用户运营
+    description: |
+      支持基础设施网络客户和用户的运营服务和信息。
+    source_hash: sha256-b452d8cb8558f23b
+  BC-5080.50.10:
+    name: 用户信息服务
+    description: |
+      提供帮助用户规划和使用网络的运营信息。
+    source_hash: sha256-dc0d0659f1c7df22
+  BC-5080.50.20:
+    name: 进入与准入管理
+    description: |
+      管理用户对网络及其服务的进入和准入。
+    source_hash: sha256-665b633351da8100
+  BC-5080.50.30:
+    name: 运营客户服务
+    description: |
+      提供因实时网络运营而产生的客户服务。
+    source_hash: sha256-906e547f1cf1feb8
+  BC-5080.50.40:
+    name: 用户反馈管理
+    description: |
+      采集和管理用户对运营服务的反馈。
+    source_hash: sha256-0f89156801a5c9d2
+metadata:
+  translator: claude-ai
+  date: "2026-07-16"

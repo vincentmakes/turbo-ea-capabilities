@@ -1,0 +1,206 @@
+locale: fr
+source: L1-infrastructure-asset-management.yaml
+entries:
+  BC-5070:
+    name: Gestion des actifs d'infrastructure
+    description: |
+      Gestion sur l'ensemble du cycle de vie des actifs d'infrastructure selon
+      ISO 55000, couvrant la stratégie et la planification de la gestion des actifs,
+      le registre des actifs et la base d'information, l'évaluation de l'état et de la
+      performance, la stratégie de maintenance et de renouvellement, le risque et la
+      criticité des actifs, et le cycle de vie et la cession.
+    in_scope:
+      - Stratégie, politique et planification de la gestion des actifs alignées sur les objectifs de l'entreprise
+      - Registre, hiérarchie et gestion de la qualité de l'information sur les actifs
+      - Évaluation de l'état, de la performance et de la durée de vie résiduelle des actifs
+      - Stratégie de maintenance et de renouvellement et modélisation du coût sur le cycle de vie
+      - Risque, criticité et priorisation des interventions sur les actifs
+      - Optimisation de la valeur sur le cycle de vie, déclassement et cession
+    out_of_scope:
+      - Gestion des actifs physiques transverse (BC-1040)
+      - Maintenance des installations (BC-1030)
+      - Exécution de la maintenance (BC-5090)
+      - Exploitation et contrôle du réseau en temps réel (BC-5080)
+    source_hash: sha256-ff71cdfe8c3f3de2
+  BC-5070.10:
+    name: "Stratégie et planification de la gestion des actifs"
+    description: |
+      Définition de la stratégie, des objectifs et des plans de gestion des actifs qui
+      alignent les décisions relatives aux actifs sur les objectifs organisationnels.
+    source_hash: sha256-cb48a4e3ad61ef68
+  BC-5070.10.10:
+    name: "Politique de gestion des actifs et SAMP"
+    description: |
+      Établissement de la politique de gestion des actifs et du plan stratégique de
+      gestion des actifs (SAMP) qui donnent la direction pour le parc d'actifs.
+    source_hash: sha256-4efc0bc3b4065e29
+  BC-5070.10.20:
+    name: Objectifs de gestion des actifs
+    description: |
+      Définition d'objectifs de gestion des actifs mesurables dérivés des objectifs
+      organisationnels et des attentes des parties prenantes.
+    source_hash: sha256-d047fa7f6fb972a5
+  BC-5070.10.30:
+    name: Alignement de la ligne de visée
+    description: |
+      Alignement des décisions et activités relatives aux actifs sur la stratégie par
+      une ligne de visée claire des objectifs à la livraison.
+    source_hash: sha256-6cfd9b4f6132b0eb
+  BC-5070.10.40:
+    name: Planification de la gestion des actifs
+    description: |
+      Élaboration de plans de gestion des actifs qui traduisent la stratégie en
+      activités cadrées et engagements de ressources.
+    source_hash: sha256-fd8ba34b64a99758
+  BC-5070.20:
+    name: "Registre et information des actifs"
+    description: |
+      Maintien d'un registre des actifs de confiance et d'une base d'information qui
+      sous-tendent les décisions de gestion des actifs.
+    source_hash: sha256-5490b84e55347d2a
+  BC-5070.20.10:
+    name: Gestion du registre des actifs
+    description: |
+      Maintien d'un registre complet et exact des actifs et de leurs attributs à
+      travers le parc.
+    source_hash: sha256-6d722217a5f0ac49
+  BC-5070.20.20:
+    name: "Hiérarchie et classification des actifs"
+    description: |
+      Structuration des actifs en hiérarchies et classifications cohérentes pour
+      soutenir l'analyse et le reporting.
+    source_hash: sha256-9e987c11d892100d
+  BC-5070.20.30:
+    name: Qualité des données d'actif
+    description: |
+      Assurance de la complétude, de l'exactitude et de l'actualité des données
+      d'actif à travers la base d'information.
+    source_hash: sha256-f89ea51d1babb241
+  BC-5070.20.40:
+    name: Normes d'information sur les actifs
+    description: |
+      Définition des normes et exigences d'information sur les actifs qui régissent la
+      capture et l'échange des données.
+    source_hash: sha256-aef275138b49f44b
+  BC-5070.30:
+    name: "Évaluation de l'état et de la performance"
+    description: |
+      Évaluation de l'état, de la performance et de la durée de vie résiduelle des
+      actifs pour éclairer les décisions d'intervention et d'investissement.
+    source_hash: sha256-c07df052d056fc4d
+  BC-5070.30.10:
+    name: Surveillance de l'état
+    description: |
+      Surveillance de l'état des actifs pour détecter la dégradation et éclairer les
+      décisions de maintenance et de renouvellement.
+    source_hash: sha256-3199e2eb959c8862
+  BC-5070.30.20:
+    name: Régime d'inspection des actifs
+    description: |
+      Définition et exploitation du régime d'inspection qui établit l'état des actifs
+      dans le temps.
+    source_hash: sha256-4d15d9676a325be7
+  BC-5070.30.30:
+    name: Analyse de la performance
+    description: |
+      Analyse de la performance des actifs au regard des normes attendues et des
+      exigences de service.
+    source_hash: sha256-09be7cb7fb9b41f6
+  BC-5070.30.40:
+    name: Évaluation de la durée de vie résiduelle
+    description: |
+      Évaluation de la durée de vie utile résiduelle pour soutenir le calendrier des
+      renouvellements et la planification des investissements.
+    source_hash: sha256-61a54a779682dd8a
+  BC-5070.40:
+    name: "Stratégie de maintenance et de renouvellement"
+    description: |
+      Développement d'une stratégie de maintenance et de renouvellement qui optimise
+      les interventions sur l'ensemble du cycle de vie de l'actif.
+    source_hash: sha256-13b358ae5b73230a
+  BC-5070.40.10:
+    name: Développement de la stratégie de maintenance
+    description: |
+      Développement de stratégies de maintenance qui équilibrent coût, risque et
+      performance selon les types d'actifs.
+    source_hash: sha256-13a334f6b0cc4bf6
+  BC-5070.40.20:
+    name: "Planification des renouvellements et remplacements"
+    description: |
+      Planification des renouvellements et remplacements pour maintenir le service des
+      actifs sur le long terme.
+    source_hash: sha256-a42bf68efe800c10
+  BC-5070.40.30:
+    name: Optimisation des interventions
+    description: |
+      Optimisation du calendrier et du type d'intervention pour maximiser la valeur
+      issue de la maintenance et des renouvellements.
+    source_hash: sha256-0bdf9c3f4fba162e
+  BC-5070.40.40:
+    name: Modélisation du coût sur le cycle de vie
+    description: |
+      Modélisation des coûts sur le cycle de vie pour éclairer les arbitrages de
+      maintenance, de renouvellement et d'investissement.
+    source_hash: sha256-1d8e18229d67f995
+  BC-5070.50:
+    name: "Risque et criticité des actifs"
+    description: |
+      Évaluation du risque et de la criticité des actifs pour concentrer les
+      interventions sur les actifs qui comptent le plus pour le service et la sécurité.
+    source_hash: sha256-5648edaf25a3143a
+  BC-5070.50.10:
+    name: Évaluation de la criticité des actifs
+    description: |
+      Évaluation de la criticité des actifs pour la continuité de service, la sécurité
+      et les objectifs organisationnels.
+    source_hash: sha256-9df9330d24dddb32
+  BC-5070.50.20:
+    name: Analyse des modes de défaillance
+    description: |
+      Analyse des modes de défaillance des actifs et de leurs conséquences pour
+      éclairer les décisions de risque et de maintenance.
+    source_hash: sha256-17bc85747541a823
+  BC-5070.50.30:
+    name: Priorisation des interventions basée sur le risque
+    description: |
+      Priorisation des interventions sur la base du risque et de la criticité des
+      actifs.
+    source_hash: sha256-3688db42b4cc5c95
+  BC-5070.50.40:
+    name: Évaluation de la résilience des actifs
+    description: |
+      Évaluation de la résilience des actifs aux aléas et contraintes qui menacent la
+      continuité de service.
+    source_hash: sha256-4924a98f4d041977
+  BC-5070.60:
+    name: "Cycle de vie et cession des actifs"
+    description: |
+      Gestion des actifs en fin de vie, déclassement et cession pour maximiser la
+      valeur et les résultats de durabilité.
+    source_hash: sha256-05b0594a435070dd
+  BC-5070.60.10:
+    name: Optimisation de la valeur sur le cycle de vie
+    description: |
+      Optimisation de la valeur générée par les actifs sur l'ensemble de leur cycle de
+      vie.
+    source_hash: sha256-778175117807d49e
+  BC-5070.60.20:
+    name: Planification du déclassement
+    description: |
+      Planification du déclassement sûr et ordonné des actifs en fin de vie.
+    source_hash: sha256-a079a535759c0c43
+  BC-5070.60.30:
+    name: Gestion de la cession des actifs
+    description: |
+      Gestion de la cession, du transfert et du retrait des actifs conformément à la
+      politique et aux obligations.
+    source_hash: sha256-5a236bad8ace26bd
+  BC-5070.60.40:
+    name: "Durabilité et circularité"
+    description: |
+      Intégration des résultats de durabilité et d'économie circulaire dans les
+      décisions de cycle de vie et de cession des actifs.
+    source_hash: sha256-a30b5016384602a1
+metadata:
+  translator: claude-ai
+  date: "2026-07-16"

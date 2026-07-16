@@ -1,0 +1,223 @@
+# Infrastructure Operations Management
+id: BC-5080
+name: Infrastructure Operations Management
+level: 1
+industry: Infrastructure
+description: |
+  Operation of live infrastructure networks and systems, spanning network
+  control operations, capacity and demand management, service availability,
+  event and incident operations, and customer and user operations.
+references:
+  - https://theiam.org/
+  - https://www.iso.org/iso-22301-business-continuity.html
+in_scope:
+  - Control-room and real-time network control operations
+  - Capacity, demand, and flow management across the network
+  - Service availability and service-level management
+  - Operational event, incident, and disruption management
+  - Customer and user operations and information services
+  - Operational communications and restoration of service
+out_of_scope:
+  - Utilities operations (BC-3800)
+  - Transportation operations (BC-2400)
+  - Maintenance execution (BC-5090)
+  - Asset management strategy and planning (BC-5070)
+children:
+  - id: BC-5080.10
+    name: "Network Control & Operations"
+    level: 2
+    industry: Infrastructure
+    description: |
+      Real-time control and operation of the infrastructure network from
+      control rooms and operating centres.
+    children:
+      - id: BC-5080.10.10
+        name: Control Room Operations
+        level: 3
+        industry: Infrastructure
+        description: |
+          Operation of control rooms that direct and supervise live network
+          activity.
+        children: []
+      - id: BC-5080.10.20
+        name: Real-Time Network Monitoring
+        level: 3
+        industry: Infrastructure
+        description: |
+          Continuous monitoring of network state to maintain safe and reliable
+          operation.
+        children: []
+      - id: BC-5080.10.30
+        name: "Operational Command & Control"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Command and control of network operations to coordinate resources
+          and responses.
+        children: []
+      - id: BC-5080.10.40
+        name: Operating Procedures Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of operating procedures and rules that govern safe network
+          operation.
+        children: []
+  - id: BC-5080.20
+    name: "Capacity & Demand Management"
+    level: 2
+    industry: Infrastructure
+    description: |
+      Balancing of network capacity against demand to sustain service and
+      manage congestion.
+    children:
+      - id: BC-5080.20.10
+        name: Capacity Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of available network capacity to meet current and
+          forecast demand.
+        children: []
+      - id: BC-5080.20.20
+        name: "Demand & Flow Management"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of demand and flow across the network to optimise
+          utilisation and service.
+        children: []
+      - id: BC-5080.20.30
+        name: Service Scheduling
+        level: 3
+        industry: Infrastructure
+        description: |
+          Scheduling of services and access to make effective use of network
+          capacity.
+        children: []
+      - id: BC-5080.20.40
+        name: Congestion Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of congestion to protect service performance under peak
+          demand.
+        children: []
+  - id: BC-5080.30
+    name: Service Availability Management
+    level: 2
+    industry: Infrastructure
+    description: |
+      Assurance of service availability and performance against agreed
+      standards and service levels.
+    children:
+      - id: BC-5080.30.10
+        name: Availability Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of service availability to meet reliability and
+          continuity targets.
+        children: []
+      - id: BC-5080.30.20
+        name: Service Level Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of service levels and commitments made to users and
+          stakeholders.
+        children: []
+      - id: BC-5080.30.30
+        name: Performance-to-Standard Monitoring
+        level: 3
+        industry: Infrastructure
+        description: |
+          Monitoring of operational performance against defined service
+          standards.
+        children: []
+      - id: BC-5080.30.40
+        name: Service Restoration
+        level: 3
+        industry: Infrastructure
+        description: |
+          Restoration of service to standard following degradation or
+          disruption.
+        children: []
+  - id: BC-5080.40
+    name: "Event & Incident Operations"
+    level: 2
+    industry: Infrastructure
+    description: |
+      Detection, coordination, and resolution of operational events and
+      incidents that disrupt service.
+    children:
+      - id: BC-5080.40.10
+        name: Operational Incident Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of operational incidents through detection, response, and
+          resolution.
+        children: []
+      - id: BC-5080.40.20
+        name: Disruption Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of service disruptions to limit impact on users and the
+          network.
+        children: []
+      - id: BC-5080.40.30
+        name: Incident Response Coordination
+        level: 3
+        industry: Infrastructure
+        description: |
+          Coordination of resources and stakeholders in response to
+          operational incidents.
+        children: []
+      - id: BC-5080.40.40
+        name: Operational Communications
+        level: 3
+        industry: Infrastructure
+        description: |
+          Communication of operational status and instructions to responders
+          and affected parties.
+        children: []
+  - id: BC-5080.50
+    name: "Customer & User Operations"
+    level: 2
+    industry: Infrastructure
+    description: |
+      Operational services and information that support customers and users of
+      the infrastructure network.
+    children:
+      - id: BC-5080.50.10
+        name: User Information Services
+        level: 3
+        industry: Infrastructure
+        description: |
+          Provision of operational information that helps users plan and use
+          the network.
+        children: []
+      - id: BC-5080.50.20
+        name: "Access & Admission Management"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of user access and admission to the network and its
+          services.
+        children: []
+      - id: BC-5080.50.30
+        name: Operational Customer Service
+        level: 3
+        industry: Infrastructure
+        description: |
+          Delivery of customer service arising from live network operation.
+        children: []
+      - id: BC-5080.50.40
+        name: User Feedback Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Capture and management of user feedback on operational service.
+        children: []

@@ -1,0 +1,208 @@
+locale: de
+source: L1-infrastructure-asset-management.yaml
+entries:
+  BC-5070:
+    name: Infrastruktur-Anlagenmanagement
+    description: |
+      Management von Infrastrukturanlagen über die gesamte Lebensdauer nach
+      ISO 55000, umfassend Anlagenmanagementstrategie und -planung, das
+      Anlagenregister und die Informationsbasis, Zustands- und
+      Leistungsbeurteilung, Instandhaltungs- und Erneuerungsstrategie,
+      Anlagenrisiko und -kritikalität sowie Lebenszyklus und Entsorgung.
+    in_scope:
+      - Anlagenmanagementstrategie, -politik und -planung, ausgerichtet an Unternehmenszielen
+      - Anlagenregister, -hierarchie und Management der Informationsqualität
+      - Zustands-, Leistungs- und Restlebensdauerbeurteilung von Anlagen
+      - Instandhaltungs- und Erneuerungsstrategie sowie Gesamtlebensdauerkostenmodellierung
+      - Anlagenrisiko, -kritikalität und Priorisierung von Interventionen
+      - Optimierung des Lebenszykluswerts, Stilllegung und Entsorgung
+    out_of_scope:
+      - Branchenübergreifendes Management physischer Vermögenswerte (BC-1040)
+      - Anlageninstandhaltung (BC-1030)
+      - Instandhaltungsausführung (BC-5090)
+      - Live-Netzbetrieb und -steuerung (BC-5080)
+    source_hash: sha256-ff71cdfe8c3f3de2
+  BC-5070.10:
+    name: Anlagenmanagementstrategie und -planung
+    description: |
+      Definition von Anlagenmanagementstrategie, -zielen und -plänen, die
+      Anlagenentscheidungen an organisatorischen Zielen ausrichten.
+    source_hash: sha256-cb48a4e3ad61ef68
+  BC-5070.10.10:
+    name: Anlagenmanagementpolitik und SAMP
+    description: |
+      Einrichtung der Anlagenmanagementpolitik und des strategischen
+      Anlagenmanagementplans (SAMP), die die Richtung für den Anlagenbestand
+      vorgeben.
+    source_hash: sha256-4efc0bc3b4065e29
+  BC-5070.10.20:
+    name: Anlagenmanagementziele
+    description: |
+      Definition messbarer Anlagenmanagementziele, abgeleitet aus
+      organisatorischen Zielen und Stakeholder-Erwartungen.
+    source_hash: sha256-d047fa7f6fb972a5
+  BC-5070.10.30:
+    name: Line-of-Sight-Ausrichtung
+    description: |
+      Ausrichtung von Anlagenentscheidungen und -aktivitäten an der Strategie
+      durch eine klare Sichtlinie von den Zielen bis zur Lieferung.
+    source_hash: sha256-6cfd9b4f6132b0eb
+  BC-5070.10.40:
+    name: Anlagenmanagementplanung
+    description: |
+      Entwicklung von Anlagenmanagementplänen, die die Strategie in
+      abgegrenzte Aktivitäten und Ressourcenzusagen übersetzen.
+    source_hash: sha256-fd8ba34b64a99758
+  BC-5070.20:
+    name: Anlagenregister und -information
+    description: |
+      Pflege eines vertrauenswürdigen Anlagenregisters und einer
+      Informationsbasis, die Anlagenmanagemententscheidungen untermauern.
+    source_hash: sha256-5490b84e55347d2a
+  BC-5070.20.10:
+    name: Anlagenregistermanagement
+    description: |
+      Pflege eines vollständigen und genauen Registers von Anlagen und ihren
+      Attributen über den Bestand.
+    source_hash: sha256-6d722217a5f0ac49
+  BC-5070.20.20:
+    name: Anlagenhierarchie und -klassifizierung
+    description: |
+      Strukturierung von Anlagen in konsistente Hierarchien und
+      Klassifizierungen zur Unterstützung von Analyse und Berichterstattung.
+    source_hash: sha256-9e987c11d892100d
+  BC-5070.20.30:
+    name: Anlagendatenqualität
+    description: |
+      Sicherstellung von Vollständigkeit, Genauigkeit und Aktualität der
+      Anlagendaten über die Informationsbasis.
+    source_hash: sha256-f89ea51d1babb241
+  BC-5070.20.40:
+    name: Anlageninformationsstandards
+    description: |
+      Definition von Anlageninformationsstandards und -anforderungen, die
+      Datenerfassung und -austausch regeln.
+    source_hash: sha256-aef275138b49f44b
+  BC-5070.30:
+    name: Zustands- und Leistungsbeurteilung
+    description: |
+      Beurteilung von Anlagenzustand, -leistung und Restlebensdauer als
+      Grundlage für Interventions- und Investitionsentscheidungen.
+    source_hash: sha256-c07df052d056fc4d
+  BC-5070.30.10:
+    name: Zustandsüberwachung
+    description: |
+      Überwachung des Anlagenzustands zur Erkennung von Verschlechterung und als
+      Grundlage für Instandhaltungs- und Erneuerungsentscheidungen.
+    source_hash: sha256-3199e2eb959c8862
+  BC-5070.30.20:
+    name: Anlageninspektionsregime
+    description: |
+      Definition und Betrieb des Inspektionsregimes, das den Anlagenzustand über
+      die Zeit feststellt.
+    source_hash: sha256-4d15d9676a325be7
+  BC-5070.30.30:
+    name: Leistungsanalyse
+    description: |
+      Analyse der Anlagenleistung anhand erwarteter Standards und
+      Serviceanforderungen.
+    source_hash: sha256-09be7cb7fb9b41f6
+  BC-5070.30.40:
+    name: Restlebensdauerbeurteilung
+    description: |
+      Beurteilung der verbleibenden Nutzungsdauer zur Unterstützung von
+      Erneuerungszeitpunkt und Investitionsplanung.
+    source_hash: sha256-61a54a779682dd8a
+  BC-5070.40:
+    name: Instandhaltungs- und Erneuerungsstrategie
+    description: |
+      Entwicklung einer Instandhaltungs- und Erneuerungsstrategie, die
+      Interventionen über die gesamte Lebensdauer der Anlage optimiert.
+    source_hash: sha256-13b358ae5b73230a
+  BC-5070.40.10:
+    name: Entwicklung der Instandhaltungsstrategie
+    description: |
+      Entwicklung von Instandhaltungsstrategien, die Kosten, Risiko und Leistung
+      über Anlagentypen ausbalancieren.
+    source_hash: sha256-13a334f6b0cc4bf6
+  BC-5070.40.20:
+    name: Erneuerungs- und Ersatzplanung
+    description: |
+      Planung von Erneuerungen und Ersatz zur langfristigen Aufrechterhaltung des
+      Anlagenservices.
+    source_hash: sha256-a42bf68efe800c10
+  BC-5070.40.30:
+    name: Interventionsoptimierung
+    description: |
+      Optimierung von Interventionszeitpunkt und -art zur Maximierung des Werts
+      aus Instandhaltung und Erneuerungen.
+    source_hash: sha256-0bdf9c3f4fba162e
+  BC-5070.40.40:
+    name: Gesamtlebensdauerkostenmodellierung
+    description: |
+      Modellierung der Gesamtlebensdauerkosten als Grundlage für
+      Instandhaltungs-, Erneuerungs- und Investitionsabwägungen.
+    source_hash: sha256-1d8e18229d67f995
+  BC-5070.50:
+    name: Anlagenrisiko und -kritikalität
+    description: |
+      Beurteilung von Anlagenrisiko und -kritikalität, um Interventionen auf die
+      für Service und Sicherheit wichtigsten Anlagen zu fokussieren.
+    source_hash: sha256-5648edaf25a3143a
+  BC-5070.50.10:
+    name: Anlagenkritikalitätsbeurteilung
+    description: |
+      Beurteilung der Anlagenkritikalität für Servicekontinuität, Sicherheit und
+      organisatorische Ziele.
+    source_hash: sha256-9df9330d24dddb32
+  BC-5070.50.20:
+    name: Fehlermodusanalyse
+    description: |
+      Analyse von Anlagenfehlermodi und -folgen als Grundlage für Risiko- und
+      Instandhaltungsentscheidungen.
+    source_hash: sha256-17bc85747541a823
+  BC-5070.50.30:
+    name: Risikobasierte Interventionspriorisierung
+    description: |
+      Priorisierung von Interventionen auf Basis von Anlagenrisiko und
+      -kritikalität.
+    source_hash: sha256-3688db42b4cc5c95
+  BC-5070.50.40:
+    name: Anlagenresilienzbeurteilung
+    description: |
+      Beurteilung der Anlagenresilienz gegenüber Gefahren und Belastungen, die
+      den fortgesetzten Service bedrohen.
+    source_hash: sha256-4924a98f4d041977
+  BC-5070.60:
+    name: Anlagenlebenszyklus und Entsorgung
+    description: |
+      Management von Anlagen über die Spätphase, Stilllegung und Entsorgung zur
+      Maximierung von Wert und Nachhaltigkeitsergebnissen.
+    source_hash: sha256-05b0594a435070dd
+  BC-5070.60.10:
+    name: Optimierung des Lebenszykluswerts
+    description: |
+      Optimierung des von Anlagen gelieferten Werts über ihren gesamten
+      Lebenszyklus.
+    source_hash: sha256-778175117807d49e
+  BC-5070.60.20:
+    name: Stilllegungsplanung
+    description: |
+      Planung für die sichere und geordnete Stilllegung von Anlagen am
+      Lebensende.
+    source_hash: sha256-a079a535759c0c43
+  BC-5070.60.30:
+    name: Anlagenentsorgungsmanagement
+    description: |
+      Management von Anlagenentsorgung, -übertragung und -außerbetriebnahme im
+      Einklang mit Politik und Pflichten.
+    source_hash: sha256-5a236bad8ace26bd
+  BC-5070.60.40:
+    name: Nachhaltigkeit und Kreislaufwirtschaft
+    description: |
+      Verankerung von Nachhaltigkeit und Kreislaufwirtschaftsergebnissen in
+      Entscheidungen zu Anlagenlebenszyklus und Entsorgung.
+    source_hash: sha256-a30b5016384602a1
+metadata:
+  translator: claude-ai
+  date: "2026-07-16"

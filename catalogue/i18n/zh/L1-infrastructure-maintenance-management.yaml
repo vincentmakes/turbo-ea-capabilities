@@ -1,0 +1,148 @@
+locale: zh
+source: L1-infrastructure-maintenance-management.yaml
+entries:
+  BC-5090:
+    name: 基础设施维护管理
+    description: |
+      对实时基础设施资产执行检查和维护，涵盖维护规划与排班、检查与检验、计划性维护执行、被动与紧急维护，以及维护绩效与记录。
+    in_scope:
+      - 维护工作规划、排班和资源配置
+      - 资产检查、检验和缺陷识别
+      - 计划性预防和更新维护执行
+      - 被动与紧急修复和故障响应
+      - 维护记录、积压和绩效管理
+      - 从维护洞察中提升可靠性
+    out_of_scope:
+      - 跨行业设备维护（BC-1030）
+      - 资产管理战略（BC-5070）
+      - 网络运营（BC-5080）
+      - 全生命周期更新与维护战略（BC-5070.40）
+    source_hash: sha256-16e287e0a6c64f65
+  BC-5090.10:
+    name: 维护规划与排班
+    description: |
+      规划和排班维护工作以及交付所需的资源和进入。
+    source_hash: sha256-6a3eb19fe0db371f
+  BC-5090.10.10:
+    name: 维护工作规划
+    description: |
+      在执行前规划维护工作范围、方法和要求。
+    source_hash: sha256-3349241f78e25c26
+  BC-5090.10.20:
+    name: 维护排班
+    description: |
+      对维护活动进行排班，以平衡工作量、进入和服务影响。
+    source_hash: sha256-0b7ab11495443950
+  BC-5090.10.30:
+    name: 资源与班组配置
+    description: |
+      为计划性维护工作配置班组、技能和资源。
+    source_hash: sha256-e4ba046dbc77eb0a
+  BC-5090.10.40:
+    name: 停机与占用规划
+    description: |
+      规划为维护提供安全进入的停机和线路占用。
+    source_hash: sha256-bcd1694386b2e5fd
+  BC-5090.20:
+    name: 检查与检验
+    description: |
+      对资产进行检查和检验，以识别缺陷并确认适用于服务。
+    source_hash: sha256-1186d613fd065c57
+  BC-5090.20.10:
+    name: 例行检查
+    description: |
+      对资产进行例行检查，以发现新出现的缺陷和劣化。
+    source_hash: sha256-fd47a7ac1aee58a5
+  BC-5090.20.20:
+    name: 详细检验
+    description: |
+      在需要更近距离检查时对资产进行详细检验以评估状态。
+    source_hash: sha256-c78848b64794adad
+  BC-5090.20.30:
+    name: 缺陷识别与分级
+    description: |
+      识别和分级缺陷，以对补救行动进行优先排序。
+    source_hash: sha256-85281da9fca2213a
+  BC-5090.20.40:
+    name: 结构与安全检查
+    description: |
+      对资产进行结构和安全检查，以确认完整性和安全使用。
+    source_hash: sha256-af1c8418f2e03953
+  BC-5090.30:
+    name: 计划性维护执行
+    description: |
+      交付计划性预防和更新维护，以维持资产状态和绩效。
+    source_hash: sha256-d0a53686779cf2ba
+  BC-5090.30.10:
+    name: 预防性维护执行
+    description: |
+      执行预防性维护，以使资产保持可用状态。
+    source_hash: sha256-103353b24e101b23
+  BC-5090.30.20:
+    name: 计划性更新执行
+    description: |
+      执行修复或更换资产部件的计划性更新。
+    source_hash: sha256-29579b3e2769d2be
+  BC-5090.30.30:
+    name: 维护工作交付
+    description: |
+      按计划、范围和标准在现场交付维护工作。
+    source_hash: sha256-3ca5ecc94c9983bf
+  BC-5090.30.40:
+    name: 维护质量保证
+    description: |
+      保证维护工作符合所需的质量和安全标准。
+    source_hash: sha256-3cd6593a8ddac244
+  BC-5090.40:
+    name: 被动与紧急维护
+    description: |
+      应对需要非计划维护干预的故障、缺陷和紧急情况。
+    source_hash: sha256-52593d3ed6d420fe
+  BC-5090.40.10:
+    name: 故障与缺陷响应
+    description: |
+      对报告的故障和缺陷作出响应，以保护服务和安全。
+    source_hash: sha256-4e64aaa0a9b9ca63
+  BC-5090.40.20:
+    name: 紧急修复
+    description: |
+      执行紧急修复，以在失效或损坏后恢复资产。
+    source_hash: sha256-4a094ddcefb8095c
+  BC-5090.40.30:
+    name: 被动工作管理
+    description: |
+      管理从通知到完成的被动维护工作。
+    source_hash: sha256-e30865fd9c368823
+  BC-5090.40.40:
+    name: 临时修复管理
+    description: |
+      管理在永久补救前维持服务的临时修复。
+    source_hash: sha256-c8ff8367a52a27e3
+  BC-5090.50:
+    name: 维护绩效与记录
+    description: |
+      管理维护记录、积压和绩效，以推动可靠性提升。
+    source_hash: sha256-185627c67674b9c1
+  BC-5090.50.10:
+    name: 维护记录管理
+    description: |
+      管理证明已完成工作和资产历史的维护记录。
+    source_hash: sha256-9b9ac70c40a55939
+  BC-5090.50.20:
+    name: 维护积压管理
+    description: |
+      管理维护积压，以控制风险并对工作进行优先排序。
+    source_hash: sha256-371afc593fcd989e
+  BC-5090.50.30:
+    name: 维护绩效分析
+    description: |
+      依据成本、时间和质量指标分析维护绩效。
+    source_hash: sha256-3a0f3af4181d9f84
+  BC-5090.50.40:
+    name: 可靠性提升
+    description: |
+      利用维护和失效数据的洞察提升资产可靠性。
+    source_hash: sha256-4714639f367edd97
+metadata:
+  translator: claude-ai
+  date: "2026-07-16"

@@ -1,0 +1,173 @@
+locale: zh
+source: L1-infrastructure-asset-management.yaml
+entries:
+  BC-5070:
+    name: 基础设施资产管理
+    description: |
+      依据ISO 55000对基础设施资产进行全生命周期管理，涵盖资产管理战略与规划、资产登记册与信息基础、状态与绩效评估、维护与更新战略、资产风险与关键性，以及生命周期与处置。
+    in_scope:
+      - 与企业目标相协调的资产管理战略、方针和规划
+      - 资产登记册、层级和信息质量管理
+      - 资产的状态、绩效和剩余寿命评估
+      - 维护与更新战略及全生命周期成本建模
+      - 资产风险、关键性和干预优先排序
+      - 生命周期价值优化、退役和处置
+    out_of_scope:
+      - 跨行业实物资产管理（BC-1040）
+      - 设备维护（BC-1030）
+      - 维护执行（BC-5090）
+      - 实时网络运营与控制（BC-5080）
+    source_hash: sha256-ff71cdfe8c3f3de2
+  BC-5070.10:
+    name: 资产管理战略与规划
+    description: |
+      定义资产管理战略、目标和计划，使资产决策与组织目标相协调。
+    source_hash: sha256-cb48a4e3ad61ef68
+  BC-5070.10.10:
+    name: 资产管理方针与SAMP
+    description: |
+      建立为资产基础设定方向的资产管理方针和战略资产管理计划。
+    source_hash: sha256-4efc0bc3b4065e29
+  BC-5070.10.20:
+    name: 资产管理目标
+    description: |
+      从组织目标和利益相关方期望中导出可衡量的资产管理目标。
+    source_hash: sha256-d047fa7f6fb972a5
+  BC-5070.10.30:
+    name: 视线一致性
+    description: |
+      通过从目标到交付的清晰视线，使资产决策和活动与战略保持一致。
+    source_hash: sha256-6cfd9b4f6132b0eb
+  BC-5070.10.40:
+    name: 资产管理规划
+    description: |
+      制定资产管理计划，将战略转化为界定范围的活动和资源承诺。
+    source_hash: sha256-fd8ba34b64a99758
+  BC-5070.20:
+    name: 资产登记册与信息
+    description: |
+      维护支撑资产管理决策的可信资产登记册和信息基础。
+    source_hash: sha256-5490b84e55347d2a
+  BC-5070.20.10:
+    name: 资产登记册管理
+    description: |
+      跨资产群维护完整、准确的资产及其属性登记册。
+    source_hash: sha256-6d722217a5f0ac49
+  BC-5070.20.20:
+    name: 资产层级与分类
+    description: |
+      将资产组织为一致的层级和分类，以支持分析和报告。
+    source_hash: sha256-9e987c11d892100d
+  BC-5070.20.30:
+    name: 资产数据质量
+    description: |
+      保证信息基础中资产数据的完整性、准确性和时效性。
+    source_hash: sha256-f89ea51d1babb241
+  BC-5070.20.40:
+    name: 资产信息标准
+    description: |
+      定义支配数据采集和交换的资产信息标准和要求。
+    source_hash: sha256-aef275138b49f44b
+  BC-5070.30:
+    name: 状态与绩效评估
+    description: |
+      评估资产状态、绩效和剩余寿命，以支持干预和投资决策。
+    source_hash: sha256-c07df052d056fc4d
+  BC-5070.30.10:
+    name: 状态监测
+    description: |
+      监测资产状态，以发现劣化并支持维护和更新决策。
+    source_hash: sha256-3199e2eb959c8862
+  BC-5070.30.20:
+    name: 资产检查制度
+    description: |
+      定义和运行随时间确立资产状态的检查制度。
+    source_hash: sha256-4d15d9676a325be7
+  BC-5070.30.30:
+    name: 绩效分析
+    description: |
+      依据预期标准和服务要求分析资产绩效。
+    source_hash: sha256-09be7cb7fb9b41f6
+  BC-5070.30.40:
+    name: 剩余寿命评估
+    description: |
+      评估剩余使用寿命，以支持更新时机和投资规划。
+    source_hash: sha256-61a54a779682dd8a
+  BC-5070.40:
+    name: 维护与更新战略
+    description: |
+      制定在资产全生命周期内优化干预的维护与更新战略。
+    source_hash: sha256-13b358ae5b73230a
+  BC-5070.40.10:
+    name: 维护战略制定
+    description: |
+      制定在成本、风险和绩效之间取得平衡的各类资产维护战略。
+    source_hash: sha256-13a334f6b0cc4bf6
+  BC-5070.40.20:
+    name: 更新与更换规划
+    description: |
+      规划更新和更换，以长期维持资产服务。
+    source_hash: sha256-a42bf68efe800c10
+  BC-5070.40.30:
+    name: 干预优化
+    description: |
+      优化干预时机和类型，以最大化维护和更新所产生的价值。
+    source_hash: sha256-0bdf9c3f4fba162e
+  BC-5070.40.40:
+    name: 全生命周期成本建模
+    description: |
+      对全生命周期成本进行建模，以支持维护、更新和投资权衡。
+    source_hash: sha256-1d8e18229d67f995
+  BC-5070.50:
+    name: 资产风险与关键性
+    description: |
+      评估资产风险和关键性，以将干预集中于对服务和安全最重要的资产。
+    source_hash: sha256-5648edaf25a3143a
+  BC-5070.50.10:
+    name: 资产关键性评估
+    description: |
+      评估资产对服务连续性、安全和组织目标的关键性。
+    source_hash: sha256-9df9330d24dddb32
+  BC-5070.50.20:
+    name: 失效模式分析
+    description: |
+      分析资产失效模式和后果，以支持风险和维护决策。
+    source_hash: sha256-17bc85747541a823
+  BC-5070.50.30:
+    name: 基于风险的干预优先排序
+    description: |
+      依据资产风险和关键性对干预进行优先排序。
+    source_hash: sha256-3688db42b4cc5c95
+  BC-5070.50.40:
+    name: 资产韧性评估
+    description: |
+      评估资产对威胁其持续服务的灾害和压力的韧性。
+    source_hash: sha256-4924a98f4d041977
+  BC-5070.60:
+    name: 资产生命周期与处置
+    description: |
+      在资产的末期、退役和处置阶段进行管理，以最大化价值和可持续性成果。
+    source_hash: sha256-05b0594a435070dd
+  BC-5070.60.10:
+    name: 生命周期价值优化
+    description: |
+      优化资产在其整个生命周期内所交付的价值。
+    source_hash: sha256-778175117807d49e
+  BC-5070.60.20:
+    name: 退役规划
+    description: |
+      为资产在寿命末期的安全、有序退役进行规划。
+    source_hash: sha256-a079a535759c0c43
+  BC-5070.60.30:
+    name: 资产处置管理
+    description: |
+      依据方针和义务管理资产的处置、转移和报废。
+    source_hash: sha256-5a236bad8ace26bd
+  BC-5070.60.40:
+    name: 可持续性与循环性
+    description: |
+      将可持续性和循环经济成果融入资产生命周期和处置决策。
+    source_hash: sha256-a30b5016384602a1
+metadata:
+  translator: claude-ai
+  date: "2026-07-16"

@@ -1,0 +1,433 @@
+id: BP-370
+name: Need-to-Operation
+level: 1
+industry: Infrastructure
+description: >-
+  End-to-end infrastructure capital delivery from identified need through
+  planning, procurement, construction, and commissioning to operation and
+  revenue. One BP2 per VS-650 stage_name.
+framework_refs:
+  - framework: ISO-55000
+    external_id: "ISO 55001 asset management; ISO 19650 BIM; FIDIC/NEC contracts; AACE/PMI project controls"
+    version: "2024"
+  - framework: ISO-31000
+    external_id: "ISO 31000"
+realizes_capability_ids:
+  - BC-1160
+  - BC-5000
+  - BC-5010
+  - BC-5020
+  - BC-5030
+  - BC-5040
+  - BC-5050
+  - BC-5060
+  - BC-5070
+  - BC-5080
+  - BC-5090
+  - BC-5100
+  - BC-5110
+  - BC-5120
+children:
+  - id: BP-370.10
+    name: "Need & Investment Justification"
+    level: 2
+    description: >-
+      Identify the infrastructure need, justify the capital, and approve the
+      investment decision.
+    realizes_capability_ids:
+      - BC-5000
+    children:
+      - id: BP-370.10.10
+        name: Identify Infrastructure Need
+        level: 3
+        description: >-
+          Capture the strategic or service need driving a new or renewed
+          infrastructure investment.
+        realizes_capability_ids:
+          - BC-5000
+        children: []
+      - id: BP-370.10.20
+        name: Develop Investment Business Case
+        level: 3
+        description: >-
+          Build the business case covering cost, benefit, and funding for the
+          candidate investment.
+        realizes_capability_ids:
+          - BC-5000
+        children: []
+      - id: BP-370.10.30
+        name: Appraise Options and Value
+        level: 3
+        description: >-
+          Appraise investment options against economic, social, and strategic
+          value.
+        realizes_capability_ids:
+          - BC-5000
+        children: []
+      - id: BP-370.10.40
+        name: Approve Investment Decision
+        level: 3
+        description: >-
+          Gate and approve committed funding for the investment.
+        realizes_capability_ids:
+          - BC-5000
+        children: []
+  - id: BP-370.20
+    name: "Planning & Consenting"
+    level: 2
+    description: >-
+      Plan the network, establish feasibility, secure land and consents, and
+      engage stakeholders.
+    realizes_capability_ids:
+      - BC-5010
+    children:
+      - id: BP-370.20.10
+        name: Plan Network and Capacity
+        level: 3
+        description: >-
+          Plan network, capacity, and spatial requirements for the scheme.
+        realizes_capability_ids:
+          - BC-5010
+        children: []
+      - id: BP-370.20.20
+        name: Conduct Feasibility Studies
+        level: 3
+        description: >-
+          Assess feasibility and develop options up to concept selection.
+        realizes_capability_ids:
+          - BC-5010
+        children: []
+      - id: BP-370.20.30
+        name: Acquire Land and Route
+        level: 3
+        description: >-
+          Secure land, route, wayleaves, and easements required to build.
+        realizes_capability_ids:
+          - BC-5010
+        children: []
+      - id: BP-370.20.40
+        name: Secure Consents and Permits
+        level: 3
+        description: >-
+          Obtain planning consent, environmental approvals, and development
+          consent orders.
+        realizes_capability_ids:
+          - BC-5010
+        children: []
+      - id: BP-370.20.50
+        name: Engage Stakeholders and Community
+        level: 3
+        description: >-
+          Consult and engage community, landowners, and statutory
+          stakeholders.
+        realizes_capability_ids:
+          - BC-5010
+        children: []
+  - id: BP-370.30
+    name: "Programme Setup & Controls"
+    level: 2
+    description: >-
+      Establish programme governance and control cost, schedule, risk, and
+      change across delivery.
+    realizes_capability_ids:
+      - BC-5020
+    children:
+      - id: BP-370.30.10
+        name: Establish Programme Governance
+        level: 3
+        description: >-
+          Set up programme organisation, delivery model, and assurance gates.
+        realizes_capability_ids:
+          - BC-5020
+        children: []
+      - id: BP-370.30.20
+        name: Baseline Cost and Schedule
+        level: 3
+        description: >-
+          Establish the cost estimate, budget baseline, and integrated
+          schedule.
+        realizes_capability_ids:
+          - BC-5020
+        children: []
+      - id: BP-370.30.30
+        name: Control Progress and Earned Value
+        level: 3
+        description: >-
+          Measure progress and performance through earned value and trend
+          analysis.
+        realizes_capability_ids:
+          - BC-5020
+        children: []
+      - id: BP-370.30.40
+        name: Manage Programme Risk and Change
+        level: 3
+        description: >-
+          Manage programme risk, change control, contingency, and interfaces.
+        realizes_capability_ids:
+          - BC-5020
+        children: []
+  - id: BP-370.40
+    name: "Procurement & Contracting"
+    level: 2
+    description: >-
+      Define procurement strategy, tender and award contracts, and administer
+      them across the supply chain.
+    realizes_capability_ids:
+      - BC-5030
+    children:
+      - id: BP-370.40.10
+        name: Define Procurement Strategy
+        level: 3
+        description: >-
+          Set procurement strategy, work packaging, and route to market.
+        realizes_capability_ids:
+          - BC-5030
+        children: []
+      - id: BP-370.40.20
+        name: Tender and Award Contracts
+        level: 3
+        description: >-
+          Prepare tenders, evaluate bids, and award construction and service
+          contracts.
+        realizes_capability_ids:
+          - BC-5030
+        children: []
+      - id: BP-370.40.30
+        name: Administer Contracts
+        level: 3
+        description: >-
+          Administer contracts, certify payments, and manage variations and
+          claims.
+        realizes_capability_ids:
+          - BC-5030
+        children: []
+      - id: BP-370.40.40
+        name: Manage Subcontractors and Supply Chain
+        level: 3
+        description: >-
+          Procure, onboard, and manage subcontractors and trade packages.
+        realizes_capability_ids:
+          - BC-5030
+        children: []
+  - id: BP-370.50
+    name: "Design & Digital Engineering"
+    level: 2
+    description: >-
+      Develop design and BIM models, coordinate them, and manage asset
+      information through a common data environment.
+    realizes_capability_ids:
+      - BC-5060
+    children:
+      - id: BP-370.50.10
+        name: Develop Design and BIM Models
+        level: 3
+        description: >-
+          Develop design and BIM models to the required information standards.
+        realizes_capability_ids:
+          - BC-5060
+        children: []
+      - id: BP-370.50.20
+        name: Coordinate Models and Resolve Clashes
+        level: 3
+        description: >-
+          Federate models and resolve clashes across disciplines.
+        realizes_capability_ids:
+          - BC-5060
+        children: []
+      - id: BP-370.50.30
+        name: Manage Common Data Environment
+        level: 3
+        description: >-
+          Manage the common data environment, information requirements, and
+          data exchange.
+        realizes_capability_ids:
+          - BC-5060
+        children: []
+      - id: BP-370.50.40
+        name: Survey and Capture Site Conditions
+        level: 3
+        description: >-
+          Survey, set out, and capture site and geospatial conditions.
+        realizes_capability_ids:
+          - BC-5060
+        children: []
+  - id: BP-370.60
+    name: "Construction & Field Delivery"
+    level: 2
+    description: >-
+      Execute construction works on site with integrated plant, materials,
+      logistics, safety, and quality.
+    realizes_capability_ids:
+      - BC-5040
+      - BC-5050
+    children:
+      - id: BP-370.60.10
+        name: Establish and Mobilise Site
+        level: 3
+        description: >-
+          Set up and mobilise the site, compound, and temporary facilities.
+        realizes_capability_ids:
+          - BC-5040
+        children: []
+      - id: BP-370.60.20
+        name: Execute Construction Works
+        level: 3
+        description: >-
+          Execute work fronts and production against the delivery programme.
+        realizes_capability_ids:
+          - BC-5040
+        children: []
+      - id: BP-370.60.30
+        name: Manage Plant, Materials, and Logistics
+        level: 3
+        description: >-
+          Manage plant, equipment, materials call-off, and site logistics.
+        realizes_capability_ids:
+          - BC-5040
+        children: []
+      - id: BP-370.60.40
+        name: "Manage Site Health, Safety, and Environment"
+        level: 3
+        description: >-
+          Manage site HSE, permit-to-work, and environmental controls.
+        realizes_capability_ids:
+          - BC-5050
+        children: []
+      - id: BP-370.60.50
+        name: Control Construction Quality
+        level: 3
+        description: >-
+          Control construction quality through inspection, test, and
+          non-conformance management.
+        realizes_capability_ids:
+          - BC-5040
+        children: []
+  - id: BP-370.70
+    name: "Commissioning & Handover"
+    level: 2
+    description: >-
+      Commission, test, and hand over the completed asset to operations.
+    realizes_capability_ids:
+      - BC-1160
+      - BC-5040
+    children:
+      - id: BP-370.70.10
+        name: Plan and Execute Commissioning
+        level: 3
+        description: >-
+          Plan and execute commissioning of systems and the completed asset.
+        realizes_capability_ids:
+          - BC-1160
+        children: []
+      - id: BP-370.70.20
+        name: Test and Verify Systems
+        level: 3
+        description: >-
+          Test and verify systems against performance and acceptance criteria.
+        realizes_capability_ids:
+          - BC-1160
+        children: []
+      - id: BP-370.70.30
+        name: Rectify Defects and Snags
+        level: 3
+        description: >-
+          Identify and rectify snags and defects before handover.
+        realizes_capability_ids:
+          - BC-5040
+        children: []
+      - id: BP-370.70.40
+        name: Hand Over Asset to Operations
+        level: 3
+        description: >-
+          Hand over the asset, information, and operating documentation to
+          operations.
+        realizes_capability_ids:
+          - BC-1160
+        children: []
+  - id: BP-370.80
+    name: "Operation & Maintenance"
+    level: 2
+    description: >-
+      Operate the live network and maintain assets under whole-life asset
+      management, resilience, and security.
+    realizes_capability_ids:
+      - BC-5070
+      - BC-5080
+      - BC-5090
+      - BC-5120
+    children:
+      - id: BP-370.80.10
+        name: Operate Infrastructure Network
+        level: 3
+        description: >-
+          Operate the live network, availability, capacity, and events.
+        realizes_capability_ids:
+          - BC-5080
+        children: []
+      - id: BP-370.80.20
+        name: Inspect and Maintain Assets
+        level: 3
+        description: >-
+          Inspect and carry out planned and reactive maintenance on live
+          assets.
+        realizes_capability_ids:
+          - BC-5090
+        children: []
+      - id: BP-370.80.30
+        name: Manage Asset Lifecycle and Renewals
+        level: 3
+        description: >-
+          Manage whole-life asset strategy, condition, and renewals.
+        realizes_capability_ids:
+          - BC-5070
+        children: []
+      - id: BP-370.80.40
+        name: Manage Resilience and Security
+        level: 3
+        description: >-
+          Manage operational resilience, security, and emergency preparedness.
+        realizes_capability_ids:
+          - BC-5120
+        children: []
+  - id: BP-370.90
+    name: "Concession & Revenue"
+    level: 2
+    description: >-
+      Manage concessions, pricing, and revenue within economic and safety
+      regulation.
+    realizes_capability_ids:
+      - BC-5100
+      - BC-5110
+    children:
+      - id: BP-370.90.10
+        name: Manage Concession Agreements
+        level: 3
+        description: >-
+          Manage concession and PPP agreements and payment mechanisms.
+        realizes_capability_ids:
+          - BC-5100
+        children: []
+      - id: BP-370.90.20
+        name: Set Tariffs and Charges
+        level: 3
+        description: >-
+          Set tariffs, tolls, and charges within the regulated pricing regime.
+        realizes_capability_ids:
+          - BC-5100
+        children: []
+      - id: BP-370.90.30
+        name: Collect and Assure Revenue
+        level: 3
+        description: >-
+          Charge, collect, and assure revenue and settlement.
+        realizes_capability_ids:
+          - BC-5100
+        children: []
+      - id: BP-370.90.40
+        name: Manage Regulatory Compliance
+        level: 3
+        description: >-
+          Manage economic and safety regulatory obligations and reporting.
+        realizes_capability_ids:
+          - BC-5110
+        children: []

@@ -1,0 +1,148 @@
+locale: zh
+source: L1-infrastructure-resilience-security-management.yaml
+entries:
+  BC-5120:
+    name: 基础设施韧性与安保管理
+    description: |
+      对关键基础设施的防护和韧性，涵盖实体安保、网络物理与OT安全、韧性与连续性、应急与危机管理，以及气候与环境韧性。
+    in_scope:
+      - 实体安保、门禁控制和监视
+      - 网络物理与OT安全
+      - 运营韧性与业务连续性
+      - 应急准备与危机管理
+      - 气候适应与极端天气韧性
+      - 关键系统和资产的防护
+    out_of_scope:
+      - 企业风险管理（BC-140）
+      - 业务连续性管理（BC-160）
+      - 网络安全管理（BC-620）
+      - 健康、安全与环境（BC-5050）
+    source_hash: sha256-bcfbe910a7b9a461
+  BC-5120.10:
+    name: 实体安保管理
+    description: |
+      通过门禁控制、监视和安保人员保护基础设施场地和资产。
+    source_hash: sha256-ab6fd81d819c7d19
+  BC-5120.10.10:
+    name: 门禁与入侵管理
+    description: |
+      管理基础设施场地的进入权限并检测未经授权的入侵。
+    source_hash: sha256-bf54fd2f6191d076
+  BC-5120.10.20:
+    name: 周界与门禁控制
+    description: |
+      控制场地周界和通往关键资产的实体进入点。
+    source_hash: sha256-aaeb117e531a75c4
+  BC-5120.10.30:
+    name: 安保监视
+    description: |
+      对基础设施场地进行监视和监测以防安保威胁。
+    source_hash: sha256-c8a6e9e5d44e94ed
+  BC-5120.10.40:
+    name: 安保人员管理
+    description: |
+      跨场地管理安保人员和守卫服务。
+    source_hash: sha256-92a7a9683019e254
+  BC-5120.20:
+    name: 网络物理安全
+    description: |
+      保护运行关键基础设施的OT和控制系统免受网络物理威胁。
+    source_hash: sha256-76663dc59f61c43e
+  BC-5120.20.10:
+    name: OT与控制系统安全
+    description: |
+      支撑基础设施的OT和工业控制系统的安全。
+    source_hash: sha256-bab81199c8b2066f
+  BC-5120.20.20:
+    name: 关键系统防护
+    description: |
+      保护对基础设施运营至关重要的关键系统和资产。
+    source_hash: sha256-8782fc5bee69d8ed
+  BC-5120.20.30:
+    name: 网络物理威胁管理
+    description: |
+      管理跨基础设施网络和实体两个领域的威胁。
+    source_hash: sha256-45b5d8d04bf46916
+  BC-5120.20.40:
+    name: 安全监测与响应
+    description: |
+      监测安全事件并响应影响控制系统的事件。
+    source_hash: sha256-2c7999abe3b319bf
+  BC-5120.30:
+    name: 韧性与连续性管理
+    description: |
+      通过规划和测试使关键基础设施服务在中断中持续运行。
+    source_hash: sha256-50c82bf8d9652c50
+  BC-5120.30.10:
+    name: 运营韧性规划
+    description: |
+      为关键基础设施服务的运营韧性进行规划。
+    source_hash: sha256-87d444d87065fb57
+  BC-5120.30.20:
+    name: 业务连续性管理
+    description: |
+      管理基础设施运营在中断期间的业务连续性。
+    source_hash: sha256-e9e5fdd1c4f37b7d
+  BC-5120.30.30:
+    name: 冗余与故障切换设计
+    description: |
+      设计冗余和故障切换，以在资产失效时维持服务。
+    source_hash: sha256-de3a61dc3d3e824a
+  BC-5120.30.40:
+    name: 韧性测试与演练
+    description: |
+      对韧性和连续性安排进行测试和演练。
+    source_hash: sha256-ccbec6e3ab225a02
+  BC-5120.40:
+    name: 应急与危机管理
+    description: |
+      为影响基础设施及其用户的应急和危机做好准备并作出响应。
+    source_hash: sha256-c9a84def75d1bc66
+  BC-5120.40.10:
+    name: 应急准备
+    description: |
+      为影响基础设施资产和服务的应急进行准备规划。
+    source_hash: sha256-2c08b126adcf3a8b
+  BC-5120.40.20:
+    name: 危机管理
+    description: |
+      管理威胁基础设施运营和利益相关方的危机。
+    source_hash: sha256-dda20de9498639d8
+  BC-5120.40.30:
+    name: 应急响应协调
+    description: |
+      跨团队和外部响应方协调应急响应。
+    source_hash: sha256-23673881e80ccf22
+  BC-5120.40.40:
+    name: 恢复与复原规划
+    description: |
+      为破坏性事件后服务的恢复和复原进行规划。
+    source_hash: sha256-e8210e4f65f83176
+  BC-5120.50:
+    name: 气候与环境韧性
+    description: |
+      使基础设施适应并防护气候变化和环境灾害。
+    source_hash: sha256-5c8519c07ef26be6
+  BC-5120.50.10:
+    name: 气候适应管理
+    description: |
+      管理长寿命基础设施资产的气候适应。
+    source_hash: sha256-7eded7738db31aa4
+  BC-5120.50.20:
+    name: 极端天气韧性
+    description: |
+      提升基础设施对极端天气事件及其影响的韧性。
+    source_hash: sha256-d38d9fa5f0f02308
+  BC-5120.50.30:
+    name: 洪水与灾害防护
+    description: |
+      防护基础设施免受洪水和自然灾害。
+    source_hash: sha256-e133de2790603d36
+  BC-5120.50.40:
+    name: 环境灾害管理
+    description: |
+      管理影响基础设施及其周边的环境灾害。
+    source_hash: sha256-f9a3bb27d308ea50
+metadata:
+  translator: claude-ai
+  date: "2026-07-16"

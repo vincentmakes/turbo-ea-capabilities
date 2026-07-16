@@ -1,0 +1,225 @@
+# Infrastructure Resilience & Security Management
+id: BC-5120
+name: "Infrastructure Resilience & Security Management"
+level: 1
+industry: Infrastructure
+description: |
+  Protection and resilience of critical infrastructure across physical security,
+  cyber-physical and operational-technology security, resilience and continuity,
+  emergency and crisis management, and climate and environmental resilience.
+references:
+  - https://www.iso.org/standard/75106.html
+  - https://www.isa.org/isa99
+  - https://www.nist.gov/cyberframework
+  - https://www.iso.org/iso-31000-risk-management.html
+in_scope:
+  - Physical security, access control, and surveillance
+  - Cyber-physical and operational-technology security
+  - Operational resilience and business continuity
+  - Emergency preparedness and crisis management
+  - Climate adaptation and extreme-weather resilience
+  - Protection of critical systems and assets
+out_of_scope:
+  - Enterprise risk management (BC-140)
+  - Business continuity management (BC-160)
+  - Cybersecurity management (BC-620)
+  - Health, safety & environment (BC-5050)
+children:
+  - id: BC-5120.10
+    name: Physical Security Management
+    level: 2
+    industry: Infrastructure
+    description: |
+      Protection of infrastructure sites and assets through access control,
+      surveillance, and security personnel.
+    children:
+      - id: BC-5120.10.10
+        name: "Access & Intrusion Management"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of access rights and detection of unauthorised intrusion
+          at infrastructure sites.
+        children: []
+      - id: BC-5120.10.20
+        name: "Perimeter & Access Control"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Control of site perimeters and physical access points to critical
+          assets.
+        children: []
+      - id: BC-5120.10.30
+        name: Security Surveillance
+        level: 3
+        industry: Infrastructure
+        description: |
+          Surveillance and monitoring of infrastructure sites for security
+          threats.
+        children: []
+      - id: BC-5120.10.40
+        name: Security Personnel Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of security personnel and guarding services across
+          sites.
+        children: []
+  - id: BC-5120.20
+    name: Cyber-Physical Security
+    level: 2
+    industry: Infrastructure
+    description: |
+      Protection of operational-technology and control systems that run
+      critical infrastructure from cyber-physical threats.
+    children:
+      - id: BC-5120.20.10
+        name: "OT & Control System Security"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Security of operational-technology and industrial control systems
+          underpinning infrastructure.
+        children: []
+      - id: BC-5120.20.20
+        name: Critical System Protection
+        level: 3
+        industry: Infrastructure
+        description: |
+          Protection of critical systems and assets essential to
+          infrastructure operation.
+        children: []
+      - id: BC-5120.20.30
+        name: Cyber-Physical Threat Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of threats spanning the cyber and physical domains of
+          infrastructure.
+        children: []
+      - id: BC-5120.20.40
+        name: "Security Monitoring & Response"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Monitoring for security events and response to incidents affecting
+          control systems.
+        children: []
+  - id: BC-5120.30
+    name: "Resilience & Continuity Management"
+    level: 2
+    industry: Infrastructure
+    description: |
+      Planning and testing that keep critical infrastructure services running
+      through disruption.
+    children:
+      - id: BC-5120.30.10
+        name: Operational Resilience Planning
+        level: 3
+        industry: Infrastructure
+        description: |
+          Planning for the operational resilience of critical infrastructure
+          services.
+        children: []
+      - id: BC-5120.30.20
+        name: Business Continuity Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of business continuity for infrastructure operations
+          during disruption.
+        children: []
+      - id: BC-5120.30.30
+        name: "Redundancy & Failover Design"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Design of redundancy and failover to sustain service through asset
+          failure.
+        children: []
+      - id: BC-5120.30.40
+        name: "Resilience Testing & Exercising"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Testing and exercising of resilience and continuity arrangements.
+        children: []
+  - id: BC-5120.40
+    name: "Emergency & Crisis Management"
+    level: 2
+    industry: Infrastructure
+    description: |
+      Preparation for and response to emergencies and crises affecting
+      infrastructure and its users.
+    children:
+      - id: BC-5120.40.10
+        name: Emergency Preparedness
+        level: 3
+        industry: Infrastructure
+        description: |
+          Preparedness planning for emergencies affecting infrastructure
+          assets and services.
+        children: []
+      - id: BC-5120.40.20
+        name: Crisis Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of crises that threaten infrastructure operations and
+          stakeholders.
+        children: []
+      - id: BC-5120.40.30
+        name: Emergency Response Coordination
+        level: 3
+        industry: Infrastructure
+        description: |
+          Coordination of emergency response across teams and external
+          responders.
+        children: []
+      - id: BC-5120.40.40
+        name: "Recovery & Restoration Planning"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Planning for recovery and restoration of services after disruptive
+          events.
+        children: []
+  - id: BC-5120.50
+    name: "Climate & Environmental Resilience"
+    level: 2
+    industry: Infrastructure
+    description: |
+      Adaptation and protection of infrastructure against climate change and
+      environmental hazards.
+    children:
+      - id: BC-5120.50.10
+        name: Climate Adaptation Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of climate adaptation for long-lived infrastructure
+          assets.
+        children: []
+      - id: BC-5120.50.20
+        name: Extreme Weather Resilience
+        level: 3
+        industry: Infrastructure
+        description: |
+          Resilience of infrastructure to extreme-weather events and their
+          impacts.
+        children: []
+      - id: BC-5120.50.30
+        name: "Flood & Hazard Protection"
+        level: 3
+        industry: Infrastructure
+        description: |
+          Protection of infrastructure against flooding and natural hazards.
+        children: []
+      - id: BC-5120.50.40
+        name: Environmental Hazard Management
+        level: 3
+        industry: Infrastructure
+        description: |
+          Management of environmental hazards affecting infrastructure and its
+          surroundings.
+        children: []
