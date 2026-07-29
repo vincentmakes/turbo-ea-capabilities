@@ -1,4 +1,5 @@
 #!/usr/bin/env tsx
+// SPDX-License-Identifier: MIT
 /**
  * One-off cleanup: fix APQC's slash-and-virgule names that read awkwardly
  * ("Produce/Assemble Product", "Service/solution", "Set/Develop Long-term

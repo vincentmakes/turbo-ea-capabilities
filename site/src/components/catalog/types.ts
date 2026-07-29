@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 /**
  * Shared types for the generic catalogue browser. All three artefacts
  * (capabilities, business processes, value streams) flatten into the same

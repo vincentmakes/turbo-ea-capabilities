@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 """Reference Business Architecture catalogue.
 
 Three artefact types are exposed: capabilities (BC), business processes (BP),

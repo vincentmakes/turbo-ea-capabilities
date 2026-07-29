@@ -1,4 +1,5 @@
 #!/usr/bin/env tsx
+// SPDX-License-Identifier: MIT
 /**
  * Macro coverage check: every Cross-Industry BC L1 should belong to exactly
  * one macro capability in catalogue/_macro-capabilities.yaml. Reports:

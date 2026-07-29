@@ -1,4 +1,5 @@
 #!/usr/bin/env tsx
+// SPDX-License-Identifier: MIT
 /**
  * Second pass: relink the residual orphan VS stages — stages whose
  * `process_ids` are still empty after the first relink_vs_oneoff pass.

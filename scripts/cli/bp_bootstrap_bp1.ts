@@ -1,4 +1,5 @@
 #!/usr/bin/env tsx
+// SPDX-License-Identifier: MIT
 /**
  * Create a new BP1 file (root of a process category) and register it in
  * `catalogue/processes/_index.yaml`. Used by /generate-process when

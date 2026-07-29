@@ -1,4 +1,5 @@
 #!/usr/bin/env tsx
+// SPDX-License-Identifier: MIT
 /**
  * Stamp `source_hash` on every sidecar entry whose source can be resolved.
  *

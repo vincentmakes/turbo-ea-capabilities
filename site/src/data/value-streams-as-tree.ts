@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 /**
  * Adapter: flatten the value-stream catalogue into the same `FlatNode` shape
  * the generic `CatalogBrowser` consumes. Each stream becomes an L1 node.

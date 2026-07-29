@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 /**
  * Build-time data loader: reads the JSON artefacts produced by
  * `scripts/build_api.ts`. The Astro site fails fast at build time if these
@@ -29,6 +30,10 @@ export interface VersionMeta {
   node_count: number;
   process_count?: number;
   commit?: string;
+  license?: string;
+  code_license?: string;
+  license_url?: string;
+  attribution?: string;
 }
 
 export interface ValueStreamStage {

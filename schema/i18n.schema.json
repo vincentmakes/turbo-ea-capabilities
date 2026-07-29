@@ -1,5 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$comment": "SPDX-License-Identifier: MIT",
   "$id": "https://business-capabilities.turbo-ea.org/schema/i18n.schema.json",
   "title": "ArtefactTranslations",
   "description": "Sidecar translation file. One file per (locale, source) tuple. The optional `kind` field selects the artefact this sidecar translates (capability | value-stream | business-process | macro-capability). Default is 'capability' for back-compat with pre-VS/BP sidecars. Identifiers, levels, industry tags, references, framework refs, and lifecycle metadata stay locale-neutral in the source YAML.",

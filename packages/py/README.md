@@ -107,3 +107,21 @@ Pin against `SCHEMA_VERSION` to detect breaking shape changes; pin against `VERS
 ## Source
 
 The catalogue YAML and build pipeline live at <https://github.com/vincentmakes/turbo-ea-capabilities>.
+
+## License
+
+Dual-licensed, split along the data/code seam:
+
+- The **bundled catalogue data** (`turbo_ea_capabilities/data/*.json`) is licensed under
+  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Free to use, adapt, and
+  redistribute commercially, provided you credit the source and indicate changes.
+- The **library code** is licensed under MIT.
+
+When you share or adapt the catalogue, credit:
+
+> Turbo EA Capabilities by Vincent Verdet — Turbo EA,
+> <https://github.com/vincentmakes/turbo-ea-capabilities>, CC BY 4.0
+
+The same string is available programmatically — the bundled `version.json` carries `license`,
+`license_url`, and `attribution` fields. Full terms:
+[LICENSING.md](https://github.com/vincentmakes/turbo-ea-capabilities/blob/main/LICENSING.md).

@@ -1,4 +1,5 @@
 #!/usr/bin/env tsx
+// SPDX-License-Identifier: MIT
 /**
  * BC coverage check: every Cross-Industry BC L1 should have at least one
  * BP node with `realizes_capability_ids` claiming it. Reports orphans

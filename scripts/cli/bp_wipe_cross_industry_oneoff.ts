@@ -1,4 +1,5 @@
 #!/usr/bin/env tsx
+// SPDX-License-Identifier: MIT
 /**
  * One-off: delete the 13 Cross-Industry BP1 files (BP-10..BP-120, BP-370),
  * their entries in `processes/_index.yaml`, and their sidecar translations

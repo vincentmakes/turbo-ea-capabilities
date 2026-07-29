@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 """Pydantic v2 models for the catalogue artefacts (capabilities, business
 processes, value streams).
 

@@ -1,4 +1,5 @@
 #!/usr/bin/env tsx
+// SPDX-License-Identifier: MIT
 /**
  * Third pass: apply explicit per-VS-stage-id overrides to set
  * `process_ids` on residual orphan stages whose stage_name doesn't match

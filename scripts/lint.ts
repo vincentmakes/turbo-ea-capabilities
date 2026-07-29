@@ -1,4 +1,5 @@
 #!/usr/bin/env tsx
+// SPDX-License-Identifier: MIT
 /**
  * Lint the YAML catalogue. Validates capabilities (BC), value streams (VS),
  * business processes (BP), and translation sidecars against their JSON

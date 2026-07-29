@@ -1,4 +1,5 @@
 #!/usr/bin/env tsx
+// SPDX-License-Identifier: MIT
 /**
  * One-off: re-point VS stage `process_ids` at the new BP tree where the
  * existing references are broken (i.e. point at deleted Cross-Industry

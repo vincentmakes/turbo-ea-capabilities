@@ -1,4 +1,5 @@
 #!/usr/bin/env tsx
+// SPDX-License-Identifier: MIT
 /**
  * i18n coverage check: report which (BP1 × locale) sidecar files are
  * missing and which locales are missing capability or value-stream

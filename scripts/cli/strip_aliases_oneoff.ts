@@ -1,4 +1,5 @@
 #!/usr/bin/env tsx
+// SPDX-License-Identifier: MIT
 /**
  * One-off cleanup: strip `aliases` from every node in every Cross-Industry
  * BP1 file. Use after Phase 2 renaming concludes; leaves names, descriptions,
