@@ -6,6 +6,15 @@ Always-on guardrails for any Claude Code session in this repo. Procedural workfl
 
 An open-source Business Architecture Reference Catalogue with **three orthogonal artefacts**: capabilities (BC) describe WHAT, business processes (BP) describe HOW, value streams (VS) describe end-to-end value delivery. YAML files in `catalogue/` are the **single source of truth**. Everything else (`dist/api/*.json`, the bundled Python package data, the Astro site) is built from those YAML files.
 
+## Licensing — dual, split along the data/code seam
+
+The repo is **not** single-licensed. Never collapse it back to one licence.
+
+- **CC BY 4.0** (`LICENSE`) — `catalogue/**`, the JSON artefacts generated from it (`dist/api/**`, the bundled package data), `README.md`, and `business-capability-governance-model.md`.
+- **MIT** (`LICENSE-CODE`) — `scripts/**`, `schema/**`, `site/**`, `packages/py/src/**/*.py`, `packages/py/tests/**`, `.claude/**`, this file, `.github/**`, root config.
+
+[`LICENSING.md`](LICENSING.md) is the authoritative path map. New files on the MIT side carry an `SPDX-License-Identifier: MIT` header where the format allows one; files on the CC BY side carry **no** header — keep `catalogue/*.yaml` free of licence boilerplate. The attribution string CC BY requires also ships in `dist/api/version.json` (`attribution`), emitted by `scripts/build_api.ts`.
+
 ## Invariants — capabilities (BC-)
 
 - **Source of truth:** edit only `catalogue/*.yaml` and `schema/capability.schema.json`. Never hand-edit `dist/api/**` or `packages/py/src/turbo_ea_capabilities/data/**`. Both are build artefacts and are wiped by the next `npm run build`.

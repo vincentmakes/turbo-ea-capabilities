@@ -1,4 +1,5 @@
 #!/usr/bin/env tsx
+// SPDX-License-Identifier: MIT
 /**
  * Build the static JSON API artefacts from the YAML source. Outputs:
  *   dist/api/version.json
@@ -244,6 +245,14 @@ const version = {
   generated_at: new Date().toISOString(),
   node_count: flatSorted.length,
   process_count: bpFlatSorted.length,
+  // Terms for the catalogue data these endpoints serve. CC BY 4.0 requires
+  // attribution to travel with the data, so it ships in the payload rather
+  // than living only in the repo. The tooling is MIT — see LICENSING.md.
+  license: "CC-BY-4.0",
+  code_license: "MIT",
+  license_url: "https://creativecommons.org/licenses/by/4.0/",
+  attribution:
+    "Turbo EA Capabilities by Vincent Verdet — Turbo EA (https://github.com/vincentmakes/turbo-ea-capabilities), CC BY 4.0",
   ...(commit && { commit }),
   ...(commitCount !== undefined && { commit_count: commitCount }),
 };

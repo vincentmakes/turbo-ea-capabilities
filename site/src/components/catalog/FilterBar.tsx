@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 import { useEffect, useRef, useState } from "react";
 
 interface FilterBarProps {

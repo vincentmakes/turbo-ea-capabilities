@@ -1,4 +1,5 @@
 #!/usr/bin/env tsx
+// SPDX-License-Identifier: MIT
 /**
  * Move a capability subtree under a new parent. The whole subtree is renumbered
  * to fit under the new parent. The old id is recorded in metadata.replaces so

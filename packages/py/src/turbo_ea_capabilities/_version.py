@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 """Hatch version source.
 
 Reads the catalogue version from the bundled `data/version.json` file. Falls

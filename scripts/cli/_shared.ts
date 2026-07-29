@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import YAML from "yaml";

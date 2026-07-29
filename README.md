@@ -1,5 +1,8 @@
 # Business Architecture Reference Catalogue
 
+[![Catalogue: CC BY 4.0](https://img.shields.io/badge/catalogue-CC%20BY%204.0-blue.svg)](LICENSE)
+[![Code: MIT](https://img.shields.io/badge/code-MIT-green.svg)](LICENSE-CODE)
+
 An **open-source Business Architecture Reference Catalogue** covering three orthogonal artefacts: **business capabilities** (BC — what the enterprise does), **business processes** (BP — how it does it), and **value streams** (VS — end-to-end value delivery). An optional **macro-capability** overlay (MC — executive navigation grouping L1s) is provided for catalogues where the L1 layer is larger than the 10–20 sweet spot. It is intentionally tool-agnostic and can be used in any Enterprise Architecture management solution — well beyond [Turbo EA](https://www.turbo-ea.org). This site exists to help enterprise architects get started with the implementation of an EA function, by providing a curated, opinionated baseline that teams can adopt, adapt, and extend.
 
 <img width="1424" height="678" alt="Screenshot 2026-04-28 at 07 39 44" src="https://github.com/user-attachments/assets/f8deb601-74f2-4b39-92ba-d234ee0494b8" />
@@ -306,4 +309,15 @@ All responses are static, immutable per build, and cacheable by Cloudflare's edg
 
 ## Licence
 
-[MIT](LICENSE). Cross-Industry business processes are generated from value streams and the capabilities each stage exercises (BC + VS authoritative); APQC PCF® is retained as a secondary cross-walk on those nodes. Industry-specific business processes anchor on BIAN, TM Forum eTOM, ITIL®, SCOR®, ACORD, ICMM, COSO ERM, ISO 31000, ISO 55000, COBIT, SHRM-BoCK, TOGAF, BIZBOK, DCOR and the relevant APQC industry PCFs. All third-party framework attributions are listed in [NOTICE](NOTICE).
+This repository is **dual-licensed**, split along the data/code seam — see [LICENSING.md](LICENSING.md) for the authoritative path-by-path mapping.
+
+- **Catalogue content and documentation** — `catalogue/`, the generated JSON artefacts, this README, and the governance model — are licensed under [CC BY 4.0](LICENSE). Free to use, adapt, and redistribute commercially, provided you credit the source and indicate changes.
+- **Tooling** — `scripts/`, `schema/`, `site/`, the Python library modules, and the Claude skills — is licensed under [MIT](LICENSE-CODE).
+
+When you share or adapt the catalogue, credit:
+
+> Turbo EA Capabilities by Vincent Verdet — Turbo EA, <https://github.com/vincentmakes/turbo-ea-capabilities>, CC BY 4.0
+
+The same string is served in `/api/version.json` (`attribution`) for programmatic consumers.
+
+Cross-Industry business processes are generated from value streams and the capabilities each stage exercises (BC + VS authoritative); APQC PCF® is retained as a secondary cross-walk on those nodes. Industry-specific business processes anchor on BIAN, TM Forum eTOM, ITIL®, SCOR®, ACORD, ICMM, COSO ERM, ISO 31000, ISO 55000, COBIT, SHRM-BoCK, TOGAF, BIZBOK, DCOR and the relevant APQC industry PCFs. All third-party framework attributions are listed in [NOTICE](NOTICE).

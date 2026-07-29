@@ -1,4 +1,5 @@
 #!/usr/bin/env tsx
+// SPDX-License-Identifier: MIT
 /**
  * Mark a business process deprecated.
  *

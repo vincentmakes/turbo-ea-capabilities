@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 /**
  * Backwards-compatible wrapper around the generic catalogue browser.
  * Existing callers (`/`, `/l1/[slug]`) keep working unchanged; the heavy

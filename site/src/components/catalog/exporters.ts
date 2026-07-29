@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 import type { FlatNode } from "./types";
 
 /** Compare ids by their numeric segments after the leading `XX-` prefix.

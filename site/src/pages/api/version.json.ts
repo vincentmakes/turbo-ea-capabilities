@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 import type { APIRoute } from "astro";
 import { version } from "../../data/load.ts";
 

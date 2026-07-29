@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 /**
  * Canonical hash of an artefact node's translatable surface.
  *

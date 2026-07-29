@@ -1,5 +1,5 @@
 [build-system]
-requires = ["hatchling>=1.21"]
+requires = ["hatchling>=1.27"]
 build-backend = "hatchling.build"
 
 [project]
@@ -8,13 +8,15 @@ dynamic = ["version"]
 description = "Reference Business Capability catalogue for Turbo EA - bundled JSON, no network access required."
 readme = "README.md"
 requires-python = ">=3.11"
-license = { text = "MIT" }
+# Dual-licensed: the bundled JSON catalogue under data/ is CC BY 4.0, the
+# library modules are MIT. See LICENSING.md at the repository root.
+license = "CC-BY-4.0 AND MIT"
+license-files = ["LICENSE", "LICENSE-CODE", "NOTICE"]
 authors = [{ name = "Turbo EA Maintainers" }]
 keywords = ["enterprise-architecture", "business-capability", "togaf", "catalogue"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.11",
@@ -61,6 +63,9 @@ include = [
     "/src",
     "/tests",
     "/README.md",
+    "/LICENSE",
+    "/LICENSE-CODE",
+    "/NOTICE",
 ]
 
 [tool.pytest.ini_options]

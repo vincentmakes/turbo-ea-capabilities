@@ -1,4 +1,5 @@
 #!/usr/bin/env tsx
+// SPDX-License-Identifier: MIT
 /**
  * Add a new macro capability to catalogue/_macro-capabilities.yaml.
  *

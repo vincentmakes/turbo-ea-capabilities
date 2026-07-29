@@ -1,5 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$comment": "SPDX-License-Identifier: MIT",
   "$id": "https://business-capabilities.turbo-ea.org/schema/business-process.schema.json",
   "title": "BusinessProcess",
   "description": "Reference schema for a Business Process node. Source files are YAML; this schema validates the parsed structure for a single BP1 file (a tree rooted at one BP1 process category). Business processes describe HOW work is done, anchored on APQC PCF's Category → Process Group → Process → Activity hierarchy. They are an artefact orthogonal to capabilities (BC) and value streams (VS); cross-references go via `realizes_capability_ids` and via VS-stage `process_ids`.",

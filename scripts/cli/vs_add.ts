@@ -1,4 +1,5 @@
 #!/usr/bin/env tsx
+// SPDX-License-Identifier: MIT
 /**
  * Add a new value stream to catalogue/_value-streams.yaml.
  *

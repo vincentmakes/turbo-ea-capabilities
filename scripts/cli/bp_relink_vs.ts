@@ -1,4 +1,5 @@
 #!/usr/bin/env tsx
+// SPDX-License-Identifier: MIT
 /**
  * Rewrite `process_ids` in `catalogue/_value-streams.yaml` according to
  * a {oldBpId: newBpId | null} mapping. Used after Cross-Industry BPs are

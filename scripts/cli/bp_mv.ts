@@ -1,4 +1,5 @@
 #!/usr/bin/env tsx
+// SPDX-License-Identifier: MIT
 /**
  * Move a business-process subtree under a new parent. Whole subtree is
  * renumbered to fit under the new parent. The old id is recorded in

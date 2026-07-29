@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 """Load the bundled JSON catalogue via importlib.resources.
 
 `importlib.resources.files()` works correctly with wheels, editable installs,
