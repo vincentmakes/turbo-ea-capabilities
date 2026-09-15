@@ -316,7 +316,7 @@ This repository is **dual-licensed**, split along the data/code seam — see [LI
 
 When you share or adapt the catalogue, credit:
 
-> Turbo EA Capabilities by Vincent Verdet — Turbo EA, <https://github.com/vincentmakes/turbo-ea-capabilities>, CC BY 4.0
+> Turbo EA Capabilities by Vincent Verdet — Turbo EA, <https://github.com/TurboEA/turbo-ea-capabilities>, CC BY 4.0
 
 The same string is served in `/api/version.json` (`attribution`) for programmatic consumers.
 

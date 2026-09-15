@@ -93,7 +93,7 @@ fr = get_macro("MC-10").localized("fr")
 print(fr.name)  # "Gouvernance d'Entreprise et Risque"
 ```
 
-The model is documented in [Section 13 of the governance doc](https://github.com/vincentmakes/turbo-ea-capabilities/blob/main/business-capability-governance-model.md#13-macro-capability-layer).
+The model is documented in [Section 13 of the governance doc](https://github.com/TurboEA/turbo-ea-capabilities/blob/main/business-capability-governance-model.md#13-macro-capability-layer).
 
 ## Versioning
 
@@ -106,7 +106,7 @@ Pin against `SCHEMA_VERSION` to detect breaking shape changes; pin against `VERS
 
 ## Source
 
-The catalogue YAML and build pipeline live at <https://github.com/vincentmakes/turbo-ea-capabilities>.
+The catalogue YAML and build pipeline live at <https://github.com/TurboEA/turbo-ea-capabilities>.
 
 ## License
 
@@ -120,8 +120,8 @@ Dual-licensed, split along the data/code seam:
 When you share or adapt the catalogue, credit:
 
 > Turbo EA Capabilities by Vincent Verdet — Turbo EA,
-> <https://github.com/vincentmakes/turbo-ea-capabilities>, CC BY 4.0
+> <https://github.com/TurboEA/turbo-ea-capabilities>, CC BY 4.0
 
 The same string is available programmatically — the bundled `version.json` carries `license`,
 `license_url`, and `attribution` fields. Full terms:
-[LICENSING.md](https://github.com/vincentmakes/turbo-ea-capabilities/blob/main/LICENSING.md).
+[LICENSING.md](https://github.com/TurboEA/turbo-ea-capabilities/blob/main/LICENSING.md).

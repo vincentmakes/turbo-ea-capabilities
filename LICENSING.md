@@ -33,7 +33,7 @@ the YAML source of truth stays free of boilerplate.
 When you share or adapt the catalogue, credit:
 
 > Turbo EA Capabilities by Vincent Verdet — Turbo EA,
-> <https://github.com/vincentmakes/turbo-ea-capabilities>, CC BY 4.0
+> <https://github.com/TurboEA/turbo-ea-capabilities>, CC BY 4.0
 
 The same string is served in `dist/api/version.json` (`attribution`) so downstream consumers
 of the JSON API receive it programmatically.

@@ -21,7 +21,7 @@ if (!node) {
 const ancestors = getBpAncestors(id);
 const directChildren = bpFlat.filter((b) => b.parent_id === id);
 const successor = node.successor_id ? getBpById(node.successor_id) : null;
-const githubUrl = `https://github.com/vincentmakes/turbo-ea-capabilities/tree/main/catalogue/processes`;
+const githubUrl = `https://github.com/TurboEA/turbo-ea-capabilities/tree/main/catalogue/processes`;
 
 const realizesCaps = (node.realizes_capability_ids ?? [])
   .map((bcId) => getById(bcId))

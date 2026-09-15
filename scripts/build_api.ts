@@ -252,7 +252,7 @@ const version = {
   code_license: "MIT",
   license_url: "https://creativecommons.org/licenses/by/4.0/",
   attribution:
-    "Turbo EA Capabilities by Vincent Verdet — Turbo EA (https://github.com/vincentmakes/turbo-ea-capabilities), CC BY 4.0",
+    "Turbo EA Capabilities by Vincent Verdet — Turbo EA (https://github.com/TurboEA/turbo-ea-capabilities), CC BY 4.0",
   ...(commit && { commit }),
   ...(commitCount !== undefined && { commit_count: commitCount }),
 };

@@ -66,7 +66,7 @@ export interface CatalogKindConfig {
 }
 
 const REPO_BLOB =
-  "https://github.com/vincentmakes/turbo-ea-capabilities/blob/main";
+  "https://github.com/TurboEA/turbo-ea-capabilities/blob/main";
 
 function fileSlug(name: string): string {
   return name

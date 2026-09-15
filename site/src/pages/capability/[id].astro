@@ -22,7 +22,7 @@ const ancestors = getAncestors(id);
 const directChildren = flat.filter((c) => c.parent_id === id);
 const successor = node.successor_id ? getById(node.successor_id) : null;
 const macro = node.macro_id ? getMacroById(node.macro_id) : undefined;
-const githubUrl = `https://github.com/vincentmakes/turbo-ea-capabilities/tree/main/catalogue`;
+const githubUrl = `https://github.com/TurboEA/turbo-ea-capabilities/tree/main/catalogue`;
 
 const realizingProcesses = (node.realizes_processes ?? [])
   .map((pid) => getBpById(pid))
