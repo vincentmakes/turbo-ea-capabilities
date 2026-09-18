@@ -113,7 +113,7 @@ body {
 .nav-inner {
   max-width: none;
   margin: 0;
-  padding: var(--space-sm) var(--space-md) var(--space-sm) var(--space-xs);
+  padding: var(--space-sm) var(--space-md);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -130,11 +130,6 @@ body {
   color: #f0f0f5;
 }
 
-.nav-brand-logo {
-  height: 22px;
-  width: auto;
-}
-
 .nav-brand-sep {
   color: rgba(255, 255, 255, 0.2);
   font-weight: 300;
@@ -145,7 +140,6 @@ body {
   font-size: 16px;
   font-weight: 700;
   color: #9a9ab0;
-  margin-left: 30px;
   transition: color 0.15s ease;
 }
 
@@ -614,9 +608,15 @@ body {
     display: none;
   }
 
-  .nav-brand-sep,
-  .nav-brand-text {
+  .nav-brand-sep {
     display: none;
+  }
+
+  /* The brand is text-only, so it must stay visible here — hiding it would
+     leave an empty header. Shrink it to share the row with the nav toggle. */
+  .nav-brand-text {
+    font-size: 14px;
+    white-space: nowrap;
   }
 
   .hero h1 {

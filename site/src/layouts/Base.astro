@@ -26,6 +26,27 @@ const generatedDate = version.generated_at.slice(0, 10);
 const dataLicense = version.license === "CC-BY-4.0" ? "CC BY 4.0" : (version.license ?? "CC BY 4.0");
 const codeLicense = version.code_license ?? "MIT";
 const licenseUrl = version.license_url ?? "https://creativecommons.org/licenses/by/4.0/";
+
+// The catalogue is published by Turbo EA. The product site is no longer linked
+// from the chrome, so the association travels as structured data instead — a
+// declared, crawlable channel rather than a link hidden from readers.
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Enterprise Architecture Reference Catalog",
+  url: Astro.site?.href,
+  publisher: {
+    "@type": "Organization",
+    name: "Turbo EA",
+    url: "https://www.turbo-ea.org",
+    logo: "https://www.turbo-ea.org/assets/logo.png",
+    sameAs: [
+      "https://www.turbo-ea.org/blog/",
+      "https://github.com/vincentmakes/turbo-ea-capabilities",
+      "https://www.linkedin.com/in/vincent-verdet/",
+    ],
+  },
+};
 ---
 
 <!doctype html>
@@ -50,17 +71,18 @@ const licenseUrl = version.license_url ?? "https://creativecommons.org/licenses/
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={pageDescription} />
     <meta property="og:type" content="website" />
+    <link rel="author" href="https://www.turbo-ea.org" />
+    <script
+      type="application/ld+json"
+      is:inline
+      set:html={JSON.stringify(structuredData)}
+    />
   </head>
   <body>
     <nav class={navClass}>
       <div class="nav-inner">
-        <a href="https://www.turbo-ea.org" class="nav-brand">
-          <img
-            src="https://www.turbo-ea.org/assets/logo.png"
-            alt="Turbo EA"
-            class="nav-brand-logo"
-          />
-          <span class="nav-brand-text" style="color:#f0f0f5">Reference Catalog</span>
+        <a href="/" class="nav-brand">
+          <span class="nav-brand-text" style="color:#f0f0f5">EA Reference Catalog</span>
         </a>
         <div class="nav-right">
           <a href="/#about" class="nav-about">About</a>
@@ -70,16 +92,6 @@ const licenseUrl = version.license_url ?? "https://creativecommons.org/licenses/
             <a href="/business-processes">Processes</a>
             <a href="/value-streams">Value Streams</a>
             <a href="/api/tree.json">API</a>
-            <a
-              href="https://www.turbo-ea.org"
-              target="_blank"
-              rel="noopener">Turbo EA</a
-            >
-            <a
-              href="https://www.turbo-ea.org/blog/"
-              target="_blank"
-              rel="noopener">Blog</a
-            >
             <a
               href="https://github.com/vincentmakes/turbo-ea-capabilities"
               target="_blank"
